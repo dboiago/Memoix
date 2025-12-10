@@ -3,16 +3,23 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../models/recipe.dart';
+import '../models/cuisine.dart';
 import '../repository/recipe_repository.dart';
 
 class RecipeEditScreen extends ConsumerStatefulWidget {
+  final String? recipeId;
   final Recipe? initialRecipe;
-  final String? rawOcrText;
+  final Recipe? importedRecipe;
+  final String? ocrText;
+  final String? defaultCourse;
 
   const RecipeEditScreen({
     super.key,
+    this.recipeId,
     this.initialRecipe,
-    this.rawOcrText,
+    this.importedRecipe,
+    this.ocrText,
+    this.defaultCourse,
   });
 
   @override
@@ -23,49 +30,77 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   static const _uuid = Uuid();
 
   late final TextEditingController _nameController;
-  late final TextEditingController _cuisineController;
   late final TextEditingController _servesController;
   late final TextEditingController _timeController;
   late final TextEditingController _notesController;
   late final TextEditingController _ingredientsController;
   late final TextEditingController _directionsController;
 
-  String _selectedCourse = 'Mains';
+  String _selectedCourse = 'mains';
+  String? _selectedCuisine;
   bool _isSaving = false;
+  bool _isLoading = true;
+  Recipe? _existingRecipe;
 
-  bool get _isEditing => widget.initialRecipe?.id != null && widget.initialRecipe!.id > 0;
+  bool get _isEditing => _existingRecipe != null;
 
   @override
   void initState() {
     super.initState();
 
-    final recipe = widget.initialRecipe;
+    _nameController = TextEditingController();
+    _servesController = TextEditingController();
+    _timeController = TextEditingController();
+    _notesController = TextEditingController();
+    _ingredientsController = TextEditingController();
+    _directionsController = TextEditingController();
 
-    _nameController = TextEditingController(text: recipe?.name ?? '');
-    _cuisineController = TextEditingController(text: recipe?.cuisine ?? '');
-    _servesController = TextEditingController(text: recipe?.serves ?? '');
-    _timeController = TextEditingController(text: recipe?.time ?? '');
-    _notesController = TextEditingController(text: recipe?.notes ?? '');
+    if (widget.defaultCourse != null) {
+      _selectedCourse = widget.defaultCourse!;
+    }
 
-    // Convert ingredients to editable text
-    _ingredientsController = TextEditingController(
-      text: recipe?.ingredients.map((i) => i.displayText).join('\n') ?? '',
-    );
+    _loadRecipe();
+  }
 
-    // Convert directions to editable text
-    _directionsController = TextEditingController(
-      text: recipe?.directions.join('\n\n') ?? '',
-    );
+  Future<void> _loadRecipe() async {
+    Recipe? recipe;
+
+    if (widget.initialRecipe != null) {
+      recipe = widget.initialRecipe;
+    } else if (widget.importedRecipe != null) {
+      recipe = widget.importedRecipe;
+    } else if (widget.recipeId != null) {
+      final repo = ref.read(recipeRepositoryProvider);
+      recipe = await repo.getById(widget.recipeId!);
+    }
 
     if (recipe != null) {
+      _existingRecipe = recipe;
+      _nameController.text = recipe.name;
+      _servesController.text = recipe.serves ?? '';
+      _timeController.text = recipe.time ?? '';
+      _notesController.text = recipe.notes ?? '';
       _selectedCourse = recipe.course;
+      _selectedCuisine = recipe.cuisine;
+
+      // Convert ingredients to editable text
+      _ingredientsController.text = recipe.ingredients
+          .map((i) => i.displayText)
+          .join('\n');
+
+      // Convert directions to editable text
+      _directionsController.text = recipe.directions.join('\n\n');
+    } else if (widget.ocrText != null) {
+      // Pre-populate with OCR text for manual extraction
+      _notesController.text = 'OCR Text:\n${widget.ocrText}';
     }
+
+    setState(() => _isLoading = false);
   }
 
   @override
   void dispose() {
     _nameController.dispose();
-    _cuisineController.dispose();
     _servesController.dispose();
     _timeController.dispose();
     _notesController.dispose();
@@ -78,11 +113,18 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    if (_isLoading) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Loading...')),
+        body: const Center(child: CircularProgressIndicator()),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text(_isEditing ? 'Edit Recipe' : 'New Recipe'),
         actions: [
-          if (widget.rawOcrText != null)
+          if (widget.ocrText != null)
             IconButton(
               icon: const Icon(Icons.text_snippet),
               tooltip: 'View OCR Text',
@@ -125,21 +167,21 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 labelText: 'Category *',
               ),
               items: const [
-                DropdownMenuItem(value: 'Apps', child: Text('Apps')),
-                DropdownMenuItem(value: 'Mains', child: Text('Mains')),
-                DropdownMenuItem(value: 'Not Meat', child: Text('Not Meat')),
-                DropdownMenuItem(value: 'Soups', child: Text('Soups')),
-                DropdownMenuItem(value: 'Brunch', child: Text('Brunch')),
-                DropdownMenuItem(value: 'Sides', child: Text('Sides')),
-                DropdownMenuItem(value: 'Desserts', child: Text('Desserts')),
-                DropdownMenuItem(value: 'Breads', child: Text('Breads')),
-                DropdownMenuItem(value: 'Rubs', child: Text('Rubs')),
-                DropdownMenuItem(value: 'Sauces', child: Text('Sauces')),
-                DropdownMenuItem(value: 'Pickles', child: Text('Pickles/Brines')),
-                DropdownMenuItem(value: 'Molecular', child: Text('Molecular')),
-                DropdownMenuItem(value: 'Pizzas', child: Text('Pizzas')),
-                DropdownMenuItem(value: 'Smoking', child: Text('Smoking')),
-                DropdownMenuItem(value: 'Cheese', child: Text('Cheese')),
+                DropdownMenuItem(value: 'apps', child: Text('Apps')),
+                DropdownMenuItem(value: 'mains', child: Text('Mains')),
+                DropdownMenuItem(value: 'not-meat', child: Text('Not Meat')),
+                DropdownMenuItem(value: 'soups', child: Text('Soups')),
+                DropdownMenuItem(value: 'brunch', child: Text('Brunch')),
+                DropdownMenuItem(value: 'sides', child: Text('Sides')),
+                DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
+                DropdownMenuItem(value: 'breads', child: Text('Breads')),
+                DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
+                DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
+                DropdownMenuItem(value: 'pickles', child: Text('Pickles/Brines')),
+                DropdownMenuItem(value: 'molecular', child: Text('Molecular')),
+                DropdownMenuItem(value: 'pizzas', child: Text('Pizzas')),
+                DropdownMenuItem(value: 'smoking', child: Text('Smoking')),
+                DropdownMenuItem(value: 'cheese', child: Text('Cheese')),
               ],
               onChanged: (value) {
                 if (value != null) {
@@ -150,20 +192,17 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 16),
 
-            // Cuisine and metadata row
+            // Cuisine selector
+            _CuisineSelector(
+              selectedCuisine: _selectedCuisine,
+              onChanged: (cuisine) => setState(() => _selectedCuisine = cuisine),
+            ),
+
+            const SizedBox(height: 16),
+
+            // Serves and Time row
             Row(
               children: [
-                Expanded(
-                  child: TextField(
-                    controller: _cuisineController,
-                    decoration: const InputDecoration(
-                      labelText: 'Cuisine',
-                      hintText: 'e.g., Korean',
-                    ),
-                    textCapitalization: TextCapitalization.words,
-                  ),
-                ),
-                const SizedBox(width: 12),
                 Expanded(
                   child: TextField(
                     controller: _servesController,
@@ -294,15 +333,13 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           .toList();
 
       // Create or update recipe
-      final recipe = widget.initialRecipe ?? Recipe();
+      final recipe = _existingRecipe ?? Recipe();
       
       recipe
         ..uuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid
         ..name = _nameController.text.trim()
-        ..course = _selectedCourse.toLowerCase()
-        ..cuisine = _cuisineController.text.trim().isEmpty 
-            ? null 
-            : _cuisineController.text.trim()
+        ..course = _selectedCourse
+        ..cuisine = _selectedCuisine
         ..serves = _servesController.text.trim().isEmpty 
             ? null 
             : _servesController.text.trim()
@@ -314,7 +351,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             : _notesController.text.trim()
         ..ingredients = ingredients
         ..directions = directions
-        ..source = widget.initialRecipe?.source ?? RecipeSource.personal
+        ..source = _existingRecipe?.source ?? 
+            (widget.importedRecipe != null ? RecipeSource.imported : 
+             widget.ocrText != null ? RecipeSource.ocr : RecipeSource.personal)
         ..updatedAt = DateTime.now();
 
       // Save to database
@@ -368,13 +407,130 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 child: SingleChildScrollView(
                   controller: controller,
                   child: SelectableText(
-                    widget.rawOcrText ?? '',
+                    widget.ocrText ?? '',
                     style: const TextStyle(fontFamily: 'monospace'),
                   ),
                 ),
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Cuisine selector dropdown with grouped cuisines by continent
+class _CuisineSelector extends StatelessWidget {
+  final String? selectedCuisine;
+  final ValueChanged<String?> onChanged;
+
+  const _CuisineSelector({
+    required this.selectedCuisine,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => _showCuisineSheet(context),
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Cuisine',
+          suffixIcon: Icon(Icons.arrow_drop_down),
+        ),
+        child: Text(
+          selectedCuisine != null
+              ? '${Cuisine.byCode(selectedCuisine!)?.flag ?? ''} ${Cuisine.byCode(selectedCuisine!)?.name ?? selectedCuisine}'
+              : 'Select cuisine (optional)',
+          style: TextStyle(
+            color: selectedCuisine != null
+                ? Theme.of(context).colorScheme.onSurface
+                : Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showCuisineSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => DraggableScrollableSheet(
+        initialChildSize: 0.7,
+        minChildSize: 0.3,
+        maxChildSize: 0.9,
+        expand: false,
+        builder: (_, controller) => Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  const Text(
+                    'Select Cuisine',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                  const Spacer(),
+                  TextButton(
+                    onPressed: () {
+                      onChanged(null);
+                      Navigator.pop(ctx);
+                    },
+                    child: const Text('Clear'),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.close),
+                    onPressed: () => Navigator.pop(ctx),
+                  ),
+                ],
+              ),
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: ListView(
+                controller: controller,
+                children: CuisineGroup.all.map((group) {
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                        child: Text(
+                          group.continent,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                      ...group.cuisines.map((cuisine) {
+                        final isSelected = selectedCuisine == cuisine.code;
+                        return ListTile(
+                          leading: Text(
+                            cuisine.flag,
+                            style: const TextStyle(fontSize: 24),
+                          ),
+                          title: Text(cuisine.name),
+                          trailing: isSelected
+                              ? Icon(Icons.check,
+                                  color: Theme.of(context).colorScheme.primary)
+                              : null,
+                          selected: isSelected,
+                          onTap: () {
+                            onChanged(cuisine.code);
+                            Navigator.pop(ctx);
+                          },
+                        );
+                      }),
+                    ],
+                  );
+                }).toList(),
+              ),
+            ),
+          ],
         ),
       ),
     );

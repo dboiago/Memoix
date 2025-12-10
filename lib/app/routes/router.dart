@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 
-import '../../features/home/screens/home_screen.dart';
+import '../../features/home/screens/home_screen_new.dart';
 import '../../features/recipes/screens/recipe_detail_screen.dart';
+import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/import/screens/import_screen.dart';
 import '../../features/import/screens/qr_scanner_screen.dart';
+import '../../features/import/screens/ocr_scanner_screen.dart';
+import '../../features/import/screens/url_import_screen.dart';
+import '../../features/import/screens/share_recipe_screen.dart';
 import '../../features/settings/screens/settings_screen.dart';
 import '../../features/shopping/screens/shopping_list_screen.dart';
 import '../../features/mealplan/screens/meal_plan_screen.dart';
+import '../../features/statistics/screens/statistics_screen.dart';
+import '../../features/favourites/screens/favourites_screen.dart';
 import '../../features/tools/measurement_converter.dart';
 
 class AppRouter extends StatelessWidget {
@@ -30,6 +36,14 @@ class AppRoutes {
     );
   }
 
+  static void toRecipeEdit(BuildContext context, {String? recipeId, String? course}) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => RecipeEditScreen(recipeId: recipeId, defaultCourse: course),
+      ),
+    );
+  }
+
   static void toImport(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -42,6 +56,30 @@ class AppRoutes {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const QRScannerScreen(),
+      ),
+    );
+  }
+
+  static void toOCRScanner(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const OCRScannerScreen(),
+      ),
+    );
+  }
+
+  static void toURLImport(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const URLImportScreen(),
+      ),
+    );
+  }
+
+  static void toShareRecipe(BuildContext context, {String? recipeId}) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ShareRecipeScreen(recipeId: recipeId),
       ),
     );
   }
@@ -66,6 +104,22 @@ class AppRoutes {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const MealPlanScreen(),
+      ),
+    );
+  }
+
+  static void toStatistics(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const StatisticsScreen(),
+      ),
+    );
+  }
+
+  static void toFavourites(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const FavouritesScreen(),
       ),
     );
   }

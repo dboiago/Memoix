@@ -71,8 +71,17 @@ class Recipe {
   /// When the recipe was last modified
   DateTime updatedAt = DateTime.now();
 
-  /// Whether this is a favorite
+  /// Whether this is a favourite
   bool isFavorite = false;
+
+  /// User rating (1-5 stars, 0 = unrated)
+  int rating = 0;
+
+  /// Number of times this recipe has been cooked
+  int cookCount = 0;
+
+  /// When the recipe was last cooked
+  DateTime? lastCookedAt;
 
   /// Tags for additional categorization
   List<String> tags = [];
@@ -101,6 +110,9 @@ class Recipe {
     this.source = RecipeSource.personal,
     this.colorValue,
     this.isFavorite = false,
+    this.rating = 0,
+    this.cookCount = 0,
+    this.lastCookedAt,
     this.tags = const [],
   }) {
     createdAt = DateTime.now();
@@ -138,6 +150,8 @@ class Recipe {
       )
       ..colorValue = json['colorValue'] as int?
       ..isFavorite = json['isFavorite'] as bool? ?? false
+      ..rating = json['rating'] as int? ?? 0
+      ..cookCount = json['cookCount'] as int? ?? 0
       ..tags =
           (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList() ??
               []
@@ -148,6 +162,9 @@ class Recipe {
     }
     if (json['updatedAt'] != null) {
       recipe.updatedAt = DateTime.parse(json['updatedAt'] as String);
+    }
+    if (json['lastCookedAt'] != null) {
+      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'] as String);
     }
 
     return recipe;
@@ -172,6 +189,9 @@ class Recipe {
       'source': source.name,
       'colorValue': colorValue,
       'isFavorite': isFavorite,
+      'rating': rating,
+      'cookCount': cookCount,
+      'lastCookedAt': lastCookedAt?.toIso8601String(),
       'tags': tags,
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
@@ -207,8 +227,11 @@ class Ingredient {
   /// Ingredient name (e.g., "White Beans")
   String name = '';
 
-  /// Amount (e.g., "1 Can", "2 Tbsp", "4-6")
+  /// Amount (e.g., "1", "2", "4-6")
   String? amount;
+
+  /// Unit of measurement (e.g., "cup", "tbsp", "can")
+  String? unit;
 
   /// Preparation notes (e.g., "diced", "minced", "cubed")
   String? preparation;
@@ -227,6 +250,7 @@ class Ingredient {
   Ingredient.create({
     required this.name,
     this.amount,
+    this.unit,
     this.preparation,
     this.alternative,
     this.isOptional = false,
@@ -237,6 +261,7 @@ class Ingredient {
     return Ingredient()
       ..name = json['name'] as String
       ..amount = json['amount'] as String?
+      ..unit = json['unit'] as String?
       ..preparation = json['preparation'] as String?
       ..alternative = json['alternative'] as String?
       ..isOptional = json['isOptional'] as bool? ?? false
@@ -247,6 +272,7 @@ class Ingredient {
     return {
       'name': name,
       'amount': amount,
+      'unit': unit,
       'preparation': preparation,
       'alternative': alternative,
       'isOptional': isOptional,
@@ -260,6 +286,10 @@ class Ingredient {
     
     if (amount != null && amount!.isNotEmpty) {
       buffer.write(amount);
+      if (unit != null && unit!.isNotEmpty) {
+        buffer.write(' ');
+        buffer.write(unit);
+      }
       buffer.write(' ');
     }
     

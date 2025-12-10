@@ -1,8 +1,63 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/services/github_recipe_service.dart';
 import '../../../core/database/database.dart';
+
+/// Provider for app preferences
+final preferencesProvider = FutureProvider<SharedPreferences>((ref) async {
+  return SharedPreferences.getInstance();
+});
+
+/// Provider for showing all recipes together vs filtered
+final showAllRecipesProvider = StateNotifierProvider<ShowAllRecipesNotifier, bool>((ref) {
+  return ShowAllRecipesNotifier(ref);
+});
+
+class ShowAllRecipesNotifier extends StateNotifier<bool> {
+  final Ref ref;
+  static const _key = 'show_all_recipes';
+
+  ShowAllRecipesNotifier(this.ref) : super(true) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? true;
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
+
+/// Provider for compact list view preference
+final compactViewProvider = StateNotifierProvider<CompactViewNotifier, bool>((ref) {
+  return CompactViewNotifier();
+});
+
+class CompactViewNotifier extends StateNotifier<bool> {
+  static const _key = 'compact_view';
+
+  CompactViewNotifier() : super(false) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? false;
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -11,6 +66,8 @@ class SettingsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final syncState = ref.watch(syncNotifierProvider);
+    final showAllRecipes = ref.watch(showAllRecipesProvider);
+    final compactView = ref.watch(compactViewProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -18,6 +75,27 @@ class SettingsScreen extends ConsumerWidget {
       ),
       body: ListView(
         children: [
+          // Display section
+          _SectionHeader(title: 'Display'),
+          SwitchListTile(
+            secondary: const Icon(Icons.visibility),
+            title: const Text('Show All Recipes Together'),
+            subtitle: const Text(
+              'When off, Memoix and personal recipes are separated',
+            ),
+            value: showAllRecipes,
+            onChanged: (_) => ref.read(showAllRecipesProvider.notifier).toggle(),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.view_compact),
+            title: const Text('Compact View'),
+            subtitle: const Text('Show more recipes per screen'),
+            value: compactView,
+            onChanged: (_) => ref.read(compactViewProvider.notifier).toggle(),
+          ),
+
+          const Divider(),
+
           // Sync section
           _SectionHeader(title: 'Sync'),
           ListTile(
@@ -104,7 +182,7 @@ class SettingsScreen extends ConsumerWidget {
           const Divider(),
 
           // Danger zone
-          _SectionHeader(title: 'Danger Zone', color: theme.colorScheme.error),
+          _SectionHeader(title: 'Danger Zone', colour: theme.colorScheme.error),
           ListTile(
             leading: Icon(Icons.delete_forever, color: theme.colorScheme.error),
             title: Text(
@@ -197,9 +275,9 @@ class SettingsScreen extends ConsumerWidget {
 
 class _SectionHeader extends StatelessWidget {
   final String title;
-  final Color? color;
+  final Color? colour;
 
-  const _SectionHeader({required this.title, this.color});
+  const _SectionHeader({required this.title, this.colour});
 
   @override
   Widget build(BuildContext context) {
@@ -208,7 +286,7 @@ class _SectionHeader extends StatelessWidget {
       child: Text(
         title.toUpperCase(),
         style: Theme.of(context).textTheme.labelMedium?.copyWith(
-              color: color ?? Theme.of(context).colorScheme.primary,
+              color: colour ?? Theme.of(context).colorScheme.primary,
               fontWeight: FontWeight.bold,
             ),
       ),
