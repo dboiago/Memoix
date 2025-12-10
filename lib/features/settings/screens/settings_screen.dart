@@ -225,7 +225,7 @@ class SettingsScreen extends ConsumerWidget {
       applicationName: 'Memoix',
       applicationVersion: '1.0.0',
       applicationIcon: const FlutterLogo(size: 64),
-      applicationLegalese: '© 2024 Memoix Contributors\nLicensed under MIT',
+      applicationLegalese: '© 2024-2025 Devon Boiago\nPolyForm Noncommercial License',
       children: [
         const SizedBox(height: 16),
         const Text(

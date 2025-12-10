@@ -159,7 +159,7 @@ Official recipes are stored as JSON in `/recipes/`:
 2. **No user accounts**: Privacy-focused, anonymous usage
 3. **Local storage**: User recipes stay on device only
 4. **Sharing**: Uses encoded deep links, not cloud storage
-5. **FOSS**: MIT licensed, keep dependencies open-source friendly
+5. **Proprietary**: Source available for personal use only, not for commercial redistribution
 
 ## Dependencies to Know
 

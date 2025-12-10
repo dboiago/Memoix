@@ -1,21 +1,50 @@
-MIT License
+PolyForm Noncommercial License 1.0.0
 
-Copyright (c) 2024 Memoix Contributors
+Copyright (c) 2024-2025 Devon Boiago
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software and associated documentation files (the "Software"), to use,
+copy, modify, merge, and distribute the Software, subject to the following
+conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. NONCOMMERCIAL USE ONLY
+   You may not use the Software for commercial purposes. Commercial purposes
+   include, but are not limited to:
+   
+   a) Selling the Software or copies of it
+   b) Using the Software to provide paid services
+   c) Using the Software in a business context for profit
+   d) Incorporating the Software into commercial products
+   e) Using the Software to generate advertising revenue
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. ATTRIBUTION
+   You must give appropriate credit, provide a link to this license, and
+   indicate if changes were made. You may do so in any reasonable manner,
+   but not in any way that suggests the licensor endorses you or your use.
+
+3. SHARE-ALIKE
+   If you modify the Software, you must distribute your modifications under
+   this same license.
+
+4. PERSONAL AND EDUCATIONAL USE
+   You are free to:
+   
+   a) Use the Software for personal projects
+   b) Study and learn from the source code
+   c) Modify the Software for your own use
+   d) Share the Software with others (non-commercially)
+   e) Use the Software for educational purposes
+   f) Contribute improvements back to the project
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For commercial licensing inquiries, contact Devon Boiago.
