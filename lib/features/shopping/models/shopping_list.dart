@@ -120,6 +120,7 @@ class ShoppingList {
   int get checkedCount => items.where((item) => item.isChecked).length;
 
   /// Group items by category for display
+  @ignore
   Map<String, List<ShoppingItem>> get groupedItems {
     final Map<String, List<ShoppingItem>> grouped = {};
     

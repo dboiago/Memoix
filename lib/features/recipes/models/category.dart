@@ -41,6 +41,7 @@ class Category {
   });
 
   /// Get Color object from stored value
+  @ignore
   Color get color => Color(colorValue);
 
   /// Default categories matching your spreadsheet
