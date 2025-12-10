@@ -527,21 +527,14 @@ def parse_csv_file(filepath: str, sheet_type: str, course: str) -> list[dict]:
         reader = csv.DictReader(f)
         rows = list(reader)
     
-    # For standard recipes, detect cuisine sections
+    # For standard recipes with multi-row format, use specialized parser
     if sheet_type == 'standard':
-        rows = detect_cuisine_sections(rows)
+        return parse_multirow_csv(filepath, course)
     
     for i, row in enumerate(rows):
         recipe = None
         
-        if sheet_type == 'standard':
-            recipe = parse_standard_recipe(
-                row, 
-                course,
-                cuisine=row.get('_cuisine'),
-                subcategory=row.get('_subcategory')
-            )
-        elif sheet_type == 'pizza':
+        if sheet_type == 'pizza':
             recipe = parse_pizza_recipe(row)
         elif sheet_type == 'smoking':
             recipe = parse_smoking_recipe(row)
@@ -554,6 +547,105 @@ def parse_csv_file(filepath: str, sheet_type: str, course: str) -> list[dict]:
         
         if recipe:
             recipes.append(recipe)
+    
+    return recipes
+
+
+def parse_multirow_csv(filepath: str, course: str) -> list[dict]:
+    """
+    Parse a CSV where each recipe spans multiple rows.
+    Recipe name is in first column, ingredients in subsequent rows.
+    
+    This matches your spreadsheet format where:
+    - Row with Name, Serves, Time, etc. starts a recipe
+    - Following rows have ingredient details in columns
+    - Empty rows separate recipes
+    """
+    recipes = []
+    current_recipe = None
+    current_cuisine = None
+    current_subcategory = None
+    ingredients = []
+    
+    with open(filepath, 'r', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+        rows = list(reader)
+    
+    for row in rows:
+        name = row.get('Name', '').strip() if row.get('Name') else ''
+        
+        # Check if this is an empty row (separator between recipes)
+        if not any(v.strip() for v in row.values() if v):
+            if current_recipe and current_recipe['name']:
+                current_recipe['ingredients'] = ingredients
+                recipes.append(current_recipe)
+            current_recipe = None
+            ingredients = []
+            continue
+        
+        # Check if this is a cuisine/section header (only Name filled, nothing else)
+        has_other_data = any(
+            row.get(k, '').strip() 
+            for k in ['Serves', 'Time', 'Pairs With', 'Notes', 'Directions'] 
+            if row.get(k)
+        )
+        
+        if name and not has_other_data:
+            # This is a section header like "Asian", "Chinese", "French", etc.
+            if '>' in name:
+                # Subcategory like "European > French"
+                parts = name.split('>')
+                current_cuisine = parts[0].strip()
+                current_subcategory = parts[1].strip()
+            else:
+                current_cuisine = name
+                current_subcategory = None
+            continue
+        
+        # Check if this is a recipe header row (has Name and at least Time or Serves)
+        has_recipe_fields = row.get('Time') or row.get('Serves')
+        
+        if name and has_recipe_fields:
+            # Save previous recipe if exists
+            if current_recipe and current_recipe['name']:
+                current_recipe['ingredients'] = ingredients
+                recipes.append(current_recipe)
+            
+            # Start new recipe
+            current_recipe = {
+                'uuid': generate_uuid(name, course),
+                'name': name,
+                'course': course.lower(),
+                'cuisine': current_cuisine,
+                'subcategory': current_subcategory,
+                'serves': row.get('Serves', '').strip() or None,
+                'time': row.get('Time', '').strip() or None,
+                'pairsWith': parse_pairs_with(row.get('Pairs With', '')),
+                'notes': row.get('Notes', '').strip() or None,
+                'ingredients': [],
+                'directions': parse_directions_column(row.get('Directions', '')),
+                'sourceUrl': None,
+                'imageUrl': None,
+                'tags': [],
+                'version': 1,
+            }
+            ingredients = []
+        
+        elif current_recipe and name:
+            # This is an ingredient row - parse it
+            ingredient = parse_ingredient_line(name)
+            
+            # Add amount from second column if present
+            amount_col = row.get(list(row.keys())[1], '').strip() if len(row) > 1 else ''
+            if amount_col and not ingredient['amount']:
+                ingredient['amount'] = amount_col
+            
+            ingredients.append(ingredient)
+    
+    # Don't forget the last recipe
+    if current_recipe and current_recipe['name']:
+        current_recipe['ingredients'] = ingredients
+        recipes.append(current_recipe)
     
     return recipes
 
