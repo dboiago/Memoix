@@ -2,8 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar/isar.dart';
 
 import '../../core/database/database.dart';
-import 'models/recipe.dart';
-import 'models/category.dart';
+import '../models/recipe.dart';
+import '../models/category.dart';
 
 /// Repository for recipe data operations
 class RecipeRepository {
@@ -123,12 +123,12 @@ class RecipeRepository {
 
   /// Get all categories sorted by order
   Future<List<Category>> getAllCategories() async {
-    return _db.categorys.where().sortBySortOrder().findAll();
+    return _db.categories.where().sortBySortOrder().findAll();
   }
 
   /// Get visible categories only
   Future<List<Category>> getVisibleCategories() async {
-    return _db.categorys
+    return _db.categories
         .filter()
         .isVisibleEqualTo(true)
         .sortBySortOrder()
@@ -137,12 +137,12 @@ class RecipeRepository {
 
   /// Save a category
   Future<int> saveCategory(Category category) async {
-    return _db.writeTxn(() => _db.categorys.put(category));
+    return _db.writeTxn(() => _db.categories.put(category));
   }
 
   /// Watch categories
   Stream<List<Category>> watchCategories() {
-    return _db.categorys.where().sortBySortOrder().watch(fireImmediately: true);
+    return _db.categories.where().sortBySortOrder().watch(fireImmediately: true);
   }
 
   // ============ SYNC HELPERS ============

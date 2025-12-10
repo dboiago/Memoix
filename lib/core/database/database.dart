@@ -37,7 +37,7 @@ class MemoixDatabase {
   /// Seed default categories on first run
   static Future<void> _seedDefaultCategories() async {
     final db = instance;
-    final count = await db.categorys.count();
+    final count = await db.categories.count();
     
     if (count == 0) {
       await db.writeTxn(() async {

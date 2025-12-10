@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
 
-import '../../features/recipes/models/recipe.dart';
+import '../../recipes/models/recipe.dart';
 
 /// Service to import recipes from URLs
 class UrlRecipeImporter {
