@@ -1,0 +1,19 @@
+[
+  {
+    "uuid": "kfcs-001",
+    "name": "KFC Sauce",
+    "course": "sauces",
+    "cuisine": "Korean",
+    "subcategory": null,
+    "serves": null,
+    "time": null,
+    "pairsWith": ["Korean Fried Chicken"],
+    "notes": "Sweet and spicy glaze for fried chicken",
+    "ingredients": [],
+    "directions": [],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "tags": ["sauce", "glaze", "spicy"],
+    "version": 1
+  }
+]
