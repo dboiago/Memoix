@@ -1,1 +1,1 @@
-[]
+[{"uuid": "26b60bae-5ea0-5b7b-a974-34cdf0a54b0f", "name": "Agadashi", "course": "recipes   apps", "cuisine": null, "subcategory": null, "serves": "4", "time": null, "pairsWith": [], "notes": "", "ingredients": [{"name": "Tofu", "amount": null, "preparation": null, "alternative": null, "isOptional": false, "section": null}, {"name": "Dashi", "amount": null, "preparation": null, "alternative": null, "isOptional": false, "section": null}], "directions": [], "sourceUrl": null, "imageUrl": null, "tags": [], "version": 1}]
