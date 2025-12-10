@@ -123,12 +123,12 @@ class RecipeRepository {
 
   /// Get all categories sorted by order
   Future<List<Category>> getAllCategories() async {
-    return _db.categories.where().sortBySortOrder().findAll();
+    return _db.categorys.where().sortBySortOrder().findAll();
   }
 
   /// Get visible categories only
   Future<List<Category>> getVisibleCategories() async {
-    return _db.categories
+    return _db.categorys
         .filter()
         .isVisibleEqualTo(true)
         .sortBySortOrder()
@@ -137,12 +137,12 @@ class RecipeRepository {
 
   /// Save a category
   Future<int> saveCategory(Category category) async {
-    return _db.writeTxn(() => _db.categories.put(category));
+    return _db.writeTxn(() => _db.categorys.put(category));
   }
 
   /// Watch categories
   Stream<List<Category>> watchCategories() {
-    return _db.categories.where().sortBySortOrder().watch(fireImmediately: true);
+    return _db.categorys.where().sortBySortOrder().watch(fireImmediately: true);
   }
 
   // ============ SYNC HELPERS ============
