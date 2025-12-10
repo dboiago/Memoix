@@ -22,7 +22,7 @@ A beautiful, open-source recipe management app for home cooks. Organize your rec
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      MEMOIX APP                              │
+│                      MEMOIX APP                             │
 ├─────────────────────────────────────────────────────────────┤
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
 │  │ Memoix      │  │ My Recipes  │  │ Shared With Me      │  │
@@ -30,8 +30,8 @@ A beautiful, open-source recipe management app for home cooks. Organize your rec
 │  │ (GitHub)    │  │             │  │                     │  │
 │  └─────────────┘  └─────────────┘  └─────────────────────┘  │
 ├─────────────────────────────────────────────────────────────┤
-│                  Local Database (Isar)                       │
-│                  Offline-first, no account                   │
+│                  Local Database (Isar)                      │
+│                  Offline-first, no account                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -150,4 +150,4 @@ If you find this app useful, consider:
 
 ---
 
-Made with ❤️ for home cooks everywhere
+Made with ❤️ for cooks everywhere
