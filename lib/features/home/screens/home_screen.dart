@@ -53,9 +53,44 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
             icon: const Icon(Icons.add),
             onPressed: () => AppRoutes.toImport(context),
           ),
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () => AppRoutes.toSettings(context),
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.more_vert),
+            onSelected: (value) => _handleMenuAction(context, value),
+            itemBuilder: (_) => [
+              const PopupMenuItem(
+                value: 'mealplan',
+                child: ListTile(
+                  leading: Icon(Icons.calendar_month),
+                  title: Text('Meal Plan'),
+                  contentPadding: EdgeInsets.zero,
+                ),
+              ),
+              const PopupMenuItem(
+                value: 'shopping',
+                child: ListTile(
+                  leading: Icon(Icons.shopping_cart),
+                  title: Text('Shopping Lists'),
+                  contentPadding: EdgeInsets.zero,
+                ),
+              ),
+              const PopupMenuItem(
+                value: 'converter',
+                child: ListTile(
+                  leading: Icon(Icons.straighten),
+                  title: Text('Unit Converter'),
+                  contentPadding: EdgeInsets.zero,
+                ),
+              ),
+              const PopupMenuDivider(),
+              const PopupMenuItem(
+                value: 'settings',
+                child: ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text('Settings'),
+                  contentPadding: EdgeInsets.zero,
+                ),
+              ),
+            ],
           ),
         ],
         bottom: TabBar(
@@ -77,6 +112,23 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
         ],
       ),
     );
+  }
+
+  void _handleMenuAction(BuildContext context, String action) {
+    switch (action) {
+      case 'mealplan':
+        AppRoutes.toMealPlan(context);
+        break;
+      case 'shopping':
+        AppRoutes.toShoppingLists(context);
+        break;
+      case 'converter':
+        AppRoutes.toUnitConverter(context);
+        break;
+      case 'settings':
+        AppRoutes.toSettings(context);
+        break;
+    }
   }
 }
 

@@ -5,6 +5,7 @@ import '../services/url_importer.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import 'qr_scanner_screen.dart';
 
 class ImportScreen extends ConsumerStatefulWidget {
   const ImportScreen({super.key});
@@ -329,37 +330,6 @@ class _ImportOption extends StatelessWidget {
               const Icon(Icons.chevron_right),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-/// QR Code scanner screen for importing shared recipes
-class QrScannerScreen extends StatelessWidget {
-  const QrScannerScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // Using mobile_scanner package
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Scan Recipe QR'),
-      ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.qr_code_scanner, size: 100, color: Colors.grey),
-            SizedBox(height: 24),
-            Text('QR Scanner coming soon...'),
-            SizedBox(height: 8),
-            Text(
-              'Point your camera at a recipe QR code\nto import it into your collection',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
-            ),
-          ],
         ),
       ),
     );
