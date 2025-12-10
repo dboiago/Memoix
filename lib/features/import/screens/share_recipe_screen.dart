@@ -31,7 +31,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
   Future<void> _loadRecipe(String recipeId) async {
     final repo = ref.read(recipeRepositoryProvider);
-    final recipe = await repo.getById(recipeId);
+    final recipe = await repo.getRecipeByUuid(recipeId);
     if (recipe != null) {
       setState(() => _selectedRecipe = recipe);
       _generateShareLink();

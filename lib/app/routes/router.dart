@@ -55,7 +55,7 @@ class AppRoutes {
   static void toQRScanner(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => const QRScannerScreen(),
+        builder: (_) => const QrScannerScreen(),
       ),
     );
   }

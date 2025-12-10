@@ -222,7 +222,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
         MaterialPageRoute(
           builder: (_) => RecipeEditScreen(
             initialRecipe: result.recipe,
-            rawOcrText: result.rawText,
+            ocrText: result.rawText,
           ),
         ),
       );

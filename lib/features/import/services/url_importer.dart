@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../recipes/models/recipe.dart';
 
@@ -268,3 +269,8 @@ class UrlRecipeImporter {
     );
   }
 }
+
+// Provider for URL recipe importer
+final urlImporterProvider = Provider<UrlRecipeImporter>((ref) {
+  return UrlRecipeImporter();
+});

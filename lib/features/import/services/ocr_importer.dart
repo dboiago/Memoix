@@ -49,6 +49,17 @@ class OcrRecipeImporter {
     }
   }
 
+  /// Extract text from an image file (simple text extraction)
+  Future<String> extractTextFromImage(String imagePath) async {
+    try {
+      final inputImage = InputImage.fromFilePath(imagePath);
+      final recognizedText = await _textRecognizer.processImage(inputImage);
+      return recognizedText.text;
+    } catch (e) {
+      throw Exception('Failed to extract text from image: $e');
+    }
+  }
+
   /// Attempt to parse structured recipe from raw OCR text
   Recipe? _parseRecipeFromText(String text) {
     final lines = text.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty).toList();

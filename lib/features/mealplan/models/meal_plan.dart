@@ -239,9 +239,10 @@ class MealPlanService {
     
     return _db.mealPlans
         .where()
-        .dateGreaterThan(startStr, include: true)
         .filter()
-        .dateLessThan(endStr, include: true)
+        .dateGreaterThanOrEqualTo(startStr)
+        .and()
+        .dateLessThanOrEqualTo(endStr)
         .watch(fireImmediately: true);
   }
 

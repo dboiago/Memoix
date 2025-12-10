@@ -71,7 +71,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       recipe = widget.importedRecipe;
     } else if (widget.recipeId != null) {
       final repo = ref.read(recipeRepositoryProvider);
-      recipe = await repo.getById(widget.recipeId!);
+      recipe = await repo.getRecipeByUuid(widget.recipeId!);
     }
 
     if (recipe != null) {
