@@ -241,7 +241,6 @@ class MealPlanService {
         .where()
         .filter()
         .dateGreaterThanOrEqualTo(startStr)
-        .and()
         .dateLessThanOrEqualTo(endStr)
         .watch(fireImmediately: true);
   }
