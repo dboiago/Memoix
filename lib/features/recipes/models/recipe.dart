@@ -311,9 +311,7 @@ class Ingredient {
       buffer.write(preparation);
     }
     
-    if (isOptional) {
-      buffer.write(' (optional)');
-    }
+    // Note: isOptional is displayed as a badge in the UI, not in displayText
     
     return buffer.toString();
   }
