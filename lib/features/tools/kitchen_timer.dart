@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 /// Kitchen timer tool with support for multiple simultaneous timers
 class KitchenTimerWidget extends StatefulWidget {
@@ -453,7 +452,6 @@ class TimerInstance extends ChangeNotifier {
   int remainingSeconds;
   bool isRunning = false;
   bool isPaused = false;
-  final AudioPlayer _audioPlayer = AudioPlayer();
 
   TimerInstance({
     required this.id,
@@ -519,7 +517,6 @@ class TimerInstance extends ChangeNotifier {
   @override
   void dispose() {
     _timer?.cancel();
-    _audioPlayer.dispose();
     super.dispose();
   }
 }
