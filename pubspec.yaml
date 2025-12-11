@@ -64,8 +64,3 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
-  
-  fonts:
-    - family: Memoix
-      fonts:
-        - asset: assets/fonts/Memoix-Regular.ttf
