@@ -216,3 +216,14 @@ final favoriteRecipesProvider = FutureProvider<List<Recipe>>((ref) {
 final recipeSearchProvider = FutureProvider.family<List<Recipe>, String>((ref, query) {
   return ref.watch(recipeRepositoryProvider).searchRecipes(query);
 });
+
+/// Provider for available cuisines in the database
+final availableCuisinesProvider = StreamProvider<Set<String>>((ref) {
+  return ref.watch(allRecipesProvider.stream).map((recipes) {
+    return recipes
+        .map((r) => r.cuisine)
+        .where((c) => c != null && c.isNotEmpty)
+        .cast<String>()
+        .toSet();
+  });
+});

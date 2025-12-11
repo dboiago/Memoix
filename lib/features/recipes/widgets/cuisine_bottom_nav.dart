@@ -1,7 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/cuisine.dart';
+import '../repository/recipe_repository.dart';
 
 /// Bottom navigation bar showing cuisines grouped by continent
 class CuisineBottomNav extends ConsumerWidget {
@@ -17,6 +19,15 @@ class CuisineBottomNav extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final availableCuisines = ref.watch(availableCuisinesProvider).valueOrNull ?? {};
+
+    // Filter cuisine groups to only include cuisines with recipes
+    final filteredGroups = CuisineGroup.all.map((group) {
+      final filteredCuisines = group.cuisines
+          .where((cuisine) => availableCuisines.contains(cuisine.code))
+          .toList();
+      return CuisineGroup(continent: group.continent, cuisines: filteredCuisines);
+    }).where((group) => group.cuisines.isNotEmpty).toList();
 
     return Container(
       height: 56,
@@ -29,55 +40,71 @@ class CuisineBottomNav extends ConsumerWidget {
           ),
         ),
       ),
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-        children: [
-          // "All" option
-          _CuisineChip(
-            flag: '🌍',
-            code: 'All',
-            isSelected: selectedCuisine == null,
-            onTap: () => onCuisineSelected(null),
-          ),
-          const SizedBox(width: 4),
-          // Separator
-          Container(
-            width: 1,
-            margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-            color: theme.colorScheme.outlineVariant,
-          ),
-          // Cuisines by continent
-          ...CuisineGroup.all.expand((group) {
-            return [
-              // Continent label
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Center(
-                  child: Text(
-                    group.continent.substring(0, 2).toUpperCase(),
-                    style: theme.textTheme.labelSmall?.copyWith(
-                      color: theme.colorScheme.outline,
-                      fontWeight: FontWeight.bold,
+      child: ScrollConfiguration(
+        behavior: ScrollConfiguration.of(context).copyWith(
+          dragDevices: {
+            PointerDeviceKind.touch,
+            PointerDeviceKind.mouse,
+            PointerDeviceKind.trackpad,
+          },
+        ),
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+          children: [
+            // "All" option
+            _CuisineChip(
+              flag: '🌍',
+              code: 'All',
+              isSelected: selectedCuisine == null,
+              onTap: () => onCuisineSelected(null),
+            ),
+            const SizedBox(width: 4),
+            // Separator
+            Container(
+              width: 1,
+              margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              color: theme.colorScheme.outlineVariant,
+            ),
+            // Cuisines by continent (filtered)
+            ...filteredGroups.expand((group) {
+              return [
+                // Continent label
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Center(
+                    child: Text(
+                      group.continent.substring(0, 2).toUpperCase(),
+                      style: theme.textTheme.labelSmall?.copyWith(
+                        color: theme.colorScheme.outline,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              // Cuisines in this continent
-              ...group.cuisines.map((cuisine) {
-                return _CuisineChip(
-                  flag: cuisine.flag,
-                  code: cuisine.code,
-                  name: cuisine.name,
-                  colour: cuisine.colour,
-                  isSelected: selectedCuisine == cuisine.code,
-                  onTap: () => onCuisineSelected(cuisine.code),
-                );
-              }),
-              const SizedBox(width: 8),
-            ];
-          }),
-        ],
+                // Cuisines in this continent
+                ...group.cuisines.map((cuisine) {
+                  return _CuisineChip(
+                    flag: cuisine.flag,
+                    code: cuisine.code,
+                    name: cuisine.name,
+                    colour: cuisine.colour,
+                    isSelected: selectedCuisine == cuisine.code,
+                    onTap: () {
+                      // Toggle off if already selected
+                      if (selectedCuisine == cuisine.code) {
+                        onCuisineSelected(null);
+                      } else {
+                        onCuisineSelected(cuisine.code);
+                      }
+                    },
+                  );
+                }),
+                const SizedBox(width: 8),
+              ];
+            }),
+          ],
+        ),
       ),
     );
   }

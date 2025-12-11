@@ -290,15 +290,18 @@ class RecipeDetailView extends ConsumerWidget {
           ),
 
           // Source URL
-          if (recipe.sourceUrl != null)
+          if (recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty)
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: TextButton.icon(
                   icon: const Icon(Icons.open_in_new),
                   label: const Text('View Original Recipe'),
-                  onPressed: () {
-                    // Open URL
+                  onPressed: () async {
+                    final url = Uri.tryParse(recipe.sourceUrl!);
+                    if (url != null && await canLaunchUrl(url)) {
+                      await launchUrl(url, mode: LaunchMode.externalApplication);
+                    }
                   },
                 ),
               ),
