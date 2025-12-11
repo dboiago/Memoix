@@ -52,48 +52,61 @@ class RecipeDetailScreen extends ConsumerWidget {
   }
 }
 
-class RecipeDetailView extends ConsumerWidget {
+class RecipeDetailView extends ConsumerStatefulWidget {
   final Recipe recipe;
 
   const RecipeDetailView({super.key, required this.recipe});
 
   @override
+  ConsumerState<RecipeDetailView> createState() => _RecipeDetailViewState();
+}
+
+class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
+  @override
+  void initState() {
+    super.initState();
+    _enableWakeLockIfNeeded();
+  }
+
+  @override
+  void dispose() {
+    // Disable wakelock when leaving recipe view
+    WakelockPlus.disable();
+    super.dispose();
+  }
+
+  Future<void> _enableWakeLockIfNeeded() async {
+    final keepScreenOn = ref.read(keepScreenOnProvider);
+    if (keepScreenOn) {
+      await WakelockPlus.enable();
+    }
+  }
+
+  @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final cuisineColor = recipe.cuisine != null
-        ? MemoixColors.forCuisine(recipe.cuisine!)
+    final cuisineColor = widget.recipe.cuisine != null
+        ? MemoixColors.forCuisine(widget.recipe.cuisine!)
         : theme.colorScheme.primaryContainer;
 
     return Scaffold(
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (_) => RecipeCookingView(recipe: recipe),
-            ),
-          );
-        },
-        icon: const Icon(Icons.restaurant),
-        label: const Text('Start Cooking'),
-      ),
       body: CustomScrollView(
         slivers: [
           // Hero header with recipe image or colored header
           SliverAppBar(
-            expandedHeight: recipe.imageUrl != null ? 250 : 150,
+            expandedHeight: widget.recipe.imageUrl != null ? 250 : 150,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
-                recipe.name,
+                widget.recipe.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   shadows: [Shadow(blurRadius: 4, color: Colors.black45)],
                 ),
               ),
-              background: recipe.imageUrl != null
+              background: widget.recipe.imageUrl != null
                   ? Image.network(
-                      recipe.imageUrl!,
+                      widget.recipe.imageUrl!,
                       fit: BoxFit.cover,
                       errorBuilder: (_, __, ___) => Container(color: cuisineColor),
                     )

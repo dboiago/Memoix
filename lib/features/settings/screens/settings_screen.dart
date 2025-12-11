@@ -149,7 +149,7 @@ class SettingsScreen extends ConsumerWidget {
           SwitchListTile(
             secondary: const Icon(Icons.lightbulb),
             title: const Text('Keep Screen On'),
-            subtitle: const Text('Prevent screen from turning off while cooking'),
+            subtitle: const Text('Prevent screen from turning off while viewing recipes'),
             value: ref.watch(keepScreenOnProvider),
             onChanged: (_) => ref.read(keepScreenOnProvider.notifier).toggle(),
           ),

@@ -96,6 +96,14 @@ class AppDrawer extends StatelessWidget {
                     title: 'Tools',
                   ),
                   _DrawerTile(
+                    icon: Icons.timer,
+                    title: 'Kitchen Timer',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toKitchenTimer(context);
+                    },
+                  ),
+                  _DrawerTile(
                     icon: Icons.note_outlined,
                     title: 'Scratch Pad',
                     onTap: () {
