@@ -34,6 +34,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   late final TextEditingController _timeController;
   late final TextEditingController _notesController;
   late final TextEditingController _directionsController;
+  late final TextEditingController _regionController;
 
   // 3-column ingredient editing: list of (name, amount, notes) controllers
   final List<_IngredientRow> _ingredientRows = [];
@@ -55,6 +56,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _timeController = TextEditingController();
     _notesController = TextEditingController();
     _directionsController = TextEditingController();
+    _regionController = TextEditingController();
 
     if (widget.defaultCourse != null) {
       _selectedCourse = widget.defaultCourse!;
@@ -81,6 +83,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _servesController.text = recipe.serves ?? '';
       _timeController.text = recipe.time ?? '';
       _notesController.text = recipe.notes ?? '';
+      _regionController.text = recipe.subcategory ?? '';
       // Normalize course to slug form (lowercase) to match dropdown values
       _selectedCourse = _normaliseCourseSlug(recipe.course?.toLowerCase() ?? _selectedCourse);
       _selectedCuisine = recipe.cuisine;
@@ -162,6 +165,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _timeController.dispose();
     _notesController.dispose();
     _directionsController.dispose();
+    _regionController.dispose();
     for (final row in _ingredientRows) {
       row.dispose();
     }
@@ -254,10 +258,55 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 16),
 
-            // Cuisine selector
-            _CuisineSelector(
-              selectedCuisine: _selectedCuisine,
-              onChanged: (cuisine) => setState(() => _selectedCuisine = cuisine),
+            // Cuisine and Region row (stacked on narrow screens)
+            LayoutBuilder(
+              builder: (context, constraints) {
+                final isNarrow = constraints.maxWidth < 400;
+                if (isNarrow) {
+                  // Stacked layout for phone
+                  return Column(
+                    children: [
+                      _CuisineSelector(
+                        selectedCuisine: _selectedCuisine,
+                        onChanged: (cuisine) => setState(() => _selectedCuisine = cuisine),
+                      ),
+                      const SizedBox(height: 12),
+                      TextField(
+                        controller: _regionController,
+                        decoration: const InputDecoration(
+                          labelText: 'Region (optional)',
+                          hintText: 'e.g., Szechuan, Cantonese',
+                        ),
+                        textCapitalization: TextCapitalization.words,
+                      ),
+                    ],
+                  );
+                } else {
+                  // Side-by-side for tablet/desktop
+                  return Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: _CuisineSelector(
+                          selectedCuisine: _selectedCuisine,
+                          onChanged: (cuisine) => setState(() => _selectedCuisine = cuisine),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: TextField(
+                          controller: _regionController,
+                          decoration: const InputDecoration(
+                            labelText: 'Region (optional)',
+                            hintText: 'e.g., Szechuan',
+                          ),
+                          textCapitalization: TextCapitalization.words,
+                        ),
+                      ),
+                    ],
+                  );
+                }
+              },
             ),
 
             const SizedBox(height: 16),
@@ -495,6 +544,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..name = _nameController.text.trim()
         ..course = _selectedCourse
         ..cuisine = _selectedCuisine
+        ..subcategory = _regionController.text.trim().isEmpty 
+            ? null 
+            : _regionController.text.trim()
         ..serves = _servesController.text.trim().isEmpty 
             ? null 
             : _servesController.text.trim()

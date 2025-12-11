@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../models/meal_plan.dart';
 import '../../../core/providers.dart';
+import '../../../app/routes/router.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
@@ -305,45 +306,64 @@ class DayCard extends ConsumerWidget {
                     },
                     child: ListTile(
                       dense: true,
-                      title: Row(
-                        children: [
-                          Expanded(
-                            child: Text(meal.recipeName ?? 'Unknown'),
-                          ),
-                          // Category label with dot like recipe cards
-                          if (meal.recipeCategory != null) ...[  
-                            Text(
-                              '\u2022',
-                              style: TextStyle(
-                                color: theme.colorScheme.primary,
-                                fontSize: 14,
-                              ),
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              _capitalizeFirst(meal.recipeCategory!),
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                            ),
-                          ],
-                        ],
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      title: Text(
+                        meal.recipeName ?? 'Unknown',
+                        style: theme.textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                      subtitle: _buildMealSubtitle(meal, theme),
+                      subtitle: Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Row(
+                          children: [
+                            // Cuisine with colored dot
+                            if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
+                              Text(
+                                '\u2022',
+                                style: TextStyle(
+                                  color: theme.colorScheme.primary,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              const SizedBox(width: 4),
+                              Text(
+                                meal.cuisine!,
+                                style: theme.textTheme.bodySmall?.copyWith(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                            ],
+                            // Servings if available
+                            if (meal.servings != null) ...[
+                              Icon(
+                                Icons.people_outline,
+                                size: 14,
+                                color: theme.colorScheme.outline,
+                              ),
+                              const SizedBox(width: 4),
+                              Text(
+                                '${meal.servings}',
+                                style: theme.textTheme.bodySmall?.copyWith(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
                       trailing: PopupMenuButton<String>(
-                        icon: const Icon(Icons.more_vert, size: 20),
+                        icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
                         onSelected: (action) async {
                           if (action == 'remove') {
                             // Remove the meal and refresh
                             await ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
                             ref.invalidate(weeklyPlanProvider);
                           } else if (action == 'view') {
-                            // Navigate to recipe detail
+                            // Navigate to recipe detail using AppRoutes
                             if (meal.recipeId != null) {
-                              Navigator.pushNamed(
-                                context,
-                                '/recipe/${meal.recipeId}',
-                              );
+                              AppRoutes.toRecipeDetail(context, meal.recipeId!);
                             }
                           }
                         },
@@ -362,21 +382,18 @@ class DayCard extends ConsumerWidget {
                             value: 'remove',
                             child: Row(
                               children: [
-                                Icon(Icons.delete, color: theme.colorScheme.secondary),
-                                const SizedBox(width: 8),
-                                Text('Remove', style: TextStyle(color: theme.colorScheme.secondary)),
+                                Icon(Icons.delete, color: Color(0xFFA88FA8)),
+                                SizedBox(width: 8),
+                                Text('Remove', style: TextStyle(color: Color(0xFFA88FA8))),
                               ],
                             ),
                           ),
                         ],
                       ),
                       onTap: () {
-                        // Navigate to recipe detail
+                        // Navigate to recipe detail using AppRoutes
                         if (meal.recipeId != null) {
-                          Navigator.pushNamed(
-                            context,
-                            '/recipe/${meal.recipeId}',
-                          );
+                          AppRoutes.toRecipeDetail(context, meal.recipeId!);
                         }
                       },
                     ),
