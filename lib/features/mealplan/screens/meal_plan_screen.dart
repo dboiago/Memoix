@@ -3,6 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 
 import '../models/meal_plan.dart';
+import '../../../core/providers.dart';
+import '../../recipes/repository/recipe_repository.dart';
+import '../../recipes/models/recipe.dart';
+import '../../shopping/screens/shopping_list_screen.dart';
 
 class MealPlanScreen extends ConsumerStatefulWidget {
   const MealPlanScreen({super.key});

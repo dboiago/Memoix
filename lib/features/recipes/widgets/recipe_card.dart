@@ -4,6 +4,7 @@ import '../models/recipe.dart';
 import '../../../app/theme/colors.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../statistics/models/cooking_stats.dart';
+import '../../../core/providers.dart';
 
 class RecipeCard extends ConsumerWidget {
   final Recipe recipe;
@@ -48,7 +49,7 @@ class RecipeCard extends ConsumerWidget {
                 child: recipe.imageUrl == null
                     ? Icon(
                         Icons.restaurant,
-                        color: Colors.white.withOpacity(0.7),
+                        color: Colors.white.withAlpha((0.7 * 255).round()),
                       )
                     : null,
               ),

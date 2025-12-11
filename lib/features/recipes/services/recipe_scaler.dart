@@ -15,7 +15,10 @@ class RecipeScaler {
   /// Scale a recipe from original servings to target servings
   ScaledRecipe scale(Recipe recipe, int originalServings, int targetServings) {
     if (originalServings <= 0 || targetServings <= 0) {
-      return ScaledRecipe(recipe: recipe, scaleFactor: 1.0, scaledIngredients: recipe.ingredients);
+      final scaled = recipe.ingredients
+          .map((i) => ScaledIngredient(original: i))
+          .toList();
+      return ScaledRecipe(recipe: recipe, scaleFactor: 1.0, scaledIngredients: scaled);
     }
 
     final scaleFactor = targetServings / originalServings;

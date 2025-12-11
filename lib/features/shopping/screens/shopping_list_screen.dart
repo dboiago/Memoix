@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/shopping_list.dart';
+import '../../../core/providers.dart';
+import '../../recipes/repository/recipe_repository.dart';
+import '../../recipes/models/recipe.dart';
 
 class ShoppingListScreen extends ConsumerWidget {
   const ShoppingListScreen({super.key});
@@ -305,15 +308,15 @@ class _ShoppingItemTile extends StatelessWidget {
           value: item.isChecked,
           onChanged: (_) => onToggle(),
         ),
-        title: Text(
-          item.name,
-          style: TextStyle(
-            decoration: item.isChecked ? TextDecoration.lineThrough : null,
-            color: item.isChecked
-                ? theme.colorScheme.onSurface.withOpacity(0.5)
-                : null,
-          ),
-        ),
+            title: Text(
+              item.name,
+              style: TextStyle(
+                decoration: item.isChecked ? TextDecoration.lineThrough : null,
+                color: item.isChecked
+                    ? theme.colorScheme.onSurface.withAlpha((0.5 * 255).round())
+                    : null,
+              ),
+            ),
         subtitle: item.amount != null
             ? Text(
                 item.amount!,

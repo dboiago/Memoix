@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../core/providers.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
