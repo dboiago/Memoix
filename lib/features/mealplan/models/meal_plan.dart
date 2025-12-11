@@ -281,7 +281,7 @@ class MealPlanService {
 // Riverpod providers
 
 final mealPlanServiceProvider = Provider<MealPlanService>((ref) {
-  return MealPlanService(MemoixDatabase.instance);
+  throw UnimplementedError('Must be overridden in ProviderScope');
 });
 
 final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, weekStart) async {

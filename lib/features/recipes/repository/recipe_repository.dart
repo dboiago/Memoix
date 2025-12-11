@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar/isar.dart';
 
-import '../../../core/database/database.dart';
+import '../../../core/providers.dart';
 import '../models/recipe.dart';
 import '../models/category.dart';
 
@@ -166,11 +166,7 @@ class RecipeRepository {
 
 // ============ PROVIDERS ============
 
-/// Provider for database instance
-final databaseProvider = Provider<Isar>((ref) {
-  return MemoixDatabase.instance;
-});
-
+/// Provider for recipe repository
 /// Provider for recipe repository
 final recipeRepositoryProvider = Provider<RecipeRepository>((ref) {
   return RecipeRepository(ref.watch(databaseProvider));
