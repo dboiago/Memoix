@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -147,16 +148,25 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
         // Course tabs (scrollable)
         Container(
           color: theme.colorScheme.surfaceContainerHighest,
-          child: TabBar(
-            controller: _tabController,
-            isScrollable: true,
-            tabAlignment: TabAlignment.start,
-            indicatorSize: TabBarIndicatorSize.tab,
-            tabs: widget.categories.map((category) {
-              return Tab(
-                child: _CourseTab(category: category),
-              );
-            }).toList(),
+          child: ScrollConfiguration(
+            behavior: ScrollConfiguration.of(context).copyWith(
+              dragDevices: {
+                PointerDeviceKind.touch,
+                PointerDeviceKind.mouse,
+                PointerDeviceKind.trackpad,
+              },
+            ),
+            child: TabBar(
+              controller: _tabController,
+              isScrollable: true,
+              tabAlignment: TabAlignment.start,
+              indicatorSize: TabBarIndicatorSize.tab,
+              tabs: widget.categories.map((category) {
+                return Tab(
+                  child: _CourseTab(category: category),
+                );
+              }).toList(),
+            ),
           ),
         ),
         // Recipe list for selected course

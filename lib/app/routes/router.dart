@@ -14,6 +14,7 @@ import '../../features/mealplan/screens/meal_plan_screen.dart';
 import '../../features/statistics/screens/statistics_screen.dart';
 import '../../features/favourites/screens/favourites_screen.dart';
 import '../../features/tools/measurement_converter.dart';
+import '../../features/notes/screens/scratch_pad_screen.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -128,6 +129,14 @@ class AppRoutes {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const MeasurementConverterWidget(),
+      ),
+    );
+  }
+
+  static void toScratchPad(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const ScratchPadScreen(),
       ),
     );
   }

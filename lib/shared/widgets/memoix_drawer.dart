@@ -120,6 +120,15 @@ class MemoixDrawer extends ConsumerWidget {
                       AppRoutes.toFavourites(context);
                     },
                   ),
+                  _DrawerItem(
+                    icon: Icons.edit_note,
+                    label: 'Scratch Pad',
+                    isSelected: selectedIndex == 5,
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toScratchPad(context);
+                    },
+                  ),
 
                   const Divider(height: 32),
                   const _DrawerSection(title: 'Tools'),
