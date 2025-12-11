@@ -29,6 +29,8 @@ class MemoixTheme {
         onPrimary: Colors.white,
         secondary: lightAccent1,
         onSecondary: lightPrimaryText,
+        secondaryContainer: const Color(0xFFE8DDD4), // warm cream for selected chips
+        onSecondaryContainer: lightPrimaryText, // #4b5563 charcoal for text on warm bg
         surface: lightSurface,
         onSurface: lightPrimaryText,
         surfaceContainerHighest: const Color(0xFFE5DCD3), // accent bg
@@ -92,6 +94,8 @@ class MemoixTheme {
         onPrimary: darkBackground,
         secondary: darkAccent1,
         onSecondary: darkPrimaryText,
+        secondaryContainer: const Color(0xFF3D3A38), // warm dark for selected chips
+        onSecondaryContainer: darkPrimaryText, // light text for dark mode
         surface: darkSurface,
         onSurface: darkPrimaryText,
         surfaceContainerHighest: const Color(0xFF2D2D2D), // muted/accent bg

@@ -434,7 +434,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
   }
 }
 
-class _ConversionTypeButton extends StatelessWidget {
+class _ConversionTypeButton extends StatefulWidget {
   final String label;
   final bool isSelected;
   final VoidCallback onTap;
@@ -446,31 +446,49 @@ class _ConversionTypeButton extends StatelessWidget {
   });
 
   @override
+  State<_ConversionTypeButton> createState() => _ConversionTypeButtonState();
+}
+
+class _ConversionTypeButtonState extends State<_ConversionTypeButton> {
+  bool _hovered = false;
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final showHighlight = widget.isSelected || _hovered;
     
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(8),
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12),
-        decoration: BoxDecoration(
-          color: isSelected 
-              ? theme.colorScheme.secondary.withValues(alpha: 0.15)
-              : Colors.transparent,
-          borderRadius: BorderRadius.circular(8),
-          border: isSelected 
-              ? Border.all(color: theme.colorScheme.secondary)
-              : Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.2)),
-        ),
-        alignment: Alignment.center,
-        child: Text(
-          label,
-          style: theme.textTheme.titleSmall?.copyWith(
-            color: isSelected 
-                ? theme.colorScheme.secondary
-                : theme.colorScheme.onSurfaceVariant,
-            fontWeight: isSelected ? FontWeight.w500 : FontWeight.normal,
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit: (_) => setState(() => _hovered = false),
+      child: InkWell(
+        onTap: widget.onTap,
+        borderRadius: BorderRadius.circular(8),
+        splashColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 12),
+          decoration: BoxDecoration(
+            color: widget.isSelected 
+                ? theme.colorScheme.secondary.withValues(alpha: 0.15)
+                : Colors.transparent,
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: showHighlight
+                  ? theme.colorScheme.secondary
+                  : theme.colorScheme.outline.withValues(alpha: 0.2),
+              width: showHighlight ? 1.5 : 1.0,
+            ),
+          ),
+          alignment: Alignment.center,
+          child: Text(
+            widget.label,
+            style: theme.textTheme.titleSmall?.copyWith(
+              color: widget.isSelected 
+                  ? theme.colorScheme.secondary
+                  : theme.colorScheme.onSurfaceVariant,
+              fontWeight: widget.isSelected ? FontWeight.w500 : FontWeight.normal,
+            ),
           ),
         ),
       ),

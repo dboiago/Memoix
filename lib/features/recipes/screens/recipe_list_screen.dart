@@ -140,7 +140,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           fontSize: 13,
           color: isSelected 
               ? theme.colorScheme.onSecondaryContainer 
-              : theme.colorScheme.onSurfaceVariant,
+              : theme.colorScheme.onSurface, // charcoal in light mode, cream in dark
         ),
       ),
     );

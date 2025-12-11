@@ -109,13 +109,6 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
             Tab(icon: Icon(Icons.receipt_long), text: 'Recipe Drafts'),
           ],
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.help_outline),
-            tooltip: 'About Scratch Pad',
-            onPressed: () => _showHelpDialog(context),
-          ),
-        ],
       ),
       body: TabBarView(
         controller: _tabController,

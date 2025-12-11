@@ -64,7 +64,18 @@ class ShoppingItem {
   static String? _guessCategory(String name) {
     final n = name.toLowerCase();
     
-    // Pantry first (to catch stock, broth, baking items)
+    // Alcohol/Beverages first (before produce to catch "orange liqueur")
+    if (n.contains('wine') || n.contains('beer') || n.contains('vodka') ||
+        n.contains('rum') || n.contains('whiskey') || n.contains('whisky') ||
+        n.contains('bourbon') || n.contains('brandy') || n.contains('cognac') ||
+        n.contains('gin') || n.contains('tequila') || n.contains('sake') ||
+        n.contains('liqueur') || n.contains('liquor') || n.contains('vermouth') ||
+        n.contains('sherry') || n.contains('port') || n.contains('champagne') ||
+        n.contains('prosecco') || n.contains('mirin') || n.contains('cooking wine')) {
+      return 'Beverages';
+    }
+    
+    // Pantry (to catch stock, broth, baking items)
     if (n.contains('stock') || n.contains('broth') || n.contains('oil') || 
         n.contains('vinegar') || n.contains('sauce') || n.contains('soy') ||
         n.contains('baking powder') || n.contains('baking soda') ||
@@ -125,6 +136,11 @@ class ShoppingItem {
     }
     if (n.contains('frozen')) {
       return 'Frozen';
+    }
+    // Refrigerated proteins (tofu, tempeh, etc.)
+    if (n.contains('tofu') || n.contains('tempeh') || n.contains('seitan') ||
+        n.contains('edamame') || n.contains('miso')) {
+      return 'Refrigerated';
     }
     
     return 'Other';

@@ -266,64 +266,81 @@ class _CountryList extends StatelessWidget {
       return const _EmptySection(message: 'No country data yet');
     }
 
-    return Container(
-      decoration: BoxDecoration(
-        color: theme.colorScheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        children: sorted.take(5).toList().asMap().entries.map((mapEntry) {
-          final index = mapEntry.key;
-          final entry = mapEntry.value;
-          final cuisine = Cuisine.byCode(entry.key);
-          final rank = index + 1;
-          
-          return ListTile(
-            leading: Container(
-              width: 32,
-              height: 32,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: _getRankColor(context, rank).withValues(alpha: 0.2),
-                shape: BoxShape.circle,
-              ),
-              child: Text(
-                rank.toString(),
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  color: _getRankColor(context, rank),
+    final maxValue = sorted.first.value;
+
+    return Column(
+      children: sorted.take(5).toList().asMap().entries.map((mapEntry) {
+        final index = mapEntry.key;
+        final entry = mapEntry.value;
+        final cuisine = Cuisine.byCode(entry.key);
+        final rank = index + 1;
+        final percentage = maxValue > 0 ? (entry.value / maxValue).toDouble() : 0.0;
+        
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Row(
+            children: [
+              // Rank circle
+              Container(
+                width: 28,
+                height: 28,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primary.withValues(alpha: 0.2),
+                  shape: BoxShape.circle,
                 ),
-              ),
-            ),
-            title: Row(
-              children: [
-                if (cuisine != null) ...[
-                  Text(cuisine.flag),
-                  const SizedBox(width: 8),
-                ],
-                Text(
-                  cuisine?.name ?? entry.key,
-                  style: theme.textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w400,
+                child: Text(
+                  rank.toString(),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 13,
+                    color: theme.colorScheme.primary,
                   ),
                 ),
-              ],
-            ),
-            trailing: Text(
-              '${entry.value} recipes',
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.outline,
               ),
-            ),
-          );
-        }).toList(),
-      ),
+              const SizedBox(width: 12),
+              // Country name and bar
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          cuisine?.name ?? entry.key,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                        Text(
+                          '${entry.value} recipes',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 6),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(2),
+                      child: LinearProgressIndicator(
+                        value: percentage,
+                        minHeight: 4,
+                        backgroundColor: theme.colorScheme.outline.withValues(alpha: 0.2),
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          theme.colorScheme.primary,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        );
+      }).toList(),
     );
-  }
-  
-  Color _getRankColor(BuildContext context, int rank) {
-    // Use a consistent, muted accent for rankings
-    return Theme.of(context).colorScheme.secondary;
   }
 }
 
