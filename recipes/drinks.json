@@ -1,3 +1,1173 @@
 {
-  "recipes": []
+  "recipes": [
+    {
+      "uuid": "c66ad8c7-86cd-400c-b2ff-1b0b43dec587",
+      "name": "Boricha (Barley Tea)",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": "10",
+      "time": "15 min",
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Water",
+          "amount": "2 L",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Roasted Barley",
+          "amount": "3 Tbsp",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [
+        "If needed, roast over low heat for 10-12 minutes until brown (no oil)",
+        "Boil water, remove from heat then add tea bag/strainer for ~10 min"
+      ],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.287493",
+      "updatedAt": "2025-12-10T23:34:25.291005",
+      "version": 1
+    },
+    {
+      "uuid": "d7da7b20-44e1-4a24-9f30-d7670e25ce8a",
+      "name": "Negroni Sbagliato",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Sweet Vermouth",
+          "amount": "750 ml",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Campari",
+          "amount": "750 ml",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Prosecco",
+          "amount": "750 ml",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Fruit",
+          "amount": "1 C",
+          "unit": null,
+          "preparation": "Assorted seasonal",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1-2 shavings",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "2.5 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Vermouth",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Pickled Onion",
+          "amount": "1-3",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "3 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Vodka",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lillet Blanc",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Twist",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [
+        "Mix in pitcher, think Sangria"
+      ],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.288998",
+      "updatedAt": "2025-12-10T23:34:25.293004",
+      "version": 1
+    },
+    {
+      "uuid": "56d77998-fd0d-4bd7-a46d-1cd8e7844f15",
+      "name": "Attention (& Old Lace)",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "French Vermouth",
+          "amount": "¼ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Absinthe",
+          "amount": "¼ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "¼ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Creme de Violette",
+          "amount": "¼ ox",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Sweet Vermouth",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": "It's Red Vermouth",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Green Chartreuse",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Campari",
+          "amount": "¼ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Orange Twist",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.288998",
+      "updatedAt": "2025-12-10T23:34:25.294005",
+      "version": 1
+    },
+    {
+      "uuid": "ce37d89e-a8f9-48c5-acb0-b52242849f3e",
+      "name": "Gin Fizz",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Gin",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Simple Syrup",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Egg White",
+          "amount": "1 / ½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Club Soda",
+          "amount": "To Top / 1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [
+        "Add all to shaker and shake"
+      ],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.288998",
+      "updatedAt": "2025-12-10T23:34:25.295003",
+      "version": 1
+    },
+    {
+      "uuid": "c631bd60-5bdd-4b0d-916f-7f53fc935d0e",
+      "name": "Corpse Reviver No. 2",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Absinthe",
+          "amount": "Rinse",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Dry Gin",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lillet Blanc",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Orange Liquer",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [
+        "Swirl the Absinthe and discard from glass"
+      ],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.288998",
+      "updatedAt": "2025-12-10T23:34:25.297004",
+      "version": 1
+    },
+    {
+      "uuid": "59f994ad-ce7c-4b79-be93-5a9d06fdc187",
+      "name": "The Last Word",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Gin",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Green Chartreuse",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Maraschino Liqueur",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lime Juice",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Brandied Cherry",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Marachino Liqueur",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Creme de Violette",
+          "amount": "¼ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Brandied Cherry",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.288998",
+      "updatedAt": "2025-12-10T23:34:25.298509",
+      "version": 1
+    },
+    {
+      "uuid": "2789fa6f-2c2c-4bca-ada8-0ba4409e3495",
+      "name": "White Negroni",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Gin",
+          "amount": "1.5 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lillet Blanc",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Suze Gentian",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Twist",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Grapefruit Gin",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": "Grapefruit is important",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Aperol",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Sweet Vermouth",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": "It's just Red Vermouth",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Bitters",
+          "amount": "2-3 dashes",
+          "unit": null,
+          "preparation": "Orange/Black Walnut",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Campari",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Sweet Vermouth",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Orange Peel",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.288998",
+      "updatedAt": "2025-12-10T23:34:25.300069",
+      "version": 1
+    },
+    {
+      "uuid": "b7262498-9c09-49b8-a390-0c55ab22d81b",
+      "name": "Negroni Coldbrew",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Cold Brew Campari",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": "Coldbrew Jagermeister",
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Sweet Vermouth",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Orange Twist",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "2.5 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lime Juice",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Simple Syrup",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lime Wheel",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [
+        "Fill mason jar half way with coffee grounds and pour Campari to fill",
+        "Steep at least 10 min; Pref overnight; Strain"
+      ],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.290004",
+      "updatedAt": "2025-12-10T23:34:25.302069",
+      "version": 1
+    },
+    {
+      "uuid": "e251c82a-6859-478b-9ef9-2942f9e44a01",
+      "name": "Fallen Angel",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Aged Gin",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": "Aged in win/port barrels",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Creme de Menthe",
+          "amount": "2 tsp",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Simple Syrup",
+          "amount": "2 tsp",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Aromatic Bitters",
+          "amount": "2 dashes",
+          "unit": null,
+          "preparation": "Angostura",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.290004",
+      "updatedAt": "2025-12-10T23:34:25.303069",
+      "version": 1
+    },
+    {
+      "uuid": "bd64756f-36d1-4052-afca-dc933b63ad7a",
+      "name": "Tom Collins",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "London Dry Gin",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": "1 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Simple Syrup",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Club Soda",
+          "amount": "To Top",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Wheel",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Marachino Cherry",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Gin",
+          "amount": "2.5 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Barolo Chinato",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Peychaud's Bitters",
+          "amount": "3 dashes",
+          "unit": null,
+          "preparation": null,
+          "alternative": "Angostura",
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Brandied Cherry",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.290004",
+      "updatedAt": "2025-12-10T23:34:25.305070",
+      "version": 1
+    },
+    {
+      "uuid": "50a9b441-2836-4429-9337-7b275aa5ccab",
+      "name": "French Harvest",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Dry Gin",
+          "amount": "1.5 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Simple Syrup",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": "0.75 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Sparkling Cider",
+          "amount": "To Top",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Peel",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.290004",
+      "updatedAt": "2025-12-10T23:34:25.307069",
+      "version": 1
+    },
+    {
+      "uuid": "3bca6c55-de9c-4cc8-843c-8b34d9221179",
+      "name": "Gin Sonic",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Gin",
+          "amount": "1.5 oz",
+          "unit": null,
+          "preparation": "Roku, because this is a popular Japanese drink",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Club Soda",
+          "amount": "2.25 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Tonic Water",
+          "amount": "2.25 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Yuzu Twist",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.290004",
+      "updatedAt": "2025-12-10T23:34:25.308580",
+      "version": 1
+    },
+    {
+      "uuid": "9150fae4-b6ce-45b7-9216-d93c711c4bff",
+      "name": "Amaretto French 75",
+      "course": "Drinks",
+      "cuisine": "Korea",
+      "subcategory": null,
+      "serves": null,
+      "time": null,
+      "pairsWith": [],
+      "notes": null,
+      "ingredients": [
+        {
+          "name": "Gin",
+          "amount": "1.5 oz",
+          "unit": null,
+          "preparation": "Citrus focused",
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Amaretto",
+          "amount": "½ oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Sparkling Wine",
+          "amount": "2 oz",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        },
+        {
+          "name": "Lemon Curl",
+          "amount": "1",
+          "unit": null,
+          "preparation": null,
+          "alternative": null,
+          "isOptional": false,
+          "section": null
+        }
+      ],
+      "directions": [],
+      "sourceUrl": null,
+      "imageUrl": null,
+      "source": "imported",
+      "colorValue": null,
+      "isFavorite": false,
+      "rating": 0,
+      "cookCount": 0,
+      "lastCookedAt": null,
+      "tags": [],
+      "createdAt": "2025-12-10T23:34:25.290004",
+      "updatedAt": "2025-12-10T23:34:25.310587",
+      "version": 1
+    }
+  ]
 }
