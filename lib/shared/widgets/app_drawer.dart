@@ -48,7 +48,6 @@ class AppDrawer extends StatelessWidget {
                 children: [
                   // NAVIGATE Section
                   _DrawerSectionHeader(
-                    icon: Icons.explore_outlined,
                     title: 'Navigate',
                   ),
                   _DrawerTile(
@@ -94,7 +93,6 @@ class AppDrawer extends StatelessWidget {
                   
                   // TOOLS Section
                   _DrawerSectionHeader(
-                    icon: Icons.build_outlined,
                     title: 'Tools',
                   ),
                   _DrawerTile(
@@ -132,7 +130,6 @@ class AppDrawer extends StatelessWidget {
                   
                   // SHARE Section
                   _DrawerSectionHeader(
-                    icon: Icons.share_outlined,
                     title: 'Share',
                   ),
                   _DrawerTile(
@@ -197,11 +194,9 @@ class AppDrawer extends StatelessWidget {
 
 /// Section header in drawer
 class _DrawerSectionHeader extends StatelessWidget {
-  final IconData icon;
   final String title;
 
   const _DrawerSectionHeader({
-    required this.icon,
     required this.title,
   });
 
@@ -210,24 +205,14 @@ class _DrawerSectionHeader extends StatelessWidget {
     final theme = Theme.of(context);
     
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
-      child: Row(
-        children: [
-          Icon(
-            icon,
-            size: 18,
-            color: theme.colorScheme.outline,
-          ),
-          const SizedBox(width: 8),
-          Text(
-            title.toUpperCase(),
-            style: theme.textTheme.labelSmall?.copyWith(
-              color: theme.colorScheme.outline,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 1.2,
-            ),
-          ),
-        ],
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+      child: Text(
+        title.toUpperCase(),
+        style: theme.textTheme.labelSmall?.copyWith(
+          color: theme.colorScheme.outline,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 1.2,
+        ),
       ),
     );
   }

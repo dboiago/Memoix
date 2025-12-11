@@ -234,195 +234,241 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Unit Converter'),
-        bottom: TabBar(
-          controller: _tabController,
-          tabs: const [
-            Tab(icon: Icon(Icons.water_drop), text: 'Volume'),
-            Tab(icon: Icon(Icons.scale), text: 'Weight'),
-            Tab(icon: Icon(Icons.thermostat), text: 'Temp'),
-            Tab(icon: Icon(Icons.menu_book), text: 'Reference'),
-          ],
-        ),
+        title: const Text('Measurement Converter'),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          _buildConverterTab(MeasurementConverter.volumeUnits),
-          _buildConverterTab(MeasurementConverter.weightUnits),
-          _buildConverterTab(MeasurementConverter.temperatureUnits),
-          _buildReferenceTab(),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildConverterTab(List<String> units) {
-    final theme = Theme.of(context);
-
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          TextField(
-            controller: _amountController,
-            keyboardType: const TextInputType.numberWithOptions(decimal: true),
-            decoration: const InputDecoration(
-              labelText: 'Amount',
-              border: OutlineInputBorder(),
-            ),
-            onChanged: (_) => _convert(),
-          ),
-          const SizedBox(height: 16),
-          Row(
-            children: [
-              Expanded(
-                child: DropdownButtonFormField<String>(
-                  value: _fromUnit,
-                  decoration: const InputDecoration(
-                    labelText: 'From',
-                    border: OutlineInputBorder(),
-                  ),
-                  items: units.map((u) => DropdownMenuItem(
-                    value: u,
-                    child: Text(u),
-                  )).toList(),
-                  onChanged: (v) {
-                    if (v != null) {
-                      setState(() => _fromUnit = v);
-                      _convert();
-                    }
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: IconButton(
-                  icon: const Icon(Icons.swap_horiz),
-                  onPressed: () {
-                    setState(() {
-                      final temp = _fromUnit;
-                      _fromUnit = _toUnit;
-                      _toUnit = temp;
-                    });
-                    _convert();
-                  },
-                ),
-              ),
-              Expanded(
-                child: DropdownButtonFormField<String>(
-                  value: _toUnit,
-                  decoration: const InputDecoration(
-                    labelText: 'To',
-                    border: OutlineInputBorder(),
-                  ),
-                  items: units.map((u) => DropdownMenuItem(
-                    value: u,
-                    child: Text(u),
-                  )).toList(),
-                  onChanged: (v) {
-                    if (v != null) {
-                      setState(() => _toUnit = v);
-                      _convert();
-                    }
-                  },
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 32),
-          if (_result.isNotEmpty)
-            Container(
-              padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.primaryContainer,
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Column(
-                children: [
-                  Text(
-                    _result,
-                    style: theme.textTheme.displaySmall?.copyWith(
-                      color: theme.colorScheme.onPrimaryContainer,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Text(
-                    _toUnit,
-                    style: theme.textTheme.titleLarge?.copyWith(
-                      color: theme.colorScheme.onPrimaryContainer,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          const SizedBox(height: 32),
-          if (_selectedTab == 2) ...[
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Conversion Type Selector
             Text(
-              'Common Cooking Temperatures',
-              style: theme.textTheme.titleMedium,
+              'Conversion Type',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(height: 12),
+            Row(
+              children: [
+                Expanded(
+                  child: _ConversionTypeButton(
+                    label: 'Volume',
+                    isSelected: _selectedTab == 0,
+                    onTap: () => setState(() {
+                      _selectedTab = 0;
+                      _resetForTab();
+                    }),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: _ConversionTypeButton(
+                    label: 'Weight',
+                    isSelected: _selectedTab == 1,
+                    onTap: () => setState(() {
+                      _selectedTab = 1;
+                      _resetForTab();
+                    }),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: _ConversionTypeButton(
+                    label: 'Temperature',
+                    isSelected: _selectedTab == 2,
+                    onTap: () => setState(() {
+                      _selectedTab = 2;
+                      _resetForTab();
+                    }),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 32),
+            
+            // From input
+            Text(
+              'From',
+              style: theme.textTheme.titleSmall?.copyWith(
+                color: theme.colorScheme.outline,
+              ),
             ),
             const SizedBox(height: 8),
-            ...MeasurementConverter.cookingTemps.entries.map((e) {
-              return ListTile(
-                title: Text(e.key),
-                trailing: Text(
-                  '${e.value['f']?.toInt()}°F / ${e.value['c']?.toInt()}°C',
-                  style: theme.textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
+            Row(
+              children: [
+                Expanded(
+                  flex: 3,
+                  child: TextField(
+                    controller: _amountController,
+                    keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                    decoration: InputDecoration(
+                      hintText: '0',
+                      filled: true,
+                      fillColor: theme.colorScheme.surfaceContainerHighest,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide.none,
+                      ),
+                    ),
+                    onChanged: (_) => _convert(),
                   ),
                 ),
-              );
-            }),
+                const SizedBox(width: 12),
+                Expanded(
+                  flex: 2,
+                  child: DropdownButtonFormField<String>(
+                    value: _fromUnit,
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: theme.colorScheme.surfaceContainerHighest,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide.none,
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    ),
+                    items: _getUnitsForTab().map((u) => DropdownMenuItem(
+                      value: u,
+                      child: Text(u),
+                    )).toList(),
+                    onChanged: (v) {
+                      if (v != null) {
+                        setState(() => _fromUnit = v);
+                        _convert();
+                      }
+                    },
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 24),
+            
+            // To output
+            Text(
+              'To',
+              style: theme.textTheme.titleSmall?.copyWith(
+                color: theme.colorScheme.outline,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                Expanded(
+                  flex: 3,
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      _result.isEmpty ? 'Result' : _result,
+                      style: theme.textTheme.titleLarge?.copyWith(
+                        color: _result.isEmpty 
+                            ? theme.colorScheme.outline
+                            : theme.colorScheme.onSurface,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  flex: 2,
+                  child: DropdownButtonFormField<String>(
+                    value: _toUnit,
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: theme.colorScheme.surfaceContainerHighest,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide.none,
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    ),
+                    items: _getUnitsForTab().map((u) => DropdownMenuItem(
+                      value: u,
+                      child: Text(u),
+                    )).toList(),
+                    onChanged: (v) {
+                      if (v != null) {
+                        setState(() => _toUnit = v);
+                        _convert();
+                      }
+                    },
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 24),
+            
+            // Convert button
+            FilledButton(
+              onPressed: _convert,
+              style: FilledButton.styleFrom(
+                padding: const EdgeInsets.all(16),
+                backgroundColor: theme.colorScheme.primary.withValues(alpha: 0.2),
+                foregroundColor: theme.colorScheme.primary,
+              ),
+              child: const Text('Convert'),
+            ),
           ],
-        ],
+        ),
       ),
     );
   }
 
-  Widget _buildReferenceTab() {
-    final theme = Theme.of(context);
+  List<String> _getUnitsForTab() {
+    switch (_selectedTab) {
+      case 0:
+        return MeasurementConverter.volumeUnits;
+      case 1:
+        return MeasurementConverter.weightUnits;
+      case 2:
+        return MeasurementConverter.temperatureUnits;
+      default:
+        return [];
+    }
+  }
+}
 
-    return ListView(
-      padding: const EdgeInsets.all(16),
-      children: [
-        Text(
-          'Quick Conversions',
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
+class _ConversionTypeButton extends StatelessWidget {
+  final String label;
+  final bool isSelected;
+  final VoidCallback onTap;
+
+  const _ConversionTypeButton({
+    required this.label,
+    required this.isSelected,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(8),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        decoration: BoxDecoration(
+          color: isSelected 
+              ? theme.colorScheme.primary.withValues(alpha: 0.2)
+              : theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        alignment: Alignment.center,
+        child: Text(
+          label,
+          style: theme.textTheme.titleSmall?.copyWith(
+            color: isSelected 
+                ? theme.colorScheme.primary
+                : theme.colorScheme.onSurface,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
           ),
         ),
-        const SizedBox(height: 8),
-        ...CookingConversions.quickReference.entries.map((e) {
-          return ListTile(
-            dense: true,
-            title: Text(e.key),
-            trailing: Text(
-              '= ${e.value}',
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-          );
-        }),
-        const Divider(height: 32),
-        Text(
-          'Common Ingredient Weights',
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        const SizedBox(height: 8),
-        ...CookingConversions.ingredientWeights.entries.map((e) {
-          return ListTile(
-            dense: true,
-            title: Text(e.key),
-            trailing: Text(
-              e.value,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-          );
-        }),
-      ],
+      ),
     );
   }
 }

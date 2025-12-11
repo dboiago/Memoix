@@ -35,17 +35,17 @@ class CourseCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Icon circle (matching Figma accent background)
+              // Icon circle (matching Figma muted design)
               Container(
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: category.color.withValues(alpha: 0.15),
+                  color: theme.colorScheme.surfaceContainerHighest,
                   shape: BoxShape.circle,
                 ),
                 child: Icon(
                   _getIconData(category.iconName),
-                  color: category.color,
+                  color: theme.colorScheme.primary,
                   size: 24,
                 ),
               ),

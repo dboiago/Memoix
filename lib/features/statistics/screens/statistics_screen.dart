@@ -66,353 +66,268 @@ class _StatsContent extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        // Overview cards
-        _StatsOverviewRow(stats: stats),
-        const SizedBox(height: 24),
-
-        // Top recipes
-        Text(
-          'Most Cooked Recipes',
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+        // Overview cards in grid
+        Row(
+          children: [
+            Expanded(
+              child: _StatCard(
+                label: 'Total Recipes',
+                value: '78', // TODO: Get from actual data
+                color: theme.colorScheme.primaryContainer,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: _StatCard(
+                label: 'Countries',
+                value: '12', // TODO: Get from actual data
+                color: theme.colorScheme.secondaryContainer,
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 12),
-        if (stats.topRecipes.isEmpty)
-          const _EmptySection(message: 'Start cooking to see your favourites!')
-        else
-          ...stats.topRecipes.take(5).map((recipe) => _TopRecipeCard(
-                recipe: recipe,
-                rank: stats.topRecipes.indexOf(recipe) + 1,
-              )),
-        const SizedBox(height: 24),
+        Row(
+          children: [
+            Expanded(
+              child: _StatCard(
+                label: 'Avg Cook Time',
+                value: '35m', // TODO: Calculate from recipes
+                color: theme.colorScheme.tertiaryContainer,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: _StatCard(
+                label: 'Favorites',
+                value: stats.totalCooks.toString(),
+                color: theme.colorScheme.errorContainer,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 32),
 
-        // By cuisine
+        // Recipes by Course
         Text(
-          'Cooking by Cuisine',
+          'Recipes by Course',
           style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w600,
           ),
         ),
-        const SizedBox(height: 12),
-        if (stats.cooksByCuisine.isEmpty)
-          const _EmptySection(message: 'No cuisine data yet')
-        else
-          _CuisineChart(data: stats.cooksByCuisine),
-        const SizedBox(height: 24),
+        const SizedBox(height: 16),
+        _CourseBarChart(data: stats.cooksByCourse),
+        const SizedBox(height: 32),
 
-        // By course
+        // Top Countries
         Text(
-          'Cooking by Course',
+          'Top Countries',
           style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w600,
           ),
         ),
-        const SizedBox(height: 12),
-        if (stats.cooksByCourse.isEmpty)
-          const _EmptySection(message: 'No course data yet')
-        else
-          _CourseChart(data: stats.cooksByCourse),
-        const SizedBox(height: 24),
-
-        // Recent activity
-        Text(
-          'Recent Activity',
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        const SizedBox(height: 12),
-        if (stats.recentCooks.isEmpty)
-          const _EmptySection(message: 'No recent cooking activity')
-        else
-          ...stats.recentCooks.map((log) => _RecentCookTile(log: log)),
-      ],
-    );
-  }
-}
-
-class _StatsOverviewRow extends StatelessWidget {
-  final CookingStats stats;
-
-  const _StatsOverviewRow({required this.stats});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: _StatCard(
-            icon: Icons.restaurant,
-            label: 'Total Cooks',
-            value: stats.totalCooks.toString(),
-            colour: Colors.blue,
-          ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _StatCard(
-            icon: Icons.menu_book,
-            label: 'Recipes Tried',
-            value: stats.uniqueRecipes.toString(),
-            colour: Colors.green,
-          ),
-        ),
+        const SizedBox(height: 16),
+        _CountryList(data: stats.cooksByCuisine),
       ],
     );
   }
 }
 
 class _StatCard extends StatelessWidget {
-  final IconData icon;
   final String label;
   final String value;
-  final Color colour;
+  final Color color;
 
   const _StatCard({
-    required this.icon,
     required this.label,
     required this.value,
-    required this.colour,
+    required this.color,
   });
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Icon(icon, size: 32, color: colour),
-            const SizedBox(height: 8),
-            Text(
-              value,
-              style: theme.textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: colour,
-              ),
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            label,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
             ),
-            Text(
-              label,
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.outline,
-              ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            value,
+            style: theme.textTheme.displaySmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: theme.colorScheme.onSurface,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
 }
 
-class _TopRecipeCard extends StatelessWidget {
-  final TopRecipe recipe;
-  final int rank;
-
-  const _TopRecipeCard({required this.recipe, required this.rank});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    return Card(
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundColor: _getRankColour(rank),
-          child: Text(
-            '#$rank',
-            style: const TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        title: Text(recipe.recipeName),
-        subtitle: Text('Last made: ${_formatDate(recipe.lastCooked)}'),
-        trailing: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-          decoration: BoxDecoration(
-            color: theme.colorScheme.primaryContainer,
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Text(
-            '${recipe.cookCount}×',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: theme.colorScheme.onPrimaryContainer,
-            ),
-          ),
-        ),
-        onTap: () {
-          // Navigate to recipe
-        },
-      ),
-    );
-  }
-
-  Color _getRankColour(int rank) {
-    switch (rank) {
-      case 1:
-        return Colors.amber;
-      case 2:
-        return Colors.grey.shade400;
-      case 3:
-        return Colors.brown.shade400;
-      default:
-        return Colors.blueGrey;
-    }
-  }
-
-  String _formatDate(DateTime date) {
-    final now = DateTime.now();
-    final diff = now.difference(date);
-
-    if (diff.inDays == 0) return 'Today';
-    if (diff.inDays == 1) return 'Yesterday';
-    if (diff.inDays < 7) return '${diff.inDays} days ago';
-    return '${date.day}/${date.month}/${date.year}';
-  }
-}
-
-class _CuisineChart extends StatelessWidget {
+class _CourseBarChart extends StatelessWidget {
   final Map<String, int> data;
 
-  const _CuisineChart({required this.data});
+  const _CourseBarChart({required this.data});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final sorted = data.entries.toList()
       ..sort((a, b) => b.value.compareTo(a.value));
-    final maxValue = sorted.isNotEmpty ? sorted.first.value : 1;
+    
+    if (sorted.isEmpty) {
+      return const _EmptySection(message: 'No course data yet');
+    }
 
-    return Column(
-      children: sorted.take(6).map((entry) {
-        final cuisine = Cuisine.byCode(entry.key);
-        final percentage = entry.value / maxValue;
-
-        return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Row(
-            children: [
-              SizedBox(
-                width: 80,
-                child: Row(
+    final maxValue = sorted.first.value;
+    
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        children: sorted.map((entry) {
+          final percentage = maxValue > 0 ? entry.value / maxValue : 0;
+          
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(cuisine?.flag ?? '🍽️'),
-                    const SizedBox(width: 4),
-                    Expanded(
-                      child: Text(
-                        cuisine?.name ?? entry.key,
-                        overflow: TextOverflow.ellipsis,
-                        style: theme.textTheme.bodySmall,
+                    Text(
+                      entry.key,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      entry.value.toString(),
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.outline,
                       ),
                     ),
                   ],
                 ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Stack(
-                  children: [
-                    Container(
-                      height: 24,
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
+                const SizedBox(height: 6),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: LinearProgressIndicator(
+                    value: percentage,
+                    minHeight: 8,
+                    backgroundColor: theme.colorScheme.surface,
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      theme.colorScheme.primary.withValues(alpha: 0.7),
                     ),
-                    FractionallySizedBox(
-                      widthFactor: percentage,
-                      child: Container(
-                        height: 24,
-                        decoration: BoxDecoration(
-                          color: cuisine?.colour ?? theme.colorScheme.primary,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        alignment: Alignment.centerRight,
-                        padding: const EdgeInsets.only(right: 8),
-                        child: Text(
-                          entry.value.toString(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        );
-      }).toList(),
+              ],
+            ),
+          );
+        }).toList(),
+      ),
     );
   }
 }
 
-class _CourseChart extends StatelessWidget {
+class _CountryList extends StatelessWidget {
   final Map<String, int> data;
 
-  const _CourseChart({required this.data});
+  const _CountryList({required this.data});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final total = data.values.fold<int>(0, (a, b) => a + b);
-
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: data.entries.map((entry) {
-        final percentage = total > 0 ? (entry.value / total * 100).round() : 0;
-        return Chip(
-          label: Text('${entry.key}: ${entry.value} ($percentage%)'),
-        );
-      }).toList(),
-    );
-  }
-}
-
-class _RecentCookTile extends StatelessWidget {
-  final CookingLog log;
-
-  const _RecentCookTile({required this.log});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final cuisine = log.recipeCuisine != null
-        ? Cuisine.byCode(log.recipeCuisine!)
-        : null;
-
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: cuisine?.colour.withOpacity(0.2) ??
-            theme.colorScheme.surfaceContainerHighest,
-        child: Text(cuisine?.flag ?? '🍽️'),
-      ),
-      title: Text(log.recipeName),
-      subtitle: Text(_formatDateTime(log.cookedAt)),
-      dense: true,
-    );
-  }
-
-  String _formatDateTime(DateTime date) {
-    final now = DateTime.now();
-    final diff = now.difference(date);
-
-    if (diff.inHours < 24) {
-      if (diff.inHours == 0) return '${diff.inMinutes} minutes ago';
-      return '${diff.inHours} hours ago';
+    final sorted = data.entries.toList()
+      ..sort((a, b) => b.value.compareTo(a.value));
+    
+    if (sorted.isEmpty) {
+      return const _EmptySection(message: 'No country data yet');
     }
-    if (diff.inDays == 1) return 'Yesterday';
-    if (diff.inDays < 7) return '${diff.inDays} days ago';
-    return '${date.day}/${date.month}/${date.year}';
+
+    return Container(
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        children: sorted.take(5).toList().asMap().entries.map((mapEntry) {
+          final index = mapEntry.key;
+          final entry = mapEntry.value;
+          final cuisine = Cuisine.byCode(entry.key);
+          final rank = index + 1;
+          
+          return ListTile(
+            leading: Container(
+              width: 32,
+              height: 32,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: _getRankColor(rank).withValues(alpha: 0.2),
+                shape: BoxShape.circle,
+              ),
+              child: Text(
+                rank.toString(),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: _getRankColor(rank),
+                ),
+              ),
+            ),
+            title: Row(
+              children: [
+                if (cuisine != null) ...[
+                  Text(cuisine.flag),
+                  const SizedBox(width: 8),
+                ],
+                Text(
+                  cuisine?.name ?? entry.key,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+            trailing: Text(
+              '${entry.value} recipes',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.outline,
+              ),
+            ),
+          );
+        }).toList(),
+      ),
+    );
+  }
+  
+  Color _getRankColor(int rank) {
+    switch (rank) {
+      case 1:
+        return Colors.amber;
+      case 2:
+        return Colors.grey;
+      case 3:
+        return Colors.brown;
+      default:
+        return Colors.blueGrey;
+    }
   }
 }
 
