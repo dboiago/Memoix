@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../app/routes/router.dart';
+import '../../app/app_shell.dart';
 import '../../features/home/screens/favourites_screen.dart';
 
 /// Navigation drawer with organized sections matching Figma design
@@ -40,11 +41,11 @@ class AppDrawer extends StatelessWidget {
               ),
             ),
             
-            const Divider(height: 1),
+            Divider(height: 1, thickness: 0.5, color: theme.colorScheme.outline.withValues(alpha: 0.15)),
             
             Expanded(
               child: ListView(
-                padding: const EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.symmetric(vertical: 4),
                 children: [
                   // NAVIGATE Section
                   _DrawerSectionHeader(
@@ -55,7 +56,8 @@ class AppDrawer extends StatelessWidget {
                     title: 'Recipes',
                     onTap: () {
                       Navigator.pop(context);
-                      // Already on home, no navigation needed
+                      // Pop all routes to get back to home
+                      AppShellNavigator.navigatorKey.currentState?.popUntil((route) => route.isFirst);
                     },
                   ),
                   _DrawerTile(
@@ -89,7 +91,7 @@ class AppDrawer extends StatelessWidget {
                     },
                   ),
                   
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 8),
                   
                   // TOOLS Section
                   _DrawerSectionHeader(
@@ -128,7 +130,7 @@ class AppDrawer extends StatelessWidget {
                     },
                   ),
                   
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 8),
                   
                   // SHARE Section
                   _DrawerSectionHeader(
@@ -176,7 +178,7 @@ class AppDrawer extends StatelessWidget {
               ),
             ),
             
-            const Divider(height: 1),
+            Divider(height: 1, thickness: 0.5, color: theme.colorScheme.outline.withValues(alpha: 0.15)),
             
             // Settings at bottom
             _DrawerTile(
@@ -207,21 +209,21 @@ class _DrawerSectionHeader extends StatelessWidget {
     final theme = Theme.of(context);
     
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
       child: Text(
         title.toUpperCase(),
         style: theme.textTheme.labelSmall?.copyWith(
           color: theme.colorScheme.outline,
-          fontWeight: FontWeight.w600,
-          letterSpacing: 1.2,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 1.0,
         ),
       ),
     );
   }
 }
 
-/// Drawer list tile
-class _DrawerTile extends StatelessWidget {
+/// Drawer list tile with rounded hover effect
+class _DrawerTile extends StatefulWidget {
   final IconData icon;
   final String title;
   final VoidCallback onTap;
@@ -233,21 +235,41 @@ class _DrawerTile extends StatelessWidget {
   });
 
   @override
+  State<_DrawerTile> createState() => _DrawerTileState();
+}
+
+class _DrawerTileState extends State<_DrawerTile> {
+  bool _hovered = false;
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     
-    return ListTile(
-      leading: Icon(icon, size: 22),
-      title: Text(
-        title,
-        style: theme.textTheme.bodyMedium?.copyWith(
-          fontWeight: FontWeight.w500,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 1),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: widget.onTap,
+          onHover: (h) => setState(() => _hovered = h),
+          borderRadius: BorderRadius.circular(8),
+          hoverColor: theme.colorScheme.surfaceContainerHighest,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            child: Row(
+              children: [
+                Icon(widget.icon, size: 20, color: theme.colorScheme.onSurfaceVariant),
+                const SizedBox(width: 12),
+                Text(
+                  widget.title,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
-      ),
-      onTap: onTap,
-      contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8),
       ),
     );
   }

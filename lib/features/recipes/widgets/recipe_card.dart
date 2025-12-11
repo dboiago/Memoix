@@ -63,7 +63,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   Text(
                     widget.recipe.name,
                     style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -71,12 +71,12 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   // Cuisine/country dot + servings + time
                   Row(
                     children: [
-                      // Cuisine indicator
+                      // Cuisine indicator with warm color dot
                       if (cuisine != null && cuisine.isNotEmpty) ...[
                         Text(
                           '\u2022',
                           style: TextStyle(
-                            color: theme.colorScheme.onSurfaceVariant,
+                            color: theme.colorScheme.primary, // warm color
                             fontSize: 16,
                           ),
                         ),

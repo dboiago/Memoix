@@ -400,17 +400,19 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
             const SizedBox(height: 24),
             
             // Clear button
-            FilledButton(
+            OutlinedButton(
               onPressed: () {
                 _amountController.clear();
                 setState(() => _result = '');
               },
-              style: FilledButton.styleFrom(
+              style: OutlinedButton.styleFrom(
                 padding: const EdgeInsets.all(16),
-                backgroundColor: theme.colorScheme.primary.withValues(alpha: 0.2),
-                foregroundColor: theme.colorScheme.primary,
+                side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
               ),
-              child: const Text('Clear'),
+              child: Text(
+                'Clear',
+                style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+              ),
             ),
           ],
         ),
@@ -454,18 +456,21 @@ class _ConversionTypeButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected 
-              ? theme.colorScheme.secondary.withValues(alpha: 0.2)
-              : theme.colorScheme.surfaceContainerHighest,
+              ? theme.colorScheme.surfaceContainerHighest
+              : Colors.transparent,
           borderRadius: BorderRadius.circular(8),
+          border: isSelected 
+              ? Border.all(color: theme.colorScheme.primary.withValues(alpha: 0.5))
+              : Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.2)),
         ),
         alignment: Alignment.center,
         child: Text(
           label,
           style: theme.textTheme.titleSmall?.copyWith(
             color: isSelected 
-                ? theme.colorScheme.secondary
-                : theme.colorScheme.onSurface,
-            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+                ? theme.colorScheme.primary
+                : theme.colorScheme.onSurfaceVariant,
+            fontWeight: isSelected ? FontWeight.w500 : FontWeight.normal,
           ),
         ),
       ),

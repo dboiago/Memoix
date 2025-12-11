@@ -11,11 +11,20 @@ class StatisticsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final statsAsync = ref.watch(cookingStatsProvider);
 
-    return statsAsync.when(
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: const Text('Statistics'),
+      ),
+      body: statsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (stats) => _StatsContent(stats: stats),
-      );
+      ),
+    );
   }
 }
 
@@ -107,7 +116,7 @@ class _StatsContent extends StatelessWidget {
         Text(
           'Recipes by Course',
           style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w500,
           ),
         ),
         const SizedBox(height: 16),
@@ -118,7 +127,7 @@ class _StatsContent extends StatelessWidget {
         Text(
           'Top Countries',
           style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w500,
           ),
         ),
         const SizedBox(height: 16),
@@ -162,7 +171,7 @@ class _StatCard extends StatelessWidget {
           Text(
             value,
             style: theme.textTheme.displaySmall?.copyWith(
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w500,
               color: theme.colorScheme.onSurface,
             ),
           ),
@@ -210,7 +219,7 @@ class _CourseBarChart extends StatelessWidget {
                     Text(
                       entry.key,
                       style: theme.textTheme.bodyMedium?.copyWith(
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w400,
                       ),
                     ),
                     Text(
@@ -223,13 +232,13 @@ class _CourseBarChart extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
+                  borderRadius: BorderRadius.circular(2),
                   child: LinearProgressIndicator(
                     value: percentage,
-                    minHeight: 8,
+                    minHeight: 4, // thinner bar like Figma
                     backgroundColor: theme.colorScheme.surface,
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      theme.colorScheme.secondary.withValues(alpha: 0.4),
+                      theme.colorScheme.primary, // use warm color
                     ),
                   ),
                 ),
@@ -281,7 +290,7 @@ class _CountryList extends StatelessWidget {
               child: Text(
                 rank.toString(),
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w500,
                   color: _getRankColor(context, rank),
                 ),
               ),
@@ -295,7 +304,7 @@ class _CountryList extends StatelessWidget {
                 Text(
                   cuisine?.name ?? entry.key,
                   style: theme.textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ],

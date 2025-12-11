@@ -51,14 +51,14 @@ class _CourseCardState extends State<CourseCard> {
           highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.all(24), // p-6
+            padding: const EdgeInsets.all(16), // compact padding
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Icon circle: w-12 h-12 rounded-lg (Figma)
+                // Icon container: compact size with rounded corners
                 Container(
-                  width: 48,
-                  height: 48,
+                  width: 40,
+                  height: 40,
                   decoration: BoxDecoration(
                     color: (_hovered || _pressed)
                         ? theme.colorScheme.secondary // group-hover:bg-secondary
@@ -70,15 +70,15 @@ class _CourseCardState extends State<CourseCard> {
                     color: (_hovered || _pressed)
                         ? theme.colorScheme.onSecondary // group-hover:text-secondary-foreground
                         : theme.colorScheme.onSurfaceVariant,
-                    size: 24, // w-6 h-6
+                    size: 20, // smaller icon
                   ),
                 ),
-                const SizedBox(height: 12), // gap-3
+                const SizedBox(height: 8), // tighter spacing
                 // Texts
                 Text(
                   widget.category.name,
                   style: theme.textTheme.titleSmall?.copyWith(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
