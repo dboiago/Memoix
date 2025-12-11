@@ -34,6 +34,12 @@ class Recipe {
   /// Subcategory within cuisine (e.g., "French" under "European")
   String? subcategory;
 
+  /// Continent (e.g., "Asian", "European", "American")
+  String? continent;
+
+  /// Country/region (e.g., "Korea", "France", "Southern USA")
+  String? country;
+
   /// Number of servings (e.g., "4-5 people", "2")
   String? serves;
 

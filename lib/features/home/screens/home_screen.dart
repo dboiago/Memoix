@@ -3,9 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../shared/widgets/app_drawer.dart';
+import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
+import '../../recipes/screens/recipe_list_screen_enhanced.dart';
 import '../../recipes/models/source_filter.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 
@@ -35,6 +38,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text(
           'Memoix',
@@ -54,53 +58,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
             icon: const Icon(Icons.add),
             onPressed: () => AppRoutes.toImport(context),
           ),
-          PopupMenuButton<String>(
-            icon: const Icon(Icons.more_vert),
-            onSelected: (value) => _handleMenuAction(context, value),
-            itemBuilder: (_) => [
-              const PopupMenuItem(
-                value: 'mealplan',
-                child: ListTile(
-                  leading: Icon(Icons.calendar_month),
-                  title: Text('Meal Plan'),
-                  contentPadding: EdgeInsets.zero,
-                ),
-              ),
-              const PopupMenuItem(
-                value: 'shopping',
-                child: ListTile(
-                  leading: Icon(Icons.shopping_cart),
-                  title: Text('Shopping Lists'),
-                  contentPadding: EdgeInsets.zero,
-                ),
-              ),
-              const PopupMenuItem(
-                value: 'converter',
-                child: ListTile(
-                  leading: Icon(Icons.straighten),
-                  title: Text('Unit Converter'),
-                  contentPadding: EdgeInsets.zero,
-                ),
-              ),
-              const PopupMenuDivider(),
-              const PopupMenuItem(
-                value: 'settings',
-                child: ListTile(
-                  leading: Icon(Icons.settings),
-                  title: Text('Settings'),
-                  contentPadding: EdgeInsets.zero,
-                ),
-              ),
-            ],
-          ),
         ],
         bottom: TabBar(
           controller: _tabController,
           onTap: (index) => setState(() => _selectedIndex = index),
           tabs: const [
-            Tab(text: 'Memoix', icon: Icon(Icons.restaurant_menu)),
-            Tab(text: 'My Recipes', icon: Icon(Icons.person)),
-            Tab(text: 'Favourites', icon: Icon(Icons.favorite)),
+            Tab(text: 'Memoix'),
+            Tab(text: 'My Recipes'),
+            Tab(text: 'Favourites'),
           ],
         ),
       ),
@@ -113,23 +78,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
         ],
       ),
     );
-  }
-
-  void _handleMenuAction(BuildContext context, String action) {
-    switch (action) {
-      case 'mealplan':
-        AppRoutes.toMealPlan(context);
-        break;
-      case 'shopping':
-        AppRoutes.toShoppingLists(context);
-        break;
-      case 'converter':
-        AppRoutes.toUnitConverter(context);
-        break;
-      case 'settings':
-        AppRoutes.toSettings(context);
-        break;
-    }
   }
 }
 
@@ -144,7 +92,7 @@ class MemoixCollectionTab extends ConsumerWidget {
     return categoriesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (err, _) => Center(child: Text('Error: $err')),
-      data: (categories) => CategoryRecipeView(
+      data: (categories) => CourseGridView(
         categories: categories,
         sourceFilter: RecipeSourceFilter.memoix,
       ),
@@ -163,7 +111,7 @@ class PersonalRecipesTab extends ConsumerWidget {
     return categoriesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (err, _) => Center(child: Text('Error: $err')),
-      data: (categories) => CategoryRecipeView(
+      data: (categories) => CourseGridView(
         categories: categories,
         sourceFilter: RecipeSourceFilter.personal,
         emptyMessage: 'No personal recipes yet.\nTap + to add your first recipe!',
@@ -212,7 +160,117 @@ class FavoritesTab extends ConsumerWidget {
 
 // `RecipeSourceFilter` moved to `features/recipes/models/source_filter.dart`
 
+/// View showing courses as a grid of cards matching Figma design
+class CourseGridView extends ConsumerWidget {
+  final List<Category> categories;
+  final RecipeSourceFilter sourceFilter;
+  final String? emptyMessage;
+
+  const CourseGridView({
+    super.key,
+    required this.categories,
+    this.sourceFilter = RecipeSourceFilter.all,
+    this.emptyMessage,
+  });
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    if (categories.isEmpty) {
+      return Center(
+        child: Text(emptyMessage ?? 'No categories found'),
+      );
+    }
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // Responsive grid: 2 cols on mobile, 3 on tablet, 4 on desktop
+        int crossAxisCount = 2;
+        if (constraints.maxWidth >= 900) {
+          crossAxisCount = 4;
+        } else if (constraints.maxWidth >= 600) {
+          crossAxisCount = 3;
+        }
+
+        return CustomScrollView(
+          slivers: [
+            // Search bar at top
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: SearchBar(
+                  hintText: 'Search recipes...',
+                  leading: const Icon(Icons.search),
+                  onTap: () {
+                    showSearch(
+                      context: context,
+                      delegate: RecipeSearchDelegate(ref),
+                    );
+                  },
+                ),
+              ),
+            ),
+            
+            // Course cards grid
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              sliver: SliverGrid(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: crossAxisCount,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
+                  childAspectRatio: 1.0,
+                ),
+                delegate: SliverChildBuilderDelegate(
+                  (context, index) {
+                    final category = categories[index];
+                    
+                    // Get recipe count for this category with source filter
+                    final recipesAsync = ref.watch(
+                      recipesByCourseProvider(
+                        (course: category.slug, sourceFilter: sourceFilter),
+                      ),
+                    );
+                    
+                    final recipeCount = recipesAsync.maybeWhen(
+                      data: (recipes) => recipes.length,
+                      orElse: () => 0,
+                    );
+
+                    return CourseCard(
+                      category: category,
+                      recipeCount: recipeCount,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => Scaffold(
+                              appBar: AppBar(
+                                title: Text(category.name),
+                              ),
+                              body: RecipeListScreenEnhanced(
+                                course: category.slug,
+                                sourceFilter: sourceFilter,
+                                emptyMessage: emptyMessage,
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                  childCount: categories.length,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
 /// View showing recipes organized by categories (like spreadsheet tabs)
+/// DEPRECATED: Keeping for reference, but now using CourseGridView
 class CategoryRecipeView extends StatefulWidget {
   final List<Category> categories;
   final RecipeSourceFilter sourceFilter;

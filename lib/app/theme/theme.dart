@@ -4,21 +4,21 @@ import 'package:google_fonts/google_fonts.dart';
 class MemoixTheme {
   MemoixTheme._();
 
-  // Dark Theme Colors
-  static const darkBackground = Color(0xFF0F1A26);
-  static const darkSurface = Color(0xFF1A2A3A);
-  static const darkPrimaryText = Color(0xFFE0E7FF);
-  static const darkAccent1 = Color(0xFFC68FA0); // mauve
-  static const darkAccent2 = Color(0xFFFF9A4A); // peach
-  static const darkMuted = Color(0xFF6B7280);
+  // Dark Theme Colors (from Figma design)
+  static const darkBackground = Color(0xFF1A1A1A);   // #1a1a1a
+  static const darkSurface = Color(0xFF242424);       // #242424 (card)
+  static const darkPrimaryText = Color(0xFFE8D5C4);   // #e8d5c4 (foreground)
+  static const darkAccent1 = Color(0xFFA88FA8);       // #a88fa8 (secondary)
+  static const darkAccent2 = Color(0xFFE8B4A0);       // #e8b4a0 (primary)
+  static const darkMuted = Color(0xFF9B9B9B);         // #9b9b9b (muted-foreground)
 
-  // Light Theme Colors
-  static const lightBackground = Color(0xFFF8FAFC);
-  static const lightSurface = Color(0xFFFFFFFF);
-  static const lightPrimaryText = Color(0xFF1E293B);
-  static const lightAccent1 = Color(0xFFD4A9B8); // lighter mauve
-  static const lightAccent2 = Color(0xFFFFB894); // brighter peach
-  static const lightMuted = Color(0xFF64748B);
+  // Light Theme Colors (from Figma design)
+  static const lightBackground = Color(0xFFFAF9F7); // #faf9f7
+  static const lightSurface = Color(0xFFFFFFFF);     // #fff (card)
+  static const lightPrimaryText = Color(0xFF4B5563); // #4b5563 (foreground)
+  static const lightAccent1 = Color(0xFFCBB2BF);     // #cbb2bf (secondary)
+  static const lightAccent2 = Color(0xFFD9C2B0);     // #d9c2b0 (primary)
+  static const lightMuted = Color(0xFF9CA3AF);       // #9ca3af
 
   static ThemeData get light {
     return ThemeData(
