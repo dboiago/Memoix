@@ -46,7 +46,9 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
         ),
         title: Text(
           widget.course.toUpperCase(),
-          style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+          style: theme.textTheme.titleMedium?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
         ),
       ),
       body: recipesAsync.when(
