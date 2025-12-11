@@ -311,4 +311,19 @@ class Ingredient {
     
     return buffer.toString();
   }
+
+  /// Format amount with unit for display (e.g., "2 tbsp", "1 cup")
+  String get displayAmount {
+    final buffer = StringBuffer();
+    
+    if (amount != null && amount!.isNotEmpty) {
+      buffer.write(amount);
+      if (unit != null && unit!.isNotEmpty) {
+        buffer.write(' ');
+        buffer.write(unit);
+      }
+    }
+    
+    return buffer.toString();
+  }
 }

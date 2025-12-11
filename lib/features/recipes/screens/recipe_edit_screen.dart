@@ -33,8 +33,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   late final TextEditingController _servesController;
   late final TextEditingController _timeController;
   late final TextEditingController _notesController;
-  late final TextEditingController _ingredientsController;
   late final TextEditingController _directionsController;
+
+  // 3-column ingredient editing: list of (name, amount, notes) controllers
+  final List<_IngredientRow> _ingredientRows = [];
 
   String _selectedCourse = 'mains';
   String? _selectedCuisine;
@@ -52,7 +54,6 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _servesController = TextEditingController();
     _timeController = TextEditingController();
     _notesController = TextEditingController();
-    _ingredientsController = TextEditingController();
     _directionsController = TextEditingController();
 
     if (widget.defaultCourse != null) {
@@ -84,10 +85,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _selectedCourse = recipe.course?.toLowerCase() ?? _selectedCourse;
       _selectedCuisine = recipe.cuisine;
 
-      // Convert ingredients to editable text
-      _ingredientsController.text = recipe.ingredients
-          .map((i) => i.displayText)
-          .join('\n');
+      // Convert ingredients to 3-column row controllers
+      for (final ingredient in recipe.ingredients) {
+        _addIngredientRow(
+          name: ingredient.name,
+          amount: ingredient.displayAmount,
+          notes: ingredient.preparation ?? '',
+        );
+      }
 
       // Convert directions to editable text
       _directionsController.text = recipe.directions.join('\n\n');
@@ -96,7 +101,28 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _notesController.text = 'OCR Text:\n${widget.ocrText}';
     }
 
+    // Always have at least one empty row for adding ingredients
+    if (_ingredientRows.isEmpty) {
+      _addIngredientRow();
+    }
+
     setState(() => _isLoading = false);
+  }
+
+  void _addIngredientRow({String name = '', String amount = '', String notes = ''}) {
+    _ingredientRows.add(_IngredientRow(
+      nameController: TextEditingController(text: name),
+      amountController: TextEditingController(text: amount),
+      notesController: TextEditingController(text: notes),
+    ));
+  }
+
+  void _removeIngredientRow(int index) {
+    if (_ingredientRows.length > 1) {
+      final row = _ingredientRows.removeAt(index);
+      row.dispose();
+      setState(() {});
+    }
   }
 
   @override
@@ -105,8 +131,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _servesController.dispose();
     _timeController.dispose();
     _notesController.dispose();
-    _ingredientsController.dispose();
     _directionsController.dispose();
+    for (final row in _ingredientRows) {
+      row.dispose();
+    }
     super.dispose();
   }
 
@@ -169,20 +197,23 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
               items: const [
                 DropdownMenuItem(value: 'apps', child: Text('Apps')),
+                DropdownMenuItem(value: 'soup', child: Text('Soup')),
+                DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(value: 'mains', child: Text('Mains')),
-                DropdownMenuItem(value: 'not-meat', child: Text('Not Meat')),
-                DropdownMenuItem(value: 'soups', child: Text('Soups')),
-                DropdownMenuItem(value: 'brunch', child: Text('Brunch')),
+                DropdownMenuItem(value: 'vegan', child: Text('Veg*n')),
                 DropdownMenuItem(value: 'sides', child: Text('Sides')),
-                DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
                 DropdownMenuItem(value: 'breads', child: Text('Breads')),
-                DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
+                DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
-                DropdownMenuItem(value: 'pickles', child: Text('Pickles/Brines')),
-                DropdownMenuItem(value: 'molecular', child: Text('Molecular')),
+                DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
                 DropdownMenuItem(value: 'pizzas', child: Text('Pizzas')),
-                DropdownMenuItem(value: 'smoking', child: Text('Smoking')),
+                DropdownMenuItem(value: 'sandwiches', child: Text('Sandwiches')),
                 DropdownMenuItem(value: 'cheese', child: Text('Cheese')),
+                DropdownMenuItem(value: 'pickles', child: Text('Pickles/Brines')),
+                DropdownMenuItem(value: 'smoking', child: Text('Smoking')),
+                DropdownMenuItem(value: 'molecular', child: Text('Molecular')),
+                DropdownMenuItem(value: 'scratch', child: Text('Scratch')),
+                DropdownMenuItem(value: 'drinks', child: Text('Drinks')),
               ],
               onChanged: (value) {
                 if (value != null) {
@@ -228,29 +259,78 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 24),
 
-            // Ingredients
-            Text(
-              'Ingredients',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              'One per line. Add notes like (optional), (diced), (alt: butter)',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
+            // Ingredients (3-column spreadsheet layout)
+            Row(
+              children: [
+                Text(
+                  'Ingredients',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Spacer(),
+                TextButton.icon(
+                  onPressed: () {
+                    _addIngredientRow();
+                    setState(() {});
+                  },
+                  icon: const Icon(Icons.add, size: 18),
+                  label: const Text('Add'),
+                ),
+              ],
             ),
             const SizedBox(height: 8),
-            TextField(
-              controller: _ingredientsController,
-              decoration: const InputDecoration(
-                hintText: '1 can white beans\n2 tbsp olive oil (alt: butter)\n1 onion, diced (optional)\n...',
-                alignLabelWithHint: true,
+            
+            // Column headers
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.surfaceContainerHighest,
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
               ),
-              maxLines: 10,
-              minLines: 5,
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 140,
+                    child: Text('Ingredient', 
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  SizedBox(
+                    width: 80,
+                    child: Text('Amount', 
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text('Notes/Prep', 
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 40), // Space for delete button
+                ],
+              ),
+            ),
+            
+            // Ingredient rows
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
+              ),
+              child: Column(
+                children: List.generate(_ingredientRows.length, (index) {
+                  return _buildIngredientRowWidget(index);
+                }),
+              ),
             ),
 
             const SizedBox(height: 24),
@@ -318,12 +398,33 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     setState(() => _isSaving = true);
 
     try {
-      // Parse ingredients from text
-      final ingredients = _ingredientsController.text
-          .split('\n')
-          .map((line) => line.trim())
-          .where((line) => line.isNotEmpty)
-          .map((line) => Ingredient.create(name: line))
+      // Parse ingredients from the 3-column rows
+      final ingredients = _ingredientRows
+          .where((row) => row.nameController.text.trim().isNotEmpty)
+          .map((row) {
+            // Parse the amount field for amount and unit
+            final amountText = row.amountController.text.trim();
+            String? amount;
+            String? unit;
+            if (amountText.isNotEmpty) {
+              // Try to separate amount from unit (e.g., "2 tbsp" -> amount: "2", unit: "tbsp")
+              final parts = amountText.split(RegExp(r'\s+'));
+              if (parts.length >= 2) {
+                amount = parts.first;
+                unit = parts.sublist(1).join(' ');
+              } else {
+                amount = amountText;
+              }
+            }
+            
+            return Ingredient()
+              ..name = row.nameController.text.trim()
+              ..amount = amount
+              ..unit = unit
+              ..preparation = row.notesController.text.trim().isEmpty 
+                  ? null 
+                  : row.notesController.text.trim();
+          })
           .toList();
 
       // Parse directions from text
@@ -380,6 +481,97 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     } finally {
       setState(() => _isSaving = false);
     }
+  }
+
+  Widget _buildIngredientRowWidget(int index) {
+    final theme = Theme.of(context);
+    final row = _ingredientRows[index];
+    final isLast = index == _ingredientRows.length - 1;
+    
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+      decoration: BoxDecoration(
+        border: isLast 
+            ? null 
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // Ingredient name
+          SizedBox(
+            width: 140,
+            child: TextField(
+              controller: row.nameController,
+              decoration: const InputDecoration(
+                isDense: true,
+                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: OutlineInputBorder(),
+                hintText: 'e.g., Onion',
+              ),
+              style: theme.textTheme.bodyMedium,
+              onChanged: (value) {
+                // Auto-add new row when typing in last row
+                if (isLast && value.isNotEmpty) {
+                  _addIngredientRow();
+                  setState(() {});
+                }
+              },
+            ),
+          ),
+          const SizedBox(width: 8),
+          
+          // Amount
+          SizedBox(
+            width: 80,
+            child: TextField(
+              controller: row.amountController,
+              decoration: const InputDecoration(
+                isDense: true,
+                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: OutlineInputBorder(),
+                hintText: '2 tbsp',
+              ),
+              style: theme.textTheme.bodyMedium,
+            ),
+          ),
+          const SizedBox(width: 8),
+          
+          // Notes/Prep
+          Expanded(
+            child: TextField(
+              controller: row.notesController,
+              decoration: const InputDecoration(
+                isDense: true,
+                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: OutlineInputBorder(),
+                hintText: 'diced, optional, etc.',
+              ),
+              style: theme.textTheme.bodyMedium,
+            ),
+          ),
+          
+          // Delete button
+          SizedBox(
+            width: 40,
+            child: IconButton(
+              icon: Icon(
+                Icons.remove_circle_outline,
+                size: 20,
+                color: _ingredientRows.length > 1 
+                    ? theme.colorScheme.error 
+                    : theme.colorScheme.outline,
+              ),
+              onPressed: _ingredientRows.length > 1 
+                  ? () => _removeIngredientRow(index) 
+                  : null,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   void _showOcrText(BuildContext context) {
@@ -541,5 +733,24 @@ class _CuisineSelector extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+/// Helper class to hold controllers for a single ingredient row
+class _IngredientRow {
+  final TextEditingController nameController;
+  final TextEditingController amountController;
+  final TextEditingController notesController;
+
+  _IngredientRow({
+    required this.nameController,
+    required this.amountController,
+    required this.notesController,
+  });
+
+  void dispose() {
+    nameController.dispose();
+    amountController.dispose();
+    notesController.dispose();
   }
 }

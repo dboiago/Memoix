@@ -1,12 +1,22 @@
 {
   "files": [
-    "mains.json",
     "apps.json",
-    "soups.json",
+    "soup.json",
+    "salad.json",
+    "mains.json",
+    "vegan.json",
     "sides.json",
-    "desserts.json",
-    "brunch.json",
     "breads.json",
-    "sauces.json"
+    "desserts.json",
+    "sauces.json",
+    "rubs.json",
+    "pizzas.json",
+    "sandwiches.json",
+    "cheese.json",
+    "pickles.json",
+    "smoking.json",
+    "molecular.json",
+    "scratch.json",
+    "drinks.json"
   ]
 }
