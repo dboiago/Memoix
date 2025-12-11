@@ -275,16 +275,72 @@ class DayCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  ...meals.map((meal) => ListTile(
-                    dense: true,
-                    title: Text(meal.recipeName ?? 'Unknown'),
-                    subtitle: meal.servings != null
-                        ? Text('${meal.servings} servings')
-                        : null,
-                    trailing: const Icon(Icons.chevron_right, size: 20),
-                    onTap: () {
-                      // Navigate to recipe detail
+                  ...meals.map((meal) => Dismissible(
+                    key: Key('${date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}'),
+                    background: Container(
+                      color: Colors.red,
+                      alignment: Alignment.centerRight,
+                      padding: const EdgeInsets.only(right: 16),
+                      child: const Icon(Icons.delete, color: Colors.white),
+                    ),
+                    direction: DismissDirection.endToStart,
+                    onDismissed: (_) {
+                      // Remove the meal from the plan
                     },
+                    child: ListTile(
+                      dense: true,
+                      title: Text(meal.recipeName ?? 'Unknown'),
+                      subtitle: meal.servings != null
+                          ? Text('${meal.servings} servings')
+                          : null,
+                      trailing: PopupMenuButton<String>(
+                        icon: const Icon(Icons.more_vert, size: 20),
+                        onSelected: (action) {
+                          if (action == 'remove') {
+                            // Remove the meal
+                          } else if (action == 'view') {
+                            // Navigate to recipe detail
+                            if (meal.recipeId != null) {
+                              Navigator.pushNamed(
+                                context,
+                                '/recipe/${meal.recipeId}',
+                              );
+                            }
+                          }
+                        },
+                        itemBuilder: (context) => [
+                          const PopupMenuItem(
+                            value: 'view',
+                            child: Row(
+                              children: [
+                                Icon(Icons.visibility),
+                                SizedBox(width: 8),
+                                Text('View Recipe'),
+                              ],
+                            ),
+                          ),
+                          const PopupMenuItem(
+                            value: 'remove',
+                            child: Row(
+                              children: [
+                                Icon(Icons.delete, color: Colors.red),
+                                SizedBox(width: 8),
+                                Text('Remove', style: TextStyle(color: Colors.red)),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      onTap: () {
+                        // Navigate to recipe detail
+                        if (meal.recipeId != null) {
+                          Navigator.pushNamed(
+                            context,
+                            '/recipe/${meal.recipeId}',
+                          );
+                        }
+                      },
+                    ),
                   )),
                 ],
               );

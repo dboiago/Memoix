@@ -101,14 +101,37 @@ class _IngredientListState extends State<IngredientList> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    item.ingredient.displayText,
-                    style: TextStyle(
-                      decoration: isChecked ? TextDecoration.lineThrough : null,
-                      color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
-                          : null,
-                    ),
+                  Row(
+                    children: [
+                      Flexible(
+                        child: Text(
+                          item.ingredient.displayText,
+                          style: TextStyle(
+                            decoration: isChecked ? TextDecoration.lineThrough : null,
+                            color: isChecked
+                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                : null,
+                          ),
+                        ),
+                      ),
+                      if (item.ingredient.isOptional) ...[
+                        const SizedBox(width: 6),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: theme.colorScheme.secondaryContainer,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Text(
+                            'optional',
+                            style: theme.textTheme.labelSmall?.copyWith(
+                              color: theme.colorScheme.onSecondaryContainer,
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
                   // Alternative
                   if (item.ingredient.alternative != null)

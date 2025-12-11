@@ -1,0 +1,141 @@
+import 'dart:convert';
+import 'dart:io';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:file_picker/file_picker.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:intl/intl.dart';
+import 'package:share_plus/share_plus.dart';
+
+import '../../recipes/models/recipe.dart';
+import '../../recipes/repository/recipe_repository.dart';
+
+/// Service for exporting and importing recipes as JSON backup files
+class RecipeBackupService {
+  final RecipeRepository _repository;
+
+  RecipeBackupService(this._repository);
+
+  /// Export all personal recipes to a JSON file
+  /// Returns the path to the exported file or null if cancelled/failed
+  Future<String?> exportRecipes({bool includeAll = false}) async {
+    // Get recipes to export
+    List<Recipe> recipes;
+    if (includeAll) {
+      recipes = await _repository.getAllRecipes();
+    } else {
+      // Only personal recipes (not memoix collection)
+      recipes = await _repository.getPersonalRecipes();
+      final imported = await _repository.getImportedRecipes();
+      recipes = [...recipes, ...imported];
+    }
+
+    if (recipes.isEmpty) {
+      throw Exception('No recipes to export');
+    }
+
+    // Convert to JSON
+    final jsonData = {
+      'version': 1,
+      'exportedAt': DateTime.now().toIso8601String(),
+      'recipeCount': recipes.length,
+      'recipes': recipes.map((r) => r.toJson()).toList(),
+    };
+
+    final jsonString = const JsonEncoder.withIndent('  ').convert(jsonData);
+
+    // Generate filename with date
+    final dateStr = DateFormat('yyyy-MM-dd_HHmm').format(DateTime.now());
+    final filename = 'memoix_recipes_$dateStr.json';
+
+    // Save to downloads or app documents directory
+    final directory = await getApplicationDocumentsDirectory();
+    final file = File('${directory.path}/$filename');
+    await file.writeAsString(jsonString);
+
+    // On mobile, also share the file
+    await Share.shareXFiles(
+      [XFile(file.path)],
+      subject: 'Memoix Recipe Backup',
+      text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
+    );
+
+    return file.path;
+  }
+
+  /// Import recipes from a JSON file
+  /// Returns the number of recipes imported
+  Future<int> importRecipes() async {
+    // Pick file
+    final result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['json'],
+      allowMultiple: false,
+    );
+
+    if (result == null || result.files.isEmpty) {
+      return 0;
+    }
+
+    final file = result.files.first;
+    String jsonString;
+
+    // Read file content
+    if (file.path != null) {
+      jsonString = await File(file.path!).readAsString();
+    } else if (file.bytes != null) {
+      jsonString = utf8.decode(file.bytes!);
+    } else {
+      throw Exception('Could not read file');
+    }
+
+    // Parse JSON
+    final jsonData = jsonDecode(jsonString);
+
+    if (jsonData is! Map || !jsonData.containsKey('recipes')) {
+      // Try parsing as a simple array of recipes
+      if (jsonData is List) {
+        return _importRecipeList(jsonData);
+      }
+      throw Exception('Invalid backup file format');
+    }
+
+    final recipesList = jsonData['recipes'] as List;
+    return _importRecipeList(recipesList);
+  }
+
+  Future<int> _importRecipeList(List recipesList) async {
+    int imported = 0;
+
+    for (final recipeJson in recipesList) {
+      try {
+        final recipe = Recipe.fromJson(recipeJson as Map<String, dynamic>);
+        
+        // Mark as imported unless it was personal
+        if (recipe.source == RecipeSource.memoix) {
+          recipe.source = RecipeSource.imported;
+        }
+        
+        // Check if recipe already exists by UUID
+        final existing = await _repository.getRecipeByUuid(recipe.uuid);
+        if (existing != null) {
+          // Update version to trigger merge
+          recipe.version = existing.version + 1;
+          recipe.id = existing.id; // Keep the same Isar ID
+        }
+        
+        await _repository.saveRecipe(recipe);
+        imported++;
+      } catch (e) {
+        // Skip invalid recipes, continue with others
+        continue;
+      }
+    }
+
+    return imported;
+  }
+}
+
+// Provider
+final recipeBackupServiceProvider = Provider<RecipeBackupService>((ref) {
+  return RecipeBackupService(ref.watch(recipeRepositoryProvider));
+});
