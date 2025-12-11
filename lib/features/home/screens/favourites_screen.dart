@@ -46,7 +46,7 @@ class FavouritesScreen extends ConsumerWidget {
             padding: const EdgeInsets.symmetric(vertical: 8),
             itemCount: recipes.length,
             itemBuilder: (context, index) {
-              return RecipeCardEnhanced(
+              return RecipeCard(
                 recipe: recipes[index],
                 onTap: () => AppRoutes.toRecipeDetail(context, recipes[index].uuid),
               );
