@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/cooking_stats.dart';
 import '../../recipes/models/cuisine.dart';
-import '../../../shared/widgets/app_drawer.dart';
 
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
@@ -12,17 +11,11 @@ class StatisticsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final statsAsync = ref.watch(cookingStatsProvider);
 
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: AppBar(
-        title: const Text('Statistics'),
-      ),
-      body: statsAsync.when(
+    return statsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (stats) => _StatsContent(stats: stats),
-      ),
-    );
+      );
   }
 }
 
@@ -282,14 +275,14 @@ class _CountryList extends StatelessWidget {
               height: 32,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: _getRankColor(rank).withValues(alpha: 0.2),
+                color: _getRankColor(context, rank).withValues(alpha: 0.2),
                 shape: BoxShape.circle,
               ),
               child: Text(
                 rank.toString(),
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: _getRankColor(rank),
+                  color: _getRankColor(context, rank),
                 ),
               ),
             ),
@@ -319,7 +312,7 @@ class _CountryList extends StatelessWidget {
     );
   }
   
-  Color _getRankColor(int rank) {
+  Color _getRankColor(BuildContext context, int rank) {
     // Use a consistent, muted accent for rankings
     return Theme.of(context).colorScheme.secondary;
   }

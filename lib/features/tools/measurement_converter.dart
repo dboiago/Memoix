@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../shared/widgets/app_drawer.dart';
 
 /// Measurement conversion utility for cooking
 class MeasurementConverter {
@@ -233,12 +232,8 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: AppBar(
-        title: const Text('Measurement Converter'),
-      ),
-      body: SingleChildScrollView(
+    return SafeArea(
+      child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

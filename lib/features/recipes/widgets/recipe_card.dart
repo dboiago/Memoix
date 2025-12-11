@@ -157,7 +157,8 @@ class RecipeCard extends ConsumerWidget {
           ],
         ),
       ),
-    );
+    ),
+  );
   }
 
   String _displayCuisine(String raw, String? subcategory) {

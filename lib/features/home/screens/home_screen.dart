@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../shared/widgets/app_drawer.dart';
 import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/models/source_filter.dart';
@@ -16,36 +15,10 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final categoriesAsync = ref.watch(categoriesProvider);
-
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: AppBar(
-        title: const Text(
-          'Memoix',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        elevation: 1,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              showSearch(
-                context: context,
-                delegate: RecipeSearchDelegate(ref),
-              );
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.add),
-            onPressed: () => AppRoutes.toImport(context),
-          ),
-        ],
-      ),
-      body: categoriesAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
-        data: (categories) => _CourseGridView(categories: categories),
-      ),
+    return categoriesAsync.when(
+      loading: () => const Center(child: CircularProgressIndicator()),
+      error: (err, _) => Center(child: Text('Error: $err')),
+      data: (categories) => _CourseGridView(categories: categories),
     );
   }
 }
@@ -136,16 +109,7 @@ class _CourseGridView extends ConsumerWidget {
                       category: category,
                       recipeCount: recipeCount,
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => RecipeListScreen(
-                              course: category.slug,
-                              sourceFilter: RecipeSourceFilter.all,
-                              showAddButton: true,
-                            ),
-                          ),
-                        );
+                        AppRoutes.toRecipeList(context, category.slug);
                       },
                     );
                   },

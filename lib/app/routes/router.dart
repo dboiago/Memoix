@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../features/home/screens/home_screen.dart';
+import '../app_shell.dart';
 import '../../features/recipes/screens/recipe_detail_screen.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
+import '../../features/recipes/screens/recipe_list_screen.dart';
+import '../../features/recipes/models/source_filter.dart';
 import '../../features/import/screens/import_screen.dart';
 import '../../features/import/screens/qr_scanner_screen.dart';
 import '../../features/import/screens/ocr_scanner_screen.dart';
@@ -22,7 +24,7 @@ class AppRouter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const HomeScreen();
+    return const AppShell();
   }
 }
 
@@ -31,15 +33,27 @@ class AppRoutes {
   AppRoutes._();
 
   static void toRecipeDetail(BuildContext context, String recipeId) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => RecipeDetailScreen(recipeId: recipeId),
       ),
     );
   }
 
+  static void toRecipeList(BuildContext context, String course) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => RecipeListScreen(
+          course: course,
+          sourceFilter: RecipeSourceFilter.all,
+          showAddButton: true,
+        ),
+      ),
+    );
+  }
+
   static void toRecipeEdit(BuildContext context, {String? recipeId, String? course}) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => RecipeEditScreen(recipeId: recipeId, defaultCourse: course),
       ),
@@ -47,7 +61,7 @@ class AppRoutes {
   }
 
   static void toImport(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const ImportScreen(),
       ),
@@ -55,7 +69,7 @@ class AppRoutes {
   }
 
   static void toQRScanner(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const QrScannerScreen(),
       ),
@@ -63,7 +77,7 @@ class AppRoutes {
   }
 
   static void toOCRScanner(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const OCRScannerScreen(),
       ),
@@ -71,7 +85,7 @@ class AppRoutes {
   }
 
   static void toURLImport(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const URLImportScreen(),
       ),
@@ -79,7 +93,7 @@ class AppRoutes {
   }
 
   static void toShareRecipe(BuildContext context, {String? recipeId}) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => ShareRecipeScreen(recipeId: recipeId),
       ),
@@ -87,7 +101,7 @@ class AppRoutes {
   }
 
   static void toSettings(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const SettingsScreen(),
       ),
@@ -95,7 +109,7 @@ class AppRoutes {
   }
 
   static void toShoppingLists(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const ShoppingListScreen(),
       ),
@@ -103,7 +117,7 @@ class AppRoutes {
   }
 
   static void toMealPlan(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const MealPlanScreen(),
       ),
@@ -111,7 +125,7 @@ class AppRoutes {
   }
 
   static void toStatistics(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const StatisticsScreen(),
       ),
@@ -119,7 +133,7 @@ class AppRoutes {
   }
 
   static void toFavourites(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const FavouritesScreen(),
       ),
@@ -127,7 +141,7 @@ class AppRoutes {
   }
 
   static void toUnitConverter(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const MeasurementConverterWidget(),
       ),
@@ -135,7 +149,7 @@ class AppRoutes {
   }
 
   static void toKitchenTimer(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const KitchenTimerWidget(),
       ),
@@ -143,7 +157,7 @@ class AppRoutes {
   }
 
   static void toScratchPad(BuildContext context) {
-    Navigator.of(context).push(
+    AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const ScratchPadScreen(),
       ),

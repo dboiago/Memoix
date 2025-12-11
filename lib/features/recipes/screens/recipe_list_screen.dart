@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../shared/widgets/app_drawer.dart';
 import '../models/recipe.dart';
 import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
@@ -39,12 +38,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       recipesByCourseProvider(widget.course),
     );
 
-    return Scaffold(
-      drawer: const AppDrawer(),
-      appBar: AppBar(
-        title: const Text('Recipe Book'),
-      ),
-      body: recipesAsync.when(
+    return recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (allRecipes) {
@@ -103,13 +97,6 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           );
         },
       ),
-      floatingActionButton: widget.showAddButton
-          ? FloatingActionButton.extended(
-              onPressed: () => _showAddOptions(context),
-              icon: const Icon(Icons.add),
-              label: const Text('Add Recipe'),
-            )
-          : null,
     );
   }
 
