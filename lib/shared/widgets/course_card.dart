@@ -18,6 +18,7 @@ class CourseCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
 
     return Card(
       elevation: 0,
@@ -27,11 +28,12 @@ class CourseCard extends StatelessWidget {
           color: theme.colorScheme.outline.withValues(alpha: 0.1),
         ),
       ),
+      color: isDark ? const Color(0xFF1A1A1A) : theme.colorScheme.surfaceContainerHigh,
       child: Material(
         color: Colors.transparent,
         child: InkWell(
           onTap: onTap,
-          hoverColor: theme.colorScheme.primary.withValues(alpha: 0.06),
+          hoverColor: theme.colorScheme.secondary.withValues(alpha: 0.10),
           borderRadius: BorderRadius.circular(12),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
@@ -47,7 +49,7 @@ class CourseCard extends StatelessWidget {
                   ),
                   child: Icon(
                     _getIconData(category.iconName),
-                    color: theme.colorScheme.primary,
+                    color: theme.colorScheme.secondary,
                     size: 22,
                   ),
                 ),

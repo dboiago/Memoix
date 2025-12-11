@@ -26,18 +26,15 @@ class _AppShellState extends ConsumerState<AppShell> {
       drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text('Recipe Book'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              showSearch(
-                context: context,
-                delegate: RecipeSearchDelegate(ref),
-              );
-            },
-            tooltip: 'Search',
-          ),
-        ],
+        leading: Navigator.of(AppShellNavigator.navigatorKey.currentContext!)
+                .canPop()
+            ? IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  AppShellNavigator.navigatorKey.currentState!.maybePop();
+                },
+              )
+            : null,
       ),
       body: Navigator(
         key: AppShellNavigator.navigatorKey,

@@ -21,12 +21,14 @@ class RecipeCard extends ConsumerWidget {
     final theme = Theme.of(context);
     final cuisine = recipe.cuisine;
 
+    final bool isDark = theme.brightness == Brightness.dark;
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
         side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.12)),
       ),
+      color: isDark ? const Color(0xFF1A1A1A) : theme.colorScheme.surfaceContainerHigh,
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: onTap,
@@ -147,6 +149,13 @@ class RecipeCard extends ConsumerWidget {
                       recipeName: recipe.name,
                       course: recipe.course,
                       cuisine: recipe.cuisine,
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('${recipe.name} marked as cooked'),
+                        behavior: SnackBarBehavior.floating,
+                        duration: const Duration(seconds: 2),
+                      ),
                     );
                   },
                   padding: const EdgeInsets.all(8),

@@ -65,7 +65,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                       borderSide: BorderSide.none,
                     ),
                   ),
-                  style: TextStyle(color: theme.colorScheme.onSurface),
+                  style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                   onChanged: (value) {
                     setState(() => _searchQuery = value.toLowerCase());
                   },
@@ -113,12 +113,13 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           setState(() => _selectedCuisine = value);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.primaryContainer,
+        selectedColor: theme.colorScheme.secondaryContainer,
+        showCheckmark: false,
         labelStyle: TextStyle(
           fontSize: 13,
           color: isSelected 
-              ? theme.colorScheme.onPrimaryContainer 
-              : theme.colorScheme.onSurface,
+              ? theme.colorScheme.onSecondaryContainer 
+              : theme.colorScheme.onSurfaceVariant,
         ),
       ),
     );
