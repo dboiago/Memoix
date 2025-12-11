@@ -226,8 +226,18 @@ class DayCard extends ConsumerWidget {
     final dateFormat = DateFormat('MMM d');
 
     return Card(
-      elevation: isToday ? 2 : 0,
-      color: isToday ? theme.colorScheme.surfaceContainerHighest : null,
+      elevation: 0,
+      margin: const EdgeInsets.symmetric(vertical: 4),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(
+          color: isToday
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withValues(alpha: 0.1),
+          width: isToday ? 1.5 : 1.0,
+        ),
+      ),
+      color: theme.cardTheme.color ?? theme.colorScheme.surface,
       child: ExpansionTile(
         initiallyExpanded: isToday,
         leading: Column(
@@ -288,20 +298,45 @@ class DayCard extends ConsumerWidget {
                       child: Icon(Icons.delete, color: theme.colorScheme.secondary),
                     ),
                     direction: DismissDirection.endToStart,
-                    onDismissed: (_) {
-                      // Remove the meal from the plan
-                      ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
+                    onDismissed: (_) async {
+                      // Remove the meal from the plan and refresh
+                      await ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
+                      ref.invalidate(weeklyPlanProvider);
                     },
                     child: ListTile(
                       dense: true,
-                      title: Text(meal.recipeName ?? 'Unknown'),
+                      title: Row(
+                        children: [
+                          Expanded(
+                            child: Text(meal.recipeName ?? 'Unknown'),
+                          ),
+                          // Category label with dot like recipe cards
+                          if (meal.recipeCategory != null) ...[  
+                            Text(
+                              '\u2022',
+                              style: TextStyle(
+                                color: theme.colorScheme.primary,
+                                fontSize: 14,
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              _capitalizeFirst(meal.recipeCategory!),
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
                       subtitle: _buildMealSubtitle(meal, theme),
                       trailing: PopupMenuButton<String>(
                         icon: const Icon(Icons.more_vert, size: 20),
-                        onSelected: (action) {
+                        onSelected: (action) async {
                           if (action == 'remove') {
-                            // Remove the meal
-                            ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
+                            // Remove the meal and refresh
+                            await ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
+                            ref.invalidate(weeklyPlanProvider);
                           } else if (action == 'view') {
                             // Navigate to recipe detail
                             if (meal.recipeId != null) {
@@ -383,6 +418,11 @@ class DayCard extends ConsumerWidget {
     return date.year == now.year &&
         date.month == now.month &&
         date.day == now.day;
+  }
+
+  String _capitalizeFirst(String s) {
+    if (s.isEmpty) return s;
+    return s[0].toUpperCase() + s.substring(1);
   }
 }
 

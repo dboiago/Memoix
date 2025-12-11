@@ -335,13 +335,13 @@ class SettingsScreen extends ConsumerWidget {
 
           const Divider(),
 
-          // Danger zone (using muted styling, not red)
-          _SectionHeader(title: 'Danger Zone'),
+          // Danger zone (using secondary color for visibility)
+          _SectionHeader(title: 'Danger Zone', colour: theme.colorScheme.secondary),
           ListTile(
-            leading: Icon(Icons.delete_forever, color: theme.colorScheme.onSurfaceVariant),
+            leading: Icon(Icons.delete_forever, color: theme.colorScheme.secondary),
             title: Text(
               'Clear All Data',
-              style: TextStyle(color: theme.colorScheme.onSurface),
+              style: TextStyle(color: theme.colorScheme.secondary),
             ),
             subtitle: const Text('Delete all recipes and reset app'),
             onTap: () => _confirmClearData(context, ref),

@@ -456,11 +456,11 @@ class _ConversionTypeButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected 
-              ? theme.colorScheme.surfaceContainerHighest
+              ? theme.colorScheme.secondary.withValues(alpha: 0.15)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(8),
           border: isSelected 
-              ? Border.all(color: theme.colorScheme.primary.withValues(alpha: 0.5))
+              ? Border.all(color: theme.colorScheme.secondary)
               : Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.2)),
         ),
         alignment: Alignment.center,
@@ -468,7 +468,7 @@ class _ConversionTypeButton extends StatelessWidget {
           label,
           style: theme.textTheme.titleSmall?.copyWith(
             color: isSelected 
-                ? theme.colorScheme.primary
+                ? theme.colorScheme.secondary
                 : theme.colorScheme.onSurfaceVariant,
             fontWeight: isSelected ? FontWeight.w500 : FontWeight.normal,
           ),

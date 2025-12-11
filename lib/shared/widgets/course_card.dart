@@ -51,9 +51,10 @@ class _CourseCardState extends State<CourseCard> {
           highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.all(16), // compact padding
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10), // compact
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 // Icon container: compact size with rounded corners
                 Container(
@@ -68,7 +69,7 @@ class _CourseCardState extends State<CourseCard> {
                   child: Icon(
                     _getIconData(widget.category.iconName),
                     color: (_hovered || _pressed)
-                        ? theme.colorScheme.onSecondary // group-hover:text-secondary-foreground
+                        ? (isDark ? Colors.black87 : Colors.white) // dark icon on purple bg
                         : theme.colorScheme.onSurfaceVariant,
                     size: 20, // smaller icon
                   ),

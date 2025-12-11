@@ -236,9 +236,9 @@ class _CourseBarChart extends StatelessWidget {
                   child: LinearProgressIndicator(
                     value: percentage,
                     minHeight: 4, // thinner bar like Figma
-                    backgroundColor: theme.colorScheme.outline.withValues(alpha: 0.15),
+                    backgroundColor: theme.colorScheme.outline.withValues(alpha: 0.2),
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      theme.colorScheme.onSurface.withValues(alpha: 0.6), // better contrast in both modes
+                      theme.colorScheme.primary, // warm color bar
                     ),
                   ),
                 ),
