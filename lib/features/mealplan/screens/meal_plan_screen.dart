@@ -213,69 +213,81 @@ class WeekView extends ConsumerWidget {
   }
 }
 
-class DayCard extends ConsumerWidget {
+class DayCard extends ConsumerStatefulWidget {
   final DateTime date;
   final MealPlan? plan;
 
   const DayCard({super.key, required this.date, this.plan});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<DayCard> createState() => _DayCardState();
+}
+
+class _DayCardState extends ConsumerState<DayCard> {
+  bool _hovered = false;
+
+  @override
+  Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final isToday = _isToday(date);
+    final isToday = _isToday(widget.date);
     final dayFormat = DateFormat('EEEE');
     final dateFormat = DateFormat('MMM d');
 
-    return Card(
-      elevation: 0,
-      margin: const EdgeInsets.symmetric(vertical: 4),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-        side: BorderSide(
-          color: isToday
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.1),
-          width: isToday ? 1.5 : 1.0,
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hovered = true),
+      onExit: (_) => setState(() => _hovered = false),
+      child: Card(
+        elevation: 0,
+        margin: const EdgeInsets.symmetric(vertical: 4),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+          side: BorderSide(
+            color: isToday || _hovered
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.outline.withValues(alpha: 0.1),
+            width: isToday || _hovered ? 1.5 : 1.0,
+          ),
         ),
-      ),
-      color: theme.cardTheme.color ?? theme.colorScheme.surface,
-      child: ExpansionTile(
-        initiallyExpanded: isToday,
-        leading: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              date.day.toString(),
-              style: theme.textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: isToday ? theme.colorScheme.primary : null,
+        color: theme.cardTheme.color ?? theme.colorScheme.surface,
+        child: Theme(
+          data: theme.copyWith(dividerColor: Colors.transparent),
+          child: ExpansionTile(
+            initiallyExpanded: isToday,
+            leading: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  widget.date.day.toString(),
+                  style: theme.textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: isToday ? theme.colorScheme.primary : null,
+                  ),
+                ),
+              ],
+            ),
+            title: Text(
+              dayFormat.format(widget.date),
+              style: TextStyle(
+                fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
               ),
             ),
-          ],
-        ),
-        title: Text(
-          dayFormat.format(date),
-          style: TextStyle(
-            fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
-          ),
-        ),
-        subtitle: Text(
-          plan != null && !plan!.isEmpty
-              ? '${plan!.mealCount} meal${plan!.mealCount == 1 ? '' : 's'} planned'
-              : 'No meals planned',
-          style: TextStyle(
-            color: theme.colorScheme.onSurfaceVariant,
-          ),
-        ),
-        children: [
-          if (plan == null || plan!.isEmpty)
-            const Padding(
-              padding: EdgeInsets.all(16),
-              child: Text('Tap + to add a meal'),
-            )
-          else
-            ...MealCourse.all.map((course) {
-              final meals = plan!.getMeals(course);
+            subtitle: Text(
+              widget.plan != null && !widget.plan!.isEmpty
+                  ? '${widget.plan!.mealCount} meal${widget.plan!.mealCount == 1 ? '' : 's'} planned'
+                  : 'No meals planned',
+              style: TextStyle(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+            children: [
+              if (widget.plan == null || widget.plan!.isEmpty)
+                const Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text('Tap + to add a meal'),
+                )
+              else
+                ...MealCourse.all.map((course) {
+                  final meals = widget.plan!.getMeals(course);
               if (meals.isEmpty) return const SizedBox.shrink();
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -291,7 +303,7 @@ class DayCard extends ConsumerWidget {
                     ),
                   ),
                   ...meals.map((meal) => Dismissible(
-                    key: Key('${date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}'),
+                    key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}'),
                     background: Container(
                       color: theme.colorScheme.secondary.withValues(alpha: 0.2),
                       alignment: Alignment.centerRight,
@@ -301,7 +313,7 @@ class DayCard extends ConsumerWidget {
                     direction: DismissDirection.endToStart,
                     onDismissed: (_) async {
                       // Remove the meal from the plan and refresh
-                      await ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
+                      await ref.read(mealPlanServiceProvider).removeMeal(widget.date, meals.indexOf(meal));
                       ref.invalidate(weeklyPlanProvider);
                     },
                     child: ListTile(
@@ -328,7 +340,7 @@ class DayCard extends ConsumerWidget {
                               ),
                               const SizedBox(width: 4),
                               Text(
-                                meal.cuisine!,
+                                _cuisineToAdjective(meal.cuisine!),
                                 style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.onSurfaceVariant,
                                 ),
@@ -352,7 +364,7 @@ class DayCard extends ConsumerWidget {
                         onSelected: (action) async {
                           if (action == 'remove') {
                             // Remove the meal and refresh
-                            await ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
+                            await ref.read(mealPlanServiceProvider).removeMeal(widget.date, meals.indexOf(meal));
                             ref.invalidate(weeklyPlanProvider);
                           } else if (action == 'view') {
                             // Navigate to recipe detail using AppRoutes
@@ -395,7 +407,9 @@ class DayCard extends ConsumerWidget {
                 ],
               );
             }),
-        ],
+          ],
+        ),
+        ),
       ),
     );
   }
@@ -434,6 +448,25 @@ class DayCard extends ConsumerWidget {
   String _capitalizeFirst(String s) {
     if (s.isEmpty) return s;
     return s[0].toUpperCase() + s.substring(1);
+  }
+
+  String _cuisineToAdjective(String raw) {
+    const map = {
+      'Korea': 'Korean',
+      'Korean': 'Korean',
+      'China': 'Chinese',
+      'Chinese': 'Chinese',
+      'Japan': 'Japanese',
+      'Japanese': 'Japanese',
+      'Spain': 'Spanish',
+      'France': 'French',
+      'Italy': 'Italian',
+      'Mexico': 'Mexican',
+      'Mexican': 'Mexican',
+      'United States': 'American',
+      'North American': 'North American',
+    };
+    return map[raw] ?? raw;
   }
 }
 
