@@ -281,9 +281,13 @@ class MealPlanService {
 
 // Use central provider from core/providers.dart
 
-final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, weekStart) async {
-  final service = ref.watch(mealPlanServiceProvider);
-  return service.getWeek(weekStart);
+final weeklyPlanProvider = StreamProvider.family<WeeklyPlan, DateTime>((ref, weekStart) {
+  final isar = ref.watch(databaseProvider);
+  
+  return isar.mealPlans.watchLazy().asyncMap((_) async {
+    final service = ref.watch(mealPlanServiceProvider);
+    return service.getWeek(weekStart);
+  });
 });
 
 final selectedWeekProvider = StateProvider<DateTime>((ref) {
