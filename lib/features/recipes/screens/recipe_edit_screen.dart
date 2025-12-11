@@ -352,6 +352,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   ),
                   const SizedBox(width: 40), // Space for delete button
                 ],
+              ),
             ),
             
             // Ingredient rows
