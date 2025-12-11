@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../app/routes/router.dart';
+import '../../features/home/screens/favourites_screen.dart';
 
 /// Navigation drawer with organized sections matching Figma design
 /// Sections: Navigate, Tools, Share
@@ -79,7 +80,13 @@ class AppDrawer extends StatelessWidget {
                     title: 'Favourites',
                     onTap: () {
                       Navigator.pop(context);
-                      // Switch to favorites tab (will implement later)
+                      // Navigate to favorites screen
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const FavouritesScreen(),
+                        ),
+                      );
                     },
                   ),
                   

@@ -12,36 +12,18 @@ import '../../recipes/screens/recipe_list_screen_enhanced.dart';
 import '../../recipes/models/source_filter.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 
-class HomeScreen extends ConsumerStatefulWidget {
+class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
-  ConsumerState<HomeScreen> createState() => _HomeScreenState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final categoriesAsync = ref.watch(categoriesProvider);
 
-class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProviderStateMixin {
-  late TabController _tabController;
-  int _selectedIndex = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 3, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text(
-          'Memoix',
+          'Recipe Book',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
@@ -59,104 +41,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
             onPressed: () => AppRoutes.toImport(context),
           ),
         ],
-        bottom: TabBar(
-          controller: _tabController,
-          onTap: (index) => setState(() => _selectedIndex = index),
-          tabs: const [
-            Tab(text: 'Memoix'),
-            Tab(text: 'My Recipes'),
-            Tab(text: 'Favourites'),
-          ],
+      ),
+      body: categoriesAsync.when(
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (err, _) => Center(child: Text('Error: $err')),
+        data: (categories) => CourseGridView(
+          categories: categories,
+          sourceFilter: RecipeSourceFilter.all,
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: const [
-          MemoixCollectionTab(),
-          PersonalRecipesTab(),
-          FavoritesTab(),
-        ],
-      ),
     );
   }
 }
 
-/// Tab showing the official Memoix collection (from GitHub)
-class MemoixCollectionTab extends ConsumerWidget {
-  const MemoixCollectionTab({super.key});
 
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final categoriesAsync = ref.watch(categoriesProvider);
-
-    return categoriesAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error: $err')),
-      data: (categories) => CourseGridView(
-        categories: categories,
-        sourceFilter: RecipeSourceFilter.memoix,
-      ),
-    );
-  }
-}
-
-/// Tab showing user's personal recipes
-class PersonalRecipesTab extends ConsumerWidget {
-  const PersonalRecipesTab({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final categoriesAsync = ref.watch(categoriesProvider);
-
-    return categoriesAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error: $err')),
-      data: (categories) => CourseGridView(
-        categories: categories,
-        sourceFilter: RecipeSourceFilter.personal,
-        emptyMessage: 'No personal recipes yet.\nTap + to add your first recipe!',
-      ),
-    );
-  }
-}
-
-/// Tab showing favorite recipes
-class FavoritesTab extends ConsumerWidget {
-  const FavoritesTab({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final favoritesAsync = ref.watch(favoriteRecipesProvider);
-
-    return favoritesAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error: $err')),
-      data: (recipes) {
-        if (recipes.isEmpty) {
-          return const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.favorite_border, size: 64, color: Colors.grey),
-                SizedBox(height: 16),
-                Text(
-                  'No favourites yet',
-                  style: TextStyle(fontSize: 18, color: Colors.grey),
-                ),
-                SizedBox(height: 8),
-                Text(
-                  'Tap the heart on a recipe to add it here',
-                  style: TextStyle(color: Colors.grey),
-                ),
-              ],
-            ),
-          );
-        }
-        return RecipeListView(recipes: recipes);
-      },
-    );
-  }
-}
 
 // `RecipeSourceFilter` moved to `features/recipes/models/source_filter.dart`
 
