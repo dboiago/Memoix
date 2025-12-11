@@ -39,9 +39,9 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     );
 
     return recipesAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
-        data: (allRecipes) {
+      loading: () => const Center(child: CircularProgressIndicator()),
+      error: (err, _) => Center(child: Text('Error: $err')),
+      data: (allRecipes) {
           // Apply source filter first
           final recipes = _filterBySource(allRecipes);
           
@@ -95,8 +95,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               ),
             ],
           );
-        },
-      ),
+      },
     );
   }
 
