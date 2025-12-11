@@ -34,7 +34,7 @@ class _CourseCardState extends State<CourseCard> {
         borderRadius: BorderRadius.circular(12),
         side: BorderSide(
           color: (_hovered || _pressed)
-              ? theme.colorScheme.secondary
+              ? const Color(0xFFE8D5C4)
               : theme.colorScheme.outline.withValues(alpha: 0.1),
           width: (_hovered || _pressed) ? 1.5 : 1.0,
         ),
@@ -61,7 +61,7 @@ class _CourseCardState extends State<CourseCard> {
                   height: 48,
                   decoration: BoxDecoration(
                     color: (_hovered || _pressed)
-                        ? theme.colorScheme.secondary
+                        ? const Color(0xFFE8D5C4)
                         : theme.colorScheme.surfaceContainerHighest,
                     shape: BoxShape.circle,
                   ),

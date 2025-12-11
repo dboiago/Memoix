@@ -26,7 +26,7 @@ class _AppShellState extends ConsumerState<AppShell> {
     return Scaffold(
       drawer: const AppDrawer(),
       appBar: AppBar(
-        title: const Text('Recipe Book'),
+        title: const Text('Memoix'),
       ),
       body: Navigator(
         key: AppShellNavigator.navigatorKey,
