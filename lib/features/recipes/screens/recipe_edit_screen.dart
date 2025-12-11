@@ -86,7 +86,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _selectedCuisine = recipe.cuisine;
 
       // Convert ingredients to 3-column row controllers
+      // Track sections to insert section headers
+      String? lastSection;
       for (final ingredient in recipe.ingredients) {
+        // If this ingredient has a different section, add a section header
+        if (ingredient.section != null && ingredient.section != lastSection) {
+          _addIngredientRow(name: ingredient.section!, isSection: true);
+          lastSection = ingredient.section;
+        }
         _addIngredientRow(
           name: ingredient.name,
           amount: ingredient.displayAmount,
@@ -121,12 +128,23 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     return mapping[course] ?? course;
   }
 
-  void _addIngredientRow({String name = '', String amount = '', String notes = ''}) {
+  void _addIngredientRow({String name = '', String amount = '', String notes = '', bool isSection = false}) {
     _ingredientRows.add(_IngredientRow(
       nameController: TextEditingController(text: name),
       amountController: TextEditingController(text: amount),
       notesController: TextEditingController(text: notes),
+      isSection: isSection,
     ));
+  }
+
+  void _addSectionHeader() {
+    _ingredientRows.add(_IngredientRow(
+      nameController: TextEditingController(),
+      amountController: TextEditingController(),
+      notesController: TextEditingController(),
+      isSection: true,
+    ));
+    setState(() {});
   }
 
   void _removeIngredientRow(int index) {
@@ -266,7 +284,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                     ),
                   ),
                 ),
-              ],
+            ],
             ),
 
             const SizedBox(height: 24),
@@ -281,6 +299,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   ),
                 ),
                 const Spacer(),
+                TextButton.icon(
+                  onPressed: _addSectionHeader,
+                  icon: const Icon(Icons.title, size: 18),
+                  label: const Text('Section'),
+                ),
                 TextButton.icon(
                   onPressed: () {
                     _addIngredientRow();
@@ -329,7 +352,6 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   ),
                   const SizedBox(width: 40), // Space for delete button
                 ],
-              ),
             ),
             
             // Ingredient rows
@@ -356,7 +378,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             ),
             const SizedBox(height: 4),
             Text(
-              'Separate steps with blank lines',
+              'Separate steps with blank lines. Use [Section Name] for subsections.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -411,33 +433,45 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
     try {
       // Parse ingredients from the 3-column rows
-      final ingredients = _ingredientRows
-          .where((row) => row.nameController.text.trim().isNotEmpty)
-          .map((row) {
-            // Parse the amount field for amount and unit
-            final amountText = row.amountController.text.trim();
-            String? amount;
-            String? unit;
-            if (amountText.isNotEmpty) {
-              // Try to separate amount from unit (e.g., "2 tbsp" -> amount: "2", unit: "tbsp")
-              final parts = amountText.split(RegExp(r'\s+'));
-              if (parts.length >= 2) {
-                amount = parts.first;
-                unit = parts.sublist(1).join(' ');
-              } else {
-                amount = amountText;
-              }
-            }
-            
-            return Ingredient()
-              ..name = row.nameController.text.trim()
-              ..amount = amount
-              ..unit = unit
-              ..preparation = row.notesController.text.trim().isEmpty 
-                  ? null 
-                  : row.notesController.text.trim();
-          })
-          .toList();
+      // Parse ingredients from the 3-column rows
+      // Track current section for grouping
+      String? currentSection;
+      final ingredients = <Ingredient>[];
+      
+      for (final row in _ingredientRows) {
+        final name = row.nameController.text.trim();
+        if (name.isEmpty) continue;
+        
+        if (row.isSection) {
+          // This is a section header - update current section
+          currentSection = name;
+          continue;
+        }
+        
+        // Parse the amount field for amount and unit
+        final amountText = row.amountController.text.trim();
+        String? amount;
+        String? unit;
+        if (amountText.isNotEmpty) {
+          // Try to separate amount from unit (e.g., "2 tbsp" -> amount: "2", unit: "tbsp")
+          final parts = amountText.split(RegExp(r'\s+'));
+          if (parts.length >= 2) {
+            amount = parts.first;
+            unit = parts.sublist(1).join(' ');
+          } else {
+            amount = amountText;
+          }
+        }
+        
+        ingredients.add(Ingredient()
+          ..name = name
+          ..amount = amount
+          ..unit = unit
+          ..preparation = row.notesController.text.trim().isEmpty 
+              ? null 
+              : row.notesController.text.trim()
+          ..section = currentSection);
+      }
 
       // Parse directions from text
       final directions = _directionsController.text
@@ -500,6 +534,72 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
     
+    // Section header row - spans full width with different styling
+    if (row.isSection) {
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+        decoration: BoxDecoration(
+          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+          border: isLast 
+              ? null 
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+        ),
+        child: Row(
+          children: [
+            Icon(Icons.label_outline, size: 18, color: theme.colorScheme.primary),
+            const SizedBox(width: 8),
+            Expanded(
+              child: TextField(
+                controller: row.nameController,
+                decoration: InputDecoration(
+                  isDense: true,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  border: const OutlineInputBorder(),
+                  hintText: 'Section name (e.g., For the Glaze)',
+                  hintStyle: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.outline,
+                  ),
+                  fillColor: theme.colorScheme.surface,
+                  filled: true,
+                ),
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Toggle to convert back to ingredient
+            IconButton(
+              icon: const Icon(Icons.swap_horiz, size: 20),
+              tooltip: 'Convert to ingredient',
+              onPressed: () {
+                setState(() => row.isSection = false);
+              },
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+            ),
+            // Delete button
+            IconButton(
+              icon: Icon(
+                Icons.remove_circle_outline,
+                size: 20,
+                color: _ingredientRows.length > 1 
+                    ? theme.colorScheme.error 
+                    : theme.colorScheme.outline,
+              ),
+              onPressed: _ingredientRows.length > 1 
+                  ? () => _removeIngredientRow(index) 
+                  : null,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+            ),
+          ],
+        ),
+      );
+    }
+    
+    // Regular ingredient row
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
       decoration: BoxDecoration(
@@ -515,16 +615,20 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             width: 140,
             child: TextField(
               controller: row.nameController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 isDense: true,
-                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                border: OutlineInputBorder(),
-                hintText: 'e.g., Onion',
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Ingredient',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
               ),
               style: theme.textTheme.bodyMedium,
               onChanged: (value) {
                 // Auto-add new row when typing in last row
-                if (isLast && value.isNotEmpty) {
+                if (isLast && value.isNotEmpty && !row.isSection) {
                   _addIngredientRow();
                   setState(() {});
                 }
@@ -538,11 +642,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             width: 80,
             child: TextField(
               controller: row.amountController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 isDense: true,
-                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                border: OutlineInputBorder(),
-                hintText: '2 tbsp',
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Amount',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
               ),
               style: theme.textTheme.bodyMedium,
             ),
@@ -553,11 +661,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           Expanded(
             child: TextField(
               controller: row.notesController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 isDense: true,
-                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                border: OutlineInputBorder(),
-                hintText: 'diced, optional, etc.',
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Notes (optional)',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
               ),
               style: theme.textTheme.bodyMedium,
             ),
@@ -753,11 +865,13 @@ class _IngredientRow {
   final TextEditingController nameController;
   final TextEditingController amountController;
   final TextEditingController notesController;
+  bool isSection; // True if this is a section header (e.g., "For the Glaze")
 
   _IngredientRow({
     required this.nameController,
     required this.amountController,
     required this.notesController,
+    this.isSection = false,
   });
 
   void dispose() {

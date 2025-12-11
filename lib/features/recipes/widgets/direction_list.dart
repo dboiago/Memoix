@@ -12,6 +12,18 @@ class DirectionList extends StatefulWidget {
 class _DirectionListState extends State<DirectionList> {
   final Set<int> _completedSteps = {};
 
+  // Check if a step is a section header (wrapped in square brackets)
+  bool _isSection(String step) {
+    final trimmed = step.trim();
+    return trimmed.startsWith('[') && trimmed.endsWith(']');
+  }
+
+  // Extract section name from brackets
+  String _getSectionName(String step) {
+    final trimmed = step.trim();
+    return trimmed.substring(1, trimmed.length - 1);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -23,9 +35,31 @@ class _DirectionListState extends State<DirectionList> {
       );
     }
 
+    // Track step number (excluding section headers)
+    int stepNumber = 0;
+
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: List.generate(widget.directions.length, (index) {
         final step = widget.directions[index];
+        
+        // Check if this is a section header
+        if (_isSection(step)) {
+          return Padding(
+            padding: EdgeInsets.only(top: index > 0 ? 16 : 0, bottom: 8),
+            child: Text(
+              _getSectionName(step),
+              style: theme.textTheme.titleSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: theme.colorScheme.primary,
+              ),
+            ),
+          );
+        }
+
+        // Regular step
+        stepNumber++;
+        final displayNumber = stepNumber;
         final isCompleted = _completedSteps.contains(index);
 
         return InkWell(
@@ -57,7 +91,7 @@ class _DirectionListState extends State<DirectionList> {
                     child: isCompleted
                         ? const Icon(Icons.check, size: 16, color: Colors.white)
                         : Text(
-                            '${index + 1}',
+                            '$displayNumber',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: theme.colorScheme.onPrimaryContainer,
