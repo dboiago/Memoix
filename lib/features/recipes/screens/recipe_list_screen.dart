@@ -44,7 +44,10 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text(widget.course.toUpperCase()),
+        title: Text(
+          widget.course.toUpperCase(),
+          style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+        ),
       ),
       body: recipesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
