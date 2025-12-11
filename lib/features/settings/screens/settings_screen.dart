@@ -7,6 +7,8 @@ import '../../../core/services/github_recipe_service.dart';
 import '../../../core/database/database.dart';
 import '../../../core/providers.dart';
 import '../services/recipe_backup_service.dart';
+import '../../import/services/csv_importer.dart';
+import '../../recipes/repository/recipe_repository.dart';
 
 /// Provider for app preferences
 final preferencesProvider = FutureProvider<SharedPreferences>((ref) async {
@@ -245,6 +247,44 @@ class SettingsScreen extends ConsumerWidget {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Import failed: $e')),
+                  );
+                }
+              }
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.table_chart),
+            title: const Text('Import from CSV (Google Sheets)'),
+            subtitle: const Text('Import recipes from spreadsheet export'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () async {
+              try {
+                final importer = ref.read(csvImporterProvider);
+                final recipes = await importer.importFromCsv();
+                if (recipes.isEmpty) {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('No recipes found in file')),
+                    );
+                  }
+                  return;
+                }
+                
+                // Save all imported recipes
+                final repo = ref.read(recipeRepositoryProvider);
+                for (final recipe in recipes) {
+                  await repo.saveRecipe(recipe);
+                }
+                
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('✓ Imported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'} from CSV!')),
+                  );
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('CSV import failed: $e')),
                   );
                 }
               }

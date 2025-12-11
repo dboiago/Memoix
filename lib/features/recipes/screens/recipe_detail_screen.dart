@@ -218,9 +218,7 @@ class RecipeDetailView extends ConsumerWidget {
                       children: recipe.pairsWith
                           .map((p) => ActionChip(
                                 label: Text(p),
-                                onPressed: () {
-                                  // Could navigate to paired recipe
-                                },
+                                onPressed: () => _navigateToPairedRecipe(context, ref, p),
                               ))
                           .toList(),
                     ),
@@ -384,6 +382,41 @@ class RecipeDetailView extends ConsumerWidget {
   void _shareRecipe(BuildContext context, WidgetRef ref) {
     final shareService = ref.read(shareServiceProvider);
     shareService.shareRecipe(recipe);
+  }
+
+  void _navigateToPairedRecipe(BuildContext context, WidgetRef ref, String pairName) async {
+    final recipes = ref.read(allRecipesProvider).valueOrNull ?? [];
+    
+    // Search for a recipe with matching name (case-insensitive, partial match)
+    final searchLower = pairName.toLowerCase().trim();
+    final match = recipes.firstWhere(
+      (r) => r.name.toLowerCase() == searchLower ||
+             r.name.toLowerCase().contains(searchLower) ||
+             searchLower.contains(r.name.toLowerCase()),
+      orElse: () => Recipe()..name = '',
+    );
+    
+    if (match.name.isNotEmpty) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => RecipeDetailScreen(recipeId: match.uuid),
+        ),
+      );
+    } else {
+      // No match found - offer to search
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Recipe "$pairName" not found'),
+          action: SnackBarAction(
+            label: 'Search',
+            onPressed: () {
+              // Could open search with the term
+            },
+          ),
+        ),
+      );
+    }
   }
 
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action) {
