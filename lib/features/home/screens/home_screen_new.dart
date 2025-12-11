@@ -21,8 +21,7 @@ class HomeScreen extends ConsumerStatefulWidget {
   ConsumerState<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends ConsumerState<HomeScreen>
-    with SingleTickerProviderStateMixin {
+class _HomeScreenState extends ConsumerState<HomeScreen> {
   int _drawerSelectedIndex = 0;
 
   @override
@@ -105,23 +104,18 @@ class _RecipeBrowser extends StatefulWidget {
 }
 
 class _RecipeBrowserState extends State<_RecipeBrowser>
-    with SingleTickerProviderStateMixin {
-  late TabController _tabController;
+    with TickerProviderStateMixin {
+  TabController? _tabController;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(
-      length: widget.categories.length,
-      vsync: this,
-    );
+    _initTabController();
   }
 
-  @override
-  void didUpdateWidget(covariant _RecipeBrowser oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    if (oldWidget.categories.length != widget.categories.length) {
-      _tabController.dispose();
+  void _initTabController() {
+    _tabController?.dispose();
+    if (widget.categories.isNotEmpty) {
       _tabController = TabController(
         length: widget.categories.length,
         vsync: this,
@@ -130,8 +124,16 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
   }
 
   @override
+  void didUpdateWidget(covariant _RecipeBrowser oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.categories.length != widget.categories.length) {
+      _initTabController();
+    }
+  }
+
+  @override
   void dispose() {
-    _tabController.dispose();
+    _tabController?.dispose();
     super.dispose();
   }
 
@@ -139,33 +141,41 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    if (widget.categories.isEmpty) {
+    if (widget.categories.isEmpty || _tabController == null) {
       return const Center(child: Text('No categories found'));
     }
 
     return Column(
       children: [
-        // Course tabs (scrollable)
-        Container(
+        // Course tabs (scrollable with mouse drag support)
+        Material(
           color: theme.colorScheme.surfaceContainerHighest,
-          child: ScrollConfiguration(
-            behavior: ScrollConfiguration.of(context).copyWith(
-              dragDevices: {
-                PointerDeviceKind.touch,
-                PointerDeviceKind.mouse,
-                PointerDeviceKind.trackpad,
-              },
+          child: Theme(
+            data: Theme.of(context).copyWith(
+              tabBarTheme: TabBarTheme(
+                overlayColor: WidgetStateProperty.all(Colors.transparent),
+              ),
             ),
-            child: TabBar(
-              controller: _tabController,
-              isScrollable: true,
-              tabAlignment: TabAlignment.start,
-              indicatorSize: TabBarIndicatorSize.tab,
-              tabs: widget.categories.map((category) {
-                return Tab(
-                  child: _CourseTab(category: category),
-                );
-              }).toList(),
+            child: ScrollConfiguration(
+              behavior: ScrollConfiguration.of(context).copyWith(
+                dragDevices: {
+                  PointerDeviceKind.touch,
+                  PointerDeviceKind.mouse,
+                  PointerDeviceKind.trackpad,
+                },
+              ),
+              child: TabBar(
+                controller: _tabController,
+                isScrollable: true,
+                tabAlignment: TabAlignment.start,
+                indicatorSize: TabBarIndicatorSize.tab,
+                dividerColor: Colors.transparent,
+                tabs: widget.categories.map((category) {
+                  return Tab(
+                    child: _CourseTab(category: category),
+                  );
+                }).toList(),
+              ),
             ),
           ),
         ),
