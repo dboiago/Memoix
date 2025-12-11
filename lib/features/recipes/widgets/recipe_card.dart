@@ -82,7 +82,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                         ),
                         const SizedBox(width: 6),
                         Text(
-                          _displayCuisine(cuisine, recipe.subcategory),
+                          _displayCuisine(cuisine, widget.recipe.subcategory),
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
