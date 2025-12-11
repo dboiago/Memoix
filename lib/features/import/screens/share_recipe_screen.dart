@@ -20,6 +20,9 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   Recipe? _selectedRecipe;
   String? _shareLink;
   bool _isGenerating = false;
+  String _searchQuery = '';
+  String _selectedCourse = 'All';
+  final _searchController = TextEditingController();
 
   @override
   void initState() {
@@ -76,6 +79,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
   Widget _buildRecipeSelector() {
     final recipesAsync = ref.watch(allRecipesProvider);
+    final theme = Theme.of(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,29 +88,145 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           padding: const EdgeInsets.all(16),
           child: Text(
             'Select a recipe to share',
-            style: Theme.of(context).textTheme.titleMedium,
+            style: theme.textTheme.titleMedium,
           ),
         ),
+        // Search bar
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: TextField(
+            controller: _searchController,
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.search),
+              hintText: 'Search recipes...',
+              suffixIcon: _searchQuery.isNotEmpty
+                  ? IconButton(
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        _searchController.clear();
+                        setState(() => _searchQuery = '');
+                      },
+                    )
+                  : null,
+            ),
+            onChanged: (value) => setState(() => _searchQuery = value.toLowerCase()),
+          ),
+        ),
+        const SizedBox(height: 8),
+        // Course filter chips
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: recipesAsync.when(
+            loading: () => const SizedBox.shrink(),
+            error: (_, __) => const SizedBox.shrink(),
+            data: (recipes) {
+              final courses = {'All', ...recipes.map((r) => r.course).where((c) => c.isNotEmpty)};
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: courses.map((course) {
+                    final isSelected = _selectedCourse == course;
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: FilterChip(
+                        label: Text(course),
+                        selected: isSelected,
+                        onSelected: (selected) {
+                          setState(() => _selectedCourse = course);
+                        },
+                      ),
+                    );
+                  }).toList(),
+                ),
+              );
+            },
+          ),
+        ),
+        const SizedBox(height: 8),
+        const Divider(),
         Expanded(
           child: recipesAsync.when(
             loading: () => const Center(child: CircularProgressIndicator()),
             error: (err, _) => Center(child: Text('Error: $err')),
             data: (recipes) {
-              if (recipes.isEmpty) {
-                return const Center(child: Text('No recipes to share'));
+              // Filter recipes
+              var filtered = recipes.where((r) {
+                // Course filter
+                if (_selectedCourse != 'All' && r.course != _selectedCourse) {
+                  return false;
+                }
+                // Search filter
+                if (_searchQuery.isNotEmpty) {
+                  final nameLower = r.name.toLowerCase();
+                  final cuisineLower = (r.cuisine ?? '').toLowerCase();
+                  if (!nameLower.contains(_searchQuery) &&
+                      !cuisineLower.contains(_searchQuery)) {
+                    return false;
+                  }
+                }
+                return true;
+              }).toList();
+
+              if (filtered.isEmpty) {
+                return Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.search_off, size: 48, color: theme.colorScheme.outline),
+                      const SizedBox(height: 8),
+                      Text(
+                        'No recipes found',
+                        style: theme.textTheme.bodyLarge?.copyWith(
+                          color: theme.colorScheme.outline,
+                        ),
+                      ),
+                    ],
+                  ),
+                );
               }
+
+              // Group by course
+              final grouped = <String, List<Recipe>>{};
+              for (final recipe in filtered) {
+                grouped.putIfAbsent(recipe.course, () => []).add(recipe);
+              }
+
               return ListView.builder(
-                itemCount: recipes.length,
+                itemCount: grouped.length,
                 itemBuilder: (context, index) {
-                  final recipe = recipes[index];
-                  return ListTile(
-                    title: Text(recipe.name),
-                    subtitle: Text(recipe.course ?? ''),
-                    trailing: const Icon(Icons.chevron_right),
-                    onTap: () {
-                      setState(() => _selectedRecipe = recipe);
-                      _generateShareLink();
-                    },
+                  final course = grouped.keys.elementAt(index);
+                  final courseRecipes = grouped[course]!;
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (_selectedCourse == 'All') ...[
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                          child: Text(
+                            course,
+                            style: theme.textTheme.titleSmall?.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: theme.colorScheme.primary,
+                            ),
+                          ),
+                        ),
+                      ],
+                      ...courseRecipes.map((recipe) => ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: theme.colorScheme.secondaryContainer,
+                          child: Text(
+                            recipe.name.isNotEmpty ? recipe.name[0].toUpperCase() : '?',
+                          ),
+                        ),
+                        title: Text(recipe.name),
+                        subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () {
+                          setState(() => _selectedRecipe = recipe);
+                          _generateShareLink();
+                        },
+                      )),
+                    ],
                   );
                 },
               );

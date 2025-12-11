@@ -172,11 +172,22 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('Export All Recipes'),
             subtitle: const Text('Save your recipes as JSON'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {
-              // TODO: Implement export
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Export coming soon!')),
-              );
+            onTap: () async {
+              try {
+                final service = ref.read(recipeBackupServiceProvider);
+                await service.exportRecipes(includeAll: false);
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('✓ Recipes exported successfully!')),
+                  );
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Export failed: $e')),
+                  );
+                }
+              }
             },
           ),
           ListTile(
@@ -184,11 +195,28 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('Import Recipes'),
             subtitle: const Text('Load recipes from a JSON file'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {
-              // TODO: Implement import
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Import coming soon!')),
-              );
+            onTap: () async {
+              try {
+                final service = ref.read(recipeBackupServiceProvider);
+                final count = await service.importRecipes();
+                if (context.mounted) {
+                  if (count > 0) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('✓ Imported $count recipe${count == 1 ? '' : 's'}!')),
+                    );
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('No recipes imported')),
+                    );
+                  }
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Import failed: $e')),
+                  );
+                }
+              }
             },
           ),
 
