@@ -105,55 +105,54 @@ class _IngredientListState extends State<IngredientList> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient name (left)
+            // Ingredient name and amount together (left side)
             Expanded(
-              flex: 2,
-              child: Text(
-                ingredient.name,
-                style: TextStyle(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : null,
-                ),
+              child: Row(
+                children: [
+                  // Ingredient name
+                  Text(
+                    ingredient.name,
+                    style: TextStyle(
+                      decoration: isChecked ? TextDecoration.lineThrough : null,
+                      color: isChecked
+                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          : null,
+                    ),
+                  ),
+                  // Amount right next to name
+                  if (amountText.isNotEmpty) ...[
+                    const SizedBox(width: 12),
+                    Text(
+                      amountText,
+                      style: TextStyle(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ],
+                  // Optional badge
+                  if (ingredient.isOptional) ...[
+                    const SizedBox(width: 8),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.secondaryContainer,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        'optional',
+                        style: theme.textTheme.labelSmall?.copyWith(
+                          color: theme.colorScheme.onSecondaryContainer,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+                  ],
+                ],
               ),
             ),
-
-            // Amount (middle)
-            if (amountText.isNotEmpty) ...[
-              const SizedBox(width: 8),
-              SizedBox(
-                width: 70,
-                child: Text(
-                  amountText,
-                  style: TextStyle(
-                    decoration: isChecked ? TextDecoration.lineThrough : null,
-                    color: isChecked
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
-                        : theme.colorScheme.onSurfaceVariant,
-                  ),
-                ),
-              ),
-            ],
-
-            // Optional badge
-            if (ingredient.isOptional) ...[
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.secondaryContainer,
-                  borderRadius: BorderRadius.circular(4),
-                ),
-                child: Text(
-                  'optional',
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.onSecondaryContainer,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-            ],
 
             // Notes/preparation (far right)
             if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty)

@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:path_provider/path_provider.dart';
@@ -47,12 +48,30 @@ class RecipeBackupService {
     final dateStr = DateFormat('yyyy-MM-dd_HHmm').format(DateTime.now());
     final filename = 'memoix_recipes_$dateStr.json';
 
-    // Save to downloads or app documents directory
+    // On desktop (Windows/macOS/Linux), use save file dialog
+    if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
+      final outputPath = await FilePicker.platform.saveFile(
+        dialogTitle: 'Save Recipe Backup',
+        fileName: filename,
+        type: FileType.custom,
+        allowedExtensions: ['json'],
+      );
+      
+      if (outputPath == null) {
+        return null; // User cancelled
+      }
+      
+      final file = File(outputPath);
+      await file.writeAsString(jsonString);
+      return outputPath;
+    }
+
+    // On mobile, save to documents and share
     final directory = await getApplicationDocumentsDirectory();
     final file = File('${directory.path}/$filename');
     await file.writeAsString(jsonString);
 
-    // On mobile, also share the file
+    // Share the file
     await Share.shareXFiles(
       [XFile(file.path)],
       subject: 'Memoix Recipe Backup',
