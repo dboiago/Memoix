@@ -335,16 +335,10 @@ class DayCard extends ConsumerWidget {
                               ),
                               const SizedBox(width: 8),
                             ],
-                            // Servings if available
-                            if (meal.servings != null) ...[
-                              Icon(
-                                Icons.people_outline,
-                                size: 14,
-                                color: theme.colorScheme.outline,
-                              ),
-                              const SizedBox(width: 4),
+                            // Category (Apps, Mains, Drinks, etc.)
+                            if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) ...[
                               Text(
-                                '${meal.servings}',
+                                _capitalizeFirst(meal.recipeCategory!),
                                 style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.onSurfaceVariant,
                                 ),
