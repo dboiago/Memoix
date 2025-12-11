@@ -84,6 +84,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // Enable wakelock if setting is on
+    final keepScreenOn = ref.watch(keepScreenOnProvider);
+    if (keepScreenOn) {
+      WakelockPlus.enable();
+    } else {
+      WakelockPlus.disable();
+    }
+    
     final theme = Theme.of(context);
     final cuisineColor = widget.recipe.cuisine != null
         ? MemoixColors.forCuisine(widget.recipe.cuisine!)

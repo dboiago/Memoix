@@ -202,7 +202,7 @@ class _CourseBarChart extends StatelessWidget {
       ),
       child: Column(
         children: sorted.map((entry) {
-          final percentage = maxValue > 0 ? entry.value / maxValue : 0;
+          final percentage = maxValue > 0 ? (entry.value / maxValue).toDouble() : 0.0;
           
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
