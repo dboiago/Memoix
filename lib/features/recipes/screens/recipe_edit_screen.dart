@@ -284,7 +284,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                     ),
                   ),
                 ),
-            ],
+              ],
             ),
 
             const SizedBox(height: 24),
