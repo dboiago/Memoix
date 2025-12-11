@@ -228,11 +228,4 @@ class ShoppingListService {
   }
 }
 
-// Providers
-final shoppingListServiceProvider = Provider<ShoppingListService>((ref) {
-  return ShoppingListService(MemoixDatabase.instance);
-});
-
-final shoppingListsProvider = StreamProvider<List<ShoppingList>>((ref) {
-  return ref.watch(shoppingListServiceProvider).watchAll();
-});
+// Providers moved to core/providers.dart
