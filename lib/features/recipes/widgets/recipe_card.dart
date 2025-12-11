@@ -76,7 +76,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                         Text(
                           '\u2022',
                           style: TextStyle(
-                            color: theme.colorScheme.primary,
+                            color: theme.colorScheme.onSurfaceVariant,
                             fontSize: 16,
                           ),
                         ),

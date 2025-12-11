@@ -51,7 +51,7 @@ class _CourseCardState extends State<CourseCard> {
           highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -68,12 +68,12 @@ class _CourseCardState extends State<CourseCard> {
                   child: Icon(
                     _getIconData(widget.category.iconName),
                     color: (_hovered || _pressed)
-                        ? theme.colorScheme.onSecondaryContainer
+                        ? (theme.brightness == Brightness.dark ? Colors.black87 : theme.colorScheme.onSecondary)
                         : theme.colorScheme.onSurfaceVariant,
                     size: 24,
                   ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 8),
                 // Texts
                 Text(
                   widget.category.name,
@@ -84,7 +84,7 @@ class _CourseCardState extends State<CourseCard> {
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 2),
                 Text(
                   '${widget.recipeCount} recipes',
                   style: theme.textTheme.labelSmall?.copyWith(

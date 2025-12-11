@@ -68,6 +68,7 @@ class _CourseGridView extends ConsumerWidget {
                           borderSide: BorderSide.none,
                         ),
                       ),
+                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                       readOnly: true,
                       onTap: () {
                         showSearch(
@@ -83,12 +84,12 @@ class _CourseGridView extends ConsumerWidget {
             
             // Course cards grid
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
               sliver: SliverGrid(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: crossAxisCount,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
                   childAspectRatio: 1.0, // square cards for stacked icon/text
                 ),
                 delegate: SliverChildBuilderDelegate(

@@ -105,6 +105,13 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           );
       },
     ),
+      floatingActionButton: widget.showAddButton
+          ? FloatingActionButton.extended(
+              onPressed: () => _showAddOptions(context),
+              icon: const Icon(Icons.add),
+              label: const Text('Add Recipe'),
+            )
+          : null,
     );
   }
 
