@@ -50,11 +50,9 @@ class MeasurementConverter {
     'lbs': 453.592,
   };
 
-  // Temperature conversions
   static double celsiusToFahrenheit(double celsius) => celsius * 9 / 5 + 32;
   static double fahrenheitToCelsius(double fahrenheit) => (fahrenheit - 32) * 5 / 9;
 
-  // Common cooking temperatures
   static const Map<String, Map<String, double>> cookingTemps = {
     'Low': {'f': 250, 'c': 121},
     'Medium-Low': {'f': 300, 'c': 149},
@@ -65,113 +63,51 @@ class MeasurementConverter {
     'Broil': {'f': 500, 'c': 260},
   };
 
-  /// Convert volume from one unit to another
   static double? convertVolume(double amount, String from, String to) {
     final fromFactor = volumeToMl[from.toLowerCase()];
     final toFactor = volumeToMl[to.toLowerCase()];
-
     if (fromFactor == null || toFactor == null) return null;
-
     final ml = amount * fromFactor;
     return ml / toFactor;
   }
 
-  /// Convert weight from one unit to another
   static double? convertWeight(double amount, String from, String to) {
     final fromFactor = weightToGrams[from.toLowerCase()];
     final toFactor = weightToGrams[to.toLowerCase()];
-
     if (fromFactor == null || toFactor == null) return null;
-
     final grams = amount * fromFactor;
     return grams / toFactor;
   }
 
-  /// Convert temperature
   static double? convertTemperature(double temp, String from, String to) {
     from = from.toLowerCase();
     to = to.toLowerCase();
-
     if (from == to) return temp;
-
     if (from == 'c' || from == 'celsius') {
-      if (to == 'f' || to == 'fahrenheit') {
-        return celsiusToFahrenheit(temp);
-      }
+      if (to == 'f' || to == 'fahrenheit') return celsiusToFahrenheit(temp);
     } else if (from == 'f' || from == 'fahrenheit') {
-      if (to == 'c' || to == 'celsius') {
-        return fahrenheitToCelsius(temp);
-      }
+      if (to == 'c' || to == 'celsius') return fahrenheitToCelsius(temp);
     }
-
     return null;
   }
 
-  /// Format a number nicely (remove trailing zeros, round to 2 decimal places)
   static String formatNumber(double value) {
     if (value == value.roundToDouble()) {
       return value.toInt().toString();
     }
-    // Round to 2 decimal places
     final rounded = (value * 100).round() / 100;
     return rounded.toString().replaceAll(RegExp(r'\.?0+$'), '');
   }
 
-  /// Get common equivalent measurements
-  static List<String> getEquivalents(double amount, String unit) {
-    final equivalents = <String>[];
-    final unitLower = unit.toLowerCase();
-
-    // Volume equivalents
-    if (volumeToMl.containsKey(unitLower)) {
-      final targetUnits = ['tsp', 'tbsp', 'cup', 'ml', 'l'];
-      for (final target in targetUnits) {
-        if (target != unitLower) {
-          final converted = convertVolume(amount, unit, target);
-          if (converted != null && converted > 0.01 && converted < 10000) {
-            equivalents.add('${formatNumber(converted)} $target');
-          }
-        }
-      }
-    }
-
-    // Weight equivalents
-    if (weightToGrams.containsKey(unitLower)) {
-      final targetUnits = ['g', 'kg', 'oz', 'lb'];
-      for (final target in targetUnits) {
-        if (target != unitLower) {
-          final converted = convertWeight(amount, unit, target);
-          if (converted != null && converted > 0.01 && converted < 10000) {
-            equivalents.add('${formatNumber(converted)} $target');
-          }
-        }
-      }
-    }
-
-    return equivalents;
-  }
-
-  /// Check if a unit is recognized
-  static bool isVolumeUnit(String unit) => volumeToMl.containsKey(unit.toLowerCase());
-  static bool isWeightUnit(String unit) => weightToGrams.containsKey(unit.toLowerCase());
-  static bool isTemperatureUnit(String unit) {
-    final u = unit.toLowerCase();
-    return u == 'c' || u == 'celsius' || u == 'f' || u == 'fahrenheit';
-  }
-
-  /// Get all supported volume units
   static List<String> get volumeUnits => [
     'tsp', 'tbsp', 'fl oz', 'cup', 'pint', 'quart', 'gallon', 'ml', 'l'
   ];
 
-  /// Get all supported weight units
   static List<String> get weightUnits => ['g', 'kg', 'oz', 'lb'];
 
-  /// Get all supported temperature units
   static List<String> get temperatureUnits => ['°F', '°C'];
 }
 
-/// Common cooking conversions quick reference
 class CookingConversions {
   static const Map<String, String> quickReference = {
     '3 tsp': '1 tbsp',
@@ -205,7 +141,6 @@ class CookingConversions {
   };
 }
 
-/// UI Widget for measurement conversion
 class MeasurementConverterWidget extends StatefulWidget {
   const MeasurementConverterWidget({super.key});
 
@@ -220,17 +155,19 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
   String _fromUnit = 'cup';
   String _toUnit = 'ml';
   String _result = '';
-  int _selectedTab = 0; // 0: volume, 1: weight, 2: temperature
+  int _selectedTab = 0;
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 4, vsync: this);
     _tabController.addListener(() {
-      setState(() {
-        _selectedTab = _tabController.index;
-        _resetForTab();
-      });
+      if (_tabController.indexIsChanging) {
+        setState(() {
+          _selectedTab = _tabController.index;
+          _resetForTab();
+        });
+      }
     });
   }
 
@@ -249,6 +186,8 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
       case 2: // Temperature
         _fromUnit = '°F';
         _toUnit = '°C';
+        break;
+      case 3: // Reference (no conversion units needed)
         break;
     }
   }
@@ -326,7 +265,6 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Amount input
           TextField(
             controller: _amountController,
             keyboardType: const TextInputType.numberWithOptions(decimal: true),
@@ -337,7 +275,6 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
             onChanged: (_) => _convert(),
           ),
           const SizedBox(height: 16),
-          // From unit
           Row(
             children: [
               Expanded(
@@ -395,7 +332,6 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
             ],
           ),
           const SizedBox(height: 32),
-          // Result
           if (_result.isNotEmpty)
             Container(
               padding: const EdgeInsets.all(24),
@@ -422,7 +358,6 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
               ),
             ),
           const SizedBox(height: 32),
-          // Quick equivalents
           if (_selectedTab == 2) ...[
             Text(
               'Common Cooking Temperatures',
