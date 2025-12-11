@@ -327,15 +327,18 @@ class _TimerCardState extends State<_TimerCard> {
     final theme = Theme.of(context);
     final timer = widget.timer;
     final isFinished = timer.remainingSeconds == 0 && timer.isRunning;
-    final color = isFinished
-        ? theme.colorScheme.errorContainer
+    
+    // Use card color with explicit text colors for readability
+    final cardColor = isFinished
+        ? theme.colorScheme.secondary.withValues(alpha: 0.3)
         : timer.isPaused
-            ? theme.colorScheme.secondaryContainer
-            : theme.colorScheme.primaryContainer;
+            ? theme.colorScheme.surfaceContainerHighest
+            : theme.cardTheme.color ?? theme.colorScheme.surface;
+    final textColor = theme.colorScheme.onSurface;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      color: color,
+      color: cardColor,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -351,20 +354,21 @@ class _TimerCardState extends State<_TimerCard> {
                         Text(
                           timer.label,
                           style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w500,
+                            color: textColor,
                           ),
                         ),
                       Text(
                         _formatDuration(timer.duration),
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+                          color: theme.colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ],
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.close),
+                  icon: Icon(Icons.close, color: theme.colorScheme.onSurfaceVariant),
                   onPressed: widget.onDelete,
                 ),
               ],
@@ -374,8 +378,9 @@ class _TimerCardState extends State<_TimerCard> {
             Text(
               _formatRemaining(timer.remainingSeconds),
               style: theme.textTheme.displayLarge?.copyWith(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
                 fontFeatures: [const FontFeature.tabularFigures()],
+                color: textColor,
               ),
             ),
             const SizedBox(height: 12),
@@ -384,8 +389,9 @@ class _TimerCardState extends State<_TimerCard> {
               borderRadius: BorderRadius.circular(4),
               child: LinearProgressIndicator(
                 value: timer.progress,
-                minHeight: 8,
-                backgroundColor: theme.colorScheme.surface,
+                minHeight: 6,
+                backgroundColor: theme.colorScheme.outline.withValues(alpha: 0.2),
+                valueColor: AlwaysStoppedAnimation<Color>(theme.colorScheme.primary),
               ),
             ),
             const SizedBox(height: 16),

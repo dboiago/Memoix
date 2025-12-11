@@ -381,6 +381,7 @@ class _AddItemDialog extends StatefulWidget {
 class _AddItemDialogState extends State<_AddItemDialog> {
   final _nameController = TextEditingController();
   final _amountController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   void dispose() {
@@ -393,26 +394,35 @@ class _AddItemDialogState extends State<_AddItemDialog> {
   Widget build(BuildContext context) {
     return AlertDialog(
       title: const Text('Add Item'),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          TextField(
-            controller: _nameController,
-            decoration: const InputDecoration(
-              labelText: 'Item name',
-              hintText: 'e.g., Milk',
+      content: Form(
+        key: _formKey,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextFormField(
+              controller: _nameController,
+              decoration: const InputDecoration(
+                labelText: 'Item name',
+                hintText: 'e.g., Milk',
+              ),
+              autofocus: true,
+              validator: (value) {
+                if (value == null || value.trim().isEmpty) {
+                  return 'Please enter an item name';
+                }
+                return null;
+              },
             ),
-            autofocus: true,
-          ),
-          const SizedBox(height: 12),
-          TextField(
-            controller: _amountController,
-            decoration: const InputDecoration(
-              labelText: 'Amount (optional)',
-              hintText: 'e.g., 2 gallons',
+            const SizedBox(height: 12),
+            TextField(
+              controller: _amountController,
+              decoration: const InputDecoration(
+                labelText: 'Amount (optional)',
+                hintText: 'e.g., 2 gallons',
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       actions: [
         TextButton(
@@ -421,13 +431,15 @@ class _AddItemDialogState extends State<_AddItemDialog> {
         ),
         FilledButton(
           onPressed: () {
-            if (_nameController.text.trim().isEmpty) return;
-            widget.onAdd(ShoppingItem.create(
-              name: _nameController.text.trim(),
-              amount: _amountController.text.trim().isEmpty
-                  ? null
-                  : _amountController.text.trim(),
-            ));
+            if (_formKey.currentState!.validate()) {
+              final item = ShoppingItem.create(
+                name: _nameController.text.trim(),
+                amount: _amountController.text.trim().isEmpty
+                    ? null
+                    : _amountController.text.trim(),
+              );
+              widget.onAdd(item);
+            }
           },
           child: const Text('Add'),
         ),

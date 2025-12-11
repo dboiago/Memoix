@@ -182,11 +182,21 @@ class WeekView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // Use FutureProvider which loads immediately
     final weekPlanAsync = ref.watch(weeklyPlanProvider(weekStart));
 
     return weekPlanAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error: $err')),
+      error: (err, stack) => Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Error loading meal plan'),
+            const SizedBox(height: 8),
+            Text('$err', style: const TextStyle(fontSize: 12)),
+          ],
+        ),
+      ),
       data: (weeklyPlan) {
         return ListView.builder(
           padding: const EdgeInsets.all(8),
