@@ -1,6 +1,7 @@
 # Memoix 🍳
 
 A beautiful, open-source recipe management app for cooks. Organize your recipes, import from photos or websites, and share with friends and family.
+(I'll make this not AI generated later -- placeholder)
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.2+-blue.svg)
 ![License](https://img.shields.io/badge/License-Noncommercial-orange.svg)
@@ -151,3 +152,4 @@ If you find this app useful, consider:
 ---
 
 Made with ❤️ for cooks everywhere
+
