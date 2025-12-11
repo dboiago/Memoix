@@ -477,7 +477,7 @@ class RecipeDetailView extends ConsumerWidget {
                 Navigator.pop(context);
               }
             },
-            style: TextButton.styleFrom(foregroundColor: theme.colorScheme.secondary),
+            style: TextButton.styleFrom(foregroundColor: Theme.of(ctx).colorScheme.secondary),
             child: const Text('Delete'),
           ),
         ],
