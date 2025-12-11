@@ -6,6 +6,58 @@ import '../models/recipe.dart';
 import '../models/cuisine.dart';
 import '../repository/recipe_repository.dart';
 
+/// Converts text fractions and decimals to unicode fraction symbols
+String _normalizeFractions(String input) {
+  var result = input;
+  
+  // Map of text fractions to unicode symbols
+  const fractionMap = {
+    '1/2': '½',
+    '1/3': '⅓',
+    '2/3': '⅔',
+    '1/4': '¼',
+    '3/4': '¾',
+    '1/5': '⅕',
+    '2/5': '⅖',
+    '3/5': '⅗',
+    '4/5': '⅘',
+    '1/6': '⅙',
+    '5/6': '⅚',
+    '1/8': '⅛',
+    '3/8': '⅜',
+    '5/8': '⅝',
+    '7/8': '⅞',
+  };
+  
+  // Map of decimal values to unicode symbols
+  const decimalMap = {
+    '0.5': '½',
+    '.5': '½',
+    '0.25': '¼',
+    '.25': '¼',
+    '0.75': '¾',
+    '.75': '¾',
+    '0.33': '⅓',
+    '.33': '⅓',
+    '0.67': '⅔',
+    '.67': '⅔',
+  };
+  
+  // Replace text fractions (with optional spaces around /)
+  for (final entry in fractionMap.entries) {
+    // Match with optional spaces: "1 / 2" or "1/2"
+    final pattern = entry.key.replaceAll('/', r'\s*/\s*');
+    result = result.replaceAll(RegExp(pattern), entry.value);
+  }
+  
+  // Replace decimal values
+  for (final entry in decimalMap.entries) {
+    result = result.replaceAll(entry.key, entry.value);
+  }
+  
+  return result;
+}
+
 class RecipeEditScreen extends ConsumerStatefulWidget {
   final String? recipeId;
   final Recipe? initialRecipe;
@@ -503,13 +555,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         String? amount;
         String? unit;
         if (amountText.isNotEmpty) {
+          // Normalize fractions first
+          final normalized = _normalizeFractions(amountText);
           // Try to separate amount from unit (e.g., "2 tbsp" -> amount: "2", unit: "tbsp")
-          final parts = amountText.split(RegExp(r'\s+'));
+          final parts = normalized.split(RegExp(r'\s+'));
           if (parts.length >= 2) {
             amount = parts.first;
             unit = parts.sublist(1).join(' ');
           } else {
-            amount = amountText;
+            amount = normalized;
           }
         }
         

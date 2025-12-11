@@ -453,19 +453,103 @@ class UrlRecipeImporter {
     
     return Ingredient.create(
       name: remaining,
-      amount: amount,
+      amount: _normalizeFractions(amount),
       preparation: preparation,
       isOptional: isOptional,
     );
   }
 
-  /// Sort ingredients by quantity (largest first)
+  /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½)
+  String? _normalizeFractions(String? text) {
+    if (text == null || text.isEmpty) return text;
+    
+    var result = text;
+    
+    // Decimal to fraction mapping
+    const decimalToFraction = {
+      '0.5': '½', '0.25': '¼', '0.75': '¾',
+      '0.33': '⅓', '0.333': '⅓', '0.67': '⅔', '0.666': '⅔', '0.667': '⅔',
+      '0.125': '⅛', '0.375': '⅜', '0.625': '⅝', '0.875': '⅞',
+      '0.2': '⅕', '0.4': '⅖', '0.6': '⅗', '0.8': '⅘',
+    };
+    
+    // Text fraction to unicode mapping
+    const textToFraction = {
+      '1/2': '½', '1/4': '¼', '3/4': '¾',
+      '1/3': '⅓', '2/3': '⅔',
+      '1/8': '⅛', '3/8': '⅜', '5/8': '⅝', '7/8': '⅞',
+      '1/5': '⅕', '2/5': '⅖', '3/5': '⅗', '4/5': '⅘',
+      '1/6': '⅙', '5/6': '⅚',
+    };
+    
+    // Replace text fractions first (before decimals to avoid conflicts)
+    for (final entry in textToFraction.entries) {
+      result = result.replaceAll(entry.key, entry.value);
+    }
+    
+    // Replace decimals
+    for (final entry in decimalToFraction.entries) {
+      // Only replace if it's a standalone decimal or at word boundary
+      result = result.replaceAll(RegExp('(?<![\\d])${RegExp.escape(entry.key)}(?![\\d])'), entry.value);
+    }
+    
+    return result;
+  }
+
+  /// Sort ingredients by quantity (largest first), keeping sections together
   List<Ingredient> _sortIngredientsByQuantity(List<Ingredient> ingredients) {
-    return List.from(ingredients)..sort((a, b) {
-      final aQty = _extractNumericQuantity(a.amount);
-      final bQty = _extractNumericQuantity(b.amount);
-      return bQty.compareTo(aQty); // Descending
-    });
+    if (ingredients.isEmpty) return ingredients;
+    
+    // Group by section
+    final Map<String?, List<Ingredient>> sections = {};
+    for (final ing in ingredients) {
+      sections.putIfAbsent(ing.section, () => []).add(ing);
+    }
+    
+    // Sort each section by unit priority then quantity
+    final result = <Ingredient>[];
+    for (final section in sections.keys) {
+      final sectionItems = sections[section]!;
+      sectionItems.sort((a, b) {
+        final aScore = _getIngredientSortScore(a.amount);
+        final bScore = _getIngredientSortScore(b.amount);
+        return bScore.compareTo(aScore); // Descending (largest first)
+      });
+      result.addAll(sectionItems);
+    }
+    
+    return result;
+  }
+
+  /// Get a sort score for an ingredient amount (higher = larger/more important)
+  double _getIngredientSortScore(String? amount) {
+    if (amount == null || amount.isEmpty) return 0;
+    
+    final text = amount.toLowerCase();
+    
+    // Unit priority multipliers (cups are biggest, tsp smallest)
+    double unitMultiplier = 1.0;
+    if (text.contains('cup') || text.contains(' c ') || text.endsWith(' c') || text.contains(' C ') || text.endsWith(' C')) {
+      unitMultiplier = 1000.0; // Cups - highest priority
+    } else if (text.contains('lb') || text.contains('pound')) {
+      unitMultiplier = 800.0;
+    } else if (text.contains('oz') || text.contains('ounce')) {
+      unitMultiplier = 400.0;
+    } else if (text.contains('tbsp') || text.contains('tablespoon') || text.contains('Tbsp')) {
+      unitMultiplier = 100.0;
+    } else if (text.contains('tsp') || text.contains('teaspoon')) {
+      unitMultiplier = 10.0;
+    } else if (text.contains('in') || text.contains('inch') || text.contains('"')) {
+      unitMultiplier = 5.0; // Measurements like "1 inch"
+    } else if (!RegExp(r'[a-zA-Z]').hasMatch(text)) {
+      // Pure number (like "1 onion") - treat as whole items
+      unitMultiplier = 500.0;
+    }
+    
+    // Extract numeric quantity
+    final quantity = _extractNumericQuantity(amount);
+    
+    return quantity * unitMultiplier;
   }
 
   /// Extract numeric value from amount string for sorting
