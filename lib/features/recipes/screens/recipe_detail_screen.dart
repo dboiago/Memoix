@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../models/recipe.dart';
@@ -17,19 +19,24 @@ class RecipeDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final repository = ref.watch(recipeRepositoryProvider);
+    // Watch the recipes stream to get live updates on favourite changes
+    final recipesAsync = ref.watch(allRecipesProvider);
 
-    return FutureBuilder<Recipe?>(
-      future: repository.getRecipeByUuid(recipeId),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Scaffold(
-            body: Center(child: CircularProgressIndicator()),
-          );
-        }
-
-        final recipe = snapshot.data;
-        if (recipe == null) {
+    return recipesAsync.when(
+      loading: () => const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (err, _) => Scaffold(
+        appBar: AppBar(),
+        body: Center(child: Text('Error: $err')),
+      ),
+      data: (recipes) {
+        final recipe = recipes.firstWhere(
+          (r) => r.uuid == recipeId,
+          orElse: () => Recipe()..name = '',
+        );
+        
+        if (recipe.name.isEmpty) {
           return Scaffold(
             appBar: AppBar(),
             body: const Center(child: Text('Recipe not found')),
@@ -114,7 +121,13 @@ class RecipeDetailView extends ConsumerWidget {
                   ref.invalidate(recipeLastCookProvider(recipe.uuid));
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Logged cook for ${recipe.name}! 🎉')),
+                      SnackBar(
+                        content: Text('Logged cook for ${recipe.name}! 🎉'),
+                        action: SnackBarAction(
+                          label: 'Stats',
+                          onPressed: () => AppRoutes.toStatistics(context),
+                        ),
+                      ),
                     );
                   }
                 },
@@ -308,14 +321,47 @@ class RecipeDetailView extends ConsumerWidget {
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action) {
     switch (action) {
       case 'edit':
-        // Navigate to edit screen
+        AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid);
         break;
       case 'duplicate':
-        // Duplicate recipe
+        _duplicateRecipe(context, ref);
         break;
       case 'delete':
         _confirmDelete(context, ref);
         break;
+    }
+  }
+
+  void _duplicateRecipe(BuildContext context, WidgetRef ref) async {
+    final repo = ref.read(recipeRepositoryProvider);
+    final newRecipe = Recipe()
+      ..uuid = ''  // Will be generated on save
+      ..name = '${recipe.name} (Copy)'
+      ..course = recipe.course
+      ..cuisine = recipe.cuisine
+      ..serves = recipe.serves
+      ..time = recipe.time
+      ..pairsWith = List.from(recipe.pairsWith)
+      ..notes = recipe.notes
+      ..ingredients = recipe.ingredients.map((i) => 
+        Ingredient()
+          ..name = i.name
+          ..amount = i.amount
+          ..unit = i.unit
+          ..preparation = i.preparation
+          ..alternative = i.alternative
+          ..isOptional = i.isOptional
+          ..section = i.section
+      ).toList()
+      ..directions = List.from(recipe.directions)
+      ..source = RecipeSource.personal
+      ..tags = List.from(recipe.tags);
+    
+    await repo.saveRecipe(newRecipe);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Created copy: ${newRecipe.name}')),
+      );
     }
   }
 

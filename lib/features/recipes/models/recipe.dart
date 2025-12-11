@@ -121,16 +121,26 @@ class Recipe {
 
   /// Create from JSON (for GitHub import)
   factory Recipe.fromJson(Map<String, dynamic> json) {
+    // Clean up course field - remove "recipes" prefix if present
+    String course = json['course'] as String;
+    if (course.toLowerCase().contains('recipes')) {
+      // Extract actual course name (e.g., "recipes   mains" -> "mains")
+      course = course.replaceAll(RegExp(r'recipes\s*', caseSensitive: false), '').trim();
+    }
+    // Normalize course name to lowercase for consistency
+    course = course.toLowerCase();
+
     final recipe = Recipe()
       ..uuid = json['uuid'] as String
       ..name = json['name'] as String
-      ..course = json['course'] as String
+      ..course = course
       ..cuisine = json['cuisine'] as String?
       ..subcategory = json['subcategory'] as String?
       ..serves = json['serves'] as String?
       ..time = json['time'] as String?
       ..pairsWith = (json['pairsWith'] as List<dynamic>?)
               ?.map((e) => e as String)
+              .where((e) => e.isNotEmpty && e != 'Pairs With')
               .toList() ??
           []
       ..notes = json['notes'] as String?
@@ -140,6 +150,7 @@ class Recipe {
           []
       ..directions = (json['directions'] as List<dynamic>?)
               ?.map((e) => e as String)
+              .where((e) => e.isNotEmpty && e != 'Directions')
               .toList() ??
           []
       ..sourceUrl = json['sourceUrl'] as String?

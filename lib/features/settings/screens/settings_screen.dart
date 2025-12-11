@@ -137,7 +137,21 @@ class SettingsScreen extends ConsumerWidget {
                 : const Icon(Icons.chevron_right),
             onTap: syncState.isLoading
                 ? null
-                : () => ref.read(syncNotifierProvider.notifier).sync(),
+                : () async {
+                    await ref.read(syncNotifierProvider.notifier).sync();
+                    if (context.mounted) {
+                      final state = ref.read(syncNotifierProvider);
+                      if (state.hasError) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Sync failed: ${state.error}')),
+                        );
+                      } else {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('✓ Memoix collection synced successfully!')),
+                        );
+                      }
+                    }
+                  },
           ),
           if (syncState.hasError)
             Padding(
