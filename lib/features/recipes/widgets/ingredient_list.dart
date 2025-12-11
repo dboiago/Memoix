@@ -62,6 +62,15 @@ class _IngredientListState extends State<IngredientList> {
     final isChecked = _checkedItems.contains(item.index);
     final ingredient = item.ingredient;
 
+    // Build the amount string
+    String amountText = '';
+    if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
+      amountText = ingredient.amount!;
+      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
+        amountText += ' ${ingredient.unit}';
+      }
+    }
+
     return InkWell(
       onTap: () {
         setState(() {
@@ -75,7 +84,6 @@ class _IngredientListState extends State<IngredientList> {
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Checkbox
             SizedBox(
@@ -97,9 +105,9 @@ class _IngredientListState extends State<IngredientList> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient name
+            // Ingredient name (left)
             Expanded(
-              flex: 3,
+              flex: 2,
               child: Text(
                 ingredient.name,
                 style: TextStyle(
@@ -107,38 +115,22 @@ class _IngredientListState extends State<IngredientList> {
                   color: isChecked
                       ? theme.colorScheme.onSurface.withOpacity(0.5)
                       : null,
-                  fontWeight: FontWeight.w500,
                 ),
               ),
             ),
 
-            // Amount/measurement
-            if (ingredient.amount != null && ingredient.amount!.isNotEmpty) ...[
+            // Amount (middle)
+            if (amountText.isNotEmpty) ...[
               const SizedBox(width: 8),
-              Text(
-                ingredient.amount!,
-                style: TextStyle(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
-
-            // Notes/preparation
-            if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) ...[
-              const SizedBox(width: 8),
-              Expanded(
-                flex: 2,
+              SizedBox(
+                width: 70,
                 child: Text(
-                  ingredient.preparation!,
+                  amountText,
                   style: TextStyle(
                     decoration: isChecked ? TextDecoration.lineThrough : null,
                     color: isChecked
                         ? theme.colorScheme.onSurface.withOpacity(0.5)
-                        : theme.colorScheme.primary,
-                    fontStyle: FontStyle.italic,
+                        : theme.colorScheme.onSurfaceVariant,
                   ),
                 ),
               ),
@@ -146,7 +138,6 @@ class _IngredientListState extends State<IngredientList> {
 
             // Optional badge
             if (ingredient.isOptional) ...[
-              const SizedBox(width: 6),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
@@ -161,7 +152,21 @@ class _IngredientListState extends State<IngredientList> {
                   ),
                 ),
               ),
+              const SizedBox(width: 8),
             ],
+
+            // Notes/preparation (far right)
+            if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty)
+              Text(
+                ingredient.preparation!,
+                style: TextStyle(
+                  decoration: isChecked ? TextDecoration.lineThrough : null,
+                  color: isChecked
+                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      : theme.colorScheme.primary,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
           ],
         ),
       ),

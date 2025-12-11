@@ -41,16 +41,48 @@ class CsvRecipeImporter {
       throw Exception('Could not read file');
     }
 
-    return parseCSV(csvContent);
+    // Extract course from filename (e.g., "Recipes - Mains.csv" -> "Mains")
+    String? courseFromFilename;
+    final filename = file.name;
+    if (filename.isNotEmpty) {
+      courseFromFilename = _extractCourseFromFilename(filename);
+    }
+
+    return parseCSV(csvContent, defaultCourse: courseFromFilename);
+  }
+
+  /// Extract course name from filename like "Recipes - Mains.csv"
+  String? _extractCourseFromFilename(String filename) {
+    // Remove extension
+    final nameWithoutExt = filename.replaceAll(RegExp(r'\.(csv|txt)$', caseSensitive: false), '');
+    
+    // Try pattern "Recipes - Course"
+    final dashMatch = RegExp(r'[-–]\s*(.+)$').firstMatch(nameWithoutExt);
+    if (dashMatch != null) {
+      final coursePart = dashMatch.group(1)!.trim();
+      final normalised = _normaliseCourse(coursePart);
+      if (normalised != coursePart || _isCourse(coursePart)) {
+        return normalised;
+      }
+    }
+    
+    // Try if filename itself is a course name
+    final normalised = _normaliseCourse(nameWithoutExt);
+    if (normalised != nameWithoutExt || _isCourse(nameWithoutExt)) {
+      return normalised;
+    }
+    
+    return null;
   }
 
   /// Parse CSV content into recipes
-  List<Recipe> parseCSV(String csvContent) {
+  /// [defaultCourse] - course extracted from filename, used if not found in content
+  List<Recipe> parseCSV(String csvContent, {String? defaultCourse}) {
     final lines = const LineSplitter().convert(csvContent);
     final recipes = <Recipe>[];
     
     String? currentCuisine;
-    String? currentCourse;
+    String? currentCourse = defaultCourse;
     Recipe? currentRecipe;
     String? currentSection;
     
@@ -225,6 +257,9 @@ class CsvRecipeImporter {
     if (first.isEmpty) return false;
     if (first.toLowerCase() == 'name') return false;
     
+    // If this looks like a cuisine or course header, it's NOT a recipe
+    if (_isCuisineOrRegion(first) || _isCourse(first)) return false;
+    
     // If second column looks like an amount, this is an ingredient row
     if (_looksLikeAmount(second)) return false;
     
@@ -241,6 +276,11 @@ class CsvRecipeImporter {
     
     // If the name contains typical ingredient words, it's probably not a recipe name
     if (_looksLikeIngredient(first, second)) return false;
+    
+    // Single-word entries with all other columns empty are likely headers, not recipes
+    if (!first.contains(' ') && cells.skip(1).every((c) => c.trim().isEmpty)) {
+      return false;
+    }
     
     // Heuristic: recipe names are usually 2+ words or proper nouns
     return second.isEmpty;
