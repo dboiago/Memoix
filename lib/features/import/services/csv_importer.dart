@@ -66,17 +66,19 @@ class CsvRecipeImporter {
       final firstCell = cells.isNotEmpty ? cells[0].trim() : '';
       final secondCell = cells.length > 1 ? cells[1].trim() : '';
       
-      // Check if this is a cuisine/region header (single cell with rest empty)
+      // Check if this is a cuisine/region/course header (single cell with rest empty)
       if (firstCell.isNotEmpty && 
           cells.skip(1).every((c) => c.isEmpty) &&
           !_isRecipeNameRow(cells) &&
-          !_looksLikeIngredient(firstCell, secondCell)) {
+          !_looksLikeIngredient(firstCell, secondCell) &&
+          !_isSectionHeader(firstCell, cells)) {
         
         // Determine if this is a course or cuisine
         if (_isCourse(firstCell)) {
           currentCourse = _normaliseCourse(firstCell);
-        } else {
-          currentCuisine = firstCell;
+          // Don't reset cuisine when changing course
+        } else if (_isCuisineOrRegion(firstCell)) {
+          currentCuisine = _normaliseCuisine(firstCell);
         }
         currentSection = null;
         continue;
@@ -322,9 +324,59 @@ class CsvRecipeImporter {
     return [
       'mains', 'main', 'apps', 'appetizers', 'appetiser', 'soups', 'soup',
       'salads', 'salad', 'sides', 'side', 'desserts', 'dessert', 'breads',
-      'bread', 'brunch', 'breakfast', 'sauces', 'drinks', 'pizzas', 'pizza',
-      'rubs', 'not meat', 'vegetarian', 'vegan',
+      'bread', 'brunch', 'breakfast', 'sauces', 'drinks', 'drink', 'beverages',
+      'pizzas', 'pizza', 'rubs', 'rub', 'not meat', 'vegetarian', 'vegan',
+      'sandwiches', 'sandwich', 'sandwhiches', 'sandwhich',
     ].contains(courseLower);
+  }
+  
+  bool _isCuisineOrRegion(String cell) {
+    final cellLower = cell.toLowerCase();
+    // Known cuisines and regions
+    final cuisines = [
+      'asian', 'chinese', 'japanese', 'korean', 'vietnamese', 'thai', 'indian',
+      'french', 'italian', 'spanish', 'german', 'greek', 'turkish',
+      'mexican', 'brazilian', 'peruvian', 'cuban',
+      'american', 'southern', 'cajun',
+      'middle eastern', 'lebanese', 'moroccan', 'ethiopian',
+      'european', 'americas', 'north', 'south',
+    ];
+    return cuisines.contains(cellLower);
+  }
+  
+  String _normaliseCuisine(String cuisine) {
+    final mapping = {
+      'asian': null, // Too broad, will be overridden by specific
+      'european': null,
+      'americas': null,
+      'north': 'North American',
+      'south': 'South American',
+      'chinese': 'China',
+      'japanese': 'Japan',
+      'korean': 'Korea',
+      'vietnamese': 'Vietnam',
+      'thai': 'Thailand',
+      'indian': 'India',
+      'french': 'France',
+      'italian': 'Italy',
+      'spanish': 'Spain',
+      'german': 'Germany',
+      'greek': 'Greece',
+      'turkish': 'Turkey',
+      'mexican': 'Mexico',
+      'brazilian': 'Brazil',
+      'peruvian': 'Peru',
+      'cuban': 'Cuba',
+      'american': 'USA',
+      'southern': 'USA',
+      'cajun': 'USA',
+      'lebanese': 'Lebanon',
+      'moroccan': 'Morocco',
+      'ethiopian': 'Ethiopia',
+    };
+    
+    final normalised = mapping[cuisine.toLowerCase()];
+    return normalised ?? cuisine;
   }
   
   String _normaliseCourse(String course) {
@@ -352,6 +404,7 @@ class CsvRecipeImporter {
       'sauces': 'Sauces',
       'drink': 'Drinks',
       'drinks': 'Drinks',
+      'beverages': 'Drinks',
       'pizza': 'Pizzas',
       'pizzas': 'Pizzas',
       'rub': 'Rubs',
@@ -359,6 +412,10 @@ class CsvRecipeImporter {
       'not meat': 'Not Meat',
       'vegetarian': 'Not Meat',
       'vegan': 'Not Meat',
+      'sandwich': 'Sandwiches',
+      'sandwiches': 'Sandwiches',
+      'sandwhich': 'Sandwiches',
+      'sandwhiches': 'Sandwiches',
     };
     
     return mapping[course.toLowerCase()] ?? course;
