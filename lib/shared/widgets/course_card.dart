@@ -39,7 +39,7 @@ class _CourseCardState extends State<CourseCard> {
           width: (_hovered || _pressed) ? 1.5 : 1.0,
         ),
       ),
-      color: isDark ? const Color(0xFF1A1A1A) : theme.colorScheme.surfaceContainerHigh,
+      color: isDark ? theme.colorScheme.surfaceContainerHigh : theme.colorScheme.surfaceContainerHighest,
       child: Material(
         color: Colors.transparent,
         child: InkWell(
@@ -51,48 +51,44 @@ class _CourseCardState extends State<CourseCard> {
           highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            child: Row(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Icon circle (muted design)
+                // Icon circle (muted design, stacked on top)
                 Container(
-                  width: 40,
-                  height: 40,
+                  width: 48,
+                  height: 48,
                   decoration: BoxDecoration(
-                    color: theme.colorScheme.surfaceContainerHighest,
+                    color: (_hovered || _pressed)
+                        ? theme.colorScheme.secondary
+                        : theme.colorScheme.surfaceContainerHighest,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     _getIconData(widget.category.iconName),
                     color: (_hovered || _pressed)
-                        ? theme.colorScheme.secondary
+                        ? theme.colorScheme.onSecondaryContainer
                         : theme.colorScheme.onSurfaceVariant,
-                    size: 22,
+                    size: 24,
                   ),
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(height: 12),
                 // Texts
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        widget.category.name,
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          fontWeight: FontWeight.w600,
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        '${widget.recipeCount} recipes',
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
+                Text(
+                  widget.category.name,
+                  style: theme.textTheme.titleSmall?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  '${widget.recipeCount} recipes',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
                   ),
                 ),
               ],

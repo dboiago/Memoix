@@ -89,7 +89,7 @@ class _CourseGridView extends ConsumerWidget {
                   crossAxisCount: crossAxisCount,
                   crossAxisSpacing: 12,
                   mainAxisSpacing: 12,
-                  childAspectRatio: 2.2, // wide bubble cards
+                  childAspectRatio: 1.0, // square cards for stacked icon/text
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {

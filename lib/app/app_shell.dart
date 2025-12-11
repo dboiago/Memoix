@@ -22,20 +22,11 @@ class _AppShellState extends ConsumerState<AppShell> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     return Scaffold(
       drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text('Recipe Book'),
-        leading: Builder(
-          builder: (context) {
-            return IconButton(
-              icon: const Icon(Icons.arrow_back),
-              onPressed: () {
-                AppShellNavigator.navigatorKey.currentState?.maybePop();
-              },
-            );
-          },
-        ),
       ),
       body: Navigator(
         key: AppShellNavigator.navigatorKey,
@@ -44,7 +35,7 @@ class _AppShellState extends ConsumerState<AppShell> {
           return MaterialPageRoute(builder: (_) => const HomeScreen());
         },
       ),
-      backgroundColor: theme.colorScheme.surface,
+      backgroundColor: isDark ? const Color(0xFF1A1A1A) : theme.colorScheme.surface,
     );
   }
 }

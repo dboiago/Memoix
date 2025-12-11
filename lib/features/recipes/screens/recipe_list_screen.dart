@@ -38,7 +38,15 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       recipesByCourseProvider(widget.course),
     );
 
-    return recipesAsync.when(
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(widget.course.toUpperCase()),
+      ),
+      body: recipesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (err, _) => Center(child: Text('Error: $err')),
       data: (allRecipes) {
@@ -96,6 +104,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
             ],
           );
       },
+    ),
     );
   }
 
