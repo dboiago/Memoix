@@ -337,7 +337,13 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       final recipe = _existingRecipe ?? Recipe();
       
       recipe
-        ..uuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid
+        ..uuid = (() {
+          try {
+            return recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid;
+          } catch (_) {
+            return _uuid.v4();
+          }
+        })()
         ..name = _nameController.text.trim()
         ..course = _selectedCourse
         ..cuisine = _selectedCuisine

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/services/github_recipe_service.dart';
 import '../../../core/database/database.dart';
@@ -165,8 +166,15 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('Source Code'),
             subtitle: const Text('View on GitHub'),
             trailing: const Icon(Icons.open_in_new),
-            onTap: () {
-              // Open GitHub URL
+            onTap: () async {
+              final uri = Uri.parse('https://github.com/dboiago/Memoix');
+              if (await canLaunchUrl(uri)) {
+                await launchUrl(uri);
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Could not open GitHub')),
+                );
+              }
             },
           ),
           ListTile(
@@ -174,8 +182,15 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('Support Development'),
             subtitle: const Text('Buy me a coffee'),
             trailing: const Icon(Icons.open_in_new),
-            onTap: () {
-              // Open donation link
+            onTap: () async {
+              final uri = Uri.parse('https://www.buymeacoffee.com/dboiago');
+              if (await canLaunchUrl(uri)) {
+                await launchUrl(uri);
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Could not open link')),
+                );
+              }
             },
           ),
 

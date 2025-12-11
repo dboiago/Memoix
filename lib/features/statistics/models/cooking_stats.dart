@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/providers.dart';
 import 'package:isar/isar.dart';
 import 'package:intl/intl.dart';
 
@@ -221,9 +222,7 @@ class CookingStatsService {
 }
 
 // Providers
-final cookingStatsServiceProvider = Provider<CookingStatsService>((ref) {
-  throw UnimplementedError('Must be overridden in ProviderScope');
-});
+// Use central provider from core/providers.dart
 
 final cookingStatsProvider = FutureProvider<CookingStats>((ref) async {
   final service = ref.watch(cookingStatsServiceProvider);

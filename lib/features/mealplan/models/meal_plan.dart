@@ -1,6 +1,7 @@
 import 'package:isar/isar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
+import '../../../core/providers.dart';
 
 part 'meal_plan.g.dart';
 
@@ -280,9 +281,7 @@ class MealPlanService {
 
 // Riverpod providers
 
-final mealPlanServiceProvider = Provider<MealPlanService>((ref) {
-  throw UnimplementedError('Must be overridden in ProviderScope');
-});
+// Use central provider from core/providers.dart
 
 final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, weekStart) async {
   final service = ref.watch(mealPlanServiceProvider);

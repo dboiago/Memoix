@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar/isar.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
 import '../models/recipe.dart';
@@ -8,6 +9,7 @@ import '../models/category.dart';
 /// Repository for recipe data operations
 class RecipeRepository {
   final Isar _db;
+  static final _uuid = Uuid();
 
   RecipeRepository(this._db);
 
@@ -79,7 +81,19 @@ class RecipeRepository {
 
   /// Save a recipe (insert or update)
   Future<int> saveRecipe(Recipe recipe) async {
+    // Ensure the recipe has a UUID
+    try {
+      if (recipe.uuid.isEmpty) {
+        recipe.uuid = _uuid.v4();
+      }
+    } catch (_) {
+      // If uuid was not initialized, set a new one
+      recipe.uuid = _uuid.v4();
+    }
+
     recipe.updatedAt = DateTime.now();
+    // `createdAt` is initialized in the model; no-op here.
+
     return _db.writeTxn(() => _db.recipes.put(recipe));
   }
 
@@ -87,6 +101,12 @@ class RecipeRepository {
   Future<void> saveRecipes(List<Recipe> recipes) async {
     final now = DateTime.now();
     for (final recipe in recipes) {
+      // Ensure each recipe has a uuid
+      try {
+        if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
+      } catch (_) {
+        recipe.uuid = _uuid.v4();
+      }
       recipe.updatedAt = now;
     }
     await _db.writeTxn(() => _db.recipes.putAll(recipes));
