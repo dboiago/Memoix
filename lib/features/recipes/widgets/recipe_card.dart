@@ -6,7 +6,7 @@ import '../../statistics/models/cooking_stats.dart';
 import '../../../core/providers.dart';
 
 /// Recipe card matching Figma design
-class RecipeCard extends ConsumerWidget {
+class RecipeCard extends ConsumerStatefulWidget {
   final Recipe recipe;
   final VoidCallback? onTap;
 
@@ -17,21 +17,39 @@ class RecipeCard extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<RecipeCard> createState() => _RecipeCardState();
+}
+
+class _RecipeCardState extends ConsumerState<RecipeCard> {
+  bool _hovered = false;
+  bool _pressed = false;
+
+  @override
+  Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final cuisine = recipe.cuisine;
+    final cuisine = widget.recipe.cuisine;
 
     final bool isDark = theme.brightness == Brightness.dark;
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
-        side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.12)),
+        side: BorderSide(
+          color: (_hovered || _pressed)
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withValues(alpha: 0.12),
+          width: (_hovered || _pressed) ? 1.5 : 1.0,
+        ),
       ),
       color: isDark ? const Color(0xFF1A1A1A) : theme.colorScheme.surfaceContainerHigh,
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        onTap: onTap,
+        onTap: widget.onTap,
+        onHover: (h) => setState(() => _hovered = h),
+        onHighlightChanged: (p) => setState(() => _pressed = p),
+        splashColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: Row(
@@ -43,7 +61,7 @@ class RecipeCard extends ConsumerWidget {
                 children: [
                   // Recipe name
                   Text(
-                    recipe.name,
+                    widget.recipe.name,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.w600,
                     ),
@@ -73,7 +91,7 @@ class RecipeCard extends ConsumerWidget {
                       ],
                       
                       // Servings
-                      if (recipe.serves != null) ...[
+                      if (widget.recipe.serves != null) ...[
                         Icon(
                           Icons.people_outline,
                           size: 14,
@@ -81,7 +99,7 @@ class RecipeCard extends ConsumerWidget {
                         ),
                         const SizedBox(width: 4),
                         Text(
-                          recipe.serves!,
+                          widget.recipe.serves!,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -90,7 +108,7 @@ class RecipeCard extends ConsumerWidget {
                       ],
                       
                       // Time
-                      if (recipe.time != null) ...[
+                      if (widget.recipe.time != null) ...[
                         Icon(
                           Icons.schedule_outlined,
                           size: 14,
@@ -98,7 +116,7 @@ class RecipeCard extends ConsumerWidget {
                         ),
                         const SizedBox(width: 4),
                         Text(
-                          recipe.time!,
+                          widget.recipe.time!,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -117,14 +135,14 @@ class RecipeCard extends ConsumerWidget {
                 // Favorite button
                 IconButton(
                   icon: Icon(
-                    recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                    widget.recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                     size: 20,
                   ),
-                  color: recipe.isFavorite 
+                  color: widget.recipe.isFavorite 
                       ? Colors.red.shade400 
                       : theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
-                    ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+                    ref.read(recipeRepositoryProvider).toggleFavorite(widget.recipe.id);
                   },
                   padding: const EdgeInsets.all(8),
                   constraints: const BoxConstraints(),
@@ -135,24 +153,24 @@ class RecipeCard extends ConsumerWidget {
                 // Cooked button
                 IconButton(
                   icon: Icon(
-                    recipe.cookCount > 0 
+                    widget.recipe.cookCount > 0 
                         ? Icons.check_circle 
                         : Icons.check_circle_outline,
                     size: 20,
                   ),
-                  color: recipe.cookCount > 0 
+                  color: widget.recipe.cookCount > 0 
                       ? Colors.green.shade400 
                       : theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
                     ref.read(cookingStatsServiceProvider).logCook(
-                      recipeId: recipe.uuid,
-                      recipeName: recipe.name,
-                      course: recipe.course,
-                      cuisine: recipe.cuisine,
+                      recipeId: widget.recipe.uuid,
+                      recipeName: widget.recipe.name,
+                      course: widget.recipe.course,
+                      cuisine: widget.recipe.cuisine,
                     );
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text('${recipe.name} marked as cooked'),
+                        content: Text('${widget.recipe.name} marked as cooked'),
                         behavior: SnackBarBehavior.floating,
                         duration: const Duration(seconds: 2),
                       ),

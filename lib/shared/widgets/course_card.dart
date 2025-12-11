@@ -3,7 +3,7 @@ import '../../features/recipes/models/category.dart';
 
 /// Course card widget matching Figma design
 /// Shows course icon, name, and recipe count in a card layout
-class CourseCard extends StatelessWidget {
+class CourseCard extends StatefulWidget {
   final Category category;
   final int recipeCount;
   final VoidCallback onTap;
@@ -16,6 +16,14 @@ class CourseCard extends StatelessWidget {
   });
 
   @override
+  State<CourseCard> createState() => _CourseCardState();
+}
+
+class _CourseCardState extends State<CourseCard> {
+  bool _hovered = false;
+  bool _pressed = false;
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
@@ -25,15 +33,22 @@ class CourseCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
         side: BorderSide(
-          color: theme.colorScheme.outline.withValues(alpha: 0.1),
+          color: (_hovered || _pressed)
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withValues(alpha: 0.1),
+          width: (_hovered || _pressed) ? 1.5 : 1.0,
         ),
       ),
       color: isDark ? const Color(0xFF1A1A1A) : theme.colorScheme.surfaceContainerHigh,
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: onTap,
-          hoverColor: theme.colorScheme.secondary.withValues(alpha: 0.10),
+          onTap: widget.onTap,
+          onHover: (h) => setState(() => _hovered = h),
+          onHighlightChanged: (p) => setState(() => _pressed = p),
+          splashColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
@@ -48,8 +63,10 @@ class CourseCard extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
-                    _getIconData(category.iconName),
-                    color: theme.colorScheme.secondary,
+                    _getIconData(widget.category.iconName),
+                    color: (_hovered || _pressed)
+                        ? theme.colorScheme.secondary
+                        : theme.colorScheme.onSurfaceVariant,
                     size: 22,
                   ),
                 ),
@@ -61,7 +78,7 @@ class CourseCard extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        category.name,
+                        widget.category.name,
                         style: theme.textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.w600,
                         ),
@@ -70,7 +87,7 @@ class CourseCard extends StatelessWidget {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '$recipeCount recipes',
+                        '${widget.recipeCount} recipes',
                         style: theme.textTheme.labelSmall?.copyWith(
                           color: theme.colorScheme.onSurfaceVariant,
                         ),
