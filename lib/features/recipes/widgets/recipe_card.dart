@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/recipe.dart';
 import '../../../app/theme/colors.dart';
+import '../../recipes/repository/recipe_repository.dart';
+import '../../statistics/models/cooking_stats.dart';
 
-class RecipeCard extends StatelessWidget {
+class RecipeCard extends ConsumerWidget {
   final Recipe recipe;
   final VoidCallback? onTap;
 
@@ -13,7 +16,7 @@ class RecipeCard extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
 
     return Card(
@@ -106,9 +109,33 @@ class RecipeCard extends StatelessWidget {
                 ),
               ),
 
-              // Favorite indicator
-              if (recipe.isFavorite)
-                const Icon(Icons.favorite, color: Colors.red, size: 20),
+              // Action icons
+              Column(
+                children: [
+                  IconButton(
+                    icon: Icon(
+                      recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                      color: recipe.isFavorite ? Colors.red : null,
+                    ),
+                    onPressed: () {
+                      ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+                    },
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.check_circle_outline),
+                    tooltip: 'I made this',
+                    onPressed: () {
+                      ref.read(cookingStatsServiceProvider).logCook(
+                        recipeId: recipe.uuid,
+                        recipeName: recipe.name,
+                        course: recipe.course,
+                        cuisine: recipe.cuisine,
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Logged cook for ${recipe.name}')));
+                    },
+                  ),
+                ],
+              ),
             ],
           ),
         ),

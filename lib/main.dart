@@ -14,18 +14,16 @@ void main() async {
   // Initialize local database
   await MemoixDatabase.initialize();
 
-  // Kick off a background sync of the memoix recipes (non-blocking)
-  Future(() async {
-    try {
-      final service = GitHubRecipeService();
-      final repo = RecipeRepository(MemoixDatabase.instance);
-      final recipes = await service.fetchAllRecipes();
-      await repo.syncMemoixRecipes(recipes);
-    } catch (e) {
-      // Non-fatal; log for debugging
-      print('Initial GitHub recipe sync failed: $e');
-    }
-  });
+  // Perform an initial sync with a short timeout so recipes show on first run.
+  try {
+    final service = GitHubRecipeService();
+    final repo = RecipeRepository(MemoixDatabase.instance);
+    final recipes = await service.fetchAllRecipes().timeout(const Duration(seconds: 20));
+    await repo.syncMemoixRecipes(recipes);
+    print('Initial GitHub recipe sync completed: ${recipes.length} recipes');
+  } catch (e) {
+    print('Initial GitHub recipe sync failed or timed out: $e');
+  }
 
   runApp(
     const ProviderScope(

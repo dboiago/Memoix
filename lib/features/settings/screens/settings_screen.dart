@@ -76,6 +76,30 @@ class SettingsScreen extends ConsumerWidget {
       ),
       body: ListView(
         children: [
+          const SizedBox(height: 8),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text('Appearance', style: theme.textTheme.labelLarge),
+          ),
+          RadioListTile<ThemeMode>(
+            title: const Text('System Default'),
+            value: ThemeMode.system,
+            groupValue: ref.watch(themeModeProvider),
+            onChanged: (m) => ref.read(themeModeProvider.notifier).state = m ?? ThemeMode.system,
+          ),
+          RadioListTile<ThemeMode>(
+            title: const Text('Light'),
+            value: ThemeMode.light,
+            groupValue: ref.watch(themeModeProvider),
+            onChanged: (m) => ref.read(themeModeProvider.notifier).state = m ?? ThemeMode.system,
+          ),
+          RadioListTile<ThemeMode>(
+            title: const Text('Dark'),
+            value: ThemeMode.dark,
+            groupValue: ref.watch(themeModeProvider),
+            onChanged: (m) => ref.read(themeModeProvider.notifier).state = m ?? ThemeMode.system,
+          ),
+          const Divider(),
           // Display section
           _SectionHeader(title: 'Display'),
           SwitchListTile(

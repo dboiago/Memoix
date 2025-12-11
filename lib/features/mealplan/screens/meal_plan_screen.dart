@@ -129,10 +129,37 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   }
 
   void _generateShoppingList(BuildContext context) {
-    // Navigate to generate shopping list from current week
+    // Generate shopping list from the currently selected week
+    final weekStart = ref.read(selectedWeekProvider);
+    final mealService = ref.read(mealPlanServiceProvider);
+    final repo = ref.read(recipeRepositoryProvider);
+
+    // Async generate and navigate to the new list
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Generating shopping list from meal plan...')),
     );
+
+    mealService.getWeek(weekStart).then((weekly) async {
+      final ids = weekly.allRecipeIds.toList();
+      final recipes = <Recipe>[];
+      for (final id in ids) {
+        final r = await repo.getRecipeByUuid(id);
+        if (r != null) recipes.add(r);
+      }
+      if (recipes.isNotEmpty) {
+        final shoppingService = ref.read(shoppingListServiceProvider);
+        final list = await shoppingService.generateFromRecipes(recipes);
+        if (context.mounted) {
+          Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(list: list)));
+        }
+      } else {
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found for this week')));
+        }
+      }
+    }).catchError((e) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to generate shopping list: $e')));
+    });
   }
 
   void _addMeal(BuildContext context) {
@@ -281,6 +308,18 @@ class AddMealSheet extends ConsumerStatefulWidget {
 class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   DateTime _selectedDate = DateTime.now();
   String _selectedCourse = MealCourse.dinner;
+  final _searchController = TextEditingController();
+  List<Recipe> _suggestions = [];
+
+  void _onSearchChanged(String q) async {
+    if (q.trim().isEmpty) {
+      setState(() => _suggestions = []);
+      return;
+    }
+    final repo = ref.read(recipeRepositoryProvider);
+    final results = await repo.searchRecipes(q);
+    setState(() => _suggestions = results.take(3).toList());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -366,14 +405,39 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
               // Search bar
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: SearchBar(
-                  hintText: 'Search recipes...',
-                  leading: const Icon(Icons.search),
-                  onTap: () {
-                    // Open recipe search
-                  },
+                child: TextField(
+                  controller: _searchController,
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.search),
+                    hintText: 'Search recipes...',
+                  ),
+                  onChanged: _onSearchChanged,
                 ),
               ),
+              const SizedBox(height: 8),
+              if (_suggestions.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    children: _suggestions.map((r) => ListTile(
+                      title: Text(r.name),
+                      subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
+                      onTap: () async {
+                        // Add meal and close
+                        await ref.read(mealPlanServiceProvider).addMeal(
+                          _selectedDate,
+                          recipeId: r.uuid,
+                          recipeName: r.name,
+                          course: _selectedCourse,
+                        );
+                        if (context.mounted) {
+                          Navigator.pop(context);
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added ${r.name}')));
+                        }
+                      },
+                    )).toList(),
+                  ),
+                ),
               const SizedBox(height: 8),
               // Quick suggestions (recent, favorites)
               Expanded(

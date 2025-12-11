@@ -9,12 +9,13 @@ class MemoixApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final mode = ref.watch(themeModeProvider);
     return MaterialApp(
       title: 'Memoix',
       debugShowCheckedModeBanner: false,
       theme: MemoixTheme.light,
       darkTheme: MemoixTheme.dark,
-      themeMode: ThemeMode.system,
+      themeMode: mode,
       home: const AppRouter(),
     );
   }

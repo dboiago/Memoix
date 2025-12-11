@@ -20,3 +20,6 @@ final cookingStatsServiceProvider = Provider<CookingStatsService>((ref) {
 final shoppingListServiceProvider = Provider<ShoppingListService>((ref) {
   return ShoppingListService(ref.watch(databaseProvider));
 });
+
+// Theme mode provider (system / light / dark)
+final themeModeProvider = StateProvider<ThemeMode>((ref) => ThemeMode.system);

@@ -97,6 +97,19 @@ class RecipeDetailView extends ConsumerWidget {
                 },
               ),
               IconButton(
+                icon: const Icon(Icons.check_circle_outline),
+                tooltip: 'I made this',
+                onPressed: () async {
+                  await ref.read(cookingStatsServiceProvider).logCook(
+                    recipeId: recipe.uuid,
+                    recipeName: recipe.name,
+                    course: recipe.course,
+                    cuisine: recipe.cuisine,
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Logged cook for ${recipe.name}')));
+                },
+              ),
+              IconButton(
                 icon: const Icon(Icons.share),
                 onPressed: () => _shareRecipe(context, ref),
               ),

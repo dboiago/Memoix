@@ -57,6 +57,16 @@ class MemoixDrawer extends ConsumerWidget {
                 ],
               ),
             ),
+            // Thin scroll hint bar so users know the drawer can scroll
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 8),
+              height: 4,
+              width: 48,
+              decoration: BoxDecoration(
+                color: theme.colorScheme.onSurface.withOpacity(0.08),
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
 
             // Main navigation
             Expanded(

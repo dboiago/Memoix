@@ -406,11 +406,11 @@ class _AddItemDialogState extends State<_AddItemDialog> {
   }
 }
 
-class CreateShoppingListSheet extends StatelessWidget {
+class CreateShoppingListSheet extends ConsumerWidget {
   const CreateShoppingListSheet({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -426,9 +426,24 @@ class CreateShoppingListSheet extends StatelessWidget {
             leading: const Icon(Icons.calendar_month),
             title: const Text('From Meal Plan'),
             subtitle: const Text('Generate from this week\'s meals'),
-            onTap: () {
+            onTap: () async {
               Navigator.pop(context);
-              // Navigate to meal plan selector
+              final weekStart = ref.read(selectedWeekProvider);
+              final mealService = ref.read(mealPlanServiceProvider);
+              final repo = ref.read(recipeRepositoryProvider);
+              final weekly = await mealService.getWeek(weekStart);
+              final ids = weekly.allRecipeIds.toList();
+              final recipes = <Recipe>[];
+              for (final id in ids) {
+                final r = await repo.getRecipeByUuid(id);
+                if (r != null) recipes.add(r);
+              }
+              if (recipes.isNotEmpty) {
+                final list = await ref.read(shoppingListServiceProvider).generateFromRecipes(recipes);
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(list: list)));
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found to generate list')));
+              }
             },
           ),
           ListTile(
@@ -437,16 +452,24 @@ class CreateShoppingListSheet extends StatelessWidget {
             subtitle: const Text('Select recipes to shop for'),
             onTap: () {
               Navigator.pop(context);
-              // Navigate to recipe selector
+              // TODO: Implement recipe selector flow
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Recipe selector coming soon')));
             },
           ),
           ListTile(
             leading: const Icon(Icons.edit),
             title: const Text('Empty List'),
             subtitle: const Text('Start with a blank list'),
-            onTap: () {
+            onTap: () async {
               Navigator.pop(context);
-              // Create empty list
+              final list = ShoppingList()
+                ..uuid = DateTime.now().millisecondsSinceEpoch.toString()
+                ..name = 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
+                ..items = []
+                ..createdAt = DateTime.now();
+              await ref.read(shoppingListServiceProvider).generateFromRecipes([]); // no-op to ensure create
+              // Save empty list directly
+              await ref.read(shoppingListServiceProvider).addItem(list, ShoppingItem.create(name: ''));
             },
           ),
           const SizedBox(height: 16),
