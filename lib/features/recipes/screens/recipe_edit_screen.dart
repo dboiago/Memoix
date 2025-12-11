@@ -80,7 +80,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _servesController.text = recipe.serves ?? '';
       _timeController.text = recipe.time ?? '';
       _notesController.text = recipe.notes ?? '';
-      _selectedCourse = recipe.course;
+      // Normalize course to slug form (lowercase) to match dropdown values
+      _selectedCourse = recipe.course?.toLowerCase() ?? _selectedCourse;
       _selectedCuisine = recipe.cuisine;
 
       // Convert ingredients to editable text

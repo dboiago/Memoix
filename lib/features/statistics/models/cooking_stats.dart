@@ -222,7 +222,7 @@ class CookingStatsService {
 
 // Providers
 final cookingStatsServiceProvider = Provider<CookingStatsService>((ref) {
-  throw UnimplementedError('Must be overridden in ProviderScope');
+  return CookingStatsService(MemoixDatabase.instance);
 });
 
 final cookingStatsProvider = FutureProvider<CookingStats>((ref) async {

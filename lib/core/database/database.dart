@@ -25,7 +25,13 @@ class MemoixDatabase {
     final dir = await getApplicationDocumentsDirectory();
     
     _instance = await Isar.open(
-      [RecipeSchema, CategorySchema],
+      [
+        RecipeSchema,
+        CategorySchema,
+        ShoppingListSchema,
+        MealPlanSchema,
+        CookingLogSchema,
+      ],
       directory: dir.path,
       name: 'memoix',
     );

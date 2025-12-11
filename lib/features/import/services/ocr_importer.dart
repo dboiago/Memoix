@@ -1,3 +1,4 @@
+import 'dart:io' show Platform;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:image_picker/image_picker.dart';
@@ -13,6 +14,9 @@ class OcrRecipeImporter {
 
   /// Pick an image and extract recipe text
   Future<OcrResult> scanFromCamera() async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return OcrResult.error('OCR is not supported on desktop platforms.');
+    }
     final image = await _imagePicker.pickImage(source: ImageSource.camera);
     if (image == null) {
       return OcrResult.cancelled();
@@ -22,6 +26,9 @@ class OcrRecipeImporter {
 
   /// Pick an image from gallery and extract recipe text
   Future<OcrResult> scanFromGallery() async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return OcrResult.error('OCR is not supported on desktop platforms.');
+    }
     final image = await _imagePicker.pickImage(source: ImageSource.gallery);
     if (image == null) {
       return OcrResult.cancelled();
@@ -51,6 +58,9 @@ class OcrRecipeImporter {
 
   /// Extract text from an image file (simple text extraction)
   Future<String> extractTextFromImage(String imagePath) async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      throw Exception('OCR is not supported on desktop platforms.');
+    }
     try {
       final inputImage = InputImage.fromFilePath(imagePath);
       final recognizedText = await _textRecognizer.processImage(inputImage);
