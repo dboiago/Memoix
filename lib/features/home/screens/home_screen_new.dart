@@ -114,7 +114,11 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
   }
 
   void _initTabController() {
+    // Dispose old controller first
     _tabController?.dispose();
+    _tabController = null;
+    
+    // Only create new controller if we have categories
     if (widget.categories.isNotEmpty) {
       _tabController = TabController(
         length: widget.categories.length,
@@ -126,8 +130,16 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
   @override
   void didUpdateWidget(covariant _RecipeBrowser oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // Reinitialize controller if category count changed
     if (oldWidget.categories.length != widget.categories.length) {
-      _initTabController();
+      // Use post-frame callback to avoid layout issues during build
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          setState(() {
+            _initTabController();
+          });
+        }
+      });
     }
   }
 
@@ -141,8 +153,39 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    if (widget.categories.isEmpty || _tabController == null) {
-      return const Center(child: Text('No categories found'));
+    // Handle empty state gracefully
+    if (widget.categories.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.restaurant_menu,
+              size: 64,
+              color: theme.colorScheme.onSurfaceVariant.withAlpha(128),
+            ),
+            const SizedBox(height: 16),
+            Text(
+              'No recipes yet',
+              style: theme.textTheme.titleMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Sync from Settings or add your own',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant.withAlpha(180),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    // Wait for tab controller to be ready
+    if (_tabController == null) {
+      return const Center(child: CircularProgressIndicator());
     }
 
     return Column(

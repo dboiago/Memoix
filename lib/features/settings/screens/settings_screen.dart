@@ -344,7 +344,7 @@ class SettingsScreen extends ConsumerWidget {
               style: TextStyle(color: theme.colorScheme.error),
             ),
             subtitle: const Text('Delete all recipes and reset app'),
-            onTap: () => _confirmClearData(context),
+            onTap: () => _confirmClearData(context, ref),
           ),
 
           const SizedBox(height: 32),
@@ -391,7 +391,7 @@ class SettingsScreen extends ConsumerWidget {
     );
   }
 
-  void _confirmClearData(BuildContext context) {
+  void _confirmClearData(BuildContext context, WidgetRef ref) {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -410,6 +410,10 @@ class SettingsScreen extends ConsumerWidget {
             onPressed: () async {
               Navigator.pop(ctx);
               await MemoixDatabase.clearAll();
+              // Invalidate all data providers to refresh UI
+              ref.invalidate(categoriesProvider);
+              ref.invalidate(allRecipesProvider);
+              ref.invalidate(availableCuisinesProvider);
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text('All data cleared')),
