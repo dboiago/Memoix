@@ -232,22 +232,30 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return SafeArea(
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // Conversion Type Selector
-            Text(
-              'Conversion Type',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.w500,
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: const Text('Measurement Converter'),
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Conversion Type Selector
+              Text(
+                'Conversion Type',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w500,
+                ),
               ),
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
+              const SizedBox(height: 12),
+              Row(
+                children: [
                 Expanded(
                   child: _ConversionTypeButton(
                     label: 'Volume',
@@ -416,6 +424,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
             ),
           ],
         ),
+      ),
       ),
     );
   }

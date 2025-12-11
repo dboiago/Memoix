@@ -621,6 +621,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                 cuisine: r.cuisine,
                                 recipeCategory: r.course,
                               );
+                              ref.invalidate(weeklyPlanProvider);
                               if (context.mounted) {
                                 Navigator.pop(context);
                                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added ${r.name}')));
@@ -673,6 +674,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                     cuisine: recipe.cuisine,
                                     recipeCategory: recipe.course,
                                   );
+                                  ref.invalidate(weeklyPlanProvider);
                                   if (context.mounted) {
                                     Navigator.pop(context);
                                     ScaffoldMessenger.of(context).showSnackBar(

@@ -272,6 +272,23 @@ class ShoppingListService {
     await _db.writeTxn(() => _db.shoppingLists.delete(id));
   }
 
+  /// Rename a shopping list
+  Future<void> rename(ShoppingList list, String newName) async {
+    list.name = newName;
+    await _db.writeTxn(() => _db.shoppingLists.put(list));
+  }
+
+  /// Create an empty list with a name
+  Future<ShoppingList> createEmpty({String? name}) async {
+    final list = ShoppingList()
+      ..uuid = DateTime.now().millisecondsSinceEpoch.toString()
+      ..name = name ?? 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
+      ..items = []
+      ..createdAt = DateTime.now();
+    await _db.writeTxn(() => _db.shoppingLists.put(list));
+    return list;
+  }
+
   /// Watch all shopping lists
   Stream<List<ShoppingList>> watchAll() {
     return _db.shoppingLists.where().sortByCreatedAtDesc().watch(fireImmediately: true);

@@ -170,25 +170,29 @@ class RecipeDetailView extends ConsumerWidget {
                         Chip(
                           label: Text(recipe.cuisine!),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
                         ),
                       Chip(
                         label: Text(recipe.course),
                         backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                         visualDensity: VisualDensity.compact,
                       ),
                       if (recipe.serves != null)
                         Chip(
-                          avatar: const Icon(Icons.people, size: 16),
+                          avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
                           label: Text(recipe.serves!),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
                         ),
                       if (recipe.time != null)
                         Chip(
-                          avatar: const Icon(Icons.timer, size: 16),
+                          avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
                           label: Text(recipe.time!),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
                         ),
                     ],
@@ -210,6 +214,7 @@ class RecipeDetailView extends ConsumerWidget {
                           .map((p) => ActionChip(
                                 label: Text(p),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                                 onPressed: () => _navigateToPairedRecipe(context, ref, p),
                               ))
                           .toList(),

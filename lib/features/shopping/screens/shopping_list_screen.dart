@@ -265,6 +265,21 @@ class ShoppingListDetailScreen extends ConsumerWidget {
 
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action, ShoppingList list) {
     switch (action) {
+      case 'rename':
+        _showRenameDialog(context, ref, list);
+        break;
+      case 'clear':
+        // Clear checked items
+        final checkedIndices = <int>[];
+        for (int i = list.items.length - 1; i >= 0; i--) {
+          if (list.items[i].isChecked) {
+            checkedIndices.add(i);
+          }
+        }
+        for (final i in checkedIndices) {
+          ref.read(shoppingListServiceProvider).removeItem(list, i);
+        }
+        break;
       case 'delete':
         showDialog(
           context: context,
@@ -300,6 +315,41 @@ class ShoppingListDetailScreen extends ConsumerWidget {
           ref.read(shoppingListServiceProvider).addItem(list, item);
           Navigator.pop(ctx);
         },
+      ),
+    );
+  }
+
+  void _showRenameDialog(BuildContext context, WidgetRef ref, ShoppingList list) {
+    final controller = TextEditingController(text: list.name);
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Rename List'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          decoration: const InputDecoration(
+            labelText: 'List Name',
+            hintText: 'Enter a name for this list',
+          ),
+          textCapitalization: TextCapitalization.words,
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () {
+              final newName = controller.text.trim();
+              if (newName.isNotEmpty) {
+                ref.read(shoppingListServiceProvider).rename(list, newName);
+              }
+              Navigator.pop(ctx);
+            },
+            child: const Text('Rename'),
+          ),
+        ],
       ),
     );
   }
@@ -448,11 +498,31 @@ class _AddItemDialogState extends State<_AddItemDialog> {
   }
 }
 
-class CreateShoppingListSheet extends ConsumerWidget {
+class CreateShoppingListSheet extends ConsumerStatefulWidget {
   const CreateShoppingListSheet({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<CreateShoppingListSheet> createState() => _CreateShoppingListSheetState();
+}
+
+class _CreateShoppingListSheetState extends ConsumerState<CreateShoppingListSheet> {
+  final _nameController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _nameController.text = 'Shopping List ${DateTime.now().month}/${DateTime.now().day}';
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -461,7 +531,16 @@ class CreateShoppingListSheet extends ConsumerWidget {
         children: [
           Text(
             'Create Shopping List',
-            style: Theme.of(context).textTheme.titleLarge,
+            style: theme.textTheme.titleLarge,
+          ),
+          const SizedBox(height: 16),
+          TextField(
+            controller: _nameController,
+            decoration: const InputDecoration(
+              labelText: 'List Name',
+              hintText: 'Enter a name for this list',
+            ),
+            textCapitalization: TextCapitalization.words,
           ),
           const SizedBox(height: 16),
           ListTile(
@@ -469,6 +548,7 @@ class CreateShoppingListSheet extends ConsumerWidget {
             title: const Text('From Meal Plan'),
             subtitle: const Text('Generate from this week\'s meals'),
             onTap: () async {
+              final name = _nameController.text.trim();
               Navigator.pop(context);
               final weekStart = ref.read(selectedWeekProvider);
               final mealService = ref.read(mealPlanServiceProvider);
@@ -481,10 +561,14 @@ class CreateShoppingListSheet extends ConsumerWidget {
                 if (r != null) recipes.add(r);
               }
               if (recipes.isNotEmpty) {
-                final list = await ref.read(shoppingListServiceProvider).generateFromRecipes(recipes);
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
+                final list = await ref.read(shoppingListServiceProvider).generateFromRecipes(recipes, name: name.isNotEmpty ? name : null);
+                if (context.mounted) {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
+                }
               } else {
-                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found to generate list')));
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found to generate list')));
+                }
               }
             },
           ),
@@ -493,9 +577,15 @@ class CreateShoppingListSheet extends ConsumerWidget {
             title: const Text('From Recipes'),
             subtitle: const Text('Select recipes to shop for'),
             onTap: () {
+              final name = _nameController.text.trim();
               Navigator.pop(context);
-              // TODO: Implement recipe selector flow
-              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Recipe selector coming soon')));
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => _RecipeSelectorScreen(
+                    listName: name.isNotEmpty ? name : null,
+                  ),
+                ),
+              );
             },
           ),
           ListTile(
@@ -503,20 +593,214 @@ class CreateShoppingListSheet extends ConsumerWidget {
             title: const Text('Empty List'),
             subtitle: const Text('Start with a blank list'),
             onTap: () async {
+              final name = _nameController.text.trim();
               Navigator.pop(context);
-              final list = ShoppingList()
-                ..uuid = DateTime.now().millisecondsSinceEpoch.toString()
-                ..name = 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
-                ..items = []
-                ..createdAt = DateTime.now();
-              await ref.read(shoppingListServiceProvider).generateFromRecipes([]); // no-op to ensure create
-              // Save empty list directly
-              await ref.read(shoppingListServiceProvider).addItem(list, ShoppingItem.create(name: ''));
+              final list = await ref.read(shoppingListServiceProvider).createEmpty(name: name.isNotEmpty ? name : null);
+              if (context.mounted) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
+              }
             },
           ),
           const SizedBox(height: 16),
         ],
       ),
     );
+  }
+}
+
+/// Screen for selecting multiple recipes to generate a shopping list
+class _RecipeSelectorScreen extends ConsumerStatefulWidget {
+  final String? listName;
+
+  const _RecipeSelectorScreen({this.listName});
+
+  @override
+  ConsumerState<_RecipeSelectorScreen> createState() => _RecipeSelectorScreenState();
+}
+
+class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
+  final _searchController = TextEditingController();
+  String _searchQuery = '';
+  final Set<String> _selectedRecipeIds = {};
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final recipesAsync = ref.watch(allRecipesProvider);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Select Recipes'),
+        actions: [
+          if (_selectedRecipeIds.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: Center(
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.secondaryContainer,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Text(
+                    '${_selectedRecipeIds.length} selected',
+                    style: TextStyle(
+                      color: theme.colorScheme.onSecondaryContainer,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
+      body: Column(
+        children: [
+          // Search bar
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                prefixIcon: const Icon(Icons.search),
+                hintText: 'Search recipes...',
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+              ),
+              onChanged: (value) => setState(() => _searchQuery = value.toLowerCase()),
+            ),
+          ),
+          // Recipe list
+          Expanded(
+            child: recipesAsync.when(
+              loading: () => const Center(child: CircularProgressIndicator()),
+              error: (err, _) => Center(child: Text('Error: $err')),
+              data: (recipes) {
+                // Filter by search
+                final filtered = _searchQuery.isEmpty
+                    ? recipes
+                    : recipes.where((r) =>
+                        r.name.toLowerCase().contains(_searchQuery) ||
+                        (r.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
+                        r.course.toLowerCase().contains(_searchQuery)
+                      ).toList();
+
+                if (filtered.isEmpty) {
+                  return Center(
+                    child: Text(
+                      _searchQuery.isEmpty ? 'No recipes found' : 'No matching recipes',
+                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                    ),
+                  );
+                }
+
+                return ListView.builder(
+                  itemCount: filtered.length,
+                  itemBuilder: (context, index) {
+                    final recipe = filtered[index];
+                    final isSelected = _selectedRecipeIds.contains(recipe.uuid);
+
+                    return ListTile(
+                      leading: Checkbox(
+                        value: isSelected,
+                        onChanged: (_) => _toggleRecipe(recipe.uuid),
+                      ),
+                      title: Text(
+                        recipe.name,
+                        style: TextStyle(
+                          fontWeight: isSelected ? FontWeight.w500 : FontWeight.normal,
+                        ),
+                      ),
+                      subtitle: Text(
+                        [
+                          if (recipe.cuisine != null) recipe.cuisine,
+                          recipe.course,
+                        ].join(' • '),
+                        style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      ),
+                      trailing: Text(
+                        '${recipe.ingredients.length} items',
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: theme.colorScheme.outline,
+                        ),
+                      ),
+                      onTap: () => _toggleRecipe(recipe.uuid),
+                    );
+                  },
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: _selectedRecipeIds.isNotEmpty
+          ? SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: FilledButton.icon(
+                  onPressed: () => _generateList(context),
+                  icon: const Icon(Icons.shopping_cart),
+                  label: Text('Generate List (${_selectedRecipeIds.length} recipes)'),
+                ),
+              ),
+            )
+          : null,
+    );
+  }
+
+  void _toggleRecipe(String uuid) {
+    setState(() {
+      if (_selectedRecipeIds.contains(uuid)) {
+        _selectedRecipeIds.remove(uuid);
+      } else {
+        _selectedRecipeIds.add(uuid);
+      }
+    });
+  }
+
+  Future<void> _generateList(BuildContext context) async {
+    if (_selectedRecipeIds.isEmpty) return;
+
+    final repo = ref.read(recipeRepositoryProvider);
+    final recipes = <Recipe>[];
+    
+    for (final id in _selectedRecipeIds) {
+      final r = await repo.getRecipeByUuid(id);
+      if (r != null) recipes.add(r);
+    }
+
+    if (recipes.isEmpty) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No recipes found')),
+        );
+      }
+      return;
+    }
+
+    final list = await ref.read(shoppingListServiceProvider).generateFromRecipes(
+      recipes,
+      name: widget.listName,
+    );
+
+    if (context.mounted) {
+      // Pop the selector and navigate to the new list
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)),
+      );
+    }
   }
 }
