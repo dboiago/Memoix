@@ -62,7 +62,7 @@ class _CourseCardState extends State<CourseCard> {
                   decoration: BoxDecoration(
                     color: (_hovered || _pressed)
                         ? const Color(0xFFE8D5C4)
-                        : theme.colorScheme.surfaceContainerHighest,
+                        : (isDark ? const Color(0xFF2A2A2A) : theme.colorScheme.surfaceContainerHighest),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
