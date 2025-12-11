@@ -31,8 +31,8 @@ class MemoixTheme {
         onSecondary: lightPrimaryText,
         surface: lightSurface,
         onSurface: lightPrimaryText,
-        background: lightBackground,
-        onBackground: lightPrimaryText,
+        surfaceContainerHighest: const Color(0xFFE5DCD3), // accent bg
+        onSurfaceVariant: lightMuted, // #9ca3af grey for subtle text
         error: const Color(0xFFDC2626),
         onError: Colors.white,
         outline: lightMuted,
@@ -94,8 +94,8 @@ class MemoixTheme {
         onSecondary: darkPrimaryText,
         surface: darkSurface,
         onSurface: darkPrimaryText,
-        background: darkBackground,
-        onBackground: darkPrimaryText,
+        surfaceContainerHighest: const Color(0xFF2D2D2D), // muted/accent bg
+        onSurfaceVariant: darkMuted, // #9b9b9b grey for subtle text
         error: const Color(0xFFEF4444),
         onError: darkBackground,
         outline: darkMuted,

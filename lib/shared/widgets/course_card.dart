@@ -34,12 +34,12 @@ class _CourseCardState extends State<CourseCard> {
         borderRadius: BorderRadius.circular(12),
         side: BorderSide(
           color: (_hovered || _pressed)
-              ? const Color(0xFFE8D5C4)
+              ? theme.colorScheme.secondary // hover:border-secondary
               : theme.colorScheme.outline.withValues(alpha: 0.1),
-          width: (_hovered || _pressed) ? 1.5 : 1.0,
+          width: 1.0,
         ),
       ),
-      color: isDark ? theme.colorScheme.surfaceContainerHigh : theme.colorScheme.surfaceContainerHighest,
+      color: theme.cardTheme.color ?? theme.colorScheme.surface,
       child: Material(
         color: Colors.transparent,
         child: InkWell(
@@ -51,29 +51,29 @@ class _CourseCardState extends State<CourseCard> {
           highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+            padding: const EdgeInsets.all(24), // p-6
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Icon circle (muted design, stacked on top)
+                // Icon circle: w-12 h-12 rounded-lg (Figma)
                 Container(
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
                     color: (_hovered || _pressed)
-                        ? const Color(0xFFE8D5C4)
-                        : (isDark ? const Color(0xFF2A2A2A) : theme.colorScheme.surfaceContainerHighest),
-                    shape: BoxShape.circle,
+                        ? theme.colorScheme.secondary // group-hover:bg-secondary
+                        : theme.colorScheme.surfaceContainerHighest, // bg-accent
+                    borderRadius: BorderRadius.circular(8), // rounded-lg
                   ),
                   child: Icon(
                     _getIconData(widget.category.iconName),
                     color: (_hovered || _pressed)
-                        ? (theme.brightness == Brightness.dark ? Colors.black87 : theme.colorScheme.onSecondary)
+                        ? theme.colorScheme.onSecondary // group-hover:text-secondary-foreground
                         : theme.colorScheme.onSurfaceVariant,
-                    size: 24,
+                    size: 24, // w-6 h-6
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 12), // gap-3
                 // Texts
                 Text(
                   widget.category.name,

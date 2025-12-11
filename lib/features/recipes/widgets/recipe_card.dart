@@ -41,7 +41,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
           width: (_hovered || _pressed) ? 1.5 : 1.0,
         ),
       ),
-      color: isDark ? theme.colorScheme.surfaceContainerHigh : theme.colorScheme.surfaceContainerHighest,
+      color: theme.cardTheme.color ?? theme.colorScheme.surface,
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: widget.onTap,

@@ -39,12 +39,12 @@ class _CourseGridView extends ConsumerWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Responsive grid: 3 cols on mobile, 4 on tablet, 5 on desktop
-        int crossAxisCount = 3;
-        if (constraints.maxWidth >= 900) {
-          crossAxisCount = 5;
-        } else if (constraints.maxWidth >= 600) {
+        // Responsive grid: 2 cols on mobile, 3 on tablet, 4 on desktop (Figma)
+        int crossAxisCount = 2;
+        if (constraints.maxWidth >= 1024) {
           crossAxisCount = 4;
+        } else if (constraints.maxWidth >= 640) {
+          crossAxisCount = 3;
         }
 
         return CustomScrollView(
@@ -84,13 +84,13 @@ class _CourseGridView extends ConsumerWidget {
             
             // Course cards grid
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 24), // px-4 py-6
               sliver: SliverGrid(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: crossAxisCount,
-                  crossAxisSpacing: 8,
-                  mainAxisSpacing: 8,
-                  childAspectRatio: 0.9, // slightly taller than wide
+                  crossAxisSpacing: 12, // gap-3
+                  mainAxisSpacing: 12,
+                  childAspectRatio: 0.85, // taller cards for stacked layout
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
