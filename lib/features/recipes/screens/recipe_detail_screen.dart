@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
@@ -11,6 +12,8 @@ import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
+import '../../settings/screens/settings_screen.dart';
+import 'recipe_cooking_view.dart';
 
 class RecipeDetailScreen extends ConsumerWidget {
   final String recipeId;
@@ -62,6 +65,18 @@ class RecipeDetailView extends ConsumerWidget {
         : theme.colorScheme.primaryContainer;
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => RecipeCookingView(recipe: recipe),
+            ),
+          );
+        },
+        icon: const Icon(Icons.restaurant),
+        label: const Text('Start Cooking'),
+      ),
       body: CustomScrollView(
         slivers: [
           // Hero header with recipe image or colored header

@@ -62,6 +62,30 @@ class CompactViewNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Provider for keeping screen on while viewing recipes
+final keepScreenOnProvider = StateNotifierProvider<KeepScreenOnNotifier, bool>((ref) {
+  return KeepScreenOnNotifier();
+});
+
+class KeepScreenOnNotifier extends StateNotifier<bool> {
+  static const _key = 'keep_screen_on';
+
+  KeepScreenOnNotifier() : super(true) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? true; // Default to ON
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
+
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
@@ -119,6 +143,13 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: const Text('Show more recipes per screen'),
             value: compactView,
             onChanged: (_) => ref.read(compactViewProvider.notifier).toggle(),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.lightbulb),
+            title: const Text('Keep Screen On'),
+            subtitle: const Text('Prevent screen from turning off while cooking'),
+            value: ref.watch(keepScreenOnProvider),
+            onChanged: (_) => ref.read(keepScreenOnProvider.notifier).toggle(),
           ),
 
           const Divider(),
