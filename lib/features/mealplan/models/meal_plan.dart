@@ -13,6 +13,8 @@ class PlannedMeal {
   String? course; // breakfast, lunch, dinner, snack
   String? notes;
   int? servings;
+  String? cuisine; // e.g., "Korean", "Italian"
+  String? recipeCategory; // e.g., "mains", "soup"
 
   PlannedMeal();
 
@@ -22,6 +24,8 @@ class PlannedMeal {
     this.course,
     this.notes,
     this.servings,
+    this.cuisine,
+    this.recipeCategory,
   });
 }
 
@@ -146,6 +150,8 @@ class MealPlanService {
     required String course,
     int? servings,
     String? notes,
+    String? cuisine,
+    String? recipeCategory,
   }) async {
     final plan = await getOrCreate(date);
 
@@ -155,6 +161,8 @@ class MealPlanService {
       course: course,
       servings: servings,
       notes: notes,
+      cuisine: cuisine,
+      recipeCategory: recipeCategory,
     );
 
     plan.meals = [...plan.meals, meal];

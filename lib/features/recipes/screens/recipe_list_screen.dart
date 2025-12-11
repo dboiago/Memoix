@@ -28,7 +28,7 @@ class RecipeListScreen extends ConsumerStatefulWidget {
 }
 
 class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
-  String _selectedContinent = 'All';
+  String _selectedCuisine = 'All';
   String _searchQuery = '';
 
   @override
@@ -46,8 +46,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           // Apply source filter first
           final recipes = _filterBySource(allRecipes);
           
-          // Get continents that actually exist in this recipe set
-          final availableContinents = _getAvailableContinents(recipes);
+          // Get cuisines that actually exist in this recipe set
+          final availableCuisines = _getAvailableCuisines(recipes);
           
           return Column(
             children: [
@@ -57,7 +57,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: 'Search recipes...',
-                    prefixIcon: const Icon(Icons.search),
+                    hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                    prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
                     filled: true,
                     fillColor: theme.colorScheme.surfaceContainerHighest,
                     border: OutlineInputBorder(
@@ -65,27 +66,25 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                       borderSide: BorderSide.none,
                     ),
                   ),
+                  style: TextStyle(color: theme.colorScheme.onSurface),
                   onChanged: (value) {
                     setState(() => _searchQuery = value.toLowerCase());
                   },
                 ),
               ),
 
-              // Continent filter chips (show if any continents exist)
-              if (availableContinents.isNotEmpty)
+              // Cuisine filter chips (show if any cuisines exist)
+              if (availableCuisines.isNotEmpty)
                 Container(
                   height: 48,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _buildContinentChip('All', recipes.length),
-                      ...availableContinents.map((continent) {
-                        final count = recipes.where((r) {
-                          final c = ContinentMapping.getContinentFromCuisine(r.cuisine);
-                          return c == continent;
-                        }).length;
-                        return _buildContinentChip(continent, count);
+                      _buildCuisineChip('All', recipes.length),
+                      ...availableCuisines.map((cuisine) {
+                        final count = recipes.where((r) => r.cuisine?.toLowerCase() == cuisine.toLowerCase()).length;
+                        return _buildCuisineChip(cuisine, count);
                       }),
                     ],
                   ),
@@ -109,17 +108,17 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     );
   }
 
-  Widget _buildContinentChip(String continent, int count) {
-    final isSelected = _selectedContinent == continent;
+  Widget _buildCuisineChip(String cuisine, int count) {
+    final isSelected = _selectedCuisine == cuisine;
     final theme = Theme.of(context);
     
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
-        label: Text(continent),
+        label: Text(cuisine),
         selected: isSelected,
         onSelected: (selected) {
-          setState(() => _selectedContinent = continent);
+          setState(() => _selectedCuisine = cuisine);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         selectedColor: theme.colorScheme.primaryContainer,
@@ -133,15 +132,15 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     );
   }
 
-  List<String> _getAvailableContinents(List<Recipe> recipes) {
-    final continents = recipes
-        .map((r) => ContinentMapping.getContinentFromCuisine(r.cuisine))
-        .where((c) => c != null)
+  List<String> _getAvailableCuisines(List<Recipe> recipes) {
+    final cuisines = recipes
+        .map((r) => r.cuisine)
+        .where((c) => c != null && c.isNotEmpty)
         .cast<String>()
         .toSet()
         .toList();
-    continents.sort();
-    return continents;
+    cuisines.sort();
+    return cuisines;
   }
 
   Widget _buildRecipeList(List<Recipe> allRecipes) {
@@ -218,11 +217,10 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       }).toList();
     }
 
-    // Filter by continent
-    if (_selectedContinent != 'All') {
+    // Filter by cuisine
+    if (_selectedCuisine != 'All') {
       filtered = filtered.where((r) {
-        final continent = ContinentMapping.getContinentFromCuisine(r.cuisine);
-        return continent == _selectedContinent;
+        return r.cuisine?.toLowerCase() == _selectedCuisine.toLowerCase();
       }).toList();
     }
 

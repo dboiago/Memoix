@@ -482,13 +482,13 @@ class CsvRecipeImporter {
       'sandwhich': 'Sandwiches',
       'sandwhiches': 'Sandwiches',
       'cheese': 'Cheese',
-      'pickles': 'Pickles/Brines',
-      'pickles/brines': 'Pickles/Brines',
-      'brines': 'Pickles/Brines',
+      'pickles': 'Pickles',
+      'pickles/brines': 'Pickles',
+      'brines': 'Pickles',
       'smoking': 'Smoking',
       'smoked': 'Smoking',
-      'molecular': 'Molecular',
-      'scratch': 'Scratch',
+      'molecular': 'Modernist',
+      'modernist': 'Modernist',
     };
     
     return mapping[course.toLowerCase()] ?? course;

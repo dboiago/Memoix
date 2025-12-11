@@ -202,14 +202,14 @@ class WeekView extends ConsumerWidget {
   }
 }
 
-class DayCard extends StatelessWidget {
+class DayCard extends ConsumerWidget {
   final DateTime date;
   final MealPlan? plan;
 
   const DayCard({super.key, required this.date, this.plan});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final isToday = _isToday(date);
     final dayFormat = DateFormat('EEEE');
@@ -280,18 +280,18 @@ class DayCard extends StatelessWidget {
                     direction: DismissDirection.endToStart,
                     onDismissed: (_) {
                       // Remove the meal from the plan
+                      ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
                     },
                     child: ListTile(
                       dense: true,
                       title: Text(meal.recipeName ?? 'Unknown'),
-                      subtitle: meal.servings != null
-                          ? Text('${meal.servings} servings')
-                          : null,
+                      subtitle: _buildMealSubtitle(meal, theme),
                       trailing: PopupMenuButton<String>(
                         icon: const Icon(Icons.more_vert, size: 20),
                         onSelected: (action) {
                           if (action == 'remove') {
                             // Remove the meal
+                            ref.read(mealPlanServiceProvider).removeMeal(date, meals.indexOf(meal));
                           } else if (action == 'view') {
                             // Navigate to recipe detail
                             if (meal.recipeId != null) {
@@ -342,6 +342,30 @@ class DayCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Widget? _buildMealSubtitle(PlannedMeal meal, ThemeData theme) {
+    final parts = <String>[];
+    if (meal.cuisine != null && meal.cuisine!.isNotEmpty) {
+      parts.add(meal.cuisine!);
+    }
+    if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) {
+      // Capitalize first letter of category slug
+      final categoryDisplay = meal.recipeCategory![0].toUpperCase() + meal.recipeCategory!.substring(1);
+      parts.add(categoryDisplay);
+    }
+    
+    if (parts.isEmpty) {
+      return meal.servings != null
+          ? Text('${meal.servings} servings', style: theme.textTheme.labelSmall)
+          : null;
+    }
+    
+    final subtitle = parts.join(' • ');
+    if (meal.servings != null) {
+      return Text('$subtitle • ${meal.servings} servings', style: theme.textTheme.labelSmall);
+    }
+    return Text(subtitle, style: theme.textTheme.labelSmall);
   }
 
   bool _isToday(DateTime date) {
@@ -500,6 +524,8 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                 recipeId: r.uuid,
                                 recipeName: r.name,
                                 course: _selectedCourse,
+                                cuisine: r.cuisine,
+                                recipeCategory: r.course,
                               );
                               if (context.mounted) {
                                 Navigator.pop(context);
@@ -550,6 +576,8 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                     recipeId: recipe.uuid,
                                     recipeName: recipe.name,
                                     course: _selectedCourse,
+                                    cuisine: recipe.cuisine,
+                                    recipeCategory: recipe.course,
                                   );
                                   if (context.mounted) {
                                     Navigator.pop(context);

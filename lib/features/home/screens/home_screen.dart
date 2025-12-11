@@ -21,9 +21,10 @@ class HomeScreen extends ConsumerWidget {
       drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text(
-          'Recipe Book',
+          'Memoix',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        elevation: 1,
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
@@ -79,13 +80,28 @@ class _CourseGridView extends ConsumerWidget {
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: SearchBar(
-                  hintText: 'Search recipes...',
-                  leading: const Icon(Icons.search),
-                  onTap: () {
-                    showSearch(
-                      context: context,
-                      delegate: RecipeSearchDelegate(ref),
+                child: Builder(
+                  builder: (context) {
+                    final theme = Theme.of(context);
+                    return TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Search recipes...',
+                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
+                        filled: true,
+                        fillColor: theme.colorScheme.surfaceContainerHighest,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                      readOnly: true,
+                      onTap: () {
+                        showSearch(
+                          context: context,
+                          delegate: RecipeSearchDelegate(ref),
+                        );
+                      },
                     );
                   },
                 ),

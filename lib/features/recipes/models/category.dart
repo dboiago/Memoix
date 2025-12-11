@@ -140,7 +140,7 @@ class Category {
         ),
         Category.create(
           slug: 'pickles',
-          name: 'Pickles/Brines',
+          name: 'Pickles',
           iconName: 'local_florist',
           sortOrder: 13,
           colorValue: MemoixColors.pickles.value,
@@ -154,7 +154,7 @@ class Category {
         ),
         Category.create(
           slug: 'molecular',
-          name: 'Molecular',
+          name: 'Modernist',
           iconName: 'science',
           sortOrder: 15,
           colorValue: MemoixColors.molecular.value,
