@@ -77,7 +77,7 @@ class Category {
         ),
         Category.create(
           slug: 'vegan',
-          name: 'Veg*n',
+          name: 'Veg\'n',
           iconName: 'eco',
           sortOrder: 4,
           colorValue: MemoixColors.vegan.value,

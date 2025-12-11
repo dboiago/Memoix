@@ -59,7 +59,7 @@ class RecipeRepository {
   Future<List<Recipe>> searchRecipes(String query) async {
     if (query.isEmpty) return getAllRecipes();
     
-    return _db.recipes
+    final allRecipes = await _db.recipes
         .filter()
         .nameContains(query, caseSensitive: false)
         .or()
@@ -67,6 +67,34 @@ class RecipeRepository {
         .or()
         .tagsElementContains(query, caseSensitive: false)
         .findAll();
+
+    // Sort by relevance: exact matches > starts with > contains
+    final lowerQuery = query.toLowerCase();
+    allRecipes.sort((a, b) {
+      final aNameLower = a.name.toLowerCase();
+      final bNameLower = b.name.toLowerCase();
+      
+      // Exact match on name
+      if (aNameLower == lowerQuery && bNameLower != lowerQuery) return -1;
+      if (bNameLower == lowerQuery && aNameLower != lowerQuery) return 1;
+      
+      // Exact match on cuisine
+      final aCuisineLower = (a.cuisine ?? '').toLowerCase();
+      final bCuisineLower = (b.cuisine ?? '').toLowerCase();
+      if (aCuisineLower == lowerQuery && bCuisineLower != lowerQuery) return -1;
+      if (bCuisineLower == lowerQuery && aCuisineLower != lowerQuery) return 1;
+      
+      // Starts with (prefix match)
+      if (aNameLower.startsWith(lowerQuery) && !bNameLower.startsWith(lowerQuery)) return -1;
+      if (bNameLower.startsWith(lowerQuery) && !aNameLower.startsWith(lowerQuery)) return 1;
+      if (aCuisineLower.startsWith(lowerQuery) && !bCuisineLower.startsWith(lowerQuery)) return -1;
+      if (bCuisineLower.startsWith(lowerQuery) && !aCuisineLower.startsWith(lowerQuery)) return 1;
+      
+      // Default: keep original order
+      return 0;
+    });
+    
+    return allRecipes;
   }
 
   /// Get a single recipe by ID

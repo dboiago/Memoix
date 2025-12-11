@@ -108,10 +108,7 @@ class AppDrawer extends StatelessWidget {
                     title: 'Scratch Pad',
                     onTap: () {
                       Navigator.pop(context);
-                      // TODO: Navigate to scratch pad
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Scratch Pad coming soon')),
-                      );
+                      AppRoutes.toScratchPad(context);
                     },
                   ),
                   _DrawerTile(
@@ -127,10 +124,7 @@ class AppDrawer extends StatelessWidget {
                     title: 'Statistics',
                     onTap: () {
                       Navigator.pop(context);
-                      // TODO: Navigate to statistics
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Statistics coming soon')),
-                      );
+                      AppRoutes.toStatistics(context);
                     },
                   ),
                   

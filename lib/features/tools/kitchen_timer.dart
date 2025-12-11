@@ -204,7 +204,7 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
               Navigator.pop(context);
             }
           },
-          child: const Text('Start'),
+          child: const Text('Add'),
         ),
       ],
     );

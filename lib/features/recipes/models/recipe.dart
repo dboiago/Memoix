@@ -135,6 +135,16 @@ class Recipe {
     }
     // Normalize course name to lowercase for consistency
     course = course.toLowerCase();
+    
+    // Normalize course names to match category slugs
+    const courseMapping = {
+      'soups': 'soup',
+      'salads': 'salad',
+      'not meat': 'vegan',
+      'not-meat': 'vegan',
+      'vegetarian': 'vegan',
+    };
+    course = courseMapping[course] ?? course;
 
     final recipe = Recipe()
       ..uuid = json['uuid'] as String

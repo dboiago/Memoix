@@ -216,8 +216,8 @@ class DayCard extends StatelessWidget {
     final dateFormat = DateFormat('MMM d');
 
     return Card(
-      elevation: isToday ? 4 : 1,
-      color: isToday ? theme.colorScheme.primaryContainer : null,
+      elevation: isToday ? 2 : 0,
+      color: isToday ? theme.colorScheme.surfaceContainerHighest : null,
       child: ExpansionTile(
         initiallyExpanded: isToday,
         leading: Column(
@@ -260,28 +260,22 @@ class DayCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
-                    child: Row(
-                      children: [
-                        Text(MealCourse.emoji(course)),
-                        const SizedBox(width: 8),
-                        Text(
-                          MealCourse.displayName(course),
-                          style: theme.textTheme.labelMedium?.copyWith(
-                            color: theme.colorScheme.primary,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                    child: Text(
+                      MealCourse.displayName(course),
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                   ...meals.map((meal) => Dismissible(
                     key: Key('${date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}'),
                     background: Container(
-                      color: Colors.red,
+                      color: theme.colorScheme.secondary.withValues(alpha: 0.2),
                       alignment: Alignment.centerRight,
                       padding: const EdgeInsets.only(right: 16),
-                      child: const Icon(Icons.delete, color: Colors.white),
+                      child: Icon(Icons.delete, color: theme.colorScheme.secondary),
                     ),
                     direction: DismissDirection.endToStart,
                     onDismissed: (_) {
@@ -319,13 +313,13 @@ class DayCard extends StatelessWidget {
                               ],
                             ),
                           ),
-                          const PopupMenuItem(
+                          PopupMenuItem(
                             value: 'remove',
                             child: Row(
                               children: [
-                                Icon(Icons.delete, color: Colors.red),
-                                SizedBox(width: 8),
-                                Text('Remove', style: TextStyle(color: Colors.red)),
+                                Icon(Icons.delete, color: theme.colorScheme.secondary),
+                                const SizedBox(width: 8),
+                                Text('Remove', style: TextStyle(color: theme.colorScheme.secondary)),
                               ],
                             ),
                           ),

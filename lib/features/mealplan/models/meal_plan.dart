@@ -114,18 +114,8 @@ class MealCourse {
   }
 
   static String emoji(String course) {
-    switch (course) {
-      case breakfast:
-        return '🌅';
-      case lunch:
-        return '☀️';
-      case dinner:
-        return '🌙';
-      case snack:
-        return '🍿';
-      default:
-        return '🍽️';
-    }
+    // Removed emojis for cleaner design
+    return '';
   }
 }
 

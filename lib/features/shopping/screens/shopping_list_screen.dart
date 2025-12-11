@@ -183,12 +183,12 @@ class ShoppingListDetailScreen extends ConsumerWidget {
               ),
               PopupMenuButton<String>(
                 onSelected: (value) => _handleMenuAction(context, ref, value, list),
-                itemBuilder: (_) => [
+                itemBuilder: (context) => [
                   const PopupMenuItem(value: 'rename', child: Text('Rename')),
                   const PopupMenuItem(value: 'clear', child: Text('Clear Checked')),
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: 'delete',
-                    child: Text('Delete', style: TextStyle(color: Colors.red)),
+                    child: Text('Delete', style: TextStyle(color: Theme.of(context).colorScheme.secondary)),
                   ),
                 ],
               ),
@@ -282,7 +282,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                   Navigator.pop(ctx);
                   Navigator.pop(context);
                 },
-                style: TextButton.styleFrom(foregroundColor: Colors.red),
+                style: TextButton.styleFrom(foregroundColor: Theme.of(context).colorScheme.secondary),
                 child: const Text('Delete'),
               ),
             ],
@@ -325,10 +325,10 @@ class _ShoppingItemTile extends StatelessWidget {
       direction: DismissDirection.endToStart,
       onDismissed: (_) => onDelete(),
       background: Container(
-        color: Colors.red,
+        color: theme.colorScheme.secondary.withValues(alpha: 0.2),
         alignment: Alignment.centerRight,
         padding: const EdgeInsets.only(right: 16),
-        child: const Icon(Icons.delete, color: Colors.white),
+        child: Icon(Icons.delete, color: theme.colorScheme.secondary),
       ),
       child: ListTile(
         leading: Checkbox(

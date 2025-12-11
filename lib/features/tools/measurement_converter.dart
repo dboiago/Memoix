@@ -402,15 +402,18 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
             ),
             const SizedBox(height: 24),
             
-            // Convert button
+            // Clear button
             FilledButton(
-              onPressed: _convert,
+              onPressed: () {
+                _amountController.clear();
+                setState(() => _result = '');
+              },
               style: FilledButton.styleFrom(
                 padding: const EdgeInsets.all(16),
                 backgroundColor: theme.colorScheme.primary.withValues(alpha: 0.2),
                 foregroundColor: theme.colorScheme.primary,
               ),
-              child: const Text('Convert'),
+              child: const Text('Clear'),
             ),
           ],
         ),

@@ -68,9 +68,6 @@ class RecipeDetailView extends ConsumerWidget {
     }
     
     final theme = Theme.of(context);
-    final cuisineColor = recipe.cuisine != null
-        ? MemoixColors.forCuisine(recipe.cuisine!)
-        : theme.colorScheme.primaryContainer;
 
     return Scaffold(
       body: CustomScrollView(
@@ -91,26 +88,19 @@ class RecipeDetailView extends ConsumerWidget {
                   ? Image.network(
                       recipe.imageUrl!,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(color: cuisineColor),
+                      errorBuilder: (_, __, ___) => Container(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                      ),
                     )
                   : Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [
-                            cuisineColor,
-                            MemoixColors.forCourse(recipe.course),
-                          ],
-                        ),
-                      ),
+                      color: theme.colorScheme.surfaceContainerHighest,
                     ),
             ),
             actions: [
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: recipe.isFavorite ? Colors.red : null,
+                  color: recipe.isFavorite ? theme.colorScheme.primary : null,
                 ),
                 onPressed: () {
                   ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
@@ -133,7 +123,7 @@ class RecipeDetailView extends ConsumerWidget {
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text('Logged cook for ${recipe.name}! 🎉'),
+                        content: Text('Logged cook for ${recipe.name}!'),
                         action: SnackBarAction(
                           label: 'Stats',
                           onPressed: () => AppRoutes.toStatistics(context),
@@ -152,9 +142,12 @@ class RecipeDetailView extends ConsumerWidget {
                 itemBuilder: (_) => [
                   const PopupMenuItem(value: 'edit', child: Text('Edit')),
                   const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: 'delete',
-                    child: Text('Delete', style: TextStyle(color: Colors.red)),
+                    child: Text(
+                      'Delete',
+                      style: TextStyle(color: theme.colorScheme.secondary),
+                    ),
                   ),
                 ],
               ),
@@ -176,24 +169,26 @@ class RecipeDetailView extends ConsumerWidget {
                       if (recipe.cuisine != null)
                         Chip(
                           label: Text(recipe.cuisine!),
-                          backgroundColor: cuisineColor,
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           visualDensity: VisualDensity.compact,
                         ),
                       Chip(
                         label: Text(recipe.course),
-                        backgroundColor: MemoixColors.forCourse(recipe.course),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
                         visualDensity: VisualDensity.compact,
                       ),
                       if (recipe.serves != null)
                         Chip(
                           avatar: const Icon(Icons.people, size: 16),
                           label: Text(recipe.serves!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           visualDensity: VisualDensity.compact,
                         ),
                       if (recipe.time != null)
                         Chip(
                           avatar: const Icon(Icons.timer, size: 16),
                           label: Text(recipe.time!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           visualDensity: VisualDensity.compact,
                         ),
                     ],
@@ -214,6 +209,7 @@ class RecipeDetailView extends ConsumerWidget {
                       children: recipe.pairsWith
                           .map((p) => ActionChip(
                                 label: Text(p),
+                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
                                 onPressed: () => _navigateToPairedRecipe(context, ref, p),
                               ))
                           .toList(),
@@ -481,7 +477,7 @@ class RecipeDetailView extends ConsumerWidget {
                 Navigator.pop(context);
               }
             },
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            style: TextButton.styleFrom(foregroundColor: theme.colorScheme.secondary),
             child: const Text('Delete'),
           ),
         ],
