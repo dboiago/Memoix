@@ -3,6 +3,9 @@ import 'package:path_provider/path_provider.dart';
 
 import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/models/category.dart';
+import '../../features/shopping/models/shopping_list.dart';
+import '../../features/mealplan/models/meal_plan.dart';
+import '../../features/statistics/models/cooking_stats.dart';
 
 /// Singleton database manager for Memoix
 class MemoixDatabase {
