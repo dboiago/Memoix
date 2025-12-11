@@ -555,7 +555,7 @@ class UrlRecipeImporter {
       if (category.contains('pizza')) return 'Pizzas';
     }
     
-    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'Not Meat';
+    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'Veg*n';
     
     return 'Mains'; // Default
   }

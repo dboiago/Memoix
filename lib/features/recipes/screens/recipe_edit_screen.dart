@@ -82,7 +82,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _timeController.text = recipe.time ?? '';
       _notesController.text = recipe.notes ?? '';
       // Normalize course to slug form (lowercase) to match dropdown values
-      _selectedCourse = recipe.course?.toLowerCase() ?? _selectedCourse;
+      _selectedCourse = _normaliseCourseSlug(recipe.course?.toLowerCase() ?? _selectedCourse);
       _selectedCuisine = recipe.cuisine;
 
       // Convert ingredients to 3-column row controllers
@@ -107,6 +107,18 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
 
     setState(() => _isLoading = false);
+  }
+
+  /// Normalise course slug to match dropdown values
+  String _normaliseCourseSlug(String course) {
+    const mapping = {
+      'soups': 'soup',
+      'salads': 'salad',
+      'not-meat': 'vegan',
+      'not meat': 'vegan',
+      'vegetarian': 'vegan',
+    };
+    return mapping[course] ?? course;
   }
 
   void _addIngredientRow({String name = '', String amount = '', String notes = ''}) {
