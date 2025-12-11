@@ -150,32 +150,25 @@ class _RecipeBrowserState extends State<_RecipeBrowser>
         // Course tabs (scrollable with mouse drag support)
         Material(
           color: theme.colorScheme.surfaceContainerHighest,
-          child: Theme(
-            data: Theme.of(context).copyWith(
-              tabBarTheme: TabBarTheme(
-                overlayColor: WidgetStateProperty.all(Colors.transparent),
-              ),
+          child: ScrollConfiguration(
+            behavior: ScrollConfiguration.of(context).copyWith(
+              dragDevices: {
+                PointerDeviceKind.touch,
+                PointerDeviceKind.mouse,
+                PointerDeviceKind.trackpad,
+              },
             ),
-            child: ScrollConfiguration(
-              behavior: ScrollConfiguration.of(context).copyWith(
-                dragDevices: {
-                  PointerDeviceKind.touch,
-                  PointerDeviceKind.mouse,
-                  PointerDeviceKind.trackpad,
-                },
-              ),
-              child: TabBar(
-                controller: _tabController,
-                isScrollable: true,
-                tabAlignment: TabAlignment.start,
-                indicatorSize: TabBarIndicatorSize.tab,
-                dividerColor: Colors.transparent,
-                tabs: widget.categories.map((category) {
-                  return Tab(
-                    child: _CourseTab(category: category),
-                  );
-                }).toList(),
-              ),
+            child: TabBar(
+              controller: _tabController,
+              isScrollable: true,
+              tabAlignment: TabAlignment.start,
+              indicatorSize: TabBarIndicatorSize.tab,
+              dividerColor: Colors.transparent,
+              tabs: widget.categories.map((category) {
+                return Tab(
+                  child: _CourseTab(category: category),
+                );
+              }).toList(),
             ),
           ),
         ),
