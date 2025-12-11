@@ -5,6 +5,7 @@ import '../models/shopping_list.dart';
 import '../../../core/providers.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/recipe.dart';
+import '../../mealplan/models/meal_plan.dart';
 
 class ShoppingListScreen extends ConsumerWidget {
   const ShoppingListScreen({super.key});
