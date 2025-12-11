@@ -52,9 +52,7 @@ class _RecipeListScreenEnhancedState extends ConsumerState<RecipeListScreenEnhan
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final recipesAsync = ref.watch(
-      recipesByCourseProvider(
-        (course: widget.course, sourceFilter: widget.sourceFilter),
-      ),
+      recipesByCourseProvider(widget.course),
     );
 
     return Scaffold(
@@ -101,8 +99,10 @@ class _RecipeListScreenEnhancedState extends ConsumerState<RecipeListScreenEnhan
               loading: () => const Center(child: CircularProgressIndicator()),
               error: (err, _) => Center(child: Text('Error: $err')),
               data: (recipes) {
-                // Apply filters
-                var filteredRecipes = _filterRecipes(recipes);
+                // Apply source filter
+                var filteredRecipes = _filterBySource(recipes);
+                // Apply other filters
+                filteredRecipes = _filterRecipes(filteredRecipes);
 
                 if (filteredRecipes.isEmpty) {
                   return _buildEmptyState(context);
@@ -134,6 +134,23 @@ class _RecipeListScreenEnhancedState extends ConsumerState<RecipeListScreenEnhan
             )
           : null,
     );
+  }
+
+  List<Recipe> _filterBySource(List<Recipe> recipes) {
+    switch (widget.sourceFilter) {
+      case RecipeSourceFilter.memoix:
+        return recipes.where((r) => r.source == RecipeSource.memoix).toList();
+      case RecipeSourceFilter.personal:
+        return recipes
+            .where((r) =>
+                r.source == RecipeSource.personal ||
+                r.source == RecipeSource.imported ||
+                r.source == RecipeSource.ocr ||
+                r.source == RecipeSource.url)
+            .toList();
+      case RecipeSourceFilter.all:
+        return recipes;
+    }
   }
 
   List<Recipe> _filterRecipes(List<Recipe> recipes) {
@@ -293,7 +310,7 @@ class _RecipeListScreenEnhancedState extends ConsumerState<RecipeListScreenEnhan
               title: const Text('Scan from Photo'),
               onTap: () {
                 Navigator.pop(ctx);
-                AppRoutes.toOcrImport(context);
+                AppRoutes.toOCRScanner(context);
               },
             ),
             ListTile(
@@ -301,7 +318,7 @@ class _RecipeListScreenEnhancedState extends ConsumerState<RecipeListScreenEnhan
               title: const Text('Import from URL'),
               onTap: () {
                 Navigator.pop(ctx);
-                AppRoutes.toUrlImport(context);
+                AppRoutes.toURLImport(context);
               },
             ),
             const SizedBox(height: 8),

@@ -108,9 +108,7 @@ class _CourseGridView extends ConsumerWidget {
                     
                     // Get recipe count for this category
                     final recipesAsync = ref.watch(
-                      recipesByCourseProvider(
-                        (course: category.slug, sourceFilter: RecipeSourceFilter.all),
-                      ),
+                      recipesByCourseProvider(category.slug),
                     );
                     
                     final recipeCount = recipesAsync.maybeWhen(

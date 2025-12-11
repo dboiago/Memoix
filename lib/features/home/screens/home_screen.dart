@@ -1,16 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+// This file is deprecated and can be deleted.
+// The app now uses home_screen_new.dart instead.
+// Please delete this file manually.
 
-import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
-import '../../../shared/widgets/app_drawer.dart';
-import '../../../shared/widgets/course_card.dart';
-import '../../recipes/models/category.dart';
-import '../../recipes/repository/recipe_repository.dart';
-import '../../recipes/screens/recipe_list_screen.dart';
-import '../../recipes/screens/recipe_list_screen_enhanced.dart';
-import '../../recipes/models/source_filter.dart';
-import '../../recipes/widgets/recipe_search_delegate.dart';
+// Old content removed to prevent confusion.
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});

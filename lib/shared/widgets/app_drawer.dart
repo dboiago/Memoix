@@ -140,7 +140,7 @@ class AppDrawer extends StatelessWidget {
                     title: 'OCR Import',
                     onTap: () {
                       Navigator.pop(context);
-                      AppRoutes.toOcrImport(context);
+                      AppRoutes.toOCRScanner(context);
                     },
                   ),
                   _DrawerTile(
@@ -148,7 +148,7 @@ class AppDrawer extends StatelessWidget {
                     title: 'URL Import',
                     onTap: () {
                       Navigator.pop(context);
-                      AppRoutes.toUrlImport(context);
+                      AppRoutes.toURLImport(context);
                     },
                   ),
                   _DrawerTile(
