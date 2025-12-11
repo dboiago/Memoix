@@ -114,9 +114,9 @@ class _CourseGridView extends ConsumerWidget {
               sliver: SliverGrid(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: crossAxisCount,
-                  crossAxisSpacing: 16,
-                  mainAxisSpacing: 16,
-                  childAspectRatio: 1.0,
+                  crossAxisSpacing: 12,
+                  mainAxisSpacing: 12,
+                  childAspectRatio: 2.2, // wide bubble cards
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
@@ -139,14 +139,10 @@ class _CourseGridView extends ConsumerWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => Scaffold(
-                              appBar: AppBar(
-                                title: Text(category.name),
-                              ),
-                              body: RecipeListScreen(
-                                course: category.slug,
-                                sourceFilter: RecipeSourceFilter.all,
-                              ),
+                            builder: (_) => RecipeListScreen(
+                              course: category.slug,
+                              sourceFilter: RecipeSourceFilter.all,
+                              showAddButton: true,
                             ),
                           ),
                         );

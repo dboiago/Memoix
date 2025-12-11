@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/cooking_stats.dart';
 import '../../recipes/models/cuisine.dart';
+import '../../../shared/widgets/app_drawer.dart';
 
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
@@ -12,6 +13,7 @@ class StatisticsScreen extends ConsumerWidget {
     final statsAsync = ref.watch(cookingStatsProvider);
 
     return Scaffold(
+      drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text('Statistics'),
       ),
@@ -73,7 +75,7 @@ class _StatsContent extends StatelessWidget {
               child: _StatCard(
                 label: 'Total Recipes',
                 value: '78', // TODO: Get from actual data
-                color: theme.colorScheme.primaryContainer,
+                color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
             const SizedBox(width: 12),
@@ -81,7 +83,7 @@ class _StatsContent extends StatelessWidget {
               child: _StatCard(
                 label: 'Countries',
                 value: '12', // TODO: Get from actual data
-                color: theme.colorScheme.secondaryContainer,
+                color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
           ],
@@ -93,7 +95,7 @@ class _StatsContent extends StatelessWidget {
               child: _StatCard(
                 label: 'Avg Cook Time',
                 value: '35m', // TODO: Calculate from recipes
-                color: theme.colorScheme.tertiaryContainer,
+                color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
             const SizedBox(width: 12),
@@ -101,7 +103,7 @@ class _StatsContent extends StatelessWidget {
               child: _StatCard(
                 label: 'Favorites',
                 value: stats.totalCooks.toString(),
-                color: theme.colorScheme.errorContainer,
+                color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
           ],
@@ -234,7 +236,7 @@ class _CourseBarChart extends StatelessWidget {
                     minHeight: 8,
                     backgroundColor: theme.colorScheme.surface,
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      theme.colorScheme.primary.withValues(alpha: 0.7),
+                      theme.colorScheme.secondary.withValues(alpha: 0.4),
                     ),
                   ),
                 ),
@@ -318,16 +320,8 @@ class _CountryList extends StatelessWidget {
   }
   
   Color _getRankColor(int rank) {
-    switch (rank) {
-      case 1:
-        return Colors.amber;
-      case 2:
-        return Colors.grey;
-      case 3:
-        return Colors.brown;
-      default:
-        return Colors.blueGrey;
-    }
+    // Use a consistent, muted accent for rankings
+    return Theme.of(context).colorScheme.secondary;
   }
 }
 

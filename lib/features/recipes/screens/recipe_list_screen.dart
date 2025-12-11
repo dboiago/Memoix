@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/app_drawer.dart';
 import '../models/recipe.dart';
 import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
@@ -39,6 +40,10 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     );
 
     return Scaffold(
+      drawer: const AppDrawer(),
+      appBar: AppBar(
+        title: const Text('Recipe Book'),
+      ),
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
@@ -84,7 +89,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                       _buildCuisineChip('All', recipes.length),
                       ...availableCuisines.map((cuisine) {
                         final count = recipes.where((r) => r.cuisine?.toLowerCase() == cuisine.toLowerCase()).length;
-                        return _buildCuisineChip(cuisine, count);
+                        return _buildCuisineChip(_displayCuisine(cuisine), count, rawValue: cuisine);
                       }),
                     ],
                   ),
@@ -108,17 +113,18 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     );
   }
 
-  Widget _buildCuisineChip(String cuisine, int count) {
-    final isSelected = _selectedCuisine == cuisine;
+  Widget _buildCuisineChip(String cuisineLabel, int count, {String? rawValue}) {
+    final value = rawValue ?? cuisineLabel;
+    final isSelected = _selectedCuisine == value;
     final theme = Theme.of(context);
     
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
-        label: Text(cuisine),
+        label: Text(cuisineLabel),
         selected: isSelected,
         onSelected: (selected) {
-          setState(() => _selectedCuisine = cuisine);
+          setState(() => _selectedCuisine = value);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         selectedColor: theme.colorScheme.primaryContainer,
@@ -141,6 +147,25 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
         .toList();
     cuisines.sort();
     return cuisines;
+  }
+
+  String _displayCuisine(String raw) {
+    const map = {
+      'Korea': 'Korean',
+      'Korean': 'Korean',
+      'China': 'Chinese',
+      'Chinese': 'Chinese',
+      'Japan': 'Japanese',
+      'Japanese': 'Japanese',
+      'Spain': 'Spanish',
+      'France': 'French',
+      'Italy': 'Italian',
+      'Mexico': 'Mexican',
+      'Mexican': 'Mexican',
+      'United States': 'American',
+      'North American': 'North American',
+    };
+    return map[raw] ?? raw;
   }
 
   Widget _buildRecipeList(List<Recipe> allRecipes) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/app_drawer.dart';
 
 /// Measurement conversion utility for cooking
 class MeasurementConverter {
@@ -233,6 +234,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
     final theme = Theme.of(context);
 
     return Scaffold(
+      drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text('Measurement Converter'),
       ),
@@ -457,7 +459,7 @@ class _ConversionTypeButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected 
-              ? theme.colorScheme.primary.withValues(alpha: 0.2)
+              ? theme.colorScheme.secondary.withValues(alpha: 0.2)
               : theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(8),
         ),
@@ -466,7 +468,7 @@ class _ConversionTypeButton extends StatelessWidget {
           label,
           style: theme.textTheme.titleSmall?.copyWith(
             color: isSelected 
-                ? theme.colorScheme.primary
+                ? theme.colorScheme.secondary
                 : theme.colorScheme.onSurface,
             fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
           ),

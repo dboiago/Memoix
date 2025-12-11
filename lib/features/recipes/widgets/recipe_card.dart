@@ -21,10 +21,17 @@ class RecipeCard extends ConsumerWidget {
     final theme = Theme.of(context);
     final cuisine = recipe.cuisine;
 
-    return InkWell(
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+    return Card(
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.12)),
+      ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: onTap,
+        child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: Row(
           children: [
             // Recipe name and metadata
@@ -36,7 +43,7 @@ class RecipeCard extends ConsumerWidget {
                   Text(
                     recipe.name,
                     style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -45,7 +52,7 @@ class RecipeCard extends ConsumerWidget {
                   Row(
                     children: [
                       // Cuisine indicator
-                      if (cuisine != null) ...[
+                      if (cuisine != null && cuisine.isNotEmpty) ...[
                         Text(
                           '\u2022',
                           style: TextStyle(
@@ -55,9 +62,9 @@ class RecipeCard extends ConsumerWidget {
                         ),
                         const SizedBox(width: 6),
                         Text(
-                          cuisine,
+                          _displayCuisine(cuisine, recipe.subcategory),
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.outline,
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
                         const SizedBox(width: 12),
@@ -74,7 +81,7 @@ class RecipeCard extends ConsumerWidget {
                         Text(
                           recipe.serves!,
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.outline,
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
                         const SizedBox(width: 12),
@@ -91,7 +98,7 @@ class RecipeCard extends ConsumerWidget {
                         Text(
                           recipe.time!,
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.outline,
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
                       ],
@@ -113,7 +120,7 @@ class RecipeCard extends ConsumerWidget {
                   ),
                   color: recipe.isFavorite 
                       ? Colors.red.shade400 
-                      : theme.colorScheme.outline,
+                      : theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
                     ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
                   },
@@ -133,7 +140,7 @@ class RecipeCard extends ConsumerWidget {
                   ),
                   color: recipe.cookCount > 0 
                       ? Colors.green.shade400 
-                      : theme.colorScheme.outline,
+                      : theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
                     ref.read(cookingStatsServiceProvider).logCook(
                       recipeId: recipe.uuid,
@@ -151,6 +158,30 @@ class RecipeCard extends ConsumerWidget {
         ),
       ),
     );
+  }
+
+  String _displayCuisine(String raw, String? subcategory) {
+    // Map country names to cuisine adjectives
+    const map = {
+      'Korea': 'Korean',
+      'Korean': 'Korean',
+      'China': 'Chinese',
+      'Chinese': 'Chinese',
+      'Japan': 'Japanese',
+      'Japanese': 'Japanese',
+      'Spain': 'Spanish',
+      'France': 'French',
+      'Italy': 'Italian',
+      'Mexico': 'Mexican',
+      'Mexican': 'Mexican',
+      'United States': 'American',
+      'North American': 'North American',
+    };
+    final adj = map[raw] ?? raw;
+    if (subcategory != null && subcategory.isNotEmpty) {
+      return '$adj ($subcategory)';
+    }
+    return adj;
   }
 }
 
