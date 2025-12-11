@@ -8,6 +8,7 @@ import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
 import '../../sharing/services/share_service.dart';
+import '../../../core/providers.dart';
 
 class RecipeDetailScreen extends ConsumerWidget {
   final String recipeId;

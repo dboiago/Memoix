@@ -5,10 +5,10 @@ import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
+import '../models/source_filter.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/recipe_card.dart';
 
-enum RecipeSourceFilter { memoix, personal, all }
 
 /// Screen showing recipes for a specific course/category
 class RecipeListScreen extends ConsumerWidget {

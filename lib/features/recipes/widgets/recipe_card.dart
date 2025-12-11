@@ -5,6 +5,7 @@ import '../../../app/theme/colors.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../../core/providers.dart';
+import '../../../core/providers.dart';
 
 class RecipeCard extends ConsumerWidget {
   final Recipe recipe;

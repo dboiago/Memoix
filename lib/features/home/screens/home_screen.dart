@@ -6,6 +6,7 @@ import '../../../app/theme/colors.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
+import '../../recipes/models/source_filter.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -209,7 +210,7 @@ class FavoritesTab extends ConsumerWidget {
   }
 }
 
-enum RecipeSourceFilter { memoix, personal, all }
+// `RecipeSourceFilter` moved to `features/recipes/models/source_filter.dart`
 
 /// View showing recipes organized by categories (like spreadsheet tabs)
 class CategoryRecipeView extends StatefulWidget {
