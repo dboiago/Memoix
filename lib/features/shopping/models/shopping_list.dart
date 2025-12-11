@@ -64,33 +64,67 @@ class ShoppingItem {
   static String? _guessCategory(String name) {
     final n = name.toLowerCase();
     
+    // Pantry first (to catch stock, broth, baking items)
+    if (n.contains('stock') || n.contains('broth') || n.contains('oil') || 
+        n.contains('vinegar') || n.contains('sauce') || n.contains('soy') ||
+        n.contains('baking powder') || n.contains('baking soda') ||
+        n.contains('cornstarch') || n.contains('yeast') || n.contains('honey') ||
+        n.contains('sugar') || n.contains('syrup') || n.contains('molasses')) {
+      return 'Pantry';
+    }
     if (n.contains('chicken') || n.contains('beef') || n.contains('pork') ||
-        n.contains('meat') || n.contains('sausage') || n.contains('bacon')) {
+        n.contains('meat') || n.contains('sausage') || n.contains('bacon') ||
+        n.contains('lamb') || n.contains('turkey') || n.contains('duck') ||
+        n.contains('veal') || n.contains('ham') || n.contains('prosciutto')) {
       return 'Meat';
     }
+    if (n.contains('salmon') || n.contains('fish') || n.contains('shrimp') ||
+        n.contains('lobster') || n.contains('crab') || n.contains('scallop') ||
+        n.contains('mussel') || n.contains('clam') || n.contains('oyster') ||
+        n.contains('tuna') || n.contains('cod') || n.contains('halibut')) {
+      return 'Seafood';
+    }
     if (n.contains('milk') || n.contains('cheese') || n.contains('butter') ||
-        n.contains('cream') || n.contains('yogurt') || n.contains('egg')) {
+        n.contains('cream') || n.contains('yogurt') || n.contains('yoghurt') ||
+        n.contains('sour cream') || n.contains('crème')) {
+      return 'Dairy';
+    }
+    if (n.contains('egg')) {
       return 'Dairy';
     }
     if (n.contains('onion') || n.contains('garlic') || n.contains('tomato') ||
         n.contains('pepper') || n.contains('carrot') || n.contains('celery') ||
-        n.contains('lettuce') || n.contains('spinach') || n.contains('potato')) {
+        n.contains('lettuce') || n.contains('spinach') || n.contains('potato') ||
+        n.contains('cabbage') || n.contains('broccoli') || n.contains('cauliflower') ||
+        n.contains('zucchini') || n.contains('squash') || n.contains('cucumber') ||
+        n.contains('mushroom') || n.contains('leek') || n.contains('shallot') ||
+        n.contains('ginger') || n.contains('lemon') || n.contains('lime') ||
+        n.contains('orange') || n.contains('apple') || n.contains('banana') ||
+        n.contains('avocado') || n.contains('herb') || n.contains('cilantro') ||
+        n.contains('parsley') || n.contains('basil') || n.contains('mint') ||
+        n.contains('thyme') || n.contains('rosemary') || n.contains('dill') ||
+        n.contains('chive') || n.contains('scallion') || n.contains('green onion')) {
       return 'Produce';
     }
     if (n.contains('bread') || n.contains('flour') || n.contains('pasta') ||
-        n.contains('rice') || n.contains('noodle')) {
+        n.contains('rice') || n.contains('noodle') || n.contains('tortilla') ||
+        n.contains('wrap') || n.contains('pita') || n.contains('couscous') ||
+        n.contains('quinoa') || n.contains('oat') || n.contains('cereal')) {
       return 'Grains';
     }
     if (n.contains('salt') || n.contains('pepper') || n.contains('spice') ||
-        n.contains('cumin') || n.contains('paprika') || n.contains('oregano')) {
+        n.contains('cumin') || n.contains('paprika') || n.contains('oregano') ||
+        n.contains('cinnamon') || n.contains('nutmeg') || n.contains('clove') ||
+        n.contains('coriander') || n.contains('turmeric') || n.contains('curry') ||
+        n.contains('chili') || n.contains('cayenne') || n.contains('powder')) {
       return 'Spices';
     }
-    if (n.contains('oil') || n.contains('vinegar') || n.contains('sauce') ||
-        n.contains('soy') || n.contains('stock') || n.contains('broth')) {
-      return 'Pantry';
-    }
-    if (n.contains('can') || n.contains('bean') || n.contains('lentil')) {
+    if (n.contains('can') || n.contains('bean') || n.contains('lentil') ||
+        n.contains('chickpea') || n.contains('tomato paste') || n.contains('diced tomato')) {
       return 'Canned';
+    }
+    if (n.contains('frozen')) {
+      return 'Frozen';
     }
     
     return 'Other';

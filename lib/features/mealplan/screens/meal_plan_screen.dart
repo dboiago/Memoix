@@ -6,9 +6,6 @@ import '../models/meal_plan.dart';
 import '../../../core/providers.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/recipe.dart';
-import '../../../core/providers.dart';
-import '../../recipes/repository/recipe_repository.dart';
-import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
 
 class MealPlanScreen extends ConsumerStatefulWidget {
@@ -157,7 +154,7 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
         final shoppingService = ref.read(shoppingListServiceProvider);
         final list = await shoppingService.generateFromRecipes(recipes);
         if (context.mounted) {
-          Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(list: list)));
+          Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
         }
       } else {
         if (context.mounted) {
@@ -422,50 +419,102 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                 ),
               ),
               const SizedBox(height: 8),
-              if (_suggestions.isNotEmpty)
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Column(
-                    children: _suggestions.map((r) => ListTile(
-                      title: Text(r.name),
-                      subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
-                      onTap: () async {
-                        // Add meal and close
-                        await ref.read(mealPlanServiceProvider).addMeal(
-                          _selectedDate,
-                          recipeId: r.uuid,
-                          recipeName: r.name,
-                          course: _selectedCourse,
-                        );
-                        if (context.mounted) {
-                          Navigator.pop(context);
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added ${r.name}')));
-                        }
-                      },
-                    )).toList(),
-                  ),
-                ),
-              const SizedBox(height: 8),
-              // Quick suggestions (recent, favorites)
+              // Search suggestions and favourites in scrollable area
               Expanded(
-                child: ListView(
-                  controller: scrollController,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Text(
-                        'Favorites',
-                        style: theme.textTheme.labelLarge,
-                      ),
-                    ),
-                    // TODO: Show favorite recipes here
-                    const Center(
-                      child: Padding(
-                        padding: EdgeInsets.all(32),
-                        child: Text('Search for a recipe to add'),
-                      ),
-                    ),
-                  ],
+                child: Consumer(
+                  builder: (context, ref, _) {
+                    final favouritesAsync = ref.watch(favoriteRecipesProvider);
+                    return ListView(
+                      controller: scrollController,
+                      children: [
+                        // Search suggestions
+                        if (_suggestions.isNotEmpty) ...[
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: Text(
+                              'Search Results',
+                              style: theme.textTheme.labelLarge,
+                            ),
+                          ),
+                          ..._suggestions.map((r) => ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: theme.colorScheme.secondaryContainer,
+                              child: Text(r.name.isNotEmpty ? r.name[0].toUpperCase() : '?'),
+                            ),
+                            title: Text(r.name),
+                            subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
+                            trailing: const Icon(Icons.add_circle_outline),
+                            onTap: () async {
+                              await ref.read(mealPlanServiceProvider).addMeal(
+                                _selectedDate,
+                                recipeId: r.uuid,
+                                recipeName: r.name,
+                                course: _selectedCourse,
+                              );
+                              if (context.mounted) {
+                                Navigator.pop(context);
+                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added ${r.name}')));
+                              }
+                            },
+                          )),
+                          const Divider(),
+                        ],
+                        // Favourites section
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: Text(
+                            'Favourites',
+                            style: theme.textTheme.labelLarge,
+                          ),
+                        ),
+                        favouritesAsync.when(
+                          loading: () => const Padding(
+                            padding: EdgeInsets.all(32),
+                            child: Center(child: CircularProgressIndicator()),
+                          ),
+                          error: (err, _) => Padding(
+                            padding: const EdgeInsets.all(32),
+                            child: Center(child: Text('Error: $err')),
+                          ),
+                          data: (favourites) {
+                            if (favourites.isEmpty) {
+                              return const Center(
+                                child: Padding(
+                                  padding: EdgeInsets.all(32),
+                                  child: Text('No favourites yet.\nMark recipes as favourites to see them here.'),
+                                ),
+                              );
+                            }
+                            return Column(
+                              children: favourites.map((recipe) => ListTile(
+                                leading: CircleAvatar(
+                                  backgroundColor: theme.colorScheme.primaryContainer,
+                                  child: Text(recipe.name.isNotEmpty ? recipe.name[0].toUpperCase() : '?'),
+                                ),
+                                title: Text(recipe.name),
+                                subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
+                                trailing: const Icon(Icons.add_circle_outline),
+                                onTap: () async {
+                                  await ref.read(mealPlanServiceProvider).addMeal(
+                                    _selectedDate,
+                                    recipeId: recipe.uuid,
+                                    recipeName: recipe.name,
+                                    course: _selectedCourse,
+                                  );
+                                  if (context.mounted) {
+                                    Navigator.pop(context);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(content: Text('Added ${recipe.name}')),
+                                    );
+                                  }
+                                },
+                              )).toList(),
+                            );
+                          },
+                        ),
+                      ],
+                    );
+                  },
                 ),
               ),
             ],

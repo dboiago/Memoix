@@ -8,7 +8,7 @@ import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
 import '../../sharing/services/share_service.dart';
-import '../../../core/providers.dart';
+import '../../statistics/models/cooking_stats.dart';
 
 class RecipeDetailScreen extends ConsumerWidget {
   final String recipeId;
@@ -108,7 +108,15 @@ class RecipeDetailView extends ConsumerWidget {
                     course: recipe.course,
                     cuisine: recipe.cuisine,
                   );
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Logged cook for ${recipe.name}')));
+                  // Invalidate stats providers so they refresh
+                  ref.invalidate(cookingStatsProvider);
+                  ref.invalidate(recipeCookCountProvider(recipe.uuid));
+                  ref.invalidate(recipeLastCookProvider(recipe.uuid));
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('Logged cook for ${recipe.name}! 🎉')),
+                    );
+                  }
                 },
               ),
               IconButton(

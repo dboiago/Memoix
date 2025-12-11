@@ -84,7 +84,7 @@ class ShoppingListCard extends StatelessWidget {
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (_) => ShoppingListDetailScreen(list: list),
+              builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid),
             ),
           );
         },
@@ -139,85 +139,111 @@ class ShoppingListCard extends StatelessWidget {
 }
 
 class ShoppingListDetailScreen extends ConsumerWidget {
-  final ShoppingList list;
+  final String listUuid;
 
-  const ShoppingListDetailScreen({super.key, required this.list});
+  const ShoppingListDetailScreen({super.key, required this.listUuid});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final grouped = list.groupedItems;
-    final categories = grouped.keys.toList()..sort();
+    final listsAsync = ref.watch(shoppingListsProvider);
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(list.name),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.share),
-            onPressed: () => _shareList(context),
-          ),
-          PopupMenuButton<String>(
-            onSelected: (value) => _handleMenuAction(context, ref, value),
-            itemBuilder: (_) => [
-              const PopupMenuItem(value: 'rename', child: Text('Rename')),
-              const PopupMenuItem(value: 'clear', child: Text('Clear Checked')),
-              const PopupMenuItem(
-                value: 'delete',
-                child: Text('Delete', style: TextStyle(color: Colors.red)),
-              ),
-            ],
-          ),
-        ],
+    return listsAsync.when(
+      loading: () => Scaffold(
+        appBar: AppBar(title: const Text('Loading...')),
+        body: const Center(child: CircularProgressIndicator()),
       ),
-      body: ListView.builder(
-        padding: const EdgeInsets.symmetric(vertical: 8),
-        itemCount: categories.length,
-        itemBuilder: (context, catIndex) {
-          final category = categories[catIndex];
-          final items = grouped[category]!;
+      error: (err, _) => Scaffold(
+        appBar: AppBar(title: const Text('Error')),
+        body: Center(child: Text('Error: $err')),
+      ),
+      data: (lists) {
+        final list = lists.firstWhere(
+          (l) => l.uuid == listUuid,
+          orElse: () => ShoppingList()..name = 'Not Found',
+        );
 
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Category header
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                color: theme.colorScheme.surfaceContainerHighest,
-                child: Text(
-                  category,
-                  style: theme.textTheme.titleSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: theme.colorScheme.primary,
-                  ),
-                ),
-              ),
-              // Items
-              ...items.asMap().entries.map((entry) {
-                final itemIndex = list.items.indexOf(entry.value);
-                return _ShoppingItemTile(
-                  item: entry.value,
-                  onToggle: () {
-                    ref.read(shoppingListServiceProvider).toggleItem(list, itemIndex);
-                  },
-                  onDelete: () {
-                    ref.read(shoppingListServiceProvider).removeItem(list, itemIndex);
-                  },
-                );
-              }),
-            ],
+        if (list.name == 'Not Found') {
+          return Scaffold(
+            appBar: AppBar(title: const Text('List Not Found')),
+            body: const Center(child: Text('This shopping list no longer exists.')),
           );
-        },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => _addItem(context, ref),
-        child: const Icon(Icons.add),
-      ),
+        }
+
+        final grouped = list.groupedItems;
+        final categories = grouped.keys.toList()..sort();
+
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(list.name),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.share),
+                onPressed: () => _shareList(context, list),
+              ),
+              PopupMenuButton<String>(
+                onSelected: (value) => _handleMenuAction(context, ref, value, list),
+                itemBuilder: (_) => [
+                  const PopupMenuItem(value: 'rename', child: Text('Rename')),
+                  const PopupMenuItem(value: 'clear', child: Text('Clear Checked')),
+                  const PopupMenuItem(
+                    value: 'delete',
+                    child: Text('Delete', style: TextStyle(color: Colors.red)),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          body: ListView.builder(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            itemCount: categories.length,
+            itemBuilder: (context, catIndex) {
+              final category = categories[catIndex];
+              final items = grouped[category]!;
+
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Category header
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    color: theme.colorScheme.surfaceContainerHighest,
+                    child: Text(
+                      category,
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: theme.colorScheme.primary,
+                      ),
+                    ),
+                  ),
+                  // Items
+                  ...items.asMap().entries.map((entry) {
+                    final itemIndex = list.items.indexOf(entry.value);
+                    return _ShoppingItemTile(
+                      item: entry.value,
+                      onToggle: () async {
+                        await ref.read(shoppingListServiceProvider).toggleItem(list, itemIndex);
+                      },
+                      onDelete: () async {
+                        await ref.read(shoppingListServiceProvider).removeItem(list, itemIndex);
+                      },
+                    );
+                  }),
+                ],
+              );
+            },
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () => _addItem(context, ref, list),
+            child: const Icon(Icons.add),
+          ),
+        );
+      },
     );
   }
 
-  void _shareList(BuildContext context) {
+  void _shareList(BuildContext context, ShoppingList list) {
     // Share as text
     final buffer = StringBuffer();
     buffer.writeln('🛒 ${list.name}');
@@ -237,7 +263,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     // Share.share(buffer.toString());
   }
 
-  void _handleMenuAction(BuildContext context, WidgetRef ref, String action) {
+  void _handleMenuAction(BuildContext context, WidgetRef ref, String action, ShoppingList list) {
     switch (action) {
       case 'delete':
         showDialog(
@@ -266,7 +292,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     }
   }
 
-  void _addItem(BuildContext context, WidgetRef ref) {
+  void _addItem(BuildContext context, WidgetRef ref, ShoppingList list) {
     showDialog(
       context: context,
       builder: (ctx) => _AddItemDialog(
@@ -444,7 +470,7 @@ class CreateShoppingListSheet extends ConsumerWidget {
               }
               if (recipes.isNotEmpty) {
                 final list = await ref.read(shoppingListServiceProvider).generateFromRecipes(recipes);
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(list: list)));
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found to generate list')));
               }

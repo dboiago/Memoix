@@ -247,7 +247,7 @@ class SettingsScreen extends ConsumerWidget {
           const SizedBox(height: 8),
           Center(
             child: Text(
-              'Made with ❤️ for home cooks',
+              'Made with ❤️ for cooks',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -269,7 +269,7 @@ class SettingsScreen extends ConsumerWidget {
       children: [
         const SizedBox(height: 16),
         const Text(
-          'A beautiful, open-source recipe manager for home cooks. '
+          'A beautiful, open-source recipe manager for cooks. '
           'Organize your recipes, import from photos or websites, '
           'and share with friends and family.',
         ),

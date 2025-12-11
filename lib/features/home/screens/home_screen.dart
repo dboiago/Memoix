@@ -100,7 +100,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
           tabs: const [
             Tab(text: 'Memoix', icon: Icon(Icons.restaurant_menu)),
             Tab(text: 'My Recipes', icon: Icon(Icons.person)),
-            Tab(text: 'Favorites', icon: Icon(Icons.favorite)),
+            Tab(text: 'Favourites', icon: Icon(Icons.favorite)),
           ],
         ),
       ),
@@ -192,7 +192,7 @@ class FavoritesTab extends ConsumerWidget {
                 Icon(Icons.favorite_border, size: 64, color: Colors.grey),
                 SizedBox(height: 16),
                 Text(
-                  'No favorites yet',
+                  'No favourites yet',
                   style: TextStyle(fontSize: 18, color: Colors.grey),
                 ),
                 SizedBox(height: 8),

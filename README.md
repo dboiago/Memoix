@@ -1,9 +1,9 @@
 # Memoix 🍳
 
-A beautiful, open-source recipe management app for home cooks. Organize your recipes, import from photos or websites, and share with friends and family.
+A beautiful, open-source recipe management app for cooks. Organize your recipes, import from photos or websites, and share with friends and family.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.2+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![License](https://img.shields.io/badge/License-Noncommercial-orange.svg)
 ![Platform](https://img.shields.io/badge/Platform-Android%20|%20iOS%20|%20Windows%20|%20macOS-lightgrey.svg)
 
 ## ✨ Features
@@ -13,7 +13,7 @@ A beautiful, open-source recipe management app for home cooks. Organize your rec
 - 🔗 **URL Import** - Paste a link from popular recipe websites to import
 - 🏷️ **Smart Organization** - Organize by course, cuisine, and custom tags
 - 🔍 **Powerful Search** - Find recipes by name, ingredients, or tags
-- ❤️ **Favorites** - Quick access to your most-loved recipes
+- ❤️ **Favourites** - Quick access to your most-loved recipes
 - 📤 **Easy Sharing** - Share recipes via QR codes, links, or text
 - 🌙 **Dark Mode** - Beautiful light and dark themes
 - 📴 **Offline First** - All your recipes available without internet
