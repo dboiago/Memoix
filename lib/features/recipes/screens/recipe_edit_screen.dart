@@ -237,7 +237,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             ),
             const SizedBox(height: 4),
             Text(
-              'One ingredient per line',
+              'One per line. Add notes like (optional), (diced), (alt: butter)',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -246,7 +246,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             TextField(
               controller: _ingredientsController,
               decoration: const InputDecoration(
-                hintText: '1 can white beans\n2 tbsp butter\n1 onion, diced\n...',
+                hintText: '1 can white beans\n2 tbsp olive oil (alt: butter)\n1 onion, diced (optional)\n...',
                 alignLabelWithHint: true,
               ),
               maxLines: 10,
@@ -282,9 +282,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 24),
 
-            // Notes
+            // Comments (previously called Notes)
             Text(
-              'Notes',
+              'Comments',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
