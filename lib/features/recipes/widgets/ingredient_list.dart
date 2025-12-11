@@ -60,6 +60,7 @@ class _IngredientListState extends State<IngredientList> {
   Widget _buildIngredientRow(BuildContext context, _IndexedIngredient item) {
     final theme = Theme.of(context);
     final isChecked = _checkedItems.contains(item.index);
+    final ingredient = item.ingredient;
 
     return InkWell(
       onTap: () {
@@ -96,58 +97,71 @@ class _IngredientListState extends State<IngredientList> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient text
+            // Ingredient name
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Flexible(
-                        child: Text(
-                          item.ingredient.displayText,
-                          style: TextStyle(
-                            decoration: isChecked ? TextDecoration.lineThrough : null,
-                            color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : null,
-                          ),
-                        ),
-                      ),
-                      if (item.ingredient.isOptional) ...[
-                        const SizedBox(width: 6),
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.secondaryContainer,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Text(
-                            'optional',
-                            style: theme.textTheme.labelSmall?.copyWith(
-                              color: theme.colorScheme.onSecondaryContainer,
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ],
-                  ),
-                  // Alternative
-                  if (item.ingredient.alternative != null)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 2),
-                      child: Text(
-                        item.ingredient.alternative!,
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          fontStyle: FontStyle.italic,
-                          color: theme.colorScheme.secondary,
-                        ),
-                      ),
-                    ),
-                ],
+              flex: 3,
+              child: Text(
+                ingredient.name,
+                style: TextStyle(
+                  decoration: isChecked ? TextDecoration.lineThrough : null,
+                  color: isChecked
+                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      : null,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
+
+            // Amount/measurement
+            if (ingredient.amount != null && ingredient.amount!.isNotEmpty) ...[
+              const SizedBox(width: 8),
+              Text(
+                ingredient.amount!,
+                style: TextStyle(
+                  decoration: isChecked ? TextDecoration.lineThrough : null,
+                  color: isChecked
+                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      : theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
+
+            // Notes/preparation
+            if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) ...[
+              const SizedBox(width: 8),
+              Expanded(
+                flex: 2,
+                child: Text(
+                  ingredient.preparation!,
+                  style: TextStyle(
+                    decoration: isChecked ? TextDecoration.lineThrough : null,
+                    color: isChecked
+                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        : theme.colorScheme.primary,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+            ],
+
+            // Optional badge
+            if (ingredient.isOptional) ...[
+              const SizedBox(width: 6),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.secondaryContainer,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Text(
+                  'optional',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onSecondaryContainer,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+            ],
           ],
         ),
       ),

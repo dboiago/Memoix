@@ -52,7 +52,17 @@ class ShareService {
     buffer.writeln();
     buffer.writeln('## Ingredients');
     for (final ingredient in recipe.ingredients) {
-      buffer.writeln('- ${ingredient.displayText}');
+      var line = '- ${ingredient.displayText}';
+      if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
+        line += ' (${ingredient.preparation})';
+      }
+      if (ingredient.isOptional) {
+        line += ' [optional]';
+      }
+      buffer.writeln(line);
+      if (ingredient.alternative != null) {
+        buffer.writeln('  Alt: ${ingredient.alternative}');
+      }
     }
     
     buffer.writeln();

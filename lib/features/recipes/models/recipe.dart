@@ -291,7 +291,8 @@ class Ingredient {
     };
   }
 
-  /// Format ingredient for display
+  /// Format ingredient for display (amount + name only)
+  /// Preparation notes and alternatives are shown separately in the UI
   String get displayText {
     final buffer = StringBuffer();
     
@@ -306,12 +307,7 @@ class Ingredient {
     
     buffer.write(name);
     
-    if (preparation != null && preparation!.isNotEmpty) {
-      buffer.write(', ');
-      buffer.write(preparation);
-    }
-    
-    // Note: isOptional is displayed as a badge in the UI, not in displayText
+    // Note: preparation, alternatives, and isOptional are displayed separately in the UI
     
     return buffer.toString();
   }
