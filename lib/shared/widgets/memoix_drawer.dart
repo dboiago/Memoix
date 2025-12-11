@@ -51,7 +51,7 @@ class MemoixDrawer extends ConsumerWidget {
                   Text(
                     'Your Recipe Vault',
                     style: theme.textTheme.bodyMedium?.copyWith(
-                      color: theme.colorScheme.onPrimary.withOpacity(0.8),
+                      color: theme.colorScheme.onPrimary.withAlpha((0.8 * 255).round()),
                     ),
                   ),
                 ],
@@ -63,7 +63,7 @@ class MemoixDrawer extends ConsumerWidget {
               height: 4,
               width: 48,
               decoration: BoxDecoration(
-                color: theme.colorScheme.onSurface.withOpacity(0.08),
+                color: theme.colorScheme.onSurface.withAlpha((0.08 * 255).round()),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -74,7 +74,7 @@ class MemoixDrawer extends ConsumerWidget {
                 padding: EdgeInsets.zero,
                 children: [
                   const SizedBox(height: 8),
-                  _DrawerSection(title: 'Navigate'),
+                  const _DrawerSection(title: 'Navigate'),
                   _DrawerItem(
                     icon: Icons.restaurant_menu,
                     label: 'Recipes',
@@ -122,7 +122,7 @@ class MemoixDrawer extends ConsumerWidget {
                   ),
 
                   const Divider(height: 32),
-                  _DrawerSection(title: 'Tools'),
+                  const _DrawerSection(title: 'Tools'),
                   _DrawerItem(
                     icon: Icons.camera_alt,
                     label: 'Scan Recipe (OCR)',

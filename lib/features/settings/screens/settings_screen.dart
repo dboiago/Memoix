@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/services/github_recipe_service.dart';
 import '../../../core/database/database.dart';
+import '../../../core/providers.dart';
 
 /// Provider for app preferences
 final preferencesProvider = FutureProvider<SharedPreferences>((ref) async {

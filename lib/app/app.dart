@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'theme/theme.dart';
 import 'routes/router.dart';
+import '../core/providers.dart';
 
 class MemoixApp extends ConsumerWidget {
   const MemoixApp({super.key});
