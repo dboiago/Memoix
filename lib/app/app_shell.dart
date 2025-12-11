@@ -26,15 +26,16 @@ class _AppShellState extends ConsumerState<AppShell> {
       drawer: const AppDrawer(),
       appBar: AppBar(
         title: const Text('Recipe Book'),
-        leading: Navigator.of(AppShellNavigator.navigatorKey.currentContext!)
-                .canPop()
-            ? IconButton(
-                icon: const Icon(Icons.arrow_back),
-                onPressed: () {
-                  AppShellNavigator.navigatorKey.currentState!.maybePop();
-                },
-              )
-            : null,
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: const Icon(Icons.arrow_back),
+              onPressed: () {
+                AppShellNavigator.navigatorKey.currentState?.maybePop();
+              },
+            );
+          },
+        ),
       ),
       body: Navigator(
         key: AppShellNavigator.navigatorKey,

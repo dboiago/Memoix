@@ -9,7 +9,7 @@ import '../../features/recipes/repository/recipe_repository.dart';
 class GitHubRecipeService {
   /// Base URL for raw GitHub content
   /// Update this to your actual repository
-  static const String _baseUrl = 
+  static const String _baseUrl =
       'https://raw.githubusercontent.com/dboiago/Memoix/main/recipes';
 
   /// Fetch all recipes from GitHub
