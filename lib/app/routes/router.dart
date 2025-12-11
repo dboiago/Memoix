@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../features/home/screens/home_screen_new.dart';
+import '../../features/home/screens/home_screen.dart';
 import '../../features/recipes/screens/recipe_detail_screen.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/import/screens/import_screen.dart';

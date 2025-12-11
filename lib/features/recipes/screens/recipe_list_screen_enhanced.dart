@@ -6,7 +6,7 @@ import '../models/recipe.dart';
 import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
 import '../repository/recipe_repository.dart';
-import '../widgets/recipe_card_enhanced.dart';
+import '../widgets/recipe_card.dart';
 
 /// Enhanced recipe list screen with continent filters matching Figma design
 class RecipeListScreenEnhanced extends ConsumerStatefulWidget {
@@ -265,8 +265,6 @@ class _RecipeListScreenEnhancedState extends ConsumerState<RecipeListScreenEnhan
       ],
     );
   }
-
-  Widget _buildEmptyState(BuildContext context) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

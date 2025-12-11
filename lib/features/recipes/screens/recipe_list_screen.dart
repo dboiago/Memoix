@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../models/recipe.dart';
-import '../models/cuisine.dart';
+import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/recipe_card.dart';
 
-
-/// Screen showing recipes for a specific course/category
-class RecipeListScreen extends ConsumerWidget {
+/// Recipe list screen matching Figma design
+class RecipeListScreen extends ConsumerStatefulWidget {
   final String course;
   final RecipeSourceFilter sourceFilter;
-  final String? cuisineFilter;
   final String? emptyMessage;
   final bool showAddButton;
 
@@ -22,136 +19,178 @@ class RecipeListScreen extends ConsumerWidget {
     super.key,
     required this.course,
     this.sourceFilter = RecipeSourceFilter.all,
-    this.cuisineFilter,
     this.emptyMessage,
     this.showAddButton = false,
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final recipesAsync = ref.watch(recipesByCourseProvider(course));
+  ConsumerState<RecipeListScreen> createState() => _RecipeListScreenState();
+}
 
-    return recipesAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error loading recipes: $err')),
-      data: (allRecipes) {
-        // Filter by source and cuisine
-        var recipes = _filterBySource(allRecipes);
-        if (cuisineFilter != null) {
-          recipes = recipes.where((r) => r.cuisine == cuisineFilter).toList();
-        }
+class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
+  String _selectedContinent = 'All';
+  String _searchQuery = '';
 
-        if (recipes.isEmpty) {
-          return Stack(
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final recipesAsync = ref.watch(
+      recipesByCourseProvider(widget.course),
+    );
+
+    return Scaffold(
+      body: recipesAsync.when(
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (err, _) => Center(child: Text('Error: $err')),
+        data: (allRecipes) {
+          // Apply source filter first
+          final recipes = _filterBySource(allRecipes);
+          
+          // Get continents that actually exist in this recipe set
+          final availableContinents = _getAvailableContinents(recipes);
+          
+          return Column(
             children: [
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.restaurant,
-                      size: 64,
-                      color: Colors.grey.shade400,
+              // Search bar
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Search recipes...',
+                    prefixIcon: const Icon(Icons.search),
+                    filled: true,
+                    fillColor: theme.colorScheme.surfaceContainerHighest,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide.none,
                     ),
-                    const SizedBox(height: 16),
-                    Text(
-                      emptyMessage ?? _getEmptyMessage(),
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.grey.shade600,
-                      ),
-                    ),
-                  ],
+                  ),
+                  onChanged: (value) {
+                    setState(() => _searchQuery = value.toLowerCase());
+                  },
                 ),
               ),
-              if (showAddButton) _buildAddButton(context),
+
+              // Continent filter chips (show if any continents exist)
+              if (availableContinents.isNotEmpty)
+                Container(
+                  height: 48,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      _buildContinentChip('All', recipes.length),
+                      ...availableContinents.map((continent) {
+                        final count = recipes.where((r) {
+                          final c = ContinentMapping.getContinentFromCuisine(r.cuisine);
+                          return c == continent;
+                        }).length;
+                        return _buildContinentChip(continent, count);
+                      }),
+                    ],
+                  ),
+                ),
+
+              // Recipe list
+              Expanded(
+                child: _buildRecipeList(recipes),
+              ),
             ],
           );
-        }
-
-        return Stack(
-          children: [
-            RecipeListView(recipes: recipes, showCuisineHeaders: cuisineFilter == null),
-            if (showAddButton) _buildAddButton(context),
-          ],
-        );
-      },
-    );
-  }
-
-  String _getEmptyMessage() {
-    if (cuisineFilter != null) {
-      final cuisine = Cuisine.byCode(cuisineFilter!);
-      return 'No ${cuisine?.name ?? cuisineFilter} recipes in $course';
-    }
-    return 'No recipes in this category';
-  }
-
-  Widget _buildAddButton(BuildContext context) {
-    return Positioned(
-      right: 16,
-      bottom: 16,
-      child: FloatingActionButton.extended(
-        onPressed: () => _showAddOptions(context),
-        icon: const Icon(Icons.add),
-        label: const Text('Add Recipe'),
+        },
       ),
+      floatingActionButton: widget.showAddButton
+          ? FloatingActionButton.extended(
+              onPressed: () => _showAddOptions(context),
+              icon: const Icon(Icons.add),
+              label: const Text('Add Recipe'),
+            )
+          : null,
     );
   }
 
-  void _showAddOptions(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.edit),
-              title: const Text('Create New Recipe'),
-              subtitle: const Text('Write a recipe from scratch'),
-              onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toRecipeEdit(context, course: course);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.camera_alt),
-              title: const Text('Scan from Photo'),
-              subtitle: const Text('Use OCR to extract from cookbook or notes'),
-              onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toOCRScanner(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.link),
-              title: const Text('Import from URL'),
-              subtitle: const Text('Paste a link from a recipe website'),
-              onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toURLImport(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.qr_code_scanner),
-              title: const Text('Scan QR Code'),
-              subtitle: const Text('Import a shared recipe'),
-              onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toQRScanner(context);
-              },
-            ),
-            const SizedBox(height: 8),
-          ],
+  Widget _buildContinentChip(String continent, int count) {
+    final isSelected = _selectedContinent == continent;
+    final theme = Theme.of(context);
+    
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: FilterChip(
+        label: Text(continent),
+        selected: isSelected,
+        onSelected: (selected) {
+          setState(() => _selectedContinent = continent);
+        },
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        selectedColor: theme.colorScheme.primaryContainer,
+        labelStyle: TextStyle(
+          fontSize: 13,
+          color: isSelected 
+              ? theme.colorScheme.onPrimaryContainer 
+              : theme.colorScheme.onSurface,
         ),
       ),
     );
   }
 
+  List<String> _getAvailableContinents(List<Recipe> recipes) {
+    final continents = recipes
+        .map((r) => ContinentMapping.getContinentFromCuisine(r.cuisine))
+        .where((c) => c != null)
+        .cast<String>()
+        .toSet()
+        .toList();
+    continents.sort();
+    return continents;
+  }
+
+  Widget _buildRecipeList(List<Recipe> allRecipes) {
+    // Apply filters
+    var filteredRecipes = _filterRecipes(allRecipes);
+
+    if (filteredRecipes.isEmpty) {
+      return _buildEmptyState();
+    }
+
+    // Simple list without grouping for cleaner UI
+    return ListView.builder(
+      padding: const EdgeInsets.only(bottom: 80),
+      itemCount: filteredRecipes.length,
+      itemBuilder: (context, index) {
+        return RecipeCard(
+          recipe: filteredRecipes[index],
+          onTap: () => AppRoutes.toRecipeDetail(context, filteredRecipes[index].uuid),
+        );
+      },
+    );
+  }
+
+  Widget _buildEmptyState() {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            Icons.restaurant,
+            size: 64,
+            color: Colors.grey.shade400,
+          ),
+          const SizedBox(height: 16),
+          Text(
+            widget.emptyMessage ?? 'No recipes found',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.grey.shade600,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   List<Recipe> _filterBySource(List<Recipe> recipes) {
-    switch (sourceFilter) {
+    switch (widget.sourceFilter) {
       case RecipeSourceFilter.memoix:
         return recipes.where((r) => r.source == RecipeSource.memoix).toList();
       case RecipeSourceFilter.personal:
@@ -166,119 +205,65 @@ class RecipeListScreen extends ConsumerWidget {
         return recipes;
     }
   }
-}
 
-/// Reusable list view for recipes
-class RecipeListView extends StatelessWidget {
-  final List<Recipe> recipes;
-  final bool showCuisineHeaders;
+  List<Recipe> _filterRecipes(List<Recipe> recipes) {
+    var filtered = recipes;
 
-  const RecipeListView({
-    super.key,
-    required this.recipes,
-    this.showCuisineHeaders = true,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    if (!showCuisineHeaders) {
-      // Simple grid without grouping
-      return GridView.builder(
-        padding: const EdgeInsets.all(12),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          childAspectRatio: 0.75,
-          crossAxisSpacing: 12,
-          mainAxisSpacing: 12,
-        ),
-        itemCount: recipes.length,
-        itemBuilder: (context, index) {
-          return RecipeCard(
-            recipe: recipes[index],
-            onTap: () => AppRoutes.toRecipeDetail(context, recipes[index].uuid),
-          );
-        },
-      );
+    // Filter by search query
+    if (_searchQuery.isNotEmpty) {
+      filtered = filtered.where((r) {
+        return r.name.toLowerCase().contains(_searchQuery) ||
+            (r.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
+            (r.tags.any((tag) => tag.toLowerCase().contains(_searchQuery)));
+      }).toList();
     }
 
-    // Group recipes by cuisine
-    final grouped = _groupByCuisine(recipes);
+    // Filter by continent
+    if (_selectedContinent != 'All') {
+      filtered = filtered.where((r) {
+        final continent = ContinentMapping.getContinentFromCuisine(r.cuisine);
+        return continent == _selectedContinent;
+      }).toList();
+    }
 
-    return ListView.builder(
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      itemCount: grouped.length,
-      itemBuilder: (context, index) {
-        final entry = grouped.entries.elementAt(index);
-        final cuisineCode = entry.key;
-        final cuisineRecipes = entry.value;
-        final cuisine = Cuisine.byCode(cuisineCode);
-
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Cuisine header with flag
-            if (cuisineCode.isNotEmpty)
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                margin: const EdgeInsets.only(top: 8),
-                color: cuisine?.colour.withOpacity(0.2) ?? 
-                       MemoixColors.forCuisine(cuisineCode),
-                child: Row(
-                  children: [
-                    if (cuisine != null) ...[
-                      Text(cuisine.flag, style: const TextStyle(fontSize: 18)),
-                      const SizedBox(width: 8),
-                    ],
-                    Text(
-                      cuisine?.name ?? cuisineCode,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                        color: cuisine?.colour ?? Colors.black87,
-                      ),
-                    ),
-                    const Spacer(),
-                    Text(
-                      '${cuisineRecipes.length} recipe${cuisineRecipes.length == 1 ? '' : 's'}',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.grey.shade600,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            // Recipe cards
-            ...cuisineRecipes.map((recipe) => RecipeCard(
-                  recipe: recipe,
-                  onTap: () => AppRoutes.toRecipeDetail(context, recipe.uuid),
-                )),
-          ],
-        );
-      },
-    );
+    return filtered;
   }
 
-  Map<String, List<Recipe>> _groupByCuisine(List<Recipe> recipes) {
-    final Map<String, List<Recipe>> grouped = {};
-
-    for (final recipe in recipes) {
-      final cuisine = recipe.cuisine ?? '';
-      grouped.putIfAbsent(cuisine, () => []);
-      grouped[cuisine]!.add(recipe);
-    }
-
-    // Sort cuisines alphabetically, but put empty cuisine last
-    final sorted = Map.fromEntries(
-      grouped.entries.toList()
-        ..sort((a, b) {
-          if (a.key.isEmpty) return 1;
-          if (b.key.isEmpty) return -1;
-          return a.key.compareTo(b.key);
-        }),
+  void _showAddOptions(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.edit),
+              title: const Text('Create New Recipe'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toRecipeEdit(context, course: widget.course);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Scan from Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toOCRScanner(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.link),
+              title: const Text('Import from URL'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toURLImport(context);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
     );
-
-    return sorted;
   }
 }

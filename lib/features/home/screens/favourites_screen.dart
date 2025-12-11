@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../recipes/repository/recipe_repository.dart';
-import '../../recipes/widgets/recipe_card_enhanced.dart';
+import '../../recipes/widgets/recipe_card.dart';
 
 /// Screen showing all favorite recipes
 class FavouritesScreen extends ConsumerWidget {
