@@ -623,6 +623,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               initiallyExpanded: _caloriesController.text.isNotEmpty,
               tilePadding: EdgeInsets.zero,
               childrenPadding: const EdgeInsets.only(top: 8, bottom: 8),
+              shape: const Border(),  // Removes top/bottom divider lines
+              collapsedShape: const Border(),  // Removes lines when collapsed too
               children: [
                 Row(
                   children: [

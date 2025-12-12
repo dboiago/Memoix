@@ -8,6 +8,20 @@ import '../../statistics/models/cooking_stats.dart';
 import '../../../core/providers.dart';
 import '../../../app/theme/colors.dart';
 
+/// Format serves to remove unnecessary decimals (e.g., "6.0" -> "6")
+String _formatServes(String serves) {
+  // Try to parse as number and remove .0 suffix
+  final trimmed = serves.trim();
+  if (trimmed.endsWith('.0')) {
+    return trimmed.substring(0, trimmed.length - 2);
+  }
+  // Handle multiple decimals like "2.0-4.0" -> "2-4"
+  return trimmed.replaceAllMapped(
+    RegExp(r'(\d+)\.0(?=\D|$)'),
+    (match) => match.group(1)!,
+  );
+}
+
 /// Recipe card matching Figma design
 class RecipeCard extends ConsumerStatefulWidget {
   final Recipe recipe;
@@ -131,7 +145,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                       ],
                       
                       // Servings
-                      if (widget.recipe.serves != null) ...[
+                      if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty) ...[
                         Icon(
                           Icons.people_outline,
                           size: 14,
@@ -139,7 +153,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                         ),
                         const SizedBox(width: 4),
                         Text(
-                          widget.recipe.serves!,
+                          _formatServes(widget.recipe.serves!),
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -148,7 +162,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                       ],
                       
                       // Time
-                      if (widget.recipe.time != null) ...[
+                      if (widget.recipe.time != null && widget.recipe.time!.isNotEmpty) ...[
                         Icon(
                           Icons.schedule_outlined,
                           size: 14,

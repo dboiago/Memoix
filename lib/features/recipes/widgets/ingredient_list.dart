@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 import '../models/recipe.dart';
 
+/// Capitalize the first letter of each word in a string
+String _capitalizeWords(String text) {
+  if (text.isEmpty) return text;
+  return text.split(' ').map((word) {
+    if (word.isEmpty) return word;
+    // Don't capitalize common lowercase words in the middle
+    final lower = word.toLowerCase();
+    if (lower == 'of' || lower == 'and' || lower == 'or' || lower == 'the' || lower == 'a' || lower == 'an' || lower == 'to' || lower == 'for') {
+      return lower;
+    }
+    return word[0].toUpperCase() + word.substring(1).toLowerCase();
+  }).join(' ');
+}
+
 class IngredientList extends StatefulWidget {
   final List<Ingredient> ingredients;
 
@@ -109,7 +123,7 @@ class _IngredientListState extends State<IngredientList> {
             SizedBox(
               width: 140,
               child: Text(
-                ingredient.name,
+                _capitalizeWords(ingredient.name),
                 style: TextStyle(
                   decoration: isChecked ? TextDecoration.lineThrough : null,
                   color: isChecked

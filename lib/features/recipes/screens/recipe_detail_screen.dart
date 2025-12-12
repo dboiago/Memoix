@@ -16,6 +16,20 @@ import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
 import 'recipe_cooking_view.dart';
 
+/// Format serves to remove unnecessary decimals (e.g., "6.0" -> "6")
+String _formatServes(String serves) {
+  // Try to parse as number and remove .0 suffix
+  final trimmed = serves.trim();
+  if (trimmed.endsWith('.0')) {
+    return trimmed.substring(0, trimmed.length - 2);
+  }
+  // Handle multiple decimals like "2.0-4.0" -> "2-4"
+  return trimmed.replaceAllMapped(
+    RegExp(r'(\d+)\.0(?=\D|$)'),
+    (match) => match.group(1)!,
+  );
+}
+
 class RecipeDetailScreen extends ConsumerWidget {
   final String recipeId;
 
@@ -180,15 +194,15 @@ class RecipeDetailView extends ConsumerWidget {
                         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                         visualDensity: VisualDensity.compact,
                       ),
-                      if (recipe.serves != null)
+                      if (recipe.serves != null && recipe.serves!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
-                          label: Text(recipe.serves!),
+                          label: Text(_formatServes(recipe.serves!)),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
                         ),
-                      if (recipe.time != null)
+                      if (recipe.time != null && recipe.time!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
                           label: Text(recipe.time!),

@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+/// Capitalize the first letter of a sentence
+String _capitalizeSentence(String text) {
+  if (text.isEmpty) return text;
+  return text[0].toUpperCase() + text.substring(1);
+}
+
 class DirectionList extends StatefulWidget {
   final List<String> directions;
 
@@ -22,6 +28,77 @@ class _DirectionListState extends State<DirectionList> {
   String _getSectionName(String step) {
     final trimmed = step.trim();
     return trimmed.substring(1, trimmed.length - 1);
+  }
+
+  // Pattern to match optional/alternative text
+  static final RegExp _optionalPattern = RegExp(
+    r'(\(optional\)|\(opt\.\)|\(alt\.?\)|\(alternative\)|optional:|alt:|alternative:)',
+    caseSensitive: false,
+  );
+
+  // Build styled text with optional/alternative parts in italics
+  Widget _buildStyledText(String text, TextStyle? baseStyle, bool isCompleted, ThemeData theme) {
+    final matches = _optionalPattern.allMatches(text).toList();
+    
+    if (matches.isEmpty) {
+      // No optional text found, return plain text
+      return Text(
+        text,
+        style: baseStyle?.copyWith(
+          decoration: isCompleted ? TextDecoration.lineThrough : null,
+          color: isCompleted
+              ? theme.colorScheme.onSurface.withOpacity(0.5)
+              : null,
+          height: 1.5,
+        ),
+      );
+    }
+
+    // Build spans with italic styling for optional parts
+    final spans = <TextSpan>[];
+    int lastEnd = 0;
+
+    for (final match in matches) {
+      // Add text before the match
+      if (match.start > lastEnd) {
+        spans.add(TextSpan(
+          text: text.substring(lastEnd, match.start),
+        ));
+      }
+      
+      // Add the optional/alt text in italics with secondary color
+      spans.add(TextSpan(
+        text: match.group(0),
+        style: TextStyle(
+          fontStyle: FontStyle.italic,
+          color: isCompleted 
+              ? theme.colorScheme.onSurface.withOpacity(0.4)
+              : theme.colorScheme.secondary,
+        ),
+      ));
+      
+      lastEnd = match.end;
+    }
+
+    // Add remaining text after last match
+    if (lastEnd < text.length) {
+      spans.add(TextSpan(
+        text: text.substring(lastEnd),
+      ));
+    }
+
+    return RichText(
+      text: TextSpan(
+        style: baseStyle?.copyWith(
+          decoration: isCompleted ? TextDecoration.lineThrough : null,
+          color: isCompleted
+              ? theme.colorScheme.onSurface.withOpacity(0.5)
+              : theme.colorScheme.onSurface,
+          height: 1.5,
+        ),
+        children: spans,
+      ),
+    );
   }
 
   @override
@@ -85,7 +162,7 @@ class _DirectionListState extends State<DirectionList> {
                     shape: BoxShape.circle,
                     color: isCompleted
                         ? Colors.green
-                        : theme.colorScheme.primaryContainer,
+                        : theme.colorScheme.secondaryContainer,
                   ),
                   child: Center(
                     child: isCompleted
@@ -94,24 +171,20 @@ class _DirectionListState extends State<DirectionList> {
                             '$displayNumber',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: theme.colorScheme.onPrimaryContainer,
+                              color: theme.colorScheme.onSecondaryContainer,
                             ),
                           ),
                   ),
                 ),
                 const SizedBox(width: 12),
 
-                // Step text
+                // Step text with optional/alternative parts in italics
                 Expanded(
-                  child: Text(
-                    step,
-                    style: TextStyle(
-                      decoration: isCompleted ? TextDecoration.lineThrough : null,
-                      color: isCompleted
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
-                          : null,
-                      height: 1.5,
-                    ),
+                  child: _buildStyledText(
+                    _capitalizeSentence(step),
+                    theme.textTheme.bodyMedium,
+                    isCompleted,
+                    theme,
                   ),
                 ),
               ],
