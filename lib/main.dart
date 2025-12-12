@@ -13,6 +13,9 @@ void main() async {
 
   // Initialize local database
   await MemoixDatabase.initialize();
+  
+  // Refresh categories to apply any order/name updates
+  await MemoixDatabase.refreshCategories();
 
   // Perform an initial sync with a short timeout so recipes show on first run.
   try {

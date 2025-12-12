@@ -55,6 +55,17 @@ class MemoixDatabase {
     }
   }
 
+  /// Refresh categories with latest defaults (updates order, names, etc.)
+  /// Call this on app startup to apply category changes
+  static Future<void> refreshCategories() async {
+    final db = instance;
+    await db.writeTxn(() async {
+      // Clear existing categories and replace with fresh defaults
+      await db.categorys.clear();
+      await db.categorys.putAll(Category.defaults);
+    });
+  }
+
   /// Close the database (call on app dispose)
   static Future<void> close() async {
     await _instance?.close();

@@ -39,9 +39,24 @@ class _CourseGridView extends ConsumerWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Use max extent so columns auto-adjust as window shrinks
-        // Each card aims for ~120px wide minimum, will add more columns as space allows
-        final maxExtent = constraints.maxWidth >= 900 ? 180.0 : 150.0;
+        // Calculate target columns based on width, then derive extent
+        // This ensures cards grow to fill available space
+        final width = constraints.maxWidth - 32; // account for padding
+        int targetColumns;
+        if (width >= 1400) {
+          targetColumns = 9;
+        } else if (width >= 1100) {
+          targetColumns = 7;
+        } else if (width >= 800) {
+          targetColumns = 5;
+        } else if (width >= 500) {
+          targetColumns = 4;
+        } else {
+          targetColumns = 3;
+        }
+        // Calculate extent so cards fill the row (minus spacing)
+        final spacing = 12.0 * (targetColumns - 1);
+        final maxExtent = (width - spacing) / targetColumns;
 
         return CustomScrollView(
           slivers: [
