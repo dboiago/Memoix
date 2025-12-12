@@ -39,20 +39,9 @@ class _CourseGridView extends ConsumerWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Responsive grid: 2 cols on mobile, 3 on tablet, 4 on desktop (Figma)
-        int crossAxisCount = 2;
-        double aspectRatio = 1.4; // default for mobile
-        
-        if (constraints.maxWidth >= 1200) {
-          crossAxisCount = 4;
-          aspectRatio = 1.6; // wider/shorter on large screens
-        } else if (constraints.maxWidth >= 900) {
-          crossAxisCount = 4;
-          aspectRatio = 1.5;
-        } else if (constraints.maxWidth >= 640) {
-          crossAxisCount = 3;
-          aspectRatio = 1.5;
-        }
+        // Use max extent so columns auto-adjust as window shrinks
+        // Each card aims for ~120px wide minimum, will add more columns as space allows
+        final maxExtent = constraints.maxWidth >= 900 ? 180.0 : 150.0;
 
         return CustomScrollView(
           slivers: [
@@ -89,15 +78,15 @@ class _CourseGridView extends ConsumerWidget {
               ),
             ),
             
-            // Course cards grid
+            // Course cards grid - uses maxCrossAxisExtent for auto column count
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 24), // px-4 py-6
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
               sliver: SliverGrid(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: crossAxisCount,
-                  crossAxisSpacing: 12, // gap-3
+                gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                  maxCrossAxisExtent: maxExtent,
+                  crossAxisSpacing: 12,
                   mainAxisSpacing: 12,
-                  childAspectRatio: aspectRatio, // responsive aspect ratio
+                  childAspectRatio: 1.3, // slightly wider than tall
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {

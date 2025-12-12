@@ -154,13 +154,10 @@ class AppDrawer extends StatelessWidget {
                   ),
                   _DrawerTile(
                     icon: Icons.qr_code_scanner,
-                    title: 'QR Code',
+                    title: 'Scan QR Code',
                     onTap: () {
                       Navigator.pop(context);
-                      // TODO: Navigate to QR scanner/generator
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('QR Code feature coming soon')),
-                      );
+                      AppRoutes.toQRScanner(context);
                     },
                   ),
                   _DrawerTile(
@@ -168,10 +165,7 @@ class AppDrawer extends StatelessWidget {
                     title: 'Share Recipe',
                     onTap: () {
                       Navigator.pop(context);
-                      // TODO: Show share options
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Share feature coming soon')),
-                      );
+                      AppRoutes.toShareRecipe(context);
                     },
                   ),
                 ],
