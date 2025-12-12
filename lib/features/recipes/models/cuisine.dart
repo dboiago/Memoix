@@ -33,26 +33,30 @@ class Cuisine {
     Cuisine(code: 'TN', name: 'Tunisian', continent: 'African', flag: '🇹🇳', colour: Color(0xFFC1440E)),
     Cuisine(code: 'UG', name: 'Ugandan', continent: 'African', flag: '🇺🇬', colour: Color(0xFFD90000)),
 
-    // Americas (North/South)
-    Cuisine(code: 'AR', name: 'Argentine', continent: 'Americas', flag: '🇦🇷', colour: Color(0xFF75AADB)),
-    Cuisine(code: 'BO', name: 'Bolivian', continent: 'Americas', flag: '🇧🇴', colour: Color(0xFF007934)),
-    Cuisine(code: 'BR', name: 'Brazilian', continent: 'Americas', flag: '🇧🇷', colour: Color(0xFF009C3B)),
-    Cuisine(code: 'CA', name: 'Canadian', continent: 'Americas', flag: '🇨🇦', colour: Color(0xFFFF0000)),
-    Cuisine(code: 'CL', name: 'Chilean', continent: 'Americas', flag: '🇨🇱', colour: Color(0xFF0039A6)),
-    Cuisine(code: 'CO', name: 'Colombian', continent: 'Americas', flag: '🇨🇴', colour: Color(0xFFFCD116)),
-    Cuisine(code: 'CR', name: 'Costa Rican', continent: 'Americas', flag: '🇨🇷', colour: Color(0xFF002B7F)),
-    Cuisine(code: 'EC', name: 'Ecuadorian', continent: 'Americas', flag: '🇪🇨', colour: Color(0xFFFFD100)),
-    Cuisine(code: 'SV', name: 'Salvadoran', continent: 'Americas', flag: '🇸🇻', colour: Color(0xFF0047AB)),
-    Cuisine(code: 'GT', name: 'Guatemalan', continent: 'Americas', flag: '🇬🇹', colour: Color(0xFF4997D0)),
-    Cuisine(code: 'HN', name: 'Honduran', continent: 'Americas', flag: '🇭🇳', colour: Color(0xFF0073CF)),
-    Cuisine(code: 'MX', name: 'Mexican', continent: 'Americas', flag: '🇲🇽', colour: Color(0xFF006847)),
-    Cuisine(code: 'NI', name: 'Nicaraguan', continent: 'Americas', flag: '🇳🇮', colour: Color(0xFF0067C6)),
-    Cuisine(code: 'PA', name: 'Panamanian', continent: 'Americas', flag: '🇵🇦', colour: Color(0xFFDA121A)),
-    Cuisine(code: 'PY', name: 'Paraguayan', continent: 'Americas', flag: '🇵🇾', colour: Color(0xFFD52B1E)),
-    Cuisine(code: 'PE', name: 'Peruvian', continent: 'Americas', flag: '🇵🇪', colour: Color(0xFFD91023)),
-    Cuisine(code: 'US', name: 'American', continent: 'Americas', flag: '🇺🇸', colour: Color(0xFF3C3B6E)),
-    Cuisine(code: 'UY', name: 'Uruguayan', continent: 'Americas', flag: '🇺🇾', colour: Color(0xFF0038A8)),
-    Cuisine(code: 'VE', name: 'Venezuelan', continent: 'Americas', flag: '🇻🇪', colour: Color(0xFFFCE300)),
+    // North American
+    Cuisine(code: 'CA', name: 'Canadian', continent: 'North American', flag: '🇨🇦', colour: Color(0xFFFF0000)),
+    Cuisine(code: 'MX', name: 'Mexican', continent: 'North American', flag: '🇲🇽', colour: Color(0xFF006847)),
+    Cuisine(code: 'US', name: 'American', continent: 'North American', flag: '🇺🇸', colour: Color(0xFF3C3B6E)),
+
+    // Central American
+    Cuisine(code: 'CR', name: 'Costa Rican', continent: 'Central American', flag: '🇨🇷', colour: Color(0xFF002B7F)),
+    Cuisine(code: 'SV', name: 'Salvadoran', continent: 'Central American', flag: '🇸🇻', colour: Color(0xFF0047AB)),
+    Cuisine(code: 'GT', name: 'Guatemalan', continent: 'Central American', flag: '🇬🇹', colour: Color(0xFF4997D0)),
+    Cuisine(code: 'HN', name: 'Honduran', continent: 'Central American', flag: '🇭🇳', colour: Color(0xFF0073CF)),
+    Cuisine(code: 'NI', name: 'Nicaraguan', continent: 'Central American', flag: '🇳🇮', colour: Color(0xFF0067C6)),
+    Cuisine(code: 'PA', name: 'Panamanian', continent: 'Central American', flag: '🇵🇦', colour: Color(0xFFDA121A)),
+
+    // South American
+    Cuisine(code: 'AR', name: 'Argentine', continent: 'South American', flag: '🇦🇷', colour: Color(0xFF75AADB)),
+    Cuisine(code: 'BO', name: 'Bolivian', continent: 'South American', flag: '🇧🇴', colour: Color(0xFF007934)),
+    Cuisine(code: 'BR', name: 'Brazilian', continent: 'South American', flag: '🇧🇷', colour: Color(0xFF009C3B)),
+    Cuisine(code: 'CL', name: 'Chilean', continent: 'South American', flag: '🇨🇱', colour: Color(0xFF0039A6)),
+    Cuisine(code: 'CO', name: 'Colombian', continent: 'South American', flag: '🇨🇴', colour: Color(0xFFFCD116)),
+    Cuisine(code: 'EC', name: 'Ecuadorian', continent: 'South American', flag: '🇪🇨', colour: Color(0xFFFFD100)),
+    Cuisine(code: 'PY', name: 'Paraguayan', continent: 'South American', flag: '🇵🇾', colour: Color(0xFFD52B1E)),
+    Cuisine(code: 'PE', name: 'Peruvian', continent: 'South American', flag: '🇵🇪', colour: Color(0xFFD91023)),
+    Cuisine(code: 'UY', name: 'Uruguayan', continent: 'South American', flag: '🇺🇾', colour: Color(0xFF0038A8)),
+    Cuisine(code: 'VE', name: 'Venezuelan', continent: 'South American', flag: '🇻🇪', colour: Color(0xFFFCE300)),
 
     // Asian
     Cuisine(code: 'BD', name: 'Bangladeshi', continent: 'Asian', flag: '🇧🇩', colour: Color(0xFF006A4E)),

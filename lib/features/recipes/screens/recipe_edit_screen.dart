@@ -491,8 +491,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
               child: Row(
                 children: [
+                  // Space for drag handle
+                  const SizedBox(width: 32),
                   SizedBox(
-                    width: 140,
+                    width: 120,
                     child: Text('Ingredient', 
                       style: theme.textTheme.labelMedium?.copyWith(
                         fontWeight: FontWeight.bold,
@@ -521,16 +523,41 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
             ),
             
-            // Ingredient rows
+            // Ingredient rows (reorderable)
             Container(
               decoration: BoxDecoration(
                 border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
                 borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
               ),
-              child: Column(
-                children: List.generate(_ingredientRows.length, (index) {
-                  return _buildIngredientRowWidget(index);
-                }),
+              child: ReorderableListView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                buildDefaultDragHandles: false,
+                itemCount: _ingredientRows.length,
+                onReorder: (oldIndex, newIndex) {
+                  setState(() {
+                    if (newIndex > oldIndex) newIndex--;
+                    final item = _ingredientRows.removeAt(oldIndex);
+                    _ingredientRows.insert(newIndex, item);
+                  });
+                },
+                proxyDecorator: (child, index, animation) {
+                  return AnimatedBuilder(
+                    animation: animation,
+                    builder: (context, child) {
+                      return Material(
+                        elevation: 4,
+                        color: theme.colorScheme.surface,
+                        borderRadius: BorderRadius.circular(4),
+                        child: child,
+                      );
+                    },
+                    child: child,
+                  );
+                },
+                itemBuilder: (context, index) {
+                  return _buildIngredientRowWidget(index, key: ValueKey(_ingredientRows[index]));
+                },
               ),
             ),
 
@@ -781,7 +808,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
   }
 
-  Widget _buildIngredientRowWidget(int index) {
+  Widget _buildIngredientRowWidget(int index, {Key? key}) {
     final theme = Theme.of(context);
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
@@ -789,6 +816,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     // Section header row - spans full width with different styling
     if (row.isSection) {
       return Container(
+        key: key,
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
           color: theme.colorScheme.primaryContainer.withOpacity(0.3),
@@ -798,6 +826,18 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ),
         child: Row(
           children: [
+            // Drag handle for reordering (touch-friendly)
+            ReorderableDragStartListener(
+              index: index,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                child: Icon(
+                  Icons.drag_indicator,
+                  size: 20,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+            ),
             Icon(Icons.label_outline, size: 18, color: theme.colorScheme.primary),
             const SizedBox(width: 8),
             Expanded(
@@ -821,30 +861,74 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
             ),
             const SizedBox(width: 8),
-            // Toggle to convert back to ingredient
-            IconButton(
-              icon: const Icon(Icons.swap_horiz, size: 20),
-              tooltip: 'Convert to ingredient',
-              onPressed: () {
-                setState(() => row.isSection = false);
-              },
-              padding: EdgeInsets.zero,
-              constraints: const BoxConstraints(),
-            ),
-            // Delete button
-            IconButton(
+            // More options menu for section
+            PopupMenuButton<String>(
               icon: Icon(
-                Icons.remove_circle_outline,
+                Icons.more_vert,
                 size: 20,
-                color: _ingredientRows.length > 1 
-                    ? theme.colorScheme.error 
-                    : theme.colorScheme.outline,
+                color: theme.colorScheme.outline,
               ),
-              onPressed: _ingredientRows.length > 1 
-                  ? () => _removeIngredientRow(index) 
-                  : null,
               padding: EdgeInsets.zero,
               constraints: const BoxConstraints(),
+              itemBuilder: (context) => [
+                const PopupMenuItem(
+                  value: 'to_ingredient',
+                  child: Row(
+                    children: [
+                      Icon(Icons.swap_horiz, size: 18),
+                      SizedBox(width: 8),
+                      Text('Convert to ingredient'),
+                    ],
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 'insert_ingredient_above',
+                  child: Row(
+                    children: [
+                      Icon(Icons.vertical_align_top, size: 18),
+                      SizedBox(width: 8),
+                      Text('Insert ingredient above'),
+                    ],
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 'insert_ingredient_below',
+                  child: Row(
+                    children: [
+                      Icon(Icons.vertical_align_bottom, size: 18),
+                      SizedBox(width: 8),
+                      Text('Insert ingredient below'),
+                    ],
+                  ),
+                ),
+                if (_ingredientRows.length > 1)
+                  PopupMenuItem(
+                    value: 'delete',
+                    child: Row(
+                      children: [
+                        Icon(Icons.delete_outline, size: 18, color: theme.colorScheme.error),
+                        const SizedBox(width: 8),
+                        Text('Delete', style: TextStyle(color: theme.colorScheme.error)),
+                      ],
+                    ),
+                  ),
+              ],
+              onSelected: (value) {
+                switch (value) {
+                  case 'to_ingredient':
+                    setState(() => row.isSection = false);
+                    break;
+                  case 'insert_ingredient_above':
+                    _insertIngredientAt(index);
+                    break;
+                  case 'insert_ingredient_below':
+                    _insertIngredientAt(index + 1);
+                    break;
+                  case 'delete':
+                    _removeIngredientRow(index);
+                    break;
+                }
+              },
             ),
           ],
         ),
@@ -853,6 +937,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     
     // Regular ingredient row
     return Container(
+      key: key,
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
       decoration: BoxDecoration(
         border: isLast 
@@ -862,9 +947,21 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          // Drag handle for reordering (touch-friendly)
+          ReorderableDragStartListener(
+            index: index,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+              child: Icon(
+                Icons.drag_indicator,
+                size: 20,
+                color: theme.colorScheme.outline,
+              ),
+            ),
+          ),
           // Ingredient name
           SizedBox(
-            width: 140,
+            width: 120,
             child: TextField(
               controller: row.nameController,
               decoration: InputDecoration(
@@ -927,27 +1024,93 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             ),
           ),
           
-          // Delete button
+          // More options menu (convert to section, insert section, delete)
           SizedBox(
             width: 40,
-            child: IconButton(
+            child: PopupMenuButton<String>(
               icon: Icon(
-                Icons.remove_circle_outline,
+                Icons.more_vert,
                 size: 20,
-                color: _ingredientRows.length > 1 
-                    ? theme.colorScheme.error 
-                    : theme.colorScheme.outline,
+                color: theme.colorScheme.outline,
               ),
-              onPressed: _ingredientRows.length > 1 
-                  ? () => _removeIngredientRow(index) 
-                  : null,
               padding: EdgeInsets.zero,
               constraints: const BoxConstraints(),
+              itemBuilder: (context) => [
+                const PopupMenuItem(
+                  value: 'to_section',
+                  child: Row(
+                    children: [
+                      Icon(Icons.label_outline, size: 18),
+                      SizedBox(width: 8),
+                      Text('Convert to section'),
+                    ],
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 'insert_section_above',
+                  child: Row(
+                    children: [
+                      Icon(Icons.vertical_align_top, size: 18),
+                      SizedBox(width: 8),
+                      Text('Insert section above'),
+                    ],
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 'insert_section_below',
+                  child: Row(
+                    children: [
+                      Icon(Icons.vertical_align_bottom, size: 18),
+                      SizedBox(width: 8),
+                      Text('Insert section below'),
+                    ],
+                  ),
+                ),
+                if (_ingredientRows.length > 1)
+                  PopupMenuItem(
+                    value: 'delete',
+                    child: Row(
+                      children: [
+                        Icon(Icons.delete_outline, size: 18, color: theme.colorScheme.error),
+                        const SizedBox(width: 8),
+                        Text('Delete', style: TextStyle(color: theme.colorScheme.error)),
+                      ],
+                    ),
+                  ),
+              ],
+              onSelected: (value) {
+                switch (value) {
+                  case 'to_section':
+                    setState(() => row.isSection = true);
+                    break;
+                  case 'insert_section_above':
+                    _insertSectionAt(index);
+                    break;
+                  case 'insert_section_below':
+                    _insertSectionAt(index + 1);
+                    break;
+                  case 'delete':
+                    _removeIngredientRow(index);
+                    break;
+                }
+              },
             ),
           ),
         ],
       ),
     );
+  }
+
+  void _insertSectionAt(int index) {
+    setState(() {
+      _ingredientRows.insert(index, _IngredientRowController(isSection: true));
+    });
+  }
+
+  void _insertIngredientAt(int index) {
+    setState(() {
+      _ingredientRows.insert(index, _IngredientRowController());
+    });
   }
 
   void _showOcrText(BuildContext context) {
