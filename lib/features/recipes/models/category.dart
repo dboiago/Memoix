@@ -45,7 +45,7 @@ class Category {
   Color get color => Color(colorValue);
 
   /// Default categories matching your spreadsheet
-  /// Order: Apps, Soups, Mains, Veg'n, Sides, Desserts, Brunch, Drinks, Breads, Sauces, Rubs, Pickles, Modernist, Pizzas, Sandwiches, Smoking, Cheese, Scratch
+  /// Order: Apps, Soups, Mains, Veg'n, Sides, Salads, Desserts, Brunch, Drinks, Breads, Sauces, Rubs, Pickles, Modernist, Pizzas, Sandwiches, Smoking, Cheese, Scratch
   static List<Category> get defaults => [
         Category.create(
           slug: 'apps',
@@ -83,94 +83,101 @@ class Category {
           colorValue: MemoixColors.sides.value,
         ),
         Category.create(
+          slug: 'salad',
+          name: 'Salads',
+          iconName: 'grass',
+          sortOrder: 5,
+          colorValue: MemoixColors.salads.value,
+        ),
+        Category.create(
           slug: 'desserts',
           name: 'Desserts',
           iconName: 'cake',
-          sortOrder: 5,
+          sortOrder: 6,
           colorValue: MemoixColors.desserts.value,
         ),
         Category.create(
           slug: 'brunch',
           name: 'Brunch',
           iconName: 'egg_alt',
-          sortOrder: 6,
+          sortOrder: 7,
           colorValue: MemoixColors.brunch.value,
         ),
         Category.create(
           slug: 'drinks',
           name: 'Drinks',
           iconName: 'local_bar',
-          sortOrder: 7,
+          sortOrder: 8,
           colorValue: MemoixColors.drinks.value,
         ),
         Category.create(
           slug: 'breads',
           name: 'Breads',
           iconName: 'bakery_dining',
-          sortOrder: 8,
+          sortOrder: 9,
           colorValue: MemoixColors.breads.value,
         ),
         Category.create(
           slug: 'sauces',
           name: 'Sauces',
           iconName: 'water_drop',
-          sortOrder: 9,
+          sortOrder: 10,
           colorValue: MemoixColors.sauces.value,
         ),
         Category.create(
           slug: 'rubs',
           name: 'Rubs',
           iconName: 'local_fire_department',
-          sortOrder: 10,
+          sortOrder: 11,
           colorValue: MemoixColors.rubs.value,
         ),
         Category.create(
           slug: 'pickles',
           name: 'Pickles',
           iconName: 'local_florist',
-          sortOrder: 11,
+          sortOrder: 12,
           colorValue: MemoixColors.pickles.value,
         ),
         Category.create(
           slug: 'molecular',
           name: 'Modernist',
           iconName: 'science',
-          sortOrder: 12,
+          sortOrder: 13,
           colorValue: MemoixColors.molecular.value,
         ),
         Category.create(
           slug: 'pizzas',
           name: 'Pizzas',
           iconName: 'local_pizza',
-          sortOrder: 13,
+          sortOrder: 14,
           colorValue: MemoixColors.pizzas.value,
         ),
         Category.create(
           slug: 'sandwiches',
           name: 'Sandwiches',
           iconName: 'lunch_dining',
-          sortOrder: 14,
+          sortOrder: 15,
           colorValue: MemoixColors.sandwiches.value,
         ),
         Category.create(
           slug: 'smoking',
           name: 'Smoking',
           iconName: 'outdoor_grill',
-          sortOrder: 15,
+          sortOrder: 16,
           colorValue: MemoixColors.smoking.value,
         ),
         Category.create(
           slug: 'cheese',
           name: 'Cheese',
           iconName: 'lunch_dining',
-          sortOrder: 16,
+          sortOrder: 17,
           colorValue: MemoixColors.cheese.value,
         ),
         Category.create(
           slug: 'scratch',
           name: 'Scratch',
           iconName: 'note_alt',
-          sortOrder: 17,
+          sortOrder: 18,
           colorValue: MemoixColors.scratch.value,
         ),
       ];

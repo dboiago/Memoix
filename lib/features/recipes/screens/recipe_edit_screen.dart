@@ -194,7 +194,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
     // Always have at least one empty row for adding ingredients
     if (_ingredientRows.isEmpty) {
-      _addIngredientRow();
+      // For salads, add default sections for salad ingredients and dressing
+      if (_selectedCourse == 'salad') {
+        _addIngredientRow(name: 'Salad', isSection: true);
+        _addIngredientRow(); // Empty row for salad ingredients
+        _addIngredientRow(name: 'Dressing', isSection: true);
+        _addIngredientRow(); // Empty row for dressing ingredients
+      } else {
+        _addIngredientRow();
+      }
     }
 
     setState(() => _isLoading = false);
@@ -342,26 +350,47 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               items: const [
                 DropdownMenuItem(value: 'apps', child: Text('Apps')),
                 DropdownMenuItem(value: 'soup', child: Text('Soup')),
-                DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(value: 'mains', child: Text('Mains')),
                 DropdownMenuItem(value: 'vegan', child: Text('Veg*n')),
                 DropdownMenuItem(value: 'sides', child: Text('Sides')),
-                DropdownMenuItem(value: 'breads', child: Text('Breads')),
+                DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
+                DropdownMenuItem(value: 'brunch', child: Text('Brunch')),
+                DropdownMenuItem(value: 'drinks', child: Text('Drinks')),
+                DropdownMenuItem(value: 'breads', child: Text('Breads')),
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
                 DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
+                DropdownMenuItem(value: 'pickles', child: Text('Pickles/Brines')),
+                DropdownMenuItem(value: 'molecular', child: Text('Modernist')),
                 DropdownMenuItem(value: 'pizzas', child: Text('Pizzas')),
                 DropdownMenuItem(value: 'sandwiches', child: Text('Sandwiches')),
-                DropdownMenuItem(value: 'cheese', child: Text('Cheese')),
-                DropdownMenuItem(value: 'pickles', child: Text('Pickles/Brines')),
                 DropdownMenuItem(value: 'smoking', child: Text('Smoking')),
-                DropdownMenuItem(value: 'molecular', child: Text('Molecular')),
+                DropdownMenuItem(value: 'cheese', child: Text('Cheese')),
                 DropdownMenuItem(value: 'scratch', child: Text('Scratch')),
-                DropdownMenuItem(value: 'drinks', child: Text('Drinks')),
               ],
               onChanged: (value) {
                 if (value != null) {
+                  final previousCourse = _selectedCourse;
                   setState(() => _selectedCourse = value);
+                  
+                  // If switching TO salad from non-salad with empty ingredients, add default sections
+                  if (value == 'salad' && previousCourse != 'salad') {
+                    final hasOnlyEmptyRows = _ingredientRows.every((row) => 
+                        row.nameController.text.isEmpty && 
+                        row.amountController.text.isEmpty);
+                    if (hasOnlyEmptyRows && _ingredientRows.length <= 1) {
+                      // Clear and add salad sections
+                      for (final row in _ingredientRows) {
+                        row.dispose();
+                      }
+                      _ingredientRows.clear();
+                      _addIngredientRow(name: 'Salad', isSection: true);
+                      _addIngredientRow();
+                      _addIngredientRow(name: 'Dressing', isSection: true);
+                      _addIngredientRow();
+                      setState(() {});
+                    }
+                  }
                 }
               },
             ),
