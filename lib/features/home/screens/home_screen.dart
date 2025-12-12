@@ -106,7 +106,12 @@ class _CourseGridView extends ConsumerWidget {
                       category: category,
                       recipeCount: recipeCount,
                       onTap: () {
-                        AppRoutes.toRecipeList(context, category.slug);
+                        // Scratch card opens the scratch pad tool instead of recipe list
+                        if (category.slug == 'scratch') {
+                          AppRoutes.toScratchPad(context);
+                        } else {
+                          AppRoutes.toRecipeList(context, category.slug);
+                        }
                       },
                     );
                   },
