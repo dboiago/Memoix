@@ -19,9 +19,9 @@ class DeepLinkService {
   Future<void> initialize(BuildContext context) async {
     // Handle initial link if app was opened via deep link
     try {
-      final initialUri = await _appLinks.getInitialLinkString();
-      if (initialUri != null && initialUri.isNotEmpty) {
-        await _handleDeepLink(context, Uri.parse(initialUri));
+      final initialUri = await _appLinks.getInitialAppLink();
+      if (initialUri != null) {
+        await _handleDeepLink(context, initialUri);
       }
     } catch (e) {
       debugPrint('Error getting initial deep link: $e');
