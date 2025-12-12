@@ -8,6 +8,7 @@ import '../../recipes/models/source_filter.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
+import '../../pizzas/repository/pizza_repository.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -107,23 +108,36 @@ class _CourseGridView extends ConsumerWidget {
                   (context, index) {
                     final category = categories[index];
                     
-                    // Get recipe count for this category
-                    final recipesAsync = ref.watch(
-                      recipesByCourseProvider(category.slug),
-                    );
+                    // Special handling for pizzas - use pizza count
+                    final bool isPizza = category.slug == 'pizzas';
                     
-                    final recipeCount = recipesAsync.maybeWhen(
-                      data: (recipes) => recipes.length,
-                      orElse: () => 0,
-                    );
+                    // Get count for this category
+                    final int itemCount;
+                    if (isPizza) {
+                      final pizzasAsync = ref.watch(pizzaCountProvider);
+                      itemCount = pizzasAsync.maybeWhen(
+                        data: (count) => count,
+                        orElse: () => 0,
+                      );
+                    } else {
+                      final recipesAsync = ref.watch(
+                        recipesByCourseProvider(category.slug),
+                      );
+                      itemCount = recipesAsync.maybeWhen(
+                        data: (recipes) => recipes.length,
+                        orElse: () => 0,
+                      );
+                    }
 
                     return CourseCard(
                       category: category,
-                      recipeCount: recipeCount,
+                      recipeCount: itemCount,
                       onTap: () {
-                        // Scratch card opens the scratch pad tool instead of recipe list
+                        // Special category routing
                         if (category.slug == 'scratch') {
                           AppRoutes.toScratchPad(context);
+                        } else if (category.slug == 'pizzas') {
+                          AppRoutes.toPizzaList(context);
                         } else {
                           AppRoutes.toRecipeList(context, category.slug);
                         }

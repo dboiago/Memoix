@@ -5,6 +5,9 @@ import '../../features/recipes/screens/recipe_detail_screen.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/recipes/screens/recipe_list_screen.dart';
 import '../../features/recipes/models/source_filter.dart';
+import '../../features/pizzas/screens/pizza_list_screen.dart';
+import '../../features/pizzas/screens/pizza_detail_screen.dart';
+import '../../features/pizzas/screens/pizza_edit_screen.dart';
 import '../../features/import/screens/import_screen.dart';
 import '../../features/import/screens/qr_scanner_screen.dart';
 import '../../features/import/screens/ocr_scanner_screen.dart';
@@ -160,6 +163,32 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => const ScratchPadScreen(),
+      ),
+    );
+  }
+
+  // ============ PIZZA ROUTES ============
+
+  static void toPizzaList(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => const PizzaListScreen(),
+      ),
+    );
+  }
+
+  static void toPizzaDetail(BuildContext context, String pizzaId) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => PizzaDetailScreen(pizzaId: pizzaId),
+      ),
+    );
+  }
+
+  static void toPizzaEdit(BuildContext context, {String? pizzaId}) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => PizzaEditScreen(pizzaId: pizzaId),
       ),
     );
   }
