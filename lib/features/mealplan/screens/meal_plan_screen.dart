@@ -91,11 +91,19 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
                     final week = ref.watch(selectedWeekProvider);
                     final weekEnd = week.add(const Duration(days: 6));
                     final format = DateFormat('MMM d');
-                    return Text(
-                      '${format.format(week)} - ${format.format(weekEnd)}',
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+                    return Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          '${format.format(week)} - ${format.format(weekEnd)}',
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        // Weekly nutrition summary chip
+                        _WeeklyNutritionChip(weekStart: week),
+                      ],
                     );
                   },
                 ),
@@ -677,6 +685,160 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
           ),
         );
       },
+    );
+  }
+}
+/// Widget that shows total calories for the week's meal plan
+class _WeeklyNutritionChip extends ConsumerWidget {
+  final DateTime weekStart;
+
+  const _WeeklyNutritionChip({required this.weekStart});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final weekPlanAsync = ref.watch(weeklyPlanProvider(weekStart));
+    
+    return weekPlanAsync.when(
+      loading: () => const SizedBox.shrink(),
+      error: (_, __) => const SizedBox.shrink(),
+      data: (weeklyPlan) {
+        // Get all recipe IDs for the week
+        final recipeIds = weeklyPlan.allRecipeIds;
+        if (recipeIds.isEmpty) return const SizedBox.shrink();
+        
+        // Calculate total calories from recipes
+        return _NutritionSummaryChip(recipeIds: recipeIds.toList());
+      },
+    );
+  }
+}
+
+/// Chip that calculates and displays total nutrition for a list of recipes
+class _NutritionSummaryChip extends ConsumerWidget {
+  final List<String> recipeIds;
+
+  const _NutritionSummaryChip({required this.recipeIds});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final recipesAsync = ref.watch(allRecipesProvider);
+    
+    return recipesAsync.when(
+      loading: () => const SizedBox.shrink(),
+      error: (_, __) => const SizedBox.shrink(),
+      data: (allRecipes) {
+        // Find recipes and sum up nutrition
+        int totalCalories = 0;
+        double totalProtein = 0;
+        double totalCarbs = 0;
+        double totalFat = 0;
+        int recipesWithNutrition = 0;
+        
+        for (final id in recipeIds) {
+          final recipe = allRecipes.firstWhere(
+            (r) => r.uuid == id,
+            orElse: () => Recipe()..name = '',
+          );
+          if (recipe.nutrition != null && recipe.nutrition!.hasData) {
+            recipesWithNutrition++;
+            if (recipe.nutrition!.calories != null) {
+              totalCalories += recipe.nutrition!.calories!;
+            }
+            if (recipe.nutrition!.proteinContent != null) {
+              totalProtein += recipe.nutrition!.proteinContent!;
+            }
+            if (recipe.nutrition!.carbohydrateContent != null) {
+              totalCarbs += recipe.nutrition!.carbohydrateContent!;
+            }
+            if (recipe.nutrition!.fatContent != null) {
+              totalFat += recipe.nutrition!.fatContent!;
+            }
+          }
+        }
+        
+        if (totalCalories == 0) return const SizedBox.shrink();
+        
+        return Tooltip(
+          message: 'Total: ${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat\n($recipesWithNutrition of ${recipeIds.length} recipes have nutrition data)',
+          child: ActionChip(
+            avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.primary),
+            label: Text('$totalCalories cal'),
+            visualDensity: VisualDensity.compact,
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            onPressed: () => _showNutritionDetails(
+              context,
+              totalCalories: totalCalories,
+              totalProtein: totalProtein,
+              totalCarbs: totalCarbs,
+              totalFat: totalFat,
+              recipesWithNutrition: recipesWithNutrition,
+              totalRecipes: recipeIds.length,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  void _showNutritionDetails(
+    BuildContext context, {
+    required int totalCalories,
+    required double totalProtein,
+    required double totalCarbs,
+    required double totalFat,
+    required int recipesWithNutrition,
+    required int totalRecipes,
+  }) {
+    final theme = Theme.of(context);
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Row(
+          children: [
+            Icon(Icons.local_fire_department, color: theme.colorScheme.primary),
+            const SizedBox(width: 8),
+            const Text('Nutrition Summary'),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _nutritionRow('Calories', '$totalCalories'),
+            _nutritionRow('Protein', '${totalProtein.round()}g'),
+            _nutritionRow('Carbohydrates', '${totalCarbs.round()}g'),
+            _nutritionRow('Fat', '${totalFat.round()}g'),
+            const SizedBox(height: 16),
+            Text(
+              '$recipesWithNutrition of $totalRecipes recipes have nutrition data.\nValues are estimates per serving.',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('OK'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _nutritionRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label),
+          Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
+        ],
+      ),
     );
   }
 }
