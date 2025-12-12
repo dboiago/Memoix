@@ -41,10 +41,17 @@ class _CourseGridView extends ConsumerWidget {
       builder: (context, constraints) {
         // Responsive grid: 2 cols on mobile, 3 on tablet, 4 on desktop (Figma)
         int crossAxisCount = 2;
-        if (constraints.maxWidth >= 1024) {
+        double aspectRatio = 1.4; // default for mobile
+        
+        if (constraints.maxWidth >= 1200) {
           crossAxisCount = 4;
+          aspectRatio = 1.6; // wider/shorter on large screens
+        } else if (constraints.maxWidth >= 900) {
+          crossAxisCount = 4;
+          aspectRatio = 1.5;
         } else if (constraints.maxWidth >= 640) {
           crossAxisCount = 3;
+          aspectRatio = 1.5;
         }
 
         return CustomScrollView(
@@ -90,7 +97,7 @@ class _CourseGridView extends ConsumerWidget {
                   crossAxisCount: crossAxisCount,
                   crossAxisSpacing: 12, // gap-3
                   mainAxisSpacing: 12,
-                  childAspectRatio: 1.3, // wider/shorter cards to reduce height
+                  childAspectRatio: aspectRatio, // responsive aspect ratio
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
