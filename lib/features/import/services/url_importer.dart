@@ -5,6 +5,29 @@ import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../recipes/models/recipe.dart';
+import '../../recipes/models/spirit.dart';
+
+/// Service to import recipes from URLs
+class UrlRecipeImporter {
+  static const _uuid = Uuid();
+
+  /// Known cocktail recipe sites
+  static const _cocktailSites = [
+    'diffordsguide.com',
+    'liquor.com',
+    'thecocktailproject.com',
+    'imbibemagazine.com',
+    'cocktailsandshots.com',
+    'cocktails.lovetoknow.com',
+    'thespruceats.com/cocktails',
+    'punchdrink.com',
+    'makedrinks.com',
+    'drinksmixer.com',
+    'cocktail.uk',
+    'absolutdrinks.com',
+    'drinkflow.com',
+    'drinkify.co',
+  ];
 
 /// Service to import recipes from URLs
 class UrlRecipeImporter {
@@ -207,12 +230,26 @@ class UrlRecipeImporter {
     // Parse nutrition information if available
     final nutrition = _parseNutrition(data['nutrition']);
 
+    // Determine course with drink detection
+    final course = _guessCourse(data, sourceUrl: sourceUrl);
+    
+    // For drinks, detect the base spirit and set as subcategory
+    String? subcategory;
+    if (course == 'drinks') {
+      subcategory = _detectSpirit(ingredients);
+      // Convert code to display name
+      if (subcategory != null) {
+        subcategory = Spirit.toDisplayName(subcategory);
+      }
+    }
+
     // Parse the recipe data
     return Recipe.create(
       uuid: _uuid.v4(),
       name: _cleanRecipeName(_parseString(data['name']) ?? 'Untitled Recipe'),
-      course: _guessCourse(data),
+      course: course,
       cuisine: _parseCuisine(data['recipeCuisine']),
+      subcategory: subcategory,
       serves: _parseYield(data['recipeYield']),
       time: _parseTime(data),
       ingredients: ingredients,
@@ -837,9 +874,28 @@ class UrlRecipeImporter {
     return null;
   }
 
-  String _guessCourse(Map data) {
+  /// Check if a URL is from a known cocktail/drinks site
+  bool _isCocktailSite(String url) {
+    final lower = url.toLowerCase();
+    return _cocktailSites.any((site) => lower.contains(site));
+  }
+
+  /// Detect the course, with special handling for drinks/cocktails
+  String _guessCourse(Map data, {String? sourceUrl}) {
     final category = _parseString(data['recipeCategory'])?.toLowerCase();
     final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
+    final name = _parseString(data['name'])?.toLowerCase() ?? '';
+    final description = _parseString(data['description'])?.toLowerCase() ?? '';
+    
+    // Check if this is from a cocktail site
+    if (sourceUrl != null && _isCocktailSite(sourceUrl)) {
+      return 'drinks';
+    }
+    
+    // Check for drink/cocktail indicators in the data
+    if (_isDrinkRecipe(category, keywords, name, description)) {
+      return 'drinks';
+    }
     
     if (category != null) {
       if (category.contains('dessert') || category.contains('sweet')) return 'Desserts';
@@ -856,6 +912,47 @@ class UrlRecipeImporter {
     if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'Veg*n';
     
     return 'Mains'; // Default
+  }
+
+  /// Check if this is a drink/cocktail recipe based on content
+  bool _isDrinkRecipe(String? category, String keywords, String name, String description) {
+    final allText = '${category ?? ''} $keywords $name $description'.toLowerCase();
+    
+    // Cocktail/drink category indicators
+    const drinkIndicators = [
+      'cocktail', 'cocktails', 'drink', 'drinks', 'beverage', 'beverages',
+      'martini', 'margarita', 'mojito', 'negroni', 'manhattan', 'daiquiri',
+      'old fashioned', 'old-fashioned', 'highball', 'lowball', 'sour',
+      'fizz', 'collins', 'spritz', 'punch', 'shooter', 'shot',
+      'mocktail', 'smoothie', 'shake', 'milkshake',
+    ];
+    
+    // Spirit indicators
+    const spiritIndicators = [
+      'gin', 'vodka', 'rum', 'whiskey', 'whisky', 'bourbon', 'scotch',
+      'tequila', 'mezcal', 'brandy', 'cognac', 'liqueur',
+      'champagne', 'prosecco', 'wine', 'vermouth', 'amaro', 'aperol',
+      'campari', 'bitters',
+    ];
+    
+    for (final indicator in drinkIndicators) {
+      if (allText.contains(indicator)) return true;
+    }
+    
+    // If category specifically mentions spirits, it's likely a drink
+    if (category != null) {
+      for (final spirit in spiritIndicators) {
+        if (category.contains(spirit)) return true;
+      }
+    }
+    
+    return false;
+  }
+
+  /// Detect the base spirit for a cocktail from ingredients
+  String? _detectSpirit(List<Ingredient> ingredients) {
+    final ingredientNames = ingredients.map((i) => i.name).toList();
+    return Spirit.detectFromIngredients(ingredientNames);
   }
 
   /// Fallback HTML parsing for sites without JSON-LD
@@ -890,10 +987,24 @@ class UrlRecipeImporter {
       return null;
     }
 
+    // Detect if this is a drink based on URL and content
+    final isCocktail = _isCocktailSite(sourceUrl);
+    final course = isCocktail ? 'drinks' : 'Mains';
+    
+    // For drinks, detect the base spirit
+    String? subcategory;
+    if (isCocktail) {
+      final spiritCode = _detectSpirit(ingredients);
+      if (spiritCode != null) {
+        subcategory = Spirit.toDisplayName(spiritCode);
+      }
+    }
+
     return Recipe.create(
       uuid: _uuid.v4(),
       name: _cleanRecipeName(title),
-      course: 'Mains',
+      course: course,
+      subcategory: subcategory,
       ingredients: ingredients,
       directions: directions,
       sourceUrl: sourceUrl,

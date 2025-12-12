@@ -66,6 +66,22 @@ class MemoixColors {
   static const Color continentMiddleEast = Color(0xFFD4A574);  // Saffron/amber
   static const Color continentOceanian = Color(0xFF6BA3B5);    // Ocean teal
 
+  // Spirit-based dot colors for drinks/cocktails
+  // Thematic colors complementing the warm palette
+  static const Color spiritGin = Color(0xFF7EB8C4);            // Clear/juniper blue-green
+  static const Color spiritVodka = Color(0xFFB8C4D4);          // Clean/neutral silver-blue
+  static const Color spiritWhiskey = Color(0xFFD4A574);        // Amber/oak
+  static const Color spiritRum = Color(0xFFD4956E);            // Caramel/molasses
+  static const Color spiritTequila = Color(0xFFE8C878);        // Agave gold
+  static const Color spiritBrandy = Color(0xFFC4876E);         // Grape/copper
+  static const Color spiritWine = Color(0xFF983058);           // Deep wine red
+  static const Color spiritSparkling = Color(0xFFF8E8A0);      // Champagne gold
+  static const Color spiritLiqueur = Color(0xFFC898B8);        // Sweet lavender
+  static const Color spiritBeer = Color(0xFFD8A850);           // Golden ale
+  static const Color spiritTea = Color(0xFF8EB878);            // Green tea
+  static const Color spiritCoffee = Color(0xFF6F4E37);         // Coffee brown
+  static const Color spiritMocktail = Color(0xFF7EB8A8);       // Fresh teal
+
   // UI colors
   static const Color background = Color(0xFFFAFAFA);
   static const Color surface = Color(0xFFFFFFFF);
@@ -288,6 +304,101 @@ class MemoixColors {
          'australia', 'hawaii', 'fiji', 'samoa', 'tonga', 'papua new guinea',
          'oceanian', 'polynesian'].contains(lower)) {
       return continentOceanian;
+    }
+    
+    // Fallback
+    return Colors.grey;
+  }
+
+  /// Get dot color for a spirit/drink base type
+  /// Uses themed colors for visual identification of cocktail base spirits
+  static Color forSpiritDot(String? spirit) {
+    if (spirit == null || spirit.isEmpty) return Colors.grey;
+    
+    final lower = spirit.toLowerCase().trim();
+    final upper = spirit.toUpperCase().trim();
+    
+    // Gin family
+    if (upper == 'GIN' || lower == 'gin') return spiritGin;
+    
+    // Vodka
+    if (upper == 'VODKA' || lower == 'vodka') return spiritVodka;
+    
+    // Whiskey family (bourbon, rye, scotch, etc.)
+    if (['WHISKEY', 'BOURBON', 'RYE', 'SCOTCH', 'WHISKY'].contains(upper) ||
+        ['whiskey', 'bourbon', 'rye', 'scotch', 'whisky', 'irish whiskey'].contains(lower)) {
+      return spiritWhiskey;
+    }
+    
+    // Rum family (including cachaça)
+    if (['RUM', 'CACHACA'].contains(upper) ||
+        ['rum', 'cachaça', 'cachaca', 'rhum'].contains(lower)) {
+      return spiritRum;
+    }
+    
+    // Tequila/Mezcal
+    if (['TEQUILA', 'MEZCAL'].contains(upper) ||
+        ['tequila', 'mezcal', 'agave'].contains(lower)) {
+      return spiritTequila;
+    }
+    
+    // Brandy family (cognac, pisco)
+    if (['BRANDY', 'COGNAC', 'PISCO'].contains(upper) ||
+        ['brandy', 'cognac', 'pisco', 'armagnac', 'calvados'].contains(lower)) {
+      return spiritBrandy;
+    }
+    
+    // Wine (still wines)
+    if (['RED_WINE', 'WHITE_WINE', 'ROSE_WINE', 'VERMOUTH', 'SHERRY', 'PORT'].contains(upper) ||
+        ['red wine', 'white wine', 'rosé', 'rose', 'vermouth', 'sherry', 'port', 'wine'].contains(lower)) {
+      return spiritWine;
+    }
+    
+    // Sparkling wine family
+    if (['PROSECCO', 'CHAMPAGNE', 'SPARKLING'].contains(upper) ||
+        ['prosecco', 'champagne', 'sparkling', 'sparkling wine', 'cava', 'cremant'].contains(lower)) {
+      return spiritSparkling;
+    }
+    
+    // Liqueurs and Aperitifs
+    if (['LIQUEUR', 'AMARO', 'APERITIF'].contains(upper) ||
+        ['liqueur', 'amaro', 'aperitif', 'aperol', 'campari', 'chartreuse', 
+         'triple sec', 'cointreau', 'grand marnier', 'kahlua', 'baileys',
+         'amaretto', 'frangelico', 'sambuca', 'st germain'].contains(lower)) {
+      return spiritLiqueur;
+    }
+    
+    // Beer family
+    if (['BEER', 'CIDER'].contains(upper) ||
+        ['beer', 'cider', 'lager', 'ale', 'stout', 'ipa', 'porter'].contains(lower)) {
+      return spiritBeer;
+    }
+    
+    // Tea
+    if (upper == 'TEA' || ['tea', 'barley tea', 'green tea', 'oolong', 'chai', 'matcha'].contains(lower)) {
+      return spiritTea;
+    }
+    
+    // Coffee
+    if (upper == 'COFFEE' || ['coffee', 'espresso', 'latte', 'cappuccino'].contains(lower)) {
+      return spiritCoffee;
+    }
+    
+    // Mocktails and other non-alcoholic
+    if (['MOCKTAIL', 'SMOOTHIE', 'JUICE', 'SODA', 'HOT_CHOC'].contains(upper) ||
+        ['mocktail', 'smoothie', 'juice', 'soda', 'tonic', 'hot chocolate', 
+         'non-alcoholic', 'virgin'].contains(lower)) {
+      return spiritMocktail;
+    }
+    
+    // Other Asian spirits
+    if (['SAKE', 'SOJU'].contains(upper) || ['sake', 'saké', 'soju'].contains(lower)) {
+      return spiritSparkling; // Light/clear color
+    }
+    
+    // Absinthe/Aquavit
+    if (['ABSINTHE', 'AQUAVIT'].contains(upper) || ['absinthe', 'aquavit'].contains(lower)) {
+      return spiritGin; // Similar botanical profile
     }
     
     // Fallback

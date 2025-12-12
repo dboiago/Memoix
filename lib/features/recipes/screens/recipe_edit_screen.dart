@@ -4,6 +4,7 @@ import 'package:uuid/uuid.dart';
 
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
+import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 
 /// Converts text fractions and decimals to unicode fraction symbols
@@ -353,10 +354,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 16),
 
-            // Cuisine and Region row (stacked on narrow screens)
+            // Cuisine and Region/Spirit row (stacked on narrow screens)
             LayoutBuilder(
               builder: (context, constraints) {
                 final isNarrow = constraints.maxWidth < 400;
+                final isDrink = _selectedCourse == 'drinks';
+                
                 if (isNarrow) {
                   // Stacked layout for phone
                   return Column(
@@ -366,14 +369,24 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                         onChanged: (cuisine) => setState(() => _selectedCuisine = cuisine),
                       ),
                       const SizedBox(height: 12),
-                      TextField(
-                        controller: _regionController,
-                        decoration: const InputDecoration(
-                          labelText: 'Region (optional)',
-                          hintText: 'e.g., Szechuan, Cantonese',
+                      if (isDrink)
+                        _SpiritSelector(
+                          controller: _regionController,
+                          onChanged: (spirit) {
+                            setState(() {
+                              _regionController.text = spirit ?? '';
+                            });
+                          },
+                        )
+                      else
+                        TextField(
+                          controller: _regionController,
+                          decoration: const InputDecoration(
+                            labelText: 'Region (optional)',
+                            hintText: 'e.g., Szechuan, Cantonese',
+                          ),
+                          textCapitalization: TextCapitalization.words,
                         ),
-                        textCapitalization: TextCapitalization.words,
-                      ),
                     ],
                   );
                 } else {
@@ -389,14 +402,23 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       ),
                       const SizedBox(width: 12),
                       Expanded(
-                        child: TextField(
-                          controller: _regionController,
-                          decoration: const InputDecoration(
-                            labelText: 'Region (optional)',
-                            hintText: 'e.g., Szechuan',
-                          ),
-                          textCapitalization: TextCapitalization.words,
-                        ),
+                        child: isDrink
+                          ? _SpiritSelector(
+                              controller: _regionController,
+                              onChanged: (spirit) {
+                                setState(() {
+                                  _regionController.text = spirit ?? '';
+                                });
+                              },
+                            )
+                          : TextField(
+                              controller: _regionController,
+                              decoration: const InputDecoration(
+                                labelText: 'Region (optional)',
+                                hintText: 'e.g., Szechuan',
+                              ),
+                              textCapitalization: TextCapitalization.words,
+                            ),
                       ),
                     ],
                   );
@@ -968,6 +990,148 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Spirit type selector for drinks/cocktails
+class _SpiritSelector extends StatelessWidget {
+  final TextEditingController controller;
+  final ValueChanged<String?> onChanged;
+
+  const _SpiritSelector({
+    required this.controller,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final currentValue = controller.text.isNotEmpty ? controller.text : null;
+    final spirit = currentValue != null ? Spirit.lookup(currentValue) : null;
+    
+    return InkWell(
+      onTap: () => _showSpiritSheet(context),
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Spirit Type',
+          suffixIcon: Icon(Icons.arrow_drop_down),
+        ),
+        child: Text(
+          spirit != null
+              ? '${spirit.icon} ${spirit.name}'
+              : currentValue ?? 'Select spirit (optional)',
+          style: TextStyle(
+            color: currentValue != null
+                ? Theme.of(context).colorScheme.onSurface
+                : Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showSpiritSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => _SpiritPickerSheet(
+        selectedSpirit: controller.text.isNotEmpty ? controller.text : null,
+        onChanged: (name) {
+          onChanged(name);
+          Navigator.pop(ctx);
+        },
+        onClear: () {
+          onChanged(null);
+          Navigator.pop(ctx);
+        },
+      ),
+    );
+  }
+}
+
+/// Bottom sheet with spirit list grouped by category
+class _SpiritPickerSheet extends StatelessWidget {
+  final String? selectedSpirit;
+  final ValueChanged<String> onChanged;
+  final VoidCallback onClear;
+
+  const _SpiritPickerSheet({
+    required this.selectedSpirit,
+    required this.onChanged,
+    required this.onClear,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final grouped = Spirit.byCategory;
+    
+    return DraggableScrollableSheet(
+      initialChildSize: 0.7,
+      minChildSize: 0.3,
+      maxChildSize: 0.9,
+      expand: false,
+      builder: (_, controller) => Column(
+        children: [
+          // Header
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                const Text(
+                  'Select Spirit Type',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: onClear,
+                  child: const Text('Clear'),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ),
+          const Divider(height: 1),
+          // Content
+          Expanded(
+            child: ListView(
+              controller: controller,
+              children: grouped.entries.map((entry) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                      child: Text(
+                        entry.key,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Theme.of(context).colorScheme.primary,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                    ...entry.value.map((spirit) {
+                      final isSelected = selectedSpirit == spirit.name;
+                      return ListTile(
+                        leading: Text(spirit.icon, style: const TextStyle(fontSize: 24)),
+                        title: Text(spirit.name),
+                        trailing: isSelected
+                            ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+                            : null,
+                        selected: isSelected,
+                        onTap: () => onChanged(spirit.name),
+                      );
+                    }),
+                  ],
+                );
+              }).toList(),
+            ),
+          ),
+        ],
       ),
     );
   }

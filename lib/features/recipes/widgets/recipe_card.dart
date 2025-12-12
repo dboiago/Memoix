@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
+import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../../core/providers.dart';
@@ -70,11 +71,48 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   ),
                   const SizedBox(height: 4),
                   
-                  // Cuisine/country dot + servings + time
+                  // Cuisine/spirit indicator dot + servings + time
                   Row(
                     children: [
-                      // Cuisine indicator with continent-colored dot
-                      if (cuisine != null && cuisine.isNotEmpty) ...[
+                      // For drinks: show spirit dot, for food: show cuisine dot
+                      if (_isDrink()) ...[
+                        // Spirit indicator for drinks
+                        if (widget.recipe.subcategory != null && widget.recipe.subcategory!.isNotEmpty) ...[
+                          Text(
+                            '\u2022',
+                            style: TextStyle(
+                              color: MemoixColors.forSpiritDot(widget.recipe.subcategory),
+                              fontSize: 16,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            _displayDrinkInfo(),
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                        ] else if (cuisine != null && cuisine.isNotEmpty) ...[
+                          // Fallback to cuisine for drinks without spirit (e.g., Korean tea)
+                          Text(
+                            '\u2022',
+                            style: TextStyle(
+                              color: MemoixColors.forContinentDot(cuisine),
+                              fontSize: 16,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            Cuisine.toAdjective(cuisine),
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                        ],
+                      ] else if (cuisine != null && cuisine.isNotEmpty) ...[
+                        // Cuisine indicator for food recipes
                         Text(
                           '\u2022',
                           style: TextStyle(
@@ -197,6 +235,25 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
       return '$adj ($subcategory)';
     }
     return adj;
+  }
+
+  /// Check if this recipe is a drink/cocktail
+  bool _isDrink() {
+    final course = widget.recipe.course?.toLowerCase();
+    return course == 'drinks' || course == 'drink' || course == 'beverages';
+  }
+
+  /// Display drink info: spirit name + optional cuisine origin
+  String _displayDrinkInfo() {
+    final spirit = widget.recipe.subcategory ?? '';
+    final cuisine = widget.recipe.cuisine;
+    
+    // Show spirit name, with cuisine if it's an origin-specific drink
+    if (cuisine != null && cuisine.isNotEmpty) {
+      final cuisineAdj = Cuisine.toAdjective(cuisine);
+      return '$spirit ($cuisineAdj)';
+    }
+    return Spirit.toDisplayName(spirit);
   }
 }
 
