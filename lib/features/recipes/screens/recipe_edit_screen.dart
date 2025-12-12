@@ -194,9 +194,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
     // Always have at least one empty row for adding ingredients
     if (_ingredientRows.isEmpty) {
-      // For salads, add default sections for salad ingredients and dressing
+      // For salads, add a Dressing section after initial ingredients
       if (_selectedCourse == 'salad') {
-        _addIngredientRow(name: 'Salad', isSection: true);
         _addIngredientRow(); // Empty row for salad ingredients
         _addIngredientRow(name: 'Dressing', isSection: true);
         _addIngredientRow(); // Empty row for dressing ingredients
@@ -373,18 +372,17 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   final previousCourse = _selectedCourse;
                   setState(() => _selectedCourse = value);
                   
-                  // If switching TO salad from non-salad with empty ingredients, add default sections
+                  // If switching TO salad from non-salad with empty ingredients, add Dressing section
                   if (value == 'salad' && previousCourse != 'salad') {
                     final hasOnlyEmptyRows = _ingredientRows.every((row) => 
                         row.nameController.text.isEmpty && 
                         row.amountController.text.isEmpty);
                     if (hasOnlyEmptyRows && _ingredientRows.length <= 1) {
-                      // Clear and add salad sections
+                      // Clear and add dressing section
                       for (final row in _ingredientRows) {
                         row.dispose();
                       }
                       _ingredientRows.clear();
-                      _addIngredientRow(name: 'Salad', isSection: true);
                       _addIngredientRow();
                       _addIngredientRow(name: 'Dressing', isSection: true);
                       _addIngredientRow();

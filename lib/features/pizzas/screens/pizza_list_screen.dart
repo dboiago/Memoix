@@ -97,8 +97,6 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
         onPressed: () => AppRoutes.toPizzaEdit(context),
         icon: const Icon(Icons.add),
         label: const Text('Add Pizza'),
-        backgroundColor: MemoixColors.pizzas,
-        foregroundColor: Colors.white,
       ),
     );
   }

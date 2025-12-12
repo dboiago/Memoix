@@ -6,7 +6,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
-import '../../../app/theme/colors.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 
@@ -24,19 +23,37 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _notesController = TextEditingController();
-  final _cheeseController = TextEditingController();
-  final _toppingController = TextEditingController();
+  final _customBaseController = TextEditingController();
 
-  PizzaBase _selectedBase = PizzaBase.tomato;
-  List<String> _cheeses = [];
-  List<String> _toppings = [];
+  // Controllers for cheese rows
+  final List<TextEditingController> _cheeseControllers = [];
+  // Controllers for topping rows  
+  final List<TextEditingController> _toppingControllers = [];
+
+  String _selectedBase = 'Tomato'; // String to allow custom bases
   String? _imagePath;
   Pizza? _existingPizza;
   bool _isLoading = true;
 
+  // Predefined bases
+  static const List<String> _defaultBases = [
+    'Tomato',
+    'Oil',
+    'Pesto',
+    'Cream',
+    'BBQ Sauce',
+    'Buffalo',
+    'Alfredo',
+    'Garlic Butter',
+    'Marinara',
+    'No Sauce',
+  ];
+
   @override
   void initState() {
     super.initState();
+    _addCheeseRow(); // Start with one empty row
+    _addToppingRow(); // Start with one empty row
     _loadPizza();
   }
 
@@ -44,9 +61,60 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   void dispose() {
     _nameController.dispose();
     _notesController.dispose();
-    _cheeseController.dispose();
-    _toppingController.dispose();
+    _customBaseController.dispose();
+    for (final c in _cheeseControllers) {
+      c.dispose();
+    }
+    for (final c in _toppingControllers) {
+      c.dispose();
+    }
     super.dispose();
+  }
+
+  void _addCheeseRow({String value = ''}) {
+    final controller = TextEditingController(text: value);
+    controller.addListener(() => _onCheeseChanged());
+    _cheeseControllers.add(controller);
+  }
+
+  void _addToppingRow({String value = ''}) {
+    final controller = TextEditingController(text: value);
+    controller.addListener(() => _onToppingChanged());
+    _toppingControllers.add(controller);
+  }
+
+  void _onCheeseChanged() {
+    // If last row has content, add a new empty row
+    if (_cheeseControllers.isNotEmpty && 
+        _cheeseControllers.last.text.isNotEmpty) {
+      setState(() => _addCheeseRow());
+    }
+  }
+
+  void _onToppingChanged() {
+    // If last row has content, add a new empty row
+    if (_toppingControllers.isNotEmpty && 
+        _toppingControllers.last.text.isNotEmpty) {
+      setState(() => _addToppingRow());
+    }
+  }
+
+  void _removeCheeseRow(int index) {
+    if (_cheeseControllers.length > 1) {
+      setState(() {
+        _cheeseControllers[index].dispose();
+        _cheeseControllers.removeAt(index);
+      });
+    }
+  }
+
+  void _removeToppingRow(int index) {
+    if (_toppingControllers.length > 1) {
+      setState(() {
+        _toppingControllers[index].dispose();
+        _toppingControllers.removeAt(index);
+      });
+    }
   }
 
   Future<void> _loadPizza() async {
@@ -57,10 +125,28 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
         _existingPizza = pizza;
         _nameController.text = pizza.name;
         _notesController.text = pizza.notes ?? '';
-        _selectedBase = pizza.base;
-        _cheeses = List.from(pizza.cheeses);
-        _toppings = List.from(pizza.toppings);
+        _selectedBase = pizza.base.displayName;
         _imagePath = pizza.imageUrl;
+
+        // Clear default rows and load cheeses
+        for (final c in _cheeseControllers) {
+          c.dispose();
+        }
+        _cheeseControllers.clear();
+        for (final cheese in pizza.cheeses) {
+          _addCheeseRow(value: cheese);
+        }
+        _addCheeseRow(); // Add empty row at end
+
+        // Clear default rows and load toppings
+        for (final c in _toppingControllers) {
+          c.dispose();
+        }
+        _toppingControllers.clear();
+        for (final topping in pizza.toppings) {
+          _addToppingRow(value: topping);
+        }
+        _addToppingRow(); // Add empty row at end
       }
     }
     setState(() => _isLoading = false);
@@ -117,67 +203,20 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Base dropdown
-            DropdownButtonFormField<PizzaBase>(
-              value: _selectedBase,
-              decoration: const InputDecoration(
-                labelText: 'Base Sauce',
-                border: OutlineInputBorder(),
-              ),
-              items: PizzaBase.values.map((base) {
-                return DropdownMenuItem(
-                  value: base,
-                  child: Text(base.displayName),
-                );
-              }).toList(),
-              onChanged: (value) {
-                if (value != null) {
-                  setState(() => _selectedBase = value);
-                }
-              },
-            ),
+            // Base sauce selector
+            _buildBaseSauceSelector(theme),
             const SizedBox(height: 24),
 
             // Cheeses section
             _buildSectionHeader(theme, 'Cheeses'),
             const SizedBox(height: 8),
-            _buildChipsInput(
-              controller: _cheeseController,
-              items: _cheeses,
-              hintText: 'Add cheese...',
-              onAdd: (value) {
-                if (value.isNotEmpty && !_cheeses.contains(value)) {
-                  setState(() => _cheeses.add(value));
-                }
-              },
-              onRemove: (value) {
-                setState(() => _cheeses.remove(value));
-              },
-              chipColor: Colors.amber.withOpacity(0.15),
-              chipBorderColor: Colors.amber.withOpacity(0.4),
-              chipTextColor: Colors.amber.shade800,
-            ),
+            _buildCheeseRows(theme),
             const SizedBox(height: 24),
 
             // Toppings section
             _buildSectionHeader(theme, 'Toppings'),
             const SizedBox(height: 8),
-            _buildChipsInput(
-              controller: _toppingController,
-              items: _toppings,
-              hintText: 'Add topping...',
-              onAdd: (value) {
-                if (value.isNotEmpty && !_toppings.contains(value)) {
-                  setState(() => _toppings.add(value));
-                }
-              },
-              onRemove: (value) {
-                setState(() => _toppings.remove(value));
-              },
-              chipColor: theme.colorScheme.secondaryContainer,
-              chipBorderColor: theme.colorScheme.secondary.withOpacity(0.3),
-              chipTextColor: theme.colorScheme.onSecondaryContainer,
-            ),
+            _buildToppingRows(theme),
             const SizedBox(height: 24),
 
             // Notes field
@@ -220,74 +259,179 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     );
   }
 
-  Widget _buildChipsInput({
-    required TextEditingController controller,
-    required List<String> items,
-    required String hintText,
-    required Function(String) onAdd,
-    required Function(String) onRemove,
-    required Color chipColor,
-    required Color chipBorderColor,
-    required Color chipTextColor,
-  }) {
-    final theme = Theme.of(context);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Input row
-        Row(
+  Widget _buildBaseSauceSelector(ThemeData theme) {
+    final GlobalKey buttonKey = GlobalKey();
+    
+    return InkWell(
+      key: buttonKey,
+      borderRadius: BorderRadius.circular(4),
+      onTap: () => _showBaseSauceMenu(buttonKey, theme),
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Base Sauce',
+          border: OutlineInputBorder(),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Expanded(
-              child: TextField(
-                controller: controller,
-                decoration: InputDecoration(
-                  hintText: hintText,
-                  border: const OutlineInputBorder(),
-                  isDense: true,
-                ),
-                onSubmitted: (value) {
-                  onAdd(value.trim());
-                  controller.clear();
-                },
-              ),
-            ),
-            const SizedBox(width: 8),
-            IconButton(
-              onPressed: () {
-                onAdd(controller.text.trim());
-                controller.clear();
-              },
-              icon: const Icon(Icons.add_circle),
-              color: theme.colorScheme.primary,
-            ),
+            Text(_selectedBase),
+            const Icon(Icons.arrow_drop_down),
           ],
         ),
-        const SizedBox(height: 8),
-        // Chips
-        if (items.isNotEmpty)
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: items.map((item) {
-              return Chip(
-                label: Text(item),
-                onDeleted: () => onRemove(item),
-                backgroundColor: chipColor,
-                side: BorderSide(color: chipBorderColor),
-                labelStyle: TextStyle(color: chipTextColor),
-                deleteIconColor: chipTextColor,
-              );
-            }).toList(),
+      ),
+    );
+  }
+
+  void _showBaseSauceMenu(GlobalKey key, ThemeData theme) {
+    final RenderBox renderBox = key.currentContext!.findRenderObject() as RenderBox;
+    final Offset offset = renderBox.localToGlobal(Offset.zero);
+    final Size size = renderBox.size;
+
+    showMenu<String>(
+      context: context,
+      position: RelativeRect.fromLTRB(
+        offset.dx,
+        offset.dy + size.height,
+        offset.dx + size.width,
+        offset.dy + size.height + 300,
+      ),
+      items: [
+        ..._defaultBases.map((base) => PopupMenuItem<String>(
+          value: base,
+          child: Row(
+            children: [
+              if (base == _selectedBase)
+                Icon(Icons.check, size: 18, color: theme.colorScheme.primary)
+              else
+                const SizedBox(width: 18),
+              const SizedBox(width: 12),
+              Text(base),
+            ],
           ),
-        if (items.isEmpty)
-          Text(
-            'None added yet',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.outline,
-            ),
+        )),
+        const PopupMenuDivider(),
+        PopupMenuItem<String>(
+          value: '__custom__',
+          child: Row(
+            children: [
+              Icon(Icons.add, size: 18, color: theme.colorScheme.primary),
+              const SizedBox(width: 12),
+              const Text('Add Custom...'),
+            ],
           ),
+        ),
       ],
+    ).then((value) {
+      if (value == null) return;
+      if (value == '__custom__') {
+        _showCustomBaseDialog(theme);
+      } else {
+        setState(() => _selectedBase = value);
+      }
+    });
+  }
+
+  Future<void> _showCustomBaseDialog(ThemeData theme) async {
+    _customBaseController.clear();
+    final result = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Custom Base Sauce'),
+        content: TextField(
+          controller: _customBaseController,
+          autofocus: true,
+          decoration: const InputDecoration(
+            hintText: 'Enter sauce name...',
+            border: OutlineInputBorder(),
+          ),
+          textCapitalization: TextCapitalization.words,
+          onSubmitted: (value) {
+            Navigator.of(ctx).pop(value.trim());
+          },
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(ctx).pop(_customBaseController.text.trim()),
+            child: const Text('Add'),
+          ),
+        ],
+      ),
+    );
+    
+    if (result != null && result.isNotEmpty) {
+      setState(() => _selectedBase = result);
+    }
+  }
+
+  Widget _buildCheeseRows(ThemeData theme) {
+    return Column(
+      children: List.generate(_cheeseControllers.length, (index) {
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Row(
+            children: [
+              Expanded(
+                child: TextField(
+                  controller: _cheeseControllers[index],
+                  decoration: InputDecoration(
+                    hintText: index == 0 && _cheeseControllers.length == 1
+                        ? 'e.g., Mozzarella'
+                        : null,
+                    border: const OutlineInputBorder(),
+                    isDense: true,
+                  ),
+                  textCapitalization: TextCapitalization.words,
+                ),
+              ),
+              if (_cheeseControllers[index].text.isNotEmpty || _cheeseControllers.length > 1)
+                IconButton(
+                  icon: Icon(Icons.remove_circle_outline, 
+                    color: theme.colorScheme.error.withOpacity(0.7)),
+                  onPressed: () => _removeCheeseRow(index),
+                  visualDensity: VisualDensity.compact,
+                ),
+            ],
+          ),
+        );
+      }),
+    );
+  }
+
+  Widget _buildToppingRows(ThemeData theme) {
+    return Column(
+      children: List.generate(_toppingControllers.length, (index) {
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Row(
+            children: [
+              Expanded(
+                child: TextField(
+                  controller: _toppingControllers[index],
+                  decoration: InputDecoration(
+                    hintText: index == 0 && _toppingControllers.length == 1
+                        ? 'e.g., Pepperoni'
+                        : null,
+                    border: const OutlineInputBorder(),
+                    isDense: true,
+                  ),
+                  textCapitalization: TextCapitalization.words,
+                ),
+              ),
+              if (_toppingControllers[index].text.isNotEmpty || _toppingControllers.length > 1)
+                IconButton(
+                  icon: Icon(Icons.remove_circle_outline, 
+                    color: theme.colorScheme.error.withOpacity(0.7)),
+                  onPressed: () => _removeToppingRow(index),
+                  visualDensity: VisualDensity.compact,
+                ),
+            ],
+          ),
+        );
+      }),
     );
   }
 
@@ -451,13 +595,23 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   Future<void> _savePizza() async {
     if (!_formKey.currentState!.validate()) return;
 
+    // Collect non-empty values from controllers
+    final cheeses = _cheeseControllers
+        .map((c) => c.text.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+    final toppings = _toppingControllers
+        .map((c) => c.text.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+
     final pizza = _existingPizza ?? Pizza();
     pizza
       ..uuid = _existingPizza?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
-      ..base = _selectedBase
-      ..cheeses = _cheeses
-      ..toppings = _toppings
+      ..base = PizzaBaseExtension.fromString(_selectedBase)
+      ..cheeses = cheeses
+      ..toppings = toppings
       ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
       ..imageUrl = _imagePath
       ..source = _existingPizza?.source ?? PizzaSource.personal
