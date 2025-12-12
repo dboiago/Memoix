@@ -1,0 +1,889 @@
+[
+  {
+    "uuid": "86818d40-b6bb-4155-a765-31b9aa524029",
+    "name": "Creamy Bean Soup (Simple)",
+    "course": "soup",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "2023-02-04 00:00:00",
+    "time": "45 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Stock",
+        "amount": "4 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "1/2 box of stock",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "White Beans",
+        "amount": "1 can",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrots",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Celery",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3-5 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bacon",
+        "amount": "4 strips",
+        "unit": null,
+        "preparation": null,
+        "alternative": "King's cafe",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "White Pepper",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bay leaf",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Flakes",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Sautee 3 strips of bacon then onions in butter in pot",
+      "Add carrot, celery then garlic",
+      "Add beans once veg has softened and has some colour; Add seasoning; Add chili flakes (optional)",
+      "Add stock and bring to boil",
+      "Remove bay leaves and puree",
+      "Return to heat and adjust liquid, heat and seasoning to taste",
+      "Fry last strip of bacon in another pan and add as garnish before serving",
+      "Drizzle with chili oil (optional)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "6a783f02-b574-4b3c-bf76-77852af1e351",
+    "name": "Kimchi Jjigae",
+    "course": "soup",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "3.0",
+    "time": "30 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Kimchi",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "30 g / ¼",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Green Onion",
+        "amount": "5 g / ½",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Shiitake",
+        "amount": "50 g / 2",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Firm Tofu",
+        "amount": "150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Gochugaru",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Alt: Red Pepper Flakes",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Mirin",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Gochujang",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Minced",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Add all the other ingredients (kimchi, onion, mushrooms, tofu, water and the base sauce) except for green onion into the pot",
+      "Boil the pot on medium high heat initially then reduce the heat to medium once it starts boiling; Cook 10-15 Minutes",
+      "Add sliced green onion and turn the heat off; Serve with rice"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "71c894be-8af4-4c9c-a2cd-30be4af9117d",
+    "name": "Potato Soup",
+    "course": "soup",
+    "cuisine": "DE",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Potato",
+        "amount": "2 lb (3-5)",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Leek",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Celeriac",
+        "amount": "4 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: 2-3 celery",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bacon",
+        "amount": "8.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chicken Stock",
+        "amount": "4 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Heavy Cream",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parsley",
+        "amount": "4 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Marjoram",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Sautee onions and leek until translucent",
+      "Add half of the bacon, potato and celery and soften a bit (3-5 min)",
+      "Add stock and herbs/spices and cook until poatoes are soft",
+      "Use immersion blender or blend in batches until smooth",
+      "Stir in cream (don't boil)",
+      "optional: cook the other half of the bacon and chop, add as crispy garnish"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "929dc144-04a3-4b19-9604-5020ac5a4f77",
+    "name": "Ribollita (Tuscan Bean Soup)",
+    "course": "soup",
+    "cuisine": "IT",
+    "subcategory": null,
+    "serves": "6.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "4 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Celery",
+        "amount": "2 sticks",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Fennel",
+        "amount": "1 bulb",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Zucchini",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Tomatoes",
+        "amount": "400 g / 14 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Navy Beans",
+        "amount": "400 g / 14 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Pesto",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vegetable Stock",
+        "amount": "3.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Saute onion, carrot, garlic, celery and fennel ~10 min in pot",
+      "Add zucchini ~2 min",
+      "Add stock, beans, pesto and tomatoes",
+      "Bring to a boil; Reduce and simmer 25-30 min",
+      "Season to taste",
+      "optional: saute spinich 2 min and add to bowl then ladel soup over"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "694e19fc-f8bd-4339-a0ce-a93a5e1869ec",
+    "name": "Stracciatella (Italian Wedding Soup)",
+    "course": "soup",
+    "cuisine": "IT",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Stock",
+        "amount": "18 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Chicken pref.",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "9.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parmesan",
+        "amount": "9 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parsley",
+        "amount": "6 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Spinch",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Note: Divide everything by 3 for a more reasonable amount (nutmeg is a \"pinch\")",
+      "Bring stock to boil",
+      "Combine eggs, parm, parsley, nutmeg, s&p in bowl",
+      "Whisk in mixed ingredients",
+      "Add spinich last 2 min or sautee and add to bowl then ladel soup over top"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "15a58c23-6551-4207-bb70-8a646b5cdfac",
+    "name": "Bean Soup (Spanish)",
+    "course": "soup",
+    "cuisine": "IT",
+    "subcategory": null,
+    "serves": "6.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "amount": "3 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Thyme",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Rosemary",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bay Leaf",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Tomato Puree",
+        "amount": "1 can",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cannellini Beans",
+        "amount": "2 cans",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parsley",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Hazlenuts",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional, alt: Almonds",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Veg Stock",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Brown onion slowly like you're caramalizing (important)",
+      "Add garlic once onions brown so as to not burn",
+      "Add tomato puree and reduce, you want to bring out the sweetness",
+      "Add stock and herbs but not bay leaf",
+      "Add first can of beans and puree with immersion blender",
+      "Add bay leaf and simmer ~30 min",
+      "When almost done add the other can of beans",
+      "Toast hazlenuts then chop; sprinkle on top or mix with chopped parsley and olive oil and add on top"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "d262040c-9b5a-47fd-9426-81514ae6c6d0",
+    "name": "Mushroom-Garlic Cream Soup",
+    "course": "soup",
+    "cuisine": "FR",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Mushrooms",
+        "amount": "680 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Celery",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "2025-06-07 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "40 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oil",
+        "amount": "20 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Thyme",
+        "amount": "3-4 sprigs",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Tarragon",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parmesan",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Rind; Thumb size",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Flakes",
+        "amount": "pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "White Wine",
+        "amount": "25 mL",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Stock",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cream",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "S&P",
+        "amount": "to taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Sear mushrooms in batchs on med-high heat in butter and oil",
+      "Very important to not steam them, they need to caramalize; All the flavour is built here",
+      "(Optional) Reserve some for garnish",
+      "Add onion and celery until translucent; Add garlic after",
+      "Deglaze with wine/sherry au sec",
+      "Add stock and herbs; Simmer 12-15 min",
+      "Add cream; Remove stems/rind; Blend smooth",
+      "Add a splash of sherry vinegar"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  }
+]

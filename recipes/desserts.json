@@ -1,0 +1,1675 @@
+[
+  {
+    "uuid": "ddb36651-02e5-46a7-93af-4319ce89e71e",
+    "name": "Banana Pistachio Cake",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Banana",
+        "amount": "1.5 C / 2-3",
+        "unit": null,
+        "preparation": null,
+        "alternative": "(Over) Ripe",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Flour",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "All Purpose",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Soda",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Buttermilk",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Pistachio",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Chopped; Toasted",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cream butter and sugar",
+      "Add eggs, mashed banana, vanilla",
+      "Add drys to creamed",
+      "Add milk",
+      "Fold in nuts",
+      "Pour batter into 2 pans",
+      "Bake at 350 for 45-55 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "f1ba5d25-0437-45c5-8f94-47021dd367da",
+    "name": "Chai Gingerbread Cupcakes",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "18.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "2 C & 2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Pastry",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Golden Brown Sugar",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cardamom",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Allspice",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Buttermilk",
+        "amount": "0.33 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Canola Oil",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Fancy Molasses",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Seperated",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Sift flour, ½ C sugar, brown sugar, baking powder, spices, S&P",
+      "Make a well and add oil, buttermilk, molasses and vanilla",
+      "Beat for 1 min; Add egg yolks; Beat 1 min",
+      "Whip egg whites in seperate bowl until foamy",
+      "Add ½ C sugar and beak until stiff peaks",
+      "Fold whites into batter",
+      "Spoon into muffin cups and bake at 375 for 15-18 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "b55a1298-7e26-4610-aa92-31325f206b86",
+    "name": "Chocolate Wacky Cake (Vegan)",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "12.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Brown Sugar",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Soda",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cocoa",
+        "amount": "0.66 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vegetable Oil",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cider Vinegar",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Sift drys in a bowl",
+      "Mix wets in another bowl",
+      "Mix wet into drys; Do not overmix",
+      "Pour into 2 10in cake pans (greased and floured)",
+      "Bake at 325 for ~25 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "1e8800b5-9de4-4712-8645-1b2f0c4f9842",
+    "name": "Lavender Ice Cream",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Light Cream",
+        "amount": "4 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Milk",
+        "amount": "2.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Lavender",
+        "amount": "3-5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Gently heat milk and lavender (do not boil) ~5 min",
+      "Strain out lavendar",
+      "Stir in salt and sugar",
+      "Stir in vanilla and cream",
+      "Chill immediately, minimum 2 hours",
+      "Put in ice cream machine",
+      "If no ice cream machine: place in stainless steel bowl in freezer and whisk every 15 min until thickened"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "5d8f8604-619b-43d7-b1e6-ba59fb14303f",
+    "name": "Sangria Cake",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "2.25 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "0.75 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Orange Zest",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sangria",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg Whites",
+        "amount": "5.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Mix flour, baking powder, salt",
+      "Cream butter, sugar and orange zest until pale and fluffy (~3 min)",
+      "Reduce speed and add eggs one at a time; Add vanilla",
+      "Alternate adding dry mixture and sangria",
+      "Add red food colouring if desired",
+      "Bake at 350 for 30 min",
+      "Bring sugar and water to a boil, reduce heat and simmer for 1 min",
+      "Allow to cool completely",
+      "Put egg white and sugar and mix until smooth",
+      "Put over a double boiler until no longer grainy (~3 min); I don't do this",
+      "Use paddle attachment and add in cubed butter slowly and mix until smooth",
+      "Add vanilla and colouring",
+      "Place a layer of cake on a plate, Brush with simple syrup then top with butter cream; Add berries if desired; Repeat"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "22c22fb2-8549-41c8-ade1-c30517c76bcc",
+    "name": "Soft Pumpkin Cookies",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "2.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Soda",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "½ C / 1 stick",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Pumpkin Puree",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Combine flour, baking soda, baking powder, cinnamon, nutmeg and salt",
+      "Beat sugar and ½ C butter to cream",
+      "Beat in pumpkin, egg and vanilla",
+      "Slowly beat in dry mixture",
+      "Drop by rounded tablespoon onto baking sheet",
+      "Bake at 350 for 15-18 min (edges are firm)",
+      "Cool on tray 2 min then move to rack"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "a848e800-2de1-42ae-9260-3a476ec6145f",
+    "name": "Gingerbread Cake",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Espresso Powder",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cocoa",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ground Ginger",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "8 oz / ½ Block",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Brown Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "4.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chopped Ginger",
+        "amount": "2.5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Molasses",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Mix flour, respresso, cocoa, powdered ginger, baking powder, salt and pepper",
+      "Cream butter and sugar",
+      "Add eggs one at a time to the sugar and butter",
+      "Add fresh ginger to the creamed butter mixture",
+      "Add molasses to the creamed mixture",
+      "Fold in the drys",
+      "Bake at 350 for 50-60 minutes"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "cd8b2f8a-9fb0-4920-99da-0d7ca350d826",
+    "name": "Flourless Chocolate Torte",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "amount": "14 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Milk Chocolate",
+        "amount": "10 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "8 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cream",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "9.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "4 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Melt chocolate, butter, cream, ½ C sugar",
+      "Whisk egg yolks with the vanilla",
+      "Loosly whisk eggs whites with ½ C sugar",
+      "Slowly temper chocolate into egg yolks/vanilla",
+      "Fold chocolate/yolk mix into egg whites/sugar",
+      "Mix until incorporated",
+      "Pour into spring form lined with parchment",
+      "Bake at 350 for 90 min with a water bath; Rotate every 30 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "4354882d-7af7-47f8-a05a-e4347f9cee3c",
+    "name": "Soft Chocolate Chip Cookies",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "\"24\" cookies",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Brown Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "AP Flour",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cornstarch",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: sub Corn&Soda",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Soda",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "for 1 tsp bk powder",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chocolate Chips",
+        "amount": "8 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cream butter and sugar",
+      "Add eggs and vanilla",
+      "Stir in drys",
+      "Add chocolate chips",
+      "Bake for 8-10 minutes at 350"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "f5828b20-fc80-4cc0-a85b-5ebe0384837d",
+    "name": "Lemon Crumble Loaf Cake",
+    "course": "desserts",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "AP Flour",
+        "amount": "2 C / 300 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "0.75 C / 150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sea Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "½ C / 115 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "room temp / cubed",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Lemon Zest",
+        "amount": "1 Tbsp / 15 mL",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sour Cream",
+        "amount": "0.66 C / 160 mL",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg Yolk",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Berries",
+        "amount": "1 C / 250 mL",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "AP Flour",
+        "amount": "0.75 C / 110 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "0.33 C / 70 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Lemon Zest",
+        "amount": "1 Tbsp / 15 mL",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sea Salt",
+        "amount": "Pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "¼ C / 60 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "melted",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Oven 325; Grease a 9x5 (2L) loaf pan; Parchment on bottom",
+      "Mix all dries for crumble; Add melted butter until mixture is crumbly (will be soft)",
+      "Sift flour, sugar, baking powder, salt",
+      "Add butter and lemon and beat with paddle on low until butter is incorporated",
+      "Whisk sour cream, eggs, yolk, vanilla; Add to flour mixture on low; Then mix medium until smooth (30 sec)",
+      "Stir in berries if using",
+      "Scrape into pan, level top, sprinkle with crumble mix",
+      "Bake 60-70 minutes until skewer comes out clean; Cool 20 min then turn out onto wire rack"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "c1e8e13e-7d76-45da-90cd-56c319d49cda",
+    "name": "Apple Cake (Apfelkuchen)",
+    "course": "desserts",
+    "cuisine": "DE",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "AP Flour",
+        "amount": "1.5 C / 180 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "0.75 C / 150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "0.125 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "1/8 tsp",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter (Cold)",
+        "amount": "¼ C / 55 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "cubed",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Milk",
+        "amount": "½ C / 113 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Apples",
+        "amount": "2023-02-04 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dried Fruit",
+        "amount": "¼ C / 30 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Sliced Nuts",
+        "amount": "¼ C / 30 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Heavy Cream",
+        "amount": "1 C / 225 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Flour",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "½ C / 100 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla",
+        "amount": "1 tsp / 1-2 pods",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "0.125 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Preheat 400",
+      "Whisk drys in bowl",
+      "Work cold butter into drys; Will have a crumb texture",
+      "Whisk mik and egg together; Add to drys; Will be thick and sticky",
+      "Spoon batter into greased 9 in spring form or loaf pan",
+      "Spread apples across the top; They will dry as it bakes so use more than less",
+      "Bake 20 min",
+      "Whisk 1/4 of cream with 2 tsp flour until smooth; Add other custard ingredients; Combine",
+      "When done first bake; Remove and pour custard over the top",
+      "Reduce heat to 350 and bake 30-35 minutes or until golden brown",
+      "Cool in pan a few minutes then on wire rack"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "4efbb062-b939-430d-94a9-e43565450b70",
+    "name": "Sachertorte",
+    "course": "desserts",
+    "cuisine": "DE",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "amount": "150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Confection Sugar",
+        "amount": "150 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg Yolk",
+        "amount": "7.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg White",
+        "amount": "7.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dark Chocolate",
+        "amount": "200 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "min. 55-60%",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vanilla Sugar",
+        "amount": "8 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Bean, Extract",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Apricot Jam",
+        "amount": "250 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "one jar; use 2 jars",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dark Rum",
+        "amount": "2 Tbsp.",
+        "unit": null,
+        "preparation": null,
+        "alternative": "I don't use",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dark Chocolate",
+        "amount": "200 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "250 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "125 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Melt chocolate gently; let cool until just warm",
+      "Cream butter, icing sugar, vanilla until pale and fluffy; add yolks slowly",
+      "Add melted chocolate to yolk mixture",
+      "Whip egg whites with punch of salt to soft peaks; slowly add sugar to stiff peak",
+      "Fold a third of whites into chocolate batter; then alternate folding in flour and egg whites to chocolate",
+      "Butter and flour 9 in springform",
+      "Bake 356 (180 C) for 1 hour",
+      "Invert onto a rack; cool completely; turn right side up after 25 min",
+      "Heat jam with spalsh of water or rum",
+      "Cut cake in half; spread jam; put together; brush sides and top with more jam",
+      "Sugar and water in saucepan; bring to boil while stirring; simmer few min; cool",
+      "Add chocoloate when syrup is just warm and keep stirring to melt (too hot=dull; too cold=viscous)",
+      "Pour over cake and spread on top and sides"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "uuid": "dc32bd20-33e9-4350-8353-43ba5b943dc0",
+    "name": "Gao Bao",
+    "course": "breads",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "8.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "125 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: 3.5% milk 140 ml",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Instant Yeast",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "Pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Vegetable Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Mix all ingredients in stand mixer with hook for 9-12 min",
+      "Dough should be elastic and smooth",
+      "Shape into a ball using a wet cloth and proof for 1 hr",
+      "When 1.5-2 times size re-knead until smooth; Divide into 8 portions",
+      "Knead each portion for 1-2 min until smooth then roll out into an oval shape (ie: using a rolling pin)",
+      "Slightly dust the oval (or brush lightly with oil) and folder over in half",
+      "Place in steamer for 2-3 min; Then turn off heat and wait 15 min",
+      "Restart heat and steam for 10 min after water begins to boil again"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "11c9542c-cbc0-4fc9-92f4-35ac283456a7",
+    "name": "Focaccia",
+    "course": "breads",
+    "cuisine": "IT",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "600 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Yeast",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "450 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "11 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Olive Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Rest 20 min between",
+      "Folds x4",
+      "Ferment overnight",
+      "Grease 9x13",
+      "Press and stretch dough into pan",
+      "Ferment 1 hour",
+      "Dimple dough",
+      "Ferment 1 hour",
+      "Top dough",
+      "Bake 450 15-20 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "b5269698-685c-415f-ae30-e81ee568099a",
+    "name": "Pizza Dough",
+    "course": "breads",
+    "cuisine": "IT",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "00 Flour",
+        "amount": "1 C / 153 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "AP Flour",
+        "amount": "1 C / 153 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sea Salt",
+        "amount": "1 tsp / 8 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Active Dry Yeast",
+        "amount": "0.75 tsp / 2 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "EV Olive Oil",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Combine flour and salt",
+      "Combine ~1 C / 200 g warm water, oil and yeast in a bowl",
+      "Combine wet and dry; Knead until combined (~3 min); Rest 15 min",
+      "Add flour and stir until mixture starts to come away from sides of the bowl (add more flour if needed)",
+      "Knead rested dough ~3 min; Cut unto 2 balls",
+      "Place on heavily floured surface, cover with damp cloth and rest 3-4 hours at room temp (or 8-24 hrs in fridge)",
+      "Make pizza or wrap and store"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  }
+]

@@ -1,0 +1,246 @@
+[
+  {
+    "uuid": "7bdb285d-0c38-44a7-930f-42c3b445b254",
+    "name": "Pickled Green Strawberries",
+    "course": "pickles",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "6-8 / 3 Quarts",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Strawberries",
+        "amount": "2 qt",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Mustard Seeds",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Coriander Seeds",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Peppercorn",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Honey",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Kosher Salt",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "White Verjus",
+        "amount": "1 qt",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Thyme Sprig",
+        "amount": "4.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bay Leaf",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Split the strawberries vertically and place in a glass jar with the bay leaf and mustard seeds",
+      "Simmer together the remaining ingredients for 20 minutes",
+      "Bring the pickling brine to a boil and strain over the strawberries",
+      "Seal and let pickle a few days before using."
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "ca04a047-5217-4acd-826f-4a917cd38c17",
+    "name": "Oi Kimchi (Cucumber)",
+    "course": "pickles",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "6.0",
+    "time": "30 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cucumbers",
+        "amount": "3 / 1 lb",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "50 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Garlic Chive",
+        "amount": "20 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Chives / Optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Sea Salt",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Gochugaru",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Chipotle (ideal), Red Pepper Flakes, Sriracha",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Minced Garlic",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Grated Red Apple",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Asian Pear",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Honey",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Minced Ginger",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cut cucumber into ~6 pieces and mix with salt for 20 min",
+      "Brush off salt and add the sauce; also add other veg if using",
+      "Keep at room temperature for 12-18 hours then refrigerate"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  }
+]

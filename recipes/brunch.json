@@ -1,0 +1,107 @@
+[
+  {
+    "uuid": "f27cf855-3c76-4ba5-8104-99bb84c314e8",
+    "name": "Japanese Souffle Pancake",
+    "course": "brunch",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "1 (2 pancakes)",
+    "time": "40 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "3 Tbsp / 30 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Milk",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg Yolk",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cream of Tartar",
+        "amount": "0.125 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg White",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Whisk yolk with sugar until pale and frothy",
+      "Mix in the milk slowly",
+      "Sift in the flour and baking powder slowly while mixing",
+      "Whip egg whites with cream of tartar until frothy and pale while adding sugar slowly to a soft peak",
+      "Fold the whites into the yolk misture about a third at a time",
+      "Heat large pan with a lid on low heat; very lightly brush with oil",
+      "Place ring molds lined with parchment paper on pan and fill 80% to top",
+      "Cover and cook 6-8 min",
+      "Carefully flip pancake (don't force if it doesn't come up) and cook covered another 5-6 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  }
+]
