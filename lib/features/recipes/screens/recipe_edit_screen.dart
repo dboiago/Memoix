@@ -541,6 +541,25 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 24),
 
+            // Comments (previously called Notes)
+            Text(
+              'Comments',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _notesController,
+              decoration: const InputDecoration(
+                hintText: 'Optional tips, variations, etc.',
+              ),
+              maxLines: 4,
+              minLines: 2,
+            ),
+
+            const SizedBox(height: 16),
+
             // Nutrition Information (optional, collapsible)
             ExpansionTile(
               title: Text(
@@ -554,7 +573,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   : null,
               initiallyExpanded: _caloriesController.text.isNotEmpty,
               tilePadding: EdgeInsets.zero,
-              childrenPadding: const EdgeInsets.only(bottom: 8),
+              childrenPadding: const EdgeInsets.only(top: 8, bottom: 8),
               children: [
                 Row(
                   children: [
@@ -616,25 +635,6 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   ),
                 ),
               ],
-            ),
-
-            const SizedBox(height: 24),
-
-            // Comments (previously called Notes)
-            Text(
-              'Comments',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 8),
-            TextField(
-              controller: _notesController,
-              decoration: const InputDecoration(
-                hintText: 'Optional tips, variations, etc.',
-              ),
-              maxLines: 4,
-              minLines: 2,
             ),
 
             const SizedBox(height: 32),

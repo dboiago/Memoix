@@ -233,38 +233,6 @@ class RecipeDetailView extends ConsumerWidget {
                           .toList(),
                     ),
                   ],
-
-                  // Notes
-                  if (recipe.notes != null && recipe.notes!.isNotEmpty) ...[
-                    const SizedBox(height: 16),
-                    Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(Icons.notes, size: 16, color: theme.colorScheme.primary),
-                              const SizedBox(width: 8),
-                              Text(
-                                'Notes',
-                                style: theme.textTheme.titleSmall?.copyWith(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          Text(recipe.notes!),
-                        ],
-                      ),
-                    ),
-                  ],
                 ],
               ),
             ),
@@ -361,6 +329,38 @@ class RecipeDetailView extends ConsumerWidget {
               },
             ),
           ),
+
+          // Comments section (at bottom, after recipe content)
+          if (recipe.notes != null && recipe.notes!.isNotEmpty)
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.comment, size: 20, color: Theme.of(context).colorScheme.primary),
+                            const SizedBox(width: 8),
+                            Text(
+                              'Comments',
+                              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 12),
+                        Text(recipe.notes!),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
 
           // Source URL
           if (recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty)
@@ -640,6 +640,27 @@ class RecipeDetailView extends ConsumerWidget {
           Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
         ],
       ),
+    );
+  }
+
+  Widget _nutritionItem(BuildContext context, String label, String value) {
+    final theme = Theme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          value,
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Text(
+          label,
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ],
     );
   }
 }
