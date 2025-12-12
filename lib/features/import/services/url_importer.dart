@@ -448,10 +448,19 @@ class UrlRecipeImporter {
       if (decoded.isEmpty) continue;
       
       // Check if this is a section header (no amount, ends with colon, or "For the X" pattern)
+      // Also check for short standalone items that look like headers
       final sectionPatterns = [
-        RegExp(r'^For\s+(?:the\s+)?(.+?)[:.]?\s*$', caseSensitive: false),
-        RegExp(r'^(.+?)\s+[Ii]ngredients?[:.]?\s*$'),
-        RegExp(r'^(.+?):\s*$'),
+        RegExp(r'^For\s+(?:the\s+)?(.+?)[:.]?\s*$', caseSensitive: false),  // "For the sauce:"
+        RegExp(r'^(.+?)\s+[Ii]ngredients?[:.]?\s*$'),  // "Main ingredients:"
+        RegExp(r'^(.+?)\s+[Ss]auce[:.]?\s*$'),  // "Spicy ketchup sauce:"
+        RegExp(r'^(.+?)\s+[Mm]arinade[:.]?\s*$'),  // "Tofu marinade:"
+        RegExp(r'^(.+?)\s+[Gg]laze[:.]?\s*$'),  // "Honey glaze:"
+        RegExp(r'^(.+?)\s+[Ss]easoning[:.]?\s*$'),  // "Spice seasoning:"
+        RegExp(r'^(.+?)\s+[Rr]ub[:.]?\s*$'),  // "Spice rub:"
+        RegExp(r'^(.+?)\s+[Tt]opping[s]?[:.]?\s*$'),  // "Toppings:"
+        RegExp(r'^(.+?)\s+[Gg]arnish[:.]?\s*$'),  // "Garnish:"
+        RegExp(r'^(.+?)\s+[Ff]illing[:.]?\s*$'),  // "Filling:"
+        RegExp(r'^(.+?)[:–—]\s*$'),  // General "Something:" (must end with colon/dash)
       ];
       
       bool isSection = false;
@@ -470,8 +479,14 @@ class UrlRecipeImporter {
       if (!isSection) {
         final ingredient = _parseIngredientString(decoded);
         if (ingredient.name.isNotEmpty) {
-          // Apply current section to this ingredient
-          if (currentSection != null) {
+          // Update currentSection if ingredient has inline section
+          if (ingredient.section != null) {
+            currentSection = ingredient.section;
+          }
+          
+          // Apply current section to this ingredient (inline or header-based)
+          final effectiveSection = ingredient.section ?? currentSection;
+          if (effectiveSection != null && effectiveSection != ingredient.section) {
             result.add(Ingredient.create(
               name: ingredient.name,
               amount: ingredient.amount,
@@ -479,7 +494,7 @@ class UrlRecipeImporter {
               preparation: ingredient.preparation,
               alternative: ingredient.alternative,
               isOptional: ingredient.isOptional,
-              section: currentSection,
+              section: effectiveSection,
             ));
           } else {
             result.add(ingredient);
@@ -497,6 +512,17 @@ class UrlRecipeImporter {
     bool isOptional = false;
     List<String> notesParts = [];
     String? amount;
+    String? inlineSection;
+    
+    // Check for inline section markers like "[Sauce]" or "(For the sauce)" at the start
+    final inlineSectionMatch = RegExp(
+      r'^\[([^\]]+)\]\s*|^\((?:For\s+(?:the\s+)?)?([^)]+)\)\s*',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (inlineSectionMatch != null) {
+      inlineSection = (inlineSectionMatch.group(1) ?? inlineSectionMatch.group(2))?.trim();
+      remaining = remaining.substring(inlineSectionMatch.end).trim();
+    }
     
     // Remove footnote markers like [1], *, †, etc.
     remaining = remaining.replaceAll(RegExp(r'\[\d+\]|\*+|†+'), '').trim();
@@ -518,10 +544,17 @@ class UrlRecipeImporter {
     }
     
     // Extract ALL parenthetical content as notes (preparation info, alternatives, etc.)
-    // But skip weight conversions like "(0.6 pounds)" - move those to notes too
+    // Handle double parentheses like ((0.6 pounds)) and leading commas like (, regular)
+    // First normalize double parentheses to single
+    remaining = remaining.replaceAll('((', '(').replaceAll('))', ')');
+    
     final parenMatches = RegExp(r'\(([^)]+)\)').allMatches(remaining).toList();
     for (final match in parenMatches.reversed) {
-      final content = match.group(1)?.trim() ?? '';
+      var content = match.group(1)?.trim() ?? '';
+      
+      // Remove leading commas/spaces from inside parentheses (site-specific quirk)
+      content = content.replaceAll(RegExp(r'^[,\s]+'), '').trim();
+      
       if (content.isNotEmpty && content.toLowerCase() != 'optional') {
         // Check if it's a weight conversion (e.g., "0.6 pounds", "1 lb", "500g")
         final isWeightConversion = RegExp(
@@ -572,6 +605,9 @@ class UrlRecipeImporter {
         (m) => '',
       );
       
+      // Remove any leading commas or spaces
+      afterComma = afterComma.replaceAll(RegExp(r'^[,\s]+'), '').trim();
+      
       if (afterComma.isNotEmpty) {
         notesParts.add(afterComma);
       }
@@ -599,11 +635,14 @@ class UrlRecipeImporter {
     // Clean the ingredient name - remove trailing/leading punctuation
     remaining = remaining.replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '');
     
-    // Build final notes string, cleaning up any remaining stray parentheses
+    // Build final notes string, cleaning up any remaining stray parentheses and commas
     String? finalNotes;
     if (notesParts.isNotEmpty) {
       finalNotes = notesParts
-          .map((n) => n.replaceAll(RegExp(r'^\(+|\)+$'), '').trim())
+          .map((n) => n
+              .replaceAll(RegExp(r'^\(+|\)+$'), '')  // Remove stray parentheses
+              .replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '')  // Remove leading/trailing commas and spaces
+              .trim())
           .where((n) => n.isNotEmpty)
           .join(', ');
       if (finalNotes.isEmpty) finalNotes = null;
@@ -614,6 +653,7 @@ class UrlRecipeImporter {
       amount: _normalizeFractions(amount),
       preparation: finalNotes,
       isOptional: isOptional,
+      section: inlineSection,
     );
   }
 
