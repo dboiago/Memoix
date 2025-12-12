@@ -1103,13 +1103,22 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   void _insertSectionAt(int index) {
     setState(() {
-      _ingredientRows.insert(index, _IngredientRow(isSection: true));
+      _ingredientRows.insert(index, _IngredientRow(
+        nameController: TextEditingController(),
+        amountController: TextEditingController(),
+        notesController: TextEditingController(),
+        isSection: true,
+      ));
     });
   }
 
   void _insertIngredientAt(int index) {
     setState(() {
-      _ingredientRows.insert(index, _IngredientRow());
+      _ingredientRows.insert(index, _IngredientRow(
+        nameController: TextEditingController(),
+        amountController: TextEditingController(),
+        notesController: TextEditingController(),
+      ));
     });
   }
 
