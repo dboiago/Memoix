@@ -88,6 +88,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   late final TextEditingController _directionsController;
   late final TextEditingController _regionController;
 
+  // Nutrition controllers
+  late final TextEditingController _caloriesController;
+  late final TextEditingController _proteinController;
+  late final TextEditingController _carbsController;
+  late final TextEditingController _fatController;
+
   // 3-column ingredient editing: list of (name, amount, notes) controllers
   final List<_IngredientRow> _ingredientRows = [];
 
@@ -109,6 +115,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _notesController = TextEditingController();
     _directionsController = TextEditingController();
     _regionController = TextEditingController();
+    _caloriesController = TextEditingController();
+    _proteinController = TextEditingController();
+    _carbsController = TextEditingController();
+    _fatController = TextEditingController();
 
     if (widget.defaultCourse != null) {
       _selectedCourse = widget.defaultCourse!;
@@ -136,6 +146,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _timeController.text = recipe.time ?? '';
       _notesController.text = recipe.notes ?? '';
       _regionController.text = recipe.subcategory ?? '';
+      
+      // Load nutrition data if present
+      if (recipe.nutrition != null) {
+        _caloriesController.text = recipe.nutrition!.calories?.toString() ?? '';
+        _proteinController.text = recipe.nutrition!.proteinContent?.toString() ?? '';
+        _carbsController.text = recipe.nutrition!.carbohydrateContent?.toString() ?? '';
+        _fatController.text = recipe.nutrition!.fatContent?.toString() ?? '';
+      }
+      
       // Normalize course to slug form (lowercase) to match dropdown values
       _selectedCourse = _normaliseCourseSlug(recipe.course?.toLowerCase() ?? _selectedCourse);
       _selectedCuisine = recipe.cuisine;
@@ -218,10 +237,34 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _notesController.dispose();
     _directionsController.dispose();
     _regionController.dispose();
+    _caloriesController.dispose();
+    _proteinController.dispose();
+    _carbsController.dispose();
+    _fatController.dispose();
     for (final row in _ingredientRows) {
       row.dispose();
     }
     super.dispose();
+  }
+
+  /// Build NutritionInfo from form fields, returns null if all empty
+  NutritionInfo? _buildNutritionInfo() {
+    final calories = int.tryParse(_caloriesController.text.trim());
+    final protein = double.tryParse(_proteinController.text.trim());
+    final carbs = double.tryParse(_carbsController.text.trim());
+    final fat = double.tryParse(_fatController.text.trim());
+    
+    // Return null if no nutrition data entered
+    if (calories == null && protein == null && carbs == null && fat == null) {
+      return null;
+    }
+    
+    return NutritionInfo.create(
+      calories: calories,
+      proteinContent: protein,
+      carbohydrateContent: carbs,
+      fatContent: fat,
+    );
   }
 
   @override
@@ -498,6 +541,85 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             const SizedBox(height: 24),
 
+            // Nutrition Information (optional, collapsible)
+            ExpansionTile(
+              title: Text(
+                'Nutrition Info',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: _caloriesController.text.isNotEmpty
+                  ? Text('${_caloriesController.text} cal', style: theme.textTheme.bodySmall)
+                  : null,
+              initiallyExpanded: _caloriesController.text.isNotEmpty,
+              tilePadding: EdgeInsets.zero,
+              childrenPadding: const EdgeInsets.only(bottom: 8),
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _caloriesController,
+                        decoration: const InputDecoration(
+                          labelText: 'Calories',
+                          suffixText: 'cal',
+                        ),
+                        keyboardType: TextInputType.number,
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: TextField(
+                        controller: _proteinController,
+                        decoration: const InputDecoration(
+                          labelText: 'Protein',
+                          suffixText: 'g',
+                        ),
+                        keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _carbsController,
+                        decoration: const InputDecoration(
+                          labelText: 'Carbs',
+                          suffixText: 'g',
+                        ),
+                        keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: TextField(
+                        controller: _fatController,
+                        decoration: const InputDecoration(
+                          labelText: 'Fat',
+                          suffixText: 'g',
+                        ),
+                        keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Per serving. Values are estimates.',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 24),
+
             // Comments (previously called Notes)
             Text(
               'Comments',
@@ -615,6 +737,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..source = _existingRecipe?.source ?? 
             (widget.importedRecipe != null ? RecipeSource.imported : 
              widget.ocrText != null ? RecipeSource.ocr : RecipeSource.personal)
+        ..nutrition = _buildNutritionInfo()
         ..updatedAt = DateTime.now();
 
       // Save to database

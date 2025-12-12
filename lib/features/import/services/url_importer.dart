@@ -720,28 +720,44 @@ class UrlRecipeImporter {
   }
 
   /// Get a sort score for an ingredient amount (higher = larger/more important)
+  /// Priority order: weight (kg, g, lb, oz) > whole items > volume (cups, ml) > Tbsp > tsp
   double _getIngredientSortScore(String? amount) {
     if (amount == null || amount.isEmpty) return 0;
     
     final text = amount.toLowerCase();
     
-    // Unit priority multipliers (cups are biggest, tsp smallest)
+    // Unit priority multipliers - weight first, then volume, then small measures
     double unitMultiplier = 1.0;
-    if (text.contains('cup') || text.contains(' c ') || text.endsWith(' c') || text.contains(' C ') || text.endsWith(' C')) {
-      unitMultiplier = 1000.0; // Cups - highest priority
+    
+    // Weight units - highest priority
+    if (text.contains('kg') || text.contains('kilogram')) {
+      unitMultiplier = 10000.0; // kg - largest weight
     } else if (text.contains('lb') || text.contains('pound')) {
-      unitMultiplier = 800.0;
+      unitMultiplier = 8000.0;
+    } else if (RegExp(r'\bg\b').hasMatch(text) || text.contains('gram')) {
+      unitMultiplier = 5000.0; // grams
     } else if (text.contains('oz') || text.contains('ounce')) {
-      unitMultiplier = 400.0;
-    } else if (text.contains('tbsp') || text.contains('tablespoon') || text.contains('Tbsp')) {
+      unitMultiplier = 4000.0;
+    }
+    // Whole items (pure numbers like "1 onion") - high priority
+    else if (!RegExp(r'[a-zA-Z]').hasMatch(text)) {
+      unitMultiplier = 3000.0;
+    }
+    // Volume units - medium priority
+    else if (text.contains('l') && (text.contains(' l') || text.endsWith('l') || text.contains('liter') || text.contains('litre'))) {
+      unitMultiplier = 2000.0; // liters
+    } else if (text.contains('ml') || text.contains('milliliter')) {
+      unitMultiplier = 1500.0;
+    } else if (text.contains('cup') || RegExp(r'\bc\b').hasMatch(text)) {
+      unitMultiplier = 1000.0; // cups
+    }
+    // Small measurements - lower priority
+    else if (text.contains('tbsp') || text.contains('tablespoon')) {
       unitMultiplier = 100.0;
     } else if (text.contains('tsp') || text.contains('teaspoon')) {
       unitMultiplier = 10.0;
     } else if (text.contains('in') || text.contains('inch') || text.contains('"')) {
-      unitMultiplier = 5.0; // Measurements like "1 inch"
-    } else if (!RegExp(r'[a-zA-Z]').hasMatch(text)) {
-      // Pure number (like "1 onion") - treat as whole items
-      unitMultiplier = 500.0;
+      unitMultiplier = 5.0; // length measurements
     }
     
     // Extract numeric quantity
