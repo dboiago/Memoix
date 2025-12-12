@@ -29,10 +29,6 @@ class UrlRecipeImporter {
     'drinkify.co',
   ];
 
-/// Service to import recipes from URLs
-class UrlRecipeImporter {
-  static const _uuid = Uuid();
-
   /// HTML entity decode map for common entities
   static final _htmlEntities = {
     '&amp;': '&',
