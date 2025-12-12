@@ -1,78 +1,76 @@
-{
-  "recipes": [
-    {
-      "uuid": "f15ca667-42d6-42f5-8790-7f09292f1f4b",
-      "name": "Agadashi",
-      "course": "Apps",
-      "cuisine": "Japan",
-      "subcategory": null,
-      "serves": "4",
-      "time": null,
-      "pairsWith": [],
-      "notes": null,
-      "ingredients": [
-        {
-          "name": "Tofu",
-          "amount": "600 g",
-          "unit": null,
-          "preparation": "Firm; 1 Bock",
-          "alternative": null,
-          "isOptional": false,
-          "section": null
-        },
-        {
-          "name": "Dashi",
-          "amount": "1 C",
-          "unit": null,
-          "preparation": null,
-          "alternative": null,
-          "isOptional": false,
-          "section": null
-        },
-        {
-          "name": "Soy Sauce",
-          "amount": "4 Tbsp",
-          "unit": null,
-          "preparation": null,
-          "alternative": null,
-          "isOptional": false,
-          "section": null
-        },
-        {
-          "name": "Mirin",
-          "amount": "4 Tbsp",
-          "unit": null,
-          "preparation": null,
-          "alternative": null,
-          "isOptional": false,
-          "section": null
-        },
-        {
-          "name": "Sugar",
-          "amount": "2 Tbsp",
-          "unit": null,
-          "preparation": null,
-          "alternative": null,
-          "isOptional": false,
-          "section": null
-        }
-      ],
-      "directions": [
-        "Dredge tofu in corn starch and fry",
-        "Mix everything else in a pot and bring to a boil, then turn off"
-      ],
-      "sourceUrl": null,
-      "imageUrl": null,
-      "source": "imported",
-      "colorValue": null,
-      "isFavorite": false,
-      "rating": 0,
-      "cookCount": 0,
-      "lastCookedAt": null,
-      "tags": [],
-      "createdAt": "2025-12-10T23:35:11.686155",
-      "updatedAt": "2025-12-10T23:35:11.686155",
-      "version": 1
-    }
-  ]
-}
+[
+  {
+    "uuid": "550e8400-e29b-41d4-a716-446655440003",
+    "name": "Agadashi",
+    "course": "apps",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "4",
+    "time": null,
+    "pairsWith": [],
+    "notes": null,
+    "ingredients": [
+      {
+        "name": "Tofu",
+        "amount": "600 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Firm; 1 Bock",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dashi",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "4 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Mirin",
+        "amount": "4 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Dredge tofu in corn starch and fry",
+      "Mix everything else in a pot and bring to a boil, then turn off"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  }
+]
