@@ -204,6 +204,9 @@ class UrlRecipeImporter {
     var ingredients = _parseIngredients(data['recipeIngredient']);
     ingredients = _sortIngredientsByQuantity(ingredients);
 
+    // Parse nutrition information if available
+    final nutrition = _parseNutrition(data['nutrition']);
+
     // Parse the recipe data
     return Recipe.create(
       uuid: _uuid.v4(),
@@ -218,6 +221,7 @@ class UrlRecipeImporter {
       imageUrl: _parseImage(data['image']),
       sourceUrl: sourceUrl,
       source: RecipeSource.url,
+      nutrition: nutrition,
     );
   }
 
@@ -311,6 +315,43 @@ class UrlRecipeImporter {
     return text[0].toUpperCase() + text.substring(1);
   }
 
+  /// Parse nutrition information from schema.org NutritionInformation
+  NutritionInfo? _parseNutrition(dynamic data) {
+    if (data == null) return null;
+    if (data is! Map) return null;
+    
+    // Parse nutrition values - they may be strings like "150 calories" or numbers
+    final nutrition = NutritionInfo.create(
+      servingSize: _parseString(data['servingSize']),
+      calories: _parseNutritionValue(data['calories'])?.round(),
+      fatContent: _parseNutritionValue(data['fatContent']),
+      saturatedFatContent: _parseNutritionValue(data['saturatedFatContent']),
+      transFatContent: _parseNutritionValue(data['transFatContent']),
+      cholesterolContent: _parseNutritionValue(data['cholesterolContent']),
+      sodiumContent: _parseNutritionValue(data['sodiumContent']),
+      carbohydrateContent: _parseNutritionValue(data['carbohydrateContent']),
+      fiberContent: _parseNutritionValue(data['fiberContent']),
+      sugarContent: _parseNutritionValue(data['sugarContent']),
+      proteinContent: _parseNutritionValue(data['proteinContent']),
+    );
+    
+    return nutrition.hasData ? nutrition : null;
+  }
+
+  /// Parse a nutrition value that might be a number or string like "20 g"
+  double? _parseNutritionValue(dynamic value) {
+    if (value == null) return null;
+    if (value is num) return value.toDouble();
+    if (value is String) {
+      // Extract number from strings like "20 g", "150 kcal", etc.
+      final match = RegExp(r'([\d.]+)').firstMatch(value);
+      if (match != null) {
+        return double.tryParse(match.group(1)!);
+      }
+    }
+    return null;
+  }
+
   String? _parseTime(Map data) {
     // Prefer totalTime if available
     if (data['totalTime'] != null) {
@@ -397,22 +438,72 @@ class UrlRecipeImporter {
       return [];
     }
 
-    return items.map((item) {
-      return _parseIngredientString(_decodeHtml(item.trim()));
-    }).where((i) => i.name.isNotEmpty).toList();
+    // Detect sections - some sites prefix ingredients with section headers
+    // Common patterns: "For the sauce:", "Sauce:", "Main Ingredients:", etc.
+    String? currentSection;
+    final result = <Ingredient>[];
+    
+    for (final item in items) {
+      final decoded = _decodeHtml(item.trim());
+      if (decoded.isEmpty) continue;
+      
+      // Check if this is a section header (no amount, ends with colon, or "For the X" pattern)
+      final sectionPatterns = [
+        RegExp(r'^For\s+(?:the\s+)?(.+?)[:.]?\s*$', caseSensitive: false),
+        RegExp(r'^(.+?)\s+[Ii]ngredients?[:.]?\s*$'),
+        RegExp(r'^(.+?):\s*$'),
+      ];
+      
+      bool isSection = false;
+      for (final pattern in sectionPatterns) {
+        final match = pattern.firstMatch(decoded);
+        if (match != null) {
+          // Verify it's not an ingredient (no numbers at start)
+          if (!RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]').hasMatch(decoded)) {
+            currentSection = match.group(1)?.trim();
+            isSection = true;
+            break;
+          }
+        }
+      }
+      
+      if (!isSection) {
+        final ingredient = _parseIngredientString(decoded);
+        if (ingredient.name.isNotEmpty) {
+          // Apply current section to this ingredient
+          if (currentSection != null) {
+            result.add(Ingredient.create(
+              name: ingredient.name,
+              amount: ingredient.amount,
+              unit: ingredient.unit,
+              preparation: ingredient.preparation,
+              alternative: ingredient.alternative,
+              isOptional: ingredient.isOptional,
+              section: currentSection,
+            ));
+          } else {
+            result.add(ingredient);
+          }
+        }
+      }
+    }
+    
+    return result;
   }
 
   /// Parse a single ingredient string into structured data
   Ingredient _parseIngredientString(String text) {
     var remaining = text;
     bool isOptional = false;
-    String? notes;
+    List<String> notesParts = [];
     String? amount;
-    String? preparation;
     
-    // Check for optional markers
+    // Remove footnote markers like [1], *, †, etc.
+    remaining = remaining.replaceAll(RegExp(r'\[\d+\]|\*+|†+'), '').trim();
+    
+    // Check for optional markers anywhere and extract to notes
     final optionalPatterns = [
-      RegExp(r'\(optional\)', caseSensitive: false),
+      RegExp(r'\(\s*optional\s*\)', caseSensitive: false),
       RegExp(r',\s*optional\s*$', caseSensitive: false),
       RegExp(r'\s+optional\s*$', caseSensitive: false),
     ];
@@ -421,40 +512,107 @@ class UrlRecipeImporter {
       if (pattern.hasMatch(remaining)) {
         isOptional = true;
         remaining = remaining.replaceAll(pattern, '').trim();
+        notesParts.add('optional');
         break;
       }
     }
     
-    // Extract notes in parentheses at the end
-    final notesMatch = RegExp(r'\(([^)]+)\)\s*$').firstMatch(remaining);
-    if (notesMatch != null) {
-      notes = notesMatch.group(1);
-      remaining = remaining.substring(0, notesMatch.start).trim();
+    // Extract ALL parenthetical content as notes (preparation info, alternatives, etc.)
+    // But skip weight conversions like "(0.6 pounds)" - move those to notes too
+    final parenMatches = RegExp(r'\(([^)]+)\)').allMatches(remaining).toList();
+    for (final match in parenMatches.reversed) {
+      final content = match.group(1)?.trim() ?? '';
+      if (content.isNotEmpty && content.toLowerCase() != 'optional') {
+        // Check if it's a weight conversion (e.g., "0.6 pounds", "1 lb", "500g")
+        final isWeightConversion = RegExp(
+          r'^[\d.]+\s*(?:pounds?|lbs?|oz|ounces?|kg|g|grams?)$',
+          caseSensitive: false
+        ).hasMatch(content);
+        
+        if (isWeightConversion) {
+          // Add weight conversion to notes
+          notesParts.insert(0, content);
+        } else {
+          // Add other parenthetical content to notes
+          notesParts.insert(0, content);
+        }
+      }
+      remaining = remaining.substring(0, match.start) + remaining.substring(match.end);
     }
+    remaining = remaining.replaceAll(RegExp(r'\s+'), ' ').trim();
     
-    // Try to extract amount (number at start, possibly with unit)
+    // Try to extract amount (number at start, possibly with range and unit)
+    // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
     final amountMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]+(?:\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]+)?'
-      r'(?:\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces)s?)?)'
-      r'\s+'
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
+      r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+      caseSensitive: false,
     ).firstMatch(remaining);
     
     if (amountMatch != null) {
-      amount = amountMatch.group(1)?.trim();
+      final number = amountMatch.group(1)?.trim() ?? '';
+      final unit = amountMatch.group(2)?.trim() ?? '';
+      // Normalize the range format (remove extra spaces around dash)
+      amount = number.replaceAll(RegExp(r'\s*[-–]\s*'), '-');
+      if (unit.isNotEmpty) {
+        amount = '$amount $unit';
+      }
       remaining = remaining.substring(amountMatch.end).trim();
     }
     
-    // Extract preparation instructions after comma
+    // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
     final commaIndex = remaining.indexOf(',');
     if (commaIndex > 0) {
-      preparation = remaining.substring(commaIndex + 1).trim();
+      var afterComma = remaining.substring(commaIndex + 1).trim();
       remaining = remaining.substring(0, commaIndex).trim();
+      
+      // Clean up common patterns like "I used X" -> just note the alternative
+      afterComma = afterComma.replaceAllMapped(
+        RegExp(r'^I\s+used\s+', caseSensitive: false),
+        (m) => '',
+      );
+      
+      if (afterComma.isNotEmpty) {
+        notesParts.add(afterComma);
+      }
+    }
+    
+    // Skip empty ingredients (like just "cooking oil" with nothing useful after extraction)
+    // But allow simple ingredients like "oil", "salt", etc.
+    if (remaining.isEmpty && notesParts.isEmpty && amount == null) {
+      return Ingredient.create(name: '', amount: null);
+    }
+    
+    // If the remaining ingredient name is empty but we have notes, try to salvage it
+    if (remaining.isEmpty && notesParts.isNotEmpty) {
+      // Use the first meaningful note as the name
+      for (var i = 0; i < notesParts.length; i++) {
+        final note = notesParts[i].toLowerCase();
+        if (!note.contains('optional') && 
+            !RegExp(r'^[\d.]+\s*(?:pounds?|lbs?|oz|ounces?|kg|g|grams?)$', caseSensitive: false).hasMatch(notesParts[i])) {
+          remaining = notesParts.removeAt(i);
+          break;
+        }
+      }
+    }
+    
+    // Clean the ingredient name - remove trailing/leading punctuation
+    remaining = remaining.replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '');
+    
+    // Build final notes string, cleaning up any remaining stray parentheses
+    String? finalNotes;
+    if (notesParts.isNotEmpty) {
+      finalNotes = notesParts
+          .map((n) => n.replaceAll(RegExp(r'^\(+|\)+$'), '').trim())
+          .where((n) => n.isNotEmpty)
+          .join(', ');
+      if (finalNotes.isEmpty) finalNotes = null;
     }
     
     return Ingredient.create(
       name: remaining,
       amount: _normalizeFractions(amount),
-      preparation: preparation,
+      preparation: finalNotes,
       isOptional: isOptional,
     );
   }

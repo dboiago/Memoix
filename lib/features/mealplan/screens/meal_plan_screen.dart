@@ -6,6 +6,7 @@ import '../models/meal_plan.dart';
 import '../../../core/providers.dart';
 import '../../../app/routes/router.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
 
@@ -340,7 +341,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                               ),
                               const SizedBox(width: 4),
                               Text(
-                                _cuisineToAdjective(meal.cuisine!),
+                                Cuisine.toAdjective(meal.cuisine),
                                 style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.onSurfaceVariant,
                                 ),
@@ -448,25 +449,6 @@ class _DayCardState extends ConsumerState<DayCard> {
   String _capitalizeFirst(String s) {
     if (s.isEmpty) return s;
     return s[0].toUpperCase() + s.substring(1);
-  }
-
-  String _cuisineToAdjective(String raw) {
-    const map = {
-      'Korea': 'Korean',
-      'Korean': 'Korean',
-      'China': 'Chinese',
-      'Chinese': 'Chinese',
-      'Japan': 'Japanese',
-      'Japanese': 'Japanese',
-      'Spain': 'Spanish',
-      'France': 'French',
-      'Italy': 'Italian',
-      'Mexico': 'Mexican',
-      'Mexican': 'Mexican',
-      'United States': 'American',
-      'North American': 'North American',
-    };
-    return map[raw] ?? raw;
   }
 }
 

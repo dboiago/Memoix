@@ -103,6 +103,127 @@ class Cuisine {
     });
     return sorted;
   }
+
+  /// Convert a country/region name to its cuisine adjective form
+  /// e.g., "Japan" -> "Japanese", "Korea" -> "Korean"
+  static String toAdjective(String? raw) {
+    if (raw == null || raw.isEmpty) return '';
+    
+    // Map of country/region names to adjective forms
+    const countryToAdjective = {
+      // Asian
+      'japan': 'Japanese',
+      'korea': 'Korean',
+      'south korea': 'Korean',
+      'china': 'Chinese',
+      'india': 'Indian',
+      'thailand': 'Thai',
+      'vietnam': 'Vietnamese',
+      'philippines': 'Filipino',
+      'indonesia': 'Indonesian',
+      'malaysia': 'Malaysian',
+      
+      // European
+      'france': 'French',
+      'italy': 'Italian',
+      'spain': 'Spanish',
+      'germany': 'German',
+      'greece': 'Greek',
+      'uk': 'British',
+      'united kingdom': 'British',
+      'great britain': 'British',
+      'england': 'British',
+      'ireland': 'Irish',
+      'poland': 'Polish',
+      'portugal': 'Portuguese',
+      'russia': 'Russian',
+      'sweden': 'Swedish',
+      'hungary': 'Hungarian',
+      'ukraine': 'Ukrainian',
+      
+      // Americas
+      'usa': 'American',
+      'united states': 'American',
+      'america': 'American',
+      'mexico': 'Mexican',
+      'brazil': 'Brazilian',
+      'argentina': 'Argentine',
+      'peru': 'Peruvian',
+      'cuba': 'Cuban',
+      'jamaica': 'Jamaican',
+      'canada': 'Canadian',
+      
+      // Middle Eastern
+      'turkey': 'Turkish',
+      'lebanon': 'Lebanese',
+      'israel': 'Israeli',
+      'iran': 'Persian',
+      'persia': 'Persian',
+      'middle east': 'Middle Eastern',
+      
+      // African
+      'morocco': 'Moroccan',
+      'ethiopia': 'Ethiopian',
+      'south africa': 'South African',
+      
+      // Oceanian
+      'australia': 'Australian',
+      'new zealand': 'New Zealand',
+      
+      // Already adjective forms (return as-is)
+      'japanese': 'Japanese',
+      'korean': 'Korean',
+      'chinese': 'Chinese',
+      'indian': 'Indian',
+      'thai': 'Thai',
+      'vietnamese': 'Vietnamese',
+      'filipino': 'Filipino',
+      'indonesian': 'Indonesian',
+      'malaysian': 'Malaysian',
+      'french': 'French',
+      'italian': 'Italian',
+      'spanish': 'Spanish',
+      'german': 'German',
+      'greek': 'Greek',
+      'british': 'British',
+      'irish': 'Irish',
+      'polish': 'Polish',
+      'portuguese': 'Portuguese',
+      'russian': 'Russian',
+      'swedish': 'Swedish',
+      'hungarian': 'Hungarian',
+      'ukrainian': 'Ukrainian',
+      'american': 'American',
+      'mexican': 'Mexican',
+      'brazilian': 'Brazilian',
+      'argentine': 'Argentine',
+      'peruvian': 'Peruvian',
+      'cuban': 'Cuban',
+      'jamaican': 'Jamaican',
+      'canadian': 'Canadian',
+      'turkish': 'Turkish',
+      'lebanese': 'Lebanese',
+      'israeli': 'Israeli',
+      'persian': 'Persian',
+      'middle eastern': 'Middle Eastern',
+      'moroccan': 'Moroccan',
+      'ethiopian': 'Ethiopian',
+      'south african': 'South African',
+      'australian': 'Australian',
+      
+      // Generic regions
+      'asian': 'Asian',
+      'european': 'European',
+      'african': 'African',
+      'mediterranean': 'Mediterranean',
+      'caribbean': 'Caribbean',
+      'latin america': 'Latin American',
+      'nordic': 'Nordic',
+    };
+    
+    final key = raw.toLowerCase().trim();
+    return countryToAdjective[key] ?? raw;
+  }
 }
 
 /// Grouped cuisine data for display

@@ -95,6 +95,9 @@ class Recipe {
   /// Version for sync conflict resolution
   int version = 1;
 
+  /// Nutrition information (optional, imported from URL or user-added)
+  NutritionInfo? nutrition;
+
   /// Convenience constructor
   Recipe();
 
@@ -120,6 +123,7 @@ class Recipe {
     this.cookCount = 0,
     this.lastCookedAt,
     this.tags = const [],
+    this.nutrition,
   }) {
     createdAt = DateTime.now();
     updatedAt = DateTime.now();
@@ -183,7 +187,10 @@ class Recipe {
       ..tags =
           (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList() ??
               []
-      ..version = json['version'] as int? ?? 1;
+      ..version = json['version'] as int? ?? 1
+      ..nutrition = json['nutrition'] != null
+          ? NutritionInfo.fromJson(json['nutrition'] as Map<String, dynamic>)
+          : null;
 
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'] as String);
@@ -224,6 +231,7 @@ class Recipe {
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
       'version': version,
+      if (nutrition != null) 'nutrition': nutrition!.toJson(),
     };
   }
 
@@ -245,6 +253,7 @@ class Recipe {
       'imageUrl': imageUrl,
       'tags': tags,
       'version': version,
+      if (nutrition != null) 'nutrition': nutrition!.toJson(),
     };
   }
 }
@@ -342,5 +351,117 @@ class Ingredient {
     }
     
     return buffer.toString();
+  }
+}
+
+/// Embedded nutrition information model
+/// Based on schema.org NutritionInformation
+@embedded
+class NutritionInfo {
+  /// Serving size description (e.g., "1 serving", "100g")
+  String? servingSize;
+  
+  /// Calories per serving
+  int? calories;
+  
+  /// Total fat in grams
+  double? fatContent;
+  
+  /// Saturated fat in grams
+  double? saturatedFatContent;
+  
+  /// Trans fat in grams
+  double? transFatContent;
+  
+  /// Cholesterol in milligrams
+  double? cholesterolContent;
+  
+  /// Sodium in milligrams
+  double? sodiumContent;
+  
+  /// Total carbohydrates in grams
+  double? carbohydrateContent;
+  
+  /// Dietary fiber in grams
+  double? fiberContent;
+  
+  /// Sugars in grams
+  double? sugarContent;
+  
+  /// Protein in grams
+  double? proteinContent;
+
+  NutritionInfo();
+
+  NutritionInfo.create({
+    this.servingSize,
+    this.calories,
+    this.fatContent,
+    this.saturatedFatContent,
+    this.transFatContent,
+    this.cholesterolContent,
+    this.sodiumContent,
+    this.carbohydrateContent,
+    this.fiberContent,
+    this.sugarContent,
+    this.proteinContent,
+  });
+
+  factory NutritionInfo.fromJson(Map<String, dynamic> json) {
+    return NutritionInfo()
+      ..servingSize = json['servingSize'] as String?
+      ..calories = _parseNumber(json['calories'])?.round()
+      ..fatContent = _parseNumber(json['fatContent'])
+      ..saturatedFatContent = _parseNumber(json['saturatedFatContent'])
+      ..transFatContent = _parseNumber(json['transFatContent'])
+      ..cholesterolContent = _parseNumber(json['cholesterolContent'])
+      ..sodiumContent = _parseNumber(json['sodiumContent'])
+      ..carbohydrateContent = _parseNumber(json['carbohydrateContent'])
+      ..fiberContent = _parseNumber(json['fiberContent'])
+      ..sugarContent = _parseNumber(json['sugarContent'])
+      ..proteinContent = _parseNumber(json['proteinContent']);
+  }
+
+  /// Parse a nutrition value that might be a number or string like "20 g"
+  static double? _parseNumber(dynamic value) {
+    if (value == null) return null;
+    if (value is num) return value.toDouble();
+    if (value is String) {
+      // Extract number from strings like "20 g", "150 kcal", etc.
+      final match = RegExp(r'([\d.]+)').firstMatch(value);
+      if (match != null) {
+        return double.tryParse(match.group(1)!);
+      }
+    }
+    return null;
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      if (servingSize != null) 'servingSize': servingSize,
+      if (calories != null) 'calories': calories,
+      if (fatContent != null) 'fatContent': fatContent,
+      if (saturatedFatContent != null) 'saturatedFatContent': saturatedFatContent,
+      if (transFatContent != null) 'transFatContent': transFatContent,
+      if (cholesterolContent != null) 'cholesterolContent': cholesterolContent,
+      if (sodiumContent != null) 'sodiumContent': sodiumContent,
+      if (carbohydrateContent != null) 'carbohydrateContent': carbohydrateContent,
+      if (fiberContent != null) 'fiberContent': fiberContent,
+      if (sugarContent != null) 'sugarContent': sugarContent,
+      if (proteinContent != null) 'proteinContent': proteinContent,
+    };
+  }
+
+  /// Check if any nutrition data is available
+  bool get hasData =>
+      calories != null ||
+      fatContent != null ||
+      carbohydrateContent != null ||
+      proteinContent != null;
+
+  /// Format for compact display (e.g., "150 cal")
+  String? get compactDisplay {
+    if (calories != null) return '$calories cal';
+    return null;
   }
 }

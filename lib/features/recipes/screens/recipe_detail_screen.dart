@@ -6,6 +6,7 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
+import '../models/cuisine.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
@@ -168,7 +169,7 @@ class RecipeDetailView extends ConsumerWidget {
                     children: [
                       if (recipe.cuisine != null)
                         Chip(
-                          label: Text(recipe.cuisine!),
+                          label: Text(Cuisine.toAdjective(recipe.cuisine)),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
@@ -194,6 +195,18 @@ class RecipeDetailView extends ConsumerWidget {
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
+                        ),
+                      if (recipe.nutrition != null && recipe.nutrition!.hasData)
+                        Tooltip(
+                          message: _buildNutritionTooltip(recipe.nutrition!),
+                          child: ActionChip(
+                            avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.onSurface),
+                            label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
+                            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                            labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                            visualDensity: VisualDensity.compact,
+                            onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
+                          ),
                         ),
                     ],
                   ),
@@ -485,6 +498,84 @@ class RecipeDetailView extends ConsumerWidget {
             style: TextButton.styleFrom(foregroundColor: Theme.of(ctx).colorScheme.secondary),
             child: const Text('Delete'),
           ),
+        ],
+      ),
+    );
+  }
+
+  String _buildNutritionTooltip(NutritionInfo nutrition) {
+    final parts = <String>[];
+    if (nutrition.calories != null) parts.add('${nutrition.calories} cal');
+    if (nutrition.proteinContent != null) parts.add('${nutrition.proteinContent}g protein');
+    if (nutrition.carbohydrateContent != null) parts.add('${nutrition.carbohydrateContent}g carbs');
+    if (nutrition.fatContent != null) parts.add('${nutrition.fatContent}g fat');
+    return parts.join(' • ');
+  }
+
+  void _showNutritionDialog(BuildContext context, NutritionInfo nutrition) {
+    final theme = Theme.of(context);
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Row(
+          children: [
+            Icon(Icons.local_fire_department, color: theme.colorScheme.secondary),
+            const SizedBox(width: 8),
+            const Text('Nutrition Info'),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (nutrition.servingSize != null)
+              _nutritionRow('Serving Size', nutrition.servingSize!),
+            if (nutrition.calories != null)
+              _nutritionRow('Calories', '${nutrition.calories}'),
+            if (nutrition.proteinContent != null)
+              _nutritionRow('Protein', '${nutrition.proteinContent}g'),
+            if (nutrition.carbohydrateContent != null)
+              _nutritionRow('Carbohydrates', '${nutrition.carbohydrateContent}g'),
+            if (nutrition.fiberContent != null)
+              _nutritionRow('Fiber', '${nutrition.fiberContent}g'),
+            if (nutrition.sugarContent != null)
+              _nutritionRow('Sugar', '${nutrition.sugarContent}g'),
+            if (nutrition.fatContent != null)
+              _nutritionRow('Total Fat', '${nutrition.fatContent}g'),
+            if (nutrition.saturatedFatContent != null)
+              _nutritionRow('Saturated Fat', '${nutrition.saturatedFatContent}g'),
+            if (nutrition.cholesterolContent != null)
+              _nutritionRow('Cholesterol', '${nutrition.cholesterolContent}mg'),
+            if (nutrition.sodiumContent != null)
+              _nutritionRow('Sodium', '${nutrition.sodiumContent}mg'),
+            const SizedBox(height: 16),
+            Text(
+              'Note: Nutrition information is estimated and may vary based on ingredients and preparation.',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Close'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _nutritionRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label),
+          Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
         ],
       ),
     );
