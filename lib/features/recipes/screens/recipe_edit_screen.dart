@@ -1010,82 +1010,199 @@ class _CuisineSelector extends StatelessWidget {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      builder: (ctx) => DraggableScrollableSheet(
-        initialChildSize: 0.7,
-        minChildSize: 0.3,
-        maxChildSize: 0.9,
-        expand: false,
-        builder: (_, controller) => Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  const Text(
-                    'Select Cuisine',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                  ),
-                  const Spacer(),
-                  TextButton(
-                    onPressed: () {
-                      onChanged(null);
-                      Navigator.pop(ctx);
-                    },
-                    child: const Text('Clear'),
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.close),
-                    onPressed: () => Navigator.pop(ctx),
-                  ),
-                ],
-              ),
+      builder: (ctx) => _CuisinePickerSheet(
+        selectedCuisine: selectedCuisine,
+        onChanged: (code) {
+          onChanged(code);
+          Navigator.pop(ctx);
+        },
+        onClear: () {
+          onChanged(null);
+          Navigator.pop(ctx);
+        },
+      ),
+    );
+  }
+}
+
+/// Bottom sheet with searchable cuisine list grouped by continent
+class _CuisinePickerSheet extends StatefulWidget {
+  final String? selectedCuisine;
+  final ValueChanged<String> onChanged;
+  final VoidCallback onClear;
+
+  const _CuisinePickerSheet({
+    required this.selectedCuisine,
+    required this.onChanged,
+    required this.onClear,
+  });
+
+  @override
+  State<_CuisinePickerSheet> createState() => _CuisinePickerSheetState();
+}
+
+class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  List<Cuisine> get _filteredCuisines {
+    if (_searchQuery.isEmpty) return [];
+    final query = _searchQuery.toLowerCase();
+    return Cuisine.all.where((c) => 
+      c.name.toLowerCase().contains(query) ||
+      c.continent.toLowerCase().contains(query) ||
+      c.code.toLowerCase().contains(query)
+    ).toList()..sort((a, b) => a.name.compareTo(b.name));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return DraggableScrollableSheet(
+      initialChildSize: 0.7,
+      minChildSize: 0.3,
+      maxChildSize: 0.9,
+      expand: false,
+      builder: (_, controller) => Column(
+        children: [
+          // Header
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                const Text(
+                  'Select Cuisine',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: widget.onClear,
+                  child: const Text('Clear'),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
             ),
-            const Divider(height: 1),
-            Expanded(
-              child: ListView(
-                controller: controller,
-                children: CuisineGroup.all.map((group) {
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-                        child: Text(
-                          group.continent,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Theme.of(context).colorScheme.primary,
-                            fontSize: 14,
-                          ),
-                        ),
-                      ),
-                      ...group.cuisines.map((cuisine) {
-                        final isSelected = selectedCuisine == cuisine.code;
-                        return ListTile(
-                          leading: Text(
-                            cuisine.flag,
-                            style: const TextStyle(fontSize: 24),
-                          ),
-                          title: Text(cuisine.name),
-                          trailing: isSelected
-                              ? Icon(Icons.check,
-                                  color: Theme.of(context).colorScheme.primary)
-                              : null,
-                          selected: isSelected,
-                          onTap: () {
-                            onChanged(cuisine.code);
-                            Navigator.pop(ctx);
-                          },
-                        );
-                      }),
-                    ],
-                  );
-                }).toList(),
+          ),
+          // Search field
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                hintText: 'Search cuisines...',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
+              onChanged: (value) => setState(() => _searchQuery = value),
+            ),
+          ),
+          const SizedBox(height: 8),
+          const Divider(height: 1),
+          // Content
+          Expanded(
+            child: _searchQuery.isNotEmpty
+                ? _buildSearchResults(controller)
+                : _buildGroupedList(controller),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSearchResults(ScrollController controller) {
+    final results = _filteredCuisines;
+    if (results.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            const SizedBox(height: 16),
+            Text(
+              'No cuisines found for "$_searchQuery"',
+              style: TextStyle(color: Colors.grey.shade600),
             ),
           ],
         ),
-      ),
+      );
+    }
+    
+    return ListView.builder(
+      controller: controller,
+      itemCount: results.length,
+      itemBuilder: (context, index) {
+        final cuisine = results[index];
+        final isSelected = widget.selectedCuisine == cuisine.code;
+        return ListTile(
+          leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+          title: Text(cuisine.name),
+          subtitle: Text(cuisine.continent, 
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+          trailing: isSelected
+              ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+              : null,
+          selected: isSelected,
+          onTap: () => widget.onChanged(cuisine.code),
+        );
+      },
+    );
+  }
+
+  Widget _buildGroupedList(ScrollController controller) {
+    return ListView(
+      controller: controller,
+      children: CuisineGroup.all.map((group) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Text(
+                group.continent,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            ...group.cuisines.map((cuisine) {
+              final isSelected = widget.selectedCuisine == cuisine.code;
+              return ListTile(
+                leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+                title: Text(cuisine.name),
+                trailing: isSelected
+                    ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+                    : null,
+                selected: isSelected,
+                onTap: () => widget.onChanged(cuisine.code),
+              );
+            }),
+          ],
+        );
+      }).toList(),
     );
   }
 }

@@ -56,6 +56,16 @@ class MemoixColors {
   static const Color moroccan = Color(0xFFD7CCC8);    // Light brown
   static const Color turkish = Color(0xFFB3E5FC);     // Light blue
 
+  // Continent-based dot colors (thematic with primary #E8B4A0 / secondary #A88FA8)
+  // These are used for cuisine indicator dots, designed to complement the warm palette
+  static const Color continentAsian = Color(0xFFE07B6F);       // Warm coral-red
+  static const Color continentEuropean = Color(0xFF7B9CC4);    // Muted blue
+  static const Color continentAmericas = Color(0xFF7AB89E);    // Sage green  
+  static const Color continentCaribbean = Color(0xFFE8A86B);   // Warm orange-gold
+  static const Color continentAfrican = Color(0xFFB8906E);     // Terracotta
+  static const Color continentMiddleEast = Color(0xFFD4A574);  // Saffron/amber
+  static const Color continentOceanian = Color(0xFF6BA3B5);    // Ocean teal
+
   // UI colors
   static const Color background = Color(0xFFFAFAFA);
   static const Color surface = Color(0xFFFFFFFF);
@@ -171,5 +181,116 @@ class MemoixColors {
       default:
         return Colors.grey.shade100;
     }
+  }
+
+  /// Get dot color for a cuisine based on its continent grouping
+  /// Uses themed colors that complement the app's primary/secondary palette
+  /// Handles both cuisine names ("Japanese") and country codes ("JP")
+  static Color forContinentDot(String? cuisine) {
+    if (cuisine == null || cuisine.isEmpty) return Colors.grey;
+    
+    final lower = cuisine.toLowerCase().trim();
+    final upper = cuisine.toUpperCase().trim();
+    
+    // Check 2-3 letter country codes first (comprehensive list)
+    const asianCodes = ['BD', 'MM', 'KH', 'CN', 'IN', 'ID', 'JP', 'KR', 'LA', 'MY', 'MN', 'NP', 'PK', 'PH', 'SG', 'LK', 'TW', 'TH', 'VN'];
+    const europeanCodes = ['AL', 'AT', 'BY', 'BE', 'BA', 'GB', 'BG', 'HR', 'CY', 'CZ', 'DK', 'NL', 'EE', 'FI', 'FR', 'GE', 'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'MT', 'MD', 'ME', 'NO', 'PL', 'PT', 'RO', 'RU', 'RS', 'SK', 'SI', 'ES', 'SE', 'CH', 'UA'];
+    const americasCodes = ['AR', 'BO', 'BR', 'CA', 'CL', 'CO', 'CR', 'EC', 'SV', 'GT', 'HN', 'MX', 'NI', 'PA', 'PY', 'PE', 'US', 'UY', 'VE'];
+    const caribbeanCodes = ['BS', 'BB', 'CU', 'DO', 'GY', 'HT', 'JM', 'PR', 'TT'];
+    const africanCodes = ['DZ', 'CM', 'EG', 'ET', 'GH', 'KE', 'MA', 'NG', 'SN', 'ZA', 'TZ', 'TN', 'UG'];
+    const middleEastCodes = ['AF', 'BH', 'AE', 'IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'PS', 'QA', 'SA', 'SY', 'TR', 'YE'];
+    const oceanianCodes = ['AU', 'FJ', 'HI', 'NZ', 'PG', 'WS', 'TO'];
+    
+    if (asianCodes.contains(upper)) return continentAsian;
+    if (europeanCodes.contains(upper)) return continentEuropean;
+    if (americasCodes.contains(upper)) return continentAmericas;
+    if (caribbeanCodes.contains(upper)) return continentCaribbean;
+    if (africanCodes.contains(upper)) return continentAfrican;
+    if (middleEastCodes.contains(upper)) return continentMiddleEast;
+    if (oceanianCodes.contains(upper)) return continentOceanian;
+    
+    // Asian cuisines by name
+    if (['korean', 'japanese', 'chinese', 'indian', 'thai', 'vietnamese',
+         'filipino', 'indonesian', 'malaysian', 'singaporean', 'taiwanese',
+         'pakistani', 'nepali', 'sri lankan', 'bangladeshi', 'burmese',
+         'cambodian', 'laotian', 'mongolian', 'korea', 'japan', 'china',
+         'india', 'thailand', 'vietnam', 'philippines', 'indonesia', 'malaysia',
+         'singapore', 'taiwan', 'pakistan', 'nepal', 'sri lanka', 'bangladesh',
+         'myanmar', 'burma', 'cambodia', 'laos', 'mongolia', 'asian'].contains(lower)) {
+      return continentAsian;
+    }
+    
+    // European cuisines by name
+    if (['french', 'italian', 'spanish', 'german', 'greek', 'british',
+         'irish', 'polish', 'portuguese', 'russian', 'swedish', 'hungarian',
+         'ukrainian', 'austrian', 'belgian', 'croatian', 'czech', 'danish',
+         'dutch', 'finnish', 'norwegian', 'romanian', 'serbian', 'swiss',
+         'albanian', 'belarusian', 'bosnian', 'bulgarian', 'cypriot', 'estonian',
+         'georgian', 'icelandic', 'latvian', 'lithuanian', 'maltese', 'moldovan',
+         'montenegrin', 'slovak', 'slovenian',
+         'france', 'italy', 'spain', 'germany', 'greece', 'uk', 'united kingdom',
+         'england', 'ireland', 'poland', 'portugal', 'russia', 'sweden',
+         'hungary', 'ukraine', 'austria', 'belgium', 'croatia', 'denmark',
+         'netherlands', 'finland', 'norway', 'romania', 'serbia', 'switzerland',
+         'albania', 'belarus', 'bosnia', 'bulgaria', 'cyprus', 'estonia',
+         'georgia', 'iceland', 'latvia', 'lithuania', 'malta', 'moldova',
+         'montenegro', 'slovakia', 'slovenia',
+         'european', 'mediterranean', 'nordic', 'scandinavian'].contains(lower)) {
+      return continentEuropean;
+    }
+    
+    // Americas cuisines by name
+    if (['american', 'mexican', 'brazilian', 'argentine', 'peruvian',
+         'canadian', 'chilean', 'colombian', 'venezuelan', 'bolivian',
+         'costa rican', 'ecuadorian', 'salvadoran', 'guatemalan', 'honduran',
+         'nicaraguan', 'panamanian', 'paraguayan', 'uruguayan',
+         'usa', 'united states', 'america', 'mexico', 'brazil', 'argentina',
+         'peru', 'canada', 'chile', 'colombia', 'venezuela', 'bolivia',
+         'costa rica', 'ecuador', 'el salvador', 'guatemala', 'honduras',
+         'nicaragua', 'panama', 'paraguay', 'uruguay',
+         'north american', 'south american', 'latin american', 'southern',
+         'cajun', 'tex-mex', 'creole'].contains(lower)) {
+      return continentAmericas;
+    }
+    
+    // Caribbean cuisines by name
+    if (['jamaican', 'cuban', 'haitian', 'dominican', 'puerto rican',
+         'trinidadian', 'barbadian', 'bahamian', 'guyanese',
+         'jamaica', 'cuba', 'haiti', 'dominican republic', 'puerto rico',
+         'trinidad', 'barbados', 'bahamas', 'guyana', 'caribbean'].contains(lower)) {
+      return continentCaribbean;
+    }
+    
+    // African cuisines by name
+    if (['ethiopian', 'moroccan', 'south african', 'egyptian', 'nigerian',
+         'ghanaian', 'kenyan', 'tunisian', 'algerian', 'cameroonian',
+         'senegalese', 'tanzanian', 'ugandan',
+         'ethiopia', 'morocco', 'south africa', 'egypt', 'nigeria', 'ghana',
+         'kenya', 'tunisia', 'algeria', 'cameroon', 'senegal', 'tanzania',
+         'uganda', 'african'].contains(lower)) {
+      return continentAfrican;
+    }
+    
+    // Middle Eastern cuisines by name
+    if (['turkish', 'lebanese', 'israeli', 'persian', 'iraqi', 'syrian',
+         'jordanian', 'palestinian', 'saudi', 'yemeni', 'afghan', 'bahraini',
+         'emirati', 'kuwaiti', 'omani', 'qatari',
+         'turkey', 'lebanon', 'israel', 'iran', 'persia', 'iraq', 'syria',
+         'jordan', 'palestine', 'saudi arabia', 'yemen', 'afghanistan',
+         'bahrain', 'uae', 'united arab emirates', 'kuwait', 'oman', 'qatar',
+         'middle east', 'middle eastern'].contains(lower)) {
+      return continentMiddleEast;
+    }
+    
+    // Oceanian cuisines by name
+    if (['australian', 'new zealand', 'hawaiian', 'fijian', 'samoan',
+         'tongan', 'papua new guinean',
+         'australia', 'hawaii', 'fiji', 'samoa', 'tonga', 'papua new guinea',
+         'oceanian', 'polynesian'].contains(lower)) {
+      return continentOceanian;
+    }
+    
+    // Fallback
+    return Colors.grey;
   }
 }

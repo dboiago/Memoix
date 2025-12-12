@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/recipe.dart';
+import '../models/cuisine.dart';
 import '../repository/recipe_repository.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../../core/providers.dart';
+import '../../../app/theme/colors.dart';
 
 /// Recipe card matching Figma design
 class RecipeCard extends ConsumerStatefulWidget {
@@ -71,12 +73,12 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   // Cuisine/country dot + servings + time
                   Row(
                     children: [
-                      // Cuisine indicator with warm color dot
+                      // Cuisine indicator with continent-colored dot
                       if (cuisine != null && cuisine.isNotEmpty) ...[
                         Text(
                           '\u2022',
                           style: TextStyle(
-                            color: theme.colorScheme.primary, // warm color
+                            color: MemoixColors.forContinentDot(cuisine),
                             fontSize: 16,
                           ),
                         ),
@@ -189,23 +191,8 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
   }
 
   String _displayCuisine(String raw, String? subcategory) {
-    // Map country names to cuisine adjectives
-    const map = {
-      'Korea': 'Korean',
-      'Korean': 'Korean',
-      'China': 'Chinese',
-      'Chinese': 'Chinese',
-      'Japan': 'Japanese',
-      'Japanese': 'Japanese',
-      'Spain': 'Spanish',
-      'France': 'French',
-      'Italy': 'Italian',
-      'Mexico': 'Mexican',
-      'Mexican': 'Mexican',
-      'United States': 'American',
-      'North American': 'North American',
-    };
-    final adj = map[raw] ?? raw;
+    // Use the comprehensive Cuisine.toAdjective() method
+    final adj = Cuisine.toAdjective(raw);
     if (subcategory != null && subcategory.isNotEmpty) {
       return '$adj ($subcategory)';
     }

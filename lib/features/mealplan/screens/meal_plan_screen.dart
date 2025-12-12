@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import '../models/meal_plan.dart';
 import '../../../core/providers.dart';
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colors.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
@@ -100,9 +101,6 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        const SizedBox(width: 8),
-                        // Weekly nutrition summary chip
-                        _WeeklyNutritionChip(weekStart: week),
                       ],
                     );
                   },
@@ -303,12 +301,19 @@ class _DayCardState extends ConsumerState<DayCard> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-                    child: Text(
-                      MealCourse.displayName(course),
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant,
-                        fontWeight: FontWeight.w600,
-                      ),
+                    child: Row(
+                      children: [
+                        Text(
+                          MealCourse.displayName(course),
+                          style: theme.textTheme.labelMedium?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        // Nutrition summary for this meal course
+                        _MealCourseNutritionChip(meals: meals),
+                      ],
                     ),
                   ),
                   ...meals.map((meal) => Dismissible(
@@ -338,12 +343,12 @@ class _DayCardState extends ConsumerState<DayCard> {
                         padding: const EdgeInsets.only(top: 4),
                         child: Row(
                           children: [
-                            // Cuisine with colored dot
+                            // Cuisine with continent-colored dot
                             if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
                               Text(
                                 '\u2022',
                                 style: TextStyle(
-                                  color: theme.colorScheme.primary,
+                                  color: MemoixColors.forContinentDot(meal.cuisine),
                                   fontSize: 14,
                                 ),
                               ),
@@ -708,6 +713,85 @@ class _WeeklyNutritionChip extends ConsumerWidget {
         
         // Calculate total calories from recipes
         return _NutritionSummaryChip(recipeIds: recipeIds.toList());
+      },
+    );
+  }
+}
+
+/// Widget that shows calories for meals in a specific course (Breakfast, Lunch, Dinner, etc.)
+class _MealCourseNutritionChip extends ConsumerWidget {
+  final List<PlannedMeal> meals;
+
+  const _MealCourseNutritionChip({required this.meals});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final recipesAsync = ref.watch(allRecipesProvider);
+    
+    // Extract recipe IDs from meals
+    final recipeIds = meals
+        .where((m) => m.recipeId != null)
+        .map((m) => m.recipeId!)
+        .toList();
+    
+    if (recipeIds.isEmpty) return const SizedBox.shrink();
+    
+    return recipesAsync.when(
+      loading: () => const SizedBox.shrink(),
+      error: (_, __) => const SizedBox.shrink(),
+      data: (allRecipes) {
+        int totalCalories = 0;
+        double totalProtein = 0;
+        double totalCarbs = 0;
+        double totalFat = 0;
+        
+        for (final id in recipeIds) {
+          final recipe = allRecipes.firstWhere(
+            (r) => r.uuid == id,
+            orElse: () => Recipe()..name = '',
+          );
+          if (recipe.nutrition != null && recipe.nutrition!.hasData) {
+            if (recipe.nutrition!.calories != null) {
+              totalCalories += recipe.nutrition!.calories!;
+            }
+            if (recipe.nutrition!.proteinContent != null) {
+              totalProtein += recipe.nutrition!.proteinContent!;
+            }
+            if (recipe.nutrition!.carbohydrateContent != null) {
+              totalCarbs += recipe.nutrition!.carbohydrateContent!;
+            }
+            if (recipe.nutrition!.fatContent != null) {
+              totalFat += recipe.nutrition!.fatContent!;
+            }
+          }
+        }
+        
+        if (totalCalories == 0) return const SizedBox.shrink();
+        
+        return Tooltip(
+          message: '${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat',
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+            decoration: BoxDecoration(
+              color: theme.colorScheme.surfaceContainerHighest,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.local_fire_department, size: 12, color: theme.colorScheme.primary),
+                const SizedBox(width: 4),
+                Text(
+                  '$totalCalories cal',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
       },
     );
   }
