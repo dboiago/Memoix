@@ -391,7 +391,69 @@ class RecipeDetailView extends ConsumerWidget {
 
   void _shareRecipe(BuildContext context, WidgetRef ref) {
     final shareService = ref.read(shareServiceProvider);
-    shareService.shareRecipe(recipe);
+    final theme = Theme.of(context);
+    
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Share "${recipe.name}"',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.qr_code, color: theme.colorScheme.primary),
+              title: const Text('Show QR Code'),
+              subtitle: const Text('Others can scan to import'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.showQrCode(context, recipe);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.share, color: theme.colorScheme.primary),
+              title: const Text('Share Link'),
+              subtitle: const Text('Send via any app'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareRecipe(recipe);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.content_copy, color: theme.colorScheme.primary),
+              title: const Text('Copy Link'),
+              subtitle: const Text('Copy to clipboard'),
+              onTap: () async {
+                Navigator.pop(ctx);
+                await shareService.copyShareLink(recipe);
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Link copied to clipboard!')),
+                  );
+                }
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.text_snippet, color: theme.colorScheme.primary),
+              title: const Text('Share as Text'),
+              subtitle: const Text('Full recipe in plain text'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareAsText(recipe);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
   }
 
   void _navigateToPairedRecipe(BuildContext context, WidgetRef ref, String pairName) async {

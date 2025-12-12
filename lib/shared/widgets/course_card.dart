@@ -51,47 +51,53 @@ class _CourseCardState extends State<CourseCard> {
           highlightColor: Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8), // more compact
+            padding: const EdgeInsets.all(8),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
               children: [
-                // Icon container: compact size with rounded corners
-                Container(
-                  width: 36,
-                  height: 36,
-                  decoration: BoxDecoration(
-                    color: (_hovered || _pressed)
-                        ? theme.colorScheme.secondary // group-hover:bg-secondary
-                        : theme.colorScheme.surfaceContainerHighest, // bg-accent
-                    borderRadius: BorderRadius.circular(8), // rounded-lg
-                  ),
-                  child: Icon(
-                    _getIconData(widget.category.iconName),
-                    color: (_hovered || _pressed)
-                        ? (isDark ? Colors.black87 : Colors.white) // dark icon on purple bg
-                        : theme.colorScheme.onSurfaceVariant,
-                    size: 18, // smaller icon
+                // Icon container
+                Flexible(
+                  flex: 3,
+                  child: Container(
+                    constraints: const BoxConstraints(maxWidth: 36, maxHeight: 36),
+                    decoration: BoxDecoration(
+                      color: (_hovered || _pressed)
+                          ? theme.colorScheme.secondary
+                          : theme.colorScheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Center(
+                      child: Icon(
+                        _getIconData(widget.category.iconName),
+                        color: (_hovered || _pressed)
+                            ? (isDark ? Colors.black87 : Colors.white)
+                            : theme.colorScheme.onSurfaceVariant,
+                        size: 18,
+                      ),
+                    ),
                   ),
                 ),
-                const SizedBox(height: 6), // tighter spacing
-                // Texts
-                Text(
-                  widget.category.name,
-                  style: theme.textTheme.titleSmall?.copyWith(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
+                const SizedBox(height: 4),
+                // Category name
+                Flexible(
+                  flex: 2,
+                  child: Text(
+                    widget.category.name,
+                    style: theme.textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 13,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 1),
+                // Recipe count
                 Text(
                   '${widget.recipeCount} recipes',
                   style: theme.textTheme.labelSmall?.copyWith(
                     color: theme.colorScheme.onSurfaceVariant,
-                    fontSize: 11,
+                    fontSize: 10,
                   ),
                 ),
               ],

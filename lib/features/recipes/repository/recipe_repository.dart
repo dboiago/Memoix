@@ -159,6 +159,14 @@ class RecipeRepository {
     return _db.recipes.where().watch(fireImmediately: true);
   }
 
+  /// Watch favorite recipes (stream)
+  Stream<List<Recipe>> watchFavorites() {
+    return _db.recipes
+        .filter()
+        .isFavoriteEqualTo(true)
+        .watch(fireImmediately: true);
+  }
+
   /// Watch recipes by course
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
     return _db.recipes
@@ -235,9 +243,9 @@ final categoriesProvider = StreamProvider<List<Category>>((ref) {
   return ref.watch(recipeRepositoryProvider).watchCategories();
 });
 
-/// Provider for favorite recipes
-final favoriteRecipesProvider = FutureProvider<List<Recipe>>((ref) {
-  return ref.watch(recipeRepositoryProvider).getFavorites();
+/// Provider for favorite recipes (stream-based for real-time updates)
+final favoriteRecipesProvider = StreamProvider<List<Recipe>>((ref) {
+  return ref.watch(recipeRepositoryProvider).watchFavorites();
 });
 
 /// Provider for recipe search

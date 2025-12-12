@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
@@ -366,7 +367,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
   void _copyLink() {
     if (_shareLink == null) return;
-    // Copy to clipboard
+    Clipboard.setData(ClipboardData(text: _shareLink!));
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Link copied to clipboard!')),
     );
