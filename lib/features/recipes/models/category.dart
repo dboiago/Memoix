@@ -185,6 +185,19 @@ class Category {
       ..isVisible = json['isVisible'] as bool? ?? true;
   }
 
+  /// Get display name from slug (e.g., 'vegan' -> "Veg'n")
+  static String displayNameFromSlug(String slug) {
+    final lower = slug.toLowerCase();
+    for (final category in defaults) {
+      if (category.slug == lower) {
+        return category.name;
+      }
+    }
+    // Fallback: capitalize first letter
+    if (slug.isEmpty) return slug;
+    return slug[0].toUpperCase() + slug.substring(1);
+  }
+
   Map<String, dynamic> toJson() {
     return {
       'slug': slug,
