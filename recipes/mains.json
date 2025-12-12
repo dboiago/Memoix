@@ -1,14 +1,14 @@
 [
   {
-    "uuid": "4f5e8c1b-2d3a-4b5c-9d8e-7f6a5b4c3d2e",
+    "uuid": "a4c296ee-a7c7-4058-8f65-dee11ed83fc6",
     "name": "Kung Pao",
     "course": "mains",
     "cuisine": "CN",
     "subcategory": null,
-    "serves": "2",
+    "serves": "2.0",
     "time": "40 min",
     "pairsWith": [],
-    "notes": "alt: Chicken, Beef",
+    "notes": "",
     "ingredients": [
       {
         "name": "Tofu",
@@ -24,25 +24,25 @@
         "amount": "3 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
       {
         "name": "Green Pepper",
-        "amount": "1",
+        "amount": "1.0",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
       {
         "name": "Red Pepper",
-        "amount": "1",
+        "amount": "1.0",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -51,25 +51,25 @@
         "amount": "0.125 tsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
       {
         "name": "Red Chili",
-        "amount": "2021-03-05",
+        "amount": "2021-03-05 00:00:00",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
       {
         "name": "Garlic",
-        "amount": "2",
+        "amount": "2.0",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -78,16 +78,16 @@
         "amount": "1 in",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
       {
         "name": "Scallions",
-        "amount": "2",
+        "amount": "2.0",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -96,7 +96,7 @@
         "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -105,81 +105,81 @@
         "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Water",
         "amount": "2 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Vinegar",
         "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Green Onion",
         "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Cornstarch",
         "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Sugar",
         "amount": "2 tsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Garlic",
-        "amount": "2",
+        "amount": "2.0",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Ginger",
         "amount": "1 in",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       },
       {
         "name": "Salt",
         "amount": "Pinch",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
-        "section": "Sauce"
+        "section": null
       }
     ],
     "directions": [
@@ -192,42 +192,39 @@
     "sourceUrl": null,
     "imageUrl": null,
     "source": "memoix",
-    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "lastCookedAt": null,
-    "tags": [],
     "createdAt": "2025-12-10T00:00:00.000000",
     "updatedAt": "2025-12-10T00:00:00.000000",
     "version": 1
   },
   {
-    "uuid": "8a7b6c5d-4e3f-2a1b-0c9d-8e7f6a5b4c3d",
+    "uuid": "5b920649-54df-4f3f-a58f-39e3c7f10a9a",
     "name": "Dan Dan Noodles",
     "course": "mains",
     "cuisine": "CN",
     "subcategory": null,
-    "serves": "3",
+    "serves": "3.0",
     "time": "35 min",
     "pairsWith": [],
-    "notes": null,
+    "notes": "",
     "ingredients": [
       {
         "name": "Alkaline Noodles",
         "amount": "200 g",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
       {
         "name": "Scallion",
-        "amount": "2021-01-02",
+        "amount": "2021-01-02 00:00:00",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -263,42 +260,2806 @@
         "amount": "400 g",
         "unit": null,
         "preparation": null,
-        "alternative": "Pork/Beef (Optional)",
+        "alternative": "alt: Fine chopped shiitake",
         "isOptional": false,
-        "section": "Topping"
+        "section": null
+      },
+      {
+        "name": "Ya Cai",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Kim Chi without spice; Mustard Greens",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cooking Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Shaoxing Wine",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Dry Sherry, Mirin",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sichuan Pepper",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Star Anise",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sesame Paste",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Not Tahini; Roast and smash seeds",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Vinegar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Rice Vinegar, Balsamic",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sichuan Pepper",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Powder",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Make the topping by heating oil in wok then fry star anise and Sichuan peppercorn on low until aromatic; Remove spices",
+      "Add minced pork and fry until slightly brown; Add cooking wine, sugar and light soy sauce",
+      "Add ya chi and fry for 3-5 min until golden brown",
+      "Mix seasonings and add to each bowl",
+      "Cook noodles and and blanch vegetables",
+      "Add noodles to serving bowls and top with fried topping, scallion and toasted peanuts",
+      "Pour ~½ C hot stock around edges; Mix then eat"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "30dff930-605a-4d4f-aacc-54e7577bd354",
+    "name": "Scallion Oil Noodles",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cooking Oil",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Green Onion",
+        "amount": "14.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "1 clove",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "4 slices",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Akaline Noodles",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sichuan  Pepper",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oytster Sauce",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cut onion 5-8 cm long",
+      "Heat oil in wok and add white parts of onion, garlic and ginger; fry until browned slightly",
+      "Add green parts of onion and fry until browned slightly",
+      "Remove from heat and add Sichuan peppercorn",
+      "Cook noodles then drain completely",
+      "Mix noodles with 1.5 Tbsp of oil; Add suce and mix; Top with crispy onion"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "d757e3c2-9311-4227-8f40-3379edc591f7",
+    "name": "Szechuan Pork",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "45 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Garlic Sprouts",
+        "amount": "1 bunch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Pepper",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "fresh green",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cooking Oil",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "½ thumb",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Green Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "2 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Doubanjiang",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Sambal Oelek",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Douchi",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: black bean sauce",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Shaoxing",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: mirin, dry sherry",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "skip if using mirin",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Pork Szechuan",
+        "amount": "300 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "pre-cook",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Heat oil in wok and fry doubanjiang on a lower heat until oil is red",
+      "Add ginger, garlic, sichuan and scallion until aromatic",
+      "Add douchi",
+      "Add sprouts, peppers, sugar and pork",
+      "Add soy sauce and shaoxing around edge of pan and mix in quick (stir fry)",
+      "Serve over rice"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "b7cbcfd4-b0cc-4689-a359-ec1882f94b19",
+    "name": "Red Braised Pork Belly",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "45 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "amount": "800g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "2 packs PC",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Yellow Rock Sugar",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: any sugar (less)",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Shaoxing Wine",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: mirin",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 inch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Star Anise",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "small",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Pepper",
+        "amount": "2024-04-06 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: 2-3 tsp sambol",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bay Leaves",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Sautee pork belly until crispy; remove and set aside",
+      "Sutee chili, anise, ginger, garlic until fragrant",
+      "add oil, sugar, light soy sauce until combined",
+      "add water and simmer ~1 min",
+      "add cinnamon, shaoxing wine, bay and green onion along with more water if needed",
+      "pour sauce over pork",
+      "top with more green onion if desired"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "4fecd097-f9b0-49bd-92c8-d9a9b4f45aee",
+    "name": "Hot Oyster Noodles",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "1.0",
+    "time": "15 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Noodles",
+        "amount": "1 serving",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Toasted Sesame",
+        "amount": "to taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Toasted Peanuts",
+        "amount": "to taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oyster Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Peppers",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "chili pepper",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Vinegar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Flakes",
+        "amount": "to taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Boil water; cook noodles",
+      "While waiting; Pour oyster sauce in middle of dish and lay garlic, onion and both peppers around",
+      "Heat 2 Tbsp hot oil and drizzle on top of seasonings in dish",
+      "Add soy sauce, vinegar, sesame seeds; mix well",
+      "Add noodles and peanuts; mix; serve"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "86ac4513-3746-4096-a438-ed1bfc271c61",
+    "name": "Shui Zhu Mushrooms",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Mushrooms",
+        "amount": "400 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Mixed",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dried Chili",
+        "amount": "12.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sichuan",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Doubajiang",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Broad bean paste",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "800 mL",
+        "unit": null,
+        "preparation": null,
+        "alternative": "3.4 C",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Green Onion",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 thumb",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Light",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Heat 12-20 chilis then add sichuan peppercorn into wok until slightly aromatic; remove and rough chop",
+      "Add oil to wok then fre doubanjiang, ginger, white part of scallions, garlic until aromatic also",
+      "Add a third of the chilis and peppers then the water",
+      "Simmer ~10 minutes then add soy sauce, muchrooms and bean sprouts (optional)",
+      "Cook ~2 minutes and transfer to bowl(s); Top with green onion sections and remaning chili and peppercorn",
+      "Drizzle hot oil on top"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "37b875de-1bb5-4dc6-a3ce-0fe6518ac90a",
+    "name": "Sweet and Sour Ribs (Tang Cu Pai Gu)",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cooking Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Rock Sugar",
+        "amount": "35 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Brown Sugar",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Light",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cooking Wine",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Dry Sherry, Mirin",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Vinegar",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Rice Vinegar",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Star Anise",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Spare Ribs",
+        "amount": "1 Lbs",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Add cooking oil and smashed rock sugar in wok over low fire until turns dark",
+      "Add ribs and coat in the sugar",
+      "Pour enough water to cover, add light soy sauce, black vinegar and anise (optional)",
+      "Cover and simmer ~25 min over low flame",
+      "Remove lid, turn up to medium heat and reduce",
+      "Add 1 extra tablespoon of vinegar before transfering out",
+      "Garnish with sesame seeds and spring onion"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "4ef75500-6370-4de7-8177-ac33ffc404c6",
+    "name": "Hoisin Pork",
+    "course": "mains",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "amount": "500 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Pork Butt",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Hoisin Suace",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Brown Sugar",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oyster Sauce",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Light",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Honey",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Dry Sherry, Mirin",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Vinegar",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Rice Vinegar",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Five Spice",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Soy Sauce",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Fry Pork to sear",
+      "Mix other ingredients",
+      "Pour over pork and fry hot until done",
+      "Pairs with steamed buns (Guo Bao)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "60a88747-8ad4-46b8-89ca-2bad8656a51c",
+    "name": "Katsudon",
+    "course": "mains",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "45 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Tofu",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "2021-01-02 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Flour",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Season (S&P)",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Season (S&P)",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Panko",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "4.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Rice",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "1 C uncooked",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dashi",
+        "amount": "200 ml / 6.8 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "6 Tbsp",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "60 ml / 2 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "4 Tbsp",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Mirin",
+        "amount": "60 ml / 2 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "4 Tbsp",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sake",
+        "amount": "30 ml / 1 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "2 Tbsp",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ketchup",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Worcestershire",
+        "amount": "2.5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oyster Sauce",
+        "amount": "2.5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Lee Kum Kee Veg. Stir-Fry Sauce",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Honey",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional / alt: Sugar",
+        "isOptional": true,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cut the tofu into 4 pieces",
+      "Dredge, egg wash then bread the tofu",
+      "Fry in oil",
+      "Slice the onion and add it to a frying pan with the sauce",
+      "Once the sauce starts to boil reduce heat and add sliced Tokatsu (cutlet/tofu)",
+      "Cook for ~2 min",
+      "Pour beaten eggs in a swirling motion from the middle to edge and let cook with a lid ~30 seconds or until eggs are almost set",
+      "Drizzle with Kewpie mayo and tankatsu sauce",
+      "Add green onion or other toppings (seasame seeds, seaweed) as desired",
+      "Mix everything together",
+      "Japanese sauces are sweeter and less sour, so while the honey is optional it feels requried"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "244f6a1a-2c3e-4fd5-8f23-b981c9460639",
+    "name": "Yakisoba",
+    "course": "mains",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "3.0",
+    "time": "35 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Noodles",
+        "amount": "300 g / 1½ oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Yellow noodles / alt: Buckwheat",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vegetable Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Tofu",
+        "amount": "200 g / 7 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "60 g / 2 oz",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Brocolli",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Shiitake",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Cremeni",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Green Onion",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bell Pepper",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Bean sprouts",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "3 tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Worcestershire",
+        "amount": "5 tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ketchup",
+        "amount": "3 tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Honey",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dashi Powder",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Dissolved in ½ tsp hot water",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cook noodles to package specification",
+      "Drain and toss in sesame oil",
+      "Cook protein and veg in a bit of oil",
+      "Add sauce and noodles",
+      "Add aonori (dried seaweed/not the roasted kind (yakinori), tho you could use that) and benishōga (red pickled ginger) if you can find it",
+      "Mix together",
+      "Japanese ingredients are sweeter and less sour, more ketchup/sugar may be required and less Worcestershire"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "6aa88c6b-dc05-483e-81da-0e3df2d1b513",
+    "name": "Yakibuta (Braised Pork)",
+    "course": "mains",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "1 hr - 2 hr",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Pork Butt",
+        "amount": "950-1000 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Tofu; Seitan",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "1000 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": "for real pork",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Scallions",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1.25 in",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "300 ml (10 oz)",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sake",
+        "amount": "150 ml (5 oz)",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "80 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Add oil to pan and brown pork on all sides",
+      "Transfer pork to a deep pot and all the remaining ingredients; Bring to boil",
+      "Reduce heat and cook ~2 hours (depending on pork)",
+      "Put pork in ziplock or container and add sauce from pot to cover; Marinate overnight",
+      "Slice ~¼ in and serve with vegetables or ramen",
+      "If not using pork butt you can skip the whole boiling part, brown the tofu then marinate without boiling; add water only as may be needed"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "55f19425-0291-41f5-8d95-0300bb9bd6f5",
+    "name": "Oyako Don",
+    "course": "mains",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chicken",
+        "amount": "250 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "0.5",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dashi Stock",
+        "amount": "¾ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Mirin",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "usukuchi/light",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Mix seasonings; Makes ~1 C",
+      "Cut onion into wedges and chicken into bite sized pieces",
+      "In pan over medium heat add the seasoning (can do half if making seperate bowls); Bring to simmer",
+      "Add the chicken and onion",
+      "Crack and whisk eggs in a bowl",
+      "Once liquid in pan is reduced by half add the egg and add green onion (optional); This is NOT SOUP the liquid should just barely cover the onions",
+      "Place a lid on the pan; Turn off heat and cook (do not overcook eggs)",
+      "Serve over rice; (optional) Top with mitsuba (tastes simlar to celery leaves)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "934c52ed-c736-4854-8bc1-0c460bfc5211",
+    "name": "Sundubu Jjigae (Tofu Stew)",
+    "course": "mains",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "40 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Soft Tofu",
+        "amount": "350 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Enoki Mushroom",
+        "amount": "100 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "amount": "2 / 20 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional; Crack into water",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Green Onion",
+        "amount": "1 stalk (green)",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Kombu Stock",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Any Stock",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Korean Chili Powder",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Korean Chili Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Cooking oil",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Fish Sauce",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: half soy sauce half rice vinegar",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Minced Garlic",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "S&P",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Heat oil and add garlic and chili powder",
+      "Add fish and soy sauce and stock; Bring to boil",
+      "Add tofu, mushrooms, egg and cook 2-3 min",
+      "Add sesame oil, green onion, S&P"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "39a3c04b-810c-4b48-af0a-770c83868c78",
+    "name": "Cold Kimchi Noodles",
+    "course": "mains",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "20 min",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Somen Noodles",
+        "amount": "180 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Kimchi",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cucumber",
+        "amount": "85 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Hard Boiled",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Gochujang",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Sriracha",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Rice Vinegar",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Honey",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Raw Sugar",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Toasted",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Cook noodles according to package (al dente)",
+      "Cool under cold water ~1 min then drain well",
+      "Mix noodles and sauce with kimchi in a bowl",
+      "Place cucumber and egg on top"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "cd9772ea-cbd6-44e3-b4cf-0d311152c5ba",
+    "name": "Korean Fried Chicken",
+    "course": "mains",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "4-5 people",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "amount": "3 lbs",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Rice Wine",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Minced Ginger",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sea Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Potato Starch",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Corn Starch",
+        "isOptional": false,
+        "section": null
       }
     ],
     "directions": [],
     "sourceUrl": null,
     "imageUrl": null,
     "source": "memoix",
-    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "lastCookedAt": null,
-    "tags": [],
     "createdAt": "2025-12-10T00:00:00.000000",
     "updatedAt": "2025-12-10T00:00:00.000000",
     "version": 1
   },
   {
-    "uuid": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "uuid": "f5e8aaa9-dfcb-4111-8ed5-e836d179b79d",
+    "name": "Quiche Lorraine",
+    "course": "mains",
+    "cuisine": "FR",
+    "subcategory": null,
+    "serves": "2021-04-06 00:00:00",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "amount": "1.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "AP",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Cubed",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "6 Tbsp / 90 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Ice Cold",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Baking Powder",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bacon",
+        "amount": "½ lb",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Heavy Cream",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Gruyere Cheese",
+        "amount": "1.5 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "6.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "S&P",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Add flour and baking powder in food processor",
+      "Add butter and pulse a few seconds at a time until butter chucks are small (pea size)",
+      "Add water and egg and pulse until dough just begins to form",
+      "Add more water if needed then remove and form a disc; Roll out dough and put on quiche plate",
+      "Prick bottom of crust with fork and refrigerate 30 min or freeze 15 min",
+      "Cook bacon, then add everything in a bowl, then power into crust (can also pre-cook onion)",
+      "Bake at 375 for 45 min"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "ccce97c9-730c-4358-9681-6f3bd7b6f7c8",
+    "name": "White Bean Cassoulet",
+    "course": "mains",
+    "cuisine": "FR",
+    "subcategory": null,
+    "serves": "2025-04-06 00:00:00",
+    "time": "2 hr",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "White Beans",
+        "amount": "1 Can",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Navy Beans",
+        "amount": "1 Can",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Olive oil",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "diced",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Celery",
+        "amount": "2025-03-04 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": "diced",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "diced",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "2025-04-06 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": "minced",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Veg “Ham”",
+        "amount": "1-2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "cubed",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sausage",
+        "amount": "2025-01-02 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Tomato Paste",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: 1 C tomatoes",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "White Wine",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Vegetable Broth",
+        "amount": "½-1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "minimal",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parmesan Rind",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Thyme",
+        "amount": "several sprigs",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bay Leaf",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Paprika",
+        "amount": "1–2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "⅛ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "S&P",
+        "amount": "to taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Breadcrumbs",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Parsley",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Thyme",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "1 clove",
+        "unit": null,
+        "preparation": null,
+        "alternative": "minced",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "melted",
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Melt butter; sauté onion, celery, carrot 8–10 min; add garlic.",
+      "Add veg ham + sausage; lightly brown.",
+      "Stir in tomato paste, paprika, nutmeg; cook 1 min.",
+      "Deglaze w/ white wine; reduce by half.",
+      "Add beans, ½ cup broth, parmesan rind, thyme, bay leaf; stir.",
+      "Simmer 20–25 min until thick; add broth only if needed.",
+      "Transfer to oven dish; cover and bake 350°F for 35–45 min.",
+      "(Optional) Top w/ buttered breadcrumbs; bake uncovered 10–15 min.",
+      "Rest 10–15 min; serve w/ baguette",
+      "Mix everything and top (see above for time)",
+      "Careful with garlic to not burn"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "2724d59d-cf88-494b-bbda-ce8426db02ae",
+    "name": "Pumpkin Gnocchi",
+    "course": "mains",
+    "cuisine": "IT",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Pumpkin",
+        "amount": "500 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Flour",
+        "amount": "200 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Butter",
+        "amount": "100 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Sage",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Parmesan",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Eggs",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Lemon Zest",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "S&P",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Bake pumpkin 1 hr at 350 until soft",
+      "Push pumpkin thru sieve",
+      "Add eggs, zest, parm, nutmeg, s&p",
+      "Add flour and stir until mixture starts to come away from sides of the bowl (add more flour if needed)",
+      "Drop dough by teaspoons or use piping bag into boiling water; Cook ~2 min or until they float",
+      "Heat butter in pan then add sage leaves; When leaves start to change colour add lemon juice and gnocchi",
+      "Top with parm and pepper"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "b2bfcb68-6d70-4453-b46b-d0a15c11532a",
+    "name": "Rabo de Toro (Oxtail Stew)",
+    "course": "mains",
+    "cuisine": "ES",
+    "subcategory": null,
+    "serves": "2021-04-06 00:00:00",
+    "time": "",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Oxtail",
+        "amount": "3-4 lbs",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Seitan Beef",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrots",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Red Pepper",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Leek",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Tomatoes",
+        "amount": "2023-02-03 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "4.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Stock",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Red Wine",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Bay Leaf",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cloves",
+        "amount": "4.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ground Ginger",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Flour the oxtail and brown; Remove from pot",
+      "Saute leek, garlic, red pepper and tomato ~10 min",
+      "Add carrot, bay leaf, ginger, cloves and saute ~1 min",
+      "Add oxtail and cover with wine and stock",
+      "Bring to a boil; Reduce and simmer ~3 hours",
+      "Remove oxtail and puree the sauce (not required, but nice)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "90a6dc73-5c13-411b-8255-87def07fd2ef",
+    "name": "Smoky Indoor Ribs",
+    "course": "mains",
+    "cuisine": "ES",
+    "subcategory": null,
+    "serves": "1 slab",
+    "time": "5 hr",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Slab Ribs",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "BBQ Sauce",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "smoky flavour is ideal",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Liquid Smoke",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Memphis Dust",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Clean ribs of excess fat and membrane",
+      "Mix water with liquid smoke and marrinate ribs for an hour (ziplock bag)",
+      "Season both sides of rubs with salt and spice rub then wrap in foil",
+      "Cook at 225 for 2 hours in the oven",
+      "Remove ribs from foil and place back in oven meaty side up for another 2 hours",
+      "Flip meaty side down and add BBQ sauce to bone side then broil 5 min (or until sauce starts to bubble)",
+      "Repeat previous step for meaty side",
+      "alt: finish on a BBQ instead of broiling"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "934a30df-a2c5-4d39-a8e8-35f9a25079a0",
+    "name": "Meatloaf",
+    "course": "mains",
+    "cuisine": "ES",
+    "subcategory": null,
+    "serves": "6.0",
+    "time": "1.5 hr",
+    "pairsWith": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Crutons",
+        "amount": "3 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chili Powder",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Thyme",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cayenne",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Red Bell Pepper",
+        "amount": "½",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ground Round",
+        "amount": "36-40 g / 2 packs",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Beyond",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1.5 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Egg",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Ketchup",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Tomato Paste",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Chipotle",
+        "amount": "2 cans",
+        "unit": null,
+        "preparation": null,
+        "alternative": "In adobo; the sauce is needed",
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Cocoa Powder",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Garlic Powder",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Whisk glaze ingredients together",
+      "Add croutons, chilli powerder, thyme, pepper to food processor and pulse to coarse crumb; Set aside in mixing bowl",
+      "Add onion, bell pepper, carrot and garlic to food processor and pulse until finely chopped; Add to mixing bowl",
+      "Add beyond ground round to mixing bowl; add salt",
+      "Mix together with hands, quickly add egg once mixed",
+      "Pack meat mixture in 9x5x3 loaf pan then turn it over onto a sheet pan with parchment",
+      "Bake ~15 minutes at 325; Remove and brush with glaze; Return to oven",
+      "Bake another 45-60 minutes; Let rest 10-20 minutes once done",
+      "Serve with 1/4 glaze for dipping"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "source": "memoix",
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "createdAt": "2025-12-10T00:00:00.000000",
+    "updatedAt": "2025-12-10T00:00:00.000000",
+    "version": 1
+  },
+  {
+    "uuid": "2033a7a7-e4b6-4d89-9bdf-31fa273347ab",
     "name": "Tamal Dough w/ Masa Harina",
     "course": "mains",
-    "cuisine": "MX",
+    "cuisine": "ES",
     "subcategory": null,
-    "serves": "6",
+    "serves": "6.0",
     "time": "10 min",
     "pairsWith": [],
-    "notes": null,
+    "notes": "",
     "ingredients": [
       {
         "name": "Masa Harina",
         "amount": "2 C",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -316,7 +3077,7 @@
         "amount": "2/3 C",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null
       },
@@ -325,17 +3086,8 @@
         "amount": "2-3 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "Optional",
+        "alternative": "optional",
         "isOptional": true,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "",
-        "isOptional": false,
         "section": null
       },
       {
@@ -343,7 +3095,16 @@
         "amount": "1 tsp",
         "unit": null,
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
+        "isOptional": false,
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
         "isOptional": false,
         "section": null
       }
@@ -351,17 +3112,17 @@
     "directions": [
       "Combine shortening, salt, baking powder and mix med-high until whipped (~1 min)",
       "Add 25% of the masa at a time until throughly incorporated",
-      "Slowly add stock until it is the consistancy of hummus"
+      "Slowly add stock until it is the consistancy of hummus",
+      "Mix in chili sauce, if using",
+      "Test by dropping ½ tsp ball into water, if it floats it is ready; Add more shortening if it sinks",
+      "The recipe ends up being exactly one box of shortening and one bag of masa"
     ],
     "sourceUrl": null,
     "imageUrl": null,
     "source": "memoix",
-    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "lastCookedAt": null,
-    "tags": [],
     "createdAt": "2025-12-10T00:00:00.000000",
     "updatedAt": "2025-12-10T00:00:00.000000",
     "version": 1
