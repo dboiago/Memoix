@@ -4,8 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
+import '../../recipes/models/recipe.dart';
+import '../../recipes/models/ingredient.dart';
 
 /// Provider to store scratch pad notes
 final scratchPadNotesProvider = StateProvider<String>((ref) => '');
@@ -78,6 +81,12 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
+    _tabController.addListener(() {
+      // Rebuild when tab changes to update FAB visibility
+      if (!_tabController.indexIsChanging) {
+        setState(() {});
+      }
+    });
     _notesController = TextEditingController();
   }
 
@@ -186,6 +195,7 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
       createdAt: DateTime.now(),
     );
     ref.read(tempRecipeDraftsProvider.notifier).state = [...drafts, newDraft];
+    // Open the draft editor
     _editDraft(context, ref, newDraft);
   }
 
@@ -204,6 +214,19 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
               ref.read(tempRecipeDraftsProvider.notifier).state = updated;
             }
           },
+          onConvertToRecipe: () {
+            // Get the latest version of the draft
+            final drafts = ref.read(tempRecipeDraftsProvider);
+            final latestDraft = drafts.firstWhere(
+              (d) => d.id == draft.id,
+              orElse: () => draft,
+            );
+            // Remove from drafts since it's being converted
+            ref.read(tempRecipeDraftsProvider.notifier).state =
+                drafts.where((d) => d.id != draft.id).toList();
+            // Convert to recipe
+            _convertToRecipe(context, latestDraft);
+          },
         ),
       ),
     );
@@ -216,10 +239,54 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   }
 
   void _convertToRecipe(BuildContext context, TempRecipeDraft draft) {
+    // Parse ingredients from text (one per line)
+    final ingredientLines = draft.ingredients
+        .split('\n')
+        .where((line) => line.trim().isNotEmpty)
+        .toList();
+    
+    final ingredients = ingredientLines.map((line) {
+      // Try to parse amount from beginning of line (e.g., "1 cup flour")
+      final match = RegExp(r'^([\d\s\/\.-]+\s*(?:cup|cups|tbsp|tsp|oz|lb|lbs|g|kg|ml|l|can|cans|bunch|clove|cloves)?)\s*(.+)$', caseSensitive: false)
+          .firstMatch(line.trim());
+      
+      if (match != null) {
+        return Ingredient()
+          ..name = match.group(2)?.trim() ?? line.trim()
+          ..amount = double.tryParse(match.group(1)?.trim().split(RegExp(r'\s+')).first ?? '') ?? 1.0
+          ..unit = match.group(1)?.trim().split(RegExp(r'\s+')).skip(1).join(' ') ?? '';
+      }
+      
+      return Ingredient()
+        ..name = line.trim()
+        ..amount = 1.0
+        ..unit = '';
+    }).toList();
+    
+    // Parse directions from text (split by blank lines)
+    final directions = draft.directions
+        .split(RegExp(r'\n\s*\n'))
+        .where((step) => step.trim().isNotEmpty)
+        .map((step) => step.trim())
+        .toList();
+    
+    // Create Recipe object from draft
+    final recipe = Recipe()
+      ..uuid = const Uuid().v4()
+      ..name = draft.name
+      ..serves = draft.serves
+      ..time = draft.time
+      ..ingredients = ingredients
+      ..directions = directions
+      ..notes = draft.comments.isNotEmpty ? draft.comments : null
+      ..imageUrl = draft.imagePath
+      ..source = RecipeSource.personal
+      ..createdAt = DateTime.now()
+      ..updatedAt = DateTime.now();
+    
     // Navigate to recipe edit screen with pre-filled data
     Navigator.pop(context);
-    AppRoutes.toRecipeEdit(context);
-    // Note: Could enhance RecipeEditScreen to accept initial notes
+    AppRoutes.toRecipeEdit(context, importedRecipe: recipe);
   }
 }
 
@@ -333,16 +400,10 @@ class _RecipeDraftsTab extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Tap the button below to start a new recipe idea',
+              'Tap the + button to start a new recipe idea',
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant.withAlpha((0.7 * 255).round()),
               ),
-            ),
-            const SizedBox(height: 24),
-            FilledButton.icon(
-              onPressed: onAddDraft,
-              icon: const Icon(Icons.add),
-              label: const Text('New Draft'),
             ),
           ],
         ),
@@ -437,13 +498,17 @@ class _RecipeDraftsTab extends StatelessWidget {
   }
 }
 
+/// Screen for editing a recipe draft
+/// Has Save (keeps as draft), Back (discard changes), and Convert to Recipe options
 class _EditDraftScreen extends StatefulWidget {
   final TempRecipeDraft draft;
   final ValueChanged<TempRecipeDraft> onSave;
+  final VoidCallback onConvertToRecipe;
 
   const _EditDraftScreen({
     required this.draft,
     required this.onSave,
+    required this.onConvertToRecipe,
   });
 
   @override
@@ -545,8 +610,8 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
     );
   }
 
-  void _save() {
-    widget.onSave(widget.draft.copyWith(
+  TempRecipeDraft _buildUpdatedDraft() {
+    return widget.draft.copyWith(
       name: _nameController.text,
       imagePath: _imagePath,
       serves: _servesController.text.isEmpty ? null : _servesController.text,
@@ -555,8 +620,23 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
       directions: _directionsController.text,
       comments: _commentsController.text,
       clearImage: _imagePath == null && widget.draft.imagePath != null,
-    ));
+    );
+  }
+
+  void _save() {
+    widget.onSave(_buildUpdatedDraft());
     Navigator.pop(context);
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Draft saved')),
+    );
+  }
+
+  void _convertToRecipe() {
+    // Save the current state first
+    widget.onSave(_buildUpdatedDraft());
+    Navigator.pop(context);
+    // Then trigger conversion
+    widget.onConvertToRecipe();
   }
 
   @override
@@ -567,6 +647,13 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
       appBar: AppBar(
         title: const Text('Edit Draft'),
         actions: [
+          // Convert to Recipe button
+          TextButton.icon(
+            onPressed: _convertToRecipe,
+            icon: const Icon(Icons.restaurant_menu),
+            label: const Text('Convert'),
+          ),
+          // Save button
           TextButton.icon(
             onPressed: _save,
             icon: const Icon(Icons.save),
@@ -579,6 +666,34 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Info banner
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.info_outline, 
+                    size: 20, 
+                    color: theme.colorScheme.primary,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Save keeps this as a draft. Use "Convert" when ready to make it a full recipe.',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: theme.colorScheme.onSurface,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            
+            const SizedBox(height: 16),
+
             // Image picker
             Center(
               child: GestureDetector(
@@ -730,9 +845,9 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
 
             const SizedBox(height: 24),
 
-            // Comments section (what app calls "notes")
+            // Comments section
             Text(
-              'Comments',
+              'Notes',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),

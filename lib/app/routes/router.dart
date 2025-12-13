@@ -4,6 +4,7 @@ import '../app_shell.dart';
 import '../../features/recipes/screens/recipe_detail_screen.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/recipes/screens/recipe_list_screen.dart';
+import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/models/source_filter.dart';
 import '../../features/pizzas/screens/pizza_list_screen.dart';
 import '../../features/pizzas/screens/pizza_detail_screen.dart';
@@ -59,10 +60,14 @@ class AppRoutes {
     );
   }
 
-  static void toRecipeEdit(BuildContext context, {String? recipeId, String? course}) {
+  static void toRecipeEdit(BuildContext context, {String? recipeId, String? course, Recipe? importedRecipe}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
-        builder: (_) => RecipeEditScreen(recipeId: recipeId, defaultCourse: course),
+        builder: (_) => RecipeEditScreen(
+          recipeId: recipeId,
+          defaultCourse: course,
+          importedRecipe: importedRecipe,
+        ),
       ),
     );
   }
