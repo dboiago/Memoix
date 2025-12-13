@@ -195,11 +195,14 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     
     // Navigate to recipe edit screen - draft is NOT deleted here
     // User can keep it or delete manually
-    AppRoutes.toRecipeEdit(
-      context, 
-      importedRecipe: recipe,
-    ).then((_) {
-      // After returning from recipe edit, ask if they want to delete the draft
+    // Use Navigator to await returning, then prompt for deletion
+    Future<void>(() async {
+      await Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => AppRoutes.recipeEditScreen(importedRecipe: recipe),
+        ),
+      );
       if (context.mounted) {
         _askDeleteDraft(context, ref, draft);
       }
