@@ -37,6 +37,180 @@ class OcrRecipeImporter {
     return _processImage(image.path);
   }
 
+  /// Pick multiple images and extract/merge recipe text
+  Future<OcrResult> scanMultipleImages(List<String> imagePaths) async {
+    if (imagePaths.isEmpty) {
+      return OcrResult.error('No images provided');
+    }
+
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return OcrResult.error('OCR is not supported on desktop platforms.');
+    }
+
+    try {
+      // Extract text from all images
+      final allTexts = <String>[];
+      final allBlocks = <String>[];
+      final imageToText = <int, String>{};
+
+      for (int i = 0; i < imagePaths.length; i++) {
+        final text = await extractTextFromImage(imagePaths[i]);
+        if (text.isNotEmpty) {
+          allTexts.add(text);
+          imageToText[i] = text;
+          allBlocks.addAll(text.split('\n'));
+        }
+      }
+
+      if (allTexts.isEmpty) {
+        return OcrResult.error('No text found in any images');
+      }
+
+      // Merge text intelligently
+      final mergedText = _mergeMultipleTexts(allTexts);
+      final importResult = parseWithConfidence(mergedText, allBlocks);
+      
+      // Add image paths to importResult
+      importResult.imagePaths = imagePaths;
+
+      return OcrResult.success(
+        rawText: mergedText,
+        blocks: allBlocks,
+        recipe: _parseRecipeFromText(mergedText),
+        importResult: importResult,
+      );
+    } catch (e) {
+      return OcrResult.error('Failed to process images: $e');
+    }
+  }
+
+  /// Intelligently merge text from multiple images
+  String _mergeMultipleTexts(List<String> texts) {
+    if (texts.isEmpty) return '';
+    if (texts.length == 1) return texts.first;
+
+    // Parse each text into sections
+    final sections = <Map<String, List<String>>>[];
+    for (final text in texts) {
+      sections.add(_extractSections(text));
+    }
+
+    // Merge sections intelligently
+    final merged = <String>[];
+    
+    // Add title from first image
+    final firstTitle = _extractTitle(texts.first);
+    if (firstTitle.isNotEmpty) {
+      merged.add(firstTitle);
+    }
+
+    // Merge all ingredients from all sections
+    final allIngredients = <String>[];
+    for (final section in sections) {
+      allIngredients.addAll(section['ingredients'] ?? []);
+    }
+    if (allIngredients.isNotEmpty) {
+      merged.add('Ingredients');
+      merged.addAll(allIngredients);
+    }
+
+    // Merge all directions from all sections
+    final allDirections = <String>[];
+    for (final section in sections) {
+      allDirections.addAll(section['directions'] ?? []);
+    }
+    if (allDirections.isNotEmpty) {
+      merged.add('Directions');
+      merged.addAll(allDirections);
+    }
+
+    // Merge all notes
+    final allNotes = <String>[];
+    for (final section in sections) {
+      allNotes.addAll(section['notes'] ?? []);
+    }
+    if (allNotes.isNotEmpty) {
+      merged.add('Notes');
+      merged.addAll(allNotes);
+    }
+
+    return merged.join('\n');
+  }
+
+  /// Extract sections (ingredients, directions, notes) from text
+  Map<String, List<String>> _extractSections(String text) {
+    final lines = text.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty).toList();
+    
+    final sections = <String, List<String>>{
+      'ingredients': [],
+      'directions': [],
+      'notes': [],
+      'other': [],
+    };
+
+    bool inIngredients = false;
+    bool inDirections = false;
+    bool inNotes = false;
+
+    for (int i = 0; i < lines.length; i++) {
+      final line = lines[i];
+      final lowerLine = line.toLowerCase();
+
+      // Check for section headers
+      if (lowerLine.contains('ingredient')) {
+        inIngredients = true;
+        inDirections = false;
+        inNotes = false;
+        continue;
+      }
+      if (lowerLine.contains('direction') || 
+          lowerLine.contains('instruction') || 
+          lowerLine.contains('method') ||
+          lowerLine.contains('steps')) {
+        inIngredients = false;
+        inDirections = true;
+        inNotes = false;
+        continue;
+      }
+      if (lowerLine.contains('note') || lowerLine.contains('tip')) {
+        inIngredients = false;
+        inDirections = false;
+        inNotes = true;
+        continue;
+      }
+
+      // Add to appropriate section
+      if (inIngredients) {
+        sections['ingredients']!.add(line);
+      } else if (inDirections) {
+        sections['directions']!.add(line);
+      } else if (inNotes) {
+        sections['notes']!.add(line);
+      } else {
+        sections['other']!.add(line);
+      }
+    }
+
+    return sections;
+  }
+
+  /// Extract title from text
+  String _extractTitle(String text) {
+    final lines = text.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty).toList();
+    if (lines.isEmpty) return '';
+    
+    final firstLine = lines.first;
+    // Return first line if it looks like a title (not too long, not a section header)
+    if (firstLine.length < 50 && 
+        !firstLine.toLowerCase().contains('ingredient') &&
+        !firstLine.toLowerCase().contains('direction') &&
+        !RegExp(r'^\d+').hasMatch(firstLine)) {
+      return firstLine;
+    }
+    
+    return '';
+  }
+
   /// Process an image file and extract text
   Future<OcrResult> _processImage(String imagePath) async {
     try {

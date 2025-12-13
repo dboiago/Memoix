@@ -39,6 +39,9 @@ class RecipeImportResult {
   final String? sourceUrl;
   final RecipeSource source;
 
+  /// Image paths (for multi-image imports)
+  List<String>? imagePaths;
+
   RecipeImportResult({
     this.name,
     this.course,
@@ -66,6 +69,7 @@ class RecipeImportResult {
     this.timeConfidence = 0.0,
     this.sourceUrl,
     this.source = RecipeSource.url,
+    this.imagePaths,
   });
 
   /// Overall confidence score (weighted average)
@@ -114,7 +118,7 @@ class RecipeImportResult {
 
   /// Convert to a Recipe (for high-confidence imports)
   Recipe toRecipe(String uuid) {
-    return Recipe.create(
+    final recipe = Recipe.create(
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
       course: course ?? 'Mains',
@@ -130,6 +134,13 @@ class RecipeImportResult {
       source: source,
       nutrition: nutrition,
     );
+    
+    // Set multiple images if available
+    if (imagePaths != null && imagePaths!.isNotEmpty) {
+      recipe.imageUrls = imagePaths!;
+    }
+    
+    return recipe;
   }
 
   /// Create a copy with updated fields
@@ -160,6 +171,7 @@ class RecipeImportResult {
     double? timeConfidence,
     String? sourceUrl,
     RecipeSource? source,
+    List<String>? imagePaths,
   }) {
     return RecipeImportResult(
       name: name ?? this.name,
@@ -188,6 +200,7 @@ class RecipeImportResult {
       timeConfidence: timeConfidence ?? this.timeConfidence,
       sourceUrl: sourceUrl ?? this.sourceUrl,
       source: source ?? this.source,
+      imagePaths: imagePaths ?? this.imagePaths,
     );
   }
 }

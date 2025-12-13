@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -84,7 +85,9 @@ class RecipeDetailView extends ConsumerWidget {
     }
     
     final theme = Theme.of(context);
-    final hasImage = recipe.imageUrl != null && recipe.imageUrl!.isNotEmpty;
+    final allImages = recipe.getAllImages();
+    final hasImage = allImages.isNotEmpty;
+    final hasMultipleImages = allImages.length > 1;
 
     return Scaffold(
       body: CustomScrollView(
@@ -108,13 +111,9 @@ class RecipeDetailView extends ConsumerWidget {
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        Image.network(
-                          recipe.imageUrl!,
-                          fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Container(
-                            color: theme.colorScheme.surfaceContainerHighest,
-                          ),
-                        ),
+                        hasMultipleImages
+                            ? _buildImageCarousel(allImages)
+                            : _buildSingleImage(allImages.first),
                         // Gradient overlay for text visibility
                         Container(
                           decoration: BoxDecoration(
@@ -729,6 +728,144 @@ class RecipeDetailView extends ConsumerWidget {
           label,
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Build a single image display
+  Widget _buildSingleImage(String imageSource) {
+    final isLocalFile = !imageSource.startsWith('http');
+    return isLocalFile
+        ? Image.file(
+            File(imageSource),
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) => Container(
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
+            ),
+          )
+        : Image.network(
+            imageSource,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) => Container(
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
+            ),
+          );
+  }
+
+  /// Build an image carousel for multiple images
+  Widget _buildImageCarousel(List<String> images) {
+    return _RecipeImageCarousel(images: images);
+  }
+}
+
+/// Simple carousel widget for recipe images in the app bar
+class _RecipeImageCarousel extends StatefulWidget {
+  final List<String> images;
+
+  const _RecipeImageCarousel({required this.images});
+
+  @override
+  State<_RecipeImageCarousel> createState() => _RecipeImageCarouselState();
+}
+
+class _RecipeImageCarouselState extends State<_RecipeImageCarousel> {
+  late final PageController _pageController;
+  int _currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        PageView.builder(
+          controller: _pageController,
+          itemCount: widget.images.length,
+          onPageChanged: (index) => setState(() => _currentPage = index),
+          itemBuilder: (context, index) {
+            final source = widget.images[index];
+            final isLocalFile = !source.startsWith('http');
+            return isLocalFile
+                ? Image.file(
+                    File(source),
+                    fit: BoxFit.cover,
+                    errorBuilder: (_, __, ___) => Container(
+                      color: Colors.grey.shade800,
+                    ),
+                  )
+                : Image.network(
+                    source,
+                    fit: BoxFit.cover,
+                    errorBuilder: (_, __, ___) => Container(
+                      color: Colors.grey.shade800,
+                    ),
+                  );
+          },
+        ),
+
+        // Page indicator badge (top right)
+        Positioned(
+          top: 48,
+          right: 8,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              '${_currentPage + 1}/${widget.images.length}',
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+
+        // Page indicators (bottom)
+        Positioned(
+          bottom: 60,
+          left: 0,
+          right: 0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: List.generate(
+              widget.images.length,
+              (index) => AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                width: index == _currentPage ? 24 : 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: index == _currentPage
+                      ? Colors.white
+                      : Colors.white.withOpacity(0.5),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.3),
+                      blurRadius: 4,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ),
       ],

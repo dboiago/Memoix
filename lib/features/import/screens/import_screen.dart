@@ -9,6 +9,8 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
 import 'qr_scanner_screen.dart';
+import 'ocr_scanner_screen.dart';
+import 'ocr_multi_image_screen.dart';
 
 class ImportScreen extends ConsumerStatefulWidget {
   const ImportScreen({super.key});
@@ -59,6 +61,17 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               description: 'Take a photo of a recipe book or handwritten notes',
               color: Colors.green,
               onTap: () => _scanFromCamera(context),
+            ),
+
+            const SizedBox(height: 16),
+
+            // Scan multiple pages
+            _ImportOption(
+              icon: Icons.collections,
+              title: 'Scan Multi-Page Recipe',
+              description: 'Take photos of multiple recipe pages (ingredients, directions, etc.)',
+              color: Colors.teal,
+              onTap: () => _scanMultipleImages(context),
             ),
 
             const SizedBox(height: 16),
@@ -203,6 +216,14 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromCamera();
     _handleOcrResult(context, result);
+  }
+
+  void _scanMultipleImages(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const OCRMultiImageScreen(),
+      ),
+    );
   }
 
   Future<void> _scanFromGallery(BuildContext context) async {

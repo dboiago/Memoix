@@ -61,7 +61,11 @@ class Recipe {
   /// Source URL if imported from web
   String? sourceUrl;
 
-  /// Image URL or local path
+  /// Image URLs or local paths (supports multiple images)
+  List<String> imageUrls = [];
+
+  /// Deprecated: single image URL (kept for backwards compatibility)
+  /// Use imageUrls instead
   String? imageUrl;
 
   /// Where this recipe came from
@@ -176,6 +180,10 @@ class Recipe {
           []
       ..sourceUrl = json['sourceUrl'] as String?
       ..imageUrl = json['imageUrl'] as String?
+      ..imageUrls = (json['imageUrls'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          []
       ..source = RecipeSource.values.firstWhere(
         (e) => e.name == json['source'],
         orElse: () => RecipeSource.memoix,
@@ -221,6 +229,7 @@ class Recipe {
       'directions': directions,
       'sourceUrl': sourceUrl,
       'imageUrl': imageUrl,
+      'imageUrls': imageUrls,
       'source': source.name,
       'colorValue': colorValue,
       'isFavorite': isFavorite,
@@ -233,6 +242,26 @@ class Recipe {
       'version': version,
       if (nutrition != null) 'nutrition': nutrition!.toJson(),
     };
+  }
+
+  /// Get all images (handles both new imageUrls and legacy imageUrl fields)
+  List<String> getAllImages() {
+    if (imageUrls.isNotEmpty) {
+      return imageUrls;
+    }
+    if (imageUrl != null && imageUrl!.isNotEmpty) {
+      return [imageUrl!];
+    }
+    return [];
+  }
+
+  /// Check if recipe has any images
+  bool hasImages() => getAllImages().isNotEmpty;
+
+  /// Get first image if available
+  String? getFirstImage() {
+    final images = getAllImages();
+    return images.isNotEmpty ? images.first : null;
   }
 
   /// Create a shareable copy (removes personal metadata)
@@ -251,6 +280,7 @@ class Recipe {
       'directions': directions,
       'sourceUrl': sourceUrl,
       'imageUrl': imageUrl,
+      'imageUrls': imageUrls,
       'tags': tags,
       'version': version,
       if (nutrition != null) 'nutrition': nutrition!.toJson(),

@@ -105,7 +105,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   String _selectedCourse = 'mains';
   String? _selectedCuisine;
-  String? _imagePath; // Local file path or URL
+  List<String> _imagePaths = []; // Local file paths or URLs
   bool _isSaving = false;
   bool _isLoading = true;
   Recipe? _existingRecipe;
@@ -192,8 +192,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       // Convert directions to editable text
       _directionsController.text = recipe.directions.join('\n\n');
       
-      // Load existing image
-      _imagePath = recipe.imageUrl;
+      // Load existing images (handles both old single and new multiple)
+      _imagePaths = recipe.getAllImages();
     } else if (widget.ocrText != null) {
       // Pre-populate with OCR text for manual extraction
       _notesController.text = 'OCR Text:\n${widget.ocrText}';
@@ -837,7 +837,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             (widget.importedRecipe != null ? RecipeSource.imported : 
              widget.ocrText != null ? RecipeSource.ocr : RecipeSource.personal)
         ..nutrition = _buildNutritionInfo()
-        ..imageUrl = _imagePath
+        ..imageUrls = _imagePaths
+        ..imageUrl = _imagePaths.isNotEmpty ? _imagePaths.first : null
         ..updatedAt = DateTime.now();
 
       // Save to database
@@ -1176,78 +1177,171 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   // ============ IMAGE PICKER ============
 
   Widget _buildImagePicker(ThemeData theme) {
-    final hasImage = _imagePath != null && _imagePath!.isNotEmpty;
+    final hasImages = _imagePaths.isNotEmpty;
     
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Recipe Photo',
-          style: theme.textTheme.titleSmall?.copyWith(
-            color: theme.colorScheme.onSurfaceVariant,
-          ),
-        ),
-        const SizedBox(height: 8),
-        GestureDetector(
-          onTap: _showImageSourceDialog,
-          child: Container(
-            height: 180,
-            decoration: BoxDecoration(
-              color: theme.colorScheme.surfaceContainerHighest,
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+        Row(
+          children: [
+            Text(
+              'Recipe Photos',
+              style: theme.textTheme.titleSmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
               ),
             ),
-            child: hasImage
-                ? Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(11),
-                        child: _buildImageWidget(),
-                      ),
-                      Positioned(
-                        top: 8,
-                        right: 8,
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            _imageActionButton(
-                              icon: Icons.edit,
-                              onTap: _showImageSourceDialog,
-                              theme: theme,
-                            ),
-                            const SizedBox(width: 8),
-                            _imageActionButton(
-                              icon: Icons.delete,
-                              onTap: _removeImage,
-                              theme: theme,
-                            ),
-                          ],
+            if (hasImages) ...[
+              const SizedBox(width: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '${_imagePaths.length}',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onPrimaryContainer,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
+        const SizedBox(height: 8),
+        if (hasImages)
+          _buildImageGallery(theme)
+        else
+          _buildEmptyImagePicker(theme),
+      ],
+    );
+  }
+
+  Widget _buildEmptyImagePicker(ThemeData theme) {
+    return GestureDetector(
+      onTap: _showImageSourceDialog,
+      child: Container(
+        height: 180,
+        decoration: BoxDecoration(
+          color: theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: theme.colorScheme.outline.withOpacity(0.3),
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.add_photo_alternate_outlined,
+                size: 48,
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Tap to add photos',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageGallery(ThemeData theme) {
+    return Column(
+      children: [
+        SizedBox(
+          height: 120,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: _imagePaths.length + 1, // +1 for add button
+            itemBuilder: (context, index) {
+              if (index == _imagePaths.length) {
+                // Add more button
+                return Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: GestureDetector(
+                    onTap: _showImageSourceDialog,
+                    child: Container(
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: theme.colorScheme.outline.withOpacity(0.3),
                         ),
                       ),
-                    ],
-                  )
-                : Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.add_photo_alternate_outlined,
-                          size: 48,
-                          color: theme.colorScheme.onSurfaceVariant,
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Tap to add photo',
-                          style: theme.textTheme.bodyMedium?.copyWith(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.add,
+                            size: 32,
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 4),
+                          Text(
+                            'Add',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
+                );
+              }
+              
+              return Padding(
+                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: _buildImageWidget(_imagePaths[index], width: 100, height: 120),
+                    ),
+                    // Image number badge
+                    Positioned(
+                      top: 4,
+                      left: 4,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withOpacity(0.6),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text(
+                          '${index + 1}',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                    // Remove button
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: _imageActionButton(
+                        icon: Icons.close,
+                        onTap: () => _removeImage(index),
+                        theme: theme,
+                        size: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
           ),
         ),
       ],
@@ -1258,6 +1352,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     required IconData icon,
     required VoidCallback onTap,
     required ThemeData theme,
+    double size = 20,
   }) {
     return Material(
       color: theme.colorScheme.surface.withOpacity(0.9),
@@ -1266,32 +1361,38 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
         child: Padding(
-          padding: const EdgeInsets.all(8),
-          child: Icon(icon, size: 20, color: theme.colorScheme.onSurface),
+          padding: const EdgeInsets.all(4),
+          child: Icon(icon, size: size, color: theme.colorScheme.onSurface),
         ),
       ),
     );
   }
 
-  Widget _buildImageWidget() {
-    if (_imagePath == null) return const SizedBox.shrink();
-    
+  Widget _buildImageWidget(String imagePath, {double? width, double? height}) {
     // Check if it's a URL or local file
-    if (_imagePath!.startsWith('http://') || _imagePath!.startsWith('https://')) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
       return Image.network(
-        _imagePath!,
+        imagePath,
+        width: width,
+        height: height,
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => const Center(
-          child: Icon(Icons.broken_image, size: 48),
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
         ),
       );
     } else {
       // Local file
       return Image.file(
-        File(_imagePath!),
+        File(imagePath),
+        width: width,
+        height: height,
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => const Center(
-          child: Icon(Icons.broken_image, size: 48),
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
         ),
       );
     }
@@ -1320,13 +1421,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 _pickImage(ImageSource.gallery);
               },
             ),
-            if (_imagePath != null && _imagePath!.startsWith('http'))
-              ListTile(
-                leading: const Icon(Icons.link),
-                title: const Text('Keep URL Image'),
-                subtitle: Text(_imagePath!, overflow: TextOverflow.ellipsis),
-                onTap: () => Navigator.pop(ctx),
-              ),
+            ListTile(
+              leading: const Icon(Icons.collections),
+              title: const Text('Choose Multiple Photos'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickMultipleImages();
+              },
+            ),
             ListTile(
               leading: const Icon(Icons.close),
               title: const Text('Cancel'),
@@ -1360,7 +1462,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
 
         setState(() {
-          _imagePath = savedFile.path;
+          _imagePaths.add(savedFile.path);
         });
       }
     } catch (e) {
@@ -1372,9 +1474,43 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
   }
 
-  void _removeImage() {
+  Future<void> _pickMultipleImages() async {
+    try {
+      final picker = ImagePicker();
+      final pickedFiles = await picker.pickMultiImage(
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFiles.isNotEmpty) {
+        // Copy to app documents directory for persistence
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/recipe_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        for (final pickedFile in pickedFiles) {
+          final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+          final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+          _imagePaths.add(savedFile.path);
+        }
+
+        setState(() {});
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking images: $e')),
+        );
+      }
+    }
+  }
+
+  void _removeImage(int index) {
     setState(() {
-      _imagePath = null;
+      _imagePaths.removeAt(index);
     });
   }
 

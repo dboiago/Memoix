@@ -603,7 +603,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       }
     }
 
-    return Recipe.create(
+    final recipe = Recipe.create(
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Recipe'
@@ -625,6 +625,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       source: widget.importResult.source,
       nutrition: widget.importResult.nutrition,
     );
+
+    // Add multiple images if available (from multi-image import)
+    if (widget.importResult.imagePaths != null &&
+        widget.importResult.imagePaths!.isNotEmpty) {
+      recipe.imageUrls = widget.importResult.imagePaths!;
+    }
+
+    return recipe;
   }
 
   Future<void> _saveRecipe() async {
