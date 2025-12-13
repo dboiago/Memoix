@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../settings/screens/settings_screen.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/smoking_card.dart';
@@ -25,6 +26,8 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final recipesAsync = ref.watch(allSmokingRecipesProvider);
+    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+    final isCompact = ref.watch(compactViewProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -43,12 +46,16 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (recipes) {
+          // Apply Hide Memoix filter if enabled
+          final visibleRecipes = hideMemoix
+              ? recipes.where((r) => r.source != SmokingSource.memoix).toList()
+              : recipes;
           if (recipes.isEmpty) {
             return _buildEmptyState(theme);
           }
 
           // Get available categories from recipes
-          final availableCategories = recipes
+          final availableCategories = visibleRecipes
               .map((r) => r.category)
               .where((c) => c != null && c.isNotEmpty)
               .cast<String>()
@@ -57,7 +64,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
             ..sort((a, b) => a.compareTo(b));
 
           // Filter recipes
-          var filtered = recipes;
+          var filtered = visibleRecipes;
           if (_selectedCategory != null) {
             filtered = filtered.where((r) => r.category == _selectedCategory).toList();
           }
@@ -172,7 +179,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                     children: [
                       _buildCategoryChip(null, 'All', filtered.length),
                       ...availableCategories.map((category) {
-                        final count = recipes.where((r) => r.category == category).length;
+                        final count = visibleRecipes.where((r) => r.category == category).length;
                         return _buildCategoryChip(category, category, count);
                       }),
                     ],
@@ -195,6 +202,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                           final recipe = filtered[index];
                           return SmokingCard(
                             recipe: recipe,
+                            isCompact: isCompact,
                             onTap: () => _openDetail(recipe),
                           );
                         },

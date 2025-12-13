@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../settings/screens/settings_screen.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../widgets/pizza_card.dart';
@@ -22,6 +23,8 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final pizzasAsync = ref.watch(allPizzasProvider);
+    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+    final isCompact = ref.watch(compactViewProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -40,8 +43,12 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (allPizzas) {
+          // Apply Hide Memoix filter if enabled
+          final visiblePizzas = hideMemoix
+              ? allPizzas.where((p) => p.source != PizzaSource.memoix).toList()
+              : allPizzas;
           // Get bases that have pizzas
-          final availableBases = _getAvailableBases(allPizzas);
+          final availableBases = _getAvailableBases(visiblePizzas);
 
           return Column(
             children: [
@@ -56,7 +63,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
                     final query = textEditingValue.text.toLowerCase();
                     // Get matching pizza names, cheeses, or toppings
                     final matches = <String>{};
-                    for (final pizza in allPizzas) {
+                        for (final pizza in visiblePizzas) {
                       if (pizza.name.toLowerCase().contains(query)) {
                         matches.add(pizza.name);
                       }
@@ -145,9 +152,9 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _buildBaseChip(null, allPizzas.length), // "All" chip
+                      _buildBaseChip(null, visiblePizzas.length), // "All" chip
                       ...availableBases.map((base) {
-                        final count = allPizzas.where((p) => p.base == base).length;
+                        final count = visiblePizzas.where((p) => p.base == base).length;
                         return _buildBaseChip(base, count);
                       }),
                     ],
@@ -156,7 +163,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
 
               // Pizza list
               Expanded(
-                child: _buildPizzaList(allPizzas),
+                child: _buildPizzaList(visiblePizzas, isCompact),
               ),
             ],
           );
@@ -247,7 +254,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
     return bases;
   }
 
-  Widget _buildPizzaList(List<Pizza> allPizzas) {
+  Widget _buildPizzaList(List<Pizza> allPizzas, bool isCompact) {
     // Filter by base
     var pizzas = _selectedBase == null
         ? allPizzas
@@ -310,6 +317,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
           padding: const EdgeInsets.only(bottom: 8),
           child: PizzaCard(
             pizza: pizza,
+            isCompact: isCompact,
             onTap: () => AppRoutes.toPizzaDetail(context, pizza.uuid),
           ),
         );

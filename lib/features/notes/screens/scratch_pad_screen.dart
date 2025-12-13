@@ -200,7 +200,7 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
       await Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (_) => AppRoutes.recipeEditScreen(importedRecipe: recipe),
+          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
         ),
       );
       if (context.mounted) {

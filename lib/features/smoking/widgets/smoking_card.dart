@@ -10,11 +10,13 @@ import '../repository/smoking_repository.dart';
 class SmokingCard extends ConsumerStatefulWidget {
   final SmokingRecipe recipe;
   final VoidCallback onTap;
+  final bool isCompact;
 
   const SmokingCard({
     super.key,
     required this.recipe,
     required this.onTap,
+    this.isCompact = false,
   });
 
   @override
@@ -51,7 +53,10 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
         hoverColor: Colors.transparent,
         highlightColor: Colors.transparent,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          padding: EdgeInsets.symmetric(
+            horizontal: 12,
+            vertical: widget.isCompact ? 6 : 10,
+          ),
           child: Row(
             children: [
               // Recipe name and metadata
@@ -68,7 +73,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const SizedBox(height: 4),
+                    if (!widget.isCompact) const SizedBox(height: 4),
 
                     // Item/category with colored bullet + wood with tree icon + temp + time
                     Row(
@@ -105,7 +110,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
-                        const SizedBox(width: 12),
+                        if (!widget.isCompact) const SizedBox(width: 12),
 
                         // Temperature
                         Icon(
@@ -120,7 +125,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
-                        const SizedBox(width: 12),
+                        if (!widget.isCompact) const SizedBox(width: 12),
 
                         // Time
                         Icon(
@@ -169,7 +174,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     constraints: const BoxConstraints(),
                   ),
 
-                  const SizedBox(width: 4),
+                  if (!widget.isCompact) const SizedBox(width: 4),
 
                   // Cooked button
                   IconButton(
@@ -191,7 +196,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                         ),
                       );
                     },
-                    padding: const EdgeInsets.all(8),
+                    padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),
                   ),
                 ],

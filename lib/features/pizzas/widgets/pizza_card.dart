@@ -9,11 +9,13 @@ import '../repository/pizza_repository.dart';
 class PizzaCard extends ConsumerStatefulWidget {
   final Pizza pizza;
   final VoidCallback? onTap;
+  final bool isCompact;
 
   const PizzaCard({
     super.key,
     required this.pizza,
     this.onTap,
+    this.isCompact = false,
   });
 
   @override
@@ -49,7 +51,10 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
         hoverColor: Colors.transparent,
         highlightColor: Colors.transparent,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          padding: EdgeInsets.symmetric(
+            horizontal: 12,
+            vertical: widget.isCompact ? 6 : 10,
+          ),
           child: Row(
             children: [
               // Pizza info
@@ -66,7 +71,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const SizedBox(height: 4),
+                    if (!widget.isCompact) const SizedBox(height: 4),
                     // Base with bullet + cheeses/toppings summary
                     Row(
                       children: [
@@ -85,11 +90,12 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
-                        const SizedBox(width: 12),
+                        if (!widget.isCompact) const SizedBox(width: 12),
                         // Cheeses and toppings summary
-                        Flexible(
-                          child: _buildIngredientsSummary(theme),
-                        ),
+                        if (!widget.isCompact)
+                          Flexible(
+                            child: _buildIngredientsSummary(theme),
+                          ),
                       ],
                     ),
                   ],
@@ -111,11 +117,11 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                     onPressed: () async {
                       await ref.read(pizzaRepositoryProvider).toggleFavorite(widget.pizza);
                     },
-                    padding: const EdgeInsets.all(8),
+                    padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),
                   ),
                   
-                  const SizedBox(width: 4),
+                  if (!widget.isCompact) const SizedBox(width: 4),
                   
                   // Cooked button
                   IconButton(
@@ -136,7 +142,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                         );
                       }
                     },
-                    padding: const EdgeInsets.all(8),
+                    padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),
                   ),
                 ],
