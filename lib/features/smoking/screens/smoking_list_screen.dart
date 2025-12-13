@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colors.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/smoking_card.dart';
 import 'smoking_detail_screen.dart';
 import 'smoking_edit_screen.dart';
 
-/// Screen displaying list of smoking recipes grouped by wood type
+/// Screen displaying list of smoking recipes grouped by category
 class SmokingListScreen extends ConsumerStatefulWidget {
   const SmokingListScreen({super.key});
 
@@ -17,7 +18,7 @@ class SmokingListScreen extends ConsumerStatefulWidget {
 }
 
 class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
-  String? _selectedWood;
+  String? _selectedCategory;
   String _searchQuery = '';
 
   @override
@@ -31,7 +32,12 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: const Text('Smoking'),
+        title: Text(
+          'SMOKING',
+          style: theme.textTheme.titleMedium?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
       ),
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -41,18 +47,25 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
             return _buildEmptyState(theme);
           }
 
-          // Get available woods
-          final availableWoods = recipes.map((r) => r.wood).toSet().toList()
+          // Get available categories from recipes
+          final availableCategories = recipes
+              .map((r) => r.category)
+              .where((c) => c != null && c.isNotEmpty)
+              .cast<String>()
+              .toSet()
+              .toList()
             ..sort((a, b) => a.compareTo(b));
 
           // Filter recipes
           var filtered = recipes;
-          if (_selectedWood != null) {
-            filtered = filtered.where((r) => r.wood == _selectedWood).toList();
+          if (_selectedCategory != null) {
+            filtered = filtered.where((r) => r.category == _selectedCategory).toList();
           }
           if (_searchQuery.isNotEmpty) {
             filtered = filtered.where((r) =>
                 r.name.toLowerCase().contains(_searchQuery) ||
+                (r.item?.toLowerCase().contains(_searchQuery) ?? false) ||
+                (r.category?.toLowerCase().contains(_searchQuery) ?? false) ||
                 r.wood.toLowerCase().contains(_searchQuery)).toList();
           }
 
@@ -67,11 +80,14 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                       return const Iterable<String>.empty();
                     }
                     final query = textEditingValue.text.toLowerCase();
-                    // Get matching recipe names, woods, or seasonings
+                    // Get matching recipe names, items, woods, or seasonings
                     final matches = <String>{};
                     for (final recipe in recipes) {
                       if (recipe.name.toLowerCase().contains(query)) {
                         matches.add(recipe.name);
+                      }
+                      if (recipe.item != null && recipe.item!.toLowerCase().contains(query)) {
+                        matches.add(recipe.item!);
                       }
                       if (recipe.wood.toLowerCase().contains(query)) {
                         matches.add(recipe.wood);
@@ -146,18 +162,18 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                 ),
               ),
 
-              // Wood filter chips
-              if (availableWoods.length > 1)
+              // Category filter chips
+              if (availableCategories.isNotEmpty)
                 Container(
                   height: 48,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _buildWoodChip(null, 'All', filtered.length),
-                      ...availableWoods.map((wood) {
-                        final count = recipes.where((r) => r.wood == wood).length;
-                        return _buildWoodChip(wood, wood, count);
+                      _buildCategoryChip(null, 'All', filtered.length),
+                      ...availableCategories.map((category) {
+                        final count = recipes.where((r) => r.category == category).length;
+                        return _buildCategoryChip(category, category, count);
                       }),
                     ],
                   ),
@@ -239,16 +255,29 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
     );
   }
 
-  Widget _buildWoodChip(String? wood, String label, int count) {
+  Widget _buildCategoryChip(String? category, String label, int count) {
     final theme = Theme.of(context);
-    final isSelected = _selectedWood == wood;
+    final isSelected = _selectedCategory == category;
+    final dotColor = category != null 
+        ? MemoixColors.forSmokedItemDot(category) 
+        : null;
 
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
+        avatar: dotColor != null
+            ? Container(
+                width: 10,
+                height: 10,
+                decoration: BoxDecoration(
+                  color: dotColor,
+                  shape: BoxShape.circle,
+                ),
+              )
+            : null,
         label: Text(label),
         selected: isSelected,
-        onSelected: (_) => setState(() => _selectedWood = wood),
+        onSelected: (_) => setState(() => _selectedCategory = category),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
         showCheckmark: false,

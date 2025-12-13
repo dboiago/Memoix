@@ -83,6 +83,21 @@ class MemoixColors {
   static const Color spiritCoffee = Color(0xFF6F4E37);         // Coffee brown
   static const Color spiritMocktail = Color(0xFF7EB8A8);       // Fresh teal
 
+  // Smoked item category colors for smoking recipes
+  // Thematic colors representing different proteins and items
+  static const Color smokedBeef = Color(0xFFC62828);           // Deep red for beef
+  static const Color smokedPork = Color(0xFFE57373);           // Light red/pink for pork
+  static const Color smokedPoultry = Color(0xFFFFB74D);        // Golden yellow for poultry
+  static const Color smokedLamb = Color(0xFFA1887F);           // Brown for lamb
+  static const Color smokedGame = Color(0xFF6D4C41);           // Dark brown for game
+  static const Color smokedSeafood = Color(0xFF4FC3F7);        // Ocean blue for seafood
+  static const Color smokedVegetables = Color(0xFF81C784);     // Green for vegetables
+  static const Color smokedCheese = Color(0xFFFFD54F);         // Yellow for cheese
+  static const Color smokedDesserts = Color(0xFFF48FB1);       // Pink for desserts
+  static const Color smokedFruits = Color(0xFFBA68C8);         // Purple for fruits
+  static const Color smokedDips = Color(0xFFFF8A65);           // Coral for dips
+  static const Color smokedOther = Color(0xFF90A4AE);          // Gray for other
+
   // UI colors
   static const Color background = Color(0xFFFAFAFA);
   static const Color surface = Color(0xFFFFFFFF);
@@ -407,5 +422,56 @@ class MemoixColors {
     
     // Fallback
     return Colors.grey;
+  }
+
+  /// Get dot color for a smoked item category
+  /// Uses themed colors for visual identification of what's being smoked
+  static Color forSmokedItemDot(String? category) {
+    if (category == null || category.isEmpty) return Colors.grey;
+    
+    final lower = category.toLowerCase().trim();
+    
+    switch (lower) {
+      case 'beef':
+        return smokedBeef;
+      case 'pork':
+        return smokedPork;
+      case 'poultry':
+      case 'chicken':
+      case 'turkey':
+      case 'duck':
+        return smokedPoultry;
+      case 'lamb':
+        return smokedLamb;
+      case 'game':
+      case 'venison':
+      case 'elk':
+      case 'wild boar':
+        return smokedGame;
+      case 'seafood':
+      case 'fish':
+      case 'salmon':
+      case 'shrimp':
+        return smokedSeafood;
+      case 'vegetables':
+      case 'veggie':
+      case 'veggies':
+        return smokedVegetables;
+      case 'cheese':
+        return smokedCheese;
+      case 'desserts':
+      case 'dessert':
+      case 'sweet':
+        return smokedDesserts;
+      case 'fruits':
+      case 'fruit':
+        return smokedFruits;
+      case 'dips':
+      case 'dip':
+      case 'sides':
+        return smokedDips;
+      default:
+        return smokedOther;
+    }
   }
 }

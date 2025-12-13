@@ -70,18 +70,35 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     ),
                     const SizedBox(height: 4),
 
-                    // Wood type with bullet + temp + time
+                    // Item/category with colored bullet + wood with tree icon + temp + time
                     Row(
                       children: [
-                        // Wood type with colored bullet
-                        Text(
-                          '\u2022',
-                          style: TextStyle(
-                            color: MemoixColors.smoking,
-                            fontSize: 16,
+                        // Category/Item with colored bullet
+                        if (widget.recipe.category != null) ...[
+                          Text(
+                            '\u2022',
+                            style: TextStyle(
+                              color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+                              fontSize: 16,
+                            ),
                           ),
+                          const SizedBox(width: 6),
+                          Text(
+                            widget.recipe.item ?? widget.recipe.category!,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                        ],
+
+                        // Wood type with tree icon (no colored dot)
+                        Icon(
+                          Icons.park,
+                          size: 14,
+                          color: theme.colorScheme.outline,
                         ),
-                        const SizedBox(width: 6),
+                        const SizedBox(width: 4),
                         Text(
                           widget.recipe.wood,
                           style: theme.textTheme.bodySmall?.copyWith(

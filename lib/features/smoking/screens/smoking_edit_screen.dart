@@ -28,6 +28,8 @@ class SmokingEditScreen extends ConsumerStatefulWidget {
 class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
+  final _itemController = TextEditingController();
+  String? _selectedCategory;
   final _temperatureController = TextEditingController();
   final _timeController = TextEditingController();
   final _woodController = TextEditingController();
@@ -51,6 +53,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (widget.importedRecipe != null) {
       final recipe = widget.importedRecipe!;
       _nameController.text = recipe.name;
+      _itemController.text = recipe.item ?? '';
+      _selectedCategory = recipe.category;
       _temperatureController.text = recipe.temperature;
       _timeController.text = recipe.time;
       _woodController.text = recipe.wood;
@@ -74,6 +78,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       if (recipe != null) {
         _existingRecipe = recipe;
         _nameController.text = recipe.name;
+        _itemController.text = recipe.item ?? '';
+        _selectedCategory = recipe.category;
         _temperatureController.text = recipe.temperature;
         _timeController.text = recipe.time;
         _woodController.text = recipe.wood;
@@ -114,6 +120,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   @override
   void dispose() {
     _nameController.dispose();
+    _itemController.dispose();
     _temperatureController.dispose();
     _timeController.dispose();
     _woodController.dispose();
@@ -171,11 +178,76 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               controller: _nameController,
               decoration: const InputDecoration(
                 labelText: 'Name *',
-                hintText: 'e.g., Brisket, Pulled Pork, Watermelon',
+                hintText: 'e.g., Competition Brisket, Smoked Salmon',
                 prefixIcon: Icon(Icons.restaurant),
               ),
               validator: (v) => v?.isEmpty ?? true ? 'Name is required' : null,
               textCapitalization: TextCapitalization.words,
+            ),
+
+            const SizedBox(height: 16),
+
+            // Item and Category row
+            Row(
+              children: [
+                // Item being smoked (with autocomplete)
+                Expanded(
+                  flex: 2,
+                  child: Autocomplete<String>(
+                    initialValue: TextEditingValue(text: _itemController.text),
+                    optionsBuilder: (textEditingValue) {
+                      return SmokingCategory.getSuggestions(textEditingValue.text);
+                    },
+                    fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                      controller.addListener(() {
+                        _itemController.text = controller.text;
+                        // Auto-detect category based on item
+                        final detectedCategory = SmokingCategory.getCategoryForItem(controller.text);
+                        if (detectedCategory != null && _selectedCategory == null) {
+                          setState(() => _selectedCategory = detectedCategory);
+                        }
+                      });
+                      return TextFormField(
+                        controller: controller,
+                        focusNode: focusNode,
+                        decoration: const InputDecoration(
+                          labelText: 'Item *',
+                          hintText: 'e.g., Brisket',
+                          prefixIcon: Icon(Icons.local_fire_department),
+                        ),
+                        validator: (v) => v?.isEmpty ?? true ? 'Item is required' : null,
+                        textCapitalization: TextCapitalization.words,
+                      );
+                    },
+                    onSelected: (selection) {
+                      _itemController.text = selection;
+                      // Auto-detect category
+                      final detectedCategory = SmokingCategory.getCategoryForItem(selection);
+                      if (detectedCategory != null) {
+                        setState(() => _selectedCategory = detectedCategory);
+                      }
+                    },
+                  ),
+                ),
+                const SizedBox(width: 16),
+                // Category dropdown
+                Expanded(
+                  child: DropdownButtonFormField<String>(
+                    value: _selectedCategory,
+                    decoration: const InputDecoration(
+                      labelText: 'Category',
+                      prefixIcon: Icon(Icons.category),
+                    ),
+                    items: SmokingCategory.all.map((cat) {
+                      return DropdownMenuItem(
+                        value: cat,
+                        child: Text(cat),
+                      );
+                    }).toList(),
+                    onChanged: (value) => setState(() => _selectedCategory = value),
+                  ),
+                ),
+              ],
             ),
 
             const SizedBox(height: 16),
@@ -486,6 +558,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     final recipe = SmokingRecipe()
       ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
+      ..item = _itemController.text.trim().isEmpty
+          ? null
+          : _itemController.text.trim()
+      ..category = _selectedCategory
       ..temperature = _temperatureController.text.trim()
       ..time = _timeController.text.trim()
       ..wood = _woodController.text.trim()

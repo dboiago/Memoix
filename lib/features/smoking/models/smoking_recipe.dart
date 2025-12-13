@@ -2,6 +2,85 @@ import 'package:isar/isar.dart';
 
 part 'smoking_recipe.g.dart';
 
+/// Categories for smoked items (what's being smoked)
+/// Each category has its own color dot for visual identification
+class SmokingCategory {
+  SmokingCategory._();
+
+  static const String beef = 'Beef';
+  static const String pork = 'Pork';
+  static const String poultry = 'Poultry';
+  static const String lamb = 'Lamb';
+  static const String game = 'Game';
+  static const String seafood = 'Seafood';
+  static const String vegetables = 'Vegetables';
+  static const String cheese = 'Cheese';
+  static const String desserts = 'Desserts';
+  static const String fruits = 'Fruits';
+  static const String dips = 'Dips';
+  static const String other = 'Other';
+
+  /// All available categories
+  static const List<String> all = [
+    beef,
+    pork,
+    poultry,
+    lamb,
+    game,
+    seafood,
+    vegetables,
+    cheese,
+    desserts,
+    fruits,
+    dips,
+    other,
+  ];
+
+  /// Common items for each category (for autocomplete)
+  static const Map<String, List<String>> items = {
+    beef: ['Brisket', 'Beef Ribs', 'Tri-Tip', 'Prime Rib', 'Chuck Roast', 'Beef Cheeks', 'Burnt Ends'],
+    pork: ['Pork Shoulder', 'Pork Butt', 'Spare Ribs', 'Baby Back Ribs', 'Pork Belly', 'Pork Loin', 'Ham', 'Pork Chops', 'Pulled Pork'],
+    poultry: ['Whole Chicken', 'Chicken Wings', 'Chicken Thighs', 'Turkey', 'Turkey Breast', 'Duck', 'Cornish Hen', 'Spatchcock Chicken'],
+    lamb: ['Leg of Lamb', 'Lamb Shoulder', 'Lamb Ribs', 'Lamb Chops', 'Rack of Lamb'],
+    game: ['Venison', 'Elk', 'Wild Boar', 'Rabbit', 'Pheasant', 'Quail', 'Goose', 'Buffalo'],
+    seafood: ['Salmon', 'Trout', 'Shrimp', 'Oysters', 'Scallops', 'Lobster Tails', 'Swordfish', 'Tuna', 'Mahi Mahi'],
+    vegetables: ['Corn', 'Peppers', 'Onions', 'Tomatoes', 'Cabbage', 'Mushrooms', 'Artichokes', 'Potatoes', 'Cauliflower'],
+    cheese: ['Gouda', 'Cheddar', 'Mozzarella', 'Provolone', 'Brie', 'Cream Cheese', 'Pepper Jack'],
+    desserts: ['Bread Pudding', 'Brownies', 'Cheesecake', 'Pie', 'Peach Cobbler', 'Cinnamon Rolls'],
+    fruits: ['Peaches', 'Apples', 'Pineapple', 'Bananas', 'Pears', 'Plums', 'Watermelon'],
+    dips: ['Queso', 'Mac & Cheese', 'Baked Beans', 'Salsa', 'Guacamole', 'Hummus'],
+    other: ['Nuts', 'Jerky', 'Sausage', 'Bologna', 'Meatloaf', 'Fatties', 'Bacon'],
+  };
+
+  /// Get all item suggestions for autocomplete
+  static List<String> getAllItems() {
+    final all = <String>[];
+    for (final list in items.values) {
+      all.addAll(list);
+    }
+    return all..sort();
+  }
+
+  /// Get suggestions matching a query
+  static List<String> getSuggestions(String query) {
+    final allItems = getAllItems();
+    if (query.isEmpty) return allItems.take(10).toList();
+    final lower = query.toLowerCase();
+    return allItems.where((i) => i.toLowerCase().contains(lower)).toList();
+  }
+
+  /// Get category for an item (if known)
+  static String? getCategoryForItem(String item) {
+    final lower = item.toLowerCase();
+    for (final entry in items.entries) {
+      if (entry.value.any((i) => i.toLowerCase() == lower)) {
+        return entry.key;
+      }
+    }
+    return null;
+  }
+}
+
 /// Common wood suggestions for autocomplete
 /// Users can enter any wood type they want
 class WoodSuggestions {
@@ -89,6 +168,15 @@ class SmokingRecipe {
   @Index()
   late String name;
 
+  /// The main item being smoked (e.g., "Brisket", "Pork Shoulder", "Mac & Cheese")
+  @Index()
+  String? item;
+
+  /// Category of the item being smoked (e.g., "Beef", "Pork", "Desserts")
+  /// Used for filtering and color-coded display
+  @Index()
+  String? category;
+
   /// Temperature for smoking (e.g., "275°F", "135°C")
   late String temperature;
 
@@ -134,6 +222,8 @@ class SmokingRecipe {
     required String temperature,
     required String time,
     required String wood,
+    String? item,
+    String? category,
     List<SmokingSeasoning>? seasonings,
     List<String>? directions,
     String? notes,
@@ -145,6 +235,8 @@ class SmokingRecipe {
     return SmokingRecipe()
       ..uuid = uuid
       ..name = name
+      ..item = item
+      ..category = category
       ..temperature = temperature
       ..time = time
       ..wood = wood
@@ -164,6 +256,8 @@ class SmokingRecipe {
     return {
       'uuid': uuid,
       'name': name,
+      'item': item,
+      'category': category,
       'temperature': temperature,
       'time': time,
       'wood': wood,
@@ -188,6 +282,8 @@ class SmokingRecipe {
     return {
       'uuid': uuid,
       'name': name,
+      'item': item,
+      'category': category,
       'temperature': temperature,
       'time': time,
       'wood': wood,

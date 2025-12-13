@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/theme/colors.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -218,77 +219,50 @@ class SmokingDetailScreen extends ConsumerWidget {
     final theme = Theme.of(context);
 
     return Wrap(
-      spacing: 12,
-      runSpacing: 12,
+      spacing: 8,
+      runSpacing: 8,
       children: [
+        // Item/Category with colored dot
+        if (recipe.item != null || recipe.category != null)
+          Chip(
+            avatar: Container(
+              width: 12,
+              height: 12,
+              decoration: BoxDecoration(
+                color: MemoixColors.forSmokedItemDot(recipe.category),
+                shape: BoxShape.circle,
+              ),
+            ),
+            label: Text(recipe.item ?? recipe.category ?? ''),
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+            visualDensity: VisualDensity.compact,
+          ),
         // Temperature
-        _buildInfoChip(
-          context,
-          Icons.thermostat,
-          recipe.temperature,
-          'Temperature',
+        Chip(
+          avatar: Icon(Icons.thermostat, size: 16, color: theme.colorScheme.onSurface),
+          label: Text(recipe.temperature),
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+          visualDensity: VisualDensity.compact,
         ),
         // Time
-        _buildInfoChip(
-          context,
-          Icons.timer,
-          recipe.time,
-          'Time',
+        Chip(
+          avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
+          label: Text(recipe.time),
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+          visualDensity: VisualDensity.compact,
         ),
         // Wood
-        _buildInfoChip(
-          context,
-          Icons.park,
-          recipe.wood,
-          'Wood',
+        Chip(
+          avatar: Icon(Icons.park, size: 16, color: theme.colorScheme.onSurface),
+          label: Text(recipe.wood),
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+          visualDensity: VisualDensity.compact,
         ),
       ],
-    );
-  }
-
-  Widget _buildInfoChip(
-    BuildContext context,
-    IconData icon,
-    String value,
-    String label,
-  ) {
-    final theme = Theme.of(context);
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      decoration: BoxDecoration(
-        color: theme.colorScheme.secondary.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: theme.colorScheme.secondary,
-          width: 1.5,
-        ),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: theme.colorScheme.secondary, size: 20),
-          const SizedBox(width: 8),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                label,
-                style: theme.textTheme.labelSmall?.copyWith(
-                  color: theme.colorScheme.outline,
-                ),
-              ),
-              Text(
-                value,
-                style: theme.textTheme.titleMedium?.copyWith(
-                  color: theme.colorScheme.secondary,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
     );
   }
 
