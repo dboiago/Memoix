@@ -73,79 +73,81 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    if (!widget.isCompact) const SizedBox(height: 4),
-
-                    // Item/category with colored bullet + wood with tree icon + temp + time
-                    Row(
-                      children: [
-                        // Category/Item with colored bullet
-                        if (widget.recipe.category != null) ...[
-                          Text(
-                            '\u2022',
-                            style: TextStyle(
-                              color: MemoixColors.forSmokedItemDot(widget.recipe.category),
-                              fontSize: 16,
+                    // Only show metadata row in non-compact mode
+                    if (!widget.isCompact) ...[
+                      const SizedBox(height: 4),
+                      // Item/category with colored bullet + wood with tree icon + temp + time
+                      Row(
+                        children: [
+                          // Category/Item with colored bullet
+                          if (widget.recipe.category != null) ...[
+                            Text(
+                              '\u2022',
+                              style: TextStyle(
+                                color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+                                fontSize: 16,
+                              ),
                             ),
+                            const SizedBox(width: 6),
+                            Text(
+                              widget.recipe.category!,
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                          ],
+
+                          // Wood type with tree icon (no colored dot)
+                          Icon(
+                            Icons.park,
+                            size: 14,
+                            color: theme.colorScheme.outline,
                           ),
-                          const SizedBox(width: 6),
+                          const SizedBox(width: 4),
                           Text(
-                            widget.recipe.category!,
+                            widget.recipe.wood,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.colorScheme.onSurfaceVariant,
                             ),
                           ),
                           const SizedBox(width: 12),
-                        ],
 
-                        // Wood type with tree icon (no colored dot)
-                        Icon(
-                          Icons.park,
-                          size: 14,
-                          color: theme.colorScheme.outline,
-                        ),
-                        const SizedBox(width: 4),
-                        Text(
-                          widget.recipe.wood,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
+                          // Temperature
+                          Icon(
+                            Icons.thermostat_outlined,
+                            size: 14,
+                            color: theme.colorScheme.outline,
                           ),
-                        ),
-                        if (!widget.isCompact) const SizedBox(width: 12),
-
-                        // Temperature
-                        Icon(
-                          Icons.thermostat_outlined,
-                          size: 14,
-                          color: theme.colorScheme.outline,
-                        ),
-                        const SizedBox(width: 4),
-                        Text(
-                          widget.recipe.temperature,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                        if (!widget.isCompact) const SizedBox(width: 12),
-
-                        // Time
-                        Icon(
-                          Icons.schedule_outlined,
-                          size: 14,
-                          color: theme.colorScheme.outline,
-                        ),
-                        const SizedBox(width: 4),
-                        Flexible(
-                          child: Text(
-                            widget.recipe.time,
+                          const SizedBox(width: 4),
+                          Text(
+                            widget.recipe.temperature,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.colorScheme.onSurfaceVariant,
                             ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
                           ),
-                        ),
-                      ],
-                    ),
+                          const SizedBox(width: 12),
+
+                          // Time
+                          Icon(
+                            Icons.schedule_outlined,
+                            size: 14,
+                            color: theme.colorScheme.outline,
+                          ),
+                          const SizedBox(width: 4),
+                          Flexible(
+                            child: Text(
+                              widget.recipe.time,
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ]
                   ],
                 ),
               ),

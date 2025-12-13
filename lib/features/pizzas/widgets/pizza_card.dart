@@ -71,33 +71,35 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    if (!widget.isCompact) const SizedBox(height: 4),
-                    // Base with bullet + cheeses/toppings summary
-                    Row(
-                      children: [
-                        // Base with sauce-themed colored bullet
-                        Text(
-                          '\u2022',
-                          style: TextStyle(
-                            color: MemoixColors.forPizzaBaseDot(widget.pizza.base.name),
-                            fontSize: 16,
+                    // Only show metadata row in non-compact mode
+                    if (!widget.isCompact) ...[
+                      const SizedBox(height: 4),
+                      // Base with bullet + cheeses/toppings summary
+                      Row(
+                        children: [
+                          // Base with sauce-themed colored bullet
+                          Text(
+                            '\u2022',
+                            style: TextStyle(
+                              color: MemoixColors.forPizzaBaseDot(widget.pizza.base.name),
+                              fontSize: 16,
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          widget.pizza.base.displayName,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
+                          const SizedBox(width: 6),
+                          Text(
+                            widget.pizza.base.displayName,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
                           ),
-                        ),
-                        if (!widget.isCompact) const SizedBox(width: 12),
-                        // Cheeses and toppings summary
-                        if (!widget.isCompact)
+                          const SizedBox(width: 12),
+                          // Cheeses and toppings summary
                           Flexible(
                             child: _buildIngredientsSummary(theme),
                           ),
-                      ],
-                    ),
+                        ],
+                      ),
+                    ]
                   ],
                 ),
               ),
