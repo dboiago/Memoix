@@ -305,8 +305,11 @@ class RecipeDetailView extends ConsumerWidget {
                 
                 return LayoutBuilder(
                   builder: (context, constraints) {
-                    // Use side-by-side layout if forced OR on wide screens (>800px)
-                    final useSideBySide = forceSideBySide || constraints.maxWidth > 800;
+                    // Use side-by-side layout if:
+                    // - forceSideBySide is enabled AND screen is wide enough (>500px)
+                    // - OR on very wide screens (>800px) regardless of setting
+                    final useSideBySide = (forceSideBySide && constraints.maxWidth > 500) || 
+                                          constraints.maxWidth > 800;
                     
                     if (useSideBySide) {
                       return Padding(

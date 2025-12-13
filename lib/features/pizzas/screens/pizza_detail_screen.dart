@@ -139,73 +139,115 @@ class _PizzaDetailView extends ConsumerWidget {
             ],
           ),
 
-          // Content
+          // Content - styled like regular recipe page
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Base badge
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    decoration: BoxDecoration(
-                      color: theme.colorScheme.secondary.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: theme.colorScheme.secondary,
-                        width: 1,
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Ingredients header
+                      Text(
+                        'Ingredients',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    child: Text(
-                      pizza.base.displayName,
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        color: theme.colorScheme.secondary,
-                        fontWeight: FontWeight.w600,
+                      const SizedBox(height: 16),
+                      
+                      // Sauce section
+                      _buildIngredientSection(
+                        theme,
+                        'Sauce',
+                        [pizza.base.displayName],
                       ),
-                    ),
+                      
+                      // Cheeses section
+                      if (pizza.cheeses.isNotEmpty) ...[
+                        const SizedBox(height: 16),
+                        _buildIngredientSection(
+                          theme,
+                          pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                          pizza.cheeses,
+                        ),
+                      ],
+
+                      // Toppings section
+                      if (pizza.toppings.isNotEmpty) ...[
+                        const SizedBox(height: 16),
+                        _buildIngredientSection(
+                          theme,
+                          pizza.toppings.length == 1 ? 'Topping' : 'Toppings',
+                          pizza.toppings,
+                        ),
+                      ],
+                    ],
                   ),
-                  const SizedBox(height: 24),
-
-                  // Cheeses section
-                  if (pizza.cheeses.isNotEmpty) ...[
-                    _buildSectionHeader(theme, 'Cheeses'),
-                    const SizedBox(height: 8),
-                    _PizzaIngredientList(items: pizza.cheeses),
-                    const SizedBox(height: 24),
-                  ],
-
-                  // Toppings section
-                  if (pizza.toppings.isNotEmpty) ...[
-                    _buildSectionHeader(theme, 'Toppings'),
-                    const SizedBox(height: 8),
-                    _PizzaIngredientList(items: pizza.toppings),
-                    const SizedBox(height: 24),
-                  ],
-
-                  // Notes section
-                  if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
-                    _buildSectionHeader(theme, 'Notes'),
-                    const SizedBox(height: 8),
-                    Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Text(
-                        pizza.notes!,
-                        style: theme.textTheme.bodyMedium,
-                      ),
-                    ),
-                  ],
-                ],
+                ),
               ),
             ),
           ),
+          
+          // Notes section (if present)
+          if (pizza.notes != null && pizza.notes!.isNotEmpty)
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Notes',
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        Text(
+                          pizza.notes!,
+                          style: theme.textTheme.bodyMedium,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            
+          // Bottom padding
+          const SliverToBoxAdapter(
+            child: SizedBox(height: 32),
+          ),
         ],
       ),
+    );
+  }
+  
+  /// Build an ingredient section with header and checkable list
+  Widget _buildIngredientSection(ThemeData theme, String title, List<String> items) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Section header
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Text(
+            title,
+            style: theme.textTheme.titleSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: theme.colorScheme.primary,
+            ),
+          ),
+        ),
+        // Ingredient list
+        _PizzaIngredientList(items: items),
+      ],
     );
   }
 
@@ -370,8 +412,14 @@ String _capitalizeWords(String text) {
 /// A simple checkable list for pizza ingredients (cheeses/toppings)
 class _PizzaIngredientList extends StatefulWidget {
   final List<String> items;
+  final IconData? icon;
+  final Color? iconColor;
 
-  const _PizzaIngredientList({required this.items});
+  const _PizzaIngredientList({
+    required this.items,
+    this.icon,
+    this.iconColor,
+  });
 
   @override
   State<_PizzaIngredientList> createState() => _PizzaIngredientListState();
@@ -405,6 +453,17 @@ class _PizzaIngredientListState extends State<_PizzaIngredientList> {
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(
               children: [
+                // Icon for each item
+                if (widget.icon != null) ...[
+                  Icon(
+                    widget.icon,
+                    size: 18,
+                    color: isChecked
+                        ? (widget.iconColor ?? theme.colorScheme.primary).withOpacity(0.5)
+                        : widget.iconColor ?? theme.colorScheme.primary,
+                  ),
+                  const SizedBox(width: 8),
+                ],
                 SizedBox(
                   width: 24,
                   height: 24,

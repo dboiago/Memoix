@@ -153,32 +153,32 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
 
     return Row(
       children: [
-        // Cheese count with icon
+        // Cheese count
         if (cheeseCount > 0) ...[
           Icon(
-            Icons.circle,
-            size: 8,
+            Icons.local_pizza_outlined,
+            size: 14,
             color: theme.colorScheme.outline,
           ),
           const SizedBox(width: 4),
           Text(
-            '$cheeseCount cheese${cheeseCount == 1 ? '' : 's'}',
+            '$cheeseCount Cheese${cheeseCount == 1 ? '' : 's'}',
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
           const SizedBox(width: 12),
         ],
-        // Topping count with icon
+        // Topping count
         if (toppingCount > 0) ...[
           Icon(
-            Icons.circle,
-            size: 8,
+            Icons.restaurant_outlined,
+            size: 14,
             color: theme.colorScheme.outline,
           ),
           const SizedBox(width: 4),
           Text(
-            '$toppingCount topping${toppingCount == 1 ? '' : 's'}',
+            '$toppingCount Topping${toppingCount == 1 ? '' : 's'}',
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
