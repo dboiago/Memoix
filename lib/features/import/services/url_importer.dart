@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/spirit.dart';
+import '../models/recipe_import_result.dart';
 
 /// Service to import recipes from URLs
 class UrlRecipeImporter {
@@ -99,7 +100,8 @@ class UrlRecipeImporter {
 
   /// Import a recipe from a URL
   /// Supports JSON-LD schema.org Recipe format and common recipe sites
-  Future<Recipe?> importFromUrl(String url) async {
+  /// Returns RecipeImportResult with confidence scores for user review
+  Future<RecipeImportResult> importFromUrl(String url) async {
     try {
       final response = await http.get(
         Uri.parse(url),
@@ -120,18 +122,27 @@ class UrlRecipeImporter {
       for (final script in jsonLdScripts) {
         try {
           final data = jsonDecode(script.text);
-          final recipe = _parseJsonLd(data, url);
-          if (recipe != null) return recipe;
+          final result = _parseJsonLdWithConfidence(data, url);
+          if (result != null) return result;
         } catch (_) {
           continue;
         }
       }
 
       // Fallback: try to parse from HTML structure
-      return _parseFromHtml(document, url);
+      final result = _parseFromHtmlWithConfidence(document, url);
+      if (result != null) return result;
+      
+      throw Exception('Could not find recipe data on this page');
     } catch (e) {
       throw Exception('Failed to import recipe from URL: $e');
     }
+  }
+
+  /// Legacy method for backwards compatibility - returns Recipe directly
+  Future<Recipe?> importRecipeFromUrl(String url) async {
+    final result = await importFromUrl(url);
+    return result.toRecipe(_uuid.v4());
   }
 
   /// Decode HTML entities and normalise text
@@ -256,6 +267,245 @@ class UrlRecipeImporter {
       source: RecipeSource.url,
       nutrition: nutrition,
     );
+  }
+
+  /// Parse JSON-LD with confidence scoring for review flow
+  RecipeImportResult? _parseJsonLdWithConfidence(dynamic data, String sourceUrl) {
+    // Handle @graph structure
+    if (data is Map && data['@graph'] != null) {
+      final graph = data['@graph'] as List;
+      for (final item in graph) {
+        final result = _parseJsonLdWithConfidence(item, sourceUrl);
+        if (result != null) return result;
+      }
+      return null;
+    }
+
+    // Handle array of items
+    if (data is List) {
+      for (final item in data) {
+        final result = _parseJsonLdWithConfidence(item, sourceUrl);
+        if (result != null) return result;
+      }
+      return null;
+    }
+
+    // Check if this is a Recipe type
+    if (data is! Map) return null;
+    
+    final type = data['@type'];
+    final isRecipe = type == 'Recipe' || 
+                     (type is List && type.contains('Recipe'));
+    
+    if (!isRecipe) return null;
+
+    // Parse with confidence scoring
+    final name = _cleanRecipeName(_parseString(data['name']) ?? '');
+    final nameConfidence = name.isNotEmpty ? 0.9 : 0.0;
+
+    // Parse ingredients and collect raw data
+    final rawIngredientStrings = _extractRawIngredients(data['recipeIngredient']);
+    var ingredients = _parseIngredients(data['recipeIngredient']);
+    ingredients = _sortIngredientsByQuantity(ingredients);
+    
+    // Calculate ingredients confidence based on how many we successfully parsed
+    double ingredientsConfidence = 0.0;
+    if (rawIngredientStrings.isNotEmpty) {
+      ingredientsConfidence = ingredients.length / rawIngredientStrings.length;
+      // Boost if ingredients have amounts
+      final withAmounts = ingredients.where((i) => i.amount != null && i.amount!.isNotEmpty).length;
+      if (ingredients.isNotEmpty) {
+        ingredientsConfidence = (ingredientsConfidence + (withAmounts / ingredients.length)) / 2;
+      }
+    }
+
+    // Parse directions with confidence
+    final directions = _parseInstructions(data['recipeInstructions']);
+    final rawDirections = _extractRawDirections(data['recipeInstructions']);
+    double directionsConfidence = directions.isNotEmpty ? 0.8 : 0.0;
+    // Boost if directions are detailed (more than a few words each)
+    if (directions.isNotEmpty) {
+      final avgWords = directions.map((d) => d.split(' ').length).reduce((a, b) => a + b) / directions.length;
+      if (avgWords > 10) directionsConfidence = 0.9;
+    }
+
+    // Parse nutrition
+    final nutrition = _parseNutrition(data['nutrition']);
+
+    // Detect course with confidence
+    final course = _guessCourse(data, sourceUrl: sourceUrl);
+    final courseConfidence = _getCourseConfidence(data, sourceUrl);
+    
+    // Parse cuisine
+    final cuisine = _parseCuisine(data['recipeCuisine']);
+    final cuisineConfidence = cuisine != null ? 0.8 : 0.3;
+    
+    // Detect all possible courses and cuisines
+    final detectedCourses = _detectAllCourses(data);
+    final detectedCuisines = _detectAllCuisines(data);
+
+    // Parse other fields
+    final serves = _parseYield(data['recipeYield']);
+    final servesConfidence = serves != null ? 0.9 : 0.0;
+    
+    final time = _parseTime(data);
+    final timeConfidence = time != null ? 0.9 : 0.0;
+
+    // For drinks, detect the base spirit
+    String? subcategory;
+    if (course == 'drinks') {
+      subcategory = _detectSpirit(ingredients);
+      if (subcategory != null) {
+        subcategory = Spirit.toDisplayName(subcategory);
+      }
+    }
+
+    // Create raw ingredient data
+    final rawIngredients = rawIngredientStrings.map((raw) {
+      final parsed = _parseIngredientString(raw);
+      return RawIngredientData(
+        original: raw,
+        amount: parsed.amount,
+        unit: parsed.unit,
+        name: parsed.name.isNotEmpty ? parsed.name : raw,
+        looksLikeIngredient: parsed.name.isNotEmpty,
+        isSection: parsed.section != null,
+        sectionName: parsed.section,
+      );
+    }).toList();
+
+    return RecipeImportResult(
+      name: name.isNotEmpty ? name : null,
+      course: course,
+      cuisine: cuisine,
+      subcategory: subcategory,
+      serves: serves,
+      time: time,
+      ingredients: ingredients,
+      directions: directions,
+      notes: _decodeHtml(_parseString(data['description']) ?? ''),
+      imageUrl: _parseImage(data['image']),
+      nutrition: nutrition,
+      rawIngredients: rawIngredients,
+      rawDirections: rawDirections,
+      detectedCourses: detectedCourses,
+      detectedCuisines: detectedCuisines,
+      nameConfidence: nameConfidence,
+      courseConfidence: courseConfidence,
+      cuisineConfidence: cuisineConfidence,
+      ingredientsConfidence: ingredientsConfidence,
+      directionsConfidence: directionsConfidence,
+      servesConfidence: servesConfidence,
+      timeConfidence: timeConfidence,
+      sourceUrl: sourceUrl,
+      source: RecipeSource.url,
+    );
+  }
+
+  /// Extract raw ingredient strings without parsing
+  List<String> _extractRawIngredients(dynamic value) {
+    if (value == null) return [];
+    if (value is String) return [_decodeHtml(value)];
+    if (value is List) {
+      return value
+          .map((e) => _decodeHtml(e.toString().trim()))
+          .where((s) => s.isNotEmpty)
+          .toList();
+    }
+    return [];
+  }
+
+  /// Extract raw direction strings
+  List<String> _extractRawDirections(dynamic value) {
+    if (value == null) return [];
+    if (value is String) return [_decodeHtml(value)];
+    if (value is List) {
+      return value.map((item) {
+        if (item is String) return _decodeHtml(item.trim());
+        if (item is Map) {
+          return _decodeHtml(_parseString(item['text']) ?? _parseString(item['name']) ?? item.toString());
+        }
+        return _decodeHtml(item.toString().trim());
+      }).where((s) => s.isNotEmpty).toList();
+    }
+    return [];
+  }
+
+  /// Get confidence score for course detection
+  double _getCourseConfidence(Map data, String? sourceUrl) {
+    final category = _parseString(data['recipeCategory'])?.toLowerCase();
+    
+    // High confidence if category is explicitly set
+    if (category != null && category.isNotEmpty) {
+      if (_isCocktailSite(sourceUrl ?? '')) return 0.95;
+      if (category.contains('dessert') || category.contains('soup') || 
+          category.contains('salad') || category.contains('main')) {
+        return 0.85;
+      }
+      return 0.7;
+    }
+    
+    // Medium confidence if we can infer from keywords
+    final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
+    if (keywords.contains('dessert') || keywords.contains('main') || 
+        keywords.contains('appetizer')) {
+      return 0.6;
+    }
+    
+    // Low confidence - just guessing
+    return 0.4;
+  }
+
+  /// Detect all possible course categories from recipe data
+  List<String> _detectAllCourses(Map data) {
+    final courses = <String>{};
+    final category = _parseString(data['recipeCategory'])?.toLowerCase() ?? '';
+    final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
+    final allText = '$category $keywords';
+    
+    if (allText.contains('dessert') || allText.contains('sweet')) courses.add('Desserts');
+    if (allText.contains('appetizer') || allText.contains('starter')) courses.add('Apps');
+    if (allText.contains('soup')) courses.add('Soups');
+    if (allText.contains('salad') || allText.contains('side')) courses.add('Sides');
+    if (allText.contains('bread')) courses.add('Breads');
+    if (allText.contains('breakfast') || allText.contains('brunch')) courses.add('Brunch');
+    if (allText.contains('main') || allText.contains('dinner') || allText.contains('entrée')) courses.add('Mains');
+    if (allText.contains('sauce') || allText.contains('dressing')) courses.add('Sauces');
+    if (allText.contains('drink') || allText.contains('cocktail') || allText.contains('beverage')) courses.add('drinks');
+    if (allText.contains('vegetarian') || allText.contains('vegan')) courses.add("Veg'n");
+    
+    // Always include Mains as default option
+    if (courses.isEmpty) courses.add('Mains');
+    
+    return courses.toList()..sort();
+  }
+
+  /// Detect all possible cuisines from recipe data
+  List<String> _detectAllCuisines(Map data) {
+    final cuisines = <String>{};
+    final cuisine = _parseString(data['recipeCuisine'])?.toLowerCase() ?? '';
+    final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
+    final name = _parseString(data['name'])?.toLowerCase() ?? '';
+    final allText = '$cuisine $keywords $name';
+    
+    // Check for cuisine indicators
+    final cuisineIndicators = {
+      'american': 'USA', 'southern': 'USA', 'cajun': 'USA',
+      'french': 'France', 'italian': 'Italy', 'spanish': 'Spain',
+      'mexican': 'Mexico', 'chinese': 'China', 'japanese': 'Japan',
+      'korean': 'Korea', 'thai': 'Thailand', 'vietnamese': 'Vietnam',
+      'indian': 'India', 'greek': 'Greece', 'mediterranean': 'Mediterranean',
+      'middle eastern': 'Middle East', 'moroccan': 'Morocco',
+      'caribbean': 'Caribbean', 'brazilian': 'Brazil',
+    };
+    
+    cuisineIndicators.forEach((indicator, cuisineName) {
+      if (allText.contains(indicator)) {
+        cuisines.add(cuisineName);
+      }
+    });
+    
+    return cuisines.toList()..sort();
   }
 
   String? _parseString(dynamic value) {
@@ -1027,6 +1277,95 @@ class UrlRecipeImporter {
       subcategory: subcategory,
       ingredients: ingredients,
       directions: directions,
+      sourceUrl: sourceUrl,
+      source: RecipeSource.url,
+    );
+  }
+
+  /// Fallback HTML parsing with confidence scoring
+  RecipeImportResult? _parseFromHtmlWithConfidence(dynamic document, String sourceUrl) {
+    // Try common selectors for recipe sites
+    final title = document.querySelector('h1')?.text?.trim() ?? 
+                  document.querySelector('.recipe-title')?.text?.trim() ??
+                  document.querySelector('[itemprop="name"]')?.text?.trim();
+
+    final ingredientElements = document.querySelectorAll(
+      '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
+    );
+    
+    final rawIngredientStrings = ingredientElements
+        .map((e) => _decodeHtml(e.text.trim()))
+        .where((s) => s.isNotEmpty)
+        .toList();
+    
+    var ingredients = rawIngredientStrings
+        .map((s) => _parseIngredientString(s))
+        .where((i) => i.name.isNotEmpty)
+        .toList();
+    
+    ingredients = _sortIngredientsByQuantity(ingredients);
+
+    final instructionElements = document.querySelectorAll(
+      '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
+    );
+    
+    final rawDirections = instructionElements
+        .map((e) => _decodeHtml(e.text.trim()))
+        .where((s) => s.isNotEmpty)
+        .toList();
+
+    if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
+      return null;
+    }
+
+    // Detect if this is a drink based on URL and content
+    final isCocktail = _isCocktailSite(sourceUrl);
+    final course = isCocktail ? 'drinks' : 'Mains';
+    
+    // For drinks, detect the base spirit
+    String? subcategory;
+    if (isCocktail) {
+      final spiritCode = _detectSpirit(ingredients);
+      if (spiritCode != null) {
+        subcategory = Spirit.toDisplayName(spiritCode);
+      }
+    }
+
+    // Calculate confidence - HTML parsing is generally less reliable
+    final nameConfidence = title != null && title.isNotEmpty ? 0.7 : 0.0;
+    final ingredientsConfidence = rawIngredientStrings.isNotEmpty 
+        ? (ingredients.length / rawIngredientStrings.length) * 0.6 
+        : 0.0;
+    final directionsConfidence = rawDirections.isNotEmpty ? 0.6 : 0.0;
+    final courseConfidence = isCocktail ? 0.8 : 0.3; // Low confidence for defaulting to Mains
+
+    // Create raw ingredient data
+    final rawIngredients = rawIngredientStrings.map((raw) {
+      final parsed = _parseIngredientString(raw);
+      return RawIngredientData(
+        original: raw,
+        amount: parsed.amount,
+        unit: parsed.unit,
+        name: parsed.name.isNotEmpty ? parsed.name : raw,
+        looksLikeIngredient: parsed.name.isNotEmpty,
+        isSection: parsed.section != null,
+        sectionName: parsed.section,
+      );
+    }).toList();
+
+    return RecipeImportResult(
+      name: title != null ? _cleanRecipeName(title) : null,
+      course: course,
+      subcategory: subcategory,
+      ingredients: ingredients,
+      directions: rawDirections,
+      rawIngredients: rawIngredients,
+      rawDirections: rawDirections,
+      detectedCourses: isCocktail ? ['drinks'] : ['Mains'],
+      nameConfidence: nameConfidence,
+      courseConfidence: courseConfidence,
+      ingredientsConfidence: ingredientsConfidence,
+      directionsConfidence: directionsConfidence,
       sourceUrl: sourceUrl,
       source: RecipeSource.url,
     );

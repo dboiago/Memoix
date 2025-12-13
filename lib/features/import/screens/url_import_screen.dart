@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:uuid/uuid.dart';
 
 import '../services/url_importer.dart';
+import '../models/recipe_import_result.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import 'import_review_screen.dart';
 
 class URLImportScreen extends ConsumerStatefulWidget {
   const URLImportScreen({super.key});
@@ -176,16 +179,27 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
 
     try {
       final importer = ref.read(urlImporterProvider);
-      final recipe = await importer.importFromUrl(url);
+      final result = await importer.importFromUrl(url);
 
       if (!mounted) return;
 
-      // Navigate to edit screen with imported recipe
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-        ),
-      );
+      // Route based on confidence
+      if (result.needsUserReview) {
+        // Low confidence - show review screen for manual mapping
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => ImportReviewScreen(importResult: result),
+          ),
+        );
+      } else {
+        // High confidence - go directly to edit screen
+        final recipe = result.toRecipe(const Uuid().v4());
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => RecipeEditScreen(importedRecipe: recipe),
+          ),
+        );
+      }
     } catch (e) {
       setState(() {
         _isLoading = false;

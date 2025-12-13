@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:uuid/uuid.dart';
 
 import '../services/ocr_importer.dart';
+import '../models/recipe_import_result.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import 'import_review_screen.dart';
 
 class OCRScannerScreen extends ConsumerStatefulWidget {
   const OCRScannerScreen({super.key});
@@ -14,7 +17,7 @@ class OCRScannerScreen extends ConsumerStatefulWidget {
 
 class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
   bool _isProcessing = false;
-  String? _extractedText;
+  OcrResult? _ocrResult;
   String? _errorMessage;
 
   @override
@@ -63,7 +66,7 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                           const Text(
                             '1. Take a clear photo of a recipe from a cookbook or handwritten note\n'
                             '2. Make sure the text is readable and well-lit\n'
-                            '3. The app will extract the text and help you create a recipe',
+                            '3. The app will extract the text and help you organize it into a recipe',
                           ),
                         ],
                       ),
@@ -111,35 +114,112 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                     ),
                   ],
 
-                  // Extracted text preview
-                  if (_extractedText != null) ...[
+                  // Result preview
+                  if (_ocrResult != null && _ocrResult!.success) ...[
                     const SizedBox(height: 24),
-                    Text(
-                      'Extracted Text',
-                      style: theme.textTheme.titleMedium,
-                    ),
-                    const SizedBox(height: 8),
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Text(
-                        _extractedText!,
-                        style: theme.textTheme.bodySmall,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    FilledButton.icon(
-                      onPressed: _createRecipeFromText,
-                      icon: const Icon(Icons.add),
-                      label: const Text('Create Recipe from This'),
-                    ),
+                    _buildResultPreview(theme, _ocrResult!),
                   ],
                 ],
               ),
             ),
+    );
+  }
+
+  Widget _buildResultPreview(ThemeData theme, OcrResult result) {
+    final confidence = result.importResult?.overallConfidence ?? 0.0;
+    final ingredientCount = result.importResult?.ingredients.length ?? 0;
+    final directionCount = result.importResult?.directions.length ?? 0;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // Confidence summary
+        Card(
+          color: confidence < 0.5 
+              ? Colors.orange.withOpacity(0.1) 
+              : Colors.green.withOpacity(0.1),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      confidence < 0.5 ? Icons.warning : Icons.check_circle,
+                      color: confidence < 0.5 ? Colors.orange : Colors.green,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        confidence < 0.5
+                            ? 'Text extracted! Please review and organize.'
+                            : 'Recipe structure detected!',
+                        style: theme.textTheme.titleSmall,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Found: $ingredientCount possible ingredients, $directionCount directions',
+                  style: theme.textTheme.bodySmall,
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 16),
+
+        // Raw text preview (collapsible)
+        ExpansionTile(
+          leading: const Icon(Icons.text_fields),
+          title: const Text('Raw Text'),
+          subtitle: Text(
+            '${result.rawText?.split('\n').length ?? 0} lines extracted',
+            style: theme.textTheme.bodySmall,
+          ),
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              width: double.infinity,
+              color: theme.colorScheme.surfaceContainerHighest,
+              child: SelectableText(
+                result.rawText ?? '',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  fontFamily: 'monospace',
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 16),
+
+        // Action buttons
+        Row(
+          children: [
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed: () => _navigateToReview(result),
+                icon: const Icon(Icons.edit_note),
+                label: const Text('Review & Organize'),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: [
+            Expanded(
+              child: FilledButton.icon(
+                onPressed: () => _navigateToReview(result),
+                icon: const Icon(Icons.add),
+                label: const Text('Create Recipe'),
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 
@@ -157,15 +237,34 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
       setState(() {
         _isProcessing = true;
         _errorMessage = null;
-        _extractedText = null;
+        _ocrResult = null;
       });
 
       final ocrService = ref.read(ocrImporterProvider);
-      final text = await ocrService.extractTextFromImage(image.path);
+      
+      // Use scanFromGallery/Camera which now returns import result
+      final result = source == ImageSource.camera 
+          ? await ocrService.scanFromCamera() 
+          : await ocrService.scanFromGallery();
+
+      if (!mounted) return;
+
+      if (result.cancelled) {
+        setState(() => _isProcessing = false);
+        return;
+      }
+
+      if (!result.success) {
+        setState(() {
+          _isProcessing = false;
+          _errorMessage = result.error ?? 'Failed to process image';
+        });
+        return;
+      }
 
       setState(() {
         _isProcessing = false;
-        _extractedText = text;
+        _ocrResult = result;
       });
     } catch (e) {
       setState(() {
@@ -175,15 +274,21 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
     }
   }
 
-  void _createRecipeFromText() {
-    if (_extractedText == null) return;
+  void _navigateToReview(OcrResult result) {
+    if (result.importResult == null) {
+      // Fallback: use the old flow with raw text
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => RecipeEditScreen(ocrText: result.rawText),
+        ),
+      );
+      return;
+    }
 
-    // Navigate to recipe edit screen with extracted text
+    // Always go to review screen for OCR since confidence is typically low
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (_) => RecipeEditScreen(
-          ocrText: _extractedText,
-        ),
+        builder: (_) => ImportReviewScreen(importResult: result.importResult!),
       ),
     );
   }
