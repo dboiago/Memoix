@@ -327,23 +327,11 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Text(
-              'Special Equipment',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const Spacer(),
-            TextButton.icon(
-              onPressed: () {
-                _showAddEquipmentDialog();
-              },
-              icon: const Icon(Icons.add, size: 18),
-              label: const Text('Add'),
-            ),
-          ],
+        Text(
+          'Special Equipment',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
         ),
         const SizedBox(height: 4),
         Text(
@@ -352,6 +340,47 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
+        const SizedBox(height: 12),
+        
+        // Dropdown-style equipment selector (like Smoking wood type)
+        Autocomplete<String>(
+          optionsBuilder: (value) {
+            final suggestions = ModernistEquipment.getSuggestions(value.text);
+            return suggestions.where((s) => !_equipment.contains(s));
+          },
+          onSelected: (value) {
+            if (!_equipment.contains(value)) {
+              setState(() => _equipment.add(value));
+            }
+          },
+          fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            return TextField(
+              controller: controller,
+              focusNode: focusNode,
+              decoration: InputDecoration(
+                hintText: 'Add equipment...',
+                border: const OutlineInputBorder(),
+                suffixIcon: IconButton(
+                  icon: const Icon(Icons.add),
+                  onPressed: () {
+                    final value = controller.text.trim();
+                    if (value.isNotEmpty && !_equipment.contains(value)) {
+                      setState(() => _equipment.add(value));
+                      controller.clear();
+                    }
+                  },
+                ),
+              ),
+              onSubmitted: (value) {
+                if (value.isNotEmpty && !_equipment.contains(value)) {
+                  setState(() => _equipment.add(value));
+                  controller.clear();
+                }
+              },
+            );
+          },
+        ),
+        
         if (_equipment.isNotEmpty) ...[
           const SizedBox(height: 12),
           Wrap(
@@ -368,106 +397,15 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     );
   }
 
-  void _showAddEquipmentDialog() {
-    final controller = TextEditingController();
-    
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      builder: (ctx) => Padding(
-        padding: EdgeInsets.only(
-          bottom: MediaQuery.of(ctx).viewInsets.bottom,
-          left: 16,
-          right: 16,
-          top: 16,
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              'Add Equipment',
-              style: Theme.of(ctx).textTheme.titleMedium,
-            ),
-            const SizedBox(height: 16),
-            Autocomplete<String>(
-              optionsBuilder: (value) {
-                final suggestions = ModernistEquipment.getSuggestions(value.text);
-                return suggestions.where((s) => !_equipment.contains(s));
-              },
-              onSelected: (value) {
-                controller.text = value;
-              },
-              fieldViewBuilder: (context, textController, focusNode, onSubmitted) {
-                controller.addListener(() => textController.text = controller.text);
-                return TextField(
-                  controller: textController,
-                  focusNode: focusNode,
-                  autofocus: true,
-                  decoration: const InputDecoration(
-                    hintText: 'e.g., Immersion circulator, iSi whipper',
-                    border: OutlineInputBorder(),
-                  ),
-                  onSubmitted: (_) {
-                    final value = textController.text.trim();
-                    if (value.isNotEmpty && !_equipment.contains(value)) {
-                      setState(() => _equipment.add(value));
-                    }
-                    Navigator.pop(ctx);
-                  },
-                );
-              },
-            ),
-            const SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                TextButton(
-                  onPressed: () => Navigator.pop(ctx),
-                  child: const Text('Cancel'),
-                ),
-                const SizedBox(width: 8),
-                FilledButton(
-                  onPressed: () {
-                    final value = controller.text.trim();
-                    if (value.isNotEmpty && !_equipment.contains(value)) {
-                      setState(() => _equipment.add(value));
-                    }
-                    Navigator.pop(ctx);
-                  },
-                  child: const Text('Add'),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-          ],
-        ),
-      ),
-    );
-  }
-
   Widget _buildIngredientsSection(ThemeData theme) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Text(
-              'Ingredients',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const Spacer(),
-            TextButton.icon(
-              onPressed: () {
-                _addIngredientRow();
-                setState(() {});
-              },
-              icon: const Icon(Icons.add, size: 18),
-              label: const Text('Add'),
-            ),
-          ],
+        Text(
+          'Ingredients',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
         ),
         const SizedBox(height: 8),
 
@@ -480,6 +418,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ),
           child: Row(
             children: [
+              // Space for drag handle
+              const SizedBox(width: 32),
               SizedBox(
                 width: 120,
                 child: Text('Ingredient',
@@ -510,27 +450,53 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ),
         ),
 
-        // Ingredient rows
+        // Ingredient rows (reorderable like Mains)
         Container(
           decoration: BoxDecoration(
             border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
             borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
           ),
-          child: Column(
-            children: List.generate(_ingredientRows.length, (index) {
-              return _buildIngredientRowWidget(index, theme);
-            }),
+          child: ReorderableListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            buildDefaultDragHandles: false,
+            itemCount: _ingredientRows.length,
+            onReorder: (oldIndex, newIndex) {
+              setState(() {
+                if (newIndex > oldIndex) newIndex--;
+                final item = _ingredientRows.removeAt(oldIndex);
+                _ingredientRows.insert(newIndex, item);
+              });
+            },
+            proxyDecorator: (child, index, animation) {
+              return AnimatedBuilder(
+                animation: animation,
+                builder: (context, child) {
+                  return Material(
+                    elevation: 4,
+                    color: theme.colorScheme.surface,
+                    borderRadius: BorderRadius.circular(4),
+                    child: child,
+                  );
+                },
+                child: child,
+              );
+            },
+            itemBuilder: (context, index) {
+              return _buildIngredientRowWidget(index, theme, key: ValueKey(_ingredientRows[index]));
+            },
           ),
         ),
       ],
     );
   }
 
-  Widget _buildIngredientRowWidget(int index, ThemeData theme) {
+  Widget _buildIngredientRowWidget(int index, ThemeData theme, {Key? key}) {
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
 
     return Container(
+      key: key,
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
       decoration: BoxDecoration(
         border: isLast
@@ -540,6 +506,17 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          // Drag handle
+          ReorderableDragStartListener(
+            index: index,
+            child: Icon(
+              Icons.drag_handle,
+              size: 20,
+              color: theme.colorScheme.outline,
+            ),
+          ),
+          const SizedBox(width: 8),
+
           // Ingredient name
           SizedBox(
             width: 120,

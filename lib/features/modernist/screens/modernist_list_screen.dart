@@ -16,7 +16,7 @@ class ModernistListScreen extends ConsumerStatefulWidget {
 }
 
 class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
-  Set<String> _selectedFilters = {}; // Empty = "All"
+  Set<ModernistType> _selectedFilters = {}; // Empty = "All"
   String _searchQuery = '';
 
   @override
@@ -49,9 +49,6 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
           var recipes = hideMemoix
               ? allRecipes.where((r) => r.source != ModernistSource.memoix).toList()
               : allRecipes;
-
-          // Get available filter options (technique categories)
-          final availableTechniques = _getAvailableTechniques(recipes);
 
           return Column(
             children: [
@@ -136,22 +133,25 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
                 ),
               ),
 
-              // Filter chips (technique categories)
-              if (availableTechniques.isNotEmpty)
-                Container(
-                  height: 48,
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      _buildFilterChip('All', recipes.length, isAllChip: true),
-                      ...availableTechniques.map((technique) {
-                        final count = recipes.where((r) => r.technique == technique).length;
-                        return _buildFilterChip(technique, count, rawValue: technique);
-                      }),
-                    ],
-                  ),
+              // Filter chips (Concept/Technique - like Mains uses Course)
+              Container(
+                height: 48,
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    _buildFilterChip('All', recipes.length, isAllChip: true),
+                    _buildFilterChip('Concept', 
+                      recipes.where((r) => r.type == ModernistType.concept).length,
+                      type: ModernistType.concept,
+                    ),
+                    _buildFilterChip('Technique',
+                      recipes.where((r) => r.type == ModernistType.technique).length,
+                      type: ModernistType.technique,
+                    ),
+                  ],
                 ),
+              ),
 
               // Recipe list
               Expanded(
@@ -169,14 +169,13 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
     );
   }
 
-  Widget _buildFilterChip(String label, int count, {String? rawValue, bool isAllChip = false}) {
-    final value = rawValue ?? label;
+  Widget _buildFilterChip(String label, int count, {ModernistType? type, bool isAllChip = false}) {
     final theme = Theme.of(context);
 
     // "All" is selected when no filters are selected
     final isSelected = isAllChip
         ? _selectedFilters.isEmpty
-        : _selectedFilters.contains(value);
+        : type != null && _selectedFilters.contains(type);
 
     return Padding(
       padding: const EdgeInsets.only(right: 8),
@@ -188,12 +187,12 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
             if (isAllChip) {
               // Clicking "All" clears all selections
               _selectedFilters.clear();
-            } else {
+            } else if (type != null) {
               // Toggle this filter
-              if (_selectedFilters.contains(value)) {
-                _selectedFilters.remove(value);
+              if (_selectedFilters.contains(type)) {
+                _selectedFilters.remove(type);
               } else {
-                _selectedFilters.add(value);
+                _selectedFilters.add(type);
               }
             }
           });
@@ -215,17 +214,6 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
         ),
       ),
     );
-  }
-
-  List<String> _getAvailableTechniques(List<ModernistRecipe> recipes) {
-    final techniques = recipes
-        .map((r) => r.technique)
-        .where((t) => t != null && t.isNotEmpty)
-        .cast<String>()
-        .toSet()
-        .toList();
-    techniques.sort();
-    return techniques;
   }
 
   Widget _buildRecipeList(List<ModernistRecipe> allRecipes, bool isCompact) {
@@ -286,12 +274,9 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
       }).toList();
     }
 
-    // Filter by technique category
+    // Filter by type (Concept/Technique)
     if (_selectedFilters.isNotEmpty) {
-      filtered = filtered.where((r) {
-        if (r.technique == null) return false;
-        return _selectedFilters.contains(r.technique);
-      }).toList();
+      filtered = filtered.where((r) => _selectedFilters.contains(r.type)).toList();
     }
 
     return filtered;

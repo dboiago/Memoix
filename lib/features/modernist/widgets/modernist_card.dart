@@ -5,7 +5,7 @@ import '../../../app/theme/colors.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 
-/// Card widget for displaying a modernist recipe in a list
+/// Card widget for displaying a modernist recipe in a list - follows Mains pattern
 class ModernistCard extends ConsumerStatefulWidget {
   final ModernistRecipe recipe;
   final VoidCallback? onTap;
@@ -75,18 +75,30 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          // Type badge (Concept/Technique)
-                          _TypeBadge(type: recipe.type),
-                          const SizedBox(width: 8),
-                          // Technique category if set
+                          // Colored dot for Concept/Technique (like Mains does for cuisine)
+                          Container(
+                            width: 8,
+                            height: 8,
+                            decoration: BoxDecoration(
+                              color: MemoixColors.modernist,
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          // Type (Concept/Technique)
+                          Text(
+                            recipe.type.displayName,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          // Technique category with icon if set
                           if (recipe.technique != null && recipe.technique!.isNotEmpty) ...[
-                            Container(
-                              width: 6,
-                              height: 6,
-                              decoration: BoxDecoration(
-                                color: MemoixColors.modernist,
-                                shape: BoxShape.circle,
-                              ),
+                            const SizedBox(width: 12),
+                            Icon(
+                              Icons.science_outlined,
+                              size: 14,
+                              color: theme.colorScheme.onSurfaceVariant,
                             ),
                             const SizedBox(width: 4),
                             Text(
@@ -95,10 +107,10 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),
                             ),
-                            const SizedBox(width: 8),
                           ],
                           // Time if set
                           if (recipe.time != null && recipe.time!.isNotEmpty) ...[
+                            const SizedBox(width: 12),
                             Icon(
                               Icons.schedule,
                               size: 14,
@@ -107,22 +119,6 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                             const SizedBox(width: 4),
                             Text(
                               recipe.time!,
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                            ),
-                            const SizedBox(width: 8),
-                          ],
-                          // Equipment count if any
-                          if (recipe.equipment.isNotEmpty) ...[
-                            Icon(
-                              Icons.build_outlined,
-                              size: 14,
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              '${recipe.equipment.length}',
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),
@@ -181,38 +177,6 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-/// Badge showing Concept or Technique type
-class _TypeBadge extends StatelessWidget {
-  final ModernistType type;
-
-  const _TypeBadge({required this.type});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    
-    final color = type == ModernistType.technique
-        ? Colors.purple
-        : Colors.teal;
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-      decoration: BoxDecoration(
-        color: color.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(4),
-        border: Border.all(color: color.withOpacity(0.5), width: 0.5),
-      ),
-      child: Text(
-        type.displayName,
-        style: theme.textTheme.labelSmall?.copyWith(
-          color: color,
-          fontWeight: FontWeight.w500,
         ),
       ),
     );

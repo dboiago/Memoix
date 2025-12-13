@@ -1,14 +1,12 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../../../app/theme/colors.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import 'modernist_edit_screen.dart';
 
-/// Detail screen for viewing a modernist recipe
+/// Detail screen for viewing a modernist recipe - follows Mains pattern exactly
 class ModernistDetailScreen extends ConsumerStatefulWidget {
   final int recipeId;
 
@@ -23,6 +21,7 @@ class ModernistDetailScreen extends ConsumerStatefulWidget {
 
 class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   final Set<int> _completedDirections = {};
+  final Set<int> _checkedIngredients = {};
 
   @override
   Widget build(BuildContext context) {
@@ -53,11 +52,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   Widget _buildDetailView(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
     final allImages = recipe.getAllImages();
     final hasImage = allImages.isNotEmpty;
+    final hasMultipleImages = allImages.length > 1;
 
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          // App bar with image
+          // App bar with image (matches Mains)
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
@@ -76,7 +76,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        _buildImage(allImages.first),
+                        hasMultipleImages
+                            ? _buildImageCarousel(allImages)
+                            : _buildSingleImage(allImages.first),
                         Container(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
@@ -94,368 +96,451 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                         ),
                       ],
                     )
-                  : Container(color: MemoixColors.modernist.withOpacity(0.3)),
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
             actions: [
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
+                  shadows: hasImage
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
                 ),
                 onPressed: () {
                   ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
                   ref.invalidate(modernistRecipeProvider(widget.recipeId));
                 },
               ),
+              IconButton(
+                icon: Icon(
+                  Icons.check_circle_outline,
+                  shadows: hasImage
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
+                tooltip: 'I made this',
+                onPressed: () {
+                  ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+                  ref.invalidate(modernistRecipeProvider(widget.recipeId));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+                  );
+                },
+              ),
               PopupMenuButton<String>(
                 onSelected: (value) => _handleMenuAction(value, recipe),
                 itemBuilder: (_) => [
                   const PopupMenuItem(value: 'edit', child: Text('Edit')),
-                  const PopupMenuItem(value: 'delete', child: Text('Delete')),
+                  PopupMenuItem(
+                    value: 'delete',
+                    child: Text(
+                      'Delete',
+                      style: TextStyle(color: theme.colorScheme.secondary),
+                    ),
+                  ),
                 ],
+                icon: Icon(
+                  Icons.more_vert,
+                  shadows: hasImage
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
               ),
             ],
           ),
 
-          // Content
-          SliverPadding(
-            padding: const EdgeInsets.all(16),
-            sliver: SliverList(
-              delegate: SliverChildListDelegate([
-                // Type and technique badges
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: [
-                    _TypeBadge(type: recipe.type),
-                    if (recipe.technique != null && recipe.technique!.isNotEmpty)
-                      _TechniqueBadge(technique: recipe.technique!),
+          // Recipe metadata - chips like Mains
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Tags row (same style as Mains)
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      // Category chip (Concept/Technique)
+                      Chip(
+                        label: Text(recipe.type.displayName),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                        visualDensity: VisualDensity.compact,
+                      ),
+                      // Technique category if set
+                      if (recipe.technique != null && recipe.technique!.isNotEmpty)
+                        Chip(
+                          label: Text(recipe.technique!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      if (recipe.serves != null && recipe.serves!.isNotEmpty)
+                        Chip(
+                          avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
+                          label: Text(recipe.serves!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      if (recipe.time != null && recipe.time!.isNotEmpty)
+                        Chip(
+                          avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
+                          label: Text(recipe.time!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                    ],
+                  ),
+
+                  // Special Equipment (simple list style, no banner)
+                  if (recipe.equipment.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    Text(
+                      'Special Equipment',
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 4,
+                      children: recipe.equipment.map((item) => Chip(
+                        label: Text(item),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                        visualDensity: VisualDensity.compact,
+                      )).toList(),
+                    ),
                   ],
-                ),
-                const SizedBox(height: 16),
-
-                // Metadata row
-                Row(
-                  children: [
-                    if (recipe.serves != null && recipe.serves!.isNotEmpty) ...[
-                      Icon(Icons.people, size: 18, color: theme.colorScheme.onSurfaceVariant),
-                      const SizedBox(width: 4),
-                      Text(recipe.serves!, style: theme.textTheme.bodyMedium),
-                      const SizedBox(width: 16),
-                    ],
-                    if (recipe.time != null && recipe.time!.isNotEmpty) ...[
-                      Icon(Icons.schedule, size: 18, color: theme.colorScheme.onSurfaceVariant),
-                      const SizedBox(width: 4),
-                      Text(recipe.time!, style: theme.textTheme.bodyMedium),
-                      const SizedBox(width: 16),
-                    ],
-                    if (recipe.difficulty != null && recipe.difficulty!.isNotEmpty) ...[
-                      Icon(Icons.trending_up, size: 18, color: theme.colorScheme.onSurfaceVariant),
-                      const SizedBox(width: 4),
-                      Text(recipe.difficulty!, style: theme.textTheme.bodyMedium),
-                    ],
-                  ],
-                ),
-
-                // Equipment section (shown first, before ingredients)
-                if (recipe.equipment.isNotEmpty) ...[
-                  const SizedBox(height: 24),
-                  _buildEquipmentSection(theme, recipe.equipment),
                 ],
-
-                // Ingredients section
-                if (recipe.ingredients.isNotEmpty) ...[
-                  const SizedBox(height: 24),
-                  _buildIngredientsSection(theme, recipe.ingredients),
-                ],
-
-                // Directions section
-                if (recipe.directions.isNotEmpty) ...[
-                  const SizedBox(height: 24),
-                  _buildDirectionsSection(theme, recipe.directions),
-                ],
-
-                // Science notes
-                if (recipe.scienceNotes != null && recipe.scienceNotes!.isNotEmpty) ...[
-                  const SizedBox(height: 24),
-                  _buildScienceNotesSection(theme, recipe.scienceNotes!),
-                ],
-
-                // Notes
-                if (recipe.notes != null && recipe.notes!.isNotEmpty) ...[
-                  const SizedBox(height: 24),
-                  _buildNotesSection(theme, recipe.notes!),
-                ],
-
-                // Source URL
-                if (recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty) ...[
-                  const SizedBox(height: 24),
-                  _buildSourceSection(theme, recipe.sourceUrl!),
-                ],
-
-                const SizedBox(height: 32),
-              ]),
+              ),
             ),
           ),
+
+          // Ingredients and Directions - side by side like Mains
+          SliverToBoxAdapter(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final useSideBySide = constraints.maxWidth > 600;
+
+                if (useSideBySide) {
+                  return Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Ingredients on the left
+                        Expanded(
+                          flex: 2,
+                          child: Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Ingredients',
+                                    style: theme.textTheme.titleLarge?.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 12),
+                                  _buildIngredientsList(theme, recipe.ingredients),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        // Directions on the right
+                        Expanded(
+                          flex: 3,
+                          child: Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Directions',
+                                    style: theme.textTheme.titleLarge?.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 12),
+                                  _buildDirectionsList(theme, recipe.directions),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }
+
+                // Stacked layout for narrow screens
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 8),
+                      Text(
+                        'Ingredients',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      _buildIngredientsList(theme, recipe.ingredients),
+                      const SizedBox(height: 24),
+                      Text(
+                        'Directions',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      _buildDirectionsList(theme, recipe.directions),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+
+          // Comments section (at bottom, after recipe content) - matches Mains "Comments"
+          if (recipe.notes != null && recipe.notes!.isNotEmpty)
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.comment, size: 20, color: theme.colorScheme.primary),
+                            const SizedBox(width: 8),
+                            Text(
+                              'Comments',
+                              style: theme.textTheme.titleMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 12),
+                        Text(recipe.notes!),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+          // Bottom padding
+          const SliverToBoxAdapter(
+            child: SizedBox(height: 32),
+          ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
-          ref.invalidate(modernistRecipeProvider(widget.recipeId));
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Marked as made!')),
-          );
-        },
-        backgroundColor: MemoixColors.modernist,
-        icon: const Icon(Icons.check),
-        label: const Text('I Made This'),
       ),
     );
   }
 
-  Widget _buildImage(String source) {
+  Widget _buildIngredientsList(ThemeData theme, List<ModernistIngredient> ingredients) {
+    if (ingredients.isEmpty) {
+      return const Text(
+        'No ingredients listed',
+        style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+      );
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: ingredients.asMap().entries.map((entry) {
+        final index = entry.key;
+        final ingredient = entry.value;
+        final isChecked = _checkedIngredients.contains(index);
+
+        return InkWell(
+          onTap: () {
+            setState(() {
+              if (isChecked) {
+                _checkedIngredients.remove(index);
+              } else {
+                _checkedIngredients.add(index);
+              }
+            });
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Checkbox
+                SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: Checkbox(
+                    value: isChecked,
+                    onChanged: (value) {
+                      setState(() {
+                        if (value == true) {
+                          _checkedIngredients.add(index);
+                        } else {
+                          _checkedIngredients.remove(index);
+                        }
+                      });
+                    },
+                    visualDensity: VisualDensity.compact,
+                  ),
+                ),
+                const SizedBox(width: 8),
+
+                // Ingredient name
+                Text(
+                  ingredient.name,
+                  style: TextStyle(
+                    decoration: isChecked ? TextDecoration.lineThrough : null,
+                    color: isChecked
+                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        : null,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+
+                // Amount
+                if (ingredient.displayText != ingredient.name) ...[
+                  const SizedBox(width: 8),
+                  Text(
+                    ingredient.displayText.replaceFirst(ingredient.name, '').trim(),
+                    style: TextStyle(
+                      decoration: isChecked ? TextDecoration.lineThrough : null,
+                      color: isChecked
+                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          : theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                ],
+
+                // Notes
+                Expanded(
+                  child: ingredient.notes != null && ingredient.notes!.isNotEmpty
+                      ? Text(
+                          ingredient.notes!,
+                          style: TextStyle(
+                            decoration: isChecked ? TextDecoration.lineThrough : null,
+                            color: isChecked
+                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                : theme.colorScheme.primary,
+                            fontStyle: FontStyle.italic,
+                          ),
+                          textAlign: TextAlign.right,
+                        )
+                      : const SizedBox.shrink(),
+                ),
+              ],
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildDirectionsList(ThemeData theme, List<String> directions) {
+    if (directions.isEmpty) {
+      return const Text(
+        'No directions listed',
+        style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+      );
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: directions.asMap().entries.map((entry) {
+        final index = entry.key;
+        final direction = entry.value;
+        final isCompleted = _completedDirections.contains(index);
+
+        return InkWell(
+          onTap: () => setState(() {
+            if (isCompleted) {
+              _completedDirections.remove(index);
+            } else {
+              _completedDirections.add(index);
+            }
+          }),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 28,
+                  height: 28,
+                  decoration: BoxDecoration(
+                    color: isCompleted
+                        ? theme.colorScheme.secondary.withOpacity(0.2)
+                        : theme.colorScheme.secondary.withOpacity(0.15),
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: theme.colorScheme.secondary,
+                      width: 1.5,
+                    ),
+                  ),
+                  child: Center(
+                    child: isCompleted
+                        ? Icon(Icons.check, size: 16, color: theme.colorScheme.secondary)
+                        : Text(
+                            '${index + 1}',
+                            style: TextStyle(
+                              color: theme.colorScheme.secondary,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                            ),
+                          ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    direction,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      decoration: isCompleted ? TextDecoration.lineThrough : null,
+                      color: isCompleted ? theme.colorScheme.onSurfaceVariant : null,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildSingleImage(String source) {
     final isLocal = !source.startsWith('http');
     return isLocal
         ? Image.file(File(source), fit: BoxFit.cover)
         : Image.network(
             source,
             fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(
-              color: MemoixColors.modernist.withOpacity(0.3),
-            ),
+            errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
           );
   }
 
-  Widget _buildEquipmentSection(ThemeData theme, List<String> equipment) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Icon(Icons.build_outlined, size: 20, color: MemoixColors.modernist),
-            const SizedBox(width: 8),
-            Text(
-              'Special Equipment',
-              style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: MemoixColors.modernist.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: MemoixColors.modernist.withOpacity(0.3)),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: equipment.map((item) => Padding(
-              padding: const EdgeInsets.symmetric(vertical: 4),
-              child: Row(
-                children: [
-                  Icon(Icons.check_circle_outline, size: 18, color: MemoixColors.modernist),
-                  const SizedBox(width: 8),
-                  Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
-                ],
-              ),
-            )).toList(),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildIngredientsSection(ThemeData theme, List<ModernistIngredient> ingredients) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Ingredients',
-          style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 12),
-        ...ingredients.map((ingredient) => Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 6,
-                height: 6,
-                margin: const EdgeInsets.only(top: 6),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.primary,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      ingredient.displayText,
-                      style: theme.textTheme.bodyMedium,
-                    ),
-                    if (ingredient.notes != null && ingredient.notes!.isNotEmpty)
-                      Text(
-                        ingredient.notes!,
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
-                          fontStyle: FontStyle.italic,
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        )),
-      ],
-    );
-  }
-
-  Widget _buildDirectionsSection(ThemeData theme, List<String> directions) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Directions',
-          style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 12),
-        ...directions.asMap().entries.map((entry) {
-          final index = entry.key;
-          final direction = entry.value;
-          final isCompleted = _completedDirections.contains(index);
-
-          return InkWell(
-            onTap: () => setState(() {
-              if (isCompleted) {
-                _completedDirections.remove(index);
-              } else {
-                _completedDirections.add(index);
-              }
-            }),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 28,
-                    height: 28,
-                    decoration: BoxDecoration(
-                      color: isCompleted
-                          ? theme.colorScheme.secondary.withOpacity(0.2)
-                          : theme.colorScheme.secondary.withOpacity(0.15),
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: theme.colorScheme.secondary,
-                        width: 1.5,
-                      ),
-                    ),
-                    child: Center(
-                      child: isCompleted
-                          ? Icon(Icons.check, size: 16, color: theme.colorScheme.secondary)
-                          : Text(
-                              '${index + 1}',
-                              style: TextStyle(
-                                color: theme.colorScheme.secondary,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                              ),
-                            ),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      direction,
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        decoration: isCompleted ? TextDecoration.lineThrough : null,
-                        color: isCompleted ? theme.colorScheme.onSurfaceVariant : null,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }),
-      ],
-    );
-  }
-
-  Widget _buildScienceNotesSection(ThemeData theme, String scienceNotes) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Icon(Icons.science, size: 20, color: Colors.purple),
-            const SizedBox(width: 8),
-            Text(
-              'The Science',
-              style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: Colors.purple.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Text(scienceNotes, style: theme.textTheme.bodyMedium),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildNotesSection(ThemeData theme, String notes) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Icon(Icons.notes, size: 20, color: theme.colorScheme.onSurfaceVariant),
-            const SizedBox(width: 8),
-            Text(
-              'Notes',
-              style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-        Text(notes, style: theme.textTheme.bodyMedium),
-      ],
-    );
-  }
-
-  Widget _buildSourceSection(ThemeData theme, String sourceUrl) {
-    return InkWell(
-      onTap: () => launchUrl(Uri.parse(sourceUrl)),
-      child: Row(
-        children: [
-          Icon(Icons.link, size: 18, color: theme.colorScheme.primary),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              sourceUrl,
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.primary,
-                decoration: TextDecoration.underline,
-              ),
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
-        ],
-      ),
-    );
+  Widget _buildImageCarousel(List<String> images) {
+    return _ImageCarousel(images: images);
   }
 
   void _handleMenuAction(String action, ModernistRecipe recipe) async {
@@ -482,6 +567,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               ),
               TextButton(
                 onPressed: () => Navigator.pop(ctx, true),
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(ctx).colorScheme.secondary,
+                ),
                 child: const Text('Delete'),
               ),
             ],
@@ -496,54 +584,111 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 }
 
-class _TypeBadge extends StatelessWidget {
-  final ModernistType type;
+/// Simple carousel widget for recipe images
+class _ImageCarousel extends StatefulWidget {
+  final List<String> images;
 
-  const _TypeBadge({required this.type});
+  const _ImageCarousel({required this.images});
 
   @override
-  Widget build(BuildContext context) {
-    final color = type == ModernistType.technique ? Colors.purple : Colors.teal;
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: color.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withOpacity(0.5)),
-      ),
-      child: Text(
-        type.displayName,
-        style: TextStyle(color: color, fontWeight: FontWeight.w600),
-      ),
-    );
-  }
+  State<_ImageCarousel> createState() => _ImageCarouselState();
 }
 
-class _TechniqueBadge extends StatelessWidget {
-  final String technique;
+class _ImageCarouselState extends State<_ImageCarousel> {
+  late final PageController _pageController;
+  int _currentPage = 0;
 
-  const _TechniqueBadge({required this.technique});
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: MemoixColors.modernist.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: MemoixColors.modernist.withOpacity(0.5)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(Icons.science, size: 16, color: MemoixColors.modernist),
-          const SizedBox(width: 4),
-          Text(
-            'Science Notes',
-            style: TextStyle(color: MemoixColors.modernist, fontWeight: FontWeight.w600),
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        PageView.builder(
+          controller: _pageController,
+          itemCount: widget.images.length,
+          onPageChanged: (index) => setState(() => _currentPage = index),
+          itemBuilder: (context, index) {
+            final source = widget.images[index];
+            final isLocalFile = !source.startsWith('http');
+            return isLocalFile
+                ? Image.file(
+                    File(source),
+                    fit: BoxFit.cover,
+                    errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
+                  )
+                : Image.network(
+                    source,
+                    fit: BoxFit.cover,
+                    errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
+                  );
+          },
+        ),
+
+        // Page indicator badge (top right)
+        Positioned(
+          top: 48,
+          right: 8,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              '${_currentPage + 1}/${widget.images.length}',
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           ),
-        ],
-      ),
+        ),
+
+        // Page indicators (bottom)
+        Positioned(
+          bottom: 60,
+          left: 0,
+          right: 0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: List.generate(
+              widget.images.length,
+              (index) => AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                width: index == _currentPage ? 24 : 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: index == _currentPage
+                      ? Colors.white
+                      : Colors.white.withOpacity(0.5),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.3),
+                      blurRadius: 4,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
