@@ -4,7 +4,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
 import '../models/category.dart';
-import '../models/continent_mapping.dart';
+import '../models/cuisine.dart';
 import '../models/recipe.dart';
 
 /// Repository for recipe data operations
@@ -175,34 +175,45 @@ class RecipeRepository {
         .courseEqualTo(course, caseSensitive: false)
         .watch(fireImmediately: true)
         .map((recipes) {
-          // Sort by: 1) Cuisine region, 2) Country, 3) Province/style, 4) Recipe name
-          final regionOrder = ContinentMapping.allContinents.skip(1).toList(); // Skip 'All'
+          // Define continent order for sorting
+          const continentOrder = [
+            'Asian',
+            'Caribbean', 
+            'European',
+            'Middle Eastern',
+            'African',
+            'North American',
+            'Central American',
+            'South American',
+            'Oceanian',
+          ];
           
+          // Sort by: 1) Continent, 2) Country, 3) Subcategory (province), 4) Recipe name
           recipes.sort((a, b) {
-            // 1. Compare by cuisine region
-            final aRegion = ContinentMapping.getContinentFromCuisine(a.cuisine);
-            final bRegion = ContinentMapping.getContinentFromCuisine(b.cuisine);
+            // 1. Compare by continent
+            final aCont = Cuisine.continentFor(a.cuisine);
+            final bCont = Cuisine.continentFor(b.cuisine);
             
-            final aRegionIndex = aRegion != null ? regionOrder.indexOf(aRegion) : regionOrder.length;
-            final bRegionIndex = bRegion != null ? regionOrder.indexOf(bRegion) : regionOrder.length;
-            final aOrder = aRegionIndex == -1 ? regionOrder.length : aRegionIndex;
-            final bOrder = bRegionIndex == -1 ? regionOrder.length : bRegionIndex;
+            final aContIndex = aCont != null ? continentOrder.indexOf(aCont) : continentOrder.length;
+            final bContIndex = bCont != null ? continentOrder.indexOf(bCont) : continentOrder.length;
+            final aOrder = aContIndex == -1 ? continentOrder.length : aContIndex;
+            final bOrder = bContIndex == -1 ? continentOrder.length : bContIndex;
             
             if (aOrder != bOrder) {
               return aOrder.compareTo(bOrder);
             }
             
-            // 2. Same region, compare by country
-            final aCountry = ContinentMapping.getCountryFromCuisine(a.cuisine) ?? '';
-            final bCountry = ContinentMapping.getCountryFromCuisine(b.cuisine) ?? '';
+            // 2. Same continent, compare by country name
+            final aCountry = Cuisine.toAdjective(a.cuisine);
+            final bCountry = Cuisine.toAdjective(b.cuisine);
             
             if (aCountry != bCountry) {
               return aCountry.toLowerCase().compareTo(bCountry.toLowerCase());
             }
             
-            // 3. Same country, compare by province/style
-            final aProvince = ContinentMapping.getProvinceFromCuisine(a.cuisine) ?? '';
-            final bProvince = ContinentMapping.getProvinceFromCuisine(b.cuisine) ?? '';
+            // 3. Same country, compare by subcategory (province/region)
+            final aProvince = a.subcategory ?? '';
+            final bProvince = b.subcategory ?? '';
             
             if (aProvince != bProvince) {
               return aProvince.toLowerCase().compareTo(bProvince.toLowerCase());
