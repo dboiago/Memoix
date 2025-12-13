@@ -658,15 +658,7 @@ class UrlRecipeImporter {
     }
     
     if (totalMinutes > 0) {
-      final hours = totalMinutes ~/ 60;
-      final mins = totalMinutes % 60;
-      if (hours > 0 && mins > 0) {
-        return '$hours hr $mins min';
-      } else if (hours > 0) {
-        return '$hours hr';
-      } else {
-        return '$mins min';
-      }
+      return _formatMinutes(totalMinutes);
     }
     
     return null;
@@ -674,18 +666,43 @@ class UrlRecipeImporter {
 
   int _parseDurationMinutes(dynamic value) {
     if (value == null) return 0;
-    final str = value.toString();
+    final str = value.toString().toLowerCase().trim();
     
     // Parse ISO 8601 duration (e.g., PT30M, PT1H30M)
-    final regex = RegExp(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?');
-    final match = regex.firstMatch(str);
+    final iso = RegExp(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?');
+    final isoMatch = iso.firstMatch(str);
     
-    if (match != null) {
-      final hours = int.tryParse(match.group(1) ?? '') ?? 0;
-      final minutes = int.tryParse(match.group(2) ?? '') ?? 0;
+    if (isoMatch != null) {
+      final hours = int.tryParse(isoMatch.group(1) ?? '') ?? 0;
+      final minutes = int.tryParse(isoMatch.group(2) ?? '') ?? 0;
       return hours * 60 + minutes;
     }
+
+    // Pure number => treat as minutes
+    final pureNumber = int.tryParse(str);
+    if (pureNumber != null) {
+      return pureNumber;
+    }
+
+    // Extract days/hours/minutes from textual formats (e.g., "6 hours 20 minutes", "380 min")
+    final daysMatch = RegExp(r'(\d+)\s*days?').firstMatch(str);
+    final hoursMatch = RegExp(r'(\d+)\s*(hours?|hrs?|h)').firstMatch(str);
+    final minsMatch = RegExp(r'(\d+)\s*(minutes?|mins?|min|m)').firstMatch(str);
+    int days = 0, hours = 0, minutes = 0;
+    if (daysMatch != null) {
+      days = int.tryParse(daysMatch.group(1) ?? '') ?? 0;
+    }
+    if (hoursMatch != null) {
+      hours = int.tryParse(hoursMatch.group(1) ?? '') ?? 0;
+    }
+    if (minsMatch != null) {
+      minutes = int.tryParse(minsMatch.group(1) ?? '') ?? 0;
+    }
     
+    if (days > 0 || hours > 0 || minutes > 0) {
+      return days * 1440 + hours * 60 + minutes;
+    }
+
     return 0;
   }
 
