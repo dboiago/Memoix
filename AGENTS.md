@@ -225,6 +225,22 @@ Official recipes are stored as JSON in `/recipes/`:
 
 ## Common Tasks
 
+## UI Consistency Constraint (Standing)
+
+The Mains screen defines the canonical layout, spacing, color usage,
+and component hierarchy for the application.
+
+All other screens (Cuisine, Recipe, Edit, etc.) MUST strictly follow
+this pattern.
+
+- Do not introduce layout, spacing, color, or stylistic changes
+  unless explicitly instructed by the user.
+- Do not "improve", "refine", or reinterpret the design.
+- If a deviation seems beneficial, ask before applying it.
+
+This constraint applies to all future UI-related work unless the user
+explicitly revokes it.
+
 ### Adding a New Feature
 1. Create folder under `lib/features/`
 2. Add models, screens, widgets as needed
