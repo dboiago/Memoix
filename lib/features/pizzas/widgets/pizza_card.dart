@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
-import '../../../app/theme/colors.dart';
 
 /// Pizza card widget for list display
 /// Matches RecipeCard styling with hover effects, favorite and cooked icons
@@ -74,7 +73,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                         Text(
                           '\u2022',
                           style: TextStyle(
-                            color: MemoixColors.pizzas,
+                            color: theme.colorScheme.secondary,
                             fontSize: 16,
                           ),
                         ),

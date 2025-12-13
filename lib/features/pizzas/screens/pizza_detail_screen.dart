@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
+import '../../sharing/services/share_service.dart';
 
 /// Pizza detail screen - displays pizza info with cheeses, toppings, and notes
 class PizzaDetailScreen extends ConsumerWidget {
@@ -75,31 +75,63 @@ class _PizzaDetailView extends ConsumerWidget {
                 icon: Icon(
                   pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: pizza.isFavorite ? Colors.red : null,
+                  shadows: pizza.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
                 ),
                 onPressed: () {
                   ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
                 },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.check_circle_outline,
+                  shadows: pizza.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
+                tooltip: 'I made this',
+                onPressed: () async {
+                  await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Logged cook for ${pizza.name}!'),
+                      ),
+                    );
+                  }
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.share,
+                  shadows: pizza.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
+                onPressed: () => _sharePizza(context, ref, pizza),
               ),
               PopupMenuButton<String>(
                 onSelected: (value) => _handleMenuAction(context, ref, value),
                 itemBuilder: (context) => [
                   const PopupMenuItem(
                     value: 'edit',
-                    child: ListTile(
-                      leading: Icon(Icons.edit),
-                      title: Text('Edit'),
-                      contentPadding: EdgeInsets.zero,
-                    ),
+                    child: Text('Edit'),
                   ),
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: 'delete',
-                    child: ListTile(
-                      leading: Icon(Icons.delete),
-                      title: Text('Delete'),
-                      contentPadding: EdgeInsets.zero,
+                    child: Text(
+                      'Delete',
+                      style: TextStyle(color: theme.colorScheme.error),
                     ),
                   ),
                 ],
+                icon: Icon(
+                  Icons.more_vert,
+                  shadows: pizza.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
               ),
             ],
           ),
@@ -115,26 +147,19 @@ class _PizzaDetailView extends ConsumerWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: MemoixColors.pizzas.withOpacity(0.15),
+                      color: theme.colorScheme.secondary.withOpacity(0.15),
                       borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: theme.colorScheme.secondary,
+                        width: 1,
+                      ),
                     ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.local_pizza,
-                          size: 18,
-                          color: MemoixColors.pizzas,
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          '${pizza.base.displayName} Base',
-                          style: theme.textTheme.titleSmall?.copyWith(
-                            color: MemoixColors.pizzas,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ],
+                    child: Text(
+                      pizza.base.displayName,
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        color: theme.colorScheme.secondary,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 24),
@@ -194,8 +219,6 @@ class _PizzaDetailView extends ConsumerWidget {
         onPressed: () => AppRoutes.toPizzaEdit(context, pizzaId: pizza.uuid),
         icon: const Icon(Icons.edit),
         label: const Text('Edit'),
-        backgroundColor: MemoixColors.pizzas,
-        foregroundColor: Colors.white,
       ),
     );
   }
@@ -203,16 +226,7 @@ class _PizzaDetailView extends ConsumerWidget {
   Widget _buildHeaderBackground(ThemeData theme) {
     if (pizza.imageUrl == null) {
       return Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              MemoixColors.pizzas.withOpacity(0.6),
-              MemoixColors.pizzas.withOpacity(0.3),
-            ],
-          ),
-        ),
+        color: theme.colorScheme.surfaceContainerHighest,
       );
     }
 
@@ -308,5 +322,72 @@ class _PizzaDetailView extends ConsumerWidget {
         }
         break;
     }
+  }
+
+  void _sharePizza(BuildContext context, WidgetRef ref, Pizza pizza) {
+    final shareService = ref.read(shareServiceProvider);
+    final theme = Theme.of(context);
+    
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Share "${pizza.name}"',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.qr_code, color: theme.colorScheme.primary),
+              title: const Text('Show QR Code'),
+              subtitle: const Text('Others can scan to import'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.showPizzaQrCode(context, pizza);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.share, color: theme.colorScheme.primary),
+              title: const Text('Share Link'),
+              subtitle: const Text('Send via any app'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.sharePizza(pizza);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.content_copy, color: theme.colorScheme.primary),
+              title: const Text('Copy Link'),
+              subtitle: const Text('Copy to clipboard'),
+              onTap: () async {
+                Navigator.pop(ctx);
+                await shareService.copyPizzaShareLink(pizza);
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Link copied to clipboard!')),
+                  );
+                }
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.text_snippet, color: theme.colorScheme.primary),
+              title: const Text('Share as Text'),
+              subtitle: const Text('Full recipe in plain text'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.sharePizzaAsText(pizza);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
   }
 }

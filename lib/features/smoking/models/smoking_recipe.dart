@@ -158,4 +158,46 @@ class SmokingRecipe {
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
   }
+
+  /// Convert to JSON (for sharing/export)
+  Map<String, dynamic> toJson() {
+    return {
+      'uuid': uuid,
+      'name': name,
+      'temperature': temperature,
+      'time': time,
+      'wood': wood,
+      'seasonings': seasonings.map((s) => {
+        'name': s.name,
+        'amount': s.amount,
+        'unit': s.unit,
+      }).toList(),
+      'directions': directions,
+      'notes': notes,
+      'imageUrl': imageUrl,
+      'isFavorite': isFavorite,
+      'cookCount': cookCount,
+      'source': source.name,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
+    };
+  }
+
+  /// Create a shareable copy (removes personal metadata)
+  Map<String, dynamic> toShareableJson() {
+    return {
+      'uuid': uuid,
+      'name': name,
+      'temperature': temperature,
+      'time': time,
+      'wood': wood,
+      'seasonings': seasonings.map((s) => {
+        'name': s.name,
+        'amount': s.amount,
+        'unit': s.unit,
+      }).toList(),
+      'directions': directions,
+      'notes': notes,
+    };
+  }
 }

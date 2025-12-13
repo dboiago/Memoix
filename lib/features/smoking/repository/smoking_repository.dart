@@ -48,17 +48,23 @@ class SmokingRepository {
   }
 
   /// Toggle favorite status
-  Future<void> toggleFavorite(SmokingRecipe recipe) async {
-    recipe.isFavorite = !recipe.isFavorite;
-    recipe.updatedAt = DateTime.now();
-    await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+  Future<void> toggleFavorite(String uuid) async {
+    final recipe = await getRecipeByUuid(uuid);
+    if (recipe != null) {
+      recipe.isFavorite = !recipe.isFavorite;
+      recipe.updatedAt = DateTime.now();
+      await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+    }
   }
 
   /// Increment cook count
-  Future<void> incrementCookCount(SmokingRecipe recipe) async {
-    recipe.cookCount += 1;
-    recipe.updatedAt = DateTime.now();
-    await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+  Future<void> incrementCookCount(String uuid) async {
+    final recipe = await getRecipeByUuid(uuid);
+    if (recipe != null) {
+      recipe.cookCount += 1;
+      recipe.updatedAt = DateTime.now();
+      await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+    }
   }
 
   /// Watch all recipes

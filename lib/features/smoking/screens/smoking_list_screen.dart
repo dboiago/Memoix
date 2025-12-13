@@ -58,22 +58,90 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
 
           return Column(
             children: [
-              // Search bar
+              // Search bar with autocomplete
               Padding(
                 padding: const EdgeInsets.all(16),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search smoking recipes...',
-                    prefixIcon: const Icon(Icons.search),
-                    filled: true,
-                    fillColor: theme.colorScheme.surfaceContainerHighest,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
-                  onChanged: (value) {
-                    setState(() => _searchQuery = value.toLowerCase());
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return const Iterable<String>.empty();
+                    }
+                    final query = textEditingValue.text.toLowerCase();
+                    // Get matching recipe names, woods, or seasonings
+                    final matches = <String>{};
+                    for (final recipe in recipes) {
+                      if (recipe.name.toLowerCase().contains(query)) {
+                        matches.add(recipe.name);
+                      }
+                      if (recipe.wood.toLowerCase().contains(query)) {
+                        matches.add(recipe.wood);
+                      }
+                      for (final seasoning in recipe.seasonings) {
+                        if (seasoning.name.toLowerCase().contains(query)) {
+                          matches.add(seasoning.name);
+                        }
+                      }
+                    }
+                    return matches.take(8).toList();
+                  },
+                  onSelected: (selection) {
+                    setState(() => _searchQuery = selection.toLowerCase());
+                  },
+                  fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
+                    return TextField(
+                      controller: textController,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: 'Search smoking recipes...',
+                        prefixIcon: const Icon(Icons.search),
+                        suffixIcon: textController.text.isNotEmpty
+                            ? IconButton(
+                                icon: const Icon(Icons.clear),
+                                onPressed: () {
+                                  textController.clear();
+                                  setState(() => _searchQuery = '');
+                                },
+                              )
+                            : null,
+                        filled: true,
+                        fillColor: theme.colorScheme.surfaceContainerHighest,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                      onChanged: (value) {
+                        setState(() => _searchQuery = value.toLowerCase());
+                      },
+                    );
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return Align(
+                      alignment: Alignment.topLeft,
+                      child: Material(
+                        elevation: 4,
+                        borderRadius: BorderRadius.circular(8),
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 200,
+                            maxWidth: MediaQuery.of(context).size.width - 32,
+                          ),
+                          child: ListView.builder(
+                            padding: EdgeInsets.zero,
+                            shrinkWrap: true,
+                            itemCount: options.length,
+                            itemBuilder: (context, index) {
+                              final option = options.elementAt(index);
+                              return ListTile(
+                                dense: true,
+                                title: Text(option),
+                                onTap: () => onSelected(option),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    );
                   },
                 ),
               ),

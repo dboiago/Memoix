@@ -11,7 +11,7 @@ enum PizzaSource {
 
 /// Available pizza base sauces
 enum PizzaBase {
-  tomato,
+  marinara,
   oil,
   pesto,
   cream,
@@ -19,7 +19,6 @@ enum PizzaBase {
   buffalo,
   alfredo,
   garlic,
-  marinara,
   none,
 }
 
@@ -27,8 +26,8 @@ extension PizzaBaseExtension on PizzaBase {
   /// Display name for the base
   String get displayName {
     switch (this) {
-      case PizzaBase.tomato:
-        return 'Tomato';
+      case PizzaBase.marinara:
+        return 'Marinara';
       case PizzaBase.oil:
         return 'Oil';
       case PizzaBase.pesto:
@@ -36,15 +35,13 @@ extension PizzaBaseExtension on PizzaBase {
       case PizzaBase.cream:
         return 'Cream';
       case PizzaBase.bbq:
-        return 'BBQ Sauce';
+        return 'BBQ';
       case PizzaBase.buffalo:
         return 'Buffalo';
       case PizzaBase.alfredo:
         return 'Alfredo';
       case PizzaBase.garlic:
         return 'Garlic Butter';
-      case PizzaBase.marinara:
-        return 'Marinara';
       case PizzaBase.none:
         return 'No Sauce';
     }
@@ -52,11 +49,11 @@ extension PizzaBaseExtension on PizzaBase {
 
   /// Parse base from string (for JSON import)
   static PizzaBase fromString(String? value) {
-    if (value == null || value.isEmpty) return PizzaBase.tomato;
+    if (value == null || value.isEmpty) return PizzaBase.marinara;
     final lower = value.toLowerCase().trim();
     
     // Handle common variations
-    if (lower.contains('tomato') || lower == 'red') return PizzaBase.tomato;
+    if (lower.contains('marinara') || lower.contains('tomato') || lower == 'red') return PizzaBase.marinara;
     if (lower.contains('oil') || lower == 'evoo' || lower == 'olive') return PizzaBase.oil;
     if (lower.contains('pesto')) return PizzaBase.pesto;
     if (lower.contains('cream') || lower == 'white') return PizzaBase.cream;
@@ -64,10 +61,9 @@ extension PizzaBaseExtension on PizzaBase {
     if (lower.contains('buffalo') || lower.contains('hot sauce')) return PizzaBase.buffalo;
     if (lower.contains('alfredo')) return PizzaBase.alfredo;
     if (lower.contains('garlic')) return PizzaBase.garlic;
-    if (lower.contains('marinara')) return PizzaBase.marinara;
     if (lower == 'none' || lower == 'no sauce') return PizzaBase.none;
     
-    return PizzaBase.tomato; // Default
+    return PizzaBase.marinara; // Default
   }
 }
 
@@ -85,7 +81,7 @@ class Pizza {
 
   /// Base sauce type
   @Enumerated(EnumType.name)
-  PizzaBase base = PizzaBase.tomato;
+  PizzaBase base = PizzaBase.marinara;
 
   /// List of cheeses (e.g., "Mozzarella", "Parmesan", "Goat Cheese")
   List<String> cheeses = [];
@@ -130,7 +126,7 @@ class Pizza {
   Pizza.create({
     required this.uuid,
     required this.name,
-    this.base = PizzaBase.tomato,
+    this.base = PizzaBase.marinara,
     this.cheeses = const [],
     this.toppings = const [],
     this.notes,

@@ -6,67 +6,68 @@ class Spirit {
   final String code;       // Short code (e.g., 'GIN', 'VODKA')
   final String name;       // Display name (e.g., 'Gin', 'Vodka')
   final String category;   // Grouping (e.g., 'Spirits', 'Wine', 'Non-Alcoholic')
-  final String icon;       // Emoji representation
   final Color colour;      // Associated color for UI
 
   const Spirit({
     required this.code,
     required this.name,
     required this.category,
-    required this.icon,
     required this.colour,
   });
+
+  /// Check if this spirit is alcoholic
+  bool get isAlcoholic => category != 'Non-Alcoholic';
 
   /// All spirits organized by category
   /// Categories: Spirits (base liquors), Wine/Fortified, Beer, Non-Alcoholic
   static List<Spirit> get all => [
     // === SPIRITS (Base Liquors) ===
-    const Spirit(code: 'GIN', name: 'Gin', category: 'Spirits', icon: '🍸', colour: Color(0xFF7EB8C4)),
-    const Spirit(code: 'VODKA', name: 'Vodka', category: 'Spirits', icon: '🍸', colour: Color(0xFFB8C4D4)),
-    const Spirit(code: 'WHISKEY', name: 'Whiskey', category: 'Spirits', icon: '🥃', colour: Color(0xFFD4A574)),
-    const Spirit(code: 'BOURBON', name: 'Bourbon', category: 'Spirits', icon: '🥃', colour: Color(0xFFBF8A54)),
-    const Spirit(code: 'RYE', name: 'Rye', category: 'Spirits', icon: '🥃', colour: Color(0xFFC49A6C)),
-    const Spirit(code: 'SCOTCH', name: 'Scotch', category: 'Spirits', icon: '🥃', colour: Color(0xFFB08050)),
-    const Spirit(code: 'RUM', name: 'Rum', category: 'Spirits', icon: '🍹', colour: Color(0xFFD4956E)),
-    const Spirit(code: 'TEQUILA', name: 'Tequila', category: 'Spirits', icon: '🍹', colour: Color(0xFFE8C878)),
-    const Spirit(code: 'MEZCAL', name: 'Mezcal', category: 'Spirits', icon: '🍹', colour: Color(0xFFD4B878)),
-    const Spirit(code: 'BRANDY', name: 'Brandy', category: 'Spirits', icon: '🍷', colour: Color(0xFFC4876E)),
-    const Spirit(code: 'COGNAC', name: 'Cognac', category: 'Spirits', icon: '🍷', colour: Color(0xFFB47858)),
-    const Spirit(code: 'PISCO', name: 'Pisco', category: 'Spirits', icon: '🍸', colour: Color(0xFFE8D8A8)),
-    const Spirit(code: 'CACHACA', name: 'Cachaça', category: 'Spirits', icon: '🍹', colour: Color(0xFFD8C888)),
-    const Spirit(code: 'ABSINTHE', name: 'Absinthe', category: 'Spirits', icon: '🍸', colour: Color(0xFF8EB878)),
-    const Spirit(code: 'AQUAVIT', name: 'Aquavit', category: 'Spirits', icon: '🍸', colour: Color(0xFFA8C4B8)),
-    const Spirit(code: 'SAKE', name: 'Sake', category: 'Spirits', icon: '🍶', colour: Color(0xFFF0E8D8)),
-    const Spirit(code: 'SOJU', name: 'Soju', category: 'Spirits', icon: '🍶', colour: Color(0xFFE8F0E8)),
+    const Spirit(code: 'GIN', name: 'Gin', category: 'Spirits', colour: Color(0xFF7EB8C4)),
+    const Spirit(code: 'VODKA', name: 'Vodka', category: 'Spirits', colour: Color(0xFFB8C4D4)),
+    const Spirit(code: 'WHISKEY', name: 'Whiskey', category: 'Spirits', colour: Color(0xFFD4A574)),
+    const Spirit(code: 'BOURBON', name: 'Bourbon', category: 'Spirits', colour: Color(0xFFBF8A54)),
+    const Spirit(code: 'RYE', name: 'Rye', category: 'Spirits', colour: Color(0xFFC49A6C)),
+    const Spirit(code: 'SCOTCH', name: 'Scotch', category: 'Spirits', colour: Color(0xFFB08050)),
+    const Spirit(code: 'RUM', name: 'Rum', category: 'Spirits', colour: Color(0xFFD4956E)),
+    const Spirit(code: 'TEQUILA', name: 'Tequila', category: 'Spirits', colour: Color(0xFFE8C878)),
+    const Spirit(code: 'MEZCAL', name: 'Mezcal', category: 'Spirits', colour: Color(0xFFD4B878)),
+    const Spirit(code: 'BRANDY', name: 'Brandy', category: 'Spirits', colour: Color(0xFFC4876E)),
+    const Spirit(code: 'COGNAC', name: 'Cognac', category: 'Spirits', colour: Color(0xFFB47858)),
+    const Spirit(code: 'PISCO', name: 'Pisco', category: 'Spirits', colour: Color(0xFFE8D8A8)),
+    const Spirit(code: 'CACHACA', name: 'Cachaça', category: 'Spirits', colour: Color(0xFFD8C888)),
+    const Spirit(code: 'ABSINTHE', name: 'Absinthe', category: 'Spirits', colour: Color(0xFF8EB878)),
+    const Spirit(code: 'AQUAVIT', name: 'Aquavit', category: 'Spirits', colour: Color(0xFFA8C4B8)),
+    const Spirit(code: 'SAKE', name: 'Sake', category: 'Spirits', colour: Color(0xFFF0E8D8)),
+    const Spirit(code: 'SOJU', name: 'Soju', category: 'Spirits', colour: Color(0xFFE8F0E8)),
     
     // === LIQUEURS & AMARI ===
-    const Spirit(code: 'LIQUEUR', name: 'Liqueur', category: 'Liqueurs', icon: '🍸', colour: Color(0xFFC898B8)),
-    const Spirit(code: 'AMARO', name: 'Amaro', category: 'Liqueurs', icon: '🍸', colour: Color(0xFF987858)),
-    const Spirit(code: 'APERITIF', name: 'Aperitif', category: 'Liqueurs', icon: '🍸', colour: Color(0xFFE87858)),
+    const Spirit(code: 'LIQUEUR', name: 'Liqueur', category: 'Liqueurs', colour: Color(0xFFC898B8)),
+    const Spirit(code: 'AMARO', name: 'Amaro', category: 'Liqueurs', colour: Color(0xFF987858)),
+    const Spirit(code: 'APERITIF', name: 'Aperitif', category: 'Liqueurs', colour: Color(0xFFE87858)),
     
     // === WINE & FORTIFIED ===
-    const Spirit(code: 'PROSECCO', name: 'Prosecco', category: 'Wine', icon: '🥂', colour: Color(0xFFF8E8A0)),
-    const Spirit(code: 'CHAMPAGNE', name: 'Champagne', category: 'Wine', icon: '🍾', colour: Color(0xFFF0E090)),
-    const Spirit(code: 'SPARKLING', name: 'Sparkling Wine', category: 'Wine', icon: '🥂', colour: Color(0xFFF0E8B0)),
-    const Spirit(code: 'RED_WINE', name: 'Red Wine', category: 'Wine', icon: '🍷', colour: Color(0xFF983058)),
-    const Spirit(code: 'WHITE_WINE', name: 'White Wine', category: 'Wine', icon: '🍷', colour: Color(0xFFF0E8C0)),
-    const Spirit(code: 'ROSE_WINE', name: 'Rosé Wine', category: 'Wine', icon: '🍷', colour: Color(0xFFF0B8B0)),
-    const Spirit(code: 'VERMOUTH', name: 'Vermouth', category: 'Wine', icon: '🍸', colour: Color(0xFFB89878)),
-    const Spirit(code: 'SHERRY', name: 'Sherry', category: 'Wine', icon: '🍷', colour: Color(0xFFC8A068)),
-    const Spirit(code: 'PORT', name: 'Port', category: 'Wine', icon: '🍷', colour: Color(0xFF882848)),
+    const Spirit(code: 'PROSECCO', name: 'Prosecco', category: 'Wine', colour: Color(0xFFF8E8A0)),
+    const Spirit(code: 'CHAMPAGNE', name: 'Champagne', category: 'Wine', colour: Color(0xFFF0E090)),
+    const Spirit(code: 'SPARKLING', name: 'Sparkling Wine', category: 'Wine', colour: Color(0xFFF0E8B0)),
+    const Spirit(code: 'RED_WINE', name: 'Red Wine', category: 'Wine', colour: Color(0xFF983058)),
+    const Spirit(code: 'WHITE_WINE', name: 'White Wine', category: 'Wine', colour: Color(0xFFF0E8C0)),
+    const Spirit(code: 'ROSE_WINE', name: 'Rosé Wine', category: 'Wine', colour: Color(0xFFF0B8B0)),
+    const Spirit(code: 'VERMOUTH', name: 'Vermouth', category: 'Wine', colour: Color(0xFFB89878)),
+    const Spirit(code: 'SHERRY', name: 'Sherry', category: 'Wine', colour: Color(0xFFC8A068)),
+    const Spirit(code: 'PORT', name: 'Port', category: 'Wine', colour: Color(0xFF882848)),
     
     // === BEER ===
-    const Spirit(code: 'BEER', name: 'Beer', category: 'Beer', icon: '🍺', colour: Color(0xFFD8A850)),
-    const Spirit(code: 'CIDER', name: 'Cider', category: 'Beer', icon: '🍺', colour: Color(0xFFD8C870)),
+    const Spirit(code: 'BEER', name: 'Beer', category: 'Beer', colour: Color(0xFFD8A850)),
+    const Spirit(code: 'CIDER', name: 'Cider', category: 'Beer', colour: Color(0xFFD8C870)),
     
     // === NON-ALCOHOLIC ===
-    const Spirit(code: 'TEA', name: 'Tea', category: 'Non-Alcoholic', icon: '🍵', colour: Color(0xFF8EB878)),
-    const Spirit(code: 'COFFEE', name: 'Coffee', category: 'Non-Alcoholic', icon: '☕', colour: Color(0xFF6F4E37)),
-    const Spirit(code: 'MOCKTAIL', name: 'Mocktail', category: 'Non-Alcoholic', icon: '🍹', colour: Color(0xFF7EB8A8)),
-    const Spirit(code: 'SMOOTHIE', name: 'Smoothie', category: 'Non-Alcoholic', icon: '🥤', colour: Color(0xFFF098A8)),
-    const Spirit(code: 'JUICE', name: 'Juice', category: 'Non-Alcoholic', icon: '🧃', colour: Color(0xFFF8A858)),
-    const Spirit(code: 'SODA', name: 'Soda/Tonic', category: 'Non-Alcoholic', icon: '🥤', colour: Color(0xFFA8D8E8)),
-    const Spirit(code: 'HOT_CHOC', name: 'Hot Chocolate', category: 'Non-Alcoholic', icon: '☕', colour: Color(0xFF8B5A2B)),
+    const Spirit(code: 'TEA', name: 'Tea', category: 'Non-Alcoholic', colour: Color(0xFF8EB878)),
+    const Spirit(code: 'COFFEE', name: 'Coffee', category: 'Non-Alcoholic', colour: Color(0xFF6F4E37)),
+    const Spirit(code: 'MOCKTAIL', name: 'Mocktail', category: 'Non-Alcoholic', colour: Color(0xFF7EB8A8)),
+    const Spirit(code: 'SMOOTHIE', name: 'Smoothie', category: 'Non-Alcoholic', colour: Color(0xFFF098A8)),
+    const Spirit(code: 'JUICE', name: 'Juice', category: 'Non-Alcoholic', colour: Color(0xFFF8A858)),
+    const Spirit(code: 'SODA', name: 'Soda/Tonic', category: 'Non-Alcoholic', colour: Color(0xFFA8D8E8)),
+    const Spirit(code: 'HOT_CHOC', name: 'Hot Chocolate', category: 'Non-Alcoholic', colour: Color(0xFF8B5A2B)),
   ];
 
   /// Get all unique categories

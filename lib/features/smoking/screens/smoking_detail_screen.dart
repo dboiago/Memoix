@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
+import '../../sharing/services/share_service.dart';
 import 'smoking_edit_screen.dart';
 
 /// Detail screen showing a smoking recipe's full information
@@ -82,12 +83,75 @@ class SmokingDetailScreen extends ConsumerWidget {
                 ),
                 actions: [
                   IconButton(
-                    icon: const Icon(Icons.edit),
-                    onPressed: () => _editRecipe(context, recipe),
+                    icon: Icon(
+                      recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                      color: recipe.isFavorite ? Colors.red : null,
+                      shadows: recipe.imageUrl != null 
+                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                          : null,
+                    ),
+                    onPressed: () {
+                      ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+                    },
                   ),
                   IconButton(
-                    icon: const Icon(Icons.delete),
-                    onPressed: () => _confirmDelete(context, ref, recipe),
+                    icon: Icon(
+                      Icons.check_circle_outline,
+                      shadows: recipe.imageUrl != null 
+                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                          : null,
+                    ),
+                    tooltip: 'I made this',
+                    onPressed: () async {
+                      await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('Logged cook for ${recipe.name}!'),
+                          ),
+                        );
+                      }
+                    },
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      Icons.share,
+                      shadows: recipe.imageUrl != null 
+                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                          : null,
+                    ),
+                    onPressed: () => _shareRecipe(context, ref, recipe),
+                  ),
+                  PopupMenuButton<String>(
+                    onSelected: (value) {
+                      switch (value) {
+                        case 'edit':
+                          _editRecipe(context, recipe);
+                          break;
+                        case 'delete':
+                          _confirmDelete(context, ref, recipe);
+                          break;
+                      }
+                    },
+                    itemBuilder: (ctx) => [
+                      const PopupMenuItem(
+                        value: 'edit',
+                        child: Text('Edit'),
+                      ),
+                      PopupMenuItem(
+                        value: 'delete',
+                        child: Text(
+                          'Delete',
+                          style: TextStyle(color: theme.colorScheme.error),
+                        ),
+                      ),
+                    ],
+                    icon: Icon(
+                      Icons.more_vert,
+                      shadows: recipe.imageUrl != null 
+                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                          : null,
+                    ),
                   ),
                 ],
               ),
@@ -388,5 +452,72 @@ class SmokingDetailScreen extends ConsumerWidget {
       await ref.read(smokingRepositoryProvider).deleteRecipe(recipe.uuid);
       Navigator.pop(context);
     }
+  }
+
+  void _shareRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) {
+    final shareService = ref.read(shareServiceProvider);
+    final theme = Theme.of(context);
+    
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Share "${recipe.name}"',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.qr_code, color: theme.colorScheme.primary),
+              title: const Text('Show QR Code'),
+              subtitle: const Text('Others can scan to import'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.showSmokingQrCode(context, recipe);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.share, color: theme.colorScheme.primary),
+              title: const Text('Share Link'),
+              subtitle: const Text('Send via any app'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareSmokingRecipe(recipe);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.content_copy, color: theme.colorScheme.primary),
+              title: const Text('Copy Link'),
+              subtitle: const Text('Copy to clipboard'),
+              onTap: () async {
+                Navigator.pop(ctx);
+                await shareService.copySmokingShareLink(recipe);
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Link copied to clipboard!')),
+                  );
+                }
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.text_snippet, color: theme.colorScheme.primary),
+              title: const Text('Share as Text'),
+              subtitle: const Text('Full recipe in plain text'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareSmokingAsText(recipe);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -146,7 +146,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () {
                       ref
                           .read(smokingRepositoryProvider)
-                          .toggleFavorite(widget.recipe);
+                          .toggleFavorite(widget.recipe.uuid);
                     },
                     padding: const EdgeInsets.all(8),
                     constraints: const BoxConstraints(),
@@ -168,7 +168,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () {
                       ref
                           .read(smokingRepositoryProvider)
-                          .incrementCookCount(widget.recipe);
+                          .incrementCookCount(widget.recipe.uuid);
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content:

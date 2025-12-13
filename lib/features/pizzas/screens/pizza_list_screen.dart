@@ -45,24 +45,94 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
 
           return Column(
             children: [
-              // Search bar
+              // Search bar with autocomplete
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search pizzas...',
-                    hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                    prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-                    filled: true,
-                    fillColor: theme.colorScheme.surfaceContainerHighest,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
-                  style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                  onChanged: (value) {
-                    setState(() => _searchQuery = value.toLowerCase());
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return const Iterable<String>.empty();
+                    }
+                    final query = textEditingValue.text.toLowerCase();
+                    // Get matching pizza names, cheeses, or toppings
+                    final matches = <String>{};
+                    for (final pizza in allPizzas) {
+                      if (pizza.name.toLowerCase().contains(query)) {
+                        matches.add(pizza.name);
+                      }
+                      for (final cheese in pizza.cheeses) {
+                        if (cheese.toLowerCase().contains(query)) {
+                          matches.add(cheese);
+                        }
+                      }
+                      for (final topping in pizza.toppings) {
+                        if (topping.toLowerCase().contains(query)) {
+                          matches.add(topping);
+                        }
+                      }
+                    }
+                    return matches.take(8).toList();
+                  },
+                  onSelected: (selection) {
+                    setState(() => _searchQuery = selection.toLowerCase());
+                  },
+                  fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
+                    return TextField(
+                      controller: textController,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: 'Search pizzas...',
+                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
+                        suffixIcon: textController.text.isNotEmpty
+                            ? IconButton(
+                                icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                                onPressed: () {
+                                  textController.clear();
+                                  setState(() => _searchQuery = '');
+                                },
+                              )
+                            : null,
+                        filled: true,
+                        fillColor: theme.colorScheme.surfaceContainerHighest,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      onChanged: (value) {
+                        setState(() => _searchQuery = value.toLowerCase());
+                      },
+                    );
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return Align(
+                      alignment: Alignment.topLeft,
+                      child: Material(
+                        elevation: 4,
+                        borderRadius: BorderRadius.circular(8),
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 200,
+                            maxWidth: MediaQuery.of(context).size.width - 32,
+                          ),
+                          child: ListView.builder(
+                            padding: EdgeInsets.zero,
+                            shrinkWrap: true,
+                            itemCount: options.length,
+                            itemBuilder: (context, index) {
+                              final option = options.elementAt(index);
+                              return ListTile(
+                                dense: true,
+                                title: Text(option),
+                                onTap: () => onSelected(option),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    );
                   },
                 ),
               ),

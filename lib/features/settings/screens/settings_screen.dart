@@ -87,6 +87,30 @@ class KeepScreenOnNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Provider for showing images on recipe cards in lists
+final showListImagesProvider = StateNotifierProvider<ShowListImagesNotifier, bool>((ref) {
+  return ShowListImagesNotifier();
+});
+
+class ShowListImagesNotifier extends StateNotifier<bool> {
+  static const _key = 'show_list_images';
+
+  ShowListImagesNotifier() : super(false) { // Default to OFF (no images in lists)
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? false; // Default to OFF
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
+
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
@@ -151,6 +175,13 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: const Text('Prevent screen from turning off while viewing recipes'),
             value: ref.watch(keepScreenOnProvider),
             onChanged: (_) => ref.read(keepScreenOnProvider.notifier).toggle(),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.image),
+            title: const Text('Show Images in Lists'),
+            subtitle: const Text('Display recipe images on list cards'),
+            value: ref.watch(showListImagesProvider),
+            onChanged: (_) => ref.read(showListImagesProvider.notifier).toggle(),
           ),
 
           const Divider(),

@@ -5,6 +5,7 @@ import '../../../app/routes/router.dart';
 import '../models/recipe.dart';
 import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
+import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/recipe_card.dart';
 
@@ -28,8 +29,11 @@ class RecipeListScreen extends ConsumerStatefulWidget {
 }
 
 class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
-  Set<String> _selectedCuisines = {}; // Empty = "All"
+  Set<String> _selectedCuisines = {}; // Empty = "All" (also used for base spirits in drinks)
   String _searchQuery = '';
+
+  /// Check if this is the drinks course
+  bool get _isDrinksScreen => widget.course.toLowerCase() == 'drinks';
 
   @override
   Widget build(BuildContext context) {
@@ -63,30 +67,104 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           
           return Column(
             children: [
-              // Search bar
+              // Search bar with autocomplete
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search recipes...',
-                    hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                    prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-                    filled: true,
-                    fillColor: theme.colorScheme.surfaceContainerHighest,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
-                  style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                  onChanged: (value) {
-                    setState(() => _searchQuery = value.toLowerCase());
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return const Iterable<String>.empty();
+                    }
+                    final query = textEditingValue.text.toLowerCase();
+                    // Get matching recipe names
+                    final matches = recipes
+                        .where((r) => r.name.toLowerCase().contains(query))
+                        .map((r) => r.name)
+                        .take(8)
+                        .toList();
+                    return matches;
+                  },
+                  onSelected: (selection) {
+                    setState(() => _searchQuery = selection.toLowerCase());
+                  },
+                  fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
+                    return TextField(
+                      controller: textController,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: 'Search recipes...',
+                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
+                        suffixIcon: textController.text.isNotEmpty
+                            ? IconButton(
+                                icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                                onPressed: () {
+                                  textController.clear();
+                                  setState(() => _searchQuery = '');
+                                },
+                              )
+                            : null,
+                        filled: true,
+                        fillColor: theme.colorScheme.surfaceContainerHighest,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      onChanged: (value) {
+                        setState(() => _searchQuery = value.toLowerCase());
+                      },
+                    );
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return Align(
+                      alignment: Alignment.topLeft,
+                      child: Material(
+                        elevation: 4,
+                        borderRadius: BorderRadius.circular(8),
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 200,
+                            maxWidth: MediaQuery.of(context).size.width - 32,
+                          ),
+                          child: ListView.builder(
+                            padding: EdgeInsets.zero,
+                            shrinkWrap: true,
+                            itemCount: options.length,
+                            itemBuilder: (context, index) {
+                              final option = options.elementAt(index);
+                              return ListTile(
+                                dense: true,
+                                title: Text(option),
+                                onTap: () => onSelected(option),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    );
                   },
                 ),
               ),
 
-              // Cuisine filter chips (show if any cuisines exist)
-              if (availableCuisines.isNotEmpty)
+              // Cuisine/base filter chips (show if any exist)
+              if (_isDrinksScreen && _getAvailableBaseSpirits(recipes).isNotEmpty)
+                Container(
+                  height: 48,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      _buildCuisineChip('All', recipes.length, isAllChip: true),
+                      ..._getAvailableBaseSpirits(recipes).map((base) {
+                        final count = recipes.where((r) => r.subcategory == base).length;
+                        return _buildCuisineChip(Spirit.toDisplayName(base), count, rawValue: base);
+                      }),
+                    ],
+                  ),
+                )
+              else if (availableCuisines.isNotEmpty)
                 Container(
                   height: 48,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -179,6 +257,40 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     return cuisines;
   }
 
+  /// Get available base spirits from drinks recipes
+  /// Sorts with non-alcoholic first, then by category
+  List<String> _getAvailableBaseSpirits(List<Recipe> recipes) {
+    final bases = recipes
+        .map((r) => r.subcategory)
+        .where((s) => s != null && s.isNotEmpty)
+        .cast<String>()
+        .toSet()
+        .toList();
+    
+    // Sort: non-alcoholic first, then by category, then alphabetically
+    bases.sort((a, b) {
+      final spiritA = Spirit.lookup(a);
+      final spiritB = Spirit.lookup(b);
+      
+      // Non-alcoholic first
+      final aIsNonAlc = spiritA?.category == 'Non-Alcoholic';
+      final bIsNonAlc = spiritB?.category == 'Non-Alcoholic';
+      if (aIsNonAlc && !bIsNonAlc) return -1;
+      if (!aIsNonAlc && bIsNonAlc) return 1;
+      
+      // Then by category
+      final catA = spiritA?.category ?? '';
+      final catB = spiritB?.category ?? '';
+      final catCompare = catA.compareTo(catB);
+      if (catCompare != 0) return catCompare;
+      
+      // Then alphabetically
+      return a.compareTo(b);
+    });
+    
+    return bases;
+  }
+
   String _displayCuisine(String raw) {
     const map = {
       'Korea': 'Korean',
@@ -268,16 +380,26 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       filtered = filtered.where((r) {
         return r.name.toLowerCase().contains(_searchQuery) ||
             (r.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
+            (r.subcategory?.toLowerCase().contains(_searchQuery) ?? false) ||
             (r.tags.any((tag) => tag.toLowerCase().contains(_searchQuery)));
       }).toList();
     }
 
-    // Filter by cuisine (supports multiple selections)
+    // Filter by base spirit (for drinks) or cuisine (for food)
     if (_selectedCuisines.isNotEmpty) {
-      filtered = filtered.where((r) {
-        if (r.cuisine == null) return false;
-        return _selectedCuisines.any((c) => r.cuisine!.toLowerCase() == c.toLowerCase());
-      }).toList();
+      if (_isDrinksScreen) {
+        // Filter by base spirit (stored in subcategory)
+        filtered = filtered.where((r) {
+          if (r.subcategory == null) return false;
+          return _selectedCuisines.any((c) => r.subcategory == c);
+        }).toList();
+      } else {
+        // Filter by cuisine
+        filtered = filtered.where((r) {
+          if (r.cuisine == null) return false;
+          return _selectedCuisines.any((c) => r.cuisine!.toLowerCase() == c.toLowerCase());
+        }).toList();
+      }
     }
 
     return filtered;
