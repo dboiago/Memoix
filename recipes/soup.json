@@ -21,7 +21,7 @@
       },
       {
         "name": "White Beans",
-        "amount": "1 can",
+        "amount": "1 Can",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -30,7 +30,7 @@
       },
       {
         "name": "Onion",
-        "amount": "1.0",
+        "amount": "1",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -39,7 +39,7 @@
       },
       {
         "name": "Carrots",
-        "amount": "2.0",
+        "amount": "2",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -48,7 +48,7 @@
       },
       {
         "name": "Celery",
-        "amount": "2.0",
+        "amount": "2",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -57,7 +57,7 @@
       },
       {
         "name": "Garlic",
-        "amount": "3-5 cloves",
+        "amount": "3-5 Cloves",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -66,10 +66,10 @@
       },
       {
         "name": "Bacon",
-        "amount": "4 strips",
+        "amount": "4 Strips",
         "unit": null,
         "preparation": null,
-        "alternative": "King's cafe",
+        "alternative": "King's Cafe",
         "isOptional": false,
         "section": null
       },
