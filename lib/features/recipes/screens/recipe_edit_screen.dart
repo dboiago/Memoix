@@ -1440,7 +1440,7 @@ class _SpiritSelector extends StatelessWidget {
         ),
         child: Text(
           spirit != null
-              ? '${spirit.icon} ${spirit.name}'
+              ? spirit.name
               : currentValue ?? 'Select spirit (optional)',
           style: TextStyle(
             color: currentValue != null
@@ -1538,7 +1538,6 @@ class _SpiritPickerSheet extends StatelessWidget {
                     ...entry.value.map((spirit) {
                       final isSelected = selectedSpirit == spirit.name;
                       return ListTile(
-                        leading: Text(spirit.icon, style: const TextStyle(fontSize: 24)),
                         title: Text(spirit.name),
                         trailing: isSelected
                             ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
