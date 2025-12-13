@@ -26,11 +26,13 @@ String _formatServes(String serves) {
 class RecipeCard extends ConsumerStatefulWidget {
   final Recipe recipe;
   final VoidCallback? onTap;
+  final bool isCompact;
 
   const RecipeCard({
     super.key,
     required this.recipe,
     this.onTap,
+    this.isCompact = false,
   });
 
   @override
@@ -68,7 +70,10 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
         hoverColor: Colors.transparent,
         highlightColor: Colors.transparent,
         child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        padding: EdgeInsets.symmetric(
+          horizontal: widget.isCompact ? 8 : 12,
+          vertical: widget.isCompact ? 6 : 10,
+        ),
         child: Row(
           children: [
             // Recipe name and metadata
@@ -79,17 +84,18 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   // Recipe name
                   Text(
                     widget.recipe.name,
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.w500,
-                    ),
+                    style: widget.isCompact
+                        ? theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500)
+                        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w500),
                   ),
-                  const SizedBox(height: 4),
-                  
-                  // Cuisine/spirit indicator dot + servings + time
-                  Row(
-                    children: [
-                      // For drinks: show spirit dot, for food: show cuisine dot
-                      if (_isDrink()) ...[
+                  // Only show metadata row in non-compact mode
+                  if (!widget.isCompact) ...[
+                    const SizedBox(height: 4),
+                    // Cuisine/spirit indicator dot + servings + time
+                    Row(
+                      children: [
+                        // For drinks: show spirit dot, for food: show cuisine dot
+                        if (_isDrink()) ...[
                         // Spirit indicator for drinks
                         if (widget.recipe.subcategory != null && widget.recipe.subcategory!.isNotEmpty) ...[
                           Text(
@@ -177,7 +183,8 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                         ),
                       ],
                     ],
-                  ),
+                  ), // Row
+                  ], // if (!widget.isCompact)
                 ],
               ),
             ),

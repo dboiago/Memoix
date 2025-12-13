@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../settings/screens/settings_screen.dart';
 import '../models/recipe.dart';
 import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
@@ -59,8 +60,15 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (err, _) => Center(child: Text('Error: $err')),
       data: (allRecipes) {
-          // Apply source filter first
-          final recipes = _filterBySource(allRecipes);
+          // Watch settings
+          final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+          final isCompactView = ref.watch(compactViewProvider);
+          
+          // Apply source filter first, then hide memoix if enabled
+          var recipes = _filterBySource(allRecipes);
+          if (hideMemoix) {
+            recipes = recipes.where((r) => r.source != RecipeSource.memoix).toList();
+          }
           
           // Get cuisines that actually exist in this recipe set
           final availableCuisines = _getAvailableCuisines(recipes);
@@ -326,6 +334,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
         return RecipeCard(
           recipe: filteredRecipes[index],
           onTap: () => AppRoutes.toRecipeDetail(context, filteredRecipes[index].uuid),
+          isCompact: ref.watch(compactViewProvider),
         );
       },
     );

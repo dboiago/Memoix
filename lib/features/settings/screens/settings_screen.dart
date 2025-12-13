@@ -14,22 +14,21 @@ final preferencesProvider = FutureProvider<SharedPreferences>((ref) async {
   return SharedPreferences.getInstance();
 });
 
-/// Provider for showing all recipes together vs filtered
-final showAllRecipesProvider = StateNotifierProvider<ShowAllRecipesNotifier, bool>((ref) {
-  return ShowAllRecipesNotifier(ref);
+/// Provider for hiding Memoix collection recipes (show only personal)
+final hideMemoixRecipesProvider = StateNotifierProvider<HideMemoixRecipesNotifier, bool>((ref) {
+  return HideMemoixRecipesNotifier();
 });
 
-class ShowAllRecipesNotifier extends StateNotifier<bool> {
-  final Ref ref;
-  static const _key = 'show_all_recipes';
+class HideMemoixRecipesNotifier extends StateNotifier<bool> {
+  static const _key = 'hide_memoix_recipes';
 
-  ShowAllRecipesNotifier(this.ref) : super(true) {
+  HideMemoixRecipesNotifier() : super(false) {
     _loadPreference();
   }
 
   Future<void> _loadPreference() async {
     final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? true;
+    state = prefs.getBool(_key) ?? false;
   }
 
   Future<void> toggle() async {
@@ -142,7 +141,7 @@ class SettingsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final syncState = ref.watch(syncNotifierProvider);
-    final showAllRecipes = ref.watch(showAllRecipesProvider);
+    final hideMemoixRecipes = ref.watch(hideMemoixRecipesProvider);
     final compactView = ref.watch(compactViewProvider);
 
     return Scaffold(
@@ -178,13 +177,13 @@ class SettingsScreen extends ConsumerWidget {
           // Display section
           _SectionHeader(title: 'Display'),
           SwitchListTile(
-            secondary: const Icon(Icons.visibility),
-            title: const Text('Show All Recipes Together'),
+            secondary: const Icon(Icons.visibility_off),
+            title: const Text('Hide Memoix Recipes'),
             subtitle: const Text(
-              'When off, Memoix and personal recipes are separated',
+              'Only show your personal recipes',
             ),
-            value: showAllRecipes,
-            onChanged: (_) => ref.read(showAllRecipesProvider.notifier).toggle(),
+            value: hideMemoixRecipes,
+            onChanged: (_) => ref.read(hideMemoixRecipesProvider.notifier).toggle(),
           ),
           SwitchListTile(
             secondary: const Icon(Icons.view_compact),
