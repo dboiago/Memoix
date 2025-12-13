@@ -96,33 +96,66 @@ class RecipeDetailView extends ConsumerWidget {
                 recipe.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [Shadow(blurRadius: 4, color: Colors.black45)],
+                  shadows: [
+                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    Shadow(blurRadius: 16, color: Colors.black54),
+                  ],
                 ),
               ),
               background: recipe.imageUrl != null
-                  ? Image.network(
-                      recipe.imageUrl!,
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                      ),
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        Image.network(
+                          recipe.imageUrl!,
+                          fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => Container(
+                            color: theme.colorScheme.surfaceContainerHighest,
+                          ),
+                        ),
+                        // Gradient overlay for text visibility
+                        Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.black.withOpacity(0.3),
+                                Colors.transparent,
+                                Colors.transparent,
+                                Colors.black.withOpacity(0.7),
+                              ],
+                              stops: const [0.0, 0.3, 0.6, 1.0],
+                            ),
+                          ),
+                        ),
+                      ],
                     )
                   : Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),
             ),
             actions: [
+              // Add shadow to action icons when there's an image
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
+                  shadows: recipe.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
                 ),
                 onPressed: () {
                   ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
                 },
               ),
               IconButton(
-                icon: const Icon(Icons.check_circle_outline),
+                icon: Icon(
+                  Icons.check_circle_outline,
+                  shadows: recipe.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
                 tooltip: 'I made this',
                 onPressed: () async {
                   await ref.read(cookingStatsServiceProvider).logCook(
@@ -149,7 +182,12 @@ class RecipeDetailView extends ConsumerWidget {
                 },
               ),
               IconButton(
-                icon: const Icon(Icons.share),
+                icon: Icon(
+                  Icons.share,
+                  shadows: recipe.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
                 onPressed: () => _shareRecipe(context, ref),
               ),
               PopupMenuButton<String>(
@@ -165,6 +203,12 @@ class RecipeDetailView extends ConsumerWidget {
                     ),
                   ),
                 ],
+                icon: Icon(
+                  Icons.more_vert,
+                  shadows: recipe.imageUrl != null 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
               ),
             ],
           ),

@@ -65,6 +65,7 @@ class MemoixColors {
   static const Color continentAfrican = Color(0xFFB8906E);     // Terracotta
   static const Color continentMiddleEast = Color(0xFFD4A574);  // Saffron/amber
   static const Color continentOceanian = Color(0xFF6BA3B5);    // Ocean teal
+  static const Color fusionCuisine = Color(0xFFA88FA8);        // Purple/mauve - blend of cultures
 
   // Spirit-based dot colors for drinks/cocktails
   // Thematic colors complementing the warm palette
@@ -207,6 +208,9 @@ class MemoixColors {
     
     final lower = cuisine.toLowerCase().trim();
     final upper = cuisine.toUpperCase().trim();
+    
+    // Fusion cuisines get their own distinct color
+    if (lower.contains('fusion')) return fusionCuisine;
     
     // Check 2-3 letter country codes first (comprehensive list)
     const asianCodes = ['BD', 'MM', 'KH', 'CN', 'IN', 'ID', 'JP', 'KR', 'LA', 'MY', 'MN', 'NP', 'PK', 'PH', 'SG', 'LK', 'TW', 'TH', 'VN'];

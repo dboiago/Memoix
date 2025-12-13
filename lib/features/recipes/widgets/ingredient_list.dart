@@ -119,9 +119,9 @@ class _IngredientListState extends State<IngredientList> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient name (fixed width for alignment)
-            SizedBox(
-              width: 140,
+            // Ingredient name (flexible, wraps if needed)
+            Expanded(
+              flex: 3,
               child: Text(
                 _capitalizeWords(ingredient.name),
                 style: TextStyle(
@@ -130,21 +130,18 @@ class _IngredientListState extends State<IngredientList> {
                       ? theme.colorScheme.onSurface.withOpacity(0.5)
                       : null,
                 ),
-                overflow: TextOverflow.ellipsis,
               ),
             ),
+            const SizedBox(width: 8),
 
-            // Amount (fixed width for alignment)
-            SizedBox(
-              width: 80,
-              child: Text(
-                amountText,
-                style: TextStyle(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : theme.colorScheme.onSurfaceVariant,
-                ),
+            // Amount
+            Text(
+              amountText,
+              style: TextStyle(
+                decoration: isChecked ? TextDecoration.lineThrough : null,
+                color: isChecked
+                    ? theme.colorScheme.onSurface.withOpacity(0.5)
+                    : theme.colorScheme.onSurfaceVariant,
               ),
             ),
 

@@ -162,7 +162,7 @@ class _DirectionListState extends State<DirectionList> {
                     shape: BoxShape.circle,
                     color: isCompleted
                         ? Colors.green
-                        : theme.colorScheme.secondaryContainer,
+                        : theme.colorScheme.secondary,
                   ),
                   child: Center(
                     child: isCompleted
@@ -171,7 +171,7 @@ class _DirectionListState extends State<DirectionList> {
                             '$displayNumber',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: theme.colorScheme.onSecondaryContainer,
+                              color: theme.colorScheme.onSecondary,
                             ),
                           ),
                   ),

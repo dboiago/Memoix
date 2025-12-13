@@ -608,22 +608,44 @@ class UrlRecipeImporter {
     remaining = remaining.replaceAll(RegExp(r'\s+'), ' ').trim();
     
     // Try to extract amount (number at start, possibly with range and unit)
+    // Handle compound fractions like "1 1/2" or "1 ½" (whole number + fraction)
     // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
-    final amountMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
+    final compoundFractionMatch = RegExp(
+      r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
       r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
-    if (amountMatch != null) {
-      final number = amountMatch.group(1)?.trim() ?? '';
-      final unit = amountMatch.group(2)?.trim() ?? '';
-      // Normalize the range format (remove extra spaces around dash)
-      amount = number.replaceAll(RegExp(r'\s*[-–]\s*'), '-');
+    if (compoundFractionMatch != null) {
+      // Handle compound fraction like "1 1/2 tsp" or "1 ½ tsp"
+      final whole = compoundFractionMatch.group(1) ?? '';
+      var fraction = compoundFractionMatch.group(2) ?? '';
+      final unit = compoundFractionMatch.group(3)?.trim() ?? '';
+      // Convert text fractions to unicode
+      fraction = _fractionMap[fraction] ?? fraction;
+      amount = '$whole$fraction';
       if (unit.isNotEmpty) {
         amount = '$amount $unit';
       }
-      remaining = remaining.substring(amountMatch.end).trim();
+      remaining = remaining.substring(compoundFractionMatch.end).trim();
+    } else {
+      // Original pattern for simple amounts and ranges
+      final amountMatch = RegExp(
+        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
+        r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      
+      if (amountMatch != null) {
+        final number = amountMatch.group(1)?.trim() ?? '';
+        final unit = amountMatch.group(2)?.trim() ?? '';
+        // Normalize the range format (remove extra spaces around dash)
+        amount = number.replaceAll(RegExp(r'\s*[-–]\s*'), '-');
+        if (unit.isNotEmpty) {
+          amount = '$amount $unit';
+        }
+        remaining = remaining.substring(amountMatch.end).trim();
+      }
     }
     
     // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
@@ -668,7 +690,7 @@ class UrlRecipeImporter {
     // Clean the ingredient name - remove trailing/leading punctuation
     remaining = remaining.replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '');
     
-    // Build final notes string, cleaning up any remaining stray parentheses and commas
+    // Build final notes string, cleaning up any remaining stray parentheses, commas, and footnotes
     String? finalNotes;
     if (notesParts.isNotEmpty) {
       finalNotes = notesParts
@@ -677,6 +699,8 @@ class UrlRecipeImporter {
               .replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '')  // Remove leading/trailing commas and spaces
               .trim())
           .where((n) => n.isNotEmpty)
+          // Filter out footnote references like "Footnote 1", "Footnote 2", etc.
+          .where((n) => !RegExp(r'^Footnote\s*\d*$', caseSensitive: false).hasMatch(n))
           .join(', ');
       if (finalNotes.isEmpty) finalNotes = null;
     }
