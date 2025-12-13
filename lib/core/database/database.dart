@@ -8,6 +8,7 @@ import '../../features/smoking/models/smoking_recipe.dart';
 import '../../features/shopping/models/shopping_list.dart';
 import '../../features/mealplan/models/meal_plan.dart';
 import '../../features/statistics/models/cooking_stats.dart';
+import '../../features/notes/models/scratch_pad.dart';
 
 /// Singleton database manager for Memoix
 class MemoixDatabase {
@@ -38,6 +39,8 @@ class MemoixDatabase {
         ShoppingListSchema,
         MealPlanSchema,
         CookingLogSchema,
+        ScratchPadSchema,
+        RecipeDraftSchema,
       ],
       directory: dir.path,
       name: 'memoix',

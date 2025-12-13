@@ -8,60 +8,8 @@ import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
 import '../../recipes/models/recipe.dart';
-
-/// Provider to store scratch pad notes
-final scratchPadNotesProvider = StateProvider<String>((ref) => '');
-
-/// Provider to store temporary recipe drafts
-final tempRecipeDraftsProvider = StateProvider<List<TempRecipeDraft>>((ref) => []);
-
-/// Temporary recipe draft model
-class TempRecipeDraft {
-  final String id;
-  final String name;
-  final String? imagePath;
-  final String? serves;
-  final String? time;
-  final String ingredients;
-  final String directions;
-  final String comments;
-  final DateTime createdAt;
-
-  TempRecipeDraft({
-    required this.id,
-    required this.name,
-    this.imagePath,
-    this.serves,
-    this.time,
-    this.ingredients = '',
-    this.directions = '',
-    this.comments = '',
-    required this.createdAt,
-  });
-
-  TempRecipeDraft copyWith({
-    String? name,
-    String? imagePath,
-    String? serves,
-    String? time,
-    String? ingredients,
-    String? directions,
-    String? comments,
-    bool clearImage = false,
-  }) {
-    return TempRecipeDraft(
-      id: id,
-      name: name ?? this.name,
-      imagePath: clearImage ? null : (imagePath ?? this.imagePath),
-      serves: serves ?? this.serves,
-      time: time ?? this.time,
-      ingredients: ingredients ?? this.ingredients,
-      directions: directions ?? this.directions,
-      comments: comments ?? this.comments,
-      createdAt: createdAt,
-    );
-  }
-}
+import '../models/scratch_pad.dart';
+import '../repository/scratch_pad_repository.dart';
 
 /// Scratch Pad screen for quick notes and temporary recipes
 class ScratchPadScreen extends ConsumerStatefulWidget {
@@ -98,14 +46,8 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final notes = ref.watch(scratchPadNotesProvider);
-    final drafts = ref.watch(tempRecipeDraftsProvider);
-
-    // Sync text controller with provider
-    if (_notesController.text != notes) {
-      _notesController.text = notes;
-    }
+    final notesAsync = ref.watch(quickNotesProvider);
+    final draftsAsync = ref.watch(recipeDraftsProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -122,19 +64,33 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
         controller: _tabController,
         children: [
           // Quick Notes Tab
-          _QuickNotesTab(
-            controller: _notesController,
-            onChanged: (value) {
-              ref.read(scratchPadNotesProvider.notifier).state = value;
+          notesAsync.when(
+            data: (notes) {
+              // Sync text controller with provider
+              if (_notesController.text != notes) {
+                _notesController.text = notes;
+              }
+              return _QuickNotesTab(
+                controller: _notesController,
+                onChanged: (value) {
+                  ref.read(scratchPadRepositoryProvider).saveQuickNotes(value);
+                },
+              );
             },
+            loading: () => const Center(child: CircularProgressIndicator()),
+            error: (e, _) => Center(child: Text('Error: $e')),
           ),
           // Recipe Drafts Tab
-          _RecipeDraftsTab(
-            drafts: drafts,
-            onAddDraft: () => _addNewDraft(context, ref),
-            onEditDraft: (draft) => _editDraft(context, ref, draft),
-            onDeleteDraft: (draft) => _deleteDraft(ref, draft),
-            onConvertToRecipe: (draft) => _convertToRecipe(context, ref, draft),
+          draftsAsync.when(
+            data: (drafts) => _RecipeDraftsTab(
+              drafts: drafts,
+              onAddDraft: () => _addNewDraft(context, ref),
+              onEditDraft: (draft) => _editDraft(context, ref, draft),
+              onDeleteDraft: (draft) => _deleteDraft(ref, draft),
+              onConvertToRecipe: (draft) => _convertToRecipe(context, ref, draft),
+            ),
+            loading: () => const Center(child: CircularProgressIndicator()),
+            error: (e, _) => Center(child: Text('Error: $e')),
           ),
         ],
       ),
@@ -148,95 +104,41 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     );
   }
 
-  void _showHelpDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Scratch Pad'),
-        content: const Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Quick Notes',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 4),
-            Text(
-              'Jot down ingredients, cooking tips, or anything you want to remember while cooking.',
-            ),
-            SizedBox(height: 16),
-            Text(
-              'Recipe Drafts',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 4),
-            Text(
-              'Start drafting a recipe idea. When you\'re ready, convert it to a full recipe.',
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Got it'),
-          ),
-        ],
-      ),
-    );
+  Future<void> _addNewDraft(BuildContext context, WidgetRef ref) async {
+    final repo = ref.read(scratchPadRepositoryProvider);
+    final drafts = await repo.getAllDrafts();
+    final draft = await repo.createDraft(name: 'New Recipe ${drafts.length + 1}');
+    if (context.mounted) {
+      _editDraft(context, ref, draft);
+    }
   }
 
-  void _addNewDraft(BuildContext context, WidgetRef ref) {
-    // Create a new draft and open the draft editor
-    final drafts = ref.read(tempRecipeDraftsProvider);
-    final newDraft = TempRecipeDraft(
-      id: DateTime.now().millisecondsSinceEpoch.toString(),
-      name: 'New Recipe ${drafts.length + 1}',
-      createdAt: DateTime.now(),
-    );
-    ref.read(tempRecipeDraftsProvider.notifier).state = [...drafts, newDraft];
-    // Open the draft editor
-    _editDraft(context, ref, newDraft);
-  }
-
-  void _editDraft(BuildContext context, WidgetRef ref, TempRecipeDraft draft) {
-    // Open draft editor - Save keeps in scratch pad, Convert moves to recipes
+  void _editDraft(BuildContext context, WidgetRef ref, RecipeDraft draft) {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => _EditDraftScreen(
           draft: draft,
-          onSave: (updatedDraft) {
-            // Save to scratch pad only (not to real recipes)
-            final drafts = ref.read(tempRecipeDraftsProvider);
-            final index = drafts.indexWhere((d) => d.id == draft.id);
-            if (index != -1) {
-              final updated = [...drafts];
-              updated[index] = updatedDraft;
-              ref.read(tempRecipeDraftsProvider.notifier).state = updated;
-            }
+          onSave: (updatedDraft) async {
+            await ref.read(scratchPadRepositoryProvider).updateDraft(updatedDraft);
           },
-          onConvert: () {
-            // Get latest draft state and convert
-            final drafts = ref.read(tempRecipeDraftsProvider);
-            final latestDraft = drafts.firstWhere(
-              (d) => d.id == draft.id,
-              orElse: () => draft,
-            );
-            _convertToRecipe(context, ref, latestDraft);
+          onConvert: (updatedDraft) async {
+            // Save first, then convert - draft is only deleted after user confirms
+            await ref.read(scratchPadRepositoryProvider).updateDraft(updatedDraft);
+            if (context.mounted) {
+              _convertToRecipe(context, ref, updatedDraft);
+            }
           },
         ),
       ),
     );
   }
 
-  void _deleteDraft(WidgetRef ref, TempRecipeDraft draft) {
-    final drafts = ref.read(tempRecipeDraftsProvider);
-    ref.read(tempRecipeDraftsProvider.notifier).state =
-        drafts.where((d) => d.id != draft.id).toList();
+  Future<void> _deleteDraft(WidgetRef ref, RecipeDraft draft) async {
+    await ref.read(scratchPadRepositoryProvider).deleteDraft(draft.uuid);
   }
 
-  void _convertToRecipe(BuildContext context, WidgetRef ref, TempRecipeDraft draft) {
+  void _convertToRecipe(BuildContext context, WidgetRef ref, RecipeDraft draft) {
     // Parse ingredients from text (one per line)
     final ingredientLines = draft.ingredients
         .split('\n')
@@ -244,9 +146,7 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
         .toList();
     
     final ingredients = ingredientLines.map((line) {
-      // Try to parse amount and unit from the beginning of the line (e.g., "1 cup flour")
       final text = line.trim();
-      // Capture an amount token and optional unit, then the name
       final match = RegExp(
         r'^(?<amount>[\d\s\/\.-]+)?\s*(?<unit>cup|cups|tbsp|tsp|oz|lb|lbs|g|kg|ml|l|can|cans|bunch|clove|cloves)?\s*(?<name>.+)$',
         caseSensitive: false,
@@ -293,13 +193,42 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
     
-    // Remove from drafts since it's being converted
-    final drafts = ref.read(tempRecipeDraftsProvider);
-    ref.read(tempRecipeDraftsProvider.notifier).state =
-        drafts.where((d) => d.id != draft.id).toList();
-    
-    // Navigate to recipe edit screen with pre-filled data
-    AppRoutes.toRecipeEdit(context, importedRecipe: recipe);
+    // Navigate to recipe edit screen - draft is NOT deleted here
+    // User can keep it or delete manually
+    AppRoutes.toRecipeEdit(
+      context, 
+      importedRecipe: recipe,
+    ).then((_) {
+      // After returning from recipe edit, ask if they want to delete the draft
+      if (context.mounted) {
+        _askDeleteDraft(context, ref, draft);
+      }
+    });
+  }
+
+  void _askDeleteDraft(BuildContext context, WidgetRef ref, RecipeDraft draft) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Delete Draft?'),
+        content: const Text(
+          'Do you want to remove this draft from the scratch pad?',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Keep Draft'),
+          ),
+          FilledButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              ref.read(scratchPadRepositoryProvider).deleteDraft(draft.uuid);
+            },
+            child: const Text('Delete Draft'),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -329,10 +258,12 @@ class _QuickNotesTab extends StatelessWidget {
                 size: 20,
               ),
               const SizedBox(width: 8),
-              Text(
-                'Jot down quick notes, ingredients to buy, or cooking ideas',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
+              Expanded(
+                child: Text(
+                  'Jot down quick notes, ingredients to buy, or cooking ideas',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
                 ),
               ),
             ],
@@ -376,11 +307,11 @@ class _QuickNotesTab extends StatelessWidget {
 }
 
 class _RecipeDraftsTab extends StatelessWidget {
-  final List<TempRecipeDraft> drafts;
+  final List<RecipeDraft> drafts;
   final VoidCallback onAddDraft;
-  final ValueChanged<TempRecipeDraft> onEditDraft;
-  final ValueChanged<TempRecipeDraft> onDeleteDraft;
-  final ValueChanged<TempRecipeDraft> onConvertToRecipe;
+  final ValueChanged<RecipeDraft> onEditDraft;
+  final ValueChanged<RecipeDraft> onDeleteDraft;
+  final ValueChanged<RecipeDraft> onConvertToRecipe;
 
   const _RecipeDraftsTab({
     required this.drafts,
@@ -512,11 +443,10 @@ class _RecipeDraftsTab extends StatelessWidget {
 }
 
 /// Screen for editing a recipe draft
-/// Save keeps it in scratch pad, Convert moves it to real recipes
 class _EditDraftScreen extends StatefulWidget {
-  final TempRecipeDraft draft;
-  final ValueChanged<TempRecipeDraft> onSave;
-  final VoidCallback onConvert;
+  final RecipeDraft draft;
+  final Future<void> Function(RecipeDraft) onSave;
+  final Future<void> Function(RecipeDraft) onConvert;
 
   const _EditDraftScreen({
     required this.draft,
@@ -623,33 +553,37 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
     );
   }
 
-  TempRecipeDraft _buildUpdatedDraft() {
-    return widget.draft.copyWith(
-      name: _nameController.text,
-      imagePath: _imagePath,
-      serves: _servesController.text.isEmpty ? null : _servesController.text,
-      time: _timeController.text.isEmpty ? null : _timeController.text,
-      ingredients: _ingredientsController.text,
-      directions: _directionsController.text,
-      comments: _commentsController.text,
-      clearImage: _imagePath == null && widget.draft.imagePath != null,
-    );
+  RecipeDraft _buildUpdatedDraft() {
+    final updated = RecipeDraft()
+      ..id = widget.draft.id
+      ..uuid = widget.draft.uuid
+      ..name = _nameController.text
+      ..imagePath = _imagePath
+      ..serves = _servesController.text.isEmpty ? null : _servesController.text
+      ..time = _timeController.text.isEmpty ? null : _timeController.text
+      ..ingredients = _ingredientsController.text
+      ..directions = _directionsController.text
+      ..comments = _commentsController.text
+      ..createdAt = widget.draft.createdAt
+      ..updatedAt = DateTime.now();
+    return updated;
   }
 
-  void _save() {
-    // Save to scratch pad only
-    widget.onSave(_buildUpdatedDraft());
-    Navigator.pop(context);
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Draft saved to scratch pad')),
-    );
+  Future<void> _save() async {
+    await widget.onSave(_buildUpdatedDraft());
+    if (mounted) {
+      Navigator.pop(context);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Draft saved')),
+      );
+    }
   }
 
-  void _convert() {
-    // Save current state first, then convert
-    widget.onSave(_buildUpdatedDraft());
-    Navigator.pop(context);
-    widget.onConvert();
+  Future<void> _convert() async {
+    await widget.onConvert(_buildUpdatedDraft());
+    if (mounted) {
+      Navigator.pop(context);
+    }
   }
 
   @override
@@ -660,7 +594,6 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
       appBar: AppBar(
         title: const Text('Edit Draft'),
         actions: [
-          // Save button (keeps in scratch pad)
           TextButton.icon(
             onPressed: _save,
             icon: const Icon(Icons.save),
@@ -739,7 +672,7 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
 
             const SizedBox(height: 16),
 
-            // Serves and Time (optional)
+            // Serves and Time
             Row(
               children: [
                 Expanded(
