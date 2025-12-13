@@ -27,12 +27,16 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
   final _servesController = TextEditingController();
   final _timeController = TextEditingController();
   final _notesController = TextEditingController();
-  final _directionsController = TextEditingController();
 
   ModernistType _selectedType = ModernistType.concept;
   final List<String> _equipment = [];
   final List<_IngredientRow> _ingredientRows = [];
-  List<String> _imagePaths = [];
+  final List<_DirectionRow> _directionRows = [];
+  
+  // Image handling - separate header and step images
+  String? _headerImage;
+  final List<String> _stepImages = [];
+  final Map<int, int> _stepImageMap = {}; // stepIndex -> imageIndex in _stepImages
 
   bool _isLoading = true;
   bool _isSaving = false;
@@ -64,7 +68,22 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         ];
         _notesController.text = notesParts.join('\n\n');
         _equipment.addAll(recipe.equipment);
-        _imagePaths = recipe.getAllImages();
+        
+        // Load images - new structure
+        _headerImage = recipe.headerImage ?? recipe.imageUrl;
+        _stepImages.addAll(recipe.stepImages);
+        
+        // Parse step image map
+        for (final mapping in recipe.stepImageMap) {
+          final parts = mapping.split(':');
+          if (parts.length == 2) {
+            final stepIdx = int.tryParse(parts[0]);
+            final imgIdx = int.tryParse(parts[1]);
+            if (stepIdx != null && imgIdx != null) {
+              _stepImageMap[stepIdx] = imgIdx;
+            }
+          }
+        }
 
         for (final ingredient in recipe.ingredients) {
           // Combine amount and unit for display
@@ -79,13 +98,19 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           );
         }
 
-        _directionsController.text = recipe.directions.join('\n\n');
+        // Load directions as individual rows
+        for (final direction in recipe.directions) {
+          _addDirectionRow(text: direction);
+        }
       }
     }
 
     // Always have at least one empty row
     if (_ingredientRows.isEmpty) {
       _addIngredientRow();
+    }
+    if (_directionRows.isEmpty) {
+      _addDirectionRow();
     }
 
     setState(() => _isLoading = false);
@@ -99,9 +124,37 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     ));
   }
 
+  void _addDirectionRow({String text = ''}) {
+    _directionRows.add(_DirectionRow(
+      controller: TextEditingController(text: text),
+    ));
+  }
+
   void _removeIngredientRow(int index) {
     if (_ingredientRows.length > 1) {
       final row = _ingredientRows.removeAt(index);
+      row.dispose();
+      setState(() {});
+    }
+  }
+
+  void _removeDirectionRow(int index) {
+    if (_directionRows.length > 1) {
+      // Update step image map when removing a direction
+      _stepImageMap.remove(index);
+      // Shift indices for rows after the removed one
+      final newMap = <int, int>{};
+      for (final entry in _stepImageMap.entries) {
+        if (entry.key > index) {
+          newMap[entry.key - 1] = entry.value;
+        } else {
+          newMap[entry.key] = entry.value;
+        }
+      }
+      _stepImageMap.clear();
+      _stepImageMap.addAll(newMap);
+      
+      final row = _directionRows.removeAt(index);
       row.dispose();
       setState(() {});
     }
@@ -114,8 +167,10 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     _servesController.dispose();
     _timeController.dispose();
     _notesController.dispose();
-    _directionsController.dispose();
     for (final row in _ingredientRows) {
+      row.dispose();
+    }
+    for (final row in _directionRows) {
       row.dispose();
     }
     super.dispose();
@@ -154,8 +209,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Recipe image (at top like Mains)
-            _buildImagePicker(theme),
+            // Header image picker (single image at top)
+            _buildHeaderImagePicker(theme),
             const SizedBox(height: 16),
 
             // Recipe name
@@ -242,31 +297,15 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             _buildIngredientsSection(theme),
             const SizedBox(height: 24),
 
-            // Directions
-            Text(
-              'Directions',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              'Separate steps with blank lines.',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-            ),
-            const SizedBox(height: 8),
-            TextField(
-              controller: _directionsController,
-              decoration: const InputDecoration(
-                hintText: 'Prepare the base solution...\n\nDrop into the bath...\n\n...',
-                alignLabelWithHint: true,
-              ),
-              maxLines: 15,
-              minLines: 8,
-            ),
+            // Directions (individual steps with image picker)
+            _buildDirectionsSection(theme),
             const SizedBox(height: 24),
+
+            // Step Images Gallery (shown if any step has images)
+            if (_stepImages.isNotEmpty) ...[
+              _buildStepImagesGallery(theme),
+              const SizedBox(height: 24),
+            ],
 
             // Comments (single notes field)
             Text(
@@ -614,174 +653,419 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     );
   }
 
-  Widget _buildImagePicker(ThemeData theme) {
-    final hasImages = _imagePaths.isNotEmpty;
+  Widget _buildHeaderImagePicker(ThemeData theme) {
+    final hasImage = _headerImage != null && _headerImage!.isNotEmpty;
 
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Header Image',
+          style: theme.textTheme.titleSmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+        const SizedBox(height: 8),
+        if (hasImage)
+          Stack(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: _buildImageWidget(_headerImage!, width: double.infinity, height: 180),
+              ),
+              Positioned(
+                top: 8,
+                right: 8,
+                child: Row(
+                  children: [
+                    Material(
+                      color: theme.colorScheme.surface.withOpacity(0.9),
+                      borderRadius: BorderRadius.circular(20),
+                      child: InkWell(
+                        onTap: () => _pickHeaderImage(ImageSource.gallery),
+                        borderRadius: BorderRadius.circular(20),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: Icon(Icons.edit, size: 18, color: theme.colorScheme.onSurface),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Material(
+                      color: theme.colorScheme.surface.withOpacity(0.9),
+                      borderRadius: BorderRadius.circular(20),
+                      child: InkWell(
+                        onTap: () => setState(() => _headerImage = null),
+                        borderRadius: BorderRadius.circular(20),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: Icon(Icons.close, size: 18, color: theme.colorScheme.onSurface),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          )
+        else
+          GestureDetector(
+            onTap: () => _showHeaderImageSourceDialog(),
+            child: Container(
+              height: 180,
+              decoration: BoxDecoration(
+                color: theme.colorScheme.surfaceContainerHighest,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: theme.colorScheme.outline.withOpacity(0.3),
+                ),
+              ),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.add_photo_alternate_outlined,
+                      size: 48,
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Tap to add header image',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildDirectionsSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Directions',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          'Add steps and optionally attach images',
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+        const SizedBox(height: 12),
+        
+        // Direction rows
+        ReorderableListView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          buildDefaultDragHandles: false,
+          itemCount: _directionRows.length,
+          onReorder: (oldIndex, newIndex) {
+            setState(() {
+              if (newIndex > oldIndex) newIndex--;
+              final item = _directionRows.removeAt(oldIndex);
+              _directionRows.insert(newIndex, item);
+              
+              // Update step image map when reordering
+              final oldImageIdx = _stepImageMap.remove(oldIndex);
+              final newMap = <int, int>{};
+              for (final entry in _stepImageMap.entries) {
+                if (entry.key >= newIndex && entry.key < oldIndex) {
+                  newMap[entry.key + 1] = entry.value;
+                } else if (entry.key > oldIndex && entry.key <= newIndex) {
+                  newMap[entry.key - 1] = entry.value;
+                } else {
+                  newMap[entry.key] = entry.value;
+                }
+              }
+              if (oldImageIdx != null) {
+                newMap[newIndex] = oldImageIdx;
+              }
+              _stepImageMap.clear();
+              _stepImageMap.addAll(newMap);
+            });
+          },
+          proxyDecorator: (child, index, animation) {
+            return AnimatedBuilder(
+              animation: animation,
+              builder: (context, child) {
+                return Material(
+                  elevation: 4,
+                  color: theme.colorScheme.surface,
+                  borderRadius: BorderRadius.circular(8),
+                  child: child,
+                );
+              },
+              child: child,
+            );
+          },
+          itemBuilder: (context, index) {
+            return _buildDirectionRowWidget(index, theme, key: ValueKey(_directionRows[index]));
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildDirectionRowWidget(int index, ThemeData theme, {Key? key}) {
+    final row = _directionRows[index];
+    final isLast = index == _directionRows.length - 1;
+    final hasImage = _stepImageMap.containsKey(index);
+    final imageIndex = _stepImageMap[index];
+
+    return Container(
+      key: key,
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Drag handle and step number
+          Column(
+            children: [
+              ReorderableDragStartListener(
+                index: index,
+                child: Icon(
+                  Icons.drag_handle,
+                  size: 20,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  shape: BoxShape.circle,
+                  border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
+                ),
+                child: Center(
+                  child: Text(
+                    '${index + 1}',
+                    style: TextStyle(
+                      color: theme.colorScheme.secondary,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(width: 8),
+
+          // Direction text field
+          Expanded(
+            child: TextField(
+              controller: row.controller,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                border: const OutlineInputBorder(),
+                hintText: 'Enter step ${index + 1}...',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              maxLines: 3,
+              minLines: 2,
+              style: theme.textTheme.bodyMedium,
+              onChanged: (value) {
+                // Auto-add new row when typing in last row
+                if (isLast && value.isNotEmpty) {
+                  _addDirectionRow();
+                  setState(() {});
+                }
+              },
+            ),
+          ),
+          const SizedBox(width: 8),
+
+          // Image picker and delete buttons
+          Column(
+            children: [
+              // Image picker button
+              IconButton(
+                icon: Icon(
+                  hasImage ? Icons.image : Icons.add_photo_alternate_outlined,
+                  size: 20,
+                  color: hasImage ? theme.colorScheme.primary : theme.colorScheme.outline,
+                ),
+                tooltip: hasImage ? 'Image #${imageIndex! + 1} attached' : 'Add image for this step',
+                onPressed: () => _pickStepImage(index),
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+              // Remove image if has one
+              if (hasImage)
+                IconButton(
+                  icon: Icon(
+                    Icons.link_off,
+                    size: 16,
+                    color: theme.colorScheme.outline,
+                  ),
+                  tooltip: 'Remove image link',
+                  onPressed: () {
+                    setState(() => _stepImageMap.remove(index));
+                  },
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+                ),
+              // Delete button
+              IconButton(
+                icon: Icon(
+                  Icons.close,
+                  size: 18,
+                  color: theme.colorScheme.outline,
+                ),
+                onPressed: _directionRows.length > 1
+                    ? () => _removeDirectionRow(index)
+                    : null,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStepImagesGallery(ThemeData theme) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           children: [
             Text(
-              'Recipe Photos',
-              style: theme.textTheme.titleSmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+              'Step Images',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
               ),
             ),
-            if (hasImages) ...[
-              const SizedBox(width: 8),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.primaryContainer,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Text(
-                  '${_imagePaths.length}',
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onPrimaryContainer,
-                    fontWeight: FontWeight.w500,
-                  ),
+            const SizedBox(width: 8),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.primaryContainer,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                '${_stepImages.length}',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onPrimaryContainer,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
-            ],
+            ),
           ],
         ),
+        const SizedBox(height: 4),
+        Text(
+          'Images attached to steps above',
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
         const SizedBox(height: 8),
-        if (hasImages)
-          _buildImageGallery(theme)
-        else
-          _buildEmptyImagePicker(theme),
-      ],
-    );
-  }
+        SizedBox(
+          height: 100,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: _stepImages.length,
+            itemBuilder: (context, index) {
+              // Find which step(s) use this image
+              final stepsUsingImage = _stepImageMap.entries
+                  .where((e) => e.value == index)
+                  .map((e) => e.key + 1)
+                  .toList();
 
-  Widget _buildEmptyImagePicker(ThemeData theme) {
-    return GestureDetector(
-      onTap: _showImageSourceDialog,
-      child: Container(
-        height: 180,
-        decoration: BoxDecoration(
-          color: theme.colorScheme.surfaceContainerHighest,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
-          ),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.add_photo_alternate_outlined,
-                size: 48,
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Tap to add photos',
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildImageGallery(ThemeData theme) {
-    return SizedBox(
-      height: 120,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: _imagePaths.length + 1,
-        itemBuilder: (context, index) {
-          if (index == _imagePaths.length) {
-            return Padding(
-              padding: const EdgeInsets.only(left: 8),
-              child: GestureDetector(
-                onTap: _showImageSourceDialog,
-                child: Container(
-                  width: 100,
-                  decoration: BoxDecoration(
-                    color: theme.colorScheme.surfaceContainerHighest,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: theme.colorScheme.outline.withOpacity(0.3),
+              return Padding(
+                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: _buildImageWidget(_stepImages[index], width: 100, height: 100),
                     ),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.add,
-                        size: 32,
-                        color: theme.colorScheme.onSurfaceVariant,
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Add',
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
+                    // Step numbers badge
+                    if (stepsUsingImage.isNotEmpty)
+                      Positioned(
+                        top: 4,
+                        left: 4,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: theme.colorScheme.primary,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Text(
+                            stepsUsingImage.map((s) => '#$s').join(', '),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              ),
-            );
-          }
-
-          return Padding(
-            padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
-            child: Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: _buildImageWidget(_imagePaths[index], width: 100, height: 120),
-                ),
-                Positioned(
-                  top: 4,
-                  left: 4,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.6),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      '${index + 1}',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
+                    // Delete button
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: Material(
+                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        borderRadius: BorderRadius.circular(20),
+                        child: InkWell(
+                          onTap: () {
+                            setState(() {
+                              // Remove all step associations to this image
+                              _stepImageMap.removeWhere((k, v) => v == index);
+                              // Update indices for images after this one
+                              final newMap = <int, int>{};
+                              for (final entry in _stepImageMap.entries) {
+                                if (entry.value > index) {
+                                  newMap[entry.key] = entry.value - 1;
+                                } else {
+                                  newMap[entry.key] = entry.value;
+                                }
+                              }
+                              _stepImageMap.clear();
+                              _stepImageMap.addAll(newMap);
+                              _stepImages.removeAt(index);
+                            });
+                          },
+                          borderRadius: BorderRadius.circular(20),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4),
+                            child: Icon(Icons.close, size: 16, color: theme.colorScheme.onSurface),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-                Positioned(
-                  top: 4,
-                  right: 4,
-                  child: Material(
-                    color: theme.colorScheme.surface.withOpacity(0.9),
-                    borderRadius: BorderRadius.circular(20),
-                    child: InkWell(
-                      onTap: () => setState(() => _imagePaths.removeAt(index)),
-                      borderRadius: BorderRadius.circular(20),
-                      child: Padding(
-                        padding: const EdgeInsets.all(4),
-                        child: Icon(Icons.close, size: 16, color: theme.colorScheme.onSurface),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          );
-        },
-      ),
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 
@@ -813,7 +1097,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     }
   }
 
-  void _showImageSourceDialog() {
+  void _showHeaderImageSourceDialog() {
     showModalBottomSheet(
       context: context,
       builder: (ctx) => SafeArea(
@@ -825,7 +1109,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               title: const Text('Take Photo'),
               onTap: () {
                 Navigator.pop(ctx);
-                _pickImage(ImageSource.camera);
+                _pickHeaderImage(ImageSource.camera);
               },
             ),
             ListTile(
@@ -833,15 +1117,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               title: const Text('Choose from Gallery'),
               onTap: () {
                 Navigator.pop(ctx);
-                _pickImage(ImageSource.gallery);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.collections),
-              title: const Text('Choose Multiple Photos'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickMultipleImages();
+                _pickHeaderImage(ImageSource.gallery);
               },
             ),
             ListTile(
@@ -855,7 +1131,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     );
   }
 
-  Future<void> _pickImage(ImageSource source) async {
+  Future<void> _pickHeaderImage(ImageSource source) async {
     try {
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
@@ -866,17 +1142,9 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       );
 
       if (pickedFile != null) {
-        final appDir = await getApplicationDocumentsDirectory();
-        final imagesDir = Directory('${appDir.path}/modernist_images');
-        if (!await imagesDir.exists()) {
-          await imagesDir.create(recursive: true);
-        }
-
-        final fileName = '${_uuid.v4()}${path.extension(pickedFile.path)}';
-        final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
-
+        final savedPath = await _saveImageToLocal(pickedFile.path);
         setState(() {
-          _imagePaths.add(savedFile.path);
+          _headerImage = savedPath;
         });
       }
     } catch (e) {
@@ -888,37 +1156,119 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     }
   }
 
-  Future<void> _pickMultipleImages() async {
+  Future<void> _pickStepImage(int stepIndex) async {
+    // Show dialog to pick new image or select existing step image
+    if (_stepImages.isNotEmpty) {
+      showModalBottomSheet(
+        context: context,
+        builder: (ctx) => SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                leading: const Icon(Icons.add_photo_alternate),
+                title: const Text('Add New Image'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  _pickNewStepImage(stepIndex);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.photo_library),
+                title: const Text('Choose from Existing Step Images'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  _selectExistingStepImage(stepIndex);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.close),
+                title: const Text('Cancel'),
+                onTap: () => Navigator.pop(ctx),
+              ),
+            ],
+          ),
+        ),
+      );
+    } else {
+      _pickNewStepImage(stepIndex);
+    }
+  }
+
+  void _selectExistingStepImage(int stepIndex) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Select Image'),
+        content: SizedBox(
+          width: 300,
+          height: 200,
+          child: GridView.builder(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              crossAxisSpacing: 8,
+              mainAxisSpacing: 8,
+            ),
+            itemCount: _stepImages.length,
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                onTap: () {
+                  setState(() => _stepImageMap[stepIndex] = index);
+                  Navigator.pop(ctx);
+                },
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: _buildImageWidget(_stepImages[index]),
+                ),
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _pickNewStepImage(int stepIndex) async {
     try {
       final picker = ImagePicker();
-      final pickedFiles = await picker.pickMultiImage(
+      final pickedFile = await picker.pickImage(
+        source: ImageSource.gallery,
         maxWidth: 1200,
         maxHeight: 1200,
         imageQuality: 85,
       );
 
-      if (pickedFiles.isNotEmpty) {
-        final appDir = await getApplicationDocumentsDirectory();
-        final imagesDir = Directory('${appDir.path}/modernist_images');
-        if (!await imagesDir.exists()) {
-          await imagesDir.create(recursive: true);
-        }
-
-        for (final pickedFile in pickedFiles) {
-          final fileName = '${_uuid.v4()}${path.extension(pickedFile.path)}';
-          final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
-          _imagePaths.add(savedFile.path);
-        }
-
-        setState(() {});
+      if (pickedFile != null) {
+        final savedPath = await _saveImageToLocal(pickedFile.path);
+        setState(() {
+          _stepImages.add(savedPath);
+          _stepImageMap[stepIndex] = _stepImages.length - 1;
+        });
       }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking images: $e')),
+          SnackBar(content: Text('Error picking image: $e')),
         );
       }
     }
+  }
+
+  Future<String> _saveImageToLocal(String sourcePath) async {
+    final appDir = await getApplicationDocumentsDirectory();
+    final imagesDir = Directory('${appDir.path}/modernist_images');
+    if (!await imagesDir.exists()) {
+      await imagesDir.create(recursive: true);
+    }
+    final fileName = '${_uuid.v4()}${path.extension(sourcePath)}';
+    final savedFile = await File(sourcePath).copy('${imagesDir.path}/$fileName');
+    return savedFile.path;
   }
 
   Future<void> _saveRecipe() async {
@@ -960,11 +1310,15 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           })
           .toList();
 
-      // Build directions
-      final directions = _directionsController.text
-          .split(RegExp(r'\n\s*\n'))
-          .map((s) => s.trim())
-          .where((s) => s.isNotEmpty)
+      // Build directions from individual rows
+      final directions = _directionRows
+          .where((row) => row.controller.text.trim().isNotEmpty)
+          .map((row) => row.controller.text.trim())
+          .toList();
+
+      // Build step image map as strings for Isar
+      final stepImageMapStrings = _stepImageMap.entries
+          .map((e) => '${e.key}:${e.value}')
           .toList();
 
       final repo = ref.read(modernistRepositoryProvider);
@@ -988,8 +1342,9 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ..notes = _notesController.text.trim().isEmpty
               ? null
               : _notesController.text.trim()
-          ..imageUrls = _imagePaths
-          ..imageUrl = _imagePaths.isNotEmpty ? _imagePaths.first : null
+          ..headerImage = _headerImage
+          ..stepImages = _stepImages
+          ..stepImageMap = stepImageMapStrings
           ..updatedAt = DateTime.now();
 
         await repo.save(_existingRecipe!);
@@ -1012,8 +1367,9 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           notes: _notesController.text.trim().isEmpty
               ? null
               : _notesController.text.trim(),
-          imageUrls: _imagePaths,
-          imageUrl: _imagePaths.isNotEmpty ? _imagePaths.first : null,
+          headerImage: _headerImage,
+          stepImages: _stepImages,
+          stepImageMap: stepImageMapStrings,
         );
       }
 
@@ -1049,5 +1405,16 @@ class _IngredientRow {
     nameController.dispose();
     amountController.dispose();
     notesController.dispose();
+  }
+}
+
+/// Helper class for direction row controllers
+class _DirectionRow {
+  final TextEditingController controller;
+
+  _DirectionRow({required this.controller});
+
+  void dispose() {
+    controller.dispose();
   }
 }

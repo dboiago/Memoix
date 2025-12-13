@@ -22,6 +22,14 @@ class ModernistDetailScreen extends ConsumerStatefulWidget {
 class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   final Set<int> _completedDirections = {};
   final Set<int> _checkedIngredients = {};
+  final ScrollController _scrollController = ScrollController();
+  final GlobalKey _stepImagesKey = GlobalKey();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,16 +58,18 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   Widget _buildDetailView(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
-    final allImages = recipe.getAllImages();
-    final hasImage = allImages.isNotEmpty;
-    final hasMultipleImages = allImages.length > 1;
+    // Use headerImage for the app bar, fall back to legacy imageUrl
+    final headerImage = recipe.headerImage ?? recipe.imageUrl;
+    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final hasStepImages = recipe.stepImages.isNotEmpty;
 
     return Scaffold(
       body: CustomScrollView(
+        controller: _scrollController,
         slivers: [
-          // App bar with image (matches Mains)
+          // App bar with header image
           SliverAppBar(
-            expandedHeight: hasImage ? 250 : 150,
+            expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
@@ -72,13 +82,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ],
                 ),
               ),
-              background: hasImage
+              background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        hasMultipleImages
-                            ? _buildImageCarousel(allImages)
-                            : _buildSingleImage(allImages.first),
+                        _buildSingleImage(headerImage),
                         Container(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
@@ -103,7 +111,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                  shadows: hasImage
+                  shadows: hasHeaderImage
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -115,7 +123,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: hasImage
+                  shadows: hasHeaderImage
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -142,7 +150,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: hasImage
+                  shadows: hasHeaderImage
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -307,13 +315,23 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                         ),
                       ),
                       const SizedBox(height: 8),
-                      _buildDirectionsList(theme, recipe.directions),
+                      _buildDirectionsList(theme, recipe),
                     ],
                   ),
                 );
               },
             ),
           ),
+
+          // Step Images Gallery (under directions, before comments)
+          if (hasStepImages)
+            SliverToBoxAdapter(
+              key: _stepImagesKey,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                child: _buildStepImagesGallery(theme, recipe),
+              ),
+            ),
 
           // Comments section (at bottom, after recipe content) - matches Mains "Comments"
           if (recipe.notes != null && recipe.notes!.isNotEmpty)
@@ -456,7 +474,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     );
   }
 
-  Widget _buildDirectionsList(ThemeData theme, List<String> directions) {
+  Widget _buildDirectionsList(ThemeData theme, ModernistRecipe recipe) {
+    final directions = recipe.directions;
     if (directions.isEmpty) {
       return const Text(
         'No directions listed',
@@ -470,6 +489,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         final index = entry.key;
         final direction = entry.value;
         final isCompleted = _completedDirections.contains(index);
+        final hasImage = recipe.getStepImageIndex(index) != null;
 
         return InkWell(
           onTap: () => setState(() {
@@ -520,11 +540,205 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     ),
                   ),
                 ),
+                // Image icon if step has an image
+                if (hasImage)
+                  IconButton(
+                    icon: Icon(
+                      Icons.image_outlined,
+                      size: 20,
+                      color: theme.colorScheme.primary,
+                    ),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                    tooltip: 'View step image',
+                    onPressed: () => _scrollToAndShowImage(recipe, index),
+                  ),
               ],
             ),
           ),
         );
       }).toList(),
+    );
+  }
+
+  Widget _buildStepImagesGallery(ThemeData theme, ModernistRecipe recipe) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(Icons.photo_library, size: 20, color: theme.colorScheme.primary),
+                const SizedBox(width: 8),
+                Text(
+                  'Step Images',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 120,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: recipe.stepImages.length,
+                itemBuilder: (context, imageIndex) {
+                  // Find which step(s) use this image
+                  final stepsUsingImage = <int>[];
+                  for (int i = 0; i < recipe.directions.length; i++) {
+                    if (recipe.getStepImageIndex(i) == imageIndex) {
+                      stepsUsingImage.add(i + 1);
+                    }
+                  }
+
+                  return Padding(
+                    padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
+                    child: GestureDetector(
+                      onTap: () => _showImageFullscreen(recipe.stepImages[imageIndex]),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: _buildImageWidget(recipe.stepImages[imageIndex], width: 120, height: 120),
+                          ),
+                          // Step numbers badge
+                          if (stepsUsingImage.isNotEmpty)
+                            Positioned(
+                              top: 4,
+                              left: 4,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: theme.colorScheme.primary,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Text(
+                                  stepsUsingImage.map((s) => 'Step $s').join(', '),
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          // Expand icon
+                          Positioned(
+                            bottom: 4,
+                            right: 4,
+                            child: Container(
+                              padding: const EdgeInsets.all(4),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: const Icon(
+                                Icons.fullscreen,
+                                size: 16,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageWidget(String imagePath, {double? width, double? height}) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return Image.network(
+        imagePath,
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    } else {
+      return Image.file(
+        File(imagePath),
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    }
+  }
+
+  void _scrollToAndShowImage(ModernistRecipe recipe, int stepIndex) {
+    final imageIndex = recipe.getStepImageIndex(stepIndex);
+    if (imageIndex == null || imageIndex >= recipe.stepImages.length) return;
+
+    // Scroll to the step images section
+    final context = _stepImagesKey.currentContext;
+    if (context != null) {
+      Scrollable.ensureVisible(
+        context,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      ).then((_) {
+        // After scrolling, show the image fullscreen
+        _showImageFullscreen(recipe.stepImages[imageIndex]);
+      });
+    } else {
+      // If context not found, just show the image
+      _showImageFullscreen(recipe.stepImages[imageIndex]);
+    }
+  }
+
+  void _showImageFullscreen(String imagePath) {
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: EdgeInsets.zero,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Dark background
+            GestureDetector(
+              onTap: () => Navigator.pop(ctx),
+              child: Container(color: Colors.black.withOpacity(0.9)),
+            ),
+            // Image
+            Center(
+              child: InteractiveViewer(
+                child: imagePath.startsWith('http')
+                    ? Image.network(imagePath, fit: BoxFit.contain)
+                    : Image.file(File(imagePath), fit: BoxFit.contain),
+              ),
+            ),
+            // Close button
+            Positioned(
+              top: 40,
+              right: 16,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 32),
+                onPressed: () => Navigator.pop(ctx),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -537,10 +751,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             fit: BoxFit.cover,
             errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
           );
-  }
-
-  Widget _buildImageCarousel(List<String> images) {
-    return _ImageCarousel(images: images);
   }
 
   void _handleMenuAction(String action, ModernistRecipe recipe) async {
@@ -581,114 +791,5 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         }
         break;
     }
-  }
-}
-
-/// Simple carousel widget for recipe images
-class _ImageCarousel extends StatefulWidget {
-  final List<String> images;
-
-  const _ImageCarousel({required this.images});
-
-  @override
-  State<_ImageCarousel> createState() => _ImageCarouselState();
-}
-
-class _ImageCarouselState extends State<_ImageCarousel> {
-  late final PageController _pageController;
-  int _currentPage = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    _pageController = PageController();
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        PageView.builder(
-          controller: _pageController,
-          itemCount: widget.images.length,
-          onPageChanged: (index) => setState(() => _currentPage = index),
-          itemBuilder: (context, index) {
-            final source = widget.images[index];
-            final isLocalFile = !source.startsWith('http');
-            return isLocalFile
-                ? Image.file(
-                    File(source),
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
-                  )
-                : Image.network(
-                    source,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(color: Colors.grey.shade800),
-                  );
-          },
-        ),
-
-        // Page indicator badge (top right)
-        Positioned(
-          top: 48,
-          right: 8,
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-            decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.5),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Text(
-              '${_currentPage + 1}/${widget.images.length}',
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
-        ),
-
-        // Page indicators (bottom)
-        Positioned(
-          bottom: 60,
-          left: 0,
-          right: 0,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: List.generate(
-              widget.images.length,
-              (index) => AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                margin: const EdgeInsets.symmetric(horizontal: 4),
-                width: index == _currentPage ? 24 : 8,
-                height: 8,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: index == _currentPage
-                      ? Colors.white
-                      : Colors.white.withOpacity(0.5),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
-                      blurRadius: 4,
-                      offset: const Offset(0, 2),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
   }
 }

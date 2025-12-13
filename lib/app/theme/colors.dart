@@ -110,6 +110,11 @@ class MemoixColors {
   static const Color smokedDips = Color(0xFFD8A888);           // Soft terracotta for dips
   static const Color smokedOther = Color(0xFFB0BEC5);          // Soft blue-gray for other
 
+  // Modernist type colors (Concept vs Technique)
+  // Thematic colors that fit with the warm palette
+  static const Color modernistConcept = Color(0xFF7EB8A8);     // Sage teal - creative/flavor concepts
+  static const Color modernistTechnique = Color(0xFFB898C4);   // Soft lavender - scientific techniques
+
   // UI colors
   static const Color background = Color(0xFFFAFAFA);
   static const Color surface = Color(0xFFFFFFFF);
@@ -475,6 +480,23 @@ class MemoixColors {
         return pizzaNoSauce;
       default:
         return pizzaMarinara;
+    }
+  }
+
+  /// Get dot color for a modernist recipe type (Concept or Technique)
+  /// Uses themed colors to distinguish recipe types
+  static Color forModernistType(String? type) {
+    if (type == null || type.isEmpty) return modernistConcept;
+    
+    final lower = type.toLowerCase().trim();
+    
+    switch (lower) {
+      case 'concept':
+        return modernistConcept;
+      case 'technique':
+        return modernistTechnique;
+      default:
+        return modernistConcept;
     }
   }
 

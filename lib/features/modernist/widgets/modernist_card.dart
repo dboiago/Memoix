@@ -75,12 +75,12 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          // Colored dot for Concept/Technique (like Mains does for cuisine)
+                          // Colored dot for Concept/Technique with distinct colors
                           Container(
                             width: 8,
                             height: 8,
                             decoration: BoxDecoration(
-                              color: MemoixColors.modernist,
+                              color: MemoixColors.forModernistType(recipe.type.name),
                               shape: BoxShape.circle,
                             ),
                           ),

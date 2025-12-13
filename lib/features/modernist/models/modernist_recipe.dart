@@ -262,7 +262,17 @@ class ModernistRecipe {
   /// Source URL if imported
   String? sourceUrl;
 
-  /// Image URL or local path
+  /// Main header image (shown in app bar)
+  String? headerImage;
+
+  /// Gallery images for steps (shown at bottom)
+  List<String> stepImages = [];
+
+  /// Map of step index to image index in stepImages
+  /// Stored as "stepIndex:imageIndex" strings for Isar compatibility
+  List<String> stepImageMap = [];
+
+  /// Legacy: Image URL or local path (deprecated, use headerImage)
   String? imageUrl;
 
   /// Multiple image support
@@ -299,6 +309,9 @@ class ModernistRecipe {
     String? notes,
     String? scienceNotes,
     String? sourceUrl,
+    String? headerImage,
+    List<String>? stepImages,
+    List<String>? stepImageMap,
     String? imageUrl,
     List<String>? imageUrls,
     bool isFavorite = false,
@@ -319,6 +332,9 @@ class ModernistRecipe {
       ..notes = notes
       ..scienceNotes = scienceNotes
       ..sourceUrl = sourceUrl
+      ..headerImage = headerImage
+      ..stepImages = stepImages ?? []
+      ..stepImageMap = stepImageMap ?? []
       ..imageUrl = imageUrl
       ..imageUrls = imageUrls ?? []
       ..isFavorite = isFavorite
@@ -328,11 +344,60 @@ class ModernistRecipe {
       ..updatedAt = DateTime.now();
   }
 
-  /// Get all images (handles both imageUrls and legacy imageUrl)
+  /// Get all images (handles new structure and legacy fields)
   List<String> getAllImages() {
-    if (imageUrls.isNotEmpty) return imageUrls;
-    if (imageUrl != null && imageUrl!.isNotEmpty) return [imageUrl!];
-    return [];
+    final images = <String>[];
+    if (headerImage != null && headerImage!.isNotEmpty) {
+      images.add(headerImage!);
+    } else if (imageUrl != null && imageUrl!.isNotEmpty) {
+      // Legacy fallback
+      images.add(imageUrl!);
+    }
+    if (stepImages.isNotEmpty) {
+      images.addAll(stepImages);
+    } else if (imageUrls.isNotEmpty) {
+      // Legacy fallback
+      images.addAll(imageUrls.where((u) => u != headerImage && u != imageUrl));
+    }
+    return images;
+  }
+
+  /// Get image index for a specific step (0-based)
+  /// Returns null if no image is associated with this step
+  int? getStepImageIndex(int stepIndex) {
+    for (final mapping in stepImageMap) {
+      final parts = mapping.split(':');
+      if (parts.length == 2) {
+        final sIdx = int.tryParse(parts[0]);
+        final iIdx = int.tryParse(parts[1]);
+        if (sIdx == stepIndex && iIdx != null) {
+          return iIdx;
+        }
+      }
+    }
+    return null;
+  }
+
+  /// Get the image path for a specific step
+  String? getStepImage(int stepIndex) {
+    final imageIndex = getStepImageIndex(stepIndex);
+    if (imageIndex != null && imageIndex < stepImages.length) {
+      return stepImages[imageIndex];
+    }
+    return null;
+  }
+
+  /// Set image association for a step
+  void setStepImage(int stepIndex, int imageIndex) {
+    // Remove existing mapping for this step
+    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
+    // Add new mapping
+    stepImageMap.add('$stepIndex:$imageIndex');
+  }
+
+  /// Remove image association for a step
+  void removeStepImage(int stepIndex) {
+    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
   }
 
   /// Convert to JSON (for sharing/export)
@@ -351,6 +416,9 @@ class ModernistRecipe {
       'notes': notes,
       'scienceNotes': scienceNotes,
       'sourceUrl': sourceUrl,
+      'headerImage': headerImage,
+      'stepImages': stepImages,
+      'stepImageMap': stepImageMap,
       'imageUrl': imageUrl,
       'imageUrls': imageUrls,
       'isFavorite': isFavorite,
@@ -386,6 +454,13 @@ class ModernistRecipe {
       ..notes = json['notes'] as String?
       ..scienceNotes = json['scienceNotes'] as String?
       ..sourceUrl = json['sourceUrl'] as String?
+      ..headerImage = json['headerImage'] as String?
+      ..stepImages = (json['stepImages'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList() ?? []
+      ..stepImageMap = (json['stepImageMap'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList() ?? []
       ..imageUrl = json['imageUrl'] as String?
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
           ?.map((e) => e as String)
