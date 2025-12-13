@@ -161,18 +161,18 @@ class _DirectionListState extends State<DirectionList> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: isCompleted
-                        ? Colors.green
+                        ? theme.colorScheme.surfaceContainerHighest
                         : theme.colorScheme.secondary.withOpacity(0.15),
                     border: Border.all(
                       color: isCompleted
-                          ? Colors.green
+                          ? theme.colorScheme.outline.withOpacity(0.5)
                           : theme.colorScheme.secondary,
                       width: 1.5,
                     ),
                   ),
                   child: Center(
                     child: isCompleted
-                        ? const Icon(Icons.check, size: 16, color: Colors.white)
+                        ? Icon(Icons.check, size: 16, color: theme.colorScheme.outline)
                         : Text(
                             '$displayNumber',
                             style: TextStyle(
