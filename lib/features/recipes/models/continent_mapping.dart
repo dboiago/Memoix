@@ -34,6 +34,7 @@ class ContinentMapping {
     
     // American
     'american': 'American',
+    'canadian': 'American',
     'mexican': 'American',
     'brazilian': 'American',
     'peruvian': 'American',
@@ -86,6 +87,7 @@ class ContinentMapping {
     'turkish': 'Turkey',
     
     'american': 'United States',
+    'canadian': 'Canada',
     'mexican': 'Mexico',
     'brazilian': 'Brazil',
     'peruvian': 'Peru',

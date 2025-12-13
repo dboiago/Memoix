@@ -233,26 +233,26 @@ class _IngredientListState extends State<IngredientList> {
               ),
             ],
 
-            // Preparation and/or alternative notes (right aligned)
-            if (hasPreparation || hasAlternative) ...[
-              const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  [
-                    if (hasPreparation) ingredient.preparation!,
-                    if (hasAlternative) ingredient.alternative!,
-                  ].join(' · '),
-                  style: TextStyle(
-                    decoration: isChecked ? TextDecoration.lineThrough : null,
-                    color: isChecked
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
-                        : theme.colorScheme.primary,
-                    fontStyle: FontStyle.italic,
-                  ),
-                  textAlign: TextAlign.right,
-                ),
-              ),
-            ],
+            // Spacer and notes section (always present for alignment)
+            const SizedBox(width: 12),
+            Expanded(
+              child: (hasPreparation || hasAlternative)
+                  ? Text(
+                      [
+                        if (hasPreparation) ingredient.preparation!,
+                        if (hasAlternative) ingredient.alternative!,
+                      ].join(' · '),
+                      style: TextStyle(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.primary,
+                        fontStyle: FontStyle.italic,
+                      ),
+                      textAlign: TextAlign.right,
+                    )
+                  : const SizedBox.shrink(),
+            ),
           ],
         ),
       ),
