@@ -16,7 +16,7 @@ class SmokingListScreen extends ConsumerStatefulWidget {
 }
 
 class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
-  WoodType? _selectedWood;
+  String? _selectedWood;
   String _searchQuery = '';
 
   @override
@@ -42,7 +42,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
 
           // Get available woods
           final availableWoods = recipes.map((r) => r.wood).toSet().toList()
-            ..sort((a, b) => a.displayName.compareTo(b.displayName));
+            ..sort((a, b) => a.compareTo(b));
 
           // Filter recipes
           var filtered = recipes;
@@ -52,7 +52,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
           if (_searchQuery.isNotEmpty) {
             filtered = filtered.where((r) =>
                 r.name.toLowerCase().contains(_searchQuery) ||
-                r.woodDisplayName.toLowerCase().contains(_searchQuery)).toList();
+                r.wood.toLowerCase().contains(_searchQuery)).toList();
           }
 
           return Column(
@@ -88,7 +88,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                       _buildWoodChip(null, 'All', filtered.length),
                       ...availableWoods.map((wood) {
                         final count = recipes.where((r) => r.wood == wood).length;
-                        return _buildWoodChip(wood, wood.displayName, count);
+                        return _buildWoodChip(wood, wood, count);
                       }),
                     ],
                   ),
@@ -126,7 +126,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
     );
   }
 
-  Widget _buildWoodChip(WoodType? wood, String label, int count) {
+  Widget _buildWoodChip(String? wood, String label, int count) {
     final theme = Theme.of(context);
     final isSelected = _selectedWood == wood;
 

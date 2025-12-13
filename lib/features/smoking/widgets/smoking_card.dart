@@ -82,7 +82,7 @@ class SmokingCard extends StatelessWidget {
                         ),
                         const SizedBox(width: 4),
                         Text(
-                          recipe.woodDisplayName,
+                          recipe.wood,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),

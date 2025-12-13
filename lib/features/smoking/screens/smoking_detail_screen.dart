@@ -175,7 +175,7 @@ class SmokingDetailScreen extends ConsumerWidget {
         _buildInfoChip(
           context,
           Icons.park,
-          recipe.woodDisplayName,
+          recipe.wood,
           'Wood',
         ),
       ],

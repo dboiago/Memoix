@@ -16,11 +16,11 @@ class SmokingRepository {
   }
 
   /// Get recipes by wood type
-  Future<List<SmokingRecipe>> getRecipesByWood(WoodType wood) async {
+  Future<List<SmokingRecipe>> getRecipesByWood(String wood) async {
     return await _db.smokingRecipes
         .where()
         .filter()
-        .woodEqualTo(wood)
+        .woodEqualTo(wood, caseSensitive: false)
         .sortByName()
         .findAll();
   }
@@ -58,7 +58,7 @@ class SmokingRepository {
   }
 
   /// Get available wood types that have recipes
-  Future<Set<WoodType>> getAvailableWoods() async {
+  Future<Set<String>> getAvailableWoods() async {
     final recipes = await getAllRecipes();
     return recipes.map((r) => r.wood).toSet();
   }
@@ -66,7 +66,7 @@ class SmokingRepository {
 
 // Providers
 final smokingRepositoryProvider = Provider<SmokingRepository>((ref) {
-  final db = ref.watch(isarProvider);
+  final db = ref.watch(databaseProvider);
   return SmokingRepository(db);
 });
 

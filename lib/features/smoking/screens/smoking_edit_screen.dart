@@ -20,11 +20,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final _nameController = TextEditingController();
   final _temperatureController = TextEditingController();
   final _timeController = TextEditingController();
-  final _customWoodController = TextEditingController();
+  final _woodController = TextEditingController();
   final _notesController = TextEditingController();
   final _imageUrlController = TextEditingController();
 
-  WoodType _selectedWood = WoodType.hickory;
   final List<_SeasoningEntry> _seasonings = [];
   final List<TextEditingController> _directionControllers = [];
 
@@ -47,8 +46,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _nameController.text = recipe.name;
         _temperatureController.text = recipe.temperature;
         _timeController.text = recipe.time;
-        _selectedWood = recipe.wood;
-        _customWoodController.text = recipe.customWood ?? '';
+        _woodController.text = recipe.wood;
         _notesController.text = recipe.notes ?? '';
         _imageUrlController.text = recipe.imageUrl ?? '';
 
@@ -75,6 +73,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (_directionControllers.isEmpty) {
       _directionControllers.add(TextEditingController());
     }
+    // Default wood for new recipes
+    if (_woodController.text.isEmpty) {
+      _woodController.text = 'Hickory';
+    }
 
     setState(() => _isLoading = false);
   }
@@ -84,7 +86,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     _nameController.dispose();
     _temperatureController.dispose();
     _timeController.dispose();
-    _customWoodController.dispose();
+    _woodController.dispose();
     _notesController.dispose();
     _imageUrlController.dispose();
     for (final entry in _seasonings) {
@@ -170,41 +172,34 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             const SizedBox(height: 16),
 
-            // Wood type selector
-            DropdownButtonFormField<WoodType>(
-              value: _selectedWood,
-              decoration: const InputDecoration(
-                labelText: 'Wood Type *',
-                prefixIcon: Icon(Icons.park),
-              ),
-              items: WoodType.values.map((wood) {
-                return DropdownMenuItem(
-                  value: wood,
-                  child: Text(wood.displayName),
+            // Wood type with autocomplete suggestions
+            Autocomplete<String>(
+              initialValue: TextEditingValue(text: _woodController.text),
+              optionsBuilder: (textEditingValue) {
+                return WoodSuggestions.getSuggestions(textEditingValue.text);
+              },
+              fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                // Sync with our controller
+                controller.addListener(() {
+                  _woodController.text = controller.text;
+                });
+                return TextFormField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: const InputDecoration(
+                    labelText: 'Wood Type *',
+                    hintText: 'e.g., Hickory, Cherry, Apple',
+                    prefixIcon: Icon(Icons.park),
+                  ),
+                  validator: (v) =>
+                      v?.isEmpty ?? true ? 'Wood type is required' : null,
+                  textCapitalization: TextCapitalization.words,
                 );
-              }).toList(),
-              onChanged: (value) {
-                if (value != null) {
-                  setState(() => _selectedWood = value);
-                }
+              },
+              onSelected: (selection) {
+                _woodController.text = selection;
               },
             ),
-
-            // Custom wood name (if "Other" selected)
-            if (_selectedWood == WoodType.other) ...[
-              const SizedBox(height: 16),
-              TextFormField(
-                controller: _customWoodController,
-                decoration: const InputDecoration(
-                  labelText: 'Custom Wood Name *',
-                  hintText: 'Enter the wood type',
-                ),
-                validator: (v) => _selectedWood == WoodType.other &&
-                        (v?.isEmpty ?? true)
-                    ? 'Please enter the wood type'
-                    : null,
-              ),
-            ],
 
             const SizedBox(height: 24),
 
@@ -432,10 +427,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..name = _nameController.text.trim()
       ..temperature = _temperatureController.text.trim()
       ..time = _timeController.text.trim()
-      ..wood = _selectedWood
-      ..customWood = _selectedWood == WoodType.other
-          ? _customWoodController.text.trim()
-          : null
+      ..wood = _woodController.text.trim()
       ..seasonings = seasonings
       ..directions = directions
       ..notes = _notesController.text.trim().isEmpty

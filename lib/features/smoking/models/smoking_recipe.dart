@@ -2,60 +2,43 @@ import 'package:isar/isar.dart';
 
 part 'smoking_recipe.g.dart';
 
-/// Common wood types for smoking
-enum WoodType {
-  hickory,
-  mesquite,
-  applewood,
-  cherrywood,
-  pecanwood,
-  oakwood,
-  maplewood,
-  alderwood,
-  peachwood,
-  pearwood,
-  walnut,
-  other,
-}
+/// Common wood suggestions for autocomplete
+/// Users can enter any wood type they want
+class WoodSuggestions {
+  WoodSuggestions._();
 
-extension WoodTypeExtension on WoodType {
-  String get displayName {
-    switch (this) {
-      case WoodType.hickory:
-        return 'Hickory';
-      case WoodType.mesquite:
-        return 'Mesquite';
-      case WoodType.applewood:
-        return 'Apple';
-      case WoodType.cherrywood:
-        return 'Cherry';
-      case WoodType.pecanwood:
-        return 'Pecan';
-      case WoodType.oakwood:
-        return 'Oak';
-      case WoodType.maplewood:
-        return 'Maple';
-      case WoodType.alderwood:
-        return 'Alder';
-      case WoodType.peachwood:
-        return 'Peach';
-      case WoodType.pearwood:
-        return 'Pear';
-      case WoodType.walnut:
-        return 'Walnut';
-      case WoodType.other:
-        return 'Other';
-    }
-  }
+  static const List<String> common = [
+    'Hickory',
+    'Mesquite',
+    'Apple',
+    'Cherry',
+    'Pecan',
+    'Oak',
+    'Maple',
+    'Alder',
+    'Peach',
+    'Pear',
+    'Walnut',
+    'Mulberry',
+    'Olive',
+    'Grapevine',
+    'Beech',
+    'Ash',
+    'Birch',
+    'Chestnut',
+    'Citrus',
+    'Fig',
+    'Lemon',
+    'Nectarine',
+    'Plum',
+    'Apricot',
+  ];
 
-  static WoodType fromString(String value) {
-    final lower = value.toLowerCase().trim();
-    for (final wood in WoodType.values) {
-      if (wood.name == lower || wood.displayName.toLowerCase() == lower) {
-        return wood;
-      }
-    }
-    return WoodType.other;
+  /// Get suggestions matching a query
+  static List<String> getSuggestions(String query) {
+    if (query.isEmpty) return common;
+    final lower = query.toLowerCase();
+    return common.where((w) => w.toLowerCase().contains(lower)).toList();
   }
 }
 
@@ -112,12 +95,9 @@ class SmokingRecipe {
   /// Smoking duration (e.g., "3 hrs", "6-8 hours")
   late String time;
 
-  /// Type of wood used
-  @Enumerated(EnumType.name)
-  WoodType wood = WoodType.hickory;
-
-  /// Custom wood name if wood == other
-  String? customWood;
+  /// Type of wood used (free-form text)
+  @Index()
+  late String wood;
 
   /// Seasonings/rub ingredients
   List<SmokingSeasoning> seasonings = [];
@@ -141,22 +121,13 @@ class SmokingRecipe {
 
   SmokingRecipe();
 
-  /// Get display name for wood (handles custom)
-  String get woodDisplayName {
-    if (wood == WoodType.other && customWood != null && customWood!.isNotEmpty) {
-      return customWood!;
-    }
-    return wood.displayName;
-  }
-
   /// Factory constructor for creating with required fields
   static SmokingRecipe create({
     required String uuid,
     required String name,
     required String temperature,
     required String time,
-    WoodType wood = WoodType.hickory,
-    String? customWood,
+    required String wood,
     List<SmokingSeasoning>? seasonings,
     List<String>? directions,
     String? notes,
@@ -169,7 +140,6 @@ class SmokingRecipe {
       ..temperature = temperature
       ..time = time
       ..wood = wood
-      ..customWood = customWood
       ..seasonings = seasonings ?? []
       ..directions = directions ?? []
       ..notes = notes
