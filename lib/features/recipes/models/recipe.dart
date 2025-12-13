@@ -68,6 +68,16 @@ class Recipe {
   /// Use imageUrls instead
   String? imageUrl;
 
+  /// Main header image (shown in app bar)
+  String? headerImage;
+
+  /// Gallery images for steps (shown at bottom)
+  List<String> stepImages = [];
+
+  /// Map of step index to image index in stepImages
+  /// Stored as "stepIndex:imageIndex" strings for Isar compatibility
+  List<String> stepImageMap = [];
+
   /// Where this recipe came from
   @Enumerated(EnumType.name)
   RecipeSource source = RecipeSource.personal;
@@ -184,6 +194,15 @@ class Recipe {
               ?.map((e) => e as String)
               .toList() ??
           []
+      ..headerImage = json['headerImage'] as String?
+      ..stepImages = (json['stepImages'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          []
+      ..stepImageMap = (json['stepImageMap'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          []
       ..source = RecipeSource.values.firstWhere(
         (e) => e.name == json['source'],
         orElse: () => RecipeSource.memoix,
@@ -230,6 +249,9 @@ class Recipe {
       'sourceUrl': sourceUrl,
       'imageUrl': imageUrl,
       'imageUrls': imageUrls,
+      'headerImage': headerImage,
+      'stepImages': stepImages,
+      'stepImageMap': stepImageMap,
       'source': source.name,
       'colorValue': colorValue,
       'isFavorite': isFavorite,
@@ -246,13 +268,18 @@ class Recipe {
 
   /// Get all images (handles both new imageUrls and legacy imageUrl fields)
   List<String> getAllImages() {
-    if (imageUrls.isNotEmpty) {
-      return imageUrls;
+    final images = <String>[];
+    if (headerImage != null && headerImage!.isNotEmpty) {
+      images.add(headerImage!);
+    } else if (imageUrls.isNotEmpty) {
+      images.addAll(imageUrls);
+    } else if (imageUrl != null && imageUrl!.isNotEmpty) {
+      images.add(imageUrl!);
     }
-    if (imageUrl != null && imageUrl!.isNotEmpty) {
-      return [imageUrl!];
+    if (stepImages.isNotEmpty) {
+      images.addAll(stepImages);
     }
-    return [];
+    return images;
   }
 
   /// Check if recipe has any images
@@ -260,8 +287,47 @@ class Recipe {
 
   /// Get first image if available
   String? getFirstImage() {
+    if (headerImage != null && headerImage!.isNotEmpty) return headerImage;
     final images = getAllImages();
     return images.isNotEmpty ? images.first : null;
+  }
+
+  /// Get image index for a specific step (0-based)
+  /// Returns null if no image is associated with this step
+  int? getStepImageIndex(int stepIndex) {
+    for (final mapping in stepImageMap) {
+      final parts = mapping.split(':');
+      if (parts.length == 2) {
+        final sIdx = int.tryParse(parts[0]);
+        final iIdx = int.tryParse(parts[1]);
+        if (sIdx == stepIndex && iIdx != null) {
+          return iIdx;
+        }
+      }
+    }
+    return null;
+  }
+
+  /// Get the image path for a specific step
+  String? getStepImage(int stepIndex) {
+    final imageIndex = getStepImageIndex(stepIndex);
+    if (imageIndex != null && imageIndex < stepImages.length) {
+      return stepImages[imageIndex];
+    }
+    return null;
+  }
+
+  /// Set image association for a step
+  void setStepImage(int stepIndex, int imageIndex) {
+    // Remove existing mapping for this step
+    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
+    // Add new mapping
+    stepImageMap.add('$stepIndex:$imageIndex');
+  }
+
+  /// Remove image association for a step
+  void removeStepImage(int stepIndex) {
+    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
   }
 
   /// Create a shareable copy (removes personal metadata)

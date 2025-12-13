@@ -1,4 +1,7 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+
+import '../models/recipe.dart';
 
 /// Capitalize the first letter of a sentence
 String _capitalizeSentence(String text) {
@@ -8,8 +11,17 @@ String _capitalizeSentence(String text) {
 
 class DirectionList extends StatefulWidget {
   final List<String> directions;
+  final Recipe? recipe;  // Optional: pass recipe for step image support
+  final VoidCallback? onStepImageTap;  // Callback when step image icon is tapped
+  final Function(int stepIndex)? onScrollToImage;  // Callback to scroll to image
 
-  const DirectionList({super.key, required this.directions});
+  const DirectionList({
+    super.key,
+    required this.directions,
+    this.recipe,
+    this.onStepImageTap,
+    this.onScrollToImage,
+  });
 
   @override
   State<DirectionList> createState() => _DirectionListState();
@@ -138,6 +150,7 @@ class _DirectionListState extends State<DirectionList> {
         stepNumber++;
         final displayNumber = stepNumber;
         final isCompleted = _completedSteps.contains(index);
+        final hasImage = widget.recipe?.getStepImageIndex(index) != null;
 
         return InkWell(
           onTap: () {
@@ -193,6 +206,24 @@ class _DirectionListState extends State<DirectionList> {
                     theme,
                   ),
                 ),
+
+                // Step image icon if this step has an associated image
+                if (hasImage)
+                  IconButton(
+                    icon: Icon(
+                      Icons.image_outlined,
+                      size: 20,
+                      color: theme.colorScheme.primary,
+                    ),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                    tooltip: 'View step image',
+                    onPressed: () {
+                      if (widget.onScrollToImage != null) {
+                        widget.onScrollToImage!(index);
+                      }
+                    },
+                  ),
               ],
             ),
           ),

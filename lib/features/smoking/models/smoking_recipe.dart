@@ -196,7 +196,17 @@ class SmokingRecipe {
   /// Optional notes
   String? notes;
 
-  /// Optional image
+  /// Main header image (shown in app bar)
+  String? headerImage;
+
+  /// Gallery images for steps (shown at bottom)
+  List<String> stepImages = [];
+
+  /// Map of step index to image index in stepImages
+  /// Stored as "stepIndex:imageIndex" strings for Isar compatibility
+  List<String> stepImageMap = [];
+
+  /// Legacy: Optional image
   String? imageUrl;
 
   /// Whether this is a favorite
@@ -215,6 +225,62 @@ class SmokingRecipe {
 
   SmokingRecipe();
 
+  /// Get all images (handles new structure and legacy fields)
+  List<String> getAllImages() {
+    final images = <String>[];
+    if (headerImage != null && headerImage!.isNotEmpty) {
+      images.add(headerImage!);
+    } else if (imageUrl != null && imageUrl!.isNotEmpty) {
+      images.add(imageUrl!);
+    }
+    if (stepImages.isNotEmpty) {
+      images.addAll(stepImages);
+    }
+    return images;
+  }
+
+  /// Get first image if available
+  String? getFirstImage() {
+    if (headerImage != null && headerImage!.isNotEmpty) return headerImage;
+    if (imageUrl != null && imageUrl!.isNotEmpty) return imageUrl;
+    return null;
+  }
+
+  /// Get image index for a specific step (0-based)
+  int? getStepImageIndex(int stepIndex) {
+    for (final mapping in stepImageMap) {
+      final parts = mapping.split(':');
+      if (parts.length == 2) {
+        final sIdx = int.tryParse(parts[0]);
+        final iIdx = int.tryParse(parts[1]);
+        if (sIdx == stepIndex && iIdx != null) {
+          return iIdx;
+        }
+      }
+    }
+    return null;
+  }
+
+  /// Get the image path for a specific step
+  String? getStepImage(int stepIndex) {
+    final imageIndex = getStepImageIndex(stepIndex);
+    if (imageIndex != null && imageIndex < stepImages.length) {
+      return stepImages[imageIndex];
+    }
+    return null;
+  }
+
+  /// Set image association for a step
+  void setStepImage(int stepIndex, int imageIndex) {
+    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
+    stepImageMap.add('$stepIndex:$imageIndex');
+  }
+
+  /// Remove image association for a step
+  void removeStepImage(int stepIndex) {
+    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
+  }
+
   /// Factory constructor for creating with required fields
   static SmokingRecipe create({
     required String uuid,
@@ -227,6 +293,9 @@ class SmokingRecipe {
     List<SmokingSeasoning>? seasonings,
     List<String>? directions,
     String? notes,
+    String? headerImage,
+    List<String>? stepImages,
+    List<String>? stepImageMap,
     String? imageUrl,
     bool isFavorite = false,
     int cookCount = 0,
@@ -243,6 +312,9 @@ class SmokingRecipe {
       ..seasonings = seasonings ?? []
       ..directions = directions ?? []
       ..notes = notes
+      ..headerImage = headerImage
+      ..stepImages = stepImages ?? []
+      ..stepImageMap = stepImageMap ?? []
       ..imageUrl = imageUrl
       ..isFavorite = isFavorite
       ..cookCount = cookCount
@@ -268,6 +340,9 @@ class SmokingRecipe {
       }).toList(),
       'directions': directions,
       'notes': notes,
+      'headerImage': headerImage,
+      'stepImages': stepImages,
+      'stepImageMap': stepImageMap,
       'imageUrl': imageUrl,
       'isFavorite': isFavorite,
       'cookCount': cookCount,

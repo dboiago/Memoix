@@ -69,13 +69,28 @@ class RecipeDetailScreen extends ConsumerWidget {
   }
 }
 
-class RecipeDetailView extends ConsumerWidget {
+class RecipeDetailView extends ConsumerStatefulWidget {
   final Recipe recipe;
 
   const RecipeDetailView({super.key, required this.recipe});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<RecipeDetailView> createState() => _RecipeDetailViewState();
+}
+
+class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
+  final ScrollController _scrollController = ScrollController();
+  final GlobalKey _stepImagesKey = GlobalKey();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final recipe = widget.recipe;
     // Enable wakelock if setting is on
     final keepScreenOn = ref.watch(keepScreenOnProvider);
     if (keepScreenOn) {
@@ -85,16 +100,18 @@ class RecipeDetailView extends ConsumerWidget {
     }
     
     final theme = Theme.of(context);
-    final allImages = recipe.getAllImages();
-    final hasImage = allImages.isNotEmpty;
-    final hasMultipleImages = allImages.length > 1;
+    // Use headerImage for the app bar, fall back to legacy imageUrl/imageUrls
+    final headerImage = recipe.headerImage ?? recipe.getFirstImage();
+    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final hasStepImages = recipe.stepImages.isNotEmpty;
 
     return Scaffold(
       body: CustomScrollView(
+        controller: _scrollController,
         slivers: [
           // Hero header with recipe image or colored header
           SliverAppBar(
-            expandedHeight: hasImage ? 250 : 150,
+            expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
@@ -107,13 +124,11 @@ class RecipeDetailView extends ConsumerWidget {
                   ],
                 ),
               ),
-              background: hasImage
+              background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        hasMultipleImages
-                            ? _buildImageCarousel(allImages)
-                            : _buildSingleImage(context, allImages.first),
+                        _buildSingleImage(context, headerImage),
                         // Gradient overlay for text visibility
                         Container(
                           decoration: BoxDecoration(
@@ -142,7 +157,7 @@ class RecipeDetailView extends ConsumerWidget {
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                  shadows: hasImage 
+                  shadows: hasHeaderImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -153,7 +168,7 @@ class RecipeDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: hasImage 
+                  shadows: hasHeaderImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -185,7 +200,7 @@ class RecipeDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.share,
-                  shadows: hasImage 
+                  shadows: hasHeaderImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -206,7 +221,7 @@ class RecipeDetailView extends ConsumerWidget {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: hasImage 
+                  shadows: hasHeaderImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -356,7 +371,11 @@ class RecipeDetailView extends ConsumerWidget {
                                         ),
                                       ),
                                       const SizedBox(height: 12),
-                                      DirectionList(directions: recipe.directions),
+                                      DirectionList(
+                                        directions: recipe.directions,
+                                        recipe: recipe,
+                                        onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -390,7 +409,11 @@ class RecipeDetailView extends ConsumerWidget {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          DirectionList(directions: recipe.directions),
+                          DirectionList(
+                            directions: recipe.directions,
+                            recipe: recipe,
+                            onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
+                          ),
                         ],
                       ),
                     );
@@ -399,6 +422,16 @@ class RecipeDetailView extends ConsumerWidget {
               },
             ),
           ),
+
+          // Step Images Gallery (under directions, before comments)
+          if (hasStepImages)
+            SliverToBoxAdapter(
+              key: _stepImagesKey,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                child: _buildStepImagesGallery(theme, recipe),
+              ),
+            ),
 
           // Comments section (at bottom, after recipe content)
           if (recipe.notes != null && recipe.notes!.isNotEmpty)
@@ -459,7 +492,189 @@ class RecipeDetailView extends ConsumerWidget {
     );
   }
 
+  Widget _buildStepImagesGallery(ThemeData theme, Recipe recipe) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(Icons.photo_library, size: 20, color: theme.colorScheme.primary),
+                const SizedBox(width: 8),
+                Text(
+                  'Step Images',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 120,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: recipe.stepImages.length,
+                itemBuilder: (context, imageIndex) {
+                  // Find which step(s) use this image
+                  final stepsUsingImage = <int>[];
+                  for (int i = 0; i < recipe.directions.length; i++) {
+                    if (recipe.getStepImageIndex(i) == imageIndex) {
+                      stepsUsingImage.add(i + 1);
+                    }
+                  }
+
+                  return Padding(
+                    padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
+                    child: GestureDetector(
+                      onTap: () => _showImageFullscreen(recipe.stepImages[imageIndex]),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: _buildStepImageWidget(recipe.stepImages[imageIndex], width: 120, height: 120),
+                          ),
+                          // Step numbers badge
+                          if (stepsUsingImage.isNotEmpty)
+                            Positioned(
+                              top: 4,
+                              left: 4,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: theme.colorScheme.primary,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Text(
+                                  stepsUsingImage.map((s) => 'Step $s').join(', '),
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          // Expand icon
+                          Positioned(
+                            bottom: 4,
+                            right: 4,
+                            child: Container(
+                              padding: const EdgeInsets.all(4),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: const Icon(
+                                Icons.fullscreen,
+                                size: 16,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return Image.network(
+        imagePath,
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    } else {
+      return Image.file(
+        File(imagePath),
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    }
+  }
+
+  void _scrollToAndShowImage(Recipe recipe, int stepIndex) {
+    final imageIndex = recipe.getStepImageIndex(stepIndex);
+    if (imageIndex == null || imageIndex >= recipe.stepImages.length) return;
+
+    // Scroll to the step images section
+    final ctx = _stepImagesKey.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      ).then((_) {
+        // After scrolling, show the image fullscreen
+        _showImageFullscreen(recipe.stepImages[imageIndex]);
+      });
+    } else {
+      // If context not found, just show the image
+      _showImageFullscreen(recipe.stepImages[imageIndex]);
+    }
+  }
+
+  void _showImageFullscreen(String imagePath) {
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: EdgeInsets.zero,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Dark background
+            GestureDetector(
+              onTap: () => Navigator.pop(ctx),
+              child: Container(color: Colors.black.withOpacity(0.9)),
+            ),
+            // Image
+            Center(
+              child: InteractiveViewer(
+                child: imagePath.startsWith('http')
+                    ? Image.network(imagePath, fit: BoxFit.contain)
+                    : Image.file(File(imagePath), fit: BoxFit.contain),
+              ),
+            ),
+            // Close button
+            Positioned(
+              top: 40,
+              right: 16,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 32),
+                onPressed: () => Navigator.pop(ctx),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   void _shareRecipe(BuildContext context, WidgetRef ref) {
+    final recipe = widget.recipe;
     final shareService = ref.read(shareServiceProvider);
     final theme = Theme.of(context);
     
@@ -562,6 +777,7 @@ class RecipeDetailView extends ConsumerWidget {
   }
 
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action) {
+    final recipe = widget.recipe;
     switch (action) {
       case 'edit':
         AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid);
@@ -576,6 +792,7 @@ class RecipeDetailView extends ConsumerWidget {
   }
 
   void _duplicateRecipe(BuildContext context, WidgetRef ref) async {
+    final recipe = widget.recipe;
     final repo = ref.read(recipeRepositoryProvider);
     final newRecipe = Recipe()
       ..uuid = ''  // Will be generated on save
@@ -609,6 +826,7 @@ class RecipeDetailView extends ConsumerWidget {
   }
 
   void _confirmDelete(BuildContext context, WidgetRef ref) {
+    final recipe = widget.recipe;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(

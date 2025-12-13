@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -15,7 +16,6 @@ class SmokingDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final theme = Theme.of(context);
     final recipeAsync = ref.watch(smokingRecipeByUuidProvider(recipeId));
 
     return Scaffold(
@@ -27,129 +27,157 @@ class SmokingDetailScreen extends ConsumerWidget {
             return const Center(child: Text('Recipe not found'));
           }
 
-          final hasImage = recipe.imageUrl != null && recipe.imageUrl!.isNotEmpty;
+          return _SmokingDetailView(recipe: recipe);
+        },
+      ),
+    );
+  }
+}
 
-          return CustomScrollView(
-            slivers: [
-              // App bar with image
-              SliverAppBar(
-                expandedHeight: hasImage ? 250 : 120,
-                pinned: true,
-                flexibleSpace: FlexibleSpaceBar(
-                  title: Text(
-                    recipe.name,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                        Shadow(blurRadius: 16, color: Colors.black54),
-                      ],
-                    ),
-                  ),
-                  background: hasImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            Image.network(
-                              recipe.imageUrl!,
-                              fit: BoxFit.cover,
-                              errorBuilder: (_, __, ___) => Container(
-                                color: theme.colorScheme.surfaceContainerHighest,
-                              ),
-                            ),
-                            // Gradient overlay for title readability
-                            Container(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black.withOpacity(0.7),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        )
-                      : Container(
-                          color: theme.colorScheme.surfaceContainerHighest,
-                        ),
+class _SmokingDetailView extends ConsumerStatefulWidget {
+  final SmokingRecipe recipe;
+
+  const _SmokingDetailView({required this.recipe});
+
+  @override
+  ConsumerState<_SmokingDetailView> createState() => _SmokingDetailViewState();
+}
+
+class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
+  final ScrollController _scrollController = ScrollController();
+  final GlobalKey _stepImagesKey = GlobalKey();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final recipe = widget.recipe;
+    final theme = Theme.of(context);
+    // Use headerImage for the app bar, fall back to legacy imageUrl
+    final headerImage = recipe.headerImage ?? recipe.imageUrl;
+    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final hasStepImages = recipe.stepImages.isNotEmpty;
+
+        return CustomScrollView(
+        controller: _scrollController,
+        slivers: [
+          // App bar with image
+          SliverAppBar(
+            expandedHeight: hasHeaderImage ? 250 : 120,
+            pinned: true,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  shadows: [
+                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    Shadow(blurRadius: 16, color: Colors.black54),
+                  ],
                 ),
-                actions: [
-                  IconButton(
-                    icon: Icon(
-                      recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-                      color: recipe.isFavorite ? Colors.red : null,
-                      shadows: hasImage 
-                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                          : null,
-                    ),
-                    onPressed: () {
-                      ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.check_circle_outline,
-                      shadows: hasImage 
-                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                          : null,
-                    ),
-                    tooltip: 'I made this',
-                    onPressed: () async {
-                      await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
-                      if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('Logged cook for ${recipe.name}!'),
+              ),
+              background: hasHeaderImage
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildSingleImage(context, headerImage!),
+                        // Gradient overlay for title readability
+                        Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.transparent,
+                                Colors.black.withOpacity(0.7),
+                              ],
+                            ),
                           ),
-                        );
-                      }
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.share,
-                      shadows: hasImage 
-                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                          : null,
-                    ),
-                    onPressed: () => _shareRecipe(context, ref, recipe),
-                  ),
-                  PopupMenuButton<String>(
-                    onSelected: (value) {
-                      switch (value) {
-                        case 'edit':
-                          _editRecipe(context, recipe);
-                          break;
-                        case 'delete':
-                          _confirmDelete(context, ref, recipe);
-                          break;
-                      }
-                    },
-                    itemBuilder: (ctx) => [
-                      const PopupMenuItem(
-                        value: 'edit',
-                        child: Text('Edit'),
-                      ),
-                      PopupMenuItem(
-                        value: 'delete',
-                        child: Text(
-                          'Delete',
-                          style: TextStyle(color: theme.colorScheme.secondary),
                         ),
+                      ],
+                    )
+                  : Container(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                    ),
+            ),
+            actions: [
+              IconButton(
+                icon: Icon(
+                  recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                  color: recipe.isFavorite ? Colors.red : null,
+                  shadows: hasHeaderImage 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
+                onPressed: () {
+                  ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.check_circle_outline,
+                  shadows: hasHeaderImage 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
+                tooltip: 'I made this',
+                onPressed: () async {
+                  await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Logged cook for ${recipe.name}!'),
                       ),
-                    ],
-                    icon: Icon(
-                      Icons.more_vert,
-                      shadows: hasImage 
-                          ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                          : null,
+                    );
+                  }
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.share,
+                  shadows: hasHeaderImage 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
+                onPressed: () => _shareRecipe(context, ref, recipe),
+              ),
+              PopupMenuButton<String>(
+                onSelected: (value) {
+                  switch (value) {
+                    case 'edit':
+                      _editRecipe(context, recipe);
+                      break;
+                    case 'delete':
+                      _confirmDelete(context, ref, recipe);
+                      break;
+                  }
+                },
+                itemBuilder: (ctx) => [
+                  const PopupMenuItem(
+                    value: 'edit',
+                    child: Text('Edit'),
+                  ),
+                  PopupMenuItem(
+                    value: 'delete',
+                    child: Text(
+                      'Delete',
+                      style: TextStyle(color: theme.colorScheme.secondary),
                     ),
                   ),
                 ],
+                icon: Icon(
+                  Icons.more_vert,
+                  shadows: hasHeaderImage 
+                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+                      : null,
+                ),
               ),
+            ],
+          ),
 
               // Recipe details - styled like regular recipe page
               SliverToBoxAdapter(
@@ -230,11 +258,21 @@ class SmokingDetailScreen extends ConsumerWidget {
                               ),
                             ),
                             const SizedBox(height: 12),
-                            _buildDirectionsList(context, recipe.directions),
+                            _buildDirectionsList(context, recipe),
                           ],
                         ),
                       ),
                     ),
+                  ),
+                ),
+
+              // Step Images Gallery (under directions, before notes)
+              if (hasStepImages)
+                SliverToBoxAdapter(
+                  key: _stepImagesKey,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                    child: _buildStepImagesGallery(theme, recipe),
                   ),
                 ),
 
@@ -273,9 +311,6 @@ class SmokingDetailScreen extends ConsumerWidget {
               ),
             ],
           );
-        },
-      ),
-    );
   }
   
   /// Build an ingredient section with header and checkable list
@@ -351,13 +386,14 @@ class SmokingDetailScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDirectionsList(BuildContext context, List<String> directions) {
+  Widget _buildDirectionsList(BuildContext context, SmokingRecipe recipe) {
     final theme = Theme.of(context);
 
     return Column(
-      children: directions.asMap().entries.map((entry) {
+      children: recipe.directions.asMap().entries.map((entry) {
         final index = entry.key;
         final step = entry.value;
+        final hasStepImage = recipe.getStepImageIndex(index) != null;
 
         return Padding(
           padding: const EdgeInsets.only(bottom: 12),
@@ -400,10 +436,223 @@ class SmokingDetailScreen extends ConsumerWidget {
                   ),
                 ),
               ),
+              // Step image indicator
+              if (hasStepImage)
+                IconButton(
+                  icon: Icon(
+                    Icons.image,
+                    size: 20,
+                    color: theme.colorScheme.primary,
+                  ),
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                  tooltip: 'View step image',
+                  onPressed: () => _scrollToAndShowImage(recipe, index),
+                ),
             ],
           ),
         );
       }).toList(),
+    );
+  }
+
+  Widget _buildSingleImage(BuildContext context, String imageSource) {
+    final isLocalFile = !imageSource.startsWith('http');
+    return isLocalFile
+        ? Image.file(
+            File(imageSource),
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) => Container(
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
+            ),
+          )
+        : Image.network(
+            imageSource,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) => Container(
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
+            ),
+          );
+  }
+
+  Widget _buildStepImagesGallery(ThemeData theme, SmokingRecipe recipe) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(Icons.photo_library, size: 20, color: theme.colorScheme.primary),
+                const SizedBox(width: 8),
+                Text(
+                  'Step Images',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 120,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: recipe.stepImages.length,
+                itemBuilder: (context, imageIndex) {
+                  // Find which step(s) use this image
+                  final stepsUsingImage = <int>[];
+                  for (int i = 0; i < recipe.directions.length; i++) {
+                    if (recipe.getStepImageIndex(i) == imageIndex) {
+                      stepsUsingImage.add(i + 1);
+                    }
+                  }
+
+                  return Padding(
+                    padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
+                    child: GestureDetector(
+                      onTap: () => _showImageFullscreen(recipe.stepImages[imageIndex]),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: _buildStepImageWidget(recipe.stepImages[imageIndex], width: 120, height: 120),
+                          ),
+                          // Step numbers badge
+                          if (stepsUsingImage.isNotEmpty)
+                            Positioned(
+                              top: 4,
+                              left: 4,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: theme.colorScheme.primary,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Text(
+                                  stepsUsingImage.map((s) => 'Step $s').join(', '),
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          // Expand icon
+                          Positioned(
+                            bottom: 4,
+                            right: 4,
+                            child: Container(
+                              padding: const EdgeInsets.all(4),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: const Icon(
+                                Icons.fullscreen,
+                                size: 16,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return Image.network(
+        imagePath,
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    } else {
+      return Image.file(
+        File(imagePath),
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    }
+  }
+
+  void _scrollToAndShowImage(SmokingRecipe recipe, int stepIndex) {
+    final imageIndex = recipe.getStepImageIndex(stepIndex);
+    if (imageIndex == null || imageIndex >= recipe.stepImages.length) return;
+
+    // Scroll to the step images section
+    final ctx = _stepImagesKey.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      ).then((_) {
+        // After scrolling, show the image fullscreen
+        _showImageFullscreen(recipe.stepImages[imageIndex]);
+      });
+    } else {
+      // If context not found, just show the image
+      _showImageFullscreen(recipe.stepImages[imageIndex]);
+    }
+  }
+
+  void _showImageFullscreen(String imagePath) {
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: EdgeInsets.zero,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Dark background
+            GestureDetector(
+              onTap: () => Navigator.pop(ctx),
+              child: Container(color: Colors.black.withOpacity(0.9)),
+            ),
+            // Image
+            Center(
+              child: InteractiveViewer(
+                child: imagePath.startsWith('http')
+                    ? Image.network(imagePath, fit: BoxFit.contain)
+                    : Image.file(File(imagePath), fit: BoxFit.contain),
+              ),
+            ),
+            // Close button
+            Positioned(
+              top: 40,
+              right: 16,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 32),
+                onPressed: () => Navigator.pop(ctx),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
