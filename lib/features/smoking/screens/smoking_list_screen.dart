@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/routes/router.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/smoking_card.dart';
@@ -119,9 +120,53 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => _createNew(),
-        child: const Icon(Icons.add),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () => _showAddOptions(context),
+        icon: const Icon(Icons.add),
+        label: const Text('Add Recipe'),
+      ),
+    );
+  }
+
+  void _showAddOptions(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.edit),
+              title: const Text('Create New Recipe'),
+              onTap: () {
+                Navigator.pop(ctx);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const SmokingEditScreen(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Scan from Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toOCRScanner(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.link),
+              title: const Text('Import from URL'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toSmokingURLImport(context);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
       ),
     );
   }
@@ -189,15 +234,6 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
       context,
       MaterialPageRoute(
         builder: (_) => SmokingDetailScreen(recipeId: recipe.uuid),
-      ),
-    );
-  }
-
-  void _createNew() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (_) => const SmokingEditScreen(),
       ),
     );
   }

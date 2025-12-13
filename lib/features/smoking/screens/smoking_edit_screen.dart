@@ -1,5 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../models/smoking_recipe.dart';
@@ -8,8 +13,13 @@ import '../repository/smoking_repository.dart';
 /// Edit/create screen for smoking recipes
 class SmokingEditScreen extends ConsumerStatefulWidget {
   final String? recipeId;
+  final SmokingRecipe? importedRecipe;
 
-  const SmokingEditScreen({super.key, this.recipeId});
+  const SmokingEditScreen({
+    super.key,
+    this.recipeId,
+    this.importedRecipe,
+  });
 
   @override
   ConsumerState<SmokingEditScreen> createState() => _SmokingEditScreenState();
@@ -22,8 +32,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final _timeController = TextEditingController();
   final _woodController = TextEditingController();
   final _notesController = TextEditingController();
-  final _imageUrlController = TextEditingController();
 
+  String? _imagePath; // Local file path or URL
   final List<_SeasoningEntry> _seasonings = [];
   final List<TextEditingController> _directionControllers = [];
 
@@ -37,7 +47,27 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   }
 
   Future<void> _loadRecipe() async {
-    if (widget.recipeId != null) {
+    // Check for imported recipe first
+    if (widget.importedRecipe != null) {
+      final recipe = widget.importedRecipe!;
+      _nameController.text = recipe.name;
+      _temperatureController.text = recipe.temperature;
+      _timeController.text = recipe.time;
+      _woodController.text = recipe.wood;
+      _notesController.text = recipe.notes ?? '';
+      _imagePath = recipe.imageUrl;
+
+      for (final seasoning in recipe.seasonings) {
+        _seasonings.add(_SeasoningEntry(
+          nameController: TextEditingController(text: seasoning.name),
+          amountController: TextEditingController(text: seasoning.amount ?? ''),
+        ));
+      }
+
+      for (final direction in recipe.directions) {
+        _directionControllers.add(TextEditingController(text: direction));
+      }
+    } else if (widget.recipeId != null) {
       final recipe = await ref
           .read(smokingRepositoryProvider)
           .getRecipeByUuid(widget.recipeId!);
@@ -48,7 +78,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _timeController.text = recipe.time;
         _woodController.text = recipe.wood;
         _notesController.text = recipe.notes ?? '';
-        _imageUrlController.text = recipe.imageUrl ?? '';
+        _imagePath = recipe.imageUrl;
 
         for (final seasoning in recipe.seasonings) {
           _seasonings.add(_SeasoningEntry(
@@ -88,7 +118,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     _timeController.dispose();
     _woodController.dispose();
     _notesController.dispose();
-    _imageUrlController.dispose();
     for (final entry in _seasonings) {
       entry.dispose();
     }
@@ -102,17 +131,24 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isEditing = widget.recipeId != null;
+    final isImporting = widget.importedRecipe != null;
+    
+    final title = isEditing 
+        ? 'Edit Recipe' 
+        : isImporting 
+            ? 'Review Imported Recipe'
+            : 'New Smoking Recipe';
 
     if (_isLoading) {
       return Scaffold(
-        appBar: AppBar(title: Text(isEditing ? 'Edit Recipe' : 'New Smoking Recipe')),
+        appBar: AppBar(title: Text(title)),
         body: const Center(child: CircularProgressIndicator()),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(isEditing ? 'Edit Recipe' : 'New Smoking Recipe'),
+        title: Text(title),
         actions: [
           TextButton(
             onPressed: _saveRecipe,
@@ -227,16 +263,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             const SizedBox(height: 24),
 
-            // Image URL (optional)
-            TextFormField(
-              controller: _imageUrlController,
-              decoration: const InputDecoration(
-                labelText: 'Image URL (optional)',
-                hintText: 'https://...',
-                prefixIcon: Icon(Icons.image),
-              ),
-              keyboardType: TextInputType.url,
-            ),
+            // Recipe Photo
+            _buildImagePicker(theme),
 
             const SizedBox(height: 16),
 
@@ -275,43 +303,82 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   }
 
   List<Widget> _buildSeasoningFields() {
+    final theme = Theme.of(context);
+    
     return _seasonings.asMap().entries.map((entry) {
       final index = entry.key;
       final seasoning = entry.value;
+      final isLast = index == _seasonings.length - 1;
 
-      return Padding(
-        padding: const EdgeInsets.only(bottom: 8),
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+        decoration: BoxDecoration(
+          border: isLast 
+              ? null 
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+        ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Amount (optional)
+            // Ingredient/Seasoning name
+            SizedBox(
+              width: 120,
+              child: TextField(
+                controller: seasoning.nameController,
+                decoration: InputDecoration(
+                  isDense: true,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  border: const OutlineInputBorder(),
+                  hintText: 'Ingredient',
+                  hintStyle: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.outline,
+                  ),
+                ),
+                style: theme.textTheme.bodyMedium,
+                textCapitalization: TextCapitalization.words,
+                onChanged: (value) {
+                  // Auto-add new row when typing in last row
+                  if (isLast && value.isNotEmpty) {
+                    _addSeasoning();
+                    setState(() {});
+                  }
+                },
+              ),
+            ),
+            const SizedBox(width: 8),
+            
+            // Amount
             SizedBox(
               width: 80,
               child: TextField(
                 controller: seasoning.amountController,
-                decoration: const InputDecoration(
-                  hintText: 'Amt',
-                  isDense: true,
-                ),
-              ),
-            ),
-            const SizedBox(width: 8),
-            // Name
-            Expanded(
-              child: TextField(
-                controller: seasoning.nameController,
                 decoration: InputDecoration(
-                  hintText: 'Seasoning name (e.g., Salt, Pepper)',
                   isDense: true,
-                  suffixIcon: _seasonings.length > 1
-                      ? IconButton(
-                          icon: const Icon(Icons.remove_circle_outline, size: 20),
-                          onPressed: () => _removeSeasoning(index),
-                        )
-                      : null,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  border: const OutlineInputBorder(),
+                  hintText: 'Amount',
+                  hintStyle: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.outline,
+                  ),
                 ),
-                textCapitalization: TextCapitalization.words,
+                style: theme.textTheme.bodyMedium,
               ),
             ),
+            
+            // Delete button
+            if (_seasonings.length > 1)
+              IconButton(
+                icon: Icon(
+                  Icons.remove_circle_outline, 
+                  size: 20,
+                  color: theme.colorScheme.error,
+                ),
+                onPressed: () => _removeSeasoning(index),
+              )
+            else
+              const SizedBox(width: 48),
           ],
         ),
       );
@@ -433,9 +500,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..notes = _notesController.text.trim().isEmpty
           ? null
           : _notesController.text.trim()
-      ..imageUrl = _imageUrlController.text.trim().isEmpty
-          ? null
-          : _imageUrlController.text.trim()
+      ..imageUrl = _imagePath
       ..source = _existingRecipe?.source ?? SmokingSource.personal
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
       ..updatedAt = DateTime.now();
@@ -461,5 +526,208 @@ class _SeasoningEntry {
   void dispose() {
     nameController.dispose();
     amountController.dispose();
+  }
+}
+
+// ============ IMAGE PICKER EXTENSION ============
+
+extension _ImagePickerExtension on _SmokingEditScreenState {
+  Widget _buildImagePicker(ThemeData theme) {
+    final hasImage = _imagePath != null && _imagePath!.isNotEmpty;
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Recipe Photo',
+          style: theme.textTheme.titleSmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+        const SizedBox(height: 8),
+        GestureDetector(
+          onTap: _showImageSourceDialog,
+          child: Container(
+            height: 180,
+            decoration: BoxDecoration(
+              color: theme.colorScheme.surfaceContainerHighest,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: theme.colorScheme.outline.withOpacity(0.3),
+              ),
+            ),
+            child: hasImage
+                ? Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(11),
+                        child: _buildImageWidget(),
+                      ),
+                      Positioned(
+                        top: 8,
+                        right: 8,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            _imageActionButton(
+                              icon: Icons.edit,
+                              onTap: _showImageSourceDialog,
+                              theme: theme,
+                            ),
+                            const SizedBox(width: 8),
+                            _imageActionButton(
+                              icon: Icons.delete,
+                              onTap: _removeImage,
+                              theme: theme,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                : Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate_outlined,
+                          size: 48,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Tap to add photo',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _imageActionButton({
+    required IconData icon,
+    required VoidCallback onTap,
+    required ThemeData theme,
+  }) {
+    return Material(
+      color: theme.colorScheme.surface.withOpacity(0.9),
+      borderRadius: BorderRadius.circular(20),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Icon(icon, size: 20, color: theme.colorScheme.onSurface),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageWidget() {
+    if (_imagePath == null) return const SizedBox.shrink();
+    
+    // Check if it's a URL or local file
+    if (_imagePath!.startsWith('http://') || _imagePath!.startsWith('https://')) {
+      return Image.network(
+        _imagePath!,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => const Center(
+          child: Icon(Icons.broken_image, size: 48),
+        ),
+      );
+    } else {
+      // Local file
+      return Image.file(
+        File(_imagePath!),
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => const Center(
+          child: Icon(Icons.broken_image, size: 48),
+        ),
+      );
+    }
+  }
+
+  void _showImageSourceDialog() {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImage(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImage(ImageSource.gallery);
+              },
+            ),
+            if (_imagePath != null && _imagePath!.startsWith('http'))
+              ListTile(
+                leading: const Icon(Icons.link),
+                title: const Text('Keep URL Image'),
+                subtitle: Text(_imagePath!, overflow: TextOverflow.ellipsis),
+                onTap: () => Navigator.pop(ctx),
+              ),
+            ListTile(
+              leading: const Icon(Icons.close),
+              title: const Text('Cancel'),
+              onTap: () => Navigator.pop(ctx),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickImage(ImageSource source) async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFile != null) {
+        // Copy to app documents directory for persistence
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/smoking_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+
+        setState(() {
+          _imagePath = savedFile.path;
+        });
+      }
+    } catch (e) {
+      debugPrint('Error picking image: $e');
+    }
+  }
+
+  void _removeImage() {
+    setState(() {
+      _imagePath = null;
+    });
   }
 }

@@ -94,9 +94,47 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
         },
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => AppRoutes.toPizzaEdit(context),
+        onPressed: () => _showAddOptions(context),
         icon: const Icon(Icons.add),
-        label: const Text('Add Pizza'),
+        label: const Text('Add Recipe'),
+      ),
+    );
+  }
+
+  void _showAddOptions(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.edit),
+              title: const Text('Create New Recipe'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toPizzaEdit(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Scan from Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toOCRScanner(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.link),
+              title: const Text('Import from URL'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toURLImport(context);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
       ),
     );
   }

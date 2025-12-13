@@ -11,6 +11,7 @@ import '../../features/pizzas/screens/pizza_edit_screen.dart';
 import '../../features/smoking/screens/smoking_list_screen.dart';
 import '../../features/smoking/screens/smoking_detail_screen.dart';
 import '../../features/smoking/screens/smoking_edit_screen.dart';
+import '../../features/smoking/screens/smoking_url_import_screen.dart';
 import '../../features/import/screens/import_screen.dart';
 import '../../features/import/screens/qr_scanner_screen.dart';
 import '../../features/import/screens/ocr_scanner_screen.dart';
@@ -218,6 +219,14 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => SmokingEditScreen(recipeId: recipeId),
+      ),
+    );
+  }
+
+  static void toSmokingURLImport(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => const SmokingURLImportScreen(),
       ),
     );
   }
