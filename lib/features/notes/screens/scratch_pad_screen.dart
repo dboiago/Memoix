@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
@@ -186,13 +187,47 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   }
 
   void _addNewDraft(BuildContext context, WidgetRef ref) {
-    // Open RecipeEditScreen directly for a new recipe - same as adding from Mains
-    AppRoutes.toRecipeEdit(context);
+    // Create a new draft and open the draft editor
+    final drafts = ref.read(tempRecipeDraftsProvider);
+    final newDraft = TempRecipeDraft(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      name: 'New Recipe ${drafts.length + 1}',
+      createdAt: DateTime.now(),
+    );
+    ref.read(tempRecipeDraftsProvider.notifier).state = [...drafts, newDraft];
+    // Open the draft editor
+    _editDraft(context, ref, newDraft);
   }
 
   void _editDraft(BuildContext context, WidgetRef ref, TempRecipeDraft draft) {
-    // Convert draft to Recipe and open in RecipeEditScreen
-    _convertToRecipe(context, ref, draft);
+    // Open draft editor - Save keeps in scratch pad, Convert moves to recipes
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => _EditDraftScreen(
+          draft: draft,
+          onSave: (updatedDraft) {
+            // Save to scratch pad only (not to real recipes)
+            final drafts = ref.read(tempRecipeDraftsProvider);
+            final index = drafts.indexWhere((d) => d.id == draft.id);
+            if (index != -1) {
+              final updated = [...drafts];
+              updated[index] = updatedDraft;
+              ref.read(tempRecipeDraftsProvider.notifier).state = updated;
+            }
+          },
+          onConvert: () {
+            // Get latest draft state and convert
+            final drafts = ref.read(tempRecipeDraftsProvider);
+            final latestDraft = drafts.firstWhere(
+              (d) => d.id == draft.id,
+              orElse: () => draft,
+            );
+            _convertToRecipe(context, ref, latestDraft);
+          },
+        ),
+      ),
+    );
   }
 
   void _deleteDraft(WidgetRef ref, TempRecipeDraft draft) {
@@ -472,6 +507,358 @@ class _RecipeDraftsTab extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+/// Screen for editing a recipe draft
+/// Save keeps it in scratch pad, Convert moves it to real recipes
+class _EditDraftScreen extends StatefulWidget {
+  final TempRecipeDraft draft;
+  final ValueChanged<TempRecipeDraft> onSave;
+  final VoidCallback onConvert;
+
+  const _EditDraftScreen({
+    required this.draft,
+    required this.onSave,
+    required this.onConvert,
+  });
+
+  @override
+  State<_EditDraftScreen> createState() => _EditDraftScreenState();
+}
+
+class _EditDraftScreenState extends State<_EditDraftScreen> {
+  late TextEditingController _nameController;
+  late TextEditingController _servesController;
+  late TextEditingController _timeController;
+  late TextEditingController _ingredientsController;
+  late TextEditingController _directionsController;
+  late TextEditingController _commentsController;
+  String? _imagePath;
+  final ImagePicker _picker = ImagePicker();
+
+  @override
+  void initState() {
+    super.initState();
+    _nameController = TextEditingController(text: widget.draft.name);
+    _servesController = TextEditingController(text: widget.draft.serves ?? '');
+    _timeController = TextEditingController(text: widget.draft.time ?? '');
+    _ingredientsController = TextEditingController(text: widget.draft.ingredients);
+    _directionsController = TextEditingController(text: widget.draft.directions);
+    _commentsController = TextEditingController(text: widget.draft.comments);
+    _imagePath = widget.draft.imagePath;
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _servesController.dispose();
+    _timeController.dispose();
+    _ingredientsController.dispose();
+    _directionsController.dispose();
+    _commentsController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _pickImage(ImageSource source) async {
+    try {
+      final XFile? image = await _picker.pickImage(
+        source: source,
+        maxWidth: 1024,
+        maxHeight: 1024,
+        imageQuality: 85,
+      );
+      if (image != null) {
+        setState(() {
+          _imagePath = image.path;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Failed to pick image: $e')),
+        );
+      }
+    }
+  }
+
+  void _showImagePicker() {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(context);
+                _pickImage(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(context);
+                _pickImage(ImageSource.gallery);
+              },
+            ),
+            if (_imagePath != null)
+              ListTile(
+                leading: const Icon(Icons.delete),
+                title: const Text('Remove Photo'),
+                onTap: () {
+                  Navigator.pop(context);
+                  setState(() {
+                    _imagePath = null;
+                  });
+                },
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  TempRecipeDraft _buildUpdatedDraft() {
+    return widget.draft.copyWith(
+      name: _nameController.text,
+      imagePath: _imagePath,
+      serves: _servesController.text.isEmpty ? null : _servesController.text,
+      time: _timeController.text.isEmpty ? null : _timeController.text,
+      ingredients: _ingredientsController.text,
+      directions: _directionsController.text,
+      comments: _commentsController.text,
+      clearImage: _imagePath == null && widget.draft.imagePath != null,
+    );
+  }
+
+  void _save() {
+    // Save to scratch pad only
+    widget.onSave(_buildUpdatedDraft());
+    Navigator.pop(context);
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Draft saved to scratch pad')),
+    );
+  }
+
+  void _convert() {
+    // Save current state first, then convert
+    widget.onSave(_buildUpdatedDraft());
+    Navigator.pop(context);
+    widget.onConvert();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Edit Draft'),
+        actions: [
+          // Save button (keeps in scratch pad)
+          TextButton.icon(
+            onPressed: _save,
+            icon: const Icon(Icons.save),
+            label: const Text('Save'),
+          ),
+        ],
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Image picker
+            Center(
+              child: GestureDetector(
+                onTap: _showImagePicker,
+                child: Container(
+                  width: 150,
+                  height: 150,
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: theme.colorScheme.outline.withAlpha(100),
+                    ),
+                  ),
+                  child: _imagePath != null
+                      ? ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: kIsWeb
+                              ? Image.network(
+                                  _imagePath!,
+                                  fit: BoxFit.cover,
+                                  width: 150,
+                                  height: 150,
+                                )
+                              : Image.file(
+                                  File(_imagePath!),
+                                  fit: BoxFit.cover,
+                                  width: 150,
+                                  height: 150,
+                                ),
+                        )
+                      : Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.add_a_photo,
+                              size: 40,
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              'Add Photo',
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
+                        ),
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 24),
+
+            // Recipe name
+            TextField(
+              controller: _nameController,
+              decoration: const InputDecoration(
+                labelText: 'Recipe Name *',
+                border: OutlineInputBorder(),
+              ),
+              textCapitalization: TextCapitalization.words,
+            ),
+
+            const SizedBox(height: 16),
+
+            // Serves and Time (optional)
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _servesController,
+                    decoration: const InputDecoration(
+                      labelText: 'Serves (optional)',
+                      hintText: 'e.g., 4-6',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: TextField(
+                    controller: _timeController,
+                    decoration: const InputDecoration(
+                      labelText: 'Time (optional)',
+                      hintText: 'e.g., 40 min',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 24),
+
+            // Ingredients section
+            Text(
+              'Ingredients',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              'One per line (e.g., "1 cup flour")',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _ingredientsController,
+              decoration: const InputDecoration(
+                hintText: '1 can white beans\n2 tbsp olive oil\n1 onion, diced',
+                border: OutlineInputBorder(),
+                alignLabelWithHint: true,
+              ),
+              maxLines: 8,
+              minLines: 5,
+            ),
+
+            const SizedBox(height: 24),
+
+            // Directions section
+            Text(
+              'Directions',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              'Separate steps with blank lines',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _directionsController,
+              decoration: const InputDecoration(
+                hintText: 'Melt butter in a large pot...\n\nAdd onions and sauté...',
+                border: OutlineInputBorder(),
+                alignLabelWithHint: true,
+              ),
+              maxLines: 10,
+              minLines: 6,
+            ),
+
+            const SizedBox(height: 24),
+
+            // Notes section
+            Text(
+              'Notes',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _commentsController,
+              decoration: const InputDecoration(
+                hintText: 'Additional tips or variations...',
+                border: OutlineInputBorder(),
+                alignLabelWithHint: true,
+              ),
+              maxLines: 4,
+              minLines: 2,
+            ),
+
+            const SizedBox(height: 32),
+
+            // Convert to Recipe button
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                onPressed: _convert,
+                icon: const Icon(Icons.restaurant_menu),
+                label: const Text('Convert to Full Recipe'),
+              ),
+            ),
+
+            const SizedBox(height: 16),
+          ],
+        ),
+      ),
     );
   }
 }

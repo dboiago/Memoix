@@ -1003,9 +1003,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
             ),
           ),
-          // Ingredient name
-          SizedBox(
-            width: 120,
+          // Ingredient name (flexible, takes 3 parts)
+          Flexible(
+            flex: 3,
             child: TextField(
               controller: row.nameController,
               decoration: InputDecoration(
@@ -1030,16 +1030,16 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ),
           const SizedBox(width: 8),
           
-          // Amount
-          SizedBox(
-            width: 80,
+          // Amount (flexible, takes 2 parts)
+          Flexible(
+            flex: 2,
             child: TextField(
               controller: row.amountController,
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 border: const OutlineInputBorder(),
-                hintText: 'Amount',
+                hintText: 'Amt',
                 hintStyle: TextStyle(
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.outline,
@@ -1050,15 +1050,16 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ),
           const SizedBox(width: 8),
           
-          // Notes/Prep
-          Expanded(
+          // Notes/Prep (flexible, takes 3 parts)
+          Flexible(
+            flex: 3,
             child: TextField(
               controller: row.notesController,
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 border: const OutlineInputBorder(),
-                hintText: 'Notes (optional)',
+                hintText: 'Notes',
                 hintStyle: TextStyle(
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.outline,

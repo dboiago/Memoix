@@ -150,6 +150,12 @@ class _IngredientListState extends State<IngredientList> {
     // Get preparation and alternative separately
     final hasPreparation = ingredient.preparation != null && ingredient.preparation!.isNotEmpty;
     final hasAlternative = ingredient.alternative != null && ingredient.alternative!.isNotEmpty;
+    final hasNotes = hasPreparation || hasAlternative;
+    
+    final notesText = [
+      if (hasPreparation) ingredient.preparation!,
+      if (hasAlternative) ingredient.alternative!,
+    ].where((s) => s.isNotEmpty).join(' · ');
 
     return InkWell(
       onTap: () {
@@ -186,23 +192,21 @@ class _IngredientListState extends State<IngredientList> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient name (flexible, takes what it needs)
-            Flexible(
-              fit: FlexFit.loose,
-              child: Text(
-                _capitalizeWords(ingredient.name),
-                style: TextStyle(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : null,
-                ),
+            // Ingredient name
+            Text(
+              _capitalizeWords(ingredient.name),
+              style: TextStyle(
+                decoration: isChecked ? TextDecoration.lineThrough : null,
+                color: isChecked
+                    ? theme.colorScheme.onSurface.withOpacity(0.5)
+                    : null,
+                fontWeight: FontWeight.w500,
               ),
             ),
             
             // Amount (with minimal spacing)
             if (amountText.isNotEmpty) ...[
-              const SizedBox(width: 12),
+              const SizedBox(width: 8),
               Text(
                 amountText,
                 style: TextStyle(
@@ -233,26 +237,24 @@ class _IngredientListState extends State<IngredientList> {
               ),
             ],
 
-            // Spacer and notes section (always present for alignment)
-            const SizedBox(width: 12),
-            Expanded(
-              child: (hasPreparation || hasAlternative)
-                  ? Text(
-                      [
-                        if (hasPreparation) ingredient.preparation!,
-                        if (hasAlternative) ingredient.alternative!,
-                      ].where((s) => s.isNotEmpty).join(' · '),
-                      style: TextStyle(
-                        decoration: isChecked ? TextDecoration.lineThrough : null,
-                        color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
-                            : theme.colorScheme.primary,
-                        fontStyle: FontStyle.italic,
-                      ),
-                      textAlign: TextAlign.right,
-                    )
-                  : const SizedBox.shrink(),
-            ),
+            // Spacer pushes notes to the right
+            const Spacer(),
+
+            // Notes/alternatives aligned to the right
+            if (hasNotes)
+              Flexible(
+                child: Text(
+                  notesText,
+                  style: TextStyle(
+                    decoration: isChecked ? TextDecoration.lineThrough : null,
+                    color: isChecked
+                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        : theme.colorScheme.primary,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.right,
+                ),
+              ),
           ],
         ),
       ),
