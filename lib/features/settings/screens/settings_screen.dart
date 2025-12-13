@@ -286,7 +286,6 @@ class SettingsScreen extends ConsumerWidget {
             value: ref.watch(autoCheckUpdatesProvider),
             onChanged: (_) => ref.read(autoCheckUpdatesProvider.notifier).toggle(),
           ),
-          ),
           if (syncState.hasError)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),

@@ -113,7 +113,7 @@ class RecipeDetailView extends ConsumerWidget {
                       children: [
                         hasMultipleImages
                             ? _buildImageCarousel(allImages)
-                            : _buildSingleImage(allImages.first),
+                            : _buildSingleImage(context, allImages.first),
                         // Gradient overlay for text visibility
                         Container(
                           decoration: BoxDecoration(
@@ -735,7 +735,7 @@ class RecipeDetailView extends ConsumerWidget {
   }
 
   /// Build a single image display
-  Widget _buildSingleImage(String imageSource) {
+  Widget _buildSingleImage(BuildContext context, String imageSource) {
     final isLocalFile = !imageSource.startsWith('http');
     return isLocalFile
         ? Image.file(
