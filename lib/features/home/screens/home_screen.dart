@@ -10,6 +10,7 @@ import '../../recipes/screens/recipe_list_screen.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../smoking/repository/smoking_repository.dart';
+import '../../modernist/repository/modernist_repository.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -112,6 +113,7 @@ class _CourseGridView extends ConsumerWidget {
                     // Special handling for pizzas and smoking - use their own counts
                     final bool isPizza = category.slug == 'pizzas';
                     final bool isSmoking = category.slug == 'smoking';
+                    final bool isModernist = category.slug == 'molecular';
                     
                     // Get count for this category
                     final int itemCount;
@@ -124,6 +126,12 @@ class _CourseGridView extends ConsumerWidget {
                     } else if (isSmoking) {
                       final smokingAsync = ref.watch(smokingCountProvider);
                       itemCount = smokingAsync.maybeWhen(
+                        data: (count) => count,
+                        orElse: () => 0,
+                      );
+                    } else if (isModernist) {
+                      final modernistAsync = ref.watch(modernistCountProvider);
+                      itemCount = modernistAsync.maybeWhen(
                         data: (count) => count,
                         orElse: () => 0,
                       );
@@ -148,6 +156,8 @@ class _CourseGridView extends ConsumerWidget {
                           AppRoutes.toPizzaList(context);
                         } else if (category.slug == 'smoking') {
                           AppRoutes.toSmokingList(context);
+                        } else if (category.slug == 'molecular') {
+                          AppRoutes.toModernistList(context);
                         } else {
                           AppRoutes.toRecipeList(context, category.slug);
                         }

@@ -5,6 +5,7 @@ import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/models/category.dart';
 import '../../features/pizzas/models/pizza.dart';
 import '../../features/smoking/models/smoking_recipe.dart';
+import '../../features/modernist/models/modernist_recipe.dart';
 import '../../features/shopping/models/shopping_list.dart';
 import '../../features/mealplan/models/meal_plan.dart';
 import '../../features/statistics/models/cooking_stats.dart';
@@ -36,6 +37,7 @@ class MemoixDatabase {
         CategorySchema,
         PizzaSchema,
         SmokingRecipeSchema,
+        ModernistRecipeSchema,
         ShoppingListSchema,
         MealPlanSchema,
         CookingLogSchema,
