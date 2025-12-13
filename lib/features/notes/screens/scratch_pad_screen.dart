@@ -8,7 +8,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
 import '../../recipes/models/recipe.dart';
-import '../../recipes/models/ingredient.dart';
+// Ingredient is defined as an embedded class in `recipe.dart`
 
 /// Provider to store scratch pad notes
 final scratchPadNotesProvider = StateProvider<String>((ref) => '');
@@ -246,21 +246,32 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
         .toList();
     
     final ingredients = ingredientLines.map((line) {
-      // Try to parse amount from beginning of line (e.g., "1 cup flour")
-      final match = RegExp(r'^([\d\s\/\.-]+\s*(?:cup|cups|tbsp|tsp|oz|lb|lbs|g|kg|ml|l|can|cans|bunch|clove|cloves)?)\s*(.+)$', caseSensitive: false)
-          .firstMatch(line.trim());
-      
+      // Try to parse amount and unit from the beginning of the line (e.g., "1 cup flour")
+      final text = line.trim();
+      // Capture an amount token and optional unit, then the name
+      final match = RegExp(
+        r'^(?<amount>[\d\s\/\.-]+)?\s*(?<unit>cup|cups|tbsp|tsp|oz|lb|lbs|g|kg|ml|l|can|cans|bunch|clove|cloves)?\s*(?<name>.+)$',
+        caseSensitive: false,
+      ).firstMatch(text);
+
+      final ingredient = Ingredient();
       if (match != null) {
-        return Ingredient()
-          ..name = match.group(2)?.trim() ?? line.trim()
-          ..amount = double.tryParse(match.group(1)?.trim().split(RegExp(r'\s+')).first ?? '') ?? 1.0
-          ..unit = match.group(1)?.trim().split(RegExp(r'\s+')).skip(1).join(' ') ?? '';
+        final amt = match.namedGroup('amount')?.trim();
+        final unit = match.namedGroup('unit')?.trim();
+        final name = match.namedGroup('name')?.trim();
+
+        ingredient.name = (name == null || name.isEmpty) ? text : name;
+        // Only set amount/unit if present; fields are String?
+        if (amt != null && amt.isNotEmpty) {
+          ingredient.amount = amt;
+        }
+        if (unit != null && unit.isNotEmpty) {
+          ingredient.unit = unit;
+        }
+      } else {
+        ingredient.name = text;
       }
-      
-      return Ingredient()
-        ..name = line.trim()
-        ..amount = 1.0
-        ..unit = '';
+      return ingredient;
     }).toList();
     
     // Parse directions from text (split by blank lines)
