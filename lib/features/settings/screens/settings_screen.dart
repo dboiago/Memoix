@@ -4,8 +4,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/services/github_recipe_service.dart';
+import '../../../core/services/update_service.dart';
 import '../../../core/database/database.dart';
 import '../../../core/providers.dart';
+import '../../../core/widgets/update_available_dialog.dart';
 import '../services/recipe_backup_service.dart';
 import '../../recipes/repository/recipe_repository.dart';
 
@@ -134,6 +136,30 @@ class ShowListImagesNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Provider for auto-check for updates preference
+final autoCheckUpdatesProvider = StateNotifierProvider<AutoCheckUpdatesNotifier, bool>((ref) {
+  return AutoCheckUpdatesNotifier();
+});
+
+class AutoCheckUpdatesNotifier extends StateNotifier<bool> {
+  static const _key = 'auto_check_updates';
+
+  AutoCheckUpdatesNotifier() : super(true) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? true; // Default to ON
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
+
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
@@ -217,7 +243,7 @@ class SettingsScreen extends ConsumerWidget {
           const Divider(),
 
           // Sync section
-          _SectionHeader(title: 'Sync'),
+          _SectionHeader(title: 'Sync & Updates'),
           ListTile(
             leading: const Icon(Icons.sync),
             title: const Text('Sync Memoix Collection'),
@@ -246,6 +272,20 @@ class SettingsScreen extends ConsumerWidget {
                       }
                     }
                   },
+          ),
+          ListTile(
+            leading: const Icon(Icons.system_update),
+            title: const Text('Check for App Updates'),
+            subtitle: const Text('Download the latest version from GitHub'),
+            onTap: () => _checkForUpdates(context, ref),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.auto_awesome),
+            title: const Text('Auto-check for Updates'),
+            subtitle: const Text('Check for updates when app launches'),
+            value: ref.watch(autoCheckUpdatesProvider),
+            onChanged: (_) => ref.read(autoCheckUpdatesProvider.notifier).toggle(),
+          ),
           ),
           if (syncState.hasError)
             Padding(
@@ -410,6 +450,64 @@ class SettingsScreen extends ConsumerWidget {
           'and share with friends and family.',
         ),
       ],
+    );
+  }
+
+  Future<void> _checkForUpdates(BuildContext context, WidgetRef ref) async {
+    // Show loading indicator
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Checking for updates...'),
+        duration: Duration(seconds: 3),
+      ),
+    );
+
+    final updateService = ref.read(updateServiceProvider);
+    final appVersion = await updateService.checkForUpdate();
+
+    if (!context.mounted) return;
+
+    if (appVersion == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Could not check for updates. Please try again.'),
+        ),
+      );
+      return;
+    }
+
+    if (!appVersion.hasUpdate) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('You\'re already running the latest version!'),
+        ),
+      );
+      return;
+    }
+
+    // Show update dialog
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => UpdateAvailableDialog(
+        currentVersion: appVersion.currentVersion,
+        latestVersion: appVersion.latestVersion,
+        releaseNotes: appVersion.releaseNotes,
+        releaseUrl: appVersion.downloadUrl,
+        onUpdate: () async {
+          final success = await updateService.installUpdate(appVersion.downloadUrl);
+          if (!success && ctx.mounted) {
+            // Fallback: open browser if auto-install failed
+            Navigator.pop(ctx);
+            await updateService.openReleaseUrl(appVersion.downloadUrl);
+          }
+          return success;
+        },
+        onDismiss: () {
+          Navigator.pop(ctx);
+        },
+      ),
     );
   }
 

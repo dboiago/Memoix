@@ -28,6 +28,7 @@ dependencies:
   # Networking
   http: ^1.2.0
   connectivity_plus: ^5.0.2
+  package_info_plus: ^5.0.1
   
   # Recipe URL Parsing
   html: ^0.15.4
