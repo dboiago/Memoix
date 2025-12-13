@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:uuid/uuid.dart';
 
 import '../services/url_importer.dart';
 import '../services/ocr_importer.dart';
+import '../models/recipe_import_result.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import 'import_review_screen.dart';
 import 'qr_scanner_screen.dart';
 
 class ImportScreen extends ConsumerStatefulWidget {
@@ -240,19 +243,29 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
     try {
       final importer = UrlRecipeImporter();
-      final recipe = await importer.importFromUrl(url);
+      final result = await importer.importFromUrl(url);
 
-      if (recipe == null) {
+      if (!result.hasMinimumData) {
         setState(() => _error = 'Could not extract recipe from this URL');
         return;
       }
 
       if (context.mounted) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (_) => RecipeEditScreen(initialRecipe: recipe),
-          ),
-        );
+        // Route based on confidence
+        if (result.needsUserReview) {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (_) => ImportReviewScreen(importResult: result),
+            ),
+          );
+        } else {
+          final recipe = result.toRecipe(const Uuid().v4());
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (_) => RecipeEditScreen(importedRecipe: recipe),
+            ),
+          );
+        }
       }
     } catch (e) {
       setState(() => _error = e.toString());
