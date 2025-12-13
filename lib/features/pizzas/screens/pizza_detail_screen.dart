@@ -122,7 +122,7 @@ class _PizzaDetailView extends ConsumerWidget {
                     value: 'delete',
                     child: Text(
                       'Delete',
-                      style: TextStyle(color: theme.colorScheme.error),
+                      style: TextStyle(color: theme.colorScheme.secondary),
                     ),
                   ),
                 ],
@@ -168,13 +168,7 @@ class _PizzaDetailView extends ConsumerWidget {
                   if (pizza.cheeses.isNotEmpty) ...[
                     _buildSectionHeader(theme, 'Cheeses'),
                     const SizedBox(height: 8),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: pizza.cheeses
-                          .map((cheese) => _buildIngredientChip(theme, cheese, isCheesey: true))
-                          .toList(),
-                    ),
+                    _PizzaIngredientList(items: pizza.cheeses),
                     const SizedBox(height: 24),
                   ],
 
@@ -182,13 +176,7 @@ class _PizzaDetailView extends ConsumerWidget {
                   if (pizza.toppings.isNotEmpty) ...[
                     _buildSectionHeader(theme, 'Toppings'),
                     const SizedBox(height: 8),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: pizza.toppings
-                          .map((topping) => _buildIngredientChip(theme, topping, isCheesey: false))
-                          .toList(),
-                    ),
+                    _PizzaIngredientList(items: pizza.toppings),
                     const SizedBox(height: 24),
                   ],
 
@@ -214,11 +202,6 @@ class _PizzaDetailView extends ConsumerWidget {
             ),
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => AppRoutes.toPizzaEdit(context, pizzaId: pizza.uuid),
-        icon: const Icon(Icons.edit),
-        label: const Text('Edit'),
       ),
     );
   }
@@ -259,31 +242,6 @@ class _PizzaDetailView extends ConsumerWidget {
     );
   }
 
-  Widget _buildIngredientChip(ThemeData theme, String label, {required bool isCheesey}) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      decoration: BoxDecoration(
-        color: isCheesey
-            ? Colors.amber.withOpacity(0.15)
-            : theme.colorScheme.secondaryContainer,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(
-          color: isCheesey
-              ? Colors.amber.withOpacity(0.4)
-              : theme.colorScheme.secondary.withOpacity(0.3),
-        ),
-      ),
-      child: Text(
-        label,
-        style: theme.textTheme.bodyMedium?.copyWith(
-          color: isCheesey
-              ? Colors.amber.shade800
-              : theme.colorScheme.onSecondaryContainer,
-        ),
-      ),
-    );
-  }
-
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action) async {
     switch (action) {
       case 'edit':
@@ -303,7 +261,7 @@ class _PizzaDetailView extends ConsumerWidget {
               FilledButton(
                 onPressed: () => Navigator.pop(ctx, true),
                 style: FilledButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.error,
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
                 ),
                 child: const Text('Delete'),
               ),
@@ -388,6 +346,96 @@ class _PizzaDetailView extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Capitalize the first letter of each word in a string
+String _capitalizeWords(String text) {
+  if (text.isEmpty) return text;
+  return text.split(' ').map((word) {
+    if (word.isEmpty) return word;
+    // Don't capitalize common lowercase words in the middle
+    final lower = word.toLowerCase();
+    if (lower == 'of' || lower == 'and' || lower == 'or' || lower == 'the' || lower == 'a' || lower == 'an' || lower == 'to' || lower == 'for') {
+      return lower;
+    }
+    return word[0].toUpperCase() + word.substring(1).toLowerCase();
+  }).join(' ');
+}
+
+/// A simple checkable list for pizza ingredients (cheeses/toppings)
+class _PizzaIngredientList extends StatefulWidget {
+  final List<String> items;
+
+  const _PizzaIngredientList({required this.items});
+
+  @override
+  State<_PizzaIngredientList> createState() => _PizzaIngredientListState();
+}
+
+class _PizzaIngredientListState extends State<_PizzaIngredientList> {
+  final Set<int> _checkedItems = {};
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: widget.items.asMap().entries.map((entry) {
+        final index = entry.key;
+        final item = entry.value;
+        final isChecked = _checkedItems.contains(index);
+
+        return InkWell(
+          onTap: () {
+            setState(() {
+              if (isChecked) {
+                _checkedItems.remove(index);
+              } else {
+                _checkedItems.add(index);
+              }
+            });
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: Checkbox(
+                    value: isChecked,
+                    onChanged: (value) {
+                      setState(() {
+                        if (value == true) {
+                          _checkedItems.add(index);
+                        } else {
+                          _checkedItems.remove(index);
+                        }
+                      });
+                    },
+                    visualDensity: VisualDensity.compact,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    _capitalizeWords(item),
+                    style: TextStyle(
+                      decoration: isChecked ? TextDecoration.lineThrough : null,
+                      color: isChecked
+                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          : null,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      }).toList(),
     );
   }
 }

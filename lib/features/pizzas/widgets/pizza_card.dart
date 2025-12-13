@@ -118,15 +118,11 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                   
                   // Cooked button
                   IconButton(
-                    icon: Icon(
-                      widget.pizza.cookCount > 0 
-                          ? Icons.check_circle 
-                          : Icons.check_circle_outline,
+                    icon: const Icon(
+                      Icons.check_circle_outline,
                       size: 20,
                     ),
-                    color: widget.pizza.cookCount > 0 
-                        ? Colors.green.shade400 
-                        : theme.colorScheme.onSurfaceVariant,
+                    color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(pizzaRepositoryProvider).incrementCookCount(widget.pizza);
                       if (context.mounted) {
@@ -152,29 +148,43 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
   }
 
   Widget _buildIngredientsSummary(ThemeData theme) {
-    final parts = <String>[];
-    
-    // Add cheeses count
-    if (widget.pizza.cheeses.isNotEmpty) {
-      parts.add('${widget.pizza.cheeses.length} cheese${widget.pizza.cheeses.length == 1 ? '' : 's'}');
-    }
-    
-    // Add toppings count
-    if (widget.pizza.toppings.isNotEmpty) {
-      parts.add('${widget.pizza.toppings.length} topping${widget.pizza.toppings.length == 1 ? '' : 's'}');
-    }
+    final cheeseCount = widget.pizza.cheeses.length;
+    final toppingCount = widget.pizza.toppings.length;
 
-    if (parts.isEmpty) {
-      return const SizedBox.shrink();
-    }
-
-    return Text(
-      parts.join(' · '),
-      style: theme.textTheme.bodySmall?.copyWith(
-        color: theme.colorScheme.onSurfaceVariant,
-      ),
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
+    return Row(
+      children: [
+        // Cheese count with icon
+        if (cheeseCount > 0) ...[
+          Icon(
+            Icons.circle,
+            size: 8,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$cheeseCount cheese${cheeseCount == 1 ? '' : 's'}',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+        // Topping count with icon
+        if (toppingCount > 0) ...[
+          Icon(
+            Icons.circle,
+            size: 8,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$toppingCount topping${toppingCount == 1 ? '' : 's'}',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
+      ],
     );
   }
 }

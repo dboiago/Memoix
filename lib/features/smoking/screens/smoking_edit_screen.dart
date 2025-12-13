@@ -175,7 +175,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               decoration: const InputDecoration(
                 labelText: 'Name *',
                 hintText: 'e.g., Competition Brisket, Smoked Salmon',
-                prefixIcon: Icon(Icons.restaurant),
               ),
               validator: (v) => v?.isEmpty ?? true ? 'Name is required' : null,
               textCapitalization: TextCapitalization.words,
@@ -209,7 +208,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                         decoration: const InputDecoration(
                           labelText: 'Item *',
                           hintText: 'e.g., Brisket',
-                          prefixIcon: Icon(Icons.local_fire_department),
                         ),
                         validator: (v) => v?.isEmpty ?? true ? 'Item is required' : null,
                         textCapitalization: TextCapitalization.words,
@@ -260,7 +258,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                     value: _selectedCategory,
                     decoration: const InputDecoration(
                       labelText: 'Category',
-                      prefixIcon: Icon(Icons.category),
                     ),
                     items: SmokingCategory.all.map((cat) {
                       return DropdownMenuItem(
@@ -285,7 +282,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                     decoration: const InputDecoration(
                       labelText: 'Temperature *',
                       hintText: 'e.g., 275°F',
-                      prefixIcon: Icon(Icons.thermostat),
                     ),
                     validator: (v) =>
                         v?.isEmpty ?? true ? 'Temperature is required' : null,
@@ -298,7 +294,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                     decoration: const InputDecoration(
                       labelText: 'Time *',
                       hintText: 'e.g., 8-12 hrs',
-                      prefixIcon: Icon(Icons.timer),
                     ),
                     validator: (v) =>
                         v?.isEmpty ?? true ? 'Time is required' : null,
@@ -326,7 +321,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                   decoration: const InputDecoration(
                     labelText: 'Wood Type *',
                     hintText: 'e.g., Hickory, Cherry, Apple',
-                    prefixIcon: Icon(Icons.park),
                   ),
                   validator: (v) =>
                       v?.isEmpty ?? true ? 'Wood type is required' : null,
@@ -398,7 +392,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               decoration: const InputDecoration(
                 labelText: 'Notes (optional)',
                 hintText: 'Additional tips or variations...',
-                prefixIcon: Icon(Icons.note),
                 alignLabelWithHint: true,
               ),
               maxLines: 3,
@@ -491,7 +484,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 icon: Icon(
                   Icons.remove_circle_outline, 
                   size: 20,
-                  color: theme.colorScheme.error,
+                  color: theme.colorScheme.secondary,
                 ),
                 onPressed: () => _removeSeasoning(index),
               )

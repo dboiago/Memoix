@@ -143,7 +143,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                         value: 'delete',
                         child: Text(
                           'Delete',
-                          style: TextStyle(color: theme.colorScheme.error),
+                          style: TextStyle(color: theme.colorScheme.secondary),
                         ),
                       ),
                     ],
@@ -414,7 +414,7 @@ class SmokingDetailScreen extends ConsumerWidget {
           FilledButton(
             onPressed: () => Navigator.pop(context, true),
             style: FilledButton.styleFrom(
-              backgroundColor: Theme.of(context).colorScheme.error,
+              backgroundColor: Theme.of(context).colorScheme.secondary,
             ),
             child: const Text('Delete'),
           ),

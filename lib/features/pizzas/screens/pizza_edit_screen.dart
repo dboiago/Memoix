@@ -232,17 +232,6 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
             ),
             const SizedBox(height: 32),
 
-            // Delete button (only for existing)
-            if (isEditing)
-              OutlinedButton.icon(
-                onPressed: _confirmDelete,
-                icon: const Icon(Icons.delete_outline),
-                label: const Text('Delete Pizza'),
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: theme.colorScheme.error,
-                  side: BorderSide(color: theme.colorScheme.error),
-                ),
-              ),
             const SizedBox(height: 80), // Space for FAB
           ],
         ),
@@ -648,7 +637,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
           FilledButton(
             onPressed: () => Navigator.pop(ctx, true),
             style: FilledButton.styleFrom(
-              backgroundColor: Theme.of(context).colorScheme.error,
+              backgroundColor: Theme.of(context).colorScheme.secondary,
             ),
             child: const Text('Delete'),
           ),

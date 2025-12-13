@@ -718,12 +718,10 @@ class UrlRecipeImporter {
       final hours = int.tryParse(match.group(1) ?? '') ?? 0;
       final minutes = int.tryParse(match.group(2) ?? '') ?? 0;
       
-      if (hours > 0 && minutes > 0) {
-        return '$hours hr $minutes min';
-      } else if (hours > 0) {
-        return '$hours hr';
-      } else if (minutes > 0) {
-        return '$minutes min';
+      // Always use _formatMinutes to properly handle large durations
+      final totalMinutes = hours * 60 + minutes;
+      if (totalMinutes > 0) {
+        return _formatMinutes(totalMinutes);
       }
     }
     // Fallback: parse non-ISO strings like "380 minutes", "6 hours 20 minutes"

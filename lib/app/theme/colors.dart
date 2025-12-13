@@ -84,19 +84,19 @@ class MemoixColors {
   static const Color spiritMocktail = Color(0xFF7EB8A8);       // Fresh teal
 
   // Smoked item category colors for smoking recipes
-  // Thematic colors representing different proteins and items
-  static const Color smokedBeef = Color(0xFFC62828);           // Deep red for beef
-  static const Color smokedPork = Color(0xFFE57373);           // Light red/pink for pork
-  static const Color smokedPoultry = Color(0xFFFFB74D);        // Golden yellow for poultry
-  static const Color smokedLamb = Color(0xFFA1887F);           // Brown for lamb
-  static const Color smokedGame = Color(0xFF6D4C41);           // Dark brown for game
-  static const Color smokedSeafood = Color(0xFF4FC3F7);        // Ocean blue for seafood
-  static const Color smokedVegetables = Color(0xFF81C784);     // Green for vegetables
-  static const Color smokedCheese = Color(0xFFFFD54F);         // Yellow for cheese
-  static const Color smokedDesserts = Color(0xFFF48FB1);       // Pink for desserts
-  static const Color smokedFruits = Color(0xFFBA68C8);         // Purple for fruits
-  static const Color smokedDips = Color(0xFFFF8A65);           // Coral for dips
-  static const Color smokedOther = Color(0xFF90A4AE);          // Gray for other
+  // Thematic pastel colors matching app palette
+  static const Color smokedBeef = Color(0xFFD4847A);           // Soft coral-red for beef
+  static const Color smokedPork = Color(0xFFE8A8A8);           // Soft pink for pork
+  static const Color smokedPoultry = Color(0xFFE8C878);        // Soft golden for poultry
+  static const Color smokedLamb = Color(0xFFBCA898);           // Soft tan for lamb
+  static const Color smokedGame = Color(0xFF9C8070);           // Soft brown for game
+  static const Color smokedSeafood = Color(0xFF7EBCC4);        // Soft ocean teal for seafood
+  static const Color smokedVegetables = Color(0xFF8EC898);     // Soft sage green for vegetables
+  static const Color smokedCheese = Color(0xFFE8D87E);         // Soft golden for cheese
+  static const Color smokedDesserts = Color(0xFFD8A8C0);       // Soft mauve-pink for desserts
+  static const Color smokedFruits = Color(0xFFC4A8D4);         // Soft lavender for fruits
+  static const Color smokedDips = Color(0xFFD8A888);           // Soft terracotta for dips
+  static const Color smokedOther = Color(0xFFB0BEC5);          // Soft blue-gray for other
 
   // UI colors
   static const Color background = Color(0xFFFAFAFA);

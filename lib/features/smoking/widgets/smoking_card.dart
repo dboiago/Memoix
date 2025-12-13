@@ -173,15 +173,11 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
 
                   // Cooked button
                   IconButton(
-                    icon: Icon(
-                      widget.recipe.cookCount > 0
-                          ? Icons.check_circle
-                          : Icons.check_circle_outline,
+                    icon: const Icon(
+                      Icons.check_circle_outline,
                       size: 20,
                     ),
-                    color: widget.recipe.cookCount > 0
-                        ? Colors.green.shade400
-                        : theme.colorScheme.onSurfaceVariant,
+                    color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
                       ref
                           .read(smokingRepositoryProvider)
