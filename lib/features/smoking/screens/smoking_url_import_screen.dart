@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:uuid/uuid.dart';
 
+import '../models/smoking_import_result.dart';
 import '../services/smoking_url_importer.dart';
 import '../screens/smoking_edit_screen.dart';
+import '../screens/smoking_import_review_screen.dart';
 
 class SmokingURLImportScreen extends ConsumerStatefulWidget {
   const SmokingURLImportScreen({super.key});
@@ -227,11 +230,11 @@ class _SmokingURLImportScreenState
 
     try {
       final importer = ref.read(smokingUrlImporterProvider);
-      final recipe = await importer.importFromUrl(url);
+      final result = await importer.importFromUrl(url);
 
       if (!mounted) return;
 
-      if (recipe == null) {
+      if (!result.hasMinimumData) {
         setState(() {
           _isLoading = false;
           _errorMessage = 'Could not extract a smoking recipe from this URL';
@@ -239,12 +242,23 @@ class _SmokingURLImportScreenState
         return;
       }
 
-      // Navigate to edit screen with imported recipe
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (_) => SmokingEditScreen(importedRecipe: recipe),
-        ),
-      );
+      // Decide whether to show review screen based on confidence
+      if (result.needsUserReview) {
+        // Low confidence - show review/mapping screen
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => SmokingImportReviewScreen(importResult: result),
+          ),
+        );
+      } else {
+        // High confidence - go straight to edit screen
+        final recipe = result.toRecipe(const Uuid().v4());
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => SmokingEditScreen(importedRecipe: recipe),
+          ),
+        );
+      }
     } catch (e) {
       setState(() {
         _isLoading = false;

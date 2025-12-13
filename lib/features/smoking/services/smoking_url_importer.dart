@@ -5,12 +5,14 @@ import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/smoking_recipe.dart';
+import '../models/smoking_import_result.dart';
 
 /// Service to import smoking recipes from URLs like amazingribs.com
+/// Returns SmokingImportResult with confidence scores for user review
 class SmokingUrlImporter {
   static const _uuid = Uuid();
 
-  /// Known smoking/BBQ recipe sites
+  /// Known smoking/BBQ recipe sites (higher confidence)
   static const knownSites = [
     'amazingribs.com',
     'smokingmeatforums.com',
@@ -28,7 +30,7 @@ class SmokingUrlImporter {
     'malcomsbbq.com',
   ];
 
-  /// HTML entity decode map for common entities
+  /// HTML entity decode map
   static final _htmlEntities = {
     '&amp;': '&',
     '&lt;': '<',
@@ -67,7 +69,8 @@ class SmokingUrlImporter {
   };
 
   /// Import a smoking recipe from a URL
-  Future<SmokingRecipe?> importFromUrl(String url) async {
+  /// Returns SmokingImportResult with confidence scores
+  Future<SmokingImportResult> importFromUrl(String url) async {
     try {
       final response = await http.get(
         Uri.parse(url),
@@ -81,6 +84,7 @@ class SmokingUrlImporter {
       }
 
       final document = html_parser.parse(response.body);
+      final isKnownSite = knownSites.any((site) => url.contains(site));
 
       // Try to find JSON-LD structured data first (most reliable)
       final jsonLdScripts =
@@ -89,15 +93,27 @@ class SmokingUrlImporter {
       for (final script in jsonLdScripts) {
         try {
           final data = jsonDecode(script.text);
-          final recipe = _parseJsonLd(data, url);
-          if (recipe != null) return recipe;
+          final result = _parseJsonLd(data, url, isKnownSite);
+          if (result != null) return result;
         } catch (_) {
           continue;
         }
       }
 
       // Fallback: try to parse from HTML structure
-      return _parseFromHtml(document, url);
+      final result = _parseFromHtml(document, url, isKnownSite);
+      if (result != null) return result;
+
+      // Return empty result if nothing found
+      return SmokingImportResult(
+        sourceUrl: url,
+        nameConfidence: 0,
+        temperatureConfidence: 0,
+        timeConfidence: 0,
+        woodConfidence: 0,
+        seasoningsConfidence: 0,
+        directionsConfidence: 0,
+      );
     } catch (e) {
       throw Exception('Failed to import smoking recipe from URL: $e');
     }
@@ -107,12 +123,10 @@ class SmokingUrlImporter {
   String _decodeHtml(String text) {
     var result = text;
 
-    // Decode HTML entities
     _htmlEntities.forEach((entity, char) {
       result = result.replaceAll(entity, char);
     });
 
-    // Handle numeric entities
     result = result.replaceAllMapped(
       RegExp(r'&#(\d+);'),
       (match) {
@@ -121,7 +135,6 @@ class SmokingUrlImporter {
       },
     );
 
-    // Handle hex entities
     result = result.replaceAllMapped(
       RegExp(r'&#x([0-9a-fA-F]+);'),
       (match) {
@@ -130,38 +143,23 @@ class SmokingUrlImporter {
       },
     );
 
-    // Convert fractions
     _fractionMap.forEach((fraction, unicode) {
       result = result.replaceAll(fraction, unicode);
     });
 
-    // Clean up extra whitespace
     result = result.replaceAll(RegExp(r'\s+'), ' ').trim();
 
     return result;
   }
 
-  /// Clean recipe name - remove common suffixes
   String _cleanRecipeName(String name) {
     var cleaned = _decodeHtml(name);
-
-    // Remove common suffixes
     cleaned = cleaned.replaceAll(
         RegExp(r'\s*[-–—]\s*Recipe\s*$', caseSensitive: false), '');
     cleaned =
         cleaned.replaceAll(RegExp(r'\s+Recipe\s*$', caseSensitive: false), '');
     cleaned = cleaned.replaceAll(
         RegExp(r'^Recipe\s*[-–—:]\s*', caseSensitive: false), '');
-
-    // Remove "smoked" prefix if it's redundant (we know it's a smoking recipe)
-    // But keep it if it's part of the meat name like "Smoked Salmon"
-    if (cleaned.toLowerCase().startsWith('smoked ') &&
-        !RegExp(r'^smoked\s+(salmon|trout|fish)',
-                caseSensitive: false)
-            .hasMatch(cleaned)) {
-      // Don't remove smoked - it's part of the identity
-    }
-
     return cleaned.trim();
   }
 
@@ -174,14 +172,15 @@ class SmokingUrlImporter {
     return _decodeHtml(value.toString().trim());
   }
 
-  /// Parse JSON-LD structured data
-  SmokingRecipe? _parseJsonLd(dynamic data, String sourceUrl) {
+  /// Parse JSON-LD structured data with confidence scoring
+  SmokingImportResult? _parseJsonLd(
+      dynamic data, String sourceUrl, bool isKnownSite) {
     // Handle @graph structure
     if (data is Map && data['@graph'] != null) {
       final graph = data['@graph'] as List;
       for (final item in graph) {
-        final recipe = _parseJsonLd(item, sourceUrl);
-        if (recipe != null) return recipe;
+        final result = _parseJsonLd(item, sourceUrl, isKnownSite);
+        if (result != null) return result;
       }
       return null;
     }
@@ -189,13 +188,12 @@ class SmokingUrlImporter {
     // Handle array of items
     if (data is List) {
       for (final item in data) {
-        final recipe = _parseJsonLd(item, sourceUrl);
-        if (recipe != null) return recipe;
+        final result = _parseJsonLd(item, sourceUrl, isKnownSite);
+        if (result != null) return result;
       }
       return null;
     }
 
-    // Check if this is a Recipe type
     if (data is! Map) return null;
 
     final type = data['@type'];
@@ -204,45 +202,78 @@ class SmokingUrlImporter {
 
     if (!isRecipe) return null;
 
-    // Parse the recipe data
+    // Extract name
     final name = _cleanRecipeName(_parseString(data['name']) ?? 'Untitled');
+    final nameConfidence = name.isNotEmpty && name != 'Untitled' ? 1.0 : 0.3;
+
+    // Extract time
     final cookTime = _parseTime(data);
-    final temperature = _detectTemperature(data);
-    final wood = _detectWood(data);
-    final seasonings = _parseSeasonings(data['recipeIngredient']);
+    final timeConfidence = cookTime != null && cookTime.isNotEmpty ? 0.9 : 0.0;
+
+    // Detect temperatures (all found, plus best guess)
+    final tempResult = _detectTemperatures(data);
+    final temperature = tempResult['selected'] as String?;
+    final detectedTemps = tempResult['all'] as List<String>;
+    final tempConfidence = tempResult['confidence'] as double;
+
+    // Detect woods (all found, plus best guess)
+    final woodResult = _detectWoods(data);
+    final wood = woodResult['selected'] as String?;
+    final detectedWoods = woodResult['all'] as List<String>;
+    final woodConfidence = woodResult['confidence'] as double;
+
+    // Parse all ingredients with classification
+    final ingredientResult = _parseAllIngredients(data['recipeIngredient']);
+    final rawIngredients = ingredientResult['raw'] as List<RawIngredient>;
+    final seasonings = ingredientResult['seasonings'] as List<SmokingSeasoning>;
+    final seasoningsConfidence = ingredientResult['confidence'] as double;
+
+    // Parse directions
     final directions = _parseInstructions(data['recipeInstructions']);
+    final directionsConfidence = directions.isNotEmpty
+        ? (directions.length >= 3 ? 1.0 : 0.7)
+        : 0.0;
+
+    // Parse other fields
     final notes = _parseString(data['description']);
     final imageUrl = _parseImage(data['image']);
 
-    return SmokingRecipe.create(
-      uuid: _uuid.v4(),
+    // Boost confidence for known BBQ sites
+    final siteBoost = isKnownSite ? 0.1 : 0.0;
+
+    return SmokingImportResult(
       name: name,
-      temperature: temperature ?? '225°F',
-      time: cookTime ?? '',
-      wood: wood ?? '',
+      temperature: temperature,
+      time: cookTime,
+      wood: wood,
       seasonings: seasonings,
       directions: directions,
       notes: notes,
       imageUrl: imageUrl,
-      source: SmokingSource.imported,
+      rawIngredients: rawIngredients,
+      detectedTemperatures: detectedTemps,
+      detectedWoods: detectedWoods,
+      rawDirections: directions,
+      nameConfidence: (nameConfidence + siteBoost).clamp(0.0, 1.0),
+      temperatureConfidence: (tempConfidence + siteBoost).clamp(0.0, 1.0),
+      timeConfidence: (timeConfidence + siteBoost).clamp(0.0, 1.0),
+      woodConfidence: (woodConfidence + siteBoost).clamp(0.0, 1.0),
+      seasoningsConfidence: (seasoningsConfidence + siteBoost).clamp(0.0, 1.0),
+      directionsConfidence: (directionsConfidence + siteBoost).clamp(0.0, 1.0),
+      sourceUrl: sourceUrl,
     );
   }
 
-  /// Parse cooking time from recipe data
   String? _parseTime(Map data) {
-    // Prefer totalTime if available
     if (data['totalTime'] != null) {
       final total = _parseDuration(data['totalTime']);
       if (total != null) return total;
     }
 
-    // Otherwise calculate from prep + cook
     int totalMinutes = 0;
-
     if (data['prepTime'] != null) {
       totalMinutes += _parseDurationMinutes(data['prepTime']);
     }
-
     if (data['cookTime'] != null) {
       totalMinutes += _parseDurationMinutes(data['cookTime']);
     }
@@ -265,8 +296,6 @@ class SmokingUrlImporter {
   int _parseDurationMinutes(dynamic value) {
     if (value == null) return 0;
     final str = value.toString();
-
-    // Parse ISO 8601 duration (e.g., PT30M, PT1H30M, PT720M)
     final regex = RegExp(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?');
     final match = regex.firstMatch(str);
 
@@ -275,15 +304,12 @@ class SmokingUrlImporter {
       final minutes = int.tryParse(match.group(2) ?? '') ?? 0;
       return hours * 60 + minutes;
     }
-
     return 0;
   }
 
   String? _parseDuration(dynamic value) {
     if (value == null) return null;
     final str = value.toString();
-
-    // Parse ISO 8601 duration
     final regex = RegExp(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?');
     final match = regex.firstMatch(str);
 
@@ -299,102 +325,139 @@ class SmokingUrlImporter {
         return '$minutes min';
       }
     }
-
     return str;
   }
 
-  /// Detect smoking temperature from recipe text
-  String? _detectTemperature(Map data) {
-    // Search in instructions, description, and name
+  /// Detect all temperatures and return best guess with confidence
+  Map<String, dynamic> _detectTemperatures(Map data) {
     final textToSearch = [
       _parseString(data['description']) ?? '',
       ...(_parseInstructions(data['recipeInstructions'])),
     ].join(' ');
 
-    // Look for temperature patterns
-    // Common smoking temps: 225°F, 250°F, 275°F, 300°F
+    final temps = <String>[];
     final tempPatterns = [
-      // Fahrenheit patterns
-      RegExp(r'(\d{3})\s*°?\s*F(?:ahrenheit)?', caseSensitive: false),
-      RegExp(r'at\s+(\d{3})\s*degrees?', caseSensitive: false),
+      RegExp(r'(\d{3})\s*°\s*F', caseSensitive: false),
       RegExp(r'(\d{3})\s*degrees?\s*F', caseSensitive: false),
-      // Celsius patterns
-      RegExp(r'(\d{2,3})\s*°?\s*C(?:elsius)?', caseSensitive: false),
+      RegExp(r'at\s+(\d{3})\s*°?', caseSensitive: false),
+      RegExp(r'(\d{2,3})\s*°\s*C', caseSensitive: false),
     ];
 
     for (final pattern in tempPatterns) {
-      final match = pattern.firstMatch(textToSearch);
-      if (match != null) {
+      for (final match in pattern.allMatches(textToSearch)) {
         final temp = match.group(1);
         if (temp != null) {
           final tempNum = int.tryParse(temp);
           if (tempNum != null) {
-            // Determine if F or C based on pattern
-            if (pattern.pattern.contains('C(?:elsius)?')) {
-              return '$temp°C';
+            String formatted;
+            if (pattern.pattern.contains('C')) {
+              formatted = '$temp°C';
             } else if (tempNum >= 200 && tempNum <= 400) {
-              // Likely Fahrenheit
-              return '$temp°F';
+              formatted = '$temp°F';
             } else if (tempNum >= 90 && tempNum <= 200) {
-              // Likely Celsius
-              return '$temp°C';
+              formatted = '$temp°C';
+            } else {
+              continue;
+            }
+            if (!temps.contains(formatted)) {
+              temps.add(formatted);
             }
           }
         }
       }
     }
 
-    // Default smoking temperature
-    return '225°F';
+    // Find most likely smoking temperature (200-300°F range)
+    String? selected;
+    double confidence = 0.0;
+
+    for (final temp in temps) {
+      final numMatch = RegExp(r'(\d+)').firstMatch(temp);
+      if (numMatch != null) {
+        final num = int.tryParse(numMatch.group(1)!);
+        if (num != null) {
+          // Prefer typical smoking temps
+          if (temp.contains('F') && num >= 200 && num <= 300) {
+            selected = temp;
+            confidence = 0.9;
+            break;
+          } else if (temp.contains('C') && num >= 100 && num <= 150) {
+            selected = temp;
+            confidence = 0.9;
+            break;
+          }
+        }
+      }
+    }
+
+    // Use first found if no ideal match
+    if (selected == null && temps.isNotEmpty) {
+      selected = temps.first;
+      confidence = 0.5;
+    }
+
+    return {
+      'selected': selected,
+      'all': temps,
+      'confidence': confidence,
+    };
   }
 
-  /// Detect wood type from recipe text
-  String? _detectWood(Map data) {
+  /// Detect all wood mentions and return best guess with confidence
+  Map<String, dynamic> _detectWoods(Map data) {
     final textToSearch = [
       _parseString(data['name']) ?? '',
       _parseString(data['description']) ?? '',
       ...(_parseInstructions(data['recipeInstructions'])),
     ].join(' ').toLowerCase();
 
-    // Check for wood types mentioned in text
+    final woods = <String>[];
+    String? selected;
+    double confidence = 0.0;
+
+    // Check each known wood type
     for (final wood in WoodSuggestions.common) {
       if (textToSearch.contains(wood.toLowerCase())) {
-        // Also check it's in a wood context
+        if (!woods.contains(wood)) {
+          woods.add(wood);
+        }
+
+        // Check if it's in a wood context (higher confidence)
         final woodContext = RegExp(
-          '(${wood.toLowerCase()})\\s*(wood|chips?|chunks?|pellets?|smoke)',
+          '(${wood.toLowerCase()})\\s*(wood|chips?|chunks?|pellets?|smoke)|'
+          '(smoke|wood|chips?|chunks?|pellets?)\\s*(${wood.toLowerCase()})',
           caseSensitive: false,
         );
         if (woodContext.hasMatch(textToSearch)) {
-          return wood;
+          selected = wood;
+          confidence = 0.9;
+          break;
         }
       }
     }
 
-    // Secondary check - just look for wood name near "wood" or "smoke"
-    for (final wood in WoodSuggestions.common) {
-      final pattern = RegExp(
-        '(smoke|wood|chips?|chunks?|pellets?).{0,30}${wood.toLowerCase()}|'
-        '${wood.toLowerCase()}.{0,30}(smoke|wood|chips?|chunks?|pellets?)',
-        caseSensitive: false,
-      );
-      if (pattern.hasMatch(textToSearch)) {
-        return wood;
-      }
+    // Use first found if no contextual match
+    if (selected == null && woods.isNotEmpty) {
+      selected = woods.first;
+      confidence = 0.5; // Lower confidence without context
     }
 
-    // If no wood detected, check for general mentions
-    for (final wood in WoodSuggestions.common) {
-      if (textToSearch.contains(wood.toLowerCase())) {
-        return wood;
-      }
-    }
-
-    return null;
+    return {
+      'selected': selected,
+      'all': woods,
+      'confidence': confidence,
+    };
   }
 
-  /// Parse seasonings/rub ingredients from recipe ingredients
-  List<SmokingSeasoning> _parseSeasonings(dynamic value) {
-    if (value == null) return [];
+  /// Parse all ingredients and classify them
+  Map<String, dynamic> _parseAllIngredients(dynamic value) {
+    if (value == null) {
+      return {
+        'raw': <RawIngredient>[],
+        'seasonings': <SmokingSeasoning>[],
+        'confidence': 0.0,
+      };
+    }
 
     List<String> items;
     if (value is String) {
@@ -402,25 +465,34 @@ class SmokingUrlImporter {
     } else if (value is List) {
       items = value.map((e) => e.toString()).toList();
     } else {
-      return [];
+      return {
+        'raw': <RawIngredient>[],
+        'seasonings': <SmokingSeasoning>[],
+        'confidence': 0.0,
+      };
     }
 
-    // Keywords that indicate rub/seasoning ingredients
-    final seasoningKeywords = [
+    // Classification keywords
+    const seasoningKeywords = [
       'salt', 'pepper', 'paprika', 'cayenne', 'chili', 'cumin', 'garlic',
-      'onion', 'sugar', 'brown sugar', 'mustard', 'rub', 'spice', 'herb',
+      'onion powder', 'sugar', 'brown sugar', 'mustard', 'rub', 'spice',
       'oregano', 'thyme', 'rosemary', 'sage', 'coriander', 'fennel',
       'powder', 'ground', 'dried', 'smoked paprika', 'ancho', 'chipotle',
     ];
 
-    // Keywords to exclude (main meat, liquids)
-    final excludeKeywords = [
+    const proteinKeywords = [
       'brisket', 'pork', 'beef', 'ribs', 'chicken', 'turkey', 'salmon',
-      'broth', 'stock', 'water', 'beer', 'wine', 'vinegar', 'oil',
-      'butter', 'sauce', 'marinade',
+      'pork butt', 'pork shoulder', 'chuck', 'tri-tip', 'lamb', 'duck',
     ];
 
+    const liquidKeywords = [
+      'broth', 'stock', 'water', 'beer', 'wine', 'vinegar', 'oil',
+      'butter', 'sauce', 'marinade', 'juice', 'cider',
+    ];
+
+    final rawIngredients = <RawIngredient>[];
     final seasonings = <SmokingSeasoning>[];
+    int seasoningMatches = 0;
 
     for (final item in items) {
       final decoded = _decodeHtml(item.trim());
@@ -428,52 +500,67 @@ class SmokingUrlImporter {
 
       final lower = decoded.toLowerCase();
 
-      // Check if this is a seasoning ingredient
-      final isSeasoning =
-          seasoningKeywords.any((kw) => lower.contains(kw));
-      final isExcluded = excludeKeywords.any((kw) => lower.contains(kw));
+      // Parse amount and name
+      String? amount;
+      String name = decoded;
 
-      if (isSeasoning && !isExcluded) {
-        final seasoning = _parseSeasoningString(decoded);
-        if (seasoning.name.isNotEmpty) {
-          seasonings.add(seasoning);
-        }
+      final amountMatch = RegExp(
+        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞.]+\s*'
+        r'(?:tsp|teaspoon|Tbsp|tablespoon|cup|oz|ounce|pound|lb|g|kg)s?)\s+',
+        caseSensitive: false,
+      ).firstMatch(decoded);
+
+      if (amountMatch != null) {
+        amount = amountMatch.group(1)?.trim();
+        name = decoded.substring(amountMatch.end).trim();
+      }
+
+      // Clean up name
+      name = name.replaceAll(RegExp(r'\([^)]*\)'), '').trim();
+
+      // Classify
+      final isSeasoning = seasoningKeywords.any((kw) => lower.contains(kw));
+      final isProtein = proteinKeywords.any((kw) => lower.contains(kw));
+      final isLiquid = liquidKeywords.any((kw) => lower.contains(kw));
+
+      final rawIngredient = RawIngredient(
+        original: decoded,
+        amount: amount,
+        name: name,
+        isSeasoning: isSeasoning && !isProtein && !isLiquid,
+        isMainProtein: isProtein,
+        isLiquid: isLiquid,
+      );
+      rawIngredients.add(rawIngredient);
+
+      // Add to seasonings list if classified as seasoning
+      if (isSeasoning && !isProtein && !isLiquid) {
+        seasonings.add(rawIngredient.toSeasoning());
+        seasoningMatches++;
       }
     }
 
-    return seasonings;
-  }
+    // Calculate confidence based on how many ingredients we classified
+    double confidence = 0.0;
+    if (rawIngredients.isNotEmpty) {
+      final classifiedCount = rawIngredients
+          .where((i) => i.isSeasoning || i.isMainProtein || i.isLiquid)
+          .length;
+      confidence = classifiedCount / rawIngredients.length;
 
-  /// Parse a single seasoning string into structured data
-  SmokingSeasoning _parseSeasoningString(String text) {
-    var remaining = text;
-
-    // Try to extract amount (number at start)
-    String? amount;
-    final amountMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞.]+)\s*'
-      r'(tsp|teaspoon|Tbsp|tablespoon|cup|oz|ounce|pound|lb|g|kg)s?\s+',
-      caseSensitive: false,
-    ).firstMatch(remaining);
-
-    if (amountMatch != null) {
-      final number = amountMatch.group(1)?.trim() ?? '';
-      final unit = amountMatch.group(2)?.trim() ?? '';
-      amount = '$number $unit'.trim();
-      remaining = remaining.substring(amountMatch.end).trim();
+      // Boost if we found some seasonings
+      if (seasoningMatches > 0) {
+        confidence = (confidence + 0.3).clamp(0.0, 1.0);
+      }
     }
 
-    // Clean up the name
-    remaining = remaining.replaceAll(RegExp(r'\([^)]*\)'), '').trim();
-    remaining = remaining.replaceAll(RegExp(r',.*$'), '').trim();
-
-    return SmokingSeasoning.create(
-      name: remaining,
-      amount: amount,
-    );
+    return {
+      'raw': rawIngredients,
+      'seasonings': seasonings,
+      'confidence': confidence,
+    };
   }
 
-  /// Parse instructions from recipe data
   List<String> _parseInstructions(dynamic value) {
     if (value == null) return [];
 
@@ -497,24 +584,12 @@ class SmokingUrlImporter {
         }
 
         if (text != null && text.isNotEmpty) {
-          // Clean up the instruction text
           var cleaned = _decodeHtml(text);
-          
-          // Remove step name if it duplicates the text
-          if (cleaned.contains('. ')) {
-            final parts = cleaned.split('. ');
-            if (parts.length == 2 && 
-                parts[0].toLowerCase() == parts[1].toLowerCase().substring(0, parts[0].length.clamp(0, parts[1].length))) {
-              cleaned = parts[1];
-            }
-          }
-          
+
           // Simplify very long instructions
           if (cleaned.length > 500) {
-            // Try to extract the key action
             final sentences = cleaned.split(RegExp(r'\.\s+'));
             if (sentences.isNotEmpty) {
-              // Take first 2-3 sentences
               cleaned = sentences.take(3).join('. ');
               if (!cleaned.endsWith('.')) cleaned += '.';
             }
@@ -529,7 +604,6 @@ class SmokingUrlImporter {
     return [];
   }
 
-  /// Parse image URL from recipe data
   String? _parseImage(dynamic value) {
     if (value == null) return null;
     if (value is String) return value;
@@ -542,8 +616,8 @@ class SmokingUrlImporter {
     return null;
   }
 
-  /// Fallback HTML parsing for sites without JSON-LD
-  SmokingRecipe? _parseFromHtml(dynamic document, String sourceUrl) {
+  SmokingImportResult? _parseFromHtml(
+      dynamic document, String sourceUrl, bool isKnownSite) {
     final title = document.querySelector('h1')?.text?.trim() ??
         document.querySelector('.recipe-title')?.text?.trim() ??
         document.querySelector('[itemprop="name"]')?.text?.trim() ??
@@ -553,14 +627,18 @@ class SmokingUrlImporter {
       '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"]',
     );
 
+    final rawIngredients = <RawIngredient>[];
     final seasonings = <SmokingSeasoning>[];
+
     for (final el in ingredientElements) {
       final text = _decodeHtml(el.text.trim());
       if (text.isNotEmpty) {
-        final seasoning = _parseSeasoningString(text);
-        if (seasoning.name.isNotEmpty) {
-          seasonings.add(seasoning);
-        }
+        rawIngredients.add(RawIngredient(
+          original: text,
+          name: text,
+          isSeasoning: true, // Mark all as seasonings in HTML fallback
+        ));
+        seasonings.add(SmokingSeasoning.create(name: text));
       }
     }
 
@@ -573,19 +651,28 @@ class SmokingUrlImporter {
         .where((s) => s.isNotEmpty)
         .toList();
 
-    if (seasonings.isEmpty && directions.isEmpty) {
+    if (rawIngredients.isEmpty && directions.isEmpty) {
       return null;
     }
 
-    return SmokingRecipe.create(
-      uuid: _uuid.v4(),
+    return SmokingImportResult(
       name: _cleanRecipeName(title),
-      temperature: '225°F',
-      time: '',
-      wood: '',
+      temperature: null,
+      time: null,
+      wood: null,
       seasonings: seasonings,
       directions: directions,
-      source: SmokingSource.imported,
+      rawIngredients: rawIngredients,
+      detectedTemperatures: [],
+      detectedWoods: [],
+      rawDirections: directions,
+      nameConfidence: 0.5,
+      temperatureConfidence: 0.0,
+      timeConfidence: 0.0,
+      woodConfidence: 0.0,
+      seasoningsConfidence: 0.3,
+      directionsConfidence: directions.isNotEmpty ? 0.5 : 0.0,
+      sourceUrl: sourceUrl,
     );
   }
 }
