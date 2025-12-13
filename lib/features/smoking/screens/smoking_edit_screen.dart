@@ -161,6 +161,11 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
+            // Recipe Photo (top for consistency)
+            _buildImagePicker(theme),
+
+            const SizedBox(height: 16),
+
             // Name field
             TextFormField(
               controller: _nameController,
@@ -262,11 +267,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             ),
 
             const SizedBox(height: 24),
-
-            // Recipe Photo
-            _buildImagePicker(theme),
-
-            const SizedBox(height: 16),
 
             // Notes field
             TextFormField(
