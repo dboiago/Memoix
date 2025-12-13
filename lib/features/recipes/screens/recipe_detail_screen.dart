@@ -84,13 +84,14 @@ class RecipeDetailView extends ConsumerWidget {
     }
     
     final theme = Theme.of(context);
+    final hasImage = recipe.imageUrl != null && recipe.imageUrl!.isNotEmpty;
 
     return Scaffold(
       body: CustomScrollView(
         slivers: [
           // Hero header with recipe image or colored header
           SliverAppBar(
-            expandedHeight: recipe.imageUrl != null ? 250 : 150,
+            expandedHeight: hasImage ? 250 : 150,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
@@ -103,7 +104,7 @@ class RecipeDetailView extends ConsumerWidget {
                   ],
                 ),
               ),
-              background: recipe.imageUrl != null
+              background: hasImage
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
@@ -142,7 +143,7 @@ class RecipeDetailView extends ConsumerWidget {
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                  shadows: recipe.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -153,7 +154,7 @@ class RecipeDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: recipe.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -185,7 +186,7 @@ class RecipeDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.share,
-                  shadows: recipe.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -206,7 +207,7 @@ class RecipeDetailView extends ConsumerWidget {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: recipe.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),

@@ -84,7 +84,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                           ),
                           const SizedBox(width: 6),
                           Text(
-                            widget.recipe.item ?? widget.recipe.category!,
+                            widget.recipe.category!,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.colorScheme.onSurfaceVariant,
                             ),

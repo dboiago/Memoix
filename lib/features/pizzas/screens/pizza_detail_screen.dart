@@ -52,13 +52,14 @@ class _PizzaDetailView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final hasImage = pizza.imageUrl != null && pizza.imageUrl!.isNotEmpty;
 
     return Scaffold(
       body: CustomScrollView(
         slivers: [
           // Hero header
           SliverAppBar(
-            expandedHeight: pizza.imageUrl != null ? 250 : 150,
+            expandedHeight: hasImage ? 250 : 150,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
@@ -78,7 +79,7 @@ class _PizzaDetailView extends ConsumerWidget {
                 icon: Icon(
                   pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: pizza.isFavorite ? Colors.red : null,
-                  shadows: pizza.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -89,7 +90,7 @@ class _PizzaDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: pizza.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -108,7 +109,7 @@ class _PizzaDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.share,
-                  shadows: pizza.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -131,7 +132,7 @@ class _PizzaDetailView extends ConsumerWidget {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: pizza.imageUrl != null 
+                  shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
                 ),
@@ -252,7 +253,7 @@ class _PizzaDetailView extends ConsumerWidget {
   }
 
   Widget _buildHeaderBackground(ThemeData theme) {
-    if (pizza.imageUrl == null) {
+    if (pizza.imageUrl == null || pizza.imageUrl!.isEmpty) {
       return Container(
         color: theme.colorScheme.surfaceContainerHighest,
       );
@@ -276,15 +277,6 @@ class _PizzaDetailView extends ConsumerWidget {
         ),
       );
     }
-  }
-
-  Widget _buildSectionHeader(ThemeData theme, String title) {
-    return Text(
-      title,
-      style: theme.textTheme.titleMedium?.copyWith(
-        fontWeight: FontWeight.bold,
-      ),
-    );
   }
 
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action) async {
@@ -412,13 +404,9 @@ String _capitalizeWords(String text) {
 /// A simple checkable list for pizza ingredients (cheeses/toppings)
 class _PizzaIngredientList extends StatefulWidget {
   final List<String> items;
-  final IconData? icon;
-  final Color? iconColor;
 
   const _PizzaIngredientList({
     required this.items,
-    this.icon,
-    this.iconColor,
   });
 
   @override
@@ -453,17 +441,6 @@ class _PizzaIngredientListState extends State<_PizzaIngredientList> {
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(
               children: [
-                // Icon for each item
-                if (widget.icon != null) ...[
-                  Icon(
-                    widget.icon,
-                    size: 18,
-                    color: isChecked
-                        ? (widget.iconColor ?? theme.colorScheme.primary).withOpacity(0.5)
-                        : widget.iconColor ?? theme.colorScheme.primary,
-                  ),
-                  const SizedBox(width: 8),
-                ],
                 SizedBox(
                   width: 24,
                   height: 24,

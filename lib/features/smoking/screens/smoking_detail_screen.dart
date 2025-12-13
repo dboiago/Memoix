@@ -27,11 +27,13 @@ class SmokingDetailScreen extends ConsumerWidget {
             return const Center(child: Text('Recipe not found'));
           }
 
+          final hasImage = recipe.imageUrl != null && recipe.imageUrl!.isNotEmpty;
+
           return CustomScrollView(
             slivers: [
               // App bar with image
               SliverAppBar(
-                expandedHeight: recipe.imageUrl != null ? 250 : 120,
+                expandedHeight: hasImage ? 250 : 120,
                 pinned: true,
                 flexibleSpace: FlexibleSpaceBar(
                   title: Text(
@@ -44,7 +46,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                       ],
                     ),
                   ),
-                  background: recipe.imageUrl != null
+                  background: hasImage
                       ? Stack(
                           fit: StackFit.expand,
                           children: [
@@ -53,11 +55,6 @@ class SmokingDetailScreen extends ConsumerWidget {
                               fit: BoxFit.cover,
                               errorBuilder: (_, __, ___) => Container(
                                 color: theme.colorScheme.surfaceContainerHighest,
-                                child: Icon(
-                                  Icons.outdoor_grill,
-                                  size: 64,
-                                  color: theme.colorScheme.outline,
-                                ),
                               ),
                             ),
                             // Gradient overlay for title readability
@@ -76,12 +73,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                           ],
                         )
                       : Container(
-                          color: theme.colorScheme.primary,
-                          child: const Icon(
-                            Icons.outdoor_grill,
-                            size: 64,
-                            color: Colors.white54,
-                          ),
+                          color: theme.colorScheme.surfaceContainerHighest,
                         ),
                 ),
                 actions: [
@@ -89,7 +81,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                     icon: Icon(
                       recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                       color: recipe.isFavorite ? Colors.red : null,
-                      shadows: recipe.imageUrl != null 
+                      shadows: hasImage 
                           ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                           : null,
                     ),
@@ -100,7 +92,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                   IconButton(
                     icon: Icon(
                       Icons.check_circle_outline,
-                      shadows: recipe.imageUrl != null 
+                      shadows: hasImage 
                           ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                           : null,
                     ),
@@ -119,7 +111,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                   IconButton(
                     icon: Icon(
                       Icons.share,
-                      shadows: recipe.imageUrl != null 
+                      shadows: hasImage 
                           ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                           : null,
                     ),
@@ -151,7 +143,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                     ],
                     icon: Icon(
                       Icons.more_vert,
-                      shadows: recipe.imageUrl != null 
+                      shadows: hasImage 
                           ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                           : null,
                     ),
@@ -159,61 +151,152 @@ class SmokingDetailScreen extends ConsumerWidget {
                 ],
               ),
 
-              // Recipe details
+              // Recipe details - styled like regular recipe page
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Quick info cards
+                      // Quick info chips (category, temperature, time, wood)
                       _buildQuickInfo(context, recipe),
                       
-                      const SizedBox(height: 24),
-
-                      // Seasonings section
-                      if (recipe.seasonings.isNotEmpty) ...[
-                        _buildSectionHeader(context, 'Seasonings'),
-                        const SizedBox(height: 12),
-                        _buildSeasoningsList(context, recipe.seasonings),
-                        const SizedBox(height: 24),
-                      ],
-
-                      // Directions section
-                      if (recipe.directions.isNotEmpty) ...[
-                        _buildSectionHeader(context, 'Directions'),
-                        const SizedBox(height: 12),
-                        _buildDirectionsList(context, recipe.directions),
-                        const SizedBox(height: 24),
-                      ],
-
-                      // Notes section
-                      if (recipe.notes != null && recipe.notes!.isNotEmpty) ...[
-                        _buildSectionHeader(context, 'Notes'),
-                        const SizedBox(height: 12),
-                        Container(
-                          width: double.infinity,
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.surfaceContainerHighest,
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Text(
-                            recipe.notes!,
-                            style: theme.textTheme.bodyMedium,
-                          ),
-                        ),
-                      ],
-
-                      const SizedBox(height: 32),
+                      const SizedBox(height: 16),
                     ],
                   ),
                 ),
+              ),
+              
+              // Ingredients Card (main item + seasonings)
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Ingredients header
+                          Text(
+                            'Ingredients',
+                            style: theme.textTheme.titleLarge?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+                          
+                          // Main item section
+                          if (recipe.item != null && recipe.item!.isNotEmpty) ...[
+                            _buildIngredientSection(
+                              theme,
+                              'Main',
+                              [recipe.item!],
+                            ),
+                          ],
+                          
+                          // Seasonings section
+                          if (recipe.seasonings.isNotEmpty) ...[
+                            if (recipe.item != null && recipe.item!.isNotEmpty)
+                              const SizedBox(height: 16),
+                            _buildIngredientSection(
+                              theme,
+                              recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
+                              recipe.seasonings.map((s) => s.displayText).toList(),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              
+              // Directions Card
+              if (recipe.directions.isNotEmpty)
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Directions',
+                              style: theme.textTheme.titleLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            _buildDirectionsList(context, recipe.directions),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+              // Notes section (if present)
+              if (recipe.notes != null && recipe.notes!.isNotEmpty)
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Notes',
+                              style: theme.textTheme.titleLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              recipe.notes!,
+                              style: theme.textTheme.bodyMedium,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                
+              // Bottom padding
+              const SliverToBoxAdapter(
+                child: SizedBox(height: 32),
               ),
             ],
           );
         },
       ),
+    );
+  }
+  
+  /// Build an ingredient section with header and checkable list
+  Widget _buildIngredientSection(ThemeData theme, String title, List<String> items) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Section header
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Text(
+            title,
+            style: theme.textTheme.titleSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: theme.colorScheme.primary,
+            ),
+          ),
+        ),
+        // Ingredient list
+        _SmokingIngredientList(items: items),
+      ],
     );
   }
 
@@ -224,8 +307,8 @@ class SmokingDetailScreen extends ConsumerWidget {
       spacing: 8,
       runSpacing: 8,
       children: [
-        // Item/Category with colored dot
-        if (recipe.item != null || recipe.category != null)
+        // Category with colored dot (not item)
+        if (recipe.category != null)
           Chip(
             avatar: Container(
               width: 12,
@@ -235,7 +318,7 @@ class SmokingDetailScreen extends ConsumerWidget {
                 shape: BoxShape.circle,
               ),
             ),
-            label: Text(recipe.item ?? recipe.category ?? ''),
+            label: Text(recipe.category!),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(color: theme.colorScheme.onSurface),
             visualDensity: VisualDensity.compact,
@@ -265,71 +348,6 @@ class SmokingDetailScreen extends ConsumerWidget {
           visualDensity: VisualDensity.compact,
         ),
       ],
-    );
-  }
-
-  Widget _buildSectionHeader(BuildContext context, String title) {
-    final theme = Theme.of(context);
-
-    return Text(
-      title,
-      style: theme.textTheme.titleLarge?.copyWith(
-        fontWeight: FontWeight.w600,
-      ),
-    );
-  }
-
-  Widget _buildSeasoningsList(BuildContext context, List<SmokingSeasoning> seasonings) {
-    final theme = Theme.of(context);
-
-    return Container(
-      decoration: BoxDecoration(
-        color: theme.colorScheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        children: seasonings.asMap().entries.map((entry) {
-          final index = entry.key;
-          final seasoning = entry.value;
-          final isLast = index == seasonings.length - 1;
-
-          return Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              border: isLast
-                  ? null
-                  : Border(
-                      bottom: BorderSide(
-                        color: theme.colorScheme.outline.withOpacity(0.2),
-                      ),
-                    ),
-            ),
-            child: Row(
-              children: [
-                // Amount on left (if present)
-                if (seasoning.amount != null && seasoning.amount!.isNotEmpty) ...[
-                  SizedBox(
-                    width: 80,
-                    child: Text(
-                      seasoning.amount!,
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ),
-                ],
-                // Name
-                Expanded(
-                  child: Text(
-                    seasoning.name,
-                    style: theme.textTheme.bodyLarge,
-                  ),
-                ),
-              ],
-            ),
-          );
-        }).toList(),
-      ),
     );
   }
 
@@ -494,6 +512,81 @@ class SmokingDetailScreen extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Stateful ingredient list with checkboxes for smoking recipes
+class _SmokingIngredientList extends StatefulWidget {
+  final List<String> items;
+
+  const _SmokingIngredientList({required this.items});
+
+  @override
+  State<_SmokingIngredientList> createState() => _SmokingIngredientListState();
+}
+
+class _SmokingIngredientListState extends State<_SmokingIngredientList> {
+  final Set<int> _checkedItems = {};
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: widget.items.asMap().entries.map((entry) {
+        final index = entry.key;
+        final item = entry.value;
+        final isChecked = _checkedItems.contains(index);
+
+        return InkWell(
+          onTap: () {
+            setState(() {
+              if (isChecked) {
+                _checkedItems.remove(index);
+              } else {
+                _checkedItems.add(index);
+              }
+            });
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: Checkbox(
+                    value: isChecked,
+                    onChanged: (value) {
+                      setState(() {
+                        if (value == true) {
+                          _checkedItems.add(index);
+                        } else {
+                          _checkedItems.remove(index);
+                        }
+                      });
+                    },
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    item,
+                    style: theme.textTheme.bodyLarge?.copyWith(
+                      decoration: isChecked ? TextDecoration.lineThrough : null,
+                      color: isChecked
+                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          : null,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      }).toList(),
     );
   }
 }
