@@ -237,24 +237,23 @@ class _IngredientListState extends State<IngredientList> {
               ),
             ],
 
-            // Spacer pushes notes to the right
-            const Spacer(),
-
-            // Notes/alternatives aligned to the right
-            if (hasNotes)
-              Flexible(
-                child: Text(
-                  notesText,
-                  style: TextStyle(
-                    decoration: isChecked ? TextDecoration.lineThrough : null,
-                    color: isChecked
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
-                        : theme.colorScheme.primary,
-                    fontStyle: FontStyle.italic,
-                  ),
-                  textAlign: TextAlign.right,
-                ),
-              ),
+            // Notes/alternatives - Expanded ensures it fills remaining space
+            // and textAlign: right pushes text to the right edge
+            Expanded(
+              child: hasNotes
+                  ? Text(
+                      notesText,
+                      style: TextStyle(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.primary,
+                        fontStyle: FontStyle.italic,
+                      ),
+                      textAlign: TextAlign.right,
+                    )
+                  : const SizedBox.shrink(),
+            ),
           ],
         ),
       ),
