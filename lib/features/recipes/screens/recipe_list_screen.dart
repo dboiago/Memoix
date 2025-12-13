@@ -434,7 +434,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               title: const Text('Scan from Photo'),
               onTap: () {
                 Navigator.pop(ctx);
-                AppRoutes.toOCRScanner(context);
+                AppRoutes.toOCRScanner(context, course: widget.course);
               },
             ),
             ListTile(
@@ -442,7 +442,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               title: const Text('Import from URL'),
               onTap: () {
                 Navigator.pop(ctx);
-                AppRoutes.toURLImport(context);
+                AppRoutes.toURLImport(context, course: widget.course);
               },
             ),
             const SizedBox(height: 8),

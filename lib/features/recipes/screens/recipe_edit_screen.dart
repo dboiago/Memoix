@@ -366,7 +366,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 DropdownMenuItem(value: 'breads', child: Text('Breads')),
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
                 DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
-                DropdownMenuItem(value: 'pickles', child: Text('Pickles/Brines')),
+                DropdownMenuItem(value: 'pickles', child: Text('Pickles')),
                 DropdownMenuItem(value: 'molecular', child: Text('Modernist')),
                 DropdownMenuItem(value: 'pizzas', child: Text('Pizzas')),
                 DropdownMenuItem(value: 'sandwiches', child: Text('Sandwiches')),

@@ -75,10 +75,10 @@ class AppRoutes {
     );
   }
 
-  static void toImport(BuildContext context) {
+  static void toImport(BuildContext context, {String? course}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
-        builder: (_) => const ImportScreen(),
+        builder: (_) => ImportScreen(defaultCourse: course),
       ),
     );
   }
@@ -91,18 +91,18 @@ class AppRoutes {
     );
   }
 
-  static void toOCRScanner(BuildContext context) {
+  static void toOCRScanner(BuildContext context, {String? course}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
-        builder: (_) => const OCRScannerScreen(),
+        builder: (_) => OCRScannerScreen(defaultCourse: course),
       ),
     );
   }
 
-  static void toURLImport(BuildContext context) {
+  static void toURLImport(BuildContext context, {String? course}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
-        builder: (_) => const URLImportScreen(),
+        builder: (_) => URLImportScreen(defaultCourse: course),
       ),
     );
   }

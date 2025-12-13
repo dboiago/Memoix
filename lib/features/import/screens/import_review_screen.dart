@@ -367,19 +367,19 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   }
 
   Widget _buildCuisineSelector(ThemeData theme, RecipeImportResult result) {
-    // Common cuisines + detected ones
+    // Common cuisines + detected ones (no default - let user choose)
     final cuisines = <String>{
       if (_selectedCuisine != null) _selectedCuisine!,
       ...result.detectedCuisines,
-      'USA',
-      'France',
-      'Italy',
-      'Mexico',
-      'China',
-      'Japan',
-      'India',
-      'Thailand',
-      'Korea',
+      'American',
+      'French',
+      'Italian',
+      'Mexican',
+      'Chinese',
+      'Japanese',
+      'Indian',
+      'Thai',
+      'Korean',
       'Mediterranean',
     }.toList();
 
@@ -627,9 +627,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     );
 
     // Add multiple images if available (from multi-image import)
+    // First image becomes the header, rest go to step images gallery
     if (widget.importResult.imagePaths != null &&
         widget.importResult.imagePaths!.isNotEmpty) {
-      recipe.imageUrls = widget.importResult.imagePaths!;
+      recipe.headerImage = widget.importResult.imagePaths!.first;
+      if (widget.importResult.imagePaths!.length > 1) {
+        recipe.stepImages = widget.importResult.imagePaths!.sublist(1);
+      }
     }
 
     return recipe;

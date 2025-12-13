@@ -13,7 +13,9 @@ import 'ocr_scanner_screen.dart';
 import 'ocr_multi_image_screen.dart';
 
 class ImportScreen extends ConsumerStatefulWidget {
-  const ImportScreen({super.key});
+  final String? defaultCourse;
+  
+  const ImportScreen({super.key, this.defaultCourse});
 
   @override
   ConsumerState<ImportScreen> createState() => _ImportScreenState();

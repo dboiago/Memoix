@@ -9,7 +9,9 @@ import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
 
 class OCRScannerScreen extends ConsumerStatefulWidget {
-  const OCRScannerScreen({super.key});
+  final String? defaultCourse;
+  
+  const OCRScannerScreen({super.key, this.defaultCourse});
 
   @override
   ConsumerState<OCRScannerScreen> createState() => _OCRScannerScreenState();
@@ -279,16 +281,24 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
       // Fallback: use the old flow with raw text
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => RecipeEditScreen(ocrText: result.rawText),
+          builder: (_) => RecipeEditScreen(
+            ocrText: result.rawText,
+            defaultCourse: widget.defaultCourse,
+          ),
         ),
       );
       return;
     }
 
+    // Set the default course if provided
+    final importResult = widget.defaultCourse != null && result.importResult!.course == null
+        ? result.importResult!.copyWith(course: widget.defaultCourse)
+        : result.importResult!;
+
     // Always go to review screen for OCR since confidence is typically low
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (_) => ImportReviewScreen(importResult: result.importResult!),
+        builder: (_) => ImportReviewScreen(importResult: importResult),
       ),
     );
   }

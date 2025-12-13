@@ -8,7 +8,9 @@ import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
 
 class URLImportScreen extends ConsumerStatefulWidget {
-  const URLImportScreen({super.key});
+  final String? defaultCourse;
+  
+  const URLImportScreen({super.key, this.defaultCourse});
 
   @override
   ConsumerState<URLImportScreen> createState() => _URLImportScreenState();
@@ -179,7 +181,12 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
 
     try {
       final importer = ref.read(urlImporterProvider);
-      final result = await importer.importFromUrl(url);
+      final rawResult = await importer.importFromUrl(url);
+      
+      // Apply default course if provided and no course was detected
+      final result = widget.defaultCourse != null && rawResult.course == null
+          ? rawResult.copyWith(course: widget.defaultCourse)
+          : rawResult;
 
       if (!mounted) return;
 

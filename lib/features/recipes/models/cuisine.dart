@@ -152,7 +152,7 @@ class Cuisine {
     // Oceanian
     Cuisine(code: 'AU', name: 'Australian', continent: 'Oceanian', flag: '🇦🇺', colour: Color(0xFF00008B)),
     Cuisine(code: 'FJ', name: 'Fijian', continent: 'Oceanian', flag: '🇫🇯', colour: Color(0xFF68BFE5)),
-    Cuisine(code: 'HI', name: 'Hawaiian', continent: 'Oceanian', flag: '🌺', colour: Color(0xFFE62020)),
+    Cuisine(code: 'HI', name: 'Hawaiian', continent: 'Oceanian', flag: '�🇸', colour: Color(0xFFE62020)),
     Cuisine(code: 'NZ', name: 'New Zealand', continent: 'Oceanian', flag: '🇳🇿', colour: Color(0xFF00247D)),
     Cuisine(code: 'PG', name: 'Papua New Guinean', continent: 'Oceanian', flag: '🇵🇬', colour: Color(0xFFCE1126)),
     Cuisine(code: 'WS', name: 'Samoan', continent: 'Oceanian', flag: '🇼🇸', colour: Color(0xFF002B7F)),

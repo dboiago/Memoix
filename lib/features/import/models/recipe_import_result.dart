@@ -136,8 +136,12 @@ class RecipeImportResult {
     );
     
     // Set multiple images if available
+    // First image becomes the header, rest go to step images gallery
     if (imagePaths != null && imagePaths!.isNotEmpty) {
-      recipe.imageUrls = imagePaths!;
+      recipe.headerImage = imagePaths!.first;
+      if (imagePaths!.length > 1) {
+        recipe.stepImages = imagePaths!.sublist(1);
+      }
     }
     
     return recipe;
