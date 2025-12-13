@@ -111,6 +111,12 @@ class SmokingRecipe {
   /// Optional image
   String? imageUrl;
 
+  /// Whether this is a favorite
+  bool isFavorite = false;
+
+  /// How many times this has been cooked
+  int cookCount = 0;
+
   /// Source of the recipe
   @Enumerated(EnumType.name)
   SmokingSource source = SmokingSource.personal;
@@ -132,6 +138,8 @@ class SmokingRecipe {
     List<String>? directions,
     String? notes,
     String? imageUrl,
+    bool isFavorite = false,
+    int cookCount = 0,
     SmokingSource source = SmokingSource.personal,
   }) {
     return SmokingRecipe()
@@ -144,6 +152,8 @@ class SmokingRecipe {
       ..directions = directions ?? []
       ..notes = notes
       ..imageUrl = imageUrl
+      ..isFavorite = isFavorite
+      ..cookCount = cookCount
       ..source = source
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();

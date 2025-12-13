@@ -141,7 +141,7 @@ class _PizzaDetailView extends ConsumerWidget {
 
                   // Cheeses section
                   if (pizza.cheeses.isNotEmpty) ...[
-                    _buildSectionHeader(theme, 'Cheeses', Icons.cake),
+                    _buildSectionHeader(theme, 'Cheeses'),
                     const SizedBox(height: 8),
                     Wrap(
                       spacing: 8,
@@ -155,7 +155,7 @@ class _PizzaDetailView extends ConsumerWidget {
 
                   // Toppings section
                   if (pizza.toppings.isNotEmpty) ...[
-                    _buildSectionHeader(theme, 'Toppings', Icons.restaurant),
+                    _buildSectionHeader(theme, 'Toppings'),
                     const SizedBox(height: 8),
                     Wrap(
                       spacing: 8,
@@ -169,7 +169,7 @@ class _PizzaDetailView extends ConsumerWidget {
 
                   // Notes section
                   if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
-                    _buildSectionHeader(theme, 'Notes', Icons.notes),
+                    _buildSectionHeader(theme, 'Notes'),
                     const SizedBox(height: 8),
                     Container(
                       width: double.infinity,
@@ -236,18 +236,12 @@ class _PizzaDetailView extends ConsumerWidget {
     }
   }
 
-  Widget _buildSectionHeader(ThemeData theme, String title, IconData icon) {
-    return Row(
-      children: [
-        Icon(icon, size: 20, color: theme.colorScheme.primary),
-        const SizedBox(width: 8),
-        Text(
-          title,
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ],
+  Widget _buildSectionHeader(ThemeData theme, String title) {
+    return Text(
+      title,
+      style: theme.textTheme.titleMedium?.copyWith(
+        fontWeight: FontWeight.bold,
+      ),
     );
   }
 

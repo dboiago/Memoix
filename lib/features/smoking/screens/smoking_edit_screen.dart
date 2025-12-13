@@ -245,7 +245,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             const SizedBox(height: 24),
 
             // Seasonings section
-            _buildSectionTitle(theme, 'Seasonings', Icons.grain),
+            _buildSectionTitle(theme, 'Seasonings'),
             const SizedBox(height: 8),
             ..._buildSeasoningFields(),
             TextButton.icon(
@@ -257,7 +257,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             const SizedBox(height: 24),
 
             // Directions section
-            _buildSectionTitle(theme, 'Directions', Icons.format_list_numbered),
+            _buildSectionTitle(theme, 'Directions'),
             const SizedBox(height: 8),
             ..._buildDirectionFields(),
             TextButton.icon(
@@ -287,18 +287,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     );
   }
 
-  Widget _buildSectionTitle(ThemeData theme, String title, IconData icon) {
-    return Row(
-      children: [
-        Icon(icon, color: theme.colorScheme.primary, size: 20),
-        const SizedBox(width: 8),
-        Text(
-          title,
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ],
+  Widget _buildSectionTitle(ThemeData theme, String title) {
+    return Text(
+      title,
+      style: theme.textTheme.titleMedium?.copyWith(
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 

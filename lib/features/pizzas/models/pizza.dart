@@ -106,6 +106,9 @@ class Pizza {
   /// Whether this is a favourite
   bool isFavorite = false;
 
+  /// How many times this has been cooked
+  int cookCount = 0;
+
   /// User rating (1-5 stars, 0 = unrated)
   int rating = 0;
 
@@ -164,6 +167,7 @@ class Pizza {
         orElse: () => PizzaSource.memoix,
       )
       ..isFavorite = json['isFavorite'] as bool? ?? false
+      ..cookCount = json['cookCount'] as int? ?? 0
       ..rating = json['rating'] as int? ?? 0
       ..tags =
           (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList() ??
@@ -192,6 +196,7 @@ class Pizza {
       'imageUrl': imageUrl,
       'source': source.name,
       'isFavorite': isFavorite,
+      'cookCount': cookCount,
       'rating': rating,
       'tags': tags,
       'createdAt': createdAt.toIso8601String(),

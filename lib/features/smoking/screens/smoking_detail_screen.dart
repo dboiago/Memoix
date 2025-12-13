@@ -106,7 +106,7 @@ class SmokingDetailScreen extends ConsumerWidget {
 
                       // Seasonings section
                       if (recipe.seasonings.isNotEmpty) ...[
-                        _buildSectionHeader(context, 'Seasonings', Icons.grain),
+                        _buildSectionHeader(context, 'Seasonings'),
                         const SizedBox(height: 12),
                         _buildSeasoningsList(context, recipe.seasonings),
                         const SizedBox(height: 24),
@@ -114,7 +114,7 @@ class SmokingDetailScreen extends ConsumerWidget {
 
                       // Directions section
                       if (recipe.directions.isNotEmpty) ...[
-                        _buildSectionHeader(context, 'Directions', Icons.format_list_numbered),
+                        _buildSectionHeader(context, 'Directions'),
                         const SizedBox(height: 12),
                         _buildDirectionsList(context, recipe.directions),
                         const SizedBox(height: 24),
@@ -122,7 +122,7 @@ class SmokingDetailScreen extends ConsumerWidget {
 
                       // Notes section
                       if (recipe.notes != null && recipe.notes!.isNotEmpty) ...[
-                        _buildSectionHeader(context, 'Notes', Icons.note),
+                        _buildSectionHeader(context, 'Notes'),
                         const SizedBox(height: 12),
                         Container(
                           width: double.infinity,
@@ -228,20 +228,14 @@ class SmokingDetailScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildSectionHeader(BuildContext context, String title, IconData icon) {
+  Widget _buildSectionHeader(BuildContext context, String title) {
     final theme = Theme.of(context);
 
-    return Row(
-      children: [
-        Icon(icon, color: theme.colorScheme.primary, size: 24),
-        const SizedBox(width: 8),
-        Text(
-          title,
-          style: theme.textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ],
+    return Text(
+      title,
+      style: theme.textTheme.titleLarge?.copyWith(
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 
@@ -272,15 +266,22 @@ class SmokingDetailScreen extends ConsumerWidget {
             ),
             child: Row(
               children: [
-                Icon(
-                  Icons.grain,
-                  size: 16,
-                  color: theme.colorScheme.primary,
-                ),
-                const SizedBox(width: 12),
+                // Amount on left (if present)
+                if (seasoning.amount != null && seasoning.amount!.isNotEmpty) ...[
+                  SizedBox(
+                    width: 80,
+                    child: Text(
+                      seasoning.amount!,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                ],
+                // Name
                 Expanded(
                   child: Text(
-                    seasoning.displayText,
+                    seasoning.name,
                     style: theme.textTheme.bodyLarge,
                   ),
                 ),

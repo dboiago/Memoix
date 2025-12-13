@@ -5,6 +5,7 @@ import '../repository/pizza_repository.dart';
 import '../../../app/theme/colors.dart';
 
 /// Pizza card widget for list display
+/// Matches RecipeCard styling with hover effects, favorite and cooked icons
 class PizzaCard extends ConsumerStatefulWidget {
   final Pizza pizza;
   final VoidCallback? onTap;
@@ -33,7 +34,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
         borderRadius: BorderRadius.circular(12),
         side: BorderSide(
           color: (_hovered || _pressed)
-              ? MemoixColors.pizzas
+              ? theme.colorScheme.secondary
               : theme.colorScheme.outline.withValues(alpha: 0.12),
           width: (_hovered || _pressed) ? 1.5 : 1.0,
         ),
@@ -60,52 +61,87 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                     Text(
                       widget.pizza.name,
                       style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     const SizedBox(height: 4),
-                    // Cheeses and toppings summary
-                    _buildIngredientsSummary(theme),
+                    // Base with bullet + cheeses/toppings summary
+                    Row(
+                      children: [
+                        // Base with colored bullet
+                        Text(
+                          '\u2022',
+                          style: TextStyle(
+                            color: MemoixColors.pizzas,
+                            fontSize: 16,
+                          ),
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          widget.pizza.base.displayName,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        // Cheeses and toppings summary
+                        Flexible(
+                          child: _buildIngredientsSummary(theme),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
-              // Right side - base badge and favorite
+              // Action icons (favorite + cooked)
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Base badge
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: MemoixColors.pizzas.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Text(
-                      widget.pizza.base.displayName,
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: MemoixColors.pizzas,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
                   // Favorite button
                   IconButton(
                     icon: Icon(
                       widget.pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
-                      color: widget.pizza.isFavorite
-                          ? Colors.red
-                          : theme.colorScheme.outline,
                       size: 20,
                     ),
+                    color: widget.pizza.isFavorite
+                        ? Colors.red.shade400
+                        : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
-                      final repo = ref.read(pizzaRepositoryProvider);
-                      await repo.toggleFavorite(widget.pizza);
+                      await ref.read(pizzaRepositoryProvider).toggleFavorite(widget.pizza);
                     },
-                    visualDensity: VisualDensity.compact,
-                    padding: EdgeInsets.zero,
-                    constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                    padding: const EdgeInsets.all(8),
+                    constraints: const BoxConstraints(),
+                  ),
+                  
+                  const SizedBox(width: 4),
+                  
+                  // Cooked button
+                  IconButton(
+                    icon: Icon(
+                      widget.pizza.cookCount > 0 
+                          ? Icons.check_circle 
+                          : Icons.check_circle_outline,
+                      size: 20,
+                    ),
+                    color: widget.pizza.cookCount > 0 
+                        ? Colors.green.shade400 
+                        : theme.colorScheme.onSurfaceVariant,
+                    onPressed: () async {
+                      await ref.read(pizzaRepositoryProvider).incrementCookCount(widget.pizza);
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('${widget.pizza.name} marked as cooked'),
+                            behavior: SnackBarBehavior.floating,
+                            duration: const Duration(seconds: 2),
+                          ),
+                        );
+                      }
+                    },
+                    padding: const EdgeInsets.all(8),
+                    constraints: const BoxConstraints(),
                   ),
                 ],
               ),
@@ -119,14 +155,9 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
   Widget _buildIngredientsSummary(ThemeData theme) {
     final parts = <String>[];
     
-    // Add cheeses (up to 2)
+    // Add cheeses count
     if (widget.pizza.cheeses.isNotEmpty) {
-      final cheesesDisplay = widget.pizza.cheeses.take(2).join(', ');
-      if (widget.pizza.cheeses.length > 2) {
-        parts.add('$cheesesDisplay +${widget.pizza.cheeses.length - 2}');
-      } else {
-        parts.add(cheesesDisplay);
-      }
+      parts.add('${widget.pizza.cheeses.length} cheese${widget.pizza.cheeses.length == 1 ? '' : 's'}');
     }
     
     // Add toppings count

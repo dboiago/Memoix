@@ -105,6 +105,15 @@ class PizzaRepository {
     });
   }
 
+  /// Increment cook count
+  Future<void> incrementCookCount(Pizza pizza) async {
+    pizza.cookCount += 1;
+    pizza.updatedAt = DateTime.now();
+    await _db.writeTxn(() async {
+      await _db.pizzas.put(pizza);
+    });
+  }
+
   /// Update rating
   Future<void> updateRating(Pizza pizza, int rating) async {
     pizza.rating = rating.clamp(0, 5);

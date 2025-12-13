@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../widgets/pizza_card.dart';
@@ -153,12 +152,18 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
           setState(() => _selectedBase = selected ? base : null);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: MemoixColors.pizzas.withOpacity(0.3),
+        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
         showCheckmark: false,
+        side: BorderSide(
+          color: isSelected
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withOpacity(0.2),
+          width: isSelected ? 1.5 : 1.0,
+        ),
         labelStyle: TextStyle(
           fontSize: 13,
           color: isSelected
-              ? theme.colorScheme.onSecondaryContainer
+              ? theme.colorScheme.secondary
               : theme.colorScheme.onSurface,
         ),
       ),
@@ -277,13 +282,17 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
-                      color: MemoixColors.pizzas.withOpacity(0.2),
+                      color: Theme.of(context).colorScheme.secondary.withOpacity(0.15),
                       borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: Theme.of(context).colorScheme.secondary,
+                        width: 1,
+                      ),
                     ),
                     child: Text(
                       base.displayName,
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                            color: MemoixColors.pizzas,
+                            color: Theme.of(context).colorScheme.secondary,
                             fontWeight: FontWeight.bold,
                           ),
                     ),

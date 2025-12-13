@@ -47,6 +47,20 @@ class SmokingRepository {
     }
   }
 
+  /// Toggle favorite status
+  Future<void> toggleFavorite(SmokingRecipe recipe) async {
+    recipe.isFavorite = !recipe.isFavorite;
+    recipe.updatedAt = DateTime.now();
+    await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+  }
+
+  /// Increment cook count
+  Future<void> incrementCookCount(SmokingRecipe recipe) async {
+    recipe.cookCount += 1;
+    recipe.updatedAt = DateTime.now();
+    await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+  }
+
   /// Watch all recipes
   Stream<List<SmokingRecipe>> watchAll() {
     return _db.smokingRecipes.where().sortByName().watch(fireImmediately: true);
