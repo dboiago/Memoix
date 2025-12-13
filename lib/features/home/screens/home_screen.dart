@@ -113,7 +113,7 @@ class _CourseGridView extends ConsumerWidget {
                     // Special handling for pizzas and smoking - use their own counts
                     final bool isPizza = category.slug == 'pizzas';
                     final bool isSmoking = category.slug == 'smoking';
-                    final bool isModernist = category.slug == 'molecular';
+                    final bool isModernist = category.slug == 'modernist';
                     
                     // Get count for this category
                     final int itemCount;
@@ -156,7 +156,7 @@ class _CourseGridView extends ConsumerWidget {
                           AppRoutes.toPizzaList(context);
                         } else if (category.slug == 'smoking') {
                           AppRoutes.toSmokingList(context);
-                        } else if (category.slug == 'molecular') {
+                        } else if (category.slug == 'modernist') {
                           AppRoutes.toModernistList(context);
                         } else {
                           AppRoutes.toRecipeList(context, category.slug);

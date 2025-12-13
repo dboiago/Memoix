@@ -69,11 +69,11 @@ class Category {
           colorValue: MemoixColors.mains.value,
         ),
         Category.create(
-          slug: 'vegan',
+          slug: 'vegn',
           name: 'Veg\'n',
           iconName: 'eco',
           sortOrder: 3,
-          colorValue: MemoixColors.vegan.value,
+          colorValue: MemoixColors.vegn.value,
         ),
         Category.create(
           slug: 'sides',
@@ -139,11 +139,11 @@ class Category {
           colorValue: MemoixColors.pickles.value,
         ),
         Category.create(
-          slug: 'molecular',
+          slug: 'modernist',
           name: 'Modernist',
           iconName: 'science',
           sortOrder: 13,
-          colorValue: MemoixColors.molecular.value,
+          colorValue: MemoixColors.modernist.value,
         ),
         Category.create(
           slug: 'pizzas',

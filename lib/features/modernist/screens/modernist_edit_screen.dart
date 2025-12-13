@@ -313,7 +313,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       children: [
         Row(
           children: [
-            Icon(Icons.build_outlined, size: 20, color: MemoixColors.molecular),
+            Icon(Icons.build_outlined, size: 20, color: MemoixColors.modernist),
             const SizedBox(width: 8),
             Text('Special Equipment', style: theme.textTheme.titleMedium),
           ],
@@ -336,7 +336,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               label: Text(item),
               deleteIcon: const Icon(Icons.close, size: 18),
               onDeleted: () => setState(() => _equipment.remove(item)),
-              backgroundColor: MemoixColors.molecular.withOpacity(0.1),
+              backgroundColor: MemoixColors.modernist.withOpacity(0.1),
             )),
           ],
         ),

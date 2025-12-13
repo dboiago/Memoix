@@ -22,12 +22,12 @@ class MemoixColors {
   static const Color rubs = Color(0xFFBCAAA4);        // Brown
   static const Color sauces = Color(0xFFFF8A65);      // Coral
   static const Color pickles = Color(0xFFAED581);     // Lime green
-  static const Color molecular = Color(0xFFCE93D8);   // Purple
+  static const Color modernist = Color(0xFFCE93D8);  // Purple
   static const Color pizzas = Color(0xFFFFCC80);      // Light orange
   static const Color sandwiches = Color(0xFFFFE082);  // Light gold
   static const Color smoking = Color(0xFF90A4AE);     // Gray
   static const Color cheese = Color(0xFFFFF176);      // Light yellow
-  static const Color vegan = Color(0xFF80CBC4);       // Teal
+  static const Color vegn = Color(0xFF80CBC4);        // Teal
   static const Color scratch = Color(0xFFB0BEC5);     // Blue-gray
   static const Color drinks = Color(0xFF81D4FA);      // Light blue
 
@@ -145,8 +145,8 @@ class MemoixColors {
       case 'pickles':
       case 'pickles/brines':
         return pickles;
-      case 'molecular':
-        return molecular;
+      case 'modernist':
+        return modernist;
       case 'pizzas':
         return pizzas;
       case 'sandwiches':
@@ -155,11 +155,12 @@ class MemoixColors {
         return smoking;
       case 'cheese':
         return cheese;
+      case 'vegn':
       case 'veg*n':
       case 'vegan':
       case 'vegetarian':
       case 'not meat':
-        return vegan;
+        return vegn;
       case 'scratch':
         return scratch;
       case 'drinks':

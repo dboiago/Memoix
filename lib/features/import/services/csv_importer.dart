@@ -492,7 +492,7 @@ class CsvRecipeImporter {
       'brines': 'Pickles',
       'smoking': 'Smoking',
       'smoked': 'Smoking',
-      'molecular': 'Modernist',
+      'modernist': 'Modernist',
       'modernist': 'Modernist',
     };
     

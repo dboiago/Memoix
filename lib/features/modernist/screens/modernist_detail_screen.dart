@@ -94,7 +94,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                         ),
                       ],
                     )
-                  : Container(color: MemoixColors.molecular.withOpacity(0.3)),
+                  : Container(color: MemoixColors.modernist.withOpacity(0.3)),
             ),
             actions: [
               IconButton(
@@ -207,7 +207,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             const SnackBar(content: Text('Marked as made!')),
           );
         },
-        backgroundColor: MemoixColors.molecular,
+        backgroundColor: MemoixColors.modernist,
         icon: const Icon(Icons.check),
         label: const Text('I Made This'),
       ),
@@ -222,7 +222,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             source,
             fit: BoxFit.cover,
             errorBuilder: (_, __, ___) => Container(
-              color: MemoixColors.molecular.withOpacity(0.3),
+              color: MemoixColors.modernist.withOpacity(0.3),
             ),
           );
   }
@@ -233,7 +233,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       children: [
         Row(
           children: [
-            Icon(Icons.build_outlined, size: 20, color: MemoixColors.molecular),
+            Icon(Icons.build_outlined, size: 20, color: MemoixColors.modernist),
             const SizedBox(width: 8),
             Text(
               'Special Equipment',
@@ -245,9 +245,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: MemoixColors.molecular.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: MemoixColors.molecular.withOpacity(0.3)),
+            color: MemoixColors.modernist.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: MemoixColors.modernist.withOpacity(0.3)),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -255,7 +255,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               padding: const EdgeInsets.symmetric(vertical: 4),
               child: Row(
                 children: [
-                  Icon(Icons.check_circle_outline, size: 18, color: MemoixColors.molecular),
+                  Icon(Icons.check_circle_outline, size: 18, color: MemoixColors.modernist),
                   const SizedBox(width: 8),
                   Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
                 ],
@@ -529,18 +529,18 @@ class _TechniqueBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: MemoixColors.molecular.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: MemoixColors.molecular.withOpacity(0.5)),
+        color: MemoixColors.modernist.withOpacity(0.15),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: MemoixColors.modernist.withOpacity(0.5)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.science, size: 16, color: MemoixColors.molecular),
+          Icon(Icons.science, size: 16, color: MemoixColors.modernist),
           const SizedBox(width: 4),
           Text(
-            technique,
-            style: TextStyle(color: MemoixColors.molecular, fontWeight: FontWeight.w600),
+            'Science Notes',
+            style: TextStyle(color: MemoixColors.modernist, fontWeight: FontWeight.w600),
           ),
         ],
       ),

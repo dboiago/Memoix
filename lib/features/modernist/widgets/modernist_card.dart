@@ -84,7 +84,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                               width: 6,
                               height: 6,
                               decoration: BoxDecoration(
-                                color: MemoixColors.molecular,
+                                color: MemoixColors.modernist,
                                 shape: BoxShape.circle,
                               ),
                             ),

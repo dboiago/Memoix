@@ -233,7 +233,7 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
           context,
           MaterialPageRoute(builder: (_) => const ModernistEditScreen()),
         ),
-        backgroundColor: MemoixColors.molecular,
+        backgroundColor: MemoixColors.modernist,
         child: const Icon(Icons.add),
       ),
     );
