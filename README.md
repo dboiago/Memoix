@@ -1,7 +1,6 @@
 # Memoix 🍳
 
-A beautiful, open-source recipe management app for cooks. Organize your recipes, import from photos or websites, and share with friends and family.
-(I'll make this not AI generated later -- placeholder)
+A beautiful recipe management app for professional chefs and enthusiastic home cooks. Organize your recipes, manage specialized cooking projects, import from photos or websites, and share with friends and family.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.2+-blue.svg)
 ![License](https://img.shields.io/badge/License-Noncommercial-orange.svg)
@@ -10,11 +9,15 @@ A beautiful, open-source recipe management app for cooks. Organize your recipes,
 ## ✨ Features
 
 - 📱 **Cross-platform** - Works on Android, iOS, Windows, and macOS
+- 🍕 **Specialized Recipes** - Dedicated interfaces for Pizza and Smoking with unique fields
 - 📸 **OCR Import** - Scan recipes from photos of cookbooks or handwritten notes
 - 🔗 **URL Import** - Paste a link from popular recipe websites to import
 - 🏷️ **Smart Organization** - Organize by course, cuisine, and custom tags
 - 🔍 **Powerful Search** - Find recipes by name, ingredients, or tags
 - ❤️ **Favourites** - Quick access to your most-loved recipes
+- 📊 **Cooking Stats** - Track what you cook and when
+- 🛒 **Shopping Lists** - Generate lists from recipes
+- 📅 **Meal Planning** - Plan your weekly meals
 - 📤 **Easy Sharing** - Share recipes via QR codes, links, or text
 - 🌙 **Dark Mode** - Beautiful light and dark themes
 - 📴 **Offline First** - All your recipes available without internet
@@ -94,10 +97,16 @@ lib/
 │   └── theme/               # Colors and theming
 ├── core/
 │   ├── database/            # Isar database setup
+│   ├── providers.dart       # Global Riverpod providers
 │   └── services/            # GitHub sync, etc.
 ├── features/
-│   ├── home/                # Home screen with tabs
+│   ├── home/                # Home screen with course grid
 │   ├── recipes/             # Recipe list, detail, edit
+│   ├── pizzas/              # Pizza recipes (specialized)
+│   ├── smoking/             # Smoking recipes (specialized)
+│   ├── statistics/          # Cooking stats
+│   ├── mealplan/            # Meal planning
+│   ├── shopping/            # Shopping lists
 │   ├── import/              # OCR and URL import
 │   ├── sharing/             # QR codes, deep links
 │   └── settings/            # App settings

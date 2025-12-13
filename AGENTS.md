@@ -4,9 +4,10 @@ This file provides context and guidelines for AI coding assistants working on th
 
 ## Project Overview
 
-**Memoix** is a cross-platform recipe management app built with Flutter. It allows users to:
+**Memoix** is a cross-platform recipe management app built with Flutter, targeted at professional chefs and enthusiastic hobbyists. It allows users to:
 - Browse a curated recipe collection (synced from GitHub)
 - Create and manage personal recipes
+- Manage specialized recipe types (Pizzas, Smoking) with unique schemas
 - Import recipes via OCR (photo scanning) or URL parsing
 - Share recipes via QR codes and deep links
 
@@ -32,12 +33,18 @@ lib/
 │   └── theme/               # Theming (colors.dart, theme.dart)
 ├── core/                     # Shared infrastructure
 │   ├── database/            # Isar database setup
+│   ├── providers.dart       # Global Riverpod providers
 │   └── services/            # GitHub sync, etc.
 ├── features/                 # Feature modules (vertical slices)
-│   ├── home/                # Main screen with tabs
+│   ├── home/                # Main screen with course grid
 │   ├── recipes/             # Recipe CRUD, list, detail views
+│   ├── pizzas/              # Pizza recipes (specialized schema)
+│   ├── smoking/             # Smoking recipes (specialized schema)
 │   ├── import/              # OCR and URL import
 │   ├── sharing/             # QR codes, deep links
+│   ├── statistics/          # Cooking stats tracking
+│   ├── mealplan/            # Meal planning
+│   ├── shopping/            # Shopping lists
 │   └── settings/            # App settings
 └── shared/                   # Reusable widgets
 
@@ -60,6 +67,11 @@ recipes/                      # Recipe data (JSON files)
 - Models use `@collection` and `@embedded` annotations
 - Generated files: `*.g.dart` (run `dart run build_runner build`)
 - All database operations go through repository classes
+
+### Database Access
+- Use `ref.watch(databaseProvider)` to get the Isar instance
+- Provider is defined in `lib/core/providers.dart`
+- **Do NOT use `isarProvider`** - the correct name is `databaseProvider`
 
 ### Feature Structure
 Each feature follows this pattern:
@@ -115,6 +127,88 @@ enum RecipeSource {
 }
 ```
 
+### Specialized Recipe Types
+
+Some recipe categories have unique schemas that differ from standard recipes:
+
+**Pizzas** (`lib/features/pizzas/`):
+- `name`, `style` (Neapolitan, NY, Detroit, etc.)
+- `dough` (embedded: flour, water%, yeast, salt, oil, sugar, fermentation)
+- `sauce` (embedded: base, ingredients, notes)
+- `cheeses` (list of cheese names)
+- `toppings` (list of topping names)
+- `bakingInstructions` (temp, time, method)
+
+**Smoking** (`lib/features/smoking/`):
+- `name` (what's being smoked: Brisket, Ribs, etc.)
+- `temperature`, `time`
+- `wood` (free-form text with autocomplete suggestions)
+- `seasonings` (list with optional amounts)
+- `directions`
+
+When adding new specialized types, follow the pizza/smoking pattern.
+
+## UI Patterns
+
+### Outlined Secondary Styling
+For highlighted UI elements (step numbers, ranking badges, selected chips), use the outlined secondary pattern:
+```dart
+Container(
+  decoration: BoxDecoration(
+    color: theme.colorScheme.secondary.withOpacity(0.15),
+    shape: BoxShape.circle, // or borderRadius for rectangles
+    border: Border.all(
+      color: theme.colorScheme.secondary,
+      width: 1.5,
+    ),
+  ),
+  child: Text(
+    'text',
+    style: TextStyle(color: theme.colorScheme.secondary),
+  ),
+)
+```
+
+### Multi-Select Filters
+For filter chips that allow multiple selections, use `Set<String>` instead of single `String?`:
+```dart
+Set<String> _selectedItems = {};
+// Toggle on tap:
+onSelected: (_) {
+  setState(() {
+    if (_selectedItems.contains(item)) {
+      _selectedItems.remove(item);
+    } else {
+      _selectedItems.add(item);
+    }
+  });
+}
+```
+
+### Free-Form Input with Suggestions
+Avoid "Other" options in dropdowns. Instead, use `Autocomplete<String>` for free-form text with suggestions:
+```dart
+Autocomplete<String>(
+  optionsBuilder: (value) => suggestions.where((s) => 
+    s.toLowerCase().contains(value.text.toLowerCase())),
+  fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+    return TextFormField(
+      controller: controller,
+      focusNode: focusNode,
+      // ...
+    );
+  },
+)
+```
+
+### Live Database Updates
+Use `StreamProvider` instead of `FutureProvider` for data that should update in real-time:
+```dart
+final itemsProvider = StreamProvider<List<Item>>((ref) {
+  return ref.watch(repositoryProvider).watchAll();
+});
+```
+
 ## Color System
 
 The app uses a color-coding system matching the original spreadsheet:
@@ -136,6 +230,17 @@ Official recipes are stored as JSON in `/recipes/`:
 2. Add models, screens, widgets as needed
 3. Create repository with Riverpod providers
 4. Add route in `lib/app/routes/router.dart`
+5. If it's a home screen category, update `home_screen.dart` routing
+
+### Adding a Specialized Recipe Type (like Pizza/Smoking)
+1. Create feature folder: `lib/features/your_type/`
+2. Create model with `@collection` annotation
+3. Create repository with CRUD + `databaseProvider`
+4. Create list, detail, and edit screens
+5. Register schema in `lib/core/database/database.dart`
+6. Add routes in `lib/app/routes/router.dart`
+7. Add category to `Category.defaults` with color
+8. Update `home_screen.dart` to handle special routing and count
 
 ### Adding a New Recipe Category
 1. Add color to `lib/app/theme/colors.dart`
@@ -155,11 +260,13 @@ Official recipes are stored as JSON in `/recipes/`:
 
 ## Important Notes
 
-1. **Offline-first**: App must work without internet after initial sync
-2. **No user accounts**: Privacy-focused, anonymous usage
-3. **Local storage**: User recipes stay on device only
-4. **Sharing**: Uses encoded deep links, not cloud storage
-5. **Proprietary**: Source available for personal use only, not for commercial redistribution
+1. **Target Audience**: Professional chefs and enthusiastic hobbyists, not casual home cooks
+2. **Offline-first**: App must work without internet after initial sync
+3. **No user accounts**: Privacy-focused, anonymous usage
+4. **Local storage**: User recipes stay on device only
+5. **Sharing**: Uses encoded deep links, not cloud storage
+6. **Proprietary**: Source available for personal use only, not for commercial redistribution
+7. **Flexibility**: Avoid restrictive enums with "Other" - prefer free-form text with suggestions
 
 ## Dependencies to Know
 
