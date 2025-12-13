@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../app/theme/colors.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 
@@ -69,11 +70,11 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                     // Base with bullet + cheeses/toppings summary
                     Row(
                       children: [
-                        // Base with colored bullet
+                        // Base with sauce-themed colored bullet
                         Text(
                           '\u2022',
                           style: TextStyle(
-                            color: theme.colorScheme.secondary,
+                            color: MemoixColors.forPizzaBaseDot(widget.pizza.base.name),
                             fontSize: 16,
                           ),
                         ),

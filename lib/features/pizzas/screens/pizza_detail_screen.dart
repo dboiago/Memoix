@@ -159,14 +159,7 @@ class _PizzaDetailView extends ConsumerWidget {
                       ),
                       const SizedBox(height: 16),
                       
-                      // Sauce section
-                      _buildIngredientSection(
-                        theme,
-                        'Sauce',
-                        [pizza.base.displayName],
-                      ),
-                      
-                      // Cheeses section
+                      // Cheeses section (no preceding SizedBox since it's first)
                       if (pizza.cheeses.isNotEmpty) ...[
                         const SizedBox(height: 16),
                         _buildIngredientSection(

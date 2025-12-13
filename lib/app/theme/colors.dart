@@ -83,6 +83,18 @@ class MemoixColors {
   static const Color spiritCoffee = Color(0xFF6F4E37);         // Coffee brown
   static const Color spiritMocktail = Color(0xFF7EB8A8);       // Fresh teal
 
+  // Pizza sauce/base colors for pizza recipes
+  // Thematic colors representing each sauce type
+  static const Color pizzaMarinara = Color(0xFFD4635A);        // Tomato red
+  static const Color pizzaOil = Color(0xFFD4C86E);             // Golden olive oil
+  static const Color pizzaPesto = Color(0xFF7AB87A);           // Basil green
+  static const Color pizzaCream = Color(0xFFF5F0E8);           // Creamy white
+  static const Color pizzaBbq = Color(0xFF8B4513);             // Smoky brown
+  static const Color pizzaBuffalo = Color(0xFFE8783A);         // Orange-red buffalo
+  static const Color pizzaAlfredo = Color(0xFFE8DCC8);         // Butter cream
+  static const Color pizzaGarlic = Color(0xFFE8D87E);          // Garlic butter gold
+  static const Color pizzaNoSauce = Color(0xFFB0BEC5);         // Neutral gray
+
   // Smoked item category colors for smoking recipes
   // Thematic pastel colors matching app palette
   static const Color smokedBeef = Color(0xFFD4847A);           // Soft coral-red for beef
@@ -422,6 +434,47 @@ class MemoixColors {
     
     // Fallback
     return Colors.grey;
+  }
+
+  /// Get dot color for a pizza sauce/base type
+  /// Uses themed colors for visual identification of sauce type
+  static Color forPizzaBaseDot(String? base) {
+    if (base == null || base.isEmpty) return pizzaMarinara;
+    
+    final lower = base.toLowerCase().trim();
+    
+    switch (lower) {
+      case 'marinara':
+      case 'tomato':
+      case 'red':
+        return pizzaMarinara;
+      case 'oil':
+      case 'evoo':
+      case 'olive':
+        return pizzaOil;
+      case 'pesto':
+        return pizzaPesto;
+      case 'cream':
+      case 'white':
+        return pizzaCream;
+      case 'bbq':
+      case 'barbeque':
+      case 'barbecue':
+        return pizzaBbq;
+      case 'buffalo':
+      case 'hot sauce':
+        return pizzaBuffalo;
+      case 'alfredo':
+        return pizzaAlfredo;
+      case 'garlic':
+      case 'garlic butter':
+        return pizzaGarlic;
+      case 'none':
+      case 'no sauce':
+        return pizzaNoSauce;
+      default:
+        return pizzaMarinara;
+    }
   }
 
   /// Get dot color for a smoked item category

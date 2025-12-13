@@ -300,12 +300,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
       );
     }
 
-    // Group by base if showing all
-    if (_selectedBase == null && _searchQuery.isEmpty) {
-      return _buildGroupedList(pizzas);
-    }
-
-    // Simple list otherwise
+    // Simple flat list (no grouping headers)
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 80),
       itemCount: pizzas.length,
@@ -317,75 +312,6 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
             pizza: pizza,
             onTap: () => AppRoutes.toPizzaDetail(context, pizza.uuid),
           ),
-        );
-      },
-    );
-  }
-
-  Widget _buildGroupedList(List<Pizza> pizzas) {
-    // Group pizzas by base
-    final grouped = <PizzaBase, List<Pizza>>{};
-    for (final pizza in pizzas) {
-      grouped.putIfAbsent(pizza.base, () => []).add(pizza);
-    }
-
-    // Sort groups by base enum order
-    final sortedBases = grouped.keys.toList()
-      ..sort((a, b) => a.index.compareTo(b.index));
-
-    return ListView.builder(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 80),
-      itemCount: sortedBases.length,
-      itemBuilder: (context, groupIndex) {
-        final base = sortedBases[groupIndex];
-        final basePizzas = grouped[base]!;
-        basePizzas.sort((a, b) => a.name.compareTo(b.name));
-
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Base header
-            Padding(
-              padding: const EdgeInsets.only(top: 16, bottom: 8),
-              child: Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.secondary.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: Theme.of(context).colorScheme.secondary,
-                        width: 1,
-                      ),
-                    ),
-                    child: Text(
-                      base.displayName,
-                      style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                            color: Theme.of(context).colorScheme.secondary,
-                            fontWeight: FontWeight.bold,
-                          ),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Text(
-                    '${basePizzas.length}',
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: Theme.of(context).colorScheme.outline,
-                        ),
-                  ),
-                ],
-              ),
-            ),
-            // Pizza cards
-            ...basePizzas.map((pizza) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: PizzaCard(
-                    pizza: pizza,
-                    onTap: () => AppRoutes.toPizzaDetail(context, pizza.uuid),
-                  ),
-                )),
-          ],
         );
       },
     );
