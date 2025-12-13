@@ -8,6 +8,9 @@ import '../../features/recipes/models/source_filter.dart';
 import '../../features/pizzas/screens/pizza_list_screen.dart';
 import '../../features/pizzas/screens/pizza_detail_screen.dart';
 import '../../features/pizzas/screens/pizza_edit_screen.dart';
+import '../../features/smoking/screens/smoking_list_screen.dart';
+import '../../features/smoking/screens/smoking_detail_screen.dart';
+import '../../features/smoking/screens/smoking_edit_screen.dart';
 import '../../features/import/screens/import_screen.dart';
 import '../../features/import/screens/qr_scanner_screen.dart';
 import '../../features/import/screens/ocr_scanner_screen.dart';
@@ -189,6 +192,32 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => PizzaEditScreen(pizzaId: pizzaId),
+      ),
+    );
+  }
+
+  // ============ SMOKING ROUTES ============
+
+  static void toSmokingList(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => const SmokingListScreen(),
+      ),
+    );
+  }
+
+  static void toSmokingDetail(BuildContext context, String recipeId) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => SmokingDetailScreen(recipeId: recipeId),
+      ),
+    );
+  }
+
+  static void toSmokingEdit(BuildContext context, {String? recipeId}) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => SmokingEditScreen(recipeId: recipeId),
       ),
     );
   }

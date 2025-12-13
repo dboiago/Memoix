@@ -9,6 +9,7 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 import '../../pizzas/repository/pizza_repository.dart';
+import '../../smoking/repository/smoking_repository.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -108,14 +109,21 @@ class _CourseGridView extends ConsumerWidget {
                   (context, index) {
                     final category = categories[index];
                     
-                    // Special handling for pizzas - use pizza count
+                    // Special handling for pizzas and smoking - use their own counts
                     final bool isPizza = category.slug == 'pizzas';
+                    final bool isSmoking = category.slug == 'smoking';
                     
                     // Get count for this category
                     final int itemCount;
                     if (isPizza) {
                       final pizzasAsync = ref.watch(pizzaCountProvider);
                       itemCount = pizzasAsync.maybeWhen(
+                        data: (count) => count,
+                        orElse: () => 0,
+                      );
+                    } else if (isSmoking) {
+                      final smokingAsync = ref.watch(smokingCountProvider);
+                      itemCount = smokingAsync.maybeWhen(
                         data: (count) => count,
                         orElse: () => 0,
                       );
@@ -138,6 +146,8 @@ class _CourseGridView extends ConsumerWidget {
                           AppRoutes.toScratchPad(context);
                         } else if (category.slug == 'pizzas') {
                           AppRoutes.toPizzaList(context);
+                        } else if (category.slug == 'smoking') {
+                          AppRoutes.toSmokingList(context);
                         } else {
                           AppRoutes.toRecipeList(context, category.slug);
                         }
