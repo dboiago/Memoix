@@ -15,6 +15,19 @@ String _capitalizeWords(String text) {
   }).join(' ');
 }
 
+/// Clean notes text by removing redundant "optional" since we have a badge for that
+String _cleanNotes(String text) {
+  if (text.isEmpty) return text;
+  // Remove "optional" or "Optional" in various forms
+  var result = text
+      .replaceAll(RegExp(r'\boptional\b,?\s*', caseSensitive: false), '')
+      .replaceAll(RegExp(r',?\s*\boptional\b', caseSensitive: false), '')
+      .trim();
+  // Remove leading/trailing punctuation
+  result = result.replaceAll(RegExp(r'^[,\s·]+|[,\s·]+$'), '').trim();
+  return result;
+}
+
 /// Format amount to clean up decimals and display fractions
 String _formatAmount(String amount) {
   var result = amount.trim();
@@ -239,9 +252,9 @@ class _IngredientListState extends State<IngredientList> {
               child: (hasPreparation || hasAlternative)
                   ? Text(
                       [
-                        if (hasPreparation) ingredient.preparation!,
-                        if (hasAlternative) ingredient.alternative!,
-                      ].join(' · '),
+                        if (hasPreparation) _cleanNotes(ingredient.preparation!),
+                        if (hasAlternative) 'alt: ${_cleanNotes(ingredient.alternative!)}',
+                      ].where((s) => s.isNotEmpty).join(' · '),
                       style: TextStyle(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked

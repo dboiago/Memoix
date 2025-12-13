@@ -3,8 +3,9 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
-import '../models/recipe.dart';
 import '../models/category.dart';
+import '../models/continent_mapping.dart';
+import '../models/recipe.dart';
 
 /// Repository for recipe data operations
 class RecipeRepository {
@@ -167,56 +168,51 @@ class RecipeRepository {
         .watch(fireImmediately: true);
   }
 
-  /// Watch recipes by course (sorted by continent priority, then alphabetically by name)
+  /// Watch recipes by course (sorted by cuisine region, country, province, then name)
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
     return _db.recipes
         .filter()
         .courseEqualTo(course, caseSensitive: false)
         .watch(fireImmediately: true)
         .map((recipes) {
-          // Sort by continent priority, then by name
+          // Sort by: 1) Cuisine region, 2) Country, 3) Province/style, 4) Recipe name
+          final regionOrder = ContinentMapping.allContinents.skip(1).toList(); // Skip 'All'
+          
           recipes.sort((a, b) {
-            final continentOrder = ['Asian', 'European', 'American', 'Middle Eastern', 'African', 'Mediterranean'];
-            final aCont = _getContinentFromCuisine(a.cuisine);
-            final bCont = _getContinentFromCuisine(b.cuisine);
+            // 1. Compare by cuisine region
+            final aRegion = ContinentMapping.getContinentFromCuisine(a.cuisine);
+            final bRegion = ContinentMapping.getContinentFromCuisine(b.cuisine);
             
-            final aIndex = aCont != null ? continentOrder.indexOf(aCont) : continentOrder.length;
-            final bIndex = bCont != null ? continentOrder.indexOf(bCont) : continentOrder.length;
-            
-            // Handle unknown continents (put at end)
-            final aOrder = aIndex == -1 ? continentOrder.length : aIndex;
-            final bOrder = bIndex == -1 ? continentOrder.length : bIndex;
+            final aRegionIndex = aRegion != null ? regionOrder.indexOf(aRegion) : regionOrder.length;
+            final bRegionIndex = bRegion != null ? regionOrder.indexOf(bRegion) : regionOrder.length;
+            final aOrder = aRegionIndex == -1 ? regionOrder.length : aRegionIndex;
+            final bOrder = bRegionIndex == -1 ? regionOrder.length : bRegionIndex;
             
             if (aOrder != bOrder) {
               return aOrder.compareTo(bOrder);
             }
-            // Same continent, sort by name
+            
+            // 2. Same region, compare by country
+            final aCountry = ContinentMapping.getCountryFromCuisine(a.cuisine) ?? '';
+            final bCountry = ContinentMapping.getCountryFromCuisine(b.cuisine) ?? '';
+            
+            if (aCountry != bCountry) {
+              return aCountry.toLowerCase().compareTo(bCountry.toLowerCase());
+            }
+            
+            // 3. Same country, compare by province/style
+            final aProvince = ContinentMapping.getProvinceFromCuisine(a.cuisine) ?? '';
+            final bProvince = ContinentMapping.getProvinceFromCuisine(b.cuisine) ?? '';
+            
+            if (aProvince != bProvince) {
+              return aProvince.toLowerCase().compareTo(bProvince.toLowerCase());
+            }
+            
+            // 4. Same province, sort by recipe name
             return a.name.toLowerCase().compareTo(b.name.toLowerCase());
           });
           return recipes;
         });
-  }
-  
-  /// Helper to get continent from cuisine
-  static String? _getContinentFromCuisine(String? cuisine) {
-    if (cuisine == null || cuisine.isEmpty) return null;
-    const cuisineToContinent = {
-      'chinese': 'Asian', 'japanese': 'Asian', 'korean': 'Asian', 'thai': 'Asian',
-      'vietnamese': 'Asian', 'indian': 'Asian', 'malaysian': 'Asian', 'indonesian': 'Asian',
-      'filipino': 'Asian', 'singaporean': 'Asian',
-      'french': 'European', 'italian': 'European', 'spanish': 'European', 'greek': 'European',
-      'german': 'European', 'british': 'European', 'irish': 'European', 'portuguese': 'European',
-      'dutch': 'European', 'scandinavian': 'European', 'russian': 'European', 'polish': 'European',
-      'turkish': 'European',
-      'american': 'American', 'canadian': 'American', 'mexican': 'American', 'brazilian': 'American',
-      'peruvian': 'American', 'argentinian': 'American', 'cuban': 'American', 'caribbean': 'American',
-      'southern': 'American', 'cajun': 'American',
-      'lebanese': 'Middle Eastern', 'moroccan': 'Middle Eastern', 'persian': 'Middle Eastern',
-      'israeli': 'Middle Eastern', 'egyptian': 'Middle Eastern',
-      'ethiopian': 'African', 'south african': 'African',
-      'mediterranean': 'Mediterranean',
-    };
-    return cuisineToContinent[cuisine.toLowerCase()];
   }
 
   // ============ CATEGORIES ============
