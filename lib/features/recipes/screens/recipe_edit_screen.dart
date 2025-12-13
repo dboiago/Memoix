@@ -175,10 +175,17 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           _addIngredientRow(name: ingredient.section!, isSection: true);
           lastSection = ingredient.section;
         }
+        // Combine preparation and alternative into notes field
+        final notesParts = <String>[
+          if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty)
+            ingredient.preparation!,
+          if (ingredient.alternative != null && ingredient.alternative!.isNotEmpty)
+            ingredient.alternative!,
+        ];
         _addIngredientRow(
           name: ingredient.name,
           amount: ingredient.displayAmount,
-          notes: ingredient.preparation ?? '',
+          notes: notesParts.join('; '),
         );
       }
 
@@ -1003,9 +1010,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
             ),
           ),
-          // Ingredient name (flexible, takes 3 parts)
-          Flexible(
-            flex: 3,
+          // Ingredient name
+          SizedBox(
+            width: 120,
             child: TextField(
               controller: row.nameController,
               decoration: InputDecoration(
@@ -1030,16 +1037,16 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ),
           const SizedBox(width: 8),
           
-          // Amount (flexible, takes 2 parts)
-          Flexible(
-            flex: 2,
+          // Amount
+          SizedBox(
+            width: 80,
             child: TextField(
               controller: row.amountController,
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 border: const OutlineInputBorder(),
-                hintText: 'Amt',
+                hintText: 'Amount',
                 hintStyle: TextStyle(
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.outline,
@@ -1050,16 +1057,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ),
           const SizedBox(width: 8),
           
-          // Notes/Prep (flexible, takes 3 parts)
-          Flexible(
-            flex: 3,
+          // Notes/Prep
+          Expanded(
             child: TextField(
               controller: row.notesController,
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 border: const OutlineInputBorder(),
-                hintText: 'Notes',
+                hintText: 'Notes (optional)',
                 hintStyle: TextStyle(
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.outline,
