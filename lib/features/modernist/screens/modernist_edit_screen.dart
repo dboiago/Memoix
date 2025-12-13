@@ -6,11 +6,10 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
-import '../../../app/theme/colors.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 
-/// Edit screen for creating/editing modernist recipes
+/// Edit screen for creating/editing modernist recipes - follows Mains pattern
 class ModernistEditScreen extends ConsumerStatefulWidget {
   final int? recipeId;
 
@@ -23,20 +22,16 @@ class ModernistEditScreen extends ConsumerStatefulWidget {
 class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
   static const _uuid = Uuid();
 
-  final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _techniqueController = TextEditingController();
   final _servesController = TextEditingController();
   final _timeController = TextEditingController();
-  final _difficultyController = TextEditingController();
   final _notesController = TextEditingController();
-  final _scienceNotesController = TextEditingController();
-  final _sourceUrlController = TextEditingController();
+  final _directionsController = TextEditingController();
 
   ModernistType _selectedType = ModernistType.concept;
   final List<String> _equipment = [];
   final List<_IngredientRow> _ingredientRows = [];
-  final _directionsController = TextEditingController();
   List<String> _imagePaths = [];
 
   bool _isLoading = true;
@@ -62,37 +57,49 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         _techniqueController.text = recipe.technique ?? '';
         _servesController.text = recipe.serves ?? '';
         _timeController.text = recipe.time ?? '';
-        _difficultyController.text = recipe.difficulty ?? '';
-        _notesController.text = recipe.notes ?? '';
-        _scienceNotesController.text = recipe.scienceNotes ?? '';
-        _sourceUrlController.text = recipe.sourceUrl ?? '';
+        // Combine notes and science notes into single notes field
+        final notesParts = <String>[
+          if (recipe.notes != null && recipe.notes!.isNotEmpty) recipe.notes!,
+          if (recipe.scienceNotes != null && recipe.scienceNotes!.isNotEmpty) recipe.scienceNotes!,
+        ];
+        _notesController.text = notesParts.join('\n\n');
         _equipment.addAll(recipe.equipment);
         _imagePaths = recipe.getAllImages();
 
         for (final ingredient in recipe.ingredients) {
-          _ingredientRows.add(_IngredientRow(
-            nameController: TextEditingController(text: ingredient.name),
-            amountController: TextEditingController(text: ingredient.amount ?? ''),
-            unitController: TextEditingController(text: ingredient.unit ?? ''),
-            notesController: TextEditingController(text: ingredient.notes ?? ''),
-          ));
+          _addIngredientRow(
+            name: ingredient.name,
+            amount: ingredient.displayAmount,
+            notes: ingredient.notes ?? '',
+          );
         }
 
         _directionsController.text = recipe.directions.join('\n\n');
       }
     }
 
-    // Ensure at least one ingredient row
+    // Always have at least one empty row
     if (_ingredientRows.isEmpty) {
-      _ingredientRows.add(_IngredientRow(
-        nameController: TextEditingController(),
-        amountController: TextEditingController(),
-        unitController: TextEditingController(),
-        notesController: TextEditingController(),
-      ));
+      _addIngredientRow();
     }
 
     setState(() => _isLoading = false);
+  }
+
+  void _addIngredientRow({String name = '', String amount = '', String notes = ''}) {
+    _ingredientRows.add(_IngredientRow(
+      nameController: TextEditingController(text: name),
+      amountController: TextEditingController(text: amount),
+      notesController: TextEditingController(text: notes),
+    ));
+  }
+
+  void _removeIngredientRow(int index) {
+    if (_ingredientRows.length > 1) {
+      final row = _ingredientRows.removeAt(index);
+      row.dispose();
+      setState(() {});
+    }
   }
 
   @override
@@ -101,10 +108,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     _techniqueController.dispose();
     _servesController.dispose();
     _timeController.dispose();
-    _difficultyController.dispose();
     _notesController.dispose();
-    _scienceNotesController.dispose();
-    _sourceUrlController.dispose();
     _directionsController.dispose();
     for (final row in _ingredientRows) {
       row.dispose();
@@ -117,119 +121,107 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     final theme = Theme.of(context);
 
     if (_isLoading) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
+      return Scaffold(
+        appBar: AppBar(title: const Text('Loading...')),
+        body: const Center(child: CircularProgressIndicator()),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(_isEditing ? 'Edit Recipe' : 'New Modernist Recipe'),
+        title: Text(_isEditing ? 'Edit Recipe' : 'New Recipe'),
         actions: [
-          TextButton(
+          TextButton.icon(
             onPressed: _isSaving ? null : _saveRecipe,
-            child: _isSaving
+            icon: _isSaving
                 ? const SizedBox(
-                    width: 20,
-                    height: 20,
+                    width: 16,
+                    height: 16,
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
-                : const Text('Save'),
+                : const Icon(Icons.save),
+            label: const Text('Save'),
           ),
         ],
       ),
-      body: Form(
-        key: _formKey,
-        child: ListView(
-          padding: const EdgeInsets.all(16),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Name field
-            TextFormField(
+            // Recipe image (at top like Mains)
+            _buildImagePicker(theme),
+            const SizedBox(height: 16),
+
+            // Recipe name
+            TextField(
               controller: _nameController,
               decoration: const InputDecoration(
                 labelText: 'Recipe Name *',
                 hintText: 'e.g., Mustard Air, Spherified Mango',
               ),
               textCapitalization: TextCapitalization.words,
-              validator: (value) =>
-                  value?.isEmpty == true ? 'Name is required' : null,
             ),
             const SizedBox(height: 16),
 
-            // Type selection
-            Text('Recipe Type', style: theme.textTheme.titleSmall),
+            // Category (Concept/Technique) - styled like cuisine chips
+            Text(
+              'Category *',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
             const SizedBox(height: 8),
-            SegmentedButton<ModernistType>(
-              segments: const [
-                ButtonSegment(
-                  value: ModernistType.concept,
-                  label: Text('Concept'),
-                  icon: Icon(Icons.lightbulb_outline),
-                ),
-                ButtonSegment(
-                  value: ModernistType.technique,
-                  label: Text('Technique'),
-                  icon: Icon(Icons.science_outlined),
-                ),
+            Row(
+              children: [
+                _buildCategoryChip('Concept', ModernistType.concept, theme),
+                const SizedBox(width: 12),
+                _buildCategoryChip('Technique', ModernistType.technique, theme),
               ],
-              selected: {_selectedType},
-              onSelectionChanged: (selection) {
-                setState(() => _selectedType = selection.first);
-              },
             ),
             const SizedBox(height: 16),
 
-            // Technique category
+            // Technique category (like Region in Mains)
             Autocomplete<String>(
               optionsBuilder: (value) =>
                   ModernistTechniques.getSuggestions(value.text),
               initialValue: TextEditingValue(text: _techniqueController.text),
               onSelected: (value) => _techniqueController.text = value,
               fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-                // Sync with our controller
                 controller.text = _techniqueController.text;
                 controller.addListener(() => _techniqueController.text = controller.text);
-                return TextFormField(
+                return TextField(
                   controller: controller,
                   focusNode: focusNode,
                   decoration: const InputDecoration(
-                    labelText: 'Technique Category',
+                    labelText: 'Technique (optional)',
                     hintText: 'e.g., Spherification, Foams, Sous Vide',
                   ),
+                  textCapitalization: TextCapitalization.words,
                 );
               },
             ),
             const SizedBox(height: 16),
 
-            // Metadata row
+            // Serves and Time row (like Mains)
             Row(
               children: [
                 Expanded(
-                  child: TextFormField(
+                  child: TextField(
                     controller: _servesController,
                     decoration: const InputDecoration(
                       labelText: 'Serves',
-                      hintText: '4',
+                      hintText: 'e.g., 4-6',
                     ),
                   ),
                 ),
-                const SizedBox(width: 16),
+                const SizedBox(width: 12),
                 Expanded(
-                  child: TextFormField(
+                  child: TextField(
                     controller: _timeController,
                     decoration: const InputDecoration(
                       labelText: 'Time',
-                      hintText: '30 min',
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: TextFormField(
-                    controller: _difficultyController,
-                    decoration: const InputDecoration(
-                      labelText: 'Difficulty',
-                      hintText: 'Advanced',
+                      hintText: 'e.g., 40 min',
                     ),
                   ),
                 ),
@@ -241,67 +233,86 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             _buildEquipmentSection(theme),
             const SizedBox(height: 24),
 
-            // Ingredients section
+            // Ingredients section (spreadsheet layout like Mains)
             _buildIngredientsSection(theme),
             const SizedBox(height: 24),
 
-            // Directions section
-            Text('Directions', style: theme.textTheme.titleMedium),
+            // Directions
+            Text(
+              'Directions',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              'Separate steps with blank lines.',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
             const SizedBox(height: 8),
-            TextFormField(
+            TextField(
               controller: _directionsController,
               decoration: const InputDecoration(
-                hintText: 'Enter each step on a new line...',
-                border: OutlineInputBorder(),
+                hintText: 'Prepare the base solution...\n\nDrop into the bath...\n\n...',
+                alignLabelWithHint: true,
               ),
-              maxLines: 8,
-              textCapitalization: TextCapitalization.sentences,
+              maxLines: 15,
+              minLines: 8,
             ),
             const SizedBox(height: 24),
 
-            // Science notes
-            Text('Science Notes (optional)', style: theme.textTheme.titleMedium),
+            // Comments (single notes field)
+            Text(
+              'Comments',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             const SizedBox(height: 8),
-            TextFormField(
-              controller: _scienceNotesController,
-              decoration: const InputDecoration(
-                hintText: 'Explain the science behind this technique...',
-                border: OutlineInputBorder(),
-              ),
-              maxLines: 4,
-              textCapitalization: TextCapitalization.sentences,
-            ),
-            const SizedBox(height: 24),
-
-            // Notes
-            TextFormField(
+            TextField(
               controller: _notesController,
               decoration: const InputDecoration(
-                labelText: 'Notes',
-                hintText: 'Tips, variations, etc.',
-                border: OutlineInputBorder(),
+                hintText: 'Optional tips, science notes, variations, etc.',
               ),
-              maxLines: 3,
-              textCapitalization: TextCapitalization.sentences,
+              maxLines: 4,
+              minLines: 2,
             ),
-            const SizedBox(height: 24),
-
-            // Source URL
-            TextFormField(
-              controller: _sourceUrlController,
-              decoration: const InputDecoration(
-                labelText: 'Source URL',
-                hintText: 'https://...',
-                prefixIcon: Icon(Icons.link),
-              ),
-              keyboardType: TextInputType.url,
-            ),
-            const SizedBox(height: 24),
-
-            // Image picker
-            _buildImagePicker(theme),
             const SizedBox(height: 32),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCategoryChip(String label, ModernistType type, ThemeData theme) {
+    final isSelected = _selectedType == type;
+
+    return GestureDetector(
+      onTap: () => setState(() => _selectedType = type),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? theme.colorScheme.secondary.withOpacity(0.15)
+              : theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: isSelected
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.outline.withOpacity(0.3),
+            width: isSelected ? 1.5 : 1.0,
+          ),
+        ),
+        child: Text(
+          label,
+          style: theme.textTheme.bodyMedium?.copyWith(
+            color: isSelected
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.onSurface,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+          ),
         ),
       ),
     );
@@ -313,71 +324,120 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       children: [
         Row(
           children: [
-            Icon(Icons.build_outlined, size: 20, color: MemoixColors.modernist),
-            const SizedBox(width: 8),
-            Text('Special Equipment', style: theme.textTheme.titleMedium),
+            Text(
+              'Special Equipment',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Spacer(),
+            TextButton.icon(
+              onPressed: () {
+                _showAddEquipmentDialog();
+              },
+              icon: const Icon(Icons.add, size: 18),
+              label: const Text('Add'),
+            ),
           ],
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 4),
         Text(
-          'Equipment needed before starting (shown above ingredients)',
+          'Equipment needed before starting',
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
-        const SizedBox(height: 12),
-
-        // Equipment chips
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            ..._equipment.map((item) => Chip(
+        if (_equipment.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: _equipment.map((item) => Chip(
               label: Text(item),
               deleteIcon: const Icon(Icons.close, size: 18),
               onDeleted: () => setState(() => _equipment.remove(item)),
-              backgroundColor: MemoixColors.modernist.withOpacity(0.1),
-            )),
+            )).toList(),
+          ),
+        ],
+      ],
+    );
+  }
+
+  void _showAddEquipmentDialog() {
+    final controller = TextEditingController();
+    
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => Padding(
+        padding: EdgeInsets.only(
+          bottom: MediaQuery.of(ctx).viewInsets.bottom,
+          left: 16,
+          right: 16,
+          top: 16,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Add Equipment',
+              style: Theme.of(ctx).textTheme.titleMedium,
+            ),
+            const SizedBox(height: 16),
+            Autocomplete<String>(
+              optionsBuilder: (value) {
+                final suggestions = ModernistEquipment.getSuggestions(value.text);
+                return suggestions.where((s) => !_equipment.contains(s));
+              },
+              onSelected: (value) {
+                controller.text = value;
+              },
+              fieldViewBuilder: (context, textController, focusNode, onSubmitted) {
+                controller.addListener(() => textController.text = controller.text);
+                return TextField(
+                  controller: textController,
+                  focusNode: focusNode,
+                  autofocus: true,
+                  decoration: const InputDecoration(
+                    hintText: 'e.g., Immersion circulator, iSi whipper',
+                    border: OutlineInputBorder(),
+                  ),
+                  onSubmitted: (_) {
+                    final value = textController.text.trim();
+                    if (value.isNotEmpty && !_equipment.contains(value)) {
+                      setState(() => _equipment.add(value));
+                    }
+                    Navigator.pop(ctx);
+                  },
+                );
+              },
+            ),
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx),
+                  child: const Text('Cancel'),
+                ),
+                const SizedBox(width: 8),
+                FilledButton(
+                  onPressed: () {
+                    final value = controller.text.trim();
+                    if (value.isNotEmpty && !_equipment.contains(value)) {
+                      setState(() => _equipment.add(value));
+                    }
+                    Navigator.pop(ctx);
+                  },
+                  child: const Text('Add'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
           ],
         ),
-        const SizedBox(height: 12),
-
-        // Add equipment autocomplete
-        Autocomplete<String>(
-          optionsBuilder: (value) {
-            final suggestions = ModernistEquipment.getSuggestions(value.text);
-            // Exclude already added items
-            return suggestions.where((s) => !_equipment.contains(s));
-          },
-          onSelected: (value) {
-            setState(() {
-              if (!_equipment.contains(value)) {
-                _equipment.add(value);
-              }
-            });
-          },
-          fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-            return TextField(
-              controller: controller,
-              focusNode: focusNode,
-              decoration: InputDecoration(
-                hintText: 'Add equipment...',
-                prefixIcon: const Icon(Icons.add),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              ),
-              onSubmitted: (value) {
-                if (value.isNotEmpty && !_equipment.contains(value)) {
-                  setState(() => _equipment.add(value));
-                  controller.clear();
-                }
-              },
-            );
-          },
-        ),
-      ],
+      ),
     );
   }
 
@@ -385,103 +445,190 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Ingredients', style: theme.textTheme.titleMedium),
-        const SizedBox(height: 12),
+        Row(
+          children: [
+            Text(
+              'Ingredients',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Spacer(),
+            TextButton.icon(
+              onPressed: () {
+                _addIngredientRow();
+                setState(() {});
+              },
+              icon: const Icon(Icons.add, size: 18),
+              label: const Text('Add'),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+
+        // Column headers
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.surfaceContainerHighest,
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+          ),
+          child: Row(
+            children: [
+              SizedBox(
+                width: 120,
+                child: Text('Ingredient',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              SizedBox(
+                width: 80,
+                child: Text('Amount',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text('Notes/Prep',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 40),
+            ],
+          ),
+        ),
 
         // Ingredient rows
-        ...List.generate(_ingredientRows.length, (index) {
-          final row = _ingredientRows[index];
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Amount
-                SizedBox(
-                  width: 60,
-                  child: TextField(
-                    controller: row.amountController,
-                    decoration: const InputDecoration(
-                      hintText: 'Amt',
-                      isDense: true,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 8),
-                // Unit
-                SizedBox(
-                  width: 50,
-                  child: TextField(
-                    controller: row.unitController,
-                    decoration: const InputDecoration(
-                      hintText: 'Unit',
-                      isDense: true,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 8),
-                // Name with autocomplete
-                Expanded(
-                  flex: 2,
-                  child: Autocomplete<String>(
-                    optionsBuilder: (value) =>
-                        ModernistIngredients.getSuggestions(value.text),
-                    initialValue: TextEditingValue(text: row.nameController.text),
-                    onSelected: (value) => row.nameController.text = value,
-                    fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-                      controller.text = row.nameController.text;
-                      controller.addListener(() => row.nameController.text = controller.text);
-                      return TextField(
-                        controller: controller,
-                        focusNode: focusNode,
-                        decoration: const InputDecoration(
-                          hintText: 'Ingredient',
-                          isDense: true,
-                        ),
-                      );
-                    },
-                  ),
-                ),
-                const SizedBox(width: 8),
-                // Notes
-                Expanded(
-                  child: TextField(
-                    controller: row.notesController,
-                    decoration: const InputDecoration(
-                      hintText: 'Notes',
-                      isDense: true,
-                    ),
-                  ),
-                ),
-                // Remove button
-                IconButton(
-                  icon: const Icon(Icons.remove_circle_outline, size: 20),
-                  onPressed: _ingredientRows.length > 1
-                      ? () => setState(() {
-                          _ingredientRows.removeAt(index);
-                        })
-                      : null,
-                  visualDensity: VisualDensity.compact,
-                ),
-              ],
-            ),
-          );
-        }),
-
-        // Add ingredient button
-        TextButton.icon(
-          onPressed: () => setState(() {
-            _ingredientRows.add(_IngredientRow(
-              nameController: TextEditingController(),
-              amountController: TextEditingController(),
-              unitController: TextEditingController(),
-              notesController: TextEditingController(),
-            ));
-          }),
-          icon: const Icon(Icons.add),
-          label: const Text('Add Ingredient'),
+        Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+            borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
+          ),
+          child: Column(
+            children: List.generate(_ingredientRows.length, (index) {
+              return _buildIngredientRowWidget(index, theme);
+            }),
+          ),
         ),
       ],
+    );
+  }
+
+  Widget _buildIngredientRowWidget(int index, ThemeData theme) {
+    final row = _ingredientRows[index];
+    final isLast = index == _ingredientRows.length - 1;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+      decoration: BoxDecoration(
+        border: isLast
+            ? null
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // Ingredient name
+          SizedBox(
+            width: 120,
+            child: Autocomplete<String>(
+              optionsBuilder: (value) =>
+                  ModernistIngredients.getSuggestions(value.text),
+              initialValue: TextEditingValue(text: row.nameController.text),
+              onSelected: (value) => row.nameController.text = value,
+              fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                controller.text = row.nameController.text;
+                controller.addListener(() => row.nameController.text = controller.text);
+                return TextField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: InputDecoration(
+                    isDense: true,
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                    border: const OutlineInputBorder(),
+                    hintText: 'Ingredient',
+                    hintStyle: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      color: theme.colorScheme.outline,
+                    ),
+                  ),
+                  style: theme.textTheme.bodyMedium,
+                  onChanged: (value) {
+                    // Auto-add new row when typing in last row
+                    if (isLast && value.isNotEmpty) {
+                      _addIngredientRow();
+                      setState(() {});
+                    }
+                  },
+                );
+              },
+            ),
+          ),
+          const SizedBox(width: 8),
+
+          // Amount
+          SizedBox(
+            width: 80,
+            child: TextField(
+              controller: row.amountController,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Amount',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              style: theme.textTheme.bodyMedium,
+            ),
+          ),
+          const SizedBox(width: 8),
+
+          // Notes
+          Expanded(
+            child: TextField(
+              controller: row.notesController,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Notes (optional)',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              style: theme.textTheme.bodyMedium,
+            ),
+          ),
+
+          // Delete button
+          SizedBox(
+            width: 40,
+            child: IconButton(
+              icon: Icon(
+                Icons.close,
+                size: 18,
+                color: theme.colorScheme.outline,
+              ),
+              onPressed: _ingredientRows.length > 1
+                  ? () => _removeIngredientRow(index)
+                  : null,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -491,98 +638,246 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Photos', style: theme.textTheme.titleMedium),
-        const SizedBox(height: 8),
-        if (hasImages)
-          SizedBox(
-            height: 100,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: _imagePaths.length + 1,
-              itemBuilder: (context, index) {
-                if (index == _imagePaths.length) {
-                  return GestureDetector(
-                    onTap: _pickImage,
-                    child: Container(
-                      width: 80,
-                      margin: const EdgeInsets.only(left: 8),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
-                      ),
-                      child: const Icon(Icons.add),
-                    ),
-                  );
-                }
-
-                return Stack(
-                  children: [
-                    Container(
-                      width: 80,
-                      margin: EdgeInsets.only(left: index == 0 ? 0 : 8),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
-                        child: _imagePaths[index].startsWith('http')
-                            ? Image.network(_imagePaths[index], fit: BoxFit.cover)
-                            : Image.file(File(_imagePaths[index]), fit: BoxFit.cover),
-                      ),
-                    ),
-                    Positioned(
-                      top: 4,
-                      right: 4,
-                      child: GestureDetector(
-                        onTap: () => setState(() => _imagePaths.removeAt(index)),
-                        child: Container(
-                          padding: const EdgeInsets.all(2),
-                          decoration: const BoxDecoration(
-                            color: Colors.black54,
-                            shape: BoxShape.circle,
-                          ),
-                          child: const Icon(Icons.close, size: 16, color: Colors.white),
-                        ),
-                      ),
-                    ),
-                  ],
-                );
-              },
-            ),
-          )
-        else
-          GestureDetector(
-            onTap: _pickImage,
-            child: Container(
-              height: 120,
-              decoration: BoxDecoration(
-                color: theme.colorScheme.surfaceContainerHighest,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        Row(
+          children: [
+            Text(
+              'Recipe Photos',
+              style: theme.textTheme.titleSmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
               ),
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.add_photo_alternate_outlined,
-                        size: 40, color: theme.colorScheme.onSurfaceVariant),
-                    const SizedBox(height: 8),
-                    Text('Add photos',
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
-                        )),
-                  ],
+            ),
+            if (hasImages) ...[
+              const SizedBox(width: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '${_imagePaths.length}',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onPrimaryContainer,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
-            ),
-          ),
+            ],
+          ],
+        ),
+        const SizedBox(height: 8),
+        if (hasImages)
+          _buildImageGallery(theme)
+        else
+          _buildEmptyImagePicker(theme),
       ],
     );
   }
 
-  Future<void> _pickImage() async {
+  Widget _buildEmptyImagePicker(ThemeData theme) {
+    return GestureDetector(
+      onTap: _showImageSourceDialog,
+      child: Container(
+        height: 180,
+        decoration: BoxDecoration(
+          color: theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: theme.colorScheme.outline.withOpacity(0.3),
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.add_photo_alternate_outlined,
+                size: 48,
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Tap to add photos',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageGallery(ThemeData theme) {
+    return SizedBox(
+      height: 120,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: _imagePaths.length + 1,
+        itemBuilder: (context, index) {
+          if (index == _imagePaths.length) {
+            return Padding(
+              padding: const EdgeInsets.only(left: 8),
+              child: GestureDetector(
+                onTap: _showImageSourceDialog,
+                child: Container(
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: theme.colorScheme.outline.withOpacity(0.3),
+                    ),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.add,
+                        size: 32,
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Add',
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          }
+
+          return Padding(
+            padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
+            child: Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: _buildImageWidget(_imagePaths[index], width: 100, height: 120),
+                ),
+                Positioned(
+                  top: 4,
+                  left: 4,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.6),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      '${index + 1}',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: Material(
+                    color: theme.colorScheme.surface.withOpacity(0.9),
+                    borderRadius: BorderRadius.circular(20),
+                    child: InkWell(
+                      onTap: () => setState(() => _imagePaths.removeAt(index)),
+                      borderRadius: BorderRadius.circular(20),
+                      child: Padding(
+                        padding: const EdgeInsets.all(4),
+                        child: Icon(Icons.close, size: 16, color: theme.colorScheme.onSurface),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildImageWidget(String imagePath, {double? width, double? height}) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return Image.network(
+        imagePath,
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    } else {
+      return Image.file(
+        File(imagePath),
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => SizedBox(
+          width: width,
+          height: height,
+          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        ),
+      );
+    }
+  }
+
+  void _showImageSourceDialog() {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImage(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImage(ImageSource.gallery);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.collections),
+              title: const Text('Choose Multiple Photos'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickMultipleImages();
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.close),
+              title: const Text('Cancel'),
+              onTap: () => Navigator.pop(ctx),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickImage(ImageSource source) async {
     try {
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
-        source: ImageSource.gallery,
+        source: source,
         maxWidth: 1200,
         maxHeight: 1200,
         imageQuality: 85,
@@ -611,8 +906,46 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     }
   }
 
+  Future<void> _pickMultipleImages() async {
+    try {
+      final picker = ImagePicker();
+      final pickedFiles = await picker.pickMultiImage(
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFiles.isNotEmpty) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/modernist_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        for (final pickedFile in pickedFiles) {
+          final fileName = '${_uuid.v4()}${path.extension(pickedFile.path)}';
+          final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+          _imagePaths.add(savedFile.path);
+        }
+
+        setState(() {});
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking images: $e')),
+        );
+      }
+    }
+  }
+
   Future<void> _saveRecipe() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (_nameController.text.trim().isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please enter a recipe name')),
+      );
+      return;
+    }
 
     setState(() => _isSaving = true);
 
@@ -620,23 +953,34 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       // Build ingredients
       final ingredients = _ingredientRows
           .where((row) => row.nameController.text.isNotEmpty)
-          .map((row) => ModernistIngredient.create(
-                name: row.nameController.text.trim(),
-                amount: row.amountController.text.trim().isEmpty
-                    ? null
-                    : row.amountController.text.trim(),
-                unit: row.unitController.text.trim().isEmpty
-                    ? null
-                    : row.unitController.text.trim(),
-                notes: row.notesController.text.trim().isEmpty
-                    ? null
-                    : row.notesController.text.trim(),
-              ))
+          .map((row) {
+            // Parse amount for amount and unit
+            final amountText = row.amountController.text.trim();
+            String? amount;
+            String? unit;
+            if (amountText.isNotEmpty) {
+              final parts = amountText.split(RegExp(r'\s+'));
+              if (parts.length >= 2) {
+                amount = parts.first;
+                unit = parts.sublist(1).join(' ');
+              } else {
+                amount = amountText;
+              }
+            }
+            return ModernistIngredient.create(
+              name: row.nameController.text.trim(),
+              amount: amount,
+              unit: unit,
+              notes: row.notesController.text.trim().isEmpty
+                  ? null
+                  : row.notesController.text.trim(),
+            );
+          })
           .toList();
 
       // Build directions
       final directions = _directionsController.text
-          .split('\n')
+          .split(RegExp(r'\n\s*\n'))
           .map((s) => s.trim())
           .where((s) => s.isNotEmpty)
           .toList();
@@ -644,7 +988,6 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       final repo = ref.read(modernistRepositoryProvider);
 
       if (_existingRecipe != null) {
-        // Update existing
         _existingRecipe!
           ..name = _nameController.text.trim()
           ..type = _selectedType
@@ -657,28 +1000,18 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ..time = _timeController.text.trim().isEmpty
               ? null
               : _timeController.text.trim()
-          ..difficulty = _difficultyController.text.trim().isEmpty
-              ? null
-              : _difficultyController.text.trim()
           ..equipment = _equipment
           ..ingredients = ingredients
           ..directions = directions
           ..notes = _notesController.text.trim().isEmpty
               ? null
               : _notesController.text.trim()
-          ..scienceNotes = _scienceNotesController.text.trim().isEmpty
-              ? null
-              : _scienceNotesController.text.trim()
-          ..sourceUrl = _sourceUrlController.text.trim().isEmpty
-              ? null
-              : _sourceUrlController.text.trim()
           ..imageUrls = _imagePaths
           ..imageUrl = _imagePaths.isNotEmpty ? _imagePaths.first : null
           ..updatedAt = DateTime.now();
 
         await repo.save(_existingRecipe!);
       } else {
-        // Create new
         await repo.create(
           name: _nameController.text.trim(),
           type: _selectedType,
@@ -691,21 +1024,12 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           time: _timeController.text.trim().isEmpty
               ? null
               : _timeController.text.trim(),
-          difficulty: _difficultyController.text.trim().isEmpty
-              ? null
-              : _difficultyController.text.trim(),
           equipment: _equipment,
           ingredients: ingredients,
           directions: directions,
           notes: _notesController.text.trim().isEmpty
               ? null
               : _notesController.text.trim(),
-          scienceNotes: _scienceNotesController.text.trim().isEmpty
-              ? null
-              : _scienceNotesController.text.trim(),
-          sourceUrl: _sourceUrlController.text.trim().isEmpty
-              ? null
-              : _sourceUrlController.text.trim(),
           imageUrls: _imagePaths,
           imageUrl: _imagePaths.isNotEmpty ? _imagePaths.first : null,
         );
@@ -731,20 +1055,17 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 class _IngredientRow {
   final TextEditingController nameController;
   final TextEditingController amountController;
-  final TextEditingController unitController;
   final TextEditingController notesController;
 
   _IngredientRow({
     required this.nameController,
     required this.amountController,
-    required this.unitController,
     required this.notesController,
   });
 
   void dispose() {
     nameController.dispose();
     amountController.dispose();
-    unitController.dispose();
     notesController.dispose();
   }
 }

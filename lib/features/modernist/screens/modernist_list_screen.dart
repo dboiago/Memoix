@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../app/theme/colors.dart';
+import '../../../app/routes/router.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import '../widgets/modernist_card.dart';
-import 'modernist_detail_screen.dart';
-import 'modernist_edit_screen.dart';
 
-/// Screen displaying list of modernist recipes
+/// Screen displaying list of modernist recipes - follows Mains pattern
 class ModernistListScreen extends ConsumerStatefulWidget {
   const ModernistListScreen({super.key});
 
@@ -18,16 +16,13 @@ class ModernistListScreen extends ConsumerStatefulWidget {
 }
 
 class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
-  ModernistType? _selectedType;
-  String? _selectedTechnique;
+  Set<String> _selectedFilters = {}; // Empty = "All"
   String _searchQuery = '';
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final recipesAsync = ref.watch(allModernistRecipesProvider);
-    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
-    final isCompact = ref.watch(compactViewProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -45,232 +40,297 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
-        data: (recipes) {
-          // Apply Hide Memoix filter if enabled
-          final visibleRecipes = hideMemoix
-              ? recipes.where((r) => r.source != ModernistSource.memoix).toList()
-              : recipes;
+        data: (allRecipes) {
+          // Watch settings
+          final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+          final isCompactView = ref.watch(compactViewProvider);
 
-          if (recipes.isEmpty) {
-            return _buildEmptyState(theme);
-          }
+          // Apply hide memoix filter
+          var recipes = hideMemoix
+              ? allRecipes.where((r) => r.source != ModernistSource.memoix).toList()
+              : allRecipes;
 
-          // Get available techniques from recipes
-          final availableTechniques = visibleRecipes
-              .map((r) => r.technique)
-              .where((t) => t != null && t.isNotEmpty)
-              .cast<String>()
-              .toSet()
-              .toList()
-            ..sort();
-
-          // Filter recipes
-          var filtered = visibleRecipes;
-          if (_selectedType != null) {
-            filtered = filtered.where((r) => r.type == _selectedType).toList();
-          }
-          if (_selectedTechnique != null) {
-            filtered = filtered.where((r) => r.technique == _selectedTechnique).toList();
-          }
-          if (_searchQuery.isNotEmpty) {
-            filtered = filtered.where((r) =>
-                r.name.toLowerCase().contains(_searchQuery) ||
-                (r.technique?.toLowerCase().contains(_searchQuery) ?? false) ||
-                r.equipment.any((e) => e.toLowerCase().contains(_searchQuery)) ||
-                r.ingredients.any((i) => i.name.toLowerCase().contains(_searchQuery))).toList();
-          }
+          // Get available filter options (technique categories)
+          final availableTechniques = _getAvailableTechniques(recipes);
 
           return Column(
             children: [
-              // Search bar
+              // Search bar with autocomplete
               Padding(
-                padding: const EdgeInsets.all(16),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search recipes, techniques, equipment...',
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: _searchQuery.isNotEmpty
-                        ? IconButton(
-                            icon: const Icon(Icons.clear),
-                            onPressed: () => setState(() => _searchQuery = ''),
-                          )
-                        : null,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    filled: true,
-                    fillColor: theme.colorScheme.surfaceContainerHighest,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding: const EdgeInsets.all(16.0),
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return const Iterable<String>.empty();
+                    }
+                    final query = textEditingValue.text.toLowerCase();
+                    // Get matching recipe names
+                    final matches = recipes
+                        .where((r) => r.name.toLowerCase().contains(query))
+                        .map((r) => r.name)
+                        .take(8)
+                        .toList();
+                    return matches;
+                  },
+                  onSelected: (selection) {
+                    setState(() => _searchQuery = selection.toLowerCase());
+                  },
+                  fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
+                    return TextField(
+                      controller: textController,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: 'Search recipes...',
+                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
+                        suffixIcon: textController.text.isNotEmpty
+                            ? IconButton(
+                                icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                                onPressed: () {
+                                  textController.clear();
+                                  setState(() => _searchQuery = '');
+                                },
+                              )
+                            : null,
+                        filled: true,
+                        fillColor: theme.colorScheme.surfaceContainerHighest,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      onChanged: (value) {
+                        setState(() => _searchQuery = value.toLowerCase());
+                      },
+                    );
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return Align(
+                      alignment: Alignment.topLeft,
+                      child: Material(
+                        elevation: 4,
+                        borderRadius: BorderRadius.circular(8),
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: 200,
+                            maxWidth: MediaQuery.of(context).size.width - 32,
+                          ),
+                          child: ListView.builder(
+                            padding: EdgeInsets.zero,
+                            shrinkWrap: true,
+                            itemCount: options.length,
+                            itemBuilder: (context, index) {
+                              final option = options.elementAt(index);
+                              return ListTile(
+                                dense: true,
+                                title: Text(option),
+                                onTap: () => onSelected(option),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+
+              // Filter chips (technique categories)
+              if (availableTechniques.isNotEmpty)
+                Container(
+                  height: 48,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      _buildFilterChip('All', recipes.length, isAllChip: true),
+                      ...availableTechniques.map((technique) {
+                        final count = recipes.where((r) => r.technique == technique).length;
+                        return _buildFilterChip(technique, count, rawValue: technique);
+                      }),
+                    ],
                   ),
-                  onChanged: (value) => setState(() => _searchQuery = value.toLowerCase()),
                 ),
-              ),
-
-              // Filter chips
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Row(
-                  children: [
-                    // Type filter chips
-                    FilterChip(
-                      label: const Text('Concept'),
-                      selected: _selectedType == ModernistType.concept,
-                      onSelected: (selected) => setState(() {
-                        _selectedType = selected ? ModernistType.concept : null;
-                      }),
-                      avatar: _selectedType == ModernistType.concept
-                          ? null
-                          : const Icon(Icons.lightbulb_outline, size: 18),
-                    ),
-                    const SizedBox(width: 8),
-                    FilterChip(
-                      label: const Text('Technique'),
-                      selected: _selectedType == ModernistType.technique,
-                      onSelected: (selected) => setState(() {
-                        _selectedType = selected ? ModernistType.technique : null;
-                      }),
-                      avatar: _selectedType == ModernistType.technique
-                          ? null
-                          : const Icon(Icons.science_outlined, size: 18),
-                    ),
-                    const SizedBox(width: 16),
-                    // Divider
-                    Container(
-                      width: 1,
-                      height: 24,
-                      color: theme.colorScheme.outline.withOpacity(0.3),
-                    ),
-                    const SizedBox(width: 16),
-                    // Technique category chips
-                    ...availableTechniques.map((technique) => Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: FilterChip(
-                        label: Text(technique),
-                        selected: _selectedTechnique == technique,
-                        onSelected: (selected) => setState(() {
-                          _selectedTechnique = selected ? technique : null;
-                        }),
-                      ),
-                    )),
-                  ],
-                ),
-              ),
-
-              const SizedBox(height: 8),
-
-              // Recipe count
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Row(
-                  children: [
-                    Text(
-                      '${filtered.length} recipe${filtered.length == 1 ? '' : 's'}',
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant,
-                      ),
-                    ),
-                    const Spacer(),
-                    if (_selectedType != null || _selectedTechnique != null)
-                      TextButton(
-                        onPressed: () => setState(() {
-                          _selectedType = null;
-                          _selectedTechnique = null;
-                        }),
-                        child: const Text('Clear filters'),
-                      ),
-                  ],
-                ),
-              ),
 
               // Recipe list
               Expanded(
-                child: filtered.isEmpty
-                    ? Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.search_off,
-                              size: 64,
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                            const SizedBox(height: 16),
-                            Text(
-                              'No matching recipes',
-                              style: theme.textTheme.titleMedium,
-                            ),
-                          ],
-                        ),
-                      )
-                    : ListView.builder(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        itemCount: filtered.length,
-                        itemBuilder: (context, index) {
-                          final recipe = filtered[index];
-                          return Padding(
-                            padding: const EdgeInsets.only(bottom: 8),
-                            child: ModernistCard(
-                              recipe: recipe,
-                              isCompact: isCompact,
-                              onTap: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (_) => ModernistDetailScreen(recipeId: recipe.id),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
+                child: _buildRecipeList(recipes, isCompactView),
               ),
             ],
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (_) => const ModernistEditScreen()),
-        ),
-        backgroundColor: MemoixColors.modernist,
-        child: const Icon(Icons.add),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () => _showAddOptions(context),
+        icon: const Icon(Icons.add),
+        label: const Text('Add Recipe'),
       ),
     );
   }
 
-  Widget _buildEmptyState(ThemeData theme) {
+  Widget _buildFilterChip(String label, int count, {String? rawValue, bool isAllChip = false}) {
+    final value = rawValue ?? label;
+    final theme = Theme.of(context);
+
+    // "All" is selected when no filters are selected
+    final isSelected = isAllChip
+        ? _selectedFilters.isEmpty
+        : _selectedFilters.contains(value);
+
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: FilterChip(
+        label: Text(label),
+        selected: isSelected,
+        onSelected: (selected) {
+          setState(() {
+            if (isAllChip) {
+              // Clicking "All" clears all selections
+              _selectedFilters.clear();
+            } else {
+              // Toggle this filter
+              if (_selectedFilters.contains(value)) {
+                _selectedFilters.remove(value);
+              } else {
+                _selectedFilters.add(value);
+              }
+            }
+          });
+        },
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        showCheckmark: false,
+        side: BorderSide(
+          color: isSelected
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withOpacity(0.2),
+          width: isSelected ? 1.5 : 1.0,
+        ),
+        labelStyle: TextStyle(
+          fontSize: 13,
+          color: isSelected
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.onSurface,
+        ),
+      ),
+    );
+  }
+
+  List<String> _getAvailableTechniques(List<ModernistRecipe> recipes) {
+    final techniques = recipes
+        .map((r) => r.technique)
+        .where((t) => t != null && t.isNotEmpty)
+        .cast<String>()
+        .toSet()
+        .toList();
+    techniques.sort();
+    return techniques;
+  }
+
+  Widget _buildRecipeList(List<ModernistRecipe> allRecipes, bool isCompact) {
+    // Apply filters
+    var filteredRecipes = _filterRecipes(allRecipes);
+
+    if (filteredRecipes.isEmpty) {
+      return _buildEmptyState();
+    }
+
+    return ListView.builder(
+      padding: const EdgeInsets.only(bottom: 80),
+      itemCount: filteredRecipes.length,
+      itemBuilder: (context, index) {
+        return ModernistCard(
+          recipe: filteredRecipes[index],
+          onTap: () => AppRoutes.toModernistDetail(context, filteredRecipes[index].id),
+          isCompact: isCompact,
+        );
+      },
+    );
+  }
+
+  Widget _buildEmptyState() {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
             Icons.science_outlined,
-            size: 80,
-            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.5),
+            size: 64,
+            color: Colors.grey.shade400,
           ),
           const SizedBox(height: 16),
           Text(
-            'No modernist recipes yet',
-            style: theme.textTheme.titleLarge,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Add your first molecular gastronomy recipe',
-            style: theme.textTheme.bodyMedium?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
+            'No recipes found',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.grey.shade600,
             ),
-          ),
-          const SizedBox(height: 24),
-          FilledButton.icon(
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const ModernistEditScreen()),
-            ),
-            icon: const Icon(Icons.add),
-            label: const Text('Add Recipe'),
           ),
         ],
+      ),
+    );
+  }
+
+  List<ModernistRecipe> _filterRecipes(List<ModernistRecipe> recipes) {
+    var filtered = recipes;
+
+    // Filter by search query
+    if (_searchQuery.isNotEmpty) {
+      filtered = filtered.where((r) {
+        return r.name.toLowerCase().contains(_searchQuery) ||
+            (r.technique?.toLowerCase().contains(_searchQuery) ?? false) ||
+            r.equipment.any((e) => e.toLowerCase().contains(_searchQuery)) ||
+            r.ingredients.any((i) => i.name.toLowerCase().contains(_searchQuery));
+      }).toList();
+    }
+
+    // Filter by technique category
+    if (_selectedFilters.isNotEmpty) {
+      filtered = filtered.where((r) {
+        if (r.technique == null) return false;
+        return _selectedFilters.contains(r.technique);
+      }).toList();
+    }
+
+    return filtered;
+  }
+
+  void _showAddOptions(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.edit),
+              title: const Text('Create New Recipe'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toModernistEdit(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Scan from Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toOCRScanner(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.link),
+              title: const Text('Import from URL'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toURLImport(context);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
       ),
     );
   }
