@@ -109,10 +109,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (_directionControllers.isEmpty) {
       _directionControllers.add(TextEditingController());
     }
-    // Default wood for new recipes
-    if (_woodController.text.isEmpty) {
-      _woodController.text = 'Hickory';
-    }
 
     setState(() => _isLoading = false);
   }
@@ -227,6 +223,34 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                         setState(() => _selectedCategory = detectedCategory);
                       }
                     },
+                    optionsViewBuilder: (context, onSelected, options) {
+                      return Align(
+                        alignment: Alignment.topLeft,
+                        child: Material(
+                          elevation: 4,
+                          borderRadius: BorderRadius.circular(12),
+                          child: ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxHeight: 200,
+                              maxWidth: MediaQuery.of(context).size.width - 32,
+                            ),
+                            child: ListView.builder(
+                              padding: EdgeInsets.zero,
+                              shrinkWrap: true,
+                              itemCount: options.length,
+                              itemBuilder: (context, index) {
+                                final option = options.elementAt(index);
+                                return ListTile(
+                                  dense: true,
+                                  title: Text(option),
+                                  onTap: () => onSelected(option),
+                                );
+                              },
+                            ),
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ),
                 const SizedBox(width: 16),
@@ -311,6 +335,34 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               },
               onSelected: (selection) {
                 _woodController.text = selection;
+              },
+              optionsViewBuilder: (context, onSelected, options) {
+                return Align(
+                  alignment: Alignment.topLeft,
+                  child: Material(
+                    elevation: 4,
+                    borderRadius: BorderRadius.circular(12),
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxHeight: 200,
+                        maxWidth: MediaQuery.of(context).size.width - 32,
+                      ),
+                      child: ListView.builder(
+                        padding: EdgeInsets.zero,
+                        shrinkWrap: true,
+                        itemCount: options.length,
+                        itemBuilder: (context, index) {
+                          final option = options.elementAt(index);
+                          return ListTile(
+                            dense: true,
+                            title: Text(option),
+                            onTap: () => onSelected(option),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                );
               },
             ),
 
