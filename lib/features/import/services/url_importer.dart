@@ -80,7 +80,11 @@ class UrlRecipeImporter {
   static final _measurementNormalisation = {
     RegExp(r'\btbsp\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btbs\b', caseSensitive: false): 'Tbsp',
+    RegExp(r'\btbl\b', caseSensitive: false): 'Tbsp',
+    RegExp(r'\btb\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btablespoon[s]?\b', caseSensitive: false): 'Tbsp',
+    // Handle truncated or colloquial variants like "tables"/"table"
+    RegExp(r'\btables?\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btsp\b', caseSensitive: false): 'tsp',
     RegExp(r'\bteaspoon[s]?\b', caseSensitive: false): 'tsp',
     RegExp(r'\bcup[s]?\b', caseSensitive: false): 'cup',
@@ -705,8 +709,56 @@ class UrlRecipeImporter {
         return '$minutes min';
       }
     }
-    
-    return str;
+    // Fallback: parse non-ISO strings like "380 minutes", "6 hours 20 minutes"
+    final lowered = str.toLowerCase().trim();
+    // Pure number => treat as minutes
+    final pureNumber = int.tryParse(lowered);
+    if (pureNumber != null) {
+      return _formatMinutes(pureNumber);
+    }
+
+    // Extract hours and minutes from text
+    final hoursMatch = RegExp(r'(\d+)\s*(hours?|hrs?|h)').firstMatch(lowered);
+    final minsMatch = RegExp(r'(\d+)\s*(minutes?|mins?|min|m)').firstMatch(lowered);
+    int hours = 0;
+    int minutes = 0;
+    if (hoursMatch != null) {
+      hours = int.tryParse(hoursMatch.group(1) ?? '') ?? 0;
+    }
+    if (minsMatch != null) {
+      minutes = int.tryParse(minsMatch.group(1) ?? '') ?? 0;
+    }
+    if (hours > 0 || minutes > 0) {
+      final totalMinutes = hours * 60 + minutes;
+      return _formatMinutes(totalMinutes);
+    }
+
+    // Days support: "1 day 2 hours"
+    final daysMatch = RegExp(r'(\d+)\s*days?').firstMatch(lowered);
+    if (daysMatch != null) {
+      final days = int.tryParse(daysMatch.group(1) ?? '') ?? 0;
+      // try also to capture any hours/mins if present
+      final hrs = hoursMatch != null ? (int.tryParse(hoursMatch.group(1)!) ?? 0) : 0;
+      final mins = minsMatch != null ? (int.tryParse(minsMatch.group(1)!) ?? 0) : 0;
+      return _formatMinutes(days * 1440 + hrs * 60 + mins);
+    }
+
+    // If nothing matched, return cleaned original
+    return lowered;
+  }
+
+  /// Format minutes as compact days/hours/minutes (e.g., 380 -> 6 hr 20 min)
+  String _formatMinutes(int totalMinutes) {
+    if (totalMinutes <= 0) return '0 min';
+    final days = totalMinutes ~/ 1440;
+    final remAfterDays = totalMinutes % 1440;
+    final hours = remAfterDays ~/ 60;
+    final mins = remAfterDays % 60;
+    final parts = <String>[];
+    if (days > 0) parts.add('$days day${days > 1 ? 's' : ''}');
+    if (hours > 0) parts.add('$hours hr');
+    if (mins > 0) parts.add('$mins min');
+    return parts.join(' ');
   }
 
   List<Ingredient> _parseIngredients(dynamic value) {

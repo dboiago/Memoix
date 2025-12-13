@@ -325,7 +325,47 @@ class SmokingUrlImporter {
         return '$minutes min';
       }
     }
-    return str;
+    // Fallback: parse non-ISO strings like "380 minutes", "6 hours 20 minutes"
+    final lowered = str.toLowerCase().trim();
+    final pureNumber = int.tryParse(lowered);
+    if (pureNumber != null) {
+      return _formatMinutes(pureNumber);
+    }
+    final hoursMatch = RegExp(r'(\d+)\s*(hours?|hrs?|h)').firstMatch(lowered);
+    final minsMatch = RegExp(r'(\d+)\s*(minutes?|mins?|min|m)').firstMatch(lowered);
+    int hours = 0;
+    int minutes = 0;
+    if (hoursMatch != null) {
+      hours = int.tryParse(hoursMatch.group(1) ?? '') ?? 0;
+    }
+    if (minsMatch != null) {
+      minutes = int.tryParse(minsMatch.group(1) ?? '') ?? 0;
+    }
+    if (hours > 0 || minutes > 0) {
+      final totalMinutes = hours * 60 + minutes;
+      return _formatMinutes(totalMinutes);
+    }
+    final daysMatch = RegExp(r'(\d+)\s*days?').firstMatch(lowered);
+    if (daysMatch != null) {
+      final days = int.tryParse(daysMatch.group(1) ?? '') ?? 0;
+      final hrs = hoursMatch != null ? (int.tryParse(hoursMatch.group(1)!) ?? 0) : 0;
+      final mins = minsMatch != null ? (int.tryParse(minsMatch.group(1)!) ?? 0) : 0;
+      return _formatMinutes(days * 1440 + hrs * 60 + mins);
+    }
+    return lowered;
+  }
+
+  String _formatMinutes(int totalMinutes) {
+    if (totalMinutes <= 0) return '0 min';
+    final days = totalMinutes ~/ 1440;
+    final remAfterDays = totalMinutes % 1440;
+    final hours = remAfterDays ~/ 60;
+    final mins = remAfterDays % 60;
+    final parts = <String>[];
+    if (days > 0) parts.add('$days day${days > 1 ? 's' : ''}');
+    if (hours > 0) parts.add('$hours hr');
+    if (mins > 0) parts.add('$mins min');
+    return parts.join(' ');
   }
 
   /// Detect all temperatures and return best guess with confidence
@@ -638,7 +678,7 @@ class SmokingUrlImporter {
           name: text,
           isSeasoning: true, // Mark all as seasonings in HTML fallback
         ));
-        seasonings.add(SmokingSeasoning.create(name: text));
+        seasonings.add(SmokingSeasoning.create(name: _titleCase(text)));
       }
     }
 
@@ -674,6 +714,14 @@ class SmokingUrlImporter {
       directionsConfidence: directions.isNotEmpty ? 0.5 : 0.0,
       sourceUrl: sourceUrl,
     );
+  }
+
+  String _titleCase(String text) {
+    if (text.isEmpty) return text;
+    return text
+        .split(RegExp(r'\s+'))
+        .map((w) => w.isEmpty ? w : w[0].toUpperCase() + w.substring(1))
+        .join(' ');
   }
 }
 

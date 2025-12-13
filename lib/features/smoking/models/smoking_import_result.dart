@@ -127,8 +127,30 @@ class RawIngredient {
   /// Convert to SmokingSeasoning if marked as seasoning
   SmokingSeasoning toSeasoning() {
     return SmokingSeasoning.create(
-      name: name,
-      amount: amount,
+      name: _titleCase(name),
+      amount: _normalizeUnits(amount),
     );
+  }
+
+  String _titleCase(String text) {
+    if (text.isEmpty) return text;
+    return text
+        .split(RegExp(r'\s+'))
+        .map((w) => w.isEmpty ? w : w[0].toUpperCase() + w.substring(1))
+        .join(' ');
+  }
+
+  String? _normalizeUnits(String? amt) {
+    if (amt == null || amt.isEmpty) return amt;
+    var a = amt;
+    a = a.replaceAll(RegExp(r'\btablespoons?\b', caseSensitive: false), 'Tbsp');
+    a = a.replaceAll(RegExp(r'\btables?\b', caseSensitive: false), 'Tbsp');
+    a = a.replaceAll(RegExp(r'\btsp\b', caseSensitive: false), 'tsp');
+    a = a.replaceAll(RegExp(r'\bteaspoons?\b', caseSensitive: false), 'tsp');
+    a = a.replaceAll(RegExp(r'\bcups?\b', caseSensitive: false), 'cup');
+    a = a.replaceAll(RegExp(r'\blbs?\b', caseSensitive: false), 'lb');
+    a = a.replaceAll(RegExp(r'\bpounds?\b', caseSensitive: false), 'lb');
+    a = a.replaceAll(RegExp(r'\boz(?:\.|es)?\b', caseSensitive: false), 'oz');
+    return a;
   }
 }
