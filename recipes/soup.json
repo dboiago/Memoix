@@ -93,7 +93,7 @@
       },
       {
         "name": "Bay leaf",
-        "amount": "2.0",
+        "amount": "2",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -152,7 +152,7 @@
     "ingredients": [
       {
         "name": "Kimchi",
-        "amount": "0.75 C",
+        "amount": "¾ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
