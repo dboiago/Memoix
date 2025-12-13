@@ -67,9 +67,14 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         _imagePaths = recipe.getAllImages();
 
         for (final ingredient in recipe.ingredients) {
+          // Combine amount and unit for display
+          final amountParts = <String>[
+            if (ingredient.amount != null && ingredient.amount!.isNotEmpty) ingredient.amount!,
+            if (ingredient.unit != null && ingredient.unit!.isNotEmpty) ingredient.unit!,
+          ];
           _addIngredientRow(
             name: ingredient.name,
-            amount: ingredient.displayAmount,
+            amount: amountParts.join(' '),
             notes: ingredient.notes ?? '',
           );
         }
