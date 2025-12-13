@@ -147,15 +147,9 @@ class _IngredientListState extends State<IngredientList> {
       }
     }
     
-    // Build notes text (preparation + alternative)
-    final notes = <String>[];
-    if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
-      notes.add(ingredient.preparation!);
-    }
-    if (ingredient.alternative != null && ingredient.alternative!.isNotEmpty) {
-      notes.add('alt: ${ingredient.alternative}');
-    }
-    final notesText = notes.join(' · ');
+    // Get preparation and alternative separately
+    final hasPreparation = ingredient.preparation != null && ingredient.preparation!.isNotEmpty;
+    final hasAlternative = ingredient.alternative != null && ingredient.alternative!.isNotEmpty;
 
     return InkWell(
       onTap: () {
@@ -239,12 +233,15 @@ class _IngredientListState extends State<IngredientList> {
               ),
             ],
 
-            // Notes/preparation/alternative (right aligned, takes remaining space)
-            if (notesText.isNotEmpty) ...[
+            // Preparation and/or alternative notes (right aligned)
+            if (hasPreparation || hasAlternative) ...[
               const SizedBox(width: 12),
               Expanded(
                 child: Text(
-                  notesText,
+                  [
+                    if (hasPreparation) ingredient.preparation!,
+                    if (hasAlternative) ingredient.alternative!,
+                  ].join(' · '),
                   style: TextStyle(
                     decoration: isChecked ? TextDecoration.lineThrough : null,
                     color: isChecked

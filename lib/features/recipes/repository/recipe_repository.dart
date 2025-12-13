@@ -167,11 +167,12 @@ class RecipeRepository {
         .watch(fireImmediately: true);
   }
 
-  /// Watch recipes by course
+  /// Watch recipes by course (sorted alphabetically by name)
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
     return _db.recipes
         .filter()
         .courseEqualTo(course, caseSensitive: false)
+        .sortByName()
         .watch(fireImmediately: true);
   }
 
