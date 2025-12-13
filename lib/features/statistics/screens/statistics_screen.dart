@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/cooking_stats.dart';
+import '../../recipes/models/category.dart';
 import '../../recipes/models/cuisine.dart';
 
 class StatisticsScreen extends ConsumerWidget {
@@ -217,7 +218,7 @@ class _CourseBarChart extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      entry.key,
+                      Category.displayNameFromSlug(entry.key),
                       style: theme.textTheme.bodyMedium?.copyWith(
                         fontWeight: FontWeight.w400,
                       ),
@@ -286,15 +287,19 @@ class _CountryList extends StatelessWidget {
                 height: 28,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary,
+                  color: theme.colorScheme.secondary.withOpacity(0.15),
                   shape: BoxShape.circle,
+                  border: Border.all(
+                    color: theme.colorScheme.secondary,
+                    width: 1.5,
+                  ),
                 ),
                 child: Text(
                   rank.toString(),
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 13,
-                    color: theme.colorScheme.onSecondary,
+                    color: theme.colorScheme.secondary,
                   ),
                 ),
               ),

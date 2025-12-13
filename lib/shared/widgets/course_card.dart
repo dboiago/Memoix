@@ -71,7 +71,7 @@ class _CourseCardState extends State<CourseCard> {
                         _getIconData(widget.category.iconName),
                         color: (_hovered || _pressed)
                             ? (isDark ? Colors.black87 : Colors.white)
-                            : theme.colorScheme.onSurfaceVariant,
+                            : theme.colorScheme.primary,
                         size: 18,
                       ),
                     ),

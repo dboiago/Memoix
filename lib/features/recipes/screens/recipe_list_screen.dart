@@ -150,12 +150,18 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           });
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary,
+        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
         showCheckmark: false,
+        side: BorderSide(
+          color: isSelected 
+              ? theme.colorScheme.secondary 
+              : theme.colorScheme.outline.withOpacity(0.2),
+          width: isSelected ? 1.5 : 1.0,
+        ),
         labelStyle: TextStyle(
           fontSize: 13,
           color: isSelected 
-              ? theme.colorScheme.onSecondary 
+              ? theme.colorScheme.secondary 
               : theme.colorScheme.onSurface,
         ),
       ),

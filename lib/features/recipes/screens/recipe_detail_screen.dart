@@ -6,6 +6,7 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
+import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
@@ -233,7 +234,7 @@ class RecipeDetailView extends ConsumerWidget {
                           visualDensity: VisualDensity.compact,
                         ),
                       Chip(
-                        label: Text(recipe.course),
+                        label: Text(Category.displayNameFromSlug(recipe.course)),
                         backgroundColor: theme.colorScheme.surfaceContainerHighest,
                         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                         visualDensity: VisualDensity.compact,
