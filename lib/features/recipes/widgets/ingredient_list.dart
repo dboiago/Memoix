@@ -15,6 +15,68 @@ String _capitalizeWords(String text) {
   }).join(' ');
 }
 
+/// Format amount to clean up decimals and display fractions
+String _formatAmount(String amount) {
+  var result = amount.trim();
+  
+  // Remove trailing .0 from whole numbers (e.g., "2.0" -> "2")
+  result = result.replaceAllMapped(
+    RegExp(r'(\d+)\.0(?=\s|$|-|–)'),
+    (match) => match.group(1)!,
+  );
+  // Handle standalone .0
+  if (result.endsWith('.0')) {
+    result = result.substring(0, result.length - 2);
+  }
+  
+  // Convert common decimal fractions to unicode fractions
+  final fractionMap = {
+    '.5': '½',
+    '.25': '¼',
+    '.75': '¾',
+    '.33': '⅓',
+    '.333': '⅓',
+    '.67': '⅔',
+    '.667': '⅔',
+    '.125': '⅛',
+    '.375': '⅜',
+    '.625': '⅝',
+    '.875': '⅞',
+  };
+  
+  // Replace decimal fractions with unicode
+  for (final entry in fractionMap.entries) {
+    // Handle "1.5" -> "1½"
+    result = result.replaceAllMapped(
+      RegExp('(\\d+)${RegExp.escape(entry.key)}(?=\\s|\$|-|–)'),
+      (match) => '${match.group(1)}${entry.value}',
+    );
+    // Handle standalone ".5" -> "½"
+    if (result == entry.key || result.startsWith('${entry.key} ')) {
+      result = result.replaceFirst(entry.key, entry.value);
+    }
+  }
+  
+  // Also convert text fractions like "1/2" to "½"
+  final textFractionMap = {
+    '1/2': '½',
+    '1/4': '¼',
+    '3/4': '¾',
+    '1/3': '⅓',
+    '2/3': '⅔',
+    '1/8': '⅛',
+    '3/8': '⅜',
+    '5/8': '⅝',
+    '7/8': '⅞',
+  };
+  
+  for (final entry in textFractionMap.entries) {
+    result = result.replaceAll(entry.key, entry.value);
+  }
+  
+  return result;
+}
+
 class IngredientList extends StatefulWidget {
   final List<Ingredient> ingredients;
 
@@ -76,14 +138,24 @@ class _IngredientListState extends State<IngredientList> {
     final isChecked = _checkedItems.contains(item.index);
     final ingredient = item.ingredient;
 
-    // Build the amount string
+    // Build the amount string with proper formatting
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = ingredient.amount!;
+      amountText = _formatAmount(ingredient.amount!);
       if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
         amountText += ' ${ingredient.unit}';
       }
     }
+    
+    // Build notes text (preparation + alternative)
+    final notes = <String>[];
+    if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
+      notes.add(ingredient.preparation!);
+    }
+    if (ingredient.alternative != null && ingredient.alternative!.isNotEmpty) {
+      notes.add('alt: ${ingredient.alternative}');
+    }
+    final notesText = notes.join(' · ');
 
     return InkWell(
       onTap: () {
@@ -98,6 +170,7 @@ class _IngredientListState extends State<IngredientList> {
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Checkbox
             SizedBox(
@@ -119,9 +192,9 @@ class _IngredientListState extends State<IngredientList> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient name (flexible, wraps if needed)
-            Expanded(
-              flex: 3,
+            // Ingredient name (flexible, takes what it needs)
+            Flexible(
+              fit: FlexFit.loose,
               child: Text(
                 _capitalizeWords(ingredient.name),
                 style: TextStyle(
@@ -132,21 +205,24 @@ class _IngredientListState extends State<IngredientList> {
                 ),
               ),
             ),
-            const SizedBox(width: 8),
-
-            // Amount
-            Text(
-              amountText,
-              style: TextStyle(
-                decoration: isChecked ? TextDecoration.lineThrough : null,
-                color: isChecked
-                    ? theme.colorScheme.onSurface.withOpacity(0.5)
-                    : theme.colorScheme.onSurfaceVariant,
+            
+            // Amount (with minimal spacing)
+            if (amountText.isNotEmpty) ...[
+              const SizedBox(width: 12),
+              Text(
+                amountText,
+                style: TextStyle(
+                  decoration: isChecked ? TextDecoration.lineThrough : null,
+                  color: isChecked
+                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      : theme.colorScheme.onSurfaceVariant,
+                ),
               ),
-            ),
+            ],
 
             // Optional badge
             if (ingredient.isOptional) ...[
+              const SizedBox(width: 8),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
@@ -161,23 +237,25 @@ class _IngredientListState extends State<IngredientList> {
                   ),
                 ),
               ),
-              const SizedBox(width: 8),
             ],
 
-            // Notes/preparation (takes remaining space, right aligned)
-            Expanded(
-              child: Text(
-                ingredient.preparation ?? '',
-                style: TextStyle(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : theme.colorScheme.primary,
-                  fontStyle: FontStyle.italic,
+            // Notes/preparation/alternative (right aligned, takes remaining space)
+            if (notesText.isNotEmpty) ...[
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  notesText,
+                  style: TextStyle(
+                    decoration: isChecked ? TextDecoration.lineThrough : null,
+                    color: isChecked
+                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        : theme.colorScheme.primary,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.right,
                 ),
-                textAlign: TextAlign.right,
               ),
-            ),
+            ],
           ],
         ),
       ),

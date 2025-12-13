@@ -87,6 +87,30 @@ class KeepScreenOnNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Provider for forcing side-by-side layout on all screen sizes
+final forceSideBySideProvider = StateNotifierProvider<ForceSideBySideNotifier, bool>((ref) {
+  return ForceSideBySideNotifier();
+});
+
+class ForceSideBySideNotifier extends StateNotifier<bool> {
+  static const _key = 'force_side_by_side';
+
+  ForceSideBySideNotifier() : super(true) { // Default to ON (always side-by-side)
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? true; // Default to ON
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
+
 /// Provider for showing images on recipe cards in lists
 final showListImagesProvider = StateNotifierProvider<ShowListImagesNotifier, bool>((ref) {
   return ShowListImagesNotifier();
@@ -182,6 +206,13 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: const Text('Display recipe images on list cards'),
             value: ref.watch(showListImagesProvider),
             onChanged: (_) => ref.read(showListImagesProvider.notifier).toggle(),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.view_column),
+            title: const Text('Side-by-Side Layout'),
+            subtitle: const Text('Keep ingredients and directions next to each other on all screen sizes'),
+            value: ref.watch(forceSideBySideProvider),
+            onChanged: (_) => ref.read(forceSideBySideProvider.notifier).toggle(),
           ),
 
           const Divider(),

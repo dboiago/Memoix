@@ -65,7 +65,10 @@ class _PizzaDetailView extends ConsumerWidget {
                 pizza.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [Shadow(blurRadius: 4, color: Colors.black45)],
+                  shadows: [
+                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    Shadow(blurRadius: 16, color: Colors.black54),
+                  ],
                 ),
               ),
               background: _buildHeaderBackground(theme),

@@ -37,8 +37,10 @@ class SmokingDetailScreen extends ConsumerWidget {
                   title: Text(
                     recipe.name,
                     style: const TextStyle(
+                      fontWeight: FontWeight.bold,
                       shadows: [
-                        Shadow(color: Colors.black54, blurRadius: 8),
+                        Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                        Shadow(blurRadius: 16, color: Colors.black54),
                       ],
                     ),
                   ),
