@@ -281,7 +281,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                                     ),
                                   ),
                                   const SizedBox(height: 12),
-                                  _buildDirectionsList(theme, recipe.directions),
+                                  _buildDirectionsList(theme, recipe),
                                 ],
                               ),
                             ),
