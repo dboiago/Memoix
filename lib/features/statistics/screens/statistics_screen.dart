@@ -286,7 +286,7 @@ class _CountryList extends StatelessWidget {
                 height: 28,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withValues(alpha: 0.2),
+                  color: theme.colorScheme.secondary,
                   shape: BoxShape.circle,
                 ),
                 child: Text(
@@ -294,7 +294,7 @@ class _CountryList extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 13,
-                    color: theme.colorScheme.secondary,
+                    color: theme.colorScheme.onSecondary,
                   ),
                 ),
               ),

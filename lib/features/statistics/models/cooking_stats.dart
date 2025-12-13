@@ -224,9 +224,16 @@ class CookingStatsService {
 // Providers
 // Use central provider from core/providers.dart
 
-final cookingStatsProvider = FutureProvider<CookingStats>((ref) async {
+final cookingStatsProvider = StreamProvider<CookingStats>((ref) async* {
   final service = ref.watch(cookingStatsServiceProvider);
-  return service.getStats();
+  
+  // Emit initial stats
+  yield await service.getStats();
+  
+  // Watch for changes and re-emit stats
+  await for (final _ in service.watchChanges()) {
+    yield await service.getStats();
+  }
 });
 
 final recipeCookCountProvider =

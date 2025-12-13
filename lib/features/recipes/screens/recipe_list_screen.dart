@@ -28,7 +28,7 @@ class RecipeListScreen extends ConsumerStatefulWidget {
 }
 
 class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
-  String _selectedCuisine = 'All';
+  Set<String> _selectedCuisines = {}; // Empty = "All"
   String _searchQuery = '';
 
   @override
@@ -93,7 +93,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _buildCuisineChip('All', recipes.length),
+                      _buildCuisineChip('All', recipes.length, isAllChip: true),
                       ...availableCuisines.map((cuisine) {
                         final count = recipes.where((r) => r.cuisine?.toLowerCase() == cuisine.toLowerCase()).length;
                         return _buildCuisineChip(_displayCuisine(cuisine), count, rawValue: cuisine);
@@ -120,10 +120,14 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     );
   }
 
-  Widget _buildCuisineChip(String cuisineLabel, int count, {String? rawValue}) {
+  Widget _buildCuisineChip(String cuisineLabel, int count, {String? rawValue, bool isAllChip = false}) {
     final value = rawValue ?? cuisineLabel;
-    final isSelected = _selectedCuisine == value;
     final theme = Theme.of(context);
+    
+    // "All" is selected when no cuisines are selected
+    final isSelected = isAllChip 
+        ? _selectedCuisines.isEmpty 
+        : _selectedCuisines.contains(value);
     
     return Padding(
       padding: const EdgeInsets.only(right: 8),
@@ -131,16 +135,28 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
         label: Text(cuisineLabel),
         selected: isSelected,
         onSelected: (selected) {
-          setState(() => _selectedCuisine = value);
+          setState(() {
+            if (isAllChip) {
+              // Clicking "All" clears all selections
+              _selectedCuisines.clear();
+            } else {
+              // Toggle this cuisine
+              if (_selectedCuisines.contains(value)) {
+                _selectedCuisines.remove(value);
+              } else {
+                _selectedCuisines.add(value);
+              }
+            }
+          });
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondaryContainer,
+        selectedColor: theme.colorScheme.secondary,
         showCheckmark: false,
         labelStyle: TextStyle(
           fontSize: 13,
           color: isSelected 
-              ? theme.colorScheme.onSecondaryContainer 
-              : theme.colorScheme.onSurface, // charcoal in light mode, cream in dark
+              ? theme.colorScheme.onSecondary 
+              : theme.colorScheme.onSurface,
         ),
       ),
     );
@@ -250,10 +266,11 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       }).toList();
     }
 
-    // Filter by cuisine
-    if (_selectedCuisine != 'All') {
+    // Filter by cuisine (supports multiple selections)
+    if (_selectedCuisines.isNotEmpty) {
       filtered = filtered.where((r) {
-        return r.cuisine?.toLowerCase() == _selectedCuisine.toLowerCase();
+        if (r.cuisine == null) return false;
+        return _selectedCuisines.any((c) => r.cuisine!.toLowerCase() == c.toLowerCase());
       }).toList();
     }
 
