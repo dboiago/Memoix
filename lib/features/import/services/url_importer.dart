@@ -642,8 +642,8 @@ class UrlRecipeImporter {
           sectionName: parsed.section,
         );
       })
-      // Filter out empty entries (no name and no section)
-      .where((i) => i.name.trim().isNotEmpty || i.sectionName != null)
+      // Filter out empty entries - must have alphanumeric in name OR have a section
+      .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
       .toList();
       
       // Calculate confidence based on what was successfully parsed
@@ -2180,8 +2180,8 @@ class UrlRecipeImporter {
         sectionName: parsed.section,
       );
     })
-    // Filter out empty entries (no name and no section)
-    .where((i) => i.name.trim().isNotEmpty || i.sectionName != null)
+    // Filter out empty entries - must have alphanumeric in name OR have a section
+    .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
     .toList();
 
     return RecipeImportResult(
@@ -4185,8 +4185,10 @@ class UrlRecipeImporter {
     final nameConfidence = title != null && title.isNotEmpty ? baseConfidence : 0.0;
     
     // Filter out empty or whitespace-only ingredient strings before processing
+    // Also filter out strings that are just punctuation or control characters
     final filteredIngredientStrings = rawIngredientStrings
-        .where((s) => s.trim().isNotEmpty)
+        .map((s) => s.trim())
+        .where((s) => s.isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(s))
         .toList();
     
     final ingredientsConfidence = filteredIngredientStrings.isNotEmpty 
@@ -4217,8 +4219,8 @@ class UrlRecipeImporter {
         sectionName: parsed.section,
       );
     })
-    // Filter out empty entries (no name and no section)
-    .where((i) => i.name.trim().isNotEmpty || i.sectionName != null)
+    // Filter out empty entries - must have alphanumeric in name OR have a section
+    .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
     .toList();
 
     // Build detected courses list - include the course we detected
