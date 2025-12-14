@@ -822,12 +822,20 @@ class UrlRecipeImporter {
         return (<TranscriptSegment>[], 'no baseUrl found. Sample: $sample');
       }
       
+      // Debug: check what's in the URL before we modify it
+      final hasLangInUrl = captionUrl.contains('lang=');
+      final langInUrlMatch = RegExp(r'lang=([a-zA-Z\-]+)').firstMatch(captionUrl);
+      final langInUrl = langInUrlMatch?.group(1) ?? 'none';
+      
       // Ensure the URL has the lang parameter
-      if (langCode != null && !captionUrl.contains('lang=')) {
+      if (langCode != null && !hasLangInUrl) {
         captionUrl = captionUrl.contains('?') 
             ? '$captionUrl&lang=$langCode' 
             : '$captionUrl?lang=$langCode';
       }
+      
+      // Debug info about URL
+      final urlDebug = 'url_lang=$langInUrl, matchType=$matchedType';
       
       // Try fetching captions - first without format param (YouTube returns XML by default)
       // Then try with different format parameters if needed
@@ -865,9 +873,9 @@ class UrlRecipeImporter {
       }
       
       if (successBody == null || successBody.isEmpty) {
-        // Show part of the URL to help debug
-        final urlSample = captionUrl.length > 80 ? '${captionUrl.substring(0, 80)}...' : captionUrl;
-        return (<TranscriptSegment>[], 'formats failed ($matchedType, $lastError). URL: $urlSample');
+        // Show URL debug info to help diagnose
+        final urlSample = captionUrl.length > 60 ? '${captionUrl.substring(0, 60)}...' : captionUrl;
+        return (<TranscriptSegment>[], 'formats failed ($urlDebug, $lastError). URL: $urlSample');
       }
       
       // Parse transcript - try XML first, then JSON
