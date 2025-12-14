@@ -4570,17 +4570,24 @@ class UrlRecipeImporter {
             // Text content (paragraphs, divs) might contain ingredients
             else if (siblingTag == 'p' || siblingTag == 'div') {
               final text = _decodeHtml(sibling.text?.trim() ?? '');
-              // Check if this line has measurements (ingredient line)
-              if (text.isNotEmpty && 
-                  (RegExp(r'\d+\s*(?:g|grams?|kg|oz|ounce|lb|pound|cup|cups|tbsp|tablespoon|tsp|teaspoon|ml|l)', caseSensitive: false).hasMatch(text) ||
-                   RegExp(r'^\d+\s+').hasMatch(text) ||
-                   RegExp(r'^[½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(text))) {
+              // Check if this line has measurements (ingredient line) or is a food item
+              if (text.isNotEmpty && _couldBeIngredientLine(text)) {
                 // Split by newlines in case multiple ingredients in one paragraph
                 for (final line in text.split('\n')) {
                   final trimmed = line.trim();
                   if (trimmed.isNotEmpty && trimmed.length > 2) {
                     collectedItems.add(trimmed);
                   }
+                }
+              }
+            }
+            // Also handle ul/ol lists within sections (common pattern)
+            else if (siblingTag == 'ul' || siblingTag == 'ol') {
+              final listItems = sibling.querySelectorAll('li');
+              for (final li in listItems) {
+                final text = _decodeHtml(li.text?.trim() ?? '');
+                if (text.isNotEmpty && text.length > 2) {
+                  collectedItems.add(text);
                 }
               }
             }
@@ -5443,6 +5450,35 @@ class UrlRecipeImporter {
     }
     
     return directions;
+  }
+  
+  /// Check if text could be an ingredient line (more flexible than strict measurement matching)
+  bool _couldBeIngredientLine(String text) {
+    // Has standard measurements
+    if (RegExp(r'\d+\s*(?:g|grams?|kg|oz|ounce|lb|pound|cup|cups|tbsp|tablespoon|tsp|teaspoon|ml|l)', caseSensitive: false).hasMatch(text)) {
+      return true;
+    }
+    // Starts with a number
+    if (RegExp(r'^\d+\s+').hasMatch(text)) {
+      return true;
+    }
+    // Starts with a fraction
+    if (RegExp(r'^[½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(text)) {
+      return true;
+    }
+    // Contains common food words (be permissive for paragraph-style ingredients)
+    final lower = text.toLowerCase();
+    const foodWords = [
+      'salt', 'pepper', 'oil', 'butter', 'sugar', 'flour', 'water', 'milk',
+      'chicken', 'beef', 'pork', 'fish', 'garlic', 'onion', 'tomato', 'cheese',
+      'cream', 'sauce', 'stock', 'broth', 'vinegar', 'lemon', 'honey', 'eggs',
+      'fresh', 'dried', 'chopped', 'minced', 'sliced', 'diced', 'ground',
+    ];
+    if (foodWords.any((word) => lower.contains(word))) {
+      // Only if the line is reasonably short (not a full paragraph of text)
+      return text.length < 150;
+    }
+    return false;
   }
   
   /// Check if a heading looks like navigation or non-recipe content
