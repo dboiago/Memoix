@@ -3075,7 +3075,7 @@ class UrlRecipeImporter {
     final titleLower = (title ?? '').toLowerCase();
     final urlLower = sourceUrl.toLowerCase();
     
-    if (isCocktailSite || _isDrinkRecipe(titleLower, urlLower, rawIngredientStrings)) {
+    if (isCocktailSite || _isDrinkRecipeByContent(titleLower, urlLower, rawIngredientStrings)) {
       course = 'Drinks';
       courseConfidence = isCocktailSite ? 0.8 : 0.75;
     } else if (_isSmokingRecipe(titleLower, urlLower, rawIngredientStrings)) {
@@ -3143,8 +3143,8 @@ class UrlRecipeImporter {
 
     // Build detected courses list
     final detectedCourses = <String>[];
-    if (isCocktail) {
-      detectedCourses.add('drinks');
+    if (isDrink) {
+      detectedCourses.add('Drinks');
     }
     if (course == 'molecular') {
       detectedCourses.add('molecular');
@@ -3660,8 +3660,8 @@ class UrlRecipeImporter {
     return false;
   }
   
-  /// Detect if this is a drink/cocktail recipe (content-based)
-  bool _isDrinkRecipe(String titleLower, String urlLower, List<String> ingredients) {
+  /// Detect if this is a drink/cocktail recipe (content-based, for HTML parsing)
+  bool _isDrinkRecipeByContent(String titleLower, String urlLower, List<String> ingredients) {
     // Check title/URL for drink keywords
     const drinkKeywords = [
       'cocktail', 'martini', 'margarita', 'mojito', 'daiquiri',
