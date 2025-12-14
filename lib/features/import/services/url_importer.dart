@@ -197,6 +197,7 @@ class UrlRecipeImporter {
       // Provide more helpful error message with diagnostic info
       final jsonLdCount = jsonLdScripts.length;
       final hasMicrodata = document.querySelector('[itemtype*="Recipe"]') != null;
+      final hasIngredientById = document.querySelector('#ingredients, [id="ingredients"]') != null;
       final hasRecipeClass = document.querySelector('.recipe, .recipe-card, .recipe-content') != null;
       final hasAnyLists = document.querySelectorAll('ul li, ol li').length > 0;
       final bodyText = document.body?.text ?? '';
@@ -231,7 +232,7 @@ class UrlRecipeImporter {
         if (rawSample.length > 80) rawSample = '${rawSample.substring(0, 80)}...';
       }
       
-      String diagnostics = 'JSON-LD:$jsonLdCount, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
+      String diagnostics = 'JSON-LD:$jsonLdCount, microdata:${hasMicrodata ? "yes" : "no"}, #ingredients:${hasIngredientById ? "yes" : "no"}, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
       diagnostics += ', bullets:${hasBullets ? "yes" : "no"}, measurements:${hasMeasurements ? "yes" : "no"}';
       diagnostics += ', rawBullets:${rawHasBullets ? "yes" : "no"}, rawMeas:${rawHasMeasurements ? "yes" : "no"}';
       diagnostics += ', body=$bodyLength chars';
@@ -3219,12 +3220,57 @@ class UrlRecipeImporter {
       if (recipeContainer != null) {
         usedStructuredFormat = true;
         
+        // Track if we got ingredients from meta content (often incomplete)
+        var gotFromMetaContent = false;
+        
         // Extract ingredients from microdata
         final microdataIngredients = recipeContainer.querySelectorAll('[itemprop="recipeIngredient"], [itemprop="ingredients"]');
         for (final e in microdataIngredients) {
-          final text = _decodeHtml((e.text ?? '').trim());
-          if (text.isNotEmpty) {
-            rawIngredientStrings.add(text);
+          // Check for content attribute first (common for meta tags)
+          final contentAttr = e.attributes['content'];
+          if (contentAttr != null && contentAttr.isNotEmpty) {
+            gotFromMetaContent = true;
+            // Content might be comma-separated list of ingredients
+            if (contentAttr.contains(',')) {
+              final parts = contentAttr.split(',');
+              for (final part in parts) {
+                final cleaned = _decodeHtml(part.trim());
+                if (cleaned.isNotEmpty) {
+                  rawIngredientStrings.add(cleaned);
+                }
+              }
+            } else {
+              rawIngredientStrings.add(_decodeHtml(contentAttr));
+            }
+          } else {
+            final text = _decodeHtml((e.text ?? '').trim());
+            if (text.isNotEmpty) {
+              rawIngredientStrings.add(text);
+            }
+          }
+        }
+        
+        // If we got ingredients from meta content, they're likely just names without quantities.
+        // Try to find better detailed ingredients with quantities from HTML structure.
+        if (gotFromMetaContent && rawIngredientStrings.isNotEmpty) {
+          final hasQuantities = rawIngredientStrings.any((item) =>
+            RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+          );
+          
+          if (!hasQuantities) {
+            // Try to find detailed ingredients from HTML structure
+            final sectionResult = _parseHtmlBySections(document);
+            final detailedIngredients = sectionResult['ingredients'] as List<String>? ?? [];
+            
+            // Check if detailed ingredients have quantities
+            final detailedHasQuantities = detailedIngredients.any((item) =>
+              RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+            );
+            
+            if (detailedHasQuantities && detailedIngredients.length >= rawIngredientStrings.length) {
+              // Use detailed ingredients instead
+              rawIngredientStrings = detailedIngredients;
+            }
           }
         }
         
@@ -4023,6 +4069,25 @@ class UrlRecipeImporter {
       'timing': null,
     };
     
+    // First try: look for headings with id="ingredients" (common WordPress pattern)
+    // This is more reliable as it uses explicit IDs
+    final ingredientHeadingById = document.querySelector('h2#ingredients, h3#ingredients, [id="ingredients"]');
+    if (ingredientHeadingById != null) {
+      final ingredients = _extractListItemsFromSection(ingredientHeadingById, document);
+      if (ingredients.isNotEmpty) {
+        result['ingredients'] = ingredients;
+      }
+    }
+    
+    // Also check for equipment by ID
+    final equipmentHeadingById = document.querySelector('h2#equipment, h3#equipment, [id="equipment"]');
+    if (equipmentHeadingById != null) {
+      final equipment = _extractListItemsFromSection(equipmentHeadingById, document);
+      if (equipment.isNotEmpty) {
+        result['equipment'] = equipment;
+      }
+    }
+    
     // Find all h2 headings and check their text
     final headings = document.querySelectorAll('h2');
     
@@ -4251,6 +4316,95 @@ class UrlRecipeImporter {
     }
     
     return result;
+  }
+  
+  /// Extract list items from a section identified by a heading with a specific ID
+  /// This handles WordPress-style markup where paragraphs/comments separate heading from list
+  List<String> _extractListItemsFromSection(dynamic heading, dynamic document) {
+    final items = <String>[];
+    
+    // Strategy 1: Look for ul/ol within the parent's wrapper after the heading
+    var parent = heading.parent;
+    var searchLimit = 0;
+    
+    while (parent != null && searchLimit < 5) {
+      final parentTag = parent.localName?.toLowerCase();
+      
+      // Find all ul/ol elements within the parent container
+      final listsInParent = parent.querySelectorAll('ul, ol');
+      
+      for (final list in listsInParent) {
+        // Check if this list comes after the heading in the DOM
+        // by checking if heading is an ancestor or earlier sibling
+        final listItems = list.querySelectorAll('li');
+        final itemTexts = <String>[];
+        
+        for (final li in listItems) {
+          final text = _decodeHtml(li.text?.trim() ?? '');
+          if (text.isNotEmpty) {
+            itemTexts.add(text);
+          }
+        }
+        
+        // Check if this looks like an ingredient list (has measurements)
+        final hasQuantities = itemTexts.any((item) =>
+          RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+        );
+        
+        if (hasQuantities && itemTexts.length >= 2) {
+          return _processIngredientListItems(itemTexts);
+        }
+      }
+      
+      parent = parent.parent;
+      searchLimit++;
+    }
+    
+    // Strategy 2: Skip over paragraph elements that may contain WP comments
+    var nextElement = heading.nextElementSibling;
+    var skippedCount = 0;
+    
+    while (nextElement != null && skippedCount < 10) {
+      final tagName = nextElement.localName?.toLowerCase();
+      
+      if (tagName == 'ul' || tagName == 'ol') {
+        // Found the list
+        final listItems = nextElement.querySelectorAll('li');
+        for (final li in listItems) {
+          final text = _decodeHtml(li.text?.trim() ?? '');
+          if (text.isNotEmpty) {
+            items.add(text);
+          }
+        }
+        break;
+      } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+        // Hit another heading - stop
+        break;
+      } else if (tagName == 'p') {
+        // Skip paragraph tags (might be WP comment wrappers)
+        skippedCount++;
+      } else if (tagName == 'div' || tagName == 'section') {
+        // Check inside containers for lists
+        final nestedLists = nextElement.querySelectorAll('ul, ol');
+        if (nestedLists.isNotEmpty) {
+          for (final list in nestedLists) {
+            final listItems = list.querySelectorAll('li');
+            for (final li in listItems) {
+              final text = _decodeHtml(li.text?.trim() ?? '');
+              if (text.isNotEmpty) {
+                items.add(text);
+              }
+            }
+            if (items.isNotEmpty) break;
+          }
+          if (items.isNotEmpty) break;
+        }
+      }
+      
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    return _processIngredientListItems(items);
   }
   
   /// Extract list items that follow a heading element
