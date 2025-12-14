@@ -1836,14 +1836,17 @@ class UrlRecipeImporter {
                   'Untitled Recipe';
 
     // First try standard selectors
-    var ingredientElements = document.querySelectorAll(
+    final ingredientElements = document.querySelectorAll(
       '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
     );
     
-    var rawIngredientStrings = ingredientElements
-        .map((e) => _decodeHtml(e.text.trim()))
-        .where((s) => s.isNotEmpty)
-        .toList();
+    var rawIngredientStrings = <String>[];
+    for (final e in ingredientElements) {
+      final text = _decodeHtml((e.text ?? '').trim());
+      if (text.isNotEmpty) {
+        rawIngredientStrings.add(text);
+      }
+    }
     
     // If standard selectors failed, try section-based parsing
     List<String> equipmentItems = [];
@@ -1866,14 +1869,17 @@ class UrlRecipeImporter {
     ingredients = _sortIngredientsByQuantity(ingredients);
 
     // First try standard direction selectors
-    var instructionElements = document.querySelectorAll(
+    final instructionElements = document.querySelectorAll(
       '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
     );
     
-    var directions = instructionElements
-        .map((e) => _decodeHtml(e.text.trim()))
-        .where((s) => s.isNotEmpty)
-        .toList();
+    var directions = <String>[];
+    for (final e in instructionElements) {
+      final text = _decodeHtml((e.text ?? '').trim());
+      if (text.isNotEmpty) {
+        directions.add(text);
+      }
+    }
     
     // If standard selectors failed, try step-based parsing
     if (directions.isEmpty) {
@@ -1935,14 +1941,17 @@ class UrlRecipeImporter {
                   document.querySelector('[itemprop="name"]')?.text?.trim();
 
     // First try standard recipe selectors
-    var ingredientElements = document.querySelectorAll(
+    final ingredientElements = document.querySelectorAll(
       '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
     );
     
-    var rawIngredientStrings = ingredientElements
-        .map((e) => _decodeHtml(e.text.trim()))
-        .where((s) => s.isNotEmpty)
-        .toList();
+    var rawIngredientStrings = <String>[];
+    for (final e in ingredientElements) {
+      final text = _decodeHtml((e.text ?? '').trim());
+      if (text.isNotEmpty) {
+        rawIngredientStrings.add(text);
+      }
+    }
     
     // If standard selectors failed, try section-based parsing
     // This handles sites like Modernist Pantry that use headings + lists
@@ -1966,14 +1975,17 @@ class UrlRecipeImporter {
     ingredients = _sortIngredientsByQuantity(ingredients);
 
     // First try standard direction selectors
-    var instructionElements = document.querySelectorAll(
+    final instructionElements = document.querySelectorAll(
       '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
     );
     
-    var rawDirections = instructionElements
-        .map((e) => _decodeHtml(e.text.trim()))
-        .where((s) => s.isNotEmpty)
-        .toList();
+    var rawDirections = <String>[];
+    for (final e in instructionElements) {
+      final text = _decodeHtml((e.text ?? '').trim());
+      if (text.isNotEmpty) {
+        rawDirections.add(text);
+      }
+    }
     
     // If standard selectors failed, try step-based parsing
     // This handles sites that use h3 headings for step names
@@ -2128,7 +2140,13 @@ class UrlRecipeImporter {
       final allLists = document.querySelectorAll('ul');
       for (final list in allLists) {
         final items = list.querySelectorAll('li');
-        final itemTexts = items.map((e) => _decodeHtml(e.text?.trim() ?? '')).where((s) => s.isNotEmpty).toList();
+        final itemTexts = <String>[];
+        for (final e in items) {
+          final text = _decodeHtml((e.text ?? '').trim());
+          if (text.isNotEmpty) {
+            itemTexts.add(text);
+          }
+        }
         
         // Check if this looks like an ingredient list (has quantities)
         final hasQuantities = itemTexts.any((item) => 
