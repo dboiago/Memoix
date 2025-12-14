@@ -2438,7 +2438,9 @@ class UrlRecipeImporter {
     if (allText.contains('main') || allText.contains('dinner') || allText.contains('entrée')) courses.add('Mains');
     if (allText.contains('sauce') || allText.contains('dressing')) courses.add('Sauces');
     if (allText.contains('drink') || allText.contains('cocktail') || allText.contains('beverage')) courses.add('Drinks');
-    if (allText.contains('vegetarian') || allText.contains('vegan')) courses.add("Veg'n");
+    
+    // Only add Veg'n if category explicitly mentions it (not just keywords like "Vegan" which are often dietary info)
+    if (category.contains('vegetarian') || category.contains('vegan')) courses.add("Veg'n");
     
     // Always include Mains as default option
     if (courses.isEmpty) courses.add('Mains');
@@ -2481,10 +2483,32 @@ class UrlRecipeImporter {
 
   String? _parseYield(dynamic value) {
     if (value == null) return null;
-    if (value is String) return _decodeHtml(value);
-    if (value is num) return value.toString();
-    if (value is List && value.isNotEmpty) return _decodeHtml(value.first.toString());
-    return null;
+    
+    String? raw;
+    if (value is String) {
+      raw = _decodeHtml(value);
+    } else if (value is num) {
+      return value.toString();
+    } else if (value is List && value.isNotEmpty) {
+      raw = _decodeHtml(value.first.toString());
+    }
+    
+    if (raw == null) return null;
+    
+    // Extract just the number from strings like "16 per loaf", "4 servings", "makes 12"
+    // First try to find a number at the start
+    final leadingNumber = RegExp(r'^(\d+(?:\.\d+)?)').firstMatch(raw.trim());
+    if (leadingNumber != null) {
+      return leadingNumber.group(1);
+    }
+    
+    // Try "makes X" pattern
+    final makesMatch = RegExp(r'makes\s+(\d+)', caseSensitive: false).firstMatch(raw);
+    if (makesMatch != null) {
+      return makesMatch.group(1);
+    }
+    
+    return raw;
   }
 
   /// Parse cuisine - convert region names to country names
@@ -2976,7 +3000,7 @@ class UrlRecipeImporter {
     // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
     final compoundFractionMatch = RegExp(
       r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
-      r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+      r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
@@ -2998,7 +3022,7 @@ class UrlRecipeImporter {
     if (amount == null) {
       final textFractionMatch = RegExp(
         r'^(\d+/\d+)'
-        r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -3039,7 +3063,7 @@ class UrlRecipeImporter {
       // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
