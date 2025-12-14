@@ -467,137 +467,190 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         ),
         const SizedBox(height: 8),
         
-        // Column headers
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-          decoration: BoxDecoration(
-            color: theme.colorScheme.surfaceContainerHighest,
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Row(
+        // Check if any ingredient has baker's percentage
+        Builder(builder: (context) {
+          final hasBakerPercent = result.rawIngredients.any((i) => i.bakerPercent != null);
+          
+          return Column(
             children: [
-              // Space for checkbox
-              const SizedBox(width: 32),
-              Expanded(
-                flex: 3,
-                child: Text('Ingredient', 
-                  style: theme.textTheme.labelMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+              // Column headers - matching edit screen style
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.surfaceContainerHighest,
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+                ),
+                child: Row(
+                  children: [
+                    // Space for checkbox
+                    const SizedBox(width: 32),
+                    Expanded(
+                      flex: hasBakerPercent ? 2 : 3,
+                      child: Text('Ingredient', 
+                        style: theme.textTheme.labelMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    if (hasBakerPercent) ...[
+                      const SizedBox(width: 8),
+                      SizedBox(
+                        width: 50,
+                        child: Text('B%', 
+                          style: theme.textTheme.labelMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                    const SizedBox(width: 8),
+                    SizedBox(
+                      width: 80,
+                      child: Text('Amount', 
+                        style: theme.textTheme.labelMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      flex: 2,
+                      child: Text('Notes/Prep', 
+                        style: theme.textTheme.labelMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(width: 8),
-              SizedBox(
-                width: 80,
-                child: Text('Amount', 
-                  style: theme.textTheme.labelMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+              
+              // Ingredient rows in bordered container
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                  borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
                 ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                flex: 2,
-                child: Text('Notes/Prep', 
-                  style: theme.textTheme.labelMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: Column(
+                  children: result.rawIngredients.asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final ingredient = entry.value;
+                    final isSelected = _selectedIngredientIndices.contains(index);
+                    final isLast = index == result.rawIngredients.length - 1;
+
+                    return Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      decoration: BoxDecoration(
+                        border: isLast 
+                            ? null 
+                            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          // Checkbox
+                          SizedBox(
+                            width: 32,
+                            child: Checkbox(
+                              value: isSelected,
+                              onChanged: (checked) {
+                                setState(() {
+                                  if (checked == true) {
+                                    _selectedIngredientIndices.add(index);
+                                  } else {
+                                    _selectedIngredientIndices.remove(index);
+                                  }
+                                });
+                              },
+                              visualDensity: VisualDensity.compact,
+                            ),
+                          ),
+                          // Ingredient name
+                          Expanded(
+                            flex: hasBakerPercent ? 2 : 3,
+                            child: InputDecorator(
+                              decoration: const InputDecoration(
+                                isDense: true,
+                                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                                border: OutlineInputBorder(),
+                              ),
+                              child: Text(
+                                ingredient.name,
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  decoration: isSelected ? null : TextDecoration.lineThrough,
+                                  color: isSelected ? null : theme.colorScheme.outline,
+                                ),
+                              ),
+                            ),
+                          ),
+                          // Baker's percentage (conditional)
+                          if (hasBakerPercent) ...[
+                            const SizedBox(width: 8),
+                            SizedBox(
+                              width: 50,
+                              child: InputDecorator(
+                                decoration: const InputDecoration(
+                                  isDense: true,
+                                  contentPadding: EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+                                  border: OutlineInputBorder(),
+                                ),
+                                child: Text(
+                                  ingredient.bakerPercent ?? '',
+                                  style: theme.textTheme.bodyMedium?.copyWith(
+                                    decoration: isSelected ? null : TextDecoration.lineThrough,
+                                    color: isSelected ? null : theme.colorScheme.outline,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                          const SizedBox(width: 8),
+                          // Amount
+                          SizedBox(
+                            width: 80,
+                            child: InputDecorator(
+                              decoration: const InputDecoration(
+                                isDense: true,
+                                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                                border: OutlineInputBorder(),
+                              ),
+                              child: Text(
+                                ingredient.amount ?? '',
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  decoration: isSelected ? null : TextDecoration.lineThrough,
+                                  color: isSelected ? null : theme.colorScheme.outline,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          // Notes/Prep
+                          Expanded(
+                            flex: 2,
+                            child: InputDecorator(
+                              decoration: const InputDecoration(
+                                isDense: true,
+                                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                                border: OutlineInputBorder(),
+                              ),
+                              child: Text(
+                                ingredient.preparation ?? '',
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  decoration: isSelected ? null : TextDecoration.lineThrough,
+                                  color: isSelected ? null : theme.colorScheme.outline,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  }).toList(),
                 ),
               ),
             ],
-          ),
-        ),
-        const SizedBox(height: 4),
-        // Ingredient rows - matching edit screen TextField style
-        Column(
-          children: result.rawIngredients.asMap().entries.map((entry) {
-            final index = entry.key;
-            final ingredient = entry.value;
-            final isSelected = _selectedIngredientIndices.contains(index);
-
-            return Padding(
-              padding: const EdgeInsets.symmetric(vertical: 4),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  // Checkbox (same space as drag handle in edit)
-                  SizedBox(
-                    width: 32,
-                    child: Checkbox(
-                      value: isSelected,
-                      onChanged: (checked) {
-                        setState(() {
-                          if (checked == true) {
-                            _selectedIngredientIndices.add(index);
-                          } else {
-                            _selectedIngredientIndices.remove(index);
-                          }
-                        });
-                      },
-                      visualDensity: VisualDensity.compact,
-                    ),
-                  ),
-                  // Ingredient name - using InputDecorator to match TextField
-                  Expanded(
-                    flex: 3,
-                    child: InputDecorator(
-                      decoration: InputDecoration(
-                        isDense: true,
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                        border: const OutlineInputBorder(),
-                      ),
-                      child: Text(
-                        ingredient.name,
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          decoration: isSelected ? null : TextDecoration.lineThrough,
-                          color: isSelected ? null : theme.colorScheme.outline,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  // Amount
-                  SizedBox(
-                    width: 80,
-                    child: InputDecorator(
-                      decoration: InputDecoration(
-                        isDense: true,
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                        border: const OutlineInputBorder(),
-                      ),
-                      child: Text(
-                        ingredient.amount ?? '',
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          decoration: isSelected ? null : TextDecoration.lineThrough,
-                          color: isSelected ? null : theme.colorScheme.outline,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  // Notes/Prep
-                  Expanded(
-                    flex: 2,
-                    child: InputDecorator(
-                      decoration: InputDecoration(
-                        isDense: true,
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                        border: const OutlineInputBorder(),
-                      ),
-                      child: Text(
-                        ingredient.preparation ?? '',
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          decoration: isSelected ? null : TextDecoration.lineThrough,
-                          color: isSelected ? null : theme.colorScheme.outline,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          }).toList(),
-        ),
+          );
+        }),
       ],
     );
   }

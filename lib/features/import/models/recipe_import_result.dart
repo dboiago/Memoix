@@ -222,6 +222,9 @@ class RawIngredientData {
   /// Preparation notes (e.g., "diced", "room temperature", or imperial conversion)
   final String? preparation;
 
+  /// Baker's percentage (e.g., "100%", "75%", "3.3%") - for bread recipes
+  final String? bakerPercent;
+
   /// Ingredient name
   final String name;
 
@@ -242,6 +245,7 @@ class RawIngredientData {
     this.amount,
     this.unit,
     this.preparation,
+    this.bakerPercent,
     required this.name,
     this.looksLikeIngredient = true,
     this.isSection = false,

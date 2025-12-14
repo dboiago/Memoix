@@ -255,10 +255,13 @@ class UrlRecipeImporter {
       
       // Try to fetch and parse transcript/captions with timestamps
       List<TranscriptSegment> transcriptSegments = [];
+      String transcriptDebug = '';
       try {
-        transcriptSegments = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
-      } catch (_) {
-        // Transcript fetch failed - continue without it
+        final (segments, debug) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
+        transcriptSegments = segments;
+        transcriptDebug = debug;
+      } catch (e) {
+        transcriptDebug = 'outer exception: $e';
       }
       
       // Parse the description for ingredients
@@ -266,15 +269,20 @@ class UrlRecipeImporter {
       
       // Build directions from chapters + transcript
       List<String> directions = [];
+      String debugInfo = '';
+      
       if (chapters.isNotEmpty && transcriptSegments.isNotEmpty) {
         // Use chapters to slice transcript into steps
         directions = _buildDirectionsFromChapters(chapters, transcriptSegments);
+        debugInfo = '[${chapters.length} chapters + $transcriptDebug]';
       } else if (chapters.isNotEmpty) {
         // Just use chapter titles if no transcript
         directions = chapters.map((c) => c.title).toList();
+        debugInfo = '[${chapters.length} chapters, transcript: $transcriptDebug]';
       } else {
         // Fall back to description parsing
         directions = parsedDescription['directions'] ?? [];
+        debugInfo = '[no chapters, transcript: $transcriptDebug]';
       }
       
       // Build ingredients list
@@ -291,7 +299,7 @@ class UrlRecipeImporter {
       final detectedCourse = _detectCourseFromTitle(recipeName);
       
       // Build notes with channel attribution
-      String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
+      String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}\n$debugInfo';
       if (parsedDescription['notes'] != null) {
         notes += '\n\n${parsedDescription["notes"]}';
       }
@@ -303,11 +311,13 @@ class UrlRecipeImporter {
       // Create raw ingredient data for review
       final rawIngredients = rawIngredientStrings.map((raw) {
         final parsed = _parseIngredientString(raw);
+        final bakerPct = _extractBakerPercent(raw);
         return RawIngredientData(
           original: raw,
           amount: parsed.amount,
           unit: parsed.unit,
           preparation: parsed.preparation,
+          bakerPercent: bakerPct != null ? '$bakerPct%' : null,
           name: parsed.name.isNotEmpty ? parsed.name : raw,
           looksLikeIngredient: parsed.name.isNotEmpty,
           isSection: parsed.section != null,
@@ -759,28 +769,46 @@ class UrlRecipeImporter {
   }
   
   /// Fetch YouTube transcript with timestamps
-  Future<List<TranscriptSegment>> _fetchYouTubeTranscriptWithTimestamps(String videoId, String pageBody) async {
+  /// Returns tuple of (segments, debugInfo)
+  Future<(List<TranscriptSegment>, String)> _fetchYouTubeTranscriptWithTimestamps(String videoId, String pageBody) async {
     try {
       final captionTrackMatch = RegExp(
         r'"captionTracks":\s*\[(.*?)\]',
         dotAll: true,
       ).firstMatch(pageBody);
       
-      if (captionTrackMatch == null) return [];
+      if (captionTrackMatch == null) {
+        return ([], 'no captionTracks in page');
+      }
       
       final captionTracksJson = '[${captionTrackMatch.group(1)}]';
       
       String? captionUrl;
+      String matchedType = '';
+      
+      // Try manual English captions first
       var urlMatch = RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"\.en"').firstMatch(captionTracksJson);
+      if (urlMatch != null) matchedType = 'manual-en';
+      
+      // Try auto-generated English
       urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"a\.en"').firstMatch(captionTracksJson);
+      if (urlMatch != null && matchedType.isEmpty) matchedType = 'auto-en';
+      
+      // Try any English by language code
       urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"en"').firstMatch(captionTracksJson);
+      if (urlMatch != null && matchedType.isEmpty) matchedType = 'lang-en';
+      
+      // Fall back to first available track
       urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"').firstMatch(captionTracksJson);
+      if (urlMatch != null && matchedType.isEmpty) matchedType = 'first-available';
       
       if (urlMatch != null) {
         captionUrl = _decodeUnicodeEscapes(urlMatch.group(1)!);
       }
       
-      if (captionUrl == null) return [];
+      if (captionUrl == null) {
+        return ([], 'captionTracks found but no baseUrl matched');
+      }
       
       final captionResponse = await http.get(
         Uri.parse(captionUrl),
@@ -789,12 +817,19 @@ class UrlRecipeImporter {
         },
       );
       
-      if (captionResponse.statusCode != 200) return [];
+      if (captionResponse.statusCode != 200) {
+        return ([], 'caption fetch failed: ${captionResponse.statusCode}');
+      }
       
       // Parse XML transcript with timestamps
-      return _parseTranscriptXmlWithTimestamps(captionResponse.body);
-    } catch (_) {
-      return [];
+      final segments = _parseTranscriptXmlWithTimestamps(captionResponse.body);
+      if (segments.isEmpty) {
+        return ([], 'XML parsed but no segments found ($matchedType)');
+      }
+      
+      return (segments, '$matchedType: ${segments.length} segments');
+    } catch (e) {
+      return ([], 'exception: ${e.toString().substring(0, 50.clamp(0, e.toString().length))}');
     }
   }
   
@@ -1263,11 +1298,13 @@ class UrlRecipeImporter {
     // Create raw ingredient data
     final rawIngredients = rawIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
+      final bakerPct = _extractBakerPercent(raw);
       return RawIngredientData(
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
         preparation: parsed.preparation,
+        bakerPercent: bakerPct != null ? '$bakerPct%' : null,
         name: parsed.name.isNotEmpty ? parsed.name : raw,
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
@@ -1751,6 +1788,16 @@ class UrlRecipeImporter {
     }
     
     return result;
+  }
+
+  /// Extract baker's percentage from ingredient string if present
+  /// Returns the percentage value (e.g., "100", "75", "3.3") or null
+  String? _extractBakerPercent(String text) {
+    final match = RegExp(
+      r'^[^,]+,\s*([\d.]+)%\s*[–-]',
+      caseSensitive: false,
+    ).firstMatch(text);
+    return match?.group(1);
   }
 
   /// Parse a single ingredient string into structured data
@@ -2434,11 +2481,13 @@ class UrlRecipeImporter {
     // Create raw ingredient data
     final rawIngredients = rawIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
+      final bakerPct = _extractBakerPercent(raw);
       return RawIngredientData(
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
         preparation: parsed.preparation,
+        bakerPercent: bakerPct != null ? '$bakerPct%' : null,
         name: parsed.name.isNotEmpty ? parsed.name : raw,
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
