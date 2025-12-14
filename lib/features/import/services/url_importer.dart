@@ -444,6 +444,12 @@ class UrlRecipeImporter {
       // Skip links, timestamps, and other non-content lines
       if (_isIgnorableLine(line)) continue;
       
+      // Handle yield info separately (add to notes)
+      if (_isYieldInfo(line)) {
+        notes.add(line);
+        continue;
+      }
+      
       // If we haven't hit a section header yet, try to auto-detect
       if (currentSection == null) {
         if (_looksLikeIngredient(line)) {
@@ -457,20 +463,33 @@ class UrlRecipeImporter {
         }
       }
       
-      // Add to appropriate section
+      // Smart section assignment - check what the line actually looks like
+      final looksLikeIng = _looksLikeIngredient(line);
+      final looksLikeDir = _looksLikeDirection(line);
+      
+      // Add to appropriate section with smart switching
       switch (currentSection) {
         case 'ingredients':
-          if (_looksLikeIngredient(line) || line.contains(':')) {
+          if (looksLikeIng) {
             ingredients.add(line);
-          } else if (_looksLikeDirection(line)) {
+          } else if (looksLikeDir && !looksLikeIng) {
             // Switched to directions without a header
             currentSection = 'directions';
             directions.add(_cleanDirectionLine(line));
           }
           break;
         case 'directions':
-          if (_looksLikeDirection(line) || line.length > 20) {
+          // Check if this line is actually an ingredient (switch back)
+          if (looksLikeIng && !_isTimestampedStep(line)) {
+            // This looks like an ingredient, not a direction
+            currentSection = 'ingredients';
+            ingredients.add(line);
+          } else if (looksLikeDir) {
             directions.add(_cleanDirectionLine(line));
+          } else if (line.length > 20 && !looksLikeIng) {
+            // Long line that's not an ingredient - probably intro/description
+            // Don't add random long lines as directions
+            notes.add(line);
           }
           break;
         case 'notes':
@@ -478,6 +497,18 @@ class UrlRecipeImporter {
           break;
         case 'ignore':
           // Skip this section
+          break;
+        case null:
+          // No section yet - this shouldn't happen but handle it
+          if (looksLikeIng) {
+            currentSection = 'ingredients';
+            ingredients.add(line);
+          } else if (looksLikeDir) {
+            currentSection = 'directions';
+            directions.add(_cleanDirectionLine(line));
+          } else {
+            notes.add(line);
+          }
           break;
       }
     }
@@ -599,11 +630,13 @@ class UrlRecipeImporter {
     if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred|fold|knead|proof|rise|ferment|dimpl|topp|cutt|plac)\b', caseSensitive: false).hasMatch(line)) {
       return true;
     }
-    // Longer line (likely instruction)
-    if (line.length > 80) {
-      return true;
-    }
+    // Don't use length alone - too many false positives with intro paragraphs
     return false;
+  }
+  
+  /// Check if line is yield/serving info like "(makes one 9x13 bread)"
+  bool _isYieldInfo(String line) {
+    return RegExp(r'^\(?\s*(?:makes?|yields?|serves?|for)\s+', caseSensitive: false).hasMatch(line);
   }
   
   /// Check if line is a timestamped step like "Mixing dough – 00:55"
