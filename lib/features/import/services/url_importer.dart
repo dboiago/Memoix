@@ -949,6 +949,7 @@ class UrlRecipeImporter {
       // Method 1: Try to find transcript engagement panel params
       // Look for engagement panel with transcript - try multiple patterns
       String? transcriptParams;
+      String foundPattern = '';
       
       // Pattern 1: Look for transcript panel targetId and nearby params
       final panelMatch1 = RegExp(
@@ -958,14 +959,43 @@ class UrlRecipeImporter {
       
       if (panelMatch1 != null) {
         transcriptParams = panelMatch1.group(1);
-      } else {
-        // Pattern 2: Look for transcriptEndpoint params
+        foundPattern = 'p1';
+      }
+      
+      // Pattern 2: Look for transcriptEndpoint params
+      if (transcriptParams == null) {
         final panelMatch2 = RegExp(
           r'"transcriptEndpoint"\s*:\s*\{[^}]*"params"\s*:\s*"([^"]+)"',
           dotAll: true,
         ).firstMatch(pageBody);
         if (panelMatch2 != null) {
           transcriptParams = panelMatch2.group(1);
+          foundPattern = 'p2';
+        }
+      }
+      
+      // Pattern 3: Look for showTranscriptCommand or openTranscript patterns
+      if (transcriptParams == null) {
+        final panelMatch3 = RegExp(
+          r'"(?:showTranscript|openTranscript)[^"]*"[^}]*?"params"\s*:\s*"([^"]+)"',
+          dotAll: true,
+        ).firstMatch(pageBody);
+        if (panelMatch3 != null) {
+          transcriptParams = panelMatch3.group(1);
+          foundPattern = 'p3';
+        }
+      }
+      
+      // Pattern 4: Broader search - any params near "transcript" keyword
+      if (transcriptParams == null) {
+        // Search for transcript-related params in a 500 char window
+        final transcriptSection = RegExp(
+          r'transcript[^{]*\{[^}]{0,300}"params"\s*:\s*"([^"]+)"',
+          caseSensitive: false,
+        ).firstMatch(pageBody);
+        if (transcriptSection != null) {
+          transcriptParams = transcriptSection.group(1);
+          foundPattern = 'p4';
         }
       }
       
@@ -985,13 +1015,11 @@ class UrlRecipeImporter {
           if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
             final segments = _parseYouTubeiTranscript(transcriptResponse.body);
             if (segments.isNotEmpty) {
-              return (segments, 'youtubei: ${segments.length} segments');
+              return (segments, 'youtubei($foundPattern): ${segments.length} segments');
             }
-            lastError = 'youtubei: 0 segs from ${transcriptResponse.body.length}b';
+            lastError = 'youtubei($foundPattern): 0 segs from ${transcriptResponse.body.length}b';
           } else {
-            // Show first bit of params to help debug
-            final paramsSample = transcriptParams.length > 20 ? '${transcriptParams.substring(0, 20)}...' : transcriptParams;
-            lastError = 'youtubei: ${transcriptResponse.statusCode} (params: $paramsSample)';
+            lastError = 'youtubei($foundPattern): ${transcriptResponse.statusCode}';
           }
         } catch (e) {
           lastError = 'youtubei err: $e';
