@@ -103,6 +103,29 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          // DEBUG: Show first 10 ingredients to diagnose empty line
+          Card(
+            color: Colors.amber.shade100,
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('DEBUG: First 10 sanitized ingredients:', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ..._sanitizedIngredients.take(10).toList().asMap().entries.map((e) {
+                    final i = e.key;
+                    final ing = e.value;
+                    return Text(
+                      '[$i] name="${ing.name}" sect="${ing.sectionName}" amt="${ing.amount}"',
+                      style: TextStyle(fontSize: 11, fontFamily: 'monospace'),
+                    );
+                  }),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          
           // Confidence overview
           _buildConfidenceCard(theme, result),
           const SizedBox(height: 16),
