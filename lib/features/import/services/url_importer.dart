@@ -784,30 +784,56 @@ class UrlRecipeImporter {
       final captionTracksJson = '[${captionTrackMatch.group(1)}]';
       
       String? captionUrl;
+      String? langCode;
       String matchedType = '';
       
-      // Try manual English captions first
-      var urlMatch = RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"\.en"').firstMatch(captionTracksJson);
-      if (urlMatch != null) matchedType = 'manual-en';
+      // Try manual English captions first - extract both URL and ensure lang param
+      var trackMatch = RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"\.en"[^}]*\}').firstMatch(captionTracksJson);
+      if (trackMatch != null) {
+        matchedType = 'manual-en';
+        langCode = 'en';
+      }
       
       // Try auto-generated English
-      urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"a\.en"').firstMatch(captionTracksJson);
-      if (urlMatch != null && matchedType.isEmpty) matchedType = 'auto-en';
+      trackMatch ??= RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"a\.en"[^}]*\}').firstMatch(captionTracksJson);
+      if (trackMatch != null && matchedType.isEmpty) {
+        matchedType = 'auto-en';
+        langCode = 'en';
+      }
       
       // Try any English by language code
-      urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"en"').firstMatch(captionTracksJson);
-      if (urlMatch != null && matchedType.isEmpty) matchedType = 'lang-en';
+      trackMatch ??= RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"en"[^}]*\}').firstMatch(captionTracksJson);
+      if (trackMatch != null && matchedType.isEmpty) {
+        matchedType = 'lang-en';
+        langCode = 'en';
+      }
       
-      // Fall back to first available track
-      urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"').firstMatch(captionTracksJson);
-      if (urlMatch != null && matchedType.isEmpty) matchedType = 'first-available';
+      // Fall back to first available track - extract its language code
+      if (trackMatch == null) {
+        trackMatch = RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"([^"]+)"[^}]*\}').firstMatch(captionTracksJson);
+        if (trackMatch != null) {
+          matchedType = 'first-available';
+          langCode = trackMatch.group(2);
+        }
+      }
       
-      if (urlMatch != null) {
-        captionUrl = _decodeUnicodeEscapes(urlMatch.group(1)!);
+      // Extract the URL from the match
+      if (trackMatch != null) {
+        final urlInTrack = RegExp(r'"baseUrl":\s*"([^"]+)"').firstMatch(trackMatch.group(0)!);
+        if (urlInTrack != null) {
+          captionUrl = _decodeUnicodeEscapes(urlInTrack.group(1)!);
+        }
       }
       
       if (captionUrl == null) {
         return (<TranscriptSegment>[], 'captionTracks found but no baseUrl matched');
+      }
+      
+      // Ensure the URL has the lang parameter
+      if (langCode != null && !captionUrl.contains('lang=')) {
+        captionUrl = captionUrl.contains('?') 
+            ? '$captionUrl&lang=$langCode' 
+            : '$captionUrl?lang=$langCode';
       }
       
       // Try fetching captions - first without format param (YouTube returns XML by default)
