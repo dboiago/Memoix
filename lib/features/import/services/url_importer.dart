@@ -2667,7 +2667,7 @@ class UrlRecipeImporter {
   /// Returns the percentage value (e.g., "100", "75", "3.3") or null
   String? _extractBakerPercent(String text) {
     final match = RegExp(
-      r'^[^,]+,\s*([\d.]+)%\s*[–-]',
+      r'^[^,]+,\s*([\d.]+)%\s*[–—-]',  // en-dash, em-dash, or hyphen
       caseSensitive: false,
     ).firstMatch(text);
     return match?.group(1);
@@ -2684,7 +2684,7 @@ class UrlRecipeImporter {
     // Handle baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
     // or "Warm Water, 75% – 450g (2 Cups)" or "Extra Virgin Olive Oil, 3.3% – 20g (2 tbsp.)"
     final bakerPercentMatch = RegExp(
-      r'^([^,]+),\s*([\d.]+)%\s*[–-]\s*(\d+\s*(?:g|kg|ml|l))\s*(?:\(([^)]+)\))?',
+      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l))\s*(?:\(([^)]+)\))?',  // en-dash, em-dash, or hyphen
       caseSensitive: false,
     ).firstMatch(remaining);
     if (bakerPercentMatch != null) {
@@ -3234,17 +3234,19 @@ class UrlRecipeImporter {
       }
     }
     
-    // If standard selectors failed, try section-based parsing
+    // Try section-based parsing for equipment, yield, timing (always)
+    // And for ingredients if standard selectors failed
     List<String> equipmentItems = [];
     String? yield;
     String? timing;
     
+    final sectionResult = _parseHtmlBySections(document);
+    equipmentItems = sectionResult['equipment'] ?? [];
+    yield = sectionResult['yield'];
+    timing = sectionResult['timing'];
+    
     if (rawIngredientStrings.isEmpty) {
-      final sectionResult = _parseHtmlBySections(document);
       rawIngredientStrings = sectionResult['ingredients'] ?? [];
-      equipmentItems = sectionResult['equipment'] ?? [];
-      yield = sectionResult['yield'];
-      timing = sectionResult['timing'];
     }
     
     // Parse ingredients with proper section handling
@@ -3623,6 +3625,19 @@ class UrlRecipeImporter {
       // Section-based parsing is semi-structured
       if (rawIngredientStrings.isNotEmpty) {
         usedStructuredFormat = true;
+      }
+    } else {
+      // Even if we found ingredients via other methods, still extract equipment
+      // This handles sites that have structured ingredients but also equipment sections
+      final sectionResult = _parseHtmlBySections(document);
+      if ((sectionResult['equipment'] as List?)?.isNotEmpty ?? false) {
+        equipmentItems = sectionResult['equipment'] ?? [];
+      }
+      if (yield == null && sectionResult['yield'] != null) {
+        yield = sectionResult['yield'];
+      }
+      if (timing == null && sectionResult['timing'] != null) {
+        timing = sectionResult['timing'];
       }
     }
     

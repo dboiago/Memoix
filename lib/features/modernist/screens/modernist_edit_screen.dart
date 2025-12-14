@@ -12,8 +12,10 @@ import '../repository/modernist_repository.dart';
 /// Edit screen for creating/editing modernist recipes - follows Mains pattern
 class ModernistEditScreen extends ConsumerStatefulWidget {
   final int? recipeId;
+  /// Pre-populated recipe for imports (not yet saved)
+  final ModernistRecipe? importedRecipe;
 
-  const ModernistEditScreen({super.key, this.recipeId});
+  const ModernistEditScreen({super.key, this.recipeId, this.importedRecipe});
 
   @override
   ConsumerState<ModernistEditScreen> createState() => _ModernistEditScreenState();
@@ -51,57 +53,65 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
   }
 
   Future<void> _loadRecipe() async {
+    ModernistRecipe? recipe;
+    
     if (widget.recipeId != null) {
       final repo = ref.read(modernistRepositoryProvider);
-      final recipe = await repo.getById(widget.recipeId!);
+      recipe = await repo.getById(widget.recipeId!);
       if (recipe != null) {
         _existingRecipe = recipe;
-        _nameController.text = recipe.name;
-        _selectedType = recipe.type;
-        _techniqueController.text = recipe.technique ?? '';
-        _servesController.text = recipe.serves ?? '';
-        _timeController.text = recipe.time ?? '';
-        // Combine notes and science notes into single notes field
-        final notesParts = <String>[
-          if (recipe.notes != null && recipe.notes!.isNotEmpty) recipe.notes!,
-          if (recipe.scienceNotes != null && recipe.scienceNotes!.isNotEmpty) recipe.scienceNotes!,
-        ];
-        _notesController.text = notesParts.join('\n\n');
-        _equipment.addAll(recipe.equipment);
-        
-        // Load images - new structure
-        _headerImage = recipe.headerImage ?? recipe.imageUrl;
-        _stepImages.addAll(recipe.stepImages);
-        
-        // Parse step image map
-        for (final mapping in recipe.stepImageMap) {
-          final parts = mapping.split(':');
-          if (parts.length == 2) {
-            final stepIdx = int.tryParse(parts[0]);
-            final imgIdx = int.tryParse(parts[1]);
-            if (stepIdx != null && imgIdx != null) {
-              _stepImageMap[stepIdx] = imgIdx;
-            }
+      }
+    } else if (widget.importedRecipe != null) {
+      recipe = widget.importedRecipe;
+      // importedRecipe is not saved yet, so don't set _existingRecipe
+    }
+    
+    if (recipe != null) {
+      _nameController.text = recipe.name;
+      _selectedType = recipe.type;
+      _techniqueController.text = recipe.technique ?? '';
+      _servesController.text = recipe.serves ?? '';
+      _timeController.text = recipe.time ?? '';
+      // Combine notes and science notes into single notes field
+      final notesParts = <String>[
+        if (recipe.notes != null && recipe.notes!.isNotEmpty) recipe.notes!,
+        if (recipe.scienceNotes != null && recipe.scienceNotes!.isNotEmpty) recipe.scienceNotes!,
+      ];
+      _notesController.text = notesParts.join('\n\n');
+      _equipment.addAll(recipe.equipment);
+      
+      // Load images - new structure
+      _headerImage = recipe.headerImage ?? recipe.imageUrl;
+      _stepImages.addAll(recipe.stepImages);
+      
+      // Parse step image map
+      for (final mapping in recipe.stepImageMap) {
+        final parts = mapping.split(':');
+        if (parts.length == 2) {
+          final stepIdx = int.tryParse(parts[0]);
+          final imgIdx = int.tryParse(parts[1]);
+          if (stepIdx != null && imgIdx != null) {
+            _stepImageMap[stepIdx] = imgIdx;
           }
         }
+      }
 
-        for (final ingredient in recipe.ingredients) {
-          // Combine amount and unit for display
-          final amountParts = <String>[
-            if (ingredient.amount != null && ingredient.amount!.isNotEmpty) ingredient.amount!,
-            if (ingredient.unit != null && ingredient.unit!.isNotEmpty) ingredient.unit!,
-          ];
-          _addIngredientRow(
-            name: ingredient.name,
-            amount: amountParts.join(' '),
-            notes: ingredient.notes ?? '',
-          );
-        }
+      for (final ingredient in recipe.ingredients) {
+        // Combine amount and unit for display
+        final amountParts = <String>[
+          if (ingredient.amount != null && ingredient.amount!.isNotEmpty) ingredient.amount!,
+          if (ingredient.unit != null && ingredient.unit!.isNotEmpty) ingredient.unit!,
+        ];
+        _addIngredientRow(
+          name: ingredient.name,
+          amount: amountParts.join(' '),
+          notes: ingredient.notes ?? '',
+        );
+      }
 
-        // Load directions as individual rows
-        for (final direction in recipe.directions) {
-          _addDirectionRow(text: direction);
-        }
+      // Load directions as individual rows
+      for (final direction in recipe.directions) {
+        _addDirectionRow(text: direction);
       }
     }
 

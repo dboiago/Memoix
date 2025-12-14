@@ -303,17 +303,28 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     const map = {
       'Korea': 'Korean',
       'Korean': 'Korean',
+      'KR': 'Korean',
       'China': 'Chinese',
       'Chinese': 'Chinese',
+      'CN': 'Chinese',
       'Japan': 'Japanese',
       'Japanese': 'Japanese',
+      'JP': 'Japanese',
       'Spain': 'Spanish',
+      'ES': 'Spanish',
       'France': 'French',
+      'FR': 'French',
       'Italy': 'Italian',
+      'IT': 'Italian',
       'Mexico': 'Mexican',
       'Mexican': 'Mexican',
+      'MX': 'Mexican',
       'United States': 'American',
+      'USA': 'American',
+      'US': 'American',
       'North American': 'North American',
+      'CA': 'Canadian',
+      'Canada': 'Canadian',
     };
     return map[raw] ?? raw;
   }

@@ -7,6 +7,9 @@ import '../../recipes/models/category.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import '../../modernist/models/modernist_recipe.dart';
+import '../../modernist/screens/modernist_edit_screen.dart';
+import '../../modernist/repository/modernist_repository.dart';
 import '../models/recipe_import_result.dart';
 
 /// Screen for reviewing and mapping imported recipe data
@@ -861,11 +864,74 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   }
 
   void _openInEditScreen() {
-    final recipe = _buildRecipe();
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-      ),
+    // Route to appropriate edit screen based on course type
+    if (_selectedCourse.toLowerCase() == 'modernist') {
+      final modernistRecipe = _buildModernistRecipe();
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => ModernistEditScreen(importedRecipe: modernistRecipe),
+        ),
+      );
+    } else {
+      final recipe = _buildRecipe();
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
+        ),
+      );
+    }
+  }
+
+  /// Build a ModernistRecipe from import data
+  ModernistRecipe _buildModernistRecipe() {
+    // Build ingredients from selected
+    final ingredients = <ModernistIngredient>[];
+    String? currentSection;
+    for (final index in _selectedIngredientIndices.toList()..sort()) {
+      if (index < _sanitizedIngredients.length) {
+        final rawIngredient = _sanitizedIngredients[index];
+        
+        // If this is a section header, track it but don't add
+        if (rawIngredient.name.isEmpty && rawIngredient.sectionName != null) {
+          currentSection = rawIngredient.sectionName;
+          continue;
+        }
+        
+        ingredients.add(ModernistIngredient.create(
+          name: rawIngredient.name,
+          amount: rawIngredient.amount,
+          unit: rawIngredient.unit,
+          notes: rawIngredient.preparation,
+        ));
+      }
+    }
+
+    // Build directions from selected
+    final directions = <String>[];
+    for (final index in _selectedDirectionIndices.toList()..sort()) {
+      if (index < widget.importResult.rawDirections.length) {
+        directions.add(widget.importResult.rawDirections[index]);
+      }
+    }
+
+    return ModernistRecipe.create(
+      uuid: const Uuid().v4(),
+      name: _nameController.text.trim().isEmpty
+          ? 'Untitled Recipe'
+          : _nameController.text.trim(),
+      type: ModernistType.concept,
+      serves: _servesController.text.trim().isEmpty
+          ? null
+          : _servesController.text.trim(),
+      time: _timeController.text.trim().isEmpty
+          ? null
+          : _timeController.text.trim(),
+      equipment: widget.importResult.equipment,
+      ingredients: ingredients,
+      directions: directions,
+      notes: widget.importResult.notes,
+      sourceUrl: widget.importResult.sourceUrl,
+      source: ModernistSource.imported,
     );
   }
 
@@ -950,13 +1016,22 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       return;
     }
 
-    final recipe = _buildRecipe();
-    await ref.read(recipeRepositoryProvider).saveRecipe(recipe);
+    // Save to appropriate repository based on course type
+    String savedName;
+    if (_selectedCourse.toLowerCase() == 'modernist') {
+      final recipe = _buildModernistRecipe();
+      await ref.read(modernistRepositoryProvider).save(recipe);
+      savedName = recipe.name;
+    } else {
+      final recipe = _buildRecipe();
+      await ref.read(recipeRepositoryProvider).saveRecipe(recipe);
+      savedName = recipe.name;
+    }
 
     if (mounted) {
       Navigator.of(context).popUntil((route) => route.isFirst);
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Saved: ${recipe.name}')),
+        SnackBar(content: Text('Saved: $savedName')),
       );
     }
   }

@@ -462,7 +462,7 @@ class OcrRecipeImporter {
   RawIngredientData _parseIngredientLine(String line) {
     // Try baker's percentage format first: "Name, XX% – amount (alt amount)"
     final bakerMatch = RegExp(
-      r'^([^,]+),\s*([\d.]+)%\s*[–-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',
+      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',  // en-dash, em-dash, or hyphen
       caseSensitive: false,
     ).firstMatch(line);
     
