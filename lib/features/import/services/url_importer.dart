@@ -804,39 +804,62 @@ class UrlRecipeImporter {
       
       if (urlMatch != null) {
         captionUrl = _decodeUnicodeEscapes(urlMatch.group(1)!);
-        // Add format parameter if not present - srv3 returns timedtext XML format
-        if (!captionUrl!.contains('fmt=')) {
-          captionUrl = captionUrl.contains('?') 
-              ? '$captionUrl&fmt=srv3' 
-              : '$captionUrl?fmt=srv3';
-        }
       }
       
       if (captionUrl == null) {
         return (<TranscriptSegment>[], 'captionTracks found but no baseUrl matched');
       }
       
-      final captionResponse = await http.get(
-        Uri.parse(captionUrl),
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        },
-      );
+      // Try fetching captions - first without format param (YouTube returns XML by default)
+      // Then try with different format parameters if needed
+      final formats = ['', 'fmt=srv3', 'fmt=json3'];
+      String? successBody;
+      String usedFormat = '';
       
-      if (captionResponse.statusCode != 200) {
-        return (<TranscriptSegment>[], 'caption fetch failed: ${captionResponse.statusCode}');
+      for (final fmt in formats) {
+        final url = fmt.isEmpty 
+            ? captionUrl 
+            : (captionUrl.contains('?') ? '$captionUrl&$fmt' : '$captionUrl?$fmt');
+        
+        try {
+          final response = await http.get(
+            Uri.parse(url),
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+              'Accept': '*/*',
+              'Accept-Language': 'en-US,en;q=0.9',
+            },
+          );
+          
+          if (response.statusCode == 200 && response.body.isNotEmpty) {
+            successBody = response.body;
+            usedFormat = fmt.isEmpty ? 'default' : fmt;
+            break;
+          }
+        } catch (_) {
+          continue;
+        }
       }
       
-      // Parse XML transcript with timestamps
-      final xmlBody = captionResponse.body;
-      final segments = _parseTranscriptXmlWithTimestamps(xmlBody);
+      if (successBody == null || successBody.isEmpty) {
+        return (<TranscriptSegment>[], 'all caption formats failed ($matchedType)');
+      }
+      
+      // Parse transcript - try XML first, then JSON
+      var segments = _parseTranscriptXmlWithTimestamps(successBody);
+      
+      // If XML parsing failed, try JSON parsing
+      if (segments.isEmpty && successBody.startsWith('{')) {
+        segments = _parseTranscriptJson(successBody);
+      }
+      
       if (segments.isEmpty) {
-        // Include a sample of the XML to help debug
-        final sample = xmlBody.length > 200 ? xmlBody.substring(0, 200) : xmlBody;
-        return (<TranscriptSegment>[], 'no segments ($matchedType). XML sample: $sample');
+        final bodyLen = successBody.length;
+        final sample = bodyLen > 100 ? successBody.substring(0, 100) : successBody;
+        return (<TranscriptSegment>[], 'no segments ($matchedType, $usedFormat, len=$bodyLen). Sample: $sample');
       }
       
-      return (segments, '$matchedType: ${segments.length} segments');
+      return (segments, '$matchedType/$usedFormat: ${segments.length} segments');
     } catch (e) {
       return (<TranscriptSegment>[], 'exception: ${e.toString().substring(0, 50.clamp(0, e.toString().length))}');
     }
@@ -880,6 +903,49 @@ class UrlRecipeImporter {
       if (text.isNotEmpty) {
         segments.add(TranscriptSegment(text: text, startSeconds: startSeconds));
       }
+    }
+    
+    return segments;
+  }
+  
+  /// Parse YouTube transcript JSON format (json3)
+  List<TranscriptSegment> _parseTranscriptJson(String json) {
+    final segments = <TranscriptSegment>[];
+    
+    try {
+      // YouTube json3 format has events with segs containing utf8 text
+      // Look for patterns like "tOffsetMs":123,"segs":[{"utf8":"text"}]
+      final eventMatches = RegExp(
+        r'"tOffsetMs"\s*:\s*(\d+).*?"segs"\s*:\s*\[(.*?)\]',
+        dotAll: true,
+      ).allMatches(json);
+      
+      for (final match in eventMatches) {
+        final offsetMs = int.tryParse(match.group(1) ?? '0') ?? 0;
+        final startSeconds = offsetMs / 1000.0;
+        final segsJson = match.group(2) ?? '';
+        
+        // Extract utf8 text from segs
+        final textParts = <String>[];
+        final utf8Matches = RegExp(r'"utf8"\s*:\s*"([^"]*)"').allMatches(segsJson);
+        for (final tm in utf8Matches) {
+          var text = tm.group(1) ?? '';
+          text = _decodeUnicodeEscapes(text);
+          text = _decodeHtml(text);
+          if (text.isNotEmpty && text != '\n') {
+            textParts.add(text);
+          }
+        }
+        
+        if (textParts.isNotEmpty) {
+          final combinedText = textParts.join('').replaceAll(RegExp(r'\s+'), ' ').trim();
+          if (combinedText.isNotEmpty) {
+            segments.add(TranscriptSegment(text: combinedText, startSeconds: startSeconds));
+          }
+        }
+      }
+    } catch (_) {
+      // JSON parsing failed
     }
     
     return segments;
