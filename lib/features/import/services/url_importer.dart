@@ -201,24 +201,32 @@ class UrlRecipeImporter {
       final hasAnyLists = document.querySelectorAll('ul li, ol li').length > 0;
       final bodyText = document.body?.text ?? '';
       final bodyLength = bodyText.length;
-      final hasBullets = bodyText.contains('•');
-      final hasH2 = document.querySelectorAll('h2').length > 0;
-      final hasH3 = document.querySelectorAll('h3').length > 0;
+      final hasBullets = bodyText.contains('•') || bodyText.contains('\u2022') || bodyText.contains('\u2023') || bodyText.contains('\u25E6');
+      final hasH2 = document.querySelectorAll('h2').length;
+      final hasH3 = document.querySelectorAll('h3').length;
+      final hasIngredientWord = bodyText.toLowerCase().contains('ingredient');
       
-      String diagnostics = 'Found $jsonLdCount JSON-LD script${jsonLdCount != 1 ? 's' : ''}';
-      if (hasMicrodata) diagnostics += ', has Recipe microdata';
-      if (hasRecipeClass) diagnostics += ', has recipe classes';
-      if (!hasAnyLists) diagnostics += ', no lists found';
-      if (hasBullets) diagnostics += ', has bullet chars';
-      if (hasH2) diagnostics += ', has h2 headings';
-      if (hasH3) diagnostics += ', has h3 headings';
+      // Check for common text patterns
+      final hasMeasurements = RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|tbsp|tsp)', caseSensitive: false).hasMatch(bodyText);
+      
+      // Sample of body text for debugging (first 200 chars after title-like content)
+      String bodySample = '';
+      final ingredientIdx = bodyText.toLowerCase().indexOf('ingredient');
+      if (ingredientIdx >= 0) {
+        final endIdx = (ingredientIdx + 300).clamp(0, bodyText.length);
+        bodySample = bodyText.substring(ingredientIdx, endIdx).replaceAll(RegExp(r'\s+'), ' ').trim();
+        if (bodySample.length > 100) bodySample = '${bodySample.substring(0, 100)}...';
+      }
+      
+      String diagnostics = 'JSON-LD:$jsonLdCount, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
+      diagnostics += ', bullets:${hasBullets ? "yes" : "no"}, measurements:${hasMeasurements ? "yes" : "no"}';
       diagnostics += ', body=$bodyLength chars';
+      if (bodySample.isNotEmpty) diagnostics += '. Near ingredients: "$bodySample"';
       
       throw Exception(
         'Could not find recipe data on this page. '
         '$diagnostics. '
-        'The page may use JavaScript to load content dynamically, use an unsupported format, '
-        'or may not be a recipe page.'
+        'The page may use JavaScript to load content dynamically or use an unsupported format.'
       );
     } catch (e) {
       throw Exception('Failed to import recipe from URL: $e');
