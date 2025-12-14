@@ -247,7 +247,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     } else {
       // Add blank row at end for existing recipes (for adding more)
       final lastRow = _directionRows.last;
-      if (lastRow.text.isNotEmpty) {
+      if (lastRow.controller.text.isNotEmpty) {
         _addDirectionRow();
       }
     }
