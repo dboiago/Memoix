@@ -211,7 +211,7 @@ class UrlRecipeImporter {
       
       // Check raw HTML for bullets and measurements (in case DOM parsing strips them)
       final rawHasBullets = body.contains('•') || body.contains('&bull;') || body.contains('&#8226;');
-      final rawHasMeasurements = RegExp(r'\d+g\s*\(', caseSensitive: false).hasMatch(body);
+      final rawHasMeasurements = RegExp(r'\d+\s*g\s*\(', caseSensitive: false).hasMatch(body);
       
       // Sample of body text for debugging (first 200 chars after title-like content)
       String bodySample = '';
@@ -3687,7 +3687,7 @@ class UrlRecipeImporter {
       // Super simple bodyText pattern: just regex match "Xg (anything) Word" directly
       if (rawIngredientStrings.isEmpty) {
         final simplePattern = RegExp(
-          r'(\d+g\s*\([^)]+\)\s*[A-Za-z][A-Za-z\s]{1,30})',
+          r'(\d+\s*g\s*\([^)]+\)\s*[A-Za-z][A-Za-z\s]{1,30})',
           caseSensitive: false,
         );
         final matches = simplePattern.allMatches(bodyText);
@@ -3706,10 +3706,10 @@ class UrlRecipeImporter {
       }
       
       // Dead simple: find ANY text around gram measurements
-      // This is the most lenient fallback - captures surrounding context of "###g"
+      // This is the most lenient fallback - captures surrounding context of "###g" or "### g"
       if (rawIngredientStrings.isEmpty) {
-        // Find positions of all gram measurements in text
-        final gramPattern = RegExp(r'\d+g\b', caseSensitive: false);
+        // Find positions of all gram measurements in text (allow optional space before g)
+        final gramPattern = RegExp(r'\d+\s*g\b', caseSensitive: false);
         final gramMatches = gramPattern.allMatches(bodyText).toList();
         final potentialIngredients = <String>[];
         
@@ -3728,7 +3728,7 @@ class UrlRecipeImporter {
           
           // Only look for next gram if snippet is long enough
           if (snippet.length > 5) {
-            final nextGramIdx = snippet.indexOf(RegExp(r'\d+g', caseSensitive: false), 5);
+            final nextGramIdx = snippet.indexOf(RegExp(r'\d+\s*g', caseSensitive: false), 5);
             if (nextGramIdx > 0 && nextGramIdx < 60) snippet = snippet.substring(0, nextGramIdx);
           }
           
@@ -3808,11 +3808,11 @@ class UrlRecipeImporter {
         }
       }
       
-      // Pattern 4: Ultra-simple gram pattern - just find "Xg (" followed by anything
+      // Pattern 4: Ultra-simple gram pattern - just find "Xg (" or "X g (" followed by anything
       // This is very lenient for sites like Modernist Pantry
       if (potentialIngredients.isEmpty) {
-        // Find all instances of "###g (..." in the text
-        final simpleGramPattern = RegExp(r'(\d+g\s*\([^)]+\)\s*\S+(?:\s+\S+){0,5})', caseSensitive: false);
+        // Find all instances of "### g (..." in the text (allow space before g)
+        final simpleGramPattern = RegExp(r'(\d+\s*g\s*\([^)]+\)\s*\S+(?:\s+\S+){0,5})', caseSensitive: false);
         
         for (final match in simpleGramPattern.allMatches(cleanHtml)) {
           var ingredient = match.group(1)?.trim() ?? '';
