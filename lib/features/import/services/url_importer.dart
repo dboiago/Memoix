@@ -211,8 +211,73 @@ class UrlRecipeImporter {
         }
       }
       
-      // If JSON-LD found a result, check if we need to supplement with equipment from HTML
+      // If JSON-LD found a result, check if we need to supplement with equipment or sections from HTML
       if (jsonLdResult != null) {
+        // Check if HTML has ingredient sections that JSON-LD is missing
+        // This handles sites like AmazingFoodMadeEasy where JSON-LD has flat ingredient list
+        // but HTML has section headers (ingredient_dish_header, li.category, etc.)
+        final hasHtmlSections = document.querySelector('.ingredient_dish_header') != null ||
+                                document.querySelector('li.category') != null ||
+                                document.querySelector('.ingredient-group-header') != null ||
+                                document.querySelector('.wprm-recipe-group-name') != null;
+        
+        if (hasHtmlSections) {
+          // Re-parse with HTML to get section headers
+          // Fall through to HTML parsing below instead of returning JSON-LD result
+          // We'll use JSON-LD for other metadata but get ingredients from HTML
+          final htmlIngredients = _extractIngredientsWithSections(document);
+          if (htmlIngredients.isNotEmpty) {
+            // Parse the raw ingredient strings to Ingredient objects with sections
+            final ingredients = _parseIngredients(htmlIngredients);
+            
+            // Return combined result: ingredients from HTML (with sections), rest from JSON-LD
+            // Also get equipment from HTML
+            final sectionResult = _parseHtmlBySections(document);
+            final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
+            
+            return RecipeImportResult(
+              name: jsonLdResult.name,
+              course: jsonLdResult.course,
+              cuisine: jsonLdResult.cuisine,
+              subcategory: jsonLdResult.subcategory,
+              serves: jsonLdResult.serves,
+              time: jsonLdResult.time,
+              ingredients: ingredients,
+              directions: jsonLdResult.directions,
+              notes: jsonLdResult.notes,
+              imageUrl: jsonLdResult.imageUrl,
+              nutrition: jsonLdResult.nutrition,
+              equipment: htmlEquipment.isNotEmpty ? htmlEquipment : jsonLdResult.equipment,
+              rawIngredients: htmlIngredients.map((raw) {
+                final parsed = _parseIngredientString(raw);
+                return RawIngredientData(
+                  original: raw,
+                  amount: parsed.amount,
+                  unit: parsed.unit,
+                  preparation: parsed.preparation,
+                  name: parsed.name.isNotEmpty ? parsed.name : raw,
+                  looksLikeIngredient: parsed.name.isNotEmpty,
+                  isSection: parsed.section != null,
+                  sectionName: parsed.section,
+                );
+              }).toList(),
+              rawDirections: jsonLdResult.rawDirections,
+              detectedCourses: jsonLdResult.detectedCourses,
+              detectedCuisines: jsonLdResult.detectedCuisines,
+              nameConfidence: jsonLdResult.nameConfidence,
+              courseConfidence: jsonLdResult.courseConfidence,
+              cuisineConfidence: jsonLdResult.cuisineConfidence,
+              ingredientsConfidence: jsonLdResult.ingredientsConfidence,
+              directionsConfidence: jsonLdResult.directionsConfidence,
+              servesConfidence: jsonLdResult.servesConfidence,
+              timeConfidence: jsonLdResult.timeConfidence,
+              sourceUrl: jsonLdResult.sourceUrl,
+              source: jsonLdResult.source,
+              imagePaths: jsonLdResult.imagePaths,
+            );
+          }
+        }
+        
         // If no equipment from JSON-LD, try to get it from HTML sections
         if (jsonLdResult.equipment.isEmpty) {
           final sectionResult = _parseHtmlBySections(document);
@@ -3543,18 +3608,22 @@ class UrlRecipeImporter {
     // Structure: ul.ingredient_list > li.category > h3.ingredient_dish_header for headers
     //            ul.ingredient_list > li.ingredient for ingredient items
     if (rawIngredientStrings.isEmpty) {
-      final ingredientList = document.querySelector('.ingredient_list, ul.ingredient_list');
+      // Try to find the ingredient list container
+      var ingredientList = document.querySelector('ul.ingredient_list');
+      ingredientList ??= document.querySelector('.ingredient_list');
+      
       if (ingredientList != null) {
         usedStructuredFormat = true;
         
-        // Iterate through all direct li children
+        // Iterate through all li children
         final allLiItems = ingredientList.querySelectorAll('li');
         for (final li in allLiItems) {
           final liClasses = li.attributes['class'] ?? '';
           
           // Check if this li contains an ingredient_dish_header (category row)
           if (liClasses.contains('category')) {
-            final headerElem = li.querySelector('.ingredient_dish_header, h3');
+            // Look for the h3 header inside
+            final headerElem = li.querySelector('h3');
             if (headerElem != null) {
               final sectionText = _decodeHtml((headerElem.text ?? '').trim());
               if (sectionText.isNotEmpty) {
@@ -3578,33 +3647,40 @@ class UrlRecipeImporter {
         }
       }
       
-      // Fallback: Query for ingredient_dish_header and li.ingredient separately in document order
+      // Fallback: Query for h3.ingredient_dish_header and li.ingredient separately
       if (rawIngredientStrings.isEmpty) {
-        final sectionHeaders = document.querySelectorAll('.ingredient_dish_header');
-        final allIngredientItems = document.querySelectorAll('li.ingredient');
+        // Check if these elements exist anywhere in the document
+        final sectionHeaders = document.querySelectorAll('h3.ingredient_dish_header');
+        final ingredientItems = document.querySelectorAll('li.ingredient');
         
-        if (sectionHeaders.isNotEmpty || allIngredientItems.isNotEmpty) {
+        if (sectionHeaders.isNotEmpty || ingredientItems.isNotEmpty) {
           usedStructuredFormat = true;
           
-          // Get all elements in document order by querying both together
-          final allElements = document.querySelectorAll('.ingredient_dish_header, li.ingredient');
+          // Process in document order - get parent container and iterate
+          // Get all li elements that are either category or ingredient
+          final allLis = document.querySelectorAll('li.category, li.ingredient');
           
-          for (final elem in allElements) {
-            final elemClass = elem.attributes['class'] ?? '';
-            final text = _decodeHtml((elem.text ?? '').trim());
+          for (final li in allLis) {
+            final liClasses = li.attributes['class'] ?? '';
             
-            if (text.isEmpty) continue;
-            
-            if (elemClass.contains('ingredient_dish_header')) {
-              // Remove "For the " prefix if present
-              var sectionName = text;
-              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
-              if (forTheMatch != null) {
-                sectionName = forTheMatch.group(1)?.trim() ?? text;
+            if (liClasses.contains('category')) {
+              final h3 = li.querySelector('h3');
+              if (h3 != null) {
+                final text = _decodeHtml((h3.text ?? '').trim());
+                if (text.isNotEmpty) {
+                  var sectionName = text;
+                  final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
+                  if (forTheMatch != null) {
+                    sectionName = forTheMatch.group(1)?.trim() ?? text;
+                  }
+                  rawIngredientStrings.add('[$sectionName]');
+                }
               }
-              rawIngredientStrings.add('[$sectionName]');
-            } else if (elemClass.contains('ingredient')) {
-              rawIngredientStrings.add(text);
+            } else if (liClasses.contains('ingredient')) {
+              final text = _decodeHtml((li.text ?? '').trim());
+              if (text.isNotEmpty) {
+                rawIngredientStrings.add(text);
+              }
             }
           }
         }
@@ -4936,6 +5012,138 @@ class UrlRecipeImporter {
     }
     
     return _processIngredientListItems(items);
+  }
+  
+  /// Extract ingredients with section headers from HTML
+  /// Handles sites like AmazingFoodMadeEasy that have structured HTML with sections
+  /// but JSON-LD only has a flat ingredient list
+  List<String> _extractIngredientsWithSections(dynamic document) {
+    final ingredients = <String>[];
+    
+    // Try AmazingFoodMadeEasy format: ul.ingredient_list with li.category and li.ingredient
+    var ingredientList = document.querySelector('ul.ingredient_list');
+    ingredientList ??= document.querySelector('.ingredient_list');
+    
+    if (ingredientList != null) {
+      final allLiItems = ingredientList.querySelectorAll('li');
+      for (final li in allLiItems) {
+        final liClasses = li.attributes['class'] ?? '';
+        
+        if (liClasses.contains('category')) {
+          final headerElem = li.querySelector('h3');
+          if (headerElem != null) {
+            final sectionText = _decodeHtml((headerElem.text ?? '').trim());
+            if (sectionText.isNotEmpty) {
+              var sectionName = sectionText;
+              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
+              if (forTheMatch != null) {
+                sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
+              }
+              ingredients.add('[$sectionName]');
+            }
+          }
+        } else if (liClasses.contains('ingredient')) {
+          final text = _decodeHtml((li.text ?? '').trim());
+          if (text.isNotEmpty) {
+            ingredients.add(text);
+          }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return ingredients;
+    }
+    
+    // Try WPRM (WordPress Recipe Maker) format with ingredient groups
+    final wprmGroups = document.querySelectorAll('.wprm-recipe-ingredient-group');
+    if (wprmGroups.isNotEmpty) {
+      for (final group in wprmGroups) {
+        final groupName = group.querySelector('.wprm-recipe-group-name');
+        if (groupName != null) {
+          final sectionText = _decodeHtml((groupName.text ?? '').trim());
+          if (sectionText.isNotEmpty) {
+            ingredients.add('[$sectionText]');
+          }
+        }
+        
+        final items = group.querySelectorAll('.wprm-recipe-ingredient');
+        for (final item in items) {
+          final text = _decodeHtml((item.text ?? '').trim());
+          if (text.isNotEmpty) {
+            ingredients.add(text);
+          }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return ingredients;
+    }
+    
+    // Try generic section headers: h3 or h4 followed by ul/li
+    final sectionHeaders = document.querySelectorAll('.ingredient-section-header, .ingredients h3, .ingredients h4');
+    if (sectionHeaders.isNotEmpty) {
+      for (final header in sectionHeaders) {
+        final sectionText = _decodeHtml((header.text ?? '').trim());
+        if (sectionText.isNotEmpty) {
+          var sectionName = sectionText;
+          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
+          if (forTheMatch != null) {
+            sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
+          }
+          ingredients.add('[$sectionName]');
+        }
+        
+        // Get ingredients after this header
+        var sibling = header.nextElementSibling;
+        while (sibling != null) {
+          final tagName = sibling.localName?.toLowerCase() ?? '';
+          
+          if (tagName == 'ul' || tagName == 'ol') {
+            final items = sibling.querySelectorAll('li');
+            for (final item in items) {
+              final text = _decodeHtml((item.text ?? '').trim());
+              if (text.isNotEmpty) {
+                ingredients.add(text);
+              }
+            }
+          } else if (tagName == 'h3' || tagName == 'h4' || tagName == 'h2') {
+            break; // Next section
+          }
+          
+          sibling = sibling.nextElementSibling;
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return ingredients;
+    }
+    
+    // Fallback: Query li.category and li.ingredient in document order
+    final allLis = document.querySelectorAll('li.category, li.ingredient');
+    if (allLis.isNotEmpty) {
+      for (final li in allLis) {
+        final liClasses = li.attributes['class'] ?? '';
+        
+        if (liClasses.contains('category')) {
+          final h3 = li.querySelector('h3');
+          if (h3 != null) {
+            final text = _decodeHtml((h3.text ?? '').trim());
+            if (text.isNotEmpty) {
+              var sectionName = text;
+              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
+              if (forTheMatch != null) {
+                sectionName = forTheMatch.group(1)?.trim() ?? text;
+              }
+              ingredients.add('[$sectionName]');
+            }
+          }
+        } else if (liClasses.contains('ingredient')) {
+          final text = _decodeHtml((li.text ?? '').trim());
+          if (text.isNotEmpty) {
+            ingredients.add(text);
+          }
+        }
+      }
+    }
+    
+    return ingredients;
   }
   
   /// Extract list items that follow a heading element
