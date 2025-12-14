@@ -55,6 +55,18 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     // Sanitize ingredients to remove empty/invalid entries
     _sanitizedIngredients = RawIngredientData.sanitize(result.rawIngredients);
+    
+    // DEBUG: Print what we have to diagnose the empty line issue
+    debugPrint('=== RAW INGREDIENTS BEFORE SANITIZE (${result.rawIngredients.length}) ===');
+    for (var i = 0; i < result.rawIngredients.length && i < 15; i++) {
+      final ing = result.rawIngredients[i];
+      debugPrint('[$i] name="${ing.name}" section="${ing.sectionName}" amount="${ing.amount}" isSection=${ing.isSection}');
+    }
+    debugPrint('=== SANITIZED INGREDIENTS (${_sanitizedIngredients.length}) ===');
+    for (var i = 0; i < _sanitizedIngredients.length && i < 15; i++) {
+      final ing = _sanitizedIngredients[i];
+      debugPrint('[$i] name="${ing.name}" section="${ing.sectionName}" amount="${ing.amount}" isSection=${ing.isSection}');
+    }
 
     // Pre-select all sanitized ingredients
     _selectedIngredientIndices =
