@@ -3683,6 +3683,27 @@ class UrlRecipeImporter {
           rawIngredientStrings = _processIngredientListItems(potentialIngredients);
         }
       }
+      
+      // Super simple bodyText pattern: just regex match "Xg (anything) Word" directly
+      if (rawIngredientStrings.isEmpty) {
+        final simplePattern = RegExp(
+          r'(\d+g\s*\([^)]+\)\s*[A-Za-z][A-Za-z\s]{1,30})',
+          caseSensitive: false,
+        );
+        final matches = simplePattern.allMatches(bodyText);
+        final potentialIngredients = <String>[];
+        
+        for (final match in matches) {
+          final ingredient = _decodeHtml(match.group(1)?.trim() ?? '');
+          if (_isValidIngredientCandidate(ingredient)) {
+            potentialIngredients.add(ingredient);
+          }
+        }
+        
+        if (potentialIngredients.length >= 2) {
+          rawIngredientStrings = _processIngredientListItems(potentialIngredients);
+        }
+      }
     }
     
     // Raw HTML fallback: search the raw HTML source for ingredient patterns
@@ -3738,6 +3759,27 @@ class UrlRecipeImporter {
         
         for (final match in fractionalPattern.allMatches(cleanHtml)) {
           final ingredient = _decodeHtml(match.group(1)?.trim() ?? '');
+          if (_isValidIngredientCandidate(ingredient)) {
+            potentialIngredients.add(ingredient);
+          }
+        }
+      }
+      
+      // Pattern 4: Ultra-simple gram pattern - just find "Xg (" followed by anything
+      // This is very lenient for sites like Modernist Pantry
+      if (potentialIngredients.isEmpty) {
+        // Find all instances of "###g (..." in the text
+        final simpleGramPattern = RegExp(r'(\d+g\s*\([^)]+\)\s*\S+(?:\s+\S+){0,5})', caseSensitive: false);
+        
+        for (final match in simpleGramPattern.allMatches(cleanHtml)) {
+          var ingredient = match.group(1)?.trim() ?? '';
+          // Clean up - take only reasonable length
+          if (ingredient.length > 80) {
+            ingredient = ingredient.substring(0, 80);
+            // Cut at last space to avoid partial words
+            final lastSpace = ingredient.lastIndexOf(' ');
+            if (lastSpace > 20) ingredient = ingredient.substring(0, lastSpace);
+          }
           if (_isValidIngredientCandidate(ingredient)) {
             potentialIngredients.add(ingredient);
           }
