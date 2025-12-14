@@ -267,6 +267,28 @@ class RawIngredientData {
       section: section ?? sectionName,
     );
   }
+  
+  /// Check if this ingredient entry is valid (not empty/garbage)
+  bool get isValid {
+    // Section headers are valid if they have a section name
+    if (sectionName != null && sectionName!.trim().isNotEmpty) {
+      return true;
+    }
+    // Regular ingredients need a meaningful name with at least one letter/number
+    final cleanName = name.trim();
+    if (cleanName.isEmpty) return false;
+    if (!RegExp(r'[a-zA-Z0-9]').hasMatch(cleanName)) return false;
+    // Skip if name is same as section (duplicate header)
+    if (sectionName != null && cleanName.toLowerCase() == sectionName!.toLowerCase()) {
+      return false;
+    }
+    return true;
+  }
+  
+  /// Sanitize a list of raw ingredients, removing invalid entries
+  static List<RawIngredientData> sanitize(List<RawIngredientData> ingredients) {
+    return ingredients.where((i) => i.isValid).toList();
+  }
 }
 
 /// A raw direction from import

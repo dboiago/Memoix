@@ -32,6 +32,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   String _selectedCourse = 'Mains';
   String? _selectedCuisine;
 
+  // Sanitized ingredients list (removes empty/invalid entries)
+  late List<RawIngredientData> _sanitizedIngredients;
+
   // Track which raw ingredients to include
   late Set<int> _selectedIngredientIndices;
 
@@ -50,9 +53,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _selectedCourse = result.course ?? 'Mains';
     _selectedCuisine = result.cuisine;
 
-    // Pre-select all ingredients
+    // Sanitize ingredients to remove empty/invalid entries
+    _sanitizedIngredients = RawIngredientData.sanitize(result.rawIngredients);
+
+    // Pre-select all sanitized ingredients
     _selectedIngredientIndices =
-        Set.from(List.generate(result.rawIngredients.length, (i) => i));
+        Set.from(List.generate(_sanitizedIngredients.length, (i) => i));
 
     // Pre-select all directions
     _selectedDirectionIndices =
@@ -428,7 +434,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   }
 
   Widget _buildIngredientsList(ThemeData theme, RecipeImportResult result) {
-    if (result.rawIngredients.isEmpty) {
+    if (_sanitizedIngredients.isEmpty) {
       return Card(
         color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
         child: Padding(
@@ -447,14 +453,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         Row(
           children: [
             Text(
-              '${_selectedIngredientIndices.length} of ${result.rawIngredients.length} selected',
+              '${_selectedIngredientIndices.length} of ${_sanitizedIngredients.length} selected',
               style: theme.textTheme.bodySmall,
             ),
             const Spacer(),
             TextButton(
               onPressed: () => setState(() {
                 _selectedIngredientIndices = Set.from(
-                    List.generate(result.rawIngredients.length, (i) => i),);
+                    List.generate(_sanitizedIngredients.length, (i) => i),);
               }),
               child: const Text('All'),
             ),
@@ -469,7 +475,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         
         // Check if any ingredient has baker's percentage
         Builder(builder: (context) {
-          final hasBakerPercent = result.rawIngredients.any((i) => i.bakerPercent != null);
+          final hasBakerPercent = _sanitizedIngredients.any((i) => i.bakerPercent != null);
           
           return Column(
             children: [
@@ -532,26 +538,18 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
                 ),
                 child: Column(
-                  children: result.rawIngredients.asMap().entries.map((entry) {
+                  children: _sanitizedIngredients.asMap().entries.map((entry) {
                     final index = entry.key;
                     final ingredient = entry.value;
                     final isSelected = _selectedIngredientIndices.contains(index);
-                    final isLast = index == result.rawIngredients.length - 1;
+                    final isLast = index == _sanitizedIngredients.length - 1;
                     
                     // Clean the name - remove colons and trim
                     final cleanName = ingredient.name.replaceAll(':', '').trim();
                     
-                    // Skip empty entries (no meaningful name and no section)
-                    // Also skip if name is just punctuation or the same as section name
-                    final isEmptyOrDuplicate = cleanName.isEmpty || 
-                        (ingredient.sectionName != null && 
-                         cleanName.toLowerCase() == ingredient.sectionName!.toLowerCase());
-                    if (isEmptyOrDuplicate && ingredient.sectionName == null) {
-                      return const SizedBox.shrink();
-                    }
-                    
-                    // Check if this is a section-only header (empty/duplicate name, has section)
-                    final isSectionHeader = isEmptyOrDuplicate && ingredient.sectionName != null;
+                    // Check if this is a section-only header (empty name, has section)
+                    // Sanitization already removed truly empty entries, so if name is empty here it's a section header
+                    final isSectionHeader = cleanName.isEmpty && ingredient.sectionName != null;
 
                     // Section header row - spans full width
                     if (isSectionHeader) {
@@ -850,8 +848,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     final ingredients = <Ingredient>[];
     String? currentSection;
     for (final index in _selectedIngredientIndices.toList()..sort()) {
-      if (index < widget.importResult.rawIngredients.length) {
-        final rawIngredient = widget.importResult.rawIngredients[index];
+      if (index < _sanitizedIngredients.length) {
+        final rawIngredient = _sanitizedIngredients[index];
         
         // If this is a section header (empty name with section), track it but don't add
         if (rawIngredient.name.isEmpty && rawIngredient.sectionName != null) {
