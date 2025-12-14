@@ -2041,7 +2041,7 @@ class UrlRecipeImporter {
     
     // For drinks, detect the base spirit and set as subcategory
     String? subcategory;
-    if (course == 'drinks') {
+    if (course == 'Drinks') {
       subcategory = _detectSpirit(ingredients);
       // Convert code to display name
       if (subcategory != null) {
@@ -2152,7 +2152,7 @@ class UrlRecipeImporter {
 
     // For drinks, detect the base spirit
     String? subcategory;
-    if (course == 'drinks') {
+    if (course == 'Drinks') {
       subcategory = _detectSpirit(ingredients);
       if (subcategory != null) {
         subcategory = Spirit.toDisplayName(subcategory);
@@ -3147,12 +3147,12 @@ class UrlRecipeImporter {
     
     // Check if this is from a cocktail site
     if (sourceUrl != null && _isCocktailSite(sourceUrl)) {
-      return 'drinks';
+      return 'Drinks';
     }
     
     // Check for drink/cocktail indicators in the data
     if (_isDrinkRecipe(category, keywords, name, description)) {
-      return 'drinks';
+      return 'Drinks';
     }
     
     if (category != null) {
@@ -3167,7 +3167,7 @@ class UrlRecipeImporter {
       if (category.contains('pizza')) return 'Pizzas';
     }
     
-    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'vegn';
+    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'Veg\'n';
     
     return 'Mains'; // Default
   }
@@ -3282,9 +3282,9 @@ class UrlRecipeImporter {
     // Try to detect course from content
     String course;
     if (isCocktail) {
-      course = 'drinks';
+      course = 'Drinks';
     } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
-      course = 'modernist';
+      course = 'Modernist';
     } else {
       course = 'Mains';
     }
@@ -4158,7 +4158,7 @@ class UrlRecipeImporter {
       course = 'Smoking';
       courseConfidence = 0.8;
     } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
-      course = 'modernist';
+      course = 'Modernist';
       courseConfidence = 0.75;
     } else if (_isBreadRecipe(titleLower, urlLower, rawIngredientStrings)) {
       course = 'Breads';
@@ -4238,12 +4238,6 @@ class UrlRecipeImporter {
 
     // Build detected courses list - include the course we detected
     final detectedCourses = <String>[course];
-
-    // Build notes from equipment if found
-    String? notes;
-    if (equipmentItems.isNotEmpty) {
-      notes = 'Equipment: ${equipmentItems.join(', ')}';
-    }
     
     // Extract image from schema.org markup, og:image, or common recipe image selectors
     final String? imageUrl = _extractImageFromHtml(document);
@@ -4265,7 +4259,6 @@ class UrlRecipeImporter {
       time: timing,
       ingredients: ingredients,
       directions: rawDirections,
-      notes: notes,
       equipment: equipmentItems,
       rawIngredients: rawIngredients,
       rawDirections: rawDirections,
