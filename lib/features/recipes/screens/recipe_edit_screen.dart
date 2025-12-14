@@ -131,7 +131,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _fatController = TextEditingController();
 
     if (widget.defaultCourse != null) {
-      _selectedCourse = widget.defaultCourse!;
+      _selectedCourse = _normaliseCourseSlug(widget.defaultCourse!.toLowerCase());
     }
 
     _loadRecipe();
@@ -248,6 +248,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       'not-meat': 'vegn',
       'not meat': 'vegn',
       'vegetarian': 'vegn',
+      "veg'n": 'vegn',  // Handle display name -> slug
     };
     return mapping[course] ?? course;
   }
