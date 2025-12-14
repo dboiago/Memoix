@@ -59,7 +59,7 @@ void main(List<String> args) async {
   final existingFiles = byCourse.keys.map((c) => '$c.json').toList()..sort();
   await indexFile.writeAsString(const JsonEncoder.withIndent('  ').convert({
     'files': existingFiles,
-  }));
+  }),);
   print('Updated index.json');
 
   print('Done!');
