@@ -1028,30 +1028,62 @@ class UrlRecipeImporter {
         lastError = 'no panel params';
       }
       
-      // Method 1b: If extracted params failed, try constructed params
+      // Method 1b: If extracted params failed, try player API to get fresh caption URL
       if (lastError.isNotEmpty && !lastError.contains('segments')) {
         try {
-          final constructedParams = _buildTranscriptParams(videoId);
-          final transcriptResponse = await http.post(
-            Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript?prettyPrint=false'),
+          // Use innertube player API to get fresh caption tracks
+          final playerResponse = await http.post(
+            Uri.parse('https://www.youtube.com/youtubei/v1/player?prettyPrint=false'),
             headers: {
               'Content-Type': 'application/json',
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
               'Origin': 'https://www.youtube.com',
-              'Referer': 'https://www.youtube.com/watch?v=$videoId',
             },
-            body: '{"context":{"client":{"clientName":"WEB","clientVersion":"2.20231219.04.00","hl":"en"}},"params":"$constructedParams"}',
+            body: '{"context":{"client":{"clientName":"WEB","clientVersion":"2.20231219.04.00","hl":"en"}},"videoId":"$videoId"}',
           );
           
-          if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
-            final segments = _parseYouTubeiTranscript(transcriptResponse.body);
-            if (segments.isNotEmpty) {
-              return (segments, 'youtubei(built): ${segments.length} segments');
+          if (playerResponse.statusCode == 200) {
+            // Extract caption URL from player response
+            final captionMatch = RegExp(
+              r'"captionTracks":\s*\[\s*\{[^}]*"baseUrl"\s*:\s*"([^"]+)"',
+            ).firstMatch(playerResponse.body);
+            
+            if (captionMatch != null) {
+              var freshCaptionUrl = _decodeUnicodeEscapes(captionMatch.group(1)!);
+              // Add format parameter
+              if (!freshCaptionUrl.contains('fmt=')) {
+                freshCaptionUrl = '$freshCaptionUrl&fmt=json3';
+              }
+              
+              final captionResponse = await http.get(
+                Uri.parse(freshCaptionUrl),
+                headers: {
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                },
+              );
+              
+              if (captionResponse.statusCode == 200 && captionResponse.body.isNotEmpty) {
+                final segments = _parseTranscriptJson(captionResponse.body);
+                if (segments.isNotEmpty) {
+                  return (segments, 'player: ${segments.length} segments');
+                }
+                // Try XML parsing
+                final xmlSegments = _parseTranscriptXmlWithTimestamps(captionResponse.body);
+                if (xmlSegments.isNotEmpty) {
+                  return (xmlSegments, 'player-xml: ${xmlSegments.length} segments');
+                }
+                lastError = '$lastError | player:0segs';
+              } else {
+                lastError = '$lastError | player-cap:${captionResponse.statusCode}';
+              }
+            } else {
+              lastError = '$lastError | player:no-cap';
             }
+          } else {
+            lastError = '$lastError | player:${playerResponse.statusCode}';
           }
-          lastError = '$lastError | built:${transcriptResponse.statusCode}';
         } catch (e) {
-          lastError = '$lastError | built:err';
+          lastError = '$lastError | player:err';
         }
       }
       
