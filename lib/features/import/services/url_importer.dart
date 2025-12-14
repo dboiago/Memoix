@@ -2861,22 +2861,23 @@ class UrlRecipeImporter {
     
     // Handle baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
     // or "Warm Water, 75% – 450g (2 Cups)" or "Extra Virgin Olive Oil, 3.3% – 20g (2 tbsp.)"
+    // or "Active Dry Yeast, 0.15% – 1/4 tsp. (Instant is good too)"
     final bakerPercentMatch = RegExp(
-      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l))\s*(?:\(([^)]+)\))?',  // en-dash, em-dash, or hyphen
+      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*([\d./½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:g|kg|ml|l|tsp|tbsp|cup|oz|lb)s?\.?)\s*(?:\(([^)]+)\))?',  // en-dash, em-dash, or hyphen
       caseSensitive: false,
     ).firstMatch(remaining);
     if (bakerPercentMatch != null) {
       final name = bakerPercentMatch.group(1)?.trim() ?? '';
       final bakerPercent = bakerPercentMatch.group(2)?.trim();
-      final metric = bakerPercentMatch.group(3)?.trim() ?? '';
-      final imperial = bakerPercentMatch.group(4)?.trim();
+      final amount = bakerPercentMatch.group(3)?.trim() ?? '';
+      final notes = bakerPercentMatch.group(4)?.trim();
       
-      // Use metric as the amount, imperial as preparation/notes
+      // Use the amount as-is, notes go to preparation
       // Store bakerPercent in the bakerPercent field
       return Ingredient.create(
         name: name,
-        amount: metric,
-        preparation: imperial,
+        amount: amount,
+        preparation: notes,
         bakerPercent: bakerPercent != null ? '$bakerPercent%' : null,
       );
     }
