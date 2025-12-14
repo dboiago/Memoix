@@ -3725,6 +3725,40 @@ class UrlRecipeImporter {
       }
     }
     
+    // AmazingFoodMadeEasy and similar sites use ingredient_dish_header for section headers
+    // Combined with li.ingredient for ingredient items
+    if (rawIngredientStrings.isEmpty) {
+      // Query both section headers and ingredients, then process in document order
+      final sectionHeadersAndIngredients = document.querySelectorAll('.ingredient_dish_header, h3.ingredient_dish_header, li.ingredient');
+      
+      if (sectionHeadersAndIngredients.isNotEmpty) {
+        for (final elem in sectionHeadersAndIngredients) {
+          final tagName = elem.localName?.toLowerCase() ?? '';
+          final classes = elem.classes ?? [];
+          
+          // Check if this is a section header
+          if (classes.contains('ingredient_dish_header') || 
+              (tagName == 'h3' && classes.contains('ingredient_dish_header'))) {
+            final sectionText = _decodeHtml((elem.text ?? '').trim());
+            if (sectionText.isNotEmpty) {
+              // Add section header marker
+              rawIngredientStrings.add('[$sectionText]');
+            }
+          } else if (tagName == 'li' && classes.contains('ingredient')) {
+            // This is an ingredient
+            final text = _decodeHtml((elem.text ?? '').trim());
+            if (text.isNotEmpty) {
+              rawIngredientStrings.add(text);
+            }
+          }
+        }
+        
+        if (rawIngredientStrings.isNotEmpty) {
+          usedStructuredFormat = true;
+        }
+      }
+    }
+    
     // If still empty, try standard selectors
     if (rawIngredientStrings.isEmpty) {
       final ingredientElements = document.querySelectorAll(

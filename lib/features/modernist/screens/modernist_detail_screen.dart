@@ -836,3 +836,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     }
   }
 }
+
+/// Helper class for indexed ingredients
+class _IndexedIngredient {
+  final int index;
+  final ModernistIngredient ingredient;
+
+  _IndexedIngredient(this.index, this.ingredient);
+}
