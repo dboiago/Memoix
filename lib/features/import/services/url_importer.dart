@@ -3450,15 +3450,24 @@ class UrlRecipeImporter {
       }
     }
     
-    // Final fallback: scan entire body for bullet-pointed content (• character)
-    // This handles sites like Modernist Pantry that use plain text bullets
+    // Final fallback: scan entire body for ingredient-like content
+    // This handles sites like Modernist Pantry that use plain text bullets or unusual formatting
     if (rawIngredientStrings.isEmpty) {
       final bodyText = document.body?.text ?? '';
       
-      // Look for bullet points anywhere in the body
-      if (bodyText.contains('•')) {
-        // Simple approach: just split by bullet and filter for ingredient-like content
-        final allBulletItems = bodyText.split('•');
+      // Try multiple bullet/separator characters
+      final bulletChars = ['•', '\u2022', '\u2023', '\u25E6', '·', '●', '○'];
+      String? bulletChar;
+      for (final bc in bulletChars) {
+        if (bodyText.contains(bc)) {
+          bulletChar = bc;
+          break;
+        }
+      }
+      
+      if (bulletChar != null) {
+        // Split by the found bullet character
+        final allBulletItems = bodyText.split(bulletChar);
         final potentialIngredients = <String>[];
         
         for (var item in allBulletItems) {
@@ -3488,6 +3497,51 @@ class UrlRecipeImporter {
           
           if (looksLikeIngredient) {
             potentialIngredients.add(item);
+          }
+        }
+        
+        if (potentialIngredients.length >= 2) {
+          rawIngredientStrings = _processIngredientListItems(potentialIngredients);
+        }
+      }
+      
+      // If still no ingredients, try line-by-line scanning for measurement patterns
+      if (rawIngredientStrings.isEmpty) {
+        final lines = bodyText.split('\n');
+        final potentialIngredients = <String>[];
+        bool inIngredientSection = false;
+        
+        for (var line in lines) {
+          line = _decodeHtml(line.trim());
+          if (line.isEmpty) continue;
+          
+          // Check if we're entering an ingredients section
+          if (line.toLowerCase().contains('ingredient') && line.length < 50) {
+            inIngredientSection = true;
+            continue;
+          }
+          
+          // Check if we're leaving the ingredients section
+          if (inIngredientSection && 
+              (line.toLowerCase().contains('equipment') ||
+               line.toLowerCase().contains('direction') ||
+               line.toLowerCase().contains('instruction') ||
+               line.toLowerCase().contains('method') ||
+               line.toLowerCase().contains('step') && line.length < 30)) {
+            break;
+          }
+          
+          if (inIngredientSection && line.length > 3 && line.length < 150) {
+            // Check if this looks like an ingredient
+            final looksLikeIngredient = 
+                RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg)', caseSensitive: false).hasMatch(line) ||
+                RegExp(r'[½¼¾⅓⅔⅛⅜⅝⅞]', caseSensitive: false).hasMatch(line) ||
+                RegExp(r'\(\d+[^)]*(?:cup|tbsp|tsp|oz|g)\)', caseSensitive: false).hasMatch(line) ||
+                line.endsWith(':');
+            
+            if (looksLikeIngredient) {
+              potentialIngredients.add(line);
+            }
           }
         }
         
