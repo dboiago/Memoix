@@ -250,7 +250,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     Text(
                       'Check: ${result.fieldsNeedingAttention.join(", ")}',
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: Colors.orange,
+                        color: theme.colorScheme.secondary,
                       ),
                     ),
                   ],
@@ -291,18 +291,21 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     double confidence = 1.0,
   }) {
     final Color indicatorColor;
+    final String label;
     if (confidence >= 0.7) {
       indicatorColor = Colors.green;
+      label = 'Good';
     } else if (confidence >= 0.4) {
       indicatorColor = Colors.orange;
+      label = 'Review';
     } else {
-      indicatorColor = Colors.red;
+      // Use secondary color for "Needs input" - works in both light and dark mode
+      indicatorColor = theme.colorScheme.secondary;
+      label = 'Needs input';
     }
 
     return Row(
       children: [
-        Icon(icon, size: 20, color: theme.colorScheme.primary),
-        const SizedBox(width: 8),
         Text(
           title,
           style: theme.textTheme.titleMedium?.copyWith(
@@ -320,11 +323,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         ),
         const SizedBox(width: 4),
         Text(
-          confidence >= 0.7
-              ? 'Good'
-              : confidence >= 0.4
-                  ? 'Review'
-                  : 'Needs input',
+          label,
           style: theme.textTheme.bodySmall?.copyWith(color: indicatorColor),
         ),
       ],

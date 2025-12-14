@@ -103,16 +103,15 @@ class RecipeImportResult {
       name!.isNotEmpty &&
       (ingredients.isNotEmpty || directions.isNotEmpty);
 
-  /// Fields that need attention (low confidence)
+  /// Fields that need attention (low confidence on required/important fields)
+  /// Excludes optional fields like cuisine, serves, time
   List<String> get fieldsNeedingAttention {
     final fields = <String>[];
     if (nameConfidence < 0.5) fields.add('name');
     if (ingredientsConfidence < 0.5) fields.add('ingredients');
     if (directionsConfidence < 0.5) fields.add('directions');
     if (courseConfidence < 0.5) fields.add('course');
-    if (cuisineConfidence < 0.5) fields.add('cuisine');
-    if (servesConfidence < 0.5) fields.add('serves');
-    if (timeConfidence < 0.5) fields.add('time');
+    // Don't include optional fields: cuisine, serves, time
     return fields;
   }
 

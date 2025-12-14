@@ -261,6 +261,9 @@ class UrlRecipeImporter {
       // Clean recipe name - remove common YouTube suffixes
       String recipeName = _cleanYouTubeTitle(title ?? 'YouTube Recipe');
       
+      // Detect course from title
+      final detectedCourse = _detectCourseFromTitle(recipeName);
+      
       // Build notes with channel attribution
       String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
       if (parsedDescription['notes'] != null) {
@@ -287,16 +290,16 @@ class UrlRecipeImporter {
       
       return RecipeImportResult(
         name: recipeName,
-        course: 'Mains', // Default - user can change in review
+        course: detectedCourse ?? 'Mains',
         ingredients: ingredients,
         directions: directions,
         notes: notes,
         imageUrl: thumbnail,
         rawIngredients: rawIngredients,
         rawDirections: directions,
-        detectedCourses: ['Mains'],
+        detectedCourses: [detectedCourse ?? 'Mains'],
         nameConfidence: title != null ? 0.7 : 0.3,
-        courseConfidence: 0.3, // Low - we're guessing
+        courseConfidence: detectedCourse != null ? 0.7 : 0.3,
         ingredientsConfidence: hasIngredients ? 0.6 : 0.0,
         directionsConfidence: hasDirections 
             ? (transcriptDirections.isNotEmpty ? 0.5 : 0.7) 
@@ -339,6 +342,63 @@ class UrlRecipeImporter {
     }
     
     return cleaned.trim();
+  }
+  
+  /// Detect recipe course from title keywords
+  String? _detectCourseFromTitle(String title) {
+    final lowerTitle = title.toLowerCase();
+    
+    // Breads course keywords
+    if (RegExp(r'\b(?:bread|focaccia|ciabatta|baguette|brioche|sourdough|rolls?|buns?|loaf|loaves|naan|pita|flatbread|bagels?|croissants?|pretzels?|challah)\b').hasMatch(lowerTitle)) {
+      return 'Breads';
+    }
+    
+    // Desserts course keywords
+    if (RegExp(r'\b(?:cake|cookie|cookies|brownie|pie|tart|dessert|sweet|chocolate|cheesecake|cupcake|muffin|donut|doughnut|pastry|pastries|pudding|ice\s*cream|sorbet|flan|custard|macarons?|tiramisu|mousse|crème\s*brûlée|pavlova|baklava|cinnamon\s*rolls?)\b').hasMatch(lowerTitle)) {
+      return 'Desserts';
+    }
+    
+    // Soups course keywords
+    if (RegExp(r'\b(?:soup|stew|chowder|bisque|broth|consommé|gazpacho|minestrone|pho|ramen|chili)\b').hasMatch(lowerTitle)) {
+      return 'Soup';
+    }
+    
+    // Sides course keywords
+    if (RegExp(r'\b(?:salad|slaw|coleslaw|side\s*dish|mashed|roasted\s*(?:vegetables?|veggies|potatoes)|french\s*fries|fries|wedges|gratin|pilaf|rice\s*dish)\b').hasMatch(lowerTitle)) {
+      return 'Sides';
+    }
+    
+    // Drinks course keywords
+    if (RegExp(r'\b(?:cocktail|smoothie|juice|lemonade|drink|beverage|mocktail|sangria|punch|milkshake|frappe|coffee|espresso|latte|tea)\b').hasMatch(lowerTitle)) {
+      return 'Drinks';
+    }
+    
+    // Sauces course keywords
+    if (RegExp(r'\b(?:sauce|gravy|dressing|dip|aioli|mayo|mayonnaise|ketchup|mustard|vinaigrette|pesto|salsa|guacamole|hummus|relish|chutney|coulis)\b').hasMatch(lowerTitle)) {
+      return 'Sauces';
+    }
+    
+    // Brunch course keywords
+    if (RegExp(r'\b(?:brunch|breakfast|pancake|waffle|french\s*toast|eggs?\s*benedict|omelette|omelet|frittata|quiche|hash|scrambled|poached\s*eggs?)\b').hasMatch(lowerTitle)) {
+      return 'Brunch';
+    }
+    
+    // Apps (appetizers) course keywords
+    if (RegExp(r'\b(?:appetizer|starter|tapas|antipasto|bruschetta|crostini|canapé|spring\s*rolls?|egg\s*rolls?|dumplings?|wontons?|samosa|empanada|arancini|croquette)\b').hasMatch(lowerTitle)) {
+      return 'Apps';
+    }
+    
+    // Pickles course keywords
+    if (RegExp(r'\b(?:pickle|pickled|ferment|kimchi|sauerkraut|preserve|preserves|canning|jam|jelly|marmalade)\b').hasMatch(lowerTitle)) {
+      return 'Pickles';
+    }
+    
+    // Rubs course keywords
+    if (RegExp(r'\b(?:rub|seasoning|spice\s*mix|spice\s*blend|marinade)\b').hasMatch(lowerTitle)) {
+      return 'Rubs';
+    }
+    
+    return null; // Let it default to Mains
   }
   
   /// Parse YouTube video description to extract ingredients and directions
@@ -445,12 +505,12 @@ class UrlRecipeImporter {
   }
   
   bool _isIgnorableSection(String line) {
-    return RegExp(r'^(follow me|subscribe|social|links?|connect|my (?:gear|equipment|kitchen)|affiliate|music|credits?|chapters?|timestamps?)[:\s]*$', caseSensitive: false).hasMatch(line);
+    return RegExp(r'^(follow me|subscribe|social|links?|connect|my (?:gear|equipment|kitchen|tools|setup|camera)|affiliate|music|credits?|chapters?|timestamps?|shop|merch|merchandise|sponsors?|business|contact|about me|faq|disclaimer)[:\s]*$', caseSensitive: false).hasMatch(line);
   }
   
   bool _isIgnorableLine(String line) {
-    // URLs
-    if (line.startsWith('http://') || line.startsWith('https://') || line.startsWith('www.')) {
+    // URLs anywhere in the line
+    if (line.contains('http://') || line.contains('https://') || line.startsWith('www.') || line.contains('.com/') || line.contains('.co/')) {
       return true;
     }
     // Timestamps like "0:00" or "1:23:45"
@@ -461,8 +521,24 @@ class UrlRecipeImporter {
     if (RegExp(r'^[@#]').hasMatch(line)) {
       return true;
     }
-    // Common YouTube description boilerplate
-    if (RegExp(r'subscribe|follow me|check out|affiliate|music by|filmed with', caseSensitive: false).hasMatch(line) && line.length < 60) {
+    // Amazon affiliate patterns
+    if (RegExp(r'amzn\.to|amazon\.com|a]inks|affiliate|commission', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Social media and promo boilerplate
+    if (RegExp(r'subscribe|follow me|check out my|filmed with|music by|instagram|facebook|twitter|tiktok|patreon|merch|merchandise|shop my|use code|discount|sponsored|#ad\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Equipment/gear list sections
+    if (RegExp(r'^my\s+(?:gear|equipment|kitchen|tools|camera|setup)|i\s+use\s+(?:this|these)|what i\s+(?:film|shoot|use)', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Business inquiries / contact info
+    if (RegExp(r'business\s*(?:inquir|email)|contact\s*me|for\s*(?:inquir|collaborat)', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Chapter markers / timestamps
+    if (RegExp(r'^chapters?\s*$|^timestamps?\s*$', caseSensitive: false).hasMatch(line)) {
       return true;
     }
     return false;
