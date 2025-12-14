@@ -841,34 +841,26 @@ class UrlRecipeImporter {
       String usedMethod = '';
       String lastError = '';
       
-      // Method 1: Try YouTube's internal transcript API (what the player uses)
-      // First, extract the serializedShareEntity or transcript params from page
-      final paramsMatch = RegExp(
-        r'"serializedShareEntity"\s*:\s*"([^"]+)"',
+      // Method 1: Try to find transcript engagement panel params
+      // Look for engagementPanels with transcriptSearchPanelRenderer
+      final panelMatch = RegExp(
+        r'"engagementPanels".*?"targetId"\s*:\s*"engagement-panel-searchable-transcript".*?"params"\s*:\s*"([^"]+)"',
+        dotAll: true,
       ).firstMatch(pageBody);
       
-      final transcriptParams = paramsMatch?.group(1) ?? '';
+      final transcriptParams = panelMatch?.group(1);
       
-      if (transcriptParams.isNotEmpty) {
+      if (transcriptParams != null) {
         try {
           final transcriptResponse = await http.post(
-            Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript'),
+            Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript?prettyPrint=false'),
             headers: {
               'Content-Type': 'application/json',
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
               'Origin': 'https://www.youtube.com',
               'Referer': 'https://www.youtube.com/watch?v=$videoId',
             },
-            body: '''{
-              "context": {
-                "client": {
-                  "clientName": "WEB",
-                  "clientVersion": "2.20231219.04.00",
-                  "hl": "en"
-                }
-              },
-              "params": "$transcriptParams"
-            }''',
+            body: '{"context":{"client":{"clientName":"WEB","clientVersion":"2.20231219.04.00","hl":"en"}},"params":"$transcriptParams"}',
           );
           
           if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
@@ -876,19 +868,15 @@ class UrlRecipeImporter {
             if (segments.isNotEmpty) {
               return (segments, 'youtubei: ${segments.length} segments');
             }
-            // Store response sample for debugging
-            final sample = transcriptResponse.body.length > 80 
-                ? transcriptResponse.body.substring(0, 80) 
-                : transcriptResponse.body;
-            lastError = 'youtubei: 0 segs, sample: $sample';
+            lastError = 'youtubei: 0 segs from ${transcriptResponse.body.length}b';
           } else {
-            lastError = 'youtubei: status=${transcriptResponse.statusCode}, len=${transcriptResponse.body.length}';
+            lastError = 'youtubei: ${transcriptResponse.statusCode}';
           }
         } catch (e) {
-          lastError = 'youtubei err: ${e.toString().length > 20 ? e.toString().substring(0, 20) : e}';
+          lastError = 'youtubei err';
         }
       } else {
-        lastError = 'no params';
+        lastError = 'no panel params';
       }
       
       // Store youtubei result before trying timedtext
