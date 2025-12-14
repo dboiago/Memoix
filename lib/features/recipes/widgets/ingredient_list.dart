@@ -227,13 +227,17 @@ class _IngredientListState extends State<IngredientList> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.tertiaryContainer,
+                  color: theme.colorScheme.secondary.withOpacity(0.15),
                   borderRadius: BorderRadius.circular(4),
+                  border: Border.all(
+                    color: theme.colorScheme.secondary,
+                    width: 1,
+                  ),
                 ),
                 child: Text(
                   ingredient.bakerPercent!,
                   style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.onTertiaryContainer,
+                    color: theme.colorScheme.secondary,
                     fontWeight: FontWeight.w500,
                   ),
                 ),

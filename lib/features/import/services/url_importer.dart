@@ -2867,16 +2867,17 @@ class UrlRecipeImporter {
     ).firstMatch(remaining);
     if (bakerPercentMatch != null) {
       final name = bakerPercentMatch.group(1)?.trim() ?? '';
-      final bakerPercent = bakerPercentMatch.group(2)?.trim(); // Capture for future use
+      final bakerPercent = bakerPercentMatch.group(2)?.trim();
       final metric = bakerPercentMatch.group(3)?.trim() ?? '';
       final imperial = bakerPercentMatch.group(4)?.trim();
       
       // Use metric as the amount, imperial as preparation/notes
-      // In future, bakerPercent could be stored in a separate field
+      // Store bakerPercent in the bakerPercent field
       return Ingredient.create(
         name: name,
         amount: metric,
         preparation: imperial,
+        bakerPercent: bakerPercent != null ? '$bakerPercent%' : null,
       );
     }
     
