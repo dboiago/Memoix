@@ -538,13 +538,20 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     final isSelected = _selectedIngredientIndices.contains(index);
                     final isLast = index == result.rawIngredients.length - 1;
                     
+                    // Clean the name - remove colons and trim
+                    final cleanName = ingredient.name.replaceAll(':', '').trim();
+                    
                     // Skip empty entries (no meaningful name and no section)
-                    if (ingredient.name.trim().isEmpty && ingredient.sectionName == null) {
+                    // Also skip if name is just punctuation or the same as section name
+                    final isEmptyOrDuplicate = cleanName.isEmpty || 
+                        (ingredient.sectionName != null && 
+                         cleanName.toLowerCase() == ingredient.sectionName!.toLowerCase());
+                    if (isEmptyOrDuplicate && ingredient.sectionName == null) {
                       return const SizedBox.shrink();
                     }
                     
-                    // Check if this is a section-only header (empty name, has section)
-                    final isSectionHeader = ingredient.name.trim().isEmpty && ingredient.sectionName != null;
+                    // Check if this is a section-only header (empty/duplicate name, has section)
+                    final isSectionHeader = isEmptyOrDuplicate && ingredient.sectionName != null;
 
                     // Section header row - spans full width
                     if (isSectionHeader) {

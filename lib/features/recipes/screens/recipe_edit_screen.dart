@@ -1459,9 +1459,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                     value: 'delete',
                     child: Row(
                       children: [
-                        Icon(Icons.delete_outline, size: 18, color: theme.colorScheme.error),
+                        Icon(Icons.delete_outline, size: 18, color: theme.colorScheme.secondary),
                         const SizedBox(width: 8),
-                        Text('Delete', style: TextStyle(color: theme.colorScheme.error)),
+                        Text('Delete', style: TextStyle(color: theme.colorScheme.secondary)),
                       ],
                     ),
                   ),
@@ -1625,9 +1625,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                     value: 'delete',
                     child: Row(
                       children: [
-                        Icon(Icons.delete_outline, size: 18, color: theme.colorScheme.error),
+                        Icon(Icons.delete_outline, size: 18, color: theme.colorScheme.secondary),
                         const SizedBox(width: 8),
-                        Text('Delete', style: TextStyle(color: theme.colorScheme.error)),
+                        Text('Delete', style: TextStyle(color: theme.colorScheme.secondary)),
                       ],
                     ),
                   ),
