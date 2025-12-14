@@ -207,6 +207,10 @@ class UrlRecipeImporter {
           continue;
         }
       }
+      
+      // Try to extract recipe data from embedded JavaScript (React/Next.js/Vue hydration state)
+      final embeddedResult = _tryExtractFromEmbeddedJson(body, url);
+      if (embeddedResult != null) return embeddedResult;
 
       // Fallback: try to parse from HTML structure
       final result = _parseFromHtmlWithConfidence(document, url, body);
@@ -290,6 +294,133 @@ class UrlRecipeImporter {
         return latin1.decode(response.bodyBytes);
       }
     }
+  }
+  
+  /// Try to extract recipe data from embedded JavaScript (React/Next.js/Vue hydration state)
+  /// Many modern sites embed recipe data in script tags for client-side rendering
+  RecipeImportResult? _tryExtractFromEmbeddedJson(String body, String sourceUrl) {
+    // Common patterns for embedded JSON data in JavaScript-heavy sites
+    final patterns = [
+      // Next.js __NEXT_DATA__
+      RegExp(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', dotAll: true),
+      // Nuxt.js __NUXT__
+      RegExp(r'window\.__NUXT__\s*=\s*(\{.*?\});?\s*</script>', dotAll: true),
+      // Generic window.__INITIAL_STATE__ or similar
+      RegExp(r'window\.__INITIAL_STATE__\s*=\s*(\{.*?\});?\s*</script>', dotAll: true),
+      // WordPress REST API embedded data
+      RegExp(r'<script[^>]*type="application/json"[^>]*>(.*?)</script>', dotAll: true),
+      // Generic JSON object containing recipe-like data
+      RegExp(r'"recipeIngredient"\s*:\s*\[(.*?)\]', dotAll: true),
+      RegExp(r'"ingredients"\s*:\s*\[(.*?)\]', dotAll: true),
+    ];
+    
+    for (final pattern in patterns) {
+      final matches = pattern.allMatches(body);
+      for (final match in matches) {
+        try {
+          String jsonStr = match.group(1) ?? '';
+          if (jsonStr.isEmpty) continue;
+          
+          // For the ingredient array patterns, wrap them back into valid JSON
+          if (pattern.pattern.contains('recipeIngredient') || pattern.pattern.contains('"ingredients"')) {
+            // Try to find the full recipe object around this
+            final ingredientIdx = body.indexOf(match.group(0)!);
+            if (ingredientIdx >= 0) {
+              // Search backward for opening brace of recipe object
+              int braceCount = 0;
+              int startIdx = ingredientIdx;
+              for (int i = ingredientIdx; i >= 0 && i > ingredientIdx - 5000; i--) {
+                if (body[i] == '}') braceCount++;
+                if (body[i] == '{') {
+                  braceCount--;
+                  if (braceCount < 0) {
+                    startIdx = i;
+                    break;
+                  }
+                }
+              }
+              // Search forward for closing brace
+              braceCount = 0;
+              int endIdx = ingredientIdx + match.group(0)!.length;
+              for (int i = startIdx; i < body.length && i < startIdx + 10000; i++) {
+                if (body[i] == '{') braceCount++;
+                if (body[i] == '}') {
+                  braceCount--;
+                  if (braceCount == 0) {
+                    endIdx = i + 1;
+                    break;
+                  }
+                }
+              }
+              jsonStr = body.substring(startIdx, endIdx);
+            }
+          }
+          
+          // Try to parse as JSON
+          final data = jsonDecode(jsonStr);
+          
+          // Look for recipe data within the parsed JSON
+          final result = _findRecipeInNestedJson(data, sourceUrl);
+          if (result != null) return result;
+        } catch (_) {
+          continue;
+        }
+      }
+    }
+    
+    return null;
+  }
+  
+  /// Recursively search for recipe data in nested JSON structures
+  RecipeImportResult? _findRecipeInNestedJson(dynamic data, String sourceUrl, [int depth = 0]) {
+    if (depth > 10) return null; // Prevent infinite recursion
+    
+    if (data is Map<String, dynamic>) {
+      // Check if this looks like a recipe object
+      if (_looksLikeRecipe(data)) {
+        final result = _parseJsonLdWithConfidence(data, sourceUrl);
+        if (result != null) return result;
+      }
+      
+      // Check for @type: Recipe
+      if (data['@type'] == 'Recipe' || data['type'] == 'Recipe') {
+        final result = _parseJsonLdWithConfidence(data, sourceUrl);
+        if (result != null) return result;
+      }
+      
+      // Recurse into nested objects
+      for (final value in data.values) {
+        final result = _findRecipeInNestedJson(value, sourceUrl, depth + 1);
+        if (result != null) return result;
+      }
+    } else if (data is List) {
+      for (final item in data) {
+        final result = _findRecipeInNestedJson(item, sourceUrl, depth + 1);
+        if (result != null) return result;
+      }
+    }
+    
+    return null;
+  }
+  
+  /// Check if a map looks like it might be recipe data
+  bool _looksLikeRecipe(Map<String, dynamic> data) {
+    // Must have some kind of name/title
+    final hasName = data.containsKey('name') || data.containsKey('title') || data.containsKey('recipeName');
+    if (!hasName) return false;
+    
+    // Must have ingredients
+    final hasIngredients = data.containsKey('recipeIngredient') || 
+        data.containsKey('ingredients') || 
+        data.containsKey('extendedIngredients');
+    
+    // Or must have instructions/directions
+    final hasInstructions = data.containsKey('recipeInstructions') || 
+        data.containsKey('instructions') || 
+        data.containsKey('directions') ||
+        data.containsKey('steps');
+    
+    return hasIngredients || hasInstructions;
   }
   
   /// Extract YouTube video ID from various URL formats
