@@ -1028,6 +1028,33 @@ class UrlRecipeImporter {
         lastError = 'no panel params';
       }
       
+      // Method 1b: If extracted params failed, try constructed params
+      if (lastError.isNotEmpty && !lastError.contains('segments')) {
+        try {
+          final constructedParams = _buildTranscriptParams(videoId);
+          final transcriptResponse = await http.post(
+            Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript?prettyPrint=false'),
+            headers: {
+              'Content-Type': 'application/json',
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+              'Origin': 'https://www.youtube.com',
+              'Referer': 'https://www.youtube.com/watch?v=$videoId',
+            },
+            body: '{"context":{"client":{"clientName":"WEB","clientVersion":"2.20231219.04.00","hl":"en"}},"params":"$constructedParams"}',
+          );
+          
+          if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
+            final segments = _parseYouTubeiTranscript(transcriptResponse.body);
+            if (segments.isNotEmpty) {
+              return (segments, 'youtubei(built): ${segments.length} segments');
+            }
+          }
+          lastError = '$lastError | built:${transcriptResponse.statusCode}';
+        } catch (e) {
+          lastError = '$lastError | built:err';
+        }
+      }
+      
       // Store youtubei result before trying timedtext
       final youtubeiResult = lastError;
       
@@ -1173,12 +1200,39 @@ class UrlRecipeImporter {
   }
   
   /// Build base64 params for YouTube transcript API
-  String _buildTranscriptParams(String videoId) {
-    // This is a simplified version - the actual params are protobuf encoded
-    // We'll use a basic structure that usually works
-    // Format: base64(protobuf with video ID and language)
-    // For now, just return an empty string - we'll parse from response
-    return '';
+  /// Build transcript params for YouTube API
+  /// Based on youtube-transcript library approach
+  String _buildTranscriptParams(String videoId, {String lang = 'en'}) {
+    // The params are a base64-encoded protobuf structure
+    // Structure: \n + length + videoId + \x12 + length + "asr" + \x1a + length + lang
+    // This requests auto-generated captions in the specified language
+    
+    final videoIdBytes = videoId.codeUnits;
+    final langBytes = lang.codeUnits;
+    const asr = 'asr'; // Auto-generated subtitles
+    
+    // Build the protobuf-like structure
+    final buffer = <int>[
+      0x0a, // Field 1 (video ID)
+      videoIdBytes.length,
+      ...videoIdBytes,
+      0x12, // Field 2 (track kind)
+      asr.length,
+      ...asr.codeUnits,
+      0x1a, // Field 3 (language)
+      langBytes.length,
+      ...langBytes,
+    ];
+    
+    // Wrap in outer container
+    final outer = <int>[
+      0x0a, // Field 1
+      buffer.length,
+      ...buffer,
+    ];
+    
+    // Base64 encode
+    return base64Encode(outer);
   }
   
   /// Parse YouTube's internal transcript API response
