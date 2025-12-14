@@ -4581,28 +4581,46 @@ class UrlRecipeImporter {
             items.add(text);
           }
         }
+        // Continue to look for more lists after this one (for multiple sections)
+      } else if (tagName == 'h2') {
+        // Hit a major heading - stop completely
         break;
-      } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
-        // Hit another heading - stop
-        break;
+      } else if (tagName == 'h3' || tagName == 'h4') {
+        // Sub-section heading - add as a section marker and continue
+        final sectionText = _decodeHtml(nextElement.text?.trim() ?? '');
+        if (sectionText.isNotEmpty) {
+          // Add section header with trailing colon to mark it as a section
+          items.add('$sectionText:');
+        }
       } else if (tagName == 'p') {
         // Skip paragraph tags (might be WP comment wrappers)
         skippedCount++;
       } else if (tagName == 'div' || tagName == 'section') {
-        // Check inside containers for lists
+        // Check inside containers for lists and headings
+        final nestedHeadings = nextElement.querySelectorAll('h3, h4');
         final nestedLists = nextElement.querySelectorAll('ul, ol');
-        if (nestedLists.isNotEmpty) {
-          for (final list in nestedLists) {
-            final listItems = list.querySelectorAll('li');
-            for (final li in listItems) {
-              final text = _decodeHtml(li.text?.trim() ?? '');
-              if (text.isNotEmpty) {
-                items.add(text);
+        
+        // Process headings and lists in order
+        if (nestedHeadings.isNotEmpty || nestedLists.isNotEmpty) {
+          // Get all h3, h4, ul, ol in document order
+          final elements = nextElement.querySelectorAll('h3, h4, ul, ol');
+          for (final elem in elements) {
+            final elemTag = elem.localName?.toLowerCase();
+            if (elemTag == 'h3' || elemTag == 'h4') {
+              final sectionText = _decodeHtml(elem.text?.trim() ?? '');
+              if (sectionText.isNotEmpty) {
+                items.add('$sectionText:');
+              }
+            } else if (elemTag == 'ul' || elemTag == 'ol') {
+              final listItems = elem.querySelectorAll('li');
+              for (final li in listItems) {
+                final text = _decodeHtml(li.text?.trim() ?? '');
+                if (text.isNotEmpty) {
+                  items.add(text);
+                }
               }
             }
-            if (items.isNotEmpty) break;
           }
-          if (items.isNotEmpty) break;
         }
       }
       
@@ -4630,10 +4648,16 @@ class UrlRecipeImporter {
             items.add(text);
           }
         }
+        // Continue to look for more (might have sub-sections)
+      } else if (tagName == 'h2') {
+        // Hit a major heading - stop searching
         break;
-      } else if (tagName == 'h2' || tagName == 'h3') {
-        // Hit another heading - stop searching
-        break;
+      } else if (tagName == 'h3' || tagName == 'h4') {
+        // Sub-section heading - add as section marker and continue
+        final sectionText = _decodeHtml(nextElement.text?.trim() ?? '');
+        if (sectionText.isNotEmpty) {
+          items.add('$sectionText:');
+        }
       }
       
       nextElement = nextElement.nextElementSibling;
@@ -4662,9 +4686,14 @@ class UrlRecipeImporter {
                     items.add(text);
                   }
                 }
+                // Continue looking for more sections
+              } else if (tagName == 'h2') {
                 break;
-              } else if (tagName == 'h2' || tagName == 'h3') {
-                break;
+              } else if (tagName == 'h3' || tagName == 'h4') {
+                final sectionText = _decodeHtml(child.text?.trim() ?? '');
+                if (sectionText.isNotEmpty) {
+                  items.add('$sectionText:');
+                }
               }
             }
           }
