@@ -3367,11 +3367,26 @@ class UrlRecipeImporter {
       
       if (headingText.contains('ingredient')) {
         // Parse ingredients from the list following this heading
-        final ingredients = _extractListItemsAfterHeading(heading, document);
-        result['ingredients'] = ingredients;
+        // First try standard list extraction
+        var ingredients = _extractListItemsAfterHeading(heading, document);
+        
+        // If that failed, try extracting bullet-point text content
+        if (ingredients.isEmpty) {
+          ingredients = _extractBulletPointsAfterHeading(heading, document);
+        }
+        
+        if (ingredients.isNotEmpty) {
+          result['ingredients'] = ingredients;
+        }
       } else if (headingText.contains('equipment')) {
         // Parse equipment from the list following this heading
-        final equipment = _extractListItemsAfterHeading(heading, document);
+        var equipment = _extractListItemsAfterHeading(heading, document);
+        
+        // If that failed, try extracting bullet-point text content
+        if (equipment.isEmpty) {
+          equipment = _extractBulletPointsAfterHeading(heading, document);
+        }
+        
         result['equipment'] = equipment;
       } else if (headingText.contains('yield') || headingText.contains('serves') || headingText.contains('serving')) {
         // Extract yield/serving info from next paragraph
@@ -3400,7 +3415,13 @@ class UrlRecipeImporter {
       for (final heading in h3Headings) {
         final headingText = heading.text?.trim().toLowerCase() ?? '';
         if (headingText.contains('ingredient')) {
-          final ingredients = _extractListItemsAfterHeading(heading, document);
+          var ingredients = _extractListItemsAfterHeading(heading, document);
+          
+          // If list extraction failed, try bullet point extraction
+          if (ingredients.isEmpty) {
+            ingredients = _extractBulletPointsAfterHeading(heading, document);
+          }
+          
           if (ingredients.isNotEmpty) {
             result['ingredients'] = ingredients;
             break;
@@ -3518,6 +3539,50 @@ class UrlRecipeImporter {
       }
     }
     
+    // Final fallback: Look for text blocks that contain bullet-point characters
+    // This handles sites that use plain text with • or - characters as bullets
+    if ((result['ingredients'] as List).isEmpty) {
+      // Find all text-containing elements
+      final textElements = document.querySelectorAll('p, div, span');
+      for (final elem in textElements) {
+        final text = elem.text?.trim() ?? '';
+        
+        // Check if this contains bullet-pointed items with ingredient-like content
+        if (text.contains('•') || text.contains('- ')) {
+          // Split by bullet characters
+          final lines = text.split(RegExp(r'[•]\s*|\n+'));
+          
+          if (lines.length >= 3) {
+            // Check if multiple lines have quantities (indicating ingredients)
+            int quantityCount = 0;
+            for (final line in lines) {
+              if (RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg|kilogram)', caseSensitive: false).hasMatch(line)) {
+                quantityCount++;
+              }
+            }
+            
+            // If we found multiple quantity-containing lines, these are likely ingredients
+            if (quantityCount >= 2) {
+              final items = <String>[];
+              for (var line in lines) {
+                line = _decodeHtml(line.trim());
+                if (line.isEmpty || line.length < 3) continue;
+                if (line.toLowerCase().contains('click') ||
+                    line.toLowerCase().contains('subscribe') ||
+                    line.toLowerCase().contains('http')) continue;
+                items.add(line);
+              }
+              
+              if (items.isNotEmpty) {
+                result['ingredients'] = _processIngredientListItems(items);
+                break;
+              }
+            }
+          }
+        }
+      }
+    }
+    
     return result;
   }
   
@@ -3579,6 +3644,49 @@ class UrlRecipeImporter {
           }
         }
       }
+    }
+    
+    return _processIngredientListItems(items);
+  }
+  
+  /// Extract items from bullet-point text content after a heading
+  /// Handles sites like Modernist Pantry that use • characters instead of <ul>/<li>
+  List<String> _extractBulletPointsAfterHeading(dynamic heading, dynamic document) {
+    final items = <String>[];
+    
+    // Look for content following the heading until the next h2/h3
+    var nextElement = heading.nextElementSibling;
+    
+    while (nextElement != null) {
+      final tagName = nextElement.localName?.toLowerCase();
+      
+      // Stop at next heading
+      if (tagName == 'h2' || tagName == 'h3') break;
+      
+      // Get text content and split by bullet characters
+      final textContent = nextElement.text?.trim() ?? '';
+      
+      if (textContent.isNotEmpty) {
+        // Split by common bullet point characters
+        // Common patterns: • (bullet), - (dash), * (asterisk), or newlines
+        final lines = textContent.split(RegExp(r'[•\-\*]\s*|\n+'));
+        
+        for (var line in lines) {
+          line = _decodeHtml(line.trim());
+          
+          // Skip empty lines and very short lines (likely fragments)
+          if (line.isEmpty || line.length < 3) continue;
+          
+          // Skip obvious non-ingredient content (links, navigation, etc.)
+          if (line.toLowerCase().contains('click') || 
+              line.toLowerCase().contains('subscribe') ||
+              line.toLowerCase().contains('http')) continue;
+          
+          items.add(line);
+        }
+      }
+      
+      nextElement = nextElement.nextElementSibling;
     }
     
     return _processIngredientListItems(items);
