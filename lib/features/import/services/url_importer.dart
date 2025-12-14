@@ -129,7 +129,8 @@ class UrlRecipeImporter {
         return await _importFromYouTube(videoId, url);
       }
       
-      final response = await http.get(
+      // Try fetching with standard browser headers first
+      var response = await http.get(
         Uri.parse(url),
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -150,21 +151,31 @@ class UrlRecipeImporter {
       }
 
       // Decode response body - handle encoding errors gracefully
-      String body;
-      try {
-        // Try automatic decoding (handles Content-Type charset)
-        body = response.body;
-      } catch (_) {
-        try {
-          // Try UTF-8 with malformed character tolerance
-          body = utf8.decode(response.bodyBytes, allowMalformed: true);
-        } catch (_) {
-          // Last resort: use Latin-1 (never fails, but may produce wrong characters)
-          body = latin1.decode(response.bodyBytes);
+      String body = _decodeResponseBody(response);
+      var document = html_parser.parse(body);
+      
+      // Check if we got a JavaScript shell (no real content)
+      final hasRealContent = document.querySelector('title')?.text?.isNotEmpty == true ||
+          document.querySelectorAll('h1, h2, h3').isNotEmpty ||
+          document.querySelector('[itemtype*="Recipe"]') != null ||
+          document.querySelectorAll('script[type="application/ld+json"]').isNotEmpty;
+      
+      // If no real content, retry with Googlebot user-agent (many sites serve pre-rendered HTML for SEO)
+      if (!hasRealContent) {
+        response = await http.get(
+          Uri.parse(url),
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+          },
+        );
+        
+        if (response.statusCode == 200) {
+          body = _decodeResponseBody(response);
+          document = html_parser.parse(body);
         }
       }
-
-      final document = html_parser.parse(body);
 
       // Try to find JSON-LD structured data first (most reliable)
       final jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
@@ -262,6 +273,22 @@ class UrlRecipeImporter {
       );
     } catch (e) {
       throw Exception('Failed to import recipe from URL: $e');
+    }
+  }
+  
+  /// Decode HTTP response body handling encoding errors gracefully
+  String _decodeResponseBody(http.Response response) {
+    try {
+      // Try automatic decoding (handles Content-Type charset)
+      return response.body;
+    } catch (_) {
+      try {
+        // Try UTF-8 with malformed character tolerance
+        return utf8.decode(response.bodyBytes, allowMalformed: true);
+      } catch (_) {
+        // Last resort: use Latin-1 (never fails, but may produce wrong characters)
+        return latin1.decode(response.bodyBytes);
+      }
     }
   }
   
