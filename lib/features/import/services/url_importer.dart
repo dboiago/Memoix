@@ -778,7 +778,7 @@ class UrlRecipeImporter {
       ).firstMatch(pageBody);
       
       if (captionTrackMatch == null) {
-        return ([], 'no captionTracks in page');
+        return (<TranscriptSegment>[], 'no captionTracks in page');
       }
       
       final captionTracksJson = '[${captionTrackMatch.group(1)}]';
@@ -807,7 +807,7 @@ class UrlRecipeImporter {
       }
       
       if (captionUrl == null) {
-        return ([], 'captionTracks found but no baseUrl matched');
+        return (<TranscriptSegment>[], 'captionTracks found but no baseUrl matched');
       }
       
       final captionResponse = await http.get(
@@ -818,18 +818,18 @@ class UrlRecipeImporter {
       );
       
       if (captionResponse.statusCode != 200) {
-        return ([], 'caption fetch failed: ${captionResponse.statusCode}');
+        return (<TranscriptSegment>[], 'caption fetch failed: ${captionResponse.statusCode}');
       }
       
       // Parse XML transcript with timestamps
       final segments = _parseTranscriptXmlWithTimestamps(captionResponse.body);
       if (segments.isEmpty) {
-        return ([], 'XML parsed but no segments found ($matchedType)');
+        return (<TranscriptSegment>[], 'XML parsed but no segments found ($matchedType)');
       }
       
       return (segments, '$matchedType: ${segments.length} segments');
     } catch (e) {
-      return ([], 'exception: ${e.toString().substring(0, 50.clamp(0, e.toString().length))}');
+      return (<TranscriptSegment>[], 'exception: ${e.toString().substring(0, 50.clamp(0, e.toString().length))}');
     }
   }
   
