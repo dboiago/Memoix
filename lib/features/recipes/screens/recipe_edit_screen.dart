@@ -996,8 +996,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 children: [
                   // Space for drag handle
                   const SizedBox(width: 32),
-                  SizedBox(
-                    width: 120,
+                  Expanded(
+                    flex: 3,
                     child: Text('Ingredient', 
                       style: theme.textTheme.labelMedium?.copyWith(
                         fontWeight: FontWeight.bold,
@@ -1015,6 +1015,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   ),
                   const SizedBox(width: 8),
                   Expanded(
+                    flex: 2,
                     child: Text('Notes/Prep', 
                       style: theme.textTheme.labelMedium?.copyWith(
                         fontWeight: FontWeight.bold,
@@ -1531,8 +1532,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             ),
           ),
           // Ingredient name
-          SizedBox(
-            width: 120,
+          Expanded(
+            flex: 3,
             child: TextField(
               controller: row.nameController,
               decoration: InputDecoration(
@@ -1579,13 +1580,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           
           // Notes/Prep
           Expanded(
+            flex: 2,
             child: TextField(
               controller: row.notesController,
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 border: const OutlineInputBorder(),
-                hintText: 'Notes (optional)',
+                hintText: 'Notes',
                 hintStyle: TextStyle(
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.outline,

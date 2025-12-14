@@ -1300,25 +1300,50 @@ class UrlRecipeImporter {
                   document.querySelector('[itemprop="name"]')?.text?.trim() ??
                   'Untitled Recipe';
 
-    final ingredientElements = document.querySelectorAll(
+    // First try standard selectors
+    var ingredientElements = document.querySelectorAll(
       '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
     );
     
-    var ingredients = ingredientElements
-        .map((e) => _parseIngredientString(_decodeHtml(e.text.trim())))
+    var rawIngredientStrings = ingredientElements
+        .map((e) => _decodeHtml(e.text.trim()))
+        .where((s) => s.isNotEmpty)
+        .toList();
+    
+    // If standard selectors failed, try section-based parsing
+    List<String> equipmentItems = [];
+    String? yield;
+    String? timing;
+    
+    if (rawIngredientStrings.isEmpty) {
+      final sectionResult = _parseHtmlBySections(document);
+      rawIngredientStrings = sectionResult['ingredients'] ?? [];
+      equipmentItems = sectionResult['equipment'] ?? [];
+      yield = sectionResult['yield'];
+      timing = sectionResult['timing'];
+    }
+    
+    var ingredients = rawIngredientStrings
+        .map((e) => _parseIngredientString(e))
         .where((i) => i.name.isNotEmpty)
         .toList();
     
     ingredients = _sortIngredientsByQuantity(ingredients);
 
-    final instructionElements = document.querySelectorAll(
+    // First try standard direction selectors
+    var instructionElements = document.querySelectorAll(
       '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
     );
     
-    final directions = instructionElements
+    var directions = instructionElements
         .map((e) => _decodeHtml(e.text.trim()))
         .where((s) => s.isNotEmpty)
         .toList();
+    
+    // If standard selectors failed, try step-based parsing
+    if (directions.isEmpty) {
+      directions = _parseDirectionsBySections(document);
+    }
 
     if (ingredients.isEmpty && directions.isEmpty) {
       return null;
@@ -1326,7 +1351,16 @@ class UrlRecipeImporter {
 
     // Detect if this is a drink based on URL and content
     final isCocktail = _isCocktailSite(sourceUrl);
-    final course = isCocktail ? 'drinks' : 'Mains';
+    
+    // Try to detect course from content
+    String course;
+    if (isCocktail) {
+      course = 'drinks';
+    } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
+      course = 'molecular';
+    } else {
+      course = 'Mains';
+    }
     
     // For drinks, detect the base spirit
     String? subcategory;
@@ -1337,13 +1371,22 @@ class UrlRecipeImporter {
       }
     }
 
+    // Build notes from equipment if found
+    String? notes;
+    if (equipmentItems.isNotEmpty) {
+      notes = 'Equipment: ${equipmentItems.join(', ')}';
+    }
+
     return Recipe.create(
       uuid: _uuid.v4(),
       name: _cleanRecipeName(title),
       course: course,
       subcategory: subcategory,
+      serves: yield,
+      time: timing,
       ingredients: ingredients,
       directions: directions,
+      notes: notes,
       sourceUrl: sourceUrl,
       source: RecipeSource.url,
     );
@@ -1356,14 +1399,29 @@ class UrlRecipeImporter {
                   document.querySelector('.recipe-title')?.text?.trim() ??
                   document.querySelector('[itemprop="name"]')?.text?.trim();
 
-    final ingredientElements = document.querySelectorAll(
+    // First try standard recipe selectors
+    var ingredientElements = document.querySelectorAll(
       '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
     );
     
-    final rawIngredientStrings = ingredientElements
+    var rawIngredientStrings = ingredientElements
         .map((e) => _decodeHtml(e.text.trim()))
         .where((s) => s.isNotEmpty)
         .toList();
+    
+    // If standard selectors failed, try section-based parsing
+    // This handles sites like Modernist Pantry that use headings + lists
+    List<String> equipmentItems = [];
+    String? yield;
+    String? timing;
+    
+    if (rawIngredientStrings.isEmpty) {
+      final sectionResult = _parseHtmlBySections(document);
+      rawIngredientStrings = sectionResult['ingredients'] ?? [];
+      equipmentItems = sectionResult['equipment'] ?? [];
+      yield = sectionResult['yield'];
+      timing = sectionResult['timing'];
+    }
     
     var ingredients = rawIngredientStrings
         .map((s) => _parseIngredientString(s))
@@ -1372,14 +1430,21 @@ class UrlRecipeImporter {
     
     ingredients = _sortIngredientsByQuantity(ingredients);
 
-    final instructionElements = document.querySelectorAll(
+    // First try standard direction selectors
+    var instructionElements = document.querySelectorAll(
       '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
     );
     
-    final rawDirections = instructionElements
+    var rawDirections = instructionElements
         .map((e) => _decodeHtml(e.text.trim()))
         .where((s) => s.isNotEmpty)
         .toList();
+    
+    // If standard selectors failed, try step-based parsing
+    // This handles sites that use h3 headings for step names
+    if (rawDirections.isEmpty) {
+      rawDirections = _parseDirectionsBySections(document);
+    }
 
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
       return null;
@@ -1387,7 +1452,16 @@ class UrlRecipeImporter {
 
     // Detect if this is a drink based on URL and content
     final isCocktail = _isCocktailSite(sourceUrl);
-    final course = isCocktail ? 'drinks' : 'Mains';
+    
+    // Try to detect course from content - check for modernist/molecular indicators
+    String course;
+    if (isCocktail) {
+      course = 'drinks';
+    } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
+      course = 'molecular';
+    } else {
+      course = 'Mains';
+    }
     
     // For drinks, detect the base spirit
     String? subcategory;
@@ -1404,7 +1478,14 @@ class UrlRecipeImporter {
         ? (ingredients.length / rawIngredientStrings.length) * 0.6 
         : 0.0;
     final directionsConfidence = rawDirections.isNotEmpty ? 0.6 : 0.0;
-    final courseConfidence = isCocktail ? 0.8 : 0.3; // Low confidence for defaulting to Mains
+    double courseConfidence;
+    if (isCocktail) {
+      courseConfidence = 0.8;
+    } else if (course == 'molecular') {
+      courseConfidence = 0.75;
+    } else {
+      courseConfidence = 0.3; // Low confidence for defaulting to Mains
+    }
 
     // Create raw ingredient data
     final rawIngredients = rawIngredientStrings.map((raw) {
@@ -1420,15 +1501,36 @@ class UrlRecipeImporter {
       );
     }).toList();
 
+    // Build detected courses list
+    final detectedCourses = <String>[];
+    if (isCocktail) {
+      detectedCourses.add('drinks');
+    }
+    if (course == 'molecular') {
+      detectedCourses.add('molecular');
+    }
+    if (detectedCourses.isEmpty) {
+      detectedCourses.add('Mains');
+    }
+
+    // Build notes from equipment if found
+    String? notes;
+    if (equipmentItems.isNotEmpty) {
+      notes = 'Equipment: ${equipmentItems.join(', ')}';
+    }
+
     return RecipeImportResult(
       name: title != null ? _cleanRecipeName(title) : null,
       course: course,
       subcategory: subcategory,
+      serves: yield,
+      time: timing,
       ingredients: ingredients,
       directions: rawDirections,
+      notes: notes,
       rawIngredients: rawIngredients,
       rawDirections: rawDirections,
-      detectedCourses: isCocktail ? ['drinks'] : ['Mains'],
+      detectedCourses: detectedCourses,
       nameConfidence: nameConfidence,
       courseConfidence: courseConfidence,
       ingredientsConfidence: ingredientsConfidence,
@@ -1436,6 +1538,333 @@ class UrlRecipeImporter {
       sourceUrl: sourceUrl,
       source: RecipeSource.url,
     );
+  }
+  
+  /// Parse HTML by looking for section headings (h2, h3) followed by content
+  /// This handles sites like Modernist Pantry that structure recipes with headings
+  Map<String, dynamic> _parseHtmlBySections(dynamic document) {
+    final result = <String, dynamic>{
+      'ingredients': <String>[],
+      'equipment': <String>[],
+      'yield': null,
+      'timing': null,
+    };
+    
+    // Find all h2 headings and check their text
+    final headings = document.querySelectorAll('h2');
+    
+    for (final heading in headings) {
+      final headingText = heading.text?.trim().toLowerCase() ?? '';
+      
+      // Find the next sibling elements after this heading
+      var nextElement = heading.nextElementSibling;
+      
+      if (headingText.contains('ingredient')) {
+        // Parse ingredients from the list following this heading
+        final ingredients = _extractListItemsAfterHeading(heading, document);
+        result['ingredients'] = ingredients;
+      } else if (headingText.contains('equipment')) {
+        // Parse equipment from the list following this heading
+        final equipment = _extractListItemsAfterHeading(heading, document);
+        result['equipment'] = equipment;
+      } else if (headingText.contains('yield') || headingText.contains('serves') || headingText.contains('serving')) {
+        // Extract yield/serving info from next paragraph
+        if (nextElement != null) {
+          final yieldText = _decodeHtml(nextElement.text?.trim() ?? '');
+          if (yieldText.isNotEmpty) {
+            result['yield'] = yieldText;
+          }
+        }
+      } else if (headingText.contains('timing') || headingText.contains('time')) {
+        // Extract timing info from next paragraph
+        if (nextElement != null) {
+          final timingText = _decodeHtml(nextElement.text?.trim() ?? '');
+          if (timingText.isNotEmpty) {
+            // Try to parse the timing text
+            result['timing'] = _parseTimingText(timingText);
+          }
+        }
+      }
+    }
+    
+    // If we didn't find ingredients with h2, try looking for lists with specific patterns
+    if ((result['ingredients'] as List).isEmpty) {
+      // Look for lists that contain ingredient-like items (amounts + names)
+      final allLists = document.querySelectorAll('ul');
+      for (final list in allLists) {
+        final items = list.querySelectorAll('li');
+        final itemTexts = items.map((e) => _decodeHtml(e.text?.trim() ?? '')).where((s) => s.isNotEmpty).toList();
+        
+        // Check if this looks like an ingredient list (has quantities)
+        final hasQuantities = itemTexts.any((item) => 
+          RegExp(r'\d+\s*[gG](?:\s|$)|\d+\s*(?:cup|tbsp|tsp|oz|ml|lb|kg)', caseSensitive: false).hasMatch(item)
+        );
+        
+        if (hasQuantities && itemTexts.length >= 3) {
+          result['ingredients'] = _processIngredientListItems(itemTexts);
+          break;
+        }
+      }
+    }
+    
+    return result;
+  }
+  
+  /// Extract list items that follow a heading element
+  List<String> _extractListItemsAfterHeading(dynamic heading, dynamic document) {
+    final items = <String>[];
+    
+    // First try: look for ul immediately after the heading
+    var nextElement = heading.nextElementSibling;
+    while (nextElement != null) {
+      final tagName = nextElement.localName?.toLowerCase();
+      
+      if (tagName == 'ul' || tagName == 'ol') {
+        // Found a list - extract items
+        final listItems = nextElement.querySelectorAll('li');
+        for (final li in listItems) {
+          final text = _decodeHtml(li.text?.trim() ?? '');
+          if (text.isNotEmpty) {
+            items.add(text);
+          }
+        }
+        break;
+      } else if (tagName == 'h2' || tagName == 'h3') {
+        // Hit another heading - stop searching
+        break;
+      }
+      
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    // Second try: if heading has an id, look for lists in any wrapper after it
+    if (items.isEmpty) {
+      final headingId = heading.attributes['id'];
+      if (headingId != null) {
+        // Look for lists in parent's subsequent children
+        final parent = heading.parent;
+        if (parent != null) {
+          var foundHeading = false;
+          for (final child in parent.children) {
+            if (child == heading) {
+              foundHeading = true;
+              continue;
+            }
+            if (foundHeading) {
+              final tagName = child.localName?.toLowerCase();
+              if (tagName == 'ul' || tagName == 'ol') {
+                final listItems = child.querySelectorAll('li');
+                for (final li in listItems) {
+                  final text = _decodeHtml(li.text?.trim() ?? '');
+                  if (text.isNotEmpty) {
+                    items.add(text);
+                  }
+                }
+                break;
+              } else if (tagName == 'h2' || tagName == 'h3') {
+                break;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    return _processIngredientListItems(items);
+  }
+  
+  /// Process ingredient list items - handles section headers within ingredients
+  /// Detects patterns like "Ingredients for Sauce:" as section headers
+  List<String> _processIngredientListItems(List<String> items) {
+    final processed = <String>[];
+    
+    for (final item in items) {
+      // Check if this is a section header (ends with colon, starts with "Ingredients")
+      final isSectionHeader = RegExp(
+        r'^Ingredients?\s+(?:for\s+)?(.+?)[:.]?\s*$',
+        caseSensitive: false,
+      ).hasMatch(item);
+      
+      if (isSectionHeader) {
+        // Extract section name and format as [Section] marker
+        final match = RegExp(
+          r'^Ingredients?\s+(?:for\s+)?(.+?)[:.]?\s*$',
+          caseSensitive: false,
+        ).firstMatch(item);
+        if (match != null) {
+          final sectionName = match.group(1)?.trim() ?? item;
+          processed.add('[${_capitalise(sectionName)}]');
+        }
+      } else if (item.isNotEmpty) {
+        processed.add(item);
+      }
+    }
+    
+    return processed;
+  }
+  
+  /// Parse directions by looking for step-based structure (h3 headings or numbered sections)
+  List<String> _parseDirectionsBySections(dynamic document) {
+    final directions = <String>[];
+    
+    // Look for h3 headings that might be step titles
+    final stepHeadings = document.querySelectorAll('h3');
+    
+    for (final heading in stepHeadings) {
+      final stepTitle = _decodeHtml(heading.text?.trim() ?? '');
+      if (stepTitle.isEmpty) continue;
+      
+      // Skip if this looks like a non-recipe heading (navigation, etc.)
+      if (_isNavigationHeading(stepTitle)) continue;
+      
+      // Collect text content after this heading until the next h3
+      final stepParts = <String>[stepTitle];
+      var nextElement = heading.nextElementSibling;
+      
+      while (nextElement != null) {
+        final tagName = nextElement.localName?.toLowerCase();
+        
+        // Stop at the next step heading
+        if (tagName == 'h3' || tagName == 'h2') break;
+        
+        // Extract text from divs, paragraphs, etc.
+        if (tagName == 'div' || tagName == 'p' || tagName == 'span') {
+          final text = _decodeHtml(nextElement.text?.trim() ?? '');
+          // Filter out empty or whitespace-only text
+          if (text.isNotEmpty && text != ' ') {
+            stepParts.add(text);
+          }
+        }
+        
+        nextElement = nextElement.nextElementSibling;
+      }
+      
+      // Combine step title with its content
+      if (stepParts.length > 1) {
+        // Format: "Step Title: instructions..."
+        final stepContent = stepParts.skip(1).join(' ').trim();
+        if (stepContent.isNotEmpty) {
+          directions.add('$stepTitle: $stepContent');
+        }
+      } else if (stepParts.length == 1 && stepTitle.length > 10) {
+        // If only title but it's descriptive, add it as a direction
+        directions.add(stepTitle);
+      }
+    }
+    
+    // If no h3-based steps found, try looking for ordered lists or numbered paragraphs
+    if (directions.isEmpty) {
+      final orderedLists = document.querySelectorAll('ol');
+      for (final ol in orderedLists) {
+        final items = ol.querySelectorAll('li');
+        for (final li in items) {
+          final text = _decodeHtml(li.text?.trim() ?? '');
+          if (text.isNotEmpty && text.length > 20) {
+            directions.add(text);
+          }
+        }
+        if (directions.isNotEmpty) break;
+      }
+    }
+    
+    return directions;
+  }
+  
+  /// Check if a heading looks like navigation or non-recipe content
+  bool _isNavigationHeading(String text) {
+    final lower = text.toLowerCase();
+    const navPatterns = [
+      'menu', 'navigation', 'search', 'cart', 'login', 'sign in', 'sign up',
+      'categories', 'related', 'popular', 'latest', 'subscribe', 'newsletter',
+      'about', 'contact', 'privacy', 'terms', 'copyright', 'share', 'comment',
+    ];
+    return navPatterns.any((pattern) => lower.contains(pattern));
+  }
+  
+  /// Parse timing text like "Active Time: 30 Minutes Total Time: 1 Hour"
+  String? _parseTimingText(String text) {
+    // Try to extract total time
+    final totalMatch = RegExp(
+      r'Total\s+Time[:\s]+(\d+)\s*(minutes?|mins?|hours?|hrs?|h)',
+      caseSensitive: false,
+    ).firstMatch(text);
+    
+    if (totalMatch != null) {
+      final value = int.tryParse(totalMatch.group(1) ?? '') ?? 0;
+      final unit = totalMatch.group(2)?.toLowerCase() ?? '';
+      
+      if (unit.startsWith('h')) {
+        return '$value hr';
+      } else {
+        return '$value min';
+      }
+    }
+    
+    // Try to extract any time mention
+    final anyTimeMatch = RegExp(
+      r'(\d+)\s*(minutes?|mins?|hours?|hrs?|h)',
+      caseSensitive: false,
+    ).firstMatch(text);
+    
+    if (anyTimeMatch != null) {
+      final value = int.tryParse(anyTimeMatch.group(1) ?? '') ?? 0;
+      final unit = anyTimeMatch.group(2)?.toLowerCase() ?? '';
+      
+      if (unit.startsWith('h')) {
+        return '$value hr';
+      } else {
+        return '$value min';
+      }
+    }
+    
+    return null;
+  }
+  
+  /// Check if this looks like a modernist/molecular gastronomy recipe
+  bool _isModernistRecipe(dynamic document, String sourceUrl, List<String> ingredients) {
+    // Check URL for modernist indicators
+    final lowerUrl = sourceUrl.toLowerCase();
+    if (lowerUrl.contains('modernist') || 
+        lowerUrl.contains('molecular') ||
+        lowerUrl.contains('chefsteps') ||
+        lowerUrl.contains('science') ||
+        lowerUrl.contains('technique')) {
+      return true;
+    }
+    
+    // Check ingredients for modernist additives
+    const modernistIngredients = [
+      'agar', 'sodium alginate', 'calcium chloride', 'calcium lactate',
+      'xanthan', 'lecithin', 'maltodextrin', 'tapioca maltodextrin',
+      'methylcellulose', 'gellan', 'carrageenan', 'transglutaminase',
+      'activa', 'foam magic', 'versawhip', 'ultra-tex', 'ultratex',
+      'sodium citrate', 'sodium hexametaphosphate', 'isomalt',
+      'liquid nitrogen', 'immersion circulator', 'sous vide',
+      'cream whipper', 'isi whip', 'pressure cooker',
+    ];
+    
+    final allText = ingredients.join(' ').toLowerCase();
+    for (final ingredient in modernistIngredients) {
+      if (allText.contains(ingredient)) {
+        return true;
+      }
+    }
+    
+    // Check page content for technique keywords
+    final bodyText = document.body?.text?.toLowerCase() ?? '';
+    const techniqueKeywords = [
+      'spherification', 'gelification', 'emulsification',
+      'sous vide', 'pressure cooking', 'vacuum seal',
+      'foam', 'gel', 'caviar', 'pearls',
+    ];
+    
+    int matchCount = 0;
+    for (final keyword in techniqueKeywords) {
+      if (bodyText.contains(keyword)) matchCount++;
+    }
+    
+    // If multiple technique keywords found, likely modernist
+    return matchCount >= 2;
   }
 }
 
