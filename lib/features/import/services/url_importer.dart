@@ -307,6 +307,7 @@ class UrlRecipeImporter {
           original: raw,
           amount: parsed.amount,
           unit: parsed.unit,
+          preparation: parsed.preparation,
           name: parsed.name.isNotEmpty ? parsed.name : raw,
           looksLikeIngredient: parsed.name.isNotEmpty,
           isSection: parsed.section != null,
@@ -1266,6 +1267,7 @@ class UrlRecipeImporter {
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
+        preparation: parsed.preparation,
         name: parsed.name.isNotEmpty ? parsed.name : raw,
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
@@ -1760,17 +1762,19 @@ class UrlRecipeImporter {
     String? inlineSection;
     
     // Handle baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
-    // or "Warm Water, 75% – 450g (2 Cups)"
+    // or "Warm Water, 75% – 450g (2 Cups)" or "Extra Virgin Olive Oil, 3.3% – 20g (2 tbsp.)"
     final bakerPercentMatch = RegExp(
-      r'^([^,]+),\s*\d+%\s*[–-]\s*(\d+\s*(?:g|kg|ml|l))\s*(?:\(([^)]+)\))?',
+      r'^([^,]+),\s*([\d.]+)%\s*[–-]\s*(\d+\s*(?:g|kg|ml|l))\s*(?:\(([^)]+)\))?',
       caseSensitive: false,
     ).firstMatch(remaining);
     if (bakerPercentMatch != null) {
       final name = bakerPercentMatch.group(1)?.trim() ?? '';
-      final metric = bakerPercentMatch.group(2)?.trim() ?? '';
-      final imperial = bakerPercentMatch.group(3)?.trim();
+      final bakerPercent = bakerPercentMatch.group(2)?.trim(); // Capture for future use
+      final metric = bakerPercentMatch.group(3)?.trim() ?? '';
+      final imperial = bakerPercentMatch.group(4)?.trim();
       
       // Use metric as the amount, imperial as preparation/notes
+      // In future, bakerPercent could be stored in a separate field
       return Ingredient.create(
         name: name,
         amount: metric,
@@ -2434,6 +2438,7 @@ class UrlRecipeImporter {
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
+        preparation: parsed.preparation,
         name: parsed.name.isNotEmpty ? parsed.name : raw,
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,

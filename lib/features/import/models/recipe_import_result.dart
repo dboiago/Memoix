@@ -219,6 +219,9 @@ class RawIngredientData {
   /// Parsed unit (if detected)
   final String? unit;
 
+  /// Preparation notes (e.g., "diced", "room temperature", or imperial conversion)
+  final String? preparation;
+
   /// Ingredient name
   final String name;
 
@@ -238,6 +241,7 @@ class RawIngredientData {
     required this.original,
     this.amount,
     this.unit,
+    this.preparation,
     required this.name,
     this.looksLikeIngredient = true,
     this.isSection = false,
@@ -251,6 +255,7 @@ class RawIngredientData {
       name: name,
       amount: amount,
       unit: unit,
+      preparation: preparation,
       section: section ?? sectionName,
     );
   }

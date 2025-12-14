@@ -467,12 +467,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         ),
         const SizedBox(height: 8),
         
-        // Column headers - matching edit screen
+        // Column headers
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
           decoration: BoxDecoration(
             color: theme.colorScheme.surfaceContainerHighest,
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+            borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
             children: [
@@ -507,108 +507,96 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             ],
           ),
         ),
-        
-        // Ingredient rows - matching edit screen
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
-            borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
-          ),
-          child: Column(
-            children: result.rawIngredients.asMap().entries.map((entry) {
-              final index = entry.key;
-              final ingredient = entry.value;
-              final isSelected = _selectedIngredientIndices.contains(index);
-              final isLast = index == result.rawIngredients.length - 1;
+        const SizedBox(height: 4),
+        // Ingredient rows - matching edit screen TextField style
+        Column(
+          children: result.rawIngredients.asMap().entries.map((entry) {
+            final index = entry.key;
+            final ingredient = entry.value;
+            final isSelected = _selectedIngredientIndices.contains(index);
 
-              return Container(
-                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                decoration: BoxDecoration(
-                  border: isLast 
-                      ? null 
-                      : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    // Checkbox (same space as drag handle in edit)
-                    SizedBox(
-                      width: 32,
-                      child: Checkbox(
-                        value: isSelected,
-                        onChanged: (checked) {
-                          setState(() {
-                            if (checked == true) {
-                              _selectedIngredientIndices.add(index);
-                            } else {
-                              _selectedIngredientIndices.remove(index);
-                            }
-                          });
-                        },
-                        visualDensity: VisualDensity.compact,
-                      ),
+            return Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  // Checkbox (same space as drag handle in edit)
+                  SizedBox(
+                    width: 32,
+                    child: Checkbox(
+                      value: isSelected,
+                      onChanged: (checked) {
+                        setState(() {
+                          if (checked == true) {
+                            _selectedIngredientIndices.add(index);
+                          } else {
+                            _selectedIngredientIndices.remove(index);
+                          }
+                        });
+                      },
+                      visualDensity: VisualDensity.compact,
                     ),
-                    // Ingredient name - with outline like edit screen
-                    Expanded(
-                      flex: 3,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: theme.colorScheme.outline.withOpacity(0.5)),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          ingredient.name,
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            decoration: isSelected ? null : TextDecoration.lineThrough,
-                            color: isSelected ? null : theme.colorScheme.outline,
-                          ),
+                  ),
+                  // Ingredient name - using InputDecorator to match TextField
+                  Expanded(
+                    flex: 3,
+                    child: InputDecorator(
+                      decoration: InputDecoration(
+                        isDense: true,
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                        border: const OutlineInputBorder(),
+                      ),
+                      child: Text(
+                        ingredient.name,
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          decoration: isSelected ? null : TextDecoration.lineThrough,
+                          color: isSelected ? null : theme.colorScheme.outline,
                         ),
                       ),
                     ),
-                    const SizedBox(width: 8),
-                    // Amount
-                    SizedBox(
-                      width: 80,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: theme.colorScheme.outline.withOpacity(0.5)),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          ingredient.amount ?? '',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            decoration: isSelected ? null : TextDecoration.lineThrough,
-                            color: isSelected ? null : theme.colorScheme.outline,
-                          ),
+                  ),
+                  const SizedBox(width: 8),
+                  // Amount
+                  SizedBox(
+                    width: 80,
+                    child: InputDecorator(
+                      decoration: InputDecoration(
+                        isDense: true,
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                        border: const OutlineInputBorder(),
+                      ),
+                      child: Text(
+                        ingredient.amount ?? '',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          decoration: isSelected ? null : TextDecoration.lineThrough,
+                          color: isSelected ? null : theme.colorScheme.outline,
                         ),
                       ),
                     ),
-                    const SizedBox(width: 8),
-                    // Notes/Prep
-                    Expanded(
-                      flex: 2,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: theme.colorScheme.outline.withOpacity(0.5)),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          ingredient.unit ?? '',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            decoration: isSelected ? null : TextDecoration.lineThrough,
-                            color: isSelected ? null : theme.colorScheme.outline,
-                          ),
+                  ),
+                  const SizedBox(width: 8),
+                  // Notes/Prep
+                  Expanded(
+                    flex: 2,
+                    child: InputDecorator(
+                      decoration: InputDecoration(
+                        isDense: true,
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                        border: const OutlineInputBorder(),
+                      ),
+                      child: Text(
+                        ingredient.preparation ?? '',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          decoration: isSelected ? null : TextDecoration.lineThrough,
+                          color: isSelected ? null : theme.colorScheme.outline,
                         ),
                       ),
                     ),
-                  ],
-                ),
-              );
-            }).toList(),
-          ),
+                  ),
+                ],
+              ),
+            );
+          }).toList(),
         ),
       ],
     );
@@ -628,64 +616,110 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       );
     }
 
-    return Card(
-      child: Column(
-        children: [
-          // Select/Deselect all
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Select/Deselect all header
+        Row(
+          children: [
+            Text(
+              '${_selectedDirectionIndices.length} of ${result.rawDirections.length} steps',
+              style: theme.textTheme.bodySmall,
+            ),
+            const Spacer(),
+            TextButton(
+              onPressed: () => setState(() {
+                _selectedDirectionIndices = Set.from(
+                    List.generate(result.rawDirections.length, (i) => i));
+              }),
+              child: const Text('All'),
+            ),
+            TextButton(
+              onPressed: () =>
+                  setState(() => _selectedDirectionIndices.clear()),
+              child: const Text('None'),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        
+        // Direction rows - matching edit screen style
+        ...result.rawDirections.asMap().entries.map((entry) {
+          final index = entry.key;
+          final direction = entry.value;
+          final isSelected = _selectedDirectionIndices.contains(index);
+
+          return Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+              borderRadius: BorderRadius.circular(8),
+            ),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  '${_selectedDirectionIndices.length} of ${result.rawDirections.length} steps',
-                  style: theme.textTheme.bodySmall,
+                // Checkbox and step number
+                Column(
+                  children: [
+                    Checkbox(
+                      value: isSelected,
+                      onChanged: (checked) {
+                        setState(() {
+                          if (checked == true) {
+                            _selectedDirectionIndices.add(index);
+                          } else {
+                            _selectedDirectionIndices.remove(index);
+                          }
+                        });
+                      },
+                      visualDensity: VisualDensity.compact,
+                    ),
+                    Container(
+                      width: 24,
+                      height: 24,
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.secondary.withOpacity(0.15),
+                        shape: BoxShape.circle,
+                        border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
+                      ),
+                      child: Center(
+                        child: Text(
+                          '${index + 1}',
+                          style: TextStyle(
+                            color: theme.colorScheme.secondary,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 11,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-                const Spacer(),
-                TextButton(
-                  onPressed: () => setState(() {
-                    _selectedDirectionIndices = Set.from(
-                        List.generate(result.rawDirections.length, (i) => i));
-                  }),
-                  child: const Text('All'),
-                ),
-                TextButton(
-                  onPressed: () =>
-                      setState(() => _selectedDirectionIndices.clear()),
-                  child: const Text('None'),
+                const SizedBox(width: 8),
+                
+                // Direction text - using InputDecorator to match TextField
+                Expanded(
+                  child: InputDecorator(
+                    decoration: InputDecoration(
+                      isDense: true,
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                      border: const OutlineInputBorder(),
+                    ),
+                    child: Text(
+                      direction,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        decoration: isSelected ? null : TextDecoration.lineThrough,
+                        color: isSelected ? null : theme.colorScheme.outline,
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
-          ),
-          const Divider(height: 1),
-          ...result.rawDirections.asMap().entries.map((entry) {
-            final index = entry.key;
-            final direction = entry.value;
-            final isSelected = _selectedDirectionIndices.contains(index);
-
-            return CheckboxListTile(
-              value: isSelected,
-              onChanged: (checked) {
-                setState(() {
-                  if (checked == true) {
-                    _selectedDirectionIndices.add(index);
-                  } else {
-                    _selectedDirectionIndices.remove(index);
-                  }
-                });
-              },
-              title: Text(
-                '${index + 1}. ${direction.length > 100 ? '${direction.substring(0, 100)}...' : direction}',
-                style: TextStyle(
-                  decoration: isSelected ? null : TextDecoration.lineThrough,
-                  color: isSelected ? null : theme.colorScheme.outline,
-                ),
-              ),
-              dense: true,
-              controlAffinity: ListTileControlAffinity.leading,
-            );
-          }),
-        ],
-      ),
+          );
+        }),
+      ],
     );
   }
 
