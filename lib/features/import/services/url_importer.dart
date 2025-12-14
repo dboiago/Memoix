@@ -3539,6 +3539,72 @@ class UrlRecipeImporter {
       }
     }
     
+    // Check for AmazingFoodMadeEasy format EARLY - uses ingredient_dish_header for sections
+    // This is a specific format that should be prioritized to preserve section headers
+    if (rawIngredientStrings.isEmpty) {
+      final sectionHeaders = document.querySelectorAll('.ingredient_dish_header');
+      if (sectionHeaders.isNotEmpty) {
+        usedStructuredFormat = true;
+        
+        // Get all ingredient list items 
+        final allIngredientItems = document.querySelectorAll('li.ingredient');
+        
+        // Process each section header and find its associated ingredients
+        for (final header in sectionHeaders) {
+          final sectionText = _decodeHtml((header.text ?? '').trim());
+          if (sectionText.isNotEmpty) {
+            // Add section header marker
+            rawIngredientStrings.add('[$sectionText]');
+          }
+          
+          // Find the ul/ol that follows this header (sibling or next element)
+          var sibling = header.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Stop if we hit another section header
+            if (sibling.classes.contains('ingredient_dish_header')) break;
+            
+            // Found a list - extract ingredients
+            if (tagName == 'ul' || tagName == 'ol') {
+              final listItems = sibling.querySelectorAll('li');
+              for (final li in listItems) {
+                final text = _decodeHtml((li.text ?? '').trim());
+                if (text.isNotEmpty) {
+                  rawIngredientStrings.add(text);
+                }
+              }
+              break; // Found the list for this section
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+        // If we didn't find ingredients via sibling traversal, try getting all li.ingredient
+        if (rawIngredientStrings.length <= sectionHeaders.length && allIngredientItems.isNotEmpty) {
+          rawIngredientStrings.clear();
+          
+          // Re-process: interleave section headers with their ingredients based on document order
+          // This is a fallback - walk the DOM in order
+          final allElements = document.querySelectorAll('.ingredient_dish_header, li.ingredient, .ingredient');
+          
+          for (final elem in allElements) {
+            final classes = elem.classes ?? [];
+            final text = _decodeHtml((elem.text ?? '').trim());
+            
+            if (text.isEmpty) continue;
+            
+            if (classes.contains('ingredient_dish_header')) {
+              rawIngredientStrings.add('[$text]');
+            } else if (classes.contains('ingredient')) {
+              rawIngredientStrings.add(text);
+            }
+          }
+        }
+      }
+    }
+    
     // If Cooked format didn't find ingredients, try schema.org Microdata format
     // (distinct from JSON-LD - uses itemtype/itemprop attributes in HTML)
     if (rawIngredientStrings.isEmpty) {
@@ -5338,6 +5404,117 @@ class UrlRecipeImporter {
       }
     } catch (_) {
       // Error parsing HTML
+    }
+    
+    // AmazingFoodMadeEasy: Images appear between H3 direction headings
+    // Look for H3 headings that look like steps, then find images before/after them
+    try {
+      final h3Elements = document.querySelectorAll('h3');
+      for (final h3 in h3Elements) {
+        final h3Text = h3.text?.toLowerCase() ?? '';
+        
+        // Skip non-direction headings
+        if (h3Text.contains('ingredient') || h3Text.contains('equipment')) continue;
+        
+        // Look for images in siblings before/after this H3
+        // Check previous siblings
+        var sibling = h3.previousElementSibling;
+        for (int i = 0; i < 3 && sibling != null; i++) {
+          final tagName = sibling.localName?.toLowerCase() ?? '';
+          
+          // Found an image or figure
+          if (tagName == 'img') {
+            final src = sibling.attributes['src'] ?? sibling.attributes['data-src'];
+            if (src != null && isValidImageUrl(src)) {
+              final resolvedUrl = resolveUrl(src);
+              if (!seenUrls.contains(resolvedUrl)) {
+                seenUrls.add(resolvedUrl);
+                images.add(resolvedUrl);
+              }
+            }
+          } else if (tagName == 'figure' || tagName == 'p' || tagName == 'div') {
+            // Check for images inside
+            final innerImgs = sibling.querySelectorAll('img');
+            for (final img in innerImgs) {
+              final src = img.attributes['src'] ?? img.attributes['data-src'];
+              if (src != null && isValidImageUrl(src)) {
+                final resolvedUrl = resolveUrl(src);
+                if (!seenUrls.contains(resolvedUrl)) {
+                  seenUrls.add(resolvedUrl);
+                  images.add(resolvedUrl);
+                }
+              }
+            }
+            // Also check for anchor links to images
+            final innerAnchors = sibling.querySelectorAll('a');
+            for (final anchor in innerAnchors) {
+              final href = anchor.attributes['href'];
+              if (href != null && isValidImageUrl(href)) {
+                final resolvedUrl = resolveUrl(href);
+                if (!seenUrls.contains(resolvedUrl)) {
+                  seenUrls.add(resolvedUrl);
+                  images.add(resolvedUrl);
+                }
+              }
+            }
+          }
+          
+          // Stop if we hit another H3
+          if (tagName == 'h3') break;
+          
+          sibling = sibling.previousElementSibling;
+        }
+        
+        // Check next siblings for images too
+        sibling = h3.nextElementSibling;
+        for (int i = 0; i < 3 && sibling != null; i++) {
+          final tagName = sibling.localName?.toLowerCase() ?? '';
+          
+          // Stop if we hit another H3 (that's the next step)
+          if (tagName == 'h3') break;
+          
+          // Found an image or figure
+          if (tagName == 'img') {
+            final src = sibling.attributes['src'] ?? sibling.attributes['data-src'];
+            if (src != null && isValidImageUrl(src)) {
+              final resolvedUrl = resolveUrl(src);
+              if (!seenUrls.contains(resolvedUrl)) {
+                seenUrls.add(resolvedUrl);
+                images.add(resolvedUrl);
+              }
+            }
+          } else if (tagName == 'figure' || tagName == 'p' || tagName == 'div') {
+            // Check for images inside
+            final innerImgs = sibling.querySelectorAll('img');
+            for (final img in innerImgs) {
+              final src = img.attributes['src'] ?? img.attributes['data-src'];
+              if (src != null && isValidImageUrl(src)) {
+                final resolvedUrl = resolveUrl(src);
+                if (!seenUrls.contains(resolvedUrl)) {
+                  seenUrls.add(resolvedUrl);
+                  images.add(resolvedUrl);
+                }
+              }
+            }
+            // Also check for anchor links to images
+            final innerAnchors = sibling.querySelectorAll('a');
+            for (final anchor in innerAnchors) {
+              final href = anchor.attributes['href'];
+              if (href != null && isValidImageUrl(href)) {
+                final resolvedUrl = resolveUrl(href);
+                if (!seenUrls.contains(resolvedUrl)) {
+                  seenUrls.add(resolvedUrl);
+                  images.add(resolvedUrl);
+                }
+              }
+            }
+          }
+          
+          sibling = sibling.nextElementSibling;
+        }
+      }
+    } catch (_) {
+      // Error parsing H3 structure
     }
     
     return images;
