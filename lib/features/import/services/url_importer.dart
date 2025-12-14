@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
@@ -136,7 +135,6 @@ class UrlRecipeImporter {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
-          'Accept-Encoding': 'gzip, deflate', // Explicitly request compressed content
         },
       );
 
@@ -144,38 +142,18 @@ class UrlRecipeImporter {
         throw Exception('Failed to fetch URL: ${response.statusCode}');
       }
 
-      // Decode response body - handle compression and encoding
-      List<int> bodyBytes = response.bodyBytes;
-      
-      // Check if response is gzip compressed and decompress if needed
-      final contentEncoding = response.headers['content-encoding']?.toLowerCase() ?? '';
-      if (contentEncoding.contains('gzip')) {
-        try {
-          bodyBytes = gzip.decode(bodyBytes);
-        } catch (e) {
-          // If gzip decode fails, try using raw bytes
-          // (server might have already decompressed or sent incorrectly)
-        }
-      } else if (contentEncoding.contains('deflate')) {
-        try {
-          bodyBytes = zlib.decode(bodyBytes);
-        } catch (e) {
-          // If deflate decode fails, try using raw bytes
-        }
-      }
-      
-      // Decode bytes to string with proper encoding handling
+      // Decode response body - handle encoding errors gracefully
       String body;
       try {
-        // Try UTF-8 first (most common)
-        body = utf8.decode(bodyBytes);
+        // Try automatic decoding (handles Content-Type charset)
+        body = response.body;
       } catch (_) {
         try {
           // Try UTF-8 with malformed character tolerance
-          body = utf8.decode(bodyBytes, allowMalformed: true);
+          body = utf8.decode(response.bodyBytes, allowMalformed: true);
         } catch (_) {
           // Last resort: use Latin-1 (never fails, but may produce wrong characters)
-          body = latin1.decode(bodyBytes);
+          body = latin1.decode(response.bodyBytes);
         }
       }
 
@@ -1689,6 +1667,41 @@ class UrlRecipeImporter {
   Future<Recipe?> importRecipeFromUrl(String url) async {
     final result = await importFromUrl(url);
     return result.toRecipe(_uuid.v4());
+  }
+
+  /// Check if text looks like binary, base64, or other encoded data
+  /// This helps filter out garbage content from images, SVGs, or encoded scripts
+  bool _looksLikeBinaryOrEncoded(String text) {
+    // Check for high concentration of non-printable or unusual characters
+    // (characters outside normal text range)
+    int unusualCharCount = 0;
+    for (final rune in text.runes) {
+      // Characters outside printable ASCII range (excluding common Unicode letters)
+      if ((rune < 32 && rune != 10 && rune != 13) || // control chars
+          (rune > 126 && rune < 160) || // extended ASCII control
+          (rune > 65535)) { // very high unicode
+        unusualCharCount++;
+      }
+    }
+    // If more than 5% unusual characters, it's likely binary
+    if (unusualCharCount > text.length * 0.05) return true;
+    
+    // Check for base64 patterns (long strings without spaces)
+    final wordsWithoutSpaces = text.split(RegExp(r'\s+'));
+    for (final word in wordsWithoutSpaces) {
+      // Very long "words" without spaces are likely encoded data
+      if (word.length > 50 && !word.contains('http')) return true;
+    }
+    
+    // Check for common encoded data markers
+    if (text.contains('data:') ||
+        text.contains('base64') ||
+        text.contains('svg+xml') ||
+        RegExp(r'[A-Za-z0-9+/]{30,}={0,2}').hasMatch(text)) { // base64 pattern
+      return true;
+    }
+    
+    return false;
   }
 
   /// Decode HTML entities and normalise text
@@ -3502,6 +3515,9 @@ class UrlRecipeImporter {
           
           if (item.isEmpty || item.length < 3 || item.length > 150) continue;
           
+          // Skip if it looks like binary or encoded data
+          if (_looksLikeBinaryOrEncoded(item)) continue;
+          
           // Skip obvious non-ingredient lines
           if (item.toLowerCase().contains('subscribe') || 
               item.toLowerCase().contains('http') ||
@@ -3554,6 +3570,9 @@ class UrlRecipeImporter {
           }
           
           if (inIngredientSection && line.length > 3 && line.length < 150) {
+            // Skip if it looks like binary or encoded data
+            if (_looksLikeBinaryOrEncoded(line)) continue;
+            
             // Check if this looks like an ingredient
             final looksLikeIngredient = 
                 RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg)', caseSensitive: false).hasMatch(line) ||
@@ -3590,6 +3609,10 @@ class UrlRecipeImporter {
           
           // Skip if too short or too long
           if (segment.length < 5 || segment.length > 200) continue;
+          
+          // Skip if it looks like base64 or binary data
+          // Base64 has long strings without spaces and special char patterns
+          if (_looksLikeBinaryOrEncoded(segment)) continue;
           
           // Skip if it looks like a direction/instruction (starts with verb)
           if (RegExp(r'^(put|place|add|mix|stir|pour|heat|cook|bake|preheat|combine|whisk|blend|let|allow)\b', caseSensitive: false).hasMatch(segment)) {
