@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/utils/suggestions.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 
@@ -431,29 +432,77 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Ingredient/Seasoning name
+            // Ingredient/Seasoning name with autocomplete
             SizedBox(
               width: 120,
-              child: TextField(
-                controller: seasoning.nameController,
-                decoration: InputDecoration(
-                  isDense: true,
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                  border: const OutlineInputBorder(),
-                  hintText: 'Ingredient',
-                  hintStyle: TextStyle(
-                    fontStyle: FontStyle.italic,
-                    color: theme.colorScheme.outline,
-                  ),
-                ),
-                style: theme.textTheme.bodyMedium,
-                textCapitalization: TextCapitalization.words,
-                onChanged: (value) {
-                  // Auto-add new row when typing in last row
-                  if (isLast && value.isNotEmpty) {
-                    _addSeasoning();
-                    setState(() {});
+              child: Autocomplete<String>(
+                initialValue: TextEditingValue(text: seasoning.nameController.text),
+                optionsBuilder: (textEditingValue) {
+                  if (textEditingValue.text.isEmpty) {
+                    return Suggestions.seasonings;
                   }
+                  return Suggestions.filter(
+                    Suggestions.seasonings, 
+                    textEditingValue.text,
+                  );
+                },
+                fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                  controller.addListener(() {
+                    seasoning.nameController.text = controller.text;
+                    // Auto-add new row when typing in last row
+                    if (isLast && controller.text.isNotEmpty && _seasonings.length == index + 1) {
+                      _addSeasoning();
+                      setState(() {});
+                    }
+                  });
+                  return TextField(
+                    controller: controller,
+                    focusNode: focusNode,
+                    decoration: InputDecoration(
+                      isDense: true,
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                      border: const OutlineInputBorder(),
+                      hintText: 'Ingredient',
+                      hintStyle: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        color: theme.colorScheme.outline,
+                      ),
+                    ),
+                    style: theme.textTheme.bodyMedium,
+                    textCapitalization: TextCapitalization.words,
+                    onSubmitted: (_) => onFieldSubmitted(),
+                  );
+                },
+                onSelected: (selection) {
+                  seasoning.nameController.text = selection;
+                },
+                optionsViewBuilder: (context, onSelected, options) {
+                  return Align(
+                    alignment: Alignment.topLeft,
+                    child: Material(
+                      elevation: 4,
+                      borderRadius: BorderRadius.circular(8),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          maxHeight: 200,
+                          maxWidth: 180,
+                        ),
+                        child: ListView.builder(
+                          padding: EdgeInsets.zero,
+                          shrinkWrap: true,
+                          itemCount: options.length,
+                          itemBuilder: (context, idx) {
+                            final option = options.elementAt(idx);
+                            return ListTile(
+                              dense: true,
+                              title: Text(option),
+                              onTap: () => onSelected(option),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  );
                 },
               ),
             ),

@@ -3,6 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../models/modernist_recipe.dart';
 
 /// Repository for modernist recipe CRUD operations
@@ -63,7 +64,18 @@ class ModernistRepository {
   /// Save a recipe (insert or update)
   Future<int> save(ModernistRecipe recipe) async {
     recipe.updatedAt = DateTime.now();
+    // Normalize ingredient units
+    _normalizeIngredientUnits(recipe);
     return _db.writeTxn(() => _db.modernistRecipes.put(recipe));
+  }
+  
+  /// Normalize ingredient units to standard abbreviations
+  void _normalizeIngredientUnits(ModernistRecipe recipe) {
+    for (final ingredient in recipe.ingredients) {
+      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
+        ingredient.unit = UnitNormalizer.normalize(ingredient.unit);
+      }
+    }
   }
 
   /// Create a new recipe with generated UUID

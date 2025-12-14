@@ -6,6 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/utils/suggestions.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 
@@ -364,16 +365,49 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
           child: Row(
             children: [
               Expanded(
-                child: TextField(
-                  controller: _cheeseControllers[index],
-                  decoration: InputDecoration(
-                    hintText: index == 0 && _cheeseControllers.length == 1
-                        ? 'e.g., Mozzarella'
-                        : null,
-                    border: const OutlineInputBorder(),
-                    isDense: true,
-                  ),
-                  textCapitalization: TextCapitalization.words,
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return Suggestions.cheeses;
+                    }
+                    return Suggestions.filter(
+                      Suggestions.cheeses, 
+                      textEditingValue.text,
+                    );
+                  },
+                  fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                    // Sync with our controller
+                    if (controller.text != _cheeseControllers[index].text) {
+                      controller.text = _cheeseControllers[index].text;
+                      controller.selection = TextSelection.collapsed(
+                        offset: controller.text.length,
+                      );
+                    }
+                    controller.addListener(() {
+                      if (_cheeseControllers[index].text != controller.text) {
+                        _cheeseControllers[index].text = controller.text;
+                      }
+                    });
+                    return TextField(
+                      controller: controller,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: index == 0 && _cheeseControllers.length == 1
+                            ? 'e.g., Mozzarella'
+                            : null,
+                        border: const OutlineInputBorder(),
+                        isDense: true,
+                      ),
+                      textCapitalization: TextCapitalization.words,
+                      onSubmitted: (_) => onFieldSubmitted(),
+                    );
+                  },
+                  onSelected: (selection) {
+                    _cheeseControllers[index].text = selection;
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return _buildOptionsView(context, onSelected, options, theme);
+                  },
                 ),
               ),
               if (_cheeseControllers[index].text.isNotEmpty || _cheeseControllers.length > 1)
@@ -398,16 +432,49 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
           child: Row(
             children: [
               Expanded(
-                child: TextField(
-                  controller: _toppingControllers[index],
-                  decoration: InputDecoration(
-                    hintText: index == 0 && _toppingControllers.length == 1
-                        ? 'e.g., Pepperoni'
-                        : null,
-                    border: const OutlineInputBorder(),
-                    isDense: true,
-                  ),
-                  textCapitalization: TextCapitalization.words,
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return Suggestions.toppings;
+                    }
+                    return Suggestions.filter(
+                      Suggestions.toppings, 
+                      textEditingValue.text,
+                    );
+                  },
+                  fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                    // Sync with our controller
+                    if (controller.text != _toppingControllers[index].text) {
+                      controller.text = _toppingControllers[index].text;
+                      controller.selection = TextSelection.collapsed(
+                        offset: controller.text.length,
+                      );
+                    }
+                    controller.addListener(() {
+                      if (_toppingControllers[index].text != controller.text) {
+                        _toppingControllers[index].text = controller.text;
+                      }
+                    });
+                    return TextField(
+                      controller: controller,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: index == 0 && _toppingControllers.length == 1
+                            ? 'e.g., Pepperoni'
+                            : null,
+                        border: const OutlineInputBorder(),
+                        isDense: true,
+                      ),
+                      textCapitalization: TextCapitalization.words,
+                      onSubmitted: (_) => onFieldSubmitted(),
+                    );
+                  },
+                  onSelected: (selection) {
+                    _toppingControllers[index].text = selection;
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return _buildOptionsView(context, onSelected, options, theme);
+                  },
                 ),
               ),
               if (_toppingControllers[index].text.isNotEmpty || _toppingControllers.length > 1)
@@ -421,6 +488,40 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
           ),
         );
       }),
+    );
+  }
+
+  Widget _buildOptionsView(
+    BuildContext context,
+    AutocompleteOnSelected<String> onSelected,
+    Iterable<String> options,
+    ThemeData theme,
+  ) {
+    return Align(
+      alignment: Alignment.topLeft,
+      child: Material(
+        elevation: 4,
+        borderRadius: BorderRadius.circular(8),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxHeight: 200,
+            maxWidth: 280,
+          ),
+          child: ListView.builder(
+            padding: EdgeInsets.zero,
+            shrinkWrap: true,
+            itemCount: options.length,
+            itemBuilder: (context, index) {
+              final option = options.elementAt(index);
+              return ListTile(
+                dense: true,
+                title: Text(option),
+                onTap: () => onSelected(option),
+              );
+            },
+          ),
+        ),
+      ),
     );
   }
 

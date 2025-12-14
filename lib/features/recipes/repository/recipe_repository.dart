@@ -3,6 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -122,6 +123,9 @@ class RecipeRepository {
 
     recipe.updatedAt = DateTime.now();
     // `createdAt` is initialized in the model; no-op here.
+    
+    // Normalize ingredient units
+    _normalizeIngredientUnits(recipe);
 
     return _db.writeTxn(() => _db.recipes.put(recipe));
   }
@@ -137,8 +141,19 @@ class RecipeRepository {
         recipe.uuid = _uuid.v4();
       }
       recipe.updatedAt = now;
+      // Normalize ingredient units
+      _normalizeIngredientUnits(recipe);
     }
     await _db.writeTxn(() => _db.recipes.putAll(recipes));
+  }
+  
+  /// Normalize ingredient units to standard abbreviations
+  void _normalizeIngredientUnits(Recipe recipe) {
+    for (final ingredient in recipe.ingredients) {
+      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
+        ingredient.unit = UnitNormalizer.normalize(ingredient.unit);
+      }
+    }
   }
 
   /// Delete a recipe

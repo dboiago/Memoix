@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar/isar.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../models/smoking_recipe.dart';
 
 /// Repository for smoking recipe operations
@@ -36,7 +37,18 @@ class SmokingRepository {
   /// Save a smoking recipe
   Future<void> saveRecipe(SmokingRecipe recipe) async {
     recipe.updatedAt = DateTime.now();
+    // Normalize seasoning units
+    _normalizeSeasoningUnits(recipe);
     await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+  }
+  
+  /// Normalize seasoning units to standard abbreviations
+  void _normalizeSeasoningUnits(SmokingRecipe recipe) {
+    for (final seasoning in recipe.seasonings) {
+      if (seasoning.unit != null && seasoning.unit!.isNotEmpty) {
+        seasoning.unit = UnitNormalizer.normalize(seasoning.unit);
+      }
+    }
   }
 
   /// Delete a smoking recipe by UUID
