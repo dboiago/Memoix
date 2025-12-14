@@ -4,6 +4,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/category.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/recipe_import_result.dart';
@@ -341,6 +342,16 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     );
   }
 
+  /// Convert course code to display name (e.g., 'molecular' -> 'Modernist')
+  String _courseDisplayName(String course) {
+    switch (course.toLowerCase()) {
+      case 'molecular':
+        return 'Modernist';
+      default:
+        return course;
+    }
+  }
+
   Widget _buildCourseSelector(ThemeData theme, RecipeImportResult result) {
     // Get all available courses
     final allCourses = Category.defaults.map((c) => c.name).toList();
@@ -361,7 +372,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           label: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(course),
+              Text(_courseDisplayName(course)),
               if (isDetected) ...[
                 const SizedBox(width: 4),
                 Icon(Icons.auto_awesome, size: 14, color: theme.colorScheme.primary),
@@ -377,53 +388,42 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   }
 
   Widget _buildCuisineSelector(ThemeData theme, RecipeImportResult result) {
-    // Common cuisines + detected ones (no default - let user choose)
-    final cuisines = <String>{
-      if (_selectedCuisine != null) _selectedCuisine!,
-      ...result.detectedCuisines,
-      'American',
-      'French',
-      'Italian',
-      'Mexican',
-      'Chinese',
-      'Japanese',
-      'Indian',
-      'Thai',
-      'Korean',
-      'Mediterranean',
-    }.toList();
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: cuisines.map((cuisine) {
-            final isSelected = _selectedCuisine == cuisine;
-            final isDetected = result.detectedCuisines.contains(cuisine);
-            return ChoiceChip(
-              label: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(cuisine),
-                  if (isDetected) ...[
-                    const SizedBox(width: 4),
-                    Icon(Icons.auto_awesome, size: 14, color: theme.colorScheme.primary),
-                  ],
-                ],
-              ),
-              selected: isSelected,
-              onSelected: (_) {
-                setState(() {
-                  _selectedCuisine = isSelected ? null : cuisine;
-                });
-              },
-              selectedColor: theme.colorScheme.primary.withOpacity(0.2),
-            );
-          }).toList(),
+    return InkWell(
+      onTap: () => _showCuisineSheet(context),
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Cuisine',
+          suffixIcon: Icon(Icons.arrow_drop_down),
         ),
-      ],
+        child: Text(
+          _selectedCuisine != null
+              ? '${Cuisine.byCode(_selectedCuisine!)?.flag ?? ''} ${Cuisine.byCode(_selectedCuisine!)?.name ?? _selectedCuisine}'
+              : 'Select cuisine (optional)',
+          style: TextStyle(
+            color: _selectedCuisine != null
+                ? theme.colorScheme.onSurface
+                : theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ),
+    );
+  }
+  
+  void _showCuisineSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => _CuisinePickerSheet(
+        selectedCuisine: _selectedCuisine,
+        onChanged: (code) {
+          setState(() => _selectedCuisine = code);
+          Navigator.pop(ctx);
+        },
+        onClear: () {
+          setState(() => _selectedCuisine = null);
+          Navigator.pop(ctx);
+        },
+      ),
     );
   }
 
@@ -537,6 +537,53 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     final ingredient = entry.value;
                     final isSelected = _selectedIngredientIndices.contains(index);
                     final isLast = index == result.rawIngredients.length - 1;
+                    
+                    // Check if this is a section-only header (empty name, has section)
+                    final isSectionHeader = ingredient.name.isEmpty && ingredient.section != null;
+
+                    // Section header row - spans full width
+                    if (isSectionHeader) {
+                      return Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+                          border: isLast 
+                              ? null 
+                              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+                        ),
+                        child: Row(
+                          children: [
+                            // Checkbox for section
+                            SizedBox(
+                              width: 32,
+                              child: Checkbox(
+                                value: isSelected,
+                                onChanged: (checked) {
+                                  setState(() {
+                                    if (checked == true) {
+                                      _selectedIngredientIndices.add(index);
+                                    } else {
+                                      _selectedIngredientIndices.remove(index);
+                                    }
+                                  });
+                                },
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            ),
+                            Text(
+                              ingredient.section!,
+                              style: theme.textTheme.titleSmall?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: isSelected 
+                                    ? theme.colorScheme.primary 
+                                    : theme.colorScheme.outline,
+                                decoration: isSelected ? null : TextDecoration.lineThrough,
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    }
 
                     return Container(
                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
@@ -787,10 +834,21 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   Recipe _buildRecipe() {
     // Build ingredients from selected
+    // Section headers (empty name) are tracked to assign sections to following ingredients
     final ingredients = <Ingredient>[];
+    String? currentSection;
     for (final index in _selectedIngredientIndices.toList()..sort()) {
       if (index < widget.importResult.rawIngredients.length) {
-        ingredients.add(widget.importResult.rawIngredients[index].toIngredient());
+        final rawIngredient = widget.importResult.rawIngredients[index];
+        
+        // If this is a section header (empty name with section), track it but don't add
+        if (rawIngredient.name.isEmpty && rawIngredient.sectionName != null) {
+          currentSection = rawIngredient.sectionName;
+          continue;
+        }
+        
+        // Add the ingredient with current section
+        ingredients.add(rawIngredient.toIngredient(section: currentSection));
       }
     }
 
@@ -855,5 +913,187 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         SnackBar(content: Text('Saved: ${recipe.name}')),
       );
     }
+  }
+}
+
+/// Bottom sheet with searchable cuisine list grouped by continent
+class _CuisinePickerSheet extends StatefulWidget {
+  final String? selectedCuisine;
+  final ValueChanged<String> onChanged;
+  final VoidCallback onClear;
+
+  const _CuisinePickerSheet({
+    required this.selectedCuisine,
+    required this.onChanged,
+    required this.onClear,
+  });
+
+  @override
+  State<_CuisinePickerSheet> createState() => _CuisinePickerSheetState();
+}
+
+class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  List<Cuisine> get _filteredCuisines {
+    if (_searchQuery.isEmpty) return [];
+    final query = _searchQuery.toLowerCase();
+    return Cuisine.all.where((c) => 
+      c.name.toLowerCase().contains(query) ||
+      c.continent.toLowerCase().contains(query) ||
+      c.code.toLowerCase().contains(query)
+    ).toList()..sort((a, b) => a.name.compareTo(b.name));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return DraggableScrollableSheet(
+      initialChildSize: 0.7,
+      minChildSize: 0.3,
+      maxChildSize: 0.9,
+      expand: false,
+      builder: (_, controller) => Column(
+        children: [
+          // Header
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                const Text(
+                  'Select Cuisine',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: widget.onClear,
+                  child: const Text('Clear'),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ),
+          // Search field
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                hintText: 'Search cuisines...',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onChanged: (value) => setState(() => _searchQuery = value),
+            ),
+          ),
+          const SizedBox(height: 8),
+          const Divider(height: 1),
+          // Content
+          Expanded(
+            child: _searchQuery.isNotEmpty
+                ? _buildSearchResults(controller)
+                : _buildGroupedList(controller),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSearchResults(ScrollController controller) {
+    final results = _filteredCuisines;
+    if (results.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            const SizedBox(height: 16),
+            Text(
+              'No cuisines found for "$_searchQuery"',
+              style: TextStyle(color: Colors.grey.shade600),
+            ),
+          ],
+        ),
+      );
+    }
+    
+    return ListView.builder(
+      controller: controller,
+      itemCount: results.length,
+      itemBuilder: (context, index) {
+        final cuisine = results[index];
+        final isSelected = widget.selectedCuisine == cuisine.code;
+        return ListTile(
+          leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+          title: Text(cuisine.name),
+          subtitle: Text(cuisine.continent, 
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+          trailing: isSelected
+              ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+              : null,
+          selected: isSelected,
+          onTap: () => widget.onChanged(cuisine.code),
+        );
+      },
+    );
+  }
+
+  Widget _buildGroupedList(ScrollController controller) {
+    return ListView(
+      controller: controller,
+      children: CuisineGroup.all.map((group) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Text(
+                group.continent,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            ...group.cuisines.map((cuisine) {
+              final isSelected = widget.selectedCuisine == cuisine.code;
+              return ListTile(
+                leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+                title: Text(cuisine.name),
+                trailing: isSelected
+                    ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+                    : null,
+                selected: isSelected,
+                onTap: () => widget.onChanged(cuisine.code),
+              );
+            }),
+          ],
+        );
+      }).toList(),
+    );
   }
 }

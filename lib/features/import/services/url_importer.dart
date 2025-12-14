@@ -329,13 +329,18 @@ class UrlRecipeImporter {
       final rawIngredients = rawIngredientStrings.map((raw) {
         final parsed = _parseIngredientString(raw);
         final bakerPct = _extractBakerPercent(raw);
+        
+        // For section-only items (parsed name is empty but has section),
+        // keep the empty name so the review screen can display it as a section header
+        final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+        
         return RawIngredientData(
           original: raw,
           amount: parsed.amount,
           unit: parsed.unit,
           preparation: parsed.preparation,
           bakerPercent: bakerPct != null ? '$bakerPct%' : null,
-          name: parsed.name.isNotEmpty ? parsed.name : raw,
+          name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
           looksLikeIngredient: parsed.name.isNotEmpty,
           isSection: parsed.section != null,
           sectionName: parsed.section,
@@ -2381,6 +2386,15 @@ class UrlRecipeImporter {
     if (inlineSectionMatch != null) {
       inlineSection = (inlineSectionMatch.group(1) ?? inlineSectionMatch.group(2))?.trim();
       remaining = remaining.substring(inlineSectionMatch.end).trim();
+      
+      // If the entire line was just a section marker (no ingredient after it), 
+      // return an ingredient with only section set (acts as section header)
+      if (remaining.isEmpty) {
+        return Ingredient.create(
+          name: '', // Empty name marks this as a pure section header
+          section: inlineSection,
+        );
+      }
     }
     
     // Remove footnote markers like [1], *, †, etc.
@@ -3050,7 +3064,7 @@ class UrlRecipeImporter {
     
     var ingredients = rawIngredientStrings
         .map((s) => _parseIngredientString(s))
-        .where((i) => i.name.isNotEmpty)
+        .where((i) => i.name.isNotEmpty || i.section != null)
         .toList();
     
     ingredients = _sortIngredientsByQuantity(ingredients);
@@ -3144,13 +3158,18 @@ class UrlRecipeImporter {
     final rawIngredients = rawIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
       final bakerPct = _extractBakerPercent(raw);
+      
+      // For section-only items (parsed name is empty but has section),
+      // keep the empty name so the review screen can display it as a section header
+      final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+      
       return RawIngredientData(
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
         preparation: parsed.preparation,
         bakerPercent: bakerPct != null ? '$bakerPct%' : null,
-        name: parsed.name.isNotEmpty ? parsed.name : raw,
+        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
         sectionName: parsed.section,
@@ -3340,22 +3359,31 @@ class UrlRecipeImporter {
   /// Detects patterns like "Ingredients for Sauce:" as section headers
   List<String> _processIngredientListItems(List<String> items) {
     final processed = <String>[];
+    bool isFirstSection = true;
     
     for (final item in items) {
-      // Check if this is a section header (ends with colon, starts with "Ingredients")
-      final isSectionHeader = RegExp(
-        r'^Ingredients?\s+(?:for\s+)?(.+?)[:.]?\s*$',
+      // Check if this is a section header (ends with colon, starts with "Ingredients" or "For")
+      final sectionHeaderMatch = RegExp(
+        r'^(?:Ingredients?\s+(?:for\s+)?|For\s+(?:the\s+)?)?(.+?)[:]\s*$',
         caseSensitive: false,
-      ).hasMatch(item);
+      ).firstMatch(item);
       
-      if (isSectionHeader) {
-        // Extract section name and format as [Section] marker
-        final match = RegExp(
-          r'^Ingredients?\s+(?:for\s+)?(.+?)[:.]?\s*$',
-          caseSensitive: false,
-        ).firstMatch(item);
-        if (match != null) {
-          final sectionName = match.group(1)?.trim() ?? item;
+      // Also check for bold-style headers like "[Black Garlic Honey]" after stripping formatting
+      final boldHeaderMatch = RegExp(
+        r'^(?:Ingredients?\s+)?([A-Z][^:]*?):\s*$',
+        caseSensitive: false,
+      ).firstMatch(item);
+      
+      if (sectionHeaderMatch != null || boldHeaderMatch != null) {
+        final match = sectionHeaderMatch ?? boldHeaderMatch;
+        final sectionName = match?.group(1)?.trim() ?? item;
+        
+        // Skip the first section (it becomes the default ingredient list)
+        // Only add section markers for subsequent sections
+        if (isFirstSection) {
+          isFirstSection = false;
+          // Don't add anything - first section is default
+        } else {
           processed.add('[${_capitalise(sectionName)}]');
         }
       } else if (item.isNotEmpty) {
@@ -3373,6 +3401,8 @@ class UrlRecipeImporter {
     // Look for h3 headings that might be step titles
     final stepHeadings = document.querySelectorAll('h3');
     
+    bool isFirstSection = true;
+    
     for (final heading in stepHeadings) {
       final stepTitle = _decodeHtml(heading.text?.trim() ?? '');
       if (stepTitle.isEmpty) continue;
@@ -3380,8 +3410,17 @@ class UrlRecipeImporter {
       // Skip if this looks like a non-recipe heading (navigation, etc.)
       if (_isNavigationHeading(stepTitle)) continue;
       
+      // Skip if this looks like a step number prefix (e.g., "Step 1" with content in divs)
+      final looksLikeStepNumber = RegExp(r'^Step\s*\d+$', caseSensitive: false).hasMatch(stepTitle);
+      
+      // For non-first sections, add the section title as its own direction step
+      if (!isFirstSection && !looksLikeStepNumber) {
+        // Add section header as a step (like "Create Ice Cream Base")
+        directions.add('**$stepTitle**');
+      }
+      isFirstSection = false;
+      
       // Collect text content after this heading until the next h3
-      final stepParts = <String>[stepTitle];
       var nextElement = heading.nextElementSibling;
       
       while (nextElement != null) {
@@ -3390,28 +3429,36 @@ class UrlRecipeImporter {
         // Stop at the next step heading
         if (tagName == 'h3' || tagName == 'h2') break;
         
-        // Extract text from divs, paragraphs, etc.
+        // Extract text from divs, paragraphs, spans - each becomes a separate step
         if (tagName == 'div' || tagName == 'p' || tagName == 'span') {
           final text = _decodeHtml(nextElement.text?.trim() ?? '');
-          // Filter out empty or whitespace-only text
-          if (text.isNotEmpty && text != ' ') {
-            stepParts.add(text);
+          // Filter out empty or whitespace-only text, require reasonable length
+          if (text.isNotEmpty && text != ' ' && text.length > 15) {
+            directions.add(text);
+          }
+        } else if (tagName == 'li') {
+          // Also handle list items
+          final text = _decodeHtml(nextElement.text?.trim() ?? '');
+          if (text.isNotEmpty && text.length > 15) {
+            directions.add(text);
+          }
+        }
+        
+        // Also check for nested content
+        if (tagName == 'div' || tagName == 'ul' || tagName == 'ol') {
+          final nestedDivs = nextElement.querySelectorAll('div, p, li');
+          for (final nested in nestedDivs) {
+            final text = _decodeHtml(nested.text?.trim() ?? '');
+            if (text.isNotEmpty && text != ' ' && text.length > 15) {
+              // Avoid duplicates
+              if (directions.isEmpty || directions.last != text) {
+                directions.add(text);
+              }
+            }
           }
         }
         
         nextElement = nextElement.nextElementSibling;
-      }
-      
-      // Combine step title with its content
-      if (stepParts.length > 1) {
-        // Format: "Step Title: instructions..."
-        final stepContent = stepParts.skip(1).join(' ').trim();
-        if (stepContent.isNotEmpty) {
-          directions.add('$stepTitle: $stepContent');
-        }
-      } else if (stepParts.length == 1 && stepTitle.length > 10) {
-        // If only title but it's descriptive, add it as a direction
-        directions.add(stepTitle);
       }
     }
     
