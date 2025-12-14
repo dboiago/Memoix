@@ -4529,6 +4529,73 @@ class UrlRecipeImporter {
       }
     }
     
+    // If we didn't find ingredients with h2, try looking for H3 sub-sections within ingredient container
+    // AmazingFoodMadeEasy uses: H2 "Ingredients for..." then H3 "For the X" sections with text ingredients
+    if ((result['ingredients'] as List).isEmpty) {
+      // Find h2 with "ingredient" and extract H3 subsections with their content
+      for (final h2 in document.querySelectorAll('h2')) {
+        final h2Text = h2.text?.trim().toLowerCase() ?? '';
+        if (h2Text.contains('ingredient')) {
+          final collectedItems = <String>[];
+          
+          // Walk through siblings after this H2 until next H2
+          var sibling = h2.nextElementSibling;
+          String? currentSection;
+          
+          while (sibling != null) {
+            final siblingTag = sibling.localName?.toLowerCase();
+            
+            // Stop at next H2 (new major section)
+            if (siblingTag == 'h2') break;
+            
+            // H3 is a sub-section header (e.g., "For the Sous Vide Pork Tenderloin")
+            if (siblingTag == 'h3') {
+              final sectionText = _decodeHtml(sibling.text?.trim() ?? '');
+              // Check if this is a "For the X" section header, not instructions
+              if (sectionText.isNotEmpty && 
+                  !sectionText.toLowerCase().contains('instruction') &&
+                  !sectionText.toLowerCase().contains('direction') &&
+                  !sectionText.toLowerCase().contains('minutes') &&
+                  !sectionText.toLowerCase().contains('hour')) {
+                // Extract section name, removing "For the" prefix
+                var sectionName = sectionText;
+                final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
+                if (forTheMatch != null) {
+                  sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
+                }
+                currentSection = sectionName;
+                collectedItems.add('[$currentSection]');
+              }
+            }
+            // Text content (paragraphs, divs) might contain ingredients
+            else if (siblingTag == 'p' || siblingTag == 'div') {
+              final text = _decodeHtml(sibling.text?.trim() ?? '');
+              // Check if this line has measurements (ingredient line)
+              if (text.isNotEmpty && 
+                  (RegExp(r'\d+\s*(?:g|grams?|kg|oz|ounce|lb|pound|cup|cups|tbsp|tablespoon|tsp|teaspoon|ml|l)', caseSensitive: false).hasMatch(text) ||
+                   RegExp(r'^\d+\s+').hasMatch(text) ||
+                   RegExp(r'^[½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(text))) {
+                // Split by newlines in case multiple ingredients in one paragraph
+                for (final line in text.split('\n')) {
+                  final trimmed = line.trim();
+                  if (trimmed.isNotEmpty && trimmed.length > 2) {
+                    collectedItems.add(trimmed);
+                  }
+                }
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+          
+          if (collectedItems.isNotEmpty) {
+            result['ingredients'] = collectedItems;
+            break;
+          }
+        }
+      }
+    }
+    
     // If we didn't find ingredients with h2, try looking for lists with specific patterns
     if ((result['ingredients'] as List).isEmpty) {
       // Also check h3 headings (some sites use h3 for recipe sections)
@@ -5199,6 +5266,71 @@ class UrlRecipeImporter {
       } catch (_) {
         // Selector might not be supported
       }
+    }
+    
+    // Helper to check if URL is a valid step image
+    bool isValidImageUrl(String url) {
+      if (url.isEmpty) return false;
+      final lower = url.toLowerCase();
+      // Must have image extension or be S3/cloudfront URL
+      final hasImageExt = lower.contains('.jpg') || 
+          lower.contains('.jpeg') || 
+          lower.contains('.png') || 
+          lower.contains('.webp') ||
+          lower.contains('.gif');
+      final isS3 = lower.contains('s3.amazonaws.com') || lower.contains('cloudfront');
+      if (!hasImageExt && !isS3) return false;
+      // Skip icons, logos, avatars, tiny images
+      if (lower.contains('icon') || 
+          lower.contains('logo') || 
+          lower.contains('avatar') ||
+          lower.contains('emoji') ||
+          lower.contains('1x1') ||
+          lower.contains('pixel') ||
+          lower.contains('badge') ||
+          lower.contains('button') ||
+          lower.contains('book-cover') ||
+          lower.contains('headshot')) return false;
+      return true;
+    }
+    
+    // AmazingFoodMadeEasy embeds images as anchor tags with S3 URLs
+    // Look for anchors with image hrefs
+    try {
+      final allAnchors = document.querySelectorAll('a[href*="s3.amazonaws.com"], a[href*=".jpg"], a[href*=".png"]');
+      for (final anchor in allAnchors) {
+        final href = anchor.attributes['href'];
+        if (href != null && isValidImageUrl(href)) {
+          final resolvedUrl = resolveUrl(href);
+          if (!seenUrls.contains(resolvedUrl)) {
+            seenUrls.add(resolvedUrl);
+            images.add(resolvedUrl);
+          }
+        }
+      }
+    } catch (_) {
+      // Selector not supported
+    }
+    
+    // Also look for image links in raw HTML content (markdown-style image references)
+    // Pattern: [alt text](https://...image.jpg)
+    try {
+      final bodyHtml = document.body?.innerHtml ?? '';
+      final markdownImagePattern = RegExp(
+        r'\[([^\]]+)\]\((https?://[^\s\)]+\.(?:jpg|jpeg|png|webp|gif))\)',
+        caseSensitive: false,
+      );
+      for (final match in markdownImagePattern.allMatches(bodyHtml)) {
+        final imageUrl = match.group(2);
+        if (imageUrl != null && isValidImageUrl(imageUrl)) {
+          if (!seenUrls.contains(imageUrl)) {
+            seenUrls.add(imageUrl);
+            images.add(imageUrl);
+          }
+        }
+      }
+    } catch (_) {
+      // Error parsing HTML
     }
     
     return images;

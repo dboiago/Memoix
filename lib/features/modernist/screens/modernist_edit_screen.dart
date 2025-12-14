@@ -598,8 +598,13 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                 color: theme.colorScheme.outline,
               ),
             ),
-            const SizedBox(width: 8),
-            // Section header indicator (no icon, just styling like normal recipes)
+            const SizedBox(width: 4),
+            // Section indicator icon
+            Icon(
+              Icons.label_important_outline,
+              size: 18,
+              color: theme.colorScheme.secondary,
+            ),
             const SizedBox(width: 8),
             // Section name input
             Expanded(
