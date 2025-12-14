@@ -347,7 +347,7 @@ class UrlRecipeImporter {
         );
       })
       // Filter out empty entries (no name and no section)
-      .where((i) => i.name.isNotEmpty || i.sectionName != null)
+      .where((i) => i.name.trim().isNotEmpty || i.sectionName != null)
       .toList();
       
       // Calculate confidence based on what was successfully parsed
@@ -1825,7 +1825,7 @@ class UrlRecipeImporter {
       );
     })
     // Filter out empty entries (no name and no section)
-    .where((i) => i.name.isNotEmpty || i.sectionName != null)
+    .where((i) => i.name.trim().isNotEmpty || i.sectionName != null)
     .toList();
 
     return RecipeImportResult(
@@ -3202,7 +3202,7 @@ class UrlRecipeImporter {
       );
     })
     // Filter out empty entries (no name and no section)
-    .where((i) => i.name.isNotEmpty || i.sectionName != null)
+    .where((i) => i.name.trim().isNotEmpty || i.sectionName != null)
     .toList();
 
     // Build detected courses list - include the course we detected
