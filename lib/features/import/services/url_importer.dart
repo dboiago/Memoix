@@ -294,20 +294,27 @@ class UrlRecipeImporter {
       // Detect course from title
       final detectedCourse = _detectCourseFromTitle(recipeName);
       
-      // Build time string from parsed times
+      // Build time string from parsed times - extract numeric values and sum
       String? recipeTime;
       final prepTime = parsedDescription['prepTime'] as String?;
       final cookTime = parsedDescription['cookTime'] as String?;
       final totalTime = parsedDescription['totalTime'] as String?;
       
       if (totalTime != null) {
-        recipeTime = totalTime;
-      } else if (prepTime != null && cookTime != null) {
-        recipeTime = 'Prep: $prepTime, Cook: $cookTime';
-      } else if (cookTime != null) {
-        recipeTime = cookTime;
-      } else if (prepTime != null) {
-        recipeTime = 'Prep: $prepTime';
+        recipeTime = _normalizeTimeString(totalTime);
+      } else if (prepTime != null || cookTime != null) {
+        final prepMinutes = _extractMinutes(prepTime);
+        final cookMinutes = _extractMinutes(cookTime);
+        final totalMinutes = prepMinutes + cookMinutes;
+        if (totalMinutes > 0) {
+          if (totalMinutes >= 60) {
+            final hours = totalMinutes ~/ 60;
+            final mins = totalMinutes % 60;
+            recipeTime = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
+          } else {
+            recipeTime = '${totalMinutes} min';
+          }
+        }
       }
       
       // Build notes with channel attribution (include debug for now)
@@ -765,6 +772,49 @@ class UrlRecipeImporter {
     return null;
   }
   
+  /// Extract minutes from a time string like "15 minutes" or "1 hour 30 minutes"
+  int _extractMinutes(String? timeStr) {
+    if (timeStr == null || timeStr.isEmpty) return 0;
+    
+    int totalMinutes = 0;
+    
+    // Extract hours
+    final hoursMatch = RegExp(r'(\d+)\s*(?:hours?|hrs?|h)\b', caseSensitive: false).firstMatch(timeStr);
+    if (hoursMatch != null) {
+      totalMinutes += (int.tryParse(hoursMatch.group(1)!) ?? 0) * 60;
+    }
+    
+    // Extract minutes
+    final minsMatch = RegExp(r'(\d+)\s*(?:minutes?|mins?|m)\b', caseSensitive: false).firstMatch(timeStr);
+    if (minsMatch != null) {
+      totalMinutes += int.tryParse(minsMatch.group(1)!) ?? 0;
+    }
+    
+    // If just a bare number, assume minutes
+    if (totalMinutes == 0) {
+      final bareNumber = RegExp(r'^(\d+)\s*$').firstMatch(timeStr.trim());
+      if (bareNumber != null) {
+        totalMinutes = int.tryParse(bareNumber.group(1)!) ?? 0;
+      }
+    }
+    
+    return totalMinutes;
+  }
+  
+  /// Normalize a time string to a clean format
+  String _normalizeTimeString(String timeStr) {
+    final minutes = _extractMinutes(timeStr);
+    if (minutes <= 0) return timeStr; // Can't parse, return as-is
+    
+    if (minutes >= 60) {
+      final hours = minutes ~/ 60;
+      final mins = minutes % 60;
+      return mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
+    } else {
+      return '$minutes min';
+    }
+  }
+  
   String _cleanDirectionLine(String line) {
     // First, try to extract step title from timestamp format
     final timestampStep = _extractStepFromTimestamp(line);
@@ -897,13 +947,27 @@ class UrlRecipeImporter {
       String lastError = '';
       
       // Method 1: Try to find transcript engagement panel params
-      // Look for engagementPanels with transcriptSearchPanelRenderer
-      final panelMatch = RegExp(
-        r'"engagementPanels".*?"targetId"\s*:\s*"engagement-panel-searchable-transcript".*?"params"\s*:\s*"([^"]+)"',
+      // Look for engagement panel with transcript - try multiple patterns
+      String? transcriptParams;
+      
+      // Pattern 1: Look for transcript panel targetId and nearby params
+      final panelMatch1 = RegExp(
+        r'"targetId"\s*:\s*"engagement-panel-searchable-transcript"[^}]*?"params"\s*:\s*"([^"]+)"',
         dotAll: true,
       ).firstMatch(pageBody);
       
-      final transcriptParams = panelMatch?.group(1);
+      if (panelMatch1 != null) {
+        transcriptParams = panelMatch1.group(1);
+      } else {
+        // Pattern 2: Look for transcriptEndpoint params
+        final panelMatch2 = RegExp(
+          r'"transcriptEndpoint"\s*:\s*\{[^}]*"params"\s*:\s*"([^"]+)"',
+          dotAll: true,
+        ).firstMatch(pageBody);
+        if (panelMatch2 != null) {
+          transcriptParams = panelMatch2.group(1);
+        }
+      }
       
       if (transcriptParams != null) {
         try {
@@ -925,10 +989,12 @@ class UrlRecipeImporter {
             }
             lastError = 'youtubei: 0 segs from ${transcriptResponse.body.length}b';
           } else {
-            lastError = 'youtubei: ${transcriptResponse.statusCode}';
+            // Show first bit of params to help debug
+            final paramsSample = transcriptParams.length > 20 ? '${transcriptParams.substring(0, 20)}...' : transcriptParams;
+            lastError = 'youtubei: ${transcriptResponse.statusCode} (params: $paramsSample)';
           }
         } catch (e) {
-          lastError = 'youtubei err';
+          lastError = 'youtubei err: $e';
         }
       } else {
         lastError = 'no panel params';
