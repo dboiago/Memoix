@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
+// ignore: unused_import
+import 'package:flutter/foundation.dart';
 
 class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   final WidgetRef ref;
@@ -105,9 +107,13 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               trailing: recipe.isFavorite
                   ? const Icon(Icons.favorite, color: Colors.red, size: 20)
                   : null,
-              onTap: () {
+              onTap: () async {
                 close(context, recipe);
-                AppRoutes.toRecipeDetail(context, recipe.uuid);
+                // Verify recipe still exists before navigating
+                final exists = await ref.read(recipeRepositoryProvider).getRecipeByUuid(recipe.uuid);
+                if (exists != null) {
+                  AppRoutes.toRecipeDetail(context, recipe.uuid);
+                }
               },
             );
           },

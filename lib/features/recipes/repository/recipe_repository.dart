@@ -313,8 +313,10 @@ final favoriteRecipesProvider = StreamProvider<List<Recipe>>((ref) {
   return ref.watch(recipeRepositoryProvider).watchFavorites();
 });
 
-/// Provider for recipe search
+/// Provider for recipe search - watches allRecipesProvider to auto-refresh when recipes change
 final recipeSearchProvider = FutureProvider.family<List<Recipe>, String>((ref, query) {
+  // Watch allRecipesProvider to invalidate search when recipes are added/deleted
+  ref.watch(allRecipesProvider);
   return ref.watch(recipeRepositoryProvider).searchRecipes(query);
 });
 

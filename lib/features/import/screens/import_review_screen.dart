@@ -58,7 +58,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _timeController = TextEditingController(text: result.time ?? '');
     _techniqueController = TextEditingController();
 
-    _selectedCourse = result.course ?? 'Mains';
+    // Normalize course to match Category.defaults names (proper capitalization)
+    final rawCourse = result.course ?? 'Mains';
+    _selectedCourse = _normalizeCourse(rawCourse);
     _selectedCuisine = result.cuisine;
 
     // Sanitize ingredients to remove empty/invalid entries
@@ -324,6 +326,19 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   // Fields that are optional and shouldn't show "Needs input"
   static const _optionalFields = {'Cuisine', 'Servings', 'Time'};
+
+  /// Normalize course string to match Category.defaults names
+  String _normalizeCourse(String course) {
+    final lower = course.toLowerCase();
+    for (final category in Category.defaults) {
+      if (category.slug == lower || category.name.toLowerCase() == lower) {
+        return category.name;
+      }
+    }
+    // Fallback: capitalize first letter
+    if (course.isEmpty) return 'Mains';
+    return course[0].toUpperCase() + course.substring(1);
+  }
   
   Widget _buildSectionTitle(
     ThemeData theme,
