@@ -199,11 +199,20 @@ class UrlRecipeImporter {
       final hasMicrodata = document.querySelector('[itemtype*="Recipe"]') != null;
       final hasRecipeClass = document.querySelector('.recipe, .recipe-card, .recipe-content') != null;
       final hasAnyLists = document.querySelectorAll('ul li, ol li').length > 0;
+      final bodyText = document.body?.text ?? '';
+      final bodyLength = bodyText.length;
+      final hasBullets = bodyText.contains('•');
+      final hasH2 = document.querySelectorAll('h2').length > 0;
+      final hasH3 = document.querySelectorAll('h3').length > 0;
       
       String diagnostics = 'Found $jsonLdCount JSON-LD script${jsonLdCount != 1 ? 's' : ''}';
       if (hasMicrodata) diagnostics += ', has Recipe microdata';
       if (hasRecipeClass) diagnostics += ', has recipe classes';
-      if (!hasAnyLists) diagnostics += ', no lists found (page may be dynamically loaded)';
+      if (!hasAnyLists) diagnostics += ', no lists found';
+      if (hasBullets) diagnostics += ', has bullet chars';
+      if (hasH2) diagnostics += ', has h2 headings';
+      if (hasH3) diagnostics += ', has h3 headings';
+      diagnostics += ', body=$bodyLength chars';
       
       throw Exception(
         'Could not find recipe data on this page. '
@@ -3438,38 +3447,44 @@ class UrlRecipeImporter {
     if (rawIngredientStrings.isEmpty) {
       final bodyText = document.body?.text ?? '';
       
-      // Look for sections that contain bullet points with measurements
+      // Look for bullet points anywhere in the body
       if (bodyText.contains('•')) {
-        // Find "Ingredients" section by looking for the word followed by bullets
-        final ingredientSectionMatch = RegExp(
-          r'Ingredients?\s*[:\n]*((?:[^•]*•[^\n]+\n?)+)',
-          caseSensitive: false,
-        ).firstMatch(bodyText);
+        // Simple approach: just split by bullet and filter for ingredient-like content
+        final allBulletItems = bodyText.split('•');
+        final potentialIngredients = <String>[];
         
-        if (ingredientSectionMatch != null) {
-          final ingredientSection = ingredientSectionMatch.group(1) ?? '';
-          final bulletItems = ingredientSection.split('•');
-          
-          for (var item in bulletItems) {
-            item = _decodeHtml(item.trim());
-            // Remove any trailing content that looks like next section
-            final nextSectionIdx = item.indexOf(RegExp(r'\n\s*(Equipment|Directions?|Instructions?|Method|Steps?|Timing|Yield)\b', caseSensitive: false));
-            if (nextSectionIdx > 0) {
-              item = item.substring(0, nextSectionIdx).trim();
-            }
-            
-            if (item.isEmpty || item.length < 3) continue;
-            // Skip obvious non-ingredient lines
-            if (item.toLowerCase().contains('subscribe') || 
-                item.toLowerCase().contains('http') ||
-                item.toLowerCase().contains('click')) continue;
-            
-            rawIngredientStrings.add(item);
+        for (var item in allBulletItems) {
+          // Take only first line of each bullet item
+          final firstNewline = item.indexOf('\n');
+          if (firstNewline > 0) {
+            item = item.substring(0, firstNewline);
           }
+          item = _decodeHtml(item.trim());
           
-          if (rawIngredientStrings.isNotEmpty) {
-            rawIngredientStrings = _processIngredientListItems(rawIngredientStrings);
+          if (item.isEmpty || item.length < 3 || item.length > 150) continue;
+          
+          // Skip obvious non-ingredient lines
+          if (item.toLowerCase().contains('subscribe') || 
+              item.toLowerCase().contains('http') ||
+              item.toLowerCase().contains('click') ||
+              item.toLowerCase().contains('menu') ||
+              item.toLowerCase().contains('instagram') ||
+              item.toLowerCase().contains('facebook')) continue;
+          
+          // Check if this looks like an ingredient (has a measurement or is a section header)
+          final looksLikeIngredient = 
+              RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg)', caseSensitive: false).hasMatch(item) ||
+              RegExp(r'[½¼¾⅓⅔⅛⅜⅝⅞]', caseSensitive: false).hasMatch(item) ||
+              RegExp(r'\(\d+[^)]*\)', caseSensitive: false).hasMatch(item) || // Has parenthetical measurement
+              item.endsWith(':'); // Section header like "Ingredients Black Garlic Honey:"
+          
+          if (looksLikeIngredient) {
+            potentialIngredients.add(item);
           }
+        }
+        
+        if (potentialIngredients.length >= 2) {
+          rawIngredientStrings = _processIngredientListItems(potentialIngredients);
         }
       }
     }
@@ -3478,29 +3493,44 @@ class UrlRecipeImporter {
     if (rawDirections.isEmpty && rawIngredientStrings.isNotEmpty) {
       final bodyText = document.body?.text ?? '';
       
-      // Look for step headings pattern (like "Create Black Garlic Honey" followed by text)
-      final stepMatches = RegExp(
-        r'(?:^|\n)(Create|Make|Prepare|Step\s*\d+|Churn)[^\n]+\n([^•\n][^\n]+(?:\n[^•\n][^\n]+)*)',
-        caseSensitive: false,
-      ).allMatches(bodyText);
+      // Look for h3-style section headings in the text
+      // Pattern: newline + "Create/Make/Prepare/Churn" at start of line
+      final lines = bodyText.split('\n');
+      String? currentStepTitle;
+      final currentStepContent = <String>[];
       
-      for (final match in stepMatches) {
-        final stepTitle = match.group(0)?.split('\n').first.trim() ?? '';
-        final stepContent = match.group(2)?.trim() ?? '';
+      for (final line in lines) {
+        final trimmed = line.trim();
+        if (trimmed.isEmpty) continue;
         
-        if (stepTitle.isNotEmpty && !_isNavigationHeading(stepTitle)) {
-          rawDirections.add('**$stepTitle**');
-        }
-        if (stepContent.isNotEmpty && stepContent.length > 20) {
-          // Split by sentences or line breaks
-          final sentences = stepContent.split(RegExp(r'(?<=[.!?])\s+(?=[A-Z])|\n+'));
-          for (final sentence in sentences) {
-            final cleaned = sentence.trim();
-            if (cleaned.length > 15) {
-              rawDirections.add(cleaned);
-            }
+        // Check if this looks like a step heading
+        final isStepHeading = RegExp(r'^(Create|Make|Prepare|Churn|Step\s*\d+)\b', caseSensitive: false).hasMatch(trimmed) &&
+            trimmed.length < 80 &&
+            !trimmed.contains('•');
+        
+        if (isStepHeading) {
+          // Save previous step if any
+          if (currentStepTitle != null && currentStepContent.isNotEmpty) {
+            rawDirections.add('**$currentStepTitle**');
+            rawDirections.addAll(currentStepContent);
+          }
+          currentStepTitle = trimmed;
+          currentStepContent.clear();
+        } else if (currentStepTitle != null) {
+          // This is content for the current step
+          if (trimmed.length > 20 && 
+              !trimmed.contains('•') && 
+              !trimmed.toLowerCase().contains('subscribe') &&
+              !trimmed.toLowerCase().contains('http')) {
+            currentStepContent.add(trimmed);
           }
         }
+      }
+      
+      // Don't forget the last step
+      if (currentStepTitle != null && currentStepContent.isNotEmpty) {
+        rawDirections.add('**$currentStepTitle**');
+        rawDirections.addAll(currentStepContent);
       }
     }
     
