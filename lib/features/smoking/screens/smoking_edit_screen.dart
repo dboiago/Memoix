@@ -36,7 +36,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final _woodController = TextEditingController();
   final _notesController = TextEditingController();
 
-  String? _imagePath; // Local file path or URL
+  String? _imagePath; // Header image - local file path or URL
+  final List<String> _stepImages = []; // Step images
   final List<_SeasoningEntry> _seasonings = [];
   final List<TextEditingController> _directionControllers = [];
 
@@ -61,6 +62,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _woodController.text = recipe.wood;
       _notesController.text = recipe.notes ?? '';
       _imagePath = recipe.imageUrl;
+      _stepImages.addAll(recipe.stepImages);
 
       for (final seasoning in recipe.seasonings) {
         _seasonings.add(_SeasoningEntry(
@@ -86,6 +88,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _woodController.text = recipe.wood;
         _notesController.text = recipe.notes ?? '';
         _imagePath = recipe.imageUrl;
+        _stepImages.addAll(recipe.stepImages);
 
         for (final seasoning in recipe.seasonings) {
           _seasonings.add(_SeasoningEntry(
@@ -367,11 +370,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             _buildSectionTitle(theme, 'Seasonings'),
             const SizedBox(height: 8),
             ..._buildSeasoningFields(),
-            TextButton.icon(
-              onPressed: _addSeasoning,
-              icon: const Icon(Icons.add, size: 18),
-              label: const Text('Add Seasoning'),
-            ),
 
             const SizedBox(height: 24),
 
@@ -379,11 +377,11 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             _buildSectionTitle(theme, 'Directions'),
             const SizedBox(height: 8),
             ..._buildDirectionFields(),
-            TextButton.icon(
-              onPressed: _addDirection,
-              icon: const Icon(Icons.add, size: 18),
-              label: const Text('Add Step'),
-            ),
+
+            const SizedBox(height: 24),
+
+            // Step Images section
+            _buildStepImagesSection(theme),
 
             const SizedBox(height: 24),
 
@@ -550,6 +548,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       final index = entry.key;
       final controller = entry.value;
       final theme = Theme.of(context);
+      final isLast = index == _directionControllers.length - 1;
 
       return Padding(
         padding: const EdgeInsets.only(bottom: 8),
@@ -593,6 +592,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                       : null,
                 ),
                 maxLines: null,
+                onChanged: (value) {
+                  // Auto-add new row when typing in last row
+                  if (isLast && value.isNotEmpty && _directionControllers.length == index + 1) {
+                    _addDirection();
+                  }
+                },
               ),
             ),
           ],
@@ -627,6 +632,190 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     setState(() {
       _directionControllers[index].dispose();
       _directionControllers.removeAt(index);
+    });
+  }
+
+  Widget _buildStepImagesSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Text(
+              'Step Images',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(width: 8),
+            if (_stepImages.isNotEmpty)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '${_stepImages.length}',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onPrimaryContainer,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Text(
+          'Add photos for cooking steps',
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+        const SizedBox(height: 8),
+        SizedBox(
+          height: 100,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: _stepImages.length + 1, // +1 for add button
+            itemBuilder: (context, index) {
+              // Add button at the end
+              if (index == _stepImages.length) {
+                return GestureDetector(
+                  onTap: _pickStepImage,
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: theme.colorScheme.outline.withOpacity(0.3),
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate,
+                          size: 32,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Add',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
+
+              // Existing image
+              return Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: _buildStepImageWidget(_stepImages[index], width: 100, height: 100),
+                    ),
+                    // Delete button
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: Material(
+                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        borderRadius: BorderRadius.circular(20),
+                        child: InkWell(
+                          onTap: () => _removeStepImage(index),
+                          borderRadius: BorderRadius.circular(20),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4),
+                            child: Icon(
+                              Icons.close,
+                              size: 16,
+                              color: theme.colorScheme.error,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return Image.network(
+        imagePath,
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => Container(
+          width: width,
+          height: height,
+          color: Colors.grey.shade200,
+          child: const Icon(Icons.broken_image),
+        ),
+      );
+    } else {
+      return Image.file(
+        File(imagePath),
+        width: width,
+        height: height,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => Container(
+          width: width,
+          height: height,
+          color: Colors.grey.shade200,
+          child: const Icon(Icons.broken_image),
+        ),
+      );
+    }
+  }
+
+  Future<void> _pickStepImage() async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: ImageSource.gallery,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFile != null) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/smoking_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+
+        setState(() {
+          _stepImages.add(savedFile.path);
+        });
+      }
+    } catch (e) {
+      debugPrint('Error picking image: $e');
+    }
+  }
+
+  void _removeStepImage(int index) {
+    setState(() {
+      _stepImages.removeAt(index);
     });
   }
 
@@ -665,6 +854,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ? null
           : _notesController.text.trim()
       ..imageUrl = _imagePath
+      ..stepImages = _stepImages
       ..source = _existingRecipe?.source ?? SmokingSource.personal
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
       ..updatedAt = DateTime.now();

@@ -151,7 +151,7 @@ class UnitNormalizer {
   /// Get common units for display in UI
   static const List<String> commonUnits = [
     'C',
-    'tbsp',
+    'Tbsp',
     'tsp',
     'oz',
     'lb',

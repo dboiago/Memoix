@@ -10,6 +10,7 @@ class Suggestions {
     'Provolone',
     'Ricotta',
     'Gorgonzola',
+    "Fior di Latte"
     'Fontina',
     'Goat Cheese',
     'Feta',
@@ -56,7 +57,8 @@ class Suggestions {
     'Pineapple',
     'Banana Peppers',
     'Hot Honey',
-    'Truffle Oil',
+    'Potato',
+    'Truffles',
     'Eggplant',
     'Zucchini',
     'Broccoli',
