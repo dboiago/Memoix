@@ -220,7 +220,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _notesController.text = 'OCR Text:\n${widget.ocrText}';
     }
 
-    // Always have at least one empty row for adding ingredients
+    // Always have at least one empty row at the end for adding ingredients
     if (_ingredientRows.isEmpty) {
       // For salads, add a Dressing section after initial ingredients
       if (_selectedCourse == 'salad') {
@@ -230,11 +230,26 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       } else {
         _addIngredientRow();
       }
+    } else {
+      // Add blank row at end for existing recipes (for adding more)
+      final lastRow = _ingredientRows.last;
+      final lastIsEmpty = lastRow.nameController.text.isEmpty && 
+                          lastRow.amountController.text.isEmpty && 
+                          !lastRow.isSection;
+      if (!lastIsEmpty) {
+        _addIngredientRow();
+      }
     }
     
-    // Always have at least one direction row
+    // Always have at least one direction row, and ensure blank row at end for adding more
     if (_directionRows.isEmpty) {
       _addDirectionRow();
+    } else {
+      // Add blank row at end for existing recipes (for adding more)
+      final lastRow = _directionRows.last;
+      if (lastRow.text.isNotEmpty) {
+        _addDirectionRow();
+      }
     }
 
     setState(() => _isLoading = false);
@@ -973,14 +988,6 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   onPressed: _addSectionHeader,
                   icon: const Icon(Icons.title, size: 18),
                   label: const Text('Section'),
-                ),
-                TextButton.icon(
-                  onPressed: () {
-                    _addIngredientRow();
-                    setState(() {});
-                  },
-                  icon: const Icon(Icons.add, size: 18),
-                  label: const Text('Add'),
                 ),
               ],
             ),
