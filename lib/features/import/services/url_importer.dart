@@ -255,11 +255,13 @@ class UrlRecipeImporter {
       
       // Try to fetch and parse transcript/captions with timestamps
       List<TranscriptSegment> transcriptSegments = [];
+      String transcriptDebug = '';
       try {
-        final (segments, _) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
+        final (segments, debug) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
         transcriptSegments = segments;
-      } catch (_) {
-        // Transcript fetch failed - will fall back to chapters or description
+        transcriptDebug = debug;
+      } catch (e) {
+        transcriptDebug = 'err: $e';
       }
       
       // Parse the description for ingredients
@@ -292,8 +294,27 @@ class UrlRecipeImporter {
       // Detect course from title
       final detectedCourse = _detectCourseFromTitle(recipeName);
       
-      // Build notes with channel attribution
+      // Build time string from parsed times
+      String? recipeTime;
+      final prepTime = parsedDescription['prepTime'] as String?;
+      final cookTime = parsedDescription['cookTime'] as String?;
+      final totalTime = parsedDescription['totalTime'] as String?;
+      
+      if (totalTime != null) {
+        recipeTime = totalTime;
+      } else if (prepTime != null && cookTime != null) {
+        recipeTime = 'Prep: $prepTime, Cook: $cookTime';
+      } else if (cookTime != null) {
+        recipeTime = cookTime;
+      } else if (prepTime != null) {
+        recipeTime = 'Prep: $prepTime';
+      }
+      
+      // Build notes with channel attribution (include debug for now)
       String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
+      if (chapters.isNotEmpty || transcriptSegments.isNotEmpty) {
+        notes += '\n[${chapters.length} ch, $transcriptDebug]';
+      }
       if (parsedDescription['notes'] != null) {
         notes += '\n\n${parsedDescription["notes"]}';
       }
@@ -322,6 +343,7 @@ class UrlRecipeImporter {
       return RecipeImportResult(
         name: recipeName,
         course: detectedCourse ?? 'Mains',
+        time: recipeTime,
         ingredients: ingredients,
         directions: directions,
         notes: notes,
@@ -335,6 +357,7 @@ class UrlRecipeImporter {
         directionsConfidence: hasDirections 
             ? (transcriptSegments.isNotEmpty ? 0.7 : 0.5) 
             : 0.0,
+        timeConfidence: recipeTime != null ? 0.8 : 0.0,
         sourceUrl: sourceUrl,
         source: RecipeSource.url,
       );
@@ -438,6 +461,9 @@ class UrlRecipeImporter {
       'ingredients': <String>[],
       'directions': <String>[],
       'notes': null,
+      'prepTime': null,
+      'cookTime': null,
+      'totalTime': null,
     };
     
     if (description.isEmpty) return result;
@@ -450,12 +476,36 @@ class UrlRecipeImporter {
     final ingredients = <String>[];
     final directions = <String>[];
     final notes = <String>[];
+    String? prepTime;
+    String? cookTime;
+    String? totalTime;
     
     for (var line in lines) {
       line = line.trim();
       if (line.isEmpty) continue;
       
-      final lowerLine = line.toLowerCase();
+      // Extract time information before other processing
+      final timeMatch = RegExp(
+        r'^(prep|cook|total|bake|rise|rest|chill)\s*(?:time)?\s*:\s*(.+)$',
+        caseSensitive: false,
+      ).firstMatch(line);
+      if (timeMatch != null) {
+        final timeType = timeMatch.group(1)!.toLowerCase();
+        final timeValue = timeMatch.group(2)!.trim();
+        if (timeType == 'prep') {
+          prepTime = timeValue;
+        } else if (timeType == 'cook' || timeType == 'bake') {
+          cookTime = timeValue;
+        } else if (timeType == 'total') {
+          totalTime = timeValue;
+        }
+        // Don't add to notes - we'll use the structured time field
+        continue;
+      }
+      
+      // Strip common decorative characters for section header detection
+      final strippedLine = line.replaceAll(RegExp(r'^[•\-*#▶►▸→]+\s*|\s*[•\-*#◀◄◂←]+$'), '').trim();
+      final lowerLine = strippedLine.toLowerCase();
       
       // Check for section headers
       if (_isIngredientSectionHeader(lowerLine)) {
@@ -558,6 +608,9 @@ class UrlRecipeImporter {
     if (notes.isNotEmpty) {
       result['notes'] = notes.join('\n');
     }
+    result['prepTime'] = prepTime;
+    result['cookTime'] = cookTime;
+    result['totalTime'] = totalTime;
     
     return result;
   }
