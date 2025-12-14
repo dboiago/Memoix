@@ -209,6 +209,10 @@ class UrlRecipeImporter {
       // Check for common text patterns
       final hasMeasurements = RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|tbsp|tsp)', caseSensitive: false).hasMatch(bodyText);
       
+      // Check raw HTML for bullets and measurements (in case DOM parsing strips them)
+      final rawHasBullets = body.contains('•') || body.contains('&bull;') || body.contains('&#8226;');
+      final rawHasMeasurements = RegExp(r'\d+g\s*\(', caseSensitive: false).hasMatch(body);
+      
       // Sample of body text for debugging (first 200 chars after title-like content)
       String bodySample = '';
       final ingredientIdx = bodyText.toLowerCase().indexOf('ingredient');
@@ -218,10 +222,20 @@ class UrlRecipeImporter {
         if (bodySample.length > 100) bodySample = '${bodySample.substring(0, 100)}...';
       }
       
+      // Also sample raw HTML near ingredient patterns
+      String rawSample = '';
+      final rawIngIdx = body.toLowerCase().indexOf('ingredient');
+      if (rawIngIdx >= 0) {
+        final rawEnd = (rawIngIdx + 200).clamp(0, body.length);
+        rawSample = body.substring(rawIngIdx, rawEnd).replaceAll(RegExp(r'\s+'), ' ').trim();
+        if (rawSample.length > 80) rawSample = '${rawSample.substring(0, 80)}...';
+      }
+      
       String diagnostics = 'JSON-LD:$jsonLdCount, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
       diagnostics += ', bullets:${hasBullets ? "yes" : "no"}, measurements:${hasMeasurements ? "yes" : "no"}';
+      diagnostics += ', rawBullets:${rawHasBullets ? "yes" : "no"}, rawMeas:${rawHasMeasurements ? "yes" : "no"}';
       diagnostics += ', body=$bodyLength chars';
-      if (bodySample.isNotEmpty) diagnostics += '. Near ingredients: "$bodySample"';
+      if (rawSample.isNotEmpty) diagnostics += '. Raw: "$rawSample"';
       
       throw Exception(
         'Could not find recipe data on this page. '
