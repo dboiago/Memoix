@@ -2917,25 +2917,106 @@ class UrlRecipeImporter {
                   document.querySelector('.recipe-title')?.text?.trim() ??
                   document.querySelector('[itemprop="name"]')?.text?.trim();
 
-    // First try standard recipe selectors
-    final ingredientElements = document.querySelectorAll(
-      '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
-    );
-    
     var rawIngredientStrings = <String>[];
-    for (final e in ingredientElements) {
-      final text = _decodeHtml((e.text ?? '').trim());
-      if (text.isNotEmpty) {
-        rawIngredientStrings.add(text);
+    var rawDirections = <String>[];
+    List<String> equipmentItems = [];
+    String? yield;
+    String? timing;
+    
+    // Check for "Cooked" recipe plugin format (WordPress plugin)
+    // Uses classes like cooked-ing-amount, cooked-ing-name, cooked-dir-content
+    final cookedIngredients = document.querySelectorAll('.cooked-single-ingredient.cooked-ingredient');
+    
+    if (cookedIngredients.isNotEmpty) {
+      // Parse Cooked format ingredients
+      for (final elem in cookedIngredients) {
+        final amount = elem.querySelector('.cooked-ing-amount')?.text?.trim() ?? '';
+        final unit = elem.querySelector('.cooked-ing-measurement')?.text?.trim() ?? '';
+        final name = elem.querySelector('.cooked-ing-name')?.text?.trim() ?? '';
+        
+        if (name.isNotEmpty) {
+          // Build the ingredient string
+          String ingredientStr = '';
+          if (amount.isNotEmpty) {
+            ingredientStr = amount;
+            if (unit.isNotEmpty) {
+              ingredientStr += ' $unit';
+            }
+            ingredientStr += ' $name';
+          } else {
+            ingredientStr = name;
+          }
+          rawIngredientStrings.add(_decodeHtml(ingredientStr.trim()));
+        }
+      }
+      
+      // Parse Cooked format directions
+      final cookedDirections = document.querySelectorAll('.cooked-single-direction.cooked-direction');
+      for (final elem in cookedDirections) {
+        // Get the content div which contains paragraphs
+        final contentDiv = elem.querySelector('.cooked-dir-content');
+        if (contentDiv != null) {
+          // Get all paragraphs
+          final paragraphs = contentDiv.querySelectorAll('p');
+          for (final p in paragraphs) {
+            final text = _decodeHtml((p.text ?? '').trim());
+            if (text.isNotEmpty) {
+              rawDirections.add(text);
+            }
+          }
+          // If no paragraphs, try the content directly
+          if (paragraphs.isEmpty) {
+            final text = _decodeHtml((contentDiv.text ?? '').trim());
+            if (text.isNotEmpty) {
+              rawDirections.add(text);
+            }
+          }
+        }
+      }
+      
+      // Parse Cooked format time (prep/cook time)
+      final prepTime = document.querySelector('.cooked-prep-time');
+      final cookTime = document.querySelector('.cooked-cook-time');
+      final totalTime = document.querySelector('.cooked-total-time');
+      
+      int totalMinutes = 0;
+      
+      // Extract time from cooked-time elements
+      if (totalTime != null) {
+        final timeText = totalTime.text ?? '';
+        totalMinutes = _extractMinutes(timeText);
+      } else {
+        if (prepTime != null) {
+          final prepText = prepTime.text ?? '';
+          totalMinutes += _extractMinutes(prepText);
+        }
+        if (cookTime != null) {
+          final cookText = cookTime.text ?? '';
+          totalMinutes += _extractMinutes(cookText);
+        }
+      }
+      
+      if (totalMinutes > 0) {
+        timing = _normalizeTimeString(totalMinutes);
+      }
+    }
+    
+    // If Cooked format didn't find ingredients, try standard selectors
+    if (rawIngredientStrings.isEmpty) {
+      final ingredientElements = document.querySelectorAll(
+        '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
+      );
+      
+      for (final e in ingredientElements) {
+        final text = _decodeHtml((e.text ?? '').trim());
+        if (text.isNotEmpty) {
+          rawIngredientStrings.add(text);
+        }
       }
     }
     
     // If standard selectors failed, try section-based parsing
     // This handles sites like Modernist Pantry that use headings + lists
-    List<String> equipmentItems = [];
-    String? yield;
-    String? timing;
-    
     if (rawIngredientStrings.isEmpty) {
       final sectionResult = _parseHtmlBySections(document);
       rawIngredientStrings = sectionResult['ingredients'] ?? [];
@@ -2951,16 +3032,17 @@ class UrlRecipeImporter {
     
     ingredients = _sortIngredientsByQuantity(ingredients);
 
-    // First try standard direction selectors
-    final instructionElements = document.querySelectorAll(
-      '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
-    );
-    
-    var rawDirections = <String>[];
-    for (final e in instructionElements) {
-      final text = _decodeHtml((e.text ?? '').trim());
-      if (text.isNotEmpty) {
-        rawDirections.add(text);
+    // If Cooked format didn't find directions, try standard selectors
+    if (rawDirections.isEmpty) {
+      final instructionElements = document.querySelectorAll(
+        '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
+      );
+      
+      for (final e in instructionElements) {
+        final text = _decodeHtml((e.text ?? '').trim());
+        if (text.isNotEmpty) {
+          rawDirections.add(text);
+        }
       }
     }
     
