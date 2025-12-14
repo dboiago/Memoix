@@ -374,6 +374,20 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     );
   }
 
+  /// Group ingredients by section
+  Map<String, List<_IndexedIngredient>> _groupBySection(List<ModernistIngredient> ingredients) {
+    final grouped = <String, List<_IndexedIngredient>>{};
+    
+    for (var i = 0; i < ingredients.length; i++) {
+      final ingredient = ingredients[i];
+      final section = ingredient.section ?? '';
+      grouped.putIfAbsent(section, () => []);
+      grouped[section]!.add(_IndexedIngredient(i, ingredient));
+    }
+    
+    return grouped;
+  }
+
   Widget _buildIngredientsList(ThemeData theme, List<ModernistIngredient> ingredients) {
     if (ingredients.isEmpty) {
       return const Text(
@@ -382,95 +396,124 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       );
     }
 
+    // Group by section if available
+    final grouped = _groupBySection(ingredients);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: ingredients.asMap().entries.map((entry) {
-        final index = entry.key;
-        final ingredient = entry.value;
-        final isChecked = _checkedIngredients.contains(index);
+      children: grouped.entries.map((entry) {
+        final section = entry.key;
+        final items = entry.value;
 
-        return InkWell(
-          onTap: () {
-            setState(() {
-              if (isChecked) {
-                _checkedIngredients.remove(index);
-              } else {
-                _checkedIngredients.add(index);
-              }
-            });
-          },
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 6),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Checkbox
-                SizedBox(
-                  width: 24,
-                  height: 24,
-                  child: Checkbox(
-                    value: isChecked,
-                    onChanged: (value) {
-                      setState(() {
-                        if (value == true) {
-                          _checkedIngredients.add(index);
-                        } else {
-                          _checkedIngredients.remove(index);
-                        }
-                      });
-                    },
-                    visualDensity: VisualDensity.compact,
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Section header
+            if (section.isNotEmpty) ...[
+              Padding(
+                padding: const EdgeInsets.only(top: 12, bottom: 4),
+                child: Text(
+                  section,
+                  style: theme.textTheme.titleSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: theme.colorScheme.primary,
                   ),
                 ),
-                const SizedBox(width: 8),
-
-                // Ingredient name
-                Text(
-                  ingredient.name,
-                  style: TextStyle(
-                    decoration: isChecked ? TextDecoration.lineThrough : null,
-                    color: isChecked
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
-                        : null,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-
-                // Amount
-                if (ingredient.displayText != ingredient.name) ...[
-                  const SizedBox(width: 8),
-                  Text(
-                    ingredient.displayText.replaceFirst(ingredient.name, '').trim(),
-                    style: TextStyle(
-                      decoration: isChecked ? TextDecoration.lineThrough : null,
-                      color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
-                          : theme.colorScheme.onSurfaceVariant,
-                    ),
-                  ),
-                ],
-
-                // Notes
-                Expanded(
-                  child: ingredient.notes != null && ingredient.notes!.isNotEmpty
-                      ? Text(
-                          ingredient.notes!,
-                          style: TextStyle(
-                            decoration: isChecked ? TextDecoration.lineThrough : null,
-                            color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : theme.colorScheme.primary,
-                            fontStyle: FontStyle.italic,
-                          ),
-                          textAlign: TextAlign.right,
-                        )
-                      : const SizedBox.shrink(),
-                ),
-              ],
-            ),
-          ),
+              ),
+            ],
+            // Ingredients in this section
+            ...items.map((item) => _buildIngredientRow(theme, item)),
+          ],
         );
       }).toList(),
+    );
+  }
+
+  Widget _buildIngredientRow(ThemeData theme, _IndexedIngredient item) {
+    final index = item.index;
+    final ingredient = item.ingredient;
+    final isChecked = _checkedIngredients.contains(index);
+
+    return InkWell(
+      onTap: () {
+        setState(() {
+          if (isChecked) {
+            _checkedIngredients.remove(index);
+          } else {
+            _checkedIngredients.add(index);
+          }
+        });
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 6),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Checkbox
+            SizedBox(
+              width: 24,
+              height: 24,
+              child: Checkbox(
+                value: isChecked,
+                onChanged: (value) {
+                  setState(() {
+                    if (value == true) {
+                      _checkedIngredients.add(index);
+                    } else {
+                      _checkedIngredients.remove(index);
+                    }
+                  });
+                },
+                visualDensity: VisualDensity.compact,
+              ),
+            ),
+            const SizedBox(width: 8),
+
+            // Ingredient name
+            Text(
+              ingredient.name,
+              style: TextStyle(
+                decoration: isChecked ? TextDecoration.lineThrough : null,
+                color: isChecked
+                    ? theme.colorScheme.onSurface.withOpacity(0.5)
+                    : null,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+
+            // Amount
+            if (ingredient.displayText != ingredient.name) ...[
+              const SizedBox(width: 8),
+              Text(
+                ingredient.displayText.replaceFirst(ingredient.name, '').trim(),
+                style: TextStyle(
+                  decoration: isChecked ? TextDecoration.lineThrough : null,
+                  color: isChecked
+                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      : theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
+
+            // Notes
+            Expanded(
+              child: ingredient.notes != null && ingredient.notes!.isNotEmpty
+                  ? Text(
+                      ingredient.notes!,
+                      style: TextStyle(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.primary,
+                        fontStyle: FontStyle.italic,
+                      ),
+                      textAlign: TextAlign.right,
+                    )
+                  : const SizedBox.shrink(),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
