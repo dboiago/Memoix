@@ -13,8 +13,10 @@ import '../repository/pizza_repository.dart';
 /// Pizza edit/create screen
 class PizzaEditScreen extends ConsumerStatefulWidget {
   final String? pizzaId;
+  /// Pre-populated pizza for imports (not yet saved)
+  final Pizza? importedRecipe;
 
-  const PizzaEditScreen({super.key, this.pizzaId});
+  const PizzaEditScreen({super.key, this.pizzaId, this.importedRecipe});
 
   @override
   ConsumerState<PizzaEditScreen> createState() => _PizzaEditScreenState();
@@ -119,36 +121,44 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   }
 
   Future<void> _loadPizza() async {
+    Pizza? pizza;
+    
     if (widget.pizzaId != null) {
       final repo = ref.read(pizzaRepositoryProvider);
-      final pizza = await repo.getPizzaByUuid(widget.pizzaId!);
+      pizza = await repo.getPizzaByUuid(widget.pizzaId!);
       if (pizza != null) {
         _existingPizza = pizza;
-        _nameController.text = pizza.name;
-        _notesController.text = pizza.notes ?? '';
-        _selectedBase = pizza.base.displayName;
-        _imagePath = pizza.imageUrl;
-
-        // Clear default rows and load cheeses
-        for (final c in _cheeseControllers) {
-          c.dispose();
-        }
-        _cheeseControllers.clear();
-        for (final cheese in pizza.cheeses) {
-          _addCheeseRow(value: cheese);
-        }
-        _addCheeseRow(); // Add empty row at end
-
-        // Clear default rows and load toppings
-        for (final c in _toppingControllers) {
-          c.dispose();
-        }
-        _toppingControllers.clear();
-        for (final topping in pizza.toppings) {
-          _addToppingRow(value: topping);
-        }
-        _addToppingRow(); // Add empty row at end
       }
+    } else if (widget.importedRecipe != null) {
+      pizza = widget.importedRecipe;
+      // importedRecipe is not saved yet, so don't set _existingPizza
+    }
+    
+    if (pizza != null) {
+      _nameController.text = pizza.name;
+      _notesController.text = pizza.notes ?? '';
+      _selectedBase = pizza.base.displayName;
+      _imagePath = pizza.imageUrl;
+
+      // Clear default rows and load cheeses
+      for (final c in _cheeseControllers) {
+        c.dispose();
+      }
+      _cheeseControllers.clear();
+      for (final cheese in pizza.cheeses) {
+        _addCheeseRow(value: cheese);
+      }
+      _addCheeseRow(); // Add empty row at end
+
+      // Clear default rows and load toppings
+      for (final c in _toppingControllers) {
+        c.dispose();
+      }
+      _toppingControllers.clear();
+      for (final topping in pizza.toppings) {
+        _addToppingRow(value: topping);
+      }
+      _addToppingRow(); // Add empty row at end
     }
     setState(() => _isLoading = false);
   }

@@ -10,6 +10,12 @@ import '../../recipes/screens/recipe_edit_screen.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../modernist/repository/modernist_repository.dart';
+import '../../pizzas/models/pizza.dart';
+import '../../pizzas/screens/pizza_edit_screen.dart';
+import '../../pizzas/repository/pizza_repository.dart';
+import '../../smoking/models/smoking_recipe.dart';
+import '../../smoking/screens/smoking_edit_screen.dart';
+import '../../smoking/repository/smoking_repository.dart';
 import '../models/recipe_import_result.dart';
 
 /// Screen for reviewing and mapping imported recipe data
@@ -61,9 +67,6 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     // Normalize course to match Category.defaults names (proper capitalization)
     final rawCourse = result.course ?? 'Mains';
     _selectedCourse = _normalizeCourse(rawCourse);
-    
-    // DEBUG: Print course detection
-    print('DEBUG ImportReview: result.course="${result.course}" -> rawCourse="$rawCourse" -> normalized="$_selectedCourse"');
     _selectedCuisine = result.cuisine;
 
     // Sanitize ingredients to remove empty/invalid entries
@@ -134,11 +137,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               confidence: result.courseConfidence,),
           const SizedBox(height: 8),
           _buildCourseSelector(theme, result),
-          const SizedBox(height: 8),
-          // Debug: show current course value and isModernist state
-          Text('DEBUG: course="$_selectedCourse", isModernist=$_isModernistCourse', 
-               style: TextStyle(fontSize: 10, color: Colors.red)),
-          const SizedBox(height: 16),
+          const SizedBox(height: 24),
 
           // Cuisine OR Category/Technique based on course type
           if (_isModernistCourse) ...[
@@ -403,6 +402,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   /// Check if current course is Modernist
   bool get _isModernistCourse => _selectedCourse.toLowerCase() == 'modernist';
+  
+  /// Check if current course is Smoking
+  bool get _isSmokingCourse => _selectedCourse.toLowerCase() == 'smoking';
+  
+  /// Check if current course is Pizzas
+  bool get _isPizzasCourse => _selectedCourse.toLowerCase() == 'pizzas';
+  
+  /// Check if current course has a specialized edit screen
+  bool get _hasSpecializedScreen => _isModernistCourse || _isSmokingCourse || _isPizzasCourse;
 
   /// Convert course code to display name
   String _courseDisplayName(String course) {
@@ -983,6 +991,20 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           builder: (_) => ModernistEditScreen(importedRecipe: modernistRecipe),
         ),
       );
+    } else if (_isSmokingCourse) {
+      final smokingRecipe = _buildSmokingRecipe();
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => SmokingEditScreen(importedRecipe: smokingRecipe),
+        ),
+      );
+    } else if (_isPizzasCourse) {
+      final pizzaRecipe = _buildPizzaRecipe();
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => PizzaEditScreen(importedRecipe: pizzaRecipe),
+        ),
+      );
     } else {
       final recipe = _buildRecipe();
       Navigator.of(context).pushReplacement(
@@ -1122,6 +1144,124 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     return recipe;
   }
 
+  /// Build a SmokingRecipe from import data
+  SmokingRecipe _buildSmokingRecipe() {
+    // Build directions from selected
+    final directions = <String>[];
+    for (final index in _selectedDirectionIndices.toList()..sort()) {
+      if (index < widget.importResult.rawDirections.length) {
+        directions.add(widget.importResult.rawDirections[index]);
+      }
+    }
+    
+    // Try to detect wood type from ingredients or notes
+    String woodType = 'Hickory'; // Default
+    final allText = [...directions, widget.importResult.notes ?? ''].join(' ').toLowerCase();
+    for (final wood in WoodSuggestions.common) {
+      if (allText.contains(wood.toLowerCase())) {
+        woodType = wood;
+        break;
+      }
+    }
+    
+    // Try to detect temperature from directions or notes
+    String temperature = '';
+    final tempMatch = RegExp(r'(\d{2,3})\s*[°]?\s*[FCfc]').firstMatch(allText);
+    if (tempMatch != null) {
+      temperature = tempMatch.group(0) ?? '';
+    }
+    
+    // Convert ingredients to seasonings
+    final seasonings = <SmokingSeasoning>[];
+    for (final index in _selectedIngredientIndices.toList()..sort()) {
+      if (index < _sanitizedIngredients.length) {
+        final rawIngredient = _sanitizedIngredients[index];
+        if (rawIngredient.name.isNotEmpty) {
+          seasonings.add(SmokingSeasoning.create(
+            name: rawIngredient.name,
+            amount: rawIngredient.amount,
+            unit: rawIngredient.unit,
+          ));
+        }
+      }
+    }
+
+    return SmokingRecipe.create(
+      uuid: const Uuid().v4(),
+      name: _nameController.text.trim().isEmpty
+          ? 'Untitled Recipe'
+          : _nameController.text.trim(),
+      item: _nameController.text.trim(), // Use recipe name as item being smoked
+      temperature: temperature,
+      time: _timeController.text.trim().isEmpty ? '' : _timeController.text.trim(),
+      wood: woodType,
+      seasonings: seasonings,
+      directions: directions,
+      notes: widget.importResult.notes,
+      headerImage: widget.importResult.imageUrl,
+      source: SmokingSource.imported,
+    );
+  }
+
+  /// Build a Pizza from import data
+  Pizza _buildPizzaRecipe() {
+    // Try to detect base sauce from ingredients
+    PizzaBase base = PizzaBase.marinara; // Default
+    final allIngredients = _sanitizedIngredients.map((i) => i.name.toLowerCase()).join(' ');
+    if (allIngredients.contains('pesto')) {
+      base = PizzaBase.pesto;
+    } else if (allIngredients.contains('cream') || allIngredients.contains('alfredo')) {
+      base = PizzaBase.cream;
+    } else if (allIngredients.contains('bbq') || allIngredients.contains('barbecue')) {
+      base = PizzaBase.bbq;
+    } else if (allIngredients.contains('buffalo')) {
+      base = PizzaBase.buffalo;
+    } else if (allIngredients.contains('garlic') && allIngredients.contains('butter')) {
+      base = PizzaBase.garlic;
+    } else if (allIngredients.contains('oil') || allIngredients.contains('olive')) {
+      base = PizzaBase.oil;
+    }
+    
+    // Separate cheeses from other toppings
+    final cheeses = <String>[];
+    final toppings = <String>[];
+    const cheeseKeywords = ['mozzarella', 'parmesan', 'cheddar', 'gouda', 'provolone', 
+        'ricotta', 'gorgonzola', 'feta', 'goat cheese', 'burrata', 'fontina', 'asiago',
+        'pecorino', 'gruyere', 'brie', 'cheese'];
+    
+    for (final index in _selectedIngredientIndices.toList()..sort()) {
+      if (index < _sanitizedIngredients.length) {
+        final rawIngredient = _sanitizedIngredients[index];
+        if (rawIngredient.name.isEmpty) continue;
+        
+        final lower = rawIngredient.name.toLowerCase();
+        final isCheese = cheeseKeywords.any((c) => lower.contains(c));
+        if (isCheese) {
+          cheeses.add(rawIngredient.name);
+        } else {
+          // Skip base sauce ingredients
+          if (!lower.contains('sauce') && !lower.contains('dough') && 
+              !lower.contains('flour') && !lower.contains('yeast')) {
+            toppings.add(rawIngredient.name);
+          }
+        }
+      }
+    }
+
+    return Pizza.create(
+      uuid: const Uuid().v4(),
+      name: _nameController.text.trim().isEmpty
+          ? 'Untitled Pizza'
+          : _nameController.text.trim(),
+      base: base,
+      cheeses: cheeses,
+      toppings: toppings,
+      notes: widget.importResult.notes,
+      imageUrl: widget.importResult.imageUrl,
+      source: PizzaSource.imported,
+    );
+  }
+
   Future<void> _saveRecipe() async {
     if (_nameController.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -1135,6 +1275,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     if (_isModernistCourse) {
       final recipe = _buildModernistRecipe();
       await ref.read(modernistRepositoryProvider).save(recipe);
+      savedName = recipe.name;
+    } else if (_isSmokingCourse) {
+      final recipe = _buildSmokingRecipe();
+      await ref.read(smokingRepositoryProvider).saveRecipe(recipe);
+      savedName = recipe.name;
+    } else if (_isPizzasCourse) {
+      final recipe = _buildPizzaRecipe();
+      await ref.read(pizzaRepositoryProvider).savePizza(recipe);
       savedName = recipe.name;
     } else {
       final recipe = _buildRecipe();

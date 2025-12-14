@@ -1,4 +1,7 @@
+import '../../modernist/models/modernist_recipe.dart';
+import '../../pizzas/models/pizza.dart';
 import '../../recipes/models/recipe.dart';
+import '../../smoking/models/smoking_recipe.dart';
 
 /// Result of importing a recipe from URL or OCR
 /// Contains both parsed data and raw extracted data for user review
@@ -154,7 +157,144 @@ class RecipeImportResult {
     return recipe;
   }
 
-  /// Create a copy with updated fields
+  /// Convert to a ModernistRecipe (for high-confidence Modernist imports)
+  ModernistRecipe toModernistRecipe(String uuid) {
+    // Convert regular ingredients to ModernistIngredients
+    final modernistIngredients = ingredients.map((i) => ModernistIngredient.create(
+      name: i.name,
+      amount: i.amount,
+      unit: i.unit,
+      notes: i.preparation,
+    )).toList();
+
+    final recipe = ModernistRecipe.create(
+      uuid: uuid,
+      name: name ?? 'Untitled Recipe',
+      type: ModernistType.concept, // Default to concept
+      serves: serves,
+      time: time,
+      equipment: equipment,
+      ingredients: modernistIngredients,
+      directions: directions,
+      notes: notes,
+      sourceUrl: sourceUrl,
+      headerImage: imageUrl,
+      source: ModernistSource.imported,
+    );
+    
+    // Set multiple images if available
+    if (imagePaths != null && imagePaths!.isNotEmpty) {
+      recipe.headerImage = imagePaths!.first;
+      if (imagePaths!.length > 1) {
+        recipe.stepImages = imagePaths!.sublist(1);
+      }
+    }
+    
+    return recipe;
+  }
+
+  /// Convert to a SmokingRecipe (for high-confidence Smoking imports)
+  SmokingRecipe toSmokingRecipe(String uuid) {
+    // Try to detect wood type from ingredients or notes
+    String woodType = 'Hickory'; // Default
+    final allText = [...directions, notes ?? '', ...ingredients.map((i) => i.name)].join(' ').toLowerCase();
+    for (final wood in WoodSuggestions.common) {
+      if (allText.contains(wood.toLowerCase())) {
+        woodType = wood;
+        break;
+      }
+    }
+    
+    // Try to detect temperature from directions or notes
+    String temperature = '';
+    final tempMatch = RegExp(r'(\d{2,3})\s*[°]?\s*[FCfc]').firstMatch(allText);
+    if (tempMatch != null) {
+      temperature = tempMatch.group(0) ?? '';
+    }
+    
+    // Convert ingredients to seasonings
+    final seasonings = ingredients.map((i) => SmokingSeasoning.create(
+      name: i.name,
+      amount: i.amount,
+      unit: i.unit,
+    )).toList();
+
+    final recipe = SmokingRecipe.create(
+      uuid: uuid,
+      name: name ?? 'Untitled Recipe',
+      item: name, // Use recipe name as item being smoked
+      temperature: temperature,
+      time: time ?? '',
+      wood: woodType,
+      seasonings: seasonings,
+      directions: directions,
+      notes: notes,
+      headerImage: imageUrl,
+      source: SmokingSource.imported,
+    );
+    
+    // Set multiple images if available
+    if (imagePaths != null && imagePaths!.isNotEmpty) {
+      recipe.headerImage = imagePaths!.first;
+      if (imagePaths!.length > 1) {
+        recipe.stepImages = imagePaths!.sublist(1);
+      }
+    }
+    
+    return recipe;
+  }
+
+  /// Convert to a Pizza (for high-confidence Pizza imports)
+  Pizza toPizzaRecipe(String uuid) {
+    // Try to detect base sauce from ingredients
+    PizzaBase base = PizzaBase.marinara; // Default
+    final allIngredients = ingredients.map((i) => i.name.toLowerCase()).join(' ');
+    if (allIngredients.contains('pesto')) {
+      base = PizzaBase.pesto;
+    } else if (allIngredients.contains('cream') || allIngredients.contains('alfredo')) {
+      base = PizzaBase.cream;
+    } else if (allIngredients.contains('bbq') || allIngredients.contains('barbecue')) {
+      base = PizzaBase.bbq;
+    } else if (allIngredients.contains('buffalo')) {
+      base = PizzaBase.buffalo;
+    } else if (allIngredients.contains('garlic') && allIngredients.contains('butter')) {
+      base = PizzaBase.garlic;
+    } else if (allIngredients.contains('oil') || allIngredients.contains('olive')) {
+      base = PizzaBase.oil;
+    }
+    
+    // Separate cheeses from other toppings
+    final cheeses = <String>[];
+    final toppings = <String>[];
+    const cheeseKeywords = ['mozzarella', 'parmesan', 'cheddar', 'gouda', 'provolone', 
+        'ricotta', 'gorgonzola', 'feta', 'goat cheese', 'burrata', 'fontina', 'asiago',
+        'pecorino', 'gruyere', 'brie', 'cheese'];
+    
+    for (final ingredient in ingredients) {
+      final lower = ingredient.name.toLowerCase();
+      final isCheese = cheeseKeywords.any((c) => lower.contains(c));
+      if (isCheese) {
+        cheeses.add(ingredient.name);
+      } else {
+        // Skip base sauce ingredients
+        if (!lower.contains('sauce') && !lower.contains('dough') && 
+            !lower.contains('flour') && !lower.contains('yeast')) {
+          toppings.add(ingredient.name);
+        }
+      }
+    }
+
+    return Pizza.create(
+      uuid: uuid,
+      name: name ?? 'Untitled Pizza',
+      base: base,
+      cheeses: cheeses,
+      toppings: toppings,
+      notes: notes,
+      imageUrl: imageUrl,
+      source: PizzaSource.imported,
+    );
+  }
   RecipeImportResult copyWith({
     String? name,
     String? course,

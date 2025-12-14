@@ -3,9 +3,51 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
+import '../models/recipe_import_result.dart';
 import '../services/url_importer.dart';
+import '../../modernist/screens/modernist_edit_screen.dart';
+import '../../pizzas/screens/pizza_edit_screen.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import '../../smoking/screens/smoking_edit_screen.dart';
 import 'import_review_screen.dart';
+
+/// Courses that have specialized edit screens
+/// Add new specialized courses here as they are created
+class SpecializedCourses {
+  SpecializedCourses._();
+  
+  static const modernist = 'modernist';
+  static const smoking = 'smoking';
+  static const pizzas = 'pizzas';
+  // Future: breads (for baker's percentage), etc.
+  
+  /// Check if a course has a specialized edit screen
+  static bool hasSpecializedScreen(String? course) {
+    if (course == null) return false;
+    final lower = course.toLowerCase();
+    return lower == modernist || lower == smoking || lower == pizzas;
+  }
+  
+  /// Route to the appropriate edit screen based on course
+  /// Returns the MaterialPageRoute for the specialized screen, or null if should use default
+  static Widget? getEditScreen(RecipeImportResult result, String uuid) {
+    final course = result.course?.toLowerCase();
+    
+    switch (course) {
+      case modernist:
+        return ModernistEditScreen(importedRecipe: result.toModernistRecipe(uuid));
+      case smoking:
+        return SmokingEditScreen(importedRecipe: result.toSmokingRecipe(uuid));
+      case pizzas:
+        return PizzaEditScreen(importedRecipe: result.toPizzaRecipe(uuid));
+      // Add more cases here as new specialized screens are created
+      // case 'breads':
+      //   return BreadEditScreen(importedRecipe: result.toBreadRecipe(uuid));
+      default:
+        return null; // Use default RecipeEditScreen
+    }
+  }
+}
 
 class URLImportScreen extends ConsumerStatefulWidget {
   final String? defaultCourse;
@@ -218,12 +260,23 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
         );
       } else {
         // High confidence - go directly to edit screen
-        final recipe = result.toRecipe(const Uuid().v4());
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-          ),
-        );
+        // Route to appropriate screen based on course type
+        final uuid = const Uuid().v4();
+        final specializedScreen = SpecializedCourses.getEditScreen(result, uuid);
+        
+        if (specializedScreen != null) {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (_) => specializedScreen),
+          );
+        } else {
+          // Default: use regular RecipeEditScreen
+          final recipe = result.toRecipe(uuid);
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (_) => RecipeEditScreen(importedRecipe: recipe),
+            ),
+          );
+        }
       }
     } catch (e) {
       setState(() {

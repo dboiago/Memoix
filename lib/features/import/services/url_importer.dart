@@ -4285,7 +4285,6 @@ class UrlRecipeImporter {
     } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
       course = 'Modernist';
       courseConfidence = 0.75;
-      print('DEBUG URL Importer: Detected MODERNIST course for $sourceUrl');
     } else if (_isBreadRecipe(titleLower, urlLower, rawIngredientStrings)) {
       course = 'Breads';
       courseConfidence = 0.75;
