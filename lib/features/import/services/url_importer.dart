@@ -3549,6 +3549,56 @@ class UrlRecipeImporter {
           rawIngredientStrings = _processIngredientListItems(potentialIngredients);
         }
       }
+      
+      // Ultimate fallback: find ALL lines with measurement patterns anywhere in the body
+      // This works even without section headers or proper line breaks
+      if (rawIngredientStrings.isEmpty) {
+        // Use regex to find measurement patterns with context
+        final measurementPattern = RegExp(
+          r'(\d+\s*[gG](?:\s|\))|(?:\d+\s*)?(?:[½¼¾⅓⅔⅛⅜⅝⅞])\s*(?:cup|cups|tbsp|tsp)?|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg|g)\b|\(\s*\d+[^)]*(?:cup|tbsp|tsp|oz|g)[^)]*\))',
+          caseSensitive: false,
+        );
+        
+        // Split body by potential line breaks or sentence endings
+        final segments = bodyText.split(RegExp(r'\n|(?<=[.!?])\s+(?=[A-Z])'));
+        final potentialIngredients = <String>[];
+        
+        for (var segment in segments) {
+          segment = _decodeHtml(segment.trim());
+          
+          // Skip if too short or too long
+          if (segment.length < 5 || segment.length > 200) continue;
+          
+          // Skip if it looks like a direction/instruction (starts with verb)
+          if (RegExp(r'^(put|place|add|mix|stir|pour|heat|cook|bake|preheat|combine|whisk|blend|let|allow)\b', caseSensitive: false).hasMatch(segment)) {
+            continue;
+          }
+          
+          // Skip navigation/social content
+          if (segment.toLowerCase().contains('subscribe') ||
+              segment.toLowerCase().contains('http') ||
+              segment.toLowerCase().contains('click') ||
+              segment.toLowerCase().contains('instagram') ||
+              segment.toLowerCase().contains('facebook') ||
+              segment.toLowerCase().contains('newsletter')) {
+            continue;
+          }
+          
+          // Check if segment contains a measurement pattern
+          if (measurementPattern.hasMatch(segment)) {
+            // Additional check: measurement should be near the start (first 60 chars)
+            // This filters out sentences that mention measurements mid-way
+            final match = measurementPattern.firstMatch(segment);
+            if (match != null && match.start < 60) {
+              potentialIngredients.add(segment);
+            }
+          }
+        }
+        
+        if (potentialIngredients.length >= 3) {
+          rawIngredientStrings = _processIngredientListItems(potentialIngredients);
+        }
+      }
     }
     
     // Also try to extract directions from body text if still missing
