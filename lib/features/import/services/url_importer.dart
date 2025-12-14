@@ -4528,37 +4528,49 @@ class UrlRecipeImporter {
   List<String> _extractListItemsFromSection(dynamic heading, dynamic document) {
     final items = <String>[];
     
-    // Strategy 1: Look for ul/ol within the parent's wrapper after the heading
+    // Strategy 1: Look for h3/h4 sub-sections and ul/ol within the parent's wrapper
+    // This preserves section structure by including sub-headings as section markers
     var parent = heading.parent;
     var searchLimit = 0;
     
     while (parent != null && searchLimit < 5) {
       final parentTag = parent.localName?.toLowerCase();
       
-      // Find all ul/ol elements within the parent container
-      final listsInParent = parent.querySelectorAll('ul, ol');
+      // Find all h3, h4, ul, ol elements within the parent container to preserve order
+      final elementsInParent = parent.querySelectorAll('h3, h4, ul, ol');
+      final collectedItems = <String>[];
+      var foundHeadingYet = false;
       
-      for (final list in listsInParent) {
-        // Check if this list comes after the heading in the DOM
-        // by checking if heading is an ancestor or earlier sibling
-        final listItems = list.querySelectorAll('li');
-        final itemTexts = <String>[];
+      for (final elem in elementsInParent) {
+        // Skip elements that come before our main heading
+        // Simple heuristic: check if this element is within the ingredient section
+        final elemTag = elem.localName?.toLowerCase();
         
-        for (final li in listItems) {
-          final text = _decodeHtml(li.text?.trim() ?? '');
-          if (text.isNotEmpty) {
-            itemTexts.add(text);
+        if (elemTag == 'h3' || elemTag == 'h4') {
+          final sectionText = _decodeHtml(elem.text?.trim() ?? '');
+          if (sectionText.isNotEmpty && !sectionText.toLowerCase().contains('instruction') && !sectionText.toLowerCase().contains('direction')) {
+            // Add as section marker with colon
+            collectedItems.add('$sectionText:');
+            foundHeadingYet = true;
+          }
+        } else if (elemTag == 'ul' || elemTag == 'ol') {
+          final listItems = elem.querySelectorAll('li');
+          for (final li in listItems) {
+            final text = _decodeHtml(li.text?.trim() ?? '');
+            if (text.isNotEmpty) {
+              collectedItems.add(text);
+            }
           }
         }
-        
-        // Check if this looks like an ingredient list (has measurements)
-        final hasQuantities = itemTexts.any((item) =>
-          RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
-        );
-        
-        if (hasQuantities && itemTexts.length >= 2) {
-          return _processIngredientListItems(itemTexts);
-        }
+      }
+      
+      // Check if this looks like an ingredient list (has measurements)
+      final hasQuantities = collectedItems.any((item) =>
+        RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+      );
+      
+      if (hasQuantities && collectedItems.length >= 2) {
+        return _processIngredientListItems(collectedItems);
       }
       
       parent = parent.parent;
