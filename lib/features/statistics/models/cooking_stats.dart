@@ -1,8 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
 import 'package:isar/isar.dart';
-import 'package:intl/intl.dart';
 
 part 'cooking_stats.g.dart';
 
@@ -187,7 +185,7 @@ class CookingStatsService {
               recipeName: recipeNames[e.key] ?? 'Unknown',
               cookCount: e.value,
               lastCooked: recipeLastCook[e.key]!,
-            ))
+            ),)
         .toList()
       ..sort((a, b) => b.cookCount.compareTo(a.cookCount));
 

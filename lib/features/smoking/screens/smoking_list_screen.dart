@@ -73,7 +73,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                 r.name.toLowerCase().contains(_searchQuery) ||
                 (r.item?.toLowerCase().contains(_searchQuery) ?? false) ||
                 (r.category?.toLowerCase().contains(_searchQuery) ?? false) ||
-                r.wood.toLowerCase().contains(_searchQuery)).toList();
+                r.wood.toLowerCase().contains(_searchQuery),).toList();
           }
 
           return Column(

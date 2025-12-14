@@ -4,12 +4,9 @@ import 'package:uuid/uuid.dart';
 
 import '../services/url_importer.dart';
 import '../services/ocr_importer.dart';
-import '../models/recipe_import_result.dart';
-import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
 import 'qr_scanner_screen.dart';
-import 'ocr_scanner_screen.dart';
 import 'ocr_multi_image_screen.dart';
 
 class ImportScreen extends ConsumerStatefulWidget {

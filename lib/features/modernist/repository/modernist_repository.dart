@@ -71,11 +71,7 @@ class ModernistRepository {
   
   /// Normalize ingredient units to standard abbreviations
   void _normalizeIngredientUnits(ModernistRecipe recipe) {
-    for (final ingredient in recipe.ingredients) {
-      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
-        ingredient.unit = UnitNormalizer.normalize(ingredient.unit);
-      }
-    }
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
   }
 
   /// Create a new recipe with generated UUID
@@ -139,22 +135,26 @@ class ModernistRepository {
 
   /// Toggle favorite status
   Future<void> toggleFavorite(int id) async {
-    final recipe = await getById(id);
-    if (recipe == null) return;
+    await _db.writeTxn(() async {
+      final recipe = await _db.modernistRecipes.get(id);
+      if (recipe == null) return;
 
-    recipe.isFavorite = !recipe.isFavorite;
-    recipe.updatedAt = DateTime.now();
-    await _db.writeTxn(() => _db.modernistRecipes.put(recipe));
+      recipe.isFavorite = !recipe.isFavorite;
+      recipe.updatedAt = DateTime.now();
+      await _db.modernistRecipes.put(recipe);
+    });
   }
 
   /// Increment cook count
   Future<void> incrementCookCount(int id) async {
-    final recipe = await getById(id);
-    if (recipe == null) return;
+    await _db.writeTxn(() async {
+      final recipe = await _db.modernistRecipes.get(id);
+      if (recipe == null) return;
 
-    recipe.cookCount++;
-    recipe.updatedAt = DateTime.now();
-    await _db.writeTxn(() => _db.modernistRecipes.put(recipe));
+      recipe.cookCount++;
+      recipe.updatedAt = DateTime.now();
+      await _db.modernistRecipes.put(recipe);
+    });
   }
 
   /// Get unique technique categories from all recipes

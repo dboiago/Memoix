@@ -8,7 +8,7 @@ import '../models/pizza.dart';
 /// Repository for pizza data operations
 class PizzaRepository {
   final Isar _db;
-  static final _uuid = Uuid();
+  static const _uuid = Uuid();
 
   PizzaRepository(this._db);
 

@@ -92,7 +92,7 @@ class _SmokingImportReviewScreenState
 
           // Recipe name (usually high confidence)
           _buildSectionTitle(theme, 'Recipe Name', Icons.restaurant,
-              confidence: result.nameConfidence),
+              confidence: result.nameConfidence,),
           const SizedBox(height: 8),
           TextField(
             controller: _nameController,
@@ -106,11 +106,11 @@ class _SmokingImportReviewScreenState
 
           // Temperature selection
           _buildSectionTitle(theme, 'Temperature', Icons.thermostat,
-              confidence: result.temperatureConfidence),
+              confidence: result.temperatureConfidence,),
           const SizedBox(height: 8),
           if (result.detectedTemperatures.isNotEmpty) ...[
             Text('Detected temperatures (tap to select):',
-                style: theme.textTheme.bodySmall),
+                style: theme.textTheme.bodySmall,),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -144,7 +144,7 @@ class _SmokingImportReviewScreenState
 
           // Time
           _buildSectionTitle(theme, 'Cooking Time', Icons.timer,
-              confidence: result.timeConfidence),
+              confidence: result.timeConfidence,),
           const SizedBox(height: 8),
           TextField(
             controller: _timeController,
@@ -157,11 +157,11 @@ class _SmokingImportReviewScreenState
 
           // Wood selection
           _buildSectionTitle(theme, 'Wood Type', Icons.park,
-              confidence: result.woodConfidence),
+              confidence: result.woodConfidence,),
           const SizedBox(height: 8),
           if (result.detectedWoods.isNotEmpty) ...[
             Text('Detected wood types (tap to select):',
-                style: theme.textTheme.bodySmall),
+                style: theme.textTheme.bodySmall,),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -210,7 +210,7 @@ class _SmokingImportReviewScreenState
 
           // Ingredients mapping
           _buildSectionTitle(theme, 'Ingredients → Seasonings', Icons.grain,
-              confidence: result.seasoningsConfidence),
+              confidence: result.seasoningsConfidence,),
           const SizedBox(height: 8),
           Text(
             'Select which ingredients are seasonings/rub:',
@@ -223,7 +223,7 @@ class _SmokingImportReviewScreenState
           // Directions preview
           _buildSectionTitle(
               theme, 'Directions', Icons.format_list_numbered,
-              confidence: result.directionsConfidence),
+              confidence: result.directionsConfidence,),
           const SizedBox(height: 8),
           if (result.directions.isEmpty)
             Card(
@@ -251,7 +251,7 @@ class _SmokingImportReviewScreenState
                             '• ${step.length > 80 ? '${step.substring(0, 80)}...' : step}',
                             style: theme.textTheme.bodySmall,
                           ),
-                        )),
+                        ),),
                     if (result.directions.length > 3)
                       Text(
                         '... and ${result.directions.length - 3} more steps',

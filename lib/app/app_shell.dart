@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../features/home/screens/home_screen.dart';
-import '../features/recipes/widgets/recipe_search_delegate.dart';
 import '../shared/widgets/app_drawer.dart';
 
 class AppShellNavigator {

@@ -16,7 +16,7 @@ class ModernistListScreen extends ConsumerStatefulWidget {
 }
 
 class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
-  Set<ModernistType> _selectedFilters = {}; // Empty = "All"
+  final Set<ModernistType> _selectedFilters = {}; // Empty = "All"
   String _searchQuery = '';
 
   @override
@@ -46,7 +46,7 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
           final isCompactView = ref.watch(compactViewProvider);
 
           // Apply hide memoix filter
-          var recipes = hideMemoix
+          final recipes = hideMemoix
               ? allRecipes.where((r) => r.source != ModernistSource.memoix).toList()
               : allRecipes;
 
@@ -218,7 +218,7 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
 
   Widget _buildRecipeList(List<ModernistRecipe> allRecipes, bool isCompact) {
     // Apply filters
-    var filteredRecipes = _filterRecipes(allRecipes);
+    final filteredRecipes = _filterRecipes(allRecipes);
 
     if (filteredRecipes.isEmpty) {
       return _buildEmptyState();

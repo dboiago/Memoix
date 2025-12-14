@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar/isar.dart';
 
-import '../../../core/database/database.dart';
 import '../../recipes/models/recipe.dart';
 
 part 'shopping_list.g.dart';

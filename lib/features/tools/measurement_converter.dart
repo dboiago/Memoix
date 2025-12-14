@@ -100,7 +100,7 @@ class MeasurementConverter {
   }
 
   static List<String> get volumeUnits => [
-    'tsp', 'tbsp', 'fl oz', 'cup', 'pint', 'quart', 'gallon', 'ml', 'l'
+    'tsp', 'tbsp', 'fl oz', 'cup', 'pint', 'quart', 'gallon', 'ml', 'l',
   ];
 
   static List<String> get weightUnits => ['g', 'kg', 'oz', 'lb'];
@@ -323,7 +323,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
                 Expanded(
                   flex: 2,
                   child: DropdownButtonFormField<String>(
-                    value: _fromUnit,
+                    initialValue: _fromUnit,
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: theme.colorScheme.surfaceContainerHighest,
@@ -336,7 +336,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
                     items: _getUnitsForTab().map((u) => DropdownMenuItem(
                       value: u,
                       child: Text(u),
-                    )).toList(),
+                    ),).toList(),
                     onChanged: (v) {
                       if (v != null) {
                         setState(() => _fromUnit = v);
@@ -381,7 +381,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
                 Expanded(
                   flex: 2,
                   child: DropdownButtonFormField<String>(
-                    value: _toUnit,
+                    initialValue: _toUnit,
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: theme.colorScheme.surfaceContainerHighest,
@@ -394,7 +394,7 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
                     items: _getUnitsForTab().map((u) => DropdownMenuItem(
                       value: u,
                       child: Text(u),
-                    )).toList(),
+                    ),).toList(),
                     onChanged: (v) {
                       if (v != null) {
                         setState(() => _toUnit = v);

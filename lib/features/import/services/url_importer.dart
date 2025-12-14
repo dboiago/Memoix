@@ -26,7 +26,7 @@ class TranscriptSegment {
 
 /// Service to import recipes from URLs
 class UrlRecipeImporter {
-  static const _uuid = Uuid();
+  static final _uuid = Uuid();
 
   /// Known cocktail recipe sites
   static const _cocktailSites = [
@@ -140,16 +140,49 @@ class UrlRecipeImporter {
         throw Exception('Failed to fetch URL: ${response.statusCode}');
       }
 
-      final document = html_parser.parse(response.body);
+      // Decode response body - handle encoding errors gracefully
+      String body;
+      try {
+        // Try automatic decoding (handles Content-Type charset)
+        body = response.body;
+      } on FormatException {
+        // If automatic decoding fails due to encoding, try UTF-8 with error tolerance
+        try {
+          body = utf8.decode(response.bodyBytes, allowMalformed: true);
+        } catch (_) {
+          // Last resort: use Latin-1 (never fails, but may produce wrong characters)
+          body = latin1.decode(response.bodyBytes);
+        }
+      }
+
+      final document = html_parser.parse(body);
 
       // Try to find JSON-LD structured data first (most reliable)
       final jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
       
       for (final script in jsonLdScripts) {
         try {
-          final data = jsonDecode(script.text);
-          final result = _parseJsonLdWithConfidence(data, url);
-          if (result != null) return result;
+          // Handle potential encoding issues in JSON-LD script content
+          final String scriptText = script.text;
+          // If decoding fails, try to fix common encoding issues
+          try {
+            final data = jsonDecode(scriptText);
+            final result = _parseJsonLdWithConfidence(data, url);
+            if (result != null) return result;
+          } on FormatException {
+            // If JSON decode fails due to encoding, try to re-encode
+            try {
+              // Re-encode as UTF-8 bytes and decode again
+              final bytes = utf8.encode(scriptText);
+              final fixed = utf8.decode(bytes, allowMalformed: true);
+              final data = jsonDecode(fixed);
+              final result = _parseJsonLdWithConfidence(data, url);
+              if (result != null) return result;
+            } catch (_) {
+              // Skip this script if we can't fix it
+              continue;
+            }
+          }
         } catch (_) {
           continue;
         }
@@ -159,7 +192,14 @@ class UrlRecipeImporter {
       final result = _parseFromHtmlWithConfidence(document, url);
       if (result != null) return result;
       
-      throw Exception('Could not find recipe data on this page');
+      // Provide more helpful error message
+      final jsonLdCount = jsonLdScripts.length;
+      throw Exception(
+        'Could not find recipe data on this page. '
+        'Found ${jsonLdCount} JSON-LD script${jsonLdCount != 1 ? 's' : ''}, '
+        'but none contained valid recipe data. '
+        'The page may not use structured recipe data or may use an unsupported format.'
+      );
     } catch (e) {
       throw Exception('Failed to import recipe from URL: $e');
     }
@@ -211,7 +251,20 @@ class UrlRecipeImporter {
         throw Exception('Failed to fetch YouTube video: ${response.statusCode}');
       }
       
-      final body = response.body;
+      // Decode response body - handle encoding errors gracefully
+      String body;
+      try {
+        // Try automatic decoding (handles Content-Type charset)
+        body = response.body;
+      } on FormatException {
+        // If automatic decoding fails due to encoding, try UTF-8 with error tolerance
+        try {
+          body = utf8.decode(response.bodyBytes, allowMalformed: true);
+        } catch (_) {
+          // Last resort: use Latin-1 (never fails, but may produce wrong characters)
+          body = latin1.decode(response.bodyBytes);
+        }
+      }
       
       // Extract video title from page
       String? title;
@@ -287,7 +340,7 @@ class UrlRecipeImporter {
           .toList();
       
       // Clean recipe name - remove common YouTube suffixes
-      String recipeName = _cleanYouTubeTitle(title ?? 'YouTube Recipe');
+      final String recipeName = _cleanYouTubeTitle(title ?? 'YouTube Recipe');
       
       // Detect course from title
       final detectedCourse = _detectCourseFromTitle(recipeName);
@@ -310,7 +363,7 @@ class UrlRecipeImporter {
             final mins = totalMinutes % 60;
             recipeTime = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
           } else {
-            recipeTime = '${totalMinutes} min';
+            recipeTime = '$totalMinutes min';
           }
         }
       }
@@ -850,7 +903,7 @@ class UrlRecipeImporter {
       return timestampStep;
     }
     // Remove step numbers at the beginning
-    var cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
+    final cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
     return cleaned.trim();
   }
   
@@ -876,7 +929,7 @@ class UrlRecipeImporter {
           chapters.add(YouTubeChapter(
             title: title,
             startSeconds: hours * 3600 + minutes * 60 + seconds,
-          ));
+          ),);
         }
         continue;
       }
@@ -893,7 +946,7 @@ class UrlRecipeImporter {
           chapters.add(YouTubeChapter(
             title: title,
             startSeconds: hours * 3600 + minutes * 60 + seconds,
-          ));
+          ),);
         }
       }
     }
@@ -1085,7 +1138,7 @@ class UrlRecipeImporter {
             ).firstMatch(playerResponse.body);
             
             if (captionMatch != null) {
-              var freshCaptionUrl = _decodeUnicodeEscapes(captionMatch.group(1)!);
+              final freshCaptionUrl = _decodeUnicodeEscapes(captionMatch.group(1)!);
               // Add format parameter
               // Try without format first (default XML), then with json3
               for (final fmt in ['', '&fmt=json3']) {
@@ -1334,7 +1387,7 @@ class UrlRecipeImporter {
           segments.add(TranscriptSegment(
             text: _decodeHtml(text),
             startSeconds: startMs / 1000.0,
-          ));
+          ),);
         }
       }
       
@@ -1352,7 +1405,7 @@ class UrlRecipeImporter {
             segments.add(TranscriptSegment(
               text: _decodeHtml(text),
               startSeconds: startMs / 1000.0,
-            ));
+            ),);
           }
         }
       }
@@ -1379,7 +1432,7 @@ class UrlRecipeImporter {
       // Get transcript segments for this chapter
       final chapterSegments = segments.where((s) =>
           s.startSeconds >= chapter.startSeconds &&
-          s.startSeconds < nextChapterStart
+          s.startSeconds < nextChapterStart,
       ).toList();
       
       if (chapterSegments.isEmpty) {
@@ -1981,7 +2034,7 @@ class UrlRecipeImporter {
   String? _parseCuisine(dynamic value) {
     if (value == null) return null;
     
-    var cuisine = _parseString(value);
+    final cuisine = _parseString(value);
     if (cuisine == null || cuisine.isEmpty) return null;
     
     // Map regions to countries
@@ -2295,7 +2348,7 @@ class UrlRecipeImporter {
               alternative: ingredient.alternative,
               isOptional: ingredient.isOptional,
               section: effectiveSection,
-            ));
+            ),);
           } else {
             result.add(ingredient);
           }
@@ -2320,7 +2373,7 @@ class UrlRecipeImporter {
   Ingredient _parseIngredientString(String text) {
     var remaining = text;
     bool isOptional = false;
-    List<String> notesParts = [];
+    final List<String> notesParts = [];
     String? amount;
     String? inlineSection;
     
@@ -2443,7 +2496,7 @@ class UrlRecipeImporter {
         // Check if it's a weight conversion (e.g., "0.6 pounds", "1 lb", "500g")
         final isWeightConversion = RegExp(
           r'^[\d.]+\s*(?:pounds?|lbs?|oz|ounces?|kg|g|grams?)$',
-          caseSensitive: false
+          caseSensitive: false,
         ).hasMatch(content);
         
         if (isWeightConversion) {
@@ -2571,7 +2624,7 @@ class UrlRecipeImporter {
           .map((n) => n
               .replaceAll(RegExp(r'^\(+|\)+$'), '')  // Remove stray parentheses
               .replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '')  // Remove leading/trailing commas and spaces
-              .trim())
+              .trim(),)
           .where((n) => n.isNotEmpty)
           // Filter out footnote references like "Footnote 1", "Footnote 2", etc.
           .where((n) => !RegExp(r'^Footnote\s*\d*$', caseSensitive: false).hasMatch(n))
@@ -2866,7 +2919,7 @@ class UrlRecipeImporter {
 
     // First try standard selectors
     final ingredientElements = document.querySelectorAll(
-      '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
+      '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient',
     );
     
     var rawIngredientStrings = <String>[];
@@ -2899,7 +2952,7 @@ class UrlRecipeImporter {
 
     // First try standard direction selectors
     final instructionElements = document.querySelectorAll(
-      '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
+      '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction',
     );
     
     var directions = <String>[];
@@ -3052,14 +3105,14 @@ class UrlRecipeImporter {
       }
       
       if (totalMinutes > 0) {
-        timing = '${totalMinutes} min';
+        timing = '$totalMinutes min';
       }
     }
     
     // If Cooked format didn't find ingredients, try standard selectors
     if (rawIngredientStrings.isEmpty) {
       final ingredientElements = document.querySelectorAll(
-        '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient'
+        '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient',
       );
       
       for (final e in ingredientElements) {
@@ -3094,7 +3147,7 @@ class UrlRecipeImporter {
     // If Cooked format didn't find directions, try standard selectors
     if (rawDirections.isEmpty) {
       final instructionElements = document.querySelectorAll(
-        '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction'
+        '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction',
       );
       
       for (final e in instructionElements) {
@@ -3115,6 +3168,50 @@ class UrlRecipeImporter {
       }
     }
 
+    // If we still don't have ingredients or directions, try one more aggressive pass
+    if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
+      // Last resort: look for ANY lists that might contain recipe data
+      // This is very permissive but better than failing completely
+      final allLists = document.querySelectorAll('ul, ol');
+      for (final list in allLists) {
+        final items = list.querySelectorAll('li');
+        if (items.length >= 2) {
+          final itemTexts = <String>[];
+          for (final e in items) {
+            final text = _decodeHtml((e.text ?? '').trim());
+            if (text.isNotEmpty && text.length < 200) { // Reasonable length for ingredients/directions
+              itemTexts.add(text);
+            }
+          }
+          
+          // Check if items look like ingredients (have measurements/quantities)
+          final hasMeasurements = itemTexts.any((item) => 
+            RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg|kilogram|gram)', caseSensitive: false).hasMatch(item) ||
+            RegExp(r'[½¼¾⅓⅔⅛]\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon)', caseSensitive: false).hasMatch(item) ||
+            RegExp(r'\(.*\)').hasMatch(item), // Items with parentheses often contain measurements
+          );
+          
+          // Check if items look like directions (longer text, action verbs)
+          final hasDirections = itemTexts.any((item) => 
+            item.length > 30 && (
+              RegExp(r'\b(?:put|place|add|mix|stir|heat|cook|bake|blend|pour|whisk|chop|dice|slice|mince)\b', caseSensitive: false).hasMatch(item) ||
+              RegExp(r'^\d+[\.\)]').hasMatch(item) // Numbered steps
+            )
+          );
+          
+          if (hasMeasurements && itemTexts.length >= 2) {
+            rawIngredientStrings = _processIngredientListItems(itemTexts);
+          } else if (hasDirections && itemTexts.length >= 2 && rawDirections.isEmpty) {
+            rawDirections = itemTexts;
+          }
+          
+          if (rawIngredientStrings.isNotEmpty || rawDirections.isNotEmpty) {
+            break;
+          }
+        }
+      }
+    }
+    
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
       return null;
     }
@@ -3215,7 +3312,7 @@ class UrlRecipeImporter {
     }
     
     // Extract image from schema.org markup, og:image, or common recipe image selectors
-    String? imageUrl = _extractImageFromHtml(document);
+    final String? imageUrl = _extractImageFromHtml(document);
     
     // Set confidence for optional fields when they have values
     final timeConfidence = timing != null && timing.isNotEmpty 
@@ -3266,7 +3363,7 @@ class UrlRecipeImporter {
       final headingText = heading.text?.trim().toLowerCase() ?? '';
       
       // Find the next sibling elements after this heading
-      var nextElement = heading.nextElementSibling;
+      final nextElement = heading.nextElementSibling;
       
       if (headingText.contains('ingredient')) {
         // Parse ingredients from the list following this heading
@@ -3298,8 +3395,24 @@ class UrlRecipeImporter {
     
     // If we didn't find ingredients with h2, try looking for lists with specific patterns
     if ((result['ingredients'] as List).isEmpty) {
+      // Also check h3 headings (some sites use h3 for recipe sections)
+      final h3Headings = document.querySelectorAll('h3');
+      for (final heading in h3Headings) {
+        final headingText = heading.text?.trim().toLowerCase() ?? '';
+        if (headingText.contains('ingredient')) {
+          final ingredients = _extractListItemsAfterHeading(heading, document);
+          if (ingredients.isNotEmpty) {
+            result['ingredients'] = ingredients;
+            break;
+          }
+        }
+      }
+    }
+    
+    // If still no ingredients, try looking for lists with specific patterns
+    if ((result['ingredients'] as List).isEmpty) {
       // Look for lists that contain ingredient-like items (amounts + names)
-      final allLists = document.querySelectorAll('ul');
+      final allLists = document.querySelectorAll('ul, ol');
       for (final list in allLists) {
         final items = list.querySelectorAll('li');
         final itemTexts = <String>[];
@@ -3311,13 +3424,96 @@ class UrlRecipeImporter {
         }
         
         // Check if this looks like an ingredient list (has quantities)
+        // Enhanced pattern to match formats like "200g (½ Cup) Honey" or "60g (4 Tablespoons)"
         final hasQuantities = itemTexts.any((item) => 
-          RegExp(r'\d+\s*[gG](?:\s|$)|\d+\s*(?:cup|tbsp|tsp|oz|ml|lb|kg)', caseSensitive: false).hasMatch(item)
+          RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ounce|ml|lb|pound|kg|kilogram)', caseSensitive: false).hasMatch(item) ||
+          RegExp(r'[½¼¾⅓⅔⅛]\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon)', caseSensitive: false).hasMatch(item),
         );
         
-        if (hasQuantities && itemTexts.length >= 3) {
+        // Lower threshold - accept lists with 2+ items if they have quantities
+        if (hasQuantities && itemTexts.length >= 2) {
           result['ingredients'] = _processIngredientListItems(itemTexts);
           break;
+        }
+      }
+    }
+    
+    // Last resort: look for bold text patterns like "**Ingredients:**" followed by lists
+    if ((result['ingredients'] as List).isEmpty) {
+      // Look for strong/bold elements containing "ingredient"
+      final boldElements = document.querySelectorAll('strong, b');
+      for (final bold in boldElements) {
+        final boldText = bold.text?.trim().toLowerCase() ?? '';
+        if (boldText.contains('ingredient') && !boldText.contains('equipment')) {
+          // Check if the bold is inside a list item - if so, get the parent list
+          var parent = bold.parent;
+          while (parent != null) {
+            final parentTag = parent.localName?.toLowerCase();
+            if (parentTag == 'ul' || parentTag == 'ol') {
+              // Found the list - extract all items
+              final listItems = parent.querySelectorAll('li');
+              final itemTexts = <String>[];
+              for (final li in listItems) {
+                final text = _decodeHtml(li.text?.trim() ?? '');
+                if (text.isNotEmpty) {
+                  itemTexts.add(text);
+                }
+              }
+              if (itemTexts.isNotEmpty) {
+                result['ingredients'] = _processIngredientListItems(itemTexts);
+                break;
+              }
+            } else if (parentTag == 'li') {
+              // Bold is inside a list item - get the parent list
+              var listParent = parent.parent;
+              if (listParent != null) {
+                final listTag = listParent.localName?.toLowerCase();
+                if (listTag == 'ul' || listTag == 'ol') {
+                  final listItems = listParent.querySelectorAll('li');
+                  final itemTexts = <String>[];
+                  for (final li in listItems) {
+                    final text = _decodeHtml(li.text?.trim() ?? '');
+                    if (text.isNotEmpty) {
+                      itemTexts.add(text);
+                    }
+                  }
+                  if (itemTexts.isNotEmpty) {
+                    result['ingredients'] = _processIngredientListItems(itemTexts);
+                    break;
+                  }
+                }
+              }
+              break;
+            }
+            parent = parent.parent;
+          }
+          
+          // Also try to find a list after this bold element (if not inside a list)
+          if ((result['ingredients'] as List).isEmpty) {
+            var nextElement = bold.parent?.nextElementSibling ?? bold.nextElementSibling;
+            while (nextElement != null) {
+              final tagName = nextElement.localName?.toLowerCase();
+              if (tagName == 'ul' || tagName == 'ol') {
+                final listItems = nextElement.querySelectorAll('li');
+                final itemTexts = <String>[];
+                for (final li in listItems) {
+                  final text = _decodeHtml(li.text?.trim() ?? '');
+                  if (text.isNotEmpty) {
+                    itemTexts.add(text);
+                  }
+                }
+                if (itemTexts.isNotEmpty) {
+                  result['ingredients'] = _processIngredientListItems(itemTexts);
+                  break;
+                }
+              } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'strong' || tagName == 'b') {
+                break;
+              }
+              nextElement = nextElement.nextElementSibling;
+            }
+          }
+          
+          if ((result['ingredients'] as List).isNotEmpty) break;
         }
       }
     }

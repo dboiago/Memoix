@@ -99,7 +99,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                           ),
                         ],
                       ),
-                    ]
+                    ],
                   ],
                 ),
               ),

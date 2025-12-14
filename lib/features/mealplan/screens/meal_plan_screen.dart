@@ -199,7 +199,7 @@ class WeekView extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Error loading meal plan'),
+            const Text('Error loading meal plan'),
             const SizedBox(height: 8),
             Text('$err', style: const TextStyle(fontSize: 12)),
           ],
@@ -398,7 +398,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                               ],
                             ),
                           ),
-                          PopupMenuItem(
+                          const PopupMenuItem(
                             value: 'remove',
                             child: Row(
                               children: [
@@ -417,7 +417,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                         }
                       },
                     ),
-                  )),
+                  ),),
                 ],
               );
             }),
@@ -622,7 +622,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added ${r.name}')));
                               }
                             },
-                          )),
+                          ),),
                           const Divider(),
                         ],
                         // Favourites section
@@ -677,7 +677,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                     );
                                   }
                                 },
-                              )).toList(),
+                              ),).toList(),
                             );
                           },
                         ),

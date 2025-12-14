@@ -84,7 +84,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        _buildSingleImage(context, headerImage!),
+                        _buildSingleImage(context, headerImage),
                         // Gradient overlay for title readability
                         Container(
                           decoration: BoxDecoration(

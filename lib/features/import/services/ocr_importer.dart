@@ -392,7 +392,7 @@ class OcrRecipeImporter {
           original: line,
           name: line,
           looksLikeIngredient: hasAmount,
-        ));
+        ),);
         ingredients.add(Ingredient.create(name: line));
       } else if (directions.isNotEmpty && !inIngredients) {
         // Continue previous direction
@@ -410,7 +410,7 @@ class OcrRecipeImporter {
           original: line,
           name: line,
           looksLikeIngredient: false, // Uncertain
-        ));
+        ),);
         ingredients.add(Ingredient.create(name: line));
       }
     }

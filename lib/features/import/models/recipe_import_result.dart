@@ -83,7 +83,7 @@ class RecipeImportResult {
     };
 
     // Calculate base confidence from core fields
-    double baseConfidence = (nameConfidence * coreWeights['name']!) +
+    final double baseConfidence = (nameConfidence * coreWeights['name']!) +
         (ingredientsConfidence * coreWeights['ingredients']!) +
         (directionsConfidence * coreWeights['directions']!) +
         (courseConfidence * coreWeights['course']!);

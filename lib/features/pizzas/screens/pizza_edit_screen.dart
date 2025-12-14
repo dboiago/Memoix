@@ -298,7 +298,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               Text(base),
             ],
           ),
-        )),
+        ),),
         const PopupMenuDivider(),
         PopupMenuItem<String>(
           value: '__custom__',
@@ -413,7 +413,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_cheeseControllers[index].text.isNotEmpty || _cheeseControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7)),
+                    color: theme.colorScheme.error.withOpacity(0.7),),
                   onPressed: () => _removeCheeseRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -480,7 +480,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_toppingControllers[index].text.isNotEmpty || _toppingControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7)),
+                    color: theme.colorScheme.error.withOpacity(0.7),),
                   onPressed: () => _removeToppingRow(index),
                   visualDensity: VisualDensity.compact,
                 ),

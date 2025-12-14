@@ -268,7 +268,7 @@ class MemoixColors {
          'cambodian', 'laotian', 'mongolian', 'korea', 'japan', 'china',
          'india', 'thailand', 'vietnam', 'philippines', 'indonesia', 'malaysia',
          'singapore', 'taiwan', 'pakistan', 'nepal', 'sri lanka', 'bangladesh',
-         'myanmar', 'burma', 'cambodia', 'laos', 'mongolia', 'asian'].contains(lower)) {
+         'myanmar', 'burma', 'cambodia', 'laos', 'mongolia', 'asian',].contains(lower)) {
       return continentAsian;
     }
     
@@ -287,7 +287,7 @@ class MemoixColors {
          'albania', 'belarus', 'bosnia', 'bulgaria', 'cyprus', 'estonia',
          'georgia', 'iceland', 'latvia', 'lithuania', 'malta', 'moldova',
          'montenegro', 'slovakia', 'slovenia',
-         'european', 'mediterranean', 'nordic', 'scandinavian'].contains(lower)) {
+         'european', 'mediterranean', 'nordic', 'scandinavian',].contains(lower)) {
       return continentEuropean;
     }
     
@@ -301,7 +301,7 @@ class MemoixColors {
          'costa rica', 'ecuador', 'el salvador', 'guatemala', 'honduras',
          'nicaragua', 'panama', 'paraguay', 'uruguay',
          'north american', 'south american', 'latin american', 'southern',
-         'cajun', 'tex-mex', 'creole'].contains(lower)) {
+         'cajun', 'tex-mex', 'creole',].contains(lower)) {
       return continentAmericas;
     }
     
@@ -309,7 +309,7 @@ class MemoixColors {
     if (['jamaican', 'cuban', 'haitian', 'dominican', 'puerto rican',
          'trinidadian', 'barbadian', 'bahamian', 'guyanese',
          'jamaica', 'cuba', 'haiti', 'dominican republic', 'puerto rico',
-         'trinidad', 'barbados', 'bahamas', 'guyana', 'caribbean'].contains(lower)) {
+         'trinidad', 'barbados', 'bahamas', 'guyana', 'caribbean',].contains(lower)) {
       return continentCaribbean;
     }
     
@@ -319,7 +319,7 @@ class MemoixColors {
          'senegalese', 'tanzanian', 'ugandan',
          'ethiopia', 'morocco', 'south africa', 'egypt', 'nigeria', 'ghana',
          'kenya', 'tunisia', 'algeria', 'cameroon', 'senegal', 'tanzania',
-         'uganda', 'african'].contains(lower)) {
+         'uganda', 'african',].contains(lower)) {
       return continentAfrican;
     }
     
@@ -330,7 +330,7 @@ class MemoixColors {
          'turkey', 'lebanon', 'israel', 'iran', 'persia', 'iraq', 'syria',
          'jordan', 'palestine', 'saudi arabia', 'yemen', 'afghanistan',
          'bahrain', 'uae', 'united arab emirates', 'kuwait', 'oman', 'qatar',
-         'middle east', 'middle eastern'].contains(lower)) {
+         'middle east', 'middle eastern',].contains(lower)) {
       return continentMiddleEast;
     }
     
@@ -338,7 +338,7 @@ class MemoixColors {
     if (['australian', 'new zealand', 'hawaiian', 'fijian', 'samoan',
          'tongan', 'papua new guinean',
          'australia', 'hawaii', 'fiji', 'samoa', 'tonga', 'papua new guinea',
-         'oceanian', 'polynesian'].contains(lower)) {
+         'oceanian', 'polynesian',].contains(lower)) {
       return continentOceanian;
     }
     
@@ -400,7 +400,7 @@ class MemoixColors {
     if (['LIQUEUR', 'AMARO', 'APERITIF'].contains(upper) ||
         ['liqueur', 'amaro', 'aperitif', 'aperol', 'campari', 'chartreuse', 
          'triple sec', 'cointreau', 'grand marnier', 'kahlua', 'baileys',
-         'amaretto', 'frangelico', 'sambuca', 'st germain'].contains(lower)) {
+         'amaretto', 'frangelico', 'sambuca', 'st germain',].contains(lower)) {
       return spiritLiqueur;
     }
     
@@ -423,7 +423,7 @@ class MemoixColors {
     // Mocktails and other non-alcoholic
     if (['MOCKTAIL', 'SMOOTHIE', 'JUICE', 'SODA', 'HOT_CHOC'].contains(upper) ||
         ['mocktail', 'smoothie', 'juice', 'soda', 'tonic', 'hot chocolate', 
-         'non-alcoholic', 'virgin'].contains(lower)) {
+         'non-alcoholic', 'virgin',].contains(lower)) {
       return spiritMocktail;
     }
     

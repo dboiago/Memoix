@@ -147,7 +147,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                           ),
                         ],
                       ),
-                    ]
+                    ],
                   ],
                 ),
               ),

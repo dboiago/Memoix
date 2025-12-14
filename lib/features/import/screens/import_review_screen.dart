@@ -97,7 +97,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
           // Recipe name
           _buildSectionTitle(theme, 'Recipe Name', Icons.restaurant,
-              confidence: result.nameConfidence),
+              confidence: result.nameConfidence,),
           const SizedBox(height: 8),
           TextField(
             controller: _nameController,
@@ -111,14 +111,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
           // Course selection
           _buildSectionTitle(theme, 'Course', Icons.category,
-              confidence: result.courseConfidence),
+              confidence: result.courseConfidence,),
           const SizedBox(height: 8),
           _buildCourseSelector(theme, result),
           const SizedBox(height: 24),
 
           // Cuisine selection
           _buildSectionTitle(theme, 'Cuisine', Icons.public,
-              confidence: result.cuisineConfidence),
+              confidence: result.cuisineConfidence,),
           const SizedBox(height: 8),
           _buildCuisineSelector(theme, result),
           const SizedBox(height: 24),
@@ -131,7 +131,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _buildSectionTitle(theme, 'Servings', Icons.people,
-                        confidence: result.servesConfidence),
+                        confidence: result.servesConfidence,),
                     const SizedBox(height: 8),
                     TextField(
                       controller: _servesController,
@@ -149,7 +149,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _buildSectionTitle(theme, 'Time', Icons.timer,
-                        confidence: result.timeConfidence),
+                        confidence: result.timeConfidence,),
                     const SizedBox(height: 8),
                     TextField(
                       controller: _timeController,
@@ -167,14 +167,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
           // Ingredients
           _buildSectionTitle(theme, 'Ingredients', Icons.kitchen,
-              confidence: result.ingredientsConfidence),
+              confidence: result.ingredientsConfidence,),
           const SizedBox(height: 8),
           _buildIngredientsList(theme, result),
           const SizedBox(height: 24),
 
           // Directions
           _buildSectionTitle(theme, 'Directions', Icons.format_list_numbered,
-              confidence: result.directionsConfidence),
+              confidence: result.directionsConfidence,),
           const SizedBox(height: 8),
           _buildDirectionsList(theme, result),
           const SizedBox(height: 32),
@@ -454,7 +454,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             TextButton(
               onPressed: () => setState(() {
                 _selectedIngredientIndices = Set.from(
-                    List.generate(result.rawIngredients.length, (i) => i));
+                    List.generate(result.rawIngredients.length, (i) => i),);
               }),
               child: const Text('All'),
             ),
@@ -709,7 +709,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               ),
             ],
           );
-        }),
+        },),
       ],
     );
   }
@@ -742,7 +742,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             TextButton(
               onPressed: () => setState(() {
                 _selectedDirectionIndices = Set.from(
-                    List.generate(result.rawDirections.length, (i) => i));
+                    List.generate(result.rawDirections.length, (i) => i),);
               }),
               child: const Text('All'),
             ),
@@ -813,10 +813,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                 // Direction text - using InputDecorator to match TextField
                 Expanded(
                   child: InputDecorator(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       isDense: true,
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                      border: const OutlineInputBorder(),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                      border: OutlineInputBorder(),
                     ),
                     child: Text(
                       direction,
@@ -960,7 +960,7 @@ class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
     return Cuisine.all.where((c) => 
       c.name.toLowerCase().contains(query) ||
       c.continent.toLowerCase().contains(query) ||
-      c.code.toLowerCase().contains(query)
+      c.code.toLowerCase().contains(query),
     ).toList()..sort((a, b) => a.name.compareTo(b.name));
   }
 
@@ -1062,7 +1062,7 @@ class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
           leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
           title: Text(cuisine.name),
           subtitle: Text(cuisine.continent, 
-            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12),),
           trailing: isSelected
               ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
               : null,

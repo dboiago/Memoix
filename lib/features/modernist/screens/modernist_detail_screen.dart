@@ -222,7 +222,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                         backgroundColor: theme.colorScheme.surfaceContainerHighest,
                         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                         visualDensity: VisualDensity.compact,
-                      )).toList(),
+                      ),).toList(),
                     ),
                   ],
                 ],

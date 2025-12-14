@@ -68,7 +68,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _seasonings.add(_SeasoningEntry(
           nameController: TextEditingController(text: seasoning.name),
           amountController: TextEditingController(text: seasoning.amount ?? ''),
-        ));
+        ),);
       }
 
       for (final direction in recipe.directions) {
@@ -94,7 +94,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           _seasonings.add(_SeasoningEntry(
             nameController: TextEditingController(text: seasoning.name),
             amountController: TextEditingController(text: seasoning.amount ?? ''),
-          ));
+          ),);
         }
 
         for (final direction in recipe.directions) {
@@ -108,7 +108,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _seasonings.add(_SeasoningEntry(
         nameController: TextEditingController(),
         amountController: TextEditingController(),
-      ));
+      ),);
     }
     if (_directionControllers.isEmpty) {
       _directionControllers.add(TextEditingController());
@@ -259,7 +259,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 // Category dropdown
                 Expanded(
                   child: DropdownButtonFormField<String>(
-                    value: _selectedCategory,
+                    initialValue: _selectedCategory,
                     decoration: const InputDecoration(
                       labelText: 'Category',
                     ),
@@ -611,7 +611,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _seasonings.add(_SeasoningEntry(
         nameController: TextEditingController(),
         amountController: TextEditingController(),
-      ));
+      ),);
     });
   }
 
@@ -829,7 +829,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ..name = s.nameController.text.trim()
           ..amount = s.amountController.text.trim().isEmpty
               ? null
-              : s.amountController.text.trim())
+              : s.amountController.text.trim(),)
         .toList();
 
     // Build directions list

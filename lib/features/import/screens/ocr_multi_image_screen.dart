@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../services/ocr_importer.dart';
-import '../models/recipe_import_result.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
 import 'multi_image_picker_screen.dart';
@@ -62,7 +61,7 @@ class _OCRMultiImageScreenState extends ConsumerState<OCRMultiImageScreen> {
                           Row(
                             children: [
                               Icon(Icons.info_outline,
-                                  color: theme.colorScheme.primary),
+                                  color: theme.colorScheme.primary,),
                               const SizedBox(width: 8),
                               Text(
                                 'Scan Multi-Page Recipe',
@@ -100,7 +99,7 @@ class _OCRMultiImageScreenState extends ConsumerState<OCRMultiImageScreen> {
                         child: Row(
                           children: [
                             Icon(Icons.error_outline,
-                                color: theme.colorScheme.error),
+                                color: theme.colorScheme.error,),
                             const SizedBox(width: 8),
                             Expanded(child: Text(_errorMessage!)),
                           ],
@@ -120,7 +119,7 @@ class _OCRMultiImageScreenState extends ConsumerState<OCRMultiImageScreen> {
                           Row(
                             children: [
                               Icon(Icons.lightbulb_outline,
-                                  color: theme.colorScheme.secondary),
+                                  color: theme.colorScheme.secondary,),
                               const SizedBox(width: 8),
                               Text(
                                 'Tips for best results',

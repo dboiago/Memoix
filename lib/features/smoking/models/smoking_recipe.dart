@@ -337,7 +337,7 @@ class SmokingRecipe {
         'name': s.name,
         'amount': s.amount,
         'unit': s.unit,
-      }).toList(),
+      },).toList(),
       'directions': directions,
       'notes': notes,
       'headerImage': headerImage,
@@ -366,7 +366,7 @@ class SmokingRecipe {
         'name': s.name,
         'amount': s.amount,
         'unit': s.unit,
-      }).toList(),
+      },).toList(),
       'directions': directions,
       'notes': notes,
     };

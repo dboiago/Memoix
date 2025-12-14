@@ -4,7 +4,6 @@ import '../models/recipe.dart';
 import '../models/cuisine.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
-import '../../statistics/models/cooking_stats.dart';
 import '../../../core/providers.dart';
 import '../../../app/theme/colors.dart';
 
@@ -256,7 +255,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
 
   /// Check if this recipe is a drink/cocktail
   bool _isDrink() {
-    final course = widget.recipe.course?.toLowerCase();
+    final course = widget.recipe.course.toLowerCase();
     return course == 'drinks' || course == 'drink' || course == 'beverages';
   }
 

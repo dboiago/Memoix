@@ -6,7 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../app/routes/router.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/scratch_pad.dart';

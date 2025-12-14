@@ -1,6 +1,5 @@
 import 'package:isar/isar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
 
 part 'meal_plan.g.dart';
@@ -266,7 +265,7 @@ class MealPlanService {
       course: m.course,
       servings: m.servings,
       notes: m.notes,
-    )).toList();
+    ),).toList();
 
     toPlan.meals = [...toPlan.meals, ...copiedMeals];
     await _db.writeTxn(() => _db.mealPlans.put(toPlan));

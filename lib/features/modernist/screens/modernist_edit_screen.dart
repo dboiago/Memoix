@@ -121,13 +121,13 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       nameController: TextEditingController(text: name),
       amountController: TextEditingController(text: amount),
       notesController: TextEditingController(text: notes),
-    ));
+    ),);
   }
 
   void _addDirectionRow({String text = ''}) {
     _directionRows.add(_DirectionRow(
       controller: TextEditingController(text: text),
-    ));
+    ),);
   }
 
   void _removeIngredientRow(int index) {
@@ -429,7 +429,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               label: Text(item),
               deleteIcon: const Icon(Icons.close, size: 18),
               onDeleted: () => setState(() => _equipment.remove(item)),
-            )).toList(),
+            ),).toList(),
           ),
         ],
       ],

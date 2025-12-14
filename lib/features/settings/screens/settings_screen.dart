@@ -201,7 +201,7 @@ class SettingsScreen extends ConsumerWidget {
           ),
           const Divider(),
           // Display section
-          _SectionHeader(title: 'Display'),
+          const _SectionHeader(title: 'Display'),
           SwitchListTile(
             secondary: const Icon(Icons.visibility_off),
             title: const Text('Hide Memoix Recipes'),
@@ -243,7 +243,7 @@ class SettingsScreen extends ConsumerWidget {
           const Divider(),
 
           // Sync section
-          _SectionHeader(title: 'Sync & Updates'),
+          const _SectionHeader(title: 'Sync & Updates'),
           ListTile(
             leading: const Icon(Icons.sync),
             title: const Text('Sync Memoix Collection'),
@@ -298,7 +298,7 @@ class SettingsScreen extends ConsumerWidget {
           const Divider(),
 
           // Data section
-          _SectionHeader(title: 'Data'),
+          const _SectionHeader(title: 'Data'),
           ListTile(
             leading: const Icon(Icons.folder_open),
             title: const Text('Export All Recipes'),
@@ -355,7 +355,7 @@ class SettingsScreen extends ConsumerWidget {
           const Divider(),
 
           // About section
-          _SectionHeader(title: 'About'),
+          const _SectionHeader(title: 'About'),
           ListTile(
             leading: const Icon(Icons.info_outline),
             title: const Text('About Memoix'),

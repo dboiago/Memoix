@@ -23,7 +23,7 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
               id: _nextTimerId++,
               duration: duration,
               label: label,
-            ));
+            ),);
           });
         },
       ),

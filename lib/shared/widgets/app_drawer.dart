@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../app/routes/router.dart';
 import '../../app/app_shell.dart';
-import '../../features/home/screens/favourites_screen.dart';
 
 /// Navigation drawer with organized sections matching Figma design
 /// Sections: Navigate, Tools, Share
@@ -48,7 +47,7 @@ class AppDrawer extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 4),
                 children: [
                   // NAVIGATE Section
-                  _DrawerSectionHeader(
+                  const _DrawerSectionHeader(
                     title: 'Navigate',
                   ),
                   _DrawerTile(
@@ -81,20 +80,14 @@ class AppDrawer extends StatelessWidget {
                     title: 'Favourites',
                     onTap: () {
                       Navigator.pop(context);
-                      // Navigate to favorites screen
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => const FavouritesScreen(),
-                        ),
-                      );
+                      AppRoutes.toFavourites(context);
                     },
                   ),
                   
                   const SizedBox(height: 8),
                   
                   // TOOLS Section
-                  _DrawerSectionHeader(
+                  const _DrawerSectionHeader(
                     title: 'Tools',
                   ),
                   _DrawerTile(
@@ -133,7 +126,7 @@ class AppDrawer extends StatelessWidget {
                   const SizedBox(height: 8),
                   
                   // SHARE Section
-                  _DrawerSectionHeader(
+                  const _DrawerSectionHeader(
                     title: 'Share',
                   ),
                   _DrawerTile(

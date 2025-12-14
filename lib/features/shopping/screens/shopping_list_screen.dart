@@ -698,7 +698,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
                     : recipes.where((r) =>
                         r.name.toLowerCase().contains(_searchQuery) ||
                         (r.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
-                        r.course.toLowerCase().contains(_searchQuery)
+                        r.course.toLowerCase().contains(_searchQuery),
                       ).toList();
 
                 if (filtered.isEmpty) {

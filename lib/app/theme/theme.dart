@@ -24,18 +24,18 @@ class MemoixTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      colorScheme: ColorScheme.light(
+      colorScheme: const ColorScheme.light(
         primary: lightAccent2,
         onPrimary: Colors.white,
         secondary: lightAccent1,
         onSecondary: lightPrimaryText,
-        secondaryContainer: const Color(0xFFE8DDD4), // warm cream for selected chips
+        secondaryContainer: Color(0xFFE8DDD4), // warm cream for selected chips
         onSecondaryContainer: lightPrimaryText, // #4b5563 charcoal for text on warm bg
         surface: lightSurface,
         onSurface: lightPrimaryText,
-        surfaceContainerHighest: const Color(0xFFE5DCD3), // accent bg
+        surfaceContainerHighest: Color(0xFFE5DCD3), // accent bg
         onSurfaceVariant: lightMuted, // #9ca3af grey for subtle text
-        error: const Color(0xFFDC2626),
+        error: Color(0xFFDC2626),
         onError: Colors.white,
         outline: lightMuted,
       ),
@@ -44,7 +44,7 @@ class MemoixTheme {
         bodyColor: lightPrimaryText,
         displayColor: lightPrimaryText,
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         centerTitle: false,
         elevation: 0,
         backgroundColor: lightSurface,
@@ -79,7 +79,7 @@ class MemoixTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: lightAccent2, width: 2),
+          borderSide: const BorderSide(color: lightAccent2, width: 2),
         ),
       ),
       // Rounded corners for list tiles (ExpansionTile, ListTile, etc.)
@@ -130,18 +130,18 @@ class MemoixTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      colorScheme: ColorScheme.dark(
+      colorScheme: const ColorScheme.dark(
         primary: darkAccent2,
         onPrimary: darkBackground,
         secondary: darkAccent1,
         onSecondary: darkPrimaryText,
-        secondaryContainer: const Color(0xFF3D3A38), // warm dark for selected chips
+        secondaryContainer: Color(0xFF3D3A38), // warm dark for selected chips
         onSecondaryContainer: darkPrimaryText, // light text for dark mode
         surface: darkSurface,
         onSurface: darkPrimaryText,
-        surfaceContainerHighest: const Color(0xFF2D2D2D), // muted/accent bg
+        surfaceContainerHighest: Color(0xFF2D2D2D), // muted/accent bg
         onSurfaceVariant: darkMuted, // #9b9b9b grey for subtle text
-        error: const Color(0xFFEF4444),
+        error: Color(0xFFEF4444),
         onError: darkBackground,
         outline: darkMuted,
       ),
@@ -150,7 +150,7 @@ class MemoixTheme {
         bodyColor: darkPrimaryText,
         displayColor: darkPrimaryText,
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         centerTitle: false,
         elevation: 0,
         backgroundColor: darkSurface,
@@ -185,7 +185,7 @@ class MemoixTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: darkAccent2, width: 2),
+          borderSide: const BorderSide(color: darkAccent2, width: 2),
         ),
       ),
       // Rounded corners for list tiles (ExpansionTile, ListTile, etc.)

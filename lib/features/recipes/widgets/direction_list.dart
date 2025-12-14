@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 
 import '../models/recipe.dart';
@@ -75,7 +74,7 @@ class _DirectionListState extends State<DirectionList> {
       if (match.start > lastEnd) {
         spans.add(TextSpan(
           text: text.substring(lastEnd, match.start),
-        ));
+        ),);
       }
       
       // Add the optional/alt text in italics with secondary color
@@ -87,7 +86,7 @@ class _DirectionListState extends State<DirectionList> {
               ? theme.colorScheme.onSurface.withOpacity(0.4)
               : theme.colorScheme.secondary,
         ),
-      ));
+      ),);
       
       lastEnd = match.end;
     }
@@ -96,7 +95,7 @@ class _DirectionListState extends State<DirectionList> {
     if (lastEnd < text.length) {
       spans.add(TextSpan(
         text: text.substring(lastEnd),
-      ));
+      ),);
     }
 
     return RichText(

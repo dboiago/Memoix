@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../models/smoking_import_result.dart';
 import '../services/smoking_url_importer.dart';
 import '../screens/smoking_edit_screen.dart';
 import '../screens/smoking_import_review_screen.dart';
@@ -50,7 +49,7 @@ class _SmokingURLImportScreenState
                     Row(
                       children: [
                         Icon(Icons.outdoor_grill,
-                            color: theme.colorScheme.primary),
+                            color: theme.colorScheme.primary,),
                         const SizedBox(width: 8),
                         Text(
                           'Import from BBQ Site',
@@ -145,10 +144,10 @@ class _SmokingURLImportScreenState
               style: theme.textTheme.titleSmall,
             ),
             const SizedBox(height: 8),
-            Wrap(
+            const Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: const [
+              children: [
                 _SiteBadge(label: 'Amazing Ribs'),
                 _SiteBadge(label: 'Serious Eats'),
                 _SiteBadge(label: 'Hey Grill Hey'),
@@ -174,15 +173,15 @@ class _SmokingURLImportScreenState
                     ),
                     const SizedBox(height: 8),
                     _buildInfoRow(
-                        Icons.thermostat, 'Temperature', 'Smoking temp'),
+                        Icons.thermostat, 'Temperature', 'Smoking temp',),
                     _buildInfoRow(
-                        Icons.timer, 'Time', 'Total cooking duration'),
+                        Icons.timer, 'Time', 'Total cooking duration',),
                     _buildInfoRow(
-                        Icons.park, 'Wood', 'Type of wood for smoking'),
+                        Icons.park, 'Wood', 'Type of wood for smoking',),
                     _buildInfoRow(
-                        Icons.restaurant, 'Seasonings', 'Rubs and spices'),
+                        Icons.restaurant, 'Seasonings', 'Rubs and spices',),
                     _buildInfoRow(
-                        Icons.format_list_numbered, 'Directions', 'Steps'),
+                        Icons.format_list_numbered, 'Directions', 'Steps',),
                   ],
                 ),
               ),
@@ -219,7 +218,7 @@ class _SmokingURLImportScreenState
     // Basic URL validation
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
       setState(() => _errorMessage =
-          'Please enter a valid URL starting with http:// or https://');
+          'Please enter a valid URL starting with http:// or https://',);
       return;
     }
 

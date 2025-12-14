@@ -11,7 +11,7 @@ import '../models/recipe.dart';
 /// Repository for recipe data operations
 class RecipeRepository {
   final Isar _db;
-  static final _uuid = Uuid();
+  static const _uuid = Uuid();
 
   RecipeRepository(this._db);
 
@@ -149,11 +149,7 @@ class RecipeRepository {
   
   /// Normalize ingredient units to standard abbreviations
   void _normalizeIngredientUnits(Recipe recipe) {
-    for (final ingredient in recipe.ingredients) {
-      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
-        ingredient.unit = UnitNormalizer.normalize(ingredient.unit);
-      }
-    }
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
   }
 
   /// Delete a recipe
@@ -163,11 +159,14 @@ class RecipeRepository {
 
   /// Toggle favorite status
   Future<void> toggleFavorite(int id) async {
-    final recipe = await getRecipeById(id);
-    if (recipe != null) {
-      recipe.isFavorite = !recipe.isFavorite;
-      await saveRecipe(recipe);
-    }
+    await _db.writeTxn(() async {
+      final recipe = await _db.recipes.get(id);
+      if (recipe != null) {
+        recipe.isFavorite = !recipe.isFavorite;
+        recipe.updatedAt = DateTime.now();
+        await _db.recipes.put(recipe);
+      }
+    });
   }
 
   /// Watch all recipes (stream)

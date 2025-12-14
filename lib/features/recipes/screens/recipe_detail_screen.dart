@@ -5,7 +5,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
@@ -16,7 +15,6 @@ import '../widgets/direction_list.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
-import 'recipe_cooking_view.dart';
 
 /// Format serves to remove unnecessary decimals (e.g., "6.0" -> "6")
 String _formatServes(String serves) {
@@ -303,7 +301,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
                                 labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                                 onPressed: () => _navigateToPairedRecipe(context, ref, p),
-                              ))
+                              ),)
                           .toList(),
                     ),
                   ],
@@ -811,7 +809,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ..preparation = i.preparation
           ..alternative = i.alternative
           ..isOptional = i.isOptional
-          ..section = i.section
+          ..section = i.section,
       ).toList()
       ..directions = List.from(recipe.directions)
       ..source = RecipeSource.personal

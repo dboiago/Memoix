@@ -52,7 +52,7 @@ class GitHubRecipeService {
       if (data is List) {
         recipes = data
             .map((e) => Recipe.fromJson(e as Map<String, dynamic>)
-              ..source = RecipeSource.memoix)
+              ..source = RecipeSource.memoix,)
             .toList();
       } else if (data is Map<String, dynamic>) {
         recipes = [Recipe.fromJson(data)..source = RecipeSource.memoix];
@@ -62,7 +62,7 @@ class GitHubRecipeService {
       return recipes.where((r) => 
         r.name.isNotEmpty && 
         r.name.toLowerCase() != 'name' &&
-        !r.name.toLowerCase().startsWith('template')
+        !r.name.toLowerCase().startsWith('template'),
       ).toList();
     } catch (e) {
       print('Error fetching $filename: $e');
@@ -84,7 +84,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => Recipe.fromJson(e as Map<String, dynamic>)
-            ..source = RecipeSource.memoix)
+            ..source = RecipeSource.memoix,)
           .toList();
     } catch (e) {
       print('Error fetching $course recipes: $e');

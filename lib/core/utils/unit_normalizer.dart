@@ -167,4 +167,19 @@ class UnitNormalizer {
     'slice',
     'pc',
   ];
+
+  /// Normalize units for all items in a list that have a unit field
+  /// Works with List<Ingredient>, List<SmokingSeasoning>, List<ModernistIngredient>, etc.
+  static void normalizeUnitsInList(List list) {
+    for (final item in list) {
+      // Use dynamic to access unit field regardless of type
+      final dynamic itemWithUnit = item;
+      if (itemWithUnit.unit != null && itemWithUnit.unit is String) {
+        final unit = itemWithUnit.unit as String;
+        if (unit.isNotEmpty) {
+          itemWithUnit.unit = normalize(unit);
+        }
+      }
+    }
+  }
 }

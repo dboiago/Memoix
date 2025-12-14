@@ -49,7 +49,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
     try {
       final shareService = ref.read(shareServiceProvider);
-      final link = await shareService.generateShareLink(_selectedRecipe!);
+      final link = shareService.generateShareLink(_selectedRecipe!);
       setState(() {
         _shareLink = link;
         _isGenerating = false;
@@ -151,7 +151,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
             error: (err, _) => Center(child: Text('Error: $err')),
             data: (recipes) {
               // Filter recipes
-              var filtered = recipes.where((r) {
+              final filtered = recipes.where((r) {
                 // Course filter
                 if (_selectedCourse != 'All' && r.course != _selectedCourse) {
                   return false;
@@ -226,7 +226,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                           setState(() => _selectedRecipe = recipe);
                           _generateShareLink();
                         },
-                      )),
+                      ),),
                     ],
                   );
                 },
@@ -380,10 +380,8 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     buffer.writeln('📖 ${_selectedRecipe!.name}');
     buffer.writeln();
 
-    if (_selectedRecipe!.course != null) {
-      buffer.writeln('Course: ${_selectedRecipe!.course}');
-    }
-    if (_selectedRecipe!.cuisine != null) {
+    buffer.writeln('Course: ${_selectedRecipe!.course}');
+      if (_selectedRecipe!.cuisine != null) {
       buffer.writeln('Cuisine: ${_selectedRecipe!.cuisine}');
     }
     if (_selectedRecipe!.serves != null) {

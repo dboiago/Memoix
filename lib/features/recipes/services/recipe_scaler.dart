@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:math' as math;
 
 import '../models/recipe.dart';
 
@@ -115,13 +114,13 @@ class RecipeScaler {
     final saltSpices = ['salt', 'pepper', 'cayenne', 'chili', 'paprika', 'cumin', 
                         'coriander', 'turmeric', 'cinnamon', 'nutmeg', 'ginger',
                         'garlic powder', 'onion powder', 'oregano', 'basil', 'thyme',
-                        'rosemary', 'sage', 'parsley', 'cilantro', 'dill', 'mint'];
+                        'rosemary', 'sage', 'parsley', 'cilantro', 'dill', 'mint',];
     
     final leavening = ['baking powder', 'baking soda', 'yeast', 'cream of tartar'];
     
     final strongFlavors = ['vanilla', 'extract', 'worcestershire', 'fish sauce',
                            'soy sauce', 'hot sauce', 'tabasco', 'sriracha', 'wasabi',
-                           'horseradish', 'mustard', 'anchovy'];
+                           'horseradish', 'mustard', 'anchovy',];
     
     // Scaling up
     if (scaleFactor > 1) {

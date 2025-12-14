@@ -31,9 +31,7 @@ class ScratchPadRepository {
   Future<void> saveQuickNotes(String notes) async {
     await _db.writeTxn(() async {
       var pad = await _db.scratchPads.where().findFirst();
-      if (pad == null) {
-        pad = ScratchPad();
-      }
+      pad ??= ScratchPad();
       pad.quickNotes = notes;
       pad.updatedAt = DateTime.now();
       await _db.scratchPads.put(pad);

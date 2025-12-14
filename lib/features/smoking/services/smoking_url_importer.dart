@@ -155,11 +155,11 @@ class SmokingUrlImporter {
   String _cleanRecipeName(String name) {
     var cleaned = _decodeHtml(name);
     cleaned = cleaned.replaceAll(
-        RegExp(r'\s*[-–—]\s*Recipe\s*$', caseSensitive: false), '');
+        RegExp(r'\s*[-–—]\s*Recipe\s*$', caseSensitive: false), '',);
     cleaned =
         cleaned.replaceAll(RegExp(r'\s+Recipe\s*$', caseSensitive: false), '');
     cleaned = cleaned.replaceAll(
-        RegExp(r'^Recipe\s*[-–—:]\s*', caseSensitive: false), '');
+        RegExp(r'^Recipe\s*[-–—:]\s*', caseSensitive: false), '',);
     return cleaned.trim();
   }
 
@@ -174,7 +174,7 @@ class SmokingUrlImporter {
 
   /// Parse JSON-LD structured data with confidence scoring
   SmokingImportResult? _parseJsonLd(
-      dynamic data, String sourceUrl, bool isKnownSite) {
+      dynamic data, String sourceUrl, bool isKnownSite,) {
     // Handle @graph structure
     if (data is Map && data['@graph'] != null) {
       final graph = data['@graph'] as List;
@@ -674,7 +674,7 @@ class SmokingUrlImporter {
   }
 
   SmokingImportResult? _parseFromHtml(
-      dynamic document, String sourceUrl, bool isKnownSite) {
+      dynamic document, String sourceUrl, bool isKnownSite,) {
     final title = document.querySelector('h1')?.text?.trim() ??
         document.querySelector('.recipe-title')?.text?.trim() ??
         document.querySelector('[itemprop="name"]')?.text?.trim() ??
@@ -694,7 +694,7 @@ class SmokingUrlImporter {
           original: text,
           name: text,
           isSeasoning: true, // Mark all as seasonings in HTML fallback
-        ));
+        ),);
         seasonings.add(SmokingSeasoning.create(name: _titleCase(text)));
       }
     }

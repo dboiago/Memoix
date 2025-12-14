@@ -5,7 +5,6 @@ import '../../../app/routes/router.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/category.dart';
 import '../models/recipe.dart';
-import '../models/continent_mapping.dart';
 import '../models/source_filter.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
@@ -31,7 +30,7 @@ class RecipeListScreen extends ConsumerStatefulWidget {
 }
 
 class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
-  Set<String> _selectedCuisines = {}; // Empty = "All" (also used for base spirits in drinks)
+  final Set<String> _selectedCuisines = {}; // Empty = "All" (also used for base spirits in drinks)
   String _searchQuery = '';
 
   /// Check if this is the drinks course
@@ -321,7 +320,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
   Widget _buildRecipeList(List<Recipe> allRecipes) {
     // Apply filters
-    var filteredRecipes = _filterRecipes(allRecipes);
+    final filteredRecipes = _filterRecipes(allRecipes);
 
     if (filteredRecipes.isEmpty) {
       return _buildEmptyState();
@@ -375,7 +374,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                 r.source == RecipeSource.personal ||
                 r.source == RecipeSource.imported ||
                 r.source == RecipeSource.ocr ||
-                r.source == RecipeSource.url)
+                r.source == RecipeSource.url,)
             .toList();
       case RecipeSourceFilter.all:
         return recipes;

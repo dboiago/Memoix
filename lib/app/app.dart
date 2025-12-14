@@ -6,6 +6,7 @@ import 'routes/router.dart';
 import '../core/providers.dart';
 import '../core/services/deep_link_service.dart';
 import '../core/services/update_service.dart';
+import '../core/services/github_recipe_service.dart';
 import '../core/widgets/update_available_dialog.dart';
 import '../features/settings/screens/settings_screen.dart';
 
@@ -44,6 +45,28 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(deepLinkServiceProvider).initialize(context);
       _checkForUpdatesOnLaunch();
+      _performBackgroundSync();
+    });
+  }
+
+  /// Perform initial recipe sync in background without blocking UI
+  void _performBackgroundSync() {
+    // Trigger sync in background - won't block UI
+    // The syncNotifierProvider handles errors gracefully
+    // Use Future.microtask to ensure ref is available
+    Future.microtask(() async {
+      if (!mounted) return;
+      try {
+        final syncNotifier = ref.read(syncNotifierProvider.notifier);
+        // Only sync if not already syncing
+        final currentState = ref.read(syncNotifierProvider);
+        if (!currentState.isLoading) {
+          await syncNotifier.sync();
+        }
+      } catch (e) {
+        // Silently fail - sync can happen later via manual trigger
+        debugPrint('Background sync failed: $e');
+      }
     });
   }
 

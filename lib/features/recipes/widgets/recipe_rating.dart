@@ -77,7 +77,7 @@ class RecipeRatingCompact extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (rating > 0) ...[
-          Icon(Icons.star, color: Colors.amber, size: 16),
+          const Icon(Icons.star, color: Colors.amber, size: 16),
           const SizedBox(width: 2),
           Text(
             rating.toString(),

@@ -166,7 +166,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       }
       
       // Normalize course to slug form (lowercase) to match dropdown values
-      _selectedCourse = _normaliseCourseSlug(recipe.course?.toLowerCase() ?? _selectedCourse);
+      _selectedCourse = _normaliseCourseSlug(recipe.course.toLowerCase() ?? _selectedCourse);
       _selectedCuisine = recipe.cuisine;
 
       // Convert ingredients to 3-column row controllers
@@ -258,7 +258,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       amountController: TextEditingController(text: amount),
       notesController: TextEditingController(text: notes),
       isSection: isSection,
-    ));
+    ),);
   }
 
   void _addSectionHeader() {
@@ -267,7 +267,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       amountController: TextEditingController(),
       notesController: TextEditingController(),
       isSection: true,
-    ));
+    ),);
     setState(() {});
   }
 
@@ -282,7 +282,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   void _addDirectionRow({String text = ''}) {
     _directionRows.add(_DirectionRow(
       controller: TextEditingController(text: text),
-    ));
+    ),);
   }
 
   void _removeDirectionRow(int index) {
@@ -804,7 +804,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
             // Course dropdown
             DropdownButtonFormField<String>(
-              value: _selectedCourse,
+              initialValue: _selectedCourse,
               decoration: const InputDecoration(
                 labelText: 'Category *',
               ),
@@ -838,7 +838,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   if (value == 'salad' && previousCourse != 'salad') {
                     final hasOnlyEmptyRows = _ingredientRows.every((row) => 
                         row.nameController.text.isEmpty && 
-                        row.amountController.text.isEmpty);
+                        row.amountController.text.isEmpty,);
                     if (hasOnlyEmptyRows && _ingredientRows.length <= 1) {
                       // Clear and add dressing section
                       for (final row in _ingredientRows) {
@@ -1293,7 +1293,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ..preparation = row.notesController.text.trim().isEmpty 
               ? null 
               : row.notesController.text.trim()
-          ..section = currentSection);
+          ..section = currentSection,);
       }
 
       // Parse directions from rows
@@ -1662,7 +1662,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         amountController: TextEditingController(),
         notesController: TextEditingController(),
         isSection: true,
-      ));
+      ),);
     });
   }
 
@@ -1672,7 +1672,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         nameController: TextEditingController(),
         amountController: TextEditingController(),
         notesController: TextEditingController(),
-      ));
+      ),);
     });
   }
 
@@ -2265,7 +2265,7 @@ class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
     return Cuisine.all.where((c) => 
       c.name.toLowerCase().contains(query) ||
       c.continent.toLowerCase().contains(query) ||
-      c.code.toLowerCase().contains(query)
+      c.code.toLowerCase().contains(query),
     ).toList()..sort((a, b) => a.name.compareTo(b.name));
   }
 
@@ -2367,7 +2367,7 @@ class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
           leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
           title: Text(cuisine.name),
           subtitle: Text(cuisine.continent, 
-            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12),),
           trailing: isSelected
               ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
               : null,

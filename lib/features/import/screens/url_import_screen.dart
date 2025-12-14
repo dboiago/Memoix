@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../services/url_importer.dart';
-import '../models/recipe_import_result.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
 
@@ -102,21 +102,39 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
             if (_errorMessage != null)
               Card(
                 color: theme.colorScheme.errorContainer,
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Row(
-                    children: [
-                      Icon(Icons.error_outline, color: theme.colorScheme.error),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          _errorMessage!,
-                          style: TextStyle(
-                            color: theme.colorScheme.onErrorContainer,
+                child: InkWell(
+                  onTap: () {
+                    // Copy error message to clipboard on tap
+                    Clipboard.setData(ClipboardData(text: _errorMessage!));
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Error message copied to clipboard'),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Row(
+                      children: [
+                        Icon(Icons.error_outline, color: theme.colorScheme.error),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            _errorMessage!,
+                            style: TextStyle(
+                              color: theme.colorScheme.onErrorContainer,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(width: 8),
+                        Icon(
+                          Icons.copy,
+                          size: 18,
+                          color: theme.colorScheme.onErrorContainer.withOpacity(0.7),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -144,7 +162,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
               style: theme.textTheme.titleSmall,
             ),
             const SizedBox(height: 8),
-            Wrap(
+            const Wrap(
               spacing: 8,
               runSpacing: 8,
               children: [

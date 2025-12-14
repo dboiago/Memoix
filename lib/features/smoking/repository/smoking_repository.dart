@@ -44,11 +44,7 @@ class SmokingRepository {
   
   /// Normalize seasoning units to standard abbreviations
   void _normalizeSeasoningUnits(SmokingRecipe recipe) {
-    for (final seasoning in recipe.seasonings) {
-      if (seasoning.unit != null && seasoning.unit!.isNotEmpty) {
-        seasoning.unit = UnitNormalizer.normalize(seasoning.unit);
-      }
-    }
+    UnitNormalizer.normalizeUnitsInList(recipe.seasonings);
   }
 
   /// Delete a smoking recipe by UUID
