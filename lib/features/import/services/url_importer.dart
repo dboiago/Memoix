@@ -255,11 +255,13 @@ class UrlRecipeImporter {
       
       // Try to fetch and parse transcript/captions with timestamps
       List<TranscriptSegment> transcriptSegments = [];
+      String transcriptDebug = '';
       try {
-        final (segments, _) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
+        final (segments, debug) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
         transcriptSegments = segments;
-      } catch (_) {
-        // Transcript fetch failed - will fall back to chapters or description
+        transcriptDebug = debug;
+      } catch (e) {
+        transcriptDebug = 'err: $e';
       }
       
       // Parse the description for ingredients
@@ -317,6 +319,10 @@ class UrlRecipeImporter {
       
       // Build notes with channel attribution
       String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
+      // Debug transcript info
+      if (transcriptDebug.isNotEmpty) {
+        notes += '\n[$transcriptDebug]';
+      }
       if (parsedDescription['notes'] != null) {
         notes += '\n\n${parsedDescription["notes"]}';
       }
