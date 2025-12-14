@@ -342,6 +342,18 @@ class UrlRecipeImporter {
         );
       }).toList();
       
+      // Calculate confidence based on what was successfully parsed
+      // Higher confidence when we found structured data
+      final nameConf = title != null && title.isNotEmpty ? 0.85 : 0.3;
+      final courseConf = detectedCourse != null ? 0.8 : 0.5;
+      final ingredientsConf = hasIngredients 
+          ? (ingredients.length >= 3 ? 0.85 : 0.7) // More ingredients = more confidence
+          : 0.0;
+      final directionsConf = hasDirections 
+          ? (transcriptSegments.isNotEmpty ? 0.85 : 0.7) 
+          : 0.0;
+      final timeConf = recipeTime != null ? 0.9 : 0.0;
+      
       return RecipeImportResult(
         name: recipeName,
         course: detectedCourse ?? 'Mains',
@@ -353,13 +365,11 @@ class UrlRecipeImporter {
         rawIngredients: rawIngredients,
         rawDirections: directions,
         detectedCourses: [detectedCourse ?? 'Mains'],
-        nameConfidence: title != null ? 0.7 : 0.3,
-        courseConfidence: detectedCourse != null ? 0.7 : 0.3,
-        ingredientsConfidence: hasIngredients ? 0.6 : 0.0,
-        directionsConfidence: hasDirections 
-            ? (transcriptSegments.isNotEmpty ? 0.7 : 0.5) 
-            : 0.0,
-        timeConfidence: recipeTime != null ? 0.8 : 0.0,
+        nameConfidence: nameConf,
+        courseConfidence: courseConf,
+        ingredientsConfidence: ingredientsConf,
+        directionsConfidence: directionsConf,
+        timeConfidence: timeConf,
         sourceUrl: sourceUrl,
         source: RecipeSource.url,
       );
