@@ -328,7 +328,7 @@ class UrlRecipeImporter {
         courseConfidence: detectedCourse != null ? 0.7 : 0.3,
         ingredientsConfidence: hasIngredients ? 0.6 : 0.0,
         directionsConfidence: hasDirections 
-            ? (transcriptDirections.isNotEmpty ? 0.5 : 0.7) 
+            ? (transcriptSegments.isNotEmpty ? 0.7 : 0.5) 
             : 0.0,
         sourceUrl: sourceUrl,
         source: RecipeSource.url,
@@ -1770,11 +1770,11 @@ class UrlRecipeImporter {
       final metric = bakerPercentMatch.group(2)?.trim() ?? '';
       final imperial = bakerPercentMatch.group(3)?.trim();
       
-      // Use metric as the amount, imperial as notes
+      // Use metric as the amount, imperial as preparation/notes
       return Ingredient.create(
         name: name,
         amount: metric,
-        notes: imperial,
+        preparation: imperial,
       );
     }
     
