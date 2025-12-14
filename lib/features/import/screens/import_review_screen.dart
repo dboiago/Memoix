@@ -437,21 +437,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       runSpacing: 8,
       children: courses.map((course) {
         final isSelected = _selectedCourse == course;
-        final isDetected = result.detectedCourses.contains(course);
         return ChoiceChip(
-          label: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(_courseDisplayName(course)),
-              if (isDetected) ...[
-                const SizedBox(width: 4),
-                Icon(Icons.auto_awesome, size: 14, color: theme.colorScheme.primary),
-              ],
-            ],
-          ),
+          label: Text(_courseDisplayName(course)),
           selected: isSelected,
           onSelected: (_) => setState(() => _selectedCourse = course),
           selectedColor: theme.colorScheme.primary.withOpacity(0.2),
+          showCheckmark: false,
         );
       }).toList(),
     );

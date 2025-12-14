@@ -2437,8 +2437,8 @@ class UrlRecipeImporter {
     if (allText.contains('breakfast') || allText.contains('brunch')) courses.add('Brunch');
     if (allText.contains('main') || allText.contains('dinner') || allText.contains('entrée')) courses.add('Mains');
     if (allText.contains('sauce') || allText.contains('dressing')) courses.add('Sauces');
-    if (allText.contains('drink') || allText.contains('cocktail') || allText.contains('beverage')) courses.add('drinks');
-    if (allText.contains('vegetarian') || allText.contains('vegan')) courses.add('vegn');
+    if (allText.contains('drink') || allText.contains('cocktail') || allText.contains('beverage')) courses.add('Drinks');
+    if (allText.contains('vegetarian') || allText.contains('vegan')) courses.add("Veg'n");
     
     // Always include Mains as default option
     if (courses.isEmpty) courses.add('Mains');
@@ -4445,7 +4445,7 @@ class UrlRecipeImporter {
       course = 'Desserts';
       courseConfidence = 0.7;
     } else if (_isSoupRecipe(titleLower, urlLower)) {
-      course = 'Soup';
+      course = 'Soups';
       courseConfidence = 0.75;
     } else if (_isSauceRecipe(titleLower, urlLower)) {
       course = 'Sauces';

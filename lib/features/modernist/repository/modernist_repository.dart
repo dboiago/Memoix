@@ -208,9 +208,10 @@ final modernistByTechniqueProvider = StreamProvider.family<List<ModernistRecipe>
   return ref.watch(modernistRepositoryProvider).watchByTechnique(technique);
 });
 
-/// Total count of modernist recipes
-final modernistCountProvider = FutureProvider<int>((ref) {
-  return ref.watch(modernistRepositoryProvider).getCount();
+/// Total count of modernist recipes (derived from stream for auto-update)
+final modernistCountProvider = Provider<AsyncValue<int>>((ref) {
+  final recipesAsync = ref.watch(allModernistRecipesProvider);
+  return recipesAsync.whenData((recipes) => recipes.length);
 });
 
 /// Unique techniques used in recipes

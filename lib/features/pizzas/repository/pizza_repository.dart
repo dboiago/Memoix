@@ -216,10 +216,10 @@ final favoritePizzasProvider = StreamProvider<List<Pizza>>((ref) {
   return repository.watchFavorites();
 });
 
-/// Get pizza count
-final pizzaCountProvider = FutureProvider<int>((ref) {
-  final repository = ref.watch(pizzaRepositoryProvider);
-  return repository.getPizzaCount();
+/// Get pizza count (derived from stream for auto-update)
+final pizzaCountProvider = Provider<AsyncValue<int>>((ref) {
+  final pizzasAsync = ref.watch(allPizzasProvider);
+  return pizzasAsync.whenData((pizzas) => pizzas.length);
 });
 
 /// Get pizza count by base

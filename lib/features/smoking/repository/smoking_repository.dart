@@ -103,9 +103,10 @@ final allSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {
   return repo.watchAll();
 });
 
-final smokingCountProvider = FutureProvider<int>((ref) async {
-  final repo = ref.watch(smokingRepositoryProvider);
-  return repo.getCount();
+/// Smoking recipe count (derived from stream for auto-update)
+final smokingCountProvider = Provider<AsyncValue<int>>((ref) {
+  final recipesAsync = ref.watch(allSmokingRecipesProvider);
+  return recipesAsync.whenData((recipes) => recipes.length);
 });
 
 final smokingRecipeByUuidProvider = FutureProvider.family<SmokingRecipe?, String>((ref, uuid) async {
