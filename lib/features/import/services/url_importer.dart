@@ -255,13 +255,11 @@ class UrlRecipeImporter {
       
       // Try to fetch and parse transcript/captions with timestamps
       List<TranscriptSegment> transcriptSegments = [];
-      String transcriptDebug = '';
       try {
-        final (segments, debug) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
+        final (segments, _) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
         transcriptSegments = segments;
-        transcriptDebug = debug;
-      } catch (e) {
-        transcriptDebug = 'outer exception: $e';
+      } catch (_) {
+        // Transcript fetch failed - will fall back to chapters or description
       }
       
       // Parse the description for ingredients
@@ -269,20 +267,16 @@ class UrlRecipeImporter {
       
       // Build directions from chapters + transcript
       List<String> directions = [];
-      String debugInfo = '';
       
       if (chapters.isNotEmpty && transcriptSegments.isNotEmpty) {
         // Use chapters to slice transcript into steps
         directions = _buildDirectionsFromChapters(chapters, transcriptSegments);
-        debugInfo = '[${chapters.length} chapters + $transcriptDebug]';
       } else if (chapters.isNotEmpty) {
         // Just use chapter titles if no transcript
         directions = chapters.map((c) => c.title).toList();
-        debugInfo = '[${chapters.length} chapters, transcript: $transcriptDebug]';
       } else {
         // Fall back to description parsing
         directions = parsedDescription['directions'] ?? [];
-        debugInfo = '[no chapters, transcript: $transcriptDebug]';
       }
       
       // Build ingredients list
@@ -299,7 +293,7 @@ class UrlRecipeImporter {
       final detectedCourse = _detectCourseFromTitle(recipeName);
       
       // Build notes with channel attribution
-      String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}\n$debugInfo';
+      String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
       if (parsedDescription['notes'] != null) {
         notes += '\n\n${parsedDescription["notes"]}';
       }
@@ -645,12 +639,20 @@ class UrlRecipeImporter {
     if (_isTimestampedStep(line)) {
       return false;
     }
+    // Exclude numbered direction steps like "1. Stir the flour" or "1) Mix ingredients"
+    if (RegExp(r'^\d+[.):]\s+[A-Za-z]').hasMatch(line)) {
+      return false;
+    }
     // Contains measurement units
     if (RegExp(r'\d+\s*(?:g|kg|oz|lb|cup|tbsp|tsp|ml|l|pound|gram|ounce|teaspoon|tablespoon)s?\b', caseSensitive: false).hasMatch(line)) {
       return true;
     }
-    // Starts with a number or fraction
-    if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(line)) {
+    // Starts with a number followed by a unit (not just a bare number which could be a step)
+    if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?\s*(?:cup|tbsp|tsp|oz|lb|g|kg|ml|l)s?\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Starts with a fraction like 1/4 or unicode fractions
+    if (RegExp(r'^(?:\d+\s+)?(?:\d+/\d+|[½¼¾⅓⅔⅛⅜⅝⅞])\s').hasMatch(line)) {
       return true;
     }
     // Baker's percentage format: "Flour, 100% – 600g" or "Water, 75%"
@@ -2153,7 +2155,30 @@ class UrlRecipeImporter {
         amount = '$amount $unit';
       }
       remaining = remaining.substring(compoundFractionMatch.end).trim();
-    } else {
+    }
+    
+    // Try standalone text fraction like "1/4 tsp" (without whole number)
+    if (amount == null) {
+      final textFractionMatch = RegExp(
+        r'^(\d+/\d+)'
+        r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      
+      if (textFractionMatch != null) {
+        var fraction = textFractionMatch.group(1) ?? '';
+        final unit = textFractionMatch.group(2)?.trim() ?? '';
+        // Convert text fractions to unicode
+        fraction = _fractionMap[fraction] ?? fraction;
+        amount = fraction;
+        if (unit.isNotEmpty) {
+          amount = '$amount $unit';
+        }
+        remaining = remaining.substring(textFractionMatch.end).trim();
+      }
+    }
+    
+    if (amount == null) {
       // Original pattern for simple amounts and ranges
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
