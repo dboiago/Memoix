@@ -2997,7 +2997,7 @@ class UrlRecipeImporter {
       }
       
       if (totalMinutes > 0) {
-        timing = _normalizeTimeString(totalMinutes);
+        timing = '${totalMinutes} min';
       }
     }
     
