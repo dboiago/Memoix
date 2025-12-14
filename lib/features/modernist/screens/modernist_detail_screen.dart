@@ -140,6 +140,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 onSelected: (value) => _handleMenuAction(value, recipe),
                 itemBuilder: (_) => [
                   const PopupMenuItem(value: 'edit', child: Text('Edit')),
+                  const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
                   PopupMenuItem(
                     value: 'delete',
                     child: Text(
@@ -796,6 +797,42 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           );
   }
 
+  void _duplicateRecipe(ModernistRecipe recipe) async {
+    final repo = ref.read(modernistRepositoryProvider);
+    final newRecipe = ModernistRecipe.create(
+      uuid: '',  // Will be generated on save
+      name: '${recipe.name} (Copy)',
+      type: recipe.type,
+      technique: recipe.technique,
+      serves: recipe.serves,
+      time: recipe.time,
+      equipment: List.from(recipe.equipment),
+      ingredients: recipe.ingredients.map((i) => 
+        ModernistIngredient.create(
+          name: i.name,
+          amount: i.amount,
+          unit: i.unit,
+          notes: i.notes,
+          section: i.section,
+        ),
+      ).toList(),
+      directions: List.from(recipe.directions),
+      notes: recipe.notes,
+      scienceNotes: recipe.scienceNotes,
+      source: ModernistSource.personal,
+      headerImage: recipe.headerImage,
+      stepImages: List.from(recipe.stepImages),
+      stepImageMap: List.from(recipe.stepImageMap),
+    );
+    
+    await repo.save(newRecipe);
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Created copy: ${newRecipe.name}')),
+      );
+    }
+  }
+
   void _handleMenuAction(String action, ModernistRecipe recipe) async {
     switch (action) {
       case 'edit':
@@ -806,6 +843,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           ),
         );
         ref.invalidate(modernistRecipeProvider(widget.recipeId));
+        break;
+      case 'duplicate':
+        _duplicateRecipe(recipe);
         break;
       case 'delete':
         final confirm = await showDialog<bool>(

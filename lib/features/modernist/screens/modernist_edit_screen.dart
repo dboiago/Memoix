@@ -237,8 +237,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Header image picker (single image at top)
-            _buildHeaderImagePicker(theme),
+            // Image gallery (matches Mains pattern)
+            _buildImagePicker(theme),
             const SizedBox(height: 16),
 
             // Recipe name
@@ -576,35 +576,32 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
 
-    // Section header row (different styling)
+    // Section header row (different styling) - matches Mains pattern
     if (row.isSection) {
       return Container(
         key: key,
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: theme.colorScheme.secondaryContainer.withOpacity(0.3),
+          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
           border: isLast
               ? null
               : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
         ),
         child: Row(
           children: [
-            // Drag handle
+            // Drag handle for reordering (touch-friendly)
             ReorderableDragStartListener(
               index: index,
-              child: Icon(
-                Icons.drag_handle,
-                size: 20,
-                color: theme.colorScheme.outline,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                child: Icon(
+                  Icons.drag_indicator,
+                  size: 20,
+                  color: theme.colorScheme.outline,
+                ),
               ),
             ),
-            const SizedBox(width: 4),
-            // Section indicator icon
-            Icon(
-              Icons.label_important_outline,
-              size: 18,
-              color: theme.colorScheme.secondary,
-            ),
+            Icon(Icons.label_outline, size: 18, color: theme.colorScheme.primary),
             const SizedBox(width: 8),
             // Section name input
             Expanded(
@@ -619,10 +616,11 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                     fontStyle: FontStyle.italic,
                     color: theme.colorScheme.outline,
                   ),
+                  fillColor: theme.colorScheme.surface,
+                  filled: true,
                 ),
                 style: theme.textTheme.bodyMedium?.copyWith(
-                  fontWeight: FontWeight.w600,
-                  color: theme.colorScheme.secondary,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -660,16 +658,18 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Drag handle
+          // Drag handle for reordering (touch-friendly)
           ReorderableDragStartListener(
             index: index,
-            child: Icon(
-              Icons.drag_handle,
-              size: 20,
-              color: theme.colorScheme.outline,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+              child: Icon(
+                Icons.drag_indicator,
+                size: 20,
+                color: theme.colorScheme.outline,
+              ),
             ),
           ),
-          const SizedBox(width: 8),
 
           // Ingredient name
           SizedBox(
@@ -768,96 +768,308 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     );
   }
 
-  Widget _buildHeaderImagePicker(ThemeData theme) {
-    final hasImage = _headerImage != null && _headerImage!.isNotEmpty;
+  /// Get all images as a unified list (header first, then step images)
+  List<String> get _allImages {
+    final images = <String>[];
+    if (_headerImage != null && _headerImage!.isNotEmpty) {
+      images.add(_headerImage!);
+    }
+    images.addAll(_stepImages);
+    return images;
+  }
+
+  Widget _buildImagePicker(ThemeData theme) {
+    final hasImages = _allImages.isNotEmpty;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Header Image',
+          'Recipe Photos',
           style: theme.textTheme.titleSmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
         const SizedBox(height: 8),
-        if (hasImage)
-          Stack(
+        if (hasImages)
+          _buildImageGallery(theme)
+        else
+          _buildEmptyImagePicker(theme),
+      ],
+    );
+  }
+
+  Widget _buildEmptyImagePicker(ThemeData theme) {
+    return GestureDetector(
+      onTap: _showImageSourceDialog,
+      child: Container(
+        height: 180,
+        decoration: BoxDecoration(
+          color: theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: theme.colorScheme.outline.withOpacity(0.3),
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: _buildImageWidget(_headerImage!, width: double.infinity, height: 180),
+              Icon(
+                Icons.add_photo_alternate_outlined,
+                size: 48,
+                color: theme.colorScheme.onSurfaceVariant,
               ),
-              Positioned(
-                top: 8,
-                right: 8,
-                child: Row(
-                  children: [
-                    Material(
-                      color: theme.colorScheme.surface.withOpacity(0.9),
-                      borderRadius: BorderRadius.circular(20),
-                      child: InkWell(
-                        onTap: () => _pickHeaderImage(ImageSource.gallery),
-                        borderRadius: BorderRadius.circular(20),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: Icon(Icons.edit, size: 18, color: theme.colorScheme.onSurface),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Material(
-                      color: theme.colorScheme.surface.withOpacity(0.9),
-                      borderRadius: BorderRadius.circular(20),
-                      child: InkWell(
-                        onTap: () => setState(() => _headerImage = null),
-                        borderRadius: BorderRadius.circular(20),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: Icon(Icons.close, size: 18, color: theme.colorScheme.onSurface),
-                        ),
-                      ),
-                    ),
-                  ],
+              const SizedBox(height: 8),
+              Text(
+                'Tap to add photos',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
                 ),
               ),
             ],
-          )
-        else
-          GestureDetector(
-            onTap: () => _showHeaderImageSourceDialog(),
-            child: Container(
-              height: 180,
-              decoration: BoxDecoration(
-                color: theme.colorScheme.surfaceContainerHighest,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                  color: theme.colorScheme.outline.withOpacity(0.3),
-                ),
-              ),
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.add_photo_alternate_outlined,
-                      size: 48,
-                      color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildImageGallery(ThemeData theme) {
+    final images = _allImages;
+    return Column(
+      children: [
+        SizedBox(
+          height: 120,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: images.length + 1, // +1 for add button
+            itemBuilder: (context, index) {
+              if (index == images.length) {
+                // Add more button
+                return Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: GestureDetector(
+                    onTap: _showImageSourceDialog,
+                    child: Container(
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: theme.colorScheme.outline.withOpacity(0.3),
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.add,
+                            size: 32,
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            'Add',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'Tap to add header image',
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                );
+              }
+
+              return Padding(
+                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: _buildImageWidget(images[index], width: 100, height: 120),
+                    ),
+                    // Image number badge
+                    Positioned(
+                      top: 4,
+                      left: 4,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withOpacity(0.6),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text(
+                          '${index + 1}',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                    // Remove button
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: _imageActionButton(
+                        icon: Icons.close,
+                        onTap: () => _removeImage(index),
+                        theme: theme,
+                        size: 20,
                       ),
                     ),
                   ],
                 ),
-              ),
-            ),
+              );
+            },
           ),
+        ),
       ],
     );
+  }
+
+  Widget _imageActionButton({
+    required IconData icon,
+    required VoidCallback onTap,
+    required ThemeData theme,
+    double size = 20,
+  }) {
+    return Material(
+      color: theme.colorScheme.surface.withOpacity(0.9),
+      borderRadius: BorderRadius.circular(20),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: Padding(
+          padding: const EdgeInsets.all(4),
+          child: Icon(icon, size: size, color: theme.colorScheme.onSurface),
+        ),
+      ),
+    );
+  }
+
+  void _removeImage(int index) {
+    setState(() {
+      if (index == 0 && _headerImage != null && _headerImage!.isNotEmpty) {
+        // Removing header image
+        _headerImage = null;
+        // Shift first step image to header if available
+        if (_stepImages.isNotEmpty) {
+          _headerImage = _stepImages.removeAt(0);
+        }
+      } else {
+        // Removing a step image (adjust index for header)
+        final stepIndex = _headerImage != null && _headerImage!.isNotEmpty ? index - 1 : index;
+        if (stepIndex >= 0 && stepIndex < _stepImages.length) {
+          _stepImages.removeAt(stepIndex);
+        }
+      }
+    });
+  }
+
+  void _showImageSourceDialog() {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImage(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImage(ImageSource.gallery);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.collections),
+              title: const Text('Choose Multiple Photos'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickMultipleImages();
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.close),
+              title: const Text('Cancel'),
+              onTap: () => Navigator.pop(ctx),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickImage(ImageSource source) async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFile != null) {
+        final savedPath = await _saveImageToLocal(pickedFile.path);
+        setState(() {
+          // First image goes to header, rest go to stepImages
+          if (_headerImage == null || _headerImage!.isEmpty) {
+            _headerImage = savedPath;
+          } else {
+            _stepImages.add(savedPath);
+          }
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking image: $e')),
+        );
+      }
+    }
+  }
+
+  Future<void> _pickMultipleImages() async {
+    try {
+      final picker = ImagePicker();
+      final pickedFiles = await picker.pickMultiImage(
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFiles.isNotEmpty) {
+        for (final file in pickedFiles) {
+          final savedPath = await _saveImageToLocal(file.path);
+          setState(() {
+            // First image goes to header, rest go to stepImages
+            if (_headerImage == null || _headerImage!.isEmpty) {
+              _headerImage = savedPath;
+            } else {
+              _stepImages.add(savedPath);
+            }
+          });
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking images: $e')),
+        );
+      }
+    }
   }
 
   Widget _buildDirectionsSection(ThemeData theme) {
@@ -1209,65 +1421,6 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           child: const Center(child: Icon(Icons.broken_image, size: 32)),
         ),
       );
-    }
-  }
-
-  void _showHeaderImageSourceDialog() {
-    showModalBottomSheet(
-      context: context,
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.camera_alt),
-              title: const Text('Take Photo'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickHeaderImage(ImageSource.camera);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.photo_library),
-              title: const Text('Choose from Gallery'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickHeaderImage(ImageSource.gallery);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.close),
-              title: const Text('Cancel'),
-              onTap: () => Navigator.pop(ctx),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Future<void> _pickHeaderImage(ImageSource source) async {
-    try {
-      final picker = ImagePicker();
-      final pickedFile = await picker.pickImage(
-        source: source,
-        maxWidth: 1200,
-        maxHeight: 1200,
-        imageQuality: 85,
-      );
-
-      if (pickedFile != null) {
-        final savedPath = await _saveImageToLocal(pickedFile.path);
-        setState(() {
-          _headerImage = savedPath;
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking image: $e')),
-        );
-      }
     }
   }
 
