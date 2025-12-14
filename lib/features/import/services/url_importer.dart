@@ -3193,6 +3193,9 @@ class UrlRecipeImporter {
       notes = 'Equipment: ${equipmentItems.join(', ')}';
     }
     
+    // Extract image from schema.org markup, og:image, or common recipe image selectors
+    String? imageUrl = _extractImageFromHtml(document);
+    
     // Set confidence for optional fields when they have values
     final timeConfidence = timing != null && timing.isNotEmpty 
         ? (usedStructuredFormat ? 0.9 : 0.7) 
@@ -3206,6 +3209,7 @@ class UrlRecipeImporter {
       course: course,
       subcategory: subcategory,
       serves: yield,
+      imageUrl: imageUrl,
       time: timing,
       ingredients: ingredients,
       directions: rawDirections,
@@ -3367,39 +3371,98 @@ class UrlRecipeImporter {
   /// Detects patterns like "Ingredients for Sauce:" as section headers
   List<String> _processIngredientListItems(List<String> items) {
     final processed = <String>[];
-    bool isFirstSection = true;
+    bool seenAnySectionHeader = false;
+    bool seenAnyIngredients = false;
     
     for (final item in items) {
-      // Check if this is a section header (ends with colon, starts with "Ingredients" or "For")
-      final sectionHeaderMatch = RegExp(
+      // Check if this is a section header - must:
+      // 1. End with colon
+      // 2. Not contain numbers (which would indicate an amount)
+      // 3. Not be too long (section headers are typically short)
+      // 4. Optionally start with "Ingredients" or "For"
+      final isLikelySectionHeader = item.endsWith(':') && 
+          !RegExp(r'\d').hasMatch(item) &&  // No numbers
+          item.length < 60 &&  // Not too long
+          !RegExp(r',\s').hasMatch(item);  // No commas (which indicate ingredient lists)
+      
+      final sectionHeaderMatch = isLikelySectionHeader ? RegExp(
         r'^(?:Ingredients?\s+(?:for\s+)?|For\s+(?:the\s+)?)?(.+?)[:]\s*$',
         caseSensitive: false,
-      ).firstMatch(item);
+      ).firstMatch(item) : null;
       
-      // Also check for bold-style headers like "[Black Garlic Honey]" after stripping formatting
-      final boldHeaderMatch = RegExp(
-        r'^(?:Ingredients?\s+)?([A-Z][^:]*?):\s*$',
-        caseSensitive: false,
-      ).firstMatch(item);
-      
-      if (sectionHeaderMatch != null || boldHeaderMatch != null) {
-        final match = sectionHeaderMatch ?? boldHeaderMatch;
-        final sectionName = match?.group(1)?.trim() ?? item;
+      if (sectionHeaderMatch != null) {
+        final sectionName = sectionHeaderMatch.group(1)?.trim() ?? item;
         
-        // Skip the first section (it becomes the default ingredient list)
-        // Only add section markers for subsequent sections
-        if (isFirstSection) {
-          isFirstSection = false;
-          // Don't add anything - first section is default
+        // Only skip the first section header if it appears BEFORE any ingredients
+        // If we've already seen ingredients, this is a new section and should be marked
+        if (!seenAnySectionHeader && !seenAnyIngredients) {
+          seenAnySectionHeader = true;
+          // Don't add anything - first section header is the default
         } else {
           processed.add('[${_capitalise(sectionName)}]');
         }
       } else if (item.isNotEmpty) {
+        seenAnyIngredients = true;
         processed.add(item);
       }
     }
     
     return processed;
+  }
+  
+  /// Extract recipe image from HTML document
+  /// Checks schema.org markup, Open Graph meta tags, and common recipe image selectors
+  String? _extractImageFromHtml(dynamic document) {
+    // 1. Try schema.org Recipe image (itemprop="image")
+    final schemaImg = document.querySelector('[itemscope][itemtype*="Recipe"] [itemprop="image"]');
+    if (schemaImg != null) {
+      // Could be an img tag with src, or a meta tag with content
+      final src = schemaImg.attributes['src'] ?? schemaImg.attributes['content'];
+      if (src != null && src.isNotEmpty) return src;
+    }
+    
+    // 2. Try itemprop="image" directly (without parent scope check)
+    final itempropImg = document.querySelector('[itemprop="image"]');
+    if (itempropImg != null) {
+      final src = itempropImg.attributes['src'] ?? itempropImg.attributes['content'];
+      if (src != null && src.isNotEmpty) return src;
+    }
+    
+    // 3. Try Open Graph image meta tag
+    final ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage != null) {
+      final content = ogImage.attributes['content'];
+      if (content != null && content.isNotEmpty) return content;
+    }
+    
+    // 4. Try Twitter card image
+    final twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage != null) {
+      final content = twitterImage.attributes['content'];
+      if (content != null && content.isNotEmpty) return content;
+    }
+    
+    // 5. Try common recipe image class selectors
+    final commonSelectors = [
+      '.recipe-image img',
+      '.recipe-photo img',
+      '.wprm-recipe-image img',
+      '.tasty-recipes-image img',
+      '.snippet-image img',
+      'article img',
+    ];
+    
+    for (final selector in commonSelectors) {
+      final img = document.querySelector(selector);
+      if (img != null) {
+        final src = img.attributes['src'];
+        if (src != null && src.isNotEmpty && !src.contains('icon') && !src.contains('logo')) {
+          return src;
+        }
+      }
+    }
+    
+    return null;
   }
   
   /// Parse directions by looking for step-based structure (h3 headings or numbered sections)
