@@ -3540,64 +3540,70 @@ class UrlRecipeImporter {
     }
     
     // Check for AmazingFoodMadeEasy format EARLY - uses ingredient_dish_header for sections
-    // This is a specific format that should be prioritized to preserve section headers
+    // Structure: ul.ingredient_list > li.category > h3.ingredient_dish_header for headers
+    //            ul.ingredient_list > li.ingredient for ingredient items
     if (rawIngredientStrings.isEmpty) {
-      final sectionHeaders = document.querySelectorAll('.ingredient_dish_header');
-      if (sectionHeaders.isNotEmpty) {
+      final ingredientList = document.querySelector('.ingredient_list, ul.ingredient_list');
+      if (ingredientList != null) {
         usedStructuredFormat = true;
         
-        // Get all ingredient list items 
-        final allIngredientItems = document.querySelectorAll('li.ingredient');
-        
-        // Process each section header and find its associated ingredients
-        for (final header in sectionHeaders) {
-          final sectionText = _decodeHtml((header.text ?? '').trim());
-          if (sectionText.isNotEmpty) {
-            // Add section header marker
-            rawIngredientStrings.add('[$sectionText]');
-          }
+        // Iterate through all direct li children
+        final allLiItems = ingredientList.querySelectorAll('li');
+        for (final li in allLiItems) {
+          final liClasses = li.attributes['class'] ?? '';
           
-          // Find the ul/ol that follows this header (sibling or next element)
-          var sibling = header.nextElementSibling;
-          while (sibling != null) {
-            final tagName = sibling.localName?.toLowerCase() ?? '';
-            
-            // Stop if we hit another section header
-            if (sibling.classes.contains('ingredient_dish_header')) break;
-            
-            // Found a list - extract ingredients
-            if (tagName == 'ul' || tagName == 'ol') {
-              final listItems = sibling.querySelectorAll('li');
-              for (final li in listItems) {
-                final text = _decodeHtml((li.text ?? '').trim());
-                if (text.isNotEmpty) {
-                  rawIngredientStrings.add(text);
+          // Check if this li contains an ingredient_dish_header (category row)
+          if (liClasses.contains('category')) {
+            final headerElem = li.querySelector('.ingredient_dish_header, h3');
+            if (headerElem != null) {
+              final sectionText = _decodeHtml((headerElem.text ?? '').trim());
+              if (sectionText.isNotEmpty) {
+                // Remove "For the " prefix if present
+                var sectionName = sectionText;
+                final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
+                if (forTheMatch != null) {
+                  sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
                 }
+                rawIngredientStrings.add('[$sectionName]');
               }
-              break; // Found the list for this section
             }
-            
-            sibling = sibling.nextElementSibling;
+          }
+          // Check if this is an ingredient item
+          else if (liClasses.contains('ingredient')) {
+            final text = _decodeHtml((li.text ?? '').trim());
+            if (text.isNotEmpty) {
+              rawIngredientStrings.add(text);
+            }
           }
         }
+      }
+      
+      // Fallback: Query for ingredient_dish_header and li.ingredient separately in document order
+      if (rawIngredientStrings.isEmpty) {
+        final sectionHeaders = document.querySelectorAll('.ingredient_dish_header');
+        final allIngredientItems = document.querySelectorAll('li.ingredient');
         
-        // If we didn't find ingredients via sibling traversal, try getting all li.ingredient
-        if (rawIngredientStrings.length <= sectionHeaders.length && allIngredientItems.isNotEmpty) {
-          rawIngredientStrings.clear();
+        if (sectionHeaders.isNotEmpty || allIngredientItems.isNotEmpty) {
+          usedStructuredFormat = true;
           
-          // Re-process: interleave section headers with their ingredients based on document order
-          // This is a fallback - walk the DOM in order
-          final allElements = document.querySelectorAll('.ingredient_dish_header, li.ingredient, .ingredient');
+          // Get all elements in document order by querying both together
+          final allElements = document.querySelectorAll('.ingredient_dish_header, li.ingredient');
           
           for (final elem in allElements) {
-            final classes = elem.classes ?? [];
+            final elemClass = elem.attributes['class'] ?? '';
             final text = _decodeHtml((elem.text ?? '').trim());
             
             if (text.isEmpty) continue;
             
-            if (classes.contains('ingredient_dish_header')) {
-              rawIngredientStrings.add('[$text]');
-            } else if (classes.contains('ingredient')) {
+            if (elemClass.contains('ingredient_dish_header')) {
+              // Remove "For the " prefix if present
+              var sectionName = text;
+              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
+              if (forTheMatch != null) {
+                sectionName = forTheMatch.group(1)?.trim() ?? text;
+              }
+              rawIngredientStrings.add('[$sectionName]');
+            } else if (elemClass.contains('ingredient')) {
               rawIngredientStrings.add(text);
             }
           }
