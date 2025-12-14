@@ -490,10 +490,15 @@ class UrlRecipeImporter {
             ingredients.add(line);
           } else if (looksLikeDir) {
             directions.add(_cleanDirectionLine(line));
-          } else if (line.length > 20 && !looksLikeIng) {
-            // Long line that's not an ingredient - probably intro/description
-            // Don't add random long lines as directions
-            notes.add(line);
+          } else if (_isTimestampedStep(line)) {
+            // Timestamped step - extract the title
+            directions.add(_cleanDirectionLine(line));
+          } else if (line.length > 10 && line.length < 80 && !looksLikeIng) {
+            // Medium-length line in directions section - could be a step description
+            // Only add if it doesn't look like intro text
+            if (!line.contains('...') && !line.endsWith('!')) {
+              directions.add(_cleanDirectionLine(line));
+            }
           }
           break;
         case 'notes':
