@@ -2618,6 +2618,13 @@ class UrlRecipeImporter {
   List<Ingredient> _sortIngredientsByQuantity(List<Ingredient> ingredients) {
     if (ingredients.isEmpty) return ingredients;
     
+    // Don't sort if there are section headers - preserve original order
+    // Section headers are ingredients with empty name but non-null section
+    final hasSectionHeaders = ingredients.any((i) => i.name.isEmpty && i.section != null);
+    if (hasSectionHeaders) {
+      return ingredients; // Preserve original order when sections are present
+    }
+    
     // Group by section
     final Map<String?, List<Ingredient>> sections = {};
     for (final ing in ingredients) {
