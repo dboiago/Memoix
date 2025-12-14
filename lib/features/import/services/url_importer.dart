@@ -815,6 +815,7 @@ class UrlRecipeImporter {
       final formats = ['', 'fmt=srv3', 'fmt=json3'];
       String? successBody;
       String usedFormat = '';
+      String lastError = '';
       
       for (final fmt in formats) {
         final url = fmt.isEmpty 
@@ -835,14 +836,19 @@ class UrlRecipeImporter {
             successBody = response.body;
             usedFormat = fmt.isEmpty ? 'default' : fmt;
             break;
+          } else {
+            lastError = 'status=${response.statusCode}, len=${response.body.length}';
           }
-        } catch (_) {
+        } catch (e) {
+          lastError = 'err: ${e.toString().length > 30 ? e.toString().substring(0, 30) : e.toString()}';
           continue;
         }
       }
       
       if (successBody == null || successBody.isEmpty) {
-        return (<TranscriptSegment>[], 'all caption formats failed ($matchedType)');
+        // Show part of the URL to help debug
+        final urlSample = captionUrl.length > 80 ? '${captionUrl.substring(0, 80)}...' : captionUrl;
+        return (<TranscriptSegment>[], 'formats failed ($matchedType, $lastError). URL: $urlSample');
       }
       
       // Parse transcript - try XML first, then JSON
