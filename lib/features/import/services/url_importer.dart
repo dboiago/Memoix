@@ -856,10 +856,10 @@ class UrlRecipeImporter {
       ).allMatches(xml);
     }
     
-    // Pattern 3: Handle quotes as either double or single
+    // Pattern 3: More permissive - any text element with start attribute
     if (textMatches.isEmpty) {
       textMatches = RegExp(
-        r"<text[^>]+start=[\"']([^\"']+)[\"'][^>]*>([^<]*)",
+        r'<text[^>]*start="(\d+\.?\d*)"[^>]*>(.*?)</text>',
         dotAll: true,
       ).allMatches(xml);
     }
