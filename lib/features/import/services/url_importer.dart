@@ -3798,40 +3798,6 @@ class UrlRecipeImporter {
       }
     }
     
-    // AmazingFoodMadeEasy and similar sites use ingredient_dish_header for section headers
-    // Combined with li.ingredient for ingredient items
-    if (rawIngredientStrings.isEmpty) {
-      // Query both section headers and ingredients, then process in document order
-      final sectionHeadersAndIngredients = document.querySelectorAll('.ingredient_dish_header, h3.ingredient_dish_header, li.ingredient');
-      
-      if (sectionHeadersAndIngredients.isNotEmpty) {
-        for (final elem in sectionHeadersAndIngredients) {
-          final tagName = elem.localName?.toLowerCase() ?? '';
-          final classes = elem.classes ?? [];
-          
-          // Check if this is a section header
-          if (classes.contains('ingredient_dish_header') || 
-              (tagName == 'h3' && classes.contains('ingredient_dish_header'))) {
-            final sectionText = _decodeHtml((elem.text ?? '').trim());
-            if (sectionText.isNotEmpty) {
-              // Add section header marker
-              rawIngredientStrings.add('[$sectionText]');
-            }
-          } else if (tagName == 'li' && classes.contains('ingredient')) {
-            // This is an ingredient
-            final text = _decodeHtml((elem.text ?? '').trim());
-            if (text.isNotEmpty) {
-              rawIngredientStrings.add(text);
-            }
-          }
-        }
-        
-        if (rawIngredientStrings.isNotEmpty) {
-          usedStructuredFormat = true;
-        }
-      }
-    }
-    
     // If still empty, try standard selectors
     if (rawIngredientStrings.isEmpty) {
       final ingredientElements = document.querySelectorAll(
@@ -5263,6 +5229,7 @@ class UrlRecipeImporter {
     final directionSelectors = [
       '.recipe-instructions img',
       '.instructions img',
+      '.instructions img.body_image', // AmazingFoodMadeEasy
       '.directions img',
       '.recipe-procedure img',
       '[itemprop="recipeInstructions"] img',
@@ -5282,9 +5249,10 @@ class UrlRecipeImporter {
       final imgElements = document.querySelectorAll(selector);
       for (final img in imgElements) {
         // Get the src, checking data-src for lazy-loaded images too
-        var src = img.attributes['src'] ?? 
-                  img.attributes['data-src'] ?? 
-                  img.attributes['data-lazy-src'];
+        // Prefer data-src (full quality) over src (low quality placeholder)
+        var src = img.attributes['data-src'] ?? 
+                  img.attributes['data-lazy-src'] ??
+                  img.attributes['src'];
         
         if (src == null || src.isEmpty) continue;
         
@@ -5294,7 +5262,8 @@ class UrlRecipeImporter {
             src.contains('avatar') ||
             src.contains('emoji') ||
             src.contains('1x1') ||
-            src.contains('pixel')) continue;
+            src.contains('pixel') ||
+            src.contains('low_quality')) continue; // Skip low quality placeholders
         
         // Skip if we've already seen this URL
         final resolvedUrl = resolveUrl(src);
@@ -5303,6 +5272,27 @@ class UrlRecipeImporter {
         
         images.add(resolvedUrl);
       }
+    }
+    
+    // AmazingFoodMadeEasy: Look for a.image_href anchors with S3 URLs
+    try {
+      final imageHrefAnchors = document.querySelectorAll('a.image_href, .instructions a[href*="s3.amazonaws.com"]');
+      for (final anchor in imageHrefAnchors) {
+        final href = anchor.attributes['href'];
+        if (href != null && href.isNotEmpty) {
+          final resolvedUrl = resolveUrl(href);
+          // Check if it's an image URL
+          final lower = resolvedUrl.toLowerCase();
+          if (lower.contains('.jpg') || lower.contains('.jpeg') || lower.contains('.png') || lower.contains('.webp')) {
+            if (!seenUrls.contains(resolvedUrl)) {
+              seenUrls.add(resolvedUrl);
+              images.add(resolvedUrl);
+            }
+          }
+        }
+      }
+    } catch (_) {
+      // Selector not supported
     }
     
     // Also look for images in anchor tags within content (common pattern)
