@@ -3719,12 +3719,18 @@ class UrlRecipeImporter {
           final end = (match.end + 50).clamp(0, bodyText.length);
           var snippet = bodyText.substring(start, end).trim();
           
+          // Skip if too short
+          if (snippet.length < 5) continue;
+          
           // Clean up - stop at newline or next measurement
           final newlineIdx = snippet.indexOf('\n');
           if (newlineIdx > 0 && newlineIdx < 60) snippet = snippet.substring(0, newlineIdx);
           
-          final nextGramIdx = snippet.indexOf(RegExp(r'\d+g', caseSensitive: false), 5);
-          if (nextGramIdx > 0 && nextGramIdx < 60) snippet = snippet.substring(0, nextGramIdx);
+          // Only look for next gram if snippet is long enough
+          if (snippet.length > 5) {
+            final nextGramIdx = snippet.indexOf(RegExp(r'\d+g', caseSensitive: false), 5);
+            if (nextGramIdx > 0 && nextGramIdx < 60) snippet = snippet.substring(0, nextGramIdx);
+          }
           
           snippet = _decodeHtml(snippet.trim());
           
