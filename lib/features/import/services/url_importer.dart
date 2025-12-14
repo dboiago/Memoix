@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io' show gzip;
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
@@ -285,18 +286,41 @@ class UrlRecipeImporter {
     }
   }
   
-  /// Decode HTTP response body handling encoding errors gracefully
+  /// Decode HTTP response body handling encoding errors and compression gracefully
   String _decodeResponseBody(http.Response response) {
+    var bytes = response.bodyBytes;
+    
+    // Check if response is gzip compressed (either by header or by magic bytes)
+    final contentEncoding = response.headers['content-encoding']?.toLowerCase() ?? '';
+    final isGzipHeader = contentEncoding.contains('gzip');
+    // Gzip magic bytes: 0x1f 0x8b
+    final isGzipMagic = bytes.length >= 2 && bytes[0] == 0x1f && bytes[1] == 0x8b;
+    
+    if (isGzipHeader || isGzipMagic) {
+      try {
+        bytes = gzip.decode(bytes) as List<int>;
+      } catch (_) {
+        // If decompression fails, try with original bytes
+      }
+    }
+    
+    // Check for brotli (we can't decode it, but detect it for better error messages)
+    final isBrotli = contentEncoding.contains('br');
+    if (isBrotli && bytes.length >= 2 && !(bytes[0] == 0x3c || bytes[0] == 0x0a || bytes[0] == 0x20)) {
+      // Brotli compressed - try to request without compression
+      // For now, just try to decode what we have
+    }
+    
     try {
-      // Try automatic decoding (handles Content-Type charset)
-      return response.body;
+      // Try UTF-8 decoding
+      return utf8.decode(bytes, allowMalformed: true);
     } catch (_) {
       try {
-        // Try UTF-8 with malformed character tolerance
-        return utf8.decode(response.bodyBytes, allowMalformed: true);
+        // Try automatic decoding (handles Content-Type charset)
+        return response.body;
       } catch (_) {
         // Last resort: use Latin-1 (never fails, but may produce wrong characters)
-        return latin1.decode(response.bodyBytes);
+        return latin1.decode(bytes);
       }
     }
   }
