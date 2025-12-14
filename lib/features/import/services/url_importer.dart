@@ -317,11 +317,8 @@ class UrlRecipeImporter {
         }
       }
       
-      // Build notes with channel attribution (include debug for now)
+      // Build notes with channel attribution
       String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
-      if (chapters.isNotEmpty || transcriptSegments.isNotEmpty) {
-        notes += '\n[${chapters.length} ch, $transcriptDebug]';
-      }
       if (parsedDescription['notes'] != null) {
         notes += '\n\n${parsedDescription["notes"]}';
       }
