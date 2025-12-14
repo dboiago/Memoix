@@ -822,9 +822,12 @@ class UrlRecipeImporter {
       }
       
       // Parse XML transcript with timestamps
-      final segments = _parseTranscriptXmlWithTimestamps(captionResponse.body);
+      final xmlBody = captionResponse.body;
+      final segments = _parseTranscriptXmlWithTimestamps(xmlBody);
       if (segments.isEmpty) {
-        return (<TranscriptSegment>[], 'XML parsed but no segments found ($matchedType)');
+        // Include a sample of the XML to help debug
+        final sample = xmlBody.length > 200 ? xmlBody.substring(0, 200) : xmlBody;
+        return (<TranscriptSegment>[], 'no segments ($matchedType). XML sample: $sample');
       }
       
       return (segments, '$matchedType: ${segments.length} segments');
@@ -837,8 +840,30 @@ class UrlRecipeImporter {
   List<TranscriptSegment> _parseTranscriptXmlWithTimestamps(String xml) {
     final segments = <TranscriptSegment>[];
     
-    // Extract text elements with their start times
-    final textMatches = RegExp(r'<text\s+start="([^"]+)"[^>]*>([^<]*)</text>').allMatches(xml);
+    // Try multiple regex patterns to handle different YouTube XML formats
+    
+    // Pattern 1: Standard format <text start="123.45" dur="1.23">content</text>
+    var textMatches = RegExp(
+      r'<text\s+start="([^"]+)"[^>]*>(.*?)</text>',
+      dotAll: true,
+    ).allMatches(xml);
+    
+    // Pattern 2: If attributes are in different order or format
+    if (textMatches.isEmpty) {
+      textMatches = RegExp(
+        r'<text[^>]*\sstart="([^"]+)"[^>]*>(.*?)</text>',
+        dotAll: true,
+      ).allMatches(xml);
+    }
+    
+    // Pattern 3: Handle self-closing or empty text elements differently
+    if (textMatches.isEmpty) {
+      // Try to find any text elements at all
+      textMatches = RegExp(
+        r'<text[^>]+start=["\']([^"\']+)["\'][^>]*>([^<]*)',
+        dotAll: true,
+      ).allMatches(xml);
+    }
     
     for (final match in textMatches) {
       final startStr = match.group(1) ?? '0';
