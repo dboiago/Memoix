@@ -439,6 +439,10 @@ class UrlRecipeImporter {
       } else if (_isIgnorableSection(lowerLine)) {
         currentSection = 'ignore';
         continue;
+      } else if (_isTimestampSectionHeader(lowerLine)) {
+        // Timestamps/Chapters section typically contains step-by-step directions
+        currentSection = 'directions';
+        continue;
       }
       
       // Skip links, timestamps, and other non-content lines
@@ -536,7 +540,12 @@ class UrlRecipeImporter {
   }
   
   bool _isIgnorableSection(String line) {
-    return RegExp(r'^(follow me|subscribe|social|links?|connect|my (?:gear|equipment|kitchen|tools|setup|camera)|affiliate|music|credits?|chapters?|timestamps?|shop|merch|merchandise|sponsors?|business|contact|about me|faq|disclaimer)[:\s]*$', caseSensitive: false).hasMatch(line);
+    return RegExp(r'^(follow me|subscribe|social|links?|connect|my (?:gear|equipment|kitchen|tools|setup|camera)|affiliate|music|credits?|shop|merch|merchandise|sponsors?|business|contact|about me|faq|disclaimer)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  /// Check if line is a timestamps/chapters section header (contains directions)
+  bool _isTimestampSectionHeader(String line) {
+    return RegExp(r'^(chapters?|timestamps?)[:\s]*$', caseSensitive: false).hasMatch(line);
   }
   
   bool _isIgnorableLine(String line) {

@@ -444,7 +444,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     return Card(
       child: Column(
         children: [
-          // Select/Deselect all
+          // Header row with select all controls
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
@@ -470,48 +470,120 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             ),
           ),
           const Divider(height: 1),
+          // Column headers
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Row(
+              children: [
+                const SizedBox(width: 24), // Checkbox space
+                const SizedBox(width: 8),
+                Expanded(
+                  flex: 3,
+                  child: Text('Ingredient', 
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                SizedBox(
+                  width: 80,
+                  child: Text('Amount', 
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  flex: 2,
+                  child: Text('Notes/Prep', 
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const Divider(height: 1),
+          // Ingredient rows
           ...result.rawIngredients.asMap().entries.map((entry) {
             final index = entry.key;
             final ingredient = entry.value;
             final isSelected = _selectedIngredientIndices.contains(index);
-            
-            // Build display text: amount + name or just original
-            String displayText;
-            String? subtitleText;
-            if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-              displayText = '${ingredient.amount} ${ingredient.unit ?? ''}'.trim();
-              subtitleText = ingredient.name;
-            } else {
-              displayText = ingredient.original;
-              subtitleText = null;
-            }
 
-            return CheckboxListTile(
-              value: isSelected,
-              onChanged: (checked) {
+            return InkWell(
+              onTap: () {
                 setState(() {
-                  if (checked == true) {
-                    _selectedIngredientIndices.add(index);
-                  } else {
+                  if (isSelected) {
                     _selectedIngredientIndices.remove(index);
+                  } else {
+                    _selectedIngredientIndices.add(index);
                   }
                 });
               },
-              title: Text(
-                displayText,
-                style: TextStyle(
-                  decoration: isSelected ? null : TextDecoration.lineThrough,
-                  color: isSelected ? null : theme.colorScheme.outline,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  border: index < result.rawIngredients.length - 1
+                      ? Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2)))
+                      : null,
+                ),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 24,
+                      child: Checkbox(
+                        value: isSelected,
+                        onChanged: (checked) {
+                          setState(() {
+                            if (checked == true) {
+                              _selectedIngredientIndices.add(index);
+                            } else {
+                              _selectedIngredientIndices.remove(index);
+                            }
+                          });
+                        },
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      flex: 3,
+                      child: Text(
+                        ingredient.name,
+                        style: TextStyle(
+                          decoration: isSelected ? null : TextDecoration.lineThrough,
+                          color: isSelected ? null : theme.colorScheme.outline,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    SizedBox(
+                      width: 80,
+                      child: Text(
+                        ingredient.amount ?? '',
+                        style: TextStyle(
+                          decoration: isSelected ? null : TextDecoration.lineThrough,
+                          color: isSelected ? null : theme.colorScheme.outline,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      flex: 2,
+                      child: Text(
+                        ingredient.unit ?? '',
+                        style: TextStyle(
+                          fontSize: 13,
+                          decoration: isSelected ? null : TextDecoration.lineThrough,
+                          color: isSelected ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.outline,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              subtitle: subtitleText != null
-                  ? Text(
-                      subtitleText,
-                      style: theme.textTheme.bodySmall,
-                    )
-                  : null,
-              dense: true,
-              controlAffinity: ListTileControlAffinity.leading,
             );
           }),
         ],
