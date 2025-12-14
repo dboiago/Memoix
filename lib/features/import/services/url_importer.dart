@@ -2932,12 +2932,15 @@ class UrlRecipeImporter {
     List<String> equipmentItems = [];
     String? yield;
     String? timing;
+    bool usedStructuredFormat = false; // Flag for higher confidence when using structured recipe plugins
     
     // Check for "Cooked" recipe plugin format (WordPress plugin)
     // Uses classes like cooked-ing-amount, cooked-ing-name, cooked-dir-content
     final cookedIngredients = document.querySelectorAll('.cooked-single-ingredient.cooked-ingredient');
     
     if (cookedIngredients.isNotEmpty) {
+      usedStructuredFormat = true; // Cooked plugin provides reliable structured data
+      
       // Parse Cooked format ingredients
       for (final elem in cookedIngredients) {
         final amount = elem.querySelector('.cooked-ing-amount')?.text?.trim() ?? '';
@@ -3117,12 +3120,15 @@ class UrlRecipeImporter {
       }
     }
 
-    // Calculate confidence - HTML parsing is generally less reliable
-    final nameConfidence = title != null && title.isNotEmpty ? 0.7 : 0.0;
+    // Calculate confidence - structured formats (like Cooked plugin) are more reliable
+    final baseConfidence = usedStructuredFormat ? 0.85 : 0.7;
+    final nameConfidence = title != null && title.isNotEmpty ? baseConfidence : 0.0;
     final ingredientsConfidence = rawIngredientStrings.isNotEmpty 
-        ? (ingredients.length / rawIngredientStrings.length) * 0.6 
+        ? (ingredients.length / rawIngredientStrings.length) * baseConfidence 
         : 0.0;
-    final directionsConfidence = rawDirections.isNotEmpty ? 0.6 : 0.0;
+    final directionsConfidence = rawDirections.isNotEmpty 
+        ? (usedStructuredFormat ? 0.85 : 0.6) 
+        : 0.0;
 
     // Create raw ingredient data
     final rawIngredients = rawIngredientStrings.map((raw) {
@@ -3141,17 +3147,8 @@ class UrlRecipeImporter {
       );
     }).toList();
 
-    // Build detected courses list
-    final detectedCourses = <String>[];
-    if (isDrink) {
-      detectedCourses.add('Drinks');
-    }
-    if (course == 'molecular') {
-      detectedCourses.add('molecular');
-    }
-    if (detectedCourses.isEmpty) {
-      detectedCourses.add('Mains');
-    }
+    // Build detected courses list - include the course we detected
+    final detectedCourses = <String>[course];
 
     // Build notes from equipment if found
     String? notes;
