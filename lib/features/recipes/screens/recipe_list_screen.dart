@@ -300,31 +300,31 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   }
 
   String _displayCuisine(String raw) {
+    // Convert full names and 3-letter codes to 2-letter codes for display
+    // 2-letter codes should pass through unchanged
     const map = {
-      'Korea': 'Korean',
-      'Korean': 'Korean',
-      'KR': 'Korean',
-      'China': 'Chinese',
-      'Chinese': 'Chinese',
-      'CN': 'Chinese',
-      'Japan': 'Japanese',
-      'Japanese': 'Japanese',
-      'JP': 'Japanese',
-      'Spain': 'Spanish',
-      'ES': 'Spanish',
-      'France': 'French',
-      'FR': 'French',
-      'Italy': 'Italian',
-      'IT': 'Italian',
-      'Mexico': 'Mexican',
-      'Mexican': 'Mexican',
-      'MX': 'Mexican',
-      'United States': 'American',
-      'USA': 'American',
-      'US': 'American',
-      'North American': 'North American',
-      'CA': 'Canadian',
-      'Canada': 'Canadian',
+      // 3-letter and full names to 2-letter codes
+      'USA': 'US',
+      'United States': 'US',
+      'America': 'US',
+      'American': 'US',
+      'Korea': 'KR',
+      'Korean': 'KR',
+      'China': 'CN',
+      'Chinese': 'CN',
+      'Japan': 'JP',
+      'Japanese': 'JP',
+      'Spain': 'ES',
+      'Spanish': 'ES',
+      'France': 'FR',
+      'French': 'FR',
+      'Italy': 'IT',
+      'Italian': 'IT',
+      'Mexico': 'MX',
+      'Mexican': 'MX',
+      'Canada': 'CA',
+      'Canadian': 'CA',
+      'North American': 'US',
     };
     return map[raw] ?? raw;
   }

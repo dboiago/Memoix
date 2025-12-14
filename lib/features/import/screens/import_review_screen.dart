@@ -30,10 +30,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   late TextEditingController _nameController;
   late TextEditingController _servesController;
   late TextEditingController _timeController;
+  late TextEditingController _techniqueController;
 
   // Track selections
   String _selectedCourse = 'Mains';
   String? _selectedCuisine;
+  
+  // Modernist-specific fields
+  ModernistType _selectedModernistType = ModernistType.concept;
 
   // Sanitized ingredients list (removes empty/invalid entries)
   late List<RawIngredientData> _sanitizedIngredients;
@@ -52,6 +56,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _nameController = TextEditingController(text: result.name ?? '');
     _servesController = TextEditingController(text: result.serves ?? '');
     _timeController = TextEditingController(text: result.time ?? '');
+    _techniqueController = TextEditingController();
 
     _selectedCourse = result.course ?? 'Mains';
     _selectedCuisine = result.cuisine;
@@ -73,6 +78,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _nameController.dispose();
     _servesController.dispose();
     _timeController.dispose();
+    _techniqueController.dispose();
     super.dispose();
   }
 
@@ -125,12 +131,26 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           _buildCourseSelector(theme, result),
           const SizedBox(height: 24),
 
-          // Cuisine selection
-          _buildSectionTitle(theme, 'Cuisine', Icons.public,
-              confidence: result.cuisineConfidence,),
-          const SizedBox(height: 8),
-          _buildCuisineSelector(theme, result),
-          const SizedBox(height: 24),
+          // Cuisine OR Category/Technique based on course type
+          if (_selectedCourse.toLowerCase() == 'modernist') ...[
+            // Modernist: show Category (Concept/Technique) and Technique
+            _buildSectionTitle(theme, 'Category', Icons.science),
+            const SizedBox(height: 8),
+            _buildModernistCategorySelector(theme),
+            const SizedBox(height: 24),
+            
+            _buildSectionTitle(theme, 'Technique', Icons.precision_manufacturing),
+            const SizedBox(height: 8),
+            _buildModernistTechniqueSelector(theme),
+            const SizedBox(height: 24),
+          ] else ...[
+            // Regular recipes: show Cuisine
+            _buildSectionTitle(theme, 'Cuisine', Icons.public,
+                confidence: result.cuisineConfidence,),
+            const SizedBox(height: 8),
+            _buildCuisineSelector(theme, result),
+            const SizedBox(height: 24),
+          ],
 
           // Servings and time
           Row(
@@ -423,6 +443,72 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  /// Category selector for Modernist recipes (Concept/Technique)
+  Widget _buildModernistCategorySelector(ThemeData theme) {
+    return Row(
+      children: [
+        _buildModernistCategoryChip('Concept', ModernistType.concept, theme),
+        const SizedBox(width: 12),
+        _buildModernistCategoryChip('Technique', ModernistType.technique, theme),
+      ],
+    );
+  }
+
+  Widget _buildModernistCategoryChip(String label, ModernistType type, ThemeData theme) {
+    final isSelected = _selectedModernistType == type;
+
+    return GestureDetector(
+      onTap: () => setState(() => _selectedModernistType = type),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? theme.colorScheme.secondary.withOpacity(0.15)
+              : theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: isSelected
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.outline.withOpacity(0.3),
+            width: isSelected ? 1.5 : 1.0,
+          ),
+        ),
+        child: Text(
+          label,
+          style: theme.textTheme.bodyMedium?.copyWith(
+            color: isSelected
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.onSurface,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Technique selector for Modernist recipes (with autocomplete)
+  Widget _buildModernistTechniqueSelector(ThemeData theme) {
+    return Autocomplete<String>(
+      optionsBuilder: (value) =>
+          ModernistTechniques.getSuggestions(value.text),
+      initialValue: TextEditingValue(text: _techniqueController.text),
+      onSelected: (value) => _techniqueController.text = value,
+      fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+        controller.text = _techniqueController.text;
+        controller.addListener(() => _techniqueController.text = controller.text);
+        return TextField(
+          controller: controller,
+          focusNode: focusNode,
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            hintText: 'e.g., Spherification, Foams, Sous Vide',
+          ),
+          textCapitalization: TextCapitalization.words,
+        );
+      },
     );
   }
   
@@ -919,7 +1005,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Recipe'
           : _nameController.text.trim(),
-      type: ModernistType.concept,
+      type: _selectedModernistType,
+      technique: _techniqueController.text.trim().isEmpty
+          ? null
+          : _techniqueController.text.trim(),
       serves: _servesController.text.trim().isEmpty
           ? null
           : _servesController.text.trim(),
