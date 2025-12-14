@@ -265,16 +265,11 @@ class UrlRecipeImporter {
         if (rawSample.length > 80) rawSample = '${rawSample.substring(0, 80)}...';
       }
       
-      // DEBUG: Show first 800 chars of raw HTML to understand what server returns
-      final htmlPreview = body.length > 800 ? body.substring(0, 800) : body;
-      final cleanPreview = htmlPreview.replaceAll(RegExp(r'\s+'), ' ').trim();
-      
       String diagnostics = 'title:"$titlePreview", JSON-LD:$jsonLdCount, microdata:${hasMicrodata ? "yes" : "no"}, #ingredients:${hasIngredientById ? "yes" : "no"}, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
       diagnostics += ', rawH2:${rawHasH2 ? "yes" : "no"}, rawSchema:${rawHasSchema ? "yes" : "no"}';
       diagnostics += ', bullets:${hasBullets ? "yes" : "no"}, measurements:${hasMeasurements ? "yes" : "no"}';
       diagnostics += ', rawBullets:${rawHasBullets ? "yes" : "no"}, rawMeas:${rawHasMeasurements ? "yes" : "no"}';
       diagnostics += ', body=$bodyLength chars';
-      diagnostics += '. HTML_START: $cleanPreview';
       if (rawSample.isNotEmpty) diagnostics += '. Raw: "$rawSample"';
       
       throw Exception(
@@ -4188,15 +4183,21 @@ class UrlRecipeImporter {
     // Calculate confidence - structured formats (like Cooked plugin) are more reliable
     final baseConfidence = usedStructuredFormat ? 0.85 : 0.7;
     final nameConfidence = title != null && title.isNotEmpty ? baseConfidence : 0.0;
-    final ingredientsConfidence = rawIngredientStrings.isNotEmpty 
-        ? (ingredients.length / rawIngredientStrings.length) * baseConfidence 
+    
+    // Filter out empty or whitespace-only ingredient strings before processing
+    final filteredIngredientStrings = rawIngredientStrings
+        .where((s) => s.trim().isNotEmpty)
+        .toList();
+    
+    final ingredientsConfidence = filteredIngredientStrings.isNotEmpty 
+        ? (ingredients.length / filteredIngredientStrings.length) * baseConfidence 
         : 0.0;
     final directionsConfidence = rawDirections.isNotEmpty 
         ? (usedStructuredFormat ? 0.85 : 0.6) 
         : 0.0;
 
     // Create raw ingredient data, filtering out empty entries
-    final rawIngredients = rawIngredientStrings.map((raw) {
+    final rawIngredients = filteredIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
       final bakerPct = _extractBakerPercent(raw);
       
