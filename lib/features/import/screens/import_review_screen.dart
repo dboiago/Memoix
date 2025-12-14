@@ -61,6 +61,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     // Normalize course to match Category.defaults names (proper capitalization)
     final rawCourse = result.course ?? 'Mains';
     _selectedCourse = _normalizeCourse(rawCourse);
+    
+    // DEBUG: Print course detection
+    print('DEBUG ImportReview: result.course="${result.course}" -> rawCourse="$rawCourse" -> normalized="$_selectedCourse"');
     _selectedCuisine = result.cuisine;
 
     // Sanitize ingredients to remove empty/invalid entries
@@ -131,7 +134,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               confidence: result.courseConfidence,),
           const SizedBox(height: 8),
           _buildCourseSelector(theme, result),
-          const SizedBox(height: 24),
+          const SizedBox(height: 8),
+          // Debug: show current course value and isModernist state
+          Text('DEBUG: course="$_selectedCourse", isModernist=$_isModernistCourse', 
+               style: TextStyle(fontSize: 10, color: Colors.red)),
+          const SizedBox(height: 16),
 
           // Cuisine OR Category/Technique based on course type
           if (_isModernistCourse) ...[
