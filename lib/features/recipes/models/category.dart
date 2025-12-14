@@ -192,7 +192,7 @@ class Category {
       ..isVisible = json['isVisible'] as bool? ?? true;
   }
 
-  /// Get display name from slug (e.g., 'vegan' -> "Veg'n")
+  /// Get display name from slug (e.g., 'vegn' -> "Veg'n")
   static String displayNameFromSlug(String slug) {
     final lower = slug.toLowerCase();
     for (final category in defaults) {

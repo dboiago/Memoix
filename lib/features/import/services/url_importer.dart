@@ -429,7 +429,7 @@ class UrlRecipeImporter {
       return 'Drinks';
     }
     
-    // Modernist/Molecular keywords
+    // Modernist keywords
     if (RegExp(r'\b(?:modernist|molecular|spherification|gelification|sous\s*vide|foam|caviar|agar|xanthan)\b').hasMatch(lowerTitle)) {
       return 'Modernist';
     }
@@ -1915,7 +1915,7 @@ class UrlRecipeImporter {
     if (allText.contains('main') || allText.contains('dinner') || allText.contains('entrée')) courses.add('Mains');
     if (allText.contains('sauce') || allText.contains('dressing')) courses.add('Sauces');
     if (allText.contains('drink') || allText.contains('cocktail') || allText.contains('beverage')) courses.add('drinks');
-    if (allText.contains('vegetarian') || allText.contains('vegan')) courses.add("Veg'n");
+    if (allText.contains('vegetarian') || allText.contains('vegan')) courses.add('vegn');
     
     // Always include Mains as default option
     if (courses.isEmpty) courses.add('Mains');
@@ -2792,7 +2792,7 @@ class UrlRecipeImporter {
       if (category.contains('pizza')) return 'Pizzas';
     }
     
-    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return "Veg'n";
+    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'vegn';
     
     return 'Mains'; // Default
   }
@@ -2909,7 +2909,7 @@ class UrlRecipeImporter {
     if (isCocktail) {
       course = 'drinks';
     } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
-      course = 'molecular';
+      course = 'modernist';
     } else {
       course = 'Mains';
     }
@@ -3109,7 +3109,7 @@ class UrlRecipeImporter {
       course = 'Smoking';
       courseConfidence = 0.8;
     } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
-      course = 'molecular';
+      course = 'modernist';
       courseConfidence = 0.75;
     } else if (_isBreadRecipe(titleLower, urlLower, rawIngredientStrings)) {
       course = 'Breads';
@@ -3530,7 +3530,7 @@ class UrlRecipeImporter {
     return null;
   }
   
-  /// Check if this looks like a modernist/molecular gastronomy recipe
+  /// Check if this looks like a modernist gastronomy recipe
   bool _isModernistRecipe(dynamic document, String sourceUrl, List<String> ingredients) {
     // Check URL for modernist indicators
     final lowerUrl = sourceUrl.toLowerCase();

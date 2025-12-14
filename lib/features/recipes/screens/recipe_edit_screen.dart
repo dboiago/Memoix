@@ -245,9 +245,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     const mapping = {
       'soups': 'soup',
       'salads': 'salad',
-      'not-meat': 'vegan',
-      'not meat': 'vegan',
-      'vegetarian': 'vegan',
+      'not-meat': 'vegn',
+      'not meat': 'vegn',
+      'vegetarian': 'vegn',
     };
     return mapping[course] ?? course;
   }
@@ -812,7 +812,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 DropdownMenuItem(value: 'apps', child: Text('Apps')),
                 DropdownMenuItem(value: 'soup', child: Text('Soup')),
                 DropdownMenuItem(value: 'mains', child: Text('Mains')),
-                DropdownMenuItem(value: 'vegan', child: Text("Veg'n")),
+                DropdownMenuItem(value: 'vegn', child: Text("Veg'n")),
                 DropdownMenuItem(value: 'sides', child: Text('Sides')),
                 DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
@@ -822,7 +822,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
                 DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
                 DropdownMenuItem(value: 'pickles', child: Text('Pickles')),
-                DropdownMenuItem(value: 'molecular', child: Text('Modernist')),
+                DropdownMenuItem(value: 'modernist', child: Text('Modernist')),
                 DropdownMenuItem(value: 'pizzas', child: Text('Pizzas')),
                 DropdownMenuItem(value: 'sandwiches', child: Text('Sandwiches')),
                 DropdownMenuItem(value: 'smoking', child: Text('Smoking')),

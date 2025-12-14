@@ -162,7 +162,6 @@ class MemoixColors {
         return cheese;
       case 'vegn':
       case 'veg*n':
-      case 'vegan':
       case 'vegetarian':
       case 'not meat':
         return vegn;

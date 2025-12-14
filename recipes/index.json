@@ -4,7 +4,7 @@
     "soup.json",
     "salad.json",
     "mains.json",
-    "vegan.json",
+    "vegn.json",
     "sides.json",
     "breads.json",
     "desserts.json",
@@ -15,7 +15,7 @@
     "cheese.json",
     "pickles.json",
     "smoking.json",
-    "molecular.json",
+    "modernist.json",
     "scratch.json",
     "drinks.json"
   ]

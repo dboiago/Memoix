@@ -342,10 +342,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     );
   }
 
-  /// Convert course code to display name (e.g., 'molecular' -> 'Modernist')
+  /// Convert course code to display name
   String _courseDisplayName(String course) {
     switch (course.toLowerCase()) {
-      case 'molecular':
+      case 'modernist':
         return 'Modernist';
       default:
         return course;
@@ -539,7 +539,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     final isLast = index == result.rawIngredients.length - 1;
                     
                     // Check if this is a section-only header (empty name, has section)
-                    final isSectionHeader = ingredient.name.isEmpty && ingredient.section != null;
+                    final isSectionHeader = ingredient.name.isEmpty && ingredient.sectionName != null;
 
                     // Section header row - spans full width
                     if (isSectionHeader) {
@@ -571,7 +571,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                               ),
                             ),
                             Text(
-                              ingredient.section!,
+                              ingredient.sectionName!,
                               style: theme.textTheme.titleSmall?.copyWith(
                                 fontWeight: FontWeight.bold,
                                 color: isSelected 

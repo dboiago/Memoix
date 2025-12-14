@@ -22,8 +22,8 @@ recipes/
 ├── sandwiches.json     # Sandwiches
 ├── smoking.json        # Smoked recipes
 ├── cheese.json         # Cheese recipes
-├── molecular.json      # Modernist/molecular
-├── vegan.json          # Vegetarian/vegan
+├── modernist.json      # Modernist gastronomy
+├── vegn.json           # Vegetarian/vegan
 ├── salad.json          # Salads
 ├── drinks.json         # Drinks & cocktails
 └── scratch.json        # Scratch pad/notes
@@ -210,7 +210,7 @@ Use lowercase slug format for `course`:
 | `apps` | Apps |
 | `soup` | Soups |
 | `mains` | Mains |
-| `vegan` | Veg'n |
+| `vegn` | Veg'n |
 | `sides` | Sides |
 | `desserts` | Desserts |
 | `brunch` | Brunch |
@@ -219,7 +219,7 @@ Use lowercase slug format for `course`:
 | `sauces` | Sauces |
 | `rubs` | Rubs |
 | `pickles` | Pickles |
-| `molecular` | Modernist |
+| `modernist` | Modernist |
 | `pizzas` | Pizzas |
 | `sandwiches` | Sandwiches |
 | `smoking` | Smoking |
@@ -494,8 +494,8 @@ Increment `version` whenever you update any recipe file.
     "sandwiches.json",
     "smoking.json",
     "cheese.json",
-    "molecular.json",
-    "vegan.json",
+    "modernist.json",
+    "vegn.json",
     "salad.json",
     "drinks.json",
     "scratch.json"

@@ -44,7 +44,7 @@ SHEET_TYPE_MAP = {
     'sauces': 'standard',
     'pickles': 'standard',
     'pickles/brines': 'standard',
-    'molecular': 'standard',
+    'modernist': 'standard',
     'not meat': 'standard',
     'pizzas': 'pizza',
     'smoking': 'smoking',
@@ -757,7 +757,7 @@ def main():
     parser.add_argument('input', help='Input CSV file or directory')
     parser.add_argument('--type', '-t', 
                        choices=['mains', 'apps', 'soups', 'brunch', 'sides', 'desserts',
-                               'breads', 'rubs', 'sauces', 'pickles', 'molecular', 
+                               'breads', 'rubs', 'sauces', 'pickles', 'modernist', 
                                'not-meat', 'pizzas', 'smoking', 'cheese', 'sandwiches', 'scratch'],
                        help='Type of sheet (determines parser)')
     parser.add_argument('--output', '-o', help='Output JSON file or directory')

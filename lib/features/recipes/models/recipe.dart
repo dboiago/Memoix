@@ -158,9 +158,9 @@ class Recipe {
     const courseMapping = {
       'soups': 'soup',
       'salads': 'salad',
-      'not meat': 'vegan',
-      'not-meat': 'vegan',
-      'vegetarian': 'vegan',
+      'not meat': 'vegn',
+      'not-meat': 'vegn',
+      'vegetarian': 'vegn',
       'drinks': 'drinks',
     };
     course = courseMapping[course] ?? course;

@@ -479,7 +479,7 @@ class CsvRecipeImporter {
       'not meat': 'Veg\'n',
       'not-meat': 'Veg\'n',
       'vegetarian': 'Veg\'n',
-      'vegan': 'Veg\'n',
+      'vegn': "Veg'n",
       'veg\'n': 'Veg\'n',
       'veg*n': 'Veg\'n',
       'sandwich': 'Sandwiches',

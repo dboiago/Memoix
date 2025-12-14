@@ -2,7 +2,7 @@
   {
     "uuid": "46e0ddc5-cb0b-493e-89e2-e635f0cc3b6b",
     "name": "Ribs (Seitan)",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": null,
     "subcategory": null,
     "serves": "2021-03-04 00:00:00",
@@ -111,7 +111,7 @@
   {
     "uuid": "5bfa3956-88b4-479c-916e-56db132ba478",
     "name": "Fish (Tofu)",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": null,
     "subcategory": null,
     "serves": "4.0",
@@ -261,7 +261,7 @@
   {
     "uuid": "fc380837-1fbf-4b25-947e-6c488c1d2549",
     "name": "Chicken/Other Pieces (Seitan)",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": null,
     "subcategory": null,
     "serves": "4.0",
@@ -352,7 +352,7 @@
   {
     "uuid": "d2e753fe-d54c-49d8-bf87-642f3ce014c5",
     "name": "Wheat Starch Bacon",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": null,
     "subcategory": null,
     "serves": "20.0",
@@ -491,7 +491,7 @@
   {
     "uuid": "4ee5ce0e-8e42-402e-9f0a-924697895479",
     "name": "Steak (Seitan)",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": null,
     "subcategory": null,
     "serves": "4.0",
@@ -610,7 +610,7 @@
   {
     "uuid": "f04ee349-f7d5-470b-a557-026568ca7135",
     "name": "Washed Flour Seitan",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": "CN",
     "subcategory": null,
     "serves": "4.0",
@@ -676,7 +676,7 @@
   {
     "uuid": "33466d85-3fd1-498d-b62f-4e3bd105dd0f",
     "name": "Italian Sausage (Seitan)",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": "IT",
     "subcategory": null,
     "serves": "6.0",
@@ -844,7 +844,7 @@
   {
     "uuid": "207f6234-b2a0-4d19-afbd-bdc09c915ff8",
     "name": "Bologna (Seitan)",
-    "course": "vegan",
+    "course": "vegn",
     "cuisine": "IT",
     "subcategory": null,
     "serves": "1.0",
