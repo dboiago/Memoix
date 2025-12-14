@@ -1704,6 +1704,31 @@ class UrlRecipeImporter {
     return false;
   }
 
+  /// Check if a string is a valid ingredient candidate
+  bool _isValidIngredientCandidate(String text) {
+    if (text.isEmpty || text.length < 5 || text.length > 150) return false;
+    if (_looksLikeBinaryOrEncoded(text)) return false;
+    
+    final lower = text.toLowerCase();
+    // Skip navigation/UI elements
+    if (lower.contains('subscribe') ||
+        lower.contains('http') ||
+        lower.contains('click') ||
+        lower.contains('menu') ||
+        lower.contains('instagram') ||
+        lower.contains('facebook') ||
+        lower.contains('newsletter') ||
+        lower.contains('function') ||
+        lower.contains('script') ||
+        lower.contains('copyright') ||
+        lower.contains('privacy') ||
+        lower.contains('cookie')) {
+      return false;
+    }
+    
+    return true;
+  }
+
   /// Decode HTML entities and normalise text
   String _decodeHtml(String text) {
     var result = text;
@@ -3644,66 +3669,69 @@ class UrlRecipeImporter {
           rawIngredientStrings = _processIngredientListItems(potentialIngredients);
         }
       }
+    }
+    
+    // Raw HTML fallback: search the raw HTML source for ingredient patterns
+    // This runs independently of DOM parsing and handles sites where DOM fails
+    if (rawIngredientStrings.isEmpty && rawHtmlBody != null) {
+      // Strip HTML tags to get clean text from raw HTML
+      final cleanHtml = rawHtmlBody
+          .replaceAll(RegExp(r'<script[^>]*>[\s\S]*?</script>', caseSensitive: false), '')
+          .replaceAll(RegExp(r'<style[^>]*>[\s\S]*?</style>', caseSensitive: false), '')
+          .replaceAll(RegExp(r'<[^>]+>'), ' ')
+          .replaceAll(RegExp(r'&bull;|&middot;|&#8226;|&#x2022;', caseSensitive: false), '•') // Preserve bullet entities as •
+          .replaceAll(RegExp(r'&[a-z]+;', caseSensitive: false), ' ')
+          .replaceAll(RegExp(r'&#\d+;'), ' ')
+          .replaceAll(RegExp(r'\s+'), ' ');
       
-      // Raw HTML fallback: search the raw HTML source for ingredient patterns
-      // This handles sites where DOM parsing fails but content exists in HTML
-      if (rawIngredientStrings.isEmpty && rawHtmlBody != null) {
-        // Look for patterns like "200g (½ Cup) Honey" directly in HTML
-        // Strip HTML tags first to get clean text
-        final cleanHtml = rawHtmlBody
-            .replaceAll(RegExp(r'<script[^>]*>[\s\S]*?</script>', caseSensitive: false), '') // Remove scripts
-            .replaceAll(RegExp(r'<style[^>]*>[\s\S]*?</style>', caseSensitive: false), '') // Remove styles
-            .replaceAll(RegExp(r'<[^>]+>'), ' ') // Remove all HTML tags
-            .replaceAll(RegExp(r'&[a-z]+;', caseSensitive: false), ' ') // Remove HTML entities
-            .replaceAll(RegExp(r'&#\d+;'), ' ') // Remove numeric entities
-            .replaceAll(RegExp(r'\s+'), ' '); // Normalize whitespace
-        
-        // Look for bullet points followed by measurements
-        final bulletPattern = RegExp(
-          r'(?:•|●|○|·|\*)\s*(\d+\s*(?:g|kg|oz|lb|cup|cups|tbsp|tablespoon|tsp|teaspoon|ml)\s*(?:\([^)]+\))?\s*[A-Za-z][^•●○·\*\n]{3,80})',
+      final potentialIngredients = <String>[];
+      
+      // Pattern 1: Look for "Xg (Y Unit) Name" format (like Modernist Pantry)
+      // Example: "200g (½ Cup) Honey" or "240g (1 Cup) Milk"
+      final metricWithConversion = RegExp(
+        r'(\d+g?\s*\([^)]{2,20}\)\s*[A-Za-z][A-Za-z\s\-]{2,40}?)(?=\s*\d+g|\s*•|\s*$|[,.])',
+        caseSensitive: false,
+      );
+      
+      for (final match in metricWithConversion.allMatches(cleanHtml)) {
+        final ingredient = _decodeHtml(match.group(1)?.trim() ?? '');
+        if (_isValidIngredientCandidate(ingredient)) {
+          potentialIngredients.add(ingredient);
+        }
+      }
+      
+      // Pattern 2: Standard measurements with ingredient names
+      if (potentialIngredients.isEmpty) {
+        final standardMeasurement = RegExp(
+          r'(\d+(?:\.\d+)?\s*(?:g|kg|oz|lb|lbs|cup|cups|tbsp|tablespoons?|tsp|teaspoons?|ml|liters?|litres?)\s+[A-Za-z][A-Za-z\s\-,]{2,50})',
           caseSensitive: false,
         );
         
-        var matches = bulletPattern.allMatches(cleanHtml);
-        final potentialIngredients = <String>[];
-        
-        for (final match in matches) {
+        for (final match in standardMeasurement.allMatches(cleanHtml)) {
           final ingredient = _decodeHtml(match.group(1)?.trim() ?? '');
-          if (ingredient.isNotEmpty && 
-              ingredient.length >= 5 &&
-              !_looksLikeBinaryOrEncoded(ingredient) &&
-              !ingredient.toLowerCase().contains('subscribe') &&
-              !ingredient.toLowerCase().contains('http')) {
+          if (_isValidIngredientCandidate(ingredient)) {
             potentialIngredients.add(ingredient);
           }
         }
+      }
+      
+      // Pattern 3: Fractional measurements
+      if (potentialIngredients.isEmpty) {
+        final fractionalPattern = RegExp(
+          r'([½¼¾⅓⅔⅛]\s*(?:cup|cups|tbsp|tsp|teaspoon|tablespoon)s?\s+[A-Za-z][A-Za-z\s\-,]{2,50})',
+          caseSensitive: false,
+        );
         
-        // If no bullet patterns found, try measurement-first patterns without bullets
-        // This handles HTML like "200g (1 Cup) Honey" or "<li>2 cups flour</li>"
-        if (potentialIngredients.isEmpty) {
-          final measurementFirstPattern = RegExp(
-            r'(\d+\s*(?:g|kg)\s*\([^)]+\)\s*[A-Za-z][A-Za-z\s,]{2,50})',
-            caseSensitive: false,
-          );
-          matches = measurementFirstPattern.allMatches(cleanHtml);
-          for (final match in matches) {
-            final ingredient = _decodeHtml(match.group(1)?.trim() ?? '');
-            if (ingredient.isNotEmpty && 
-                ingredient.length >= 5 &&
-                ingredient.length < 100 &&
-                !_looksLikeBinaryOrEncoded(ingredient) &&
-                !ingredient.toLowerCase().contains('subscribe') &&
-                !ingredient.toLowerCase().contains('http') &&
-                !ingredient.toLowerCase().contains('function') &&
-                !ingredient.toLowerCase().contains('script')) {
-              potentialIngredients.add(ingredient);
-            }
+        for (final match in fractionalPattern.allMatches(cleanHtml)) {
+          final ingredient = _decodeHtml(match.group(1)?.trim() ?? '');
+          if (_isValidIngredientCandidate(ingredient)) {
+            potentialIngredients.add(ingredient);
           }
         }
-        
-        if (potentialIngredients.length >= 2) {
-          rawIngredientStrings = _processIngredientListItems(potentialIngredients);
-        }
+      }
+      
+      if (potentialIngredients.length >= 2) {
+        rawIngredientStrings = _processIngredientListItems(potentialIngredients);
       }
     }
     
