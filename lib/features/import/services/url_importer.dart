@@ -3060,6 +3060,10 @@ class UrlRecipeImporter {
       equipmentItems = sectionResult['equipment'] ?? [];
       yield = sectionResult['yield'];
       timing = sectionResult['timing'];
+      // Section-based parsing is semi-structured
+      if (rawIngredientStrings.isNotEmpty) {
+        usedStructuredFormat = true;
+      }
     }
     
     var ingredients = rawIngredientStrings
@@ -3087,6 +3091,10 @@ class UrlRecipeImporter {
     // This handles sites that use h3 headings for step names
     if (rawDirections.isEmpty) {
       rawDirections = _parseDirectionsBySections(document);
+      // Section-based parsing with h3 headings is semi-structured
+      if (rawDirections.isNotEmpty) {
+        usedStructuredFormat = true;
+      }
     }
 
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
@@ -3429,22 +3437,8 @@ class UrlRecipeImporter {
         // Stop at the next step heading
         if (tagName == 'h3' || tagName == 'h2') break;
         
-        // Extract text from divs, paragraphs, spans - each becomes a separate step
-        if (tagName == 'div' || tagName == 'p' || tagName == 'span') {
-          final text = _decodeHtml(nextElement.text?.trim() ?? '');
-          // Filter out empty or whitespace-only text, require reasonable length
-          if (text.isNotEmpty && text != ' ' && text.length > 15) {
-            directions.add(text);
-          }
-        } else if (tagName == 'li') {
-          // Also handle list items
-          final text = _decodeHtml(nextElement.text?.trim() ?? '');
-          if (text.isNotEmpty && text.length > 15) {
-            directions.add(text);
-          }
-        }
-        
-        // Also check for nested content
+        // First try to extract nested paragraphs/divs
+        bool foundNested = false;
         if (tagName == 'div' || tagName == 'ul' || tagName == 'ol') {
           final nestedDivs = nextElement.querySelectorAll('div, p, li');
           for (final nested in nestedDivs) {
@@ -3453,8 +3447,45 @@ class UrlRecipeImporter {
               // Avoid duplicates
               if (directions.isEmpty || directions.last != text) {
                 directions.add(text);
+                foundNested = true;
               }
             }
+          }
+        }
+        
+        // If no nested elements found, try to split the text by paragraphs
+        if (!foundNested && (tagName == 'div' || tagName == 'p' || tagName == 'span')) {
+          // Get HTML content to preserve paragraph breaks
+          final htmlContent = nextElement.innerHtml ?? '';
+          
+          // Split by br tags or double newlines to get separate paragraphs
+          final paragraphs = htmlContent
+              .replaceAll(RegExp(r'<br\s*/?>'), '\n\n')
+              .replaceAll(RegExp(r'</p>\s*<p[^>]*>'), '\n\n')
+              .split(RegExp(r'\n\s*\n'))
+              .map((p) => _decodeHtml(p.replaceAll(RegExp(r'<[^>]+>'), '').trim()))
+              .where((p) => p.isNotEmpty && p.length > 15)
+              .toList();
+          
+          if (paragraphs.length > 1) {
+            // Multiple paragraphs found, add each separately
+            for (final para in paragraphs) {
+              if (directions.isEmpty || directions.last != para) {
+                directions.add(para);
+              }
+            }
+          } else {
+            // Single block of text - add as is
+            final text = _decodeHtml(nextElement.text?.trim() ?? '');
+            if (text.isNotEmpty && text != ' ' && text.length > 15) {
+              directions.add(text);
+            }
+          }
+        } else if (!foundNested && tagName == 'li') {
+          // Handle list items
+          final text = _decodeHtml(nextElement.text?.trim() ?? '');
+          if (text.isNotEmpty && text.length > 15) {
+            directions.add(text);
           }
         }
         
