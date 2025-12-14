@@ -36,7 +36,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          'SMOKING',
+          'Smoking',
           style: theme.textTheme.titleMedium?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),

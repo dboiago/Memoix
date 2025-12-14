@@ -33,7 +33,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          'PIZZAS',
+          'Pizzas',
           style: theme.textTheme.titleMedium?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),

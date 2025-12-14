@@ -538,6 +538,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     final isSelected = _selectedIngredientIndices.contains(index);
                     final isLast = index == result.rawIngredients.length - 1;
                     
+                    // Skip empty entries (no name and no section)
+                    if (ingredient.name.isEmpty && ingredient.sectionName == null) {
+                      return const SizedBox.shrink();
+                    }
+                    
                     // Check if this is a section-only header (empty name, has section)
                     final isSectionHeader = ingredient.name.isEmpty && ingredient.sectionName != null;
 
