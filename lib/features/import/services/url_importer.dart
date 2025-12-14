@@ -325,7 +325,7 @@ class UrlRecipeImporter {
       final hasIngredients = ingredients.isNotEmpty;
       final hasDirections = directions.isNotEmpty;
       
-      // Create raw ingredient data for review
+      // Create raw ingredient data for review, filtering out empty entries
       final rawIngredients = rawIngredientStrings.map((raw) {
         final parsed = _parseIngredientString(raw);
         final bakerPct = _extractBakerPercent(raw);
@@ -345,7 +345,10 @@ class UrlRecipeImporter {
           isSection: parsed.section != null,
           sectionName: parsed.section,
         );
-      }).toList();
+      })
+      // Filter out empty entries (no name and no section)
+      .where((i) => i.name.isNotEmpty || i.sectionName != null)
+      .toList();
       
       // Calculate confidence based on what was successfully parsed
       // Higher confidence when we found structured data
@@ -1800,22 +1803,30 @@ class UrlRecipeImporter {
       }
     }
 
-    // Create raw ingredient data
+    // Create raw ingredient data, filtering out empty entries
     final rawIngredients = rawIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
       final bakerPct = _extractBakerPercent(raw);
+      
+      // For section-only items (parsed name is empty but has section),
+      // keep the empty name so the review screen can display it as a section header
+      final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+      
       return RawIngredientData(
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
         preparation: parsed.preparation,
         bakerPercent: bakerPct != null ? '$bakerPct%' : null,
-        name: parsed.name.isNotEmpty ? parsed.name : raw,
+        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
         sectionName: parsed.section,
       );
-    }).toList();
+    })
+    // Filter out empty entries (no name and no section)
+    .where((i) => i.name.isNotEmpty || i.sectionName != null)
+    .toList();
 
     return RecipeImportResult(
       name: name.isNotEmpty ? name : null,
@@ -3169,7 +3180,7 @@ class UrlRecipeImporter {
         ? (usedStructuredFormat ? 0.85 : 0.6) 
         : 0.0;
 
-    // Create raw ingredient data
+    // Create raw ingredient data, filtering out empty entries
     final rawIngredients = rawIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
       final bakerPct = _extractBakerPercent(raw);
@@ -3189,7 +3200,10 @@ class UrlRecipeImporter {
         isSection: parsed.section != null,
         sectionName: parsed.section,
       );
-    }).toList();
+    })
+    // Filter out empty entries (no name and no section)
+    .where((i) => i.name.isNotEmpty || i.sectionName != null)
+    .toList();
 
     // Build detected courses list - include the course we detected
     final detectedCourses = <String>[course];
