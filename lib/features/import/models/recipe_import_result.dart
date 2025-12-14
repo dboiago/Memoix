@@ -278,16 +278,66 @@ class RawIngredientData {
     final cleanName = name.trim();
     if (cleanName.isEmpty) return false;
     if (!RegExp(r'[a-zA-Z0-9]').hasMatch(cleanName)) return false;
-    // Skip if name is same as section (duplicate header)
-    if (sectionName != null && cleanName.toLowerCase() == sectionName!.toLowerCase()) {
-      return false;
-    }
     return true;
   }
   
-  /// Sanitize a list of raw ingredients, removing invalid entries
+  /// Sanitize a list of raw ingredients, removing invalid and duplicate entries
   static List<RawIngredientData> sanitize(List<RawIngredientData> ingredients) {
-    return ingredients.where((i) => i.isValid).toList();
+    // First, collect all section names
+    final sectionNames = ingredients
+        .where((i) => i.sectionName != null && i.sectionName!.trim().isNotEmpty)
+        .map((i) => i.sectionName!.toLowerCase().trim())
+        .toSet();
+    
+    // Filter out invalid entries AND entries whose name duplicates a section header
+    return ingredients.where((i) {
+      if (!i.isValid) return false;
+      
+      // If this is a section header, keep it
+      if (i.sectionName != null && i.sectionName!.trim().isNotEmpty) {
+        return true;
+      }
+      
+      // If this ingredient's name matches any section header, it's a duplicate - remove it
+      final cleanName = i.name.trim().toLowerCase();
+      if (sectionNames.contains(cleanName)) {
+        return false;
+      }
+      
+      // Also check if it looks like a section header that wasn't properly detected
+      // (no amount, no unit, name doesn't look like an ingredient)
+      if (i.amount == null && i.unit == null && i.preparation == null) {
+        // If it's a short name with no measurements and matches common header patterns, skip it
+        if (cleanName.length < 50 && !_looksLikeIngredientName(cleanName)) {
+          return false;
+        }
+      }
+      
+      return true;
+    }).toList();
+  }
+  
+  /// Check if a name looks like an actual ingredient (vs a section header)
+  static bool _looksLikeIngredientName(String name) {
+    final lower = name.toLowerCase();
+    
+    // Common ingredient words/patterns
+    final ingredientPatterns = [
+      'salt', 'pepper', 'sugar', 'flour', 'oil', 'butter', 'egg', 'milk', 'cream',
+      'water', 'stock', 'broth', 'garlic', 'onion', 'tomato', 'cheese', 'chicken',
+      'beef', 'pork', 'fish', 'rice', 'pasta', 'bread', 'sauce', 'vinegar', 'lemon',
+      'lime', 'orange', 'vanilla', 'chocolate', 'honey', 'yeast', 'powder', 'extract',
+    ];
+    
+    for (final pattern in ingredientPatterns) {
+      if (lower.contains(pattern)) return true;
+    }
+    
+    // If it contains numbers or measurement-like text, it's likely an ingredient
+    if (RegExp(r'\d').hasMatch(name)) return true;
+    if (RegExp(r'\b(cup|tbsp|tsp|oz|lb|g|kg|ml|l)\b', caseSensitive: false).hasMatch(name)) return true;
+    
+    return false;
   }
 }
 
