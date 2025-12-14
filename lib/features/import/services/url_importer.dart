@@ -132,9 +132,16 @@ class UrlRecipeImporter {
       final response = await http.get(
         Uri.parse(url),
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'none',
+          'Sec-Fetch-User': '?1',
+          'Upgrade-Insecure-Requests': '1',
+          'Cache-Control': 'max-age=0',
         },
       );
 
@@ -207,12 +214,21 @@ class UrlRecipeImporter {
       final hasH3 = document.querySelectorAll('h3').length;
       final hasIngredientWord = bodyText.toLowerCase().contains('ingredient');
       
+      // Get page title to help diagnose what was returned
+      final pageTitle = document.querySelector('title')?.text?.trim() ?? '';
+      final titlePreview = pageTitle.length > 50 ? '${pageTitle.substring(0, 50)}...' : pageTitle;
+      
       // Check for common text patterns
       final hasMeasurements = RegExp(r'\d+\s*[gG](?:\s|$|\))|\d+\s*(?:cup|tbsp|tsp)', caseSensitive: false).hasMatch(bodyText);
       
       // Check raw HTML for bullets and measurements (in case DOM parsing strips them)
       final rawHasBullets = body.contains('•') || body.contains('&bull;') || body.contains('&#8226;');
       final rawHasMeasurements = RegExp(r'\d+\s*g\s*\(', caseSensitive: false).hasMatch(body);
+      
+      // Check raw HTML for key markers the page should have
+      final rawHasH2 = body.contains('<h2');
+      final rawHasItemtype = body.toLowerCase().contains('itemtype');
+      final rawHasSchema = body.toLowerCase().contains('schema.org');
       
       // Sample of body text for debugging (first 200 chars after title-like content)
       String bodySample = '';
@@ -232,7 +248,8 @@ class UrlRecipeImporter {
         if (rawSample.length > 80) rawSample = '${rawSample.substring(0, 80)}...';
       }
       
-      String diagnostics = 'JSON-LD:$jsonLdCount, microdata:${hasMicrodata ? "yes" : "no"}, #ingredients:${hasIngredientById ? "yes" : "no"}, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
+      String diagnostics = 'title:"$titlePreview", JSON-LD:$jsonLdCount, microdata:${hasMicrodata ? "yes" : "no"}, #ingredients:${hasIngredientById ? "yes" : "no"}, h2:$hasH2, h3:$hasH3, lists:${hasAnyLists ? "yes" : "no"}';
+      diagnostics += ', rawH2:${rawHasH2 ? "yes" : "no"}, rawSchema:${rawHasSchema ? "yes" : "no"}';
       diagnostics += ', bullets:${hasBullets ? "yes" : "no"}, measurements:${hasMeasurements ? "yes" : "no"}';
       diagnostics += ', rawBullets:${rawHasBullets ? "yes" : "no"}, rawMeas:${rawHasMeasurements ? "yes" : "no"}';
       diagnostics += ', body=$bodyLength chars';
