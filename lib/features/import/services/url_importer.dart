@@ -3000,7 +3000,7 @@ class UrlRecipeImporter {
     // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
     final compoundFractionMatch = RegExp(
       r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
-      r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+      r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
@@ -3022,7 +3022,7 @@ class UrlRecipeImporter {
     if (amount == null) {
       final textFractionMatch = RegExp(
         r'^(\d+/\d+)'
-        r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -3043,7 +3043,7 @@ class UrlRecipeImporter {
       // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
       final toRangeMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -3063,7 +3063,7 @@ class UrlRecipeImporter {
       // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
