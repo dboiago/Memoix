@@ -103,10 +103,16 @@ class UrlRecipeImporter {
   };
 
   /// Import a recipe from a URL
-  /// Supports JSON-LD schema.org Recipe format and common recipe sites
+  /// Supports JSON-LD schema.org Recipe format, common recipe sites, and YouTube videos
   /// Returns RecipeImportResult with confidence scores for user review
   Future<RecipeImportResult> importFromUrl(String url) async {
     try {
+      // Check if this is a YouTube video
+      final videoId = _extractYouTubeVideoId(url);
+      if (videoId != null) {
+        return await _importFromYouTube(videoId, url);
+      }
+      
       final response = await http.get(
         Uri.parse(url),
         headers: {
@@ -141,6 +147,535 @@ class UrlRecipeImporter {
     } catch (e) {
       throw Exception('Failed to import recipe from URL: $e');
     }
+  }
+  
+  /// Extract YouTube video ID from various URL formats
+  String? _extractYouTubeVideoId(String url) {
+    final uri = Uri.tryParse(url);
+    if (uri == null) return null;
+    
+    final host = uri.host.toLowerCase();
+    
+    // youtube.com/watch?v=VIDEO_ID
+    if (host.contains('youtube.com')) {
+      return uri.queryParameters['v'];
+    }
+    
+    // youtu.be/VIDEO_ID
+    if (host == 'youtu.be') {
+      final path = uri.pathSegments;
+      return path.isNotEmpty ? path.first : null;
+    }
+    
+    // youtube.com/embed/VIDEO_ID
+    if (host.contains('youtube.com') && uri.path.startsWith('/embed/')) {
+      final segments = uri.pathSegments;
+      if (segments.length >= 2) {
+        return segments[1];
+      }
+    }
+    
+    return null;
+  }
+  
+  /// Import recipe from YouTube video
+  Future<RecipeImportResult> _importFromYouTube(String videoId, String sourceUrl) async {
+    try {
+      // Fetch the video page to get description and metadata
+      final videoPageUrl = 'https://www.youtube.com/watch?v=$videoId';
+      final response = await http.get(
+        Uri.parse(videoPageUrl),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept-Language': 'en-US,en;q=0.9',
+        },
+      );
+      
+      if (response.statusCode != 200) {
+        throw Exception('Failed to fetch YouTube video: ${response.statusCode}');
+      }
+      
+      final body = response.body;
+      
+      // Extract video title from page
+      String? title;
+      final titleMatch = RegExp(r'"title":\s*"([^"]+)"').firstMatch(body);
+      if (titleMatch != null) {
+        title = _decodeUnicodeEscapes(titleMatch.group(1) ?? '');
+      }
+      
+      // Try to get title from og:title as fallback
+      if (title == null || title.isEmpty) {
+        final ogTitleMatch = RegExp(r'<meta\s+property="og:title"\s+content="([^"]+)"').firstMatch(body);
+        title = ogTitleMatch?.group(1);
+      }
+      
+      // Extract channel name
+      String? channelName;
+      final channelMatch = RegExp(r'"ownerChannelName":\s*"([^"]+)"').firstMatch(body);
+      if (channelMatch != null) {
+        channelName = _decodeUnicodeEscapes(channelMatch.group(1) ?? '');
+      }
+      
+      // Extract video description
+      String? description;
+      // Try to find description in the initial player response JSON
+      final descMatch = RegExp(r'"shortDescription":\s*"((?:[^"\\]|\\.)*)"').firstMatch(body);
+      if (descMatch != null) {
+        description = _decodeUnicodeEscapes(descMatch.group(1) ?? '');
+      }
+      
+      // Extract thumbnail
+      String? thumbnail;
+      final thumbMatch = RegExp(r'"thumbnails":\s*\[\s*\{\s*"url":\s*"([^"]+)"').firstMatch(body);
+      if (thumbMatch != null) {
+        thumbnail = thumbMatch.group(1);
+      }
+      // Fallback to standard thumbnail URL
+      thumbnail ??= 'https://img.youtube.com/vi/$videoId/maxresdefault.jpg';
+      
+      // Try to fetch and parse transcript/captions
+      List<String> transcriptDirections = [];
+      try {
+        transcriptDirections = await _fetchYouTubeTranscript(videoId, body);
+      } catch (_) {
+        // Transcript fetch failed - continue without it
+      }
+      
+      // Parse the description for ingredients and directions
+      final parsedDescription = _parseYouTubeDescription(description ?? '');
+      
+      // Use transcript directions if description doesn't have them
+      List<String> directions = parsedDescription['directions'] ?? [];
+      if (directions.isEmpty && transcriptDirections.isNotEmpty) {
+        directions = transcriptDirections;
+      }
+      
+      // Build ingredients list
+      final rawIngredientStrings = (parsedDescription['ingredients'] as List<String>?) ?? [];
+      final ingredients = rawIngredientStrings
+          .map((s) => _parseIngredientString(s))
+          .where((i) => i.name.isNotEmpty)
+          .toList();
+      
+      // Clean recipe name - remove common YouTube suffixes
+      String recipeName = _cleanYouTubeTitle(title ?? 'YouTube Recipe');
+      
+      // Build notes with channel attribution
+      String notes = 'Source: YouTube video by ${channelName ?? "Unknown"}';
+      if (parsedDescription['notes'] != null) {
+        notes += '\n\n${parsedDescription["notes"]}';
+      }
+      
+      // Determine if we have enough data
+      final hasIngredients = ingredients.isNotEmpty;
+      final hasDirections = directions.isNotEmpty;
+      
+      // Create raw ingredient data for review
+      final rawIngredients = rawIngredientStrings.map((raw) {
+        final parsed = _parseIngredientString(raw);
+        return RawIngredientData(
+          original: raw,
+          amount: parsed.amount,
+          unit: parsed.unit,
+          name: parsed.name.isNotEmpty ? parsed.name : raw,
+          looksLikeIngredient: parsed.name.isNotEmpty,
+          isSection: parsed.section != null,
+          sectionName: parsed.section,
+        );
+      }).toList();
+      
+      return RecipeImportResult(
+        name: recipeName,
+        course: 'Mains', // Default - user can change in review
+        ingredients: ingredients,
+        directions: directions,
+        notes: notes,
+        imageUrl: thumbnail,
+        rawIngredients: rawIngredients,
+        rawDirections: directions,
+        detectedCourses: ['Mains'],
+        nameConfidence: title != null ? 0.7 : 0.3,
+        courseConfidence: 0.3, // Low - we're guessing
+        ingredientsConfidence: hasIngredients ? 0.6 : 0.0,
+        directionsConfidence: hasDirections 
+            ? (transcriptDirections.isNotEmpty ? 0.5 : 0.7) 
+            : 0.0,
+        sourceUrl: sourceUrl,
+        source: RecipeSource.url,
+      );
+    } catch (e) {
+      throw Exception('Failed to import YouTube video: $e');
+    }
+  }
+  
+  /// Decode unicode escape sequences like \u0026 in YouTube JSON
+  String _decodeUnicodeEscapes(String text) {
+    return text.replaceAllMapped(
+      RegExp(r'\\u([0-9a-fA-F]{4})'),
+      (match) {
+        final code = int.tryParse(match.group(1)!, radix: 16);
+        return code != null ? String.fromCharCode(code) : match.group(0)!;
+      },
+    ).replaceAll(r'\n', '\n').replaceAll(r'\"', '"').replaceAll(r'\\', '\\');
+  }
+  
+  /// Clean YouTube video title to extract recipe name
+  String _cleanYouTubeTitle(String title) {
+    var cleaned = title;
+    
+    // Remove common patterns
+    final patterns = [
+      RegExp(r'\s*[|\-–—]\s*YouTube\s*$', caseSensitive: false),
+      RegExp(r'\s*\|\s*[^|]+$'), // Remove "| Channel Name" suffix
+      RegExp(r'\s*[-–—]\s*(?:Full\s+)?Recipe\s*$', caseSensitive: false),
+      RegExp(r'^\s*(?:How\s+to\s+(?:Make|Cook|Prepare)\s+)', caseSensitive: false),
+      RegExp(r'\s*\((?:Easy|Simple|Quick|Best|Homemade|The\s+Best)(?:\s+Recipe)?\)\s*', caseSensitive: false),
+      RegExp(r'\s*(?:Recipe|Tutorial|Video)\s*$', caseSensitive: false),
+    ];
+    
+    for (final pattern in patterns) {
+      cleaned = cleaned.replaceAll(pattern, '');
+    }
+    
+    return cleaned.trim();
+  }
+  
+  /// Parse YouTube video description to extract ingredients and directions
+  Map<String, dynamic> _parseYouTubeDescription(String description) {
+    final result = <String, dynamic>{
+      'ingredients': <String>[],
+      'directions': <String>[],
+      'notes': null,
+    };
+    
+    if (description.isEmpty) return result;
+    
+    // Split into lines
+    final lines = description.split('\n');
+    
+    // State machine to track which section we're in
+    String? currentSection;
+    final ingredients = <String>[];
+    final directions = <String>[];
+    final notes = <String>[];
+    
+    for (var line in lines) {
+      line = line.trim();
+      if (line.isEmpty) continue;
+      
+      final lowerLine = line.toLowerCase();
+      
+      // Check for section headers
+      if (_isIngredientSectionHeader(lowerLine)) {
+        currentSection = 'ingredients';
+        continue;
+      } else if (_isDirectionSectionHeader(lowerLine)) {
+        currentSection = 'directions';
+        continue;
+      } else if (_isNotesSectionHeader(lowerLine)) {
+        currentSection = 'notes';
+        continue;
+      } else if (_isIgnorableSection(lowerLine)) {
+        currentSection = 'ignore';
+        continue;
+      }
+      
+      // Skip links, timestamps, and other non-content lines
+      if (_isIgnorableLine(line)) continue;
+      
+      // If we haven't hit a section header yet, try to auto-detect
+      if (currentSection == null) {
+        if (_looksLikeIngredient(line)) {
+          currentSection = 'ingredients';
+        } else if (_looksLikeDirection(line)) {
+          currentSection = 'directions';
+        } else {
+          // Could be intro text - add to notes
+          notes.add(line);
+          continue;
+        }
+      }
+      
+      // Add to appropriate section
+      switch (currentSection) {
+        case 'ingredients':
+          if (_looksLikeIngredient(line) || line.contains(':')) {
+            ingredients.add(line);
+          } else if (_looksLikeDirection(line)) {
+            // Switched to directions without a header
+            currentSection = 'directions';
+            directions.add(_cleanDirectionLine(line));
+          }
+          break;
+        case 'directions':
+          if (_looksLikeDirection(line) || line.length > 20) {
+            directions.add(_cleanDirectionLine(line));
+          }
+          break;
+        case 'notes':
+          notes.add(line);
+          break;
+        case 'ignore':
+          // Skip this section
+          break;
+      }
+    }
+    
+    result['ingredients'] = ingredients;
+    result['directions'] = directions;
+    if (notes.isNotEmpty) {
+      result['notes'] = notes.join('\n');
+    }
+    
+    return result;
+  }
+  
+  bool _isIngredientSectionHeader(String line) {
+    return RegExp(r'^(ingredients?|what you.?ll need|you.?ll need|shopping list)[:\s]*$', caseSensitive: false).hasMatch(line) ||
+           line == 'ingredients' || line == 'ingredient';
+  }
+  
+  bool _isDirectionSectionHeader(String line) {
+    return RegExp(r'^(directions?|instructions?|method|steps?|how to (?:make|cook|prepare)|procedure)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  bool _isNotesSectionHeader(String line) {
+    return RegExp(r'^(notes?|tips?|variations?)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  bool _isIgnorableSection(String line) {
+    return RegExp(r'^(follow me|subscribe|social|links?|connect|my (?:gear|equipment|kitchen)|affiliate|music|credits?|chapters?|timestamps?)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  bool _isIgnorableLine(String line) {
+    // URLs
+    if (line.startsWith('http://') || line.startsWith('https://') || line.startsWith('www.')) {
+      return true;
+    }
+    // Timestamps like "0:00" or "1:23:45"
+    if (RegExp(r'^\d{1,2}:\d{2}(?::\d{2})?(?:\s|$)').hasMatch(line)) {
+      return true;
+    }
+    // Social media handles
+    if (RegExp(r'^[@#]').hasMatch(line)) {
+      return true;
+    }
+    // Common YouTube description boilerplate
+    if (RegExp(r'subscribe|follow me|check out|affiliate|music by|filmed with', caseSensitive: false).hasMatch(line) && line.length < 60) {
+      return true;
+    }
+    return false;
+  }
+  
+  bool _looksLikeIngredient(String line) {
+    // Contains measurement units
+    if (RegExp(r'\d+\s*(?:g|kg|oz|lb|cup|tbsp|tsp|ml|l|pound|gram|ounce|teaspoon|tablespoon)s?\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Starts with a number or fraction
+    if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(line)) {
+      return true;
+    }
+    // Short line with common ingredient words
+    if (line.length < 60 && RegExp(r'\b(?:salt|pepper|butter|oil|garlic|onion|flour|sugar|water|milk|cream|egg|chicken|beef|pork)\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    return false;
+  }
+  
+  bool _looksLikeDirection(String line) {
+    // Numbered step
+    if (RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Starts with cooking action verb
+    if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred)\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Longer line (likely instruction)
+    if (line.length > 80) {
+      return true;
+    }
+    return false;
+  }
+  
+  String _cleanDirectionLine(String line) {
+    // Remove step numbers at the beginning
+    var cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
+    return cleaned.trim();
+  }
+  
+  /// Fetch YouTube transcript/captions
+  Future<List<String>> _fetchYouTubeTranscript(String videoId, String pageBody) async {
+    try {
+      // Find the captions track URL in the page response
+      // YouTube embeds caption data in the initial page load
+      final captionTrackMatch = RegExp(
+        r'"captionTracks":\s*\[(.*?)\]',
+        dotAll: true,
+      ).firstMatch(pageBody);
+      
+      if (captionTrackMatch == null) {
+        return [];
+      }
+      
+      final captionTracksJson = '[${captionTrackMatch.group(1)}]';
+      
+      // Find English captions (prefer manual over auto-generated)
+      String? captionUrl;
+      try {
+        // Extract baseUrl for English captions
+        // Look for English manual captions first
+        var urlMatch = RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"\.en"').firstMatch(captionTracksJson);
+        // Fall back to auto-generated English
+        urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"a\.en"').firstMatch(captionTracksJson);
+        // Fall back to any English variant
+        urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"en"').firstMatch(captionTracksJson);
+        // Fall back to first available track
+        urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"').firstMatch(captionTracksJson);
+        
+        if (urlMatch != null) {
+          captionUrl = _decodeUnicodeEscapes(urlMatch.group(1)!);
+        }
+      } catch (_) {
+        return [];
+      }
+      
+      if (captionUrl == null) return [];
+      
+      // Fetch the caption track
+      final captionResponse = await http.get(
+        Uri.parse(captionUrl),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      );
+      
+      if (captionResponse.statusCode != 200) return [];
+      
+      // Parse the XML transcript
+      final transcript = _parseYouTubeTranscriptXml(captionResponse.body);
+      
+      // Convert transcript to recipe directions
+      return _extractDirectionsFromTranscript(transcript);
+    } catch (_) {
+      return [];
+    }
+  }
+  
+  /// Parse YouTube transcript XML format
+  List<String> _parseYouTubeTranscriptXml(String xml) {
+    final segments = <String>[];
+    
+    // Extract text from <text> elements
+    final textMatches = RegExp(r'<text[^>]*>([^<]*)</text>').allMatches(xml);
+    
+    for (final match in textMatches) {
+      var text = match.group(1) ?? '';
+      // Decode HTML entities
+      text = _decodeHtml(text);
+      text = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+      if (text.isNotEmpty) {
+        segments.add(text);
+      }
+    }
+    
+    return segments;
+  }
+  
+  /// Extract recipe directions from transcript segments
+  List<String> _extractDirectionsFromTranscript(List<String> segments) {
+    if (segments.isEmpty) return [];
+    
+    // Combine segments into larger chunks (captions are often fragmented)
+    final combinedText = segments.join(' ');
+    
+    // Split into sentences
+    final sentences = combinedText
+        .split(RegExp(r'(?<=[.!?])\s+'))
+        .map((s) => s.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+    
+    // Filter to keep only sentences that look like cooking instructions
+    final directions = <String>[];
+    
+    for (final sentence in sentences) {
+      // Skip very short sentences (likely fragments)
+      if (sentence.length < 15) continue;
+      
+      // Skip sentences that are clearly not instructions
+      if (RegExp(r'\b(subscribe|comment|like|share|video|channel|patreon|sponsor)\b', caseSensitive: false).hasMatch(sentence)) {
+        continue;
+      }
+      
+      // Keep sentences with cooking-related content
+      if (_looksLikeCookingInstruction(sentence)) {
+        // Clean up the sentence
+        var cleaned = sentence;
+        // Capitalize first letter
+        if (cleaned.isNotEmpty) {
+          cleaned = cleaned[0].toUpperCase() + cleaned.substring(1);
+        }
+        // Ensure it ends with punctuation
+        if (!RegExp(r'[.!?]$').hasMatch(cleaned)) {
+          cleaned += '.';
+        }
+        directions.add(cleaned);
+      }
+    }
+    
+    // Limit to reasonable number of steps
+    if (directions.length > 20) {
+      // Try to consolidate into larger steps
+      return _consolidateDirections(directions);
+    }
+    
+    return directions;
+  }
+  
+  bool _looksLikeCookingInstruction(String text) {
+    final lower = text.toLowerCase();
+    
+    // Contains cooking verbs
+    if (RegExp(r'\b(add|mix|stir|cook|heat|bake|roast|fry|boil|simmer|chop|dice|slice|cut|pour|combine|whisk|fold|season|taste|serve|place|put|remove|transfer|let|allow|wait|set|cover|preheat|refrigerate|chill|freeze)\b').hasMatch(lower)) {
+      return true;
+    }
+    
+    // Contains cooking equipment
+    if (RegExp(r'\b(pan|pot|oven|bowl|skillet|baking|sheet|tray|blender|processor|mixer|whisk|spatula|knife|cutting board|thermometer)\b').hasMatch(lower)) {
+      return true;
+    }
+    
+    // Contains temperature or time references
+    if (RegExp(r'\b(\d+\s*(?:degrees|°|minutes|mins|hours|hrs|seconds|secs))\b').hasMatch(lower)) {
+      return true;
+    }
+    
+    return false;
+  }
+  
+  List<String> _consolidateDirections(List<String> directions) {
+    // Group related directions into larger steps
+    final consolidated = <String>[];
+    var current = <String>[];
+    
+    for (final dir in directions) {
+      current.add(dir);
+      // Start a new step after ~3 sentences or when hitting a natural break
+      if (current.length >= 3 || 
+          RegExp(r'\b(then|next|now|after|finally|lastly)\b', caseSensitive: false).hasMatch(dir)) {
+        consolidated.add(current.join(' '));
+        current = [];
+      }
+    }
+    
+    if (current.isNotEmpty) {
+      consolidated.add(current.join(' '));
+    }
+    
+    return consolidated;
   }
 
   /// Legacy method for backwards compatibility - returns Recipe directly
