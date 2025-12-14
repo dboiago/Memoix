@@ -3704,6 +3704,43 @@ class UrlRecipeImporter {
           rawIngredientStrings = _processIngredientListItems(potentialIngredients);
         }
       }
+      
+      // Dead simple: find ANY text around gram measurements
+      // This is the most lenient fallback - captures surrounding context of "###g"
+      if (rawIngredientStrings.isEmpty) {
+        // Find positions of all gram measurements in text
+        final gramPattern = RegExp(r'\d+g\b', caseSensitive: false);
+        final gramMatches = gramPattern.allMatches(bodyText).toList();
+        final potentialIngredients = <String>[];
+        
+        for (final match in gramMatches) {
+          // Capture 50 chars after the gram measurement
+          final start = match.start;
+          final end = (match.end + 50).clamp(0, bodyText.length);
+          var snippet = bodyText.substring(start, end).trim();
+          
+          // Clean up - stop at newline or next measurement
+          final newlineIdx = snippet.indexOf('\n');
+          if (newlineIdx > 0 && newlineIdx < 60) snippet = snippet.substring(0, newlineIdx);
+          
+          final nextGramIdx = snippet.indexOf(RegExp(r'\d+g', caseSensitive: false), 5);
+          if (nextGramIdx > 0 && nextGramIdx < 60) snippet = snippet.substring(0, nextGramIdx);
+          
+          snippet = _decodeHtml(snippet.trim());
+          
+          // Basic validation - should have letters (ingredient name)
+          if (snippet.length >= 8 && 
+              snippet.length <= 100 &&
+              RegExp(r'[A-Za-z]{3,}').hasMatch(snippet) &&
+              !_looksLikeBinaryOrEncoded(snippet)) {
+            potentialIngredients.add(snippet);
+          }
+        }
+        
+        if (potentialIngredients.length >= 2) {
+          rawIngredientStrings = _processIngredientListItems(potentialIngredients);
+        }
+      }
     }
     
     // Raw HTML fallback: search the raw HTML source for ingredient patterns
