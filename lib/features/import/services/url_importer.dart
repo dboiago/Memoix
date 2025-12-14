@@ -804,6 +804,12 @@ class UrlRecipeImporter {
       
       if (urlMatch != null) {
         captionUrl = _decodeUnicodeEscapes(urlMatch.group(1)!);
+        // Add format parameter if not present - srv3 returns timedtext XML format
+        if (!captionUrl!.contains('fmt=')) {
+          captionUrl = captionUrl.contains('?') 
+              ? '$captionUrl&fmt=srv3' 
+              : '$captionUrl?fmt=srv3';
+        }
       }
       
       if (captionUrl == null) {
