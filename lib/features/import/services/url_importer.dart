@@ -3364,6 +3364,7 @@ class UrlRecipeImporter {
       return 'Modernist';
     }
     
+    // Check category first (most reliable)
     if (category != null) {
       if (category.contains('dessert') || category.contains('sweet')) return 'Desserts';
       if (category.contains('appetizer') || category.contains('starter')) return 'Apps';
@@ -3376,7 +3377,32 @@ class UrlRecipeImporter {
       if (category.contains('pizza')) return 'Pizzas';
     }
     
-    if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'Veg\'n';
+    // Check name and keywords for specific recipe types (before dietary indicators)
+    // These are more specific than vegan/vegetarian which is just a dietary restriction
+    if (name.contains('bread') || name.contains('sourdough') || name.contains('focaccia') || 
+        name.contains('baguette') || name.contains('ciabatta') || name.contains('brioche')) {
+      return 'Breads';
+    }
+    if (name.contains('soup') || name.contains('stew') || name.contains('chowder')) {
+      return 'Soups';
+    }
+    if (name.contains('cake') || name.contains('cookie') || name.contains('brownie') || 
+        name.contains('pie') || name.contains('dessert')) {
+      return 'Desserts';
+    }
+    if (name.contains('sauce') || name.contains('dressing')) {
+      return 'Sauces';
+    }
+    if (name.contains('pizza')) {
+      return 'Pizzas';
+    }
+    
+    // Vegan/vegetarian is a dietary restriction, not a course type
+    // Only use it as a fallback if no specific course was detected
+    // and only if it's explicitly a vegetarian/vegan dish (in category, not just keywords)
+    if (category != null && (category.contains('vegetarian') || category.contains('vegan'))) {
+      return "Veg'n";
+    }
     
     return 'Mains'; // Default
   }
