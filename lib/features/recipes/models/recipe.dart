@@ -378,6 +378,9 @@ class Ingredient {
   /// Section/group header (e.g., for grouping ingredients)
   String? section;
 
+  /// Baker's percentage (e.g., "100%", "75%") - for bread/dough recipes
+  String? bakerPercent;
+
   Ingredient();
 
   Ingredient.create({
@@ -388,6 +391,7 @@ class Ingredient {
     this.alternative,
     this.isOptional = false,
     this.section,
+    this.bakerPercent,
   });
 
   factory Ingredient.fromJson(Map<String, dynamic> json) {
@@ -398,7 +402,8 @@ class Ingredient {
       ..preparation = json['preparation'] as String?
       ..alternative = json['alternative'] as String?
       ..isOptional = json['isOptional'] as bool? ?? false
-      ..section = json['section'] as String?;
+      ..section = json['section'] as String?
+      ..bakerPercent = json['bakerPercent'] as String?;
   }
 
   Map<String, dynamic> toJson() {
@@ -410,6 +415,7 @@ class Ingredient {
       'alternative': alternative,
       'isOptional': isOptional,
       'section': section,
+      'bakerPercent': bakerPercent,
     };
   }
 

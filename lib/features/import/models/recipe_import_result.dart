@@ -410,6 +410,7 @@ class RawIngredientData {
       unit: unit,
       preparation: preparation,
       section: section ?? sectionName,
+      bakerPercent: bakerPercent,
     );
   }
   

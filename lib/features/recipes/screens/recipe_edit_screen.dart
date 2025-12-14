@@ -189,6 +189,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           name: ingredient.name,
           amount: ingredient.displayAmount,
           notes: notesParts.join('; '),
+          bakerPercent: ingredient.bakerPercent ?? '',
         );
       }
 
@@ -268,11 +269,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     return mapping[course] ?? course;
   }
 
-  void _addIngredientRow({String name = '', String amount = '', String notes = '', bool isSection = false}) {
+  void _addIngredientRow({String name = '', String amount = '', String notes = '', String bakerPercent = '', bool isSection = false}) {
     _ingredientRows.add(_IngredientRow(
       nameController: TextEditingController(text: name),
       amountController: TextEditingController(text: amount),
       notesController: TextEditingController(text: notes),
+      bakerPercentController: TextEditingController(text: bakerPercent),
       isSection: isSection,
     ),);
   }
@@ -282,6 +284,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       nameController: TextEditingController(),
       amountController: TextEditingController(),
       notesController: TextEditingController(),
+      bakerPercentController: TextEditingController(),
       isSection: true,
     ),);
     setState(() {});
@@ -975,103 +978,130 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             const SizedBox(height: 24),
 
             // Ingredients (3-column spreadsheet layout)
-            Row(
-              children: [
-                Text(
-                  'Ingredients',
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const Spacer(),
-                TextButton.icon(
-                  onPressed: _addSectionHeader,
-                  icon: const Icon(Icons.title, size: 18),
-                  label: const Text('Section'),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            
-            // Column headers
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.surfaceContainerHighest,
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
-              ),
-              child: Row(
+            Builder(builder: (context) {
+              // Check if any ingredient has baker's percentage
+              final hasBakerPercent = _ingredientRows.any(
+                (row) => row.bakerPercentController.text.trim().isNotEmpty,
+              );
+              
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Space for drag handle
-                  const SizedBox(width: 32),
-                  Expanded(
-                    flex: 3,
-                    child: Text('Ingredient', 
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
+                  Row(
+                    children: [
+                      Text(
+                        'Ingredients',
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
+                      const Spacer(),
+                      TextButton.icon(
+                        onPressed: _addSectionHeader,
+                        icon: const Icon(Icons.title, size: 18),
+                        label: const Text('Section'),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  
+                  // Column headers
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                      borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+                    ),
+                    child: Row(
+                      children: [
+                        // Space for drag handle
+                        const SizedBox(width: 32),
+                        Expanded(
+                          flex: hasBakerPercent ? 2 : 3,
+                          child: Text('Ingredient', 
+                            style: theme.textTheme.labelMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        if (hasBakerPercent) ...[
+                          const SizedBox(width: 8),
+                          SizedBox(
+                            width: 50,
+                            child: Text('BK%', 
+                              style: theme.textTheme.labelMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                        const SizedBox(width: 8),
+                        SizedBox(
+                          width: 80,
+                          child: Text('Amount', 
+                            style: theme.textTheme.labelMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          flex: 2,
+                          child: Text('Notes/Prep', 
+                            style: theme.textTheme.labelMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 40), // Space for delete button
+                      ],
                     ),
                   ),
-                  const SizedBox(width: 8),
-                  SizedBox(
-                    width: 80,
-                    child: Text('Amount', 
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+                  
+                  // Ingredient rows (reorderable)
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                      borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
+                    ),
+                    child: ReorderableListView.builder(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      buildDefaultDragHandles: false,
+                      itemCount: _ingredientRows.length,
+                      onReorder: (oldIndex, newIndex) {
+                        setState(() {
+                          if (newIndex > oldIndex) newIndex--;
+                          final item = _ingredientRows.removeAt(oldIndex);
+                          _ingredientRows.insert(newIndex, item);
+                        });
+                      },
+                      proxyDecorator: (child, index, animation) {
+                        return AnimatedBuilder(
+                          animation: animation,
+                          builder: (context, child) {
+                            return Material(
+                              elevation: 4,
+                              color: theme.colorScheme.surface,
+                              borderRadius: BorderRadius.circular(4),
+                              child: child,
+                            );
+                          },
+                          child: child,
+                        );
+                      },
+                      itemBuilder: (context, index) {
+                        return _buildIngredientRowWidget(
+                          index, 
+                          hasBakerPercent: hasBakerPercent,
+                          key: ValueKey(_ingredientRows[index]),
+                        );
+                      },
                     ),
                   ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    flex: 2,
-                    child: Text('Notes/Prep', 
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 40), // Space for delete button
                 ],
-              ),
-            ),
-            
-            // Ingredient rows (reorderable)
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
-                borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
-              ),
-              child: ReorderableListView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                buildDefaultDragHandles: false,
-                itemCount: _ingredientRows.length,
-                onReorder: (oldIndex, newIndex) {
-                  setState(() {
-                    if (newIndex > oldIndex) newIndex--;
-                    final item = _ingredientRows.removeAt(oldIndex);
-                    _ingredientRows.insert(newIndex, item);
-                  });
-                },
-                proxyDecorator: (child, index, animation) {
-                  return AnimatedBuilder(
-                    animation: animation,
-                    builder: (context, child) {
-                      return Material(
-                        elevation: 4,
-                        color: theme.colorScheme.surface,
-                        borderRadius: BorderRadius.circular(4),
-                        child: child,
-                      );
-                    },
-                    child: child,
-                  );
-                },
-                itemBuilder: (context, index) {
-                  return _buildIngredientRowWidget(index, key: ValueKey(_ingredientRows[index]));
-                },
-              ),
-            ),
+              );
+            }),
 
             const SizedBox(height: 24),
 
@@ -1294,6 +1324,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           }
         }
         
+        // Get baker's percentage if present
+        final bakerPercent = row.bakerPercentController.text.trim();
+        
         ingredients.add(Ingredient()
           ..name = name
           ..amount = amount
@@ -1301,7 +1334,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ..preparation = row.notesController.text.trim().isEmpty 
               ? null 
               : row.notesController.text.trim()
-          ..section = currentSection,);
+          ..section = currentSection
+          ..bakerPercent = bakerPercent.isEmpty ? null : bakerPercent,);
       }
 
       // Parse directions from rows
@@ -1369,7 +1403,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
   }
 
-  Widget _buildIngredientRowWidget(int index, {Key? key}) {
+  Widget _buildIngredientRowWidget(int index, {bool hasBakerPercent = false, Key? key}) {
     final theme = Theme.of(context);
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
@@ -1522,7 +1556,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ),
           // Ingredient name
           Expanded(
-            flex: 3,
+            flex: hasBakerPercent ? 2 : 3,
             child: TextField(
               controller: row.nameController,
               decoration: InputDecoration(
@@ -1545,6 +1579,28 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               },
             ),
           ),
+          // Baker's percentage (only shown when any ingredient has it)
+          if (hasBakerPercent) ...[
+            const SizedBox(width: 8),
+            SizedBox(
+              width: 50,
+              child: TextField(
+                controller: row.bakerPercentController,
+                decoration: InputDecoration(
+                  isDense: true,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  border: const OutlineInputBorder(),
+                  hintText: '%',
+                  hintStyle: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.outline,
+                  ),
+                ),
+                style: theme.textTheme.bodyMedium,
+                keyboardType: const TextInputType.numberWithOptions(decimal: true),
+              ),
+            ),
+          ],
           const SizedBox(width: 8),
           
           // Amount
@@ -1669,6 +1725,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         nameController: TextEditingController(),
         amountController: TextEditingController(),
         notesController: TextEditingController(),
+        bakerPercentController: TextEditingController(),
         isSection: true,
       ),);
     });
@@ -1680,6 +1737,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         nameController: TextEditingController(),
         amountController: TextEditingController(),
         notesController: TextEditingController(),
+        bakerPercentController: TextEditingController(),
       ),);
     });
   }
@@ -2428,12 +2486,14 @@ class _IngredientRow {
   final TextEditingController nameController;
   final TextEditingController amountController;
   final TextEditingController notesController;
+  final TextEditingController bakerPercentController;
   bool isSection; // True if this is a section header (e.g., "For the Glaze")
 
   _IngredientRow({
     required this.nameController,
     required this.amountController,
     required this.notesController,
+    required this.bakerPercentController,
     this.isSection = false,
   });
 
@@ -2441,6 +2501,7 @@ class _IngredientRow {
     nameController.dispose();
     amountController.dispose();
     notesController.dispose();
+    bakerPercentController.dispose();
   }
 }
 
