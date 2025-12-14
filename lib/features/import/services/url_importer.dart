@@ -1001,29 +1001,37 @@ class UrlRecipeImporter {
       }
       
       if (transcriptParams != null) {
-        try {
-          final transcriptResponse = await http.post(
-            Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript?prettyPrint=false'),
-            headers: {
-              'Content-Type': 'application/json',
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-              'Origin': 'https://www.youtube.com',
-              'Referer': 'https://www.youtube.com/watch?v=$videoId',
-            },
-            body: '{"context":{"client":{"clientName":"WEB","clientVersion":"2.20231219.04.00","hl":"en"}},"params":"$transcriptParams"}',
-          );
-          
-          if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
-            final segments = _parseYouTubeiTranscript(transcriptResponse.body);
-            if (segments.isNotEmpty) {
-              return (segments, 'youtubei($foundPattern): ${segments.length} segments');
+        // Retry up to 3 times - YouTube API can be flaky
+        for (int attempt = 1; attempt <= 3; attempt++) {
+          try {
+            final transcriptResponse = await http.post(
+              Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript?prettyPrint=false'),
+              headers: {
+                'Content-Type': 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                'Origin': 'https://www.youtube.com',
+                'Referer': 'https://www.youtube.com/watch?v=$videoId',
+              },
+              body: '{"context":{"client":{"clientName":"WEB","clientVersion":"2.20231219.04.00","hl":"en"}},"params":"$transcriptParams"}',
+            );
+            
+            if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
+              final segments = _parseYouTubeiTranscript(transcriptResponse.body);
+              if (segments.isNotEmpty) {
+                return (segments, 'youtubei($foundPattern): ${segments.length} segments');
+              }
+              lastError = 'youtubei($foundPattern): 0 segs';
+            } else {
+              lastError = 'youtubei($foundPattern): ${transcriptResponse.statusCode}';
             }
-            lastError = 'youtubei($foundPattern): 0 segs from ${transcriptResponse.body.length}b';
-          } else {
-            lastError = 'youtubei($foundPattern): ${transcriptResponse.statusCode}';
+            
+            // If failed, wait a bit before retry
+            if (attempt < 3) {
+              await Future.delayed(Duration(milliseconds: 500 * attempt));
+            }
+          } catch (e) {
+            lastError = 'youtubei err: $e';
           }
-        } catch (e) {
-          lastError = 'youtubei err: $e';
         }
       } else {
         lastError = 'no panel params';
@@ -1052,31 +1060,39 @@ class UrlRecipeImporter {
             if (captionMatch != null) {
               var freshCaptionUrl = _decodeUnicodeEscapes(captionMatch.group(1)!);
               // Add format parameter
-              if (!freshCaptionUrl.contains('fmt=')) {
-                freshCaptionUrl = '$freshCaptionUrl&fmt=json3';
-              }
-              
-              final captionResponse = await http.get(
-                Uri.parse(freshCaptionUrl),
-                headers: {
-                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-                },
-              );
-              
-              if (captionResponse.statusCode == 200 && captionResponse.body.isNotEmpty) {
-                final segments = _parseTranscriptJson(captionResponse.body);
-                if (segments.isNotEmpty) {
-                  return (segments, 'player: ${segments.length} segments');
+              // Try without format first (default XML), then with json3
+              for (final fmt in ['', '&fmt=json3']) {
+                var urlToTry = freshCaptionUrl;
+                if (fmt.isNotEmpty && !urlToTry.contains('fmt=')) {
+                  urlToTry = '$urlToTry$fmt';
                 }
-                // Try XML parsing
-                final xmlSegments = _parseTranscriptXmlWithTimestamps(captionResponse.body);
-                if (xmlSegments.isNotEmpty) {
-                  return (xmlSegments, 'player-xml: ${xmlSegments.length} segments');
+                
+                final captionResponse = await http.get(
+                  Uri.parse(urlToTry),
+                  headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                  },
+                );
+                
+                if (captionResponse.statusCode == 200 && captionResponse.body.isNotEmpty) {
+                  // Try XML parsing first
+                  final xmlSegments = _parseTranscriptXmlWithTimestamps(captionResponse.body);
+                  if (xmlSegments.isNotEmpty) {
+                    return (xmlSegments, 'player-xml: ${xmlSegments.length} segments');
+                  }
+                  // Try JSON parsing
+                  final segments = _parseTranscriptJson(captionResponse.body);
+                  if (segments.isNotEmpty) {
+                    return (segments, 'player-json: ${segments.length} segments');
+                  }
                 }
-                lastError = '$lastError | player:0segs';
-              } else {
-                lastError = '$lastError | player-cap:${captionResponse.statusCode}';
               }
+              // Debug: show sample of what we got
+              final debugResponse = await http.get(Uri.parse(freshCaptionUrl));
+              final sample = debugResponse.body.length > 80 
+                  ? debugResponse.body.substring(0, 80) 
+                  : debugResponse.body;
+              lastError = '$lastError | player:0segs($sample)';
             } else {
               lastError = '$lastError | player:no-cap';
             }
