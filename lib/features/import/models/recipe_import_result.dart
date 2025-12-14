@@ -72,26 +72,30 @@ class RecipeImportResult {
     this.imagePaths,
   });
 
-  /// Overall confidence score (weighted average)
+  /// Overall confidence score (weighted average of core fields, optional fields can only boost)
   double get overallConfidence {
-    // Weight the most important fields higher
-    const weights = {
-      'name': 0.20,
-      'ingredients': 0.25,
-      'directions': 0.25,
-      'course': 0.10,
-      'cuisine': 0.05,
-      'serves': 0.05,
-      'time': 0.10,
+    // Core required fields - these determine the base confidence
+    const coreWeights = {
+      'name': 0.25,
+      'ingredients': 0.30,
+      'directions': 0.30,
+      'course': 0.15,
     };
 
-    return (nameConfidence * weights['name']!) +
-        (ingredientsConfidence * weights['ingredients']!) +
-        (directionsConfidence * weights['directions']!) +
-        (courseConfidence * weights['course']!) +
-        (cuisineConfidence * weights['cuisine']!) +
-        (servesConfidence * weights['serves']!) +
-        (timeConfidence * weights['time']!);
+    // Calculate base confidence from core fields
+    double baseConfidence = (nameConfidence * coreWeights['name']!) +
+        (ingredientsConfidence * coreWeights['ingredients']!) +
+        (directionsConfidence * coreWeights['directions']!) +
+        (courseConfidence * coreWeights['course']!);
+    
+    // Optional fields can only boost confidence (up to 10% bonus)
+    // Each optional field found with good confidence adds a small bonus
+    double optionalBonus = 0.0;
+    if (cuisineConfidence > 0.5) optionalBonus += 0.03;
+    if (servesConfidence > 0.5) optionalBonus += 0.03;
+    if (timeConfidence > 0.5) optionalBonus += 0.04;
+    
+    return (baseConfidence + optionalBonus).clamp(0.0, 1.0);
   }
 
   /// Whether this result needs user review (confidence below threshold)

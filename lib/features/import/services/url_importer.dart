@@ -3155,6 +3155,14 @@ class UrlRecipeImporter {
     if (equipmentItems.isNotEmpty) {
       notes = 'Equipment: ${equipmentItems.join(', ')}';
     }
+    
+    // Set confidence for optional fields when they have values
+    final timeConfidence = timing != null && timing.isNotEmpty 
+        ? (usedStructuredFormat ? 0.9 : 0.7) 
+        : 0.0;
+    final servesConfidence = yield != null && yield.isNotEmpty 
+        ? (usedStructuredFormat ? 0.9 : 0.7) 
+        : 0.0;
 
     return RecipeImportResult(
       name: title != null ? _cleanRecipeName(title) : null,
@@ -3172,6 +3180,8 @@ class UrlRecipeImporter {
       courseConfidence: courseConfidence,
       ingredientsConfidence: ingredientsConfidence,
       directionsConfidence: directionsConfidence,
+      timeConfidence: timeConfidence,
+      servesConfidence: servesConfidence,
       sourceUrl: sourceUrl,
       source: RecipeSource.url,
     );
