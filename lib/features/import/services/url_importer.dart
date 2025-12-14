@@ -590,6 +590,10 @@ class UrlRecipeImporter {
   }
   
   bool _looksLikeIngredient(String line) {
+    // First, exclude timestamp lines like "Mixing dough – 00:55"
+    if (_isTimestampedStep(line)) {
+      return false;
+    }
     // Contains measurement units
     if (RegExp(r'\d+\s*(?:g|kg|oz|lb|cup|tbsp|tsp|ml|l|pound|gram|ounce|teaspoon|tablespoon)s?\b', caseSensitive: false).hasMatch(line)) {
       return true;
@@ -602,8 +606,9 @@ class UrlRecipeImporter {
     if (RegExp(r'\d+%\s*[–-]?\s*\d*', caseSensitive: false).hasMatch(line) && line.length < 80) {
       return true;
     }
-    // Format like "Ingredient Name – amount" (with en-dash)
-    if (RegExp(r'^[A-Za-z][^–-]*[–-]\s*\d').hasMatch(line) && line.length < 80) {
+    // Format like "Ingredient Name – amount" (with en-dash) but NOT timestamp format
+    // Must have a measurement-like value after the dash, not just digits (which could be time)
+    if (RegExp(r'^[A-Za-z][^–-]*[–-]\s*\d+\s*(?:g|kg|oz|lb|cup|tbsp|tsp|ml|%)', caseSensitive: false).hasMatch(line) && line.length < 80) {
       return true;
     }
     // Short line with common ingredient words

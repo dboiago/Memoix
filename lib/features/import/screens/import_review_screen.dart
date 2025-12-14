@@ -474,6 +474,17 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             final index = entry.key;
             final ingredient = entry.value;
             final isSelected = _selectedIngredientIndices.contains(index);
+            
+            // Build display text: amount + name or just original
+            String displayText;
+            String? subtitleText;
+            if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
+              displayText = '${ingredient.amount} ${ingredient.unit ?? ''}'.trim();
+              subtitleText = ingredient.name;
+            } else {
+              displayText = ingredient.original;
+              subtitleText = null;
+            }
 
             return CheckboxListTile(
               value: isSelected,
@@ -487,15 +498,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                 });
               },
               title: Text(
-                ingredient.name,
+                displayText,
                 style: TextStyle(
                   decoration: isSelected ? null : TextDecoration.lineThrough,
                   color: isSelected ? null : theme.colorScheme.outline,
                 ),
               ),
-              subtitle: ingredient.amount != null
+              subtitle: subtitleText != null
                   ? Text(
-                      ingredient.amount!,
+                      subtitleText,
                       style: theme.textTheme.bodySmall,
                     )
                   : null,
@@ -511,10 +522,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   Widget _buildDirectionsList(ThemeData theme, RecipeImportResult result) {
     if (result.rawDirections.isEmpty) {
       return Card(
-        color: theme.colorScheme.errorContainer.withOpacity(0.3),
-        child: const Padding(
-          padding: EdgeInsets.all(16),
-          child: Text('No directions found. You can add them after saving.'),
+        color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Text(
+            'No directions found in source. You can add them after saving.',
+            style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+          ),
         ),
       );
     }
