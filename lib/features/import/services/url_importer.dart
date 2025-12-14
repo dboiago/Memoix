@@ -781,52 +781,45 @@ class UrlRecipeImporter {
         return (<TranscriptSegment>[], 'no captionTracks in page');
       }
       
-      final captionTracksJson = '[${captionTrackMatch.group(1)}]';
+      final captionTracksJson = captionTrackMatch.group(1) ?? '';
       
       String? captionUrl;
       String? langCode;
       String matchedType = '';
       
-      // Try manual English captions first - extract both URL and ensure lang param
-      var trackMatch = RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"\.en"[^}]*\}').firstMatch(captionTracksJson);
-      if (trackMatch != null) {
-        matchedType = 'manual-en';
+      // Simple approach: find baseUrl and languageCode separately
+      // First, try to find English captions by looking for languageCode":"en" near a baseUrl
+      
+      // Check if there's an English caption track
+      if (captionTracksJson.contains('"languageCode":"en"') || 
+          captionTracksJson.contains('"vssId":".en"') ||
+          captionTracksJson.contains('"vssId":"a.en"')) {
         langCode = 'en';
+        matchedType = 'en';
       }
       
-      // Try auto-generated English
-      trackMatch ??= RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"a\.en"[^}]*\}').firstMatch(captionTracksJson);
-      if (trackMatch != null && matchedType.isEmpty) {
-        matchedType = 'auto-en';
-        langCode = 'en';
+      // Extract the first baseUrl we can find
+      final baseUrlMatch = RegExp(r'"baseUrl"\s*:\s*"([^"]+)"').firstMatch(captionTracksJson);
+      if (baseUrlMatch != null) {
+        captionUrl = _decodeUnicodeEscapes(baseUrlMatch.group(1)!);
+        if (matchedType.isEmpty) matchedType = 'first';
       }
       
-      // Try any English by language code
-      trackMatch ??= RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"en"[^}]*\}').firstMatch(captionTracksJson);
-      if (trackMatch != null && matchedType.isEmpty) {
-        matchedType = 'lang-en';
-        langCode = 'en';
-      }
-      
-      // Fall back to first available track - extract its language code
-      if (trackMatch == null) {
-        trackMatch = RegExp(r'\{[^}]*"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"([^"]+)"[^}]*\}').firstMatch(captionTracksJson);
-        if (trackMatch != null) {
-          matchedType = 'first-available';
-          langCode = trackMatch.group(2);
-        }
-      }
-      
-      // Extract the URL from the match
-      if (trackMatch != null) {
-        final urlInTrack = RegExp(r'"baseUrl":\s*"([^"]+)"').firstMatch(trackMatch.group(0)!);
-        if (urlInTrack != null) {
-          captionUrl = _decodeUnicodeEscapes(urlInTrack.group(1)!);
+      // If no English found, try to extract any language code
+      if (langCode == null) {
+        final langMatch = RegExp(r'"languageCode"\s*:\s*"([^"]+)"').firstMatch(captionTracksJson);
+        if (langMatch != null) {
+          langCode = langMatch.group(1);
+          matchedType = 'lang-$langCode';
         }
       }
       
       if (captionUrl == null) {
-        return (<TranscriptSegment>[], 'captionTracks found but no baseUrl matched');
+        // Include a sample of what we found for debugging
+        final sample = captionTracksJson.length > 100 
+            ? captionTracksJson.substring(0, 100) 
+            : captionTracksJson;
+        return (<TranscriptSegment>[], 'no baseUrl found. Sample: $sample');
       }
       
       // Ensure the URL has the lang parameter
