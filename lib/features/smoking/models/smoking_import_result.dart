@@ -144,7 +144,6 @@ class RawIngredient {
     if (amt == null || amt.isEmpty) return amt;
     var a = amt;
     a = a.replaceAll(RegExp(r'\btablespoons?\b', caseSensitive: false), 'Tbsp');
-    a = a.replaceAll(RegExp(r'\btables?\b', caseSensitive: false), 'Tbsp');
     a = a.replaceAll(RegExp(r'\btsp\b', caseSensitive: false), 'tsp');
     a = a.replaceAll(RegExp(r'\bteaspoons?\b', caseSensitive: false), 'tsp');
     a = a.replaceAll(RegExp(r'\bcups?\b', caseSensitive: false), 'cup');

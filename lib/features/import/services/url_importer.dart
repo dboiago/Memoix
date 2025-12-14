@@ -100,8 +100,6 @@ class UrlRecipeImporter {
     RegExp(r'\btbl\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btb\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btablespoon[s]?\b', caseSensitive: false): 'Tbsp',
-    // Handle truncated or colloquial variants like "tables"/"table"
-    RegExp(r'\btables?\b', caseSensitive: false): 'Tbsp',
     RegExp(r'\btsp\b', caseSensitive: false): 'tsp',
     RegExp(r'\bteaspoon[s]?\b', caseSensitive: false): 'tsp',
     RegExp(r'\bcup[s]?\b', caseSensitive: false): 'cup',
