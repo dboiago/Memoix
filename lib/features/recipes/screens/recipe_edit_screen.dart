@@ -113,6 +113,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   bool _isSaving = false;
   bool _isLoading = true;
   Recipe? _existingRecipe;
+  bool _showBakerPercent = false; // Toggle for showing baker's percentage column
 
   bool get _isEditing => _existingRecipe != null;
 
@@ -168,6 +169,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       // Normalize course to slug form (lowercase) to match dropdown values
       _selectedCourse = _normaliseCourseSlug(recipe.course.toLowerCase() ?? _selectedCourse);
       _selectedCuisine = recipe.cuisine;
+
+      // Check if any ingredient has baker's percentage - auto-show column if so
+      if (recipe.ingredients.any((i) => i.bakerPercent != null && i.bakerPercent!.isNotEmpty)) {
+        _showBakerPercent = true;
+      }
 
       // Convert ingredients to 3-column row controllers
       // Track sections to insert section headers
@@ -978,65 +984,74 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             const SizedBox(height: 24),
 
             // Ingredients (3-column spreadsheet layout)
-            Builder(builder: (context) {
-              // Check if any ingredient has baker's percentage
-              final hasBakerPercent = _ingredientRows.any(
-                (row) => row.bakerPercentController.text.trim().isNotEmpty,
-              );
-              
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        'Ingredients',
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      'Ingredients',
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Spacer(),
+                    // Baker's percentage toggle
+                    TextButton.icon(
+                      onPressed: () => setState(() => _showBakerPercent = !_showBakerPercent),
+                      icon: Icon(
+                        _showBakerPercent ? Icons.percent : Icons.percent_outlined,
+                        size: 18,
+                        color: _showBakerPercent ? theme.colorScheme.primary : null,
+                      ),
+                      label: Text(
+                        'BK%',
+                        style: TextStyle(
+                          color: _showBakerPercent ? theme.colorScheme.primary : null,
                         ),
                       ),
-                      const Spacer(),
-                      TextButton.icon(
-                        onPressed: _addSectionHeader,
-                        icon: const Icon(Icons.title, size: 18),
-                        label: const Text('Section'),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  
-                  // Column headers
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-                    decoration: BoxDecoration(
-                      color: theme.colorScheme.surfaceContainerHighest,
-                      borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
                     ),
-                    child: Row(
-                      children: [
-                        // Space for drag handle
-                        const SizedBox(width: 32),
-                        Expanded(
-                          flex: hasBakerPercent ? 2 : 3,
-                          child: Text('Ingredient', 
+                    TextButton.icon(
+                      onPressed: _addSectionHeader,
+                      icon: const Icon(Icons.title, size: 18),
+                      label: const Text('Section'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                
+                // Column headers
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surfaceContainerHighest,
+                    borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+                  ),
+                  child: Row(
+                    children: [
+                      // Space for drag handle
+                      const SizedBox(width: 32),
+                      Expanded(
+                        flex: _showBakerPercent ? 2 : 3,
+                        child: Text('Ingredient', 
+                          style: theme.textTheme.labelMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      if (_showBakerPercent) ...[
+                        const SizedBox(width: 8),
+                        SizedBox(
+                          width: 50,
+                          child: Text('BK%', 
                             style: theme.textTheme.labelMedium?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
-                        if (hasBakerPercent) ...[
-                          const SizedBox(width: 8),
-                          SizedBox(
-                            width: 50,
-                            child: Text('BK%', 
-                              style: theme.textTheme.labelMedium?.copyWith(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                        const SizedBox(width: 8),
-                        SizedBox(
+                      ],
+                      const SizedBox(width: 8),
+                      SizedBox(
                           width: 80,
                           child: Text('Amount', 
                             style: theme.textTheme.labelMedium?.copyWith(
@@ -1093,15 +1108,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       itemBuilder: (context, index) {
                         return _buildIngredientRowWidget(
                           index, 
-                          hasBakerPercent: hasBakerPercent,
+                          hasBakerPercent: _showBakerPercent,
                           key: ValueKey(_ingredientRows[index]),
                         );
                       },
                     ),
                   ),
                 ],
-              );
-            }),
+              ),
 
             const SizedBox(height: 24),
 
