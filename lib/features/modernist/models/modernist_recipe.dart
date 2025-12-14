@@ -176,6 +176,9 @@ class ModernistIngredient {
   String? amount;
   String? unit;
   String? notes;
+  
+  /// Section/group header (e.g., "For the Gel", "For the Foam")
+  String? section;
 
   ModernistIngredient();
 
@@ -184,6 +187,7 @@ class ModernistIngredient {
     this.amount,
     this.unit,
     this.notes,
+    this.section,
   });
 
   /// Display string like "2g Sodium Alginate" or just "Agar Agar"
@@ -204,6 +208,7 @@ class ModernistIngredient {
     'amount': amount,
     'unit': unit,
     'notes': notes,
+    'section': section,
   };
 
   factory ModernistIngredient.fromJson(Map<String, dynamic> json) {
@@ -211,7 +216,8 @@ class ModernistIngredient {
       ..name = json['name'] as String? ?? ''
       ..amount = json['amount'] as String?
       ..unit = json['unit'] as String?
-      ..notes = json['notes'] as String?;
+      ..notes = json['notes'] as String?
+      ..section = json['section'] as String?;
   }
 }
 

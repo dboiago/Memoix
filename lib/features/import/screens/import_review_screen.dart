@@ -1018,6 +1018,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   /// Build a ModernistRecipe from import data
   ModernistRecipe _buildModernistRecipe() {
     // Build ingredients from selected
+    // Section headers (empty name) are tracked to assign sections to following ingredients
     final ingredients = <ModernistIngredient>[];
     String? currentSection;
     for (final index in _selectedIngredientIndices.toList()..sort()) {
@@ -1030,11 +1031,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           continue;
         }
         
+        // Add the ingredient with current section
         ingredients.add(ModernistIngredient.create(
           name: rawIngredient.name,
           amount: rawIngredient.amount,
           unit: rawIngredient.unit,
           notes: rawIngredient.preparation,
+          section: currentSection,
         ));
       }
     }

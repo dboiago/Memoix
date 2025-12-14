@@ -159,12 +159,13 @@ class RecipeImportResult {
 
   /// Convert to a ModernistRecipe (for high-confidence Modernist imports)
   ModernistRecipe toModernistRecipe(String uuid) {
-    // Convert regular ingredients to ModernistIngredients
+    // Convert regular ingredients to ModernistIngredients, preserving sections
     final modernistIngredients = ingredients.map((i) => ModernistIngredient.create(
       name: i.name,
       amount: i.amount,
       unit: i.unit,
       notes: i.preparation,
+      section: i.section,
     )).toList();
 
     final recipe = ModernistRecipe.create(

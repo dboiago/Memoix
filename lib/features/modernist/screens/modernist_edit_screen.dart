@@ -96,7 +96,14 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         }
       }
 
+      // Track sections to insert section headers
+      String? lastSection;
       for (final ingredient in recipe.ingredients) {
+        // If this ingredient has a different section, add a section header
+        if (ingredient.section != null && ingredient.section != lastSection) {
+          _addIngredientRow(name: ingredient.section!, isSection: true);
+          lastSection = ingredient.section;
+        }
         // Combine amount and unit for display
         final amountParts = <String>[
           if (ingredient.amount != null && ingredient.amount!.isNotEmpty) ingredient.amount!,
@@ -126,12 +133,23 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     setState(() => _isLoading = false);
   }
 
-  void _addIngredientRow({String name = '', String amount = '', String notes = ''}) {
+  void _addIngredientRow({String name = '', String amount = '', String notes = '', bool isSection = false}) {
     _ingredientRows.add(_IngredientRow(
       nameController: TextEditingController(text: name),
       amountController: TextEditingController(text: amount),
       notesController: TextEditingController(text: notes),
+      isSection: isSection,
     ),);
+  }
+
+  void _addSectionHeader() {
+    _ingredientRows.add(_IngredientRow(
+      nameController: TextEditingController(),
+      amountController: TextEditingController(),
+      notesController: TextEditingController(),
+      isSection: true,
+    ),);
+    setState(() {});
   }
 
   void _addDirectionRow({String text = ''}) {
@@ -450,11 +468,25 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Ingredients',
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+        Row(
+          children: [
+            Text(
+              'Ingredients',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Spacer(),
+            // Add section header button
+            TextButton.icon(
+              onPressed: _addSectionHeader,
+              icon: const Icon(Icons.folder_outlined, size: 18),
+              label: const Text('Add Section'),
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 8),
 
@@ -544,6 +576,79 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
 
+    // Section header row (different styling)
+    if (row.isSection) {
+      return Container(
+        key: key,
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+        decoration: BoxDecoration(
+          color: theme.colorScheme.secondaryContainer.withOpacity(0.3),
+          border: isLast
+              ? null
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+        ),
+        child: Row(
+          children: [
+            // Drag handle
+            ReorderableDragStartListener(
+              index: index,
+              child: Icon(
+                Icons.drag_handle,
+                size: 20,
+                color: theme.colorScheme.outline,
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Section icon
+            Icon(
+              Icons.folder_outlined,
+              size: 18,
+              color: theme.colorScheme.secondary,
+            ),
+            const SizedBox(width: 8),
+            // Section name input
+            Expanded(
+              child: TextField(
+                controller: row.nameController,
+                decoration: InputDecoration(
+                  isDense: true,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  border: const OutlineInputBorder(),
+                  hintText: 'Section name (e.g., For the Gel)',
+                  hintStyle: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.outline,
+                  ),
+                ),
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.w600,
+                  color: theme.colorScheme.secondary,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            // Delete button
+            SizedBox(
+              width: 40,
+              child: IconButton(
+                icon: Icon(
+                  Icons.close,
+                  size: 18,
+                  color: theme.colorScheme.outline,
+                ),
+                onPressed: _ingredientRows.length > 1
+                    ? () => _removeIngredientRow(index)
+                    : null,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    // Regular ingredient row
     return Container(
       key: key,
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
@@ -1292,33 +1397,41 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     setState(() => _isSaving = true);
 
     try {
-      // Build ingredients
-      final ingredients = _ingredientRows
-          .where((row) => row.nameController.text.isNotEmpty)
-          .map((row) {
-            // Parse amount for amount and unit
-            final amountText = row.amountController.text.trim();
-            String? amount;
-            String? unit;
-            if (amountText.isNotEmpty) {
-              final parts = amountText.split(RegExp(r'\s+'));
-              if (parts.length >= 2) {
-                amount = parts.first;
-                unit = parts.sublist(1).join(' ');
-              } else {
-                amount = amountText;
-              }
+      // Build ingredients, tracking sections
+      final ingredients = <ModernistIngredient>[];
+      String? currentSection;
+      
+      for (final row in _ingredientRows) {
+        if (row.nameController.text.isEmpty) continue;
+        
+        if (row.isSection) {
+          // This is a section header - track it for following ingredients
+          currentSection = row.nameController.text.trim();
+        } else {
+          // Regular ingredient - assign current section
+          final amountText = row.amountController.text.trim();
+          String? amount;
+          String? unit;
+          if (amountText.isNotEmpty) {
+            final parts = amountText.split(RegExp(r'\s+'));
+            if (parts.length >= 2) {
+              amount = parts.first;
+              unit = parts.sublist(1).join(' ');
+            } else {
+              amount = amountText;
             }
-            return ModernistIngredient.create(
-              name: row.nameController.text.trim(),
-              amount: amount,
-              unit: unit,
-              notes: row.notesController.text.trim().isEmpty
-                  ? null
-                  : row.notesController.text.trim(),
-            );
-          })
-          .toList();
+          }
+          ingredients.add(ModernistIngredient.create(
+            name: row.nameController.text.trim(),
+            amount: amount,
+            unit: unit,
+            notes: row.notesController.text.trim().isEmpty
+                ? null
+                : row.notesController.text.trim(),
+            section: currentSection,
+          ));
+        }
+      }
 
       // Build directions from individual rows
       final directions = _directionRows
@@ -1404,11 +1517,13 @@ class _IngredientRow {
   final TextEditingController nameController;
   final TextEditingController amountController;
   final TextEditingController notesController;
+  bool isSection; // True if this is a section header (e.g., "For the Gel")
 
   _IngredientRow({
     required this.nameController,
     required this.amountController,
     required this.notesController,
+    this.isSection = false,
   });
 
   void dispose() {
