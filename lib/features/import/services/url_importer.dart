@@ -856,11 +856,10 @@ class UrlRecipeImporter {
       ).allMatches(xml);
     }
     
-    // Pattern 3: Handle self-closing or empty text elements differently
+    // Pattern 3: Handle quotes as either double or single
     if (textMatches.isEmpty) {
-      // Try to find any text elements at all
       textMatches = RegExp(
-        r'<text[^>]+start=["\']([^"\']+)["\'][^>]*>([^<]*)',
+        r"<text[^>]+start=[\"']([^\"']+)[\"'][^>]*>([^<]*)",
         dotAll: true,
       ).allMatches(xml);
     }
