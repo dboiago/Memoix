@@ -495,8 +495,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     if (hasBakerPercent) ...[
                       const SizedBox(width: 8),
                       SizedBox(
-                        width: 50,
-                        child: Text('B%', 
+                        width: 60,
+                        child: Text('BK%', 
                           style: theme.textTheme.labelMedium?.copyWith(
                             fontWeight: FontWeight.bold,
                           ),
@@ -587,7 +587,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                           if (hasBakerPercent) ...[
                             const SizedBox(width: 8),
                             SizedBox(
-                              width: 50,
+                              width: 60,
                               child: InputDecorator(
                                 decoration: const InputDecoration(
                                   isDense: true,
