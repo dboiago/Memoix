@@ -255,13 +255,11 @@ class UrlRecipeImporter {
       
       // Try to fetch and parse transcript/captions with timestamps
       List<TranscriptSegment> transcriptSegments = [];
-      String transcriptDebug = '';
       try {
-        final (segments, debug) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
+        final (segments, _) = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
         transcriptSegments = segments;
-        transcriptDebug = debug;
-      } catch (e) {
-        transcriptDebug = 'err: $e';
+      } catch (_) {
+        // Transcript fetch failed - will fall back to chapters or description
       }
       
       // Parse the description for ingredients
