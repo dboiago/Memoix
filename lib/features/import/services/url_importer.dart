@@ -131,13 +131,14 @@ class UrlRecipeImporter {
       }
       
       // Try fetching with standard browser headers first
-      // Note: Don't use Accept-Encoding as Dart http package doesn't auto-decompress
+      // Use Accept-Encoding: identity to prevent compression (Dart http can't auto-decompress brotli)
       var response = await http.get(
         Uri.parse(url),
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'identity',
           'Sec-Fetch-Dest': 'document',
           'Sec-Fetch-Mode': 'navigate',
           'Sec-Fetch-Site': 'none',
