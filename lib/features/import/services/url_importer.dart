@@ -837,31 +837,37 @@ class UrlRecipeImporter {
       // Debug info about URL
       final urlDebug = 'url_lang=$langInUrl, matchType=$matchedType';
       
-      // Try fetching captions - first without format param (YouTube returns XML by default)
-      // Then try with different format parameters if needed
-      final formats = ['', 'fmt=srv3', 'fmt=json3'];
+      // Try fetching captions with multiple approaches:
+      // 1. Use extracted URL as-is
+      // 2. Try with different format parameters
+      // 3. Try simplified URL with just video ID and lang (fallback)
+      
+      final urlsToTry = <String>[
+        captionUrl,  // Original extracted URL
+        'https://www.youtube.com/api/timedtext?v=$videoId&lang=en',  // Simple URL
+        'https://www.youtube.com/api/timedtext?v=$videoId&lang=en&kind=asr',  // Auto-generated
+        'https://www.youtube.com/api/timedtext?v=$videoId&lang=en&fmt=srv3',  // With format
+      ];
+      
       String? successBody;
-      String usedFormat = '';
+      String usedUrl = '';
       String lastError = '';
       
-      for (final fmt in formats) {
-        final url = fmt.isEmpty 
-            ? captionUrl 
-            : (captionUrl.contains('?') ? '$captionUrl&$fmt' : '$captionUrl?$fmt');
-        
+      for (final baseUrl in urlsToTry) {
         try {
           final response = await http.get(
-            Uri.parse(url),
+            Uri.parse(baseUrl),
             headers: {
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
               'Accept': '*/*',
               'Accept-Language': 'en-US,en;q=0.9',
+              'Referer': 'https://www.youtube.com/watch?v=$videoId',
             },
           );
           
           if (response.statusCode == 200 && response.body.isNotEmpty) {
             successBody = response.body;
-            usedFormat = fmt.isEmpty ? 'default' : fmt;
+            usedUrl = baseUrl.length > 50 ? '${baseUrl.substring(0, 50)}...' : baseUrl;
             break;
           } else {
             lastError = 'status=${response.statusCode}, len=${response.body.length}';
@@ -874,8 +880,7 @@ class UrlRecipeImporter {
       
       if (successBody == null || successBody.isEmpty) {
         // Show URL debug info to help diagnose
-        final urlSample = captionUrl.length > 60 ? '${captionUrl.substring(0, 60)}...' : captionUrl;
-        return (<TranscriptSegment>[], 'formats failed ($urlDebug, $lastError). URL: $urlSample');
+        return (<TranscriptSegment>[], 'all URLs failed ($urlDebug, $lastError)');
       }
       
       // Parse transcript - try XML first, then JSON
@@ -889,10 +894,10 @@ class UrlRecipeImporter {
       if (segments.isEmpty) {
         final bodyLen = successBody.length;
         final sample = bodyLen > 100 ? successBody.substring(0, 100) : successBody;
-        return (<TranscriptSegment>[], 'no segments ($matchedType, $usedFormat, len=$bodyLen). Sample: $sample');
+        return (<TranscriptSegment>[], 'no segments (len=$bodyLen). Sample: $sample');
       }
       
-      return (segments, '$matchedType/$usedFormat: ${segments.length} segments');
+      return (segments, '$usedUrl: ${segments.length} segments');
     } catch (e) {
       return (<TranscriptSegment>[], 'exception: ${e.toString().substring(0, 50.clamp(0, e.toString().length))}');
     }
