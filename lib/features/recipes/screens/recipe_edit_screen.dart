@@ -1042,7 +1042,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       if (_showBakerPercent) ...[
                         const SizedBox(width: 8),
                         SizedBox(
-                          width: 50,
+                          width: 65,
                           child: Text('BK%', 
                             style: theme.textTheme.labelMedium?.copyWith(
                               fontWeight: FontWeight.bold,
@@ -1597,7 +1597,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           if (hasBakerPercent) ...[
             const SizedBox(width: 8),
             SizedBox(
-              width: 50,
+              width: 65,
               child: TextField(
                 controller: row.bakerPercentController,
                 decoration: InputDecoration(

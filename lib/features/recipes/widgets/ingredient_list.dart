@@ -147,6 +147,9 @@ class _IngredientListState extends State<IngredientList> {
       }
     }
     
+    // Check for baker's percentage
+    final hasBakerPercent = ingredient.bakerPercent != null && ingredient.bakerPercent!.isNotEmpty;
+    
     // Get preparation and alternative separately
     final hasPreparation = ingredient.preparation != null && ingredient.preparation!.isNotEmpty;
     final hasAlternative = ingredient.alternative != null && ingredient.alternative!.isNotEmpty;
@@ -214,6 +217,25 @@ class _IngredientListState extends State<IngredientList> {
                   color: isChecked
                       ? theme.colorScheme.onSurface.withOpacity(0.5)
                       : theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
+
+            // Baker's percentage badge
+            if (hasBakerPercent) ...[
+              const SizedBox(width: 6),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.tertiaryContainer,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Text(
+                  ingredient.bakerPercent!,
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onTertiaryContainer,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ],
