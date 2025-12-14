@@ -888,8 +888,11 @@ class UrlRecipeImporter {
           lastError = 'youtubei err: ${e.toString().length > 20 ? e.toString().substring(0, 20) : e}';
         }
       } else {
-        lastError = 'no transcript params in page';
+        lastError = 'no params';
       }
+      
+      // Store youtubei result before trying timedtext
+      final youtubeiResult = lastError;
       
       // Method 2: Try timedtext URLs as fallback
       final urlsToTry = <String>[
@@ -913,7 +916,7 @@ class UrlRecipeImporter {
             usedMethod = 'timedtext';
             break;
           } else {
-            lastError = 'timedtext: status=${response.statusCode}, len=${response.body.length}';
+            lastError = '$youtubeiResult | tt:${response.body.length}';
           }
         } catch (e) {
           lastError = 'timedtext err';
