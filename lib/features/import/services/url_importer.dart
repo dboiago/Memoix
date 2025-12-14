@@ -8,6 +8,22 @@ import '../../recipes/models/recipe.dart';
 import '../../recipes/models/spirit.dart';
 import '../models/recipe_import_result.dart';
 
+/// Helper class for YouTube chapters
+class YouTubeChapter {
+  final String title;
+  final int startSeconds;
+  
+  YouTubeChapter({required this.title, required this.startSeconds});
+}
+
+/// Helper class for transcript segments with timestamps
+class TranscriptSegment {
+  final String text;
+  final double startSeconds;
+  
+  TranscriptSegment({required this.text, required this.startSeconds});
+}
+
 /// Service to import recipes from URLs
 class UrlRecipeImporter {
   static const _uuid = Uuid();
@@ -234,21 +250,31 @@ class UrlRecipeImporter {
       // Fallback to standard thumbnail URL
       thumbnail ??= 'https://img.youtube.com/vi/$videoId/maxresdefault.jpg';
       
-      // Try to fetch and parse transcript/captions
-      List<String> transcriptDirections = [];
+      // Extract chapters from description (timestamp lines)
+      final chapters = _extractYouTubeChapters(description ?? '');
+      
+      // Try to fetch and parse transcript/captions with timestamps
+      List<TranscriptSegment> transcriptSegments = [];
       try {
-        transcriptDirections = await _fetchYouTubeTranscript(videoId, body);
+        transcriptSegments = await _fetchYouTubeTranscriptWithTimestamps(videoId, body);
       } catch (_) {
         // Transcript fetch failed - continue without it
       }
       
-      // Parse the description for ingredients and directions
+      // Parse the description for ingredients
       final parsedDescription = _parseYouTubeDescription(description ?? '');
       
-      // Use transcript directions if description doesn't have them
-      List<String> directions = parsedDescription['directions'] ?? [];
-      if (directions.isEmpty && transcriptDirections.isNotEmpty) {
-        directions = transcriptDirections;
+      // Build directions from chapters + transcript
+      List<String> directions = [];
+      if (chapters.isNotEmpty && transcriptSegments.isNotEmpty) {
+        // Use chapters to slice transcript into steps
+        directions = _buildDirectionsFromChapters(chapters, transcriptSegments);
+      } else if (chapters.isNotEmpty) {
+        // Just use chapter titles if no transcript
+        directions = chapters.map((c) => c.title).toList();
+      } else {
+        // Fall back to description parsing
+        directions = parsedDescription['directions'] ?? [];
       }
       
       // Build ingredients list
@@ -684,7 +710,163 @@ class UrlRecipeImporter {
     return cleaned.trim();
   }
   
-  /// Fetch YouTube transcript/captions
+  /// Extract chapters from YouTube description
+  /// Format: "Chapter Title – MM:SS" or "MM:SS Chapter Title"
+  List<YouTubeChapter> _extractYouTubeChapters(String description) {
+    final chapters = <YouTubeChapter>[];
+    final lines = description.split('\n');
+    
+    for (var line in lines) {
+      line = line.trim();
+      if (line.isEmpty) continue;
+      
+      // Format 1: "Title – MM:SS" or "Title - M:SS"
+      var match = RegExp(r'^(.+?)\s*[–-]\s*(\d{1,2}):(\d{2})(?::(\d{2}))?\s*$').firstMatch(line);
+      if (match != null) {
+        final title = match.group(1)?.trim() ?? '';
+        final minutes = int.tryParse(match.group(2) ?? '0') ?? 0;
+        final seconds = int.tryParse(match.group(3) ?? '0') ?? 0;
+        final hours = int.tryParse(match.group(4) ?? '0') ?? 0;
+        
+        if (title.isNotEmpty && !_isIgnorableLine(title)) {
+          chapters.add(YouTubeChapter(
+            title: title,
+            startSeconds: hours * 3600 + minutes * 60 + seconds,
+          ));
+        }
+        continue;
+      }
+      
+      // Format 2: "MM:SS Title" or "M:SS Title"
+      match = RegExp(r'^(\d{1,2}):(\d{2})(?::(\d{2}))?\s+(.+)$').firstMatch(line);
+      if (match != null) {
+        final minutes = int.tryParse(match.group(1) ?? '0') ?? 0;
+        final seconds = int.tryParse(match.group(2) ?? '0') ?? 0;
+        final hours = int.tryParse(match.group(3) ?? '0') ?? 0;
+        final title = match.group(4)?.trim() ?? '';
+        
+        if (title.isNotEmpty && !_isIgnorableLine(title)) {
+          chapters.add(YouTubeChapter(
+            title: title,
+            startSeconds: hours * 3600 + minutes * 60 + seconds,
+          ));
+        }
+      }
+    }
+    
+    return chapters;
+  }
+  
+  /// Fetch YouTube transcript with timestamps
+  Future<List<TranscriptSegment>> _fetchYouTubeTranscriptWithTimestamps(String videoId, String pageBody) async {
+    try {
+      final captionTrackMatch = RegExp(
+        r'"captionTracks":\s*\[(.*?)\]',
+        dotAll: true,
+      ).firstMatch(pageBody);
+      
+      if (captionTrackMatch == null) return [];
+      
+      final captionTracksJson = '[${captionTrackMatch.group(1)}]';
+      
+      String? captionUrl;
+      var urlMatch = RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"\.en"').firstMatch(captionTracksJson);
+      urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"vssId":\s*"a\.en"').firstMatch(captionTracksJson);
+      urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"[^}]*"languageCode":\s*"en"').firstMatch(captionTracksJson);
+      urlMatch ??= RegExp(r'"baseUrl":\s*"([^"]+)"').firstMatch(captionTracksJson);
+      
+      if (urlMatch != null) {
+        captionUrl = _decodeUnicodeEscapes(urlMatch.group(1)!);
+      }
+      
+      if (captionUrl == null) return [];
+      
+      final captionResponse = await http.get(
+        Uri.parse(captionUrl),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      );
+      
+      if (captionResponse.statusCode != 200) return [];
+      
+      // Parse XML transcript with timestamps
+      return _parseTranscriptXmlWithTimestamps(captionResponse.body);
+    } catch (_) {
+      return [];
+    }
+  }
+  
+  /// Parse YouTube transcript XML keeping timestamps
+  List<TranscriptSegment> _parseTranscriptXmlWithTimestamps(String xml) {
+    final segments = <TranscriptSegment>[];
+    
+    // Extract text elements with their start times
+    final textMatches = RegExp(r'<text\s+start="([^"]+)"[^>]*>([^<]*)</text>').allMatches(xml);
+    
+    for (final match in textMatches) {
+      final startStr = match.group(1) ?? '0';
+      final startSeconds = double.tryParse(startStr) ?? 0;
+      var text = match.group(2) ?? '';
+      text = _decodeHtml(text);
+      text = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+      
+      if (text.isNotEmpty) {
+        segments.add(TranscriptSegment(text: text, startSeconds: startSeconds));
+      }
+    }
+    
+    return segments;
+  }
+  
+  /// Build directions by slicing transcript based on chapter timestamps
+  List<String> _buildDirectionsFromChapters(
+    List<YouTubeChapter> chapters,
+    List<TranscriptSegment> segments,
+  ) {
+    final directions = <String>[];
+    
+    for (var i = 0; i < chapters.length; i++) {
+      final chapter = chapters[i];
+      final nextChapterStart = i + 1 < chapters.length 
+          ? chapters[i + 1].startSeconds 
+          : double.infinity;
+      
+      // Get transcript segments for this chapter
+      final chapterSegments = segments.where((s) =>
+          s.startSeconds >= chapter.startSeconds &&
+          s.startSeconds < nextChapterStart
+      ).toList();
+      
+      if (chapterSegments.isEmpty) {
+        // No transcript for this chapter, just use title
+        directions.add(chapter.title);
+        continue;
+      }
+      
+      // Combine segment text
+      var text = chapterSegments.map((s) => s.text).join(' ');
+      
+      // Clean up the text
+      text = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+      
+      // Capitalize first letter
+      if (text.isNotEmpty) {
+        text = text[0].toUpperCase() + text.substring(1);
+      }
+      
+      // Add period if missing
+      if (text.isNotEmpty && !text.endsWith('.') && !text.endsWith('!') && !text.endsWith('?')) {
+        text = '$text.';
+      }
+      
+      directions.add(text);
+    }
+    
+    return directions;
+  }
+
+  /// Fetch YouTube transcript/captions (legacy - keeping for compatibility)
   Future<List<String>> _fetchYouTubeTranscript(String videoId, String pageBody) async {
     try {
       // Find the captions track URL in the page response
@@ -1576,6 +1758,39 @@ class UrlRecipeImporter {
     List<String> notesParts = [];
     String? amount;
     String? inlineSection;
+    
+    // Handle baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
+    // or "Warm Water, 75% – 450g (2 Cups)"
+    final bakerPercentMatch = RegExp(
+      r'^([^,]+),\s*\d+%\s*[–-]\s*(\d+\s*(?:g|kg|ml|l))\s*(?:\(([^)]+)\))?',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (bakerPercentMatch != null) {
+      final name = bakerPercentMatch.group(1)?.trim() ?? '';
+      final metric = bakerPercentMatch.group(2)?.trim() ?? '';
+      final imperial = bakerPercentMatch.group(3)?.trim();
+      
+      // Use metric as the amount, imperial as notes
+      return Ingredient.create(
+        name: name,
+        amount: metric,
+        notes: imperial,
+      );
+    }
+    
+    // Handle simple "Ingredient, as needed" or "Ingredient Name – amount" formats
+    final simpleAsNeededMatch = RegExp(
+      r'^([^,–-]+),\s*(as needed|to taste)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (simpleAsNeededMatch != null) {
+      final name = simpleAsNeededMatch.group(1)?.trim() ?? '';
+      final note = simpleAsNeededMatch.group(2)?.trim() ?? '';
+      return Ingredient.create(
+        name: name,
+        amount: note,
+      );
+    }
     
     // Check for inline section markers like "[Sauce]" or "(For the sauce)" at the start
     final inlineSectionMatch = RegExp(

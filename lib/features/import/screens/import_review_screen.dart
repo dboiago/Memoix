@@ -300,10 +300,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     final isOptional = _optionalFields.contains(title);
     
     if (confidence >= 0.7) {
-      indicatorColor = Colors.green;
+      indicatorColor = theme.colorScheme.primary;
       label = 'Good';
     } else if (confidence >= 0.4) {
-      indicatorColor = Colors.orange;
+      indicatorColor = theme.colorScheme.secondary;
       label = 'Review';
     } else if (isOptional) {
       // Optional fields with no data - subtle indicator
