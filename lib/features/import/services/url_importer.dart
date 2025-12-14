@@ -4251,6 +4251,7 @@ class UrlRecipeImporter {
       ingredients: ingredients,
       directions: rawDirections,
       notes: notes,
+      equipment: equipmentItems,
       rawIngredients: rawIngredients,
       rawDirections: rawDirections,
       detectedCourses: detectedCourses,

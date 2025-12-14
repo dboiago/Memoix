@@ -15,6 +15,9 @@ class RecipeImportResult {
   final String? notes;
   final String? imageUrl;
   final NutritionInfo? nutrition;
+  
+  /// Special equipment required (for Modernist recipes)
+  final List<String> equipment;
 
   /// Raw extracted data for user mapping/review
   final List<RawIngredientData> rawIngredients;
@@ -54,6 +57,7 @@ class RecipeImportResult {
     this.notes,
     this.imageUrl,
     this.nutrition,
+    this.equipment = const [],
     this.rawIngredients = const [],
     this.rawDirections = const [],
     this.rawText,

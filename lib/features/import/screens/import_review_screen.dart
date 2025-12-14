@@ -178,6 +178,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           _buildIngredientsList(theme, result),
           const SizedBox(height: 24),
 
+          // Equipment (for Modernist recipes)
+          if (result.equipment.isNotEmpty) ...[
+            _buildSectionTitle(theme, 'Equipment', Icons.build_outlined),
+            const SizedBox(height: 8),
+            _buildEquipmentList(theme, result),
+            const SizedBox(height: 24),
+          ],
+
           // Directions
           _buildSectionTitle(theme, 'Directions', Icons.format_list_numbered,
               confidence: result.directionsConfidence,),
@@ -712,6 +720,25 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     );
   }
 
+  Widget _buildEquipmentList(ThemeData theme, RecipeImportResult result) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: result.equipment.map((item) {
+            return Chip(
+              avatar: const Icon(Icons.build_outlined, size: 18),
+              label: Text(item),
+              backgroundColor: theme.colorScheme.secondaryContainer.withOpacity(0.5),
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+
   Widget _buildDirectionsList(ThemeData theme, RecipeImportResult result) {
     if (result.rawDirections.isEmpty) {
       return Card(
@@ -870,6 +897,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       }
     }
 
+    // Build notes - include equipment if present
+    String? notes = widget.importResult.notes;
+    if (widget.importResult.equipment.isNotEmpty) {
+      final equipmentText = 'Equipment: ${widget.importResult.equipment.join(', ')}';
+      notes = notes != null && notes.isNotEmpty 
+          ? '$notes\n\n$equipmentText' 
+          : equipmentText;
+    }
+
     final recipe = Recipe.create(
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
@@ -886,7 +922,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           : _timeController.text.trim(),
       ingredients: ingredients,
       directions: directions,
-      notes: widget.importResult.notes,
+      notes: notes,
       imageUrl: widget.importResult.imageUrl,
       sourceUrl: widget.importResult.sourceUrl,
       source: widget.importResult.source,

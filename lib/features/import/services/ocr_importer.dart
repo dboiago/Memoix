@@ -388,12 +388,13 @@ class OcrRecipeImporter {
         rawDirections.add(cleanedStep);
         directions.add(cleanedStep);
       } else if (inIngredients || hasAmount) {
-        rawIngredients.add(RawIngredientData(
-          original: line,
-          name: line,
-          looksLikeIngredient: hasAmount,
-        ),);
-        ingredients.add(Ingredient.create(name: line));
+        final parsed = _parseIngredientLine(line);
+        rawIngredients.add(parsed);
+        ingredients.add(Ingredient.create(
+          name: parsed.name,
+          amount: parsed.amount,
+          unit: parsed.unit,
+        ));
       } else if (directions.isNotEmpty && !inIngredients) {
         // Continue previous direction
         if (rawDirections.last.length < 100) {
@@ -406,9 +407,13 @@ class OcrRecipeImporter {
         }
       } else {
         // Ambiguous - track as potential ingredient
+        final parsed = _parseIngredientLine(line);
         rawIngredients.add(RawIngredientData(
           original: line,
-          name: line,
+          name: parsed.name,
+          amount: parsed.amount,
+          unit: parsed.unit,
+          bakerPercent: parsed.bakerPercent,
           looksLikeIngredient: false, // Uncertain
         ),);
         ingredients.add(Ingredient.create(name: line));
@@ -449,6 +454,50 @@ class OcrRecipeImporter {
       servesConfidence: 0.0,
       timeConfidence: 0.0,
       source: RecipeSource.ocr,
+    );
+  }
+
+  /// Parse an ingredient line into structured data
+  /// Handles baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
+  RawIngredientData _parseIngredientLine(String line) {
+    // Try baker's percentage format first: "Name, XX% – amount (alt amount)"
+    final bakerMatch = RegExp(
+      r'^([^,]+),\s*([\d.]+)%\s*[–-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',
+      caseSensitive: false,
+    ).firstMatch(line);
+    
+    if (bakerMatch != null) {
+      return RawIngredientData(
+        original: line,
+        name: bakerMatch.group(1)?.trim() ?? line,
+        bakerPercent: '${bakerMatch.group(2)}%',
+        amount: bakerMatch.group(3)?.trim(),
+        preparation: bakerMatch.group(4)?.trim(), // Imperial conversion as notes
+        looksLikeIngredient: true,
+      );
+    }
+    
+    // Try standard format: "amount unit name"
+    final standardMatch = RegExp(
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon|c\.|t\.)?s?\s+(.+)',
+      caseSensitive: false,
+    ).firstMatch(line);
+    
+    if (standardMatch != null) {
+      return RawIngredientData(
+        original: line,
+        amount: standardMatch.group(1)?.trim(),
+        unit: standardMatch.group(2)?.trim(),
+        name: standardMatch.group(3)?.trim() ?? line,
+        looksLikeIngredient: true,
+      );
+    }
+    
+    // Fallback - just use the line as name
+    return RawIngredientData(
+      original: line,
+      name: line,
+      looksLikeIngredient: false,
     );
   }
 
