@@ -181,6 +181,7 @@ class UrlRecipeImporter {
 
       // Try to find JSON-LD structured data first (most reliable)
       final jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
+      RecipeImportResult? jsonLdResult;
       
       for (final script in jsonLdScripts) {
         try {
@@ -189,8 +190,8 @@ class UrlRecipeImporter {
           // If decoding fails, try to fix common encoding issues
           try {
             final data = jsonDecode(scriptText);
-            final result = _parseJsonLdWithConfidence(data, url);
-            if (result != null) return result;
+            jsonLdResult = _parseJsonLdWithConfidence(data, url);
+            if (jsonLdResult != null) break;
           } on FormatException {
             // If JSON decode fails due to encoding, try to re-encode
             try {
@@ -198,8 +199,8 @@ class UrlRecipeImporter {
               final bytes = utf8.encode(scriptText);
               final fixed = utf8.decode(bytes, allowMalformed: true);
               final data = jsonDecode(fixed);
-              final result = _parseJsonLdWithConfidence(data, url);
-              if (result != null) return result;
+              jsonLdResult = _parseJsonLdWithConfidence(data, url);
+              if (jsonLdResult != null) break;
             } catch (_) {
               // Skip this script if we can't fix it
               continue;
@@ -208,6 +209,46 @@ class UrlRecipeImporter {
         } catch (_) {
           continue;
         }
+      }
+      
+      // If JSON-LD found a result, check if we need to supplement with equipment from HTML
+      if (jsonLdResult != null) {
+        // If no equipment from JSON-LD, try to get it from HTML sections
+        if (jsonLdResult.equipment.isEmpty) {
+          final sectionResult = _parseHtmlBySections(document);
+          final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
+          if (htmlEquipment.isNotEmpty) {
+            // Return a new result with equipment added
+            return RecipeImportResult(
+              name: jsonLdResult.name,
+              course: jsonLdResult.course,
+              cuisine: jsonLdResult.cuisine,
+              subcategory: jsonLdResult.subcategory,
+              serves: jsonLdResult.serves,
+              time: jsonLdResult.time,
+              ingredients: jsonLdResult.ingredients,
+              directions: jsonLdResult.directions,
+              notes: jsonLdResult.notes,
+              imageUrl: jsonLdResult.imageUrl,
+              nutrition: jsonLdResult.nutrition,
+              equipment: htmlEquipment,
+              rawIngredients: jsonLdResult.rawIngredients,
+              rawDirections: jsonLdResult.rawDirections,
+              detectedCourses: jsonLdResult.detectedCourses,
+              detectedCuisines: jsonLdResult.detectedCuisines,
+              nameConfidence: jsonLdResult.nameConfidence,
+              courseConfidence: jsonLdResult.courseConfidence,
+              cuisineConfidence: jsonLdResult.cuisineConfidence,
+              ingredientsConfidence: jsonLdResult.ingredientsConfidence,
+              directionsConfidence: jsonLdResult.directionsConfidence,
+              servesConfidence: jsonLdResult.servesConfidence,
+              timeConfidence: jsonLdResult.timeConfidence,
+              sourceUrl: jsonLdResult.sourceUrl,
+              source: jsonLdResult.source,
+            );
+          }
+        }
+        return jsonLdResult;
       }
       
       // Try to extract recipe data from embedded JavaScript (React/Next.js/Vue hydration state)
@@ -2149,6 +2190,9 @@ class UrlRecipeImporter {
     
     final time = _parseTime(data);
     final timeConfidence = time != null ? 0.9 : 0.0;
+    
+    // Extract equipment from JSON-LD 'tool' field or look for equipment in description/keywords
+    final equipmentList = _extractEquipmentFromJsonLd(data);
 
     // For drinks, detect the base spirit
     String? subcategory;
@@ -2193,6 +2237,7 @@ class UrlRecipeImporter {
       time: time,
       ingredients: ingredients,
       directions: directions,
+      equipment: equipmentList,
       notes: _decodeHtml(_parseString(data['description']) ?? ''),
       imageUrl: _parseImage(data['image']),
       nutrition: nutrition,
@@ -2223,6 +2268,52 @@ class UrlRecipeImporter {
           .toList();
     }
     return [];
+  }
+
+  /// Extract equipment from JSON-LD data
+  /// Schema.org Recipe can have 'tool' field for equipment
+  List<String> _extractEquipmentFromJsonLd(Map data) {
+    final equipment = <String>[];
+    
+    // Check 'tool' field (schema.org standard)
+    final tool = data['tool'];
+    if (tool != null) {
+      if (tool is String && tool.isNotEmpty) {
+        equipment.add(_decodeHtml(tool));
+      } else if (tool is List) {
+        for (final item in tool) {
+          if (item is String && item.isNotEmpty) {
+            equipment.add(_decodeHtml(item));
+          } else if (item is Map) {
+            final name = _parseString(item['name']) ?? _parseString(item['text']);
+            if (name != null && name.isNotEmpty) {
+              equipment.add(_decodeHtml(name));
+            }
+          }
+        }
+      }
+    }
+    
+    // Check 'recipeEquipment' (non-standard but used by some sites)
+    final recipeEquipment = data['recipeEquipment'];
+    if (recipeEquipment != null) {
+      if (recipeEquipment is String && recipeEquipment.isNotEmpty) {
+        equipment.add(_decodeHtml(recipeEquipment));
+      } else if (recipeEquipment is List) {
+        for (final item in recipeEquipment) {
+          if (item is String && item.isNotEmpty) {
+            equipment.add(_decodeHtml(item));
+          } else if (item is Map) {
+            final name = _parseString(item['name']) ?? _parseString(item['text']);
+            if (name != null && name.isNotEmpty) {
+              equipment.add(_decodeHtml(name));
+            }
+          }
+        }
+      }
+    }
+    
+    return equipment;
   }
 
   /// Extract raw direction strings
@@ -3144,6 +3235,7 @@ class UrlRecipeImporter {
     final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
     final name = _parseString(data['name'])?.toLowerCase() ?? '';
     final description = _parseString(data['description'])?.toLowerCase() ?? '';
+    final allText = '$category $keywords $name $description';
     
     // Check if this is from a cocktail site
     if (sourceUrl != null && _isCocktailSite(sourceUrl)) {
@@ -3153,6 +3245,14 @@ class UrlRecipeImporter {
     // Check for drink/cocktail indicators in the data
     if (_isDrinkRecipe(category, keywords, name, description)) {
       return 'Drinks';
+    }
+    
+    // Check for modernist/molecular gastronomy indicators
+    if (sourceUrl != null && _isModernistUrl(sourceUrl)) {
+      return 'Modernist';
+    }
+    if (_isModernistContent(allText)) {
+      return 'Modernist';
     }
     
     if (category != null) {
@@ -3170,6 +3270,31 @@ class UrlRecipeImporter {
     if (keywords.contains('vegetarian') || keywords.contains('vegan')) return 'Veg\'n';
     
     return 'Mains'; // Default
+  }
+  
+  /// Check if URL indicates a modernist/molecular gastronomy site
+  bool _isModernistUrl(String url) {
+    final lowerUrl = url.toLowerCase();
+    return lowerUrl.contains('modernist') || 
+           lowerUrl.contains('molecular') ||
+           lowerUrl.contains('chefsteps') ||
+           lowerUrl.contains('technique');
+  }
+  
+  /// Check if content indicates modernist/molecular gastronomy
+  bool _isModernistContent(String text) {
+    final lower = text.toLowerCase();
+    const modernistKeywords = [
+      'spherification', 'gelification', 'sous vide', 'immersion circulator',
+      'agar', 'xanthan', 'sodium alginate', 'calcium chloride',
+      'molecular gastronomy', 'modernist cuisine', 'hydrocolloid',
+      'methylcellulose', 'lecithin', 'maltodextrin', 'transglutaminase',
+    ];
+    
+    for (final keyword in modernistKeywords) {
+      if (lower.contains(keyword)) return true;
+    }
+    return false;
   }
 
   /// Check if this is a drink/cocktail recipe based on content

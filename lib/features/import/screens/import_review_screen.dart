@@ -134,7 +134,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           const SizedBox(height: 24),
 
           // Cuisine OR Category/Technique based on course type
-          if (_selectedCourse.toLowerCase() == 'modernist') ...[
+          if (_isModernistCourse) ...[
             // Modernist: show Category (Concept/Technique) and Technique
             _buildSectionTitle(theme, 'Category', Icons.science),
             const SizedBox(height: 8),
@@ -393,6 +393,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       ],
     );
   }
+
+  /// Check if current course is Modernist
+  bool get _isModernistCourse => _selectedCourse.toLowerCase() == 'modernist';
 
   /// Convert course code to display name
   String _courseDisplayName(String course) {
@@ -966,7 +969,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   void _openInEditScreen() {
     // Route to appropriate edit screen based on course type
-    if (_selectedCourse.toLowerCase() == 'modernist') {
+    if (_isModernistCourse) {
       final modernistRecipe = _buildModernistRecipe();
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
@@ -1122,7 +1125,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     // Save to appropriate repository based on course type
     String savedName;
-    if (_selectedCourse.toLowerCase() == 'modernist') {
+    if (_isModernistCourse) {
       final recipe = _buildModernistRecipe();
       await ref.read(modernistRepositoryProvider).save(recipe);
       savedName = recipe.name;
