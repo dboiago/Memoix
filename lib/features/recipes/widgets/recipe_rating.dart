@@ -263,15 +263,15 @@ class _RateRecipeDialogState extends State<RateRecipeDialog> {
   String _getRatingText() {
     switch (_rating) {
       case 1:
-        return 'Not for me';
+        return 'Why';
       case 2:
-        return 'It was okay';
+        return 'Save';
       case 3:
-        return 'Pretty good';
+        return 'If';
       case 4:
-        return 'Really enjoyed it';
+        return 'Its';
       case 5:
-        return 'Absolutely amazing!';
+        return 'Shit';
       default:
         return 'Tap stars to rate';
     }

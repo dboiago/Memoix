@@ -2595,13 +2595,20 @@ class UrlRecipeImporter {
     }
 
     // Detect sections - some sites prefix ingredients with section headers
-    // Common patterns: "For the sauce:", "Sauce:", "Main Ingredients:", etc.
+    // Common patterns: "For the sauce:", "Sauce:", "Main Ingredients:", "[Section]", etc.
     String? currentSection;
     final result = <Ingredient>[];
     
     for (final item in items) {
       final decoded = _decodeHtml(item.trim());
       if (decoded.isEmpty) continue;
+      
+      // First check for bracketed section format [Section Name] from _processIngredientListItems
+      final bracketMatch = RegExp(r'^\[(.+)\]$').firstMatch(decoded);
+      if (bracketMatch != null) {
+        currentSection = bracketMatch.group(1)?.trim();
+        continue;  // Skip to next item - this was just a section header
+      }
       
       // Check if this is a section header (no amount, ends with colon, or "For the X" pattern)
       // Also check for short standalone items that look like headers
@@ -4815,8 +4822,7 @@ class UrlRecipeImporter {
   /// Detects patterns like "Ingredients for Sauce:" as section headers
   List<String> _processIngredientListItems(List<String> items) {
     final processed = <String>[];
-    bool seenAnySectionHeader = false;
-    bool seenAnyIngredients = false;
+    int sectionCount = 0;
     
     for (final item in items) {
       // Check if this is a section header - must:
@@ -4836,19 +4842,17 @@ class UrlRecipeImporter {
       
       if (sectionHeaderMatch != null) {
         final sectionName = sectionHeaderMatch.group(1)?.trim() ?? item;
-        
-        // Only skip the first section header if it appears BEFORE any ingredients
-        // If we've already seen ingredients, this is a new section and should be marked
-        if (!seenAnySectionHeader && !seenAnyIngredients) {
-          seenAnySectionHeader = true;
-          // Don't add anything - first section header is the default
-        } else {
-          processed.add('[${_capitalise(sectionName)}]');
-        }
+        sectionCount++;
+        // Add all section headers - we'll use them for grouping
+        processed.add('[${_capitalise(sectionName)}]');
       } else if (item.isNotEmpty) {
-        seenAnyIngredients = true;
         processed.add(item);
       }
+    }
+    
+    // If there was only one section header at the start, it's redundant - remove it
+    if (sectionCount == 1 && processed.isNotEmpty && processed.first.startsWith('[') && processed.first.endsWith(']')) {
+      processed.removeAt(0);
     }
     
     return processed;
