@@ -3246,10 +3246,8 @@ class UrlRecipeImporter {
       timing = sectionResult['timing'];
     }
     
-    var ingredients = rawIngredientStrings
-        .map((e) => _parseIngredientString(e))
-        .where((i) => i.name.isNotEmpty)
-        .toList();
+    // Parse ingredients with proper section handling
+    var ingredients = _parseIngredients(rawIngredientStrings);
     
     ingredients = _sortIngredientsByQuantity(ingredients);
 
@@ -3627,10 +3625,9 @@ class UrlRecipeImporter {
       }
     }
     
-    var ingredients = rawIngredientStrings
-        .map((s) => _parseIngredientString(s))
-        .where((i) => i.name.isNotEmpty || i.section != null)
-        .toList();
+    // Parse ingredients - use _parseIngredients which properly handles section headers
+    // by tracking them and applying to subsequent ingredients, rather than adding empty-name entries
+    var ingredients = _parseIngredients(rawIngredientStrings);
     
     ingredients = _sortIngredientsByQuantity(ingredients);
 

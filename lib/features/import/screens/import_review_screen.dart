@@ -55,18 +55,6 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     // Sanitize ingredients to remove empty/invalid entries
     _sanitizedIngredients = RawIngredientData.sanitize(result.rawIngredients);
-    
-    // DEBUG: Print what we have to diagnose the empty line issue
-    debugPrint('=== RAW INGREDIENTS BEFORE SANITIZE (${result.rawIngredients.length}) ===');
-    for (var i = 0; i < result.rawIngredients.length && i < 15; i++) {
-      final ing = result.rawIngredients[i];
-      debugPrint('[$i] name="${ing.name}" section="${ing.sectionName}" amount="${ing.amount}" isSection=${ing.isSection}');
-    }
-    debugPrint('=== SANITIZED INGREDIENTS (${_sanitizedIngredients.length}) ===');
-    for (var i = 0; i < _sanitizedIngredients.length && i < 15; i++) {
-      final ing = _sanitizedIngredients[i];
-      debugPrint('[$i] name="${ing.name}" section="${ing.sectionName}" amount="${ing.amount}" isSection=${ing.isSection}');
-    }
 
     // Pre-select all sanitized ingredients
     _selectedIngredientIndices =
@@ -103,29 +91,6 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // DEBUG: Show first 10 ingredients to diagnose empty line
-          Card(
-            color: Colors.amber.shade100,
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('DEBUG: First 10 sanitized ingredients:', style: TextStyle(fontWeight: FontWeight.bold)),
-                  ..._sanitizedIngredients.take(10).toList().asMap().entries.map((e) {
-                    final i = e.key;
-                    final ing = e.value;
-                    return Text(
-                      '[$i] name="${ing.name}" sect="${ing.sectionName}" amt="${ing.amount}"',
-                      style: TextStyle(fontSize: 11, fontFamily: 'monospace'),
-                    );
-                  }),
-                ],
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          
           // Confidence overview
           _buildConfidenceCard(theme, result),
           const SizedBox(height: 16),
