@@ -3016,7 +3016,27 @@ class UrlRecipeImporter {
     }
     
     if (amount == null) {
-      // Original pattern for simple amounts and ranges
+      // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
+      final toRangeMatch = RegExp(
+        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
+        r'(\s*(?:cup|cups|Tbsp|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      
+      if (toRangeMatch != null) {
+        final start = toRangeMatch.group(1)?.trim() ?? '';
+        final end = toRangeMatch.group(2)?.trim() ?? '';
+        final unit = toRangeMatch.group(3)?.trim() ?? '';
+        amount = '$start-$end';
+        if (unit.isNotEmpty) {
+          amount = '$amount $unit';
+        }
+        remaining = remaining.substring(toRangeMatch.end).trim();
+      }
+    }
+    
+    if (amount == null) {
+      // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
         r'(\s*(?:cup|cups|Tbsp|tsp|oz|lb|kg|g|ml|L|pound|pounds|ounce|ounces|inch|inches|in|cm)s?)?\s+',
@@ -3366,13 +3386,19 @@ class UrlRecipeImporter {
   bool _isDrinkRecipe(String? category, String keywords, String name, String description) {
     final allText = '${category ?? ''} $keywords $name $description'.toLowerCase();
     
-    // Cocktail/drink category indicators
+    // Cocktail/drink category indicators - use word boundaries to avoid false positives
+    // e.g., "sour" should not match "sourdough"
     const drinkIndicators = [
       'cocktail', 'cocktails', 'drink', 'drinks', 'beverage', 'beverages',
       'martini', 'margarita', 'mojito', 'negroni', 'manhattan', 'daiquiri',
-      'old fashioned', 'old-fashioned', 'highball', 'lowball', 'sour',
+      'old fashioned', 'old-fashioned', 'highball', 'lowball',
       'fizz', 'collins', 'spritz', 'punch', 'shooter', 'shot',
       'mocktail', 'smoothie', 'shake', 'milkshake',
+    ];
+    
+    // Indicators that need word boundary matching (avoid false positives)
+    const wordBoundaryIndicators = [
+      'sour',  // Don't match "sourdough"
     ];
     
     // Spirit indicators
@@ -3385,6 +3411,11 @@ class UrlRecipeImporter {
     
     for (final indicator in drinkIndicators) {
       if (allText.contains(indicator)) return true;
+    }
+    
+    // Check word-boundary indicators with regex
+    for (final indicator in wordBoundaryIndicators) {
+      if (RegExp(r'\b' + indicator + r'\b').hasMatch(allText)) return true;
     }
     
     // If category specifically mentions spirits, it's likely a drink
