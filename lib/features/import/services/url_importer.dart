@@ -288,7 +288,7 @@ class UrlRecipeImporter {
   
   /// Decode HTTP response body handling encoding errors and compression gracefully
   String _decodeResponseBody(http.Response response) {
-    var bytes = response.bodyBytes;
+    List<int> bytes = response.bodyBytes.toList();
     
     // Check if response is gzip compressed (either by header or by magic bytes)
     final contentEncoding = response.headers['content-encoding']?.toLowerCase() ?? '';
@@ -298,7 +298,7 @@ class UrlRecipeImporter {
     
     if (isGzipHeader || isGzipMagic) {
       try {
-        bytes = gzip.decode(bytes) as List<int>;
+        bytes = gzip.decode(bytes);
       } catch (_) {
         // If decompression fails, try with original bytes
       }
