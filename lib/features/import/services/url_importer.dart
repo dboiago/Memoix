@@ -3454,6 +3454,7 @@ class UrlRecipeImporter {
     var rawIngredientStrings = <String>[];
     var rawDirections = <String>[];
     List<String> equipmentItems = [];
+    List<String> stepImages = []; // Images found in direction steps
     String? yield;
     String? timing;
     bool usedStructuredFormat = false; // Flag for higher confidence when using structured recipe plugins
@@ -3829,6 +3830,10 @@ class UrlRecipeImporter {
         usedStructuredFormat = true;
       }
     }
+
+    // Extract step images from direction content
+    // Some sites (like AmazingFoodMadeEasy) embed images in direction paragraphs
+    stepImages = _extractStepImages(document, sourceUrl);
 
     // If we still don't have ingredients or directions, try one more aggressive pass
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
@@ -4409,6 +4414,15 @@ class UrlRecipeImporter {
         ? (usedStructuredFormat ? 0.9 : 0.7) 
         : 0.0;
 
+    // Build image paths list: header image first, then step images
+    List<String>? imagePaths;
+    if (imageUrl != null || stepImages.isNotEmpty) {
+      imagePaths = [
+        if (imageUrl != null) imageUrl,
+        ...stepImages,
+      ];
+    }
+
     return RecipeImportResult(
       name: title != null ? _cleanRecipeName(title) : null,
       course: course,
@@ -4430,6 +4444,7 @@ class UrlRecipeImporter {
       servesConfidence: servesConfidence,
       sourceUrl: sourceUrl,
       source: RecipeSource.url,
+      imagePaths: imagePaths,
     );
   }
   
@@ -5073,6 +5088,120 @@ class UrlRecipeImporter {
     }
     
     return null;
+  }
+  
+  /// Extract step images from direction/instruction content
+  /// Handles sites like AmazingFoodMadeEasy that embed images in paragraphs
+  List<String> _extractStepImages(dynamic document, String baseUrl) {
+    final images = <String>[];
+    final seenUrls = <String>{};
+    
+    // Helper to resolve relative URLs
+    String resolveUrl(String src) {
+      if (src.startsWith('http://') || src.startsWith('https://')) {
+        return src;
+      }
+      if (src.startsWith('//')) {
+        return 'https:$src';
+      }
+      // Relative URL - try to resolve against base
+      try {
+        final base = Uri.parse(baseUrl);
+        return base.resolve(src).toString();
+      } catch (_) {
+        return src;
+      }
+    }
+    
+    // Look for images in direction/instruction sections
+    final directionSelectors = [
+      '.recipe-instructions img',
+      '.instructions img',
+      '.directions img',
+      '.recipe-procedure img',
+      '[itemprop="recipeInstructions"] img',
+      '.step-content img',
+      '.instruction-step img',
+      '.method img',
+      // AmazingFoodMadeEasy uses paragraphs with embedded image links
+      '.entry-content p a img',
+      '.post-content p a img',
+      'article p a img',
+      // Direct images in content
+      '.entry-content p img',
+      '.post-content p img',
+    ];
+    
+    for (final selector in directionSelectors) {
+      final imgElements = document.querySelectorAll(selector);
+      for (final img in imgElements) {
+        // Get the src, checking data-src for lazy-loaded images too
+        var src = img.attributes['src'] ?? 
+                  img.attributes['data-src'] ?? 
+                  img.attributes['data-lazy-src'];
+        
+        if (src == null || src.isEmpty) continue;
+        
+        // Skip icons, logos, and tiny images
+        if (src.contains('icon') || 
+            src.contains('logo') || 
+            src.contains('avatar') ||
+            src.contains('emoji') ||
+            src.contains('1x1') ||
+            src.contains('pixel')) continue;
+        
+        // Skip if we've already seen this URL
+        final resolvedUrl = resolveUrl(src);
+        if (seenUrls.contains(resolvedUrl)) continue;
+        seenUrls.add(resolvedUrl);
+        
+        images.add(resolvedUrl);
+      }
+    }
+    
+    // Also look for images in anchor tags within content (common pattern)
+    final anchorImgSelectors = [
+      '.entry-content a[href*=".jpg"] img',
+      '.entry-content a[href*=".png"] img',
+      '.entry-content a[href*=".webp"] img',
+      '.post-content a[href*=".jpg"] img',
+      'article a[href*=".jpg"] img',
+    ];
+    
+    for (final selector in anchorImgSelectors) {
+      try {
+        final anchors = document.querySelectorAll(selector);
+        for (final anchor in anchors) {
+          // Prefer the anchor href (usually full-size image)
+          final parent = anchor.parent;
+          if (parent != null && parent.localName?.toLowerCase() == 'a') {
+            final href = parent.attributes['href'];
+            if (href != null && href.isNotEmpty) {
+              final resolvedUrl = resolveUrl(href);
+              if (!seenUrls.contains(resolvedUrl)) {
+                seenUrls.add(resolvedUrl);
+                images.add(resolvedUrl);
+              }
+              continue;
+            }
+          }
+          
+          // Fall back to img src
+          var src = anchor.attributes['src'] ?? anchor.attributes['data-src'];
+          if (src != null && src.isNotEmpty) {
+            final resolvedUrl = resolveUrl(src);
+            if (!seenUrls.contains(resolvedUrl)) {
+              seenUrls.add(resolvedUrl);
+              images.add(resolvedUrl);
+            }
+          }
+        }
+      } catch (_) {
+        // Selector might not be supported
+      }
+    }
+    
+    return images;
   }
   
   /// Parse directions by looking for step-based structure (h3 headings or numbered sections)

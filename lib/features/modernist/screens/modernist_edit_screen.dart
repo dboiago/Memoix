@@ -480,7 +480,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             // Add section header button
             TextButton.icon(
               onPressed: _addSectionHeader,
-              icon: const Icon(Icons.folder_outlined, size: 18),
+              icon: const Icon(Icons.title, size: 18),
               label: const Text('Add Section'),
               style: TextButton.styleFrom(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -599,12 +599,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               ),
             ),
             const SizedBox(width: 8),
-            // Section icon
-            Icon(
-              Icons.folder_outlined,
-              size: 18,
-              color: theme.colorScheme.secondary,
-            ),
+            // Section header indicator (no icon, just styling like normal recipes)
             const SizedBox(width: 8),
             // Section name input
             Expanded(
