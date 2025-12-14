@@ -582,10 +582,11 @@ class UrlRecipeImporter {
           } else if (_isTimestampedStep(line)) {
             // Timestamped step - extract the title
             directions.add(_cleanDirectionLine(line));
-          } else if (line.length > 10 && line.length < 80 && !looksLikeIng) {
-            // Medium-length line in directions section - could be a step description
-            // Only add if it doesn't look like intro text
-            if (!line.contains('...') && !line.endsWith('!')) {
+          } else if (line.length > 30 && !looksLikeIng) {
+            // Once in directions section, longer lines are likely directions
+            // Skip obvious non-direction lines
+            if (!line.contains('...') && !line.startsWith('http') && 
+                !RegExp(r'^[A-Z][A-Z\s]+$').hasMatch(line)) {
               directions.add(_cleanDirectionLine(line));
             }
           }
@@ -745,8 +746,12 @@ class UrlRecipeImporter {
     if (_isTimestampedStep(line)) {
       return true;
     }
-    // Starts with cooking action verb
-    if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred|fold|knead|proof|rise|ferment|dimpl|topp|cutt|plac)\b', caseSensitive: false).hasMatch(line)) {
+    // Starts with cooking action verb (expanded list)
+    if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred|knead|proof|rise|ferment|dimple|top|cut|use|form|make|prepare|work|bring|turn|roll|shape|flatten|stretch|pull|push|press|spread|brush|drizzle|sprinkle|dust|coat|dip|toss|flip|rotate|rest|cool|warm|melt|dissolve|cream|beat|whip|pipe|layer|assemble|arrange|portion|divide|measure|weigh|sift|strain|drain|rinse|wash|dry|pat|trim|peel|core|seed|pit|zest|juice|squeeze|crack|separate|break|tear|crumble|crush|grind|puree|mash|smash|score|slit)\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // Long sentence that sounds instructional (contains action verbs anywhere)
+    if (line.length > 40 && RegExp(r'\b(?:until|minutes?|hours?|degrees?|°|constantly|occasionally|gently|carefully|slowly|thoroughly|completely|well|evenly)\b', caseSensitive: false).hasMatch(line)) {
       return true;
     }
     // Don't use length alone - too many false positives with intro paragraphs
@@ -2307,6 +2312,36 @@ class UrlRecipeImporter {
         name: name,
         amount: metric,
         preparation: imperial,
+      );
+    }
+    
+    // Handle "Name, amount unit (notes)" format
+    // e.g., "00 Flour, 300g (10.5 oz. or about 2 Cups)"
+    // e.g., "Egg Yolks, 5 each"
+    // e.g., "Fine Sea Salt, 1/4 tsp. (or 1g)"
+    // e.g., "EVOO, 1 tsp. (about 3g or 0.125 oz.)"
+    final nameAmountMatch = RegExp(
+      r'^([^,]+),\s*(\d+(?:/\d+|[½¼¾⅓⅔⅛⅜⅝⅞])?(?:\s*\d+(?:/\d+|[½¼¾⅓⅔⅛⅜⅝⅞])?)?)\s*(g|kg|ml|l|oz|lb|cup|cups|tbsp|tsp|each|whole|large|medium|small)?\.?\s*(?:\(([^)]+)\))?$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (nameAmountMatch != null) {
+      final name = nameAmountMatch.group(1)?.trim() ?? '';
+      var amountNum = nameAmountMatch.group(2)?.trim() ?? '';
+      final unit = nameAmountMatch.group(3)?.trim() ?? '';
+      final notes = nameAmountMatch.group(4)?.trim();
+      
+      // Convert text fractions to unicode
+      amountNum = amountNum.replaceAllMapped(RegExp(r'(\d+)/(\d+)'), (m) {
+        final frac = '${m.group(1)}/${m.group(2)}';
+        return _fractionMap[frac] ?? frac;
+      });
+      
+      final amount = unit.isNotEmpty ? '$amountNum $unit' : amountNum;
+      
+      return Ingredient.create(
+        name: name,
+        amount: amount,
+        preparation: notes,
       );
     }
     
