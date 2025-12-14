@@ -2291,16 +2291,14 @@ class UrlRecipeImporter {
   }
 
   /// Detect all possible cuisines from recipe data
+  /// Only uses the recipeCuisine field - doesn't infer from keywords/name to avoid false positives
   List<String> _detectAllCuisines(Map data) {
     final cuisines = <String>{};
     final cuisine = _parseString(data['recipeCuisine'])?.toLowerCase() ?? '';
-    final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
-    final name = _parseString(data['name'])?.toLowerCase() ?? '';
-    final allText = '$cuisine $keywords $name';
+    if (cuisine.isEmpty) return [];
     
     // Check for cuisine indicators
     final cuisineIndicators = {
-      'american': 'USA', 'southern': 'USA', 'cajun': 'USA',
       'french': 'France', 'italian': 'Italy', 'spanish': 'Spain',
       'mexican': 'Mexico', 'chinese': 'China', 'japanese': 'Japan',
       'korean': 'Korea', 'thai': 'Thailand', 'vietnamese': 'Vietnam',
@@ -2310,7 +2308,7 @@ class UrlRecipeImporter {
     };
     
     cuisineIndicators.forEach((indicator, cuisineName) {
-      if (allText.contains(indicator)) {
+      if (cuisine.contains(indicator)) {
         cuisines.add(cuisineName);
       }
     });
@@ -2342,9 +2340,6 @@ class UrlRecipeImporter {
     
     // Map regions to countries
     final regionToCountry = {
-      'american': 'USA',
-      'southern': 'USA',
-      'cajun': 'USA',
       'tex-mex': 'Mexican',
       'french': 'France',
       'italian': 'Italy',
@@ -2384,7 +2379,6 @@ class UrlRecipeImporter {
       'european': 'European',
       'latin american': 'Latin America',
       'south american': 'Latin America',
-      'north american': 'USA',
       'scandinavian': 'Nordic',
       'nordic': 'Nordic',
       'portuguese': 'Portugal',
