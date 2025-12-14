@@ -404,8 +404,23 @@ class UrlRecipeImporter {
   String? _detectCourseFromTitle(String title) {
     final lowerTitle = title.toLowerCase();
     
+    // Smoking/BBQ course keywords
+    if (RegExp(r'\b(?:smoked|smoking|smoker|bbq|barbecue|barbeque|low\s*and\s*slow|pellet\s*grill)\b').hasMatch(lowerTitle)) {
+      return 'Smoking';
+    }
+    
+    // Drinks course keywords (check early - spirits in title = likely a drink recipe)
+    if (RegExp(r'\b(?:cocktail|smoothie|juice|lemonade|drink|beverage|mocktail|sangria|punch|milkshake|frappe|martini|margarita|mojito|daiquiri|manhattan|negroni|old\s*fashioned|highball|sour|fizz|collins|spritz|mimosa|bellini|cosmopolitan|mai\s*tai|pina\s*colada|bloody\s*mary|paloma|vodka|gin|rum|tequila|whiskey|whisky|bourbon|scotch|brandy|cognac|mezcal)\b').hasMatch(lowerTitle)) {
+      return 'Drinks';
+    }
+    
+    // Modernist/Molecular keywords
+    if (RegExp(r'\b(?:modernist|molecular|spherification|gelification|sous\s*vide|foam|caviar|agar|xanthan)\b').hasMatch(lowerTitle)) {
+      return 'Modernist';
+    }
+    
     // Breads course keywords
-    if (RegExp(r'\b(?:bread|focaccia|ciabatta|baguette|brioche|sourdough|rolls?|buns?|loaf|loaves|naan|pita|flatbread|bagels?|croissants?|pretzels?|challah)\b').hasMatch(lowerTitle)) {
+    if (RegExp(r'\b(?:bread|focaccia|ciabatta|baguette|brioche|sourdough|rolls?|buns?|loaf|loaves|naan|pita|flatbread|bagels?|croissants?|pretzels?|challah|dough)\b').hasMatch(lowerTitle)) {
       return 'Breads';
     }
     
@@ -422,11 +437,6 @@ class UrlRecipeImporter {
     // Sides course keywords
     if (RegExp(r'\b(?:salad|slaw|coleslaw|side\s*dish|mashed|roasted\s*(?:vegetables?|veggies|potatoes)|french\s*fries|fries|wedges|gratin|pilaf|rice\s*dish)\b').hasMatch(lowerTitle)) {
       return 'Sides';
-    }
-    
-    // Drinks course keywords
-    if (RegExp(r'\b(?:cocktail|smoothie|juice|lemonade|drink|beverage|mocktail|sangria|punch|milkshake|frappe|coffee|espresso|latte|tea)\b').hasMatch(lowerTitle)) {
-      return 'Drinks';
     }
     
     // Sauces course keywords
@@ -3057,21 +3067,50 @@ class UrlRecipeImporter {
     }
 
     // Detect if this is a drink based on URL and content
-    final isCocktail = _isCocktailSite(sourceUrl);
+    final isCocktailSite = _isCocktailSite(sourceUrl);
     
-    // Try to detect course from content - check for modernist/molecular indicators
+    // Try to detect course from title and content
     String course;
-    if (isCocktail) {
-      course = 'drinks';
+    double courseConfidence;
+    final titleLower = (title ?? '').toLowerCase();
+    final urlLower = sourceUrl.toLowerCase();
+    
+    if (isCocktailSite || _isDrinkRecipe(titleLower, urlLower, rawIngredientStrings)) {
+      course = 'Drinks';
+      courseConfidence = isCocktailSite ? 0.8 : 0.75;
+    } else if (_isSmokingRecipe(titleLower, urlLower, rawIngredientStrings)) {
+      course = 'Smoking';
+      courseConfidence = 0.8;
     } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
       course = 'molecular';
+      courseConfidence = 0.75;
+    } else if (_isBreadRecipe(titleLower, urlLower, rawIngredientStrings)) {
+      course = 'Breads';
+      courseConfidence = 0.75;
+    } else if (_isDessertRecipe(titleLower, urlLower, rawIngredientStrings)) {
+      course = 'Desserts';
+      courseConfidence = 0.7;
+    } else if (_isSoupRecipe(titleLower, urlLower)) {
+      course = 'Soup';
+      courseConfidence = 0.75;
+    } else if (_isSauceRecipe(titleLower, urlLower)) {
+      course = 'Sauces';
+      courseConfidence = 0.7;
+    } else if (_isSideRecipe(titleLower, urlLower)) {
+      course = 'Sides';
+      courseConfidence = 0.6;
+    } else if (_isAppRecipe(titleLower, urlLower)) {
+      course = 'Apps';
+      courseConfidence = 0.65;
     } else {
       course = 'Mains';
+      courseConfidence = 0.5; // Medium confidence - it's a reasonable default
     }
     
     // For drinks, detect the base spirit
     String? subcategory;
-    if (isCocktail) {
+    final isDrink = isCocktailSite || course == 'Drinks';
+    if (isDrink) {
       final spiritCode = _detectSpirit(ingredients);
       if (spiritCode != null) {
         subcategory = Spirit.toDisplayName(spiritCode);
@@ -3084,14 +3123,6 @@ class UrlRecipeImporter {
         ? (ingredients.length / rawIngredientStrings.length) * 0.6 
         : 0.0;
     final directionsConfidence = rawDirections.isNotEmpty ? 0.6 : 0.0;
-    double courseConfidence;
-    if (isCocktail) {
-      courseConfidence = 0.8;
-    } else if (course == 'molecular') {
-      courseConfidence = 0.75;
-    } else {
-      courseConfidence = 0.3; // Low confidence for defaulting to Mains
-    }
 
     // Create raw ingredient data
     final rawIngredients = rawIngredientStrings.map((raw) {
@@ -3480,6 +3511,188 @@ class UrlRecipeImporter {
     
     // If multiple technique keywords found, likely modernist
     return matchCount >= 2;
+  }
+  
+  /// Detect if this is a bread/dough recipe
+  bool _isBreadRecipe(String titleLower, String urlLower, List<String> ingredients) {
+    // Check title for explicit bread keywords (not pasta/pizza/noodles which are mains)
+    const breadKeywords = [
+      'bread', 'dough', 'focaccia', 'baguette', 'ciabatta', 'sourdough', 
+      'brioche', 'challah', 'bagel', 'pretzel', 'flatbread', 'naan',
+      'pita', 'tortilla', 'croissant', 'danish',
+    ];
+    
+    for (final keyword in breadKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    // Check ingredients for bread-making staples (flour + yeast = likely bread)
+    final hasFlour = ingredients.any((i) => i.toLowerCase().contains('flour'));
+    final hasYeast = ingredients.any((i) => i.toLowerCase().contains('yeast'));
+    
+    // Flour + yeast = likely bread
+    if (hasFlour && hasYeast) return true;
+    
+    return false;
+  }
+  
+  /// Detect if this is a dessert recipe
+  bool _isDessertRecipe(String titleLower, String urlLower, List<String> ingredients) {
+    const dessertKeywords = [
+      'cake', 'cookie', 'brownie', 'pie', 'tart', 'pudding',
+      'ice cream', 'gelato', 'sorbet', 'mousse', 'custard',
+      'cheesecake', 'cupcake', 'muffin', 'scone', 'donut',
+      'doughnut', 'macaron', 'meringue', 'souffle', 'creme',
+      'chocolate', 'dessert', 'sweet', 'candy', 'fudge',
+      'truffle', 'tiramisu', 'panna cotta', 'pavlova',
+    ];
+    
+    for (final keyword in dessertKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  /// Detect if this is a soup recipe
+  bool _isSoupRecipe(String titleLower, String urlLower) {
+    const soupKeywords = [
+      'soup', 'stew', 'chowder', 'bisque', 'broth', 'stock',
+      'gazpacho', 'consomme', 'pho', 'ramen', 'minestrone',
+      'goulash', 'chili', 'curry soup', 'tom yum', 'laksa',
+    ];
+    
+    for (final keyword in soupKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  /// Detect if this is a sauce recipe
+  bool _isSauceRecipe(String titleLower, String urlLower) {
+    const sauceKeywords = [
+      'sauce', 'gravy', 'aioli', 'mayonnaise', 'mayo', 'pesto',
+      'vinaigrette', 'dressing', 'marinade', 'glaze', 'reduction',
+      'coulis', 'salsa', 'chimichurri', 'gremolata', 'relish',
+      'chutney', 'compote', 'jam', 'jelly', 'preserve',
+    ];
+    
+    for (final keyword in sauceKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  /// Detect if this is a side dish recipe
+  bool _isSideRecipe(String titleLower, String urlLower) {
+    const sideKeywords = [
+      'side', 'salad', 'slaw', 'rice', 'pilaf', 'risotto',
+      'mashed', 'roasted vegetable', 'grilled vegetable',
+      'coleslaw', 'potato salad', 'grain bowl',
+    ];
+    
+    for (final keyword in sideKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  /// Detect if this is an appetizer recipe
+  bool _isAppRecipe(String titleLower, String urlLower) {
+    const appKeywords = [
+      'appetizer', 'appetiser', 'starter', 'hors d\'oeuvre',
+      'canape', 'bruschetta', 'crostini', 'dip', 'spread',
+      'hummus', 'guacamole', 'ceviche', 'tartare', 'carpaccio',
+      'spring roll', 'egg roll', 'samosa', 'empanada',
+    ];
+    
+    for (final keyword in appKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  /// Detect if this is a smoking/BBQ recipe
+  bool _isSmokingRecipe(String titleLower, String urlLower, List<String> ingredients) {
+    // Check title/URL for smoking keywords
+    const smokingKeywords = [
+      'smoked', 'smoking', 'smoke ', 'smoker',
+      'bbq', 'barbecue', 'barbeque',
+      'low and slow', 'pellet grill',
+    ];
+    
+    for (final keyword in smokingKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    // Check for wood types in ingredients (strong indicator of smoking)
+    const woodTypes = [
+      'hickory', 'mesquite', 'applewood', 'apple wood',
+      'cherrywood', 'cherry wood', 'pecan', 'oak',
+      'maple wood', 'alder', 'wood chips', 'wood chunks',
+    ];
+    
+    final allIngredients = ingredients.join(' ').toLowerCase();
+    for (final wood in woodTypes) {
+      if (allIngredients.contains(wood)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  /// Detect if this is a drink/cocktail recipe (content-based)
+  bool _isDrinkRecipe(String titleLower, String urlLower, List<String> ingredients) {
+    // Check title/URL for drink keywords
+    const drinkKeywords = [
+      'cocktail', 'martini', 'margarita', 'mojito', 'daiquiri',
+      'manhattan', 'negroni', 'old fashioned', 'highball',
+      'sour', 'fizz', 'collins', 'spritz', 'punch',
+      'sangria', 'mimosa', 'bellini', 'cosmopolitan',
+      'mai tai', 'pina colada', 'bloody mary', 'paloma',
+      'smoothie', 'milkshake', 'lemonade', 'iced tea',
+    ];
+    
+    for (final keyword in drinkKeywords) {
+      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
+        return true;
+      }
+    }
+    
+    // Check for spirit names in title (more specific)
+    const spirits = [
+      'vodka', 'gin', 'rum', 'tequila', 'whiskey', 'whisky',
+      'bourbon', 'scotch', 'brandy', 'cognac', 'mezcal',
+      'liqueur', 'vermouth', 'amaretto', 'kahlua', 'baileys',
+    ];
+    
+    // Only match spirits in title (not ingredients, as spirits can be cooking ingredients)
+    for (final spirit in spirits) {
+      if (titleLower.contains(spirit)) {
+        return true;
+      }
+    }
+    
+    return false;
   }
 }
 
