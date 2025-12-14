@@ -132,7 +132,9 @@ class UrlRecipeImporter {
       final response = await http.get(
         Uri.parse(url),
         headers: {
-          'User-Agent': 'Memoix Recipe App/1.0',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.9',
         },
       );
 
@@ -3431,6 +3433,77 @@ class UrlRecipeImporter {
       }
     }
     
+    // Final fallback: scan entire body for bullet-pointed content (• character)
+    // This handles sites like Modernist Pantry that use plain text bullets
+    if (rawIngredientStrings.isEmpty) {
+      final bodyText = document.body?.text ?? '';
+      
+      // Look for sections that contain bullet points with measurements
+      if (bodyText.contains('•')) {
+        // Find "Ingredients" section by looking for the word followed by bullets
+        final ingredientSectionMatch = RegExp(
+          r'Ingredients?\s*[:\n]*((?:[^•]*•[^\n]+\n?)+)',
+          caseSensitive: false,
+        ).firstMatch(bodyText);
+        
+        if (ingredientSectionMatch != null) {
+          final ingredientSection = ingredientSectionMatch.group(1) ?? '';
+          final bulletItems = ingredientSection.split('•');
+          
+          for (var item in bulletItems) {
+            item = _decodeHtml(item.trim());
+            // Remove any trailing content that looks like next section
+            final nextSectionIdx = item.indexOf(RegExp(r'\n\s*(Equipment|Directions?|Instructions?|Method|Steps?|Timing|Yield)\b', caseSensitive: false));
+            if (nextSectionIdx > 0) {
+              item = item.substring(0, nextSectionIdx).trim();
+            }
+            
+            if (item.isEmpty || item.length < 3) continue;
+            // Skip obvious non-ingredient lines
+            if (item.toLowerCase().contains('subscribe') || 
+                item.toLowerCase().contains('http') ||
+                item.toLowerCase().contains('click')) continue;
+            
+            rawIngredientStrings.add(item);
+          }
+          
+          if (rawIngredientStrings.isNotEmpty) {
+            rawIngredientStrings = _processIngredientListItems(rawIngredientStrings);
+          }
+        }
+      }
+    }
+    
+    // Also try to extract directions from body text if still missing
+    if (rawDirections.isEmpty && rawIngredientStrings.isNotEmpty) {
+      final bodyText = document.body?.text ?? '';
+      
+      // Look for step headings pattern (like "Create Black Garlic Honey" followed by text)
+      final stepMatches = RegExp(
+        r'(?:^|\n)(Create|Make|Prepare|Step\s*\d+|Churn)[^\n]+\n([^•\n][^\n]+(?:\n[^•\n][^\n]+)*)',
+        caseSensitive: false,
+      ).allMatches(bodyText);
+      
+      for (final match in stepMatches) {
+        final stepTitle = match.group(0)?.split('\n').first.trim() ?? '';
+        final stepContent = match.group(2)?.trim() ?? '';
+        
+        if (stepTitle.isNotEmpty && !_isNavigationHeading(stepTitle)) {
+          rawDirections.add('**$stepTitle**');
+        }
+        if (stepContent.isNotEmpty && stepContent.length > 20) {
+          // Split by sentences or line breaks
+          final sentences = stepContent.split(RegExp(r'(?<=[.!?])\s+(?=[A-Z])|\n+'));
+          for (final sentence in sentences) {
+            final cleaned = sentence.trim();
+            if (cleaned.length > 15) {
+              rawDirections.add(cleaned);
+            }
+          }
+        }
+      }
+    }
+    
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) {
       return null;
     }
@@ -3882,16 +3955,36 @@ class UrlRecipeImporter {
       // Stop at next heading
       if (tagName == 'h2' || tagName == 'h3') break;
       
-      // Get text content and split by bullet characters
-      final textContent = nextElement.text?.trim() ?? '';
+      // Get text content - try the element itself first
+      var textContent = nextElement.text?.trim() ?? '';
+      
+      // If the element is a container (div, section), also try getting all child text
+      if (textContent.isEmpty && (tagName == 'div' || tagName == 'section' || tagName == 'article')) {
+        // Get all text from descendants
+        final allText = <String>[];
+        final descendants = nextElement.querySelectorAll('p, span, div, li');
+        for (final desc in descendants) {
+          final descText = desc.text?.trim() ?? '';
+          if (descText.isNotEmpty) {
+            allText.add(descText);
+          }
+        }
+        textContent = allText.join('\n');
+      }
       
       if (textContent.isNotEmpty) {
         // Split by common bullet point characters
-        // Common patterns: • (bullet), - (dash), * (asterisk), or newlines
-        final lines = textContent.split(RegExp(r'[•\-\*]\s*|\n+'));
+        // Common patterns: • (bullet), - (dash at start of line), * (asterisk), or newlines
+        // Use more careful splitting to avoid breaking ingredient text with dashes
+        final lines = textContent.split(RegExp(r'[•]\s*|\n+|(?:^|\n)\s*[-\*]\s+'));
         
         for (var line in lines) {
           line = _decodeHtml(line.trim());
+          
+          // Also handle cases where bullet is at start of line
+          if (line.startsWith('•') || line.startsWith('- ') || line.startsWith('* ')) {
+            line = line.substring(line.indexOf(' ') + 1).trim();
+          }
           
           // Skip empty lines and very short lines (likely fragments)
           if (line.isEmpty || line.length < 3) continue;
@@ -3906,6 +3999,38 @@ class UrlRecipeImporter {
       }
       
       nextElement = nextElement.nextElementSibling;
+    }
+    
+    // If we didn't find anything using siblings, try a broader search
+    // Look for any text containing • within the heading's parent section
+    if (items.isEmpty) {
+      final parent = heading.parent;
+      if (parent != null) {
+        final fullText = parent.text ?? '';
+        // Find the section after "Ingredients" heading
+        final headingText = heading.text?.trim() ?? '';
+        final headingIndex = fullText.indexOf(headingText);
+        if (headingIndex >= 0) {
+          var afterHeading = fullText.substring(headingIndex + headingText.length);
+          // Find the next major section (Equipment, Directions, etc.)
+          final nextSectionMatch = RegExp(r'\n(Equipment|Directions?|Instructions?|Method|Steps?|Timing|Yield)\b', caseSensitive: false).firstMatch(afterHeading);
+          if (nextSectionMatch != null) {
+            afterHeading = afterHeading.substring(0, nextSectionMatch.start);
+          }
+          // Now split by bullets
+          final lines = afterHeading.split(RegExp(r'[•]\s*'));
+          for (var line in lines) {
+            line = _decodeHtml(line.trim());
+            if (line.isEmpty || line.length < 3) continue;
+            // Skip section-like headers that might have been caught
+            if (RegExp(r'^(Equipment|Directions?|Instructions?|Method|Steps?|Timing|Yield)\b', caseSensitive: false).hasMatch(line)) continue;
+            if (line.toLowerCase().contains('click') || 
+                line.toLowerCase().contains('subscribe') ||
+                line.toLowerCase().contains('http')) continue;
+            items.add(line);
+          }
+        }
+      }
     }
     
     return _processIngredientListItems(items);
