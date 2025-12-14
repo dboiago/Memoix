@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
@@ -135,6 +136,7 @@ class UrlRecipeImporter {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'gzip, deflate', // Explicitly request compressed content
         },
       );
 
@@ -142,18 +144,38 @@ class UrlRecipeImporter {
         throw Exception('Failed to fetch URL: ${response.statusCode}');
       }
 
-      // Decode response body - handle encoding errors gracefully
+      // Decode response body - handle compression and encoding
+      List<int> bodyBytes = response.bodyBytes;
+      
+      // Check if response is gzip compressed and decompress if needed
+      final contentEncoding = response.headers['content-encoding']?.toLowerCase() ?? '';
+      if (contentEncoding.contains('gzip')) {
+        try {
+          bodyBytes = gzip.decode(bodyBytes);
+        } catch (e) {
+          // If gzip decode fails, try using raw bytes
+          // (server might have already decompressed or sent incorrectly)
+        }
+      } else if (contentEncoding.contains('deflate')) {
+        try {
+          bodyBytes = zlib.decode(bodyBytes);
+        } catch (e) {
+          // If deflate decode fails, try using raw bytes
+        }
+      }
+      
+      // Decode bytes to string with proper encoding handling
       String body;
       try {
-        // Try automatic decoding (handles Content-Type charset)
-        body = response.body;
-      } on FormatException {
-        // If automatic decoding fails due to encoding, try UTF-8 with error tolerance
+        // Try UTF-8 first (most common)
+        body = utf8.decode(bodyBytes);
+      } catch (_) {
         try {
-          body = utf8.decode(response.bodyBytes, allowMalformed: true);
+          // Try UTF-8 with malformed character tolerance
+          body = utf8.decode(bodyBytes, allowMalformed: true);
         } catch (_) {
           // Last resort: use Latin-1 (never fails, but may produce wrong characters)
-          body = latin1.decode(response.bodyBytes);
+          body = latin1.decode(bodyBytes);
         }
       }
 
