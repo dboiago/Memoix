@@ -284,6 +284,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     );
   }
 
+  // Fields that are optional and shouldn't show "Needs input"
+  static const _optionalFields = {'Cuisine', 'Servings', 'Time'};
+  
   Widget _buildSectionTitle(
     ThemeData theme,
     String title,
@@ -292,14 +295,22 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   }) {
     final Color indicatorColor;
     final String label;
+    
+    // For optional fields with low confidence, show "Optional" instead of "Needs input"
+    final isOptional = _optionalFields.contains(title);
+    
     if (confidence >= 0.7) {
       indicatorColor = Colors.green;
       label = 'Good';
     } else if (confidence >= 0.4) {
       indicatorColor = Colors.orange;
       label = 'Review';
+    } else if (isOptional) {
+      // Optional fields with no data - subtle indicator
+      indicatorColor = theme.colorScheme.outline;
+      label = 'Optional';
     } else {
-      // Use secondary color for "Needs input" - works in both light and dark mode
+      // Required fields with no data - use secondary color
       indicatorColor = theme.colorScheme.secondary;
       label = 'Needs input';
     }
@@ -412,16 +423,6 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             );
           }).toList(),
         ),
-        const SizedBox(height: 8),
-        Row(
-          children: [
-            TextButton.icon(
-              onPressed: () => setState(() => _selectedCuisine = null),
-              icon: const Icon(Icons.clear, size: 16),
-              label: const Text('Clear'),
-            ),
-          ],
-        ),
       ],
     );
   }
@@ -429,10 +430,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   Widget _buildIngredientsList(ThemeData theme, RecipeImportResult result) {
     if (result.rawIngredients.isEmpty) {
       return Card(
-        color: theme.colorScheme.errorContainer.withOpacity(0.3),
-        child: const Padding(
-          padding: EdgeInsets.all(16),
-          child: Text('No ingredients found. You can add them after saving.'),
+        color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Text(
+            'No ingredients found in source. You can add them after saving.',
+            style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+          ),
         ),
       );
     }

@@ -509,12 +509,24 @@ class UrlRecipeImporter {
   }
   
   bool _isIgnorableLine(String line) {
-    // URLs anywhere in the line
-    if (line.contains('http://') || line.contains('https://') || line.startsWith('www.') || line.contains('.com/') || line.contains('.co/')) {
+    // Separator lines (dashes, equals, underscores, box drawing chars)
+    if (RegExp(r'^[─━═—–\-_=]{3,}\s*$').hasMatch(line)) {
       return true;
     }
-    // Timestamps like "0:00" or "1:23:45"
-    if (RegExp(r'^\d{1,2}:\d{2}(?::\d{2})?(?:\s|$)').hasMatch(line)) {
+    // ALL CAPS lines that look like section headers (e.g., "OTHER VIDEOS YOU'LL ENJOY")
+    if (line.length > 10 && line.length < 60) {
+      final upperCount = line.replaceAll(RegExp(r'[^A-Z]'), '').length;
+      final letterCount = line.replaceAll(RegExp(r'[^A-Za-z]'), '').length;
+      if (letterCount > 5 && upperCount / letterCount > 0.8) {
+        return true;
+      }
+    }
+    // Lines starting with emoji hearts/symbols followed by ALL CAPS
+    if (RegExp(r'^[♥♡★☆●○◆◇▶►▸❤️💕🔥👇👆📺🎥🎬📹🍳🍴🍽️\s]+[A-Z]{2,}').hasMatch(line)) {
+      return true;
+    }
+    // URLs anywhere in the line
+    if (line.contains('http://') || line.contains('https://') || line.startsWith('www.') || line.contains('.com/') || line.contains('.co/')) {
       return true;
     }
     // Social media handles
@@ -537,10 +549,12 @@ class UrlRecipeImporter {
     if (RegExp(r'business\s*(?:inquir|email)|contact\s*me|for\s*(?:inquir|collaborat)', caseSensitive: false).hasMatch(line)) {
       return true;
     }
-    // Chapter markers / timestamps
+    // Section header "chapters" or "timestamps" alone
     if (RegExp(r'^chapters?\s*$|^timestamps?\s*$', caseSensitive: false).hasMatch(line)) {
       return true;
     }
+    // NOTE: We do NOT filter "timestamp lines" like "Mixing dough – 00:55" 
+    // because we want to extract those as directions
     return false;
   }
   
@@ -553,8 +567,20 @@ class UrlRecipeImporter {
     if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(line)) {
       return true;
     }
+    // Baker's percentage format: "Flour, 100% – 600g" or "Water, 75%"
+    if (RegExp(r'\d+%\s*[–-]?\s*\d*', caseSensitive: false).hasMatch(line) && line.length < 80) {
+      return true;
+    }
+    // Format like "Ingredient Name – amount" (with en-dash)
+    if (RegExp(r'^[A-Za-z][^–-]*[–-]\s*\d').hasMatch(line) && line.length < 80) {
+      return true;
+    }
     // Short line with common ingredient words
-    if (line.length < 60 && RegExp(r'\b(?:salt|pepper|butter|oil|garlic|onion|flour|sugar|water|milk|cream|egg|chicken|beef|pork)\b', caseSensitive: false).hasMatch(line)) {
+    if (line.length < 60 && RegExp(r'\b(?:salt|pepper|butter|oil|garlic|onion|flour|sugar|water|milk|cream|egg|chicken|beef|pork|yeast|olive|rosemary|herbs?)\b', caseSensitive: false).hasMatch(line)) {
+      return true;
+    }
+    // "as needed" or "to taste" patterns
+    if (RegExp(r'\b(?:as needed|to taste|optional|for topping|for garnish)\b', caseSensitive: false).hasMatch(line) && line.length < 60) {
       return true;
     }
     return false;
@@ -565,8 +591,12 @@ class UrlRecipeImporter {
     if (RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false).hasMatch(line)) {
       return true;
     }
+    // Timestamped step like "Mixing the dough – 00:55" or "Step name - 1:23"
+    if (_isTimestampedStep(line)) {
+      return true;
+    }
     // Starts with cooking action verb
-    if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred)\b', caseSensitive: false).hasMatch(line)) {
+    if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred|fold|knead|proof|rise|ferment|dimpl|topp|cutt|plac)\b', caseSensitive: false).hasMatch(line)) {
       return true;
     }
     // Longer line (likely instruction)
@@ -576,7 +606,27 @@ class UrlRecipeImporter {
     return false;
   }
   
+  /// Check if line is a timestamped step like "Mixing dough – 00:55"
+  bool _isTimestampedStep(String line) {
+    // Format: "Step description – MM:SS" or "Step description - M:SS"
+    return RegExp(r'^[A-Za-z].+\s*[–-]\s*\d{1,2}:\d{2}(?::\d{2})?\s*$').hasMatch(line);
+  }
+  
+  /// Extract step title from timestamped line
+  String? _extractStepFromTimestamp(String line) {
+    final match = RegExp(r'^(.+?)\s*[–-]\s*\d{1,2}:\d{2}(?::\d{2})?\s*$').firstMatch(line);
+    if (match != null) {
+      return match.group(1)?.trim();
+    }
+    return null;
+  }
+  
   String _cleanDirectionLine(String line) {
+    // First, try to extract step title from timestamp format
+    final timestampStep = _extractStepFromTimestamp(line);
+    if (timestampStep != null) {
+      return timestampStep;
+    }
     // Remove step numbers at the beginning
     var cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
     return cleaned.trim();
