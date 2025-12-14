@@ -842,35 +842,53 @@ class UrlRecipeImporter {
       String lastError = '';
       
       // Method 1: Try YouTube's internal transcript API (what the player uses)
-      try {
-        final transcriptResponse = await http.post(
-          Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript'),
-          headers: {
-            'Content-Type': 'application/json',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-          },
-          body: '''{
-            "context": {
-              "client": {
-                "clientName": "WEB",
-                "clientVersion": "2.20231219.04.00"
-              }
+      // First, extract the serializedShareEntity or transcript params from page
+      final paramsMatch = RegExp(
+        r'"serializedShareEntity"\s*:\s*"([^"]+)"',
+      ).firstMatch(pageBody);
+      
+      final transcriptParams = paramsMatch?.group(1) ?? '';
+      
+      if (transcriptParams.isNotEmpty) {
+        try {
+          final transcriptResponse = await http.post(
+            Uri.parse('https://www.youtube.com/youtubei/v1/get_transcript'),
+            headers: {
+              'Content-Type': 'application/json',
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+              'Origin': 'https://www.youtube.com',
+              'Referer': 'https://www.youtube.com/watch?v=$videoId',
             },
-            "params": "${_buildTranscriptParams(videoId)}"
-          }''',
-        );
-        
-        if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
-          final segments = _parseYouTubeiTranscript(transcriptResponse.body);
-          if (segments.isNotEmpty) {
-            return (segments, 'youtubei: ${segments.length} segments');
+            body: '''{
+              "context": {
+                "client": {
+                  "clientName": "WEB",
+                  "clientVersion": "2.20231219.04.00",
+                  "hl": "en"
+                }
+              },
+              "params": "$transcriptParams"
+            }''',
+          );
+          
+          if (transcriptResponse.statusCode == 200 && transcriptResponse.body.isNotEmpty) {
+            final segments = _parseYouTubeiTranscript(transcriptResponse.body);
+            if (segments.isNotEmpty) {
+              return (segments, 'youtubei: ${segments.length} segments');
+            }
+            // Store response sample for debugging
+            final sample = transcriptResponse.body.length > 80 
+                ? transcriptResponse.body.substring(0, 80) 
+                : transcriptResponse.body;
+            lastError = 'youtubei: 0 segs, sample: $sample';
+          } else {
+            lastError = 'youtubei: status=${transcriptResponse.statusCode}, len=${transcriptResponse.body.length}';
           }
-          lastError = 'youtubei: parsed 0 segments';
-        } else {
-          lastError = 'youtubei: status=${transcriptResponse.statusCode}';
+        } catch (e) {
+          lastError = 'youtubei err: ${e.toString().length > 20 ? e.toString().substring(0, 20) : e}';
         }
-      } catch (e) {
-        lastError = 'youtubei err: ${e.toString().length > 20 ? e.toString().substring(0, 20) : e}';
+      } else {
+        lastError = 'no transcript params in page';
       }
       
       // Method 2: Try timedtext URLs as fallback
