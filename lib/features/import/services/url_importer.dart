@@ -2619,6 +2619,55 @@ class UrlRecipeImporter {
     return cleaned.trim();
   }
 
+  /// Split garnish text intelligently - handles "X or Y" as separate items
+  /// e.g., "orange or lemon peel" becomes ["Orange Peel", "Lemon Peel"]
+  List<String> _splitGarnishText(String text) {
+    if (text.isEmpty) return [];
+    
+    // First split by comma
+    final commaSplit = text.split(RegExp(r',\s*'));
+    final result = <String>[];
+    
+    for (final part in commaSplit) {
+      final trimmed = part.trim();
+      if (trimmed.isEmpty) continue;
+      
+      // Check for "X or Y" pattern where they share a common suffix
+      // e.g., "orange or lemon peel" -> "orange peel", "lemon peel"
+      final orMatch = RegExp(r'^(.+?)\s+or\s+(.+)$', caseSensitive: false).firstMatch(trimmed);
+      if (orMatch != null) {
+        final firstPart = orMatch.group(1)?.trim() ?? '';
+        final secondPart = orMatch.group(2)?.trim() ?? '';
+        
+        // Check if second part has a suffix that should apply to first
+        // e.g., "orange or lemon peel" - "peel" is the shared suffix
+        final words = secondPart.split(' ');
+        if (words.length > 1) {
+          // Assume last word(s) are shared suffix
+          final lastWord = words.last;
+          // Check if first part is missing the suffix type word
+          if (!firstPart.toLowerCase().contains(lastWord.toLowerCase())) {
+            // Add the suffix to the first option
+            result.add('$firstPart $lastWord');
+            result.add(secondPart);
+          } else {
+            // Both are complete, add separately
+            result.add(firstPart);
+            result.add(secondPart);
+          }
+        } else {
+          // Simple "X or Y" - both are complete items
+          result.add(firstPart);
+          result.add(secondPart);
+        }
+      } else {
+        result.add(trimmed);
+      }
+    }
+    
+    return result.where((s) => s.isNotEmpty).toList();
+  }
+
   /// Parse nutrition information from schema.org NutritionInformation
   NutritionInfo? _parseNutrition(dynamic data) {
     if (data == null) return null;
@@ -2897,6 +2946,38 @@ class UrlRecipeImporter {
     final List<String> notesParts = [];
     String? amount;
     String? inlineSection;
+    
+    // Handle Seedlip/cocktail format: "Name: amount / metric" 
+    // e.g., "Seedlip Grove 42: 1.75 oz / 53ml" or "Marmalade Cordial*: 1 oz / 30 ml"
+    final colonAmountMatch = RegExp(
+      r'^([^:]+):\s*([\d.]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)?)\s*(?:/\s*([\d.]+\s*(?:ml|cl|oz)?))?(.*)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (colonAmountMatch != null) {
+      var name = colonAmountMatch.group(1)?.trim() ?? '';
+      final primaryAmount = colonAmountMatch.group(2)?.trim() ?? '';
+      final metricAmount = colonAmountMatch.group(3)?.trim();
+      final extra = colonAmountMatch.group(4)?.trim() ?? '';
+      
+      // Remove trailing * or other markers from name
+      name = name.replaceAll(RegExp(r'\*+$'), '').trim();
+      
+      // Use the primary amount (typically oz for US sites)
+      // Add metric as a note if present
+      String? preparation;
+      if (metricAmount != null && metricAmount.isNotEmpty) {
+        preparation = metricAmount;
+      }
+      if (extra.isNotEmpty) {
+        preparation = preparation != null ? '$preparation $extra' : extra;
+      }
+      
+      return Ingredient.create(
+        name: name,
+        amount: primaryAmount,
+        preparation: preparation,
+      );
+    }
     
     // Handle baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
     // or "Warm Water, 75% – 450g (2 Cups)" or "Extra Virgin Olive Oil, 3.3% – 20g (2 tbsp.)"
@@ -4775,7 +4856,9 @@ class UrlRecipeImporter {
     }
     
     // Pattern 2: H3 "Glass:" heading (Diffords style)
+    // Also try looking for any element with text starting with "Glass:"
     if (result['glass'] == null) {
+      // First try h3 elements
       for (final h3 in document.querySelectorAll('h3')) {
         final h3Text = h3.text?.trim().toLowerCase() ?? '';
         if (h3Text == 'glass:' || h3Text == 'glass' || h3Text.startsWith('glass:')) {
@@ -4783,7 +4866,7 @@ class UrlRecipeImporter {
           if (nextElem != null) {
             var glassText = _decodeHtml(nextElem.text?.trim() ?? '');
             // Handle "Serve in a [Glass Type]" pattern
-            final serveInMatch = RegExp(r'Serve\s+in\s+(?:a\s+)?(.+)', caseSensitive: false).firstMatch(glassText);
+            final serveInMatch = RegExp(r'Serve\s+in\s+(?:an?\s+)?(.+)', caseSensitive: false).firstMatch(glassText);
             if (serveInMatch != null) {
               glassText = serveInMatch.group(1)?.trim() ?? glassText;
             }
@@ -4796,13 +4879,39 @@ class UrlRecipeImporter {
       }
     }
     
+    // Pattern 2b: Diffords uses class="legacy-longform-heading" for "Glass:" label
+    if (result['glass'] == null) {
+      final glassHeading = document.querySelector('.legacy-longform-heading');
+      if (glassHeading != null) {
+        final headingText = glassHeading.text?.trim().toLowerCase() ?? '';
+        if (headingText == 'glass:') {
+          // Check if there's a sibling paragraph or the parent has more content
+          final parent = glassHeading.parent;
+          if (parent != null) {
+            var parentText = _decodeHtml(parent.text?.trim() ?? '');
+            // Remove "Glass:" prefix
+            parentText = parentText.replaceFirst(RegExp(r'^Glass:\s*', caseSensitive: false), '').trim();
+            // Handle "Serve in a [Glass Type]" pattern
+            final serveInMatch = RegExp(r'Serve\s+in\s+(?:an?\s+)?(.+)', caseSensitive: false).firstMatch(parentText);
+            if (serveInMatch != null) {
+              parentText = serveInMatch.group(1)?.trim() ?? parentText;
+            }
+            if (parentText.isNotEmpty) {
+              result['glass'] = parentText;
+            }
+          }
+        }
+      }
+    }
+    
     // Pattern 3: Inline "Garnish:" span (Diffords style)
-    // <span class="legacy-longform-heading">Garnish:</span> Raspberries
+    // <p><span class="legacy-longform-heading">Garnish:</span> Raspberries</p>
     if ((result['garnish'] as List).isEmpty) {
-      final garnishSpans = document.querySelectorAll('span');
-      for (final span in garnishSpans) {
-        final spanText = span.text?.trim().toLowerCase() ?? '';
-        if (spanText == 'garnish:' || spanText == 'garnish') {
+      // Look for spans with class that might contain "Garnish:"
+      final allSpans = document.querySelectorAll('span');
+      for (final span in allSpans) {
+        final spanText = span.text?.trim() ?? '';
+        if (spanText.toLowerCase() == 'garnish:' || spanText.toLowerCase() == 'garnish') {
           // Get parent element text and extract garnish
           final parent = span.parent;
           if (parent != null) {
@@ -4810,14 +4919,28 @@ class UrlRecipeImporter {
             // Remove "Garnish:" prefix
             parentText = parentText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
             if (parentText.isNotEmpty) {
-              // Split by comma or "or" for multiple garnishes
-              final garnishes = parentText.split(RegExp(r',\s*|\s+or\s+'))
-                  .map((s) => s.trim())
-                  .where((s) => s.isNotEmpty)
-                  .toList();
+              // Split by comma for multiple garnishes, keep "or" options together
+              final garnishes = _splitGarnishText(parentText);
               if (garnishes.isNotEmpty) {
                 result['garnish'] = garnishes;
               }
+            }
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 3b: Look for paragraphs that start with "Garnish:" 
+    if ((result['garnish'] as List).isEmpty) {
+      for (final p in document.querySelectorAll('p')) {
+        final pText = p.text?.trim() ?? '';
+        if (pText.toLowerCase().startsWith('garnish:')) {
+          var garnishText = pText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
+          if (garnishText.isNotEmpty) {
+            final garnishes = _splitGarnishText(garnishText);
+            if (garnishes.isNotEmpty) {
+              result['garnish'] = garnishes;
             }
           }
           break;
@@ -4836,10 +4959,7 @@ class UrlRecipeImporter {
         if (garnishMatch != null && (result['garnish'] as List).isEmpty) {
           final garnishText = garnishMatch.group(1)?.trim() ?? '';
           if (garnishText.isNotEmpty) {
-            final garnishes = garnishText.split(RegExp(r',\s*|\s+or\s+'))
-                .map((s) => s.trim())
-                .where((s) => s.isNotEmpty)
-                .toList();
+            final garnishes = _splitGarnishText(garnishText);
             result['garnish'] = garnishes;
           }
         }
@@ -5705,19 +5825,43 @@ class UrlRecipeImporter {
   /// Extract recipe image from HTML document
   /// Checks schema.org markup, Open Graph meta tags, and common recipe image selectors
   String? _extractImageFromHtml(dynamic document) {
+    // Helper to get image URL from various attributes
+    String? getImageUrl(dynamic element) {
+      if (element == null) return null;
+      // Try various attributes - sites use different ones for lazy loading
+      final attrs = ['src', 'content', 'data-src', 'data-lazy-src', 'data-original', 'srcset'];
+      for (final attr in attrs) {
+        var value = element.attributes[attr];
+        if (value != null && value.isNotEmpty) {
+          // For srcset, take the first URL
+          if (attr == 'srcset') {
+            value = value.split(',').first.split(' ').first.trim();
+          }
+          // Skip placeholder images
+          if (value.contains('data:image') || 
+              value.contains('placeholder') ||
+              value.contains('loading') ||
+              value.contains('blank')) {
+            continue;
+          }
+          return value;
+        }
+      }
+      return null;
+    }
+    
     // 1. Try schema.org Recipe image (itemprop="image")
     final schemaImg = document.querySelector('[itemscope][itemtype*="Recipe"] [itemprop="image"]');
     if (schemaImg != null) {
-      // Could be an img tag with src, or a meta tag with content
-      final src = schemaImg.attributes['src'] ?? schemaImg.attributes['content'];
-      if (src != null && src.isNotEmpty) return src;
+      final url = getImageUrl(schemaImg);
+      if (url != null) return url;
     }
     
     // 2. Try itemprop="image" directly (without parent scope check)
     final itempropImg = document.querySelector('[itemprop="image"]');
     if (itempropImg != null) {
-      final src = itempropImg.attributes['src'] ?? itempropImg.attributes['content'];
-      if (src != null && src.isNotEmpty) return src;
+      final url = getImageUrl(itempropImg);
+      if (url != null) return url;
     }
     
     // 3. Try Open Graph image meta tag
@@ -5742,14 +5886,16 @@ class UrlRecipeImporter {
       '.tasty-recipes-image img',
       '.snippet-image img',
       'article img',
+      'picture source', // For picture elements with source tags
+      'picture img',
     ];
     
     for (final selector in commonSelectors) {
-      final img = document.querySelector(selector);
-      if (img != null) {
-        final src = img.attributes['src'];
-        if (src != null && src.isNotEmpty && !src.contains('icon') && !src.contains('logo')) {
-          return src;
+      final element = document.querySelector(selector);
+      if (element != null) {
+        final url = getImageUrl(element);
+        if (url != null && !url.contains('icon') && !url.contains('logo')) {
+          return url;
         }
       }
     }
