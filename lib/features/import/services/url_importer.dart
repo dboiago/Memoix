@@ -1341,8 +1341,39 @@ class UrlRecipeImporter {
       return timestampStep;
     }
     // Remove step numbers at the beginning
-    final cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
+    var cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
     return cleaned.trim();
+  }
+  
+  /// Check if a direction line should be skipped (junk content)
+  bool _isJunkDirectionLine(String line) {
+    final trimmed = line.trim();
+    if (trimmed.isEmpty) return true;
+    
+    // Skip markdown-style titles like **Title** (these are often recipe titles, not directions)
+    if (RegExp(r'^\*\*[^*]+\*\*$').hasMatch(trimmed)) return true;
+    
+    // Skip "By AUTHOR NAME" lines (author bylines)
+    if (RegExp(r'^By\s+[A-Z][A-Z\s]+$', caseSensitive: true).hasMatch(trimmed)) return true;
+    if (RegExp(r'^By\s+[A-Z][a-z]+(\s+[A-Z][a-z]+)*$').hasMatch(trimmed)) return true;
+    
+    // Skip standalone "Step X" headers (the content follows in another element)
+    if (RegExp(r'^Step\s*\d+\.?$', caseSensitive: false).hasMatch(trimmed)) return true;
+    
+    // Skip navigation/UI elements
+    if (trimmed.toLowerCase() == 'directions' ||
+        trimmed.toLowerCase() == 'instructions' ||
+        trimmed.toLowerCase() == 'method' ||
+        trimmed.toLowerCase() == 'steps' ||
+        trimmed.toLowerCase() == 'preparation') return true;
+    
+    // Skip very short lines that are likely headers
+    if (trimmed.length < 5) return true;
+    
+    // Skip lines that are just numbers or punctuation
+    if (RegExp(r'^[\d\s.,;:!?-]+$').hasMatch(trimmed)) return true;
+    
+    return false;
   }
   
   /// Extract chapters from YouTube description
@@ -5076,10 +5107,18 @@ class UrlRecipeImporter {
     
     // Filter out empty or whitespace-only ingredient strings before processing
     // Also filter out strings that are just punctuation or control characters
-    final filteredIngredientStrings = rawIngredientStrings
-        .map((s) => s.trim())
-        .where((s) => s.isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(s))
-        .toList();
+    // And deduplicate ingredients (some sites like Saveur return duplicates)
+    final seenIngredients = <String>{};
+    final filteredIngredientStrings = <String>[];
+    for (final s in rawIngredientStrings) {
+      final trimmed = s.trim();
+      if (trimmed.isEmpty || !RegExp(r'[a-zA-Z0-9]').hasMatch(trimmed)) continue;
+      // Normalize for comparison (lowercase, collapse whitespace)
+      final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+      if (seenIngredients.contains(normalizedKey)) continue;
+      seenIngredients.add(normalizedKey);
+      filteredIngredientStrings.add(trimmed);
+    }
     
     final ingredientsConfidence = filteredIngredientStrings.isNotEmpty 
         ? (ingredients.length / filteredIngredientStrings.length) * baseConfidence 
@@ -5145,6 +5184,20 @@ class UrlRecipeImporter {
       ];
     }
 
+    // Filter out junk direction lines (markdown titles, author bylines, etc.)
+    // and deduplicate
+    final filteredDirections = <String>[];
+    final seenDirections = <String>{};
+    for (final dir in rawDirections) {
+      if (_isJunkDirectionLine(dir)) continue;
+      final cleaned = _cleanDirectionLine(dir);
+      if (cleaned.isEmpty) continue;
+      final normalizedKey = cleaned.toLowerCase().replaceAll(RegExp(r'\s+'), ' ').trim();
+      if (seenDirections.contains(normalizedKey)) continue;
+      seenDirections.add(normalizedKey);
+      filteredDirections.add(cleaned);
+    }
+
     return RecipeImportResult(
       name: title != null ? _cleanRecipeName(title) : null,
       course: course,
@@ -5153,13 +5206,13 @@ class UrlRecipeImporter {
       imageUrl: imageUrl,
       time: timing,
       ingredients: ingredients,
-      directions: rawDirections,
+      directions: filteredDirections,
       notes: htmlNotes,
       equipment: equipmentItems,
       glass: glassType,
       garnish: garnishItems,
       rawIngredients: rawIngredients,
-      rawDirections: rawDirections,
+      rawDirections: filteredDirections,
       detectedCourses: detectedCourses,
       nameConfidence: nameConfidence,
       courseConfidence: courseConfidence,
@@ -7355,6 +7408,10 @@ class UrlRecipeImporter {
       'sangria', 'mimosa', 'bellini', 'cosmopolitan',
       'mai tai', 'pina colada', 'bloody mary', 'paloma',
       'smoothie', 'milkshake', 'lemonade', 'iced tea',
+      // Spirits and liqueurs as drink type indicators
+      'amaro', 'digestif', 'aperitif', 'bitters', 'sharbat', 'shrub',
+      'cordial', 'elixir', 'tonic', 'syrup recipe', 'simple syrup',
+      'infusion', 'tincture', 'limoncello', 'nocino',
     ];
     
     for (final keyword in drinkKeywords) {
@@ -7368,6 +7425,7 @@ class UrlRecipeImporter {
       'vodka', 'gin', 'rum', 'tequila', 'whiskey', 'whisky',
       'bourbon', 'scotch', 'brandy', 'cognac', 'mezcal',
       'liqueur', 'vermouth', 'amaretto', 'kahlua', 'baileys',
+      'chartreuse', 'campari', 'aperol', 'fernet', 'grappa',
     ];
     
     // Only match spirits in title (not ingredients, as spirits can be cooking ingredients)
