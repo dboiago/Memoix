@@ -278,41 +278,51 @@ class UrlRecipeImporter {
           }
         }
         
-        // If no equipment from JSON-LD, try to get it from HTML sections
-        if (jsonLdResult.equipment.isEmpty) {
-          final sectionResult = _parseHtmlBySections(document);
-          final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
-          if (htmlEquipment.isNotEmpty) {
-            // Return a new result with equipment added
-            return RecipeImportResult(
-              name: jsonLdResult.name,
-              course: jsonLdResult.course,
-              cuisine: jsonLdResult.cuisine,
-              subcategory: jsonLdResult.subcategory,
-              serves: jsonLdResult.serves,
-              time: jsonLdResult.time,
-              ingredients: jsonLdResult.ingredients,
-              directions: jsonLdResult.directions,
-              notes: jsonLdResult.notes,
-              imageUrl: jsonLdResult.imageUrl,
-              nutrition: jsonLdResult.nutrition,
-              equipment: htmlEquipment,
-              rawIngredients: jsonLdResult.rawIngredients,
-              rawDirections: jsonLdResult.rawDirections,
-              detectedCourses: jsonLdResult.detectedCourses,
-              detectedCuisines: jsonLdResult.detectedCuisines,
-              nameConfidence: jsonLdResult.nameConfidence,
-              courseConfidence: jsonLdResult.courseConfidence,
-              cuisineConfidence: jsonLdResult.cuisineConfidence,
-              ingredientsConfidence: jsonLdResult.ingredientsConfidence,
-              directionsConfidence: jsonLdResult.directionsConfidence,
-              servesConfidence: jsonLdResult.servesConfidence,
-              timeConfidence: jsonLdResult.timeConfidence,
-              sourceUrl: jsonLdResult.sourceUrl,
-              source: jsonLdResult.source,
-            );
-          }
+        // Always try to supplement JSON-LD with glass/garnish from HTML (for drink recipes)
+        // and equipment if missing. These aren't standard Schema.org Recipe properties.
+        final sectionResult = _parseHtmlBySections(document);
+        final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
+        final htmlGlass = sectionResult['glass'] as String?;
+        final htmlGarnish = sectionResult['garnish'] as List<String>? ?? [];
+        
+        // Check if we need to supplement anything
+        final needsEquipment = jsonLdResult.equipment.isEmpty && htmlEquipment.isNotEmpty;
+        final needsGlass = (jsonLdResult.glass == null || jsonLdResult.glass!.isEmpty) && htmlGlass != null;
+        final needsGarnish = jsonLdResult.garnish.isEmpty && htmlGarnish.isNotEmpty;
+        
+        if (needsEquipment || needsGlass || needsGarnish) {
+          return RecipeImportResult(
+            name: jsonLdResult.name,
+            course: jsonLdResult.course,
+            cuisine: jsonLdResult.cuisine,
+            subcategory: jsonLdResult.subcategory,
+            serves: jsonLdResult.serves,
+            time: jsonLdResult.time,
+            ingredients: jsonLdResult.ingredients,
+            directions: jsonLdResult.directions,
+            notes: jsonLdResult.notes,
+            imageUrl: jsonLdResult.imageUrl,
+            nutrition: jsonLdResult.nutrition,
+            equipment: needsEquipment ? htmlEquipment : jsonLdResult.equipment,
+            glass: needsGlass ? htmlGlass : jsonLdResult.glass,
+            garnish: needsGarnish ? htmlGarnish : jsonLdResult.garnish,
+            rawIngredients: jsonLdResult.rawIngredients,
+            rawDirections: jsonLdResult.rawDirections,
+            detectedCourses: jsonLdResult.detectedCourses,
+            detectedCuisines: jsonLdResult.detectedCuisines,
+            nameConfidence: jsonLdResult.nameConfidence,
+            courseConfidence: jsonLdResult.courseConfidence,
+            cuisineConfidence: jsonLdResult.cuisineConfidence,
+            ingredientsConfidence: jsonLdResult.ingredientsConfidence,
+            directionsConfidence: jsonLdResult.directionsConfidence,
+            servesConfidence: jsonLdResult.servesConfidence,
+            timeConfidence: jsonLdResult.timeConfidence,
+            sourceUrl: jsonLdResult.sourceUrl,
+            source: jsonLdResult.source,
+            imagePaths: jsonLdResult.imagePaths,
+          );
         }
+        
         return jsonLdResult;
       }
       
@@ -3116,6 +3126,19 @@ class UrlRecipeImporter {
       content = content.replaceAll(RegExp(r'^[,\s]+'), '').trim();
       
       if (content.isNotEmpty && content.toLowerCase() != 'optional') {
+        // Check if this looks like a ratio/recipe description that should stay with the name
+        // e.g., "(2 sugar to 1 water, 65.0°Brix)" or "(3:1 simple syrup)"
+        // These describe the ingredient itself, not preparation
+        final looksLikeRatio = RegExp(
+          r'\d+\s*(to|:|parts?)\s*\d+|brix|syrup|ratio|simple|rich',
+          caseSensitive: false,
+        ).hasMatch(content);
+        
+        if (looksLikeRatio) {
+          // Keep this as part of the ingredient name, don't extract to notes
+          continue;
+        }
+        
         // Check if it's a weight conversion (e.g., "0.6 pounds", "1 lb", "500g")
         final isWeightConversion = RegExp(
           r'^[\d.]+\s*(?:pounds?|lbs?|oz|ounces?|kg|g|grams?)$',
