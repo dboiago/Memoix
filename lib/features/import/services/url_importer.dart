@@ -343,6 +343,13 @@ class UrlRecipeImporter {
           }
         }
         
+        // Handle Great British Chefs - extract ingredient sections from __NEXT_DATA__
+        // The JSON-LD has flat recipeIngredient but __NEXT_DATA__ has rich ingredients with groupName
+        if (url.contains('greatbritishchefs.com')) {
+          final gbcResult = _extractGreatBritishChefsIngredients(body, jsonLdResult);
+          if (gbcResult != null) return gbcResult;
+        }
+        
         // Always try to supplement JSON-LD with glass/garnish from HTML (for drink recipes)
         // and equipment/directions if missing. These aren't standard Schema.org Recipe properties.
         final sectionResult = _parseHtmlBySections(document);
@@ -514,6 +521,148 @@ class UrlRecipeImporter {
         // Last resort: use Latin-1 (never fails, but may produce wrong characters)
         return latin1.decode(bytes);
       }
+    }
+  }
+  
+  /// Extract ingredient sections from Great British Chefs __NEXT_DATA__
+  /// Their JSON-LD has flat recipeIngredient but __NEXT_DATA__ has rich data with groupName sections
+  RecipeImportResult? _extractGreatBritishChefsIngredients(String body, RecipeImportResult jsonLdResult) {
+    try {
+      // Extract __NEXT_DATA__ JSON
+      final nextDataPattern = RegExp(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', dotAll: true);
+      final match = nextDataPattern.firstMatch(body);
+      if (match == null) return null;
+      
+      final jsonStr = match.group(1);
+      if (jsonStr == null || jsonStr.isEmpty) return null;
+      
+      final data = jsonDecode(jsonStr);
+      if (data is! Map<String, dynamic>) return null;
+      
+      // Navigate to the page props where the recipe data lives
+      final pageProps = data['props']?['pageProps'];
+      if (pageProps is! Map<String, dynamic>) return null;
+      
+      // Extract yieldTextOverride for serves
+      String? serves = jsonLdResult.serves;
+      final yieldOverride = pageProps['yieldTextOverride'];
+      if (yieldOverride is String && yieldOverride.isNotEmpty) {
+        serves = yieldOverride;
+      }
+      
+      // Extract ingredients array with groupName
+      final ingredientsData = pageProps['ingredients'];
+      if (ingredientsData is! List || ingredientsData.isEmpty) {
+        // If no rich ingredients, just update serves and return
+        if (serves != jsonLdResult.serves) {
+          return RecipeImportResult(
+            name: jsonLdResult.name,
+            course: jsonLdResult.course,
+            cuisine: jsonLdResult.cuisine,
+            subcategory: jsonLdResult.subcategory,
+            serves: serves,
+            time: jsonLdResult.time,
+            ingredients: jsonLdResult.ingredients,
+            directions: jsonLdResult.directions,
+            notes: jsonLdResult.notes,
+            imageUrl: jsonLdResult.imageUrl,
+            nutrition: jsonLdResult.nutrition,
+            equipment: jsonLdResult.equipment,
+            rawIngredients: jsonLdResult.rawIngredients,
+            rawDirections: jsonLdResult.rawDirections,
+            detectedCourses: jsonLdResult.detectedCourses,
+            detectedCuisines: jsonLdResult.detectedCuisines,
+            nameConfidence: jsonLdResult.nameConfidence,
+            courseConfidence: jsonLdResult.courseConfidence,
+            cuisineConfidence: jsonLdResult.cuisineConfidence,
+            ingredientsConfidence: jsonLdResult.ingredientsConfidence,
+            directionsConfidence: jsonLdResult.directionsConfidence,
+            servesConfidence: 0.9,
+            timeConfidence: jsonLdResult.timeConfidence,
+            sourceUrl: jsonLdResult.sourceUrl,
+            source: jsonLdResult.source,
+            imagePaths: jsonLdResult.imagePaths,
+          );
+        }
+        return null;
+      }
+      
+      // Build ingredient list with sections
+      final rawIngredientStrings = <String>[];
+      String? currentSection;
+      
+      for (final item in ingredientsData) {
+        if (item is! Map<String, dynamic>) continue;
+        
+        // Check for section header change
+        final groupName = item['groupName'] as String?;
+        if (groupName != null && groupName != currentSection) {
+          // Add section header as a special ingredient line
+          rawIngredientStrings.add('## $groupName');
+          currentSection = groupName;
+        }
+        
+        // Get the ingredient text - prefer unstructuredTextMetric, fallback to linkTextMetric
+        final ingredientText = (item['unstructuredTextMetric'] as String?) ?? 
+                              (item['linkTextMetric'] as String?);
+        if (ingredientText != null && ingredientText.isNotEmpty) {
+          rawIngredientStrings.add(ingredientText);
+        }
+      }
+      
+      if (rawIngredientStrings.isEmpty) return null;
+      
+      // Parse ingredients
+      var ingredients = _parseIngredients(rawIngredientStrings);
+      ingredients = _sortIngredientsByQuantity(ingredients);
+      
+      // Build raw ingredients list
+      final rawIngredients = rawIngredientStrings.map((raw) {
+        final parsed = _parseIngredientString(raw);
+        final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+        final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+        return RawIngredientData(
+          original: raw,
+          amount: parsed.amount,
+          unit: parsed.unit,
+          preparation: parsed.preparation,
+          name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
+          looksLikeIngredient: parsed.name.isNotEmpty,
+          isSection: parsed.section != null,
+          sectionName: parsed.section,
+        );
+      }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
+      
+      return RecipeImportResult(
+        name: jsonLdResult.name,
+        course: jsonLdResult.course,
+        cuisine: jsonLdResult.cuisine,
+        subcategory: jsonLdResult.subcategory,
+        serves: serves,
+        time: jsonLdResult.time,
+        ingredients: ingredients,
+        directions: jsonLdResult.directions,
+        notes: jsonLdResult.notes,
+        imageUrl: jsonLdResult.imageUrl,
+        nutrition: jsonLdResult.nutrition,
+        equipment: jsonLdResult.equipment,
+        rawIngredients: rawIngredients,
+        rawDirections: jsonLdResult.rawDirections,
+        detectedCourses: jsonLdResult.detectedCourses,
+        detectedCuisines: jsonLdResult.detectedCuisines,
+        nameConfidence: jsonLdResult.nameConfidence,
+        courseConfidence: jsonLdResult.courseConfidence,
+        cuisineConfidence: jsonLdResult.cuisineConfidence,
+        ingredientsConfidence: 0.9, // Higher confidence with section info
+        directionsConfidence: jsonLdResult.directionsConfidence,
+        servesConfidence: serves != null ? 0.9 : 0.0,
+        timeConfidence: jsonLdResult.timeConfidence,
+        sourceUrl: jsonLdResult.sourceUrl,
+        source: jsonLdResult.source,
+        imagePaths: jsonLdResult.imagePaths,
+      );
+    } catch (_) {
+      return null;
     }
   }
   
