@@ -3798,6 +3798,28 @@ class UrlRecipeImporter {
       }
     }
     
+    // Handle "or" alternatives - e.g., "confectioners' sugar or King Arthur Snow White Sugar"
+    // Match " or " but not at very start, and not "for" or other words ending in "or"
+    final orMatch = RegExp(r'\s+or\s+', caseSensitive: false).firstMatch(remaining);
+    if (orMatch != null && orMatch.start > 0) {
+      final beforeOr = remaining.substring(0, orMatch.start).trim();
+      final afterOr = remaining.substring(orMatch.end).trim();
+      
+      // Only treat as alternative if afterOr looks like an ingredient name, not a phrase
+      // (avoid splitting on "or until golden brown" type phrases in directions that leaked in)
+      if (afterOr.isNotEmpty && !RegExp(r'^(until|if|when|as)\s', caseSensitive: false).hasMatch(afterOr)) {
+        remaining = beforeOr;
+        // Clean up the alternative - remove trailing punctuation and footnotes
+        var alternative = afterOr
+            .replaceAll(RegExp(r'\*+$'), '')
+            .replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '')
+            .trim();
+        if (alternative.isNotEmpty) {
+          notesParts.insert(0, 'alt: $alternative');
+        }
+      }
+    }
+    
     // Skip empty ingredients (like just "cooking oil" with nothing useful after extraction)
     // But allow simple ingredients like "oil", "salt", etc.
     if (remaining.isEmpty && notesParts.isEmpty && amount == null) {
