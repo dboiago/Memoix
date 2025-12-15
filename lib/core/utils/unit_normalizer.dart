@@ -117,7 +117,13 @@ class UnitNormalizer {
   static String normalize(String? unit) {
     if (unit == null || unit.isEmpty) return '';
     
-    final trimmed = unit.trim();
+    var trimmed = unit.trim();
+    
+    // Strip trailing period (e.g., "tsp." -> "tsp")
+    if (trimmed.endsWith('.')) {
+      trimmed = trimmed.substring(0, trimmed.length - 1);
+    }
+    
     final lower = trimmed.toLowerCase();
     
     // Check for exact match in map

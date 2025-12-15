@@ -7,14 +7,18 @@ import '../../recipes/models/category.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import '../../recipes/screens/recipe_detail_screen.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
+import '../../modernist/screens/modernist_detail_screen.dart';
 import '../../modernist/repository/modernist_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/screens/pizza_edit_screen.dart';
+import '../../pizzas/screens/pizza_detail_screen.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/screens/smoking_edit_screen.dart';
+import '../../smoking/screens/smoking_detail_screen.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../models/recipe_import_result.dart';
 
@@ -1266,28 +1270,49 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     // Save to appropriate repository based on course type
     String savedName;
+    String savedId;
+    Widget Function(BuildContext) detailScreenBuilder;
+    
     if (_isModernistCourse) {
       final recipe = _buildModernistRecipe();
       await ref.read(modernistRepositoryProvider).save(recipe);
       savedName = recipe.name;
+      savedId = recipe.uuid;
+      detailScreenBuilder = (_) => ModernistDetailScreen(recipeId: savedId);
     } else if (_isSmokingCourse) {
       final recipe = _buildSmokingRecipe();
       await ref.read(smokingRepositoryProvider).saveRecipe(recipe);
       savedName = recipe.name;
+      savedId = recipe.uuid;
+      detailScreenBuilder = (_) => SmokingDetailScreen(recipeId: savedId);
     } else if (_isPizzasCourse) {
       final recipe = _buildPizzaRecipe();
       await ref.read(pizzaRepositoryProvider).savePizza(recipe);
       savedName = recipe.name;
+      savedId = recipe.uuid;
+      detailScreenBuilder = (_) => PizzaDetailScreen(pizzaId: savedId);
     } else {
       final recipe = _buildRecipe();
       await ref.read(recipeRepositoryProvider).saveRecipe(recipe);
       savedName = recipe.name;
+      savedId = recipe.uuid;
+      detailScreenBuilder = (_) => RecipeDetailScreen(recipeId: savedId);
     }
 
     if (mounted) {
       Navigator.of(context).popUntil((route) => route.isFirst);
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Saved: $savedName')),
+        SnackBar(
+          content: Text('Saved: $savedName'),
+          action: SnackBarAction(
+            label: 'View',
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: detailScreenBuilder),
+              );
+            },
+          ),
+        ),
       );
     }
   }

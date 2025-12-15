@@ -11,6 +11,7 @@ import '../models/recipe.dart';
 import '../models/cuisine.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
+import 'recipe_detail_screen.dart';
 
 /// Converts text fractions and decimals to unicode fraction symbols
 String _normalizeFractions(String input) {
@@ -1401,10 +1402,23 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       // Save to database
       final repository = ref.read(recipeRepositoryProvider);
       await repository.saveRecipe(recipe);
+      final savedId = recipe.uuid;
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${recipe.name} saved!')),
+          SnackBar(
+            content: Text('${recipe.name} saved!'),
+            action: SnackBarAction(
+              label: 'View',
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => RecipeDetailScreen(recipeId: savedId),
+                  ),
+                );
+              },
+            ),
+          ),
         );
         Navigator.of(context).pop();
       }
