@@ -324,9 +324,7 @@ class UrlRecipeImporter {
             glass: needsGlass ? htmlGlass : jsonLdResult.glass,
             garnish: needsGarnish ? htmlGarnish : jsonLdResult.garnish,
             rawIngredients: jsonLdResult.rawIngredients,
-            rawDirections: needsDirections 
-                ? htmlDirections.map<RawDirectionData>((d) => RawDirectionData(original: d)).toList() 
-                : jsonLdResult.rawDirections,
+            rawDirections: needsDirections ? htmlDirections : jsonLdResult.rawDirections,
             detectedCourses: jsonLdResult.detectedCourses,
             detectedCuisines: jsonLdResult.detectedCuisines,
             nameConfidence: jsonLdResult.nameConfidence,
