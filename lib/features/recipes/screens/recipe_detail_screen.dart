@@ -283,49 +283,64 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     ],
                   ),
 
-                  // Glass (for Drinks)
-                  if (recipe.course == 'drinks' && recipe.glass != null && recipe.glass!.isNotEmpty) ...[
+                  // Glass and Garnish (for Drinks) - side by side
+                  if (recipe.course == 'drinks' && 
+                      ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty)) ...[
                     const SizedBox(height: 16),
-                    Text(
-                      'Glass',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 4,
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Chip(
-                          label: Text(recipe.glass!),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                          visualDensity: VisualDensity.compact,
-                        ),
+                        // Glass
+                        if (recipe.glass != null && recipe.glass!.isNotEmpty)
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Glass',
+                                  style: theme.textTheme.titleSmall?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Chip(
+                                  label: Text(recipe.glass!),
+                                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                  labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                  visualDensity: VisualDensity.compact,
+                                ),
+                              ],
+                            ),
+                          ),
+                        if (recipe.glass != null && recipe.glass!.isNotEmpty && recipe.garnish.isNotEmpty)
+                          const SizedBox(width: 16),
+                        // Garnish
+                        if (recipe.garnish.isNotEmpty)
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Garnish',
+                                  style: theme.textTheme.titleSmall?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Wrap(
+                                  spacing: 8,
+                                  runSpacing: 4,
+                                  children: recipe.garnish.map((item) => Chip(
+                                    label: Text(item),
+                                    backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                    labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                    visualDensity: VisualDensity.compact,
+                                  )).toList(),
+                                ),
+                              ],
+                            ),
+                          ),
                       ],
-                    ),
-                  ],
-
-                  // Garnish (for Drinks)
-                  if (recipe.course == 'drinks' && recipe.garnish.isNotEmpty) ...[
-                    const SizedBox(height: 16),
-                    Text(
-                      'Garnish',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 4,
-                      children: recipe.garnish.map((item) => Chip(
-                        label: Text(item),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                        visualDensity: VisualDensity.compact,
-                      )).toList(),
                     ),
                   ],
 

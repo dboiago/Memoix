@@ -991,12 +991,17 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ],
             ),
 
-            // Glass and Garnish (Drinks only)
+            // Glass and Garnish (Drinks only) - side by side
             if (_selectedCourse == 'drinks') ...[
               const SizedBox(height: 16),
-              _buildGlassSection(theme),
-              const SizedBox(height: 16),
-              _buildGarnishSection(theme),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(child: _buildGlassSection(theme)),
+                  const SizedBox(width: 16),
+                  Expanded(child: _buildGarnishSection(theme)),
+                ],
+              ),
             ],
 
             const SizedBox(height: 24),
@@ -1014,21 +1019,22 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       ),
                     ),
                     const Spacer(),
-                    // Baker's percentage toggle
-                    TextButton.icon(
-                      onPressed: () => setState(() => _showBakerPercent = !_showBakerPercent),
-                      icon: Icon(
-                        _showBakerPercent ? Icons.percent : Icons.percent_outlined,
-                        size: 18,
-                        color: _showBakerPercent ? theme.colorScheme.primary : null,
-                      ),
-                      label: Text(
-                        'BK%',
-                        style: TextStyle(
+                    // Baker's percentage toggle (only for Bread and Dessert)
+                    if (_selectedCourse == 'breads' || _selectedCourse == 'desserts')
+                      TextButton.icon(
+                        onPressed: () => setState(() => _showBakerPercent = !_showBakerPercent),
+                        icon: Icon(
+                          _showBakerPercent ? Icons.percent : Icons.percent_outlined,
+                          size: 18,
                           color: _showBakerPercent ? theme.colorScheme.primary : null,
                         ),
+                        label: Text(
+                          'BK%',
+                          style: TextStyle(
+                            color: _showBakerPercent ? theme.colorScheme.primary : null,
+                          ),
+                        ),
                       ),
-                    ),
                     TextButton.icon(
                       onPressed: _addSectionHeader,
                       icon: const Icon(Icons.title, size: 18),
@@ -1426,17 +1432,19 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('${recipe.name} saved!'),
-            action: SnackBarAction(
-              label: 'View',
-              onPressed: () {
+            content: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () {
+                ScaffoldMessenger.of(context).hideCurrentSnackBar();
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (_) => RecipeDetailScreen(recipeId: savedId),
                   ),
                 );
               },
+              child: Text('${recipe.name} saved!'),
             ),
+            duration: const Duration(seconds: 4),
           ),
         );
         Navigator.of(context).pop();

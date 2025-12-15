@@ -1488,15 +1488,17 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       Navigator.of(context).popUntil((route) => route.isFirst);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Saved: $savedName'),
-          action: SnackBarAction(
-            label: 'View',
-            onPressed: () {
+          content: GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: () {
+              ScaffoldMessenger.of(context).hideCurrentSnackBar();
               Navigator.of(context).push(
                 MaterialPageRoute(builder: detailScreenBuilder),
               );
             },
+            child: Text('Saved: $savedName'),
           ),
+          duration: const Duration(seconds: 4),
         ),
       );
     }
