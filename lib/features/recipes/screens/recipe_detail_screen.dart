@@ -292,31 +292,29 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                       children: [
                         // Glass
                         if (recipe.glass != null && recipe.glass!.isNotEmpty)
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Glass',
-                                  style: theme.textTheme.titleSmall?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Glass',
+                                style: theme.textTheme.titleSmall?.copyWith(
+                                  fontWeight: FontWeight.bold,
                                 ),
-                                const SizedBox(height: 4),
-                                Chip(
-                                  label: Text(recipe.glass!),
-                                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                  labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                                  visualDensity: VisualDensity.compact,
-                                ),
-                              ],
-                            ),
+                              ),
+                              const SizedBox(height: 4),
+                              Chip(
+                                label: Text(recipe.glass!),
+                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            ],
                           ),
                         if (recipe.glass != null && recipe.glass!.isNotEmpty && recipe.garnish.isNotEmpty)
-                          const SizedBox(width: 16),
+                          const SizedBox(width: 24),
                         // Garnish
                         if (recipe.garnish.isNotEmpty)
-                          Expanded(
+                          Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
