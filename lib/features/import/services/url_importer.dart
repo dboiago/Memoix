@@ -45,6 +45,7 @@ class UrlRecipeImporter {
     'absolutdrinks.com',
     'drinkflow.com',
     'drinkify.co',
+    'seedlipdrinks.com',
   ];
 
   /// HTML entity decode map for common entities
@@ -4712,6 +4713,143 @@ class UrlRecipeImporter {
         result['garnish'] = garnish;
       }
     }
+    
+    // === DRINK-SPECIFIC PATTERNS ===
+    
+    // Pattern 1: Combined "Glass and Garnish" heading (Seedlip style)
+    // First list item is glass, rest are garnish
+    if (result['glass'] == null) {
+      for (final heading in document.querySelectorAll('h2, h3')) {
+        final headingText = heading.text?.trim().toLowerCase() ?? '';
+        if (headingText.contains('glass') && headingText.contains('garnish')) {
+          final items = _extractListItemsAfterHeading(heading, document);
+          if (items.isNotEmpty) {
+            // First item is glass type
+            result['glass'] = items.first;
+            // Rest are garnishes
+            if (items.length > 1) {
+              result['garnish'] = items.sublist(1);
+            }
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 2: H3 "Glass:" heading (Diffords style)
+    if (result['glass'] == null) {
+      for (final h3 in document.querySelectorAll('h3')) {
+        final h3Text = h3.text?.trim().toLowerCase() ?? '';
+        if (h3Text == 'glass:' || h3Text == 'glass' || h3Text.startsWith('glass:')) {
+          final nextElem = h3.nextElementSibling;
+          if (nextElem != null) {
+            var glassText = _decodeHtml(nextElem.text?.trim() ?? '');
+            // Handle "Serve in a [Glass Type]" pattern
+            final serveInMatch = RegExp(r'Serve\s+in\s+(?:a\s+)?(.+)', caseSensitive: false).firstMatch(glassText);
+            if (serveInMatch != null) {
+              glassText = serveInMatch.group(1)?.trim() ?? glassText;
+            }
+            if (glassText.isNotEmpty) {
+              result['glass'] = glassText;
+            }
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 3: Inline "Garnish:" span (Diffords style)
+    // <span class="legacy-longform-heading">Garnish:</span> Raspberries
+    if ((result['garnish'] as List).isEmpty) {
+      final garnishSpans = document.querySelectorAll('span');
+      for (final span in garnishSpans) {
+        final spanText = span.text?.trim().toLowerCase() ?? '';
+        if (spanText == 'garnish:' || spanText == 'garnish') {
+          // Get parent element text and extract garnish
+          final parent = span.parent;
+          if (parent != null) {
+            var parentText = _decodeHtml(parent.text?.trim() ?? '');
+            // Remove "Garnish:" prefix
+            parentText = parentText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
+            if (parentText.isNotEmpty) {
+              // Split by comma or "or" for multiple garnishes
+              final garnishes = parentText.split(RegExp(r',\s*|\s+or\s+'))
+                  .map((s) => s.trim())
+                  .where((s) => s.isNotEmpty)
+                  .toList();
+              if (garnishes.isNotEmpty) {
+                result['garnish'] = garnishes;
+              }
+            }
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 4: garn-glass class (Punch style)
+    // <p class="garn-glass"><span>Garnish:</span> orange or lemon peel</p>
+    if ((result['garnish'] as List).isEmpty || result['glass'] == null) {
+      final garnGlass = document.querySelector('.garn-glass, .garnish-glass');
+      if (garnGlass != null) {
+        final fullText = _decodeHtml(garnGlass.text?.trim() ?? '');
+        // Check for Garnish: pattern
+        final garnishMatch = RegExp(r'Garnish:\s*(.+?)(?:\s*Glass:|$)', caseSensitive: false).firstMatch(fullText);
+        if (garnishMatch != null && (result['garnish'] as List).isEmpty) {
+          final garnishText = garnishMatch.group(1)?.trim() ?? '';
+          if (garnishText.isNotEmpty) {
+            final garnishes = garnishText.split(RegExp(r',\s*|\s+or\s+'))
+                .map((s) => s.trim())
+                .where((s) => s.isNotEmpty)
+                .toList();
+            result['garnish'] = garnishes;
+          }
+        }
+        // Check for Glass: pattern
+        final glassMatch = RegExp(r'Glass:\s*(.+?)(?:\s*Garnish:|$)', caseSensitive: false).firstMatch(fullText);
+        if (glassMatch != null && result['glass'] == null) {
+          result['glass'] = glassMatch.group(1)?.trim();
+        }
+      }
+    }
+    
+    // Pattern 5: "Serve in a" text anywhere (common for cocktail sites)
+    if (result['glass'] == null) {
+      final allParagraphs = document.querySelectorAll('p');
+      for (final p in allParagraphs) {
+        final pText = p.text?.trim() ?? '';
+        final serveInMatch = RegExp(r'Serve\s+in\s+(?:a\s+)?([A-Za-z][A-Za-z\s\-]+(?:glass|flute|coupe|tumbler|goblet|snifter|mug|cup))', caseSensitive: false).firstMatch(pText);
+        if (serveInMatch != null) {
+          result['glass'] = serveInMatch.group(1)?.trim();
+          break;
+        }
+      }
+    }
+    
+    // Pattern 6: Diffords-style table for ingredients (legacy-ingredients-table)
+    // <table class="legacy-ingredients-table"><tr><td>amount</td><td>ingredient</td></tr></table>
+    if ((result['ingredients'] as List).isEmpty) {
+      final ingredientTable = document.querySelector('.legacy-ingredients-table, table.ingredients');
+      if (ingredientTable != null) {
+        final rows = ingredientTable.querySelectorAll('tr');
+        final ingredients = <String>[];
+        for (final row in rows) {
+          final cells = row.querySelectorAll('td');
+          if (cells.length >= 2) {
+            final amount = _decodeHtml(cells[0].text?.trim() ?? '');
+            final name = _decodeHtml(cells[1].text?.trim() ?? '');
+            if (name.isNotEmpty) {
+              ingredients.add(amount.isNotEmpty ? '$amount $name' : name);
+            }
+          }
+        }
+        if (ingredients.isNotEmpty) {
+          result['ingredients'] = ingredients;
+        }
+      }
+    }
+    
+    // === END DRINK-SPECIFIC PATTERNS ===
     
     // Find all h2 headings and check their text
     final headings = document.querySelectorAll('h2');
