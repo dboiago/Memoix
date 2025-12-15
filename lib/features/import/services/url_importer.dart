@@ -2494,18 +2494,24 @@ class UrlRecipeImporter {
     
     if (raw == null) return null;
     
+    // Strip common prefixes like "Servings:", "Serves:", "Yield:", "Makes:"
+    raw = raw.replaceFirst(RegExp(r'^(?:Servings?|Serves?|Yield|Makes?)\\s*:?\\s*', caseSensitive: false), '').trim();
+    
     // Extract just the number from strings like "16 per loaf", "4 servings", "makes 12"
     // First try to find a number at the start
-    final leadingNumber = RegExp(r'^(\d+(?:\.\d+)?)').firstMatch(raw.trim());
+    final leadingNumber = RegExp(r'^(\\d+(?:\\.\\d+)?)').firstMatch(raw.trim());
     if (leadingNumber != null) {
       return leadingNumber.group(1);
     }
     
     // Try "makes X" pattern
-    final makesMatch = RegExp(r'makes\s+(\d+)', caseSensitive: false).firstMatch(raw);
+    final makesMatch = RegExp(r'makes\\s+(\\d+)', caseSensitive: false).firstMatch(raw);
     if (makesMatch != null) {
       return makesMatch.group(1);
     }
+    
+    // Strip trailing "servings" or "portions"
+    raw = raw.replaceFirst(RegExp(r'\\s+(?:servings?|portions?)$', caseSensitive: false), '').trim();
     
     return raw;
   }
@@ -2579,6 +2585,38 @@ class UrlRecipeImporter {
   String _capitalise(String text) {
     if (text.isEmpty) return text;
     return text[0].toUpperCase() + text.substring(1);
+  }
+
+  /// Convert text to Title Case (capitalize first letter of each word)
+  String _toTitleCase(String text) {
+    if (text.isEmpty) return text;
+    return text.split(' ').map((word) {
+      if (word.isEmpty) return word;
+      // Keep short words lowercase unless they're the first word
+      final lower = word.toLowerCase();
+      if (lower == 'a' || lower == 'an' || lower == 'the' || lower == 'of' || 
+          lower == 'in' || lower == 'on' || lower == 'at' || lower == 'to' ||
+          lower == 'for' || lower == 'and' || lower == 'or' || lower == 'with') {
+        return lower;
+      }
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).toList().asMap().entries.map((e) {
+      // Always capitalize first word
+      if (e.key == 0 && e.value.isNotEmpty) {
+        return e.value[0].toUpperCase() + e.value.substring(1);
+      }
+      return e.value;
+    }).join(' ');
+  }
+
+  /// Normalize serves/yield string - strip common prefixes like "Servings: ", "Serves ", etc.
+  String _normalizeServes(String text) {
+    var cleaned = text.trim();
+    // Strip common prefixes
+    cleaned = cleaned.replaceFirst(RegExp(r'^(?:Servings?|Serves?|Yield|Makes?)\s*:?\s*', caseSensitive: false), '');
+    // Strip trailing labels like "servings" from "4 servings"
+    cleaned = cleaned.replaceFirst(RegExp(r'\s+(?:servings?|portions?)$', caseSensitive: false), '');
+    return cleaned.trim();
   }
 
   /// Parse nutrition information from schema.org NutritionInformation
@@ -5183,6 +5221,22 @@ class UrlRecipeImporter {
           }
         }
       }
+    }
+    
+    // Normalize glass (title case)
+    if (result['glass'] != null && (result['glass'] as String).isNotEmpty) {
+      result['glass'] = _toTitleCase(result['glass'] as String);
+    }
+    
+    // Normalize garnish (title case each item)
+    final garnishList = result['garnish'] as List<String>;
+    if (garnishList.isNotEmpty) {
+      result['garnish'] = garnishList.map((g) => _toTitleCase(g)).toList();
+    }
+    
+    // Normalize yield/serves (strip prefixes)
+    if (result['yield'] != null && (result['yield'] as String).isNotEmpty) {
+      result['yield'] = _normalizeServes(result['yield'] as String);
     }
     
     return result;
