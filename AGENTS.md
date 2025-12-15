@@ -1,305 +1,100 @@
-# AGENTS.md - AI Assistant Guidelines for Memoix
+#### AGENTS.md - Context & Rules for Memoix
 
-This file provides context and guidelines for AI coding assistants working on the Memoix project.
+## 1. Project Context
+**Memoix** is a professional-grade recipe management app for **chefs and serious hobbyists** (NOT casual home cooks).
+* **Stack:** Flutter 3.x, Riverpod (State Management), Isar (Offline DB), Google ML Kit (OCR).
+* **Aesthetic:** Minimalist, data-dense, utilitarian. **NO decorative elements.**
+* **Philosophy:** Offline-first, privacy-focused, no user accounts.
 
-## Project Overview
+## 2. CRITICAL RULES (Non-Negotiable)
 
-**Memoix** is a cross-platform recipe management app built with Flutter, targeted at professional chefs and enthusiastic hobbyists. It allows users to:
-- Browse a curated recipe collection (synced from GitHub)
-- Create and manage personal recipes
-- Manage specialized recipe types (Pizzas, Smoking) with unique schemas
-- Import recipes via OCR (photo scanning) or URL parsing
-- Share recipes via QR codes and deep links
+### 2.1 Visual Design & UI
+* **NO ICONS / NO EMOJIS:** Do not add decorative icons (e.g., 🍕, 🗑️) to headers, titles, or buttons unless explicitly requested.
+* **MAINS IS BASELINE:** The "Mains" screen defines canonical spacing, padding, and font sizes. Do not "improve" layouts by adding cards or changing margins without instruction.
+* **DESTRUCTIVE ACTIONS:**
+    * **Never use Red:** Do not use `Colors.red` or `error` color for delete buttons (it is too aggressive).
+    * **Use Secondary:** Use `Theme.of(context).colorScheme.secondary` for delete/remove actions.
+* **CONTRAST:** Never place Primary Text on a Secondary Background. Use Secondary Text (often in an outlined container).
 
-## Tech Stack
+### 2.2 Color Usage (Strict Separation)
+* **UI Elements (Buttons, Backgrounds):** Use `Theme.of(context).colorScheme`.
+* **Domain Data (Cuisines, Courses, Tags):** Use **`MemoixColors`** from `lib/app/theme/colors.dart`.
+    * *Example:* `MemoixColors.forCuisine('Korean')` or `MemoixColors.spiritGin`.
+    * *Never* hardcode hex values or standard `Colors.blue`.
 
-| Technology | Purpose |
-|------------|---------|
-| **Flutter 3.2+** | Cross-platform UI framework |
-| **Dart** | Programming language |
-| **Riverpod** | State management |
-| **Isar** | Local database (offline-first) |
-| **Google ML Kit** | OCR text recognition |
-| **HTTP + HTML parsing** | URL recipe import |
+### 2.3 Code Efficiency
+* **Search First:** Before writing a helper, search the codebase.
+* **Strict Typing:** Avoid `dynamic`. Use explicit models (`Recipe`, `Pizza`, `Ingredient`).
+* **Providers:**
+    * Use `databaseProvider` for Isar instances (NOT `isarProvider`).
+    * Use `ref.read` for actions, `ref.watch` for build methods.
 
-## Project Structure
+## 3. Project Structure
 
-```
-lib/
-├── main.dart                 # App entry point
-├── app/                      # App-level configuration
-│   ├── app.dart             # MaterialApp widget
-│   ├── routes/              # Navigation
-│   └── theme/               # Theming (colors.dart, theme.dart)
-├── core/                     # Shared infrastructure
-│   ├── database/            # Isar database setup
-│   ├── providers.dart       # Global Riverpod providers
-│   └── services/            # GitHub sync, etc.
-├── features/                 # Feature modules (vertical slices)
-│   ├── home/                # Main screen with course grid
-│   ├── recipes/             # Recipe CRUD, list, detail views
-│   ├── pizzas/              # Pizza recipes (specialized schema)
-│   ├── smoking/             # Smoking recipes (specialized schema)
-│   ├── import/              # OCR and URL import
-│   ├── sharing/             # QR codes, deep links
-│   ├── statistics/          # Cooking stats tracking
-│   ├── mealplan/            # Meal planning
-│   ├── shopping/            # Shopping lists
-│   └── settings/            # App settings
-└── shared/                   # Reusable widgets
-
-recipes/                      # Recipe data (JSON files)
-├── index.json               # Lists all recipe files
-├── version.json             # Sync versioning
-└── *.json                   # Category recipe files
+### 3.1 Feature Pattern (Vertical Slice)
+* **All features (e.g., `recipes`, `pizzas`, `shopping`) follow this structure:**
+```text
+lib/features/<feature_name>/
+├── models/      # Isar collections (@collection)
+├── screens/     # Full page widgets (Scaffolds)
+├── widgets/     # Feature-specific components
+├── repository/  # Data access (Providers go here)
+└── services/    # Business logic (Parsers, Validators)
 ```
 
-## Architecture Patterns
+### 3.2 Core Locations
+* **Theme/Colors:** lib/app/theme/ (See colors.dart for domain palette)
+* **Navigation:** lib/app/routes/router.dart (Static routing helpers)
+* **Database Init:** lib/core/database/database.dart (Schema registration)
+* **Shared Logic:** lib/core/services/ (e.g., url_importer.dart)
 
-### State Management
-- Use **Riverpod** for all state management
-- Prefer `StreamProvider` for database watches
-- Use `StateNotifier` for complex state with actions
-- Keep providers in the relevant feature's repository file
+## 4. Architecture & Patterns
 
-### Database
-- **Isar** is the local database
-- Models use `@collection` and `@embedded` annotations
-- Generated files: `*.g.dart` (run `dart run build_runner build`)
-- All database operations go through repository classes
-
-### Database Access
-- Use `ref.watch(databaseProvider)` to get the Isar instance
-- Provider is defined in `lib/core/providers.dart`
-- **Do NOT use `isarProvider`** - the correct name is `databaseProvider`
-
-### Feature Structure
-Each feature follows this pattern:
-```
-feature_name/
-├── models/          # Data classes
-├── screens/         # Full-page widgets
-├── widgets/         # Feature-specific components
-├── repository/      # Data access layer
-└── services/        # Business logic
-```
-
-## Coding Conventions
-
-### Dart/Flutter Style
-- Use `const` constructors wherever possible
-- Prefer single quotes for strings
-- Use trailing commas for better formatting
-- Follow official [Dart style guide](https://dart.dev/guides/language/effective-dart/style)
-
-### Naming
-- Files: `snake_case.dart`
-- Classes: `PascalCase`
-- Variables/functions: `camelCase`
-- Constants: `camelCase` (not SCREAMING_SNAKE)
-- Private members: prefix with `_`
-
-### Widgets
-- Prefer `StatelessWidget` when possible
-- Use `ConsumerWidget` / `ConsumerStatefulWidget` for Riverpod
-- Extract reusable widgets to `widgets/` folder
-- Keep build methods focused (<50 lines ideally)
-
-## Data Models
-
-### Recipe Model
-Key fields based on the original Google Sheets structure:
-- `name`, `course`, `cuisine`, `subcategory`
-- `serves`, `time`, `pairsWith`
-- `ingredients` (List of Ingredient)
-- `directions` (List of String)
-- `source` (memoix, personal, imported, ocr, url)
-- `notes`, `tags`, `isFavorite`
-
-### Recipe Sources
+### 4.1 URL Import (Strategy Pattern)
+*   **Goal:** Prevent monolithic files. Support generic and site-specific logic. The Pattern:
 ```dart
-enum RecipeSource {
-  memoix,    // From GitHub collection
-  personal,  // User-created
-  imported,  // Shared/imported from others
-  ocr,       // Scanned from photo
-  url,       // Imported from website
+abstract class RecipeParser {
+  /// Returns score 0-1. 1 = Perfect match (e.g. YouTube), 0 = Cannot parse
+  double canParse(String url); 
+  
+  /// Returns the recipe or throws exception
+  Future<Recipe> parse(String html, String url);
 }
 ```
+* **Implementation Priority:**
+    * Specific Strategy: (e.g., YouTubeParser) if the site requires unique handling (API calls, transcripts).
+    * Generic Strategy: (e.g., JsonLdParser, MicrodataParser) for standard sites.
+    * Fallback Strategy: (HtmlHeuristicParser) as a last resort.
 
-### Specialized Recipe Types
+### 4.2 The "Physical Item" Input Pattern
+* **Applies to:** Wood (Smoking), Glass/Garnish (Drinks), Equipment (Modernist). UI Behavior:
+* **Autocomplete Dropdown:** User types, sees existing suggestions.
+* **Free-form Entry:** User can type a new item not in the list.
+* **Chip Display:** Selected items appear as actionable chips.
+* **NO Enums:** Never restrict these fields to a hardcoded Enum with an "Other" option.
 
-Some recipe categories have unique schemas that differ from standard recipes:
+## 5. Domain Schemas & Future Expansion
+* The app distinguishes between "Standard Recipes" (list of steps) and "Component Assemblies" (list of parts). When adding a NEW cuisine type, determine which model it fits.
 
-**Pizzas** (`lib/features/pizzas/`):
-- `name`, `style` (Neapolitan, NY, Detroit, etc.)
-- `dough` (embedded: flour, water%, yeast, salt, oil, sugar, fermentation)
-- `sauce` (embedded: base, ingredients, notes)
-- `cheeses` (list of cheese names)
-- `toppings` (list of topping names)
-- `bakingInstructions` (temp, time, method)
+### 5.1 Type A: Standard Recipe (Recipe Model)
+* **Use this for:** Mains, Desserts, Drinks, Baking, Modernist, Smoking.
+* **Base Fields:** name, ingredients (List), directions (List), serves, time.
+* **How to Expand:**
+    * Add new fields to Recipe model (optional/nullable).
+    * Use the Recipe collection.
+    * *Example:* Baking adds bakerPercent, Drinks adds glass.
 
-**Smoking** (`lib/features/smoking/`):
-- `name` (what's being smoked: Brisket, Ribs, etc.)
-- `temperature`, `time`
-- `wood` (free-form text with autocomplete suggestions)
-- `seasonings` (list with optional amounts)
-- `directions`
+### 5.2 Type B: Component Assembly (Pizza Model, etc.)
+* **Use this for:** Pizzas, Sandwiches, Charcuterie Boards.
+* **Concept:** No single "Directions" list. It is an assembly of discrete sub-recipes or items.
+* **Structure:**
+    * *base:* Enum or String (Sauce, Bread)
+    * *components:* Lists of Strings/Objects (Toppings, Cheeses, Condiments)
+    * *sub_recipes:* Embedded objects (Dough, Spread)
 
-When adding new specialized types, follow the pizza/smoking pattern.
-
-## UI Patterns
-
-### Outlined Secondary Styling
-For highlighted UI elements (step numbers, ranking badges, selected chips), use the outlined secondary pattern:
-```dart
-Container(
-  decoration: BoxDecoration(
-    color: theme.colorScheme.secondary.withOpacity(0.15),
-    shape: BoxShape.circle, // or borderRadius for rectangles
-    border: Border.all(
-      color: theme.colorScheme.secondary,
-      width: 1.5,
-    ),
-  ),
-  child: Text(
-    'text',
-    style: TextStyle(color: theme.colorScheme.secondary),
-  ),
-)
-```
-
-### Multi-Select Filters
-For filter chips that allow multiple selections, use `Set<String>` instead of single `String?`:
-```dart
-Set<String> _selectedItems = {};
-// Toggle on tap:
-onSelected: (_) {
-  setState(() {
-    if (_selectedItems.contains(item)) {
-      _selectedItems.remove(item);
-    } else {
-      _selectedItems.add(item);
-    }
-  });
-}
-```
-
-### Free-Form Input with Suggestions
-Avoid "Other" options in dropdowns. Instead, use `Autocomplete<String>` for free-form text with suggestions:
-```dart
-Autocomplete<String>(
-  optionsBuilder: (value) => suggestions.where((s) => 
-    s.toLowerCase().contains(value.text.toLowerCase())),
-  fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-    return TextFormField(
-      controller: controller,
-      focusNode: focusNode,
-      // ...
-    );
-  },
-)
-```
-
-### Live Database Updates
-Use `StreamProvider` instead of `FutureProvider` for data that should update in real-time:
-```dart
-final itemsProvider = StreamProvider<List<Item>>((ref) {
-  return ref.watch(repositoryProvider).watchAll();
-});
-```
-
-## Color System
-
-The app uses a color-coding system matching the original spreadsheet:
-- **Course colors**: Each category (Mains, Soups, Desserts, etc.) has a distinct color
-- **Cuisine colors**: Cuisines (Korean, French, etc.) have background highlight colors
-- See `lib/app/theme/colors.dart` for the full palette
-
-## Recipe Data (GitHub)
-
-Official recipes are stored as JSON in `/recipes/`:
-- Fetched from GitHub raw URLs on app sync
-- Format documented in `recipes/README.md`
-- Users cannot edit these; they're read-only in the app
-
-## Common Tasks
-
-## UI Consistency Constraint (Standing)
-
-The Mains screen defines the canonical layout, spacing, color usage,
-and component hierarchy for the application.
-
-All other screens (Cuisine, Recipe, Edit, etc.) MUST strictly follow
-this pattern.
-
-- Do not introduce layout, spacing, color, or stylistic changes
-  unless explicitly instructed by the user.
-- Do not "improve", "refine", or reinterpret the design.
-- If a deviation seems beneficial, ask before applying it.
-
-This constraint applies to all future UI-related work unless the user
-explicitly revokes it.
-
-### Adding a New Feature
-1. Create folder under `lib/features/`
-2. Add models, screens, widgets as needed
-3. Create repository with Riverpod providers
-4. Add route in `lib/app/routes/router.dart`
-5. If it's a home screen category, update `home_screen.dart` routing
-
-### Adding a Specialized Recipe Type (like Pizza/Smoking)
-1. Create feature folder: `lib/features/your_type/`
-2. Create model with `@collection` annotation
-3. Create repository with CRUD + `databaseProvider`
-4. Create list, detail, and edit screens
-5. Register schema in `lib/core/database/database.dart`
-6. Add routes in `lib/app/routes/router.dart`
-7. Add category to `Category.defaults` with color
-8. Update `home_screen.dart` to handle special routing and count
-
-### Adding a New Recipe Category
-1. Add color to `lib/app/theme/colors.dart`
-2. Add to `Category.defaults` in `lib/features/recipes/models/category.dart`
-3. Create JSON file in `/recipes/` and update `index.json`
-
-### Modifying Database Schema
-1. Edit model in `lib/features/recipes/models/`
-2. Run `dart run build_runner build --delete-conflicting-outputs`
-3. Handle migrations if needed (Isar auto-migrates simple changes)
-
-## Testing
-
-- Unit tests go in `test/` mirroring `lib/` structure
-- Widget tests for complex UI components
-- Integration tests in `integration_test/`
-
-## Important Notes
-
-1. **Target Audience**: Professional chefs and enthusiastic hobbyists, not casual home cooks
-2. **Offline-first**: App must work without internet after initial sync
-3. **No user accounts**: Privacy-focused, anonymous usage
-4. **Local storage**: User recipes stay on device only
-5. **Sharing**: Uses encoded deep links, not cloud storage
-6. **Proprietary**: Source available for personal use only, not for commercial redistribution
-7. **Flexibility**: Avoid restrictive enums with "Other" - prefer free-form text with suggestions
-
-## Dependencies to Know
-
-| Package | Usage |
-|---------|-------|
-| `flutter_riverpod` | State management |
-| `isar` / `isar_flutter_libs` | Local database |
-| `google_mlkit_text_recognition` | OCR |
-| `html` | URL recipe parsing |
-| `share_plus` | System share sheet |
-| `qr_flutter` | QR code generation |
-| `mobile_scanner` | QR code scanning |
-| `app_links` | Deep link handling |
-
-## Links
-
-- [Flutter Docs](https://docs.flutter.dev/)
-- [Riverpod Docs](https://riverpod.dev/)
-- [Isar Docs](https://isar.dev/)
-- [Material 3 Guidelines](https://m3.material.io/)
+### 5.3 Protocol for Adding New Features
+* **Create Structure:** Add lib/features/<new_type>/.
+* **Define Model:** Create model with @collection.
+* **Register Schema:** Add to MemoixDatabase.initialize() in lib/core/database/database.dart.
+* **Define Routes:** Add static to<Feature>List and to<Feature>Detail methods in AppRoutes (lib/app/routes/router.dart).
+* **Assign Color:** Add domain color to MemoixColors in colors.dart.
