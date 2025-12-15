@@ -2495,23 +2495,23 @@ class UrlRecipeImporter {
     if (raw == null) return null;
     
     // Strip common prefixes like "Servings:", "Serves:", "Yield:", "Makes:"
-    raw = raw.replaceFirst(RegExp(r'^(?:Servings?|Serves?|Yield|Makes?)\\s*:?\\s*', caseSensitive: false), '').trim();
+    raw = raw.replaceFirst(RegExp(r'^(?:Servings?|Serves?|Yield|Makes?)\s*:?\s*', caseSensitive: false), '').trim();
     
     // Extract just the number from strings like "16 per loaf", "4 servings", "makes 12"
     // First try to find a number at the start
-    final leadingNumber = RegExp(r'^(\\d+(?:\\.\\d+)?)').firstMatch(raw.trim());
+    final leadingNumber = RegExp(r'^(\d+(?:\.\d+)?)').firstMatch(raw.trim());
     if (leadingNumber != null) {
       return leadingNumber.group(1);
     }
     
     // Try "makes X" pattern
-    final makesMatch = RegExp(r'makes\\s+(\\d+)', caseSensitive: false).firstMatch(raw);
+    final makesMatch = RegExp(r'makes\s+(\d+)', caseSensitive: false).firstMatch(raw);
     if (makesMatch != null) {
       return makesMatch.group(1);
     }
     
     // Strip trailing "servings" or "portions"
-    raw = raw.replaceFirst(RegExp(r'\\s+(?:servings?|portions?)$', caseSensitive: false), '').trim();
+    raw = raw.replaceFirst(RegExp(r'\s+(?:servings?|portions?)$', caseSensitive: false), '').trim();
     
     return raw;
   }
@@ -2949,18 +2949,24 @@ class UrlRecipeImporter {
     
     // Handle Seedlip/cocktail format: "Name: amount / metric" 
     // e.g., "Seedlip Grove 42: 1.75 oz / 53ml" or "Marmalade Cordial*: 1 oz / 30 ml"
+    // Also handles "Cold Sparkling Water: Top" where "Top" means "top up"
     final colonAmountMatch = RegExp(
-      r'^([^:]+):\s*([\d.]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)?)\s*(?:/\s*([\d.]+\s*(?:ml|cl|oz)?))?(.*)$',
+      r'^([^:]+):\s*([\d.]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)?|Top(?:\s+up)?|to\s+taste|as\s+needed)\s*(?:/\s*([\d.]+\s*(?:ml|cl|oz)?))?(.*)$',
       caseSensitive: false,
     ).firstMatch(remaining);
     if (colonAmountMatch != null) {
       var name = colonAmountMatch.group(1)?.trim() ?? '';
-      final primaryAmount = colonAmountMatch.group(2)?.trim() ?? '';
+      var primaryAmount = colonAmountMatch.group(2)?.trim() ?? '';
       final metricAmount = colonAmountMatch.group(3)?.trim();
       final extra = colonAmountMatch.group(4)?.trim() ?? '';
       
       // Remove trailing * or other markers from name
       name = name.replaceAll(RegExp(r'\*+$'), '').trim();
+      
+      // Normalize "Top" to "Top" (capitalize)
+      if (primaryAmount.toLowerCase() == 'top' || primaryAmount.toLowerCase() == 'top up') {
+        primaryAmount = 'Top';
+      }
       
       // Use the primary amount (typically oz for US sites)
       // Add metric as a note if present
@@ -4735,6 +4741,12 @@ class UrlRecipeImporter {
     final timeConfidence = timing != null && timing.isNotEmpty 
         ? (usedStructuredFormat ? 0.9 : 0.7) 
         : 0.0;
+    
+    // Normalize yield (strip "Servings: ", "Serves ", etc.)
+    if (yield != null && yield.isNotEmpty) {
+      yield = _normalizeServes(yield);
+    }
+    
     final servesConfidence = yield != null && yield.isNotEmpty 
         ? (usedStructuredFormat ? 0.9 : 0.7) 
         : 0.0;
