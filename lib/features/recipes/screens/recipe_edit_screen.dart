@@ -274,15 +274,29 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   /// Normalise course slug to match dropdown values
   String _normaliseCourseSlug(String course) {
+    // First convert to lowercase
+    final lower = course.toLowerCase();
+    
+    // Handle special mappings
     const mapping = {
       'soups': 'soup',
       'salads': 'salad',
       'not-meat': 'vegn',
       'not meat': 'vegn',
       'vegetarian': 'vegn',
-      "veg'n": 'vegn',  // Handle display name -> slug
+      "veg'n": 'vegn',
     };
-    return mapping[course] ?? course;
+    
+    final mapped = mapping[lower] ?? lower;
+    
+    // Ensure the result is a valid dropdown value
+    const validSlugs = {
+      'apps', 'soup', 'mains', 'vegn', 'sides', 'salad', 'desserts', 
+      'brunch', 'drinks', 'breads', 'sauces', 'rubs', 'pickles', 
+      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch'
+    };
+    
+    return validSlugs.contains(mapped) ? mapped : 'mains';
   }
 
   void _addIngredientRow({String name = '', String amount = '', String notes = '', String bakerPercent = '', bool isSection = false}) {

@@ -574,26 +574,70 @@ class StandardWebStrategy implements RecipeParserStrategy {
   Future<RecipeImportResult?> parse(String url, Document? document, String? rawBody) async {
     if (document == null) return null;
 
+    RecipeImportResult? result;
+    
     // 1. Try JSON-LD first (most reliable)
-    var result = _parseJsonLd(document, url);
+    result = _parseJsonLd(document, url);
     if (result != null) {
       // Check if we can enhance with HTML sections
       result = _enhanceWithHtmlSections(document, result);
-      return result;
     }
 
     // 2. Try embedded JS frameworks (Next.js, Nuxt, Vite SSR)
-    if (rawBody != null) {
+    if (result == null && rawBody != null) {
       result = _parseEmbeddedJs(rawBody, url);
-      if (result != null) return result;
     }
 
     // 3. Try microdata
-    result = _parseMicrodata(document, url);
-    if (result != null) return result;
+    if (result == null) {
+      result = _parseMicrodata(document, url);
+    }
 
     // 4. HTML heuristic fallback
-    return _parseHtmlFallback(document, url);
+    if (result == null) {
+      result = _parseHtmlFallback(document, url);
+    }
+    
+    if (result == null) return null;
+    
+    // 5. Enhance with cocktail metadata (glass, garnish) for drink recipes
+    if (_isCocktailSite(url) || result.course == 'Drinks') {
+      final cocktailData = _extractCocktailMetadata(document);
+      final extractedGlass = cocktailData['glass'] as String?;
+      final extractedGarnish = cocktailData['garnish'] as List<String>? ?? [];
+      
+      // Only update if we found metadata that's missing from result
+      if ((result.glass == null && extractedGlass != null) || 
+          (result.garnish.isEmpty && extractedGarnish.isNotEmpty)) {
+        result = RecipeImportResult(
+          name: result.name,
+          course: result.course ?? 'Drinks',
+          cuisine: result.cuisine,
+          subcategory: result.subcategory,
+          serves: result.serves,
+          time: result.time,
+          ingredients: result.ingredients,
+          directions: result.directions,
+          notes: result.notes,
+          imageUrl: result.imageUrl,
+          nutrition: result.nutrition,
+          equipment: result.equipment,
+          glass: extractedGlass ?? result.glass,
+          garnish: extractedGarnish.isNotEmpty ? extractedGarnish : result.garnish,
+          sourceUrl: result.sourceUrl,
+          source: result.source,
+          nameConfidence: result.nameConfidence,
+          ingredientsConfidence: result.ingredientsConfidence,
+          directionsConfidence: result.directionsConfidence,
+          servesConfidence: result.servesConfidence,
+          timeConfidence: result.timeConfidence,
+          courseConfidence: result.courseConfidence,
+          cuisineConfidence: result.cuisineConfidence,
+        );
+      }
+    }
+    
+    return result;
   }
 
   // ========== JSON-LD Parsing ==========
@@ -974,6 +1018,11 @@ class StandardWebStrategy implements RecipeParserStrategy {
         }
       }
     }
+    
+    // 5. Bullet-point text fallback (e.g., Modernist Pantry uses • bullets in divs/spans)
+    if (rawIngredientStrings.isEmpty && rawBody != null) {
+      rawIngredientStrings = _extractBulletPointIngredients(rawBody);
+    }
 
     // Directions parsing
     final dirSelectors = [
@@ -1142,6 +1191,52 @@ class StandardWebStrategy implements RecipeParserStrategy {
   String? _getSrc(Element? el) {
     if (el == null) return null;
     return el.attributes['src'] ?? el.attributes['data-src'] ?? el.attributes['content'];
+  }
+  
+  /// Extract ingredients from bullet-point formatted text (e.g., "• 200g (1 Cup) Sugar")
+  /// Used for sites like Modernist Pantry that don't use <li> tags
+  List<String> _extractBulletPointIngredients(String rawBody) {
+    final ingredients = <String>[];
+    
+    // Remove scripts and styles first
+    var cleanHtml = rawBody
+        .replaceAll(RegExp(r'<script[^>]*>[\s\S]*?</script>', caseSensitive: false), '')
+        .replaceAll(RegExp(r'<style[^>]*>[\s\S]*?</style>', caseSensitive: false), '')
+        .replaceAll(RegExp(r'<[^>]+>'), ' ')
+        .replaceAll(RegExp(r'&bull;|&middot;|&#8226;|&#x2022;', caseSensitive: false), '•')
+        .replaceAll(RegExp(r'&[a-z]+;', caseSensitive: false), ' ')
+        .replaceAll(RegExp(r'&#\d+;'), ' ')
+        .replaceAll(RegExp(r'\s+'), ' ');
+    
+    // Split by bullet character
+    final parts = cleanHtml.split('•');
+    
+    for (var part in parts) {
+      part = part.trim();
+      if (part.isEmpty || part.length < 5 || part.length > 150) continue;
+      
+      // Take only the first line if multiple lines
+      final newlineIdx = part.indexOf('\n');
+      if (newlineIdx > 0 && newlineIdx < part.length - 1) {
+        part = part.substring(0, newlineIdx);
+      }
+      
+      // Check if this looks like an ingredient (has measurement)
+      if (_couldBeIngredientLine(part)) {
+        // Check if this might be a section header (ends with :)
+        if (part.endsWith(':')) {
+          final sectionName = part.substring(0, part.length - 1).trim();
+          // Only treat as section if it looks like one (starts with "Ingredients" or similar)
+          if (sectionName.toLowerCase().contains('ingredient')) {
+            ingredients.add('[$sectionName]');
+          }
+        } else {
+          ingredients.add(_ingParser.decodeHtml(part));
+        }
+      }
+    }
+    
+    return ingredients.length >= 2 ? ingredients : [];
   }
 
   // ========== Enhancement with HTML Sections ==========
@@ -1373,5 +1468,277 @@ class StandardWebStrategy implements RecipeParserStrategy {
     if (lower.contains('breakfast') || lower.contains('brunch')) return 'Brunch';
     if (lower.contains('sauce') || lower.contains('dip')) return 'Sauces';
     return course; // Return as-is if no match
+  }
+
+  // ========== Cocktail Metadata Extraction ==========
+  
+  /// Extract glass and garnish from HTML for drink recipes
+  /// Handles multiple patterns from different cocktail sites
+  Map<String, dynamic> _extractCocktailMetadata(Document document) {
+    String? glass;
+    List<String> garnish = [];
+    
+    // Pattern 1: Combined "Glass and Garnish" heading (Seedlip style)
+    for (final heading in document.querySelectorAll('h2, h3')) {
+      final headingText = heading.text.toLowerCase().trim();
+      if (headingText.contains('glass') && headingText.contains('garnish')) {
+        final items = _extractListAfterHeading(heading);
+        if (items.isNotEmpty) {
+          glass = items.first;
+          if (items.length > 1) garnish = items.sublist(1);
+        }
+        break;
+      }
+    }
+    
+    // Pattern 2: H3 "Glass:" heading (Diffords style)
+    if (glass == null) {
+      for (final h3 in document.querySelectorAll('h3')) {
+        final h3Text = h3.text.toLowerCase().trim();
+        if (h3Text == 'glass:' || h3Text == 'glass' || h3Text.startsWith('glass:')) {
+          final nextElem = h3.nextElementSibling;
+          if (nextElem != null) {
+            // Try link inside paragraph first
+            final glassLink = nextElem.querySelector('a');
+            if (glassLink != null) {
+              final linkText = _ingParser.decodeHtml(glassLink.text.trim());
+              if (linkText.isNotEmpty) {
+                glass = linkText;
+                break;
+              }
+            }
+            // Fallback to paragraph text
+            var glassText = _ingParser.decodeHtml(nextElem.text.trim());
+            // Handle "Serve in a [Glass Type]" pattern
+            final serveInMatch = RegExp(r'Serve\s+in\s+(?:an?\s+)?(.+)', caseSensitive: false).firstMatch(glassText);
+            if (serveInMatch != null) {
+              glassText = serveInMatch.group(1)?.trim() ?? glassText;
+            }
+            if (glassText.isNotEmpty) glass = glassText;
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 2b: Diffords legacy-longform-heading class for "Glass:"
+    if (glass == null) {
+      for (final heading in document.querySelectorAll('.legacy-longform-heading')) {
+        final headingText = heading.text.toLowerCase().trim();
+        if (headingText == 'glass:') {
+          final parent = heading.parent;
+          if (parent != null) {
+            final glassLink = parent.querySelector('a');
+            if (glassLink != null) {
+              final linkText = _ingParser.decodeHtml(glassLink.text.trim());
+              if (linkText.isNotEmpty) {
+                glass = linkText;
+                break;
+              }
+            }
+            var parentText = _ingParser.decodeHtml(parent.text.trim());
+            parentText = parentText.replaceFirst(RegExp(r'^Glass:\s*', caseSensitive: false), '').trim();
+            final serveInMatch = RegExp(r'Serve\s+in\s+(?:an?\s+)?(.+)', caseSensitive: false).firstMatch(parentText);
+            if (serveInMatch != null) {
+              parentText = serveInMatch.group(1)?.trim() ?? parentText;
+            }
+            if (parentText.isNotEmpty) {
+              glass = parentText;
+              break;
+            }
+          }
+        }
+      }
+    }
+    
+    // Pattern 3: Inline "Garnish:" span (Diffords style)
+    if (garnish.isEmpty) {
+      for (final span in document.querySelectorAll('span')) {
+        final spanText = span.text.toLowerCase().trim();
+        if (spanText == 'garnish:' || spanText == 'garnish') {
+          final parent = span.parent;
+          if (parent != null) {
+            var parentText = _ingParser.decodeHtml(parent.text.trim());
+            parentText = parentText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
+            if (parentText.isNotEmpty) {
+              garnish = _splitGarnishText(parentText);
+            }
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 3b: Paragraphs starting with "Garnish:"
+    if (garnish.isEmpty) {
+      for (final p in document.querySelectorAll('p')) {
+        final pText = p.text.trim();
+        if (pText.toLowerCase().startsWith('garnish:')) {
+          var garnishText = pText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
+          if (garnishText.isNotEmpty) {
+            garnish = _splitGarnishText(garnishText);
+          }
+          break;
+        }
+      }
+    }
+    
+    // Pattern 4: garn-glass class (Punch style)
+    if (garnish.isEmpty || glass == null) {
+      final garnGlass = document.querySelector('.garn-glass, .garnish-glass');
+      if (garnGlass != null) {
+        final fullText = _ingParser.decodeHtml(garnGlass.text.trim());
+        final garnishMatch = RegExp(r'Garnish:\s*(.+?)(?:\s*Glass:|$)', caseSensitive: false).firstMatch(fullText);
+        if (garnishMatch != null && garnish.isEmpty) {
+          final garnishText = garnishMatch.group(1)?.trim() ?? '';
+          if (garnishText.isNotEmpty) garnish = _splitGarnishText(garnishText);
+        }
+        final glassMatch = RegExp(r'Glass:\s*(.+?)(?:\s*Garnish:|$)', caseSensitive: false).firstMatch(fullText);
+        if (glassMatch != null && glass == null) {
+          glass = glassMatch.group(1)?.trim();
+        }
+      }
+    }
+    
+    // Pattern 5: "Serve in a" text in paragraphs
+    if (glass == null) {
+      for (final p in document.querySelectorAll('p')) {
+        final pText = p.text.trim();
+        final serveInMatch = RegExp(
+          r'Serve\s+in\s+(?:a\s+)?([A-Za-z][A-Za-z\s\-]+(?:glass|flute|coupe|tumbler|goblet|snifter|mug|cup))',
+          caseSensitive: false
+        ).firstMatch(pText);
+        if (serveInMatch != null) {
+          glass = serveInMatch.group(1)?.trim();
+          break;
+        }
+      }
+    }
+    
+    // Pattern 6: Diffords-style table (legacy-ingredients-table)
+    // Also look for separate glass/garnish headings
+    for (final heading in document.querySelectorAll('h2, h3')) {
+      final headingText = heading.text.toLowerCase().trim();
+      
+      if (headingText.contains('glass') && glass == null) {
+        final items = _extractListAfterHeading(heading);
+        if (items.isNotEmpty) {
+          glass = items.first;
+        } else {
+          final nextElem = heading.nextElementSibling;
+          if (nextElem != null) {
+            final glassText = _ingParser.decodeHtml(nextElem.text.trim());
+            if (glassText.isNotEmpty) glass = glassText;
+          }
+        }
+      }
+      
+      if (headingText.contains('garnish') && garnish.isEmpty) {
+        var items = _extractListAfterHeading(heading);
+        if (items.isEmpty) {
+          final nextElem = heading.nextElementSibling;
+          if (nextElem != null) {
+            final garnishText = _ingParser.decodeHtml(nextElem.text.trim());
+            if (garnishText.isNotEmpty) {
+              items = garnishText.split(RegExp(r'[,\n]')).map((s) => s.trim()).where((s) => s.isNotEmpty).toList();
+            }
+          }
+        }
+        garnish = items;
+      }
+    }
+    
+    // Pattern 7: Lyres.com style - recipe-info divs with h4 titles
+    if (glass == null || garnish.isEmpty) {
+      for (final div in document.querySelectorAll('.recipe-info, div.recipe-info')) {
+        final h4 = div.querySelector('h4, .title');
+        if (h4 != null) {
+          final titleText = h4.text.toLowerCase().trim();
+          final p = div.querySelector('p');
+          if (p != null) {
+            final content = _ingParser.decodeHtml(p.text.trim());
+            if (content.isNotEmpty) {
+              if (titleText == 'glass' && glass == null) glass = content;
+              else if (titleText == 'garnish' && garnish.isEmpty) garnish = _splitGarnishText(content);
+            }
+          }
+        }
+      }
+    }
+    
+    return {'glass': glass, 'garnish': garnish};
+  }
+  
+  /// Extract list items following a heading
+  List<String> _extractListAfterHeading(Element heading) {
+    final results = <String>[];
+    var sibling = heading.nextElementSibling;
+    int attempts = 0;
+    
+    while (sibling != null && attempts < 5) {
+      if (sibling.localName == 'ul' || sibling.localName == 'ol') {
+        for (final li in sibling.querySelectorAll('li')) {
+          final text = _ingParser.decodeHtml(li.text.trim());
+          if (text.isNotEmpty) results.add(text);
+        }
+        break;
+      }
+      // Stop if we hit another heading
+      if (['h1', 'h2', 'h3', 'h4'].contains(sibling.localName)) break;
+      sibling = sibling.nextElementSibling;
+      attempts++;
+    }
+    return results;
+  }
+  
+  /// Split garnish text intelligently - handles "X or Y" as separate items
+  List<String> _splitGarnishText(String text) {
+    if (text.isEmpty) return [];
+    
+    final commaSplit = text.split(RegExp(r',\s*'));
+    final result = <String>[];
+    
+    for (final part in commaSplit) {
+      final trimmed = part.trim();
+      if (trimmed.isEmpty) continue;
+      
+      // Handle "X or Y peel" pattern -> ["X peel", "Y peel"]
+      final orMatch = RegExp(r'^(.+?)\s+or\s+(.+)$', caseSensitive: false).firstMatch(trimmed);
+      if (orMatch != null) {
+        final firstPart = orMatch.group(1)?.trim() ?? '';
+        final secondPart = orMatch.group(2)?.trim() ?? '';
+        
+        final words = secondPart.split(' ');
+        if (words.length > 1) {
+          final lastWord = words.last;
+          if (!firstPart.toLowerCase().contains(lastWord.toLowerCase())) {
+            result.add('$firstPart $lastWord');
+            result.add(secondPart);
+          } else {
+            result.add(firstPart);
+            result.add(secondPart);
+          }
+        } else {
+          result.add(firstPart);
+          result.add(secondPart);
+        }
+      } else {
+        result.add(trimmed);
+      }
+    }
+    
+    return result.where((s) => s.isNotEmpty).toList();
+  }
+  
+  /// Check if URL or content suggests this is a cocktail/drink recipe
+  bool _isCocktailSite(String url) {
+    final cocktailDomains = [
+      'diffordsguide.com', 'liquor.com', 'punchdrink.com', 'imbibemagazine.com',
+      'seedlipdrinks.com', 'lyres.com', 'thecocktailproject.com', 'makedrinks.com',
+      'absolutdrinks.com', 'cocktails.lovetoknow.com',
+    ];
+    final urlLower = url.toLowerCase();
+    return cocktailDomains.any((domain) => urlLower.contains(domain)) ||
+           urlLower.contains('/cocktail') || urlLower.contains('/drink');
   }
 }
