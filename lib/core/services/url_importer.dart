@@ -13,7 +13,7 @@ import 'importer/strategies.dart';
 class UrlRecipeImporter {
   static final _uuid = Uuid();
   final IngredientParser _ingredientParser;
-  final List<RecipeParserStrategy> _strategies;
+  late final List<RecipeParserStrategy> _strategies;
   final http.Client _client;
 
   /// Optional client injection for testing

@@ -68,7 +68,17 @@ class IngredientParser {
       if (ingredient.name.isNotEmpty || ingredient.section != null) {
         final effectiveSection = ingredient.section ?? currentSection;
         if (effectiveSection != null && effectiveSection != ingredient.section) {
-          result.add(ingredient.copyWith(section: effectiveSection));
+          // Create new ingredient with updated section
+          result.add(Ingredient.create(
+            name: ingredient.name,
+            amount: ingredient.amount,
+            unit: ingredient.unit,
+            preparation: ingredient.preparation,
+            alternative: ingredient.alternative,
+            isOptional: ingredient.isOptional,
+            section: effectiveSection,
+            bakerPercent: ingredient.bakerPercent,
+          ));
         } else {
           result.add(ingredient);
         }
