@@ -284,13 +284,24 @@ class UrlRecipeImporter {
         final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
         final htmlGlass = sectionResult['glass'] as String?;
         final htmlGarnish = sectionResult['garnish'] as List<String>? ?? [];
+        final htmlNotes = sectionResult['notes'] as String?;
         
         // Check if we need to supplement anything
         final needsEquipment = jsonLdResult.equipment.isEmpty && htmlEquipment.isNotEmpty;
         final needsGlass = (jsonLdResult.glass == null || jsonLdResult.glass!.isEmpty) && htmlGlass != null;
         final needsGarnish = jsonLdResult.garnish.isEmpty && htmlGarnish.isNotEmpty;
+        final needsNotes = (jsonLdResult.notes == null || jsonLdResult.notes!.isEmpty) && htmlNotes != null;
         
-        if (needsEquipment || needsGlass || needsGarnish) {
+        if (needsEquipment || needsGlass || needsGarnish || needsNotes) {
+          // Combine notes if both exist
+          String? combinedNotes = jsonLdResult.notes;
+          if (needsNotes) {
+            combinedNotes = htmlNotes;
+          } else if (combinedNotes != null && htmlNotes != null && !combinedNotes.contains(htmlNotes)) {
+            // Append HTML notes to existing notes if they differ
+            combinedNotes = '$combinedNotes\n\n$htmlNotes';
+          }
+          
           return RecipeImportResult(
             name: jsonLdResult.name,
             course: jsonLdResult.course,
@@ -300,7 +311,7 @@ class UrlRecipeImporter {
             time: jsonLdResult.time,
             ingredients: jsonLdResult.ingredients,
             directions: jsonLdResult.directions,
-            notes: jsonLdResult.notes,
+            notes: combinedNotes,
             imageUrl: jsonLdResult.imageUrl,
             nutrition: jsonLdResult.nutrition,
             equipment: needsEquipment ? htmlEquipment : jsonLdResult.equipment,
@@ -3802,37 +3813,103 @@ class UrlRecipeImporter {
         .replaceAll('\\n', ' ')
         .replaceAll('\\"', '"');
     
-    final embeddedRecipeMatch = RegExp(
-      r'recipe-info[^>]*>.*?<h4[^>]*>([^<]+)</h4>\s*(?:<ul>.*?</ul>|<p>([^<]+)</p>)',
+    // Two-step approach for Lyres/Shopify embedded HTML:
+    // Step 1: Find all recipe-info div sections
+    final recipeInfoDivs = RegExp(
+      r'<div[^>]*class="[^"]*recipe-info[^"]*"[^>]*>(.*?)</div>',
       caseSensitive: false,
       dotAll: true,
     ).allMatches(bodyHtml);
     
-    if (embeddedRecipeMatch.isNotEmpty) {
-      for (final match in embeddedRecipeMatch) {
-        final h4Title = match.group(1)?.trim().toLowerCase() ?? '';
-        // For ul-based content, extract from the full match
-        final fullMatch = match.group(0) ?? '';
-        final pContent = match.group(2)?.trim();
-        
-        if (h4Title == 'method' || h4Title == 'directions' || h4Title == 'instructions') {
-          if (pContent != null && pContent.isNotEmpty && rawDirections.isEmpty) {
-            rawDirections.add(_decodeHtml(pContent));
+    for (final divMatch in recipeInfoDivs) {
+      final divContent = divMatch.group(1) ?? '';
+      
+      // Step 2: Extract h4 title from this div (handles <h4 class="title">Text</h4>)
+      final h4Match = RegExp(
+        r'<h4[^>]*>(.*?)</h4>',
+        caseSensitive: false,
+        dotAll: true,
+      ).firstMatch(divContent);
+      
+      if (h4Match == null) continue;
+      
+      // Strip any HTML tags from the h4 content to get plain text
+      final h4RawContent = h4Match.group(1) ?? '';
+      final h4Title = h4RawContent.replaceAll(RegExp(r'<[^>]+>'), '').trim().toLowerCase();
+      
+      // Extract content after h4 - try ul first, then p tags
+      final afterH4 = divContent.substring(h4Match.end);
+      
+      if (h4Title == 'method' || h4Title == 'directions' || h4Title == 'instructions') {
+        // For method, collect all <p> content
+        final pMatches = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).allMatches(afterH4);
+        for (final pMatch in pMatches) {
+          final text = _decodeHtml((pMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+          if (text.isNotEmpty && rawDirections.isEmpty) {
+            // Split by periods for multiple sentences if it's a single paragraph
+            if (text.contains('. ')) {
+              rawDirections.addAll(text.split(RegExp(r'\.\s+')).where((s) => s.trim().isNotEmpty).map((s) => s.trim() + '.'));
+            } else {
+              rawDirections.add(text);
+            }
           }
-        } else if (h4Title == 'glass' || h4Title == 'glassware') {
-          if (pContent != null && pContent.isNotEmpty && glassType == null) {
-            glassType = _decodeHtml(pContent);
-          }
-        } else if (h4Title == 'garnish') {
-          if (pContent != null && pContent.isNotEmpty && garnishItems.isEmpty) {
-            garnishItems = _splitGarnishText(_decodeHtml(pContent));
-          }
-        } else if (h4Title == 'ingredients' && rawIngredientStrings.isEmpty) {
-          // Extract li items from the ul
-          final liMatches = RegExp(r'<li>([^<]+)</li>', caseSensitive: false).allMatches(fullMatch);
-          for (final li in liMatches) {
-            final text = _decodeHtml(li.group(1)?.trim() ?? '');
-            if (text.isNotEmpty) rawIngredientStrings.add(text);
+        }
+      } else if (h4Title == 'glass' || h4Title == 'glassware') {
+        final pMatch = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
+        if (pMatch != null && glassType == null) {
+          final text = _decodeHtml((pMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+          if (text.isNotEmpty) glassType = text;
+        }
+      } else if (h4Title == 'garnish') {
+        final pMatch = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
+        if (pMatch != null && garnishItems.isEmpty) {
+          final text = _decodeHtml((pMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+          if (text.isNotEmpty) garnishItems = _splitGarnishText(text);
+        }
+      } else if (h4Title == 'ingredients' && rawIngredientStrings.isEmpty) {
+        // Extract li items from the ul
+        final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(afterH4);
+        for (final li in liMatches) {
+          final text = _decodeHtml((li.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+          if (text.isNotEmpty) rawIngredientStrings.add(text);
+        }
+      }
+    }
+    
+    // Fallback: try the original simpler pattern if no matches found
+    if (rawIngredientStrings.isEmpty && glassType == null && garnishItems.isEmpty && rawDirections.isEmpty) {
+      final embeddedRecipeMatch = RegExp(
+        r'recipe-info[^>]*>.*?<h4[^>]*>([^<]+)</h4>\s*(?:<ul>.*?</ul>|<p>([^<]+)</p>)',
+        caseSensitive: false,
+        dotAll: true,
+      ).allMatches(bodyHtml);
+      
+      if (embeddedRecipeMatch.isNotEmpty) {
+        for (final match in embeddedRecipeMatch) {
+          final h4Title = match.group(1)?.trim().toLowerCase() ?? '';
+          // For ul-based content, extract from the full match
+          final fullMatch = match.group(0) ?? '';
+          final pContent = match.group(2)?.trim();
+          
+          if (h4Title == 'method' || h4Title == 'directions' || h4Title == 'instructions') {
+            if (pContent != null && pContent.isNotEmpty && rawDirections.isEmpty) {
+              rawDirections.add(_decodeHtml(pContent));
+            }
+          } else if (h4Title == 'glass' || h4Title == 'glassware') {
+            if (pContent != null && pContent.isNotEmpty && glassType == null) {
+              glassType = _decodeHtml(pContent);
+            }
+          } else if (h4Title == 'garnish') {
+            if (pContent != null && pContent.isNotEmpty && garnishItems.isEmpty) {
+              garnishItems = _splitGarnishText(_decodeHtml(pContent));
+            }
+          } else if (h4Title == 'ingredients' && rawIngredientStrings.isEmpty) {
+            // Extract li items from the ul
+            final liMatches = RegExp(r'<li>([^<]+)</li>', caseSensitive: false).allMatches(fullMatch);
+            for (final li in liMatches) {
+              final text = _decodeHtml(li.group(1)?.trim() ?? '');
+              if (text.isNotEmpty) rawIngredientStrings.add(text);
+            }
           }
         }
       }
@@ -4903,6 +4980,7 @@ class UrlRecipeImporter {
       'garnish': <String>[],
       'yield': null,
       'timing': null,
+      'notes': null,
     };
     
     // First try: look for headings with id="ingredients" (common WordPress pattern)
@@ -5521,6 +5599,48 @@ class UrlRecipeImporter {
     // Normalize yield/serves (strip prefixes)
     if (result['yield'] != null && (result['yield'] as String).isNotEmpty) {
       result['yield'] = _normalizeServes(result['yield'] as String);
+    }
+    
+    // Extract editor's notes from HTML
+    // Pattern 1: Punch-style editors-note or editor-note classes
+    final editorsNoteElem = document.querySelector('.editors-note, .editor-note, .editors_note, .recipe-editor-note, [class*="editor"][class*="note"]');
+    if (editorsNoteElem != null) {
+      final noteText = _decodeHtml(editorsNoteElem.text?.trim() ?? '');
+      if (noteText.isNotEmpty) {
+        result['notes'] = "Editor's Note: $noteText";
+      }
+    }
+    
+    // Pattern 2: Blockquote with editor's note indicator
+    if (result['notes'] == null) {
+      final blockquotes = document.querySelectorAll('blockquote');
+      for (final bq in blockquotes) {
+        final text = _decodeHtml(bq.text?.trim() ?? '');
+        final lowerText = text.toLowerCase();
+        if (lowerText.startsWith('editor') || lowerText.contains('editor\'s note')) {
+          result['notes'] = text.startsWith('Editor') ? text : "Editor's Note: $text";
+          break;
+        }
+      }
+    }
+    
+    // Pattern 3: Italicized text at top of article with editor's note content
+    if (result['notes'] == null) {
+      final italics = document.querySelectorAll('em, i');
+      for (final em in italics) {
+        final text = _decodeHtml(em.text?.trim() ?? '');
+        if (text.length > 50 && text.length < 500) {
+          final lowerText = text.toLowerCase();
+          // Check if it looks like an editor's note (mentions author, origin, etc.)
+          if (lowerText.contains('originally appeared') || 
+              lowerText.contains('this recipe') ||
+              lowerText.contains('adapted from') ||
+              lowerText.contains('excerpt from')) {
+            result['notes'] = "Editor's Note: $text";
+            break;
+          }
+        }
+      }
     }
     
     return result;

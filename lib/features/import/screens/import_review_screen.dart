@@ -215,19 +215,34 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           ),
           const SizedBox(height: 24),
 
-          // Glass (for Drinks) - placed above ingredients for consistency with edit screen
+          // Glass and Garnish (for Drinks) - side by side for consistency with edit screen
           if (_isDrinksCourse) ...[
-            _buildSectionTitle(theme, 'Glass', Icons.local_bar),
-            const SizedBox(height: 8),
-            _buildGlassField(theme),
-            const SizedBox(height: 24),
-          ],
-
-          // Garnish (for Drinks)
-          if (_isDrinksCourse) ...[
-            _buildSectionTitle(theme, 'Garnish', Icons.eco),
-            const SizedBox(height: 8),
-            _buildGarnishSection(theme),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionTitle(theme, 'Glass', Icons.local_bar),
+                      const SizedBox(height: 8),
+                      _buildGlassField(theme),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionTitle(theme, 'Garnish', Icons.eco),
+                      const SizedBox(height: 8),
+                      _buildGarnishSection(theme),
+                    ],
+                  ),
+                ),
+              ],
+            ),
             const SizedBox(height: 24),
           ],
 
