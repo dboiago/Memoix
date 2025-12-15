@@ -619,8 +619,9 @@ class UrlRecipeImporter {
       
       if (rawIngredientStrings.isEmpty) return null;
       
-      // Parse ingredients
-      var ingredients = _parseIngredients(rawIngredientStrings);
+      // Parse ingredients - filter out section headers first
+      final ingredientLines = rawIngredientStrings.where((line) => !line.startsWith('## ')).toList();
+      var ingredients = _parseIngredients(ingredientLines);
       ingredients = _sortIngredientsByQuantity(ingredients);
       
       // Build raw ingredients list
