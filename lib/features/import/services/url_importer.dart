@@ -683,7 +683,8 @@ class UrlRecipeImporter {
     // Extract other fields
     final serves = _parseString(data['serves']) ?? 
                    _parseString(data['yield']) ?? 
-                   _parseString(data['recipeYield']);
+                   _parseString(data['recipeYield']) ??
+                   _parseString(data['yieldTextOverride']); // Great British Chefs
     final time = _parseString(data['time']) ?? 
                  _parseString(data['cookTimeCustom']) ??
                  _parseString(data['cookTime']);
@@ -2634,6 +2635,25 @@ class UrlRecipeImporter {
               }
             }
           }
+          // Great British Chefs format: {groupName: "Section", unstructuredTextMetric: "1.5kg lamb shoulder"}
+          else if (item.containsKey('unstructuredTextMetric') || item.containsKey('linkTextMetric')) {
+            final groupName = _parseString(item['groupName']) ?? '';
+            final ingredientText = _parseString(item['unstructuredTextMetric']) ??
+                                   _parseString(item['linkTextMetric']) ?? '';
+            
+            // Add section header if we haven't seen this group yet
+            if (groupName.isNotEmpty && (result.isEmpty || !result.last.contains('[$groupName]'))) {
+              // Check if we already have this section
+              final sectionHeader = '[$groupName]';
+              if (!result.contains(sectionHeader)) {
+                result.add(sectionHeader);
+              }
+            }
+            
+            if (ingredientText.isNotEmpty) {
+              result.add(_decodeHtml(ingredientText.trim()));
+            }
+          }
           // Standard JSON-LD or generic format with text field
           else {
             final text = _parseString(item['text'] ?? item['name']) ?? '';
@@ -3766,6 +3786,10 @@ class UrlRecipeImporter {
         remaining = remaining.substring(amountMatch.end).trim();
       }
     }
+    
+    // Strip leading "of" that some sites include after the amount
+    // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
+    remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');
     
     // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
     // But don't split on commas that are inside parentheses
