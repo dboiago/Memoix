@@ -134,15 +134,19 @@ class UrlRecipeImporter {
       final uri = Uri.parse(url);
       final origin = '${uri.scheme}://${uri.host}';
       
-      // Try fetching with standard browser headers first
-      // Use Accept-Encoding: identity to prevent compression (Dart http can't auto-decompress brotli)
-      var response = await http.get(
-        Uri.parse(url),
-        headers: {
+      // Helper function to attempt fetch with given headers
+      Future<http.Response> tryFetch(Map<String, String> headers) async {
+        return await http.get(Uri.parse(url), headers: headers);
+      }
+      
+      // List of header configurations to try in order
+      final headerConfigs = [
+        // Config 1: Standard Chrome browser headers
+        {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
-          'Accept-Encoding': 'gzip, deflate',
+          'Accept-Encoding': 'identity', // No compression - safest option
           'Referer': origin,
           'Origin': origin,
           'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
@@ -156,49 +160,55 @@ class UrlRecipeImporter {
           'Cache-Control': 'max-age=0',
           'Connection': 'keep-alive',
         },
-      );
-
-      // If first attempt fails with 403, try alternative approaches
-      if (response.statusCode == 403) {
-        // Try with Googlebot user-agent (sites often allow search engine crawlers)
-        response = await http.get(
-          Uri.parse(url),
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Accept-Encoding': 'gzip, deflate',
-          },
-        );
+        // Config 2: Googlebot (sites allow crawlers)
+        {
+          'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'identity',
+        },
+        // Config 3: Mobile Safari
+        {
+          'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'identity',
+        },
+        // Config 4: Firefox with minimal headers
+        {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.5',
+          'Accept-Encoding': 'identity',
+        },
+        // Config 5: Bare minimum headers
+        {
+          'User-Agent': 'Mozilla/5.0',
+          'Accept': '*/*',
+        },
+      ];
+      
+      http.Response? response;
+      String? lastError;
+      
+      // Try each configuration until one works
+      for (final headers in headerConfigs) {
+        try {
+          response = await tryFetch(headers);
+          if (response.statusCode == 200) {
+            break; // Success!
+          }
+          lastError = 'HTTP ${response.statusCode}';
+        } catch (e) {
+          // ClientException or other HTTP errors - try next config
+          lastError = e.toString();
+          response = null;
+          continue;
+        }
       }
       
-      // If still 403, try with a mobile user agent
-      if (response.statusCode == 403) {
-        response = await http.get(
-          Uri.parse(url),
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Accept-Encoding': 'gzip, deflate',
-          },
-        );
-      }
-      
-      // If still 403, try with minimal headers (some sites block on specific headers)
-      if (response.statusCode == 403) {
-        response = await http.get(
-          Uri.parse(url),
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-          },
-        );
-      }
-
-      if (response.statusCode != 200) {
-        throw Exception('Failed to fetch URL: ${response.statusCode}');
+      if (response == null || response.statusCode != 200) {
+        throw Exception('Failed to fetch URL: ${lastError ?? "unknown error"}');
       }
 
       // Decode response body - handle encoding errors gracefully
