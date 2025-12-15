@@ -1456,32 +1456,31 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     // Save to appropriate repository based on course type
     String savedName;
-    String savedId;
     Widget Function(BuildContext) detailScreenBuilder;
     
     if (_isModernistCourse) {
       final recipe = _buildModernistRecipe();
       await ref.read(modernistRepositoryProvider).save(recipe);
       savedName = recipe.name;
-      savedId = recipe.uuid;
+      final savedId = recipe.id; // Modernist uses int id
       detailScreenBuilder = (_) => ModernistDetailScreen(recipeId: savedId);
     } else if (_isSmokingCourse) {
       final recipe = _buildSmokingRecipe();
       await ref.read(smokingRepositoryProvider).saveRecipe(recipe);
       savedName = recipe.name;
-      savedId = recipe.uuid;
+      final savedId = recipe.uuid; // Smoking uses String uuid
       detailScreenBuilder = (_) => SmokingDetailScreen(recipeId: savedId);
     } else if (_isPizzasCourse) {
       final recipe = _buildPizzaRecipe();
       await ref.read(pizzaRepositoryProvider).savePizza(recipe);
       savedName = recipe.name;
-      savedId = recipe.uuid;
+      final savedId = recipe.uuid; // Pizza uses String uuid
       detailScreenBuilder = (_) => PizzaDetailScreen(pizzaId: savedId);
     } else {
       final recipe = _buildRecipe();
       await ref.read(recipeRepositoryProvider).saveRecipe(recipe);
       savedName = recipe.name;
-      savedId = recipe.uuid;
+      final savedId = recipe.uuid; // Recipe uses String uuid
       detailScreenBuilder = (_) => RecipeDetailScreen(recipeId: savedId);
     }
 
