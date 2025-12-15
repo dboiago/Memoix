@@ -6,6 +6,191 @@ import '../../../features/recipes/models/recipe.dart';
 import 'recipe_parser_strategy.dart';
 import 'ingredient_parser.dart';
 
+// --- Squarespace Strategy ---
+
+/// Handles Squarespace-based recipe sites (e.g., starchefs.com)
+/// These sites use `sqs-html-content` divs with <br>-delimited content
+/// and <strong> tags for section headers.
+class SquarespaceRecipeStrategy implements RecipeParserStrategy {
+  final IngredientParser _ingParser;
+  SquarespaceRecipeStrategy(this._ingParser);
+
+  @override
+  double canParse(String url, Document? document, String? rawBody) {
+    if (document == null) return 0.0;
+    
+    // Check for Squarespace signature elements
+    final hasSqsContent = document.querySelector('.sqs-html-content') != null;
+    final hasSqsBlock = document.querySelector('[data-sqsp-text-block-content]') != null;
+    
+    if (hasSqsContent || hasSqsBlock) {
+      // Check if it looks like a recipe page (has INGREDIENTS header)
+      final bodyText = document.body?.text.toUpperCase() ?? '';
+      if (bodyText.contains('INGREDIENTS') && bodyText.contains('METHOD')) {
+        return 0.9; // High confidence for Squarespace recipe pages
+      }
+      return 0.6; // Medium confidence for Squarespace pages
+    }
+    return 0.0;
+  }
+
+  @override
+  Future<RecipeImportResult?> parse(String url, Document? document, String? rawBody) async {
+    if (document == null) return null;
+
+    // Extract title
+    final title = _extractTitle(document);
+    
+    // Extract subtitle (often contains dish description)
+    final subtitle = document.querySelector('h3')?.text.trim();
+    
+    // Find all sqs-html-content blocks
+    final contentBlocks = document.querySelectorAll('.sqs-html-content');
+    
+    List<String> rawIngredients = [];
+    List<String> directions = [];
+    String? servings;
+    
+    for (final block in contentBlocks) {
+      final blockText = block.text.toUpperCase();
+      
+      if (blockText.contains('INGREDIENTS')) {
+        rawIngredients = _parseSquarespaceBlock(block, isIngredients: true);
+      } else if (blockText.contains('METHOD') || blockText.contains('DIRECTIONS') || blockText.contains('INSTRUCTIONS')) {
+        directions = _parseSquarespaceBlock(block, isIngredients: false);
+      }
+    }
+    
+    // Try to extract yield/servings from page
+    final yieldMatch = RegExp(r'Yield:\s*(\d+\s*servings?)', caseSensitive: false)
+        .firstMatch(document.body?.text ?? '');
+    if (yieldMatch != null) {
+      servings = yieldMatch.group(1);
+    }
+
+    // Extract image
+    final imageUrl = _extractImage(document);
+
+    if (rawIngredients.isEmpty && directions.isEmpty) {
+      return null;
+    }
+
+    return RecipeImportResult(
+      name: title,
+      source: RecipeSource.url,
+      sourceUrl: url,
+      ingredients: _ingParser.parseList(rawIngredients),
+      directions: directions,
+      serves: servings,
+      imageUrl: imageUrl,
+      notes: subtitle,
+    );
+  }
+
+  String _extractTitle(Document document) {
+    // Try h1 first
+    final h1 = document.querySelector('h1');
+    if (h1 != null && h1.text.trim().isNotEmpty) {
+      return _ingParser.decodeHtml(h1.text.trim());
+    }
+    
+    // Fallback to og:title
+    final ogTitle = document.querySelector('meta[property="og:title"]')?.attributes['content'];
+    if (ogTitle != null && ogTitle.isNotEmpty) {
+      return _ingParser.decodeHtml(ogTitle);
+    }
+    
+    return 'Untitled Recipe';
+  }
+
+  String? _extractImage(Document document) {
+    // Try og:image first
+    final ogImage = document.querySelector('meta[property="og:image"]')?.attributes['content'];
+    if (ogImage != null && ogImage.isNotEmpty) return ogImage;
+    
+    // Try first large image in content
+    final img = document.querySelector('.sqs-html-content img, .content-wrapper img');
+    return img?.attributes['src'];
+  }
+
+  /// Parses a Squarespace content block that uses <br> tags for line breaks
+  /// and <strong> tags for section headers
+  List<String> _parseSquarespaceBlock(Element block, {required bool isIngredients}) {
+    final results = <String>[];
+    
+    // Find all <p> elements in the block
+    final paragraphs = block.querySelectorAll('p');
+    
+    for (final p in paragraphs) {
+      // Get inner HTML and split by <br> tags
+      final html = p.innerHtml;
+      final lines = html.split(RegExp(r'<br\s*/?>'));
+      
+      String? currentSection;
+      
+      for (var line in lines) {
+        line = line.trim();
+        if (line.isEmpty) continue;
+        
+        // Check for section header: <strong>Section Name:</strong> or <strong>Section Name:<br></strong>
+        final sectionMatch = RegExp(r'^<strong>([^<:]+):?\s*</strong>$', caseSensitive: false).firstMatch(line);
+        if (sectionMatch != null) {
+          final sectionName = sectionMatch.group(1)?.trim();
+          if (sectionName != null && sectionName.toUpperCase() != 'INGREDIENTS' && sectionName.toUpperCase() != 'METHOD') {
+            currentSection = sectionName;
+            if (isIngredients) {
+              results.add('[$sectionName]'); // Section header marker
+            } else {
+              results.add('For the $sectionName:');
+            }
+          }
+          continue;
+        }
+        
+        // Check for inline section header at start of line: <strong>Section:</strong>content
+        final inlineSectionMatch = RegExp(r'^<strong>([^<:]+):\s*</strong>\s*(.*)$', caseSensitive: false).firstMatch(line);
+        if (inlineSectionMatch != null) {
+          final sectionName = inlineSectionMatch.group(1)?.trim();
+          final content = inlineSectionMatch.group(2)?.trim() ?? '';
+          
+          if (sectionName != null && sectionName.toUpperCase() != 'INGREDIENTS' && sectionName.toUpperCase() != 'METHOD') {
+            currentSection = sectionName;
+            if (isIngredients) {
+              results.add('[$sectionName]');
+            } else {
+              results.add('For the $sectionName:');
+            }
+          }
+          
+          if (content.isNotEmpty) {
+            final cleanContent = _stripHtmlTags(content);
+            if (cleanContent.isNotEmpty) {
+              results.add(cleanContent);
+            }
+          }
+          continue;
+        }
+        
+        // Regular content line - strip HTML tags and add
+        final cleanLine = _stripHtmlTags(line);
+        if (cleanLine.isNotEmpty && 
+            cleanLine.toUpperCase() != 'INGREDIENTS:' && 
+            cleanLine.toUpperCase() != 'METHOD:') {
+          results.add(cleanLine);
+        }
+      }
+    }
+    
+    return results;
+  }
+
+  String _stripHtmlTags(String html) {
+    // Remove HTML tags and decode entities
+    var text = html.replaceAll(RegExp(r'<[^>]+>'), '');
+    return _ingParser.decodeHtml(text).trim();
+  }
+}
+
 // --- YouTube Strategy ---
 
 class YouTubeStrategy implements RecipeParserStrategy {

@@ -22,6 +22,7 @@ class UrlRecipeImporter {
         _ingredientParser = IngredientParser() {
     _strategies = [
       YouTubeStrategy(_ingredientParser),
+      SquarespaceRecipeStrategy(_ingredientParser),
       StandardWebStrategy(_ingredientParser),
     ];
   }
