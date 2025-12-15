@@ -112,6 +112,12 @@ class Recipe {
   /// Nutrition information (optional, imported from URL or user-added)
   NutritionInfo? nutrition;
 
+  /// Glass type for drinks (e.g., "Coupe", "Highball", "Rocks")
+  String? glass;
+
+  /// Garnish list for drinks (e.g., ["Lemon twist", "Cherry"])
+  List<String> garnish = [];
+
   /// Convenience constructor
   Recipe();
 
@@ -138,6 +144,8 @@ class Recipe {
     this.lastCookedAt,
     this.tags = const [],
     this.nutrition,
+    this.glass,
+    this.garnish = const [],
   }) {
     createdAt = DateTime.now();
     updatedAt = DateTime.now();
@@ -217,7 +225,12 @@ class Recipe {
       ..version = json['version'] as int? ?? 1
       ..nutrition = json['nutrition'] != null
           ? NutritionInfo.fromJson(json['nutrition'] as Map<String, dynamic>)
-          : null;
+          : null
+      ..glass = json['glass'] as String?
+      ..garnish = (json['garnish'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          [];
 
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'] as String);
@@ -263,6 +276,8 @@ class Recipe {
       'updatedAt': updatedAt.toIso8601String(),
       'version': version,
       if (nutrition != null) 'nutrition': nutrition!.toJson(),
+      if (glass != null) 'glass': glass,
+      if (garnish.isNotEmpty) 'garnish': garnish,
     };
   }
 
@@ -350,6 +365,8 @@ class Recipe {
       'tags': tags,
       'version': version,
       if (nutrition != null) 'nutrition': nutrition!.toJson(),
+      if (glass != null) 'glass': glass,
+      if (garnish.isNotEmpty) 'garnish': garnish,
     };
   }
 }

@@ -283,6 +283,52 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     ],
                   ),
 
+                  // Glass (for Drinks)
+                  if (recipe.course == 'drinks' && recipe.glass != null && recipe.glass!.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    Text(
+                      'Glass',
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 4,
+                      children: [
+                        Chip(
+                          label: Text(recipe.glass!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      ],
+                    ),
+                  ],
+
+                  // Garnish (for Drinks)
+                  if (recipe.course == 'drinks' && recipe.garnish.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    Text(
+                      'Garnish',
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 4,
+                      children: recipe.garnish.map((item) => Chip(
+                        label: Text(item),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                        visualDensity: VisualDensity.compact,
+                      )).toList(),
+                    ),
+                  ],
+
                   // Pairs with
                   if (recipe.pairsWith.isNotEmpty) ...[
                     const SizedBox(height: 16),

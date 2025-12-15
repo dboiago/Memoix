@@ -116,6 +116,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   Recipe? _existingRecipe;
   bool _showBakerPercent = false; // Toggle for showing baker's percentage column
 
+  // Drinks-specific fields
+  String? _glass;
+  final List<String> _garnish = [];
+
   bool get _isEditing => _existingRecipe != null;
 
   @override
@@ -223,6 +227,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       if (recipe.imageUrl != null && recipe.imageUrl!.isNotEmpty) {
         _imagePaths = [recipe.imageUrl!];
       }
+      
+      // Load drinks-specific fields
+      _glass = recipe.glass;
+      _garnish.clear();
+      _garnish.addAll(recipe.garnish);
     } else if (widget.ocrText != null) {
       // Pre-populate with OCR text for manual extraction
       _notesController.text = 'OCR Text:\n${widget.ocrText}';
@@ -982,6 +991,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ],
             ),
 
+            // Glass and Garnish (Drinks only)
+            if (_selectedCourse == 'drinks') ...[
+              const SizedBox(height: 16),
+              _buildGlassSection(theme),
+              const SizedBox(height: 16),
+              _buildGarnishSection(theme),
+            ],
+
             const SizedBox(height: 24),
 
             // Ingredients (3-column spreadsheet layout)
@@ -1397,6 +1414,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..stepImageMap = _stepImageMap.entries
             .map((e) => '${e.key}:${e.value}')
             .toList()
+        ..glass = _selectedCourse == 'drinks' ? _glass : null
+        ..garnish = _selectedCourse == 'drinks' ? _garnish : []
         ..updatedAt = DateTime.now();
 
       // Save to database
@@ -2132,6 +2151,175 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       ),
     );
   }
+
+  /// Build Glass section for drinks
+  Widget _buildGlassSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Glass',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Autocomplete<String>(
+          optionsBuilder: (value) {
+            final suggestions = _glassSuggestions.where(
+              (s) => s.toLowerCase().contains(value.text.toLowerCase()),
+            );
+            return suggestions;
+          },
+          initialValue: TextEditingValue(text: _glass ?? ''),
+          onSelected: (value) {
+            setState(() => _glass = value);
+          },
+          fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            return TextField(
+              controller: controller,
+              focusNode: focusNode,
+              decoration: const InputDecoration(
+                hintText: 'e.g., Coupe, Highball, Rocks',
+                border: OutlineInputBorder(),
+              ),
+              textCapitalization: TextCapitalization.words,
+              onChanged: (value) {
+                _glass = value.isEmpty ? null : value;
+              },
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  /// Build Garnish section for drinks
+  Widget _buildGarnishSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Garnish',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Autocomplete<String>(
+          optionsBuilder: (value) {
+            final suggestions = _garnishSuggestions.where(
+              (s) => s.toLowerCase().contains(value.text.toLowerCase()) &&
+                     !_garnish.contains(s),
+            );
+            return suggestions;
+          },
+          onSelected: (value) {
+            if (!_garnish.contains(value)) {
+              setState(() => _garnish.add(value));
+            }
+          },
+          fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            return TextField(
+              controller: controller,
+              focusNode: focusNode,
+              decoration: InputDecoration(
+                hintText: 'Add garnish...',
+                border: const OutlineInputBorder(),
+                suffixIcon: IconButton(
+                  icon: const Icon(Icons.add),
+                  onPressed: () {
+                    final value = controller.text.trim();
+                    if (value.isNotEmpty && !_garnish.contains(value)) {
+                      setState(() => _garnish.add(value));
+                      controller.clear();
+                    }
+                  },
+                ),
+              ),
+              textCapitalization: TextCapitalization.words,
+              onSubmitted: (value) {
+                if (value.isNotEmpty && !_garnish.contains(value)) {
+                  setState(() => _garnish.add(value));
+                  controller.clear();
+                }
+              },
+            );
+          },
+        ),
+        if (_garnish.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: _garnish.map((item) => Chip(
+              label: Text(item),
+              deleteIcon: const Icon(Icons.close, size: 18),
+              onDeleted: () => setState(() => _garnish.remove(item)),
+            )).toList(),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Common glass types for autocomplete
+  static const List<String> _glassSuggestions = [
+    'Coupe',
+    'Highball',
+    'Rocks',
+    'Collins',
+    'Martini',
+    'Nick & Nora',
+    'Old Fashioned',
+    'Wine Glass',
+    'Flute',
+    'Hurricane',
+    'Copper Mug',
+    'Julep Cup',
+    'Tiki Mug',
+    'Shot Glass',
+    'Snifter',
+    'Goblet',
+    'Tumbler',
+    'Pint Glass',
+    'Margarita Glass',
+    'Pilsner',
+  ];
+
+  /// Common garnish types for autocomplete
+  static const List<String> _garnishSuggestions = [
+    'Lemon twist',
+    'Lemon wheel',
+    'Lemon wedge',
+    'Lime twist',
+    'Lime wheel',
+    'Lime wedge',
+    'Orange twist',
+    'Orange wheel',
+    'Orange slice',
+    'Cherry',
+    'Maraschino cherry',
+    'Luxardo cherry',
+    'Olive',
+    'Cocktail onion',
+    'Mint sprig',
+    'Basil leaf',
+    'Rosemary sprig',
+    'Cucumber slice',
+    'Celery stalk',
+    'Pineapple wedge',
+    'Edible flower',
+    'Salt rim',
+    'Sugar rim',
+    'Tajin rim',
+    'Cinnamon stick',
+    'Nutmeg (grated)',
+    'Coffee beans',
+    'Candied ginger',
+    'Pickled jalapeño',
+    'Bacon strip',
+  ];
 }
 
 /// Spirit type selector for drinks/cocktails

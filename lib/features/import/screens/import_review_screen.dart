@@ -49,6 +49,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   // Modernist-specific fields
   ModernistType _selectedModernistType = ModernistType.concept;
 
+  // Drinks-specific fields
+  String? _glass;
+  final List<String> _garnish = [];
+
   // Sanitized ingredients list (removes empty/invalid entries)
   late List<RawIngredientData> _sanitizedIngredients;
 
@@ -72,6 +76,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     final rawCourse = result.course ?? 'Mains';
     _selectedCourse = _normalizeCourse(rawCourse);
     _selectedCuisine = result.cuisine;
+
+    // Initialize drinks-specific fields
+    _glass = result.glass;
+    _garnish.clear();
+    _garnish.addAll(result.garnish);
 
     // Sanitize ingredients to remove empty/invalid entries
     _sanitizedIngredients = RawIngredientData.sanitize(result.rawIngredients);
@@ -218,6 +227,22 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             _buildSectionTitle(theme, 'Equipment', Icons.build_outlined),
             const SizedBox(height: 8),
             _buildEquipmentList(theme, result),
+            const SizedBox(height: 24),
+          ],
+
+          // Glass (for Drinks)
+          if (_isDrinksCourse) ...[
+            _buildSectionTitle(theme, 'Glass', Icons.local_bar),
+            const SizedBox(height: 8),
+            _buildGlassField(theme),
+            const SizedBox(height: 24),
+          ],
+
+          // Garnish (for Drinks)
+          if (_isDrinksCourse) ...[
+            _buildSectionTitle(theme, 'Garnish', Icons.eco),
+            const SizedBox(height: 8),
+            _buildGarnishSection(theme),
             const SizedBox(height: 24),
           ],
 
@@ -412,6 +437,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   
   /// Check if current course is Pizzas
   bool get _isPizzasCourse => _selectedCourse.toLowerCase() == 'pizzas';
+  
+  /// Check if current course is Drinks
+  bool get _isDrinksCourse => _selectedCourse.toLowerCase() == 'drinks';
   
   /// Check if current course has a specialized edit screen
   bool get _hasSpecializedScreen => _isModernistCourse || _isSmokingCourse || _isPizzasCourse;
@@ -856,6 +884,162 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     );
   }
 
+  Widget _buildGlassField(ThemeData theme) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Autocomplete<String>(
+          optionsBuilder: (value) {
+            return _glassSuggestions.where(
+              (s) => s.toLowerCase().contains(value.text.toLowerCase()),
+            );
+          },
+          initialValue: TextEditingValue(text: _glass ?? ''),
+          onSelected: (value) {
+            setState(() => _glass = value);
+          },
+          fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            return TextField(
+              controller: controller,
+              focusNode: focusNode,
+              decoration: const InputDecoration(
+                hintText: 'e.g., Coupe, Highball, Rocks',
+                border: OutlineInputBorder(),
+              ),
+              textCapitalization: TextCapitalization.words,
+              onChanged: (value) {
+                _glass = value.isEmpty ? null : value;
+              },
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGarnishSection(ThemeData theme) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Autocomplete<String>(
+              optionsBuilder: (value) {
+                return _garnishSuggestions.where(
+                  (s) => s.toLowerCase().contains(value.text.toLowerCase()) &&
+                         !_garnish.contains(s),
+                );
+              },
+              onSelected: (value) {
+                if (!_garnish.contains(value)) {
+                  setState(() => _garnish.add(value));
+                }
+              },
+              fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                return TextField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: InputDecoration(
+                    hintText: 'Add garnish...',
+                    border: const OutlineInputBorder(),
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.add),
+                      onPressed: () {
+                        final value = controller.text.trim();
+                        if (value.isNotEmpty && !_garnish.contains(value)) {
+                          setState(() => _garnish.add(value));
+                          controller.clear();
+                        }
+                      },
+                    ),
+                  ),
+                  textCapitalization: TextCapitalization.words,
+                  onSubmitted: (value) {
+                    if (value.isNotEmpty && !_garnish.contains(value)) {
+                      setState(() => _garnish.add(value));
+                      controller.clear();
+                    }
+                  },
+                );
+              },
+            ),
+            if (_garnish.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: _garnish.map((item) => Chip(
+                  label: Text(item),
+                  deleteIcon: const Icon(Icons.close, size: 18),
+                  onDeleted: () => setState(() => _garnish.remove(item)),
+                )).toList(),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Common glass types for autocomplete
+  static const List<String> _glassSuggestions = [
+    'Coupe',
+    'Highball',
+    'Rocks',
+    'Collins',
+    'Martini',
+    'Nick & Nora',
+    'Old Fashioned',
+    'Wine Glass',
+    'Flute',
+    'Hurricane',
+    'Copper Mug',
+    'Julep Cup',
+    'Tiki Mug',
+    'Shot Glass',
+    'Snifter',
+    'Goblet',
+    'Tumbler',
+    'Pint Glass',
+    'Margarita Glass',
+    'Pilsner',
+  ];
+
+  /// Common garnish types for autocomplete
+  static const List<String> _garnishSuggestions = [
+    'Lemon twist',
+    'Lemon wheel',
+    'Lemon wedge',
+    'Lime twist',
+    'Lime wheel',
+    'Lime wedge',
+    'Orange twist',
+    'Orange wheel',
+    'Orange slice',
+    'Cherry',
+    'Maraschino cherry',
+    'Luxardo cherry',
+    'Olive',
+    'Cocktail onion',
+    'Mint sprig',
+    'Basil leaf',
+    'Rosemary sprig',
+    'Cucumber slice',
+    'Celery stalk',
+    'Pineapple wedge',
+    'Edible flower',
+    'Salt rim',
+    'Sugar rim',
+    'Tajin rim',
+    'Cinnamon stick',
+    'Nutmeg (grated)',
+    'Coffee beans',
+    'Candied ginger',
+    'Pickled jalapeño',
+    'Bacon strip',
+  ];
+
   Widget _buildDirectionsList(ThemeData theme, RecipeImportResult result) {
     if (result.rawDirections.isEmpty) {
       return Card(
@@ -1127,6 +1311,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       sourceUrl: widget.importResult.sourceUrl,
       source: widget.importResult.source,
       nutrition: widget.importResult.nutrition,
+      glass: _isDrinksCourse ? _glass : null,
+      garnish: _isDrinksCourse ? _garnish : const [],
     );
 
     // Add multiple images if available (from multi-image import)

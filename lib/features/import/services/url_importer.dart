@@ -3601,6 +3601,8 @@ class UrlRecipeImporter {
     var rawDirections = <String>[];
     List<String> equipmentItems = [];
     List<String> stepImages = []; // Images found in direction steps
+    String? glassType;
+    List<String> garnishItems = [];
     String? yield;
     String? timing;
     bool usedStructuredFormat = false; // Flag for higher confidence when using structured recipe plugins
@@ -3975,6 +3977,8 @@ class UrlRecipeImporter {
       final sectionResult = _parseHtmlBySections(document);
       rawIngredientStrings = sectionResult['ingredients'] ?? [];
       equipmentItems = sectionResult['equipment'] ?? [];
+      glassType = sectionResult['glass'];
+      garnishItems = sectionResult['garnish'] ?? [];
       yield = sectionResult['yield'];
       timing = sectionResult['timing'];
       // Section-based parsing is semi-structured
@@ -3987,6 +3991,12 @@ class UrlRecipeImporter {
       final sectionResult = _parseHtmlBySections(document);
       if ((sectionResult['equipment'] as List?)?.isNotEmpty ?? false) {
         equipmentItems = sectionResult['equipment'] ?? [];
+      }
+      if (sectionResult['glass'] != null) {
+        glassType = sectionResult['glass'];
+      }
+      if ((sectionResult['garnish'] as List?)?.isNotEmpty ?? false) {
+        garnishItems = sectionResult['garnish'] ?? [];
       }
       if (yield == null && sectionResult['yield'] != null) {
         yield = sectionResult['yield'];
@@ -4628,6 +4638,8 @@ class UrlRecipeImporter {
       ingredients: ingredients,
       directions: rawDirections,
       equipment: equipmentItems,
+      glass: glassType,
+      garnish: garnishItems,
       rawIngredients: rawIngredients,
       rawDirections: rawDirections,
       detectedCourses: detectedCourses,
@@ -4649,6 +4661,8 @@ class UrlRecipeImporter {
     final result = <String, dynamic>{
       'ingredients': <String>[],
       'equipment': <String>[],
+      'glass': null,
+      'garnish': <String>[],
       'yield': null,
       'timing': null,
     };
@@ -4669,6 +4683,33 @@ class UrlRecipeImporter {
       final equipment = _extractListItemsFromSection(equipmentHeadingById, document);
       if (equipment.isNotEmpty) {
         result['equipment'] = equipment;
+      }
+    }
+    
+    // Check for glass by ID
+    final glassHeadingById = document.querySelector('h2#glass, h3#glass, [id="glass"], h2#glassware, h3#glassware, [id="glassware"]');
+    if (glassHeadingById != null) {
+      final glassList = _extractListItemsFromSection(glassHeadingById, document);
+      if (glassList.isNotEmpty) {
+        result['glass'] = glassList.first;
+      } else {
+        // May be text after heading instead of a list
+        final nextElement = glassHeadingById.nextElementSibling;
+        if (nextElement != null) {
+          final glassText = _decodeHtml(nextElement.text?.trim() ?? '');
+          if (glassText.isNotEmpty) {
+            result['glass'] = glassText;
+          }
+        }
+      }
+    }
+    
+    // Check for garnish by ID
+    final garnishHeadingById = document.querySelector('h2#garnish, h3#garnish, [id="garnish"]');
+    if (garnishHeadingById != null) {
+      final garnish = _extractListItemsFromSection(garnishHeadingById, document);
+      if (garnish.isNotEmpty) {
+        result['garnish'] = garnish;
       }
     }
     
@@ -4704,6 +4745,39 @@ class UrlRecipeImporter {
         }
         
         result['equipment'] = equipment;
+      } else if (headingText.contains('glass') || headingText.contains('glassware')) {
+        // Extract glass type from next paragraph or list
+        if (result['glass'] == null) {
+          var glassList = _extractListItemsAfterHeading(heading, document);
+          if (glassList.isNotEmpty) {
+            result['glass'] = glassList.first;
+          } else if (nextElement != null) {
+            final glassText = _decodeHtml(nextElement.text?.trim() ?? '');
+            if (glassText.isNotEmpty) {
+              result['glass'] = glassText;
+            }
+          }
+        }
+      } else if (headingText.contains('garnish')) {
+        // Extract garnish list from the list following this heading
+        if ((result['garnish'] as List).isEmpty) {
+          var garnish = _extractListItemsAfterHeading(heading, document);
+          if (garnish.isEmpty) {
+            garnish = _extractBulletPointsAfterHeading(heading, document);
+          }
+          // If still empty but there's a next element with text, use that
+          if (garnish.isEmpty && nextElement != null) {
+            final garnishText = _decodeHtml(nextElement.text?.trim() ?? '');
+            if (garnishText.isNotEmpty) {
+              // Split by comma or newline in case multiple garnishes in one line
+              garnish = garnishText.split(RegExp(r'[,\n]'))
+                  .map((s) => s.trim())
+                  .where((s) => s.isNotEmpty)
+                  .toList();
+            }
+          }
+          result['garnish'] = garnish;
+        }
       } else if (headingText.contains('yield') || headingText.contains('serves') || headingText.contains('serving')) {
         // Extract yield/serving info from next paragraph
         if (nextElement != null) {

@@ -22,6 +22,12 @@ class RecipeImportResult {
   /// Special equipment required (for Modernist recipes)
   final List<String> equipment;
 
+  /// Glass type for drinks
+  final String? glass;
+
+  /// Garnish list for drinks
+  final List<String> garnish;
+
   /// Raw extracted data for user mapping/review
   final List<RawIngredientData> rawIngredients;
   final List<String> rawDirections;
@@ -61,6 +67,8 @@ class RecipeImportResult {
     this.imageUrl,
     this.nutrition,
     this.equipment = const [],
+    this.glass,
+    this.garnish = const [],
     this.rawIngredients = const [],
     this.rawDirections = const [],
     this.rawText,
@@ -143,6 +151,8 @@ class RecipeImportResult {
       sourceUrl: sourceUrl,
       source: source,
       nutrition: nutrition,
+      glass: glass,
+      garnish: garnish,
     );
     
     // Set multiple images if available
@@ -308,6 +318,9 @@ class RecipeImportResult {
     String? notes,
     String? imageUrl,
     NutritionInfo? nutrition,
+    List<String>? equipment,
+    String? glass,
+    List<String>? garnish,
     List<RawIngredientData>? rawIngredients,
     List<String>? rawDirections,
     String? rawText,
@@ -337,6 +350,9 @@ class RecipeImportResult {
       notes: notes ?? this.notes,
       imageUrl: imageUrl ?? this.imageUrl,
       nutrition: nutrition ?? this.nutrition,
+      equipment: equipment ?? this.equipment,
+      glass: glass ?? this.glass,
+      garnish: garnish ?? this.garnish,
       rawIngredients: rawIngredients ?? this.rawIngredients,
       rawDirections: rawDirections ?? this.rawDirections,
       rawText: rawText ?? this.rawText,
