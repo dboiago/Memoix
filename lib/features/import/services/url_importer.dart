@@ -46,6 +46,7 @@ class UrlRecipeImporter {
     'drinkflow.com',
     'drinkify.co',
     'seedlipdrinks.com',
+    'lyres.com',
   ];
 
   /// HTML entity decode map for common entities
@@ -2292,6 +2293,18 @@ class UrlRecipeImporter {
     .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
     .toList();
 
+    // Build notes - combine description with editor's note if present
+    String notes = _decodeHtml(_parseString(data['description']) ?? '');
+    // Check for editor's note in meta (Punch style)
+    final meta = data['meta'];
+    if (meta is Map) {
+      final editorsNote = _parseString(meta['editors_note'] ?? meta['editorsNote']);
+      if (editorsNote != null && editorsNote.isNotEmpty) {
+        final editorNoteText = "Editor's Note: ${_decodeHtml(editorsNote)}";
+        notes = notes.isNotEmpty ? '$notes\n\n$editorNoteText' : editorNoteText;
+      }
+    }
+    
     return RecipeImportResult(
       name: name.isNotEmpty ? name : null,
       course: course,
@@ -2302,7 +2315,7 @@ class UrlRecipeImporter {
       ingredients: ingredients,
       directions: directions,
       equipment: equipmentList,
-      notes: _decodeHtml(_parseString(data['description']) ?? ''),
+      notes: notes,
       imageUrl: _parseImage(data['image']),
       nutrition: nutrition,
       rawIngredients: rawIngredients,
@@ -3206,7 +3219,18 @@ class UrlRecipeImporter {
     }
     
     // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
-    final commaIndex = remaining.indexOf(',');
+    // But don't split on commas that are inside parentheses
+    int commaIndex = -1;
+    int parenDepth = 0;
+    for (int i = 0; i < remaining.length; i++) {
+      final char = remaining[i];
+      if (char == '(') parenDepth++;
+      else if (char == ')') parenDepth--;
+      else if (char == ',' && parenDepth == 0) {
+        commaIndex = i;
+        break;
+      }
+    }
     if (commaIndex > 0) {
       var afterComma = remaining.substring(commaIndex + 1).trim();
       remaining = remaining.substring(0, commaIndex).trim();
@@ -3733,6 +3757,45 @@ class UrlRecipeImporter {
     String? timing;
     bool usedStructuredFormat = false; // Flag for higher confidence when using structured recipe plugins
     
+    // Check for Shopify/Lyres-style embedded HTML in JSON (recipe-info divs in product description)
+    // These sites embed HTML inside JSON strings with unicode escaping (\u003c for <)
+    final bodyHtml = document.outerHtml;
+    final embeddedRecipeMatch = RegExp(
+      r'recipe-info[^>]*>.*?<h4[^>]*>([^<]+)</h4>\s*(?:<ul>.*?</ul>|<p>([^<]+)</p>)',
+      caseSensitive: false,
+      dotAll: true,
+    ).allMatches(bodyHtml);
+    
+    if (embeddedRecipeMatch.isNotEmpty) {
+      for (final match in embeddedRecipeMatch) {
+        final h4Title = match.group(1)?.trim().toLowerCase() ?? '';
+        // For ul-based content, extract from the full match
+        final fullMatch = match.group(0) ?? '';
+        final pContent = match.group(2)?.trim();
+        
+        if (h4Title == 'method' || h4Title == 'directions' || h4Title == 'instructions') {
+          if (pContent != null && pContent.isNotEmpty && rawDirections.isEmpty) {
+            rawDirections.add(_decodeHtml(pContent));
+          }
+        } else if (h4Title == 'glass' || h4Title == 'glassware') {
+          if (pContent != null && pContent.isNotEmpty && glassType == null) {
+            glassType = _decodeHtml(pContent);
+          }
+        } else if (h4Title == 'garnish') {
+          if (pContent != null && pContent.isNotEmpty && garnishItems.isEmpty) {
+            garnishItems = _splitGarnishText(_decodeHtml(pContent));
+          }
+        } else if (h4Title == 'ingredients' && rawIngredientStrings.isEmpty) {
+          // Extract li items from the ul
+          final liMatches = RegExp(r'<li>([^<]+)</li>', caseSensitive: false).allMatches(fullMatch);
+          for (final li in liMatches) {
+            final text = _decodeHtml(li.group(1)?.trim() ?? '');
+            if (text.isNotEmpty) rawIngredientStrings.add(text);
+          }
+        }
+      }
+    }
+    
     // Check for "Cooked" recipe plugin format (WordPress plugin)
     // Uses classes like cooked-ing-amount, cooked-ing-name, cooked-dir-content
     final cookedIngredients = document.querySelectorAll('.cooked-single-ingredient.cooked-ingredient');
@@ -3915,7 +3978,8 @@ class UrlRecipeImporter {
           if (contentAttr != null && contentAttr.isNotEmpty) {
             gotFromMetaContent = true;
             // Content might be comma-separated list of ingredients
-            if (contentAttr.contains(',')) {
+            // But don't split on commas inside parentheses
+            if (contentAttr.contains(',') && !contentAttr.contains('(')) {
               final parts = contentAttr.split(',');
               for (final part in parts) {
                 final cleaned = _decodeHtml(part.trim());
@@ -4869,13 +4933,24 @@ class UrlRecipeImporter {
     
     // Pattern 2: H3 "Glass:" heading (Diffords style)
     // Also try looking for any element with text starting with "Glass:"
+    // Diffords uses: <h3 class="m-0">Glass:</h3> <p>Serve in a <a>Glass Type</a></p>
     if (result['glass'] == null) {
-      // First try h3 elements
+      // First try h3 elements (including those with class="m-0")
       for (final h3 in document.querySelectorAll('h3')) {
         final h3Text = h3.text?.trim().toLowerCase() ?? '';
         if (h3Text == 'glass:' || h3Text == 'glass' || h3Text.startsWith('glass:')) {
           final nextElem = h3.nextElementSibling;
           if (nextElem != null) {
+            // First try to get glass from link inside the paragraph
+            final glassLink = nextElem.querySelector('a');
+            if (glassLink != null) {
+              final linkText = _decodeHtml(glassLink.text?.trim() ?? '');
+              if (linkText.isNotEmpty) {
+                result['glass'] = linkText;
+                break;
+              }
+            }
+            // Fallback to paragraph text
             var glassText = _decodeHtml(nextElem.text?.trim() ?? '');
             // Handle "Serve in a [Glass Type]" pattern
             final serveInMatch = RegExp(r'Serve\s+in\s+(?:an?\s+)?(.+)', caseSensitive: false).firstMatch(glassText);
@@ -4892,14 +4967,25 @@ class UrlRecipeImporter {
     }
     
     // Pattern 2b: Diffords uses class="legacy-longform-heading" for "Glass:" label
+    // Note: There may be multiple elements with this class (Glass:, Garnish:, etc.)
     if (result['glass'] == null) {
-      final glassHeading = document.querySelector('.legacy-longform-heading');
-      if (glassHeading != null) {
+      final glassHeadings = document.querySelectorAll('.legacy-longform-heading');
+      for (final glassHeading in glassHeadings) {
         final headingText = glassHeading.text?.trim().toLowerCase() ?? '';
         if (headingText == 'glass:') {
           // Check if there's a sibling paragraph or the parent has more content
           final parent = glassHeading.parent;
           if (parent != null) {
+            // First try to get glass from link inside the parent
+            final glassLink = parent.querySelector('a');
+            if (glassLink != null) {
+              final linkText = _decodeHtml(glassLink.text?.trim() ?? '');
+              if (linkText.isNotEmpty) {
+                result['glass'] = linkText;
+                break;
+              }
+            }
+            // Fallback to parent text
             var parentText = _decodeHtml(parent.text?.trim() ?? '');
             // Remove "Glass:" prefix
             parentText = parentText.replaceFirst(RegExp(r'^Glass:\s*', caseSensitive: false), '').trim();
@@ -4910,6 +4996,7 @@ class UrlRecipeImporter {
             }
             if (parentText.isNotEmpty) {
               result['glass'] = parentText;
+              break;
             }
           }
         }
@@ -5015,6 +5102,29 @@ class UrlRecipeImporter {
         }
         if (ingredients.isNotEmpty) {
           result['ingredients'] = ingredients;
+        }
+      }
+    }
+    
+    // Pattern 7: Lyres.com style - recipe-info divs with h4 titles
+    // <div class="recipe-info"><h4 class="title">Glass</h4><p>Old Fashioned</p></div>
+    if (result['glass'] == null || (result['garnish'] as List).isEmpty) {
+      final recipeInfoDivs = document.querySelectorAll('.recipe-info, div.recipe-info');
+      for (final div in recipeInfoDivs) {
+        final h4 = div.querySelector('h4, .title');
+        if (h4 != null) {
+          final titleText = h4.text?.trim().toLowerCase() ?? '';
+          final p = div.querySelector('p');
+          if (p != null) {
+            final content = _decodeHtml(p.text?.trim() ?? '');
+            if (content.isNotEmpty) {
+              if (titleText == 'glass' && result['glass'] == null) {
+                result['glass'] = content;
+              } else if (titleText == 'garnish' && (result['garnish'] as List).isEmpty) {
+                result['garnish'] = _splitGarnishText(content);
+              }
+            }
+          }
         }
       }
     }
@@ -5890,7 +6000,16 @@ class UrlRecipeImporter {
       if (content != null && content.isNotEmpty) return content;
     }
     
-    // 5. Try common recipe image class selectors
+    // 5. Try preloaded image link (used by some sites like Seedlip)
+    final preloadImage = document.querySelector('link[rel="preload"][as="image"]');
+    if (preloadImage != null) {
+      final href = preloadImage.attributes['href'];
+      if (href != null && href.isNotEmpty && !href.contains('icon') && !href.contains('logo')) {
+        return href;
+      }
+    }
+    
+    // 6. Try common recipe image class selectors
     final commonSelectors = [
       '.recipe-image img',
       '.recipe-photo img',
