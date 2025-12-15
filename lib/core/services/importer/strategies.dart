@@ -3,7 +3,7 @@ import 'package:html/dom.dart';
 import 'package:http/http.dart' as http;
 import '../../models/recipe_import_result.dart';
 import '../../../features/recipes/models/recipe.dart';
-import 'parser_strategy.dart';
+import 'recipe_parser_strategy.dart';
 import 'ingredient_parser.dart';
 
 // --- YouTube Strategy ---
