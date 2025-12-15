@@ -3545,6 +3545,83 @@ class UrlRecipeImporter {
       remaining = digit + remaining.substring(wordNumberMatch.end);
     }
     
+    // Handle King Arthur Baking complex format:
+    // "2 cups plus 2 tablespoons (255g) King Arthur Unbleached Cake Flour or King Arthur Gluten-Free Flour*"
+    // Pattern: amount unit "plus" amount unit (weight) Name or Alternative
+    final kingArthurMatch = RegExp(
+      r'^([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s+plus\s+([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s*(?:\((\d+g?)\))?\s*(.+)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (kingArthurMatch != null) {
+      final primaryAmt = kingArthurMatch.group(1)?.trim() ?? '';
+      final primaryUnit = _normalizeUnit(kingArthurMatch.group(2)?.trim() ?? '');
+      final secondaryAmt = kingArthurMatch.group(3)?.trim() ?? '';
+      final secondaryUnit = _normalizeUnit(kingArthurMatch.group(4)?.trim() ?? '');
+      final weight = kingArthurMatch.group(5)?.trim();
+      var nameAndAlt = kingArthurMatch.group(6)?.trim() ?? '';
+      
+      // Remove trailing asterisk/footnote markers
+      nameAndAlt = nameAndAlt.replaceAll(RegExp(r'\*+$'), '').trim();
+      
+      // Check for "or" alternatives
+      String name;
+      String? alternative;
+      final orMatch = RegExp(r'^(.+?)\s+or\s+(.+)$', caseSensitive: false).firstMatch(nameAndAlt);
+      if (orMatch != null) {
+        name = orMatch.group(1)?.trim() ?? nameAndAlt;
+        alternative = orMatch.group(2)?.trim();
+      } else {
+        name = nameAndAlt;
+      }
+      
+      // Build preparation string with additional info
+      final prepParts = <String>[];
+      prepParts.add('plus $secondaryAmt $secondaryUnit');
+      if (weight != null && weight.isNotEmpty) {
+        // Ensure weight has 'g' suffix
+        final weightStr = weight.endsWith('g') ? weight : '${weight}g';
+        prepParts.add(weightStr);
+      }
+      if (alternative != null) {
+        prepParts.add('alt: $alternative');
+      }
+      
+      return Ingredient.create(
+        name: name,
+        amount: '$primaryAmt $primaryUnit',
+        preparation: prepParts.join(', '),
+      );
+    }
+    
+    // Handle simpler "X plus Y" format without the complex alternative
+    // e.g., "3/4 cup plus 2 tablespoons (173g) granulated sugar"
+    final simplePlusMatch = RegExp(
+      r'^([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s+plus\s+([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s*(?:\((\d+g?)\))?\s+(.+)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (simplePlusMatch != null) {
+      final primaryAmt = simplePlusMatch.group(1)?.trim() ?? '';
+      final primaryUnit = _normalizeUnit(simplePlusMatch.group(2)?.trim() ?? '');
+      final secondaryAmt = simplePlusMatch.group(3)?.trim() ?? '';
+      final secondaryUnit = _normalizeUnit(simplePlusMatch.group(4)?.trim() ?? '');
+      final weight = simplePlusMatch.group(5)?.trim();
+      final name = simplePlusMatch.group(6)?.trim() ?? '';
+      
+      // Build preparation string
+      final prepParts = <String>[];
+      prepParts.add('plus $secondaryAmt $secondaryUnit');
+      if (weight != null && weight.isNotEmpty) {
+        final weightStr = weight.endsWith('g') ? weight : '${weight}g';
+        prepParts.add(weightStr);
+      }
+      
+      return Ingredient.create(
+        name: name.replaceAll(RegExp(r'\*+$'), '').trim(),
+        amount: '$primaryAmt $primaryUnit',
+        preparation: prepParts.join(', '),
+      );
+    }
+    
     // Check for optional markers anywhere and extract to notes
     final optionalPatterns = [
       RegExp(r'\(\s*optional\s*\)', caseSensitive: false),
@@ -3764,6 +3841,52 @@ class UrlRecipeImporter {
       isOptional: isOptional,
       section: inlineSection,
     );
+  }
+
+  /// Normalize unit names to standard abbreviations
+  /// e.g., "tablespoons" -> "Tbsp", "cups" -> "C", "teaspoons" -> "tsp"
+  String _normalizeUnit(String unit) {
+    final lower = unit.toLowerCase().replaceAll('.', '');
+    switch (lower) {
+      case 'cup':
+      case 'cups':
+        return 'C';
+      case 'tablespoon':
+      case 'tablespoons':
+      case 'tbsp':
+        return 'Tbsp';
+      case 'teaspoon':
+      case 'teaspoons':
+      case 'tsp':
+        return 'tsp';
+      case 'ounce':
+      case 'ounces':
+      case 'oz':
+        return 'oz';
+      case 'pound':
+      case 'pounds':
+      case 'lb':
+      case 'lbs':
+        return 'lb';
+      case 'gram':
+      case 'grams':
+      case 'g':
+        return 'g';
+      case 'kilogram':
+      case 'kilograms':
+      case 'kg':
+        return 'kg';
+      case 'milliliter':
+      case 'milliliters':
+      case 'ml':
+        return 'ml';
+      case 'liter':
+      case 'liters':
+      case 'l':
+        return 'L';
+      default:
+        return unit;
+    }
   }
 
   /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½)
@@ -6414,6 +6537,34 @@ class UrlRecipeImporter {
   /// but JSON-LD only has a flat ingredient list
   List<String> _extractIngredientsWithSections(dynamic document) {
     final ingredients = <String>[];
+    
+    // Try King Arthur Baking format: div.ingredient-section with p for section name and ul.list--bullets
+    final kingArthurSections = document.querySelectorAll('.ingredient-section');
+    if (kingArthurSections.isNotEmpty) {
+      for (final section in kingArthurSections) {
+        // Get section name from the first <p> child (not inside ul)
+        final sectionNameElem = section.querySelector(':scope > p');
+        if (sectionNameElem != null) {
+          var sectionText = _decodeHtml((sectionNameElem.text ?? '').trim());
+          // Remove trailing colon if present
+          sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
+          if (sectionText.isNotEmpty) {
+            ingredients.add('[$sectionText]');
+          }
+        }
+        
+        // Get ingredients from ul li
+        final items = section.querySelectorAll('ul li');
+        for (final item in items) {
+          final text = _decodeHtml((item.text ?? '').trim());
+          if (text.isNotEmpty) {
+            ingredients.add(text);
+          }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
+    }
     
     // Try Tasty.co format: div.ingredients__section with p.ingredient-section-name and li.ingredient
     final tastySections = document.querySelectorAll('.ingredients__section');
