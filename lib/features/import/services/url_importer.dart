@@ -2272,6 +2272,9 @@ class UrlRecipeImporter {
   String _decodeHtml(String text) {
     var result = text;
     
+    // Strip HTML tags first (e.g., <span style="...">text</span> -> text)
+    result = result.replaceAll(RegExp(r'<[^>]+>'), '');
+    
     // Decode HTML entities
     _htmlEntities.forEach((entity, char) {
       result = result.replaceAll(entity, char);
@@ -2595,7 +2598,8 @@ class UrlRecipeImporter {
               result.add(_decodeHtml(parts.join(' ').trim()));
             }
           }
-          // Saveur/WordPress ACF format with sections: {title: "Section", items: [...]}
+          // Saveur/WordPress ACF format with sections: {title: "Section", items: [...]} 
+          // Items can contain {ingredient, quantity, measurement} objects
           else if (item.containsKey('items')) {
             final sectionTitle = _parseString(item['title'] ?? item['section_title']) ?? '';
             if (sectionTitle.isNotEmpty) {
@@ -2603,8 +2607,30 @@ class UrlRecipeImporter {
             }
             final items = item['items'] ?? item['section_items'];
             if (items is List) {
-              // Recursively extract ingredients from nested items
-              result.addAll(_extractRawIngredients(items));
+              for (final subItem in items) {
+                if (subItem is Map) {
+                  // Handle {ingredient, quantity, measurement} format within items
+                  if (subItem.containsKey('ingredient')) {
+                    final quantity = _parseString(subItem['quantity']) ?? '';
+                    final measurement = _parseString(subItem['measurement']) ?? '';
+                    final ingredientName = _parseString(subItem['ingredient']) ?? '';
+                    if (ingredientName.isNotEmpty) {
+                      final parts = <String>[];
+                      if (quantity.isNotEmpty) parts.add(quantity);
+                      if (measurement.isNotEmpty) parts.add(measurement);
+                      parts.add(ingredientName);
+                      result.add(_decodeHtml(parts.join(' ').trim()));
+                    }
+                  } else {
+                    // Fallback: try text/name field
+                    final text = _parseString(subItem['text'] ?? subItem['name']) ?? '';
+                    if (text.isNotEmpty) result.add(_decodeHtml(text));
+                  }
+                } else if (subItem is String) {
+                  final decoded = _decodeHtml(subItem.trim());
+                  if (decoded.isNotEmpty) result.add(decoded);
+                }
+              }
             }
           }
           // Standard JSON-LD or generic format with text field
@@ -3919,7 +3945,26 @@ class UrlRecipeImporter {
 
   /// Detect the course, with special handling for drinks/cocktails
   String _guessCourse(Map data, {String? sourceUrl}) {
-    final category = _parseString(data['recipeCategory'])?.toLowerCase();
+    var category = _parseString(data['recipeCategory'])?.toLowerCase();
+    
+    // Also check WordPress/Next.js nested category format: categories.nodes[].name
+    final categoriesData = data['categories'];
+    if (categoriesData is Map && categoriesData['nodes'] is List) {
+      final categoryNames = (categoriesData['nodes'] as List)
+          .whereType<Map>()
+          .map((node) => _parseString(node['name'])?.toLowerCase() ?? '')
+          .where((n) => n.isNotEmpty)
+          .toList();
+      // Check for drink/cocktail category directly in nested categories
+      if (categoryNames.any((c) => c.contains('drink') || c.contains('cocktail') || c.contains('beverage') || c == 'spirits' || c.contains('amaro'))) {
+        return 'Drinks';
+      }
+      // If no standard category, use the nested categories for detection
+      if (category == null || category.isEmpty) {
+        category = categoryNames.join(' ');
+      }
+    }
+    
     final keywords = _parseString(data['keywords'])?.toLowerCase() ?? '';
     final name = _parseString(data['name'])?.toLowerCase() ?? '';
     final description = _parseString(data['description'])?.toLowerCase() ?? '';
@@ -4047,11 +4092,10 @@ class UrlRecipeImporter {
       if (RegExp(r'\b' + indicator + r'\b').hasMatch(allText)) return true;
     }
     
-    // If category specifically mentions spirits, it's likely a drink
-    if (category != null) {
-      for (final spirit in spiritIndicators) {
-        if (category.contains(spirit)) return true;
-      }
+    // Check spirit indicators in name/description (not just category)
+    // These indicate the recipe IS a spirit/liqueur, not just uses one as ingredient
+    for (final spirit in spiritIndicators) {
+      if (name.contains(spirit) || (category != null && category.contains(spirit))) return true;
     }
     
     return false;
