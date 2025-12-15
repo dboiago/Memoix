@@ -528,9 +528,9 @@ class UrlRecipeImporter {
   /// Their JSON-LD has flat recipeIngredient but __NEXT_DATA__ has rich data with groupName sections
   RecipeImportResult? _extractGreatBritishChefsIngredients(String body, RecipeImportResult jsonLdResult) {
     try {
-      // Extract __NEXT_DATA__ JSON
-      final nextDataPattern = RegExp(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', dotAll: true);
-      final match = nextDataPattern.firstMatch(body);
+      // Great British Chefs uses Vite SSR, look for vite-plugin-ssr_pageContext
+      final vitePattern = RegExp(r'<script[^>]*id="vite-plugin-ssr_pageContext"[^>]*>(.*?)</script>', dotAll: true);
+      final match = vitePattern.firstMatch(body);
       if (match == null) return null;
       
       final jsonStr = match.group(1);
@@ -539,19 +539,26 @@ class UrlRecipeImporter {
       final data = jsonDecode(jsonStr);
       if (data is! Map<String, dynamic>) return null;
       
-      // Navigate to the page props where the recipe data lives
-      final pageProps = data['props']?['pageProps'];
+      // Navigate to pageContext.pageProps.config where the recipe data lives
+      final pageContext = data['pageContext'];
+      if (pageContext is! Map<String, dynamic>) return null;
+      
+      final pageProps = pageContext['pageProps'];
       if (pageProps is! Map<String, dynamic>) return null;
+      
+      // GBC nests recipe data inside 'config'
+      final config = pageProps['config'];
+      if (config is! Map<String, dynamic>) return null;
       
       // Extract yieldTextOverride for serves
       String? serves = jsonLdResult.serves;
-      final yieldOverride = pageProps['yieldTextOverride'];
+      final yieldOverride = config['yieldTextOverride'];
       if (yieldOverride is String && yieldOverride.isNotEmpty) {
         serves = yieldOverride;
       }
       
       // Extract ingredients array with groupName
-      final ingredientsData = pageProps['ingredients'];
+      final ingredientsData = config['ingredients'];
       if (ingredientsData is! List || ingredientsData.isEmpty) {
         // If no rich ingredients, just update serves and return
         if (serves != jsonLdResult.serves) {
