@@ -2896,14 +2896,26 @@ class UrlRecipeImporter {
     if (value == null) return 0;
     final str = value.toString().toLowerCase().trim();
     
-    // Parse ISO 8601 duration (e.g., PT30M, PT1H30M)
-    final iso = RegExp(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?');
-    final isoMatch = iso.firstMatch(str);
+    // Parse full ISO 8601 duration format (e.g., P0Y0M0DT0H35M0.000S, PT30M, PT1H30M)
+    final fullIsoRegex = RegExp(
+      r'p(?:(\d+)y)?(?:(\d+)m)?(?:(\d+)d)?(?:t(?:(\d+)h)?(?:(\d+)m)?(?:[\d.]+s)?)?',
+      caseSensitive: false,
+    );
+    final isoMatch = fullIsoRegex.firstMatch(str);
     
     if (isoMatch != null) {
-      final hours = int.tryParse(isoMatch.group(1) ?? '') ?? 0;
-      final minutes = int.tryParse(isoMatch.group(2) ?? '') ?? 0;
-      return hours * 60 + minutes;
+      final years = int.tryParse(isoMatch.group(1) ?? '') ?? 0;
+      final months = int.tryParse(isoMatch.group(2) ?? '') ?? 0;
+      final days = int.tryParse(isoMatch.group(3) ?? '') ?? 0;
+      final hours = int.tryParse(isoMatch.group(4) ?? '') ?? 0;
+      final minutes = int.tryParse(isoMatch.group(5) ?? '') ?? 0;
+      
+      // Convert to total minutes
+      final totalMinutes = (years * 365 * 24 * 60) + (months * 30 * 24 * 60) + 
+                           (days * 24 * 60) + (hours * 60) + minutes;
+      if (totalMinutes > 0) {
+        return totalMinutes;
+      }
     }
 
     // Pure number => treat as minutes
