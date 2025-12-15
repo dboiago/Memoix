@@ -531,17 +531,6 @@ class YouTubeStrategy implements RecipeParserStrategy {
     
     return steps.take(15).toList();
   }
-          if (!steps.contains(step)) {
-            steps.add(step);
-          }
-        }
-      }
-      
-      return steps.take(15).toList(); // Limit to 15 steps
-    } catch (_) {
-      return []; // Captions not available
-    }
-  }
 
   String _cleanYouTubeTitle(String title) {
     var cleaned = title;
