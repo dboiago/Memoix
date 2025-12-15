@@ -594,7 +594,8 @@ class UrlRecipeImporter {
         return null;
       }
       
-      // Build ingredient list with sections
+      // Build ingredients directly with sections
+      final ingredients = <Ingredient>[];
       final rawIngredientStrings = <String>[];
       String? currentSection;
       
@@ -604,8 +605,6 @@ class UrlRecipeImporter {
         // Check for section header change
         final groupName = item['groupName'] as String?;
         if (groupName != null && groupName != currentSection) {
-          // Add section header as a special ingredient line
-          rawIngredientStrings.add('## $groupName');
           currentSection = groupName;
         }
         
@@ -614,32 +613,40 @@ class UrlRecipeImporter {
                               (item['linkTextMetric'] as String?);
         if (ingredientText != null && ingredientText.isNotEmpty) {
           rawIngredientStrings.add(ingredientText);
+          
+          // Parse and add ingredient with section
+          final parsed = _parseIngredientString(ingredientText);
+          if (parsed.name.isNotEmpty) {
+            ingredients.add(Ingredient.create(
+              name: parsed.name,
+              amount: parsed.amount,
+              unit: parsed.unit,
+              preparation: parsed.preparation,
+              alternative: parsed.alternative,
+              isOptional: parsed.isOptional,
+              section: currentSection,
+            ));
+          }
         }
       }
       
-      if (rawIngredientStrings.isEmpty) return null;
-      
-      // Parse ingredients - filter out section headers first
-      final ingredientLines = rawIngredientStrings.where((line) => !line.startsWith('## ')).toList();
-      var ingredients = _parseIngredients(ingredientLines);
-      ingredients = _sortIngredientsByQuantity(ingredients);
+      if (ingredients.isEmpty) return null;
       
       // Build raw ingredients list
       final rawIngredients = rawIngredientStrings.map((raw) {
         final parsed = _parseIngredientString(raw);
         final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-        final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
         return RawIngredientData(
           original: raw,
           amount: parsed.amount,
           unit: parsed.unit,
           preparation: parsed.preparation,
-          name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
+          name: parsed.name.isNotEmpty ? parsed.name : cleanedRaw,
           looksLikeIngredient: parsed.name.isNotEmpty,
-          isSection: parsed.section != null,
-          sectionName: parsed.section,
+          isSection: false,
+          sectionName: null,
         );
-      }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
+      }).where((i) => i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)).toList();
       
       return RecipeImportResult(
         name: jsonLdResult.name,
