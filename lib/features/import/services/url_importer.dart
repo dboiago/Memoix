@@ -2847,8 +2847,29 @@ class UrlRecipeImporter {
           if (decoded.isNotEmpty) result.add(decoded);
         } else if (item is Map) {
           // Handle nested ingredient objects
+          // Great British Chefs format: {groupName: "Section", unstructuredTextMetric: "1.5kg lamb shoulder"}
+          // Check this FIRST because GBC items also have an 'ingredient' key (nested object with metadata)
+          if (item.containsKey('unstructuredTextMetric') || item.containsKey('linkTextMetric')) {
+            final groupName = _parseString(item['groupName']) ?? '';
+            final ingredientText = _parseString(item['unstructuredTextMetric']) ??
+                                   _parseString(item['linkTextMetric']) ?? '';
+            
+            // Add section header if we haven't seen this group yet
+            if (groupName.isNotEmpty && (result.isEmpty || !result.last.contains('[$groupName]'))) {
+              // Check if we already have this section
+              final sectionHeader = '[$groupName]';
+              if (!result.contains(sectionHeader)) {
+                result.add(sectionHeader);
+              }
+            }
+            
+            if (ingredientText.isNotEmpty) {
+              result.add(_decodeHtml(ingredientText.trim()));
+            }
+          }
           // Saveur/WordPress ACF format: {ingredient: "name", quantity: "2", measurement: "cups"}
-          if (item.containsKey('ingredient')) {
+          // Note: 'ingredient' must be a string, not an object (GBC has ingredient as object)
+          else if (item.containsKey('ingredient') && item['ingredient'] is String) {
             final quantity = _parseString(item['quantity']) ?? '';
             final measurement = _parseString(item['measurement']) ?? '';
             final ingredientName = _parseString(item['ingredient']) ?? '';
@@ -2893,25 +2914,6 @@ class UrlRecipeImporter {
                   if (decoded.isNotEmpty) result.add(decoded);
                 }
               }
-            }
-          }
-          // Great British Chefs format: {groupName: "Section", unstructuredTextMetric: "1.5kg lamb shoulder"}
-          else if (item.containsKey('unstructuredTextMetric') || item.containsKey('linkTextMetric')) {
-            final groupName = _parseString(item['groupName']) ?? '';
-            final ingredientText = _parseString(item['unstructuredTextMetric']) ??
-                                   _parseString(item['linkTextMetric']) ?? '';
-            
-            // Add section header if we haven't seen this group yet
-            if (groupName.isNotEmpty && (result.isEmpty || !result.last.contains('[$groupName]'))) {
-              // Check if we already have this section
-              final sectionHeader = '[$groupName]';
-              if (!result.contains(sectionHeader)) {
-                result.add(sectionHeader);
-              }
-            }
-            
-            if (ingredientText.isNotEmpty) {
-              result.add(_decodeHtml(ingredientText.trim()));
             }
           }
           // Standard JSON-LD or generic format with text field
