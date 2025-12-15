@@ -7,15 +7,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/recipe_import_result.dart';
 import '../../recipes/models/recipe.dart';
 import 'importer/ingredient_parser.dart';
-import 'importer/parser_strategy.dart';
+import 'importer/recipe_parser_strategy.dart';
 import 'importer/strategies.dart';
 
 class UrlRecipeImporter {
   static final _uuid = Uuid();
   final IngredientParser _ingredientParser;
   final List<RecipeParserStrategy> _strategies;
+  final http.Client _client;
 
-  UrlRecipeImporter() : _ingredientParser = IngredientParser() {
+  /// Optional client injection for testing
+  UrlRecipeImporter({http.Client? client}) 
+      : _client = client ?? http.Client(), 
+        _ingredientParser = IngredientParser() {
     _strategies = [
       YouTubeStrategy(_ingredientParser),
       StandardWebStrategy(_ingredientParser),
@@ -74,7 +78,7 @@ class UrlRecipeImporter {
 
     for (final headers in headerConfigs) {
       try {
-        final response = await http.get(uri, headers: headers);
+        final response = await _client.get(uri, headers: headers);
         if (response.statusCode == 200) return response;
       } catch (_) { continue; }
     }
