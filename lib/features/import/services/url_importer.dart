@@ -3406,7 +3406,7 @@ class UrlRecipeImporter {
     // Also handles "Cold Sparkling Water: Top" where "Top" means "top up"
     // Also handles unicode fractions like "Fresh lime juice: ½ oz"
     final colonAmountMatch = RegExp(
-      r'^([^:]+):\s*([\d.½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)?|Top(?:\s+up)?|to\s+taste|as\s+needed)\s*(?:/\s*([\d.½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:ml|cl|oz)?))?(.*)$',
+      r'^([^:]+):\s*([\d.½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)\.?|Top(?:\s+up)?|to\s+taste|as\s+needed)\s*(?:/\s*([\d.½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:ml|cl|oz)\.?))?(.*)$',
       caseSensitive: false,
     ).firstMatch(remaining);
     if (colonAmountMatch != null) {
@@ -3529,6 +3529,22 @@ class UrlRecipeImporter {
     // Remove footnote markers like [1], *, †, etc. from both start and end
     remaining = remaining.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
     
+    // Convert word numbers to digits at the start of ingredient
+    // e.g., "One 6-in. sage sprig" -> "1 6-in. sage sprig"
+    // e.g., "Two large eggs" -> "2 large eggs"
+    const wordNumbers = {
+      'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5',
+      'six': '6', 'seven': '7', 'eight': '8', 'nine': '9', 'ten': '10',
+      'eleven': '11', 'twelve': '12', 'a': '1', 'an': '1',
+      'half': '½', 'quarter': '¼',
+    };
+    final wordNumberMatch = RegExp(r'^(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|a|an|half|quarter)\b\s*', caseSensitive: false).firstMatch(remaining);
+    if (wordNumberMatch != null) {
+      final word = wordNumberMatch.group(1)!.toLowerCase();
+      final digit = wordNumbers[word] ?? word;
+      remaining = digit + remaining.substring(wordNumberMatch.end);
+    }
+    
     // Check for optional markers anywhere and extract to notes
     final optionalPatterns = [
       RegExp(r'\(\s*optional\s*\)', caseSensitive: false),
@@ -3594,7 +3610,7 @@ class UrlRecipeImporter {
     // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
     final compoundFractionMatch = RegExp(
       r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
-      r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
+      r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
@@ -3616,7 +3632,7 @@ class UrlRecipeImporter {
     if (amount == null) {
       final textFractionMatch = RegExp(
         r'^(\d+/\d+)'
-        r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
+        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -3637,7 +3653,7 @@ class UrlRecipeImporter {
       // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
       final toRangeMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
+        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -3657,7 +3673,7 @@ class UrlRecipeImporter {
       // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons|teaspoon|tablespoons|tablespoon|cups|cup|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds|pound|ounces|ounce|inches|inch|in|cm))?\s+',
+        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
