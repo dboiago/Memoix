@@ -44,21 +44,42 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
     // Extract subtitle (often contains dish description)
     final subtitle = document.querySelector('h3')?.text.trim();
     
-    // Find all sqs-html-content blocks
-    final contentBlocks = document.querySelectorAll('.sqs-html-content');
+    // Find INGREDIENTS and METHOD blocks by looking for h4 headers
+    // StarChefs uses <h4><strong>INGREDIENTS:</strong></h4> and <h4><strong>METHOD:</strong></h4>
+    Element? ingredientsBlock;
+    Element? methodBlock;
+    
+    final h4Elements = document.querySelectorAll('h4');
+    for (final h4 in h4Elements) {
+      final h4Text = h4.text.toUpperCase().trim();
+      if (h4Text.contains('INGREDIENTS')) {
+        // Get the parent sqs-html-content block
+        ingredientsBlock = h4.parent;
+        while (ingredientsBlock != null && 
+               !ingredientsBlock.classes.contains('sqs-html-content')) {
+          ingredientsBlock = ingredientsBlock.parent;
+        }
+      } else if (h4Text.contains('METHOD') || 
+                 h4Text.contains('DIRECTIONS') || 
+                 h4Text.contains('INSTRUCTIONS')) {
+        methodBlock = h4.parent;
+        while (methodBlock != null && 
+               !methodBlock.classes.contains('sqs-html-content')) {
+          methodBlock = methodBlock.parent;
+        }
+      }
+    }
     
     List<String> rawIngredients = [];
     List<String> directions = [];
     String? servings;
     
-    for (final block in contentBlocks) {
-      final blockText = block.text.toUpperCase();
-      
-      if (blockText.contains('INGREDIENTS')) {
-        rawIngredients = _parseSquarespaceBlock(block, isIngredients: true);
-      } else if (blockText.contains('METHOD') || blockText.contains('DIRECTIONS') || blockText.contains('INSTRUCTIONS')) {
-        directions = _parseSquarespaceBlock(block, isIngredients: false);
-      }
+    if (ingredientsBlock != null) {
+      rawIngredients = _parseSquarespaceBlock(ingredientsBlock, isIngredients: true);
+    }
+    
+    if (methodBlock != null) {
+      directions = _parseSquarespaceBlock(methodBlock, isIngredients: false);
     }
     
     // Try to extract yield/servings from page
