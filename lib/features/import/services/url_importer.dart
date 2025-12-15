@@ -343,12 +343,10 @@ class UrlRecipeImporter {
           }
         }
         
-        // Handle Great British Chefs - extract ingredient sections from __NEXT_DATA__
-        // The JSON-LD has flat recipeIngredient but __NEXT_DATA__ has rich ingredients with groupName
-        if (url.contains('greatbritishchefs.com')) {
-          final gbcResult = _extractGreatBritishChefsIngredients(body, jsonLdResult);
-          if (gbcResult != null) return gbcResult;
-        }
+        // Try to enhance JSON-LD with richer ingredient data from embedded JavaScript
+        // (Vite SSR, Next.js, Nuxt, etc.) - these often have section groupings and better serves data
+        final enhancedResult = _tryEnhanceWithEmbeddedData(body, jsonLdResult);
+        if (enhancedResult != null) return enhancedResult;
         
         // Always try to supplement JSON-LD with glass/garnish from HTML (for drink recipes)
         // and equipment/directions if missing. These aren't standard Schema.org Recipe properties.
@@ -524,129 +522,113 @@ class UrlRecipeImporter {
     }
   }
   
-  /// Extract ingredient sections from Great British Chefs __NEXT_DATA__
-  /// Their JSON-LD has flat recipeIngredient but __NEXT_DATA__ has rich data with groupName sections
-  RecipeImportResult? _extractGreatBritishChefsIngredients(String body, RecipeImportResult jsonLdResult) {
+  /// Try to enhance JSON-LD result with richer data from embedded JavaScript
+  /// Many modern sites (Vite SSR, Next.js, Nuxt) have embedded JSON with section groupings,
+  /// better serves data, and other details not in their JSON-LD
+  RecipeImportResult? _tryEnhanceWithEmbeddedData(String body, RecipeImportResult jsonLdResult) {
     try {
-      // Great British Chefs uses Vite SSR, look for vite-plugin-ssr_pageContext
-      final vitePattern = RegExp(r'<script[^>]*id="vite-plugin-ssr_pageContext"[^>]*>(.*?)</script>', dotAll: true);
-      final match = vitePattern.firstMatch(body);
-      if (match == null) return null;
+      // Patterns for embedded JSON data in various frameworks
+      final patterns = <String, RegExp>{
+        'vite': RegExp(r'<script[^>]*id="vite-plugin-ssr_pageContext"[^>]*>(.*?)</script>', dotAll: true),
+        'next': RegExp(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', dotAll: true),
+        'nuxt': RegExp(r'window\.__NUXT__\s*=\s*(\{.*?\});?\s*</script>', dotAll: true),
+      };
       
-      final jsonStr = match.group(1);
-      if (jsonStr == null || jsonStr.isEmpty) return null;
+      Map<String, dynamic>? recipeData;
       
-      final data = jsonDecode(jsonStr);
-      if (data is! Map<String, dynamic>) return null;
-      
-      // Navigate to pageContext.pageProps.config where the recipe data lives
-      final pageContext = data['pageContext'];
-      if (pageContext is! Map<String, dynamic>) return null;
-      
-      final pageProps = pageContext['pageProps'];
-      if (pageProps is! Map<String, dynamic>) return null;
-      
-      // GBC nests recipe data inside 'config'
-      final config = pageProps['config'];
-      if (config is! Map<String, dynamic>) return null;
-      
-      // Extract yieldTextOverride for serves
-      String? serves = jsonLdResult.serves;
-      final yieldOverride = config['yieldTextOverride'];
-      if (yieldOverride is String && yieldOverride.isNotEmpty) {
-        serves = yieldOverride;
+      for (final entry in patterns.entries) {
+        final match = entry.value.firstMatch(body);
+        if (match == null) continue;
+        
+        final jsonStr = match.group(1);
+        if (jsonStr == null || jsonStr.isEmpty) continue;
+        
+        try {
+          final data = jsonDecode(jsonStr);
+          if (data is! Map<String, dynamic>) continue;
+          
+          // Find recipe data within the embedded JSON (different paths for different frameworks)
+          recipeData = _findRecipeDataInEmbedded(data);
+          if (recipeData != null) break;
+        } catch (_) {
+          continue;
+        }
       }
       
-      // Extract ingredients array with groupName
-      final ingredientsData = config['ingredients'];
-      if (ingredientsData is! List || ingredientsData.isEmpty) {
-        // If no rich ingredients, just update serves and return
+      if (recipeData == null) return null;
+      
+      // Extract enhanced serves (yieldTextOverride is common in Vite/Next sites)
+      String? serves = jsonLdResult.serves;
+      final yieldOverride = recipeData['yieldTextOverride'] ?? recipeData['servings'] ?? recipeData['yield'];
+      if (yieldOverride is String && yieldOverride.isNotEmpty) {
+        serves = yieldOverride;
+      } else if (yieldOverride is int) {
+        serves = yieldOverride.toString();
+      }
+      
+      // Extract ingredients using existing function (handles all formats including groupName sections)
+      final ingredientsData = recipeData['ingredients'] ?? recipeData['recipeIngredient'];
+      if (ingredientsData == null) {
+        // No ingredients in embedded data - just return with updated serves if changed
         if (serves != jsonLdResult.serves) {
-          return RecipeImportResult(
-            name: jsonLdResult.name,
-            course: jsonLdResult.course,
-            cuisine: jsonLdResult.cuisine,
-            subcategory: jsonLdResult.subcategory,
-            serves: serves,
-            time: jsonLdResult.time,
-            ingredients: jsonLdResult.ingredients,
-            directions: jsonLdResult.directions,
-            notes: jsonLdResult.notes,
-            imageUrl: jsonLdResult.imageUrl,
-            nutrition: jsonLdResult.nutrition,
-            equipment: jsonLdResult.equipment,
-            rawIngredients: jsonLdResult.rawIngredients,
-            rawDirections: jsonLdResult.rawDirections,
-            detectedCourses: jsonLdResult.detectedCourses,
-            detectedCuisines: jsonLdResult.detectedCuisines,
-            nameConfidence: jsonLdResult.nameConfidence,
-            courseConfidence: jsonLdResult.courseConfidence,
-            cuisineConfidence: jsonLdResult.cuisineConfidence,
-            ingredientsConfidence: jsonLdResult.ingredientsConfidence,
-            directionsConfidence: jsonLdResult.directionsConfidence,
-            servesConfidence: 0.9,
-            timeConfidence: jsonLdResult.timeConfidence,
-            sourceUrl: jsonLdResult.sourceUrl,
-            source: jsonLdResult.source,
-            imagePaths: jsonLdResult.imagePaths,
-          );
+          return _copyResultWithUpdates(jsonLdResult, serves: serves, servesConfidence: 0.9);
         }
         return null;
       }
       
-      // Build ingredients directly with sections
-      final ingredients = <Ingredient>[];
-      final rawIngredientStrings = <String>[];
-      String? currentSection;
-      
-      for (final item in ingredientsData) {
-        if (item is! Map<String, dynamic>) continue;
-        
-        // Check for section header change
-        final groupName = item['groupName'] as String?;
-        if (groupName != null && groupName != currentSection) {
-          currentSection = groupName;
+      // Use existing _extractRawIngredients which handles all formats including:
+      // - GBC format: {groupName, unstructuredTextMetric}
+      // - WordPress ACF: {ingredient, quantity, measurement}
+      // - Sections: {title, items}
+      // - Standard: strings or {text/name}
+      final rawIngredientStrings = _extractRawIngredients(ingredientsData);
+      if (rawIngredientStrings.isEmpty) {
+        if (serves != jsonLdResult.serves) {
+          return _copyResultWithUpdates(jsonLdResult, serves: serves, servesConfidence: 0.9);
         }
-        
-        // Get the ingredient text - prefer unstructuredTextMetric, fallback to linkTextMetric
-        final ingredientText = (item['unstructuredTextMetric'] as String?) ?? 
-                              (item['linkTextMetric'] as String?);
-        if (ingredientText != null && ingredientText.isNotEmpty) {
-          rawIngredientStrings.add(ingredientText);
-          
-          // Parse and add ingredient with section
-          final parsed = _parseIngredientString(ingredientText);
-          if (parsed.name.isNotEmpty) {
-            ingredients.add(Ingredient.create(
-              name: parsed.name,
-              amount: parsed.amount,
-              unit: parsed.unit,
-              preparation: parsed.preparation,
-              alternative: parsed.alternative,
-              isOptional: parsed.isOptional,
-              section: currentSection,
-            ));
-          }
-        }
+        return null;
       }
       
-      if (ingredients.isEmpty) return null;
+      // Check if embedded data has sections that JSON-LD is missing
+      final hasSections = rawIngredientStrings.any((s) => s.startsWith('[') && s.endsWith(']'));
+      final jsonLdHasSections = jsonLdResult.rawIngredients.any((r) => r.sectionName != null);
+      
+      // Only use embedded ingredients if they have sections that JSON-LD is missing
+      // This avoids replacing good JSON-LD data with potentially worse embedded data
+      if (!hasSections && jsonLdResult.ingredients.isNotEmpty) {
+        if (serves != jsonLdResult.serves) {
+          return _copyResultWithUpdates(jsonLdResult, serves: serves, servesConfidence: 0.9);
+        }
+        return null;
+      }
+      
+      // Parse ingredients using existing function (handles [Section] headers)
+      var ingredients = _parseIngredients(rawIngredientStrings);
+      ingredients = _sortIngredientsByQuantity(ingredients);
+      
+      if (ingredients.isEmpty) {
+        if (serves != jsonLdResult.serves) {
+          return _copyResultWithUpdates(jsonLdResult, serves: serves, servesConfidence: 0.9);
+        }
+        return null;
+      }
       
       // Build raw ingredients list
       final rawIngredients = rawIngredientStrings.map((raw) {
         final parsed = _parseIngredientString(raw);
         final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+        final isSectionOnly = raw.startsWith('[') && raw.endsWith(']');
         return RawIngredientData(
           original: raw,
           amount: parsed.amount,
           unit: parsed.unit,
           preparation: parsed.preparation,
-          name: parsed.name.isNotEmpty ? parsed.name : cleanedRaw,
-          looksLikeIngredient: parsed.name.isNotEmpty,
-          isSection: false,
-          sectionName: null,
+          name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
+          looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+          isSection: isSectionOnly,
+          sectionName: isSectionOnly ? raw.substring(1, raw.length - 1) : parsed.section,
         );
-      }).where((i) => i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)).toList();
+      }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
       
       return RecipeImportResult(
         name: jsonLdResult.name,
@@ -668,7 +650,7 @@ class UrlRecipeImporter {
         nameConfidence: jsonLdResult.nameConfidence,
         courseConfidence: jsonLdResult.courseConfidence,
         cuisineConfidence: jsonLdResult.cuisineConfidence,
-        ingredientsConfidence: 0.9, // Higher confidence with section info
+        ingredientsConfidence: hasSections ? 0.95 : 0.85, // Higher confidence with sections
         directionsConfidence: jsonLdResult.directionsConfidence,
         servesConfidence: serves != null ? 0.9 : 0.0,
         timeConfidence: jsonLdResult.timeConfidence,
@@ -679,6 +661,120 @@ class UrlRecipeImporter {
     } catch (_) {
       return null;
     }
+  }
+  
+  /// Find recipe data within embedded JSON structures (Vite, Next.js, Nuxt)
+  /// Returns the innermost object that looks like recipe data
+  Map<String, dynamic>? _findRecipeDataInEmbedded(Map<String, dynamic> data, [int depth = 0]) {
+    if (depth > 10) return null;
+    
+    // Common paths for recipe data in different frameworks
+    final commonPaths = [
+      ['pageContext', 'pageProps', 'config'],  // Vite SSR (Great British Chefs)
+      ['pageContext', 'pageProps'],             // Vite SSR alternate
+      ['props', 'pageProps'],                   // Next.js
+      ['props', 'pageProps', 'recipe'],         // Next.js with recipe key
+      ['data'],                                 // Nuxt
+      ['state', 'recipe'],                      // Generic state
+    ];
+    
+    // Try common paths first
+    for (final path in commonPaths) {
+      dynamic current = data;
+      for (final key in path) {
+        if (current is Map<String, dynamic> && current.containsKey(key)) {
+          current = current[key];
+        } else {
+          current = null;
+          break;
+        }
+      }
+      if (current is Map<String, dynamic> && _hasRecipeIngredients(current)) {
+        return current;
+      }
+    }
+    
+    // Fallback: recursively search for recipe-like data
+    for (final value in data.values) {
+      if (value is Map<String, dynamic>) {
+        if (_hasRecipeIngredients(value)) {
+          return value;
+        }
+        final nested = _findRecipeDataInEmbedded(value, depth + 1);
+        if (nested != null) return nested;
+      } else if (value is List) {
+        for (final item in value) {
+          if (item is Map<String, dynamic>) {
+            if (_hasRecipeIngredients(item)) {
+              return item;
+            }
+            final nested = _findRecipeDataInEmbedded(item, depth + 1);
+            if (nested != null) return nested;
+          }
+        }
+      }
+    }
+    
+    return null;
+  }
+  
+  /// Check if a map has recipe ingredients (with potential section data)
+  bool _hasRecipeIngredients(Map<String, dynamic> data) {
+    final ingredients = data['ingredients'] ?? data['recipeIngredient'];
+    if (ingredients is! List || ingredients.isEmpty) return false;
+    
+    // Check if ingredients have section/group data (which makes this worth extracting)
+    for (final item in ingredients) {
+      if (item is Map) {
+        // Look for section indicators
+        if (item.containsKey('groupName') ||
+            item.containsKey('section') ||
+            item.containsKey('unstructuredTextMetric')) {
+          return true;
+        }
+      }
+    }
+    
+    // Also check for yieldTextOverride (indicates rich data)
+    if (data.containsKey('yieldTextOverride')) return true;
+    
+    return false;
+  }
+  
+  /// Create a copy of RecipeImportResult with specific updates
+  RecipeImportResult _copyResultWithUpdates(
+    RecipeImportResult original, {
+    String? serves,
+    double? servesConfidence,
+  }) {
+    return RecipeImportResult(
+      name: original.name,
+      course: original.course,
+      cuisine: original.cuisine,
+      subcategory: original.subcategory,
+      serves: serves ?? original.serves,
+      time: original.time,
+      ingredients: original.ingredients,
+      directions: original.directions,
+      notes: original.notes,
+      imageUrl: original.imageUrl,
+      nutrition: original.nutrition,
+      equipment: original.equipment,
+      rawIngredients: original.rawIngredients,
+      rawDirections: original.rawDirections,
+      detectedCourses: original.detectedCourses,
+      detectedCuisines: original.detectedCuisines,
+      nameConfidence: original.nameConfidence,
+      courseConfidence: original.courseConfidence,
+      cuisineConfidence: original.cuisineConfidence,
+      ingredientsConfidence: original.ingredientsConfidence,
+      directionsConfidence: original.directionsConfidence,
+      servesConfidence: servesConfidence ?? original.servesConfidence,
+      timeConfidence: original.timeConfidence,
+      sourceUrl: original.sourceUrl,
+      source: original.source,
+      imagePaths: original.imagePaths,
+    );
   }
   
   /// Try to extract recipe data from embedded JavaScript (React/Next.js/Vue hydration state)
