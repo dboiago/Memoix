@@ -281,6 +281,10 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
   /// The <br> is INSIDE the strong tag, so after split we get:
   /// - `<strong>Section:` (section header, partial)
   /// - `</strong>content` (closing tag + first content item)
+  /// 
+  /// ALSO handles StarChefs concatenated format where ingredients run together:
+  /// `Short Ribs:¾ cup soy sauce1 teaspoon granulated onion` 
+  /// We split on measurement patterns like "¾ cup" or "1 teaspoon"
   List<String> _parseSquarespaceBlock(Element block, {required bool isIngredients}) {
     final results = <String>[];
     
@@ -330,7 +334,12 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
           if (content.isNotEmpty) {
             final cleanContent = _stripHtmlTags(content);
             if (cleanContent.isNotEmpty) {
-              results.add(cleanContent);
+              // Check if content is concatenated (multiple ingredients on one line)
+              if (isIngredients) {
+                results.addAll(_splitConcatenatedIngredients(cleanContent));
+              } else {
+                results.add(cleanContent);
+              }
             }
           }
           continue;
@@ -371,7 +380,11 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
           if (content.isNotEmpty) {
             final cleanContent = _stripHtmlTags(content);
             if (cleanContent.isNotEmpty) {
-              results.add(cleanContent);
+              if (isIngredients) {
+                results.addAll(_splitConcatenatedIngredients(cleanContent));
+              } else {
+                results.add(cleanContent);
+              }
             }
           }
           continue;
@@ -382,12 +395,55 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
         if (cleanLine.isNotEmpty && 
             cleanLine.toUpperCase() != 'INGREDIENTS:' && 
             cleanLine.toUpperCase() != 'METHOD:') {
-          results.add(cleanLine);
+          if (isIngredients) {
+            results.addAll(_splitConcatenatedIngredients(cleanLine));
+          } else {
+            results.add(cleanLine);
+          }
         }
       }
     }
     
     return results;
+  }
+  
+  /// Split concatenated ingredients that run together without separators.
+  /// E.g., "¾ cup soy sauce1 teaspoon granulated onion" -> ["¾ cup soy sauce", "1 teaspoon granulated onion"]
+  List<String> _splitConcatenatedIngredients(String text) {
+    // Pattern to match start of a new ingredient (measurement at start)
+    // This captures: ¾, ½, 1/2, 1, 2½, etc. followed by unit
+    final measurementPattern = RegExp(
+      r'(?<=[a-zA-Z\s])([½¼¾⅓⅔⅛⅜⅝⅞]|\d+[½¼¾⅓⅔⅛⅜⅝⅞]?|\d+/\d+)\s*(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|ounce|ounces|oz|pound|pounds|lb|lbs|gram|grams|g|kg|ml|liter|liters|clove|cloves|can|cans|slice|slices|piece|pieces|pinch|dash|sprig|sprigs|bunch|head|stalk|stalks|inch)\b',
+      caseSensitive: false,
+    );
+    
+    // If no pattern matches, return as-is
+    final matches = measurementPattern.allMatches(text).toList();
+    if (matches.isEmpty) return [text];
+    
+    final results = <String>[];
+    int lastEnd = 0;
+    
+    for (final match in matches) {
+      // Add the text before this match (the previous ingredient)
+      if (match.start > lastEnd) {
+        final prevIngredient = text.substring(lastEnd, match.start).trim();
+        if (prevIngredient.isNotEmpty) {
+          results.add(prevIngredient);
+        }
+      }
+      lastEnd = match.start;
+    }
+    
+    // Add the last ingredient
+    if (lastEnd < text.length) {
+      final lastIngredient = text.substring(lastEnd).trim();
+      if (lastIngredient.isNotEmpty) {
+        results.add(lastIngredient);
+      }
+    }
+    
+    return results.isEmpty ? [text] : results;
   }
 
   String _stripHtmlTags(String html) {
@@ -422,7 +478,6 @@ class YouTubeStrategy implements RecipeParserStrategy {
       final title = _cleanYouTubeTitle(video.title);
       final description = video.description;
       final thumbnailUrl = video.thumbnails.highResUrl;
-      final duration = video.duration;
 
       // Parse description for recipe content
       final parsedDesc = _parseYouTubeDescription(description);
@@ -445,16 +500,11 @@ class YouTubeStrategy implements RecipeParserStrategy {
         directions = await _extractFromClosedCaptions(youtube, videoIdStr);
       }
 
-      // Format time from duration
-      String? timeStr;
-      if (duration != null) {
-        final minutes = duration.inMinutes;
-        if (minutes >= 60) {
-          timeStr = '${minutes ~/ 60}h ${minutes % 60}m';
-        } else {
-          timeStr = '${minutes}m';
-        }
-      }
+      // Extract recipe time from description (NOT video duration)
+      // Look for patterns like "Cook time: 30 min", "Total time: 1 hour", etc.
+      String? timeStr = parsedDesc['totalTime'] as String? ?? 
+                        parsedDesc['cookTime'] as String? ??
+                        parsedDesc['prepTime'] as String?;
 
       return RecipeImportResult(
         name: title,
@@ -546,7 +596,14 @@ class YouTubeStrategy implements RecipeParserStrategy {
   }
 
   Map<String, dynamic> _parseYouTubeDescription(String description) {
-    final result = <String, dynamic>{'ingredients': <String>[], 'directions': <String>[], 'notes': null};
+    final result = <String, dynamic>{
+      'ingredients': <String>[], 
+      'directions': <String>[], 
+      'notes': null,
+      'prepTime': null,
+      'cookTime': null,
+      'totalTime': null,
+    };
     if (description.isEmpty) return result;
 
     final lines = description.split('\n');
@@ -560,6 +617,23 @@ class YouTubeStrategy implements RecipeParserStrategy {
       if (line.isEmpty) continue;
       
       final lower = line.toLowerCase();
+      
+      // Extract time patterns like "Prep time: 15 min", "Cook time: 30 minutes", etc.
+      final timePatterns = [
+        RegExp(r'(?:total\s*time|ready\s*in)[:\s]*(\d+\s*(?:hour|hr|h|minute|min|m)(?:s|\s*\d+\s*(?:minute|min|m)s?)?)', caseSensitive: false),
+        RegExp(r'(?:cook\s*time|cooking\s*time|bake\s*time)[:\s]*(\d+\s*(?:hour|hr|h|minute|min|m)(?:s|\s*\d+\s*(?:minute|min|m)s?)?)', caseSensitive: false),
+        RegExp(r'(?:prep\s*time|preparation\s*time)[:\s]*(\d+\s*(?:hour|hr|h|minute|min|m)(?:s|\s*\d+\s*(?:minute|min|m)s?)?)', caseSensitive: false),
+      ];
+      
+      for (var i = 0; i < timePatterns.length; i++) {
+        final match = timePatterns[i].firstMatch(line);
+        if (match != null) {
+          final timeValue = _normalizeTimeString(match.group(1) ?? '');
+          if (i == 0 && result['totalTime'] == null) result['totalTime'] = timeValue;
+          if (i == 1 && result['cookTime'] == null) result['cookTime'] = timeValue;
+          if (i == 2 && result['prepTime'] == null) result['prepTime'] = timeValue;
+        }
+      }
       
       // Section header detection
       if (RegExp(r'^(ingredients?|shopping list)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
@@ -591,6 +665,23 @@ class YouTubeStrategy implements RecipeParserStrategy {
     result['directions'] = directions;
     if (notes.isNotEmpty) result['notes'] = notes.join('\n');
     return result;
+  }
+  
+  /// Normalize time string to consistent format (e.g., "30 min", "1h 30m")
+  String _normalizeTimeString(String time) {
+    final lower = time.toLowerCase().trim();
+    
+    // Parse hours and minutes
+    final hourMatch = RegExp(r'(\d+)\s*(?:hour|hr|h)').firstMatch(lower);
+    final minMatch = RegExp(r'(\d+)\s*(?:minute|min|m)').firstMatch(lower);
+    
+    final hours = hourMatch != null ? int.tryParse(hourMatch.group(1) ?? '0') ?? 0 : 0;
+    final minutes = minMatch != null ? int.tryParse(minMatch.group(1) ?? '0') ?? 0 : 0;
+    
+    if (hours > 0 && minutes > 0) return '${hours}h ${minutes}m';
+    if (hours > 0) return '${hours}h';
+    if (minutes > 0) return '${minutes} min';
+    return time.trim();
   }
 
   List<String> _extractYouTubeChapters(String description) {
@@ -835,7 +926,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
           final sectionItems = item['items'] ?? item['ingredients'] ?? item['unstructuredTextMetric'];
           
           if (sectionName != null && sectionItems != null) {
-            results.add('[$sectionName]');
+            // Clean section header (remove trailing colons)
+            results.add('[${_cleanSectionHeader(sectionName.toString())}]');
             if (sectionItems is List) {
               for (final si in sectionItems) {
                 final text = si is String ? si : (si is Map ? (si['text'] ?? si['name'] ?? si['unstructuredTextMetric']) : si.toString());
@@ -1111,6 +1203,11 @@ class StandardWebStrategy implements RecipeParserStrategy {
     if (rawDirections.isEmpty) {
       rawDirections = _parseDirectionsBySections(document);
     }
+    
+    // Fallback for Modernist Pantry style (h3 with "Create/Make/Prepare" followed by paragraphs)
+    if (rawDirections.isEmpty && rawBody != null) {
+      rawDirections = _extractModernistPantryDirections(document);
+    }
 
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) return null;
 
@@ -1151,7 +1248,10 @@ class StandardWebStrategy implements RecipeParserStrategy {
             } else if (config.headerSelector != null) {
               header = section.querySelector(config.headerSelector!)?.text.trim();
             }
-            if (header != null && header.isNotEmpty) ingredients.add('[$header]');
+            // Clean section header (remove trailing colons)
+            if (header != null && header.isNotEmpty) {
+              ingredients.add('[${_cleanSectionHeader(header)}]');
+            }
             
             final items = section.querySelectorAll(config.ingredientSelector);
             ingredients.addAll(items.map((e) => e.text.trim()).where((s) => s.isNotEmpty));
@@ -1161,7 +1261,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
         final headers = container.querySelectorAll(config.headerSelector!);
         for (final header in headers) {
           final headerText = header.text.trim();
-          if (headerText.isNotEmpty) ingredients.add('[$headerText]');
+          // Clean section header (remove trailing colons)
+          if (headerText.isNotEmpty) ingredients.add('[${_cleanSectionHeader(headerText)}]');
           
           var sibling = header.nextElementSibling;
           while (sibling != null && (sibling.localName == 'ul' || sibling.localName == 'ol')) {
@@ -1181,7 +1282,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   List<String> _parseIngredientsBySections(Document document) {
     final ingredients = <String>[];
-    final headings = document.querySelectorAll('h2, h3, h4');
+    // Include h5 for sites like Punch Drink
+    final headings = document.querySelectorAll('h2, h3, h4, h5');
     
     for (final heading in headings) {
       final text = heading.text.toLowerCase();
@@ -1193,6 +1295,17 @@ class StandardWebStrategy implements RecipeParserStrategy {
             ingredients.addAll(sibling.querySelectorAll('li').map((e) => e.text.trim()).where((s) => s.isNotEmpty));
             break;
           }
+          // Check if the sibling is a div containing ingredients (common on cocktail sites)
+          final divIngredients = sibling.querySelectorAll('p, div');
+          if (divIngredients.isNotEmpty) {
+            for (final el in divIngredients) {
+              final elText = el.text.trim();
+              if (_couldBeIngredientLine(elText) || _looksLikeCocktailIngredient(elText)) {
+                ingredients.add(elText);
+              }
+            }
+            if (ingredients.isNotEmpty) break;
+          }
           sibling = sibling.nextElementSibling;
           attempts++;
         }
@@ -1200,29 +1313,46 @@ class StandardWebStrategy implements RecipeParserStrategy {
     }
     return ingredients;
   }
+  
+  /// Check if text looks like a cocktail ingredient (e.g., "1 ounce gin")
+  bool _looksLikeCocktailIngredient(String text) {
+    if (text.isEmpty || text.length > 100) return false;
+    // Match patterns like "1 ounce gin" or "1½ oz vodka" or "2 dashes bitters"
+    return RegExp(r'^\d+(?:[½¼¾⅓⅔⅛]|\s*[½¼¾⅓⅔⅛])?\s*(?:ounce|oz|dash|barspoon|drop|ml|cl|part|splash)', caseSensitive: false).hasMatch(text);
+  }
 
   List<String> _parseDirectionsBySections(Document document) {
     final directions = <String>[];
-    final headings = document.querySelectorAll('h2, h3, h4');
+    // Include h5 for sites like Punch Drink
+    final headings = document.querySelectorAll('h2, h3, h4, h5');
     
     for (final heading in headings) {
       final text = heading.text.toLowerCase();
       if (text.contains('direction') || text.contains('instruction') || text.contains('method') || text.contains('step')) {
         var sibling = heading.nextElementSibling;
         int attempts = 0;
-        while (sibling != null && attempts < 5) {
+        while (sibling != null && attempts < 10) {
           if (sibling.localName == 'ul' || sibling.localName == 'ol') {
             directions.addAll(sibling.querySelectorAll('li').map((e) => _cleanDirectionStep(e.text.trim())).where((s) => s.isNotEmpty));
             break;
-          } else if (sibling.localName == 'p') {
-            final pText = sibling.text.trim();
-            if (pText.isNotEmpty && pText.length > 20) {
-              directions.add(_cleanDirectionStep(pText));
+          } else if (sibling.localName == 'p' || sibling.localName == 'div') {
+            final elText = sibling.text.trim();
+            // Check if this is a numbered step (e.g., "1Add all ingredients...")
+            final numberedMatch = RegExp(r'^(\d+)([A-Z])').firstMatch(elText);
+            if (numberedMatch != null) {
+              // Split apart the number and text
+              final stepText = elText.substring(1).trim();
+              if (stepText.isNotEmpty) {
+                directions.add(_cleanDirectionStep(stepText));
+              }
+            } else if (elText.isNotEmpty && elText.length > 10) {
+              directions.add(_cleanDirectionStep(elText));
             }
           }
           sibling = sibling.nextElementSibling;
           attempts++;
         }
+        if (directions.isNotEmpty) break; // Found directions, stop looking
       }
     }
     return directions;
@@ -1231,6 +1361,45 @@ class StandardWebStrategy implements RecipeParserStrategy {
   bool _couldBeIngredientLine(String text) {
     if (text.isEmpty || text.length > 150) return false;
     return RegExp(r'\d+\s*(?:g|oz|cup|tbsp|tsp|ml|lb|kg)', caseSensitive: false).hasMatch(text);
+  }
+  
+  /// Extract directions from Modernist Pantry style (h3 with "Create/Make/Prepare" followed by paragraphs)
+  List<String> _extractModernistPantryDirections(Document document) {
+    final directions = <String>[];
+    final headings = document.querySelectorAll('h3, h2');
+    
+    for (final heading in headings) {
+      final headingText = heading.text.trim();
+      // Match patterns like "Create Black Garlic Honey", "Make Ice Cream Base", etc.
+      if (RegExp(r'^(?:Create|Make|Prepare|Churn|Step\s*\d+)', caseSensitive: false).hasMatch(headingText)) {
+        // Add the heading as a step title
+        directions.add('**$headingText**');
+        
+        // Gather following paragraphs until next heading
+        var sibling = heading.nextElementSibling;
+        int attempts = 0;
+        while (sibling != null && attempts < 20) {
+          // Stop if we hit another heading
+          if (sibling.localName == 'h2' || sibling.localName == 'h3' || sibling.localName == 'h4') {
+            break;
+          }
+          
+          // Add paragraph content
+          if (sibling.localName == 'p' || sibling.localName == 'div') {
+            final text = sibling.text.trim();
+            // Skip very short text or bullets (ingredients)
+            if (text.length > 30 && !text.startsWith('•')) {
+              directions.add(_cleanDirectionStep(text));
+            }
+          }
+          
+          sibling = sibling.nextElementSibling;
+          attempts++;
+        }
+      }
+    }
+    
+    return directions;
   }
 
   String? _extractImageFromHtml(Document document) {
@@ -1280,22 +1449,36 @@ class StandardWebStrategy implements RecipeParserStrategy {
         part = part.substring(0, newlineIdx);
       }
       
+      // Check if this is a section header (starts with "Ingredients" and ends with :)
+      // e.g., "Ingredients Black Garlic Honey:" -> [Black Garlic Honey]
+      final sectionMatch = RegExp(r'^Ingredients\s+(.+?):\s*$', caseSensitive: false).firstMatch(part);
+      if (sectionMatch != null) {
+        final sectionName = sectionMatch.group(1)?.trim() ?? '';
+        if (sectionName.isNotEmpty) {
+          ingredients.add('[${_cleanSectionHeader(sectionName)}]');
+        }
+        continue;
+      }
+      
       // Check if this looks like an ingredient (has measurement)
       if (_couldBeIngredientLine(part)) {
-        // Check if this might be a section header (ends with :)
-        if (part.endsWith(':')) {
-          final sectionName = part.substring(0, part.length - 1).trim();
-          // Only treat as section if it looks like one (starts with "Ingredients" or similar)
-          if (sectionName.toLowerCase().contains('ingredient')) {
-            ingredients.add('[$sectionName]');
-          }
-        } else {
-          ingredients.add(_ingParser.decodeHtml(part));
-        }
+        ingredients.add(_ingParser.decodeHtml(part));
       }
     }
     
     return ingredients.length >= 2 ? ingredients : [];
+  }
+  
+  /// Clean section header - remove trailing colons and common prefixes
+  String _cleanSectionHeader(String header) {
+    var cleaned = header.trim();
+    // Remove trailing colon
+    if (cleaned.endsWith(':')) {
+      cleaned = cleaned.substring(0, cleaned.length - 1).trim();
+    }
+    // Remove common prefixes
+    cleaned = cleaned.replaceFirst(RegExp(r'^(?:For\s+(?:the\s+)?)', caseSensitive: false), '');
+    return cleaned;
   }
 
   // ========== Enhancement with HTML Sections ==========

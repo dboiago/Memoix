@@ -123,9 +123,17 @@ class UrlRecipeImporter {
 
     for (final headers in headerConfigs) {
       try {
-        response = await _client.get(uri, headers: headers);
+        response = await _client.get(uri, headers: headers).timeout(
+          const Duration(seconds: 15),
+          onTimeout: () => throw Exception('Request timeout'),
+        );
         if (response.statusCode == 200) return response;
         lastError = 'HTTP ${response.statusCode}';
+      } on http.ClientException catch (e) {
+        // Handle HTTP protocol mismatch errors (HTTP/2 vs HTTP/1.1)
+        // This happens with sites like delish.com that require HTTP/2
+        lastError = 'HTTP protocol error: $e';
+        continue;
       } catch (e) {
         lastError = e.toString();
         continue;
