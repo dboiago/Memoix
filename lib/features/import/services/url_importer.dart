@@ -3060,6 +3060,20 @@ class UrlRecipeImporter {
     String? amount;
     String? inlineSection;
     
+    // Handle "Top up with [Ingredient]" format (Difford's style)
+    // e.g., "Top up with Thomas Henry Soda Water" -> name: "Thomas Henry Soda Water", amount: "Top"
+    final topUpWithMatch = RegExp(
+      r'^Top\s+(?:up\s+)?with\s+(.+)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (topUpWithMatch != null) {
+      final name = topUpWithMatch.group(1)?.trim() ?? '';
+      return Ingredient.create(
+        name: name,
+        amount: 'Top',
+      );
+    }
+    
     // Handle Seedlip/cocktail format: "Name: amount / metric" 
     // e.g., "Seedlip Grove 42: 1.75 oz / 53ml" or "Marmalade Cordial*: 1 oz / 30 ml"
     // Also handles "Cold Sparkling Water: Top" where "Top" means "top up"
