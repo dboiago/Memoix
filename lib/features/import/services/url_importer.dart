@@ -596,16 +596,21 @@ class UrlRecipeImporter {
     if (depth > 10) return null; // Prevent infinite recursion
     
     if (data is Map<String, dynamic>) {
-      // Check if this looks like a recipe object
-      if (_looksLikeRecipe(data)) {
+      // Check for @type: Recipe (standard JSON-LD)
+      if (data['@type'] == 'Recipe' || data['type'] == 'Recipe') {
         final result = _parseJsonLdWithConfidence(data, sourceUrl);
         if (result != null) return result;
       }
       
-      // Check for @type: Recipe
-      if (data['@type'] == 'Recipe' || data['type'] == 'Recipe') {
+      // Check if this looks like a recipe object but without @type (Next.js, WordPress ACF, etc.)
+      if (_looksLikeRecipe(data)) {
+        // First try JSON-LD parser (handles standard format)
         final result = _parseJsonLdWithConfidence(data, sourceUrl);
         if (result != null) return result;
+        
+        // If JSON-LD parser returned null (no @type), try parsing as non-standard format
+        final nonStandardResult = _parseNonStandardRecipeJson(data, sourceUrl);
+        if (nonStandardResult != null) return nonStandardResult;
       }
       
       // Recurse into nested objects
@@ -621,6 +626,99 @@ class UrlRecipeImporter {
     }
     
     return null;
+  }
+  
+  /// Parse non-standard recipe JSON (Next.js __NEXT_DATA__, WordPress ACF, etc.)
+  /// These have recipe data but no @type: Recipe
+  RecipeImportResult? _parseNonStandardRecipeJson(Map<String, dynamic> data, String sourceUrl) {
+    // Must have name
+    final name = _cleanRecipeName(
+      _parseString(data['name']) ?? 
+      _parseString(data['title']) ?? 
+      _parseString(data['recipeName']) ?? ''
+    );
+    if (name.isEmpty) return null;
+    
+    // Extract ingredients - support various formats
+    var rawIngredientStrings = <String>[];
+    final ingredientsData = data['ingredients'] ?? data['recipeIngredient'];
+    if (ingredientsData != null) {
+      rawIngredientStrings = _extractRawIngredients(ingredientsData);
+    }
+    
+    // Extract directions - support various formats  
+    var directions = <String>[];
+    var rawDirections = <String>[];
+    final instructionsData = data['instructions'] ?? data['recipeInstructions'] ?? data['directions'] ?? data['steps'];
+    if (instructionsData != null) {
+      directions = _parseInstructions(instructionsData);
+      rawDirections = _extractRawDirections(instructionsData);
+    }
+    
+    // Must have at least ingredients OR directions to be a valid recipe
+    if (rawIngredientStrings.isEmpty && directions.isEmpty) return null;
+    
+    // Parse ingredients
+    var ingredients = _parseIngredients(rawIngredientStrings);
+    ingredients = _sortIngredientsByQuantity(ingredients);
+    
+    // Build raw ingredients list
+    final rawIngredients = rawIngredientStrings.map((raw) {
+      final parsed = _parseIngredientString(raw);
+      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+      final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+      return RawIngredientData(
+        original: raw,
+        amount: parsed.amount,
+        unit: parsed.unit,
+        preparation: parsed.preparation,
+        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
+        looksLikeIngredient: parsed.name.isNotEmpty,
+        isSection: parsed.section != null,
+        sectionName: parsed.section,
+      );
+    }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
+    
+    // Extract other fields
+    final serves = _parseString(data['serves']) ?? 
+                   _parseString(data['yield']) ?? 
+                   _parseString(data['recipeYield']);
+    final time = _parseString(data['time']) ?? 
+                 _parseString(data['cookTimeCustom']) ??
+                 _parseString(data['cookTime']);
+    final description = _parseString(data['description']);
+    final imageUrl = _parseImage(data['image']);
+    
+    // Detect course
+    final course = _guessCourse(data, sourceUrl: sourceUrl);
+    
+    // Detect cuisine
+    final cuisine = _parseCuisine(data['cuisine'] ?? data['recipeCuisine']);
+    
+    return RecipeImportResult(
+      name: name,
+      course: course,
+      cuisine: cuisine,
+      serves: serves,
+      time: time,
+      ingredients: ingredients,
+      directions: directions,
+      notes: description,
+      imageUrl: imageUrl,
+      rawIngredients: rawIngredients,
+      rawDirections: rawDirections,
+      detectedCourses: _detectAllCourses(data),
+      detectedCuisines: _detectAllCuisines(data),
+      nameConfidence: 0.9,
+      courseConfidence: 0.6,
+      cuisineConfidence: cuisine != null ? 0.7 : 0.3,
+      ingredientsConfidence: rawIngredientStrings.isNotEmpty ? 0.8 : 0.0,
+      directionsConfidence: directions.isNotEmpty ? 0.8 : 0.0,
+      servesConfidence: serves != null ? 0.7 : 0.0,
+      timeConfidence: time != null ? 0.7 : 0.0,
+      sourceUrl: sourceUrl,
+      source: RecipeSource.url,
+    );
   }
   
   /// Check if a map looks like it might be recipe data
