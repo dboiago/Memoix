@@ -2332,7 +2332,12 @@ class UrlRecipeImporter {
 
     // Parse ingredients and collect raw data
     // Use _extractRawIngredients first to rejoin incorrectly split ingredients (e.g., Diffords comma splits)
-    final rawIngredientStrings = _extractRawIngredients(data['recipeIngredient']);
+    // Support both JSON-LD format (recipeIngredient) and non-standard format (ingredients)
+    var rawIngredientStrings = _extractRawIngredients(data['recipeIngredient']);
+    // Fallback to non-standard keys if JSON-LD key not found
+    if (rawIngredientStrings.isEmpty) {
+      rawIngredientStrings = _extractRawIngredients(data['ingredients']);
+    }
     // Parse from the already-rejoined raw strings, not the original JSON-LD
     var ingredients = _parseIngredients(rawIngredientStrings);
     ingredients = _sortIngredientsByQuantity(ingredients);
@@ -2349,8 +2354,14 @@ class UrlRecipeImporter {
     }
 
     // Parse directions with confidence
-    final directions = _parseInstructions(data['recipeInstructions']);
-    final rawDirections = _extractRawDirections(data['recipeInstructions']);
+    // Support both JSON-LD format (recipeInstructions) and non-standard format (instructions)
+    var directions = _parseInstructions(data['recipeInstructions']);
+    var rawDirections = _extractRawDirections(data['recipeInstructions']);
+    // Fallback to non-standard keys if JSON-LD key not found
+    if (directions.isEmpty) {
+      directions = _parseInstructions(data['instructions']);
+      rawDirections = _extractRawDirections(data['instructions']);
+    }
     double directionsConfidence = directions.isNotEmpty ? 0.8 : 0.0;
     // Boost if directions are detailed (more than a few words each)
     if (directions.isNotEmpty) {
@@ -2466,15 +2477,55 @@ class UrlRecipeImporter {
     if (value == null) return [];
     if (value is String) return [_decodeHtml(value)];
     if (value is List) {
-      var items = value
-          .map((e) => _decodeHtml(e.toString().trim()))
-          .where((s) => s.isNotEmpty)
-          .toList();
+      final result = <String>[];
+      for (final item in value) {
+        if (item is String) {
+          final decoded = _decodeHtml(item.trim());
+          if (decoded.isNotEmpty) result.add(decoded);
+        } else if (item is Map) {
+          // Handle nested ingredient objects
+          // Saveur/WordPress ACF format: {ingredient: "name", quantity: "2", measurement: "cups"}
+          if (item.containsKey('ingredient')) {
+            final quantity = _parseString(item['quantity']) ?? '';
+            final measurement = _parseString(item['measurement']) ?? '';
+            final ingredientName = _parseString(item['ingredient']) ?? '';
+            if (ingredientName.isNotEmpty) {
+              final parts = <String>[];
+              if (quantity.isNotEmpty) parts.add(quantity);
+              if (measurement.isNotEmpty) parts.add(measurement);
+              parts.add(ingredientName);
+              result.add(_decodeHtml(parts.join(' ').trim()));
+            }
+          }
+          // Saveur/WordPress ACF format with sections: {title: "Section", items: [...]}
+          else if (item.containsKey('items')) {
+            final sectionTitle = _parseString(item['title'] ?? item['section_title']) ?? '';
+            if (sectionTitle.isNotEmpty) {
+              result.add('[$sectionTitle]'); // Add section header
+            }
+            final items = item['items'] ?? item['section_items'];
+            if (items is List) {
+              // Recursively extract ingredients from nested items
+              result.addAll(_extractRawIngredients(items));
+            }
+          }
+          // Standard JSON-LD or generic format with text field
+          else {
+            final text = _parseString(item['text'] ?? item['name']) ?? '';
+            if (text.isNotEmpty) {
+              result.add(_decodeHtml(text.trim()));
+            }
+          }
+        } else {
+          final decoded = _decodeHtml(item.toString().trim());
+          if (decoded.isNotEmpty) result.add(decoded);
+        }
+      }
       
       // Post-process to rejoin incorrectly split ingredients
       // Some sites (like Diffords) incorrectly split ingredients on commas in their JSON-LD,
       // resulting in fragments like "(2", "1", ")" instead of "(2 sugar to 1 water, 65.0°Brix)"
-      items = _rejoinSplitIngredients(items);
+      var items = _rejoinSplitIngredients(result);
       
       // Deduplicate ingredients (some sites like Saveur have same ingredient in HTML multiple times)
       items = _deduplicateIngredients(items);
@@ -6409,7 +6460,53 @@ class UrlRecipeImporter {
       if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
+    // Try to find a specific ingredient container first (Saveur, etc.)
+    // This avoids duplicate ingredients when the page has multiple copies for mobile/desktop views
+    final ingredientContainerSelectors = [
+      '#recipe-ingredients',           // Saveur uses id="recipe-ingredients"
+      'ul.ingredients',                // Common pattern
+      '.ingredients ul',               // ul inside .ingredients
+      '.recipe-ingredients',           // Common class
+      '[data-recipe-ingredients]',     // Data attribute pattern
+    ];
+    
+    for (final selector in ingredientContainerSelectors) {
+      // Use querySelector to get only the FIRST container
+      final container = document.querySelector(selector);
+      if (container != null) {
+        final containerLis = container.querySelectorAll('li');
+        if (containerLis.isNotEmpty) {
+          for (final li in containerLis) {
+            final liClasses = li.attributes['class'] ?? '';
+            
+            if (liClasses.contains('category')) {
+              final h3 = li.querySelector('h3');
+              if (h3 != null) {
+                final text = _decodeHtml((h3.text ?? '').trim());
+                if (text.isNotEmpty) {
+                  var sectionName = text;
+                  final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
+                  if (forTheMatch != null) {
+                    sectionName = forTheMatch.group(1)?.trim() ?? text;
+                  }
+                  ingredients.add('[$sectionName]');
+                }
+              }
+            } else {
+              final text = _decodeHtml((li.text ?? '').trim());
+              if (text.isNotEmpty) {
+                ingredients.add(text);
+              }
+            }
+          }
+          
+          if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
+        }
+      }
+    }
+    
     // Fallback: Query li.category and li.ingredient in document order
+    // Apply deduplication to handle pages with multiple ingredient lists
     final allLis = document.querySelectorAll('li.category, li.ingredient');
     if (allLis.isNotEmpty) {
       for (final li in allLis) {
