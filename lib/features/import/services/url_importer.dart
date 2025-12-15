@@ -25,6 +25,117 @@ class TranscriptSegment {
   TranscriptSegment({required this.text, required this.startSeconds});
 }
 
+/// Extraction mode for site configs
+enum ExtractionMode {
+  /// Container has sections as children, each with header + ingredient list
+  containerWithSections,
+  /// Headers are siblings followed by ingredient lists
+  siblingHeaderList,
+  /// Single list with mixed category and ingredient items
+  mixedList,
+}
+
+/// Configuration for extracting ingredients from a specific site pattern
+class SiteConfig {
+  /// Selector for the main container (optional - uses document if null)
+  final String? containerSelector;
+  
+  /// Selector for section/group elements (for containerWithSections mode)
+  final String? sectionSelector;
+  
+  /// Selector for section header within a section or document
+  final String? headerSelector;
+  
+  /// Selector for ingredient items
+  final String ingredientSelector;
+  
+  /// How to extract ingredients from this site
+  final ExtractionMode mode;
+  
+  /// Whether header is a direct child element (vs querySelector)
+  final bool headerIsDirectChild;
+  
+  /// Tag name for direct child header (e.g., 'p', 'h3')
+  final String? headerChildTag;
+
+  const SiteConfig({
+    this.containerSelector,
+    this.sectionSelector,
+    this.headerSelector,
+    required this.ingredientSelector,
+    required this.mode,
+    this.headerIsDirectChild = false,
+    this.headerChildTag,
+  });
+}
+
+/// Site configurations for ingredient extraction
+/// Keyed by identifier (domain pattern or descriptive name)
+const _siteConfigs = <String, SiteConfig>{
+  // King Arthur Baking: div.ingredient-section with p for name and ul.list--bullets
+  'kingarthur': SiteConfig(
+    sectionSelector: '.ingredient-section',
+    headerIsDirectChild: true,
+    headerChildTag: 'p',
+    ingredientSelector: 'ul li',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  
+  // Tasty.co: div.ingredients__section with p.ingredient-section-name
+  'tasty': SiteConfig(
+    sectionSelector: '.ingredients__section',
+    headerSelector: '.ingredient-section-name',
+    ingredientSelector: 'li.ingredient',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  
+  // Serious Eats: headers followed by sibling ul
+  'seriouseats': SiteConfig(
+    headerSelector: '.structured-ingredients__list-heading',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.siblingHeaderList,
+  ),
+  
+  // AmazingFoodMadeEasy: ul.ingredient_list with li.category and li.ingredient
+  'amazingfood': SiteConfig(
+    containerSelector: 'ul.ingredient_list, .ingredient_list',
+    headerSelector: 'li.category h3',
+    ingredientSelector: 'li.ingredient',
+    mode: ExtractionMode.mixedList,
+  ),
+  
+  // NYT Cooking: class containing "ingredientgroup_name" followed by ul
+  'nyt': SiteConfig(
+    headerSelector: '[class*="ingredientgroup_name"]',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.siblingHeaderList,
+  ),
+  
+  // WordPress Recipe Maker (WPRM): common plugin
+  'wprm': SiteConfig(
+    sectionSelector: '.wprm-recipe-ingredient-group',
+    headerSelector: '.wprm-recipe-group-name',
+    ingredientSelector: '.wprm-recipe-ingredient',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  
+  // Generic headers in .ingredients container
+  'generic-headers': SiteConfig(
+    containerSelector: '.ingredients',
+    headerSelector: 'h3, h4',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.siblingHeaderList,
+  ),
+  
+  // Generic container-based extraction (Saveur, etc.)
+  'generic-container': SiteConfig(
+    containerSelector: '#recipe-ingredients, ul.ingredients, .ingredients ul, .recipe-ingredients, [data-recipe-ingredients]',
+    headerSelector: 'li.category h3',
+    ingredientSelector: 'li:not(.category)',
+    mode: ExtractionMode.mixedList,
+  ),
+};
+
 /// Service to import recipes from URLs
 class UrlRecipeImporter {
   static final _uuid = Uuid();
@@ -6840,11 +6951,171 @@ class UrlRecipeImporter {
     
     return _processIngredientListItems(items);
   }
+
+  /// Clean section name by removing trailing colon and "For the" prefix
+  String _cleanSectionName(String text) {
+    var cleaned = text.replaceAll(RegExp(r':$'), '').trim();
+    final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(cleaned);
+    if (forTheMatch != null) {
+      cleaned = forTheMatch.group(1)?.trim() ?? cleaned;
+    }
+    return cleaned;
+  }
+
+  /// Extract ingredients using a site config
+  /// Returns null if the config's selectors don't match the document
+  List<String>? _extractWithSiteConfig(dynamic document, SiteConfig config) {
+    final ingredients = <String>[];
+    
+    // Get the container (or use document)
+    dynamic container = document;
+    if (config.containerSelector != null) {
+      // Try each selector in comma-separated list
+      for (final selector in config.containerSelector!.split(',').map((s) => s.trim())) {
+        container = document.querySelector(selector);
+        if (container != null) break;
+      }
+      if (container == null) return null;
+    }
+    
+    switch (config.mode) {
+      case ExtractionMode.containerWithSections:
+        // Get all section elements
+        if (config.sectionSelector == null) return null;
+        final sections = container.querySelectorAll(config.sectionSelector);
+        if (sections.isEmpty) return null;
+        
+        for (final section in sections) {
+          // Get section header
+          String? headerText;
+          if (config.headerIsDirectChild && config.headerChildTag != null) {
+            // Look for direct child with matching tag
+            for (final child in section.children) {
+              if (child.localName == config.headerChildTag) {
+                headerText = _decodeHtml((child.text ?? '').trim());
+                break;
+              }
+            }
+          } else if (config.headerSelector != null) {
+            final header = section.querySelector(config.headerSelector);
+            if (header != null) {
+              headerText = _decodeHtml((header.text ?? '').trim());
+            }
+          }
+          
+          if (headerText != null && headerText.isNotEmpty) {
+            ingredients.add('[${_cleanSectionName(headerText)}]');
+          }
+          
+          // Get ingredients
+          final items = section.querySelectorAll(config.ingredientSelector);
+          for (final item in items) {
+            final text = _decodeHtml((item.text ?? '').trim());
+            if (text.isNotEmpty) {
+              ingredients.add(text);
+            }
+          }
+        }
+        
+      case ExtractionMode.siblingHeaderList:
+        // Headers are followed by sibling ul elements
+        if (config.headerSelector == null) return null;
+        final headers = container.querySelectorAll(config.headerSelector);
+        if (headers.isEmpty) return null;
+        
+        for (final header in headers) {
+          final headerText = _decodeHtml((header.text ?? '').trim());
+          if (headerText.isNotEmpty) {
+            ingredients.add('[${_cleanSectionName(headerText)}]');
+          }
+          
+          // Find the next ul sibling
+          var sibling = header.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            if (tagName == 'ul' || tagName == 'ol') {
+              final items = sibling.querySelectorAll(config.ingredientSelector);
+              for (final item in items) {
+                final text = _decodeHtml((item.text ?? '').trim());
+                if (text.isNotEmpty) {
+                  ingredients.add(text);
+                }
+              }
+              break; // Found the list, move to next header
+            } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4' || tagName == 'p') {
+              // Check if this is another header (stop searching)
+              if (config.headerSelector != null) {
+                final headerClass = header.attributes['class'] ?? '';
+                final siblingClass = sibling.attributes['class'] ?? '';
+                // If sibling matches header pattern, stop
+                if (siblingClass.isNotEmpty && headerClass.contains(siblingClass.split(' ').first)) {
+                  break;
+                }
+              }
+              // Otherwise might be the next section header
+              if (tagName == 'h2' || tagName == 'h3') break;
+            }
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+      case ExtractionMode.mixedList:
+        // Container has mixed category headers and ingredients as siblings
+        // Get all items that match either header or ingredient selector
+        final allItems = container.querySelectorAll('li');
+        if (allItems.isEmpty) return null;
+        
+        for (final item in allItems) {
+          final itemClass = item.attributes['class'] ?? '';
+          
+          // Check if this is a category/header item
+          if (itemClass.contains('category')) {
+            // Look for header element inside
+            final headerElem = config.headerSelector != null 
+                ? item.querySelector(config.headerSelector!.split(' ').last) // Get last part like 'h3'
+                : item.querySelector('h3');
+            if (headerElem != null) {
+              final headerText = _decodeHtml((headerElem.text ?? '').trim());
+              if (headerText.isNotEmpty) {
+                ingredients.add('[${_cleanSectionName(headerText)}]');
+              }
+            }
+          } else {
+            // Regular ingredient item
+            final text = _decodeHtml((item.text ?? '').trim());
+            if (text.isNotEmpty) {
+              ingredients.add(text);
+            }
+          }
+        }
+    }
+    
+    return ingredients.isNotEmpty ? _deduplicateIngredients(ingredients) : null;
+  }
+
+  /// Try all site configs and return the first successful extraction
+  List<String>? _tryAllSiteConfigs(dynamic document) {
+    for (final entry in _siteConfigs.entries) {
+      final result = _extractWithSiteConfig(document, entry.value);
+      if (result != null && result.isNotEmpty) {
+        return result;
+      }
+    }
+    return null;
+  }
   
   /// Extract ingredients with section headers from HTML
   /// Handles sites like AmazingFoodMadeEasy that have structured HTML with sections
   /// but JSON-LD only has a flat ingredient list
   List<String> _extractIngredientsWithSections(dynamic document) {
+    // Try config-driven extraction first
+    final configResult = _tryAllSiteConfigs(document);
+    if (configResult != null && configResult.isNotEmpty) {
+      return configResult;
+    }
+    
+    // Fallback to legacy extraction for any patterns not yet in configs
     final ingredients = <String>[];
     
     // Try King Arthur Baking format: div.ingredient-section with p for section name and ul.list--bullets
