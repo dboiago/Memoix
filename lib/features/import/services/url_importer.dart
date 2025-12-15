@@ -2476,9 +2476,46 @@ class UrlRecipeImporter {
       // resulting in fragments like "(2", "1", ")" instead of "(2 sugar to 1 water, 65.0°Brix)"
       items = _rejoinSplitIngredients(items);
       
+      // Deduplicate ingredients (some sites like Saveur have same ingredient in HTML multiple times)
+      items = _deduplicateIngredients(items);
+      
       return items;
     }
     return [];
+  }
+  
+  /// Deduplicate a list of ingredient strings while preserving order
+  /// Some sites (like Saveur with MUI components) have the same ingredient in HTML multiple times
+  /// This is section-aware: resets the "seen" set at each section header so legitimately
+  /// repeated ingredients in different sections (e.g., "2 eggs" for cake and for creme anglaise)
+  /// are preserved
+  List<String> _deduplicateIngredients(List<String> items) {
+    var seen = <String>{};
+    final result = <String>[];
+    for (final item in items) {
+      // Check if this is a section header - if so, reset the seen set
+      // Section headers are formatted as [Section Name] or end with ":"
+      final trimmed = item.trim();
+      if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+        seen = <String>{}; // Reset for new section
+        result.add(item);
+        continue;
+      }
+      if (trimmed.endsWith(':') && trimmed.length < 50 && !RegExp(r'\d').hasMatch(trimmed)) {
+        // Looks like a section header (e.g., "For the filling:")
+        seen = <String>{}; // Reset for new section
+        result.add(item);
+        continue;
+      }
+      
+      // Normalize for comparison: lowercase, collapse whitespace
+      final normalized = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+      if (normalized.isEmpty) continue;
+      if (seen.contains(normalized)) continue;
+      seen.add(normalized);
+      result.add(item);
+    }
+    return result;
   }
   
   /// Rejoin ingredient items that were incorrectly split (usually on commas)
@@ -6194,7 +6231,7 @@ class UrlRecipeImporter {
         }
       }
       
-      if (ingredients.isNotEmpty) return ingredients;
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
     // Try Serious Eats format: p.structured-ingredients__list-heading followed by ul.structured-ingredients__list
@@ -6235,7 +6272,7 @@ class UrlRecipeImporter {
         }
       }
       
-      if (ingredients.isNotEmpty) return ingredients;
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
     // Try AmazingFoodMadeEasy format: ul.ingredient_list with li.category and li.ingredient
@@ -6268,7 +6305,7 @@ class UrlRecipeImporter {
         }
       }
       
-      if (ingredients.isNotEmpty) return ingredients;
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
     // Try NYT Cooking format: h3 with class containing "ingredientgroup_name" followed by ul with li.ingredient
@@ -6307,7 +6344,7 @@ class UrlRecipeImporter {
         }
       }
       
-      if (ingredients.isNotEmpty) return ingredients;
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
     // Try WPRM (WordPress Recipe Maker) format with ingredient groups
@@ -6331,7 +6368,7 @@ class UrlRecipeImporter {
         }
       }
       
-      if (ingredients.isNotEmpty) return ingredients;
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
     // Try generic section headers: h3 or h4 followed by ul/li
@@ -6369,7 +6406,7 @@ class UrlRecipeImporter {
         }
       }
       
-      if (ingredients.isNotEmpty) return ingredients;
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
     // Fallback: Query li.category and li.ingredient in document order
@@ -6400,7 +6437,7 @@ class UrlRecipeImporter {
       }
     }
     
-    return ingredients;
+    return _deduplicateIngredients(ingredients);
   }
   
   /// Extract list items that follow a heading element
