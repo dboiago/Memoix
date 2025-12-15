@@ -1298,18 +1298,35 @@ class StandardWebStrategy implements RecipeParserStrategy {
   }
   
   NutritionInfo? _parseNutrition(Map<String, dynamic> data) {
-    final calories = _parseString(data['calories']);
-    if (calories == null) return null;
+    final caloriesStr = _parseString(data['calories']);
+    if (caloriesStr == null) return null;
     
-    return NutritionInfo(
-      calories: calories,
-      fat: _parseString(data['fatContent']),
-      carbohydrates: _parseString(data['carbohydrateContent']),
-      protein: _parseString(data['proteinContent']),
-      fiber: _parseString(data['fiberContent']),
-      sugar: _parseString(data['sugarContent']),
-      sodium: _parseString(data['sodiumContent']),
+    // Parse calories as int (extract number from string like "200 kcal")
+    final caloriesNum = _parseNutritionNumber(caloriesStr);
+    if (caloriesNum == null) return null;
+    
+    return NutritionInfo.create(
+      servingSize: _parseString(data['servingSize']),
+      calories: caloriesNum.round(),
+      fatContent: _parseNutritionNumber(_parseString(data['fatContent'])),
+      saturatedFatContent: _parseNutritionNumber(_parseString(data['saturatedFatContent'])),
+      transFatContent: _parseNutritionNumber(_parseString(data['transFatContent'])),
+      cholesterolContent: _parseNutritionNumber(_parseString(data['cholesterolContent'])),
+      sodiumContent: _parseNutritionNumber(_parseString(data['sodiumContent'])),
+      carbohydrateContent: _parseNutritionNumber(_parseString(data['carbohydrateContent'])),
+      fiberContent: _parseNutritionNumber(_parseString(data['fiberContent'])),
+      sugarContent: _parseNutritionNumber(_parseString(data['sugarContent'])),
+      proteinContent: _parseNutritionNumber(_parseString(data['proteinContent'])),
     );
+  }
+  
+  /// Parse a nutrition value that might be a number or string like "20 g"
+  double? _parseNutritionNumber(String? value) {
+    if (value == null || value.isEmpty) return null;
+    // Extract numeric portion from strings like "20 g", "150 kcal", "5.5g"
+    final match = RegExp(r'([\d.]+)').firstMatch(value);
+    if (match == null) return null;
+    return double.tryParse(match.group(1)!);
   }
   
   List<String> _extractStringList(dynamic data) {
