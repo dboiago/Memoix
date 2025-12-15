@@ -279,7 +279,8 @@ class UrlRecipeImporter {
                                 document.querySelector('li.category') != null ||
                                 document.querySelector('.ingredient-group-header') != null ||
                                 document.querySelector('.wprm-recipe-group-name') != null ||
-                                document.querySelector('.ingredients__section .ingredient-section-name') != null; // Tasty.co
+                                document.querySelector('.ingredients__section .ingredient-section-name') != null || // Tasty.co
+                                document.querySelector('[class*="ingredientgroup_name"]') != null; // NYT Cooking
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -6169,6 +6170,45 @@ class UrlRecipeImporter {
           if (text.isNotEmpty) {
             ingredients.add(text);
           }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return ingredients;
+    }
+    
+    // Try NYT Cooking format: h3 with class containing "ingredientgroup_name" followed by ul with li.ingredient
+    final nytSectionHeaders = document.querySelectorAll('[class*="ingredientgroup_name"]');
+    if (nytSectionHeaders.isNotEmpty) {
+      for (final header in nytSectionHeaders) {
+        var sectionText = _decodeHtml((header.text ?? '').trim());
+        if (sectionText.isNotEmpty) {
+          // Remove "For the" prefix if present
+          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
+          if (forTheMatch != null) {
+            sectionText = forTheMatch.group(1)?.trim() ?? sectionText;
+          }
+          ingredients.add('[$sectionText]');
+        }
+        
+        // Get the ul sibling that follows this header
+        var sibling = header.nextElementSibling;
+        while (sibling != null) {
+          final tagName = sibling.localName?.toLowerCase() ?? '';
+          
+          if (tagName == 'ul') {
+            // Get all li elements (NYT uses class containing "ingredient")
+            final items = sibling.querySelectorAll('li');
+            for (final item in items) {
+              final text = _decodeHtml((item.text ?? '').trim());
+              if (text.isNotEmpty) {
+                ingredients.add(text);
+              }
+            }
+            break; // Found the ul, move to next section
+          } else if (tagName == 'h3' || tagName == 'h2') {
+            break; // Next section header
+          }
+          sibling = sibling.nextElementSibling;
         }
       }
       
