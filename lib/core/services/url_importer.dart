@@ -4,8 +4,8 @@ import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/recipe_import_result.dart';
-import '../../recipes/models/recipe.dart';
+import '../../features/import/models/recipe_import_result.dart';
+import '../../features/recipes/models/recipe.dart';
 import 'importer/ingredient_parser.dart';
 import 'importer/recipe_parser_strategy.dart';
 import 'importer/strategies.dart';

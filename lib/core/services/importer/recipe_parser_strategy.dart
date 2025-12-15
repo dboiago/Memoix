@@ -1,5 +1,5 @@
 import 'package:html/dom.dart';
-import '../../models/recipe_import_result.dart';
+import '../../../features/import/models/recipe_import_result.dart';
 
 abstract class RecipeParserStrategy {
   /// Returns a confidence score (0.0 - 1.0)

@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../models/recipe_import_result.dart';
-import '../services/url_importer.dart';
+import '../../../core/services/url_importer.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../pizzas/screens/pizza_edit_screen.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';

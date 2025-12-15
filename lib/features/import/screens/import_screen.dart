@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../services/url_importer.dart';
+import '../../../core/services/url_importer.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
