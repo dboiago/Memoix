@@ -1,12 +1,11 @@
 import 'package:html/dom.dart';
-import '../models/recipe_import_result.dart';
+import '../../models/recipe_import_result.dart';
 
+/// Strategy interface for parsing recipes from different sources
 abstract class RecipeParserStrategy {
-  /// Returns 0.0 to 1.0. 
-  /// 1.0 = I definitely handle this (e.g., YouTube URL).
-  /// 0.0 = I cannot handle this.
+  /// Returns a confidence score (0.0 - 1.0) indicating if this strategy can handle the URL/Content
   double canParse(String url, Document? document, String? rawBody);
 
-  /// Performs the extraction.
+  /// Executes the parsing logic
   Future<RecipeImportResult?> parse(String url, Document? document, String? rawBody);
 }
