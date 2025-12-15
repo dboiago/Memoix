@@ -281,7 +281,8 @@ class UrlRecipeImporter {
                                 document.querySelector('.wprm-recipe-group-name') != null ||
                                 document.querySelector('.ingredients__section .ingredient-section-name') != null || // Tasty.co
                                 document.querySelector('[class*="ingredientgroup_name"]') != null || // NYT Cooking
-                                document.querySelector('.structured-ingredients__list-heading') != null; // Serious Eats
+                                document.querySelector('.structured-ingredients__list-heading') != null || // Serious Eats
+                                document.querySelector('.ingredient-section') != null; // King Arthur Baking
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -6543,13 +6544,16 @@ class UrlRecipeImporter {
     if (kingArthurSections.isNotEmpty) {
       for (final section in kingArthurSections) {
         // Get section name from the first <p> child (not inside ul)
-        final sectionNameElem = section.querySelector(':scope > p');
-        if (sectionNameElem != null) {
-          var sectionText = _decodeHtml((sectionNameElem.text ?? '').trim());
-          // Remove trailing colon if present
-          sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
-          if (sectionText.isNotEmpty) {
-            ingredients.add('[$sectionText]');
+        // We need to find a <p> that is a direct child of the section div
+        for (final child in section.children) {
+          if (child.localName == 'p') {
+            var sectionText = _decodeHtml((child.text ?? '').trim());
+            // Remove trailing colon if present
+            sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
+            if (sectionText.isNotEmpty) {
+              ingredients.add('[$sectionText]');
+            }
+            break; // Only get the first <p>
           }
         }
         
