@@ -1079,24 +1079,82 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final name = recipeElement.querySelector('[itemprop="name"]')?.text.trim();
     if (name == null || name.isEmpty) return null;
     
-    // Ingredients
+    // Ingredients - also check content attribute (common for meta tags)
     final ingElements = recipeElement.querySelectorAll('[itemprop="recipeIngredient"], [itemprop="ingredients"]');
-    final rawIngs = ingElements.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
+    final rawIngs = <String>[];
+    for (final e in ingElements) {
+      // Check for content attribute first (common for meta tags)
+      final contentAttr = e.attributes['content'];
+      if (contentAttr != null && contentAttr.isNotEmpty) {
+        // Content might be comma-separated list of ingredients
+        if (contentAttr.contains(',') && !contentAttr.contains('(')) {
+          for (final part in contentAttr.split(',')) {
+            final cleaned = _ingParser.decodeHtml(part.trim());
+            if (cleaned.isNotEmpty) rawIngs.add(cleaned);
+          }
+        } else {
+          rawIngs.add(_ingParser.decodeHtml(contentAttr));
+        }
+      } else {
+        final text = e.text.trim();
+        if (text.isNotEmpty) rawIngs.add(text);
+      }
+    }
     
-    // Directions
+    // Directions - handle nested steps and itemListElement
     final dirElements = recipeElement.querySelectorAll('[itemprop="recipeInstructions"]');
     List<String> directions = [];
     for (final el in dirElements) {
-      // Check if it's a container with li children
-      final liChildren = el.querySelectorAll('li');
-      if (liChildren.isNotEmpty) {
-        directions.addAll(liChildren.map((li) => _cleanDirectionStep(li.text.trim())));
+      // Check for nested steps (itemListElement, step, li, p)
+      final nestedSteps = el.querySelectorAll('[itemprop="itemListElement"], [itemprop="step"], li, p');
+      if (nestedSteps.isNotEmpty) {
+        for (final step in nestedSteps) {
+          final text = _cleanDirectionStep(step.text.trim());
+          if (text.isNotEmpty && text.length > 10) directions.add(text);
+        }
       } else {
-        directions.add(_cleanDirectionStep(el.text.trim()));
+        final text = el.text.trim();
+        if (text.isNotEmpty) {
+          // Split by newlines or periods followed by capital letters
+          final steps = text.split(RegExp(r'\n+|\. (?=[A-Z])'));
+          for (final step in steps) {
+            if (step.trim().isNotEmpty && step.trim().length > 10) {
+              directions.add(_cleanDirectionStep(step.trim()));
+            }
+          }
+        }
       }
     }
     
     if (rawIngs.isEmpty && directions.isEmpty) return null;
+    
+    // Time - check datetime and content attributes
+    String? time;
+    final totalTimeEl = recipeElement.querySelector('[itemprop="totalTime"]');
+    final prepTimeEl = recipeElement.querySelector('[itemprop="prepTime"]');
+    final cookTimeEl = recipeElement.querySelector('[itemprop="cookTime"]');
+    
+    if (totalTimeEl != null) {
+      final timeContent = totalTimeEl.attributes['content'] ?? 
+                          totalTimeEl.attributes['datetime'] ?? 
+                          totalTimeEl.text;
+      if (timeContent != null) time = _parseIso8601Duration(timeContent);
+    } else {
+      int totalMins = 0;
+      if (prepTimeEl != null) {
+        final timeContent = prepTimeEl.attributes['content'] ?? 
+                            prepTimeEl.attributes['datetime'] ?? 
+                            prepTimeEl.text;
+        if (timeContent != null) totalMins += _parseIso8601DurationMinutes(timeContent);
+      }
+      if (cookTimeEl != null) {
+        final timeContent = cookTimeEl.attributes['content'] ?? 
+                            cookTimeEl.attributes['datetime'] ?? 
+                            cookTimeEl.text;
+        if (timeContent != null) totalMins += _parseIso8601DurationMinutes(timeContent);
+      }
+      if (totalMins > 0) time = _formatMinutes(totalMins);
+    }
     
     // Other fields
     final serves = recipeElement.querySelector('[itemprop="recipeYield"]')?.text.trim();
@@ -1110,11 +1168,42 @@ class StandardWebStrategy implements RecipeParserStrategy {
       ingredients: _ingParser.parseList(rawIngs),
       directions: directions,
       serves: serves,
+      time: time,
       imageUrl: imageUrl,
       nameConfidence: 0.9,
       ingredientsConfidence: rawIngs.isNotEmpty ? 0.85 : 0.0,
       directionsConfidence: directions.isNotEmpty ? 0.85 : 0.0,
     );
+  }
+  
+  /// Parse ISO 8601 duration (PT30M, PT1H30M, etc.) to human-readable string
+  String? _parseIso8601Duration(String duration) {
+    final mins = _parseIso8601DurationMinutes(duration);
+    if (mins <= 0) return null;
+    return _formatMinutes(mins);
+  }
+  
+  /// Parse ISO 8601 duration to minutes
+  int _parseIso8601DurationMinutes(String duration) {
+    // Handle ISO 8601 format: PT1H30M, PT30M, P0DT1H30M, etc.
+    final hourMatch = RegExp(r'(\d+)H', caseSensitive: false).firstMatch(duration);
+    final minMatch = RegExp(r'(\d+)M(?!O)', caseSensitive: false).firstMatch(duration); // Exclude MONTH
+    
+    int hours = hourMatch != null ? (int.tryParse(hourMatch.group(1) ?? '0') ?? 0) : 0;
+    int mins = minMatch != null ? (int.tryParse(minMatch.group(1) ?? '0') ?? 0) : 0;
+    
+    return hours * 60 + mins;
+  }
+  
+  /// Format minutes to human-readable string
+  String _formatMinutes(int totalMins) {
+    if (totalMins >= 60) {
+      final hours = totalMins ~/ 60;
+      final mins = totalMins % 60;
+      if (mins > 0) return '${hours}h ${mins}m';
+      return '${hours}h';
+    }
+    return '$totalMins min';
   }
 
   // ========== HTML Parsing with Site Configs ==========
@@ -1122,16 +1211,50 @@ class StandardWebStrategy implements RecipeParserStrategy {
   RecipeImportResult? _parseHtmlFallback(Document document, String url, String? rawBody) {
     var rawIngredientStrings = <String>[];
     var rawDirections = <String>[];
+    String? glass;
+    List<String> garnish = [];
     String? title = document.querySelector('h1')?.text.trim();
     title ??= document.querySelector('meta[property="og:title"]')?.attributes['content'];
 
-    // 1. Try Site Configs (targeted plugin patterns)
-    final configResult = _tryAllSiteConfigs(document);
-    if (configResult != null && configResult.isNotEmpty) {
-      rawIngredientStrings = configResult;
+    // 0. Try Shopify/Lyres embedded HTML parsing (unicode-escaped HTML in JSON)
+    // These sites embed recipe content in JSON strings with \u003c for <, etc.
+    if (rawBody != null && (url.contains('lyres.com') || url.contains('seedlip'))) {
+      final shopifyResult = _parseShopifyEmbeddedHtml(rawBody, url);
+      if (shopifyResult != null) {
+        rawIngredientStrings = shopifyResult['ingredients'] ?? [];
+        rawDirections = shopifyResult['directions'] ?? [];
+        glass = shopifyResult['glass'];
+        garnish = shopifyResult['garnish'] ?? [];
+      }
     }
 
-    // 2. Try specific plugin selectors
+    // 1. Try Site Configs (targeted plugin patterns)
+    if (rawIngredientStrings.isEmpty) {
+      final configResult = _tryAllSiteConfigs(document);
+      if (configResult != null && configResult.isNotEmpty) {
+        rawIngredientStrings = configResult;
+      }
+    }
+
+    // 2. Try Diffords-style table for ingredients (legacy-ingredients-table)
+    if (rawIngredientStrings.isEmpty) {
+      final ingredientTable = document.querySelector('.legacy-ingredients-table, table.ingredients');
+      if (ingredientTable != null) {
+        final rows = ingredientTable.querySelectorAll('tr');
+        for (final row in rows) {
+          final cells = row.querySelectorAll('td');
+          if (cells.length >= 2) {
+            final amount = _ingParser.decodeHtml(cells[0].text.trim());
+            final name = _ingParser.decodeHtml(cells[1].text.trim());
+            if (name.isNotEmpty) {
+              rawIngredientStrings.add(amount.isNotEmpty ? '$amount $name' : name);
+            }
+          }
+        }
+      }
+    }
+
+    // 3. Try specific plugin selectors
     if (rawIngredientStrings.isEmpty) {
       // Cooked plugin
       final cooked = document.querySelectorAll('.cooked-single-ingredient');
@@ -1176,6 +1299,30 @@ class StandardWebStrategy implements RecipeParserStrategy {
     }
 
     // Directions parsing
+    
+    // First try Cooked plugin (detailed structure with .cooked-dir-content)
+    if (rawDirections.isEmpty) {
+      final cookedDirections = document.querySelectorAll('.cooked-single-direction.cooked-direction, .cooked-single-direction');
+      for (final elem in cookedDirections) {
+        // Get the content div which contains paragraphs
+        final contentDiv = elem.querySelector('.cooked-dir-content');
+        if (contentDiv != null) {
+          // Get all paragraphs
+          final paragraphs = contentDiv.querySelectorAll('p');
+          for (final p in paragraphs) {
+            final text = _cleanDirectionStep(p.text.trim());
+            if (text.isNotEmpty) rawDirections.add(text);
+          }
+          // If no paragraphs, try the content directly
+          if (paragraphs.isEmpty) {
+            final text = _cleanDirectionStep(contentDiv.text.trim());
+            if (text.isNotEmpty) rawDirections.add(text);
+          }
+        }
+      }
+    }
+    
+    // Try standard direction selectors
     final dirSelectors = [
       '.wprm-recipe-instruction',
       '.tasty-recipes-instructions li',
@@ -1211,6 +1358,12 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
     if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) return null;
 
+    // Determine course for cocktail sites
+    String? course;
+    if (_isCocktailSite(url) || glass != null || garnish.isNotEmpty) {
+      course = 'Drinks';
+    }
+
     return RecipeImportResult(
       name: _ingParser.decodeHtml(title ?? 'Untitled Recipe'),
       source: RecipeSource.url,
@@ -1218,6 +1371,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
       ingredients: _ingParser.parseList(rawIngredientStrings),
       directions: rawDirections,
       imageUrl: _extractImageFromHtml(document),
+      course: course,
+      glass: glass,
+      garnish: garnish,
       nameConfidence: title != null ? 0.7 : 0.3,
       ingredientsConfidence: rawIngredientStrings.isNotEmpty ? 0.6 : 0.0,
       directionsConfidence: rawDirections.isNotEmpty ? 0.6 : 0.0,
@@ -1467,6 +1623,136 @@ class StandardWebStrategy implements RecipeParserStrategy {
     }
     
     return ingredients.length >= 2 ? ingredients : [];
+  }
+  
+  /// Parse Shopify/Lyres-style embedded HTML in JSON
+  /// These sites embed HTML inside JSON strings with unicode escapes (\u003c for <, etc.)
+  /// Structure: <div class="recipe-info"><h4 class="title">Glass</h4><p>Old Fashioned</p></div>
+  Map<String, dynamic>? _parseShopifyEmbeddedHtml(String rawBody, String url) {
+    // Decode common unicode escapes that Shopify/Lyres uses
+    var bodyHtml = rawBody
+        .replaceAll(r'\u003c', '<')
+        .replaceAll(r'\u003e', '>')
+        .replaceAll(r'\u0026', '&')
+        .replaceAll(r'\/', '/')
+        .replaceAll(r'\n', ' ')
+        .replaceAll(r'\"', '"');
+    
+    // Also try the literal unicode escape format (without backslash interpretation)
+    bodyHtml = bodyHtml
+        .replaceAll('\\u003c', '<')
+        .replaceAll('\\u003e', '>')
+        .replaceAll('\\u0026', '&')
+        .replaceAll('\\/', '/')
+        .replaceAll('\\n', ' ')
+        .replaceAll('\\"', '"');
+    
+    final result = <String, dynamic>{
+      'ingredients': <String>[],
+      'directions': <String>[],
+      'glass': null,
+      'garnish': <String>[],
+    };
+    
+    // Find all recipe-info div sections
+    final recipeInfoDivs = RegExp(
+      r'<div[^>]*class="[^"]*recipe-info[^"]*"[^>]*>(.*?)</div>',
+      caseSensitive: false,
+      dotAll: true,
+    ).allMatches(bodyHtml);
+    
+    for (final divMatch in recipeInfoDivs) {
+      final divContent = divMatch.group(1) ?? '';
+      
+      // Extract h4 title from this div
+      final h4Match = RegExp(
+        r'<h4[^>]*>(.*?)</h4>',
+        caseSensitive: false,
+        dotAll: true,
+      ).firstMatch(divContent);
+      
+      if (h4Match == null) continue;
+      
+      // Strip any HTML tags from the h4 content to get plain text
+      final h4RawContent = h4Match.group(1) ?? '';
+      final h4Title = h4RawContent.replaceAll(RegExp(r'<[^>]+>'), '').trim().toLowerCase();
+      
+      // Extract content after h4
+      final afterH4 = divContent.substring(h4Match.end);
+      
+      if (h4Title == 'glass') {
+        // Extract glass from <p> tag
+        final pMatch = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
+        if (pMatch != null) {
+          final glassText = pMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim();
+          if (glassText != null && glassText.isNotEmpty) {
+            result['glass'] = _ingParser.decodeHtml(glassText);
+          }
+        }
+      } else if (h4Title == 'garnish') {
+        // Extract garnish from <p> tag
+        final pMatch = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
+        if (pMatch != null) {
+          final garnishText = pMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim();
+          if (garnishText != null && garnishText.isNotEmpty) {
+            result['garnish'] = _splitGarnishText(_ingParser.decodeHtml(garnishText));
+          }
+        }
+      } else if (h4Title == 'ingredients') {
+        // Extract ingredients from <ul><li> or <p> tags
+        final ulMatch = RegExp(r'<ul[^>]*>(.*?)</ul>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
+        if (ulMatch != null) {
+          final ulContent = ulMatch.group(1) ?? '';
+          final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(ulContent);
+          for (final liMatch in liMatches) {
+            final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+            if (text.isNotEmpty) {
+              (result['ingredients'] as List<String>).add(text);
+            }
+          }
+        } else {
+          // Try <p> tags
+          final pMatches = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).allMatches(afterH4);
+          for (final pMatch in pMatches) {
+            final text = _ingParser.decodeHtml(pMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+            if (text.isNotEmpty && _couldBeIngredientLine(text)) {
+              (result['ingredients'] as List<String>).add(text);
+            }
+          }
+        }
+      } else if (h4Title == 'method' || h4Title == 'directions' || h4Title == 'instructions') {
+        // Extract directions from <p> tags
+        final pMatches = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).allMatches(afterH4);
+        for (final pMatch in pMatches) {
+          final text = _ingParser.decodeHtml(pMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+          if (text.isNotEmpty && text.length > 5) {
+            // Split by periods for multiple sentences
+            if (text.contains('. ')) {
+              (result['directions'] as List<String>).addAll(
+                text.split(RegExp(r'\.\s+'))
+                    .where((s) => s.trim().isNotEmpty)
+                    .map((s) {
+                      final trimmed = s.trim();
+                      return trimmed.endsWith('.') ? trimmed : '$trimmed.';
+                    })
+              );
+            } else {
+              (result['directions'] as List<String>).add(text);
+            }
+          }
+        }
+      }
+    }
+    
+    // Return null if we didn't find anything useful
+    if ((result['ingredients'] as List).isEmpty && 
+        (result['directions'] as List).isEmpty && 
+        result['glass'] == null && 
+        (result['garnish'] as List).isEmpty) {
+      return null;
+    }
+    
+    return result;
   }
   
   /// Clean section header - remove trailing colons and common prefixes
