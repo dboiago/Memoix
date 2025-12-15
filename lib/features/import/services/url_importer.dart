@@ -268,7 +268,8 @@ class UrlRecipeImporter {
         final hasHtmlSections = document.querySelector('.ingredient_dish_header') != null ||
                                 document.querySelector('li.category') != null ||
                                 document.querySelector('.ingredient-group-header') != null ||
-                                document.querySelector('.wprm-recipe-group-name') != null;
+                                document.querySelector('.wprm-recipe-group-name') != null ||
+                                document.querySelector('.ingredients__section .ingredient-section-name') != null; // Tasty.co
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -6102,6 +6103,34 @@ class UrlRecipeImporter {
   /// but JSON-LD only has a flat ingredient list
   List<String> _extractIngredientsWithSections(dynamic document) {
     final ingredients = <String>[];
+    
+    // Try Tasty.co format: div.ingredients__section with p.ingredient-section-name and li.ingredient
+    final tastySections = document.querySelectorAll('.ingredients__section');
+    if (tastySections.isNotEmpty) {
+      for (final section in tastySections) {
+        // Get section name from p.ingredient-section-name
+        final sectionNameElem = section.querySelector('.ingredient-section-name');
+        if (sectionNameElem != null) {
+          var sectionText = _decodeHtml((sectionNameElem.text ?? '').trim());
+          // Remove trailing colon if present
+          sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
+          if (sectionText.isNotEmpty) {
+            ingredients.add('[$sectionText]');
+          }
+        }
+        
+        // Get ingredients from li.ingredient
+        final items = section.querySelectorAll('li.ingredient');
+        for (final item in items) {
+          final text = _decodeHtml((item.text ?? '').trim());
+          if (text.isNotEmpty) {
+            ingredients.add(text);
+          }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return ingredients;
+    }
     
     // Try AmazingFoodMadeEasy format: ul.ingredient_list with li.category and li.ingredient
     var ingredientList = document.querySelector('ul.ingredient_list');
