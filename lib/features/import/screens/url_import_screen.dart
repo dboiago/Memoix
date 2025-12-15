@@ -240,7 +240,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
     });
 
     try {
-      final importer = ref.read(urlImporterProvider);
+      final importer = UrlRecipeImporter();
       final rawResult = await importer.importFromUrl(url);
       
       // Apply default course if provided and no course was detected

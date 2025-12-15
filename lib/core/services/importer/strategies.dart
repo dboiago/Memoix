@@ -6,11 +6,145 @@ import '../../../features/recipes/models/recipe.dart';
 import 'recipe_parser_strategy.dart';
 import 'ingredient_parser.dart';
 
-// --- Squarespace Strategy ---
+// ============================================================================
+// SITE CONFIG DEFINITIONS
+// ============================================================================
+// These define extraction patterns for common site structures.
+// The StandardWebStrategy will try each config and use the first that works.
 
-/// Handles Squarespace-based recipe sites (e.g., starchefs.com)
-/// These sites use `sqs-html-content` divs with <br>-delimited content
-/// and <strong> tags for section headers.
+enum ExtractionMode {
+  /// Container has sections as children, each with header + ingredient list
+  containerWithSections,
+  /// Headers are siblings followed by ingredient lists
+  siblingHeaderList,
+  /// Single list with mixed category and ingredient items
+  mixedList,
+}
+
+class SiteConfig {
+  final String? containerSelector;
+  final String? sectionSelector;
+  final String? headerSelector;
+  final String ingredientSelector;
+  final ExtractionMode mode;
+  final bool headerIsDirectChild;
+  final String? headerChildTag;
+
+  const SiteConfig({
+    this.containerSelector,
+    this.sectionSelector,
+    this.headerSelector,
+    required this.ingredientSelector,
+    required this.mode,
+    this.headerIsDirectChild = false,
+    this.headerChildTag,
+  });
+}
+
+/// Site configurations for ingredient extraction
+/// These cover common WordPress plugins, recipe platforms, and generic patterns
+const _siteConfigs = <String, SiteConfig>{
+  // King Arthur Baking
+  'kingarthur': SiteConfig(
+    sectionSelector: '.ingredient-section',
+    headerIsDirectChild: true,
+    headerChildTag: 'p',
+    ingredientSelector: 'ul li',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  // Tasty.co
+  'tasty': SiteConfig(
+    sectionSelector: '.ingredients__section',
+    headerSelector: '.ingredient-section-name',
+    ingredientSelector: 'li.ingredient',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  // Serious Eats
+  'seriouseats': SiteConfig(
+    headerSelector: '.structured-ingredients__list-heading',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.siblingHeaderList,
+  ),
+  // AmazingFoodMadeEasy
+  'amazingfood': SiteConfig(
+    containerSelector: 'ul.ingredient_list, .ingredient_list',
+    headerSelector: 'li.category h3',
+    ingredientSelector: 'li.ingredient',
+    mode: ExtractionMode.mixedList,
+  ),
+  // NYT Cooking
+  'nyt': SiteConfig(
+    headerSelector: '[class*="ingredientgroup_name"]',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.siblingHeaderList,
+  ),
+  // WordPress Recipe Maker (WPRM) - very popular plugin
+  'wprm': SiteConfig(
+    sectionSelector: '.wprm-recipe-ingredient-group',
+    headerSelector: '.wprm-recipe-group-name',
+    ingredientSelector: '.wprm-recipe-ingredient',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  // Tasty Recipes plugin
+  'tasty-recipes': SiteConfig(
+    sectionSelector: '.tasty-recipes-ingredients-body',
+    headerSelector: 'h4, .tasty-recipes-ingredients-header',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  // EasyRecipe plugin
+  'easyrecipe': SiteConfig(
+    containerSelector: '.ERSIngredients, .easy-recipe-ingredients',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.mixedList,
+  ),
+  // Cooked plugin
+  'cooked': SiteConfig(
+    sectionSelector: '.cooked-recipe-ingredients',
+    headerSelector: '.cooked-heading',
+    ingredientSelector: '.cooked-single-ingredient',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  // Recipe Card Blocks by FLAVOR
+  'flavor-recipecard': SiteConfig(
+    sectionSelector: '.recipe-card-ingredients',
+    headerSelector: 'h4',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  // Yummly / ZipList / common generic
+  'yummly-ziplist': SiteConfig(
+    containerSelector: '.recipe-ingredients, .ingredient-list',
+    ingredientSelector: 'li, .recipe-ingred_txt, .ingredient-item',
+    mode: ExtractionMode.mixedList,
+  ),
+  // Schema.org microdata format
+  'microdata': SiteConfig(
+    containerSelector: '[itemtype*="Recipe"]',
+    ingredientSelector: '[itemprop="recipeIngredient"]',
+    mode: ExtractionMode.mixedList,
+  ),
+  // Generic headers in .ingredients container
+  'generic-headers': SiteConfig(
+    containerSelector: '.ingredients',
+    headerSelector: 'h3, h4',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.siblingHeaderList,
+  ),
+  // Generic container-based extraction
+  'generic-container': SiteConfig(
+    containerSelector: '#recipe-ingredients, ul.ingredients, .ingredients ul, .recipe-ingredients, [data-recipe-ingredients]',
+    headerSelector: 'li.category h3',
+    ingredientSelector: 'li:not(.category)',
+    mode: ExtractionMode.mixedList,
+  ),
+};
+
+// ============================================================================
+// SQUARESPACE STRATEGY
+// ============================================================================
+// Handles Squarespace-based recipe sites (e.g., starchefs.com)
+
 class SquarespaceRecipeStrategy implements RecipeParserStrategy {
   final IngredientParser _ingParser;
   SquarespaceRecipeStrategy(this._ingParser);
@@ -19,15 +153,13 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
   double canParse(String url, Document? document, String? rawBody) {
     if (document == null) return 0.0;
     
-    // Check for Squarespace signature elements
     final hasSqsContent = document.querySelector('.sqs-html-content') != null;
     final hasSqsBlock = document.querySelector('[data-sqsp-text-block-content]') != null;
     
     if (hasSqsContent || hasSqsBlock) {
-      // Check if it looks like a recipe page (has INGREDIENTS header)
       final bodyText = document.body?.text.toUpperCase() ?? '';
       if (bodyText.contains('INGREDIENTS') && bodyText.contains('METHOD')) {
-        return 0.9; // High confidence for Squarespace recipe pages
+        return 0.9;
       }
       return 0.6; // Medium confidence for Squarespace pages
     }
@@ -416,6 +548,11 @@ class YouTubeStrategy implements RecipeParserStrategy {
 }
 
 // --- Standard Web Strategy ---
+// Robust generic strategy that handles most recipe sites using:
+// 1. JSON-LD (Schema.org Recipe)
+// 2. Embedded JS frameworks (Next.js, Nuxt, Vite SSR)
+// 3. Microdata (itemprop selectors)
+// 4. HTML heuristics (common class/id patterns)
 
 class StandardWebStrategy implements RecipeParserStrategy {
   final IngredientParser _ingParser;
@@ -423,6 +560,13 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   @override
   double canParse(String url, Document? document, String? rawBody) {
+    if (document == null) return 0.3;
+    
+    // Check for structured data presence to boost confidence
+    final hasJsonLd = document.querySelector('script[type="application/ld+json"]') != null;
+    final hasMicrodata = document.querySelector('[itemtype*="Recipe"]') != null;
+    
+    if (hasJsonLd || hasMicrodata) return 0.7;
     return 0.5; // Default fallback
   }
 
@@ -430,117 +574,787 @@ class StandardWebStrategy implements RecipeParserStrategy {
   Future<RecipeImportResult?> parse(String url, Document? document, String? rawBody) async {
     if (document == null) return null;
 
-    // 1. JSON-LD
-    final jsonLdResult = _parseJsonLd(document, url);
-    if (jsonLdResult != null) return jsonLdResult;
+    // 1. Try JSON-LD first (most reliable)
+    var result = _parseJsonLd(document, url);
+    if (result != null) {
+      // Check if we can enhance with HTML sections
+      result = _enhanceWithHtmlSections(document, result);
+      return result;
+    }
 
-    // 2. HTML Scraping
+    // 2. Try embedded JS frameworks (Next.js, Nuxt, Vite SSR)
+    if (rawBody != null) {
+      result = _parseEmbeddedJs(rawBody, url);
+      if (result != null) return result;
+    }
+
+    // 3. Try microdata
+    result = _parseMicrodata(document, url);
+    if (result != null) return result;
+
+    // 4. HTML heuristic fallback
     return _parseHtmlFallback(document, url);
   }
 
+  // ========== JSON-LD Parsing ==========
+  
   RecipeImportResult? _parseJsonLd(Document document, String url) {
     final scripts = document.querySelectorAll('script[type="application/ld+json"]');
     for (final script in scripts) {
       try {
-        final data = jsonDecode(script.text);
-        // Handle graph or direct object
-        dynamic recipeData = data;
-        if (data is Map && data['@graph'] is List) {
-           recipeData = (data['@graph'] as List).firstWhere(
-             (e) => e['@type'] == 'Recipe' || (e['@type'] is List && e['@type'].contains('Recipe')),
-             orElse: () => null
-           );
-        } else if (data is List) {
-           recipeData = data.firstWhere((e) => e['@type'] == 'Recipe', orElse: () => null);
+        // Handle encoding issues
+        String scriptText = script.text;
+        dynamic data;
+        try {
+          data = jsonDecode(scriptText);
+        } on FormatException {
+          // Try to fix common encoding issues
+          final fixed = scriptText.replaceAll('\n', '\\n').replaceAll('\r', '');
+          data = jsonDecode(fixed);
         }
         
-        if (recipeData == null || recipeData['@type'] != 'Recipe') continue;
+        // Find Recipe object (handles @graph, arrays, nested)
+        final recipeData = _findRecipeInJson(data);
+        if (recipeData == null) continue;
 
-        // Extract fields
-        final name = recipeData['name'];
-        final rawIngs = _extractRawList(recipeData['recipeIngredient'] ?? recipeData['ingredients']);
-        final rawDirs = _extractRawList(recipeData['recipeInstructions'] ?? recipeData['instructions']);
-
-        return RecipeImportResult(
-          name: name is String ? _ingParser.decodeHtml(name) : 'Untitled',
-          source: RecipeSource.url,
-          sourceUrl: url,
-          ingredients: _ingParser.parseList(rawIngs),
-          directions: rawDirs, // Keep raw for now, or normalize
-          imageUrl: _parseImage(recipeData['image']),
-          serves: _parseString(recipeData['recipeYield']),
-        );
+        return _parseRecipeJson(recipeData, url, isJsonLd: true);
       } catch (_) { continue; }
     }
     return null;
   }
 
-  RecipeImportResult? _parseHtmlFallback(Document document, String url) {
-    // Basic selector based scraping
-    final title = document.querySelector('h1')?.text.trim() ?? 'Untitled Recipe';
+  /// Recursively find Recipe object in JSON-LD structure
+  dynamic _findRecipeInJson(dynamic data, [int depth = 0]) {
+    if (depth > 10) return null;
     
-    // Try standard selectors for ingredients
-    final ingSelectors = ['.ingredients li', '.ingredient-list li', '[itemprop="recipeIngredient"]'];
-    List<String> rawIngs = [];
-    
-    for (final selector in ingSelectors) {
-      final elements = document.querySelectorAll(selector);
-      if (elements.isNotEmpty) {
-        rawIngs = elements.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
-        break;
+    if (data is Map<String, dynamic>) {
+      // Check if this is a Recipe
+      final type = data['@type'];
+      if (type == 'Recipe' || (type is List && type.contains('Recipe'))) {
+        return data;
+      }
+      
+      // Check @graph
+      if (data['@graph'] is List) {
+        for (final item in data['@graph']) {
+          final found = _findRecipeInJson(item, depth + 1);
+          if (found != null) return found;
+        }
+      }
+      
+      // Recursively check values
+      for (final value in data.values) {
+        final found = _findRecipeInJson(value, depth + 1);
+        if (found != null) return found;
+      }
+    } else if (data is List) {
+      for (final item in data) {
+        final found = _findRecipeInJson(item, depth + 1);
+        if (found != null) return found;
       }
     }
+    return null;
+  }
 
-    // Try standard selectors for directions
-    final dirSelectors = ['.instructions li', '.directions li', '[itemprop="recipeInstructions"] li'];
-    List<String> directions = [];
+  /// Parse a recipe JSON object (works for JSON-LD and embedded JS)
+  RecipeImportResult? _parseRecipeJson(Map<String, dynamic> data, String url, {bool isJsonLd = false}) {
+    // Extract name
+    final name = _parseString(data['name'] ?? data['title'] ?? data['recipeName']);
+    if (name == null || name.isEmpty) return null;
     
-    for (final selector in dirSelectors) {
-      final elements = document.querySelectorAll(selector);
-      if (elements.isNotEmpty) {
-        directions = elements.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
-        break;
-      }
+    // Extract ingredients with section support
+    final rawIngs = _extractRawIngredients(data['recipeIngredient'] ?? data['ingredients']);
+    
+    // Extract directions
+    final rawDirs = _extractDirections(data['recipeInstructions'] ?? data['instructions'] ?? data['directions'] ?? data['steps']);
+    
+    if (rawIngs.isEmpty && rawDirs.isEmpty) return null;
+    
+    // Parse ingredients
+    final ingredients = _ingParser.parseList(rawIngs);
+    
+    // Extract other fields
+    final serves = _parseString(data['recipeYield'] ?? data['yield'] ?? data['serves']);
+    final time = _parseTime(data);
+    final imageUrl = _parseImage(data['image']);
+    final description = _parseString(data['description']);
+    final cuisine = _parseString(data['recipeCuisine'] ?? data['cuisine']);
+    final course = _guessCourse(data, url);
+    
+    // Nutrition
+    NutritionInfo? nutrition;
+    if (data['nutrition'] is Map) {
+      nutrition = _parseNutrition(data['nutrition'] as Map<String, dynamic>);
     }
-
-    if (rawIngs.isEmpty && directions.isEmpty) return null;
-
+    
+    // Equipment (not standard Schema.org but some sites include it)
+    final equipment = _extractStringList(data['tool'] ?? data['equipment']);
+    
     return RecipeImportResult(
-      name: title,
+      name: _ingParser.decodeHtml(name),
+      source: RecipeSource.url,
+      sourceUrl: url,
+      ingredients: ingredients,
+      directions: rawDirs,
+      serves: serves,
+      time: time,
+      imageUrl: imageUrl,
+      notes: description,
+      cuisine: cuisine,
+      course: course,
+      nutrition: nutrition,
+      equipment: equipment,
+      nameConfidence: 0.95,
+      ingredientsConfidence: rawIngs.isNotEmpty ? 0.9 : 0.0,
+      directionsConfidence: rawDirs.isNotEmpty ? 0.9 : 0.0,
+      servesConfidence: serves != null ? 0.8 : 0.0,
+      timeConfidence: time != null ? 0.8 : 0.0,
+      courseConfidence: course != null ? 0.7 : 0.3,
+      cuisineConfidence: cuisine != null ? 0.8 : 0.0,
+    );
+  }
+
+  /// Extract raw ingredients, handling various formats including sections
+  List<String> _extractRawIngredients(dynamic data) {
+    if (data == null) return [];
+    if (data is String) return [data];
+    
+    if (data is List) {
+      final results = <String>[];
+      
+      for (final item in data) {
+        if (item is String) {
+          results.add(item);
+        } else if (item is Map) {
+          // Handle sectioned ingredients (WordPress ACF, Great British Chefs, etc.)
+          // Format: {groupName: "Sauce", items: [...]} or {section: "Sauce", ingredients: [...]}
+          final sectionName = item['groupName'] ?? item['section'] ?? item['title'];
+          final sectionItems = item['items'] ?? item['ingredients'] ?? item['unstructuredTextMetric'];
+          
+          if (sectionName != null && sectionItems != null) {
+            results.add('[$sectionName]');
+            if (sectionItems is List) {
+              for (final si in sectionItems) {
+                final text = si is String ? si : (si is Map ? (si['text'] ?? si['name'] ?? si['unstructuredTextMetric']) : si.toString());
+                if (text != null) results.add(text.toString());
+              }
+            } else if (sectionItems is String) {
+              results.add(sectionItems);
+            }
+          } else {
+            // Regular ingredient object
+            final text = item['text'] ?? item['name'] ?? item['unstructuredTextMetric'];
+            if (text != null) results.add(text.toString());
+          }
+        }
+      }
+      return results;
+    }
+    return [];
+  }
+
+  /// Extract directions, handling HowToStep, HowToSection, etc.
+  List<String> _extractDirections(dynamic data) {
+    if (data == null) return [];
+    if (data is String) return data.split(RegExp(r'\n+'));
+    
+    if (data is List) {
+      final results = <String>[];
+      
+      for (final item in data) {
+        if (item is String) {
+          results.add(_cleanDirectionStep(item));
+        } else if (item is Map) {
+          // HowToSection - has itemListElement with steps
+          if (item['@type'] == 'HowToSection' && item['itemListElement'] is List) {
+            final sectionName = item['name'];
+            if (sectionName != null) results.add('**$sectionName**');
+            results.addAll(_extractDirections(item['itemListElement']));
+          }
+          // HowToStep
+          else {
+            final text = item['text'] ?? item['name'];
+            if (text != null) results.add(_cleanDirectionStep(text.toString()));
+          }
+        }
+      }
+      return results;
+    }
+    return [];
+  }
+
+  String _cleanDirectionStep(String step) {
+    // Remove step numbers at the beginning
+    var cleaned = step.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
+    return _ingParser.decodeHtml(cleaned.trim());
+  }
+
+  // ========== Embedded JS Parsing (Next.js, Nuxt, Vite SSR) ==========
+  
+  RecipeImportResult? _parseEmbeddedJs(String body, String url) {
+    final patterns = <String, RegExp>{
+      'next': RegExp(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', dotAll: true),
+      'nuxt': RegExp(r'window\.__NUXT__\s*=\s*(\{.*?\});?\s*</script>', dotAll: true),
+      'vite': RegExp(r'<script[^>]*id="vite-plugin-ssr_pageContext"[^>]*>(.*?)</script>', dotAll: true),
+    };
+    
+    for (final entry in patterns.entries) {
+      final match = entry.value.firstMatch(body);
+      if (match == null) continue;
+      
+      final jsonStr = match.group(1);
+      if (jsonStr == null || jsonStr.isEmpty) continue;
+      
+      try {
+        final data = jsonDecode(jsonStr);
+        if (data is! Map<String, dynamic>) continue;
+        
+        // Search for recipe data within the embedded JSON
+        final recipeData = _findRecipeInEmbeddedData(data);
+        if (recipeData != null) {
+          return _parseRecipeJson(recipeData, url);
+        }
+      } catch (_) { continue; }
+    }
+    return null;
+  }
+
+  /// Find recipe data in embedded JS structures (different paths for different frameworks)
+  Map<String, dynamic>? _findRecipeInEmbeddedData(Map<String, dynamic> data, [int depth = 0]) {
+    if (depth > 10) return null;
+    
+    // Common paths for recipe data
+    final commonPaths = [
+      ['pageContext', 'pageProps', 'config'],  // Vite SSR
+      ['pageContext', 'pageProps'],
+      ['props', 'pageProps'],  // Next.js
+      ['props', 'pageProps', 'recipe'],
+      ['data'],  // Nuxt
+      ['state', 'recipe'],
+    ];
+    
+    for (final path in commonPaths) {
+      dynamic current = data;
+      for (final key in path) {
+        if (current is Map<String, dynamic> && current.containsKey(key)) {
+          current = current[key];
+        } else {
+          current = null;
+          break;
+        }
+      }
+      if (current is Map<String, dynamic> && _looksLikeRecipe(current)) {
+        return current;
+      }
+    }
+    
+    // Recursive search
+    for (final value in data.values) {
+      if (value is Map<String, dynamic>) {
+        if (_looksLikeRecipe(value)) return value;
+        final found = _findRecipeInEmbeddedData(value, depth + 1);
+        if (found != null) return found;
+      } else if (value is List) {
+        for (final item in value) {
+          if (item is Map<String, dynamic>) {
+            if (_looksLikeRecipe(item)) return item;
+            final found = _findRecipeInEmbeddedData(item, depth + 1);
+            if (found != null) return found;
+          }
+        }
+      }
+    }
+    return null;
+  }
+
+  bool _looksLikeRecipe(Map<String, dynamic> data) {
+    final hasName = data.containsKey('name') || data.containsKey('title') || data.containsKey('recipeName');
+    if (!hasName) return false;
+    final hasIngredients = data.containsKey('recipeIngredient') || data.containsKey('ingredients');
+    final hasInstructions = data.containsKey('recipeInstructions') || data.containsKey('instructions') || data.containsKey('directions');
+    return hasIngredients || hasInstructions;
+  }
+
+  // ========== Microdata Parsing ==========
+  
+  RecipeImportResult? _parseMicrodata(Document document, String url) {
+    final recipeElement = document.querySelector('[itemtype*="Recipe"]');
+    if (recipeElement == null) return null;
+    
+    final name = recipeElement.querySelector('[itemprop="name"]')?.text.trim();
+    if (name == null || name.isEmpty) return null;
+    
+    // Ingredients
+    final ingElements = recipeElement.querySelectorAll('[itemprop="recipeIngredient"], [itemprop="ingredients"]');
+    final rawIngs = ingElements.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
+    
+    // Directions
+    final dirElements = recipeElement.querySelectorAll('[itemprop="recipeInstructions"]');
+    List<String> directions = [];
+    for (final el in dirElements) {
+      // Check if it's a container with li children
+      final liChildren = el.querySelectorAll('li');
+      if (liChildren.isNotEmpty) {
+        directions.addAll(liChildren.map((li) => _cleanDirectionStep(li.text.trim())));
+      } else {
+        directions.add(_cleanDirectionStep(el.text.trim()));
+      }
+    }
+    
+    if (rawIngs.isEmpty && directions.isEmpty) return null;
+    
+    // Other fields
+    final serves = recipeElement.querySelector('[itemprop="recipeYield"]')?.text.trim();
+    final imageUrl = recipeElement.querySelector('[itemprop="image"]')?.attributes['src'] ??
+                     recipeElement.querySelector('[itemprop="image"]')?.attributes['content'];
+    
+    return RecipeImportResult(
+      name: _ingParser.decodeHtml(name),
       source: RecipeSource.url,
       sourceUrl: url,
       ingredients: _ingParser.parseList(rawIngs),
       directions: directions,
-      imageUrl: document.querySelector('meta[property="og:image"]')?.attributes['content'],
+      serves: serves,
+      imageUrl: imageUrl,
+      nameConfidence: 0.9,
+      ingredientsConfidence: rawIngs.isNotEmpty ? 0.85 : 0.0,
+      directionsConfidence: directions.isNotEmpty ? 0.85 : 0.0,
     );
   }
 
-  List<String> _extractRawList(dynamic data) {
-    if (data == null) return [];
-    if (data is String) return [data];
-    if (data is List) {
-      return data.map((e) {
-        if (e is String) return e;
-        if (e is Map && e['text'] != null) return e['text'].toString(); // Schema.org step
-        if (e is Map && e['name'] != null) return e['name'].toString(); 
-        return e.toString();
-      }).toList();
+  // ========== HTML Parsing with Site Configs ==========
+  
+  RecipeImportResult? _parseHtmlFallback(Document document, String url) {
+    var rawIngredientStrings = <String>[];
+    var rawDirections = <String>[];
+    String? title = document.querySelector('h1')?.text.trim();
+    title ??= document.querySelector('meta[property="og:title"]')?.attributes['content'];
+
+    // 1. Try Site Configs (targeted plugin patterns)
+    final configResult = _tryAllSiteConfigs(document);
+    if (configResult != null && configResult.isNotEmpty) {
+      rawIngredientStrings = configResult;
     }
-    return [];
+
+    // 2. Try specific plugin selectors
+    if (rawIngredientStrings.isEmpty) {
+      // Cooked plugin
+      final cooked = document.querySelectorAll('.cooked-single-ingredient');
+      if (cooked.isNotEmpty) {
+        rawIngredientStrings = cooked.map((e) => 
+          '${e.querySelector('.cooked-ing-amount')?.text ?? ""} ${e.querySelector('.cooked-ing-name')?.text ?? ""}'.trim()
+        ).where((s) => s.isNotEmpty).toList();
+      }
+      
+      // Tasty Recipes
+      if (rawIngredientStrings.isEmpty) {
+        final tasty = document.querySelectorAll('.tasty-recipes-ingredients li, .tasty-recipes-ingredient');
+        if (tasty.isNotEmpty) rawIngredientStrings = tasty.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
+      }
+      
+      // Generic selectors
+      if (rawIngredientStrings.isEmpty) {
+        final generic = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .ingredient-item, [itemprop="recipeIngredient"]');
+        if (generic.isNotEmpty) rawIngredientStrings = generic.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
+      }
+    }
+
+    // 3. Section-based parsing (H2/H3 with "Ingredients" followed by list)
+    if (rawIngredientStrings.isEmpty) {
+      rawIngredientStrings = _parseIngredientsBySections(document);
+    }
+
+    // 4. Aggressive fallback: scan all lists for ingredient-like lines
+    if (rawIngredientStrings.isEmpty) {
+      final allLists = document.querySelectorAll('ul li, ol li');
+      for (final li in allLists) {
+        final text = li.text.trim();
+        if (_couldBeIngredientLine(text)) {
+          rawIngredientStrings.add(text);
+        }
+      }
+    }
+
+    // Directions parsing
+    final dirSelectors = [
+      '.wprm-recipe-instruction',
+      '.tasty-recipes-instructions li',
+      '[itemprop="recipeInstructions"] li',
+      '.instructions li',
+      '.directions li',
+      '.recipe-directions li',
+      '.recipe-procedure li',
+      '.method li',
+      '#directions li',
+      '#instructions li',
+    ];
+    
+    for (final sel in dirSelectors) {
+      try {
+        final els = document.querySelectorAll(sel);
+        if (els.isNotEmpty) {
+          rawDirections = els.map((e) => _cleanDirectionStep(e.text.trim())).where((s) => s.isNotEmpty).toList();
+          break;
+        }
+      } catch (_) { continue; }
+    }
+    
+    // Fallback: section-based directions
+    if (rawDirections.isEmpty) {
+      rawDirections = _parseDirectionsBySections(document);
+    }
+
+    if (rawIngredientStrings.isEmpty && rawDirections.isEmpty) return null;
+
+    return RecipeImportResult(
+      name: _ingParser.decodeHtml(title ?? 'Untitled Recipe'),
+      source: RecipeSource.url,
+      sourceUrl: url,
+      ingredients: _ingParser.parseList(rawIngredientStrings),
+      directions: rawDirections,
+      imageUrl: _extractImageFromHtml(document),
+      nameConfidence: title != null ? 0.7 : 0.3,
+      ingredientsConfidence: rawIngredientStrings.isNotEmpty ? 0.6 : 0.0,
+      directionsConfidence: rawDirections.isNotEmpty ? 0.6 : 0.0,
+    );
+  }
+
+  /// Try all site configs and return ingredients if any match
+  List<String>? _tryAllSiteConfigs(Document document) {
+    for (final entry in _siteConfigs.entries) {
+      final config = entry.value;
+      Element container = document.documentElement!;
+      
+      if (config.containerSelector != null) {
+        final found = document.querySelector(config.containerSelector!);
+        if (found == null) continue;
+        container = found;
+      }
+
+      final ingredients = <String>[];
+
+      if (config.mode == ExtractionMode.containerWithSections) {
+        if (config.sectionSelector != null) {
+          final sections = container.querySelectorAll(config.sectionSelector!);
+          for (final section in sections) {
+            String? header;
+            if (config.headerIsDirectChild && config.headerChildTag != null) {
+              header = section.querySelector(config.headerChildTag!)?.text.trim();
+            } else if (config.headerSelector != null) {
+              header = section.querySelector(config.headerSelector!)?.text.trim();
+            }
+            if (header != null && header.isNotEmpty) ingredients.add('[$header]');
+            
+            final items = section.querySelectorAll(config.ingredientSelector);
+            ingredients.addAll(items.map((e) => e.text.trim()).where((s) => s.isNotEmpty));
+          }
+        }
+      } else if (config.mode == ExtractionMode.siblingHeaderList && config.headerSelector != null) {
+        final headers = container.querySelectorAll(config.headerSelector!);
+        for (final header in headers) {
+          final headerText = header.text.trim();
+          if (headerText.isNotEmpty) ingredients.add('[$headerText]');
+          
+          var sibling = header.nextElementSibling;
+          while (sibling != null && (sibling.localName == 'ul' || sibling.localName == 'ol')) {
+            ingredients.addAll(sibling.querySelectorAll('li').map((e) => e.text.trim()).where((s) => s.isNotEmpty));
+            sibling = sibling.nextElementSibling;
+          }
+        }
+      } else {
+        final items = container.querySelectorAll(config.ingredientSelector);
+        ingredients.addAll(items.map((e) => e.text.trim()).where((s) => s.isNotEmpty));
+      }
+
+      if (ingredients.isNotEmpty) return ingredients;
+    }
+    return null;
+  }
+
+  List<String> _parseIngredientsBySections(Document document) {
+    final ingredients = <String>[];
+    final headings = document.querySelectorAll('h2, h3, h4');
+    
+    for (final heading in headings) {
+      final text = heading.text.toLowerCase();
+      if (text.contains('ingredient')) {
+        var sibling = heading.nextElementSibling;
+        int attempts = 0;
+        while (sibling != null && attempts < 5) {
+          if (sibling.localName == 'ul' || sibling.localName == 'ol') {
+            ingredients.addAll(sibling.querySelectorAll('li').map((e) => e.text.trim()).where((s) => s.isNotEmpty));
+            break;
+          }
+          sibling = sibling.nextElementSibling;
+          attempts++;
+        }
+      }
+    }
+    return ingredients;
+  }
+
+  List<String> _parseDirectionsBySections(Document document) {
+    final directions = <String>[];
+    final headings = document.querySelectorAll('h2, h3, h4');
+    
+    for (final heading in headings) {
+      final text = heading.text.toLowerCase();
+      if (text.contains('direction') || text.contains('instruction') || text.contains('method') || text.contains('step')) {
+        var sibling = heading.nextElementSibling;
+        int attempts = 0;
+        while (sibling != null && attempts < 5) {
+          if (sibling.localName == 'ul' || sibling.localName == 'ol') {
+            directions.addAll(sibling.querySelectorAll('li').map((e) => _cleanDirectionStep(e.text.trim())).where((s) => s.isNotEmpty));
+            break;
+          } else if (sibling.localName == 'p') {
+            final pText = sibling.text.trim();
+            if (pText.isNotEmpty && pText.length > 20) {
+              directions.add(_cleanDirectionStep(pText));
+            }
+          }
+          sibling = sibling.nextElementSibling;
+          attempts++;
+        }
+      }
+    }
+    return directions;
+  }
+
+  bool _couldBeIngredientLine(String text) {
+    if (text.isEmpty || text.length > 150) return false;
+    return RegExp(r'\d+\s*(?:g|oz|cup|tbsp|tsp|ml|lb|kg)', caseSensitive: false).hasMatch(text);
+  }
+
+  String? _extractImageFromHtml(Document document) {
+    // Try Schema
+    var img = document.querySelector('[itemtype*="Recipe"] [itemprop="image"]');
+    if (img != null) return _getSrc(img);
+    
+    // Try OG
+    final ogImage = document.querySelector('meta[property="og:image"]')?.attributes['content'];
+    if (ogImage != null && ogImage.isNotEmpty) return ogImage;
+    
+    // Try common classes
+    img = document.querySelector('.recipe-image img, .wprm-recipe-image img, .tasty-recipes-image img');
+    return _getSrc(img);
+  }
+
+  String? _getSrc(Element? el) {
+    if (el == null) return null;
+    return el.attributes['src'] ?? el.attributes['data-src'] ?? el.attributes['content'];
+  }
+
+  // ========== Enhancement with HTML Sections ==========
+  
+  /// Enhance JSON-LD result with section headers from HTML (many sites have flat JSON-LD but sectioned HTML)
+  RecipeImportResult? _enhanceWithHtmlSections(Document document, RecipeImportResult result) {
+    // Check if HTML has section structure that JSON-LD is missing
+    final sectionSelectors = [
+      '.ingredient-group-header',
+      '.wprm-recipe-group-name',
+      '.ingredient-section-name',
+      '[class*="ingredientgroup_name"]',
+      '.structured-ingredients__list-heading',
+      '.ingredient-section',
+      'li.category',
+    ];
+    
+    bool hasHtmlSections = false;
+    for (final selector in sectionSelectors) {
+      if (document.querySelector(selector) != null) {
+        hasHtmlSections = true;
+        break;
+      }
+    }
+    
+    if (!hasHtmlSections) return result;
+    
+    // Extract ingredients with sections from HTML
+    final sectioned = _extractSectionedIngredients(document);
+    if (sectioned.isEmpty) return result;
+    
+    // Re-parse with sections
+    final ingredients = _ingParser.parseList(sectioned);
+    if (ingredients.isEmpty) return result;
+    
+    return RecipeImportResult(
+      name: result.name,
+      course: result.course,
+      cuisine: result.cuisine,
+      subcategory: result.subcategory,
+      serves: result.serves,
+      time: result.time,
+      ingredients: ingredients,
+      directions: result.directions,
+      notes: result.notes,
+      imageUrl: result.imageUrl,
+      nutrition: result.nutrition,
+      equipment: result.equipment,
+      glass: result.glass,
+      garnish: result.garnish,
+      sourceUrl: result.sourceUrl,
+      source: result.source,
+      nameConfidence: result.nameConfidence,
+      ingredientsConfidence: 0.9, // Higher with sections
+      directionsConfidence: result.directionsConfidence,
+      servesConfidence: result.servesConfidence,
+      timeConfidence: result.timeConfidence,
+      courseConfidence: result.courseConfidence,
+      cuisineConfidence: result.cuisineConfidence,
+    );
+  }
+
+  /// Extract ingredients with section headers from HTML
+  List<String> _extractSectionedIngredients(Document document) {
+    final results = <String>[];
+    
+    // Strategy 1: WPRM groups
+    final wprmGroups = document.querySelectorAll('.wprm-recipe-ingredient-group');
+    if (wprmGroups.isNotEmpty) {
+      for (final group in wprmGroups) {
+        final header = group.querySelector('.wprm-recipe-group-name')?.text.trim();
+        if (header != null && header.isNotEmpty) results.add('[$header]');
+        for (final ing in group.querySelectorAll('.wprm-recipe-ingredient')) {
+          final text = ing.text.trim();
+          if (text.isNotEmpty) results.add(text);
+        }
+      }
+      return results;
+    }
+    
+    // Strategy 2: Structured ingredients (Serious Eats)
+    final structuredLists = document.querySelectorAll('.structured-ingredients__list');
+    if (structuredLists.isNotEmpty) {
+      for (final list in structuredLists) {
+        // Look for heading before the list
+        final heading = list.previousElementSibling;
+        if (heading != null && heading.localName == 'p' && heading.classes.contains('structured-ingredients__list-heading')) {
+          results.add('[${heading.text.trim()}]');
+        }
+        for (final li in list.querySelectorAll('li')) {
+          final text = li.text.trim();
+          if (text.isNotEmpty) results.add(text);
+        }
+      }
+      return results;
+    }
+    
+    // Strategy 3: Generic section/group containers
+    for (final selector in ['.ingredient-section', '.ingredients__section']) {
+      final sections = document.querySelectorAll(selector);
+      if (sections.isNotEmpty) {
+        for (final section in sections) {
+          final header = section.querySelector('h3, h4, p:first-child, .ingredient-section-name')?.text.trim();
+          if (header != null && header.isNotEmpty) results.add('[$header]');
+          for (final li in section.querySelectorAll('li')) {
+            final text = li.text.trim();
+            if (text.isNotEmpty) results.add(text);
+          }
+        }
+        return results;
+      }
+    }
+    
+    return results;
+  }
+
+  // ========== Utility Methods ==========
+  
+  String? _parseString(dynamic data) {
+    if (data == null) return null;
+    if (data is String) return data.trim().isEmpty ? null : data.trim();
+    if (data is List && data.isNotEmpty) return _parseString(data.first);
+    if (data is num) return data.toString();
+    return data.toString();
   }
 
   String? _parseImage(dynamic data) {
     if (data == null) return null;
     if (data is String) return data;
     if (data is List && data.isNotEmpty) return _parseImage(data.first);
-    if (data is Map) return data['url'] as String?;
+    if (data is Map) return data['url'] as String? ?? data['contentUrl'] as String?;
     return null;
   }
   
-  String? _parseString(dynamic data) {
-    if (data == null) return null;
-    if (data is String) return data;
-    if (data is List && data.isNotEmpty) return data.first.toString();
-    return data.toString();
+  String? _parseTime(Map<String, dynamic> data) {
+    // Try various time fields
+    final totalTime = data['totalTime'] ?? data['cookTime'] ?? data['prepTime'] ?? data['time'];
+    if (totalTime == null) return null;
+    
+    final str = totalTime.toString();
+    
+    // Parse ISO 8601 duration (PT30M, PT1H30M, etc.)
+    final durationMatch = RegExp(r'^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$').firstMatch(str);
+    if (durationMatch != null) {
+      final hours = int.tryParse(durationMatch.group(1) ?? '') ?? 0;
+      final minutes = int.tryParse(durationMatch.group(2) ?? '') ?? 0;
+      
+      if (hours > 0 && minutes > 0) return '${hours}h ${minutes}m';
+      if (hours > 0) return '${hours}h';
+      if (minutes > 0) return '${minutes} min';
+    }
+    
+    return str;
+  }
+  
+  NutritionInfo? _parseNutrition(Map<String, dynamic> data) {
+    final calories = _parseString(data['calories']);
+    if (calories == null) return null;
+    
+    return NutritionInfo(
+      calories: calories,
+      fat: _parseString(data['fatContent']),
+      carbohydrates: _parseString(data['carbohydrateContent']),
+      protein: _parseString(data['proteinContent']),
+      fiber: _parseString(data['fiberContent']),
+      sugar: _parseString(data['sugarContent']),
+      sodium: _parseString(data['sodiumContent']),
+    );
+  }
+  
+  List<String> _extractStringList(dynamic data) {
+    if (data == null) return [];
+    if (data is String) return [data];
+    if (data is List) {
+      return data.map((e) => e is String ? e : e.toString()).where((s) => s.isNotEmpty).toList();
+    }
+    return [];
+  }
+  
+  String? _guessCourse(Map<String, dynamic> data, String url) {
+    // Check explicit category
+    final category = data['recipeCategory'] ?? data['category'] ?? data['course'];
+    if (category != null) {
+      final cat = category is List ? category.first.toString() : category.toString();
+      return _normalizeCourse(cat);
+    }
+    
+    // Guess from URL or name
+    final urlLower = url.toLowerCase();
+    final name = (data['name'] ?? '').toString().toLowerCase();
+    
+    if (urlLower.contains('/drink') || urlLower.contains('/cocktail') || name.contains('cocktail')) return 'Drinks';
+    if (urlLower.contains('/dessert') || name.contains('cake') || name.contains('cookie')) return 'Desserts';
+    if (urlLower.contains('/appetizer') || urlLower.contains('/starter')) return 'Apps';
+    if (urlLower.contains('/soup')) return 'Soup';
+    if (urlLower.contains('/salad')) return 'Sides';
+    if (urlLower.contains('/bread')) return 'Breads';
+    if (urlLower.contains('/breakfast') || urlLower.contains('/brunch')) return 'Brunch';
+    
+    return 'Mains'; // Default
+  }
+  
+  String _normalizeCourse(String course) {
+    final lower = course.toLowerCase().trim();
+    if (lower.contains('main') || lower.contains('dinner') || lower.contains('entree')) return 'Mains';
+    if (lower.contains('appetizer') || lower.contains('starter') || lower.contains('app')) return 'Apps';
+    if (lower.contains('dessert') || lower.contains('sweet')) return 'Desserts';
+    if (lower.contains('drink') || lower.contains('beverage') || lower.contains('cocktail')) return 'Drinks';
+    if (lower.contains('soup')) return 'Soup';
+    if (lower.contains('salad') || lower.contains('side')) return 'Sides';
+    if (lower.contains('bread') || lower.contains('baking')) return 'Breads';
+    if (lower.contains('breakfast') || lower.contains('brunch')) return 'Brunch';
+    if (lower.contains('sauce') || lower.contains('dip')) return 'Sauces';
+    return course; // Return as-is if no match
   }
 }
