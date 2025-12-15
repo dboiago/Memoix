@@ -2938,20 +2938,30 @@ class UrlRecipeImporter {
     if (value == null) return null;
     final str = value.toString();
     
-    // Parse ISO 8601 duration (e.g., PT30M, PT1H30M)
-    final regex = RegExp(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?');
-    final match = regex.firstMatch(str);
+    // Parse full ISO 8601 duration format (e.g., P0Y0M0DT0H35M0.000S, PT30M, PT1H30M)
+    // Format: P[n]Y[n]M[n]DT[n]H[n]M[n]S where each component is optional
+    // FoodNetwork uses: P0Y0M0DT0H35M0.000S
+    final fullIsoRegex = RegExp(
+      r'P(?:(\d+)Y)?(?:(\d+)M)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:[\d.]+S)?)?',
+      caseSensitive: false,
+    );
+    final fullMatch = fullIsoRegex.firstMatch(str);
     
-    if (match != null) {
-      final hours = int.tryParse(match.group(1) ?? '') ?? 0;
-      final minutes = int.tryParse(match.group(2) ?? '') ?? 0;
+    if (fullMatch != null) {
+      final years = int.tryParse(fullMatch.group(1) ?? '') ?? 0;
+      final months = int.tryParse(fullMatch.group(2) ?? '') ?? 0;
+      final days = int.tryParse(fullMatch.group(3) ?? '') ?? 0;
+      final hours = int.tryParse(fullMatch.group(4) ?? '') ?? 0;
+      final minutes = int.tryParse(fullMatch.group(5) ?? '') ?? 0;
       
-      // Always use _formatMinutes to properly handle large durations
-      final totalMinutes = hours * 60 + minutes;
+      // Convert to total minutes (approximate: 1 month = 30 days, 1 year = 365 days)
+      final totalMinutes = (years * 365 * 24 * 60) + (months * 30 * 24 * 60) + 
+                           (days * 24 * 60) + (hours * 60) + minutes;
       if (totalMinutes > 0) {
         return _formatMinutes(totalMinutes);
       }
     }
+    
     // Fallback: parse non-ISO strings like "380 minutes", "6 hours 20 minutes"
     final lowered = str.toLowerCase().trim();
     // Pure number => treat as minutes
