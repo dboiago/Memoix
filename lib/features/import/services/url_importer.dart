@@ -2389,17 +2389,32 @@ class UrlRecipeImporter {
       final openCount = item.split('(').length - 1;
       final closeCount = item.split(')').length - 1;
       
-      // Check if this looks like a fragment (very short, or just punctuation, or unbalanced parens)
+      // Check if this looks like a fragment that should be rejoined:
+      // 1. Very short (like "1", ")", "(2")
+      // 2. Just numbers, punctuation, degree symbols
+      // 3. Just a parenthesis
+      // 4. Starts with a number but no unit (like "65.0°Brix)" - partial measurement)
+      // 5. We're currently inside unbalanced parentheses
       final looksLikeFragment = 
-          item.length <= 3 ||  // Very short like "(2", "1", ")"
-          RegExp(r'^[\d.,°\s]+$').hasMatch(item) ||  // Just numbers, commas, degree symbols
-          RegExp(r'^[()]$').hasMatch(item) ||  // Just opening or closing paren
-          (buffer.isNotEmpty && openParens > 0);  // We're in the middle of a parenthetical
+          item.length <= 3 ||
+          RegExp(r'^[\d.,°\s]+$').hasMatch(item) ||
+          RegExp(r'^[()]$').hasMatch(item) ||
+          RegExp(r'^\d+\.?\d*°').hasMatch(item) ||  // Starts with degree measurement like "65.0°Brix"
+          (item.startsWith(')') && buffer.isNotEmpty) ||  // Starts with closing paren
+          (buffer.isNotEmpty && openParens > 0);
+      
+      // Also check if this item lacks typical ingredient structure
+      // A valid ingredient usually starts with a number+unit or an ingredient name (letters)
+      final lacksIngredientStructure = buffer.isNotEmpty && (
+          !RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:ml|g|oz|tsp|tbsp|cup|dash|drop|cl|l|kg|lb|pound|ounce|teaspoon|tablespoon)s?\b', caseSensitive: false).hasMatch(item) &&
+          !RegExp(r'^[A-Za-z][A-Za-z\s]{2,}').hasMatch(item) &&
+          item.length < 15
+      );
       
       if (buffer.isEmpty) {
         buffer = item;
         openParens = openCount - closeCount;
-      } else if (looksLikeFragment || openParens > 0) {
+      } else if (looksLikeFragment || openParens > 0 || lacksIngredientStructure) {
         // This is a continuation - rejoin with comma (since that's likely how it was split)
         buffer = '$buffer, $item';
         openParens += openCount - closeCount;
@@ -2409,9 +2424,6 @@ class UrlRecipeImporter {
         buffer = item;
         openParens = openCount - closeCount;
       }
-      
-      // If parentheses are balanced and buffer has content, we might have a complete ingredient
-      // But only if the next item doesn't look like a continuation
     }
     
     // Don't forget the last item
@@ -3049,8 +3061,8 @@ class UrlRecipeImporter {
       final metricAmount = colonAmountMatch.group(3)?.trim();
       final extra = colonAmountMatch.group(4)?.trim() ?? '';
       
-      // Remove trailing * or other markers from name
-      name = name.replaceAll(RegExp(r'\*+$'), '').trim();
+      // Remove leading and trailing * or other footnote markers from name
+      name = name.replaceAll(RegExp(r'^[\*†]+|[\*†]+$'), '').trim();
       
       // Normalize "Top" to "Top" (capitalize)
       if (primaryAmount.toLowerCase() == 'top' || primaryAmount.toLowerCase() == 'top up') {
@@ -3160,8 +3172,8 @@ class UrlRecipeImporter {
       }
     }
     
-    // Remove footnote markers like [1], *, †, etc.
-    remaining = remaining.replaceAll(RegExp(r'\[\d+\]|\*+|†+'), '').trim();
+    // Remove footnote markers like [1], *, †, etc. from both start and end
+    remaining = remaining.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
     
     // Check for optional markers anywhere and extract to notes
     final optionalPatterns = [
@@ -3966,6 +3978,22 @@ class UrlRecipeImporter {
               if (text.isNotEmpty) rawIngredientStrings.add(text);
             }
           }
+        }
+      }
+    }
+    
+    // Additional fallback for Lyres: search for standalone h4>Method followed by p anywhere in the HTML
+    // This handles cases where Method is not inside a recipe-info div
+    if (rawDirections.isEmpty) {
+      final methodMatch = RegExp(
+        r'<h4[^>]*>\s*Method\s*</h4>\s*<p[^>]*>(.*?)</p>',
+        caseSensitive: false,
+        dotAll: true,
+      ).firstMatch(bodyHtml);
+      if (methodMatch != null) {
+        final text = _decodeHtml((methodMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+        if (text.isNotEmpty) {
+          rawDirections.add(text);
         }
       }
     }
@@ -4886,7 +4914,7 @@ class UrlRecipeImporter {
     
     if (isCocktailSite || _isDrinkRecipeByContent(titleLower, urlLower, rawIngredientStrings)) {
       course = 'Drinks';
-      courseConfidence = isCocktailSite ? 0.8 : 0.75;
+      courseConfidence = isCocktailSite ? 0.95 : 0.75;  // High confidence for known cocktail sites
     } else if (_isSmokingRecipe(titleLower, urlLower, rawIngredientStrings)) {
       course = 'Smoking';
       courseConfidence = 0.8;
@@ -5685,7 +5713,37 @@ class UrlRecipeImporter {
       }
     }
     
-    // Pattern 3: Italicized text at top of article with editor's note content
+    // Pattern 3: Heading containing "Editor's Note" followed by paragraph content (Punch style)
+    // Punch uses: <h2>Editor's Note</h2> followed by <p> paragraphs
+    if (result['notes'] == null) {
+      final headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+      for (final heading in headings) {
+        final headingText = heading.text?.trim().toLowerCase() ?? '';
+        if (headingText.contains('editor') && headingText.contains('note')) {
+          // Found "Editor's Note" heading - collect following paragraph text
+          final paragraphs = <String>[];
+          var sibling = heading.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase();
+            // Stop at next heading or non-paragraph element
+            if (tagName != null && tagName.startsWith('h')) break;
+            if (tagName == 'p') {
+              final pText = _decodeHtml(sibling.text?.trim() ?? '');
+              if (pText.isNotEmpty) {
+                paragraphs.add(pText);
+              }
+            }
+            sibling = sibling.nextElementSibling;
+          }
+          if (paragraphs.isNotEmpty) {
+            result['notes'] = "Editor's Note:\n${paragraphs.join('\n\n')}";
+            break;
+          }
+        }
+      }
+    }
+    
+    // Pattern 4: Italicized text at top of article with editor's note content
     if (result['notes'] == null) {
       final italics = document.querySelectorAll('em, i');
       for (final em in italics) {
