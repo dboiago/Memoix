@@ -632,7 +632,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
     // 4. HTML heuristic fallback
     if (result == null) {
-      result = _parseHtmlFallback(document, url);
+      result = _parseHtmlFallback(document, url, rawBody);
     }
     
     if (result == null) return null;
@@ -1005,7 +1005,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   // ========== HTML Parsing with Site Configs ==========
   
-  RecipeImportResult? _parseHtmlFallback(Document document, String url) {
+  RecipeImportResult? _parseHtmlFallback(Document document, String url, String? rawBody) {
     var rawIngredientStrings = <String>[];
     var rawDirections = <String>[];
     String? title = document.querySelector('h1')?.text.trim();
