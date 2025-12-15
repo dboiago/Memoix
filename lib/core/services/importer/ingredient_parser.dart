@@ -75,6 +75,7 @@ class IngredientParser {
       }
     }
     
+    // 3. Sort by quantity (largest first)
     return _sortIngredientsByQuantity(result);
   }
 
@@ -234,8 +235,6 @@ class IngredientParser {
     final parenMatches = RegExp(r'\(([^)]+)\)').allMatches(remaining).toList();
     for (final match in parenMatches.reversed) {
       final content = match.group(1)?.trim() ?? '';
-      // Heuristic: if it looks like a ratio or weight conversion, keep it? 
-      // Simplified: extract all except ratios
       if (!content.contains(':') && !content.toLowerCase().contains('brix')) {
          notesParts.insert(0, content);
          remaining = remaining.substring(0, match.start) + remaining.substring(match.end);
@@ -329,11 +328,115 @@ class IngredientParser {
     return result;
   }
 
+  // --- Sorting Logic (Restored Full Version) ---
+
   List<Ingredient> _sortIngredientsByQuantity(List<Ingredient> ingredients) {
-    if (ingredients.any((i) => i.name.isEmpty && i.section != null)) return ingredients;
+    if (ingredients.isEmpty) return ingredients;
     
-    // Simple sort logic based on amount string length/presence of units
-    // (Full logic from monolith omitted for brevity but safe to preserve order in MVP)
-    return ingredients; 
+    // Don't sort if there are section headers - preserve original order
+    // Section headers are ingredients with empty name but non-null section
+    final hasSectionHeaders = ingredients.any((i) => i.name.isEmpty && i.section != null);
+    if (hasSectionHeaders) {
+      return ingredients; 
+    }
+    
+    // Group by section
+    final Map<String?, List<Ingredient>> sections = {};
+    for (final ing in ingredients) {
+      sections.putIfAbsent(ing.section, () => []).add(ing);
+    }
+    
+    // Sort each section by unit priority then quantity
+    final result = <Ingredient>[];
+    for (final section in sections.keys) {
+      final sectionItems = sections[section]!;
+      sectionItems.sort((a, b) {
+        final aScore = _getIngredientSortScore(a.amount);
+        final bScore = _getIngredientSortScore(b.amount);
+        return bScore.compareTo(aScore); // Descending (largest first)
+      });
+      result.addAll(sectionItems);
+    }
+    
+    return result;
+  }
+
+  double _getIngredientSortScore(String? amount) {
+    if (amount == null || amount.isEmpty) return 0;
+    
+    final text = amount.toLowerCase();
+    
+    // Unit priority multipliers - weight first, then volume, then small measures
+    double unitMultiplier = 1.0;
+    
+    // Weight units - highest priority
+    if (text.contains('kg') || text.contains('kilogram')) {
+      unitMultiplier = 10000.0; // kg - largest weight
+    } else if (text.contains('lb') || text.contains('pound')) {
+      unitMultiplier = 8000.0;
+    } else if (RegExp(r'\bg\b').hasMatch(text) || text.contains('gram')) {
+      unitMultiplier = 5000.0; // grams
+    } else if (text.contains('oz') || text.contains('ounce')) {
+      unitMultiplier = 4000.0;
+    }
+    // Whole items (pure numbers like "1 onion") - high priority
+    else if (!RegExp(r'[a-zA-Z]').hasMatch(text)) {
+      unitMultiplier = 3000.0;
+    }
+    // Volume units - medium priority
+    else if (text.contains('l') && (text.contains(' l') || text.endsWith('l') || text.contains('liter') || text.contains('litre'))) {
+      unitMultiplier = 2000.0; // liters
+    } else if (text.contains('ml') || text.contains('milliliter')) {
+      unitMultiplier = 1500.0;
+    } else if (text.contains('cup') || RegExp(r'\bc\b').hasMatch(text)) {
+      unitMultiplier = 1000.0; // cups
+    }
+    // Small measurements - lower priority
+    else if (text.contains('tbsp') || text.contains('tablespoon')) {
+      unitMultiplier = 100.0;
+    } else if (text.contains('tsp') || text.contains('teaspoon')) {
+      unitMultiplier = 10.0;
+    } else if (text.contains('in') || text.contains('inch') || text.contains('"')) {
+      unitMultiplier = 5.0; // length measurements
+    }
+    
+    // Extract numeric quantity
+    final quantity = _extractNumericQuantity(amount);
+    
+    return quantity * unitMultiplier;
+  }
+
+  double _extractNumericQuantity(String? amount) {
+    if (amount == null || amount.isEmpty) return 0;
+    
+    final fractionValues = {
+      '½': 0.5, '¼': 0.25, '¾': 0.75,
+      '⅓': 0.33, '⅔': 0.67,
+      '⅛': 0.125, '⅜': 0.375, '⅝': 0.625, '⅞': 0.875,
+      '⅕': 0.2, '⅖': 0.4, '⅗': 0.6, '⅘': 0.8,
+      '⅙': 0.167, '⅚': 0.833,
+    };
+    
+    var text = amount;
+    double total = 0;
+    
+    // Replace unicode fractions with values
+    fractionValues.forEach((k, v) {
+      if (text.contains(k)) {
+        total += v;
+        text = text.replaceAll(k, '');
+      }
+    });
+    
+    // Try to find integer or range
+    final numMatch = RegExp(r'(\d+)(?:\s*[-–]\s*(\d+))?').firstMatch(text);
+    if (numMatch != null) {
+      final first = double.tryParse(numMatch.group(1) ?? '') ?? 0;
+      final second = double.tryParse(numMatch.group(2) ?? '');
+      // Use the higher number in a range
+      total += second ?? first;
+    }
+    
+    return total;
   }
 }
