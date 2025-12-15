@@ -114,7 +114,12 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
   }
 
   /// Parses a Squarespace content block that uses <br> tags for line breaks
-  /// and <strong> tags for section headers
+  /// and <strong> tags for section headers.
+  /// 
+  /// StarChefs format: `<strong>Section:<br></strong>content<br>content`
+  /// The <br> is INSIDE the strong tag, so after split we get:
+  /// - `<strong>Section:` (section header, partial)
+  /// - `</strong>content` (closing tag + first content item)
   List<String> _parseSquarespaceBlock(Element block, {required bool isIngredients}) {
     final results = <String>[];
     
@@ -126,20 +131,59 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
       final html = p.innerHtml;
       final lines = html.split(RegExp(r'<br\s*/?>'));
       
-      String? currentSection;
+      String? pendingSection;
       
       for (var line in lines) {
         line = line.trim();
         if (line.isEmpty) continue;
         
-        // Check for section header: <strong>Section Name:</strong> or <strong>Section Name:<br></strong>
-        final sectionMatch = RegExp(r'^<strong>([^<:]+):?\s*</strong>$', caseSensitive: false).firstMatch(line);
-        if (sectionMatch != null) {
-          final sectionName = sectionMatch.group(1)?.trim();
-          if (sectionName != null && sectionName.toUpperCase() != 'INGREDIENTS' && sectionName.toUpperCase() != 'METHOD') {
-            currentSection = sectionName;
+        // Pattern 1: Opening strong tag with section name (the <br> was inside)
+        // e.g., "<strong>Short Ribs:" - we'll capture the section and wait for next line
+        final openingSectionMatch = RegExp(r'^<strong>([^<:]+):\s*$', caseSensitive: false).firstMatch(line);
+        if (openingSectionMatch != null) {
+          final sectionName = openingSectionMatch.group(1)?.trim();
+          if (sectionName != null && 
+              sectionName.toUpperCase() != 'INGREDIENTS' && 
+              sectionName.toUpperCase() != 'METHOD') {
+            pendingSection = sectionName;
+          }
+          continue;
+        }
+        
+        // Pattern 2: Closing strong tag followed by content
+        // e.g., "</strong>¾ cup soy sauce" - emit section header then content
+        final closingWithContentMatch = RegExp(r'^</strong>\s*(.*)$', caseSensitive: false).firstMatch(line);
+        if (closingWithContentMatch != null) {
+          // First emit the pending section header
+          if (pendingSection != null) {
             if (isIngredients) {
-              results.add('[$sectionName]'); // Section header marker
+              results.add('[$pendingSection]');
+            } else {
+              results.add('For the $pendingSection:');
+            }
+            pendingSection = null;
+          }
+          
+          // Then emit the content if any
+          final content = closingWithContentMatch.group(1)?.trim() ?? '';
+          if (content.isNotEmpty) {
+            final cleanContent = _stripHtmlTags(content);
+            if (cleanContent.isNotEmpty) {
+              results.add(cleanContent);
+            }
+          }
+          continue;
+        }
+        
+        // Pattern 3: Complete section header on one line: <strong>Section:</strong>
+        final completeSectionMatch = RegExp(r'^<strong>([^<:]+):?\s*</strong>$', caseSensitive: false).firstMatch(line);
+        if (completeSectionMatch != null) {
+          final sectionName = completeSectionMatch.group(1)?.trim();
+          if (sectionName != null && 
+              sectionName.toUpperCase() != 'INGREDIENTS' && 
+              sectionName.toUpperCase() != 'METHOD') {
+            if (isIngredients) {
+              results.add('[$sectionName]');
             } else {
               results.add('For the $sectionName:');
             }
@@ -147,14 +191,15 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
           continue;
         }
         
-        // Check for inline section header at start of line: <strong>Section:</strong>content
+        // Pattern 4: Inline section header with content: <strong>Section:</strong>content
         final inlineSectionMatch = RegExp(r'^<strong>([^<:]+):\s*</strong>\s*(.*)$', caseSensitive: false).firstMatch(line);
         if (inlineSectionMatch != null) {
           final sectionName = inlineSectionMatch.group(1)?.trim();
           final content = inlineSectionMatch.group(2)?.trim() ?? '';
           
-          if (sectionName != null && sectionName.toUpperCase() != 'INGREDIENTS' && sectionName.toUpperCase() != 'METHOD') {
-            currentSection = sectionName;
+          if (sectionName != null && 
+              sectionName.toUpperCase() != 'INGREDIENTS' && 
+              sectionName.toUpperCase() != 'METHOD') {
             if (isIngredients) {
               results.add('[$sectionName]');
             } else {
