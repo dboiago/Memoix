@@ -407,19 +407,18 @@ class YouTubeStrategy implements RecipeParserStrategy {
 
   @override
   double canParse(String url, Document? document, String? rawBody) {
-    final videoId = yt.VideoId.tryParse(url);
-    return videoId != null ? 1.0 : 0.0;
+    return _extractYouTubeVideoId(url) != null ? 1.0 : 0.0;
   }
 
   @override
   Future<RecipeImportResult?> parse(String url, Document? document, String? rawBody) async {
-    final videoId = yt.VideoId.tryParse(url);
-    if (videoId == null) throw Exception('Could not extract YouTube Video ID');
+    final videoIdStr = _extractYouTubeVideoId(url);
+    if (videoIdStr == null) throw Exception('Could not extract YouTube Video ID');
 
     final youtube = yt.YoutubeExplode();
     try {
-      // Get video metadata
-      final video = await youtube.videos.get(videoId);
+      // Get video metadata using the video ID string
+      final video = await youtube.videos.get(videoIdStr);
       final title = _cleanYouTubeTitle(video.title);
       final description = video.description;
       final thumbnailUrl = video.thumbnails.highResUrl;
@@ -443,7 +442,7 @@ class YouTubeStrategy implements RecipeParserStrategy {
       
       // If still no directions and we have few ingredients, try closed captions
       if (directions.isEmpty && ingredients.length < 3) {
-        directions = await _extractFromClosedCaptions(youtube, videoId);
+        directions = await _extractFromClosedCaptions(youtube, videoIdStr);
       }
 
       // Format time from duration
@@ -474,30 +473,64 @@ class YouTubeStrategy implements RecipeParserStrategy {
       youtube.close();
     }
   }
+  
+  /// Extract YouTube video ID from URL
+  String? _extractYouTubeVideoId(String url) {
+    final uri = Uri.tryParse(url);
+    if (uri == null) return null;
+    
+    // youtube.com/watch?v=VIDEO_ID
+    if (uri.host.contains('youtube.com')) {
+      return uri.queryParameters['v'];
+    }
+    // youtu.be/VIDEO_ID
+    if (uri.host == 'youtu.be') {
+      return uri.pathSegments.isNotEmpty ? uri.pathSegments.first : null;
+    }
+    return null;
+  }
 
   /// Try to extract recipe steps from closed captions
-  Future<List<String>> _extractFromClosedCaptions(yt.YoutubeExplode youtube, yt.VideoId videoId) async {
+  Future<List<String>> _extractFromClosedCaptions(yt.YoutubeExplode youtube, String videoId) async {
     try {
       final manifest = await youtube.videos.closedCaptions.getManifest(videoId);
-      final trackInfo = manifest.getByLanguage('en') ?? (manifest.tracks.isNotEmpty ? manifest.tracks.first : null);
+      final trackInfo = manifest.getByLanguage('en');
       
-      if (trackInfo == null) return [];
+      if (trackInfo == null) {
+        // Try first available track if no English
+        if (manifest.tracks.isEmpty) return [];
+        final firstTrack = manifest.tracks.first;
+        final track = await youtube.videos.closedCaptions.get(firstTrack);
+        return _extractStepsFromTrack(track);
+      }
       
       final track = await youtube.videos.closedCaptions.get(trackInfo);
-      
-      // Extract key cooking steps from captions
-      // Look for action verbs that indicate recipe steps
-      final steps = <String>[];
-      final actionPattern = RegExp(
-        r'^(add|mix|stir|pour|heat|cook|bake|preheat|combine|whisk|blend|chop|dice|slice|fold|simmer|boil|fry|grill|roast|season|serve)\b',
-        caseSensitive: false,
-      );
-      
-      for (final caption in track.captions) {
-        final text = caption.text.trim();
-        if (text.length > 20 && actionPattern.hasMatch(text)) {
-          // Capitalize first letter and add to steps
-          final step = text[0].toUpperCase() + text.substring(1);
+      return _extractStepsFromTrack(track);
+    } catch (_) {
+      return []; // Captions not available
+    }
+  }
+  
+  /// Extract cooking steps from a closed caption track
+  List<String> _extractStepsFromTrack(yt.ClosedCaptionTrack track) {
+    final steps = <String>[];
+    final actionPattern = RegExp(
+      r'^(add|mix|stir|pour|heat|cook|bake|preheat|combine|whisk|blend|chop|dice|slice|fold|simmer|boil|fry|grill|roast|season|serve)\b',
+      caseSensitive: false,
+    );
+    
+    for (final caption in track.captions) {
+      final text = caption.text.trim();
+      if (text.length > 20 && actionPattern.hasMatch(text)) {
+        final step = text[0].toUpperCase() + text.substring(1);
+        if (!steps.contains(step)) {
+          steps.add(step);
+        }
+      }
+    }
+    
+    return steps.take(15).toList();
+  }
           if (!steps.contains(step)) {
             steps.add(step);
           }
