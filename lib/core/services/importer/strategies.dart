@@ -54,18 +54,25 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
       final h4Text = h4.text.toUpperCase().trim();
       if (h4Text.contains('INGREDIENTS')) {
         // Get the parent sqs-html-content block
-        ingredientsBlock = h4.parent;
-        while (ingredientsBlock != null && 
-               !ingredientsBlock.classes.contains('sqs-html-content')) {
-          ingredientsBlock = ingredientsBlock.parent;
+        // Note: Element.parent returns Node?, so we need to check if it's an Element
+        Node? current = h4.parent;
+        while (current != null) {
+          if (current is Element && current.classes.contains('sqs-html-content')) {
+            ingredientsBlock = current;
+            break;
+          }
+          current = current.parent;
         }
       } else if (h4Text.contains('METHOD') || 
                  h4Text.contains('DIRECTIONS') || 
                  h4Text.contains('INSTRUCTIONS')) {
-        methodBlock = h4.parent;
-        while (methodBlock != null && 
-               !methodBlock.classes.contains('sqs-html-content')) {
-          methodBlock = methodBlock.parent;
+        Node? current = h4.parent;
+        while (current != null) {
+          if (current is Element && current.classes.contains('sqs-html-content')) {
+            methodBlock = current;
+            break;
+          }
+          current = current.parent;
         }
       }
     }
