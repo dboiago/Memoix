@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:html/dom.dart';
 import 'package:http/http.dart' as http;
+import 'package:youtube_explode_dart/youtube_explode_dart.dart' as yt;
 import '../../../features/import/models/recipe_import_result.dart';
 import '../../../features/recipes/models/recipe.dart';
 import 'recipe_parser_strategy.dart';
@@ -397,6 +398,8 @@ class SquarespaceRecipeStrategy implements RecipeParserStrategy {
 }
 
 // --- YouTube Strategy ---
+// Uses youtube_explode_dart for robust metadata extraction.
+// This handles YouTube API changes automatically via the maintained package.
 
 class YouTubeStrategy implements RecipeParserStrategy {
   final IngredientParser _ingParser;
@@ -404,71 +407,107 @@ class YouTubeStrategy implements RecipeParserStrategy {
 
   @override
   double canParse(String url, Document? document, String? rawBody) {
-    final uri = Uri.tryParse(url);
-    if (uri != null && (uri.host.contains('youtube.com') || uri.host.contains('youtu.be'))) {
-      return 1.0;
-    }
-    return 0.0;
+    final videoId = yt.VideoId.tryParse(url);
+    return videoId != null ? 1.0 : 0.0;
   }
 
   @override
   Future<RecipeImportResult?> parse(String url, Document? document, String? rawBody) async {
-    final videoId = _extractYouTubeVideoId(url);
+    final videoId = yt.VideoId.tryParse(url);
     if (videoId == null) throw Exception('Could not extract YouTube Video ID');
 
-    final response = await http.get(
-      Uri.parse('https://www.youtube.com/watch?v=$videoId'),
-      headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'},
-    );
-    
-    final body = response.body;
-    
-    // Extract metadata
-    String title = 'YouTube Recipe';
-    final titleMatch = RegExp(r'"title":\s*"([^"]+)"').firstMatch(body);
-    if (titleMatch != null) {
-       title = _decodeUnicodeEscapes(titleMatch.group(1) ?? '');
+    final youtube = yt.YoutubeExplode();
+    try {
+      // Get video metadata
+      final video = await youtube.videos.get(videoId);
+      final title = _cleanYouTubeTitle(video.title);
+      final description = video.description;
+      final thumbnailUrl = video.thumbnails.highResUrl;
+      final duration = video.duration;
+
+      // Parse description for recipe content
+      final parsedDesc = _parseYouTubeDescription(description);
+      final rawIngredients = (parsedDesc['ingredients'] as List<String>? ?? []);
+      final ingredients = _ingParser.parseList(rawIngredients);
+
+      // Extract directions from description or try closed captions
+      List<String> directions = parsedDesc['directions'] ?? [];
+      
+      // If no directions in description, try chapters
+      if (directions.isEmpty) {
+        final chapters = _extractYouTubeChapters(description);
+        if (chapters.isNotEmpty) {
+          directions = chapters;
+        }
+      }
+      
+      // If still no directions and we have few ingredients, try closed captions
+      if (directions.isEmpty && ingredients.length < 3) {
+        directions = await _extractFromClosedCaptions(youtube, videoId);
+      }
+
+      // Format time from duration
+      String? timeStr;
+      if (duration != null) {
+        final minutes = duration.inMinutes;
+        if (minutes >= 60) {
+          timeStr = '${minutes ~/ 60}h ${minutes % 60}m';
+        } else {
+          timeStr = '${minutes}m';
+        }
+      }
+
+      return RecipeImportResult(
+        name: title,
+        source: RecipeSource.url,
+        sourceUrl: url,
+        ingredients: ingredients,
+        directions: directions,
+        notes: parsedDesc['notes'],
+        time: timeStr,
+        imageUrl: thumbnailUrl,
+        nameConfidence: 0.9,
+        ingredientsConfidence: ingredients.isNotEmpty ? 0.7 : 0.3,
+        directionsConfidence: directions.isNotEmpty ? 0.7 : 0.3,
+      );
+    } finally {
+      youtube.close();
     }
-
-    String description = '';
-    final descMatch = RegExp(r'"shortDescription":\s*"((?:[^"\\]|\\.)*)"').firstMatch(body);
-    if (descMatch != null) {
-      description = _decodeUnicodeEscapes(descMatch.group(1) ?? '');
-    }
-
-    // Parse Description for Ingredients
-    final parsedDesc = _parseYouTubeDescription(description);
-    final rawIngredients = (parsedDesc['ingredients'] as List<String>? ?? []);
-    final ingredients = _ingParser.parseList(rawIngredients);
-
-    // Extract Chapters/Directions
-    List<String> directions = parsedDesc['directions'] ?? [];
-    if (directions.isEmpty) {
-       // Fallback: try to find chapters in description
-       final chapters = _extractYouTubeChapters(description);
-       if (chapters.isNotEmpty) {
-         directions = chapters.map((c) => c.title).toList();
-       }
-    }
-
-    return RecipeImportResult(
-      name: _cleanYouTubeTitle(title),
-      source: RecipeSource.url,
-      sourceUrl: url,
-      ingredients: ingredients,
-      directions: directions,
-      notes: parsedDesc['notes'],
-      time: parsedDesc['totalTime'],
-      imageUrl: 'https://img.youtube.com/vi/$videoId/maxresdefault.jpg',
-    );
   }
 
-  String? _extractYouTubeVideoId(String url) {
-    final uri = Uri.tryParse(url);
-    if (uri == null) return null;
-    if (uri.host.contains('youtube.com')) return uri.queryParameters['v'];
-    if (uri.host == 'youtu.be') return uri.pathSegments.isNotEmpty ? uri.pathSegments.first : null;
-    return null;
+  /// Try to extract recipe steps from closed captions
+  Future<List<String>> _extractFromClosedCaptions(yt.YoutubeExplode youtube, yt.VideoId videoId) async {
+    try {
+      final manifest = await youtube.videos.closedCaptions.getManifest(videoId);
+      final trackInfo = manifest.getByLanguage('en') ?? (manifest.tracks.isNotEmpty ? manifest.tracks.first : null);
+      
+      if (trackInfo == null) return [];
+      
+      final track = await youtube.videos.closedCaptions.get(trackInfo);
+      
+      // Extract key cooking steps from captions
+      // Look for action verbs that indicate recipe steps
+      final steps = <String>[];
+      final actionPattern = RegExp(
+        r'^(add|mix|stir|pour|heat|cook|bake|preheat|combine|whisk|blend|chop|dice|slice|fold|simmer|boil|fry|grill|roast|season|serve)\b',
+        caseSensitive: false,
+      );
+      
+      for (final caption in track.captions) {
+        final text = caption.text.trim();
+        if (text.length > 20 && actionPattern.hasMatch(text)) {
+          // Capitalize first letter and add to steps
+          final step = text[0].toUpperCase() + text.substring(1);
+          if (!steps.contains(step)) {
+            steps.add(step);
+          }
+        }
+      }
+      
+      return steps.take(15).toList(); // Limit to 15 steps
+    } catch (_) {
+      return []; // Captions not available
+    }
   }
 
   String _cleanYouTubeTitle(String title) {
@@ -499,51 +538,49 @@ class YouTubeStrategy implements RecipeParserStrategy {
       if (line.isEmpty) continue;
       
       final lower = line.toLowerCase();
+      
+      // Section header detection
       if (RegExp(r'^(ingredients?|shopping list)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
         currentSection = 'ingredients'; continue;
-      } else if (RegExp(r'^(directions?|instructions?|method)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
+      } else if (RegExp(r'^(directions?|instructions?|method|steps?)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
         currentSection = 'directions'; continue;
-      } else if (RegExp(r'^(notes?)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
+      } else if (RegExp(r'^(notes?|tips?)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
         currentSection = 'notes'; continue;
       }
-
-      // Check specific timestamp lines and skip
+      
+      // Skip timestamp lines, URLs, and social links
       if (RegExp(r'^\d{1,2}:\d{2}').hasMatch(line)) continue;
+      if (line.contains('http://') || line.contains('https://')) continue;
+      if (RegExp(r'(instagram|facebook|twitter|tiktok|subscribe|follow)', caseSensitive: false).hasMatch(lower)) continue;
 
       if (currentSection == 'ingredients') ingredients.add(line);
       else if (currentSection == 'directions') directions.add(line);
       else if (currentSection == 'notes') notes.add(line);
       else {
-        // Auto-detect if we haven't hit a header yet
-        if (RegExp(r'\d+\s*(?:cup|tbsp|tsp|g|oz)').hasMatch(lower)) {
+        // Auto-detect ingredient lines by measurement patterns
+        if (RegExp(r'\d+\s*(?:cup|cups|tbsp|tsp|g|oz|ml|lb|kg)', caseSensitive: false).hasMatch(line)) {
           currentSection = 'ingredients';
           ingredients.add(line);
         }
       }
     }
+    
     result['ingredients'] = ingredients;
     result['directions'] = directions;
     if (notes.isNotEmpty) result['notes'] = notes.join('\n');
     return result;
   }
 
-  List<({String title})> _extractYouTubeChapters(String description) {
-    final chapters = <({String title})>[];
+  List<String> _extractYouTubeChapters(String description) {
+    final chapters = <String>[];
     final lines = description.split('\n');
     for (var line in lines) {
-      final match = RegExp(r'(\d{1,2}:\d{2})\s+(.+)').firstMatch(line.trim());
+      final match = RegExp(r'^(\d{1,2}:\d{2}(?::\d{2})?)\s+(.+)').firstMatch(line.trim());
       if (match != null) {
-        chapters.add((title: match.group(2)!.trim()));
+        chapters.add(match.group(2)!.trim());
       }
     }
     return chapters;
-  }
-
-  String _decodeUnicodeEscapes(String text) {
-    return text.replaceAllMapped(RegExp(r'\\u([0-9a-fA-F]{4})'), (match) {
-      final code = int.tryParse(match.group(1)!, radix: 16);
-      return code != null ? String.fromCharCode(code) : match.group(0)!;
-    }).replaceAll(r'\n', '\n').replaceAll(r'\"', '"');
   }
 }
 
