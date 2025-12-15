@@ -250,12 +250,14 @@ class UrlRecipeImporter {
               equipment: htmlEquipment.isNotEmpty ? htmlEquipment : jsonLdResult.equipment,
               rawIngredients: htmlIngredients.map((raw) {
                 final parsed = _parseIngredientString(raw);
+                // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
+                final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
                 return RawIngredientData(
                   original: raw,
                   amount: parsed.amount,
                   unit: parsed.unit,
                   preparation: parsed.preparation,
-                  name: parsed.name.isNotEmpty ? parsed.name : raw,
+                  name: parsed.name.isNotEmpty ? parsed.name : cleanedRaw,
                   looksLikeIngredient: parsed.name.isNotEmpty,
                   isSection: parsed.section != null,
                   sectionName: parsed.section,
@@ -279,20 +281,24 @@ class UrlRecipeImporter {
         }
         
         // Always try to supplement JSON-LD with glass/garnish from HTML (for drink recipes)
-        // and equipment if missing. These aren't standard Schema.org Recipe properties.
+        // and equipment/directions if missing. These aren't standard Schema.org Recipe properties.
         final sectionResult = _parseHtmlBySections(document);
         final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
         final htmlGlass = sectionResult['glass'] as String?;
         final htmlGarnish = sectionResult['garnish'] as List<String>? ?? [];
         final htmlNotes = sectionResult['notes'] as String?;
         
+        // Also try to extract directions from HTML (handles Lyres/Shopify embedded JSON)
+        final htmlDirections = _extractDirectionsFromRawHtml(document, body);
+        
         // Check if we need to supplement anything
         final needsEquipment = jsonLdResult.equipment.isEmpty && htmlEquipment.isNotEmpty;
         final needsGlass = (jsonLdResult.glass == null || jsonLdResult.glass!.isEmpty) && htmlGlass != null;
         final needsGarnish = jsonLdResult.garnish.isEmpty && htmlGarnish.isNotEmpty;
         final needsNotes = (jsonLdResult.notes == null || jsonLdResult.notes!.isEmpty) && htmlNotes != null;
+        final needsDirections = jsonLdResult.directions.isEmpty && htmlDirections.isNotEmpty;
         
-        if (needsEquipment || needsGlass || needsGarnish || needsNotes) {
+        if (needsEquipment || needsGlass || needsGarnish || needsNotes || needsDirections) {
           // Combine notes if both exist
           String? combinedNotes = jsonLdResult.notes;
           if (needsNotes) {
@@ -310,7 +316,7 @@ class UrlRecipeImporter {
             serves: jsonLdResult.serves,
             time: jsonLdResult.time,
             ingredients: jsonLdResult.ingredients,
-            directions: jsonLdResult.directions,
+            directions: needsDirections ? htmlDirections : jsonLdResult.directions,
             notes: combinedNotes,
             imageUrl: jsonLdResult.imageUrl,
             nutrition: jsonLdResult.nutrition,
@@ -318,14 +324,14 @@ class UrlRecipeImporter {
             glass: needsGlass ? htmlGlass : jsonLdResult.glass,
             garnish: needsGarnish ? htmlGarnish : jsonLdResult.garnish,
             rawIngredients: jsonLdResult.rawIngredients,
-            rawDirections: jsonLdResult.rawDirections,
+            rawDirections: needsDirections ? htmlDirections.map((d) => RawDirectionData(original: d, text: d)).toList() : jsonLdResult.rawDirections,
             detectedCourses: jsonLdResult.detectedCourses,
             detectedCuisines: jsonLdResult.detectedCuisines,
             nameConfidence: jsonLdResult.nameConfidence,
             courseConfidence: jsonLdResult.courseConfidence,
             cuisineConfidence: jsonLdResult.cuisineConfidence,
             ingredientsConfidence: jsonLdResult.ingredientsConfidence,
-            directionsConfidence: jsonLdResult.directionsConfidence,
+            directionsConfidence: needsDirections ? 0.7 : jsonLdResult.directionsConfidence, // Lower confidence for HTML-extracted directions
             servesConfidence: jsonLdResult.servesConfidence,
             timeConfidence: jsonLdResult.timeConfidence,
             sourceUrl: jsonLdResult.sourceUrl,
@@ -2157,7 +2163,9 @@ class UrlRecipeImporter {
     if (!isRecipe) return null;
 
     // Parse ingredients and sort by quantity
-    var ingredients = _parseIngredients(data['recipeIngredient']);
+    // Use _extractRawIngredients first to rejoin incorrectly split ingredients (e.g., Diffords comma splits)
+    final rawIngredientStrings = _extractRawIngredients(data['recipeIngredient']);
+    var ingredients = _parseIngredients(rawIngredientStrings);
     ingredients = _sortIngredientsByQuantity(ingredients);
 
     // Parse nutrition information if available
@@ -2230,8 +2238,10 @@ class UrlRecipeImporter {
     final nameConfidence = name.isNotEmpty ? 0.9 : 0.0;
 
     // Parse ingredients and collect raw data
+    // Use _extractRawIngredients first to rejoin incorrectly split ingredients (e.g., Diffords comma splits)
     final rawIngredientStrings = _extractRawIngredients(data['recipeIngredient']);
-    var ingredients = _parseIngredients(data['recipeIngredient']);
+    // Parse from the already-rejoined raw strings, not the original JSON-LD
+    var ingredients = _parseIngredients(rawIngredientStrings);
     ingredients = _sortIngredientsByQuantity(ingredients);
     
     // Calculate ingredients confidence based on how many we successfully parsed
@@ -2298,13 +2308,16 @@ class UrlRecipeImporter {
       // keep the empty name so the review screen can display it as a section header
       final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
       
+      // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
+      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+      
       return RawIngredientData(
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
         preparation: parsed.preparation,
         bakerPercent: bakerPct != null ? '$bakerPct%' : null,
-        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
+        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
         sectionName: parsed.section,
@@ -3766,6 +3779,7 @@ class UrlRecipeImporter {
     equipmentItems = sectionResult['equipment'] ?? [];
     yield = sectionResult['yield'];
     timing = sectionResult['timing'];
+    final htmlNotes = sectionResult['notes'] as String?;
     
     if (rawIngredientStrings.isEmpty) {
       rawIngredientStrings = sectionResult['ingredients'] ?? [];
@@ -4981,13 +4995,16 @@ class UrlRecipeImporter {
       // keep the empty name so the review screen can display it as a section header
       final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
       
+      // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
+      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+      
       return RawIngredientData(
         original: raw,
         amount: parsed.amount,
         unit: parsed.unit,
         preparation: parsed.preparation,
         bakerPercent: bakerPct != null ? '$bakerPct%' : null,
-        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
+        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
         looksLikeIngredient: parsed.name.isNotEmpty,
         isSection: parsed.section != null,
         sectionName: parsed.section,
@@ -5035,6 +5052,7 @@ class UrlRecipeImporter {
       time: timing,
       ingredients: ingredients,
       directions: rawDirections,
+      notes: htmlNotes,
       equipment: equipmentItems,
       glass: glassType,
       garnish: garnishItems,
@@ -5051,6 +5069,112 @@ class UrlRecipeImporter {
       source: RecipeSource.url,
       imagePaths: imagePaths,
     );
+  }
+  
+  /// Extract directions from raw HTML body, handling Shopify/Lyres-style embedded JSON
+  /// with unicode escapes. This is needed for supplement logic when JSON-LD is missing directions.
+  List<String> _extractDirectionsFromRawHtml(dynamic document, String rawBody) {
+    final directions = <String>[];
+    
+    // Decode unicode escapes that Shopify/Lyres uses (embedded HTML in JSON)
+    var bodyHtml = rawBody
+        .replaceAll(r'\u003c', '<')
+        .replaceAll(r'\u003e', '>')
+        .replaceAll(r'\u0026', '&')
+        .replaceAll(r'\/', '/')
+        .replaceAll(r'\n', ' ')
+        .replaceAll(r'\"', '"')
+        .replaceAll('\\u003c', '<')
+        .replaceAll('\\u003e', '>')
+        .replaceAll('\\u0026', '&')
+        .replaceAll('\\/', '/')
+        .replaceAll('\\n', ' ')
+        .replaceAll('\\"', '"');
+    
+    // Pattern 1: Lyres-style recipe-info divs with h4 Method title
+    final recipeInfoDivs = RegExp(
+      r'<div[^>]*class="[^"]*recipe-info[^"]*"[^>]*>(.*?)</div>',
+      caseSensitive: false,
+      dotAll: true,
+    ).allMatches(bodyHtml);
+    
+    for (final divMatch in recipeInfoDivs) {
+      final divContent = divMatch.group(1) ?? '';
+      final h4Match = RegExp(
+        r'<h4[^>]*>(.*?)</h4>',
+        caseSensitive: false,
+        dotAll: true,
+      ).firstMatch(divContent);
+      
+      if (h4Match == null) continue;
+      
+      final h4Title = (h4Match.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim().toLowerCase();
+      
+      if (h4Title == 'method' || h4Title == 'directions' || h4Title == 'instructions') {
+        final afterH4 = divContent.substring(h4Match.end);
+        final pMatches = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).allMatches(afterH4);
+        for (final pMatch in pMatches) {
+          final text = _decodeHtml((pMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+          if (text.isNotEmpty) {
+            // Split by periods if multiple sentences
+            if (text.contains('. ')) {
+              directions.addAll(text.split(RegExp(r'\.\s+')).where((s) => s.trim().isNotEmpty).map((s) {
+                final trimmed = s.trim();
+                return trimmed.endsWith('.') ? trimmed : '$trimmed.';
+              }));
+            } else {
+              directions.add(text);
+            }
+          }
+        }
+        if (directions.isNotEmpty) return directions;
+      }
+    }
+    
+    // Pattern 2: Standalone h4>Method followed by p (not in recipe-info div)
+    if (directions.isEmpty) {
+      final methodMatch = RegExp(
+        r'<h4[^>]*>\s*Method\s*</h4>\s*<p[^>]*>(.*?)</p>',
+        caseSensitive: false,
+        dotAll: true,
+      ).firstMatch(bodyHtml);
+      if (methodMatch != null) {
+        final text = _decodeHtml((methodMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
+        if (text.isNotEmpty) {
+          directions.add(text);
+        }
+      }
+    }
+    
+    // Pattern 3: DOM-based extraction for h2/h3 Method or Directions heading
+    if (directions.isEmpty) {
+      for (final heading in document.querySelectorAll('h2, h3, h4')) {
+        final headingText = (heading.text?.trim() ?? '').toLowerCase();
+        if (headingText == 'method' || headingText == 'directions' || headingText == 'instructions') {
+          // Get next sibling elements for content
+          var sibling = heading.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            // Stop at next heading
+            if (tagName.startsWith('h') && tagName.length == 2) break;
+            
+            if (tagName == 'p') {
+              final text = _decodeHtml((sibling.text ?? '').trim());
+              if (text.isNotEmpty) directions.add(text);
+            } else if (tagName == 'ol' || tagName == 'ul') {
+              for (final li in sibling.querySelectorAll('li')) {
+                final text = _decodeHtml((li.text ?? '').trim());
+                if (text.isNotEmpty) directions.add(text);
+              }
+            }
+            sibling = sibling.nextElementSibling;
+          }
+          if (directions.isNotEmpty) break;
+        }
+      }
+    }
+    
+    return directions;
   }
   
   /// Parse HTML by looking for section headings (h2, h3) followed by content
