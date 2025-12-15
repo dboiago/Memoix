@@ -316,7 +316,7 @@ class UrlRecipeImporter {
             serves: jsonLdResult.serves,
             time: jsonLdResult.time,
             ingredients: jsonLdResult.ingredients,
-            directions: needsDirections ? htmlDirections : jsonLdResult.directions,
+            directions: needsDirections ? List<String>.from(htmlDirections) : jsonLdResult.directions,
             notes: combinedNotes,
             imageUrl: jsonLdResult.imageUrl,
             nutrition: jsonLdResult.nutrition,
