@@ -119,6 +119,51 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.containerWithSections,
   ),
   
+  // Tasty Recipes plugin (WordPress)
+  'tasty-recipes': SiteConfig(
+    sectionSelector: '.tasty-recipes-ingredients-body',
+    headerSelector: 'h4, .tasty-recipes-ingredients-header',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  
+  // EasyRecipe plugin (WordPress)
+  'easyrecipe': SiteConfig(
+    containerSelector: '.ERSIngredients, .easy-recipe-ingredients',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.mixedList,
+  ),
+  
+  // Cooked plugin (WordPress)
+  'cooked': SiteConfig(
+    sectionSelector: '.cooked-recipe-ingredients',
+    headerSelector: '.cooked-heading',
+    ingredientSelector: '.cooked-single-ingredient',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  
+  // Recipe Card Blocks by FLAVOR
+  'flavor-recipecard': SiteConfig(
+    sectionSelector: '.recipe-card-ingredients',
+    headerSelector: 'h4',
+    ingredientSelector: 'li',
+    mode: ExtractionMode.containerWithSections,
+  ),
+  
+  // Yummly / ZipList / common generic
+  'yummly-ziplist': SiteConfig(
+    containerSelector: '.recipe-ingredients, .ingredient-list',
+    ingredientSelector: 'li, .recipe-ingred_txt, .ingredient-item',
+    mode: ExtractionMode.mixedList,
+  ),
+  
+  // Schema.org microdata format
+  'microdata': SiteConfig(
+    containerSelector: '[itemtype*="Recipe"]',
+    ingredientSelector: '[itemprop="recipeIngredient"]',
+    mode: ExtractionMode.mixedList,
+  ),
+  
   // Generic headers in .ingredients container
   'generic-headers': SiteConfig(
     containerSelector: '.ingredients',
@@ -7106,299 +7151,16 @@ class UrlRecipeImporter {
   }
   
   /// Extract ingredients with section headers from HTML
-  /// Handles sites like AmazingFoodMadeEasy that have structured HTML with sections
-  /// but JSON-LD only has a flat ingredient list
+  /// Uses config-driven extraction with site-specific selector patterns
   List<String> _extractIngredientsWithSections(dynamic document) {
-    // Try config-driven extraction first
+    // Try config-driven extraction
     final configResult = _tryAllSiteConfigs(document);
     if (configResult != null && configResult.isNotEmpty) {
       return configResult;
     }
     
-    // Fallback to legacy extraction for any patterns not yet in configs
+    // Final fallback: Query li.category and li.ingredient in document order
     final ingredients = <String>[];
-    
-    // Try King Arthur Baking format: div.ingredient-section with p for section name and ul.list--bullets
-    final kingArthurSections = document.querySelectorAll('.ingredient-section');
-    if (kingArthurSections.isNotEmpty) {
-      for (final section in kingArthurSections) {
-        // Get section name from the first <p> child (not inside ul)
-        // We need to find a <p> that is a direct child of the section div
-        for (final child in section.children) {
-          if (child.localName == 'p') {
-            var sectionText = _decodeHtml((child.text ?? '').trim());
-            // Remove trailing colon if present
-            sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
-            if (sectionText.isNotEmpty) {
-              ingredients.add('[$sectionText]');
-            }
-            break; // Only get the first <p>
-          }
-        }
-        
-        // Get ingredients from ul li
-        final items = section.querySelectorAll('ul li');
-        for (final item in items) {
-          final text = _decodeHtml((item.text ?? '').trim());
-          if (text.isNotEmpty) {
-            ingredients.add(text);
-          }
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try Tasty.co format: div.ingredients__section with p.ingredient-section-name and li.ingredient
-    final tastySections = document.querySelectorAll('.ingredients__section');
-    if (tastySections.isNotEmpty) {
-      for (final section in tastySections) {
-        // Get section name from p.ingredient-section-name
-        final sectionNameElem = section.querySelector('.ingredient-section-name');
-        if (sectionNameElem != null) {
-          var sectionText = _decodeHtml((sectionNameElem.text ?? '').trim());
-          // Remove trailing colon if present
-          sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
-          if (sectionText.isNotEmpty) {
-            ingredients.add('[$sectionText]');
-          }
-        }
-        
-        // Get ingredients from li.ingredient
-        final items = section.querySelectorAll('li.ingredient');
-        for (final item in items) {
-          final text = _decodeHtml((item.text ?? '').trim());
-          if (text.isNotEmpty) {
-            ingredients.add(text);
-          }
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try Serious Eats format: p.structured-ingredients__list-heading followed by ul.structured-ingredients__list
-    final seriousEatsHeaders = document.querySelectorAll('.structured-ingredients__list-heading');
-    if (seriousEatsHeaders.isNotEmpty) {
-      for (final header in seriousEatsHeaders) {
-        var sectionText = _decodeHtml((header.text ?? '').trim());
-        // Remove trailing colon if present
-        sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
-        if (sectionText.isNotEmpty) {
-          // Remove "For the" prefix if present
-          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-          if (forTheMatch != null) {
-            sectionText = forTheMatch.group(1)?.trim() ?? sectionText;
-          }
-          ingredients.add('[$sectionText]');
-        }
-        
-        // Get the ul sibling that follows this header
-        var sibling = header.nextElementSibling;
-        while (sibling != null) {
-          final tagName = sibling.localName?.toLowerCase() ?? '';
-          
-          if (tagName == 'ul') {
-            // Get all li elements
-            final items = sibling.querySelectorAll('li');
-            for (final item in items) {
-              final text = _decodeHtml((item.text ?? '').trim());
-              if (text.isNotEmpty) {
-                ingredients.add(text);
-              }
-            }
-            break; // Found the ul, move to next section
-          } else if (tagName == 'p' && sibling.attributes['class']?.contains('structured-ingredients__list-heading') == true) {
-            break; // Next section header
-          }
-          sibling = sibling.nextElementSibling;
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try AmazingFoodMadeEasy format: ul.ingredient_list with li.category and li.ingredient
-    var ingredientList = document.querySelector('ul.ingredient_list');
-    ingredientList ??= document.querySelector('.ingredient_list');
-    
-    if (ingredientList != null) {
-      final allLiItems = ingredientList.querySelectorAll('li');
-      for (final li in allLiItems) {
-        final liClasses = li.attributes['class'] ?? '';
-        
-        if (liClasses.contains('category')) {
-          final headerElem = li.querySelector('h3');
-          if (headerElem != null) {
-            final sectionText = _decodeHtml((headerElem.text ?? '').trim());
-            if (sectionText.isNotEmpty) {
-              var sectionName = sectionText;
-              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-              if (forTheMatch != null) {
-                sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
-              }
-              ingredients.add('[$sectionName]');
-            }
-          }
-        } else if (liClasses.contains('ingredient')) {
-          final text = _decodeHtml((li.text ?? '').trim());
-          if (text.isNotEmpty) {
-            ingredients.add(text);
-          }
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try NYT Cooking format: h3 with class containing "ingredientgroup_name" followed by ul with li.ingredient
-    final nytSectionHeaders = document.querySelectorAll('[class*="ingredientgroup_name"]');
-    if (nytSectionHeaders.isNotEmpty) {
-      for (final header in nytSectionHeaders) {
-        var sectionText = _decodeHtml((header.text ?? '').trim());
-        if (sectionText.isNotEmpty) {
-          // Remove "For the" prefix if present
-          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-          if (forTheMatch != null) {
-            sectionText = forTheMatch.group(1)?.trim() ?? sectionText;
-          }
-          ingredients.add('[$sectionText]');
-        }
-        
-        // Get the ul sibling that follows this header
-        var sibling = header.nextElementSibling;
-        while (sibling != null) {
-          final tagName = sibling.localName?.toLowerCase() ?? '';
-          
-          if (tagName == 'ul') {
-            // Get all li elements (NYT uses class containing "ingredient")
-            final items = sibling.querySelectorAll('li');
-            for (final item in items) {
-              final text = _decodeHtml((item.text ?? '').trim());
-              if (text.isNotEmpty) {
-                ingredients.add(text);
-              }
-            }
-            break; // Found the ul, move to next section
-          } else if (tagName == 'h3' || tagName == 'h2') {
-            break; // Next section header
-          }
-          sibling = sibling.nextElementSibling;
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try WPRM (WordPress Recipe Maker) format with ingredient groups
-    final wprmGroups = document.querySelectorAll('.wprm-recipe-ingredient-group');
-    if (wprmGroups.isNotEmpty) {
-      for (final group in wprmGroups) {
-        final groupName = group.querySelector('.wprm-recipe-group-name');
-        if (groupName != null) {
-          final sectionText = _decodeHtml((groupName.text ?? '').trim());
-          if (sectionText.isNotEmpty) {
-            ingredients.add('[$sectionText]');
-          }
-        }
-        
-        final items = group.querySelectorAll('.wprm-recipe-ingredient');
-        for (final item in items) {
-          final text = _decodeHtml((item.text ?? '').trim());
-          if (text.isNotEmpty) {
-            ingredients.add(text);
-          }
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try generic section headers: h3 or h4 followed by ul/li
-    final sectionHeaders = document.querySelectorAll('.ingredient-section-header, .ingredients h3, .ingredients h4');
-    if (sectionHeaders.isNotEmpty) {
-      for (final header in sectionHeaders) {
-        final sectionText = _decodeHtml((header.text ?? '').trim());
-        if (sectionText.isNotEmpty) {
-          var sectionName = sectionText;
-          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-          if (forTheMatch != null) {
-            sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
-          }
-          ingredients.add('[$sectionName]');
-        }
-        
-        // Get ingredients after this header
-        var sibling = header.nextElementSibling;
-        while (sibling != null) {
-          final tagName = sibling.localName?.toLowerCase() ?? '';
-          
-          if (tagName == 'ul' || tagName == 'ol') {
-            final items = sibling.querySelectorAll('li');
-            for (final item in items) {
-              final text = _decodeHtml((item.text ?? '').trim());
-              if (text.isNotEmpty) {
-                ingredients.add(text);
-              }
-            }
-          } else if (tagName == 'h3' || tagName == 'h4' || tagName == 'h2') {
-            break; // Next section
-          }
-          
-          sibling = sibling.nextElementSibling;
-        }
-      }
-      
-      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-    }
-    
-    // Try to find a specific ingredient container first (Saveur, etc.)
-    // This avoids duplicate ingredients when the page has multiple copies for mobile/desktop views
-    final ingredientContainerSelectors = [
-      '#recipe-ingredients',           // Saveur uses id="recipe-ingredients"
-      'ul.ingredients',                // Common pattern
-      '.ingredients ul',               // ul inside .ingredients
-      '.recipe-ingredients',           // Common class
-      '[data-recipe-ingredients]',     // Data attribute pattern
-    ];
-    
-    for (final selector in ingredientContainerSelectors) {
-      // Use querySelector to get only the FIRST container
-      final container = document.querySelector(selector);
-      if (container != null) {
-        final containerLis = container.querySelectorAll('li');
-        if (containerLis.isNotEmpty) {
-          for (final li in containerLis) {
-            final liClasses = li.attributes['class'] ?? '';
-            
-            if (liClasses.contains('category')) {
-              final h3 = li.querySelector('h3');
-              if (h3 != null) {
-                final text = _decodeHtml((h3.text ?? '').trim());
-                if (text.isNotEmpty) {
-                  var sectionName = text;
-                  final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
-                  if (forTheMatch != null) {
-                    sectionName = forTheMatch.group(1)?.trim() ?? text;
-                  }
-                  ingredients.add('[$sectionName]');
-                }
-              }
-            } else {
-              final text = _decodeHtml((li.text ?? '').trim());
-              if (text.isNotEmpty) {
-                ingredients.add(text);
-              }
-            }
-          }
-          
-          if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
-        }
-      }
-    }
-    
-    // Fallback: Query li.category and li.ingredient in document order
-    // Apply deduplication to handle pages with multiple ingredient lists
     final allLis = document.querySelectorAll('li.category, li.ingredient');
     if (allLis.isNotEmpty) {
       for (final li in allLis) {
@@ -7409,12 +7171,7 @@ class UrlRecipeImporter {
           if (h3 != null) {
             final text = _decodeHtml((h3.text ?? '').trim());
             if (text.isNotEmpty) {
-              var sectionName = text;
-              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
-              if (forTheMatch != null) {
-                sectionName = forTheMatch.group(1)?.trim() ?? text;
-              }
-              ingredients.add('[$sectionName]');
+              ingredients.add('[${_cleanSectionName(text)}]');
             }
           }
         } else if (liClasses.contains('ingredient')) {
