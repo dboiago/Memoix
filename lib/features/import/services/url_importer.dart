@@ -2360,12 +2360,66 @@ class UrlRecipeImporter {
     if (value == null) return [];
     if (value is String) return [_decodeHtml(value)];
     if (value is List) {
-      return value
+      var items = value
           .map((e) => _decodeHtml(e.toString().trim()))
           .where((s) => s.isNotEmpty)
           .toList();
+      
+      // Post-process to rejoin incorrectly split ingredients
+      // Some sites (like Diffords) incorrectly split ingredients on commas in their JSON-LD,
+      // resulting in fragments like "(2", "1", ")" instead of "(2 sugar to 1 water, 65.0°Brix)"
+      items = _rejoinSplitIngredients(items);
+      
+      return items;
     }
     return [];
+  }
+  
+  /// Rejoin ingredient items that were incorrectly split (usually on commas)
+  /// Detects fragments like "(2", "1", ")" and rejoins them with the previous complete ingredient
+  List<String> _rejoinSplitIngredients(List<String> items) {
+    if (items.length <= 1) return items;
+    
+    final result = <String>[];
+    var buffer = '';
+    int openParens = 0;
+    
+    for (final item in items) {
+      // Count parentheses
+      final openCount = item.split('(').length - 1;
+      final closeCount = item.split(')').length - 1;
+      
+      // Check if this looks like a fragment (very short, or just punctuation, or unbalanced parens)
+      final looksLikeFragment = 
+          item.length <= 3 ||  // Very short like "(2", "1", ")"
+          RegExp(r'^[\d.,°\s]+$').hasMatch(item) ||  // Just numbers, commas, degree symbols
+          RegExp(r'^[()]$').hasMatch(item) ||  // Just opening or closing paren
+          (buffer.isNotEmpty && openParens > 0);  // We're in the middle of a parenthetical
+      
+      if (buffer.isEmpty) {
+        buffer = item;
+        openParens = openCount - closeCount;
+      } else if (looksLikeFragment || openParens > 0) {
+        // This is a continuation - rejoin with comma (since that's likely how it was split)
+        buffer = '$buffer, $item';
+        openParens += openCount - closeCount;
+      } else {
+        // This is a new complete ingredient
+        result.add(buffer);
+        buffer = item;
+        openParens = openCount - closeCount;
+      }
+      
+      // If parentheses are balanced and buffer has content, we might have a complete ingredient
+      // But only if the next item doesn't look like a continuation
+    }
+    
+    // Don't forget the last item
+    if (buffer.isNotEmpty) {
+      result.add(buffer);
+    }
+    
+    return result;
   }
 
   /// Extract equipment from JSON-LD data
@@ -2984,8 +3038,9 @@ class UrlRecipeImporter {
     // Handle Seedlip/cocktail format: "Name: amount / metric" 
     // e.g., "Seedlip Grove 42: 1.75 oz / 53ml" or "Marmalade Cordial*: 1 oz / 30 ml"
     // Also handles "Cold Sparkling Water: Top" where "Top" means "top up"
+    // Also handles unicode fractions like "Fresh lime juice: ½ oz"
     final colonAmountMatch = RegExp(
-      r'^([^:]+):\s*([\d.]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)?|Top(?:\s+up)?|to\s+taste|as\s+needed)\s*(?:/\s*([\d.]+\s*(?:ml|cl|oz)?))?(.*)$',
+      r'^([^:]+):\s*([\d.½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:oz|ml|cl|dash|dashes|drops?|barspoons?|tsp|tbsp)?|Top(?:\s+up)?|to\s+taste|as\s+needed)\s*(?:/\s*([\d.½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:ml|cl|oz)?))?(.*)$',
       caseSensitive: false,
     ).firstMatch(remaining);
     if (colonAmountMatch != null) {
@@ -5603,11 +5658,17 @@ class UrlRecipeImporter {
     
     // Extract editor's notes from HTML
     // Pattern 1: Punch-style editors-note or editor-note classes
-    final editorsNoteElem = document.querySelector('.editors-note, .editor-note, .editors_note, .recipe-editor-note, [class*="editor"][class*="note"]');
+    // Punch uses various selectors including recipe__editors-note, recipe-editors-note, etc.
+    final editorsNoteElem = document.querySelector(
+      '.editors-note, .editor-note, .editors_note, .recipe-editor-note, '
+      '.recipe__editors-note, .recipe-editors-note, '
+      '[class*="editor"][class*="note"], '
+      '.recipe-note, .recipe__note'
+    );
     if (editorsNoteElem != null) {
       final noteText = _decodeHtml(editorsNoteElem.text?.trim() ?? '');
       if (noteText.isNotEmpty) {
-        result['notes'] = "Editor's Note: $noteText";
+        result['notes'] = noteText.toLowerCase().startsWith('editor') ? noteText : "Editor's Note: $noteText";
       }
     }
     
