@@ -280,7 +280,8 @@ class UrlRecipeImporter {
                                 document.querySelector('.ingredient-group-header') != null ||
                                 document.querySelector('.wprm-recipe-group-name') != null ||
                                 document.querySelector('.ingredients__section .ingredient-section-name') != null || // Tasty.co
-                                document.querySelector('[class*="ingredientgroup_name"]') != null; // NYT Cooking
+                                document.querySelector('[class*="ingredientgroup_name"]') != null || // NYT Cooking
+                                document.querySelector('.structured-ingredients__list-heading') != null; // Serious Eats
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -6137,6 +6138,47 @@ class UrlRecipeImporter {
           if (text.isNotEmpty) {
             ingredients.add(text);
           }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return ingredients;
+    }
+    
+    // Try Serious Eats format: p.structured-ingredients__list-heading followed by ul.structured-ingredients__list
+    final seriousEatsHeaders = document.querySelectorAll('.structured-ingredients__list-heading');
+    if (seriousEatsHeaders.isNotEmpty) {
+      for (final header in seriousEatsHeaders) {
+        var sectionText = _decodeHtml((header.text ?? '').trim());
+        // Remove trailing colon if present
+        sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
+        if (sectionText.isNotEmpty) {
+          // Remove "For the" prefix if present
+          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
+          if (forTheMatch != null) {
+            sectionText = forTheMatch.group(1)?.trim() ?? sectionText;
+          }
+          ingredients.add('[$sectionText]');
+        }
+        
+        // Get the ul sibling that follows this header
+        var sibling = header.nextElementSibling;
+        while (sibling != null) {
+          final tagName = sibling.localName?.toLowerCase() ?? '';
+          
+          if (tagName == 'ul') {
+            // Get all li elements
+            final items = sibling.querySelectorAll('li');
+            for (final item in items) {
+              final text = _decodeHtml((item.text ?? '').trim());
+              if (text.isNotEmpty) {
+                ingredients.add(text);
+              }
+            }
+            break; // Found the ul, move to next section
+          } else if (tagName == 'p' && sibling.attributes['class']?.contains('structured-ingredients__list-heading') == true) {
+            break; // Next section header
+          }
+          sibling = sibling.nextElementSibling;
         }
       }
       
