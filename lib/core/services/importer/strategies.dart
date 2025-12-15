@@ -494,9 +494,9 @@ class YouTubeStrategy implements RecipeParserStrategy {
   Future<List<String>> _extractFromClosedCaptions(yt.YoutubeExplode youtube, String videoId) async {
     try {
       final manifest = await youtube.videos.closedCaptions.getManifest(videoId);
-      final trackInfo = manifest.getByLanguage('en');
+      final englishTracks = manifest.getByLanguage('en');
       
-      if (trackInfo == null) {
+      if (englishTracks.isEmpty) {
         // Try first available track if no English
         if (manifest.tracks.isEmpty) return [];
         final firstTrack = manifest.tracks.first;
@@ -504,7 +504,7 @@ class YouTubeStrategy implements RecipeParserStrategy {
         return _extractStepsFromTrack(track);
       }
       
-      final track = await youtube.videos.closedCaptions.get(trackInfo);
+      final track = await youtube.videos.closedCaptions.get(englishTracks.first);
       return _extractStepsFromTrack(track);
     } catch (_) {
       return []; // Captions not available
