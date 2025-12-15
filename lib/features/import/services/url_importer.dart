@@ -324,7 +324,7 @@ class UrlRecipeImporter {
             glass: needsGlass ? htmlGlass : jsonLdResult.glass,
             garnish: needsGarnish ? htmlGarnish : jsonLdResult.garnish,
             rawIngredients: jsonLdResult.rawIngredients,
-            rawDirections: needsDirections ? htmlDirections.map((d) => RawDirectionData(original: d, text: d)).toList() : jsonLdResult.rawDirections,
+            rawDirections: needsDirections ? htmlDirections.map((d) => RawDirectionData(original: d)).toList() : jsonLdResult.rawDirections,
             detectedCourses: jsonLdResult.detectedCourses,
             detectedCuisines: jsonLdResult.detectedCuisines,
             nameConfidence: jsonLdResult.nameConfidence,
@@ -3779,7 +3779,6 @@ class UrlRecipeImporter {
     equipmentItems = sectionResult['equipment'] ?? [];
     yield = sectionResult['yield'];
     timing = sectionResult['timing'];
-    final htmlNotes = sectionResult['notes'] as String?;
     
     if (rawIngredientStrings.isEmpty) {
       rawIngredientStrings = sectionResult['ingredients'] ?? [];
@@ -3870,6 +3869,7 @@ class UrlRecipeImporter {
     List<String> garnishItems = [];
     String? yield;
     String? timing;
+    String? htmlNotes;
     bool usedStructuredFormat = false; // Flag for higher confidence when using structured recipe plugins
     
     // Check for Shopify/Lyres-style embedded HTML in JSON (recipe-info divs in product description)
@@ -4387,6 +4387,7 @@ class UrlRecipeImporter {
       garnishItems = sectionResult['garnish'] ?? [];
       yield = sectionResult['yield'];
       timing = sectionResult['timing'];
+      htmlNotes = sectionResult['notes'] as String?;
       // Section-based parsing is semi-structured
       if (rawIngredientStrings.isNotEmpty) {
         usedStructuredFormat = true;
@@ -4409,6 +4410,9 @@ class UrlRecipeImporter {
       }
       if (timing == null && sectionResult['timing'] != null) {
         timing = sectionResult['timing'];
+      }
+      if (htmlNotes == null && sectionResult['notes'] != null) {
+        htmlNotes = sectionResult['notes'] as String?;
       }
     }
     
