@@ -130,6 +130,10 @@ class UrlRecipeImporter {
         return await _importFromYouTube(videoId, url);
       }
       
+      // Parse the URL to get the host for Referer header
+      final uri = Uri.parse(url);
+      final origin = '${uri.scheme}://${uri.host}';
+      
       // Try fetching with standard browser headers first
       // Use Accept-Encoding: identity to prevent compression (Dart http can't auto-decompress brotli)
       var response = await http.get(
@@ -138,15 +142,60 @@ class UrlRecipeImporter {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
-          'Accept-Encoding': 'identity',
+          'Accept-Encoding': 'gzip, deflate',
+          'Referer': origin,
+          'Origin': origin,
+          'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+          'Sec-Ch-Ua-Mobile': '?0',
+          'Sec-Ch-Ua-Platform': '"Windows"',
           'Sec-Fetch-Dest': 'document',
           'Sec-Fetch-Mode': 'navigate',
-          'Sec-Fetch-Site': 'none',
+          'Sec-Fetch-Site': 'same-origin',
           'Sec-Fetch-User': '?1',
           'Upgrade-Insecure-Requests': '1',
           'Cache-Control': 'max-age=0',
+          'Connection': 'keep-alive',
         },
       );
+
+      // If first attempt fails with 403, try alternative approaches
+      if (response.statusCode == 403) {
+        // Try with Googlebot user-agent (sites often allow search engine crawlers)
+        response = await http.get(
+          Uri.parse(url),
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate',
+          },
+        );
+      }
+      
+      // If still 403, try with a mobile user agent
+      if (response.statusCode == 403) {
+        response = await http.get(
+          Uri.parse(url),
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate',
+          },
+        );
+      }
+      
+      // If still 403, try with minimal headers (some sites block on specific headers)
+      if (response.statusCode == 403) {
+        response = await http.get(
+          Uri.parse(url),
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+          },
+        );
+      }
 
       if (response.statusCode != 200) {
         throw Exception('Failed to fetch URL: ${response.statusCode}');
