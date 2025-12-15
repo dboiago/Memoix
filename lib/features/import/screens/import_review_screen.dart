@@ -215,22 +215,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           ),
           const SizedBox(height: 24),
 
-          // Ingredients
-          _buildSectionTitle(theme, 'Ingredients', Icons.kitchen,
-              confidence: result.ingredientsConfidence,),
-          const SizedBox(height: 8),
-          _buildIngredientsList(theme, result),
-          const SizedBox(height: 24),
-
-          // Equipment (for Modernist recipes)
-          if (result.equipment.isNotEmpty) ...[
-            _buildSectionTitle(theme, 'Equipment', Icons.build_outlined),
-            const SizedBox(height: 8),
-            _buildEquipmentList(theme, result),
-            const SizedBox(height: 24),
-          ],
-
-          // Glass (for Drinks)
+          // Glass (for Drinks) - placed above ingredients for consistency with edit screen
           if (_isDrinksCourse) ...[
             _buildSectionTitle(theme, 'Glass', Icons.local_bar),
             const SizedBox(height: 8),
@@ -243,6 +228,21 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             _buildSectionTitle(theme, 'Garnish', Icons.eco),
             const SizedBox(height: 8),
             _buildGarnishSection(theme),
+            const SizedBox(height: 24),
+          ],
+
+          // Ingredients
+          _buildSectionTitle(theme, 'Ingredients', Icons.kitchen,
+              confidence: result.ingredientsConfidence,),
+          const SizedBox(height: 8),
+          _buildIngredientsList(theme, result),
+          const SizedBox(height: 24),
+
+          // Equipment (for Modernist recipes)
+          if (result.equipment.isNotEmpty) ...[
+            _buildSectionTitle(theme, 'Equipment', Icons.build_outlined),
+            const SizedBox(height: 8),
+            _buildEquipmentList(theme, result),
             const SizedBox(height: 24),
           ],
 

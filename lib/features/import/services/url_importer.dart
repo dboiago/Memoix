@@ -3759,7 +3759,26 @@ class UrlRecipeImporter {
     
     // Check for Shopify/Lyres-style embedded HTML in JSON (recipe-info divs in product description)
     // These sites embed HTML inside JSON strings with unicode escaping (\u003c for <)
-    final bodyHtml = document.outerHtml;
+    var bodyHtml = document.outerHtml;
+    
+    // Decode common unicode escapes that Shopify/Lyres uses
+    bodyHtml = bodyHtml
+        .replaceAll(r'\u003c', '<')
+        .replaceAll(r'\u003e', '>')
+        .replaceAll(r'\u0026', '&')
+        .replaceAll(r'\/', '/')
+        .replaceAll(r'\n', ' ')
+        .replaceAll(r'\"', '"');
+    
+    // Also try the literal unicode escape format (without backslash interpretation)
+    bodyHtml = bodyHtml
+        .replaceAll('\\u003c', '<')
+        .replaceAll('\\u003e', '>')
+        .replaceAll('\\u0026', '&')
+        .replaceAll('\\/', '/')
+        .replaceAll('\\n', ' ')
+        .replaceAll('\\"', '"');
+    
     final embeddedRecipeMatch = RegExp(
       r'recipe-info[^>]*>.*?<h4[^>]*>([^<]+)</h4>\s*(?:<ul>.*?</ul>|<p>([^<]+)</p>)',
       caseSensitive: false,
