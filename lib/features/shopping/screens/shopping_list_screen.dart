@@ -145,7 +145,6 @@ class ShoppingListDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final theme = Theme.of(context);
     final listsAsync = ref.watch(shoppingListsProvider);
 
     return listsAsync.when(
@@ -169,9 +168,6 @@ class ShoppingListDetailScreen extends ConsumerWidget {
             body: const Center(child: Text('This shopping list no longer exists.')),
           );
         }
-
-        final grouped = list.groupedItems;
-        final categories = grouped.keys.toList()..sort();
 
         return Scaffold(
           appBar: AppBar(
@@ -199,41 +195,17 @@ class ShoppingListDetailScreen extends ConsumerWidget {
           ),
           body: ListView.builder(
             padding: const EdgeInsets.symmetric(vertical: 8),
-            itemCount: categories.length,
-            itemBuilder: (context, catIndex) {
-              final category = categories[catIndex];
-              final items = grouped[category]!;
-
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Category header
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    color: theme.colorScheme.surfaceContainerHighest,
-                    child: Text(
-                      category,
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: theme.colorScheme.primary,
-                      ),
-                    ),
-                  ),
-                  // Items
-                  ...items.asMap().entries.map((entry) {
-                    final itemIndex = list.items.indexOf(entry.value);
-                    return _ShoppingItemTile(
-                      item: entry.value,
-                      onToggle: () async {
-                        await ref.read(shoppingListServiceProvider).toggleItem(list, itemIndex);
-                      },
-                      onDelete: () async {
-                        await ref.read(shoppingListServiceProvider).removeItem(list, itemIndex);
-                      },
-                    );
-                  }),
-                ],
+            itemCount: list.items.length,
+            itemBuilder: (context, index) {
+              final item = list.items[index];
+              return _ShoppingItemTile(
+                item: item,
+                onToggle: () async {
+                  await ref.read(shoppingListServiceProvider).toggleItem(list, index);
+                },
+                onDelete: () async {
+                  await ref.read(shoppingListServiceProvider).removeItem(list, index);
+                },
               );
             },
           ),
@@ -249,17 +221,13 @@ class ShoppingListDetailScreen extends ConsumerWidget {
   void _shareList(BuildContext context, ShoppingList list) {
     // Share as text
     final buffer = StringBuffer();
-    buffer.writeln('🛒 ${list.name}');
+    buffer.writeln('Shopping List: ${list.name}');
     buffer.writeln();
     
-    for (final category in list.groupedItems.keys) {
-      buffer.writeln('$category:');
-      for (final item in list.groupedItems[category]!) {
-        final check = item.isChecked ? '✓' : '○';
-        final amount = item.amount != null ? '${item.amount} ' : '';
-        buffer.writeln('  $check $amount${item.name}');
-      }
-      buffer.writeln();
+    for (final item in list.items) {
+      final check = item.isChecked ? '[x]' : '[ ]';
+      final amount = item.amount != null ? '${item.amount} ' : '';
+      buffer.writeln('$check $amount${item.name}');
     }
     
     // Use share_plus to share

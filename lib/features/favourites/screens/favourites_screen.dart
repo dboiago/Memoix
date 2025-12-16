@@ -268,12 +268,54 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
       itemCount: filteredItems.length,
       itemBuilder: (context, index) {
         final item = filteredItems[index];
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 4),
-          child: _buildCard(item),
+        final showHeader = _sortOption == FavouriteSortOption.byCuisineType &&
+            (index == 0 || filteredItems[index - 1].cuisineType != item.cuisineType);
+        
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (showHeader) ...[
+              if (index > 0) const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8, top: 4),
+                child: Text(
+                  _getCuisineTypeLabel(item.cuisineType),
+                  style: theme.textTheme.titleSmall?.copyWith(
+                    color: theme.colorScheme.primary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: _buildCard(item),
+            ),
+          ],
         );
       },
     );
+  }
+
+  String _getCuisineTypeLabel(FavouriteCuisineType type) {
+    switch (type) {
+      case FavouriteCuisineType.recipes:
+        return 'Recipes';
+      case FavouriteCuisineType.cheese:
+        return 'Cheese';
+      case FavouriteCuisineType.cellar:
+        return 'Cellar';
+      case FavouriteCuisineType.pizzas:
+        return 'Pizzas';
+      case FavouriteCuisineType.sandwiches:
+        return 'Sandwiches';
+      case FavouriteCuisineType.modernist:
+        return 'Modernist';
+      case FavouriteCuisineType.smoking:
+        return 'Smoking';
+      case FavouriteCuisineType.all:
+        return 'All';
+    }
   }
 
   Widget _buildCard(FavouriteItem item) {
@@ -352,6 +394,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
   }
 
   void _showFilterOptions(BuildContext context) {
+    final theme = Theme.of(context);
     showModalBottomSheet(
       context: context,
       builder: (ctx) => Column(
@@ -360,7 +403,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('All'),
             trailing: _selectedCuisineType == FavouriteCuisineType.all
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.all);
@@ -370,7 +413,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Recipes'),
             trailing: _selectedCuisineType == FavouriteCuisineType.recipes
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.recipes);
@@ -380,7 +423,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Cheese'),
             trailing: _selectedCuisineType == FavouriteCuisineType.cheese
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.cheese);
@@ -390,7 +433,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Cellar'),
             trailing: _selectedCuisineType == FavouriteCuisineType.cellar
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.cellar);
@@ -400,7 +443,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Pizzas'),
             trailing: _selectedCuisineType == FavouriteCuisineType.pizzas
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.pizzas);
@@ -410,7 +453,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Sandwiches'),
             trailing: _selectedCuisineType == FavouriteCuisineType.sandwiches
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.sandwiches);
@@ -420,7 +463,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Modernist'),
             trailing: _selectedCuisineType == FavouriteCuisineType.modernist
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.modernist);
@@ -430,7 +473,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Smoking'),
             trailing: _selectedCuisineType == FavouriteCuisineType.smoking
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _selectedCuisineType = FavouriteCuisineType.smoking);
@@ -443,6 +486,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
   }
 
   void _showSortOptions(BuildContext context) {
+    final theme = Theme.of(context);
     showModalBottomSheet(
       context: context,
       builder: (ctx) => Column(
@@ -451,7 +495,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
           ListTile(
             title: const Text('Alphabetical'),
             trailing: _sortOption == FavouriteSortOption.alphabetical
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _sortOption = FavouriteSortOption.alphabetical);
@@ -459,9 +503,9 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
             },
           ),
           ListTile(
-            title: const Text('Recently added'),
+            title: const Text('Recently Added'),
             trailing: _sortOption == FavouriteSortOption.recentlyAdded
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _sortOption = FavouriteSortOption.recentlyAdded);
@@ -469,9 +513,9 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
             },
           ),
           ListTile(
-            title: const Text('Most cooked'),
+            title: const Text('Most Cooked'),
             trailing: _sortOption == FavouriteSortOption.mostCooked
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _sortOption = FavouriteSortOption.mostCooked);
@@ -479,9 +523,9 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
             },
           ),
           ListTile(
-            title: const Text('By cuisine type'),
+            title: const Text('By Cuisine Type'),
             trailing: _sortOption == FavouriteSortOption.byCuisineType
-                ? Icon(Icons.check, color: Theme.of(context).colorScheme.secondary)
+                ? Icon(Icons.check, color: theme.colorScheme.secondary)
                 : null,
             onTap: () {
               setState(() => _sortOption = FavouriteSortOption.byCuisineType);
