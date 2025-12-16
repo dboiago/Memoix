@@ -984,6 +984,45 @@ class StandardWebStrategy implements RecipeParserStrategy {
       result = _parseHtmlFallback(document, url, rawBody);
     }
     
+    // 4b. CRITICAL: If we have a result but it's incomplete (missing ingredients or directions),
+    // try the HTML fallback to fill in the gaps. Many sites have JSON-LD with partial data
+    // but complete HTML structures (e.g., Kitchen Craft, Punch Drink, Modernist Pantry)
+    if (result != null && (result.ingredients.isEmpty || result.directions.isEmpty)) {
+      final fallbackResult = _parseHtmlFallback(document, url, rawBody);
+      if (fallbackResult != null) {
+        // Merge: use fallback data for any missing fields
+        result = RecipeImportResult(
+          name: result.name,
+          course: result.course ?? fallbackResult.course,
+          cuisine: result.cuisine ?? fallbackResult.cuisine,
+          subcategory: result.subcategory ?? fallbackResult.subcategory,
+          serves: result.serves ?? fallbackResult.serves,
+          time: result.time ?? fallbackResult.time,
+          ingredients: result.ingredients.isNotEmpty ? result.ingredients : fallbackResult.ingredients,
+          directions: result.directions.isNotEmpty ? result.directions : fallbackResult.directions,
+          notes: result.notes ?? fallbackResult.notes,
+          imageUrl: result.imageUrl ?? fallbackResult.imageUrl,
+          nutrition: result.nutrition ?? fallbackResult.nutrition,
+          equipment: result.equipment.isNotEmpty ? result.equipment : fallbackResult.equipment,
+          glass: result.glass ?? fallbackResult.glass,
+          garnish: result.garnish.isNotEmpty ? result.garnish : fallbackResult.garnish,
+          sourceUrl: result.sourceUrl,
+          source: result.source,
+          nameConfidence: result.nameConfidence,
+          ingredientsConfidence: result.ingredients.isNotEmpty 
+              ? result.ingredientsConfidence 
+              : fallbackResult.ingredientsConfidence,
+          directionsConfidence: result.directions.isNotEmpty 
+              ? result.directionsConfidence 
+              : fallbackResult.directionsConfidence,
+          servesConfidence: result.servesConfidence,
+          timeConfidence: result.timeConfidence,
+          courseConfidence: result.courseConfidence,
+          cuisineConfidence: result.cuisineConfidence,
+        );
+      }
+    }
+    
     if (result == null) return null;
     
     // 5. Enhance with cocktail metadata (glass, garnish) for drink recipes
