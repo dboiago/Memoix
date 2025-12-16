@@ -253,7 +253,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
               title: const Text('Import from URL'),
               onTap: () {
                 Navigator.pop(ctx);
-                AppRoutes.toSmokingURLImport(context);
+                AppRoutes.toURLImport(context, course: 'Smoking');
               },
             ),
             const SizedBox(height: 8),

@@ -205,30 +205,148 @@ class RecipeImportResult {
   }
 
   /// Convert to a SmokingRecipe (for high-confidence Smoking imports)
+  /// 
+  /// Uses context-aware detection for smoking-specific fields:
+  /// - Wood type: prioritizes contextual matches ("hickory chips" > "hickory")
+  /// - Temperature: prefers smoking-range temps (200-300°F / 90-150°C)
+  /// - Seasonings: filters out proteins and liquids, keeps rubs/spices
   SmokingRecipe toSmokingRecipe(String uuid) {
-    // Try to detect wood type from ingredients or notes
-    String woodType = 'Hickory'; // Default
-    final allText = [...directions, notes ?? '', ...ingredients.map((i) => i.name)].join(' ').toLowerCase();
+    final allText = [
+      name ?? '',
+      notes ?? '',
+      ...directions,
+      ...ingredients.map((i) => i.name),
+    ].join(' ');
+    final lowerText = allText.toLowerCase();
+    
+    // Wood detection with context awareness
+    // Prioritize contextual matches like "hickory wood chips" over plain "hickory"
+    String? woodType;
     for (final wood in WoodSuggestions.common) {
-      if (allText.contains(wood.toLowerCase())) {
+      final lowerWood = wood.toLowerCase();
+      // Check for contextual match first (higher confidence)
+      final woodContext = RegExp(
+        '($lowerWood)\\s*(wood|chips?|chunks?|pellets?|smoke)|'
+        '(smoke|wood|chips?|chunks?|pellets?)\\s*($lowerWood)',
+        caseSensitive: false,
+      );
+      if (woodContext.hasMatch(lowerText)) {
         woodType = wood;
         break;
       }
     }
+    // Fallback: plain wood name match if no contextual match
+    if (woodType == null) {
+      for (final wood in WoodSuggestions.common) {
+        if (lowerText.contains(wood.toLowerCase())) {
+          woodType = wood;
+          break;
+        }
+      }
+    }
+    woodType ??= 'Hickory'; // Default
     
-    // Try to detect temperature from directions or notes
+    // Temperature detection tuned for smoking ranges
+    // Prefer typical smoking temps: 200-300°F or 90-150°C
     String temperature = '';
-    final tempMatch = RegExp(r'(\d{2,3})\s*[°]?\s*[FCfc]').firstMatch(allText);
-    if (tempMatch != null) {
-      temperature = tempMatch.group(0) ?? '';
+    final temps = <String>[];
+    
+    // Find all temperature mentions
+    final tempPatterns = [
+      RegExp(r'(\d{3})\s*°\s*F', caseSensitive: false),
+      RegExp(r'(\d{3})\s*degrees?\s*F', caseSensitive: false),
+      RegExp(r'at\s+(\d{3})\s*°?', caseSensitive: false),
+      RegExp(r'(\d{2,3})\s*°\s*C', caseSensitive: false),
+    ];
+    
+    for (final pattern in tempPatterns) {
+      for (final match in pattern.allMatches(allText)) {
+        final temp = match.group(1);
+        if (temp != null) {
+          final tempNum = int.tryParse(temp);
+          if (tempNum != null) {
+            String formatted;
+            if (pattern.pattern.contains('C')) {
+              formatted = '$temp°C';
+            } else if (tempNum >= 200 && tempNum <= 400) {
+              formatted = '$temp°F';
+            } else if (tempNum >= 90 && tempNum <= 200) {
+              formatted = '$temp°C';
+            } else {
+              continue;
+            }
+            if (!temps.contains(formatted)) {
+              temps.add(formatted);
+            }
+          }
+        }
+      }
     }
     
-    // Convert ingredients to seasonings
-    final seasonings = ingredients.map((i) => SmokingSeasoning.create(
-      name: i.name,
-      amount: i.amount,
-      unit: i.unit,
-    )).toList();
+    // Select best temperature (prefer smoking range 200-300°F)
+    for (final temp in temps) {
+      final numMatch = RegExp(r'(\d+)').firstMatch(temp);
+      if (numMatch != null) {
+        final num = int.tryParse(numMatch.group(1)!);
+        if (num != null) {
+          if (temp.contains('F') && num >= 200 && num <= 300) {
+            temperature = temp;
+            break;
+          } else if (temp.contains('C') && num >= 100 && num <= 150) {
+            temperature = temp;
+            break;
+          }
+        }
+      }
+    }
+    // Fallback to first found if no ideal match
+    if (temperature.isEmpty && temps.isNotEmpty) {
+      temperature = temps.first;
+    }
+    
+    // Ingredient classification: separate seasonings from proteins/liquids
+    // Seasonings are rubs, spices, dry ingredients - NOT the meat being smoked
+    const seasoningKeywords = [
+      'salt', 'pepper', 'paprika', 'cayenne', 'chili', 'cumin', 'garlic',
+      'onion powder', 'sugar', 'brown sugar', 'mustard', 'rub', 'spice',
+      'oregano', 'thyme', 'rosemary', 'sage', 'coriander', 'fennel',
+      'powder', 'ground', 'dried', 'smoked paprika', 'ancho', 'chipotle',
+    ];
+    const proteinKeywords = [
+      'brisket', 'pork', 'beef', 'ribs', 'chicken', 'turkey', 'salmon',
+      'pork butt', 'pork shoulder', 'chuck', 'tri-tip', 'lamb', 'duck',
+    ];
+    const liquidKeywords = [
+      'broth', 'stock', 'water', 'beer', 'wine', 'vinegar', 'oil',
+      'butter', 'sauce', 'marinade', 'juice', 'cider',
+    ];
+    
+    final seasonings = <SmokingSeasoning>[];
+    for (final ingredient in ingredients) {
+      final lower = ingredient.name.toLowerCase();
+      final isSeasoning = seasoningKeywords.any((kw) => lower.contains(kw));
+      final isProtein = proteinKeywords.any((kw) => lower.contains(kw));
+      final isLiquid = liquidKeywords.any((kw) => lower.contains(kw));
+      
+      // Include as seasoning if it looks like a seasoning AND is not a protein/liquid
+      if (isSeasoning && !isProtein && !isLiquid) {
+        seasonings.add(SmokingSeasoning.create(
+          name: ingredient.name,
+          amount: ingredient.amount,
+          unit: ingredient.unit,
+        ));
+      }
+    }
+    
+    // If no seasonings detected, include all ingredients as before
+    // (user can clean up in edit screen)
+    final finalSeasonings = seasonings.isNotEmpty
+        ? seasonings
+        : ingredients.map((i) => SmokingSeasoning.create(
+            name: i.name,
+            amount: i.amount,
+            unit: i.unit,
+          )).toList();
 
     final recipe = SmokingRecipe.create(
       uuid: uuid,
@@ -237,7 +355,7 @@ class RecipeImportResult {
       temperature: temperature,
       time: time ?? '',
       wood: woodType,
-      seasonings: seasonings,
+      seasonings: finalSeasonings,
       directions: directions,
       notes: notes,
       headerImage: imageUrl,
