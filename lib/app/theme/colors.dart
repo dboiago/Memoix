@@ -499,6 +499,68 @@ class MemoixColors {
     }
   }
 
+  /// Get dot color for a protein type in sandwiches/pizzas
+  /// Uses themed colors for visual identification of proteins
+  /// Falls back to primary color for unknown proteins
+  static Color forProteinDot(String? protein) {
+    if (protein == null || protein.isEmpty) return primary;
+    
+    final lower = protein.toLowerCase().trim();
+    
+    // Beef proteins
+    if (['beef', 'steak', 'roast beef', 'brisket', 'pastrami', 'corned beef',
+         'ground beef', 'meatball', 'meatballs'].contains(lower)) {
+      return smokedBeef;
+    }
+    
+    // Pork proteins
+    if (['pork', 'ham', 'bacon', 'prosciutto', 'pancetta', 'capicola',
+         'capocollo', 'coppa', 'mortadella', 'sausage', 'salami', 'pepperoni',
+         'pulled pork', 'carnitas', 'chorizo', 'lonza', 'guanciale'].contains(lower)) {
+      return smokedPork;
+    }
+    
+    // Poultry proteins
+    if (['chicken', 'turkey', 'duck', 'chicken breast', 'rotisserie chicken',
+         'fried chicken', 'grilled chicken', 'turkey breast', 'smoked turkey',
+         'chicken salad', 'turkey salad'].contains(lower)) {
+      return smokedPoultry;
+    }
+    
+    // Lamb proteins
+    if (['lamb', 'gyro', 'shawarma', 'doner', 'kebab'].contains(lower)) {
+      return smokedLamb;
+    }
+    
+    // Seafood proteins
+    if (['fish', 'tuna', 'salmon', 'shrimp', 'crab', 'lobster', 'sardine',
+         'sardines', 'anchovy', 'anchovies', 'smoked salmon', 'lox',
+         'fish fillet', 'tuna salad', 'crab salad'].contains(lower)) {
+      return smokedSeafood;
+    }
+    
+    // Egg proteins (use a warm golden)
+    if (['egg', 'eggs', 'fried egg', 'scrambled egg', 'omelette',
+         'omelet', 'egg salad'].contains(lower)) {
+      return spiritTequila; // Golden
+    }
+    
+    // Tofu/plant proteins (use teal/green)
+    if (['tofu', 'tempeh', 'seitan', 'beyond meat', 'impossible',
+         'plant protein', 'veggie patty', 'falafel'].contains(lower)) {
+      return vegn;
+    }
+    
+    // Deli meats (mixed/cured - use terracotta)
+    if (['deli meat', 'cold cut', 'cold cuts', 'lunch meat',
+         'luncheon meat', 'bologna', 'olive loaf'].contains(lower)) {
+      return smokedDips;
+    }
+    
+    // Default to primary for unknown proteins
+    return primary;
+  }
+
   /// Get dot color for a smoked item category
   /// Uses themed colors for visual identification of what's being smoked
   static Color forSmokedItemDot(String? category) {

@@ -239,64 +239,88 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
         scrollDirection: Axis.horizontal,
         children: [
           // "All" chip
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: FilterChip(
-              label: const Text('All'),
-              selected: _selectedProtein == null,
-              onSelected: (selected) {
-                if (selected) {
-                  setState(() => _selectedProtein = null);
-                }
-              },
-              selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
-            ),
+          _buildFilterChip(
+            label: 'All',
+            isSelected: _selectedProtein == null,
+            selectedColor: MemoixColors.sandwiches,
+            theme: theme,
+            onSelected: (selected) {
+              if (selected) {
+                setState(() => _selectedProtein = null);
+              }
+            },
           ),
 
           // "Cheese" chip for vegetarian (no proteins)
           if (hasVegetarian)
-            Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: FilterChip(
-                label: const Text('Cheese'),
-                selected: _selectedProtein == 'cheese',
-                onSelected: (selected) {
-                  setState(() => _selectedProtein = selected ? 'cheese' : null);
-                },
-                selectedColor: MemoixColors.cheese.withOpacity(0.3),
-              ),
+            _buildFilterChip(
+              label: 'Cheese',
+              isSelected: _selectedProtein == 'cheese',
+              selectedColor: MemoixColors.cheese,
+              theme: theme,
+              onSelected: (selected) {
+                setState(() => _selectedProtein = selected ? 'cheese' : null);
+              },
             ),
 
           // "Assorted" chip for multi-protein sandwiches
           if (hasAssorted)
-            Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: FilterChip(
-                label: const Text('Assorted'),
-                selected: _selectedProtein == 'assorted',
-                onSelected: (selected) {
-                  setState(() => _selectedProtein = selected ? 'assorted' : null);
-                },
-                selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
-              ),
+            _buildFilterChip(
+              label: 'Assorted',
+              isSelected: _selectedProtein == 'assorted',
+              selectedColor: MemoixColors.sandwiches,
+              theme: theme,
+              onSelected: (selected) {
+                setState(() => _selectedProtein = selected ? 'assorted' : null);
+              },
             ),
 
           // Individual protein chips
           ...proteins.map((protein) {
             final isSelected = _selectedProtein == protein.toLowerCase();
-            return Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: FilterChip(
-                label: Text(protein),
-                selected: isSelected,
-                onSelected: (selected) {
-                  setState(() => _selectedProtein = selected ? protein.toLowerCase() : null);
-                },
-                selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
-              ),
+            return _buildFilterChip(
+              label: protein,
+              isSelected: isSelected,
+              selectedColor: MemoixColors.sandwiches,
+              theme: theme,
+              onSelected: (selected) {
+                setState(() => _selectedProtein = selected ? protein.toLowerCase() : null);
+              },
             );
           }),
         ],
+      ),
+    );
+  }
+
+  Widget _buildFilterChip({
+    required String label,
+    required bool isSelected,
+    required Color selectedColor,
+    required ThemeData theme,
+    required ValueChanged<bool> onSelected,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: FilterChip(
+        label: Text(label),
+        selected: isSelected,
+        onSelected: onSelected,
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        selectedColor: selectedColor.withOpacity(0.15),
+        showCheckmark: false,
+        side: BorderSide(
+          color: isSelected
+              ? selectedColor
+              : theme.colorScheme.outline.withOpacity(0.2),
+          width: isSelected ? 1.5 : 1.0,
+        ),
+        labelStyle: TextStyle(
+          fontSize: 13,
+          color: isSelected
+              ? selectedColor
+              : theme.colorScheme.onSurface,
+        ),
       ),
     );
   }

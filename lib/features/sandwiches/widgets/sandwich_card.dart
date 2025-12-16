@@ -159,13 +159,13 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
         return const SizedBox.shrink();
       }
     } else if (proteins.length == 1) {
-      // Single protein - show it
+      // Single protein - show it with protein-specific color
       label = proteins.first;
-      dotColor = MemoixColors.sandwiches;
+      dotColor = MemoixColors.forProteinDot(proteins.first);
     } else {
-      // Multiple proteins - show "Assorted"
+      // Multiple proteins - show "Assorted" with first protein's color
       label = 'Assorted';
-      dotColor = MemoixColors.sandwiches;
+      dotColor = MemoixColors.forProteinDot(proteins.first);
     }
     
     return Row(
