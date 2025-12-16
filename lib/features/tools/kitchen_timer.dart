@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:just_audio/just_audio.dart';
 
 /// Available timer alarm sounds
 enum TimerSound {
@@ -31,7 +31,7 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
   void initState() {
     super.initState();
     // Set audio player to loop for alarm
-    _audioPlayer.setReleaseMode(ReleaseMode.loop);
+    _audioPlayer.setLoopMode(LoopMode.one);
   }
 
   void _addTimer() {
@@ -56,7 +56,8 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
 
   Future<void> _playAlarm(TimerSound sound) async {
     try {
-      await _audioPlayer.play(AssetSource(sound.assetPath.replaceFirst('assets/', '')));
+      await _audioPlayer.setAsset(sound.assetPath);
+      await _audioPlayer.play();
     } catch (e) {
       // Fallback: show visual indicator if sound fails
       debugPrint('Failed to play alarm sound: $e');
@@ -65,6 +66,7 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
 
   Future<void> _stopAlarm() async {
     await _audioPlayer.stop();
+    await _audioPlayer.seek(Duration.zero);
   }
 
   void _removeTimer(int id) {
@@ -74,6 +76,35 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
       _timers.removeWhere((t) => t.id == id);
     });
     _stopAlarm();
+  }
+
+  void _editTimer(TimerInstance timer) {
+    showDialog(
+      context: context,
+      builder: (ctx) => _TimerEditDialog(
+        initialDuration: timer.duration,
+        initialLabel: timer.label,
+        initialSound: timer.sound,
+        onSave: (duration, label, sound) {
+          setState(() {
+            timer.updateSettings(duration, label, sound);
+          });
+        },
+      ),
+    );
+  }
+
+  void _duplicateTimer(TimerInstance timer) {
+    setState(() {
+      _timers.add(TimerInstance(
+        id: _nextTimerId++,
+        duration: timer.duration,
+        label: timer.label.isNotEmpty ? '${timer.label} (Copy)' : '',
+        sound: timer.sound,
+        onAlarm: _playAlarm,
+        onStop: _stopAlarm,
+      ));
+    });
   }
 
   @override
@@ -130,6 +161,8 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
               itemBuilder: (context, index) {
                 return _TimerCard(
                   timer: _timers[index],
+                  onEdit: () => _editTimer(_timers[index]),
+                  onDuplicate: () => _duplicateTimer(_timers[index]),
                   onDelete: () => _removeTimer(_timers[index].id),
                 );
               },
@@ -277,6 +310,163 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
   }
 }
 
+/// Dialog for editing an existing timer
+class _TimerEditDialog extends StatefulWidget {
+  final Duration initialDuration;
+  final String initialLabel;
+  final TimerSound initialSound;
+  final Function(Duration, String, TimerSound) onSave;
+
+  const _TimerEditDialog({
+    required this.initialDuration,
+    required this.initialLabel,
+    required this.initialSound,
+    required this.onSave,
+  });
+
+  @override
+  State<_TimerEditDialog> createState() => _TimerEditDialogState();
+}
+
+class _TimerEditDialogState extends State<_TimerEditDialog> {
+  late final TextEditingController _labelController;
+  late int _hours;
+  late int _minutes;
+  late int _seconds;
+  late TimerSound _selectedSound;
+
+  @override
+  void initState() {
+    super.initState();
+    _labelController = TextEditingController(text: widget.initialLabel);
+    _hours = widget.initialDuration.inHours;
+    _minutes = widget.initialDuration.inMinutes.remainder(60);
+    _seconds = widget.initialDuration.inSeconds.remainder(60);
+    _selectedSound = widget.initialSound;
+  }
+
+  @override
+  void dispose() {
+    _labelController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return AlertDialog(
+      title: const Text('Edit Timer'),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextField(
+              controller: _labelController,
+              decoration: const InputDecoration(
+                labelText: 'Label (optional)',
+                hintText: 'e.g., Boil pasta',
+              ),
+            ),
+            const SizedBox(height: 24),
+            Text(
+              'Duration',
+              style: theme.textTheme.titleSmall,
+            ),
+            const SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _TimePickerColumn(
+                  label: 'Hours',
+                  value: _hours,
+                  max: 23,
+                  onChanged: (v) => setState(() => _hours = v),
+                ),
+                _TimePickerColumn(
+                  label: 'Min',
+                  value: _minutes,
+                  max: 59,
+                  onChanged: (v) => setState(() => _minutes = v),
+                ),
+                _TimePickerColumn(
+                  label: 'Sec',
+                  value: _seconds,
+                  max: 59,
+                  onChanged: (v) => setState(() => _seconds = v),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            // Quick presets
+            Wrap(
+              spacing: 8,
+              children: [
+                _PresetChip('1 min', () => _setTime(0, 1, 0)),
+                _PresetChip('5 min', () => _setTime(0, 5, 0)),
+                _PresetChip('10 min', () => _setTime(0, 10, 0)),
+                _PresetChip('15 min', () => _setTime(0, 15, 0)),
+                _PresetChip('30 min', () => _setTime(0, 30, 0)),
+                _PresetChip('1 hour', () => _setTime(1, 0, 0)),
+              ],
+            ),
+            const SizedBox(height: 24),
+            Text(
+              'Alarm Sound',
+              style: theme.textTheme.titleSmall,
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              children: TimerSound.values.map((sound) {
+                final isSelected = _selectedSound == sound;
+                return ChoiceChip(
+                  label: Text(sound.displayName),
+                  selected: isSelected,
+                  onSelected: (_) => setState(() => _selectedSound = sound),
+                );
+              }).toList(),
+            ),
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Cancel'),
+        ),
+        FilledButton(
+          onPressed: () {
+            final duration = Duration(
+              hours: _hours,
+              minutes: _minutes,
+              seconds: _seconds,
+            );
+            if (duration.inSeconds > 0) {
+              widget.onSave(
+                duration,
+                _labelController.text.trim(),
+                _selectedSound,
+              );
+              Navigator.pop(context);
+            }
+          },
+          child: const Text('Save'),
+        ),
+      ],
+    );
+  }
+
+  void _setTime(int h, int m, int s) {
+    setState(() {
+      _hours = h;
+      _minutes = m;
+      _seconds = s;
+    });
+  }
+}
+
 class _TimePickerColumn extends StatelessWidget {
   final String label;
   final int value;
@@ -352,10 +542,14 @@ class _PresetChip extends StatelessWidget {
 /// Individual timer card
 class _TimerCard extends StatefulWidget {
   final TimerInstance timer;
+  final VoidCallback onEdit;
+  final VoidCallback onDuplicate;
   final VoidCallback onDelete;
 
   const _TimerCard({
     required this.timer,
+    required this.onEdit,
+    required this.onDuplicate,
     required this.onDelete,
   });
 
@@ -408,45 +602,45 @@ class _TimerCardState extends State<_TimerCard> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      if (timer.label.isNotEmpty)
-                        Text(
-                          timer.label,
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w500,
-                            color: textColor,
-                          ),
+                      Text(
+                        timer.label.isNotEmpty ? timer.label : 'Timer',
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          color: textColor,
                         ),
-                      Row(
-                        children: [
-                          Text(
-                            _formatDuration(timer.duration),
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '\u2022',
-                            style: TextStyle(
-                              color: theme.colorScheme.onSurfaceVariant,
-                              fontSize: 8,
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            timer.sound.displayName,
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                        ],
+                      ),
+                      Text(
+                        timer.sound.displayName,
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
                       ),
                     ],
                   ),
                 ),
-                IconButton(
-                  icon: Icon(Icons.close, color: theme.colorScheme.onSurfaceVariant),
-                  onPressed: widget.onDelete,
+                PopupMenuButton<String>(
+                  icon: Icon(Icons.more_vert, color: theme.colorScheme.onSurfaceVariant),
+                  onSelected: (value) {
+                    switch (value) {
+                      case 'edit':
+                        widget.onEdit();
+                        break;
+                      case 'duplicate':
+                        widget.onDuplicate();
+                        break;
+                      case 'delete':
+                        widget.onDelete();
+                        break;
+                    }
+                  },
+                  itemBuilder: (context) => [
+                    const PopupMenuItem(value: 'edit', child: Text('Edit')),
+                    const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+                    PopupMenuItem(
+                      value: 'delete',
+                      child: Text('Delete', style: TextStyle(color: theme.colorScheme.secondary)),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -537,9 +731,9 @@ class _TimerCardState extends State<_TimerCard> {
 /// Timer instance model
 class TimerInstance extends ChangeNotifier {
   final int id;
-  final Duration duration;
-  final String label;
-  final TimerSound sound;
+  Duration duration;
+  String label;
+  TimerSound sound;
   final Future<void> Function(TimerSound) onAlarm;
   final Future<void> Function() onStop;
 
@@ -561,6 +755,22 @@ class TimerInstance extends ChangeNotifier {
   double get progress {
     if (duration.inSeconds == 0) return 1.0;
     return 1.0 - (remainingSeconds / duration.inSeconds);
+  }
+
+  void updateSettings(Duration newDuration, String newLabel, TimerSound newSound) {
+    duration = newDuration;
+    label = newLabel;
+    sound = newSound;
+    // Reset timer with new duration
+    _timer?.cancel();
+    remainingSeconds = duration.inSeconds;
+    isRunning = false;
+    isPaused = false;
+    if (isAlarming) {
+      isAlarming = false;
+      onStop();
+    }
+    notifyListeners();
   }
 
   void start() {
