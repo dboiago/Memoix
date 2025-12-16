@@ -1402,13 +1402,18 @@ class StandardWebStrategy implements RecipeParserStrategy {
     // Try section-based parsing (H2/H3 "Ingredients" followed by list)
     for (final heading in document.querySelectorAll('h2, h3')) {
       final headingText = heading.text.trim().toLowerCase();
-      if (headingText.contains('ingredient')) {
+      // Also check ID attribute for sites like Modernist Pantry that use id="ingredients"
+      final headingId = heading.attributes['id']?.toLowerCase() ?? '';
+      if (headingText.contains('ingredient') || headingId.contains('ingredient')) {
         var sibling = heading.nextElementSibling;
         while (sibling != null && sibling.localName != 'h2' && sibling.localName != 'h3') {
           if (sibling.localName == 'ul' || sibling.localName == 'ol') {
             for (final li in sibling.querySelectorAll('li')) {
-              final text = _ingParser.decodeHtml(li.text.trim());
-              if (text.isNotEmpty) results.add(text);
+              // Extract text from span if present (Modernist Pantry uses <li><span>...</span></li>)
+              final spanText = li.querySelector('span')?.text.trim();
+              final text = _ingParser.decodeHtml(spanText ?? li.text.trim());
+              // Skip section headers (bold text like "Ingredients Black Garlic Honey:")
+              if (text.isNotEmpty && !text.endsWith(':')) results.add(text);
             }
           }
           sibling = sibling.nextElementSibling;
@@ -1437,6 +1442,16 @@ class StandardWebStrategy implements RecipeParserStrategy {
         rawDirections = shopifyResult['directions'] ?? [];
         glass = shopifyResult['glass'];
         garnish = shopifyResult['garnish'] ?? [];
+      }
+    }
+
+    // 0b. Modernist Pantry specific parsing
+    // Their structure: <h2 id="ingredients">Ingredients</h2> followed by <ul> with li items
+    // Section headers like "Ingredients Black Garlic Honey:" in bold <b> within <li>
+    if (rawIngredientStrings.isEmpty && url.contains('modernistpantry.com')) {
+      rawIngredientStrings = _extractModernistPantryIngredients(document);
+      if (rawDirections.isEmpty) {
+        rawDirections = _extractModernistPantryDirections(document);
       }
     }
 
@@ -1842,9 +1857,116 @@ class StandardWebStrategy implements RecipeParserStrategy {
     return false;
   }
   
-  /// Extract directions from Modernist Pantry style (h3 with "Create/Make/Prepare" followed by paragraphs)
+  /// Extract ingredients from Modernist Pantry style
+  /// Structure: <h2 id="ingredients">Ingredients</h2> followed by <ul> with <li> items
+  /// Section headers like "Ingredients Black Garlic Honey:" are in bold <b> within <li>
+  List<String> _extractModernistPantryIngredients(Document document) {
+    final ingredients = <String>[];
+    
+    // Find the h2 with id="ingredients" or text containing "Ingredients"
+    Element? ingredientHeading;
+    for (final h2 in document.querySelectorAll('h2')) {
+      final id = h2.attributes['id'] ?? '';
+      final text = h2.text.toLowerCase();
+      if (id == 'ingredients' || text == 'ingredients') {
+        ingredientHeading = h2;
+        break;
+      }
+    }
+    
+    if (ingredientHeading == null) return ingredients;
+    
+    // Find the ul that's a sibling (may have p tags in between)
+    var sibling = ingredientHeading.nextElementSibling;
+    int attempts = 0;
+    while (sibling != null && attempts < 10) {
+      // Stop if we hit another major heading
+      if (sibling.localName == 'h2' && sibling.attributes['id'] != 'ingredients') {
+        break;
+      }
+      
+      if (sibling.localName == 'ul' || sibling.localName == 'ol') {
+        for (final li in sibling.querySelectorAll('li')) {
+          // Check if this is a section header (in bold)
+          final boldEl = li.querySelector('b, strong');
+          if (boldEl != null && li.children.length == 1 && 
+              boldEl.text.toLowerCase().contains('ingredients')) {
+            // This is a section header like "Ingredients Black Garlic Honey:"
+            var headerText = boldEl.text.trim();
+            // Extract just the section name (remove "Ingredients" prefix and trailing colon)
+            headerText = headerText.replaceFirst(RegExp(r'^Ingredients?\s*', caseSensitive: false), '');
+            headerText = headerText.replaceFirst(RegExp(r':\s*$'), '');
+            if (headerText.isNotEmpty) {
+              ingredients.add('[${headerText.trim()}]');
+            }
+          } else {
+            // This is an actual ingredient
+            final text = _ingParser.decodeHtml(li.text.trim());
+            if (text.isNotEmpty && !text.toLowerCase().startsWith('ingredients')) {
+              ingredients.add(text);
+            }
+          }
+        }
+        // Continue to find more ul elements (some recipes have multiple lists)
+      }
+      
+      sibling = sibling.nextElementSibling;
+      attempts++;
+    }
+    
+    return ingredients;
+  }
+  
+  /// Extract directions from Modernist Pantry style 
+  /// Structure 1: h3 with "Create/Make/Prepare" followed by sibling paragraphs
+  /// Structure 2: li containing h3 and .product-list divs with direction content
   List<String> _extractModernistPantryDirections(Document document) {
     final directions = <String>[];
+    
+    // Try structure 2 first: li.one/li.two/li.three containing h3 and directions
+    final stepItems = document.querySelectorAll('.product-list > ul > li');
+    if (stepItems.isNotEmpty) {
+      for (final li in stepItems) {
+        final h3 = li.querySelector('h3');
+        if (h3 != null) {
+          final stepTitle = h3.text.trim();
+          if (stepTitle.isNotEmpty) {
+            directions.add('**$stepTitle**');
+          }
+        }
+        
+        // Find direction content in .product-list divs
+        final productLists = li.querySelectorAll('.equipment-time .product-list');
+        for (final productList in productLists) {
+          // Get text from spans and direct div children
+          final spans = productList.querySelectorAll('span');
+          for (final span in spans) {
+            final text = span.text.trim();
+            if (text.length > 20) {
+              directions.add(_cleanDirectionStep(text));
+            }
+          }
+          
+          // Also check direct text content of divs
+          for (final child in productList.children) {
+            if (child.localName == 'div') {
+              final text = child.text.trim();
+              if (text.length > 20 && !text.startsWith('•')) {
+                // Avoid duplicating span text
+                final spanText = child.querySelector('span')?.text.trim() ?? '';
+                if (spanText.isEmpty || spanText != text) {
+                  directions.add(_cleanDirectionStep(text));
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      if (directions.isNotEmpty) return directions;
+    }
+    
+    // Fallback: Structure 1 - h3 headings followed by sibling content
     final headings = document.querySelectorAll('h3, h2');
     
     for (final heading in headings) {
