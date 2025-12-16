@@ -74,8 +74,16 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                     // Only show metadata row in non-compact mode
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
-                      // Protein summary with themed dot
-                      _buildProteinSummary(theme),
+                      // Protein summary with themed dot + ingredient counts
+                      Row(
+                        children: [
+                          _buildProteinSummary(theme),
+                          const SizedBox(width: 12),
+                          Flexible(
+                            child: _buildIngredientsSummary(theme),
+                          ),
+                        ],
+                      ),
                     ],
                   ],
                 ),
@@ -161,6 +169,7 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
     }
     
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Text(
           '\u2022',
@@ -176,6 +185,65 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
+      ],
+    );
+  }
+
+  /// Build ingredient counts summary with icons
+  Widget _buildIngredientsSummary(ThemeData theme) {
+    final cheeseCount = widget.sandwich.cheeses.length;
+    final proteinCount = widget.sandwich.proteins.length;
+    final vegetableCount = widget.sandwich.vegetables.length;
+
+    return Row(
+      children: [
+        // Cheese count
+        if (cheeseCount > 0) ...[
+          Icon(
+            Icons.local_pizza_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$cheeseCount',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 10),
+        ],
+        // Protein count
+        if (proteinCount > 0) ...[
+          Icon(
+            Icons.restaurant_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$proteinCount',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          if (vegetableCount > 0) const SizedBox(width: 10),
+        ],
+        // Vegetable count
+        if (vegetableCount > 0) ...[
+          Icon(
+            Icons.eco_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$vegetableCount',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
       ],
     );
   }

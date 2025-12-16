@@ -209,13 +209,17 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
   }
 
   Widget _buildProteinFilterChips(List<Sandwich> sandwiches, ThemeData theme) {
-    // Collect unique proteins from all sandwiches
+    // Collect unique proteins from all sandwiches and track special categories
     final proteinSet = <String>{};
     bool hasVegetarian = false;
+    bool hasAssorted = false;
 
     for (final sandwich in sandwiches) {
       if (sandwich.proteins.isEmpty && sandwich.cheeses.isNotEmpty) {
         hasVegetarian = true;
+      }
+      if (sandwich.proteins.length > 1) {
+        hasAssorted = true;
       }
       for (final protein in sandwich.proteins) {
         proteinSet.add(protein);
@@ -249,7 +253,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
             ),
           ),
 
-          // "Cheese" chip for vegetarian
+          // "Cheese" chip for vegetarian (no proteins)
           if (hasVegetarian)
             Padding(
               padding: const EdgeInsets.only(right: 8),
@@ -263,7 +267,21 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
               ),
             ),
 
-          // Protein chips
+          // "Assorted" chip for multi-protein sandwiches
+          if (hasAssorted)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: FilterChip(
+                label: const Text('Assorted'),
+                selected: _selectedProtein == 'assorted',
+                onSelected: (selected) {
+                  setState(() => _selectedProtein = selected ? 'assorted' : null);
+                },
+                selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
+              ),
+            ),
+
+          // Individual protein chips
           ...proteins.map((protein) {
             final isSelected = _selectedProtein == protein.toLowerCase();
             return Padding(
@@ -291,8 +309,11 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
       if (_selectedProtein == 'cheese') {
         // Vegetarian: no proteins but has cheese
         sandwiches = sandwiches.where((s) => s.proteins.isEmpty && s.cheeses.isNotEmpty).toList();
+      } else if (_selectedProtein == 'assorted') {
+        // Assorted: multiple proteins
+        sandwiches = sandwiches.where((s) => s.proteins.length > 1).toList();
       } else {
-        // Has specific protein
+        // Has specific protein (includes assorted sandwiches that contain this protein)
         sandwiches = sandwiches.where((s) => 
           s.proteins.any((p) => p.toLowerCase() == _selectedProtein!.toLowerCase())
         ).toList();
