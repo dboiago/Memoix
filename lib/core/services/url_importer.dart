@@ -699,7 +699,7 @@ class UrlRecipeImporter {
         if (enhancedResult != null) return enhancedResult;
         
         // Always try to supplement JSON-LD with glass/garnish from HTML (for drink recipes)
-        // and equipment/directions if missing. These aren't standard Schema.org Recipe properties.
+        // and equipment/directions/ingredients if missing. These aren't standard Schema.org Recipe properties.
         final sectionResult = _parseHtmlBySections(document);
         final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
         final htmlGlass = sectionResult['glass'] as String?;
@@ -709,14 +709,97 @@ class UrlRecipeImporter {
         // Also try to extract directions from HTML (handles Lyres/Shopify embedded JSON)
         final htmlDirections = _extractDirectionsFromRawHtml(document, body);
         
+        // Try to extract ingredients from HTML if JSON-LD is missing them
+        // First try the <br>-separated approach (Bradley Smoker style)
+        var htmlIngredientStrings = <String>[];
+        if (jsonLdResult.ingredients.isEmpty) {
+          // Try heading-based <br> separated ingredients
+          for (final heading in document.querySelectorAll('h1, h2, h3')) {
+            final headingText = (heading.text ?? '').toLowerCase().trim();
+            if (headingText.contains('ingredient')) {
+              var nextElement = heading.nextElementSibling;
+              if (nextElement?.localName == 'div') {
+                final innerP = nextElement!.querySelector('p');
+                if (innerP != null) {
+                  nextElement = innerP;
+                }
+              }
+              if (nextElement != null && (nextElement.localName == 'p' || nextElement.localName == 'div')) {
+                final innerHtml = nextElement.innerHtml;
+                if (innerHtml.contains('<br')) {
+                  final parts = innerHtml.split(RegExp(r'<br\s*/?>', caseSensitive: false));
+                  for (final part in parts) {
+                    final text = _decodeHtml(part.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+                    if (text.isNotEmpty) {
+                      htmlIngredientStrings.add(text);
+                    }
+                  }
+                }
+              }
+              if (htmlIngredientStrings.isNotEmpty) break;
+            }
+          }
+          
+          // If still empty, try standard selectors
+          if (htmlIngredientStrings.isEmpty) {
+            final ingredientElements = document.querySelectorAll(
+              '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient, '
+              '.recipe-ingredients li, .recipe__ingredients li, article ul li',
+            );
+            for (final e in ingredientElements) {
+              final text = _decodeHtml((e.text ?? '').trim());
+              if (text.isNotEmpty) {
+                htmlIngredientStrings.add(text);
+              }
+            }
+          }
+        }
+        final htmlIngredients = _parseIngredients(htmlIngredientStrings);
+        
+        // Try to extract directions from HTML if JSON-LD is missing them
+        var htmlDirectionStrings = <String>[];
+        if (jsonLdResult.directions.isEmpty && htmlDirections.isEmpty) {
+          // Try heading-based paragraph directions (Bradley Smoker style)
+          for (final heading in document.querySelectorAll('h1, h2, h3')) {
+            final headingText = (heading.text ?? '').toLowerCase().trim();
+            if (headingText.contains('preparation') || 
+                headingText.contains('instruction') || 
+                headingText.contains('direction') ||
+                headingText.contains('method')) {
+              var sibling = heading.nextElementSibling;
+              while (sibling != null && 
+                     sibling.localName != 'h1' && 
+                     sibling.localName != 'h2' && 
+                     sibling.localName != 'h3') {
+                if (sibling.localName == 'p') {
+                  final text = _decodeHtml((sibling.text ?? '').trim());
+                  if (text.isNotEmpty && text.length > 20) {
+                    htmlDirectionStrings.add(text);
+                  }
+                } else if (sibling.localName == 'div') {
+                  for (final p in sibling.querySelectorAll('p')) {
+                    final text = _decodeHtml((p.text ?? '').trim());
+                    if (text.isNotEmpty && text.length > 20) {
+                      htmlDirectionStrings.add(text);
+                    }
+                  }
+                }
+                sibling = sibling.nextElementSibling;
+              }
+              if (htmlDirectionStrings.isNotEmpty) break;
+            }
+          }
+        }
+        
         // Check if we need to supplement anything
         final needsEquipment = jsonLdResult.equipment.isEmpty && htmlEquipment.isNotEmpty;
         final needsGlass = (jsonLdResult.glass == null || jsonLdResult.glass!.isEmpty) && htmlGlass != null;
         final needsGarnish = jsonLdResult.garnish.isEmpty && htmlGarnish.isNotEmpty;
         final needsNotes = (jsonLdResult.notes == null || jsonLdResult.notes!.isEmpty) && htmlNotes != null;
-        final needsDirections = jsonLdResult.directions.isEmpty && htmlDirections.isNotEmpty;
+        final needsDirections = jsonLdResult.directions.isEmpty && (htmlDirections.isNotEmpty || htmlDirectionStrings.isNotEmpty);
+        final needsIngredients = jsonLdResult.ingredients.isEmpty && htmlIngredients.isNotEmpty;
         
-        if (needsEquipment || needsGlass || needsGarnish || needsNotes || needsDirections) {
+        if (needsEquipment || needsGlass || needsGarnish || needsNotes || needsDirections || needsIngredients) {
           // Combine notes if both exist
           String? combinedNotes = jsonLdResult.notes;
           if (needsNotes) {
@@ -733,22 +816,26 @@ class UrlRecipeImporter {
             subcategory: jsonLdResult.subcategory,
             serves: jsonLdResult.serves,
             time: jsonLdResult.time,
-            ingredients: jsonLdResult.ingredients,
-            directions: needsDirections ? List<String>.from(htmlDirections) : jsonLdResult.directions,
+            ingredients: needsIngredients ? htmlIngredients : jsonLdResult.ingredients,
+            directions: needsDirections 
+                ? (htmlDirections.isNotEmpty ? List<String>.from(htmlDirections) : htmlDirectionStrings)
+                : jsonLdResult.directions,
             notes: combinedNotes,
             imageUrl: jsonLdResult.imageUrl,
             nutrition: jsonLdResult.nutrition,
             equipment: needsEquipment ? htmlEquipment : jsonLdResult.equipment,
             glass: needsGlass ? htmlGlass : jsonLdResult.glass,
             garnish: needsGarnish ? htmlGarnish : jsonLdResult.garnish,
-            rawIngredients: jsonLdResult.rawIngredients,
-            rawDirections: needsDirections ? htmlDirections : jsonLdResult.rawDirections,
+            rawIngredients: needsIngredients ? htmlIngredientStrings : jsonLdResult.rawIngredients,
+            rawDirections: needsDirections 
+                ? (htmlDirections.isNotEmpty ? htmlDirections : htmlDirectionStrings)
+                : jsonLdResult.rawDirections,
             detectedCourses: jsonLdResult.detectedCourses,
             detectedCuisines: jsonLdResult.detectedCuisines,
             nameConfidence: jsonLdResult.nameConfidence,
             courseConfidence: jsonLdResult.courseConfidence,
             cuisineConfidence: jsonLdResult.cuisineConfidence,
-            ingredientsConfidence: jsonLdResult.ingredientsConfidence,
+            ingredientsConfidence: needsIngredients ? 0.7 : jsonLdResult.ingredientsConfidence, // Lower confidence for HTML-extracted ingredients
             directionsConfidence: needsDirections ? 0.7 : jsonLdResult.directionsConfidence, // Lower confidence for HTML-extracted directions
             servesConfidence: jsonLdResult.servesConfidence,
             timeConfidence: jsonLdResult.timeConfidence,
@@ -5461,12 +5548,14 @@ class UrlRecipeImporter {
           // Get the ingredient-label span, excluding screen-reader-text
           final labelSpan = e.querySelector('.ingredient-label');
           if (labelSpan != null) {
+            // Clone the node to avoid modifying original document
+            final labelClone = labelSpan.clone(true);
             // Remove screen-reader-text elements before extracting text
-            final srTexts = labelSpan.querySelectorAll('.screen-reader-text');
+            final srTexts = labelClone.querySelectorAll('.screen-reader-text');
             for (final sr in srTexts) {
               sr.remove();
             }
-            final text = _decodeHtml((labelSpan.text ?? '').trim());
+            final text = _decodeHtml((labelClone.text ?? '').trim());
             // Clean up excessive whitespace from Weber's HTML
             final cleaned = text.replaceAll(RegExp(r'\s+'), ' ').trim();
             if (cleaned.isNotEmpty) {
@@ -5480,6 +5569,7 @@ class UrlRecipeImporter {
     // Try Weber-specific serves/time extraction
     // Weber uses .attribute-item with .label and .copy children
     if (yield == null || timing == null) {
+      int totalMinutes = 0;
       final weberAttributes = document.querySelectorAll('.attribute-item');
       for (final attr in weberAttributes) {
         final labelElem = attr.querySelector('.label');
@@ -5494,14 +5584,14 @@ class UrlRecipeImporter {
               yield = servesMatch.group(1);
             }
           } else if (label.contains('time') || label.contains('prep') || label.contains('cook') || label.contains('grill')) {
-            // Accumulate times
-            if (timing == null) {
-              timing = value;
-            } else {
-              timing = '$timing + $value';
-            }
+            // Parse and sum times instead of concatenating
+            totalMinutes += _parseDurationMinutes(value);
           }
         }
+      }
+      // Format total minutes if we found any time values
+      if (totalMinutes > 0 && timing == null) {
+        timing = _formatMinutes(totalMinutes);
       }
     }
     

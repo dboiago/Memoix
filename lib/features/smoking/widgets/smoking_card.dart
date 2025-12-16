@@ -76,77 +76,11 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     // Only show metadata row in non-compact mode
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
-                      // Item/category with colored bullet + wood with tree icon + temp + time
-                      Row(
-                        children: [
-                          // Category/Item with colored bullet
-                          if (widget.recipe.category != null) ...[
-                            Text(
-                              '\u2022',
-                              style: TextStyle(
-                                color: MemoixColors.forSmokedItemDot(widget.recipe.category),
-                                fontSize: 16,
-                              ),
-                            ),
-                            const SizedBox(width: 6),
-                            Text(
-                              widget.recipe.category!,
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                            ),
-                            const SizedBox(width: 12),
-                          ],
-
-                          // Wood type with tree icon (no colored dot)
-                          Icon(
-                            Icons.park,
-                            size: 14,
-                            color: theme.colorScheme.outline,
-                          ),
-                          const SizedBox(width: 4),
-                          Text(
-                            widget.recipe.wood,
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-
-                          // Temperature
-                          Icon(
-                            Icons.thermostat_outlined,
-                            size: 14,
-                            color: theme.colorScheme.outline,
-                          ),
-                          const SizedBox(width: 4),
-                          Text(
-                            widget.recipe.temperature,
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-
-                          // Time
-                          Icon(
-                            Icons.schedule_outlined,
-                            size: 14,
-                            color: theme.colorScheme.outline,
-                          ),
-                          const SizedBox(width: 4),
-                          Flexible(
-                            child: Text(
-                              widget.recipe.time,
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ),
-                        ],
-                      ),
+                      // Different metadata based on type
+                      if (widget.recipe.type == SmokingType.pitNote) 
+                        _buildPitNoteMetadata(theme)
+                      else
+                        _buildRecipeMetadata(theme),
                     ],
                   ],
                 ),
@@ -207,6 +141,164 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
           ),
         ),
       ),
+    );
+  }
+
+  /// Metadata row for Pit Notes: category, wood, temp, time
+  Widget _buildPitNoteMetadata(ThemeData theme) {
+    return Row(
+      children: [
+        // Category with colored bullet
+        if (widget.recipe.category != null) ...[
+          Text(
+            '\u2022',
+            style: TextStyle(
+              color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+              fontSize: 16,
+            ),
+          ),
+          const SizedBox(width: 6),
+          Text(
+            widget.recipe.category!,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+
+        // Wood type with tree icon
+        if (widget.recipe.wood.isNotEmpty) ...[
+          Icon(
+            Icons.park,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            widget.recipe.wood,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+
+        // Temperature
+        if (widget.recipe.temperature.isNotEmpty) ...[
+          Icon(
+            Icons.thermostat_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            widget.recipe.temperature,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+
+        // Time
+        if (widget.recipe.time.isNotEmpty) ...[
+          Icon(
+            Icons.schedule_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Flexible(
+            child: Text(
+              widget.recipe.time,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Metadata row for Recipes: ingredient count, time, serves
+  Widget _buildRecipeMetadata(ThemeData theme) {
+    return Row(
+      children: [
+        // "Recipe" badge to distinguish from Pit Notes
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.secondary.withOpacity(0.15),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: Text(
+            'Recipe',
+            style: theme.textTheme.labelSmall?.copyWith(
+              color: theme.colorScheme.secondary,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
+        const SizedBox(width: 12),
+
+        // Ingredient count
+        if (widget.recipe.ingredients.isNotEmpty) ...[
+          Icon(
+            Icons.restaurant_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '${widget.recipe.ingredients.length} ingredients',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+
+        // Time
+        if (widget.recipe.time.isNotEmpty) ...[
+          Icon(
+            Icons.schedule_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            widget.recipe.time,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+
+        // Serves
+        if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty) ...[
+          Icon(
+            Icons.people_outline,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Flexible(
+            child: Text(
+              'Serves ${widget.recipe.serves}',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ],
     );
   }
 }

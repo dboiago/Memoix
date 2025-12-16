@@ -351,6 +351,7 @@ class RecipeImportResult {
     final recipe = SmokingRecipe.create(
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
+      type: SmokingType.pitNote, // Converted recipes become Pit Notes
       item: name, // Use recipe name as item being smoked
       temperature: temperature,
       time: time ?? '',

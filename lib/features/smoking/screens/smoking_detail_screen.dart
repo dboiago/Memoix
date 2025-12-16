@@ -195,7 +195,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 ),
               ),
               
-              // Ingredients Card (main item + seasonings)
+              // Ingredients Card - different content based on type
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -214,24 +214,55 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                           ),
                           const SizedBox(height: 16),
                           
-                          // Main item section
-                          if (recipe.item != null && recipe.item!.isNotEmpty) ...[
-                            _buildIngredientSection(
-                              theme,
-                              'Main',
-                              [recipe.item!],
-                            ),
+                          // For Pit Notes: show Main item + Seasonings
+                          if (recipe.type == SmokingType.pitNote) ...[
+                            // Main item section
+                            if (recipe.item != null && recipe.item!.isNotEmpty) ...[
+                              _buildIngredientSection(
+                                theme,
+                                'Main',
+                                [recipe.item!],
+                              ),
+                            ],
+                            
+                            // Seasonings section
+                            if (recipe.seasonings.isNotEmpty) ...[
+                              if (recipe.item != null && recipe.item!.isNotEmpty)
+                                const SizedBox(height: 16),
+                              _buildIngredientSection(
+                                theme,
+                                recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
+                                recipe.seasonings.map((s) => s.displayText).toList(),
+                              ),
+                            ],
                           ],
                           
-                          // Seasonings section
-                          if (recipe.seasonings.isNotEmpty) ...[
-                            if (recipe.item != null && recipe.item!.isNotEmpty)
-                              const SizedBox(height: 16),
-                            _buildIngredientSection(
-                              theme,
-                              recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
-                              recipe.seasonings.map((s) => s.displayText).toList(),
-                            ),
+                          // For Recipes: show full ingredients list
+                          if (recipe.type == SmokingType.recipe) ...[
+                            if (recipe.ingredients.isNotEmpty)
+                              ...recipe.ingredients.map((i) => Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      width: 6,
+                                      height: 6,
+                                      margin: const EdgeInsets.only(top: 6, right: 12),
+                                      decoration: BoxDecoration(
+                                        color: theme.colorScheme.secondary,
+                                        shape: BoxShape.circle,
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Text(
+                                        i.displayText,
+                                        style: theme.textTheme.bodyMedium,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )),
                           ],
                         ],
                       ),
@@ -342,7 +373,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       spacing: 8,
       runSpacing: 8,
       children: [
-        // Category with colored dot (not item)
+        // Category with colored dot (not item) - shown for both types
         if (recipe.category != null)
           Chip(
             avatar: Container(
@@ -358,30 +389,57 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             labelStyle: TextStyle(color: theme.colorScheme.onSurface),
             visualDensity: VisualDensity.compact,
           ),
-        // Temperature
-        Chip(
-          avatar: Icon(Icons.thermostat, size: 16, color: theme.colorScheme.onSurface),
-          label: Text(recipe.temperature),
-          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-          visualDensity: VisualDensity.compact,
-        ),
-        // Time
-        Chip(
-          avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-          label: Text(recipe.time),
-          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-          visualDensity: VisualDensity.compact,
-        ),
-        // Wood
-        Chip(
-          avatar: Icon(Icons.park, size: 16, color: theme.colorScheme.onSurface),
-          label: Text(recipe.wood),
-          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-          visualDensity: VisualDensity.compact,
-        ),
+        
+        // Pit Note specific: Temperature, Time (required), Wood
+        if (recipe.type == SmokingType.pitNote) ...[
+          // Temperature
+          if (recipe.temperature.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.thermostat, size: 16, color: theme.colorScheme.onSurface),
+              label: Text(recipe.temperature),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+              visualDensity: VisualDensity.compact,
+            ),
+          // Time
+          if (recipe.time.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
+              label: Text(recipe.time),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+              visualDensity: VisualDensity.compact,
+            ),
+          // Wood
+          if (recipe.wood.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.park, size: 16, color: theme.colorScheme.onSurface),
+              label: Text(recipe.wood),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+              visualDensity: VisualDensity.compact,
+            ),
+        ],
+        
+        // Recipe type: Serves, Time (optional)
+        if (recipe.type == SmokingType.recipe) ...[
+          if (recipe.serves != null && recipe.serves!.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.people_outline, size: 16, color: theme.colorScheme.onSurface),
+              label: Text('Serves ${recipe.serves}'),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+              visualDensity: VisualDensity.compact,
+            ),
+          if (recipe.time.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
+              label: Text(recipe.time),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+              visualDensity: VisualDensity.compact,
+            ),
+        ],
       ],
     );
   }

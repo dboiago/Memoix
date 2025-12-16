@@ -31,14 +31,17 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final _nameController = TextEditingController();
   final _itemController = TextEditingController();
   String? _selectedCategory;
+  SmokingType _selectedType = SmokingType.pitNote;
   final _temperatureController = TextEditingController();
   final _timeController = TextEditingController();
   final _woodController = TextEditingController();
   final _notesController = TextEditingController();
+  final _servesController = TextEditingController();
 
   String? _imagePath; // Header image - local file path or URL
   final List<String> _stepImages = []; // Step images
   final List<_SeasoningEntry> _seasonings = [];
+  final List<_SeasoningEntry> _ingredients = []; // For Recipe type
   final List<TextEditingController> _directionControllers = [];
 
   bool _isLoading = true;
@@ -55,12 +58,14 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (widget.importedRecipe != null) {
       final recipe = widget.importedRecipe!;
       _nameController.text = recipe.name;
+      _selectedType = recipe.type;
       _itemController.text = recipe.item ?? '';
       _selectedCategory = recipe.category;
       _temperatureController.text = recipe.temperature;
       _timeController.text = recipe.time;
       _woodController.text = recipe.wood;
       _notesController.text = recipe.notes ?? '';
+      _servesController.text = recipe.serves ?? '';
       _imagePath = recipe.imageUrl;
       _stepImages.addAll(recipe.stepImages);
 
@@ -68,6 +73,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _seasonings.add(_SeasoningEntry(
           nameController: TextEditingController(text: seasoning.name),
           amountController: TextEditingController(text: seasoning.amount ?? ''),
+        ),);
+      }
+
+      for (final ingredient in recipe.ingredients) {
+        _ingredients.add(_SeasoningEntry(
+          nameController: TextEditingController(text: ingredient.name),
+          amountController: TextEditingController(text: ingredient.amount ?? ''),
         ),);
       }
 
@@ -81,12 +93,14 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       if (recipe != null) {
         _existingRecipe = recipe;
         _nameController.text = recipe.name;
+        _selectedType = recipe.type;
         _itemController.text = recipe.item ?? '';
         _selectedCategory = recipe.category;
         _temperatureController.text = recipe.temperature;
         _timeController.text = recipe.time;
         _woodController.text = recipe.wood;
         _notesController.text = recipe.notes ?? '';
+        _servesController.text = recipe.serves ?? '';
         _imagePath = recipe.imageUrl;
         _stepImages.addAll(recipe.stepImages);
 
@@ -94,6 +108,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           _seasonings.add(_SeasoningEntry(
             nameController: TextEditingController(text: seasoning.name),
             amountController: TextEditingController(text: seasoning.amount ?? ''),
+          ),);
+        }
+
+        for (final ingredient in recipe.ingredients) {
+          _ingredients.add(_SeasoningEntry(
+            nameController: TextEditingController(text: ingredient.name),
+            amountController: TextEditingController(text: ingredient.amount ?? ''),
           ),);
         }
 
@@ -106,6 +127,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     // Ensure at least one empty field for each
     if (_seasonings.isEmpty) {
       _seasonings.add(_SeasoningEntry(
+        nameController: TextEditingController(),
+        amountController: TextEditingController(),
+      ),);
+    }
+    if (_ingredients.isEmpty) {
+      _ingredients.add(_SeasoningEntry(
         nameController: TextEditingController(),
         amountController: TextEditingController(),
       ),);
@@ -125,7 +152,11 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     _timeController.dispose();
     _woodController.dispose();
     _notesController.dispose();
+    _servesController.dispose();
     for (final entry in _seasonings) {
+      entry.dispose();
+    }
+    for (final entry in _ingredients) {
       entry.dispose();
     }
     for (final controller in _directionControllers) {
@@ -168,6 +199,11 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
+            // Type selector (Pit Note vs Recipe)
+            _buildTypeSelector(theme),
+
+            const SizedBox(height: 16),
+
             // Recipe Photo (top for consistency)
             _buildImagePicker(theme),
 
@@ -186,12 +222,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             const SizedBox(height: 16),
 
-            // Item and Category row
-            Row(
-              children: [
-                // Item being smoked (with autocomplete)
-                Expanded(
-                  flex: 2,
+            // Item and Category row (only for Pit Notes)
+            if (_selectedType == SmokingType.pitNote) ...[
+              Row(
+                children: [
+                  // Item being smoked (with autocomplete)
+                  Expanded(
+                    flex: 2,
                   child: Autocomplete<String>(
                     initialValue: TextEditingValue(text: _itemController.text),
                     optionsBuilder: (textEditingValue) {
@@ -274,43 +311,50 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 ),
               ],
             ),
+            ],
 
-            const SizedBox(height: 16),
+            // Pit Note specific fields
+            if (_selectedType == SmokingType.pitNote) ...[
+              const SizedBox(height: 16),
 
-            // Temperature and Time row
-            Row(
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    controller: _temperatureController,
-                    decoration: const InputDecoration(
-                      labelText: 'Temperature *',
-                      hintText: 'e.g., 275°F',
+              // Temperature and Time row
+              Row(
+                children: [
+                  Expanded(
+                    child: TextFormField(
+                      controller: _temperatureController,
+                      decoration: const InputDecoration(
+                        labelText: 'Temperature *',
+                        hintText: 'e.g., 275°F',
+                      ),
+                      validator: (v) =>
+                          _selectedType == SmokingType.pitNote && (v?.isEmpty ?? true)
+                              ? 'Temperature is required'
+                              : null,
                     ),
-                    validator: (v) =>
-                        v?.isEmpty ?? true ? 'Temperature is required' : null,
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: TextFormField(
-                    controller: _timeController,
-                    decoration: const InputDecoration(
-                      labelText: 'Time *',
-                      hintText: 'e.g., 8-12 hrs',
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: TextFormField(
+                      controller: _timeController,
+                      decoration: const InputDecoration(
+                        labelText: 'Time *',
+                        hintText: 'e.g., 8-12 hrs',
+                      ),
+                      validator: (v) =>
+                          _selectedType == SmokingType.pitNote && (v?.isEmpty ?? true)
+                              ? 'Time is required'
+                              : null,
                     ),
-                    validator: (v) =>
-                        v?.isEmpty ?? true ? 'Time is required' : null,
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
 
-            const SizedBox(height: 16),
+              const SizedBox(height: 16),
 
-            // Wood type with autocomplete suggestions
-            Autocomplete<String>(
-              initialValue: TextEditingValue(text: _woodController.text),
+              // Wood type with autocomplete suggestions
+              Autocomplete<String>(
+                initialValue: TextEditingValue(text: _woodController.text),
               optionsBuilder: (textEditingValue) {
                 return WoodSuggestions.getSuggestions(textEditingValue.text);
               },
@@ -366,14 +410,52 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             const SizedBox(height: 24),
 
-            // Seasonings section
-            _buildSectionTitle(theme, 'Seasonings'),
-            const SizedBox(height: 8),
-            ..._buildSeasoningFields(),
+              // Seasonings section (Pit Notes)
+              _buildSectionTitle(theme, 'Seasonings'),
+              const SizedBox(height: 8),
+              ..._buildSeasoningFields(),
+            ],
+
+            // Recipe specific fields
+            if (_selectedType == SmokingType.recipe) ...[
+              const SizedBox(height: 16),
+
+              // Serves and Time row
+              Row(
+                children: [
+                  Expanded(
+                    child: TextFormField(
+                      controller: _servesController,
+                      decoration: const InputDecoration(
+                        labelText: 'Serves',
+                        hintText: 'e.g., 8-10',
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: TextFormField(
+                      controller: _timeController,
+                      decoration: const InputDecoration(
+                        labelText: 'Time',
+                        hintText: 'e.g., 12 hours',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+
+              const SizedBox(height: 24),
+
+              // Ingredients section (Recipes)
+              _buildSectionTitle(theme, 'Ingredients'),
+              const SizedBox(height: 8),
+              ..._buildIngredientFields(),
+            ],
 
             const SizedBox(height: 24),
 
-            // Directions section
+            // Directions section (both types)
             _buildSectionTitle(theme, 'Directions'),
             const SizedBox(height: 8),
             ..._buildDirectionFields(),
@@ -398,6 +480,54 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             const SizedBox(height: 32),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTypeSelector(ThemeData theme) {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildTypeChip('Pit Note', SmokingType.pitNote, theme),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: _buildTypeChip('Recipe', SmokingType.recipe, theme),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTypeChip(String label, SmokingType type, ThemeData theme) {
+    final isSelected = _selectedType == type;
+
+    return GestureDetector(
+      onTap: () => setState(() => _selectedType = type),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? theme.colorScheme.secondary.withOpacity(0.15)
+              : theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: isSelected
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.outline.withOpacity(0.3),
+            width: isSelected ? 1.5 : 1.0,
+          ),
+        ),
+        child: Center(
+          child: Text(
+            label,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: isSelected
+                  ? theme.colorScheme.secondary
+                  : theme.colorScheme.onSurface,
+              fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+            ),
+          ),
         ),
       ),
     );
@@ -622,6 +752,152 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     });
   }
 
+  void _addIngredient() {
+    setState(() {
+      _ingredients.add(_SeasoningEntry(
+        nameController: TextEditingController(),
+        amountController: TextEditingController(),
+      ),);
+    });
+  }
+
+  void _removeIngredient(int index) {
+    setState(() {
+      _ingredients[index].dispose();
+      _ingredients.removeAt(index);
+    });
+  }
+
+  List<Widget> _buildIngredientFields() {
+    final theme = Theme.of(context);
+    
+    return _ingredients.asMap().entries.map((entry) {
+      final index = entry.key;
+      final ingredient = entry.value;
+      final isLast = index == _ingredients.length - 1;
+
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+        decoration: BoxDecoration(
+          border: isLast 
+              ? null 
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            // Amount
+            SizedBox(
+              width: 80,
+              child: TextField(
+                controller: ingredient.amountController,
+                decoration: InputDecoration(
+                  isDense: true,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  border: const OutlineInputBorder(),
+                  hintText: 'Amount',
+                  hintStyle: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.outline,
+                  ),
+                ),
+                style: theme.textTheme.bodyMedium,
+              ),
+            ),
+            const SizedBox(width: 8),
+            
+            // Ingredient name with autocomplete
+            Expanded(
+              child: Autocomplete<String>(
+                initialValue: TextEditingValue(text: ingredient.nameController.text),
+                optionsBuilder: (textEditingValue) {
+                  if (textEditingValue.text.isEmpty) {
+                    return Suggestions.ingredients;
+                  }
+                  return Suggestions.filter(
+                    Suggestions.ingredients, 
+                    textEditingValue.text,
+                  );
+                },
+                fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                  controller.addListener(() {
+                    ingredient.nameController.text = controller.text;
+                    // Auto-add new row when typing in last row
+                    if (isLast && controller.text.isNotEmpty && _ingredients.length == index + 1) {
+                      _addIngredient();
+                      setState(() {});
+                    }
+                  });
+                  return TextField(
+                    controller: controller,
+                    focusNode: focusNode,
+                    decoration: InputDecoration(
+                      isDense: true,
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                      border: const OutlineInputBorder(),
+                      hintText: 'Ingredient',
+                      hintStyle: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        color: theme.colorScheme.outline,
+                      ),
+                    ),
+                    style: theme.textTheme.bodyMedium,
+                    textCapitalization: TextCapitalization.words,
+                    onSubmitted: (_) => onFieldSubmitted(),
+                  );
+                },
+                onSelected: (selection) {
+                  ingredient.nameController.text = selection;
+                },
+                optionsViewBuilder: (context, onSelected, options) {
+                  return Align(
+                    alignment: Alignment.topLeft,
+                    child: Material(
+                      elevation: 4,
+                      borderRadius: BorderRadius.circular(8),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          maxHeight: 200,
+                          maxWidth: 180,
+                        ),
+                        child: ListView.builder(
+                          padding: EdgeInsets.zero,
+                          shrinkWrap: true,
+                          itemCount: options.length,
+                          itemBuilder: (context, idx) {
+                            final option = options.elementAt(idx);
+                            return ListTile(
+                              dense: true,
+                              title: Text(option),
+                              onTap: () => onSelected(option),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+            
+            // Delete button
+            if (_ingredients.length > 1)
+              IconButton(
+                icon: Icon(
+                  Icons.remove_circle_outline, 
+                  size: 20,
+                  color: theme.colorScheme.secondary,
+                ),
+                onPressed: () => _removeIngredient(index),
+              )
+            else
+              const SizedBox(width: 48),
+          ],
+        ),
+      );
+    }).toList();
+  }
+
   void _addDirection() {
     setState(() {
       _directionControllers.add(TextEditingController());
@@ -822,7 +1098,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   Future<void> _saveRecipe() async {
     if (!_formKey.currentState!.validate()) return;
 
-    // Build seasonings list
+    // Build seasonings list (for Pit Notes)
     final seasonings = _seasonings
         .where((s) => s.nameController.text.trim().isNotEmpty)
         .map((s) => SmokingSeasoning()
@@ -830,6 +1106,16 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ..amount = s.amountController.text.trim().isEmpty
               ? null
               : s.amountController.text.trim(),)
+        .toList();
+
+    // Build ingredients list (for Recipes)
+    final ingredients = _ingredients
+        .where((i) => i.nameController.text.trim().isNotEmpty)
+        .map((i) => SmokingSeasoning()
+          ..name = i.nameController.text.trim()
+          ..amount = i.amountController.text.trim().isEmpty
+              ? null
+              : i.amountController.text.trim(),)
         .toList();
 
     // Build directions list
@@ -841,6 +1127,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     final recipe = SmokingRecipe()
       ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
+      ..type = _selectedType
       ..item = _itemController.text.trim().isEmpty
           ? null
           : _itemController.text.trim()
@@ -849,6 +1136,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..time = _timeController.text.trim()
       ..wood = _woodController.text.trim()
       ..seasonings = seasonings
+      ..ingredients = ingredients
+      ..serves = _servesController.text.trim().isEmpty
+          ? null
+          : _servesController.text.trim()
       ..directions = directions
       ..notes = _notesController.text.trim().isEmpty
           ? null
