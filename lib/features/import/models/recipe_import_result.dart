@@ -384,10 +384,48 @@ class RecipeImportResult {
       unit: i.unit,
     )).toList();
     
+    // Detect category from name, URL, and ingredients
+    String? detectedCategory = _detectSmokingCategory();
+    
+    // Detect wood type from text
+    final allText = [
+      name ?? '',
+      notes ?? '',
+      ...directions,
+      ...ingredients.map((i) => i.name),
+    ].join(' ');
+    final lowerText = allText.toLowerCase();
+    
+    String? woodType;
+    for (final wood in WoodSuggestions.common) {
+      final lowerWood = wood.toLowerCase();
+      // Check for contextual match first (higher confidence)
+      final woodContext = RegExp(
+        '($lowerWood)\\s*(wood|chips?|chunks?|pellets?|smoke)|'
+        '(smoke|wood|chips?|chunks?|pellets?)\\s*($lowerWood)',
+        caseSensitive: false,
+      );
+      if (woodContext.hasMatch(lowerText)) {
+        woodType = wood;
+        break;
+      }
+    }
+    // Fallback: plain wood name match if no contextual match
+    if (woodType == null) {
+      for (final wood in WoodSuggestions.common) {
+        if (lowerText.contains(wood.toLowerCase())) {
+          woodType = wood;
+          break;
+        }
+      }
+    }
+    
     final recipe = SmokingRecipe.create(
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
       type: SmokingType.recipe, // Full recipe, not Pit Note
+      category: detectedCategory,
+      wood: woodType ?? '',
       serves: serves,
       time: time ?? '',
       ingredients: recipeIngredients,
@@ -406,6 +444,43 @@ class RecipeImportResult {
     }
     
     return recipe;
+  }
+
+  /// Detect smoking category from name, URL, and ingredients
+  /// Returns category like 'Pork', 'Beef', 'Poultry', etc.
+  String? _detectSmokingCategory() {
+    // Combine all relevant text
+    final allText = [
+      name ?? '',
+      sourceUrl ?? '',
+      notes ?? '',
+      ...ingredients.map((i) => i.name),
+    ].join(' ').toLowerCase();
+    
+    // Category keywords map - order matters (more specific first)
+    const categoryKeywords = <String, List<String>>{
+      'Pork': ['pork', 'pulled pork', 'pork shoulder', 'pork butt', 'spare ribs', 'baby back', 'pork belly', 'ham', 'bacon', 'pork chop', 'pork loin'],
+      'Beef': ['brisket', 'beef', 'tri-tip', 'chuck roast', 'prime rib', 'beef ribs', 'beef cheeks', 'burnt ends', 'short ribs', 'pastrami'],
+      'Poultry': ['chicken', 'turkey', 'duck', 'cornish hen', 'poultry', 'spatchcock', 'wings', 'thigh', 'breast', 'drumstick'],
+      'Lamb': ['lamb', 'lamb shoulder', 'leg of lamb', 'lamb ribs', 'lamb chops', 'rack of lamb', 'mutton'],
+      'Game': ['venison', 'elk', 'wild boar', 'rabbit', 'pheasant', 'quail', 'goose', 'buffalo', 'game', 'deer'],
+      'Seafood': ['salmon', 'trout', 'fish', 'shrimp', 'oyster', 'scallop', 'lobster', 'swordfish', 'tuna', 'mahi', 'seafood', 'crab'],
+      'Vegetables': ['vegetable', 'corn', 'pepper', 'onion', 'tomato', 'cabbage', 'mushroom', 'artichoke', 'potato', 'cauliflower', 'squash', 'eggplant'],
+      'Cheese': ['cheese', 'gouda', 'cheddar', 'mozzarella', 'provolone', 'brie', 'cream cheese', 'pepper jack'],
+      'Desserts': ['dessert', 'bread pudding', 'brownie', 'cheesecake', 'pie', 'cobbler', 'cinnamon roll'],
+      'Fruits': ['fruit', 'peach', 'apple', 'pineapple', 'banana', 'pear', 'plum', 'watermelon'],
+      'Dips': ['queso', 'mac', 'baked beans', 'salsa', 'guacamole', 'hummus', 'dip'],
+    };
+    
+    for (final entry in categoryKeywords.entries) {
+      for (final keyword in entry.value) {
+        if (allText.contains(keyword)) {
+          return entry.key;
+        }
+      }
+    }
+    
+    return null;
   }
 
   /// Convert to a Pizza (for high-confidence Pizza imports)

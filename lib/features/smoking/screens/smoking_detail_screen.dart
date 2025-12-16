@@ -1,11 +1,13 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../../app/theme/colors.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../../sharing/services/share_service.dart';
+import '../../settings/screens/settings_screen.dart';
 import 'smoking_edit_screen.dart';
 
 /// Detail screen showing a smoking recipe's full information
@@ -151,6 +153,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     case 'edit':
                       _editRecipe(context, recipe);
                       break;
+                    case 'duplicate':
+                      _duplicateRecipe(context, ref, recipe);
+                      break;
                     case 'delete':
                       _confirmDelete(context, ref, recipe);
                       break;
@@ -160,6 +165,10 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                   const PopupMenuItem(
                     value: 'edit',
                     child: Text('Edit'),
+                  ),
+                  const PopupMenuItem(
+                    value: 'duplicate',
+                    child: Text('Duplicate'),
                   ),
                   PopupMenuItem(
                     value: 'delete',
@@ -188,114 +197,113 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     children: [
                       // Quick info chips (category, temperature, time, wood)
                       _buildQuickInfo(context, recipe),
-                      
-                      const SizedBox(height: 16),
                     ],
                   ),
                 ),
               ),
               
-              // Ingredients Card - different content based on type
+              // Ingredients and Directions - side by side
               SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // Ingredients header
-                          Text(
-                            'Ingredients',
-                            style: theme.textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 16),
-                          
-                          // For Pit Notes: show Main item + Seasonings
-                          if (recipe.type == SmokingType.pitNote) ...[
-                            // Main item section
-                            if (recipe.item != null && recipe.item!.isNotEmpty) ...[
-                              _buildIngredientSection(
-                                theme,
-                                'Main',
-                                [recipe.item!],
-                              ),
-                            ],
-                            
-                            // Seasonings section
-                            if (recipe.seasonings.isNotEmpty) ...[
-                              if (recipe.item != null && recipe.item!.isNotEmpty)
-                                const SizedBox(height: 16),
-                              _buildIngredientSection(
-                                theme,
-                                recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
-                                recipe.seasonings.map((s) => s.displayText).toList(),
-                              ),
-                            ],
-                          ],
-                          
-                          // For Recipes: show full ingredients list
-                          if (recipe.type == SmokingType.recipe) ...[
-                            if (recipe.ingredients.isNotEmpty)
-                              ...recipe.ingredients.map((i) => Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 6,
-                                      height: 6,
-                                      margin: const EdgeInsets.only(top: 6, right: 12),
-                                      decoration: BoxDecoration(
-                                        color: theme.colorScheme.secondary,
-                                        shape: BoxShape.circle,
+                child: Consumer(
+                  builder: (context, ref, _) {
+                    final forceSideBySide = ref.watch(forceSideBySideProvider);
+                    
+                    return LayoutBuilder(
+                      builder: (context, constraints) {
+                        // Use side-by-side layout if setting enabled and screen wide enough
+                        final useSideBySide = (forceSideBySide && constraints.maxWidth > 360) ||
+                                              constraints.maxWidth > 800;
+                        
+                        if (useSideBySide) {
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                // Ingredients on the left
+                                Expanded(
+                                  flex: 2,
+                                  child: Card(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Ingredients',
+                                            style: theme.textTheme.titleLarge?.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 12),
+                                          _buildIngredientsContent(theme, recipe),
+                                        ],
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Text(
-                                        i.displayText,
-                                        style: theme.textTheme.bodyMedium,
-                                      ),
-                                    ),
-                                  ],
+                                  ),
                                 ),
-                              )),
-                          ],
-                        ],
-                      ),
-                    ),
-                  ),
+                                const SizedBox(width: 16),
+                                // Directions on the right
+                                Expanded(
+                                  flex: 3,
+                                  child: Card(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Directions',
+                                            style: theme.textTheme.titleLarge?.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 12),
+                                          _buildDirectionsList(context, recipe),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+                        
+                        // Stacked layout for narrow screens
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const SizedBox(height: 8),
+                              Text(
+                                'Ingredients',
+                                style: theme.textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              _buildIngredientsContent(theme, recipe),
+                              const SizedBox(height: 24),
+                              if (recipe.directions.isNotEmpty) ...[
+                                Text(
+                                  'Directions',
+                                  style: theme.textTheme.titleLarge?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                _buildDirectionsList(context, recipe),
+                              ],
+                            ],
+                          ),
+                        );
+                      },
+                    );
+                  },
                 ),
               ),
-              
-              // Directions Card
-              if (recipe.directions.isNotEmpty)
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Directions',
-                              style: theme.textTheme.titleLarge?.copyWith(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const SizedBox(height: 12),
-                            _buildDirectionsList(context, recipe),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
 
               // Step Images Gallery (under directions, before notes)
               if (hasStepImages)
@@ -441,6 +449,69 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             ),
         ],
       ],
+    );
+  }
+
+  /// Build ingredients content based on recipe type
+  Widget _buildIngredientsContent(ThemeData theme, SmokingRecipe recipe) {
+    if (recipe.type == SmokingType.pitNote) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Main item section
+          if (recipe.item != null && recipe.item!.isNotEmpty) ...
+            [
+              _buildIngredientSection(theme, 'Main', [recipe.item!]),
+            ],
+          // Seasonings section
+          if (recipe.seasonings.isNotEmpty) ...[
+            if (recipe.item != null && recipe.item!.isNotEmpty)
+              const SizedBox(height: 16),
+            _buildIngredientSection(
+              theme,
+              recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
+              recipe.seasonings.map((s) => s.displayText).toList(),
+            ),
+          ],
+        ],
+      );
+    }
+    
+    // For Recipe type: show full ingredients list
+    if (recipe.ingredients.isEmpty) {
+      return Text(
+        'No ingredients',
+        style: theme.textTheme.bodyMedium?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+      );
+    }
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: recipe.ingredients.map((i) => Padding(
+        padding: const EdgeInsets.only(bottom: 8),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: 6,
+              height: 6,
+              margin: const EdgeInsets.only(top: 6, right: 12),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.secondary,
+                shape: BoxShape.circle,
+              ),
+            ),
+            Expanded(
+              child: Text(
+                i.displayText,
+                style: theme.textTheme.bodyMedium,
+              ),
+            ),
+          ],
+        ),
+      )).toList(),
     );
   }
 
@@ -721,6 +792,43 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         builder: (_) => SmokingEditScreen(recipeId: recipe.uuid),
       ),
     );
+  }
+
+  void _duplicateRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) async {
+    final repo = ref.read(smokingRepositoryProvider);
+    final newUuid = const Uuid().v4();
+    
+    final newRecipe = SmokingRecipe.create(
+      uuid: newUuid,
+      name: '${recipe.name} (Copy)',
+      type: recipe.type,
+      item: recipe.item,
+      category: recipe.category,
+      temperature: recipe.temperature,
+      time: recipe.time,
+      wood: recipe.wood,
+      seasonings: recipe.seasonings.map((s) => SmokingSeasoning.create(
+        name: s.name,
+        amount: s.amount,
+        unit: s.unit,
+      )).toList(),
+      ingredients: recipe.ingredients.map((i) => SmokingSeasoning.create(
+        name: i.name,
+        amount: i.amount,
+        unit: i.unit,
+      )).toList(),
+      serves: recipe.serves,
+      directions: List.from(recipe.directions),
+      notes: recipe.notes,
+      source: SmokingSource.personal,
+    );
+    
+    await repo.saveRecipe(newRecipe);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Created copy: ${newRecipe.name}')),
+      );
+    }
   }
 
   Future<void> _confirmDelete(
