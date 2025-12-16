@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import '../models/cheese_entry.dart';
+import '../../../app/theme/colors.dart';
+import '../../recipes/models/cuisine.dart';import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 
 /// Cheese entry card widget for list display
@@ -82,20 +82,24 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Buy indicator
+                  // Buy indicator (styled like selected filter chip)
                   if (widget.entry.buy)
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.primaryContainer,
+                          color: theme.colorScheme.secondary.withOpacity(0.15),
                           borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: theme.colorScheme.secondary,
+                            width: 1.5,
+                          ),
                         ),
                         child: Text(
                           'Buy',
                           style: theme.textTheme.labelSmall?.copyWith(
-                            color: theme.colorScheme.onPrimaryContainer,
+                            color: theme.colorScheme.secondary,
                           ),
                         ),
                       ),
@@ -125,28 +129,49 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
   }
 
   Widget _buildMetadataRow(ThemeData theme) {
-    final parts = <String>[];
-    if (widget.entry.country != null && widget.entry.country!.isNotEmpty) {
-      parts.add(widget.entry.country!);
-    }
-    if (widget.entry.milk != null && widget.entry.milk!.isNotEmpty) {
-      parts.add(widget.entry.milk!);
-    }
-    if (widget.entry.type != null && widget.entry.type!.isNotEmpty) {
-      parts.add(widget.entry.type!);
-    }
+    final hasCountry = widget.entry.country != null && widget.entry.country!.isNotEmpty;
+    final hasMilk = widget.entry.milk != null && widget.entry.milk!.isNotEmpty;
 
-    if (parts.isEmpty) {
+    if (!hasCountry && !hasMilk) {
       return const SizedBox.shrink();
     }
 
-    return Text(
-      parts.join(' · '),
-      style: theme.textTheme.bodySmall?.copyWith(
-        color: theme.colorScheme.onSurfaceVariant,
-      ),
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
+    return Row(
+      children: [
+        // Colored dot for country (like cuisine dot in Mains)
+        if (hasCountry) ...[
+          Text(
+            '\u2022',
+            style: TextStyle(
+              color: MemoixColors.forContinentDot(widget.entry.country),
+              fontSize: 16,
+            ),
+          ),
+          const SizedBox(width: 6),
+          Text(
+            Cuisine.toAdjective(widget.entry.country!),
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
+        // Milk type with icon
+        if (hasMilk) ...[
+          if (hasCountry) const SizedBox(width: 12),
+          Icon(
+            Icons.pets,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            widget.entry.milk!,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
+      ],
     );
   }
 }

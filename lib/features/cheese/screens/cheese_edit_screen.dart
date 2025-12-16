@@ -6,6 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../recipes/models/cuisine.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 
@@ -22,14 +23,14 @@ class CheeseEditScreen extends ConsumerStatefulWidget {
 class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
-  final _countryController = TextEditingController();
   final _milkController = TextEditingController();
   final _textureController = TextEditingController();
   final _typeController = TextEditingController();
   final _flavourController = TextEditingController();
-  final _priceRangeController = TextEditingController();
 
+  String? _selectedCountry; // Uses same selection pattern as Cuisine
   bool _buy = false;
+  int _priceRange = 0; // 0 = unset, 1-5 = tier
   String? _imagePath;
   CheeseEntry? _existingEntry;
   bool _isLoading = true;
@@ -43,16 +44,16 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
     'Mixed',
   ];
 
-  // Common textures for autocomplete
+  // Cheese textures as per requirements (selectable suggestions, custom allowed)
   static const List<String> _defaultTextures = [
-    'Soft',
-    'Semi-soft',
-    'Semi-hard',
+    'Fresh',
+    'Aged Fresh',
+    'Bloomy Rind',
+    'Washed Rind',
+    'Semi-Soft',
+    'Semi-Hard',
     'Hard',
     'Blue',
-    'Fresh',
-    'Washed Rind',
-    'Bloomy Rind',
   ];
 
   @override
@@ -64,12 +65,10 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
   @override
   void dispose() {
     _nameController.dispose();
-    _countryController.dispose();
     _milkController.dispose();
     _textureController.dispose();
     _typeController.dispose();
     _flavourController.dispose();
-    _priceRangeController.dispose();
     super.dispose();
   }
 
@@ -80,12 +79,12 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       if (entry != null) {
         _existingEntry = entry;
         _nameController.text = entry.name;
-        _countryController.text = entry.country ?? '';
+        _selectedCountry = entry.country;
         _milkController.text = entry.milk ?? '';
         _textureController.text = entry.texture ?? '';
         _typeController.text = entry.type ?? '';
         _flavourController.text = entry.flavour ?? '';
-        _priceRangeController.text = entry.priceRange ?? '';
+        _priceRange = entry.priceRange ?? 0;
         _buy = entry.buy;
         _imagePath = entry.imageUrl;
       }
@@ -109,12 +108,10 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       appBar: AppBar(
         title: Text(isEditing ? 'Edit Cheese' : 'New Cheese'),
         actions: [
-          TextButton(
+          TextButton.icon(
             onPressed: _saveEntry,
-            child: Text(
-              'Save',
-              style: TextStyle(color: theme.colorScheme.primary),
-            ),
+            icon: const Icon(Icons.save),
+            label: const Text('Save'),
           ),
         ],
       ),
@@ -143,56 +140,45 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Country and Milk (side by side)
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    controller: _countryController,
-                    decoration: const InputDecoration(
-                      labelText: 'Country',
-                      border: OutlineInputBorder(),
-                    ),
-                    textCapitalization: TextCapitalization.words,
+            // Country selector (uses same pattern as Cuisine)
+            _CountrySelector(
+              selectedCountry: _selectedCountry,
+              onChanged: (country) => setState(() => _selectedCountry = country),
+            ),
+            const SizedBox(height: 16),
+
+            // Milk (autocomplete with suggestions)
+            Autocomplete<String>(
+              optionsBuilder: (textEditingValue) {
+                if (textEditingValue.text.isEmpty) {
+                  return _defaultMilkTypes;
+                }
+                return _defaultMilkTypes.where((m) =>
+                    m.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+              },
+              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                if (controller.text != _milkController.text) {
+                  controller.text = _milkController.text;
+                }
+                controller.addListener(() {
+                  if (_milkController.text != controller.text) {
+                    _milkController.text = controller.text;
+                  }
+                });
+                return TextFormField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: const InputDecoration(
+                    labelText: 'Milk',
+                    border: OutlineInputBorder(),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Autocomplete<String>(
-                    optionsBuilder: (textEditingValue) {
-                      if (textEditingValue.text.isEmpty) {
-                        return _defaultMilkTypes;
-                      }
-                      return _defaultMilkTypes.where((m) =>
-                          m.toLowerCase().contains(textEditingValue.text.toLowerCase()));
-                    },
-                    fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
-                      if (controller.text != _milkController.text) {
-                        controller.text = _milkController.text;
-                      }
-                      controller.addListener(() {
-                        if (_milkController.text != controller.text) {
-                          _milkController.text = controller.text;
-                        }
-                      });
-                      return TextFormField(
-                        controller: controller,
-                        focusNode: focusNode,
-                        decoration: const InputDecoration(
-                          labelText: 'Milk',
-                          border: OutlineInputBorder(),
-                        ),
-                        textCapitalization: TextCapitalization.words,
-                        onFieldSubmitted: (_) => onFieldSubmitted(),
-                      );
-                    },
-                    onSelected: (selection) {
-                      _milkController.text = selection;
-                    },
-                  ),
-                ),
-              ],
+                  textCapitalization: TextCapitalization.words,
+                  onFieldSubmitted: (_) => onFieldSubmitted(),
+                );
+              },
+              onSelected: (selection) {
+                _milkController.text = selection;
+              },
             ),
             const SizedBox(height: 16),
 
@@ -249,12 +235,16 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Buy toggle
-            SwitchListTile(
-              title: const Text('Would buy again'),
-              value: _buy,
-              onChanged: (value) => setState(() => _buy = value),
-              contentPadding: EdgeInsets.zero,
+            // Buy toggle (compact, not full-width)
+            Row(
+              children: [
+                Text('Buy', style: theme.textTheme.bodyLarge),
+                const SizedBox(width: 8),
+                Switch.adaptive(
+                  value: _buy,
+                  onChanged: (value) => setState(() => _buy = value),
+                ),
+              ],
             ),
             const SizedBox(height: 16),
 
@@ -270,13 +260,10 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Price range (optional)
-            TextFormField(
-              controller: _priceRangeController,
-              decoration: const InputDecoration(
-                labelText: 'Price Range',
-                border: OutlineInputBorder(),
-              ),
+            // Price range (5-tier rating)
+            _PriceRangeSelector(
+              value: _priceRange,
+              onChanged: (value) => setState(() => _priceRange = value),
             ),
             const SizedBox(height: 80),
           ],
@@ -448,13 +435,13 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
     entry
       ..uuid = _existingEntry?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
-      ..country = _countryController.text.trim().isEmpty ? null : _countryController.text.trim()
+      ..country = _selectedCountry
       ..milk = _milkController.text.trim().isEmpty ? null : _milkController.text.trim()
       ..texture = _textureController.text.trim().isEmpty ? null : _textureController.text.trim()
       ..type = _typeController.text.trim().isEmpty ? null : _typeController.text.trim()
       ..buy = _buy
       ..flavour = _flavourController.text.trim().isEmpty ? null : _flavourController.text.trim()
-      ..priceRange = _priceRangeController.text.trim().isEmpty ? null : _priceRangeController.text.trim()
+      ..priceRange = _priceRange > 0 ? _priceRange : null
       ..imageUrl = _imagePath
       ..source = _existingEntry?.source ?? CheeseSource.personal
       ..updatedAt = DateTime.now();
@@ -472,5 +459,296 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       );
       Navigator.of(context).pop();
     }
+  }
+}
+
+/// Country selector using same pattern as Cuisine selector in recipe edit
+class _CountrySelector extends StatelessWidget {
+  final String? selectedCountry;
+  final ValueChanged<String?> onChanged;
+
+  const _CountrySelector({
+    required this.selectedCountry,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final cuisine = selectedCountry != null ? Cuisine.byCode(selectedCountry!) : null;
+    
+    return InkWell(
+      onTap: () => _showCountrySheet(context),
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Country',
+          suffixIcon: Icon(Icons.arrow_drop_down),
+        ),
+        child: Text(
+          cuisine != null
+              ? '${cuisine.flag} ${cuisine.name}'
+              : selectedCountry ?? 'Select country (optional)',
+          style: TextStyle(
+            color: selectedCountry != null
+                ? Theme.of(context).colorScheme.onSurface
+                : Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showCountrySheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => _CountryPickerSheet(
+        selectedCountry: selectedCountry,
+        onChanged: (code) {
+          onChanged(code);
+          Navigator.pop(ctx);
+        },
+        onClear: () {
+          onChanged(null);
+          Navigator.pop(ctx);
+        },
+      ),
+    );
+  }
+}
+
+/// Bottom sheet with searchable country list grouped by continent
+class _CountryPickerSheet extends StatefulWidget {
+  final String? selectedCountry;
+  final ValueChanged<String> onChanged;
+  final VoidCallback onClear;
+
+  const _CountryPickerSheet({
+    required this.selectedCountry,
+    required this.onChanged,
+    required this.onClear,
+  });
+
+  @override
+  State<_CountryPickerSheet> createState() => _CountryPickerSheetState();
+}
+
+class _CountryPickerSheetState extends State<_CountryPickerSheet> {
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  List<Cuisine> get _filteredCuisines {
+    if (_searchQuery.isEmpty) return [];
+    final query = _searchQuery.toLowerCase();
+    return Cuisine.all.where((c) => 
+      c.name.toLowerCase().contains(query) ||
+      c.continent.toLowerCase().contains(query) ||
+      c.code.toLowerCase().contains(query),
+    ).toList()..sort((a, b) => a.name.compareTo(b.name));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return DraggableScrollableSheet(
+      initialChildSize: 0.7,
+      minChildSize: 0.3,
+      maxChildSize: 0.9,
+      expand: false,
+      builder: (_, controller) => Column(
+        children: [
+          // Header
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                const Text(
+                  'Select Country',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: widget.onClear,
+                  child: const Text('Clear'),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ),
+          // Search field
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                hintText: 'Search countries...',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onChanged: (value) => setState(() => _searchQuery = value),
+            ),
+          ),
+          const SizedBox(height: 8),
+          const Divider(height: 1),
+          // Content
+          Expanded(
+            child: _searchQuery.isNotEmpty
+                ? _buildSearchResults(controller)
+                : _buildGroupedList(controller),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSearchResults(ScrollController controller) {
+    final results = _filteredCuisines;
+    if (results.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            const SizedBox(height: 16),
+            Text(
+              'No countries found for "$_searchQuery"',
+              style: TextStyle(color: Colors.grey.shade600),
+            ),
+          ],
+        ),
+      );
+    }
+    
+    return ListView.builder(
+      controller: controller,
+      itemCount: results.length,
+      itemBuilder: (context, index) {
+        final cuisine = results[index];
+        final isSelected = widget.selectedCountry == cuisine.code;
+        return ListTile(
+          leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+          title: Text(cuisine.name),
+          subtitle: Text(cuisine.continent, 
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+          trailing: isSelected
+              ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+              : null,
+          selected: isSelected,
+          onTap: () => widget.onChanged(cuisine.code),
+        );
+      },
+    );
+  }
+
+  Widget _buildGroupedList(ScrollController controller) {
+    return ListView(
+      controller: controller,
+      children: CuisineGroup.all.map((group) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Text(
+                group.continent,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            ...group.cuisines.map((cuisine) {
+              final isSelected = widget.selectedCountry == cuisine.code;
+              return ListTile(
+                leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+                title: Text(cuisine.name),
+                trailing: isSelected
+                    ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+                    : null,
+                selected: isSelected,
+                onTap: () => widget.onChanged(cuisine.code),
+              );
+            }),
+          ],
+        );
+      }).toList(),
+    );
+  }
+}
+
+/// 5-tier price range selector displayed as dollar signs
+class _PriceRangeSelector extends StatelessWidget {
+  final int value;
+  final ValueChanged<int> onChanged;
+
+  const _PriceRangeSelector({
+    required this.value,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Price Range',
+          style: theme.textTheme.bodyLarge,
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: List.generate(5, (index) {
+            final tier = index + 1;
+            final isSelected = value >= tier;
+            return GestureDetector(
+              onTap: () => onChanged(value == tier ? 0 : tier),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: Text(
+                  '\$',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: isSelected 
+                        ? theme.colorScheme.primary 
+                        : theme.colorScheme.outline.withOpacity(0.4),
+                  ),
+                ),
+              ),
+            );
+          }),
+          ...[
+            const SizedBox(width: 16),
+            if (value > 0)
+              TextButton(
+                onPressed: () => onChanged(0),
+                child: const Text('Clear'),
+              ),
+          ],
+        ),
+      ],
+    );
   }
 }

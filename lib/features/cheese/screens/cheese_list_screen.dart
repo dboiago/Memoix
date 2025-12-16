@@ -96,7 +96,8 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => AppRoutes.toCheeseEdit(context),
-        label: const Text('Add Entry'),
+        icon: const Icon(Icons.add),
+        label: const Text('Add'),
       ),
     );
   }

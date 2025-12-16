@@ -119,34 +119,42 @@ class _CheeseDetailView extends ConsumerWidget {
             ),
           ),
 
-          // Flavour notes section (if present)
-          if (entry.flavour != null && entry.flavour!.isNotEmpty)
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Flavour',
-                          style: theme.textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+          // Flavour notes section (always shown, with placeholder if empty)
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Flavour',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
                         ),
-                        const SizedBox(height: 12),
+                      ),
+                      const SizedBox(height: 12),
+                      if (entry.flavour != null && entry.flavour!.isNotEmpty)
                         Text(
                           entry.flavour!,
                           style: theme.textTheme.bodyMedium,
+                        )
+                      else
+                        Text(
+                          'No flavour notes added.',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.outline,
+                            fontStyle: FontStyle.italic,
+                          ),
                         ),
-                      ],
-                    ),
+                    ],
                   ),
                 ),
               ),
             ),
+          ),
 
           // Bottom padding
           const SliverToBoxAdapter(
@@ -185,9 +193,10 @@ class _CheeseDetailView extends ConsumerWidget {
       chips.add(_buildChip(theme, entry.type!));
     }
 
-    // Price range (optional, only if populated)
-    if (entry.priceRange != null && entry.priceRange!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.priceRange!));
+    // Price range (displayed as dollar signs)
+    if (entry.priceRange != null && entry.priceRange! > 0) {
+      final priceDisplay = '\$' * entry.priceRange!;
+      chips.add(_buildChip(theme, priceDisplay));
     }
 
     if (chips.isEmpty) {

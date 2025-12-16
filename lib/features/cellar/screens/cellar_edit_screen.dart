@@ -6,6 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 
@@ -22,14 +23,14 @@ class CellarEditScreen extends ConsumerStatefulWidget {
 class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
-  final _producerController = TextEditingController();
   final _categoryController = TextEditingController();
   final _tastingNotesController = TextEditingController();
   final _abvController = TextEditingController();
   final _ageVintageController = TextEditingController();
-  final _priceRangeController = TextEditingController();
 
+  String? _selectedProducer; // Uses same selection pattern as Cuisine for country/origin
   bool _buy = false;
+  int _priceRange = 0; // 0 = unset, 1-5 = tier
   String? _imagePath;
   CellarEntry? _existingEntry;
   bool _isLoading = true;
@@ -63,12 +64,10 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
   @override
   void dispose() {
     _nameController.dispose();
-    _producerController.dispose();
     _categoryController.dispose();
     _tastingNotesController.dispose();
     _abvController.dispose();
     _ageVintageController.dispose();
-    _priceRangeController.dispose();
     super.dispose();
   }
 
@@ -79,12 +78,12 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       if (entry != null) {
         _existingEntry = entry;
         _nameController.text = entry.name;
-        _producerController.text = entry.producer ?? '';
+        _selectedProducer = entry.producer;
         _categoryController.text = entry.category ?? '';
         _tastingNotesController.text = entry.tastingNotes ?? '';
         _abvController.text = entry.abv ?? '';
         _ageVintageController.text = entry.ageVintage ?? '';
-        _priceRangeController.text = entry.priceRange ?? '';
+        _priceRange = entry.priceRange ?? 0;
         _buy = entry.buy;
         _imagePath = entry.imageUrl;
       }
@@ -108,12 +107,10 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       appBar: AppBar(
         title: Text(isEditing ? 'Edit Entry' : 'New Entry'),
         actions: [
-          TextButton(
+          TextButton.icon(
             onPressed: _saveEntry,
-            child: Text(
-              'Save',
-              style: TextStyle(color: theme.colorScheme.primary),
-            ),
+            icon: const Icon(Icons.save),
+            label: const Text('Save'),
           ),
         ],
       ),
@@ -142,56 +139,45 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Producer and Category (side by side)
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    controller: _producerController,
-                    decoration: const InputDecoration(
-                      labelText: 'Producer / Origin',
-                      border: OutlineInputBorder(),
-                    ),
-                    textCapitalization: TextCapitalization.words,
+            // Producer/Origin selector (uses same pattern as Country)
+            _ProducerSelector(
+              selectedProducer: _selectedProducer,
+              onChanged: (producer) => setState(() => _selectedProducer = producer),
+            ),
+            const SizedBox(height: 16),
+
+            // Category (autocomplete with suggestions)
+            Autocomplete<String>(
+              optionsBuilder: (textEditingValue) {
+                if (textEditingValue.text.isEmpty) {
+                  return _defaultCategories;
+                }
+                return _defaultCategories.where((c) =>
+                    c.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+              },
+              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                if (controller.text != _categoryController.text) {
+                  controller.text = _categoryController.text;
+                }
+                controller.addListener(() {
+                  if (_categoryController.text != controller.text) {
+                    _categoryController.text = controller.text;
+                  }
+                });
+                return TextFormField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: const InputDecoration(
+                    labelText: 'Category',
+                    border: OutlineInputBorder(),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Autocomplete<String>(
-                    optionsBuilder: (textEditingValue) {
-                      if (textEditingValue.text.isEmpty) {
-                        return _defaultCategories;
-                      }
-                      return _defaultCategories.where((c) =>
-                          c.toLowerCase().contains(textEditingValue.text.toLowerCase()));
-                    },
-                    fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
-                      if (controller.text != _categoryController.text) {
-                        controller.text = _categoryController.text;
-                      }
-                      controller.addListener(() {
-                        if (_categoryController.text != controller.text) {
-                          _categoryController.text = controller.text;
-                        }
-                      });
-                      return TextFormField(
-                        controller: controller,
-                        focusNode: focusNode,
-                        decoration: const InputDecoration(
-                          labelText: 'Category',
-                          border: OutlineInputBorder(),
-                        ),
-                        textCapitalization: TextCapitalization.words,
-                        onFieldSubmitted: (_) => onFieldSubmitted(),
-                      );
-                    },
-                    onSelected: (selection) {
-                      _categoryController.text = selection;
-                    },
-                  ),
-                ),
-              ],
+                  textCapitalization: TextCapitalization.words,
+                  onFieldSubmitted: (_) => onFieldSubmitted(),
+                );
+              },
+              onSelected: (selection) {
+                _categoryController.text = selection;
+              },
             ),
             const SizedBox(height: 16),
 
@@ -222,12 +208,16 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Buy toggle
-            SwitchListTile(
-              title: const Text('Would buy again'),
-              value: _buy,
-              onChanged: (value) => setState(() => _buy = value),
-              contentPadding: EdgeInsets.zero,
+            // Buy toggle (compact, not full-width)
+            Row(
+              children: [
+                Text('Buy', style: theme.textTheme.bodyLarge),
+                const SizedBox(width: 8),
+                Switch.adaptive(
+                  value: _buy,
+                  onChanged: (value) => setState(() => _buy = value),
+                ),
+              ],
             ),
             const SizedBox(height: 16),
 
@@ -243,13 +233,10 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Price range (optional)
-            TextFormField(
-              controller: _priceRangeController,
-              decoration: const InputDecoration(
-                labelText: 'Price Range',
-                border: OutlineInputBorder(),
-              ),
+            // Price range (5-tier rating)
+            _PriceRangeSelector(
+              value: _priceRange,
+              onChanged: (value) => setState(() => _priceRange = value),
             ),
             const SizedBox(height: 80),
           ],
@@ -421,13 +408,13 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
     entry
       ..uuid = _existingEntry?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
-      ..producer = _producerController.text.trim().isEmpty ? null : _producerController.text.trim()
+      ..producer = _selectedProducer
       ..category = _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim()
       ..buy = _buy
       ..tastingNotes = _tastingNotesController.text.trim().isEmpty ? null : _tastingNotesController.text.trim()
       ..abv = _abvController.text.trim().isEmpty ? null : _abvController.text.trim()
       ..ageVintage = _ageVintageController.text.trim().isEmpty ? null : _ageVintageController.text.trim()
-      ..priceRange = _priceRangeController.text.trim().isEmpty ? null : _priceRangeController.text.trim()
+      ..priceRange = _priceRange > 0 ? _priceRange : null
       ..imageUrl = _imagePath
       ..source = _existingEntry?.source ?? CellarSource.personal
       ..updatedAt = DateTime.now();
@@ -445,5 +432,296 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       );
       Navigator.of(context).pop();
     }
+  }
+}
+
+/// Producer/Origin selector using same pattern as Country/Cuisine selector
+class _ProducerSelector extends StatelessWidget {
+  final String? selectedProducer;
+  final ValueChanged<String?> onChanged;
+
+  const _ProducerSelector({
+    required this.selectedProducer,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final cuisine = selectedProducer != null ? Cuisine.byCode(selectedProducer!) : null;
+    
+    return InkWell(
+      onTap: () => _showProducerSheet(context),
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Producer / Origin',
+          suffixIcon: Icon(Icons.arrow_drop_down),
+        ),
+        child: Text(
+          cuisine != null
+              ? '${cuisine.flag} ${cuisine.name}'
+              : selectedProducer ?? 'Select origin (optional)',
+          style: TextStyle(
+            color: selectedProducer != null
+                ? Theme.of(context).colorScheme.onSurface
+                : Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showProducerSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => _ProducerPickerSheet(
+        selectedProducer: selectedProducer,
+        onChanged: (code) {
+          onChanged(code);
+          Navigator.pop(ctx);
+        },
+        onClear: () {
+          onChanged(null);
+          Navigator.pop(ctx);
+        },
+      ),
+    );
+  }
+}
+
+/// Bottom sheet with searchable country list grouped by continent
+class _ProducerPickerSheet extends StatefulWidget {
+  final String? selectedProducer;
+  final ValueChanged<String> onChanged;
+  final VoidCallback onClear;
+
+  const _ProducerPickerSheet({
+    required this.selectedProducer,
+    required this.onChanged,
+    required this.onClear,
+  });
+
+  @override
+  State<_ProducerPickerSheet> createState() => _ProducerPickerSheetState();
+}
+
+class _ProducerPickerSheetState extends State<_ProducerPickerSheet> {
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  List<Cuisine> get _filteredCuisines {
+    if (_searchQuery.isEmpty) return [];
+    final query = _searchQuery.toLowerCase();
+    return Cuisine.all.where((c) => 
+      c.name.toLowerCase().contains(query) ||
+      c.continent.toLowerCase().contains(query) ||
+      c.code.toLowerCase().contains(query),
+    ).toList()..sort((a, b) => a.name.compareTo(b.name));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return DraggableScrollableSheet(
+      initialChildSize: 0.7,
+      minChildSize: 0.3,
+      maxChildSize: 0.9,
+      expand: false,
+      builder: (_, controller) => Column(
+        children: [
+          // Header
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                const Text(
+                  'Select Origin',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: widget.onClear,
+                  child: const Text('Clear'),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ),
+          // Search field
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                hintText: 'Search countries...',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onChanged: (value) => setState(() => _searchQuery = value),
+            ),
+          ),
+          const SizedBox(height: 8),
+          const Divider(height: 1),
+          // Content
+          Expanded(
+            child: _searchQuery.isNotEmpty
+                ? _buildSearchResults(controller)
+                : _buildGroupedList(controller),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSearchResults(ScrollController controller) {
+    final results = _filteredCuisines;
+    if (results.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            const SizedBox(height: 16),
+            Text(
+              'No countries found for "$_searchQuery"',
+              style: TextStyle(color: Colors.grey.shade600),
+            ),
+          ],
+        ),
+      );
+    }
+    
+    return ListView.builder(
+      controller: controller,
+      itemCount: results.length,
+      itemBuilder: (context, index) {
+        final cuisine = results[index];
+        final isSelected = widget.selectedProducer == cuisine.code;
+        return ListTile(
+          leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+          title: Text(cuisine.name),
+          subtitle: Text(cuisine.continent, 
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+          trailing: isSelected
+              ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+              : null,
+          selected: isSelected,
+          onTap: () => widget.onChanged(cuisine.code),
+        );
+      },
+    );
+  }
+
+  Widget _buildGroupedList(ScrollController controller) {
+    return ListView(
+      controller: controller,
+      children: CuisineGroup.all.map((group) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Text(
+                group.continent,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            ...group.cuisines.map((cuisine) {
+              final isSelected = widget.selectedProducer == cuisine.code;
+              return ListTile(
+                leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
+                title: Text(cuisine.name),
+                trailing: isSelected
+                    ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
+                    : null,
+                selected: isSelected,
+                onTap: () => widget.onChanged(cuisine.code),
+              );
+            }),
+          ],
+        );
+      }).toList(),
+    );
+  }
+}
+
+/// 5-tier price range selector displayed as dollar signs
+class _PriceRangeSelector extends StatelessWidget {
+  final int value;
+  final ValueChanged<int> onChanged;
+
+  const _PriceRangeSelector({
+    required this.value,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Price Range',
+          style: theme.textTheme.bodyLarge,
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: List.generate(5, (index) {
+            final tier = index + 1;
+            final isSelected = value >= tier;
+            return GestureDetector(
+              onTap: () => onChanged(value == tier ? 0 : tier),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: Text(
+                  '\$',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: isSelected 
+                        ? theme.colorScheme.primary 
+                        : theme.colorScheme.outline.withOpacity(0.4),
+                  ),
+                ),
+              ),
+            );
+          }),
+          ...[
+            const SizedBox(width: 16),
+            if (value > 0)
+              TextButton(
+                onPressed: () => onChanged(0),
+                child: const Text('Clear'),
+              ),
+          ],
+        ),
+      ],
+    );
   }
 }

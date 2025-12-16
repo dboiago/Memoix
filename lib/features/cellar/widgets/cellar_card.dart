@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/theme/colors.dart';
+import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 
@@ -82,20 +84,24 @@ class _CellarCardState extends ConsumerState<CellarCard> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Buy indicator
+                  // Buy indicator (styled like selected filter chip)
                   if (widget.entry.buy)
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.primaryContainer,
+                          color: theme.colorScheme.secondary.withOpacity(0.15),
                           borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: theme.colorScheme.secondary,
+                            width: 1.5,
+                          ),
                         ),
                         child: Text(
                           'Buy',
                           style: theme.textTheme.labelSmall?.copyWith(
-                            color: theme.colorScheme.onPrimaryContainer,
+                            color: theme.colorScheme.secondary,
                           ),
                         ),
                       ),
@@ -125,28 +131,56 @@ class _CellarCardState extends ConsumerState<CellarCard> {
   }
 
   Widget _buildMetadataRow(ThemeData theme) {
-    final parts = <String>[];
-    if (widget.entry.category != null && widget.entry.category!.isNotEmpty) {
-      parts.add(widget.entry.category!);
-    }
-    if (widget.entry.producer != null && widget.entry.producer!.isNotEmpty) {
-      parts.add(widget.entry.producer!);
-    }
-    if (widget.entry.ageVintage != null && widget.entry.ageVintage!.isNotEmpty) {
-      parts.add(widget.entry.ageVintage!);
-    }
+    final hasCategory = widget.entry.category != null && widget.entry.category!.isNotEmpty;
+    final hasProducer = widget.entry.producer != null && widget.entry.producer!.isNotEmpty;
 
-    if (parts.isEmpty) {
+    if (!hasCategory && !hasProducer) {
       return const SizedBox.shrink();
     }
 
-    return Text(
-      parts.join(' · '),
-      style: theme.textTheme.bodySmall?.copyWith(
-        color: theme.colorScheme.onSurfaceVariant,
-      ),
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
+    // Format like Drinks: colored dot, category, producer/origin in brackets
+    return Row(
+      children: [
+        // Colored dot for category (using spirit colors for drink-related categories)
+        if (hasCategory) ...[
+          Text(
+            '\u2022',
+            style: TextStyle(
+              color: MemoixColors.forSpiritDot(widget.entry.category),
+              fontSize: 16,
+            ),
+          ),
+          const SizedBox(width: 6),
+          Text(
+            widget.entry.category!,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
+        // Producer/origin in brackets
+        if (hasProducer) ...[
+          Text(
+            hasCategory ? ' (' : '',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          Text(
+            Cuisine.toAdjective(widget.entry.producer!),
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          if (hasCategory)
+            Text(
+              ')',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+        ],
+      ],
     );
   }
 }

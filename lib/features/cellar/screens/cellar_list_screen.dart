@@ -96,7 +96,8 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => AppRoutes.toCellarEdit(context),
-        label: const Text('Add Entry'),
+        icon: const Icon(Icons.add),
+        label: const Text('Add'),
       ),
     );
   }

@@ -38,8 +38,8 @@ class CellarEntry {
   /// Age or vintage (single field, meaning is user-defined)
   String? ageVintage;
 
-  /// Price range (optional metadata)
-  String? priceRange;
+  /// Price range tier (1-5, where 1 = $ and 5 = $$$$$)
+  int? priceRange;
 
   /// Image URL or local path
   String? imageUrl;
@@ -92,7 +92,7 @@ class CellarEntry {
       ..tastingNotes = json['tastingNotes'] as String?
       ..abv = json['abv'] as String?
       ..ageVintage = json['ageVintage'] as String?
-      ..priceRange = json['priceRange'] as String?
+      ..priceRange = json['priceRange'] as int?
       ..imageUrl = json['imageUrl'] as String?
       ..source = CellarSource.values.firstWhere(
         (e) => e.name == json['source'],

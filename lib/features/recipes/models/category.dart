@@ -176,7 +176,7 @@ class Category {
         Category.create(
           slug: 'cellar',
           name: 'Cellar',
-          iconName: 'wine_bar',
+          iconName: 'liquor',
           sortOrder: 18,
           colorValue: MemoixColors.cellar.value,
         ),

@@ -119,34 +119,42 @@ class _CellarDetailView extends ConsumerWidget {
             ),
           ),
 
-          // Tasting notes section (if present)
-          if (entry.tastingNotes != null && entry.tastingNotes!.isNotEmpty)
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Tasting Notes',
-                          style: theme.textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+          // Tasting notes section (always shown, with placeholder if empty)
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Tasting Notes',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
                         ),
-                        const SizedBox(height: 12),
+                      ),
+                      const SizedBox(height: 12),
+                      if (entry.tastingNotes != null && entry.tastingNotes!.isNotEmpty)
                         Text(
                           entry.tastingNotes!,
                           style: theme.textTheme.bodyMedium,
+                        )
+                      else
+                        Text(
+                          'No tasting notes added.',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            fontStyle: FontStyle.italic,
+                            color: theme.colorScheme.outline,
+                          ),
                         ),
-                      ],
-                    ),
+                    ],
                   ),
                 ),
               ),
             ),
+          ),
 
           // Bottom padding
           const SliverToBoxAdapter(
@@ -185,9 +193,10 @@ class _CellarDetailView extends ConsumerWidget {
       chips.add(_buildChip(theme, entry.ageVintage!));
     }
 
-    // Price range (optional)
-    if (entry.priceRange != null && entry.priceRange!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.priceRange!));
+    // Price range (displayed as dollar signs)
+    if (entry.priceRange != null && entry.priceRange! > 0) {
+      final priceDisplay = '\$' * entry.priceRange!;
+      chips.add(_buildChip(theme, priceDisplay));
     }
 
     if (chips.isEmpty) {

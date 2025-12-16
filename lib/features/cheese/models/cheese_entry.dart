@@ -38,8 +38,8 @@ class CheeseEntry {
   /// Flavour notes (freeform)
   String? flavour;
 
-  /// Price range (optional metadata)
-  String? priceRange;
+  /// Price range tier (1-5, where 1 = $ and 5 = $$$$$)
+  int? priceRange;
 
   /// Image URL or local path
   String? imageUrl;
@@ -72,7 +72,7 @@ class CheeseEntry {
     this.type,
     this.buy = false,
     this.flavour,
-    this.priceRange,
+    this.priceRange, // 1-5 tier rating
     this.imageUrl,
     this.source = CheeseSource.personal,
     this.isFavorite = false,
@@ -92,7 +92,7 @@ class CheeseEntry {
       ..type = json['type'] as String?
       ..buy = json['buy'] as bool? ?? false
       ..flavour = json['flavour'] as String?
-      ..priceRange = json['priceRange'] as String?
+      ..priceRange = json['priceRange'] as int?
       ..imageUrl = json['imageUrl'] as String?
       ..source = CheeseSource.values.firstWhere(
         (e) => e.name == json['source'],
