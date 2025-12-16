@@ -1863,34 +1863,42 @@ class StandardWebStrategy implements RecipeParserStrategy {
   List<String> _extractModernistPantryIngredients(Document document) {
     final ingredients = <String>[];
     
-    // Find the h2 with id="ingredients" or text containing "Ingredients"
-    Element? ingredientHeading;
-    for (final h2 in document.querySelectorAll('h2')) {
-      final id = h2.attributes['id'] ?? '';
-      final text = h2.text.toLowerCase();
-      if (id == 'ingredients' || text == 'ingredients') {
-        ingredientHeading = h2;
-        break;
+    // Try direct selector first
+    var ingredientHeading = document.querySelector('h2#ingredients, h2[id="ingredients"]');
+    
+    // Fallback: Find the h2 with text "Ingredients"
+    if (ingredientHeading == null) {
+      for (final h2 in document.querySelectorAll('h2')) {
+        final text = h2.text.trim().toLowerCase();
+        if (text == 'ingredients') {
+          ingredientHeading = h2;
+          break;
+        }
       }
     }
     
     if (ingredientHeading == null) return ingredients;
     
-    // Find the ul that's a sibling (may have p tags in between)
+    // Strategy 1: Find ul elements that are siblings (may have many p tags in between)
     var sibling = ingredientHeading.nextElementSibling;
     int attempts = 0;
-    while (sibling != null && attempts < 10) {
-      // Stop if we hit another major heading
-      if (sibling.localName == 'h2' && sibling.attributes['id'] != 'ingredients') {
-        break;
+    while (sibling != null && attempts < 30) { // Increased from 10 to 30
+      // Stop if we hit another h2 that's a different section
+      final siblingId = sibling.attributes['id'] ?? '';
+      if (sibling.localName == 'h2' && siblingId != 'ingredients') {
+        if (siblingId == 'equipment' || siblingId == 'timing' || siblingId == 'yield' ||
+            sibling.text.toLowerCase().contains('equipment') ||
+            sibling.text.toLowerCase().contains('direction') ||
+            sibling.text.toLowerCase().contains('method')) {
+          break;
+        }
       }
       
       if (sibling.localName == 'ul' || sibling.localName == 'ol') {
         for (final li in sibling.querySelectorAll('li')) {
           // Check if this is a section header (in bold)
           final boldEl = li.querySelector('b, strong');
-          if (boldEl != null && li.children.length == 1 && 
-              boldEl.text.toLowerCase().contains('ingredients')) {
+          if (boldEl != null && boldEl.text.toLowerCase().contains('ingredients')) {
             // This is a section header like "Ingredients Black Garlic Honey:"
             var headerText = boldEl.text.trim();
             // Extract just the section name (remove "Ingredients" prefix and trailing colon)
@@ -1900,8 +1908,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
               ingredients.add('[${headerText.trim()}]');
             }
           } else {
-            // This is an actual ingredient
-            final text = _ingParser.decodeHtml(li.text.trim());
+            // This is an actual ingredient - prefer span text if present
+            final span = li.querySelector('span');
+            final text = _ingParser.decodeHtml(span?.text.trim() ?? li.text.trim());
             if (text.isNotEmpty && !text.toLowerCase().startsWith('ingredients')) {
               ingredients.add(text);
             }
@@ -1914,88 +1923,122 @@ class StandardWebStrategy implements RecipeParserStrategy {
       attempts++;
     }
     
-    return ingredients;
-  }
-  
-  /// Extract directions from Modernist Pantry style 
-  /// Structure 1: h3 with "Create/Make/Prepare" followed by sibling paragraphs
-  /// Structure 2: li containing h3 and .product-list divs with direction content
-  List<String> _extractModernistPantryDirections(Document document) {
-    final directions = <String>[];
-    
-    // Try structure 2 first: li.one/li.two/li.three containing h3 and directions
-    final stepItems = document.querySelectorAll('.product-list > ul > li');
-    if (stepItems.isNotEmpty) {
-      for (final li in stepItems) {
-        final h3 = li.querySelector('h3');
-        if (h3 != null) {
-          final stepTitle = h3.text.trim();
-          if (stepTitle.isNotEmpty) {
-            directions.add('**$stepTitle**');
+    // Strategy 2: If no ingredients found, try looking for ul inside the parent container
+    if (ingredients.isEmpty) {
+      final parent = ingredientHeading.parent;
+      if (parent != null) {
+        // Find all ul elements in the parent after the h2
+        bool foundHeading = false;
+        for (final child in parent.children) {
+          if (child == ingredientHeading) {
+            foundHeading = true;
+            continue;
           }
-        }
-        
-        // Find direction content in .product-list divs
-        final productLists = li.querySelectorAll('.equipment-time .product-list');
-        for (final productList in productLists) {
-          // Get text from spans and direct div children
-          final spans = productList.querySelectorAll('span');
-          for (final span in spans) {
-            final text = span.text.trim();
-            if (text.length > 20) {
-              directions.add(_cleanDirectionStep(text));
-            }
-          }
+          if (!foundHeading) continue;
           
-          // Also check direct text content of divs
-          for (final child in productList.children) {
-            if (child.localName == 'div') {
-              final text = child.text.trim();
-              if (text.length > 20 && !text.startsWith('•')) {
-                // Avoid duplicating span text
-                final spanText = child.querySelector('span')?.text.trim() ?? '';
-                if (spanText.isEmpty || spanText != text) {
-                  directions.add(_cleanDirectionStep(text));
+          // Stop at another h2
+          if (child.localName == 'h2') break;
+          
+          if (child.localName == 'ul' || child.localName == 'ol') {
+            for (final li in child.querySelectorAll('li')) {
+              final boldEl = li.querySelector('b, strong');
+              if (boldEl != null && boldEl.text.toLowerCase().contains('ingredients')) {
+                var headerText = boldEl.text.trim();
+                headerText = headerText.replaceFirst(RegExp(r'^Ingredients?\s*', caseSensitive: false), '');
+                headerText = headerText.replaceFirst(RegExp(r':\s*$'), '');
+                if (headerText.isNotEmpty) {
+                  ingredients.add('[${headerText.trim()}]');
+                }
+              } else {
+                final span = li.querySelector('span');
+                final text = _ingParser.decodeHtml(span?.text.trim() ?? li.text.trim());
+                if (text.isNotEmpty && !text.toLowerCase().startsWith('ingredients')) {
+                  ingredients.add(text);
                 }
               }
             }
           }
         }
       }
-      
-      if (directions.isNotEmpty) return directions;
     }
     
-    // Fallback: Structure 1 - h3 headings followed by sibling content
-    final headings = document.querySelectorAll('h3, h2');
+    return ingredients;
+  }
+  
+  /// Extract directions from Modernist Pantry style 
+  /// Structure: li.one/.two/.three containing h3 headers and nested .equipment-time divs with instruction text
+  List<String> _extractModernistPantryDirections(Document document) {
+    final directions = <String>[];
     
-    for (final heading in headings) {
-      final headingText = heading.text.trim();
-      // Match patterns like "Create Black Garlic Honey", "Make Ice Cream Base", etc.
-      if (RegExp(r'^(?:Create|Make|Prepare|Churn|Step\s*\d+)', caseSensitive: false).hasMatch(headingText)) {
-        // Add the heading as a step title
-        directions.add('**$headingText**');
-        
-        // Gather following paragraphs until next heading
-        var sibling = heading.nextElementSibling;
-        int attempts = 0;
-        while (sibling != null && attempts < 20) {
-          // Stop if we hit another heading
-          if (sibling.localName == 'h2' || sibling.localName == 'h3' || sibling.localName == 'h4') {
-            break;
-          }
+    // Find li elements with step classes (one, two, three, etc.) or all li within .product-list
+    var stepItems = document.querySelectorAll('.product-list li.one, .product-list li.two, .product-list li.three, .product-list li.four, .product-list li.five');
+    
+    // If no specific class matches, try all li in product-list that have h3
+    if (stepItems.isEmpty) {
+      stepItems = document.querySelectorAll('.product-list ul > li');
+    }
+    
+    for (final li in stepItems) {
+      // Find the h3 step title
+      final h3 = li.querySelector('h3');
+      if (h3 != null) {
+        final stepTitle = h3.text.trim();
+        if (stepTitle.isNotEmpty && 
+            RegExp(r'(?:Create|Make|Prepare|Churn|Step|Enjoy)', caseSensitive: false).hasMatch(stepTitle)) {
+          directions.add('**$stepTitle**');
           
-          // Add paragraph content
-          if (sibling.localName == 'p' || sibling.localName == 'div') {
-            final text = sibling.text.trim();
-            // Skip very short text or bullets (ingredients)
-            if (text.length > 30 && !text.startsWith('•')) {
+          // Find all spans with instruction text within this li's nested divs
+          final spans = li.querySelectorAll('.equipment-time span, .product-list span');
+          for (final span in spans) {
+            final text = span.text.trim();
+            if (text.length > 15) {
               directions.add(_cleanDirectionStep(text));
             }
           }
           
-          sibling = sibling.nextElementSibling;
-          attempts++;
+          // Also get text from divs that don't have spans (direct text content)
+          final innerDivs = li.querySelectorAll('.equipment-time > div, .product-list > div');
+          for (final div in innerDivs) {
+            // Skip if this div contains a span (already processed)
+            if (div.querySelector('span') != null) continue;
+            final text = div.text.trim();
+            if (text.length > 15 && text != ' ') {
+              directions.add(_cleanDirectionStep(text));
+            }
+          }
+        }
+      }
+    }
+    
+    if (directions.isNotEmpty) return directions;
+    
+    // Fallback: Find all h3 with action words and gather nearby text
+    final actionHeadings = document.querySelectorAll('h3');
+    for (final heading in actionHeadings) {
+      final headingText = heading.text.trim();
+      if (RegExp(r'^(?:Create|Make|Prepare|Churn|Step\s*\d+)', caseSensitive: false).hasMatch(headingText)) {
+        directions.add('**$headingText**');
+        
+        // Look in the parent li or next siblings for instruction text
+        final parentLi = heading.parent;
+        if (parentLi != null && parentLi.localName == 'li') {
+          // Get all span text after the h3
+          bool afterH3 = false;
+          for (final child in parentLi.children) {
+            if (child == heading) {
+              afterH3 = true;
+              continue;
+            }
+            if (!afterH3) continue;
+            
+            final spans = child.querySelectorAll('span');
+            for (final span in spans) {
+              final text = span.text.trim();
+              if (text.length > 15) {
+                directions.add(_cleanDirectionStep(text));
+              }
+            }
+          }
         }
       }
     }
