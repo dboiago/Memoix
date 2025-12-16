@@ -5,9 +5,9 @@ import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../recipes/models/recipe.dart';
-import '../../recipes/models/spirit.dart';
-import '../models/recipe_import_result.dart';
+import '../../features/recipes/models/recipe.dart';
+import '../../features/recipes/models/spirit.dart';
+import '../../features/import/models/recipe_import_result.dart';
 
 /// Helper class for YouTube chapters
 class YouTubeChapter {
