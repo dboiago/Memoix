@@ -394,6 +394,42 @@ class UrlRecipeImporter {
   };
 
   /// ========================================================================
+  /// SHARED CONSTANTS - Reduces duplication and improves maintainability
+  /// ========================================================================
+  
+  /// Unicode fraction characters for ingredient parsing
+  static const _unicodeFractions = r'[½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]';
+  
+  /// Time unit patterns for duration parsing
+  static const _timeUnitPattern = r'(?:minutes?|mins?|hours?|hrs?|h|days?|d)';
+  
+  /// Max recursion depth for embedded data extraction
+  static const _maxRecursionDepth = 10;
+  
+  /// Retry configuration
+  static const _maxRetryAttempts = 3;
+  static const _retryDelayMs = 500;
+  
+  /// Content length limits
+  static const _maxIngredientLineLength = 200;
+  static const _minIngredientCount = 2;
+  static const _maxSectionHeaderLength = 60;
+  
+  /// JSON search limits for embedded data
+  static const _jsonSearchBackward = 5000;
+  static const _jsonSearchForward = 10000;
+
+  /// Regex for "For the X" prefix in section headers
+  static final _forThePrefixRegex = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false);
+  
+  /// Strip "For the" prefix from section headers (e.g., "For the sauce" -> "sauce")
+  /// Returns cleaned string with the prefix removed, or original if no match
+  static String _stripForThePrefix(String text) {
+    final match = _forThePrefixRegex.firstMatch(text);
+    return match?.group(1)?.trim() ?? text;
+  }
+
+  /// ========================================================================
   /// MAIN IMPORT ENTRY POINT - MULTI-STAGE EXTRACTION
   /// ========================================================================
   /// 
@@ -954,7 +990,7 @@ class UrlRecipeImporter {
   /// Find recipe data within embedded JSON structures (Vite, Next.js, Nuxt)
   /// Returns the innermost object that looks like recipe data
   Map<String, dynamic>? _findRecipeDataInEmbedded(Map<String, dynamic> data, [int depth = 0]) {
-    if (depth > 10) return null;
+    if (depth > _maxRecursionDepth) return null;
     
     // Common paths for recipe data in different frameworks
     final commonPaths = [
@@ -1098,7 +1134,7 @@ class UrlRecipeImporter {
               // Search backward for opening brace of recipe object
               int braceCount = 0;
               int startIdx = ingredientIdx;
-              for (int i = ingredientIdx; i >= 0 && i > ingredientIdx - 5000; i--) {
+              for (int i = ingredientIdx; i >= 0 && i > ingredientIdx - _jsonSearchBackward; i--) {
                 if (body[i] == '}') braceCount++;
                 if (body[i] == '{') {
                   braceCount--;
@@ -1111,7 +1147,7 @@ class UrlRecipeImporter {
               // Search forward for closing brace
               braceCount = 0;
               int endIdx = ingredientIdx + match.group(0)!.length;
-              for (int i = startIdx; i < body.length && i < startIdx + 10000; i++) {
+              for (int i = startIdx; i < body.length && i < startIdx + _jsonSearchForward; i++) {
                 if (body[i] == '{') braceCount++;
                 if (body[i] == '}') {
                   braceCount--;
@@ -1142,7 +1178,7 @@ class UrlRecipeImporter {
   
   /// Recursively search for recipe data in nested JSON structures
   RecipeImportResult? _findRecipeInNestedJson(dynamic data, String sourceUrl, [int depth = 0]) {
-    if (depth > 10) return null; // Prevent infinite recursion
+    if (depth > _maxRecursionDepth) return null; // Prevent infinite recursion
     
     if (data is Map<String, dynamic>) {
       // Check for @type: Recipe (standard JSON-LD)
@@ -2956,77 +2992,8 @@ class UrlRecipeImporter {
     return cleaned.trim();
   }
 
-  /// Parse JSON-LD structured data
-  Recipe? _parseJsonLd(dynamic data, String sourceUrl) {
-    // Handle @graph structure
-    if (data is Map && data['@graph'] != null) {
-      final graph = data['@graph'] as List;
-      for (final item in graph) {
-        final recipe = _parseJsonLd(item, sourceUrl);
-        if (recipe != null) return recipe;
-      }
-      return null;
-    }
-
-    // Handle array of items
-    if (data is List) {
-      for (final item in data) {
-        final recipe = _parseJsonLd(item, sourceUrl);
-        if (recipe != null) return recipe;
-      }
-      return null;
-    }
-
-    // Check if this is a Recipe type
-    if (data is! Map) return null;
-    
-    final type = data['@type'];
-    final isRecipe = type == 'Recipe' || 
-                     (type is List && type.contains('Recipe'));
-    
-    if (!isRecipe) return null;
-
-    // Parse ingredients and sort by quantity
-    // Use _extractRawIngredients first to rejoin incorrectly split ingredients (e.g., Diffords comma splits)
-    final rawIngredientStrings = _extractRawIngredients(data['recipeIngredient']);
-    var ingredients = _parseIngredients(rawIngredientStrings);
-    ingredients = _sortIngredientsByQuantity(ingredients);
-
-    // Parse nutrition information if available
-    final nutrition = _parseNutrition(data['nutrition']);
-
-    // Determine course with drink detection
-    final course = _guessCourse(data, sourceUrl: sourceUrl);
-    
-    // For drinks, detect the base spirit and set as subcategory
-    String? subcategory;
-    if (course == 'Drinks') {
-      subcategory = _detectSpirit(ingredients);
-      // Convert code to display name
-      if (subcategory != null) {
-        subcategory = Spirit.toDisplayName(subcategory);
-      }
-    }
-
-    // Parse the recipe data
-    return Recipe.create(
-      uuid: _uuid.v4(),
-      name: _cleanRecipeName(_parseString(data['name']) ?? 'Untitled Recipe'),
-      course: course,
-      cuisine: _parseCuisine(data['recipeCuisine']),
-      subcategory: subcategory,
-      serves: _parseYield(data['recipeYield']),
-      time: _parseTime(data),
-      ingredients: ingredients,
-      directions: _parseInstructions(data['recipeInstructions']),
-      notes: _decodeHtml(_parseString(data['description']) ?? ''),
-      imageUrl: _parseImage(data['image']),
-      sourceUrl: sourceUrl,
-      source: RecipeSource.url,
-      nutrition: nutrition,
-    );
-  }
-
+  // NOTE: Legacy _parseJsonLd removed - only _parseJsonLdWithConfidence is used
+  
   /// Parse JSON-LD with confidence scoring for review flow
   RecipeImportResult? _parseJsonLdWithConfidence(dynamic data, String sourceUrl) {
     // Handle @graph structure
@@ -4924,113 +4891,8 @@ class UrlRecipeImporter {
     return Spirit.detectFromIngredients(ingredientNames);
   }
 
-  /// Fallback HTML parsing for sites without JSON-LD
-  Recipe? _parseFromHtml(dynamic document, String sourceUrl) {
-    // Try common selectors for recipe sites
-    final title = document.querySelector('h1')?.text?.trim() ?? 
-                  document.querySelector('.recipe-title')?.text?.trim() ??
-                  document.querySelector('[itemprop="name"]')?.text?.trim() ??
-                  'Untitled Recipe';
-
-    // First try standard selectors
-    final ingredientElements = document.querySelectorAll(
-      '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient',
-    );
-    
-    var rawIngredientStrings = <String>[];
-    for (final e in ingredientElements) {
-      final text = _decodeHtml((e.text ?? '').trim());
-      if (text.isNotEmpty) {
-        rawIngredientStrings.add(text);
-      }
-    }
-    
-    // Try section-based parsing for equipment, yield, timing (always)
-    // And for ingredients if standard selectors failed
-    List<String> equipmentItems = [];
-    String? yield;
-    String? timing;
-    
-    final sectionResult = _parseHtmlBySections(document);
-    equipmentItems = sectionResult['equipment'] ?? [];
-    yield = sectionResult['yield'];
-    timing = sectionResult['timing'];
-    
-    if (rawIngredientStrings.isEmpty) {
-      rawIngredientStrings = sectionResult['ingredients'] ?? [];
-    }
-    
-    // Parse ingredients with proper section handling
-    var ingredients = _parseIngredients(rawIngredientStrings);
-    
-    ingredients = _sortIngredientsByQuantity(ingredients);
-
-    // First try standard direction selectors
-    final instructionElements = document.querySelectorAll(
-      '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction',
-    );
-    
-    var directions = <String>[];
-    for (final e in instructionElements) {
-      final text = _decodeHtml((e.text ?? '').trim());
-      if (text.isNotEmpty) {
-        directions.add(text);
-      }
-    }
-    
-    // If standard selectors failed, try step-based parsing
-    if (directions.isEmpty) {
-      directions = _parseDirectionsBySections(document);
-    }
-
-    if (ingredients.isEmpty && directions.isEmpty) {
-      return null;
-    }
-
-    // Detect course using unified function
-    final isCocktail = _isCocktailSite(sourceUrl);
-    final titleLower = title.toLowerCase();
-    final urlLower = sourceUrl.toLowerCase();
-    
-    final courseResult = _detectCourseWithConfidence(
-      titleLower: titleLower,
-      urlLower: urlLower,
-      ingredientStrings: rawIngredientStrings,
-      isCocktailSite: isCocktail,
-      document: document,
-    );
-    final course = courseResult.course;
-    
-    // For drinks, detect the base spirit
-    String? subcategory;
-    if (isCocktail || course == 'Drinks') {
-      final spiritCode = _detectSpirit(ingredients);
-      if (spiritCode != null) {
-        subcategory = Spirit.toDisplayName(spiritCode);
-      }
-    }
-
-    // Build notes from equipment if found
-    String? notes;
-    if (equipmentItems.isNotEmpty) {
-      notes = 'Equipment: ${equipmentItems.join(', ')}';
-    }
-
-    return Recipe.create(
-      uuid: _uuid.v4(),
-      name: _cleanRecipeName(title),
-      course: course,
-      subcategory: subcategory,
-      serves: yield,
-      time: timing,
-      ingredients: ingredients,
-      directions: directions,
-      notes: notes,
-      sourceUrl: sourceUrl,
-      source: RecipeSource.url,
-    );
-  }
-
+  // NOTE: Legacy _parseFromHtml removed - only _parseFromHtmlWithConfidence is used
+  
   /// Fallback HTML parsing with confidence scoring
   RecipeImportResult? _parseFromHtmlWithConfidence(dynamic document, String sourceUrl, [String? rawHtmlBody]) {
     // Try common selectors for recipe sites
@@ -5293,11 +5155,7 @@ class UrlRecipeImporter {
               final sectionText = _decodeHtml((headerElem.text ?? '').trim());
               if (sectionText.isNotEmpty) {
                 // Remove "For the " prefix if present
-                var sectionName = sectionText;
-                final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-                if (forTheMatch != null) {
-                  sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
-                }
+                final sectionName = _stripForThePrefix(sectionText);
                 rawIngredientStrings.add('[$sectionName]');
               }
             }
@@ -5333,11 +5191,7 @@ class UrlRecipeImporter {
               if (h3 != null) {
                 final text = _decodeHtml((h3.text ?? '').trim());
                 if (text.isNotEmpty) {
-                  var sectionName = text;
-                  final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
-                  if (forTheMatch != null) {
-                    sectionName = forTheMatch.group(1)?.trim() ?? text;
-                  }
+                  final sectionName = _stripForThePrefix(text);
                   rawIngredientStrings.add('[$sectionName]');
                 }
               }
@@ -6751,11 +6605,7 @@ class UrlRecipeImporter {
                   !sectionText.toLowerCase().contains('minutes') &&
                   !sectionText.toLowerCase().contains('hour')) {
                 // Extract section name, removing "For the" prefix
-                var sectionName = sectionText;
-                final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-                if (forTheMatch != null) {
-                  sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
-                }
+                final sectionName = _stripForThePrefix(sectionText);
                 currentSection = sectionName;
                 collectedItems.add('[$currentSection]');
               }
@@ -7189,12 +7039,8 @@ class UrlRecipeImporter {
 
   /// Clean section name by removing trailing colon and "For the" prefix
   String _cleanSectionName(String text) {
-    var cleaned = text.replaceAll(RegExp(r':$'), '').trim();
-    final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(cleaned);
-    if (forTheMatch != null) {
-      cleaned = forTheMatch.group(1)?.trim() ?? cleaned;
-    }
-    return cleaned;
+    final cleaned = text.replaceAll(RegExp(r':$'), '').trim();
+    return _stripForThePrefix(cleaned);
   }
 
   /// Extract ingredients using a site config
@@ -7421,11 +7267,8 @@ class UrlRecipeImporter {
         sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
         if (sectionText.isNotEmpty) {
           // Remove "For the" prefix if present
-          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-          if (forTheMatch != null) {
-            sectionText = forTheMatch.group(1)?.trim() ?? sectionText;
-          }
-          ingredients.add('[$sectionText]');
+          final cleanedSection = _stripForThePrefix(sectionText);
+          ingredients.add('[$cleanedSection]');
         }
         
         // Get the ul sibling that follows this header
@@ -7467,11 +7310,7 @@ class UrlRecipeImporter {
           if (headerElem != null) {
             final sectionText = _decodeHtml((headerElem.text ?? '').trim());
             if (sectionText.isNotEmpty) {
-              var sectionName = sectionText;
-              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-              if (forTheMatch != null) {
-                sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
-              }
+              final sectionName = _stripForThePrefix(sectionText);
               ingredients.add('[$sectionName]');
             }
           }
@@ -7493,11 +7332,8 @@ class UrlRecipeImporter {
         var sectionText = _decodeHtml((header.text ?? '').trim());
         if (sectionText.isNotEmpty) {
           // Remove "For the" prefix if present
-          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-          if (forTheMatch != null) {
-            sectionText = forTheMatch.group(1)?.trim() ?? sectionText;
-          }
-          ingredients.add('[$sectionText]');
+          final cleanedSection = _stripForThePrefix(sectionText);
+          ingredients.add('[$cleanedSection]');
         }
         
         // Get the ul sibling that follows this header
@@ -7555,11 +7391,7 @@ class UrlRecipeImporter {
       for (final header in sectionHeaders) {
         final sectionText = _decodeHtml((header.text ?? '').trim());
         if (sectionText.isNotEmpty) {
-          var sectionName = sectionText;
-          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(sectionText);
-          if (forTheMatch != null) {
-            sectionName = forTheMatch.group(1)?.trim() ?? sectionText;
-          }
+          final sectionName = _stripForThePrefix(sectionText);
           ingredients.add('[$sectionName]');
         }
         
@@ -7611,11 +7443,7 @@ class UrlRecipeImporter {
               if (h3 != null) {
                 final text = _decodeHtml((h3.text ?? '').trim());
                 if (text.isNotEmpty) {
-                  var sectionName = text;
-                  final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
-                  if (forTheMatch != null) {
-                    sectionName = forTheMatch.group(1)?.trim() ?? text;
-                  }
+                  final sectionName = _stripForThePrefix(text);
                   ingredients.add('[$sectionName]');
                 }
               }
@@ -7644,11 +7472,7 @@ class UrlRecipeImporter {
           if (h3 != null) {
             final text = _decodeHtml((h3.text ?? '').trim());
             if (text.isNotEmpty) {
-              var sectionName = text;
-              final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(text);
-              if (forTheMatch != null) {
-                sectionName = forTheMatch.group(1)?.trim() ?? text;
-              }
+              final sectionName = _stripForThePrefix(text);
               ingredients.add('[$sectionName]');
             }
           }
