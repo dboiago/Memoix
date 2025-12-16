@@ -258,8 +258,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                         _itemController.text = controller.text;
                         // Auto-detect category based on item
                         final detectedCategory = SmokingCategory.getCategoryForItem(controller.text);
-                        if (detectedCategory != null && _selectedCategory == null) {
-                          setState(() => _selectedCategory = detectedCategory);
+                        if (detectedCategory != null && _categoryController.text.isEmpty) {
+                          setState(() => _categoryController.text = detectedCategory);
                         }
                       });
                       return TextFormField(
@@ -278,7 +278,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                       // Auto-detect category
                       final detectedCategory = SmokingCategory.getCategoryForItem(selection);
                       if (detectedCategory != null) {
-                        setState(() => _selectedCategory = detectedCategory);
+                        setState(() => _categoryController.text = detectedCategory);
                       }
                     },
                     optionsViewBuilder: (context, onSelected, options) {
