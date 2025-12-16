@@ -170,33 +170,64 @@ class _CheeseDetailView extends ConsumerWidget {
 
     // Buy status
     if (entry.buy) {
-      chips.add(_buildChip(theme, 'Buy', isPrimary: true));
+      chips.add(Chip(
+        label: const Text('Buy'),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Country
     if (entry.country != null && entry.country!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.country!));
+      chips.add(Chip(
+        label: Text(entry.country!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Milk
     if (entry.milk != null && entry.milk!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.milk!));
+      chips.add(Chip(
+        avatar: Icon(Icons.pets, size: 16, color: theme.colorScheme.onSurface),
+        label: Text(entry.milk!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Texture
     if (entry.texture != null && entry.texture!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.texture!));
+      chips.add(Chip(
+        label: Text(entry.texture!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Type
     if (entry.type != null && entry.type!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.type!));
+      chips.add(Chip(
+        label: Text(entry.type!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Price range (displayed as dollar signs)
     if (entry.priceRange != null && entry.priceRange! > 0) {
       final priceDisplay = '\$' * entry.priceRange!;
-      chips.add(_buildChip(theme, priceDisplay));
+      chips.add(Chip(
+        label: Text(priceDisplay),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     if (chips.isEmpty) {
@@ -207,26 +238,6 @@ class _CheeseDetailView extends ConsumerWidget {
       spacing: 8,
       runSpacing: 8,
       children: chips,
-    );
-  }
-
-  Widget _buildChip(ThemeData theme, String label, {bool isPrimary = false}) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: isPrimary 
-            ? theme.colorScheme.primaryContainer
-            : theme.colorScheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Text(
-        label,
-        style: theme.textTheme.bodySmall?.copyWith(
-          color: isPrimary
-              ? theme.colorScheme.onPrimaryContainer
-              : theme.colorScheme.onSurfaceVariant,
-        ),
-      ),
     );
   }
 

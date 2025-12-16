@@ -170,33 +170,66 @@ class _CellarDetailView extends ConsumerWidget {
 
     // Buy status
     if (entry.buy) {
-      chips.add(_buildChip(theme, 'Buy', isPrimary: true));
+      chips.add(Chip(
+        label: const Text('Buy'),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Category
     if (entry.category != null && entry.category!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.category!));
+      chips.add(Chip(
+        label: Text(entry.category!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Producer
     if (entry.producer != null && entry.producer!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.producer!));
+      chips.add(Chip(
+        label: Text(entry.producer!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
-    // ABV (optional, typically for alcoholic items)
+    // ABV (with % suffix, sanitized)
     if (entry.abv != null && entry.abv!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.abv!));
+      final abvValue = entry.abv!.replaceAll('%', '').trim();
+      if (abvValue.isNotEmpty) {
+        chips.add(Chip(
+          label: Text('$abvValue%'),
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+          visualDensity: VisualDensity.compact,
+        ));
+      }
     }
 
     // Age/Vintage (optional)
     if (entry.ageVintage != null && entry.ageVintage!.isNotEmpty) {
-      chips.add(_buildChip(theme, entry.ageVintage!));
+      chips.add(Chip(
+        label: Text(entry.ageVintage!),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     // Price range (displayed as dollar signs)
     if (entry.priceRange != null && entry.priceRange! > 0) {
       final priceDisplay = '\$' * entry.priceRange!;
-      chips.add(_buildChip(theme, priceDisplay));
+      chips.add(Chip(
+        label: Text(priceDisplay),
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+        visualDensity: VisualDensity.compact,
+      ));
     }
 
     if (chips.isEmpty) {
@@ -207,26 +240,6 @@ class _CellarDetailView extends ConsumerWidget {
       spacing: 8,
       runSpacing: 8,
       children: chips,
-    );
-  }
-
-  Widget _buildChip(ThemeData theme, String label, {bool isPrimary = false}) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: isPrimary 
-            ? theme.colorScheme.primaryContainer
-            : theme.colorScheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Text(
-        label,
-        style: theme.textTheme.bodySmall?.copyWith(
-          color: isPrimary
-              ? theme.colorScheme.onPrimaryContainer
-              : theme.colorScheme.onSurfaceVariant,
-        ),
-      ),
     );
   }
 
