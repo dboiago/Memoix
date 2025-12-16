@@ -242,7 +242,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
           _buildFilterChip(
             label: 'All',
             isSelected: _selectedProtein == null,
-            selectedColor: MemoixColors.sandwiches,
+            dotColor: null,
             theme: theme,
             onSelected: (selected) {
               if (selected) {
@@ -256,7 +256,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
             _buildFilterChip(
               label: 'Cheese',
               isSelected: _selectedProtein == 'cheese',
-              selectedColor: MemoixColors.cheese,
+              dotColor: MemoixColors.cheese,
               theme: theme,
               onSelected: (selected) {
                 setState(() => _selectedProtein = selected ? 'cheese' : null);
@@ -268,7 +268,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
             _buildFilterChip(
               label: 'Assorted',
               isSelected: _selectedProtein == 'assorted',
-              selectedColor: MemoixColors.sandwiches,
+              dotColor: MemoixColors.sandwiches,
               theme: theme,
               onSelected: (selected) {
                 setState(() => _selectedProtein = selected ? 'assorted' : null);
@@ -281,7 +281,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
             return _buildFilterChip(
               label: protein,
               isSelected: isSelected,
-              selectedColor: MemoixColors.sandwiches,
+              dotColor: MemoixColors.forProteinDot(protein),
               theme: theme,
               onSelected: (selected) {
                 setState(() => _selectedProtein = selected ? protein.toLowerCase() : null);
@@ -296,29 +296,39 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
   Widget _buildFilterChip({
     required String label,
     required bool isSelected,
-    required Color selectedColor,
+    Color? dotColor,
     required ThemeData theme,
     required ValueChanged<bool> onSelected,
   }) {
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
+        avatar: dotColor != null
+            ? Container(
+                width: 10,
+                height: 10,
+                decoration: BoxDecoration(
+                  color: dotColor,
+                  shape: BoxShape.circle,
+                ),
+              )
+            : null,
         label: Text(label),
         selected: isSelected,
         onSelected: onSelected,
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: selectedColor.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
-              ? selectedColor
+              ? theme.colorScheme.secondary
               : theme.colorScheme.outline.withOpacity(0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
           fontSize: 13,
           color: isSelected
-              ? selectedColor
+              ? theme.colorScheme.secondary
               : theme.colorScheme.onSurface,
         ),
       ),
