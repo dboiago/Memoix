@@ -1,5 +1,18 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+/// Available timer alarm sounds
+enum TimerSound {
+  bell('Bell', 'assets/audio/alarm_bell.mp3'),
+  beep('Beep', 'assets/audio/alarm_beep.mp3'),
+  gentle('Gentle', 'assets/audio/alarm_gentle.mp3');
+
+  final String displayName;
+  final String assetPath;
+
+  const TimerSound(this.displayName, this.assetPath);
+}
 
 /// Kitchen timer tool with support for multiple simultaneous timers
 class KitchenTimerWidget extends StatefulWidget {
@@ -11,23 +24,47 @@ class KitchenTimerWidget extends StatefulWidget {
 
 class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
   final List<TimerInstance> _timers = [];
+  final AudioPlayer _audioPlayer = AudioPlayer();
   int _nextTimerId = 1;
+
+  @override
+  void initState() {
+    super.initState();
+    // Set audio player to loop for alarm
+    _audioPlayer.setReleaseMode(ReleaseMode.loop);
+  }
 
   void _addTimer() {
     showDialog(
       context: context,
       builder: (ctx) => _TimerInputDialog(
-        onTimerCreated: (duration, label) {
+        onTimerCreated: (duration, label, sound) {
           setState(() {
             _timers.add(TimerInstance(
               id: _nextTimerId++,
               duration: duration,
               label: label,
+              sound: sound,
+              onAlarm: _playAlarm,
+              onStop: _stopAlarm,
             ),);
           });
         },
       ),
     );
+  }
+
+  Future<void> _playAlarm(TimerSound sound) async {
+    try {
+      await _audioPlayer.play(AssetSource(sound.assetPath.replaceFirst('assets/', '')));
+    } catch (e) {
+      // Fallback: show visual indicator if sound fails
+      debugPrint('Failed to play alarm sound: $e');
+    }
+  }
+
+  Future<void> _stopAlarm() async {
+    await _audioPlayer.stop();
   }
 
   void _removeTimer(int id) {
@@ -36,10 +73,12 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
       timer.dispose();
       _timers.removeWhere((t) => t.id == id);
     });
+    _stopAlarm();
   }
 
   @override
   void dispose() {
+    _audioPlayer.dispose();
     for (final timer in _timers) {
       timer.dispose();
     }
@@ -101,7 +140,7 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
 
 /// Dialog for creating a new timer
 class _TimerInputDialog extends StatefulWidget {
-  final Function(Duration, String) onTimerCreated;
+  final Function(Duration, String, TimerSound) onTimerCreated;
 
   const _TimerInputDialog({required this.onTimerCreated});
 
@@ -114,6 +153,7 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
   int _hours = 0;
   int _minutes = 10;
   int _seconds = 0;
+  TimerSound _selectedSound = TimerSound.bell;
 
   @override
   void dispose() {
@@ -181,6 +221,23 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
                 _PresetChip('1 hour', () => _setTime(1, 0, 0)),
               ],
             ),
+            const SizedBox(height: 24),
+            Text(
+              'Alarm Sound',
+              style: theme.textTheme.titleSmall,
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              children: TimerSound.values.map((sound) {
+                final isSelected = _selectedSound == sound;
+                return ChoiceChip(
+                  label: Text(sound.displayName),
+                  selected: isSelected,
+                  onSelected: (_) => setState(() => _selectedSound = sound),
+                );
+              }).toList(),
+            ),
           ],
         ),
       ),
@@ -200,6 +257,7 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
               widget.onTimerCreated(
                 duration,
                 _labelController.text.trim(),
+                _selectedSound,
               );
               Navigator.pop(context);
             }
@@ -329,7 +387,7 @@ class _TimerCardState extends State<_TimerCard> {
     final isFinished = timer.remainingSeconds == 0 && timer.isRunning;
     
     // Use card color with explicit text colors for readability
-    final cardColor = isFinished
+    final cardColor = isFinished || timer.isAlarming
         ? theme.colorScheme.secondary.withValues(alpha: 0.3)
         : timer.isPaused
             ? theme.colorScheme.surfaceContainerHighest
@@ -358,11 +416,30 @@ class _TimerCardState extends State<_TimerCard> {
                             color: textColor,
                           ),
                         ),
-                      Text(
-                        _formatDuration(timer.duration),
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
-                        ),
+                      Row(
+                        children: [
+                          Text(
+                            _formatDuration(timer.duration),
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            '\u2022',
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurfaceVariant,
+                              fontSize: 8,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            timer.sound.displayName,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -399,7 +476,16 @@ class _TimerCardState extends State<_TimerCard> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                if (!timer.isRunning)
+                if (timer.isAlarming)
+                  FilledButton.icon(
+                    onPressed: timer.stopAlarm,
+                    icon: const Icon(Icons.stop),
+                    label: const Text('Stop Alarm'),
+                    style: FilledButton.styleFrom(
+                      backgroundColor: theme.colorScheme.secondary,
+                    ),
+                  )
+                else if (!timer.isRunning)
                   FilledButton.icon(
                     onPressed: timer.start,
                     icon: const Icon(Icons.play_arrow),
@@ -453,16 +539,23 @@ class TimerInstance extends ChangeNotifier {
   final int id;
   final Duration duration;
   final String label;
+  final TimerSound sound;
+  final Future<void> Function(TimerSound) onAlarm;
+  final Future<void> Function() onStop;
 
   Timer? _timer;
   int remainingSeconds;
   bool isRunning = false;
   bool isPaused = false;
+  bool isAlarming = false;
 
   TimerInstance({
     required this.id,
     required this.duration,
     required this.label,
+    required this.sound,
+    required this.onAlarm,
+    required this.onStop,
   }) : remainingSeconds = duration.inSeconds;
 
   double get progress {
@@ -474,6 +567,7 @@ class TimerInstance extends ChangeNotifier {
     if (isRunning) return;
     isRunning = true;
     isPaused = false;
+    isAlarming = false;
     _startTicking();
     notifyListeners();
   }
@@ -497,7 +591,19 @@ class TimerInstance extends ChangeNotifier {
     remainingSeconds = duration.inSeconds;
     isRunning = false;
     isPaused = false;
+    if (isAlarming) {
+      isAlarming = false;
+      onStop();
+    }
     notifyListeners();
+  }
+
+  void stopAlarm() {
+    if (isAlarming) {
+      isAlarming = false;
+      onStop();
+      notifyListeners();
+    }
   }
 
   void _startTicking() {
@@ -508,21 +614,23 @@ class TimerInstance extends ChangeNotifier {
         notifyListeners();
       } else {
         _timer?.cancel();
-        _playAlarm();
+        _triggerAlarm();
       }
     });
   }
 
-  Future<void> _playAlarm() async {
-    // Play a system beep sound (you can replace with custom sound file)
-    // For now, we'll just trigger a notification
-    // In a real app, you'd use flutter_local_notifications or similar
+  Future<void> _triggerAlarm() async {
+    isAlarming = true;
     notifyListeners();
+    await onAlarm(sound);
   }
 
   @override
   void dispose() {
     _timer?.cancel();
+    if (isAlarming) {
+      onStop();
+    }
     super.dispose();
   }
 }
