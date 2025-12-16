@@ -30,7 +30,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _itemController = TextEditingController();
-  String? _selectedCategory;
+  final _categoryController = TextEditingController();
   SmokingType _selectedType = SmokingType.pitNote;
   final _temperatureController = TextEditingController();
   final _timeController = TextEditingController();
@@ -60,7 +60,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _nameController.text = recipe.name;
       _selectedType = recipe.type;
       _itemController.text = recipe.item ?? '';
-      _selectedCategory = recipe.category;
+      _categoryController.text = recipe.category ?? '';
       _temperatureController.text = recipe.temperature;
       _timeController.text = recipe.time;
       _woodController.text = recipe.wood;
@@ -95,7 +95,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _nameController.text = recipe.name;
         _selectedType = recipe.type;
         _itemController.text = recipe.item ?? '';
-        _selectedCategory = recipe.category;
+        _categoryController.text = recipe.category ?? '';
         _temperatureController.text = recipe.temperature;
         _timeController.text = recipe.time;
         _woodController.text = recipe.wood;
@@ -148,6 +148,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   void dispose() {
     _nameController.dispose();
     _itemController.dispose();
+    _categoryController.dispose();
     _temperatureController.dispose();
     _timeController.dispose();
     _woodController.dispose();
@@ -188,9 +189,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       appBar: AppBar(
         title: Text(title),
         actions: [
-          TextButton(
+          TextButton.icon(
             onPressed: _saveRecipe,
-            child: const Text('Save'),
+            icon: const Icon(Icons.save),
+            label: const Text('Save'),
           ),
         ],
       ),
@@ -310,20 +312,63 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                   ),
                 ),
                 const SizedBox(width: 16),
-                // Category dropdown
+                // Category with autocomplete (free-form entry)
                 Expanded(
-                  child: DropdownButtonFormField<String>(
-                    initialValue: _selectedCategory,
-                    decoration: const InputDecoration(
-                      labelText: 'Category',
-                    ),
-                    items: SmokingCategory.all.map((cat) {
-                      return DropdownMenuItem(
-                        value: cat,
-                        child: Text(cat),
+                  child: Autocomplete<String>(
+                    initialValue: TextEditingValue(text: _categoryController.text),
+                    optionsBuilder: (textEditingValue) {
+                      if (textEditingValue.text.isEmpty) {
+                        return SmokingCategory.all;
+                      }
+                      final query = textEditingValue.text.toLowerCase();
+                      return SmokingCategory.all.where(
+                        (c) => c.toLowerCase().contains(query),
                       );
-                    }).toList(),
-                    onChanged: (value) => setState(() => _selectedCategory = value),
+                    },
+                    fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                      controller.addListener(() {
+                        _categoryController.text = controller.text;
+                      });
+                      return TextFormField(
+                        controller: controller,
+                        focusNode: focusNode,
+                        decoration: const InputDecoration(
+                          labelText: 'Category',
+                        ),
+                        textCapitalization: TextCapitalization.words,
+                      );
+                    },
+                    onSelected: (selection) {
+                      _categoryController.text = selection;
+                    },
+                    optionsViewBuilder: (context, onSelected, options) {
+                      return Align(
+                        alignment: Alignment.topLeft,
+                        child: Material(
+                          elevation: 4,
+                          borderRadius: BorderRadius.circular(8),
+                          child: ConstrainedBox(
+                            constraints: const BoxConstraints(
+                              maxHeight: 200,
+                              maxWidth: 200,
+                            ),
+                            child: ListView.builder(
+                              padding: EdgeInsets.zero,
+                              shrinkWrap: true,
+                              itemCount: options.length,
+                              itemBuilder: (context, index) {
+                                final option = options.elementAt(index);
+                                return ListTile(
+                                  dense: true,
+                                  title: Text(option),
+                                  onTap: () => onSelected(option),
+                                );
+                              },
+                            ),
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ),
               ],
@@ -435,6 +480,122 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             // Recipe specific fields
             if (_selectedType == SmokingType.recipe) ...[
+              const SizedBox(height: 16),
+
+              // Category with autocomplete (free-form entry)
+              Autocomplete<String>(
+                initialValue: TextEditingValue(text: _categoryController.text),
+                optionsBuilder: (textEditingValue) {
+                  if (textEditingValue.text.isEmpty) {
+                    return SmokingCategory.all;
+                  }
+                  final query = textEditingValue.text.toLowerCase();
+                  return SmokingCategory.all.where(
+                    (c) => c.toLowerCase().contains(query),
+                  );
+                },
+                fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                  controller.addListener(() {
+                    _categoryController.text = controller.text;
+                  });
+                  return TextFormField(
+                    controller: controller,
+                    focusNode: focusNode,
+                    decoration: const InputDecoration(
+                      labelText: 'Category',
+                      hintText: 'What is being smoked?',
+                    ),
+                    textCapitalization: TextCapitalization.words,
+                  );
+                },
+                onSelected: (selection) {
+                  _categoryController.text = selection;
+                },
+                optionsViewBuilder: (context, onSelected, options) {
+                  return Align(
+                    alignment: Alignment.topLeft,
+                    child: Material(
+                      elevation: 4,
+                      borderRadius: BorderRadius.circular(8),
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxHeight: 200,
+                          maxWidth: MediaQuery.of(context).size.width - 32,
+                        ),
+                        child: ListView.builder(
+                          padding: EdgeInsets.zero,
+                          shrinkWrap: true,
+                          itemCount: options.length,
+                          itemBuilder: (context, index) {
+                            final option = options.elementAt(index);
+                            return ListTile(
+                              dense: true,
+                              title: Text(option),
+                              onTap: () => onSelected(option),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+
+              const SizedBox(height: 16),
+
+              // Wood type (optional, for reference)
+              Autocomplete<String>(
+                initialValue: TextEditingValue(text: _woodController.text),
+                optionsBuilder: (textEditingValue) {
+                  return WoodSuggestions.getSuggestions(textEditingValue.text);
+                },
+                fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                  controller.addListener(() {
+                    _woodController.text = controller.text;
+                  });
+                  return TextFormField(
+                    controller: controller,
+                    focusNode: focusNode,
+                    decoration: const InputDecoration(
+                      labelText: 'Wood Type (optional)',
+                      hintText: 'e.g., Hickory, Cherry, Apple',
+                    ),
+                    textCapitalization: TextCapitalization.words,
+                  );
+                },
+                onSelected: (selection) {
+                  _woodController.text = selection;
+                },
+                optionsViewBuilder: (context, onSelected, options) {
+                  return Align(
+                    alignment: Alignment.topLeft,
+                    child: Material(
+                      elevation: 4,
+                      borderRadius: BorderRadius.circular(12),
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxHeight: 200,
+                          maxWidth: MediaQuery.of(context).size.width - 32,
+                        ),
+                        child: ListView.builder(
+                          padding: EdgeInsets.zero,
+                          shrinkWrap: true,
+                          itemCount: options.length,
+                          itemBuilder: (context, index) {
+                            final option = options.elementAt(index);
+                            return ListTile(
+                              dense: true,
+                              title: Text(option),
+                              onTap: () => onSelected(option),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+
               const SizedBox(height: 16),
 
               // Serves and Time row
@@ -1280,7 +1441,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..item = _itemController.text.trim().isEmpty
           ? null
           : _itemController.text.trim()
-      ..category = _selectedCategory
+      ..category = _categoryController.text.trim().isEmpty
+          ? null
+          : _categoryController.text.trim()
       ..temperature = _temperatureController.text.trim()
       ..time = _timeController.text.trim()
       ..wood = _woodController.text.trim()

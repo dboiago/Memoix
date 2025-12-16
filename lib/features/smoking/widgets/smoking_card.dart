@@ -224,37 +224,39 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
     );
   }
 
-  /// Metadata row for Recipes: ingredient count, time, serves
+  /// Metadata row for Recipes: category dot, wood, time, serves
   Widget _buildRecipeMetadata(ThemeData theme) {
     return Row(
       children: [
-        // "Recipe" badge to distinguish from Pit Notes
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-          decoration: BoxDecoration(
-            color: theme.colorScheme.secondary.withOpacity(0.15),
-            borderRadius: BorderRadius.circular(4),
-          ),
-          child: Text(
-            'Recipe',
-            style: theme.textTheme.labelSmall?.copyWith(
-              color: theme.colorScheme.secondary,
-              fontWeight: FontWeight.w500,
+        // Category with colored bullet (same as Pit Notes)
+        if (widget.recipe.category != null) ...[
+          Text(
+            '\u2022',
+            style: TextStyle(
+              color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+              fontSize: 16,
             ),
           ),
-        ),
-        const SizedBox(width: 12),
+          const SizedBox(width: 6),
+          Text(
+            widget.recipe.category!,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
 
-        // Ingredient count
-        if (widget.recipe.ingredients.isNotEmpty) ...[
+        // Wood type with tree icon (if present)
+        if (widget.recipe.wood.isNotEmpty) ...[
           Icon(
-            Icons.restaurant_outlined,
+            Icons.park,
             size: 14,
             color: theme.colorScheme.outline,
           ),
           const SizedBox(width: 4),
           Text(
-            '${widget.recipe.ingredients.length} ingredients',
+            widget.recipe.wood,
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
