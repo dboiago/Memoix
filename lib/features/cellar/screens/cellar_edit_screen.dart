@@ -208,14 +208,27 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Buy toggle (compact, not full-width)
+            // Buy toggle and Price Range (side by side)
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Buy', style: theme.textTheme.bodyLarge),
-                const SizedBox(width: 8),
-                Switch.adaptive(
-                  value: _buy,
-                  onChanged: (value) => setState(() => _buy = value),
+                // Buy toggle
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text('Buy', style: theme.textTheme.bodyLarge),
+                    const SizedBox(width: 8),
+                    Switch.adaptive(
+                      value: _buy,
+                      onChanged: (value) => setState(() => _buy = value),
+                    ),
+                  ],
+                ),
+                const Spacer(),
+                // Price Range (compact)
+                _PriceRangeSelector(
+                  value: _priceRange,
+                  onChanged: (value) => setState(() => _priceRange = value),
                 ),
               ],
             ),
@@ -230,13 +243,6 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
                 alignLabelWithHint: true,
               ),
               maxLines: 4,
-            ),
-            const SizedBox(height: 16),
-
-            // Price range (5-tier rating)
-            _PriceRangeSelector(
-              value: _priceRange,
-              onChanged: (value) => setState(() => _priceRange = value),
             ),
             const SizedBox(height: 80),
           ],
@@ -669,7 +675,7 @@ class _ProducerPickerSheetState extends State<_ProducerPickerSheet> {
   }
 }
 
-/// 5-tier price range selector displayed as dollar signs
+/// 5-tier price range selector displayed as dollar signs (compact)
 class _PriceRangeSelector extends StatelessWidget {
   final int value;
   final ValueChanged<int> onChanged;
@@ -683,44 +689,29 @@ class _PriceRangeSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          'Price Range',
-          style: theme.textTheme.bodyLarge,
-        ),
-        const SizedBox(height: 8),
-        Row(
-          children: [
-            ...List.generate(5, (index) {
-              final tier = index + 1;
-              final isSelected = value >= tier;
-              return GestureDetector(
-                onTap: () => onChanged(value == tier ? 0 : tier),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: Text(
-                    '\$',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: isSelected 
-                          ? theme.colorScheme.primary 
-                          : theme.colorScheme.outline.withOpacity(0.4),
-                    ),
-                  ),
+        ...List.generate(5, (index) {
+          final tier = index + 1;
+          final isSelected = value >= tier;
+          return GestureDetector(
+            onTap: () => onChanged(value == tier ? 0 : tier),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 2),
+              child: Text(
+                '\$',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: isSelected 
+                      ? theme.colorScheme.primary 
+                      : theme.colorScheme.outline.withOpacity(0.4),
                 ),
-              );
-            }),
-            const SizedBox(width: 16),
-            if (value > 0)
-              TextButton(
-                onPressed: () => onChanged(0),
-                child: const Text('Clear'),
               ),
-          ],
-        ),
+            ),
+          );
+        }),
       ],
     );
   }
