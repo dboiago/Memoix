@@ -172,12 +172,12 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
           ),
           const SizedBox(width: 4),
           Text(
-            '$cheeseCount Cheese${cheeseCount == 1 ? '' : 's'}',
+            '$cheeseCount',
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 10),
         ],
         // Protein count
         if (proteinCount > 0) ...[
@@ -188,12 +188,12 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
           ),
           const SizedBox(width: 4),
           Text(
-            '$proteinCount Protein${proteinCount == 1 ? '' : 's'}',
+            '$proteinCount',
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
-          if (vegetableCount > 0) const SizedBox(width: 12),
+          if (vegetableCount > 0) const SizedBox(width: 10),
         ],
         // Vegetable count
         if (vegetableCount > 0) ...[
@@ -204,7 +204,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
           ),
           const SizedBox(width: 4),
           Text(
-            '$vegetableCount Veg${vegetableCount == 1 ? '' : 's'}',
+            '$vegetableCount',
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),

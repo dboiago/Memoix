@@ -500,67 +500,67 @@ class MemoixColors {
   }
 
   /// Get dot color for a protein type in sandwiches/pizzas
-  /// Uses distinct colors for visual identification of proteins
+  /// Uses soft pastel colors matching app theme for visual identification
   /// Falls back to primary color for unknown proteins
   static Color forProteinDot(String? protein) {
     if (protein == null || protein.isEmpty) return primary;
     
     final lower = protein.toLowerCase().trim();
     
-    // Beef proteins - warm coral-red
+    // Beef proteins - soft coral (matches smokedBeef but softer)
     if (['beef', 'steak', 'roast beef', 'brisket', 'pastrami', 'corned beef',
          'ground beef', 'meatball', 'meatballs'].contains(lower)) {
-      return const Color(0xFFD4635A); // Tomato red (distinct)
+      return const Color(0xFFD4A090); // Soft coral
     }
     
-    // Pork proteins - rose pink
+    // Pork proteins - dusty rose
     if (['pork', 'ham', 'bacon', 'prosciutto', 'pancetta', 'capicola',
          'capocollo', 'coppa', 'mortadella', 'lonza', 'guanciale',
          'pulled pork', 'carnitas'].contains(lower)) {
-      return const Color(0xFFE07B9A); // Rose pink
+      return const Color(0xFFD4A8B8); // Dusty rose
     }
     
-    // Cured/spiced meats - deep burgundy
+    // Cured/spiced meats - muted burgundy
     if (['salami', 'pepperoni', 'chorizo', 'sausage', 'soppressata',
          'nduja', 'bresaola'].contains(lower)) {
-      return const Color(0xFF983058); // Wine/burgundy
+      return const Color(0xFFB8909A); // Muted mauve-burgundy
     }
     
-    // Poultry proteins - golden amber
+    // Poultry proteins - warm sand
     if (['chicken', 'turkey', 'duck', 'chicken breast', 'rotisserie chicken',
          'fried chicken', 'grilled chicken', 'turkey breast', 'smoked turkey',
          'chicken salad', 'turkey salad'].contains(lower)) {
-      return const Color(0xFFE8A86B); // Warm golden
+      return const Color(0xFFD4C0A0); // Warm sand
     }
     
-    // Lamb proteins - deep purple-brown
+    // Lamb proteins - dusty purple (similar to secondary)
     if (['lamb', 'gyro', 'shawarma', 'doner', 'kebab'].contains(lower)) {
-      return const Color(0xFF8B6B8E); // Muted purple
+      return const Color(0xFFB8A0B8); // Dusty purple
     }
     
-    // Seafood proteins - ocean teal
+    // Seafood proteins - soft teal
     if (['fish', 'tuna', 'salmon', 'shrimp', 'crab', 'lobster', 'sardine',
          'sardines', 'anchovy', 'anchovies', 'smoked salmon', 'lox',
          'fish fillet', 'tuna salad', 'crab salad'].contains(lower)) {
-      return const Color(0xFF4DA6A6); // Teal
+      return const Color(0xFF9EC4C4); // Soft sage teal
     }
     
-    // Egg proteins - bright yellow
+    // Egg proteins - soft cream yellow
     if (['egg', 'eggs', 'fried egg', 'scrambled egg', 'omelette',
          'omelet', 'egg salad'].contains(lower)) {
-      return const Color(0xFFE8C848); // Bright egg yellow
+      return const Color(0xFFE8D8A8); // Soft cream yellow
     }
     
-    // Tofu/plant proteins - fresh green
+    // Tofu/plant proteins - sage green
     if (['tofu', 'tempeh', 'seitan', 'beyond meat', 'impossible',
          'plant protein', 'veggie patty', 'falafel'].contains(lower)) {
-      return const Color(0xFF6BAF6B); // Fresh green
+      return const Color(0xFFA8C4A8); // Soft sage green
     }
     
-    // Deli meats (mixed/cured) - terracotta
+    // Deli meats (mixed/cured) - warm tan
     if (['deli meat', 'cold cut', 'cold cuts', 'lunch meat',
          'luncheon meat', 'bologna', 'olive loaf'].contains(lower)) {
-      return const Color(0xFFD08860); // Terracotta
+      return const Color(0xFFCCB8A0); // Warm tan
     }
     
     // Default to primary for unknown proteins
