@@ -246,7 +246,6 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
                 }
               },
               selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
-              checkmarkColor: theme.colorScheme.onSurface,
             ),
           ),
 
@@ -260,8 +259,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
                 onSelected: (selected) {
                   setState(() => _selectedProtein = selected ? 'cheese' : null);
                 },
-                selectedColor: MemoixColors.forCuisine('Mediterranean').withOpacity(0.3),
-                checkmarkColor: theme.colorScheme.onSurface,
+                selectedColor: MemoixColors.cheese.withOpacity(0.3),
               ),
             ),
 
@@ -277,7 +275,6 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
                   setState(() => _selectedProtein = selected ? protein.toLowerCase() : null);
                 },
                 selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
-                checkmarkColor: theme.colorScheme.onSurface,
               ),
             );
           }),

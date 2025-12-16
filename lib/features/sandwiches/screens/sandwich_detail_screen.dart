@@ -144,86 +144,11 @@ class _SandwichDetailView extends ConsumerWidget {
             ],
           ),
 
-          // Bread chip (if present)
-          if (sandwich.bread.isNotEmpty)
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-                child: Wrap(
-                  spacing: 8,
-                  children: [
-                    Chip(
-                      label: Text(sandwich.bread),
-                      backgroundColor: theme.colorScheme.secondaryContainer,
-                      labelStyle: TextStyle(
-                        color: theme.colorScheme.onSecondaryContainer,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
-          // Ingredients section
+          // Main content with responsive layout
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Ingredients header
-                      Text(
-                        'Ingredients',
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-                      
-                      // Proteins section
-                      if (sandwich.proteins.isNotEmpty) ...[
-                        _buildIngredientSection(
-                          theme,
-                          sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
-                          sandwich.proteins,
-                        ),
-                        const SizedBox(height: 16),
-                      ],
-
-                      // Vegetables section
-                      if (sandwich.vegetables.isNotEmpty) ...[
-                        _buildIngredientSection(
-                          theme,
-                          sandwich.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-                          sandwich.vegetables,
-                        ),
-                        const SizedBox(height: 16),
-                      ],
-
-                      // Cheeses section
-                      if (sandwich.cheeses.isNotEmpty) ...[
-                        _buildIngredientSection(
-                          theme,
-                          sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                          sandwich.cheeses,
-                        ),
-                        const SizedBox(height: 16),
-                      ],
-
-                      // Condiments section
-                      if (sandwich.condiments.isNotEmpty)
-                        _buildIngredientSection(
-                          theme,
-                          sandwich.condiments.length == 1 ? 'Condiment' : 'Condiments',
-                          sandwich.condiments,
-                        ),
-                    ],
-                  ),
-                ),
-              ),
+              child: _SandwichComponentsGrid(sandwich: sandwich),
             ),
           ),
           
@@ -262,28 +187,6 @@ class _SandwichDetailView extends ConsumerWidget {
           ),
         ],
       ),
-    );
-  }
-  
-  /// Build an ingredient section with header and checkable list
-  Widget _buildIngredientSection(ThemeData theme, String title, List<String> items) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Section header
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8),
-          child: Text(
-            title,
-            style: theme.textTheme.titleSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: theme.colorScheme.primary,
-            ),
-          ),
-        ),
-        // Ingredient list
-        _SandwichIngredientList(items: items),
-      ],
     );
   }
 
@@ -444,6 +347,181 @@ class _SandwichDetailView extends ConsumerWidget {
               },
             ),
             const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Responsive grid layout for sandwich components
+/// Order: Bread - Condiments - Proteins - Cheese - Vegetables
+/// Collapses to single column on narrow screens
+class _SandwichComponentsGrid extends StatelessWidget {
+  final Sandwich sandwich;
+
+  const _SandwichComponentsGrid({required this.sandwich});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // Use side-by-side layout when width >= 500
+        final isWide = constraints.maxWidth >= 500;
+        
+        if (isWide) {
+          return _buildWideLayout(theme);
+        } else {
+          return _buildNarrowLayout(theme);
+        }
+      },
+    );
+  }
+
+  Widget _buildWideLayout(ThemeData theme) {
+    // Bread (full width) - Condiments | Proteins - Cheese | Vegetables
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Bread section (full width, text only - no chip)
+        if (sandwich.bread.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(theme, 'Bread', [sandwich.bread]),
+          ),
+        
+        // Row 1: Condiments | Proteins
+        if (sandwich.condiments.isNotEmpty || sandwich.proteins.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (sandwich.condiments.isNotEmpty)
+                    Expanded(
+                      child: _buildComponentSection(
+                        theme, 
+                        sandwich.condiments.length == 1 ? 'Condiment' : 'Condiments',
+                        sandwich.condiments,
+                      ),
+                    ),
+                  if (sandwich.condiments.isNotEmpty && sandwich.proteins.isNotEmpty)
+                    const SizedBox(width: 16),
+                  if (sandwich.proteins.isNotEmpty)
+                    Expanded(
+                      child: _buildComponentSection(
+                        theme,
+                        sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
+                        sandwich.proteins,
+                      ),
+                    ),
+                  // Fill empty space if only one column
+                  if (sandwich.condiments.isEmpty || sandwich.proteins.isEmpty)
+                    const Expanded(child: SizedBox()),
+                ],
+              ),
+            ),
+          ),
+        
+        // Row 2: Cheese | Vegetables
+        if (sandwich.cheeses.isNotEmpty || sandwich.vegetables.isNotEmpty)
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (sandwich.cheeses.isNotEmpty)
+                  Expanded(
+                    child: _buildComponentSection(
+                      theme,
+                      sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                      sandwich.cheeses,
+                    ),
+                  ),
+                if (sandwich.cheeses.isNotEmpty && sandwich.vegetables.isNotEmpty)
+                  const SizedBox(width: 16),
+                if (sandwich.vegetables.isNotEmpty)
+                  Expanded(
+                    child: _buildComponentSection(
+                      theme,
+                      sandwich.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                      sandwich.vegetables,
+                    ),
+                  ),
+                // Fill empty space if only one column
+                if (sandwich.cheeses.isEmpty || sandwich.vegetables.isEmpty)
+                  const Expanded(child: SizedBox()),
+              ],
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildNarrowLayout(ThemeData theme) {
+    // Single column layout for narrow screens
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (sandwich.bread.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(theme, 'Bread', [sandwich.bread]),
+          ),
+        if (sandwich.condiments.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(
+              theme,
+              sandwich.condiments.length == 1 ? 'Condiment' : 'Condiments',
+              sandwich.condiments,
+            ),
+          ),
+        if (sandwich.proteins.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(
+              theme,
+              sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
+              sandwich.proteins,
+            ),
+          ),
+        if (sandwich.cheeses.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(
+              theme,
+              sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+              sandwich.cheeses,
+            ),
+          ),
+        if (sandwich.vegetables.isNotEmpty)
+          _buildComponentSection(
+            theme,
+            sandwich.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+            sandwich.vegetables,
+          ),
+      ],
+    );
+  }
+
+  Widget _buildComponentSection(ThemeData theme, String title, List<String> items) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: theme.textTheme.titleSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            _SandwichIngredientList(items: items),
           ],
         ),
       ),

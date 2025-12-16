@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../app/theme/colors.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 
@@ -73,33 +74,8 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                     // Only show metadata row in non-compact mode
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
-                      // Bread with bullet + component summary
-                      Row(
-                        children: [
-                          // Bread with bullet
-                          if (widget.sandwich.bread.isNotEmpty) ...[
-                            Text(
-                              '\u2022',
-                              style: TextStyle(
-                                color: theme.colorScheme.primary,
-                                fontSize: 16,
-                              ),
-                            ),
-                            const SizedBox(width: 6),
-                            Text(
-                              widget.sandwich.bread,
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                            ),
-                            const SizedBox(width: 12),
-                          ],
-                          // Component summary
-                          Flexible(
-                            child: _buildComponentsSummary(theme),
-                          ),
-                        ],
-                      ),
+                      // Protein summary with themed dot
+                      _buildProteinSummary(theme),
                     ],
                   ],
                 ),
@@ -157,43 +133,49 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
     );
   }
 
-  Widget _buildComponentsSummary(ThemeData theme) {
-    final proteinCount = widget.sandwich.proteins.length;
-    final cheeseCount = widget.sandwich.cheeses.length;
-    final isVegetarian = proteinCount == 0;
-
+  /// Build protein summary: first protein, "Cheese" (vegetarian), or "Assorted"
+  Widget _buildProteinSummary(ThemeData theme) {
+    final proteins = widget.sandwich.proteins;
+    final cheeses = widget.sandwich.cheeses;
+    
+    String label;
+    Color dotColor;
+    
+    if (proteins.isEmpty) {
+      // Vegetarian - show "Cheese"
+      if (cheeses.isNotEmpty) {
+        label = 'Cheese';
+        dotColor = MemoixColors.cheese;
+      } else {
+        // No proteins and no cheese - shouldn't happen often
+        return const SizedBox.shrink();
+      }
+    } else if (proteins.length == 1) {
+      // Single protein - show it
+      label = proteins.first;
+      dotColor = MemoixColors.sandwiches;
+    } else {
+      // Multiple proteins - show "Assorted"
+      label = 'Assorted';
+      dotColor = MemoixColors.sandwiches;
+    }
+    
     return Row(
       children: [
-        // Protein count (if any)
-        if (proteinCount > 0) ...[
-          Icon(
-            Icons.restaurant_outlined,
-            size: 14,
-            color: theme.colorScheme.outline,
+        Text(
+          '\u2022',
+          style: TextStyle(
+            color: dotColor,
+            fontSize: 16,
           ),
-          const SizedBox(width: 4),
-          Text(
-            '$proteinCount Protein${proteinCount == 1 ? '' : 's'}',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
+        ),
+        const SizedBox(width: 6),
+        Text(
+          label,
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
           ),
-        ],
-        // Cheese count ONLY if vegetarian (no proteins)
-        if (isVegetarian && cheeseCount > 0) ...[
-          Icon(
-            Icons.local_pizza_outlined,
-            size: 14,
-            color: theme.colorScheme.outline,
-          ),
-          const SizedBox(width: 4),
-          Text(
-            '$cheeseCount Cheese${cheeseCount == 1 ? '' : 's'}',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-        ],
+        ),
       ],
     );
   }

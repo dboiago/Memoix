@@ -140,48 +140,11 @@ class _PizzaDetailView extends ConsumerWidget {
             ],
           ),
 
-          // Content - styled like regular recipe page
+          // Content - responsive grid layout for Sauce - Cheese - Toppings
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Ingredients header
-                      Text(
-                        'Ingredients',
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-                      
-                      // Cheeses section (no preceding SizedBox since it's first)
-                      if (pizza.cheeses.isNotEmpty) ...[
-                        const SizedBox(height: 16),
-                        _buildIngredientSection(
-                          theme,
-                          pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                          pizza.cheeses,
-                        ),
-                      ],
-
-                      // Toppings section
-                      if (pizza.toppings.isNotEmpty) ...[
-                        const SizedBox(height: 16),
-                        _buildIngredientSection(
-                          theme,
-                          pizza.toppings.length == 1 ? 'Topping' : 'Toppings',
-                          pizza.toppings,
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
-              ),
+              child: _PizzaComponentsGrid(pizza: pizza),
             ),
           ),
           
@@ -220,28 +183,6 @@ class _PizzaDetailView extends ConsumerWidget {
           ),
         ],
       ),
-    );
-  }
-  
-  /// Build an ingredient section with header and checkable list
-  Widget _buildIngredientSection(ThemeData theme, String title, List<String> items) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Section header
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8),
-          child: Text(
-            title,
-            style: theme.textTheme.titleSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: theme.colorScheme.primary,
-            ),
-          ),
-        ),
-        // Ingredient list
-        _PizzaIngredientList(items: items),
-      ],
     );
   }
 
@@ -373,6 +314,124 @@ class _PizzaDetailView extends ConsumerWidget {
               },
             ),
             const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Responsive grid layout for pizza components
+/// Order: Sauce - Cheese - Toppings side-by-side
+/// Collapses to single column on narrow screens
+class _PizzaComponentsGrid extends StatelessWidget {
+  final Pizza pizza;
+
+  const _PizzaComponentsGrid({required this.pizza});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // Use side-by-side layout when width >= 500
+        final isWide = constraints.maxWidth >= 500;
+        
+        if (isWide) {
+          return _buildWideLayout(theme);
+        } else {
+          return _buildNarrowLayout(theme);
+        }
+      },
+    );
+  }
+
+  Widget _buildWideLayout(ThemeData theme) {
+    // Sauce | Cheese | Toppings all side-by-side
+    return IntrinsicHeight(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Sauce section
+          Expanded(
+            child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
+          ),
+          const SizedBox(width: 16),
+          // Cheese section
+          if (pizza.cheeses.isNotEmpty)
+            Expanded(
+              child: _buildComponentSection(
+                theme,
+                pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                pizza.cheeses,
+              ),
+            )
+          else
+            const Expanded(child: SizedBox()),
+          const SizedBox(width: 16),
+          // Toppings section
+          if (pizza.toppings.isNotEmpty)
+            Expanded(
+              child: _buildComponentSection(
+                theme,
+                pizza.toppings.length == 1 ? 'Topping' : 'Toppings',
+                pizza.toppings,
+              ),
+            )
+          else
+            const Expanded(child: SizedBox()),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildNarrowLayout(ThemeData theme) {
+    // Single column layout for narrow screens
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Sauce section
+        Padding(
+          padding: const EdgeInsets.only(bottom: 16),
+          child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
+        ),
+        // Cheese section
+        if (pizza.cheeses.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(
+              theme,
+              pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+              pizza.cheeses,
+            ),
+          ),
+        // Toppings section
+        if (pizza.toppings.isNotEmpty)
+          _buildComponentSection(
+            theme,
+            pizza.toppings.length == 1 ? 'Topping' : 'Toppings',
+            pizza.toppings,
+          ),
+      ],
+    );
+  }
+
+  Widget _buildComponentSection(ThemeData theme, String title, List<String> items) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: theme.textTheme.titleSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            _PizzaIngredientList(items: items),
           ],
         ),
       ),
