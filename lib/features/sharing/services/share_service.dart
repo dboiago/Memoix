@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../pizzas/models/pizza.dart';
+import '../../sandwiches/models/sandwich.dart';
 import '../../smoking/models/smoking_recipe.dart';
 
 /// Service for sharing and importing recipes
@@ -257,6 +258,136 @@ class ShareService {
           TextButton(
             onPressed: () async {
               await copyPizzaShareLink(pizza);
+              if (ctx.mounted) {
+                Navigator.pop(ctx);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Link copied to clipboard')),
+                );
+              }
+            },
+            child: const Text('Copy Link'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Done'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // === SANDWICH SHARING ===
+
+  /// Generate a shareable link for a sandwich
+  String generateSandwichShareLink(Sandwich sandwich) {
+    final json = sandwich.toShareableJson();
+    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    return 'memoix://sandwich/$encoded';
+  }
+
+  /// Share a sandwich via system share sheet
+  Future<void> shareSandwich(Sandwich sandwich) async {
+    final link = generateSandwichShareLink(sandwich);
+    
+    await Share.share(
+      'Check out this sandwich: ${sandwich.name}\n\n$link',
+      subject: 'Sandwich: ${sandwich.name}',
+    );
+  }
+
+  /// Share sandwich as plain text
+  Future<void> shareSandwichAsText(Sandwich sandwich) async {
+    final buffer = StringBuffer();
+    
+    buffer.writeln('# ${sandwich.name}');
+    buffer.writeln();
+    if (sandwich.bread.isNotEmpty) {
+      buffer.writeln('Bread: ${sandwich.bread}');
+    }
+    
+    if (sandwich.proteins.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Proteins');
+      for (final protein in sandwich.proteins) {
+        buffer.writeln('- $protein');
+      }
+    }
+    
+    if (sandwich.vegetables.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Vegetables');
+      for (final vegetable in sandwich.vegetables) {
+        buffer.writeln('- $vegetable');
+      }
+    }
+    
+    if (sandwich.cheeses.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Cheeses');
+      for (final cheese in sandwich.cheeses) {
+        buffer.writeln('- $cheese');
+      }
+    }
+    
+    if (sandwich.condiments.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Condiments');
+      for (final condiment in sandwich.condiments) {
+        buffer.writeln('- $condiment');
+      }
+    }
+    
+    if (sandwich.notes != null && sandwich.notes!.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Notes');
+      buffer.writeln(sandwich.notes);
+    }
+    
+    buffer.writeln();
+    buffer.writeln('---');
+    buffer.writeln('Shared from Memoix');
+    
+    await Share.share(buffer.toString(), subject: sandwich.name);
+  }
+
+  /// Copy sandwich share link to clipboard
+  Future<void> copySandwichShareLink(Sandwich sandwich) async {
+    final link = generateSandwichShareLink(sandwich);
+    await Clipboard.setData(ClipboardData(text: link));
+  }
+
+  /// Show QR code dialog for sandwich sharing
+  void showSandwichQrCode(BuildContext context, Sandwich sandwich) {
+    final link = generateSandwichShareLink(sandwich);
+    
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text('Share ${sandwich.name}'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 200,
+              height: 200,
+              child: QrImageView(
+                data: link,
+                version: QrVersions.auto,
+                backgroundColor: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Scan this QR code with another\nMemoix app to import this sandwich',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              await copySandwichShareLink(sandwich);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
                 ScaffoldMessenger.of(context).showSnackBar(

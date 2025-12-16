@@ -9,6 +9,9 @@ import '../../features/recipes/models/source_filter.dart';
 import '../../features/pizzas/screens/pizza_list_screen.dart';
 import '../../features/pizzas/screens/pizza_detail_screen.dart';
 import '../../features/pizzas/screens/pizza_edit_screen.dart';
+import '../../features/sandwiches/screens/sandwich_list_screen.dart';
+import '../../features/sandwiches/screens/sandwich_detail_screen.dart';
+import '../../features/sandwiches/screens/sandwich_edit_screen.dart';
 import '../../features/smoking/screens/smoking_list_screen.dart';
 import '../../features/smoking/screens/smoking_detail_screen.dart';
 import '../../features/smoking/screens/smoking_edit_screen.dart';
@@ -200,6 +203,32 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => PizzaEditScreen(pizzaId: pizzaId),
+      ),
+    );
+  }
+
+  // ============ SANDWICH ROUTES ============
+
+  static void toSandwichList(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => const SandwichListScreen(),
+      ),
+    );
+  }
+
+  static void toSandwichDetail(BuildContext context, String sandwichId) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => SandwichDetailScreen(sandwichId: sandwichId),
+      ),
+    );
+  }
+
+  static void toSandwichEdit(BuildContext context, {String? sandwichId}) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => SandwichEditScreen(sandwichId: sandwichId),
       ),
     );
   }

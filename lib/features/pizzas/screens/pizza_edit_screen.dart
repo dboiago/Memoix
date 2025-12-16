@@ -218,16 +218,33 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
             _buildBaseSauceSelector(theme),
             const SizedBox(height: 24),
 
-            // Cheeses section
-            _buildSectionHeader(theme, 'Cheeses'),
-            const SizedBox(height: 8),
-            _buildCheeseRows(theme),
-            const SizedBox(height: 24),
-
-            // Toppings section
-            _buildSectionHeader(theme, 'Toppings'),
-            const SizedBox(height: 8),
-            _buildToppingRows(theme),
+            // Cheeses + Toppings (side by side)
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Cheeses'),
+                      const SizedBox(height: 8),
+                      _buildCheeseRows(theme),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Toppings'),
+                      const SizedBox(height: 8),
+                      _buildToppingRows(theme),
+                    ],
+                  ),
+                ),
+              ],
+            ),
             const SizedBox(height: 24),
 
             // Notes field

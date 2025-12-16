@@ -9,6 +9,7 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 import '../../pizzas/repository/pizza_repository.dart';
+import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../../modernist/repository/modernist_repository.dart';
 
@@ -110,8 +111,9 @@ class _CourseGridView extends ConsumerWidget {
                   (context, index) {
                     final category = categories[index];
                     
-                    // Special handling for pizzas and smoking - use their own counts
+                    // Special handling for pizzas, sandwiches, and smoking - use their own counts
                     final bool isPizza = category.slug == 'pizzas';
+                    final bool isSandwich = category.slug == 'sandwiches';
                     final bool isSmoking = category.slug == 'smoking';
                     final bool isModernist = category.slug == 'modernist';
                     
@@ -120,6 +122,12 @@ class _CourseGridView extends ConsumerWidget {
                     if (isPizza) {
                       final pizzasAsync = ref.watch(pizzaCountProvider);
                       itemCount = pizzasAsync.maybeWhen(
+                        data: (count) => count,
+                        orElse: () => 0,
+                      );
+                    } else if (isSandwich) {
+                      final sandwichesAsync = ref.watch(sandwichCountProvider);
+                      itemCount = sandwichesAsync.maybeWhen(
                         data: (count) => count,
                         orElse: () => 0,
                       );
@@ -154,6 +162,8 @@ class _CourseGridView extends ConsumerWidget {
                           AppRoutes.toScratchPad(context);
                         } else if (category.slug == 'pizzas') {
                           AppRoutes.toPizzaList(context);
+                        } else if (category.slug == 'sandwiches') {
+                          AppRoutes.toSandwichList(context);
                         } else if (category.slug == 'smoking') {
                           AppRoutes.toSmokingList(context);
                         } else if (category.slug == 'modernist') {
