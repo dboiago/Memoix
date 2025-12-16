@@ -10,7 +10,7 @@ class Suggestions {
     'Provolone',
     'Ricotta',
     'Gorgonzola',
-    'Fior di Latte'
+    'Fior di Latte',
     'Fontina',
     'Goat Cheese',
     'Feta',

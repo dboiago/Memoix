@@ -214,14 +214,21 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
             ),
             const SizedBox(height: 16),
 
-            // Base sauce selector
-            _buildBaseSauceSelector(theme),
-            const SizedBox(height: 24),
-
-            // Cheeses + Toppings (side by side)
+            // Base sauce + Cheeses (side by side)
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Base Sauce'),
+                      const SizedBox(height: 8),
+                      _buildBaseSauceSelector(theme),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -232,19 +239,14 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
                     ],
                   ),
                 ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _buildSectionHeader(theme, 'Toppings'),
-                      const SizedBox(height: 8),
-                      _buildToppingRows(theme),
-                    ],
-                  ),
-                ),
               ],
             ),
+            const SizedBox(height: 24),
+
+            // Toppings section
+            _buildSectionHeader(theme, 'Toppings'),
+            const SizedBox(height: 8),
+            _buildToppingRows(theme),
             const SizedBox(height: 24),
 
             // Notes field
@@ -285,7 +287,6 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
       onTap: () => _showBaseSauceMenu(buttonKey, theme),
       child: InputDecorator(
         decoration: const InputDecoration(
-          labelText: 'Base Sauce',
           border: OutlineInputBorder(),
         ),
         child: Row(

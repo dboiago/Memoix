@@ -160,10 +160,11 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
   Widget _buildComponentsSummary(ThemeData theme) {
     final proteinCount = widget.sandwich.proteins.length;
     final cheeseCount = widget.sandwich.cheeses.length;
+    final isVegetarian = proteinCount == 0;
 
     return Row(
       children: [
-        // Protein count
+        // Protein count (if any)
         if (proteinCount > 0) ...[
           Icon(
             Icons.restaurant_outlined,
@@ -177,10 +178,9 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
               color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
-          const SizedBox(width: 12),
         ],
-        // Cheese count
-        if (cheeseCount > 0) ...[
+        // Cheese count ONLY if vegetarian (no proteins)
+        if (isVegetarian && cheeseCount > 0) ...[
           Icon(
             Icons.local_pizza_outlined,
             size: 14,

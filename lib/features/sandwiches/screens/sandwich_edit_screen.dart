@@ -270,6 +270,35 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
             _buildBreadField(theme),
             const SizedBox(height: 24),
 
+            // Cheese + Condiments (side by side) - above proteins/veggies for easier navigation
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Cheese'),
+                      const SizedBox(height: 8),
+                      _buildCheeseRows(theme),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Condiments'),
+                      const SizedBox(height: 8),
+                      _buildCondimentRows(theme),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 24),
+
             // Proteins + Vegetables (side by side)
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -292,35 +321,6 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
                       _buildSectionHeader(theme, 'Vegetables'),
                       const SizedBox(height: 8),
                       _buildVegetableRows(theme),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 24),
-
-            // Cheese + Condiments (side by side)
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _buildSectionHeader(theme, 'Cheese'),
-                      const SizedBox(height: 8),
-                      _buildCheeseRows(theme),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _buildSectionHeader(theme, 'Condiments'),
-                      const SizedBox(height: 8),
-                      _buildCondimentRows(theme),
                     ],
                   ),
                 ),

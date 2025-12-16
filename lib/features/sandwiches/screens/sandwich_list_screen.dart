@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colors.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../widgets/sandwich_card.dart';
 
-/// Sandwich list screen - displays sandwiches with search
+/// Sandwich list screen - displays sandwiches with search and protein filters
 class SandwichListScreen extends ConsumerStatefulWidget {
   const SandwichListScreen({super.key});
 
@@ -17,6 +18,7 @@ class SandwichListScreen extends ConsumerStatefulWidget {
 
 class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
   String _searchQuery = '';
+  String? _selectedProtein; // null = All, 'cheese' = vegetarian, otherwise protein name
 
   @override
   Widget build(BuildContext context) {
@@ -149,6 +151,9 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
                 ),
               ),
 
+              // Protein filter chips
+              _buildProteinFilterChips(visibleSandwiches, theme),
+
               // Sandwich list
               Expanded(
                 child: _buildSandwichList(visibleSandwiches, isCompact),
@@ -203,8 +208,99 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
     );
   }
 
+  Widget _buildProteinFilterChips(List<Sandwich> sandwiches, ThemeData theme) {
+    // Collect unique proteins from all sandwiches
+    final proteinSet = <String>{};
+    bool hasVegetarian = false;
+
+    for (final sandwich in sandwiches) {
+      if (sandwich.proteins.isEmpty && sandwich.cheeses.isNotEmpty) {
+        hasVegetarian = true;
+      }
+      for (final protein in sandwich.proteins) {
+        proteinSet.add(protein);
+      }
+    }
+
+    final proteins = proteinSet.toList()..sort();
+
+    if (proteins.isEmpty && !hasVegetarian) {
+      return const SizedBox.shrink();
+    }
+
+    return Container(
+      height: 48,
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          // "All" chip
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: FilterChip(
+              label: const Text('All'),
+              selected: _selectedProtein == null,
+              onSelected: (selected) {
+                if (selected) {
+                  setState(() => _selectedProtein = null);
+                }
+              },
+              selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
+              checkmarkColor: theme.colorScheme.onSurface,
+            ),
+          ),
+
+          // "Cheese" chip for vegetarian
+          if (hasVegetarian)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: FilterChip(
+                label: const Text('Cheese'),
+                selected: _selectedProtein == 'cheese',
+                onSelected: (selected) {
+                  setState(() => _selectedProtein = selected ? 'cheese' : null);
+                },
+                selectedColor: MemoixColors.forCuisine('Mediterranean').withOpacity(0.3),
+                checkmarkColor: theme.colorScheme.onSurface,
+              ),
+            ),
+
+          // Protein chips
+          ...proteins.map((protein) {
+            final isSelected = _selectedProtein == protein.toLowerCase();
+            return Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: FilterChip(
+                label: Text(protein),
+                selected: isSelected,
+                onSelected: (selected) {
+                  setState(() => _selectedProtein = selected ? protein.toLowerCase() : null);
+                },
+                selectedColor: MemoixColors.sandwiches.withOpacity(0.3),
+                checkmarkColor: theme.colorScheme.onSurface,
+              ),
+            );
+          }),
+        ],
+      ),
+    );
+  }
+
   Widget _buildSandwichList(List<Sandwich> allSandwiches, bool isCompact) {
     var sandwiches = allSandwiches;
+
+    // Filter by selected protein
+    if (_selectedProtein != null) {
+      if (_selectedProtein == 'cheese') {
+        // Vegetarian: no proteins but has cheese
+        sandwiches = sandwiches.where((s) => s.proteins.isEmpty && s.cheeses.isNotEmpty).toList();
+      } else {
+        // Has specific protein
+        sandwiches = sandwiches.where((s) => 
+          s.proteins.any((p) => p.toLowerCase() == _selectedProtein!.toLowerCase())
+        ).toList();
+      }
+    }
 
     // Filter by search query
     if (_searchQuery.isNotEmpty) {
@@ -234,15 +330,15 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              _searchQuery.isNotEmpty
-                  ? 'No sandwiches match your search'
+              _searchQuery.isNotEmpty || _selectedProtein != null
+                  ? 'No sandwiches match your filters'
                   : 'No sandwiches yet',
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: Theme.of(context).colorScheme.outline,
                   ),
             ),
             const SizedBox(height: 8),
-            if (_searchQuery.isEmpty)
+            if (_searchQuery.isEmpty && _selectedProtein == null)
               Text(
                 'Tap + to add your first sandwich',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
