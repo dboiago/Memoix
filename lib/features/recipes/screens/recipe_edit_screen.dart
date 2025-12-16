@@ -120,6 +120,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   String? _glass;
   final List<String> _garnish = [];
 
+  // Pickles-specific fields
+  String? _pickleMethod;
+
   bool get _isEditing => _existingRecipe != null;
 
   @override
@@ -233,6 +236,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _glass = recipe.glass;
       _garnish.clear();
       _garnish.addAll(recipe.garnish);
+      
+      // Load pickles-specific fields
+      _pickleMethod = recipe.pickleMethod;
     } else if (widget.ocrText != null) {
       // Pre-populate with OCR text for manual extraction
       _notesController.text = 'OCR Text:\n${widget.ocrText}';
@@ -1019,6 +1025,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
             ],
 
+            // Pickle Method (Pickles only)
+            if (_selectedCourse == 'pickles') ...[
+              const SizedBox(height: 16),
+              _buildPickleMethodSection(theme),
+            ],
+
             const SizedBox(height: 24),
 
             // Ingredients (3-column spreadsheet layout)
@@ -1437,6 +1449,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             .toList()
         ..glass = _selectedCourse == 'drinks' ? _glass : null
         ..garnish = _selectedCourse == 'drinks' ? _garnish : []
+        ..pickleMethod = _selectedCourse == 'pickles' ? _pickleMethod : null
         ..updatedAt = DateTime.now();
 
       // Save to database
@@ -2285,6 +2298,62 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       ],
     );
   }
+
+  /// Build Pickle Method section for pickles
+  Widget _buildPickleMethodSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Method',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Autocomplete<String>(
+          optionsBuilder: (value) {
+            final suggestions = _pickleMethodSuggestions.where(
+              (s) => s.toLowerCase().contains(value.text.toLowerCase()),
+            );
+            return suggestions;
+          },
+          initialValue: TextEditingValue(text: _pickleMethod ?? ''),
+          onSelected: (value) {
+            setState(() => _pickleMethod = value);
+          },
+          fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            return TextField(
+              controller: controller,
+              focusNode: focusNode,
+              decoration: const InputDecoration(
+                hintText: 'e.g., Quick Pickle, Fermentation',
+                border: OutlineInputBorder(),
+              ),
+              textCapitalization: TextCapitalization.words,
+              onChanged: (value) {
+                _pickleMethod = value.isEmpty ? null : value;
+              },
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  /// Common pickle methods for autocomplete
+  static const List<String> _pickleMethodSuggestions = [
+    'Quick Pickle',
+    'Refrigerator Pickle',
+    'Fermentation',
+    'Lacto-Fermentation',
+    'Brine',
+    'Vinegar Pickle',
+    'Salt Cure',
+    'Dry Brine',
+    'Water Bath Canning',
+    'Pressure Canning',
+  ];
 
   /// Common glass types for autocomplete
   static const List<String> _glassSuggestions = [

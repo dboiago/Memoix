@@ -118,6 +118,9 @@ class Recipe {
   /// Garnish list for drinks (e.g., ["Lemon twist", "Cherry"])
   List<String> garnish = [];
 
+  /// Pickle method for pickles (e.g., "Pickle", "Brine", "Fermentation")
+  String? pickleMethod;
+
   /// Convenience constructor
   Recipe();
 
@@ -230,7 +233,8 @@ class Recipe {
       ..garnish = (json['garnish'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
-          [];
+          []
+      ..pickleMethod = json['pickleMethod'] as String?;
 
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'] as String);
@@ -278,6 +282,7 @@ class Recipe {
       if (nutrition != null) 'nutrition': nutrition!.toJson(),
       if (glass != null) 'glass': glass,
       if (garnish.isNotEmpty) 'garnish': garnish,
+      if (pickleMethod != null) 'pickleMethod': pickleMethod,
     };
   }
 

@@ -246,6 +246,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
                         ),
+                      // Pickle method chip
+                      if (recipe.course == 'pickles' && recipe.pickleMethod != null && recipe.pickleMethod!.isNotEmpty)
+                        Chip(
+                          label: Text(recipe.pickleMethod!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                          visualDensity: VisualDensity.compact,
+                        ),
                       if (recipe.serves != null && recipe.serves!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
