@@ -246,12 +246,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
                         ),
-                      Chip(
-                        label: Text(Category.displayNameFromSlug(recipe.course)),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                        visualDensity: VisualDensity.compact,
-                      ),
                       if (recipe.serves != null && recipe.serves!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
