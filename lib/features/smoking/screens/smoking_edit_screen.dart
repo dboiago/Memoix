@@ -66,7 +66,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _woodController.text = recipe.wood;
       _notesController.text = recipe.notes ?? '';
       _servesController.text = recipe.serves ?? '';
-      _imagePath = recipe.imageUrl;
+      _imagePath = recipe.getFirstImage();
       _stepImages.addAll(recipe.stepImages);
 
       for (final seasoning in recipe.seasonings) {
@@ -101,7 +101,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _woodController.text = recipe.wood;
         _notesController.text = recipe.notes ?? '';
         _servesController.text = recipe.serves ?? '';
-        _imagePath = recipe.imageUrl;
+        _imagePath = recipe.getFirstImage();
         _stepImages.addAll(recipe.stepImages);
 
         for (final seasoning in recipe.seasonings) {
@@ -1293,7 +1293,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..notes = _notesController.text.trim().isEmpty
           ? null
           : _notesController.text.trim()
-      ..imageUrl = _imagePath
+      ..headerImage = _imagePath
       ..stepImages = _stepImages
       ..source = _existingRecipe?.source ?? SmokingSource.personal
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
