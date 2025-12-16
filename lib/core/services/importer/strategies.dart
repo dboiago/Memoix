@@ -1184,6 +1184,18 @@ class StandardWebStrategy implements RecipeParserStrategy {
     
     if (rawIngs.isEmpty && directions.isEmpty) return null;
     
+    // Quality check: If all ingredients are just single words or short names without 
+    // quantities (no numbers), the microdata is likely just a comma-separated list of 
+    // ingredient names from a meta tag. Fall through to HTML fallback for better data.
+    // e.g., "Honey", "Garlic", "Milk" instead of "2 cups milk", "1 clove garlic"
+    final hasQuantity = RegExp(r'\d');
+    final hasCompoundIngredient = rawIngs.any((ing) => 
+      hasQuantity.hasMatch(ing) || ing.split(RegExp(r'\s+')).length >= 3);
+    if (rawIngs.isNotEmpty && !hasCompoundIngredient && directions.isEmpty) {
+      // All ingredients are just names - microdata is low quality, fall through
+      return null;
+    }
+    
     // Time - check datetime and content attributes
     String? time;
     final totalTimeEl = recipeElement.querySelector('[itemprop="totalTime"]');
@@ -1312,12 +1324,16 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
     // 3. Try specific plugin selectors
     if (rawIngredientStrings.isEmpty) {
-      // Cooked plugin
+      // Cooked plugin (WordPress recipe plugin)
+      // Structure: .cooked-ing-amount (quantity) + .cooked-ing-measurement (unit) + .cooked-ing-name (ingredient)
       final cooked = document.querySelectorAll('.cooked-single-ingredient');
       if (cooked.isNotEmpty) {
-        rawIngredientStrings = cooked.map((e) => 
-          '${e.querySelector('.cooked-ing-amount')?.text ?? ""} ${e.querySelector('.cooked-ing-name')?.text ?? ""}'.trim()
-        ).where((s) => s.isNotEmpty).toList();
+        rawIngredientStrings = cooked.map((e) {
+          final amount = e.querySelector('.cooked-ing-amount')?.text.trim() ?? '';
+          final measurement = e.querySelector('.cooked-ing-measurement')?.text.trim() ?? '';
+          final name = e.querySelector('.cooked-ing-name')?.text.trim() ?? '';
+          return '$amount $measurement $name'.replaceAll(RegExp(r'\s+'), ' ').trim();
+        }).where((s) => s.isNotEmpty).toList();
       }
       
       // Tasty Recipes
@@ -1918,7 +1934,39 @@ class StandardWebStrategy implements RecipeParserStrategy {
       return results;
     }
     
-    // Strategy 3: Generic section/group containers
+    // Strategy 3: NYT Cooking (headers with ingredientgroup_name followed by sibling ul)
+    final nytHeaders = document.querySelectorAll('[class*="ingredientgroup_name"]');
+    if (nytHeaders.isNotEmpty) {
+      for (final header in nytHeaders) {
+        final headerText = header.text.trim();
+        if (headerText.isNotEmpty) results.add('[$headerText]');
+        // Find the next sibling ul
+        var sibling = header.nextElementSibling;
+        while (sibling != null) {
+          if (sibling.localName == 'ul') {
+            for (final li in sibling.querySelectorAll('li')) {
+              final text = li.text.trim();
+              if (text.isNotEmpty) results.add(text);
+            }
+            break;
+          }
+          sibling = sibling.nextElementSibling;
+        }
+      }
+      // Also capture any ingredients before the first header (common in some recipes)
+      final allIngLists = document.querySelectorAll('[class*="recipebody_ingredients"] ul');
+      if (allIngLists.isNotEmpty && results.isEmpty) {
+        for (final ul in allIngLists) {
+          for (final li in ul.querySelectorAll('li')) {
+            final text = li.text.trim();
+            if (text.isNotEmpty) results.add(text);
+          }
+        }
+      }
+      if (results.isNotEmpty) return results;
+    }
+    
+    // Strategy 4: Generic section/group containers
     for (final selector in ['.ingredient-section', '.ingredients__section']) {
       final sections = document.querySelectorAll(selector);
       if (sections.isNotEmpty) {
