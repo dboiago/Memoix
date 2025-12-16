@@ -628,19 +628,77 @@ class YouTubeStrategy implements RecipeParserStrategy {
       final lower = line.toLowerCase();
       
       // Extract time patterns like "Prep time: 15 min", "Cook time: 30 minutes", etc.
+      // Also handle bare numbers after time labels like "Prep: 15" (assumed minutes)
+      // Note: Order matters - more specific patterns should come before less specific ones
       final timePatterns = [
-        RegExp(r'(?:total\s*time|ready\s*in)[:\s]*(\d+\s*(?:hour|hr|h|minute|min|m)(?:s|\s*\d+\s*(?:minute|min|m)s?)?)', caseSensitive: false),
-        RegExp(r'(?:cook\s*time|cooking\s*time|bake\s*time)[:\s]*(\d+\s*(?:hour|hr|h|minute|min|m)(?:s|\s*\d+\s*(?:minute|min|m)s?)?)', caseSensitive: false),
-        RegExp(r'(?:prep\s*time|preparation\s*time)[:\s]*(\d+\s*(?:hour|hr|h|minute|min|m)(?:s|\s*\d+\s*(?:minute|min|m)s?)?)', caseSensitive: false),
+        // Total time patterns (most specific first)
+        (
+          'totalTime', 
+          RegExp(r'(?:total\s*time|ready\s*in)[:\s]*(\d+)\s*(?:hour|hr|h)s?(?:\s+(?:and\s+)?(\d+)\s*(?:minute|min|m)s?)?', caseSensitive: false)
+        ),
+        (
+          'totalTime', 
+          RegExp(r'(?:total\s*time|ready\s*in)[:\s]*(\d+)\s*(?:minute|min|m)s?', caseSensitive: false)
+        ),
+        (
+          'totalTime', 
+          RegExp(r'(?:total\s*time|ready\s*in)[:\s]*(\d+)\s*$', caseSensitive: false) // Bare number = minutes
+        ),
+        // Cook time patterns
+        (
+          'cookTime', 
+          RegExp(r'(?:cook(?:ing)?\s*time|bake\s*time)[:\s]*(\d+)\s*(?:hour|hr|h)s?(?:\s+(?:and\s+)?(\d+)\s*(?:minute|min|m)s?)?', caseSensitive: false)
+        ),
+        (
+          'cookTime', 
+          RegExp(r'(?:cook(?:ing)?\s*time|bake\s*time)[:\s]*(\d+)\s*(?:minute|min|m)s?', caseSensitive: false)
+        ),
+        (
+          'cookTime', 
+          RegExp(r'(?:cook(?:ing)?\s*time|bake\s*time)[:\s]*(\d+)\s*$', caseSensitive: false) // Bare number = minutes
+        ),
+        // Prep time patterns
+        (
+          'prepTime', 
+          RegExp(r'(?:prep(?:aration)?\s*time)[:\s]*(\d+)\s*(?:hour|hr|h)s?(?:\s+(?:and\s+)?(\d+)\s*(?:minute|min|m)s?)?', caseSensitive: false)
+        ),
+        (
+          'prepTime', 
+          RegExp(r'(?:prep(?:aration)?\s*time)[:\s]*(\d+)\s*(?:minute|min|m)s?', caseSensitive: false)
+        ),
+        (
+          'prepTime', 
+          RegExp(r'(?:prep(?:aration)?\s*time)[:\s]*(\d+)\s*$', caseSensitive: false) // Bare number = minutes
+        ),
       ];
       
-      for (var i = 0; i < timePatterns.length; i++) {
-        final match = timePatterns[i].firstMatch(line);
+      for (final (timeType, pattern) in timePatterns) {
+        if (result[timeType] != null) continue; // Already found this time type
+        
+        final match = pattern.firstMatch(line);
         if (match != null) {
-          final timeValue = _normalizeTimeString(match.group(1) ?? '');
-          if (i == 0 && result['totalTime'] == null) result['totalTime'] = timeValue;
-          if (i == 1 && result['cookTime'] == null) result['cookTime'] = timeValue;
-          if (i == 2 && result['prepTime'] == null) result['prepTime'] = timeValue;
+          // Check if this is an hour+minute pattern (group 2 would have minutes)
+          if (match.groupCount >= 2 && match.group(2) != null) {
+            // Hour + minutes format
+            final hours = int.tryParse(match.group(1) ?? '0') ?? 0;
+            final minutes = int.tryParse(match.group(2) ?? '0') ?? 0;
+            if (hours > 0 || minutes > 0) {
+              result[timeType] = hours > 0 
+                  ? (minutes > 0 ? '${hours}h ${minutes}m' : '${hours}h')
+                  : '${minutes} min';
+            }
+          } else {
+            // Single value (either hours, minutes, or bare number = assumed minutes)
+            final timeValue = _normalizeTimeString(match.group(1) ?? '');
+            if (timeValue.isNotEmpty) {
+              // If it's just a number without unit, assume minutes
+              if (RegExp(r'^\d+$').hasMatch(timeValue)) {
+                result[timeType] = '$timeValue min';
+              } else {
+                result[timeType] = timeValue;
+              }
+            }
+          }
         }
       }
       
@@ -908,12 +966,15 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final ingredients = _ingParser.parseList(rawIngs);
     
     // Extract other fields
-    final serves = _parseString(data['recipeYield'] ?? data['yield'] ?? data['serves'] ?? data['yieldTextOverride']);
+    // Check multiple field names for serves/yield (GBC uses yieldTextOverride, servesTextOverride)
+    final serves = _parseString(data['serves'] ?? data['recipeYield'] ?? data['yield'] ?? 
+                                data['yieldTextOverride'] ?? data['servesTextOverride']);
     final time = _parseTime(data);
     final imageUrl = _parseImage(data['image']);
     // Strip HTML from description (some sites like Saveur have HTML in description)
-    final rawDescription = _parseString(data['description']);
-    final description = rawDescription != null ? _stripHtml(rawDescription) : null;
+    // Also handle 'notes' field that some sites use instead of description
+    final rawDescription = _parseString(data['description'] ?? data['notes']);
+    final description = rawDescription != null ? _stripHtml(rawDescription).trim() : null;
     final cuisine = _parseString(data['recipeCuisine'] ?? data['cuisine']);
     final course = _guessCourse(data, url);
     
@@ -1421,24 +1482,59 @@ class StandardWebStrategy implements RecipeParserStrategy {
       }
     }
     
-    // Try section-based parsing (H2/H3 "Ingredients" followed by list)
-    for (final heading in document.querySelectorAll('h2, h3')) {
+    // Try section-based parsing (H2/H3/H4/H5 "Ingredients" followed by list)
+    for (final heading in document.querySelectorAll('h2, h3, h4, h5, h6')) {
       final headingText = heading.text.trim().toLowerCase();
       // Also check ID attribute for sites like Modernist Pantry that use id="ingredients"
       final headingId = heading.attributes['id']?.toLowerCase() ?? '';
-      if (headingText.contains('ingredient') || headingId.contains('ingredient')) {
+      if (headingText.contains('ingredient') || headingId.contains('ingredient') ||
+          headingText == 'ingredients') {
         var sibling = heading.nextElementSibling;
-        while (sibling != null && sibling.localName != 'h2' && sibling.localName != 'h3') {
+        int attempts = 0;
+        while (sibling != null && attempts < 15) {
+          final siblingTag = sibling.localName ?? '';
+          // Stop at another heading of same or higher level
+          if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].contains(siblingTag)) {
+            final sibText = sibling.text.toLowerCase();
+            // Stop if it's a different section
+            if (sibText.contains('direction') || sibText.contains('method') ||
+                sibText.contains('instruction') || sibText.contains('equipment')) {
+              break;
+            }
+          }
+          
           if (sibling.localName == 'ul' || sibling.localName == 'ol') {
             for (final li in sibling.querySelectorAll('li')) {
               // Extract text from span if present (Modernist Pantry uses <li><span>...</span></li>)
               final spanText = li.querySelector('span')?.text.trim();
               final text = _ingParser.decodeHtml(spanText ?? li.text.trim());
               // Skip section headers (bold text like "Ingredients Black Garlic Honey:")
-              if (text.isNotEmpty && !text.endsWith(':')) results.add(text);
+              if (text.isNotEmpty && !text.endsWith(':') && text.length >= 3) {
+                // Skip hidden elements
+                final style = li.attributes['style'] ?? '';
+                if (!style.contains('display:none')) {
+                  results.add(text);
+                }
+              }
             }
           }
+          
+          // Also check for p/div that contain ingredient lines
+          if ((sibling.localName == 'p' || sibling.localName == 'div')) {
+            final sibText = sibling.text.trim();
+            if (sibText.isNotEmpty && sibText.length <= 200 && _couldBeIngredientLine(sibText)) {
+              // Split by newlines
+              for (final line in sibText.split(RegExp(r'\n+'))) {
+                final trimmed = _ingParser.decodeHtml(line.trim());
+                if (trimmed.isNotEmpty && trimmed.length >= 3 && _couldBeIngredientLine(trimmed)) {
+                  results.add(trimmed);
+                }
+              }
+            }
+          }
+          
           sibling = sibling.nextElementSibling;
+          attempts++;
         }
         if (results.isNotEmpty) return results;
       }
@@ -1721,29 +1817,44 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   List<String> _parseIngredientsBySections(Document document) {
     final ingredients = <String>[];
-    // Include h5 for sites like Punch Drink
-    final headings = document.querySelectorAll('h2, h3, h4, h5');
+    // Include h5 and h6 for sites like Punch Drink that use h5 headings
+    final headings = document.querySelectorAll('h2, h3, h4, h5, h6');
     
     for (final heading in headings) {
-      final text = heading.text.toLowerCase();
-      if (text.contains('ingredient')) {
+      final text = heading.text.toLowerCase().trim();
+      if (text.contains('ingredient') || text == 'ingredients') {
         var sibling = heading.nextElementSibling;
         int attempts = 0;
-        while (sibling != null && attempts < 10) {
+        while (sibling != null && attempts < 15) { // Increased attempts
           // Stop at next major heading (ingredients section ended)
-          if (sibling.localName == 'h1' || sibling.localName == 'h2' || 
-              sibling.localName == 'h3' || sibling.localName == 'h4' || sibling.localName == 'h5') {
+          final siblingTag = sibling.localName ?? '';
+          if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].contains(siblingTag)) {
             final siblingHeading = sibling.text.toLowerCase();
             if (siblingHeading.contains('direction') || siblingHeading.contains('method') || 
                 siblingHeading.contains('instruction') || siblingHeading.contains('step') ||
-                siblingHeading.contains('note') || siblingHeading.contains('garnish')) {
+                siblingHeading.contains('note') || siblingHeading.contains('garnish') ||
+                siblingHeading.contains('equipment') || siblingHeading.contains('glass')) {
               break; // Stop - we've hit the next section
+            }
+            // Could be an ingredient sub-section header - add as section header
+            if (!siblingHeading.contains('ingredient')) {
+              // It's a different section, stop
+              break;
             }
           }
           
           if (sibling.localName == 'ul' || sibling.localName == 'ol') {
-            ingredients.addAll(sibling.querySelectorAll('li').map((e) => e.text.trim()).where((s) => s.isNotEmpty));
-            break;
+            for (final li in sibling.querySelectorAll('li')) {
+              final liText = li.text.trim();
+              if (liText.isNotEmpty) {
+                // Skip hidden elements
+                final style = li.attributes['style'] ?? '';
+                if (!style.contains('display:none') && !style.contains('display: none')) {
+                  ingredients.add(_ingParser.decodeHtml(liText));
+                }
+              }
+            }
+            // Don't break - there might be more lists
           }
           
           // Check for bullet-point text (e.g., "• 200g Sugar • 100g Flour")
@@ -1756,18 +1867,19 @@ class StandardWebStrategy implements RecipeParserStrategy {
                 ingredients.add(part);
               }
             }
-            if (ingredients.isNotEmpty) break;
           }
           
           // Check if this sibling element itself is an ingredient line (cocktail sites like Punch Drink)
           // Punch Drink uses individual <p> or <div> elements for each ingredient line
           if ((sibling.localName == 'p' || sibling.localName == 'div') && 
-              siblingText.isNotEmpty && siblingText.length <= 150) {
+              siblingText.isNotEmpty && siblingText.length <= 200) {
             // Split by newlines in case multiple ingredients are in one element
             final lines = siblingText.split(RegExp(r'\n+'));
             for (final line in lines) {
               final trimmed = line.trim();
-              if (trimmed.isNotEmpty && (_couldBeIngredientLine(trimmed) || _looksLikeCocktailIngredient(trimmed))) {
+              if (trimmed.isNotEmpty && 
+                  trimmed.length >= 3 && trimmed.length <= 150 &&
+                  (_couldBeIngredientLine(trimmed) || _looksLikeCocktailIngredient(trimmed))) {
                 ingredients.add(_ingParser.decodeHtml(trimmed));
               } else if (trimmed.toLowerCase().startsWith('garnish:')) {
                 // Garnish line - also add it
@@ -1776,25 +1888,28 @@ class StandardWebStrategy implements RecipeParserStrategy {
             }
           }
           
-          // Check if the sibling is a container with p/div/span children
-          final divIngredients = sibling.querySelectorAll('p, div, span');
-          if (divIngredients.isNotEmpty) {
-            for (final el in divIngredients) {
-              final elText = el.text.trim();
-              // Check for bullet text inside child elements
-              if (elText.contains('•')) {
-                final parts = elText.split('•');
-                for (var part in parts) {
-                  part = _ingParser.decodeHtml(part.trim());
-                  if (part.isNotEmpty && part.length >= 5 && part.length <= 150 && _couldBeIngredientLine(part)) {
-                    ingredients.add(part);
+          // Check if the sibling is a container with p/div/span children that might have individual ingredients
+          if (sibling.localName == 'div' && sibling.children.isNotEmpty) {
+            for (final child in sibling.children) {
+              if (child.localName == 'p' || child.localName == 'div' || child.localName == 'span') {
+                final childText = child.text.trim();
+                // Check for bullet text inside child elements
+                if (childText.contains('•')) {
+                  final parts = childText.split('•');
+                  for (var part in parts) {
+                    part = _ingParser.decodeHtml(part.trim());
+                    if (part.isNotEmpty && part.length >= 5 && part.length <= 150 && _couldBeIngredientLine(part)) {
+                      ingredients.add(part);
+                    }
                   }
+                } else if (childText.isNotEmpty && childText.length <= 150 && 
+                          (_couldBeIngredientLine(childText) || _looksLikeCocktailIngredient(childText))) {
+                  ingredients.add(_ingParser.decodeHtml(childText));
                 }
-              } else if (_couldBeIngredientLine(elText) || _looksLikeCocktailIngredient(elText)) {
-                ingredients.add(elText);
               }
             }
           }
+          
           sibling = sibling.nextElementSibling;
           attempts++;
         }
@@ -1814,30 +1929,53 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   List<String> _parseDirectionsBySections(Document document) {
     final directions = <String>[];
-    // Include h5 for sites like Punch Drink
-    final headings = document.querySelectorAll('h2, h3, h4, h5');
+    // Include h5 and h6 for sites like Punch Drink that use h5 headings
+    final headings = document.querySelectorAll('h2, h3, h4, h5, h6');
     
     for (final heading in headings) {
-      final text = heading.text.toLowerCase();
-      if (text.contains('direction') || text.contains('instruction') || text.contains('method') || text.contains('step')) {
+      final text = heading.text.toLowerCase().trim();
+      if (text.contains('direction') || text.contains('instruction') || 
+          text.contains('method') || text.contains('step') || text == 'preparation') {
         var sibling = heading.nextElementSibling;
         int attempts = 0;
-        while (sibling != null && attempts < 10) {
+        while (sibling != null && attempts < 15) { // Increased attempts
+          // Stop at next major heading (different section)
+          final siblingTag = sibling.localName ?? '';
+          if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].contains(siblingTag)) {
+            final siblingHeading = sibling.text.toLowerCase();
+            // Stop at completely different sections
+            if (siblingHeading.contains('ingredient') || 
+                siblingHeading.contains('equipment') ||
+                siblingHeading.contains('nutrition') ||
+                siblingHeading.contains('note') && !siblingHeading.contains('step')) {
+              break;
+            }
+          }
+          
           if (sibling.localName == 'ul' || sibling.localName == 'ol') {
-            directions.addAll(sibling.querySelectorAll('li').map((e) => _cleanDirectionStep(e.text.trim())).where((s) => s.isNotEmpty));
-            break;
+            for (final li in sibling.querySelectorAll('li')) {
+              final step = _cleanDirectionStep(li.text.trim());
+              if (step.isNotEmpty && step.length > 10) {
+                directions.add(step);
+              }
+            }
+            // Don't break immediately - there might be more steps in additional lists
           } else if (sibling.localName == 'p' || sibling.localName == 'div') {
             final elText = sibling.text.trim();
-            // Check if this is a numbered step (e.g., "1Add all ingredients...")
-            final numberedMatch = RegExp(r'^(\d+)([A-Z])').firstMatch(elText);
+            // Check if this is a numbered step (e.g., "1Add all ingredients..." or "1. Add...")
+            // Handle both stuck-together and spaced formats
+            final numberedMatch = RegExp(r'^(\d+)\.?\s*(.*)$').firstMatch(elText);
             if (numberedMatch != null) {
-              // Split apart the number and text
-              final stepText = elText.substring(1).trim();
-              if (stepText.isNotEmpty) {
+              final stepText = numberedMatch.group(2)?.trim() ?? elText;
+              if (stepText.isNotEmpty && stepText.length > 10) {
                 directions.add(_cleanDirectionStep(stepText));
               }
-            } else if (elText.isNotEmpty && elText.length > 10) {
-              directions.add(_cleanDirectionStep(elText));
+            } else if (elText.length > 20 && !elText.contains('http')) {
+              // Regular paragraph that looks like an instruction
+              final step = _cleanDirectionStep(elText);
+              if (step.isNotEmpty && step.length > 10) {
+                directions.add(step);
+              }
             }
           }
           sibling = sibling.nextElementSibling;
@@ -2228,8 +2366,10 @@ class StandardWebStrategy implements RecipeParserStrategy {
     
     // For Next.js sites (like Seedlip), extract HTML from dangerouslySetInnerHTML payloads
     // Pattern: "dangerouslySetInnerHTML":{"__html":"<h2>Ingredients</h2>..."}
+    // The content may contain escaped quotes (\"), so we need a more careful pattern
+    // Match: "dangerouslySetInnerHTML":{"__html":"..."} allowing escaped quotes inside
     final dangerouslyMatches = RegExp(
-      r'"dangerouslySetInnerHTML":\s*\{\s*"__html"\s*:\s*"([^"]+)"',
+      r'"dangerouslySetInnerHTML"\s*:\s*\{\s*"__html"\s*:\s*"((?:[^"\\]|\\.)*)"',
       caseSensitive: false,
     ).allMatches(bodyHtml);
     
@@ -2512,8 +2652,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
   /// Clean section header - remove trailing colons and common prefixes
   String _cleanSectionHeader(String header) {
     var cleaned = header.trim();
-    // Remove trailing colon
-    if (cleaned.endsWith(':')) {
+    // Remove trailing colon(s)
+    while (cleaned.endsWith(':')) {
       cleaned = cleaned.substring(0, cleaned.length - 1).trim();
     }
     // Remove common prefixes
@@ -2688,16 +2828,26 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   /// Strip HTML tags from a string and decode HTML entities
   String _stripHtml(String html) {
-    return html
+    var result = html
         .replaceAll(RegExp(r'<[^>]+>'), '') // Remove HTML tags
         .replaceAll(RegExp(r'&nbsp;'), ' ')
         .replaceAll(RegExp(r'&amp;'), '&')
         .replaceAll(RegExp(r'&lt;'), '<')
         .replaceAll(RegExp(r'&gt;'), '>')
         .replaceAll(RegExp(r'&quot;'), '"')
-        .replaceAll(RegExp(r'&#39;|&apos;'), "'")
-        .replaceAll(RegExp(r'\s+'), ' ')
-        .trim();
+        .replaceAll(RegExp(r'&#39;|&apos;'), "'");
+    
+    // Decode numeric HTML entities
+    result = result.replaceAllMapped(RegExp(r'&#(\d+);'), (m) {
+      final code = int.tryParse(m.group(1) ?? '');
+      return code != null ? String.fromCharCode(code) : m.group(0)!;
+    });
+    result = result.replaceAllMapped(RegExp(r'&#x([0-9a-fA-F]+);'), (m) {
+      final code = int.tryParse(m.group(1) ?? '', radix: 16);
+      return code != null ? String.fromCharCode(code) : m.group(0)!;
+    });
+    
+    return result.replaceAll(RegExp(r'\s+'), ' ').trim();
   }
 
   String? _parseImage(dynamic data) {
