@@ -21,6 +21,7 @@
 * **Domain Data (Cuisines, Courses, Tags):** Use **`MemoixColors`** from `lib/app/theme/colors.dart`.
     * *Example:* `MemoixColors.forCuisine('Korean')` or `MemoixColors.spiritGin`.
     * *Never* hardcode hex values or standard `Colors.blue`.
+* **FilterChip Pattern:** FilterChips are UI elements - use `theme.colorScheme.secondary` for `selectedColor`, `side`, and `labelStyle`. To show domain color, add an `avatar` with a colored dot using `MemoixColors`. See `smoking_list_screen.dart` for reference.
 
 ### 2.3 Code Efficiency
 * **Search First:** Before writing a helper, search the codebase.
