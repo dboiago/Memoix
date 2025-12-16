@@ -244,6 +244,32 @@ class UrlRecipeImporter {
     'lyres.com',             // Non-alcoholic spirit brand - Shopify site
   ];
 
+  /// Known BBQ/Smoking recipe sites
+  /// URLs containing these domains should default to 'Smoking' course
+  /// Similar pattern to _cocktailSites for drinks
+  static const _bbqSites = [
+    'amazingribs.com',       // Premier BBQ science and recipes
+    'smokingmeatforums.com', // BBQ community forum
+    'virtualweberbullet.com',// Weber smoker community
+    'bbqu.net',              // BBQ University
+    'thermoworks.com',       // Thermometer company with BBQ recipes
+    'traeger.com',           // Pellet grill manufacturer
+    'weber.com',             // Grill manufacturer
+    'charbroil.com',         // Grill manufacturer
+    'bbqguys.com',           // BBQ equipment and recipes
+    'heygrillhey.com',       // BBQ blog
+    'smokedbbqsource.com',   // BBQ recipes and guides
+    'meatchurch.com',        // BBQ rubs and recipes
+    'malcomsbbq.com',        // BBQ competition champion
+    'bradleysmoker.com',     // Smoker manufacturer
+    'pitboss-grills.com',    // Pellet grill manufacturer
+    'masterbuilt.com',       // Smoker manufacturer
+    'kamadojoe.com',         // Kamado grill manufacturer
+    'biggreenegg.com',       // Kamado grill manufacturer
+    'recteq.com',            // Pellet grill manufacturer
+    'oklahomajoes.com',      // Smoker manufacturer
+  ];
+
   /// Consolidated course detection keywords
   /// Each course maps to a list of keywords that indicate that course type
   /// Keywords are matched as word boundaries (\b) in lowercase text
@@ -1663,11 +1689,17 @@ class UrlRecipeImporter {
     required String urlLower,
     required List<String> ingredientStrings,
     required bool isCocktailSite,
+    bool isBBQSite = false,
     dynamic document, // Optional for modernist detection
   }) {
     // Priority 1: Known cocktail site (highest confidence)
     if (isCocktailSite) {
       return (course: 'Drinks', confidence: 0.95);
+    }
+    
+    // Priority 1b: Known BBQ/smoking site (highest confidence)
+    if (isBBQSite) {
+      return (course: 'Smoking', confidence: 0.95);
     }
     
     // Priority 2: Drinks detection (ingredient-aware) - check before generic text matching
@@ -4726,6 +4758,12 @@ class UrlRecipeImporter {
     return _cocktailSites.any((site) => lower.contains(site));
   }
 
+  /// Check if a URL is from a known BBQ/smoking site
+  bool _isBBQSite(String url) {
+    final lower = url.toLowerCase();
+    return _bbqSites.any((site) => lower.contains(site));
+  }
+
   /// Detect the course, with special handling for drinks/cocktails
   String _guessCourse(Map data, {String? sourceUrl}) {
     var category = _parseString(data['recipeCategory'])?.toLowerCase();
@@ -5954,6 +5992,7 @@ class UrlRecipeImporter {
 
     // Detect if this is a drink based on URL and content
     final isCocktailSite = _isCocktailSite(sourceUrl);
+    final isBBQSite = _isBBQSite(sourceUrl);
     
     // Detect course using unified function (handles text-based and ingredient-aware detection)
     final titleLower = (title ?? '').toLowerCase();
@@ -5964,6 +6003,7 @@ class UrlRecipeImporter {
       urlLower: urlLower,
       ingredientStrings: rawIngredientStrings,
       isCocktailSite: isCocktailSite,
+      isBBQSite: isBBQSite,
       document: document,
     );
     final course = courseResult.course;
@@ -5986,11 +6026,22 @@ class UrlRecipeImporter {
     // Filter out empty or whitespace-only ingredient strings before processing
     // Also filter out strings that are just punctuation or control characters
     // And deduplicate ingredients (some sites like Saveur return duplicates)
+    // Also filter out UI/interactive element garbage (Weber's "Completed step N" checkboxes)
     final seenIngredients = <String>{};
     final filteredIngredientStrings = <String>[];
+    final uiGarbagePatterns = [
+      RegExp(r'Completed\s+step', caseSensitive: false),  // Weber checkbox labels
+      RegExp(r'^step\s+\d+$', caseSensitive: false),       // Standalone "Step 1", "Step 2"
+      RegExp(r'^save\s+recipe', caseSensitive: false),     // Save buttons
+      RegExp(r'^print\s+recipe', caseSensitive: false),    // Print buttons
+      RegExp(r'^share\s+recipe', caseSensitive: false),    // Share buttons
+      RegExp(r'^\d+\s*(?:min(?:ute)?s?|hrs?|hours?)$', caseSensitive: false), // Standalone time labels
+    ];
     for (final s in rawIngredientStrings) {
       final trimmed = s.trim();
       if (trimmed.isEmpty || !RegExp(r'[a-zA-Z0-9]').hasMatch(trimmed)) continue;
+      // Skip UI garbage patterns
+      if (uiGarbagePatterns.any((p) => p.hasMatch(trimmed))) continue;
       // Normalize for comparison (lowercase, collapse whitespace)
       final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
       if (seenIngredients.contains(normalizedKey)) continue;
