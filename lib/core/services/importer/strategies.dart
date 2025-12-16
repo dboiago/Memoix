@@ -1280,9 +1280,26 @@ class StandardWebStrategy implements RecipeParserStrategy {
         // Use detailed HTML ingredients instead of poor microdata
         rawIngs.clear();
         rawIngs.addAll(htmlIngredients);
+        
+        // If microdata had no directions, the HTML fallback can do a better job
+        // since it also extracts directions. Return null to use full HTML parsing.
+        if (directions.isEmpty) {
+          return null;
+        }
       } else if (!hasQuantities && directions.isEmpty) {
         // No quantities in either source, no directions - fall through to HTML fallback
         return null;
+      }
+    }
+    
+    // Also return null if we have ingredients but no directions
+    // This lets HTML fallback extract both properly
+    if (directions.isEmpty && rawIngs.isNotEmpty) {
+      // Check if this site might have directions in HTML that we're missing
+      final hasHtmlDirections = _parseDirectionsBySections(document).isNotEmpty ||
+                                 _extractModernistPantryDirections(document).isNotEmpty;
+      if (hasHtmlDirections) {
+        return null; // Let HTML fallback handle this
       }
     }
     
