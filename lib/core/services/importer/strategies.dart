@@ -119,6 +119,12 @@ const _siteConfigs = <String, SiteConfig>{
     ingredientSelector: 'li, .recipe-ingred_txt, .ingredient-item',
     mode: ExtractionMode.mixedList,
   ),
+  // Punch Drink - cocktail recipes with .ingredients-list class
+  'punchdrink': SiteConfig(
+    containerSelector: '.ingredients-list',
+    ingredientSelector: 'li:not([style*="display:none"])',
+    mode: ExtractionMode.mixedList,
+  ),
   // Schema.org microdata format
   'microdata': SiteConfig(
     containerSelector: '[itemtype*="Recipe"]',
@@ -856,8 +862,10 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final name = _parseString(data['name'] ?? data['title'] ?? data['recipeName']);
     if (name == null || name.isEmpty) return null;
     
-    // Extract ingredients with section support
-    final rawIngs = _extractRawIngredients(data['recipeIngredient'] ?? data['ingredients']);
+    // Extract ingredients with section support (including Tasty.co ingredient_sections)
+    final rawIngs = _extractRawIngredients(
+      data['recipeIngredient'] ?? data['ingredients'] ?? data['ingredient_sections']
+    );
     
     // Extract directions
     final rawDirs = _extractDirections(data['recipeInstructions'] ?? data['instructions'] ?? data['directions'] ?? data['steps']);
@@ -920,32 +928,75 @@ class StandardWebStrategy implements RecipeParserStrategy {
         if (item is String) {
           results.add(item);
         } else if (item is Map) {
-          // Handle sectioned ingredients (WordPress ACF, Great British Chefs, etc.)
-          // Format: {groupName: "Sauce", items: [...]} or {section: "Sauce", ingredients: [...]}
-          final sectionName = item['groupName'] ?? item['section'] ?? item['title'];
+          // Handle sectioned ingredients (WordPress ACF, Great British Chefs, Tasty.co, etc.)
+          // Tasty.co format: {name: "Birria", ingredients: [{name: "salt", primary_unit: {quantity: "1/4", display: "cup"}, ...}, ...]}
+          // Other formats: {groupName: "Sauce", items: [...]} or {section: "Sauce", ingredients: [...]}
+          final sectionName = item['groupName'] ?? item['section'] ?? item['title'] ?? 
+                             (item.containsKey('ingredients') && item.containsKey('name') ? item['name'] : null);
           final sectionItems = item['items'] ?? item['ingredients'] ?? item['unstructuredTextMetric'];
           
-          if (sectionName != null && sectionItems != null) {
-            // Clean section header (remove trailing colons)
+          if (sectionName != null && sectionItems != null && sectionItems is List) {
+            // This is a section with grouped ingredients
             results.add('[${_cleanSectionHeader(sectionName.toString())}]');
-            if (sectionItems is List) {
-              for (final si in sectionItems) {
-                final text = si is String ? si : (si is Map ? (si['text'] ?? si['name'] ?? si['unstructuredTextMetric']) : si.toString());
-                if (text != null) results.add(text.toString());
-              }
-            } else if (sectionItems is String) {
-              results.add(sectionItems);
+            for (final si in sectionItems) {
+              final ingText = _formatIngredientItem(si);
+              if (ingText != null && ingText.isNotEmpty) results.add(ingText);
             }
+          } else if (sectionItems != null && sectionItems is String) {
+            results.add(sectionItems);
           } else {
-            // Regular ingredient object
-            final text = item['text'] ?? item['name'] ?? item['unstructuredTextMetric'];
-            if (text != null) results.add(text.toString());
+            // Regular ingredient object (not a section)
+            final ingText = _formatIngredientItem(item);
+            if (ingText != null && ingText.isNotEmpty) results.add(ingText);
           }
         }
       }
       return results;
     }
     return [];
+  }
+  
+  /// Format a single ingredient item from various object formats
+  String? _formatIngredientItem(dynamic item) {
+    if (item is String) return item;
+    if (item is! Map) return item?.toString();
+    
+    // Tasty.co format: {name: "salt", primary_unit: {quantity: "1/4", display: "cup"}, metric_unit: {...}, extra_comment: "plus 1 tbsp"}
+    if (item.containsKey('primary_unit') || item.containsKey('metric_unit')) {
+      final buffer = StringBuffer();
+      
+      // Get quantity and unit from primary_unit
+      final primaryUnit = item['primary_unit'];
+      if (primaryUnit is Map) {
+        final qty = primaryUnit['quantity'];
+        final unit = primaryUnit['display'];
+        if (qty != null) buffer.write(qty);
+        if (unit != null) {
+          if (buffer.isNotEmpty) buffer.write(' ');
+          buffer.write(unit);
+        }
+      }
+      
+      // Add ingredient name
+      final name = item['name'];
+      if (name != null) {
+        if (buffer.isNotEmpty) buffer.write(' ');
+        buffer.write(name);
+      }
+      
+      // Add extra comment (e.g., "plus 1 tablespoon")
+      final extra = item['extra_comment'];
+      if (extra != null && extra.toString().isNotEmpty) {
+        buffer.write(', ');
+        buffer.write(extra);
+      }
+      
+      return buffer.toString();
+    }
+    
+    // Standard formats: {text: "..."} or {name: "..."}
+    final text = item['text'] ?? item['name'] ?? item['unstructuredTextMetric'];
+    return text?.toString();
   }
 
   /// Extract directions, handling HowToStep, HowToSection, etc.
@@ -966,9 +1017,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
             if (sectionName != null) results.add('**$sectionName**');
             results.addAll(_extractDirections(item['itemListElement']));
           }
-          // HowToStep
+          // HowToStep (standard) or Tasty.co format (display_text)
           else {
-            final text = item['text'] ?? item['name'];
+            final text = item['text'] ?? item['display_text'] ?? item['name'];
             if (text != null) results.add(_cleanDirectionStep(text.toString()));
           }
         }
@@ -1065,8 +1116,13 @@ class StandardWebStrategy implements RecipeParserStrategy {
   bool _looksLikeRecipe(Map<String, dynamic> data) {
     final hasName = data.containsKey('name') || data.containsKey('title') || data.containsKey('recipeName');
     if (!hasName) return false;
-    final hasIngredients = data.containsKey('recipeIngredient') || data.containsKey('ingredients');
-    final hasInstructions = data.containsKey('recipeInstructions') || data.containsKey('instructions') || data.containsKey('directions');
+    // Check for various ingredient formats (standard, Tasty.co sections, etc.)
+    final hasIngredients = data.containsKey('recipeIngredient') || 
+                           data.containsKey('ingredients') ||
+                           data.containsKey('ingredient_sections');
+    final hasInstructions = data.containsKey('recipeInstructions') || 
+                            data.containsKey('instructions') || 
+                            data.containsKey('directions');
     return hasIngredients || hasInstructions;
   }
 
@@ -1270,9 +1326,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
         if (tasty.isNotEmpty) rawIngredientStrings = tasty.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
       }
       
-      // Generic selectors
+      // Generic selectors - including .ingredients-list for Punch Drink, etc.
       if (rawIngredientStrings.isEmpty) {
-        final generic = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .ingredient-item, [itemprop="recipeIngredient"]');
+        final generic = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .ingredient-item, .ingredients-list li:not([style*="display:none"]), [itemprop="recipeIngredient"]:not([style*="display:none"])');
         if (generic.isNotEmpty) rawIngredientStrings = generic.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
       }
     }
