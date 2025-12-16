@@ -1184,16 +1184,25 @@ class StandardWebStrategy implements RecipeParserStrategy {
     
     if (rawIngs.isEmpty && directions.isEmpty) return null;
     
-    // Quality check: If all ingredients are just single words or short names without 
-    // quantities (no numbers), the microdata is likely just a comma-separated list of 
-    // ingredient names from a meta tag. Fall through to HTML fallback for better data.
-    // e.g., "Honey", "Garlic", "Milk" instead of "2 cups milk", "1 clove garlic"
-    final hasQuantity = RegExp(r'\d');
-    final hasCompoundIngredient = rawIngs.any((ing) => 
-      hasQuantity.hasMatch(ing) || ing.split(RegExp(r'\s+')).length >= 3);
-    if (rawIngs.isNotEmpty && !hasCompoundIngredient && directions.isEmpty) {
-      // All ingredients are just names - microdata is low quality, fall through
-      return null;
+    // Quality check: If ingredients are just single words or short names without quantities
+    // (from meta content), try to find better detailed ingredients from HTML structure.
+    // Pattern: \d for numbers, or measurement units like cup, tbsp, g, ml, oz
+    final quantityPattern = RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml|lb|pound)', caseSensitive: false);
+    final hasQuantities = rawIngs.any((item) => quantityPattern.hasMatch(item));
+    
+    if (!hasQuantities && rawIngs.isNotEmpty) {
+      // Try to find detailed ingredients from HTML structure
+      final htmlIngredients = _parseHtmlIngredientsFallback(document);
+      final htmlHasQuantities = htmlIngredients.any((item) => quantityPattern.hasMatch(item));
+      
+      if (htmlHasQuantities && htmlIngredients.length >= rawIngs.length) {
+        // Use detailed HTML ingredients instead of poor microdata
+        rawIngs.clear();
+        rawIngs.addAll(htmlIngredients);
+      } else if (!hasQuantities && directions.isEmpty) {
+        // No quantities in either source, no directions - fall through to HTML fallback
+        return null;
+      }
     }
     
     // Time - check datetime and content attributes
@@ -1276,6 +1285,53 @@ class StandardWebStrategy implements RecipeParserStrategy {
 
   // ========== HTML Parsing with Site Configs ==========
   
+  /// Lightweight HTML ingredient extraction for enhancing poor microdata.
+  /// This is a simpler version of _parseHtmlFallback that only gets ingredients.
+  List<String> _parseHtmlIngredientsFallback(Document document) {
+    final results = <String>[];
+    
+    // Try common ingredient selectors
+    final selectors = [
+      '.ingredient-list li',
+      '.ingredients li',
+      '.recipe-ingredients li',
+      'ul.ingredients li',
+      '.wprm-recipe-ingredient',
+      '.tasty-recipes-ingredients li',
+    ];
+    
+    for (final selector in selectors) {
+      final elements = document.querySelectorAll(selector);
+      if (elements.isNotEmpty) {
+        for (final e in elements) {
+          final text = _ingParser.decodeHtml(e.text.trim());
+          if (text.isNotEmpty) results.add(text);
+        }
+        if (results.isNotEmpty) return results;
+      }
+    }
+    
+    // Try section-based parsing (H2/H3 "Ingredients" followed by list)
+    for (final heading in document.querySelectorAll('h2, h3')) {
+      final headingText = heading.text.trim().toLowerCase();
+      if (headingText.contains('ingredient')) {
+        var sibling = heading.nextElementSibling;
+        while (sibling != null && sibling.localName != 'h2' && sibling.localName != 'h3') {
+          if (sibling.localName == 'ul' || sibling.localName == 'ol') {
+            for (final li in sibling.querySelectorAll('li')) {
+              final text = _ingParser.decodeHtml(li.text.trim());
+              if (text.isNotEmpty) results.add(text);
+            }
+          }
+          sibling = sibling.nextElementSibling;
+        }
+        if (results.isNotEmpty) return results;
+      }
+    }
+    
+    return results;
+  }
+  
   RecipeImportResult? _parseHtmlFallback(Document document, String url, String? rawBody) {
     var rawIngredientStrings = <String>[];
     var rawDirections = <String>[];
@@ -1325,15 +1381,29 @@ class StandardWebStrategy implements RecipeParserStrategy {
     // 3. Try specific plugin selectors
     if (rawIngredientStrings.isEmpty) {
       // Cooked plugin (WordPress recipe plugin)
+      // Uses .cooked-single-ingredient.cooked-ingredient for ingredients (not .cooked-heading which are section headers)
       // Structure: .cooked-ing-amount (quantity) + .cooked-ing-measurement (unit) + .cooked-ing-name (ingredient)
-      final cooked = document.querySelectorAll('.cooked-single-ingredient');
-      if (cooked.isNotEmpty) {
-        rawIngredientStrings = cooked.map((e) {
-          final amount = e.querySelector('.cooked-ing-amount')?.text.trim() ?? '';
-          final measurement = e.querySelector('.cooked-ing-measurement')?.text.trim() ?? '';
-          final name = e.querySelector('.cooked-ing-name')?.text.trim() ?? '';
-          return '$amount $measurement $name'.replaceAll(RegExp(r'\s+'), ' ').trim();
-        }).where((s) => s.isNotEmpty).toList();
+      final cookedItems = document.querySelectorAll('.cooked-single-ingredient');
+      if (cookedItems.isNotEmpty) {
+        for (final item in cookedItems) {
+          final classes = item.classes;
+          if (classes.contains('cooked-heading')) {
+            // This is a section header
+            final headerText = item.text.trim();
+            if (headerText.isNotEmpty) {
+              rawIngredientStrings.add('[$headerText]');
+            }
+          } else if (classes.contains('cooked-ingredient')) {
+            // This is an actual ingredient
+            final amount = item.querySelector('.cooked-ing-amount')?.text.trim() ?? '';
+            final measurement = item.querySelector('.cooked-ing-measurement')?.text.trim() ?? '';
+            final name = item.querySelector('.cooked-ing-name')?.text.trim() ?? '';
+            final ingredientStr = '$amount $measurement $name'.replaceAll(RegExp(r'\s+'), ' ').trim();
+            if (ingredientStr.isNotEmpty) {
+              rawIngredientStrings.add(_ingParser.decodeHtml(ingredientStr));
+            }
+          }
+        }
       }
       
       // Tasty Recipes
@@ -1938,8 +2008,15 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final nytHeaders = document.querySelectorAll('[class*="ingredientgroup_name"]');
     if (nytHeaders.isNotEmpty) {
       for (final header in nytHeaders) {
-        final headerText = header.text.trim();
-        if (headerText.isNotEmpty) results.add('[$headerText]');
+        var headerText = header.text.trim();
+        if (headerText.isNotEmpty) {
+          // Remove "For the" prefix if present (NYT style)
+          final forTheMatch = RegExp(r'^For\s+(?:the\s+)?(.+)$', caseSensitive: false).firstMatch(headerText);
+          if (forTheMatch != null) {
+            headerText = forTheMatch.group(1)?.trim() ?? headerText;
+          }
+          results.add('[$headerText]');
+        }
         // Find the next sibling ul
         var sibling = header.nextElementSibling;
         while (sibling != null) {
@@ -1949,6 +2026,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
               if (text.isNotEmpty) results.add(text);
             }
             break;
+          } else if (sibling.localName == 'h2' || sibling.localName == 'h3') {
+            break; // Next section header
           }
           sibling = sibling.nextElementSibling;
         }
