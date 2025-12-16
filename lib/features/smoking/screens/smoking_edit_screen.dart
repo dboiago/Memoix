@@ -199,12 +199,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            // Type selector (Pit Note vs Recipe)
-            _buildTypeSelector(theme),
-
-            const SizedBox(height: 16),
-
-            // Recipe Photo (top for consistency)
+            // Recipe Photo (always first)
             _buildImagePicker(theme),
 
             const SizedBox(height: 16),
@@ -218,6 +213,24 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               ),
               validator: (v) => v?.isEmpty ?? true ? 'Name is required' : null,
               textCapitalization: TextCapitalization.words,
+            ),
+
+            const SizedBox(height: 16),
+
+            // Type selector (Pit Note vs Recipe) - styled like Modernist
+            Text(
+              'Type *',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                _buildTypeChip('Pit Note', SmokingType.pitNote, theme),
+                const SizedBox(width: 12),
+                _buildTypeChip('Recipe', SmokingType.recipe, theme),
+              ],
             ),
 
             const SizedBox(height: 16),
@@ -447,10 +460,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
               const SizedBox(height: 24),
 
-              // Ingredients section (Recipes)
-              _buildSectionTitle(theme, 'Ingredients'),
-              const SizedBox(height: 8),
-              ..._buildIngredientFields(),
+              // Ingredients section (Recipes) - matches standard recipe layout
+              _buildIngredientsSection(theme),
             ],
 
             const SizedBox(height: 24),
@@ -485,27 +496,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     );
   }
 
-  Widget _buildTypeSelector(ThemeData theme) {
-    return Row(
-      children: [
-        Expanded(
-          child: _buildTypeChip('Pit Note', SmokingType.pitNote, theme),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _buildTypeChip('Recipe', SmokingType.recipe, theme),
-        ),
-      ],
-    );
-  }
-
   Widget _buildTypeChip(String label, SmokingType type, ThemeData theme) {
     final isSelected = _selectedType == type;
 
     return GestureDetector(
       onTap: () => setState(() => _selectedType = type),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
           color: isSelected
               ? theme.colorScheme.secondary.withOpacity(0.15)
@@ -518,15 +515,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
-        child: Center(
-          child: Text(
-            label,
-            style: theme.textTheme.bodyMedium?.copyWith(
-              color: isSelected
-                  ? theme.colorScheme.secondary
-                  : theme.colorScheme.onSurface,
-              fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
-            ),
+        child: Text(
+          label,
+          style: theme.textTheme.bodyMedium?.copyWith(
+            color: isSelected
+                ? theme.colorScheme.secondary
+                : theme.colorScheme.onSurface,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
           ),
         ),
       ),
@@ -768,134 +763,228 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     });
   }
 
-  List<Widget> _buildIngredientFields() {
-    final theme = Theme.of(context);
-    
-    return _ingredients.asMap().entries.map((entry) {
-      final index = entry.key;
-      final ingredient = entry.value;
-      final isLast = index == _ingredients.length - 1;
-
-      return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-        decoration: BoxDecoration(
-          border: isLast 
-              ? null 
-              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+  Widget _buildIngredientsSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Ingredients',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
         ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            // Amount
-            SizedBox(
-              width: 80,
-              child: TextField(
-                controller: ingredient.amountController,
-                decoration: InputDecoration(
-                  isDense: true,
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                  border: const OutlineInputBorder(),
-                  hintText: 'Amount',
-                  hintStyle: TextStyle(
-                    fontStyle: FontStyle.italic,
-                    color: theme.colorScheme.outline,
+        const SizedBox(height: 8),
+
+        // Column headers
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.surfaceContainerHighest,
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
+          ),
+          child: Row(
+            children: [
+              // Space for drag handle
+              const SizedBox(width: 32),
+              Expanded(
+                flex: 3,
+                child: Text('Ingredient',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                style: theme.textTheme.bodyMedium,
               ),
-            ),
-            const SizedBox(width: 8),
-            
-            // Ingredient name with autocomplete
-            Expanded(
-              child: Autocomplete<String>(
-                initialValue: TextEditingValue(text: ingredient.nameController.text),
-                optionsBuilder: (textEditingValue) {
-                  if (textEditingValue.text.isEmpty) {
-                    return Suggestions.seasonings;
-                  }
-                  return Suggestions.filter(
-                    Suggestions.seasonings, 
-                    textEditingValue.text,
-                  );
-                },
-                fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
-                  controller.addListener(() {
-                    ingredient.nameController.text = controller.text;
-                    // Auto-add new row when typing in last row
-                    if (isLast && controller.text.isNotEmpty && _ingredients.length == index + 1) {
-                      _addIngredient();
-                      setState(() {});
-                    }
-                  });
-                  return TextField(
-                    controller: controller,
-                    focusNode: focusNode,
-                    decoration: InputDecoration(
-                      isDense: true,
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                      border: const OutlineInputBorder(),
-                      hintText: 'Ingredient',
-                      hintStyle: TextStyle(
-                        fontStyle: FontStyle.italic,
-                        color: theme.colorScheme.outline,
-                      ),
-                    ),
-                    style: theme.textTheme.bodyMedium,
-                    textCapitalization: TextCapitalization.words,
-                    onSubmitted: (_) => onFieldSubmitted(),
-                  );
-                },
-                onSelected: (selection) {
-                  ingredient.nameController.text = selection;
-                },
-                optionsViewBuilder: (context, onSelected, options) {
-                  return Align(
-                    alignment: Alignment.topLeft,
-                    child: Material(
-                      elevation: 4,
-                      borderRadius: BorderRadius.circular(8),
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                          maxHeight: 200,
-                          maxWidth: 180,
-                        ),
-                        child: ListView.builder(
-                          padding: EdgeInsets.zero,
-                          shrinkWrap: true,
-                          itemCount: options.length,
-                          itemBuilder: (context, idx) {
-                            final option = options.elementAt(idx);
-                            return ListTile(
-                              dense: true,
-                              title: Text(option),
-                              onTap: () => onSelected(option),
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-            
-            // Delete button
-            if (_ingredients.length > 1)
-              IconButton(
-                icon: Icon(
-                  Icons.remove_circle_outline, 
-                  size: 20,
-                  color: theme.colorScheme.secondary,
+              const SizedBox(width: 8),
+              SizedBox(
+                width: 80,
+                child: Text('Amount',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                onPressed: () => _removeIngredient(index),
-              )
-            else
-              const SizedBox(width: 48),
-          ],
+              ),
+              const SizedBox(width: 40), // Space for delete button
+            ],
+          ),
         ),
-      );
-    }).toList();
+
+        // Ingredient rows (reorderable)
+        Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+            borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
+          ),
+          child: ReorderableListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            buildDefaultDragHandles: false,
+            itemCount: _ingredients.length,
+            onReorder: (oldIndex, newIndex) {
+              setState(() {
+                if (newIndex > oldIndex) newIndex--;
+                final item = _ingredients.removeAt(oldIndex);
+                _ingredients.insert(newIndex, item);
+              });
+            },
+            proxyDecorator: (child, index, animation) {
+              return AnimatedBuilder(
+                animation: animation,
+                builder: (context, child) {
+                  return Material(
+                    elevation: 4,
+                    color: theme.colorScheme.surface,
+                    borderRadius: BorderRadius.circular(4),
+                    child: child,
+                  );
+                },
+                child: child,
+              );
+            },
+            itemBuilder: (context, index) {
+              return _buildIngredientRow(index, theme, key: ValueKey(_ingredients[index]));
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildIngredientRow(int index, ThemeData theme, {Key? key}) {
+    final ingredient = _ingredients[index];
+    final isLast = index == _ingredients.length - 1;
+
+    return Container(
+      key: key,
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+      decoration: BoxDecoration(
+        border: isLast
+            ? null
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // Drag handle
+          ReorderableDragStartListener(
+            index: index,
+            child: Icon(
+              Icons.drag_handle,
+              color: theme.colorScheme.outline,
+              size: 20,
+            ),
+          ),
+          const SizedBox(width: 8),
+
+          // Ingredient name with autocomplete
+          Expanded(
+            flex: 3,
+            child: Autocomplete<String>(
+              initialValue: TextEditingValue(text: ingredient.nameController.text),
+              optionsBuilder: (textEditingValue) {
+                if (textEditingValue.text.isEmpty) {
+                  return Suggestions.seasonings;
+                }
+                return Suggestions.filter(
+                  Suggestions.seasonings,
+                  textEditingValue.text,
+                );
+              },
+              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                controller.addListener(() {
+                  ingredient.nameController.text = controller.text;
+                  // Auto-add new row when typing in last row
+                  if (isLast && controller.text.isNotEmpty && _ingredients.length == index + 1) {
+                    _addIngredient();
+                    setState(() {});
+                  }
+                });
+                return TextField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: InputDecoration(
+                    isDense: true,
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                    border: const OutlineInputBorder(),
+                    hintText: 'Ingredient',
+                    hintStyle: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      color: theme.colorScheme.outline,
+                    ),
+                  ),
+                  style: theme.textTheme.bodyMedium,
+                  textCapitalization: TextCapitalization.words,
+                  onSubmitted: (_) => onFieldSubmitted(),
+                );
+              },
+              onSelected: (selection) {
+                ingredient.nameController.text = selection;
+              },
+              optionsViewBuilder: (context, onSelected, options) {
+                return Align(
+                  alignment: Alignment.topLeft,
+                  child: Material(
+                    elevation: 4,
+                    borderRadius: BorderRadius.circular(8),
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(
+                        maxHeight: 200,
+                        maxWidth: 200,
+                      ),
+                      child: ListView.builder(
+                        padding: EdgeInsets.zero,
+                        shrinkWrap: true,
+                        itemCount: options.length,
+                        itemBuilder: (context, idx) {
+                          final option = options.elementAt(idx);
+                          return ListTile(
+                            dense: true,
+                            title: Text(option),
+                            onTap: () => onSelected(option),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          const SizedBox(width: 8),
+
+          // Amount
+          SizedBox(
+            width: 80,
+            child: TextField(
+              controller: ingredient.amountController,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Amount',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              style: theme.textTheme.bodyMedium,
+            ),
+          ),
+
+          // Delete button
+          if (_ingredients.length > 1)
+            IconButton(
+              icon: Icon(
+                Icons.remove_circle_outline,
+                size: 20,
+                color: theme.colorScheme.secondary,
+              ),
+              onPressed: () => _removeIngredient(index),
+            )
+          else
+            const SizedBox(width: 40),
+        ],
+      ),
+    );
   }
 
   void _addDirection() {

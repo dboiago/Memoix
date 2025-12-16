@@ -5519,47 +5519,31 @@ class UrlRecipeImporter {
       }
     }
     
-    if (rawIngredientStrings.isEmpty) {
-      // Yummly / ZipList / other common formats
-      final yummlyIngredients = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .ingredient-item, .Ingredient, .p-ingredient');
-      if (yummlyIngredients.isNotEmpty) {
-        for (final e in yummlyIngredients) {
-          final text = _decodeHtml((e.text ?? '').trim());
-          if (text.isNotEmpty) rawIngredientStrings.add(text);
-        }
-      }
-    }
-    
-    if (rawDirections.isEmpty && rawIngredientStrings.isNotEmpty) {
-      // Try common instruction selectors
-      final commonDirections = document.querySelectorAll('.recipe-instructions li, .recipe-procedure li, .instruction-item, .step-text, .p-instructions li, .Instruction');
-      for (final e in commonDirections) {
-        final text = _decodeHtml((e.text ?? '').trim());
-        if (text.isNotEmpty) rawDirections.add(text);
-      }
-    }
-    
-    // Try Weber-specific ingredient parsing first
+    // Try Weber-specific ingredient parsing BEFORE generic selectors
     // Weber uses .ingredient-item with .screen-reader-text that should be excluded
     if (rawIngredientStrings.isEmpty) {
       final weberIngredients = document.querySelectorAll('.ingredient-item');
       if (weberIngredients.isNotEmpty) {
-        for (final e in weberIngredients) {
-          // Get the ingredient-label span, excluding screen-reader-text
-          final labelSpan = e.querySelector('.ingredient-label');
-          if (labelSpan != null) {
-            // Clone the node to avoid modifying original document
-            final labelClone = labelSpan.clone(true);
-            // Remove screen-reader-text elements before extracting text
-            final srTexts = labelClone.querySelectorAll('.screen-reader-text');
-            for (final sr in srTexts) {
-              sr.remove();
-            }
-            final text = _decodeHtml((labelClone.text ?? '').trim());
-            // Clean up excessive whitespace from Weber's HTML
-            final cleaned = text.replaceAll(RegExp(r'\s+'), ' ').trim();
-            if (cleaned.isNotEmpty) {
-              rawIngredientStrings.add(cleaned);
+        // Check if this looks like Weber (has .ingredient-label children)
+        final hasWeberFormat = weberIngredients.any((e) => e.querySelector('.ingredient-label') != null);
+        if (hasWeberFormat) {
+          for (final e in weberIngredients) {
+            // Get the ingredient-label span, excluding screen-reader-text
+            final labelSpan = e.querySelector('.ingredient-label');
+            if (labelSpan != null) {
+              // Clone the node to avoid modifying original document
+              final labelClone = labelSpan.clone(true);
+              // Remove screen-reader-text elements before extracting text
+              final srTexts = labelClone.querySelectorAll('.screen-reader-text');
+              for (final sr in srTexts) {
+                sr.remove();
+              }
+              final text = _decodeHtml((labelClone.text ?? '').trim());
+              // Clean up excessive whitespace from Weber's HTML
+              final cleaned = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+              if (cleaned.isNotEmpty) {
+                rawIngredientStrings.add(cleaned);
+              }
             }
           }
         }
@@ -5592,6 +5576,26 @@ class UrlRecipeImporter {
       // Format total minutes if we found any time values
       if (totalMinutes > 0 && timing == null) {
         timing = _formatMinutes(totalMinutes);
+      }
+    }
+    
+    if (rawIngredientStrings.isEmpty) {
+      // Yummly / ZipList / other common formats (excluding .ingredient-item which is handled above)
+      final yummlyIngredients = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .Ingredient, .p-ingredient');
+      if (yummlyIngredients.isNotEmpty) {
+        for (final e in yummlyIngredients) {
+          final text = _decodeHtml((e.text ?? '').trim());
+          if (text.isNotEmpty) rawIngredientStrings.add(text);
+        }
+      }
+    }
+    
+    if (rawDirections.isEmpty && rawIngredientStrings.isNotEmpty) {
+      // Try common instruction selectors
+      final commonDirections = document.querySelectorAll('.recipe-instructions li, .recipe-procedure li, .instruction-item, .step-text, .p-instructions li, .Instruction');
+      for (final e in commonDirections) {
+        final text = _decodeHtml((e.text ?? '').trim());
+        if (text.isNotEmpty) rawDirections.add(text);
       }
     }
     

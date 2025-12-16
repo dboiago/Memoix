@@ -374,6 +374,40 @@ class RecipeImportResult {
     return recipe;
   }
 
+  /// Convert to a SmokingRecipe as a full Recipe type (not Pit Note)
+  /// Used for imported BBQ site recipes that have full ingredients/directions
+  SmokingRecipe toSmokingRecipeAsFullRecipe(String uuid) {
+    // Convert Ingredient objects to SmokingSeasoning for the ingredients list
+    final recipeIngredients = ingredients.map((i) => SmokingSeasoning.create(
+      name: i.name,
+      amount: i.amount,
+      unit: i.unit,
+    )).toList();
+    
+    final recipe = SmokingRecipe.create(
+      uuid: uuid,
+      name: name ?? 'Untitled Recipe',
+      type: SmokingType.recipe, // Full recipe, not Pit Note
+      serves: serves,
+      time: time ?? '',
+      ingredients: recipeIngredients,
+      directions: directions,
+      notes: notes,
+      headerImage: imageUrl,
+      source: SmokingSource.imported,
+    );
+    
+    // Set multiple images if available
+    if (imagePaths != null && imagePaths!.isNotEmpty) {
+      recipe.headerImage = imagePaths!.first;
+      if (imagePaths!.length > 1) {
+        recipe.stepImages = imagePaths!.sublist(1);
+      }
+    }
+    
+    return recipe;
+  }
+
   /// Convert to a Pizza (for high-confidence Pizza imports)
   Pizza toPizzaRecipe(String uuid) {
     // Try to detect base sauce from ingredients

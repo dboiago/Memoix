@@ -8,28 +8,26 @@ import '../../../core/services/url_importer.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../pizzas/screens/pizza_edit_screen.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import '../../smoking/screens/smoking_edit_screen.dart';
 import 'import_review_screen.dart';
 
 /// Courses that have specialized edit screens
 /// Add new specialized courses here as they are created
 /// 
-/// NOTE: 'smoking' is intentionally NOT included here.
-/// SmokingRecipe is for simple rubs/guides (temp, wood, seasonings).
-/// Full recipes from BBQ sites (with ingredients, directions) should stay
-/// as regular Recipes with course='Smoking' - they just happen to use smoking.
+/// Smoking IS included - routes to SmokingEditScreen with type=recipe for full BBQ recipes.
+/// SmokingRecipe has two types: pitNote (quick reference) and recipe (full recipes).
 class SpecializedCourses {
   SpecializedCourses._();
   
   static const modernist = 'modernist';
   static const pizzas = 'pizzas';
-  // Future: breads (for baker's percentage), etc.
-  // NOTE: 'smoking' intentionally excluded - see class comment
+  static const smoking = 'smoking';
   
   /// Check if a course has a specialized edit screen
   static bool hasSpecializedScreen(String? course) {
     if (course == null) return false;
     final lower = course.toLowerCase();
-    return lower == modernist || lower == pizzas;
+    return lower == modernist || lower == pizzas || lower == smoking;
   }
   
   /// Route to the appropriate edit screen based on course
@@ -42,10 +40,8 @@ class SpecializedCourses {
         return ModernistEditScreen(importedRecipe: result.toModernistRecipe(uuid));
       case pizzas:
         return PizzaEditScreen(importedRecipe: result.toPizzaRecipe(uuid));
-      // Add more cases here as new specialized screens are created
-      // case 'breads':
-      //   return BreadEditScreen(importedRecipe: result.toBreadRecipe(uuid));
-      // NOTE: 'smoking' intentionally excluded - full recipes stay as regular Recipes
+      case smoking:
+        return SmokingEditScreen(importedRecipe: result.toSmokingRecipeAsFullRecipe(uuid));
       default:
         return null; // Use default RecipeEditScreen
     }

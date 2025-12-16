@@ -262,9 +262,15 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             const SizedBox(height: 8),
             Row(
               children: [
-                _buildCategoryChip('Concept', ModernistType.concept, theme),
+                Expanded(
+                  child: _buildCategoryChip(
+                      'Concept', ModernistType.concept, theme),
+                ),
                 const SizedBox(width: 12),
-                _buildCategoryChip('Technique', ModernistType.technique, theme),
+                Expanded(
+                  child: _buildCategoryChip(
+                      'Technique', ModernistType.technique, theme),
+                ),
               ],
             ),
             const SizedBox(height: 16),
@@ -364,7 +370,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     return GestureDetector(
       onTap: () => setState(() => _selectedType = type),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected
               ? theme.colorScheme.secondary.withOpacity(0.15)
@@ -377,13 +383,15 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
-        child: Text(
-          label,
-          style: theme.textTheme.bodyMedium?.copyWith(
-            color: isSelected
-                ? theme.colorScheme.secondary
-                : theme.colorScheme.onSurface,
-            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+        child: Center(
+          child: Text(
+            label,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: isSelected
+                  ? theme.colorScheme.secondary
+                  : theme.colorScheme.onSurface,
+              fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+            ),
           ),
         ),
       ),
