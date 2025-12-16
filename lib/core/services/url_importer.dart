@@ -3800,7 +3800,13 @@ class UrlRecipeImporter {
 
   int _parseDurationMinutes(dynamic value) {
     if (value == null) return 0;
-    final str = value.toString().toLowerCase().trim();
+    var str = value.toString().toLowerCase().trim();
+    
+    // Normalize malformed ISO 8601 durations
+    // Some sites use "PT1hour5M" instead of "PT1H5M"
+    str = str.replaceAll(RegExp(r'hours?'), 'h');
+    str = str.replaceAll(RegExp(r'minutes?|mins?'), 'm');
+    str = str.replaceAll(RegExp(r'seconds?|secs?'), 's');
     
     // Parse full ISO 8601 duration format (e.g., P0Y0M0DT0H35M0.000S, PT30M, PT1H30M)
     final fullIsoRegex = RegExp(
@@ -3854,7 +3860,14 @@ class UrlRecipeImporter {
 
   String? _parseDuration(dynamic value) {
     if (value == null) return null;
-    final str = value.toString();
+    var str = value.toString();
+    
+    // Normalize malformed ISO 8601 durations
+    // Some sites use "PT1hour5M" instead of "PT1H5M"
+    // Also handle "PT1hours30minutes" variants
+    str = str.replaceAll(RegExp(r'hours?', caseSensitive: false), 'H');
+    str = str.replaceAll(RegExp(r'minutes?|mins?', caseSensitive: false), 'M');
+    str = str.replaceAll(RegExp(r'seconds?|secs?', caseSensitive: false), 'S');
     
     // Parse full ISO 8601 duration format (e.g., P0Y0M0DT0H35M0.000S, PT30M, PT1H30M)
     // Format: P[n]Y[n]M[n]DT[n]H[n]M[n]S where each component is optional
@@ -4791,9 +4804,16 @@ class UrlRecipeImporter {
     final description = _parseString(data['description'])?.toLowerCase() ?? '';
     final allText = '$category $keywords $name $description';
     
-    // Check if this is from a cocktail site
+    // Check if this is from a cocktail site (highest priority)
     if (sourceUrl != null && _isCocktailSite(sourceUrl)) {
       return 'Drinks';
+    }
+    
+    // Check if this is from a BBQ/smoking site (highest priority)
+    // BBQ sites should return 'Smoking' even if the recipe name contains 'soup', 'salad', etc.
+    // because the smoking technique is what makes it unique
+    if (sourceUrl != null && _isBBQSite(sourceUrl)) {
+      return 'Smoking';
     }
     
     // Check for drink/cocktail indicators in the data
@@ -5432,10 +5452,68 @@ class UrlRecipeImporter {
       }
     }
     
+    // Try Weber-specific ingredient parsing first
+    // Weber uses .ingredient-item with .screen-reader-text that should be excluded
+    if (rawIngredientStrings.isEmpty) {
+      final weberIngredients = document.querySelectorAll('.ingredient-item');
+      if (weberIngredients.isNotEmpty) {
+        for (final e in weberIngredients) {
+          // Get the ingredient-label span, excluding screen-reader-text
+          final labelSpan = e.querySelector('.ingredient-label');
+          if (labelSpan != null) {
+            // Remove screen-reader-text elements before extracting text
+            final srTexts = labelSpan.querySelectorAll('.screen-reader-text');
+            for (final sr in srTexts) {
+              sr.remove();
+            }
+            final text = _decodeHtml((labelSpan.text ?? '').trim());
+            // Clean up excessive whitespace from Weber's HTML
+            final cleaned = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+            if (cleaned.isNotEmpty) {
+              rawIngredientStrings.add(cleaned);
+            }
+          }
+        }
+      }
+    }
+    
+    // Try Weber-specific serves/time extraction
+    // Weber uses .attribute-item with .label and .copy children
+    if (yield == null || timing == null) {
+      final weberAttributes = document.querySelectorAll('.attribute-item');
+      for (final attr in weberAttributes) {
+        final labelElem = attr.querySelector('.label');
+        final copyElem = attr.querySelector('.copy');
+        if (labelElem != null && copyElem != null) {
+          final label = _decodeHtml((labelElem.text ?? '').trim().toLowerCase());
+          final value = _decodeHtml((copyElem.text ?? '').trim());
+          if (label.contains('people') || label.contains('serves') || label.contains('servings')) {
+            // Extract just the number from "Serves 4"
+            final servesMatch = RegExp(r'(\d+)').firstMatch(value);
+            if (servesMatch != null) {
+              yield = servesMatch.group(1);
+            }
+          } else if (label.contains('time') || label.contains('prep') || label.contains('cook') || label.contains('grill')) {
+            // Accumulate times
+            if (timing == null) {
+              timing = value;
+            } else {
+              timing = '$timing + $value';
+            }
+          }
+        }
+      }
+    }
+    
     // If still empty, try standard selectors
     if (rawIngredientStrings.isEmpty) {
       final ingredientElements = document.querySelectorAll(
-        '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient',
+        // Standard recipe plugins and schema.org
+        '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient, '
+        // Shopify/blog patterns
+        '.recipe-ingredients li, .recipe__ingredients li, [class*="ingredient"] li, '
+        // Generic patterns for blog posts
+        '.entry-content ul li, .post-content ul li, article ul li',
       );
       
       for (final e in ingredientElements) {
@@ -5461,9 +5539,67 @@ class UrlRecipeImporter {
       if (rawIngredientStrings.isNotEmpty) {
         usedStructuredFormat = true;
       }
-    } else {
+    }
+    
+    // If still empty, try <br>-separated content in paragraphs (Bradley Smoker style)
+    // Pattern: <h2>Ingredients</h2> followed by <p>item1<br>item2<br>item3</p>
+    if (rawIngredientStrings.isEmpty) {
+      // Look for headings containing "Ingredients"
+      for (final heading in document.querySelectorAll('h1, h2, h3')) {
+        final headingText = (heading.text ?? '').toLowerCase().trim();
+        if (headingText.contains('ingredient')) {
+          // Get the next sibling div or paragraph
+          var nextElement = heading.nextElementSibling;
+          // Sometimes there's a wrapper div between heading and content
+          if (nextElement?.localName == 'div') {
+            final innerP = nextElement!.querySelector('p');
+            if (innerP != null) {
+              nextElement = innerP;
+            }
+          }
+          if (nextElement != null && (nextElement.localName == 'p' || nextElement.localName == 'div')) {
+            // Get the inner HTML and split by <br>
+            final innerHtml = nextElement.innerHtml;
+            if (innerHtml.contains('<br')) {
+              final parts = innerHtml.split(RegExp(r'<br\s*/?>', caseSensitive: false));
+              for (final part in parts) {
+                // Strip HTML tags and decode
+                final text = _decodeHtml(part.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+                if (text.isNotEmpty) {
+                  rawIngredientStrings.add(text);
+                }
+              }
+              break;
+            }
+          }
+        }
+      }
+    }
+    
+    if (rawIngredientStrings.isEmpty) {
       // Even if we found ingredients via other methods, still extract equipment
       // This handles sites that have structured ingredients but also equipment sections
+      final sectionResult = _parseHtmlBySections(document);
+      if ((sectionResult['equipment'] as List?)?.isNotEmpty ?? false) {
+        equipmentItems = sectionResult['equipment'] ?? [];
+      }
+      if (sectionResult['glass'] != null) {
+        glassType = sectionResult['glass'];
+      }
+      if ((sectionResult['garnish'] as List?)?.isNotEmpty ?? false) {
+        garnishItems = sectionResult['garnish'] ?? [];
+      }
+      if (yield == null && sectionResult['yield'] != null) {
+        yield = sectionResult['yield'];
+      }
+      if (timing == null && sectionResult['timing'] != null) {
+        timing = sectionResult['timing'];
+      }
+      if (htmlNotes == null && sectionResult['notes'] != null) {
+        htmlNotes = sectionResult['notes'] as String?;
+      }
+    } else {
+      // Ingredients were found via other methods, still extract equipment/glass/garnish
       final sectionResult = _parseHtmlBySections(document);
       if ((sectionResult['equipment'] as List?)?.isNotEmpty ?? false) {
         equipmentItems = sectionResult['equipment'] ?? [];
@@ -5512,6 +5648,42 @@ class UrlRecipeImporter {
       // Section-based parsing with h3 headings is semi-structured
       if (rawDirections.isNotEmpty) {
         usedStructuredFormat = true;
+      }
+    }
+    
+    // If still empty, try <p> paragraph-based directions (Bradley Smoker style)
+    // Pattern: <h2>Preparation</h2> followed by multiple <p> elements
+    if (rawDirections.isEmpty) {
+      for (final heading in document.querySelectorAll('h1, h2, h3')) {
+        final headingText = (heading.text ?? '').toLowerCase().trim();
+        if (headingText.contains('preparation') || 
+            headingText.contains('instruction') || 
+            headingText.contains('direction') ||
+            headingText.contains('method')) {
+          // Get all sibling elements until next heading
+          var sibling = heading.nextElementSibling;
+          while (sibling != null && 
+                 sibling.localName != 'h1' && 
+                 sibling.localName != 'h2' && 
+                 sibling.localName != 'h3') {
+            if (sibling.localName == 'p') {
+              final text = _decodeHtml((sibling.text ?? '').trim());
+              if (text.isNotEmpty && text.length > 20) { // Skip short paragraphs
+                rawDirections.add(text);
+              }
+            } else if (sibling.localName == 'div') {
+              // Check for paragraphs inside a wrapper div
+              for (final p in sibling.querySelectorAll('p')) {
+                final text = _decodeHtml((p.text ?? '').trim());
+                if (text.isNotEmpty && text.length > 20) {
+                  rawDirections.add(text);
+                }
+              }
+            }
+            sibling = sibling.nextElementSibling;
+          }
+          if (rawDirections.isNotEmpty) break;
+        }
       }
     }
 
