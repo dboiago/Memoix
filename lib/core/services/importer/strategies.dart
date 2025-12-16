@@ -113,9 +113,10 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.mixedList,
   ),
   // Punch Drink - cocktail recipes with .ingredients-list class
+  // Note: Uses simple 'li' selector; hidden elements are filtered in code
   'punchdrink': SiteConfig(
     containerSelector: '.ingredients-list',
-    ingredientSelector: 'li:not([style*="display:none"])',
+    ingredientSelector: 'li',
     mode: ExtractionMode.mixedList,
   ),
   // Schema.org microdata format
@@ -910,7 +911,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final serves = _parseString(data['recipeYield'] ?? data['yield'] ?? data['serves'] ?? data['yieldTextOverride']);
     final time = _parseTime(data);
     final imageUrl = _parseImage(data['image']);
-    final description = _parseString(data['description']);
+    // Strip HTML from description (some sites like Saveur have HTML in description)
+    final rawDescription = _parseString(data['description']);
+    final description = rawDescription != null ? _stripHtml(rawDescription) : null;
     final cuisine = _parseString(data['recipeCuisine'] ?? data['cuisine']);
     final course = _guessCourse(data, url);
     
@@ -1202,7 +1205,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
   // ========== Microdata Parsing ==========
   
   RecipeImportResult? _parseMicrodata(Document document, String url) {
-    final recipeElement = document.querySelector('[itemtype*="Recipe"]');
+    // Try multiple selectors to find recipe element (some sites use different formats)
+    var recipeElement = document.querySelector('[itemtype*="schema.org/Recipe"]');
+    recipeElement ??= document.querySelector('[itemtype*="Recipe"]');
     if (recipeElement == null) return null;
     
     final name = recipeElement.querySelector('[itemprop="name"]')?.text.trim();
@@ -1367,7 +1372,9 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final results = <String>[];
     
     // Try common ingredient selectors
+    // Note: .ingredients-list is used by Punch Drink (visible li elements without style attr)
     final selectors = [
+      '.ingredients-list li',  // Punch Drink - filter hidden elements below
       '.ingredient-list li',
       '.ingredients li',
       '.recipe-ingredients li',
@@ -1380,6 +1387,11 @@ class StandardWebStrategy implements RecipeParserStrategy {
       final elements = document.querySelectorAll(selector);
       if (elements.isNotEmpty) {
         for (final e in elements) {
+          // Skip hidden elements (e.g., Punch Drink has hidden microdata duplicates)
+          final styleAttr = e.attributes['style'] ?? '';
+          if (styleAttr.contains('display:none') || styleAttr.contains('display: none')) {
+            continue;
+          }
           final text = _ingParser.decodeHtml(e.text.trim());
           if (text.isNotEmpty) results.add(text);
         }
@@ -1489,9 +1501,17 @@ class StandardWebStrategy implements RecipeParserStrategy {
       }
       
       // Generic selectors - including .ingredients-list for Punch Drink, etc.
+      // Filter out hidden elements (display:none) in code since :not() may not work reliably
       if (rawIngredientStrings.isEmpty) {
-        final generic = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .ingredient-item, .ingredients-list li:not([style*="display:none"]), [itemprop="recipeIngredient"]:not([style*="display:none"])');
-        if (generic.isNotEmpty) rawIngredientStrings = generic.map((e) => e.text.trim()).where((s) => s.isNotEmpty).toList();
+        final generic = document.querySelectorAll('.recipe-ingredients li, .recipe-ingred_txt, .ingredient-item, .ingredients-list li, [itemprop="recipeIngredient"]');
+        for (final e in generic) {
+          final styleAttr = e.attributes['style'] ?? '';
+          if (styleAttr.contains('display:none') || styleAttr.contains('display: none')) {
+            continue;
+          }
+          final text = e.text.trim();
+          if (text.isNotEmpty) rawIngredientStrings.add(text);
+        }
       }
     }
 
@@ -1646,7 +1666,15 @@ class StandardWebStrategy implements RecipeParserStrategy {
         }
       } else {
         final items = container.querySelectorAll(config.ingredientSelector);
-        ingredients.addAll(items.map((e) => e.text.trim()).where((s) => s.isNotEmpty));
+        for (final e in items) {
+          // Skip hidden elements (e.g., Punch Drink has hidden microdata duplicates)
+          final styleAttr = e.attributes['style'] ?? '';
+          if (styleAttr.contains('display:none') || styleAttr.contains('display: none')) {
+            continue;
+          }
+          final text = e.text.trim();
+          if (text.isNotEmpty) ingredients.add(text);
+        }
       }
 
       if (ingredients.isNotEmpty) return ingredients;
@@ -1664,14 +1692,25 @@ class StandardWebStrategy implements RecipeParserStrategy {
       if (text.contains('ingredient')) {
         var sibling = heading.nextElementSibling;
         int attempts = 0;
-        while (sibling != null && attempts < 5) {
+        while (sibling != null && attempts < 10) {
+          // Stop at next major heading (ingredients section ended)
+          if (sibling.localName == 'h1' || sibling.localName == 'h2' || 
+              sibling.localName == 'h3' || sibling.localName == 'h4' || sibling.localName == 'h5') {
+            final siblingHeading = sibling.text.toLowerCase();
+            if (siblingHeading.contains('direction') || siblingHeading.contains('method') || 
+                siblingHeading.contains('instruction') || siblingHeading.contains('step') ||
+                siblingHeading.contains('note') || siblingHeading.contains('garnish')) {
+              break; // Stop - we've hit the next section
+            }
+          }
+          
           if (sibling.localName == 'ul' || sibling.localName == 'ol') {
             ingredients.addAll(sibling.querySelectorAll('li').map((e) => e.text.trim()).where((s) => s.isNotEmpty));
             break;
           }
           
           // Check for bullet-point text (e.g., "• 200g Sugar • 100g Flour")
-          final siblingText = sibling.text;
+          final siblingText = sibling.text.trim();
           if (siblingText.contains('•')) {
             final parts = siblingText.split('•');
             for (var part in parts) {
@@ -1683,7 +1722,24 @@ class StandardWebStrategy implements RecipeParserStrategy {
             if (ingredients.isNotEmpty) break;
           }
           
-          // Check if the sibling is a div containing ingredients (common on cocktail sites)
+          // Check if this sibling element itself is an ingredient line (cocktail sites like Punch Drink)
+          // Punch Drink uses individual <p> or <div> elements for each ingredient line
+          if ((sibling.localName == 'p' || sibling.localName == 'div') && 
+              siblingText.isNotEmpty && siblingText.length <= 150) {
+            // Split by newlines in case multiple ingredients are in one element
+            final lines = siblingText.split(RegExp(r'\n+'));
+            for (final line in lines) {
+              final trimmed = line.trim();
+              if (trimmed.isNotEmpty && (_couldBeIngredientLine(trimmed) || _looksLikeCocktailIngredient(trimmed))) {
+                ingredients.add(_ingParser.decodeHtml(trimmed));
+              } else if (trimmed.toLowerCase().startsWith('garnish:')) {
+                // Garnish line - also add it
+                ingredients.add(_ingParser.decodeHtml(trimmed));
+              }
+            }
+          }
+          
+          // Check if the sibling is a container with p/div/span children
           final divIngredients = sibling.querySelectorAll('p, div, span');
           if (divIngredients.isNotEmpty) {
             for (final el in divIngredients) {
@@ -1701,11 +1757,12 @@ class StandardWebStrategy implements RecipeParserStrategy {
                 ingredients.add(elText);
               }
             }
-            if (ingredients.isNotEmpty) break;
           }
           sibling = sibling.nextElementSibling;
           attempts++;
         }
+        // If we found ingredients under this heading, stop looking at other headings
+        if (ingredients.isNotEmpty) break;
       }
     }
     return ingredients;
@@ -1913,6 +1970,34 @@ class StandardWebStrategy implements RecipeParserStrategy {
         .replaceAll('\\n', ' ')
         .replaceAll('\\"', '"');
     
+    // For Next.js sites (like Seedlip), extract HTML from dangerouslySetInnerHTML payloads
+    // Pattern: "dangerouslySetInnerHTML":{"__html":"<h2>Ingredients</h2>..."}
+    final dangerouslyMatches = RegExp(
+      r'"dangerouslySetInnerHTML":\s*\{\s*"__html"\s*:\s*"([^"]+)"',
+      caseSensitive: false,
+    ).allMatches(bodyHtml);
+    
+    // Collect all the __html payloads and decode them
+    final extractedHtmlParts = <String>[];
+    for (final match in dangerouslyMatches) {
+      var htmlContent = match.group(1) ?? '';
+      // Decode unicode escapes within the __html content
+      htmlContent = htmlContent
+          .replaceAll(r'\u003c', '<')
+          .replaceAll(r'\u003e', '>')
+          .replaceAll(r'\u0026', '&')
+          .replaceAll(r'\/', '/')
+          .replaceAll(r'\n', ' ')
+          .replaceAll(r'\\n', ' ')
+          .replaceAll(r'\"', '"');
+      extractedHtmlParts.add(htmlContent);
+    }
+    
+    // Combine extracted HTML with the body for further parsing
+    final combinedHtml = extractedHtmlParts.isNotEmpty 
+        ? '${extractedHtmlParts.join('\n')}\n$bodyHtml' 
+        : bodyHtml;
+    
     final result = <String, dynamic>{
       'ingredients': <String>[],
       'directions': <String>[],
@@ -1925,7 +2010,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
       r'<div[^>]*class="[^"]*recipe-info[^"]*"[^>]*>(.*?)</div>',
       caseSensitive: false,
       dotAll: true,
-    ).allMatches(bodyHtml);
+    ).allMatches(combinedHtml);
     
     for (final divMatch in recipeInfoDivs) {
       final divContent = divMatch.group(1) ?? '';
@@ -2016,7 +2101,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
         r'<div[^>]*class="[^"]*recipe-prose[^"]*"[^>]*>(.*?)</div>',
         caseSensitive: false,
         dotAll: true,
-      ).allMatches(bodyHtml);
+      ).allMatches(combinedHtml);
       
       for (final divMatch in recipeProseDivs) {
         final divContent = divMatch.group(1) ?? '';
@@ -2073,6 +2158,82 @@ class StandardWebStrategy implements RecipeParserStrategy {
             for (final liMatch in liMatches) {
               final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
               if (text.isNotEmpty && text.length > 5) {
+                (result['directions'] as List<String>).add(text);
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    // Try direct h2-section parsing from extracted HTML (Next.js sites like Seedlip)
+    // The extracted HTML from dangerouslySetInnerHTML doesn't have wrapper divs
+    // Always process extracted HTML parts regardless of what was found above
+    if (extractedHtmlParts.isNotEmpty) {
+      for (final htmlPart in extractedHtmlParts) {
+        // Check for h2 heading
+        final h2Match = RegExp(
+          r'<h2[^>]*>(.*?)</h2>',
+          caseSensitive: false,
+          dotAll: true,
+        ).firstMatch(htmlPart);
+        
+        if (h2Match == null) continue;
+        
+        final h2Title = h2Match.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim().toLowerCase() ?? '';
+        final afterH2 = htmlPart.substring(h2Match.end);
+        
+        if (h2Title == 'ingredients' || h2Title.contains('ingredient')) {
+          // Extract ingredients from <ul><li><p> pattern
+          final ulMatch = RegExp(r'<ul[^>]*>(.*?)</ul>', caseSensitive: false, dotAll: true).firstMatch(afterH2);
+          if (ulMatch != null) {
+            final ulContent = ulMatch.group(1) ?? '';
+            final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(ulContent);
+            for (final liMatch in liMatches) {
+              final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+              if (text.isNotEmpty) {
+                (result['ingredients'] as List<String>).add(text);
+              }
+            }
+          }
+        } else if (h2Title.contains('glass') && h2Title.contains('garnish')) {
+          // "Glass and Garnish" pattern
+          final ulMatch = RegExp(r'<ul[^>]*>(.*?)</ul>', caseSensitive: false, dotAll: true).firstMatch(afterH2);
+          if (ulMatch != null) {
+            final ulContent = ulMatch.group(1) ?? '';
+            final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(ulContent);
+            final items = <String>[];
+            for (final liMatch in liMatches) {
+              final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+              if (text.isNotEmpty) items.add(text);
+            }
+            if (items.isNotEmpty) {
+              result['glass'] = items.first;
+              if (items.length > 1) {
+                result['garnish'] = items.sublist(1);
+              }
+            }
+          }
+        } else if (h2Title == 'method' || h2Title.contains('direction') || h2Title.contains('instruction')) {
+          // Directions from <ol> or <ul>
+          final listMatch = RegExp(r'<(?:ol|ul)[^>]*>(.*?)</(?:ol|ul)>', caseSensitive: false, dotAll: true).firstMatch(afterH2);
+          if (listMatch != null) {
+            final listContent = listMatch.group(1) ?? '';
+            final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(listContent);
+            for (final liMatch in liMatches) {
+              final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+              if (text.isNotEmpty && text.length > 5) {
+                (result['directions'] as List<String>).add(text);
+              }
+            }
+          }
+          // Also check for paragraph text after method heading (for cordial instructions, etc.)
+          final pMatches = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).allMatches(afterH2);
+          for (final pMatch in pMatches) {
+            final text = _ingParser.decodeHtml(pMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+            // Only add if it looks like a meaningful instruction (contains a verb or starts with asterisk)
+            if (text.isNotEmpty && text.length > 10 && (text.contains('*') || text.contains(':'))) {
+              if (!(result['directions'] as List<String>).any((d) => d.contains(text) || text.contains(d))) {
                 (result['directions'] as List<String>).add(text);
               }
             }
@@ -2267,6 +2428,20 @@ class StandardWebStrategy implements RecipeParserStrategy {
     if (data is List && data.isNotEmpty) return _parseString(data.first);
     if (data is num) return data.toString();
     return data.toString();
+  }
+
+  /// Strip HTML tags from a string and decode HTML entities
+  String _stripHtml(String html) {
+    return html
+        .replaceAll(RegExp(r'<[^>]+>'), '') // Remove HTML tags
+        .replaceAll(RegExp(r'&nbsp;'), ' ')
+        .replaceAll(RegExp(r'&amp;'), '&')
+        .replaceAll(RegExp(r'&lt;'), '<')
+        .replaceAll(RegExp(r'&gt;'), '>')
+        .replaceAll(RegExp(r'&quot;'), '"')
+        .replaceAll(RegExp(r'&#39;|&apos;'), "'")
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
   }
 
   String? _parseImage(dynamic data) {
