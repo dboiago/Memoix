@@ -99,13 +99,6 @@ const _siteConfigs = <String, SiteConfig>{
     ingredientSelector: 'li',
     mode: ExtractionMode.mixedList,
   ),
-  // Cooked plugin
-  'cooked': SiteConfig(
-    sectionSelector: '.cooked-recipe-ingredients',
-    headerSelector: '.cooked-heading',
-    ingredientSelector: '.cooked-single-ingredient',
-    mode: ExtractionMode.containerWithSections,
-  ),
   // Recipe Card Blocks by FLAVOR
   'flavor-recipecard': SiteConfig(
     sectionSelector: '.recipe-card-ingredients',
@@ -507,10 +500,19 @@ class YouTubeStrategy implements RecipeParserStrategy {
       }
 
       // Extract recipe time from description (NOT video duration)
-      // Look for patterns like "Cook time: 30 min", "Total time: 1 hour", etc.
-      String? timeStr = parsedDesc['totalTime'] as String? ?? 
-                        parsedDesc['cookTime'] as String? ??
-                        parsedDesc['prepTime'] as String?;
+      // Prefer totalTime, otherwise combine prep + cook times
+      String? timeStr = parsedDesc['totalTime'] as String?;
+      if (timeStr == null) {
+        final prepTime = parsedDesc['prepTime'] as String?;
+        final cookTime = parsedDesc['cookTime'] as String?;
+        if (prepTime != null && cookTime != null) {
+          // Combine prep and cook times
+          timeStr = _combineTimes(prepTime, cookTime);
+        } else {
+          // Use whichever is available
+          timeStr = cookTime ?? prepTime;
+        }
+      }
 
       return RecipeImportResult(
         name: title,
@@ -688,6 +690,35 @@ class YouTubeStrategy implements RecipeParserStrategy {
     if (hours > 0) return '${hours}h';
     if (minutes > 0) return '${minutes} min';
     return time.trim();
+  }
+
+  /// Parse time string into total minutes
+  int? _parseTimeToMinutes(String time) {
+    final lower = time.toLowerCase().trim();
+    final hourMatch = RegExp(r'(\d+)\s*(?:hour|hr|h)').firstMatch(lower);
+    final minMatch = RegExp(r'(\d+)\s*(?:minute|min|m)').firstMatch(lower);
+    
+    final hours = hourMatch != null ? int.tryParse(hourMatch.group(1) ?? '0') ?? 0 : 0;
+    final minutes = minMatch != null ? int.tryParse(minMatch.group(1) ?? '0') ?? 0 : 0;
+    
+    final total = hours * 60 + minutes;
+    return total > 0 ? total : null;
+  }
+
+  /// Combine prep and cook times into a single total time string
+  String _combineTimes(String prepTime, String cookTime) {
+    final prepMinutes = _parseTimeToMinutes(prepTime) ?? 0;
+    final cookMinutes = _parseTimeToMinutes(cookTime) ?? 0;
+    final totalMinutes = prepMinutes + cookMinutes;
+    
+    if (totalMinutes <= 0) return cookTime; // Fallback to cook time string
+    
+    final hours = totalMinutes ~/ 60;
+    final minutes = totalMinutes % 60;
+    
+    if (hours > 0 && minutes > 0) return '${hours}h ${minutes}m';
+    if (hours > 0) return '${hours}h';
+    return '${minutes} min';
   }
 
   List<String> _extractYouTubeChapters(String description) {
@@ -876,7 +907,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final ingredients = _ingParser.parseList(rawIngs);
     
     // Extract other fields
-    final serves = _parseString(data['recipeYield'] ?? data['yield'] ?? data['serves']);
+    final serves = _parseString(data['recipeYield'] ?? data['yield'] ?? data['serves'] ?? data['yieldTextOverride']);
     final time = _parseTime(data);
     final imageUrl = _parseImage(data['image']);
     final description = _parseString(data['description']);
@@ -923,17 +954,38 @@ class StandardWebStrategy implements RecipeParserStrategy {
     
     if (data is List) {
       final results = <String>[];
+      String? lastGroupName;  // Track GBC-style section names
       
       for (final item in data) {
         if (item is String) {
           results.add(item);
         } else if (item is Map) {
-          // Handle sectioned ingredients (WordPress ACF, Great British Chefs, Tasty.co, etc.)
+          // Great British Chefs format: each ingredient has groupName for section
+          // Format: {groupName: "Section", unstructuredTextMetric: "1.5kg lamb shoulder"}
+          // Check this FIRST because GBC items may have an 'ingredient' key too (nested object)
+          if (item.containsKey('unstructuredTextMetric') || item.containsKey('linkTextMetric')) {
+            final groupName = item['groupName']?.toString();
+            final ingredientText = item['unstructuredTextMetric']?.toString() ?? 
+                                   item['linkTextMetric']?.toString() ?? '';
+            
+            // Add section header if this is a new group
+            if (groupName != null && groupName.isNotEmpty && groupName != lastGroupName) {
+              results.add('[${_cleanSectionHeader(groupName)}]');
+              lastGroupName = groupName;
+            }
+            
+            if (ingredientText.isNotEmpty) {
+              results.add(ingredientText.trim());
+            }
+            continue;
+          }
+          
+          // Handle sectioned ingredients (WordPress ACF, Tasty.co, etc.)
           // Tasty.co format: {name: "Birria", ingredients: [{name: "salt", primary_unit: {quantity: "1/4", display: "cup"}, ...}, ...]}
           // Other formats: {groupName: "Sauce", items: [...]} or {section: "Sauce", ingredients: [...]}
           final sectionName = item['groupName'] ?? item['section'] ?? item['title'] ?? 
                              (item.containsKey('ingredients') && item.containsKey('name') ? item['name'] : null);
-          final sectionItems = item['items'] ?? item['ingredients'] ?? item['unstructuredTextMetric'];
+          final sectionItems = item['items'] ?? item['ingredients'];
           
           if (sectionName != null && sectionItems != null && sectionItems is List) {
             // This is a section with grouped ingredients
@@ -942,8 +994,6 @@ class StandardWebStrategy implements RecipeParserStrategy {
               final ingText = _formatIngredientItem(si);
               if (ingText != null && ingText.isNotEmpty) results.add(ingText);
             }
-          } else if (sectionItems != null && sectionItems is String) {
-            results.add(sectionItems);
           } else {
             // Regular ingredient object (not a section)
             final ingText = _formatIngredientItem(item);
@@ -994,6 +1044,21 @@ class StandardWebStrategy implements RecipeParserStrategy {
       return buffer.toString();
     }
     
+    // Saveur/WordPress ACF format: {ingredient: "name", quantity: "2", measurement: "cups"}
+    // Note: 'ingredient' must be a String, not an object
+    if (item.containsKey('ingredient') && item['ingredient'] is String) {
+      final quantity = item['quantity']?.toString() ?? '';
+      final measurement = item['measurement']?.toString() ?? '';
+      final ingredientName = item['ingredient']?.toString() ?? '';
+      if (ingredientName.isNotEmpty) {
+        final parts = <String>[];
+        if (quantity.isNotEmpty) parts.add(quantity);
+        if (measurement.isNotEmpty) parts.add(measurement);
+        parts.add(ingredientName);
+        return parts.join(' ').trim();
+      }
+    }
+    
     // Standard formats: {text: "..."} or {name: "..."}
     final text = item['text'] ?? item['name'] ?? item['unstructuredTextMetric'];
     return text?.toString();
@@ -1003,6 +1068,14 @@ class StandardWebStrategy implements RecipeParserStrategy {
   List<String> _extractDirections(dynamic data) {
     if (data == null) return [];
     if (data is String) return data.split(RegExp(r'\n+'));
+    
+    // Handle single object (some sites have a single HowToStep instead of array)
+    if (data is Map) {
+      final results = <String>[];
+      final text = data['text'] ?? data['display_text'] ?? data['name'];
+      if (text != null) results.add(_cleanDirectionStep(text.toString()));
+      return results;
+    }
     
     if (data is List) {
       final results = <String>[];
@@ -1186,8 +1259,11 @@ class StandardWebStrategy implements RecipeParserStrategy {
     
     // Quality check: If ingredients are just single words or short names without quantities
     // (from meta content), try to find better detailed ingredients from HTML structure.
-    // Pattern: \d for numbers, or measurement units like cup, tbsp, g, ml, oz
-    final quantityPattern = RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml|lb|pound)', caseSensitive: false);
+    // Pattern: digits/fractions followed by a measurement unit
+    final quantityPattern = RegExp(
+      r'[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*(?:cup|cups|tbsp|tablespoons?|tsp|teaspoons?|oz|ounces?|ml|g|grams?|kg|lb|lbs?|pounds?|liters?|litres?|quarts?|pints?|gallons?|fl\.?\s*oz|dash(?:es)?|splash(?:es)?|pinch(?:es)?|drops?|parts?|cl|dl)',
+      caseSensitive: false
+    );
     final hasQuantities = rawIngs.any((item) => quantityPattern.hasMatch(item));
     
     if (!hasQuantities && rawIngs.isNotEmpty) {
@@ -1593,12 +1669,35 @@ class StandardWebStrategy implements RecipeParserStrategy {
             ingredients.addAll(sibling.querySelectorAll('li').map((e) => e.text.trim()).where((s) => s.isNotEmpty));
             break;
           }
+          
+          // Check for bullet-point text (e.g., "• 200g Sugar • 100g Flour")
+          final siblingText = sibling.text;
+          if (siblingText.contains('•')) {
+            final parts = siblingText.split('•');
+            for (var part in parts) {
+              part = _ingParser.decodeHtml(part.trim());
+              if (part.isNotEmpty && part.length >= 5 && part.length <= 150 && _couldBeIngredientLine(part)) {
+                ingredients.add(part);
+              }
+            }
+            if (ingredients.isNotEmpty) break;
+          }
+          
           // Check if the sibling is a div containing ingredients (common on cocktail sites)
-          final divIngredients = sibling.querySelectorAll('p, div');
+          final divIngredients = sibling.querySelectorAll('p, div, span');
           if (divIngredients.isNotEmpty) {
             for (final el in divIngredients) {
               final elText = el.text.trim();
-              if (_couldBeIngredientLine(elText) || _looksLikeCocktailIngredient(elText)) {
+              // Check for bullet text inside child elements
+              if (elText.contains('•')) {
+                final parts = elText.split('•');
+                for (var part in parts) {
+                  part = _ingParser.decodeHtml(part.trim());
+                  if (part.isNotEmpty && part.length >= 5 && part.length <= 150 && _couldBeIngredientLine(part)) {
+                    ingredients.add(part);
+                  }
+                }
+              } else if (_couldBeIngredientLine(elText) || _looksLikeCocktailIngredient(elText)) {
                 ingredients.add(elText);
               }
             }
@@ -1656,9 +1755,34 @@ class StandardWebStrategy implements RecipeParserStrategy {
     return directions;
   }
 
+  /// Check if text could be an ingredient line (more flexible than strict measurement matching)
   bool _couldBeIngredientLine(String text) {
     if (text.isEmpty || text.length > 150) return false;
-    return RegExp(r'\d+\s*(?:g|oz|cup|tbsp|tsp|ml|lb|kg)', caseSensitive: false).hasMatch(text);
+    
+    // Has standard measurements (full words and abbreviations)
+    if (RegExp(r'\d+\s*(?:g|grams?|kg|oz|ounce|ounces|lb|lbs|pound|pounds|cup|cups|tbsp|tablespoons?|tsp|teaspoons?|ml|l|cl|dl)', caseSensitive: false).hasMatch(text)) {
+      return true;
+    }
+    // Starts with a number (e.g., "4 eggs")
+    if (RegExp(r'^\d+\s+').hasMatch(text)) {
+      return true;
+    }
+    // Starts with a fraction (e.g., "½ cup")
+    if (RegExp(r'^[½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(text)) {
+      return true;
+    }
+    // Contains common food words (be permissive for paragraph-style ingredients)
+    final lower = text.toLowerCase();
+    const foodWords = [
+      'salt', 'pepper', 'oil', 'butter', 'sugar', 'flour', 'water', 'milk',
+      'chicken', 'beef', 'pork', 'fish', 'garlic', 'onion', 'tomato', 'cheese',
+      'cream', 'sauce', 'stock', 'broth', 'vinegar', 'lemon', 'honey', 'eggs',
+      'fresh', 'dried', 'chopped', 'minced', 'sliced', 'diced', 'ground',
+    ];
+    if (foodWords.any((word) => lower.contains(word))) {
+      return true;
+    }
+    return false;
   }
   
   /// Extract directions from Modernist Pantry style (h3 with "Create/Make/Prepare" followed by paragraphs)
@@ -1886,6 +2010,77 @@ class StandardWebStrategy implements RecipeParserStrategy {
       }
     }
     
+    // Try Seedlip-style .recipe-prose divs with h2 headings
+    if ((result['ingredients'] as List).isEmpty) {
+      final recipeProseDivs = RegExp(
+        r'<div[^>]*class="[^"]*recipe-prose[^"]*"[^>]*>(.*?)</div>',
+        caseSensitive: false,
+        dotAll: true,
+      ).allMatches(bodyHtml);
+      
+      for (final divMatch in recipeProseDivs) {
+        final divContent = divMatch.group(1) ?? '';
+        
+        // Extract h2 title
+        final h2Match = RegExp(
+          r'<h2[^>]*>(.*?)</h2>',
+          caseSensitive: false,
+          dotAll: true,
+        ).firstMatch(divContent);
+        
+        if (h2Match == null) continue;
+        
+        final h2Title = h2Match.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim().toLowerCase() ?? '';
+        final afterH2 = divContent.substring(h2Match.end);
+        
+        if (h2Title == 'ingredients' || h2Title.contains('ingredient')) {
+          // Extract ingredients from <ul><li><p> pattern
+          final ulMatch = RegExp(r'<ul[^>]*>(.*?)</ul>', caseSensitive: false, dotAll: true).firstMatch(afterH2);
+          if (ulMatch != null) {
+            final ulContent = ulMatch.group(1) ?? '';
+            final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(ulContent);
+            for (final liMatch in liMatches) {
+              final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+              if (text.isNotEmpty) {
+                (result['ingredients'] as List<String>).add(text);
+              }
+            }
+          }
+        } else if (h2Title.contains('glass') && h2Title.contains('garnish')) {
+          // "Glass and Garnish" pattern
+          final ulMatch = RegExp(r'<ul[^>]*>(.*?)</ul>', caseSensitive: false, dotAll: true).firstMatch(afterH2);
+          if (ulMatch != null) {
+            final ulContent = ulMatch.group(1) ?? '';
+            final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(ulContent);
+            final items = <String>[];
+            for (final liMatch in liMatches) {
+              final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+              if (text.isNotEmpty) items.add(text);
+            }
+            if (items.isNotEmpty) {
+              result['glass'] = items.first;
+              if (items.length > 1) {
+                result['garnish'] = items.sublist(1);
+              }
+            }
+          }
+        } else if (h2Title == 'method' || h2Title.contains('direction') || h2Title.contains('instruction')) {
+          // Directions from <ol> or <ul>
+          final listMatch = RegExp(r'<(?:ol|ul)[^>]*>(.*?)</(?:ol|ul)>', caseSensitive: false, dotAll: true).firstMatch(afterH2);
+          if (listMatch != null) {
+            final listContent = listMatch.group(1) ?? '';
+            final liMatches = RegExp(r'<li[^>]*>(.*?)</li>', caseSensitive: false, dotAll: true).allMatches(listContent);
+            for (final liMatch in liMatches) {
+              final text = _ingParser.decodeHtml(liMatch.group(1)?.replaceAll(RegExp(r'<[^>]+>'), '').trim() ?? '');
+              if (text.isNotEmpty && text.length > 5) {
+                (result['directions'] as List<String>).add(text);
+              }
+            }
+          }
+        }
+      }
+    }
+    
     // Return null if we didn't find anything useful
     if ((result['ingredients'] as List).isEmpty && 
         (result['directions'] as List).isEmpty && 
@@ -2083,8 +2278,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
   }
   
   String? _parseTime(Map<String, dynamic> data) {
-    // Try various time fields
-    final totalTime = data['totalTime'] ?? data['cookTime'] ?? data['prepTime'] ?? data['time'];
+    // Try various time fields (GBC uses cookTimeCustom)
+    final totalTime = data['totalTime'] ?? data['cookTimeCustom'] ?? data['cookTime'] ?? data['prepTime'] ?? data['time'];
     if (totalTime == null) return null;
     
     final str = totalTime.toString();
@@ -2152,11 +2347,14 @@ class StandardWebStrategy implements RecipeParserStrategy {
       return _normalizeCourse(cat);
     }
     
+    // Check if it's a known cocktail site
+    if (_isCocktailSite(url)) return 'Drinks';
+    
     // Guess from URL or name
     final urlLower = url.toLowerCase();
     final name = (data['name'] ?? '').toString().toLowerCase();
     
-    if (urlLower.contains('/drink') || urlLower.contains('/cocktail') || name.contains('cocktail')) return 'Drinks';
+    if (urlLower.contains('/drink') || urlLower.contains('/cocktail') || name.contains('cocktail') || name.contains('negroni') || name.contains('martini')) return 'Drinks';
     if (urlLower.contains('/dessert') || name.contains('cake') || name.contains('cookie')) return 'Desserts';
     if (urlLower.contains('/appetizer') || urlLower.contains('/starter')) return 'Apps';
     if (urlLower.contains('/soup')) return 'Soup';
