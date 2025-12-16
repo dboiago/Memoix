@@ -381,7 +381,7 @@ class _SandwichComponentsGrid extends StatelessWidget {
   }
 
   Widget _buildWideLayout(ThemeData theme) {
-    // Bread (full width) - Condiments | Proteins - Cheese | Vegetables
+    // Bread (full width) - Cheese | Condiments - Proteins | Vegetables
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -392,14 +392,24 @@ class _SandwichComponentsGrid extends StatelessWidget {
             child: _buildComponentSection(theme, 'Bread', [sandwich.bread]),
           ),
         
-        // Row 1: Condiments | Proteins
-        if (sandwich.condiments.isNotEmpty || sandwich.proteins.isNotEmpty)
+        // Row 1: Cheese | Condiments
+        if (sandwich.cheeses.isNotEmpty || sandwich.condiments.isNotEmpty)
           Padding(
             padding: const EdgeInsets.only(bottom: 16),
             child: IntrinsicHeight(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  if (sandwich.cheeses.isNotEmpty)
+                    Expanded(
+                      child: _buildComponentSection(
+                        theme,
+                        sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                        sandwich.cheeses,
+                      ),
+                    ),
+                  if (sandwich.cheeses.isNotEmpty && sandwich.condiments.isNotEmpty)
+                    const SizedBox(width: 16),
                   if (sandwich.condiments.isNotEmpty)
                     Expanded(
                       child: _buildComponentSection(
@@ -408,39 +418,29 @@ class _SandwichComponentsGrid extends StatelessWidget {
                         sandwich.condiments,
                       ),
                     ),
-                  if (sandwich.condiments.isNotEmpty && sandwich.proteins.isNotEmpty)
-                    const SizedBox(width: 16),
-                  if (sandwich.proteins.isNotEmpty)
-                    Expanded(
-                      child: _buildComponentSection(
-                        theme,
-                        sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
-                        sandwich.proteins,
-                      ),
-                    ),
                   // Fill empty space if only one column
-                  if (sandwich.condiments.isEmpty || sandwich.proteins.isEmpty)
+                  if (sandwich.cheeses.isEmpty || sandwich.condiments.isEmpty)
                     const Expanded(child: SizedBox()),
                 ],
               ),
             ),
           ),
         
-        // Row 2: Cheese | Vegetables
-        if (sandwich.cheeses.isNotEmpty || sandwich.vegetables.isNotEmpty)
+        // Row 2: Proteins | Vegetables
+        if (sandwich.proteins.isNotEmpty || sandwich.vegetables.isNotEmpty)
           IntrinsicHeight(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                if (sandwich.cheeses.isNotEmpty)
+                if (sandwich.proteins.isNotEmpty)
                   Expanded(
                     child: _buildComponentSection(
                       theme,
-                      sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                      sandwich.cheeses,
+                      sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
+                      sandwich.proteins,
                     ),
                   ),
-                if (sandwich.cheeses.isNotEmpty && sandwich.vegetables.isNotEmpty)
+                if (sandwich.proteins.isNotEmpty && sandwich.vegetables.isNotEmpty)
                   const SizedBox(width: 16),
                 if (sandwich.vegetables.isNotEmpty)
                   Expanded(
@@ -451,7 +451,7 @@ class _SandwichComponentsGrid extends StatelessWidget {
                     ),
                   ),
                 // Fill empty space if only one column
-                if (sandwich.cheeses.isEmpty || sandwich.vegetables.isEmpty)
+                if (sandwich.proteins.isEmpty || sandwich.vegetables.isEmpty)
                   const Expanded(child: SizedBox()),
               ],
             ),
@@ -470,6 +470,15 @@ class _SandwichComponentsGrid extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 16),
             child: _buildComponentSection(theme, 'Bread', [sandwich.bread]),
           ),
+        if (sandwich.cheeses.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(
+              theme,
+              sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+              sandwich.cheeses,
+            ),
+          ),
         if (sandwich.condiments.isNotEmpty)
           Padding(
             padding: const EdgeInsets.only(bottom: 16),
@@ -486,15 +495,6 @@ class _SandwichComponentsGrid extends StatelessWidget {
               theme,
               sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
               sandwich.proteins,
-            ),
-          ),
-        if (sandwich.cheeses.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 16),
-            child: _buildComponentSection(
-              theme,
-              sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-              sandwich.cheeses,
             ),
           ),
         if (sandwich.vegetables.isNotEmpty)
