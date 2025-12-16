@@ -702,29 +702,78 @@ class YouTubeStrategy implements RecipeParserStrategy {
         }
       }
       
-      // Section header detection
-      if (RegExp(r'^(ingredients?|shopping list)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
+      // Strip decorative characters for section header detection
+      final strippedLine = line.replaceAll(RegExp(r'^[•\-*#▶►▸→]+\s*|\s*[•\-*#◀◄◂←]+$'), '').trim();
+      final lowerStripped = strippedLine.toLowerCase();
+      
+      // Section header detection - expanded patterns
+      if (_isIngredientSectionHeader(lowerStripped)) {
         currentSection = 'ingredients'; continue;
-      } else if (RegExp(r'^(directions?|instructions?|method|steps?)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
+      } else if (_isDirectionSectionHeader(lowerStripped)) {
         currentSection = 'directions'; continue;
-      } else if (RegExp(r'^(notes?|tips?)[:\s]*$', caseSensitive: false).hasMatch(lower)) {
+      } else if (_isNotesSectionHeader(lowerStripped)) {
         currentSection = 'notes'; continue;
+      } else if (_isIgnorableSection(lowerStripped)) {
+        currentSection = 'ignore'; continue;
       }
       
-      // Skip timestamp lines, URLs, and social links
-      if (RegExp(r'^\d{1,2}:\d{2}').hasMatch(line)) continue;
-      if (line.contains('http://') || line.contains('https://')) continue;
-      if (RegExp(r'(instagram|facebook|twitter|tiktok|subscribe|follow)', caseSensitive: false).hasMatch(lower)) continue;
-
-      if (currentSection == 'ingredients') ingredients.add(line);
-      else if (currentSection == 'directions') directions.add(line);
-      else if (currentSection == 'notes') notes.add(line);
-      else {
-        // Auto-detect ingredient lines by measurement patterns
-        if (RegExp(r'\d+\s*(?:cup|cups|tbsp|tsp|g|oz|ml|lb|kg)', caseSensitive: false).hasMatch(line)) {
+      // Skip ignorable lines (URLs, social links, separators, etc.)
+      if (_isIgnorableLine(line)) continue;
+      
+      // If no section yet, try to auto-detect
+      if (currentSection == null) {
+        if (_looksLikeIngredient(line)) {
           currentSection = 'ingredients';
-          ingredients.add(line);
+        } else if (_looksLikeDirection(line)) {
+          currentSection = 'directions';
+        } else {
+          notes.add(line);
+          continue;
         }
+      }
+      
+      // Smart section assignment with content-aware switching
+      switch (currentSection) {
+        case 'ingredients':
+          if (_looksLikeIngredient(line)) {
+            ingredients.add(line);
+          } else if (_looksLikeDirection(line) && !_looksLikeIngredient(line)) {
+            // Switched to directions without a header
+            currentSection = 'directions';
+            directions.add(_cleanDirectionLine(line));
+          }
+          break;
+        case 'directions':
+          if (_looksLikeIngredient(line) && !_isTimestampedStep(line)) {
+            // This looks like an ingredient, switch back
+            currentSection = 'ingredients';
+            ingredients.add(line);
+          } else if (_looksLikeDirection(line)) {
+            directions.add(_cleanDirectionLine(line));
+          } else if (_isTimestampedStep(line)) {
+            directions.add(_cleanDirectionLine(line));
+          } else if (line.length > 30 && !_looksLikeIngredient(line)) {
+            // Long lines in directions are likely directions
+            if (!line.contains('...') && !line.startsWith('http')) {
+              directions.add(_cleanDirectionLine(line));
+            }
+          }
+          break;
+        case 'notes':
+          notes.add(line);
+          break;
+        case 'ignore':
+          break;
+        default:
+          if (_looksLikeIngredient(line)) {
+            currentSection = 'ingredients';
+            ingredients.add(line);
+          } else if (_looksLikeDirection(line)) {
+            currentSection = 'directions';
+            directions.add(_cleanDirectionLine(line));
+          } else {
+            notes.add(line);
+          }
       }
     }
     
@@ -732,6 +781,97 @@ class YouTubeStrategy implements RecipeParserStrategy {
     result['directions'] = directions;
     if (notes.isNotEmpty) result['notes'] = notes.join('\n');
     return result;
+  }
+  
+  // YouTube description parsing helper methods
+  bool _isIngredientSectionHeader(String line) {
+    return RegExp(r'^(ingredients?|what you.?ll need|you.?ll need|shopping list|for the recipe)[:\s]*$', caseSensitive: false).hasMatch(line) ||
+           line == 'ingredients' || line == 'ingredient';
+  }
+  
+  bool _isDirectionSectionHeader(String line) {
+    return RegExp(r'^(directions?|instructions?|method|steps?|how to (?:make|cook|prepare)|procedure)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  bool _isNotesSectionHeader(String line) {
+    return RegExp(r'^(notes?|tips?|variations?)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  bool _isIgnorableSection(String line) {
+    return RegExp(r'^(follow me|subscribe|social|links?|connect|my (?:gear|equipment|kitchen|tools|setup|camera)|affiliate|music|credits?|shop|merch|merchandise|sponsors?|business|contact|about me|faq|disclaimer)[:\s]*$', caseSensitive: false).hasMatch(line);
+  }
+  
+  bool _isIgnorableLine(String line) {
+    // Separator lines
+    if (RegExp(r'^[─━═—–\-_=]{3,}\s*$').hasMatch(line)) return true;
+    // ALL CAPS lines that look like section headers
+    if (line.length > 10 && line.length < 60) {
+      final upperCount = line.replaceAll(RegExp(r'[^A-Z]'), '').length;
+      final letterCount = line.replaceAll(RegExp(r'[^A-Za-z]'), '').length;
+      if (letterCount > 5 && upperCount / letterCount > 0.8) return true;
+    }
+    // URLs
+    if (line.contains('http://') || line.contains('https://') || line.startsWith('www.') || 
+        line.contains('.com/') || line.contains('.co/')) return true;
+    // Social media handles
+    if (RegExp(r'^[@#]').hasMatch(line)) return true;
+    // Amazon affiliate patterns
+    if (RegExp(r'amzn\.to|amazon\.com|affiliate|commission', caseSensitive: false).hasMatch(line)) return true;
+    // Social media and promo boilerplate
+    if (RegExp(r'subscribe|follow me|check out my|filmed with|music by|instagram|facebook|twitter|tiktok|patreon|merch|merchandise|shop my|use code|discount|sponsored|#ad\b', caseSensitive: false).hasMatch(line)) return true;
+    // Equipment/gear list sections
+    if (RegExp(r'^my\s+(?:gear|equipment|kitchen|tools|camera|setup)|i\s+use\s+(?:this|these)|what i\s+(?:film|shoot|use)', caseSensitive: false).hasMatch(line)) return true;
+    // Business inquiries / contact info
+    if (RegExp(r'business\s*(?:inquir|email)|contact\s*me|for\s*(?:inquir|collaborat)', caseSensitive: false).hasMatch(line)) return true;
+    return false;
+  }
+  
+  bool _looksLikeIngredient(String line) {
+    // Exclude timestamp lines
+    if (_isTimestampedStep(line)) return false;
+    // Exclude numbered direction steps
+    if (RegExp(r'^\d+[.):]\s+[A-Za-z]').hasMatch(line)) return false;
+    // Contains measurement units
+    if (RegExp(r'\d+\s*(?:g|kg|oz|lb|cup|tbsp|tsp|ml|l|pound|gram|ounce|teaspoon|tablespoon)s?\b', caseSensitive: false).hasMatch(line)) return true;
+    // Starts with a number followed by a unit
+    if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?\s*(?:cup|tbsp|tsp|oz|lb|g|kg|ml|l)s?\b', caseSensitive: false).hasMatch(line)) return true;
+    // Starts with a fraction
+    if (RegExp(r'^(?:\d+\s+)?(?:\d+/\d+|[½¼¾⅓⅔⅛⅜⅝⅞])\s').hasMatch(line)) return true;
+    // Baker's percentage format
+    if (RegExp(r'\d+%\s*[–-]?\s*\d*', caseSensitive: false).hasMatch(line) && line.length < 80) return true;
+    // Short line with common ingredient words
+    if (line.length < 60 && RegExp(r'\b(?:salt|pepper|butter|oil|garlic|onion|flour|sugar|water|milk|cream|egg|chicken|beef|pork|yeast|olive|rosemary|herbs?)\b', caseSensitive: false).hasMatch(line)) return true;
+    // "as needed" or "to taste" patterns
+    if (RegExp(r'\b(?:as needed|to taste|optional|for topping|for garnish)\b', caseSensitive: false).hasMatch(line) && line.length < 60) return true;
+    return false;
+  }
+  
+  bool _looksLikeDirection(String line) {
+    // Numbered step
+    if (RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false).hasMatch(line)) return true;
+    // Timestamped step
+    if (_isTimestampedStep(line)) return true;
+    // Starts with cooking action verb
+    if (RegExp(r'^(?:preheat|heat|mix|combine|add|stir|whisk|fold|pour|place|put|cook|bake|roast|fry|sauté|boil|simmer|reduce|let|allow|serve|garnish|season|taste|check|remove|transfer|set|cover|wrap|chill|refrigerate|freeze|blend|process|pulse|slice|dice|chop|mince|grate|shred|knead|proof|rise|ferment|dimple|top|cut|use|form|make|prepare|work|bring|turn|roll|shape|flatten|stretch|pull|push|press|spread|brush|drizzle|sprinkle|dust|coat|dip|toss|flip|rotate|rest|cool|warm|melt|dissolve|cream|beat|whip|pipe|layer|assemble|arrange|portion|divide|measure|weigh|sift|strain|drain|rinse|wash|dry|pat|trim|peel|core|seed|pit|zest|juice|squeeze|crack|separate|break|tear|crumble|crush|grind|puree|mash|smash|score|slit)\b', caseSensitive: false).hasMatch(line)) return true;
+    // Long sentence with instructional keywords
+    if (line.length > 40 && RegExp(r'\b(?:until|minutes?|hours?|degrees?|°|constantly|occasionally|gently|carefully|slowly|thoroughly|completely|well|evenly)\b', caseSensitive: false).hasMatch(line)) return true;
+    return false;
+  }
+  
+  bool _isTimestampedStep(String line) {
+    // Matches "Step name - 00:55" or "Mixing dough – 1:23:45"
+    return RegExp(r'^.+\s*[–-]\s*\d{1,2}:\d{2}(?::\d{2})?\s*$').hasMatch(line) ||
+           RegExp(r'^\d{1,2}:\d{2}(?::\d{2})?\s+.+$').hasMatch(line);
+  }
+  
+  String _cleanDirectionLine(String line) {
+    // Remove leading step numbers
+    var cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
+    // Remove trailing timestamps
+    cleaned = cleaned.replaceFirst(RegExp(r'\s*[–-]\s*\d{1,2}:\d{2}(?::\d{2})?\s*$'), '');
+    // Remove leading timestamps
+    cleaned = cleaned.replaceFirst(RegExp(r'^\d{1,2}:\d{2}(?::\d{2})?\s+'), '');
+    return cleaned.trim();
   }
   
   /// Normalize time string to consistent format (e.g., "30 min", "1h 30m")
@@ -1172,7 +1312,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
     return _ingParser.decodeHtml(cleaned.trim());
   }
 
-  // ========== Embedded JS Parsing (Next.js, Nuxt, Vite SSR) ==========
+  // ========== Embedded JS Parsing (Next.js, Nuxt, Vite SSR, GBC) ==========
   
   RecipeImportResult? _parseEmbeddedJs(String body, String url) {
     final patterns = <String, RegExp>{
@@ -1199,6 +1339,117 @@ class StandardWebStrategy implements RecipeParserStrategy {
         }
       } catch (_) { continue; }
     }
+    
+    // Try Great British Chefs format: inline script with recipeIngredient containing objects
+    // Pattern: look for script containing "groupName" and "unstructuredTextMetric"
+    if (url.contains('greatbritishchefs.com')) {
+      final gbcResult = _parseGreatBritishChefsData(body, url);
+      if (gbcResult != null) return gbcResult;
+    }
+    
+    return null;
+  }
+  
+  /// Parse Great British Chefs proprietary inline script data
+  RecipeImportResult? _parseGreatBritishChefsData(String body, String url) {
+    // GBC embeds recipe data in inline script tags
+    // Look for recipeIngredient array with groupName and unstructuredTextMetric
+    
+    // Find all script blocks
+    final scriptPattern = RegExp(r'<script[^>]*>(.*?)</script>', dotAll: true);
+    final scriptMatches = scriptPattern.allMatches(body);
+    
+    for (final match in scriptMatches) {
+      final scriptContent = match.group(1) ?? '';
+      
+      // Skip if this doesn't look like recipe data
+      if (!scriptContent.contains('unstructuredTextMetric') && !scriptContent.contains('recipeIngredient')) {
+        continue;
+      }
+      
+      // Try to extract JSON data
+      // GBC sometimes uses window.pageData = {...} or similar
+      // Also try to find standalone JSON objects with recipe structure
+      
+      // Look for yieldTextOverride
+      String? serves;
+      final yieldMatch = RegExp(r'"yieldTextOverride"\s*:\s*"([^"]*)"').firstMatch(scriptContent);
+      if (yieldMatch != null) {
+        serves = yieldMatch.group(1)?.trim();
+      }
+      
+      // Extract ingredients with groupName
+      final ingredients = <String>[];
+      String? lastGroupName;
+      
+      // Find all ingredient entries with groupName and unstructuredTextMetric
+      final ingredientPattern = RegExp(
+        r'"groupName"\s*:\s*"([^"]*)"\s*,.*?"unstructuredTextMetric"\s*:\s*"([^"]*)"',
+        dotAll: true
+      );
+      
+      for (final ingMatch in ingredientPattern.allMatches(scriptContent)) {
+        final groupName = ingMatch.group(1)?.trim();
+        final ingredientText = ingMatch.group(2)?.trim();
+        
+        // Add section header if new group
+        if (groupName != null && groupName.isNotEmpty && groupName != lastGroupName) {
+          ingredients.add('[${_cleanSectionHeader(groupName)}]');
+          lastGroupName = groupName;
+        }
+        
+        // Add ingredient
+        if (ingredientText != null && ingredientText.isNotEmpty) {
+          ingredients.add(_ingParser.decodeHtml(ingredientText));
+        }
+      }
+      
+      // Also try alternative ordering (unstructuredTextMetric before groupName)
+      if (ingredients.isEmpty) {
+        final altPattern = RegExp(
+          r'"unstructuredTextMetric"\s*:\s*"([^"]*)".*?"groupName"\s*:\s*"([^"]*)"',
+          dotAll: true
+        );
+        
+        for (final ingMatch in altPattern.allMatches(scriptContent)) {
+          final ingredientText = ingMatch.group(1)?.trim();
+          final groupName = ingMatch.group(2)?.trim();
+          
+          // Add section header if new group
+          if (groupName != null && groupName.isNotEmpty && groupName != lastGroupName) {
+            ingredients.add('[${_cleanSectionHeader(groupName)}]');
+            lastGroupName = groupName;
+          }
+          
+          // Add ingredient
+          if (ingredientText != null && ingredientText.isNotEmpty) {
+            ingredients.add(_ingParser.decodeHtml(ingredientText));
+          }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) {
+        // Extract title
+        String? title;
+        final titleMatch = RegExp(r'"title"\s*:\s*"([^"]*)"').firstMatch(scriptContent);
+        if (titleMatch != null) {
+          title = titleMatch.group(1)?.trim();
+        }
+        
+        return RecipeImportResult(
+          name: _ingParser.decodeHtml(title ?? 'Untitled Recipe'),
+          source: RecipeSource.url,
+          sourceUrl: url,
+          ingredients: _ingParser.parseList(ingredients),
+          directions: [], // GBC directions would need similar extraction
+          serves: serves,
+          nameConfidence: title != null ? 0.8 : 0.3,
+          ingredientsConfidence: 0.8,
+          servesConfidence: serves != null ? 0.8 : 0.0,
+        );
+      }
+    }
+    
     return null;
   }
 
@@ -1214,6 +1465,8 @@ class StandardWebStrategy implements RecipeParserStrategy {
       ['props', 'pageProps', 'recipe'],
       ['data'],  // Nuxt
       ['state', 'recipe'],
+      // Saveur uses a deeply nested path - add common WordPress/WPGraphQL patterns
+      ['props', 'pageProps', 'dehydratedState'],
     ];
     
     for (final path in commonPaths) {
@@ -1570,6 +1823,113 @@ class StandardWebStrategy implements RecipeParserStrategy {
       rawIngredientStrings = _extractModernistPantryIngredients(document);
       if (rawDirections.isEmpty) {
         rawDirections = _extractModernistPantryDirections(document);
+      }
+    }
+
+    // 0c. Punch Drink specific parsing
+    // Uses ul.ingredients-list > li for visible ingredients (hidden duplicates have display:none)
+    // Directions in ol[itemprop="recipeInstructions"] > li
+    // Garnish/glass in p.garn-glass
+    if (rawIngredientStrings.isEmpty && url.contains('punchdrink.com')) {
+      // Get visible ingredients from ul.ingredients-list
+      final visibleIngs = document.querySelectorAll('ul.ingredients-list > li');
+      for (final li in visibleIngs) {
+        final style = li.attributes['style'] ?? '';
+        if (!style.contains('display:none') && !style.contains('display: none')) {
+          final text = _ingParser.decodeHtml(li.text.trim());
+          if (text.isNotEmpty) rawIngredientStrings.add(text);
+        }
+      }
+      
+      // Get directions from ol[itemprop="recipeInstructions"]
+      if (rawDirections.isEmpty) {
+        final dirList = document.querySelector('ol[itemprop="recipeInstructions"]');
+        if (dirList != null) {
+          for (final li in dirList.querySelectorAll('li')) {
+            final text = _cleanDirectionStep(li.text.trim());
+            if (text.isNotEmpty && text.length > 5) rawDirections.add(text);
+          }
+        }
+      }
+      
+      // Get glass/garnish from p.garn-glass
+      final garnGlass = document.querySelector('p.garn-glass');
+      if (garnGlass != null) {
+        final html = garnGlass.innerHtml;
+        // Parse "Garnish: xxx" pattern
+        final garnishMatch = RegExp(r'<span>Garnish:</span>\s*([^<]+)', caseSensitive: false).firstMatch(html);
+        if (garnishMatch != null) {
+          final garnishText = garnishMatch.group(1)?.trim();
+          if (garnishText != null && garnishText.isNotEmpty) {
+            garnish = _splitGarnishText(garnishText);
+          }
+        }
+        // Glass is often mentioned in directions for Punch Drink
+      }
+    }
+
+    // 0d. Cooked plugin (WordPress) - used by Kitchen Craft and others
+    // Structure: .cooked-recipe-ingredients with nested .cooked-single-ingredient divs
+    // Has separate spans for amount, measurement, name
+    if (rawIngredientStrings.isEmpty) {
+      final cookedContainer = document.querySelector('.cooked-recipe-ingredients');
+      if (cookedContainer != null) {
+        final cookedItems = cookedContainer.querySelectorAll('.cooked-single-ingredient');
+        for (final item in cookedItems) {
+          final classes = item.classes;
+          if (classes.contains('cooked-heading')) {
+            // This is a section header
+            final headerText = item.text.trim();
+            if (headerText.isNotEmpty && headerText.toLowerCase() != 'ingredients') {
+              rawIngredientStrings.add('[${_cleanSectionHeader(headerText)}]');
+            }
+          } else if (classes.contains('cooked-ingredient')) {
+            // This is an actual ingredient - combine the structured parts
+            final amount = item.querySelector('.cooked-ing-amount')?.text.trim() ?? '';
+            final measurement = item.querySelector('.cooked-ing-measurement')?.text.trim() ?? '';
+            final name = item.querySelector('.cooked-ing-name')?.text.trim() ?? '';
+            final ingredientStr = '$amount $measurement $name'.replaceAll(RegExp(r'\s+'), ' ').trim();
+            if (ingredientStr.isNotEmpty) {
+              rawIngredientStrings.add(_ingParser.decodeHtml(ingredientStr));
+            }
+          }
+        }
+        
+        // Also get Cooked directions
+        if (rawDirections.isEmpty) {
+          final cookedDirs = document.querySelector('.cooked-recipe-directions');
+          if (cookedDirs != null) {
+            final dirItems = cookedDirs.querySelectorAll('.cooked-single-direction');
+            for (final item in dirItems) {
+              final classes = item.classes;
+              if (classes.contains('cooked-heading')) {
+                final headerText = item.text.trim();
+                if (headerText.isNotEmpty && !headerText.toLowerCase().contains('direction') && 
+                    !headerText.toLowerCase().contains('instruction')) {
+                  rawDirections.add('**${_cleanSectionHeader(headerText)}**');
+                }
+              } else if (classes.contains('cooked-direction')) {
+                final content = item.querySelector('.cooked-dir-content');
+                if (content != null) {
+                  // Get all paragraphs in the direction content
+                  for (final p in content.querySelectorAll('p')) {
+                    final text = _cleanDirectionStep(p.text.trim());
+                    if (text.isNotEmpty && text.length > 10) {
+                      rawDirections.add(text);
+                    }
+                  }
+                  // If no paragraphs, get the full content
+                  if (rawDirections.isEmpty) {
+                    final text = _cleanDirectionStep(content.text.trim());
+                    if (text.isNotEmpty && text.length > 10) {
+                      rawDirections.add(text);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
 
@@ -2020,6 +2380,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
   /// Extract ingredients from Modernist Pantry style
   /// Structure: <h2 id="ingredients">Ingredients</h2> followed by <ul> with <li> items
   /// Section headers like "Ingredients Black Garlic Honey:" are in bold <b> within <li>
+  /// Note: WordPress Gutenberg may insert <!-- wp:list --> comments in <p> tags between heading and list
   List<String> _extractModernistPantryIngredients(Document document) {
     final ingredients = <String>[];
     
@@ -2039,22 +2400,39 @@ class StandardWebStrategy implements RecipeParserStrategy {
     
     if (ingredientHeading == null) return ingredients;
     
-    // Strategy 1: Find ul elements that are siblings (may have many p tags in between)
+    // Strategy 1: Find ul elements that are siblings (may have many p tags in between from WordPress comments)
     var sibling = ingredientHeading.nextElementSibling;
     int attempts = 0;
-    while (sibling != null && attempts < 30) { // Increased from 10 to 30
-      // Stop if we hit another h2 that's a different section
+    bool passedYieldSection = false;
+    while (sibling != null && attempts < 50) { // Increased to 50 for deeply nested content
+      final tagName = sibling.localName ?? '';
       final siblingId = sibling.attributes['id'] ?? '';
-      if (sibling.localName == 'h2' && siblingId != 'ingredients') {
+      final siblingText = sibling.text.trim().toLowerCase();
+      
+      // Skip empty p tags (WordPress comment placeholders like <!-- wp:list -->)
+      if (tagName == 'p' && (sibling.text.trim().isEmpty || sibling.innerHtml.contains('<!--'))) {
+        sibling = sibling.nextElementSibling;
+        attempts++;
+        continue;
+      }
+      
+      // Stop if we hit a h2 that's a different section (equipment, directions, etc.)
+      if (tagName == 'h2') {
         if (siblingId == 'equipment' || siblingId == 'timing' || siblingId == 'yield' ||
-            sibling.text.toLowerCase().contains('equipment') ||
-            sibling.text.toLowerCase().contains('direction') ||
-            sibling.text.toLowerCase().contains('method')) {
+            siblingText.contains('equipment') || siblingText.contains('direction') ||
+            siblingText.contains('method') || siblingText.contains('instruction')) {
           break;
+        }
+        // Skip h2#yield - yield info is often between ingredient sections
+        if (siblingId == 'yield') {
+          passedYieldSection = true;
+          sibling = sibling.nextElementSibling;
+          attempts++;
+          continue;
         }
       }
       
-      if (sibling.localName == 'ul' || sibling.localName == 'ol') {
+      if (tagName == 'ul' || tagName == 'ol') {
         for (final li in sibling.querySelectorAll('li')) {
           // Check if this is a section header (in bold)
           final boldEl = li.querySelector('b, strong');
@@ -2070,10 +2448,16 @@ class StandardWebStrategy implements RecipeParserStrategy {
           } else {
             // This is an actual ingredient - prefer span text if present
             final span = li.querySelector('span');
-            final text = _ingParser.decodeHtml(span?.text.trim() ?? li.text.trim());
-            if (text.isNotEmpty && !text.toLowerCase().startsWith('ingredients')) {
-              ingredients.add(text);
-            }
+            final rawText = span?.text.trim() ?? li.text.trim();
+            // Skip empty or very short text
+            if (rawText.isEmpty || rawText.length < 3) continue;
+            // Skip lines that start with "Ingredients" (section header without bold)
+            if (rawText.toLowerCase().startsWith('ingredients')) continue;
+            // Skip "Yield" or "Portions" info
+            if (rawText.toLowerCase().contains('portions') || rawText.toLowerCase().contains('yield')) continue;
+            
+            final text = _ingParser.decodeHtml(rawText);
+            ingredients.add(text);
           }
         }
         // Continue to find more ul elements (some recipes have multiple lists)
@@ -2158,15 +2542,22 @@ class StandardWebStrategy implements RecipeParserStrategy {
   
   /// Extract directions from Modernist Pantry style 
   /// Structure: li.one/.two/.three containing h3 headers and nested .equipment-time divs with instruction text
+  /// The li elements may be directly under ul, not inside .product-list
   List<String> _extractModernistPantryDirections(Document document) {
     final directions = <String>[];
     
-    // Find li elements with step classes (one, two, three, etc.) or all li within .product-list
-    var stepItems = document.querySelectorAll('.product-list li.one, .product-list li.two, .product-list li.three, .product-list li.four, .product-list li.five');
+    // Find li elements with step classes (one, two, three, etc.)
+    // Try multiple selector patterns since the structure may vary
+    var stepItems = document.querySelectorAll('ul > li.one, ul > li.two, ul > li.three, ul > li.four, ul > li.five');
     
-    // If no specific class matches, try all li in product-list that have h3
+    // If no specific class matches, try product-list
     if (stepItems.isEmpty) {
-      stepItems = document.querySelectorAll('.product-list ul > li');
+      stepItems = document.querySelectorAll('.product-list li.one, .product-list li.two, .product-list li.three, .product-list li.four, .product-list li.five');
+    }
+    
+    // If still empty, try all li that have h3 with action words
+    if (stepItems.isEmpty) {
+      stepItems = document.querySelectorAll('li');
     }
     
     for (final li in stepItems) {
@@ -2174,27 +2565,32 @@ class StandardWebStrategy implements RecipeParserStrategy {
       final h3 = li.querySelector('h3');
       if (h3 != null) {
         final stepTitle = h3.text.trim();
+        // Check for action words that indicate cooking steps
         if (stepTitle.isNotEmpty && 
-            RegExp(r'(?:Create|Make|Prepare|Churn|Step|Enjoy)', caseSensitive: false).hasMatch(stepTitle)) {
+            RegExp(r'(?:Create|Make|Prepare|Churn|Step|Enjoy|Mix|Combine|Add|Heat|Cook|Bake)', caseSensitive: false).hasMatch(stepTitle)) {
           directions.add('**$stepTitle**');
           
-          // Find all spans with instruction text within this li's nested divs
-          final spans = li.querySelectorAll('.equipment-time span, .product-list span');
+          // Find all spans with instruction text within this li
+          final spans = li.querySelectorAll('.equipment-time span, div span');
           for (final span in spans) {
             final text = span.text.trim();
-            if (text.length > 15) {
+            if (text.length > 15 && !directions.contains(text)) {
               directions.add(_cleanDirectionStep(text));
             }
           }
           
           // Also get text from divs that don't have spans (direct text content)
-          final innerDivs = li.querySelectorAll('.equipment-time > div, .product-list > div');
+          final innerDivs = li.querySelectorAll('.equipment-time > div, .equipment-time div');
           for (final div in innerDivs) {
-            // Skip if this div contains a span (already processed)
+            // Skip if this div contains a span (already processed above)
             if (div.querySelector('span') != null) continue;
             final text = div.text.trim();
-            if (text.length > 15 && text != ' ') {
-              directions.add(_cleanDirectionStep(text));
+            // Skip empty, whitespace-only, or very short text
+            if (text.length > 15 && text != ' ' && !text.contains('display:none')) {
+              // Avoid duplicates
+              if (!directions.any((d) => d.contains(text) || text.contains(d))) {
+                directions.add(_cleanDirectionStep(text));
+              }
             }
           }
         }
@@ -2649,15 +3045,39 @@ class StandardWebStrategy implements RecipeParserStrategy {
     return result;
   }
   
-  /// Clean section header - remove trailing colons and common prefixes
+  /// Clean section header - remove trailing colons, common prefixes, and normalize text
+  /// This is a general-purpose sanitizer for section headers and similar text
   String _cleanSectionHeader(String header) {
     var cleaned = header.trim();
-    // Remove trailing colon(s)
-    while (cleaned.endsWith(':')) {
+    
+    // Strip any HTML tags that might have leaked through
+    cleaned = cleaned.replaceAll(RegExp(r'<[^>]*>'), '');
+    
+    // Decode common HTML entities
+    cleaned = cleaned
+        .replaceAll('&amp;', '&')
+        .replaceAll('&nbsp;', ' ')
+        .replaceAll('&#8217;', "'")
+        .replaceAll('&#8216;', "'")
+        .replaceAll('&#8220;', '"')
+        .replaceAll('&#8221;', '"');
+    
+    // Remove trailing colon(s) and other punctuation
+    while (cleaned.endsWith(':') || cleaned.endsWith('-') || cleaned.endsWith('–')) {
       cleaned = cleaned.substring(0, cleaned.length - 1).trim();
     }
-    // Remove common prefixes
+    
+    // Remove leading/trailing punctuation and decorative characters
+    cleaned = cleaned.replaceAll(RegExp(r'^[•\-*#▶►▸→:]+\s*'), '');
+    cleaned = cleaned.replaceAll(RegExp(r'\s*[•\-*#◀◄◂←:]+$'), '');
+    
+    // Remove common prefixes that don't add meaning
     cleaned = cleaned.replaceFirst(RegExp(r'^(?:For\s+(?:the\s+)?)', caseSensitive: false), '');
+    cleaned = cleaned.replaceFirst(RegExp(r'^(?:Ingredients?\s+(?:for\s+)?(?:the\s+)?)', caseSensitive: false), '');
+    
+    // Collapse multiple spaces
+    cleaned = cleaned.replaceAll(RegExp(r'\s+'), ' ').trim();
+    
     return cleaned;
   }
 
@@ -2827,9 +3247,26 @@ class StandardWebStrategy implements RecipeParserStrategy {
   }
 
   /// Strip HTML tags from a string and decode HTML entities
+  /// Handles both regular HTML tags and unicode-escaped tags (\u003c for <)
   String _stripHtml(String html) {
-    var result = html
-        .replaceAll(RegExp(r'<[^>]+>'), '') // Remove HTML tags
+    var result = html;
+    
+    // First decode any unicode escapes (from JSON sources like Next.js __NEXT_DATA__)
+    result = result
+        .replaceAll(r'\u003c', '<')
+        .replaceAll(r'\u003e', '>')
+        .replaceAll(r'\u0026', '&')
+        .replaceAll(r'\u0022', '"')
+        .replaceAll(r'\u0027', "'")
+        .replaceAll('\\u003c', '<')
+        .replaceAll('\\u003e', '>')
+        .replaceAll('\\u0026', '&');
+    
+    // Remove HTML tags
+    result = result.replaceAll(RegExp(r'<[^>]*>'), '');
+    
+    // Decode named HTML entities
+    result = result
         .replaceAll(RegExp(r'&nbsp;'), ' ')
         .replaceAll(RegExp(r'&amp;'), '&')
         .replaceAll(RegExp(r'&lt;'), '<')
@@ -2847,6 +3284,7 @@ class StandardWebStrategy implements RecipeParserStrategy {
       return code != null ? String.fromCharCode(code) : m.group(0)!;
     });
     
+    // Collapse multiple whitespace and trim
     return result.replaceAll(RegExp(r'\s+'), ' ').trim();
   }
 
