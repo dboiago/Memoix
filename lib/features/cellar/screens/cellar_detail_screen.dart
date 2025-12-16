@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 
@@ -192,10 +193,13 @@ class _CellarDetailView extends ConsumerWidget {
       ));
     }
 
-    // Producer
+    // Producer (use 2-letter country code in ALL CAPS - e.g., "ZA" not "Za")
     if (entry.producer != null && entry.producer!.isNotEmpty) {
+      // Get the cuisine to extract the code, or uppercase the producer
+      final cuisine = Cuisine.byCode(entry.producer!);
+      final displayCode = cuisine != null ? cuisine.code : entry.producer!.toUpperCase();
       chips.add(Chip(
-        label: Text(_capitalize(entry.producer!)),
+        label: Text(displayCode),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,

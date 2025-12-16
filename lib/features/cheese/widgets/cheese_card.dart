@@ -82,14 +82,15 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Buy indicator (using Chip for consistent shape)
+                  // Buy indicator (styled like selected filter chip with secondary outline)
                   if (widget.entry.buy)
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: Chip(
                         label: const Text('Buy'),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                        backgroundColor: theme.colorScheme.secondary.withOpacity(0.15),
+                        labelStyle: TextStyle(color: theme.colorScheme.secondary),
+                        side: BorderSide(color: theme.colorScheme.secondary),
                         visualDensity: VisualDensity.compact,
                         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         padding: EdgeInsets.zero,
@@ -127,34 +128,51 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
       return const SizedBox.shrink();
     }
 
+    // Format: Milk type (Country adjective) - e.g., "Goat (Canadian)"
     return Row(
       children: [
-        // Colored dot for country (like cuisine dot in Mains)
-        if (hasCountry) ...[
+        // Colored dot based on country
+        if (hasCountry || hasMilk) ...[
           Text(
             '\u2022',
             style: TextStyle(
-              color: MemoixColors.forContinentDot(widget.entry.country),
+              color: hasCountry 
+                  ? MemoixColors.forContinentDot(widget.entry.country)
+                  : theme.colorScheme.onSurfaceVariant,
               fontSize: 16,
             ),
           ),
           const SizedBox(width: 6),
-          Text(
-            Cuisine.toAdjective(widget.entry.country!),
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
         ],
-        // Milk type (no icon)
-        if (hasMilk) ...[
-          if (hasCountry) const SizedBox(width: 12),
+        // Milk type first
+        if (hasMilk)
           Text(
             _capitalize(widget.entry.milk!),
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
+        // Country in brackets
+        if (hasCountry) ...[
+          Text(
+            hasMilk ? ' (' : '',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          Text(
+            Cuisine.toAdjective(widget.entry.country!),
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          if (hasMilk)
+            Text(
+              ')',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
         ],
       ],
     );

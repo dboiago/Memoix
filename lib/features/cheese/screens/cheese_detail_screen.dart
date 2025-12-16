@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../recipes/models/cuisine.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 
@@ -182,10 +183,10 @@ class _CheeseDetailView extends ConsumerWidget {
       ));
     }
 
-    // Country
+    // Country (use adjective form like "French" not "France")
     if (entry.country != null && entry.country!.isNotEmpty) {
       chips.add(Chip(
-        label: Text(_capitalize(entry.country!)),
+        label: Text(Cuisine.toAdjective(entry.country!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,

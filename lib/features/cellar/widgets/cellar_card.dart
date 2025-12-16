@@ -84,14 +84,15 @@ class _CellarCardState extends ConsumerState<CellarCard> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Buy indicator (using Chip for consistent shape)
+                  // Buy indicator (styled like selected filter chip with secondary outline)
                   if (widget.entry.buy)
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: Chip(
                         label: const Text('Buy'),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                        backgroundColor: theme.colorScheme.secondary.withOpacity(0.15),
+                        labelStyle: TextStyle(color: theme.colorScheme.secondary),
+                        side: BorderSide(color: theme.colorScheme.secondary),
                         visualDensity: VisualDensity.compact,
                         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         padding: EdgeInsets.zero,
