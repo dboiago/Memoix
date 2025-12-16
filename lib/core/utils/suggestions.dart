@@ -25,7 +25,7 @@ class Suggestions {
     'Stracciatella',
   ];
 
-  // Pizza toppings - common pizza toppings
+  // Pizza toppings - common pizza toppings (legacy, kept for reference)
   static const List<String> toppings = [
     'Pepperoni',
     'Italian Sausage',
@@ -70,6 +70,70 @@ class Suggestions {
     'Shrimp',
     'Clams',
     'Egg',
+  ];
+
+  // Pizza proteins - meat and seafood toppings
+  static const List<String> pizzaProteins = [
+    'Pepperoni',
+    'Italian Sausage',
+    'Bacon',
+    'Ham',
+    'Prosciutto',
+    'Salami',
+    'Soppressata',
+    'Capicola',
+    'Nduja',
+    'Pancetta',
+    'Chicken',
+    'Grilled Chicken',
+    'BBQ Chicken',
+    'Buffalo Chicken',
+    'Ground Beef',
+    'Meatballs',
+    'Anchovies',
+    'Shrimp',
+    'Clams',
+    'Crab',
+    'Lobster',
+    'Egg',
+    'Canadian Bacon',
+    'Chorizo',
+    'Pulled Pork',
+  ];
+
+  // Pizza vegetables - vegetable and herb toppings
+  static const List<String> pizzaVegetables = [
+    'Mushrooms',
+    'Onions',
+    'Red Onions',
+    'Caramelized Onions',
+    'Bell Peppers',
+    'Roasted Red Peppers',
+    'Olives',
+    'Black Olives',
+    'Kalamata Olives',
+    'Jalapeños',
+    'Banana Peppers',
+    'Fresh Basil',
+    'Arugula',
+    'Spinach',
+    'Sun-dried Tomatoes',
+    'Cherry Tomatoes',
+    'Fresh Tomato',
+    'Roasted Garlic',
+    'Artichoke Hearts',
+    'Pineapple',
+    'Potato',
+    'Truffles',
+    'Eggplant',
+    'Zucchini',
+    'Broccoli',
+    'Kale',
+    'Corn',
+    'Hot Honey',
+    'Fresh Oregano',
+    'Basil Pesto',
+    'Ricotta Dollops',
   ];
 
   // Common ingredient preparations/descriptions

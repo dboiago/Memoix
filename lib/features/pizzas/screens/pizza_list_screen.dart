@@ -72,9 +72,14 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
                           matches.add(cheese);
                         }
                       }
-                      for (final topping in pizza.toppings) {
-                        if (topping.toLowerCase().contains(query)) {
-                          matches.add(topping);
+                      for (final protein in pizza.proteins) {
+                        if (protein.toLowerCase().contains(query)) {
+                          matches.add(protein);
+                        }
+                      }
+                      for (final vegetable in pizza.vegetables) {
+                        if (vegetable.toLowerCase().contains(query)) {
+                          matches.add(vegetable);
                         }
                       }
                     }
@@ -265,8 +270,9 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
       pizzas = pizzas.where((p) {
         final nameMatch = p.name.toLowerCase().contains(_searchQuery);
         final cheeseMatch = p.cheeses.any((c) => c.toLowerCase().contains(_searchQuery));
-        final toppingMatch = p.toppings.any((t) => t.toLowerCase().contains(_searchQuery));
-        return nameMatch || cheeseMatch || toppingMatch;
+        final proteinMatch = p.proteins.any((t) => t.toLowerCase().contains(_searchQuery));
+        final vegetableMatch = p.vegetables.any((v) => v.toLowerCase().contains(_searchQuery));
+        return nameMatch || cheeseMatch || proteinMatch || vegetableMatch;
       }).toList();
     }
 

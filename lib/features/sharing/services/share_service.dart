@@ -199,11 +199,19 @@ class ShareService {
       }
     }
     
-    if (pizza.toppings.isNotEmpty) {
+    if (pizza.proteins.isNotEmpty) {
       buffer.writeln();
-      buffer.writeln('## Toppings');
-      for (final topping in pizza.toppings) {
-        buffer.writeln('- $topping');
+      buffer.writeln('## Proteins');
+      for (final protein in pizza.proteins) {
+        buffer.writeln('- $protein');
+      }
+    }
+    
+    if (pizza.vegetables.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Vegetables');
+      for (final vegetable in pizza.vegetables) {
+        buffer.writeln('- $vegetable');
       }
     }
     

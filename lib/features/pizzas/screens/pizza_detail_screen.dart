@@ -348,41 +348,70 @@ class _PizzaComponentsGrid extends StatelessWidget {
   }
 
   Widget _buildWideLayout(ThemeData theme) {
-    // Sauce | Cheese | Toppings all side-by-side
-    return IntrinsicHeight(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Sauce section
-          Expanded(
-            child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
+    // Row 1: Sauce | Cheese side-by-side
+    // Row 2: Proteins | Vegetables side-by-side
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Row 1: Sauce | Cheese
+        IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Sauce section
+              Expanded(
+                child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
+              ),
+              const SizedBox(width: 16),
+              // Cheese section
+              if (pizza.cheeses.isNotEmpty)
+                Expanded(
+                  child: _buildComponentSection(
+                    theme,
+                    pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                    pizza.cheeses,
+                  ),
+                )
+              else
+                const Expanded(child: SizedBox()),
+            ],
           ),
-          const SizedBox(width: 16),
-          // Cheese section
-          if (pizza.cheeses.isNotEmpty)
-            Expanded(
-              child: _buildComponentSection(
-                theme,
-                pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                pizza.cheeses,
-              ),
-            )
-          else
-            const Expanded(child: SizedBox()),
-          const SizedBox(width: 16),
-          // Toppings section
-          if (pizza.toppings.isNotEmpty)
-            Expanded(
-              child: _buildComponentSection(
-                theme,
-                pizza.toppings.length == 1 ? 'Topping' : 'Toppings',
-                pizza.toppings,
-              ),
-            )
-          else
-            const Expanded(child: SizedBox()),
+        ),
+        // Row 2: Proteins | Vegetables
+        if (pizza.proteins.isNotEmpty || pizza.vegetables.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Proteins section
+                if (pizza.proteins.isNotEmpty)
+                  Expanded(
+                    child: _buildComponentSection(
+                      theme,
+                      pizza.proteins.length == 1 ? 'Protein' : 'Proteins',
+                      pizza.proteins,
+                    ),
+                  )
+                else
+                  const Expanded(child: SizedBox()),
+                const SizedBox(width: 16),
+                // Vegetables section
+                if (pizza.vegetables.isNotEmpty)
+                  Expanded(
+                    child: _buildComponentSection(
+                      theme,
+                      pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                      pizza.vegetables,
+                    ),
+                  )
+                else
+                  const Expanded(child: SizedBox()),
+              ],
+            ),
+          ),
         ],
-      ),
+      ],
     );
   }
 
@@ -406,12 +435,22 @@ class _PizzaComponentsGrid extends StatelessWidget {
               pizza.cheeses,
             ),
           ),
-        // Toppings section
-        if (pizza.toppings.isNotEmpty)
+        // Proteins section
+        if (pizza.proteins.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: _buildComponentSection(
+              theme,
+              pizza.proteins.length == 1 ? 'Protein' : 'Proteins',
+              pizza.proteins,
+            ),
+          ),
+        // Vegetables section
+        if (pizza.vegetables.isNotEmpty)
           _buildComponentSection(
             theme,
-            pizza.toppings.length == 1 ? 'Topping' : 'Toppings',
-            pizza.toppings,
+            pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+            pizza.vegetables,
           ),
       ],
     );

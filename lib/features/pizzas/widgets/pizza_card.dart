@@ -158,7 +158,8 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
 
   Widget _buildIngredientsSummary(ThemeData theme) {
     final cheeseCount = widget.pizza.cheeses.length;
-    final toppingCount = widget.pizza.toppings.length;
+    final proteinCount = widget.pizza.proteins.length;
+    final vegetableCount = widget.pizza.vegetables.length;
 
     return Row(
       children: [
@@ -178,8 +179,8 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
           ),
           const SizedBox(width: 12),
         ],
-        // Topping count
-        if (toppingCount > 0) ...[
+        // Protein count
+        if (proteinCount > 0) ...[
           Icon(
             Icons.restaurant_outlined,
             size: 14,
@@ -187,7 +188,23 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
           ),
           const SizedBox(width: 4),
           Text(
-            '$toppingCount Topping${toppingCount == 1 ? '' : 's'}',
+            '$proteinCount Protein${proteinCount == 1 ? '' : 's'}',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          if (vegetableCount > 0) const SizedBox(width: 12),
+        ],
+        // Vegetable count
+        if (vegetableCount > 0) ...[
+          Icon(
+            Icons.eco_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$vegetableCount Veg${vegetableCount == 1 ? '' : 's'}',
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),

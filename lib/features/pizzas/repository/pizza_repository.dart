@@ -44,7 +44,7 @@ class PizzaRepository {
     return _db.pizzas.filter().isFavoriteEqualTo(true).findAll();
   }
 
-  /// Search pizzas by name, cheese, or topping
+  /// Search pizzas by name, cheese, protein, or vegetable
   Future<List<Pizza>> searchPizzas(String query) async {
     if (query.isEmpty) return getAllPizzas();
     
@@ -54,7 +54,9 @@ class PizzaRepository {
         .or()
         .cheesesElementContains(query, caseSensitive: false)
         .or()
-        .toppingsElementContains(query, caseSensitive: false)
+        .proteinsElementContains(query, caseSensitive: false)
+        .or()
+        .vegetablesElementContains(query, caseSensitive: false)
         .or()
         .tagsElementContains(query, caseSensitive: false)
         .findAll();
@@ -178,14 +180,25 @@ class PizzaRepository {
     return sorted;
   }
 
-  /// Get all unique toppings used across pizzas
-  Future<List<String>> getAllToppings() async {
+  /// Get all unique proteins used across pizzas
+  Future<List<String>> getAllProteins() async {
     final pizzas = await getAllPizzas();
-    final toppings = <String>{};
+    final proteins = <String>{};
     for (final pizza in pizzas) {
-      toppings.addAll(pizza.toppings);
+      proteins.addAll(pizza.proteins);
     }
-    final sorted = toppings.toList()..sort();
+    final sorted = proteins.toList()..sort();
+    return sorted;
+  }
+
+  /// Get all unique vegetables used across pizzas
+  Future<List<String>> getAllVegetables() async {
+    final pizzas = await getAllPizzas();
+    final vegetables = <String>{};
+    for (final pizza in pizzas) {
+      vegetables.addAll(pizza.vegetables);
+    }
+    final sorted = vegetables.toList()..sort();
     return sorted;
   }
 }

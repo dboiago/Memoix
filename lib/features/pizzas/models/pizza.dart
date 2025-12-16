@@ -86,8 +86,11 @@ class Pizza {
   /// List of cheeses (e.g., "Mozzarella", "Parmesan", "Goat Cheese")
   List<String> cheeses = [];
 
-  /// List of toppings (e.g., "Pepperoni", "Mushrooms", "Basil")
-  List<String> toppings = [];
+  /// List of protein toppings (e.g., "Pepperoni", "Italian Sausage", "Bacon")
+  List<String> proteins = [];
+
+  /// List of vegetable toppings (e.g., "Mushrooms", "Bell Peppers", "Basil")
+  List<String> vegetables = [];
 
   /// Notes for special instructions (e.g., "Add sundried tomatoes last minute")
   String? notes;
@@ -128,7 +131,8 @@ class Pizza {
     required this.name,
     this.base = PizzaBase.marinara,
     this.cheeses = const [],
-    this.toppings = const [],
+    this.proteins = const [],
+    this.vegetables = const [],
     this.notes,
     this.imageUrl,
     this.source = PizzaSource.personal,
@@ -142,6 +146,12 @@ class Pizza {
 
   /// Create from JSON (for GitHub import)
   factory Pizza.fromJson(Map<String, dynamic> json) {
+    // Handle backward compatibility: if old 'toppings' field exists, treat as proteins
+    final legacyToppings = (json['toppings'] as List<dynamic>?)
+            ?.map((e) => e as String)
+            .where((e) => e.isNotEmpty)
+            .toList() ?? [];
+    
     final pizza = Pizza()
       ..uuid = json['uuid'] as String
       ..name = json['name'] as String
@@ -151,7 +161,12 @@ class Pizza {
               .where((e) => e.isNotEmpty)
               .toList() ??
           []
-      ..toppings = (json['toppings'] as List<dynamic>?)
+      ..proteins = (json['proteins'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .where((e) => e.isNotEmpty)
+              .toList() ??
+          legacyToppings // Fallback to toppings for backward compatibility
+      ..vegetables = (json['vegetables'] as List<dynamic>?)
               ?.map((e) => e as String)
               .where((e) => e.isNotEmpty)
               .toList() ??
@@ -187,7 +202,8 @@ class Pizza {
       'name': name,
       'base': base.name,
       'cheeses': cheeses,
-      'toppings': toppings,
+      'proteins': proteins,
+      'vegetables': vegetables,
       'notes': notes,
       'imageUrl': imageUrl,
       'source': source.name,
@@ -208,7 +224,8 @@ class Pizza {
       'name': name,
       'base': base.name,
       'cheeses': cheeses,
-      'toppings': toppings,
+      'proteins': proteins,
+      'vegetables': vegetables,
       'notes': notes,
       'imageUrl': imageUrl,
       'tags': tags,

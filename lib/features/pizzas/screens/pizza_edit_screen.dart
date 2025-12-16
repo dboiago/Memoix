@@ -30,8 +30,10 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
 
   // Controllers for cheese rows
   final List<TextEditingController> _cheeseControllers = [];
-  // Controllers for topping rows  
-  final List<TextEditingController> _toppingControllers = [];
+  // Controllers for protein rows  
+  final List<TextEditingController> _proteinControllers = [];
+  // Controllers for vegetable rows
+  final List<TextEditingController> _vegetableControllers = [];
 
   String _selectedBase = 'Tomato'; // String to allow custom bases
   String? _imagePath;
@@ -56,7 +58,8 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   void initState() {
     super.initState();
     _addCheeseRow(); // Start with one empty row
-    _addToppingRow(); // Start with one empty row
+    _addProteinRow(); // Start with one empty row
+    _addVegetableRow(); // Start with one empty row
     _loadPizza();
   }
 
@@ -68,7 +71,10 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     for (final c in _cheeseControllers) {
       c.dispose();
     }
-    for (final c in _toppingControllers) {
+    for (final c in _proteinControllers) {
+      c.dispose();
+    }
+    for (final c in _vegetableControllers) {
       c.dispose();
     }
     super.dispose();
@@ -80,10 +86,16 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     _cheeseControllers.add(controller);
   }
 
-  void _addToppingRow({String value = ''}) {
+  void _addProteinRow({String value = ''}) {
     final controller = TextEditingController(text: value);
-    controller.addListener(() => _onToppingChanged());
-    _toppingControllers.add(controller);
+    controller.addListener(() => _onProteinChanged());
+    _proteinControllers.add(controller);
+  }
+
+  void _addVegetableRow({String value = ''}) {
+    final controller = TextEditingController(text: value);
+    controller.addListener(() => _onVegetableChanged());
+    _vegetableControllers.add(controller);
   }
 
   void _onCheeseChanged() {
@@ -94,11 +106,19 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     }
   }
 
-  void _onToppingChanged() {
+  void _onProteinChanged() {
     // If last row has content, add a new empty row
-    if (_toppingControllers.isNotEmpty && 
-        _toppingControllers.last.text.isNotEmpty) {
-      setState(() => _addToppingRow());
+    if (_proteinControllers.isNotEmpty && 
+        _proteinControllers.last.text.isNotEmpty) {
+      setState(() => _addProteinRow());
+    }
+  }
+
+  void _onVegetableChanged() {
+    // If last row has content, add a new empty row
+    if (_vegetableControllers.isNotEmpty && 
+        _vegetableControllers.last.text.isNotEmpty) {
+      setState(() => _addVegetableRow());
     }
   }
 
@@ -111,11 +131,20 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     }
   }
 
-  void _removeToppingRow(int index) {
-    if (_toppingControllers.length > 1) {
+  void _removeProteinRow(int index) {
+    if (_proteinControllers.length > 1) {
       setState(() {
-        _toppingControllers[index].dispose();
-        _toppingControllers.removeAt(index);
+        _proteinControllers[index].dispose();
+        _proteinControllers.removeAt(index);
+      });
+    }
+  }
+
+  void _removeVegetableRow(int index) {
+    if (_vegetableControllers.length > 1) {
+      setState(() {
+        _vegetableControllers[index].dispose();
+        _vegetableControllers.removeAt(index);
       });
     }
   }
@@ -150,15 +179,25 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
       }
       _addCheeseRow(); // Add empty row at end
 
-      // Clear default rows and load toppings
-      for (final c in _toppingControllers) {
+      // Clear default rows and load proteins
+      for (final c in _proteinControllers) {
         c.dispose();
       }
-      _toppingControllers.clear();
-      for (final topping in pizza.toppings) {
-        _addToppingRow(value: topping);
+      _proteinControllers.clear();
+      for (final protein in pizza.proteins) {
+        _addProteinRow(value: protein);
       }
-      _addToppingRow(); // Add empty row at end
+      _addProteinRow(); // Add empty row at end
+
+      // Clear default rows and load vegetables
+      for (final c in _vegetableControllers) {
+        c.dispose();
+      }
+      _vegetableControllers.clear();
+      for (final vegetable in pizza.vegetables) {
+        _addVegetableRow(value: vegetable);
+      }
+      _addVegetableRow(); // Add empty row at end
     }
     setState(() => _isLoading = false);
   }
@@ -243,10 +282,33 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
             ),
             const SizedBox(height: 24),
 
-            // Toppings section
-            _buildSectionHeader(theme, 'Toppings'),
-            const SizedBox(height: 8),
-            _buildToppingRows(theme),
+            // Proteins + Vegetables (side by side)
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Proteins'),
+                      const SizedBox(height: 8),
+                      _buildProteinRows(theme),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildSectionHeader(theme, 'Vegetables'),
+                      const SizedBox(height: 8),
+                      _buildVegetableRows(theme),
+                    ],
+                  ),
+                ),
+              ],
+            ),
             const SizedBox(height: 24),
 
             // Notes field
@@ -452,9 +514,9 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     );
   }
 
-  Widget _buildToppingRows(ThemeData theme) {
+  Widget _buildProteinRows(ThemeData theme) {
     return Column(
-      children: List.generate(_toppingControllers.length, (index) {
+      children: List.generate(_proteinControllers.length, (index) {
         return Padding(
           padding: const EdgeInsets.only(bottom: 8),
           child: Row(
@@ -463,31 +525,31 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
                 child: Autocomplete<String>(
                   optionsBuilder: (textEditingValue) {
                     if (textEditingValue.text.isEmpty) {
-                      return Suggestions.toppings;
+                      return Suggestions.pizzaProteins;
                     }
                     return Suggestions.filter(
-                      Suggestions.toppings, 
+                      Suggestions.pizzaProteins, 
                       textEditingValue.text,
                     );
                   },
                   fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                     // Sync with our controller
-                    if (controller.text != _toppingControllers[index].text) {
-                      controller.text = _toppingControllers[index].text;
+                    if (controller.text != _proteinControllers[index].text) {
+                      controller.text = _proteinControllers[index].text;
                       controller.selection = TextSelection.collapsed(
                         offset: controller.text.length,
                       );
                     }
                     controller.addListener(() {
-                      if (_toppingControllers[index].text != controller.text) {
-                        _toppingControllers[index].text = controller.text;
+                      if (_proteinControllers[index].text != controller.text) {
+                        _proteinControllers[index].text = controller.text;
                       }
                     });
                     return TextField(
                       controller: controller,
                       focusNode: focusNode,
                       decoration: InputDecoration(
-                        hintText: index == 0 && _toppingControllers.length == 1
+                        hintText: index == 0 && _proteinControllers.length == 1
                             ? 'e.g., Pepperoni'
                             : null,
                         border: const OutlineInputBorder(),
@@ -498,18 +560,85 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
                     );
                   },
                   onSelected: (selection) {
-                    _toppingControllers[index].text = selection;
+                    _proteinControllers[index].text = selection;
                   },
                   optionsViewBuilder: (context, onSelected, options) {
                     return _buildOptionsView(context, onSelected, options, theme);
                   },
                 ),
               ),
-              if (_toppingControllers[index].text.isNotEmpty || _toppingControllers.length > 1)
+              if (_proteinControllers[index].text.isNotEmpty || _proteinControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
                     color: theme.colorScheme.error.withOpacity(0.7),),
-                  onPressed: () => _removeToppingRow(index),
+                  onPressed: () => _removeProteinRow(index),
+                  visualDensity: VisualDensity.compact,
+                ),
+            ],
+          ),
+        );
+      }),
+    );
+  }
+
+  Widget _buildVegetableRows(ThemeData theme) {
+    return Column(
+      children: List.generate(_vegetableControllers.length, (index) {
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Row(
+            children: [
+              Expanded(
+                child: Autocomplete<String>(
+                  optionsBuilder: (textEditingValue) {
+                    if (textEditingValue.text.isEmpty) {
+                      return Suggestions.pizzaVegetables;
+                    }
+                    return Suggestions.filter(
+                      Suggestions.pizzaVegetables, 
+                      textEditingValue.text,
+                    );
+                  },
+                  fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                    // Sync with our controller
+                    if (controller.text != _vegetableControllers[index].text) {
+                      controller.text = _vegetableControllers[index].text;
+                      controller.selection = TextSelection.collapsed(
+                        offset: controller.text.length,
+                      );
+                    }
+                    controller.addListener(() {
+                      if (_vegetableControllers[index].text != controller.text) {
+                        _vegetableControllers[index].text = controller.text;
+                      }
+                    });
+                    return TextField(
+                      controller: controller,
+                      focusNode: focusNode,
+                      decoration: InputDecoration(
+                        hintText: index == 0 && _vegetableControllers.length == 1
+                            ? 'e.g., Mushrooms'
+                            : null,
+                        border: const OutlineInputBorder(),
+                        isDense: true,
+                      ),
+                      textCapitalization: TextCapitalization.words,
+                      onSubmitted: (_) => onFieldSubmitted(),
+                    );
+                  },
+                  onSelected: (selection) {
+                    _vegetableControllers[index].text = selection;
+                  },
+                  optionsViewBuilder: (context, onSelected, options) {
+                    return _buildOptionsView(context, onSelected, options, theme);
+                  },
+                ),
+              ),
+              if (_vegetableControllers[index].text.isNotEmpty || _vegetableControllers.length > 1)
+                IconButton(
+                  icon: Icon(Icons.remove_circle_outline, 
+                    color: theme.colorScheme.error.withOpacity(0.7),),
+                  onPressed: () => _removeVegetableRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
             ],
@@ -718,7 +847,11 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
         .map((c) => c.text.trim())
         .where((s) => s.isNotEmpty)
         .toList();
-    final toppings = _toppingControllers
+    final proteins = _proteinControllers
+        .map((c) => c.text.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+    final vegetables = _vegetableControllers
         .map((c) => c.text.trim())
         .where((s) => s.isNotEmpty)
         .toList();
@@ -729,7 +862,8 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
       ..name = _nameController.text.trim()
       ..base = PizzaBaseExtension.fromString(_selectedBase)
       ..cheeses = cheeses
-      ..toppings = toppings
+      ..proteins = proteins
+      ..vegetables = vegetables
       ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
       ..imageUrl = _imagePath
       ..source = _existingPizza?.source ?? PizzaSource.personal
