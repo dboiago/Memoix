@@ -719,27 +719,27 @@ class _PriceRangeSelector extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Row(
-          children: List.generate(5, (index) {
-            final tier = index + 1;
-            final isSelected = value >= tier;
-            return GestureDetector(
-              onTap: () => onChanged(value == tier ? 0 : tier),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 4),
-                child: Text(
-                  '\$',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: isSelected 
-                        ? theme.colorScheme.primary 
-                        : theme.colorScheme.outline.withOpacity(0.4),
+          children: [
+            ...List.generate(5, (index) {
+              final tier = index + 1;
+              final isSelected = value >= tier;
+              return GestureDetector(
+                onTap: () => onChanged(value == tier ? 0 : tier),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  child: Text(
+                    '\$',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: isSelected 
+                          ? theme.colorScheme.primary 
+                          : theme.colorScheme.outline.withOpacity(0.4),
+                    ),
                   ),
                 ),
-              ),
-            );
-          }),
-          ...[
+              );
+            }),
             const SizedBox(width: 16),
             if (value > 0)
               TextButton(
