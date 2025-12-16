@@ -31,7 +31,7 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          'MODERNIST',
+          'Modernist',
           style: theme.textTheme.titleMedium?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),

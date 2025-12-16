@@ -227,9 +227,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             const SizedBox(height: 8),
             Row(
               children: [
-                _buildTypeChip('Pit Note', SmokingType.pitNote, theme),
+                Expanded(
+                  child: _buildTypeChip('Pit Note', SmokingType.pitNote, theme),
+                ),
                 const SizedBox(width: 12),
-                _buildTypeChip('Recipe', SmokingType.recipe, theme),
+                Expanded(
+                  child: _buildTypeChip('Recipe', SmokingType.recipe, theme),
+                ),
               ],
             ),
 
@@ -467,9 +471,43 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             const SizedBox(height: 24),
 
             // Directions section (both types)
-            _buildSectionTitle(theme, 'Directions'),
+            Text(
+              'Directions',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             const SizedBox(height: 8),
-            ..._buildDirectionFields(),
+            ReorderableListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              buildDefaultDragHandles: false,
+              itemCount: _directionControllers.length,
+              onReorder: (oldIndex, newIndex) {
+                setState(() {
+                  if (newIndex > oldIndex) newIndex--;
+                  final controller = _directionControllers.removeAt(oldIndex);
+                  _directionControllers.insert(newIndex, controller);
+                });
+              },
+              proxyDecorator: (child, index, animation) {
+                return AnimatedBuilder(
+                  animation: animation,
+                  builder: (context, child) {
+                    return Material(
+                      elevation: 4,
+                      color: theme.colorScheme.surface,
+                      borderRadius: BorderRadius.circular(8),
+                      child: child,
+                    );
+                  },
+                  child: child,
+                );
+              },
+              itemBuilder: (context, index) {
+                return _buildDirectionRowWidget(index, theme, key: ValueKey(_directionControllers[index]));
+              },
+            ),
 
             const SizedBox(height: 24),
 
@@ -502,7 +540,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     return GestureDetector(
       onTap: () => setState(() => _selectedType = type),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected
               ? theme.colorScheme.secondary.withOpacity(0.15)
@@ -515,13 +553,15 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
-        child: Text(
-          label,
-          style: theme.textTheme.bodyMedium?.copyWith(
-            color: isSelected
-                ? theme.colorScheme.secondary
-                : theme.colorScheme.onSurface,
-            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+        child: Center(
+          child: Text(
+            label,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: isSelected
+                  ? theme.colorScheme.secondary
+                  : theme.colorScheme.onSurface,
+              fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+            ),
           ),
         ),
       ),
@@ -668,67 +708,100 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     }).toList();
   }
 
-  List<Widget> _buildDirectionFields() {
-    return _directionControllers.asMap().entries.map((entry) {
-      final index = entry.key;
-      final controller = entry.value;
-      final theme = Theme.of(context);
-      final isLast = index == _directionControllers.length - 1;
+  Widget _buildDirectionRowWidget(int index, ThemeData theme, {Key? key}) {
+    final controller = _directionControllers[index];
+    final isLast = index == _directionControllers.length - 1;
 
-      return Padding(
-        padding: const EdgeInsets.only(bottom: 8),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Step number
-            Container(
-              width: 28,
-              height: 28,
-              margin: const EdgeInsets.only(top: 12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.secondary.withOpacity(0.15),
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: theme.colorScheme.secondary,
-                  width: 1.5,
+    return Container(
+      key: key,
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Drag handle and step number
+          Column(
+            children: [
+              ReorderableDragStartListener(
+                index: index,
+                child: Icon(
+                  Icons.drag_handle,
+                  size: 20,
+                  color: theme.colorScheme.outline,
                 ),
               ),
-              alignment: Alignment.center,
-              child: Text(
-                '${index + 1}',
-                style: TextStyle(
-                  color: theme.colorScheme.secondary,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 13,
+              const SizedBox(height: 4),
+              Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  shape: BoxShape.circle,
+                  border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
+                ),
+                child: Center(
+                  child: Text(
+                    '${index + 1}',
+                    style: TextStyle(
+                      color: theme.colorScheme.secondary,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
                 ),
               ),
+            ],
+          ),
+          const SizedBox(width: 8),
+
+          // Direction text field
+          Expanded(
+            child: TextField(
+              controller: controller,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                border: const OutlineInputBorder(),
+                hintText: 'Enter step ${index + 1}...',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              maxLines: 3,
+              minLines: 2,
+              style: theme.textTheme.bodyMedium,
+              onChanged: (value) {
+                // Auto-add new row when typing in last row
+                if (isLast && value.isNotEmpty) {
+                  _addDirection();
+                  setState(() {});
+                }
+              },
             ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: TextField(
-                controller: controller,
-                decoration: InputDecoration(
-                  hintText: 'Describe this step...',
-                  suffixIcon: _directionControllers.length > 1
-                      ? IconButton(
-                          icon: const Icon(Icons.remove_circle_outline, size: 20),
-                          onPressed: () => _removeDirection(index),
-                        )
-                      : null,
-                ),
-                maxLines: null,
-                onChanged: (value) {
-                  // Auto-add new row when typing in last row
-                  if (isLast && value.isNotEmpty && _directionControllers.length == index + 1) {
-                    _addDirection();
-                  }
-                },
-              ),
+          ),
+          const SizedBox(width: 8),
+
+          // Delete button
+          IconButton(
+            icon: Icon(
+              Icons.close,
+              size: 18,
+              color: theme.colorScheme.outline,
             ),
-          ],
-        ),
-      );
-    }).toList();
+            onPressed: _directionControllers.length > 1
+                ? () => _removeDirection(index)
+                : null,
+            padding: EdgeInsets.zero,
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+          ),
+        ],
+      ),
+    );
   }
 
   void _addSeasoning() {
@@ -803,6 +876,15 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                   ),
                 ),
               ),
+              const SizedBox(width: 8),
+              Expanded(
+                flex: 2,
+                child: Text('Notes/Prep',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
               const SizedBox(width: 40), // Space for delete button
             ],
           ),
@@ -867,85 +949,39 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           // Drag handle
           ReorderableDragStartListener(
             index: index,
-            child: Icon(
-              Icons.drag_handle,
-              color: theme.colorScheme.outline,
-              size: 20,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+              child: Icon(
+                Icons.drag_indicator,
+                color: theme.colorScheme.outline,
+                size: 20,
+              ),
             ),
           ),
-          const SizedBox(width: 8),
 
-          // Ingredient name with autocomplete
+          // Ingredient name
           Expanded(
             flex: 3,
-            child: Autocomplete<String>(
-              initialValue: TextEditingValue(text: ingredient.nameController.text),
-              optionsBuilder: (textEditingValue) {
-                if (textEditingValue.text.isEmpty) {
-                  return Suggestions.seasonings;
+            child: TextField(
+              controller: ingredient.nameController,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Ingredient',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              style: theme.textTheme.bodyMedium,
+              textCapitalization: TextCapitalization.words,
+              onChanged: (value) {
+                // Auto-add new row when typing in last row
+                if (isLast && value.isNotEmpty && _ingredients.length == index + 1) {
+                  _addIngredient();
+                  setState(() {});
                 }
-                return Suggestions.filter(
-                  Suggestions.seasonings,
-                  textEditingValue.text,
-                );
-              },
-              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
-                controller.addListener(() {
-                  ingredient.nameController.text = controller.text;
-                  // Auto-add new row when typing in last row
-                  if (isLast && controller.text.isNotEmpty && _ingredients.length == index + 1) {
-                    _addIngredient();
-                    setState(() {});
-                  }
-                });
-                return TextField(
-                  controller: controller,
-                  focusNode: focusNode,
-                  decoration: InputDecoration(
-                    isDense: true,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                    border: const OutlineInputBorder(),
-                    hintText: 'Ingredient',
-                    hintStyle: TextStyle(
-                      fontStyle: FontStyle.italic,
-                      color: theme.colorScheme.outline,
-                    ),
-                  ),
-                  style: theme.textTheme.bodyMedium,
-                  textCapitalization: TextCapitalization.words,
-                  onSubmitted: (_) => onFieldSubmitted(),
-                );
-              },
-              onSelected: (selection) {
-                ingredient.nameController.text = selection;
-              },
-              optionsViewBuilder: (context, onSelected, options) {
-                return Align(
-                  alignment: Alignment.topLeft,
-                  child: Material(
-                    elevation: 4,
-                    borderRadius: BorderRadius.circular(8),
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(
-                        maxHeight: 200,
-                        maxWidth: 200,
-                      ),
-                      child: ListView.builder(
-                        padding: EdgeInsets.zero,
-                        shrinkWrap: true,
-                        itemCount: options.length,
-                        itemBuilder: (context, idx) {
-                          final option = options.elementAt(idx);
-                          return ListTile(
-                            dense: true,
-                            title: Text(option),
-                            onTap: () => onSelected(option),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
-                );
               },
             ),
           ),
@@ -969,19 +1005,43 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               style: theme.textTheme.bodyMedium,
             ),
           ),
+          const SizedBox(width: 8),
+
+          // Notes/Prep (new column)
+          Expanded(
+            flex: 2,
+            child: TextField(
+              controller: ingredient.notesController,
+              decoration: InputDecoration(
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                border: const OutlineInputBorder(),
+                hintText: 'Notes',
+                hintStyle: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.outline,
+                ),
+              ),
+              style: theme.textTheme.bodyMedium,
+            ),
+          ),
 
           // Delete button
-          if (_ingredients.length > 1)
-            IconButton(
-              icon: Icon(
-                Icons.remove_circle_outline,
-                size: 20,
-                color: theme.colorScheme.secondary,
-              ),
-              onPressed: () => _removeIngredient(index),
-            )
-          else
-            const SizedBox(width: 40),
+          SizedBox(
+            width: 40,
+            child: _ingredients.length > 1
+                ? IconButton(
+                    icon: Icon(
+                      Icons.close,
+                      size: 18,
+                      color: theme.colorScheme.outline,
+                    ),
+                    onPressed: () => _removeIngredient(index),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
+                  )
+                : null,
+          ),
         ],
       ),
     );
@@ -1251,15 +1311,18 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 class _SeasoningEntry {
   final TextEditingController nameController;
   final TextEditingController amountController;
+  final TextEditingController notesController;
 
   _SeasoningEntry({
     required this.nameController,
     required this.amountController,
-  });
+    TextEditingController? notesController,
+  }) : notesController = notesController ?? TextEditingController();
 
   void dispose() {
     nameController.dispose();
     amountController.dispose();
+    notesController.dispose();
   }
 }
 

@@ -311,22 +311,17 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
-            Icons.outdoor_grill,
+            Icons.restaurant,
             size: 64,
-            color: theme.colorScheme.outline,
+            color: Colors.grey.shade400,
           ),
           const SizedBox(height: 16),
           Text(
-            'No smoking recipes yet',
-            style: theme.textTheme.titleLarge?.copyWith(
-              color: theme.colorScheme.outline,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Tap + to add your first smoked recipe',
-            style: theme.textTheme.bodyMedium?.copyWith(
-              color: theme.colorScheme.outline,
+            'No recipes found',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.grey.shade600,
             ),
           ),
         ],
