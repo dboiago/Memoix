@@ -149,6 +149,17 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                         const SizedBox(width: 12),
                       ],
                       
+                      // Pickle method (for pickles course)
+                      if (_isPickles() && widget.recipe.pickleMethod != null && widget.recipe.pickleMethod!.isNotEmpty) ...[
+                        Text(
+                          widget.recipe.pickleMethod!,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                      ],
+                      
                       // Servings
                       if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty) ...[
                         Icon(
@@ -257,6 +268,12 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
   bool _isDrink() {
     final course = widget.recipe.course.toLowerCase();
     return course == 'drinks' || course == 'drink' || course == 'beverages';
+  }
+
+  /// Check if this recipe is a pickle/preserve
+  bool _isPickles() {
+    final course = widget.recipe.course.toLowerCase();
+    return course == 'pickles' || course == 'pickle' || course == 'preserves';
   }
 
   /// Display drink info: spirit name + optional cuisine origin
