@@ -1295,9 +1295,14 @@ class StandardWebStrategy implements RecipeParserStrategy {
     // Also return null if we have ingredients but no directions
     // This lets HTML fallback extract both properly
     if (directions.isEmpty && rawIngs.isNotEmpty) {
+      // For known sites with complex HTML structures, skip microdata entirely
+      // so the dedicated HTML parsers can handle them
+      if (url.contains('modernistpantry.com')) {
+        return null; // Use dedicated Modernist Pantry parser in HTML fallback
+      }
+      
       // Check if this site might have directions in HTML that we're missing
-      final hasHtmlDirections = _parseDirectionsBySections(document).isNotEmpty ||
-                                 _extractModernistPantryDirections(document).isNotEmpty;
+      final hasHtmlDirections = _parseDirectionsBySections(document).isNotEmpty;
       if (hasHtmlDirections) {
         return null; // Let HTML fallback handle this
       }
@@ -1979,6 +1984,37 @@ class StandardWebStrategy implements RecipeParserStrategy {
       }
     }
     
+    // Strategy 3: If still no ingredients, find any ul containing li with bold "Ingredients ..." text
+    // This handles cases where DOM parsing doesn't maintain expected sibling relationships
+    if (ingredients.isEmpty) {
+      for (final ul in document.querySelectorAll('ul')) {
+        final firstBold = ul.querySelector('li > b, li > strong');
+        if (firstBold != null && firstBold.text.toLowerCase().contains('ingredients')) {
+          // This looks like a Modernist Pantry ingredient list
+          for (final li in ul.querySelectorAll('li')) {
+            final boldEl = li.querySelector('b, strong');
+            if (boldEl != null && boldEl.text.toLowerCase().contains('ingredients')) {
+              // Section header
+              var headerText = boldEl.text.trim();
+              headerText = headerText.replaceFirst(RegExp(r'^Ingredients?\s*', caseSensitive: false), '');
+              headerText = headerText.replaceFirst(RegExp(r':\s*$'), '');
+              if (headerText.isNotEmpty) {
+                ingredients.add('[${headerText.trim()}]');
+              }
+            } else {
+              // Ingredient line
+              final span = li.querySelector('span');
+              final text = _ingParser.decodeHtml(span?.text.trim() ?? li.text.trim());
+              if (text.isNotEmpty && text.length > 3) {
+                ingredients.add(text);
+              }
+            }
+          }
+          if (ingredients.isNotEmpty) break;
+        }
+      }
+    }
+    
     return ingredients;
   }
   
@@ -2033,10 +2069,10 @@ class StandardWebStrategy implements RecipeParserStrategy {
     final actionHeadings = document.querySelectorAll('h3');
     for (final heading in actionHeadings) {
       final headingText = heading.text.trim();
-      if (RegExp(r'^(?:Create|Make|Prepare|Churn|Step\s*\d+)', caseSensitive: false).hasMatch(headingText)) {
+      if (RegExp(r'^(?:Create|Make|Prepare|Churn|Step\s*\d+|Enjoy)', caseSensitive: false).hasMatch(headingText)) {
         directions.add('**$headingText**');
         
-        // Look in the parent li or next siblings for instruction text
+        // Strategy A: Look in the parent li for instruction text
         final parentLi = heading.parent;
         if (parentLi != null && parentLi.localName == 'li') {
           // Get all span text after the h3
@@ -2055,6 +2091,44 @@ class StandardWebStrategy implements RecipeParserStrategy {
                 directions.add(_cleanDirectionStep(text));
               }
             }
+            
+            // Also try direct div text
+            if (child.localName == 'div') {
+              final divText = child.text.trim();
+              if (divText.length > 15 && !divText.startsWith('**')) {
+                // Avoid adding the heading again
+                final cleanText = _cleanDirectionStep(divText);
+                if (!directions.contains(cleanText)) {
+                  directions.add(cleanText);
+                }
+              }
+            }
+          }
+        }
+        
+        // Strategy B: Look at next siblings if parent wasn't an li
+        if (parentLi == null || parentLi.localName != 'li') {
+          var sibling = heading.nextElementSibling;
+          int attempts = 0;
+          while (sibling != null && attempts < 10) {
+            // Stop at another h3 with action words
+            if (sibling.localName == 'h3') {
+              final siblingText = sibling.text.trim();
+              if (RegExp(r'^(?:Create|Make|Prepare|Churn|Step|Enjoy)', caseSensitive: false).hasMatch(siblingText)) {
+                break;
+              }
+            }
+            
+            final spans = sibling.querySelectorAll('span');
+            for (final span in spans) {
+              final text = span.text.trim();
+              if (text.length > 15) {
+                directions.add(_cleanDirectionStep(text));
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+            attempts++;
           }
         }
       }
