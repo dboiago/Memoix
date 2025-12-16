@@ -247,8 +247,14 @@ final allCheesesProvider = FutureProvider<List<String>>((ref) {
   return repository.getAllCheeses();
 });
 
-/// Get all unique toppings
-final allToppingsProvider = FutureProvider<List<String>>((ref) {
+/// Get all unique proteins
+final allProteinsProvider = FutureProvider<List<String>>((ref) {
   final repository = ref.watch(pizzaRepositoryProvider);
-  return repository.getAllToppings();
+  return repository.getAllProteins();
+});
+
+/// Get all unique vegetables
+final allVegetablesProvider = FutureProvider<List<String>>((ref) {
+  final repository = ref.watch(pizzaRepositoryProvider);
+  return repository.getAllVegetables();
 });

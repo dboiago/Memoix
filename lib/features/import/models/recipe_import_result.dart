@@ -502,23 +502,31 @@ class RecipeImportResult {
       base = PizzaBase.oil;
     }
     
-    // Separate cheeses from other toppings
+    // Separate cheeses, proteins, and vegetables
     final cheeses = <String>[];
-    final toppings = <String>[];
+    final proteins = <String>[];
+    final vegetables = <String>[];
     const cheeseKeywords = ['mozzarella', 'parmesan', 'cheddar', 'gouda', 'provolone', 
         'ricotta', 'gorgonzola', 'feta', 'goat cheese', 'burrata', 'fontina', 'asiago',
         'pecorino', 'gruyere', 'brie', 'cheese'];
+    const proteinKeywords = ['pepperoni', 'sausage', 'bacon', 'ham', 'prosciutto', 
+        'salami', 'chicken', 'beef', 'pork', 'anchov', 'shrimp', 'meat', 'turkey',
+        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg'];
     
     for (final ingredient in ingredients) {
       final lower = ingredient.name.toLowerCase();
       final isCheese = cheeseKeywords.any((c) => lower.contains(c));
+      final isProtein = proteinKeywords.any((p) => lower.contains(p));
+      
       if (isCheese) {
         cheeses.add(ingredient.name);
+      } else if (isProtein) {
+        proteins.add(ingredient.name);
       } else {
-        // Skip base sauce ingredients
+        // Skip base sauce ingredients, treat rest as vegetables
         if (!lower.contains('sauce') && !lower.contains('dough') && 
             !lower.contains('flour') && !lower.contains('yeast')) {
-          toppings.add(ingredient.name);
+          vegetables.add(ingredient.name);
         }
       }
     }
@@ -528,7 +536,8 @@ class RecipeImportResult {
       name: name ?? 'Untitled Pizza',
       base: base,
       cheeses: cheeses,
-      toppings: toppings,
+      proteins: proteins,
+      vegetables: vegetables,
       notes: notes,
       imageUrl: imageUrl,
       source: PizzaSource.imported,
