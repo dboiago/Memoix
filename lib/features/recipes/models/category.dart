@@ -174,10 +174,17 @@ class Category {
           colorValue: MemoixColors.cheese.value,
         ),
         Category.create(
+          slug: 'cellar',
+          name: 'Cellar',
+          iconName: 'wine_bar',
+          sortOrder: 18,
+          colorValue: MemoixColors.cellar.value,
+        ),
+        Category.create(
           slug: 'scratch',
           name: 'Scratch',
           iconName: 'note_alt',
-          sortOrder: 18,
+          sortOrder: 19,
           colorValue: MemoixColors.scratch.value,
         ),
       ];

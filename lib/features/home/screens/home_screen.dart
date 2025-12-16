@@ -12,6 +12,8 @@ import '../../pizzas/repository/pizza_repository.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../../modernist/repository/modernist_repository.dart';
+import '../../cheese/repository/cheese_repository.dart';
+import '../../cellar/repository/cellar_repository.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -111,11 +113,13 @@ class _CourseGridView extends ConsumerWidget {
                   (context, index) {
                     final category = categories[index];
                     
-                    // Special handling for pizzas, sandwiches, and smoking - use their own counts
+                    // Special handling for pizzas, sandwiches, smoking, cheese, cellar - use their own counts
                     final bool isPizza = category.slug == 'pizzas';
                     final bool isSandwich = category.slug == 'sandwiches';
                     final bool isSmoking = category.slug == 'smoking';
                     final bool isModernist = category.slug == 'modernist';
+                    final bool isCheese = category.slug == 'cheese';
+                    final bool isCellar = category.slug == 'cellar';
                     
                     // Get count for this category
                     final int itemCount;
@@ -140,6 +144,18 @@ class _CourseGridView extends ConsumerWidget {
                     } else if (isModernist) {
                       final modernistAsync = ref.watch(modernistCountProvider);
                       itemCount = modernistAsync.maybeWhen(
+                        data: (count) => count,
+                        orElse: () => 0,
+                      );
+                    } else if (isCheese) {
+                      final cheeseAsync = ref.watch(cheeseCountProvider);
+                      itemCount = cheeseAsync.maybeWhen(
+                        data: (count) => count,
+                        orElse: () => 0,
+                      );
+                    } else if (isCellar) {
+                      final cellarAsync = ref.watch(cellarCountProvider);
+                      itemCount = cellarAsync.maybeWhen(
                         data: (count) => count,
                         orElse: () => 0,
                       );
@@ -168,6 +184,10 @@ class _CourseGridView extends ConsumerWidget {
                           AppRoutes.toSmokingList(context);
                         } else if (category.slug == 'modernist') {
                           AppRoutes.toModernistList(context);
+                        } else if (category.slug == 'cheese') {
+                          AppRoutes.toCheeseList(context);
+                        } else if (category.slug == 'cellar') {
+                          AppRoutes.toCellarList(context);
                         } else {
                           AppRoutes.toRecipeList(context, category.slug);
                         }

@@ -27,6 +27,7 @@ class MemoixColors {
   static const Color sandwiches = Color(0xFFFFE082);  // Light gold
   static const Color smoking = Color(0xFF90A4AE);     // Gray
   static const Color cheese = Color(0xFFFFF176);      // Light yellow
+  static const Color cellar = Color(0xFFA1887F);      // Warm brown
   static const Color vegn = Color(0xFF80CBC4);        // Teal
   static const Color scratch = Color(0xFFB0BEC5);     // Blue-gray
   static const Color drinks = Color(0xFF81D4FA);      // Light blue
@@ -160,6 +161,8 @@ class MemoixColors {
         return smoking;
       case 'cheese':
         return cheese;
+      case 'cellar':
+        return cellar;
       case 'vegn':
       case 'veg*n':
       case 'vegetarian':

@@ -18,6 +18,12 @@ import '../../features/smoking/screens/smoking_edit_screen.dart';
 import '../../features/modernist/screens/modernist_list_screen.dart';
 import '../../features/modernist/screens/modernist_detail_screen.dart';
 import '../../features/modernist/screens/modernist_edit_screen.dart';
+import '../../features/cheese/screens/cheese_list_screen.dart';
+import '../../features/cheese/screens/cheese_detail_screen.dart';
+import '../../features/cheese/screens/cheese_edit_screen.dart';
+import '../../features/cellar/screens/cellar_list_screen.dart';
+import '../../features/cellar/screens/cellar_detail_screen.dart';
+import '../../features/cellar/screens/cellar_edit_screen.dart';
 import '../../features/import/screens/import_screen.dart';
 import '../../features/import/screens/qr_scanner_screen.dart';
 import '../../features/import/screens/ocr_scanner_screen.dart';
@@ -281,6 +287,58 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       MaterialPageRoute(
         builder: (_) => ModernistEditScreen(recipeId: recipeId),
+      ),
+    );
+  }
+
+  // ============ CHEESE ROUTES ============
+
+  static void toCheeseList(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => const CheeseListScreen(),
+      ),
+    );
+  }
+
+  static void toCheeseDetail(BuildContext context, String entryId) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => CheeseDetailScreen(entryId: entryId),
+      ),
+    );
+  }
+
+  static void toCheeseEdit(BuildContext context, {String? entryId}) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => CheeseEditScreen(entryId: entryId),
+      ),
+    );
+  }
+
+  // ============ CELLAR ROUTES ============
+
+  static void toCellarList(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => const CellarListScreen(),
+      ),
+    );
+  }
+
+  static void toCellarDetail(BuildContext context, String entryId) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => CellarDetailScreen(entryId: entryId),
+      ),
+    );
+  }
+
+  static void toCellarEdit(BuildContext context, {String? entryId}) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      MaterialPageRoute(
+        builder: (_) => CellarEditScreen(entryId: entryId),
       ),
     );
   }
