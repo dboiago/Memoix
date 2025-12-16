@@ -93,6 +93,10 @@ class _CellarDetailView extends ConsumerWidget {
                     value: 'edit',
                     child: Text('Edit'),
                   ),
+                  const PopupMenuItem(
+                    value: 'duplicate',
+                    child: Text('Duplicate'),
+                  ),
                   PopupMenuItem(
                     value: 'delete',
                     child: Text(
@@ -181,7 +185,7 @@ class _CellarDetailView extends ConsumerWidget {
     // Category
     if (entry.category != null && entry.category!.isNotEmpty) {
       chips.add(Chip(
-        label: Text(entry.category!),
+        label: Text(_capitalize(entry.category!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
@@ -191,7 +195,7 @@ class _CellarDetailView extends ConsumerWidget {
     // Producer
     if (entry.producer != null && entry.producer!.isNotEmpty) {
       chips.add(Chip(
-        label: Text(entry.producer!),
+        label: Text(_capitalize(entry.producer!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
@@ -274,6 +278,9 @@ class _CellarDetailView extends ConsumerWidget {
       case 'edit':
         AppRoutes.toCellarEdit(context, entryId: entry.uuid);
         break;
+      case 'duplicate':
+        _duplicateEntry(context, ref);
+        break;
       case 'delete':
         final theme = Theme.of(context);
         final confirmed = await showDialog<bool>(
@@ -308,5 +315,38 @@ class _CellarDetailView extends ConsumerWidget {
         }
         break;
     }
+  }
+
+  void _duplicateEntry(BuildContext context, WidgetRef ref) async {
+    final repo = ref.read(cellarRepositoryProvider);
+    final newEntry = CellarEntry()
+      ..uuid = ''  // Will be generated on save
+      ..name = '${entry.name} (Copy)'
+      ..category = entry.category
+      ..producer = entry.producer
+      ..tastingNotes = entry.tastingNotes
+      ..abv = entry.abv
+      ..ageVintage = entry.ageVintage
+      ..buy = entry.buy
+      ..priceRange = entry.priceRange
+      ..imageUrl = entry.imageUrl
+      ..source = CellarSource.personal
+      ..isFavorite = false;
+    
+    await repo.saveEntry(newEntry);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Created copy: ${newEntry.name}')),
+      );
+    }
+  }
+
+  /// Capitalizes the first letter of each word
+  String _capitalize(String text) {
+    if (text.isEmpty) return text;
+    return text.split(' ').map((word) {
+      if (word.isEmpty) return word;
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
   }
 }

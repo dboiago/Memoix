@@ -82,26 +82,17 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Buy indicator (styled like selected filter chip)
+                  // Buy indicator (using Chip for consistent shape)
                   if (widget.entry.buy)
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: theme.colorScheme.secondary.withOpacity(0.15),
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: theme.colorScheme.secondary,
-                            width: 1.5,
-                          ),
-                        ),
-                        child: Text(
-                          'Buy',
-                          style: theme.textTheme.labelSmall?.copyWith(
-                            color: theme.colorScheme.secondary,
-                          ),
-                        ),
+                      child: Chip(
+                        label: const Text('Buy'),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
                       ),
                     ),
                   // Favorite button
@@ -155,17 +146,11 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
             ),
           ),
         ],
-        // Milk type with icon
+        // Milk type (no icon)
         if (hasMilk) ...[
           if (hasCountry) const SizedBox(width: 12),
-          Icon(
-            Icons.pets,
-            size: 14,
-            color: theme.colorScheme.outline,
-          ),
-          const SizedBox(width: 4),
           Text(
-            widget.entry.milk!,
+            _capitalize(widget.entry.milk!),
             style: theme.textTheme.bodySmall?.copyWith(
               color: theme.colorScheme.onSurfaceVariant,
             ),
@@ -173,5 +158,14 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
         ],
       ],
     );
+  }
+
+  /// Capitalizes the first letter of each word
+  String _capitalize(String text) {
+    if (text.isEmpty) return text;
+    return text.split(' ').map((word) {
+      if (word.isEmpty) return word;
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
   }
 }

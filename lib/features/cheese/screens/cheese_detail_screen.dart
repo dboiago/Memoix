@@ -93,6 +93,10 @@ class _CheeseDetailView extends ConsumerWidget {
                     value: 'edit',
                     child: Text('Edit'),
                   ),
+                  const PopupMenuItem(
+                    value: 'duplicate',
+                    child: Text('Duplicate'),
+                  ),
                   PopupMenuItem(
                     value: 'delete',
                     child: Text(
@@ -181,7 +185,7 @@ class _CheeseDetailView extends ConsumerWidget {
     // Country
     if (entry.country != null && entry.country!.isNotEmpty) {
       chips.add(Chip(
-        label: Text(entry.country!),
+        label: Text(_capitalize(entry.country!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
@@ -191,8 +195,7 @@ class _CheeseDetailView extends ConsumerWidget {
     // Milk
     if (entry.milk != null && entry.milk!.isNotEmpty) {
       chips.add(Chip(
-        avatar: Icon(Icons.pets, size: 16, color: theme.colorScheme.onSurface),
-        label: Text(entry.milk!),
+        label: Text(_capitalize(entry.milk!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
@@ -202,7 +205,7 @@ class _CheeseDetailView extends ConsumerWidget {
     // Texture
     if (entry.texture != null && entry.texture!.isNotEmpty) {
       chips.add(Chip(
-        label: Text(entry.texture!),
+        label: Text(_capitalize(entry.texture!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
@@ -212,7 +215,7 @@ class _CheeseDetailView extends ConsumerWidget {
     // Type
     if (entry.type != null && entry.type!.isNotEmpty) {
       chips.add(Chip(
-        label: Text(entry.type!),
+        label: Text(_capitalize(entry.type!)),
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
@@ -272,6 +275,9 @@ class _CheeseDetailView extends ConsumerWidget {
       case 'edit':
         AppRoutes.toCheeseEdit(context, entryId: entry.uuid);
         break;
+      case 'duplicate':
+        _duplicateEntry(context, ref);
+        break;
       case 'delete':
         final theme = Theme.of(context);
         final confirmed = await showDialog<bool>(
@@ -306,5 +312,38 @@ class _CheeseDetailView extends ConsumerWidget {
         }
         break;
     }
+  }
+
+  void _duplicateEntry(BuildContext context, WidgetRef ref) async {
+    final repo = ref.read(cheeseRepositoryProvider);
+    final newEntry = CheeseEntry()
+      ..uuid = ''  // Will be generated on save
+      ..name = '${entry.name} (Copy)'
+      ..country = entry.country
+      ..milk = entry.milk
+      ..texture = entry.texture
+      ..type = entry.type
+      ..flavour = entry.flavour
+      ..buy = entry.buy
+      ..priceRange = entry.priceRange
+      ..imageUrl = entry.imageUrl
+      ..source = CheeseSource.personal
+      ..isFavorite = false;
+    
+    await repo.saveEntry(newEntry);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Created copy: ${newEntry.name}')),
+      );
+    }
+  }
+
+  /// Capitalizes the first letter of each word
+  String _capitalize(String text) {
+    if (text.isEmpty) return text;
+    return text.split(' ').map((word) {
+      if (word.isEmpty) return word;
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
   }
 }

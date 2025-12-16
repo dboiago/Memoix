@@ -155,12 +155,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                 labelText: 'Name *',
                 border: OutlineInputBorder(),
               ),
-              validator: (value) {
-                if (value == null || value.trim().isEmpty) {
-                  return 'Please enter a name';
-                }
-                return null;
-              },
+              textCapitalization: TextCapitalization.words,
             ),
             const SizedBox(height: 16),
 
@@ -483,7 +478,13 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
   }
 
   Future<void> _saveEntry() async {
-    if (!_formKey.currentState!.validate()) return;
+    // Validate with SnackBar
+    if (_nameController.text.trim().isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please enter a name')),
+      );
+      return;
+    }
 
     final entry = _existingEntry ?? CheeseEntry();
     entry
