@@ -368,6 +368,13 @@ class ModernistRecipe {
     return images;
   }
 
+  /// Get first image if available (headerImage or legacy imageUrl)
+  String? getFirstImage() {
+    if (headerImage != null && headerImage!.isNotEmpty) return headerImage;
+    if (imageUrl != null && imageUrl!.isNotEmpty) return imageUrl;
+    return null;
+  }
+
   /// Get image index for a specific step (0-based)
   /// Returns null if no image is associated with this step
   int? getStepImageIndex(int stepIndex) {

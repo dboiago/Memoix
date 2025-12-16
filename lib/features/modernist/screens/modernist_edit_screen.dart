@@ -81,7 +81,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       _equipment.addAll(recipe.equipment);
       
       // Load images - new structure
-      _headerImage = recipe.headerImage ?? recipe.imageUrl;
+      _headerImage = recipe.getFirstImage();
       _stepImages.addAll(recipe.stepImages);
       
       // Parse step image map
