@@ -812,10 +812,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 initialValue: TextEditingValue(text: ingredient.nameController.text),
                 optionsBuilder: (textEditingValue) {
                   if (textEditingValue.text.isEmpty) {
-                    return Suggestions.ingredients;
+                    return Suggestions.seasonings;
                   }
                   return Suggestions.filter(
-                    Suggestions.ingredients, 
+                    Suggestions.seasonings, 
                     textEditingValue.text,
                   );
                 },

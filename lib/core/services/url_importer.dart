@@ -826,7 +826,7 @@ class UrlRecipeImporter {
             equipment: needsEquipment ? htmlEquipment : jsonLdResult.equipment,
             glass: needsGlass ? htmlGlass : jsonLdResult.glass,
             garnish: needsGarnish ? htmlGarnish : jsonLdResult.garnish,
-            rawIngredients: needsIngredients ? htmlIngredientStrings : jsonLdResult.rawIngredients,
+            rawIngredients: jsonLdResult.rawIngredients, // Keep original raw data
             rawDirections: needsDirections 
                 ? (htmlDirections.isNotEmpty ? htmlDirections : htmlDirectionStrings)
                 : jsonLdResult.rawDirections,
