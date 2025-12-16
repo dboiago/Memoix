@@ -69,10 +69,34 @@ class SiteConfig {
   });
 }
 
-/// Site configurations for ingredient extraction
-/// Keyed by identifier (domain pattern or descriptive name)
+/// ========================================================================
+/// SITE CONFIGURATIONS - HTML STRUCTURE PATTERNS
+/// ========================================================================
+/// 
+/// WHY SITE CONFIGS: Recipe sites use vastly different HTML structures for
+/// the same semantic content (ingredient lists with section headers).
+/// These configs teach the parser how to find ingredients on each site.
+///
+/// EXTRACTION MODES:
+/// - containerWithSections: Container div holds multiple section divs, each with header + list
+///   Use for: King Arthur, Tasty.co, WPRM plugin
+///   
+/// - siblingHeaderList: Headers (h3/h4) followed by sibling <ul> elements
+///   Use for: Serious Eats, NYT Cooking
+///   
+/// - mixedList: Single list with header items inline (li.category) mixed with ingredients
+///   Use for: AmazingFoodMadeEasy, Saveur
+///
+/// WHEN TO ADD A NEW CONFIG:
+/// 1. Test URL import fails to extract ingredient sections
+/// 2. Inspect HTML to find the section/header/ingredient pattern
+/// 3. Add config with appropriate mode and selectors
+/// 4. Test with multiple recipes from that site
+/// ========================================================================
 const _siteConfigs = <String, SiteConfig>{
-  // King Arthur Baking: div.ingredient-section with p for name and ul.list--bullets
+  /// King Arthur Baking: Professional baking site with complex multi-part recipes
+  /// Structure: .ingredient-section contains a direct <p> child as header, then ul.list--bullets
+  /// WHY: Their recipes often have "For the Dough", "For the Filling" sections critical for baking
   'kingarthur': SiteConfig(
     sectionSelector: '.ingredient-section',
     headerIsDirectChild: true,
@@ -81,7 +105,9 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.containerWithSections,
   ),
   
-  // Tasty.co: div.ingredients__section with p.ingredient-section-name
+  /// Tasty.co (BuzzFeed): Popular video recipe site
+  /// Structure: .ingredients__section with .ingredient-section-name header
+  /// WHY: Their JSON-LD often lacks sections but HTML has them properly structured
   'tasty': SiteConfig(
     sectionSelector: '.ingredients__section',
     headerSelector: '.ingredient-section-name',
@@ -89,14 +115,19 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.containerWithSections,
   ),
   
-  // Serious Eats: headers followed by sibling ul
+  /// Serious Eats: Kenji López-Alt's site, rigorous recipe testing
+  /// Structure: Heading elements followed by sibling ingredient lists
+  /// WHY: They use CSS class naming that includes "heading" in structured ingredients
   'seriouseats': SiteConfig(
     headerSelector: '.structured-ingredients__list-heading',
     ingredientSelector: 'li',
     mode: ExtractionMode.siblingHeaderList,
   ),
   
-  // AmazingFoodMadeEasy: ul.ingredient_list with li.category and li.ingredient
+  /// AmazingFoodMadeEasy: Sous vide and modernist cooking site
+  /// Structure: Single ul.ingredient_list with li.category (headers) and li.ingredient (items)
+  /// WHY: Modernist recipes have many components (e.g., "For the gel", "For the foam")
+  /// that are embedded as list items rather than separate containers
   'amazingfood': SiteConfig(
     containerSelector: 'ul.ingredient_list, .ingredient_list',
     headerSelector: 'li.category h3',
@@ -104,14 +135,18 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.mixedList,
   ),
   
-  // NYT Cooking: class containing "ingredientgroup_name" followed by ul
+  /// NYT Cooking: New York Times recipe section (paywall site)
+  /// Structure: Uses dynamic class names containing "ingredientgroup_name"
+  /// WHY: React-based site with obfuscated classes, need partial matching
   'nyt': SiteConfig(
     headerSelector: '[class*="ingredientgroup_name"]',
     ingredientSelector: 'li',
     mode: ExtractionMode.siblingHeaderList,
   ),
   
-  // WordPress Recipe Maker (WPRM): common plugin
+  /// WordPress Recipe Maker (WPRM): Most popular WordPress recipe plugin
+  /// Structure: .wprm-recipe-ingredient-group with .wprm-recipe-group-name
+  /// WHY: ~40% of food blogs use WPRM, so this config handles a huge number of sites
   'wprm': SiteConfig(
     sectionSelector: '.wprm-recipe-ingredient-group',
     headerSelector: '.wprm-recipe-group-name',
@@ -119,7 +154,9 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.containerWithSections,
   ),
   
-  // Generic headers in .ingredients container
+  /// Generic headers pattern: Works for many smaller sites
+  /// Structure: .ingredients container with h3/h4 headers followed by li items
+  /// WHY: Fallback for sites that use semantic HTML without recipe plugins
   'generic-headers': SiteConfig(
     containerSelector: '.ingredients',
     headerSelector: 'h3, h4',
@@ -127,7 +164,9 @@ const _siteConfigs = <String, SiteConfig>{
     mode: ExtractionMode.siblingHeaderList,
   ),
   
-  // Generic container-based extraction (Saveur, etc.)
+  /// Generic container pattern: Broad fallback for common ingredient containers
+  /// Structure: Various common IDs/classes, with category headers inline
+  /// WHY: Last resort for sites like Saveur that don't use recipe plugins
   'generic-container': SiteConfig(
     containerSelector: '#recipe-ingredients, ul.ingredients, .ingredients ul, .recipe-ingredients, [data-recipe-ingredients]',
     headerSelector: 'li.category h3',
@@ -136,29 +175,153 @@ const _siteConfigs = <String, SiteConfig>{
   ),
 };
 
-/// Service to import recipes from URLs
+/// ========================================================================
+/// URL RECIPE IMPORTER - ARCHITECTURE OVERVIEW
+/// ========================================================================
+/// 
+/// This service imports recipes from URLs using a multi-stage approach:
+/// 
+/// STAGE 1: JSON-LD parsing (schema.org/Recipe format)
+///   - Most reliable when available
+///   - Provides structured data: name, ingredients, directions, times, yield
+/// 
+/// STAGE 2: HTML section supplementation (ALWAYS runs after Stage 1)
+///   - WHY: JSON-LD often lacks ingredient sections (e.g., "For the crust", "For the filling")
+///   - Sites like Punch, GBC, Tasty.co have sections in HTML but flat lists in JSON-LD
+///   - This stage merges HTML sections INTO the JSON-LD data
+/// 
+/// STAGE 3: Embedded data enhancement (Next.js, Nuxt, Vite __NEXT_DATA__, etc.)
+///   - WHY: Some sites (especially React/Vue) have more data in hydration state
+///   - Can provide equipment, techniques, notes not in JSON-LD
+/// 
+/// STAGE 4: Pure HTML fallback (only if no JSON-LD found)
+///   - Uses site-specific configs and heuristic parsing
+///   - Lowest confidence, highest extraction effort
+/// 
+/// CRITICAL: NEVER short-circuit after Stage 1. The merge logic in stages 2-4
+/// is what makes sites like Punch Drink, Great British Chefs, and Modernist
+/// Pantry work correctly.
+/// 
+/// SITE-SPECIFIC HANDLING:
+/// - YouTube: Fetches video description, transcripts, chapter timestamps
+/// - Shopify/Lyres: Non-alcoholic spirit sites with custom recipe format
+/// - Great British Chefs (GBC): Complex ingredient sections with sub-recipes
+/// - AmazingFoodMadeEasy: Uses li.category for section headers
+/// - Difford's Guide: Professional cocktail database with specific selectors
+/// - Punch Drink: High-quality cocktail journalism, needs section merging
+/// ========================================================================
 class UrlRecipeImporter {
   static final _uuid = Uuid();
 
-  /// Known cocktail recipe sites
+  /// Known cocktail recipe sites - used to detect course="Drinks" automatically
+  /// 
+  /// WHY a static list: These sites are dedicated cocktail/drink resources.
+  /// When a URL matches, we can:
+  /// 1. Set course to "Drinks" with high confidence (0.95)
+  /// 2. Apply drink-specific parsing (detect base spirit, extract garnish)
+  /// 3. Skip food-specific heuristics (serves/yield interpretation)
+  /// 
+  /// Sites in this list are maintained based on:
+  /// - Professional cocktail databases (diffordsguide, liquor.com)
+  /// - Magazine/journalism (imbibemagazine, punchdrink)
+  /// - Non-alcoholic alternatives (seedlipdrinks, lyres)
   static const _cocktailSites = [
-    'diffordsguide.com',
-    'liquor.com',
-    'thecocktailproject.com',
-    'imbibemagazine.com',
-    'cocktailsandshots.com',
-    'cocktails.lovetoknow.com',
-    'thespruceats.com/cocktails',
-    'punchdrink.com',
-    'makedrinks.com',
-    'drinksmixer.com',
-    'cocktail.uk',
-    'absolutdrinks.com',
-    'drinkflow.com',
-    'drinkify.co',
-    'seedlipdrinks.com',
-    'lyres.com',
+    'diffordsguide.com',     // Professional bartender database
+    'liquor.com',            // Spirits industry magazine
+    'thecocktailproject.com',// Cocktail tutorial site
+    'imbibemagazine.com',    // Drinks journalism
+    'cocktailsandshots.com', // Recipe aggregator
+    'cocktails.lovetoknow.com', // General drinks reference
+    'thespruceats.com/cocktails', // Spruce Eats drinks section
+    'punchdrink.com',        // High-end drinks journalism - excellent sections
+    'makedrinks.com',        // Recipe site
+    'drinksmixer.com',       // Classic cocktail database
+    'cocktail.uk',           // UK cocktail reference
+    'absolutdrinks.com',     // Absolut vodka recipes
+    'drinkflow.com',         // Modern cocktail app
+    'drinkify.co',           // Pairing suggestions
+    'seedlipdrinks.com',     // Non-alcoholic spirit recipes
+    'lyres.com',             // Non-alcoholic spirit brand - Shopify site
   ];
+
+  /// Consolidated course detection keywords
+  /// Each course maps to a list of keywords that indicate that course type
+  /// Keywords are matched as word boundaries (\b) in lowercase text
+  static const _courseKeywords = <String, List<String>>{
+    'Smoking': [
+      'smoked', 'smoking', 'smoker', 'bbq', 'barbecue', 'barbeque', 
+      'low and slow', 'pellet grill', 'hickory', 'mesquite', 'applewood',
+      'cherrywood', 'pecan', 'wood chips', 'wood chunks',
+    ],
+    'Drinks': [
+      'cocktail', 'smoothie', 'juice', 'lemonade', 'drink', 'beverage', 
+      'mocktail', 'sangria', 'punch', 'milkshake', 'frappe', 'martini', 
+      'margarita', 'mojito', 'daiquiri', 'manhattan', 'negroni', 
+      'old fashioned', 'highball', 'sour', 'fizz', 'collins', 'spritz', 
+      'mimosa', 'bellini', 'cosmopolitan', 'mai tai', 'pina colada', 
+      'bloody mary', 'paloma', 'vodka', 'gin', 'rum', 'tequila', 
+      'whiskey', 'whisky', 'bourbon', 'scotch', 'brandy', 'cognac', 
+      'mezcal', 'liqueur', 'vermouth', 'amaro', 'aperol', 'campari',
+      'cordial', 'elixir', 'tonic', 'shrub', 'bitters',
+    ],
+    'Modernist': [
+      'modernist', 'molecular', 'spherification', 'gelification', 
+      'sous vide', 'foam', 'caviar', 'agar', 'xanthan', 'sodium alginate',
+      'calcium chloride', 'lecithin', 'maltodextrin', 'methylcellulose',
+      'gellan', 'transglutaminase', 'immersion circulator',
+    ],
+    'Breads': [
+      'bread', 'focaccia', 'ciabatta', 'baguette', 'brioche', 'sourdough', 
+      'rolls', 'buns', 'loaf', 'loaves', 'naan', 'pita', 'flatbread', 
+      'bagel', 'croissant', 'pretzel', 'challah', 'dough',
+    ],
+    'Desserts': [
+      'cake', 'cookie', 'brownie', 'pie', 'tart', 'dessert', 'sweet', 
+      'chocolate', 'cheesecake', 'cupcake', 'muffin', 'donut', 'doughnut', 
+      'pastry', 'pudding', 'ice cream', 'sorbet', 'flan', 'custard', 
+      'macaron', 'tiramisu', 'mousse', 'creme brulee', 'pavlova', 'baklava',
+      'gelato', 'truffle', 'fudge', 'candy', 'meringue', 'souffle',
+    ],
+    'Soup': [
+      'soup', 'stew', 'chowder', 'bisque', 'broth', 'consomme', 
+      'gazpacho', 'minestrone', 'pho', 'ramen', 'chili', 'goulash',
+      'tom yum', 'laksa',
+    ],
+    'Sides': [
+      'salad', 'slaw', 'coleslaw', 'side dish', 'mashed', 
+      'roasted vegetables', 'french fries', 'fries', 'wedges', 
+      'gratin', 'pilaf', 'rice dish', 'risotto',
+    ],
+    'Sauces': [
+      'sauce', 'gravy', 'dressing', 'dip', 'aioli', 'mayo', 'mayonnaise', 
+      'ketchup', 'mustard', 'vinaigrette', 'pesto', 'salsa', 'guacamole', 
+      'hummus', 'relish', 'chutney', 'coulis', 'marinade', 'glaze', 
+      'reduction', 'chimichurri', 'gremolata',
+    ],
+    'Brunch': [
+      'brunch', 'breakfast', 'pancake', 'waffle', 'french toast', 
+      'eggs benedict', 'omelette', 'omelet', 'frittata', 'quiche', 
+      'hash', 'scrambled', 'poached eggs',
+    ],
+    'Apps': [
+      'appetizer', 'starter', 'tapas', 'antipasto', 'bruschetta', 
+      'crostini', 'canape', 'spring roll', 'egg roll', 'dumpling', 
+      'wonton', 'samosa', 'empanada', 'arancini', 'croquette', 'ceviche',
+      'tartare', 'carpaccio',
+    ],
+    'Pickles': [
+      'pickle', 'pickled', 'ferment', 'kimchi', 'sauerkraut', 
+      'preserve', 'preserves', 'canning', 'jam', 'jelly', 'marmalade',
+    ],
+    'Rubs': [
+      'rub', 'seasoning', 'spice mix', 'spice blend',
+    ],
+  };
+
+  /// URL patterns that strongly indicate a specific course
+  static const _courseUrlPatterns = <String, List<String>>{
+    'Modernist': ['modernist', 'molecular', 'chefsteps', 'technique'],
+  };
 
   /// HTML entity decode map for common entities
   static final _htmlEntities = {
@@ -230,8 +393,22 @@ class UrlRecipeImporter {
     RegExp(r'\blitre[s]?\b', caseSensitive: false): 'L',
   };
 
-  /// Import a recipe from a URL
-  /// Supports JSON-LD schema.org Recipe format, common recipe sites, and YouTube videos
+  /// ========================================================================
+  /// MAIN IMPORT ENTRY POINT - MULTI-STAGE EXTRACTION
+  /// ========================================================================
+  /// 
+  /// Import a recipe from a URL using the multi-stage approach:
+  /// 
+  /// STAGE 1: JSON-LD parsing (schema.org/Recipe format)
+  /// STAGE 2: HTML section supplementation (ALWAYS after Stage 1)
+  /// STAGE 3: Embedded data enhancement (Next.js, Nuxt, Vite hydration)
+  /// STAGE 4: Pure HTML fallback (only if no JSON-LD)
+  /// 
+  /// CRITICAL: NEVER short-circuit after Stage 1. The merge logic is what
+  /// makes sites like Punch Drink, Great British Chefs, and Modernist Pantry
+  /// work correctly. JSON-LD often has flat ingredient lists but HTML has
+  /// section headers ("For the Crust", "For the Filling") that are essential.
+  /// 
   /// Returns RecipeImportResult with confidence scores for user review
   Future<RecipeImportResult> importFromUrl(String url) async {
     try {
@@ -1143,7 +1320,31 @@ class UrlRecipeImporter {
     return null;
   }
   
-  /// Import recipe from YouTube video
+  /// ========================================================================
+  /// YOUTUBE IMPORT - VIDEO RECIPE EXTRACTION
+  /// ========================================================================
+  /// 
+  /// WHY YOUTUBE SUPPORT: Many professional chefs post recipes on YouTube.
+  /// Video descriptions often contain full ingredient lists and directions,
+  /// especially from channels like Joshua Weissman, Babish, and Kenji.
+  /// 
+  /// EXTRACTION STRATEGY:
+  /// 1. Fetch video page HTML (not API - no auth required)
+  /// 2. Extract title from JSON embedded in page ("title" field)
+  /// 3. Parse description for ingredients/directions (section headers like "INGREDIENTS:")
+  /// 4. Extract chapter timestamps as potential direction steps
+  /// 5. Attempt to fetch closed captions/transcripts for additional context
+  /// 
+  /// CONFIDENCE SCORING:
+  /// - Higher confidence if description has clear "INGREDIENTS:" section
+  /// - Lower confidence if we only have transcript (needs user review)
+  /// - Medium confidence for chapter-based directions
+  /// 
+  /// LIMITATIONS:
+  /// - Requires video to have text description (some don't)
+  /// - Transcript parsing is heuristic (audio-to-text artifacts)
+  /// - No image extraction (would require API access)
+  /// ========================================================================
   Future<RecipeImportResult> _importFromYouTube(String videoId, String sourceUrl) async {
     try {
       // Fetch the video page to get description and metadata
@@ -1380,71 +1581,155 @@ class UrlRecipeImporter {
     return cleaned.trim();
   }
   
+  /// Detect recipe course from text using the consolidated _courseKeywords map
+  /// Returns the course name if any keywords match, null otherwise
+  /// Priority order is defined by the order of entries in _courseKeywords
+  String? _detectCourseFromText(String text) {
+    final lowerText = text.toLowerCase();
+    
+    // Check each course's keywords in priority order
+    for (final entry in _courseKeywords.entries) {
+      final course = entry.key;
+      final keywords = entry.value;
+      
+      for (final keyword in keywords) {
+        // Build regex with word boundaries, handling multi-word keywords
+        final pattern = RegExp(
+          r'\b' + keyword.replaceAll(' ', r'\s+') + r's?\b',
+          caseSensitive: false,
+        );
+        if (pattern.hasMatch(lowerText)) {
+          return course;
+        }
+      }
+    }
+    
+    return null; // Let caller default to Mains
+  }
+  
   /// Detect recipe course from title keywords
+  /// Uses the consolidated _courseKeywords map
   String? _detectCourseFromTitle(String title) {
-    final lowerTitle = title.toLowerCase();
-    
-    // Smoking/BBQ course keywords
-    if (RegExp(r'\b(?:smoked|smoking|smoker|bbq|barbecue|barbeque|low\s*and\s*slow|pellet\s*grill)\b').hasMatch(lowerTitle)) {
-      return 'Smoking';
+    return _detectCourseFromText(title);
+  }
+  
+  /// Unified course detection with confidence scoring
+  /// Combines text-based matching with ingredient/content analysis for specialized courses
+  /// 
+  /// Why a unified approach: 
+  /// - Simple courses (Soup, Sides, Sauces, Apps) only need title/URL keyword matching
+  /// - Complex courses (Drinks, Smoking, Modernist, Breads) need ingredient/content analysis
+  /// - This function handles both patterns and provides consistent confidence scoring
+  /// 
+  /// Returns: (course: String, confidence: double)
+  ({String course, double confidence}) _detectCourseWithConfidence({
+    required String titleLower,
+    required String urlLower,
+    required List<String> ingredientStrings,
+    required bool isCocktailSite,
+    dynamic document, // Optional for modernist detection
+  }) {
+    // Priority 1: Known cocktail site (highest confidence)
+    if (isCocktailSite) {
+      return (course: 'Drinks', confidence: 0.95);
     }
     
-    // Drinks course keywords (check early - spirits in title = likely a drink recipe)
-    if (RegExp(r'\b(?:cocktail|smoothie|juice|lemonade|drink|beverage|mocktail|sangria|punch|milkshake|frappe|martini|margarita|mojito|daiquiri|manhattan|negroni|old\s*fashioned|highball|sour|fizz|collins|spritz|mimosa|bellini|cosmopolitan|mai\s*tai|pina\s*colada|bloody\s*mary|paloma|vodka|gin|rum|tequila|whiskey|whisky|bourbon|scotch|brandy|cognac|mezcal)\b').hasMatch(lowerTitle)) {
-      return 'Drinks';
+    // Priority 2: Drinks detection (ingredient-aware) - check before generic text matching
+    // because spirit names in titles are strong indicators
+    if (_matchesCourseKeywords('Drinks', titleLower) || 
+        _matchesCourseKeywords('Drinks', urlLower) ||
+        _hasSpiritsInIngredients(ingredientStrings)) {
+      return (course: 'Drinks', confidence: 0.75);
     }
     
-    // Modernist keywords
-    if (RegExp(r'\b(?:modernist|molecular|spherification|gelification|sous\s*vide|foam|caviar|agar|xanthan)\b').hasMatch(lowerTitle)) {
-      return 'Modernist';
+    // Priority 3: Smoking (ingredient-aware for wood types)
+    if (_matchesCourseKeywords('Smoking', titleLower) ||
+        _matchesCourseKeywords('Smoking', urlLower) ||
+        _hasSmokingIndicators(ingredientStrings)) {
+      return (course: 'Smoking', confidence: 0.8);
     }
     
-    // Breads course keywords
-    if (RegExp(r'\b(?:bread|focaccia|ciabatta|baguette|brioche|sourdough|rolls?|buns?|loaf|loaves|naan|pita|flatbread|bagels?|croissants?|pretzels?|challah|dough)\b').hasMatch(lowerTitle)) {
-      return 'Breads';
+    // Priority 4: Modernist (needs document + ingredients for technique detection)
+    if (document != null && _isModernistRecipe(document, urlLower, ingredientStrings)) {
+      return (course: 'Modernist', confidence: 0.75);
     }
     
-    // Desserts course keywords
-    if (RegExp(r'\b(?:cake|cookie|cookies|brownie|pie|tart|dessert|sweet|chocolate|cheesecake|cupcake|muffin|donut|doughnut|pastry|pastries|pudding|ice\s*cream|sorbet|flan|custard|macarons?|tiramisu|mousse|crème\s*brûlée|pavlova|baklava|cinnamon\s*rolls?)\b').hasMatch(lowerTitle)) {
-      return 'Desserts';
+    // Priority 5: Breads (ingredient-aware for flour+yeast)
+    if (_matchesCourseKeywords('Breads', titleLower) ||
+        _matchesCourseKeywords('Breads', urlLower) ||
+        _hasBreadIndicators(ingredientStrings)) {
+      return (course: 'Breads', confidence: 0.75);
     }
     
-    // Soups course keywords
-    if (RegExp(r'\b(?:soup|stew|chowder|bisque|broth|consommé|gazpacho|minestrone|pho|ramen|chili)\b').hasMatch(lowerTitle)) {
-      return 'Soup';
+    // Priority 6: Simple text-based courses in order of confidence
+    final combinedText = '$titleLower $urlLower';
+    
+    if (_matchesCourseKeywords('Desserts', combinedText)) {
+      return (course: 'Desserts', confidence: 0.7);
+    }
+    if (_matchesCourseKeywords('Soup', combinedText)) {
+      return (course: 'Soup', confidence: 0.75);
+    }
+    if (_matchesCourseKeywords('Sauces', combinedText)) {
+      return (course: 'Sauces', confidence: 0.7);
+    }
+    if (_matchesCourseKeywords('Apps', combinedText)) {
+      return (course: 'Apps', confidence: 0.65);
+    }
+    if (_matchesCourseKeywords('Sides', combinedText)) {
+      return (course: 'Sides', confidence: 0.6);
+    }
+    if (_matchesCourseKeywords('Brunch', combinedText)) {
+      return (course: 'Brunch', confidence: 0.65);
+    }
+    if (_matchesCourseKeywords('Pickles', combinedText)) {
+      return (course: 'Pickles', confidence: 0.7);
+    }
+    if (_matchesCourseKeywords('Rubs', combinedText)) {
+      return (course: 'Rubs', confidence: 0.7);
     }
     
-    // Sides course keywords
-    if (RegExp(r'\b(?:salad|slaw|coleslaw|side\s*dish|mashed|roasted\s*(?:vegetables?|veggies|potatoes)|french\s*fries|fries|wedges|gratin|pilaf|rice\s*dish)\b').hasMatch(lowerTitle)) {
-      return 'Sides';
-    }
+    // Default: Mains (medium confidence as it's a reasonable fallback)
+    return (course: 'Mains', confidence: 0.5);
+  }
+  
+  /// Check if text matches any keyword for a specific course
+  bool _matchesCourseKeywords(String course, String text) {
+    final keywords = _courseKeywords[course];
+    if (keywords == null) return false;
     
-    // Sauces course keywords
-    if (RegExp(r'\b(?:sauce|gravy|dressing|dip|aioli|mayo|mayonnaise|ketchup|mustard|vinaigrette|pesto|salsa|guacamole|hummus|relish|chutney|coulis)\b').hasMatch(lowerTitle)) {
-      return 'Sauces';
+    final lowerText = text.toLowerCase();
+    for (final keyword in keywords) {
+      final pattern = RegExp(
+        r'\b' + keyword.replaceAll(' ', r'\s+') + r's?\b',
+        caseSensitive: false,
+      );
+      if (pattern.hasMatch(lowerText)) return true;
     }
-    
-    // Brunch course keywords
-    if (RegExp(r'\b(?:brunch|breakfast|pancake|waffle|french\s*toast|eggs?\s*benedict|omelette|omelet|frittata|quiche|hash|scrambled|poached\s*eggs?)\b').hasMatch(lowerTitle)) {
-      return 'Brunch';
-    }
-    
-    // Apps (appetizers) course keywords
-    if (RegExp(r'\b(?:appetizer|starter|tapas|antipasto|bruschetta|crostini|canapé|spring\s*rolls?|egg\s*rolls?|dumplings?|wontons?|samosa|empanada|arancini|croquette)\b').hasMatch(lowerTitle)) {
-      return 'Apps';
-    }
-    
-    // Pickles course keywords
-    if (RegExp(r'\b(?:pickle|pickled|ferment|kimchi|sauerkraut|preserve|preserves|canning|jam|jelly|marmalade)\b').hasMatch(lowerTitle)) {
-      return 'Pickles';
-    }
-    
-    // Rubs course keywords
-    if (RegExp(r'\b(?:rub|seasoning|spice\s*mix|spice\s*blend|marinade)\b').hasMatch(lowerTitle)) {
-      return 'Rubs';
-    }
-    
-    return null; // Let it default to Mains
+    return false;
+  }
+  
+  /// Check for spirit-related ingredients (helper for Drinks detection)
+  bool _hasSpiritsInIngredients(List<String> ingredients) {
+    const spirits = ['vodka', 'gin', 'rum', 'tequila', 'whiskey', 'whisky', 
+                     'bourbon', 'scotch', 'brandy', 'cognac', 'mezcal'];
+    final allText = ingredients.join(' ').toLowerCase();
+    return spirits.any((s) => allText.contains(s));
+  }
+  
+  /// Check for smoking/BBQ indicators in ingredients (wood types)
+  bool _hasSmokingIndicators(List<String> ingredients) {
+    const woodTypes = ['hickory', 'mesquite', 'applewood', 'apple wood',
+                       'cherrywood', 'cherry wood', 'pecan', 'oak',
+                       'maple wood', 'alder', 'wood chips', 'wood chunks'];
+    final allText = ingredients.join(' ').toLowerCase();
+    return woodTypes.any((w) => allText.contains(w));
+  }
+  
+  /// Check for bread-making indicators (flour + yeast)
+  bool _hasBreadIndicators(List<String> ingredients) {
+    final allText = ingredients.join(' ').toLowerCase();
+    return allText.contains('flour') && allText.contains('yeast');
   }
   
   /// Parse YouTube video description to extract ingredients and directions
@@ -1762,47 +2047,19 @@ class UrlRecipeImporter {
     return null;
   }
   
-  /// Extract minutes from a time string like "15 minutes" or "1 hour 30 minutes"
+  /// Extract minutes from a time string like "15 minutes", "1 hour 30 minutes", or ISO 8601 "PT30M"
+  /// This is a convenience wrapper around _parseDurationMinutes for String? parameters
   int _extractMinutes(String? timeStr) {
     if (timeStr == null || timeStr.isEmpty) return 0;
-    
-    int totalMinutes = 0;
-    
-    // Extract hours
-    final hoursMatch = RegExp(r'(\d+)\s*(?:hours?|hrs?|h)\b', caseSensitive: false).firstMatch(timeStr);
-    if (hoursMatch != null) {
-      totalMinutes += (int.tryParse(hoursMatch.group(1)!) ?? 0) * 60;
-    }
-    
-    // Extract minutes
-    final minsMatch = RegExp(r'(\d+)\s*(?:minutes?|mins?|m)\b', caseSensitive: false).firstMatch(timeStr);
-    if (minsMatch != null) {
-      totalMinutes += int.tryParse(minsMatch.group(1)!) ?? 0;
-    }
-    
-    // If just a bare number, assume minutes
-    if (totalMinutes == 0) {
-      final bareNumber = RegExp(r'^(\d+)\s*$').firstMatch(timeStr.trim());
-      if (bareNumber != null) {
-        totalMinutes = int.tryParse(bareNumber.group(1)!) ?? 0;
-      }
-    }
-    
-    return totalMinutes;
+    return _parseDurationMinutes(timeStr);
   }
   
-  /// Normalize a time string to a clean format
+  /// Normalize a time string to a clean display format (e.g., "1h 30m")
+  /// Uses _formatMinutes for consistent output
   String _normalizeTimeString(String timeStr) {
-    final minutes = _extractMinutes(timeStr);
+    final minutes = _parseDurationMinutes(timeStr);
     if (minutes <= 0) return timeStr; // Can't parse, return as-is
-    
-    if (minutes >= 60) {
-      final hours = minutes ~/ 60;
-      final mins = minutes % 60;
-      return mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
-    } else {
-      return '$minutes min';
-    }
+    return _formatMinutes(minutes);
   }
   
   String _cleanDirectionLine(String line) {
@@ -4591,28 +4848,29 @@ class UrlRecipeImporter {
   }
   
   /// Check if URL indicates a modernist/molecular gastronomy site
+  /// Uses the consolidated _courseUrlPatterns map
   bool _isModernistUrl(String url) {
+    final patterns = _courseUrlPatterns['Modernist'];
+    if (patterns == null) return false;
     final lowerUrl = url.toLowerCase();
-    return lowerUrl.contains('modernist') || 
-           lowerUrl.contains('molecular') ||
-           lowerUrl.contains('chefsteps') ||
-           lowerUrl.contains('technique');
+    return patterns.any((p) => lowerUrl.contains(p));
   }
   
   /// Check if content indicates modernist/molecular gastronomy
+  /// Uses a subset of the _courseKeywords map plus additional technique keywords
   bool _isModernistContent(String text) {
+    // First check _courseKeywords for Modernist
+    if (_matchesCourseKeywords('Modernist', text)) return true;
+    
+    // Additional modernist technique/ingredient keywords not in title matching
     final lower = text.toLowerCase();
-    const modernistKeywords = [
-      'spherification', 'gelification', 'sous vide', 'immersion circulator',
+    const additionalKeywords = [
+      'spherification', 'gelification', 'immersion circulator',
       'agar', 'xanthan', 'sodium alginate', 'calcium chloride',
       'molecular gastronomy', 'modernist cuisine', 'hydrocolloid',
       'methylcellulose', 'lecithin', 'maltodextrin', 'transglutaminase',
     ];
-    
-    for (final keyword in modernistKeywords) {
-      if (lower.contains(keyword)) return true;
-    }
-    return false;
+    return additionalKeywords.any((k) => lower.contains(k));
   }
 
   /// Check if this is a drink/cocktail recipe based on content
@@ -4729,22 +4987,23 @@ class UrlRecipeImporter {
       return null;
     }
 
-    // Detect if this is a drink based on URL and content
+    // Detect course using unified function
     final isCocktail = _isCocktailSite(sourceUrl);
+    final titleLower = title.toLowerCase();
+    final urlLower = sourceUrl.toLowerCase();
     
-    // Try to detect course from content
-    String course;
-    if (isCocktail) {
-      course = 'Drinks';
-    } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
-      course = 'Modernist';
-    } else {
-      course = 'Mains';
-    }
+    final courseResult = _detectCourseWithConfidence(
+      titleLower: titleLower,
+      urlLower: urlLower,
+      ingredientStrings: rawIngredientStrings,
+      isCocktailSite: isCocktail,
+      document: document,
+    );
+    final course = courseResult.course;
     
     // For drinks, detect the base spirit
     String? subcategory;
-    if (isCocktail) {
+    if (isCocktail || course == 'Drinks') {
       final spiritCode = _detectSpirit(ingredients);
       if (spiritCode != null) {
         subcategory = Spirit.toDisplayName(spiritCode);
@@ -5842,43 +6101,19 @@ class UrlRecipeImporter {
     // Detect if this is a drink based on URL and content
     final isCocktailSite = _isCocktailSite(sourceUrl);
     
-    // Try to detect course from title and content
-    String course;
-    double courseConfidence;
+    // Detect course using unified function (handles text-based and ingredient-aware detection)
     final titleLower = (title ?? '').toLowerCase();
     final urlLower = sourceUrl.toLowerCase();
     
-    if (isCocktailSite || _isDrinkRecipeByContent(titleLower, urlLower, rawIngredientStrings)) {
-      course = 'Drinks';
-      courseConfidence = isCocktailSite ? 0.95 : 0.75;  // High confidence for known cocktail sites
-    } else if (_isSmokingRecipe(titleLower, urlLower, rawIngredientStrings)) {
-      course = 'Smoking';
-      courseConfidence = 0.8;
-    } else if (_isModernistRecipe(document, sourceUrl, rawIngredientStrings)) {
-      course = 'Modernist';
-      courseConfidence = 0.75;
-    } else if (_isBreadRecipe(titleLower, urlLower, rawIngredientStrings)) {
-      course = 'Breads';
-      courseConfidence = 0.75;
-    } else if (_isDessertRecipe(titleLower, urlLower, rawIngredientStrings)) {
-      course = 'Desserts';
-      courseConfidence = 0.7;
-    } else if (_isSoupRecipe(titleLower, urlLower)) {
-      course = 'Soups';
-      courseConfidence = 0.75;
-    } else if (_isSauceRecipe(titleLower, urlLower)) {
-      course = 'Sauces';
-      courseConfidence = 0.7;
-    } else if (_isSideRecipe(titleLower, urlLower)) {
-      course = 'Sides';
-      courseConfidence = 0.6;
-    } else if (_isAppRecipe(titleLower, urlLower)) {
-      course = 'Apps';
-      courseConfidence = 0.65;
-    } else {
-      course = 'Mains';
-      courseConfidence = 0.5; // Medium confidence - it's a reasonable default
-    }
+    final courseResult = _detectCourseWithConfidence(
+      titleLower: titleLower,
+      urlLower: urlLower,
+      ingredientStrings: rawIngredientStrings,
+      isCocktailSite: isCocktailSite,
+      document: document,
+    );
+    final course = courseResult.course;
+    final courseConfidence = courseResult.confidence;
     
     // For drinks, detect the base spirit
     String? subcategory;
@@ -8277,192 +8512,14 @@ class UrlRecipeImporter {
     return matchCount >= 2;
   }
   
-  /// Detect if this is a bread/dough recipe
-  bool _isBreadRecipe(String titleLower, String urlLower, List<String> ingredients) {
-    // Check title for explicit bread keywords (not pasta/pizza/noodles which are mains)
-    const breadKeywords = [
-      'bread', 'dough', 'focaccia', 'baguette', 'ciabatta', 'sourdough', 
-      'brioche', 'challah', 'bagel', 'pretzel', 'flatbread', 'naan',
-      'pita', 'tortilla', 'croissant', 'danish',
-    ];
-    
-    for (final keyword in breadKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    // Check ingredients for bread-making staples (flour + yeast = likely bread)
-    final hasFlour = ingredients.any((i) => i.toLowerCase().contains('flour'));
-    final hasYeast = ingredients.any((i) => i.toLowerCase().contains('yeast'));
-    
-    // Flour + yeast = likely bread
-    if (hasFlour && hasYeast) return true;
-    
-    return false;
-  }
-  
-  /// Detect if this is a dessert recipe
-  bool _isDessertRecipe(String titleLower, String urlLower, List<String> ingredients) {
-    const dessertKeywords = [
-      'cake', 'cookie', 'brownie', 'pie', 'tart', 'pudding',
-      'ice cream', 'gelato', 'sorbet', 'mousse', 'custard',
-      'cheesecake', 'cupcake', 'muffin', 'scone', 'donut',
-      'doughnut', 'macaron', 'meringue', 'souffle', 'creme',
-      'chocolate', 'dessert', 'sweet', 'candy', 'fudge',
-      'truffle', 'tiramisu', 'panna cotta', 'pavlova',
-    ];
-    
-    for (final keyword in dessertKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-  
-  /// Detect if this is a soup recipe
-  bool _isSoupRecipe(String titleLower, String urlLower) {
-    const soupKeywords = [
-      'soup', 'stew', 'chowder', 'bisque', 'broth', 'stock',
-      'gazpacho', 'consomme', 'pho', 'ramen', 'minestrone',
-      'goulash', 'chili', 'curry soup', 'tom yum', 'laksa',
-    ];
-    
-    for (final keyword in soupKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-  
-  /// Detect if this is a sauce recipe
-  bool _isSauceRecipe(String titleLower, String urlLower) {
-    const sauceKeywords = [
-      'sauce', 'gravy', 'aioli', 'mayonnaise', 'mayo', 'pesto',
-      'vinaigrette', 'dressing', 'marinade', 'glaze', 'reduction',
-      'coulis', 'salsa', 'chimichurri', 'gremolata', 'relish',
-      'chutney', 'compote', 'jam', 'jelly', 'preserve',
-    ];
-    
-    for (final keyword in sauceKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-  
-  /// Detect if this is a side dish recipe
-  bool _isSideRecipe(String titleLower, String urlLower) {
-    const sideKeywords = [
-      'side', 'salad', 'slaw', 'rice', 'pilaf', 'risotto',
-      'mashed', 'roasted vegetable', 'grilled vegetable',
-      'coleslaw', 'potato salad', 'grain bowl',
-    ];
-    
-    for (final keyword in sideKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-  
-  /// Detect if this is an appetizer recipe
-  bool _isAppRecipe(String titleLower, String urlLower) {
-    const appKeywords = [
-      'appetizer', 'appetiser', 'starter', 'hors d\'oeuvre',
-      'canape', 'bruschetta', 'crostini', 'dip', 'spread',
-      'hummus', 'guacamole', 'ceviche', 'tartare', 'carpaccio',
-      'spring roll', 'egg roll', 'samosa', 'empanada',
-    ];
-    
-    for (final keyword in appKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-  
-  /// Detect if this is a smoking/BBQ recipe
-  bool _isSmokingRecipe(String titleLower, String urlLower, List<String> ingredients) {
-    // Check title/URL for smoking keywords
-    const smokingKeywords = [
-      'smoked', 'smoking', 'smoke ', 'smoker',
-      'bbq', 'barbecue', 'barbeque',
-      'low and slow', 'pellet grill',
-    ];
-    
-    for (final keyword in smokingKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    // Check for wood types in ingredients (strong indicator of smoking)
-    const woodTypes = [
-      'hickory', 'mesquite', 'applewood', 'apple wood',
-      'cherrywood', 'cherry wood', 'pecan', 'oak',
-      'maple wood', 'alder', 'wood chips', 'wood chunks',
-    ];
-    
-    final allIngredients = ingredients.join(' ').toLowerCase();
-    for (final wood in woodTypes) {
-      if (allIngredients.contains(wood)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
-  
-  /// Detect if this is a drink/cocktail recipe (content-based, for HTML parsing)
-  bool _isDrinkRecipeByContent(String titleLower, String urlLower, List<String> ingredients) {
-    // Check title/URL for drink keywords
-    const drinkKeywords = [
-      'cocktail', 'martini', 'margarita', 'mojito', 'daiquiri',
-      'manhattan', 'negroni', 'old fashioned', 'highball',
-      'sour', 'fizz', 'collins', 'spritz', 'punch',
-      'sangria', 'mimosa', 'bellini', 'cosmopolitan',
-      'mai tai', 'pina colada', 'bloody mary', 'paloma',
-      'smoothie', 'milkshake', 'lemonade', 'iced tea',
-      // Spirits and liqueurs as drink type indicators
-      'amaro', 'digestif', 'aperitif', 'bitters', 'sharbat', 'shrub',
-      'cordial', 'elixir', 'tonic', 'syrup recipe', 'simple syrup',
-      'infusion', 'tincture', 'limoncello', 'nocino',
-    ];
-    
-    for (final keyword in drinkKeywords) {
-      if (titleLower.contains(keyword) || urlLower.contains(keyword)) {
-        return true;
-      }
-    }
-    
-    // Check for spirit names in title (more specific)
-    const spirits = [
-      'vodka', 'gin', 'rum', 'tequila', 'whiskey', 'whisky',
-      'bourbon', 'scotch', 'brandy', 'cognac', 'mezcal',
-      'liqueur', 'vermouth', 'amaretto', 'kahlua', 'baileys',
-      'chartreuse', 'campari', 'aperol', 'fernet', 'grappa',
-    ];
-    
-    // Only match spirits in title (not ingredients, as spirits can be cooking ingredients)
-    for (final spirit in spirits) {
-      if (titleLower.contains(spirit)) {
-        return true;
-      }
-    }
-    
-    return false;
-  }
+  // NOTE: The following course detection functions were consolidated into:
+  // - _detectCourseWithConfidence() - unified course detection with confidence scoring
+  // - _matchesCourseKeywords() - text-based keyword matching using _courseKeywords map
+  // - _hasSpiritsInIngredients() - drinks ingredient detection
+  // - _hasSmokingIndicators() - smoking/BBQ wood type detection
+  // - _hasBreadIndicators() - bread flour+yeast detection
+  // Old functions removed: _isBreadRecipe, _isDessertRecipe, _isSoupRecipe, 
+  //   _isSauceRecipe, _isSideRecipe, _isAppRecipe, _isSmokingRecipe, _isDrinkRecipeByContent
 }
 
 // Provider for URL recipe importer
