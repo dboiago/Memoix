@@ -99,7 +99,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                       size: 20,
                     ),
                     color: widget.recipe.isFavorite
-                        ? Colors.red.shade400
+                        ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
                       ref

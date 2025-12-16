@@ -183,6 +183,16 @@ class ModernistRepository {
           r.ingredients.any((i) => i.name.toLowerCase().contains(lower));
     }).toList();
   }
+
+  /// Watch favorite recipes
+  Stream<List<ModernistRecipe>> watchFavorites() {
+    return _db.modernistRecipes
+        .where()
+        .filter()
+        .isFavoriteEqualTo(true)
+        .sortByName()
+        .watch(fireImmediately: true);
+  }
 }
 
 // ============ PROVIDERS ============
@@ -196,6 +206,11 @@ final modernistRepositoryProvider = Provider<ModernistRepository>((ref) {
 /// All modernist recipes (stream)
 final allModernistRecipesProvider = StreamProvider<List<ModernistRecipe>>((ref) {
   return ref.watch(modernistRepositoryProvider).watchAll();
+});
+
+/// Favorite modernist recipes (stream)
+final favoriteModernistRecipesProvider = StreamProvider<List<ModernistRecipe>>((ref) {
+  return ref.watch(modernistRepositoryProvider).watchFavorites();
 });
 
 /// Modernist recipes by type

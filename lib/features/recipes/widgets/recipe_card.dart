@@ -210,7 +210,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                     size: 20,
                   ),
                   color: widget.recipe.isFavorite 
-                      ? Colors.red.shade400 
+                      ? theme.colorScheme.secondary 
                       : theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
                     ref.read(recipeRepositoryProvider).toggleFavorite(widget.recipe.id);

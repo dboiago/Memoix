@@ -90,6 +90,16 @@ class SmokingRepository {
     final recipes = await getAllRecipes();
     return recipes.map((r) => r.wood).toSet();
   }
+
+  /// Watch favorite recipes
+  Stream<List<SmokingRecipe>> watchFavorites() {
+    return _db.smokingRecipes
+        .where()
+        .filter()
+        .isFavoriteEqualTo(true)
+        .sortByName()
+        .watch(fireImmediately: true);
+  }
 }
 
 // Providers
@@ -101,6 +111,12 @@ final smokingRepositoryProvider = Provider<SmokingRepository>((ref) {
 final allSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {
   final repo = ref.watch(smokingRepositoryProvider);
   return repo.watchAll();
+});
+
+/// Favorite smoking recipes (stream)
+final favoriteSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {
+  final repo = ref.watch(smokingRepositoryProvider);
+  return repo.watchFavorites();
 });
 
 /// Smoking recipe count (derived from stream for auto-update)

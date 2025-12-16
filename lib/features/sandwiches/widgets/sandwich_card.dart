@@ -99,7 +99,7 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                       size: 20,
                     ),
                     color: widget.sandwich.isFavorite
-                        ? Colors.red.shade400
+                        ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(sandwichRepositoryProvider).toggleFavorite(widget.sandwich);

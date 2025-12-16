@@ -142,7 +142,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                       size: 20,
                     ),
                     color: recipe.isFavorite
-                        ? Colors.red.shade400
+                        ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
                       ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);

@@ -103,7 +103,7 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
                       size: 20,
                     ),
                     color: widget.entry.isFavorite
-                        ? Colors.red.shade400
+                        ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(cheeseRepositoryProvider).toggleFavorite(widget.entry);

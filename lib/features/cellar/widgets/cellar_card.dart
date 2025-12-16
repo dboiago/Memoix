@@ -105,7 +105,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
                       size: 20,
                     ),
                     color: widget.entry.isFavorite
-                        ? Colors.red.shade400
+                        ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(cellarRepositoryProvider).toggleFavorite(widget.entry);
