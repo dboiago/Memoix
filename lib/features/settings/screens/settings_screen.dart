@@ -112,21 +112,21 @@ class UseSideBySideNotifier extends StateNotifier<bool> {
   }
 }
 
-/// Provider for showing images on recipe cards in lists
-final showListImagesProvider = StateNotifierProvider<ShowListImagesNotifier, bool>((ref) {
-  return ShowListImagesNotifier();
+/// Provider for showing header images on recipe detail screens
+final showHeaderImagesProvider = StateNotifierProvider<ShowHeaderImagesNotifier, bool>((ref) {
+  return ShowHeaderImagesNotifier();
 });
 
-class ShowListImagesNotifier extends StateNotifier<bool> {
-  static const _key = 'show_list_images';
+class ShowHeaderImagesNotifier extends StateNotifier<bool> {
+  static const _key = 'show_header_images';
 
-  ShowListImagesNotifier() : super(false) { // Default to OFF (no images in lists)
+  ShowHeaderImagesNotifier() : super(true) { // Default to ON (show header images)
     _loadPreference();
   }
 
   Future<void> _loadPreference() async {
     final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? false; // Default to OFF
+    state = prefs.getBool(_key) ?? true; // Default to ON
   }
 
   Future<void> toggle() async {
@@ -227,10 +227,10 @@ class SettingsScreen extends ConsumerWidget {
           ),
           SwitchListTile(
             secondary: const Icon(Icons.image),
-            title: const Text('Show Images in Lists'),
-            subtitle: const Text('Display recipe images on list cards'),
-            value: ref.watch(showListImagesProvider),
-            onChanged: (_) => ref.read(showListImagesProvider.notifier).toggle(),
+            title: const Text('Show Header Images'),
+            subtitle: const Text('Display recipe images in detail headers'),
+            value: ref.watch(showHeaderImagesProvider),
+            onChanged: (_) => ref.read(showHeaderImagesProvider.notifier).toggle(),
           ),
           SwitchListTile(
             secondary: const Icon(Icons.view_column),

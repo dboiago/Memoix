@@ -150,7 +150,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl/imageUrls
     final headerImage = recipe.headerImage ?? recipe.getFirstImage();
-    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    // Check if header images should be shown (user setting)
+    final showHeaderImages = ref.watch(showHeaderImagesProvider);
+    final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
     
     // Check if side-by-side mode is enabled
@@ -172,79 +174,48 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     String? headerImage,
     bool hasStepImages,
   ) {
-    // Calculate collapsed title size based on screen width
     final screenWidth = MediaQuery.sizeOf(context).width;
     final isNarrow = screenWidth < 400;
-    final collapsedTitleFontSize = isNarrow ? 14.0 : 18.0;
     
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) {
           return [
-            // Collapsible app bar with recipe image
+            // App bar - simpler design without title in FlexibleSpaceBar for narrow screens
             SliverAppBar(
-              expandedHeight: hasHeaderImage ? 180 : 100,
+              expandedHeight: hasHeaderImage ? 180 : (isNarrow ? kToolbarHeight : 100),
               collapsedHeight: kToolbarHeight,
               pinned: true,
               floating: false,
               forceElevated: innerBoxIsScrolled,
-              // Only show actions when expanded (not scrolled)
-              actions: innerBoxIsScrolled ? null : _buildAppBarActions(context, recipe, theme),
-              flexibleSpace: LayoutBuilder(
-                builder: (context, constraints) {
-                  // Calculate how collapsed the app bar is (0 = expanded, 1 = collapsed)
-                  final expandedHeight = hasHeaderImage ? 180.0 : 100.0;
-                  final collapsedHeight = kToolbarHeight;
-                  final currentHeight = constraints.maxHeight;
-                  final collapseRatio = 1 - ((currentHeight - collapsedHeight) / (expandedHeight - collapsedHeight)).clamp(0.0, 1.0);
-                  
-                  // Interpolate font size
-                  final fontSize = isNarrow 
-                      ? 14.0 + (6.0 * (1 - collapseRatio)) // 14-20 for narrow
-                      : 18.0 + (4.0 * (1 - collapseRatio)); // 18-22 for wide
-                  
-                  return FlexibleSpaceBar(
-                    title: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: fontSize,
-                      ),
-                      maxLines: collapseRatio > 0.5 ? 1 : 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    titlePadding: EdgeInsetsDirectional.only(
-                      start: 56,
-                      bottom: 16,
-                      // Reduce end padding when collapsed, or use responsive value when expanded
-                      end: innerBoxIsScrolled ? 16 : (constraints.maxWidth < 400 ? 140 : 180),
-                    ),
-                    background: hasHeaderImage
-                        ? Stack(
-                            fit: StackFit.expand,
-                            children: [
-                              _buildSingleImage(context, headerImage!),
-                              const DecoratedBox(
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [Colors.transparent, Colors.black54],
-                                    stops: [0.5, 1.0],
-                                  ),
-                                ),
+              // Show title only when scrolled (collapsed) or on wide screens
+              title: (innerBoxIsScrolled || !isNarrow) ? null : null, // Title shown in metadata bar for narrow
+              actions: _buildAppBarActions(context, recipe, theme),
+              flexibleSpace: hasHeaderImage
+                  ? FlexibleSpaceBar(
+                      background: Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          _buildSingleImage(context, headerImage!),
+                          const DecoratedBox(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [Colors.transparent, Colors.black54],
+                                stops: [0.5, 1.0],
                               ),
-                            ],
-                          )
-                        : Container(color: theme.colorScheme.surfaceContainerHighest),
-                  );
-                },
-              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  : null,
             ),
             
-            // Compact metadata bar
+            // Recipe title and compact metadata bar
             SliverToBoxAdapter(
-              child: _buildCompactMetadata(context, recipe, theme),
+              child: _buildCompactMetadataWithTitle(context, recipe, theme),
             ),
           ];
         },
@@ -257,10 +228,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     );
   }
 
-  /// Build compact metadata for cockpit mode (minimal vertical space)
-  Widget _buildCompactMetadata(BuildContext context, Recipe recipe, ThemeData theme) {
-    final isCompact = MediaQuery.sizeOf(context).width < 600;
+  /// Build compact metadata with title for cockpit mode
+  Widget _buildCompactMetadataWithTitle(BuildContext context, Recipe recipe, ThemeData theme) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isCompact = screenWidth < 600;
     final chipFontSize = isCompact ? 11.0 : 12.0;
+    
+    // Calculate font size that fits the screen width
+    // Start with base size and reduce if needed
+    final baseFontSize = isCompact ? 18.0 : 22.0;
+    final minFontSize = isCompact ? 14.0 : 16.0;
     
     // Get paired recipe chips if any exist
     final hasPairedRecipes = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
@@ -270,12 +247,27 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     
     return Container(
       color: theme.colorScheme.surface,
-      // Extra bottom padding for spacing between chips and ingredients/directions
-      padding: const EdgeInsets.fromLTRB(8, 6, 8, 12),
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Recipe title - uses FittedBox to shrink text to fit
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              alignment: Alignment.centerLeft,
+              child: Text(
+                recipe.name,
+                style: theme.textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  fontSize: baseFontSize,
+                ),
+                maxLines: 2,
+              ),
+            ),
+          ),
           // Main metadata chips
           Wrap(
             spacing: 6,

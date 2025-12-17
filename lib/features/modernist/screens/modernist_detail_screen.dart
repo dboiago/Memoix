@@ -73,7 +73,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
-    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final showHeaderImages = ref.watch(showHeaderImagesProvider);
+    final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
     final isCompact = MediaQuery.sizeOf(context).width < 600;
     final chipFontSize = isCompact ? 11.0 : 12.0;
@@ -245,7 +246,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
-    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final showHeaderImages = ref.watch(showHeaderImagesProvider);
+    final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
 
     return Scaffold(

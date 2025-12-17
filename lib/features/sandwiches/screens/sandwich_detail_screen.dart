@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../settings/screens/settings_screen.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -51,16 +52,17 @@ class _SandwichDetailView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
-    final hasImage = sandwich.imageUrl != null && sandwich.imageUrl!.isNotEmpty;
+    final hasHeaderImage = showHeaderImages && sandwich.imageUrl != null && sandwich.imageUrl!.isNotEmpty;
 
     return Scaffold(
       body: CustomScrollView(
         slivers: [
           // Hero header
           SliverAppBar(
-            expandedHeight: hasImage ? 250 : 150,
+            expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
@@ -75,7 +77,7 @@ class _SandwichDetailView extends ConsumerWidget {
                 bottom: 16,
                 end: 160,
               ),
-              background: hasImage
+              background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
