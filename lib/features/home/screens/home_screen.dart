@@ -55,10 +55,12 @@ class _CourseGridView extends ConsumerWidget {
           targetColumns = 7;
         } else if (width >= 800) {
           targetColumns = 5;
-        } else if (width >= 500) {
+        } else if (width >= 600) {
           targetColumns = 4;
-        } else {
+        } else if (width >= 400) {
           targetColumns = 3;
+        } else {
+          targetColumns = 2; // Phone portrait - 2 columns for legibility
         }
         // Calculate extent so cards fill the row (minus spacing)
         final spacing = 12.0 * (targetColumns - 1);
