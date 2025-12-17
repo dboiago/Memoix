@@ -127,14 +127,29 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                 child: Row(
                   children: courses.map((course) {
                     final isSelected = _selectedCourse == course;
+                    final displayName = course[0].toUpperCase() + course.substring(1);
                     return Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: FilterChip(
-                        label: Text(course),
+                        label: Text(displayName),
                         selected: isSelected,
                         onSelected: (selected) {
                           setState(() => _selectedCourse = course);
                         },
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+                        showCheckmark: false,
+                        side: BorderSide(
+                          color: isSelected
+                              ? theme.colorScheme.secondary
+                              : theme.colorScheme.outline.withOpacity(0.2),
+                          width: isSelected ? 1.5 : 1.0,
+                        ),
+                        labelStyle: TextStyle(
+                          color: isSelected
+                              ? theme.colorScheme.secondary
+                              : theme.colorScheme.onSurface,
+                        ),
                       ),
                     );
                   }).toList(),
@@ -204,7 +219,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                         Padding(
                           padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
                           child: Text(
-                            course,
+                            course[0].toUpperCase() + course.substring(1),
                             style: theme.textTheme.titleSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: theme.colorScheme.primary,

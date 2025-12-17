@@ -138,19 +138,19 @@ class AppDrawer extends StatelessWidget {
                     },
                   ),
                   _DrawerTile(
-                    icon: Icons.link,
-                    title: 'URL Import',
-                    onTap: () {
-                      Navigator.pop(context);
-                      AppRoutes.toURLImport(context);
-                    },
-                  ),
-                  _DrawerTile(
                     icon: Icons.qr_code_scanner,
                     title: 'Scan QR Code',
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toQRScanner(context);
+                    },
+                  ),
+                  _DrawerTile(
+                    icon: Icons.link,
+                    title: 'URL Import',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toURLImport(context);
                     },
                   ),
                   _DrawerTile(

@@ -202,6 +202,12 @@ class Category {
   /// Get display name from slug (e.g., 'vegn' -> "Veg'n")
   static String displayNameFromSlug(String slug) {
     final lower = slug.toLowerCase();
+    
+    // Handle vegan/vegetarian variations -> Veg'n
+    if (lower == 'vegan' || lower == 'vegetarian' || lower == "veg'n") {
+      return "Veg'n";
+    }
+    
     for (final category in defaults) {
       if (category.slug == lower) {
         return category.name;

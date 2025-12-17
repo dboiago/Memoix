@@ -1,6 +1,7 @@
 import 'dart:async';
+import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
+import 'package:flutter/services.dart';
 
 /// Available timer alarm sounds
 enum TimerSound {
@@ -24,14 +25,12 @@ class KitchenTimerWidget extends StatefulWidget {
 
 class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
   final List<TimerInstance> _timers = [];
-  final AudioPlayer _audioPlayer = AudioPlayer();
   int _nextTimerId = 1;
+  bool _isAlarmPlaying = false;
 
   @override
   void initState() {
     super.initState();
-    // Set audio player to loop for alarm
-    _audioPlayer.setLoopMode(LoopMode.one);
   }
 
   void _addTimer() {
@@ -55,18 +54,16 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
   }
 
   Future<void> _playAlarm(TimerSound sound) async {
-    try {
-      await _audioPlayer.setAsset(sound.assetPath);
-      await _audioPlayer.play();
-    } catch (e) {
-      // Fallback: show visual indicator if sound fails
-      debugPrint('Failed to play alarm sound: $e');
+    _isAlarmPlaying = true;
+    // Use haptic feedback on mobile, system sounds where available
+    if (!Platform.isWindows && !Platform.isLinux) {
+      HapticFeedback.vibrate();
     }
+    // The visual alert is handled by the timer card's alarm state
   }
 
   Future<void> _stopAlarm() async {
-    await _audioPlayer.stop();
-    await _audioPlayer.seek(Duration.zero);
+    _isAlarmPlaying = false;
   }
 
   void _removeTimer(int id) {
@@ -242,16 +239,16 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
               ],
             ),
             const SizedBox(height: 16),
-            // Quick presets
+            // Quick presets - additive
             Wrap(
               spacing: 8,
               children: [
-                _PresetChip('1 min', () => _setTime(0, 1, 0)),
-                _PresetChip('5 min', () => _setTime(0, 5, 0)),
-                _PresetChip('10 min', () => _setTime(0, 10, 0)),
-                _PresetChip('15 min', () => _setTime(0, 15, 0)),
-                _PresetChip('30 min', () => _setTime(0, 30, 0)),
-                _PresetChip('1 hour', () => _setTime(1, 0, 0)),
+                _PresetChip('+1 min', () => _addTime(0, 1, 0)),
+                _PresetChip('+5 min', () => _addTime(0, 5, 0)),
+                _PresetChip('+10 min', () => _addTime(0, 10, 0)),
+                _PresetChip('+15 min', () => _addTime(0, 15, 0)),
+                _PresetChip('+30 min', () => _addTime(0, 30, 0)),
+                _PresetChip('+1 hour', () => _addTime(1, 0, 0)),
               ],
             ),
             const SizedBox(height: 24),
@@ -264,10 +261,24 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
               spacing: 8,
               children: TimerSound.values.map((sound) {
                 final isSelected = _selectedSound == sound;
-                return ChoiceChip(
+                return FilterChip(
                   label: Text(sound.displayName),
                   selected: isSelected,
                   onSelected: (_) => setState(() => _selectedSound = sound),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+                  showCheckmark: false,
+                  side: BorderSide(
+                    color: isSelected
+                        ? theme.colorScheme.secondary
+                        : theme.colorScheme.outline.withOpacity(0.2),
+                    width: isSelected ? 1.5 : 1.0,
+                  ),
+                  labelStyle: TextStyle(
+                    color: isSelected
+                        ? theme.colorScheme.secondary
+                        : theme.colorScheme.onSurface,
+                  ),
                 );
               }).toList(),
             ),
@@ -306,6 +317,15 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
       _hours = h;
       _minutes = m;
       _seconds = s;
+    });
+  }
+
+  void _addTime(int h, int m, int s) {
+    setState(() {
+      final totalSeconds = (_hours * 3600) + (_minutes * 60) + _seconds + (h * 3600) + (m * 60) + s;
+      _hours = (totalSeconds ~/ 3600).clamp(0, 23);
+      _minutes = ((totalSeconds % 3600) ~/ 60).clamp(0, 59);
+      _seconds = (totalSeconds % 60).clamp(0, 59);
     });
   }
 }
@@ -399,16 +419,16 @@ class _TimerEditDialogState extends State<_TimerEditDialog> {
               ],
             ),
             const SizedBox(height: 16),
-            // Quick presets
+            // Quick presets - additive
             Wrap(
               spacing: 8,
               children: [
-                _PresetChip('1 min', () => _setTime(0, 1, 0)),
-                _PresetChip('5 min', () => _setTime(0, 5, 0)),
-                _PresetChip('10 min', () => _setTime(0, 10, 0)),
-                _PresetChip('15 min', () => _setTime(0, 15, 0)),
-                _PresetChip('30 min', () => _setTime(0, 30, 0)),
-                _PresetChip('1 hour', () => _setTime(1, 0, 0)),
+                _PresetChip('+1 min', () => _addTime(0, 1, 0)),
+                _PresetChip('+5 min', () => _addTime(0, 5, 0)),
+                _PresetChip('+10 min', () => _addTime(0, 10, 0)),
+                _PresetChip('+15 min', () => _addTime(0, 15, 0)),
+                _PresetChip('+30 min', () => _addTime(0, 30, 0)),
+                _PresetChip('+1 hour', () => _addTime(1, 0, 0)),
               ],
             ),
             const SizedBox(height: 24),
@@ -421,10 +441,24 @@ class _TimerEditDialogState extends State<_TimerEditDialog> {
               spacing: 8,
               children: TimerSound.values.map((sound) {
                 final isSelected = _selectedSound == sound;
-                return ChoiceChip(
+                return FilterChip(
                   label: Text(sound.displayName),
                   selected: isSelected,
                   onSelected: (_) => setState(() => _selectedSound = sound),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+                  showCheckmark: false,
+                  side: BorderSide(
+                    color: isSelected
+                        ? theme.colorScheme.secondary
+                        : theme.colorScheme.outline.withOpacity(0.2),
+                    width: isSelected ? 1.5 : 1.0,
+                  ),
+                  labelStyle: TextStyle(
+                    color: isSelected
+                        ? theme.colorScheme.secondary
+                        : theme.colorScheme.onSurface,
+                  ),
                 );
               }).toList(),
             ),
@@ -463,6 +497,15 @@ class _TimerEditDialogState extends State<_TimerEditDialog> {
       _hours = h;
       _minutes = m;
       _seconds = s;
+    });
+  }
+
+  void _addTime(int h, int m, int s) {
+    setState(() {
+      final totalSeconds = (_hours * 3600) + (_minutes * 60) + _seconds + (h * 3600) + (m * 60) + s;
+      _hours = (totalSeconds ~/ 3600).clamp(0, 23);
+      _minutes = ((totalSeconds % 3600) ~/ 60).clamp(0, 59);
+      _seconds = (totalSeconds % 60).clamp(0, 59);
     });
   }
 }

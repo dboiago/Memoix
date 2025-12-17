@@ -52,7 +52,6 @@ dependencies:
   shared_preferences: ^2.2.2
   file_picker: ^10.1.0
   wakelock_plus: ^1.1.4
-  just_audio: ^0.9.36
 
 dev_dependencies:
   flutter_test:
