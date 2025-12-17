@@ -110,15 +110,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             const Shadow(blurRadius: 16, color: Colors.black54),
           ]
         : [
-            // 8-directional outline effect for light mode
-            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-1, -1)),
-            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(1, -1)),
-            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-1, 1)),
-            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(1, 1)),
-            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(0, -1)),
-            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(0, 1)),
-            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(-1, 0)),
-            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(1, 0)),
+            // Thin outline effect for light mode
+            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(-0.5, -0.5)),
+            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(0.5, -0.5)),
+            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(-0.5, 0.5)),
+            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(0.5, 0.5)),
           ];
 
     return Scaffold(
