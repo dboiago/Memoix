@@ -69,9 +69,9 @@ class _SandwichDetailView extends ConsumerWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
-              // Leave space for action icons
+              // Leave space for back arrow (56px) and action icons
               titlePadding: const EdgeInsetsDirectional.only(
-                start: 16,
+                start: 56,
                 bottom: 16,
                 end: 160,
               ),

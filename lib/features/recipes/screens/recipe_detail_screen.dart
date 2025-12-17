@@ -153,18 +153,18 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
     
-    // Check if cockpit mode is enabled
-    final useCockpitView = ref.watch(useCockpitViewProvider);
+    // Check if side-by-side mode is enabled
+    final useSideBySide = ref.watch(useSideBySideProvider);
     
-    if (useCockpitView) {
-      return _buildCockpitLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
+    if (useSideBySide) {
+      return _buildSideBySideLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
     }
     
     return _buildStandardLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
   }
 
-  /// Build the cockpit mode layout with independent scrolling columns
-  Widget _buildCockpitLayout(
+  /// Build the side-by-side layout with independent scrolling columns
+  Widget _buildSideBySideLayout(
     BuildContext context,
     Recipe recipe,
     ThemeData theme,
@@ -633,131 +633,92 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             ),
           ),
 
-          // Ingredients and Directions - side by side or stacked based on setting
+          // Ingredients and Directions - always stacked in standard mode
+          // (Side-by-side mode uses _buildSideBySideLayout instead)
           SliverToBoxAdapter(
-            child: Consumer(
-              builder: (context, ref, _) {
-                final forceSideBySide = ref.watch(forceSideBySideProvider);
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                // On very wide screens (>800px), use side-by-side even in standard mode
+                final useWideLayout = constraints.maxWidth > 800;
                 
-                return LayoutBuilder(
-                  builder: (context, constraints) {
-                    // Use side-by-side layout if:
-                    // - forceSideBySide is enabled AND screen is wide enough (>320px for phones)
-                    // - OR on very wide screens (>800px) regardless of setting
-                    final useSideBySide = (forceSideBySide && constraints.maxWidth > 320) || 
-                                          constraints.maxWidth > 800;
-                    
-                    // Compact mode for narrow side-by-side (phones in portrait)
-                    final isCompact = constraints.maxWidth < 500;
-                    final isVeryCompact = constraints.maxWidth < 380;
-                    
-                    // Dynamic values based on available space - ultra tight for phones
-                    final outerPadding = isCompact ? 6.0 : 16.0;
-                    final innerPadding = isCompact ? 8.0 : 16.0;
-                    final gapWidth = isCompact ? 6.0 : 16.0;
-                    final ingredientsFlex = isCompact ? 1 : 2;
-                    final directionsFlex = isCompact ? 2 : 3;
-                    final headerStyle = isCompact 
-                        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
-                        : theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold);
-                    final headerGap = isCompact ? 4.0 : 12.0;
-                    
-                    if (useSideBySide) {
-                      Widget content = Padding(
-                        padding: EdgeInsets.all(outerPadding),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            // Ingredients on the left
-                            Expanded(
-                              flex: ingredientsFlex,
-                              child: Card(
-                                child: Padding(
-                                  padding: EdgeInsets.all(innerPadding),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('Ingredients', style: headerStyle),
-                                      SizedBox(height: headerGap),
-                                      IngredientList(ingredients: recipe.ingredients, isCompact: isCompact),
-                                    ],
-                                  ),
-                                ),
+                if (useWideLayout) {
+                  return Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Ingredients', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+                                  const SizedBox(height: 12),
+                                  IngredientList(ingredients: recipe.ingredients),
+                                ],
                               ),
                             ),
-                            SizedBox(width: gapWidth),
-                            // Directions on the right
-                            Expanded(
-                              flex: directionsFlex,
-                              child: Card(
-                                child: Padding(
-                                  padding: EdgeInsets.all(innerPadding),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('Directions', style: headerStyle),
-                                      SizedBox(height: headerGap),
-                                      DirectionList(
-                                        directions: recipe.directions,
-                                        recipe: recipe,
-                                        onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
-                                        isCompact: isCompact,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
-                      );
-                      
-                      // Scale text down for compact screens (phones)
-                      if (isCompact) {
-                        final scaleFactor = isVeryCompact ? 0.85 : 0.9;
-                        content = MediaQuery(
-                          data: MediaQuery.of(context).copyWith(
-                            textScaler: TextScaler.linear(scaleFactor),
-                          ),
-                          child: content,
-                        );
-                      }
-                      
-                      return content;
-                    }
-                    
-                    // Stacked layout for narrow screens when not forced
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const SizedBox(height: 8),
-                          Text(
-                            'Ingredients',
-                            style: theme.textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
+                        const SizedBox(width: 16),
+                        Expanded(
+                          flex: 3,
+                          child: Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Directions', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+                                  const SizedBox(height: 12),
+                                  DirectionList(
+                                    directions: recipe.directions,
+                                    recipe: recipe,
+                                    onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
-                          const SizedBox(height: 8),
-                          IngredientList(ingredients: recipe.ingredients),
-                          const SizedBox(height: 24),
-                          Text(
-                            'Directions',
-                            style: theme.textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          DirectionList(
-                            directions: recipe.directions,
-                            recipe: recipe,
-                            onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
-                          ),
-                        ],
+                        ),
+                      ],
+                    ),
+                  );
+                }
+                
+                // Stacked layout for standard view
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 8),
+                      Text(
+                        'Ingredients',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    );
-                  },
+                      const SizedBox(height: 8),
+                      IngredientList(ingredients: recipe.ingredients),
+                      const SizedBox(height: 24),
+                      Text(
+                        'Directions',
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      DirectionList(
+                        directions: recipe.directions,
+                        recipe: recipe,
+                        onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
+                      ),
+                    ],
+                  ),
                 );
               },
             ),

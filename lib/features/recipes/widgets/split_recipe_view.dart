@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/recipe.dart';
 
-/// A specialized split-view widget for "Cockpit Mode" that displays
+/// A specialized split-view widget for "Side-by-Side Mode" that displays
 /// Ingredients and Directions side-by-side with independent scrolling.
 /// 
 /// This view is designed for active cooking, allowing the user to

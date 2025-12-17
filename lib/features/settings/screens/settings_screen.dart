@@ -88,39 +88,15 @@ class KeepScreenOnNotifier extends StateNotifier<bool> {
   }
 }
 
-/// Provider for forcing side-by-side layout on all screen sizes
-final forceSideBySideProvider = StateNotifierProvider<ForceSideBySideNotifier, bool>((ref) {
-  return ForceSideBySideNotifier();
+/// Provider for side-by-side mode - independent scrolling for ingredients/directions
+final useSideBySideProvider = StateNotifierProvider<UseSideBySideNotifier, bool>((ref) {
+  return UseSideBySideNotifier();
 });
 
-class ForceSideBySideNotifier extends StateNotifier<bool> {
-  static const _key = 'force_side_by_side';
+class UseSideBySideNotifier extends StateNotifier<bool> {
+  static const _key = 'use_side_by_side_view';
 
-  ForceSideBySideNotifier() : super(true) { // Default to ON (always side-by-side)
-    _loadPreference();
-  }
-
-  Future<void> _loadPreference() async {
-    final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? true; // Default to ON
-  }
-
-  Future<void> toggle() async {
-    state = !state;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_key, state);
-  }
-}
-
-/// Provider for cockpit mode - independent scrolling for ingredients/directions
-final useCockpitViewProvider = StateNotifierProvider<UseCockpitViewNotifier, bool>((ref) {
-  return UseCockpitViewNotifier();
-});
-
-class UseCockpitViewNotifier extends StateNotifier<bool> {
-  static const _key = 'use_cockpit_view';
-
-  UseCockpitViewNotifier() : super(false) { // Default to OFF (standard layout)
+  UseSideBySideNotifier() : super(false) { // Default to OFF (standard layout)
     _loadPreference();
   }
 
@@ -258,17 +234,10 @@ class SettingsScreen extends ConsumerWidget {
           ),
           SwitchListTile(
             secondary: const Icon(Icons.view_column),
-            title: const Text('Side-by-Side Layout'),
-            subtitle: const Text('Keep ingredients and directions next to each other on all screen sizes'),
-            value: ref.watch(forceSideBySideProvider),
-            onChanged: (_) => ref.read(forceSideBySideProvider.notifier).toggle(),
-          ),
-          SwitchListTile(
-            secondary: const Icon(Icons.splitscreen),
-            title: const Text('Cockpit Mode'),
-            subtitle: const Text('Independent scrolling for ingredients and directions'),
-            value: ref.watch(useCockpitViewProvider),
-            onChanged: (_) => ref.read(useCockpitViewProvider.notifier).toggle(),
+            title: const Text('Side-by-Side Mode'),
+            subtitle: const Text('Split view with independent scrolling for ingredients and directions'),
+            value: ref.watch(useSideBySideProvider),
+            onChanged: (_) => ref.read(useSideBySideProvider.notifier).toggle(),
           ),
 
           const Divider(),
