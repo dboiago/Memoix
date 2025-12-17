@@ -30,6 +30,54 @@ String _formatServes(String serves) {
   );
 }
 
+/// Get the Material icon for a course category slug
+IconData _iconForCourse(String course) {
+  switch (course.toLowerCase()) {
+    case 'apps':
+      return Icons.restaurant;
+    case 'soup':
+    case 'soups':
+      return Icons.soup_kitchen;
+    case 'mains':
+      return Icons.dinner_dining;
+    case 'vegn':
+      return Icons.eco;
+    case 'sides':
+      return Icons.rice_bowl;
+    case 'salad':
+    case 'salads':
+      return Icons.grass;
+    case 'desserts':
+      return Icons.cake;
+    case 'brunch':
+      return Icons.egg_alt;
+    case 'drinks':
+      return Icons.local_bar;
+    case 'breads':
+      return Icons.bakery_dining;
+    case 'sauces':
+      return Icons.water_drop;
+    case 'rubs':
+      return Icons.local_fire_department;
+    case 'pickles':
+      return Icons.local_florist;
+    case 'modernist':
+      return Icons.science;
+    case 'pizzas':
+      return Icons.local_pizza;
+    case 'sandwiches':
+      return Icons.lunch_dining;
+    case 'smoking':
+      return Icons.outdoor_grill;
+    case 'cheese':
+      return Icons.lunch_dining;
+    case 'scratch':
+      return Icons.note_alt;
+    default:
+      return Icons.restaurant_menu;
+  }
+}
+
 class RecipeDetailScreen extends ConsumerWidget {
   final String recipeId;
 
@@ -263,6 +311,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
                           ),
                         ),
+                      // Paired recipe chips (only for recipes that support pairing)
+                      if (recipe.supportsPairing) ..._buildPairedRecipeChips(context, ref, recipe, theme),
                     ],
                   ),
 
@@ -730,6 +780,70 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ),
       ),
     );
+  }
+
+  /// Build paired recipe chips showing both explicit and inverse pairings.
+  /// Explicit: recipes this recipe links to (via pairedRecipeIds).
+  /// Inverse: recipes that link to this recipe (via their pairedRecipeIds).
+  List<Widget> _buildPairedRecipeChips(
+    BuildContext context, 
+    WidgetRef ref, 
+    Recipe recipe, 
+    ThemeData theme,
+  ) {
+    final chips = <Widget>[];
+    
+    // Get all recipes for lookup
+    final allRecipesAsync = ref.watch(allRecipesProvider);
+    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    
+    if (allRecipes.isEmpty) return chips;
+    
+    // Collect all paired recipes (explicit + inverse)
+    final pairedRecipes = <Recipe>[];
+    
+    // 1. Explicit pairings: recipes we link to
+    for (final uuid in recipe.pairedRecipeIds) {
+      final linked = allRecipes.where((r) => r.uuid == uuid).firstOrNull;
+      if (linked != null && !pairedRecipes.any((r) => r.uuid == linked.uuid)) {
+        pairedRecipes.add(linked);
+      }
+    }
+    
+    // 2. Inverse pairings: recipes that link to us
+    for (final r in allRecipes) {
+      if (r.pairedRecipeIds.contains(recipe.uuid) && 
+          !pairedRecipes.any((pr) => pr.uuid == r.uuid)) {
+        pairedRecipes.add(r);
+      }
+    }
+    
+    // Build chips for each paired recipe
+    for (final paired in pairedRecipes) {
+      chips.add(
+        ActionChip(
+          avatar: Icon(
+            _iconForCourse(paired.course),
+            size: 16,
+            color: theme.colorScheme.onSurface,
+          ),
+          label: Text(paired.name),
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+          visualDensity: VisualDensity.compact,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => RecipeDetailScreen(recipeId: paired.uuid),
+              ),
+            );
+          },
+        ),
+      );
+    }
+    
+    return chips;
   }
 
   void _shareRecipe(BuildContext context, WidgetRef ref) {

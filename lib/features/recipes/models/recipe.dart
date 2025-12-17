@@ -47,7 +47,12 @@ class Recipe {
   String? time;
 
   /// What this dish pairs with (e.g., "KFC Sauce")
+  /// @deprecated Use pairedRecipeIds instead for proper linking
   List<String> pairsWith = [];
+
+  /// Linked recipe UUIDs for bi-directional pairing
+  /// Stores IDs of recipes this recipe pairs with (e.g., a Main links to a Sauce)
+  List<String> pairedRecipeIds = [];
 
   /// Additional notes
   String? notes;
@@ -121,6 +126,14 @@ class Recipe {
   /// Pickle method for pickles (e.g., "Pickle", "Brine", "Fermentation")
   String? pickleMethod;
 
+  /// Whether this recipe type supports pairing with other recipes.
+  /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
+  @ignore
+  bool get supportsPairing {
+    const excludedCourses = {'pizzas', 'sandwiches', 'cellar', 'cheese'};
+    return !excludedCourses.contains(course.toLowerCase());
+  }
+
   /// Convenience constructor
   Recipe();
 
@@ -187,6 +200,11 @@ class Recipe {
       ..pairsWith = (json['pairsWith'] as List<dynamic>?)
               ?.map((e) => e as String)
               .where((e) => e.isNotEmpty && e != 'Pairs With')
+              .toList() ??
+          []
+      ..pairedRecipeIds = (json['pairedRecipeIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .where((e) => e.isNotEmpty)
               .toList() ??
           []
       ..notes = json['notes'] as String?
@@ -260,6 +278,7 @@ class Recipe {
       'serves': serves,
       'time': time,
       'pairsWith': pairsWith,
+      'pairedRecipeIds': pairedRecipeIds,
       'notes': notes,
       'ingredients': ingredients.map((e) => e.toJson()).toList(),
       'directions': directions,
@@ -361,6 +380,7 @@ class Recipe {
       'serves': serves,
       'time': time,
       'pairsWith': pairsWith,
+      'pairedRecipeIds': pairedRecipeIds,
       'notes': notes,
       'ingredients': ingredients.map((e) => e.toJson()).toList(),
       'directions': directions,

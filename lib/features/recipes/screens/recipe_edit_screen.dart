@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../models/category.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
 import '../models/spirit.dart';
@@ -122,6 +123,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   // Pickles-specific fields
   String? _pickleMethod;
+
+  // Paired recipe IDs (for linking related recipes)
+  final List<String> _pairedRecipeIds = [];
 
   bool get _isEditing => _existingRecipe != null;
 
@@ -239,6 +243,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       
       // Load pickles-specific fields
       _pickleMethod = recipe.pickleMethod;
+      
+      // Load paired recipe IDs
+      _pairedRecipeIds.clear();
+      _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
     } else if (widget.ocrText != null) {
       // Pre-populate with OCR text for manual extraction
       _notesController.text = 'OCR Text:\n${widget.ocrText}';
@@ -1031,6 +1039,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               _buildPickleMethodSection(theme),
             ],
 
+            // Pairs With selector (only for courses that support pairing)
+            if (_supportsPairingForCourse(_selectedCourse)) ...[
+              const SizedBox(height: 16),
+              _buildPairsWithSection(theme),
+            ],
+
             const SizedBox(height: 24),
 
             // Ingredients (3-column spreadsheet layout)
@@ -1450,6 +1464,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..glass = _selectedCourse == 'drinks' ? _glass : null
         ..garnish = _selectedCourse == 'drinks' ? _garnish : []
         ..pickleMethod = _selectedCourse == 'pickles' ? _pickleMethod : null
+        ..pairedRecipeIds = _supportsPairingForCourse(_selectedCourse) ? _pairedRecipeIds : []
         ..updatedAt = DateTime.now();
 
       // Save to database
@@ -2354,6 +2369,218 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     'Water Bath Canning',
     'Pressure Canning',
   ];
+
+  /// Check if a course supports pairing with other recipes.
+  /// Excluded: pizzas, sandwiches, cellar, cheese (component assemblies or non-recipes)
+  bool _supportsPairingForCourse(String course) {
+    const excludedCourses = {'pizzas', 'sandwiches', 'cellar', 'cheese'};
+    return !excludedCourses.contains(course.toLowerCase());
+  }
+
+  /// Build the "Pairs With" section for linking related recipes
+  Widget _buildPairsWithSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Pairs With',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 8),
+        // Display current paired recipes as chips
+        if (_pairedRecipeIds.isNotEmpty)
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: _pairedRecipeIds.map((uuid) {
+              // Get recipe info for display
+              final allRecipesAsync = ref.watch(allRecipesProvider);
+              final allRecipes = allRecipesAsync.valueOrNull ?? [];
+              final recipe = allRecipes.where((r) => r.uuid == uuid).firstOrNull;
+              final name = recipe?.name ?? 'Unknown';
+              final course = recipe?.course ?? 'mains';
+              
+              return Chip(
+                avatar: Icon(
+                  _iconForCourse(course),
+                  size: 16,
+                  color: theme.colorScheme.onSurface,
+                ),
+                label: Text(name),
+                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                visualDensity: VisualDensity.compact,
+                deleteIcon: Icon(Icons.close, size: 16, color: theme.colorScheme.onSurface),
+                onDeleted: () {
+                  setState(() {
+                    _pairedRecipeIds.remove(uuid);
+                  });
+                },
+              );
+            }).toList(),
+          ),
+        // Add button if under limit of 3
+        if (_pairedRecipeIds.length < 3) ...[
+          if (_pairedRecipeIds.isNotEmpty) const SizedBox(height: 8),
+          OutlinedButton.icon(
+            onPressed: _showRecipeSelector,
+            icon: const Icon(Icons.add, size: 18),
+            label: const Text('Add Recipe'),
+            style: OutlinedButton.styleFrom(
+              visualDensity: VisualDensity.compact,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Get the Material icon for a course category slug
+  IconData _iconForCourse(String course) {
+    switch (course.toLowerCase()) {
+      case 'apps':
+        return Icons.restaurant;
+      case 'soup':
+      case 'soups':
+        return Icons.soup_kitchen;
+      case 'mains':
+        return Icons.dinner_dining;
+      case 'vegn':
+        return Icons.eco;
+      case 'sides':
+        return Icons.rice_bowl;
+      case 'salad':
+      case 'salads':
+        return Icons.grass;
+      case 'desserts':
+        return Icons.cake;
+      case 'brunch':
+        return Icons.egg_alt;
+      case 'drinks':
+        return Icons.local_bar;
+      case 'breads':
+        return Icons.bakery_dining;
+      case 'sauces':
+        return Icons.water_drop;
+      case 'rubs':
+        return Icons.local_fire_department;
+      case 'pickles':
+        return Icons.local_florist;
+      case 'modernist':
+        return Icons.science;
+      case 'smoking':
+        return Icons.outdoor_grill;
+      case 'scratch':
+        return Icons.note_alt;
+      default:
+        return Icons.restaurant_menu;
+    }
+  }
+
+  /// Show a dialog to select a recipe to pair with
+  void _showRecipeSelector() {
+    final allRecipesAsync = ref.read(allRecipesProvider);
+    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    
+    // Filter out: current recipe, already paired, and recipes from excluded courses
+    final availableRecipes = allRecipes.where((r) {
+      // Exclude current recipe
+      if (_existingRecipe != null && r.uuid == _existingRecipe!.uuid) return false;
+      // Exclude already paired
+      if (_pairedRecipeIds.contains(r.uuid)) return false;
+      // Exclude recipes that don't support pairing
+      if (!r.supportsPairing) return false;
+      return true;
+    }).toList();
+    
+    // Sort alphabetically by name
+    availableRecipes.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+    
+    final theme = Theme.of(context);
+    final searchController = TextEditingController();
+    var filteredRecipes = List<Recipe>.from(availableRecipes);
+    
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) {
+          return AlertDialog(
+            title: const Text('Select Recipe'),
+            content: SizedBox(
+              width: double.maxFinite,
+              height: 400,
+              child: Column(
+                children: [
+                  TextField(
+                    controller: searchController,
+                    decoration: const InputDecoration(
+                      hintText: 'Search recipes...',
+                      prefixIcon: Icon(Icons.search),
+                      isDense: true,
+                    ),
+                    onChanged: (query) {
+                      setDialogState(() {
+                        if (query.isEmpty) {
+                          filteredRecipes = List<Recipe>.from(availableRecipes);
+                        } else {
+                          filteredRecipes = availableRecipes.where((r) =>
+                            r.name.toLowerCase().contains(query.toLowerCase()) ||
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                          ).toList();
+                        }
+                      });
+                    },
+                  ),
+                  const SizedBox(height: 12),
+                  Expanded(
+                    child: filteredRecipes.isEmpty
+                      ? Center(
+                          child: Text(
+                            'No recipes found',
+                            style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                          ),
+                        )
+                      : ListView.builder(
+                          itemCount: filteredRecipes.length,
+                          itemBuilder: (context, index) {
+                            final recipe = filteredRecipes[index];
+                            return ListTile(
+                              leading: Icon(
+                                _iconForCourse(recipe.course),
+                                color: theme.colorScheme.primary,
+                              ),
+                              title: Text(recipe.name),
+                              subtitle: Text(
+                                Category.displayNameFromSlug(recipe.course),
+                                style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                              ),
+                              dense: true,
+                              onTap: () {
+                                setState(() {
+                                  _pairedRecipeIds.add(recipe.uuid);
+                                });
+                                Navigator.pop(ctx);
+                              },
+                            );
+                          },
+                        ),
+                  ),
+                ],
+              ),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: const Text('Cancel'),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
 
   /// Common glass types for autocomplete
   static const List<String> _glassSuggestions = [

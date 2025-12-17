@@ -157,6 +157,24 @@ class RecipeRepository {
     return _db.writeTxn(() => _db.recipes.delete(id));
   }
 
+  /// Get recipes that pair with the given recipe (inverse lookup).
+  /// Finds recipes that have this recipe's UUID in their pairedRecipeIds list.
+  Future<List<Recipe>> getRecipesPairedWith(String recipeUuid) async {
+    final all = await _db.recipes.where().findAll();
+    return all.where((r) => r.pairedRecipeIds.contains(recipeUuid)).toList();
+  }
+
+  /// Get multiple recipes by their UUIDs
+  Future<List<Recipe>> getRecipesByUuids(List<String> uuids) async {
+    if (uuids.isEmpty) return [];
+    final results = <Recipe>[];
+    for (final uuid in uuids) {
+      final recipe = await getRecipeByUuid(uuid);
+      if (recipe != null) results.add(recipe);
+    }
+    return results;
+  }
+
   /// Toggle favorite status
   Future<void> toggleFavorite(int id) async {
     await _db.writeTxn(() async {
@@ -329,4 +347,14 @@ final availableCuisinesProvider = StreamProvider<Set<String>>((ref) {
         .cast<String>()
         .toSet();
   });
+});
+
+/// Provider to get recipes that pair with a given recipe UUID (inverse lookup)
+final recipesPairedWithProvider = FutureProvider.family<List<Recipe>, String>((ref, recipeUuid) {
+  return ref.watch(recipeRepositoryProvider).getRecipesPairedWith(recipeUuid);
+});
+
+/// Provider to get recipes by their UUIDs
+final recipesByUuidsProvider = FutureProvider.family<List<Recipe>, List<String>>((ref, uuids) {
+  return ref.watch(recipeRepositoryProvider).getRecipesByUuids(uuids);
 });
