@@ -223,8 +223,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
           color: recipe.isFavorite ? theme.colorScheme.secondary : null,
         ),
-        onPressed: () {
-          ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+        onPressed: () async {
+          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+          ref.invalidate(allSmokingRecipesProvider);
         },
       ),
       IconButton(
@@ -314,8 +315,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.secondary : null,
                 ),
-                onPressed: () {
-                  ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+                onPressed: () async {
+                  await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+                  ref.invalidate(allSmokingRecipesProvider);
                 },
               ),
               IconButton(

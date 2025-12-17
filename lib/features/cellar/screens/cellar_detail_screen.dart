@@ -94,8 +94,9 @@ class _CellarDetailView extends ConsumerWidget {
                   entry.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: entry.isFavorite ? theme.colorScheme.secondary : null,
                 ),
-                onPressed: () {
-                  ref.read(cellarRepositoryProvider).toggleFavorite(entry);
+                onPressed: () async {
+                  await ref.read(cellarRepositoryProvider).toggleFavorite(entry);
+                  ref.invalidate(allCellarEntriesProvider);
                 },
               ),
               PopupMenuButton<String>(

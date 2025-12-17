@@ -327,8 +327,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
           color: recipe.isFavorite ? theme.colorScheme.primary : null,
         ),
-        onPressed: () {
-          ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+        onPressed: () async {
+          await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+          ref.invalidate(allRecipesProvider);
         },
       ),
       IconButton(
@@ -426,8 +427,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
                 ),
-                onPressed: () {
-                  ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+                onPressed: () async {
+                  await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+                  ref.invalidate(allRecipesProvider);
                 },
               ),
               IconButton(

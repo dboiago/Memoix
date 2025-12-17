@@ -47,30 +47,48 @@ class SplitModernistView extends StatelessWidget {
         // Ingredients Column
         Expanded(
           flex: _getIngredientsFlex(screenWidth),
-          child: _IngredientsColumn(
-            ingredients: recipe.ingredients,
-            isCompact: isCompact,
+          child: ScrollbarTheme(
+            data: ScrollbarThemeData(
+              thickness: WidgetStateProperty.all(2.0),
+            ),
+            child: _IngredientsColumn(
+              ingredients: recipe.ingredients,
+              isCompact: isCompact,
+            ),
           ),
         ),
 
-        // Vertical Divider - use muted color
+        // Vertical Divider - starts below header area
         Padding(
           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
-          child: VerticalDivider(
-            width: 1,
-            thickness: 1,
-            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+          child: Column(
+            children: [
+              // Spacer to match header height
+              SizedBox(height: isCompact ? 36.0 : 44.0),
+              // The actual divider line
+              Expanded(
+                child: Container(
+                  width: 1,
+                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                ),
+              ),
+            ],
           ),
         ),
 
         // Directions Column
         Expanded(
           flex: _getDirectionsFlex(screenWidth),
-          child: _DirectionsColumn(
-            directions: recipe.directions,
-            recipe: recipe,
-            onScrollToImage: onScrollToImage,
-            isCompact: isCompact,
+          child: ScrollbarTheme(
+            data: ScrollbarThemeData(
+              thickness: WidgetStateProperty.all(2.0),
+            ),
+            child: _DirectionsColumn(
+              directions: recipe.directions,
+              recipe: recipe,
+              onScrollToImage: onScrollToImage,
+              isCompact: isCompact,
+            ),
           ),
         ),
       ],

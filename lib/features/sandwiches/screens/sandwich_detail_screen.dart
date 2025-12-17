@@ -94,8 +94,9 @@ class _SandwichDetailView extends ConsumerWidget {
                   sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
                 ),
-                onPressed: () {
-                  ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
+                onPressed: () async {
+                  await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
+                  ref.invalidate(allSandwichesProvider);
                 },
               ),
               IconButton(

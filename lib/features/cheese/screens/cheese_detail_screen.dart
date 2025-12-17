@@ -94,8 +94,9 @@ class _CheeseDetailView extends ConsumerWidget {
                   entry.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: entry.isFavorite ? theme.colorScheme.secondary : null,
                 ),
-                onPressed: () {
-                  ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
+                onPressed: () async {
+                  await ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
+                  ref.invalidate(allCheeseEntriesProvider);
                 },
               ),
               PopupMenuButton<String>(

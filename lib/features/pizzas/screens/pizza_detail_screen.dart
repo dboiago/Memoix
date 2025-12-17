@@ -94,8 +94,9 @@ class _PizzaDetailView extends ConsumerWidget {
                   pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: pizza.isFavorite ? theme.colorScheme.secondary : null,
                 ),
-                onPressed: () {
-                  ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+                onPressed: () async {
+                  await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+                  ref.invalidate(allPizzasProvider);
                 },
               ),
               IconButton(
