@@ -57,13 +57,13 @@ class SplitRecipeView extends StatelessWidget {
           ),
         ),
 
-        // Vertical Divider
+        // Vertical Divider - use muted color matching ingredient amounts
         Padding(
           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
           child: VerticalDivider(
             width: 1,
             thickness: 1,
-            color: theme.colorScheme.outlineVariant,
+            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
           ),
         ),
 
@@ -108,6 +108,9 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
     return CustomScrollView(
+      // Enable independent scrolling for this column
+      primary: false,
+      physics: const ClampingScrollPhysics(),
       slivers: [
         // Sticky Header
         SliverPersistentHeader(
@@ -222,38 +225,29 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 6),
 
-            // Ingredient content (no decorative icons in cockpit mode)
+            // Ingredient content - vertical layout: name, amount, notes
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Name and amount on same line, wrapping as needed
-                  Wrap(
-                    spacing: 4,
-                    runSpacing: 2,
+                  // Ingredient name with optional badge
+                  Row(
                     children: [
-                      Text(
-                        _capitalizeWords(ingredient.name),
-                        style: textStyle.copyWith(
-                          decoration: isChecked ? TextDecoration.lineThrough : null,
-                          color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
-                              : theme.colorScheme.onSurface,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      if (amountText.isNotEmpty)
-                        Text(
-                          amountText,
+                      Flexible(
+                        child: Text(
+                          _capitalizeWords(ingredient.name),
                           style: textStyle.copyWith(
                             decoration: isChecked ? TextDecoration.lineThrough : null,
                             color: isChecked
                                 ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : theme.colorScheme.onSurfaceVariant,
+                                : theme.colorScheme.onSurface,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
+                      ),
                       // Optional badge (compact)
-                      if (ingredient.isOptional)
+                      if (ingredient.isOptional) ...[
+                        const SizedBox(width: 4),
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                           decoration: BoxDecoration(
@@ -269,9 +263,21 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                             ),
                           ),
                         ),
+                      ],
                     ],
                   ),
-                  // Preparation notes (if any, very compact)
+                  // Amount on its own line
+                  if (amountText.isNotEmpty)
+                    Text(
+                      amountText,
+                      style: textStyle.copyWith(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  // Preparation notes on its own line (if present)
                   if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty)
                     Text(
                       ingredient.preparation!,
@@ -323,6 +329,9 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
     return CustomScrollView(
+      // Enable independent scrolling for this column
+      primary: false,
+      physics: const ClampingScrollPhysics(),
       slivers: [
         // Sticky Header
         SliverPersistentHeader(

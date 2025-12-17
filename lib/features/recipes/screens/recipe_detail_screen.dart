@@ -172,6 +172,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     String? headerImage,
     bool hasStepImages,
   ) {
+    // Calculate collapsed title size based on screen width
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isNarrow = screenWidth < 400;
+    final collapsedTitleFontSize = isNarrow ? 14.0 : 18.0;
+    
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) {
@@ -179,41 +184,62 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             // Collapsible app bar with recipe image
             SliverAppBar(
               expandedHeight: hasHeaderImage ? 180 : 100,
+              collapsedHeight: kToolbarHeight,
               pinned: true,
               floating: false,
               forceElevated: innerBoxIsScrolled,
-              flexibleSpace: FlexibleSpaceBar(
-                title: Text(
-                  recipe.name,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-                titlePadding: const EdgeInsetsDirectional.only(
-                  start: 56,
-                  bottom: 16,
-                  end: 160,
-                ),
-                background: hasHeaderImage
-                    ? Stack(
-                        fit: StackFit.expand,
-                        children: [
-                          _buildSingleImage(context, headerImage!),
-                          const DecoratedBox(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [Colors.transparent, Colors.black54],
-                                stops: [0.5, 1.0],
+              // Only show actions when expanded (not scrolled)
+              actions: innerBoxIsScrolled ? null : _buildAppBarActions(context, recipe, theme),
+              flexibleSpace: LayoutBuilder(
+                builder: (context, constraints) {
+                  // Calculate how collapsed the app bar is (0 = expanded, 1 = collapsed)
+                  final expandedHeight = hasHeaderImage ? 180.0 : 100.0;
+                  final collapsedHeight = kToolbarHeight;
+                  final currentHeight = constraints.maxHeight;
+                  final collapseRatio = 1 - ((currentHeight - collapsedHeight) / (expandedHeight - collapsedHeight)).clamp(0.0, 1.0);
+                  
+                  // Interpolate font size
+                  final fontSize = isNarrow 
+                      ? 14.0 + (6.0 * (1 - collapseRatio)) // 14-20 for narrow
+                      : 18.0 + (4.0 * (1 - collapseRatio)); // 18-22 for wide
+                  
+                  return FlexibleSpaceBar(
+                    title: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                      ),
+                      maxLines: collapseRatio > 0.5 ? 1 : 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    titlePadding: EdgeInsetsDirectional.only(
+                      start: 56,
+                      bottom: 16,
+                      // Reduce end padding when collapsed (no actions)
+                      end: innerBoxIsScrolled ? 16 : 160,
+                    ),
+                    background: hasHeaderImage
+                        ? Stack(
+                            fit: StackFit.expand,
+                            children: [
+                              _buildSingleImage(context, headerImage!),
+                              const DecoratedBox(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [Colors.transparent, Colors.black54],
+                                    stops: [0.5, 1.0],
+                                  ),
+                                ),
                               ),
-                            ),
-                          ),
-                        ],
-                      )
-                    : Container(color: theme.colorScheme.surfaceContainerHighest),
+                            ],
+                          )
+                        : Container(color: theme.colorScheme.surfaceContainerHighest),
+                  );
+                },
               ),
-              actions: _buildAppBarActions(context, recipe, theme),
             ),
             
             // Compact metadata bar
