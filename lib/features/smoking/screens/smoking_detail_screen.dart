@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/theme/colors.dart';
-import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -65,57 +64,36 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Minimal text shadows - the backdrop blur does most of the work
-    final titleShadows = buildTitleShadows(isDark);
-    // Icon shadows: subtle drop shadow only
-    final iconShadows = buildIconShadows(isDark);
-
-        return CustomScrollView(
+    return CustomScrollView(
         controller: _scrollController,
         slivers: [
           // App bar with image
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            // Collapsed title - no shadows, uses theme foreground color
-            title: Text(
-              recipe.name,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-            leading: hasHeaderImage
-                ? IconButton(
-                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
-                    onPressed: () => Navigator.of(context).pop(),
-                  )
-                : null,
-            flexibleSpace: hasHeaderImage
-                ? ExpandedTitleFlexibleSpace(
-                    title: recipe.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildSingleImage(context, headerImage),
-                  )
-                : FlexibleSpaceBar(
-                    background: Container(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              background: hasHeaderImage
+                  ? _buildSingleImage(context, headerImage)
+                  : Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),
-                  ),
+            ),
             actions: [
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.secondary : null,
-                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.check_circle_outline,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.check_circle_outline),
                 tooltip: 'I made this',
                 onPressed: () async {
                   await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
@@ -129,10 +107,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.share,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.share),
                 onPressed: () => _shareRecipe(context, ref, recipe),
               ),
               PopupMenuButton<String>(
@@ -166,10 +141,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     ),
                   ),
                 ],
-                icon: Icon(
-                  Icons.more_vert,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.more_vert),
               ),
             ],
           ),

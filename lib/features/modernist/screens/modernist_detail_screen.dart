@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import 'modernist_edit_screen.dart';
@@ -64,10 +63,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Minimal text shadows - the backdrop blur does most of the work
-    final titleShadows = buildTitleShadows(isDark);
-    // Icon shadows: subtle drop shadow only
-    final iconShadows = buildIconShadows(isDark);
 
     return Scaffold(
       body: CustomScrollView(
@@ -77,33 +72,20 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
-            // Collapsed title - no shadows, uses theme foreground color
-            title: Text(
-              recipe.name,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              background: hasHeaderImage
+                  ? _buildSingleImage(headerImage)
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
-            leading: hasHeaderImage
-                ? IconButton(
-                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
-                    onPressed: () => Navigator.of(context).pop(),
-                  )
-                : null,
-            flexibleSpace: hasHeaderImage
-                ? ExpandedTitleFlexibleSpace(
-                    title: recipe.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildSingleImage(headerImage),
-                  )
-                : FlexibleSpaceBar(
-                    background: Container(color: theme.colorScheme.surfaceContainerHighest),
-                  ),
             actions: [
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
@@ -111,10 +93,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.check_circle_outline,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.check_circle_outline),
                 tooltip: 'I made this',
                 onPressed: () {
                   ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
@@ -137,10 +116,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     ),
                   ),
                 ],
-                icon: Icon(
-                  Icons.more_vert,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.more_vert),
               ),
             ],
           ),

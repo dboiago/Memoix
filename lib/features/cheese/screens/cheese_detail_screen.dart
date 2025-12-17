@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
@@ -55,10 +54,6 @@ class _CheeseDetailView extends ConsumerWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final hasImage = entry.imageUrl != null && entry.imageUrl!.isNotEmpty;
-    // Minimal text shadows - the backdrop blur does most of the work
-    final titleShadows = buildTitleShadows(isDark);
-    // Icon shadows: subtle drop shadow only
-    final iconShadows = buildIconShadows(isDark);
 
     return Scaffold(
       body: CustomScrollView(
@@ -67,33 +62,20 @@ class _CheeseDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
-            // Collapsed title - no shadows, uses theme foreground color
-            title: Text(
-              entry.name,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                entry.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              background: hasImage
+                  ? _buildHeaderBackground(theme)
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
-            leading: hasImage
-                ? IconButton(
-                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
-                    onPressed: () => Navigator.of(context).pop(),
-                  )
-                : null,
-            flexibleSpace: hasImage
-                ? ExpandedTitleFlexibleSpace(
-                    title: entry.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildHeaderBackground(theme),
-                  )
-                : FlexibleSpaceBar(
-                    background: Container(color: theme.colorScheme.surfaceContainerHighest),
-                  ),
             actions: [
               IconButton(
                 icon: Icon(
                   entry.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: entry.isFavorite ? theme.colorScheme.secondary : null,
-                  shadows: hasImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
@@ -118,10 +100,7 @@ class _CheeseDetailView extends ConsumerWidget {
                     ),
                   ),
                 ],
-                icon: Icon(
-                  Icons.more_vert,
-                  shadows: hasImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.more_vert),
               ),
             ],
           ),

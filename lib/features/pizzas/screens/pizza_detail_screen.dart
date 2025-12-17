@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -55,10 +54,6 @@ class _PizzaDetailView extends ConsumerWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final hasImage = pizza.imageUrl != null && pizza.imageUrl!.isNotEmpty;
-    // Minimal text shadows - the backdrop blur does most of the work
-    final titleShadows = buildTitleShadows(isDark);
-    // Icon shadows: subtle drop shadow only
-    final iconShadows = buildIconShadows(isDark);
 
     return Scaffold(
       body: CustomScrollView(
@@ -67,43 +62,27 @@ class _PizzaDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
-            // Collapsed title - no shadows, uses theme foreground color
-            title: Text(
-              pizza.name,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                pizza.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              background: hasImage
+                  ? _buildHeaderBackground(theme)
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
-            leading: hasImage
-                ? IconButton(
-                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
-                    onPressed: () => Navigator.of(context).pop(),
-                  )
-                : null,
-            flexibleSpace: hasImage
-                ? ExpandedTitleFlexibleSpace(
-                    title: pizza.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildHeaderBackground(theme),
-                  )
-                : FlexibleSpaceBar(
-                    background: Container(color: theme.colorScheme.surfaceContainerHighest),
-                  ),
             actions: [
               IconButton(
                 icon: Icon(
                   pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: pizza.isFavorite ? theme.colorScheme.secondary : null,
-                  shadows: hasImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.check_circle_outline,
-                  shadows: hasImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.check_circle_outline),
                 tooltip: 'I made this',
                 onPressed: () async {
                   await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
@@ -117,10 +96,7 @@ class _PizzaDetailView extends ConsumerWidget {
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.share,
-                  shadows: hasImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.share),
                 onPressed: () => _sharePizza(context, ref, pizza),
               ),
               PopupMenuButton<String>(
@@ -138,10 +114,7 @@ class _PizzaDetailView extends ConsumerWidget {
                     ),
                   ),
                 ],
-                icon: Icon(
-                  Icons.more_vert,
-                  shadows: hasImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.more_vert),
               ),
             ],
           ),

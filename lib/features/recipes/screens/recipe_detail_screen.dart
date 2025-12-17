@@ -6,7 +6,6 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/providers.dart';
-import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -104,12 +103,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final headerImage = recipe.headerImage ?? recipe.getFirstImage();
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Theme-aware shadows: drop shadow for dark, soft halo + outline for light
-    // Minimal text shadows - the backdrop blur does most of the work
-    final titleShadows = buildTitleShadows(isDark);
-    // Icon shadows: subtle drop shadow only
-    final iconShadows = buildIconShadows(isDark);
-
     return Scaffold(
       body: CustomScrollView(
         controller: _scrollController,
@@ -118,46 +111,29 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
-            // Collapsed title - no shadows, uses theme foreground color
-            title: Text(
-              recipe.name,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-            leading: hasHeaderImage
-                ? IconButton(
-                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
-                    onPressed: () => Navigator.of(context).pop(),
-                  )
-                : null,
-            flexibleSpace: hasHeaderImage
-                ? ExpandedTitleFlexibleSpace(
-                    title: recipe.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildSingleImage(context, headerImage),
-                  )
-                : FlexibleSpaceBar(
-                    background: Container(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              background: hasHeaderImage
+                  ? _buildSingleImage(context, headerImage)
+                  : Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),
-                  ),
+            ),
             actions: [
-              // Add shadow to action icons when there's an image
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.check_circle_outline,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.check_circle_outline),
                 tooltip: 'I made this',
                 onPressed: () async {
                   await ref.read(cookingStatsServiceProvider).logCook(
@@ -184,10 +160,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 },
               ),
               IconButton(
-                icon: Icon(
-                  Icons.share,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.share),
                 onPressed: () => _shareRecipe(context, ref),
               ),
               PopupMenuButton<String>(
@@ -203,10 +176,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     ),
                   ),
                 ],
-                icon: Icon(
-                  Icons.more_vert,
-                  shadows: hasHeaderImage ? iconShadows : null,
-                ),
+                icon: const Icon(Icons.more_vert),
               ),
             ],
           ),
