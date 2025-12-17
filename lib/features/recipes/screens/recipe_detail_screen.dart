@@ -178,52 +178,19 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final isNarrow = screenWidth < 400;
     
     return Scaffold(
-      body: NestedScrollView(
-        headerSliverBuilder: (context, innerBoxIsScrolled) {
-          return [
-            // App bar - simpler design without title in FlexibleSpaceBar for narrow screens
-            SliverAppBar(
-              expandedHeight: hasHeaderImage ? 180 : (isNarrow ? kToolbarHeight : 100),
-              collapsedHeight: kToolbarHeight,
-              pinned: true,
-              floating: false,
-              forceElevated: innerBoxIsScrolled,
-              // Show title only when scrolled (collapsed) or on wide screens
-              title: (innerBoxIsScrolled || !isNarrow) ? null : null, // Title shown in metadata bar for narrow
-              actions: _buildAppBarActions(context, recipe, theme),
-              flexibleSpace: hasHeaderImage
-                  ? FlexibleSpaceBar(
-                      background: Stack(
-                        fit: StackFit.expand,
-                        children: [
-                          _buildSingleImage(context, headerImage!),
-                          const DecoratedBox(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [Colors.transparent, Colors.black54],
-                                stops: [0.5, 1.0],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    )
-                  : null,
-            ),
-            
-            // Recipe title and compact metadata bar
-            SliverToBoxAdapter(
-              child: _buildCompactMetadataWithTitle(context, recipe, theme),
-            ),
-          ];
-        },
-        // The split view body with independent scrolling
-        body: SplitRecipeView(
-          recipe: recipe,
-          onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+      appBar: AppBar(
+        title: Text(
+          recipe.name,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
         ),
+        titleSpacing: 0,
+        actions: _buildAppBarActions(context, recipe, theme),
+      ),
+      body: SplitRecipeView(
+        recipe: recipe,
+        onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
       ),
     );
   }
@@ -395,11 +362,22 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         slivers: [
           // Hero header with recipe image or colored header
           SliverAppBar(
-            expandedHeight: hasHeaderImage ? 200 : kToolbarHeight,
+            expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: hasHeaderImage
-                ? FlexibleSpaceBar(
-                    background: Stack(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 56,
+                bottom: 16,
+                end: 160,
+              ),
+              background: hasHeaderImage
+                  ? Stack(
                       fit: StackFit.expand,
                       children: [
                         _buildSingleImage(context, headerImage!),
@@ -418,9 +396,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           ),
                         ),
                       ],
-                    ),
-                  )
-                : null,
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+            ),
             actions: [
               IconButton(
                 icon: Icon(
@@ -479,23 +457,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 icon: const Icon(Icons.more_vert),
               ),
             ],
-          ),
-
-          // Recipe title - displayed below app bar to avoid overlap with action icons
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  recipe.name,
-                  style: theme.textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
           ),
 
           // Recipe metadata

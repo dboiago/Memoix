@@ -62,11 +62,22 @@ class _PizzaDetailView extends ConsumerWidget {
         slivers: [
           // Hero header
           SliverAppBar(
-            expandedHeight: hasHeaderImage ? 200 : kToolbarHeight,
+            expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: hasHeaderImage
-                ? FlexibleSpaceBar(
-                    background: Stack(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                pizza.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 56,
+                bottom: 16,
+                end: 160,
+              ),
+              background: hasHeaderImage
+                  ? Stack(
                       fit: StackFit.expand,
                       children: [
                         _buildHeaderBackground(theme),
@@ -85,9 +96,9 @@ class _PizzaDetailView extends ConsumerWidget {
                           ),
                         ),
                       ],
-                    ),
-                  )
-                : null,
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+            ),
             actions: [
               IconButton(
                 icon: Icon(
@@ -135,23 +146,6 @@ class _PizzaDetailView extends ConsumerWidget {
                 icon: const Icon(Icons.more_vert),
               ),
             ],
-          ),
-
-          // Pizza title - displayed below app bar to avoid overlap with action icons
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  pizza.name,
-                  style: theme.textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
           ),
 
           // Content - responsive grid layout for Sauce - Cheese - Toppings

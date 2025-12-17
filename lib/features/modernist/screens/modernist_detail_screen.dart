@@ -72,127 +72,22 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
-    final headerImage = recipe.headerImage ?? recipe.imageUrl;
-    final showHeaderImages = ref.watch(showHeaderImagesProvider);
-    final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    final isCompact = MediaQuery.sizeOf(context).width < 600;
-    final chipFontSize = isCompact ? 11.0 : 12.0;
 
     return Scaffold(
-      body: NestedScrollView(
-        controller: _scrollController,
-        headerSliverBuilder: (context, innerBoxIsScrolled) {
-          return [
-            SliverAppBar(
-              expandedHeight: hasHeaderImage ? 180 : 100,
-              pinned: true,
-              actions: innerBoxIsScrolled ? null : _buildAppBarActions(context, recipe, theme),
-              flexibleSpace: LayoutBuilder(
-                builder: (context, constraints) {
-                  final maxHeight = hasHeaderImage ? 180.0 : 100.0;
-                  final minHeight = kToolbarHeight + MediaQuery.of(context).padding.top;
-                  final collapseRatio = ((maxHeight - constraints.maxHeight) / (maxHeight - minHeight)).clamp(0.0, 1.0);
-                  final isNarrow = constraints.maxWidth < 400;
-                  final fontSize = isNarrow 
-                      ? 14.0 + (6.0 * (1 - collapseRatio))
-                      : 18.0 + (4.0 * (1 - collapseRatio));
-                  
-                  return FlexibleSpaceBar(
-                    title: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: fontSize,
-                      ),
-                      maxLines: collapseRatio > 0.5 ? 1 : 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    titlePadding: EdgeInsetsDirectional.only(
-                      start: 56,
-                      bottom: 16,
-                      // 3 action icons need ~140px when expanded
-                      end: innerBoxIsScrolled ? 16 : (constraints.maxWidth < 400 ? 120 : 140),
-                    ),
-                    background: hasHeaderImage
-                        ? Stack(
-                            fit: StackFit.expand,
-                            children: [
-                              _buildSingleImage(headerImage!),
-                              const DecoratedBox(
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [Colors.transparent, Colors.black54],
-                                    stops: [0.5, 1.0],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          )
-                        : Container(color: theme.colorScheme.surfaceContainerHighest),
-                  );
-                },
-              ),
-            ),
-            
-            // Compact metadata bar
-            SliverToBoxAdapter(
-              child: Container(
-                color: theme.colorScheme.surface,
-                padding: const EdgeInsets.fromLTRB(8, 6, 8, 12),
-                child: Wrap(
-                  spacing: 6,
-                  runSpacing: 4,
-                  children: [
-                    Chip(
-                      label: Text(recipe.type.displayName),
-                      backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                      labelStyle: TextStyle(fontSize: chipFontSize),
-                      visualDensity: VisualDensity.compact,
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      padding: EdgeInsets.zero,
-                    ),
-                    if (recipe.technique != null && recipe.technique!.isNotEmpty)
-                      Chip(
-                        label: Text(recipe.technique!),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(fontSize: chipFontSize),
-                        visualDensity: VisualDensity.compact,
-                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        padding: EdgeInsets.zero,
-                      ),
-                    if (recipe.serves != null && recipe.serves!.isNotEmpty)
-                      Chip(
-                        avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-                        label: Text(recipe.serves!),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(fontSize: chipFontSize),
-                        visualDensity: VisualDensity.compact,
-                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        padding: EdgeInsets.zero,
-                      ),
-                    if (recipe.time != null && recipe.time!.isNotEmpty)
-                      Chip(
-                        avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-                        label: Text(recipe.time!),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(fontSize: chipFontSize),
-                        visualDensity: VisualDensity.compact,
-                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        padding: EdgeInsets.zero,
-                      ),
-                  ],
-                ),
-              ),
-            ),
-          ];
-        },
-        body: SplitModernistView(
-          recipe: recipe,
-          onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+      appBar: AppBar(
+        title: Text(
+          recipe.name,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
         ),
+        titleSpacing: 0,
+        actions: _buildAppBarActions(context, recipe, theme),
+      ),
+      body: SplitModernistView(
+        recipe: recipe,
+        onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
       ),
     );
   }
@@ -256,11 +151,22 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         slivers: [
           // App bar with header image
           SliverAppBar(
-            expandedHeight: hasHeaderImage ? 200 : kToolbarHeight,
+            expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: hasHeaderImage
-                ? FlexibleSpaceBar(
-                    background: Stack(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 56,
+                bottom: 16,
+                end: 160,
+              ),
+              background: hasHeaderImage
+                  ? Stack(
                       fit: StackFit.expand,
                       children: [
                         _buildSingleImage(headerImage),
@@ -279,9 +185,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                           ),
                         ),
                       ],
-                    ),
-                  )
-                : null,
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+            ),
             actions: [
               IconButton(
                 icon: Icon(
@@ -320,23 +226,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 icon: const Icon(Icons.more_vert),
               ),
             ],
-          ),
-
-          // Recipe title - displayed below app bar to avoid overlap with action icons
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  recipe.name,
-                  style: theme.textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
           ),
 
           // Recipe metadata - chips like Mains

@@ -62,11 +62,22 @@ class _CellarDetailView extends ConsumerWidget {
         slivers: [
           // Hero header
           SliverAppBar(
-            expandedHeight: hasHeaderImage ? 200 : kToolbarHeight,
+            expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: hasHeaderImage
-                ? FlexibleSpaceBar(
-                    background: Stack(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                entry.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 56,
+                bottom: 16,
+                end: 160,
+              ),
+              background: hasHeaderImage
+                  ? Stack(
                       fit: StackFit.expand,
                       children: [
                         _buildHeaderBackground(theme),
@@ -85,9 +96,9 @@ class _CellarDetailView extends ConsumerWidget {
                           ),
                         ),
                       ],
-                    ),
-                  )
-                : null,
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+            ),
             actions: [
               IconButton(
                 icon: Icon(
@@ -121,23 +132,6 @@ class _CellarDetailView extends ConsumerWidget {
                 icon: const Icon(Icons.more_vert),
               ),
             ],
-          ),
-
-          // Entry title - displayed below app bar to avoid overlap with action icons
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  entry.name,
-                  style: theme.textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
           ),
 
           // Metadata chips (only show populated fields)
