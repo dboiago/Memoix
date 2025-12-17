@@ -490,7 +490,38 @@ class UrlRecipeImporter {
       }
       
       // List of header configurations to try in order
+      // Site-specific configurations for known problematic sites
+      final isDotdashSite = uri.host.contains('thespruceeats.com') ||
+          uri.host.contains('thespruce.com') ||
+          uri.host.contains('simplyrecipes.com') ||
+          uri.host.contains('seriouseats.com') ||
+          uri.host.contains('allrecipes.com') ||
+          uri.host.contains('foodandwine.com') ||
+          uri.host.contains('bhg.com') ||
+          uri.host.contains('marthastewart.com') ||
+          uri.host.contains('eatingwell.com') ||
+          uri.host.contains('delish.com') ||
+          uri.host.contains('bonappetit.com');
+      
       final headerConfigs = [
+        // Config 0: Dotdash Meredith sites require very specific headers
+        if (isDotdashSite) {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+          'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+          'Sec-Ch-Ua-Mobile': '?0',
+          'Sec-Ch-Ua-Platform': '"Windows"',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'none',
+          'Sec-Fetch-User': '?1',
+          'Upgrade-Insecure-Requests': '1',
+          'Dnt': '1',
+        },
         // Config 1: Standard Chrome browser headers
         {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -4091,6 +4122,14 @@ class UrlRecipeImporter {
       
       if (!isSection) {
         final ingredient = _parseIngredientString(decoded);
+        // Skip empty ingredient names (pure section markers should not add blank lines)
+        if (ingredient.name.isEmpty) {
+          // But if it had a section, update the current section
+          if (ingredient.section != null) {
+            currentSection = ingredient.section;
+          }
+          continue;
+        }
         if (ingredient.name.isNotEmpty) {
           // Update currentSection if ingredient has inline section
           if (ingredient.section != null) {
@@ -4519,6 +4558,48 @@ class UrlRecipeImporter {
     // Strip leading "of" that some sites include after the amount
     // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
     remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');
+    
+    // Handle dual unit amounts like "28-oz./794-g can" or "14.5-oz./411-g can"
+    // Pattern: number-unit./number-unit descriptor name
+    // Extract the first unit as primary amount, add metric as note
+    if (amount == null) {
+      final dualUnitMatch = RegExp(
+        r'^([\d.]+)\s*-?\s*(oz|lb|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*-?\s*(g|kg|ml|l)\s+(.+)$',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      
+      if (dualUnitMatch != null) {
+        final primaryAmt = dualUnitMatch.group(1)?.trim() ?? '';
+        final primaryUnit = dualUnitMatch.group(2)?.trim() ?? '';
+        final metricAmt = dualUnitMatch.group(3)?.trim() ?? '';
+        final metricUnit = dualUnitMatch.group(4)?.trim() ?? '';
+        var nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
+        
+        amount = '$primaryAmt $primaryUnit';
+        notesParts.add('$metricAmt$metricUnit');
+        remaining = nameWithDescriptor;
+      }
+    }
+    
+    // Also handle when the dual amount was already captured but has metric in name
+    // e.g., remaining is "28-oz./794-g can crushed tomatoes" after no amount match
+    if (amount == null && remaining.contains('/')) {
+      final inlineDualMatch = RegExp(
+        r'^([\d.]+)\s*-?\s*(oz|lb|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*-?\s*(g|kg|ml|l)\s+',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      
+      if (inlineDualMatch != null) {
+        final primaryAmt = inlineDualMatch.group(1)?.trim() ?? '';
+        final primaryUnit = inlineDualMatch.group(2)?.trim() ?? '';
+        final metricAmt = inlineDualMatch.group(3)?.trim() ?? '';
+        final metricUnit = inlineDualMatch.group(4)?.trim() ?? '';
+        
+        amount = '$primaryAmt $primaryUnit';
+        notesParts.add('$metricAmt$metricUnit');
+        remaining = remaining.substring(inlineDualMatch.end).trim();
+      }
+    }
     
     // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
     // But don't split on commas that are inside parentheses
