@@ -73,11 +73,15 @@ class _CellarDetailView extends ConsumerWidget {
           ];
     // Icon shadows: crisp version for smaller elements
     final iconShadows = isDark 
-        ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+        ? [
+            const Shadow(blurRadius: 8, color: Colors.black54),
+            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(-1, 0)),
+            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(1, 0)),
+          ]
         : [
             const Shadow(blurRadius: 1, color: Colors.black45),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-0.5, 0)),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(0.5, 0)),
+            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-1, 0)),
+            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(1, 0)),
           ];
 
     return Scaffold(
