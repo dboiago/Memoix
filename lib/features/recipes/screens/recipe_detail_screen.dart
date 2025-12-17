@@ -358,51 +358,56 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     final useSideBySide = (forceSideBySide && constraints.maxWidth > 360) || 
                                           constraints.maxWidth > 800;
                     
+                    // Compact mode for narrow side-by-side (phones in portrait)
+                    final isCompact = constraints.maxWidth < 500;
+                    final isVeryCompact = constraints.maxWidth < 380;
+                    
+                    // Dynamic values based on available space
+                    final outerPadding = isCompact ? 10.0 : 16.0;
+                    final innerPadding = isCompact ? 10.0 : 16.0;
+                    final gapWidth = isCompact ? 8.0 : 16.0;
+                    final ingredientsFlex = isCompact ? 1 : 2;
+                    final directionsFlex = isCompact ? 2 : 3;
+                    final headerStyle = isCompact 
+                        ? theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)
+                        : theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold);
+                    final headerGap = isCompact ? 8.0 : 12.0;
+                    
                     if (useSideBySide) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16),
+                      Widget content = Padding(
+                        padding: EdgeInsets.all(outerPadding),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             // Ingredients on the left
                             Expanded(
-                              flex: 2,
+                              flex: ingredientsFlex,
                               child: Card(
                                 child: Padding(
-                                  padding: const EdgeInsets.all(16),
+                                  padding: EdgeInsets.all(innerPadding),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(
-                                        'Ingredients',
-                                        style: theme.textTheme.titleLarge?.copyWith(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      const SizedBox(height: 12),
+                                      Text('Ingredients', style: headerStyle),
+                                      SizedBox(height: headerGap),
                                       IngredientList(ingredients: recipe.ingredients),
                                     ],
                                   ),
                                 ),
                               ),
                             ),
-                            const SizedBox(width: 16),
+                            SizedBox(width: gapWidth),
                             // Directions on the right
                             Expanded(
-                              flex: 3,
+                              flex: directionsFlex,
                               child: Card(
                                 child: Padding(
-                                  padding: const EdgeInsets.all(16),
+                                  padding: EdgeInsets.all(innerPadding),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(
-                                        'Directions',
-                                        style: theme.textTheme.titleLarge?.copyWith(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      const SizedBox(height: 12),
+                                      Text('Directions', style: headerStyle),
+                                      SizedBox(height: headerGap),
                                       DirectionList(
                                         directions: recipe.directions,
                                         recipe: recipe,
@@ -416,6 +421,18 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           ],
                         ),
                       );
+                      
+                      // Scale text down for very narrow screens
+                      if (isVeryCompact) {
+                        content = MediaQuery(
+                          data: MediaQuery.of(context).copyWith(
+                            textScaler: const TextScaler.linear(0.9),
+                          ),
+                          child: content,
+                        );
+                      }
+                      
+                      return content;
                     }
                     
                     // Stacked layout for narrow screens when not forced
