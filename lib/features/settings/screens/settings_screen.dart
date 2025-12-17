@@ -48,13 +48,13 @@ final compactViewProvider = StateNotifierProvider<CompactViewNotifier, bool>((re
 class CompactViewNotifier extends StateNotifier<bool> {
   static const _key = 'compact_view';
 
-  CompactViewNotifier() : super(false) {
+  CompactViewNotifier() : super(true) { // Default to ON for data density
     _loadPreference();
   }
 
   Future<void> _loadPreference() async {
     final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? false;
+    state = prefs.getBool(_key) ?? true; // Default ON
   }
 
   Future<void> toggle() async {

@@ -229,7 +229,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 
                 return LayoutBuilder(
                   builder: (context, constraints) {
-                    final useSideBySide = (forceSideBySide && constraints.maxWidth > 360) ||
+                    final useSideBySide = (forceSideBySide && constraints.maxWidth > 320) ||
                                           constraints.maxWidth > 800;
                     
                     // Compact mode for narrow side-by-side (phones in portrait)

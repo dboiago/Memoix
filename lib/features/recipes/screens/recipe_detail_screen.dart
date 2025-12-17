@@ -361,9 +361,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 return LayoutBuilder(
                   builder: (context, constraints) {
                     // Use side-by-side layout if:
-                    // - forceSideBySide is enabled AND screen is wide enough (>360px for phones)
+                    // - forceSideBySide is enabled AND screen is wide enough (>320px for phones)
                     // - OR on very wide screens (>800px) regardless of setting
-                    final useSideBySide = (forceSideBySide && constraints.maxWidth > 360) || 
+                    final useSideBySide = (forceSideBySide && constraints.maxWidth > 320) || 
                                           constraints.maxWidth > 800;
                     
                     // Compact mode for narrow side-by-side (phones in portrait)

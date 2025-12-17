@@ -196,7 +196,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     return LayoutBuilder(
                       builder: (context, constraints) {
                         // Use side-by-side layout if setting enabled and screen wide enough
-                        final useSideBySide = (forceSideBySide && constraints.maxWidth > 360) ||
+                        final useSideBySide = (forceSideBySide && constraints.maxWidth > 320) ||
                                               constraints.maxWidth > 800;
                         
                         // Compact mode for narrow side-by-side (phones in portrait)
