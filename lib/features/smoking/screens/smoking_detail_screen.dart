@@ -77,7 +77,26 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               background: hasHeaderImage
-                  ? _buildSingleImage(context, headerImage)
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildSingleImage(context, headerImage),
+                        // Gradient scrim for text legibility
+                        const DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.transparent,
+                                Colors.black54,
+                              ],
+                              stops: [0.5, 1.0],
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
                   : Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),

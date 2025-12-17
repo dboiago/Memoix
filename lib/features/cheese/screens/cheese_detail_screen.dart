@@ -68,7 +68,26 @@ class _CheeseDetailView extends ConsumerWidget {
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               background: hasImage
-                  ? _buildHeaderBackground(theme)
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildHeaderBackground(theme),
+                        // Gradient scrim for text legibility
+                        const DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.transparent,
+                                Colors.black54,
+                              ],
+                              stops: [0.5, 1.0],
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
                   : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
             actions: [
