@@ -485,36 +485,40 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             ),
             const SizedBox(width: 8),
 
-            // Ingredient name
-            Text(
-              ingredient.name,
-              style: TextStyle(
-                decoration: isChecked ? TextDecoration.lineThrough : null,
-                color: isChecked
-                    ? theme.colorScheme.onSurface.withOpacity(0.5)
-                    : null,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-
-            // Amount
-            if (ingredient.displayText != ingredient.name) ...[
-              const SizedBox(width: 8),
-              Text(
-                ingredient.displayText.replaceFirst(ingredient.name, '').trim(),
-                style: TextStyle(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
-
-            // Notes
+            // Main content - wrapped in Expanded to prevent overflow
             Expanded(
-              child: ingredient.notes != null && ingredient.notes!.isNotEmpty
-                  ? Text(
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 2,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  // Ingredient name
+                  Text(
+                    ingredient.name,
+                    style: TextStyle(
+                      decoration: isChecked ? TextDecoration.lineThrough : null,
+                      color: isChecked
+                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          : null,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+
+                  // Amount
+                  if (ingredient.displayText != ingredient.name)
+                    Text(
+                      ingredient.displayText.replaceFirst(ingredient.name, '').trim(),
+                      style: TextStyle(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+
+                  // Notes
+                  if (ingredient.notes != null && ingredient.notes!.isNotEmpty)
+                    Text(
                       ingredient.notes!,
                       style: TextStyle(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
@@ -523,9 +527,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                             : theme.colorScheme.primary,
                         fontStyle: FontStyle.italic,
                       ),
-                      textAlign: TextAlign.right,
-                    )
-                  : const SizedBox.shrink(),
+                    ),
+                ],
+              ),
             ),
           ],
         ),

@@ -201,90 +201,89 @@ class _IngredientListState extends State<IngredientList> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 8),
 
-            // Ingredient name
-            Text(
-              _capitalizeWords(ingredient.name),
-              style: textStyle?.copyWith(
-                decoration: isChecked ? TextDecoration.lineThrough : null,
-                color: isChecked
-                    ? theme.colorScheme.onSurface.withOpacity(0.5)
-                    : null,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-            
-            // Amount (with minimal spacing)
-            if (amountText.isNotEmpty) ...[
-              SizedBox(width: widget.isCompact ? 4 : 8),
-              Text(
-                amountText,
-                style: textStyle?.copyWith(
-                  decoration: isChecked ? TextDecoration.lineThrough : null,
-                  color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
-
-            // Baker's percentage badge
-            if (hasBakerPercent) ...[
-              const SizedBox(width: 6),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(4),
-                  border: Border.all(
-                    color: theme.colorScheme.secondary,
-                    width: 1,
-                  ),
-                ),
-                child: Text(
-                  ingredient.bakerPercent!,
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.secondary,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-            ],
-
-            // Optional badge
-            if (ingredient.isOptional) ...[
-              const SizedBox(width: 8),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.secondaryContainer,
-                  borderRadius: BorderRadius.circular(4),
-                ),
-                child: Text(
-                  'optional',
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.onSecondaryContainer,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-            ],
-
-            // Notes/alternatives - Expanded ensures it fills remaining space
-            // and textAlign: right pushes text to the right edge
+            // Main content - flexible to prevent overflow
             Expanded(
-              child: hasNotes
-                  ? Text(
+              child: Wrap(
+                spacing: widget.isCompact ? 4 : 8,
+                runSpacing: 2,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  // Ingredient name
+                  Text(
+                    _capitalizeWords(ingredient.name),
+                    style: textStyle?.copyWith(
+                      decoration: isChecked ? TextDecoration.lineThrough : null,
+                      color: isChecked
+                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          : null,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  
+                  // Amount
+                  if (amountText.isNotEmpty)
+                    Text(
+                      amountText,
+                      style: textStyle?.copyWith(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+
+                  // Baker's percentage badge
+                  if (hasBakerPercent)
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.secondary.withOpacity(0.15),
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: theme.colorScheme.secondary,
+                          width: 1,
+                        ),
+                      ),
+                      child: Text(
+                        ingredient.bakerPercent!,
+                        style: theme.textTheme.labelSmall?.copyWith(
+                          color: theme.colorScheme.secondary,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+
+                  // Optional badge
+                  if (ingredient.isOptional)
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.secondaryContainer,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        'optional',
+                        style: theme.textTheme.labelSmall?.copyWith(
+                          color: theme.colorScheme.onSecondaryContainer,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+
+                  // Notes/alternatives
+                  if (hasNotes)
+                    Text(
                       notesText,
-                      style: TextStyle(
+                      style: textStyle?.copyWith(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
                             ? theme.colorScheme.onSurface.withOpacity(0.5)
                             : theme.colorScheme.primary,
                         fontStyle: FontStyle.italic,
                       ),
-                      textAlign: TextAlign.right,
-                    )
-                  : const SizedBox.shrink(),
+                    ),
+                ],
+              ),
             ),
           ],
         ),
