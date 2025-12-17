@@ -1,6 +1,7 @@
 import 'dart:convert';
-import 'dart:io' show gzip;
+import 'dart:io' show gzip, HttpClient;
 import 'package:http/http.dart' as http;
+import 'package:http/io_client.dart';
 import 'package:html/parser.dart' as html_parser;
 import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -485,8 +486,24 @@ class UrlRecipeImporter {
       final origin = '${uri.scheme}://${uri.host}';
       
       // Helper function to attempt fetch with given headers
+      // Uses IOClient with custom HttpClient for better HTTP/1.1 compatibility
       Future<http.Response> tryFetch(Map<String, String> headers) async {
-        return await http.get(Uri.parse(url), headers: headers);
+        // Create a custom HttpClient that forces HTTP/1.1
+        // This helps with sites like Delish.com that prefer HTTP/2 but we can't parse HTTP/2
+        final httpClient = HttpClient()
+          ..connectionTimeout = const Duration(seconds: 30)
+          ..idleTimeout = const Duration(seconds: 10);
+        
+        try {
+          final client = IOClient(httpClient);
+          final response = await client.get(Uri.parse(url), headers: headers);
+          // Note: We don't close the client here as it would close the response stream
+          // The client will be garbage collected after the response is consumed
+          return response;
+        } catch (e) {
+          httpClient.close();
+          rethrow;
+        }
       }
       
       // List of header configurations to try in order
@@ -573,7 +590,8 @@ class UrlRecipeImporter {
       String? lastError;
       
       // Try each configuration until one works
-      for (final headers in headerConfigs) {
+      for (int i = 0; i < headerConfigs.length; i++) {
+        final headers = headerConfigs[i];
         try {
           response = await tryFetch(headers);
           if (response.statusCode == 200) {
@@ -584,12 +602,25 @@ class UrlRecipeImporter {
           // ClientException or other HTTP errors - try next config
           lastError = e.toString();
           response = null;
+          
+          // If this is an HTTP parsing error (like "115 does not match 13"), 
+          // wait a moment before retrying with next config
+          if (lastError.contains('does not match') || 
+              lastError.contains('Failed to parse HTTP')) {
+            await Future.delayed(const Duration(milliseconds: 500));
+          }
           continue;
         }
       }
       
       if (response == null || response.statusCode != 200) {
-        throw Exception('Failed to fetch URL: ${lastError ?? "unknown error"}');
+        // Provide more helpful error messages for known issues
+        String errorMessage = lastError ?? 'unknown error';
+        if (errorMessage.contains('does not match') || 
+            errorMessage.contains('Failed to parse HTTP')) {
+          errorMessage = 'This site may have connection issues. Please try again later or copy the recipe manually.';
+        }
+        throw Exception('Failed to fetch URL: $errorMessage');
       }
 
       // Decode response body - handle encoding errors gracefully
@@ -706,7 +737,10 @@ class UrlRecipeImporter {
                   isSection: parsed.section != null,
                   sectionName: parsed.section,
                 );
-              }).toList(),
+              })
+              // Filter out empty entries - must have alphanumeric in name OR have a section
+              .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
+              .toList(),
               rawDirections: jsonLdResult.rawDirections,
               detectedCourses: jsonLdResult.detectedCourses,
               detectedCuisines: jsonLdResult.detectedCuisines,
