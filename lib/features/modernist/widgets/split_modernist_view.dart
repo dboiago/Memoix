@@ -40,31 +40,38 @@ class SplitModernistView extends StatelessWidget {
     // Visual density adjustments
     final isCompact = screenWidth < 600;
     final dividerPadding = isCompact ? 4.0 : 8.0;
+    final headerHeight = isCompact ? 36.0 : 44.0;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        // Ingredients Column
+        // Ingredients Column - wrapped in ClipRect to prevent scrollbar overflow
         Expanded(
           flex: _getIngredientsFlex(screenWidth),
-          child: ScrollbarTheme(
-            data: ScrollbarThemeData(
-              thickness: WidgetStateProperty.all(2.0),
-            ),
-            child: _IngredientsColumn(
-              ingredients: recipe.ingredients,
-              isCompact: isCompact,
+          child: ClipRect(
+            child: ScrollbarTheme(
+              data: ScrollbarThemeData(
+                thickness: WidgetStateProperty.all(2.0),
+              ),
+              child: _IngredientsColumn(
+                ingredients: recipe.ingredients,
+                isCompact: isCompact,
+              ),
             ),
           ),
         ),
 
-        // Vertical Divider - starts below header area
+        // Vertical Divider - starts below header area with matching background
         Padding(
           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
           child: Column(
             children: [
-              // Spacer to match header height
-              SizedBox(height: isCompact ? 36.0 : 44.0),
+              // Spacer to match header height - use surface color to match headers
+              Container(
+                height: headerHeight,
+                width: 1,
+                color: theme.colorScheme.surface,
+              ),
               // The actual divider line
               Expanded(
                 child: Container(
@@ -76,18 +83,20 @@ class SplitModernistView extends StatelessWidget {
           ),
         ),
 
-        // Directions Column
+        // Directions Column - wrapped in ClipRect to prevent scrollbar overflow
         Expanded(
           flex: _getDirectionsFlex(screenWidth),
-          child: ScrollbarTheme(
-            data: ScrollbarThemeData(
-              thickness: WidgetStateProperty.all(2.0),
-            ),
-            child: _DirectionsColumn(
-              directions: recipe.directions,
-              recipe: recipe,
-              onScrollToImage: onScrollToImage,
-              isCompact: isCompact,
+          child: ClipRect(
+            child: ScrollbarTheme(
+              data: ScrollbarThemeData(
+                thickness: WidgetStateProperty.all(2.0),
+              ),
+              child: _DirectionsColumn(
+                directions: recipe.directions,
+                recipe: recipe,
+                onScrollToImage: onScrollToImage,
+                isCompact: isCompact,
+              ),
             ),
           ),
         ),
