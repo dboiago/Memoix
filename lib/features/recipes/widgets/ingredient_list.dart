@@ -341,13 +341,17 @@ class _IngredientListState extends State<IngredientList> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
-                              color: theme.colorScheme.secondaryContainer,
+                              color: theme.colorScheme.secondary.withOpacity(0.15),
                               borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: theme.colorScheme.secondary,
+                                width: 1,
+                              ),
                             ),
                             child: Text(
                               'optional',
                               style: theme.textTheme.labelSmall?.copyWith(
-                                color: theme.colorScheme.onSecondaryContainer,
+                                color: theme.colorScheme.secondary,
                                 fontStyle: FontStyle.italic,
                               ),
                             ),
@@ -358,13 +362,17 @@ class _IngredientListState extends State<IngredientList> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
-                              color: theme.colorScheme.tertiaryContainer,
+                              color: theme.colorScheme.primary.withOpacity(0.15),
                               borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: theme.colorScheme.primary,
+                                width: 1,
+                              ),
                             ),
                             child: Text(
                               'alt: $extractedAlt',
                               style: theme.textTheme.labelSmall?.copyWith(
-                                color: theme.colorScheme.onTertiaryContainer,
+                                color: theme.colorScheme.primary,
                                 fontStyle: FontStyle.italic,
                               ),
                             ),
