@@ -263,6 +263,28 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         _addIngredientRow();
       }
     } else {
+      // Insert blank rows before each section header (so users can add ingredients above sections)
+      // Work backwards to avoid index shifting issues
+      for (int i = _ingredientRows.length - 1; i >= 0; i--) {
+        if (_ingredientRows[i].isSection) {
+          // Check if there's already a blank row before this section
+          final hasPrecedingBlank = i > 0 && 
+              _ingredientRows[i - 1].nameController.text.isEmpty &&
+              _ingredientRows[i - 1].amountController.text.isEmpty &&
+              !_ingredientRows[i - 1].isSection;
+          
+          if (!hasPrecedingBlank) {
+            // Insert blank row before this section
+            _ingredientRows.insert(i, _IngredientRow(
+              nameController: TextEditingController(),
+              amountController: TextEditingController(),
+              notesController: TextEditingController(),
+              bakerPercentController: TextEditingController(),
+            ));
+          }
+        }
+      }
+      
       // Add blank row at end for existing recipes (for adding more)
       final lastRow = _ingredientRows.last;
       final lastIsEmpty = lastRow.nameController.text.isEmpty && 
