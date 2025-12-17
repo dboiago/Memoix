@@ -64,16 +64,19 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Theme-aware shadows: drop shadow for dark, soft halo for light
+    // Theme-aware shadows: drop shadow for dark, soft halo + outline for light
     final titleShadows = isDark 
         ? [
             const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
             const Shadow(blurRadius: 16, color: Colors.black54),
           ]
         : [
-            // Soft halo effect for light mode
-            const Shadow(blurRadius: 4, color: Colors.white60),
-            const Shadow(blurRadius: 8, color: Colors.white30),
+            // Soft halo for glow
+            const Shadow(blurRadius: 4, color: Colors.white),
+            const Shadow(blurRadius: 8, color: Colors.white70),
+            // Thin outline for definition
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-0.5, -0.5)),
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(0.5, 0.5)),
           ];
 
         return CustomScrollView(
