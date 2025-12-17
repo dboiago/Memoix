@@ -103,18 +103,23 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final headerImage = recipe.headerImage ?? recipe.getFirstImage();
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Theme-aware shadows: black for dark mode, white glow for light mode
-    final titleShadows = [
-      Shadow(
-        blurRadius: 8,
-        color: isDark ? Colors.black87 : Colors.white54,
-        offset: isDark ? const Offset(0, 1) : Offset.zero,
-      ),
-      Shadow(
-        blurRadius: 16,
-        color: isDark ? Colors.black54 : Colors.white38,
-      ),
-    ];
+    // Theme-aware shadows: drop shadow for dark, subtle outline for light
+    final titleShadows = isDark 
+        ? [
+            const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+            const Shadow(blurRadius: 16, color: Colors.black54),
+          ]
+        : [
+            // 8-directional outline effect for light mode
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-1, -1)),
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(1, -1)),
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-1, 1)),
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(1, 1)),
+            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(0, -1)),
+            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(0, 1)),
+            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(-1, 0)),
+            const Shadow(blurRadius: 2, color: Colors.white70, offset: Offset(1, 0)),
+          ];
 
     return Scaffold(
       body: CustomScrollView(
