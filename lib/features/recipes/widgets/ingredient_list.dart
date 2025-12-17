@@ -295,32 +295,34 @@ class _IngredientListState extends State<IngredientList> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 8),
 
-            // Main content - left side (name, amount, badges)
+            // Main content - uses Row with spaceBetween for left content and right-aligned notes
             Expanded(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // Left content: name, amount, and badges
+                  // Left content: name, amount, and badges (inline, no wrap)
                   Flexible(
-                    child: Wrap(
-                      spacing: widget.isCompact ? 4 : 8,
-                      runSpacing: 2,
-                      crossAxisAlignment: WrapCrossAlignment.center,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         // Ingredient name
-                        Text(
-                          _capitalizeWords(ingredient.name),
-                          style: textStyle?.copyWith(
-                            decoration: isChecked ? TextDecoration.lineThrough : null,
-                            color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : null,
-                            fontWeight: FontWeight.w500,
+                        Flexible(
+                          child: Text(
+                            _capitalizeWords(ingredient.name),
+                            style: textStyle?.copyWith(
+                              decoration: isChecked ? TextDecoration.lineThrough : null,
+                              color: isChecked
+                                  ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                  : null,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                         
                         // Amount
-                        if (amountText.isNotEmpty)
+                        if (amountText.isNotEmpty) ...[
+                          SizedBox(width: widget.isCompact ? 4 : 8),
                           Text(
                             amountText,
                             style: textStyle?.copyWith(
@@ -330,9 +332,11 @@ class _IngredientListState extends State<IngredientList> {
                                   : theme.colorScheme.onSurfaceVariant,
                             ),
                           ),
+                        ],
 
                         // Baker's percentage badge
-                        if (hasBakerPercent)
+                        if (hasBakerPercent) ...[
+                          SizedBox(width: widget.isCompact ? 4 : 8),
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                             decoration: BoxDecoration(
@@ -351,9 +355,11 @@ class _IngredientListState extends State<IngredientList> {
                               ),
                             ),
                           ),
+                        ],
 
                         // Optional badge (from field or parsed from notes)
-                        if (isOptional)
+                        if (isOptional) ...[
+                          SizedBox(width: widget.isCompact ? 4 : 8),
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
@@ -372,9 +378,11 @@ class _IngredientListState extends State<IngredientList> {
                               ),
                             ),
                           ),
+                        ],
 
                         // Alternative chip (parsed from notes)
-                        if (extractedAlt != null)
+                        if (extractedAlt != null) ...[
+                          SizedBox(width: widget.isCompact ? 4 : 8),
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                             decoration: BoxDecoration(
@@ -393,16 +401,13 @@ class _IngredientListState extends State<IngredientList> {
                               ),
                             ),
                           ),
+                        ],
                       ],
                     ),
                   ),
 
-                  // Spacer pushes notes to the right
-                  if (hasNotes)
-                    const Spacer(),
-
-                  // Right-aligned notes/alternatives (remaining text after parsing)
-                  if (hasNotes) ...[  
+                  // Right-aligned notes (remaining text after parsing)
+                  if (hasNotes) ...[
                     SizedBox(width: widget.isCompact ? 8 : 16),
                     Text(
                       notesText,
