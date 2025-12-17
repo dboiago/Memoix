@@ -106,7 +106,6 @@ class _KitchenTimerWidgetState extends State<KitchenTimerWidget> {
 
   @override
   void dispose() {
-    _audioPlayer.dispose();
     for (final timer in _timers) {
       timer.dispose();
     }
