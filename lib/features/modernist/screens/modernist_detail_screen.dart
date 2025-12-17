@@ -63,18 +63,16 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Theme-aware shadows: drop shadow for dark, subtle outline for light
+    // Theme-aware shadows: drop shadow for dark, soft halo for light
     final titleShadows = isDark 
         ? [
             const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
             const Shadow(blurRadius: 16, color: Colors.black54),
           ]
         : [
-            // Thin outline effect for light mode
-            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(-0.5, -0.5)),
-            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(0.5, -0.5)),
-            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(-0.5, 0.5)),
-            const Shadow(blurRadius: 0.5, color: Colors.white, offset: Offset(0.5, 0.5)),
+            // Soft halo effect for light mode
+            const Shadow(blurRadius: 4, color: Colors.white60),
+            const Shadow(blurRadius: 8, color: Colors.white30),
           ];
 
     return Scaffold(
