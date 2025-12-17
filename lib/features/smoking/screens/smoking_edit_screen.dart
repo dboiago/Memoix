@@ -8,6 +8,9 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../../core/utils/suggestions.dart';
+import '../../recipes/models/category.dart';
+import '../../recipes/models/recipe.dart';
+import '../../recipes/repository/recipe_repository.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 
@@ -43,6 +46,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   final List<_SeasoningEntry> _seasonings = [];
   final List<_SeasoningEntry> _ingredients = []; // For Recipe type
   final List<TextEditingController> _directionControllers = [];
+
+  /// Paired recipe IDs (for linking related recipes)
+  final List<String> _pairedRecipeIds = [];
 
   bool _isLoading = true;
   SmokingRecipe? _existingRecipe;
@@ -86,6 +92,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       for (final direction in recipe.directions) {
         _directionControllers.add(TextEditingController(text: direction));
       }
+      
+      // Load paired recipe IDs
+      _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
     } else if (widget.recipeId != null) {
       final recipe = await ref
           .read(smokingRepositoryProvider)
@@ -121,6 +130,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         for (final direction in recipe.directions) {
           _directionControllers.add(TextEditingController(text: direction));
         }
+        
+        // Load paired recipe IDs
+        _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
       }
     }
 
@@ -628,6 +640,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               // Ingredients section (Recipes) - matches standard recipe layout
               _buildIngredientsSection(theme),
             ],
+
+            // Pairs With section
+            const SizedBox(height: 24),
+            _buildPairsWithSection(theme),
 
             const SizedBox(height: 24),
 
@@ -1458,6 +1474,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           : _notesController.text.trim()
       ..headerImage = _imagePath
       ..stepImages = _stepImages
+      ..pairedRecipeIds = _pairedRecipeIds
       ..source = _existingRecipe?.source ?? SmokingSource.personal
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
       ..updatedAt = DateTime.now();
@@ -1467,6 +1484,209 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (mounted) {
       Navigator.pop(context);
     }
+  }
+
+  /// Build the "Pairs With" section for linking related recipes
+  Widget _buildPairsWithSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Pairs With',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 8),
+        // Display current paired recipes as chips
+        if (_pairedRecipeIds.isNotEmpty)
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: _pairedRecipeIds.map((uuid) {
+              // Get recipe info for display
+              final allRecipesAsync = ref.watch(allRecipesProvider);
+              final allRecipes = allRecipesAsync.valueOrNull ?? [];
+              final recipe = allRecipes.where((r) => r.uuid == uuid).firstOrNull;
+              final name = recipe?.name ?? 'Unknown';
+              final course = recipe?.course ?? 'mains';
+              
+              return Chip(
+                avatar: Icon(
+                  _iconForCourse(course),
+                  size: 16,
+                  color: theme.colorScheme.onSurface,
+                ),
+                label: Text(name),
+                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                visualDensity: VisualDensity.compact,
+                deleteIcon: Icon(Icons.close, size: 16, color: theme.colorScheme.onSurface),
+                onDeleted: () {
+                  setState(() {
+                    _pairedRecipeIds.remove(uuid);
+                  });
+                },
+              );
+            }).toList(),
+          ),
+        // Add button if under limit of 3
+        if (_pairedRecipeIds.length < 3) ...[
+          if (_pairedRecipeIds.isNotEmpty) const SizedBox(height: 8),
+          OutlinedButton.icon(
+            onPressed: _showRecipeSelector,
+            icon: const Icon(Icons.add, size: 18),
+            label: const Text('Add Recipe'),
+            style: OutlinedButton.styleFrom(
+              visualDensity: VisualDensity.compact,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Get the Material icon for a course category slug
+  IconData _iconForCourse(String course) {
+    switch (course.toLowerCase()) {
+      case 'apps':
+        return Icons.restaurant;
+      case 'soup':
+      case 'soups':
+        return Icons.soup_kitchen;
+      case 'mains':
+        return Icons.dinner_dining;
+      case 'vegn':
+        return Icons.eco;
+      case 'sides':
+        return Icons.rice_bowl;
+      case 'salad':
+      case 'salads':
+        return Icons.grass;
+      case 'desserts':
+        return Icons.cake;
+      case 'brunch':
+        return Icons.egg_alt;
+      case 'drinks':
+        return Icons.local_bar;
+      case 'breads':
+        return Icons.bakery_dining;
+      case 'sauces':
+        return Icons.water_drop;
+      case 'rubs':
+        return Icons.local_fire_department;
+      case 'pickles':
+        return Icons.local_florist;
+      case 'modernist':
+        return Icons.science;
+      case 'smoking':
+        return Icons.outdoor_grill;
+      case 'scratch':
+        return Icons.note_alt;
+      default:
+        return Icons.restaurant_menu;
+    }
+  }
+
+  /// Show a dialog to select a recipe to pair with
+  void _showRecipeSelector() {
+    final allRecipesAsync = ref.read(allRecipesProvider);
+    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    
+    // Filter out: already paired, and recipes from excluded courses
+    final availableRecipes = allRecipes.where((r) {
+      // Exclude already paired
+      if (_pairedRecipeIds.contains(r.uuid)) return false;
+      // Exclude recipes that don't support pairing
+      if (!r.supportsPairing) return false;
+      return true;
+    }).toList();
+    
+    // Sort alphabetically by name
+    availableRecipes.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+    
+    final theme = Theme.of(context);
+    final searchController = TextEditingController();
+    var filteredRecipes = List<Recipe>.from(availableRecipes);
+    
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) {
+          return AlertDialog(
+            title: const Text('Select Recipe'),
+            content: SizedBox(
+              width: double.maxFinite,
+              height: 400,
+              child: Column(
+                children: [
+                  TextField(
+                    controller: searchController,
+                    decoration: const InputDecoration(
+                      hintText: 'Search recipes...',
+                      prefixIcon: Icon(Icons.search),
+                      isDense: true,
+                    ),
+                    onChanged: (query) {
+                      setDialogState(() {
+                        if (query.isEmpty) {
+                          filteredRecipes = List<Recipe>.from(availableRecipes);
+                        } else {
+                          filteredRecipes = availableRecipes.where((r) =>
+                            r.name.toLowerCase().contains(query.toLowerCase()) ||
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                          ).toList();
+                        }
+                      });
+                    },
+                  ),
+                  const SizedBox(height: 12),
+                  Expanded(
+                    child: filteredRecipes.isEmpty
+                      ? Center(
+                          child: Text(
+                            'No recipes found',
+                            style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                          ),
+                        )
+                      : ListView.builder(
+                          itemCount: filteredRecipes.length,
+                          itemBuilder: (context, index) {
+                            final recipe = filteredRecipes[index];
+                            return ListTile(
+                              leading: Icon(
+                                _iconForCourse(recipe.course),
+                                color: theme.colorScheme.primary,
+                              ),
+                              title: Text(recipe.name),
+                              subtitle: Text(
+                                Category.displayNameFromSlug(recipe.course),
+                                style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                              ),
+                              dense: true,
+                              onTap: () {
+                                setState(() {
+                                  _pairedRecipeIds.add(recipe.uuid);
+                                });
+                                Navigator.pop(ctx);
+                              },
+                            );
+                          },
+                        ),
+                  ),
+                ],
+              ),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: const Text('Cancel'),
+              ),
+            ],
+          );
+        },
+      ),
+    );
   }
 }
 

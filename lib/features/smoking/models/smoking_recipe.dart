@@ -257,6 +257,9 @@ class SmokingRecipe {
   @Enumerated(EnumType.name)
   SmokingSource source = SmokingSource.personal;
 
+  /// Paired recipe IDs (links to related Recipe items)
+  List<String> pairedRecipeIds = [];
+
   /// Timestamps
   DateTime createdAt = DateTime.now();
   DateTime updatedAt = DateTime.now();
@@ -341,6 +344,7 @@ class SmokingRecipe {
     bool isFavorite = false,
     int cookCount = 0,
     SmokingSource source = SmokingSource.personal,
+    List<String>? pairedRecipeIds,
   }) {
     return SmokingRecipe()
       ..uuid = uuid
@@ -363,6 +367,7 @@ class SmokingRecipe {
       ..isFavorite = isFavorite
       ..cookCount = cookCount
       ..source = source
+      ..pairedRecipeIds = pairedRecipeIds ?? []
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
   }
@@ -398,6 +403,7 @@ class SmokingRecipe {
       'isFavorite': isFavorite,
       'cookCount': cookCount,
       'source': source.name,
+      'pairedRecipeIds': pairedRecipeIds,
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
     };
@@ -447,7 +453,10 @@ class SmokingRecipe {
       ..source = SmokingSource.values.firstWhere(
         (e) => e.name == json['source'],
         orElse: () => SmokingSource.personal,
-      );
+      )
+      ..pairedRecipeIds = (json['pairedRecipeIds'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList() ?? [];
   }
 
   /// Create a shareable copy (removes personal metadata)

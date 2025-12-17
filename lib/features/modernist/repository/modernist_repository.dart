@@ -93,6 +93,7 @@ class ModernistRepository {
     List<String>? stepImageMap,
     String? imageUrl,
     List<String>? imageUrls,
+    List<String>? pairedRecipeIds,
     ModernistSource source = ModernistSource.personal,
   }) async {
     final recipe = ModernistRecipe.create(
@@ -114,6 +115,7 @@ class ModernistRepository {
       stepImageMap: stepImageMap,
       imageUrl: imageUrl,
       imageUrls: imageUrls,
+      pairedRecipeIds: pairedRecipeIds,
       source: source,
     );
 

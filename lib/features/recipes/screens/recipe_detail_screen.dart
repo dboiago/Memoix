@@ -263,56 +263,71 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Tags row
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
+                  // Tags row - left chips and right-aligned paired chips
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      if (recipe.cuisine != null)
-                        Chip(
-                          label: Text(Cuisine.toAdjective(recipe.cuisine)),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                          visualDensity: VisualDensity.compact,
+                      // Left-aligned chips (Cuisine, Pickle Method, Serves, Time, Nutrition)
+                      Expanded(
+                        child: Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            if (recipe.cuisine != null)
+                              Chip(
+                                label: Text(Cuisine.toAdjective(recipe.cuisine)),
+                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            // Pickle method chip
+                            if (recipe.course == 'pickles' && recipe.pickleMethod != null && recipe.pickleMethod!.isNotEmpty)
+                              Chip(
+                                label: Text(recipe.pickleMethod!),
+                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            if (recipe.serves != null && recipe.serves!.isNotEmpty)
+                              Chip(
+                                avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
+                                label: Text(_formatServes(recipe.serves!)),
+                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            if (recipe.time != null && recipe.time!.isNotEmpty)
+                              Chip(
+                                avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
+                                label: Text(recipe.time!),
+                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            if (recipe.nutrition != null && recipe.nutrition!.hasData)
+                              Tooltip(
+                                message: _buildNutritionTooltip(recipe.nutrition!),
+                                child: ActionChip(
+                                  avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.onSurface),
+                                  label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
+                                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                                  labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                  visualDensity: VisualDensity.compact,
+                                  onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
+                                ),
+                              ),
+                          ],
                         ),
-                      // Pickle method chip
-                      if (recipe.course == 'pickles' && recipe.pickleMethod != null && recipe.pickleMethod!.isNotEmpty)
-                        Chip(
-                          label: Text(recipe.pickleMethod!),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                          visualDensity: VisualDensity.compact,
+                      ),
+                      // Right-aligned paired recipe chips (only for recipes that support pairing)
+                      if (recipe.supportsPairing && _hasPairedRecipes(ref, recipe)) ...[
+                        const SizedBox(width: 8),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: _buildPairedRecipeChips(context, ref, recipe, theme),
                         ),
-                      if (recipe.serves != null && recipe.serves!.isNotEmpty)
-                        Chip(
-                          avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
-                          label: Text(_formatServes(recipe.serves!)),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      if (recipe.time != null && recipe.time!.isNotEmpty)
-                        Chip(
-                          avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-                          label: Text(recipe.time!),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      if (recipe.nutrition != null && recipe.nutrition!.hasData)
-                        Tooltip(
-                          message: _buildNutritionTooltip(recipe.nutrition!),
-                          child: ActionChip(
-                            avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.onSurface),
-                            label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
-                            backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                            labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                            visualDensity: VisualDensity.compact,
-                            onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
-                          ),
-                        ),
-                      // Paired recipe chips (only for recipes that support pairing)
-                      if (recipe.supportsPairing) ..._buildPairedRecipeChips(context, ref, recipe, theme),
+                      ],
                     ],
                   ),
 
@@ -780,6 +795,24 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ),
       ),
     );
+  }
+
+  /// Check if a recipe has any paired recipes (explicit or inverse)
+  bool _hasPairedRecipes(WidgetRef ref, Recipe recipe) {
+    final allRecipesAsync = ref.watch(allRecipesProvider);
+    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    
+    if (allRecipes.isEmpty) return false;
+    
+    // Check for explicit pairings
+    if (recipe.pairedRecipeIds.isNotEmpty) return true;
+    
+    // Check for inverse pairings
+    for (final r in allRecipes) {
+      if (r.pairedRecipeIds.contains(recipe.uuid)) return true;
+    }
+    
+    return false;
   }
 
   /// Build paired recipe chips showing both explicit and inverse pairings.
