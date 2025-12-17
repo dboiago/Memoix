@@ -77,6 +77,13 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-0.5, -0.5)),
             const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(0.5, 0.5)),
           ];
+    // Icon shadows: simpler version for smaller elements
+    final iconShadows = isDark 
+        ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+        : [
+            const Shadow(blurRadius: 3, color: Colors.white),
+            const Shadow(blurRadius: 6, color: Colors.white70),
+          ];
 
     return Scaffold(
       body: CustomScrollView(
@@ -86,6 +93,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
+            leading: hasHeaderImage
+                ? IconButton(
+                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
+                    onPressed: () => Navigator.of(context).pop(),
+                  )
+                : null,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 recipe.name,
@@ -123,9 +136,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                  shadows: hasHeaderImage
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
@@ -135,9 +146,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: hasHeaderImage
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 tooltip: 'I made this',
                 onPressed: () {
@@ -163,9 +172,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: hasHeaderImage
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
               ),
             ],

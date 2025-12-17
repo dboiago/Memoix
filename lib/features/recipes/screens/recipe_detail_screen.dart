@@ -133,6 +133,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 150,
             pinned: true,
+            leading: hasHeaderImage
+                ? IconButton(
+                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
+                    onPressed: () => Navigator.of(context).pop(),
+                  )
+                : null,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 recipe.name,

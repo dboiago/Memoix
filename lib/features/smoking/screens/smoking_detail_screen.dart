@@ -78,6 +78,13 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-0.5, -0.5)),
             const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(0.5, 0.5)),
           ];
+    // Icon shadows: simpler version for smaller elements
+    final iconShadows = isDark 
+        ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+        : [
+            const Shadow(blurRadius: 3, color: Colors.white),
+            const Shadow(blurRadius: 6, color: Colors.white70),
+          ];
 
         return CustomScrollView(
         controller: _scrollController,
@@ -86,6 +93,12 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
+            leading: hasHeaderImage
+                ? IconButton(
+                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
+                    onPressed: () => Navigator.of(context).pop(),
+                  )
+                : null,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 recipe.name,
@@ -123,9 +136,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.secondary : null,
-                  shadows: hasHeaderImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
@@ -134,9 +145,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: hasHeaderImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 tooltip: 'I made this',
                 onPressed: () async {
@@ -153,9 +162,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               IconButton(
                 icon: Icon(
                   Icons.share,
-                  shadows: hasHeaderImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
                 onPressed: () => _shareRecipe(context, ref, recipe),
               ),
@@ -192,9 +199,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: hasHeaderImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasHeaderImage ? iconShadows : null,
                 ),
               ),
             ],

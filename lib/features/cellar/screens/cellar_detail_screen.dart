@@ -83,6 +83,12 @@ class _CellarDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
+            leading: hasImage
+                ? IconButton(
+                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
+                    onPressed: () => Navigator.of(context).pop(),
+                  )
+                : null,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 entry.name,

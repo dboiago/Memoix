@@ -52,7 +52,26 @@ class _SandwichDetailView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     final hasImage = sandwich.imageUrl != null && sandwich.imageUrl!.isNotEmpty;
+    // Theme-aware shadows: drop shadow for dark, soft halo + outline for light
+    final titleShadows = isDark 
+        ? [
+            const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+            const Shadow(blurRadius: 16, color: Colors.black54),
+          ]
+        : [
+            const Shadow(blurRadius: 4, color: Colors.white),
+            const Shadow(blurRadius: 8, color: Colors.white70),
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-0.5, -0.5)),
+            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(0.5, 0.5)),
+          ];
+    final iconShadows = isDark 
+        ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+        : [
+            const Shadow(blurRadius: 3, color: Colors.white),
+            const Shadow(blurRadius: 6, color: Colors.white70),
+          ];
 
     return Scaffold(
       body: CustomScrollView(
@@ -61,15 +80,18 @@ class _SandwichDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
+            leading: hasImage
+                ? IconButton(
+                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
+                    onPressed: () => Navigator.of(context).pop(),
+                  )
+                : null,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 sandwich.name,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [
-                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    Shadow(blurRadius: 16, color: Colors.black54),
-                  ],
+                  shadows: titleShadows,
                 ),
               ),
               background: _buildHeaderBackground(theme),
@@ -79,9 +101,7 @@ class _SandwichDetailView extends ConsumerWidget {
                 icon: Icon(
                   sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
-                  shadows: hasImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
@@ -90,9 +110,7 @@ class _SandwichDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.check_circle_outline,
-                  shadows: hasImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasImage ? iconShadows : null,
                 ),
                 tooltip: 'I made this',
                 onPressed: () async {
@@ -109,9 +127,7 @@ class _SandwichDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   Icons.share,
-                  shadows: hasImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasImage ? iconShadows : null,
                 ),
                 onPressed: () => _shareSandwich(context, ref, sandwich),
               ),
@@ -136,9 +152,7 @@ class _SandwichDetailView extends ConsumerWidget {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: hasImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasImage ? iconShadows : null,
                 ),
               ),
             ],

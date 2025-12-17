@@ -68,6 +68,13 @@ class _CheeseDetailView extends ConsumerWidget {
             const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-0.5, -0.5)),
             const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(0.5, 0.5)),
           ];
+    // Icon shadows: simpler version for smaller elements
+    final iconShadows = isDark 
+        ? [const Shadow(blurRadius: 8, color: Colors.black54)]
+        : [
+            const Shadow(blurRadius: 3, color: Colors.white),
+            const Shadow(blurRadius: 6, color: Colors.white70),
+          ];
 
     return Scaffold(
       body: CustomScrollView(
@@ -76,6 +83,12 @@ class _CheeseDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
+            leading: hasImage
+                ? IconButton(
+                    icon: Icon(Icons.arrow_back, shadows: iconShadows),
+                    onPressed: () => Navigator.of(context).pop(),
+                  )
+                : null,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 entry.name,
@@ -91,9 +104,7 @@ class _CheeseDetailView extends ConsumerWidget {
                 icon: Icon(
                   entry.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: entry.isFavorite ? theme.colorScheme.secondary : null,
-                  shadows: hasImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasImage ? iconShadows : null,
                 ),
                 onPressed: () {
                   ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
@@ -120,9 +131,7 @@ class _CheeseDetailView extends ConsumerWidget {
                 ],
                 icon: Icon(
                   Icons.more_vert,
-                  shadows: hasImage 
-                      ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-                      : null,
+                  shadows: hasImage ? iconShadows : null,
                 ),
               ),
             ],
