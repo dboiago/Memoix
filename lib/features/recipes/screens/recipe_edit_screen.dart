@@ -1669,10 +1669,20 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
               style: theme.textTheme.bodyMedium,
               onChanged: (value) {
-                // Auto-add new row when typing in last row
-                if (isLast && value.isNotEmpty && !row.isSection) {
-                  _addIngredientRow();
-                  setState(() {});
+                // Auto-add new row when typing in last row OR last row before a section
+                if (value.isNotEmpty && !row.isSection) {
+                  // Check if next row is a section header
+                  final nextIsSection = index < _ingredientRows.length - 1 &&
+                      _ingredientRows[index + 1].isSection;
+                  
+                  if (isLast) {
+                    // Append at the end
+                    _addIngredientRow();
+                    setState(() {});
+                  } else if (nextIsSection) {
+                    // Insert a new row between this ingredient and the section
+                    _insertIngredientAt(index + 1);
+                  }
                 }
               },
             ),
