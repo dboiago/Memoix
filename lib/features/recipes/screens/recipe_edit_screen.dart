@@ -196,6 +196,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           _addIngredientRow(name: ingredient.section!, isSection: true);
           lastSection = ingredient.section;
         }
+        
+        // Skip ingredients with empty names (section-only markers from import)
+        if (ingredient.name.isEmpty) {
+          continue;
+        }
+        
         // Combine preparation and alternative into notes field
         final notesParts = <String>[
           if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty)

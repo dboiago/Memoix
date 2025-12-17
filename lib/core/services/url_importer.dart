@@ -4411,6 +4411,29 @@ class UrlRecipeImporter {
       );
     }
     
+    // Handle dual unit amounts EARLY - before other patterns can partially match
+    // Pattern: "28-oz./794-g can" or "14.5-oz./411-g can" 
+    // These have number-unit./number-unit followed by descriptor/name
+    final dualUnitMatch = RegExp(
+      r'^([\d.]+)\s*-?\s*(oz|lb|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*-?\s*(g|kg|ml|l)\s+(.+)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (dualUnitMatch != null) {
+      final primaryAmt = dualUnitMatch.group(1)?.trim() ?? '';
+      final primaryUnit = dualUnitMatch.group(2)?.trim() ?? '';
+      final metricAmt = dualUnitMatch.group(3)?.trim() ?? '';
+      final metricUnit = dualUnitMatch.group(4)?.trim() ?? '';
+      var nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
+      
+      // Check for "can", "jar", "bottle" etc. as part of the ingredient description
+      // e.g., "can crushed tomatoes" -> name: "can crushed tomatoes" or just "crushed tomatoes"
+      return Ingredient.create(
+        name: nameWithDescriptor,
+        amount: '$primaryAmt $primaryUnit',
+        preparation: '$metricAmt$metricUnit',
+      );
+    }
+    
     // Check for optional markers anywhere and extract to notes
     final optionalPatterns = [
       RegExp(r'\(\s*optional\s*\)', caseSensitive: false),
@@ -4558,48 +4581,6 @@ class UrlRecipeImporter {
     // Strip leading "of" that some sites include after the amount
     // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
     remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');
-    
-    // Handle dual unit amounts like "28-oz./794-g can" or "14.5-oz./411-g can"
-    // Pattern: number-unit./number-unit descriptor name
-    // Extract the first unit as primary amount, add metric as note
-    if (amount == null) {
-      final dualUnitMatch = RegExp(
-        r'^([\d.]+)\s*-?\s*(oz|lb|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*-?\s*(g|kg|ml|l)\s+(.+)$',
-        caseSensitive: false,
-      ).firstMatch(remaining);
-      
-      if (dualUnitMatch != null) {
-        final primaryAmt = dualUnitMatch.group(1)?.trim() ?? '';
-        final primaryUnit = dualUnitMatch.group(2)?.trim() ?? '';
-        final metricAmt = dualUnitMatch.group(3)?.trim() ?? '';
-        final metricUnit = dualUnitMatch.group(4)?.trim() ?? '';
-        var nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
-        
-        amount = '$primaryAmt $primaryUnit';
-        notesParts.add('$metricAmt$metricUnit');
-        remaining = nameWithDescriptor;
-      }
-    }
-    
-    // Also handle when the dual amount was already captured but has metric in name
-    // e.g., remaining is "28-oz./794-g can crushed tomatoes" after no amount match
-    if (amount == null && remaining.contains('/')) {
-      final inlineDualMatch = RegExp(
-        r'^([\d.]+)\s*-?\s*(oz|lb|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*-?\s*(g|kg|ml|l)\s+',
-        caseSensitive: false,
-      ).firstMatch(remaining);
-      
-      if (inlineDualMatch != null) {
-        final primaryAmt = inlineDualMatch.group(1)?.trim() ?? '';
-        final primaryUnit = inlineDualMatch.group(2)?.trim() ?? '';
-        final metricAmt = inlineDualMatch.group(3)?.trim() ?? '';
-        final metricUnit = inlineDualMatch.group(4)?.trim() ?? '';
-        
-        amount = '$primaryAmt $primaryUnit';
-        notesParts.add('$metricAmt$metricUnit');
-        remaining = remaining.substring(inlineDualMatch.end).trim();
-      }
-    }
     
     // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
     // But don't split on commas that are inside parentheses
