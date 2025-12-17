@@ -166,9 +166,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
-              // Leave space for action icons (4 icons × ~48px each)
+              // Leave space for back arrow (56px) and action icons (4 icons × ~48px each)
               titlePadding: const EdgeInsetsDirectional.only(
-                start: 16,
+                start: 56,
                 bottom: 16,
                 end: 160,
               ),
@@ -277,7 +277,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                               Chip(
                                 label: Text(Cuisine.toAdjective(recipe.cuisine)),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                labelStyle: TextStyle(
+                                  color: theme.colorScheme.onSurface,
+                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                ),
                                 visualDensity: VisualDensity.compact,
                               ),
                             // Pickle method chip
@@ -285,33 +288,45 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                               Chip(
                                 label: Text(recipe.pickleMethod!),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                labelStyle: TextStyle(
+                                  color: theme.colorScheme.onSurface,
+                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                ),
                                 visualDensity: VisualDensity.compact,
                               ),
                             if (recipe.serves != null && recipe.serves!.isNotEmpty)
                               Chip(
-                                avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
+                                avatar: Icon(Icons.people, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
                                 label: Text(_formatServes(recipe.serves!)),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                labelStyle: TextStyle(
+                                  color: theme.colorScheme.onSurface,
+                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                ),
                                 visualDensity: VisualDensity.compact,
                               ),
                             if (recipe.time != null && recipe.time!.isNotEmpty)
                               Chip(
-                                avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
+                                avatar: Icon(Icons.timer, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
                                 label: Text(recipe.time!),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                labelStyle: TextStyle(
+                                  color: theme.colorScheme.onSurface,
+                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                ),
                                 visualDensity: VisualDensity.compact,
                               ),
                             if (recipe.nutrition != null && recipe.nutrition!.hasData)
                               Tooltip(
                                 message: _buildNutritionTooltip(recipe.nutrition!),
                                 child: ActionChip(
-                                  avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.onSurface),
+                                  avatar: Icon(Icons.local_fire_department, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
                                   label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
                                   backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                  labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                  labelStyle: TextStyle(
+                                    color: theme.colorScheme.onSurface,
+                                    fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                  ),
                                   visualDensity: VisualDensity.compact,
                                   onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
                                 ),
@@ -353,7 +368,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                               Chip(
                                 label: Text(recipe.glass!),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                labelStyle: TextStyle(
+                                  color: theme.colorScheme.onSurface,
+                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                ),
                                 visualDensity: VisualDensity.compact,
                               ),
                             ],
@@ -379,7 +397,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                   children: recipe.garnish.map((item) => Chip(
                                     label: Text(item),
                                     backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                    labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+                                    labelStyle: TextStyle(
+                                      color: theme.colorScheme.onSurface,
+                                      fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                                    ),
                                     visualDensity: VisualDensity.compact,
                                   )).toList(),
                                 ),
@@ -852,17 +873,21 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     }
     
     // Build chips for each paired recipe
+    final isCompact = MediaQuery.of(context).size.width < 600;
     for (final paired in pairedRecipes) {
       chips.add(
         ActionChip(
           avatar: Icon(
             _iconForCourse(paired.course),
-            size: 16,
+            size: isCompact ? 14 : 16,
             color: theme.colorScheme.onSurface,
           ),
           label: Text(paired.name),
           backgroundColor: theme.colorScheme.surfaceContainerHighest,
-          labelStyle: TextStyle(color: theme.colorScheme.onSurface),
+          labelStyle: TextStyle(
+            color: theme.colorScheme.onSurface,
+            fontSize: isCompact ? 12 : 14,
+          ),
           visualDensity: VisualDensity.compact,
           onPressed: () {
             Navigator.push(

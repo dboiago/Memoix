@@ -1,6 +1,75 @@
 import 'package:flutter/material.dart';
 import '../models/recipe.dart';
 
+/// Result of parsing ingredient notes for special patterns
+class _ParsedNotes {
+  final bool isOptional;
+  final String? alternative;
+  final String remainingNotes;
+
+  _ParsedNotes({
+    required this.isOptional,
+    this.alternative,
+    required this.remainingNotes,
+  });
+}
+
+/// Parse notes text to extract optional markers and alternatives
+_ParsedNotes _parseNotes(String notes) {
+  if (notes.isEmpty) {
+    return _ParsedNotes(isOptional: false, remainingNotes: '');
+  }
+
+  var remaining = notes;
+  var isOptional = false;
+  String? alternative;
+
+  // Patterns for optional markers
+  final optionalPatterns = [
+    RegExp(r'\(optional\)', caseSensitive: false),
+    RegExp(r'^optional$', caseSensitive: false),
+    RegExp(r'\boptional\b', caseSensitive: false),
+  ];
+
+  // Check and remove optional markers
+  for (final pattern in optionalPatterns) {
+    if (pattern.hasMatch(remaining)) {
+      isOptional = true;
+      remaining = remaining.replaceAll(pattern, '').trim();
+    }
+  }
+
+  // Patterns for alternative ingredients
+  // Matches: "alt: butter", "alternative: butter", "or butter", "or use butter", "substitute: butter"
+  final altPatterns = [
+    RegExp(r'^alt(?:ernative)?:\s*(.+)$', caseSensitive: false),
+    RegExp(r'^sub(?:stitute)?:\s*(.+)$', caseSensitive: false),
+    RegExp(r'^or\s+(?:use\s+)?(.+)$', caseSensitive: false),
+    RegExp(r'\(or\s+(.+?)\)$', caseSensitive: false),
+  ];
+
+  for (final pattern in altPatterns) {
+    final match = pattern.firstMatch(remaining);
+    if (match != null) {
+      alternative = match.group(1)?.trim();
+      remaining = remaining.replaceAll(pattern, '').trim();
+      break;
+    }
+  }
+
+  // Clean up remaining text (remove leading/trailing separators)
+  remaining = remaining
+      .replaceAll(RegExp(r'^[\s·,;-]+'), '')
+      .replaceAll(RegExp(r'[\s·,;-]+$'), '')
+      .trim();
+
+  return _ParsedNotes(
+    isOptional: isOptional,
+    alternative: alternative,
+    remainingNotes: remaining,
+  );
+}
+
 /// Capitalize the first letter of each word in a string
 String _capitalizeWords(String text) {
   if (text.isEmpty) return text;
@@ -156,15 +225,24 @@ class _IngredientListState extends State<IngredientList> {
     // Check for baker's percentage
     final hasBakerPercent = ingredient.bakerPercent != null && ingredient.bakerPercent!.isNotEmpty;
     
-    // Get preparation and alternative separately
-    final hasPreparation = ingredient.preparation != null && ingredient.preparation!.isNotEmpty;
-    final hasAlternative = ingredient.alternative != null && ingredient.alternative!.isNotEmpty;
-    final hasNotes = hasPreparation || hasAlternative;
-    
-    final notesText = [
-      if (hasPreparation) ingredient.preparation!,
-      if (hasAlternative) ingredient.alternative!,
+    // Combine preparation and alternative fields into raw notes
+    final rawNotes = [
+      if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) ingredient.preparation!,
+      if (ingredient.alternative != null && ingredient.alternative!.isNotEmpty) ingredient.alternative!,
     ].where((s) => s.isNotEmpty).join(' · ');
+    
+    // Parse notes to extract optional markers and alternatives
+    final parsedNotes = _parseNotes(rawNotes);
+    
+    // Determine if ingredient is optional (from field OR parsed from notes)
+    final isOptional = ingredient.isOptional || parsedNotes.isOptional;
+    
+    // Get parsed alternative (from notes) or keep the model's alternative field if it's a proper value
+    final extractedAlt = parsedNotes.alternative;
+    
+    // Final notes text after removing optional/alt patterns
+    final notesText = parsedNotes.remainingNotes;
+    final hasNotes = notesText.isNotEmpty;
 
     return InkWell(
       onTap: () {
@@ -201,87 +279,117 @@ class _IngredientListState extends State<IngredientList> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 8),
 
-            // Main content - flexible to prevent overflow
+            // Main content - left side (name, amount, badges)
             Expanded(
-              child: Wrap(
-                spacing: widget.isCompact ? 4 : 8,
-                runSpacing: 2,
-                crossAxisAlignment: WrapCrossAlignment.center,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Ingredient name
-                  Text(
-                    _capitalizeWords(ingredient.name),
-                    style: textStyle?.copyWith(
-                      decoration: isChecked ? TextDecoration.lineThrough : null,
-                      color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
-                          : null,
-                      fontWeight: FontWeight.w500,
+                  // Left content: name, amount, and badges
+                  Flexible(
+                    child: Wrap(
+                      spacing: widget.isCompact ? 4 : 8,
+                      runSpacing: 2,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        // Ingredient name
+                        Text(
+                          _capitalizeWords(ingredient.name),
+                          style: textStyle?.copyWith(
+                            decoration: isChecked ? TextDecoration.lineThrough : null,
+                            color: isChecked
+                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                : null,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        
+                        // Amount
+                        if (amountText.isNotEmpty)
+                          Text(
+                            amountText,
+                            style: textStyle?.copyWith(
+                              decoration: isChecked ? TextDecoration.lineThrough : null,
+                              color: isChecked
+                                  ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                  : theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+
+                        // Baker's percentage badge
+                        if (hasBakerPercent)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.secondary.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: theme.colorScheme.secondary,
+                                width: 1,
+                              ),
+                            ),
+                            child: Text(
+                              ingredient.bakerPercent!,
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: theme.colorScheme.secondary,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+
+                        // Optional badge (from field or parsed from notes)
+                        if (isOptional)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.secondaryContainer,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              'optional',
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: theme.colorScheme.onSecondaryContainer,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ),
+
+                        // Alternative chip (parsed from notes)
+                        if (extractedAlt != null)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.tertiaryContainer,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              'alt: $extractedAlt',
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: theme.colorScheme.onTertiaryContainer,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ),
+                      ],
                     ),
                   ),
-                  
-                  // Amount
-                  if (amountText.isNotEmpty)
-                    Text(
-                      amountText,
-                      style: textStyle?.copyWith(
-                        decoration: isChecked ? TextDecoration.lineThrough : null,
-                        color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
-                            : theme.colorScheme.onSurfaceVariant,
-                      ),
-                    ),
 
-                  // Baker's percentage badge
-                  if (hasBakerPercent)
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.secondary.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(4),
-                        border: Border.all(
-                          color: theme.colorScheme.secondary,
-                          width: 1,
-                        ),
-                      ),
+                  // Right-aligned notes/alternatives (remaining text after parsing)
+                  if (hasNotes) ...[
+                    SizedBox(width: widget.isCompact ? 8 : 16),
+                    Flexible(
                       child: Text(
-                        ingredient.bakerPercent!,
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: theme.colorScheme.secondary,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ),
-
-                  // Optional badge
-                  if (ingredient.isOptional)
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.secondaryContainer,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      child: Text(
-                        'optional',
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: theme.colorScheme.onSecondaryContainer,
+                        notesText,
+                        style: textStyle?.copyWith(
+                          decoration: isChecked ? TextDecoration.lineThrough : null,
+                          color: isChecked
+                              ? theme.colorScheme.onSurface.withOpacity(0.5)
+                              : theme.colorScheme.primary,
                           fontStyle: FontStyle.italic,
                         ),
+                        textAlign: TextAlign.end,
                       ),
                     ),
-
-                  // Notes/alternatives
-                  if (hasNotes)
-                    Text(
-                      notesText,
-                      style: textStyle?.copyWith(
-                        decoration: isChecked ? TextDecoration.lineThrough : null,
-                        color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
-                            : theme.colorScheme.primary,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
+                  ],
                 ],
               ),
             ),
