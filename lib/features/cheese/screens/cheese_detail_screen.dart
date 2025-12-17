@@ -61,12 +61,10 @@ class _CheeseDetailView extends ConsumerWidget {
             const Shadow(blurRadius: 16, color: Colors.black54),
           ]
         : [
-            // Soft halo for glow
-            const Shadow(blurRadius: 4, color: Colors.white),
-            const Shadow(blurRadius: 8, color: Colors.white70),
-            // Thin outline for definition
-            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(-0.5, -0.5)),
-            const Shadow(blurRadius: 1, color: Colors.white, offset: Offset(0.5, 0.5)),
+            // Black stroke for light mode
+            const Shadow(blurRadius: 2, color: Colors.black45),
+            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-0.5, -0.5)),
+            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(0.5, 0.5)),
           ];
     // Icon shadows: crisp version for smaller elements
     final iconShadows = isDark 
