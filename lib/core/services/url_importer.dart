@@ -504,23 +504,18 @@ class UrlRecipeImporter {
           uri.host.contains('bonappetit.com');
       
       final headerConfigs = [
-        // Config 0: Dotdash Meredith sites require very specific headers
+        // Config 0: Dotdash Meredith sites - use identity encoding to avoid HTTP parsing issues
         if (isDotdashSite) {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
-          'Accept-Encoding': 'gzip, deflate, br',
+          'Accept-Encoding': 'identity', // Avoid compression - http package has issues with some encodings
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
-          'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-          'Sec-Ch-Ua-Mobile': '?0',
-          'Sec-Ch-Ua-Platform': '"Windows"',
           'Sec-Fetch-Dest': 'document',
           'Sec-Fetch-Mode': 'navigate',
           'Sec-Fetch-Site': 'none',
-          'Sec-Fetch-User': '?1',
           'Upgrade-Insecure-Requests': '1',
-          'Dnt': '1',
         },
         // Config 1: Standard Chrome browser headers
         {
@@ -4412,10 +4407,12 @@ class UrlRecipeImporter {
     }
     
     // Handle dual unit amounts EARLY - before other patterns can partially match
-    // Pattern: "28-oz./794-g can" or "14.5-oz./411-g can" 
+    // Pattern: "28-oz./794-g can" or "14.5-oz./411-g can" or "One 28-oz./794-g can"
     // These have number-unit./number-unit followed by descriptor/name
+    // Handle various dash types (hyphen, en-dash, em-dash) and Unicode minus
+    // Also handle ounces as 'ounce' or 'ounces' not just 'oz'
     final dualUnitMatch = RegExp(
-      r'^([\d.]+)\s*-?\s*(oz|lb|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*-?\s*(g|kg|ml|l)\s+(.+)$',
+      r'^([\d.]+)\s*[-–—−]?\s*(oz|ounces?|lb|pounds?|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*[-–—−]?\s*(g|kg|ml|l|grams?)\s+(.+)$',
       caseSensitive: false,
     ).firstMatch(remaining);
     if (dualUnitMatch != null) {
@@ -4425,12 +4422,20 @@ class UrlRecipeImporter {
       final metricUnit = dualUnitMatch.group(4)?.trim() ?? '';
       var nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
       
+      // Normalize units (ounces -> oz, pounds -> lb, grams -> g)
+      String normalizedPrimaryUnit = primaryUnit.toLowerCase();
+      if (normalizedPrimaryUnit.startsWith('ounce')) normalizedPrimaryUnit = 'oz';
+      if (normalizedPrimaryUnit.startsWith('pound')) normalizedPrimaryUnit = 'lb';
+      
+      String normalizedMetricUnit = metricUnit.toLowerCase();
+      if (normalizedMetricUnit.startsWith('gram')) normalizedMetricUnit = 'g';
+      
       // Check for "can", "jar", "bottle" etc. as part of the ingredient description
       // e.g., "can crushed tomatoes" -> name: "can crushed tomatoes" or just "crushed tomatoes"
       return Ingredient.create(
         name: nameWithDescriptor,
-        amount: '$primaryAmt $primaryUnit',
-        preparation: '$metricAmt$metricUnit',
+        amount: '$primaryAmt $normalizedPrimaryUnit',
+        preparation: '$metricAmt$normalizedMetricUnit',
       );
     }
     

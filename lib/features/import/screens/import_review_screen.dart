@@ -1225,6 +1225,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           continue;
         }
         
+        // Skip any ingredient with empty name (even without sectionName)
+        // This catches edge cases where empty entries slip through sanitization
+        if (rawIngredient.name.trim().isEmpty) {
+          continue;
+        }
+        
         // Add the ingredient with current section
         ingredients.add(ModernistIngredient.create(
           name: rawIngredient.name,
@@ -1280,6 +1286,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         // If this is a section header (empty name with section), track it but don't add
         if (rawIngredient.name.isEmpty && rawIngredient.sectionName != null) {
           currentSection = rawIngredient.sectionName;
+          continue;
+        }
+        
+        // Skip any ingredient with empty name (even without sectionName)
+        // This catches edge cases where empty entries slip through sanitization
+        if (rawIngredient.name.trim().isEmpty) {
           continue;
         }
         
