@@ -124,22 +124,27 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: hasHeaderImage
-                ? FrostedFlexibleSpaceBar(
-                    title: recipe.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildSingleImage(context, headerImage),
-                  )
-                : FlexibleSpaceBar(
-                    title: Text(
-                      recipe.name,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    background: Container(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  shadows: hasHeaderImage ? titleShadows : null,
+                ),
+              ),
+              background: hasHeaderImage
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildSingleImage(context, headerImage),
+                        // Gradient scrim for text readability
+                        buildImageScrim(isDark: isDark),
+                      ],
+                    )
+                  : Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),
-                  ),
+            ),
             actions: [
               // Add shadow to action icons when there's an image
               IconButton(

@@ -83,20 +83,25 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: hasHeaderImage
-                ? FrostedFlexibleSpaceBar(
-                    title: recipe.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildSingleImage(headerImage),
-                  )
-                : FlexibleSpaceBar(
-                    title: Text(
-                      recipe.name,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    background: Container(color: theme.colorScheme.surfaceContainerHighest),
-                  ),
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  shadows: hasHeaderImage ? titleShadows : null,
+                ),
+              ),
+              background: hasHeaderImage
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildSingleImage(headerImage),
+                        // Gradient scrim for text readability
+                        buildImageScrim(isDark: isDark),
+                      ],
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+            ),
             actions: [
               IconButton(
                 icon: Icon(

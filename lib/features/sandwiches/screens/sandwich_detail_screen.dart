@@ -73,22 +73,27 @@ class _SandwichDetailView extends ConsumerWidget {
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: hasImage
-                ? FrostedFlexibleSpaceBar(
-                    title: sandwich.name,
-                    titleShadows: titleShadows,
-                    isDark: isDark,
-                    background: _buildHeaderBackground(theme),
-                  )
-                : FlexibleSpaceBar(
-                    title: Text(
-                      sandwich.name,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    background: Container(
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                sandwich.name,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  shadows: hasImage ? titleShadows : null,
+                ),
+              ),
+              background: hasImage
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildHeaderBackground(theme),
+                        // Gradient scrim for text readability
+                        buildImageScrim(isDark: isDark),
+                      ],
+                    )
+                  : Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),
-                  ),
+            ),
             actions: [
               IconButton(
                 icon: Icon(
