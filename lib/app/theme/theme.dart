@@ -33,7 +33,7 @@ class MemoixTheme {
         onSecondaryContainer: lightPrimaryText, // #4b5563 charcoal for text on warm bg
         surface: lightSurface,
         onSurface: lightPrimaryText,
-        surfaceContainerHighest: Color(0xFFE5DCD3), // accent bg
+        surfaceContainerHighest: Color(0xFFF0EFED), // neutral light gray (not warm accent)
         onSurfaceVariant: lightMuted, // #9ca3af grey for subtle text
         error: Color(0xFFDC2626),
         onError: Colors.white,
