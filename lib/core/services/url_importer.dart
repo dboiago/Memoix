@@ -504,12 +504,13 @@ class UrlRecipeImporter {
           uri.host.contains('bonappetit.com');
       
       final headerConfigs = [
-        // Config 0: Dotdash Meredith sites - use identity encoding to avoid HTTP parsing issues
+        // Config 0: Dotdash Meredith sites - use identity encoding + close connection to avoid HTTP parsing issues
         if (isDotdashSite) {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
           'Accept-Encoding': 'identity', // Avoid compression - http package has issues with some encodings
+          'Connection': 'close', // Disable keep-alive to avoid chunked encoding parsing issues
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
           'Sec-Fetch-Dest': 'document',
@@ -523,6 +524,7 @@ class UrlRecipeImporter {
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
           'Accept-Encoding': 'identity', // No compression - safest option
+          'Connection': 'close', // Disable keep-alive to avoid chunked encoding parsing issues
           'Referer': origin,
           'Origin': origin,
           'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
@@ -534,7 +536,6 @@ class UrlRecipeImporter {
           'Sec-Fetch-User': '?1',
           'Upgrade-Insecure-Requests': '1',
           'Cache-Control': 'max-age=0',
-          'Connection': 'keep-alive',
         },
         // Config 2: Googlebot (sites allow crawlers)
         {
@@ -542,6 +543,7 @@ class UrlRecipeImporter {
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
           'Accept-Encoding': 'identity',
+          'Connection': 'close',
         },
         // Config 3: Mobile Safari
         {
@@ -549,6 +551,7 @@ class UrlRecipeImporter {
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
           'Accept-Encoding': 'identity',
+          'Connection': 'close',
         },
         // Config 4: Firefox with minimal headers
         {
@@ -556,11 +559,13 @@ class UrlRecipeImporter {
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.5',
           'Accept-Encoding': 'identity',
+          'Connection': 'close',
         },
         // Config 5: Bare minimum headers
         {
           'User-Agent': 'Mozilla/5.0',
           'Accept': '*/*',
+          'Connection': 'close',
         },
       ];
       
@@ -4403,6 +4408,40 @@ class UrlRecipeImporter {
         name: name.replaceAll(RegExp(r'\*+$'), '').trim(),
         amount: '$primaryAmt $primaryUnit',
         preparation: prepParts.join(', '),
+      );
+    }
+    
+    // Handle Bon Appétit style: "1 28-oz./794-g can crushed tomatoes"
+    // Pattern: quantity + size-unit./size-metric + container + name
+    // e.g., "1 28-oz./794-g can crushed tomatoes" -> amount: "1 can (28-oz./794-g)", name: "crushed tomatoes"
+    // e.g., "1 12-oz./355-ml jar banana peppers" -> amount: "1 jar (12-oz./355-ml)", name: "banana peppers"
+    final quantitySizeContainerMatch = RegExp(
+      r'^(\d+)\s+([\d.]+)\s*[-–—−]?\s*(oz|ounces?)\.?\s*/\s*([\d.]+)\s*[-–—−]?\s*(g|grams?|ml|l)\s+(can|jar|bottle|package|pkg|box|bag|container|carton)\s+(.+)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (quantitySizeContainerMatch != null) {
+      final quantity = quantitySizeContainerMatch.group(1)?.trim() ?? '';
+      final sizeAmt = quantitySizeContainerMatch.group(2)?.trim() ?? '';
+      final sizeUnit = quantitySizeContainerMatch.group(3)?.trim() ?? '';
+      final metricAmt = quantitySizeContainerMatch.group(4)?.trim() ?? '';
+      final metricUnit = quantitySizeContainerMatch.group(5)?.trim() ?? '';
+      final container = quantitySizeContainerMatch.group(6)?.trim() ?? '';
+      final ingredientName = quantitySizeContainerMatch.group(7)?.trim() ?? '';
+      
+      // Normalize units
+      String normalizedSizeUnit = sizeUnit.toLowerCase();
+      if (normalizedSizeUnit.startsWith('ounce')) normalizedSizeUnit = 'oz';
+      
+      String normalizedMetricUnit = metricUnit.toLowerCase();
+      if (normalizedMetricUnit.startsWith('gram')) normalizedMetricUnit = 'g';
+      
+      // Format: amount = "1 can", preparation = "(28-oz./794-g)" or just the metric info
+      final sizeInfo = '$sizeAmt $normalizedSizeUnit / $metricAmt$normalizedMetricUnit';
+      
+      return Ingredient.create(
+        name: ingredientName,
+        amount: '$quantity $container',
+        preparation: sizeInfo,
       );
     }
     
