@@ -185,19 +185,19 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('System Default'),
             value: ThemeMode.system,
             groupValue: ref.watch(themeModeProvider),
-            onChanged: (m) => ref.read(themeModeProvider.notifier).state = m ?? ThemeMode.system,
+            onChanged: (m) => ref.read(themeModeProvider.notifier).setMode(m ?? ThemeMode.system),
           ),
           RadioListTile<ThemeMode>(
             title: const Text('Light'),
             value: ThemeMode.light,
             groupValue: ref.watch(themeModeProvider),
-            onChanged: (m) => ref.read(themeModeProvider.notifier).state = m ?? ThemeMode.system,
+            onChanged: (m) => ref.read(themeModeProvider.notifier).setMode(m ?? ThemeMode.system),
           ),
           RadioListTile<ThemeMode>(
             title: const Text('Dark'),
             value: ThemeMode.dark,
             groupValue: ref.watch(themeModeProvider),
-            onChanged: (m) => ref.read(themeModeProvider.notifier).state = m ?? ThemeMode.system,
+            onChanged: (m) => ref.read(themeModeProvider.notifier).setMode(m ?? ThemeMode.system),
           ),
           const Divider(),
           // Display section

@@ -78,7 +78,7 @@ class _SandwichDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: sandwich.isFavorite ? Colors.red : null,
+                  color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
                   shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,

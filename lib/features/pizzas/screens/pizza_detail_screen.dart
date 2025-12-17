@@ -78,7 +78,7 @@ class _PizzaDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: pizza.isFavorite ? Colors.red : null,
+                  color: pizza.isFavorite ? theme.colorScheme.secondary : null,
                   shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,

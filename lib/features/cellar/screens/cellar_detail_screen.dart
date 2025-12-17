@@ -52,7 +52,9 @@ class _CellarDetailView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     final hasImage = entry.imageUrl != null && entry.imageUrl!.isNotEmpty;
+    final showTextShadows = isDark || hasImage;
 
     return Scaffold(
       body: CustomScrollView(
@@ -64,12 +66,12 @@ class _CellarDetailView extends ConsumerWidget {
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 entry.name,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [
-                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    Shadow(blurRadius: 16, color: Colors.black54),
-                  ],
+                  shadows: showTextShadows ? [
+                    const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    const Shadow(blurRadius: 16, color: Colors.black54),
+                  ] : null,
                 ),
               ),
               background: _buildHeaderBackground(theme),
@@ -78,7 +80,7 @@ class _CellarDetailView extends ConsumerWidget {
               IconButton(
                 icon: Icon(
                   entry.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: entry.isFavorite ? Colors.red : null,
+                  color: entry.isFavorite ? theme.colorScheme.secondary : null,
                   shadows: hasImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,

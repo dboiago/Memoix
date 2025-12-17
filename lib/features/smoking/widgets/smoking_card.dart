@@ -264,23 +264,6 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
           const SizedBox(width: 12),
         ],
 
-        // Time
-        if (widget.recipe.time.isNotEmpty) ...[
-          Icon(
-            Icons.schedule_outlined,
-            size: 14,
-            color: theme.colorScheme.outline,
-          ),
-          const SizedBox(width: 4),
-          Text(
-            widget.recipe.time,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
-
         // Serves
         if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty) ...[
           Icon(
@@ -289,9 +272,26 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
             color: theme.colorScheme.outline,
           ),
           const SizedBox(width: 4),
+          Text(
+            'Serves ${widget.recipe.serves}',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(width: 12),
+        ],
+
+        // Time
+        if (widget.recipe.time.isNotEmpty) ...[
+          Icon(
+            Icons.schedule_outlined,
+            size: 14,
+            color: theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 4),
           Flexible(
             child: Text(
-              'Serves ${widget.recipe.serves}',
+              widget.recipe.time,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),

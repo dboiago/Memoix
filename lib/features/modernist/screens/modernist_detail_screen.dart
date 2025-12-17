@@ -58,10 +58,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   Widget _buildDetailView(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
+    final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
+    final showTextShadows = isDark || hasHeaderImage;
 
     return Scaffold(
       body: CustomScrollView(
@@ -74,12 +76,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 recipe.name,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [
-                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    Shadow(blurRadius: 16, color: Colors.black54),
-                  ],
+                  shadows: showTextShadows ? [
+                    const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    const Shadow(blurRadius: 16, color: Colors.black54),
+                  ] : null,
                 ),
               ),
               background: hasHeaderImage

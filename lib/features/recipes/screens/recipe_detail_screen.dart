@@ -98,10 +98,13 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     }
     
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl/imageUrls
     final headerImage = recipe.headerImage ?? recipe.getFirstImage();
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
+    // Only show text shadows on dark mode or when there's a header image
+    final showTextShadows = isDark || hasHeaderImage;
 
     return Scaffold(
       body: CustomScrollView(
@@ -114,12 +117,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 recipe.name,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [
-                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    Shadow(blurRadius: 16, color: Colors.black54),
-                  ],
+                  shadows: showTextShadows ? [
+                    const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    const Shadow(blurRadius: 16, color: Colors.black54),
+                  ] : null,
                 ),
               ),
               background: hasHeaderImage

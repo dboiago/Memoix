@@ -59,10 +59,12 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   Widget build(BuildContext context) {
     final recipe = widget.recipe;
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
+    final showTextShadows = isDark || hasHeaderImage;
 
         return CustomScrollView(
         controller: _scrollController,
@@ -74,12 +76,12 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 recipe.name,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: [
-                    Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    Shadow(blurRadius: 16, color: Colors.black54),
-                  ],
+                  shadows: showTextShadows ? [
+                    const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
+                    const Shadow(blurRadius: 16, color: Colors.black54),
+                  ] : null,
                 ),
               ),
               background: hasHeaderImage
@@ -110,7 +112,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: recipe.isFavorite ? Colors.red : null,
+                  color: recipe.isFavorite ? theme.colorScheme.secondary : null,
                   shadows: hasHeaderImage 
                       ? [const Shadow(blurRadius: 8, color: Colors.black54)]
                       : null,
