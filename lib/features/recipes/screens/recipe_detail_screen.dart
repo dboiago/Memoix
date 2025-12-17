@@ -107,12 +107,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final titleShadows = [
       Shadow(
         blurRadius: 8,
-        color: isDark ? Colors.black87 : Colors.white,
+        color: isDark ? Colors.black87 : Colors.white54,
         offset: isDark ? const Offset(0, 1) : Offset.zero,
       ),
       Shadow(
         blurRadius: 16,
-        color: isDark ? Colors.black54 : Colors.white70,
+        color: isDark ? Colors.black54 : Colors.white38,
       ),
     ];
 
