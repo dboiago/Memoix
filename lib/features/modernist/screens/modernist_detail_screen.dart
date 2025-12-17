@@ -63,7 +63,18 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    final showTextShadows = isDark || hasHeaderImage;
+    // Theme-aware shadows: black for dark mode, white glow for light mode
+    final titleShadows = [
+      Shadow(
+        blurRadius: 8,
+        color: isDark ? Colors.black87 : Colors.white,
+        offset: isDark ? const Offset(0, 1) : Offset.zero,
+      ),
+      Shadow(
+        blurRadius: 16,
+        color: isDark ? Colors.black54 : Colors.white70,
+      ),
+    ];
 
     return Scaffold(
       body: CustomScrollView(
@@ -78,10 +89,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 recipe.name,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: showTextShadows ? [
-                    const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    const Shadow(blurRadius: 16, color: Colors.black54),
-                  ] : null,
+                  shadows: titleShadows,
                 ),
               ),
               background: hasHeaderImage

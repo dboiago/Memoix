@@ -54,7 +54,18 @@ class _CheeseDetailView extends ConsumerWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final hasImage = entry.imageUrl != null && entry.imageUrl!.isNotEmpty;
-    final showTextShadows = isDark || hasImage;
+    // Theme-aware shadows: black for dark mode, white glow for light mode
+    final titleShadows = [
+      Shadow(
+        blurRadius: 8,
+        color: isDark ? Colors.black87 : Colors.white,
+        offset: isDark ? const Offset(0, 1) : Offset.zero,
+      ),
+      Shadow(
+        blurRadius: 16,
+        color: isDark ? Colors.black54 : Colors.white70,
+      ),
+    ];
 
     return Scaffold(
       body: CustomScrollView(
@@ -68,10 +79,7 @@ class _CheeseDetailView extends ConsumerWidget {
                 entry.name,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  shadows: showTextShadows ? [
-                    const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-                    const Shadow(blurRadius: 16, color: Colors.black54),
-                  ] : null,
+                  shadows: titleShadows,
                 ),
               ),
               background: _buildHeaderBackground(theme),
