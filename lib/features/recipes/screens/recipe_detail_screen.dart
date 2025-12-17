@@ -267,6 +267,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       // Extra bottom padding for spacing between chips and ingredients/directions
       padding: const EdgeInsets.fromLTRB(8, 6, 8, 12),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Main metadata chips
@@ -306,27 +307,28 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             ],
           ),
           // "Pairs With" chips on a separate line
-          if (recipe.pairsWith.isNotEmpty) ...[
-            const SizedBox(height: 6),
-            Wrap(
-              spacing: 6,
-              runSpacing: 4,
-              children: recipe.pairsWith
-                  .map((p) => ActionChip(
-                        label: Text('↔ $p'),
-                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                        labelStyle: TextStyle(
-                          fontSize: chipFontSize,
-                          color: theme.colorScheme.onSurface,
-                        ),
-                        visualDensity: VisualDensity.compact,
-                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        padding: EdgeInsets.zero,
-                        onPressed: () => _navigateToPairedRecipe(context, ref, p),
-                      ))
-                  .toList(),
+          if (recipe.pairsWith.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(top: 6),
+              child: Wrap(
+                spacing: 6,
+                runSpacing: 4,
+                children: recipe.pairsWith
+                    .map((p) => ActionChip(
+                          label: Text('↔ $p'),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(
+                            fontSize: chipFontSize,
+                            color: theme.colorScheme.onSurface,
+                          ),
+                          visualDensity: VisualDensity.compact,
+                          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          padding: EdgeInsets.zero,
+                          onPressed: () => _navigateToPairedRecipe(context, ref, p),
+                        ))
+                    .toList(),
+              ),
             ),
-          ],
         ],
       ),
     );
