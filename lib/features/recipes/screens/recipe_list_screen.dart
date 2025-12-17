@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -161,30 +162,52 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                 Container(
                   height: 48,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      _buildCuisineChip('All', recipes.length, isAllChip: true),
-                      ..._getAvailableBaseSpirits(recipes).map((base) {
-                        final count = recipes.where((r) => r.subcategory == base).length;
-                        return _buildCuisineChip(Spirit.toDisplayName(base), count, rawValue: base);
-                      }),
-                    ],
+                  child: ScrollConfiguration(
+                    // Enable drag scrolling on all platforms without scrollbar
+                    behavior: ScrollConfiguration.of(context).copyWith(
+                      scrollbars: false,
+                      dragDevices: {
+                        PointerDeviceKind.touch,
+                        PointerDeviceKind.mouse,
+                        PointerDeviceKind.trackpad,
+                      },
+                    ),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        _buildCuisineChip('All', recipes.length, isAllChip: true),
+                        ..._getAvailableBaseSpirits(recipes).map((base) {
+                          final count = recipes.where((r) => r.subcategory == base).length;
+                          return _buildCuisineChip(Spirit.toDisplayName(base), count, rawValue: base);
+                        }),
+                      ],
+                    ),
                   ),
                 )
               else if (availableCuisines.isNotEmpty)
                 Container(
                   height: 48,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      _buildCuisineChip('All', recipes.length, isAllChip: true),
-                      ...availableCuisines.map((cuisine) {
-                        final count = recipes.where((r) => r.cuisine?.toLowerCase() == cuisine.toLowerCase()).length;
-                        return _buildCuisineChip(_displayCuisine(cuisine), count, rawValue: cuisine);
-                      }),
-                    ],
+                  child: ScrollConfiguration(
+                    // Enable drag scrolling on all platforms without scrollbar
+                    behavior: ScrollConfiguration.of(context).copyWith(
+                      scrollbars: false,
+                      dragDevices: {
+                        PointerDeviceKind.touch,
+                        PointerDeviceKind.mouse,
+                        PointerDeviceKind.trackpad,
+                      },
+                    ),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        _buildCuisineChip('All', recipes.length, isAllChip: true),
+                        ...availableCuisines.map((cuisine) {
+                          final count = recipes.where((r) => r.cuisine?.toLowerCase() == cuisine.toLowerCase()).length;
+                          return _buildCuisineChip(_displayCuisine(cuisine), count, rawValue: cuisine);
+                        }),
+                      ],
+                    ),
                   ),
                 ),
 

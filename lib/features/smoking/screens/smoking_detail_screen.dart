@@ -6,6 +6,7 @@ import 'package:uuid/uuid.dart';
 import '../../../app/theme/colors.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
+import '../widgets/split_smoking_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../settings/screens/settings_screen.dart';
 import 'smoking_edit_screen.dart';
@@ -57,8 +58,217 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
 
   @override
   Widget build(BuildContext context) {
+    final useSideBySide = ref.watch(useSideBySideProvider);
     final recipe = widget.recipe;
     final theme = Theme.of(context);
+    
+    // Use side-by-side layout when enabled
+    if (useSideBySide && recipe.directions.isNotEmpty) {
+      return _buildSideBySideLayout(context, theme, recipe);
+    }
+    
+    return _buildStandardLayout(context, theme, recipe);
+  }
+
+  Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, SmokingRecipe recipe) {
+    final headerImage = recipe.headerImage ?? recipe.imageUrl;
+    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final hasStepImages = recipe.stepImages.isNotEmpty;
+    final isCompact = MediaQuery.sizeOf(context).width < 600;
+    final chipFontSize = isCompact ? 11.0 : 12.0;
+
+    return Scaffold(
+      body: NestedScrollView(
+        controller: _scrollController,
+        headerSliverBuilder: (context, innerBoxIsScrolled) {
+          return [
+            SliverAppBar(
+              expandedHeight: hasHeaderImage ? 180 : 100,
+              pinned: true,
+              actions: innerBoxIsScrolled ? null : _buildAppBarActions(context, recipe, theme),
+              flexibleSpace: LayoutBuilder(
+                builder: (context, constraints) {
+                  final maxHeight = hasHeaderImage ? 180.0 : 100.0;
+                  final minHeight = kToolbarHeight + MediaQuery.of(context).padding.top;
+                  final collapseRatio = ((maxHeight - constraints.maxHeight) / (maxHeight - minHeight)).clamp(0.0, 1.0);
+                  final isNarrow = constraints.maxWidth < 400;
+                  final fontSize = isNarrow 
+                      ? 14.0 + (6.0 * (1 - collapseRatio))
+                      : 18.0 + (4.0 * (1 - collapseRatio));
+                  
+                  return FlexibleSpaceBar(
+                    title: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                      ),
+                      maxLines: collapseRatio > 0.5 ? 1 : 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    titlePadding: EdgeInsetsDirectional.only(
+                      start: 56,
+                      bottom: 16,
+                      end: innerBoxIsScrolled ? 16 : 160,
+                    ),
+                    background: hasHeaderImage
+                        ? Stack(
+                            fit: StackFit.expand,
+                            children: [
+                              _buildSingleImage(context, headerImage!),
+                              const DecoratedBox(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [Colors.transparent, Colors.black54],
+                                    stops: [0.5, 1.0],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
+                        : Container(color: theme.colorScheme.surfaceContainerHighest),
+                  );
+                },
+              ),
+            ),
+            
+            // Compact metadata bar
+            SliverToBoxAdapter(
+              child: Container(
+                color: theme.colorScheme.surface,
+                padding: const EdgeInsets.fromLTRB(8, 6, 8, 12),
+                child: Wrap(
+                  spacing: 6,
+                  runSpacing: 4,
+                  children: [
+                    if (recipe.category != null)
+                      Chip(
+                        avatar: Container(
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                            color: MemoixColors.forSmokedItemDot(recipe.category),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        label: Text(recipe.category!),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                    if (recipe.temperature.isNotEmpty)
+                      Chip(
+                        avatar: Icon(Icons.thermostat, size: 12, color: theme.colorScheme.onSurface),
+                        label: Text(recipe.temperature),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                    if (recipe.time.isNotEmpty)
+                      Chip(
+                        avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+                        label: Text(recipe.time),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                    if (recipe.wood.isNotEmpty)
+                      Chip(
+                        avatar: Icon(Icons.park, size: 12, color: theme.colorScheme.onSurface),
+                        label: Text(recipe.wood),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                    if (recipe.serves != null && recipe.serves!.isNotEmpty)
+                      Chip(
+                        avatar: Icon(Icons.people_outline, size: 12, color: theme.colorScheme.onSurface),
+                        label: Text('Serves ${recipe.serves}'),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ];
+        },
+        body: SplitSmokingView(
+          recipe: recipe,
+          onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+        ),
+      ),
+    );
+  }
+
+  List<Widget> _buildAppBarActions(BuildContext context, SmokingRecipe recipe, ThemeData theme) {
+    return [
+      IconButton(
+        icon: Icon(
+          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavorite ? theme.colorScheme.secondary : null,
+        ),
+        onPressed: () {
+          ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.check_circle_outline),
+        tooltip: 'I made this',
+        onPressed: () async {
+          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+            );
+          }
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.share),
+        onPressed: () => _shareRecipe(context, ref, recipe),
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) {
+          switch (value) {
+            case 'edit':
+              _editRecipe(context, recipe);
+              break;
+            case 'duplicate':
+              _duplicateRecipe(context, ref, recipe);
+              break;
+            case 'delete':
+              _confirmDelete(context, ref, recipe);
+              break;
+          }
+        },
+        itemBuilder: (ctx) => [
+          const PopupMenuItem(value: 'edit', child: Text('Edit')),
+          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text('Delete', style: TextStyle(color: theme.colorScheme.secondary)),
+          ),
+        ],
+        icon: const Icon(Icons.more_vert),
+      ),
+    ];
+  }
+
+  Widget _buildStandardLayout(BuildContext context, ThemeData theme, SmokingRecipe recipe) {
     final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;

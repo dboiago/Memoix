@@ -264,40 +264,69 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     
     return Container(
       color: theme.colorScheme.surface,
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-      child: Wrap(
-        spacing: 6,
-        runSpacing: 4,
+      // Extra bottom padding for spacing between chips and ingredients/directions
+      padding: const EdgeInsets.fromLTRB(8, 6, 8, 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (recipe.cuisine != null)
-            Chip(
-              label: Text(Cuisine.toAdjective(recipe.cuisine)),
-              backgroundColor: theme.colorScheme.surfaceContainerHighest,
-              labelStyle: TextStyle(fontSize: chipFontSize),
-              visualDensity: VisualDensity.compact,
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              padding: EdgeInsets.zero,
+          // Main metadata chips
+          Wrap(
+            spacing: 6,
+            runSpacing: 4,
+            children: [
+              if (recipe.cuisine != null)
+                Chip(
+                  label: Text(Cuisine.toAdjective(recipe.cuisine)),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  labelStyle: TextStyle(fontSize: chipFontSize),
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  padding: EdgeInsets.zero,
+                ),
+              if (recipe.serves != null && recipe.serves!.isNotEmpty)
+                Chip(
+                  avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+                  label: Text(_formatServes(recipe.serves!)),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  labelStyle: TextStyle(fontSize: chipFontSize),
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  padding: EdgeInsets.zero,
+                ),
+              if (recipe.time != null && recipe.time!.isNotEmpty)
+                Chip(
+                  avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+                  label: Text(recipe.time!),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  labelStyle: TextStyle(fontSize: chipFontSize),
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  padding: EdgeInsets.zero,
+                ),
+            ],
+          ),
+          // "Pairs With" chips on a separate line
+          if (recipe.pairsWith.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              children: recipe.pairsWith
+                  .map((p) => ActionChip(
+                        label: Text('↔ $p'),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(
+                          fontSize: chipFontSize,
+                          color: theme.colorScheme.onSurface,
+                        ),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                        onPressed: () => _navigateToPairedRecipe(context, ref, p),
+                      ))
+                  .toList(),
             ),
-          if (recipe.serves != null && recipe.serves!.isNotEmpty)
-            Chip(
-              avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(_formatServes(recipe.serves!)),
-              backgroundColor: theme.colorScheme.surfaceContainerHighest,
-              labelStyle: TextStyle(fontSize: chipFontSize),
-              visualDensity: VisualDensity.compact,
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              padding: EdgeInsets.zero,
-            ),
-          if (recipe.time != null && recipe.time!.isNotEmpty)
-            Chip(
-              avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(recipe.time!),
-              backgroundColor: theme.colorScheme.surfaceContainerHighest,
-              labelStyle: TextStyle(fontSize: chipFontSize),
-              visualDensity: VisualDensity.compact,
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              padding: EdgeInsets.zero,
-            ),
+          ],
         ],
       ),
     );

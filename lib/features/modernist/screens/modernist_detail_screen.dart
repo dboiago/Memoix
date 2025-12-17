@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../settings/screens/settings_screen.dart';
-import '../../recipes/widgets/split_recipe_view.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
+import '../widgets/split_modernist_view.dart';
 import 'modernist_edit_screen.dart';
 
 /// Detail screen for viewing a modernist recipe - follows Mains pattern exactly
@@ -60,6 +60,182 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   Widget _buildDetailView(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
+    final useSideBySide = ref.watch(useSideBySideProvider);
+    
+    // Use side-by-side layout when enabled
+    if (useSideBySide) {
+      return _buildSideBySideLayout(context, theme, recipe);
+    }
+    
+    return _buildStandardLayout(context, theme, recipe);
+  }
+
+  Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
+    final headerImage = recipe.headerImage ?? recipe.imageUrl;
+    final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
+    final hasStepImages = recipe.stepImages.isNotEmpty;
+    final isCompact = MediaQuery.sizeOf(context).width < 600;
+    final chipFontSize = isCompact ? 11.0 : 12.0;
+
+    return Scaffold(
+      body: NestedScrollView(
+        controller: _scrollController,
+        headerSliverBuilder: (context, innerBoxIsScrolled) {
+          return [
+            SliverAppBar(
+              expandedHeight: hasHeaderImage ? 180 : 100,
+              pinned: true,
+              actions: innerBoxIsScrolled ? null : _buildAppBarActions(context, recipe, theme),
+              flexibleSpace: LayoutBuilder(
+                builder: (context, constraints) {
+                  final maxHeight = hasHeaderImage ? 180.0 : 100.0;
+                  final minHeight = kToolbarHeight + MediaQuery.of(context).padding.top;
+                  final collapseRatio = ((maxHeight - constraints.maxHeight) / (maxHeight - minHeight)).clamp(0.0, 1.0);
+                  final isNarrow = constraints.maxWidth < 400;
+                  final fontSize = isNarrow 
+                      ? 14.0 + (6.0 * (1 - collapseRatio))
+                      : 18.0 + (4.0 * (1 - collapseRatio));
+                  
+                  return FlexibleSpaceBar(
+                    title: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                      ),
+                      maxLines: collapseRatio > 0.5 ? 1 : 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    titlePadding: EdgeInsetsDirectional.only(
+                      start: 56,
+                      bottom: 16,
+                      end: innerBoxIsScrolled ? 16 : 160,
+                    ),
+                    background: hasHeaderImage
+                        ? Stack(
+                            fit: StackFit.expand,
+                            children: [
+                              _buildSingleImage(headerImage!),
+                              const DecoratedBox(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [Colors.transparent, Colors.black54],
+                                    stops: [0.5, 1.0],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
+                        : Container(color: theme.colorScheme.surfaceContainerHighest),
+                  );
+                },
+              ),
+            ),
+            
+            // Compact metadata bar
+            SliverToBoxAdapter(
+              child: Container(
+                color: theme.colorScheme.surface,
+                padding: const EdgeInsets.fromLTRB(8, 6, 8, 12),
+                child: Wrap(
+                  spacing: 6,
+                  runSpacing: 4,
+                  children: [
+                    Chip(
+                      label: Text(recipe.type.displayName),
+                      backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                      labelStyle: TextStyle(fontSize: chipFontSize),
+                      visualDensity: VisualDensity.compact,
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      padding: EdgeInsets.zero,
+                    ),
+                    if (recipe.technique != null && recipe.technique!.isNotEmpty)
+                      Chip(
+                        label: Text(recipe.technique!),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                    if (recipe.serves != null && recipe.serves!.isNotEmpty)
+                      Chip(
+                        avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+                        label: Text(recipe.serves!),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                    if (recipe.time != null && recipe.time!.isNotEmpty)
+                      Chip(
+                        avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+                        label: Text(recipe.time!),
+                        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                        labelStyle: TextStyle(fontSize: chipFontSize),
+                        visualDensity: VisualDensity.compact,
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ];
+        },
+        body: SplitModernistView(
+          recipe: recipe,
+          onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+        ),
+      ),
+    );
+  }
+
+  List<Widget> _buildAppBarActions(BuildContext context, ModernistRecipe recipe, ThemeData theme) {
+    return [
+      IconButton(
+        icon: Icon(
+          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavorite ? theme.colorScheme.primary : null,
+        ),
+        onPressed: () {
+          ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+          ref.invalidate(modernistRecipeProvider(widget.recipeId));
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.check_circle_outline),
+        tooltip: 'I made this',
+        onPressed: () {
+          ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+          ref.invalidate(modernistRecipeProvider(widget.recipeId));
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+          );
+        },
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) => _handleMenuAction(value, recipe),
+        itemBuilder: (_) => [
+          const PopupMenuItem(value: 'edit', child: Text('Edit')),
+          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text(
+              'Delete',
+              style: TextStyle(color: theme.colorScheme.secondary),
+            ),
+          ),
+        ],
+        icon: const Icon(Icons.more_vert),
+      ),
+    ];
+  }
+
+  Widget _buildStandardLayout(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
     final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
