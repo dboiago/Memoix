@@ -216,8 +216,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     titlePadding: EdgeInsetsDirectional.only(
                       start: 56,
                       bottom: 16,
-                      // Reduce end padding when collapsed (no actions)
-                      end: innerBoxIsScrolled ? 16 : 160,
+                      // Reduce end padding when collapsed, or use responsive value when expanded
+                      end: innerBoxIsScrolled ? 16 : (constraints.maxWidth < 400 ? 140 : 180),
                     ),
                     background: hasHeaderImage
                         ? Stack(

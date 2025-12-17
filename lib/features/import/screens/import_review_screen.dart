@@ -678,8 +678,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                       ),
                     ],
                     const SizedBox(width: 8),
-                    SizedBox(
-                      width: 80,
+                    Expanded(
+                      flex: 2,
                       child: Text('Amount', 
                         style: theme.textTheme.labelMedium?.copyWith(
                           fontWeight: FontWeight.bold,
@@ -688,7 +688,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     ),
                     const SizedBox(width: 8),
                     Expanded(
-                      flex: 2,
+                      flex: 3,
                       child: Text('Notes/Prep', 
                         style: theme.textTheme.labelMedium?.copyWith(
                           fontWeight: FontWeight.bold,
@@ -831,8 +831,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                           ],
                           const SizedBox(width: 8),
                           // Amount
-                          SizedBox(
-                            width: 80,
+                          Expanded(
+                            flex: 2,
                             child: InputDecorator(
                               decoration: const InputDecoration(
                                 isDense: true,
@@ -851,7 +851,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                           const SizedBox(width: 8),
                           // Notes/Prep
                           Expanded(
-                            flex: 2,
+                            flex: 3,
                             child: InputDecorator(
                               decoration: const InputDecoration(
                                 isDense: true,

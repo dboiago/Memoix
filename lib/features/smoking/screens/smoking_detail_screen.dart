@@ -109,7 +109,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     titlePadding: EdgeInsetsDirectional.only(
                       start: 56,
                       bottom: 16,
-                      end: innerBoxIsScrolled ? 16 : 160,
+                      // 4 action icons need ~180px when expanded, but use less on narrow screens
+                      end: innerBoxIsScrolled ? 16 : (constraints.maxWidth < 400 ? 140 : 180),
                     ),
                     background: hasHeaderImage
                         ? Stack(

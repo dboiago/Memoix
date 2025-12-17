@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../settings/screens/settings_screen.dart';
+import '../../sharing/services/share_service.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import '../widgets/split_modernist_view.dart';
@@ -109,7 +110,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     titlePadding: EdgeInsetsDirectional.only(
                       start: 56,
                       bottom: 16,
-                      end: innerBoxIsScrolled ? 16 : 160,
+                      // 3 action icons need ~140px when expanded
+                      end: innerBoxIsScrolled ? 16 : (constraints.maxWidth < 400 ? 120 : 140),
                     ),
                     background: hasHeaderImage
                         ? Stack(
@@ -216,6 +218,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             SnackBar(content: Text('Logged cook for ${recipe.name}!')),
           );
         },
+      ),
+      IconButton(
+        icon: const Icon(Icons.share),
+        onPressed: () => _shareRecipe(context, recipe),
       ),
       PopupMenuButton<String>(
         onSelected: (value) => _handleMenuAction(value, recipe),
@@ -1035,6 +1041,73 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         }
         break;
     }
+  }
+
+  void _shareRecipe(BuildContext context, ModernistRecipe recipe) {
+    final shareService = ref.read(shareServiceProvider);
+    final theme = Theme.of(context);
+    
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Share "${recipe.name}"',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.qr_code, color: theme.colorScheme.primary),
+              title: const Text('Show QR Code'),
+              subtitle: const Text('Others can scan to import'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.showModernistQrCode(context, recipe);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.share, color: theme.colorScheme.primary),
+              title: const Text('Share Link'),
+              subtitle: const Text('Send via any app'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareModernistRecipe(recipe);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.content_copy, color: theme.colorScheme.primary),
+              title: const Text('Copy Link'),
+              subtitle: const Text('Copy to clipboard'),
+              onTap: () async {
+                Navigator.pop(ctx);
+                await shareService.copyModernistShareLink(recipe);
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Link copied to clipboard!')),
+                  );
+                }
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.text_snippet, color: theme.colorScheme.primary),
+              title: const Text('Share as Text'),
+              subtitle: const Text('Full recipe in plain text'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareModernistAsText(recipe);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
   }
 }
 

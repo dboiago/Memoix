@@ -773,8 +773,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Ingredient/Seasoning name with autocomplete
-            SizedBox(
-              width: 120,
+            Expanded(
+              flex: 3,
               child: Autocomplete<String>(
                 initialValue: TextEditingValue(text: seasoning.nameController.text),
                 optionsBuilder: (textEditingValue) {
@@ -849,8 +849,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
             const SizedBox(width: 8),
             
             // Amount
-            SizedBox(
-              width: 80,
+            Expanded(
+              flex: 2,
               child: TextField(
                 controller: seasoning.amountController,
                 decoration: InputDecoration(

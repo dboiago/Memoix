@@ -10,6 +10,7 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/models/sandwich.dart';
 import '../../smoking/models/smoking_recipe.dart';
+import '../../modernist/models/modernist_recipe.dart';
 
 /// Service for sharing and importing recipes
 class ShareService {
@@ -514,6 +515,141 @@ class ShareService {
           TextButton(
             onPressed: () async {
               await copySmokingShareLink(recipe);
+              if (ctx.mounted) {
+                Navigator.pop(ctx);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Link copied to clipboard')),
+                );
+              }
+            },
+            child: const Text('Copy Link'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Done'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // === MODERNIST SHARING ===
+
+  /// Generate a shareable link for a modernist recipe
+  String generateModernistShareLink(ModernistRecipe recipe) {
+    final json = recipe.toShareableJson();
+    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    return 'memoix://modernist/$encoded';
+  }
+
+  /// Share a modernist recipe via system share sheet
+  Future<void> shareModernistRecipe(ModernistRecipe recipe) async {
+    final link = generateModernistShareLink(recipe);
+    
+    await Share.share(
+      'Check out this modernist recipe: ${recipe.name}\n\n$link',
+      subject: 'Modernist: ${recipe.name}',
+    );
+  }
+
+  /// Share modernist recipe as plain text
+  Future<void> shareModernistAsText(ModernistRecipe recipe) async {
+    final buffer = StringBuffer();
+    
+    buffer.writeln('# ${recipe.name}');
+    buffer.writeln();
+    buffer.writeln('Type: ${recipe.type.displayName}');
+    if (recipe.technique != null && recipe.technique!.isNotEmpty) {
+      buffer.writeln('Technique: ${recipe.technique}');
+    }
+    if (recipe.serves != null && recipe.serves!.isNotEmpty) {
+      buffer.writeln('Serves: ${recipe.serves}');
+    }
+    if (recipe.time != null && recipe.time!.isNotEmpty) {
+      buffer.writeln('Time: ${recipe.time}');
+    }
+    
+    if (recipe.equipment.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Equipment');
+      for (final item in recipe.equipment) {
+        buffer.writeln('- $item');
+      }
+    }
+    
+    if (recipe.ingredients.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Ingredients');
+      for (final ingredient in recipe.ingredients) {
+        buffer.writeln('- ${ingredient.displayText}');
+      }
+    }
+    
+    if (recipe.directions.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Directions');
+      for (int i = 0; i < recipe.directions.length; i++) {
+        buffer.writeln('${i + 1}. ${recipe.directions[i]}');
+      }
+    }
+    
+    if (recipe.scienceNotes != null && recipe.scienceNotes!.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Science Notes');
+      buffer.writeln(recipe.scienceNotes);
+    }
+    
+    if (recipe.notes != null && recipe.notes!.isNotEmpty) {
+      buffer.writeln();
+      buffer.writeln('## Notes');
+      buffer.writeln(recipe.notes);
+    }
+    
+    buffer.writeln();
+    buffer.writeln('---');
+    buffer.writeln('Shared from Memoix');
+    
+    await Share.share(buffer.toString(), subject: recipe.name);
+  }
+
+  /// Copy modernist recipe share link to clipboard
+  Future<void> copyModernistShareLink(ModernistRecipe recipe) async {
+    final link = generateModernistShareLink(recipe);
+    await Clipboard.setData(ClipboardData(text: link));
+  }
+
+  /// Show QR code dialog for modernist recipe sharing
+  void showModernistQrCode(BuildContext context, ModernistRecipe recipe) {
+    final link = generateModernistShareLink(recipe);
+    
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text('Share ${recipe.name}'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 200,
+              height: 200,
+              child: QrImageView(
+                data: link,
+                version: QrVersions.auto,
+                backgroundColor: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Scan this QR code with another\nMemoix app to import this recipe',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              await copyModernistShareLink(recipe);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
                 ScaffoldMessenger.of(context).showSnackBar(

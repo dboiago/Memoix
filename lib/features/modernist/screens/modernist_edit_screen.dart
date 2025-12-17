@@ -522,8 +522,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             children: [
               // Space for drag handle
               const SizedBox(width: 32),
-              SizedBox(
-                width: 120,
+              Expanded(
+                flex: 3,
                 child: Text('Ingredient',
                   style: theme.textTheme.labelMedium?.copyWith(
                     fontWeight: FontWeight.bold,
@@ -531,8 +531,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                 ),
               ),
               const SizedBox(width: 8),
-              SizedBox(
-                width: 80,
+              Expanded(
+                flex: 2,
                 child: Text('Amount',
                   style: theme.textTheme.labelMedium?.copyWith(
                     fontWeight: FontWeight.bold,
@@ -541,6 +541,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               ),
               const SizedBox(width: 8),
               Expanded(
+                flex: 3,
                 child: Text('Notes/Prep',
                   style: theme.textTheme.labelMedium?.copyWith(
                     fontWeight: FontWeight.bold,
@@ -693,8 +694,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ),
 
           // Ingredient name
-          SizedBox(
-            width: 120,
+          Expanded(
+            flex: 3,
             child: Autocomplete<String>(
               optionsBuilder: (value) =>
                   ModernistIngredients.getSuggestions(value.text),
@@ -731,8 +732,8 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           const SizedBox(width: 8),
 
           // Amount
-          SizedBox(
-            width: 80,
+          Expanded(
+            flex: 2,
             child: TextField(
               controller: row.amountController,
               decoration: InputDecoration(
@@ -752,6 +753,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
           // Notes
           Expanded(
+            flex: 3,
             child: TextField(
               controller: row.notesController,
               decoration: InputDecoration(
