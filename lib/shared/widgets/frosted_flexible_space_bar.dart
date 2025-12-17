@@ -1,32 +1,32 @@
 import 'package:flutter/material.dart';
 
 /// Helper to build title shadows for header text over images.
-/// Subtle, diffused shadow for readability plus black outline/stroke.
+/// Subtle, diffused shadow for readability plus soft outline.
 List<Shadow> buildTitleShadows(bool isDark) {
   return [
     // Soft diffused shadow
     Shadow(offset: const Offset(0, 2), blurRadius: 12, color: Colors.black.withOpacity(0.4)),
     Shadow(offset: const Offset(0, 1), blurRadius: 3, color: Colors.black.withOpacity(0.3)),
-    // Black outline/stroke (no blur, offset in all directions)
-    const Shadow(offset: Offset(-1, -1), blurRadius: 0, color: Colors.black54),
-    const Shadow(offset: Offset(1, -1), blurRadius: 0, color: Colors.black54),
-    const Shadow(offset: Offset(-1, 1), blurRadius: 0, color: Colors.black54),
-    const Shadow(offset: Offset(1, 1), blurRadius: 0, color: Colors.black54),
+    // Soft outline (slight blur to blend, low opacity for subtlety)
+    Shadow(offset: const Offset(-0.5, -0.5), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
+    Shadow(offset: const Offset(0.5, -0.5), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
+    Shadow(offset: const Offset(-0.5, 0.5), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
+    Shadow(offset: const Offset(0.5, 0.5), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
   ];
 }
 
 /// Helper to build icon shadows for header icons over images.
-/// Lighter version suitable for icons plus black outline/stroke.
+/// Lighter version suitable for icons plus soft outline.
 List<Shadow> buildIconShadows(bool isDark) {
   return [
     // Soft diffused shadow
     Shadow(offset: const Offset(0, 1), blurRadius: 6, color: Colors.black.withOpacity(0.4)),
     Shadow(offset: const Offset(0, 1), blurRadius: 2, color: Colors.black.withOpacity(0.3)),
-    // Black outline/stroke (no blur, offset in all directions)
-    const Shadow(offset: Offset(-1, 0), blurRadius: 0, color: Colors.black54),
-    const Shadow(offset: Offset(1, 0), blurRadius: 0, color: Colors.black54),
-    const Shadow(offset: Offset(0, -1), blurRadius: 0, color: Colors.black54),
-    const Shadow(offset: Offset(0, 1), blurRadius: 0, color: Colors.black54),
+    // Soft outline (slight blur to blend, low opacity for subtlety)
+    Shadow(offset: const Offset(-0.5, 0), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
+    Shadow(offset: const Offset(0.5, 0), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
+    Shadow(offset: const Offset(0, -0.5), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
+    Shadow(offset: const Offset(0, 0.5), blurRadius: 1, color: Colors.black.withOpacity(0.25)),
   ];
 }
 
