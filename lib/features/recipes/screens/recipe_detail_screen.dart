@@ -108,14 +108,17 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ? [
             const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
             const Shadow(blurRadius: 16, color: Colors.black54),
+            // Black stroke for definition
+            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(-1, -1)),
+            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(1, 1)),
           ]
         : [
             // Soft white halo for glow
             const Shadow(blurRadius: 4, color: Colors.white),
             const Shadow(blurRadius: 8, color: Colors.white70),
             // Black stroke for definition
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-0.5, -0.5)),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(0.5, 0.5)),
+            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-1, -1)),
+            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(1, 1)),
           ];
     // Icon shadows: crisp version for smaller elements
     final iconShadows = isDark 
