@@ -41,63 +41,88 @@ class SplitSmokingView extends StatelessWidget {
     final isCompact = screenWidth < 600;
     final dividerPadding = isCompact ? 4.0 : 8.0;
     final headerHeight = isCompact ? 36.0 : 44.0;
+    final padding = isCompact ? 8.0 : 12.0;
+    final headerStyle = isCompact
+        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
+        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+    return Column(
       children: [
-        // Ingredients Column - wrapped in ClipRect to prevent scrollbar overflow
-        Expanded(
-          flex: _getIngredientsFlex(screenWidth),
-          child: ClipRect(
-            child: ScrollbarTheme(
-              data: ScrollbarThemeData(
-                thickness: WidgetStateProperty.all(2.0),
-              ),
-              child: _IngredientsColumn(
-                recipe: recipe,
-                isCompact: isCompact,
-              ),
-            ),
-          ),
-        ),
-
-        // Vertical Divider - starts below header area with matching background
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: dividerPadding),
-          child: Column(
+        // Fixed header row - not scrollable
+        Container(
+          color: theme.colorScheme.surface,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Spacer to match header height - use surface color to match headers
-              Container(
-                height: headerHeight,
-                width: 1,
-                color: theme.colorScheme.surface,
-              ),
-              // The actual divider line
+              // Ingredients header
               Expanded(
+                flex: _getIngredientsFlex(screenWidth),
                 child: Container(
-                  width: 1,
-                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                  height: headerHeight,
+                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text('Ingredients', style: headerStyle),
+                ),
+              ),
+              // Divider spacer
+              SizedBox(width: dividerPadding * 2 + 1),
+              // Directions header
+              Expanded(
+                flex: _getDirectionsFlex(screenWidth),
+                child: Container(
+                  height: headerHeight,
+                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text('Directions', style: headerStyle),
                 ),
               ),
             ],
           ),
         ),
-
-        // Directions Column - wrapped in ClipRect to prevent scrollbar overflow
+        // Scrollable content row
         Expanded(
-          flex: _getDirectionsFlex(screenWidth),
-          child: ClipRect(
-            child: ScrollbarTheme(
-              data: ScrollbarThemeData(
-                thickness: WidgetStateProperty.all(2.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Ingredients Column
+              Expanded(
+                flex: _getIngredientsFlex(screenWidth),
+                child: ScrollbarTheme(
+                  data: ScrollbarThemeData(
+                    thickness: WidgetStateProperty.all(2.0),
+                  ),
+                  child: _IngredientsColumn(
+                    recipe: recipe,
+                    isCompact: isCompact,
+                  ),
+                ),
               ),
-              child: _DirectionsColumn(
-                directions: recipe.directions,
-                recipe: recipe,
-                onScrollToImage: onScrollToImage,
-                isCompact: isCompact,
+
+              // Vertical Divider
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: dividerPadding),
+                child: Container(
+                  width: 1,
+                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                ),
               ),
-            ),
+
+              // Directions Column
+              Expanded(
+                flex: _getDirectionsFlex(screenWidth),
+                child: ScrollbarTheme(
+                  data: ScrollbarThemeData(
+                    thickness: WidgetStateProperty.all(2.0),
+                  ),
+                  child: _DirectionsColumn(
+                    directions: recipe.directions,
+                    recipe: recipe,
+                    onScrollToImage: onScrollToImage,
+                    isCompact: isCompact,
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ],
@@ -126,44 +151,12 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final padding = widget.isCompact ? 8.0 : 12.0;
-    final headerStyle = widget.isCompact
-        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
-        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
-    return CustomScrollView(
+    return ListView(
       primary: false,
       physics: const ClampingScrollPhysics(),
-      slivers: [
-        // Sticky Header
-        SliverPersistentHeader(
-          pinned: true,
-          delegate: _StickyHeaderDelegate(
-            minHeight: widget.isCompact ? 36.0 : 44.0,
-            maxHeight: widget.isCompact ? 36.0 : 44.0,
-            child: Container(
-              color: theme.colorScheme.surface,
-              padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-              alignment: Alignment.centerLeft,
-              child: Text('Ingredients', style: headerStyle),
-            ),
-          ),
-        ),
-
-        // Ingredients List
-        SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: padding),
-          sliver: SliverList(
-            delegate: SliverChildListDelegate(
-              _buildIngredientsList(context),
-            ),
-          ),
-        ),
-
-        // Bottom padding
-        const SliverToBoxAdapter(
-          child: SizedBox(height: 32),
-        ),
-      ],
+      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 32),
+      children: _buildIngredientsList(context),
     );
   }
 
@@ -320,59 +313,28 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final padding = widget.isCompact ? 8.0 : 12.0;
-    final headerStyle = widget.isCompact
-        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
-        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
-    return CustomScrollView(
+    if (widget.directions.isEmpty) {
+      return Padding(
+        padding: EdgeInsets.all(padding),
+        child: Text(
+          'No directions listed',
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      );
+    }
+
+    return ListView.builder(
       primary: false,
       physics: const ClampingScrollPhysics(),
-      slivers: [
-        // Sticky Header
-        SliverPersistentHeader(
-          pinned: true,
-          delegate: _StickyHeaderDelegate(
-            minHeight: widget.isCompact ? 36.0 : 44.0,
-            maxHeight: widget.isCompact ? 36.0 : 44.0,
-            child: Container(
-              color: theme.colorScheme.surface,
-              padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-              alignment: Alignment.centerLeft,
-              child: Text('Directions', style: headerStyle),
-            ),
-          ),
-        ),
-
-        // Directions List
-        if (widget.directions.isEmpty)
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: EdgeInsets.all(padding),
-              child: Text(
-                'No directions listed',
-                style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ),
-          )
-        else
-          SliverPadding(
-            padding: EdgeInsets.symmetric(horizontal: padding),
-            sliver: SliverList.builder(
-              itemCount: widget.directions.length,
-              itemBuilder: (context, index) {
-                return _buildDirectionRow(context, index);
-              },
-            ),
-          ),
-
-        // Bottom padding
-        const SliverToBoxAdapter(
-          child: SizedBox(height: 32),
-        ),
-      ],
+      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 32),
+      itemCount: widget.directions.length,
+      itemBuilder: (context, index) {
+        return _buildDirectionRow(context, index);
+      },
     );
   }
 

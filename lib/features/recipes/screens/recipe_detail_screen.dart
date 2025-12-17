@@ -405,53 +405,45 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: LayoutBuilder(
-              builder: (context, constraints) {
-                // Calculate dynamic font size based on available width
-                final availableWidth = constraints.maxWidth - 56 - 160; // minus padding
-                final nameLength = recipe.name.length;
-                // Start with 20, scale down for longer names or narrower screens
-                final fontSize = (availableWidth / nameLength).clamp(12.0, 20.0);
-                
-                return FlexibleSpaceBar(
-                  title: Text(
-                    recipe.name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: fontSize,
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+            flexibleSpace: FlexibleSpaceBar(
+              title: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  recipe.name,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                   ),
-                  titlePadding: const EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 16,
-                    end: 160,
-                  ),
-                  background: hasHeaderImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            _buildSingleImage(context, headerImage!),
-                            // Gradient scrim for legibility
-                            const DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black54,
-                                  ],
-                                  stops: [0.5, 1.0],
-                                ),
-                              ),
+                ),
+              ),
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 56,
+                bottom: 16,
+                end: 160,
+              ),
+              background: hasHeaderImage
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildSingleImage(context, headerImage!),
+                        // Gradient scrim for legibility
+                        const DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.transparent,
+                                Colors.black54,
+                              ],
+                              stops: [0.5, 1.0],
                             ),
-                          ],
-                        )
-                      : Container(color: theme.colorScheme.surfaceContainerHighest),
-                );
-              },
+                          ),
+                        ),
+                      ],
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
             actions: [
               IconButton(
