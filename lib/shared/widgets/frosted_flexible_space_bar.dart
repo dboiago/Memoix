@@ -28,12 +28,12 @@ Widget buildImageScrim({required bool isDark}) {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          Colors.black.withOpacity(0.25), // Subtle darkening at top for icons
-          Colors.transparent,
-          Colors.transparent,
-          Colors.black.withOpacity(0.55), // Darker at bottom for title
+          Colors.black.withOpacity(0.4), // Darkening at top for icons
+          Colors.black.withOpacity(0.1),
+          Colors.black.withOpacity(0.2),
+          Colors.black.withOpacity(0.7), // Strong darkening at bottom for title
         ],
-        stops: const [0.0, 0.2, 0.5, 1.0],
+        stops: const [0.0, 0.25, 0.5, 1.0],
       ),
     ),
   );
