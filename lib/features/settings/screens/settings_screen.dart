@@ -112,6 +112,30 @@ class ForceSideBySideNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Provider for cockpit mode - independent scrolling for ingredients/directions
+final useCockpitViewProvider = StateNotifierProvider<UseCockpitViewNotifier, bool>((ref) {
+  return UseCockpitViewNotifier();
+});
+
+class UseCockpitViewNotifier extends StateNotifier<bool> {
+  static const _key = 'use_cockpit_view';
+
+  UseCockpitViewNotifier() : super(false) { // Default to OFF (standard layout)
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? false; // Default to OFF
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+  }
+}
+
 /// Provider for showing images on recipe cards in lists
 final showListImagesProvider = StateNotifierProvider<ShowListImagesNotifier, bool>((ref) {
   return ShowListImagesNotifier();
@@ -238,6 +262,13 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: const Text('Keep ingredients and directions next to each other on all screen sizes'),
             value: ref.watch(forceSideBySideProvider),
             onChanged: (_) => ref.read(forceSideBySideProvider.notifier).toggle(),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.splitscreen),
+            title: const Text('Cockpit Mode'),
+            subtitle: const Text('Independent scrolling for ingredients and directions'),
+            value: ref.watch(useCockpitViewProvider),
+            onChanged: (_) => ref.read(useCockpitViewProvider.notifier).toggle(),
           ),
 
           const Divider(),

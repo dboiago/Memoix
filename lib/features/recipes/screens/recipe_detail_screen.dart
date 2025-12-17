@@ -12,6 +12,7 @@ import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
+import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
@@ -151,6 +152,200 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final headerImage = recipe.headerImage ?? recipe.getFirstImage();
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
+    
+    // Check if cockpit mode is enabled
+    final useCockpitView = ref.watch(useCockpitViewProvider);
+    
+    if (useCockpitView) {
+      return _buildCockpitLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
+    }
+    
+    return _buildStandardLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
+  }
+
+  /// Build the cockpit mode layout with independent scrolling columns
+  Widget _buildCockpitLayout(
+    BuildContext context,
+    Recipe recipe,
+    ThemeData theme,
+    bool hasHeaderImage,
+    String? headerImage,
+    bool hasStepImages,
+  ) {
+    return Scaffold(
+      body: NestedScrollView(
+        headerSliverBuilder: (context, innerBoxIsScrolled) {
+          return [
+            // Collapsible app bar with recipe image
+            SliverAppBar(
+              expandedHeight: hasHeaderImage ? 180 : 100,
+              pinned: true,
+              floating: false,
+              forceElevated: innerBoxIsScrolled,
+              flexibleSpace: FlexibleSpaceBar(
+                title: Text(
+                  recipe.name,
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                titlePadding: const EdgeInsetsDirectional.only(
+                  start: 56,
+                  bottom: 16,
+                  end: 160,
+                ),
+                background: hasHeaderImage
+                    ? Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          _buildSingleImage(context, headerImage!),
+                          const DecoratedBox(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [Colors.transparent, Colors.black54],
+                                stops: [0.5, 1.0],
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    : Container(color: theme.colorScheme.surfaceContainerHighest),
+              ),
+              actions: _buildAppBarActions(context, recipe, theme),
+            ),
+            
+            // Compact metadata bar
+            SliverToBoxAdapter(
+              child: _buildCompactMetadata(context, recipe, theme),
+            ),
+          ];
+        },
+        // The split view body with independent scrolling
+        body: SplitRecipeView(
+          recipe: recipe,
+          onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+        ),
+      ),
+    );
+  }
+
+  /// Build compact metadata for cockpit mode (minimal vertical space)
+  Widget _buildCompactMetadata(BuildContext context, Recipe recipe, ThemeData theme) {
+    final isCompact = MediaQuery.sizeOf(context).width < 600;
+    final chipFontSize = isCompact ? 11.0 : 12.0;
+    
+    return Container(
+      color: theme.colorScheme.surface,
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+      child: Wrap(
+        spacing: 6,
+        runSpacing: 4,
+        children: [
+          if (recipe.cuisine != null)
+            Chip(
+              label: Text(Cuisine.toAdjective(recipe.cuisine)),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(fontSize: chipFontSize),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+          if (recipe.serves != null && recipe.serves!.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(_formatServes(recipe.serves!)),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(fontSize: chipFontSize),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+          if (recipe.time != null && recipe.time!.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(recipe.time!),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(fontSize: chipFontSize),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+        ],
+      ),
+    );
+  }
+
+  /// Build app bar actions (shared between layouts)
+  List<Widget> _buildAppBarActions(BuildContext context, Recipe recipe, ThemeData theme) {
+    return [
+      IconButton(
+        icon: Icon(
+          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavorite ? theme.colorScheme.primary : null,
+        ),
+        onPressed: () {
+          ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.check_circle_outline),
+        tooltip: 'I made this',
+        onPressed: () async {
+          await ref.read(cookingStatsServiceProvider).logCook(
+            recipeId: recipe.uuid,
+            recipeName: recipe.name,
+            course: recipe.course,
+            cuisine: recipe.cuisine,
+          );
+          ref.invalidate(cookingStatsProvider);
+          ref.invalidate(recipeCookCountProvider(recipe.uuid));
+          ref.invalidate(recipeLastCookProvider(recipe.uuid));
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text('Logged cook for ${recipe.name}!'),
+                action: SnackBarAction(
+                  label: 'Stats',
+                  onPressed: () => AppRoutes.toStatistics(context),
+                ),
+              ),
+            );
+          }
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.share),
+        onPressed: () => _shareRecipe(context, ref),
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) => _handleMenuAction(context, ref, value),
+        itemBuilder: (_) => [
+          const PopupMenuItem(value: 'edit', child: Text('Edit')),
+          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text(
+              'Delete',
+              style: TextStyle(color: theme.colorScheme.secondary),
+            ),
+          ),
+        ],
+        icon: const Icon(Icons.more_vert),
+      ),
+    ];
+  }
+
+  /// Build the standard layout (existing behavior)
+  Widget _buildStandardLayout(
+    BuildContext context,
+    Recipe recipe,
+    ThemeData theme,
+    bool hasHeaderImage,
+    String? headerImage,
+    bool hasStepImages,
+  ) {
     return Scaffold(
       body: CustomScrollView(
         controller: _scrollController,
@@ -176,7 +371,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        _buildSingleImage(context, headerImage),
+                        _buildSingleImage(context, headerImage!),
                         // Gradient scrim for text legibility
                         const DecoratedBox(
                           decoration: BoxDecoration(
