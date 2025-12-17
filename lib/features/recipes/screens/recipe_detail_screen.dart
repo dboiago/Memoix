@@ -262,6 +262,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final isCompact = MediaQuery.sizeOf(context).width < 600;
     final chipFontSize = isCompact ? 11.0 : 12.0;
     
+    // Get paired recipe chips if any exist
+    final hasPairedRecipes = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
+    final pairedChips = hasPairedRecipes 
+        ? _buildPairedRecipeChips(context, ref, recipe, theme)
+        : <Widget>[];
+    
     return Container(
       color: theme.colorScheme.surface,
       // Extra bottom padding for spacing between chips and ingredients/directions
@@ -306,27 +312,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 ),
             ],
           ),
-          // "Pairs With" chips on a separate line
-          if (recipe.pairsWith.isNotEmpty)
+          // "Pairs With" chips on a separate line (using pairedRecipeIds)
+          if (pairedChips.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 6),
               child: Wrap(
                 spacing: 6,
                 runSpacing: 4,
-                children: recipe.pairsWith
-                    .map((p) => ActionChip(
-                          label: Text('↔ $p'),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(
-                            fontSize: chipFontSize,
-                            color: theme.colorScheme.onSurface,
-                          ),
-                          visualDensity: VisualDensity.compact,
-                          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                          padding: EdgeInsets.zero,
-                          onPressed: () => _navigateToPairedRecipe(context, ref, p),
-                        ))
-                    .toList(),
+                children: pairedChips,
               ),
             ),
         ],
@@ -660,29 +653,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             ),
                           ),
                       ],
-                    ),
-                  ],
-
-                  // Pairs with
-                  if (recipe.pairsWith.isNotEmpty) ...[
-                    const SizedBox(height: 16),
-                    Text(
-                      'Pairs With',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Wrap(
-                      spacing: 8,
-                      children: recipe.pairsWith
-                          .map((p) => ActionChip(
-                                label: Text(p),
-                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(color: theme.colorScheme.onSurface),
-                                onPressed: () => _navigateToPairedRecipe(context, ref, p),
-                              ),)
-                          .toList(),
                     ),
                   ],
                 ],
@@ -1183,41 +1153,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ),
       ),
     );
-  }
-
-  void _navigateToPairedRecipe(BuildContext context, WidgetRef ref, String pairName) async {
-    final recipes = ref.read(allRecipesProvider).valueOrNull ?? [];
-    
-    // Search for a recipe with matching name (case-insensitive, partial match)
-    final searchLower = pairName.toLowerCase().trim();
-    final match = recipes.firstWhere(
-      (r) => r.name.toLowerCase() == searchLower ||
-             r.name.toLowerCase().contains(searchLower) ||
-             searchLower.contains(r.name.toLowerCase()),
-      orElse: () => Recipe()..name = '',
-    );
-    
-    if (match.name.isNotEmpty) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => RecipeDetailScreen(recipeId: match.uuid),
-        ),
-      );
-    } else {
-      // No match found - offer to search
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Recipe "$pairName" not found'),
-          action: SnackBarAction(
-            label: 'Search',
-            onPressed: () {
-              // Could open search with the term
-            },
-          ),
-        ),
-      );
-    }
   }
 
   void _handleMenuAction(BuildContext context, WidgetRef ref, String action) {
