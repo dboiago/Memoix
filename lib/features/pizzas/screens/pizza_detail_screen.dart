@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -54,34 +55,10 @@ class _PizzaDetailView extends ConsumerWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final hasImage = pizza.imageUrl != null && pizza.imageUrl!.isNotEmpty;
-    // Theme-aware shadows: drop shadow for dark, soft halo + outline for light
-    final titleShadows = isDark 
-        ? [
-            const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-            const Shadow(blurRadius: 16, color: Colors.black54),
-            // Black stroke for definition
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(-1, -1)),
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(1, 1)),
-          ]
-        : [
-            // Soft white halo for glow
-            const Shadow(blurRadius: 4, color: Colors.white),
-            const Shadow(blurRadius: 8, color: Colors.white70),
-            // Black stroke for definition
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-1, -1)),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(1, 1)),
-          ];
-    final iconShadows = isDark 
-        ? [
-            const Shadow(blurRadius: 8, color: Colors.black54),
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(-1, 0)),
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(1, 0)),
-          ]
-        : [
-            const Shadow(blurRadius: 1, color: Colors.black45),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-1, 0)),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(1, 0)),
-          ];
+    // Minimal text shadows - the backdrop blur does most of the work
+    final titleShadows = buildTitleShadows(isDark);
+    // Icon shadows: subtle drop shadow only
+    final iconShadows = buildIconShadows(isDark);
 
     return Scaffold(
       body: CustomScrollView(
@@ -96,16 +73,22 @@ class _PizzaDetailView extends ConsumerWidget {
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                pizza.name,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  shadows: titleShadows,
-                ),
-              ),
-              background: _buildHeaderBackground(theme),
-            ),
+            flexibleSpace: hasImage
+                ? FrostedFlexibleSpaceBar(
+                    title: pizza.name,
+                    titleShadows: titleShadows,
+                    isDark: isDark,
+                    background: _buildHeaderBackground(theme),
+                  )
+                : FlexibleSpaceBar(
+                    title: Text(
+                      pizza.name,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    background: Container(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                    ),
+                  ),
             actions: [
               IconButton(
                 icon: Icon(

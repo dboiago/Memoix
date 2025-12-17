@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../shared/widgets/frosted_flexible_space_bar.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import 'modernist_edit_screen.dart';
@@ -63,35 +64,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    // Theme-aware shadows: drop shadow for dark, soft halo + outline for light
-    final titleShadows = isDark 
-        ? [
-            const Shadow(blurRadius: 8, color: Colors.black87, offset: Offset(0, 1)),
-            const Shadow(blurRadius: 16, color: Colors.black54),
-            // Black stroke for definition
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(-1, -1)),
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(1, 1)),
-          ]
-        : [
-            // Soft white halo for glow
-            const Shadow(blurRadius: 4, color: Colors.white),
-            const Shadow(blurRadius: 8, color: Colors.white70),
-            // Black stroke for definition
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-1, -1)),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(1, 1)),
-          ];
-    // Icon shadows: crisp version for smaller elements
-    final iconShadows = isDark 
-        ? [
-            const Shadow(blurRadius: 8, color: Colors.black54),
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(-1, 0)),
-            const Shadow(blurRadius: 0, color: Colors.black38, offset: Offset(1, 0)),
-          ]
-        : [
-            const Shadow(blurRadius: 1, color: Colors.black45),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(-1, 0)),
-            const Shadow(blurRadius: 0, color: Colors.black26, offset: Offset(1, 0)),
-          ];
+    // Minimal text shadows - the backdrop blur does most of the work
+    final titleShadows = buildTitleShadows(isDark);
+    // Icon shadows: subtle drop shadow only
+    final iconShadows = buildIconShadows(isDark);
 
     return Scaffold(
       body: CustomScrollView(
@@ -107,38 +83,20 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  shadows: titleShadows,
-                ),
-              ),
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(headerImage),
-                        Container(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.black.withOpacity(0.3),
-                                Colors.transparent,
-                                Colors.transparent,
-                                Colors.black.withOpacity(0.7),
-                              ],
-                              stops: const [0.0, 0.3, 0.6, 1.0],
-                            ),
-                          ),
-                        ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
-            ),
+            flexibleSpace: hasHeaderImage
+                ? FrostedFlexibleSpaceBar(
+                    title: recipe.name,
+                    titleShadows: titleShadows,
+                    isDark: isDark,
+                    background: _buildSingleImage(headerImage),
+                  )
+                : FlexibleSpaceBar(
+                    title: Text(
+                      recipe.name,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    background: Container(color: theme.colorScheme.surfaceContainerHighest),
+                  ),
             actions: [
               IconButton(
                 icon: Icon(
