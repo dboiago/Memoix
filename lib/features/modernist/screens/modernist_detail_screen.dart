@@ -80,7 +80,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     // Icon shadows: crisp version for smaller elements
     final iconShadows = isDark 
         ? [const Shadow(blurRadius: 8, color: Colors.black54)]
-        : [const Shadow(blurRadius: 2, color: Colors.white)];
+        : [
+            const Shadow(blurRadius: 2, color: Colors.white),
+            const Shadow(blurRadius: 0, color: Colors.white, offset: Offset(-0.5, 0)),
+            const Shadow(blurRadius: 0, color: Colors.white, offset: Offset(0.5, 0)),
+          ];
 
     return Scaffold(
       body: CustomScrollView(
