@@ -394,27 +394,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         slivers: [
           // Hero header with recipe image or colored header
           SliverAppBar(
-            expandedHeight: hasHeaderImage ? 250 : 150,
+            expandedHeight: hasHeaderImage ? 200 : kToolbarHeight,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-              ),
-              // Leave space for back arrow (56px) and action icons (4 icons × ~48px each)
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 160,
-              ),
-              background: hasHeaderImage
-                  ? Stack(
+            flexibleSpace: hasHeaderImage
+                ? FlexibleSpaceBar(
+                    background: Stack(
                       fit: StackFit.expand,
                       children: [
                         _buildSingleImage(context, headerImage!),
-                        // Gradient scrim for text legibility
+                        // Gradient scrim for legibility
                         const DecoratedBox(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
@@ -429,11 +417,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           ),
                         ),
                       ],
-                    )
-                  : Container(
-                      color: theme.colorScheme.surfaceContainerHighest,
                     ),
-            ),
+                  )
+                : null,
             actions: [
               IconButton(
                 icon: Icon(
@@ -491,6 +477,23 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 icon: const Icon(Icons.more_vert),
               ),
             ],
+          ),
+
+          // Recipe title - displayed below app bar to avoid overlap with action icons
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  recipe.name,
+                  style: theme.textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ),
 
           // Recipe metadata

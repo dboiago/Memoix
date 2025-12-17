@@ -62,27 +62,15 @@ class _CellarDetailView extends ConsumerWidget {
         slivers: [
           // Hero header
           SliverAppBar(
-            expandedHeight: hasHeaderImage ? 250 : 150,
+            expandedHeight: hasHeaderImage ? 200 : kToolbarHeight,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                entry.name,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-              ),
-              // Leave space for action icons
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 16,
-                bottom: 16,
-                end: 100,
-              ),
-              background: hasHeaderImage
-                  ? Stack(
+            flexibleSpace: hasHeaderImage
+                ? FlexibleSpaceBar(
+                    background: Stack(
                       fit: StackFit.expand,
                       children: [
                         _buildHeaderBackground(theme),
-                        // Gradient scrim for text legibility
+                        // Gradient scrim for legibility
                         const DecoratedBox(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
@@ -97,9 +85,9 @@ class _CellarDetailView extends ConsumerWidget {
                           ),
                         ),
                       ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
-            ),
+                    ),
+                  )
+                : null,
             actions: [
               IconButton(
                 icon: Icon(
@@ -132,6 +120,23 @@ class _CellarDetailView extends ConsumerWidget {
                 icon: const Icon(Icons.more_vert),
               ),
             ],
+          ),
+
+          // Entry title - displayed below app bar to avoid overlap with action icons
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  entry.name,
+                  style: theme.textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ),
 
           // Metadata chips (only show populated fields)
