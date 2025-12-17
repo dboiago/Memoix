@@ -24,43 +24,59 @@ _ParsedNotes _parseNotes(String notes) {
   var isOptional = false;
   String? alternative;
 
-  // Patterns for optional markers
+  // Patterns for optional markers (including common abbreviations)
   final optionalPatterns = [
     RegExp(r'\(optional\)', caseSensitive: false),
+    RegExp(r'\(opt\.?\)', caseSensitive: false),
     RegExp(r'^optional$', caseSensitive: false),
-    RegExp(r'\boptional\b', caseSensitive: false),
+    RegExp(r'^opt\.?$', caseSensitive: false),
+    RegExp(r',?\s*optional\s*,?', caseSensitive: false),
+    RegExp(r',?\s*opt\.?\s*,?', caseSensitive: false),
+    RegExp(r';\s*optional\s*;?', caseSensitive: false),
+    RegExp(r';\s*opt\.?\s*;?', caseSensitive: false),
   ];
 
   // Check and remove optional markers
   for (final pattern in optionalPatterns) {
     if (pattern.hasMatch(remaining)) {
       isOptional = true;
-      remaining = remaining.replaceAll(pattern, '').trim();
+      remaining = remaining.replaceAll(pattern, ' ').trim();
     }
   }
 
   // Patterns for alternative ingredients
   // Matches: "alt: butter", "alternative: butter", "or butter", "or use butter", "substitute: butter"
   final altPatterns = [
-    RegExp(r'^alt(?:ernative)?:\s*(.+)$', caseSensitive: false),
-    RegExp(r'^sub(?:stitute)?:\s*(.+)$', caseSensitive: false),
-    RegExp(r'^or\s+(?:use\s+)?(.+)$', caseSensitive: false),
-    RegExp(r'\(or\s+(.+?)\)$', caseSensitive: false),
+    RegExp(r',?\s*alt(?:ernative)?:\s*([^,;]+)', caseSensitive: false),
+    RegExp(r',?\s*sub(?:stitute)?:\s*([^,;]+)', caseSensitive: false),
+    RegExp(r',?\s*or\s+(?:use\s+)?([^,;]+)', caseSensitive: false),
+    RegExp(r'\(or\s+([^)]+)\)', caseSensitive: false),
   ];
 
   for (final pattern in altPatterns) {
     final match = pattern.firstMatch(remaining);
     if (match != null) {
       alternative = match.group(1)?.trim();
-      remaining = remaining.replaceAll(pattern, '').trim();
+      remaining = remaining.replaceFirst(pattern, ' ').trim();
       break;
     }
   }
 
-  // Clean up remaining text (remove leading/trailing separators)
+  // Clean up remaining text
+  // Remove leading/trailing punctuation and separators
   remaining = remaining
-      .replaceAll(RegExp(r'^[\s·,;-]+'), '')
-      .replaceAll(RegExp(r'[\s·,;-]+$'), '')
+      .replaceAll(RegExp(r'^[\s·,;:\-–—]+'), '')  // Leading
+      .replaceAll(RegExp(r'[\s·,;:\-–—]+$'), '')  // Trailing
+      .replaceAll(RegExp(r'\s*[·]\s*[·]\s*'), ' · ')  // Double separators
+      .replaceAll(RegExp(r',\s*,'), ',')  // Double commas
+      .replaceAll(RegExp(r';\s*;'), ';')  // Double semicolons
+      .replaceAll(RegExp(r'\s{2,}'), ' ')  // Multiple spaces
+      .trim();
+  
+  // Final cleanup: remove any remaining leading/trailing punctuation
+  remaining = remaining
+      .replaceAll(RegExp(r'^[,;:\s]+'), '')
+      .replaceAll(RegExp(r'[,;:\s]+$'), '')
       .trim();
 
   return _ParsedNotes(
@@ -381,20 +397,21 @@ class _IngredientListState extends State<IngredientList> {
                     ),
                   ),
 
+                  // Spacer pushes notes to the right
+                  if (hasNotes)
+                    const Spacer(),
+
                   // Right-aligned notes/alternatives (remaining text after parsing)
-                  if (hasNotes) ...[
+                  if (hasNotes) ...[  
                     SizedBox(width: widget.isCompact ? 8 : 16),
-                    Flexible(
-                      child: Text(
-                        notesText,
-                        style: textStyle?.copyWith(
-                          decoration: isChecked ? TextDecoration.lineThrough : null,
-                          color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
-                              : theme.colorScheme.primary,
-                          fontStyle: FontStyle.italic,
-                        ),
-                        textAlign: TextAlign.end,
+                    Text(
+                      notesText,
+                      style: textStyle?.copyWith(
+                        decoration: isChecked ? TextDecoration.lineThrough : null,
+                        color: isChecked
+                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            : theme.colorScheme.primary,
+                        fontStyle: FontStyle.italic,
                       ),
                     ),
                   ],
