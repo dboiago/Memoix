@@ -49,3 +49,73 @@ Widget buildImageScrim({required bool isDark}) {
     ),
   );
 }
+
+/// A custom FlexibleSpaceBar that shows a shadowed title only when expanded.
+/// The title fades out as the app bar collapses, leaving the SliverAppBar.title
+/// to show cleanly without shadows on the solid background.
+class ExpandedTitleFlexibleSpace extends StatelessWidget {
+  final String title;
+  final List<Shadow>? titleShadows;
+  final bool isDark;
+  final Widget background;
+
+  const ExpandedTitleFlexibleSpace({
+    super.key,
+    required this.title,
+    required this.titleShadows,
+    required this.isDark,
+    required this.background,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final settings = context.dependOnInheritedWidgetOfExactType<FlexibleSpaceBarSettings>();
+        if (settings == null) {
+          return _buildContent(1.0);
+        }
+        
+        final deltaExtent = settings.maxExtent - settings.minExtent;
+        // t goes from 0.0 (fully expanded) to 1.0 (fully collapsed)
+        final t = deltaExtent > 0 
+            ? (1.0 - (settings.currentExtent - settings.minExtent) / deltaExtent).clamp(0.0, 1.0)
+            : 0.0;
+        
+        return _buildContent(1.0 - t); // opacity is inverse of collapse progress
+      },
+    );
+  }
+
+  Widget _buildContent(double titleOpacity) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        // Background image
+        background,
+        // Gradient scrim
+        buildImageScrim(isDark: isDark),
+        // Title - fades out as we collapse
+        Positioned(
+          left: 72, // Account for back button
+          right: 72, // Account for action buttons
+          bottom: 16,
+          child: Opacity(
+            opacity: titleOpacity,
+            child: Text(
+              title,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                shadows: titleShadows,
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}

@@ -77,33 +77,29 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
+            // Collapsed title - no shadows, uses theme foreground color
+            title: Text(
+              recipe.name,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
             leading: hasHeaderImage
                 ? IconButton(
                     icon: Icon(Icons.arrow_back, shadows: iconShadows),
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  shadows: hasHeaderImage ? titleShadows : null,
-                ),
-              ),
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(context, headerImage),
-                        // Gradient scrim for text readability
-                        buildImageScrim(isDark: isDark),
-                      ],
-                    )
-                  : Container(
+            flexibleSpace: hasHeaderImage
+                ? ExpandedTitleFlexibleSpace(
+                    title: recipe.name,
+                    titleShadows: titleShadows,
+                    isDark: isDark,
+                    background: _buildSingleImage(context, headerImage),
+                  )
+                : FlexibleSpaceBar(
+                    background: Container(
                       color: theme.colorScheme.surfaceContainerHighest,
                     ),
-            ),
+                  ),
             actions: [
               IconButton(
                 icon: Icon(

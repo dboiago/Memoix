@@ -67,33 +67,27 @@ class _PizzaDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasImage ? 250 : 150,
             pinned: true,
+            // Collapsed title - no shadows, uses theme foreground color
+            title: Text(
+              pizza.name,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
             leading: hasImage
                 ? IconButton(
                     icon: Icon(Icons.arrow_back, shadows: iconShadows),
                     onPressed: () => Navigator.of(context).pop(),
                   )
                 : null,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                pizza.name,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  shadows: hasImage ? titleShadows : null,
-                ),
-              ),
-              background: hasImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildHeaderBackground(theme),
-                        // Gradient scrim for text readability
-                        buildImageScrim(isDark: isDark),
-                      ],
-                    )
-                  : Container(
-                      color: theme.colorScheme.surfaceContainerHighest,
-                    ),
-            ),
+            flexibleSpace: hasImage
+                ? ExpandedTitleFlexibleSpace(
+                    title: pizza.name,
+                    titleShadows: titleShadows,
+                    isDark: isDark,
+                    background: _buildHeaderBackground(theme),
+                  )
+                : FlexibleSpaceBar(
+                    background: Container(color: theme.colorScheme.surfaceContainerHighest),
+                  ),
             actions: [
               IconButton(
                 icon: Icon(
