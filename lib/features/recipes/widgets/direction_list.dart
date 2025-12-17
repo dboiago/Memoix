@@ -13,6 +13,7 @@ class DirectionList extends StatefulWidget {
   final Recipe? recipe;  // Optional: pass recipe for step image support
   final VoidCallback? onStepImageTap;  // Callback when step image icon is tapped
   final Function(int stepIndex)? onScrollToImage;  // Callback to scroll to image
+  final bool isCompact;
 
   const DirectionList({
     super.key,
@@ -20,6 +21,7 @@ class DirectionList extends StatefulWidget {
     this.recipe,
     this.onStepImageTap,
     this.onScrollToImage,
+    this.isCompact = false,
   });
 
   @override
@@ -115,6 +117,14 @@ class _DirectionListState extends State<DirectionList> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    
+    // Compact sizing
+    final circleSize = widget.isCompact ? 22.0 : 28.0;
+    final circleIconSize = widget.isCompact ? 12.0 : 16.0;
+    final circleFontSize = widget.isCompact ? 12.0 : 14.0;
+    final verticalPadding = widget.isCompact ? 4.0 : 8.0;
+    final textStyle = widget.isCompact ? theme.textTheme.bodySmall : theme.textTheme.bodyMedium;
+    final gapWidth = widget.isCompact ? 8.0 : 12.0;
 
     if (widget.directions.isEmpty) {
       return const Text(
@@ -134,10 +144,10 @@ class _DirectionListState extends State<DirectionList> {
         // Check if this is a section header
         if (_isSection(step)) {
           return Padding(
-            padding: EdgeInsets.only(top: index > 0 ? 16 : 0, bottom: 8),
+            padding: EdgeInsets.only(top: index > 0 ? (widget.isCompact ? 10 : 16) : 0, bottom: widget.isCompact ? 4 : 8),
             child: Text(
               _getSectionName(step),
-              style: theme.textTheme.titleSmall?.copyWith(
+              style: (widget.isCompact ? theme.textTheme.labelLarge : theme.textTheme.titleSmall)?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: theme.colorScheme.primary,
               ),
@@ -162,14 +172,14 @@ class _DirectionListState extends State<DirectionList> {
             });
           },
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
+            padding: EdgeInsets.symmetric(vertical: verticalPadding),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Step number circle
                 Container(
-                  width: 28,
-                  height: 28,
+                  width: circleSize,
+                  height: circleSize,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: isCompleted
@@ -184,23 +194,24 @@ class _DirectionListState extends State<DirectionList> {
                   ),
                   child: Center(
                     child: isCompleted
-                        ? Icon(Icons.check, size: 16, color: theme.colorScheme.outline)
+                        ? Icon(Icons.check, size: circleIconSize, color: theme.colorScheme.outline)
                         : Text(
                             '$displayNumber',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: circleFontSize,
                               color: theme.colorScheme.secondary,
                             ),
                           ),
                   ),
                 ),
-                const SizedBox(width: 12),
+                SizedBox(width: gapWidth),
 
                 // Step text with optional/alternative parts in italics
                 Expanded(
                   child: _buildStyledText(
                     _capitalizeSentence(step),
-                    theme.textTheme.bodyMedium,
+                    textStyle,
                     isCompleted,
                     theme,
                   ),
@@ -211,11 +222,11 @@ class _DirectionListState extends State<DirectionList> {
                   IconButton(
                     icon: Icon(
                       Icons.image_outlined,
-                      size: 20,
+                      size: widget.isCompact ? 16 : 20,
                       color: theme.colorScheme.primary,
                     ),
                     padding: EdgeInsets.zero,
-                    constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                    constraints: BoxConstraints(minWidth: widget.isCompact ? 24 : 32, minHeight: widget.isCompact ? 24 : 32),
                     tooltip: 'View step image',
                     onPressed: () {
                       if (widget.onScrollToImage != null) {

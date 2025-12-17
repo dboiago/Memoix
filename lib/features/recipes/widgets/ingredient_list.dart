@@ -79,8 +79,9 @@ String _formatAmount(String amount) {
 
 class IngredientList extends StatefulWidget {
   final List<Ingredient> ingredients;
+  final bool isCompact;
 
-  const IngredientList({super.key, required this.ingredients});
+  const IngredientList({super.key, required this.ingredients, this.isCompact = false});
 
   @override
   State<IngredientList> createState() => _IngredientListState();
@@ -137,6 +138,11 @@ class _IngredientListState extends State<IngredientList> {
     final theme = Theme.of(context);
     final isChecked = _checkedItems.contains(item.index);
     final ingredient = item.ingredient;
+    
+    // Compact sizing
+    final checkboxSize = widget.isCompact ? 18.0 : 24.0;
+    final verticalPadding = widget.isCompact ? 3.0 : 6.0;
+    final textStyle = widget.isCompact ? theme.textTheme.bodySmall : theme.textTheme.bodyMedium;
 
     // Build the amount string with proper formatting
     String amountText = '';
@@ -171,14 +177,14 @@ class _IngredientListState extends State<IngredientList> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
+        padding: EdgeInsets.symmetric(vertical: verticalPadding),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Checkbox
             SizedBox(
-              width: 24,
-              height: 24,
+              width: checkboxSize,
+              height: checkboxSize,
               child: Checkbox(
                 value: isChecked,
                 onChanged: (value) {
@@ -193,12 +199,12 @@ class _IngredientListState extends State<IngredientList> {
                 visualDensity: VisualDensity.compact,
               ),
             ),
-            const SizedBox(width: 8),
+            SizedBox(width: widget.isCompact ? 4 : 8),
 
             // Ingredient name
             Text(
               _capitalizeWords(ingredient.name),
-              style: TextStyle(
+              style: textStyle?.copyWith(
                 decoration: isChecked ? TextDecoration.lineThrough : null,
                 color: isChecked
                     ? theme.colorScheme.onSurface.withOpacity(0.5)
@@ -209,10 +215,10 @@ class _IngredientListState extends State<IngredientList> {
             
             // Amount (with minimal spacing)
             if (amountText.isNotEmpty) ...[
-              const SizedBox(width: 8),
+              SizedBox(width: widget.isCompact ? 4 : 8),
               Text(
                 amountText,
-                style: TextStyle(
+                style: textStyle?.copyWith(
                   decoration: isChecked ? TextDecoration.lineThrough : null,
                   color: isChecked
                       ? theme.colorScheme.onSurface.withOpacity(0.5)

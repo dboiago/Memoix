@@ -203,16 +203,16 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                         final isCompact = constraints.maxWidth < 500;
                         final isVeryCompact = constraints.maxWidth < 380;
                         
-                        // Dynamic values based on available space
-                        final outerPadding = isCompact ? 10.0 : 16.0;
-                        final innerPadding = isCompact ? 10.0 : 16.0;
-                        final gapWidth = isCompact ? 8.0 : 16.0;
+                        // Dynamic values based on available space - ultra tight for phones
+                        final outerPadding = isCompact ? 6.0 : 16.0;
+                        final innerPadding = isCompact ? 8.0 : 16.0;
+                        final gapWidth = isCompact ? 6.0 : 16.0;
                         final ingredientsFlex = isCompact ? 1 : 2;
                         final directionsFlex = isCompact ? 2 : 3;
                         final headerStyle = isCompact 
-                            ? theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)
+                            ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
                             : theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold);
-                        final headerGap = isCompact ? 8.0 : 12.0;
+                        final headerGap = isCompact ? 4.0 : 12.0;
                         
                         if (useSideBySide) {
                           Widget content = Padding(
@@ -259,11 +259,12 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                             ),
                           );
                           
-                          // Scale text down for very narrow screens
-                          if (isVeryCompact) {
+                          // Scale text down for compact screens (phones)
+                          if (isCompact) {
+                            final scaleFactor = isVeryCompact ? 0.85 : 0.9;
                             content = MediaQuery(
                               data: MediaQuery.of(context).copyWith(
-                                textScaler: const TextScaler.linear(0.9),
+                                textScaler: TextScaler.linear(scaleFactor),
                               ),
                               child: content,
                             );
