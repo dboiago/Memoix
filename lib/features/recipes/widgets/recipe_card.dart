@@ -91,109 +91,129 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   if (!widget.isCompact) ...[
                     const SizedBox(height: 4),
                     // Cuisine/spirit indicator dot + servings + time
-                    Row(
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 4,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         // For drinks: show spirit dot, for food: show cuisine dot
                         if (_isDrink()) ...[
                         // Spirit indicator for drinks
                         if (widget.recipe.subcategory != null && widget.recipe.subcategory!.isNotEmpty) ...[
-                          Text(
-                            '\u2022',
-                            style: TextStyle(
-                              color: MemoixColors.forSpiritDot(widget.recipe.subcategory),
-                              fontSize: 16,
-                            ),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                '\u2022',
+                                style: TextStyle(
+                                  color: MemoixColors.forSpiritDot(widget.recipe.subcategory),
+                                  fontSize: 16,
+                                ),
+                              ),
+                              const SizedBox(width: 6),
+                              Text(
+                                _displayDrinkInfo(),
+                                style: theme.textTheme.bodySmall?.copyWith(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                            ],
                           ),
-                          const SizedBox(width: 6),
-                          Text(
-                            _displayDrinkInfo(),
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
                         ] else if (cuisine != null && cuisine.isNotEmpty) ...[
                           // Fallback to cuisine for drinks without spirit (e.g., Korean tea)
-                          Text(
-                            '\u2022',
-                            style: TextStyle(
-                              color: MemoixColors.forContinentDot(cuisine),
-                              fontSize: 16,
-                            ),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                '\u2022',
+                                style: TextStyle(
+                                  color: MemoixColors.forContinentDot(cuisine),
+                                  fontSize: 16,
+                                ),
+                              ),
+                              const SizedBox(width: 6),
+                              Text(
+                                Cuisine.toAdjective(cuisine),
+                                style: theme.textTheme.bodySmall?.copyWith(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                            ],
                           ),
-                          const SizedBox(width: 6),
-                          Text(
-                            Cuisine.toAdjective(cuisine),
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
                         ],
                       ] else if (cuisine != null && cuisine.isNotEmpty) ...[
                         // Cuisine indicator for food recipes
-                        Text(
-                          '\u2022',
-                          style: TextStyle(
-                            color: MemoixColors.forContinentDot(cuisine),
-                            fontSize: 16,
-                          ),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              '\u2022',
+                              style: TextStyle(
+                                color: MemoixColors.forContinentDot(cuisine),
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Text(
+                              _displayCuisine(cuisine, widget.recipe.subcategory),
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
                         ),
-                        const SizedBox(width: 6),
-                        Text(
-                          _displayCuisine(cuisine, widget.recipe.subcategory),
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                        const SizedBox(width: 12),
                       ],
                       
                       // Pickle method (for pickles course)
-                      if (_isPickles() && widget.recipe.pickleMethod != null && widget.recipe.pickleMethod!.isNotEmpty) ...[
+                      if (_isPickles() && widget.recipe.pickleMethod != null && widget.recipe.pickleMethod!.isNotEmpty)
                         Text(
                           widget.recipe.pickleMethod!,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
-                        const SizedBox(width: 12),
-                      ],
                       
                       // Servings
-                      if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty) ...[
-                        Icon(
-                          Icons.people_outline,
-                          size: 14,
-                          color: theme.colorScheme.outline,
+                      if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty)
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.people_outline,
+                              size: 14,
+                              color: theme.colorScheme.outline,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              _formatServes(widget.recipe.serves!),
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
                         ),
-                        const SizedBox(width: 4),
-                        Text(
-                          _formatServes(widget.recipe.serves!),
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                      ],
                       
                       // Time
-                      if (widget.recipe.time != null && widget.recipe.time!.isNotEmpty) ...[
-                        Icon(
-                          Icons.schedule_outlined,
-                          size: 14,
-                          color: theme.colorScheme.outline,
+                      if (widget.recipe.time != null && widget.recipe.time!.isNotEmpty)
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.schedule_outlined,
+                              size: 14,
+                              color: theme.colorScheme.outline,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              widget.recipe.time!,
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
                         ),
-                        const SizedBox(width: 4),
-                        Text(
-                          widget.recipe.time!,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                      ],
                     ],
-                  ), // Row
+                  ), // Wrap
                   ], // if (!widget.isCompact)
                 ],
               ),
