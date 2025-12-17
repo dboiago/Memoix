@@ -115,6 +115,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               title: Text(
                 recipe.name,
                 style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              // Leave space for action icons (4 icons × ~48px each)
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 16,
+                bottom: 16,
+                end: 160,
               ),
               background: hasHeaderImage
                   ? Stack(

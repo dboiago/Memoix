@@ -66,6 +66,14 @@ class _CheeseDetailView extends ConsumerWidget {
               title: Text(
                 entry.name,
                 style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              // Leave space for action icons
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 16,
+                bottom: 16,
+                end: 100,
               ),
               background: hasImage
                   ? Stack(

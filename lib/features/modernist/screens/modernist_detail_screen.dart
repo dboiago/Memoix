@@ -77,6 +77,14 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               title: Text(
                 recipe.name,
                 style: const TextStyle(fontWeight: FontWeight.bold),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              // Leave space for action icons
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 16,
+                bottom: 16,
+                end: 120,
               ),
               background: hasHeaderImage
                   ? Stack(
