@@ -140,6 +140,12 @@ class SplitRecipeView extends StatelessWidget {
               ),
             ),
           
+          // Spacing after meta chip area (only if there are meta chips)
+          if (metadataWidget != null || 
+              (pairedRecipeChips != null && pairedRecipeChips!.isNotEmpty) || 
+              hasGlassOrGarnish)
+            const SizedBox(height: 12),
+          
           // Split columns card with rounded corners (matches normal mode cards)
           Padding(
             padding: EdgeInsets.symmetric(horizontal: padding),

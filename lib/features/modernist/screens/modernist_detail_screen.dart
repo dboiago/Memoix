@@ -105,7 +105,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 2. Compact metadata row (below header)
           Container(
             color: Colors.transparent,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
             width: double.infinity,
             child: _buildCompactMetadataRow(recipe, theme),
           ),
@@ -280,7 +280,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   /// Build collapsible equipment section for side-by-side mode
   Widget _buildCollapsibleEquipment(ModernistRecipe recipe, ThemeData theme) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+      padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
       child: Card(
         child: Theme(
           data: theme.copyWith(
