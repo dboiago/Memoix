@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
@@ -352,7 +353,13 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
           ref.invalidate(modernistRecipeProvider(widget.recipeId));
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Logged cook for ${recipe.name}')),
+            SnackBar(
+              content: Text('Logged cook for ${recipe.name}'),
+              action: SnackBarAction(
+                label: 'Stats',
+                onPressed: () => AppRoutes.toStatistics(context),
+              ),
+            ),
           );
         },
       ),
@@ -1068,7 +1075,13 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
     ref.invalidate(modernistRecipeProvider(widget.recipeId));
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Logged cook for ${recipe.name}')),
+      SnackBar(
+        content: Text('Logged cook for ${recipe.name}'),
+        action: SnackBarAction(
+          label: 'Stats',
+          onPressed: () => AppRoutes.toStatistics(context),
+        ),
+      ),
     );
   }
 

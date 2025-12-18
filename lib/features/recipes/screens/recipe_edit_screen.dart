@@ -1503,17 +1503,16 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () {
-                ScaffoldMessenger.of(context).hideCurrentSnackBar();
+            content: Text('${recipe.name} saved'),
+            action: SnackBarAction(
+              label: 'Recipe',
+              onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (_) => RecipeDetailScreen(recipeId: savedId),
                   ),
                 );
               },
-              child: Text('${recipe.name} saved!'),
             ),
             duration: const Duration(seconds: 4),
           ),

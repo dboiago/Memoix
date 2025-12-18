@@ -308,7 +308,13 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${pizza.name}')),
+              SnackBar(
+                content: Text('Logged cook for ${pizza.name}'),
+                action: SnackBarAction(
+                  label: 'Stats',
+                  onPressed: () => AppRoutes.toStatistics(context),
+                ),
+              ),
             );
           }
         },
@@ -381,7 +387,13 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
     await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Logged cook for ${pizza.name}')),
+        SnackBar(
+          content: Text('Logged cook for ${pizza.name}'),
+          action: SnackBarAction(
+            label: 'Stats',
+            onPressed: () => AppRoutes.toStatistics(context),
+          ),
+        ),
       );
     }
   }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
@@ -324,7 +325,13 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${recipe.name}')),
+              SnackBar(
+                content: Text('Logged cook for ${recipe.name}'),
+                action: SnackBarAction(
+                  label: 'Stats',
+                  onPressed: () => AppRoutes.toStatistics(context),
+                ),
+              ),
             );
           }
         },
@@ -1008,7 +1015,13 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
     ref.invalidate(allSmokingRecipesProvider);
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Logged cook for ${recipe.name}')),
+      SnackBar(
+        content: Text('Logged cook for ${recipe.name}'),
+        action: SnackBarAction(
+          label: 'Stats',
+          onPressed: () => AppRoutes.toStatistics(context),
+        ),
+      ),
     );
   }
 

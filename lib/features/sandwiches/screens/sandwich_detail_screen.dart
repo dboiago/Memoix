@@ -348,7 +348,13 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${sandwich.name}')),
+              SnackBar(
+                content: Text('Logged cook for ${sandwich.name}'),
+                action: SnackBarAction(
+                  label: 'Stats',
+                  onPressed: () => AppRoutes.toStatistics(context),
+                ),
+              ),
             );
           }
         },
@@ -454,7 +460,13 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
     await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Logged cook for ${sandwich.name}')),
+        SnackBar(
+          content: Text('Logged cook for ${sandwich.name}'),
+          action: SnackBarAction(
+            label: 'Stats',
+            onPressed: () => AppRoutes.toStatistics(context),
+          ),
+        ),
       );
     }
   }

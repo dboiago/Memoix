@@ -100,42 +100,68 @@ class SplitRecipeView extends StatelessWidget {
                 children: pairedRecipeChips!,
               ),
             ),
-          // Glass and Garnish chips for drinks - uses scaffold background
+          // Glass and Garnish for drinks - uses scaffold background, matches normal mode
           if (hasGlassOrGarnish)
             Container(
               color: theme.scaffoldBackgroundColor,
-              padding: EdgeInsets.symmetric(horizontal: padding, vertical: 6),
-              child: Wrap(
-                spacing: 8,
-                runSpacing: 4,
+              padding: EdgeInsets.fromLTRB(padding, 8, padding, 0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Glass chip
+                  // Glass
                   if (recipe.glass != null && recipe.glass!.isNotEmpty)
-                    Chip(
-                      avatar: Icon(Icons.local_bar, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
-                      label: Text(_capitalizeWords(recipe.glass!)),
-                      backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                      labelStyle: TextStyle(
-                        color: theme.colorScheme.onSurface,
-                        fontSize: isCompact ? 11 : 12,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Glass',
+                          style: theme.textTheme.titleSmall?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Chip(
+                          label: Text(_capitalizeWords(recipe.glass!)),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(
+                            color: theme.colorScheme.onSurface,
+                            fontSize: isCompact ? 12 : 14,
+                          ),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      ],
+                    ),
+                  if (recipe.glass != null && recipe.glass!.isNotEmpty && recipe.garnish.isNotEmpty)
+                    const SizedBox(width: 24),
+                  // Garnish
+                  if (recipe.garnish.isNotEmpty)
+                    Flexible(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Garnish',
+                            style: theme.textTheme.titleSmall?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 4,
+                            children: recipe.garnish.map((item) => Chip(
+                              label: Text(_capitalizeWords(item)),
+                              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                              labelStyle: TextStyle(
+                                color: theme.colorScheme.onSurface,
+                                fontSize: isCompact ? 12 : 14,
+                              ),
+                              visualDensity: VisualDensity.compact,
+                            )).toList(),
+                          ),
+                        ],
                       ),
-                      visualDensity: VisualDensity.compact,
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      padding: EdgeInsets.zero,
                     ),
-                  // Garnish chips
-                  ...recipe.garnish.map((item) => Chip(
-                    avatar: Icon(Icons.eco, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
-                    label: Text(_capitalizeWords(item)),
-                    backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                    labelStyle: TextStyle(
-                      color: theme.colorScheme.onSurface,
-                      fontSize: isCompact ? 11 : 12,
-                    ),
-                    visualDensity: VisualDensity.compact,
-                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                    padding: EdgeInsets.zero,
-                  )),
                 ],
               ),
             ),
