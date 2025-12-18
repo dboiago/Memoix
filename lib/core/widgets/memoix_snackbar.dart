@@ -19,7 +19,7 @@ class MemoixSnackBar {
   static const Duration defaultDuration = Duration(seconds: 2);
 
   /// Duration for messages with action buttons (slightly longer to allow tap)
-  static const Duration actionDuration = Duration(seconds: 4);
+  static const Duration actionDuration = Duration(seconds: 2);
 
   /// Cancel any pending dismiss timer
   static void _cancelTimer() {
