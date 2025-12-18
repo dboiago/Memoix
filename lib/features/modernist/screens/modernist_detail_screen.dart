@@ -160,7 +160,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     );
   }
 
-  /// Build compact metadata row with dots for side-by-side mode
+  /// Build compact metadata row for side-by-side mode
   Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme) {
     final metadataItems = <InlineSpan>[];
     
@@ -182,17 +182,21 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     ));
     metadataItems.add(TextSpan(text: recipe.type.displayName));
     
-    // Add technique category
+    // Add technique category with spacing
     if (recipe.technique != null && recipe.technique!.isNotEmpty) {
-      metadataItems.add(const TextSpan(text: '  •  '));
-      metadataItems.add(TextSpan(text: recipe.technique!));
+      metadataItems.add(const TextSpan(text: '   '));
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Icon(Icons.science_outlined, size: 12, color: theme.colorScheme.onSurfaceVariant),
+      ));
+      metadataItems.add(TextSpan(text: ' ${recipe.technique!}'));
     }
     
     // Add serves (normalized to just number)
     if (recipe.serves != null && recipe.serves!.isNotEmpty) {
       final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
       if (normalized.isNotEmpty) {
-        metadataItems.add(const TextSpan(text: '  •  '));
+        metadataItems.add(const TextSpan(text: '   '));
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurfaceVariant),
@@ -205,7 +209,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     if (recipe.time != null && recipe.time!.isNotEmpty) {
       final normalized = UnitNormalizer.normalizeTime(recipe.time!);
       if (normalized.isNotEmpty) {
-        metadataItems.add(const TextSpan(text: '  •  '));
+        metadataItems.add(const TextSpan(text: '   '));
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: theme.colorScheme.onSurfaceVariant),
@@ -216,8 +220,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     
     // Add difficulty
     if (recipe.difficulty != null && recipe.difficulty!.isNotEmpty) {
-      metadataItems.add(const TextSpan(text: '  •  '));
-      metadataItems.add(TextSpan(text: recipe.difficulty!));
+      metadataItems.add(const TextSpan(text: '   '));
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Icon(Icons.signal_cellular_alt, size: 12, color: theme.colorScheme.onSurfaceVariant),
+      ));
+      metadataItems.add(TextSpan(text: ' ${recipe.difficulty!}'));
     }
     
     if (metadataItems.isEmpty) {
@@ -270,14 +278,26 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
               child: Wrap(
-                spacing: 8,
+                spacing: 12,
                 runSpacing: 4,
-                children: recipe.equipment.map((item) => Text(
-                  item,
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                  ),
-                )).expand((widget) => [widget, Text(' • ', style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant.withOpacity(0.5)))]).take(recipe.equipment.length * 2 - 1).toList(),
+                children: recipe.equipment.map((item) => Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '•',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant.withOpacity(0.6),
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      item,
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ],
+                )).toList(),
               ),
             ),
         ],
@@ -351,7 +371,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 recipe.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 16,
+                  fontSize: 14,
                 ),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -359,9 +379,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 120,
+                end: 160,
               ),
-              expandedTitleScale: 1.2,
+              expandedTitleScale: 1.3,
               background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,

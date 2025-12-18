@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 
@@ -118,7 +119,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              recipe.time!,
+                              UnitNormalizer.normalizeTime(recipe.time!),
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),

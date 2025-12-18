@@ -363,7 +363,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
       if (normalized.isNotEmpty) {
         if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '  •  '));
+          metadataItems.add(const TextSpan(text: '   '));
         }
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
@@ -378,7 +378,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       final normalized = UnitNormalizer.normalizeTime(recipe.time!);
       if (normalized.isNotEmpty) {
         if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '  •  '));
+          metadataItems.add(const TextSpan(text: '   '));
         }
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
@@ -487,7 +487,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 recipe.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 16,
+                  fontSize: 14,
                 ),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -495,9 +495,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 120,
+                end: 160,
               ),
-              expandedTitleScale: 1.2,
+              expandedTitleScale: 1.3,
               background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,

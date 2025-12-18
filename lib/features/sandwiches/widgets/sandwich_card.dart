@@ -77,7 +77,9 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                       // Protein summary with themed dot + ingredient counts
                       Row(
                         children: [
-                          _buildProteinSummary(theme),
+                          Flexible(
+                            child: _buildProteinSummary(theme),
+                          ),
                           const SizedBox(width: 12),
                           Flexible(
                             child: _buildIngredientsSummary(theme),

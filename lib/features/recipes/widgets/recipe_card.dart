@@ -5,6 +5,7 @@ import '../models/cuisine.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colors.dart';
 
 /// Format serves to remove unnecessary decimals (e.g., "6.0" -> "6")
@@ -205,7 +206,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              widget.recipe.time!,
+                              UnitNormalizer.normalizeTime(widget.recipe.time!),
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),
