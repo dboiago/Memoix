@@ -280,7 +280,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   /// Build collapsible equipment section for side-by-side mode
   Widget _buildCollapsibleEquipment(ModernistRecipe recipe, ThemeData theme) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
+      padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
       child: Card(
         child: Theme(
           data: theme.copyWith(
@@ -291,7 +291,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             initiallyExpanded: _equipmentExpanded,
             onExpansionChanged: (expanded) => setState(() => _equipmentExpanded = expanded),
             title: Text(
-              'Equipment',
+              'Special Equipment',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
