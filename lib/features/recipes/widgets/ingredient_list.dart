@@ -295,120 +295,129 @@ class _IngredientListState extends State<IngredientList> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 8),
 
-            // Main content - Row layout: ingredients left, notes right-aligned
+            // Main content - Column for ingredient row + alternative below
             Expanded(
-              child: Row(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Left side: name, amount, and badges (wraps when needed)
-                  Expanded(
-                    child: Wrap(
-                      spacing: widget.isCompact ? 4 : 8,
-                      runSpacing: 4,
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [
-                        // Ingredient name
-                        Text(
-                          _capitalizeWords(ingredient.name),
-                          style: textStyle?.copyWith(
-                            decoration: isChecked ? TextDecoration.lineThrough : null,
-                            color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : null,
-                            fontWeight: FontWeight.w500,
-                          ),
+                  // First row: name, amount, badges inline with notes right-aligned
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Left side: name, amount, and badges (wraps when needed)
+                      Expanded(
+                        child: Wrap(
+                          spacing: widget.isCompact ? 4 : 8,
+                          runSpacing: 4,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          children: [
+                            // Ingredient name
+                            Text(
+                              _capitalizeWords(ingredient.name),
+                              style: textStyle?.copyWith(
+                                decoration: isChecked ? TextDecoration.lineThrough : null,
+                                color: isChecked
+                                    ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                    : null,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            
+                            // Amount
+                            if (amountText.isNotEmpty)
+                              Text(
+                                amountText,
+                                style: textStyle?.copyWith(
+                                  decoration: isChecked ? TextDecoration.lineThrough : null,
+                                  color: isChecked
+                                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                      : theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+
+                            // Baker's percentage badge
+                            if (hasBakerPercent)
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(
+                                    color: theme.colorScheme.secondary,
+                                    width: 1,
+                                  ),
+                                ),
+                                child: Text(
+                                  ingredient.bakerPercent!,
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    color: theme.colorScheme.secondary,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+
+                            // Optional badge (from field or parsed from notes)
+                            if (isOptional)
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(
+                                    color: theme.colorScheme.secondary,
+                                    width: 1,
+                                  ),
+                                ),
+                                child: Text(
+                                  'optional',
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    color: theme.colorScheme.secondary,
+                                    fontStyle: FontStyle.italic,
+                                  ),
+                                ),
+                              ),
+                          ],
                         ),
-                        
-                        // Amount
-                        if (amountText.isNotEmpty)
-                          Text(
-                            amountText,
+                      ),
+
+                      // Right side: Notes (right-aligned on same line)
+                      if (hasNotes)
+                        Padding(
+                          padding: const EdgeInsets.only(left: 8),
+                          child: Text(
+                            notesText,
                             style: textStyle?.copyWith(
                               decoration: isChecked ? TextDecoration.lineThrough : null,
                               color: isChecked
                                   ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                  : theme.colorScheme.onSurfaceVariant,
+                                  : theme.colorScheme.primary,
+                              fontStyle: FontStyle.italic,
                             ),
                           ),
-
-                        // Baker's percentage badge
-                        if (hasBakerPercent)
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                            decoration: BoxDecoration(
-                              color: theme.colorScheme.secondary.withOpacity(0.15),
-                              borderRadius: BorderRadius.circular(4),
-                              border: Border.all(
-                                color: theme.colorScheme.secondary,
-                                width: 1,
-                              ),
-                            ),
-                            child: Text(
-                              ingredient.bakerPercent!,
-                              style: theme.textTheme.labelSmall?.copyWith(
-                                color: theme.colorScheme.secondary,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-
-                        // Optional badge (from field or parsed from notes)
-                        if (isOptional)
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                            decoration: BoxDecoration(
-                              color: theme.colorScheme.secondary.withOpacity(0.15),
-                              borderRadius: BorderRadius.circular(4),
-                              border: Border.all(
-                                color: theme.colorScheme.secondary,
-                                width: 1,
-                              ),
-                            ),
-                            child: Text(
-                              'optional',
-                              style: theme.textTheme.labelSmall?.copyWith(
-                                color: theme.colorScheme.secondary,
-                                fontStyle: FontStyle.italic,
-                              ),
-                            ),
-                          ),
-
-                        // Alternative chip (parsed from notes)
-                        if (extractedAlt != null)
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                            decoration: BoxDecoration(
-                              color: theme.colorScheme.primary.withOpacity(0.15),
-                              borderRadius: BorderRadius.circular(4),
-                              border: Border.all(
-                                color: theme.colorScheme.primary,
-                                width: 1,
-                              ),
-                            ),
-                            child: Text(
-                              'alt: $extractedAlt',
-                              style: theme.textTheme.labelSmall?.copyWith(
-                                color: theme.colorScheme.primary,
-                                fontStyle: FontStyle.italic,
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
+                        ),
+                    ],
                   ),
-
-                  // Right side: Notes (right-aligned on same line)
-                  if (hasNotes)
+                  
+                  // Second row: Alternative chip (below the ingredient)
+                  if (extractedAlt != null)
                     Padding(
-                      padding: const EdgeInsets.only(left: 8),
-                      child: Text(
-                        notesText,
-                        style: textStyle?.copyWith(
-                          decoration: isChecked ? TextDecoration.lineThrough : null,
-                          color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
-                              : theme.colorScheme.primary,
-                          fontStyle: FontStyle.italic,
+                      padding: const EdgeInsets.only(top: 4),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.primary.withOpacity(0.15),
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: theme.colorScheme.primary,
+                            width: 1,
+                          ),
+                        ),
+                        child: Text(
+                          'alt: $extractedAlt',
+                          style: theme.textTheme.labelSmall?.copyWith(
+                            color: theme.colorScheme.primary,
+                            fontStyle: FontStyle.italic,
+                          ),
                         ),
                       ),
                     ),
