@@ -528,32 +528,34 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           // Hero header with recipe image or colored header
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
+            collapsedHeight: 100, // Ensure title stays below actions
             pinned: true,
             // Title area at the bottom that stays on its own line
             flexibleSpace: LayoutBuilder(
               builder: (context, constraints) {
                 final screenWidth = MediaQuery.sizeOf(context).width;
-                // Scale font: 20px at 320, up to 28px at 1200+
-                final expandedFontSize = (screenWidth / 45).clamp(20.0, 28.0);
-                final collapsedFontSize = (screenWidth / 55).clamp(16.0, 22.0);
+                // Scale font: 24px at 320, up to 36px at 1200+
+                final expandedFontSize = (screenWidth / 30).clamp(24.0, 36.0);
+                final collapsedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
                 
                 // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
                 final maxExtent = hasHeaderImage ? 250.0 : 120.0;
-                final minExtent = kToolbarHeight + MediaQuery.of(context).padding.top;
+                // Min extent is now the collapsed height (100) + status bar
+                final minExtent = 100.0 + MediaQuery.of(context).padding.top;
                 final currentExtent = constraints.maxHeight;
                 final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
                 
                 // Interpolate font size
                 final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
                 
-                // Calculate available width for title (accounting for back button and actions)
-                final availableWidth = screenWidth - 56 - 100 - 16; // start padding, end padding, extra margin
+                // Calculate available width for title (full width minus padding, since it's below actions)
+                final availableWidth = screenWidth - 32; 
                 
                 return FlexibleSpaceBar(
-                  titlePadding: EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 12,
-                    end: 100,
+                  titlePadding: const EdgeInsetsDirectional.only(
+                    start: 16,
+                    bottom: 16,
+                    end: 16,
                   ),
                   title: SizedBox(
                     width: availableWidth,
