@@ -494,7 +494,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   titlePadding: const EdgeInsetsDirectional.only(
                     start: 56,
                     bottom: 12,
-                    end: 100,
+                    end: 56,
                   ),
                   background: hasHeaderImage
                       ? Stack(

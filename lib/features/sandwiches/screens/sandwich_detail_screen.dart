@@ -302,7 +302,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                   titlePadding: EdgeInsetsDirectional.only(
                     start: 56,
                     bottom: 12,
-                    end: 100,
+                    end: 56,
                   ),
                   title: Text(
                     sandwich.name,

@@ -707,11 +707,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   titlePadding: EdgeInsetsDirectional.only(
                     start: 56,
                     bottom: 12,
-                    end: 100,
+                    end: 56,
                   ),
                   title: Text(
                     recipe.name,
-                    style: theme.textTheme.titleLarge?.copyWith(
+                    style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: fontSize,
                       color: hasHeaderImage && collapseRatio < 0.7 

@@ -318,7 +318,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                   titlePadding: EdgeInsetsDirectional.only(
                     start: 56,
                     bottom: 12,
-                    end: 100,
+                    end: 56,
                   ),
                   title: Text(
                     pizza.name,

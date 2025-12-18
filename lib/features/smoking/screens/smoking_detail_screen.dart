@@ -399,8 +399,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                   ),
                   titlePadding: const EdgeInsetsDirectional.only(
                     start: 56,
-                    bottom: 16,
-                    end: 160,
+                    bottom: 12,
+                    end: 56,
                   ),
                   background: hasHeaderImage
                       ? Stack(
