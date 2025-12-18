@@ -1554,7 +1554,6 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
   Future<void> _saveRecipe() async {
     if (_nameController.text.trim().isEmpty) {
       MemoixSnackBar.showError('Please enter a recipe name');
-      );
       return;
     }
 
