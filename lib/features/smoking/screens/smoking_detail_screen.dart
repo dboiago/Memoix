@@ -324,15 +324,17 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         onPressed: () async {
           await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
           if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Logged cook for ${recipe.name}'),
-                action: SnackBarAction(
-                  label: 'Stats',
-                  onPressed: () => AppRoutes.toStatistics(context),
+            ScaffoldMessenger.of(context)
+              ..clearSnackBars()
+              ..showSnackBar(
+                SnackBar(
+                  content: Text('Logged cook for ${recipe.name}'),
+                  action: SnackBarAction(
+                    label: 'Stats',
+                    onPressed: () => AppRoutes.toStatistics(context),
+                  ),
                 ),
-              ),
-            );
+              );
           }
         },
       ),
@@ -1014,15 +1016,17 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   void _logCook(BuildContext context, SmokingRecipe recipe) {
     ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
     ref.invalidate(allSmokingRecipesProvider);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Logged cook for ${recipe.name}'),
-        action: SnackBarAction(
-          label: 'Stats',
-          onPressed: () => AppRoutes.toStatistics(context),
+    ScaffoldMessenger.of(context)
+      ..clearSnackBars()
+      ..showSnackBar(
+        SnackBar(
+          content: Text('Logged cook for ${recipe.name}'),
+          action: SnackBarAction(
+            label: 'Stats',
+            onPressed: () => AppRoutes.toStatistics(context),
+          ),
         ),
-      ),
-    );
+      );
   }
 
   void _shareRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) {

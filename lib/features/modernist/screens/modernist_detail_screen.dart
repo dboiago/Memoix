@@ -352,15 +352,17 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         onPressed: () {
           ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
           ref.invalidate(modernistRecipeProvider(widget.recipeId));
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Logged cook for ${recipe.name}'),
-              action: SnackBarAction(
-                label: 'Stats',
-                onPressed: () => AppRoutes.toStatistics(context),
+          ScaffoldMessenger.of(context)
+            ..clearSnackBars()
+            ..showSnackBar(
+              SnackBar(
+                content: Text('Logged cook for ${recipe.name}'),
+                action: SnackBarAction(
+                  label: 'Stats',
+                  onPressed: () => AppRoutes.toStatistics(context),
+                ),
               ),
-            ),
-          );
+            );
         },
       ),
       IconButton(
@@ -1074,15 +1076,17 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   void _logCook(BuildContext context, ModernistRecipe recipe) {
     ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
     ref.invalidate(modernistRecipeProvider(widget.recipeId));
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Logged cook for ${recipe.name}'),
-        action: SnackBarAction(
-          label: 'Stats',
-          onPressed: () => AppRoutes.toStatistics(context),
+    ScaffoldMessenger.of(context)
+      ..clearSnackBars()
+      ..showSnackBar(
+        SnackBar(
+          content: Text('Logged cook for ${recipe.name}'),
+          action: SnackBarAction(
+            label: 'Stats',
+            onPressed: () => AppRoutes.toStatistics(context),
+          ),
         ),
-      ),
-    );
+      );
   }
 
   void _shareRecipe(BuildContext context, ModernistRecipe recipe) {

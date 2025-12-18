@@ -242,13 +242,15 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                       course: widget.recipe.course,
                       cuisine: widget.recipe.cuisine,
                     );
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('${widget.recipe.name} marked as cooked'),
-                        behavior: SnackBarBehavior.floating,
-                        duration: const Duration(seconds: 2),
-                      ),
-                    );
+                    ScaffoldMessenger.of(context)
+                      ..clearSnackBars()
+                      ..showSnackBar(
+                        SnackBar(
+                          content: Text('${widget.recipe.name} marked as cooked'),
+                          behavior: SnackBarBehavior.floating,
+                          duration: const Duration(seconds: 2),
+                        ),
+                      );
                   },
                   padding: const EdgeInsets.all(8),
                   constraints: const BoxConstraints(),

@@ -1502,43 +1502,32 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       final recipeName = recipe.name;
 
       if (mounted) {
-        // Pop first, then show snackbar on parent screen
-        Navigator.of(context).pop();
+        // Capture references before popping
+        final messenger = ScaffoldMessenger.of(context);
+        final navigator = Navigator.of(context);
         
-        // Use a post-frame callback to ensure we're on the parent screen
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (!mounted) return;
-          ScaffoldMessenger.of(context)
-            ..clearSnackBars()
-            ..showSnackBar(
-              SnackBar(
-                content: GestureDetector(
-                  behavior: HitTestBehavior.opaque,
-                  onTap: () {
-                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => RecipeDetailScreen(recipeId: savedId),
-                      ),
-                    );
-                  },
-                  child: Row(
-                    children: [
-                      Expanded(child: Text('$recipeName saved')),
-                      const Text(
-                        'View',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                duration: const Duration(seconds: 4),
+        // Pop first
+        navigator.pop();
+        
+        // Show snackbar with proper SnackBarAction (like Stats button)
+        messenger
+          ..clearSnackBars()
+          ..showSnackBar(
+            SnackBar(
+              content: Text('$recipeName saved'),
+              action: SnackBarAction(
+                label: 'View',
+                onPressed: () {
+                  navigator.push(
+                    MaterialPageRoute(
+                      builder: (_) => RecipeDetailScreen(recipeId: savedId),
+                    ),
+                  );
+                },
               ),
-            );
-        });
+              duration: const Duration(seconds: 4),
+            ),
+          );
       }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(

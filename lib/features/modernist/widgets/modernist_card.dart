@@ -163,13 +163,15 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                     color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
                       ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('${recipe.name} marked as made'),
-                          behavior: SnackBarBehavior.floating,
-                          duration: const Duration(seconds: 2),
-                        ),
-                      );
+                      ScaffoldMessenger.of(context)
+                        ..clearSnackBars()
+                        ..showSnackBar(
+                          SnackBar(
+                            content: Text('${recipe.name} marked as made'),
+                            behavior: SnackBarBehavior.floating,
+                            duration: const Duration(seconds: 2),
+                          ),
+                        );
                     },
                     padding: const EdgeInsets.all(8),
                     constraints: const BoxConstraints(),

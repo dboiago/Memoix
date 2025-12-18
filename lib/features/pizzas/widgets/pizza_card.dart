@@ -133,13 +133,15 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                     onPressed: () async {
                       await ref.read(pizzaRepositoryProvider).incrementCookCount(widget.pizza);
                       if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('${widget.pizza.name} marked as cooked'),
-                            behavior: SnackBarBehavior.floating,
-                            duration: const Duration(seconds: 2),
-                          ),
-                        );
+                        ScaffoldMessenger.of(context)
+                          ..clearSnackBars()
+                          ..showSnackBar(
+                            SnackBar(
+                              content: Text('${widget.pizza.name} marked as cooked'),
+                              behavior: SnackBarBehavior.floating,
+                              duration: const Duration(seconds: 2),
+                            ),
+                          );
                       }
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),

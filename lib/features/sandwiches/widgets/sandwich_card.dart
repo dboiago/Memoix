@@ -112,13 +112,15 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                     onPressed: () async {
                       await ref.read(sandwichRepositoryProvider).incrementCookCount(widget.sandwich);
                       if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('${widget.sandwich.name} marked as made'),
-                            behavior: SnackBarBehavior.floating,
-                            duration: const Duration(seconds: 2),
-                          ),
-                        );
+                        ScaffoldMessenger.of(context)
+                          ..clearSnackBars()
+                          ..showSnackBar(
+                            SnackBar(
+                              content: Text('${widget.sandwich.name} marked as made'),
+                              behavior: SnackBarBehavior.floating,
+                              duration: const Duration(seconds: 2),
+                            ),
+                          );
                       }
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),

@@ -458,15 +458,17 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ref.invalidate(recipeCookCountProvider(recipe.uuid));
           ref.invalidate(recipeLastCookProvider(recipe.uuid));
           if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Logged cook for ${recipe.name}'),
-                action: SnackBarAction(
-                  label: 'Stats',
-                  onPressed: () => AppRoutes.toStatistics(context),
+            ScaffoldMessenger.of(context)
+              ..clearSnackBars()
+              ..showSnackBar(
+                SnackBar(
+                  content: Text('Logged cook for ${recipe.name}'),
+                  action: SnackBarAction(
+                    label: 'Stats',
+                    onPressed: () => AppRoutes.toStatistics(context),
+                  ),
                 ),
-              ),
-            );
+              );
           }
         },
       ),
@@ -1081,15 +1083,17 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     ref.invalidate(recipeCookCountProvider(recipe.uuid));
     ref.invalidate(recipeLastCookProvider(recipe.uuid));
     if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Logged cook for ${recipe.name}'),
-          action: SnackBarAction(
-            label: 'Stats',
-            onPressed: () => AppRoutes.toStatistics(context),
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          SnackBar(
+            content: Text('Logged cook for ${recipe.name}'),
+            action: SnackBarAction(
+              label: 'Stats',
+              onPressed: () => AppRoutes.toStatistics(context),
+            ),
           ),
-        ),
-      );
+        );
     }
   }
 

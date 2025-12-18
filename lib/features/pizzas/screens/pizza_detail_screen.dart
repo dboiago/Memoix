@@ -307,15 +307,17 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
         onPressed: () async {
           await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
           if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Logged cook for ${pizza.name}'),
-                action: SnackBarAction(
-                  label: 'Stats',
-                  onPressed: () => AppRoutes.toStatistics(context),
+            ScaffoldMessenger.of(context)
+              ..clearSnackBars()
+              ..showSnackBar(
+                SnackBar(
+                  content: Text('Logged cook for ${pizza.name}'),
+                  action: SnackBarAction(
+                    label: 'Stats',
+                    onPressed: () => AppRoutes.toStatistics(context),
+                  ),
                 ),
-              ),
-            );
+              );
           }
         },
       ),
@@ -386,15 +388,17 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
   Future<void> _logCook(BuildContext context, Pizza pizza) async {
     await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
     if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Logged cook for ${pizza.name}'),
-          action: SnackBarAction(
-            label: 'Stats',
-            onPressed: () => AppRoutes.toStatistics(context),
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          SnackBar(
+            content: Text('Logged cook for ${pizza.name}'),
+            action: SnackBarAction(
+              label: 'Stats',
+              onPressed: () => AppRoutes.toStatistics(context),
+            ),
           ),
-        ),
-      );
+        );
     }
   }
 
