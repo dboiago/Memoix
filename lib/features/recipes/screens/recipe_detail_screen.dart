@@ -258,7 +258,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             IconButton(
                               icon: Icon(
                                 Icons.arrow_back,
-                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
+                                color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
                               ),
                               onPressed: () => Navigator.of(context).pop(),
                             ),
@@ -345,7 +345,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   /// Build action icons for the Rich Header (with appropriate colors for image/no-image states)
   List<Widget> _buildRichHeaderActions(BuildContext context, Recipe recipe, ThemeData theme, bool hasHeaderImage) {
-    final iconColor = hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
+    final iconColor = hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface;
     
     return [
       IconButton(

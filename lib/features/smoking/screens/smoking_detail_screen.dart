@@ -76,7 +76,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
-    final headerColor = hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
+    final headerColor = hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface;
 
     return Scaffold(
       body: Column(
@@ -151,7 +151,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                       // Compact metadata row
                       Padding(
                         padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
-                        child: _buildCompactMetadataRow(recipe, theme, overrideColor: hasHeaderImage ? Colors.white70 : null),
+                        child: _buildCompactMetadataRow(recipe, theme, overrideColor: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : null),
                       ),
                     ],
                   ),

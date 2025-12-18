@@ -134,7 +134,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                             IconButton(
                               icon: Icon(
                                 Icons.arrow_back,
-                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
+                                color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
                               ),
                               onPressed: () => Navigator.of(context).pop(),
                             ),
@@ -160,9 +160,9 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                                     style: theme.textTheme.headlineMedium?.copyWith(
                                       fontWeight: FontWeight.bold,
                                       fontSize: baseFontSize,
-                                      color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
+                                      color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
                                       shadows: hasHeaderImage
-                                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                          ? [Shadow(blurRadius: 4, color: theme.colorScheme.surface.withOpacity(0.7))]
                                           : null,
                                     ),
                                   ),
@@ -175,7 +175,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                         // Row 3: Protein indicator
                         Padding(
                           padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 4.0),
-                          child: _buildProteinIndicator(sandwich, theme, overrideColor: hasHeaderImage ? Colors.white70 : null),
+                          child: _buildProteinIndicator(sandwich, theme, overrideColor: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : null),
                         ),
                       ],
                     ),
@@ -233,7 +233,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
 
   /// Build action icons for the Rich Header (with appropriate colors for image/no-image states)
   List<Widget> _buildRichHeaderActions(BuildContext context, WidgetRef ref, ThemeData theme, Sandwich sandwich, bool hasHeaderImage) {
-    final iconColor = hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
+    final iconColor = hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface;
     
     return [
       IconButton(
