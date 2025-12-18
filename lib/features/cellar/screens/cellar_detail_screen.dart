@@ -1,8 +1,8 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
@@ -54,162 +54,70 @@ class _CellarDetailView extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
     final hasHeaderImage = showHeaderImages && entry.imageUrl != null && entry.imageUrl!.isNotEmpty;
 
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          // Hero header
-          SliverAppBar(
-            expandedHeight: hasHeaderImage ? 250 : 120,
-            pinned: true,
-            flexibleSpace: LayoutBuilder(
-              builder: (context, constraints) {
-                final expandRatio = (constraints.maxHeight - kToolbarHeight) /
-                    ((hasHeaderImage ? 250 : 120) - kToolbarHeight);
-                final clampedRatio = expandRatio.clamp(0.0, 1.0);
-                final fontSize = 14 + (clampedRatio * 6);
-                
-                return FlexibleSpaceBar(
-                  title: Row(
-                    children: [
-                      Expanded(
-                        child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            entry.name,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: fontSize,
-                            ),
-                            maxLines: 1,
+      body: Column(
+        children: [
+          MemoixHeader(
+            title: entry.name,
+            headerImage: showHeaderImages ? entry.imageUrl : null,
+            isFavorite: entry.isFavorite,
+            useChipMetadata: true,
+            metadataChips: _buildChipMetadata(theme),
+            onFavoritePressed: () async {
+              await ref.read(cellarRepositoryProvider).toggleFavorite(entry);
+              ref.invalidate(allCellarEntriesProvider);
+            },
+            onEditPressed: () => AppRoutes.toCellarEdit(context, entryId: entry.uuid),
+            onDuplicatePressed: () => _duplicateEntry(context, ref),
+            onDeletePressed: () => _confirmDelete(context, ref),
+          ),
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                // Tasting notes section (always shown, with placeholder if empty)
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Tasting Notes',
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                  titlePadding: const EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 16,
-                    end: 160,
-                  ),
-                  background: hasHeaderImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            _buildHeaderBackground(theme),
-                            // Gradient scrim for legibility
-                            const DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black54,
-                                  ],
-                                  stops: [0.5, 1.0],
-                                ),
-                              ),
+                        const SizedBox(height: 12),
+                        if (entry.tastingNotes != null && entry.tastingNotes!.isNotEmpty)
+                          Text(
+                            entry.tastingNotes!,
+                            style: theme.textTheme.bodyMedium,
+                          )
+                        else
+                          Text(
+                            'No tasting notes added.',
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              fontStyle: FontStyle.italic,
+                              color: theme.colorScheme.outline,
                             ),
-                          ],
-                        )
-                      : Container(color: theme.colorScheme.surfaceContainerHighest),
-                );
-              },
-            ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  entry.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: entry.isFavorite ? theme.colorScheme.secondary : null,
-                ),
-                onPressed: () async {
-                  await ref.read(cellarRepositoryProvider).toggleFavorite(entry);
-                  ref.invalidate(allCellarEntriesProvider);
-                },
-              ),
-              PopupMenuButton<String>(
-                onSelected: (value) => _handleMenuAction(context, ref, value),
-                itemBuilder: (context) => [
-                  const PopupMenuItem(
-                    value: 'edit',
-                    child: Text('Edit'),
-                  ),
-                  const PopupMenuItem(
-                    value: 'duplicate',
-                    child: Text('Duplicate'),
-                  ),
-                  PopupMenuItem(
-                    value: 'delete',
-                    child: Text(
-                      'Delete',
-                      style: TextStyle(color: theme.colorScheme.secondary),
+                          ),
+                      ],
                     ),
                   ),
-                ],
-                icon: const Icon(Icons.more_vert),
-              ),
-            ],
-          ),
-
-          // Metadata chips (only show populated fields)
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: _buildMetadataChips(theme),
-            ),
-          ),
-
-          // Tasting notes section (always shown, with placeholder if empty)
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Tasting Notes',
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      if (entry.tastingNotes != null && entry.tastingNotes!.isNotEmpty)
-                        Text(
-                          entry.tastingNotes!,
-                          style: theme.textTheme.bodyMedium,
-                        )
-                      else
-                        Text(
-                          'No tasting notes added.',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            fontStyle: FontStyle.italic,
-                            color: theme.colorScheme.outline,
-                          ),
-                        ),
-                    ],
-                  ),
                 ),
-              ),
+                const SizedBox(height: 32),
+              ],
             ),
-          ),
-
-          // Bottom padding
-          const SliverToBoxAdapter(
-            child: SizedBox(height: 32),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildMetadataChips(ThemeData theme) {
+  Widget _buildChipMetadata(ThemeData theme) {
     final chips = <Widget>[];
 
     // Buy status
@@ -234,7 +142,6 @@ class _CellarDetailView extends ConsumerWidget {
 
     // Producer (use 2-letter country code in ALL CAPS - e.g., "ZA" not "Za")
     if (entry.producer != null && entry.producer!.isNotEmpty) {
-      // Get the cuisine to extract the code, or uppercase the producer
       final cuisine = Cuisine.byCode(entry.producer!);
       final displayCode = cuisine != null ? cuisine.code : entry.producer!.toUpperCase();
       chips.add(Chip(
@@ -290,73 +197,37 @@ class _CellarDetailView extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeaderBackground(ThemeData theme) {
-    if (entry.imageUrl == null || entry.imageUrl!.isEmpty) {
-      return Container(
-        color: theme.colorScheme.surfaceContainerHighest,
-      );
-    }
-
-    if (entry.imageUrl!.startsWith('http://') || entry.imageUrl!.startsWith('https://')) {
-      return Image.network(
-        entry.imageUrl!,
-        fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => Container(
-          color: theme.colorScheme.surfaceContainerHighest,
-        ),
-      );
-    } else {
-      return Image.file(
-        File(entry.imageUrl!),
-        fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => Container(
-          color: theme.colorScheme.surfaceContainerHighest,
-        ),
-      );
-    }
-  }
-
-  void _handleMenuAction(BuildContext context, WidgetRef ref, String action) async {
-    switch (action) {
-      case 'edit':
-        AppRoutes.toCellarEdit(context, entryId: entry.uuid);
-        break;
-      case 'duplicate':
-        _duplicateEntry(context, ref);
-        break;
-      case 'delete':
-        final theme = Theme.of(context);
-        final confirmed = await showDialog<bool>(
-          context: context,
-          builder: (ctx) => AlertDialog(
-            title: const Text('Delete Entry?'),
-            content: Text('Are you sure you want to delete "${entry.name}"?'),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(ctx, false),
-                child: const Text('Cancel'),
-              ),
-              FilledButton(
-                onPressed: () => Navigator.pop(ctx, true),
-                style: FilledButton.styleFrom(
-                  backgroundColor: theme.colorScheme.secondary,
-                ),
-                child: const Text('Delete'),
-              ),
-            ],
+  Future<void> _confirmDelete(BuildContext context, WidgetRef ref) async {
+    final theme = Theme.of(context);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Delete Entry?'),
+        content: Text('Are you sure you want to delete "${entry.name}"?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel'),
           ),
-        );
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: FilledButton.styleFrom(
+              backgroundColor: theme.colorScheme.secondary,
+            ),
+            child: const Text('Delete'),
+          ),
+        ],
+      ),
+    );
 
-        if (confirmed == true) {
-          await ref.read(cellarRepositoryProvider).deleteEntry(entry.id);
-          if (context.mounted) {
-            Navigator.of(context).pop();
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('${entry.name} deleted')),
-            );
-          }
-        }
-        break;
+    if (confirmed == true) {
+      await ref.read(cellarRepositoryProvider).deleteEntry(entry.id);
+      if (context.mounted) {
+        Navigator.of(context).pop();
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('${entry.name} deleted')),
+        );
+      }
     }
   }
 

@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../../shared/widgets/memoix_header.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/split_smoking_view.dart';
@@ -76,83 +77,46 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
-    final headerColor = hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface;
 
     return Scaffold(
       body: Column(
         children: [
           // Rich Fixed Header
-          Container(
-            decoration: BoxDecoration(
-              color: theme.colorScheme.surfaceContainerHighest,
-              image: hasHeaderImage
-                  ? DecorationImage(
-                      image: NetworkImage(headerImage!),
-                      fit: BoxFit.cover,
-                    )
-                  : null,
-            ),
-            child: Stack(
-              children: [
-                // Gradient overlay for image legibility
-                if (hasHeaderImage)
-                  Positioned.fill(
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [Colors.black26, Colors.black54],
-                        ),
-                      ),
-                    ),
-                  ),
-                // SafeArea inside so background bleeds behind status bar
-                SafeArea(
-                  bottom: false,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      // Row 1: Back button + action icons
-                      Row(
-                        children: [
-                          IconButton(
-                            icon: Icon(Icons.arrow_back, color: headerColor),
-                            onPressed: () => Navigator.of(context).pop(),
-                          ),
-                          const Spacer(),
-                          ..._buildRichHeaderActions(context, recipe, theme, headerColor),
-                        ],
-                      ),
-                      // Row 2: Recipe title (wraps to 2 lines max)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Text(
-                          recipe.name,
-                          style: theme.textTheme.headlineSmall?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: headerColor,
-                            shadows: hasHeaderImage
-                                ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                : null,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      // Compact metadata row
-                      Padding(
-                        padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
-                        child: _buildCompactMetadataRow(recipe, theme, overrideColor: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : null),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+          MemoixHeader(
+            title: recipe.name,
+            isFavorite: recipe.isFavorite,
+            useChipMetadata: false, // Side-by-side uses compact text row
+            headerImage: hasHeaderImage ? headerImage : null,
+            metadataChips: _buildChipMetadata(context, recipe, theme),
+            compactMetadata: _buildCompactMetadataRow(recipe, theme, overrideColor: null),
+            onToggleFavorite: () async {
+              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+              ref.invalidate(allSmokingRecipesProvider);
+            },
+            onLogCook: () async {
+              await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+                );
+              }
+            },
+            onShare: () => _shareRecipe(context, ref, recipe),
+            onMenuSelected: (value) {
+              switch (value) {
+                case 'edit':
+                  _editRecipe(context, recipe);
+                  break;
+                case 'duplicate':
+                  _duplicateRecipe(context, ref, recipe);
+                  break;
+                case 'delete':
+                  _confirmDelete(context, ref, recipe);
+                  break;
+              }
+            },
           ),
+
           // Scrollable content
           Expanded(
             child: SplitSmokingView(
@@ -165,60 +129,112 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     );
   }
 
-  /// Build action icons for the rich header
-  List<Widget> _buildRichHeaderActions(BuildContext context, SmokingRecipe recipe, ThemeData theme, Color iconColor) {
-    return [
-      IconButton(
-        icon: Icon(
-          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: recipe.isFavorite ? theme.colorScheme.secondary : iconColor,
-        ),
-        onPressed: () async {
-          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
-          ref.invalidate(allSmokingRecipesProvider);
-        },
-      ),
-      IconButton(
-        icon: Icon(Icons.check_circle_outline, color: iconColor),
-        tooltip: 'I made this',
-        onPressed: () async {
-          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
-          if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${recipe.name}!')),
-            );
-          }
-        },
-      ),
-      IconButton(
-        icon: Icon(Icons.share, color: iconColor),
-        onPressed: () => _shareRecipe(context, ref, recipe),
-      ),
-      PopupMenuButton<String>(
-        onSelected: (value) {
-          switch (value) {
-            case 'edit':
-              _editRecipe(context, recipe);
-              break;
-            case 'duplicate':
-              _duplicateRecipe(context, ref, recipe);
-              break;
-            case 'delete':
-              _confirmDelete(context, ref, recipe);
-              break;
-          }
-        },
-        itemBuilder: (ctx) => [
-          const PopupMenuItem(value: 'edit', child: Text('Edit')),
-          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-          PopupMenuItem(
-            value: 'delete',
-            child: Text('Delete', style: TextStyle(color: theme.colorScheme.secondary)),
+  /// Build chip-style metadata (for normal scrolling views).
+  Widget _buildChipMetadata(BuildContext context, SmokingRecipe recipe, ThemeData theme) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isCompact = screenWidth < 600;
+    final chipFontSize = isCompact ? 11.0 : 12.0;
+
+    return Wrap(
+      spacing: 6,
+      runSpacing: 4,
+      children: [
+        // Category with colored dot
+        if (recipe.category != null)
+          Chip(
+            avatar: Container(
+              width: 12,
+              height: 12,
+              decoration: BoxDecoration(
+                color: MemoixColors.forSmokedItemDot(recipe.category),
+                shape: BoxShape.circle,
+              ),
+            ),
+            label: Text(recipe.category!),
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            labelStyle: TextStyle(
+              color: theme.colorScheme.onSurface,
+              fontSize: chipFontSize,
+            ),
+            visualDensity: VisualDensity.compact,
+            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            padding: EdgeInsets.zero,
           ),
+        
+        // Pit Note specific: Temperature, Time, Wood
+        if (recipe.type == SmokingType.pitNote) ...[
+          if (recipe.temperature.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.thermostat, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(UnitNormalizer.normalizeTemperature(recipe.temperature)),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(
+                color: theme.colorScheme.onSurface,
+                fontSize: chipFontSize,
+              ),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+          if (recipe.time.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(
+                color: theme.colorScheme.onSurface,
+                fontSize: chipFontSize,
+              ),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+          if (recipe.wood.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.park, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(recipe.wood),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(
+                color: theme.colorScheme.onSurface,
+                fontSize: chipFontSize,
+              ),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
         ],
-        icon: Icon(Icons.more_vert, color: iconColor),
-      ),
-    ];
+        
+        // Recipe type: Serves, Time
+        if (recipe.type == SmokingType.recipe) ...[
+          if (recipe.serves != null && recipe.serves!.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(UnitNormalizer.normalizeServes(recipe.serves!)),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(
+                color: theme.colorScheme.onSurface,
+                fontSize: chipFontSize,
+              ),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+          if (recipe.time.isNotEmpty)
+            Chip(
+              avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
+              backgroundColor: theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(
+                color: theme.colorScheme.onSurface,
+                fontSize: chipFontSize,
+              ),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
+            ),
+        ],
+      ],
+    );
   }
 
   /// Build compact metadata row for side-by-side mode
@@ -358,157 +374,58 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
 
   Widget _buildStandardLayout(BuildContext context, ThemeData theme, SmokingRecipe recipe) {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
-    final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasStepImages = recipe.stepImages.isNotEmpty;
-    return CustomScrollView(
-        controller: _scrollController,
-        slivers: [
-          // App bar with image
-          SliverAppBar(
-            expandedHeight: hasHeaderImage ? 250 : 120,
-            pinned: true,
-            flexibleSpace: LayoutBuilder(
-              builder: (context, constraints) {
-                final expandRatio = (constraints.maxHeight - kToolbarHeight) /
-                    ((hasHeaderImage ? 250 : 120) - kToolbarHeight);
-                final clampedRatio = expandRatio.clamp(0.0, 1.0);
-                final screenWidth = MediaQuery.sizeOf(context).width;
-                // Expanded: 20-28pt, Collapsed: 18-24pt (interpolated by clampedRatio)
-                final expandedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
-                final collapsedFontSize = (screenWidth / 50).clamp(18.0, 24.0);
-                final fontSize = collapsedFontSize + (clampedRatio * (expandedFontSize - collapsedFontSize));
-                
-                return FlexibleSpaceBar(
-                  title: Text(
-                    recipe.name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: fontSize,
-                      color: hasHeaderImage && clampedRatio > 0.3 
-                          ? theme.colorScheme.onSurfaceVariant 
-                          : theme.colorScheme.onSurface,
-                      shadows: hasHeaderImage && clampedRatio > 0.3
-                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                          : null,
-                    ),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  titlePadding: const EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 12,
-                    end: 56,
-                  ),
-                  background: hasHeaderImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            _buildSingleImage(context, headerImage),
-                            // Gradient scrim for legibility
-                            const DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black54,
-                                  ],
-                                  stops: [0.5, 1.0],
-                                ),
-                              ),
-                            ),
-                          ],
-                        )
-                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+    
+    return Scaffold(
+      body: Column(
+        children: [
+          // 1. THE RICH HEADER - Fixed at top, does not scroll
+          MemoixHeader(
+            title: recipe.name,
+            isFavorite: recipe.isFavorite,
+            useChipMetadata: true, // Normal mode uses chips
+            headerImage: hasHeaderImage ? headerImage : null,
+            metadataChips: _buildChipMetadata(context, recipe, theme),
+            compactMetadata: _buildCompactMetadataRow(recipe, theme, overrideColor: null),
+            onToggleFavorite: () async {
+              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+              ref.invalidate(allSmokingRecipesProvider);
+            },
+            onLogCook: () async {
+              await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Logged cook for ${recipe.name}!')),
                 );
-              },
-            ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: recipe.isFavorite ? theme.colorScheme.secondary : null,
-                ),
-                onPressed: () async {
-                  await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
-                  ref.invalidate(allSmokingRecipesProvider);
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.check_circle_outline),
-                tooltip: 'I made this',
-                onPressed: () async {
-                  await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Logged cook for ${recipe.name}!'),
-                      ),
-                    );
-                  }
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.share),
-                onPressed: () => _shareRecipe(context, ref, recipe),
-              ),
-              PopupMenuButton<String>(
-                onSelected: (value) {
-                  switch (value) {
-                    case 'edit':
-                      _editRecipe(context, recipe);
-                      break;
-                    case 'duplicate':
-                      _duplicateRecipe(context, ref, recipe);
-                      break;
-                    case 'delete':
-                      _confirmDelete(context, ref, recipe);
-                      break;
-                  }
-                },
-                itemBuilder: (ctx) => [
-                  const PopupMenuItem(
-                    value: 'edit',
-                    child: Text('Edit'),
-                  ),
-                  const PopupMenuItem(
-                    value: 'duplicate',
-                    child: Text('Duplicate'),
-                  ),
-                  PopupMenuItem(
-                    value: 'delete',
-                    child: Text(
-                      'Delete',
-                      style: TextStyle(color: theme.colorScheme.secondary),
-                    ),
-                  ),
-                ],
-                icon: const Icon(Icons.more_vert),
-              ),
-            ],
+              }
+            },
+            onShare: () => _shareRecipe(context, ref, recipe),
+            onMenuSelected: (value) {
+              switch (value) {
+                case 'edit':
+                  _editRecipe(context, recipe);
+                  break;
+                case 'duplicate':
+                  _duplicateRecipe(context, ref, recipe);
+                  break;
+                case 'delete':
+                  _confirmDelete(context, ref, recipe);
+                  break;
+              }
+            },
           ),
 
-              // Recipe details - styled like regular recipe page
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Quick info chips (category, temperature, time, wood)
-                      _buildQuickInfo(context, recipe),
-                    ],
-                  ),
-                ),
-              ),
-              
-              // Ingredients and Directions - always stacked in standard mode
-              SliverToBoxAdapter(
-                child: LayoutBuilder(
+          // 2. THE CONTENT - Scrollable
+          Expanded(
+            child: ListView(
+              controller: _scrollController,
+              padding: EdgeInsets.zero,
+              children: [
+                // Ingredients and Directions
+                LayoutBuilder(
                   builder: (context, constraints) {
                     // On very wide screens (>800px), use side-by-side
                     final useWideLayout = constraints.maxWidth > 800;
@@ -589,22 +506,18 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     );
                   },
                 ),
-              ),
 
-              // Step Images Gallery (under directions, before notes)
-              if (hasStepImages)
-                SliverToBoxAdapter(
-                  key: _stepImagesKey,
-                  child: Padding(
+                // Step Images Gallery (under directions, before notes)
+                if (hasStepImages)
+                  Padding(
+                    key: _stepImagesKey,
                     padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
                     child: _buildStepImagesGallery(theme, recipe),
                   ),
-                ),
 
-              // Notes section (if present)
-              if (recipe.notes != null && recipe.notes!.isNotEmpty)
-                SliverToBoxAdapter(
-                  child: Padding(
+                // Notes section (if present)
+                if (recipe.notes != null && recipe.notes!.isNotEmpty)
+                  Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Card(
                       child: Padding(
@@ -628,14 +541,15 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                       ),
                     ),
                   ),
-                ),
-                
-              // Bottom padding
-              const SliverToBoxAdapter(
-                child: SizedBox(height: 32),
-              ),
-            ],
-          );
+                  
+                // Bottom padding
+                const SizedBox(height: 32),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
   
   /// Build an ingredient section with header and checkable list

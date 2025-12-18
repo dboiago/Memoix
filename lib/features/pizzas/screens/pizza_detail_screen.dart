@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
@@ -72,125 +73,32 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
   }
 
   Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, Pizza pizza, bool hasHeaderImage) {
-    final screenWidth = MediaQuery.sizeOf(context).width;
-    final isCompact = screenWidth < 600;
-    // Scale font size with screen width: 20px at 320, up to 28px at 1200+
-    final baseFontSize = (screenWidth / 40).clamp(20.0, 28.0);
-
     return Scaffold(
       // No appBar - we build the header as part of the body
       body: Column(
         children: [
           // 1. THE RICH HEADER - Fixed at top, does not scroll
-          Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              // Default solid color from theme
-              color: theme.colorScheme.surfaceContainerHighest,
-              // Optional background image if user has set one
-              image: hasHeaderImage
-                  ? DecorationImage(
-                      image: pizza.imageUrl!.startsWith('http')
-                          ? NetworkImage(pizza.imageUrl!) as ImageProvider
-                          : FileImage(File(pizza.imageUrl!)),
-                      fit: BoxFit.cover,
-                    )
-                  : null,
-            ),
-            child: Stack(
-              children: [
-                // Semi-transparent overlay for text legibility when image is present
-                if (hasHeaderImage)
-                  Positioned.fill(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.black.withOpacity(0.3),
-                            Colors.black.withOpacity(0.6),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                // Content inside SafeArea (icons and title stay within safe bounds)
-                SafeArea(
-                  bottom: false, // Only pad for status bar, not bottom
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 16.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        // Row 1: Navigation Icon (Left) + Action Icons (Right)
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            // Back button
-                            IconButton(
-                              icon: Icon(
-                                Icons.arrow_back,
-                                color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
-                              ),
-                              onPressed: () => Navigator.of(context).pop(),
-                            ),
-                            // Action icons row
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: _buildRichHeaderActions(context, ref, theme, pizza, hasHeaderImage),
-                            ),
-                          ],
-                        ),
-
-                        // Row 2: Title (wraps to 2 lines max)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: Text(
-                            pizza.name,
-                            style: theme.textTheme.headlineMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                              fontSize: baseFontSize,
-                              color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
-                              shadows: hasHeaderImage
-                                  ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                  : null,
-                            ),
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-
-                        // Row 3: Base sauce indicator
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 4.0),
-                          child: Row(
-                            children: [
-                              Container(
-                                width: 8,
-                                height: 8,
-                                margin: const EdgeInsets.only(right: 4),
-                                decoration: BoxDecoration(
-                                  color: MemoixColors.forPizzaBaseDot(pizza.base.name),
-                                  shape: BoxShape.circle,
-                                ),
-                              ),
-                              Text(
-                                pizza.base.displayName,
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+          MemoixHeader(
+            title: pizza.name,
+            isFavorite: pizza.isFavorite,
+            useChipMetadata: false, // Side-by-side uses compact text row
+            headerImage: hasHeaderImage ? pizza.imageUrl : null,
+            metadataChips: _buildChipMetadata(context, pizza, theme),
+            compactMetadata: _buildCompactMetadata(pizza, theme),
+            onToggleFavorite: () async {
+              await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+              ref.invalidate(allPizzasProvider);
+            },
+            onLogCook: () async {
+              await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Logged cook for ${pizza.name}!')),
+                );
+              }
+            },
+            onShare: () => _sharePizza(context, ref, pizza),
+            onMenuSelected: (value) => _handleMenuAction(context, ref, pizza, value),
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -239,170 +147,124 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
     );
   }
 
-  /// Build action icons for the Rich Header (with appropriate colors for image/no-image states)
-  List<Widget> _buildRichHeaderActions(BuildContext context, WidgetRef ref, ThemeData theme, Pizza pizza, bool hasHeaderImage) {
-    final iconColor = hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface;
-    
-    return [
-      IconButton(
-        icon: Icon(
-          pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: pizza.isFavorite ? theme.colorScheme.secondary : iconColor,
+  /// Build chip-style metadata (for normal scrolling views).
+  Widget _buildChipMetadata(BuildContext context, Pizza pizza, ThemeData theme) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isCompact = screenWidth < 600;
+    final chipFontSize = isCompact ? 11.0 : 12.0;
+
+    return Wrap(
+      spacing: 6,
+      runSpacing: 4,
+      children: [
+        // Base sauce chip
+        Chip(
+          label: Text(pizza.base.displayName),
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          labelStyle: TextStyle(
+            color: theme.colorScheme.onSurface,
+            fontSize: chipFontSize,
+          ),
+          visualDensity: VisualDensity.compact,
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          padding: EdgeInsets.zero,
         ),
-        onPressed: () async {
-          await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
-          ref.invalidate(allPizzasProvider);
-        },
-      ),
-      IconButton(
-        icon: Icon(Icons.check_circle_outline, color: iconColor),
-        tooltip: 'I made this',
-        onPressed: () async {
-          await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
-          if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${pizza.name}!')),
-            );
-          }
-        },
-      ),
-      IconButton(
-        icon: Icon(Icons.share, color: iconColor),
-        onPressed: () => _sharePizza(context, ref, pizza),
-      ),
-      PopupMenuButton<String>(
-        onSelected: (value) => _handleMenuAction(context, ref, pizza, value),
-        itemBuilder: (context) => [
-          const PopupMenuItem(
-            value: 'edit',
-            child: Text('Edit'),
+      ],
+    );
+  }
+
+  /// Build compact metadata row for side-by-side mode.
+  Widget _buildCompactMetadata(Pizza pizza, ThemeData theme) {
+    final textColor = theme.colorScheme.onSurfaceVariant;
+    
+    return Row(
+      children: [
+        Container(
+          width: 8,
+          height: 8,
+          margin: const EdgeInsets.only(right: 4),
+          decoration: BoxDecoration(
+            color: MemoixColors.forPizzaBaseDot(pizza.base.name),
+            shape: BoxShape.circle,
           ),
-          PopupMenuItem(
-            value: 'delete',
-            child: Text(
-              'Delete',
-              style: TextStyle(color: theme.colorScheme.secondary),
-            ),
+        ),
+        Text(
+          pizza.base.displayName,
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: textColor,
           ),
-        ],
-        icon: Icon(Icons.more_vert, color: iconColor),
-      ),
-    ];
+        ),
+      ],
+    );
   }
 
   Widget _buildStandardLayout(BuildContext context, ThemeData theme, Pizza pizza, bool hasHeaderImage) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          // Hero header
-          SliverAppBar(
-            expandedHeight: hasHeaderImage ? 250 : 120,
-            pinned: true,
-            flexibleSpace: LayoutBuilder(
-              builder: (context, constraints) {
-                final screenWidth = MediaQuery.sizeOf(context).width;
-                // Scale font: 20px at 320, up to 28px at 1200+
-                final expandedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
-                final collapsedFontSize = (screenWidth / 50).clamp(18.0, 24.0);
-                
-                // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
-                final maxExtent = hasHeaderImage ? 250.0 : 120.0;
-                final minExtent = kToolbarHeight + MediaQuery.of(context).padding.top;
-                final currentExtent = constraints.maxHeight;
-                final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
-                
-                // Interpolate font size
-                final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
-                
-                return FlexibleSpaceBar(
-                  titlePadding: EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 12,
-                    end: 56,
-                  ),
-                  title: Text(
-                    pizza.name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: fontSize,
-                      color: hasHeaderImage && collapseRatio < 0.7 
-                          ? theme.colorScheme.onSurfaceVariant 
-                          : theme.colorScheme.onSurface,
-                      shadows: hasHeaderImage && collapseRatio < 0.7
-                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                          : null,
-                    ),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  background: hasHeaderImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            _buildHeaderBackground(theme, pizza),
-                            // Gradient scrim for legibility
-                            const DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black54,
-                                  ],
-                                  stops: [0.5, 1.0],
-                                ),
-                              ),
-                            ),
-                          ],
-                        )
-                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+      body: Column(
+        children: [
+          // 1. THE RICH HEADER - Fixed at top, does not scroll
+          MemoixHeader(
+            title: pizza.name,
+            isFavorite: pizza.isFavorite,
+            useChipMetadata: true, // Normal mode uses chips
+            headerImage: hasHeaderImage ? pizza.imageUrl : null,
+            metadataChips: _buildChipMetadata(context, pizza, theme),
+            compactMetadata: _buildCompactMetadata(pizza, theme),
+            onToggleFavorite: () async {
+              await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+              ref.invalidate(allPizzasProvider);
+            },
+            onLogCook: () async {
+              await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Logged cook for ${pizza.name}!')),
                 );
-              },
-            ),
-            actions: _buildAppBarActions(context, ref, theme, pizza),
+              }
+            },
+            onShare: () => _sharePizza(context, ref, pizza),
+            onMenuSelected: (value) => _handleMenuAction(context, ref, pizza, value),
           ),
 
-          // Content - responsive grid layout for Sauce - Cheese - Toppings
-          SliverToBoxAdapter(
-            child: Padding(
+          // 2. THE CONTENT - Scrollable
+          Expanded(
+            child: ListView(
               padding: const EdgeInsets.all(16),
-              child: _PizzaComponentsGrid(pizza: pizza),
-            ),
-          ),
-          
-          // Notes section (if present)
-          if (pizza.notes != null && pizza.notes!.isNotEmpty)
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Notes',
-                          style: theme.textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+              children: [
+                // Content - responsive grid layout for Sauce - Cheese - Toppings
+                _PizzaComponentsGrid(pizza: pizza),
+                
+                // Notes section (if present)
+                if (pizza.notes != null && pizza.notes!.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Notes',
+                              style: theme.textTheme.titleLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              pizza.notes!,
+                              style: theme.textTheme.bodyMedium,
+                            ),
+                          ],
                         ),
-                        const SizedBox(height: 12),
-                        Text(
-                          pizza.notes!,
-                          style: theme.textTheme.bodyMedium,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-              ),
+                  
+                // Bottom padding
+                const SizedBox(height: 32),
+              ],
             ),
-            
-          // Bottom padding
-          const SliverToBoxAdapter(
-            child: SizedBox(height: 32),
           ),
         ],
       ),

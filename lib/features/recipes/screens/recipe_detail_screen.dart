@@ -5,15 +5,17 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../../shared/widgets/memoix_header.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
+import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
-import '../widgets/recipe_header.dart';
 import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
@@ -204,10 +206,13 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       body: Column(
         children: [
           // 1. THE RICH HEADER - Fixed at top, does not scroll
-          RecipeHeader(
-            recipe: recipe,
+          MemoixHeader(
+            title: recipe.name,
+            isFavorite: recipe.isFavorite,
             useChipMetadata: false, // Side-by-side uses compact text row
             headerImage: hasHeaderImage ? headerImage : null,
+            metadataChips: _buildChipMetadata(context, recipe, theme),
+            compactMetadata: _buildCompactMetadata(recipe, theme, hasHeaderImage),
             onToggleFavorite: () async {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
@@ -250,6 +255,208 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ),
         ],
       ),
+    );
+  }
+
+  /// Build chip-style metadata (for normal scrolling views).
+  Widget _buildChipMetadata(BuildContext context, Recipe recipe, ThemeData theme) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isCompact = screenWidth < 600;
+    final chipFontSize = isCompact ? 11.0 : 12.0;
+
+    return Wrap(
+      spacing: 6,
+      runSpacing: 4,
+      children: [
+        // Cuisine chip
+        if (recipe.cuisine != null)
+          Chip(
+            label: Text(Cuisine.toAdjective(recipe.cuisine)),
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            labelStyle: TextStyle(
+              color: theme.colorScheme.onSurface,
+              fontSize: chipFontSize,
+            ),
+            visualDensity: VisualDensity.compact,
+            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            padding: EdgeInsets.zero,
+          ),
+        // Pickle method chip
+        if (recipe.course == 'pickles' &&
+            recipe.pickleMethod != null &&
+            recipe.pickleMethod!.isNotEmpty)
+          Chip(
+            label: Text(recipe.pickleMethod!),
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            labelStyle: TextStyle(
+              color: theme.colorScheme.onSurface,
+              fontSize: chipFontSize,
+            ),
+            visualDensity: VisualDensity.compact,
+            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            padding: EdgeInsets.zero,
+          ),
+        // Serves chip
+        if (recipe.serves != null && recipe.serves!.isNotEmpty)
+          Chip(
+            avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+            label: Text(_formatServes(recipe.serves!)),
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            labelStyle: TextStyle(
+              color: theme.colorScheme.onSurface,
+              fontSize: chipFontSize,
+            ),
+            visualDensity: VisualDensity.compact,
+            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            padding: EdgeInsets.zero,
+          ),
+        // Time chip
+        if (recipe.time != null && recipe.time!.isNotEmpty)
+          Chip(
+            avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+            label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
+            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+            labelStyle: TextStyle(
+              color: theme.colorScheme.onSurface,
+              fontSize: chipFontSize,
+            ),
+            visualDensity: VisualDensity.compact,
+            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            padding: EdgeInsets.zero,
+          ),
+      ],
+    );
+  }
+
+  /// Build compact text-based metadata row (for side-by-side views).
+  Widget _buildCompactMetadata(Recipe recipe, ThemeData theme, bool hasHeaderImage) {
+    final textColor = theme.colorScheme.onSurfaceVariant;
+    final metadataItems = <InlineSpan>[];
+
+    // Check if this is a drink (course == 'drinks')
+    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+
+    if (isDrink) {
+      // For drinks: show spirit dot + "Spirit (Cuisine)" like list view
+      if (recipe.subcategory != null && recipe.subcategory!.isNotEmpty) {
+        final spiritColor = MemoixColors.forSpiritDot(recipe.subcategory);
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.only(right: 4),
+            decoration: BoxDecoration(
+              color: spiritColor,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ));
+        // Display spirit with optional cuisine origin
+        final spirit = Spirit.toDisplayName(recipe.subcategory!);
+        if (recipe.cuisine != null && recipe.cuisine!.isNotEmpty) {
+          final cuisineAdj = Cuisine.toAdjective(recipe.cuisine);
+          metadataItems.add(TextSpan(text: '$spirit ($cuisineAdj)'));
+        } else {
+          metadataItems.add(TextSpan(text: spirit));
+        }
+      } else if (recipe.cuisine != null) {
+        // Fallback to cuisine for drinks without spirit
+        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.only(right: 4),
+            decoration: BoxDecoration(
+              color: cuisineColor,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ));
+        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+      }
+    } else {
+      // For food recipes: show cuisine dot with cuisine name
+      if (recipe.cuisine != null) {
+        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.only(right: 4),
+            decoration: BoxDecoration(
+              color: cuisineColor,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ));
+        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+      }
+    }
+
+    // Add serves (normalized to just number with icon)
+    if (recipe.serves != null && recipe.serves!.isNotEmpty) {
+      final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
+      if (normalized.isNotEmpty) {
+        if (metadataItems.isNotEmpty) {
+          metadataItems.add(const TextSpan(text: '   '));
+        }
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.people, size: 12, color: textColor),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
+      }
+    }
+
+    // Add time (normalized to compact format with icon)
+    if (recipe.time != null && recipe.time!.isNotEmpty) {
+      final normalized = UnitNormalizer.normalizeTime(recipe.time!);
+      if (normalized.isNotEmpty) {
+        if (metadataItems.isNotEmpty) {
+          metadataItems.add(const TextSpan(text: '   '));
+        }
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.schedule, size: 12, color: textColor),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
+      }
+    }
+
+    // Add glass for drinks
+    final isDrinkCourse = recipe.course?.toLowerCase() == 'drinks';
+    if (isDrinkCourse) {
+      final hasGlass = recipe.glass != null && recipe.glass!.isNotEmpty;
+
+      if (hasGlass) {
+        if (metadataItems.isNotEmpty) {
+          metadataItems.add(const TextSpan(text: '   '));
+        }
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.local_bar, size: 12, color: textColor),
+        ));
+        metadataItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
+      }
+    }
+
+    if (metadataItems.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    return Text.rich(
+      TextSpan(
+        style: theme.textTheme.bodySmall?.copyWith(
+          color: textColor,
+        ),
+        children: metadataItems,
+      ),
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
     );
   }
 
@@ -329,10 +536,13 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       body: Column(
         children: [
           // 1. THE RICH HEADER - Fixed at top, does not scroll
-          RecipeHeader(
-            recipe: recipe,
+          MemoixHeader(
+            title: recipe.name,
+            isFavorite: recipe.isFavorite,
             useChipMetadata: true, // Normal mode uses chips
             headerImage: hasHeaderImage ? headerImage : null,
+            metadataChips: _buildChipMetadata(context, recipe, theme),
+            compactMetadata: _buildCompactMetadata(recipe, theme, hasHeaderImage),
             onToggleFavorite: () async {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
