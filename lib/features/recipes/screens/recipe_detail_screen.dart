@@ -5,16 +5,15 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
-import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
+import '../widgets/recipe_header.dart';
 import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
@@ -198,9 +197,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     String? headerImage,
     bool hasStepImages,
   ) {
-    final screenWidth = MediaQuery.sizeOf(context).width;
-    // Scale font size with screen width: 20px at 320, up to 28px at 1200+
-    final baseFontSize = (screenWidth / 40).clamp(20.0, 28.0);
     final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
 
     return Scaffold(
@@ -208,118 +204,41 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       body: Column(
         children: [
           // 1. THE RICH HEADER - Fixed at top, does not scroll
-          Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              // Default solid color from theme
-              color: theme.colorScheme.surfaceContainerHighest,
-              // Optional background image if user has set one
-              image: hasHeaderImage
-                  ? DecorationImage(
-                      image: headerImage!.startsWith('http')
-                          ? NetworkImage(headerImage) as ImageProvider
-                          : FileImage(File(headerImage)),
-                      fit: BoxFit.cover,
-                    )
-                  : null,
-            ),
-            child: Stack(
-              children: [
-                // Semi-transparent overlay for text legibility when image is present
-                if (hasHeaderImage)
-                  Positioned.fill(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.black.withOpacity(0.3),
-                            Colors.black.withOpacity(0.6),
-                          ],
-                        ),
-                      ),
+          RecipeHeader(
+            recipe: recipe,
+            useChipMetadata: false, // Side-by-side uses compact text row
+            headerImage: headerImage,
+            onToggleFavorite: () async {
+              await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+              ref.invalidate(allRecipesProvider);
+            },
+            onLogCook: () async {
+              await ref.read(cookingStatsServiceProvider).logCook(
+                recipeId: recipe.uuid,
+                recipeName: recipe.name,
+                course: recipe.course,
+                cuisine: recipe.cuisine,
+              );
+              ref.invalidate(cookingStatsProvider);
+              ref.invalidate(recipeCookCountProvider(recipe.uuid));
+              ref.invalidate(recipeLastCookProvider(recipe.uuid));
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Logged cook for ${recipe.name}!'),
+                    action: SnackBarAction(
+                      label: 'Stats',
+                      onPressed: () => AppRoutes.toStatistics(context),
                     ),
                   ),
-                // Content inside SafeArea (icons and title stay within safe bounds)
-                SafeArea(
-                  bottom: false, // Only pad for status bar, not bottom
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 16.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        // Row 1: Navigation Icon (Left) + Action Icons (Right)
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            // Back button
-                            IconButton(
-                              icon: Icon(
-                                Icons.arrow_back,
-                                color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
-                              ),
-                              onPressed: () => Navigator.of(context).pop(),
-                            ),
-                            // Action icons row
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: _buildRichHeaderActions(context, recipe, theme, hasHeaderImage),
-                            ),
-                          ],
-                        ),
-
-                        // Row 2: Title (wraps to 2 lines max)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: Text(
-                            recipe.name,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: baseFontSize,
-                              color: hasHeaderImage 
-                                  ? theme.colorScheme.onSurfaceVariant 
-                                  : theme.colorScheme.onSurface,
-                              shadows: hasHeaderImage
-                                  ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                  : null,
-                            ),
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-
-                        // Row 3: Compact metadata row
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 4.0),
-                          child: _buildCompactMetadataRow(
-                            recipe,
-                            theme,
-                            overrideColor: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : null,
-                          ),
-                        ),
-
-                        // Row 4: Paired recipes chips (if any) - right-aligned
-                        if (hasPairs)
-                          Padding(
-                            padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 6.0),
-                            child: Align(
-                              alignment: Alignment.centerRight,
-                              child: Wrap(
-                                spacing: 6,
-                                runSpacing: 4,
-                                alignment: WrapAlignment.end,
-                                children: _buildPairedRecipeChips(context, ref, recipe, theme),
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+                );
+              }
+            },
+            onShare: () => _shareRecipe(context, ref),
+            onMenuSelected: (value) => _handleMenuAction(context, ref, value),
+            pairedRecipeChips: hasPairs
+                ? _buildPairedRecipeChips(context, ref, recipe, theme)
+                : null,
           ),
 
           // 2. THE CONTENT (Split View) - Scrollable, sits below header
@@ -331,280 +250,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ),
         ],
       ),
-    );
-  }
-
-  /// Build action icons for the Rich Header (with appropriate colors for image/no-image states)
-  List<Widget> _buildRichHeaderActions(BuildContext context, Recipe recipe, ThemeData theme, bool hasHeaderImage) {
-    final iconColor = hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface;
-    
-    return [
-      IconButton(
-        icon: Icon(
-          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: recipe.isFavorite ? theme.colorScheme.primary : iconColor,
-        ),
-        onPressed: () async {
-          await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
-          ref.invalidate(allRecipesProvider);
-        },
-      ),
-      IconButton(
-        icon: Icon(Icons.check_circle_outline, color: iconColor),
-        tooltip: 'I made this',
-        onPressed: () async {
-          await ref.read(cookingStatsServiceProvider).logCook(
-            recipeId: recipe.uuid,
-            recipeName: recipe.name,
-            course: recipe.course,
-            cuisine: recipe.cuisine,
-          );
-          ref.invalidate(cookingStatsProvider);
-          ref.invalidate(recipeCookCountProvider(recipe.uuid));
-          ref.invalidate(recipeLastCookProvider(recipe.uuid));
-          if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Logged cook for ${recipe.name}!'),
-                action: SnackBarAction(
-                  label: 'Stats',
-                  onPressed: () => AppRoutes.toStatistics(context),
-                ),
-              ),
-            );
-          }
-        },
-      ),
-      IconButton(
-        icon: Icon(Icons.share, color: iconColor),
-        onPressed: () => _shareRecipe(context, ref),
-      ),
-      PopupMenuButton<String>(
-        onSelected: (value) => _handleMenuAction(context, ref, value),
-        itemBuilder: (_) => [
-          const PopupMenuItem(value: 'edit', child: Text('Edit')),
-          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-          PopupMenuItem(
-            value: 'delete',
-            child: Text(
-              'Delete',
-              style: TextStyle(color: theme.colorScheme.secondary),
-            ),
-          ),
-        ],
-        icon: Icon(Icons.more_vert, color: iconColor),
-      ),
-    ];
-  }
-
-  /// Build compact metadata with title for cockpit mode
-  Widget _buildCompactMetadataWithTitle(BuildContext context, Recipe recipe, ThemeData theme) {
-    final screenWidth = MediaQuery.sizeOf(context).width;
-    final isCompact = screenWidth < 600;
-    final chipFontSize = isCompact ? 11.0 : 12.0;
-    
-    // Calculate font size that fits the screen width
-    // Start with base size and reduce if needed
-    final baseFontSize = isCompact ? 18.0 : 22.0;
-    final minFontSize = isCompact ? 14.0 : 16.0;
-    
-    // Get paired recipe chips if any exist
-    final hasPairedRecipes = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
-    final pairedChips = hasPairedRecipes 
-        ? _buildPairedRecipeChips(context, ref, recipe, theme)
-        : <Widget>[];
-    
-    return Container(
-      color: theme.colorScheme.surface,
-      padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Recipe title - uses FittedBox to shrink text to fit
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.centerLeft,
-              child: Text(
-                recipe.name,
-                style: theme.textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  fontSize: baseFontSize,
-                ),
-                maxLines: 2,
-              ),
-            ),
-          ),
-          // Main metadata chips
-          Wrap(
-            spacing: 6,
-            runSpacing: 4,
-            children: [
-              if (recipe.cuisine != null)
-                Chip(
-                  label: Text(Cuisine.toAdjective(recipe.cuisine)),
-                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  labelStyle: TextStyle(fontSize: chipFontSize),
-                  visualDensity: VisualDensity.compact,
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  padding: EdgeInsets.zero,
-                ),
-              if (recipe.serves != null && recipe.serves!.isNotEmpty)
-                Chip(
-                  avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-                  label: Text(_formatServes(recipe.serves!)),
-                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  labelStyle: TextStyle(fontSize: chipFontSize),
-                  visualDensity: VisualDensity.compact,
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  padding: EdgeInsets.zero,
-                ),
-              if (recipe.time != null && recipe.time!.isNotEmpty)
-                Chip(
-                  avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-                  label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
-                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  labelStyle: TextStyle(fontSize: chipFontSize),
-                  visualDensity: VisualDensity.compact,
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  padding: EdgeInsets.zero,
-                ),
-            ],
-          ),
-          // "Pairs With" chips on a separate line, right-aligned
-          if (pairedChips.isNotEmpty)
-            Padding(
-              padding: const EdgeInsets.only(top: 6),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Wrap(
-                  spacing: 6,
-                  runSpacing: 4,
-                  alignment: WrapAlignment.end,
-                  children: pairedChips,
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-
-  /// Build compact metadata row with colored dots for side-by-side mode
-  /// [overrideColor] - optional color to use for text/icons when over an image
-  Widget _buildCompactMetadataRow(Recipe recipe, ThemeData theme, {Color? overrideColor}) {
-    final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
-    final metadataItems = <InlineSpan>[];
-    
-    // Check if this is a drink (course == 'drinks')
-    final isDrink = recipe.course?.toLowerCase() == 'drinks';
-    
-    if (isDrink) {
-      // For drinks: show spirit dot + "Spirit (Cuisine)" like list view
-      if (recipe.subcategory != null && recipe.subcategory!.isNotEmpty) {
-        final spiritColor = MemoixColors.forSpiritDot(recipe.subcategory);
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Container(
-            width: 8,
-            height: 8,
-            margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(
-              color: spiritColor,
-              shape: BoxShape.circle,
-            ),
-          ),
-        ));
-        // Display spirit with optional cuisine origin
-        final spirit = Spirit.toDisplayName(recipe.subcategory!);
-        if (recipe.cuisine != null && recipe.cuisine!.isNotEmpty) {
-          final cuisineAdj = Cuisine.toAdjective(recipe.cuisine);
-          metadataItems.add(TextSpan(text: '$spirit ($cuisineAdj)'));
-        } else {
-          metadataItems.add(TextSpan(text: spirit));
-        }
-      } else if (recipe.cuisine != null) {
-        // Fallback to cuisine for drinks without spirit
-        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Container(
-            width: 8,
-            height: 8,
-            margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(
-              color: cuisineColor,
-              shape: BoxShape.circle,
-            ),
-          ),
-        ));
-        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
-      }
-    } else {
-      // For food recipes: show cuisine dot with cuisine name
-      if (recipe.cuisine != null) {
-        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Container(
-            width: 8,
-            height: 8,
-            margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(
-              color: cuisineColor,
-              shape: BoxShape.circle,
-            ),
-          ),
-        ));
-        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
-      }
-    }
-    
-    // Add serves (normalized to just number with icon)
-    if (recipe.serves != null && recipe.serves!.isNotEmpty) {
-      final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
-      if (normalized.isNotEmpty) {
-        if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '   '));
-        }
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.people, size: 12, color: textColor),
-        ));
-        metadataItems.add(TextSpan(text: ' $normalized'));
-      }
-    }
-    
-    // Add time (normalized to compact format with icon)
-    if (recipe.time != null && recipe.time!.isNotEmpty) {
-      final normalized = UnitNormalizer.normalizeTime(recipe.time!);
-      if (normalized.isNotEmpty) {
-        if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '   '));
-        }
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.schedule, size: 12, color: textColor),
-        ));
-        metadataItems.add(TextSpan(text: ' $normalized'));
-      }
-    }
-    
-    if (metadataItems.isEmpty) {
-      return const SizedBox.shrink();
-    }
-    
-    return Text.rich(
-      TextSpan(
-        style: theme.textTheme.bodySmall?.copyWith(
-          color: textColor,
-        ),
-        children: metadataItems,
-      ),
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
     );
   }
 
