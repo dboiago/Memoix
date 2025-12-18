@@ -29,7 +29,9 @@ class SandwichDetailScreen extends ConsumerWidget {
       data: (sandwiches) {
         final sandwich = sandwiches.firstWhere(
           (s) => s.uuid == sandwichId,
-          orElse: () => Sandwich()..name = '',
+          orElse: () => Sandwich()
+            ..uuid = ''
+            ..name = '',
         );
 
         if (sandwich.name.isEmpty) {

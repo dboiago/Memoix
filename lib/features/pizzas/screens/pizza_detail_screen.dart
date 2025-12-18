@@ -465,9 +465,8 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
   }
 }
 
-/// Responsive grid layout for pizza components
-/// Order: Sauce - Cheese - Toppings side-by-side
-/// Collapses to single column on narrow screens
+/// Grid layout for pizza components
+/// Always 50/50 side-by-side: Sauce | Cheese, Proteins | Vegetables
 class _PizzaComponentsGrid extends StatelessWidget {
   final Pizza pizza;
 
@@ -477,125 +476,64 @@ class _PizzaComponentsGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        // Use side-by-side layout when width >= 500
-        final isWide = constraints.maxWidth >= 500;
-        
-        if (isWide) {
-          return _buildWideLayout(theme);
-        } else {
-          return _buildNarrowLayout(theme);
-        }
-      },
-    );
-  }
-
-  Widget _buildWideLayout(ThemeData theme) {
-    // Row 1: Sauce | Cheese side-by-side
-    // Row 2: Proteins | Vegetables side-by-side
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Row 1: Sauce | Cheese
+        // Row 1: Sauce (50%) | Cheese (50%)
         IntrinsicHeight(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Sauce section
+              // Sauce section - always 50%
               Expanded(
                 child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
               ),
               const SizedBox(width: 16),
-              // Cheese section
-              if (pizza.cheeses.isNotEmpty)
-                Expanded(
-                  child: _buildComponentSection(
-                    theme,
-                    pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                    pizza.cheeses,
-                  ),
-                )
-              else
-                const Expanded(child: SizedBox()),
+              // Cheese section - always 50%
+              Expanded(
+                child: pizza.cheeses.isNotEmpty
+                    ? _buildComponentSection(
+                        theme,
+                        pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                        pizza.cheeses,
+                      )
+                    : const SizedBox(),
+              ),
             ],
           ),
         ),
-        // Row 2: Proteins | Vegetables
+        // Row 2: Proteins (50%) | Vegetables (50%)
         if (pizza.proteins.isNotEmpty || pizza.vegetables.isNotEmpty) ...[
           const SizedBox(height: 16),
           IntrinsicHeight(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Proteins section
-                if (pizza.proteins.isNotEmpty)
-                  Expanded(
-                    child: _buildComponentSection(
-                      theme,
-                      pizza.proteins.length == 1 ? 'Protein' : 'Proteins',
-                      pizza.proteins,
-                    ),
-                  )
-                else
-                  const Expanded(child: SizedBox()),
+                // Proteins section - always 50%
+                Expanded(
+                  child: pizza.proteins.isNotEmpty
+                      ? _buildComponentSection(
+                          theme,
+                          'Proteins',
+                          pizza.proteins,
+                        )
+                      : const SizedBox(),
+                ),
                 const SizedBox(width: 16),
-                // Vegetables section
-                if (pizza.vegetables.isNotEmpty)
-                  Expanded(
-                    child: _buildComponentSection(
-                      theme,
-                      pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-                      pizza.vegetables,
-                    ),
-                  )
-                else
-                  const Expanded(child: SizedBox()),
+                // Vegetables section - always 50%
+                Expanded(
+                  child: pizza.vegetables.isNotEmpty
+                      ? _buildComponentSection(
+                          theme,
+                          pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                          pizza.vegetables,
+                        )
+                      : const SizedBox(),
+                ),
               ],
             ),
           ),
         ],
-      ],
-    );
-  }
-
-  Widget _buildNarrowLayout(ThemeData theme) {
-    // Single column layout for narrow screens
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Sauce section
-        Padding(
-          padding: const EdgeInsets.only(bottom: 16),
-          child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
-        ),
-        // Cheese section
-        if (pizza.cheeses.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 16),
-            child: _buildComponentSection(
-              theme,
-              pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-              pizza.cheeses,
-            ),
-          ),
-        // Proteins section
-        if (pizza.proteins.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 16),
-            child: _buildComponentSection(
-              theme,
-              pizza.proteins.length == 1 ? 'Protein' : 'Proteins',
-              pizza.proteins,
-            ),
-          ),
-        // Vegetables section
-        if (pizza.vegetables.isNotEmpty)
-          _buildComponentSection(
-            theme,
-            pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-            pizza.vegetables,
-          ),
       ],
     );
   }

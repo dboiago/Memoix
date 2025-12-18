@@ -159,8 +159,9 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     return ListView.builder(
       // Enable independent scrolling for this column
       primary: false,
-      physics: const ClampingScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 32),
+      // Use BouncingScrollPhysics to provide visual feedback at bounds
+      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 100),
       itemCount: widget.ingredients.isEmpty ? 1 : widget.ingredients.length,
       itemBuilder: (context, index) {
         if (widget.ingredients.isEmpty) {
@@ -387,8 +388,9 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
 
     return ListView(
       primary: false,
-      physics: const AlwaysScrollableScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 32),
+      // Use BouncingScrollPhysics to provide visual feedback at bounds
+      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 100),
       children: items,
     );
   }
