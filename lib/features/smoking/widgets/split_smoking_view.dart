@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 import '../models/smoking_recipe.dart';
@@ -204,25 +206,102 @@ class SplitSmokingView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: recipe.stepImages.length,
         itemBuilder: (context, imageIndex) {
+          final imagePath = recipe.stepImages[imageIndex];
           return Padding(
             padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: SizedBox(
-                width: 120,
-                height: 120,
-                child: Image.network(
-                  recipe.stepImages[imageIndex],
-                  fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => Container(
-                    color: theme.colorScheme.surfaceContainerHighest,
-                    child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+            child: GestureDetector(
+              onTap: () => _showImageFullscreen(context, imagePath),
+              child: Stack(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: _buildStepImage(imagePath, theme),
+                    ),
                   ),
-                ),
+                  // Expand icon
+                  Positioned(
+                    bottom: 4,
+                    right: 4,
+                    child: Container(
+                      padding: const EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.5),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: const Icon(
+                        Icons.fullscreen,
+                        size: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           );
         },
+      ),
+    );
+  }
+
+  Widget _buildStepImage(String imagePath, ThemeData theme) {
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return Image.network(
+        imagePath,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => Container(
+          color: theme.colorScheme.surfaceContainerHighest,
+          child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+        ),
+      );
+    } else {
+      return Image.file(
+        File(imagePath),
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => Container(
+          color: theme.colorScheme.surfaceContainerHighest,
+          child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+        ),
+      );
+    }
+  }
+
+  void _showImageFullscreen(BuildContext context, String imagePath) {
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: EdgeInsets.zero,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Dark background
+            GestureDetector(
+              onTap: () => Navigator.pop(ctx),
+              child: Container(color: Colors.black.withOpacity(0.9)),
+            ),
+            // Image
+            Center(
+              child: InteractiveViewer(
+                child: imagePath.startsWith('http')
+                    ? Image.network(imagePath, fit: BoxFit.contain)
+                    : Image.file(File(imagePath), fit: BoxFit.contain),
+              ),
+            ),
+            // Close button
+            Positioned(
+              top: 40,
+              right: 16,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 32),
+                onPressed: () => Navigator.pop(ctx),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
