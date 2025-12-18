@@ -288,45 +288,67 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // App bar with image
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
+            collapsedHeight: 80,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 160,
-              ),
-              expandedTitleScale: 1.3,
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(context, headerImage),
-                        // Gradient scrim for legibility
-                        const DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.transparent,
-                                Colors.black54,
-                              ],
-                              stops: [0.5, 1.0],
+            flexibleSpace: LayoutBuilder(
+              builder: (context, constraints) {
+                final screenWidth = MediaQuery.sizeOf(context).width;
+                final statusBarHeight = MediaQuery.of(context).padding.top;
+                final maxExtent = hasHeaderImage ? 250.0 : 120.0;
+                final minExtent = 80.0 + statusBarHeight;
+                final currentExtent = constraints.maxHeight;
+                final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
+                
+                final nameLength = recipe.name.length;
+                final baseExpandedSize = (screenWidth / 25).clamp(20.0, 36.0);
+                final baseCollapsedSize = (screenWidth / 35).clamp(16.0, 24.0);
+                final lengthFactor = (30 / nameLength).clamp(0.5, 1.0);
+                final fontSize = ((baseExpandedSize * lengthFactor) - ((baseExpandedSize - baseCollapsedSize) * lengthFactor * collapseRatio)).clamp(14.0, 36.0);
+                
+                final titleColor = hasHeaderImage || collapseRatio < 0.7 ? Colors.white : theme.colorScheme.onSurface;
+                
+                return FlexibleSpaceBar(
+                  titlePadding: EdgeInsets.zero,
+                  title: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12, top: 8),
+                    decoration: hasHeaderImage && collapseRatio < 0.7
+                        ? null
+                        : BoxDecoration(color: theme.colorScheme.surfaceContainerHighest),
+                    child: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                        color: titleColor,
+                        shadows: hasHeaderImage && collapseRatio < 0.7
+                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                            : null,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                  background: hasHeaderImage
+                      ? Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            _buildSingleImage(context, headerImage),
+                            const DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [Colors.transparent, Colors.black54],
+                                  stops: [0.5, 1.0],
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+                          ],
+                        )
+                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+                );
+              },
             ),
             actions: [
               IconButton(

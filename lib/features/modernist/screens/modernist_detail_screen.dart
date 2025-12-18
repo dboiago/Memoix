@@ -126,13 +126,29 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      recipe.name,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                    // Title with dynamic font sizing based on name length
+                    LayoutBuilder(
+                      builder: (context, constraints) {
+                        final screenWidth = MediaQuery.sizeOf(context).width;
+                        final nameLength = recipe.name.length;
+                        final availableWidth = constraints.maxWidth;
+                        
+                        // Base font size scales with screen width
+                        final baseSize = (screenWidth / 25).clamp(18.0, 28.0);
+                        // Adjust for name length
+                        final lengthFactor = (30 / nameLength).clamp(0.5, 1.0);
+                        final fontSize = (baseSize * lengthFactor).clamp(14.0, 28.0);
+                        
+                        return Text(
+                          recipe.name,
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: fontSize,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        );
+                      },
                     ),
                     const SizedBox(height: 4),
                     // Compact metadata row with dots
@@ -308,6 +324,43 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   List<Widget> _buildAppBarActions(BuildContext context, ModernistRecipe recipe, ThemeData theme) {
+    // On very small screens, consolidate actions into the popup menu
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isVerySmall = screenWidth < 350;
+    
+    if (isVerySmall) {
+      // Show only favorite and overflow menu on tiny screens
+      return [
+        IconButton(
+          icon: Icon(
+            recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+            color: recipe.isFavorite ? theme.colorScheme.primary : null,
+          ),
+          onPressed: () async {
+            await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+            ref.invalidate(modernistRecipeProvider(widget.recipeId));
+          },
+        ),
+        PopupMenuButton<String>(
+          onSelected: (value) => _handleMenuAction(value, recipe),
+          itemBuilder: (_) => [
+            const PopupMenuItem(value: 'cook', child: Text('I made this')),
+            const PopupMenuItem(value: 'share', child: Text('Share')),
+            const PopupMenuItem(value: 'edit', child: Text('Edit')),
+            const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+            PopupMenuItem(
+              value: 'delete',
+              child: Text(
+                'Delete',
+                style: TextStyle(color: theme.colorScheme.secondary),
+              ),
+            ),
+          ],
+          icon: const Icon(Icons.more_vert),
+        ),
+      ];
+    }
+    
     return [
       IconButton(
         icon: Icon(
@@ -367,45 +420,72 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // App bar with header image
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
+            collapsedHeight: 80,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 160,
-              ),
-              expandedTitleScale: 1.3,
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(headerImage),
-                        // Gradient scrim for legibility
-                        const DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.transparent,
-                                Colors.black54,
-                              ],
-                              stops: [0.5, 1.0],
+            flexibleSpace: LayoutBuilder(
+              builder: (context, constraints) {
+                final screenWidth = MediaQuery.sizeOf(context).width;
+                final statusBarHeight = MediaQuery.of(context).padding.top;
+                final maxExtent = hasHeaderImage ? 250.0 : 120.0;
+                final minExtent = 80.0 + statusBarHeight;
+                final currentExtent = constraints.maxHeight;
+                final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
+                
+                // Calculate font size based on name length
+                final nameLength = recipe.name.length;
+                final baseExpandedSize = (screenWidth / 25).clamp(20.0, 36.0);
+                final baseCollapsedSize = (screenWidth / 35).clamp(16.0, 24.0);
+                final lengthFactor = (30 / nameLength).clamp(0.5, 1.0);
+                final expandedFontSize = baseExpandedSize * lengthFactor;
+                final collapsedFontSize = baseCollapsedSize * lengthFactor;
+                final fontSize = (expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio).clamp(14.0, 36.0);
+                
+                final titleColor = hasHeaderImage || collapseRatio < 0.7 
+                    ? Colors.white 
+                    : theme.colorScheme.onSurface;
+                
+                return FlexibleSpaceBar(
+                  titlePadding: EdgeInsets.zero,
+                  title: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12, top: 8),
+                    decoration: hasHeaderImage && collapseRatio < 0.7
+                        ? null
+                        : BoxDecoration(color: theme.colorScheme.surfaceContainerHighest),
+                    child: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                        color: titleColor,
+                        shadows: hasHeaderImage && collapseRatio < 0.7
+                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                            : null,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                  background: hasHeaderImage
+                      ? Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            _buildSingleImage(headerImage),
+                            const DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [Colors.transparent, Colors.black54],
+                                  stops: [0.5, 1.0],
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+                          ],
+                        )
+                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+                );
+              },
             ),
             actions: [
               IconButton(
@@ -1117,6 +1197,16 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   void _handleMenuAction(String action, ModernistRecipe recipe) async {
     switch (action) {
+      case 'cook':
+        ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+        ref.invalidate(modernistRecipeProvider(widget.recipeId));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+        );
+        break;
+      case 'share':
+        _shareRecipe(context, recipe);
+        break;
       case 'edit':
         await Navigator.push(
           context,
