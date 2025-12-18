@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../app/theme/colors.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
@@ -136,8 +137,8 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
         // Confidence summary
         Card(
           color: confidence < 0.5 
-              ? Colors.orange.withOpacity(0.1) 
-              : Colors.green.withOpacity(0.1),
+              ? MemoixColors.warningContainer 
+              : MemoixColors.successContainer,
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
@@ -147,7 +148,7 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                   children: [
                     Icon(
                       confidence < 0.5 ? Icons.warning : Icons.check_circle,
-                      color: confidence < 0.5 ? Colors.orange : Colors.green,
+                      color: confidence < 0.5 ? MemoixColors.warning : MemoixColors.success,
                     ),
                     const SizedBox(width: 8),
                     Expanded(

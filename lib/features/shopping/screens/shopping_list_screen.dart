@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/theme/colors.dart';
 import '../models/shopping_list.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -109,12 +110,12 @@ class ShoppingListCard extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.green.shade100,
+                        color: MemoixColors.successContainer,
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      child: const Text(
+                      child: Text(
                         'Complete',
-                        style: TextStyle(color: Colors.green, fontSize: 12),
+                        style: TextStyle(color: MemoixColors.success, fontSize: 12),
                       ),
                     ),
                 ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../app/theme/colors.dart';
 import '../../../core/services/url_importer.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -47,7 +48,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.edit,
               title: 'Create Manually',
               description: 'Write a new recipe from scratch',
-              color: Colors.blue,
+              color: MemoixColors.importManual,
               onTap: () => _createManually(context),
             ),
 
@@ -58,7 +59,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.camera_alt,
               title: 'Scan from Photo',
               description: 'Take a photo of a recipe book or handwritten notes',
-              color: Colors.green,
+              color: MemoixColors.importCamera,
               onTap: () => _scanFromCamera(context),
             ),
 
@@ -69,7 +70,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.collections,
               title: 'Scan Multi-Page Recipe',
               description: 'Take photos of multiple recipe pages (ingredients, directions, etc.)',
-              color: Colors.teal,
+              color: MemoixColors.importMultiPage,
               onTap: () => _scanMultipleImages(context),
             ),
 
@@ -80,7 +81,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               icon: Icons.photo_library,
               title: 'Import from Gallery',
               description: 'Choose an existing photo to scan',
-              color: Colors.orange,
+              color: MemoixColors.importGallery,
               onTap: () => _scanFromGallery(context),
             ),
 

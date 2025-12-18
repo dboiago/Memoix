@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../app/theme/colors.dart';
+
 /// Recipe rating widget (1-5 stars + favourite)
 class RecipeRating extends StatelessWidget {
   final int rating; // 0-5 (0 = unrated)
@@ -37,7 +39,7 @@ class RecipeRating extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 2),
               child: Icon(
                 isFilled ? Icons.star : Icons.star_border,
-                color: isFilled ? Colors.amber : theme.colorScheme.outline,
+                color: isFilled ? MemoixColors.rating : theme.colorScheme.outline,
                 size: size,
               ),
             ),
@@ -49,7 +51,7 @@ class RecipeRating extends StatelessWidget {
           onTap: readOnly ? null : () => onFavouriteChanged?.call(!isFavourite),
           child: Icon(
             isFavourite ? Icons.favorite : Icons.favorite_border,
-            color: isFavourite ? Colors.red : theme.colorScheme.outline,
+            color: isFavourite ? MemoixColors.favorite : theme.colorScheme.outline,
             size: size,
           ),
         ),
@@ -77,7 +79,7 @@ class RecipeRatingCompact extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (rating > 0) ...[
-          const Icon(Icons.star, color: Colors.amber, size: 16),
+          Icon(Icons.star, color: MemoixColors.rating, size: 16),
           const SizedBox(width: 2),
           Text(
             rating.toString(),
@@ -88,7 +90,7 @@ class RecipeRatingCompact extends StatelessWidget {
         ],
         if (isFavourite) ...[
           const SizedBox(width: 4),
-          const Icon(Icons.favorite, color: Colors.red, size: 16),
+          Icon(Icons.favorite, color: MemoixColors.favorite, size: 16),
         ],
       ],
     );

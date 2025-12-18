@@ -99,3 +99,156 @@ abstract class RecipeParser {
 * **Register Schema:** Add to MemoixDatabase.initialize() in lib/core/database/database.dart.
 * **Define Routes:** Add static to<Feature>List and to<Feature>Detail methods in AppRoutes (lib/app/routes/router.dart).
 * **Assign Color:** Add domain color to MemoixColors in colors.dart.
+
+## 6. Shared UI Patterns
+
+### 6.1 Header Component
+All detail views **MUST** use the shared `MemoixHeader` widget from `lib/shared/widgets/memoix_header.dart`.
+
+**DO NOT:**
+* Build inline headers in detail screens
+* Use the deprecated `RecipeHeader` widget (scheduled for removal)
+
+**Usage:**
+```dart
+MemoixHeader(
+  title: recipe.name,
+  isFavorite: recipe.isFavorite,
+  headerImage: recipe.headerImage,
+  onFavoritePressed: () => ...,
+  onLogCookPressed: () => ...,
+  onSharePressed: () => ...,
+  onEditPressed: () => ...,
+  onDuplicatePressed: () => ...,
+  onDeletePressed: () => ...,
+)
+```
+
+The header is model-agnostic - it accepts primitive values (strings, bools, callbacks) rather than model types, allowing it to be used across Recipe, Modernist, Pizza, Sandwich, Smoking, Cellar, and Cheese detail screens.
+
+### 6.2 Split/Side-by-Side View Layout
+The split view uses a fixed-height container strategy to allow footer content (Notes, Gallery, Nutrition) to scroll below.
+
+**Pattern:**
+```dart
+SizedBox(
+  height: splitViewHeight, // 85% of screen, clamped 400-900px
+  child: Row(
+    children: [
+      Expanded(child: _IngredientsColumn(...)),  // Independent scroll
+      VerticalDivider(...),
+      Expanded(child: _DirectionsColumn(...)),   // Independent scroll
+    ],
+  ),
+)
+```
+**DO NOT:**
+* Use Expanded for the split container (prevents footer scrolling)
+* Place footer sections inside the split columns
+
+### 6.3 Recipe Pairing
+Recipe pairings are stored in pairedRecipeIds on the Recipe model (and ModernistRecipe).
+
+* Field: List<String> pairedRecipeIds = []
+* Location: recipe.dart
+* Bidirectional: Detail screens show both explicit pairings AND inverse pairings (recipes that link to the current recipe)
+
+**DEPRECATED:** The pairsWith field is deprecated. Use pairedRecipeIds for all new code.
+
+### 6.4 SnackBars (User Feedback)
+All SnackBars **MUST** use the centralized `MemoixSnackBar` helper from `lib/core/widgets/memoix_snackbar.dart`.
+
+**STRICTLY FORBIDDEN:**
+* Do NOT instantiate raw `SnackBar()` widgets
+* Do NOT call `ScaffoldMessenger.of(context).showSnackBar()` directly
+
+**REQUIRED - Always use MemoixSnackBar methods:**
+```dart
+// Simple message (auto-dismiss 2s)
+MemoixSnackBar.show('Item added to list');
+
+// Success message
+MemoixSnackBar.showSuccess('Recipe imported!');
+
+// Error message
+MemoixSnackBar.showError('Failed to save');
+
+// With action button (auto-dismiss 2s)
+MemoixSnackBar.showWithAction(
+  message: 'Recipe deleted',
+  actionLabel: 'Undo',
+  onAction: () => ...,
+);
+
+// Specialized: "I made this" pattern
+MemoixSnackBar.showLoggedCook(
+  recipeName: recipe.name,
+  onViewStats: () => AppRoutes.toStatistics(context),
+);
+
+// Specialized: After save pattern
+MemoixSnackBar.showSaved(
+  itemName: recipe.name,
+  actionLabel: 'View',
+  onView: () => AppRoutes.toRecipeDetail(context, uuid: recipe.uuid),
+);
+```
+
+**Why:** The helper uses a global `ScaffoldMessengerKey` that survives navigation, includes manual Timer-based auto-dismiss for reliability, and ensures consistent styling.
+
+## 7. Strict Color Conventions
+
+### 7.1 UI Elements (Theme Colors)
+For all UI chrome (buttons, backgrounds, borders, text):
+```dart
+// ✅ CORRECT
+Theme.of(context).colorScheme.primary
+Theme.of(context).colorScheme.secondary
+Theme.of(context).colorScheme.surface
+Theme.of(context).colorScheme.onSurface
+Theme.of(context).colorScheme.onSurfaceVariant
+Theme.of(context).colorScheme.outline
+```
+
+### 7.2 Domain Data (MemoixColors)
+For data-driven visual indicators (cuisine dots, course badges, spirit colors):
+```dart
+// ✅ CORRECT - Use MemoixColors static methods
+MemoixColors.forCuisine('Korean')           // Cuisine-specific color
+MemoixColors.forContinentDot('Japanese')    // Continent-grouped dot color
+MemoixColors.forCourse('mains')             // Course category color
+MemoixColors.forSpiritDot('Gin')            // Drink spirit color
+MemoixColors.forPizzaBaseDot('marinara')    // Pizza sauce color
+MemoixColors.forSmokedItemDot('beef')       // Smoking category color
+MemoixColors.forModernistType('technique')  // Modernist type color
+MemoixColors.forProteinDot('chicken')       // Protein type color
+
+// ✅ CORRECT - Direct color constants
+MemoixColors.spiritGin
+MemoixColors.continentAsian
+MemoixColors.pizzaMarinara
+```
+
+### 7.3 Forbidden Patterns
+```dart
+// ❌ FORBIDDEN - Hardcoded Material colors
+Colors.red
+Colors.blue
+Colors.green
+Colors.orange
+
+// ❌ FORBIDDEN - Hardcoded hex values in widgets
+Color(0xFF4B5563)  // Define in theme or MemoixColors instead
+
+// ❌ FORBIDDEN - Using theme colors for domain data
+theme.colorScheme.primary  // for a cuisine indicator dot
+```
+
+### 7.4 Exception: Semantic Status Colors
+For universal status indicators (success/error states during import, confidence scores), use theme semantic colors:
+```dart
+// ✅ ACCEPTABLE for status indicators only
+theme.colorScheme.error          // For errors
+theme.colorScheme.errorContainer // For error backgrounds
+// Consider adding MemoixColors.success / MemoixColors.warning for consistency
+```

@@ -121,6 +121,22 @@ class MemoixColors {
   static const Color surface = Color(0xFFFFFFFF);
   static const Color error = Color(0xFFE53935);
   static const Color success = Color(0xFF43A047);
+  
+  // Semantic status colors (for confidence indicators, validation, etc.)
+  static const Color warning = Color(0xFFFF9800);              // Orange warning
+  static const Color successContainer = Color(0xFFE8F5E9);     // Light green bg
+  static const Color warningContainer = Color(0xFFFFF3E0);     // Light orange bg
+  static const Color errorContainer = Color(0xFFFFEBEE);       // Light red bg
+  
+  // Universal accent colors (for favorites, ratings)
+  static const Color favorite = Color(0xFFE57373);             // Soft red heart
+  static const Color rating = Color(0xFFFFCA28);               // Amber star
+  
+  // Import method accent colors (thematic with app palette)
+  static const Color importManual = Color(0xFF7B9CC4);         // Muted blue
+  static const Color importCamera = Color(0xFF7AB89E);         // Sage green
+  static const Color importMultiPage = Color(0xFF6BA3B5);      // Ocean teal
+  static const Color importGallery = Color(0xFFE8A86B);        // Warm orange
 
   /// Get color for a course category
   static Color forCourse(String course) {

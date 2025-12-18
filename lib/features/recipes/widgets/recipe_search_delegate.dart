@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colors.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -105,7 +106,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                 [recipe.cuisine, recipe.course].whereType<String>().join(' • '),
               ),
               trailing: recipe.isFavorite
-                  ? const Icon(Icons.favorite, color: Colors.red, size: 20)
+                  ? Icon(Icons.favorite, color: MemoixColors.favorite, size: 20)
                   : null,
               onTap: () async {
                 close(context, recipe);

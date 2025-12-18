@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../app/theme/colors.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/category.dart';
@@ -300,15 +301,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     final String message;
 
     if (confidence >= 0.8) {
-      cardColor = Colors.green.withOpacity(0.1);
+      cardColor = MemoixColors.successContainer;
       icon = Icons.check_circle;
       message = 'High confidence import! Review and save.';
     } else if (confidence >= 0.5) {
-      cardColor = Colors.orange.withOpacity(0.1);
+      cardColor = MemoixColors.warningContainer;
       icon = Icons.warning;
       message = 'Some fields need your attention.';
     } else {
-      cardColor = Colors.red.withOpacity(0.1);
+      cardColor = MemoixColors.errorContainer;
       icon = Icons.error_outline;
       message = 'Low confidence. Please review all fields.';
     }
