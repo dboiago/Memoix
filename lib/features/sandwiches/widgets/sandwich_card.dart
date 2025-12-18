@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Sandwich card widget for list display
 /// Matches PizzaCard styling with hover effects, favorite and cooked icons
@@ -113,7 +113,10 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                     color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(sandwichRepositoryProvider).incrementCookCount(widget.sandwich);
-                      MemoixSnackBar.showMarkedAsCooked(widget.sandwich.name);
+                      MemoixSnackBar.showLoggedCook(
+                        recipeName: widget.sandwich.name,
+                        onViewStats: () => AppRoutes.toStatistics(context),
+                      );
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),

@@ -91,19 +91,6 @@ class MemoixSnackBar {
       );
   }
 
-  /// Show a "marked as cooked" SnackBar (for card widgets)
-  /// No action button, quick dismiss
-  static void showMarkedAsCooked(String recipeName) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text('$recipeName marked as cooked'),
-          duration: defaultDuration,
-        ),
-      );
-  }
-
   /// Show an error message
   static void showError(String message) {
     rootScaffoldMessengerKey.currentState

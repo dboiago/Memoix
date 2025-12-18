@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Card widget for displaying a modernist recipe in a list - follows Mains pattern
 class ModernistCard extends ConsumerStatefulWidget {
@@ -165,7 +165,10 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                     color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
                       ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
-                      MemoixSnackBar.showMarkedAsCooked(recipe.name);
+                      MemoixSnackBar.showLoggedCook(
+                        recipeName: recipe.name,
+                        onViewStats: () => AppRoutes.toStatistics(context),
+                      );
                     },
                     padding: const EdgeInsets.all(8),
                     constraints: const BoxConstraints(),
