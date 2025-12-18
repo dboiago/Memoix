@@ -75,9 +75,7 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
                       // Protein summary with themed dot
-                      Flexible(
-                        child: _buildProteinSummary(theme),
-                      ),
+                      _buildProteinSummary(theme),
                     ],
                   ],
                 ),
