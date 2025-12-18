@@ -159,24 +159,27 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             // Notes (full width)
             if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
               const SizedBox(height: 16),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Notes',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
+              SizedBox(
+                width: double.infinity,
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Notes',
+                          style: theme.textTheme.titleSmall?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        pizza.notes!,
-                        style: theme.textTheme.bodyMedium,
-                      ),
-                    ],
+                        const SizedBox(height: 8),
+                        Text(
+                          pizza.notes!,
+                          style: theme.textTheme.bodyMedium,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

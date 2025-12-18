@@ -19,18 +19,24 @@ import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
 
-/// Format serves to remove unnecessary decimals (e.g., "6.0" -> "6")
+/// Format serves to just show the number (e.g., "6 people" -> "6", "Serves 4" -> "4")
 String _formatServes(String serves) {
-  // Try to parse as number and remove .0 suffix
-  final trimmed = serves.trim();
-  if (trimmed.endsWith('.0')) {
-    return trimmed.substring(0, trimmed.length - 2);
-  }
-  // Handle multiple decimals like "2.0-4.0" -> "2-4"
-  return trimmed.replaceAllMapped(
+  // First strip common words
+  var result = serves
+      .replaceAll(RegExp(r'\bserves?\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bpeople\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bpersons?\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bportions?\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bservings?\b', caseSensitive: false), '')
+      .trim();
+  
+  // Remove .0 decimals
+  result = result.replaceAllMapped(
     RegExp(r'(\d+)\.0(?=\D|$)'),
     (match) => match.group(1)!,
   );
+  
+  return result.trim();
 }
 
 /// Get the Material icon for a course category slug
@@ -231,6 +237,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     const SizedBox(height: 4),
                     // Compact metadata row with dots
                     _buildCompactMetadataRow(recipe, theme),
+                    // Paired recipes chips (if any)
+                    if (recipe.supportsPairing && _hasPairedRecipes(ref, recipe))
+                      Padding(
+                        padding: const EdgeInsets.only(top: 6),
+                        child: Wrap(
+                          spacing: 6,
+                          runSpacing: 4,
+                          children: _buildPairedRecipeChips(context, ref, recipe, theme),
+                        ),
+                      ),
                   ],
                 ),
               ),

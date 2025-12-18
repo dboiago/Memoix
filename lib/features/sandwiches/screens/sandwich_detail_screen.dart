@@ -143,24 +143,27 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             // Notes (full width)
             if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
               const SizedBox(height: 16),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Notes',
-                        style: theme.textTheme.titleSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
+              SizedBox(
+                width: double.infinity,
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Notes',
+                          style: theme.textTheme.titleSmall?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        sandwich.notes!,
-                        style: theme.textTheme.bodyMedium,
-                      ),
-                    ],
+                        const SizedBox(height: 8),
+                        Text(
+                          sandwich.notes!,
+                          style: theme.textTheme.bodyMedium,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
