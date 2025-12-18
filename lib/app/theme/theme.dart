@@ -129,6 +129,13 @@ class MemoixTheme {
           ),
         ),
       ),
+      // SnackBar theme - ensure consistent behavior
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
+      ),
     );
   }
 
@@ -233,6 +240,13 @@ class MemoixTheme {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
           ),
+        ),
+      ),
+      // SnackBar theme - ensure consistent behavior
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
         ),
       ),
     );

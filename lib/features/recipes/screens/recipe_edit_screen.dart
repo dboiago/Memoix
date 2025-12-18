@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../app/app.dart';
 import '../models/category.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
@@ -1502,16 +1503,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       final recipeName = recipe.name;
 
       if (mounted) {
-        // Capture references before popping
-        final messenger = ScaffoldMessenger.of(context);
+        // Capture navigator before popping
         final navigator = Navigator.of(context);
         
         // Pop first
         navigator.pop();
         
-        // Show snackbar with proper SnackBarAction (like Stats button)
-        messenger
-          ..clearSnackBars()
+        // Use global scaffold messenger for snackbar after navigation
+        rootScaffoldMessengerKey.currentState
+          ?..clearSnackBars()
           ..showSnackBar(
             SnackBar(
               content: Text('$recipeName saved'),

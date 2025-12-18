@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../app/app.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/models/cuisine.dart';
@@ -1521,13 +1522,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     }
 
     if (mounted) {
-      // Capture references before navigating
-      final messenger = ScaffoldMessenger.of(context);
+      // Capture navigator before navigating
       final navigator = Navigator.of(context);
       
       navigator.popUntil((route) => route.isFirst);
-      messenger
-        ..clearSnackBars()
+      
+      // Use global scaffold messenger for snackbar after navigation
+      rootScaffoldMessengerKey.currentState
+        ?..clearSnackBars()
         ..showSnackBar(
           SnackBar(
             content: Text('Saved: $savedName'),

@@ -10,6 +10,9 @@ import '../core/services/github_recipe_service.dart';
 import '../core/widgets/update_available_dialog.dart';
 import '../features/settings/screens/settings_screen.dart';
 
+/// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
+final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
+
 class MemoixApp extends ConsumerWidget {
   const MemoixApp({super.key});
 
@@ -22,6 +25,7 @@ class MemoixApp extends ConsumerWidget {
       theme: MemoixTheme.light,
       darkTheme: MemoixTheme.dark,
       themeMode: mode,
+      scaffoldMessengerKey: rootScaffoldMessengerKey,
       home: const _DeepLinkWrapper(child: AppRouter()),
     );
   }
