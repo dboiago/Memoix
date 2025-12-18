@@ -93,11 +93,16 @@ class _CourseCardState extends State<CourseCard> {
                   ),
                 ),
                 // Recipe count
-                Text(
-                  '${widget.recipeCount} recipes',
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                    fontSize: 10,
+                Flexible(
+                  flex: 1,
+                  child: Text(
+                    '${widget.recipeCount} recipes',
+                    style: theme.textTheme.labelSmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                      fontSize: 10,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ],
