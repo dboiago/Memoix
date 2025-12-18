@@ -112,23 +112,25 @@ class RecipeHeader extends StatelessWidget {
                   // Row 1: Navigation Icon (Left) + Action Icons (Right)
                   _buildActionRow(context, theme),
 
-                  // Row 2: Title (wraps to 2 lines max, then ellipsis)
+                  // Row 2: Title (scales down to fit, never wraps or truncates)
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: baseFontSize,
-                        color: _hasHeaderImage
-                            ? theme.colorScheme.onSurfaceVariant
-                            : theme.colorScheme.onSurface,
-                        shadows: _hasHeaderImage
-                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                            : null,
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        recipe.name,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: baseFontSize,
+                          color: _hasHeaderImage
+                              ? theme.colorScheme.onSurfaceVariant
+                              : theme.colorScheme.onSurface,
+                          shadows: _hasHeaderImage
+                              ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
+                              : null,
+                        ),
                       ),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
 
@@ -168,59 +170,68 @@ class RecipeHeader extends StatelessWidget {
     final iconColor = _hasHeaderImage
         ? theme.colorScheme.onSurfaceVariant
         : theme.colorScheme.onSurface;
+    
+    // Use shadow for icons when over an image
+    final iconShadows = _hasHeaderImage
+        ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
+        : null;
 
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         // Back button
         IconButton(
-          icon: Icon(Icons.arrow_back, color: iconColor),
+          icon: Icon(Icons.arrow_back, color: iconColor, shadows: iconShadows),
           onPressed: onBack ?? () => Navigator.of(context).pop(),
         ),
-        // Action icons row
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
+        // Spacer to push actions to right
+        const Spacer(),
+        // Action icons - use Flexible to prevent overflow
+        Flexible(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
             // Favorite
             if (onToggleFavorite != null)
               IconButton(
                 icon: Icon(
                   recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
                   color: recipe.isFavorite ? theme.colorScheme.primary : iconColor,
+                  shadows: iconShadows,
                 ),
                 onPressed: onToggleFavorite,
               ),
             // Log cook
             if (onLogCook != null)
               IconButton(
-                icon: Icon(Icons.check_circle_outline, color: iconColor),
+                icon: Icon(Icons.check_circle_outline, color: iconColor, shadows: iconShadows),
                 tooltip: 'I made this',
                 onPressed: onLogCook,
               ),
             // Share
             if (onShare != null)
               IconButton(
-                icon: Icon(Icons.share, color: iconColor),
+                icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
                 onPressed: onShare,
               ),
-            // Menu
-            if (onMenuSelected != null)
-              PopupMenuButton<String>(
-                onSelected: onMenuSelected,
-                itemBuilder: (_) => [
-                  const PopupMenuItem(value: 'edit', child: Text('Edit')),
-                  const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-                  PopupMenuItem(
-                    value: 'delete',
-                    child: Text(
-                      'Delete',
-                      style: TextStyle(color: theme.colorScheme.secondary),
+              // Menu
+              if (onMenuSelected != null)
+                PopupMenuButton<String>(
+                  onSelected: onMenuSelected,
+                  itemBuilder: (_) => [
+                    const PopupMenuItem(value: 'edit', child: Text('Edit')),
+                    const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+                    PopupMenuItem(
+                      value: 'delete',
+                      child: Text(
+                        'Delete',
+                        style: TextStyle(color: theme.colorScheme.secondary),
+                      ),
                     ),
-                  ),
-                ],
-                icon: Icon(Icons.more_vert, color: iconColor),
-              ),
-          ],
+                  ],
+                  icon: Icon(Icons.more_vert, color: iconColor, shadows: iconShadows),
+                ),
+            ],
+          ),
         ),
       ],
     );
@@ -397,11 +408,10 @@ class RecipeHeader extends StatelessWidget {
       }
     }
 
-    // Add glass/garnish for drinks
+    // Add glass for drinks (garnish is shown in ingredients, not header)
     final isDrinkCourse = recipe.course?.toLowerCase() == 'drinks';
     if (isDrinkCourse) {
       final hasGlass = recipe.glass != null && recipe.glass!.isNotEmpty;
-      final hasGarnish = recipe.garnish.isNotEmpty;
 
       if (hasGlass) {
         if (metadataItems.isNotEmpty) {
@@ -412,18 +422,6 @@ class RecipeHeader extends StatelessWidget {
           child: Icon(Icons.local_bar, size: 12, color: textColor),
         ));
         metadataItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
-      }
-
-      if (hasGarnish) {
-        if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '   '));
-        }
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.eco, size: 12, color: textColor),
-        ));
-        // Join garnish list into a comma-separated string
-        metadataItems.add(TextSpan(text: ' ${recipe.garnish.map(_capitalizeWords).join(', ')}'));
       }
     }
 

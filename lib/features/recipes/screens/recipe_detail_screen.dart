@@ -207,7 +207,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           RecipeHeader(
             recipe: recipe,
             useChipMetadata: false, // Side-by-side uses compact text row
-            headerImage: headerImage,
+            headerImage: hasHeaderImage ? headerImage : null,
             onToggleFavorite: () async {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
