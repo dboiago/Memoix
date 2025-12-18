@@ -80,76 +80,128 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasEquipment = recipe.equipment.isNotEmpty;
-    
-    // Calculate header height based on content (equipment moved to body)
-    double headerHeight = hasHeaderImage ? 100.0 : 0.0;
-    headerHeight += 56.0; // Title + metadata row
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    // Scale font size with screen width: 18px at 320, up to 28px at 1200+
+    final baseFontSize = (screenWidth / 50).clamp(18.0, 28.0);
 
     return Scaffold(
-      appBar: AppBar(
-        // No title in the main area - it goes in bottom
-        title: null,
-        actions: _buildAppBarActions(context, recipe, theme),
-        // Recipe name on its own line below the back arrow and actions
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(headerHeight),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Header image if enabled
-              if (hasHeaderImage)
-                SizedBox(
-                  height: 100,
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      _buildSingleImage(headerImage!),
-                      const DecoratedBox(
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [Colors.transparent, Colors.black54],
-                            stops: [0.5, 1.0],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              // Recipe title with metadata
-              Container(
-                color: theme.colorScheme.surface,
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      recipe.name,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    const SizedBox(height: 4),
-                    // Compact metadata row with dots
-                    _buildCompactMetadataRow(recipe, theme),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+      // No appBar - we build the header as part of the body
       body: Column(
         children: [
-          // Collapsible equipment section (above the split view)
+          // 1. THE RICH HEADER - Fixed at top, does not scroll
+          // DEBUG: Added bright border to confirm this layout is active
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              // Default solid color from theme
+              color: const Color(0xFF00FFFF), // DEBUG: Cyan color
+              border: Border.all(color: const Color(0xFFFF00FF), width: 4), // DEBUG: Magenta border
+              // Optional background image if user has set one
+              image: hasHeaderImage
+                  ? DecorationImage(
+                      image: headerImage!.startsWith('http')
+                          ? NetworkImage(headerImage) as ImageProvider
+                          : FileImage(File(headerImage)),
+                      fit: BoxFit.cover,
+                    )
+                  : null,
+            ),
+            child: Stack(
+              children: [
+                // Semi-transparent overlay for text legibility when image is present
+                if (hasHeaderImage)
+                  Positioned.fill(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.black.withOpacity(0.3),
+                            Colors.black.withOpacity(0.6),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                // Content inside SafeArea (icons and title stay within safe bounds)
+                SafeArea(
+                  bottom: false, // Only pad for status bar, not bottom
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 16.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        // Row 1: Navigation Icon (Left) + Action Icons (Right)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            // Back button
+                            IconButton(
+                              icon: Icon(
+                                Icons.arrow_back,
+                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                              ),
+                              onPressed: () => Navigator.of(context).pop(),
+                            ),
+                            // Action icons row
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: _buildRichHeaderActions(context, recipe, theme, hasHeaderImage),
+                            ),
+                          ],
+                        ),
+
+                        // Row 2: Auto-Scaling Title
+                        // Using Row + Expanded to give FittedBox bounded width
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    recipe.name,
+                                    style: theme.textTheme.headlineMedium?.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: baseFontSize,
+                                      color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                                      shadows: hasHeaderImage
+                                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                          : null,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        // Row 3: Compact metadata row
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 4.0),
+                          child: _buildCompactMetadataRow(
+                            recipe,
+                            theme,
+                            overrideColor: hasHeaderImage ? Colors.white70 : null,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          // 2. Collapsible equipment section (above the split view)
           if (hasEquipment)
             _buildCollapsibleEquipment(recipe, theme),
-          // Main content
+
+          // 3. THE CONTENT (Split View) - Scrollable, sits below header
           Expanded(
             child: SplitModernistView(
               recipe: recipe,
@@ -161,8 +213,58 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     );
   }
 
+  /// Build action icons for the Rich Header (with appropriate colors for image/no-image states)
+  List<Widget> _buildRichHeaderActions(BuildContext context, ModernistRecipe recipe, ThemeData theme, bool hasHeaderImage) {
+    final iconColor = hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer;
+    
+    return [
+      IconButton(
+        icon: Icon(
+          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavorite ? theme.colorScheme.primary : iconColor,
+        ),
+        onPressed: () async {
+          await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+          ref.invalidate(modernistRecipeProvider(widget.recipeId));
+        },
+      ),
+      IconButton(
+        icon: Icon(Icons.check_circle_outline, color: iconColor),
+        tooltip: 'I made this',
+        onPressed: () {
+          ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+          ref.invalidate(modernistRecipeProvider(widget.recipeId));
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+          );
+        },
+      ),
+      IconButton(
+        icon: Icon(Icons.share, color: iconColor),
+        onPressed: () => _shareRecipe(context, recipe),
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) => _handleMenuAction(value, recipe),
+        itemBuilder: (_) => [
+          const PopupMenuItem(value: 'edit', child: Text('Edit')),
+          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text(
+              'Delete',
+              style: TextStyle(color: theme.colorScheme.secondary),
+            ),
+          ),
+        ],
+        icon: Icon(Icons.more_vert, color: iconColor),
+      ),
+    ];
+  }
+
   /// Build compact metadata row for side-by-side mode
-  Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme) {
+  /// [overrideColor] - optional color to use for text/icons when over an image
+  Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme, {Color? overrideColor}) {
+    final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
     final metadataItems = <InlineSpan>[];
     
     // Always show type with colored indicator (Concept or Technique)
@@ -187,7 +289,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       metadataItems.add(const TextSpan(text: '   '));
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.science_outlined, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        child: Icon(Icons.science_outlined, size: 12, color: textColor),
       ));
       metadataItems.add(TextSpan(text: ' ${recipe.technique!}'));
     }
@@ -199,7 +301,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         metadataItems.add(const TextSpan(text: '   '));
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurfaceVariant),
+          child: Icon(Icons.people, size: 12, color: textColor),
         ));
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
@@ -212,7 +314,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         metadataItems.add(const TextSpan(text: '   '));
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.schedule, size: 12, color: theme.colorScheme.onSurfaceVariant),
+          child: Icon(Icons.schedule, size: 12, color: textColor),
         ));
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
@@ -223,7 +325,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       metadataItems.add(const TextSpan(text: '   '));
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.signal_cellular_alt, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        child: Icon(Icons.signal_cellular_alt, size: 12, color: textColor),
       ));
       metadataItems.add(TextSpan(text: ' ${recipe.difficulty!}'));
     }
@@ -235,7 +337,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     return Text.rich(
       TextSpan(
         style: theme.textTheme.bodySmall?.copyWith(
-          color: theme.colorScheme.onSurfaceVariant,
+          color: textColor,
         ),
         children: metadataItems,
       ),
