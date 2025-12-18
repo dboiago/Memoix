@@ -69,7 +69,7 @@ class _CheeseDetailView extends ConsumerWidget {
                 entry.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -77,8 +77,9 @@ class _CheeseDetailView extends ConsumerWidget {
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 100,
+                end: 120,
               ),
+              expandedTitleScale: 1.2,
               background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,

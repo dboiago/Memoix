@@ -188,4 +188,68 @@ class UnitNormalizer {
       }
     }
   }
+
+  /// Normalize time strings to compact format (e.g., "4h 30m", "1d", "45m")
+  /// Handles various input formats: "1 hour", "30 minutes", "1 day 2 hours", etc.
+  static String normalizeTime(String? timeStr) {
+    if (timeStr == null || timeStr.isEmpty) return '';
+    
+    final trimmed = timeStr.trim().toLowerCase();
+    
+    // Parse components
+    int totalMinutes = 0;
+    
+    // Match days
+    final dayMatch = RegExp(r'(\d+)\s*(?:days?|d\b)').firstMatch(trimmed);
+    if (dayMatch != null) {
+      totalMinutes += int.parse(dayMatch.group(1)!) * 1440;
+    }
+    
+    // Match hours
+    final hourMatch = RegExp(r'(\d+)\s*(?:hours?|hrs?|h\b)').firstMatch(trimmed);
+    if (hourMatch != null) {
+      totalMinutes += int.parse(hourMatch.group(1)!) * 60;
+    }
+    
+    // Match minutes
+    final minMatch = RegExp(r'(\d+)\s*(?:minutes?|mins?|m\b)').firstMatch(trimmed);
+    if (minMatch != null) {
+      totalMinutes += int.parse(minMatch.group(1)!);
+    }
+    
+    // If nothing parsed, return original
+    if (totalMinutes == 0) return timeStr;
+    
+    return formatMinutes(totalMinutes);
+  }
+
+  /// Format total minutes as compact string (e.g., "4h 30m", "1d", "45m")
+  static String formatMinutes(int totalMinutes) {
+    if (totalMinutes <= 0) return '0m';
+    
+    final days = totalMinutes ~/ 1440;
+    final remAfterDays = totalMinutes % 1440;
+    final hours = remAfterDays ~/ 60;
+    final mins = remAfterDays % 60;
+    
+    final parts = <String>[];
+    if (days > 0) parts.add('${days}d');
+    if (hours > 0) parts.add('${hours}h');
+    if (mins > 0) parts.add('${mins}m');
+    
+    return parts.join(' ');
+  }
+
+  /// Normalize serves string to just numbers (e.g., "Serves 4" -> "4", "4 people" -> "4")
+  static String normalizeServes(String? serves) {
+    if (serves == null || serves.isEmpty) return '';
+    
+    // Extract just the number(s)
+    final match = RegExp(r'(\d+(?:\s*[-–]\s*\d+)?)').firstMatch(serves);
+    if (match != null) {
+      return match.group(1)!.replaceAll(RegExp(r'\s+'), '');
+    }
+    
+    return serves.trim();
+  }
 }

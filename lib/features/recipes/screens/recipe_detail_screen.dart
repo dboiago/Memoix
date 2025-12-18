@@ -7,6 +7,7 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -357,20 +358,34 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
     }
     
-    // Add serves
+    // Add serves (normalized to just number with icon)
     if (recipe.serves != null && recipe.serves!.isNotEmpty) {
-      if (metadataItems.isNotEmpty) {
-        metadataItems.add(const TextSpan(text: '  •  '));
+      final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
+      if (normalized.isNotEmpty) {
+        if (metadataItems.isNotEmpty) {
+          metadataItems.add(const TextSpan(text: '  •  '));
+        }
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
       }
-      metadataItems.add(TextSpan(text: _formatServes(recipe.serves!)));
     }
     
-    // Add time
+    // Add time (normalized to compact format with icon)
     if (recipe.time != null && recipe.time!.isNotEmpty) {
-      if (metadataItems.isNotEmpty) {
-        metadataItems.add(const TextSpan(text: '  •  '));
+      final normalized = UnitNormalizer.normalizeTime(recipe.time!);
+      if (normalized.isNotEmpty) {
+        if (metadataItems.isNotEmpty) {
+          metadataItems.add(const TextSpan(text: '  •  '));
+        }
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.schedule, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
       }
-      metadataItems.add(TextSpan(text: recipe.time!));
     }
     
     if (metadataItems.isEmpty) {
@@ -472,7 +487,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 recipe.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -480,8 +495,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 100,
+                end: 120,
               ),
+              expandedTitleScale: 1.2,
               background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,

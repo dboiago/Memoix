@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/utils/unit_normalizer.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../sharing/services/share_service.dart';
 import '../models/modernist_recipe.dart';
@@ -79,10 +80,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
     final hasEquipment = recipe.equipment.isNotEmpty;
     
-    // Calculate header height based on content
+    // Calculate header height based on content (equipment moved to body)
     double headerHeight = hasHeaderImage ? 100.0 : 0.0;
     headerHeight += 56.0; // Title + metadata row
-    if (hasEquipment) headerHeight += 48.0; // Collapsible equipment header
 
     return Scaffold(
       appBar: AppBar(
@@ -139,16 +139,23 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ],
                 ),
               ),
-              // Collapsible equipment section
-              if (hasEquipment)
-                _buildCollapsibleEquipment(recipe, theme),
             ],
           ),
         ),
       ),
-      body: SplitModernistView(
-        recipe: recipe,
-        onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+      body: Column(
+        children: [
+          // Collapsible equipment section (above the split view)
+          if (hasEquipment)
+            _buildCollapsibleEquipment(recipe, theme),
+          // Main content
+          Expanded(
+            child: SplitModernistView(
+              recipe: recipe,
+              onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -157,52 +164,59 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme) {
     final metadataItems = <InlineSpan>[];
     
-    // Add type with colored indicator
-    if (recipe.type == ModernistType.technique) {
-      metadataItems.add(WidgetSpan(
-        alignment: PlaceholderAlignment.middle,
-        child: Container(
-          width: 8,
-          height: 8,
-          margin: const EdgeInsets.only(right: 4),
-          decoration: BoxDecoration(
-            color: theme.colorScheme.tertiary,
-            shape: BoxShape.circle,
-          ),
+    // Always show type with colored indicator (Concept or Technique)
+    final typeColor = recipe.type == ModernistType.technique 
+        ? theme.colorScheme.tertiary 
+        : theme.colorScheme.primary;
+    metadataItems.add(WidgetSpan(
+      alignment: PlaceholderAlignment.middle,
+      child: Container(
+        width: 8,
+        height: 8,
+        margin: const EdgeInsets.only(right: 4),
+        decoration: BoxDecoration(
+          color: typeColor,
+          shape: BoxShape.circle,
         ),
-      ));
-      metadataItems.add(const TextSpan(text: 'Technique'));
-    }
+      ),
+    ));
+    metadataItems.add(TextSpan(text: recipe.type.displayName));
     
     // Add technique category
     if (recipe.technique != null && recipe.technique!.isNotEmpty) {
-      if (metadataItems.isNotEmpty) {
-        metadataItems.add(const TextSpan(text: '  •  '));
-      }
+      metadataItems.add(const TextSpan(text: '  •  '));
       metadataItems.add(TextSpan(text: recipe.technique!));
     }
     
-    // Add serves
+    // Add serves (normalized to just number)
     if (recipe.serves != null && recipe.serves!.isNotEmpty) {
-      if (metadataItems.isNotEmpty) {
+      final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
+      if (normalized.isNotEmpty) {
         metadataItems.add(const TextSpan(text: '  •  '));
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
       }
-      metadataItems.add(TextSpan(text: recipe.serves!));
     }
     
-    // Add time
+    // Add time (normalized to compact format with clock icon)
     if (recipe.time != null && recipe.time!.isNotEmpty) {
-      if (metadataItems.isNotEmpty) {
+      final normalized = UnitNormalizer.normalizeTime(recipe.time!);
+      if (normalized.isNotEmpty) {
         metadataItems.add(const TextSpan(text: '  •  '));
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.schedule, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
       }
-      metadataItems.add(TextSpan(text: recipe.time!));
     }
     
     // Add difficulty
     if (recipe.difficulty != null && recipe.difficulty!.isNotEmpty) {
-      if (metadataItems.isNotEmpty) {
-        metadataItems.add(const TextSpan(text: '  •  '));
-      }
+      metadataItems.add(const TextSpan(text: '  •  '));
       metadataItems.add(TextSpan(text: recipe.difficulty!));
     }
     
@@ -337,7 +351,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 recipe.name,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -345,8 +359,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 100,
+                end: 120,
               ),
+              expandedTitleScale: 1.2,
               background: hasHeaderImage
                   ? Stack(
                       fit: StackFit.expand,
