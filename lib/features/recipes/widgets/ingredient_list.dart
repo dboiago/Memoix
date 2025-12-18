@@ -399,19 +399,16 @@ class _IngredientListState extends State<IngredientList> {
 
                   // Right side: Notes (right-aligned on same line)
                   if (hasNotes)
-                    Flexible(
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 8),
-                        child: Text(
-                          notesText,
-                          textAlign: TextAlign.right,
-                          style: textStyle?.copyWith(
-                            decoration: isChecked ? TextDecoration.lineThrough : null,
-                            color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : theme.colorScheme.primary,
-                            fontStyle: FontStyle.italic,
-                          ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8),
+                      child: Text(
+                        notesText,
+                        style: textStyle?.copyWith(
+                          decoration: isChecked ? TextDecoration.lineThrough : null,
+                          color: isChecked
+                              ? theme.colorScheme.onSurface.withOpacity(0.5)
+                              : theme.colorScheme.primary,
+                          fontStyle: FontStyle.italic,
                         ),
                       ),
                     ),

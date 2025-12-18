@@ -340,9 +340,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   Widget _buildCompactMetadataRow(Recipe recipe, ThemeData theme) {
     final metadataItems = <InlineSpan>[];
     
-    // Add cuisine with colored dot
+    // Add cuisine with colored dot (using same method as recipe card)
     if (recipe.cuisine != null) {
-      final cuisineColor = MemoixColors.forCuisine(recipe.cuisine!);
+      final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Container(
@@ -482,56 +482,44 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: LayoutBuilder(
-              builder: (context, constraints) {
-                // Calculate font size based on available width
-                final screenWidth = MediaQuery.sizeOf(context).width;
-                final fontSize = screenWidth < 400 ? 14.0 : (screenWidth < 600 ? 16.0 : 18.0);
-                
-                return FlexibleSpaceBar(
-                  title: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: fontSize,
-                      ),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                  titlePadding: const EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 16,
-                    end: 100,
-                  ),
-                  expandedTitleScale: 1.3,
-                  background: hasHeaderImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            _buildSingleImage(context, headerImage!),
-                            // Gradient scrim for legibility
-                            const DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black54,
-                                  ],
-                                  stops: [0.5, 1.0],
-                                ),
-                              ),
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                recipe.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              titlePadding: const EdgeInsetsDirectional.only(
+                start: 56,
+                bottom: 16,
+                end: 120,
+              ),
+              expandedTitleScale: 1.3,
+              background: hasHeaderImage
+                  ? Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        _buildSingleImage(context, headerImage!),
+                        // Gradient scrim for legibility
+                        const DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.transparent,
+                                Colors.black54,
+                              ],
+                              stops: [0.5, 1.0],
                             ),
-                          ],
-                        )
-                      : Container(color: theme.colorScheme.surfaceContainerHighest),
-                );
-              },
+                          ),
+                        ),
+                      ],
+                    )
+                  : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
             actions: [
               IconButton(

@@ -148,113 +148,38 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           ),
         ),
       ),
-      body: _buildSideBySideContent(context, theme, pizza),
-    );
-  }
-
-  Widget _buildSideBySideContent(BuildContext context, ThemeData theme, Pizza pizza) {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Row 1: Sauce | Cheese
-          IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: _buildComponentCard(theme, 'Sauce', [pizza.base.displayName]),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                    pizza.cheeses.isEmpty ? ['None'] : pizza.cheeses,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 12),
-          // Row 2: Proteins | Vegetables
-          IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    pizza.proteins.length == 1 ? 'Protein' : 'Proteins',
-                    pizza.proteins.isEmpty ? ['None'] : pizza.proteins,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-                    pizza.vegetables.isEmpty ? ['None'] : pizza.vegetables,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Notes (full width)
-          if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
-            const SizedBox(height: 16),
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Notes',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      pizza.notes!,
-                      style: theme.textTheme.bodyMedium,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-
-  Widget _buildComponentCard(ThemeData theme, String title, List<String> items) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(12),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: theme.textTheme.titleSmall?.copyWith(
-                fontWeight: FontWeight.bold,
+            // Use same grid as normal mode
+            _PizzaComponentsGrid(pizza: pizza),
+            // Notes (full width)
+            if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Notes',
+                        style: theme.textTheme.titleSmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        pizza.notes!,
+                        style: theme.textTheme.bodyMedium,
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            ...items.map((item) => Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Row(
-                children: [
-                  Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
-                  const SizedBox(width: 8),
-                  Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
-                ],
-              ),
-            )),
+            ],
           ],
         ),
       ),

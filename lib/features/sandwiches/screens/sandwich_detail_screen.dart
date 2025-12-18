@@ -148,137 +148,38 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           ),
         ),
       ),
-      body: _buildSideBySideContent(context, theme, sandwich),
-    );
-  }
-
-  Widget _buildSideBySideContent(BuildContext context, ThemeData theme, Sandwich sandwich) {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Bread (full width if present)
-          if (sandwich.bread.isNotEmpty)
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Row(
-                  children: [
-                    Text(
-                      'Bread:',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(child: Text(sandwich.bread, style: theme.textTheme.bodyMedium)),
-                  ],
-                ),
-              ),
-            ),
-          if (sandwich.bread.isNotEmpty) const SizedBox(height: 12),
-          // Row 1: Cheeses | Condiments
-          IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                    sandwich.cheeses.isEmpty ? ['None'] : sandwich.cheeses,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    sandwich.condiments.length == 1 ? 'Condiment' : 'Condiments',
-                    sandwich.condiments.isEmpty ? ['None'] : sandwich.condiments,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 12),
-          // Row 2: Proteins | Vegetables
-          IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
-                    sandwich.proteins.isEmpty ? ['None'] : sandwich.proteins,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildComponentCard(
-                    theme,
-                    sandwich.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-                    sandwich.vegetables.isEmpty ? ['None'] : sandwich.vegetables,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Notes (full width)
-          if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
-            const SizedBox(height: 16),
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Notes',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      sandwich.notes!,
-                      style: theme.textTheme.bodyMedium,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-
-  Widget _buildComponentCard(ThemeData theme, String title, List<String> items) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(12),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: theme.textTheme.titleSmall?.copyWith(
-                fontWeight: FontWeight.bold,
+            // Use same grid as normal mode
+            _SandwichComponentsGrid(sandwich: sandwich),
+            // Notes (full width)
+            if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Notes',
+                        style: theme.textTheme.titleSmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        sandwich.notes!,
+                        style: theme.textTheme.bodyMedium,
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            ...items.map((item) => Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Row(
-                children: [
-                  Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
-                  const SizedBox(width: 8),
-                  Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
-                ],
-              ),
-            )),
+            ],
           ],
         ),
       ),
