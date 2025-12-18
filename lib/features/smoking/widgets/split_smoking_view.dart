@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../models/smoking_recipe.dart';
 
@@ -56,7 +55,6 @@ class SplitSmokingView extends StatelessWidget {
     // Check for extra content sections
     final hasNotes = recipe.notes != null && recipe.notes!.isNotEmpty;
     final hasGallery = recipe.stepImages.isNotEmpty;
-    final hasSourceUrl = recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty;
 
     return SingleChildScrollView(
       physics: const ClampingScrollPhysics(),
@@ -188,24 +186,6 @@ class SplitSmokingView extends StatelessWidget {
                       child: _buildImageGallery(context, recipe, theme),
                     ),
                   ],
-                ),
-              ),
-            ),
-          
-          // Source URL (View Original Recipe)
-          if (hasSourceUrl)
-            Padding(
-              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: Center(
-                child: TextButton.icon(
-                  icon: const Icon(Icons.open_in_new),
-                  label: const Text('View Original Recipe'),
-                  onPressed: () async {
-                    final url = Uri.tryParse(recipe.sourceUrl!);
-                    if (url != null) {
-                      await launchUrl(url, mode: LaunchMode.externalApplication);
-                    }
-                  },
                 ),
               ),
             ),
