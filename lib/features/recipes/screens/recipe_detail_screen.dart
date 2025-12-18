@@ -745,18 +745,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Icon(Icons.comment, size: 20, color: Theme.of(context).colorScheme.primary),
-                                const SizedBox(width: 8),
-                                Text(
-                                  'Comments',
-                                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
+                            Text(
+                              'Comments',
+                              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             const SizedBox(height: 12),
                             Text(
@@ -765,6 +758,120 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             ),
                           ],
                         ),
+                      ),
+                    ),
+                  ),
+
+                // Gallery section (collapsible)
+                if (hasStepImages)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                    child: Card(
+                      child: ExpansionTile(
+                        title: Text(
+                          'Gallery',
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        initiallyExpanded: true,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                            child: SizedBox(
+                              height: 120,
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: recipe.stepImages.length,
+                                itemBuilder: (context, imageIndex) {
+                                  // Find which step(s) use this image
+                                  final stepsUsingImage = <int>[];
+                                  for (int i = 0; i < recipe.directions.length; i++) {
+                                    if (recipe.getStepImageIndex(i) == imageIndex) {
+                                      stepsUsingImage.add(i + 1);
+                                    }
+                                  }
+
+                                  return Padding(
+                                    padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
+                                    child: GestureDetector(
+                                      onTap: () => _showImageFullscreen(recipe.stepImages[imageIndex]),
+                                      child: Stack(
+                                        children: [
+                                          ClipRRect(
+                                            borderRadius: BorderRadius.circular(8),
+                                            child: _buildStepImageWidget(recipe.stepImages[imageIndex], width: 120, height: 120),
+                                          ),
+                                          // Step numbers badge
+                                          if (stepsUsingImage.isNotEmpty)
+                                            Positioned(
+                                              top: 4,
+                                              left: 4,
+                                              child: Container(
+                                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                                decoration: BoxDecoration(
+                                                  color: theme.colorScheme.primary,
+                                                  borderRadius: BorderRadius.circular(10),
+                                                ),
+                                                child: Text(
+                                                  stepsUsingImage.map((s) => 'Step $s').join(', '),
+                                                  style: const TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 10,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          // Expand icon
+                                          Positioned(
+                                            bottom: 4,
+                                            right: 4,
+                                            child: Container(
+                                              padding: const EdgeInsets.all(4),
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(0.5),
+                                                borderRadius: BorderRadius.circular(4),
+                                              ),
+                                              child: const Icon(
+                                                Icons.fullscreen,
+                                                size: 16,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+                // Nutrition section (collapsible)
+                if (recipe.nutrition != null && recipe.nutrition!.hasData)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                    child: Card(
+                      child: ExpansionTile(
+                        title: Text(
+                          'Nutrition',
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        initiallyExpanded: false,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                            child: _buildNutritionContent(recipe.nutrition!, theme),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -795,99 +902,42 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     );
   }
 
-  Widget _buildStepImagesGallery(ThemeData theme, Recipe recipe) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(Icons.photo_library, size: 20, color: theme.colorScheme.primary),
-                const SizedBox(width: 8),
-                Text(
-                  'Step Images',
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
+  Widget _buildNutritionContent(NutritionInfo nutrition, ThemeData theme) {
+    final items = <MapEntry<String, String>>[];
+    if (nutrition.calories != null) items.add(MapEntry('Calories', '${nutrition.calories}'));
+    if (nutrition.proteinContent != null) items.add(MapEntry('Protein', '${nutrition.proteinContent}g'));
+    if (nutrition.carbohydrateContent != null) items.add(MapEntry('Carbs', '${nutrition.carbohydrateContent}g'));
+    if (nutrition.fatContent != null) items.add(MapEntry('Fat', '${nutrition.fatContent}g'));
+    if (nutrition.fiberContent != null) items.add(MapEntry('Fiber', '${nutrition.fiberContent}g'));
+    if (nutrition.sodiumContent != null) items.add(MapEntry('Sodium', '${nutrition.sodiumContent}mg'));
+    
+    return Wrap(
+      spacing: 16,
+      runSpacing: 8,
+      children: items.map((item) => Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            '${item.key}: ',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
             ),
-            const SizedBox(height: 12),
-            SizedBox(
-              height: 120,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: recipe.stepImages.length,
-                itemBuilder: (context, imageIndex) {
-                  // Find which step(s) use this image
-                  final stepsUsingImage = <int>[];
-                  for (int i = 0; i < recipe.directions.length; i++) {
-                    if (recipe.getStepImageIndex(i) == imageIndex) {
-                      stepsUsingImage.add(i + 1);
-                    }
-                  }
-
-                  return Padding(
-                    padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
-                    child: GestureDetector(
-                      onTap: () => _showImageFullscreen(recipe.stepImages[imageIndex]),
-                      child: Stack(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(8),
-                            child: _buildStepImageWidget(recipe.stepImages[imageIndex], width: 120, height: 120),
-                          ),
-                          // Step numbers badge
-                          if (stepsUsingImage.isNotEmpty)
-                            Positioned(
-                              top: 4,
-                              left: 4,
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                                decoration: BoxDecoration(
-                                  color: theme.colorScheme.primary,
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: Text(
-                                  stepsUsingImage.map((s) => 'Step $s').join(', '),
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          // Expand icon
-                          Positioned(
-                            bottom: 4,
-                            right: 4,
-                            child: Container(
-                              padding: const EdgeInsets.all(4),
-                              decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(4),
-                              ),
-                              child: const Icon(
-                                Icons.fullscreen,
-                                size: 16,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  );
-                },
-              ),
+          ),
+          Text(
+            item.value,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w500,
             ),
-          ],
-        ),
-      ),
+          ),
+        ],
+      )).toList(),
     );
+  }
+
+  Widget _buildStepImagesGallery(ThemeData theme, Recipe recipe) {
+    // This is now used only for the key-based scrolling target
+    // The actual gallery display uses the new collapsible Gallery section above
+    return const SizedBox.shrink();
   }
 
   Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {

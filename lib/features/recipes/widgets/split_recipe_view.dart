@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/recipe.dart';
 
@@ -46,7 +47,6 @@ class SplitRecipeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
-    final screenHeight = MediaQuery.sizeOf(context).height;
     final theme = Theme.of(context);
     
     // Visual density adjustments for cockpit mode
@@ -63,70 +63,42 @@ class SplitRecipeView extends StatelessWidget {
     final hasGlassOrGarnish = isDrink && 
         ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty);
 
-    // Check for extra content below split columns
-    final hasNotes = recipe.notes != null && recipe.notes!.isNotEmpty;
-    final hasNutrition = recipe.nutrition != null && recipe.nutrition!.hasData;
-    final hasGallery = recipe.stepImages.isNotEmpty;
-    final hasExtraContent = hasNotes || hasNutrition || hasGallery;
-
-    // Calculate split section height - leaves room for extra content if present
-    // Use 55% of remaining height after header if there's extra content, otherwise 75%
-    final splitHeightRatio = hasExtraContent ? 0.55 : 0.75;
-    final estimatedHeaderHeight = 120.0; // Approximate header + metadata height
-    final availableHeight = screenHeight - estimatedHeaderHeight;
-    final splitHeight = availableHeight * splitHeightRatio;
-
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // Metadata row (compact text below header)
-          if (metadataWidget != null)
-            Container(
-              color: theme.colorScheme.surface,
-              padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-              width: double.infinity,
-              child: metadataWidget!,
+    return Column(
+      children: [
+        // Metadata row (compact text below header)
+        if (metadataWidget != null)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+            width: double.infinity,
+            child: metadataWidget!,
+          ),
+        // Paired recipe chips (if any)
+        if (pairedRecipeChips != null && pairedRecipeChips!.isNotEmpty)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 4),
+            width: double.infinity,
+            child: Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              children: pairedRecipeChips!,
             ),
-          // Paired recipe chips (if any)
-          if (pairedRecipeChips != null && pairedRecipeChips!.isNotEmpty)
-            Container(
-              color: theme.colorScheme.surface,
-              padding: EdgeInsets.symmetric(horizontal: padding, vertical: 4),
-              width: double.infinity,
-              child: Wrap(
-                spacing: 6,
-                runSpacing: 4,
-                children: pairedRecipeChips!,
-              ),
-            ),
-          // Glass and Garnish chips for drinks (above column headers)
-          if (hasGlassOrGarnish)
-            Container(
-              color: theme.colorScheme.surface,
-              padding: EdgeInsets.symmetric(horizontal: padding, vertical: 6),
-              child: Wrap(
-                spacing: 8,
-                runSpacing: 4,
-                children: [
-                  // Glass chip
-                  if (recipe.glass != null && recipe.glass!.isNotEmpty)
-                    Chip(
-                      avatar: Icon(Icons.local_bar, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
-                      label: Text(_capitalizeWords(recipe.glass!)),
-                      backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                      labelStyle: TextStyle(
-                        color: theme.colorScheme.onSurface,
-                        fontSize: isCompact ? 11 : 12,
-                      ),
-                      visualDensity: VisualDensity.compact,
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      padding: EdgeInsets.zero,
-                    ),
-                  // Garnish chips
-                  ...recipe.garnish.map((item) => Chip(
-                    avatar: Icon(Icons.eco, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
-                    label: Text(_capitalizeWords(item)),
+          ),
+        // Glass and Garnish chips for drinks (above column headers)
+        if (hasGlassOrGarnish)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 6),
+            child: Wrap(
+              spacing: 8,
+              runSpacing: 4,
+              children: [
+                // Glass chip
+                if (recipe.glass != null && recipe.glass!.isNotEmpty)
+                  Chip(
+                    avatar: Icon(Icons.local_bar, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
+                    label: Text(_capitalizeWords(recipe.glass!)),
                     backgroundColor: theme.colorScheme.surfaceContainerHighest,
                     labelStyle: TextStyle(
                       color: theme.colorScheme.onSurface,
@@ -135,8 +107,21 @@ class SplitRecipeView extends StatelessWidget {
                     visualDensity: VisualDensity.compact,
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     padding: EdgeInsets.zero,
-                  )),
-                ],
+                  ),
+                // Garnish chips
+                ...recipe.garnish.map((item) => Chip(
+                  avatar: Icon(Icons.eco, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
+                  label: Text(_capitalizeWords(item)),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  labelStyle: TextStyle(
+                    color: theme.colorScheme.onSurface,
+                    fontSize: isCompact ? 11 : 12,
+                  ),
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  padding: EdgeInsets.zero,
+                )),
+              ],
               ),
             ),
           // Fixed header row for split columns
@@ -170,9 +155,8 @@ class SplitRecipeView extends StatelessWidget {
               ],
             ),
           ),
-          // Split columns with constrained height
-          SizedBox(
-            height: splitHeight.clamp(300.0, 600.0), // Min 300, max 600
+          // Scrollable content row - fills remaining space with independent scrolling
+          Expanded(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -186,7 +170,6 @@ class SplitRecipeView extends StatelessWidget {
                     child: _IngredientsColumn(
                       ingredients: recipe.ingredients,
                       isCompact: isCompact,
-                      disableScroll: hasExtraContent, // Disable inner scroll when there's content below
                     ),
                   ),
                 ),
@@ -200,7 +183,7 @@ class SplitRecipeView extends StatelessWidget {
                   ),
                 ),
 
-                // Directions Column
+                // Directions Column (includes Comments, Gallery, Nutrition, Source URL at bottom)
                 Expanded(
                   flex: _getDirectionsFlex(screenWidth),
                   child: ScrollbarTheme(
@@ -212,167 +195,14 @@ class SplitRecipeView extends StatelessWidget {
                       recipe: recipe,
                       onScrollToImage: onScrollToImage,
                       isCompact: isCompact,
-                      disableScroll: hasExtraContent, // Disable inner scroll when there's content below
                     ),
                   ),
                 ),
               ],
             ),
           ),
-          
-          // ===== SHARED SECTIONS BELOW SPLIT COLUMNS =====
-          
-          // Comments/Notes section
-          if (hasNotes)
-            Padding(
-              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.comment, size: 20, color: theme.colorScheme.primary),
-                          const SizedBox(width: 8),
-                          Text(
-                            'Comments',
-                            style: theme.textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 12),
-                      Text(recipe.notes!),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          
-          // Nutrition section
-          if (hasNutrition)
-            Padding(
-              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.restaurant, size: 20, color: theme.colorScheme.primary),
-                          const SizedBox(width: 8),
-                          Text(
-                            'Nutrition',
-                            style: theme.textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 12),
-                      _buildNutritionGrid(recipe.nutrition!, theme),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          
-          // Step Images Gallery
-          if (hasGallery)
-            Padding(
-              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.photo_library, size: 20, color: theme.colorScheme.primary),
-                          const SizedBox(width: 8),
-                          Text(
-                            'Gallery',
-                            style: theme.textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 12),
-                      _buildImageGallery(context, recipe, theme),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          
-          // Bottom padding
-          const SizedBox(height: 24),
         ],
-      ),
-    );
-  }
-
-  Widget _buildNutritionGrid(NutritionInfo nutrition, ThemeData theme) {
-    final items = <MapEntry<String, String>>[];
-    if (nutrition.calories != null) items.add(MapEntry('Calories', '${nutrition.calories}'));
-    if (nutrition.proteinContent != null) items.add(MapEntry('Protein', '${nutrition.proteinContent}g'));
-    if (nutrition.carbohydrateContent != null) items.add(MapEntry('Carbs', '${nutrition.carbohydrateContent}g'));
-    if (nutrition.fatContent != null) items.add(MapEntry('Fat', '${nutrition.fatContent}g'));
-    if (nutrition.fiberContent != null) items.add(MapEntry('Fiber', '${nutrition.fiberContent}g'));
-    if (nutrition.sodiumContent != null) items.add(MapEntry('Sodium', '${nutrition.sodiumContent}mg'));
-    
-    return Wrap(
-      spacing: 16,
-      runSpacing: 8,
-      children: items.map((item) => Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            '${item.key}: ',
-            style: theme.textTheme.bodyMedium?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          Text(
-            item.value,
-            style: theme.textTheme.bodyMedium?.copyWith(
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-        ],
-      )).toList(),
-    );
-  }
-
-  Widget _buildImageGallery(BuildContext context, Recipe recipe, ThemeData theme) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: recipe.stepImages.map((image) {
-        return ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: SizedBox(
-            width: 80,
-            height: 80,
-            child: Image.network(
-              image,
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
-                color: theme.colorScheme.surfaceContainerHighest,
-                child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
-              ),
-            ),
-          ),
-        );
-      }).toList(),
-    );
+      );
   }
 }
 
@@ -380,12 +210,10 @@ class SplitRecipeView extends StatelessWidget {
 class _IngredientsColumn extends StatefulWidget {
   final List<Ingredient> ingredients;
   final bool isCompact;
-  final bool disableScroll;
 
   const _IngredientsColumn({
     required this.ingredients,
     required this.isCompact,
-    this.disableScroll = false,
   });
 
   @override
@@ -402,10 +230,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
 
     return ListView.builder(
       primary: false,
-      // Disable scrolling when there's content below so outer scroll works
-      physics: widget.disableScroll 
-          ? const NeverScrollableScrollPhysics()
-          : const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 16),
       itemCount: widget.ingredients.isEmpty ? 1 : widget.ingredients.length,
       itemBuilder: (context, index) {
@@ -601,19 +426,18 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
 }
 
 /// Directions column with sticky header and independent scrolling.
+/// Includes Comments, Gallery, Nutrition, and Source URL at the bottom.
 class _DirectionsColumn extends StatefulWidget {
   final List<String> directions;
   final Recipe? recipe;
   final Function(int stepIndex)? onScrollToImage;
   final bool isCompact;
-  final bool disableScroll;
 
   const _DirectionsColumn({
     required this.directions,
     this.recipe,
     this.onScrollToImage,
     required this.isCompact,
-    this.disableScroll = false,
   });
 
   @override
@@ -627,8 +451,9 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final padding = widget.isCompact ? 8.0 : 12.0;
+    final recipe = widget.recipe;
 
-    // Build list of direction items only
+    // Build list of direction items plus extra sections
     final items = <Widget>[];
     
     // Add directions
@@ -645,16 +470,157 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
         items.add(_buildDirectionRow(context, i));
       }
     }
+    
+    // ===== EXTRA SECTIONS BELOW DIRECTIONS =====
+    
+    // Comments/Notes section
+    if (recipe?.notes != null && recipe!.notes!.isNotEmpty) {
+      items.add(const SizedBox(height: 24));
+      items.add(Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Comments',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(recipe.notes!),
+            ],
+          ),
+        ),
+      ));
+    }
+    
+    // Gallery section (collapsible)
+    if (recipe != null && recipe.stepImages.isNotEmpty) {
+      items.add(const SizedBox(height: 16));
+      items.add(Card(
+        child: ExpansionTile(
+          title: Text(
+            'Gallery',
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          initiallyExpanded: true,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: _buildImageGallery(context, recipe, theme),
+            ),
+          ],
+        ),
+      ));
+    }
+    
+    // Nutrition section (collapsible)
+    if (recipe?.nutrition != null) {
+      items.add(const SizedBox(height: 16));
+      items.add(Card(
+        child: ExpansionTile(
+          title: Text(
+            'Nutrition',
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          initiallyExpanded: false,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: _buildNutritionGrid(recipe!.nutrition!, theme),
+            ),
+          ],
+        ),
+      ));
+    }
+    
+    // Source URL (View Original Recipe)
+    if (recipe?.sourceUrl != null && recipe!.sourceUrl!.isNotEmpty) {
+      items.add(const SizedBox(height: 16));
+      items.add(TextButton.icon(
+        icon: const Icon(Icons.open_in_new),
+        label: const Text('View Original Recipe'),
+        onPressed: () async {
+          final url = Uri.tryParse(recipe.sourceUrl!);
+          if (url != null) {
+            await launchUrl(url, mode: LaunchMode.externalApplication);
+          }
+        },
+      ));
+    }
+    
+    // Bottom padding
+    items.add(const SizedBox(height: 24));
 
     return ListView(
       primary: false,
-      // Disable scrolling when there's content below so outer scroll works
-      physics: widget.disableScroll 
-          ? const NeverScrollableScrollPhysics()
-          : const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 16),
       children: items,
     );
+  }
+  
+  Widget _buildNutritionGrid(NutritionInfo nutrition, ThemeData theme) {
+    final items = <MapEntry<String, String>>[];
+    if (nutrition.calories != null) items.add(MapEntry('Calories', '${nutrition.calories}'));
+    if (nutrition.proteinContent != null) items.add(MapEntry('Protein', '${nutrition.proteinContent}g'));
+    if (nutrition.carbohydrateContent != null) items.add(MapEntry('Carbs', '${nutrition.carbohydrateContent}g'));
+    if (nutrition.fatContent != null) items.add(MapEntry('Fat', '${nutrition.fatContent}g'));
+    if (nutrition.fiberContent != null) items.add(MapEntry('Fiber', '${nutrition.fiberContent}g'));
+    if (nutrition.sodiumContent != null) items.add(MapEntry('Sodium', '${nutrition.sodiumContent}mg'));
+    
+    return Wrap(
+      spacing: 16,
+      runSpacing: 8,
+      children: items.map((item) => Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            '${item.key}: ',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+          Text(
+            item.value,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      )).toList(),
+    );
+  }
+
+  Widget _buildImageGallery(BuildContext context, Recipe recipe, ThemeData theme) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: recipe.stepImages.map((image) {
+        return ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: SizedBox(
+            width: 80,
+            height: 80,
+            child: Image.network(
+              image,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => Container(
+                color: theme.colorScheme.surfaceContainerHighest,
+                child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+              ),
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
   }
 
   /// Check if a step is a section header (wrapped in square brackets)
