@@ -76,76 +76,162 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
+    final headerColor = hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
 
     return Scaffold(
-      appBar: AppBar(
-        // No title in the main area - it goes in bottom
-        title: null,
-        actions: _buildAppBarActions(context, recipe, theme),
-        // Recipe name on its own line below the back arrow and actions
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(hasHeaderImage ? 160 : 56),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Header image if enabled
-              if (hasHeaderImage)
-                SizedBox(
-                  height: 100,
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      _buildSingleImage(context, headerImage!),
-                      const DecoratedBox(
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [Colors.transparent, Colors.black54],
-                            stops: [0.5, 1.0],
-                          ),
+      body: Column(
+        children: [
+          // Rich Fixed Header
+          Container(
+            decoration: BoxDecoration(
+              color: theme.colorScheme.surfaceContainerHighest,
+              image: hasHeaderImage
+                  ? DecorationImage(
+                      image: NetworkImage(headerImage!),
+                      fit: BoxFit.cover,
+                    )
+                  : null,
+            ),
+            child: Stack(
+              children: [
+                // Gradient overlay for image legibility
+                if (hasHeaderImage)
+                  Positioned.fill(
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [Colors.black26, Colors.black54],
                         ),
+                      ),
+                    ),
+                  ),
+                // SafeArea inside so background bleeds behind status bar
+                SafeArea(
+                  bottom: false,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      // Row 1: Back button + action icons
+                      Row(
+                        children: [
+                          IconButton(
+                            icon: Icon(Icons.arrow_back, color: headerColor),
+                            onPressed: () => Navigator.of(context).pop(),
+                          ),
+                          const Spacer(),
+                          ..._buildRichHeaderActions(context, recipe, theme, headerColor),
+                        ],
+                      ),
+                      // Row 2: Recipe title (auto-scaling)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  recipe.name,
+                                  style: theme.textTheme.headlineSmall?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    color: headerColor,
+                                  ),
+                                  maxLines: 1,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      // Compact metadata row
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                        child: _buildCompactMetadataRow(recipe, theme, overrideColor: hasHeaderImage ? Colors.white70 : null),
                       ),
                     ],
                   ),
                 ),
-              // Recipe title with metadata
-              Container(
-                color: theme.colorScheme.surface,
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      recipe.name,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    const SizedBox(height: 4),
-                    // Compact metadata row
-                    _buildCompactMetadataRow(recipe, theme),
-                  ],
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-      ),
-      body: SplitSmokingView(
-        recipe: recipe,
-        onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+          // Scrollable content
+          Expanded(
+            child: SplitSmokingView(
+              recipe: recipe,
+              onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+            ),
+          ),
+        ],
       ),
     );
   }
 
+  /// Build action icons for the rich header
+  List<Widget> _buildRichHeaderActions(BuildContext context, SmokingRecipe recipe, ThemeData theme, Color iconColor) {
+    return [
+      IconButton(
+        icon: Icon(
+          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavorite ? theme.colorScheme.secondary : iconColor,
+        ),
+        onPressed: () async {
+          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+          ref.invalidate(allSmokingRecipesProvider);
+        },
+      ),
+      IconButton(
+        icon: Icon(Icons.check_circle_outline, color: iconColor),
+        tooltip: 'I made this',
+        onPressed: () async {
+          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+            );
+          }
+        },
+      ),
+      IconButton(
+        icon: Icon(Icons.share, color: iconColor),
+        onPressed: () => _shareRecipe(context, ref, recipe),
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) {
+          switch (value) {
+            case 'edit':
+              _editRecipe(context, recipe);
+              break;
+            case 'duplicate':
+              _duplicateRecipe(context, ref, recipe);
+              break;
+            case 'delete':
+              _confirmDelete(context, ref, recipe);
+              break;
+          }
+        },
+        itemBuilder: (ctx) => [
+          const PopupMenuItem(value: 'edit', child: Text('Edit')),
+          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text('Delete', style: TextStyle(color: theme.colorScheme.secondary)),
+          ),
+        ],
+        icon: Icon(Icons.more_vert, color: iconColor),
+      ),
+    ];
+  }
+
   /// Build compact metadata row for side-by-side mode
-  Widget _buildCompactMetadataRow(SmokingRecipe recipe, ThemeData theme) {
+  Widget _buildCompactMetadataRow(SmokingRecipe recipe, ThemeData theme, {Color? overrideColor}) {
     final metadataItems = <InlineSpan>[];
+    final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
+    final iconColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
     
     // Add category with colored dot
     if (recipe.category != null && recipe.category!.isNotEmpty) {
@@ -172,7 +258,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       }
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.park_outlined, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        child: Icon(Icons.park_outlined, size: 12, color: iconColor),
       ));
       metadataItems.add(TextSpan(text: ' ${recipe.wood}'));
     }
@@ -184,7 +270,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       }
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
-        child: Icon(Icons.thermostat_outlined, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        child: Icon(Icons.thermostat_outlined, size: 12, color: iconColor),
       ));
       metadataItems.add(TextSpan(text: ' ${recipe.temperature}'));
     }
@@ -198,7 +284,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         }
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.schedule, size: 12, color: theme.colorScheme.onSurfaceVariant),
+          child: Icon(Icons.schedule, size: 12, color: iconColor),
         ));
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
@@ -211,7 +297,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     return Text.rich(
       TextSpan(
         style: theme.textTheme.bodySmall?.copyWith(
-          color: theme.colorScheme.onSurfaceVariant,
+          color: textColor,
         ),
         children: metadataItems,
       ),
@@ -289,44 +375,61 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 160,
-              ),
-              expandedTitleScale: 1.3,
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(context, headerImage),
-                        // Gradient scrim for legibility
-                        const DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.transparent,
-                                Colors.black54,
-                              ],
-                              stops: [0.5, 1.0],
+            flexibleSpace: LayoutBuilder(
+              builder: (context, constraints) {
+                final expandRatio = (constraints.maxHeight - kToolbarHeight) /
+                    ((hasHeaderImage ? 250 : 120) - kToolbarHeight);
+                final clampedRatio = expandRatio.clamp(0.0, 1.0);
+                final fontSize = 14 + (clampedRatio * 6);
+                
+                return FlexibleSpaceBar(
+                  title: Row(
+                    children: [
+                      Expanded(
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            recipe.name,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: fontSize,
                             ),
+                            maxLines: 1,
                           ),
                         ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+                      ),
+                    ],
+                  ),
+                  titlePadding: const EdgeInsetsDirectional.only(
+                    start: 56,
+                    bottom: 16,
+                    end: 160,
+                  ),
+                  background: hasHeaderImage
+                      ? Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            _buildSingleImage(context, headerImage),
+                            // Gradient scrim for legibility
+                            const DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Colors.transparent,
+                                    Colors.black54,
+                                  ],
+                                  stops: [0.5, 1.0],
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+                );
+              },
             ),
             actions: [
               IconButton(

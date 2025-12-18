@@ -64,44 +64,61 @@ class _CellarDetailView extends ConsumerWidget {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                entry.name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 160,
-              ),
-              expandedTitleScale: 1.3,
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildHeaderBackground(theme),
-                        // Gradient scrim for legibility
-                        const DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.transparent,
-                                Colors.black54,
-                              ],
-                              stops: [0.5, 1.0],
+            flexibleSpace: LayoutBuilder(
+              builder: (context, constraints) {
+                final expandRatio = (constraints.maxHeight - kToolbarHeight) /
+                    ((hasHeaderImage ? 250 : 120) - kToolbarHeight);
+                final clampedRatio = expandRatio.clamp(0.0, 1.0);
+                final fontSize = 14 + (clampedRatio * 6);
+                
+                return FlexibleSpaceBar(
+                  title: Row(
+                    children: [
+                      Expanded(
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            entry.name,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: fontSize,
                             ),
+                            maxLines: 1,
                           ),
                         ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+                      ),
+                    ],
+                  ),
+                  titlePadding: const EdgeInsetsDirectional.only(
+                    start: 56,
+                    bottom: 16,
+                    end: 160,
+                  ),
+                  background: hasHeaderImage
+                      ? Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            _buildHeaderBackground(theme),
+                            // Gradient scrim for legibility
+                            const DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Colors.transparent,
+                                    Colors.black54,
+                                  ],
+                                  stops: [0.5, 1.0],
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+                );
+              },
             ),
             actions: [
               IconButton(

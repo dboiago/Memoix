@@ -89,13 +89,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       body: Column(
         children: [
           // 1. THE RICH HEADER - Fixed at top, does not scroll
-          // DEBUG: Added bright border to confirm this layout is active
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
               // Default solid color from theme
-              color: const Color(0xFF00FFFF), // DEBUG: Cyan color
-              border: Border.all(color: const Color(0xFFFF00FF), width: 4), // DEBUG: Magenta border
+              color: theme.colorScheme.surfaceContainerHighest,
               // Optional background image if user has set one
               image: hasHeaderImage
                   ? DecorationImage(
@@ -141,7 +139,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                             IconButton(
                               icon: Icon(
                                 Icons.arrow_back,
-                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
                               ),
                               onPressed: () => Navigator.of(context).pop(),
                             ),
@@ -168,7 +166,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                                     style: theme.textTheme.headlineMedium?.copyWith(
                                       fontWeight: FontWeight.bold,
                                       fontSize: baseFontSize,
-                                      color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                                      color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
                                       shadows: hasHeaderImage
                                           ? [const Shadow(blurRadius: 4, color: Colors.black54)]
                                           : null,
@@ -215,7 +213,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   /// Build action icons for the Rich Header (with appropriate colors for image/no-image states)
   List<Widget> _buildRichHeaderActions(BuildContext context, ModernistRecipe recipe, ThemeData theme, bool hasHeaderImage) {
-    final iconColor = hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer;
+    final iconColor = hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
     
     return [
       IconButton(
