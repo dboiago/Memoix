@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -1056,11 +1057,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking image: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
@@ -1087,11 +1084,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         }
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking images: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Error picking images: $e');
     }
   }
 
@@ -1543,11 +1536,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking image: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
@@ -1564,8 +1553,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
   Future<void> _saveRecipe() async {
     if (_nameController.text.trim().isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please enter a recipe name')),
+      MemoixSnackBar.showError('Please enter a recipe name');
       );
       return;
     }
@@ -1674,18 +1662,12 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         );
       }
 
+      MemoixSnackBar.show('${_nameController.text} saved');
       if (mounted) {
-        ScaffoldMessenger.of(context)
-          ..clearSnackBars()
-          ..showSnackBar(
-            SnackBar(content: Text('${_nameController.text} saved')),
-          );
         Navigator.pop(context);
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error saving: $e')),
-      );
+      MemoixSnackBar.showError('Error saving: $e');
     } finally {
       setState(() => _isSaving = false);
     }

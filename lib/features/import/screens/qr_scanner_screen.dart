@@ -5,6 +5,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import '../../sharing/services/share_service.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_detail_screen.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// QR Code scanner screen for importing shared recipes
 class QrScannerScreen extends ConsumerStatefulWidget {
@@ -188,12 +189,7 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
 
       if (mounted) {
         // Show success and navigate to recipe
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Imported "${recipe.name}"!'),
-            backgroundColor: Colors.green,
-          ),
-        );
+        MemoixSnackBar.showSuccess('Imported "${recipe.name}"!');
 
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(

@@ -5,6 +5,8 @@ import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Card widget for displaying a smoking recipe in a list
 /// Matches RecipeCard styling with hover effects, favorite and cooked icons
@@ -124,16 +126,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                       ref
                           .read(smokingRepositoryProvider)
                           .incrementCookCount(widget.recipe.uuid);
-                      ScaffoldMessenger.of(context)
-                        ..clearSnackBars()
-                        ..showSnackBar(
-                          SnackBar(
-                            content:
-                                Text('${widget.recipe.name} marked as cooked'),
-                            behavior: SnackBarBehavior.floating,
-                            duration: const Duration(seconds: 2),
-                          ),
-                        );
+                      MemoixSnackBar.showMarkedAsCooked(widget.recipe.name);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),

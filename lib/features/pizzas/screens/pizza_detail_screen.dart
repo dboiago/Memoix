@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
@@ -306,20 +307,10 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
         tooltip: 'I made this',
         onPressed: () async {
           await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
-          if (context.mounted) {
-            ScaffoldMessenger.of(context)
-              ..clearSnackBars()
-              ..showSnackBar(
-                SnackBar(
-                  content: Text('Logged cook for ${pizza.name}'),
-                  duration: const Duration(seconds: 3),
-                  action: SnackBarAction(
-                    label: 'Stats',
-                    onPressed: () => AppRoutes.toStatistics(context),
-                  ),
-                ),
-              );
-          }
+          MemoixSnackBar.showLoggedCook(
+            recipeName: pizza.name,
+            onViewStats: () => AppRoutes.toStatistics(context),
+          );
         },
       ),
       IconButton(
@@ -377,9 +368,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           await ref.read(pizzaRepositoryProvider).deletePizza(pizza.id);
           if (context.mounted) {
             Navigator.of(context).pop();
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('${pizza.name} deleted')),
-            );
+            MemoixSnackBar.show('${pizza.name} deleted');
           }
         }
         break;
@@ -388,20 +377,10 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
 
   Future<void> _logCook(BuildContext context, Pizza pizza) async {
     await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
-    if (context.mounted) {
-      ScaffoldMessenger.of(context)
-        ..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(
-            content: Text('Logged cook for ${pizza.name}'),
-            duration: const Duration(seconds: 3),
-            action: SnackBarAction(
-              label: 'Stats',
-              onPressed: () => AppRoutes.toStatistics(context),
-            ),
-          ),
-        );
-    }
+    MemoixSnackBar.showLoggedCook(
+      recipeName: pizza.name,
+      onViewStats: () => AppRoutes.toStatistics(context),
+    );
   }
 
   void _sharePizza(BuildContext context, WidgetRef ref, Pizza pizza) {
@@ -448,11 +427,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
               onTap: () async {
                 Navigator.pop(ctx);
                 await shareService.copyPizzaShareLink(pizza);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard')),
-                  );
-                }
+                MemoixSnackBar.show('Link copied to clipboard');
               },
             ),
             ListTile(

@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/colors.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Pizza card widget for list display
 /// Matches RecipeCard styling with hover effects, favorite and cooked icons
@@ -132,17 +134,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                     color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(pizzaRepositoryProvider).incrementCookCount(widget.pizza);
-                      if (context.mounted) {
-                        ScaffoldMessenger.of(context)
-                          ..clearSnackBars()
-                          ..showSnackBar(
-                            SnackBar(
-                              content: Text('${widget.pizza.name} marked as cooked'),
-                              behavior: SnackBarBehavior.floating,
-                              duration: const Duration(seconds: 2),
-                            ),
-                          );
-                      }
+                      MemoixSnackBar.showMarkedAsCooked(widget.pizza.name);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),

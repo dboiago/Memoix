@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../features/sharing/services/share_service.dart';
 import '../../features/recipes/repository/recipe_repository.dart';
 import '../../features/recipes/screens/recipe_detail_screen.dart';
+import '../widgets/memoix_snackbar.dart';
 
 /// Service to handle deep links (memoix://recipe/...)
 class DeepLinkService {
@@ -100,12 +101,7 @@ class DeepLinkService {
               ),
             );
 
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Imported "${recipe.name}"!'),
-                backgroundColor: Colors.green,
-              ),
-            );
+            MemoixSnackBar.showSuccess('Imported "${recipe.name}"!');
           }
         }
       } catch (e) {
@@ -116,14 +112,7 @@ class DeepLinkService {
   }
 
   void _showError(BuildContext context, String message) {
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(message),
-          backgroundColor: Colors.red,
-        ),
-      );
-    }
+    MemoixSnackBar.showError(message);
   }
 }
 

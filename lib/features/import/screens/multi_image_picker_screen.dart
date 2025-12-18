@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Screen for picking multiple images (for multi-page recipe imports)
 class MultiImagePickerScreen extends StatefulWidget {
@@ -43,11 +44,7 @@ class _MultiImagePickerScreenState extends State<MultiImagePickerScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to pick images: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Failed to pick images: $e');
     }
   }
 
@@ -66,11 +63,7 @@ class _MultiImagePickerScreenState extends State<MultiImagePickerScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to capture image: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Failed to capture image: $e');
     }
   }
 
@@ -92,12 +85,8 @@ class _MultiImagePickerScreenState extends State<MultiImagePickerScreen> {
 
   void _confirm() {
     if (_selectedImages.length < widget.minImages) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Please select at least ${widget.minImages} image${widget.minImages > 1 ? 's' : ''}',
-          ),
-        ),
+      MemoixSnackBar.showError(
+        'Please select at least ${widget.minImages} image${widget.minImages > 1 ? 's' : ''}',
       );
       return;
     }

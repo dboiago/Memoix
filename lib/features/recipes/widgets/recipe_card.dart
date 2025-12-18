@@ -5,6 +5,8 @@ import '../models/cuisine.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../../../core/providers.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colors.dart';
 
@@ -242,15 +244,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                       course: widget.recipe.course,
                       cuisine: widget.recipe.cuisine,
                     );
-                    ScaffoldMessenger.of(context)
-                      ..clearSnackBars()
-                      ..showSnackBar(
-                        SnackBar(
-                          content: Text('${widget.recipe.name} marked as cooked'),
-                          behavior: SnackBarBehavior.floating,
-                          duration: const Duration(seconds: 2),
-                        ),
-                      );
+                    MemoixSnackBar.showMarkedAsCooked(widget.recipe.name);
                   },
                   padding: const EdgeInsets.all(8),
                   constraints: const BoxConstraints(),

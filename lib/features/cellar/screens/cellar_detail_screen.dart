@@ -8,6 +8,7 @@ import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Cellar detail screen - displays cellar entry info
 class CellarDetailScreen extends ConsumerWidget {
@@ -227,9 +228,7 @@ class _CellarDetailView extends ConsumerWidget {
       await ref.read(cellarRepositoryProvider).deleteEntry(entry.id);
       if (context.mounted) {
         Navigator.of(context).pop();
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${entry.name} deleted')),
-        );
+        MemoixSnackBar.show('${entry.name} deleted');
       }
     }
   }
@@ -251,11 +250,7 @@ class _CellarDetailView extends ConsumerWidget {
       ..isFavorite = false;
     
     await repo.saveEntry(newEntry);
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Created copy: ${newEntry.name}')),
-      );
-    }
+    MemoixSnackBar.show('Created copy: ${newEntry.name}');
   }
 
   void _shareEntry(BuildContext context, WidgetRef ref) {
@@ -302,11 +297,7 @@ class _CellarDetailView extends ConsumerWidget {
               onTap: () async {
                 Navigator.pop(ctx);
                 await shareService.copyCellarShareLink(entry);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard')),
-                  );
-                }
+                MemoixSnackBar.show('Link copied to clipboard');
               },
             ),
             const SizedBox(height: 8),

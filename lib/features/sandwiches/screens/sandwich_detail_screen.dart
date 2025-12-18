@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
@@ -346,20 +347,10 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
         tooltip: 'I made this',
         onPressed: () async {
           await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
-          if (context.mounted) {
-            ScaffoldMessenger.of(context)
-              ..clearSnackBars()
-              ..showSnackBar(
-                SnackBar(
-                  content: Text('Logged cook for ${sandwich.name}'),
-                  duration: const Duration(seconds: 3),
-                  action: SnackBarAction(
-                    label: 'Stats',
-                    onPressed: () => AppRoutes.toStatistics(context),
-                  ),
-                ),
-              );
-          }
+          MemoixSnackBar.showLoggedCook(
+            recipeName: sandwich.name,
+            onViewStats: () => AppRoutes.toStatistics(context),
+          );
         },
       ),
       IconButton(
@@ -424,9 +415,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           await ref.read(sandwichRepositoryProvider).deleteSandwich(sandwich.id);
           if (context.mounted) {
             Navigator.of(context).pop();
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('${sandwich.name} deleted')),
-            );
+            MemoixSnackBar.show('${sandwich.name} deleted');
           }
         }
         break;
@@ -450,10 +439,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
     final repo = ref.read(sandwichRepositoryProvider);
     await repo.saveSandwich(duplicate);
 
+    MemoixSnackBar.show('Created copy: ${duplicate.name}');
     if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Created copy: ${duplicate.name}')),
-      );
       // Navigate to the new sandwich
       AppRoutes.toSandwichDetail(context, duplicate.uuid);
     }
@@ -461,20 +448,10 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
 
   Future<void> _logCook(BuildContext context, Sandwich sandwich) async {
     await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
-    if (context.mounted) {
-      ScaffoldMessenger.of(context)
-        ..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(
-            content: Text('Logged cook for ${sandwich.name}'),
-            duration: const Duration(seconds: 3),
-            action: SnackBarAction(
-              label: 'Stats',
-              onPressed: () => AppRoutes.toStatistics(context),
-            ),
-          ),
-        );
-    }
+    MemoixSnackBar.showLoggedCook(
+      recipeName: sandwich.name,
+      onViewStats: () => AppRoutes.toStatistics(context),
+    );
   }
 
   void _shareSandwich(BuildContext context, WidgetRef ref, Sandwich sandwich) {
@@ -521,11 +498,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
               onTap: () async {
                 Navigator.pop(ctx);
                 await shareService.copySandwichShareLink(sandwich);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard')),
-                  );
-                }
+                MemoixSnackBar.show('Link copied to clipboard');
               },
             ),
             ListTile(

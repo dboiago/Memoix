@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../core/services/github_recipe_service.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/database/database.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/update_available_dialog.dart';
 import '../services/recipe_backup_service.dart';
@@ -259,17 +260,11 @@ class SettingsScreen extends ConsumerWidget {
                 ? null
                 : () async {
                     await ref.read(syncNotifierProvider.notifier).sync();
-                    if (context.mounted) {
-                      final state = ref.read(syncNotifierProvider);
-                      if (state.hasError) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Sync failed: ${state.error}')),
-                        );
-                      } else {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('Memoix collection synced successfully')),
-                        );
-                      }
+                    final state = ref.read(syncNotifierProvider);
+                    if (state.hasError) {
+                      MemoixSnackBar.showError('Sync failed: ${state.error}');
+                    } else {
+                      MemoixSnackBar.showSuccess('Memoix collection synced successfully');
                     }
                   },
           ),
@@ -308,17 +303,9 @@ class SettingsScreen extends ConsumerWidget {
               try {
                 final service = ref.read(recipeBackupServiceProvider);
                 await service.exportRecipes(includeAll: false);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Recipes exported successfully')),
-                  );
-                }
+                MemoixSnackBar.showSuccess('Recipes exported successfully');
               } catch (e) {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Export failed: $e')),
-                  );
-                }
+                MemoixSnackBar.showError('Export failed: $e');
               }
             },
           ),
@@ -331,23 +318,13 @@ class SettingsScreen extends ConsumerWidget {
               try {
                 final service = ref.read(recipeBackupServiceProvider);
                 final count = await service.importRecipes();
-                if (context.mounted) {
-                  if (count > 0) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Imported $count recipe${count == 1 ? '' : 's'}')),
-                    );
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('No recipes imported')),
-                    );
-                  }
+                if (count > 0) {
+                  MemoixSnackBar.showSuccess('Imported $count recipe${count == 1 ? '' : 's'}');
+                } else {
+                  MemoixSnackBar.show('No recipes imported');
                 }
               } catch (e) {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Import failed: $e')),
-                  );
-                }
+                MemoixSnackBar.showError('Import failed: $e');
               }
             },
           ),
@@ -371,9 +348,7 @@ class SettingsScreen extends ConsumerWidget {
               if (await canLaunchUrl(uri)) {
                 await launchUrl(uri);
               } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Could not open GitHub')),
-                );
+                MemoixSnackBar.showError('Could not open GitHub');
               }
             },
           ),
@@ -387,9 +362,7 @@ class SettingsScreen extends ConsumerWidget {
               if (await canLaunchUrl(uri)) {
                 await launchUrl(uri);
               } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Could not open link')),
-                );
+                MemoixSnackBar.showError('Could not open link');
               }
             },
           ),
@@ -455,12 +428,7 @@ class SettingsScreen extends ConsumerWidget {
   Future<void> _checkForUpdates(BuildContext context, WidgetRef ref) async {
     // Show loading indicator
     if (!context.mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Checking for updates...'),
-        duration: Duration(seconds: 3),
-      ),
-    );
+    MemoixSnackBar.show('Checking for updates...');
 
     final updateService = ref.read(updateServiceProvider);
     final appVersion = await updateService.checkForUpdate();
@@ -468,20 +436,12 @@ class SettingsScreen extends ConsumerWidget {
     if (!context.mounted) return;
 
     if (appVersion == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Could not check for updates. Please try again.'),
-        ),
-      );
+      MemoixSnackBar.showError('Could not check for updates. Please try again.');
       return;
     }
 
     if (!appVersion.hasUpdate) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('You\'re already running the latest version!'),
-        ),
-      );
+      MemoixSnackBar.showSuccess('You\'re already running the latest version!');
       return;
     }
 
@@ -533,11 +493,7 @@ class SettingsScreen extends ConsumerWidget {
               ref.invalidate(categoriesProvider);
               ref.invalidate(allRecipesProvider);
               ref.invalidate(availableCuisinesProvider);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('All data cleared')),
-                );
-              }
+              MemoixSnackBar.show('All data cleared');
             },
             child: const Text('Clear All'),
           ),

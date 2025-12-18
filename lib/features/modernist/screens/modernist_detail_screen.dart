@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../sharing/services/share_service.dart';
@@ -352,18 +353,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         onPressed: () {
           ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
           ref.invalidate(modernistRecipeProvider(widget.recipeId));
-          ScaffoldMessenger.of(context)
-            ..clearSnackBars()
-            ..showSnackBar(
-              SnackBar(
-                content: Text('Logged cook for ${recipe.name}'),
-                duration: const Duration(seconds: 3),
-                action: SnackBarAction(
-                  label: 'Stats',
-                  onPressed: () => AppRoutes.toStatistics(context),
-                ),
-              ),
-            );
+          MemoixSnackBar.showLoggedCook(
+            recipeName: recipe.name,
+            onViewStats: () => AppRoutes.toStatistics(context),
+          );
         },
       ),
       IconButton(
@@ -1024,11 +1017,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     );
     
     await repo.save(newRecipe);
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Created copy: ${newRecipe.name}')),
-      );
-    }
+    MemoixSnackBar.show('Created copy: ${newRecipe.name}');
   }
 
   void _handleMenuAction(String action, ModernistRecipe recipe) async {
@@ -1077,18 +1066,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   void _logCook(BuildContext context, ModernistRecipe recipe) {
     ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
     ref.invalidate(modernistRecipeProvider(widget.recipeId));
-    ScaffoldMessenger.of(context)
-      ..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text('Logged cook for ${recipe.name}'),
-          duration: const Duration(seconds: 3),
-          action: SnackBarAction(
-            label: 'Stats',
-            onPressed: () => AppRoutes.toStatistics(context),
-          ),
-        ),
-      );
+    MemoixSnackBar.showLoggedCook(
+      recipeName: recipe.name,
+      onViewStats: () => AppRoutes.toStatistics(context),
+    );
   }
 
   void _shareRecipe(BuildContext context, ModernistRecipe recipe) {
@@ -1135,11 +1116,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               onTap: () async {
                 Navigator.pop(ctx);
                 await shareService.copyModernistShareLink(recipe);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard')),
-                  );
-                }
+                MemoixSnackBar.show('Link copied to clipboard');
               },
             ),
             ListTile(

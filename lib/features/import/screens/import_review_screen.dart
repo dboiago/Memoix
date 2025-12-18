@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../app/app.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/models/cuisine.dart';
@@ -1485,9 +1485,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   Future<void> _saveRecipe() async {
     if (_nameController.text.trim().isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please enter a recipe name')),
-      );
+      MemoixSnackBar.showError('Please enter a recipe name');
       return;
     }
 
@@ -1527,23 +1525,17 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       
       navigator.popUntil((route) => route.isFirst);
       
-      // Use global scaffold messenger for snackbar after navigation
-      rootScaffoldMessengerKey.currentState
-        ?..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(
-            content: Text('Saved: $savedName'),
-            action: SnackBarAction(
-              label: 'View',
-              onPressed: () {
-                navigator.push(
-                  MaterialPageRoute(builder: detailScreenBuilder),
-                );
-              },
-            ),
-            duration: const Duration(seconds: 4),
-          ),
-        );
+      // Use MemoixSnackBar for snackbar after navigation
+      MemoixSnackBar.showSaved(
+        itemName: savedName,
+        actionLabel: 'View',
+        onView: () {
+          navigator.push(
+            MaterialPageRoute(builder: detailScreenBuilder),
+          );
+        },
+        duration: const Duration(seconds: 4),
+      );
     }
   }
 }

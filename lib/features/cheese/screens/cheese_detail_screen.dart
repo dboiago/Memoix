@@ -8,6 +8,7 @@ import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Cheese detail screen - displays cheese entry info
 class CheeseDetailScreen extends ConsumerWidget {
@@ -222,9 +223,7 @@ class _CheeseDetailView extends ConsumerWidget {
       await ref.read(cheeseRepositoryProvider).deleteEntry(entry.id);
       if (context.mounted) {
         Navigator.of(context).pop();
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${entry.name} deleted')),
-        );
+        MemoixSnackBar.show('${entry.name} deleted');
       }
     }
   }
@@ -246,11 +245,7 @@ class _CheeseDetailView extends ConsumerWidget {
       ..isFavorite = false;
     
     await repo.saveEntry(newEntry);
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Created copy: ${newEntry.name}')),
-      );
-    }
+    MemoixSnackBar.show('Created copy: ${newEntry.name}');
   }
 
   void _shareEntry(BuildContext context, WidgetRef ref) {
@@ -297,11 +292,7 @@ class _CheeseDetailView extends ConsumerWidget {
               onTap: () async {
                 Navigator.pop(ctx);
                 await shareService.copyCheeseShareLink(entry);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard')),
-                  );
-                }
+                MemoixSnackBar.show('Link copied to clipboard');
               },
             ),
             const SizedBox(height: 8),

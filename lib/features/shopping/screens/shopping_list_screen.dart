@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/shopping_list.dart';
 import '../../../core/providers.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/recipe.dart';
 import '../../mealplan/models/meal_plan.dart';
@@ -537,9 +538,7 @@ class _CreateShoppingListSheetState extends ConsumerState<CreateShoppingListShee
                   Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
                 }
               } else {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found to generate list')));
-                }
+                MemoixSnackBar.showError('No recipes found to generate list');
               }
             },
           ),
@@ -754,11 +753,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
     }
 
     if (recipes.isEmpty) {
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('No recipes found')),
-        );
-      }
+      MemoixSnackBar.showError('No recipes found');
       return;
     }
 

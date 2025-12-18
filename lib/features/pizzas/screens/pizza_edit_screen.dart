@@ -9,6 +9,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/utils/suggestions.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Pizza edit/create screen
 class PizzaEditScreen extends ConsumerStatefulWidget {
@@ -876,12 +877,8 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     final repo = ref.read(pizzaRepositoryProvider);
     await repo.savePizza(pizza);
 
+    MemoixSnackBar.show('${pizza.name} saved');
     if (mounted) {
-      ScaffoldMessenger.of(context)
-        ..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(content: Text('${pizza.name} saved')),
-        );
       Navigator.of(context).pop();
     }
   }
@@ -914,9 +911,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
       await ref.read(pizzaRepositoryProvider).deletePizza(_existingPizza!.id);
       if (mounted) {
         Navigator.of(context).pop();
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${_existingPizza!.name} deleted')),
-        );
+        MemoixSnackBar.show('${_existingPizza!.name} deleted');
       }
     }
   }

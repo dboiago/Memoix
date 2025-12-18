@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../sharing/services/share_service.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 class ShareRecipeScreen extends ConsumerStatefulWidget {
   final String? recipeId;
@@ -56,11 +57,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
       });
     } catch (e) {
       setState(() => _isGenerating = false);
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to generate link: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Failed to generate link: $e');
     }
   }
 
@@ -383,9 +380,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   void _copyLink() {
     if (_shareLink == null) return;
     Clipboard.setData(ClipboardData(text: _shareLink!));
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Link copied to clipboard')),
-    );
+    MemoixSnackBar.show('Link copied to clipboard');
   }
 
   void _shareAsText() {
@@ -428,9 +423,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
   void _shareAsImage() {
     // TODO: Generate and share recipe as image
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Image sharing coming soon')),
-    );
+    MemoixSnackBar.show('Image sharing coming soon');
   }
 }
 

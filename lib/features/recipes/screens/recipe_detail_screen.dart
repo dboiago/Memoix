@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
@@ -458,20 +459,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ref.invalidate(cookingStatsProvider);
           ref.invalidate(recipeCookCountProvider(recipe.uuid));
           ref.invalidate(recipeLastCookProvider(recipe.uuid));
-          if (context.mounted) {
-            ScaffoldMessenger.of(context)
-              ..clearSnackBars()
-              ..showSnackBar(
-                SnackBar(
-                  content: Text('Logged cook for ${recipe.name}'),
-                  duration: const Duration(seconds: 3),
-                  action: SnackBarAction(
-                    label: 'Stats',
-                    onPressed: () => AppRoutes.toStatistics(context),
-                  ),
-                ),
-              );
-          }
+          MemoixSnackBar.showLoggedCook(
+            recipeName: recipe.name,
+            onViewStats: () => AppRoutes.toStatistics(context),
+          );
         },
       ),
       IconButton(
@@ -1085,20 +1076,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     ref.invalidate(cookingStatsProvider);
     ref.invalidate(recipeCookCountProvider(recipe.uuid));
     ref.invalidate(recipeLastCookProvider(recipe.uuid));
-    if (context.mounted) {
-      ScaffoldMessenger.of(context)
-        ..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(
-            content: Text('Logged cook for ${recipe.name}'),
-            duration: const Duration(seconds: 3),
-            action: SnackBarAction(
-              label: 'Stats',
-              onPressed: () => AppRoutes.toStatistics(context),
-            ),
-          ),
-        );
-    }
+    MemoixSnackBar.showLoggedCook(
+      recipeName: recipe.name,
+      onViewStats: () => AppRoutes.toStatistics(context),
+    );
   }
 
   void _shareRecipe(BuildContext context, WidgetRef ref) {
@@ -1146,11 +1127,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               onTap: () async {
                 Navigator.pop(ctx);
                 await shareService.copyShareLink(recipe);
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard')),
-                  );
-                }
+                MemoixSnackBar.show('Link copied to clipboard');
               },
             ),
             ListTile(
@@ -1211,11 +1188,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       ..tags = List.from(recipe.tags);
     
     await repo.saveRecipe(newRecipe);
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Created copy: ${newRecipe.name}')),
-      );
-    }
+    MemoixSnackBar.show('Created copy: ${newRecipe.name}');
   }
 
   void _confirmDelete(BuildContext context, WidgetRef ref) {

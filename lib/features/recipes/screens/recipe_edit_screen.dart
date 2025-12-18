@@ -7,7 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
-import '../../../app/app.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/category.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
@@ -831,11 +831,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking image: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
@@ -1390,9 +1386,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   Future<void> _saveRecipe() async {
     // Validate
     if (_nameController.text.trim().isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please enter a recipe name')),
-      );
+      MemoixSnackBar.showError('Please enter a recipe name');
       return;
     }
 
@@ -1509,29 +1503,22 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         // Pop first
         navigator.pop();
         
-        // Use global scaffold messenger for snackbar after navigation
-        rootScaffoldMessengerKey.currentState
-          ?..clearSnackBars()
-          ..showSnackBar(
-            SnackBar(
-              content: Text('$recipeName saved'),
-              action: SnackBarAction(
-                label: 'View',
-                onPressed: () {
-                  navigator.push(
-                    MaterialPageRoute(
-                      builder: (_) => RecipeDetailScreen(recipeId: savedId),
-                    ),
-                  );
-                },
+        // Use MemoixSnackBar for snackbar after navigation
+        MemoixSnackBar.showSaved(
+          itemName: recipeName,
+          actionLabel: 'View',
+          onView: () {
+            navigator.push(
+              MaterialPageRoute(
+                builder: (_) => RecipeDetailScreen(recipeId: savedId),
               ),
-              duration: const Duration(seconds: 4),
-            ),
-          );
+            );
+          },
+          duration: const Duration(seconds: 4),
+        );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error saving recipe: $e')),
+      MemoixSnackBar.showError('Error saving recipe: $e');
       );
     } finally {
       setState(() => _isSaving = false);
@@ -2158,11 +2145,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking image: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
@@ -2192,11 +2175,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         setState(() {});
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking images: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Error picking images: $e');
     }
   }
 

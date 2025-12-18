@@ -9,6 +9,7 @@ import 'package:uuid/uuid.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Cellar edit/create screen
 class CellarEditScreen extends ConsumerStatefulWidget {
@@ -405,9 +406,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
   Future<void> _saveEntry() async {
     // Validate with SnackBar
     if (_nameController.text.trim().isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please enter a name')),
-      );
+      MemoixSnackBar.showError('Please enter a name');
       return;
     }
 
@@ -433,12 +432,8 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
     final repo = ref.read(cellarRepositoryProvider);
     await repo.saveEntry(entry);
 
+    MemoixSnackBar.show('${entry.name} saved');
     if (mounted) {
-      ScaffoldMessenger.of(context)
-        ..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(content: Text('${entry.name} saved')),
-        );
       Navigator.of(context).pop();
     }
   }

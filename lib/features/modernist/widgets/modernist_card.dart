@@ -5,6 +5,8 @@ import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Card widget for displaying a modernist recipe in a list - follows Mains pattern
 class ModernistCard extends ConsumerStatefulWidget {
@@ -163,15 +165,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                     color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
                       ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
-                      ScaffoldMessenger.of(context)
-                        ..clearSnackBars()
-                        ..showSnackBar(
-                          SnackBar(
-                            content: Text('${recipe.name} marked as made'),
-                            behavior: SnackBarBehavior.floating,
-                            duration: const Duration(seconds: 2),
-                          ),
-                        );
+                      MemoixSnackBar.showMarkedAsCooked(recipe.name);
                     },
                     padding: const EdgeInsets.all(8),
                     constraints: const BoxConstraints(),

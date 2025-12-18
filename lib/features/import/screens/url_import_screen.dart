@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 
 import '../models/recipe_import_result.dart';
 import '../../../core/services/url_importer.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../pizzas/screens/pizza_edit_screen.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -147,12 +148,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                   onTap: () {
                     // Copy error message to clipboard on tap
                     Clipboard.setData(ClipboardData(text: _errorMessage!));
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Error message copied to clipboard'),
-                        duration: Duration(seconds: 2),
-                      ),
-                    );
+                    MemoixSnackBar.show('Error message copied to clipboard');
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(16),

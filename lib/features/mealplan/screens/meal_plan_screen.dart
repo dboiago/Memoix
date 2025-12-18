@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../models/meal_plan.dart';
 import '../../../core/providers.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -147,9 +148,7 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
     final repo = ref.read(recipeRepositoryProvider);
 
     // Async generate and navigate to the new list
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Generating shopping list from meal plan...')),
-    );
+    MemoixSnackBar.show('Generating shopping list from meal plan...');
 
     mealService.getWeek(weekStart).then((weekly) async {
       final ids = weekly.allRecipeIds.toList();
@@ -165,12 +164,10 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
           Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
         }
       } else {
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No recipes found for this week')));
-        }
+        MemoixSnackBar.showError('No recipes found for this week');
       }
     }).catchError((e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to generate shopping list: $e')));
+      MemoixSnackBar.showError('Failed to generate shopping list: $e');
     });
   }
 
@@ -619,7 +616,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                               ref.invalidate(weeklyPlanProvider);
                               if (context.mounted) {
                                 Navigator.pop(context);
-                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Added ${r.name}')));
+                                MemoixSnackBar.show('Added ${r.name}');
                               }
                             },
                           ),),
@@ -672,9 +669,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                   ref.invalidate(weeklyPlanProvider);
                                   if (context.mounted) {
                                     Navigator.pop(context);
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(content: Text('Added ${recipe.name}')),
-                                    );
+                                    MemoixSnackBar.show('Added ${recipe.name}');
                                   }
                                 },
                               ),).toList(),

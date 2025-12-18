@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/models/sandwich.dart';
 import '../../smoking/models/smoking_recipe.dart';
@@ -151,9 +152,7 @@ class ShareService {
               await copyShareLink(recipe);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),
@@ -271,9 +270,7 @@ class ShareService {
               await copyPizzaShareLink(pizza);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),
@@ -401,9 +398,7 @@ class ShareService {
               await copySandwichShareLink(sandwich);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),
@@ -519,9 +514,7 @@ class ShareService {
               await copySmokingShareLink(recipe);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),
@@ -654,9 +647,7 @@ class ShareService {
               await copyModernistShareLink(recipe);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),
@@ -729,9 +720,7 @@ class ShareService {
               await copyCellarShareLink(entry);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),
@@ -804,9 +793,7 @@ class ShareService {
               await copyCheeseShareLink(entry);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Link copied to clipboard')),
-                );
+                MemoixSnackBar.show('Link copied to clipboard');
               }
             },
             child: const Text('Copy Link'),

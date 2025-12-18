@@ -9,6 +9,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/utils/suggestions.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Sandwich edit/create screen with side-by-side layout
 class SandwichEditScreen extends ConsumerStatefulWidget {
@@ -791,12 +792,8 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
     final repo = ref.read(sandwichRepositoryProvider);
     await repo.saveSandwich(sandwich);
 
+    MemoixSnackBar.show('${sandwich.name} saved');
     if (mounted) {
-      ScaffoldMessenger.of(context)
-        ..clearSnackBars()
-        ..showSnackBar(
-          SnackBar(content: Text('${sandwich.name} saved')),
-        );
       Navigator.of(context).pop();
     }
   }

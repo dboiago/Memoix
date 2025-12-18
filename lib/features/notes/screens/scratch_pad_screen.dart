@@ -10,6 +10,7 @@ import '../../recipes/models/recipe.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/scratch_pad.dart';
 import '../repository/scratch_pad_repository.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Scratch Pad screen for quick notes and temporary recipes
 class ScratchPadScreen extends ConsumerStatefulWidget {
@@ -508,11 +509,7 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
         });
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to pick image: $e')),
-        );
-      }
+      MemoixSnackBar.showError('Failed to pick image: $e');
     }
   }
 
@@ -574,11 +571,9 @@ class _EditDraftScreenState extends State<_EditDraftScreen> {
 
   Future<void> _save() async {
     await widget.onSave(_buildUpdatedDraft());
+    MemoixSnackBar.show('Draft saved');
     if (mounted) {
       Navigator.pop(context);
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Draft saved')),
-      );
     }
   }
 
