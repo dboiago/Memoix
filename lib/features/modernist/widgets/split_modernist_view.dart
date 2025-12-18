@@ -66,154 +66,187 @@ class SplitModernistView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Fixed header row for split columns
-          Container(
-            color: theme.colorScheme.surface,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                // Ingredients header
-                Expanded(
-                  flex: _getIngredientsFlex(screenWidth),
-                  child: Container(
-                    height: headerHeight,
-                    padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                    alignment: Alignment.centerLeft,
-                    child: Text('Ingredients', style: headerStyle),
+          // Split columns card with rounded corners (matches normal mode cards)
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: padding),
+            child: Container(
+              decoration: BoxDecoration(
+                color: theme.colorScheme.surface,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: [
+                  // Fixed header row for split columns
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // Ingredients header
+                      Expanded(
+                        flex: _getIngredientsFlex(screenWidth),
+                        child: Container(
+                          height: headerHeight,
+                          padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                          alignment: Alignment.centerLeft,
+                          child: Text('Ingredients', style: headerStyle),
+                        ),
+                      ),
+                      // Divider spacer
+                      SizedBox(width: dividerPadding * 2 + 1),
+                      // Directions header
+                      Expanded(
+                        flex: _getDirectionsFlex(screenWidth),
+                        child: Container(
+                          height: headerHeight,
+                          padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                          alignment: Alignment.centerLeft,
+                          child: Text('Directions', style: headerStyle),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                // Divider spacer
-                SizedBox(width: dividerPadding * 2 + 1),
-                // Directions header
-                Expanded(
-                  flex: _getDirectionsFlex(screenWidth),
-                  child: Container(
-                    height: headerHeight,
-                    padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                    alignment: Alignment.centerLeft,
-                    child: Text('Directions', style: headerStyle),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          
-          // Split columns container with fixed height (85% of screen)
-          SizedBox(
-            height: splitViewHeight,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                // Ingredients Column - independently scrollable
-                Expanded(
-                  flex: _getIngredientsFlex(screenWidth),
-                  child: ScrollbarTheme(
-                    data: ScrollbarThemeData(
-                      thickness: WidgetStateProperty.all(2.0),
-                    ),
-                    child: _IngredientsColumn(
-                      ingredients: recipe.ingredients,
-                      isCompact: isCompact,
-                    ),
-                  ),
-                ),
+                  
+                  // Split columns container with fixed height (85% of screen)
+                  SizedBox(
+                    height: splitViewHeight,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        // Ingredients Column - independently scrollable
+                        Expanded(
+                          flex: _getIngredientsFlex(screenWidth),
+                          child: ScrollbarTheme(
+                            data: ScrollbarThemeData(
+                              thickness: WidgetStateProperty.all(2.0),
+                            ),
+                            child: _IngredientsColumn(
+                              ingredients: recipe.ingredients,
+                              isCompact: isCompact,
+                            ),
+                          ),
+                        ),
 
-                // Vertical Divider
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: dividerPadding),
-                  child: Container(
-                    width: 1,
-                    color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
-                  ),
-                ),
+                        // Vertical Divider
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: dividerPadding),
+                          child: Container(
+                            width: 1,
+                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                          ),
+                        ),
 
-                // Directions Column - independently scrollable
-                Expanded(
-                  flex: _getDirectionsFlex(screenWidth),
-                  child: ScrollbarTheme(
-                    data: ScrollbarThemeData(
-                      thickness: WidgetStateProperty.all(2.0),
-                    ),
-                    child: _DirectionsColumn(
-                      directions: recipe.directions,
-                      recipe: recipe,
-                      onScrollToImage: onScrollToImage,
-                      isCompact: isCompact,
+                        // Directions Column - independently scrollable
+                        Expanded(
+                          flex: _getDirectionsFlex(screenWidth),
+                          child: ScrollbarTheme(
+                            data: ScrollbarThemeData(
+                              thickness: WidgetStateProperty.all(2.0),
+                            ),
+                            child: _DirectionsColumn(
+                              directions: recipe.directions,
+                              recipe: recipe,
+                              onScrollToImage: onScrollToImage,
+                              isCompact: isCompact,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           
           // ===== FOOTER SECTIONS (scrollable via parent) =====
           
-          // Comments/Notes section
+          // Comments/Notes section - full width card
           if (hasNotes)
             Padding(
               padding: EdgeInsets.fromLTRB(padding, 24, padding, 0),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Comments',
+              child: SizedBox(
+                width: double.infinity,
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Comments',
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        Text(recipe.notes!),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          
+          // Science Notes section (collapsible) - full width card
+          if (hasScienceNotes)
+            Padding(
+              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
+              child: SizedBox(
+                width: double.infinity,
+                child: Card(
+                  child: Theme(
+                    data: theme.copyWith(
+                      splashColor: theme.colorScheme.surfaceContainerHighest,
+                      hoverColor: theme.colorScheme.surfaceContainerHighest,
+                    ),
+                    child: ExpansionTile(
+                      title: Text(
+                        'Science Notes',
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(height: 12),
-                      Text(recipe.notes!),
-                    ],
+                      initiallyExpanded: false,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                          child: Text(recipe.scienceNotes!),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
           
-          // Science Notes section (collapsible)
-          if (hasScienceNotes)
-            Padding(
-              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: Card(
-                child: ExpansionTile(
-                  title: Text(
-                    'Science Notes',
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  initiallyExpanded: false,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                      child: Text(recipe.scienceNotes!),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          
-          // Gallery section (collapsible)
+          // Gallery section (collapsible) - full width card
           if (hasGallery)
             Padding(
               padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: Card(
-                child: ExpansionTile(
-                  title: Text(
-                    'Gallery',
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
+              child: SizedBox(
+                width: double.infinity,
+                child: Card(
+                  child: Theme(
+                    data: theme.copyWith(
+                      splashColor: theme.colorScheme.surfaceContainerHighest,
+                      hoverColor: theme.colorScheme.surfaceContainerHighest,
+                    ),
+                    child: ExpansionTile(
+                      title: Text(
+                        'Gallery',
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      initiallyExpanded: true,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                          child: _buildImageGallery(context, recipe, theme),
+                        ),
+                      ],
                     ),
                   ),
-                  initiallyExpanded: true,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                      child: _buildImageGallery(context, recipe, theme),
-                    ),
-                  ],
                 ),
               ),
             ),
