@@ -183,7 +183,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final screenWidth = MediaQuery.sizeOf(context).width;
-    final isNarrow = screenWidth < 400;
+    final isLargeScreen = screenWidth >= 600;
+    final baseFontSize = isLargeScreen ? 20.0 : 16.0;
+    
+    // Calculate header height: image (if any) + title container
+    // Title container has padding (16) + title (variable) + spacing (4) + metadata (~20) + optional pairs (~30)
+    final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
+    final titleContainerHeight = hasPairs ? 90.0 : 60.0;
+    final headerHeight = (hasHeaderImage ? 100.0 : 0.0) + titleContainerHeight;
     
     return Scaffold(
       appBar: AppBar(
@@ -192,7 +199,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         actions: _buildAppBarActions(context, recipe, theme),
         // Recipe name on its own line below the back arrow and actions
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(hasHeaderImage ? 160 : 56),
+          preferredSize: Size.fromHeight(headerHeight),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -218,27 +225,32 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     ],
                   ),
                 ),
-              // Recipe title with dynamic sizing
+              // Recipe title with dynamic sizing - uses surfaceContainerHighest like no-image mode
               Container(
-                color: theme.colorScheme.surface,
+                color: theme.colorScheme.surfaceContainerHighest,
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      recipe.name,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
+                    // Title that shrinks instead of truncating
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        recipe.name,
+                        style: theme.textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          fontSize: baseFontSize,
+                        ),
+                        maxLines: 1,
                       ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
                     ),
                     const SizedBox(height: 4),
                     // Compact metadata row with dots
                     _buildCompactMetadataRow(recipe, theme),
                     // Paired recipes chips (if any)
-                    if (recipe.supportsPairing && _hasPairedRecipes(ref, recipe))
+                    if (hasPairs)
                       Padding(
                         padding: const EdgeInsets.only(top: 6),
                         child: Wrap(
@@ -498,44 +510,68 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                ),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-              ),
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 120,
-              ),
-              expandedTitleScale: 1.3,
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(context, headerImage!),
-                        // Gradient scrim for legibility
-                        const DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.transparent,
-                                Colors.black54,
-                              ],
-                              stops: [0.5, 1.0],
+            // Title area at the bottom that stays on its own line
+            flexibleSpace: LayoutBuilder(
+              builder: (context, constraints) {
+                final screenWidth = MediaQuery.sizeOf(context).width;
+                final isLargeScreen = screenWidth >= 600;
+                final expandedFontSize = isLargeScreen ? 22.0 : 18.0;
+                final collapsedFontSize = isLargeScreen ? 18.0 : 14.0;
+                
+                // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
+                final maxExtent = hasHeaderImage ? 250.0 : 120.0;
+                final minExtent = kToolbarHeight + MediaQuery.of(context).padding.top;
+                final currentExtent = constraints.maxHeight;
+                final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
+                
+                // Interpolate font size
+                final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
+                
+                return FlexibleSpaceBar(
+                  titlePadding: EdgeInsetsDirectional.only(
+                    start: 56,
+                    bottom: 12,
+                    end: 100,
+                  ),
+                  title: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                        color: hasHeaderImage || collapseRatio < 0.7 
+                            ? Colors.white 
+                            : theme.colorScheme.onSurface,
+                      ),
+                      maxLines: 1,
+                    ),
+                  ),
+                  background: hasHeaderImage
+                      ? Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            _buildSingleImage(context, headerImage!),
+                            // Gradient scrim for legibility
+                            const DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Colors.transparent,
+                                    Colors.black54,
+                                  ],
+                                  stops: [0.5, 1.0],
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+                          ],
+                        )
+                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+                );
+              },
             ),
             actions: [
               IconButton(
