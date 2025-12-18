@@ -11,6 +11,8 @@ import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/models/sandwich.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../modernist/models/modernist_recipe.dart';
+import '../../cellar/models/cellar_entry.dart';
+import '../../cheese/models/cheese_entry.dart';
 
 /// Service for sharing and importing recipes
 class ShareService {
@@ -650,6 +652,156 @@ class ShareService {
           TextButton(
             onPressed: () async {
               await copyModernistShareLink(recipe);
+              if (ctx.mounted) {
+                Navigator.pop(ctx);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Link copied to clipboard')),
+                );
+              }
+            },
+            child: const Text('Copy Link'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Done'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ============ CELLAR ENTRY SHARING ============
+
+  /// Generate a shareable link for a cellar entry
+  String generateCellarShareLink(CellarEntry entry) {
+    final json = entry.toShareableJson();
+    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    return 'memoix://cellar/$encoded';
+  }
+
+  /// Share a cellar entry via system share sheet
+  Future<void> shareCellarEntry(CellarEntry entry) async {
+    final link = generateCellarShareLink(entry);
+    
+    await Share.share(
+      '🍷 Check out this: ${entry.name}\n\n$link',
+      subject: entry.name,
+    );
+  }
+
+  /// Copy cellar entry share link to clipboard
+  Future<void> copyCellarShareLink(CellarEntry entry) async {
+    final link = generateCellarShareLink(entry);
+    await Clipboard.setData(ClipboardData(text: link));
+  }
+
+  /// Show QR code dialog for cellar entry sharing
+  void showCellarQrCode(BuildContext context, CellarEntry entry) {
+    final link = generateCellarShareLink(entry);
+    
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text('Share ${entry.name}'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 200,
+              height: 200,
+              child: QrImageView(
+                data: link,
+                version: QrVersions.auto,
+                backgroundColor: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Scan this QR code with another\nMemoix app to import this entry',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              await copyCellarShareLink(entry);
+              if (ctx.mounted) {
+                Navigator.pop(ctx);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Link copied to clipboard')),
+                );
+              }
+            },
+            child: const Text('Copy Link'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Done'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ============ CHEESE ENTRY SHARING ============
+
+  /// Generate a shareable link for a cheese entry
+  String generateCheeseShareLink(CheeseEntry entry) {
+    final json = entry.toShareableJson();
+    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    return 'memoix://cheese/$encoded';
+  }
+
+  /// Share a cheese entry via system share sheet
+  Future<void> shareCheeseEntry(CheeseEntry entry) async {
+    final link = generateCheeseShareLink(entry);
+    
+    await Share.share(
+      '🧀 Check out this cheese: ${entry.name}\n\n$link',
+      subject: entry.name,
+    );
+  }
+
+  /// Copy cheese entry share link to clipboard
+  Future<void> copyCheeseShareLink(CheeseEntry entry) async {
+    final link = generateCheeseShareLink(entry);
+    await Clipboard.setData(ClipboardData(text: link));
+  }
+
+  /// Show QR code dialog for cheese entry sharing
+  void showCheeseQrCode(BuildContext context, CheeseEntry entry) {
+    final link = generateCheeseShareLink(entry);
+    
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text('Share ${entry.name}'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 200,
+              height: 200,
+              child: QrImageView(
+                data: link,
+                version: QrVersions.auto,
+                backgroundColor: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Scan this QR code with another\nMemoix app to import this entry',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              await copyCheeseShareLink(entry);
               if (ctx.mounted) {
                 Navigator.pop(ctx);
                 ScaffoldMessenger.of(context).showSnackBar(

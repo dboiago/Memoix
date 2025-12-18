@@ -129,9 +129,7 @@ class MemoixHeader extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontSize: baseFontSize,
                           color: titleColor,
-                          shadows: _hasHeaderImage
-                              ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
-                              : null,
+                          shadows: [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))],
                         ),
                       ),
                     ),

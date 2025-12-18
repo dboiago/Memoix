@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
@@ -67,6 +68,7 @@ class _CheeseDetailView extends ConsumerWidget {
               await ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
               ref.invalidate(allCheeseEntriesProvider);
             },
+            onSharePressed: () => _shareEntry(context, ref),
             onEditPressed: () => AppRoutes.toCheeseEdit(context, entryId: entry.uuid),
             onDuplicatePressed: () => _duplicateEntry(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
@@ -249,6 +251,64 @@ class _CheeseDetailView extends ConsumerWidget {
         SnackBar(content: Text('Created copy: ${newEntry.name}')),
       );
     }
+  }
+
+  void _shareEntry(BuildContext context, WidgetRef ref) {
+    final shareService = ref.read(shareServiceProvider);
+    final theme = Theme.of(context);
+    
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Share "${entry.name}"',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.qr_code, color: theme.colorScheme.primary),
+              title: const Text('Show QR Code'),
+              subtitle: const Text('Others can scan to import'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.showCheeseQrCode(context, entry);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.share, color: theme.colorScheme.primary),
+              title: const Text('Share Link'),
+              subtitle: const Text('Send via any app'),
+              onTap: () {
+                Navigator.pop(ctx);
+                shareService.shareCheeseEntry(entry);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.content_copy, color: theme.colorScheme.primary),
+              title: const Text('Copy Link'),
+              subtitle: const Text('Copy to clipboard'),
+              onTap: () async {
+                Navigator.pop(ctx);
+                await shareService.copyCheeseShareLink(entry);
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Link copied to clipboard')),
+                  );
+                }
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
   }
 
   /// Capitalizes the first letter of each word
