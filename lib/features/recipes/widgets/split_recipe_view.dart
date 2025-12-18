@@ -621,7 +621,6 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
       }).toList(),
     );
   }
-  }
 
   /// Check if a step is a section header (wrapped in square brackets)
   bool _isSection(String step) {
