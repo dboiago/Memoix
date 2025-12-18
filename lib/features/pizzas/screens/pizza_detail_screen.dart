@@ -302,8 +302,8 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
               builder: (context, constraints) {
                 final screenWidth = MediaQuery.sizeOf(context).width;
                 // Scale font: 20px at 320, up to 28px at 1200+
-                final expandedFontSize = (screenWidth / 45).clamp(20.0, 28.0);
-                final collapsedFontSize = (screenWidth / 55).clamp(16.0, 22.0);
+                final expandedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
+                final collapsedFontSize = (screenWidth / 50).clamp(18.0, 24.0);
                 
                 // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
                 final maxExtent = hasHeaderImage ? 250.0 : 120.0;

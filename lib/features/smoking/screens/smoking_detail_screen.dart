@@ -375,7 +375,11 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 final expandRatio = (constraints.maxHeight - kToolbarHeight) /
                     ((hasHeaderImage ? 250 : 120) - kToolbarHeight);
                 final clampedRatio = expandRatio.clamp(0.0, 1.0);
-                final fontSize = 14 + (clampedRatio * 6);
+                final screenWidth = MediaQuery.sizeOf(context).width;
+                // Expanded: 20-28pt, Collapsed: 18-24pt (interpolated by clampedRatio)
+                final expandedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
+                final collapsedFontSize = (screenWidth / 50).clamp(18.0, 24.0);
+                final fontSize = collapsedFontSize + (clampedRatio * (expandedFontSize - collapsedFontSize));
                 
                 return FlexibleSpaceBar(
                   title: Row(
