@@ -256,23 +256,29 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                         ),
 
                         // Row 2: Auto-Scaling Title
-                        // FittedBox scales down the text to fit available width
+                        // Using Row + Expanded to give FittedBox bounded width while allowing scale down
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                              recipe.name,
-                              style: theme.textTheme.headlineMedium?.copyWith(
-                                fontWeight: FontWeight.bold,
-                                fontSize: baseFontSize,
-                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
-                                shadows: hasHeaderImage
-                                    ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                    : null,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    recipe.name,
+                                    style: theme.textTheme.headlineMedium?.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: baseFontSize,
+                                      color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                                      shadows: hasHeaderImage
+                                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                          : null,
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
+                            ],
                           ),
                         ),
 
@@ -649,22 +655,28 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     bottom: 12,
                     end: 100,
                   ),
-                  title: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: fontSize,
-                        color: hasHeaderImage || collapseRatio < 0.7 
-                            ? Colors.white 
-                            : theme.colorScheme.onSurface,
-                        shadows: hasHeaderImage && collapseRatio < 0.7
-                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                            : null,
+                  title: Row(
+                    children: [
+                      Expanded(
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            recipe.name,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: fontSize,
+                              color: hasHeaderImage || collapseRatio < 0.7 
+                                  ? Colors.white 
+                                  : theme.colorScheme.onSurface,
+                              shadows: hasHeaderImage && collapseRatio < 0.7
+                                  ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                  : null,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                   background: hasHeaderImage
                       ? Stack(
