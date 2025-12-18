@@ -123,15 +123,20 @@ class MemoixHeader extends StatelessWidget {
                     child: FittedBox(
                       fit: BoxFit.scaleDown,
                       alignment: Alignment.centerLeft,
-                      child: Text(
-                        title,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: baseFontSize,
-                          color: titleColor,
-                          shadows: [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))],
-                        ),
-                      ),
+                      child: _hasHeaderImage
+                          // With image: simple text with shadow
+                          ? Text(
+                              title,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: baseFontSize,
+                                color: theme.colorScheme.onSurfaceVariant,
+                                letterSpacing: 0.5,
+                                shadows: [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))],
+                              ),
+                            )
+                          // Without image: layered text effect
+                          : _buildLayeredTitle(theme, baseFontSize),
                     ),
                   ),
                 ],
@@ -140,6 +145,42 @@ class MemoixHeader extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  /// Build the layered title effect for headers without images.
+  /// Uses two stacked text layers: a semi-transparent offset layer and the main text.
+  Widget _buildLayeredTitle(ThemeData theme, double fontSize) {
+    final isDark = theme.brightness == Brightness.dark;
+    
+    // Main text color: primary accent
+    final mainColor = theme.colorScheme.primary;
+    
+    // Layer text color: secondary accent with opacity
+    final layerColor = theme.colorScheme.secondary.withOpacity(isDark ? 0.4 : 0.5);
+
+    final textStyle = TextStyle(
+      fontWeight: FontWeight.w600,
+      fontSize: fontSize,
+      letterSpacing: 0.5,
+    );
+
+    return Stack(
+      children: [
+        // Bottom layer: offset semi-transparent text
+        Transform.translate(
+          offset: const Offset(2, 2),
+          child: Text(
+            title,
+            style: textStyle.copyWith(color: layerColor),
+          ),
+        ),
+        // Top layer: main text
+        Text(
+          title,
+          style: textStyle.copyWith(color: mainColor),
+        ),
+      ],
     );
   }
 
@@ -210,6 +251,7 @@ class MemoixHeader extends StatelessWidget {
                       break;
                   }
                 },
+                constraints: const BoxConstraints(maxWidth: 200),
                 itemBuilder: (_) => [
                   if (onEditPressed != null)
                     const PopupMenuItem(value: 'edit', child: Text('Edit')),

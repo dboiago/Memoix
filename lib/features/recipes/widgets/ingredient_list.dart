@@ -402,28 +402,25 @@ class _IngredientListState extends State<IngredientList> {
                     ],
                   ),
                   
-                  // Second row: Alternative chip (below the ingredient, right-aligned)
+                  // Second row: Alternative chip (below the ingredient, left-aligned)
                   if (extractedAlt != null)
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.primary.withOpacity(0.15),
-                            borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: theme.colorScheme.primary,
-                              width: 1,
-                            ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.primary.withOpacity(0.15),
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: theme.colorScheme.primary,
+                            width: 1,
                           ),
-                          child: Text(
-                            'alt: $extractedAlt',
-                            style: theme.textTheme.labelSmall?.copyWith(
-                              color: theme.colorScheme.primary,
-                              fontStyle: FontStyle.italic,
-                            ),
+                        ),
+                        child: Text(
+                          'alt: $extractedAlt',
+                          style: theme.textTheme.labelSmall?.copyWith(
+                            color: theme.colorScheme.primary,
+                            fontStyle: FontStyle.italic,
                           ),
                         ),
                       ),

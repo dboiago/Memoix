@@ -793,7 +793,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${sandwich.name} saved!')),
+        SnackBar(content: Text('${sandwich.name} saved')),
       );
       Navigator.of(context).pop();
     }

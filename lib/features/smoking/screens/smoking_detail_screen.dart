@@ -324,7 +324,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+              SnackBar(content: Text('Logged cook for ${recipe.name}')),
             );
           }
         },
@@ -1015,7 +1015,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
     ref.invalidate(allSmokingRecipesProvider);
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+      SnackBar(content: Text('Logged cook for ${recipe.name}')),
     );
   }
 
@@ -1065,7 +1065,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 await shareService.copySmokingShareLink(recipe);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard!')),
+                    const SnackBar(content: Text('Link copied to clipboard')),
                   );
                 }
               },

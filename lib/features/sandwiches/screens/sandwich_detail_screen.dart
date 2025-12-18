@@ -348,7 +348,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${sandwich.name}!')),
+              SnackBar(content: Text('Logged cook for ${sandwich.name}')),
             );
           }
         },
@@ -454,7 +454,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
     await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Logged cook for ${sandwich.name}!')),
+        SnackBar(content: Text('Logged cook for ${sandwich.name}')),
       );
     }
   }
@@ -505,7 +505,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                 await shareService.copySandwichShareLink(sandwich);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard!')),
+                    const SnackBar(content: Text('Link copied to clipboard')),
                   );
                 }
               },

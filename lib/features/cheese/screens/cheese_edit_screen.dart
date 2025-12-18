@@ -510,7 +510,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${entry.name} saved!')),
+        SnackBar(content: Text('${entry.name} saved')),
       );
       Navigator.of(context).pop();
     }

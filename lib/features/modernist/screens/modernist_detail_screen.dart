@@ -359,7 +359,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
           ref.invalidate(modernistRecipeProvider(widget.recipeId));
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+            SnackBar(content: Text('Logged cook for ${recipe.name}')),
           );
         },
       ),
@@ -1088,7 +1088,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
     ref.invalidate(modernistRecipeProvider(widget.recipeId));
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+      SnackBar(content: Text('Logged cook for ${recipe.name}')),
     );
   }
 
@@ -1138,7 +1138,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 await shareService.copyModernistShareLink(recipe);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard!')),
+                    const SnackBar(content: Text('Link copied to clipboard')),
                   );
                 }
               },

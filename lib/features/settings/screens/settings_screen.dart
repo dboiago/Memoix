@@ -267,7 +267,7 @@ class SettingsScreen extends ConsumerWidget {
                         );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('✓ Memoix collection synced successfully!')),
+                          const SnackBar(content: Text('✓ Memoix collection synced successfully')),
                         );
                       }
                     }
@@ -310,7 +310,7 @@ class SettingsScreen extends ConsumerWidget {
                 await service.exportRecipes(includeAll: false);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('✓ Recipes exported successfully!')),
+                    const SnackBar(content: Text('✓ Recipes exported successfully')),
                   );
                 }
               } catch (e) {
@@ -334,7 +334,7 @@ class SettingsScreen extends ConsumerWidget {
                 if (context.mounted) {
                   if (count > 0) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('✓ Imported $count recipe${count == 1 ? '' : 's'}!')),
+                      SnackBar(content: Text('✓ Imported $count recipe${count == 1 ? '' : 's'}')),
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(

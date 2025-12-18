@@ -384,7 +384,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     if (_shareLink == null) return;
     Clipboard.setData(ClipboardData(text: _shareLink!));
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Link copied to clipboard!')),
+      const SnackBar(content: Text('Link copied to clipboard')),
     );
   }
 
@@ -429,7 +429,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   void _shareAsImage() {
     // TODO: Generate and share recipe as image
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Image sharing coming soon!')),
+      const SnackBar(content: Text('Image sharing coming soon')),
     );
   }
 }

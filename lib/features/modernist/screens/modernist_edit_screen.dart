@@ -1676,7 +1676,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${_nameController.text} saved!')),
+          SnackBar(content: Text('${_nameController.text} saved')),
         );
         Navigator.pop(context);
       }

@@ -878,7 +878,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${pizza.name} saved!')),
+        SnackBar(content: Text('${pizza.name} saved')),
       );
       Navigator.of(context).pop();
     }

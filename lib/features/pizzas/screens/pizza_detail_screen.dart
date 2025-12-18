@@ -308,7 +308,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Logged cook for ${pizza.name}!')),
+              SnackBar(content: Text('Logged cook for ${pizza.name}')),
             );
           }
         },
@@ -381,7 +381,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
     await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Logged cook for ${pizza.name}!')),
+        SnackBar(content: Text('Logged cook for ${pizza.name}')),
       );
     }
   }
@@ -432,7 +432,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                 await shareService.copyPizzaShareLink(pizza);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard!')),
+                    const SnackBar(content: Text('Link copied to clipboard')),
                   );
                 }
               },

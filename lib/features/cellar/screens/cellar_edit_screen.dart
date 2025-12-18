@@ -435,7 +435,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${entry.name} saved!')),
+        SnackBar(content: Text('${entry.name} saved')),
       );
       Navigator.of(context).pop();
     }

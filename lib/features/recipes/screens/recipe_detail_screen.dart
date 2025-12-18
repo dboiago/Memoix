@@ -287,14 +287,20 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         // Serves chip
         if (recipe.serves != null && recipe.serves!.isNotEmpty)
           Chip(
-            avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-            label: Text(_formatServes(recipe.serves!)),
+            label: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+                const SizedBox(width: 3),
+                Text(_formatServes(recipe.serves!)),
+              ],
+            ),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(
               color: theme.colorScheme.onSurface,
               fontSize: chipFontSize,
             ),
-            labelPadding: const EdgeInsets.only(left: 2, right: 4),
+            labelPadding: const EdgeInsets.symmetric(horizontal: 2),
             visualDensity: VisualDensity.compact,
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,
@@ -302,14 +308,20 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         // Time chip
         if (recipe.time != null && recipe.time!.isNotEmpty)
           Chip(
-            avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-            label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
+            label: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+                const SizedBox(width: 3),
+                Text(UnitNormalizer.normalizeTime(recipe.time!)),
+              ],
+            ),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(
               color: theme.colorScheme.onSurface,
               fontSize: chipFontSize,
             ),
-            labelPadding: const EdgeInsets.only(left: 2, right: 4),
+            labelPadding: const EdgeInsets.symmetric(horizontal: 2),
             visualDensity: VisualDensity.compact,
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,
@@ -479,7 +491,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text('Logged cook for ${recipe.name}!'),
+                content: Text('Logged cook for ${recipe.name}'),
                 action: SnackBarAction(
                   label: 'Stats',
                   onPressed: () => AppRoutes.toStatistics(context),
@@ -1065,7 +1077,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Logged cook for ${recipe.name}!'),
+          content: Text('Logged cook for ${recipe.name}'),
           action: SnackBarAction(
             label: 'Stats',
             onPressed: () => AppRoutes.toStatistics(context),
@@ -1122,7 +1134,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 await shareService.copyShareLink(recipe);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Link copied to clipboard!')),
+                    const SnackBar(content: Text('Link copied to clipboard')),
                   );
                 }
               },
