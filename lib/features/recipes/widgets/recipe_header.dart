@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../app/theme/theme.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -400,7 +401,7 @@ class RecipeHeader extends StatelessWidget {
     final isDrinkCourse = recipe.course?.toLowerCase() == 'drinks';
     if (isDrinkCourse) {
       final hasGlass = recipe.glass != null && recipe.glass!.isNotEmpty;
-      final hasGarnish = recipe.garnish != null && recipe.garnish!.isNotEmpty;
+      final hasGarnish = recipe.garnish.isNotEmpty;
 
       if (hasGlass) {
         if (metadataItems.isNotEmpty) {
@@ -421,7 +422,8 @@ class RecipeHeader extends StatelessWidget {
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.eco, size: 12, color: textColor),
         ));
-        metadataItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.garnish!)}'));
+        // Join garnish list into a comma-separated string
+        metadataItems.add(TextSpan(text: ' ${recipe.garnish.map(_capitalizeWords).join(', ')}'));
       }
     }
 
