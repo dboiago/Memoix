@@ -335,25 +335,101 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final padding = widget.isCompact ? 8.0 : 12.0;
+    final recipe = widget.recipe;
 
-    return ListView.builder(
-      // Enable independent scrolling for this column
+    // Build list of all items including additional sections
+    final items = <Widget>[];
+    
+    // Add directions
+    if (widget.directions.isEmpty) {
+      items.add(Text(
+        'No directions listed',
+        style: TextStyle(
+          fontStyle: FontStyle.italic,
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+      ));
+    } else {
+      for (int i = 0; i < widget.directions.length; i++) {
+        items.add(_buildDirectionRow(context, i));
+      }
+    }
+    
+    // Add notes section if present
+    if (recipe != null && recipe.notes != null && recipe.notes!.isNotEmpty) {
+      items.add(const SizedBox(height: 24));
+      items.add(_buildSectionHeader(theme, 'Notes'));
+      items.add(const SizedBox(height: 8));
+      items.add(Text(
+        recipe.notes!,
+        style: theme.textTheme.bodyMedium?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+          fontStyle: FontStyle.italic,
+        ),
+      ));
+    }
+    
+    // Add nutrition section if present
+    if (recipe != null && recipe.nutrition != null && recipe.nutrition!.isNotEmpty) {
+      items.add(const SizedBox(height: 24));
+      items.add(_buildSectionHeader(theme, 'Nutrition'));
+      items.add(const SizedBox(height: 8));
+      items.add(Text(
+        recipe.nutrition!,
+        style: theme.textTheme.bodyMedium?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+      ));
+    }
+    
+    // Add step images gallery if present
+    if (recipe != null && recipe.stepImages.isNotEmpty) {
+      items.add(const SizedBox(height: 24));
+      items.add(_buildSectionHeader(theme, 'Gallery'));
+      items.add(const SizedBox(height: 8));
+      items.add(_buildImageGallery(context, recipe, theme));
+    }
+
+    return ListView(
       primary: false,
       physics: const ClampingScrollPhysics(),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 32),
-      itemCount: widget.directions.isEmpty ? 1 : widget.directions.length,
-      itemBuilder: (context, index) {
-        if (widget.directions.isEmpty) {
-          return Text(
-            'No directions listed',
-            style: TextStyle(
-              fontStyle: FontStyle.italic,
-              color: theme.colorScheme.onSurfaceVariant,
+      children: items,
+    );
+  }
+
+  Widget _buildSectionHeader(ThemeData theme, String title) {
+    return Text(
+      title,
+      style: (widget.isCompact ? theme.textTheme.titleSmall : theme.textTheme.titleMedium)?.copyWith(
+        fontWeight: FontWeight.bold,
+        color: theme.colorScheme.primary,
+      ),
+    );
+  }
+
+  Widget _buildImageGallery(BuildContext context, Recipe recipe, ThemeData theme) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: recipe.stepImages.asMap().entries.map((entry) {
+        final image = entry.value;
+        return ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: SizedBox(
+            width: widget.isCompact ? 60 : 80,
+            height: widget.isCompact ? 60 : 80,
+            child: Image.network(
+              image,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => Container(
+                color: theme.colorScheme.surfaceContainerHighest,
+                child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+              ),
             ),
-          );
-        }
-        return _buildDirectionRow(context, index);
-      },
+          ),
+        );
+      }).toList(),
     );
   }
 

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/split_smoking_view.dart';
@@ -83,7 +84,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         actions: _buildAppBarActions(context, recipe, theme),
         // Recipe name on its own line below the back arrow and actions
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(hasHeaderImage ? 140 : 36),
+          preferredSize: Size.fromHeight(hasHeaderImage ? 160 : 56),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -109,17 +110,26 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     ],
                   ),
                 ),
-              // Recipe title with dynamic sizing
+              // Recipe title with metadata
               Container(
                 color: theme.colorScheme.surface,
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: Text(
-                  recipe.name,
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      recipe.name,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const SizedBox(height: 4),
+                    // Compact metadata row
+                    _buildCompactMetadataRow(recipe, theme),
+                  ],
                 ),
               ),
             ],
@@ -130,6 +140,83 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         recipe: recipe,
         onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
       ),
+    );
+  }
+
+  /// Build compact metadata row for side-by-side mode
+  Widget _buildCompactMetadataRow(SmokingRecipe recipe, ThemeData theme) {
+    final metadataItems = <InlineSpan>[];
+    
+    // Add category with colored dot
+    if (recipe.category != null && recipe.category!.isNotEmpty) {
+      final categoryColor = MemoixColors.forSmokedItemDot(recipe.category);
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Container(
+          width: 8,
+          height: 8,
+          margin: const EdgeInsets.only(right: 4),
+          decoration: BoxDecoration(
+            color: categoryColor,
+            shape: BoxShape.circle,
+          ),
+        ),
+      ));
+      metadataItems.add(TextSpan(text: recipe.category!));
+    }
+    
+    // Add wood type
+    if (recipe.wood.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '   '));
+      }
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Icon(Icons.park_outlined, size: 12, color: theme.colorScheme.onSurfaceVariant),
+      ));
+      metadataItems.add(TextSpan(text: ' ${recipe.wood}'));
+    }
+    
+    // Add temperature
+    if (recipe.temperature.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '   '));
+      }
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Icon(Icons.thermostat_outlined, size: 12, color: theme.colorScheme.onSurfaceVariant),
+      ));
+      metadataItems.add(TextSpan(text: ' ${recipe.temperature}'));
+    }
+    
+    // Add time
+    if (recipe.time.isNotEmpty) {
+      final normalized = UnitNormalizer.normalizeTime(recipe.time);
+      if (normalized.isNotEmpty) {
+        if (metadataItems.isNotEmpty) {
+          metadataItems.add(const TextSpan(text: '   '));
+        }
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Icon(Icons.schedule, size: 12, color: theme.colorScheme.onSurfaceVariant),
+        ));
+        metadataItems.add(TextSpan(text: ' $normalized'));
+      }
+    }
+    
+    if (metadataItems.isEmpty) {
+      return const SizedBox.shrink();
+    }
+    
+    return Text.rich(
+      TextSpan(
+        style: theme.textTheme.bodySmall?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+        children: metadataItems,
+      ),
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
     );
   }
 

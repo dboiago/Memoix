@@ -250,6 +250,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       color: theme.colorScheme.surface,
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           InkWell(
             onTap: () => setState(() => _equipmentExpanded = !_equipmentExpanded),
@@ -264,7 +265,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ),
                   const SizedBox(width: 8),
                   Text(
-                    'Equipment (${recipe.equipment.length})',
+                    'Equipment',
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.onSurfaceVariant,
                       fontWeight: FontWeight.w500,
@@ -280,6 +281,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               child: Wrap(
                 spacing: 12,
                 runSpacing: 4,
+                alignment: WrapAlignment.start,
                 children: recipe.equipment.map((item) => Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [

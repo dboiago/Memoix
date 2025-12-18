@@ -45,18 +45,224 @@ class SandwichDetailScreen extends ConsumerWidget {
   }
 }
 
-class _SandwichDetailView extends ConsumerWidget {
+class _SandwichDetailView extends ConsumerStatefulWidget {
   final Sandwich sandwich;
 
   const _SandwichDetailView({required this.sandwich});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<_SandwichDetailView> createState() => _SandwichDetailViewState();
+}
+
+class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
+  @override
+  Widget build(BuildContext context) {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
+    final useSideBySide = ref.watch(useSideBySideProvider);
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
+    final sandwich = widget.sandwich;
     final hasHeaderImage = showHeaderImages && sandwich.imageUrl != null && sandwich.imageUrl!.isNotEmpty;
 
+    if (useSideBySide) {
+      return _buildSideBySideLayout(context, theme, sandwich, hasHeaderImage);
+    }
+    
+    return _buildStandardLayout(context, theme, sandwich, hasHeaderImage);
+  }
+
+  Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, Sandwich sandwich, bool hasHeaderImage) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isCompact = screenWidth < 600;
+    final headerHeight = hasHeaderImage ? 184.0 : 84.0; // Extra height for bread row
+
+    return Scaffold(
+      appBar: AppBar(
+        title: null,
+        actions: _buildAppBarActions(context, ref, theme, sandwich),
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(headerHeight),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (hasHeaderImage)
+                SizedBox(
+                  height: 100,
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      _buildHeaderBackground(theme, sandwich),
+                      const DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [Colors.transparent, Colors.black54],
+                            stops: [0.5, 1.0],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              Container(
+                color: theme.colorScheme.surface,
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      sandwich.name,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const SizedBox(height: 4),
+                    // Bread indicator
+                    Row(
+                      children: [
+                        Container(
+                          width: 8,
+                          height: 8,
+                          margin: const EdgeInsets.only(right: 4),
+                          decoration: BoxDecoration(
+                            color: theme.colorScheme.primary,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text(
+                          sandwich.bread.isNotEmpty ? sandwich.bread : 'No bread specified',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      body: _buildSplitSandwichView(context, theme, sandwich, isCompact),
+    );
+  }
+
+  Widget _buildSplitSandwichView(BuildContext context, ThemeData theme, Sandwich sandwich, bool isCompact) {
+    final padding = isCompact ? 8.0 : 12.0;
+    final headerHeight = isCompact ? 36.0 : 44.0;
+    final headerStyle = isCompact
+        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
+        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
+    final dividerPadding = isCompact ? 4.0 : 8.0;
+
+    return Column(
+      children: [
+        // Headers row
+        Container(
+          color: theme.colorScheme.surface,
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: headerHeight,
+                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text('Cheese / Condiments', style: headerStyle),
+                ),
+              ),
+              SizedBox(width: dividerPadding * 2 + 1),
+              Expanded(
+                child: Container(
+                  height: headerHeight,
+                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text('Proteins / Vegetables', style: headerStyle),
+                ),
+              ),
+            ],
+          ),
+        ),
+        // Content row
+        Expanded(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Left column: Cheeses + Condiments
+              Expanded(
+                child: ListView(
+                  primary: false,
+                  padding: EdgeInsets.all(padding),
+                  children: [
+                    Text('Cheeses', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...sandwich.cheeses.map((c) => _buildListItem(theme, c, isCompact)),
+                    if (sandwich.cheeses.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                    const SizedBox(height: 16),
+                    Text('Condiments', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...sandwich.condiments.map((c) => _buildListItem(theme, c, isCompact)),
+                    if (sandwich.condiments.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                    if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
+                      const SizedBox(height: 24),
+                      Text('Notes', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold, color: theme.colorScheme.primary)),
+                      const SizedBox(height: 8),
+                      Text(sandwich.notes!, style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                    ],
+                  ],
+                ),
+              ),
+              // Divider
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: dividerPadding),
+                child: Container(
+                  width: 1,
+                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                ),
+              ),
+              // Right column: Proteins + Vegetables
+              Expanded(
+                child: ListView(
+                  primary: false,
+                  padding: EdgeInsets.all(padding),
+                  children: [
+                    Text('Proteins', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...sandwich.proteins.map((p) => _buildListItem(theme, p, isCompact)),
+                    if (sandwich.proteins.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                    const SizedBox(height: 16),
+                    Text('Vegetables', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...sandwich.vegetables.map((v) => _buildListItem(theme, v, isCompact)),
+                    if (sandwich.vegetables.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildListItem(ThemeData theme, String text, bool isCompact) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: isCompact ? 2.0 : 4.0),
+      child: Row(
+        children: [
+          Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
+          const SizedBox(width: 8),
+          Flexible(child: Text(text, style: theme.textTheme.bodyMedium)),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStandardLayout(BuildContext context, ThemeData theme, Sandwich sandwich, bool hasHeaderImage) {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -84,7 +290,7 @@ class _SandwichDetailView extends ConsumerWidget {
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        _buildHeaderBackground(theme),
+                        _buildHeaderBackground(theme, sandwich),
                         // Gradient scrim for legibility
                         const DecoratedBox(
                           decoration: BoxDecoration(
@@ -103,57 +309,7 @@ class _SandwichDetailView extends ConsumerWidget {
                     )
                   : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
-                ),
-                onPressed: () async {
-                  await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
-                  ref.invalidate(allSandwichesProvider);
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.check_circle_outline),
-                tooltip: 'I made this',
-                onPressed: () async {
-                  await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Logged cook for ${sandwich.name}!'),
-                      ),
-                    );
-                  }
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.share),
-                onPressed: () => _shareSandwich(context, ref, sandwich),
-              ),
-              PopupMenuButton<String>(
-                onSelected: (value) => _handleMenuAction(context, ref, value),
-                itemBuilder: (context) => [
-                  const PopupMenuItem(
-                    value: 'edit',
-                    child: Text('Edit'),
-                  ),
-                  const PopupMenuItem(
-                    value: 'duplicate',
-                    child: Text('Duplicate'),
-                  ),
-                  PopupMenuItem(
-                    value: 'delete',
-                    child: Text(
-                      'Delete',
-                      style: TextStyle(color: theme.colorScheme.secondary),
-                    ),
-                  ),
-                ],
-                icon: const Icon(Icons.more_vert),
-              ),
-            ],
+            actions: _buildAppBarActions(context, ref, theme, sandwich),
           ),
 
           // Main content with responsive layout
@@ -202,7 +358,7 @@ class _SandwichDetailView extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeaderBackground(ThemeData theme) {
+  Widget _buildHeaderBackground(ThemeData theme, Sandwich sandwich) {
     if (sandwich.imageUrl == null || sandwich.imageUrl!.isEmpty) {
       return Container(
         color: theme.colorScheme.surfaceContainerHighest,
@@ -229,13 +385,65 @@ class _SandwichDetailView extends ConsumerWidget {
     }
   }
 
-  void _handleMenuAction(BuildContext context, WidgetRef ref, String action) async {
+  List<Widget> _buildAppBarActions(BuildContext context, WidgetRef ref, ThemeData theme, Sandwich sandwich) {
+    return [
+      IconButton(
+        icon: Icon(
+          sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
+        ),
+        onPressed: () async {
+          await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
+          ref.invalidate(allSandwichesProvider);
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.check_circle_outline),
+        tooltip: 'I made this',
+        onPressed: () async {
+          await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Logged cook for ${sandwich.name}!')),
+            );
+          }
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.share),
+        onPressed: () => _shareSandwich(context, ref, sandwich),
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) => _handleMenuAction(context, ref, sandwich, value),
+        itemBuilder: (context) => [
+          const PopupMenuItem(
+            value: 'edit',
+            child: Text('Edit'),
+          ),
+          const PopupMenuItem(
+            value: 'duplicate',
+            child: Text('Duplicate'),
+          ),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text(
+              'Delete',
+              style: TextStyle(color: theme.colorScheme.secondary),
+            ),
+          ),
+        ],
+        icon: const Icon(Icons.more_vert),
+      ),
+    ];
+  }
+
+  void _handleMenuAction(BuildContext context, WidgetRef ref, Sandwich sandwich, String action) async {
     switch (action) {
       case 'edit':
         AppRoutes.toSandwichEdit(context, sandwichId: sandwich.uuid);
         break;
       case 'duplicate':
-        await _duplicateSandwich(context, ref);
+        await _duplicateSandwich(context, ref, sandwich);
         break;
       case 'delete':
         final confirmed = await showDialog<bool>(
@@ -272,7 +480,7 @@ class _SandwichDetailView extends ConsumerWidget {
     }
   }
 
-  Future<void> _duplicateSandwich(BuildContext context, WidgetRef ref) async {
+  Future<void> _duplicateSandwich(BuildContext context, WidgetRef ref, Sandwich sandwich) async {
     final duplicate = Sandwich()
       ..uuid = '' // Will be generated on save
       ..name = '${sandwich.name} (Copy)'

@@ -45,18 +45,226 @@ class PizzaDetailScreen extends ConsumerWidget {
   }
 }
 
-class _PizzaDetailView extends ConsumerWidget {
+class _PizzaDetailView extends ConsumerStatefulWidget {
   final Pizza pizza;
 
   const _PizzaDetailView({required this.pizza});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<_PizzaDetailView> createState() => _PizzaDetailViewState();
+}
+
+class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
+  @override
+  Widget build(BuildContext context) {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
+    final useSideBySide = ref.watch(useSideBySideProvider);
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
+    final pizza = widget.pizza;
     final hasHeaderImage = showHeaderImages && pizza.imageUrl != null && pizza.imageUrl!.isNotEmpty;
 
+    if (useSideBySide) {
+      return _buildSideBySideLayout(context, theme, pizza, hasHeaderImage);
+    }
+    
+    return _buildStandardLayout(context, theme, pizza, hasHeaderImage);
+  }
+
+  Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, Pizza pizza, bool hasHeaderImage) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isCompact = screenWidth < 600;
+    final headerHeight = hasHeaderImage ? 156.0 : 56.0;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: null,
+        actions: _buildAppBarActions(context, ref, theme, pizza),
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(headerHeight),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (hasHeaderImage)
+                SizedBox(
+                  height: 100,
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      _buildHeaderBackground(theme, pizza),
+                      const DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [Colors.transparent, Colors.black54],
+                            stops: [0.5, 1.0],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              Container(
+                color: theme.colorScheme.surface,
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      pizza.name,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const SizedBox(height: 4),
+                    // Base sauce indicator
+                    Row(
+                      children: [
+                        Container(
+                          width: 8,
+                          height: 8,
+                          margin: const EdgeInsets.only(right: 4),
+                          decoration: BoxDecoration(
+                            color: theme.colorScheme.primary,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text(
+                          pizza.base.displayName,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      body: _buildSplitPizzaView(context, theme, pizza, isCompact),
+    );
+  }
+
+  Widget _buildSplitPizzaView(BuildContext context, ThemeData theme, Pizza pizza, bool isCompact) {
+    final padding = isCompact ? 8.0 : 12.0;
+    final headerHeight = isCompact ? 36.0 : 44.0;
+    final headerStyle = isCompact
+        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
+        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
+    final dividerPadding = isCompact ? 4.0 : 8.0;
+
+    return Column(
+      children: [
+        // Headers row
+        Container(
+          color: theme.colorScheme.surface,
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: headerHeight,
+                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text('Sauce / Cheese', style: headerStyle),
+                ),
+              ),
+              SizedBox(width: dividerPadding * 2 + 1),
+              Expanded(
+                child: Container(
+                  height: headerHeight,
+                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text('Proteins / Vegetables', style: headerStyle),
+                ),
+              ),
+            ],
+          ),
+        ),
+        // Content row
+        Expanded(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Left column: Sauce + Cheese
+              Expanded(
+                child: ListView(
+                  primary: false,
+                  padding: EdgeInsets.all(padding),
+                  children: [
+                    // Sauce
+                    _buildListItem(theme, pizza.base.displayName, Icons.water_drop, isCompact),
+                    const SizedBox(height: 16),
+                    Text('Cheeses', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...pizza.cheeses.map((c) => _buildListItem(theme, c, null, isCompact)),
+                    if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
+                      const SizedBox(height: 24),
+                      Text('Notes', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold, color: theme.colorScheme.primary)),
+                      const SizedBox(height: 8),
+                      Text(pizza.notes!, style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                    ],
+                  ],
+                ),
+              ),
+              // Divider
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: dividerPadding),
+                child: Container(
+                  width: 1,
+                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                ),
+              ),
+              // Right column: Proteins + Vegetables
+              Expanded(
+                child: ListView(
+                  primary: false,
+                  padding: EdgeInsets.all(padding),
+                  children: [
+                    Text('Proteins', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...pizza.proteins.map((p) => _buildListItem(theme, p, null, isCompact)),
+                    if (pizza.proteins.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                    const SizedBox(height: 16),
+                    Text('Vegetables', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 8),
+                    ...pizza.vegetables.map((v) => _buildListItem(theme, v, null, isCompact)),
+                    if (pizza.vegetables.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildListItem(ThemeData theme, String text, IconData? icon, bool isCompact) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: isCompact ? 2.0 : 4.0),
+      child: Row(
+        children: [
+          if (icon != null) ...[
+            Icon(icon, size: 14, color: theme.colorScheme.primary),
+            const SizedBox(width: 8),
+          ] else ...[
+            Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
+            const SizedBox(width: 8),
+          ],
+          Flexible(child: Text(text, style: theme.textTheme.bodyMedium)),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStandardLayout(BuildContext context, ThemeData theme, Pizza pizza, bool hasHeaderImage) {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -84,7 +292,7 @@ class _PizzaDetailView extends ConsumerWidget {
                   ? Stack(
                       fit: StackFit.expand,
                       children: [
-                        _buildHeaderBackground(theme),
+                        _buildHeaderBackground(theme, pizza),
                         // Gradient scrim for legibility
                         const DecoratedBox(
                           decoration: BoxDecoration(
@@ -103,53 +311,7 @@ class _PizzaDetailView extends ConsumerWidget {
                     )
                   : Container(color: theme.colorScheme.surfaceContainerHighest),
             ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: pizza.isFavorite ? theme.colorScheme.secondary : null,
-                ),
-                onPressed: () async {
-                  await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
-                  ref.invalidate(allPizzasProvider);
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.check_circle_outline),
-                tooltip: 'I made this',
-                onPressed: () async {
-                  await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Logged cook for ${pizza.name}!'),
-                      ),
-                    );
-                  }
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.share),
-                onPressed: () => _sharePizza(context, ref, pizza),
-              ),
-              PopupMenuButton<String>(
-                onSelected: (value) => _handleMenuAction(context, ref, value),
-                itemBuilder: (context) => [
-                  const PopupMenuItem(
-                    value: 'edit',
-                    child: Text('Edit'),
-                  ),
-                  PopupMenuItem(
-                    value: 'delete',
-                    child: Text(
-                      'Delete',
-                      style: TextStyle(color: theme.colorScheme.secondary),
-                    ),
-                  ),
-                ],
-                icon: const Icon(Icons.more_vert),
-              ),
-            ],
+            actions: _buildAppBarActions(context, ref, theme, pizza),
           ),
 
           // Content - responsive grid layout for Sauce - Cheese - Toppings
@@ -198,7 +360,7 @@ class _PizzaDetailView extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeaderBackground(ThemeData theme) {
+  Widget _buildHeaderBackground(ThemeData theme, Pizza pizza) {
     if (pizza.imageUrl == null || pizza.imageUrl!.isEmpty) {
       return Container(
         color: theme.colorScheme.surfaceContainerHighest,
@@ -225,7 +387,55 @@ class _PizzaDetailView extends ConsumerWidget {
     }
   }
 
-  void _handleMenuAction(BuildContext context, WidgetRef ref, String action) async {
+  List<Widget> _buildAppBarActions(BuildContext context, WidgetRef ref, ThemeData theme, Pizza pizza) {
+    return [
+      IconButton(
+        icon: Icon(
+          pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
+          color: pizza.isFavorite ? theme.colorScheme.secondary : null,
+        ),
+        onPressed: () async {
+          await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+          ref.invalidate(allPizzasProvider);
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.check_circle_outline),
+        tooltip: 'I made this',
+        onPressed: () async {
+          await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Logged cook for ${pizza.name}!')),
+            );
+          }
+        },
+      ),
+      IconButton(
+        icon: const Icon(Icons.share),
+        onPressed: () => _sharePizza(context, ref, pizza),
+      ),
+      PopupMenuButton<String>(
+        onSelected: (value) => _handleMenuAction(context, ref, pizza, value),
+        itemBuilder: (context) => [
+          const PopupMenuItem(
+            value: 'edit',
+            child: Text('Edit'),
+          ),
+          PopupMenuItem(
+            value: 'delete',
+            child: Text(
+              'Delete',
+              style: TextStyle(color: theme.colorScheme.secondary),
+            ),
+          ),
+        ],
+        icon: const Icon(Icons.more_vert),
+      ),
+    ];
+  }
+
+  void _handleMenuAction(BuildContext context, WidgetRef ref, Pizza pizza, String action) async {
     switch (action) {
       case 'edit':
         AppRoutes.toPizzaEdit(context, pizzaId: pizza.uuid);
