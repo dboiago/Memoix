@@ -454,6 +454,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             course: recipe.course,
             cuisine: recipe.cuisine,
           );
+          if (!mounted) return;
           ref.invalidate(cookingStatsProvider);
           ref.invalidate(recipeCookCountProvider(recipe.uuid));
           ref.invalidate(recipeLastCookProvider(recipe.uuid));
@@ -463,6 +464,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               ..showSnackBar(
                 SnackBar(
                   content: Text('Logged cook for ${recipe.name}'),
+                  duration: const Duration(seconds: 3),
                   action: SnackBarAction(
                     label: 'Stats',
                     onPressed: () => AppRoutes.toStatistics(context),
@@ -1079,6 +1081,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       course: recipe.course,
       cuisine: recipe.cuisine,
     );
+    if (!mounted) return;
     ref.invalidate(cookingStatsProvider);
     ref.invalidate(recipeCookCountProvider(recipe.uuid));
     ref.invalidate(recipeLastCookProvider(recipe.uuid));
@@ -1088,6 +1091,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ..showSnackBar(
           SnackBar(
             content: Text('Logged cook for ${recipe.name}'),
+            duration: const Duration(seconds: 3),
             action: SnackBarAction(
               label: 'Stats',
               onPressed: () => AppRoutes.toStatistics(context),

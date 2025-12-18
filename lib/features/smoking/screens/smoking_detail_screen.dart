@@ -329,6 +329,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               ..showSnackBar(
                 SnackBar(
                   content: Text('Logged cook for ${recipe.name}'),
+                  duration: const Duration(seconds: 3),
                   action: SnackBarAction(
                     label: 'Stats',
                     onPressed: () => AppRoutes.toStatistics(context),
@@ -1021,6 +1022,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       ..showSnackBar(
         SnackBar(
           content: Text('Logged cook for ${recipe.name}'),
+          duration: const Duration(seconds: 3),
           action: SnackBarAction(
             label: 'Stats',
             onPressed: () => AppRoutes.toStatistics(context),

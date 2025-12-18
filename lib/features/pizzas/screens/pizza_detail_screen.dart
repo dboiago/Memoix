@@ -312,6 +312,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
               ..showSnackBar(
                 SnackBar(
                   content: Text('Logged cook for ${pizza.name}'),
+                  duration: const Duration(seconds: 3),
                   action: SnackBarAction(
                     label: 'Stats',
                     onPressed: () => AppRoutes.toStatistics(context),
@@ -393,6 +394,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
         ..showSnackBar(
           SnackBar(
             content: Text('Logged cook for ${pizza.name}'),
+            duration: const Duration(seconds: 3),
             action: SnackBarAction(
               label: 'Stats',
               onPressed: () => AppRoutes.toStatistics(context),
