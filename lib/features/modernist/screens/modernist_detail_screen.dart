@@ -279,63 +279,56 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   /// Build collapsible equipment section for side-by-side mode
   Widget _buildCollapsibleEquipment(ModernistRecipe recipe, ThemeData theme) {
-    return Container(
-      color: theme.colorScheme.surface,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          InkWell(
-            onTap: () => setState(() => _equipmentExpanded = !_equipmentExpanded),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Row(
-                children: [
-                  Icon(
-                    _equipmentExpanded ? Icons.expand_less : Icons.expand_more,
-                    size: 20,
-                    color: theme.colorScheme.onSurfaceVariant,
-                  ),
-                  const SizedBox(width: 8),
-                  Text(
-                    'Equipment',
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: theme.colorScheme.onSurfaceVariant,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+      child: Card(
+        child: Theme(
+          data: theme.copyWith(
+            splashColor: theme.colorScheme.surfaceContainerHighest,
+            hoverColor: theme.colorScheme.surfaceContainerHighest,
           ),
-          if (_equipmentExpanded)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-              child: Wrap(
-                spacing: 12,
-                runSpacing: 4,
-                alignment: WrapAlignment.start,
-                children: recipe.equipment.map((item) => Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      '•',
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant.withOpacity(0.6),
-                      ),
-                    ),
-                    const SizedBox(width: 4),
-                    Text(
-                      item,
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ],
-                )).toList(),
+          child: ExpansionTile(
+            initiallyExpanded: _equipmentExpanded,
+            onExpansionChanged: (expanded) => setState(() => _equipmentExpanded = expanded),
+            title: Text(
+              'Equipment',
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
               ),
             ),
-        ],
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Wrap(
+                    spacing: 12,
+                    runSpacing: 4,
+                    alignment: WrapAlignment.start,
+                    children: recipe.equipment.map((item) => Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          '•',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.6),
+                          ),
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          item,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    )).toList(),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
