@@ -549,17 +549,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              children: [
-                                Icon(Icons.comment, size: 20, color: theme.colorScheme.primary),
-                                const SizedBox(width: 8),
-                                Text(
-                                  'Comments',
-                                  style: theme.textTheme.titleMedium?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
+                            Text(
+                              'Comments',
+                              style: theme.textTheme.titleMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             const SizedBox(height: 12),
                             Text(recipe.notes!),
@@ -815,25 +809,18 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
 
   Widget _buildStepImagesGallery(ThemeData theme, ModernistRecipe recipe) {
     return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(Icons.photo_library, size: 20, color: theme.colorScheme.primary),
-                const SizedBox(width: 8),
-                Text(
-                  'Step Images',
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            SizedBox(
+      child: ExpansionTile(
+        title: Text(
+          'Gallery',
+          style: theme.textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        initiallyExpanded: true,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+            child: SizedBox(
               height: 120,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -902,8 +889,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 },
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

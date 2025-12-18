@@ -727,14 +727,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   },
                 ),
 
-                // Step Images Gallery
-                if (hasStepImages)
-                  Padding(
-                    key: _stepImagesKey,
-                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                    child: _buildStepImagesGallery(theme, recipe),
-                  ),
-
                 // Comments section
                 if (recipe.notes != null && recipe.notes!.isNotEmpty)
                   Padding(
@@ -765,6 +757,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 // Gallery section (collapsible)
                 if (hasStepImages)
                   Padding(
+                    key: _stepImagesKey,
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                     child: Card(
                       child: ExpansionTile(
@@ -932,12 +925,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ],
       )).toList(),
     );
-  }
-
-  Widget _buildStepImagesGallery(ThemeData theme, Recipe recipe) {
-    // This is now used only for the key-based scrolling target
-    // The actual gallery display uses the new collapsible Gallery section above
-    return const SizedBox.shrink();
   }
 
   Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {

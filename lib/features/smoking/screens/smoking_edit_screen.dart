@@ -1244,7 +1244,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         Row(
           children: [
             Text(
-              'Step Images',
+              'Gallery',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.w600,
               ),

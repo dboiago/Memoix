@@ -576,7 +576,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         Row(
           children: [
             Text(
-              'Step Images',
+              'Gallery',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),

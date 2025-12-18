@@ -242,26 +242,32 @@ class SplitModernistView extends StatelessWidget {
   }
 
   Widget _buildImageGallery(BuildContext context, ModernistRecipe recipe, ThemeData theme) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: recipe.stepImages.map((image) {
-        return ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: SizedBox(
-            width: 80,
-            height: 80,
-            child: Image.network(
-              image,
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
-                color: theme.colorScheme.surfaceContainerHighest,
-                child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+    return SizedBox(
+      height: 120,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: recipe.stepImages.length,
+        itemBuilder: (context, imageIndex) {
+          return Padding(
+            padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: SizedBox(
+                width: 120,
+                height: 120,
+                child: Image.network(
+                  recipe.stepImages[imageIndex],
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) => Container(
+                    color: theme.colorScheme.surfaceContainerHighest,
+                    child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+                  ),
+                ),
               ),
             ),
-          ),
-        );
-      }).toList(),
+          );
+        },
+      ),
     );
   }
 }
