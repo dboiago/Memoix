@@ -233,27 +233,27 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Title that shrinks to fit - calculate font size based on name length and width
+                    // Title that shrinks instead of truncating - use LayoutBuilder to get available width
                     LayoutBuilder(
                       builder: (context, constraints) {
-                        // Calculate appropriate font size based on text length and available width
-                        // Longer names get smaller fonts
-                        final nameLength = recipe.name.length;
-                        final availableWidth = constraints.maxWidth;
-                        
-                        // Estimate: average char width is ~0.55 * fontSize
-                        // So fontSize = availableWidth / (nameLength * 0.55)
-                        // Clamp between reasonable min/max
-                        final calculatedSize = (availableWidth / (nameLength * 0.55)).clamp(14.0, baseFontSize);
-                        
-                        return Text(
-                          recipe.name,
-                          style: theme.textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            fontSize: calculatedSize,
+                        return SizedBox(
+                          width: constraints.maxWidth,
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            alignment: Alignment.centerLeft,
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(maxWidth: constraints.maxWidth),
+                              child: Text(
+                                recipe.name,
+                                style: theme.textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: baseFontSize,
+                                ),
+                                maxLines: 1,
+                                softWrap: false,
+                              ),
+                            ),
                           ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
                         );
                       },
                     ),
@@ -528,63 +528,56 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           // Hero header with recipe image or colored header
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
-            collapsedHeight: 80, // Space for title below toolbar
             pinned: true,
             // Title area at the bottom that stays on its own line
             flexibleSpace: LayoutBuilder(
               builder: (context, constraints) {
                 final screenWidth = MediaQuery.sizeOf(context).width;
+                // Scale font: 20px at 320, up to 28px at 1200+
+                final expandedFontSize = (screenWidth / 45).clamp(20.0, 28.0);
+                final collapsedFontSize = (screenWidth / 55).clamp(16.0, 22.0);
+                
                 // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
                 final maxExtent = hasHeaderImage ? 250.0 : 120.0;
-                final statusBarHeight = MediaQuery.of(context).padding.top;
-                final minExtent = 80.0 + statusBarHeight;
+                final minExtent = kToolbarHeight + MediaQuery.of(context).padding.top;
                 final currentExtent = constraints.maxHeight;
                 final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
                 
-                // Calculate font size based on name length and available width
-                final availableWidth = screenWidth - 32;
-                final nameLength = recipe.name.length;
-                // Base font sizes that scale with screen
-                final baseExpandedSize = (screenWidth / 25).clamp(24.0, 40.0);
-                final baseCollapsedSize = (screenWidth / 35).clamp(18.0, 28.0);
-                // Adjust for name length - longer names get smaller fonts
-                final lengthFactor = (30 / nameLength).clamp(0.5, 1.0);
-                final expandedFontSize = baseExpandedSize * lengthFactor;
-                final collapsedFontSize = baseCollapsedSize * lengthFactor;
-                // Interpolate based on collapse
+                // Interpolate font size
                 final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
                 
-                final titleColor = hasHeaderImage || collapseRatio < 0.7 
-                    ? Colors.white 
-                    : theme.colorScheme.onSurface;
+                // Calculate available width for title (accounting for back button and actions)
+                final availableWidth = screenWidth - 56 - 100 - 16; // start padding, end padding, extra margin
                 
                 return FlexibleSpaceBar(
-                  titlePadding: EdgeInsets.zero,
-                  title: Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.only(
-                      left: 16,
-                      right: 16,
-                      bottom: 12,
-                      top: 8,
-                    ),
-                    decoration: hasHeaderImage && collapseRatio < 0.7
-                        ? null
-                        : BoxDecoration(
-                            color: theme.colorScheme.surfaceContainerHighest,
+                  titlePadding: EdgeInsetsDirectional.only(
+                    start: 56,
+                    bottom: 12,
+                    end: 100,
+                  ),
+                  title: SizedBox(
+                    width: availableWidth,
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(maxWidth: availableWidth),
+                        child: Text(
+                          recipe.name,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: fontSize,
+                            color: hasHeaderImage || collapseRatio < 0.7 
+                                ? Colors.white 
+                                : theme.colorScheme.onSurface,
+                            shadows: hasHeaderImage && collapseRatio < 0.7
+                                ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                : null,
                           ),
-                    child: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: fontSize.clamp(14.0, 40.0),
-                        color: titleColor,
-                        shadows: hasHeaderImage && collapseRatio < 0.7
-                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                            : null,
+                          maxLines: 1,
+                          softWrap: false,
+                        ),
                       ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                   background: hasHeaderImage
