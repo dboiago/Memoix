@@ -149,7 +149,7 @@ class MemoixHeader extends StatelessWidget {
   }
 
   /// Build the layered title effect for headers without images.
-  /// Uses two stacked text layers: a semi-transparent offset layer and the main text.
+  /// Uses stacked text layers: a semi-transparent offset layer, stroke, and filled text.
   Widget _buildLayeredTitle(ThemeData theme, double fontSize) {
     final isDark = theme.brightness == Brightness.dark;
     
@@ -158,6 +158,9 @@ class MemoixHeader extends StatelessWidget {
     
     // Layer text color: secondary accent with opacity
     final layerColor = theme.colorScheme.secondary.withOpacity(isDark ? 0.4 : 0.5);
+    
+    // Stroke color: subtle charcoal stroke for definition (light mode only)
+    final strokeColor = isDark ? Colors.transparent : const Color(0xFF4B5563).withOpacity(0.22);
 
     final textStyle = TextStyle(
       fontWeight: FontWeight.w600,
@@ -175,7 +178,18 @@ class MemoixHeader extends StatelessWidget {
             style: textStyle.copyWith(color: layerColor),
           ),
         ),
-        // Top layer: main text
+        // Middle layer: subtle stroke for definition (light mode)
+        if (!isDark)
+          Text(
+            title,
+            style: textStyle.copyWith(
+              foreground: Paint()
+                ..style = PaintingStyle.stroke
+                ..strokeWidth = 0.75
+                ..color = strokeColor,
+            ),
+          ),
+        // Top layer: main filled text
         Text(
           title,
           style: textStyle.copyWith(color: mainColor),
