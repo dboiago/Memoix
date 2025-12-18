@@ -74,8 +74,8 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
   Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, Pizza pizza, bool hasHeaderImage) {
     final screenWidth = MediaQuery.sizeOf(context).width;
     final isCompact = screenWidth < 600;
-    // Scale font size with screen width: 18px at 320, up to 28px at 1200+
-    final baseFontSize = (screenWidth / 50).clamp(18.0, 28.0);
+    // Scale font size with screen width: 20px at 320, up to 28px at 1200+
+    final baseFontSize = (screenWidth / 40).clamp(20.0, 28.0);
 
     return Scaffold(
       // No appBar - we build the header as part of the body
