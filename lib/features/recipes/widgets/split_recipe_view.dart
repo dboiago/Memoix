@@ -186,6 +186,7 @@ class SplitRecipeView extends StatelessWidget {
                     child: _IngredientsColumn(
                       ingredients: recipe.ingredients,
                       isCompact: isCompact,
+                      disableScroll: hasExtraContent, // Disable inner scroll when there's content below
                     ),
                   ),
                 ),
@@ -211,6 +212,7 @@ class SplitRecipeView extends StatelessWidget {
                       recipe: recipe,
                       onScrollToImage: onScrollToImage,
                       isCompact: isCompact,
+                      disableScroll: hasExtraContent, // Disable inner scroll when there's content below
                     ),
                   ),
                 ),
@@ -378,10 +380,12 @@ class SplitRecipeView extends StatelessWidget {
 class _IngredientsColumn extends StatefulWidget {
   final List<Ingredient> ingredients;
   final bool isCompact;
+  final bool disableScroll;
 
   const _IngredientsColumn({
     required this.ingredients,
     required this.isCompact,
+    this.disableScroll = false,
   });
 
   @override
@@ -397,11 +401,12 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     final padding = widget.isCompact ? 8.0 : 12.0;
 
     return ListView.builder(
-      // Enable independent scrolling for this column
       primary: false,
-      // Use BouncingScrollPhysics to provide visual feedback at bounds
-      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 100),
+      // Disable scrolling when there's content below so outer scroll works
+      physics: widget.disableScroll 
+          ? const NeverScrollableScrollPhysics()
+          : const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 16),
       itemCount: widget.ingredients.isEmpty ? 1 : widget.ingredients.length,
       itemBuilder: (context, index) {
         if (widget.ingredients.isEmpty) {
@@ -601,12 +606,14 @@ class _DirectionsColumn extends StatefulWidget {
   final Recipe? recipe;
   final Function(int stepIndex)? onScrollToImage;
   final bool isCompact;
+  final bool disableScroll;
 
   const _DirectionsColumn({
     required this.directions,
     this.recipe,
     this.onScrollToImage,
     required this.isCompact,
+    this.disableScroll = false,
   });
 
   @override
@@ -641,7 +648,10 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
 
     return ListView(
       primary: false,
-      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      // Disable scrolling when there's content below so outer scroll works
+      physics: widget.disableScroll 
+          ? const NeverScrollableScrollPhysics()
+          : const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 16),
       children: items,
     );
