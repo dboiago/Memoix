@@ -185,7 +185,7 @@ class MemoixHeader extends StatelessWidget {
             style: textStyle.copyWith(
               foreground: Paint()
                 ..style = PaintingStyle.stroke
-                ..strokeWidth = 0.75
+                ..strokeWidth = 1.0
                 ..color = strokeColor,
             ),
           ),
