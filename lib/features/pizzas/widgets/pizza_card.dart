@@ -86,16 +86,14 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                             ),
                           ),
                           const SizedBox(width: 6),
-                          Text(
-                            widget.pizza.base.displayName,
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          // Cheeses and toppings summary
                           Flexible(
-                            child: _buildIngredientsSummary(theme),
+                            child: Text(
+                              widget.pizza.base.displayName,
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ),
                         ],
                       ),

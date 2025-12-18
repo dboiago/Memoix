@@ -148,118 +148,115 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           ),
         ),
       ),
-      body: _buildSplitPizzaView(context, theme, pizza, isCompact),
+      body: _buildSideBySideContent(context, theme, pizza),
     );
   }
 
-  Widget _buildSplitPizzaView(BuildContext context, ThemeData theme, Pizza pizza, bool isCompact) {
-    final padding = isCompact ? 8.0 : 12.0;
-    final headerHeight = isCompact ? 36.0 : 44.0;
-    final headerStyle = isCompact
-        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
-        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
-    final dividerPadding = isCompact ? 4.0 : 8.0;
-
-    return Column(
-      children: [
-        // Headers row
-        Container(
-          color: theme.colorScheme.surface,
-          child: Row(
-            children: [
-              Expanded(
-                child: Container(
-                  height: headerHeight,
-                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text('Sauce / Cheese', style: headerStyle),
-                ),
-              ),
-              SizedBox(width: dividerPadding * 2 + 1),
-              Expanded(
-                child: Container(
-                  height: headerHeight,
-                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text('Proteins / Vegetables', style: headerStyle),
-                ),
-              ),
-            ],
-          ),
-        ),
-        // Content row
-        Expanded(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Left column: Sauce + Cheese
-              Expanded(
-                child: ListView(
-                  primary: false,
-                  padding: EdgeInsets.all(padding),
-                  children: [
-                    // Sauce
-                    _buildListItem(theme, pizza.base.displayName, Icons.water_drop, isCompact),
-                    const SizedBox(height: 16),
-                    Text('Cheeses', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...pizza.cheeses.map((c) => _buildListItem(theme, c, null, isCompact)),
-                    if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
-                      const SizedBox(height: 24),
-                      Text('Notes', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold, color: theme.colorScheme.primary)),
-                      const SizedBox(height: 8),
-                      Text(pizza.notes!, style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                    ],
-                  ],
-                ),
-              ),
-              // Divider
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: dividerPadding),
-                child: Container(
-                  width: 1,
-                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
-                ),
-              ),
-              // Right column: Proteins + Vegetables
-              Expanded(
-                child: ListView(
-                  primary: false,
-                  padding: EdgeInsets.all(padding),
-                  children: [
-                    Text('Proteins', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...pizza.proteins.map((p) => _buildListItem(theme, p, null, isCompact)),
-                    if (pizza.proteins.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                    const SizedBox(height: 16),
-                    Text('Vegetables', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...pizza.vegetables.map((v) => _buildListItem(theme, v, null, isCompact)),
-                    if (pizza.vegetables.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildListItem(ThemeData theme, String text, IconData? icon, bool isCompact) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: isCompact ? 2.0 : 4.0),
-      child: Row(
+  Widget _buildSideBySideContent(BuildContext context, ThemeData theme, Pizza pizza) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (icon != null) ...[
-            Icon(icon, size: 14, color: theme.colorScheme.primary),
-            const SizedBox(width: 8),
-          ] else ...[
-            Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
-            const SizedBox(width: 8),
+          // Row 1: Sauce | Cheese
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: _buildComponentCard(theme, 'Sauce', [pizza.base.displayName]),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                    pizza.cheeses.isEmpty ? ['None'] : pizza.cheeses,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          // Row 2: Proteins | Vegetables
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    pizza.proteins.length == 1 ? 'Protein' : 'Proteins',
+                    pizza.proteins.isEmpty ? ['None'] : pizza.proteins,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                    pizza.vegetables.isEmpty ? ['None'] : pizza.vegetables,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Notes (full width)
+          if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
+            const SizedBox(height: 16),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Notes',
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      pizza.notes!,
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
-          Flexible(child: Text(text, style: theme.textTheme.bodyMedium)),
         ],
+      ),
+    );
+  }
+
+  Widget _buildComponentCard(ThemeData theme, String title, List<String> items) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: theme.textTheme.titleSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            ...items.map((item) => Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Row(
+                children: [
+                  Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
+                  const SizedBox(width: 8),
+                  Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
+                ],
+              ),
+            )),
+          ],
+        ),
       ),
     );
   }

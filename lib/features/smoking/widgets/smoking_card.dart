@@ -147,160 +147,184 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
 
   /// Metadata row for Pit Notes: category, wood, temp, time
   Widget _buildPitNoteMetadata(ThemeData theme) {
-    return Row(
+    return Wrap(
+      spacing: 4,
+      runSpacing: 4,
+      crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         // Category with colored bullet
-        if (widget.recipe.category != null) ...[
-          Text(
-            '\u2022',
-            style: TextStyle(
-              color: MemoixColors.forSmokedItemDot(widget.recipe.category),
-              fontSize: 16,
-            ),
+        if (widget.recipe.category != null)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '\u2022',
+                style: TextStyle(
+                  color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+                  fontSize: 16,
+                ),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                widget.recipe.category!,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(width: 6),
-          Text(
-            widget.recipe.category!,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
 
         // Wood type with tree icon
-        if (widget.recipe.wood.isNotEmpty) ...[
-          Icon(
-            Icons.park,
-            size: 14,
-            color: theme.colorScheme.outline,
+        if (widget.recipe.wood.isNotEmpty)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.park,
+                size: 14,
+                color: theme.colorScheme.outline,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                widget.recipe.wood,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(width: 4),
-          Text(
-            widget.recipe.wood,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
 
         // Temperature
-        if (widget.recipe.temperature.isNotEmpty) ...[
-          Icon(
-            Icons.thermostat_outlined,
-            size: 14,
-            color: theme.colorScheme.outline,
+        if (widget.recipe.temperature.isNotEmpty)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.thermostat_outlined,
+                size: 14,
+                color: theme.colorScheme.outline,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                widget.recipe.temperature,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(width: 4),
-          Text(
-            widget.recipe.temperature,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
 
         // Time
-        if (widget.recipe.time.isNotEmpty) ...[
-          Icon(
-            Icons.schedule_outlined,
-            size: 14,
-            color: theme.colorScheme.outline,
-          ),
-          const SizedBox(width: 4),
-          Flexible(
-            child: Text(
-              UnitNormalizer.normalizeTime(widget.recipe.time),
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+        if (widget.recipe.time.isNotEmpty)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.schedule_outlined,
+                size: 14,
+                color: theme.colorScheme.outline,
               ),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
+              const SizedBox(width: 4),
+              Text(
+                UnitNormalizer.normalizeTime(widget.recipe.time),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-        ],
       ],
     );
   }
 
   /// Metadata row for Recipes: category dot, wood, time, serves
   Widget _buildRecipeMetadata(ThemeData theme) {
-    return Row(
+    return Wrap(
+      spacing: 4,
+      runSpacing: 4,
+      crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        // Category with colored bullet (same as Pit Notes)
-        if (widget.recipe.category != null) ...[
-          Text(
-            '\u2022',
-            style: TextStyle(
-              color: MemoixColors.forSmokedItemDot(widget.recipe.category),
-              fontSize: 16,
-            ),
+        // Category with colored bullet
+        if (widget.recipe.category != null)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '\u2022',
+                style: TextStyle(
+                  color: MemoixColors.forSmokedItemDot(widget.recipe.category),
+                  fontSize: 16,
+                ),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                widget.recipe.category!,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(width: 6),
-          Text(
-            widget.recipe.category!,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
 
-        // Wood type with tree icon (if present)
-        if (widget.recipe.wood.isNotEmpty) ...[
-          Icon(
-            Icons.park,
-            size: 14,
-            color: theme.colorScheme.outline,
+        // Wood type with tree icon
+        if (widget.recipe.wood.isNotEmpty)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.park,
+                size: 14,
+                color: theme.colorScheme.outline,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                widget.recipe.wood,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(width: 4),
-          Text(
-            widget.recipe.wood,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
 
         // Serves
-        if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty) ...[
-          Icon(
-            Icons.people_outline,
-            size: 14,
-            color: theme.colorScheme.outline,
+        if (widget.recipe.serves != null && widget.recipe.serves!.isNotEmpty)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.people_outline,
+                size: 14,
+                color: theme.colorScheme.outline,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                'Serves ${widget.recipe.serves}',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(width: 4),
-          Text(
-            'Serves ${widget.recipe.serves}',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(width: 12),
-        ],
 
         // Time
-        if (widget.recipe.time.isNotEmpty) ...[
-          Icon(
-            Icons.schedule_outlined,
-            size: 14,
-            color: theme.colorScheme.outline,
-          ),
-          const SizedBox(width: 4),
-          Flexible(
-            child: Text(
-              UnitNormalizer.normalizeTime(widget.recipe.time),
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+        if (widget.recipe.time.isNotEmpty)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.schedule_outlined,
+                size: 14,
+                color: theme.colorScheme.outline,
               ),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
+              const SizedBox(width: 4),
+              Text(
+                UnitNormalizer.normalizeTime(widget.recipe.time),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-        ],
       ],
     );
   }

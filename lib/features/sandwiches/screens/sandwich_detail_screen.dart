@@ -148,116 +148,139 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           ),
         ),
       ),
-      body: _buildSplitSandwichView(context, theme, sandwich, isCompact),
+      body: _buildSideBySideContent(context, theme, sandwich),
     );
   }
 
-  Widget _buildSplitSandwichView(BuildContext context, ThemeData theme, Sandwich sandwich, bool isCompact) {
-    final padding = isCompact ? 8.0 : 12.0;
-    final headerHeight = isCompact ? 36.0 : 44.0;
-    final headerStyle = isCompact
-        ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
-        : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
-    final dividerPadding = isCompact ? 4.0 : 8.0;
-
-    return Column(
-      children: [
-        // Headers row
-        Container(
-          color: theme.colorScheme.surface,
-          child: Row(
-            children: [
-              Expanded(
-                child: Container(
-                  height: headerHeight,
-                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text('Cheese / Condiments', style: headerStyle),
-                ),
-              ),
-              SizedBox(width: dividerPadding * 2 + 1),
-              Expanded(
-                child: Container(
-                  height: headerHeight,
-                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text('Proteins / Vegetables', style: headerStyle),
-                ),
-              ),
-            ],
-          ),
-        ),
-        // Content row
-        Expanded(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Left column: Cheeses + Condiments
-              Expanded(
-                child: ListView(
-                  primary: false,
-                  padding: EdgeInsets.all(padding),
-                  children: [
-                    Text('Cheeses', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...sandwich.cheeses.map((c) => _buildListItem(theme, c, isCompact)),
-                    if (sandwich.cheeses.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                    const SizedBox(height: 16),
-                    Text('Condiments', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...sandwich.condiments.map((c) => _buildListItem(theme, c, isCompact)),
-                    if (sandwich.condiments.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                    if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
-                      const SizedBox(height: 24),
-                      Text('Notes', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold, color: theme.colorScheme.primary)),
-                      const SizedBox(height: 8),
-                      Text(sandwich.notes!, style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                    ],
-                  ],
-                ),
-              ),
-              // Divider
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: dividerPadding),
-                child: Container(
-                  width: 1,
-                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
-                ),
-              ),
-              // Right column: Proteins + Vegetables
-              Expanded(
-                child: ListView(
-                  primary: false,
-                  padding: EdgeInsets.all(padding),
-                  children: [
-                    Text('Proteins', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...sandwich.proteins.map((p) => _buildListItem(theme, p, isCompact)),
-                    if (sandwich.proteins.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                    const SizedBox(height: 16),
-                    Text('Vegetables', style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                    ...sandwich.vegetables.map((v) => _buildListItem(theme, v, isCompact)),
-                    if (sandwich.vegetables.isEmpty) Text('None', style: theme.textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic)),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildListItem(ThemeData theme, String text, bool isCompact) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: isCompact ? 2.0 : 4.0),
-      child: Row(
+  Widget _buildSideBySideContent(BuildContext context, ThemeData theme, Sandwich sandwich) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
-          const SizedBox(width: 8),
-          Flexible(child: Text(text, style: theme.textTheme.bodyMedium)),
+          // Bread (full width if present)
+          if (sandwich.bread.isNotEmpty)
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Row(
+                  children: [
+                    Text(
+                      'Bread:',
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(child: Text(sandwich.bread, style: theme.textTheme.bodyMedium)),
+                  ],
+                ),
+              ),
+            ),
+          if (sandwich.bread.isNotEmpty) const SizedBox(height: 12),
+          // Row 1: Cheeses | Condiments
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                    sandwich.cheeses.isEmpty ? ['None'] : sandwich.cheeses,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    sandwich.condiments.length == 1 ? 'Condiment' : 'Condiments',
+                    sandwich.condiments.isEmpty ? ['None'] : sandwich.condiments,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          // Row 2: Proteins | Vegetables
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    sandwich.proteins.length == 1 ? 'Protein' : 'Proteins',
+                    sandwich.proteins.isEmpty ? ['None'] : sandwich.proteins,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: _buildComponentCard(
+                    theme,
+                    sandwich.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                    sandwich.vegetables.isEmpty ? ['None'] : sandwich.vegetables,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Notes (full width)
+          if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
+            const SizedBox(height: 16),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Notes',
+                      style: theme.textTheme.titleSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      sandwich.notes!,
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ],
+      ),
+    );
+  }
+
+  Widget _buildComponentCard(ThemeData theme, String title, List<String> items) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: theme.textTheme.titleSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            ...items.map((item) => Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Row(
+                children: [
+                  Text('•', style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
+                  const SizedBox(width: 8),
+                  Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
+                ],
+              ),
+            )),
+          ],
+        ),
       ),
     );
   }

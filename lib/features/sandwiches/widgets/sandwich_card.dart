@@ -74,17 +74,9 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                     // Only show metadata row in non-compact mode
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
-                      // Protein summary with themed dot + ingredient counts
-                      Row(
-                        children: [
-                          Flexible(
-                            child: _buildProteinSummary(theme),
-                          ),
-                          const SizedBox(width: 12),
-                          Flexible(
-                            child: _buildIngredientsSummary(theme),
-                          ),
-                        ],
+                      // Protein summary with themed dot
+                      Flexible(
+                        child: _buildProteinSummary(theme),
                       ),
                     ],
                   ],

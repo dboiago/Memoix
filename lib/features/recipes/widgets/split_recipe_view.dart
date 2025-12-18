@@ -387,7 +387,7 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
 
     return ListView(
       primary: false,
-      physics: const ClampingScrollPhysics(),
+      physics: const AlwaysScrollableScrollPhysics(),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 32),
       children: items,
     );
