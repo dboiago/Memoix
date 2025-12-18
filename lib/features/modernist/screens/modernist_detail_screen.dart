@@ -151,30 +151,21 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                           ],
                         ),
 
-                        // Row 2: Auto-Scaling Title
-                        // Using Row + Expanded to give FittedBox bounded width
+                        // Row 2: Title (wraps to 2 lines max)
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  alignment: Alignment.centerLeft,
-                                  child: Text(
-                                    recipe.name,
-                                    style: theme.textTheme.headlineMedium?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: baseFontSize,
-                                      color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
-                                      shadows: hasHeaderImage
-                                          ? [Shadow(blurRadius: 4, color: theme.colorScheme.surface.withOpacity(0.7))]
-                                          : null,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
+                          child: Text(
+                            recipe.name,
+                            style: theme.textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                              fontSize: baseFontSize,
+                              color: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : theme.colorScheme.onSurface,
+                              shadows: hasHeaderImage
+                                  ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                  : null,
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
 

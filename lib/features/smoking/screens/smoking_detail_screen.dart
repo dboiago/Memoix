@@ -125,26 +125,20 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                           ..._buildRichHeaderActions(context, recipe, theme, headerColor),
                         ],
                       ),
-                      // Row 2: Recipe title (auto-scaling)
+                      // Row 2: Recipe title (wraps to 2 lines max)
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                alignment: Alignment.centerLeft,
-                                child: Text(
-                                  recipe.name,
-                                  style: theme.textTheme.headlineSmall?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    color: headerColor,
-                                  ),
-                                  maxLines: 1,
-                                ),
-                              ),
-                            ),
-                          ],
+                        child: Text(
+                          recipe.name,
+                          style: theme.textTheme.headlineSmall?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: headerColor,
+                            shadows: hasHeaderImage
+                                ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                : null,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                       const SizedBox(height: 4),
