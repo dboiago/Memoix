@@ -522,6 +522,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final contentColor = hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer;
+    
+    // Force cockpit view for testing as requested
+    const useCockpitView = true;
 
     return Scaffold(
       body: Column(
@@ -592,7 +595,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
           // 2. THE CONTENT
           Expanded(
-            child: CustomScrollView(
+            child: useCockpitView
+              ? SplitRecipeView(
+                  recipe: recipe,
+                  onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+                )
+              : CustomScrollView(
               controller: _scrollController,
               slivers: [
                 // Recipe metadata
