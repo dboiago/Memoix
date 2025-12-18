@@ -331,6 +331,40 @@ class _DirectionsColumn extends StatefulWidget {
 
 class _DirectionsColumnState extends State<_DirectionsColumn> {
   final Set<int> _completedSteps = {};
+  final ScrollController _scrollController = ScrollController();
+  bool _showScrollHint = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(_onScroll);
+    // Check initially after first frame
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkScrollExtent());
+  }
+
+  @override
+  void dispose() {
+    _scrollController.removeListener(_onScroll);
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    _checkScrollExtent();
+  }
+
+  void _checkScrollExtent() {
+    if (!_scrollController.hasClients) return;
+    
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.offset;
+    // Hide hint when near bottom (within 50 pixels) or no scroll needed
+    final shouldShow = maxScroll > 50 && currentScroll < maxScroll - 50;
+    
+    if (shouldShow != _showScrollHint) {
+      setState(() => _showScrollHint = shouldShow);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -386,12 +420,65 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
       items.add(_buildImageGallery(context, recipe, theme));
     }
 
-    return ListView(
-      primary: false,
-      // Use BouncingScrollPhysics to provide visual feedback at bounds
-      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-      padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 100),
-      children: items,
+    // Check if there's additional content beyond directions
+    final hasExtraContent = (recipe?.notes != null && recipe!.notes!.isNotEmpty) ||
+        (recipe?.nutrition != null && recipe!.nutrition!.hasData) ||
+        (recipe?.stepImages.isNotEmpty ?? false);
+
+    return Stack(
+      children: [
+        ListView(
+          controller: _scrollController,
+          primary: false,
+          // Use BouncingScrollPhysics to provide visual feedback at bounds
+          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+          padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 100),
+          children: items,
+        ),
+        // Scroll hint gradient at bottom when there's more content
+        if (hasExtraContent && _showScrollHint)
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: IgnorePointer(
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      theme.colorScheme.surface.withOpacity(0),
+                      theme.colorScheme.surface.withOpacity(0.8),
+                      theme.colorScheme.surface,
+                    ],
+                    stops: const [0.0, 0.6, 1.0],
+                  ),
+                ),
+                alignment: Alignment.bottomCenter,
+                padding: const EdgeInsets.only(bottom: 4),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      Icons.keyboard_arrow_down,
+                      size: 16,
+                      color: theme.colorScheme.primary,
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      'Notes & more',
+                      style: theme.textTheme.labelSmall?.copyWith(
+                        color: theme.colorScheme.primary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 

@@ -237,6 +237,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: ListView(
         scrollDirection: Axis.horizontal,
+        physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
         children: [
           // "All" chip
           _buildFilterChip(

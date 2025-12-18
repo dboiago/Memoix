@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../app/theme/colors.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
@@ -121,7 +122,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     const SizedBox(height: 4),
-                    // Base sauce indicator
+                    // Base sauce indicator (using MemoixColors to match list view)
                     Row(
                       children: [
                         Container(
@@ -129,7 +130,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                           height: 8,
                           margin: const EdgeInsets.only(right: 4),
                           decoration: BoxDecoration(
-                            color: theme.colorScheme.primary,
+                            color: MemoixColors.forPizzaBaseDot(pizza.base.name),
                             shape: BoxShape.circle,
                           ),
                         ),
