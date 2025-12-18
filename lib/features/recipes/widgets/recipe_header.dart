@@ -176,62 +176,68 @@ class RecipeHeader extends StatelessWidget {
         ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
         : null;
 
+    // Build action buttons list
+    final actionButtons = <Widget>[
+      if (onToggleFavorite != null)
+        IconButton(
+          icon: Icon(
+            recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+            color: recipe.isFavorite ? theme.colorScheme.primary : iconColor,
+            shadows: iconShadows,
+          ),
+          onPressed: onToggleFavorite,
+          visualDensity: VisualDensity.compact,
+          padding: const EdgeInsets.all(8),
+          constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+        ),
+      if (onLogCook != null)
+        IconButton(
+          icon: Icon(Icons.check_circle_outline, color: iconColor, shadows: iconShadows),
+          tooltip: 'I made this',
+          onPressed: onLogCook,
+          visualDensity: VisualDensity.compact,
+          padding: const EdgeInsets.all(8),
+          constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+        ),
+      if (onShare != null)
+        IconButton(
+          icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
+          onPressed: onShare,
+          visualDensity: VisualDensity.compact,
+          padding: const EdgeInsets.all(8),
+          constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+        ),
+      if (onMenuSelected != null)
+        PopupMenuButton<String>(
+          onSelected: onMenuSelected,
+          itemBuilder: (_) => [
+            const PopupMenuItem(value: 'edit', child: Text('Edit')),
+            const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+            PopupMenuItem(
+              value: 'delete',
+              child: Text(
+                'Delete',
+                style: TextStyle(color: theme.colorScheme.secondary),
+              ),
+            ),
+          ],
+          icon: Icon(Icons.more_vert, color: iconColor, shadows: iconShadows),
+          padding: EdgeInsets.zero,
+        ),
+    ];
+
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         // Back button
         IconButton(
           icon: Icon(Icons.arrow_back, color: iconColor, shadows: iconShadows),
           onPressed: onBack ?? () => Navigator.of(context).pop(),
         ),
-        // Spacer to push actions to right
-        const Spacer(),
-        // Action icons - use Flexible to prevent overflow
-        Flexible(
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-            // Favorite
-            if (onToggleFavorite != null)
-              IconButton(
-                icon: Icon(
-                  recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: recipe.isFavorite ? theme.colorScheme.primary : iconColor,
-                  shadows: iconShadows,
-                ),
-                onPressed: onToggleFavorite,
-              ),
-            // Log cook
-            if (onLogCook != null)
-              IconButton(
-                icon: Icon(Icons.check_circle_outline, color: iconColor, shadows: iconShadows),
-                tooltip: 'I made this',
-                onPressed: onLogCook,
-              ),
-            // Share
-            if (onShare != null)
-              IconButton(
-                icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
-                onPressed: onShare,
-              ),
-              // Menu
-              if (onMenuSelected != null)
-                PopupMenuButton<String>(
-                  onSelected: onMenuSelected,
-                  itemBuilder: (_) => [
-                    const PopupMenuItem(value: 'edit', child: Text('Edit')),
-                    const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-                    PopupMenuItem(
-                      value: 'delete',
-                      child: Text(
-                        'Delete',
-                        style: TextStyle(color: theme.colorScheme.secondary),
-                      ),
-                    ),
-                  ],
-                  icon: Icon(Icons.more_vert, color: iconColor, shadows: iconShadows),
-                ),
-            ],
-          ),
+        // Action icons - wrapped to prevent overflow
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: actionButtons,
         ),
       ],
     );

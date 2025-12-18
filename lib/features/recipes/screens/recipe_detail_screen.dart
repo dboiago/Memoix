@@ -323,229 +323,61 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     String? headerImage,
     bool hasStepImages,
   ) {
+    final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
+
     return Scaffold(
-      body: CustomScrollView(
-        controller: _scrollController,
-        slivers: [
-          // Hero header with recipe image or colored header
-          SliverAppBar(
-            expandedHeight: hasHeaderImage ? 250 : 120,
-            pinned: true,
-            // Title area at the bottom that stays on its own line
-            flexibleSpace: LayoutBuilder(
-              builder: (context, constraints) {
-                final screenWidth = MediaQuery.sizeOf(context).width;
-                // Scale font: 20px at 320, up to 28px at 1200+
-                final expandedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
-                final collapsedFontSize = (screenWidth / 50).clamp(18.0, 24.0);
-                
-                // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
-                final maxExtent = hasHeaderImage ? 250.0 : 120.0;
-                final minExtent = kToolbarHeight + MediaQuery.of(context).padding.top;
-                final currentExtent = constraints.maxHeight;
-                final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
-                
-                // Interpolate font size
-                final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
-                
-                return FlexibleSpaceBar(
-                  titlePadding: EdgeInsetsDirectional.only(
-                    start: 56,
-                    bottom: 12,
-                    end: 56,
-                  ),
-                  title: Text(
-                    recipe.name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: fontSize,
-                      color: hasHeaderImage && collapseRatio < 0.7 
-                          ? theme.colorScheme.onSurfaceVariant 
-                          : theme.colorScheme.onSurface,
-                      shadows: hasHeaderImage && collapseRatio < 0.7
-                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                          : null,
+      body: Column(
+        children: [
+          // 1. THE RICH HEADER - Fixed at top, does not scroll
+          RecipeHeader(
+            recipe: recipe,
+            useChipMetadata: true, // Normal mode uses chips
+            headerImage: hasHeaderImage ? headerImage : null,
+            onToggleFavorite: () async {
+              await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+              ref.invalidate(allRecipesProvider);
+            },
+            onLogCook: () async {
+              await ref.read(cookingStatsServiceProvider).logCook(
+                recipeId: recipe.uuid,
+                recipeName: recipe.name,
+                course: recipe.course,
+                cuisine: recipe.cuisine,
+              );
+              ref.invalidate(cookingStatsProvider);
+              ref.invalidate(recipeCookCountProvider(recipe.uuid));
+              ref.invalidate(recipeLastCookProvider(recipe.uuid));
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Logged cook for ${recipe.name}!'),
+                    action: SnackBarAction(
+                      label: 'Stats',
+                      onPressed: () => AppRoutes.toStatistics(context),
                     ),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
                   ),
-                  background: hasHeaderImage
-                      ? Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            _buildSingleImage(context, headerImage!),
-                            // Gradient scrim for legibility
-                            const DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [
-                                    Colors.transparent,
-                                    Colors.black54,
-                                  ],
-                                  stops: [0.5, 1.0],
-                                ),
-                              ),
-                            ),
-                          ],
-                        )
-                      : Container(color: theme.colorScheme.surfaceContainerHighest),
                 );
-              },
-            ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: recipe.isFavorite ? theme.colorScheme.primary : null,
-                ),
-                onPressed: () async {
-                  await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
-                  ref.invalidate(allRecipesProvider);
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.check_circle_outline),
-                tooltip: 'I made this',
-                onPressed: () async {
-                  await ref.read(cookingStatsServiceProvider).logCook(
-                    recipeId: recipe.uuid,
-                    recipeName: recipe.name,
-                    course: recipe.course,
-                    cuisine: recipe.cuisine,
-                  );
-                  // Invalidate stats providers so they refresh
-                  ref.invalidate(cookingStatsProvider);
-                  ref.invalidate(recipeCookCountProvider(recipe.uuid));
-                  ref.invalidate(recipeLastCookProvider(recipe.uuid));
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Logged cook for ${recipe.name}!'),
-                        action: SnackBarAction(
-                          label: 'Stats',
-                          onPressed: () => AppRoutes.toStatistics(context),
-                        ),
-                      ),
-                    );
-                  }
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.share),
-                onPressed: () => _shareRecipe(context, ref),
-              ),
-              PopupMenuButton<String>(
-                onSelected: (value) => _handleMenuAction(context, ref, value),
-                itemBuilder: (_) => [
-                  const PopupMenuItem(value: 'edit', child: Text('Edit')),
-                  const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-                  PopupMenuItem(
-                    value: 'delete',
-                    child: Text(
-                      'Delete',
-                      style: TextStyle(color: theme.colorScheme.secondary),
-                    ),
-                  ),
-                ],
-                icon: const Icon(Icons.more_vert),
-              ),
-            ],
+              }
+            },
+            onShare: () => _shareRecipe(context, ref),
+            onMenuSelected: (value) => _handleMenuAction(context, ref, value),
+            pairedRecipeChips: hasPairs
+                ? _buildPairedRecipeChips(context, ref, recipe, theme)
+                : null,
           ),
 
-          // Recipe metadata
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Meta chips row (Cuisine, Pickle Method, Serves, Time, Nutrition)
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [
-                      if (recipe.cuisine != null)
-                        Chip(
-                          label: Text(Cuisine.toAdjective(recipe.cuisine)),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(
-                            color: theme.colorScheme.onSurface,
-                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                          ),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      // Pickle method chip
-                      if (recipe.course == 'pickles' && recipe.pickleMethod != null && recipe.pickleMethod!.isNotEmpty)
-                        Chip(
-                          label: Text(recipe.pickleMethod!),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(
-                            color: theme.colorScheme.onSurface,
-                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                          ),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      if (recipe.serves != null && recipe.serves!.isNotEmpty)
-                        Chip(
-                          avatar: Icon(Icons.people, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                          label: Text(_formatServes(recipe.serves!)),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(
-                            color: theme.colorScheme.onSurface,
-                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                          ),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      if (recipe.time != null && recipe.time!.isNotEmpty)
-                        Chip(
-                          avatar: Icon(Icons.timer, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                          label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                          labelStyle: TextStyle(
-                            color: theme.colorScheme.onSurface,
-                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                          ),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      if (recipe.nutrition != null && recipe.nutrition!.hasData)
-                        Tooltip(
-                          message: _buildNutritionTooltip(recipe.nutrition!),
-                          child: ActionChip(
-                            avatar: Icon(Icons.local_fire_department, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                            label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
-                            backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                            labelStyle: TextStyle(
-                              color: theme.colorScheme.onSurface,
-                              fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                            ),
-                            visualDensity: VisualDensity.compact,
-                            onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
-                          ),
-                        ),
-                    ],
-                  ),
-                  // Paired recipe chips on their own row, right-aligned
-                  if (recipe.supportsPairing && _hasPairedRecipes(ref, recipe))
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8),
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Wrap(
-                          spacing: 8,
-                          runSpacing: 8,
-                          alignment: WrapAlignment.end,
-                          children: _buildPairedRecipeChips(context, ref, recipe, theme),
-                        ),
-                      ),
-                    ),
-
-                  // Glass and Garnish (for Drinks) - side by side
-                  if (recipe.course == 'drinks' && 
-                      ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty)) ...[
-                    const SizedBox(height: 16),
-                    Row(
+          // 2. THE CONTENT - Scrollable
+          Expanded(
+            child: ListView(
+              controller: _scrollController,
+              padding: EdgeInsets.zero,
+              children: [
+                // Glass and Garnish (for Drinks) - side by side
+                if (recipe.course == 'drinks' && 
+                    ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty))
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         // Glass
@@ -604,170 +436,158 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           ),
                       ],
                     ),
-                  ],
-                ],
-              ),
-            ),
-          ),
-
-          // Ingredients and Directions - always stacked in standard mode
-          // (Side-by-side mode uses _buildSideBySideLayout instead)
-          SliverToBoxAdapter(
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                // On very wide screens (>800px), use side-by-side even in standard mode
-                final useWideLayout = constraints.maxWidth > 800;
-                
-                if (useWideLayout) {
-                  return Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          flex: 2,
-                          child: Card(
-                            child: Padding(
-                              padding: const EdgeInsets.all(16),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('Ingredients', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
-                                  const SizedBox(height: 12),
-                                  IngredientList(ingredients: recipe.ingredients),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          flex: 3,
-                          child: Card(
-                            child: Padding(
-                              padding: const EdgeInsets.all(16),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('Directions', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
-                                  const SizedBox(height: 12),
-                                  DirectionList(
-                                    directions: recipe.directions,
-                                    recipe: recipe,
-                                    onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                }
-                
-                // Stacked layout for standard view
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 8),
-                      Text(
-                        'Ingredients',
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      IngredientList(ingredients: recipe.ingredients),
-                      const SizedBox(height: 24),
-                      Text(
-                        'Directions',
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      DirectionList(
-                        directions: recipe.directions,
-                        recipe: recipe,
-                        onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
-                      ),
-                    ],
                   ),
-                );
-              },
-            ),
-          ),
 
-          // Step Images Gallery (under directions, before comments)
-          if (hasStepImages)
-            SliverToBoxAdapter(
-              key: _stepImagesKey,
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                child: _buildStepImagesGallery(theme, recipe),
-              ),
-            ),
-
-          // Comments section (at bottom, after recipe content)
-          if (recipe.notes != null && recipe.notes!.isNotEmpty)
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
+                // Ingredients and Directions
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    // On very wide screens (>800px), use side-by-side
+                    final useWideLayout = constraints.maxWidth > 800;
+                    
+                    if (useWideLayout) {
+                      return Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Icon(Icons.comment, size: 20, color: Theme.of(context).colorScheme.primary),
-                            const SizedBox(width: 8),
-                            Text(
-                              'Comments',
-                              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                fontWeight: FontWeight.bold,
+                            Expanded(
+                              flex: 2,
+                              child: Card(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text('Ingredients', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 12),
+                                      IngredientList(ingredients: recipe.ingredients),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 16),
+                            Expanded(
+                              flex: 3,
+                              child: Card(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text('Directions', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+                                      const SizedBox(height: 12),
+                                      DirectionList(
+                                        directions: recipe.directions,
+                                        recipe: recipe,
+                                        onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
+                                      ),
+                                    ],
+                                  ),
+                                ),
                               ),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 12),
-                        Text(
-                          recipe.notes!,
-                          textAlign: TextAlign.end,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-          // Source URL
-          if (recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty)
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: TextButton.icon(
-                  icon: const Icon(Icons.open_in_new),
-                  label: const Text('View Original Recipe'),
-                  onPressed: () async {
-                    final url = Uri.tryParse(recipe.sourceUrl!);
-                    if (url != null && await canLaunchUrl(url)) {
-                      await launchUrl(url, mode: LaunchMode.externalApplication);
+                      );
                     }
+                    
+                    // Stacked layout for standard view
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(height: 8),
+                          Text(
+                            'Ingredients',
+                            style: theme.textTheme.titleLarge?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          IngredientList(ingredients: recipe.ingredients),
+                          const SizedBox(height: 24),
+                          Text(
+                            'Directions',
+                            style: theme.textTheme.titleLarge?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          DirectionList(
+                            directions: recipe.directions,
+                            recipe: recipe,
+                            onScrollToImage: (stepIndex) => _scrollToAndShowImage(recipe, stepIndex),
+                          ),
+                        ],
+                      ),
+                    );
                   },
                 ),
-              ),
-            ),
 
-          // Bottom padding
-          const SliverToBoxAdapter(
-            child: SizedBox(height: 32),
+                // Step Images Gallery
+                if (hasStepImages)
+                  Padding(
+                    key: _stepImagesKey,
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                    child: _buildStepImagesGallery(theme, recipe),
+                  ),
+
+                // Comments section
+                if (recipe.notes != null && recipe.notes!.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Icon(Icons.comment, size: 20, color: Theme.of(context).colorScheme.primary),
+                                const SizedBox(width: 8),
+                                Text(
+                                  'Comments',
+                                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              recipe.notes!,
+                              textAlign: TextAlign.end,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                // Source URL
+                if (recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: TextButton.icon(
+                      icon: const Icon(Icons.open_in_new),
+                      label: const Text('View Original Recipe'),
+                      onPressed: () async {
+                        final url = Uri.tryParse(recipe.sourceUrl!);
+                        if (url != null && await canLaunchUrl(url)) {
+                          await launchUrl(url, mode: LaunchMode.externalApplication);
+                        }
+                      },
+                    ),
+                  ),
+
+                // Bottom padding
+                const SizedBox(height: 32),
+              ],
+            ),
           ),
         ],
       ),
@@ -1283,31 +1103,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         ),
       ],
     );
-  }
-
-  /// Build a single image display
-  Widget _buildSingleImage(BuildContext context, String imageSource) {
-    final isLocalFile = !imageSource.startsWith('http');
-    return isLocalFile
-        ? Image.file(
-            File(imageSource),
-            fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(
-              color: Theme.of(context).colorScheme.surfaceContainerHighest,
-            ),
-          )
-        : Image.network(
-            imageSource,
-            fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(
-              color: Theme.of(context).colorScheme.surfaceContainerHighest,
-            ),
-          );
-  }
-
-  /// Build an image carousel for multiple images
-  Widget _buildImageCarousel(List<String> images) {
-    return _RecipeImageCarousel(images: images);
   }
 }
 
