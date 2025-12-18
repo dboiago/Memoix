@@ -206,7 +206,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
               ),
               const SizedBox(width: 4),
               Text(
-                widget.recipe.temperature,
+                UnitNormalizer.normalizeTemperature(widget.recipe.temperature),
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
@@ -298,7 +298,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
               ),
               const SizedBox(width: 4),
               Text(
-                'Serves ${widget.recipe.serves}',
+                UnitNormalizer.normalizeServes(widget.recipe.serves),
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
