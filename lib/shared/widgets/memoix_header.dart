@@ -7,27 +7,24 @@ import 'package:flutter/material.dart';
 /// specific model types, allowing it to be used by Recipe, Modernist, Pizza,
 /// Sandwich, Smoking, Cellar, and Cheese detail screens.
 ///
-/// Supports two metadata display modes:
-/// - `useChipMetadata: true` → Chips (for normal scrolling views)
-/// - `useChipMetadata: false` → Compact text row (for side-by-side views)
+/// The header displays:
+/// - Back button
+/// - Title (scales down to fit, never wraps)
+/// - Favorite button
+/// - Action menu (Edit, Duplicate, Delete)
 ///
-/// The header automatically adjusts colors and shadows based on whether
-/// an image is present.
+/// Metadata chips and other content belong in the scrollable content area
+/// below the header, not inside it.
 class MemoixHeader extends StatelessWidget {
   const MemoixHeader({
     super.key,
     required this.title,
     this.isFavorite = false,
-    this.useChipMetadata = true,
     this.headerImage,
-    this.onBack,
-    this.onToggleFavorite,
-    this.onLogCook,
-    this.onShare,
-    this.onMenuSelected,
-    this.metadataChips,
-    this.compactMetadata,
-    this.pairedRecipeChips,
+    this.onFavoritePressed,
+    this.onEditPressed,
+    this.onDuplicatePressed,
+    this.onDeletePressed,
   });
 
   /// The title to display in the header.
@@ -36,41 +33,20 @@ class MemoixHeader extends StatelessWidget {
   /// Whether this item is marked as favorite.
   final bool isFavorite;
 
-  /// Whether to display metadata as chips (true) or compact widget (false).
-  final bool useChipMetadata;
-
   /// Optional header image URL or file path.
   final String? headerImage;
 
-  /// Optional callback when back button is pressed.
-  /// Defaults to Navigator.pop() if not provided.
-  final VoidCallback? onBack;
-
   /// Callback when favorite button is pressed.
-  final VoidCallback? onToggleFavorite;
+  final VoidCallback? onFavoritePressed;
 
-  /// Callback when "I made this" / "Log" button is pressed.
-  /// If null, the button is not shown.
-  final VoidCallback? onLogCook;
+  /// Callback when edit is selected from menu.
+  final VoidCallback? onEditPressed;
 
-  /// Callback when share button is pressed.
-  /// If null, the button is not shown.
-  final VoidCallback? onShare;
+  /// Callback when duplicate is selected from menu.
+  final VoidCallback? onDuplicatePressed;
 
-  /// Callback when a menu item is selected (edit, duplicate, delete).
-  /// If null, the menu is not shown.
-  final void Function(String value)? onMenuSelected;
-
-  /// Widget to display as chips metadata (for useChipMetadata: true).
-  /// Caller provides the actual chip widgets.
-  final Widget? metadataChips;
-
-  /// Widget to display as compact metadata (for useChipMetadata: false).
-  /// Caller provides a Text.rich or similar widget.
-  final Widget? compactMetadata;
-
-  /// Optional widget list of paired recipe chips to display.
-  final List<Widget>? pairedRecipeChips;
+  /// Callback when delete is selected from menu.
+  final VoidCallback? onDeletePressed;
 
   bool get _hasHeaderImage => headerImage != null && headerImage!.isNotEmpty;
 
@@ -123,7 +99,7 @@ class MemoixHeader extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Row 1: Navigation Icon (Left) + Action Icons (Right)
+                  // Row 1: Back button (Left) + Action Icons (Right)
                   _buildActionRow(context, theme),
 
                   // Row 2: Title (scales down to fit, never wraps or truncates)
@@ -138,7 +114,7 @@ class MemoixHeader extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontSize: baseFontSize,
                           color: _hasHeaderImage
-                              ? theme.colorScheme.onSurfaceVariant
+                              ? Colors.white
                               : theme.colorScheme.onSurface,
                           shadows: _hasHeaderImage
                               ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
@@ -147,29 +123,6 @@ class MemoixHeader extends StatelessWidget {
                       ),
                     ),
                   ),
-
-                  // Row 3: Metadata (chips or compact widget)
-                  if ((useChipMetadata && metadataChips != null) ||
-                      (!useChipMetadata && compactMetadata != null))
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 4.0),
-                      child: useChipMetadata ? metadataChips! : compactMetadata!,
-                    ),
-
-                  // Row 4: Paired recipes chips (if any) - right-aligned
-                  if (pairedRecipeChips != null && pairedRecipeChips!.isNotEmpty)
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 6.0),
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Wrap(
-                          spacing: 6,
-                          runSpacing: 4,
-                          alignment: WrapAlignment.end,
-                          children: pairedRecipeChips!,
-                        ),
-                      ),
-                    ),
                 ],
               ),
             ),
@@ -181,64 +134,11 @@ class MemoixHeader extends StatelessWidget {
 
   /// Build the navigation and action icons row.
   Widget _buildActionRow(BuildContext context, ThemeData theme) {
-    final iconColor = _hasHeaderImage
-        ? theme.colorScheme.onSurfaceVariant
-        : theme.colorScheme.onSurface;
+    final iconColor = _hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
 
-    // Use shadow for icons when over an image
     final iconShadows = _hasHeaderImage
         ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
         : null;
-
-    // Build action buttons list
-    final actionButtons = <Widget>[
-      if (onToggleFavorite != null)
-        IconButton(
-          icon: Icon(
-            isFavorite ? Icons.favorite : Icons.favorite_border,
-            color: isFavorite ? theme.colorScheme.primary : iconColor,
-            shadows: iconShadows,
-          ),
-          onPressed: onToggleFavorite,
-          visualDensity: VisualDensity.compact,
-          padding: const EdgeInsets.all(8),
-          constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-        ),
-      if (onLogCook != null)
-        IconButton(
-          icon: Icon(Icons.check_circle_outline, color: iconColor, shadows: iconShadows),
-          tooltip: 'I made this',
-          onPressed: onLogCook,
-          visualDensity: VisualDensity.compact,
-          padding: const EdgeInsets.all(8),
-          constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-        ),
-      if (onShare != null)
-        IconButton(
-          icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
-          onPressed: onShare,
-          visualDensity: VisualDensity.compact,
-          padding: const EdgeInsets.all(8),
-          constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-        ),
-      if (onMenuSelected != null)
-        PopupMenuButton<String>(
-          onSelected: onMenuSelected,
-          itemBuilder: (_) => [
-            const PopupMenuItem(value: 'edit', child: Text('Edit')),
-            const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-            PopupMenuItem(
-              value: 'delete',
-              child: Text(
-                'Delete',
-                style: TextStyle(color: theme.colorScheme.secondary),
-              ),
-            ),
-          ],
-          icon: Icon(Icons.more_vert, color: iconColor, shadows: iconShadows),
-          padding: EdgeInsets.zero,
-        ),
-    ];
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -246,12 +146,57 @@ class MemoixHeader extends StatelessWidget {
         // Back button
         IconButton(
           icon: Icon(Icons.arrow_back, color: iconColor, shadows: iconShadows),
-          onPressed: onBack ?? () => Navigator.of(context).pop(),
+          onPressed: () => Navigator.of(context).pop(),
         ),
         // Action icons
         Row(
           mainAxisSize: MainAxisSize.min,
-          children: actionButtons,
+          children: [
+            if (onFavoritePressed != null)
+              IconButton(
+                icon: Icon(
+                  isFavorite ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite ? theme.colorScheme.secondary : iconColor,
+                  shadows: iconShadows,
+                ),
+                onPressed: onFavoritePressed,
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.all(8),
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+            if (onEditPressed != null || onDuplicatePressed != null || onDeletePressed != null)
+              PopupMenuButton<String>(
+                onSelected: (value) {
+                  switch (value) {
+                    case 'edit':
+                      onEditPressed?.call();
+                      break;
+                    case 'duplicate':
+                      onDuplicatePressed?.call();
+                      break;
+                    case 'delete':
+                      onDeletePressed?.call();
+                      break;
+                  }
+                },
+                itemBuilder: (_) => [
+                  if (onEditPressed != null)
+                    const PopupMenuItem(value: 'edit', child: Text('Edit')),
+                  if (onDuplicatePressed != null)
+                    const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+                  if (onDeletePressed != null)
+                    PopupMenuItem(
+                      value: 'delete',
+                      child: Text(
+                        'Delete',
+                        style: TextStyle(color: theme.colorScheme.secondary),
+                      ),
+                    ),
+                ],
+                icon: Icon(Icons.more_vert, color: iconColor, shadows: iconShadows),
+                padding: EdgeInsets.zero,
+              ),
+          ],
         ),
       ],
     );

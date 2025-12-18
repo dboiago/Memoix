@@ -90,30 +90,29 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           MemoixHeader(
             title: recipe.name,
             isFavorite: recipe.isFavorite,
-            useChipMetadata: false, // Side-by-side uses compact text row
             headerImage: hasHeaderImage ? headerImage : null,
-            metadataChips: _buildChipMetadata(context, recipe, theme),
-            compactMetadata: _buildCompactMetadataRow(recipe, theme, overrideColor: null),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
             },
-            onLogCook: () {
-              ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
-              ref.invalidate(modernistRecipeProvider(widget.recipeId));
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text('Logged cook for ${recipe.name}!')),
-              );
-            },
-            onShare: () => _shareRecipe(context, recipe),
-            onMenuSelected: (value) => _handleMenuAction(value, recipe),
+            onEditPressed: () => _handleMenuAction('edit', recipe),
+            onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
+            onDeletePressed: () => _handleMenuAction('delete', recipe),
           ),
 
-          // 2. Collapsible equipment section (above the split view)
+          // 2. Compact metadata row (below header)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            width: double.infinity,
+            child: _buildCompactMetadataRow(recipe, theme),
+          ),
+
+          // 3. Collapsible equipment section (above the split view)
           if (hasEquipment)
             _buildCollapsibleEquipment(recipe, theme),
 
-          // 3. THE CONTENT (Split View) - Scrollable, sits below header
+          // 4. THE CONTENT (Split View) - Scrollable, sits below header
           Expanded(
             child: SplitModernistView(
               recipe: recipe,
@@ -193,9 +192,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   /// Build compact metadata row for side-by-side mode
-  /// [overrideColor] - optional color to use for text/icons when over an image
-  Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme, {Color? overrideColor}) {
-    final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
+  Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme) {
+    final textColor = theme.colorScheme.onSurfaceVariant;
     final metadataItems = <InlineSpan>[];
     
     // Always show type with colored indicator (Concept or Technique)
@@ -399,23 +397,14 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           MemoixHeader(
             title: recipe.name,
             isFavorite: recipe.isFavorite,
-            useChipMetadata: true, // Normal mode uses chips
             headerImage: hasHeaderImage ? headerImage : null,
-            metadataChips: _buildChipMetadata(context, recipe, theme),
-            compactMetadata: _buildCompactMetadataRow(recipe, theme, overrideColor: null),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
             },
-            onLogCook: () {
-              ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
-              ref.invalidate(modernistRecipeProvider(widget.recipeId));
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text('Logged cook for ${recipe.name}!')),
-              );
-            },
-            onShare: () => _shareRecipe(context, recipe),
-            onMenuSelected: (value) => _handleMenuAction(value, recipe),
+            onEditPressed: () => _handleMenuAction('edit', recipe),
+            onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
+            onDeletePressed: () => _handleMenuAction('delete', recipe),
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -424,6 +413,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               controller: _scrollController,
               padding: EdgeInsets.zero,
               children: [
+                // Metadata chips
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                  child: _buildChipMetadata(context, recipe, theme),
+                ),
+
                 // Special Equipment (simple list style, no banner)
                 if (recipe.equipment.isNotEmpty)
                   Padding(

@@ -81,24 +81,14 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           MemoixHeader(
             title: pizza.name,
             isFavorite: pizza.isFavorite,
-            useChipMetadata: false, // Side-by-side uses compact text row
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
-            metadataChips: _buildChipMetadata(context, pizza, theme),
-            compactMetadata: _buildCompactMetadata(pizza, theme),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
               ref.invalidate(allPizzasProvider);
             },
-            onLogCook: () async {
-              await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Logged cook for ${pizza.name}!')),
-                );
-              }
-            },
-            onShare: () => _sharePizza(context, ref, pizza),
-            onMenuSelected: (value) => _handleMenuAction(context, ref, pizza, value),
+            onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
+            onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
+            onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -108,6 +98,9 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // Compact metadata
+                  _buildCompactMetadata(pizza, theme),
+                  const SizedBox(height: 16),
                   // Use same grid as normal mode
                   _PizzaComponentsGrid(pizza: pizza),
                   // Notes (full width)
@@ -206,24 +199,14 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           MemoixHeader(
             title: pizza.name,
             isFavorite: pizza.isFavorite,
-            useChipMetadata: true, // Normal mode uses chips
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
-            metadataChips: _buildChipMetadata(context, pizza, theme),
-            compactMetadata: _buildCompactMetadata(pizza, theme),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
               ref.invalidate(allPizzasProvider);
             },
-            onLogCook: () async {
-              await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Logged cook for ${pizza.name}!')),
-                );
-              }
-            },
-            onShare: () => _sharePizza(context, ref, pizza),
-            onMenuSelected: (value) => _handleMenuAction(context, ref, pizza, value),
+            onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
+            onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
+            onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -231,6 +214,10 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             child: ListView(
               padding: const EdgeInsets.all(16),
               children: [
+                // Metadata chips
+                _buildChipMetadata(context, pizza, theme),
+                const SizedBox(height: 16),
+                
                 // Content - responsive grid layout for Sauce - Cheese - Toppings
                 _PizzaComponentsGrid(pizza: pizza),
                 

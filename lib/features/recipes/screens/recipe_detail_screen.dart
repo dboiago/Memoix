@@ -209,47 +209,24 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           MemoixHeader(
             title: recipe.name,
             isFavorite: recipe.isFavorite,
-            useChipMetadata: false, // Side-by-side uses compact text row
             headerImage: hasHeaderImage ? headerImage : null,
-            metadataChips: _buildChipMetadata(context, recipe, theme),
-            compactMetadata: _buildCompactMetadata(recipe, theme, hasHeaderImage),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
             },
-            onLogCook: () async {
-              await ref.read(cookingStatsServiceProvider).logCook(
-                recipeId: recipe.uuid,
-                recipeName: recipe.name,
-                course: recipe.course,
-                cuisine: recipe.cuisine,
-              );
-              ref.invalidate(cookingStatsProvider);
-              ref.invalidate(recipeCookCountProvider(recipe.uuid));
-              ref.invalidate(recipeLastCookProvider(recipe.uuid));
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('Logged cook for ${recipe.name}!'),
-                    action: SnackBarAction(
-                      label: 'Stats',
-                      onPressed: () => AppRoutes.toStatistics(context),
-                    ),
-                  ),
-                );
-              }
-            },
-            onShare: () => _shareRecipe(context, ref),
-            onMenuSelected: (value) => _handleMenuAction(context, ref, value),
-            pairedRecipeChips: hasPairs
-                ? _buildPairedRecipeChips(context, ref, recipe, theme)
-                : null,
+            onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onDuplicatePressed: () => _duplicateRecipe(context, ref),
+            onDeletePressed: () => _confirmDelete(context, ref),
           ),
 
           // 2. THE CONTENT (Split View) - Scrollable, sits below header
           Expanded(
             child: SplitRecipeView(
               recipe: recipe,
+              metadataWidget: _buildCompactMetadata(recipe, theme),
+              pairedRecipeChips: hasPairs
+                  ? _buildPairedRecipeChips(context, ref, recipe, theme)
+                  : null,
               onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
             ),
           ),
@@ -329,7 +306,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   }
 
   /// Build compact text-based metadata row (for side-by-side views).
-  Widget _buildCompactMetadata(Recipe recipe, ThemeData theme, bool hasHeaderImage) {
+  Widget _buildCompactMetadata(Recipe recipe, ThemeData theme) {
     final textColor = theme.colorScheme.onSurfaceVariant;
     final metadataItems = <InlineSpan>[];
 
@@ -539,41 +516,14 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           MemoixHeader(
             title: recipe.name,
             isFavorite: recipe.isFavorite,
-            useChipMetadata: true, // Normal mode uses chips
             headerImage: hasHeaderImage ? headerImage : null,
-            metadataChips: _buildChipMetadata(context, recipe, theme),
-            compactMetadata: _buildCompactMetadata(recipe, theme, hasHeaderImage),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
             },
-            onLogCook: () async {
-              await ref.read(cookingStatsServiceProvider).logCook(
-                recipeId: recipe.uuid,
-                recipeName: recipe.name,
-                course: recipe.course,
-                cuisine: recipe.cuisine,
-              );
-              ref.invalidate(cookingStatsProvider);
-              ref.invalidate(recipeCookCountProvider(recipe.uuid));
-              ref.invalidate(recipeLastCookProvider(recipe.uuid));
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('Logged cook for ${recipe.name}!'),
-                    action: SnackBarAction(
-                      label: 'Stats',
-                      onPressed: () => AppRoutes.toStatistics(context),
-                    ),
-                  ),
-                );
-              }
-            },
-            onShare: () => _shareRecipe(context, ref),
-            onMenuSelected: (value) => _handleMenuAction(context, ref, value),
-            pairedRecipeChips: hasPairs
-                ? _buildPairedRecipeChips(context, ref, recipe, theme)
-                : null,
+            onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onDuplicatePressed: () => _duplicateRecipe(context, ref),
+            onDeletePressed: () => _confirmDelete(context, ref),
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -582,6 +532,22 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               controller: _scrollController,
               padding: EdgeInsets.zero,
               children: [
+                // Metadata chips
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                  child: _buildChipMetadata(context, recipe, theme),
+                ),
+
+                // Paired recipe chips
+                if (hasPairs)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                    child: Wrap(
+                      spacing: 6,
+                      runSpacing: 4,
+                      children: _buildPairedRecipeChips(context, ref, recipe, theme),
+                    ),
+                  ),
                 // Glass and Garnish (for Drinks) - side by side
                 if (recipe.course == 'drinks' && 
                     ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty))

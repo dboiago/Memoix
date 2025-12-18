@@ -85,36 +85,22 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           MemoixHeader(
             title: recipe.name,
             isFavorite: recipe.isFavorite,
-            useChipMetadata: false, // Side-by-side uses compact text row
             headerImage: hasHeaderImage ? headerImage : null,
-            metadataChips: _buildChipMetadata(context, recipe, theme),
-            compactMetadata: _buildCompactMetadataRow(recipe, theme, overrideColor: null),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
               ref.invalidate(allSmokingRecipesProvider);
             },
-            onLogCook: () async {
-              await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Logged cook for ${recipe.name}!')),
-                );
-              }
-            },
-            onShare: () => _shareRecipe(context, ref, recipe),
-            onMenuSelected: (value) {
-              switch (value) {
-                case 'edit':
-                  _editRecipe(context, recipe);
-                  break;
-                case 'duplicate':
-                  _duplicateRecipe(context, ref, recipe);
-                  break;
-                case 'delete':
-                  _confirmDelete(context, ref, recipe);
-                  break;
-              }
-            },
+            onEditPressed: () => _editRecipe(context, recipe),
+            onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
+            onDeletePressed: () => _confirmDelete(context, ref, recipe),
+          ),
+
+          // Compact metadata row (below header)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            width: double.infinity,
+            child: _buildCompactMetadataRow(recipe, theme),
           ),
 
           // Scrollable content
@@ -238,10 +224,10 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   }
 
   /// Build compact metadata row for side-by-side mode
-  Widget _buildCompactMetadataRow(SmokingRecipe recipe, ThemeData theme, {Color? overrideColor}) {
+  Widget _buildCompactMetadataRow(SmokingRecipe recipe, ThemeData theme) {
     final metadataItems = <InlineSpan>[];
-    final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
-    final iconColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
+    final textColor = theme.colorScheme.onSurfaceVariant;
+    final iconColor = theme.colorScheme.onSurfaceVariant;
     
     // Add category with colored dot
     if (recipe.category != null && recipe.category!.isNotEmpty) {
@@ -386,36 +372,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           MemoixHeader(
             title: recipe.name,
             isFavorite: recipe.isFavorite,
-            useChipMetadata: true, // Normal mode uses chips
             headerImage: hasHeaderImage ? headerImage : null,
-            metadataChips: _buildChipMetadata(context, recipe, theme),
-            compactMetadata: _buildCompactMetadataRow(recipe, theme, overrideColor: null),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
               ref.invalidate(allSmokingRecipesProvider);
             },
-            onLogCook: () async {
-              await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Logged cook for ${recipe.name}!')),
-                );
-              }
-            },
-            onShare: () => _shareRecipe(context, ref, recipe),
-            onMenuSelected: (value) {
-              switch (value) {
-                case 'edit':
-                  _editRecipe(context, recipe);
-                  break;
-                case 'duplicate':
-                  _duplicateRecipe(context, ref, recipe);
-                  break;
-                case 'delete':
-                  _confirmDelete(context, ref, recipe);
-                  break;
-              }
-            },
+            onEditPressed: () => _editRecipe(context, recipe),
+            onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
+            onDeletePressed: () => _confirmDelete(context, ref, recipe),
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -424,6 +388,11 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               controller: _scrollController,
               padding: EdgeInsets.zero,
               children: [
+                // Metadata chips
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                  child: _buildChipMetadata(context, recipe, theme),
+                ),
                 // Ingredients and Directions
                 LayoutBuilder(
                   builder: (context, constraints) {

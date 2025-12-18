@@ -63,8 +63,6 @@ class _CellarDetailView extends ConsumerWidget {
             title: entry.name,
             headerImage: showHeaderImages ? entry.imageUrl : null,
             isFavorite: entry.isFavorite,
-            useChipMetadata: true,
-            metadataChips: _buildChipMetadata(theme),
             onFavoritePressed: () async {
               await ref.read(cellarRepositoryProvider).toggleFavorite(entry);
               ref.invalidate(allCellarEntriesProvider);
@@ -77,6 +75,9 @@ class _CellarDetailView extends ConsumerWidget {
             child: ListView(
               padding: const EdgeInsets.all(16),
               children: [
+                // Metadata chips
+                _buildChipMetadata(theme),
+                const SizedBox(height: 16),
                 // Tasting notes section (always shown, with placeholder if empty)
                 Card(
                   child: Padding(

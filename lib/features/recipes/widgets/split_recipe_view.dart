@@ -11,11 +11,15 @@ import '../models/recipe.dart';
 class SplitRecipeView extends StatelessWidget {
   final Recipe recipe;
   final Function(int stepIndex)? onScrollToImage;
+  final Widget? metadataWidget;
+  final List<Widget>? pairedRecipeChips;
 
   const SplitRecipeView({
     super.key,
     required this.recipe,
     this.onScrollToImage,
+    this.metadataWidget,
+    this.pairedRecipeChips,
   });
 
   /// Calculate the flex ratio for ingredients column based on screen width.
@@ -57,6 +61,26 @@ class SplitRecipeView extends StatelessWidget {
 
     return Column(
       children: [
+        // Metadata row (compact text below header)
+        if (metadataWidget != null)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+            width: double.infinity,
+            child: metadataWidget!,
+          ),
+        // Paired recipe chips (if any)
+        if (pairedRecipeChips != null && pairedRecipeChips!.isNotEmpty)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 4),
+            width: double.infinity,
+            child: Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              children: pairedRecipeChips!,
+            ),
+          ),
         // Glass and Garnish chips for drinks (above column headers)
         if (hasGlassOrGarnish)
           Container(

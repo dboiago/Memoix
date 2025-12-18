@@ -83,24 +83,14 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           MemoixHeader(
             title: sandwich.name,
             isFavorite: sandwich.isFavorite,
-            useChipMetadata: false, // Side-by-side uses compact text row
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
-            metadataChips: _buildChipMetadata(context, sandwich, theme),
-            compactMetadata: _buildProteinIndicator(sandwich, theme, overrideColor: null),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
               ref.invalidate(allSandwichesProvider);
             },
-            onLogCook: () async {
-              await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Logged cook for ${sandwich.name}!')),
-                );
-              }
-            },
-            onShare: () => _shareSandwich(context, ref, sandwich),
-            onMenuSelected: (value) => _handleMenuAction(context, ref, sandwich, value),
+            onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
+            onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
+            onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -110,6 +100,9 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // Compact metadata
+                  _buildProteinIndicator(sandwich, theme),
+                  const SizedBox(height: 16),
                   // Use same grid as normal mode
                   _SandwichComponentsGrid(sandwich: sandwich),
                   // Notes (full width)
@@ -198,24 +191,14 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           MemoixHeader(
             title: sandwich.name,
             isFavorite: sandwich.isFavorite,
-            useChipMetadata: true, // Normal mode uses chips
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
-            metadataChips: _buildChipMetadata(context, sandwich, theme),
-            compactMetadata: _buildProteinIndicator(sandwich, theme, overrideColor: null),
-            onToggleFavorite: () async {
+            onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
               ref.invalidate(allSandwichesProvider);
             },
-            onLogCook: () async {
-              await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Logged cook for ${sandwich.name}!')),
-                );
-              }
-            },
-            onShare: () => _shareSandwich(context, ref, sandwich),
-            onMenuSelected: (value) => _handleMenuAction(context, ref, sandwich, value),
+            onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
+            onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
+            onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -223,6 +206,10 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             child: ListView(
               padding: const EdgeInsets.all(16),
               children: [
+                // Metadata chips
+                _buildChipMetadata(context, sandwich, theme),
+                const SizedBox(height: 16),
+
                 // Main content with responsive layout
                 _SandwichComponentsGrid(sandwich: sandwich),
                 
@@ -291,11 +278,10 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
   }
 
   /// Build protein indicator matching list view logic
-  /// [overrideColor] - optional color to use for text when over an image
-  Widget _buildProteinIndicator(Sandwich sandwich, ThemeData theme, {Color? overrideColor}) {
+  Widget _buildProteinIndicator(Sandwich sandwich, ThemeData theme) {
     final proteins = sandwich.proteins;
     final cheeses = sandwich.cheeses;
-    final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
+    final textColor = theme.colorScheme.onSurfaceVariant;
     
     String label;
     Color dotColor;
