@@ -183,8 +183,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final screenWidth = MediaQuery.sizeOf(context).width;
-    final isLargeScreen = screenWidth >= 600;
-    final baseFontSize = isLargeScreen ? 20.0 : 16.0;
+    // Scale font size with screen width: 18px at 320, up to 28px at 1200+
+    final baseFontSize = (screenWidth / 50).clamp(18.0, 28.0);
     
     // Calculate header height: image (if any) + title container
     // Title container has padding (16) + title (variable) + spacing (4) + metadata (~20) + optional pairs (~30)
@@ -233,30 +233,45 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Title that shrinks instead of truncating
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        recipe.name,
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: baseFontSize,
-                        ),
-                        maxLines: 1,
-                      ),
+                    // Title that shrinks instead of truncating - use LayoutBuilder to get available width
+                    LayoutBuilder(
+                      builder: (context, constraints) {
+                        return SizedBox(
+                          width: constraints.maxWidth,
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            alignment: Alignment.centerLeft,
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(maxWidth: constraints.maxWidth),
+                              child: Text(
+                                recipe.name,
+                                style: theme.textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: baseFontSize,
+                                ),
+                                maxLines: 1,
+                                softWrap: false,
+                              ),
+                            ),
+                          ),
+                        );
+                      },
                     ),
                     const SizedBox(height: 4),
                     // Compact metadata row with dots
                     _buildCompactMetadataRow(recipe, theme),
-                    // Paired recipes chips (if any)
+                    // Paired recipes chips (if any) - right-aligned
                     if (hasPairs)
                       Padding(
                         padding: const EdgeInsets.only(top: 6),
-                        child: Wrap(
-                          spacing: 6,
-                          runSpacing: 4,
-                          children: _buildPairedRecipeChips(context, ref, recipe, theme),
+                        child: Align(
+                          alignment: Alignment.centerRight,
+                          child: Wrap(
+                            spacing: 6,
+                            runSpacing: 4,
+                            alignment: WrapAlignment.end,
+                            children: _buildPairedRecipeChips(context, ref, recipe, theme),
+                          ),
                         ),
                       ),
                   ],
@@ -349,14 +364,18 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 ),
             ],
           ),
-          // "Pairs With" chips on a separate line (using pairedRecipeIds)
+          // "Pairs With" chips on a separate line, right-aligned
           if (pairedChips.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 6),
-              child: Wrap(
-                spacing: 6,
-                runSpacing: 4,
-                children: pairedChips,
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: Wrap(
+                  spacing: 6,
+                  runSpacing: 4,
+                  alignment: WrapAlignment.end,
+                  children: pairedChips,
+                ),
               ),
             ),
         ],
@@ -514,9 +533,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             flexibleSpace: LayoutBuilder(
               builder: (context, constraints) {
                 final screenWidth = MediaQuery.sizeOf(context).width;
-                final isLargeScreen = screenWidth >= 600;
-                final expandedFontSize = isLargeScreen ? 22.0 : 18.0;
-                final collapsedFontSize = isLargeScreen ? 18.0 : 14.0;
+                // Scale font: 20px at 320, up to 28px at 1200+
+                final expandedFontSize = (screenWidth / 45).clamp(20.0, 28.0);
+                final collapsedFontSize = (screenWidth / 55).clamp(16.0, 22.0);
                 
                 // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
                 final maxExtent = hasHeaderImage ? 250.0 : 120.0;
@@ -527,25 +546,38 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 // Interpolate font size
                 final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
                 
+                // Calculate available width for title (accounting for back button and actions)
+                final availableWidth = screenWidth - 56 - 100 - 16; // start padding, end padding, extra margin
+                
                 return FlexibleSpaceBar(
                   titlePadding: EdgeInsetsDirectional.only(
                     start: 56,
                     bottom: 12,
                     end: 100,
                   ),
-                  title: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      recipe.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: fontSize,
-                        color: hasHeaderImage || collapseRatio < 0.7 
-                            ? Colors.white 
-                            : theme.colorScheme.onSurface,
+                  title: SizedBox(
+                    width: availableWidth,
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(maxWidth: availableWidth),
+                        child: Text(
+                          recipe.name,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: fontSize,
+                            color: hasHeaderImage || collapseRatio < 0.7 
+                                ? Colors.white 
+                                : theme.colorScheme.onSurface,
+                            shadows: hasHeaderImage && collapseRatio < 0.7
+                                ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                : null,
+                          ),
+                          maxLines: 1,
+                          softWrap: false,
+                        ),
                       ),
-                      maxLines: 1,
                     ),
                   ),
                   background: hasHeaderImage
@@ -640,88 +672,85 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Tags row - left chips and right-aligned paired chips
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  // Meta chips row (Cuisine, Pickle Method, Serves, Time, Nutrition)
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
                     children: [
-                      // Left-aligned chips (Cuisine, Pickle Method, Serves, Time, Nutrition)
-                      Expanded(
+                      if (recipe.cuisine != null)
+                        Chip(
+                          label: Text(Cuisine.toAdjective(recipe.cuisine)),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(
+                            color: theme.colorScheme.onSurface,
+                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                          ),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      // Pickle method chip
+                      if (recipe.course == 'pickles' && recipe.pickleMethod != null && recipe.pickleMethod!.isNotEmpty)
+                        Chip(
+                          label: Text(recipe.pickleMethod!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(
+                            color: theme.colorScheme.onSurface,
+                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                          ),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      if (recipe.serves != null && recipe.serves!.isNotEmpty)
+                        Chip(
+                          avatar: Icon(Icons.people, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
+                          label: Text(_formatServes(recipe.serves!)),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(
+                            color: theme.colorScheme.onSurface,
+                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                          ),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      if (recipe.time != null && recipe.time!.isNotEmpty)
+                        Chip(
+                          avatar: Icon(Icons.timer, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
+                          label: Text(recipe.time!),
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          labelStyle: TextStyle(
+                            color: theme.colorScheme.onSurface,
+                            fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                          ),
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      if (recipe.nutrition != null && recipe.nutrition!.hasData)
+                        Tooltip(
+                          message: _buildNutritionTooltip(recipe.nutrition!),
+                          child: ActionChip(
+                            avatar: Icon(Icons.local_fire_department, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
+                            label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
+                            backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                            labelStyle: TextStyle(
+                              color: theme.colorScheme.onSurface,
+                              fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
+                            ),
+                            visualDensity: VisualDensity.compact,
+                            onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
+                          ),
+                        ),
+                    ],
+                  ),
+                  // Paired recipe chips on their own row, right-aligned
+                  if (recipe.supportsPairing && _hasPairedRecipes(ref, recipe))
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: Align(
+                        alignment: Alignment.centerRight,
                         child: Wrap(
                           spacing: 8,
                           runSpacing: 8,
-                          children: [
-                            if (recipe.cuisine != null)
-                              Chip(
-                                label: Text(Cuisine.toAdjective(recipe.cuisine)),
-                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(
-                                  color: theme.colorScheme.onSurface,
-                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                                ),
-                                visualDensity: VisualDensity.compact,
-                              ),
-                            // Pickle method chip
-                            if (recipe.course == 'pickles' && recipe.pickleMethod != null && recipe.pickleMethod!.isNotEmpty)
-                              Chip(
-                                label: Text(recipe.pickleMethod!),
-                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(
-                                  color: theme.colorScheme.onSurface,
-                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                                ),
-                                visualDensity: VisualDensity.compact,
-                              ),
-                            if (recipe.serves != null && recipe.serves!.isNotEmpty)
-                              Chip(
-                                avatar: Icon(Icons.people, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                                label: Text(_formatServes(recipe.serves!)),
-                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(
-                                  color: theme.colorScheme.onSurface,
-                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                                ),
-                                visualDensity: VisualDensity.compact,
-                              ),
-                            if (recipe.time != null && recipe.time!.isNotEmpty)
-                              Chip(
-                                avatar: Icon(Icons.timer, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                                label: Text(recipe.time!),
-                                backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                labelStyle: TextStyle(
-                                  color: theme.colorScheme.onSurface,
-                                  fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                                ),
-                                visualDensity: VisualDensity.compact,
-                              ),
-                            if (recipe.nutrition != null && recipe.nutrition!.hasData)
-                              Tooltip(
-                                message: _buildNutritionTooltip(recipe.nutrition!),
-                                child: ActionChip(
-                                  avatar: Icon(Icons.local_fire_department, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                                  label: Text(recipe.nutrition!.compactDisplay ?? 'Nutrition'),
-                                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                                  labelStyle: TextStyle(
-                                    color: theme.colorScheme.onSurface,
-                                    fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
-                                  ),
-                                  visualDensity: VisualDensity.compact,
-                                  onPressed: () => _showNutritionDialog(context, recipe.nutrition!),
-                                ),
-                              ),
-                          ],
-                        ),
-                      ),
-                      // Right-aligned paired recipe chips (only for recipes that support pairing)
-                      if (recipe.supportsPairing && _hasPairedRecipes(ref, recipe)) ...[
-                        const SizedBox(width: 8),
-                        Wrap(
-                          spacing: 8,
-                          runSpacing: 8,
+                          alignment: WrapAlignment.end,
                           children: _buildPairedRecipeChips(context, ref, recipe, theme),
                         ),
-                      ],
-                    ],
-                  ),
+                      ),
+                    ),
 
                   // Glass and Garnish (for Drinks) - side by side
                   if (recipe.course == 'drinks' && 

@@ -247,10 +247,13 @@ class _DrawerTileState extends State<_DrawerTile> {
               children: [
                 Icon(widget.icon, size: 20, color: theme.colorScheme.onSurfaceVariant),
                 const SizedBox(width: 12),
-                Text(
-                  widget.title,
-                  style: theme.textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w400,
+                Expanded(
+                  child: Text(
+                    widget.title,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      fontWeight: FontWeight.w400,
+                    ),
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ],
