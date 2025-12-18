@@ -184,7 +184,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         actions: _buildAppBarActions(context, recipe, theme),
         // Recipe name on its own line below the back arrow and actions
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(hasHeaderImage ? 140 : 36),
+          preferredSize: Size.fromHeight(hasHeaderImage ? 160 : 56),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -214,15 +214,22 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               Container(
                 color: theme.colorScheme.surface,
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    recipe.name,
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      recipe.name,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
-                  ),
+                    const SizedBox(height: 4),
+                    // Compact metadata row with dots
+                    _buildCompactMetadataRow(recipe, theme),
+                  ],
                 ),
               ),
             ],
@@ -327,6 +334,60 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     );
   }
 
+  /// Build compact metadata row with colored dots for side-by-side mode
+  Widget _buildCompactMetadataRow(Recipe recipe, ThemeData theme) {
+    final metadataItems = <InlineSpan>[];
+    
+    // Add cuisine with colored dot
+    if (recipe.cuisine != null) {
+      final cuisineColor = MemoixColors.forCuisine(recipe.cuisine!);
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Container(
+          width: 8,
+          height: 8,
+          margin: const EdgeInsets.only(right: 4),
+          decoration: BoxDecoration(
+            color: cuisineColor,
+            shape: BoxShape.circle,
+          ),
+        ),
+      ));
+      metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+    }
+    
+    // Add serves
+    if (recipe.serves != null && recipe.serves!.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '  •  '));
+      }
+      metadataItems.add(TextSpan(text: _formatServes(recipe.serves!)));
+    }
+    
+    // Add time
+    if (recipe.time != null && recipe.time!.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '  •  '));
+      }
+      metadataItems.add(TextSpan(text: recipe.time!));
+    }
+    
+    if (metadataItems.isEmpty) {
+      return const SizedBox.shrink();
+    }
+    
+    return Text.rich(
+      TextSpan(
+        style: theme.textTheme.bodySmall?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+        children: metadataItems,
+      ),
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+    );
+  }
+
   /// Build app bar actions (shared between layouts)
   List<Widget> _buildAppBarActions(BuildContext context, Recipe recipe, ThemeData theme) {
     return [
@@ -406,21 +467,19 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  recipe.name,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+              title: Text(
+                recipe.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
                 ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
               ),
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 160,
+                end: 100,
               ),
               background: hasHeaderImage
                   ? Stack(

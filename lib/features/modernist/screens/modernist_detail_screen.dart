@@ -27,6 +27,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   final Set<int> _checkedIngredients = {};
   final ScrollController _scrollController = ScrollController();
   final GlobalKey _stepImagesKey = GlobalKey();
+  bool _equipmentExpanded = false;
 
   @override
   void dispose() {
@@ -76,6 +77,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
+    final hasEquipment = recipe.equipment.isNotEmpty;
+    
+    // Calculate header height based on content
+    double headerHeight = hasHeaderImage ? 100.0 : 0.0;
+    headerHeight += 56.0; // Title + metadata row
+    if (hasEquipment) headerHeight += 48.0; // Collapsible equipment header
 
     return Scaffold(
       appBar: AppBar(
@@ -84,7 +91,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         actions: _buildAppBarActions(context, recipe, theme),
         // Recipe name on its own line below the back arrow and actions
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(hasHeaderImage ? 140 : 36),
+          preferredSize: Size.fromHeight(headerHeight),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -110,21 +117,31 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     ],
                   ),
                 ),
-              // Recipe title with dynamic sizing
+              // Recipe title with metadata
               Container(
                 color: theme.colorScheme.surface,
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    recipe.name,
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      recipe.name,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
-                  ),
+                    const SizedBox(height: 4),
+                    // Compact metadata row with dots
+                    _buildCompactMetadataRow(recipe, theme),
+                  ],
                 ),
               ),
+              // Collapsible equipment section
+              if (hasEquipment)
+                _buildCollapsibleEquipment(recipe, theme),
             ],
           ),
         ),
@@ -132,6 +149,124 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       body: SplitModernistView(
         recipe: recipe,
         onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+      ),
+    );
+  }
+
+  /// Build compact metadata row with dots for side-by-side mode
+  Widget _buildCompactMetadataRow(ModernistRecipe recipe, ThemeData theme) {
+    final metadataItems = <InlineSpan>[];
+    
+    // Add type with colored indicator
+    if (recipe.type == ModernistType.technique) {
+      metadataItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Container(
+          width: 8,
+          height: 8,
+          margin: const EdgeInsets.only(right: 4),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.tertiary,
+            shape: BoxShape.circle,
+          ),
+        ),
+      ));
+      metadataItems.add(const TextSpan(text: 'Technique'));
+    }
+    
+    // Add technique category
+    if (recipe.technique != null && recipe.technique!.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '  •  '));
+      }
+      metadataItems.add(TextSpan(text: recipe.technique!));
+    }
+    
+    // Add serves
+    if (recipe.serves != null && recipe.serves!.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '  •  '));
+      }
+      metadataItems.add(TextSpan(text: recipe.serves!));
+    }
+    
+    // Add time
+    if (recipe.time != null && recipe.time!.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '  •  '));
+      }
+      metadataItems.add(TextSpan(text: recipe.time!));
+    }
+    
+    // Add difficulty
+    if (recipe.difficulty != null && recipe.difficulty!.isNotEmpty) {
+      if (metadataItems.isNotEmpty) {
+        metadataItems.add(const TextSpan(text: '  •  '));
+      }
+      metadataItems.add(TextSpan(text: recipe.difficulty!));
+    }
+    
+    if (metadataItems.isEmpty) {
+      return const SizedBox.shrink();
+    }
+    
+    return Text.rich(
+      TextSpan(
+        style: theme.textTheme.bodySmall?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+        children: metadataItems,
+      ),
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+    );
+  }
+
+  /// Build collapsible equipment section for side-by-side mode
+  Widget _buildCollapsibleEquipment(ModernistRecipe recipe, ThemeData theme) {
+    return Container(
+      color: theme.colorScheme.surface,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          InkWell(
+            onTap: () => setState(() => _equipmentExpanded = !_equipmentExpanded),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Row(
+                children: [
+                  Icon(
+                    _equipmentExpanded ? Icons.expand_less : Icons.expand_more,
+                    size: 20,
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Equipment (${recipe.equipment.length})',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          if (_equipmentExpanded)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 4,
+                children: recipe.equipment.map((item) => Text(
+                  item,
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                )).expand((widget) => [widget, Text(' • ', style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant.withOpacity(0.5)))]).take(recipe.equipment.length * 2 - 1).toList(),
+              ),
+            ),
+        ],
       ),
     );
   }
@@ -198,21 +333,19 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  recipe.name,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+              title: Text(
+                recipe.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
                 ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
               ),
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 160,
+                end: 100,
               ),
               background: hasHeaderImage
                   ? Stack(

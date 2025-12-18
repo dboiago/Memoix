@@ -65,21 +65,19 @@ class _CheeseDetailView extends ConsumerWidget {
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  entry.name,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+              title: Text(
+                entry.name,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
                 ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
               ),
               titlePadding: const EdgeInsetsDirectional.only(
                 start: 56,
                 bottom: 16,
-                end: 160,
+                end: 100,
               ),
               background: hasHeaderImage
                   ? Stack(
