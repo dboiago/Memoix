@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/smoking_recipe.dart';
 
@@ -6,6 +7,8 @@ import '../models/smoking_recipe.dart';
 /// Ingredients and Directions side-by-side with independent scrolling.
 /// 
 /// Adapted for Smoking recipes.
+/// The split columns are constrained to 85% of screen height, allowing
+/// the user to scroll the parent page to see Comments and other footer content.
 class SplitSmokingView extends StatelessWidget {
   final SmokingRecipe recipe;
   final Function(int stepIndex)? onScrollToImage;
@@ -35,6 +38,7 @@ class SplitSmokingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
+    final screenHeight = MediaQuery.sizeOf(context).height;
     final theme = Theme.of(context);
     
     // Visual density adjustments
@@ -45,87 +49,195 @@ class SplitSmokingView extends StatelessWidget {
     final headerStyle = isCompact
         ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
+    
+    // Calculate split view height (85% of screen, clamped for usability)
+    final splitViewHeight = (screenHeight * 0.85).clamp(400.0, 900.0);
+    
+    // Check for extra content sections
+    final hasNotes = recipe.notes != null && recipe.notes!.isNotEmpty;
+    final hasGallery = recipe.stepImages.isNotEmpty;
+    final hasSourceUrl = recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty;
 
-    return Column(
-      children: [
-        // Fixed header row - not scrollable
-        Container(
-          color: theme.colorScheme.surface,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              // Ingredients header
-              Expanded(
-                flex: _getIngredientsFlex(screenWidth),
-                child: Container(
-                  height: headerHeight,
-                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text('Ingredients', style: headerStyle),
+    return SingleChildScrollView(
+      physics: const ClampingScrollPhysics(),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Fixed header row for split columns
+          Container(
+            color: theme.colorScheme.surface,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Ingredients header
+                Expanded(
+                  flex: _getIngredientsFlex(screenWidth),
+                  child: Container(
+                    height: headerHeight,
+                    padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                    alignment: Alignment.centerLeft,
+                    child: Text('Ingredients', style: headerStyle),
+                  ),
                 ),
-              ),
-              // Divider spacer
-              SizedBox(width: dividerPadding * 2 + 1),
-              // Directions header
-              Expanded(
-                flex: _getDirectionsFlex(screenWidth),
-                child: Container(
-                  height: headerHeight,
-                  padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text('Directions', style: headerStyle),
+                // Divider spacer
+                SizedBox(width: dividerPadding * 2 + 1),
+                // Directions header
+                Expanded(
+                  flex: _getDirectionsFlex(screenWidth),
+                  child: Container(
+                    height: headerHeight,
+                    padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
+                    alignment: Alignment.centerLeft,
+                    child: Text('Directions', style: headerStyle),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-        // Scrollable content row
-        Expanded(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Ingredients Column
-              Expanded(
-                flex: _getIngredientsFlex(screenWidth),
-                child: ScrollbarTheme(
-                  data: ScrollbarThemeData(
-                    thickness: WidgetStateProperty.all(2.0),
-                  ),
-                  child: _IngredientsColumn(
-                    recipe: recipe,
-                    isCompact: isCompact,
+          
+          // Split columns container with fixed height (85% of screen)
+          SizedBox(
+            height: splitViewHeight,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Ingredients Column - independently scrollable
+                Expanded(
+                  flex: _getIngredientsFlex(screenWidth),
+                  child: ScrollbarTheme(
+                    data: ScrollbarThemeData(
+                      thickness: WidgetStateProperty.all(2.0),
+                    ),
+                    child: _IngredientsColumn(
+                      recipe: recipe,
+                      isCompact: isCompact,
+                    ),
                   ),
                 ),
-              ),
 
-              // Vertical Divider
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: dividerPadding),
-                child: Container(
-                  width: 1,
-                  color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                // Vertical Divider
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: dividerPadding),
+                  child: Container(
+                    width: 1,
+                    color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                  ),
                 ),
-              ),
 
-              // Directions Column
-              Expanded(
-                flex: _getDirectionsFlex(screenWidth),
-                child: ScrollbarTheme(
-                  data: ScrollbarThemeData(
-                    thickness: WidgetStateProperty.all(2.0),
-                  ),
-                  child: _DirectionsColumn(
-                    directions: recipe.directions,
-                    recipe: recipe,
-                    onScrollToImage: onScrollToImage,
-                    isCompact: isCompact,
+                // Directions Column - independently scrollable
+                Expanded(
+                  flex: _getDirectionsFlex(screenWidth),
+                  child: ScrollbarTheme(
+                    data: ScrollbarThemeData(
+                      thickness: WidgetStateProperty.all(2.0),
+                    ),
+                    child: _DirectionsColumn(
+                      directions: recipe.directions,
+                      recipe: recipe,
+                      onScrollToImage: onScrollToImage,
+                      isCompact: isCompact,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-      ],
+          
+          // ===== FOOTER SECTIONS (scrollable via parent) =====
+          
+          // Comments/Notes section
+          if (hasNotes)
+            Padding(
+              padding: EdgeInsets.fromLTRB(padding, 24, padding, 0),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Comments',
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      Text(recipe.notes!),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          
+          // Gallery section (collapsible)
+          if (hasGallery)
+            Padding(
+              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
+              child: Card(
+                child: ExpansionTile(
+                  title: Text(
+                    'Gallery',
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  initiallyExpanded: true,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                      child: _buildImageGallery(context, recipe, theme),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          
+          // Source URL (View Original Recipe)
+          if (hasSourceUrl)
+            Padding(
+              padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
+              child: Center(
+                child: TextButton.icon(
+                  icon: const Icon(Icons.open_in_new),
+                  label: const Text('View Original Recipe'),
+                  onPressed: () async {
+                    final url = Uri.tryParse(recipe.sourceUrl!);
+                    if (url != null) {
+                      await launchUrl(url, mode: LaunchMode.externalApplication);
+                    }
+                  },
+                ),
+              ),
+            ),
+          
+          // Bottom padding
+          const SizedBox(height: 32),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildImageGallery(BuildContext context, SmokingRecipe recipe, ThemeData theme) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: recipe.stepImages.map((image) {
+        return ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: SizedBox(
+            width: 80,
+            height: 80,
+            child: Image.network(
+              image,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => Container(
+                color: theme.colorScheme.surfaceContainerHighest,
+                child: Icon(Icons.broken_image, color: theme.colorScheme.outline),
+              ),
+            ),
+          ),
+        );
+      }).toList(),
     );
   }
 }

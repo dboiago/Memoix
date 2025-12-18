@@ -87,6 +87,9 @@ class MemoixTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
+        // Use a visible hover color in light mode
+        tileColor: lightSurface,
+        selectedTileColor: const Color(0xFFE8DDD4), // warm cream for selected
       ),
       // Rounded corners for expansion tiles
       expansionTileTheme: ExpansionTileThemeData(
@@ -96,6 +99,9 @@ class MemoixTheme {
         collapsedShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
+        // Use visible background colors that contrast with light background
+        backgroundColor: lightSurface,
+        collapsedBackgroundColor: lightSurface,
       ),
       // Rounded corners for dialogs
       dialogTheme: DialogThemeData(

@@ -293,15 +293,17 @@ class SplitRecipeView extends StatelessWidget {
           if (hasSourceUrl)
             Padding(
               padding: EdgeInsets.fromLTRB(padding, 16, padding, 0),
-              child: TextButton.icon(
-                icon: const Icon(Icons.open_in_new),
-                label: const Text('View Original Recipe'),
-                onPressed: () async {
-                  final url = Uri.tryParse(recipe.sourceUrl!);
-                  if (url != null) {
-                    await launchUrl(url, mode: LaunchMode.externalApplication);
-                  }
-                },
+              child: Center(
+                child: TextButton.icon(
+                  icon: const Icon(Icons.open_in_new),
+                  label: const Text('View Original Recipe'),
+                  onPressed: () async {
+                    final url = Uri.tryParse(recipe.sourceUrl!);
+                    if (url != null) {
+                      await launchUrl(url, mode: LaunchMode.externalApplication);
+                    }
+                  },
+                ),
               ),
             ),
           
