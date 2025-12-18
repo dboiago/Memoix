@@ -382,23 +382,20 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 final fontSize = collapsedFontSize + (clampedRatio * (expandedFontSize - collapsedFontSize));
                 
                 return FlexibleSpaceBar(
-                  title: Row(
-                    children: [
-                      Expanded(
-                        child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            recipe.name,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: fontSize,
-                            ),
-                            maxLines: 1,
-                          ),
-                        ),
-                      ),
-                    ],
+                  title: Text(
+                    recipe.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: fontSize,
+                      color: hasHeaderImage && clampedRatio > 0.3 
+                          ? theme.colorScheme.onSurfaceVariant 
+                          : theme.colorScheme.onSurface,
+                      shadows: hasHeaderImage && clampedRatio > 0.3
+                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                          : null,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   titlePadding: const EdgeInsetsDirectional.only(
                     start: 56,

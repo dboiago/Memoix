@@ -459,44 +459,67 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           SliverAppBar(
             expandedHeight: hasHeaderImage ? 250 : 120,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                recipe.name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-              titlePadding: const EdgeInsetsDirectional.only(
-                start: 56,
-                bottom: 16,
-                end: 160,
-              ),
-              expandedTitleScale: 1.3,
-              background: hasHeaderImage
-                  ? Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        _buildSingleImage(headerImage),
-                        // Gradient scrim for legibility
-                        const DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.transparent,
-                                Colors.black54,
-                              ],
-                              stops: [0.5, 1.0],
+            flexibleSpace: LayoutBuilder(
+              builder: (context, constraints) {
+                final screenWidth = MediaQuery.sizeOf(context).width;
+                // Scale font: 20px at 320, up to 28px at 1200+
+                final expandedFontSize = (screenWidth / 40).clamp(20.0, 28.0);
+                final collapsedFontSize = (screenWidth / 50).clamp(18.0, 24.0);
+                
+                // Calculate how collapsed we are (0 = fully expanded, 1 = fully collapsed)
+                final maxExtent = hasHeaderImage ? 250.0 : 120.0;
+                final minExtent = kToolbarHeight + MediaQuery.of(context).padding.top;
+                final currentExtent = constraints.maxHeight;
+                final collapseRatio = ((maxExtent - currentExtent) / (maxExtent - minExtent)).clamp(0.0, 1.0);
+                
+                // Interpolate font size
+                final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
+                
+                return FlexibleSpaceBar(
+                  title: Text(
+                    recipe.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: fontSize,
+                      color: hasHeaderImage && collapseRatio < 0.7 
+                          ? theme.colorScheme.onSurfaceVariant 
+                          : theme.colorScheme.onSurface,
+                      shadows: hasHeaderImage && collapseRatio < 0.7
+                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                          : null,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  titlePadding: const EdgeInsetsDirectional.only(
+                    start: 56,
+                    bottom: 12,
+                    end: 100,
+                  ),
+                  background: hasHeaderImage
+                      ? Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            _buildSingleImage(headerImage),
+                            // Gradient scrim for legibility
+                            const DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Colors.transparent,
+                                    Colors.black54,
+                                  ],
+                                  stops: [0.5, 1.0],
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ],
-                    )
-                  : Container(color: theme.colorScheme.surfaceContainerHighest),
+                          ],
+                        )
+                      : Container(color: theme.colorScheme.surfaceContainerHighest),
+                );
+              },
             ),
             actions: [
               IconButton(

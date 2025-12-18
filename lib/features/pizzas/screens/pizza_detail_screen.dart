@@ -320,28 +320,20 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                     bottom: 12,
                     end: 100,
                   ),
-                  title: Row(
-                    children: [
-                      Expanded(
-                        child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            pizza.name,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: fontSize,
-                              color: hasHeaderImage || collapseRatio < 0.7 
-                                  ? Colors.white 
-                                  : theme.colorScheme.onSurface,
-                              shadows: hasHeaderImage && collapseRatio < 0.7
-                                  ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                  : null,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                  title: Text(
+                    pizza.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: fontSize,
+                      color: hasHeaderImage && collapseRatio < 0.7 
+                          ? theme.colorScheme.onSurfaceVariant 
+                          : theme.colorScheme.onSurface,
+                      shadows: hasHeaderImage && collapseRatio < 0.7
+                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                          : null,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   background: hasHeaderImage
                       ? Stack(
