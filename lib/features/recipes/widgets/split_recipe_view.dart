@@ -201,6 +201,24 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
       }
     }
 
+    // Parse notes to extract optional markers and alternatives
+    final rawNotes = [
+      if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) ingredient.preparation!,
+      if (ingredient.alternative != null && ingredient.alternative!.isNotEmpty) ingredient.alternative!,
+    ].where((s) => s.isNotEmpty).join(' · ');
+    
+    final parsedNotes = _parseNotes(rawNotes);
+    
+    // Determine if ingredient is optional (from field OR parsed from notes)
+    final isOptional = ingredient.isOptional || parsedNotes.isOptional;
+    
+    // Get parsed alternative
+    final extractedAlt = parsedNotes.alternative;
+    
+    // Final notes text after removing optional/alt patterns
+    final notesText = parsedNotes.remainingNotes;
+    final hasNotes = notesText.isNotEmpty;
+
     return InkWell(
       onTap: () {
         setState(() {
@@ -237,7 +255,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 6),
 
-            // Ingredient content - vertical layout: name, amount, notes
+            // Ingredient content - vertical layout: name, amount, notes, alternative
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -258,7 +276,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         ),
                       ),
                       // Optional badge (compact)
-                      if (ingredient.isOptional) ...[
+                      if (isOptional) ...[
                         const SizedBox(width: 4),
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
@@ -289,16 +307,42 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                             : theme.colorScheme.onSurfaceVariant,
                       ),
                     ),
-                  // Preparation notes on its own line (if present)
-                  if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty)
+                  // Preparation/notes on its own line (if present)
+                  if (hasNotes)
                     Text(
-                      ingredient.preparation!,
+                      notesText,
                       style: TextStyle(
                         fontSize: widget.isCompact ? 10 : 11,
                         fontStyle: FontStyle.italic,
                         color: isChecked
                             ? theme.colorScheme.onSurface.withOpacity(0.4)
                             : theme.colorScheme.primary,
+                      ),
+                    ),
+                  // Alternative on its own line (if present)
+                  if (extractedAlt != null)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.primary.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            child: Text(
+                              'alt: $extractedAlt',
+                              style: TextStyle(
+                                fontSize: widget.isCompact ? 9 : 10,
+                                color: isChecked
+                                    ? theme.colorScheme.onSurface.withOpacity(0.4)
+                                    : theme.colorScheme.primary,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                 ],
@@ -705,6 +749,77 @@ class _StickyHeaderDelegate extends SliverPersistentHeaderDelegate {
 // ============================================================================
 // Helper functions (duplicated from ingredient_list.dart for isolation)
 // ============================================================================
+
+/// Result of parsing ingredient notes for special patterns
+class _ParsedNotes {
+  final bool isOptional;
+  final String? alternative;
+  final String remainingNotes;
+
+  _ParsedNotes({
+    required this.isOptional,
+    this.alternative,
+    required this.remainingNotes,
+  });
+}
+
+/// Parse notes text to extract optional markers and alternatives
+_ParsedNotes _parseNotes(String notes) {
+  if (notes.isEmpty) {
+    return _ParsedNotes(isOptional: false, remainingNotes: '');
+  }
+
+  var remaining = notes;
+  var isOptional = false;
+  String? alternative;
+
+  // Patterns for optional markers
+  final optionalPatterns = [
+    RegExp(r'\(optional\)', caseSensitive: false),
+    RegExp(r'\(opt\.?\)', caseSensitive: false),
+    RegExp(r'^optional$', caseSensitive: false),
+    RegExp(r'^opt\.?$', caseSensitive: false),
+    RegExp(r',?\s*optional\s*,?', caseSensitive: false),
+    RegExp(r',?\s*opt\.?\s*,?', caseSensitive: false),
+  ];
+
+  for (final pattern in optionalPatterns) {
+    if (pattern.hasMatch(remaining)) {
+      isOptional = true;
+      remaining = remaining.replaceAll(pattern, ' ').trim();
+    }
+  }
+
+  // Patterns for alternative ingredients
+  final altPatterns = [
+    RegExp(r',?\s*alt(?:ernative)?:\s*([^,;]+)', caseSensitive: false),
+    RegExp(r',?\s*sub(?:stitute)?:\s*([^,;]+)', caseSensitive: false),
+    RegExp(r',?\s*or\s+(?:use\s+)?([^,;]+)', caseSensitive: false),
+    RegExp(r'\(or\s+([^)]+)\)', caseSensitive: false),
+  ];
+
+  for (final pattern in altPatterns) {
+    final match = pattern.firstMatch(remaining);
+    if (match != null) {
+      alternative = match.group(1)?.trim();
+      remaining = remaining.replaceFirst(pattern, ' ').trim();
+      break;
+    }
+  }
+
+  // Clean up remaining text
+  remaining = remaining
+      .replaceAll(RegExp(r'^[\s·,;:\-–—]+'), '')
+      .replaceAll(RegExp(r'[\s·,;:\-–—]+$'), '')
+      .replaceAll(RegExp(r'\s{2,}'), ' ')
+      .trim();
+
+  return _ParsedNotes(
+    isOptional: isOptional,
+    alternative: alternative,
+    remainingNotes: remaining,
+  );
+}
 
 /// Format amount to clean up decimals and display fractions
 String _formatAmount(String amount) {
