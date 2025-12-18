@@ -52,8 +52,18 @@ class SplitModernistView extends StatelessWidget {
         ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
     
-    // Calculate split view height (85% of screen, clamped for usability)
-    final splitViewHeight = (screenHeight * 0.85).clamp(400.0, 900.0);
+    // Calculate max split view height (85% of screen, clamped for usability)
+    final maxSplitHeight = (screenHeight * 0.85).clamp(400.0, 900.0);
+    
+    // Estimate content height based on item counts to avoid dead space
+    // Ingredients: ~50px per item (name + amount + padding)
+    // Directions: ~70px per step (text wraps, step number, padding)
+    final ingredientHeight = recipe.ingredients.length * 50.0 + 80;
+    final directionsHeight = recipe.directions.length * 70.0 + 80;
+    final estimatedContentHeight = ingredientHeight > directionsHeight ? ingredientHeight : directionsHeight;
+    
+    // Use the smaller of estimated content or max height, with minimum for usability
+    final splitViewHeight = estimatedContentHeight.clamp(200.0, maxSplitHeight);
     
     // Check for extra content sections
     final hasNotes = recipe.notes != null && recipe.notes!.isNotEmpty;
