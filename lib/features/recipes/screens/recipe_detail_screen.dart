@@ -166,7 +166,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     // Check if side-by-side mode is enabled
     final useSideBySide = ref.watch(useSideBySideProvider);
     
-    if (useSideBySide) {
+    // DEBUG: Force side-by-side layout to test
+    // ignore: dead_code
+    if (true || useSideBySide) {
       return _buildSideBySideLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
     }
     
