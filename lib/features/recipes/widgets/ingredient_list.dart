@@ -380,20 +380,22 @@ class _IngredientListState extends State<IngredientList> {
                         ),
                       ),
 
-                      // Right side: Notes (right-justified on same line)
+                      // Right side: Notes (right-justified, wraps when needed)
                       if (hasNotes)
-                        Padding(
-                          padding: const EdgeInsets.only(left: 8),
-                          child: Text(
-                            notesText,
-                            style: textStyle?.copyWith(
-                              decoration: isChecked ? TextDecoration.lineThrough : null,
-                              color: isChecked
-                                  ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                  : theme.colorScheme.primary,
-                              fontStyle: FontStyle.italic,
+                        Flexible(
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 8),
+                            child: Text(
+                              notesText,
+                              style: textStyle?.copyWith(
+                                decoration: isChecked ? TextDecoration.lineThrough : null,
+                                color: isChecked
+                                    ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                    : theme.colorScheme.primary,
+                                fontStyle: FontStyle.italic,
+                              ),
+                              textAlign: TextAlign.end,
                             ),
-                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                     ],
