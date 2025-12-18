@@ -15,18 +15,19 @@ class MemoixSnackBar {
   static const Duration defaultDuration = Duration(seconds: 2);
 
   /// Duration for messages with action buttons (slightly longer to allow tap)
-  static const Duration actionDuration = Duration(seconds: 3);
+  static const Duration actionDuration = Duration(seconds: 4);
 
   /// Show a simple message SnackBar
   static void show(String message) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(message),
-          duration: defaultDuration,
-        ),
-      );
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(message),
+        duration: defaultDuration,
+      ),
+    );
   }
 
   /// Show a SnackBar with an action button
@@ -35,18 +36,20 @@ class MemoixSnackBar {
     required String actionLabel,
     required VoidCallback onAction,
   }) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(message),
-          duration: actionDuration,
-          action: SnackBarAction(
-            label: actionLabel,
-            onPressed: onAction,
-          ),
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(message),
+        duration: actionDuration,
+        showCloseIcon: false,
+        action: SnackBarAction(
+          label: actionLabel,
+          onPressed: onAction,
         ),
-      );
+      ),
+    );
   }
 
   /// Show a "logged cook" SnackBar with Stats action
@@ -55,18 +58,20 @@ class MemoixSnackBar {
     required String recipeName,
     required VoidCallback onViewStats,
   }) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text('Logged cook for $recipeName'),
-          duration: actionDuration,
-          action: SnackBarAction(
-            label: 'Stats',
-            onPressed: onViewStats,
-          ),
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text('Logged cook for $recipeName'),
+        duration: actionDuration,
+        showCloseIcon: false,
+        action: SnackBarAction(
+          label: 'Stats',
+          onPressed: onViewStats,
         ),
-      );
+      ),
+    );
   }
 
   /// Show a "saved" SnackBar with View action
@@ -77,42 +82,46 @@ class MemoixSnackBar {
     required VoidCallback onView,
     Duration? duration,
   }) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text('$itemName saved'),
-          duration: duration ?? actionDuration,
-          action: SnackBarAction(
-            label: actionLabel,
-            onPressed: onView,
-          ),
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text('$itemName saved'),
+        duration: duration ?? actionDuration,
+        showCloseIcon: false,
+        action: SnackBarAction(
+          label: actionLabel,
+          onPressed: onView,
         ),
-      );
+      ),
+    );
   }
 
   /// Show an error message
   static void showError(String message) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(message),
-          duration: actionDuration,
-        ),
-      );
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(message),
+        duration: actionDuration,
+      ),
+    );
   }
 
   /// Show a success message
   static void showSuccess(String message) {
-    rootScaffoldMessengerKey.currentState
-      ?..clearSnackBars()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(message),
-          duration: defaultDuration,
-        ),
-      );
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(message),
+        duration: defaultDuration,
+      ),
+    );
   }
 
   /// Clear any visible SnackBars

@@ -132,6 +132,7 @@ class MemoixTheme {
       // SnackBar theme - ensure consistent behavior
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
+        showCloseIcon: false,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
@@ -245,6 +246,7 @@ class MemoixTheme {
       // SnackBar theme - ensure consistent behavior
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
+        showCloseIcon: false,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
