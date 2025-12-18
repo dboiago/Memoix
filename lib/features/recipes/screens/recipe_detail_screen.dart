@@ -256,24 +256,38 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                         ),
 
                         // Row 2: Auto-Scaling Title
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                              recipe.name,
-                              style: theme.textTheme.headlineMedium?.copyWith(
-                                fontWeight: FontWeight.bold,
-                                fontSize: baseFontSize,
-                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
-                                shadows: hasHeaderImage
-                                    ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                    : null,
+                        // Use LayoutBuilder to get available width for proper FittedBox scaling
+                        LayoutBuilder(
+                          builder: (context, constraints) {
+                            final availableWidth = constraints.maxWidth - 32.0; // Account for horizontal padding
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                              child: SizedBox(
+                                width: availableWidth,
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: Alignment.centerLeft,
+                                  child: ConstrainedBox(
+                                    // Allow text to be up to 2x the container width before scaling kicks in
+                                    constraints: BoxConstraints(maxWidth: availableWidth * 2),
+                                    child: Text(
+                                      recipe.name,
+                                      style: theme.textTheme.headlineMedium?.copyWith(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: baseFontSize,
+                                        color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                                        shadows: hasHeaderImage
+                                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                            : null,
+                                      ),
+                                      maxLines: 1,
+                                      softWrap: false,
+                                    ),
+                                  ),
+                                ),
                               ),
-                              maxLines: 1,
-                            ),
-                          ),
+                            );
+                          },
                         ),
 
                         // Row 3: Compact metadata row
@@ -658,7 +672,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                       fit: BoxFit.scaleDown,
                       alignment: Alignment.centerLeft,
                       child: ConstrainedBox(
-                        constraints: BoxConstraints(maxWidth: availableWidth),
+                        // Allow text to measure at up to 3x container width before FittedBox scales it down
+                        constraints: BoxConstraints(maxWidth: availableWidth * 3),
                         child: Text(
                           recipe.name,
                           style: TextStyle(
