@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import '../../app/app.dart';
 
@@ -11,16 +12,34 @@ import '../../app/app.dart';
 class MemoixSnackBar {
   MemoixSnackBar._();
 
+  /// Active timer for auto-dismiss (cancelled when new snackbar shown)
+  static Timer? _dismissTimer;
+
   /// Default duration for simple messages
   static const Duration defaultDuration = Duration(seconds: 2);
 
   /// Duration for messages with action buttons (slightly longer to allow tap)
   static const Duration actionDuration = Duration(seconds: 4);
 
+  /// Cancel any pending dismiss timer
+  static void _cancelTimer() {
+    _dismissTimer?.cancel();
+    _dismissTimer = null;
+  }
+
+  /// Start auto-dismiss timer
+  static void _startDismissTimer(Duration duration) {
+    _cancelTimer();
+    _dismissTimer = Timer(duration, () {
+      rootScaffoldMessengerKey.currentState?.hideCurrentSnackBar();
+    });
+  }
+
   /// Show a simple message SnackBar
   static void show(String message) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
+    _cancelTimer();
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
@@ -38,6 +57,7 @@ class MemoixSnackBar {
   }) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
+    _cancelTimer();
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
@@ -46,10 +66,14 @@ class MemoixSnackBar {
         showCloseIcon: false,
         action: SnackBarAction(
           label: actionLabel,
-          onPressed: onAction,
+          onPressed: () {
+            _cancelTimer();
+            onAction();
+          },
         ),
       ),
     );
+    _startDismissTimer(actionDuration);
   }
 
   /// Show a "logged cook" SnackBar with Stats action
@@ -60,6 +84,7 @@ class MemoixSnackBar {
   }) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
+    _cancelTimer();
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
@@ -68,10 +93,14 @@ class MemoixSnackBar {
         showCloseIcon: false,
         action: SnackBarAction(
           label: 'Stats',
-          onPressed: onViewStats,
+          onPressed: () {
+            _cancelTimer();
+            onViewStats();
+          },
         ),
       ),
     );
+    _startDismissTimer(actionDuration);
   }
 
   /// Show a "saved" SnackBar with View action
@@ -84,24 +113,31 @@ class MemoixSnackBar {
   }) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
+    _cancelTimer();
     messenger.clearSnackBars();
+    final dur = duration ?? actionDuration;
     messenger.showSnackBar(
       SnackBar(
         content: Text('$itemName saved'),
-        duration: duration ?? actionDuration,
+        duration: dur,
         showCloseIcon: false,
         action: SnackBarAction(
           label: actionLabel,
-          onPressed: onView,
+          onPressed: () {
+            _cancelTimer();
+            onView();
+          },
         ),
       ),
     );
+    _startDismissTimer(dur);
   }
 
   /// Show an error message
   static void showError(String message) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
+    _cancelTimer();
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
@@ -115,6 +151,7 @@ class MemoixSnackBar {
   static void showSuccess(String message) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
+    _cancelTimer();
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
@@ -126,6 +163,7 @@ class MemoixSnackBar {
 
   /// Clear any visible SnackBars
   static void clear() {
+    _cancelTimer();
     rootScaffoldMessengerKey.currentState?.clearSnackBars();
   }
 }
