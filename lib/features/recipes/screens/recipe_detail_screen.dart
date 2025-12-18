@@ -164,11 +164,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final hasStepImages = recipe.stepImages.isNotEmpty;
     
     // Check if side-by-side mode is enabled
-    final useSideBySide = ref.watch(useSideBySideProvider);
+    // final useSideBySide = ref.watch(useSideBySideProvider);
     
-    if (useSideBySide) {
-      return _buildSideBySideLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
-    }
+    // if (useSideBySide) {
+    //   return _buildSideBySideLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
+    // }
     
     return _buildStandardLayout(context, recipe, theme, hasHeaderImage, headerImage, hasStepImages);
   }
