@@ -193,11 +193,13 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       body: Column(
         children: [
           // 1. THE RICH HEADER - Fixed at top, does not scroll
+          // DEBUG: Added bright magenta border to confirm this layout is active
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
               // Default solid color from theme
-              color: theme.colorScheme.primaryContainer,
+              color: Colors.cyan, // DEBUG: Changed to cyan to be obvious
+              border: Border.all(color: Colors.magenta, width: 4), // DEBUG border
               // Optional background image if user has set one
               image: hasHeaderImage
                   ? DecorationImage(
