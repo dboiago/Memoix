@@ -792,9 +792,11 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
     await repo.saveSandwich(sandwich);
 
     if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${sandwich.name} saved')),
-      );
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          SnackBar(content: Text('${sandwich.name} saved')),
+        );
       Navigator.of(context).pop();
     }
   }

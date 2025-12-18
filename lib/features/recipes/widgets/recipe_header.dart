@@ -285,7 +285,7 @@ class RecipeHeader extends StatelessWidget {
         if (recipe.serves != null && recipe.serves!.isNotEmpty)
           Chip(
             avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-            label: Text(_formatServes(recipe.serves!)),
+            label: Text(UnitNormalizer.normalizeServes(recipe.serves!)),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(
               color: theme.colorScheme.onSurface,
@@ -445,28 +445,6 @@ class RecipeHeader extends StatelessWidget {
       maxLines: 1,
       overflow: TextOverflow.ellipsis,
     );
-  }
-
-  /// Format serves to just show the number.
-  String _formatServes(String serves) {
-    var result = serves
-        .replaceAll(RegExp(r'\bserves?\b', caseSensitive: false), '')
-        .replaceAll(RegExp(r'\bpeople\b', caseSensitive: false), '')
-        .replaceAll(RegExp(r'\bpersons?\b', caseSensitive: false), '')
-        .replaceAll(RegExp(r'\bportions?\b', caseSensitive: false), '')
-        .replaceAll(RegExp(r'\bservings?\b', caseSensitive: false), '')
-        .trim();
-
-    // Remove .0 decimals
-    result = result.replaceAllMapped(
-      RegExp(r'(\d+)\.0(?=\D|$)'),
-      (match) => match.group(1)!,
-    );
-
-    // Remove leading colons
-    result = result.replaceFirst(RegExp(r'^:+\s*'), '');
-
-    return result.trim();
   }
 
   /// Capitalize each word in a string (except common lowercase words).

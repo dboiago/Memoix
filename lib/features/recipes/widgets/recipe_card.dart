@@ -8,20 +8,6 @@ import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colors.dart';
 
-/// Format serves to remove unnecessary decimals (e.g., "6.0" -> "6")
-String _formatServes(String serves) {
-  // Try to parse as number and remove .0 suffix
-  final trimmed = serves.trim();
-  if (trimmed.endsWith('.0')) {
-    return trimmed.substring(0, trimmed.length - 2);
-  }
-  // Handle multiple decimals like "2.0-4.0" -> "2-4"
-  return trimmed.replaceAllMapped(
-    RegExp(r'(\d+)\.0(?=\D|$)'),
-    (match) => match.group(1)!,
-  );
-}
-
 /// Recipe card matching Figma design
 class RecipeCard extends ConsumerStatefulWidget {
   final Recipe recipe;
@@ -186,7 +172,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              _formatServes(widget.recipe.serves!),
+                              UnitNormalizer.normalizeServes(widget.recipe.serves!),
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),

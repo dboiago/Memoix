@@ -1522,21 +1522,34 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     if (mounted) {
       Navigator.of(context).popUntil((route) => route.isFirst);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: GestureDetector(
-            behavior: HitTestBehavior.opaque,
-            onTap: () {
-              ScaffoldMessenger.of(context).hideCurrentSnackBar();
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: detailScreenBuilder),
-              );
-            },
-            child: Text('Saved: $savedName'),
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          SnackBar(
+            content: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () {
+                ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: detailScreenBuilder),
+                );
+              },
+              child: Row(
+                children: [
+                  Expanded(child: Text('Saved: $savedName')),
+                  const Text(
+                    'View',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            duration: const Duration(seconds: 4),
           ),
-          duration: const Duration(seconds: 4),
-        ),
-      );
+        );
     }
   }
 }

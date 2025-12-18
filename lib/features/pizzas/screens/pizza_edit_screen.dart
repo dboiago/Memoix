@@ -877,9 +877,11 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     await repo.savePizza(pizza);
 
     if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${pizza.name} saved')),
-      );
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          SnackBar(content: Text('${pizza.name} saved')),
+        );
       Navigator.of(context).pop();
     }
   }

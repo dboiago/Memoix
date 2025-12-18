@@ -35,35 +35,6 @@ String _capitalizeWords(String text) {
   }).join(' ');
 }
 
-/// Format serves to just show the number (e.g., "6 people" -> "6", "Serves 4" -> "4")
-String _formatServes(String serves) {
-  // First strip common words
-  var result = serves
-      .replaceAll(RegExp(r'\bserves?\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bpeople\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bpersons?\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bportions?\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bservings?\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bdrinks?\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bglasses?\b', caseSensitive: false), '')
-      .replaceAll(RegExp(r'\bcups?\b', caseSensitive: false), '')
-      .trim();
-  
-  // Remove leading colons or other punctuation (e.g., ":1" -> "1")
-  result = result.replaceAll(RegExp(r'^[:\s]+'), '');
-  
-  // Remove trailing colons or punctuation
-  result = result.replaceAll(RegExp(r'[:\s]+$'), '');
-  
-  // Remove .0 decimals
-  result = result.replaceAllMapped(
-    RegExp(r'(\d+)\.0(?=\D|$)'),
-    (match) => match.group(1)!,
-  );
-  
-  return result.trim();
-}
-
 /// Get the Material icon for a course category slug
 IconData _iconForCourse(String course) {
   switch (course.toLowerCase()) {
@@ -292,7 +263,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               children: [
                 Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
                 const SizedBox(width: 3),
-                Text(_formatServes(recipe.serves!)),
+                Text(UnitNormalizer.normalizeServes(recipe.serves!)),
               ],
             ),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,

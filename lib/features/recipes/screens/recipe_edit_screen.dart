@@ -1499,25 +1499,46 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       final repository = ref.read(recipeRepositoryProvider);
       await repository.saveRecipe(recipe);
       final savedId = recipe.uuid;
+      final recipeName = recipe.name;
 
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${recipe.name} saved'),
-            action: SnackBarAction(
-              label: 'Recipe',
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => RecipeDetailScreen(recipeId: savedId),
-                  ),
-                );
-              },
-            ),
-            duration: const Duration(seconds: 4),
-          ),
-        );
+        // Pop first, then show snackbar on parent screen
         Navigator.of(context).pop();
+        
+        // Use a post-frame callback to ensure we're on the parent screen
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (!mounted) return;
+          ScaffoldMessenger.of(context)
+            ..clearSnackBars()
+            ..showSnackBar(
+              SnackBar(
+                content: GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: () {
+                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => RecipeDetailScreen(recipeId: savedId),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    children: [
+                      Expanded(child: Text('$recipeName saved')),
+                      const Text(
+                        'View',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                duration: const Duration(seconds: 4),
+              ),
+            );
+        });
       }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(

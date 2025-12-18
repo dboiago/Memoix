@@ -509,9 +509,11 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
     await repo.saveEntry(entry);
 
     if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${entry.name} saved')),
-      );
+      ScaffoldMessenger.of(context)
+        ..clearSnackBars()
+        ..showSnackBar(
+          SnackBar(content: Text('${entry.name} saved')),
+        );
       Navigator.of(context).pop();
     }
   }
