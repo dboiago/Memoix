@@ -20,6 +20,20 @@ import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
 
+/// Capitalize the first letter of each word in a string
+String _capitalizeWords(String text) {
+  if (text.isEmpty) return text;
+  return text.split(' ').map((word) {
+    if (word.isEmpty) return word;
+    final lower = word.toLowerCase();
+    // Don't capitalize common lowercase words in the middle
+    if (lower == 'of' || lower == 'and' || lower == 'or' || lower == 'the' || lower == 'a' || lower == 'an' || lower == 'to' || lower == 'for' || lower == 'with') {
+      return lower;
+    }
+    return word[0].toUpperCase() + word.substring(1).toLowerCase();
+  }).join(' ');
+}
+
 /// Format serves to just show the number (e.g., "6 people" -> "6", "Serves 4" -> "4")
 String _formatServes(String serves) {
   // First strip common words
@@ -917,7 +931,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                               ),
                               const SizedBox(height: 4),
                               Chip(
-                                label: Text(recipe.glass!),
+                                label: Text(_capitalizeWords(recipe.glass!)),
                                 backgroundColor: theme.colorScheme.surfaceContainerHighest,
                                 labelStyle: TextStyle(
                                   color: theme.colorScheme.onSurface,
@@ -946,7 +960,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                   spacing: 8,
                                   runSpacing: 4,
                                   children: recipe.garnish.map((item) => Chip(
-                                    label: Text(item),
+                                    label: Text(_capitalizeWords(item)),
                                     backgroundColor: theme.colorScheme.surfaceContainerHighest,
                                     labelStyle: TextStyle(
                                       color: theme.colorScheme.onSurface,

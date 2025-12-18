@@ -244,13 +244,17 @@ class UnitNormalizer {
   static String normalizeServes(String? serves) {
     if (serves == null || serves.isEmpty) return '';
     
+    // Remove leading colons and whitespace
+    var cleaned = serves.trim();
+    cleaned = cleaned.replaceAll(RegExp(r'^[:\s]+'), '');
+    
     // Extract just the number(s)
-    final match = RegExp(r'(\d+(?:\s*[-–]\s*\d+)?)').firstMatch(serves);
+    final match = RegExp(r'(\d+(?:\s*[-–]\s*\d+)?)').firstMatch(cleaned);
     if (match != null) {
       return match.group(1)!.replaceAll(RegExp(r'\s+'), '');
     }
     
-    return serves.trim();
+    return cleaned.trim();
   }
 
   /// Normalize temperature string to include degree symbol

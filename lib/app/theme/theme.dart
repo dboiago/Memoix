@@ -35,7 +35,7 @@ class MemoixTheme {
         onSurface: lightPrimaryText,
         surfaceContainerHighest: Color(0xFFF0EFED), // neutral light gray (not warm accent)
         onSurfaceVariant: lightMuted, // #9ca3af grey for subtle text
-        error: Color(0xFFDC2626),
+        error: lightAccent1, // Use secondary color instead of red for errors
         onError: Colors.white,
         outline: lightMuted,
       ),
@@ -141,7 +141,7 @@ class MemoixTheme {
         onSurface: darkPrimaryText,
         surfaceContainerHighest: Color(0xFF2D2D2D), // muted/accent bg
         onSurfaceVariant: darkMuted, // #9b9b9b grey for subtle text
-        error: Color(0xFFEF4444),
+        error: darkAccent1, // Use secondary color instead of red for errors
         onError: darkBackground,
         outline: darkMuted,
       ),

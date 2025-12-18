@@ -50,8 +50,52 @@ class SplitRecipeView extends StatelessWidget {
         ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
+    // Check if this is a drink with glass/garnish info
+    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+    final hasGlassOrGarnish = isDrink && 
+        ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty);
+
     return Column(
       children: [
+        // Glass and Garnish chips for drinks (above column headers)
+        if (hasGlassOrGarnish)
+          Container(
+            color: theme.colorScheme.surface,
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 6),
+            child: Wrap(
+              spacing: 8,
+              runSpacing: 4,
+              children: [
+                // Glass chip
+                if (recipe.glass != null && recipe.glass!.isNotEmpty)
+                  Chip(
+                    avatar: Icon(Icons.local_bar, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
+                    label: Text(_capitalizeWords(recipe.glass!)),
+                    backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                    labelStyle: TextStyle(
+                      color: theme.colorScheme.onSurface,
+                      fontSize: isCompact ? 11 : 12,
+                    ),
+                    visualDensity: VisualDensity.compact,
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    padding: EdgeInsets.zero,
+                  ),
+                // Garnish chips
+                ...recipe.garnish.map((item) => Chip(
+                  avatar: Icon(Icons.eco, size: isCompact ? 14 : 16, color: theme.colorScheme.onSurface),
+                  label: Text(_capitalizeWords(item)),
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                  labelStyle: TextStyle(
+                    color: theme.colorScheme.onSurface,
+                    fontSize: isCompact ? 11 : 12,
+                  ),
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  padding: EdgeInsets.zero,
+                )),
+              ],
+            ),
+          ),
         // Fixed header row - not scrollable
         Container(
           color: theme.colorScheme.surface,

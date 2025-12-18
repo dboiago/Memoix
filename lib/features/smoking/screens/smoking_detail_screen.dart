@@ -768,7 +768,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       );
     }
     
-    // For Recipe type: show full ingredients list
+    // For Recipe type: show full ingredients list with checkboxes
     if (recipe.ingredients.isEmpty) {
       return Text(
         'No ingredients',
@@ -778,32 +778,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       );
     }
     
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: recipe.ingredients.map((i) => Padding(
-        padding: const EdgeInsets.only(bottom: 8),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              width: 6,
-              height: 6,
-              margin: const EdgeInsets.only(top: 6, right: 12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.secondary,
-                shape: BoxShape.circle,
-              ),
-            ),
-            Expanded(
-              child: Text(
-                i.displayText,
-                style: theme.textTheme.bodyMedium,
-              ),
-            ),
-          ],
-        ),
-      )).toList(),
-    );
+    return _SmokingIngredientsList(ingredients: recipe.ingredients);
   }
 
   Widget _buildDirectionsList(BuildContext context, SmokingRecipe recipe) {
@@ -1286,6 +1261,136 @@ class _SmokingIngredientListState extends State<_SmokingIngredientList> {
                           ? theme.colorScheme.onSurface.withOpacity(0.5)
                           : null,
                     ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
+}
+/// Stateful widget for smoking ingredients with checkboxes
+class _SmokingIngredientsList extends StatefulWidget {
+  final List<SmokingSeasoning> ingredients;
+  
+  const _SmokingIngredientsList({required this.ingredients});
+  
+  @override
+  State<_SmokingIngredientsList> createState() => _SmokingIngredientsListState();
+}
+
+class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
+  final Set<int> _checkedItems = {};
+  
+  /// Capitalize the first letter of each word
+  String _capitalizeWords(String text) {
+    if (text.isEmpty) return text;
+    return text.split(' ').map((word) {
+      if (word.isEmpty) return word;
+      final lower = word.toLowerCase();
+      if (lower == 'of' || lower == 'and' || lower == 'or' || lower == 'the' || lower == 'a' || lower == 'an' || lower == 'to' || lower == 'for') {
+        return lower;
+      }
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
+  }
+  
+  /// Format amount to clean up decimals
+  String _formatAmount(String amount) {
+    var result = amount.trim();
+    // Remove trailing .0 from whole numbers
+    result = result.replaceAllMapped(
+      RegExp(r'(\d+)\.0(?=\s|$|-|–)'),
+      (match) => match.group(1)!,
+    );
+    if (result.endsWith('.0')) {
+      result = result.substring(0, result.length - 2);
+    }
+    return result;
+  }
+  
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: widget.ingredients.asMap().entries.map((entry) {
+        final index = entry.key;
+        final ingredient = entry.value;
+        final isChecked = _checkedItems.contains(index);
+        
+        // Build amount string
+        String amountText = '';
+        if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
+          amountText = _formatAmount(ingredient.amount!);
+          if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
+            amountText += ' ${ingredient.unit}';
+          }
+        }
+        
+        return InkWell(
+          onTap: () {
+            setState(() {
+              if (isChecked) {
+                _checkedItems.remove(index);
+              } else {
+                _checkedItems.add(index);
+              }
+            });
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: Checkbox(
+                    value: isChecked,
+                    onChanged: (value) {
+                      setState(() {
+                        if (value == true) {
+                          _checkedItems.add(index);
+                        } else {
+                          _checkedItems.remove(index);
+                        }
+                      });
+                    },
+                    visualDensity: VisualDensity.compact,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Ingredient name
+                      Text(
+                        _capitalizeWords(ingredient.name),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          decoration: isChecked ? TextDecoration.lineThrough : null,
+                          color: isChecked
+                              ? theme.colorScheme.onSurface.withOpacity(0.5)
+                              : null,
+                        ),
+                      ),
+                      // Amount
+                      if (amountText.isNotEmpty)
+                        Text(
+                          amountText,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            decoration: isChecked ? TextDecoration.lineThrough : null,
+                            color: isChecked
+                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                : theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                    ],
                   ),
                 ),
               ],
