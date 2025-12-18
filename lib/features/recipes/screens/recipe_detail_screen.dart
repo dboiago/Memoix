@@ -256,38 +256,24 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                         ),
 
                         // Row 2: Auto-Scaling Title
-                        // Use LayoutBuilder to get available width for proper FittedBox scaling
-                        LayoutBuilder(
-                          builder: (context, constraints) {
-                            final availableWidth = constraints.maxWidth - 32.0; // Account for horizontal padding
-                            return Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                              child: SizedBox(
-                                width: availableWidth,
-                                child: FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  alignment: Alignment.centerLeft,
-                                  child: ConstrainedBox(
-                                    // Allow text to be up to 2x the container width before scaling kicks in
-                                    constraints: BoxConstraints(maxWidth: availableWidth * 2),
-                                    child: Text(
-                                      recipe.name,
-                                      style: theme.textTheme.headlineMedium?.copyWith(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: baseFontSize,
-                                        color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
-                                        shadows: hasHeaderImage
-                                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                            : null,
-                                      ),
-                                      maxLines: 1,
-                                      softWrap: false,
-                                    ),
-                                  ),
-                                ),
+                        // FittedBox scales down the text to fit available width
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              recipe.name,
+                              style: theme.textTheme.headlineMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                fontSize: baseFontSize,
+                                color: hasHeaderImage ? Colors.white : theme.colorScheme.onPrimaryContainer,
+                                shadows: hasHeaderImage
+                                    ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                    : null,
                               ),
-                            );
-                          },
+                            ),
+                          ),
                         ),
 
                         // Row 3: Compact metadata row
@@ -657,38 +643,26 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 // Interpolate font size
                 final fontSize = expandedFontSize - (expandedFontSize - collapsedFontSize) * collapseRatio;
                 
-                // Calculate available width for title (accounting for back button and actions)
-                final availableWidth = screenWidth - 56 - 100 - 16; // start padding, end padding, extra margin
-                
                 return FlexibleSpaceBar(
                   titlePadding: EdgeInsetsDirectional.only(
                     start: 56,
                     bottom: 12,
                     end: 100,
                   ),
-                  title: SizedBox(
-                    width: availableWidth,
-                    child: FittedBox(
-                      fit: BoxFit.scaleDown,
-                      alignment: Alignment.centerLeft,
-                      child: ConstrainedBox(
-                        // Allow text to measure at up to 3x container width before FittedBox scales it down
-                        constraints: BoxConstraints(maxWidth: availableWidth * 3),
-                        child: Text(
-                          recipe.name,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: fontSize,
-                            color: hasHeaderImage || collapseRatio < 0.7 
-                                ? Colors.white 
-                                : theme.colorScheme.onSurface,
-                            shadows: hasHeaderImage && collapseRatio < 0.7
-                                ? [const Shadow(blurRadius: 4, color: Colors.black54)]
-                                : null,
-                          ),
-                          maxLines: 1,
-                          softWrap: false,
-                        ),
+                  title: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      recipe.name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: fontSize,
+                        color: hasHeaderImage || collapseRatio < 0.7 
+                            ? Colors.white 
+                            : theme.colorScheme.onSurface,
+                        shadows: hasHeaderImage && collapseRatio < 0.7
+                            ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                            : null,
                       ),
                     ),
                   ),
