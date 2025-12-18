@@ -11,6 +11,7 @@ import '../../../core/utils/unit_normalizer.dart';
 import '../models/category.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
+import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import '../widgets/ingredient_list.dart';
 import '../widgets/direction_list.dart';
@@ -456,7 +457,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               if (recipe.time != null && recipe.time!.isNotEmpty)
                 Chip(
                   avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-                  label: Text(recipe.time!),
+                  label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
                   backgroundColor: theme.colorScheme.surfaceContainerHighest,
                   labelStyle: TextStyle(fontSize: chipFontSize),
                   visualDensity: VisualDensity.compact,
@@ -490,22 +491,68 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final textColor = overrideColor ?? theme.colorScheme.onSurfaceVariant;
     final metadataItems = <InlineSpan>[];
     
-    // Add cuisine with colored dot (using same method as recipe card)
-    if (recipe.cuisine != null) {
-      final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
-      metadataItems.add(WidgetSpan(
-        alignment: PlaceholderAlignment.middle,
-        child: Container(
-          width: 8,
-          height: 8,
-          margin: const EdgeInsets.only(right: 4),
-          decoration: BoxDecoration(
-            color: cuisineColor,
-            shape: BoxShape.circle,
+    // Check if this is a drink (course == 'drinks')
+    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+    
+    if (isDrink) {
+      // For drinks: show spirit dot + "Spirit (Cuisine)" like list view
+      if (recipe.subcategory != null && recipe.subcategory!.isNotEmpty) {
+        final spiritColor = MemoixColors.forSpiritDot(recipe.subcategory);
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.only(right: 4),
+            decoration: BoxDecoration(
+              color: spiritColor,
+              shape: BoxShape.circle,
+            ),
           ),
-        ),
-      ));
-      metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+        ));
+        // Display spirit with optional cuisine origin
+        final spirit = Spirit.toDisplayName(recipe.subcategory!);
+        if (recipe.cuisine != null && recipe.cuisine!.isNotEmpty) {
+          final cuisineAdj = Cuisine.toAdjective(recipe.cuisine);
+          metadataItems.add(TextSpan(text: '$spirit ($cuisineAdj)'));
+        } else {
+          metadataItems.add(TextSpan(text: spirit));
+        }
+      } else if (recipe.cuisine != null) {
+        // Fallback to cuisine for drinks without spirit
+        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.only(right: 4),
+            decoration: BoxDecoration(
+              color: cuisineColor,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ));
+        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+      }
+    } else {
+      // For food recipes: show cuisine dot with cuisine name
+      if (recipe.cuisine != null) {
+        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
+        metadataItems.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.only(right: 4),
+            decoration: BoxDecoration(
+              color: cuisineColor,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ));
+        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+      }
     }
     
     // Add serves (normalized to just number with icon)
@@ -810,7 +857,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                       if (recipe.time != null && recipe.time!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.timer, size: MediaQuery.of(context).size.width < 600 ? 14 : 16, color: theme.colorScheme.onSurface),
-                          label: Text(recipe.time!),
+                          label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           labelStyle: TextStyle(
                             color: theme.colorScheme.onSurface,

@@ -725,7 +725,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           if (recipe.serves != null && recipe.serves!.isNotEmpty)
             Chip(
               avatar: Icon(Icons.people_outline, size: 16, color: theme.colorScheme.onSurface),
-              label: Text('Serves ${recipe.serves}'),
+              label: Text(UnitNormalizer.normalizeServes(recipe.serves!)),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
@@ -733,7 +733,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           if (recipe.time.isNotEmpty)
             Chip(
               avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(recipe.time),
+              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,

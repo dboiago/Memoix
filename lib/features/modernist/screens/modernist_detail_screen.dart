@@ -577,7 +577,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                       if (recipe.serves != null && recipe.serves!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.people, size: 16, color: theme.colorScheme.onSurface),
-                          label: Text(recipe.serves!),
+                          label: Text(UnitNormalizer.normalizeServes(recipe.serves!)),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
@@ -585,7 +585,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                       if (recipe.time != null && recipe.time!.isNotEmpty)
                         Chip(
                           avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-                          label: Text(recipe.time!),
+                          label: Text(UnitNormalizer.normalizeTime(recipe.time!)),
                           backgroundColor: theme.colorScheme.surfaceContainerHighest,
                           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                           visualDensity: VisualDensity.compact,
