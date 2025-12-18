@@ -370,16 +370,11 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
     }
     
     // Add nutrition section if present
-    if (recipe != null && recipe.nutrition != null && recipe.nutrition!.isNotEmpty) {
+    if (recipe != null && recipe.nutrition != null && recipe.nutrition!.hasData) {
       items.add(const SizedBox(height: 24));
       items.add(_buildSectionHeader(theme, 'Nutrition'));
       items.add(const SizedBox(height: 8));
-      items.add(Text(
-        recipe.nutrition!,
-        style: theme.textTheme.bodyMedium?.copyWith(
-          color: theme.colorScheme.onSurfaceVariant,
-        ),
-      ));
+      items.add(_buildNutritionDisplay(recipe.nutrition!, theme));
     }
     
     // Add step images gallery if present
@@ -404,6 +399,23 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
       style: (widget.isCompact ? theme.textTheme.titleSmall : theme.textTheme.titleMedium)?.copyWith(
         fontWeight: FontWeight.bold,
         color: theme.colorScheme.primary,
+      ),
+    );
+  }
+
+  Widget _buildNutritionDisplay(NutritionInfo nutrition, ThemeData theme) {
+    final items = <String>[];
+    if (nutrition.calories != null) items.add('${nutrition.calories} cal');
+    if (nutrition.proteinContent != null) items.add('${nutrition.proteinContent}g protein');
+    if (nutrition.carbohydrateContent != null) items.add('${nutrition.carbohydrateContent}g carbs');
+    if (nutrition.fatContent != null) items.add('${nutrition.fatContent}g fat');
+    if (nutrition.fiberContent != null) items.add('${nutrition.fiberContent}g fiber');
+    if (nutrition.sodiumContent != null) items.add('${nutrition.sodiumContent}mg sodium');
+    
+    return Text(
+      items.join(' • '),
+      style: theme.textTheme.bodyMedium?.copyWith(
+        color: theme.colorScheme.onSurfaceVariant,
       ),
     );
   }

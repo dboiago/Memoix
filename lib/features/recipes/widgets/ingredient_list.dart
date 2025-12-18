@@ -295,123 +295,126 @@ class _IngredientListState extends State<IngredientList> {
             ),
             SizedBox(width: widget.isCompact ? 4 : 8),
 
-            // Main content - Column layout for proper wrapping on small screens
+            // Main content - Row layout: ingredients left, notes right-aligned
             Expanded(
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Top row: name, amount, and badges (wraps when needed)
-                  Wrap(
-                    spacing: widget.isCompact ? 4 : 8,
-                    runSpacing: 4,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      // Ingredient name
-                      Text(
-                        _capitalizeWords(ingredient.name),
-                        style: textStyle?.copyWith(
-                          decoration: isChecked ? TextDecoration.lineThrough : null,
-                          color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
-                              : null,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      
-                      // Amount
-                      if (amountText.isNotEmpty)
+                  // Left side: name, amount, and badges (wraps when needed)
+                  Expanded(
+                    child: Wrap(
+                      spacing: widget.isCompact ? 4 : 8,
+                      runSpacing: 4,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        // Ingredient name
                         Text(
-                          amountText,
+                          _capitalizeWords(ingredient.name),
                           style: textStyle?.copyWith(
                             decoration: isChecked ? TextDecoration.lineThrough : null,
                             color: isChecked
                                 ? theme.colorScheme.onSurface.withOpacity(0.5)
-                                : theme.colorScheme.onSurfaceVariant,
+                                : null,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
+                        
+                        // Amount
+                        if (amountText.isNotEmpty)
+                          Text(
+                            amountText,
+                            style: textStyle?.copyWith(
+                              decoration: isChecked ? TextDecoration.lineThrough : null,
+                              color: isChecked
+                                  ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                  : theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
 
-                      // Baker's percentage badge
-                      if (hasBakerPercent)
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.secondary.withOpacity(0.15),
-                            borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: theme.colorScheme.secondary,
-                              width: 1,
+                        // Baker's percentage badge
+                        if (hasBakerPercent)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.secondary.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: theme.colorScheme.secondary,
+                                width: 1,
+                              ),
+                            ),
+                            child: Text(
+                              ingredient.bakerPercent!,
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: theme.colorScheme.secondary,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ),
-                          child: Text(
-                            ingredient.bakerPercent!,
-                            style: theme.textTheme.labelSmall?.copyWith(
-                              color: theme.colorScheme.secondary,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
 
-                      // Optional badge (from field or parsed from notes)
-                      if (isOptional)
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.secondary.withOpacity(0.15),
-                            borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: theme.colorScheme.secondary,
-                              width: 1,
+                        // Optional badge (from field or parsed from notes)
+                        if (isOptional)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.secondary.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: theme.colorScheme.secondary,
+                                width: 1,
+                              ),
+                            ),
+                            child: Text(
+                              'optional',
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: theme.colorScheme.secondary,
+                                fontStyle: FontStyle.italic,
+                              ),
                             ),
                           ),
-                          child: Text(
-                            'optional',
-                            style: theme.textTheme.labelSmall?.copyWith(
-                              color: theme.colorScheme.secondary,
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ),
 
-                      // Alternative chip (parsed from notes)
-                      if (extractedAlt != null)
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.primary.withOpacity(0.15),
-                            borderRadius: BorderRadius.circular(4),
-                            border: Border.all(
-                              color: theme.colorScheme.primary,
-                              width: 1,
+                        // Alternative chip (parsed from notes)
+                        if (extractedAlt != null)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: theme.colorScheme.primary.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: theme.colorScheme.primary,
+                                width: 1,
+                              ),
+                            ),
+                            child: Text(
+                              'alt: $extractedAlt',
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: theme.colorScheme.primary,
+                                fontStyle: FontStyle.italic,
+                              ),
                             ),
                           ),
-                          child: Text(
-                            'alt: $extractedAlt',
-                            style: theme.textTheme.labelSmall?.copyWith(
-                              color: theme.colorScheme.primary,
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ),
-                    ],
+                      ],
+                    ),
                   ),
 
-                  // Notes on separate line, right-aligned
-                  if (hasNotes) ...[
-                    const SizedBox(height: 2),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        notesText,
-                        style: textStyle?.copyWith(
-                          decoration: isChecked ? TextDecoration.lineThrough : null,
-                          color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
-                              : theme.colorScheme.primary,
-                          fontStyle: FontStyle.italic,
+                  // Right side: Notes (right-aligned on same line)
+                  if (hasNotes)
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Text(
+                          notesText,
+                          textAlign: TextAlign.right,
+                          style: textStyle?.copyWith(
+                            decoration: isChecked ? TextDecoration.lineThrough : null,
+                            color: isChecked
+                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                : theme.colorScheme.primary,
+                            fontStyle: FontStyle.italic,
+                          ),
                         ),
                       ),
                     ),
-                  ],
                 ],
               ),
             ),
