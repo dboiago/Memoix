@@ -160,7 +160,7 @@ class MemoixHeader extends StatelessWidget {
     final layerColor = theme.colorScheme.secondary.withOpacity(isDark ? 0.4 : 0.5);
     
     // Stroke color: subtle charcoal stroke for definition (light mode only)
-    final strokeColor = isDark ? Colors.transparent : const Color(0xFF4B5563).withOpacity(0.22);
+    final strokeColor = isDark ? Colors.transparent : const Color(0xFF4B5563).withOpacity(0.5);
 
     final textStyle = TextStyle(
       fontWeight: FontWeight.w600,
@@ -185,7 +185,7 @@ class MemoixHeader extends StatelessWidget {
             style: textStyle.copyWith(
               foreground: Paint()
                 ..style = PaintingStyle.stroke
-                ..strokeWidth = 2.0
+                ..strokeWidth = 0.75
                 ..color = strokeColor,
             ),
           ),
