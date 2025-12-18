@@ -44,7 +44,16 @@ String _formatServes(String serves) {
       .replaceAll(RegExp(r'\bpersons?\b', caseSensitive: false), '')
       .replaceAll(RegExp(r'\bportions?\b', caseSensitive: false), '')
       .replaceAll(RegExp(r'\bservings?\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bdrinks?\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bglasses?\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bcups?\b', caseSensitive: false), '')
       .trim();
+  
+  // Remove leading colons or other punctuation (e.g., ":1" -> "1")
+  result = result.replaceAll(RegExp(r'^[:\s]+'), '');
+  
+  // Remove trailing colons or punctuation
+  result = result.replaceAll(RegExp(r'[:\s]+$'), '');
   
   // Remove .0 decimals
   result = result.replaceAllMapped(
@@ -285,6 +294,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               color: theme.colorScheme.onSurface,
               fontSize: chipFontSize,
             ),
+            labelPadding: const EdgeInsets.only(left: 2, right: 4),
             visualDensity: VisualDensity.compact,
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,
@@ -299,6 +309,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               color: theme.colorScheme.onSurface,
               fontSize: chipFontSize,
             ),
+            labelPadding: const EdgeInsets.only(left: 2, right: 4),
             visualDensity: VisualDensity.compact,
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,

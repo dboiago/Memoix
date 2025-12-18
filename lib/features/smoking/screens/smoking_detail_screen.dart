@@ -99,7 +99,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
 
           // Compact metadata row (below header)
           Container(
-            color: theme.colorScheme.surface,
+            color: Colors.transparent,
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             width: double.infinity,
             child: _buildCompactMetadataRow(recipe, theme),
