@@ -285,9 +285,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: baseFontSize,
-                                      color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
+                                      color: hasHeaderImage 
+                                          ? theme.colorScheme.onSurfaceVariant 
+                                          : theme.colorScheme.onSurface,
                                       shadows: hasHeaderImage
-                                          ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                          ? [Shadow(blurRadius: 4, color: theme.colorScheme.surface.withOpacity(0.7))]
                                           : null,
                                     ),
                                   ),
@@ -303,7 +305,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           child: _buildCompactMetadataRow(
                             recipe,
                             theme,
-                            overrideColor: hasHeaderImage ? Colors.white70 : null,
+                            overrideColor: hasHeaderImage ? theme.colorScheme.onSurfaceVariant : null,
                           ),
                         ),
 
@@ -727,11 +729,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             style: theme.textTheme.titleLarge?.copyWith(
                               fontWeight: FontWeight.bold,
                               fontSize: fontSize,
-                              color: hasHeaderImage || collapseRatio < 0.7 
-                                  ? Colors.white 
+                              color: hasHeaderImage && collapseRatio < 0.7 
+                                  ? theme.colorScheme.onSurfaceVariant 
                                   : theme.colorScheme.onSurface,
                               shadows: hasHeaderImage && collapseRatio < 0.7
-                                  ? [const Shadow(blurRadius: 4, color: Colors.black54)]
+                                  ? [Shadow(blurRadius: 4, color: theme.colorScheme.surface.withOpacity(0.7))]
                                   : null,
                             ),
                           ),
