@@ -252,4 +252,38 @@ class UnitNormalizer {
     
     return serves.trim();
   }
+
+  /// Normalize temperature string to include degree symbol
+  /// Handles various formats: "225", "225F", "225 F", "225°F", "107C", etc.
+  static String normalizeTemperature(String? temp) {
+    if (temp == null || temp.isEmpty) return '';
+    
+    final trimmed = temp.trim();
+    
+    // Already has degree symbol - return as-is
+    if (trimmed.contains('°')) return trimmed;
+    
+    // Match number optionally followed by F/C
+    final match = RegExp(r'^(\d+(?:-\d+)?)\s*([FfCc])?$').firstMatch(trimmed);
+    if (match != null) {
+      final number = match.group(1)!;
+      final unit = match.group(2)?.toUpperCase() ?? '';
+      return '$number°$unit'.trimRight();
+    }
+    
+    // If it ends with a letter (F/C), insert degree symbol
+    final unitMatch = RegExp(r'^(.+?)\s*([FfCc])$').firstMatch(trimmed);
+    if (unitMatch != null) {
+      final value = unitMatch.group(1)!.trim();
+      final unit = unitMatch.group(2)!.toUpperCase();
+      return '$value°$unit';
+    }
+    
+    // Just a number - add degree symbol
+    if (RegExp(r'^\d+(?:-\d+)?$').hasMatch(trimmed)) {
+      return '$trimmed°';
+    }
+    
+    return trimmed;
+  }
 }

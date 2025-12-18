@@ -263,8 +263,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       metadataItems.add(TextSpan(text: ' ${recipe.wood}'));
     }
     
-    // Add temperature
+    // Add temperature (normalized with degree symbol)
     if (recipe.temperature.isNotEmpty) {
+      final normalizedTemp = UnitNormalizer.normalizeTemperature(recipe.temperature);
       if (metadataItems.isNotEmpty) {
         metadataItems.add(const TextSpan(text: '   '));
       }
@@ -272,7 +273,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.thermostat_outlined, size: 12, color: iconColor),
       ));
-      metadataItems.add(TextSpan(text: ' ${recipe.temperature}'));
+      metadataItems.add(TextSpan(text: ' $normalizedTemp'));
     }
     
     // Add time
@@ -690,20 +691,20 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         
         // Pit Note specific: Temperature, Time (required), Wood
         if (recipe.type == SmokingType.pitNote) ...[
-          // Temperature
+          // Temperature (normalized with degree symbol)
           if (recipe.temperature.isNotEmpty)
             Chip(
               avatar: Icon(Icons.thermostat, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(recipe.temperature),
+              label: Text(UnitNormalizer.normalizeTemperature(recipe.temperature)),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
             ),
-          // Time
+          // Time (normalized)
           if (recipe.time.isNotEmpty)
             Chip(
               avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(recipe.time),
+              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,

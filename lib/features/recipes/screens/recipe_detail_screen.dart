@@ -1029,9 +1029,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Icon(Icons.comment, size: 20, color: Theme.of(context).colorScheme.primary),
                             const SizedBox(width: 8),
@@ -1044,7 +1045,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           ],
                         ),
                         const SizedBox(height: 12),
-                        Text(recipe.notes!),
+                        Text(
+                          recipe.notes!,
+                          textAlign: TextAlign.end,
+                        ),
                       ],
                     ),
                   ),
