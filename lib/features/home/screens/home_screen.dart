@@ -63,7 +63,7 @@ class _CourseGridView extends ConsumerWidget {
           targetColumns = 2; // Phone portrait - 2 columns for legibility
         }
         // Calculate extent so cards fill the row (minus spacing)
-        final spacing = 12.0 * (targetColumns - 1);
+        final spacing = 6.0 * (targetColumns - 1);
         final maxExtent = (width - spacing) / targetColumns;
 
         return CustomScrollView(
@@ -107,8 +107,8 @@ class _CourseGridView extends ConsumerWidget {
               sliver: SliverGrid(
                 gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                   maxCrossAxisExtent: maxExtent,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 6,
+                  mainAxisSpacing: 6,
                   childAspectRatio: 1.3, // slightly wider than tall
                 ),
                 delegate: SliverChildBuilderDelegate(
