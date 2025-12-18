@@ -282,7 +282,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                   alignment: Alignment.centerLeft,
                                   child: Text(
                                     recipe.name,
-                                    style: theme.textTheme.headlineMedium?.copyWith(
+                                    style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: baseFontSize,
                                       color: hasHeaderImage ? Colors.white : theme.colorScheme.onSurface,
@@ -724,7 +724,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                           alignment: Alignment.centerLeft,
                           child: Text(
                             recipe.name,
-                            style: TextStyle(
+                            style: theme.textTheme.titleLarge?.copyWith(
                               fontWeight: FontWeight.bold,
                               fontSize: fontSize,
                               color: hasHeaderImage || collapseRatio < 0.7 
