@@ -90,6 +90,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
               ref.invalidate(allSmokingRecipesProvider);
             },
+            onLogCookPressed: () => _logCook(context, recipe),
+            onSharePressed: () => _shareRecipe(context, ref, recipe),
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
@@ -377,6 +379,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
               ref.invalidate(allSmokingRecipesProvider);
             },
+            onLogCookPressed: () => _logCook(context, recipe),
+            onSharePressed: () => _shareRecipe(context, ref, recipe),
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
@@ -1005,6 +1009,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       await ref.read(smokingRepositoryProvider).deleteRecipe(recipe.uuid);
       Navigator.pop(context);
     }
+  }
+
+  void _logCook(BuildContext context, SmokingRecipe recipe) {
+    ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+    ref.invalidate(allSmokingRecipesProvider);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+    );
   }
 
   void _shareRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) {

@@ -95,6 +95,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
             },
+            onLogCookPressed: () => _logCook(context, recipe),
+            onSharePressed: () => _shareRecipe(context, recipe),
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
@@ -402,6 +404,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
             },
+            onLogCookPressed: () => _logCook(context, recipe),
+            onSharePressed: () => _shareRecipe(context, recipe),
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
@@ -1078,6 +1082,14 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         }
         break;
     }
+  }
+
+  void _logCook(BuildContext context, ModernistRecipe recipe) {
+    ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+    ref.invalidate(modernistRecipeProvider(widget.recipeId));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Logged cook for ${recipe.name}!')),
+    );
   }
 
   void _shareRecipe(BuildContext context, ModernistRecipe recipe) {

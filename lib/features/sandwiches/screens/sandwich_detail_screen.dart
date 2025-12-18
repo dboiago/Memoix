@@ -88,6 +88,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
               await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
               ref.invalidate(allSandwichesProvider);
             },
+            onLogCookPressed: () => _logCook(context, sandwich),
+            onSharePressed: () => _shareSandwich(context, ref, sandwich),
             onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
@@ -196,6 +198,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
               await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
               ref.invalidate(allSandwichesProvider);
             },
+            onLogCookPressed: () => _logCook(context, sandwich),
+            onSharePressed: () => _shareSandwich(context, ref, sandwich),
             onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
@@ -443,6 +447,15 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
       );
       // Navigate to the new sandwich
       AppRoutes.toSandwichDetail(context, duplicate.uuid);
+    }
+  }
+
+  Future<void> _logCook(BuildContext context, Sandwich sandwich) async {
+    await ref.read(sandwichRepositoryProvider).incrementCookCount(sandwich);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Logged cook for ${sandwich.name}!')),
+      );
     }
   }
 

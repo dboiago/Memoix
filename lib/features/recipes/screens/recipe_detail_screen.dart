@@ -214,6 +214,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
             },
+            onLogCookPressed: () => _logCook(context, recipe),
+            onSharePressed: () => _shareRecipe(context, ref),
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
@@ -521,6 +523,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
             },
+            onLogCookPressed: () => _logCook(context, recipe),
+            onSharePressed: () => _shareRecipe(context, ref),
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
@@ -1035,6 +1039,29 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     }
     
     return chips;
+  }
+
+  Future<void> _logCook(BuildContext context, Recipe recipe) async {
+    await ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: recipe.uuid,
+      recipeName: recipe.name,
+      course: recipe.course,
+      cuisine: recipe.cuisine,
+    );
+    ref.invalidate(cookingStatsProvider);
+    ref.invalidate(recipeCookCountProvider(recipe.uuid));
+    ref.invalidate(recipeLastCookProvider(recipe.uuid));
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Logged cook for ${recipe.name}!'),
+          action: SnackBarAction(
+            label: 'Stats',
+            onPressed: () => AppRoutes.toStatistics(context),
+          ),
+        ),
+      );
+    }
   }
 
   void _shareRecipe(BuildContext context, WidgetRef ref) {

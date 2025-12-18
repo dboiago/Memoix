@@ -86,6 +86,8 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
               await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
               ref.invalidate(allPizzasProvider);
             },
+            onLogCookPressed: () => _logCook(context, pizza),
+            onSharePressed: () => _sharePizza(context, ref, pizza),
             onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
@@ -204,6 +206,8 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
               await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
               ref.invalidate(allPizzasProvider);
             },
+            onLogCookPressed: () => _logCook(context, pizza),
+            onSharePressed: () => _sharePizza(context, ref, pizza),
             onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
@@ -370,6 +374,15 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           }
         }
         break;
+    }
+  }
+
+  Future<void> _logCook(BuildContext context, Pizza pizza) async {
+    await ref.read(pizzaRepositoryProvider).incrementCookCount(pizza);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Logged cook for ${pizza.name}!')),
+      );
     }
   }
 

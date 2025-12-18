@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 /// - Back button
 /// - Title (scales down to fit, never wraps)
 /// - Favorite button
+/// - "I made this" button (optional)
+/// - Share button (optional)
 /// - Action menu (Edit, Duplicate, Delete)
 ///
 /// Metadata chips and other content belong in the scrollable content area
@@ -22,6 +24,8 @@ class MemoixHeader extends StatelessWidget {
     this.isFavorite = false,
     this.headerImage,
     this.onFavoritePressed,
+    this.onLogCookPressed,
+    this.onSharePressed,
     this.onEditPressed,
     this.onDuplicatePressed,
     this.onDeletePressed,
@@ -38,6 +42,12 @@ class MemoixHeader extends StatelessWidget {
 
   /// Callback when favorite button is pressed.
   final VoidCallback? onFavoritePressed;
+
+  /// Callback when "I made this" button is pressed.
+  final VoidCallback? onLogCookPressed;
+
+  /// Callback when share button is pressed.
+  final VoidCallback? onSharePressed;
 
   /// Callback when edit is selected from menu.
   final VoidCallback? onEditPressed;
@@ -57,6 +67,11 @@ class MemoixHeader extends StatelessWidget {
 
     // Scale font size with screen width: 20px at 320, up to 28px at 1200+
     final baseFontSize = (screenWidth / 40).clamp(20.0, 28.0);
+
+    // Title color: primary (accent) when no image, muted when over image
+    final titleColor = _hasHeaderImage
+        ? theme.colorScheme.onSurfaceVariant // muted color over image
+        : theme.colorScheme.primary; // accent color when no image
 
     return Container(
       width: double.infinity,
@@ -113,9 +128,7 @@ class MemoixHeader extends StatelessWidget {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: baseFontSize,
-                          color: _hasHeaderImage
-                              ? Colors.white
-                              : theme.colorScheme.onSurface,
+                          color: titleColor,
                           shadows: _hasHeaderImage
                               ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
                               : null,
@@ -134,7 +147,10 @@ class MemoixHeader extends StatelessWidget {
 
   /// Build the navigation and action icons row.
   Widget _buildActionRow(BuildContext context, ThemeData theme) {
-    final iconColor = _hasHeaderImage ? Colors.white : theme.colorScheme.onSurface;
+    // Icon color: muted when over image, onSurface when no image
+    final iconColor = _hasHeaderImage
+        ? theme.colorScheme.onSurfaceVariant
+        : theme.colorScheme.onSurface;
 
     final iconShadows = _hasHeaderImage
         ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
@@ -160,6 +176,23 @@ class MemoixHeader extends StatelessWidget {
                   shadows: iconShadows,
                 ),
                 onPressed: onFavoritePressed,
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.all(8),
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+            if (onLogCookPressed != null)
+              IconButton(
+                icon: Icon(Icons.check_circle_outline, color: iconColor, shadows: iconShadows),
+                tooltip: 'I made this',
+                onPressed: onLogCookPressed,
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.all(8),
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+            if (onSharePressed != null)
+              IconButton(
+                icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
+                onPressed: onSharePressed,
                 visualDensity: VisualDensity.compact,
                 padding: const EdgeInsets.all(8),
                 constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
