@@ -693,10 +693,12 @@ class OcrRecipeImporter {
       // - Don't start with a number
       // - Are short (< 40 chars)
       // - Contain food-related words or "or", "page", parentheses
-      // BUT NOT if the line is a garnish line
+      // BUT NOT if the line is a garnish line or looks like a direction
       final looksLikeGarnish = RegExp(r'(?:to\s+)?garnish[:\s]', caseSensitive: false).hasMatch(lowerLine);
+      final looksLikeDirection = RegExp(r'\b(preheat|bake|cook|roast|grill|broil|fry|saute|simmer|boil|steam|mix|combine|stir|whisk|beat|fold|pour|spread|let|place|remove|set|turn|cover|refrigerate|chill|freeze|cool|rest|allow|serve|degrees?|°F|°C|minutes?|mins?|oven)\b', caseSensitive: false).hasMatch(lowerLine);
       final isLikelyContinuation = pendingIngredient != null &&
           !looksLikeGarnish &&
+          !looksLikeDirection &&
           !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
           line.length < 50 &&
           (lowerLine.contains('or ') || 
@@ -707,7 +709,7 @@ class OcrRecipeImporter {
            lowerLine.contains('store-bought') ||
            lowerLine.contains('optional') ||
            // ALL CAPS short lines are likely ingredient continuations
-           (line == line.toUpperCase() && line.length < 40 && !RegExp(r'\b(preheat|bake|mix|pour|stir)\b', caseSensitive: false).hasMatch(line)));
+           (line == line.toUpperCase() && line.length < 40));
       
       // Check if line looks like a direction fragment (not a valid ingredient)
       final isDirectionFragment = RegExp(
