@@ -329,22 +329,146 @@ class OcrRecipeImporter {
       );
     }
 
-    // First non-empty line is usually the title - but low confidence for OCR
+    // ===== PHASE 1: Extract title =====
+    // Look for a short line at the start that looks like a title
+    // Skip lines that look like ingredients, paragraphs, or section headers
     String? name;
     double nameConfidence = 0.0;
+    int titleLineIndex = 0;
     
-    if (lines.isNotEmpty) {
+    for (int i = 0; i < lines.length && i < 5; i++) {
+      final line = lines[i];
+      final lowerLine = line.toLowerCase();
+      
+      // Skip lines that look like ingredients (start with numbers + units)
+      if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {
+        continue;
+      }
+      
+      // Skip long paragraphs (likely intro text)
+      if (line.length > 80) continue;
+      
+      // Skip lines that look like section headers
+      if (lowerLine.contains('ingredient') || lowerLine.contains('direction') || 
+          lowerLine.contains('instruction') || lowerLine.contains('method')) {
+        continue;
+      }
+      
+      // Good title candidate: short, no amounts, at the start
+      if (line.length >= 3 && line.length < 60 && !RegExp(r'^\d+').hasMatch(line)) {
+        name = line;
+        titleLineIndex = i;
+        nameConfidence = 0.7;
+        break;
+      }
+    }
+    
+    // Fallback to first line if no good candidate found
+    if (name == null && lines.isNotEmpty) {
       name = lines.first;
-      // Higher confidence if it looks like a title (not too long, no amounts)
-      final looksLikeTitle = name.length < 50 && 
-          !RegExp(r'^\d+').hasMatch(name) &&
-          !name.toLowerCase().contains('ingredient');
-      nameConfidence = looksLikeTitle ? 0.6 : 0.3;
+      nameConfidence = 0.3;
     }
 
-    // Try to identify ingredients vs directions
+    // ===== PHASE 2: Extract serves from "Makes X" or "Serves X" patterns =====
+    String? serves;
+    double servesConfidence = 0.0;
+    final servesPatterns = [
+      RegExp(r'\b(?:makes|yields?)\s+(\d+)\b', caseSensitive: false),
+      RegExp(r'\b(?:serves?)\s+(\d+)\b', caseSensitive: false),
+      RegExp(r'\b(\d+)\s+(?:servings?|portions?)\b', caseSensitive: false),
+    ];
+    
+    for (final line in lines) {
+      for (final pattern in servesPatterns) {
+        final match = pattern.firstMatch(line);
+        if (match != null) {
+          serves = match.group(1);
+          servesConfidence = 0.8;
+          break;
+        }
+      }
+      if (serves != null) break;
+    }
+
+    // ===== PHASE 3: Detect course from context clues =====
+    String course = 'Mains';
+    double courseConfidence = 0.2;
+    final allText = rawText.toLowerCase();
+    
+    // Dessert indicators
+    final dessertKeywords = ['cupcake', 'cake', 'cookie', 'brownie', 'frosting', 
+        'icing', 'sugar', 'vanilla extract', 'chocolate', 'dessert', 'sweet',
+        'muffin', 'pie', 'tart', 'pastry', 'baking powder', 'baking soda'];
+    final dessertCount = dessertKeywords.where((k) => allText.contains(k)).length;
+    
+    // Drink indicators
+    final drinkKeywords = ['cocktail', 'shake', 'smoothie', 'juice', 'vodka', 
+        'gin', 'rum', 'whiskey', 'liqueur', 'oz vodka', 'oz gin', 'garnish with'];
+    final drinkCount = drinkKeywords.where((k) => allText.contains(k)).length;
+    
+    // Appetizer indicators
+    final appKeywords = ['appetizer', 'starter', 'dip', 'finger food', 'hors d\'oeuvre'];
+    final appCount = appKeywords.where((k) => allText.contains(k)).length;
+    
+    // Side indicators
+    final sideKeywords = ['side dish', 'accompaniment', 'serve alongside'];
+    final sideCount = sideKeywords.where((k) => allText.contains(k)).length;
+    
+    // Determine course based on keyword density
+    if (dessertCount >= 2) {
+      course = 'Desserts';
+      courseConfidence = 0.6 + (dessertCount * 0.05).clamp(0.0, 0.2);
+    } else if (drinkCount >= 2) {
+      course = 'Drinks';
+      courseConfidence = 0.6 + (drinkCount * 0.05).clamp(0.0, 0.2);
+    } else if (appCount >= 1) {
+      course = 'Apps';
+      courseConfidence = 0.5;
+    } else if (sideCount >= 1) {
+      course = 'Sides';
+      courseConfidence = 0.5;
+    }
+
+    // ===== PHASE 4: Identify intro paragraphs as notes =====
+    String? notes;
+    final introLines = <String>[];
+    int contentStartIndex = titleLineIndex + 1;
+    
+    // Look for intro paragraphs after title - long sentences that aren't ingredients
+    for (int i = titleLineIndex + 1; i < lines.length && i < titleLineIndex + 6; i++) {
+      final line = lines[i];
+      final lowerLine = line.toLowerCase();
+      
+      // Stop if we hit an ingredient-like line or section header
+      if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {
+        break;
+      }
+      if (lowerLine.contains('ingredient') || lowerLine.contains('direction')) {
+        break;
+      }
+      
+      // Long prose lines are likely intro/notes
+      if (line.length > 60 && line.contains(' ')) {
+        introLines.add(line);
+        contentStartIndex = i + 1;
+      } else {
+        // Short line after intro - might be "Makes 24" etc, check and skip
+        if (servesPatterns.any((p) => p.hasMatch(line))) {
+          contentStartIndex = i + 1;
+          continue;
+        }
+        break;
+      }
+    }
+    
+    if (introLines.isNotEmpty) {
+      notes = introLines.join(' ');
+    }
+
+    // ===== PHASE 5: Parse ingredients and directions =====
+    // Pattern for ingredient lines: starts with amount + unit
     final ingredientPattern = RegExp(
-      r'^[\d½¼¾⅓⅔⅛]+\s*(?:cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon|c\.|t\.)?s?\s+',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞/]+)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     );
 
@@ -357,10 +481,18 @@ class OcrRecipeImporter {
     bool inDirections = false;
     bool foundIngredientHeader = false;
     bool foundDirectionHeader = false;
+    
+    // Track paragraph-style directions to split by sentence later
+    final paragraphDirections = <String>[];
 
-    for (int i = 1; i < lines.length; i++) {
+    for (int i = contentStartIndex; i < lines.length; i++) {
       final line = lines[i];
       final lowerLine = line.toLowerCase();
+      
+      // Skip serves lines
+      if (servesPatterns.any((p) => p.hasMatch(line))) {
+        continue;
+      }
 
       // Check for section headers
       if (lowerLine.contains('ingredient')) {
@@ -379,15 +511,27 @@ class OcrRecipeImporter {
         continue;
       }
 
-      // Classify the line
+      // Check if line looks like an ingredient
+      final ingredientMatch = ingredientPattern.firstMatch(line);
       final isNumberedStep = RegExp(r'^\d+[\.\)]\s').hasMatch(line);
-      final hasAmount = ingredientPattern.hasMatch(line);
+      
+      // Long prose lines (>80 chars with multiple sentences) are likely directions
+      final isLongProse = line.length > 80 && RegExp(r'\.\s+[A-Z]').hasMatch(line);
 
-      if (inDirections || isNumberedStep) {
+      if (isNumberedStep) {
+        // Numbered step - definitely a direction
         final cleanedStep = line.replaceFirst(RegExp(r'^\d+[\.\)]\s*'), '');
         rawDirections.add(cleanedStep);
         directions.add(cleanedStep);
-      } else if (inIngredients || hasAmount) {
+        inDirections = true;
+        inIngredients = false;
+      } else if (isLongProse) {
+        // Long paragraph - collect for sentence splitting
+        paragraphDirections.add(line);
+        inDirections = true;
+        inIngredients = false;
+      } else if (ingredientMatch != null) {
+        // Matched ingredient pattern - parse structured data
         final parsed = _parseIngredientLine(line);
         rawIngredients.add(parsed);
         ingredients.add(Ingredient.create(
@@ -395,9 +539,11 @@ class OcrRecipeImporter {
           amount: parsed.amount,
           unit: parsed.unit,
         ));
-      } else if (directions.isNotEmpty && !inIngredients) {
-        // Continue previous direction
-        if (rawDirections.last.length < 100) {
+        inIngredients = true;
+        inDirections = false;
+      } else if (inDirections) {
+        // Continue in directions mode
+        if (rawDirections.isNotEmpty && rawDirections.last.length < 100) {
           final updated = '${rawDirections.last} $line';
           rawDirections[rawDirections.length - 1] = updated;
           directions[directions.length - 1] = updated;
@@ -405,41 +551,80 @@ class OcrRecipeImporter {
           rawDirections.add(line);
           directions.add(line);
         }
-      } else {
-        // Ambiguous - track as potential ingredient
+      } else if (inIngredients) {
+        // In ingredients section but no pattern match - still try to parse
         final parsed = _parseIngredientLine(line);
-        rawIngredients.add(RawIngredientData(
-          original: line,
+        rawIngredients.add(parsed);
+        ingredients.add(Ingredient.create(
           name: parsed.name,
           amount: parsed.amount,
           unit: parsed.unit,
-          bakerPercent: parsed.bakerPercent,
-          looksLikeIngredient: false, // Uncertain
-        ),);
-        ingredients.add(Ingredient.create(name: line));
+        ));
+      } else {
+        // Ambiguous line - use heuristics
+        // Short lines with food words are probably ingredients
+        // Long lines with verbs are probably directions
+        final hasActionVerb = RegExp(r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store)\b', caseSensitive: false).hasMatch(lowerLine);
+        
+        if (hasActionVerb && line.length > 40) {
+          paragraphDirections.add(line);
+        } else if (line.length < 60) {
+          // Assume short lines without action verbs are ingredients
+          final parsed = _parseIngredientLine(line);
+          rawIngredients.add(RawIngredientData(
+            original: line,
+            name: parsed.name,
+            amount: parsed.amount,
+            unit: parsed.unit,
+            bakerPercent: parsed.bakerPercent,
+            looksLikeIngredient: parsed.amount != null,
+          ));
+          ingredients.add(Ingredient.create(
+            name: parsed.name,
+            amount: parsed.amount,
+            unit: parsed.unit,
+          ));
+        } else {
+          paragraphDirections.add(line);
+        }
+      }
+    }
+    
+    // ===== PHASE 6: Split paragraph directions into sentences =====
+    if (paragraphDirections.isNotEmpty) {
+      final fullText = paragraphDirections.join(' ');
+      // Split on sentence boundaries: period followed by space and capital letter
+      final sentences = fullText.split(RegExp(r'(?<=\.)\s+(?=[A-Z])'));
+      
+      for (final sentence in sentences) {
+        final trimmed = sentence.trim();
+        if (trimmed.isNotEmpty && trimmed.length > 10) {
+          rawDirections.add(trimmed);
+          directions.add(trimmed);
+        }
       }
     }
 
-    // Calculate confidence scores
-    // OCR is inherently less reliable, so base scores are lower
+    // ===== PHASE 7: Calculate confidence scores =====
     double ingredientsConfidence = 0.0;
     if (rawIngredients.isNotEmpty) {
       final withAmounts = rawIngredients.where((i) => i.looksLikeIngredient).length;
-      ingredientsConfidence = (withAmounts / rawIngredients.length) * 0.5;
+      ingredientsConfidence = (withAmounts / rawIngredients.length) * 0.6;
       if (foundIngredientHeader) ingredientsConfidence += 0.2;
     }
 
     double directionsConfidence = 0.0;
     if (rawDirections.isNotEmpty) {
-      directionsConfidence = 0.4; // Base confidence
+      directionsConfidence = 0.4;
       if (foundDirectionHeader) directionsConfidence += 0.2;
-      // More steps = more confidence
       if (rawDirections.length >= 3) directionsConfidence += 0.1;
     }
 
     return RecipeImportResult(
       name: name,
-      course: 'Mains', // Always needs review for OCR
+      course: course,
+      serves: serves,
+      notes: notes,
       ingredients: ingredients,
       directions: directions,
       rawText: rawText,
@@ -447,22 +632,26 @@ class OcrRecipeImporter {
       rawIngredients: rawIngredients,
       rawDirections: rawDirections,
       nameConfidence: nameConfidence,
-      courseConfidence: 0.2, // Very low - OCR can't detect course
+      courseConfidence: courseConfidence,
       cuisineConfidence: 0.0,
       ingredientsConfidence: ingredientsConfidence,
       directionsConfidence: directionsConfidence,
-      servesConfidence: 0.0,
+      servesConfidence: servesConfidence,
       timeConfidence: 0.0,
       source: RecipeSource.ocr,
     );
   }
 
   /// Parse an ingredient line into structured data
-  /// Handles baker's percentage format: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
+  /// Handles formats like:
+  /// - "1 CUP BROWN RICE FLOUR"
+  /// - "½ cup potato starch"  
+  /// - "1½ CUPS AGAVE NECTAR"
+  /// - Baker's percentage: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
   RawIngredientData _parseIngredientLine(String line) {
     // Try baker's percentage format first: "Name, XX% – amount (alt amount)"
     final bakerMatch = RegExp(
-      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',  // en-dash, em-dash, or hyphen
+      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',
       caseSensitive: false,
     ).firstMatch(line);
     
@@ -472,14 +661,15 @@ class OcrRecipeImporter {
         name: bakerMatch.group(1)?.trim() ?? line,
         bakerPercent: '${bakerMatch.group(2)}%',
         amount: bakerMatch.group(3)?.trim(),
-        preparation: bakerMatch.group(4)?.trim(), // Imperial conversion as notes
+        preparation: bakerMatch.group(4)?.trim(),
         looksLikeIngredient: true,
       );
     }
     
-    // Try standard format: "amount unit name"
+    // Try standard format: "amount unit name" (case insensitive)
+    // Supports: 1 CUP, 1/2 cup, ½ cup, 1½ cups, etc.
     final standardMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon|c\.|t\.)?s?\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(line);
     
@@ -487,18 +677,90 @@ class OcrRecipeImporter {
       return RawIngredientData(
         original: line,
         amount: standardMatch.group(1)?.trim(),
-        unit: standardMatch.group(2)?.trim(),
-        name: standardMatch.group(3)?.trim() ?? line,
+        unit: _normalizeUnit(standardMatch.group(2)?.trim()),
+        name: _cleanIngredientName(standardMatch.group(3)?.trim() ?? line),
         looksLikeIngredient: true,
+      );
+    }
+    
+    // Try format without explicit unit but with amount: "2 eggs", "3 cloves garlic"
+    final simpleMatch = RegExp(
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?)\s+(.+)',
+      caseSensitive: false,
+    ).firstMatch(line);
+    
+    if (simpleMatch != null) {
+      final name = simpleMatch.group(2)?.trim() ?? line;
+      // Only count as ingredient if name looks like food
+      final looksLikeFood = !RegExp(r'\b(preheat|bake|cook|stir|mix|add|pour|let|until|minutes?|degrees?|°)\b', caseSensitive: false).hasMatch(name);
+      return RawIngredientData(
+        original: line,
+        amount: simpleMatch.group(1)?.trim(),
+        name: _cleanIngredientName(name),
+        looksLikeIngredient: looksLikeFood,
       );
     }
     
     // Fallback - just use the line as name
     return RawIngredientData(
       original: line,
-      name: line,
+      name: _cleanIngredientName(line),
       looksLikeIngredient: false,
     );
+  }
+  
+  /// Normalize unit abbreviations to standard form
+  String? _normalizeUnit(String? unit) {
+    if (unit == null) return null;
+    final lower = unit.toLowerCase();
+    
+    // Map to standard abbreviations
+    const unitMap = {
+      'cup': 'cup',
+      'cups': 'cup',
+      'c.': 'cup',
+      'tbsp': 'tbsp',
+      'tbsps': 'tbsp',
+      'tablespoon': 'tbsp',
+      'tablespoons': 'tbsp',
+      'tsp': 'tsp',
+      'tsps': 'tsp',
+      'teaspoon': 'tsp',
+      'teaspoons': 'tsp',
+      't.': 'tsp',
+      'oz': 'oz',
+      'ounce': 'oz',
+      'ounces': 'oz',
+      'lb': 'lb',
+      'lbs': 'lb',
+      'pound': 'lb',
+      'pounds': 'lb',
+      'g': 'g',
+      'kg': 'kg',
+      'ml': 'ml',
+      'l': 'L',
+    };
+    
+    return unitMap[lower] ?? unit;
+  }
+  
+  /// Clean ingredient name (remove trailing punctuation, normalize case)
+  String _cleanIngredientName(String name) {
+    var cleaned = name.trim();
+    // Remove trailing punctuation
+    cleaned = cleaned.replaceAll(RegExp(r'[,;:]+$'), '');
+    // Convert ALL CAPS to Title Case
+    if (cleaned == cleaned.toUpperCase() && cleaned.length > 2) {
+      cleaned = cleaned.split(' ').map((word) {
+        if (word.isEmpty) return word;
+        // Keep short words lowercase (articles, prepositions)
+        if (word.length <= 2 && !RegExp(r'^\d').hasMatch(word)) {
+          return word.toLowerCase();
+        }
+        return word[0].toUpperCase() + word.substring(1).toLowerCase();
+      }).join(' ');
+    }
+    return cleaned;
   }
 
   /// Dispose resources
