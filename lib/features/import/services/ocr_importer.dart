@@ -589,6 +589,19 @@ class OcrRecipeImporter {
       
       // Long prose lines (>80 chars with multiple sentences) are likely directions
       final isLongProse = line.length > 80 && RegExp(r'\.\s+[A-Z]').hasMatch(line);
+      
+      // Check if line STARTS with an action verb (strong direction indicator)
+      final startsWithAction = RegExp(
+        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|spread|frost|store|remove|serve|bring|add the|stir|whisk|combine|mix)',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      
+      // Check if line contains multiple cooking action words (likely a direction)
+      final actionVerbCount = RegExp(
+        r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|remove|serve|bring|minutes?|degrees?|°F|°C|oven|rack|bowl|until|batter)\b',
+        caseSensitive: false,
+      ).allMatches(lowerLine).length;
+      final isLikelyDirection = actionVerbCount >= 2 || startsWithAction;
 
       if (isNumberedStep) {
         // Numbered step - definitely a direction
@@ -597,13 +610,13 @@ class OcrRecipeImporter {
         directions.add(cleanedStep);
         inDirections = true;
         inIngredients = false;
-      } else if (isLongProse) {
-        // Long paragraph - collect for sentence splitting
+      } else if (isLongProse || (isLikelyDirection && line.length > 40)) {
+        // Long paragraph or line with cooking verbs - treat as direction
         paragraphDirections.add(line);
         inDirections = true;
         inIngredients = false;
-      } else if (ingredientMatch != null) {
-        // Matched ingredient pattern - parse structured data
+      } else if (ingredientMatch != null && !isLikelyDirection) {
+        // Matched ingredient pattern AND doesn't look like a direction
         final parsed = _parseIngredientLine(line);
         rawIngredients.add(parsed);
         ingredients.add(Ingredient.create(
@@ -613,18 +626,19 @@ class OcrRecipeImporter {
         ));
         inIngredients = true;
         inDirections = false;
-      } else if (inDirections) {
-        // Continue in directions mode
-        if (rawDirections.isNotEmpty && rawDirections.last.length < 100) {
+      } else if (inDirections || isLikelyDirection) {
+        // In directions mode or line looks like a direction
+        if (rawDirections.isNotEmpty && rawDirections.last.length < 100 && !startsWithAction) {
           final updated = '${rawDirections.last} $line';
           rawDirections[rawDirections.length - 1] = updated;
           directions[directions.length - 1] = updated;
         } else {
-          rawDirections.add(line);
-          directions.add(line);
+          paragraphDirections.add(line);
         }
-      } else if (inIngredients) {
-        // In ingredients section but no pattern match - still try to parse
+        inDirections = true;
+        inIngredients = false;
+      } else if (inIngredients || ingredientMatch != null) {
+        // In ingredients section or has ingredient pattern
         final parsed = _parseIngredientLine(line);
         rawIngredients.add(parsed);
         ingredients.add(Ingredient.create(
@@ -928,10 +942,28 @@ class OcrRecipeImporter {
       (m) => '¾',
     );
     
+    // Fix "94" at start of line or after space followed by unit -> ¾ (OCR reads ¾ as 94)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\s)94\s+(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp)', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}¾ ${m.group(2)}',
+    );
+    
     // Fix "1/4" -> ¼
     fixed = fixed.replaceAllMapped(
       RegExp(r'\b1\s*/\s*4\b'),
       (m) => '¼',
+    );
+    
+    // Fix "Ya" or "ya" followed by unit -> ¼ (OCR reads ¼ as Ya)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Yy]a\s*(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|cUP|CUP)', caseSensitive: false),
+      (m) => '¼ ${m.group(1)}',
+    );
+    
+    // Fix "Ve" or "ve" followed by unit -> ½ (OCR reads ½ as Ve)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Vv]e\s*(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|cUP|CUP)', caseSensitive: false),
+      (m) => '½ ${m.group(1)}',
     );
     
     // Fix "v2" or "V2" or "/2" -> ½
@@ -946,6 +978,13 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'\s[vV/]2\b'),
       (m) => ' ½',
+    );
+    
+    // Fix "12" that should be "1½" when followed by unit (OCR reads 1½ as 12)
+    // Only apply when at start of line or after newline
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)12\s+(cups?|teaspoons?|tsp|tablespoons?|tbsp)', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}1½ ${m.group(2)}',
     );
     
     // Fix "1/2" -> ½
@@ -964,6 +1003,12 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'\b2\s*/\s*3\b'),
       (m) => '⅔',
+    );
+    
+    // Fix number+unit with no space: "7CUP" -> "7 CUP", "1CUP" -> "1 CUP"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d)(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|oz|lb|lbs|pound|pounds|ounce|ounces)\b', caseSensitive: false),
+      (m) => '${m.group(1)} ${m.group(2)}',
     );
     
     return fixed;
