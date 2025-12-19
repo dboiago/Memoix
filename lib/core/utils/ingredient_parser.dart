@@ -418,10 +418,10 @@ class IngredientParser {
     return result;
   }
   
-  /// Clean an ingredient name (remove extra whitespace, standardize case).
+  /// Clean an ingredient name (remove extra whitespace, apply Title Case).
   /// 
-  /// For OCR text, converts ALL CAPS to Title Case.
-  /// Always capitalizes the first letter of the ingredient name.
+  /// Applies Title Case to all words.
+  /// Words like 'of', 'the', 'and', 'or' stay lowercase unless first word.
   static String _cleanName(String name) {
     // Remove leading/trailing whitespace and collapse internal whitespace
     var cleaned = name.trim().replaceAll(RegExp(r'\s+'), ' ');
@@ -429,24 +429,33 @@ class IngredientParser {
     // Remove trailing punctuation
     cleaned = cleaned.replaceAll(RegExp(r'[,;:.]+$'), '').trim();
     
-    // Convert ALL CAPS to Title Case (common in OCR text)
-    if (cleaned == cleaned.toUpperCase() && cleaned.length > 2) {
-      cleaned = cleaned.split(' ').map((word) {
-        if (word.isEmpty) return word;
-        // Keep short words lowercase (articles, prepositions)
-        if (word.length <= 2 && !RegExp(r'^\d').hasMatch(word)) {
-          return word.toLowerCase();
-        }
+    if (cleaned.isEmpty) return cleaned;
+    
+    // Words that should stay lowercase (unless first word)
+    const lowercaseWords = {'a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with'};
+    
+    // Apply Title Case to all words
+    final words = cleaned.split(' ');
+    final titleCased = words.asMap().entries.map((entry) {
+      final i = entry.key;
+      final word = entry.value;
+      if (word.isEmpty) return word;
+      
+      // First word always capitalized
+      if (i == 0) {
         return word[0].toUpperCase() + word.substring(1).toLowerCase();
-      }).join(' ');
-    }
+      }
+      
+      // Keep short common words lowercase
+      if (lowercaseWords.contains(word.toLowerCase())) {
+        return word.toLowerCase();
+      }
+      
+      // Capitalize first letter of other words
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
     
-    // Always capitalize the first letter
-    if (cleaned.isNotEmpty && cleaned[0] != cleaned[0].toUpperCase()) {
-      cleaned = cleaned[0].toUpperCase() + cleaned.substring(1);
-    }
-    
-    return cleaned;
+    return titleCased;
   }
   
   /// Convert text to Title Case.

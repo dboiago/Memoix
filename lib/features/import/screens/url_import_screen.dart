@@ -274,6 +274,11 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
           );
         }
       }
+      
+      // Reset loading state after navigation so it's ready if user comes back
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
     } catch (e) {
       setState(() {
         _isLoading = false;

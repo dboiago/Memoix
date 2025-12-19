@@ -3181,7 +3181,7 @@ class UrlRecipeImporter {
     return result;
   }
 
-  /// Clean recipe name - remove "Recipe" suffix and clean up
+  /// Clean recipe name - remove "Recipe" suffix, clean up, and apply Title Case
   String _cleanRecipeName(String name) {
     var cleaned = _decodeHtml(name);
     
@@ -3190,7 +3190,35 @@ class UrlRecipeImporter {
     cleaned = cleaned.replaceAll(RegExp(r'\s+Recipe\s*$', caseSensitive: false), '');
     cleaned = cleaned.replaceAll(RegExp(r'^Recipe\s*[-–—:]\s*', caseSensitive: false), '');
     
-    return cleaned.trim();
+    cleaned = cleaned.trim();
+    
+    if (cleaned.isEmpty) return cleaned;
+    
+    // Words that should stay lowercase (unless first word)
+    const lowercaseWords = {'a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with'};
+    
+    // Apply Title Case to all words
+    final words = cleaned.split(' ');
+    final titleCased = words.asMap().entries.map((entry) {
+      final i = entry.key;
+      final word = entry.value;
+      if (word.isEmpty) return word;
+      
+      // First word always capitalized
+      if (i == 0) {
+        return word[0].toUpperCase() + word.substring(1).toLowerCase();
+      }
+      
+      // Keep short common words lowercase
+      if (lowercaseWords.contains(word.toLowerCase())) {
+        return word.toLowerCase();
+      }
+      
+      // Capitalize first letter of other words
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
+    
+    return titleCased;
   }
 
   // NOTE: Legacy _parseJsonLd removed - only _parseJsonLdWithConfidence is used
@@ -4777,6 +4805,8 @@ class UrlRecipeImporter {
   }
 
   /// Clean an ingredient name - capitalize first letter, remove trailing punctuation.
+  /// Clean an ingredient name - apply Title Case to all words.
+  /// Words like 'of', 'the', 'and', 'or' stay lowercase unless first word.
   String _cleanIngredientName(String name) {
     if (name.isEmpty) return name;
     
@@ -4785,24 +4815,31 @@ class UrlRecipeImporter {
     // Remove trailing punctuation
     cleaned = cleaned.replaceAll(RegExp(r'[,;:.]+$'), '').trim();
     
-    // Convert ALL CAPS to Title Case (common in some sites)
-    if (cleaned == cleaned.toUpperCase() && cleaned.length > 2) {
-      cleaned = cleaned.split(' ').map((word) {
-        if (word.isEmpty) return word;
-        // Keep short words lowercase (articles, prepositions)
-        if (word.length <= 2 && !RegExp(r'^\d').hasMatch(word)) {
-          return word.toLowerCase();
-        }
+    // Words that should stay lowercase (unless first word)
+    const lowercaseWords = {'a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with'};
+    
+    // Apply Title Case to all words
+    final words = cleaned.split(' ');
+    final titleCased = words.asMap().entries.map((entry) {
+      final i = entry.key;
+      final word = entry.value;
+      if (word.isEmpty) return word;
+      
+      // First word always capitalized
+      if (i == 0) {
         return word[0].toUpperCase() + word.substring(1).toLowerCase();
-      }).join(' ');
-    }
+      }
+      
+      // Keep short common words lowercase
+      if (lowercaseWords.contains(word.toLowerCase())) {
+        return word.toLowerCase();
+      }
+      
+      // Capitalize first letter of other words
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
     
-    // Always capitalize the first letter
-    if (cleaned.isNotEmpty && cleaned[0] != cleaned[0].toUpperCase()) {
-      cleaned = cleaned[0].toUpperCase() + cleaned.substring(1);
-    }
-    
-    return cleaned;
+    return titleCased;
   }
 
   /// Normalize unit names to standard abbreviations
