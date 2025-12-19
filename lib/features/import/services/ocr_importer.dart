@@ -684,9 +684,15 @@ class OcrRecipeImporter {
       
       final isLikelyDirection = actionVerbCount >= 2 || startsWithAction || isDirectionFragment;
       
-      // Skip prose narrative entirely - add to notes, not ingredients or directions
-      if (isProseNarrative) {
-        // Prose/backstory - skip entirely (already captured in notes phase if early)
+      // Check if this looks like a prose fragment (tips, variations, narrative)
+      // This check needs to happen BEFORE inIngredients check to avoid false positives
+      final isProseFragment = RegExp(
+        r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint[-—]?put|whole lemon|lemon peel|lemon for|for lime|horse.s neck|foghorn)\b',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      
+      // Skip prose narrative and fragments entirely
+      if (isProseNarrative || isProseFragment) {
         continue;
       }
 
@@ -697,8 +703,9 @@ class OcrRecipeImporter {
         directions.add(cleanedStep);
         inDirections = true;
         inIngredients = false;
-      } else if (isLongProse || (isLikelyDirection && line.length > 40)) {
+      } else if (isLongProse || (isLikelyDirection && line.length > 15)) {
         // Long paragraph or line with cooking verbs - treat as direction
+        // Lowered threshold to 15 chars to catch short direction lines
         paragraphDirections.add(line);
         inDirections = true;
         inIngredients = false;
@@ -737,21 +744,12 @@ class OcrRecipeImporter {
         // Ambiguous line - use heuristics
         // Short lines with food words are probably ingredients
         // Long lines with verbs are probably directions
-        final hasActionVerb = RegExp(r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store)\b', caseSensitive: false).hasMatch(lowerLine);
+        final hasActionVerb = RegExp(r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|lift|garnish|serve|shake|muddle|strain|fill)\b', caseSensitive: false).hasMatch(lowerLine);
         
-        // Check if this looks like a prose fragment (incomplete sentence, narrative)
-        final isProseFragment = RegExp(
-          r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint|whole lemon|lemon peel|lemon for|for lime)\b',
-          caseSensitive: false,
-        ).hasMatch(lowerLine);
-        
-        if (isProseFragment) {
-          // Skip prose fragments - they're tips/variations, not directions
-          continue;
-        } else if (hasActionVerb && line.length > 20) {
-          // Line with action verb - treat as direction (lowered threshold from 40)
+        if (hasActionVerb) {
+          // Line with action verb - treat as direction
           paragraphDirections.add(line);
-        } else if (line.length < 60 && !isProseNarrative) {
+        } else if (line.length < 60) {
           // Assume short lines without action verbs are ingredients
           final parsed = _parseIngredientLine(line);
           // Only add if it has an amount or looks like an ingredient
@@ -771,11 +769,7 @@ class OcrRecipeImporter {
             ));
           }
         } else {
-          // Long lines go to directions only if they have action verbs
-          if (hasActionVerb) {
-            paragraphDirections.add(line);
-          }
-          // Otherwise skip - probably prose
+          // Long lines without action verbs - probably prose, skip
         }
       }
     }
@@ -788,7 +782,7 @@ class OcrRecipeImporter {
       
       // Prose words that indicate historical/narrative text, not actual directions
       final prosePattern = RegExp(
-        r'\b(earliest|history|century|combined at|winter of|thames|froze|walking|streets|baskets|hogarth|etching|lane|british|book|contain|began|combination|strikes|beginnings|modern|flavor|pairing|1730s|1751|1715|frost fairs?|sellers?|wares|characters?|dotted|tents?|gingerbread)\b',
+        r'\b(earliest|history|century|combined at|winter of|thames|froze|walking|streets|baskets|hogarth|etching|lane|british|book|contain|began|combination|strikes|beginnings|modern|flavor|pairing|1730s|1751|1715|frost fairs?|sellers?|wares|characters?|dotted|tents?|gingerbread|geneva|offering)\b',
         caseSensitive: false,
       );
       
@@ -801,14 +795,29 @@ class OcrRecipeImporter {
           continue;
         }
         
-        // Only include sentences that have cooking action words
-        final hasAction = RegExp(
-          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze)\b',
+        // Skip tips/variations (these contain prose fragment patterns)
+        final isTipOrVariation = RegExp(
+          r'\b(if you|you can|becomes a|it becomes|substitute|hint|horse.s neck|foghorn)\b',
           caseSensitive: false,
         ).hasMatch(lowerSentence);
         
-        if (trimmed.isNotEmpty && trimmed.length > 10 && hasAction) {
+        if (isTipOrVariation) {
+          continue;
+        }
+        
+        // Include short sentences or sentences with action verbs
+        // Short direct instructions like "Lift instead of stir" should be included
+        final hasAction = RegExp(
+          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze|instead)\b',
+          caseSensitive: false,
+        ).hasMatch(lowerSentence);
+        
+        if (trimmed.isNotEmpty && trimmed.length > 5 && (hasAction || trimmed.length < 50)) {
           rawDirections.add(trimmed);
+          directions.add(trimmed);
+        }
+      }
+    }
           directions.add(trimmed);
         }
       }
