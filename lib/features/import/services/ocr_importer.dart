@@ -531,8 +531,13 @@ class OcrRecipeImporter {
     
     bool inIngredients = false;
     bool inDirections = false;
+    bool inMetricSection = false;
     bool foundIngredientHeader = false;
     bool foundDirectionHeader = false;
+    
+    // Track metric values for two-column cookbook layouts
+    // These will be paired with ingredients by position after parsing
+    final metricValues = <String>[];
     
     // Track paragraph-style directions to split by sentence later
     final paragraphDirections = <String>[];
@@ -652,15 +657,16 @@ class OcrRecipeImporter {
         continue;
       }
       
-      // Skip "Metric" section header (cookbook two-column format)
-      // Lines after this are typically standalone metric values that we skip
+      // Detect "Metric" section header (cookbook two-column format)
+      // Lines after this are metric equivalents that we'll pair with ingredients
       if (lowerLine.trim() == 'metric' || lowerLine.trim() == 'metric:') {
         inIngredients = false;
         inDirections = false;
+        inMetricSection = true;
         continue;
       }
       
-      // Skip standalone metric values (just a number with metric unit, no ingredient name)
+      // Collect standalone metric values (just a number with optional metric unit)
       // These are the right column in two-column cookbook layouts
       // Examples: "1 kg", "235 ml", "470 ml", "1", "2"
       final isStandaloneMetric = RegExp(
@@ -668,8 +674,17 @@ class OcrRecipeImporter {
         caseSensitive: false,
       ).hasMatch(line.trim());
       if (isStandaloneMetric && line.trim().length < 10) {
-        // This is likely a metric column value, skip it
+        // If we're in metric section or this looks like metric column value
+        if (inMetricSection) {
+          metricValues.add(line.trim());
+        }
+        // Skip adding as ingredient either way
         continue;
+      }
+      
+      // Exit metric section when we hit a non-metric line (like directions)
+      if (inMetricSection && !isStandaloneMetric) {
+        inMetricSection = false;
       }
       
       // Check for garnish line: "To garnish: ..." or "Garnish: ..."
@@ -926,6 +941,55 @@ class OcrRecipeImporter {
     directions.clear();
     rawDirections.addAll(processedDirections);
     directions.addAll(processedDirections);
+
+    // ===== PHASE 6.75: Pair metric values with ingredients =====
+    // If we collected metric values from a two-column layout, pair them with ingredients
+    // by position (1st metric → 1st ingredient, 2nd metric → 2nd ingredient, etc.)
+    if (metricValues.isNotEmpty && rawIngredients.isNotEmpty) {
+      // Only pair if counts are reasonably close (allow some tolerance for items like "Salt and pepper")
+      final countDiff = (metricValues.length - rawIngredients.length).abs();
+      final shouldPair = countDiff <= 2 || 
+          (metricValues.length >= rawIngredients.length * 0.7 && 
+           metricValues.length <= rawIngredients.length * 1.3);
+      
+      if (shouldPair) {
+        for (int i = 0; i < rawIngredients.length && i < metricValues.length; i++) {
+          final metric = metricValues[i];
+          final existing = rawIngredients[i];
+          
+          // Add metric as a note/preparation field
+          // Format: "Metric: 1 kg" or just append to existing preparation
+          final metricNote = 'Metric: $metric';
+          final newPrep = existing.preparation != null && existing.preparation!.isNotEmpty
+              ? '${existing.preparation}; $metricNote'
+              : metricNote;
+          
+          // Create updated RawIngredientData with metric note
+          rawIngredients[i] = RawIngredientData(
+            original: existing.original,
+            name: existing.name,
+            amount: existing.amount,
+            unit: existing.unit,
+            preparation: newPrep,
+            bakerPercent: existing.bakerPercent,
+            alternative: existing.alternative,
+            looksLikeIngredient: existing.looksLikeIngredient,
+            isSection: existing.isSection,
+            sectionName: existing.sectionName,
+          );
+          
+          // Also update the Ingredient object's preparation
+          if (i < ingredients.length) {
+            ingredients[i] = Ingredient.create(
+              name: ingredients[i].name,
+              amount: ingredients[i].amount,
+              unit: ingredients[i].unit,
+              preparation: newPrep,
+            );
+          }
+        }
+      }
+    }
 
     // ===== PHASE 7: Calculate confidence scores =====
     double ingredientsConfidence = 0.0;
