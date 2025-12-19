@@ -655,32 +655,53 @@ class UrlRecipeImporter {
       var document;
       
       if (response == null || response.statusCode != 200) {
-        // Check if we got a 403 (bot detection) and have a context for WebView fallback
+        // Check if we got a 403 (bot detection)
         final is403 = lastError?.contains('403') == true || response?.statusCode == 403;
         
-        // Try Google Cache as a fallback for blocked sites
-        // Google caches most recipe sites and serves them without bot detection
+        // Try Wayback Machine (Internet Archive) as a fallback for blocked sites
+        // The Wayback Machine caches most popular recipe sites
         if (is403) {
           try {
-            final googleCacheUrl = 'https://webcache.googleusercontent.com/search?q=cache:$url';
-            final cacheResponse = await http.get(
-              Uri.parse(googleCacheUrl),
-              headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.9',
-              },
+            // First, check if the URL is archived and get the latest snapshot
+            final availabilityUrl = 'https://archive.org/wayback/available?url=${Uri.encodeComponent(url)}';
+            final availabilityResponse = await http.get(
+              Uri.parse(availabilityUrl),
+              headers: {'Accept': 'application/json'},
             );
             
-            if (cacheResponse.statusCode == 200) {
-              body = _decodeResponseBody(cacheResponse);
-              document = html_parser.parse(body);
-              // Google Cache succeeded, continue with normal parsing below
+            if (availabilityResponse.statusCode == 200) {
+              final availabilityData = jsonDecode(availabilityResponse.body);
+              final snapshot = availabilityData['archived_snapshots']?['closest'];
+              
+              if (snapshot != null && snapshot['available'] == true) {
+                final archiveUrl = snapshot['url'] as String;
+                
+                // Fetch the archived version
+                final archiveResponse = await http.get(
+                  Uri.parse(archiveUrl),
+                  headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                  },
+                );
+                
+                if (archiveResponse.statusCode == 200) {
+                  body = _decodeResponseBody(archiveResponse);
+                  // Clean up Wayback Machine's injected toolbar HTML
+                  body = body.replaceAll(RegExp(r'<!-- BEGIN WAYBACK TOOLBAR INSERT -->.*?<!-- END WAYBACK TOOLBAR INSERT -->', dotAll: true), '');
+                  document = html_parser.parse(body);
+                  // Archive succeeded, continue with normal parsing below
+                } else {
+                  throw Exception('Archive returned ${archiveResponse.statusCode}');
+                }
+              } else {
+                throw Exception('No archived version available');
+              }
             } else {
-              throw Exception('Google Cache returned ${cacheResponse.statusCode}');
+              throw Exception('Wayback API returned ${availabilityResponse.statusCode}');
             }
-          } catch (cacheError) {
-            // Google Cache also failed, try WebView on mobile
+          } catch (archiveError) {
+            // Wayback Machine also failed, try WebView on mobile
             if (context != null && WebViewFetcher.isSupported) {
               try {
                 body = await WebViewFetcher.fetchHtml(context, url);
