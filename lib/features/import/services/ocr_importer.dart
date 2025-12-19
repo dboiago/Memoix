@@ -936,9 +936,9 @@ class OcrRecipeImporter {
 
       if (isNumberedStep) {
         // Numbered step - definitely a direction
-        final cleanedStep = line.replaceFirst(RegExp(r'^\d+[\.\)]\s*'), '');
-        rawDirections.add(cleanedStep);
-        directions.add(cleanedStep);
+        // KEEP the number prefix for now - sorting happens in Phase 6.5
+        rawDirections.add(line);
+        directions.add(line);
         inDirections = true;
         inIngredients = false;
       } else if (startsWithAction) {
@@ -1115,8 +1115,9 @@ class OcrRecipeImporter {
     }
     
     // Sort numbered directions (e.g., "1. Preheat oven...", "2. Mix flour...")
-    // Directions may come in wrong order due to OCR reading columns
-    final numberedPattern = RegExp(r'^(\d+)\.\s*');
+    // Directions may come in wrong order due to OCR reading columns left-to-right
+    // Also handle "1)" and "Step 1:" formats
+    final numberedPattern = RegExp(r'^(?:step\s*)?(\d+)[\.\):\s]\s*', caseSensitive: false);
     final numberedDirections = <int, String>{};
     final unnumberedDirections = <String>[];
     
@@ -1127,7 +1128,12 @@ class OcrRecipeImporter {
         // Remove the number prefix for cleaner output
         final text = direction.substring(match.end).trim();
         if (text.isNotEmpty) {
-          numberedDirections[num] = text;
+          // If we already have this step number, append (OCR may have split one step)
+          if (numberedDirections.containsKey(num)) {
+            numberedDirections[num] = '${numberedDirections[num]} $text';
+          } else {
+            numberedDirections[num] = text;
+          }
         }
       } else {
         unnumberedDirections.add(direction);
