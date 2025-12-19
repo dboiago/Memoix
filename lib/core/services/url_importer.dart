@@ -658,22 +658,45 @@ class UrlRecipeImporter {
         // Check if we got a 403 (bot detection) and have a context for WebView fallback
         final is403 = lastError?.contains('403') == true || response?.statusCode == 403;
         
-        if (is403 && context != null && WebViewFetcher.isSupported) {
-          // Try WebView fallback for bot-protected sites (mobile only)
+        // Try Google Cache as a fallback for blocked sites
+        // Google caches most recipe sites and serves them without bot detection
+        if (is403) {
           try {
-            body = await WebViewFetcher.fetchHtml(context, url);
-            document = html_parser.parse(body);
-            // WebView succeeded, continue with normal parsing below
-          } catch (webViewError) {
-            // WebView also failed, throw original error with helpful message
-            throw Exception('Failed to fetch URL: This site blocks automated access. Try copying the recipe text manually.');
+            final googleCacheUrl = 'https://webcache.googleusercontent.com/search?q=cache:$url';
+            final cacheResponse = await http.get(
+              Uri.parse(googleCacheUrl),
+              headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+              },
+            );
+            
+            if (cacheResponse.statusCode == 200) {
+              body = _decodeResponseBody(cacheResponse);
+              document = html_parser.parse(body);
+              // Google Cache succeeded, continue with normal parsing below
+            } else {
+              throw Exception('Google Cache returned ${cacheResponse.statusCode}');
+            }
+          } catch (cacheError) {
+            // Google Cache also failed, try WebView on mobile
+            if (context != null && WebViewFetcher.isSupported) {
+              try {
+                body = await WebViewFetcher.fetchHtml(context, url);
+                document = html_parser.parse(body);
+                // WebView succeeded, continue with normal parsing below
+              } catch (webViewError) {
+                throw Exception('Failed to fetch URL: This site blocks automated access. Try copying the recipe text manually.');
+              }
+            } else {
+              throw Exception('Failed to fetch URL: This site blocks automated access. Try copying the recipe text manually.');
+            }
           }
         } else {
-          // Provide more helpful error messages for known issues
+          // Non-403 error
           String errorMessage = lastError ?? 'unknown error';
-          if (errorMessage.contains('403')) {
-            errorMessage = 'This site blocks automated access. Try copying the recipe text manually.';
-          } else if (errorMessage.contains('does not match') || 
+          if (errorMessage.contains('does not match') || 
               errorMessage.contains('Failed to parse HTTP')) {
             errorMessage = 'This site may have connection issues. Please try again later or copy the recipe manually.';
           }
