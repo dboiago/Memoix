@@ -492,9 +492,13 @@ class UrlRecipeImporter {
       final uri = Uri.parse(url);
       final origin = '${uri.scheme}://${uri.host}';
       
+      // Try print version first for sites that support it
+      // Print versions are cleaner (less JS) and often bypass bot detection
+      final printUrl = _getPrintUrl(url, uri);
+      
       // Helper function to attempt fetch with given headers
       // Uses IOClient with custom HttpClient for better HTTP/1.1 compatibility
-      Future<http.Response> tryFetch(Map<String, String> headers) async {
+      Future<http.Response> tryFetch(String fetchUrl, Map<String, String> headers) async {
         // Create a custom HttpClient that mimics a real browser
         // This helps avoid bot detection on sites like allrecipes.com
         final httpClient = HttpClient()
@@ -506,7 +510,7 @@ class UrlRecipeImporter {
         
         try {
           final client = IOClient(httpClient);
-          final response = await client.get(Uri.parse(url), headers: headers);
+          final response = await client.get(Uri.parse(fetchUrl), headers: headers);
           // Note: We don't close the client here as it would close the response stream
           // The client will be garbage collected after the response is consumed
           return response;
@@ -610,28 +614,40 @@ class UrlRecipeImporter {
       
       http.Response? response;
       String? lastError;
+      String actualUrl = url; // Track which URL succeeded (print or original)
       
-      // Try each configuration until one works
-      for (int i = 0; i < headerConfigs.length; i++) {
-        final headers = headerConfigs[i];
-        try {
-          response = await tryFetch(headers);
-          if (response.statusCode == 200) {
-            break; // Success!
+      // Strategy: Try print URL first (if available), then fall back to original URL
+      // Print versions are cleaner and often bypass bot detection
+      final urlsToTry = [
+        if (printUrl != null) printUrl,
+        url,
+      ];
+      
+      // Try each URL with each header configuration until one works
+      urlLoop:
+      for (final urlToTry in urlsToTry) {
+        for (int i = 0; i < headerConfigs.length; i++) {
+          final headers = headerConfigs[i];
+          try {
+            response = await tryFetch(urlToTry, headers);
+            if (response.statusCode == 200) {
+              actualUrl = urlToTry;
+              break urlLoop; // Success!
+            }
+            lastError = 'HTTP ${response.statusCode}';
+          } catch (e) {
+            // ClientException or other HTTP errors - try next config
+            lastError = e.toString();
+            response = null;
+            
+            // If this is an HTTP parsing error (like "115 does not match 13"), 
+            // wait a moment before retrying with next config
+            if (lastError.contains('does not match') || 
+                lastError.contains('Failed to parse HTTP')) {
+              await Future.delayed(const Duration(milliseconds: 500));
+            }
+            continue;
           }
-          lastError = 'HTTP ${response.statusCode}';
-        } catch (e) {
-          // ClientException or other HTTP errors - try next config
-          lastError = e.toString();
-          response = null;
-          
-          // If this is an HTTP parsing error (like "115 does not match 13"), 
-          // wait a moment before retrying with next config
-          if (lastError.contains('does not match') || 
-              lastError.contains('Failed to parse HTTP')) {
-            await Future.delayed(const Duration(milliseconds: 500));
-          }
-          continue;
         }
       }
       
@@ -642,20 +658,22 @@ class UrlRecipeImporter {
         // Check if we got a 403 (bot detection) and have a context for WebView fallback
         final is403 = lastError?.contains('403') == true || response?.statusCode == 403;
         
-        if (is403 && context != null) {
-          // Try WebView fallback for bot-protected sites
+        if (is403 && context != null && WebViewFetcher.isSupported) {
+          // Try WebView fallback for bot-protected sites (mobile only)
           try {
             body = await WebViewFetcher.fetchHtml(context, url);
             document = html_parser.parse(body);
             // WebView succeeded, continue with normal parsing below
           } catch (webViewError) {
-            // WebView also failed, throw original error
-            throw Exception('Failed to fetch URL: Site requires browser access. WebView fallback failed: $webViewError');
+            // WebView also failed, throw original error with helpful message
+            throw Exception('Failed to fetch URL: This site blocks automated access. Try copying the recipe text manually.');
           }
         } else {
           // Provide more helpful error messages for known issues
           String errorMessage = lastError ?? 'unknown error';
-          if (errorMessage.contains('does not match') || 
+          if (errorMessage.contains('403')) {
+            errorMessage = 'This site blocks automated access. Try copying the recipe text manually.';
+          } else if (errorMessage.contains('does not match') || 
               errorMessage.contains('Failed to parse HTTP')) {
             errorMessage = 'This site may have connection issues. Please try again later or copy the recipe manually.';
           }
@@ -1569,6 +1587,89 @@ class UrlRecipeImporter {
       if (segments.length >= 2) {
         return segments[1];
       }
+    }
+    
+    return null;
+  }
+  
+  /// Generate print-friendly URL for sites that support it
+  /// 
+  /// Print versions are often:
+  /// - Cleaner (less JavaScript, ads, tracking)
+  /// - Less likely to trigger bot detection
+  /// - Contain all recipe content in static HTML
+  /// 
+  /// Returns null if the URL already has a print parameter or site doesn't support it
+  String? _getPrintUrl(String url, Uri uri) {
+    // Skip if already a print URL
+    if (uri.queryParameters.containsKey('print') ||
+        uri.queryParameters.containsKey('printable') ||
+        uri.path.contains('/print')) {
+      return null;
+    }
+    
+    final host = uri.host.toLowerCase();
+    
+    // Dotdash Meredith sites (allrecipes, thespruceeats, simplyrecipes, etc.)
+    // Use ?print parameter
+    if (host.contains('allrecipes.com') ||
+        host.contains('thespruceeats.com') ||
+        host.contains('thespruce.com') ||
+        host.contains('simplyrecipes.com') ||
+        host.contains('seriouseats.com') ||
+        host.contains('foodandwine.com') ||
+        host.contains('bhg.com') ||
+        host.contains('marthastewart.com') ||
+        host.contains('eatingwell.com')) {
+      // Add ?print or &print depending on existing query
+      if (uri.query.isEmpty) {
+        return '$url?print';
+      } else {
+        return '$url&print';
+      }
+    }
+    
+    // Food Network uses /print suffix
+    if (host.contains('foodnetwork.com')) {
+      // Remove trailing slash if present, then add /print
+      final cleanUrl = url.endsWith('/') ? url.substring(0, url.length - 1) : url;
+      return '$cleanUrl/print';
+    }
+    
+    // BBC Good Food uses /print suffix
+    if (host.contains('bbcgoodfood.com')) {
+      final cleanUrl = url.endsWith('/') ? url.substring(0, url.length - 1) : url;
+      return '$cleanUrl/print';
+    }
+    
+    // Epicurious uses ?printable=true
+    if (host.contains('epicurious.com')) {
+      if (uri.query.isEmpty) {
+        return '$url?printable=true';
+      } else {
+        return '$url&printable=true';
+      }
+    }
+    
+    // Bon Appetit (also Conde Nast) uses /print
+    if (host.contains('bonappetit.com')) {
+      final cleanUrl = url.endsWith('/') ? url.substring(0, url.length - 1) : url;
+      return '$cleanUrl/print';
+    }
+    
+    // Taste of Home uses ?print=1
+    if (host.contains('tasteofhome.com')) {
+      if (uri.query.isEmpty) {
+        return '$url?print=1';
+      } else {
+        return '$url&print=1';
+      }
+    }
+    
+    // Delish uses /print suffix
+    if (host.contains('delish.com')) {
+      final cleanUrl = url.endsWith('/') ? url.substring(0, url.length - 1) : url;
+      return '$cleanUrl/print';
     }
     
     return null;

@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -8,11 +10,28 @@ import 'package:webview_flutter/webview_flutter.dart';
 /// due to bot detection. WebView uses the platform's native browser engine
 /// which has a proper TLS fingerprint that sites accept.
 class WebViewFetcher {
+  /// Check if WebView is supported on the current platform
+  static bool get isSupported {
+    if (kIsWeb) return false; // Web doesn't support webview_flutter
+    try {
+      // WebView is only supported on Android and iOS
+      return Platform.isAndroid || Platform.isIOS;
+    } catch (_) {
+      return false;
+    }
+  }
+
   /// Fetch HTML content from a URL using a headless WebView.
   /// 
   /// Returns the page's HTML content, or throws an exception on failure.
   /// The WebView is shown briefly but minimized to be nearly invisible.
+  /// 
+  /// Throws [UnsupportedError] if WebView is not supported on this platform.
   static Future<String> fetchHtml(BuildContext context, String url, {Duration timeout = const Duration(seconds: 15)}) async {
+    if (!isSupported) {
+      throw UnsupportedError('WebView is not supported on this platform (only Android/iOS)');
+    }
+    
     final completer = Completer<String>();
     
     late final WebViewController controller;
