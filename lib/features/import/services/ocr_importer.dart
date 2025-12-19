@@ -319,7 +319,9 @@ class OcrRecipeImporter {
 
   /// Parse OCR text into RecipeImportResult with confidence scoring
   RecipeImportResult parseWithConfidence(String rawText, List<String> blocks) {
-    final lines = rawText.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty).toList();
+    // Pre-process raw text to fix common OCR artifacts
+    final cleanedText = _fixOcrArtifacts(rawText);
+    final lines = cleanedText.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty).toList();
     
     if (lines.isEmpty) {
       return RecipeImportResult(
@@ -330,37 +332,55 @@ class OcrRecipeImporter {
     }
 
     // ===== PHASE 1: Extract title =====
-    // Look for a short line at the start that looks like a title
-    // Skip lines that look like ingredients, paragraphs, or section headers
+    // Look for short lines at the start that look like a title
+    // May need to combine multiple short lines (e.g., "healthy" + "hostess")
     String? name;
     double nameConfidence = 0.0;
     int titleLineIndex = 0;
+    final titleParts = <String>[];
     
     for (int i = 0; i < lines.length && i < 5; i++) {
       final line = lines[i];
       final lowerLine = line.toLowerCase();
       
       // Skip lines that look like ingredients (start with numbers + units)
-      if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {
-        continue;
+      if (RegExp(r'^[\d½¼¾⅓⅔⅛v/]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {
+        break; // Hit ingredients, stop looking for title
       }
       
       // Skip long paragraphs (likely intro text)
-      if (line.length > 80) continue;
+      if (line.length > 80) {
+        if (titleParts.isNotEmpty) break; // Already have title parts
+        continue;
+      }
       
       // Skip lines that look like section headers
       if (lowerLine.contains('ingredient') || lowerLine.contains('direction') || 
           lowerLine.contains('instruction') || lowerLine.contains('method')) {
+        break;
+      }
+      
+      // Skip "Makes X" lines
+      if (RegExp(r'\b(?:makes|yields?|serves?)\s+\d+', caseSensitive: false).hasMatch(line)) {
         continue;
       }
       
-      // Good title candidate: short, no amounts, at the start
-      if (line.length >= 3 && line.length < 60 && !RegExp(r'^\d+').hasMatch(line)) {
-        name = line;
+      // Short line (under 40 chars) without amounts could be title or title part
+      if (line.length >= 2 && line.length < 40 && !RegExp(r'^\d+').hasMatch(line)) {
+        titleParts.add(line);
         titleLineIndex = i;
-        nameConfidence = 0.7;
+        // If we have two short lines in a row, they might form the title
+        if (titleParts.length >= 2) break;
+      } else if (titleParts.isNotEmpty) {
+        // Hit a non-title line after collecting parts
         break;
       }
+    }
+    
+    // Combine title parts
+    if (titleParts.isNotEmpty) {
+      name = titleParts.join(' ');
+      nameConfidence = titleParts.length == 1 ? 0.7 : 0.6;
     }
     
     // Fallback to first line if no good candidate found
@@ -373,11 +393,14 @@ class OcrRecipeImporter {
     String? serves;
     double servesConfidence = 0.0;
     final servesPatterns = [
-      RegExp(r'\b(?:makes|yields?)\s+(\d+)\b', caseSensitive: false),
-      RegExp(r'\b(?:serves?)\s+(\d+)\b', caseSensitive: false),
-      RegExp(r'\b(\d+)\s+(?:servings?|portions?)\b', caseSensitive: false),
+      RegExp(r'\bmakes\s+(\d+)\b', caseSensitive: false),
+      RegExp(r'\byields?\s+(\d+)\b', caseSensitive: false),
+      RegExp(r'\bserves?\s+(\d+)\b', caseSensitive: false),
+      RegExp(r'\b(\d+)\s+servings?\b', caseSensitive: false),
+      RegExp(r'\b(\d+)\s+portions?\b', caseSensitive: false),
     ];
     
+    // Search through all text for serves pattern
     for (final line in lines) {
       for (final pattern in servesPatterns) {
         final match = pattern.firstMatch(line);
@@ -388,6 +411,18 @@ class OcrRecipeImporter {
         }
       }
       if (serves != null) break;
+    }
+    
+    // Also check the raw text in case it's on a weird line
+    if (serves == null) {
+      for (final pattern in servesPatterns) {
+        final match = pattern.firstMatch(cleanedText);
+        if (match != null) {
+          serves = match.group(1);
+          servesConfidence = 0.7;
+          break;
+        }
+      }
     }
 
     // ===== PHASE 3: Detect course from context clues =====
@@ -684,13 +719,40 @@ class OcrRecipeImporter {
   /// - "1 CUP BROWN RICE FLOUR"
   /// - "½ cup potato starch"  
   /// - "1½ CUPS AGAVE NECTAR"
+  /// - "1 CUP HOMEMADE APPLESAUCE (PAGE 78) OR STORE-BOUGHT UNSWEETENED APPLESAUCE"
   /// - Baker's percentage: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
   RawIngredientData _parseIngredientLine(String line) {
+    // First, extract parenthetical notes and "or" alternatives
+    var workingLine = line;
+    String? preparation;
+    String? alternative;
+    
+    // Extract parenthetical content like "(page 78)" or "(optional)"
+    final parenMatch = RegExp(r'\(([^)]+)\)').firstMatch(workingLine);
+    if (parenMatch != null) {
+      final parenContent = parenMatch.group(1)?.toLowerCase() ?? '';
+      // Check if it's a page reference, optional marker, or other note
+      if (parenContent.contains('page') || 
+          parenContent.contains('optional') ||
+          parenContent.contains('see') ||
+          parenContent.contains('about')) {
+        preparation = parenMatch.group(1)?.trim();
+        workingLine = workingLine.replaceFirst(parenMatch.group(0)!, '').trim();
+      }
+    }
+    
+    // Extract "or ..." alternatives
+    final orMatch = RegExp(r'\s+or\s+(.+)$', caseSensitive: false).firstMatch(workingLine);
+    if (orMatch != null) {
+      alternative = orMatch.group(1)?.trim();
+      workingLine = workingLine.substring(0, orMatch.start).trim();
+    }
+    
     // Try baker's percentage format first: "Name, XX% – amount (alt amount)"
     final bakerMatch = RegExp(
       r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',
       caseSensitive: false,
-    ).firstMatch(line);
+    ).firstMatch(workingLine);
     
     if (bakerMatch != null) {
       return RawIngredientData(
@@ -698,7 +760,8 @@ class OcrRecipeImporter {
         name: bakerMatch.group(1)?.trim() ?? line,
         bakerPercent: '${bakerMatch.group(2)}%',
         amount: bakerMatch.group(3)?.trim(),
-        preparation: bakerMatch.group(4)?.trim(),
+        preparation: preparation ?? bakerMatch.group(4)?.trim(),
+        alternative: alternative,
         looksLikeIngredient: true,
       );
     }
@@ -708,14 +771,16 @@ class OcrRecipeImporter {
     final standardMatch = RegExp(
       r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
-    ).firstMatch(line);
+    ).firstMatch(workingLine);
     
     if (standardMatch != null) {
       return RawIngredientData(
         original: line,
         amount: standardMatch.group(1)?.trim(),
         unit: _normalizeUnit(standardMatch.group(2)?.trim()),
-        name: _cleanIngredientName(standardMatch.group(3)?.trim() ?? line),
+        name: _cleanIngredientName(standardMatch.group(3)?.trim() ?? workingLine),
+        preparation: preparation,
+        alternative: alternative,
         looksLikeIngredient: true,
       );
     }
@@ -725,10 +790,10 @@ class OcrRecipeImporter {
     final simpleMatch = RegExp(
       r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+)?)\s+(.+)',
       caseSensitive: false,
-    ).firstMatch(line);
+    ).firstMatch(workingLine);
     
     if (simpleMatch != null) {
-      var name = simpleMatch.group(2)?.trim() ?? line;
+      var name = simpleMatch.group(2)?.trim() ?? workingLine;
       String? unit;
       
       // Check if the name starts with a unit word that wasn't captured by standardMatch
@@ -750,14 +815,18 @@ class OcrRecipeImporter {
         amount: simpleMatch.group(1)?.trim(),
         unit: unit,
         name: _cleanIngredientName(name),
+        preparation: preparation,
+        alternative: alternative,
         looksLikeIngredient: looksLikeFood && (unit != null || name.length < 40),
       );
     }
     
-    // Fallback - just use the line as name
+    // Fallback - just use the line as name (after extracting notes/alternatives)
     return RawIngredientData(
       original: line,
-      name: _cleanIngredientName(line),
+      name: _cleanIngredientName(workingLine),
+      preparation: preparation,
+      alternative: alternative,
       looksLikeIngredient: false,
     );
   }
@@ -814,6 +883,90 @@ class OcrRecipeImporter {
       }).join(' ');
     }
     return cleaned;
+  }
+  
+  /// Fix common OCR artifacts and misreadings
+  String _fixOcrArtifacts(String text) {
+    var fixed = text;
+    
+    // Fix fraction misreadings:
+    // OCR often reads ¼ as "v4", "V4", "/4", "14" (without space)
+    // OCR often reads ½ as "v2", "V2", "/2", "12" 
+    // OCR often reads ¾ as "v4" (3/4), "/4" with context
+    
+    // Fix "v4" or "V4" -> ¼ (when at start of word/line or after space/number)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d\s*)[vV]4\b'),
+      (m) => '${m.group(1)}¼',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'^[vV]4\b', multiLine: true),
+      (m) => '¼',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\s[vV]4\b'),
+      (m) => ' ¼',
+    );
+    
+    // Fix "/4" -> ¼ (standalone or after number)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d\s*)/4\b'),
+      (m) => '${m.group(1)}¼',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'^/4\b', multiLine: true),
+      (m) => '¼',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\s/4\b'),
+      (m) => ' ¼',
+    );
+    
+    // Fix "3/4" or "3v4" or "3V4" -> ¾
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b3\s*[/vV]\s*4\b'),
+      (m) => '¾',
+    );
+    
+    // Fix "1/4" -> ¼
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b1\s*/\s*4\b'),
+      (m) => '¼',
+    );
+    
+    // Fix "v2" or "V2" or "/2" -> ½
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d\s*)[vV/]2\b'),
+      (m) => '${m.group(1)}½',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'^[vV/]2\b', multiLine: true),
+      (m) => '½',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\s[vV/]2\b'),
+      (m) => ' ½',
+    );
+    
+    // Fix "1/2" -> ½
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b1\s*/\s*2\b'),
+      (m) => '½',
+    );
+    
+    // Fix "1/3" -> ⅓
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b1\s*/\s*3\b'),
+      (m) => '⅓',
+    );
+    
+    // Fix "2/3" -> ⅔
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b2\s*/\s*3\b'),
+      (m) => '⅔',
+    );
+    
+    return fixed;
   }
 
   /// Dispose resources

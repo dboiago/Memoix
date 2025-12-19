@@ -626,6 +626,9 @@ class RawIngredientData {
 
   /// Baker's percentage (e.g., "100%", "75%", "3.3%") - for bread recipes
   final String? bakerPercent;
+  
+  /// Alternative ingredient (e.g., "or store-bought")
+  final String? alternative;
 
   /// Ingredient name
   final String name;
@@ -648,6 +651,7 @@ class RawIngredientData {
     this.unit,
     this.preparation,
     this.bakerPercent,
+    this.alternative,
     required this.name,
     this.looksLikeIngredient = true,
     this.isSection = false,
@@ -664,6 +668,7 @@ class RawIngredientData {
       preparation: preparation,
       section: section ?? sectionName,
       bakerPercent: bakerPercent,
+      alternative: alternative,
     );
   }
   
