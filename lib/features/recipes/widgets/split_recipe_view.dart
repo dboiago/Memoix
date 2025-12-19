@@ -66,8 +66,22 @@ class SplitRecipeView extends StatelessWidget {
     final hasGlassOrGarnish = isDrink && 
         ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty);
     
-    // Calculate max split view height (85% of screen, clamped for usability)
-    final maxSplitHeight = (screenHeight * 0.85).clamp(400.0, 900.0);
+    // Calculate max split view height based on screen size and device type.
+    // On mobile phones, we need to leave room for:
+    //   - MemoixHeader (~120-160px with SafeArea)
+    //   - Metadata row (~50-80px)
+    //   - Footer content visibility (user must see that more content exists below)
+    //
+    // Mobile (<600px): Use 55% of screen, clamped 200-400px to ensure footer visibility
+    // Tablet (≥600px): Use 75% of screen, clamped 400-700px for more content
+    final double maxSplitHeight;
+    if (isCompact) {
+      // Mobile: Smaller split view to ensure footer scrolls into view
+      maxSplitHeight = (screenHeight * 0.55).clamp(200.0, 400.0);
+    } else {
+      // Tablet/Desktop: Larger split view, more room available
+      maxSplitHeight = (screenHeight * 0.75).clamp(400.0, 700.0);
+    }
     
     // Estimate content height based on item counts to avoid dead space
     // Ingredients: ~50px per item (name + amount + padding)

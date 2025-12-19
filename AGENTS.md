@@ -163,10 +163,16 @@ FilterChips are UI elements - use `theme.colorScheme.secondary` for `selectedCol
 ### 4.1 Split/Side-by-Side View Layout
 The split view uses a fixed-height container strategy to allow footer content (Notes, Gallery, Nutrition) to scroll below.
 
+**Height Calculation (Responsive):**
+* **Mobile (<600px):** 55% of screen, clamped 200-400px - ensures footer visibility on small screens
+* **Tablet (≥600px):** 75% of screen, clamped 400-700px - more room for content
+
+The split view also uses content-aware sizing: if the actual content (ingredients + directions) is shorter than the max height, it shrinks to fit.
+
 **Pattern:**
 ```dart
 SizedBox(
-  height: splitViewHeight, // 85% of screen, clamped 400-900px
+  height: splitViewHeight, // Responsive: mobile=55%, tablet=75%
   child: Row(
     children: [
       Expanded(child: _IngredientsColumn(...)),  // Independent scroll
