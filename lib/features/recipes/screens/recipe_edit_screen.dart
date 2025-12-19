@@ -121,6 +121,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   // Drinks-specific fields
   String? _glass;
   final List<String> _garnish = [];
+  TextEditingController? _garnishFieldController;
 
   // Pickles-specific fields
   String? _pickleMethod;
@@ -2293,9 +2294,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           onSelected: (value) {
             if (!_garnish.contains(value)) {
               setState(() => _garnish.add(value));
+              _garnishFieldController?.clear();
             }
           },
           fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            _garnishFieldController = controller;
             return TextField(
               controller: controller,
               focusNode: focusNode,

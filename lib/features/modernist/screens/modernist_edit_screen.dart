@@ -36,6 +36,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
   ModernistType _selectedType = ModernistType.concept;
   final List<String> _equipment = [];
+  TextEditingController? _equipmentFieldController;
   final List<_IngredientRow> _ingredientRows = [];
   final List<_DirectionRow> _directionRows = [];
   
@@ -440,9 +441,11 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           onSelected: (value) {
             if (!_equipment.contains(value)) {
               setState(() => _equipment.add(value));
+              _equipmentFieldController?.clear();
             }
           },
           fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+            _equipmentFieldController = controller;
             return TextField(
               controller: controller,
               focusNode: focusNode,

@@ -54,6 +54,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   // Drinks-specific fields
   String? _glass;
   final List<String> _garnish = [];
+  TextEditingController? _garnishFieldController;
 
   // Sanitized ingredients list (removes empty/invalid entries)
   late List<RawIngredientData> _sanitizedIngredients;
@@ -951,9 +952,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               onSelected: (value) {
                 if (!_garnish.contains(value)) {
                   setState(() => _garnish.add(value));
+                  _garnishFieldController?.clear();
                 }
               },
               fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                _garnishFieldController = controller;
                 return TextField(
                   controller: controller,
                   focusNode: focusNode,
