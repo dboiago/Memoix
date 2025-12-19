@@ -177,8 +177,8 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
         ? result.importResult!.copyWith(course: widget.defaultCourse)
         : result.importResult!;
 
-    // Always go to review screen for OCR since confidence is typically low
-    Navigator.of(context).pushReplacement(
+    // Use push instead of pushReplacement so back button returns to camera
+    Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => ImportReviewScreen(importResult: importResult),
       ),

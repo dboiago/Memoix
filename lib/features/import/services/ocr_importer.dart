@@ -621,16 +621,18 @@ class OcrRecipeImporter {
       }
 
       // Check for section headers
-      if (lowerLine.contains('ingredient')) {
+      // Use word boundaries and position to avoid matching "Combine the ingredients"
+      if (RegExp(r'^ingredients?[:\s]*$|^ingredients?\s*\(', caseSensitive: false).hasMatch(lowerLine.trim()) ||
+          (lowerLine.trim() == 'ingredients')) {
         inIngredients = true;
         inDirections = false;
         foundIngredientHeader = true;
         continue;
       }
-      if (lowerLine.contains('direction') || 
-          lowerLine.contains('instruction') || 
-          lowerLine.contains('method') ||
-          lowerLine.contains('steps')) {
+      if (RegExp(r'^(directions?|instructions?|method|steps?)[:\s]*$', caseSensitive: false).hasMatch(lowerLine.trim()) ||
+          lowerLine.trim() == 'directions' ||
+          lowerLine.trim() == 'instructions' ||
+          lowerLine.trim() == 'method') {
         inIngredients = false;
         inDirections = true;
         foundDirectionHeader = true;
