@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../app/routes/router.dart';
 import '../../app/app_shell.dart';
 
-/// Navigation drawer with organized sections matching Figma design
+/// Navigation drawer with organized sections
 /// Sections: Navigate, Tools, Share
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -31,7 +31,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Recipe Management',
+                    'For savv(or)y minds.',
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.outline,
                     ),

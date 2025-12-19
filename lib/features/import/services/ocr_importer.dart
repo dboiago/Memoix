@@ -684,7 +684,10 @@ class OcrRecipeImporter {
       // - Don't start with a number
       // - Are short (< 40 chars)
       // - Contain food-related words or "or", "page", parentheses
+      // BUT NOT if the line is a garnish line
+      final looksLikeGarnish = RegExp(r'(?:to\s+)?garnish[:\s]', caseSensitive: false).hasMatch(lowerLine);
       final isLikelyContinuation = pendingIngredient != null &&
+          !looksLikeGarnish &&
           !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
           line.length < 50 &&
           (lowerLine.contains('or ') || 
@@ -720,6 +723,7 @@ class OcrRecipeImporter {
       
       // Split lines that have embedded "To garnish:" or "Garnish:" patterns
       // OCR often merges ingredient line with garnish line: "4 parts wheat beerTo garnish: orange"
+      // Also handles "Wheat beer To garnish:" where ingredient name comes first
       final garnishSplitMatch = RegExp(
         r'^(.+?)\s*((?:to\s+)?garnish[:\s].+)$',
         caseSensitive: false,
@@ -728,13 +732,12 @@ class OcrRecipeImporter {
         final beforeGarnish = garnishSplitMatch.group(1)?.trim();
         final garnishPart = garnishSplitMatch.group(2)?.trim();
         if (beforeGarnish != null && beforeGarnish.isNotEmpty && 
-            garnishPart != null && garnishPart.isNotEmpty) {
-          // Only split if "before" part looks like an ingredient (has amount)
-          if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(beforeGarnish)) {
-            processedLines.add(beforeGarnish);
-            processedLines.add(garnishPart);
-            continue;
-          }
+            garnishPart != null && garnishPart.isNotEmpty &&
+            beforeGarnish.length > 3) {  // Ensure we have meaningful content before garnish
+          // Always split if we found a garnish pattern mid-line
+          processedLines.add(beforeGarnish);
+          processedLines.add(garnishPart);
+          continue;
         }
       }
       
@@ -1642,6 +1645,14 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(cups?|tbsps?|tsps?|teaspoons?|tablespoons?|oz|lbs?|pounds?|ounces?)((?!s\b)[a-z]{3,})', caseSensitive: false),
       (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    
+    // Split merged garnish lines: "wheat beerTo garnish:" -> "wheat beer\nTo garnish:"
+    // OCR often merges ingredient with garnish instruction on same line
+    // Also handles "wheat beer Garnish:" (no "To")
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\b\w{3,})((?:To\s+)?[Gg]arnish[:\s])', caseSensitive: false),
+      (m) => '${m.group(1)}\n${m.group(2)}',
     );
     
     return fixed;

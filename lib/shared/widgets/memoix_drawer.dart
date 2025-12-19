@@ -190,7 +190,7 @@ class MemoixDrawer extends ConsumerWidget {
             Container(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Made with ❤️ in Canada',
+                'Made with salt.',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
