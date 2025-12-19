@@ -573,6 +573,16 @@ class OcrRecipeImporter {
     final directions = <String>[];
     final garnish = <String>[];
     
+    // Track nutrition info from OCR
+    int? parsedCalories;
+    double? parsedFat;
+    double? parsedCarbs;
+    double? parsedProtein;
+    double? parsedFiber;
+    double? parsedSodium;
+    double? parsedSugar;
+    String? parsedServingSize;
+    
     bool inIngredients = false;
     bool inDirections = false;
     bool inMetricSection = false;
@@ -675,34 +685,38 @@ class OcrRecipeImporter {
     }
     
     // ===== PRE-PHASE 5.5: Pair standalone ingredient names with amounts =====
-    // OCR sometimes reads "lemons" and "2" on separate lines
-    // Pattern: food word without amount FOLLOWED by standalone number
-    // Combine them: "2 lemons"
+    // OCR sometimes reads ingredient name and amount on separate lines
+    // Pattern A: "lemons" followed by "2" -> "2 lemons"
+    // Pattern B: "2" followed by "lemons" -> "2 lemons"
     final pairedLines = <String>[];
-    for (int i = 0; i < processedLines.length; i++) {
+    final standaloneNumberPattern = RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*$');
+    final standaloneFoodPattern = RegExp(
+      r'^(lemon|lime|orange|egg|onion|apple|banana|tomato|potato|clove|head|bunch|stalk|rib|sprig|slice|zest|butter|sugar|flour|salt|pepper|garlic|ginger)s?\s*$',
+      caseSensitive: false,
+    );
+    
+    int i = 0;
+    while (i < processedLines.length) {
       final line = processedLines[i].trim();
-      final lowerLine = line.toLowerCase();
-      
-      // Check if this is a standalone food word (no amount at start)
-      // Common patterns: "lemons", "eggs", "oranges", "limes"
-      final isStandaloneFoodWord = RegExp(
-        r'^(lemon|lime|orange|egg|onion|apple|banana|tomato|potato|clove|head|bunch|stalk|rib|sprig|slice|zest|juice)s?\s*$',
-        caseSensitive: false,
-      ).hasMatch(line);
-      
-      // Check if next line is a standalone number
       final hasNextLine = i + 1 < processedLines.length;
       final nextLine = hasNextLine ? processedLines[i + 1].trim() : '';
-      final nextIsStandaloneNumber = RegExp(
-        r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*$',
-      ).hasMatch(nextLine);
+      
+      final isStandaloneFoodWord = standaloneFoodPattern.hasMatch(line);
+      final isStandaloneNumber = standaloneNumberPattern.hasMatch(line);
+      final nextIsStandaloneFoodWord = standaloneFoodPattern.hasMatch(nextLine);
+      final nextIsStandaloneNumber = standaloneNumberPattern.hasMatch(nextLine);
       
       if (isStandaloneFoodWord && nextIsStandaloneNumber) {
-        // Combine: "2 lemons"
+        // Pattern A: "lemons" + "2" -> "2 lemons"
         pairedLines.add('$nextLine $line');
-        i++; // Skip the next line (the number) since we consumed it
+        i += 2; // Skip both lines
+      } else if (isStandaloneNumber && nextIsStandaloneFoodWord) {
+        // Pattern B: "2" + "lemons" -> "2 lemons"
+        pairedLines.add('$line $nextLine');
+        i += 2; // Skip both lines
       } else {
         pairedLines.add(line);
+        i++;
       }
     }
 
@@ -763,14 +777,69 @@ class OcrRecipeImporter {
         inMetricSection = false;
       }
       
-      // Skip nutrition information lines (PER BAR, PER SERVING, cal, carb, sodium, etc.)
-      // These should not be imported as ingredients
+      // Parse and collect nutrition information (PER BAR, PER SERVING, cal, carb, sodium, etc.)
+      // Extract values instead of just skipping
       final isNutritionLine = RegExp(
         r'\b(per\s+(?:bar|serving|portion)|cal(?:ories)?[,\s]|\d+\s*g?\s*(?:fat|carb|protein|fiber|fibre|sodium|chol|cholesterol|sat(?:urated)?|trans|sugars?|pro)\b|mg\s+(?:sodium|chol)|g\s+(?:fat|carb|fiber|sugars?|pro))',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       if (isNutritionLine) {
-        continue;
+        // Extract serving size if present
+        final servingSizeMatch = RegExp(r'per\s+(bar|serving|portion)', caseSensitive: false).firstMatch(lowerLine);
+        if (servingSizeMatch != null) {
+          parsedServingSize = '1 ${servingSizeMatch.group(1)}';
+        }
+        
+        // Extract calories: "120 cal", "120 calories", "cal 120"
+        final calMatch = RegExp(r'(\d+)\s*cal(?:ories)?|cal(?:ories)?\s*(\d+)', caseSensitive: false).firstMatch(line);
+        if (calMatch != null) {
+          final calValue = calMatch.group(1) ?? calMatch.group(2);
+          if (calValue != null) parsedCalories = int.tryParse(calValue);
+        }
+        
+        // Extract fat: "5g fat", "5 g fat", "fat 5g"
+        final fatMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*(?:total\s+)?fat|fat\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
+        if (fatMatch != null) {
+          final fatValue = fatMatch.group(1) ?? fatMatch.group(2);
+          if (fatValue != null) parsedFat = double.tryParse(fatValue);
+        }
+        
+        // Extract carbs: "20g carb", "carbohydrate 20g"
+        final carbMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*carb(?:ohydrate)?s?|carb(?:ohydrate)?s?\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
+        if (carbMatch != null) {
+          final carbValue = carbMatch.group(1) ?? carbMatch.group(2);
+          if (carbValue != null) parsedCarbs = double.tryParse(carbValue);
+        }
+        
+        // Extract protein: "5g protein", "pro 5g"
+        final proteinMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*(?:protein|pro)|(?:protein|pro)\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
+        if (proteinMatch != null) {
+          final protValue = proteinMatch.group(1) ?? proteinMatch.group(2);
+          if (protValue != null) parsedProtein = double.tryParse(protValue);
+        }
+        
+        // Extract fiber: "3g fiber"
+        final fiberMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*fib(?:er|re)|fib(?:er|re)\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
+        if (fiberMatch != null) {
+          final fiberValue = fiberMatch.group(1) ?? fiberMatch.group(2);
+          if (fiberValue != null) parsedFiber = double.tryParse(fiberValue);
+        }
+        
+        // Extract sodium: "150mg sodium"
+        final sodiumMatch = RegExp(r'(\d+\.?\d*)\s*mg?\s*sodium|sodium\s*(\d+\.?\d*)\s*mg?', caseSensitive: false).firstMatch(line);
+        if (sodiumMatch != null) {
+          final sodiumValue = sodiumMatch.group(1) ?? sodiumMatch.group(2);
+          if (sodiumValue != null) parsedSodium = double.tryParse(sodiumValue);
+        }
+        
+        // Extract sugar: "10g sugar"
+        final sugarMatch = RegExp(r'(\d+\.?\d*)\s*g?\s*sugars?|sugars?\s*(\d+\.?\d*)\s*g?', caseSensitive: false).firstMatch(line);
+        if (sugarMatch != null) {
+          final sugarValue = sugarMatch.group(1) ?? sugarMatch.group(2);
+          if (sugarValue != null) parsedSugar = double.tryParse(sugarValue);
+        }
+        
+        continue; // Don't add nutrition line as ingredient
       }
       
       // Check for garnish line: "To garnish: ..." or "Garnish: ..."
@@ -815,12 +884,23 @@ class OcrRecipeImporter {
       ).allMatches(lowerLine).length;
       
       // Check if line is clearly a direction fragment (partial sentence from directions)
+      // This includes lines that have numbers/units but are clearly parts of directions
+      // Examples: "meanwhile, remove 1", "Tbsp. zest and", "juice from lemons. In a medium"
       final isDirectionFragment = RegExp(
-        r'\b(frosting on|layer and|the top of|cupcake back|and set|on it\b|with another|an extra|fill a|pastry bag|onto each|store the|in the center|airtight container|wire rack|cool completely|come out clean|bounce back|pressure is applied|center rack|paper liners|muffin tins?|thick batter|dry ingredients|continue mixing)\b',
+        r'\b(frosting on|layer and|the top of|cupcake back|and set|on it\b|with another|an extra|fill a|pastry bag|onto each|store the|in the center|airtight container|wire rack|cool completely|come out clean|bounce back|pressure is applied|center rack|paper liners|muffin tins?|thick batter|dry ingredients|continue mixing|meanwhile|from lemons|from limes|from oranges|zest and|juice and|zest from|juice from|in a medium|in a large|in a small|into a bowl)\b',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       
-      final isLikelyDirection = actionVerbCount >= 2 || startsWithAction || isDirectionFragment;
+      // Detect lines that LOOK like ingredients but are partial directions
+      // "Tbsp. zest and" - starts with unit but continues with "and"
+      // "1/2 of the mixture" - measurement but refers to "the mixture"
+      // "remove 1" - action + number
+      final looksLikeIngredientButIsDirection = RegExp(
+        r'(^(tbsp|tsp|cup|oz|lb)s?\.?\s+\w+\s+and\b|the\s+(mixture|batter|dough|frosting|filling)|remove\s+\d|add\s+\d|use\s+\d|set\s+aside|remaining\s+\d|half\s+of\s+the|rest\s+of\s+the)',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      
+      final isLikelyDirection = actionVerbCount >= 2 || startsWithAction || isDirectionFragment || looksLikeIngredientButIsDirection;
       
       // Check if this looks like a prose fragment (tips, variations, narrative)
       // This check needs to happen BEFORE inIngredients check to avoid false positives
@@ -1005,9 +1085,21 @@ class OcrRecipeImporter {
       caseSensitive: false,
     );
     
+    // Time/storage info pattern - these are metadata, not direction steps
+    // "HANDS ON 20 minutes BAKE 45 minutes at 350F Refrigerate in an airtight container..."
+    final timeStoragePattern = RegExp(
+      r'^(hands on|prep time|cook time|bake time|total time|refrigerate in|store in|makes?\\s+\\d|yields?\\s+\\d|serves?\\s+\\d)',
+      caseSensitive: false,
+    );
+    
     for (final direction in rawDirections) {
+      // Skip lines that are time/storage metadata, not actual directions
+      if (timeStoragePattern.hasMatch(direction.trim().toLowerCase())) {
+        continue;
+      }
+      
       // Split on period followed by space and capital letter, or period at end
-      final sentences = direction.split(RegExp(r'(?<=\.)\s+(?=[A-Z])|(?<=\.)\s*$'));
+      final sentences = direction.split(RegExp(r'(?<=\\.)\s+(?=[A-Z])|(?<=\\.)\s*$'));
       
       for (final sentence in sentences) {
         final trimmed = sentence.trim();
@@ -1120,6 +1212,22 @@ class OcrRecipeImporter {
       if (foundDirectionHeader) directionsConfidence += 0.2;
       if (rawDirections.length >= 3) directionsConfidence += 0.1;
     }
+    
+    // Build nutrition info if any values were parsed
+    NutritionInfo? parsedNutrition;
+    if (parsedCalories != null || parsedFat != null || parsedCarbs != null || 
+        parsedProtein != null || parsedFiber != null || parsedSodium != null || parsedSugar != null) {
+      parsedNutrition = NutritionInfo.create(
+        servingSize: parsedServingSize,
+        calories: parsedCalories,
+        fatContent: parsedFat,
+        carbohydrateContent: parsedCarbs,
+        proteinContent: parsedProtein,
+        fiberContent: parsedFiber,
+        sodiumContent: parsedSodium,
+        sugarContent: parsedSugar,
+      );
+    }
 
     return RecipeImportResult(
       name: name,
@@ -1130,6 +1238,7 @@ class OcrRecipeImporter {
       ingredients: ingredients,
       directions: directions,
       garnish: garnish,
+      nutrition: parsedNutrition,
       rawText: rawText,
       textBlocks: blocks,
       rawIngredients: rawIngredients,
@@ -1561,6 +1670,14 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(^|\n|\s)l\s+(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|g\.?|kg\.?|ml\.?|c\.|t\.)\b', caseSensitive: false),
       (m) => '${m.group(1)}1 ${m.group(2)}',
+    );
+    
+    // Fix merged unit+word patterns where OCR doesn't add space:
+    // "cuppowdered" -> "cup powdered", "cupall-purpose" -> "cup all-purpose"
+    // "tbspunsalted" -> "tbsp unsalted", "tspvanilla" -> "tsp vanilla"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(cups?|tbsps?|tsps?|teaspoons?|tablespoons?|oz|lbs?|pounds?|ounces?)((?!s\b)[a-z]{3,})', caseSensitive: false),
+      (m) => '${m.group(1)} ${m.group(2)}',
     );
     
     return fixed;

@@ -280,6 +280,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             _buildNotesCard(theme, result.notes!),
             const SizedBox(height: 24),
           ],
+          
+          // Nutrition (if parsed from OCR)
+          if (result.nutrition != null) ...[
+            _buildSectionTitle(theme, 'Nutrition', Icons.restaurant_menu),
+            const SizedBox(height: 8),
+            _buildNutritionCard(theme, result.nutrition!),
+            const SizedBox(height: 24),
+          ],
 
           const SizedBox(height: 8),
 
@@ -1235,6 +1243,60 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           style: theme.textTheme.bodyMedium,
         ),
       ),
+    );
+  }
+  
+  Widget _buildNutritionCard(ThemeData theme, NutritionInfo nutrition) {
+    final items = <Widget>[];
+    
+    if (nutrition.servingSize != null) {
+      items.add(_nutritionRow('Serving Size', nutrition.servingSize!));
+    }
+    if (nutrition.calories != null) {
+      items.add(_nutritionRow('Calories', '${nutrition.calories}'));
+    }
+    if (nutrition.fatContent != null) {
+      items.add(_nutritionRow('Fat', '${nutrition.fatContent}g'));
+    }
+    if (nutrition.carbohydrateContent != null) {
+      items.add(_nutritionRow('Carbs', '${nutrition.carbohydrateContent}g'));
+    }
+    if (nutrition.proteinContent != null) {
+      items.add(_nutritionRow('Protein', '${nutrition.proteinContent}g'));
+    }
+    if (nutrition.fiberContent != null) {
+      items.add(_nutritionRow('Fiber', '${nutrition.fiberContent}g'));
+    }
+    if (nutrition.sugarContent != null) {
+      items.add(_nutritionRow('Sugar', '${nutrition.sugarContent}g'));
+    }
+    if (nutrition.sodiumContent != null) {
+      items.add(_nutritionRow('Sodium', '${nutrition.sodiumContent}mg'));
+    }
+    
+    return Card(
+      color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Wrap(
+          spacing: 24,
+          runSpacing: 8,
+          children: items,
+        ),
+      ),
+    );
+  }
+  
+  Widget _nutritionRow(String label, String value) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          '$label: ',
+          style: const TextStyle(fontWeight: FontWeight.w500),
+        ),
+        Text(value),
+      ],
     );
   }
 
