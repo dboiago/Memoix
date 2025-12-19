@@ -487,7 +487,7 @@ class OcrRecipeImporter {
     // ===== PHASE 3: Detect course from context clues =====
     String course = 'Mains';
     double courseConfidence = 0.2;
-    final allText = rawText.toLowerCase();
+    final allText = cleanedText.toLowerCase();  // Use cleanedText for OCR-fixed keywords
     
     // Dessert indicators
     final dessertKeywords = ['cupcake', 'cake', 'cookie', 'brownie', 'frosting', 
@@ -1661,6 +1661,15 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(\b\w{3,})((?:To\s+)?[Gg]arnish[:\s])', caseSensitive: false),
       (m) => '${m.group(1)}\n${m.group(2)}',
+    );
+    
+    // Split merged ingredient+direction lines:
+    // "butter softened bake at 350" -> "butter softened\nbake at 350"
+    // "flour sifted preheat oven" -> "flour sifted\npreheat oven"
+    // Pattern: word ending + cooking action verb
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\b\w{3,}ed|\w{3,})\s+(bake|preheat|cook|roast|grill|broil|fry|saute|simmer|boil|steam|mix|combine|stir|whisk|beat|fold|pour|spread|let|place|remove|set|turn|cover|refrigerate|chill|freeze|cool|rest|allow)\s+(at|for|the|in|on|to|until|over)\b', caseSensitive: false),
+      (m) => '${m.group(1)}\n${m.group(2)} ${m.group(3)}',
     );
     
     // Fix OCR reading capital "I" as "1" when attached to word start:
