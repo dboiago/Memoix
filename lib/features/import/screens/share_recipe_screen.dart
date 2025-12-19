@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -373,11 +374,19 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
         const SizedBox(height: 8),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                _buildFilterChip('All', theme),
+          child: ScrollConfiguration(
+            behavior: ScrollConfiguration.of(context).copyWith(
+              dragDevices: {
+                PointerDeviceKind.touch,
+                PointerDeviceKind.mouse,
+                PointerDeviceKind.trackpad,
+              },
+            ),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  _buildFilterChip('All', theme),
                 ...Category.defaults
                     .where((c) => allItems.any((item) =>
                         item.type == ShareableType.recipe &&
@@ -397,6 +406,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                 if (allItems.any((i) => i.type == ShareableType.cheese))
                   _buildFilterChip('Cheese', theme),
               ],
+              ),
             ),
           ),
         ),

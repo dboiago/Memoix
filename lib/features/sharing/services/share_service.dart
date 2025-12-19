@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
@@ -17,10 +18,34 @@ import '../../cheese/models/cheese_entry.dart';
 
 /// Service for sharing and importing recipes
 class ShareService {
+  /// Compress and encode data for sharing
+  String _compressAndEncode(Map<String, dynamic> json) {
+    final jsonString = jsonEncode(json);
+    final compressed = gzip.encode(utf8.encode(jsonString));
+    return base64Url.encode(compressed);
+  }
+
+  /// Decode and decompress shared data
+  Map<String, dynamic>? _decodeAndDecompress(String encoded) {
+    try {
+      final compressed = base64Url.decode(encoded);
+      final decompressed = gzip.decode(compressed);
+      return jsonDecode(utf8.decode(decompressed)) as Map<String, dynamic>;
+    } catch (e) {
+      // Fallback: try without compression (for old links)
+      try {
+        final decoded = utf8.decode(base64Url.decode(encoded));
+        return jsonDecode(decoded) as Map<String, dynamic>;
+      } catch (_) {
+        return null;
+      }
+    }
+  }
+
   /// Generate a shareable link for a recipe
   String generateShareLink(Recipe recipe) {
     final json = recipe.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://recipe/$encoded';
   }
 
@@ -102,8 +127,8 @@ class ShareService {
         encoded = link;
       }
       
-      final decoded = utf8.decode(base64Url.decode(encoded));
-      final json = jsonDecode(decoded) as Map<String, dynamic>;
+      final json = _decodeAndDecompress(encoded);
+      if (json == null) return null;
       
       return Recipe.fromJson(json)..source = RecipeSource.imported;
     } catch (e) {
@@ -171,7 +196,7 @@ class ShareService {
   /// Generate a shareable link for a pizza
   String generatePizzaShareLink(Pizza pizza) {
     final json = pizza.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://pizza/$encoded';
   }
 
@@ -289,7 +314,7 @@ class ShareService {
   /// Generate a shareable link for a sandwich
   String generateSandwichShareLink(Sandwich sandwich) {
     final json = sandwich.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://sandwich/$encoded';
   }
 
@@ -417,7 +442,7 @@ class ShareService {
   /// Generate a shareable link for a smoking recipe
   String generateSmokingShareLink(SmokingRecipe recipe) {
     final json = recipe.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://smoking/$encoded';
   }
 
@@ -533,7 +558,7 @@ class ShareService {
   /// Generate a shareable link for a modernist recipe
   String generateModernistShareLink(ModernistRecipe recipe) {
     final json = recipe.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://modernist/$encoded';
   }
 
@@ -666,7 +691,7 @@ class ShareService {
   /// Generate a shareable link for a cellar entry
   String generateCellarShareLink(CellarEntry entry) {
     final json = entry.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://cellar/$encoded';
   }
 
@@ -739,7 +764,7 @@ class ShareService {
   /// Generate a shareable link for a cheese entry
   String generateCheeseShareLink(CheeseEntry entry) {
     final json = entry.toShareableJson();
-    final encoded = base64Url.encode(utf8.encode(jsonEncode(json)));
+    final encoded = _compressAndEncode(json);
     return 'memoix://cheese/$encoded';
   }
 
