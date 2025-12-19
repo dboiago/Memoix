@@ -653,6 +653,7 @@ class UrlRecipeImporter {
       
       String body;
       var document;
+      bool usedWaybackMachine = false; // Track if we used archive (images won't work)
       
       if (response == null || response.statusCode != 200) {
         // Check if we got a 403 (bot detection)
@@ -690,6 +691,7 @@ class UrlRecipeImporter {
                   // Clean up Wayback Machine's injected toolbar HTML
                   body = body.replaceAll(RegExp(r'<!-- BEGIN WAYBACK TOOLBAR INSERT -->.*?<!-- END WAYBACK TOOLBAR INSERT -->', dotAll: true), '');
                   document = html_parser.parse(body);
+                  usedWaybackMachine = true; // Images from archive are often broken
                   // Archive succeeded, continue with normal parsing below
                 } else {
                   throw Exception('Archive returned ${archiveResponse.statusCode}');
@@ -5017,19 +5019,11 @@ class UrlRecipeImporter {
     return UnitNormalizer.normalize(unit);
   }
 
-  /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½)
+  /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½, 0.333333 → ⅓)
   String? _normalizeFractions(String? text) {
     if (text == null || text.isEmpty) return text;
     
     var result = text;
-    
-    // Decimal to fraction mapping
-    const decimalToFraction = {
-      '0.5': '½', '0.25': '¼', '0.75': '¾',
-      '0.33': '⅓', '0.333': '⅓', '0.67': '⅔', '0.666': '⅔', '0.667': '⅔',
-      '0.125': '⅛', '0.375': '⅜', '0.625': '⅝', '0.875': '⅞',
-      '0.2': '⅕', '0.4': '⅖', '0.6': '⅗', '0.8': '⅘',
-    };
     
     // Text fraction to unicode mapping
     const textToFraction = {
@@ -5044,6 +5038,33 @@ class UrlRecipeImporter {
     for (final entry in textToFraction.entries) {
       result = result.replaceAll(entry.key, entry.value);
     }
+    
+    // Replace long decimal representations of fractions
+    // Match 0.333... (1/3), 0.666... (2/3), 0.166... (1/6), 0.833... (5/6)
+    result = result.replaceAllMapped(
+      RegExp(r'\b0\.3{3,}\d*\b'),  // 0.333...
+      (m) => '⅓',
+    );
+    result = result.replaceAllMapped(
+      RegExp(r'\b0\.6{3,}\d*\b'),  // 0.666...
+      (m) => '⅔',
+    );
+    result = result.replaceAllMapped(
+      RegExp(r'\b0\.16{2,}\d*\b'), // 0.166...
+      (m) => '⅙',
+    );
+    result = result.replaceAllMapped(
+      RegExp(r'\b0\.83{2,}\d*\b'), // 0.833...
+      (m) => '⅚',
+    );
+    
+    // Decimal to fraction mapping for common short decimals
+    const decimalToFraction = {
+      '0.5': '½', '0.25': '¼', '0.75': '¾',
+      '0.33': '⅓', '0.333': '⅓', '0.67': '⅔', '0.666': '⅔', '0.667': '⅔',
+      '0.125': '⅛', '0.375': '⅜', '0.625': '⅝', '0.875': '⅞',
+      '0.2': '⅕', '0.4': '⅖', '0.6': '⅗', '0.8': '⅘',
+    };
     
     // Replace decimals
     for (final entry in decimalToFraction.entries) {
@@ -5194,12 +5215,18 @@ class UrlRecipeImporter {
 
   String? _parseImage(dynamic value) {
     if (value == null) return null;
-    if (value is String) return value;
+    if (value is String) {
+      // Skip Wayback Machine archived images - they often don't work correctly
+      if (value.contains('web.archive.org') || value.contains('archive.org/web/')) {
+        return null;
+      }
+      return value;
+    }
     if (value is List && value.isNotEmpty) {
       return _parseImage(value.first);
     }
     if (value is Map) {
-      return _parseString(value['url']) ?? _parseString(value['contentUrl']);
+      return _parseImage(_parseString(value['url']) ?? _parseString(value['contentUrl']));
     }
     return null;
   }

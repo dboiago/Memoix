@@ -5,6 +5,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../recipes/models/recipe.dart';
+import '../../recipes/models/category.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../sharing/services/share_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -22,6 +23,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   Recipe? _selectedRecipe;
   String? _shareLink;
   bool _isGenerating = false;
+  bool _qrCodeTooLong = false; // Track if QR code data exceeds capacity
   String _searchQuery = '';
   String _selectedCourse = 'All';
   final _searchController = TextEditingController();
@@ -46,13 +48,22 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   Future<void> _generateShareLink() async {
     if (_selectedRecipe == null) return;
 
-    setState(() => _isGenerating = true);
+    setState(() {
+      _isGenerating = true;
+      _qrCodeTooLong = false;
+    });
 
     try {
       final shareService = ref.read(shareServiceProvider);
       final link = shareService.generateShareLink(_selectedRecipe!);
+      
+      // QR codes have a max capacity - version 40 can hold ~2953 alphanumeric chars
+      // Base64 is less efficient, so check if link is too long (roughly 2KB is safe)
+      final isTooLong = link.length > 2000;
+      
       setState(() {
         _shareLink = link;
+        _qrCodeTooLong = isTooLong;
         _isGenerating = false;
       });
     } catch (e) {
@@ -65,13 +76,43 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Share Recipe'),
+    return PopScope(
+      canPop: _selectedRecipe == null, // Only pop if no recipe selected
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop && _selectedRecipe != null) {
+          // Go back to recipe selector instead of leaving screen
+          setState(() {
+            _selectedRecipe = null;
+            _shareLink = null;
+            _qrCodeTooLong = false;
+          });
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Share Recipe'),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              if (_selectedRecipe != null) {
+                // Go back to recipe selector
+                setState(() {
+                  _selectedRecipe = null;
+                  _shareLink = null;
+                  _qrCodeTooLong = false;
+                });
+              } else {
+                // Leave the screen
+                Navigator.of(context).pop();
+              }
+            },
+          ),
+        ),
+        body: _selectedRecipe == null
+            ? _buildRecipeSelector()
+            : _buildShareOptions(theme),
       ),
-      body: _selectedRecipe == null
-          ? _buildRecipeSelector()
-          : _buildShareOptions(theme),
+    );
     );
   }
 
@@ -111,45 +152,78 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           ),
         ),
         const SizedBox(height: 8),
-        // Course filter chips
+        // Course filter chips - use Category.defaults for proper ordering
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: recipesAsync.when(
             loading: () => const SizedBox.shrink(),
             error: (_, __) => const SizedBox.shrink(),
             data: (recipes) {
-              final courses = {'All', ...recipes.map((r) => r.course).where((c) => c.isNotEmpty)};
+              // Get courses that have recipes, ordered by Category.defaults
+              final recipeCourses = recipes.map((r) => r.course.toLowerCase()).toSet();
+              final orderedCourses = Category.defaults
+                  .where((c) => recipeCourses.contains(c.slug) || recipeCourses.contains(c.name.toLowerCase()))
+                  .map((c) => c.name)
+                  .toList();
+              
               return SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                  children: courses.map((course) {
-                    final isSelected = _selectedCourse == course;
-                    final displayName = course[0].toUpperCase() + course.substring(1);
-                    return Padding(
+                  children: [
+                    // "All" chip first
+                    Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: FilterChip(
-                        label: Text(displayName),
-                        selected: isSelected,
+                        label: const Text('All'),
+                        selected: _selectedCourse == 'All',
                         onSelected: (selected) {
-                          setState(() => _selectedCourse = course);
+                          setState(() => _selectedCourse = 'All');
                         },
                         backgroundColor: theme.colorScheme.surfaceContainerHighest,
                         selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
                         showCheckmark: false,
                         side: BorderSide(
-                          color: isSelected
+                          color: _selectedCourse == 'All'
                               ? theme.colorScheme.secondary
                               : theme.colorScheme.outline.withOpacity(0.2),
-                          width: isSelected ? 1.5 : 1.0,
+                          width: _selectedCourse == 'All' ? 1.5 : 1.0,
                         ),
                         labelStyle: TextStyle(
-                          color: isSelected
+                          color: _selectedCourse == 'All'
                               ? theme.colorScheme.secondary
                               : theme.colorScheme.onSurface,
                         ),
                       ),
-                    );
-                  }).toList(),
+                    ),
+                    // Course chips in Category.defaults order
+                    ...orderedCourses.map((course) {
+                      final isSelected = _selectedCourse.toLowerCase() == course.toLowerCase();
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: FilterChip(
+                          label: Text(course),
+                          selected: isSelected,
+                          onSelected: (selected) {
+                            setState(() => _selectedCourse = course);
+                          },
+                          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                          selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+                          showCheckmark: false,
+                          side: BorderSide(
+                            color: isSelected
+                                ? theme.colorScheme.secondary
+                                : theme.colorScheme.outline.withOpacity(0.2),
+                            width: isSelected ? 1.5 : 1.0,
+                          ),
+                          labelStyle: TextStyle(
+                            color: isSelected
+                                ? theme.colorScheme.secondary
+                                : theme.colorScheme.onSurface,
+                          ),
+                        ),
+                      );
+                    }),
+                  ],
                 ),
               );
             },
@@ -164,9 +238,21 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
             data: (recipes) {
               // Filter recipes
               final filtered = recipes.where((r) {
-                // Course filter
-                if (_selectedCourse != 'All' && r.course != _selectedCourse) {
-                  return false;
+                // Course filter - match by slug or name (case-insensitive)
+                if (_selectedCourse != 'All') {
+                  final courseLower = r.course.toLowerCase();
+                  final selectedLower = _selectedCourse.toLowerCase();
+                  // Match exact course or Category slug/name
+                  if (courseLower != selectedLower) {
+                    // Check if it matches a Category's slug
+                    final matchingCategory = Category.defaults.firstWhere(
+                      (c) => c.name.toLowerCase() == selectedLower,
+                      orElse: () => Category.create(slug: '', name: '', colorValue: 0),
+                    );
+                    if (matchingCategory.slug.isEmpty || courseLower != matchingCategory.slug) {
+                      return false;
+                    }
+                  }
                 }
                 // Search filter
                 if (_searchQuery.isNotEmpty) {
@@ -179,6 +265,9 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                 }
                 return true;
               }).toList();
+              
+              // Sort alphabetically by name
+              filtered.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
 
               if (filtered.isEmpty) {
                 return Center(
@@ -198,10 +287,30 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                 );
               }
 
-              // Group by course
+              // Group by course, maintaining Category.defaults order
               final grouped = <String, List<Recipe>>{};
+              // Initialize groups in Category.defaults order
+              for (final cat in Category.defaults) {
+                final matchingRecipes = filtered.where((r) {
+                  final courseLower = r.course.toLowerCase();
+                  return courseLower == cat.slug || courseLower == cat.name.toLowerCase();
+                }).toList();
+                if (matchingRecipes.isNotEmpty) {
+                  grouped[cat.name] = matchingRecipes;
+                }
+              }
+              // Add any recipes with courses not in Category.defaults
               for (final recipe in filtered) {
-                grouped.putIfAbsent(recipe.course, () => []).add(recipe);
+                final courseLower = recipe.course.toLowerCase();
+                final isKnownCourse = Category.defaults.any(
+                  (c) => c.slug == courseLower || c.name.toLowerCase() == courseLower,
+                );
+                if (!isKnownCourse) {
+                  final displayCourse = recipe.course.isNotEmpty 
+                      ? recipe.course[0].toUpperCase() + recipe.course.substring(1)
+                      : 'Other';
+                  grouped.putIfAbsent(displayCourse, () => []).add(recipe);
+                }
               }
 
               return ListView.builder(
@@ -216,7 +325,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                         Padding(
                           padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
                           child: Text(
-                            course[0].toUpperCase() + course.substring(1),
+                            course,
                             style: theme.textTheme.titleSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: theme.colorScheme.primary,
@@ -269,6 +378,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                   setState(() {
                     _selectedRecipe = null;
                     _shareLink = null;
+                    _qrCodeTooLong = false;
                   });
                 },
                 child: const Text('Change'),
@@ -277,8 +387,8 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           ),
           const SizedBox(height: 24),
 
-          // QR Code
-          if (_shareLink != null) ...[
+          // QR Code - only show if not too long
+          if (_shareLink != null && !_qrCodeTooLong) ...[
             Center(
               child: Container(
                 padding: const EdgeInsets.all(16),
@@ -307,6 +417,39 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
               textAlign: TextAlign.center,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.outline,
+              ),
+            ),
+          ] else if (_qrCodeTooLong) ...[
+            // Recipe too large for QR code
+            Container(
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.surfaceContainerHighest,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.info_outline,
+                    size: 48,
+                    color: theme.colorScheme.outline,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Recipe too large for QR code',
+                    style: theme.textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'This recipe has too many ingredients or directions to fit in a QR code. Use "Share Link" or "As Text" instead.',
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.outline,
+                    ),
+                  ),
+                ],
               ),
             ),
           ] else if (_isGenerating) ...[
