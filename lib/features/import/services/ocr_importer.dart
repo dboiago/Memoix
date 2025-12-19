@@ -644,9 +644,9 @@ class OcrRecipeImporter {
     
     // Secondary pattern for ingredients without units: "½ corn starch", "2 eggs"
     // Matches fraction/number followed directly by ingredient name (no unit)
-    // Allow hyphens and apostrophes in ingredient names (e.g., "all-purpose", "baker's")
+    // Allow hyphens in ingredient names (e.g., "all-purpose")
     final ingredientNoUnitPattern = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+([a-zA-Z][a-zA-Z\s\-\']+)$',
+      r"^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+([a-zA-Z][a-zA-Z\s\-']+)$",
       caseSensitive: false,
     );
     
