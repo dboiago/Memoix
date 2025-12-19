@@ -641,6 +641,13 @@ class OcrRecipeImporter {
       r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞/]+)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|parts?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     );
+    
+    // Secondary pattern for ingredients without units: "½ corn starch", "2 eggs"
+    // Matches fraction/number followed directly by ingredient name (no unit)
+    final ingredientNoUnitPattern = RegExp(
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+([a-zA-Z][a-zA-Z\s]+)$',
+      caseSensitive: false,
+    );
 
     final rawIngredients = <RawIngredientData>[];
     final rawDirections = <String>[];
@@ -721,7 +728,9 @@ class OcrRecipeImporter {
       }
       
       // Check if current line starts an ingredient that might continue
-      final startsWithIngredient = ingredientPattern.hasMatch(line);
+      // Check both patterns: with unit and without unit
+      final startsWithIngredient = ingredientPattern.hasMatch(line) || 
+          ingredientNoUnitPattern.hasMatch(line);
       
       // Split lines that have embedded "To garnish:" or "Garnish:" patterns
       // OCR often merges ingredient line with garnish line: "4 parts wheat beerTo garnish: orange"
@@ -989,8 +998,10 @@ class OcrRecipeImporter {
         caseSensitive: false,
       ).allMatches(lowerLine).length >= 2; // Need 2+ prose words to trigger
 
-      // Check if line looks like an ingredient
+      // Check if line looks like an ingredient (with or without unit)
       final ingredientMatch = ingredientPattern.firstMatch(line);
+      final ingredientNoUnitMatch = ingredientNoUnitPattern.firstMatch(line);
+      final hasIngredientPattern = ingredientMatch != null || ingredientNoUnitMatch != null;
       final isNumberedStep = RegExp(r'^\d+[\.\)]\s').hasMatch(line);
       
       // Long prose lines (>80 chars with multiple sentences) are likely directions
@@ -1079,8 +1090,8 @@ class OcrRecipeImporter {
         paragraphDirections.add(line);
         inDirections = true;
         inIngredients = false;
-      } else if (ingredientMatch != null && !isLikelyDirection) {
-        // Matched ingredient pattern AND doesn't look like a direction
+      } else if (hasIngredientPattern && !isLikelyDirection) {
+        // Matched ingredient pattern (with or without unit) AND doesn't look like a direction
         final parsed = _parseIngredientLine(line);
         rawIngredients.add(parsed);
         ingredients.add(Ingredient.create(
@@ -1116,8 +1127,8 @@ class OcrRecipeImporter {
         }
         inDirections = true;
         inIngredients = false;
-      } else if (inIngredients || ingredientMatch != null) {
-        // In ingredients section or has ingredient pattern
+      } else if (inIngredients || hasIngredientPattern) {
+        // In ingredients section or has ingredient pattern (with or without unit)
         final parsed = _parseIngredientLine(line);
         rawIngredients.add(parsed);
         ingredients.add(Ingredient.create(
@@ -1663,15 +1674,6 @@ class OcrRecipeImporter {
       (m) => '${m.group(1)}\n${m.group(2)}',
     );
     
-    // Split merged ingredient+direction lines:
-    // "butter softened bake at 350" -> "butter softened\nbake at 350"
-    // "flour sifted preheat oven" -> "flour sifted\npreheat oven"
-    // Pattern: word ending + cooking action verb
-    fixed = fixed.replaceAllMapped(
-      RegExp(r'(\b\w{3,}ed|\w{3,})\s+(bake|preheat|cook|roast|grill|broil|fry|saute|simmer|boil|steam|mix|combine|stir|whisk|beat|fold|pour|spread|let|place|remove|set|turn|cover|refrigerate|chill|freeze|cool|rest|allow)\s+(at|for|the|in|on|to|until|over)\b', caseSensitive: false),
-      (m) => '${m.group(1)}\n${m.group(2)} ${m.group(3)}',
-    );
-    
     // Fix OCR reading capital "I" as "1" when attached to word start:
     // "1cing" -> "Icing", "1talian" -> "Italian", "1ce" -> "Ice"
     fixed = fixed.replaceAllMapped(
@@ -1722,6 +1724,15 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'\bd[iI]ced\b', caseSensitive: false),
       (m) => 'diced',
+    );
+    
+    // Split merged ingredient+direction lines (MUST be after word fixes like softened):
+    // "butter softened bake at 350" -> "butter softened\nbake at 350"
+    // "flour sifted preheat oven" -> "flour sifted\npreheat oven"
+    // Pattern: word ending + cooking action verb + preposition
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\b\w{3,})\s+(bake|preheat|cook|roast|grill|broil|fry|saute|simmer|boil|steam|mix|combine|stir|whisk|beat|fold|pour|spread|let|place|remove|set|turn|cover|refrigerate|chill|freeze|cool|rest|allow)\s+(at|for|the|in|on|to|until|over)\b', caseSensitive: false),
+      (m) => '${m.group(1)}\n${m.group(2)} ${m.group(3)}',
     );
     
     return fixed;

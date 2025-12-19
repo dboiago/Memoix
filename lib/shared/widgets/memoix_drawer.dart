@@ -49,7 +49,7 @@ class MemoixDrawer extends ConsumerWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Your Recipe Vault',
+                    'For savv(or)y minds',
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: theme.colorScheme.onPrimary.withAlpha((0.8 * 255).round()),
                     ),
