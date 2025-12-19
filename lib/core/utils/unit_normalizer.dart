@@ -112,6 +112,11 @@ class UnitNormalizer {
     'gallon': 'gal',
     'gallons': 'gal',
     'gal': 'gal',
+    
+    // Size descriptors (kept as-is for countable items like "2 large eggs")
+    'large': 'large',
+    'medium': 'medium',
+    'small': 'small',
   };
   
   /// Normalize a unit string to its abbreviation

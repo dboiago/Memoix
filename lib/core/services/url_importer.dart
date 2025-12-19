@@ -490,11 +490,14 @@ class UrlRecipeImporter {
       // Helper function to attempt fetch with given headers
       // Uses IOClient with custom HttpClient for better HTTP/1.1 compatibility
       Future<http.Response> tryFetch(Map<String, String> headers) async {
-        // Create a custom HttpClient that forces HTTP/1.1
-        // This helps with sites like Delish.com that prefer HTTP/2 but we can't parse HTTP/2
+        // Create a custom HttpClient that mimics a real browser
+        // This helps avoid bot detection on sites like allrecipes.com
         final httpClient = HttpClient()
           ..connectionTimeout = const Duration(seconds: 30)
-          ..idleTimeout = const Duration(seconds: 10);
+          ..idleTimeout = const Duration(seconds: 10)
+          ..userAgent = headers['User-Agent'] ?? 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+          ..autoUncompress = true // Let the client handle decompression like a browser
+          ..maxConnectionsPerHost = 6; // Chrome uses 6 connections per host
         
         try {
           final client = IOClient(httpClient);
@@ -523,7 +526,15 @@ class UrlRecipeImporter {
           uri.host.contains('bonappetit.com');
       
       final headerConfigs = [
-        // Config 0: Dotdash Meredith sites - use identity encoding + close connection to avoid HTTP parsing issues
+        // Config 0: Googlebot FIRST for Dotdash sites - they reliably allow crawlers for SEO
+        if (isDotdashSite) {
+          'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'identity',
+          'Connection': 'close',
+        },
+        // Config 1: Dotdash Meredith sites - full Chrome headers as fallback
         if (isDotdashSite) {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -541,7 +552,7 @@ class UrlRecipeImporter {
           'Sec-Fetch-User': '?1',
           'Upgrade-Insecure-Requests': '1',
         },
-        // Config 1: Standard Chrome browser headers
+        // Config 2: Standard Chrome browser headers
         {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -560,7 +571,7 @@ class UrlRecipeImporter {
           'Upgrade-Insecure-Requests': '1',
           'Cache-Control': 'max-age=0',
         },
-        // Config 2: Googlebot (sites allow crawlers)
+        // Config 3: Googlebot (for non-Dotdash sites that allow crawlers)
         {
           'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -568,7 +579,7 @@ class UrlRecipeImporter {
           'Accept-Encoding': 'identity',
           'Connection': 'close',
         },
-        // Config 3: Mobile Safari
+        // Config 4: Mobile Safari
         {
           'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -576,7 +587,7 @@ class UrlRecipeImporter {
           'Accept-Encoding': 'identity',
           'Connection': 'close',
         },
-        // Config 4: Firefox with minimal headers
+        // Config 5: Firefox with minimal headers
         {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -584,7 +595,7 @@ class UrlRecipeImporter {
           'Accept-Encoding': 'identity',
           'Connection': 'close',
         },
-        // Config 5: Bare minimum headers
+        // Config 6: Bare minimum headers
         {
           'User-Agent': 'Mozilla/5.0',
           'Accept': '*/*',
@@ -4225,7 +4236,7 @@ class UrlRecipeImporter {
     if (topUpWithMatch != null) {
       final name = topUpWithMatch.group(1)?.trim() ?? '';
       return Ingredient.create(
-        name: name,
+        name: _cleanIngredientName(name),
         amount: 'Top',
       );
     }
@@ -4263,7 +4274,7 @@ class UrlRecipeImporter {
       }
       
       return Ingredient.create(
-        name: name,
+        name: _cleanIngredientName(name),
         amount: primaryAmount,
         preparation: preparation,
       );
@@ -4285,7 +4296,7 @@ class UrlRecipeImporter {
       // Use the amount as-is, notes go to preparation
       // Store bakerPercent in the bakerPercent field
       return Ingredient.create(
-        name: name,
+        name: _cleanIngredientName(name),
         amount: amount,
         preparation: notes,
         bakerPercent: bakerPercent != null ? '$bakerPercent%' : null,
@@ -4316,7 +4327,7 @@ class UrlRecipeImporter {
       final amount = unit.isNotEmpty ? '$amountNum $unit' : amountNum;
       
       return Ingredient.create(
-        name: name,
+        name: _cleanIngredientName(name),
         amount: amount,
         preparation: notes,
       );
@@ -4331,7 +4342,7 @@ class UrlRecipeImporter {
       final name = simpleAsNeededMatch.group(1)?.trim() ?? '';
       final note = simpleAsNeededMatch.group(2)?.trim() ?? '';
       return Ingredient.create(
-        name: name,
+        name: _cleanIngredientName(name),
         amount: note,
       );
     }
@@ -4416,7 +4427,7 @@ class UrlRecipeImporter {
       }
       
       return Ingredient.create(
-        name: name,
+        name: _cleanIngredientName(name),
         amount: '$primaryAmt $primaryUnit',
         preparation: prepParts.join(', '),
       );
@@ -4445,7 +4456,7 @@ class UrlRecipeImporter {
       }
       
       return Ingredient.create(
-        name: name.replaceAll(RegExp(r'\*+$'), '').trim(),
+        name: _cleanIngredientName(name.replaceAll(RegExp(r'\*+$'), '').trim()),
         amount: '$primaryAmt $primaryUnit',
         preparation: prepParts.join(', '),
       );
@@ -4479,7 +4490,7 @@ class UrlRecipeImporter {
       final sizeInfo = '$sizeAmt $normalizedSizeUnit / $metricAmt$normalizedMetricUnit';
       
       return Ingredient.create(
-        name: ingredientName,
+        name: _cleanIngredientName(ingredientName),
         amount: '$quantity $container',
         preparation: sizeInfo,
       );
@@ -4512,7 +4523,7 @@ class UrlRecipeImporter {
       // Check for "can", "jar", "bottle" etc. as part of the ingredient description
       // e.g., "can crushed tomatoes" -> name: "can crushed tomatoes" or just "crushed tomatoes"
       return Ingredient.create(
-        name: nameWithDescriptor,
+        name: _cleanIngredientName(nameWithDescriptor),
         amount: '$primaryAmt $normalizedPrimaryUnit',
         preparation: '$metricAmt$normalizedMetricUnit',
       );
@@ -4583,7 +4594,7 @@ class UrlRecipeImporter {
     // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
     final compoundFractionMatch = RegExp(
       r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
-      r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
+      r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
@@ -4596,7 +4607,7 @@ class UrlRecipeImporter {
       fraction = _fractionMap[fraction] ?? fraction;
       amount = '$whole$fraction';
       if (unit.isNotEmpty) {
-        amount = '$amount $unit';
+        amount = '$amount ${_normalizeUnit(unit)}';
       }
       remaining = remaining.substring(compoundFractionMatch.end).trim();
     }
@@ -4605,7 +4616,7 @@ class UrlRecipeImporter {
     if (amount == null) {
       final textFractionMatch = RegExp(
         r'^(\d+/\d+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
+        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -4616,7 +4627,7 @@ class UrlRecipeImporter {
         fraction = _fractionMap[fraction] ?? fraction;
         amount = fraction;
         if (unit.isNotEmpty) {
-          amount = '$amount $unit';
+          amount = '$amount ${_normalizeUnit(unit)}';
         }
         remaining = remaining.substring(textFractionMatch.end).trim();
       }
@@ -4626,7 +4637,7 @@ class UrlRecipeImporter {
       // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
       final toRangeMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
+        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -4636,7 +4647,7 @@ class UrlRecipeImporter {
         final unit = toRangeMatch.group(3)?.trim() ?? '';
         amount = '$start-$end';
         if (unit.isNotEmpty) {
-          amount = '$amount $unit';
+          amount = '$amount ${_normalizeUnit(unit)}';
         }
         remaining = remaining.substring(toRangeMatch.end).trim();
       }
@@ -4646,7 +4657,7 @@ class UrlRecipeImporter {
       // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm)\.?)?\s+',
+        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -4656,7 +4667,7 @@ class UrlRecipeImporter {
         // Normalize the range format (remove extra spaces around dash)
         amount = number.replaceAll(RegExp(r'\s*[-–]\s*'), '-');
         if (unit.isNotEmpty) {
-          amount = '$amount $unit';
+          amount = '$amount ${_normalizeUnit(unit)}';
         }
         remaining = remaining.substring(amountMatch.end).trim();
       }
@@ -4757,12 +4768,41 @@ class UrlRecipeImporter {
     }
     
     return Ingredient.create(
-      name: remaining,
+      name: _cleanIngredientName(remaining),
       amount: _normalizeFractions(amount),
       preparation: finalNotes,
       isOptional: isOptional,
       section: inlineSection,
     );
+  }
+
+  /// Clean an ingredient name - capitalize first letter, remove trailing punctuation.
+  String _cleanIngredientName(String name) {
+    if (name.isEmpty) return name;
+    
+    var cleaned = name.trim();
+    
+    // Remove trailing punctuation
+    cleaned = cleaned.replaceAll(RegExp(r'[,;:.]+$'), '').trim();
+    
+    // Convert ALL CAPS to Title Case (common in some sites)
+    if (cleaned == cleaned.toUpperCase() && cleaned.length > 2) {
+      cleaned = cleaned.split(' ').map((word) {
+        if (word.isEmpty) return word;
+        // Keep short words lowercase (articles, prepositions)
+        if (word.length <= 2 && !RegExp(r'^\d').hasMatch(word)) {
+          return word.toLowerCase();
+        }
+        return word[0].toUpperCase() + word.substring(1).toLowerCase();
+      }).join(' ');
+    }
+    
+    // Always capitalize the first letter
+    if (cleaned.isNotEmpty && cleaned[0] != cleaned[0].toUpperCase()) {
+      cleaned = cleaned[0].toUpperCase() + cleaned.substring(1);
+    }
+    
+    return cleaned;
   }
 
   /// Normalize unit names to standard abbreviations
