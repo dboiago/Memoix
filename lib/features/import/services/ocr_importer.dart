@@ -492,7 +492,9 @@ class OcrRecipeImporter {
     // Dessert indicators
     final dessertKeywords = ['cupcake', 'cake', 'cookie', 'brownie', 'frosting', 
         'icing', 'sugar', 'vanilla extract', 'chocolate', 'dessert', 'sweet',
-        'muffin', 'pie', 'tart', 'pastry', 'baking powder', 'baking soda'];
+        'muffin', 'pie', 'tart', 'pastry', 'baking powder', 'baking soda',
+        'shortbread', 'biscotti', 'scone', 'macaron', 'truffle', 'fudge',
+        'meringue', 'pudding', 'custard', 'mousse', 'cheesecake', 'ice cream'];
     final dessertCount = dessertKeywords.where((k) => allText.contains(k)).length;
     
     // Drink indicators - check for spirits, beer/wine, and cocktail-specific terms
@@ -1281,10 +1283,16 @@ class OcrRecipeImporter {
     sortedDirections.addAll(unnumberedDirections);
     
     // Replace rawDirections and directions with processed versions
+    // Capitalize first letter of each direction for proper sentence formatting
     rawDirections.clear();
     directions.clear();
-    rawDirections.addAll(sortedDirections);
-    directions.addAll(sortedDirections);
+    for (final direction in sortedDirections) {
+      final capitalized = direction.isNotEmpty 
+          ? direction[0].toUpperCase() + direction.substring(1)
+          : direction;
+      rawDirections.add(capitalized);
+      directions.add(capitalized);
+    }
 
     // ===== PHASE 6.75: Pair metric values with ingredients =====
     // If we collected metric values from a two-column layout, pair them with ingredients
@@ -1653,6 +1661,58 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(\b\w{3,})((?:To\s+)?[Gg]arnish[:\s])', caseSensitive: false),
       (m) => '${m.group(1)}\n${m.group(2)}',
+    );
+    
+    // Fix OCR reading capital "I" as "1" when attached to word start:
+    // "1cing" -> "Icing", "1talian" -> "Italian", "1ce" -> "Ice"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b1(cing|talian|ce|ris[hk]|ndian|ndonesian)\b', caseSensitive: false),
+      (m) => 'I${m.group(1)}',
+    );
+    
+    // Fix OCR reading "Fl" or "TỊ" or "Tl" as Flour artifacts:
+    // "TỊOur" -> "Flour", "TlOur" -> "Flour", "FlOur" -> "Flour"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[TtFf][ỊlLI][oO][uU][rR]\b'),
+      (m) => 'Flour',
+    );
+    
+    // Fix OCR reading "l" as "[" in "lbs":
+    // "[bs" -> "lbs", "[b" -> "lb"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\[(bs?)\b'),
+      (m) => 'l${m.group(1)}',
+    );
+    
+    // Fix mixed case in common words (OCR artifacts):
+    // "sOItened" -> "softened", "sOftened" -> "softened"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\bs[oO][fIl][tT]ened\b', caseSensitive: false),
+      (m) => 'softened',
+    );
+    
+    // Fix "mELted" or "mElted" -> "melted"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\bm[eE][lL][tT]ed\b', caseSensitive: false),
+      (m) => 'melted',
+    );
+    
+    // Fix "chopped" OCR variants
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\bch[oO][pP][pP]ed\b', caseSensitive: false),
+      (m) => 'chopped',
+    );
+    
+    // Fix "minced" OCR variants
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\bm[iI][nN]ced\b', caseSensitive: false),
+      (m) => 'minced',
+    );
+    
+    // Fix "diced" OCR variants
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\bd[iI]ced\b', caseSensitive: false),
+      (m) => 'diced',
     );
     
     return fixed;
