@@ -739,26 +739,43 @@ class OcrRecipeImporter {
         // Long lines with verbs are probably directions
         final hasActionVerb = RegExp(r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store)\b', caseSensitive: false).hasMatch(lowerLine);
         
-        if (hasActionVerb && line.length > 40) {
+        // Check if this looks like a prose fragment (incomplete sentence, narrative)
+        final isProseFragment = RegExp(
+          r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint|whole lemon|lemon peel|lemon for|for lime)\b',
+          caseSensitive: false,
+        ).hasMatch(lowerLine);
+        
+        if (isProseFragment) {
+          // Skip prose fragments - they're tips/variations, not directions
+          continue;
+        } else if (hasActionVerb && line.length > 20) {
+          // Line with action verb - treat as direction (lowered threshold from 40)
           paragraphDirections.add(line);
-        } else if (line.length < 60) {
+        } else if (line.length < 60 && !isProseNarrative) {
           // Assume short lines without action verbs are ingredients
           final parsed = _parseIngredientLine(line);
-          rawIngredients.add(RawIngredientData(
-            original: line,
-            name: parsed.name,
-            amount: parsed.amount,
-            unit: parsed.unit,
-            bakerPercent: parsed.bakerPercent,
-            looksLikeIngredient: parsed.amount != null,
-          ));
-          ingredients.add(Ingredient.create(
-            name: parsed.name,
-            amount: parsed.amount,
-            unit: parsed.unit,
-          ));
+          // Only add if it has an amount or looks like an ingredient
+          if (parsed.amount != null || parsed.looksLikeIngredient) {
+            rawIngredients.add(RawIngredientData(
+              original: line,
+              name: parsed.name,
+              amount: parsed.amount,
+              unit: parsed.unit,
+              bakerPercent: parsed.bakerPercent,
+              looksLikeIngredient: parsed.amount != null,
+            ));
+            ingredients.add(Ingredient.create(
+              name: parsed.name,
+              amount: parsed.amount,
+              unit: parsed.unit,
+            ));
+          }
         } else {
-          paragraphDirections.add(line);
+          // Long lines go to directions only if they have action verbs
+          if (hasActionVerb) {
+            paragraphDirections.add(line);
+          }
+          // Otherwise skip - probably prose
         }
       }
     }
@@ -769,9 +786,28 @@ class OcrRecipeImporter {
       // Split on sentence boundaries: period followed by space and capital letter
       final sentences = fullText.split(RegExp(r'(?<=\.)\s+(?=[A-Z])'));
       
+      // Prose words that indicate historical/narrative text, not actual directions
+      final prosePattern = RegExp(
+        r'\b(earliest|history|century|combined at|winter of|thames|froze|walking|streets|baskets|hogarth|etching|lane|british|book|contain|began|combination|strikes|beginnings|modern|flavor|pairing|1730s|1751|1715|frost fairs?|sellers?|wares|characters?|dotted|tents?|gingerbread)\b',
+        caseSensitive: false,
+      );
+      
       for (final sentence in sentences) {
         final trimmed = sentence.trim();
-        if (trimmed.isNotEmpty && trimmed.length > 10) {
+        final lowerSentence = trimmed.toLowerCase();
+        
+        // Skip prose/historical narrative sentences
+        if (prosePattern.allMatches(lowerSentence).length >= 1) {
+          continue;
+        }
+        
+        // Only include sentences that have cooking action words
+        final hasAction = RegExp(
+          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze)\b',
+          caseSensitive: false,
+        ).hasMatch(lowerSentence);
+        
+        if (trimmed.isNotEmpty && trimmed.length > 10 && hasAction) {
           rawDirections.add(trimmed);
           directions.add(trimmed);
         }
@@ -876,10 +912,12 @@ class OcrRecipeImporter {
     ).firstMatch(workingLine);
     
     if (standardMatch != null) {
+      final amount = standardMatch.group(1)?.trim();
+      final normalizedUnit = _normalizeUnit(standardMatch.group(2)?.trim());
       return RawIngredientData(
         original: line,
-        amount: standardMatch.group(1)?.trim(),
-        unit: _normalizeUnit(standardMatch.group(2)?.trim()),
+        amount: amount,
+        unit: _pluralizeUnit(normalizedUnit, amount),
         name: _cleanIngredientName(standardMatch.group(3)?.trim() ?? workingLine),
         preparation: preparation,
         alternative: alternative,
@@ -897,6 +935,7 @@ class OcrRecipeImporter {
     if (simpleMatch != null) {
       var name = simpleMatch.group(2)?.trim() ?? workingLine;
       String? unit;
+      final amount = simpleMatch.group(1)?.trim();
       
       // Check if the name starts with a unit word that wasn't captured by standardMatch
       // This handles cases like "1 CUP COCONUT OIL" where spacing confused the parser
@@ -906,7 +945,8 @@ class OcrRecipeImporter {
       ).firstMatch(name);
       
       if (unitAtStartMatch != null) {
-        unit = _normalizeUnit(unitAtStartMatch.group(1)?.trim());
+        final normalizedUnit = _normalizeUnit(unitAtStartMatch.group(1)?.trim());
+        unit = _pluralizeUnit(normalizedUnit, amount);
         name = unitAtStartMatch.group(2)?.trim() ?? name;
       }
       
@@ -914,7 +954,7 @@ class OcrRecipeImporter {
       final looksLikeFood = !RegExp(r'\b(preheat|bake|cook|stir|mix|add|pour|let|until|minutes?|degrees?|°)\b', caseSensitive: false).hasMatch(name);
       return RawIngredientData(
         original: line,
-        amount: simpleMatch.group(1)?.trim(),
+        amount: amount,
         unit: unit,
         name: _cleanIngredientName(name),
         preparation: preparation,
@@ -964,10 +1004,41 @@ class OcrRecipeImporter {
       'ml': 'ml',
       'l': 'L',
       'part': 'part',
-      'parts': 'part',
+      'parts': 'parts',
     };
     
     return unitMap[lower] ?? unit;
+  }
+  
+  /// Get the appropriate unit form based on amount (singular vs plural)
+  String? _pluralizeUnit(String? unit, String? amount) {
+    if (unit == null) return null;
+    if (amount == null) return unit;
+    
+    // Parse amount to determine if plural
+    final numMatch = RegExp(r'^([\d.]+)').firstMatch(amount);
+    if (numMatch != null) {
+      final num = double.tryParse(numMatch.group(1) ?? '');
+      if (num != null && num > 1) {
+        // Pluralize
+        if (unit == 'part') return 'parts';
+        if (unit == 'cup') return 'cups';
+        if (unit == 'lb') return 'lbs';
+        if (unit == 'oz') return 'oz'; // oz stays same
+      }
+    }
+    // Check for fractions > 1 like "1½" or "2"
+    if (amount.contains('½') || amount.contains('¼') || amount.contains('¾')) {
+      final firstChar = amount.isNotEmpty ? amount[0] : '0';
+      final firstNum = int.tryParse(firstChar);
+      if (firstNum != null && firstNum >= 1 && amount.length > 1) {
+        // Like "1½" - more than 1, pluralize
+        if (unit == 'part') return 'parts';
+        if (unit == 'cup') return 'cups';
+        if (unit == 'lb') return 'lbs';
+      }
+    }
+    return unit;
   }
   
   /// Clean ingredient name (remove trailing punctuation, normalize case)
