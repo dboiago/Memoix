@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/utils/ingredient_parser.dart';
 import '../../../core/utils/text_normalizer.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
@@ -584,6 +585,23 @@ class OcrRecipeImporter {
       if (isProseIntro) {
         // Intro paragraph line - add to notes
         introLines.add(line);
+        contentStartIndex = i + 1;
+        continue;
+      }
+      
+      // Check if this is a short trailing word from the previous intro line
+      // (OCR sometimes splits the last word of a paragraph onto its own line)
+      // Examples: "grilling.", "sauce", "recipe."
+      final isTrailingWord = line.length < 20 && 
+          !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
+          !line.contains(' ') && // Single word
+          introLines.isNotEmpty; // We already have intro text
+      
+      if (isTrailingWord) {
+        // Append to the last intro line instead of adding as new line
+        if (introLines.isNotEmpty) {
+          introLines[introLines.length - 1] = '${introLines.last} $line';
+        }
         contentStartIndex = i + 1;
         continue;
       }
@@ -1333,15 +1351,23 @@ class OcrRecipeImporter {
   /// - "1 CUP HOMEMADE APPLESAUCE (PAGE 78) OR STORE-BOUGHT UNSWEETENED APPLESAUCE"
   /// - Baker's percentage: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
   RawIngredientData _parseIngredientLine(String line) {
+    // Normalize fractions in the line before parsing (1/2 → ½)
+    final normalizedLine = IngredientParser.normalizeFractions(line);
+    
     // Use the shared IngredientParser for consistent parsing
-    final parsed = IngredientParser.parse(line);
+    final parsed = IngredientParser.parse(normalizedLine);
+    
+    // Normalize units using UnitNormalizer for consistent display
+    final normalizedUnit = parsed.unit != null 
+        ? UnitNormalizer.normalize(parsed.unit)
+        : null;
     
     // Convert ParsedIngredient to RawIngredientData
     return RawIngredientData(
       original: parsed.original.isNotEmpty ? parsed.original : line,
       name: _cleanIngredientName(parsed.name.isNotEmpty ? parsed.name : line),
       amount: parsed.amount,
-      unit: parsed.unit,
+      unit: normalizedUnit,
       preparation: parsed.preparation,
       bakerPercent: parsed.bakerPercent,
       alternative: parsed.alternative,

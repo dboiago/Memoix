@@ -10,6 +10,7 @@ import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/models/spirit.dart';
 import '../../features/import/models/recipe_import_result.dart';
 import '../utils/text_normalizer.dart';
+import '../utils/unit_normalizer.dart';
 
 /// Helper class for YouTube chapters
 class YouTubeChapter {
@@ -4762,48 +4763,9 @@ class UrlRecipeImporter {
 
   /// Normalize unit names to standard abbreviations
   /// e.g., "tablespoons" -> "Tbsp", "cups" -> "C", "teaspoons" -> "tsp"
+  /// Uses shared UnitNormalizer for consistent behavior across importers
   String _normalizeUnit(String unit) {
-    final lower = unit.toLowerCase().replaceAll('.', '');
-    switch (lower) {
-      case 'cup':
-      case 'cups':
-        return 'C';
-      case 'tablespoon':
-      case 'tablespoons':
-      case 'tbsp':
-        return 'Tbsp';
-      case 'teaspoon':
-      case 'teaspoons':
-      case 'tsp':
-        return 'tsp';
-      case 'ounce':
-      case 'ounces':
-      case 'oz':
-        return 'oz';
-      case 'pound':
-      case 'pounds':
-      case 'lb':
-      case 'lbs':
-        return 'lb';
-      case 'gram':
-      case 'grams':
-      case 'g':
-        return 'g';
-      case 'kilogram':
-      case 'kilograms':
-      case 'kg':
-        return 'kg';
-      case 'milliliter':
-      case 'milliliters':
-      case 'ml':
-        return 'ml';
-      case 'liter':
-      case 'liters':
-      case 'l':
-        return 'L';
-      default:
-        return unit;
-    }
+    return UnitNormalizer.normalize(unit);
   }
 
   /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½)
