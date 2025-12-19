@@ -240,8 +240,23 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
       return;
     }
 
-    // Navigate to edit screen with pre-filled recipe
-    if (result.recipe != null && context.mounted) {
+    if (!context.mounted) return;
+
+    // Route through ImportReviewScreen for OCR (confidence is inherently low)
+    // This matches URL import behavior and lets user review/edit extracted data
+    if (result.importResult != null) {
+      // Set default course if provided
+      final importResult = widget.defaultCourse != null
+          ? result.importResult!.copyWith(course: widget.defaultCourse)
+          : result.importResult!;
+
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => ImportReviewScreen(importResult: importResult),
+        ),
+      );
+    } else if (result.recipe != null) {
+      // Fallback: use the old flow with raw text if no importResult
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_) => RecipeEditScreen(

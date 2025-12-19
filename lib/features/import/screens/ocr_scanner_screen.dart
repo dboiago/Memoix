@@ -196,26 +196,14 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
         ),
         const SizedBox(height: 16),
 
-        // Action buttons
-        Row(
-          children: [
-            Expanded(
-              child: OutlinedButton.icon(
-                onPressed: () => _navigateToReview(result),
-                icon: const Icon(Icons.edit_note),
-                label: const Text('Review & Organize'),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 8),
+        // Action button
         Row(
           children: [
             Expanded(
               child: FilledButton.icon(
                 onPressed: () => _navigateToReview(result),
-                icon: const Icon(Icons.add),
-                label: const Text('Create Recipe'),
+                icon: const Icon(Icons.arrow_forward),
+                label: const Text('Review & Create Recipe'),
               ),
             ),
           ],
