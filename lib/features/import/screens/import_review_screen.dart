@@ -857,7 +857,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                             ),
                           ],
                           const SizedBox(width: 8),
-                          // Amount
+                          // Amount (includes unit)
                           Expanded(
                             flex: 2,
                             child: InputDecorator(
@@ -867,7 +867,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                                 border: OutlineInputBorder(),
                               ),
                               child: Text(
-                                ingredient.amount ?? '',
+                                [ingredient.amount, ingredient.unit]
+                                    .where((s) => s != null && s.isNotEmpty)
+                                    .join(' '),
                                 style: theme.textTheme.bodyMedium?.copyWith(
                                   decoration: isSelected ? null : TextDecoration.lineThrough,
                                   color: isSelected ? null : theme.colorScheme.outline,
