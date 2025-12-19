@@ -652,6 +652,26 @@ class OcrRecipeImporter {
         continue;
       }
       
+      // Skip "Metric" section header (cookbook two-column format)
+      // Lines after this are typically standalone metric values that we skip
+      if (lowerLine.trim() == 'metric' || lowerLine.trim() == 'metric:') {
+        inIngredients = false;
+        inDirections = false;
+        continue;
+      }
+      
+      // Skip standalone metric values (just a number with metric unit, no ingredient name)
+      // These are the right column in two-column cookbook layouts
+      // Examples: "1 kg", "235 ml", "470 ml", "1", "2"
+      final isStandaloneMetric = RegExp(
+        r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*(kg|g|ml|l|liters?|litres?)?\s*$',
+        caseSensitive: false,
+      ).hasMatch(line.trim());
+      if (isStandaloneMetric && line.trim().length < 10) {
+        // This is likely a metric column value, skip it
+        continue;
+      }
+      
       // Check for garnish line: "To garnish: ..." or "Garnish: ..."
       final garnishMatch = RegExp(
         r'^(?:to\s+)?garnish[:\s]+(.+)',
@@ -1321,6 +1341,13 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(^|\n)\d\s+(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
       (m) => '${m.group(1)}${m.group(2)}',
+    );
+    
+    // Fix lowercase 'l' being read as '1' when followed by unit
+    // "l cup" -> "1 cup", "l tsp" -> "1 tsp"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n|\s)l\s+(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|g\.?|kg\.?|ml\.?|c\.|t\.)\b', caseSensitive: false),
+      (m) => '${m.group(1)}1 ${m.group(2)}',
     );
     
     return fixed;
