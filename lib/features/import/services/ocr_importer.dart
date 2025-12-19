@@ -523,35 +523,78 @@ class OcrRecipeImporter {
     }
 
     // ===== PHASE 4: Identify intro paragraphs as notes =====
+    // Also skip subtitle lines (translations, alternate names) after the title
     String? notes;
     final introLines = <String>[];
     int contentStartIndex = titleLineIndex + 1;
     
     // Look for intro paragraphs after title - long sentences that aren't ingredients
-    for (int i = titleLineIndex + 1; i < lines.length && i < titleLineIndex + 6; i++) {
+    // Also detect and skip subtitle lines (short descriptive lines after title)
+    for (int i = titleLineIndex + 1; i < lines.length && i < titleLineIndex + 12; i++) {
       final line = lines[i];
       final lowerLine = line.toLowerCase();
       
-      // Stop if we hit an ingredient-like line or section header
+      // Stop if we hit an ingredient-like line (starts with amount + unit)
       if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {
         break;
       }
-      if (lowerLine.contains('ingredient') || lowerLine.contains('direction')) {
+      
+      // Stop if we hit the "Ingredients" section header
+      if (lowerLine.trim() == 'ingredients' || lowerLine.trim() == 'ingredients:' ||
+          RegExp(r'^ingredients?\s*[:\(]', caseSensitive: false).hasMatch(lowerLine.trim())) {
+        contentStartIndex = i + 1;
         break;
       }
       
-      // Long prose lines are likely intro/notes
-      if (line.length > 60 && line.contains(' ')) {
-        introLines.add(line);
-        contentStartIndex = i + 1;
-      } else {
-        // Short line after intro - might be "Makes 24" etc, check and skip
-        if (servesPatterns.any((p) => p.hasMatch(line))) {
-          contentStartIndex = i + 1;
-          continue;
-        }
+      // Stop if we hit "Directions" or similar
+      if (lowerLine.contains('direction') || lowerLine.contains('instruction') || 
+          lowerLine.contains('method:') || lowerLine.trim() == 'method') {
         break;
       }
+      
+      // Check if this looks like a subtitle (short, Title Case or ALL CAPS, no amounts)
+      // Examples: "Grilled Salmon Steaks with Hollandaise Sauce"
+      final looksLikeSubtitle = line.length >= 10 && line.length < 60 &&
+          !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
+          !RegExp(r'\b(cup|tbsp|tsp|oz|lb|kg|ml|minutes?|degrees?)\b', caseSensitive: false).hasMatch(line) &&
+          (line == line.toUpperCase() || // ALL CAPS
+           RegExp(r'^[A-Z]').hasMatch(line)); // Starts with capital
+      
+      // Check if this is a prose/intro line (contains complete sentences or descriptive text)
+      final isProseIntro = line.length > 30 && line.contains(' ') &&
+          !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
+          // Contains prose words or sentence patterns
+          (RegExp(r'\b(this|you|can|the|is|are|an|excellent|way|will|your|or)\b', caseSensitive: false).hasMatch(lowerLine) ||
+           line.contains('.') || // Contains periods (sentences)
+           line.contains(','));  // Contains commas (complex text)
+      
+      // Skip "Makes X", "Serves X" lines
+      if (servesPatterns.any((p) => p.hasMatch(line))) {
+        contentStartIndex = i + 1;
+        continue;
+      }
+      
+      if (looksLikeSubtitle) {
+        // Subtitle - add to notes and continue looking
+        introLines.add(line);
+        contentStartIndex = i + 1;
+        continue;
+      }
+      
+      if (isProseIntro) {
+        // Intro paragraph line - add to notes
+        introLines.add(line);
+        contentStartIndex = i + 1;
+        continue;
+      }
+      
+      // If we get here, it's something else - might be start of ingredients
+      // Only break if we've already collected some intro text
+      if (introLines.isNotEmpty) {
+        break;
+      }
+      // Otherwise, skip this line and keep looking (might be a stray short line)
+      contentStartIndex = i + 1;
     }
     
     if (introLines.isNotEmpty) {
