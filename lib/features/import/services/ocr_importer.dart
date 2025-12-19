@@ -818,10 +818,6 @@ class OcrRecipeImporter {
         }
       }
     }
-          directions.add(trimmed);
-        }
-      }
-    }
 
     // ===== PHASE 7: Calculate confidence scores =====
     double ingredientsConfidence = 0.0;
