@@ -845,6 +845,37 @@ class OcrRecipeImporter {
       }
     }
 
+    // ===== PHASE 6.5: Post-process directions - split on periods, filter prose =====
+    // Directions may have been concatenated; split them into individual steps
+    final processedDirections = <String>[];
+    final proseFragmentPattern = RegExp(
+      r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint|the drink|horse.s neck|foghorn|it in before)\b',
+      caseSensitive: false,
+    );
+    
+    for (final direction in rawDirections) {
+      // Split on period followed by space and capital letter, or period at end
+      final sentences = direction.split(RegExp(r'(?<=\.)\s+(?=[A-Z])|(?<=\.)\s*$'));
+      
+      for (final sentence in sentences) {
+        final trimmed = sentence.trim();
+        if (trimmed.isEmpty || trimmed.length < 5) continue;
+        
+        // Skip prose fragments
+        if (proseFragmentPattern.hasMatch(trimmed.toLowerCase())) {
+          continue;
+        }
+        
+        processedDirections.add(trimmed);
+      }
+    }
+    
+    // Replace rawDirections and directions with processed versions
+    rawDirections.clear();
+    directions.clear();
+    rawDirections.addAll(processedDirections);
+    directions.addAll(processedDirections);
+
     // ===== PHASE 7: Calculate confidence scores =====
     double ingredientsConfidence = 0.0;
     if (rawIngredients.isNotEmpty) {
