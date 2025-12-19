@@ -718,6 +718,26 @@ class OcrRecipeImporter {
       // Check if current line starts an ingredient that might continue
       final startsWithIngredient = ingredientPattern.hasMatch(line);
       
+      // Split lines that have embedded "To garnish:" or "Garnish:" patterns
+      // OCR often merges ingredient line with garnish line: "4 parts wheat beerTo garnish: orange"
+      final garnishSplitMatch = RegExp(
+        r'^(.+?)\s*((?:to\s+)?garnish[:\s].+)$',
+        caseSensitive: false,
+      ).firstMatch(line);
+      if (garnishSplitMatch != null) {
+        final beforeGarnish = garnishSplitMatch.group(1)?.trim();
+        final garnishPart = garnishSplitMatch.group(2)?.trim();
+        if (beforeGarnish != null && beforeGarnish.isNotEmpty && 
+            garnishPart != null && garnishPart.isNotEmpty) {
+          // Only split if "before" part looks like an ingredient (has amount)
+          if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(beforeGarnish)) {
+            processedLines.add(beforeGarnish);
+            processedLines.add(garnishPart);
+            continue;
+          }
+        }
+      }
+      
       // Check if line looks like merged two-column text
       final hasActionVerb = RegExp(
         r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|line|place|remove|cool|serve)\b',
