@@ -644,8 +644,16 @@ class OcrRecipeImporter {
     
     // Secondary pattern for ingredients without units: "½ corn starch", "2 eggs"
     // Matches fraction/number followed directly by ingredient name (no unit)
+    // Allow hyphens and apostrophes in ingredient names (e.g., "all-purpose", "baker's")
     final ingredientNoUnitPattern = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+([a-zA-Z][a-zA-Z\s]+)$',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+([a-zA-Z][a-zA-Z\s\-\']+)$',
+      caseSensitive: false,
+    );
+    
+    // Tertiary pattern: just a fraction/number followed by any text (most permissive)
+    // Used as fallback to catch things like "½ corn starch" with trailing spaces/chars
+    final ingredientFractionStartPattern = RegExp(
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+(.+)$',
       caseSensitive: false,
     );
 
@@ -730,9 +738,10 @@ class OcrRecipeImporter {
       }
       
       // Check if current line starts an ingredient that might continue
-      // Check both patterns: with unit and without unit
+      // Check both patterns: with unit, without unit, and fallback fraction-start
       final startsWithIngredient = ingredientPattern.hasMatch(line) || 
-          ingredientNoUnitPattern.hasMatch(line);
+          ingredientNoUnitPattern.hasMatch(line) ||
+          ingredientFractionStartPattern.hasMatch(line);
       
       // Split lines that have embedded "To garnish:" or "Garnish:" patterns
       // OCR often merges ingredient line with garnish line: "4 parts wheat beerTo garnish: orange"
@@ -1014,7 +1023,8 @@ class OcrRecipeImporter {
       // Check if line looks like an ingredient (with or without unit)
       final ingredientMatch = ingredientPattern.firstMatch(line);
       final ingredientNoUnitMatch = ingredientNoUnitPattern.firstMatch(line);
-      final hasIngredientPattern = ingredientMatch != null || ingredientNoUnitMatch != null;
+      final ingredientFractionMatch = ingredientFractionStartPattern.firstMatch(line);
+      final hasIngredientPattern = ingredientMatch != null || ingredientNoUnitMatch != null || ingredientFractionMatch != null;
       final isNumberedStep = RegExp(r'^\d+[\.\)]\s').hasMatch(line);
       
       // Long prose lines (>80 chars with multiple sentences) are likely directions
