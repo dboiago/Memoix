@@ -125,7 +125,6 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
       setState(() {
         _isProcessing = true;
         _errorMessage = null;
-        _ocrResult = null;
       });
 
       // Let the OCR service handle image picking and processing
