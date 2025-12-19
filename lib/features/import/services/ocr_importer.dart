@@ -691,8 +691,25 @@ class OcrRecipeImporter {
         caseSensitive: false,
       ).hasMatch(lowerLine);
       
+      // Check if this looks like a direction continuation (not a standalone ingredient)
+      // "with a lemon wedge" is part of "Garnish with a lemon wedge"
+      final isDirectionContinuation = RegExp(
+        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe)\b',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      
       // Skip prose narrative and fragments entirely
       if (isProseNarrative || isProseFragment) {
+        continue;
+      }
+      
+      // Direction continuations should be appended to previous direction
+      if (isDirectionContinuation && rawDirections.isNotEmpty) {
+        final updated = '${rawDirections.last} $line';
+        rawDirections[rawDirections.length - 1] = updated;
+        directions[directions.length - 1] = updated;
+        inDirections = true;
+        inIngredients = false;
         continue;
       }
 
@@ -1191,15 +1208,22 @@ class OcrRecipeImporter {
     // "4 2 parts" -> "2 parts" (decorative bullet read as "4")
     // "P4 parts" -> "4 parts" ("P" from stylized character)
     // "A 2 parts" -> "2 parts" (various OCR artifacts)
+    // Handle at start of line OR after newline
     fixed = fixed.replaceAllMapped(
-      RegExp(r'^[A-Za-z4]\s+(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
-      (m) => m.group(1)!,
+      RegExp(r'(^|\n)[A-Za-z]\s*(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
+      (m) => '${m.group(1)}${m.group(2)}',
+    );
+    
+    // Fix "P4" pattern where P is directly attached to number ("P4 parts" -> "4 parts")
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)[Pp](\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
+      (m) => '${m.group(1)}${m.group(2)}',
     );
     
     // Fix "4 2 parts" pattern (number-space-number-parts)
     fixed = fixed.replaceAllMapped(
-      RegExp(r'^\d\s+(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
-      (m) => m.group(1)!,
+      RegExp(r'(^|\n)\d\s+(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
+      (m) => '${m.group(1)}${m.group(2)}',
     );
     
     return fixed;
