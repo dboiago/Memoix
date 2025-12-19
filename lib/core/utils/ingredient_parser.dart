@@ -198,8 +198,10 @@ class IngredientParser {
     }
     
     // Try standard format: "amount unit name"
+    // Includes metric units (g, kg, ml, gram, grams, kilogram, etc.) and
+    // common cooking units (cloves, pinch, dash, bunch, head, sprig, etc.)
     final standardMatch = RegExp(
-      r'^([\dยฝยผยพโ…"โ…"โ…›โ…œโ…โ…ž]+(?:\s*/\s*\d+)?(?:\s*[\dยฝยผยพโ…"โ…"โ…›โ…œโ…โ…ž]+(?:/\d+)?)?)\s*(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|c\.|t\.)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|kilograms?|ml\.?|milliliters?|millilitres?|cl\.?|centiliters?|centilitres?|l\.?|liters?|litres?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|packages?|pkgs?\.?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (standardMatch != null) {
@@ -229,7 +231,7 @@ class IngredientParser {
       
       // Check if name starts with a unit word
       final unitAtStartMatch = RegExp(
-        r'^(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|c\.|t\.)\s+(.+)',
+        r'^(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|kilograms?|ml\.?|milliliters?|millilitres?|cl\.?|centiliters?|centilitres?|l\.?|liters?|litres?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|packages?|pkgs?\.?|c\.|t\.)\s+(.+)',
         caseSensitive: false,
       ).firstMatch(name);
       if (unitAtStartMatch != null) {
@@ -329,6 +331,13 @@ class IngredientParser {
       'ml': 'ml',
       'milliliter': 'ml',
       'milliliters': 'ml',
+      'millilitre': 'ml',
+      'millilitres': 'ml',
+      'cl': 'cl',
+      'centiliter': 'cl',
+      'centiliters': 'cl',
+      'centilitre': 'cl',
+      'centilitres': 'cl',
       'l': 'L',
       'liter': 'L',
       'liters': 'L',
@@ -336,6 +345,30 @@ class IngredientParser {
       'litres': 'L',
       'part': 'part',
       'parts': 'parts',
+      'clove': 'clove',
+      'cloves': 'cloves',
+      'head': 'head',
+      'heads': 'heads',
+      'bunch': 'bunch',
+      'bunches': 'bunches',
+      'sprig': 'sprig',
+      'sprigs': 'sprigs',
+      'slice': 'slice',
+      'slices': 'slices',
+      'piece': 'piece',
+      'pieces': 'pieces',
+      'pinch': 'pinch',
+      'pinches': 'pinches',
+      'dash': 'dash',
+      'dashes': 'dashes',
+      'stalk': 'stalk',
+      'stalks': 'stalks',
+      'can': 'can',
+      'cans': 'cans',
+      'package': 'package',
+      'packages': 'packages',
+      'pkg': 'package',
+      'pkgs': 'packages',
     };
     
     return unitMap[lower] ?? unit;
@@ -386,12 +419,26 @@ class IngredientParser {
   }
   
   /// Clean an ingredient name (remove extra whitespace, standardize case).
+  /// 
+  /// For OCR text, converts ALL CAPS to Title Case.
   static String _cleanName(String name) {
     // Remove leading/trailing whitespace and collapse internal whitespace
     var cleaned = name.trim().replaceAll(RegExp(r'\s+'), ' ');
     
     // Remove trailing punctuation
     cleaned = cleaned.replaceAll(RegExp(r'[,;:.]+$'), '').trim();
+    
+    // Convert ALL CAPS to Title Case (common in OCR text)
+    if (cleaned == cleaned.toUpperCase() && cleaned.length > 2) {
+      cleaned = cleaned.split(' ').map((word) {
+        if (word.isEmpty) return word;
+        // Keep short words lowercase (articles, prepositions)
+        if (word.length <= 2 && !RegExp(r'^\d').hasMatch(word)) {
+          return word.toLowerCase();
+        }
+        return word[0].toUpperCase() + word.substring(1).toLowerCase();
+      }).join(' ');
+    }
     
     return cleaned;
   }

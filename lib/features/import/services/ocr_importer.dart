@@ -728,6 +728,19 @@ class OcrRecipeImporter {
       if (servesPatterns.any((p) => p.hasMatch(line))) {
         continue;
       }
+      
+      // Skip lines that look like recipe titles or chapter headers
+      // (ALL CAPS short lines without amounts, or Title Case short lines)
+      // These should have been filtered by contentStartIndex but might slip through
+      final looksLikeTitle = line.length > 5 && line.length < 50 &&
+          !RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]').hasMatch(line) &&
+          (line == line.toUpperCase() || // ALL CAPS
+           RegExp(r'^[A-Z][a-z]+(\s+[A-Z][a-z]+)+$').hasMatch(line)) && // Title Case
+          !RegExp(r'\b(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|clove|pinch|dash)\b', caseSensitive: false).hasMatch(line);
+      if (looksLikeTitle && !inIngredients && !inDirections) {
+        // Likely a title or section header, skip
+        continue;
+      }
 
       // Check for section headers
       // Use word boundaries and position to avoid matching "Combine the ingredients"
@@ -750,7 +763,9 @@ class OcrRecipeImporter {
       
       // Detect "Metric" section header (cookbook two-column format)
       // Lines after this are metric equivalents that we'll pair with ingredients
-      if (lowerLine.trim() == 'metric' || lowerLine.trim() == 'metric:') {
+      // Also detect metric column headers like "g", "kg", "ml" alone
+      if (lowerLine.trim() == 'metric' || lowerLine.trim() == 'metric:' ||
+          lowerLine.trim() == 'g' || lowerLine.trim() == 'kg' || lowerLine.trim() == 'ml') {
         inIngredients = false;
         inDirections = false;
         inMetricSection = true;
@@ -759,15 +774,21 @@ class OcrRecipeImporter {
       
       // Collect standalone metric values (just a number with optional metric unit)
       // These are the right column in two-column cookbook layouts
-      // Examples: "1 kg", "235 ml", "470 ml", "1", "2"
+      // Examples: "1 kg", "235 ml", "470 ml", "1", "2", "500g", "250 g"
+      // Also match metric values that might appear after ingredients have been collected
       final isStandaloneMetric = RegExp(
-        r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*(kg|g|ml|l|liters?|litres?)?\s*$',
+        r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*(kg|g|ml|l|liters?|litres?|cl)?\s*$',
         caseSensitive: false,
       ).hasMatch(line.trim());
-      if (isStandaloneMetric && line.trim().length < 10) {
-        // If we're in metric section or this looks like metric column value
-        if (inMetricSection) {
+      if (isStandaloneMetric && line.trim().length < 12) {
+        // If we're in metric section OR we already have ingredients collected
+        // (metric values often appear right after ingredients in two-column layouts)
+        if (inMetricSection || (rawIngredients.isNotEmpty && !inDirections)) {
           metricValues.add(line.trim());
+          // Auto-enter metric section if we have ingredients and see metric values
+          if (!inMetricSection && rawIngredients.isNotEmpty) {
+            inMetricSection = true;
+          }
         }
         // Skip adding as ingredient either way
         continue;
