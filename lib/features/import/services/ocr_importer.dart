@@ -438,6 +438,50 @@ class OcrRecipeImporter {
       }
     }
 
+    // ===== PHASE 2.5: Extract time from various patterns =====
+    String? time;
+    double timeConfidence = 0.0;
+    
+    // Pattern 1: "HANDS ON X minutes BAKE Y minutes" (cookbook format)
+    final handsOnBakeMatch = RegExp(
+      r'hands\s*on\s*(\d+)\s*(?:minutes?|mins?).*?bake\s*(\d+)\s*(?:minutes?|mins?)',
+      caseSensitive: false,
+    ).firstMatch(cleanedText);
+    if (handsOnBakeMatch != null) {
+      final handsOn = int.tryParse(handsOnBakeMatch.group(1) ?? '') ?? 0;
+      final bake = int.tryParse(handsOnBakeMatch.group(2) ?? '') ?? 0;
+      final totalMinutes = handsOn + bake;
+      if (totalMinutes > 0) {
+        if (totalMinutes >= 60) {
+          final hours = totalMinutes ~/ 60;
+          final mins = totalMinutes % 60;
+          time = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
+        } else {
+          time = '$totalMinutes min';
+        }
+        timeConfidence = 0.85;
+      }
+    }
+    
+    // Pattern 2: "Prep X min" + "Cook Y min" or similar
+    if (time == null) {
+      int totalMinutes = 0;
+      final prepMatch = RegExp(r'prep(?:aration)?[:\s]*(\d+)\s*(?:minutes?|mins?|m\b)', caseSensitive: false).firstMatch(cleanedText);
+      final cookMatch = RegExp(r'cook(?:ing)?[:\s]*(\d+)\s*(?:minutes?|mins?|m\b)', caseSensitive: false).firstMatch(cleanedText);
+      if (prepMatch != null) totalMinutes += int.tryParse(prepMatch.group(1) ?? '') ?? 0;
+      if (cookMatch != null) totalMinutes += int.tryParse(cookMatch.group(1) ?? '') ?? 0;
+      if (totalMinutes > 0) {
+        if (totalMinutes >= 60) {
+          final hours = totalMinutes ~/ 60;
+          final mins = totalMinutes % 60;
+          time = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
+        } else {
+          time = '$totalMinutes min';
+        }
+        timeConfidence = 0.75;
+      }
+    }
+
     // ===== PHASE 3: Detect course from context clues =====
     String course = 'Mains';
     double courseConfidence = 0.2;
@@ -629,8 +673,40 @@ class OcrRecipeImporter {
     if (pendingIngredient != null) {
       processedLines.add(pendingIngredient);
     }
+    
+    // ===== PRE-PHASE 5.5: Pair standalone ingredient names with amounts =====
+    // OCR sometimes reads "lemons" and "2" on separate lines
+    // Pattern: food word without amount FOLLOWED by standalone number
+    // Combine them: "2 lemons"
+    final pairedLines = <String>[];
+    for (int i = 0; i < processedLines.length; i++) {
+      final line = processedLines[i].trim();
+      final lowerLine = line.toLowerCase();
+      
+      // Check if this is a standalone food word (no amount at start)
+      // Common patterns: "lemons", "eggs", "oranges", "limes"
+      final isStandaloneFoodWord = RegExp(
+        r'^(lemon|lime|orange|egg|onion|apple|banana|tomato|potato|clove|head|bunch|stalk|rib|sprig|slice|zest|juice)s?\s*$',
+        caseSensitive: false,
+      ).hasMatch(line);
+      
+      // Check if next line is a standalone number
+      final hasNextLine = i + 1 < processedLines.length;
+      final nextLine = hasNextLine ? processedLines[i + 1].trim() : '';
+      final nextIsStandaloneNumber = RegExp(
+        r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*$',
+      ).hasMatch(nextLine);
+      
+      if (isStandaloneFoodWord && nextIsStandaloneNumber) {
+        // Combine: "2 lemons"
+        pairedLines.add('$nextLine $line');
+        i++; // Skip the next line (the number) since we consumed it
+      } else {
+        pairedLines.add(line);
+      }
+    }
 
-    for (final line in processedLines) {
+    for (final line in pairedLines) {
       final lowerLine = line.toLowerCase();
       
       // Skip serves lines
@@ -685,6 +761,16 @@ class OcrRecipeImporter {
       // Exit metric section when we hit a non-metric line (like directions)
       if (inMetricSection && !isStandaloneMetric) {
         inMetricSection = false;
+      }
+      
+      // Skip nutrition information lines (PER BAR, PER SERVING, cal, carb, sodium, etc.)
+      // These should not be imported as ingredients
+      final isNutritionLine = RegExp(
+        r'\b(per\s+(?:bar|serving|portion)|cal(?:ories)?[,\s]|\d+\s*g?\s*(?:fat|carb|protein|fiber|fibre|sodium|chol|cholesterol|sat(?:urated)?|trans|sugars?|pro)\b|mg\s+(?:sodium|chol)|g\s+(?:fat|carb|fiber|sugars?|pro))',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      if (isNutritionLine) {
+        continue;
       }
       
       // Check for garnish line: "To garnish: ..." or "Garnish: ..."
@@ -936,11 +1022,41 @@ class OcrRecipeImporter {
       }
     }
     
+    // Sort numbered directions (e.g., "1. Preheat oven...", "2. Mix flour...")
+    // Directions may come in wrong order due to OCR reading columns
+    final numberedPattern = RegExp(r'^(\d+)\.\s*');
+    final numberedDirections = <int, String>{};
+    final unnumberedDirections = <String>[];
+    
+    for (final direction in processedDirections) {
+      final match = numberedPattern.firstMatch(direction);
+      if (match != null) {
+        final num = int.parse(match.group(1)!);
+        // Remove the number prefix for cleaner output
+        final text = direction.substring(match.end).trim();
+        if (text.isNotEmpty) {
+          numberedDirections[num] = text;
+        }
+      } else {
+        unnumberedDirections.add(direction);
+      }
+    }
+    
+    // Build final directions: sorted numbered first, then unnumbered
+    final sortedDirections = <String>[];
+    if (numberedDirections.isNotEmpty) {
+      final sortedNums = numberedDirections.keys.toList()..sort();
+      for (final num in sortedNums) {
+        sortedDirections.add(numberedDirections[num]!);
+      }
+    }
+    sortedDirections.addAll(unnumberedDirections);
+    
     // Replace rawDirections and directions with processed versions
     rawDirections.clear();
     directions.clear();
-    rawDirections.addAll(processedDirections);
-    directions.addAll(processedDirections);
+    rawDirections.addAll(sortedDirections);
+    directions.addAll(sortedDirections);
 
     // ===== PHASE 6.75: Pair metric values with ingredients =====
     // If we collected metric values from a two-column layout, pair them with ingredients
@@ -1009,6 +1125,7 @@ class OcrRecipeImporter {
       name: name,
       course: course,
       serves: serves,
+      time: time,
       notes: notes,
       ingredients: ingredients,
       directions: directions,
@@ -1023,7 +1140,7 @@ class OcrRecipeImporter {
       ingredientsConfidence: ingredientsConfidence,
       directionsConfidence: directionsConfidence,
       servesConfidence: servesConfidence,
-      timeConfidence: 0.0,
+      timeConfidence: timeConfidence,
       source: RecipeSource.ocr,
     );
   }
@@ -1052,6 +1169,20 @@ class OcrRecipeImporter {
           parenContent.contains('about')) {
         preparation = parenMatch.group(1)?.trim();
         workingLine = workingLine.replaceFirst(parenMatch.group(0)!, '').trim();
+      }
+    }
+    
+    // Extract trailing modifiers like ", divided", ", softened", ", lightly beaten"
+    // These describe preparation state and should go in the preparation field
+    final modifierMatch = RegExp(
+      r',\s*(divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned)\s*$',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (modifierMatch != null) {
+      final modifier = modifierMatch.group(1)?.trim();
+      if (modifier != null) {
+        preparation = preparation != null ? '$preparation; $modifier' : modifier;
+        workingLine = workingLine.substring(0, modifierMatch.start).trim();
       }
     }
     
@@ -1356,6 +1487,25 @@ class OcrRecipeImporter {
     // Fix "1/2" -> ½
     fixed = fixed.replaceAllMapped(
       RegExp(r'\b1\s*/\s*2\b'),
+      (m) => '½',
+    );
+    
+    // Fix "Va" or "va" being read instead of ½ (common OCR misread)
+    // "Va cup" -> "½ cup", "Vacup" -> "½ cup"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Vv]a\s*(cups?|tbsps?|tsps?|oz|lbs?|pounds?|ounces?|teaspoons?|tablespoons?)', caseSensitive: false),
+      (m) => '½ ${m.group(1)}',
+    );
+    
+    // Fix "l/2" or "I/2" being read instead of ½ (OCR reads 1 as l or I)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[lI]\s*/\s*2\b'),
+      (m) => '½',
+    );
+    
+    // Fix "2/4" -> ½ (non-reduced fraction)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b2\s*/\s*4\b'),
       (m) => '½',
     );
     
