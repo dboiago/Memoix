@@ -341,6 +341,12 @@ class OcrRecipeImporter {
     int titleLineIndex = 0;
     final titleParts = <String>[];
     
+    // Common cookbook chapter/section headers to skip
+    final chapterHeaderPattern = RegExp(
+      r'^(fish\s*(and|&)\s*seafood|appetizers?|soups?\s*(and|&)\s*stews?|salads?|main\s*(courses?|dishes?)|mains?|desserts?|breads?|breakfast|brunch|beverages?|drinks?|cocktails?|sides?|vegetables?|pasta|poultry|meats?|beef|pork|lamb|chicken|sauces?|baking|cakes?|cookies?|pies?|puddings?|snacks?)\s*$',
+      caseSensitive: false,
+    );
+    
     for (int i = 0; i < lines.length && i < 5; i++) {
       final line = lines[i];
       final lowerLine = line.toLowerCase();
@@ -364,6 +370,11 @@ class OcrRecipeImporter {
       
       // Skip "Makes X" lines
       if (RegExp(r'\b(?:makes|yields?|serves?)\s+\d+', caseSensitive: false).hasMatch(line)) {
+        continue;
+      }
+      
+      // Skip cookbook chapter headers (e.g., "Fish and Seafood", "Appetizers")
+      if (chapterHeaderPattern.hasMatch(line)) {
         continue;
       }
       
@@ -699,10 +710,13 @@ class OcrRecipeImporter {
       
       // Check if this looks like a direction continuation (not a standalone ingredient)
       // "with a lemon wedge" is part of "Garnish with a lemon wedge"
+      // Also catch lines that continue a previous sentence (start lowercase, or start with common continuation patterns)
       final isDirectionContinuation = RegExp(
-        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe)\b',
+        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s)\b',
         caseSensitive: false,
-      ).hasMatch(lowerLine);
+      ).hasMatch(lowerLine) ||
+      // Line starts with lowercase letter (continuation of previous sentence)
+      (line.isNotEmpty && line[0] == line[0].toLowerCase() && RegExp(r'^[a-z]').hasMatch(line));
       
       // Skip prose narrative and fragments entirely
       if (isProseNarrative || isProseFragment) {
@@ -752,7 +766,20 @@ class OcrRecipeImporter {
         inDirections = false;
       } else if (inDirections || isLikelyDirection) {
         // In directions mode or line looks like a direction
-        if (rawDirections.isNotEmpty && rawDirections.last.length < 100 && !startsWithAction) {
+        // Join to previous if: previous line doesn't end with sentence-ending punctuation,
+        // or current line looks like a continuation (starts lowercase or with continuation word)
+        final shouldJoinToPrevious = rawDirections.isNotEmpty && 
+            !startsWithAction &&
+            (
+              // Previous line doesn't end with sentence-ending punctuation
+              !RegExp(r'[.!?]$').hasMatch(rawDirections.last.trim()) ||
+              // Current line starts lowercase (continuation)
+              (line.isNotEmpty && RegExp(r'^[a-z]').hasMatch(line)) ||
+              // Previous line is short (likely incomplete)
+              rawDirections.last.length < 60
+            );
+        
+        if (shouldJoinToPrevious) {
           final updated = '${rawDirections.last} $line';
           rawDirections[rawDirections.length - 1] = updated;
           directions[directions.length - 1] = updated;
@@ -971,9 +998,10 @@ class OcrRecipeImporter {
     }
     
     // Try standard format: "amount unit name" (case insensitive)
-    // Supports: 1 CUP, 1/2 cup, ½ cup, 1½ cups, 2 parts, etc.
+    // Supports: 1 CUP, 1/2 cup, ½ cup, 1½ cups, 2 parts, 2 lbs., etc.
+    // Note: Units may have trailing period (lbs. oz.)
     final standardMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|parts?|c\.|t\.)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(workingLine);
     
@@ -1005,8 +1033,9 @@ class OcrRecipeImporter {
       
       // Check if the name starts with a unit word that wasn't captured by standardMatch
       // This handles cases like "1 CUP COCONUT OIL" where spacing confused the parser
+      // Also handle trailing periods (lbs. oz.)
       final unitAtStartMatch = RegExp(
-        r'^(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|parts?|c\.|t\.)\s+(.+)',
+        r'^(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|c\.|t\.)\s+(.+)',
         caseSensitive: false,
       ).firstMatch(name);
       
@@ -1029,6 +1058,29 @@ class OcrRecipeImporter {
       );
     }
     
+    // Try "X of Y" patterns like "Juice of 1 lemon", "Zest of 2 limes"
+    // These should become "Lemon Juice", amount: "1" or "Lime Zest", amount: "2"
+    final ofPatternMatch = RegExp(
+      r'^(juice|zest|rind|peel)\s+of\s+([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+(.+)',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    
+    if (ofPatternMatch != null) {
+      final part = ofPatternMatch.group(1)?.trim() ?? '';
+      final amount = ofPatternMatch.group(2)?.trim();
+      final ingredient = ofPatternMatch.group(3)?.trim() ?? '';
+      // Reformat as "Ingredient Part" e.g., "Lemon Juice"
+      final formattedName = '${_cleanIngredientName(ingredient)} ${_cleanIngredientName(part)}';
+      return RawIngredientData(
+        original: line,
+        amount: amount,
+        name: formattedName,
+        preparation: preparation,
+        alternative: alternative,
+        looksLikeIngredient: true,
+      );
+    }
+    
     // Fallback - just use the line as name (after extracting notes/alternatives)
     return RawIngredientData(
       original: line,
@@ -1042,13 +1094,14 @@ class OcrRecipeImporter {
   /// Normalize unit abbreviations to standard form
   String? _normalizeUnit(String? unit) {
     if (unit == null) return null;
-    final lower = unit.toLowerCase();
+    // Remove trailing period if present (e.g., "lbs." -> "lbs")
+    final lower = unit.toLowerCase().replaceAll('.', '');
     
     // Map to standard abbreviations
     const unitMap = {
       'cup': 'cup',
       'cups': 'cup',
-      'c.': 'cup',
+      'c': 'cup',
       'tbsp': 'tbsp',
       'tbsps': 'tbsp',
       'tablespoon': 'tbsp',
@@ -1057,7 +1110,7 @@ class OcrRecipeImporter {
       'tsps': 'tsp',
       'teaspoon': 'tsp',
       'teaspoons': 'tsp',
-      't.': 'tsp',
+      't': 'tsp',
       'oz': 'oz',
       'ounce': 'oz',
       'ounces': 'oz',
