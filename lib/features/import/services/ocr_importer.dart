@@ -502,6 +502,8 @@ class OcrRecipeImporter {
 
     // ===== PHASE 5: Parse ingredients and directions =====
     // Pattern for ingredient lines: starts with amount + unit
+    // Allow optional space between number and unit (OCR fix adds space, but pattern should handle both)
+    // Include common OCR misreadings like cUP, CUP, TEASPOON, TABLESPOON
     final ingredientPattern = RegExp(
       r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞/]+)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
@@ -520,24 +522,63 @@ class OcrRecipeImporter {
     // Track paragraph-style directions to split by sentence later
     final paragraphDirections = <String>[];
     
-    // Pre-process lines to handle two-column layouts
-    // OCR often merges "1 CUP FLOUR    Preheat oven to 350°F" into one line
+    // Pre-process lines:
+    // 1. Handle two-column layouts (ingredient + direction on same line)
+    // 2. Merge continuation lines (multi-line ingredients)
     final processedLines = <String>[];
+    String? pendingIngredient;
+    
     for (int i = contentStartIndex; i < lines.length; i++) {
       final line = lines[i];
+      final lowerLine = line.toLowerCase();
       
-      // Check if line looks like merged two-column text:
-      // - Starts with amount+unit (ingredient pattern)
-      // - Contains action verb later in the line
+      // Check if this line is a continuation of a previous ingredient
+      // Continuation lines typically:
+      // - Don't start with a number
+      // - Are short (< 40 chars)
+      // - Contain food-related words or "or", "page", parentheses
+      final isLikelyContinuation = pendingIngredient != null &&
+          !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
+          line.length < 50 &&
+          (lowerLine.contains('or ') || 
+           lowerLine.contains('page') || 
+           lowerLine.startsWith('(') ||
+           lowerLine.contains('unsweetened') ||
+           lowerLine.contains('homemade') ||
+           lowerLine.contains('store-bought') ||
+           lowerLine.contains('optional') ||
+           // ALL CAPS short lines are likely ingredient continuations
+           (line == line.toUpperCase() && line.length < 40 && !RegExp(r'\b(preheat|bake|mix|pour|stir)\b', caseSensitive: false).hasMatch(line)));
+      
+      // Check if line looks like a direction fragment (not a valid ingredient)
+      final isDirectionFragment = RegExp(
+        r'\b(frosting on|layer and|the top|cupcake|and set|rack for|on it|with another|an extra|fill a|pastry bag|onto each|store the|in the center|in an|airtight container)\b',
+        caseSensitive: false,
+      ).hasMatch(line);
+      
+      if (isLikelyContinuation && !isDirectionFragment) {
+        // Merge with pending ingredient
+        pendingIngredient = '$pendingIngredient $line';
+        continue;
+      }
+      
+      // If we have a pending ingredient, add it before processing current line
+      if (pendingIngredient != null) {
+        processedLines.add(pendingIngredient);
+        pendingIngredient = null;
+      }
+      
+      // Check if current line starts an ingredient that might continue
       final startsWithIngredient = ingredientPattern.hasMatch(line);
+      
+      // Check if line looks like merged two-column text
       final hasActionVerb = RegExp(
         r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|line|place|remove|cool|serve)\b',
         caseSensitive: false,
       ).hasMatch(line);
       
       if (startsWithIngredient && hasActionVerb && line.length > 50) {
-        // Try to find where ingredient ends and direction begins
-        // Look for patterns like: multiple spaces, or a capital letter after ingredient
+        // Try to split merged line
         final splitMatch = RegExp(
           r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+)?\s*(?:cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)?\s+[A-Za-z][A-Za-z\s\-,()]+?)(\s{2,}|\s+(?=[A-Z][a-z]))(.+)',
           caseSensitive: false,
@@ -555,7 +596,18 @@ class OcrRecipeImporter {
           continue;
         }
       }
-      processedLines.add(line);
+      
+      // If this looks like start of multi-line ingredient, hold it
+      if (startsWithIngredient && !hasActionVerb) {
+        pendingIngredient = line;
+      } else {
+        processedLines.add(line);
+      }
+    }
+    
+    // Don't forget last pending ingredient
+    if (pendingIngredient != null) {
+      processedLines.add(pendingIngredient);
     }
 
     for (final line in processedLines) {
@@ -601,7 +653,14 @@ class OcrRecipeImporter {
         r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|remove|serve|bring|minutes?|degrees?|°F|°C|oven|rack|bowl|until|batter)\b',
         caseSensitive: false,
       ).allMatches(lowerLine).length;
-      final isLikelyDirection = actionVerbCount >= 2 || startsWithAction;
+      
+      // Check if line is clearly a direction fragment (partial sentence from directions)
+      final isDirectionFragment = RegExp(
+        r'\b(frosting on|layer and|the top of|cupcake back|and set|on it\b|with another|an extra|fill a|pastry bag|onto each|store the|in the center|airtight container|wire rack|cool completely|come out clean|bounce back|pressure is applied|center rack|paper liners|muffin tins?|thick batter|dry ingredients|continue mixing)\b',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      
+      final isLikelyDirection = actionVerbCount >= 2 || startsWithAction || isDirectionFragment;
 
       if (isNumberedStep) {
         // Numbered step - definitely a direction
@@ -943,8 +1002,9 @@ class OcrRecipeImporter {
     );
     
     // Fix "94" at start of line or after space followed by unit -> ¾ (OCR reads ¾ as 94)
+    // Handle mixed case units
     fixed = fixed.replaceAllMapped(
-      RegExp(r'(^|\s)94\s+(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp)', caseSensitive: false, multiLine: true),
+      RegExp(r'(^|\s)94\s*(c[uU][pP]|cups?|teaspoons?|tsp|tablespoons?|tbsp)\b', caseSensitive: false, multiLine: true),
       (m) => '${m.group(1)}¾ ${m.group(2)}',
     );
     
@@ -955,14 +1015,16 @@ class OcrRecipeImporter {
     );
     
     // Fix "Ya" or "ya" followed by unit -> ¼ (OCR reads ¼ as Ya)
+    // Handle mixed case like "YacUP", "YaCUP", "Yacup"
     fixed = fixed.replaceAllMapped(
-      RegExp(r'\b[Yy]a\s*(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|cUP|CUP)', caseSensitive: false),
+      RegExp(r'\b[Yy]a\s*(c[uU][pP]|cups?|teaspoons?|tsp|tablespoons?|tbsp)\b', caseSensitive: false),
       (m) => '¼ ${m.group(1)}',
     );
     
     // Fix "Ve" or "ve" followed by unit -> ½ (OCR reads ½ as Ve)
+    // Handle mixed case like "VecUP", "VeCUP", "Vecup"
     fixed = fixed.replaceAllMapped(
-      RegExp(r'\b[Vv]e\s*(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|cUP|CUP)', caseSensitive: false),
+      RegExp(r'\b[Vv]e\s*(c[uU][pP]|cups?|teaspoons?|tsp|tablespoons?|tbsp)\b', caseSensitive: false),
       (m) => '½ ${m.group(1)}',
     );
     
@@ -1009,6 +1071,13 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(\d)(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|oz|lb|lbs|pound|pounds|ounce|ounces)\b', caseSensitive: false),
       (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    
+    // Normalize mixed-case units to lowercase: "cUP" -> "cup", "TEASPOON" -> "teaspoon"
+    // This ensures consistent parsing downstream
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b(c[uU][pP]s?|[tT][eE][aA][sS][pP][oO][oO][nN]s?|[tT][aA][bB][lL][eE][sS][pP][oO][oO][nN]s?)\b'),
+      (m) => m.group(0)!.toLowerCase(),
     );
     
     return fixed;
