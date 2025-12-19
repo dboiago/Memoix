@@ -10,6 +10,7 @@ class UnitNormalizer {
     // Volume - tablespoons
     'tablespoon': 'Tbsp',
     'tablespoons': 'Tbsp',
+    'tbsp': 'Tbsp',
     'tbs': 'Tbsp',
     'tb': 'Tbsp',
     't': 'Tbsp', // Only uppercase T, lowercase t is teaspoon
@@ -17,6 +18,7 @@ class UnitNormalizer {
     // Volume - teaspoons
     'teaspoon': 'tsp',
     'teaspoons': 'tsp',
+    'tsp': 'tsp',
     'ts': 'tsp',
     
     // Volume - fluid ounces

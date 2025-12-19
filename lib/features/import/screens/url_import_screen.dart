@@ -248,7 +248,8 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
       // Route based on confidence
       if (result.needsUserReview) {
         // Low confidence - show review screen for manual mapping
-        Navigator.of(context).pushReplacement(
+        // Use push (not pushReplacement) so back button returns to URL input
+        Navigator.of(context).push(
           MaterialPageRoute(
             builder: (_) => ImportReviewScreen(importResult: result),
           ),

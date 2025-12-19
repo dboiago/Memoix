@@ -421,6 +421,7 @@ class IngredientParser {
   /// Clean an ingredient name (remove extra whitespace, standardize case).
   /// 
   /// For OCR text, converts ALL CAPS to Title Case.
+  /// Always capitalizes the first letter of the ingredient name.
   static String _cleanName(String name) {
     // Remove leading/trailing whitespace and collapse internal whitespace
     var cleaned = name.trim().replaceAll(RegExp(r'\s+'), ' ');
@@ -438,6 +439,11 @@ class IngredientParser {
         }
         return word[0].toUpperCase() + word.substring(1).toLowerCase();
       }).join(' ');
+    }
+    
+    // Always capitalize the first letter
+    if (cleaned.isNotEmpty && cleaned[0] != cleaned[0].toUpperCase()) {
+      cleaned = cleaned[0].toUpperCase() + cleaned.substring(1);
     }
     
     return cleaned;
