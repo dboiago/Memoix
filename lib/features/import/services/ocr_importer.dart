@@ -495,9 +495,19 @@ class OcrRecipeImporter {
         'muffin', 'pie', 'tart', 'pastry', 'baking powder', 'baking soda'];
     final dessertCount = dessertKeywords.where((k) => allText.contains(k)).length;
     
-    // Drink indicators
+    // Drink indicators - check for spirits, beer/wine, and cocktail-specific terms
     final drinkKeywords = ['cocktail', 'shake', 'smoothie', 'juice', 'vodka', 
-        'gin', 'rum', 'whiskey', 'liqueur', 'oz vodka', 'oz gin', 'garnish with'];
+        'gin', 'rum', 'whiskey', 'whisky', 'bourbon', 'tequila', 'mezcal',
+        'liqueur', 'liquor', 'vermouth', 'bitters', 'triple sec', 'cointreau',
+        'amaretto', 'kahlua', 'baileys', 'schnapps', 'absinthe', 'campari',
+        'aperol', 'chambord', 'cassis', 'crรจme de', 'creme de',
+        'beer', 'wheat beer', 'lager', 'ale', 'stout', 'wine', 'prosecco',
+        'champagne', 'sparkling', 'soda water', 'tonic', 'club soda',
+        'parts', '1 part', '2 parts', '3 parts', '4 parts', // cocktail measurements
+        'oz vodka', 'oz gin', 'oz rum', 'oz whiskey', 'oz tequila',
+        'garnish with', 'to garnish', 'highball', 'martini glass', 'coupe',
+        'rocks glass', 'collins glass', 'shaker', 'muddle', 'strain',
+        'sipsmith', 'london dry', 'angostura'];
     final drinkCount = drinkKeywords.where((k) => allText.contains(k)).length;
     
     // Appetizer indicators
@@ -536,7 +546,8 @@ class OcrRecipeImporter {
       final lowerLine = line.toLowerCase();
       
       // Stop if we hit an ingredient-like line (starts with amount + unit)
-      if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {
+      // Include "parts" for cocktail recipes
+      if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon|parts?)', caseSensitive: false).hasMatch(line)) {
         break;
       }
       
@@ -933,9 +944,15 @@ class OcrRecipeImporter {
       if (garnishMatch != null) {
         final garnishText = garnishMatch.group(1)?.trim() ?? '';
         if (garnishText.isNotEmpty) {
-          // Normalize garnish: remove leading articles, title case
-          final normalized = normalizeGarnish(garnishText);
-          garnish.add(normalized);
+          // Parse garnish options (handle "X or Y" patterns)
+          // "An orange twist or fresh berries" -> add both as options
+          final garnishOptions = garnishText.split(RegExp(r'\s+or\s+', caseSensitive: false));
+          for (final opt in garnishOptions) {
+            final normalized = normalizeGarnish(opt.trim());
+            if (normalized.isNotEmpty) {
+              garnish.add(normalized);
+            }
+          }
         }
         continue; // Don't add as ingredient
       }
@@ -1045,6 +1062,8 @@ class OcrRecipeImporter {
           name: parsed.name,
           amount: parsed.amount,
           unit: parsed.unit,
+          preparation: parsed.preparation,
+          alternative: parsed.alternative,
         ));
         inIngredients = true;
         inDirections = false;
@@ -1080,6 +1099,8 @@ class OcrRecipeImporter {
           name: parsed.name,
           amount: parsed.amount,
           unit: parsed.unit,
+          preparation: parsed.preparation,
+          alternative: parsed.alternative,
         ));
       } else {
         // Ambiguous line - use heuristics
@@ -1101,12 +1122,15 @@ class OcrRecipeImporter {
               amount: parsed.amount,
               unit: parsed.unit,
               bakerPercent: parsed.bakerPercent,
+              alternative: parsed.alternative,
               looksLikeIngredient: parsed.amount != null,
             ));
             ingredients.add(Ingredient.create(
               name: parsed.name,
               amount: parsed.amount,
               unit: parsed.unit,
+              preparation: parsed.preparation,
+              alternative: parsed.alternative,
             ));
           }
         } else {
@@ -1565,6 +1589,32 @@ class OcrRecipeImporter {
       RegExp(r'(^|\n|\s)l\s+(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|g\.?|kg\.?|ml\.?|c\.|t\.)\b', caseSensitive: false),
       (m) => '${m.group(1)}1 ${m.group(2)}',
     );
+    
+    // Fix stylized floral bullets (❧) being misread as letters at start of ingredient lines
+    // Common OCR misreadings: "t 1 part" -> "1 part", "fl part" -> "1 part", "f4 parts" -> "4 parts"
+    // Also handles: "T 1 part", "P 2 parts", "A 1 part", etc.
+    // Pattern: letter(s) + space + digit + space + "part(s)" or unit
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)[TtFfPpAa]l?\s*(\d+)\s+(parts?|oz|ml)\b', multiLine: true, caseSensitive: false),
+      (m) => '${m.group(1)}${m.group(2)} ${m.group(3)}',
+    );
+    
+    // Fix "fl" or "Fl" directly attached to unit: "fl part" -> "1 part" (common OCR misread of ❧1)
+    // This catches when OCR reads the bullet as "f" and "1" as "l"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)[Ff]l\s+(parts?|oz|ml)\b', multiLine: true, caseSensitive: false),
+      (m) => '${m.group(1)}1 ${m.group(2)}',
+    );
+    
+    // Fix "f" or "t" directly attached to number: "f4" -> "4", "t1" -> "1" (bullet artifact)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)[FfTt](\d+)\s+(parts?|oz|ml)\b', multiLine: true, caseSensitive: false),
+      (m) => '${m.group(1)}${m.group(2)} ${m.group(3)}',
+    );
+    
+    // Fix "crème" OCR issues - normalize accented characters
+    // "crรจme" might be read as "creme", "crรฉme", etc.
+    fixed = fixed.replaceAll(RegExp(r'cr[eรจรฉรช]me', caseSensitive: false), 'crรจme');
     
     // Fix merged unit+word patterns where OCR doesn't add space:
     // "cuppowdered" -> "cup powdered", "cupall-purpose" -> "cup all-purpose"
