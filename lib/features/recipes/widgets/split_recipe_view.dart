@@ -72,12 +72,12 @@ class SplitRecipeView extends StatelessWidget {
     //   - Metadata row (~50-80px)
     //   - Footer content visibility (user must see that more content exists below)
     //
-    // Mobile (<600px): Use 55% of screen, clamped 200-400px to ensure footer visibility
+    // Mobile (<600px): Use 65% of screen, clamped 250-500px for balance
     // Tablet (≥600px): Use 75% of screen, clamped 400-700px for more content
     final double maxSplitHeight;
     if (isCompact) {
-      // Mobile: Smaller split view to ensure footer scrolls into view
-      maxSplitHeight = (screenHeight * 0.55).clamp(200.0, 400.0);
+      // Mobile: Balance between content visibility and footer access
+      maxSplitHeight = (screenHeight * 0.65).clamp(250.0, 500.0);
     } else {
       // Tablet/Desktop: Larger split view, more room available
       maxSplitHeight = (screenHeight * 0.75).clamp(400.0, 700.0);

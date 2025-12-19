@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart' show ImageSource;
 
-import '../../../app/theme/colors.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
@@ -18,7 +17,6 @@ class OCRScannerScreen extends ConsumerStatefulWidget {
 
 class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
   bool _isProcessing = false;
-  OcrResult? _ocrResult;
   String? _errorMessage;
 
   @override
@@ -114,101 +112,9 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                       ),
                     ),
                   ],
-
-                  // Result preview
-                  if (_ocrResult != null && _ocrResult!.success) ...[
-                    const SizedBox(height: 24),
-                    _buildResultPreview(theme, _ocrResult!),
-                  ],
                 ],
               ),
             ),
-    );
-  }
-
-  Widget _buildResultPreview(ThemeData theme, OcrResult result) {
-    final confidence = result.importResult?.overallConfidence ?? 0.0;
-    final ingredientCount = result.importResult?.ingredients.length ?? 0;
-    final directionCount = result.importResult?.directions.length ?? 0;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        // Confidence summary
-        Card(
-          color: confidence < 0.5 
-              ? MemoixColors.warningContainer 
-              : MemoixColors.successContainer,
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Icon(
-                      confidence < 0.5 ? Icons.warning : Icons.check_circle,
-                      color: confidence < 0.5 ? MemoixColors.warning : MemoixColors.success,
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        confidence < 0.5
-                            ? 'Text extracted! Please review and organize.'
-                            : 'Recipe structure detected!',
-                        style: theme.textTheme.titleSmall,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  'Found: $ingredientCount possible ingredients, $directionCount directions',
-                  style: theme.textTheme.bodySmall,
-                ),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 16),
-
-        // Raw text preview (collapsible)
-        ExpansionTile(
-          leading: const Icon(Icons.text_fields),
-          title: const Text('Raw Text'),
-          subtitle: Text(
-            '${result.rawText?.split('\n').length ?? 0} lines extracted',
-            style: theme.textTheme.bodySmall,
-          ),
-          children: [
-            Container(
-              padding: const EdgeInsets.all(12),
-              width: double.infinity,
-              color: theme.colorScheme.surfaceContainerHighest,
-              child: SelectableText(
-                result.rawText ?? '',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  fontFamily: 'monospace',
-                ),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 16),
-
-        // Action button
-        Row(
-          children: [
-            Expanded(
-              child: FilledButton.icon(
-                onPressed: () => _navigateToReview(result),
-                icon: const Icon(Icons.arrow_forward),
-                label: const Text('Review & Create Recipe'),
-              ),
-            ),
-          ],
-        ),
-      ],
     );
   }
 
@@ -242,10 +148,9 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
         return;
       }
 
-      setState(() {
-        _isProcessing = false;
-        _ocrResult = result;
-      });
+      // Success - navigate directly to review screen
+      setState(() => _isProcessing = false);
+      _navigateToReview(result);
     } catch (e) {
       setState(() {
         _isProcessing = false;
