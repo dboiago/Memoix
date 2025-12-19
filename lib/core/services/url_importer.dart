@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io' show gzip, HttpClient;
+import 'package:flutter/material.dart' show BuildContext;
 import 'package:http/http.dart' as http;
 import 'package:http/io_client.dart';
 import 'package:html/parser.dart' as html_parser;
@@ -7,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/recipes/models/recipe.dart';
+import 'webview_fetcher.dart';
 import '../../features/recipes/models/spirit.dart';
 import '../../features/import/models/recipe_import_result.dart';
 import '../utils/text_normalizer.dart';
@@ -474,8 +476,11 @@ class UrlRecipeImporter {
   /// work correctly. JSON-LD often has flat ingredient lists but HTML has
   /// section headers ("For the Crust", "For the Filling") that are essential.
   /// 
-  /// Returns RecipeImportResult with confidence scores for user review
-  Future<RecipeImportResult> importFromUrl(String url) async {
+  /// Returns RecipeImportResult with confidence scores for user review.
+  /// 
+  /// If [context] is provided, will attempt to use WebView fallback when
+  /// the site returns 403 (bot detection). This requires a valid BuildContext.
+  Future<RecipeImportResult> importFromUrl(String url, {BuildContext? context}) async {
     try {
       // Check if this is a YouTube video
       final videoId = _extractYouTubeVideoId(url);
@@ -630,19 +635,37 @@ class UrlRecipeImporter {
         }
       }
       
+      String body;
+      var document;
+      
       if (response == null || response.statusCode != 200) {
-        // Provide more helpful error messages for known issues
-        String errorMessage = lastError ?? 'unknown error';
-        if (errorMessage.contains('does not match') || 
-            errorMessage.contains('Failed to parse HTTP')) {
-          errorMessage = 'This site may have connection issues. Please try again later or copy the recipe manually.';
+        // Check if we got a 403 (bot detection) and have a context for WebView fallback
+        final is403 = lastError?.contains('403') == true || response?.statusCode == 403;
+        
+        if (is403 && context != null) {
+          // Try WebView fallback for bot-protected sites
+          try {
+            body = await WebViewFetcher.fetchHtml(context, url);
+            document = html_parser.parse(body);
+            // WebView succeeded, continue with normal parsing below
+          } catch (webViewError) {
+            // WebView also failed, throw original error
+            throw Exception('Failed to fetch URL: Site requires browser access. WebView fallback failed: $webViewError');
+          }
+        } else {
+          // Provide more helpful error messages for known issues
+          String errorMessage = lastError ?? 'unknown error';
+          if (errorMessage.contains('does not match') || 
+              errorMessage.contains('Failed to parse HTTP')) {
+            errorMessage = 'This site may have connection issues. Please try again later or copy the recipe manually.';
+          }
+          throw Exception('Failed to fetch URL: $errorMessage');
         }
-        throw Exception('Failed to fetch URL: $errorMessage');
+      } else {
+        // Decode response body - handle encoding errors gracefully
+        body = _decodeResponseBody(response);
+        document = html_parser.parse(body);
       }
-
-      // Decode response body - handle encoding errors gracefully
-      String body = _decodeResponseBody(response);
-      var document = html_parser.parse(body);
       
       // Check if we got a JavaScript shell (no real content)
       final hasRealContent = document.querySelector('title')?.text?.isNotEmpty == true ||

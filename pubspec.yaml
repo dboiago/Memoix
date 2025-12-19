@@ -29,6 +29,7 @@ dependencies:
   http: ^1.2.0
   connectivity_plus: ^6.1.1
   package_info_plus: ^8.1.2
+  webview_flutter: ^4.10.0
   
   # Recipe URL Parsing
   html: ^0.15.4

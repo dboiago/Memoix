@@ -279,7 +279,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
     try {
       final importer = UrlRecipeImporter();
-      final result = await importer.importFromUrl(url);
+      final result = await importer.importFromUrl(url, context: context);
 
       if (!result.hasMinimumData) {
         setState(() => _error = 'Could not extract recipe from this URL');
