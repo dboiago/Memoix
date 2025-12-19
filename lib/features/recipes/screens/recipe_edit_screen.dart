@@ -8,6 +8,7 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/utils/text_normalizer.dart';
 import '../models/category.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
@@ -2292,8 +2293,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             return suggestions;
           },
           onSelected: (value) {
-            if (!_garnish.contains(value)) {
-              setState(() => _garnish.add(value));
+            final normalized = normalizeGarnish(value);
+            if (!_garnish.contains(normalized)) {
+              setState(() => _garnish.add(normalized));
               _garnishFieldController?.clear();
             }
           },
@@ -2309,18 +2311,24 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   icon: const Icon(Icons.add),
                   onPressed: () {
                     final value = controller.text.trim();
-                    if (value.isNotEmpty && !_garnish.contains(value)) {
-                      setState(() => _garnish.add(value));
-                      controller.clear();
+                    if (value.isNotEmpty) {
+                      final normalized = normalizeGarnish(value);
+                      if (!_garnish.contains(normalized)) {
+                        setState(() => _garnish.add(normalized));
+                        controller.clear();
+                      }
                     }
                   },
                 ),
               ),
               textCapitalization: TextCapitalization.words,
               onSubmitted: (value) {
-                if (value.isNotEmpty && !_garnish.contains(value)) {
-                  setState(() => _garnish.add(value));
-                  controller.clear();
+                if (value.isNotEmpty) {
+                  final normalized = normalizeGarnish(value);
+                  if (!_garnish.contains(normalized)) {
+                    setState(() => _garnish.add(normalized));
+                    controller.clear();
+                  }
                 }
               },
             );

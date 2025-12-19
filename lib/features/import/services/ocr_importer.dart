@@ -1,5 +1,7 @@
 import 'dart:io' show Platform;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../core/utils/text_normalizer.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
@@ -647,7 +649,9 @@ class OcrRecipeImporter {
       if (garnishMatch != null) {
         final garnishText = garnishMatch.group(1)?.trim() ?? '';
         if (garnishText.isNotEmpty) {
-          garnish.add(garnishText);
+          // Normalize garnish: remove leading articles, title case
+          final normalized = normalizeGarnish(garnishText);
+          garnish.add(normalized);
         }
         continue; // Don't add as ingredient
       }

@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/models/spirit.dart';
 import '../../features/import/models/recipe_import_result.dart';
+import '../utils/text_normalizer.dart';
 
 /// Helper class for YouTube chapters
 class YouTubeChapter {
@@ -3885,7 +3886,7 @@ class UrlRecipeImporter {
       }
     }
     
-    return result.where((s) => s.isNotEmpty).toList();
+    return result.where((s) => s.isNotEmpty).map((s) => normalizeGarnish(s)).toList();
   }
 
   /// Parse nutrition information from schema.org NutritionInformation
@@ -7283,10 +7284,10 @@ class UrlRecipeImporter {
       result['glass'] = _toTitleCase(result['glass'] as String);
     }
     
-    // Normalize garnish (title case each item)
+    // Normalize garnish (remove leading articles, title case each item)
     final garnishList = result['garnish'] as List<String>;
     if (garnishList.isNotEmpty) {
-      result['garnish'] = garnishList.map((g) => _toTitleCase(g)).toList();
+      result['garnish'] = garnishList.map((g) => normalizeGarnish(g)).toList();
     }
     
     // Normalize yield/serves (strip prefixes)

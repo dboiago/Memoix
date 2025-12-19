@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../app/theme/colors.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/utils/text_normalizer.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/category.dart';
 import '../../recipes/models/cuisine.dart';
@@ -986,8 +987,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                 );
               },
               onSelected: (value) {
-                if (!_garnish.contains(value)) {
-                  setState(() => _garnish.add(value));
+                final normalized = normalizeGarnish(value);
+                if (!_garnish.contains(normalized)) {
+                  setState(() => _garnish.add(normalized));
                   _garnishFieldController?.clear();
                 }
               },
@@ -1003,18 +1005,24 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                       icon: const Icon(Icons.add),
                       onPressed: () {
                         final value = controller.text.trim();
-                        if (value.isNotEmpty && !_garnish.contains(value)) {
-                          setState(() => _garnish.add(value));
-                          controller.clear();
+                        if (value.isNotEmpty) {
+                          final normalized = normalizeGarnish(value);
+                          if (!_garnish.contains(normalized)) {
+                            setState(() => _garnish.add(normalized));
+                            controller.clear();
+                          }
                         }
                       },
                     ),
                   ),
                   textCapitalization: TextCapitalization.words,
                   onSubmitted: (value) {
-                    if (value.isNotEmpty && !_garnish.contains(value)) {
-                      setState(() => _garnish.add(value));
-                      controller.clear();
+                    if (value.isNotEmpty) {
+                      final normalized = normalizeGarnish(value);
+                      if (!_garnish.contains(normalized)) {
+                        setState(() => _garnish.add(normalized));
+                        controller.clear();
+                      }
                     }
                   },
                 );
