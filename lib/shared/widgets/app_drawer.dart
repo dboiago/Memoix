@@ -31,7 +31,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'For savv(or)y minds.',
+                    'For savv(or)y minds',
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.outline,
                     ),
