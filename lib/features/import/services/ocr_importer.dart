@@ -484,9 +484,46 @@ class OcrRecipeImporter {
     
     // Track paragraph-style directions to split by sentence later
     final paragraphDirections = <String>[];
-
+    
+    // Pre-process lines to handle two-column layouts
+    // OCR often merges "1 CUP FLOUR    Preheat oven to 350°F" into one line
+    final processedLines = <String>[];
     for (int i = contentStartIndex; i < lines.length; i++) {
       final line = lines[i];
+      
+      // Check if line looks like merged two-column text:
+      // - Starts with amount+unit (ingredient pattern)
+      // - Contains action verb later in the line
+      final startsWithIngredient = ingredientPattern.hasMatch(line);
+      final hasActionVerb = RegExp(
+        r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|line|place|remove|cool|serve)\b',
+        caseSensitive: false,
+      ).hasMatch(line);
+      
+      if (startsWithIngredient && hasActionVerb && line.length > 50) {
+        // Try to find where ingredient ends and direction begins
+        // Look for patterns like: multiple spaces, or a capital letter after ingredient
+        final splitMatch = RegExp(
+          r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+)?\s*(?:cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)?\s+[A-Za-z][A-Za-z\s\-,()]+?)(\s{2,}|\s+(?=[A-Z][a-z]))(.+)',
+          caseSensitive: false,
+        ).firstMatch(line);
+        
+        if (splitMatch != null) {
+          final ingredientPart = splitMatch.group(1)?.trim();
+          final directionPart = splitMatch.group(3)?.trim();
+          if (ingredientPart != null && ingredientPart.isNotEmpty) {
+            processedLines.add(ingredientPart);
+          }
+          if (directionPart != null && directionPart.isNotEmpty) {
+            processedLines.add(directionPart);
+          }
+          continue;
+        }
+      }
+      processedLines.add(line);
+    }
+
+    for (final line in processedLines) {
       final lowerLine = line.toLowerCase();
       
       // Skip serves lines
@@ -684,20 +721,36 @@ class OcrRecipeImporter {
     }
     
     // Try format without explicit unit but with amount: "2 eggs", "3 cloves garlic"
+    // Also handles cases where OCR might have weird spacing
     final simpleMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+)?)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(line);
     
     if (simpleMatch != null) {
-      final name = simpleMatch.group(2)?.trim() ?? line;
-      // Only count as ingredient if name looks like food
+      var name = simpleMatch.group(2)?.trim() ?? line;
+      String? unit;
+      
+      // Check if the name starts with a unit word that wasn't captured by standardMatch
+      // This handles cases like "1 CUP COCONUT OIL" where spacing confused the parser
+      final unitAtStartMatch = RegExp(
+        r'^(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
+        caseSensitive: false,
+      ).firstMatch(name);
+      
+      if (unitAtStartMatch != null) {
+        unit = _normalizeUnit(unitAtStartMatch.group(1)?.trim());
+        name = unitAtStartMatch.group(2)?.trim() ?? name;
+      }
+      
+      // Only count as ingredient if name looks like food (not a direction)
       final looksLikeFood = !RegExp(r'\b(preheat|bake|cook|stir|mix|add|pour|let|until|minutes?|degrees?|°)\b', caseSensitive: false).hasMatch(name);
       return RawIngredientData(
         original: line,
         amount: simpleMatch.group(1)?.trim(),
+        unit: unit,
         name: _cleanIngredientName(name),
-        looksLikeIngredient: looksLikeFood,
+        looksLikeIngredient: looksLikeFood && (unit != null || name.length < 40),
       );
     }
     

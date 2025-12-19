@@ -164,7 +164,7 @@ FilterChips are UI elements - use `theme.colorScheme.secondary` for `selectedCol
 The split view uses a fixed-height container strategy to allow footer content (Notes, Gallery, Nutrition) to scroll below.
 
 **Height Calculation (Responsive):**
-* **Mobile (<600px):** 65% of screen, clamped 250-500px - balances content with footer access
+* **Mobile (<600px):** 70% of screen, clamped 300-550px - balances content with footer access
 * **Tablet (≥600px):** 75% of screen, clamped 400-700px - more room for content
 
 The split view also uses content-aware sizing: if the actual content (ingredients + directions) is shorter than the max height, it shrinks to fit.
