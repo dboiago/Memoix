@@ -270,7 +270,17 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               confidence: result.directionsConfidence,),
           const SizedBox(height: 8),
           _buildDirectionsList(theme, result),
-          const SizedBox(height: 32),
+          const SizedBox(height: 24),
+
+          // Notes (if any)
+          if (result.notes != null && result.notes!.isNotEmpty) ...[
+            _buildSectionTitle(theme, 'Notes', Icons.notes),
+            const SizedBox(height: 8),
+            _buildNotesCard(theme, result.notes!),
+            const SizedBox(height: 24),
+          ],
+
+          const SizedBox(height: 8),
 
           // Action buttons
           Row(
@@ -1204,6 +1214,19 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           );
         }),
       ],
+    );
+  }
+
+  Widget _buildNotesCard(ThemeData theme, String notes) {
+    return Card(
+      color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Text(
+          notes,
+          style: theme.textTheme.bodyMedium,
+        ),
+      ),
     );
   }
 

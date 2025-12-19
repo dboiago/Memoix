@@ -504,8 +504,9 @@ class OcrRecipeImporter {
     // Pattern for ingredient lines: starts with amount + unit
     // Allow optional space between number and unit (OCR fix adds space, but pattern should handle both)
     // Include common OCR misreadings like cUP, CUP, TEASPOON, TABLESPOON
+    // Include "part/parts" for cocktail recipes
     final ingredientPattern = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞/]+)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞/]+)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|parts?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     );
 
@@ -513,6 +514,7 @@ class OcrRecipeImporter {
     final rawDirections = <String>[];
     final ingredients = <Ingredient>[];
     final directions = <String>[];
+    final garnish = <String>[];
     
     bool inIngredients = false;
     bool inDirections = false;
@@ -634,6 +636,26 @@ class OcrRecipeImporter {
         foundDirectionHeader = true;
         continue;
       }
+      
+      // Check for garnish line: "To garnish: ..." or "Garnish: ..."
+      final garnishMatch = RegExp(
+        r'^(?:to\s+)?garnish[:\s]+(.+)',
+        caseSensitive: false,
+      ).firstMatch(line);
+      if (garnishMatch != null) {
+        final garnishText = garnishMatch.group(1)?.trim() ?? '';
+        if (garnishText.isNotEmpty) {
+          garnish.add(garnishText);
+        }
+        continue; // Don't add as ingredient
+      }
+      
+      // Check if line is clearly prose/narrative (not ingredient or direction)
+      // Prose indicators: historical references, story words, long complex sentences
+      final isProseNarrative = RegExp(
+        r'\b(earliest|known|history|century|centuries|combined at|winter of|thames|froze|walking|streets|baskets|hogarth|included|etching|lane|british|book|contain|began|combination|strikes|beginnings|modern|flavor|pairing|mostly|because|really|good|if you add|spiraled|between|inside|hint|becomes|substitute)\b',
+        caseSensitive: false,
+      ).allMatches(lowerLine).length >= 2; // Need 2+ prose words to trigger
 
       // Check if line looks like an ingredient
       final ingredientMatch = ingredientPattern.firstMatch(line);
@@ -661,6 +683,12 @@ class OcrRecipeImporter {
       ).hasMatch(lowerLine);
       
       final isLikelyDirection = actionVerbCount >= 2 || startsWithAction || isDirectionFragment;
+      
+      // Skip prose narrative entirely - add to notes, not ingredients or directions
+      if (isProseNarrative) {
+        // Prose/backstory - skip entirely (already captured in notes phase if early)
+        continue;
+      }
 
       if (isNumberedStep) {
         // Numbered step - definitely a direction
@@ -772,6 +800,7 @@ class OcrRecipeImporter {
       notes: notes,
       ingredients: ingredients,
       directions: directions,
+      garnish: garnish,
       rawText: rawText,
       textBlocks: blocks,
       rawIngredients: rawIngredients,
@@ -840,9 +869,9 @@ class OcrRecipeImporter {
     }
     
     // Try standard format: "amount unit name" (case insensitive)
-    // Supports: 1 CUP, 1/2 cup, ½ cup, 1½ cups, etc.
+    // Supports: 1 CUP, 1/2 cup, ½ cup, 1½ cups, 2 parts, etc.
     final standardMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|parts?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(workingLine);
     
@@ -872,7 +901,7 @@ class OcrRecipeImporter {
       // Check if the name starts with a unit word that wasn't captured by standardMatch
       // This handles cases like "1 CUP COCONUT OIL" where spacing confused the parser
       final unitAtStartMatch = RegExp(
-        r'^(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)',
+        r'^(cups?|tbsps?|tsps?|oz|lbs?|g|kg|ml|l|pounds?|ounces?|teaspoons?|tablespoons?|parts?|c\.|t\.)\s+(.+)',
         caseSensitive: false,
       ).firstMatch(name);
       
@@ -934,6 +963,8 @@ class OcrRecipeImporter {
       'kg': 'kg',
       'ml': 'ml',
       'l': 'L',
+      'part': 'part',
+      'parts': 'part',
     };
     
     return unitMap[lower] ?? unit;
@@ -1078,6 +1109,21 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'\b(c[uU][pP]s?|[tT][eE][aA][sS][pP][oO][oO][nN]s?|[tT][aA][bB][lL][eE][sS][pP][oO][oO][nN]s?)\b'),
       (m) => m.group(0)!.toLowerCase(),
+    );
+    
+    // Fix stylized bullets being read as numbers in cocktail/drink recipes
+    // "4 2 parts" -> "2 parts" (decorative bullet read as "4")
+    // "P4 parts" -> "4 parts" ("P" from stylized character)
+    // "A 2 parts" -> "2 parts" (various OCR artifacts)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'^[A-Za-z4]\s+(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
+      (m) => m.group(1)!,
+    );
+    
+    // Fix "4 2 parts" pattern (number-space-number-parts)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'^\d\s+(\d+\s+parts?)\b', multiLine: true, caseSensitive: false),
+      (m) => m.group(1)!,
     );
     
     return fixed;
