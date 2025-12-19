@@ -958,8 +958,7 @@ class OcrRecipeImporter {
           final existing = rawIngredients[i];
           
           // Add metric as a note/preparation field
-          // Format: "Metric: 1 kg" or just append to existing preparation
-          final metricNote = 'Metric: $metric';
+          final metricNote = metric;
           final newPrep = existing.preparation != null && existing.preparation!.isNotEmpty
               ? '${existing.preparation}; $metricNote'
               : metricNote;
