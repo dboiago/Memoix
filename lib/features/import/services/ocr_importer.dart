@@ -666,7 +666,7 @@ class OcrRecipeImporter {
       
       // Check if line STARTS with an action verb (strong direction indicator)
       final startsWithAction = RegExp(
-        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|spread|frost|store|remove|serve|bring|add the|stir|whisk|combine|mix)',
+        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake)',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       
@@ -718,6 +718,13 @@ class OcrRecipeImporter {
         final cleanedStep = line.replaceFirst(RegExp(r'^\d+[\.\)]\s*'), '');
         rawDirections.add(cleanedStep);
         directions.add(cleanedStep);
+        inDirections = true;
+        inIngredients = false;
+      } else if (startsWithAction) {
+        // Line STARTS with an action verb - definitely a direction
+        // Add directly to rawDirections, not paragraphDirections
+        rawDirections.add(line);
+        directions.add(line);
         inDirections = true;
         inIngredients = false;
       } else if (isLongProse || (isLikelyDirection && line.length > 15)) {
