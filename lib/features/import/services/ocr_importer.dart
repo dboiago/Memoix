@@ -905,7 +905,7 @@ class OcrRecipeImporter {
       // Check if this looks like a prose fragment (tips, variations, narrative)
       // This check needs to happen BEFORE inIngredients check to avoid false positives
       final isProseFragment = RegExp(
-        r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint[-—]?put|whole lemon|lemon peel|lemon for|for lime|horse.s neck|foghorn)\b',
+        r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint[-—]?put|whole lemon|lemon peel|lemon for|for lime)\b',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       
@@ -1055,7 +1055,7 @@ class OcrRecipeImporter {
         
         // Skip tips/variations (these contain prose fragment patterns)
         final isTipOrVariation = RegExp(
-          r'\b(if you|you can|becomes a|it becomes|substitute|hint|horse.s neck|foghorn)\b',
+          r'\b(if you|you can|becomes a|it becomes|substitute|hint)\b',
           caseSensitive: false,
         ).hasMatch(lowerSentence);
         
@@ -1081,14 +1081,14 @@ class OcrRecipeImporter {
     // Directions may have been concatenated; split them into individual steps
     final processedDirections = <String>[];
     final proseFragmentPattern = RegExp(
-      r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint|the drink|horse.s neck|foghorn|it in before)\b',
+      r'\b(if you|you add|you can|becomes a|it becomes|substitute|spiraled|between the|inside of|hint|the drink|it in before)\b',
       caseSensitive: false,
     );
     
     // Time/storage info pattern - these are metadata, not direction steps
     // "HANDS ON 20 minutes BAKE 45 minutes at 350F Refrigerate in an airtight container..."
     final timeStoragePattern = RegExp(
-      r'^(hands on|prep time|cook time|bake time|total time|refrigerate in|store in|makes?\\s+\\d|yields?\\s+\\d|serves?\\s+\\d)',
+      r'^(hands on|prep time|cook time|bake time|total time|refrigerate in|store in|makes\s+\d|yields\s+\d|serves\s+\d)',
       caseSensitive: false,
     );
     
@@ -1099,7 +1099,7 @@ class OcrRecipeImporter {
       }
       
       // Split on period followed by space and capital letter, or period at end
-      final sentences = direction.split(RegExp(r'(?<=\\.)\s+(?=[A-Z])|(?<=\\.)\s*$'));
+      final sentences = direction.split(RegExp(r'(?<=\.)\s+(?=[A-Z])|(?<=\.)\s*$'));
       
       for (final sentence in sentences) {
         final trimmed = sentence.trim();
