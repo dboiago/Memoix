@@ -261,13 +261,13 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
         final specializedScreen = SpecializedCourses.getEditScreen(result, uuid);
         
         if (specializedScreen != null) {
-          Navigator.of(context).pushReplacement(
+          Navigator.of(context).push(
             MaterialPageRoute(builder: (_) => specializedScreen),
           );
         } else {
           // Default: use regular RecipeEditScreen
           final recipe = result.toRecipe(uuid);
-          Navigator.of(context).pushReplacement(
+          Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => RecipeEditScreen(importedRecipe: recipe),
             ),
