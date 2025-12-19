@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:image_picker/image_picker.dart' show ImageSource;
 
 import '../../../app/theme/colors.dart';
 import '../services/ocr_importer.dart';
@@ -214,24 +214,15 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
 
   Future<void> _captureImage(ImageSource source) async {
     try {
-      final picker = ImagePicker();
-      final image = await picker.pickImage(
-        source: source,
-        maxWidth: 2000,
-        maxHeight: 2000,
-      );
-
-      if (image == null) return;
-
+      final ocrService = ref.read(ocrImporterProvider);
+      
       setState(() {
         _isProcessing = true;
         _errorMessage = null;
         _ocrResult = null;
       });
 
-      final ocrService = ref.read(ocrImporterProvider);
-      
-      // Use scanFromGallery/Camera which now returns import result
+      // Let the OCR service handle image picking and processing
       final result = source == ImageSource.camera 
           ? await ocrService.scanFromCamera() 
           : await ocrService.scanFromGallery();
