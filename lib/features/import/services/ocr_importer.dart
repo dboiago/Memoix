@@ -1,6 +1,7 @@
 import 'dart:io' show Platform;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/utils/ingredient_parser.dart';
 import '../../../core/utils/text_normalizer.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:image_picker/image_picker.dart';
@@ -1268,225 +1269,22 @@ class OcrRecipeImporter {
   /// - "1 CUP HOMEMADE APPLESAUCE (PAGE 78) OR STORE-BOUGHT UNSWEETENED APPLESAUCE"
   /// - Baker's percentage: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
   RawIngredientData _parseIngredientLine(String line) {
-    // First, extract parenthetical notes and "or" alternatives
-    var workingLine = line;
-    String? preparation;
-    String? alternative;
+    // Use the shared IngredientParser for consistent parsing
+    final parsed = IngredientParser.parse(line);
     
-    // Extract parenthetical content like "(page 78)" or "(optional)"
-    final parenMatch = RegExp(r'\(([^)]+)\)').firstMatch(workingLine);
-    if (parenMatch != null) {
-      final parenContent = parenMatch.group(1)?.toLowerCase() ?? '';
-      // Check if it's a page reference, optional marker, or other note
-      if (parenContent.contains('page') || 
-          parenContent.contains('optional') ||
-          parenContent.contains('see') ||
-          parenContent.contains('about')) {
-        preparation = parenMatch.group(1)?.trim();
-        workingLine = workingLine.replaceFirst(parenMatch.group(0)!, '').trim();
-      }
-    }
-    
-    // Extract trailing modifiers like ", divided", ", softened", ", lightly beaten"
-    // These describe preparation state and should go in the preparation field
-    final modifierMatch = RegExp(
-      r',\s*(divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned)\s*$',
-      caseSensitive: false,
-    ).firstMatch(workingLine);
-    if (modifierMatch != null) {
-      final modifier = modifierMatch.group(1)?.trim();
-      if (modifier != null) {
-        preparation = preparation != null ? '$preparation; $modifier' : modifier;
-        workingLine = workingLine.substring(0, modifierMatch.start).trim();
-      }
-    }
-    
-    // Extract "or ..." alternatives
-    final orMatch = RegExp(r'\s+or\s+(.+)$', caseSensitive: false).firstMatch(workingLine);
-    if (orMatch != null) {
-      alternative = orMatch.group(1)?.trim();
-      workingLine = workingLine.substring(0, orMatch.start).trim();
-    }
-    
-    // Try baker's percentage format first: "Name, XX% – amount (alt amount)"
-    final bakerMatch = RegExp(
-      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',
-      caseSensitive: false,
-    ).firstMatch(workingLine);
-    
-    if (bakerMatch != null) {
-      return RawIngredientData(
-        original: line,
-        name: bakerMatch.group(1)?.trim() ?? line,
-        bakerPercent: '${bakerMatch.group(2)}%',
-        amount: bakerMatch.group(3)?.trim(),
-        preparation: preparation ?? bakerMatch.group(4)?.trim(),
-        alternative: alternative,
-        looksLikeIngredient: true,
-      );
-    }
-    
-    // Try standard format: "amount unit name" (case insensitive)
-    // Supports: 1 CUP, 1/2 cup, ½ cup, 1½ cups, 2 parts, 2 lbs., etc.
-    // Note: Units may have trailing period (lbs. oz.)
-    final standardMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|c\.|t\.)\s+(.+)',
-      caseSensitive: false,
-    ).firstMatch(workingLine);
-    
-    if (standardMatch != null) {
-      final amount = standardMatch.group(1)?.trim();
-      final normalizedUnit = _normalizeUnit(standardMatch.group(2)?.trim());
-      return RawIngredientData(
-        original: line,
-        amount: amount,
-        unit: _pluralizeUnit(normalizedUnit, amount),
-        name: _cleanIngredientName(standardMatch.group(3)?.trim() ?? workingLine),
-        preparation: preparation,
-        alternative: alternative,
-        looksLikeIngredient: true,
-      );
-    }
-    
-    // Try format without explicit unit but with amount: "2 eggs", "3 cloves garlic"
-    // Also handles cases where OCR might have weird spacing
-    final simpleMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+)?)\s+(.+)',
-      caseSensitive: false,
-    ).firstMatch(workingLine);
-    
-    if (simpleMatch != null) {
-      var name = simpleMatch.group(2)?.trim() ?? workingLine;
-      String? unit;
-      final amount = simpleMatch.group(1)?.trim();
-      
-      // Check if the name starts with a unit word that wasn't captured by standardMatch
-      // This handles cases like "1 CUP COCONUT OIL" where spacing confused the parser
-      // Also handle trailing periods (lbs. oz.)
-      final unitAtStartMatch = RegExp(
-        r'^(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|c\.|t\.)\s+(.+)',
-        caseSensitive: false,
-      ).firstMatch(name);
-      
-      if (unitAtStartMatch != null) {
-        final normalizedUnit = _normalizeUnit(unitAtStartMatch.group(1)?.trim());
-        unit = _pluralizeUnit(normalizedUnit, amount);
-        name = unitAtStartMatch.group(2)?.trim() ?? name;
-      }
-      
-      // Only count as ingredient if name looks like food (not a direction)
-      final looksLikeFood = !RegExp(r'\b(preheat|bake|cook|stir|mix|add|pour|let|until|minutes?|degrees?|°)\b', caseSensitive: false).hasMatch(name);
-      return RawIngredientData(
-        original: line,
-        amount: amount,
-        unit: unit,
-        name: _cleanIngredientName(name),
-        preparation: preparation,
-        alternative: alternative,
-        looksLikeIngredient: looksLikeFood && (unit != null || name.length < 40),
-      );
-    }
-    
-    // Try "X of Y" patterns like "Juice of 1 lemon", "Zest of 2 limes"
-    // These should become "Lemon Juice", amount: "1" or "Lime Zest", amount: "2"
-    final ofPatternMatch = RegExp(
-      r'^(juice|zest|rind|peel)\s+of\s+([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+(.+)',
-      caseSensitive: false,
-    ).firstMatch(workingLine);
-    
-    if (ofPatternMatch != null) {
-      final part = ofPatternMatch.group(1)?.trim() ?? '';
-      final amount = ofPatternMatch.group(2)?.trim();
-      final ingredient = ofPatternMatch.group(3)?.trim() ?? '';
-      // Reformat as "Ingredient Part" e.g., "Lemon Juice"
-      final formattedName = '${_cleanIngredientName(ingredient)} ${_cleanIngredientName(part)}';
-      return RawIngredientData(
-        original: line,
-        amount: amount,
-        name: formattedName,
-        preparation: preparation,
-        alternative: alternative,
-        looksLikeIngredient: true,
-      );
-    }
-    
-    // Fallback - just use the line as name (after extracting notes/alternatives)
+    // Convert ParsedIngredient to RawIngredientData
     return RawIngredientData(
-      original: line,
-      name: _cleanIngredientName(workingLine),
-      preparation: preparation,
-      alternative: alternative,
-      looksLikeIngredient: false,
+      original: parsed.original.isNotEmpty ? parsed.original : line,
+      name: _cleanIngredientName(parsed.name.isNotEmpty ? parsed.name : line),
+      amount: parsed.amount,
+      unit: parsed.unit,
+      preparation: parsed.preparation,
+      bakerPercent: parsed.bakerPercent,
+      alternative: parsed.alternative,
+      isSection: parsed.isSection,
+      sectionName: parsed.sectionName,
+      looksLikeIngredient: parsed.looksLikeIngredient,
     );
-  }
-  
-  /// Normalize unit abbreviations to standard form
-  String? _normalizeUnit(String? unit) {
-    if (unit == null) return null;
-    // Remove trailing period if present (e.g., "lbs." -> "lbs")
-    final lower = unit.toLowerCase().replaceAll('.', '');
-    
-    // Map to standard abbreviations
-    const unitMap = {
-      'cup': 'cup',
-      'cups': 'cup',
-      'c': 'cup',
-      'tbsp': 'tbsp',
-      'tbsps': 'tbsp',
-      'tablespoon': 'tbsp',
-      'tablespoons': 'tbsp',
-      'tsp': 'tsp',
-      'tsps': 'tsp',
-      'teaspoon': 'tsp',
-      'teaspoons': 'tsp',
-      't': 'tsp',
-      'oz': 'oz',
-      'ounce': 'oz',
-      'ounces': 'oz',
-      'lb': 'lb',
-      'lbs': 'lb',
-      'pound': 'lb',
-      'pounds': 'lb',
-      'g': 'g',
-      'kg': 'kg',
-      'ml': 'ml',
-      'l': 'L',
-      'part': 'part',
-      'parts': 'parts',
-    };
-    
-    return unitMap[lower] ?? unit;
-  }
-  
-  /// Get the appropriate unit form based on amount (singular vs plural)
-  String? _pluralizeUnit(String? unit, String? amount) {
-    if (unit == null) return null;
-    if (amount == null) return unit;
-    
-    // Parse amount to determine if plural
-    final numMatch = RegExp(r'^([\d.]+)').firstMatch(amount);
-    if (numMatch != null) {
-      final num = double.tryParse(numMatch.group(1) ?? '');
-      if (num != null && num > 1) {
-        // Pluralize
-        if (unit == 'part') return 'parts';
-        if (unit == 'cup') return 'cups';
-        if (unit == 'lb') return 'lbs';
-        if (unit == 'oz') return 'oz'; // oz stays same
-      }
-    }
-    // Check for fractions > 1 like "1½" or "2"
-    if (amount.contains('½') || amount.contains('¼') || amount.contains('¾')) {
-      final firstChar = amount.isNotEmpty ? amount[0] : '0';
-      final firstNum = int.tryParse(firstChar);
-      if (firstNum != null && firstNum >= 1 && amount.length > 1) {
-        // Like "1½" - more than 1, pluralize
-        if (unit == 'part') return 'parts';
-        if (unit == 'cup') return 'cups';
-        if (unit == 'lb') return 'lbs';
-      }
-    }
-    return unit;
   }
   
   /// Clean ingredient name (remove trailing punctuation, normalize case)
