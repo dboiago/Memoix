@@ -815,12 +815,23 @@ class OcrRecipeImporter {
       final nextIsStandaloneFoodWord = standaloneFoodPattern.hasMatch(nextLine);
       final nextIsStandaloneNumber = standaloneNumberPattern.hasMatch(nextLine);
       
+      // Check if next line is a food word that could pair with current number/fraction
+      // This handles "½" + "corn starch" -> "½ corn starch"
+      final nextCouldBeIngredientName = hasNextLine && 
+          !standaloneNumberPattern.hasMatch(nextLine) &&
+          RegExp(r'^[a-zA-Z][a-zA-Z\s]+$').hasMatch(nextLine) &&
+          nextLine.length > 2 && nextLine.length < 40;
+      
       if (isStandaloneFoodWord && nextIsStandaloneNumber) {
         // Pattern A: "lemons" + "2" -> "2 lemons"
         pairedLines.add('$nextLine $line');
         i += 2; // Skip both lines
       } else if (isStandaloneNumber && nextIsStandaloneFoodWord) {
         // Pattern B: "2" + "lemons" -> "2 lemons"
+        pairedLines.add('$line $nextLine');
+        i += 2; // Skip both lines
+      } else if (isStandaloneNumber && nextCouldBeIngredientName) {
+        // Pattern C: "½" + "corn starch" -> "½ corn starch"
         pairedLines.add('$line $nextLine');
         i += 2; // Skip both lines
       } else {

@@ -158,6 +158,20 @@ class IngredientParser {
       }
     }
     
+    // Also extract trailing modifiers WITHOUT comma (OCR often misses commas)
+    // "butter softened" -> "butter", prep: "softened"
+    final noCommaModifierMatch = RegExp(
+      r'\s+(softened|melted|chilled|beaten|sifted|drained|rinsed|thawed|frozen|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed)\s*$',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (noCommaModifierMatch != null) {
+      final modifier = noCommaModifierMatch.group(1)?.trim();
+      if (modifier != null) {
+        preparation = preparation != null ? '$preparation; $modifier' : modifier;
+        workingLine = workingLine.substring(0, noCommaModifierMatch.start).trim();
+      }
+    }
+    
     // Extract "or ..." alternatives
     final orMatch = RegExp(r'\s+or\s+(.+)$', caseSensitive: false).firstMatch(workingLine);
     if (orMatch != null) {

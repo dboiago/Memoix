@@ -318,19 +318,26 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   Widget _buildConfidenceCard(ThemeData theme, RecipeImportResult result) {
     final confidence = result.overallConfidence;
     final Color cardColor;
+    final Color iconColor;
     final IconData icon;
     final String message;
+    
+    // Use dark text/icons on light container backgrounds (works in both themes)
+    const Color textOnContainer = Color(0xFF4B5563); // Charcoal gray
 
     if (confidence >= 0.8) {
       cardColor = MemoixColors.successContainer;
+      iconColor = MemoixColors.success;
       icon = Icons.check_circle;
       message = 'High confidence import! Review and save.';
     } else if (confidence >= 0.5) {
       cardColor = MemoixColors.warningContainer;
+      iconColor = MemoixColors.warning;
       icon = Icons.warning;
       message = 'Some fields need your attention.';
     } else {
       cardColor = MemoixColors.errorContainer;
+      iconColor = MemoixColors.error;
       icon = Icons.error_outline;
       message = 'Low confidence. Please review all fields.';
     }
@@ -341,29 +348,34 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         padding: const EdgeInsets.all(16),
         child: Row(
           children: [
-            Icon(icon, size: 32),
+            Icon(icon, size: 32, color: iconColor),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(message, style: theme.textTheme.titleSmall),
+                  Text(message, style: theme.textTheme.titleSmall?.copyWith(
+                    color: textOnContainer,
+                  )),
                   const SizedBox(height: 4),
                   LinearProgressIndicator(
                     value: confidence,
-                    backgroundColor: theme.colorScheme.outline.withOpacity(0.2),
+                    backgroundColor: textOnContainer.withOpacity(0.2),
+                    color: iconColor,
                   ),
                   const SizedBox(height: 4),
                   Text(
                     'Confidence: ${(confidence * 100).toStringAsFixed(0)}%',
-                    style: theme.textTheme.bodySmall,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: textOnContainer,
+                    ),
                   ),
                   if (result.fieldsNeedingAttention.isNotEmpty) ...[
                     const SizedBox(height: 4),
                     Text(
                       'Check: ${result.fieldsNeedingAttention.join(", ")}',
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.secondary,
+                        color: textOnContainer.withOpacity(0.7),
                       ),
                     ),
                   ],
