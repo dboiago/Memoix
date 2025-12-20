@@ -437,10 +437,8 @@ class SettingsScreen extends ConsumerWidget {
       children: [
         const SizedBox(height: 24),
         const Text(
-          'A professional recipe manager for serious cooks.\n\n'
-          '• Organize your collection\n'
-          '• Import via OCR & URL\n'
-          '• Privacy-focused & Offline-first',
+          'A recipe and food reference app for people who cook seriously.\n\n'
+          'Flexible by design. Offline by default.'
           style: TextStyle(fontSize: 14),
         ),
       ],
