@@ -60,5 +60,5 @@ terms. The following components are used in this software:
 5. Google ML Kit (Apache License 2.0)
    Copyright 2020 Google LLC.
 
-For a full list of third-party licenses, please refer to the pubspec.lock file
-or the "About" section of the application.
+For a full list of dependencies and their licenses, please refer to the
+pubspec.yaml file in the source repository.
