@@ -190,12 +190,15 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
       uiSettings: [
         AndroidUiSettings(
           toolbarTitle: 'Crop Recipe',
-          toolbarColor: theme.colorScheme.surface,
-          toolbarWidgetColor: theme.colorScheme.onSurface,
-          backgroundColor: theme.colorScheme.surface,
+          toolbarColor: theme.colorScheme.primary,
+          toolbarWidgetColor: theme.colorScheme.onPrimary,
+          statusBarColor: theme.colorScheme.primary,
+          backgroundColor: Colors.black,
           activeControlsWidgetColor: theme.colorScheme.primary,
           initAspectRatio: CropAspectRatioPreset.original,
           lockAspectRatio: false,
+          hideBottomControls: false,
+          showCropGrid: true,
         ),
         IOSUiSettings(
           title: 'Crop Recipe',
