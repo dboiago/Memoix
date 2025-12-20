@@ -154,32 +154,71 @@ MemoixSnackBar.showSaved(                            // After save pattern
 ### 4.3 Color System
 
 #### UI Elements (Theme Colors)
-For all UI chrome (buttons, backgrounds, borders, text):
+For all UI chrome (buttons, backgrounds, borders, text, chips):
 ```dart
-Theme.of(context).colorScheme.primary
-Theme.of(context).colorScheme.secondary
-Theme.of(context).colorScheme.surface
-Theme.of(context).colorScheme.onSurface
-Theme.of(context).colorScheme.onSurfaceVariant
-Theme.of(context).colorScheme.outline
+theme.colorScheme.primary              // Warm accent (#D9C2B0 light / #E8B4A0 dark)
+theme.colorScheme.secondary            // Mauve accent (#CBB2BF light / #A88FA8 dark)
+theme.colorScheme.surface              // Card/container background
+theme.colorScheme.onSurface            // Primary text
+theme.colorScheme.onSurfaceVariant     // Muted/secondary text
+theme.colorScheme.outline              // Borders, dividers, inactive icons
+theme.colorScheme.surfaceContainerHighest  // Elevated containers, chip backgrounds
+theme.colorScheme.primaryContainer     // Selected/active item backgrounds
+theme.colorScheme.secondaryContainer   // Warm cream for selected chips (#E8DDD4 light)
 ```
 
-#### Domain Data (MemoixColors)
-For data-driven visual indicators (cuisine dots, course badges, spirit colors):
+#### Error/Warning States (Theme-Based)
+The theme maps `colorScheme.error` to the **secondary color** (mauve), not red:
 ```dart
-MemoixColors.forCuisine('Korean')
-MemoixColors.forCourse('mains')
-MemoixColors.forSpiritDot('Gin')
-MemoixColors.forPizzaBaseDot('marinara')
-MemoixColors.forSmokedItemDot('beef')
+theme.colorScheme.error          // Secondary color - for UI error states
+theme.colorScheme.errorContainer // Light secondary background
+```
+
+#### Domain Indicator Dots (MemoixColors)
+For data-driven visual indicator dots on cards and detail screens:
+
+| Method | Used In | Palette |
+|--------|---------|---------|
+| `MemoixColors.forContinentDot('Japanese')` | recipe_card, recipe_detail, cheese_card, meal_plan | Warm tones by region |
+| `MemoixColors.forSpiritDot('Gin')` | cellar_card, recipe_card, recipe_detail (drinks) | Spirit-themed |
+| `MemoixColors.forPizzaBaseDot('marinara')` | pizza_card, pizza_detail | Sauce colors |
+| `MemoixColors.forSmokedItemDot('beef')` | smoking_detail | Soft pastels by protein |
+| `MemoixColors.forModernistType('technique')` | modernist_card, modernist_detail | Sage/Lavender |
+| `MemoixColors.forProteinDot('chicken')` | sandwich_card, sandwich_detail | Soft pastels |
+
+**Note:** `forCourse()` and `forCuisine()` exist in colors.dart but are **not currently used** in the UI.
+
+#### Semantic Confidence Indicators (Import Review Only)
+These colors are used **only** in import_review_screen.dart for OCR confidence:
+```dart
+MemoixColors.success           // Green icon
+MemoixColors.warning           // Orange icon
+MemoixColors.error             // Red icon (NOT for general UI)
+MemoixColors.successContainer  // Light green bg
+MemoixColors.warningContainer  // Light orange bg
+MemoixColors.errorContainer    // Light red bg
+```
+
+#### Universal Accent Colors
+```dart
+MemoixColors.favorite          // Soft red heart (recipe_rating, recipe_search_delegate)
+MemoixColors.rating            // Amber star (recipe_rating)
+```
+
+#### Import Method Colors (Import Screen Cards)
+```dart
+MemoixColors.importManual      // Muted blue
+MemoixColors.importCamera      // Sage green
+MemoixColors.importMultiPage   // Ocean teal
+MemoixColors.importGallery     // Warm orange
 ```
 
 #### Forbidden Patterns
 ```dart
 // ❌ FORBIDDEN
-Colors.red / Colors.blue / Colors.green / Colors.orange
+Colors.red / Colors.blue / Colors.green / Colors.orange  // Use theme or MemoixColors
 Color(0xFF4B5563)  // Hardcoded hex in widgets
-theme.colorScheme.primary  // for domain data like cuisine dots
+MemoixColors.error  // for general UI (use theme.colorScheme.error instead)
 ```
 
 **Exception:** `Colors.grey` is acceptable as a fallback in `MemoixColors` lookup methods.
