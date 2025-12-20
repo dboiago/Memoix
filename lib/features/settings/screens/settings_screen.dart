@@ -407,19 +407,40 @@ class SettingsScreen extends ConsumerWidget {
     );
   }
 
-  void _showAbout(BuildContext context) {
+  void _showAbout(BuildContext context) async {
+    final packageInfo = await PackageInfo.fromPlatform();
+    final version = '${packageInfo.version} (${packageInfo.buildNumber})';
+
+    if (!context.mounted) return;
+
     showAboutDialog(
       context: context,
       applicationName: 'Memoix',
-      applicationVersion: '1.0.0',
-      applicationIcon: const FlutterLogo(size: 64),
-      applicationLegalese: '© 2024-2025 Devon Boiago\nPolyForm Noncommercial License',
+      applicationVersion: version,
+      // Using a Container for the icon allows for nice rounded corners
+      applicationIcon: Container(
+        width: 64,
+        height: 64,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(16),
+          image: const DecorationImage(
+            // Ensure this path matches your actual asset location
+            image: AssetImage('assets/icons/app_icon.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      applicationLegalese: '© 2024-2025 Devon Boiago\n\n'
+          'Licensed under PolyForm Noncommercial 1.0.0.\n'
+          'Free for personal and educational use.',
       children: [
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
         const Text(
-          'A beautiful, open-source recipe manager for cooks. '
-          'Organize your recipes, import from photos or websites, '
-          'and share with friends and family.',
+          'A professional recipe manager for serious cooks.\n\n'
+          '• Organize your collection\n'
+          '• Import via OCR & URL\n'
+          '• Privacy-focused & Offline-first',
+          style: TextStyle(fontSize: 14),
         ),
       ],
     );
