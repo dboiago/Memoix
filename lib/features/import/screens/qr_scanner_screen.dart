@@ -5,6 +5,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import '../../sharing/services/share_service.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_detail_screen.dart';
+import '../../recipes/screens/recipe_edit_screen.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
 /// QR Code scanner screen for importing shared recipes
@@ -196,17 +197,11 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
         return;
       }
 
-      // Save to database
-      final repository = ref.read(recipeRepositoryProvider);
-      await repository.saveRecipe(recipe);
-
       if (mounted) {
-        // Show success and navigate to recipe
-        MemoixSnackBar.showSuccess('Imported "${recipe.name}"!');
-
+        // Navigate to edit screen so user can review before saving
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (_) => RecipeDetailScreen(recipeId: recipe.uuid),
+            builder: (_) => RecipeEditScreen(importedRecipe: recipe),
           ),
         );
       }
