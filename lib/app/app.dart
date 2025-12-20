@@ -8,10 +8,15 @@ import '../core/services/deep_link_service.dart';
 import '../core/services/update_service.dart';
 import '../core/services/github_recipe_service.dart';
 import '../core/widgets/update_available_dialog.dart';
+import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';
+import '../features/tools/timer_service.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
+
+/// Global navigator key for navigating from anywhere
+final rootNavigatorKey = GlobalKey<NavigatorState>();
 
 class MemoixApp extends ConsumerWidget {
   const MemoixApp({super.key});
@@ -25,6 +30,7 @@ class MemoixApp extends ConsumerWidget {
       theme: MemoixTheme.light,
       darkTheme: MemoixTheme.dark,
       themeMode: mode,
+      navigatorKey: rootNavigatorKey,
       scaffoldMessengerKey: rootScaffoldMessengerKey,
       home: const _DeepLinkWrapper(child: AppRouter()),
     );
@@ -50,7 +56,32 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper> {
       ref.read(deepLinkServiceProvider).initialize(context);
       _checkForUpdatesOnLaunch();
       _performBackgroundSync();
+      _setupTimerAlarmCallbacks();
     });
+  }
+
+  /// Set up global timer alarm callbacks
+  void _setupTimerAlarmCallbacks() {
+    final timerService = ref.read(timerServiceProvider.notifier);
+    timerService.onAlarmTriggered = (timer) {
+      _showAlarmNotification(timer);
+    };
+    timerService.onAllAlarmsDismissed = () {
+      MemoixSnackBar.clear();
+    };
+  }
+
+  void _showAlarmNotification(TimerData timer) {
+    MemoixSnackBar.showAlarm(
+      timerLabel: timer.label,
+      onDismiss: () {
+        ref.read(timerServiceProvider.notifier).stopAlarm(timer.id);
+      },
+      onGoToAlarm: () {
+        // Navigate to kitchen timer screen
+        AppRoutes.toKitchenTimer(context);
+      },
+    );
   }
 
   /// Perform initial recipe sync in background without blocking UI

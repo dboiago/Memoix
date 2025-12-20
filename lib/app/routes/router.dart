@@ -35,7 +35,7 @@ import '../../features/mealplan/screens/meal_plan_screen.dart';
 import '../../features/statistics/screens/statistics_screen.dart';
 import '../../features/favourites/screens/favourites_screen.dart';
 import '../../features/tools/measurement_converter.dart';
-import '../../features/tools/kitchen_timer.dart';
+import '../../features/tools/kitchen_timer_screen.dart';
 import '../../features/notes/screens/scratch_pad_screen.dart';
 
 class AppRouter extends StatelessWidget {

@@ -1,0 +1,386 @@
+import 'dart:async';
+import 'dart:io' show Platform;
+import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
+
+/// Available timer alarm sounds
+enum TimerSound {
+  bell('Bell', 'audio/alarm_bell.mp3'),
+  beep('Beep', 'audio/alarm_beep.mp3'),
+  gentle('Gentle', 'audio/alarm_gentle.mp3');
+
+  final String displayName;
+  final String assetPath;
+
+  const TimerSound(this.displayName, this.assetPath);
+}
+
+/// Individual timer data
+class TimerData {
+  final int id;
+  Duration duration;
+  String label;
+  TimerSound sound;
+  int remainingSeconds;
+  bool isRunning;
+  bool isPaused;
+  bool isAlarming;
+
+  TimerData({
+    required this.id,
+    required this.duration,
+    required this.label,
+    required this.sound,
+  })  : remainingSeconds = duration.inSeconds,
+        isRunning = false,
+        isPaused = false,
+        isAlarming = false;
+
+  double get progress {
+    if (duration.inSeconds == 0) return 1.0;
+    return 1.0 - (remainingSeconds / duration.inSeconds);
+  }
+
+  TimerData copyWith({
+    Duration? duration,
+    String? label,
+    TimerSound? sound,
+    int? remainingSeconds,
+    bool? isRunning,
+    bool? isPaused,
+    bool? isAlarming,
+  }) {
+    return TimerData(
+      id: id,
+      duration: duration ?? this.duration,
+      label: label ?? this.label,
+      sound: sound ?? this.sound,
+    )
+      ..remainingSeconds = remainingSeconds ?? this.remainingSeconds
+      ..isRunning = isRunning ?? this.isRunning
+      ..isPaused = isPaused ?? this.isPaused
+      ..isAlarming = isAlarming ?? this.isAlarming;
+  }
+}
+
+/// Global timer service state
+class TimerServiceState {
+  final List<TimerData> timers;
+  final bool hasAlarmingTimer;
+
+  const TimerServiceState({
+    this.timers = const [],
+    this.hasAlarmingTimer = false,
+  });
+
+  TimerServiceState copyWith({
+    List<TimerData>? timers,
+    bool? hasAlarmingTimer,
+  }) {
+    return TimerServiceState(
+      timers: timers ?? this.timers,
+      hasAlarmingTimer: hasAlarmingTimer ?? this.hasAlarmingTimer,
+    );
+  }
+}
+
+/// Callback type for alarm notifications
+typedef AlarmCallback = void Function(TimerData timer);
+
+/// Global timer service that persists across navigation
+class TimerService extends StateNotifier<TimerServiceState> {
+  TimerService() : super(const TimerServiceState());
+
+  int _nextTimerId = 1;
+  Timer? _tickTimer;
+  final AudioPlayer _audioPlayer = AudioPlayer();
+  Timer? _alarmLoopTimer;
+  bool _isAlarmPlaying = false;
+  
+  /// Callback for when an alarm triggers (to show notification)
+  AlarmCallback? onAlarmTriggered;
+  
+  /// Callback for when all alarms are dismissed
+  VoidCallback? onAllAlarmsDismissed;
+
+  @override
+  void dispose() {
+    _tickTimer?.cancel();
+    _alarmLoopTimer?.cancel();
+    _audioPlayer.dispose();
+    _updateWakelock();
+    super.dispose();
+  }
+
+  /// Add a new timer
+  void addTimer({
+    required Duration duration,
+    required String label,
+    required TimerSound sound,
+  }) {
+    final timer = TimerData(
+      id: _nextTimerId++,
+      duration: duration,
+      label: label,
+      sound: sound,
+    );
+    state = state.copyWith(timers: [...state.timers, timer]);
+    _updateWakelock();
+  }
+
+  /// Start a timer
+  void startTimer(int id) {
+    final timers = state.timers.map((t) {
+      if (t.id == id && !t.isRunning) {
+        return t.copyWith(isRunning: true, isPaused: false, isAlarming: false);
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(timers: timers);
+    _ensureTickerRunning();
+    _updateWakelock();
+  }
+
+  /// Pause a timer
+  void pauseTimer(int id) {
+    final timers = state.timers.map((t) {
+      if (t.id == id && t.isRunning && !t.isPaused) {
+        return t.copyWith(isPaused: true);
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(timers: timers);
+    _updateWakelock();
+  }
+
+  /// Resume a paused timer
+  void resumeTimer(int id) {
+    final timers = state.timers.map((t) {
+      if (t.id == id && t.isPaused) {
+        return t.copyWith(isPaused: false);
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(timers: timers);
+    _ensureTickerRunning();
+    _updateWakelock();
+  }
+
+  /// Reset a timer to its original duration
+  void resetTimer(int id) {
+    final timers = state.timers.map((t) {
+      if (t.id == id) {
+        final wasAlarming = t.isAlarming;
+        final reset = t.copyWith(
+          remainingSeconds: t.duration.inSeconds,
+          isRunning: false,
+          isPaused: false,
+          isAlarming: false,
+        );
+        if (wasAlarming) {
+          _checkAndStopAlarm();
+        }
+        return reset;
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(
+      timers: timers,
+      hasAlarmingTimer: timers.any((t) => t.isAlarming),
+    );
+    _updateWakelock();
+  }
+
+  /// Stop the alarm for a specific timer
+  void stopAlarm(int id) {
+    final timers = state.timers.map((t) {
+      if (t.id == id && t.isAlarming) {
+        return t.copyWith(isAlarming: false);
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(
+      timers: timers,
+      hasAlarmingTimer: timers.any((t) => t.isAlarming),
+    );
+    _checkAndStopAlarm();
+    _updateWakelock();
+  }
+
+  /// Stop all alarms
+  void stopAllAlarms() {
+    final timers = state.timers.map((t) {
+      if (t.isAlarming) {
+        return t.copyWith(isAlarming: false);
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(timers: timers, hasAlarmingTimer: false);
+    _stopAlarmSound();
+    onAllAlarmsDismissed?.call();
+    _updateWakelock();
+  }
+
+  /// Remove a timer
+  void removeTimer(int id) {
+    final timer = state.timers.firstWhere((t) => t.id == id, orElse: () => throw StateError('Timer not found'));
+    if (timer.isAlarming) {
+      _checkAndStopAlarm();
+    }
+    final timers = state.timers.where((t) => t.id != id).toList();
+    state = state.copyWith(
+      timers: timers,
+      hasAlarmingTimer: timers.any((t) => t.isAlarming),
+    );
+    _updateWakelock();
+  }
+
+  /// Update timer settings
+  void updateTimer(int id, Duration duration, String label, TimerSound sound) {
+    final timers = state.timers.map((t) {
+      if (t.id == id) {
+        final wasAlarming = t.isAlarming;
+        if (wasAlarming) {
+          _checkAndStopAlarm();
+        }
+        return TimerData(
+          id: id,
+          duration: duration,
+          label: label,
+          sound: sound,
+        );
+      }
+      return t;
+    }).toList();
+    state = state.copyWith(
+      timers: timers,
+      hasAlarmingTimer: timers.any((t) => t.isAlarming),
+    );
+    _updateWakelock();
+  }
+
+  /// Duplicate a timer
+  void duplicateTimer(int id) {
+    final original = state.timers.firstWhere((t) => t.id == id);
+    addTimer(
+      duration: original.duration,
+      label: original.label.isNotEmpty ? '${original.label} (Copy)' : '',
+      sound: original.sound,
+    );
+  }
+
+  /// Ensure the global ticker is running
+  void _ensureTickerRunning() {
+    if (_tickTimer != null && _tickTimer!.isActive) return;
+    
+    _tickTimer = Timer.periodic(const Duration(seconds: 1), (_) {
+      _tick();
+    });
+  }
+
+  /// Process one tick for all running timers
+  void _tick() {
+    bool anyRunning = false;
+    bool anyNewAlarm = false;
+    
+    final timers = state.timers.map((t) {
+      if (t.isRunning && !t.isPaused && !t.isAlarming) {
+        anyRunning = true;
+        if (t.remainingSeconds > 0) {
+          return t.copyWith(remainingSeconds: t.remainingSeconds - 1);
+        } else {
+          // Timer finished - trigger alarm
+          anyNewAlarm = true;
+          return t.copyWith(isAlarming: true);
+        }
+      }
+      if (t.isRunning && !t.isPaused) anyRunning = true;
+      return t;
+    }).toList();
+
+    state = state.copyWith(
+      timers: timers,
+      hasAlarmingTimer: timers.any((t) => t.isAlarming),
+    );
+
+    if (anyNewAlarm) {
+      final alarmingTimer = timers.firstWhere((t) => t.isAlarming);
+      _playAlarmSound(alarmingTimer.sound);
+      onAlarmTriggered?.call(alarmingTimer);
+    }
+
+    // Stop ticker if no timers are actively running
+    if (!anyRunning) {
+      _tickTimer?.cancel();
+      _tickTimer = null;
+    }
+  }
+
+  /// Play alarm sound
+  Future<void> _playAlarmSound(TimerSound sound) async {
+    if (_isAlarmPlaying) return;
+    _isAlarmPlaying = true;
+    
+    // Haptic feedback on mobile
+    if (!Platform.isWindows && !Platform.isLinux && !Platform.isMacOS) {
+      HapticFeedback.vibrate();
+    }
+    
+    try {
+      await _audioPlayer.setReleaseMode(ReleaseMode.loop);
+      await _audioPlayer.play(AssetSource(sound.assetPath));
+    } catch (e) {
+      debugPrint('Failed to play alarm sound: $e');
+      // Use repeated haptic as fallback on mobile
+      if (!Platform.isWindows && !Platform.isLinux && !Platform.isMacOS) {
+        _alarmLoopTimer = Timer.periodic(const Duration(milliseconds: 500), (_) {
+          HapticFeedback.vibrate();
+        });
+      }
+    }
+  }
+
+  /// Check if we should stop the alarm sound
+  void _checkAndStopAlarm() {
+    final hasAlarming = state.timers.any((t) => t.isAlarming);
+    if (!hasAlarming) {
+      _stopAlarmSound();
+      onAllAlarmsDismissed?.call();
+    }
+  }
+
+  /// Stop alarm sound
+  Future<void> _stopAlarmSound() async {
+    _isAlarmPlaying = false;
+    _alarmLoopTimer?.cancel();
+    _alarmLoopTimer = null;
+    await _audioPlayer.stop();
+  }
+
+  /// Keep screen awake while timers are running
+  void _updateWakelock() {
+    final hasActiveTimer = state.timers.any((t) => t.isRunning && !t.isPaused);
+    if (hasActiveTimer) {
+      WakelockPlus.enable();
+    } else {
+      WakelockPlus.disable();
+    }
+  }
+
+  /// Get a specific timer by ID
+  TimerData? getTimer(int id) {
+    try {
+      return state.timers.firstWhere((t) => t.id == id);
+    } catch (_) {
+      return null;
+    }
+  }
+}
+
+/// Provider for the global timer service
+final timerServiceProvider = StateNotifierProvider<TimerService, TimerServiceState>((ref) {
+  return TimerService();
+});

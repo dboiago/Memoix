@@ -161,6 +161,48 @@ class MemoixSnackBar {
     );
   }
 
+  /// Show a persistent alarm notification with Dismiss and Go to Alarm buttons
+  /// This snackbar does NOT auto-dismiss - user must interact with it
+  static void showAlarm({
+    required String timerLabel,
+    required VoidCallback onDismiss,
+    required VoidCallback onGoToAlarm,
+  }) {
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    _cancelTimer(); // Don't auto-dismiss alarms
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Row(
+          children: [
+            const Icon(Icons.alarm, color: Colors.white, size: 20),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                timerLabel.isNotEmpty ? '$timerLabel - Timer Complete!' : 'Timer Complete!',
+                style: const TextStyle(fontWeight: FontWeight.w500),
+              ),
+            ),
+          ],
+        ),
+        duration: const Duration(days: 1), // Effectively infinite
+        behavior: SnackBarBehavior.floating,
+        action: SnackBarAction(
+          label: 'View',
+          onPressed: () {
+            messenger.hideCurrentSnackBar();
+            onGoToAlarm();
+          },
+        ),
+        showCloseIcon: true,
+        onVisible: () {
+          // Called when snackbar becomes visible
+        },
+      ),
+    );
+  }
+
   /// Clear any visible SnackBars
   static void clear() {
     _cancelTimer();
