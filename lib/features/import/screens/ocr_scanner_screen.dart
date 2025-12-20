@@ -184,17 +184,23 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
 
   Future<CroppedFile?> _cropImage(String imagePath) async {
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     
     return ImageCropper().cropImage(
       sourcePath: imagePath,
       uiSettings: [
         AndroidUiSettings(
           toolbarTitle: 'Crop Recipe',
-          toolbarColor: theme.colorScheme.primary,
-          toolbarWidgetColor: theme.colorScheme.onPrimary,
-          statusBarColor: theme.colorScheme.primary,
-          backgroundColor: Colors.black,
+          toolbarColor: theme.colorScheme.surface,
+          toolbarWidgetColor: theme.colorScheme.onSurface,
+          statusBarColor: theme.colorScheme.surface,
+          backgroundColor: theme.colorScheme.surface,
           activeControlsWidgetColor: theme.colorScheme.primary,
+          dimmedLayerColor: isDark 
+              ? theme.colorScheme.scrim.withOpacity(0.7)
+              : theme.colorScheme.scrim.withOpacity(0.5),
+          cropFrameColor: theme.colorScheme.primary,
+          cropGridColor: theme.colorScheme.outline,
           initAspectRatio: CropAspectRatioPreset.original,
           lockAspectRatio: false,
           hideBottomControls: false,
