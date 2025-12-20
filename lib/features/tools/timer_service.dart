@@ -323,29 +323,49 @@ class TimerService extends StateNotifier<TimerServiceState> {
     if (_isAlarmPlaying) return;
     _isAlarmPlaying = true;
     
-    // Haptic feedback on mobile for extra attention
-    if (!Platform.isWindows && !Platform.isLinux && !Platform.isMacOS) {
-      HapticFeedback.heavyImpact();
-    }
-    
     // Desktop platforms don't support ringtone playback
     if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
       return;
     }
     
-    // Play the selected system sound type
+    // Haptic feedback on mobile for extra attention
+    HapticFeedback.heavyImpact();
+    
     final player = FlutterRingtonePlayer();
+    
+    // Play the selected sound type
+    // Only alarm supports native looping, others need manual looping
     switch (sound) {
       case TimerSound.alarm:
         player.playAlarm(looping: true, volume: 1.0, asAlarm: true);
         break;
       case TimerSound.notification:
-        player.playNotification(looping: true, volume: 1.0);
+        // Notification doesn't support looping param, so we loop manually
+        _startManualLoop(() {
+          player.play(android: AndroidSounds.notification, ios: IosSounds.triTone, volume: 1.0);
+        });
         break;
       case TimerSound.ringtone:
-        player.playRingtone(looping: true, volume: 1.0);
+        // Ringtone doesn't support looping param, so we loop manually  
+        _startManualLoop(() {
+          player.play(android: AndroidSounds.ringtone, ios: IosSounds.bell, volume: 1.0);
+        });
         break;
     }
+  }
+  
+  /// Start a manual loop for sounds that don't support native looping
+  void _startManualLoop(VoidCallback playSound) {
+    playSound(); // Play immediately
+    _alarmLoopTimer?.cancel();
+    _alarmLoopTimer = Timer.periodic(const Duration(seconds: 2), (_) {
+      if (_isAlarmPlaying) {
+        playSound();
+      } else {
+        _alarmLoopTimer?.cancel();
+        _alarmLoopTimer = null;
+      }
+    });
   }
 
   /// Check if we should stop the alarm sound
