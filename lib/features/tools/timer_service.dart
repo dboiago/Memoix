@@ -335,6 +335,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     
     // Play the selected sound type
     // Only alarm supports native looping, others need manual looping
+    // All use asAlarm: true to use the ALARM audio stream (bypasses silent mode)
     switch (sound) {
       case TimerSound.alarm:
         player.playAlarm(looping: true, volume: 1.0, asAlarm: true);
@@ -342,13 +343,13 @@ class TimerService extends StateNotifier<TimerServiceState> {
       case TimerSound.notification:
         // Notification doesn't support looping param, so we loop manually
         _startManualLoop(() {
-          player.play(android: AndroidSounds.notification, ios: IosSounds.triTone, volume: 1.0);
+          player.play(android: AndroidSounds.notification, ios: IosSounds.triTone, volume: 1.0, asAlarm: true);
         });
         break;
       case TimerSound.ringtone:
         // Ringtone doesn't support looping param, so we loop manually  
         _startManualLoop(() {
-          player.play(android: AndroidSounds.ringtone, ios: IosSounds.bell, volume: 1.0);
+          player.play(android: AndroidSounds.ringtone, ios: IosSounds.bell, volume: 1.0, asAlarm: true);
         });
         break;
     }
