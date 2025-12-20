@@ -192,11 +192,12 @@ class TimerService extends StateNotifier<TimerServiceState> {
     _updateWakelock();
   }
 
-  /// Stop the alarm for a specific timer
+  /// Stop the alarm for a specific timer and stop it from running
   void stopAlarm(int id) {
     final timers = state.timers.map((t) {
       if (t.id == id && t.isAlarming) {
-        return t.copyWith(isAlarming: false);
+        // Stop alarm AND stop timer running state to prevent re-trigger
+        return t.copyWith(isAlarming: false, isRunning: false, isPaused: false);
       }
       return t;
     }).toList();

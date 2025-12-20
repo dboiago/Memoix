@@ -1,11 +1,8 @@
-import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'timer_service.dart';
-import '../../core/widgets/memoix_snackbar.dart';
-import '../../app/routes/router.dart';
 
 /// Kitchen timer tool with support for multiple simultaneous timers
 /// Uses a global service so timers persist across navigation
@@ -17,39 +14,6 @@ class KitchenTimerWidget extends ConsumerStatefulWidget {
 }
 
 class _KitchenTimerWidgetState extends ConsumerState<KitchenTimerWidget> {
-  @override
-  void initState() {
-    super.initState();
-    // Set up alarm callback to show persistent notification
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _setupAlarmCallbacks();
-    });
-  }
-
-  void _setupAlarmCallbacks() {
-    final timerService = ref.read(timerServiceProvider.notifier);
-    timerService.onAlarmTriggered = (timer) {
-      _showAlarmNotification(timer);
-    };
-    timerService.onAllAlarmsDismissed = () {
-      MemoixSnackBar.clear();
-    };
-  }
-
-  void _showAlarmNotification(TimerData timer) {
-    MemoixSnackBar.showAlarm(
-      timerLabel: timer.label,
-      onDismiss: () {
-        ref.read(timerServiceProvider.notifier).stopAlarm(timer.id);
-      },
-      onGoToAlarm: () {
-        // Already on the timer screen, just scroll to the timer
-        // For now, just dismiss and let user see the card
-        ref.read(timerServiceProvider.notifier).stopAlarm(timer.id);
-      },
-    );
-  }
-
   void _addTimer() {
     showDialog(
       context: context,
