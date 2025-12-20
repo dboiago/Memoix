@@ -446,6 +446,10 @@ class UrlRecipeImporter {
   static const _minIngredientCount = 2;
   static const _maxSectionHeaderLength = 60;
   
+  /// SECURITY: Maximum HTTP response size (10 MB)
+  /// Prevents downloading massive files (e.g., ISOs, videos) that could crash the app
+  static const _maxResponseBytes = 10 * 1024 * 1024; // 10 MB
+  
   /// JSON search limits for embedded data
   static const _jsonSearchBackward = 5000;
   static const _jsonSearchForward = 10000;
@@ -510,6 +514,7 @@ class UrlRecipeImporter {
       
       // Helper function to attempt fetch with given headers
       // Uses IOClient with custom HttpClient for better HTTP/1.1 compatibility
+      // SECURITY: Implements streaming with size limits to prevent OOM attacks
       Future<http.Response> tryFetch(String fetchUrl, Map<String, String> headers) async {
         // Create a custom HttpClient that mimics a real browser
         // This helps avoid bot detection on sites like allrecipes.com
@@ -522,10 +527,96 @@ class UrlRecipeImporter {
         
         try {
           final client = IOClient(httpClient);
-          final response = await client.get(Uri.parse(fetchUrl), headers: headers);
-          // Note: We don't close the client here as it would close the response stream
-          // The client will be garbage collected after the response is consumed
-          return response;
+          
+          // Use streamed request to check Content-Length before downloading body
+          final request = http.Request('GET', Uri.parse(fetchUrl));
+          headers.forEach((key, value) => request.headers[key] = value);
+          
+          final streamedResponse = await client.send(request);
+          
+          // SECURITY: Fast-fail if Content-Length header indicates response is too large
+          final contentLength = streamedResponse.contentLength;
+          if (contentLength != null && contentLength > _maxResponseBytes) {
+            // Cancel the stream before throwing
+            await streamedResponse.stream.drain<void>();
+            throw Exception(
+              'Response too large: ${(contentLength / 1024 / 1024).toStringAsFixed(1)} MB. '
+              'Maximum allowed: ${(_maxResponseBytes / 1024 / 1024).toStringAsFixed(0)} MB.'
+            );
+          }
+          
+          // SECURITY: Fast-fail on non-HTML content types (PDF, images, videos, archives)
+          // This prevents downloading useless binary files
+          final contentType = streamedResponse.headers['content-type']?.toLowerCase();
+          if (contentType != null) {
+            // Reject known binary/non-recipe content types
+            final blockedTypes = [
+              'application/pdf',
+              'application/zip',
+              'application/x-rar',
+              'application/x-7z',
+              'application/octet-stream',
+              'image/',
+              'video/',
+              'audio/',
+            ];
+            
+            for (final blocked in blockedTypes) {
+              if (contentType.contains(blocked)) {
+                await streamedResponse.stream.drain<void>();
+                throw SecurityException('Invalid content type: $contentType. Expected HTML or JSON.');
+              }
+            }
+            
+            // Verify it's an acceptable content type (if specified)
+            // Accept: text/html, application/json, application/ld+json, text/plain, application/xhtml+xml
+            final allowedTypes = [
+              'text/html',
+              'application/json',
+              'application/ld+json',
+              'text/plain',
+              'application/xhtml+xml',
+            ];
+            
+            final isAllowed = allowedTypes.any((allowed) => contentType.contains(allowed));
+            if (!isAllowed && !contentType.startsWith('text/')) {
+              await streamedResponse.stream.drain<void>();
+              throw SecurityException('Invalid content type: $contentType. Expected HTML or JSON.');
+            }
+          }
+          // Note: If Content-Type header is missing, we allow it through
+          // (some old servers don't send it) and let the HTML parser handle it
+          
+          // SECURITY: Stream the body with running byte count (safety net for chunked encoding)
+          // This handles servers that don't send Content-Length header
+          final chunks = <List<int>>[];
+          int bytesRead = 0;
+          
+          await for (final chunk in streamedResponse.stream) {
+            bytesRead += chunk.length;
+            
+            // Check if we've exceeded the limit
+            if (bytesRead > _maxResponseBytes) {
+              throw Exception(
+                'Response too large: exceeded ${(_maxResponseBytes / 1024 / 1024).toStringAsFixed(0)} MB limit '
+                'while streaming (no Content-Length header). Download cancelled.'
+              );
+            }
+            
+            chunks.add(chunk);
+          }
+          
+          // Combine chunks into final body bytes
+          final bodyBytes = chunks.expand((chunk) => chunk).toList();
+          
+          // Create a standard Response from the streamed response
+          return http.Response.bytes(
+            bodyBytes,
+            streamedResponse.statusCode,
+            headers: streamedResponse.headers,
+            request: request,
+            reasonPhrase: streamedResponse.reasonPhrase,
+          );
         } catch (e) {
           httpClient.close();
           rethrow;

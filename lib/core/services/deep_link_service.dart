@@ -69,6 +69,16 @@ class DeepLinkService {
           return;
         }
 
+        // SECURITY: Validate recipe data before allowing import
+        if (recipe.name.trim().isEmpty) {
+          _showError(context, 'Invalid recipe link: Missing required data.');
+          return;
+        }
+        if (recipe.ingredients.isEmpty && recipe.directions.isEmpty) {
+          _showError(context, 'Invalid recipe link: Missing required data.');
+          return;
+        }
+
         // Show confirmation dialog before importing
         if (context.mounted) {
           final shouldImport = await showDialog<bool>(
