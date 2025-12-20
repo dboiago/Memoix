@@ -482,6 +482,19 @@ class UrlRecipeImporter {
   /// the site returns 403 (bot detection). This requires a valid BuildContext.
   Future<RecipeImportResult> importFromUrl(String url, {BuildContext? context}) async {
     try {
+      // SECURITY: Validate URL scheme before any processing
+      // Only allow http:// and https:// to prevent local file access or XSS
+      final uri = Uri.tryParse(url);
+      if (uri == null) {
+        throw ArgumentError('Invalid URL format: unable to parse URL');
+      }
+      if (!uri.isScheme('http') && !uri.isScheme('https')) {
+        throw ArgumentError(
+          'Invalid URL scheme: "${uri.scheme}". Only HTTP and HTTPS URLs are allowed. '
+          'Schemes like file://, javascript://, and content:// are blocked for security.'
+        );
+      }
+      
       // Check if this is a YouTube video
       final videoId = _extractYouTubeVideoId(url);
       if (videoId != null) {
@@ -489,7 +502,6 @@ class UrlRecipeImporter {
       }
       
       // Parse the URL to get the host for Referer header
-      final uri = Uri.parse(url);
       final origin = '${uri.scheme}://${uri.host}';
       
       // Try print version first for sites that support it

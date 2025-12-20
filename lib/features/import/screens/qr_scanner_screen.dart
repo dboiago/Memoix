@@ -150,12 +150,25 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
     );
   }
 
+  // SECURITY: Maximum allowed QR code data length
+  // Standard QR codes max out around 4,000 characters
+  static const _maxQrDataLength = 4096;
+
   void _onDetect(BarcodeCapture capture) async {
     if (_isProcessing) return;
 
     for (final barcode in capture.barcodes) {
       final value = barcode.rawValue;
       if (value == null) continue;
+
+      // SECURITY: Reject oversized QR data to prevent OOM/freeze attacks
+      if (value.length > _maxQrDataLength) {
+        setState(() {
+          _errorMessage = 'QR code too large/complex (${value.length} characters). '
+              'Maximum allowed: $_maxQrDataLength characters.';
+        });
+        return;
+      }
 
       // Check if this is a Memoix link
       if (value.startsWith('memoix://recipe/')) {
@@ -330,19 +343,26 @@ class _ManualLinkDialogState extends State<_ManualLinkDialog> {
     super.dispose();
   }
 
+  // SECURITY: Maximum allowed link length (same as QR limit)
+  static const _maxLinkLength = 4096;
+
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
       title: const Text('Enter Recipe Link'),
       content: TextField(
         controller: _controller,
+        maxLength: _maxLinkLength,
         decoration: const InputDecoration(
           hintText: 'memoix://recipe/...',
           helperText: 'Paste the recipe share link',
+          counterText: '', // Hide character counter for cleaner UI
         ),
         onChanged: (value) {
           setState(() {
-            _isValid = value.startsWith('memoix://recipe/');
+            _isValid = value.startsWith('memoix://recipe/') && 
+                       value.length > 17 && 
+                       value.length <= _maxLinkLength;
           });
         },
       ),

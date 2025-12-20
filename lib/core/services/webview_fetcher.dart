@@ -104,8 +104,22 @@ class WebViewFetcher {
     // Insert the overlay
     Overlay.of(context).insert(overlayEntry);
     
+    // SECURITY: Validate URL scheme before loading in WebView
+    // Only allow http:// and https:// to prevent local file access or XSS
+    final uri = Uri.tryParse(url);
+    if (uri == null) {
+      overlayEntry.remove();
+      throw ArgumentError('Invalid URL format: unable to parse URL');
+    }
+    if (!uri.isScheme('http') && !uri.isScheme('https')) {
+      overlayEntry.remove();
+      throw ArgumentError(
+        'Invalid URL scheme: "${uri.scheme}". Only HTTP and HTTPS URLs are allowed in WebView.'
+      );
+    }
+    
     // Load the URL
-    await controller.loadRequest(Uri.parse(url));
+    await controller.loadRequest(uri);
     
     // Set up timeout
     Timer(timeout, () {

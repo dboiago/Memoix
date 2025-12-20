@@ -18,6 +18,12 @@ import '../../cheese/models/cheese_entry.dart';
 
 /// Service for sharing and importing recipes
 class ShareService {
+  // SECURITY: Maximum allowed sizes to prevent decompression bomb attacks
+  // Base64 input: 500KB max (compressed recipes should be tiny, <10KB typically)
+  // Decompressed output: 5MB max (recipes are text, 5MB is massive for a single recipe)
+  static const _maxEncodedInputLength = 500 * 1024; // 500 KB
+  static const _maxDecompressedSize = 5 * 1024 * 1024; // 5 MB
+
   /// Compress and encode data for sharing
   String _compressAndEncode(Map<String, dynamic> json) {
     final jsonString = jsonEncode(json);
@@ -26,15 +32,48 @@ class ShareService {
   }
 
   /// Decode and decompress shared data
+  /// Returns null if data is invalid, too large, or appears to be a decompression bomb
   Map<String, dynamic>? _decodeAndDecompress(String encoded) {
     try {
+      // SECURITY: Reject oversized input before any processing
+      // This is a first line of defense against decompression bombs
+      if (encoded.length > _maxEncodedInputLength) {
+        print('Security: Rejected encoded input (${encoded.length} bytes > $_maxEncodedInputLength max)');
+        return null;
+      }
+
       final compressed = base64Url.decode(encoded);
+      
+      // SECURITY: Check compressed size as additional validation
+      // A 500KB base64 string decodes to ~375KB compressed data
+      // Normal recipes compress to <5KB, so anything over 100KB is suspicious
+      if (compressed.length > 100 * 1024) {
+        print('Security: Suspicious compressed size (${compressed.length} bytes)');
+        return null;
+      }
+
       final decompressed = gzip.decode(compressed);
+      
+      // SECURITY: Reject decompressed data that exceeds size limit
+      // This catches decompression bombs that expand to huge sizes
+      if (decompressed.length > _maxDecompressedSize) {
+        print('Security: Rejected decompression bomb (${decompressed.length} bytes > $_maxDecompressedSize max)');
+        return null;
+      }
+
       return jsonDecode(utf8.decode(decompressed)) as Map<String, dynamic>;
     } catch (e) {
       // Fallback: try without compression (for old links)
       try {
+        // SECURITY: Also check uncompressed input size
+        if (encoded.length > _maxEncodedInputLength) {
+          return null;
+        }
         final decoded = utf8.decode(base64Url.decode(encoded));
+        if (decoded.length > _maxDecompressedSize) {
+          print('Security: Rejected oversized uncompressed data (${decoded.length} bytes)');
+          return null;
+        }
         return jsonDecode(decoded) as Map<String, dynamic>;
       } catch (_) {
         return null;
