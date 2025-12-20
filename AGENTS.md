@@ -6,15 +6,28 @@
 
 These rules apply to ALL code. Violating them will cause rework.
 
-### 1.1 Visual Design
+### 1.1 Security & Input Validation
+
+| Rule | Details |
+|------|---------|
+| **HTTP RESPONSE LIMITS** | All HTTP fetches MUST enforce a **10 MB** limit via stream counting. Use `StreamedResponse` and abort if `bytesRead > _maxResponseBytes`. |
+| **CONTENT-TYPE CHECK** | Reject binary types (`application/pdf`, `image/*`, `video/*`, `application/zip`) immediately upon header receipt. Do NOT download the body. |
+| **URL SCHEME VALIDATION** | Only allow `http://` and `https://` schemes. Reject `file://`, `javascript://`, `content://`, `data://`. |
+| **QR/DEEP LINK LIMITS** | Maximum encoded data length: **4,096 characters**. Reject oversized payloads before parsing. |
+| **DECOMPRESSION BOMBS** | When decompressing gzip (share links), check: input ≤ 500 KB, output ≤ 5 MB. Abort if exceeded. |
+| **RECIPE VALIDATION** | Before saving imported recipes: `name.trim().isNotEmpty` AND (`ingredients.isNotEmpty` OR `directions.isNotEmpty`). |
+
+### 1.2 Visual Design
+
 | Rule | Details |
 |------|---------|
 | **NO ICONS / NO EMOJIS** | Do not add decorative icons (🍕, 🗑️) to headers, titles, or buttons unless explicitly requested. |
-| **MAINS IS BASELINE** | The "Mains" screen defines canonical spacing, padding, and font sizes. Do not "improve" layouts by adding cards or changing margins. |
+| **MAINS IS BASELINE** | The "Mains" screen defines canonical spacing, padding, and font sizes. Do not "improve" layouts. |
 | **DESTRUCTIVE ACTIONS** | Never use `Colors.red` or `error` for delete buttons. Use `theme.colorScheme.secondary` instead. |
 | **CONTRAST** | Never place Primary Text on a Secondary Background. Use Secondary Text (in outlined containers). |
 
-### 1.2 Code Quality
+### 1.3 Code Quality
+
 | Rule | Details |
 |------|---------|
 | **SEARCH FIRST** | Before writing a helper, search the codebase for existing implementations. |
@@ -33,13 +46,62 @@ These rules apply to ALL code. Violating them will cause rework.
 
 ---
 
-## 3. UI COMPONENTS & DESIGN SYSTEM
+## 3. DATA & TEXT HANDLING (Single Source of Truth)
 
-### 3.1 Header Component
+### 3.1 Text Normalization
+**Location:** `lib/core/utils/text_normalizer.dart`
+
+**ALWAYS** use `TextNormalizer` for:
+- Title casing with lowercase connectors → `TextNormalizer.cleanName()`
+- Simple title case → `TextNormalizer.toTitleCase()`
+- Fraction parsing (text + decimal to unicode) → `TextNormalizer.normalizeFractions()`
+
+```dart
+// ✅ CORRECT
+TextNormalizer.cleanName('olive oil, ');        // → "Olive Oil"
+TextNormalizer.normalizeFractions('1/2 cup');   // → "½ cup"
+TextNormalizer.normalizeFractions('0.333 tsp'); // → "⅓ tsp"
+
+// ❌ FORBIDDEN - Do NOT write ad-hoc regex for these operations
+text[0].toUpperCase() + text.substring(1)  // Use TextNormalizer instead
+text.replaceAll('1/2', '½')                // Use TextNormalizer instead
+```
+
+### 3.2 Unit Normalization
+**Location:** `lib/core/utils/unit_normalizer.dart`
+
+**ALWAYS** use `UnitNormalizer` for standardizing measurement units:
+
+```dart
+UnitNormalizer.normalize('tablespoons')  // → "Tbsp"
+UnitNormalizer.normalize('cups')         // → "C"
+UnitNormalizer.normalize('grams')        // → "g"
+UnitNormalizer.normalizeTime('1 hour 30 minutes')  // → "1h 30m"
+UnitNormalizer.normalizeServes('Serves 4 people')  // → "4"
+```
+
+### 3.3 Import Pipeline
+All text from OCR, URL imports, QR codes, or deep links **MUST** pass through these normalizers before saving:
+
+```
+Raw Input → TextNormalizer.cleanName() → UnitNormalizer.normalize() → Save to DB
+```
+
+**Key Files:**
+- `lib/core/utils/ingredient_parser.dart` — Parsing coordinator (delegates to normalizers)
+- `lib/core/services/url_importer.dart` — URL recipe extraction
+- `lib/features/import/services/ocr_importer.dart` — OCR text processing
+
+---
+
+## 4. UI COMPONENTS & DESIGN SYSTEM
+
+### 4.1 Header Component
 All detail views **MUST** use the shared `MemoixHeader` widget from `lib/shared/widgets/memoix_header.dart`.
 
 **DO NOT:**
 * Build inline headers in detail screens
+* Create custom app bar actions
 
 **Usage:**
 ```dart
@@ -58,7 +120,7 @@ MemoixHeader(
 
 The header is model-agnostic - it accepts primitive values (strings, bools, callbacks), allowing use across Recipe, Modernist, Pizza, Sandwich, Smoking, Cellar, and Cheese detail screens.
 
-### 3.2 SnackBars (User Feedback)
+### 4.2 SnackBars (User Feedback)
 All SnackBars **MUST** use `MemoixSnackBar` from `lib/core/widgets/memoix_snackbar.dart`.
 
 **STRICTLY FORBIDDEN:**
@@ -89,9 +151,7 @@ MemoixSnackBar.showSaved(                            // After save pattern
 );
 ```
 
-**Why:** Uses global `rootScaffoldMessengerKey` that survives navigation. Includes Timer-based auto-dismiss for SnackBars with action buttons (workaround for Material 3 bug).
-
-### 3.3 Color System
+### 4.3 Color System
 
 #### UI Elements (Theme Colors)
 For all UI chrome (buttons, backgrounds, borders, text):
@@ -107,40 +167,11 @@ Theme.of(context).colorScheme.outline
 #### Domain Data (MemoixColors)
 For data-driven visual indicators (cuisine dots, course badges, spirit colors):
 ```dart
-// Static lookup methods
 MemoixColors.forCuisine('Korean')
-MemoixColors.forContinentDot('Japanese')
 MemoixColors.forCourse('mains')
 MemoixColors.forSpiritDot('Gin')
 MemoixColors.forPizzaBaseDot('marinara')
 MemoixColors.forSmokedItemDot('beef')
-MemoixColors.forModernistType('technique')
-MemoixColors.forProteinDot('chicken')
-
-// Direct constants
-MemoixColors.spiritGin
-MemoixColors.continentAsian
-MemoixColors.pizzaMarinara
-```
-
-#### Semantic Status Colors
-For status indicators (confidence scores, validation states):
-```dart
-MemoixColors.success           // Green
-MemoixColors.warning           // Orange  
-MemoixColors.successContainer  // Light green bg
-MemoixColors.warningContainer  // Light orange bg
-MemoixColors.errorContainer    // Light red bg
-MemoixColors.favorite          // Soft red heart
-MemoixColors.rating            // Amber star
-```
-
-#### Import Method Colors
-```dart
-MemoixColors.importManual      // Muted blue
-MemoixColors.importCamera      // Sage green
-MemoixColors.importMultiPage   // Ocean teal
-MemoixColors.importGallery     // Warm orange
 ```
 
 #### Forbidden Patterns
@@ -151,28 +182,23 @@ Color(0xFF4B5563)  // Hardcoded hex in widgets
 theme.colorScheme.primary  // for domain data like cuisine dots
 ```
 
-**Exception:** `Colors.grey` is acceptable as a fallback in `MemoixColors` lookup methods when no match is found.
-
-#### FilterChip Pattern
-FilterChips are UI elements - use `theme.colorScheme.secondary` for `selectedColor`, `side`, and `labelStyle`. To show domain color, add an `avatar` with a colored dot using `MemoixColors`. See `smoking_list_screen.dart` for reference.
+**Exception:** `Colors.grey` is acceptable as a fallback in `MemoixColors` lookup methods.
 
 ---
 
-## 4. VIEW ARCHITECTURE
+## 5. VIEW ARCHITECTURE
 
-### 4.1 Split/Side-by-Side View Layout
-The split view uses a fixed-height container strategy to allow footer content (Notes, Gallery, Nutrition) to scroll below.
+### 5.1 Split/Side-by-Side View Layout
+The split view uses a **fixed-height container** (`SizedBox`) to allow footer content (Notes, Gallery, Nutrition) to scroll below.
 
-**Height Calculation (Responsive):**
-* **Mobile (<600px):** 70% of screen, clamped 300-550px - balances content with footer access
-* **Tablet (≥600px):** 75% of screen, clamped 400-700px - more room for content
-
-The split view also uses content-aware sizing: if the actual content (ingredients + directions) is shorter than the max height, it shrinks to fit.
+**Height Calculation:**
+* **Mobile (<600px):** ~70% of screen, clamped 300-550px
+* **Tablet (≥600px):** ~75-85% of screen, clamped 400-700px
 
 **Pattern:**
 ```dart
 SizedBox(
-  height: splitViewHeight, // Responsive: mobile=55%, tablet=75%
+  height: splitViewHeight,  // Fixed height, NOT Expanded
   child: Row(
     children: [
       Expanded(child: _IngredientsColumn(...)),  // Independent scroll
@@ -181,13 +207,14 @@ SizedBox(
     ],
   ),
 )
+// Footer content sits BELOW the SizedBox
 ```
 
 **DO NOT:**
 * Use `Expanded` for the split container (prevents footer scrolling)
 * Place footer sections inside the split columns
 
-### 4.2 The "Physical Item" Input Pattern
+### 5.2 The "Physical Item" Input Pattern
 **Applies to:** Wood (Smoking), Glass/Garnish (Drinks), Equipment (Modernist)
 
 **UI Behavior:**
@@ -198,19 +225,25 @@ SizedBox(
 
 ---
 
-## 5. DATA & MODELS
+## 6. FEATURE ARCHITECTURE
 
-### 5.1 Recipe Pairing
-Recipe pairings are stored in `pairedRecipeIds` on the Recipe model (and ModernistRecipe).
+### 6.1 Recipe Pairing
+Pairings use **parent-side storage only**. Inverse logic is handled by the View.
 
 * **Field:** `List<String> pairedRecipeIds = []`
 * **Location:** `lib/features/recipes/models/recipe.dart`
-* **Bidirectional:** Detail screens show both explicit pairings AND inverse pairings (recipes that link to the current recipe)
+* **Display:** Detail screens show both explicit pairings AND inverse pairings (recipes that link to the current recipe)
 
 **DEPRECATED:** The `pairsWith` field is deprecated. Use `pairedRecipeIds` for all new code.
 
-### 5.2 Domain Schema Types
-The app distinguishes between "Standard Recipes" (list of steps) and "Component Assemblies" (list of parts).
+### 6.2 Kitchen Timer / Alarms
+**Location:** `lib/features/tools/timer_service.dart`
+
+* Alarms are managed by `TimerService` (singleton via Riverpod)
+* Alarms must persist across app restarts (stored in SharedPreferences)
+* UI in `lib/features/tools/kitchen_timer_screen.dart`
+
+### 6.3 Domain Schema Types
 
 #### Type A: Standard Recipe (Recipe Model)
 * **Use for:** Mains, Desserts, Drinks, Baking, Modernist, Smoking
@@ -220,17 +253,13 @@ The app distinguishes between "Standard Recipes" (list of steps) and "Component 
 #### Type B: Component Assembly (Pizza Model, etc.)
 * **Use for:** Pizzas, Sandwiches, Charcuterie Boards
 * **Concept:** No single "Directions" list - assembly of discrete sub-recipes
-* **Structure:**
-  * `base`: Enum or String (Sauce, Bread)
-  * `components`: Lists of Strings/Objects (Toppings, Cheeses, Condiments)
-  * `sub_recipes`: Embedded objects (Dough, Spread)
+* **Structure:** `base` + `components` + optional `sub_recipes`
 
 ---
 
-## 6. PROJECT STRUCTURE
+## 7. PROJECT STRUCTURE
 
-### 6.1 Feature Pattern (Vertical Slice)
-All features follow this structure:
+### 7.1 Feature Pattern (Vertical Slice)
 ```text
 lib/features/<feature_name>/
 ├── models/      # Isar collections (@collection)
@@ -240,17 +269,18 @@ lib/features/<feature_name>/
 └── services/    # Business logic (Parsers, Validators)
 ```
 
-### 6.2 Core Locations
+### 7.2 Core Locations
 | Path | Purpose |
 |------|---------|
 | `lib/app/theme/` | Theme and MemoixColors |
 | `lib/app/routes/router.dart` | Static routing helpers (AppRoutes) |
 | `lib/core/database/database.dart` | MemoixDatabase schema registration |
+| `lib/core/utils/` | **TextNormalizer, UnitNormalizer, IngredientParser** |
 | `lib/core/widgets/` | Shared widgets (MemoixSnackBar, etc.) |
-| `lib/core/services/` | Shared services (url_importer.dart) |
+| `lib/core/services/` | Shared services (url_importer.dart, deep_link_service.dart) |
 | `lib/shared/widgets/` | Cross-feature UI (MemoixHeader, etc.) |
 
-### 6.3 Protocol for Adding New Features
+### 7.3 Protocol for Adding New Features
 1. **Create Structure:** Add `lib/features/<new_type>/`
 2. **Define Model:** Create model with `@collection`
 3. **Register Schema:** Add to `MemoixDatabase.initialize()` in `lib/core/database/database.dart`
