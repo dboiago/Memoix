@@ -173,6 +173,13 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer(); // Don't auto-dismiss alarms
     messenger.clearSnackBars();
+    
+    // Get the snackbar action color from theme (same as SnackBarAction uses)
+    final context = rootNavigatorKey.currentContext;
+    final actionColor = context != null 
+        ? Theme.of(context).colorScheme.inversePrimary
+        : Colors.lightBlueAccent;
+    
     messenger.showSnackBar(
       SnackBar(
         content: Row(
@@ -188,7 +195,7 @@ class MemoixSnackBar {
                 onDismiss();
               },
               style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
+                foregroundColor: actionColor,
                 padding: const EdgeInsets.symmetric(horizontal: 8),
               ),
               child: const Text('Done'),
