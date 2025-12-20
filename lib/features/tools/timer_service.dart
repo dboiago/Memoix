@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io' show Platform;
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
@@ -96,7 +96,6 @@ class TimerService extends StateNotifier<TimerServiceState> {
 
   int _nextTimerId = 1;
   Timer? _tickTimer;
-  final AudioPlayer _audioPlayer = AudioPlayer();
   Timer? _alarmLoopTimer;
   bool _isAlarmPlaying = false;
   
@@ -110,7 +109,6 @@ class TimerService extends StateNotifier<TimerServiceState> {
   void dispose() {
     _tickTimer?.cancel();
     _alarmLoopTimer?.cancel();
-    _audioPlayer.dispose();
     _updateWakelock();
     super.dispose();
   }
@@ -319,28 +317,23 @@ class TimerService extends StateNotifier<TimerServiceState> {
     }
   }
 
-  /// Play alarm sound
+  /// Play alarm - uses device's built-in alarm sound
   Future<void> _playAlarmSound(TimerSound sound) async {
     if (_isAlarmPlaying) return;
     _isAlarmPlaying = true;
     
-    // Haptic feedback on mobile
+    // Haptic feedback on mobile for extra attention
     if (!Platform.isWindows && !Platform.isLinux && !Platform.isMacOS) {
-      HapticFeedback.vibrate();
+      HapticFeedback.heavyImpact();
     }
     
-    try {
-      await _audioPlayer.setReleaseMode(ReleaseMode.loop);
-      await _audioPlayer.play(AssetSource(sound.assetPath));
-    } catch (e) {
-      debugPrint('Failed to play alarm sound: $e');
-      // Use repeated haptic as fallback on mobile
-      if (!Platform.isWindows && !Platform.isLinux && !Platform.isMacOS) {
-        _alarmLoopTimer = Timer.periodic(const Duration(milliseconds: 500), (_) {
-          HapticFeedback.vibrate();
-        });
-      }
-    }
+    // Play the device's alarm sound - this is loud and designed to get attention
+    // looping: true makes it repeat until stopped
+    FlutterRingtonePlayer().playAlarm(
+      looping: true,
+      volume: 1.0,
+      asAlarm: true, // Uses alarm audio stream (louder, bypasses silent mode on some devices)
+    );
   }
 
   /// Check if we should stop the alarm sound
@@ -357,7 +350,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     _isAlarmPlaying = false;
     _alarmLoopTimer?.cancel();
     _alarmLoopTimer = null;
-    await _audioPlayer.stop();
+    FlutterRingtonePlayer().stop();
   }
 
   /// Keep screen awake while timers are running
