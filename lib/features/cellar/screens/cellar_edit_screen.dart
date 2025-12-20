@@ -600,15 +600,16 @@ class _ProducerPickerSheetState extends State<_ProducerPickerSheet> {
   Widget _buildSearchResults(ScrollController controller) {
     final results = _filteredCuisines;
     if (results.isEmpty) {
+      final theme = Theme.of(context);
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            Icon(Icons.search_off, size: 48, color: theme.colorScheme.outline),
             const SizedBox(height: 16),
             Text(
               'No countries found for "$_searchQuery"',
-              style: TextStyle(color: Colors.grey.shade600),
+              style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
             ),
           ],
         ),

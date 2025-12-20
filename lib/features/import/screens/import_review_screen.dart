@@ -407,12 +407,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                 child: TextButton.icon(
                   onPressed: () {
                     Clipboard.setData(ClipboardData(text: rawText));
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Raw text copied to clipboard'),
-                        duration: Duration(seconds: 2),
-                      ),
-                    );
+                    MemoixSnackBar.showSuccess('Raw text copied to clipboard');
                   },
                   icon: const Icon(Icons.copy, size: 16),
                   label: const Text('Copy All'),
@@ -1788,11 +1783,11 @@ class _CuisinePickerSheetState extends State<_CuisinePickerSheet> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.search_off, size: 48, color: Colors.grey.shade400),
+            Icon(Icons.search_off, size: 48, color: Theme.of(context).colorScheme.outline),
             const SizedBox(height: 16),
             Text(
               'No cuisines found for "$_searchQuery"',
-              style: TextStyle(color: Colors.grey.shade600),
+              style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant),
             ),
           ],
         ),

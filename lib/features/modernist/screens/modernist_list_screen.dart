@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
@@ -238,26 +239,9 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
   }
 
   Widget _buildEmptyState() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.science_outlined,
-            size: 64,
-            color: Colors.grey.shade400,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'No recipes found',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.grey.shade600,
-            ),
-          ),
-        ],
-      ),
+    return const MemoixEmptyState(
+      message: 'No recipes found',
+      icon: Icons.science_outlined,
     );
   }
 

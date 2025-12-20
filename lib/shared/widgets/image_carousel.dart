@@ -190,10 +190,11 @@ class _ImageCarouselState extends State<ImageCarousel> {
 
   Widget _buildImage(String source) {
     final isLocalFile = !source.startsWith('http');
+    final theme = Theme.of(context);
 
     return Container(
       width: double.infinity,
-      color: Colors.grey.shade900,
+      color: theme.colorScheme.surfaceContainerHighest,
       child: isLocalFile
           ? Image.file(
               File(source),
@@ -203,6 +204,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
           : Image.network(
               source,
               fit: BoxFit.cover,
+              cacheWidth: 600,
               loadingBuilder: (context, child, loadingProgress) {
                 if (loadingProgress == null) return child;
                 return Center(
@@ -220,12 +222,13 @@ class _ImageCarouselState extends State<ImageCarousel> {
   }
 
   Widget _buildErrorPlaceholder() {
+    final theme = Theme.of(context);
     return Container(
-      color: Colors.grey.shade800,
-      child: const Center(
+      color: theme.colorScheme.surfaceContainerHighest,
+      child: Center(
         child: Icon(
           Icons.broken_image_outlined,
-          color: Colors.white54,
+          color: theme.colorScheme.outline,
           size: 48,
         ),
       ),

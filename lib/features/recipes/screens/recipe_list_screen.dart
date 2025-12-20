@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/category.dart';
 import '../models/recipe.dart';
@@ -462,26 +463,9 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   }
 
   Widget _buildEmptyState() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.restaurant,
-            size: 64,
-            color: Colors.grey.shade400,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            widget.emptyMessage ?? 'No recipes found',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.grey.shade600,
-            ),
-          ),
-        ],
-      ),
+    return MemoixEmptyState(
+      message: widget.emptyMessage ?? 'No recipes found',
+      icon: Icons.restaurant,
     );
   }
 
