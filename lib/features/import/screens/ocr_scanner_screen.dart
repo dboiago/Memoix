@@ -56,16 +56,16 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                                   color: theme.colorScheme.primary,),
                               const SizedBox(width: 8),
                               Text(
-                                'How to scan a recipe',
+                                'How to scan',
                                 style: theme.textTheme.titleMedium,
                               ),
                             ],
                           ),
                           const SizedBox(height: 12),
                           const Text(
-                            '1. Take a clear photo of a recipe from a cookbook or handwritten note\n'
-                            '2. Make sure the text is readable and well-lit\n'
-                            '3. The app will extract the text and help you organize it into a recipe',
+                            'Focus: Use a well-lit, clear photo.\n'
+                            'Frame: Capture only the recipe you want\n'
+                            'Review: The app will extract the text for you to organize',
                           ),
                         ],
                       ),
