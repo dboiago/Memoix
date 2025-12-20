@@ -3,8 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../sharing/services/share_service.dart';
-import '../../recipes/repository/recipe_repository.dart';
-import '../../recipes/screens/recipe_detail_screen.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 

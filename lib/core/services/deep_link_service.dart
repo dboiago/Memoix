@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/sharing/services/share_service.dart';
-import '../../features/recipes/repository/recipe_repository.dart';
-import '../../features/recipes/screens/recipe_detail_screen.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../widgets/memoix_snackbar.dart';
 
