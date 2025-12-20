@@ -456,7 +456,7 @@ class SettingsScreen extends ConsumerWidget {
         const SizedBox(height: 24),
         const Text(
           'A recipe and food reference app for people who cook seriously.\n\n'
-          'Flexible by design. Offline by default.'
+          'Flexible by design. Offline by default.',
           style: TextStyle(fontSize: 14),
         ),
       ],
