@@ -41,6 +41,34 @@ class OcrRecipeImporter {
     return _processImage(image.path);
   }
 
+  /// Pick an image from camera without processing (for use with external cropping)
+  /// Returns the image path or null if cancelled
+  Future<String?> pickImageFromCamera() async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return null;
+    }
+    final image = await _imagePicker.pickImage(source: ImageSource.camera);
+    return image?.path;
+  }
+
+  /// Pick an image from gallery without processing (for use with external cropping)
+  /// Returns the image path or null if cancelled
+  Future<String?> pickImageFromGallery() async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return null;
+    }
+    final image = await _imagePicker.pickImage(source: ImageSource.gallery);
+    return image?.path;
+  }
+
+  /// Process an image from a given path (public method for use after cropping)
+  Future<OcrResult> processImageFromPath(String imagePath) async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return OcrResult.error('OCR is not supported on desktop platforms.');
+    }
+    return _processImage(imagePath);
+  }
+
   /// Pick multiple images and extract/merge recipe text
   Future<OcrResult> scanMultipleImages(List<String> imagePaths) async {
     if (imagePaths.isEmpty) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart' show ImageSource;
 
 import '../services/ocr_importer.dart';
@@ -123,14 +124,37 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
       final ocrService = ref.read(ocrImporterProvider);
       
       setState(() {
-        _isProcessing = true;
         _errorMessage = null;
       });
 
-      // Let the OCR service handle image picking and processing
-      final result = source == ImageSource.camera 
-          ? await ocrService.scanFromCamera() 
-          : await ocrService.scanFromGallery();
+      // Step 1: Pick image (don't show processing yet - cropper is interactive)
+      final imagePath = source == ImageSource.camera 
+          ? await ocrService.pickImageFromCamera() 
+          : await ocrService.pickImageFromGallery();
+
+      if (!mounted) return;
+
+      if (imagePath == null) {
+        // User cancelled
+        return;
+      }
+
+      // Step 2: Crop the image
+      final croppedFile = await _cropImage(imagePath);
+      
+      if (!mounted) return;
+      
+      if (croppedFile == null) {
+        // User cancelled cropping
+        return;
+      }
+
+      // Step 3: Process the cropped image
+      setState(() {
+        _isProcessing = true;
+      });
+
+      final result = await ocrService.processImageFromPath(croppedFile.path);
 
       if (!mounted) return;
 
@@ -156,6 +180,30 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
         _errorMessage = 'Failed to process image: $e';
       });
     }
+  }
+
+  Future<CroppedFile?> _cropImage(String imagePath) async {
+    final theme = Theme.of(context);
+    
+    return ImageCropper().cropImage(
+      sourcePath: imagePath,
+      uiSettings: [
+        AndroidUiSettings(
+          toolbarTitle: 'Crop Recipe',
+          toolbarColor: theme.colorScheme.surface,
+          toolbarWidgetColor: theme.colorScheme.onSurface,
+          backgroundColor: theme.colorScheme.surface,
+          activeControlsWidgetColor: theme.colorScheme.primary,
+          initAspectRatio: CropAspectRatioPreset.original,
+          lockAspectRatio: false,
+        ),
+        IOSUiSettings(
+          title: 'Crop Recipe',
+          doneButtonTitle: 'Done',
+          cancelButtonTitle: 'Cancel',
+        ),
+      ],
+    );
   }
 
   void _navigateToReview(OcrResult result) {
