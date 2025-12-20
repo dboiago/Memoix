@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:window_manager/window_manager.dart';
 
 import 'theme/theme.dart';
 import 'routes/router.dart';
@@ -21,81 +18,12 @@ final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
 /// Global navigator key for navigating from anywhere
 final rootNavigatorKey = GlobalKey<NavigatorState>();
 
-/// Update desktop window title bar color based on brightness
-Future<void> _updateTitleBarColor(Brightness brightness) async {
-  if (!Platform.isWindows && !Platform.isMacOS && !Platform.isLinux) return;
-  
-  final isDark = brightness == Brightness.dark;
-  final bgColor = isDark ? MemoixTheme.darkSurface : MemoixTheme.lightSurface;
-  
-  await windowManager.setBackgroundColor(bgColor);
-  
-  // On Windows, also set the title bar text brightness
-  if (Platform.isWindows) {
-    await windowManager.setTitleBarStyle(
-      TitleBarStyle.normal,
-      windowButtonVisibility: true,
-    );
-    // Windows 11 DWM attribute for dark/light title bar
-    await windowManager.setBrightness(brightness);
-  }
-}
-
-class MemoixApp extends ConsumerStatefulWidget {
+class MemoixApp extends ConsumerWidget {
   const MemoixApp({super.key});
 
   @override
-  ConsumerState<MemoixApp> createState() => _MemoixAppState();
-}
-
-class _MemoixAppState extends ConsumerState<MemoixApp> with WidgetsBindingObserver {
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addObserver(this);
-    // Set initial title bar color after first frame
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _syncTitleBarWithTheme();
-    });
-  }
-
-  @override
-  void dispose() {
-    WidgetsBinding.instance.removeObserver(this);
-    super.dispose();
-  }
-
-  @override
-  void didChangePlatformBrightness() {
-    // System theme changed - update title bar if following system
-    final mode = ref.read(themeModeProvider);
-    if (mode == ThemeMode.system) {
-      _syncTitleBarWithTheme();
-    }
-  }
-
-  void _syncTitleBarWithTheme() {
-    final mode = ref.read(themeModeProvider);
-    final platformBrightness = WidgetsBinding.instance.platformDispatcher.platformBrightness;
-    
-    final brightness = switch (mode) {
-      ThemeMode.dark => Brightness.dark,
-      ThemeMode.light => Brightness.light,
-      ThemeMode.system => platformBrightness,
-    };
-    
-    _updateTitleBarColor(brightness);
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final mode = ref.watch(themeModeProvider);
-    
-    // Update title bar color when theme mode changes
-    ref.listen(themeModeProvider, (_, __) {
-      _syncTitleBarWithTheme();
-    });
-    
     return MaterialApp(
       title: 'Memoix',
       debugShowCheckedModeBanner: false,
