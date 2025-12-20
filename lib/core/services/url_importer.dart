@@ -5123,59 +5123,11 @@ class UrlRecipeImporter {
   }
 
   /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½, 0.333333 → ⅓)
+  /// 
+  /// Uses shared TextNormalizer for consistent behavior across importers.
   String? _normalizeFractions(String? text) {
     if (text == null || text.isEmpty) return text;
-    
-    var result = text;
-    
-    // Text fraction to unicode mapping
-    const textToFraction = {
-      '1/2': '½', '1/4': '¼', '3/4': '¾',
-      '1/3': '⅓', '2/3': '⅔',
-      '1/8': '⅛', '3/8': '⅜', '5/8': '⅝', '7/8': '⅞',
-      '1/5': '⅕', '2/5': '⅖', '3/5': '⅗', '4/5': '⅘',
-      '1/6': '⅙', '5/6': '⅚',
-    };
-    
-    // Replace text fractions first (before decimals to avoid conflicts)
-    for (final entry in textToFraction.entries) {
-      result = result.replaceAll(entry.key, entry.value);
-    }
-    
-    // Replace long decimal representations of fractions
-    // Match 0.333... (1/3), 0.666... (2/3), 0.166... (1/6), 0.833... (5/6)
-    result = result.replaceAllMapped(
-      RegExp(r'\b0\.3{3,}\d*\b'),  // 0.333...
-      (m) => '⅓',
-    );
-    result = result.replaceAllMapped(
-      RegExp(r'\b0\.6{3,}\d*\b'),  // 0.666...
-      (m) => '⅔',
-    );
-    result = result.replaceAllMapped(
-      RegExp(r'\b0\.16{2,}\d*\b'), // 0.166...
-      (m) => '⅙',
-    );
-    result = result.replaceAllMapped(
-      RegExp(r'\b0\.83{2,}\d*\b'), // 0.833...
-      (m) => '⅚',
-    );
-    
-    // Decimal to fraction mapping for common short decimals
-    const decimalToFraction = {
-      '0.5': '½', '0.25': '¼', '0.75': '¾',
-      '0.33': '⅓', '0.333': '⅓', '0.67': '⅔', '0.666': '⅔', '0.667': '⅔',
-      '0.125': '⅛', '0.375': '⅜', '0.625': '⅝', '0.875': '⅞',
-      '0.2': '⅕', '0.4': '⅖', '0.6': '⅗', '0.8': '⅘',
-    };
-    
-    // Replace decimals
-    for (final entry in decimalToFraction.entries) {
-      // Only replace if it's a standalone decimal or at word boundary
-      result = result.replaceAll(RegExp('(?<![\\d])${RegExp.escape(entry.key)}(?![\\d])'), entry.value);
-    }
-    
-    return result;
+    return TextNormalizer.normalizeFractions(text);
   }
 
   /// Sort ingredients by quantity (largest first), keeping sections together

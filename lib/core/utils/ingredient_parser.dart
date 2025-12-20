@@ -3,6 +3,9 @@
 /// This consolidates ingredient parsing logic to ensure consistent behavior
 /// across all import methods and reduce code duplication.
 
+import 'text_normalizer.dart';
+import 'unit_normalizer.dart';
+
 /// Result of parsing an ingredient line into structured components
 class ParsedIngredient {
   /// The original line text (for display purposes)
@@ -201,7 +204,7 @@ class IngredientParser {
     if (bakerMatch != null) {
       return ParsedIngredient(
         original: original,
-        name: _cleanName(bakerMatch.group(1)?.trim() ?? workingLine),
+        name: TextNormalizer.cleanName(bakerMatch.group(1)?.trim() ?? workingLine),
         bakerPercent: '${bakerMatch.group(2)}%',
         amount: bakerMatch.group(3)?.trim(),
         preparation: preparation ?? bakerMatch.group(4)?.trim(),
@@ -220,10 +223,10 @@ class IngredientParser {
     ).firstMatch(workingLine);
     if (standardMatch != null) {
       final amount = standardMatch.group(1)?.trim();
-      final unit = normalizeUnit(standardMatch.group(2)?.trim());
+      final unit = UnitNormalizer.normalize(standardMatch.group(2)?.trim());
       return ParsedIngredient(
         original: original,
-        name: _cleanName(standardMatch.group(3)?.trim() ?? workingLine),
+        name: TextNormalizer.cleanName(standardMatch.group(3)?.trim() ?? workingLine),
         amount: amount,
         unit: pluralizeUnit(unit, amount),
         preparation: preparation,
@@ -249,7 +252,7 @@ class IngredientParser {
         caseSensitive: false,
       ).firstMatch(name);
       if (unitAtStartMatch != null) {
-        unit = normalizeUnit(unitAtStartMatch.group(1)?.trim());
+        unit = UnitNormalizer.normalize(unitAtStartMatch.group(1)?.trim());
         unit = pluralizeUnit(unit, amount);
         name = unitAtStartMatch.group(2)?.trim() ?? name;
       }
@@ -262,7 +265,7 @@ class IngredientParser {
       
       return ParsedIngredient(
         original: original,
-        name: _cleanName(name),
+        name: TextNormalizer.cleanName(name),
         amount: amount,
         unit: unit,
         preparation: preparation,
@@ -282,7 +285,7 @@ class IngredientParser {
       final amount = ofPatternMatch.group(2)?.trim();
       final ingredient = ofPatternMatch.group(3)?.trim() ?? '';
       // Reformat as "Ingredient Part" e.g., "Lemon Juice"
-      final formattedName = '${_cleanName(ingredient)} ${_toTitleCase(part)}';
+      final formattedName = '${TextNormalizer.cleanName(ingredient)} ${TextNormalizer.toTitleCase(part)}';
       return ParsedIngredient(
         original: original,
         name: formattedName,
@@ -297,7 +300,7 @@ class IngredientParser {
     // Fallback - just use the line as name
     return ParsedIngredient(
       original: original,
-      name: _cleanName(workingLine),
+      name: TextNormalizer.cleanName(workingLine),
       preparation: preparation,
       alternative: alternative,
       sectionName: sectionName,
@@ -308,84 +311,12 @@ class IngredientParser {
   
   /// Normalize unit abbreviations to standard form.
   /// 
-  /// Examples:
-  /// - "tablespoons" โ†' "tbsp"
-  /// - "cups" โ†' "cup"
-  /// - "lbs." โ†' "lb"
+  /// @deprecated Use [UnitNormalizer.normalize] instead.
+  /// This method is kept for backward compatibility but delegates to UnitNormalizer.
   static String? normalizeUnit(String? unit) {
     if (unit == null) return null;
-    final lower = unit.toLowerCase().replaceAll('.', '');
-    
-    const unitMap = <String, String>{
-      'cup': 'cup',
-      'cups': 'cup',
-      'c': 'cup',
-      'tbsp': 'tbsp',
-      'tbsps': 'tbsp',
-      'tablespoon': 'tbsp',
-      'tablespoons': 'tbsp',
-      'tsp': 'tsp',
-      'tsps': 'tsp',
-      'teaspoon': 'tsp',
-      'teaspoons': 'tsp',
-      't': 'tsp',
-      'oz': 'oz',
-      'ounce': 'oz',
-      'ounces': 'oz',
-      'lb': 'lb',
-      'lbs': 'lb',
-      'pound': 'lb',
-      'pounds': 'lb',
-      'g': 'g',
-      'gram': 'g',
-      'grams': 'g',
-      'kg': 'kg',
-      'kilogram': 'kg',
-      'kilograms': 'kg',
-      'ml': 'ml',
-      'milliliter': 'ml',
-      'milliliters': 'ml',
-      'millilitre': 'ml',
-      'millilitres': 'ml',
-      'cl': 'cl',
-      'centiliter': 'cl',
-      'centiliters': 'cl',
-      'centilitre': 'cl',
-      'centilitres': 'cl',
-      'l': 'L',
-      'liter': 'L',
-      'liters': 'L',
-      'litre': 'L',
-      'litres': 'L',
-      'part': 'part',
-      'parts': 'parts',
-      'clove': 'clove',
-      'cloves': 'cloves',
-      'head': 'head',
-      'heads': 'heads',
-      'bunch': 'bunch',
-      'bunches': 'bunches',
-      'sprig': 'sprig',
-      'sprigs': 'sprigs',
-      'slice': 'slice',
-      'slices': 'slices',
-      'piece': 'piece',
-      'pieces': 'pieces',
-      'pinch': 'pinch',
-      'pinches': 'pinches',
-      'dash': 'dash',
-      'dashes': 'dashes',
-      'stalk': 'stalk',
-      'stalks': 'stalks',
-      'can': 'can',
-      'cans': 'cans',
-      'package': 'package',
-      'packages': 'packages',
-      'pkg': 'package',
-      'pkgs': 'packages',
-    };
-    
-    return unitMap[lower] ?? unit;
+    final normalized = UnitNormalizer.normalize(unit);
+    return normalized.isEmpty ? null : normalized;
   }
   
   /// Get the appropriate unit form based on amount (singular vs plural).
@@ -421,60 +352,13 @@ class IngredientParser {
   
   /// Convert text fractions to unicode characters.
   /// 
-  /// Examples:
-  /// - "1/2 cup" โ†' "ยฝ cup"
-  /// - "1 1/2 cups" โ†' "1ยฝ cups"
-  static String normalizeFractions(String text) {
-    var result = text;
-    for (final entry in fractionMap.entries) {
-      result = result.replaceAll(entry.key, entry.value);
-    }
-    return result;
-  }
-  
-  /// Clean an ingredient name (remove extra whitespace, apply Title Case).
+  /// @deprecated Use [TextNormalizer.normalizeFractions] instead.
+  /// This method is kept for backward compatibility but delegates to TextNormalizer.
   /// 
-  /// Applies Title Case to all words.
-  /// Words like 'of', 'the', 'and', 'or' stay lowercase unless first word.
-  static String _cleanName(String name) {
-    // Remove leading/trailing whitespace and collapse internal whitespace
-    var cleaned = name.trim().replaceAll(RegExp(r'\s+'), ' ');
-    
-    // Remove trailing punctuation
-    cleaned = cleaned.replaceAll(RegExp(r'[,;:.]+$'), '').trim();
-    
-    if (cleaned.isEmpty) return cleaned;
-    
-    // Words that should stay lowercase (unless first word)
-    const lowercaseWords = {'a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with'};
-    
-    // Apply Title Case to all words
-    final words = cleaned.split(' ');
-    final titleCased = words.asMap().entries.map((entry) {
-      final i = entry.key;
-      final word = entry.value;
-      if (word.isEmpty) return word;
-      
-      // First word always capitalized
-      if (i == 0) {
-        return word[0].toUpperCase() + word.substring(1).toLowerCase();
-      }
-      
-      // Keep short common words lowercase
-      if (lowercaseWords.contains(word.toLowerCase())) {
-        return word.toLowerCase();
-      }
-      
-      // Capitalize first letter of other words
-      return word[0].toUpperCase() + word.substring(1).toLowerCase();
-    }).join(' ');
-    
-    return titleCased;
-  }
-  
-  /// Convert text to Title Case.
-  static String _toTitleCase(String text) {
-    if (text.isEmpty) return text;
-    return text[0].toUpperCase() + text.substring(1).toLowerCase();
+  /// Examples:
+  /// - "1/2 cup" → "½ cup"
+  /// - "1 1/2 cups" → "1½ cups"
+  static String normalizeFractions(String text) {
+    return TextNormalizer.normalizeFractions(text);
   }
 }
