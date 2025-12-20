@@ -564,7 +564,7 @@ class UrlRecipeImporter {
             for (final blocked in blockedTypes) {
               if (contentType.contains(blocked)) {
                 await streamedResponse.stream.drain<void>();
-                throw SecurityException('Invalid content type: $contentType. Expected HTML or JSON.');
+                throw Exception('Invalid content type: $contentType. Expected HTML or JSON.');
               }
             }
             
@@ -581,7 +581,7 @@ class UrlRecipeImporter {
             final isAllowed = allowedTypes.any((allowed) => contentType.contains(allowed));
             if (!isAllowed && !contentType.startsWith('text/')) {
               await streamedResponse.stream.drain<void>();
-              throw SecurityException('Invalid content type: $contentType. Expected HTML or JSON.');
+              throw Exception('Invalid content type: $contentType. Expected HTML or JSON.');
             }
           }
           // Note: If Content-Type header is missing, we allow it through
