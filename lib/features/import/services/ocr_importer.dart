@@ -809,7 +809,7 @@ class OcrRecipeImporter {
     final pairedLines = <String>[];
     final standaloneNumberPattern = RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*$');
     final standaloneFoodPattern = RegExp(
-      r'^(lemon|lime|orange|egg|onion|apple|banana|tomato|potato|clove|head|bunch|stalk|rib|sprig|slice|zest|butter|sugar|flour|salt|pepper|garlic|ginger)s?\s*$',
+      r'^(lemon|lime|orange|egg|onion|apple|banana|tomato|potato|clove|head|bunch|stalk|rib|sprig|slice|zest|butter|sugar|flour|salt|pepper|garlic|ginger|corn\s*starch|starch|vanilla|cinnamon)s?\s*$',
       caseSensitive: false,
     );
     
@@ -826,10 +826,13 @@ class OcrRecipeImporter {
       
       // Check if next line is a food word that could pair with current number/fraction
       // This handles "½" + "corn starch" -> "½ corn starch"
+      // Trim whitespace and be permissive - allow letters, spaces, hyphens
+      final nextTrimmed = nextLine.trim();
       final nextCouldBeIngredientName = hasNextLine && 
-          !standaloneNumberPattern.hasMatch(nextLine) &&
-          RegExp(r'^[a-zA-Z][a-zA-Z\s]+$').hasMatch(nextLine) &&
-          nextLine.length > 2 && nextLine.length < 40;
+          nextTrimmed.isNotEmpty &&
+          !standaloneNumberPattern.hasMatch(nextTrimmed) &&
+          RegExp(r'^[a-zA-Z][a-zA-Z\s\-]*$').hasMatch(nextTrimmed) &&
+          nextTrimmed.length > 2 && nextTrimmed.length < 40;
       
       if (isStandaloneFoodWord && nextIsStandaloneNumber) {
         // Pattern A: "lemons" + "2" -> "2 lemons"
@@ -1167,7 +1170,23 @@ class OcrRecipeImporter {
         // Long lines with verbs are probably directions
         final hasActionVerb = RegExp(r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|lift|garnish|serve|shake|muddle|strain|fill)\b', caseSensitive: false).hasMatch(lowerLine);
         
-        if (hasActionVerb) {
+        // Fallback check: lines starting with fractions are almost always ingredients
+        // This catches cases where patterns don't match due to encoding issues
+        final startsWithFraction = RegExp(r'^[½¼¾⅓⅔⅛⅜⅝⅞1-9]').hasMatch(line.trim());
+        
+        if (startsWithFraction && !hasActionVerb && line.length < 60) {
+          // Line starts with a fraction/number and has no action verb - treat as ingredient
+          final parsed = _parseIngredientLine(line);
+          rawIngredients.add(parsed);
+          ingredients.add(Ingredient.create(
+            name: parsed.name,
+            amount: parsed.amount,
+            unit: parsed.unit,
+            preparation: parsed.preparation,
+            alternative: parsed.alternative,
+          ));
+          inIngredients = true;
+        } else if (hasActionVerb) {
           // Line with action verb - treat as direction
           paragraphDirections.add(line);
         } else if (line.length < 60) {
@@ -1489,6 +1508,18 @@ class OcrRecipeImporter {
   String _fixOcrArtifacts(String text) {
     var fixed = text;
     
+    // Normalize Unicode fraction characters to standard forms
+    // OCR may produce various Unicode representations that look the same but are different
+    // U+00BD (½) is the standard, but OCR might produce other variants
+    // Also normalize fraction slash combinations: "1⁄2" (U+2044 fraction slash) -> "½"
+    fixed = fixed.replaceAll('\u2044', '/'); // Fraction slash to regular slash
+    fixed = fixed.replaceAll('\u2215', '/'); // Division slash to regular slash
+    
+    // Normalize composed fractions (superscript/subscript combinations)
+    fixed = fixed.replaceAll('\u00B9\u2044\u2082', '½'); // ¹⁄₂ -> ½
+    fixed = fixed.replaceAll('\u00B9\u2044\u2084', '¼'); // ¹⁄₄ -> ¼
+    fixed = fixed.replaceAll('\u00B3\u2044\u2084', '¾'); // ³⁄₄ -> ¾
+    
     // Fix fraction misreadings:
     // OCR often reads ¼ as "v4", "V4", "/4", "14" (without space)
     // OCR often reads ½ as "v2", "V2", "/2", "12" 
@@ -1616,6 +1647,13 @@ class OcrRecipeImporter {
     // Fix number+unit with no space: "7CUP" -> "7 CUP", "1CUP" -> "1 CUP"
     fixed = fixed.replaceAllMapped(
       RegExp(r'(\d)(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|oz|lb|lbs|pound|pounds|ounce|ounces)\b', caseSensitive: false),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    
+    // Fix fraction directly attached to word: "½corn" -> "½ corn", "¼cup" -> "¼ cup"
+    // This ensures fractions always have space before the ingredient/unit name
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'([½¼¾⅓⅔⅛⅜⅝⅞])([a-zA-Z])'),
       (m) => '${m.group(1)} ${m.group(2)}',
     );
     
