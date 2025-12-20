@@ -62,7 +62,7 @@ Dedicated sections for things that aren't recipes (cheese notes, cellar inventor
 | Windows  | Supported |
 | macOS    | Supported |
 | iOS      | Builds, but untested |
-| Linux    | Planned (OCR/QR disabled) |
+| Linux    | Planned |
 
 Built with Flutter. Web is not currently targeted.
 
@@ -152,7 +152,7 @@ If you want to contribute:
 - Avoid adding features that increase surface area without clear value
 - Read existing patterns before introducing new ones
 
-Issues and pull requests are welcome, but this is not a generic “recipe app” by design.
+Issues and pull requests are welcome, but this is not a generic "recipe app" by design.
 
 ---
 
