@@ -6,16 +6,15 @@ import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
-/// Available timer alarm sounds
+/// Available timer alarm sounds (maps to system sounds)
 enum TimerSound {
-  bell('Bell', 'audio/alarm_bell.mp3'),
-  beep('Beep', 'audio/alarm_beep.mp3'),
-  gentle('Gentle', 'audio/alarm_gentle.mp3');
+  alarm('Alarm'),
+  notification('Notification'),
+  ringtone('Ringtone');
 
   final String displayName;
-  final String assetPath;
 
-  const TimerSound(this.displayName, this.assetPath);
+  const TimerSound(this.displayName);
 }
 
 /// Individual timer data
@@ -318,7 +317,8 @@ class TimerService extends StateNotifier<TimerServiceState> {
     }
   }
 
-  /// Play alarm - uses device's built-in alarm sound
+  /// Play alarm - uses device's built-in sounds
+  /// Note: Sound only works on Android/iOS. Windows/Linux/macOS have no sound.
   Future<void> _playAlarmSound(TimerSound sound) async {
     if (_isAlarmPlaying) return;
     _isAlarmPlaying = true;
@@ -328,13 +328,24 @@ class TimerService extends StateNotifier<TimerServiceState> {
       HapticFeedback.heavyImpact();
     }
     
-    // Play the device's alarm sound - this is loud and designed to get attention
-    // looping: true makes it repeat until stopped
-    FlutterRingtonePlayer().playAlarm(
-      looping: true,
-      volume: 1.0,
-      asAlarm: true, // Uses alarm audio stream (louder, bypasses silent mode on some devices)
-    );
+    // Desktop platforms don't support ringtone playback
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      return;
+    }
+    
+    // Play the selected system sound type
+    final player = FlutterRingtonePlayer();
+    switch (sound) {
+      case TimerSound.alarm:
+        player.playAlarm(looping: true, volume: 1.0, asAlarm: true);
+        break;
+      case TimerSound.notification:
+        player.playNotification(looping: true, volume: 1.0);
+        break;
+      case TimerSound.ringtone:
+        player.playRingtone(looping: true, volume: 1.0);
+        break;
+    }
   }
 
   /// Check if we should stop the alarm sound

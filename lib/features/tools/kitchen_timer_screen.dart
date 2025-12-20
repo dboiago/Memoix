@@ -118,9 +118,9 @@ class _TimerInputDialog extends StatefulWidget {
 class _TimerInputDialogState extends State<_TimerInputDialog> {
   final _labelController = TextEditingController();
   int _hours = 0;
-  int _minutes = 10;
+  int _minutes = 0;
   int _seconds = 0;
-  TimerSound _selectedSound = TimerSound.bell;
+  TimerSound _selectedSound = TimerSound.alarm;
 
   @override
   void dispose() {
