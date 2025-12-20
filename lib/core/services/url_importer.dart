@@ -5490,6 +5490,136 @@ class UrlRecipeImporter {
     String? htmlNotes;
     bool usedStructuredFormat = false; // Flag for higher confidence when using structured recipe plugins
     
+    // Squarespace pattern: h4 headers (INGREDIENTS:, METHOD:) with <p> + <br> content
+    // Detection: sqs-html-content class, squarespace.com in scripts, or known Squarespace sites
+    // Must run early to prevent generic selectors from mismatching content
+    final bodyHtmlCheck = document.outerHtml ?? '';
+    final isSquarespace = bodyHtmlCheck.contains('sqs-html-content') ||
+        bodyHtmlCheck.contains('squarespace.com') ||
+        bodyHtmlCheck.contains('static1.squarespace.com') ||
+        sourceUrl.contains('starchefs.com'); // Known Squarespace site
+    
+    if (isSquarespace) {
+      final h4Elements = document.querySelectorAll('h4');
+      
+      for (final h4 in h4Elements) {
+        final h4Text = (h4.text ?? '').trim().toUpperCase();
+        
+        if (h4Text.contains('INGREDIENTS')) {
+          // Get next sibling - usually a <p> tag with content
+          var sibling = h4.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Stop at next h4 (METHOD section) or h3/h2
+            if (tagName == 'h4' || tagName == 'h3' || tagName == 'h2') {
+              break;
+            }
+            
+            if (tagName == 'p') {
+              // Get the inner HTML to preserve <strong> and <br> tags
+              final innerHtml = sibling.innerHtml ?? '';
+              
+              // Split by <br> and <br/> and <br />
+              final lines = innerHtml.split(RegExp(r'<br\s*/?\s*>', caseSensitive: false));
+              
+              for (var line in lines) {
+                line = line.trim();
+                if (line.isEmpty) continue;
+                
+                // Check for section header: <strong>Section Name:</strong> pattern
+                final strongMatch = RegExp(
+                  r'^<strong[^>]*>([^<]+):?\s*</strong>\s*$',
+                  caseSensitive: false,
+                ).firstMatch(line);
+                
+                if (strongMatch != null) {
+                  // This is a section header
+                  var sectionName = _decodeHtml(strongMatch.group(1)?.trim() ?? '');
+                  if (sectionName.endsWith(':')) {
+                    sectionName = sectionName.substring(0, sectionName.length - 1).trim();
+                  }
+                  if (sectionName.isNotEmpty) {
+                    rawIngredientStrings.add('[$sectionName]');
+                  }
+                } else {
+                  // Regular ingredient line - strip all HTML tags
+                  final text = _decodeHtml(line.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+                  if (text.isNotEmpty) {
+                    rawIngredientStrings.add(text);
+                  }
+                }
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+        if (h4Text.contains('METHOD') || h4Text.contains('DIRECTIONS') || h4Text.contains('INSTRUCTIONS')) {
+          // Get next sibling - usually a <p> tag with content
+          var sibling = h4.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Stop at next h4 or h3/h2
+            if (tagName == 'h4' || tagName == 'h3' || tagName == 'h2') {
+              break;
+            }
+            
+            if (tagName == 'p') {
+              final innerHtml = sibling.innerHtml ?? '';
+              
+              // Split by <br> tags
+              final lines = innerHtml.split(RegExp(r'<br\s*/?\s*>', caseSensitive: false));
+              
+              for (var line in lines) {
+                line = line.trim();
+                if (line.isEmpty) continue;
+                
+                // Check for section header: <strong>For the Section:</strong> pattern
+                final strongMatch = RegExp(
+                  r'^<strong[^>]*>([^<]+):?\s*</strong>\s*$',
+                  caseSensitive: false,
+                ).firstMatch(line);
+                
+                if (strongMatch != null) {
+                  // This is a direction section header
+                  var sectionName = _decodeHtml(strongMatch.group(1)?.trim() ?? '');
+                  if (sectionName.endsWith(':')) {
+                    sectionName = sectionName.substring(0, sectionName.length - 1).trim();
+                  }
+                  if (sectionName.isNotEmpty) {
+                    rawDirections.add('[${_stripForThePrefix(sectionName)}]');
+                  }
+                } else {
+                  // Regular direction step - strip all HTML tags
+                  final text = _decodeHtml(line.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+                  if (text.isNotEmpty) {
+                    rawDirections.add(text);
+                  }
+                }
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+      }
+      
+      // Extract yield from "Yield: X servings" text
+      final bodyText = document.body?.text ?? '';
+      final yieldMatch = RegExp(r'Yield:\s*(\d+)\s*(?:servings?|portions?)?', caseSensitive: false).firstMatch(bodyText);
+      if (yieldMatch != null) {
+        yield = yieldMatch.group(1);
+      }
+      
+      // If we found content, skip all other handlers
+      if (rawIngredientStrings.isNotEmpty || rawDirections.isNotEmpty) {
+        usedStructuredFormat = true;
+      }
+    }
+    
     // Check for Shopify/Lyres-style embedded HTML in JSON (recipe-info divs in product description)
     // These sites embed HTML inside JSON strings with unicode escaping (\u003c for <)
     var bodyHtml = document.outerHtml;
@@ -6010,6 +6140,130 @@ class UrlRecipeImporter {
       // Format total minutes if we found any time values
       if (totalMinutes > 0 && timing == null) {
         timing = _formatMinutes(totalMinutes);
+      }
+    }
+    
+    // Generic h4 + <p><br> pattern fallback: For non-Squarespace sites with similar structure
+    // (Squarespace is handled earlier with explicit detection)
+    // Sections marked with <strong>Section Name:</strong>
+    if (rawIngredientStrings.isEmpty || rawDirections.isEmpty) {
+      // Look for h4 elements containing INGREDIENTS: or METHOD:
+      final h4Elements = document.querySelectorAll('h4');
+      
+      for (final h4 in h4Elements) {
+        final h4Text = (h4.text ?? '').trim().toUpperCase();
+        
+        if (h4Text.contains('INGREDIENTS') && rawIngredientStrings.isEmpty) {
+          // Get next sibling - usually a <p> tag with content
+          var sibling = h4.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Stop at next h4 (METHOD section) or h3/h2
+            if (tagName == 'h4' || tagName == 'h3' || tagName == 'h2') {
+              break;
+            }
+            
+            if (tagName == 'p') {
+              // Get the inner HTML to preserve <strong> and <br> tags
+              final innerHtml = sibling.innerHtml ?? '';
+              
+              // Split by <br> and <br/> and <br />
+              final lines = innerHtml.split(RegExp(r'<br\s*/?\s*>', caseSensitive: false));
+              
+              for (var line in lines) {
+                // Decode HTML entities and strip remaining tags
+                line = line.trim();
+                if (line.isEmpty) continue;
+                
+                // Check for section header: <strong>Section Name:</strong> pattern
+                final strongMatch = RegExp(
+                  r'^<strong[^>]*>([^<]+):?\s*</strong>\s*$',
+                  caseSensitive: false,
+                ).firstMatch(line);
+                
+                if (strongMatch != null) {
+                  // This is a section header
+                  var sectionName = _decodeHtml(strongMatch.group(1)?.trim() ?? '');
+                  // Remove trailing colon if present
+                  if (sectionName.endsWith(':')) {
+                    sectionName = sectionName.substring(0, sectionName.length - 1).trim();
+                  }
+                  if (sectionName.isNotEmpty) {
+                    rawIngredientStrings.add('[$sectionName]');
+                  }
+                } else {
+                  // Regular ingredient line - strip all HTML tags
+                  final text = _decodeHtml(line.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+                  if (text.isNotEmpty) {
+                    rawIngredientStrings.add(text);
+                  }
+                }
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+        if ((h4Text.contains('METHOD') || h4Text.contains('DIRECTIONS') || h4Text.contains('INSTRUCTIONS')) && rawDirections.isEmpty) {
+          // Get next sibling - usually a <p> tag with content
+          var sibling = h4.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Stop at next h4 or h3/h2 (like YIELD section)
+            if (tagName == 'h4' || tagName == 'h3' || tagName == 'h2') {
+              break;
+            }
+            
+            if (tagName == 'p') {
+              final innerHtml = sibling.innerHtml ?? '';
+              
+              // Split by <br> tags
+              final lines = innerHtml.split(RegExp(r'<br\s*/?\s*>', caseSensitive: false));
+              
+              for (var line in lines) {
+                line = line.trim();
+                if (line.isEmpty) continue;
+                
+                // Check for section header: <strong>For the Section:</strong> pattern
+                final strongMatch = RegExp(
+                  r'^<strong[^>]*>([^<]+):?\s*</strong>\s*$',
+                  caseSensitive: false,
+                ).firstMatch(line);
+                
+                if (strongMatch != null) {
+                  // This is a direction section header
+                  var sectionName = _decodeHtml(strongMatch.group(1)?.trim() ?? '');
+                  if (sectionName.endsWith(':')) {
+                    sectionName = sectionName.substring(0, sectionName.length - 1).trim();
+                  }
+                  if (sectionName.isNotEmpty) {
+                    rawDirections.add('[${_stripForThePrefix(sectionName)}]');
+                  }
+                } else {
+                  // Regular direction step - strip all HTML tags
+                  final text = _decodeHtml(line.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+                  if (text.isNotEmpty) {
+                    rawDirections.add(text);
+                  }
+                }
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+      }
+      
+      // Extract yield from "Yield: X servings" text anywhere in page
+      if (yield == null) {
+        final bodyText = document.body?.text ?? '';
+        final yieldMatch = RegExp(r'Yield:\s*(\d+)\s*(?:servings?|portions?)?', caseSensitive: false).firstMatch(bodyText);
+        if (yieldMatch != null) {
+          yield = yieldMatch.group(1);
+        }
       }
     }
     
