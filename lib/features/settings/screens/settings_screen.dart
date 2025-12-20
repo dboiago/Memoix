@@ -310,6 +310,24 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
           ),
+          // TODO(release): Remove this menu item before public release - dev/maintenance only
+          ListTile(
+            leading: const Icon(Icons.category),
+            title: const Text('Export by Course'),
+            subtitle: const Text('Separate JSON files per course (all recipes)'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () async {
+              try {
+                final service = ref.read(recipeBackupServiceProvider);
+                final count = await service.exportByCourse();
+                if (count != null) {
+                  MemoixSnackBar.showSuccess('Exported $count course files');
+                }
+              } catch (e) {
+                MemoixSnackBar.showError('Export failed: $e');
+              }
+            },
+          ),
           ListTile(
             leading: const Icon(Icons.file_upload),
             title: const Text('Import Recipes'),

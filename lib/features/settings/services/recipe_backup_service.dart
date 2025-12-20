@@ -6,6 +6,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:intl/intl.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:collection/collection.dart';
 
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -151,6 +152,84 @@ class RecipeBackupService {
     }
 
     return imported;
+  }
+
+  /// Export all recipes grouped by course to separate JSON files
+  /// Returns the number of files exported, or null if cancelled
+  ///
+  // TODO(release): Remove this method before public release - dev/maintenance only
+  Future<int?> exportByCourse() async {
+    // Get ALL recipes including Memoix collection
+    final recipes = await _repository.getAllRecipes();
+
+    if (recipes.isEmpty) {
+      throw Exception('No recipes to export');
+    }
+
+    // Group recipes by course
+    final grouped = groupBy(recipes, (Recipe r) => r.course?.toLowerCase() ?? 'uncategorized');
+
+    // On desktop, use folder picker
+    if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
+      final outputDir = await FilePicker.platform.getDirectoryPath(
+        dialogTitle: 'Select folder for course JSON files',
+      );
+
+      if (outputDir == null) {
+        return null; // User cancelled
+      }
+
+      int filesWritten = 0;
+      for (final entry in grouped.entries) {
+        final course = entry.key;
+        final courseRecipes = entry.value;
+
+        // Sort by name for consistency
+        courseRecipes.sort((a, b) => a.name.compareTo(b.name));
+
+        // Convert to JSON array (matching existing format)
+        final jsonList = courseRecipes.map((r) => r.toJson()).toList();
+        final jsonString = const JsonEncoder.withIndent('  ').convert(jsonList);
+
+        final file = File('$outputDir/$course.json');
+        await file.writeAsString(jsonString);
+        filesWritten++;
+      }
+
+      return filesWritten;
+    }
+
+    // On mobile, create files in documents and share as zip or individual files
+    final directory = await getApplicationDocumentsDirectory();
+    final exportDir = Directory('${directory.path}/memoix_export');
+    if (await exportDir.exists()) {
+      await exportDir.delete(recursive: true);
+    }
+    await exportDir.create();
+
+    final files = <XFile>[];
+    for (final entry in grouped.entries) {
+      final course = entry.key;
+      final courseRecipes = entry.value;
+
+      courseRecipes.sort((a, b) => a.name.compareTo(b.name));
+
+      final jsonList = courseRecipes.map((r) => r.toJson()).toList();
+      final jsonString = const JsonEncoder.withIndent('  ').convert(jsonList);
+
+      final file = File('${exportDir.path}/$course.json');
+      await file.writeAsString(jsonString);
+      files.add(XFile(file.path));
+    }
+
+    // Share all files
+    await Share.shareXFiles(
+      files,
+      subject: 'Memoix Recipe Export by Course',
+      text: 'Exported ${recipes.length} recipes across ${files.length} course files',
+    );
+
+    return files.length;
   }
 }
 
