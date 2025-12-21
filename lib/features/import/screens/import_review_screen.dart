@@ -1383,6 +1383,19 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       }
     }
 
+    // Get the header image - first from imagePaths, fallback to imageUrl
+    String? headerImage;
+    List<String>? stepImages;
+    if (widget.importResult.imagePaths != null &&
+        widget.importResult.imagePaths!.isNotEmpty) {
+      headerImage = widget.importResult.imagePaths!.first;
+      if (widget.importResult.imagePaths!.length > 1) {
+        stepImages = widget.importResult.imagePaths!.sublist(1);
+      }
+    } else if (widget.importResult.imageUrl != null) {
+      headerImage = widget.importResult.imageUrl;
+    }
+
     return ModernistRecipe.create(
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
@@ -1403,6 +1416,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       directions: directions,
       notes: widget.importResult.notes,
       sourceUrl: widget.importResult.sourceUrl,
+      headerImage: headerImage,
+      stepImages: stepImages,
       source: ModernistSource.imported,
     );
   }
@@ -1530,6 +1545,19 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       }
     }
 
+    // Get the header image - first from imagePaths, fallback to imageUrl
+    String? headerImage;
+    List<String>? stepImages;
+    if (widget.importResult.imagePaths != null &&
+        widget.importResult.imagePaths!.isNotEmpty) {
+      headerImage = widget.importResult.imagePaths!.first;
+      if (widget.importResult.imagePaths!.length > 1) {
+        stepImages = widget.importResult.imagePaths!.sublist(1);
+      }
+    } else if (widget.importResult.imageUrl != null) {
+      headerImage = widget.importResult.imageUrl;
+    }
+
     return SmokingRecipe.create(
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
@@ -1542,7 +1570,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       seasonings: seasonings,
       directions: directions,
       notes: widget.importResult.notes,
-      headerImage: widget.importResult.imageUrl,
+      headerImage: headerImage,
+      stepImages: stepImages,
       source: SmokingSource.imported,
     );
   }

@@ -8,9 +8,13 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../../core/utils/suggestions.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../modernist/models/modernist_recipe.dart';
+import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 
@@ -302,8 +306,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                   )
                   .toList(),
               onChanged: (value) {
-                if (value != null) {
-                  setState(() => _selectedCourse = value);
+                if (value != null && value != _selectedCourse) {
+                  _handleCourseChange(value);
                 }
               },
             ),
@@ -1661,6 +1665,165 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     } catch (e) {
       debugPrint('Error picking image: $e');
     }
+  }
+
+  /// Handle course change - if changing to a non-Smoking course, offer to switch screens
+  Future<void> _handleCourseChange(String newCourse) async {
+    final lowerCourse = newCourse.toLowerCase();
+    
+    // If staying in Smoking, just update the value
+    if (lowerCourse == 'smoking') {
+      setState(() => _selectedCourse = newCourse);
+      return;
+    }
+    
+    // If switching to Modernist, convert and navigate
+    if (lowerCourse == 'modernist') {
+      final shouldSwitch = await _showCourseChangeDialog(newCourse, 'Modernist');
+      if (shouldSwitch == true && mounted) {
+        final modernistRecipe = _buildModernistRecipeFromCurrent(newCourse);
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => ModernistEditScreen(importedRecipe: modernistRecipe),
+          ),
+        );
+      }
+      return;
+    }
+    
+    // For all other courses, convert to regular Recipe and navigate
+    final shouldSwitch = await _showCourseChangeDialog(newCourse, 'standard recipe');
+    if (shouldSwitch == true && mounted) {
+      final recipe = _buildRecipeFromCurrent(newCourse);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
+        ),
+      );
+    }
+  }
+  
+  /// Show confirmation dialog for course change
+  Future<bool?> _showCourseChangeDialog(String newCourse, String targetType) {
+    return showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Change Recipe Type?'),
+        content: Text(
+          'Changing to "${Course.displayNameFromSlug(newCourse)}" will move this recipe to the $targetType editor. '
+          'Some Smoking-specific fields (wood type, temperature, item) may not be available.\n\n'
+          'Continue?',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Continue'),
+          ),
+        ],
+      ),
+    );
+  }
+  
+  /// Build a regular Recipe from current Smoking form data
+  Recipe _buildRecipeFromCurrent(String course) {
+    // Convert seasonings/ingredients to regular Ingredient format
+    final ingredients = <Ingredient>[];
+    
+    // Use seasonings for Pit Notes, ingredients for Recipe type
+    final sourceList = _selectedType == SmokingType.pitNote ? _seasonings : _ingredients;
+    
+    for (final entry in sourceList) {
+      if (entry.nameController.text.trim().isEmpty) continue;
+      ingredients.add(Ingredient()
+        ..name = entry.nameController.text.trim()
+        ..amount = entry.amountController.text.trim().isEmpty 
+            ? null 
+            : entry.amountController.text.trim());
+    }
+    
+    // Build directions
+    final directions = _directionControllers
+        .map((c) => c.text.trim())
+        .where((d) => d.isNotEmpty)
+        .toList();
+    
+    // Include smoking-specific info in notes
+    var notes = _notesController.text.trim();
+    final smokingInfo = <String>[];
+    if (_woodController.text.trim().isNotEmpty) {
+      smokingInfo.add('Wood: ${_woodController.text.trim()}');
+    }
+    if (_temperatureController.text.trim().isNotEmpty) {
+      smokingInfo.add('Temperature: ${_temperatureController.text.trim()}');
+    }
+    if (_itemController.text.trim().isNotEmpty) {
+      smokingInfo.add('Item: ${_itemController.text.trim()}');
+    }
+    if (smokingInfo.isNotEmpty) {
+      final smokingNotes = '**Smoking Info**\n${smokingInfo.join('\n')}';
+      notes = notes.isEmpty ? smokingNotes : '$smokingNotes\n\n$notes';
+    }
+    
+    return Recipe()
+      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
+      ..name = _nameController.text.trim()
+      ..course = course
+      ..serves = _servesController.text.trim().isEmpty ? null : _servesController.text.trim()
+      ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
+      ..ingredients = ingredients
+      ..directions = directions
+      ..notes = notes.isEmpty ? null : notes
+      ..headerImage = _imagePath
+      ..stepImages = _stepImages
+      ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
+      ..pairedRecipeIds = _pairedRecipeIds
+      ..source = RecipeSource.personal
+      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
+      ..updatedAt = DateTime.now();
+  }
+  
+  /// Build a ModernistRecipe from current Smoking form data
+  ModernistRecipe _buildModernistRecipeFromCurrent(String course) {
+    // Convert seasonings/ingredients to ModernistIngredient format
+    final ingredients = <ModernistIngredient>[];
+    
+    final sourceList = _selectedType == SmokingType.pitNote ? _seasonings : _ingredients;
+    
+    for (final entry in sourceList) {
+      if (entry.nameController.text.trim().isEmpty) continue;
+      ingredients.add(ModernistIngredient.create(
+        name: entry.nameController.text.trim(),
+        amount: entry.amountController.text.trim().isEmpty 
+            ? null 
+            : entry.amountController.text.trim(),
+      ));
+    }
+    
+    // Build directions
+    final directions = _directionControllers
+        .map((c) => c.text.trim())
+        .where((d) => d.isNotEmpty)
+        .toList();
+    
+    return ModernistRecipe.create(
+      uuid: _existingRecipe?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      course: course,
+      serves: _servesController.text.trim().isEmpty ? null : _servesController.text.trim(),
+      time: _timeController.text.trim().isEmpty ? null : _timeController.text.trim(),
+      ingredients: ingredients,
+      directions: directions,
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      headerImage: _imagePath,
+      stepImages: _stepImages,
+      stepImageMap: _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList(),
+      pairedRecipeIds: _pairedRecipeIds,
+      source: ModernistSource.personal,
+    );
   }
 
   Future<void> _saveRecipe() async {
