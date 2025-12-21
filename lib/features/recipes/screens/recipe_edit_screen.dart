@@ -928,25 +928,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               onChanged: (value) {
                 if (value != null) {
                   final previousCourse = _selectedCourse;
-                  setState(() => _selectedCourse = value);
-                  
-                  // If switching TO salad from non-salad with empty ingredients, add Dressing section
-                  if (value == 'salad' && previousCourse != 'salad') {
-                    final hasOnlyEmptyRows = _ingredientRows.every((row) => 
-                        row.nameController.text.isEmpty && 
-                        row.amountController.text.isEmpty,);
-                    if (hasOnlyEmptyRows && _ingredientRows.length <= 1) {
-                      // Clear and add dressing section
-                      for (final row in _ingredientRows) {
-                        row.dispose();
-                      }
-                      _ingredientRows.clear();
-                      _addIngredientRow();
-                      _addIngredientRow(name: 'Dressing', isSection: true);
-                      _addIngredientRow();
-                      setState(() {});
-                    }
-                  }
+                  _handleCourseChange(value, previousCourse);
                 }
               },
             ),
@@ -1388,6 +1370,156 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ),
       ),
     );
+  }
+
+  /// Handle course change - navigate to appropriate editor for specialized courses
+  void _handleCourseChange(String newCourse, String previousCourse) {
+    final lowerCourse = newCourse.toLowerCase();
+    
+    // If switching to Modernist, convert and navigate immediately
+    if (lowerCourse == 'modernist') {
+      final modernistRecipe = _buildModernistRecipeFromCurrent(newCourse);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => ModernistEditScreen(importedRecipe: modernistRecipe),
+        ),
+      );
+      return;
+    }
+    
+    // If switching to Smoking, convert and navigate immediately
+    if (lowerCourse == 'smoking') {
+      final smokingRecipe = _buildSmokingRecipeFromCurrent(newCourse);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => SmokingEditScreen(importedRecipe: smokingRecipe),
+        ),
+      );
+      return;
+    }
+    
+    // For other courses, just update state and handle special cases
+    setState(() => _selectedCourse = newCourse);
+    
+    // If switching TO salad from non-salad with empty ingredients, add Dressing section
+    if (newCourse == 'salad' && previousCourse != 'salad') {
+      final hasOnlyEmptyRows = _ingredientRows.every((row) => 
+          row.nameController.text.isEmpty && 
+          row.amountController.text.isEmpty,);
+      if (hasOnlyEmptyRows && _ingredientRows.length <= 1) {
+        // Clear and add dressing section
+        for (final row in _ingredientRows) {
+          row.dispose();
+        }
+        _ingredientRows.clear();
+        _addIngredientRow();
+        _addIngredientRow(name: 'Dressing', isSection: true);
+        _addIngredientRow();
+        setState(() {});
+      }
+    }
+  }
+  
+  /// Build a ModernistRecipe from current Recipe form data
+  ModernistRecipe _buildModernistRecipeFromCurrent(String course) {
+    // Convert recipe ingredients to ModernistIngredient format
+    final ingredients = <ModernistIngredient>[];
+    String? currentSection;
+    
+    for (final row in _ingredientRows) {
+      if (row.nameController.text.isEmpty) continue;
+      
+      if (row.isSection) {
+        currentSection = row.nameController.text.trim();
+      } else {
+        // Parse amount and unit
+        final amountText = row.amountController.text.trim();
+        String? amount;
+        String? unit;
+        if (amountText.isNotEmpty) {
+          final normalized = _normalizeFractions(amountText);
+          final parts = normalized.split(RegExp(r'\s+'));
+          if (parts.length >= 2) {
+            amount = parts.first;
+            unit = parts.sublist(1).join(' ');
+          } else {
+            amount = normalized;
+          }
+        }
+        
+        ingredients.add(ModernistIngredient.create(
+          name: row.nameController.text.trim(),
+          amount: amount,
+          unit: unit,
+          notes: row.notesController.text.trim().isEmpty 
+              ? null 
+              : row.notesController.text.trim(),
+          section: currentSection,
+        ));
+      }
+    }
+    
+    // Build directions
+    final directions = _directionRows
+        .where((row) => row.controller.text.trim().isNotEmpty)
+        .map((row) => row.controller.text.trim())
+        .toList();
+    
+    return ModernistRecipe()
+      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
+      ..name = _nameController.text.trim()
+      ..course = course
+      ..type = ModernistType.recipe
+      ..serves = _servesController.text.trim().isEmpty ? null : _servesController.text.trim()
+      ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
+      ..ingredients = ingredients
+      ..directions = directions
+      ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
+      ..headerImage = _imagePaths.isNotEmpty ? _imagePaths.first : null
+      ..stepImages = _stepImages
+      ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
+      ..pairedRecipeIds = _pairedRecipeIds
+      ..sourceUrl = _existingRecipe?.sourceUrl
+      ..source = ModernistSource.personal
+      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
+      ..updatedAt = DateTime.now();
+  }
+  
+  /// Build a SmokingRecipe from current Recipe form data
+  SmokingRecipe _buildSmokingRecipeFromCurrent(String course) {
+    // Convert recipe ingredients to SmokingSeasoning format
+    final seasonings = <SmokingSeasoning>[];
+    
+    for (final row in _ingredientRows) {
+      if (row.nameController.text.isEmpty || row.isSection) continue;
+      seasonings.add(SmokingSeasoning()
+        ..name = row.nameController.text.trim()
+        ..amount = row.amountController.text.trim().isEmpty 
+            ? null 
+            : row.amountController.text.trim());
+    }
+    
+    // Build directions
+    final directions = _directionRows
+        .where((row) => row.controller.text.trim().isNotEmpty)
+        .map((row) => row.controller.text.trim())
+        .toList();
+    
+    return SmokingRecipe()
+      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
+      ..name = _nameController.text.trim()
+      ..course = course
+      ..type = SmokingType.recipe
+      ..seasonings = seasonings
+      ..directions = directions
+      ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
+      ..headerImage = _imagePaths.isNotEmpty ? _imagePaths.first : null
+      ..stepImages = _stepImages
+      ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
+      ..pairedRecipeIds = _pairedRecipeIds
+      ..source = SmokingSource.personal
+      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
+      ..updatedAt = DateTime.now();
   }
 
   Future<void> _saveRecipe() async {
