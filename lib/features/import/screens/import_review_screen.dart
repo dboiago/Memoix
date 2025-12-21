@@ -317,71 +317,64 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   Widget _buildConfidenceCard(ThemeData theme, RecipeImportResult result) {
     final confidence = result.overallConfidence;
-    final Color cardColor;
-    final Color iconColor;
     final IconData icon;
     final String message;
-    
-    // Use dark text on light container backgrounds - adapts to theme brightness
-    final bool isDark = theme.brightness == Brightness.dark;
-    final Color textOnContainer = isDark 
-        ? theme.colorScheme.onSurface 
-        : theme.colorScheme.onSurface.withOpacity(0.85);
 
     if (confidence >= 0.8) {
-      cardColor = MemoixColors.successContainer;
-      iconColor = MemoixColors.success;
       icon = Icons.check_circle;
       message = 'High confidence import! Review and save.';
     } else if (confidence >= 0.5) {
-      cardColor = MemoixColors.warningContainer;
-      iconColor = MemoixColors.warning;
-      icon = Icons.warning;
+      icon = Icons.info_outline;
       message = 'Some fields need your attention.';
     } else {
-      cardColor = MemoixColors.errorContainer;
-      iconColor = MemoixColors.error;
-      icon = Icons.error_outline;
+      icon = Icons.help_outline;
       message = 'Low confidence. Please review all fields.';
     }
 
     return Card(
-      color: cardColor,
+      color: theme.colorScheme.surfaceContainerHighest,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Row(
           children: [
-            Icon(icon, size: 32, color: iconColor),
+            Icon(icon, size: 32, color: theme.colorScheme.primary),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(message, style: theme.textTheme.titleSmall?.copyWith(
-                    color: textOnContainer,
+                    color: theme.colorScheme.onSurface,
                   )),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: 8),
                   LinearProgressIndicator(
                     value: confidence,
-                    backgroundColor: textOnContainer.withOpacity(0.2),
-                    color: iconColor,
+                    backgroundColor: theme.colorScheme.outline.withOpacity(0.3),
+                    color: theme.colorScheme.primary,
                   ),
-                  const SizedBox(height: 4),
-                  Text(
-                    'Confidence: ${(confidence * 100).toStringAsFixed(0)}%',
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: textOnContainer,
-                    ),
-                  ),
-                  if (result.fieldsNeedingAttention.isNotEmpty) ...[
-                    const SizedBox(height: 4),
-                    Text(
-                      'Check: ${result.fieldsNeedingAttention.join(", ")}',
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: textOnContainer.withOpacity(0.7),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Text(
+                        'Confidence: ${(confidence * 100).toStringAsFixed(0)}%',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: theme.colorScheme.onSurface,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                    ),
-                  ],
+                      if (result.fieldsNeedingAttention.isNotEmpty) ...[
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Text(
+                            'Review: ${result.fieldsNeedingAttention.join(", ")}',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
                 ],
               ),
             ),
