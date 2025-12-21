@@ -7396,8 +7396,10 @@ class UrlRecipeImporter {
     final ingredientsConfidence = filteredIngredientStrings.isNotEmpty 
         ? (ingredients.length / filteredIngredientStrings.length) * baseConfidence 
         : 0.0;
+    // Directions confidence: structured = 0.85, HTML with good extraction = 0.75, otherwise 0.6
+    // Use rawDirections.length as proxy - if we have 3+ steps, it's likely a complete recipe
     final directionsConfidence = rawDirections.isNotEmpty 
-        ? (usedStructuredFormat ? 0.85 : 0.6) 
+        ? (usedStructuredFormat ? 0.85 : (rawDirections.length >= 3 ? 0.75 : 0.6)) 
         : 0.0;
 
     // Create raw ingredient data, filtering out empty entries

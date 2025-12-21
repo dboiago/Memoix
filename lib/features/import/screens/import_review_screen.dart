@@ -322,8 +322,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     final IconData icon;
     final String message;
     
-    // Use dark text/icons on light container backgrounds (works in both themes)
-    const Color textOnContainer = Color(0xFF4B5563); // Charcoal gray
+    // Use dark text on light container backgrounds - adapts to theme brightness
+    final bool isDark = theme.brightness == Brightness.dark;
+    final Color textOnContainer = isDark 
+        ? theme.colorScheme.onSurface 
+        : theme.colorScheme.onSurface.withOpacity(0.85);
 
     if (confidence >= 0.8) {
       cardColor = MemoixColors.successContainer;
