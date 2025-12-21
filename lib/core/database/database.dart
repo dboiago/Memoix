@@ -93,6 +93,6 @@ class MemoixDatabase {
     await db.writeTxn(() async {
       await db.clear();
     });
-    await _seedDefaultCategories();
+    await _seedDefaultCourses();
   }
 }

@@ -31,8 +31,8 @@ void main() async {
   // Initialize local database
   await MemoixDatabase.initialize();
   
-  // Refresh categories to apply any order/name updates
-  await MemoixDatabase.refreshCategories();
+  // Refresh courses to apply any order/name updates
+  await MemoixDatabase.refreshCourses();
 
   // Note: Initial recipe sync now happens in background after app starts
   // See _DeepLinkWrapper in app/app.dart
