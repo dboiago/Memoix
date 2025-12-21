@@ -911,7 +911,8 @@ class UrlRecipeImporter {
                                 document.querySelector('.structured-ingredients__list-heading') != null || // Serious Eats
                                 document.querySelector('.ingredient-section') != null || // King Arthur Baking
                                 document.querySelector('.tasty-recipes-ingredients h4') != null || // Tasty Recipes plugin
-                                document.querySelector('.tasty-recipes-ingredients-body h4') != null; // Tasty Recipes (alt)
+                                document.querySelector('.tasty-recipes-ingredients-body h4') != null || // Tasty Recipes (alt)
+                                document.querySelector('.content-info h3.wp-block-heading') != null; // sogoodmagazine.com
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -6438,6 +6439,78 @@ class UrlRecipeImporter {
       }
     }
     
+    // Try WordPress block heading pattern (sogoodmagazine.com style):
+    // h3.wp-block-heading followed by ul (ingredients), then p (directions)
+    // The content is within a .content-info section
+    if (rawIngredientStrings.isEmpty) {
+      final contentInfo = document.querySelector('.content-info');
+      if (contentInfo != null) {
+        final wpBlockHeadings = contentInfo.querySelectorAll('h3.wp-block-heading');
+        if (wpBlockHeadings.isNotEmpty) {
+          usedStructuredFormat = true;
+          
+          for (final heading in wpBlockHeadings) {
+            final sectionName = _decodeHtml((heading.text ?? '').trim());
+            if (sectionName.isEmpty) continue;
+            
+            // Skip "Assembly" section (directions only) and generic headings
+            final lowerSection = sectionName.toLowerCase();
+            if (lowerSection == 'assembly' || 
+                lowerSection == 'others' ||
+                lowerSection.contains('discover') ||
+                lowerSection.contains('related')) {
+              continue;
+            }
+            
+            // Look for ul sibling after this heading (may skip &nbsp; and hr)
+            var sibling = heading.nextElementSibling;
+            while (sibling != null) {
+              final tagName = sibling.localName?.toLowerCase() ?? '';
+              
+              // Skip separators and whitespace-only elements
+              if (tagName == 'hr') {
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              if (tagName == 'p') {
+                // Check if p is just whitespace/nbsp
+                final pText = (sibling.text ?? '').trim();
+                if (pText.isEmpty || pText == '\u00a0') {
+                  sibling = sibling.nextElementSibling;
+                  continue;
+                }
+                // Otherwise it's directions, stop looking for ul
+                break;
+              }
+              
+              if (tagName == 'ul') {
+                // Found the ingredient list for this section
+                final items = sibling.querySelectorAll('li');
+                if (items.isNotEmpty) {
+                  // Add section header
+                  rawIngredientStrings.add('[$sectionName]');
+                  for (final item in items) {
+                    final text = _decodeHtml((item.text ?? '').trim());
+                    if (text.isNotEmpty) {
+                      rawIngredientStrings.add(text);
+                    }
+                  }
+                }
+                break;
+              }
+              
+              // Stop at next heading
+              if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+                break;
+              }
+              
+              sibling = sibling.nextElementSibling;
+            }
+          }
+        }
+      }
+    }
+    
     // If Cooked format didn't find ingredients, try schema.org Microdata format
     // (distinct from JSON-LD - uses itemtype/itemprop attributes in HTML)
     if (rawIngredientStrings.isEmpty) {
@@ -6984,6 +7057,71 @@ class UrlRecipeImporter {
         final text = _decodeHtml((e.text ?? '').trim());
         if (text.isNotEmpty) {
           rawDirections.add(text);
+        }
+      }
+    }
+    
+    // Try WordPress block heading direction pattern (sogoodmagazine.com style):
+    // p elements after ul (ingredients) within .content-info section
+    // Structure: h3 → ul (ingredients) → p (directions) → hr → repeat
+    if (rawDirections.isEmpty) {
+      final contentInfo = document.querySelector('.content-info');
+      if (contentInfo != null) {
+        final wpBlockHeadings = contentInfo.querySelectorAll('h3.wp-block-heading');
+        if (wpBlockHeadings.isNotEmpty) {
+          for (final heading in wpBlockHeadings) {
+            final sectionName = _decodeHtml((heading.text ?? '').trim());
+            if (sectionName.isEmpty) continue;
+            
+            final lowerSection = sectionName.toLowerCase();
+            // Skip non-recipe headings
+            if (lowerSection.contains('discover') || lowerSection.contains('related')) {
+              continue;
+            }
+            
+            // Find the ul (ingredients) then get p elements after it
+            var sibling = heading.nextElementSibling;
+            var foundUl = false;
+            
+            while (sibling != null) {
+              final tagName = sibling.localName?.toLowerCase() ?? '';
+              
+              // Skip hr separators and whitespace-only elements
+              if (tagName == 'hr') {
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              
+              if (tagName == 'ul') {
+                // Skip the ingredient list, mark that we found it
+                foundUl = true;
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              
+              // After finding ul, extract p elements as directions until next h3/h2/hr
+              if (foundUl && tagName == 'p') {
+                final text = _decodeHtml((sibling.text ?? '').trim());
+                // Skip whitespace-only paragraphs
+                if (text.isNotEmpty && text != '\u00a0' && text.length > 15) {
+                  rawDirections.add(text);
+                }
+              }
+              
+              // Skip figure elements (images between directions)
+              if (tagName == 'figure') {
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              
+              // Stop at next heading or horizontal rule (new section)
+              if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+                break;
+              }
+              
+              sibling = sibling.nextElementSibling;
+            }
+          }
         }
       }
     }
@@ -9824,6 +9962,37 @@ class UrlRecipeImporter {
       // Skip if this looks like a step number prefix (e.g., "Step 1" with content in divs)
       final looksLikeStepNumber = RegExp(r'^Step\s*\d+$', caseSensitive: false).hasMatch(stepTitle);
       
+      // Check if this h3 is followed by a ul (ingredient section) - skip ingredient sections
+      // This handles sogoodmagazine.com style where h3 → ul (ingredients) → p (directions)
+      var checkSibling = heading.nextElementSibling;
+      bool isIngredientSection = false;
+      while (checkSibling != null) {
+        final checkTag = checkSibling.localName?.toLowerCase() ?? '';
+        // Skip whitespace/hr elements
+        if (checkTag == 'hr') {
+          checkSibling = checkSibling.nextElementSibling;
+          continue;
+        }
+        if (checkTag == 'p') {
+          final pText = (checkSibling.text ?? '').trim();
+          if (pText.isEmpty || pText == '\u00a0') {
+            checkSibling = checkSibling.nextElementSibling;
+            continue;
+          }
+          // Non-empty p means this is a directions section
+          break;
+        }
+        if (checkTag == 'ul') {
+          // This h3 is followed by ul - it's an ingredient section header
+          isIngredientSection = true;
+          break;
+        }
+        break; // Unknown element, stop checking
+      }
+      
+      // Skip ingredient section headers - only process direction sections
+      if (isIngredientSection) continue;
+      
       // For non-first sections, add the section title as its own direction step
       if (!isFirstSection && !looksLikeStepNumber) {
         // Add section header as a step (like "Create Ice Cream Base")
@@ -9840,9 +10009,22 @@ class UrlRecipeImporter {
         // Stop at the next step heading
         if (tagName == 'h3' || tagName == 'h2') break;
         
-        // First try to extract nested paragraphs/divs
+        // Skip hr separators and whitespace-only elements
+        if (tagName == 'hr') {
+          nextElement = nextElement.nextElementSibling;
+          continue;
+        }
+        
+        // Skip ul elements - these are typically ingredient lists, not directions
+        // Directions in recipe sites are usually in p, ol, or div elements
+        if (tagName == 'ul') {
+          nextElement = nextElement.nextElementSibling;
+          continue;
+        }
+        
+        // First try to extract nested paragraphs/divs from ol (ordered instruction lists)
         bool foundNested = false;
-        if (tagName == 'div' || tagName == 'ul' || tagName == 'ol') {
+        if (tagName == 'div' || tagName == 'ol') {
           final nestedDivs = nextElement.querySelectorAll('div, p, li');
           for (final nested in nestedDivs) {
             final text = _decodeHtml(nested.text?.trim() ?? '');
@@ -9885,7 +10067,7 @@ class UrlRecipeImporter {
             }
           }
         } else if (!foundNested && tagName == 'li') {
-          // Handle list items
+          // Handle list items (from ol only, since we skip ul)
           final text = _decodeHtml(nextElement.text?.trim() ?? '');
           if (text.isNotEmpty && text.length > 15) {
             directions.add(text);
