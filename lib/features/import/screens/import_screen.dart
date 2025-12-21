@@ -1,8 +1,12 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/services/url_importer.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -213,12 +217,20 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
   }
 
   Future<void> _scanFromCamera(BuildContext context) async {
+    if (!_isMobilePlatform()) {
+      MemoixSnackBar.show(context, 'OCR is only available on mobile devices');
+      return;
+    }
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromCamera();
     _handleOcrResult(context, result);
   }
 
   void _scanMultipleImages(BuildContext context) {
+    if (!_isMobilePlatform()) {
+      MemoixSnackBar.show(context, 'OCR is only available on mobile devices');
+      return;
+    }
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const OCRMultiImageScreen(),
@@ -227,9 +239,18 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
   }
 
   Future<void> _scanFromGallery(BuildContext context) async {
+    if (!_isMobilePlatform()) {
+      MemoixSnackBar.show(context, 'OCR is only available on mobile devices');
+      return;
+    }
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromGallery();
     _handleOcrResult(context, result);
+  }
+
+  bool _isMobilePlatform() {
+    if (kIsWeb) return false;
+    return Platform.isAndroid || Platform.isIOS;
   }
 
   void _handleOcrResult(BuildContext context, OcrResult result) {

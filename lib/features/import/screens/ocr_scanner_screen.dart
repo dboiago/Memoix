@@ -64,7 +64,7 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                           ),
                           const SizedBox(height: 12),
                           const Text(
-                            'Focus: Use a well-lit, clear photo.\n'
+                            'Focus: Use a well-lit, clear photo\n'
                             'Frame: Capture only the recipe you want\n'
                             'Review: The app will extract the text for you to organize',
                           ),
