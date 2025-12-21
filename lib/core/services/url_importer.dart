@@ -2680,6 +2680,9 @@ class UrlRecipeImporter {
     // Skip print/save buttons captured as text
     if (RegExp(r'^(?:Print|Save|Share)\s+(?:Recipe|This)?$', caseSensitive: false).hasMatch(trimmed)) return true;
     
+    // Skip navigation menu text that got captured
+    if (RegExp(r'\b(?:shop|gifts|products|cart|checkout|account|login|sign in|menu|home|about|contact|search|blog|news)\b.*\b(?:shop|gifts|products|cart|checkout|account|login|sign in|menu|home|about|contact|search|blog|news)\b', caseSensitive: false).hasMatch(trimmed)) return true;
+    
     return false;
   }
   
@@ -6689,15 +6692,17 @@ class UrlRecipeImporter {
     
     // If still empty, try <br>-separated content in paragraphs (Bradley Smoker style)
     // Pattern: <h2>Ingredients</h2> followed by <p>item1<br>item2<br>item3</p>
+    // Also handles Shopify blogs: <div class="h3">Ingredients</div> followed by metafield-rich_text_field
     if (rawIngredientStrings.isEmpty) {
-      // Look for headings containing "Ingredients"
-      for (final heading in document.querySelectorAll('h1, h2, h3')) {
+      // Look for headings containing "Ingredients" - include actual headings and div.h3 patterns
+      for (final heading in document.querySelectorAll('h1, h2, h3, .h3, [class*="heading"]')) {
         final headingText = (heading.text ?? '').toLowerCase().trim();
         if (headingText.contains('ingredient')) {
           // Get the next sibling div or paragraph
           var nextElement = heading.nextElementSibling;
-          // Sometimes there's a wrapper div between heading and content
+          // Sometimes there's a wrapper div between heading and content (Shopify metafield pattern)
           if (nextElement?.localName == 'div') {
+            // Check for metafield-rich_text_field or similar wrapper
             final innerP = nextElement!.querySelector('p');
             if (innerP != null) {
               nextElement = innerP;
@@ -6716,6 +6721,23 @@ class UrlRecipeImporter {
                 }
               }
               break;
+            }
+          }
+        }
+      }
+    }
+    
+    // If still empty, try Shopify article-ingredients-list pattern directly
+    if (rawIngredientStrings.isEmpty) {
+      final shopifyIngredientContainer = document.querySelector('.article-ingredients-list p, [class*="ingredient-list"] p, [class*="ingredients-list"] p');
+      if (shopifyIngredientContainer != null) {
+        final innerHtml = shopifyIngredientContainer.innerHtml;
+        if (innerHtml.contains('<br')) {
+          final parts = innerHtml.split(RegExp(r'<br\s*/?>', caseSensitive: false));
+          for (final part in parts) {
+            final text = _decodeHtml(part.replaceAll(RegExp(r'<[^>]+>'), '').trim());
+            if (text.isNotEmpty) {
+              rawIngredientStrings.add(text);
             }
           }
         }
@@ -6793,7 +6815,11 @@ class UrlRecipeImporter {
     // If Cooked format didn't find directions, try standard selectors
     if (rawDirections.isEmpty) {
       final instructionElements = document.querySelectorAll(
-        '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction',
+        '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction, '
+        // Shopify blog patterns
+        '.article-method-list li, .metafield-rich_text_field ul li, '
+        // Generic method/preparation sections
+        '[class*="method"] li, [class*="preparation"] li, [class*="instruction"] li',
       );
       
       for (final e in instructionElements) {
