@@ -1808,8 +1808,7 @@ class UrlRecipeImporter {
   /// ========================================================================
   /// 
   /// WHY YOUTUBE SUPPORT: Many professional chefs post recipes on YouTube.
-  /// Video descriptions often contain full ingredient lists and directions,
-  /// especially from channels like Joshua Weissman, Babish, and Kenji.
+  /// Video descriptions often contain full ingredient lists and directions.
   /// 
   /// EXTRACTION STRATEGY:
   /// 1. Fetch video page HTML (not API - no auth required)
@@ -8965,6 +8964,73 @@ class UrlRecipeImporter {
       if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
     }
     
+    // Try WordPress block heading pattern (sogoodmagazine.com style):
+    // h3.wp-block-heading followed by ul (ingredients), then p (directions)
+    // The content is within a .content-info section
+    final contentInfo = document.querySelector('.content-info');
+    if (contentInfo != null) {
+      final wpBlockHeadings = contentInfo.querySelectorAll('h3.wp-block-heading');
+      if (wpBlockHeadings.isNotEmpty) {
+        for (final heading in wpBlockHeadings) {
+          final sectionName = _decodeHtml((heading.text ?? '').trim());
+          if (sectionName.isEmpty) continue;
+          
+          // Skip "Assembly" section (directions only) and generic headings
+          final lowerSection = sectionName.toLowerCase();
+          if (lowerSection == 'assembly' || 
+              lowerSection.contains('discover') ||
+              lowerSection.contains('related')) {
+            continue;
+          }
+          
+          // Look for ul sibling immediately after this heading (may skip &nbsp; and hr)
+          var sibling = heading.nextElementSibling;
+          var foundUl = false;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Skip separators and whitespace-only elements
+            if (tagName == 'hr' || tagName == 'p') {
+              // Check if p is just whitespace/nbsp
+              final pText = (sibling.text ?? '').trim();
+              if (pText.isEmpty || pText == '\u00a0') {
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              // Otherwise it's directions, stop looking
+              break;
+            }
+            
+            if (tagName == 'ul') {
+              // Found the ingredient list for this section
+              final items = sibling.querySelectorAll('li');
+              if (items.isNotEmpty) {
+                // Add section header
+                ingredients.add('[$sectionName]');
+                for (final item in items) {
+                  final text = _decodeHtml((item.text ?? '').trim());
+                  if (text.isNotEmpty) {
+                    ingredients.add(text);
+                  }
+                }
+                foundUl = true;
+              }
+              break;
+            }
+            
+            // Stop at next heading
+            if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+              break;
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+        if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
+      }
+    }
+    
     // Try generic section headers: h3 or h4 followed by ul/li
     final sectionHeaders = document.querySelectorAll('.ingredient-section-header, .ingredients h3, .ingredients h4');
     if (sectionHeaders.isNotEmpty) {
@@ -9390,6 +9456,46 @@ class UrlRecipeImporter {
       }
     }
     
+    // Helper to check if an image is inside promotional/related content sections
+    // (e.g., "Discover more", "Related recipes", magazine ads)
+    bool isInPromotionalSection(dynamic img) {
+      // Walk up parent tree to check for promotional content indicators
+      var parent = img.parent;
+      int depth = 0;
+      while (parent != null && depth < 10) {
+        final tagName = parent.localName?.toLowerCase() ?? '';
+        final classes = parent.attributes['class']?.toLowerCase() ?? '';
+        
+        // Check for related/promotional section classes
+        if (classes.contains('related') || 
+            classes.contains('promo') ||
+            classes.contains('discover') ||
+            classes.contains('advertisement') ||
+            classes.contains('sidebar') ||
+            classes.contains('so-good-related-post')) {
+          return true;
+        }
+        
+        // Check if this is a gallery after a "Discover" paragraph
+        if (tagName == 'figure' && classes.contains('wp-block-gallery')) {
+          // Check if preceding sibling is a paragraph with "Discover"
+          final prevSibling = parent.previousElementSibling;
+          if (prevSibling != null) {
+            final prevText = (prevSibling.text ?? '').toLowerCase();
+            if (prevText.contains('discover') || 
+                prevText.contains('related') ||
+                prevText.contains('other recipes')) {
+              return true;
+            }
+          }
+        }
+        
+        parent = parent.parent;
+        depth++;
+      }
+      return false;
+    }
+    
     // Look for images in direction/instruction sections
     final directionSelectors = [
       '.recipe-instructions img',
@@ -9413,6 +9519,9 @@ class UrlRecipeImporter {
     for (final selector in directionSelectors) {
       final imgElements = document.querySelectorAll(selector);
       for (final img in imgElements) {
+        // Skip images in promotional/related content sections
+        if (isInPromotionalSection(img)) continue;
+        
         // Get the src, checking data-src for lazy-loaded images too
         // Prefer data-src (full quality) over src (low quality placeholder)
         var src = img.attributes['data-src'] ?? 
@@ -9577,6 +9686,9 @@ class UrlRecipeImporter {
         // Skip non-direction headings
         if (h3Text.contains('ingredient') || h3Text.contains('equipment')) continue;
         
+        // Skip promotional/related content headings
+        if (h3Text.contains('discover') || h3Text.contains('related') || h3Text.contains('also like')) continue;
+        
         // Look for images in siblings before/after this H3
         // Check previous siblings
         var sibling = h3.previousElementSibling;
@@ -9585,19 +9697,8 @@ class UrlRecipeImporter {
           
           // Found an image or figure
           if (tagName == 'img') {
-            final src = sibling.attributes['src'] ?? sibling.attributes['data-src'];
-            if (src != null && isValidImageUrl(src)) {
-              final resolvedUrl = resolveUrl(src);
-              if (!seenUrls.contains(resolvedUrl)) {
-                seenUrls.add(resolvedUrl);
-                images.add(resolvedUrl);
-              }
-            }
-          } else if (tagName == 'figure' || tagName == 'p' || tagName == 'div') {
-            // Check for images inside
-            final innerImgs = sibling.querySelectorAll('img');
-            for (final img in innerImgs) {
-              final src = img.attributes['src'] ?? img.attributes['data-src'];
+            if (!isInPromotionalSection(sibling)) {
+              final src = sibling.attributes['src'] ?? sibling.attributes['data-src'];
               if (src != null && isValidImageUrl(src)) {
                 final resolvedUrl = resolveUrl(src);
                 if (!seenUrls.contains(resolvedUrl)) {
@@ -9606,15 +9707,32 @@ class UrlRecipeImporter {
                 }
               }
             }
-            // Also check for anchor links to images
-            final innerAnchors = sibling.querySelectorAll('a');
-            for (final anchor in innerAnchors) {
-              final href = anchor.attributes['href'];
-              if (href != null && isValidImageUrl(href)) {
-                final resolvedUrl = resolveUrl(href);
-                if (!seenUrls.contains(resolvedUrl)) {
-                  seenUrls.add(resolvedUrl);
-                  images.add(resolvedUrl);
+          } else if (tagName == 'figure' || tagName == 'p' || tagName == 'div') {
+            // Skip if this element is in a promotional section
+            if (!isInPromotionalSection(sibling)) {
+              // Check for images inside
+              final innerImgs = sibling.querySelectorAll('img');
+              for (final img in innerImgs) {
+                if (isInPromotionalSection(img)) continue;
+                final src = img.attributes['src'] ?? img.attributes['data-src'];
+                if (src != null && isValidImageUrl(src)) {
+                  final resolvedUrl = resolveUrl(src);
+                  if (!seenUrls.contains(resolvedUrl)) {
+                    seenUrls.add(resolvedUrl);
+                    images.add(resolvedUrl);
+                  }
+                }
+              }
+              // Also check for anchor links to images
+              final innerAnchors = sibling.querySelectorAll('a');
+              for (final anchor in innerAnchors) {
+                final href = anchor.attributes['href'];
+                if (href != null && isValidImageUrl(href)) {
+                  final resolvedUrl = resolveUrl(href);
+                  if (!seenUrls.contains(resolvedUrl)) {
+                    seenUrls.add(resolvedUrl);
+                    images.add(resolvedUrl);
+                  }
                 }
               }
             }
@@ -9636,19 +9754,8 @@ class UrlRecipeImporter {
           
           // Found an image or figure
           if (tagName == 'img') {
-            final src = sibling.attributes['src'] ?? sibling.attributes['data-src'];
-            if (src != null && isValidImageUrl(src)) {
-              final resolvedUrl = resolveUrl(src);
-              if (!seenUrls.contains(resolvedUrl)) {
-                seenUrls.add(resolvedUrl);
-                images.add(resolvedUrl);
-              }
-            }
-          } else if (tagName == 'figure' || tagName == 'p' || tagName == 'div') {
-            // Check for images inside
-            final innerImgs = sibling.querySelectorAll('img');
-            for (final img in innerImgs) {
-              final src = img.attributes['src'] ?? img.attributes['data-src'];
+            if (!isInPromotionalSection(sibling)) {
+              final src = sibling.attributes['src'] ?? sibling.attributes['data-src'];
               if (src != null && isValidImageUrl(src)) {
                 final resolvedUrl = resolveUrl(src);
                 if (!seenUrls.contains(resolvedUrl)) {
@@ -9657,15 +9764,32 @@ class UrlRecipeImporter {
                 }
               }
             }
-            // Also check for anchor links to images
-            final innerAnchors = sibling.querySelectorAll('a');
-            for (final anchor in innerAnchors) {
-              final href = anchor.attributes['href'];
-              if (href != null && isValidImageUrl(href)) {
-                final resolvedUrl = resolveUrl(href);
-                if (!seenUrls.contains(resolvedUrl)) {
-                  seenUrls.add(resolvedUrl);
-                  images.add(resolvedUrl);
+          } else if (tagName == 'figure' || tagName == 'p' || tagName == 'div') {
+            // Skip if this element is in a promotional section
+            if (!isInPromotionalSection(sibling)) {
+              // Check for images inside
+              final innerImgs = sibling.querySelectorAll('img');
+              for (final img in innerImgs) {
+                if (isInPromotionalSection(img)) continue;
+                final src = img.attributes['src'] ?? img.attributes['data-src'];
+                if (src != null && isValidImageUrl(src)) {
+                  final resolvedUrl = resolveUrl(src);
+                  if (!seenUrls.contains(resolvedUrl)) {
+                    seenUrls.add(resolvedUrl);
+                    images.add(resolvedUrl);
+                  }
+                }
+              }
+              // Also check for anchor links to images
+              final innerAnchors = sibling.querySelectorAll('a');
+              for (final anchor in innerAnchors) {
+                final href = anchor.attributes['href'];
+                if (href != null && isValidImageUrl(href)) {
+                  final resolvedUrl = resolveUrl(href);
+                  if (!seenUrls.contains(resolvedUrl)) {
+                    seenUrls.add(resolvedUrl);
+                    images.add(resolvedUrl);
+                  }
                 }
               }
             }

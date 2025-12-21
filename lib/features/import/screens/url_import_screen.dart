@@ -193,9 +193,9 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
             ),
             const SizedBox(height: 32),
 
-            // Supported sites
+            // Import Targets
             Text(
-              'Supported Sites',
+              'Import Targets',
               style: theme.textTheme.titleSmall,
             ),
             const SizedBox(height: 8),
@@ -203,14 +203,10 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
               spacing: 8,
               runSpacing: 8,
               children: [
-                _SiteBadge(label: 'AllRecipes'),
-                _SiteBadge(label: 'Food Network'),
-                _SiteBadge(label: 'Serious Eats'),
-                _SiteBadge(label: 'Bon Appétit'),
-                _SiteBadge(label: 'NYT Cooking'),
-                _SiteBadge(label: 'BBC Good Food'),
-                _SiteBadge(label: 'Epicurious'),
-                _SiteBadge(label: '+ many more'),
+                _SiteBadge(label: 'Editorial Recipe Sites'),
+                _SiteBadge(label: 'Chef Blogs'),
+                _SiteBadge(label: 'Technique References'),
+                _SiteBadge(label: 'Structured Food Articles'),
               ],
             ),
           ],
