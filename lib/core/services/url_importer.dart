@@ -6559,6 +6559,7 @@ class UrlRecipeImporter {
     
     // If still empty, try standard selectors
     if (rawIngredientStrings.isEmpty) {
+      print('[DEBUG _parseFromHtmlWithConfidence] Trying standard selectors for ingredients');
       final ingredientElements = document.querySelectorAll(
         // Standard recipe plugins and schema.org
         '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient, '
@@ -6567,12 +6568,17 @@ class UrlRecipeImporter {
         // Generic patterns for blog posts
         '.entry-content ul li, .post-content ul li, article ul li',
       );
+      print('[DEBUG _parseFromHtmlWithConfidence] Found ${ingredientElements.length} ingredient elements');
       
       for (final e in ingredientElements) {
         final text = _decodeHtml((e.text ?? '').trim());
         if (text.isNotEmpty) {
           rawIngredientStrings.add(text);
         }
+      }
+      print('[DEBUG _parseFromHtmlWithConfidence] Extracted ${rawIngredientStrings.length} ingredient strings');
+      if (rawIngredientStrings.isNotEmpty) {
+        print('[DEBUG _parseFromHtmlWithConfidence] First 3 ingredients: ${rawIngredientStrings.take(3).toList()}');
       }
     }
     
@@ -6681,15 +6687,21 @@ class UrlRecipeImporter {
 
     // If Cooked format didn't find directions, try standard selectors
     if (rawDirections.isEmpty) {
+      print('[DEBUG _parseFromHtmlWithConfidence] Trying standard selectors for directions');
       final instructionElements = document.querySelectorAll(
         '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction',
       );
+      print('[DEBUG _parseFromHtmlWithConfidence] Found ${instructionElements.length} instruction elements');
       
       for (final e in instructionElements) {
         final text = _decodeHtml((e.text ?? '').trim());
         if (text.isNotEmpty) {
           rawDirections.add(text);
         }
+      }
+      print('[DEBUG _parseFromHtmlWithConfidence] Extracted ${rawDirections.length} direction strings');
+      if (rawDirections.isNotEmpty) {
+        print('[DEBUG _parseFromHtmlWithConfidence] First direction: ${rawDirections.first}');
       }
     }
     
@@ -7328,6 +7340,13 @@ class UrlRecipeImporter {
       filteredDirections.add(cleaned);
     }
 
+    print('[DEBUG _parseFromHtmlWithConfidence] Final result:');
+    print('[DEBUG _parseFromHtmlWithConfidence]   - ingredients: ${ingredients.length}');
+    print('[DEBUG _parseFromHtmlWithConfidence]   - directions: ${filteredDirections.length}');
+    print('[DEBUG _parseFromHtmlWithConfidence]   - equipment: ${equipmentItems.length}');
+    if (filteredDirections.isNotEmpty) {
+      print('[DEBUG _parseFromHtmlWithConfidence]   - First direction: ${filteredDirections.first}');
+    }
     return RecipeImportResult(
       name: title != null ? _cleanRecipeName(title) : null,
       course: course,
