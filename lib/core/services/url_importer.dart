@@ -907,7 +907,9 @@ class UrlRecipeImporter {
           // Re-parse with HTML to get section headers
           // Fall through to HTML parsing below instead of returning JSON-LD result
           // We'll use JSON-LD for other metadata but get ingredients from HTML
-          final htmlIngredients = _extractIngredientsWithSections(document);
+          var htmlIngredients = _extractIngredientsWithSections(document);
+          // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+          htmlIngredients = _filterIngredientStrings(htmlIngredients);
           if (htmlIngredients.isNotEmpty) {
             // Parse the raw ingredient strings to Ingredient objects with sections
             final ingredients = _parseIngredients(htmlIngredients);
@@ -1290,7 +1292,9 @@ class UrlRecipeImporter {
       // - WordPress ACF: {ingredient, quantity, measurement}
       // - Sections: {title, items}
       // - Standard: strings or {text/name}
-      final rawIngredientStrings = _extractRawIngredients(ingredientsData);
+      var rawIngredientStrings = _extractRawIngredients(ingredientsData);
+      // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+      rawIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
       if (rawIngredientStrings.isEmpty) {
         if (serves != jsonLdResult.serves) {
           return _copyResultWithUpdates(jsonLdResult, serves: serves, servesConfidence: 0.9);
@@ -1614,6 +1618,8 @@ class UrlRecipeImporter {
     final ingredientsData = data['ingredients'] ?? data['recipeIngredient'];
     if (ingredientsData != null) {
       rawIngredientStrings = _extractRawIngredients(ingredientsData);
+      // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+      rawIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
     }
     
     // Extract directions - support various formats  
@@ -1623,6 +1629,9 @@ class UrlRecipeImporter {
     if (instructionsData != null) {
       directions = _parseInstructions(instructionsData);
       rawDirections = _extractRawDirections(instructionsData);
+      // Filter out junk direction lines (ads, subscribe prompts, social media, etc.)
+      directions = directions.where((d) => !_isJunkDirectionLine(d)).toList();
+      rawDirections = rawDirections.where((d) => !_isJunkDirectionLine(d)).toList();
     }
     
     // Must have at least ingredients OR directions to be a valid recipe
@@ -1947,7 +1956,9 @@ class UrlRecipeImporter {
       }
       
       // Build ingredients list
-      final rawIngredientStrings = (parsedDescription['ingredients'] as List<String>?) ?? [];
+      var rawIngredientStrings = (parsedDescription['ingredients'] as List<String>?) ?? [];
+      // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+      rawIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
       final ingredients = rawIngredientStrings
           .map((s) => _parseIngredientString(s))
           .where((i) => i.name.isNotEmpty)
@@ -2668,10 +2679,15 @@ class UrlRecipeImporter {
     RegExp(r'Share\s+on\s+(?:Facebook|Twitter|Pinterest|Instagram)', caseSensitive: false),
     RegExp(r'(?:Facebook|Twitter|Pinterest|Instagram)\s+(?:Facebook|Twitter|Pinterest|Instagram)?$', caseSensitive: false),
     RegExp(r'^(?:Like|Tweet|Pin|Share)\s+(?:this|it)?$', caseSensitive: false),
+    RegExp(r'Facebook\s+Facebook', caseSensitive: false), // Doubled social media names
+    RegExp(r'Twitter\s+Twitter', caseSensitive: false),
+    RegExp(r'Pinterest\s+Pinterest', caseSensitive: false),
     // Subscribe/newsletter garbage
     RegExp(r'Subscribe\s+to', caseSensitive: false),
     RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false),
     RegExp(r'newsletter', caseSensitive: false),
+    RegExp(r'get\s+the\s+latest', caseSensitive: false),
+    RegExp(r'sign\s+up', caseSensitive: false),
     // Ad script garbage
     RegExp(r'adsbygoogle', caseSensitive: false),
     RegExp(r'window\._wca', caseSensitive: false),
@@ -2679,8 +2695,10 @@ class UrlRecipeImporter {
     RegExp(r'googlesyndication', caseSensitive: false),
     RegExp(r'^\s*\|\|\s*\[\]', caseSensitive: false),  // JavaScript array patterns
     RegExp(r'\.push\s*\(', caseSensitive: false),       // JavaScript push calls
-    // Lines that look like directions, not ingredients (contain action verbs at start)
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store)\s+the\b', caseSensitive: false),
+    // Lines that look like directions, not ingredients (contain action verbs at start + "the")
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash)\s+the\b', caseSensitive: false),
+    // Longer direction-like sentences (more than 50 chars and contains period - likely instruction not ingredient)
+    RegExp(r'^.{50,}\.', caseSensitive: false),
   ];
   
   /// Check if an ingredient string is garbage (UI element, ad script, etc.)
