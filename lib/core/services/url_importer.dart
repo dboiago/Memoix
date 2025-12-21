@@ -859,18 +859,23 @@ class UrlRecipeImporter {
 
       // Try to find JSON-LD structured data first (most reliable)
       final jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
+      print('[DEBUG importFromUrl] Found ${jsonLdScripts.length} JSON-LD scripts');
       RecipeImportResult? jsonLdResult;
       
       for (final script in jsonLdScripts) {
         try {
           // Handle potential encoding issues in JSON-LD script content
           final String scriptText = script.text;
+          print('[DEBUG importFromUrl] Processing JSON-LD script (${scriptText.length} chars)');
           // If decoding fails, try to fix common encoding issues
           try {
             final data = jsonDecode(scriptText);
+            print('[DEBUG importFromUrl] JSON-LD decoded, calling _parseJsonLdWithConfidence');
             jsonLdResult = _parseJsonLdWithConfidence(data, url);
+            print('[DEBUG importFromUrl] _parseJsonLdWithConfidence returned: ${jsonLdResult != null ? 'result' : 'null'}');
             if (jsonLdResult != null) break;
-          } on FormatException {
+          } on FormatException catch (e) {
+            print('[DEBUG importFromUrl] JSON decode failed: $e');
             // If JSON decode fails due to encoding, try to re-encode
             try {
               // Re-encode as UTF-8 bytes and decode again
@@ -884,7 +889,8 @@ class UrlRecipeImporter {
               continue;
             }
           }
-        } catch (_) {
+        } catch (e) {
+          print('[DEBUG importFromUrl] Exception processing JSON-LD: $e');
           continue;
         }
       }
@@ -1134,12 +1140,20 @@ class UrlRecipeImporter {
       }
       
       // Try to extract recipe data from embedded JavaScript (React/Next.js/Vue hydration state)
+      print('[DEBUG importFromUrl] Trying _tryExtractFromEmbeddedJson...');
       final embeddedResult = _tryExtractFromEmbeddedJson(body, url);
-      if (embeddedResult != null) return embeddedResult;
+      if (embeddedResult != null) {
+        print('[DEBUG importFromUrl] RETURNING embeddedResult from _tryExtractFromEmbeddedJson');
+        return embeddedResult;
+      }
 
       // Fallback: try to parse from HTML structure
+      print('[DEBUG importFromUrl] Trying _parseFromHtmlWithConfidence...');
       final result = _parseFromHtmlWithConfidence(document, url, body);
-      if (result != null) return result;
+      if (result != null) {
+        print('[DEBUG importFromUrl] RETURNING result from _parseFromHtmlWithConfidence');
+        return result;
+      }
       
       // Provide more helpful error message with diagnostic info
       final jsonLdCount = jsonLdScripts.length;
