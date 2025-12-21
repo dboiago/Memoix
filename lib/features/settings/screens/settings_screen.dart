@@ -527,7 +527,7 @@ class SettingsScreen extends ConsumerWidget {
               Navigator.pop(ctx);
               await MemoixDatabase.clearAll();
               // Invalidate all data providers to refresh UI
-              ref.invalidate(categoriesProvider);
+              ref.invalidate(coursesProvider);
               ref.invalidate(allRecipesProvider);
               ref.invalidate(availableCuisinesProvider);
               MemoixSnackBar.show('All data cleared');

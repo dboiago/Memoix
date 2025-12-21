@@ -193,6 +193,11 @@ class SmokingRecipe {
   @Index()
   late String name;
 
+  /// Course (e.g., "Mains", "Sides", "Apps")
+  /// Defaults to "smoking" but can be changed
+  @Index()
+  String course = 'smoking';
+
   /// Type of entry: Pit Note (quick reference) or Recipe (full recipe)
   @Enumerated(EnumType.name)
   SmokingType type = SmokingType.pitNote;
@@ -326,6 +331,7 @@ class SmokingRecipe {
   static SmokingRecipe create({
     required String uuid,
     required String name,
+    String course = 'smoking',
     SmokingType type = SmokingType.pitNote,
     String? item,
     String? category,
@@ -349,6 +355,7 @@ class SmokingRecipe {
     return SmokingRecipe()
       ..uuid = uuid
       ..name = name
+      ..course = course
       ..type = type
       ..item = item
       ..category = category
@@ -377,6 +384,7 @@ class SmokingRecipe {
     return {
       'uuid': uuid,
       'name': name,
+      'course': course,
       'type': type.name,
       'item': item,
       'category': category,
@@ -414,6 +422,7 @@ class SmokingRecipe {
     return SmokingRecipe()
       ..uuid = json['uuid'] as String
       ..name = json['name'] as String
+      ..course = json['course'] as String? ?? 'smoking'
       ..type = SmokingType.values.firstWhere(
         (e) => e.name == json['type'],
         orElse: () => SmokingType.pitNote,
@@ -464,6 +473,7 @@ class SmokingRecipe {
     return {
       'uuid': uuid,
       'name': name,
+      'course': course,
       'type': type.name,
       'item': item,
       'category': category,

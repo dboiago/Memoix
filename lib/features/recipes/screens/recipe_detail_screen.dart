@@ -10,7 +10,7 @@ import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
-import '../models/category.dart';
+import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
 import '../models/spirit.dart';

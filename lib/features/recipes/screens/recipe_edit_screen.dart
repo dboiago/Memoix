@@ -9,7 +9,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/text_normalizer.dart';
-import '../models/category.dart';
+import '../models/course.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
 import '../models/spirit.dart';
@@ -2594,7 +2594,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                               ),
                               title: Text(recipe.name),
                               subtitle: Text(
-                                Category.displayNameFromSlug(recipe.course),
+                                Course.displayNameFromSlug(recipe.course),
                                 style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                               ),
                               dense: true,

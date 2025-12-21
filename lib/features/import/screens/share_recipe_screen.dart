@@ -6,7 +6,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../recipes/models/recipe.dart';
-import '../../recipes/models/category.dart';
+import '../../recipes/models/course.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
@@ -387,7 +387,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
               child: Row(
                 children: [
                   _buildFilterChip('All', theme),
-                ...Category.defaults
+                ...Course.defaults
                     .where((c) => allItems.any((item) =>
                         item.type == ShareableType.recipe &&
                         (item.category.toLowerCase() == c.slug ||
@@ -459,13 +459,13 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
         if (catLower == 'cheese' && item.type != ShareableType.cheese) return false;
 
         if (item.type == ShareableType.recipe) {
-          final matchingCat = Category.defaults.firstWhere(
+          final matchingCourse = Course.defaults.firstWhere(
             (c) => c.name.toLowerCase() == catLower,
-            orElse: () => Category.create(slug: '', name: '', colorValue: 0),
+            orElse: () => Course.create(slug: '', name: '', colorValue: 0),
           );
           final itemCatLower = item.category.toLowerCase();
-          if (matchingCat.slug.isNotEmpty) {
-            if (itemCatLower != catLower && itemCatLower != matchingCat.slug) {
+          if (matchingCourse.slug.isNotEmpty) {
+            if (itemCatLower != catLower && itemCatLower != matchingCourse.slug) {
               return false;
             }
           } else if (itemCatLower != catLower) {
@@ -506,14 +506,14 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
     final grouped = <String, List<ShareableItem>>{};
 
-    for (final cat in Category.defaults) {
+    for (final course in Course.defaults) {
       final matchingItems = filtered.where((item) {
         if (item.type != ShareableType.recipe) return false;
         final catLower = item.category.toLowerCase();
-        return catLower == cat.slug || catLower == cat.name.toLowerCase();
+        return catLower == course.slug || catLower == course.name.toLowerCase();
       }).toList();
       if (matchingItems.isNotEmpty) {
-        grouped[cat.name] = matchingItems;
+        grouped[course.name] = matchingItems;
       }
     }
 

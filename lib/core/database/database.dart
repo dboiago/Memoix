@@ -2,7 +2,7 @@ import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
 
 import '../../features/recipes/models/recipe.dart';
-import '../../features/recipes/models/category.dart';
+import '../../features/recipes/models/course.dart';
 import '../../features/pizzas/models/pizza.dart';
 import '../../features/sandwiches/models/sandwich.dart';
 import '../../features/smoking/models/smoking_recipe.dart';
@@ -37,7 +37,7 @@ class MemoixDatabase {
     _instance = await Isar.open(
       [
         RecipeSchema,
-        CategorySchema,
+        CourseSchema,
         PizzaSchema,
         SandwichSchema,
         SmokingRecipeSchema,
@@ -54,30 +54,30 @@ class MemoixDatabase {
       name: 'memoix',
     );
 
-    // Seed default categories if empty
-    await _seedDefaultCategories();
+    // Seed default courses if empty
+    await _seedDefaultCourses();
   }
 
-  /// Seed default categories on first run
-  static Future<void> _seedDefaultCategories() async {
+  /// Seed default courses on first run
+  static Future<void> _seedDefaultCourses() async {
     final db = instance;
-    final count = await db.categorys.count();
+    final count = await db.courses.count();
     
     if (count == 0) {
       await db.writeTxn(() async {
-        await db.categorys.putAll(Category.defaults);
+        await db.courses.putAll(Course.defaults);
       });
     }
   }
 
-  /// Refresh categories with latest defaults (updates order, names, etc.)
-  /// Call this on app startup to apply category changes
-  static Future<void> refreshCategories() async {
+  /// Refresh courses with latest defaults (updates order, names, etc.)
+  /// Call this on app startup to apply course changes
+  static Future<void> refreshCourses() async {
     final db = instance;
     await db.writeTxn(() async {
-      // Clear existing categories and replace with fresh defaults
-      await db.categorys.clear();
-      await db.categorys.putAll(Category.defaults);
+      // Clear existing courses and replace with fresh defaults
+      await db.courses.clear();
+      await db.courses.putAll(Course.defaults);
     });
   }
 

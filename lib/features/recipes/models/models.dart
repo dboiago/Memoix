@@ -1,2 +1,2 @@
 export 'recipe.dart';
-export 'category.dart';
+export 'course.dart';

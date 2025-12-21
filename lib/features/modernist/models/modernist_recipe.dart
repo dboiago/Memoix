@@ -232,6 +232,11 @@ class ModernistRecipe {
   @Index()
   late String name;
 
+  /// Course (e.g., "Mains", "Desserts", "Sauces")
+  /// Defaults to "modernist" but can be changed
+  @Index()
+  String course = 'modernist';
+
   /// Type of recipe: Concept or Technique
   @Enumerated(EnumType.name)
   ModernistType type = ModernistType.concept;
@@ -307,6 +312,7 @@ class ModernistRecipe {
   static ModernistRecipe create({
     required String uuid,
     required String name,
+    String course = 'modernist',
     ModernistType type = ModernistType.concept,
     String? technique,
     String? serves,
@@ -331,6 +337,7 @@ class ModernistRecipe {
     return ModernistRecipe()
       ..uuid = uuid
       ..name = name
+      ..course = course
       ..type = type
       ..technique = technique
       ..serves = serves
@@ -423,6 +430,7 @@ class ModernistRecipe {
     return {
       'uuid': uuid,
       'name': name,
+      'course': course,
       'type': type.name,
       'technique': technique,
       'serves': serves,
@@ -453,6 +461,7 @@ class ModernistRecipe {
     return ModernistRecipe()
       ..uuid = json['uuid'] as String
       ..name = json['name'] as String
+      ..course = json['course'] as String? ?? 'modernist'
       ..type = ModernistType.values.firstWhere(
         (e) => e.name == json['type'],
         orElse: () => ModernistType.concept,
@@ -500,6 +509,7 @@ class ModernistRecipe {
     return {
       'uuid': uuid,
       'name': name,
+      'course': course,
       'type': type.name,
       'technique': technique,
       'serves': serves,

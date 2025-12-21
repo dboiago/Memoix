@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import '../../features/recipes/models/category.dart';
+import '../../features/recipes/models/course.dart';
 
 /// Course card widget matching Figma design
 /// Shows course icon, name, and recipe count in a card layout
 class CourseCard extends StatefulWidget {
-  final Category category;
+  final Course course;
   final int recipeCount;
   final VoidCallback onTap;
 
   const CourseCard({
     super.key,
-    required this.category,
+    required this.course,
     required this.recipeCount,
     required this.onTap,
   });
@@ -68,7 +68,7 @@ class _CourseCardState extends State<CourseCard> {
                     ),
                     child: Center(
                       child: Icon(
-                        _getIconData(widget.category.iconName),
+                        _getIconData(widget.course.iconName),
                         color: (_hovered || _pressed)
                             ? (isDark ? Colors.black87 : Colors.white)
                             : theme.colorScheme.primary,
@@ -78,11 +78,11 @@ class _CourseCardState extends State<CourseCard> {
                   ),
                 ),
                 const SizedBox(height: 4),
-                // Category name
+                // Course name
                 Flexible(
                   flex: 2,
                   child: Text(
-                    widget.category.name,
+                    widget.course.name,
                     style: theme.textTheme.titleSmall?.copyWith(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,

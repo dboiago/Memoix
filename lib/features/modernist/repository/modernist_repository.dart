@@ -77,6 +77,7 @@ class ModernistRepository {
   /// Create a new recipe with generated UUID
   Future<ModernistRecipe> create({
     required String name,
+    String course = 'modernist',
     ModernistType type = ModernistType.concept,
     String? technique,
     String? serves,
@@ -99,6 +100,7 @@ class ModernistRepository {
     final recipe = ModernistRecipe.create(
       uuid: _uuid.v4(),
       name: name,
+      course: course,
       type: type,
       technique: technique,
       serves: serves,

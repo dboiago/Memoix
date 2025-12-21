@@ -8,7 +8,7 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../../core/utils/suggestions.dart';
-import '../../recipes/models/category.dart';
+import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../models/smoking_recipe.dart';
@@ -50,6 +50,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
   /// Paired recipe IDs (for linking related recipes)
   final List<String> _pairedRecipeIds = [];
+
+  /// Selected course for this recipe
+  String _selectedCourse = 'smoking';
 
   bool _isLoading = true;
   SmokingRecipe? _existingRecipe;
@@ -108,6 +111,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       
       // Load paired recipe IDs
       _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
+      
+      // Load course
+      _selectedCourse = recipe.course;
     } else if (widget.recipeId != null) {
       final recipe = await ref
           .read(smokingRepositoryProvider)
@@ -158,6 +164,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         
         // Load paired recipe IDs
         _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
+        
+        // Load course
+        _selectedCourse = recipe.course;
       }
     }
 
@@ -274,6 +283,29 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                   child: _buildTypeChip('Recipe', SmokingType.recipe, theme),
                 ),
               ],
+            ),
+
+            const SizedBox(height: 16),
+
+            // Course dropdown
+            DropdownButtonFormField<String>(
+              value: _selectedCourse,
+              decoration: const InputDecoration(
+                labelText: 'Course',
+              ),
+              items: Course.defaults
+                  .map(
+                    (c) => DropdownMenuItem(
+                      value: c.slug,
+                      child: Text(c.name),
+                    ),
+                  )
+                  .toList(),
+              onChanged: (value) {
+                if (value != null) {
+                  setState(() => _selectedCourse = value);
+                }
+              },
             ),
 
             const SizedBox(height: 16),
@@ -1664,6 +1696,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
       ..type = _selectedType
+      ..course = _selectedCourse
       ..item = _itemController.text.trim().isEmpty
           ? null
           : _itemController.text.trim()
@@ -1873,7 +1906,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                               ),
                               title: Text(recipe.name),
                               subtitle: Text(
-                                Category.displayNameFromSlug(recipe.course),
+                                Course.displayNameFromSlug(recipe.course),
                                 style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                               ),
                               dense: true,

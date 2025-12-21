@@ -9,7 +9,7 @@ import 'package:uuid/uuid.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
-import '../../recipes/models/category.dart';
+import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 
@@ -34,6 +34,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
   final _timeController = TextEditingController();
   final _notesController = TextEditingController();
 
+  String _selectedCourse = 'modernist';
   ModernistType _selectedType = ModernistType.concept;
   final List<String> _equipment = [];
   TextEditingController? _equipmentFieldController;
@@ -76,6 +77,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     
     if (recipe != null) {
       _nameController.text = recipe.name;
+      _selectedCourse = recipe.course;
       _selectedType = recipe.type;
       _techniqueController.text = recipe.technique ?? '';
       _servesController.text = recipe.serves ?? '';
@@ -304,6 +306,26 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                   ),
                   textCapitalization: TextCapitalization.words,
                 );
+              },
+            ),
+            const SizedBox(height: 16),
+
+            // Course dropdown
+            DropdownButtonFormField<String>(
+              value: _selectedCourse,
+              decoration: const InputDecoration(
+                labelText: 'Course',
+              ),
+              items: Course.defaults
+                  .map((c) => DropdownMenuItem(
+                        value: c.slug,
+                        child: Text(c.name),
+                      ))
+                  .toList(),
+              onChanged: (value) {
+                if (value != null) {
+                  setState(() => _selectedCourse = value);
+                }
               },
             ),
             const SizedBox(height: 16),
@@ -1615,6 +1637,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       if (_existingRecipe != null) {
         _existingRecipe!
           ..name = _nameController.text.trim()
+          ..course = _selectedCourse
           ..type = _selectedType
           ..technique = _techniqueController.text.trim().isEmpty
               ? null
@@ -1641,6 +1664,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       } else {
         await repo.create(
           name: _nameController.text.trim(),
+          course: _selectedCourse,
           type: _selectedType,
           technique: _techniqueController.text.trim().isEmpty
               ? null
@@ -1849,7 +1873,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                               ),
                               title: Text(recipe.name),
                               subtitle: Text(
-                                Category.displayNameFromSlug(recipe.course),
+                                Course.displayNameFromSlug(recipe.course),
                                 style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                               ),
                               dense: true,

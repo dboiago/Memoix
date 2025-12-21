@@ -4,7 +4,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
-import '../models/category.dart';
+import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
 
@@ -258,30 +258,30 @@ class RecipeRepository {
         });
   }
 
-  // ============ CATEGORIES ============
+  // ============ COURSES ============
 
-  /// Get all categories sorted by order
-  Future<List<Category>> getAllCategories() async {
-    return _db.categorys.where().sortBySortOrder().findAll();
+  /// Get all courses sorted by order
+  Future<List<Course>> getAllCourses() async {
+    return _db.courses.where().sortBySortOrder().findAll();
   }
 
-  /// Get visible categories only
-  Future<List<Category>> getVisibleCategories() async {
-    return _db.categorys
+  /// Get visible courses only
+  Future<List<Course>> getVisibleCourses() async {
+    return _db.courses
         .filter()
         .isVisibleEqualTo(true)
         .sortBySortOrder()
         .findAll();
   }
 
-  /// Save a category
-  Future<int> saveCategory(Category category) async {
-    return _db.writeTxn(() => _db.categorys.put(category));
+  /// Save a course
+  Future<int> saveCourse(Course course) async {
+    return _db.writeTxn(() => _db.courses.put(course));
   }
 
-  /// Watch categories
-  Stream<List<Category>> watchCategories() {
-    return _db.categorys.where().sortBySortOrder().watch(fireImmediately: true);
+  /// Watch courses
+  Stream<List<Course>> watchCourses() {
+    return _db.courses.where().sortBySortOrder().watch(fireImmediately: true);
   }
 
   // ============ SYNC HELPERS ============
@@ -321,9 +321,9 @@ final recipesByCourseProvider = StreamProvider.family<List<Recipe>, String>((ref
   return ref.watch(recipeRepositoryProvider).watchRecipesByCourse(course);
 });
 
-/// Provider for categories
-final categoriesProvider = StreamProvider<List<Category>>((ref) {
-  return ref.watch(recipeRepositoryProvider).watchCategories();
+/// Provider for courses
+final coursesProvider = StreamProvider<List<Course>>((ref) {
+  return ref.watch(recipeRepositoryProvider).watchCourses();
 });
 
 /// Provider for favorite recipes (stream-based for real-time updates)

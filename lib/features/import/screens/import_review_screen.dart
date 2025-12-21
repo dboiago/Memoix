@@ -7,7 +7,7 @@ import '../../../app/theme/colors.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/text_normalizer.dart';
 import '../../recipes/models/recipe.dart';
-import '../../recipes/models/category.dart';
+import '../../recipes/models/course.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -77,7 +77,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _timeController = TextEditingController(text: result.time ?? '');
     _techniqueController = TextEditingController();
 
-    // Normalize course to match Category.defaults names (proper capitalization)
+    // Normalize course to match Course.defaults names (proper capitalization)
     final rawCourse = result.course ?? 'Mains';
     _selectedCourse = _normalizeCourse(rawCourse);
     _selectedCuisine = result.cuisine;
@@ -426,12 +426,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   // Fields that are optional and shouldn't show "Needs input"
   static const _optionalFields = {'Cuisine', 'Servings', 'Time'};
 
-  /// Normalize course string to match Category.defaults names
+  /// Normalize course string to match Course.defaults names
   String _normalizeCourse(String course) {
     final lower = course.toLowerCase();
-    for (final category in Category.defaults) {
-      if (category.slug == lower || category.name.toLowerCase() == lower) {
-        return category.name;
+    for (final c in Course.defaults) {
+      if (c.slug == lower || c.name.toLowerCase() == lower) {
+        return c.name;
       }
     }
     // Fallback: capitalize first letter
@@ -520,7 +520,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   Widget _buildCourseSelector(ThemeData theme, RecipeImportResult result) {
     // Get all available courses
-    final allCourses = Category.defaults.map((c) => c.name).toList();
+    final allCourses = Course.defaults.map((c) => c.name).toList();
     
     // Combine detected + all available
     final courses = <String>{

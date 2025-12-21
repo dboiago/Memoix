@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
-import '../models/category.dart';
+import '../models/course.dart';
 import '../models/recipe.dart';
 import '../models/source_filter.dart';
 import '../models/spirit.dart';
@@ -52,7 +52,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          Category.displayNameFromSlug(widget.course),
+          Course.displayNameFromSlug(widget.course),
           style: theme.textTheme.titleMedium?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),

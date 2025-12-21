@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/course_card.dart';
-import '../../recipes/models/category.dart';
+import '../../recipes/models/course.dart';
 import '../../recipes/models/source_filter.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
@@ -20,26 +20,26 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categoriesAsync = ref.watch(categoriesProvider);
-    return categoriesAsync.when(
+    final coursesAsync = ref.watch(coursesProvider);
+    return coursesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (err, _) => Center(child: Text('Error: $err')),
-      data: (categories) => _CourseGridView(categories: categories),
+      data: (courses) => _CourseGridView(courses: courses),
     );
   }
 }
 
 /// View showing courses as a grid of cards matching Figma design
 class _CourseGridView extends ConsumerWidget {
-  final List<Category> categories;
+  final List<Course> courses;
 
-  const _CourseGridView({required this.categories});
+  const _CourseGridView({required this.courses});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    if (categories.isEmpty) {
+    if (courses.isEmpty) {
       return const Center(
-        child: Text('No categories found'),
+        child: Text('No courses found'),
       );
     }
 
@@ -113,15 +113,15 @@ class _CourseGridView extends ConsumerWidget {
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
-                    final category = categories[index];
+                    final course = courses[index];
                     
                     // Special handling for pizzas, sandwiches, smoking, cheese, cellar - use their own counts
-                    final bool isPizza = category.slug == 'pizzas';
-                    final bool isSandwich = category.slug == 'sandwiches';
-                    final bool isSmoking = category.slug == 'smoking';
-                    final bool isModernist = category.slug == 'modernist';
-                    final bool isCheese = category.slug == 'cheese';
-                    final bool isCellar = category.slug == 'cellar';
+                    final bool isPizza = course.slug == 'pizzas';
+                    final bool isSandwich = course.slug == 'sandwiches';
+                    final bool isSmoking = course.slug == 'smoking';
+                    final bool isModernist = course.slug == 'modernist';
+                    final bool isCheese = course.slug == 'cheese';
+                    final bool isCellar = course.slug == 'cellar';
                     
                     // Get count for this category
                     final int itemCount;
@@ -163,7 +163,7 @@ class _CourseGridView extends ConsumerWidget {
                       );
                     } else {
                       final recipesAsync = ref.watch(
-                        recipesByCourseProvider(category.slug),
+                        recipesByCourseProvider(course.slug),
                       );
                       itemCount = recipesAsync.maybeWhen(
                         data: (recipes) => recipes.length,
@@ -172,31 +172,31 @@ class _CourseGridView extends ConsumerWidget {
                     }
 
                     return CourseCard(
-                      category: category,
+                      course: course,
                       recipeCount: itemCount,
                       onTap: () {
-                        // Special category routing
-                        if (category.slug == 'scratch') {
+                        // Special course routing
+                        if (course.slug == 'scratch') {
                           AppRoutes.toScratchPad(context);
-                        } else if (category.slug == 'pizzas') {
+                        } else if (course.slug == 'pizzas') {
                           AppRoutes.toPizzaList(context);
-                        } else if (category.slug == 'sandwiches') {
+                        } else if (course.slug == 'sandwiches') {
                           AppRoutes.toSandwichList(context);
-                        } else if (category.slug == 'smoking') {
+                        } else if (course.slug == 'smoking') {
                           AppRoutes.toSmokingList(context);
-                        } else if (category.slug == 'modernist') {
+                        } else if (course.slug == 'modernist') {
                           AppRoutes.toModernistList(context);
-                        } else if (category.slug == 'cheese') {
+                        } else if (course.slug == 'cheese') {
                           AppRoutes.toCheeseList(context);
-                        } else if (category.slug == 'cellar') {
+                        } else if (course.slug == 'cellar') {
                           AppRoutes.toCellarList(context);
                         } else {
-                          AppRoutes.toRecipeList(context, category.slug);
+                          AppRoutes.toRecipeList(context, course.slug);
                         }
                       },
                     );
                   },
-                  childCount: categories.length,
+                  childCount: courses.length,
                 ),
               ),
             ),
@@ -207,64 +207,64 @@ class _CourseGridView extends ConsumerWidget {
   }
 }
 
-/// View showing recipes organized by categories (like spreadsheet tabs)
+/// View showing recipes organized by courses (like spreadsheet tabs)
 /// DEPRECATED: Keeping for reference, but now using CourseGridView
-class CategoryRecipeView extends StatefulWidget {
-  final List<Category> categories;
+class CourseRecipeView extends StatefulWidget {
+  final List<Course> courses;
   final RecipeSourceFilter sourceFilter;
   final String? emptyMessage;
 
-  const CategoryRecipeView({
+  const CourseRecipeView({
     super.key,
-    required this.categories,
+    required this.courses,
     this.sourceFilter = RecipeSourceFilter.all,
     this.emptyMessage,
   });
 
   @override
-  State<CategoryRecipeView> createState() => _CategoryRecipeViewState();
+  State<CourseRecipeView> createState() => _CourseRecipeViewState();
 }
 
-class _CategoryRecipeViewState extends State<CategoryRecipeView> with SingleTickerProviderStateMixin {
-  late TabController _categoryTabController;
+class _CourseRecipeViewState extends State<CourseRecipeView> with SingleTickerProviderStateMixin {
+  late TabController _courseTabController;
 
   @override
   void initState() {
     super.initState();
-    _categoryTabController = TabController(
-      length: widget.categories.length,
+    _courseTabController = TabController(
+      length: widget.courses.length,
       vsync: this,
     );
   }
 
   @override
   void dispose() {
-    _categoryTabController.dispose();
+    _courseTabController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    if (widget.categories.isEmpty) {
-      return const Center(child: Text('No categories found'));
+    if (widget.courses.isEmpty) {
+      return const Center(child: Text('No courses found'));
     }
 
     return Column(
       children: [
-        // Category tabs (scrollable, like spreadsheet tabs at bottom)
+        // Course tabs (scrollable, like spreadsheet tabs at bottom)
         Container(
           color: Theme.of(context).colorScheme.surfaceContainerHighest,
           child: TabBar(
-            controller: _categoryTabController,
+            controller: _courseTabController,
             isScrollable: true,
             tabAlignment: TabAlignment.start,
             indicatorSize: TabBarIndicatorSize.tab,
-            tabs: widget.categories.map((category) {
+            tabs: widget.courses.map((course) {
               return Tab(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: category.color.withOpacity(0.2),
+                    color: course.color.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Row(
@@ -274,12 +274,12 @@ class _CategoryRecipeViewState extends State<CategoryRecipeView> with SingleTick
                         width: 8,
                         height: 8,
                         decoration: BoxDecoration(
-                          color: category.color,
+                          color: course.color,
                           shape: BoxShape.circle,
                         ),
                       ),
                       const SizedBox(width: 6),
-                      Text(category.name),
+                      Text(course.name),
                     ],
                   ),
                 ),
@@ -287,13 +287,13 @@ class _CategoryRecipeViewState extends State<CategoryRecipeView> with SingleTick
             }).toList(),
           ),
         ),
-        // Recipe list for selected category
+        // Recipe list for selected course
         Expanded(
           child: TabBarView(
-            controller: _categoryTabController,
-            children: widget.categories.map((category) {
+            controller: _courseTabController,
+            children: widget.courses.map((course) {
               return RecipeListScreen(
-                course: category.slug,
+                course: course.slug,
                 sourceFilter: widget.sourceFilter,
                 emptyMessage: widget.emptyMessage,
               );
