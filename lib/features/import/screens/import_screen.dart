@@ -217,7 +217,9 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
   }
 
   Future<void> _scanFromCamera(BuildContext context) async {
+    debugPrint('_scanFromCamera called, isMobile: ${_isMobilePlatform()}');
     if (!_isMobilePlatform()) {
+      debugPrint('Showing OCR snackbar');
       MemoixSnackBar.show('OCR is only available on mobile devices');
       return;
     }
