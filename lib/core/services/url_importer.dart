@@ -2721,19 +2721,40 @@ class UrlRecipeImporter {
     RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Season|Taste|Serve|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Skim|Ladle|Spoon)\s+(?:the|a|an|your|each|all)\b', caseSensitive: false),
     // Lines that start with action verbs followed by common prepositions or adverbs
     RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Bring|Reduce|Simmer|Boil|Season|Taste|Serve|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Using|Once|After|When|Before|While|If|Make|Start|Begin|Continue|Repeat|Turn|Flip|Rotate)\s+(?:until|over|for|to|into|in|on|at|with|all|your|this|it|them|each|every|together|well|thoroughly|gently|carefully|slowly|quickly|immediately|aside)\b', caseSensitive: false),
-    // Lines that start with action verbs followed by any word and then "in/into/until/and"
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Peel|Core|Grate|Shred|Massage|Pack|Place|Remove|Transfer)\s+\w+\s+(?:in|into|and|then|until)\b', caseSensitive: false),
+    // Lines that start with action verbs followed by any word(s) and contain action verbs later (compound instructions)
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Peel|Core|Grate|Shred|Massage|Pack|Place|Remove|Transfer|Cover)\s+.+\b(?:add|and\s+add|then\s+add|;|and\s+wait|and\s+let)\b', caseSensitive: false),
+    // Lines that start with "Once" followed by descriptive text (conditional instructions)
+    RegExp(r'^Once\s+(?:you|the|it|they|everything)\b', caseSensitive: false),
     // Lines that contain multiple direction verbs (likely instructions)
     RegExp(r'\b(?:and\s+)?(?:then\s+)?(?:stir|mix|add|cook|bake|heat|let|allow|place|cover|remove|transfer|serve|refrigerate|store)\b.*\b(?:until|for|about|approximately)\b', caseSensitive: false),
   ];
+  
+  /// Strong action verb pattern - if line starts with these AND is long enough, it's likely a direction
+  static final _strongActionVerbPattern = RegExp(
+    r'^(?:Slice|Cut|Chop|Dice|Mince|Peel|Core|Grate|Shred|Massage|Pack|Place|Remove|Transfer|Cover|Drain|Rinse|Wash|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Allow|Let|Store|Prepare|Season|Serve|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Whisk|Blend|Process|Puree|Strain|Filter|Once|After|When|Before|While)\b',
+    caseSensitive: false,
+  );
   
   /// Check if a string looks like a direction/instruction
   bool _isDirectionLikeLine(String line) {
     final trimmed = line.trim();
     // Must be longer than a typical ingredient (instructions are usually verbose)
     if (trimmed.length < 40) return false;
-    // Must contain a period (complete sentence) or be very long with commas
-    if (!trimmed.contains('.') && !(trimmed.length > 80 && trimmed.contains(','))) return false;
+    
+    // Check if starts with a strong action verb - if so, relaxed punctuation requirements
+    final startsWithActionVerb = _strongActionVerbPattern.hasMatch(trimmed);
+    
+    // For lines starting with action verbs, accept semicolons or just being long enough
+    if (startsWithActionVerb) {
+      // If it's long enough (>50 chars) and starts with action verb, it's likely a direction
+      if (trimmed.length > 50) return true;
+      // Or if it contains semicolon (often used as step separator)
+      if (trimmed.contains(';')) return true;
+    }
+    
+    // For other lines, require more structure
+    // Must contain a period, semicolon, or be very long with commas
+    if (!trimmed.contains('.') && !trimmed.contains(';') && !(trimmed.length > 80 && trimmed.contains(','))) return false;
     
     // Check against explicit patterns
     if (_directionLikePatterns.any((p) => p.hasMatch(trimmed))) return true;
