@@ -218,7 +218,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
   Future<void> _scanFromCamera(BuildContext context) async {
     if (!_isMobilePlatform()) {
-      MemoixSnackBar.show(context, 'OCR is only available on mobile devices');
+      MemoixSnackBar.show('OCR is only available on mobile devices');
       return;
     }
     final ocrImporter = ref.read(ocrImporterProvider);
@@ -228,7 +228,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
   void _scanMultipleImages(BuildContext context) {
     if (!_isMobilePlatform()) {
-      MemoixSnackBar.show(context, 'OCR is only available on mobile devices');
+      MemoixSnackBar.show('OCR is only available on mobile devices');
       return;
     }
     Navigator.of(context).push(
@@ -240,7 +240,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
   Future<void> _scanFromGallery(BuildContext context) async {
     if (!_isMobilePlatform()) {
-      MemoixSnackBar.show(context, 'OCR is only available on mobile devices');
+      MemoixSnackBar.show('OCR is only available on mobile devices');
       return;
     }
     final ocrImporter = ref.read(ocrImporterProvider);

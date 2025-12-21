@@ -1,7 +1,7 @@
 # Memoix
 
 <p align="center">
-  <img src="assets/images/Memoix-logo-mauve-400.png" alt="Memoix Logo" width="200">
+  <img src="assets/images/Memoix-logo-mauve-800.png" alt="Memoix Logo" width="200">
 </p>
 
 Memoix is a recipe and food reference app for people who cook seriously.
