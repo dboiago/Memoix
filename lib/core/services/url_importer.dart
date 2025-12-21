@@ -2654,6 +2654,61 @@ class UrlRecipeImporter {
     return false;
   }
   
+  /// Shared garbage patterns for ingredient filtering
+  /// Used by both JSON-LD and HTML parsing paths
+  static final _ingredientGarbagePatterns = [
+    RegExp(r'Completed\s+step', caseSensitive: false),  // Weber checkbox labels
+    RegExp(r'^step\s+\d+$', caseSensitive: false),       // Standalone "Step 1", "Step 2"
+    RegExp(r'^save\s+recipe', caseSensitive: false),     // Save buttons
+    RegExp(r'^print\s+recipe', caseSensitive: false),    // Print buttons
+    RegExp(r'^share\s+recipe', caseSensitive: false),    // Share buttons
+    RegExp(r'^\d+\s*(?:min(?:ute)?s?|hrs?|hours?)$', caseSensitive: false), // Standalone time labels
+    // Social media garbage
+    RegExp(r'Click\s+to\s+Share', caseSensitive: false),
+    RegExp(r'Share\s+on\s+(?:Facebook|Twitter|Pinterest|Instagram)', caseSensitive: false),
+    RegExp(r'(?:Facebook|Twitter|Pinterest|Instagram)\s+(?:Facebook|Twitter|Pinterest|Instagram)?$', caseSensitive: false),
+    RegExp(r'^(?:Like|Tweet|Pin|Share)\s+(?:this|it)?$', caseSensitive: false),
+    // Subscribe/newsletter garbage
+    RegExp(r'Subscribe\s+to', caseSensitive: false),
+    RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false),
+    RegExp(r'newsletter', caseSensitive: false),
+    // Ad script garbage
+    RegExp(r'adsbygoogle', caseSensitive: false),
+    RegExp(r'window\._wca', caseSensitive: false),
+    RegExp(r'window\.adsbygoogle', caseSensitive: false),
+    RegExp(r'googlesyndication', caseSensitive: false),
+    RegExp(r'^\s*\|\|\s*\[\]', caseSensitive: false),  // JavaScript array patterns
+    RegExp(r'\.push\s*\(', caseSensitive: false),       // JavaScript push calls
+    // Lines that look like directions, not ingredients (contain action verbs at start)
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store)\s+the\b', caseSensitive: false),
+  ];
+  
+  /// Check if an ingredient string is garbage (UI element, ad script, etc.)
+  bool _isGarbageIngredient(String ingredient) {
+    final trimmed = ingredient.trim();
+    if (trimmed.isEmpty || !RegExp(r'[a-zA-Z0-9]').hasMatch(trimmed)) return true;
+    return _ingredientGarbagePatterns.any((p) => p.hasMatch(trimmed));
+  }
+  
+  /// Filter and deduplicate ingredient strings, removing garbage
+  List<String> _filterIngredientStrings(List<String> rawStrings) {
+    final seenIngredients = <String>{};
+    final filtered = <String>[];
+    
+    for (final s in rawStrings) {
+      final trimmed = s.trim();
+      if (_isGarbageIngredient(trimmed)) continue;
+      
+      // Normalize for comparison (lowercase, collapse whitespace)
+      final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+      if (seenIngredients.contains(normalizedKey)) continue;
+      seenIngredients.add(normalizedKey);
+      filtered.add(trimmed);
+    }
+    
+    return filtered;
+  }
+  
   /// Extract chapters from YouTube description
   /// Format: "Chapter Title – MM:SS" or "MM:SS Chapter Title"
   List<YouTubeChapter> _extractYouTubeChapters(String description) {
@@ -3578,6 +3633,8 @@ class UrlRecipeImporter {
     if (rawIngredientStrings.isEmpty) {
       rawIngredientStrings = _extractRawIngredients(data['ingredients']);
     }
+    // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+    rawIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
     // Parse from the already-rejoined raw strings, not the original JSON-LD
     var ingredients = _parseIngredients(rawIngredientStrings);
     ingredients = _sortIngredientsByQuantity(ingredients);
@@ -3602,6 +3659,10 @@ class UrlRecipeImporter {
       directions = _parseInstructions(data['instructions']);
       rawDirections = _extractRawDirections(data['instructions']);
     }
+    // Filter out junk direction lines (ads, subscribe prompts, social media, etc.)
+    directions = directions.where((d) => !_isJunkDirectionLine(d)).toList();
+    rawDirections = rawDirections.where((d) => !_isJunkDirectionLine(d)).toList();
+    
     double directionsConfidence = directions.isNotEmpty ? 0.8 : 0.0;
     // Boost if directions are detailed (more than a few words each)
     if (directions.isNotEmpty) {
@@ -7065,49 +7126,8 @@ class UrlRecipeImporter {
     final baseConfidence = usedStructuredFormat ? 0.85 : 0.7;
     final nameConfidence = title != null && title.isNotEmpty ? baseConfidence : 0.0;
     
-    // Filter out empty or whitespace-only ingredient strings before processing
-    // Also filter out strings that are just punctuation or control characters
-    // And deduplicate ingredients (some sites like Saveur return duplicates)
-    // Also filter out UI/interactive element garbage (Weber's "Completed step N" checkboxes)
-    final seenIngredients = <String>{};
-    final filteredIngredientStrings = <String>[];
-    final uiGarbagePatterns = [
-      RegExp(r'Completed\s+step', caseSensitive: false),  // Weber checkbox labels
-      RegExp(r'^step\s+\d+$', caseSensitive: false),       // Standalone "Step 1", "Step 2"
-      RegExp(r'^save\s+recipe', caseSensitive: false),     // Save buttons
-      RegExp(r'^print\s+recipe', caseSensitive: false),    // Print buttons
-      RegExp(r'^share\s+recipe', caseSensitive: false),    // Share buttons
-      RegExp(r'^\d+\s*(?:min(?:ute)?s?|hrs?|hours?)$', caseSensitive: false), // Standalone time labels
-      // Social media garbage
-      RegExp(r'Click\s+to\s+Share', caseSensitive: false),
-      RegExp(r'Share\s+on\s+(?:Facebook|Twitter|Pinterest|Instagram)', caseSensitive: false),
-      RegExp(r'(?:Facebook|Twitter|Pinterest|Instagram)\s+(?:Facebook|Twitter|Pinterest|Instagram)?$', caseSensitive: false),
-      RegExp(r'^(?:Like|Tweet|Pin|Share)\s+(?:this|it)?$', caseSensitive: false),
-      // Subscribe/newsletter garbage
-      RegExp(r'Subscribe\s+to', caseSensitive: false),
-      RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false),
-      RegExp(r'newsletter', caseSensitive: false),
-      // Ad script garbage
-      RegExp(r'adsbygoogle', caseSensitive: false),
-      RegExp(r'window\._wca', caseSensitive: false),
-      RegExp(r'window\.adsbygoogle', caseSensitive: false),
-      RegExp(r'googlesyndication', caseSensitive: false),
-      RegExp(r'^\s*\|\|\s*\[\]', caseSensitive: false),  // JavaScript array patterns
-      RegExp(r'\.push\s*\(', caseSensitive: false),       // JavaScript push calls
-      // Lines that look like directions, not ingredients (contain action verbs at start)
-      RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store)\s+the\b', caseSensitive: false),
-    ];
-    for (final s in rawIngredientStrings) {
-      final trimmed = s.trim();
-      if (trimmed.isEmpty || !RegExp(r'[a-zA-Z0-9]').hasMatch(trimmed)) continue;
-      // Skip UI garbage patterns
-      if (uiGarbagePatterns.any((p) => p.hasMatch(trimmed))) continue;
-      // Normalize for comparison (lowercase, collapse whitespace)
-      final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
-      if (seenIngredients.contains(normalizedKey)) continue;
-      seenIngredients.add(normalizedKey);
-      filteredIngredientStrings.add(trimmed);
-    }
+    // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+    final filteredIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
     
     final ingredientsConfidence = filteredIngredientStrings.isNotEmpty 
         ? (ingredients.length / filteredIngredientStrings.length) * baseConfidence 
