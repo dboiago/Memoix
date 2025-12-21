@@ -379,11 +379,9 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             _buildDirectionsSection(theme),
             const SizedBox(height: 24),
 
-            // Step Images Gallery (shown if any step has images)
-            if (_stepImages.isNotEmpty) ...[
-              _buildStepImagesGallery(theme),
-              const SizedBox(height: 24),
-            ],
+            // Step Images Gallery (always shown with add button)
+            _buildStepImagesGallery(theme),
+            const SizedBox(height: 24),
 
             // Comments (single notes field)
             Text(
@@ -824,166 +822,154 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     );
   }
 
-  /// Get all images as a unified list (header first, then step images)
-  List<String> get _allImages {
-    final images = <String>[];
-    if (_headerImage != null && _headerImage!.isNotEmpty) {
-      images.add(_headerImage!);
-    }
-    images.addAll(_stepImages);
-    return images;
-  }
+  // ============ HEADER IMAGE PICKER (Full width at top) ============
 
   Widget _buildImagePicker(ThemeData theme) {
-    final hasImages = _allImages.isNotEmpty;
-
+    final hasImage = _headerImage != null && _headerImage!.isNotEmpty;
+    
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Recipe Photos',
+          'Recipe Photo',
           style: theme.textTheme.titleSmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
         const SizedBox(height: 8),
-        if (hasImages)
-          _buildImageGallery(theme)
-        else
-          _buildEmptyImagePicker(theme),
+        GestureDetector(
+          onTap: _pickHeaderImage,
+          child: Container(
+            height: 180,
+            decoration: BoxDecoration(
+              color: theme.colorScheme.surfaceContainerHighest,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: theme.colorScheme.outline.withOpacity(0.3),
+              ),
+            ),
+            child: hasImage
+                ? Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(11),
+                        child: _buildImageWidget(_headerImage!, width: double.infinity, height: 180),
+                      ),
+                      Positioned(
+                        top: 8,
+                        right: 8,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            _imageActionButton(
+                              icon: Icons.edit,
+                              onTap: _pickHeaderImage,
+                              theme: theme,
+                            ),
+                            const SizedBox(width: 8),
+                            _imageActionButton(
+                              icon: Icons.delete,
+                              onTap: _removeHeaderImage,
+                              theme: theme,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                : Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate_outlined,
+                          size: 48,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Tap to add photo',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+          ),
+        ),
       ],
     );
   }
 
-  Widget _buildEmptyImagePicker(ThemeData theme) {
-    return GestureDetector(
-      onTap: _showImageSourceDialog,
-      child: Container(
-        height: 180,
-        decoration: BoxDecoration(
-          color: theme.colorScheme.surfaceContainerHighest,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
-          ),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.add_photo_alternate_outlined,
-                size: 48,
-                color: theme.colorScheme.onSurfaceVariant,
+  void _pickHeaderImage() {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImageForHeader(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImageForHeader(ImageSource.gallery);
+              },
+            ),
+            // Show URL option if current image is a URL
+            if (_headerImage != null && _headerImage!.startsWith('http'))
+              ListTile(
+                leading: const Icon(Icons.link),
+                title: const Text('Using URL'),
+                subtitle: Text(_headerImage!, overflow: TextOverflow.ellipsis),
+                enabled: false,
               ),
-              const SizedBox(height: 8),
-              Text(
-                'Tap to add photos',
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
-          ),
+            ListTile(
+              leading: const Icon(Icons.close),
+              title: const Text('Cancel'),
+              onTap: () => Navigator.pop(ctx),
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Widget _buildImageGallery(ThemeData theme) {
-    final images = _allImages;
-    return Column(
-      children: [
-        SizedBox(
-          height: 120,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: images.length + 1, // +1 for add button
-            itemBuilder: (context, index) {
-              if (index == images.length) {
-                // Add more button
-                return Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: GestureDetector(
-                    onTap: _showImageSourceDialog,
-                    child: Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(
-                          color: theme.colorScheme.outline.withOpacity(0.3),
-                        ),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.add,
-                            size: 32,
-                            color: theme.colorScheme.onSurfaceVariant,
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            'Add',
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
-              }
+  Future<void> _pickImageForHeader(ImageSource source) async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
 
-              return Padding(
-                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
-                child: Stack(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: _buildImageWidget(images[index], width: 100, height: 120),
-                    ),
-                    // Image number badge
-                    Positioned(
-                      top: 4,
-                      left: 4,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.6),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Text(
-                          '${index + 1}',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                    ),
-                    // Remove button
-                    Positioned(
-                      top: 4,
-                      right: 4,
-                      child: _imageActionButton(
-                        icon: Icons.close,
-                        onTap: () => _removeImage(index),
-                        theme: theme,
-                        size: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
-          ),
-        ),
-      ],
-    );
+      if (pickedFile != null) {
+        final savedPath = await _saveImageToLocal(pickedFile.path);
+        setState(() {
+          _headerImage = savedPath;
+        });
+      }
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
+    }
+  }
+
+  void _removeHeaderImage() {
+    setState(() {
+      _headerImage = null;
+    });
   }
 
   Widget _imageActionButton({
@@ -999,79 +985,20 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
         child: Padding(
-          padding: const EdgeInsets.all(4),
+          padding: const EdgeInsets.all(8),
           child: Icon(icon, size: size, color: theme.colorScheme.onSurface),
         ),
       ),
     );
   }
 
-  void _removeImage(int index) {
-    setState(() {
-      if (index == 0 && _headerImage != null && _headerImage!.isNotEmpty) {
-        // Removing header image
-        _headerImage = null;
-        // Shift first step image to header if available
-        if (_stepImages.isNotEmpty) {
-          _headerImage = _stepImages.removeAt(0);
-        }
-      } else {
-        // Removing a step image (adjust index for header)
-        final stepIndex = _headerImage != null && _headerImage!.isNotEmpty ? index - 1 : index;
-        if (stepIndex >= 0 && stepIndex < _stepImages.length) {
-          _stepImages.removeAt(stepIndex);
-        }
-      }
-    });
-  }
+  // ============ STEP IMAGES (Gallery at bottom) ============
 
-  void _showImageSourceDialog() {
-    showModalBottomSheet(
-      context: context,
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.camera_alt),
-              title: const Text('Take Photo'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickImage(ImageSource.camera);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.photo_library),
-              title: const Text('Choose from Gallery'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickImage(ImageSource.gallery);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.collections),
-              title: const Text('Choose Multiple Photos'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickMultipleImages();
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.close),
-              title: const Text('Cancel'),
-              onTap: () => Navigator.pop(ctx),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Future<void> _pickImage(ImageSource source) async {
+  Future<void> _pickStepImage() async {
     try {
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
-        source: source,
+        source: ImageSource.gallery,
         maxWidth: 1200,
         maxHeight: 1200,
         imageQuality: 85,
@@ -1080,12 +1007,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       if (pickedFile != null) {
         final savedPath = await _saveImageToLocal(pickedFile.path);
         setState(() {
-          // First image goes to header, rest go to stepImages
-          if (_headerImage == null || _headerImage!.isEmpty) {
-            _headerImage = savedPath;
-          } else {
-            _stepImages.add(savedPath);
-          }
+          _stepImages.add(savedPath);
         });
       }
     } catch (e) {
@@ -1093,31 +1015,24 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     }
   }
 
-  Future<void> _pickMultipleImages() async {
-    try {
-      final picker = ImagePicker();
-      final pickedFiles = await picker.pickMultiImage(
-        maxWidth: 1200,
-        maxHeight: 1200,
-        imageQuality: 85,
-      );
-
-      if (pickedFiles.isNotEmpty) {
-        for (final file in pickedFiles) {
-          final savedPath = await _saveImageToLocal(file.path);
-          setState(() {
-            // First image goes to header, rest go to stepImages
-            if (_headerImage == null || _headerImage!.isEmpty) {
-              _headerImage = savedPath;
-            } else {
-              _stepImages.add(savedPath);
-            }
-          });
+  void _removeStepImage(int index) {
+    setState(() {
+      // Remove all step associations to this image
+      _stepImageMap.removeWhere((k, v) => v == index);
+      // Update indices for images after this one
+      final newMap = <int, int>{};
+      for (final entry in _stepImageMap.entries) {
+        if (entry.value > index) {
+          newMap[entry.key] = entry.value - 1;
+        } else {
+          newMap[entry.key] = entry.value;
         }
       }
-    } catch (e) {
-      MemoixSnackBar.showError('Error picking images: $e');
-    }
+      _stepImageMap.clear();
+      _stepImageMap.addAll(newMap);
+      // Remove the image
+      _stepImages.removeAt(index);
+    });
   }
 
   Widget _buildDirectionsSection(ThemeData theme) {
@@ -1331,29 +1246,30 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             Text(
               'Gallery',
               style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w600,
               ),
             ),
             const SizedBox(width: 8),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.primaryContainer,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                '${_stepImages.length}',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onPrimaryContainer,
-                  fontWeight: FontWeight.w500,
+            if (_stepImages.isNotEmpty)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '${_stepImages.length}',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onPrimaryContainer,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
-            ),
           ],
         ),
         const SizedBox(height: 4),
         Text(
-          'Images attached to steps above',
+          'Add photos for cooking steps',
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
@@ -1363,8 +1279,43 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           height: 100,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: _stepImages.length,
+            itemCount: _stepImages.length + 1, // +1 for add button
             itemBuilder: (context, index) {
+              // Add button at the end
+              if (index == _stepImages.length) {
+                return GestureDetector(
+                  onTap: _pickStepImage,
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: theme.colorScheme.outline.withOpacity(0.3),
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate,
+                          size: 32,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Add',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
+
               // Find which step(s) use this image
               final stepsUsingImage = _stepImageMap.entries
                   .where((e) => e.value == index)
@@ -1372,7 +1323,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                   .toList();
 
               return Padding(
-                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
+                padding: const EdgeInsets.only(right: 8),
                 child: Stack(
                   children: [
                     ClipRRect(
@@ -1408,28 +1359,15 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                         color: theme.colorScheme.surface.withOpacity(0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
-                          onTap: () {
-                            setState(() {
-                              // Remove all step associations to this image
-                              _stepImageMap.removeWhere((k, v) => v == index);
-                              // Update indices for images after this one
-                              final newMap = <int, int>{};
-                              for (final entry in _stepImageMap.entries) {
-                                if (entry.value > index) {
-                                  newMap[entry.key] = entry.value - 1;
-                                } else {
-                                  newMap[entry.key] = entry.value;
-                                }
-                              }
-                              _stepImageMap.clear();
-                              _stepImageMap.addAll(newMap);
-                              _stepImages.removeAt(index);
-                            });
-                          },
+                          onTap: () => _removeStepImage(index),
                           borderRadius: BorderRadius.circular(20),
                           child: Padding(
                             padding: const EdgeInsets.all(4),
-                            child: Icon(Icons.close, size: 16, color: theme.colorScheme.onSurface),
+                            child: Icon(
+                              Icons.close,
+                              size: 16,
+                              color: theme.colorScheme.error,
+                            ),
                           ),
                         ),
                       ),

@@ -117,7 +117,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   String _selectedCourse = 'mains';
   String? _selectedCuisine;
-  List<String> _imagePaths = []; // Header images - local file paths or URLs
+  String? _headerImage; // Header image - local file path or URL
   bool _isSaving = false;
   bool _isLoading = true;
   Recipe? _existingRecipe;
@@ -243,10 +243,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         }
       }
       
-      // Load header images only (first image from getFirstImage)
+      // Load header image only (from getFirstImage)
       final firstImage = recipe.getFirstImage();
       if (firstImage != null && firstImage.isNotEmpty) {
-        _imagePaths = [firstImage];
+        _headerImage = firstImage;
       }
       
       // Load drinks-specific fields
@@ -590,29 +590,30 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             Text(
               'Gallery',
               style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w600,
               ),
             ),
             const SizedBox(width: 8),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.primaryContainer,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                '${_stepImages.length}',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onPrimaryContainer,
-                  fontWeight: FontWeight.w500,
+            if (_stepImages.isNotEmpty)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '${_stepImages.length}',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onPrimaryContainer,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
-            ),
           ],
         ),
         const SizedBox(height: 4),
         Text(
-          'Images attached to steps above',
+          'Add photos for cooking steps',
           style: theme.textTheme.bodySmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
@@ -622,8 +623,43 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           height: 100,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: _stepImages.length,
+            itemCount: _stepImages.length + 1, // +1 for add button
             itemBuilder: (context, index) {
+              // Add button at the end
+              if (index == _stepImages.length) {
+                return GestureDetector(
+                  onTap: _pickGalleryImage,
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: theme.colorScheme.outline.withOpacity(0.3),
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate,
+                          size: 32,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Add',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
+
               // Find which step(s) use this image
               final stepsUsingImage = _stepImageMap.entries
                   .where((e) => e.value == index)
@@ -631,7 +667,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   .toList();
 
               return Padding(
-                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
+                padding: const EdgeInsets.only(right: 8),
                 child: Stack(
                   children: [
                     ClipRRect(
@@ -667,31 +703,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                         color: theme.colorScheme.surface.withOpacity(0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
-                          onTap: () {
-                            setState(() {
-                              // Remove all step associations to this image
-                              _stepImageMap.removeWhere((k, v) => v == index);
-                              // Update indices for images after this one
-                              final newMap = <int, int>{};
-                              for (final entry in _stepImageMap.entries) {
-                                if (entry.value > index) {
-                                  newMap[entry.key] = entry.value - 1;
-                                } else {
-                                  newMap[entry.key] = entry.value;
-                                }
-                              }
-                              _stepImageMap.clear();
-                              _stepImageMap.addAll(newMap);
-                              _stepImages.removeAt(index);
-                            });
-                          },
+                          onTap: () => _removeGalleryImage(index),
                           borderRadius: BorderRadius.circular(20),
                           child: Padding(
                             padding: const EdgeInsets.all(4),
                             child: Icon(
                               Icons.close,
                               size: 14,
-                              color: theme.colorScheme.error,
+                              color: theme.colorScheme.secondary,
                             ),
                           ),
                         ),
@@ -705,6 +724,89 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ),
       ],
     );
+  }
+
+  Future<void> _pickGalleryImage() async {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImageForGallery(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImageForGallery(ImageSource.gallery);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.close),
+              title: const Text('Cancel'),
+              onTap: () => Navigator.pop(ctx),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickImageForGallery(ImageSource source) async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFile != null) {
+        // Copy to app documents directory for persistence
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/recipe_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+
+        setState(() {
+          _stepImages.add(savedFile.path);
+        });
+      }
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
+    }
+  }
+
+  void _removeGalleryImage(int index) {
+    setState(() {
+      // Remove all step associations to this image
+      _stepImageMap.removeWhere((k, v) => v == index);
+      // Update indices for images after this one
+      final newMap = <int, int>{};
+      for (final entry in _stepImageMap.entries) {
+        if (entry.value > index) {
+          newMap[entry.key] = entry.value - 1;
+        } else {
+          newMap[entry.key] = entry.value;
+        }
+      }
+      _stepImageMap.clear();
+      _stepImageMap.addAll(newMap);
+      _stepImages.removeAt(index);
+    });
   }
 
   Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {
@@ -1263,11 +1365,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               },
             ),
             
-            // Step Images Gallery
-            if (_stepImages.isNotEmpty) ...[
-              const SizedBox(height: 16),
-              _buildStepImagesGallery(theme),
-            ],
+            // Step Images Gallery (always visible with add button)
+            const SizedBox(height: 16),
+            _buildStepImagesGallery(theme),
 
             const SizedBox(height: 24),
 
@@ -1479,7 +1579,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       ..ingredients = ingredients
       ..directions = directions
       ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..headerImage = _imagePaths.isNotEmpty ? _imagePaths.first : null
+      ..headerImage = _headerImage
       ..stepImages = _stepImages
       ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
       ..pairedRecipeIds = _pairedRecipeIds
@@ -1517,7 +1617,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       ..seasonings = seasonings
       ..directions = directions
       ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..headerImage = _imagePaths.isNotEmpty ? _imagePaths.first : null
+      ..headerImage = _headerImage
       ..stepImages = _stepImages
       ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
       ..pairedRecipeIds = _pairedRecipeIds
@@ -1621,8 +1721,8 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             (widget.importedRecipe != null ? RecipeSource.imported : 
              widget.ocrText != null ? RecipeSource.ocr : RecipeSource.personal)
         ..nutrition = _buildNutritionInfo()
-        ..imageUrls = _imagePaths
-        ..imageUrl = _imagePaths.isNotEmpty ? _imagePaths.first : null
+        ..headerImage = _headerImage
+        ..imageUrl = _headerImage
         ..stepImages = _stepImages
         ..stepImageMap = _stepImageMap.entries
             .map((e) => '${e.key}:${e.value}')
@@ -2016,210 +2116,112 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     });
   }
 
-  // ============ IMAGE PICKER ============
+  // ============ HEADER IMAGE PICKER ============
 
   Widget _buildImagePicker(ThemeData theme) {
-    final hasImages = _imagePaths.isNotEmpty;
+    final hasImage = _headerImage != null && _headerImage!.isNotEmpty;
     
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Recipe Photos',
+          'Recipe Photo',
           style: theme.textTheme.titleSmall?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
         const SizedBox(height: 8),
-        if (hasImages)
-          _buildImageGallery(theme)
-        else
-          _buildEmptyImagePicker(theme),
-      ],
-    );
-  }
-
-  Widget _buildEmptyImagePicker(ThemeData theme) {
-    return GestureDetector(
-      onTap: _showImageSourceDialog,
-      child: Container(
-        height: 180,
-        decoration: BoxDecoration(
-          color: theme.colorScheme.surfaceContainerHighest,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
-          ),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.add_photo_alternate_outlined,
-                size: 48,
-                color: theme.colorScheme.onSurfaceVariant,
+        GestureDetector(
+          onTap: _pickHeaderImage,
+          child: Container(
+            height: 180,
+            decoration: BoxDecoration(
+              color: theme.colorScheme.surfaceContainerHighest,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: theme.colorScheme.outline.withOpacity(0.3),
               ),
-              const SizedBox(height: 8),
-              Text(
-                'Tap to add photos',
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildImageGallery(ThemeData theme) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 120,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: _imagePaths.length + 1, // +1 for add button
-            itemBuilder: (context, index) {
-              if (index == _imagePaths.length) {
-                // Add more button
-                return Padding(
-                  padding: const EdgeInsets.only(left: 8),
-                  child: GestureDetector(
-                    onTap: _showImageSourceDialog,
-                    child: Container(
-                      width: 100,
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(
-                          color: theme.colorScheme.outline.withOpacity(0.3),
+            ),
+            child: hasImage
+                ? Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(11),
+                        child: _buildHeaderImageWidget(),
+                      ),
+                      Positioned(
+                        top: 8,
+                        right: 8,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            _imageActionButton(
+                              icon: Icons.edit,
+                              onTap: _pickHeaderImage,
+                              theme: theme,
+                            ),
+                            const SizedBox(width: 8),
+                            _imageActionButton(
+                              icon: Icons.delete,
+                              onTap: _removeHeaderImage,
+                              theme: theme,
+                            ),
+                          ],
                         ),
                       ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.add,
-                            size: 32,
+                    ],
+                  )
+                : Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add_photo_alternate_outlined,
+                          size: 48,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Tap to add photo',
+                          style: theme.textTheme.bodyMedium?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
-                          const SizedBox(height: 4),
-                          Text(
-                            'Add',
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
-                );
-              }
-              
-              return Padding(
-                padding: EdgeInsets.only(left: index == 0 ? 0 : 8),
-                child: Stack(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: _buildImageWidget(_imagePaths[index], width: 100, height: 120),
-                    ),
-                    // Image number badge
-                    Positioned(
-                      top: 4,
-                      left: 4,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.6),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Text(
-                          '${index + 1}',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                    ),
-                    // Remove button
-                    Positioned(
-                      top: 4,
-                      right: 4,
-                      child: _imageActionButton(
-                        icon: Icons.close,
-                        onTap: () => _removeImage(index),
-                        theme: theme,
-                        size: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
           ),
         ),
       ],
     );
   }
 
-  Widget _imageActionButton({
-    required IconData icon,
-    required VoidCallback onTap,
-    required ThemeData theme,
-    double size = 20,
-  }) {
-    return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
-      borderRadius: BorderRadius.circular(20),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(20),
-        child: Padding(
-          padding: const EdgeInsets.all(4),
-          child: Icon(icon, size: size, color: theme.colorScheme.onSurface),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildImageWidget(String imagePath, {double? width, double? height}) {
+  Widget _buildHeaderImageWidget() {
+    if (_headerImage == null) return const SizedBox.shrink();
+    
     // Check if it's a URL or local file
-    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+    if (_headerImage!.startsWith('http://') || _headerImage!.startsWith('https://')) {
       return Image.network(
-        imagePath,
-        width: width,
-        height: height,
+        _headerImage!,
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => SizedBox(
-          width: width,
-          height: height,
-          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        errorBuilder: (_, __, ___) => const Center(
+          child: Icon(Icons.broken_image, size: 48),
         ),
       );
     } else {
       // Local file
       return Image.file(
-        File(imagePath),
-        width: width,
-        height: height,
+        File(_headerImage!),
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => SizedBox(
-          width: width,
-          height: height,
-          child: const Center(child: Icon(Icons.broken_image, size: 32)),
+        errorBuilder: (_, __, ___) => const Center(
+          child: Icon(Icons.broken_image, size: 48),
         ),
       );
     }
   }
 
-  void _showImageSourceDialog() {
+  void _pickHeaderImage() {
     showModalBottomSheet(
       context: context,
       builder: (ctx) => SafeArea(
@@ -2231,7 +2233,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               title: const Text('Take Photo'),
               onTap: () {
                 Navigator.pop(ctx);
-                _pickImage(ImageSource.camera);
+                _pickImageForHeader(ImageSource.camera);
               },
             ),
             ListTile(
@@ -2239,15 +2241,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               title: const Text('Choose from Gallery'),
               onTap: () {
                 Navigator.pop(ctx);
-                _pickImage(ImageSource.gallery);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.collections),
-              title: const Text('Choose Multiple Photos'),
-              onTap: () {
-                Navigator.pop(ctx);
-                _pickMultipleImages();
+                _pickImageForHeader(ImageSource.gallery);
               },
             ),
             ListTile(
@@ -2261,7 +2255,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     );
   }
 
-  Future<void> _pickImage(ImageSource source) async {
+  Future<void> _pickImageForHeader(ImageSource source) async {
     try {
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
@@ -2283,7 +2277,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
 
         setState(() {
-          _imagePaths.add(savedFile.path);
+          _headerImage = savedFile.path;
         });
       }
     } catch (e) {
@@ -2291,40 +2285,30 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
   }
 
-  Future<void> _pickMultipleImages() async {
-    try {
-      final picker = ImagePicker();
-      final pickedFiles = await picker.pickMultiImage(
-        maxWidth: 1200,
-        maxHeight: 1200,
-        imageQuality: 85,
-      );
-
-      if (pickedFiles.isNotEmpty) {
-        // Copy to app documents directory for persistence
-        final appDir = await getApplicationDocumentsDirectory();
-        final imagesDir = Directory('${appDir.path}/recipe_images');
-        if (!await imagesDir.exists()) {
-          await imagesDir.create(recursive: true);
-        }
-
-        for (final pickedFile in pickedFiles) {
-          final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
-          final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
-          _imagePaths.add(savedFile.path);
-        }
-
-        setState(() {});
-      }
-    } catch (e) {
-      MemoixSnackBar.showError('Error picking images: $e');
-    }
+  void _removeHeaderImage() {
+    setState(() {
+      _headerImage = null;
+    });
   }
 
-  void _removeImage(int index) {
-    setState(() {
-      _imagePaths.removeAt(index);
-    });
+  Widget _imageActionButton({
+    required IconData icon,
+    required VoidCallback onTap,
+    required ThemeData theme,
+    double size = 20,
+  }) {
+    return Material(
+      color: theme.colorScheme.surface.withOpacity(0.9),
+      borderRadius: BorderRadius.circular(20),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Icon(icon, size: size, color: theme.colorScheme.onSurface),
+        ),
+      ),
+    );
   }
 
   void _showOcrText(BuildContext context) {
