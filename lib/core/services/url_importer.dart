@@ -9996,11 +9996,14 @@ class UrlRecipeImporter {
   
   /// Process ingredient list items - handles section headers within ingredients
   /// Detects patterns like "Ingredients for Sauce:" as section headers
+  /// Also handles "and/or" patterns between consecutive ingredients
   List<String> _processIngredientListItems(List<String> items) {
     final processed = <String>[];
     int sectionCount = 0;
     
-    for (final item in items) {
+    for (int i = 0; i < items.length; i++) {
+      final item = items[i];
+      
       // Check if this is already a bracketed section header [Section Name]
       if (item.startsWith('[') && item.endsWith(']')) {
         sectionCount++;
@@ -10029,6 +10032,38 @@ class UrlRecipeImporter {
         // Add all section headers - we'll use them for grouping
         processed.add('[${_capitalise(sectionName)}]');
       } else if (item.isNotEmpty) {
+        // Check for "and/or" pattern - if this ingredient ends with "and/or" or "; and/or"
+        // and there's a next ingredient, merge them with the next as a note
+        final andOrMatch = RegExp(r'^(.+?)[;,]?\s*(?:and/or)\s*$', caseSensitive: false).firstMatch(item);
+        if (andOrMatch != null && i + 1 < items.length) {
+          final baseIngredient = andOrMatch.group(1)?.trim() ?? item;
+          final nextItem = items[i + 1];
+          
+          // Check if next item is an ingredient (starts with a number or fraction)
+          // and not a section header
+          if (!nextItem.startsWith('[') && 
+              !nextItem.endsWith(':') &&
+              RegExp(r'^[\d½⅓¼⅔¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]').hasMatch(nextItem)) {
+            // Merge: base ingredient with note "and/or [next ingredient]"
+            processed.add('$baseIngredient (and/or $nextItem)');
+            i++; // Skip the next item since we merged it
+            continue;
+          }
+        }
+        
+        // Check if this item starts with "and/or" - it should be merged with previous
+        if (RegExp(r'^and/or\s+', caseSensitive: false).hasMatch(item) && processed.isNotEmpty) {
+          final lastIndex = processed.length - 1;
+          final lastItem = processed[lastIndex];
+          // Don't merge with section headers
+          if (!lastItem.startsWith('[') && !lastItem.endsWith(']')) {
+            // Append this as a note to the previous ingredient
+            final cleanedItem = item.replaceFirst(RegExp(r'^and/or\s+', caseSensitive: false), '');
+            processed[lastIndex] = '${lastItem.replaceAll(RegExp(r'[;,]\s*$'), '')} (and/or $cleanedItem)';
+            continue;
+          }
+        }
+        
         processed.add(item);
       }
     }

@@ -994,11 +994,45 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
   // ============ STEP IMAGES (Gallery at bottom) ============
 
-  Future<void> _pickStepImage() async {
+  Future<void> _pickGalleryImage() async {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Take Photo'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImageForGallery(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choose from Gallery'),
+              onTap: () {
+                Navigator.pop(ctx);
+                _pickImageForGallery(ImageSource.gallery);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.close),
+              title: const Text('Cancel'),
+              onTap: () => Navigator.pop(ctx),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickImageForGallery(ImageSource source) async {
     try {
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
-        source: ImageSource.gallery,
+        source: source,
         maxWidth: 1200,
         maxHeight: 1200,
         imageQuality: 85,
@@ -1284,7 +1318,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               // Add button at the end
               if (index == _stepImages.length) {
                 return GestureDetector(
-                  onTap: _pickStepImage,
+                  onTap: _pickGalleryImage,
                   child: Container(
                     width: 100,
                     height: 100,
