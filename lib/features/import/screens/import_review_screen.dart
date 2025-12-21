@@ -767,6 +767,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                     // Check if this is a section-only header (empty name, has section)
                     // Sanitization already removed truly empty entries, so if name is empty here it's a section header
                     final isSectionHeader = cleanName.isEmpty && ingredient.sectionName != null;
+                    
+                    // Skip empty entries that aren't proper section headers
+                    // This catches edge cases where an entry has empty name but no section
+                    if (cleanName.isEmpty && !isSectionHeader) {
+                      return const SizedBox.shrink();
+                    }
 
                     // Section header row - spans full width
                     if (isSectionHeader) {

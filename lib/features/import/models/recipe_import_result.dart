@@ -681,8 +681,12 @@ class RawIngredientData {
       return true;
     }
     // Regular ingredients need a meaningful name with at least one letter/number
-    // Strip colons and other common separators that might be left over from section detection
-    final cleanName = name.replaceAll(RegExp(r'^[:\-–—\s]+|[:\-–—\s]+$'), '').trim();
+    // Remove ALL colons (consistent with display which strips them)
+    // Also strip leading/trailing dashes and whitespace
+    final cleanName = name
+        .replaceAll(':', '')
+        .replaceAll(RegExp(r'^[\-–—\s]+|[\-–—\s]+$'), '')
+        .trim();
     if (cleanName.isEmpty) return false;
     if (!RegExp(r'[a-zA-Z0-9]').hasMatch(cleanName)) return false;
     return true;
