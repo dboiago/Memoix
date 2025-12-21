@@ -3698,9 +3698,13 @@ class UrlRecipeImporter {
     
     if (!isRecipe) return null;
 
+    print('[DEBUG _parseJsonLdWithConfidence] Processing JSON-LD Recipe');
+    print('[DEBUG _parseJsonLdWithConfidence] Keys: ${data.keys.toList()}');
+
     // Parse with confidence scoring
     final name = _cleanRecipeName(_parseString(data['name']) ?? '');
     final nameConfidence = name.isNotEmpty ? 0.9 : 0.0;
+    print('[DEBUG _parseJsonLdWithConfidence] Recipe name: $name');
 
     // Parse ingredients and collect raw data
     // Use _extractRawIngredients first to rejoin incorrectly split ingredients (e.g., Diffords comma splits)
@@ -3732,16 +3736,24 @@ class UrlRecipeImporter {
 
     // Parse directions with confidence
     // Support both JSON-LD format (recipeInstructions) and non-standard format (instructions)
+    print('[DEBUG _parseJsonLdWithConfidence] recipeInstructions raw: ${data['recipeInstructions']}');
     var directions = _parseInstructions(data['recipeInstructions']);
     var rawDirections = _extractRawDirections(data['recipeInstructions']);
+    print('[DEBUG _parseJsonLdWithConfidence] Parsed directions count: ${directions.length}');
+    if (directions.isNotEmpty) {
+      print('[DEBUG _parseJsonLdWithConfidence] First direction: ${directions.first}');
+    }
     // Fallback to non-standard keys if JSON-LD key not found
     if (directions.isEmpty) {
+      print('[DEBUG _parseJsonLdWithConfidence] Trying fallback instructions key');
       directions = _parseInstructions(data['instructions']);
       rawDirections = _extractRawDirections(data['instructions']);
+      print('[DEBUG _parseJsonLdWithConfidence] Fallback directions count: ${directions.length}');
     }
     // Filter out junk direction lines (ads, subscribe prompts, social media, etc.)
     directions = directions.where((d) => !_isJunkDirectionLine(d)).toList();
     rawDirections = rawDirections.where((d) => !_isJunkDirectionLine(d)).toList();
+    print('[DEBUG _parseJsonLdWithConfidence] After junk filter: ${directions.length} directions');
     
     double directionsConfidence = directions.isNotEmpty ? 0.8 : 0.0;
     // Boost if directions are detailed (more than a few words each)
