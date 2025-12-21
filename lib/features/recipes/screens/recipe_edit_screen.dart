@@ -1473,7 +1473,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
       ..course = course
-      ..type = ModernistType.recipe
+      ..type = ModernistType.concept
       ..serves = _servesController.text.trim().isEmpty ? null : _servesController.text.trim()
       ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
       ..ingredients = ingredients
