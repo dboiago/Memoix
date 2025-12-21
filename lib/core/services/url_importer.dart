@@ -931,31 +931,7 @@ class UrlRecipeImporter {
               imageUrl: jsonLdResult.imageUrl,
               nutrition: jsonLdResult.nutrition,
               equipment: htmlEquipment.isNotEmpty ? htmlEquipment : jsonLdResult.equipment,
-              rawIngredients: htmlIngredients.map((raw) {
-                final parsed = _parseIngredientString(raw);
-                // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
-                final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-                
-                // Check if this raw string is a section header
-                final detectedSection = _detectSectionHeader(raw);
-                final effectiveSection = parsed.section ?? detectedSection;
-                final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
-                                      (detectedSection != null && parsed.amount == null && parsed.unit == null);
-                
-                return RawIngredientData(
-                  original: raw,
-                  amount: isSectionOnly ? null : parsed.amount,
-                  unit: isSectionOnly ? null : parsed.unit,
-                  preparation: isSectionOnly ? null : parsed.preparation,
-                  name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-                  looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-                  isSection: effectiveSection != null,
-                  sectionName: effectiveSection,
-                );
-              })
-              // Filter out empty entries - must have alphanumeric in name OR have a section
-              .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
-              .toList(),
+              rawIngredients: _buildRawIngredients(htmlIngredients),
               rawDirections: jsonLdResult.rawDirections,
               detectedCourses: jsonLdResult.detectedCourses,
               detectedCuisines: jsonLdResult.detectedCuisines,
@@ -1339,27 +1315,7 @@ class UrlRecipeImporter {
       }
       
       // Build raw ingredients list
-      final rawIngredients = rawIngredientStrings.map((raw) {
-        final parsed = _parseIngredientString(raw);
-        final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-        
-        // Check if this raw string is a section header
-        final detectedSection = _detectSectionHeader(raw);
-        final effectiveSection = parsed.section ?? detectedSection;
-        final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
-                              (detectedSection != null && parsed.amount == null && parsed.unit == null);
-        
-        return RawIngredientData(
-          original: raw,
-          amount: isSectionOnly ? null : parsed.amount,
-          unit: isSectionOnly ? null : parsed.unit,
-          preparation: isSectionOnly ? null : parsed.preparation,
-          name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-          looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-          isSection: effectiveSection != null,
-          sectionName: effectiveSection,
-        );
-      }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
+      final rawIngredients = _buildRawIngredients(rawIngredientStrings);
       
       return RecipeImportResult(
         name: jsonLdResult.name,
@@ -1660,27 +1616,7 @@ class UrlRecipeImporter {
     ingredients = _sortIngredientsByQuantity(ingredients);
     
     // Build raw ingredients list
-    final rawIngredients = rawIngredientStrings.map((raw) {
-      final parsed = _parseIngredientString(raw);
-      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-      
-      // Check if this raw string is a section header
-      final detectedSection = _detectSectionHeader(raw);
-      final effectiveSection = parsed.section ?? detectedSection;
-      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
-                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
-      
-      return RawIngredientData(
-        original: raw,
-        amount: isSectionOnly ? null : parsed.amount,
-        unit: isSectionOnly ? null : parsed.unit,
-        preparation: isSectionOnly ? null : parsed.preparation,
-        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-        isSection: effectiveSection != null,
-        sectionName: effectiveSection,
-      );
-    }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
+    final rawIngredients = _buildRawIngredients(rawIngredientStrings);
     
     // Extract other fields
     final serves = _parseString(data['serves']) ?? 
@@ -2027,32 +1963,8 @@ class UrlRecipeImporter {
       final hasIngredients = ingredients.isNotEmpty;
       final hasDirections = directions.isNotEmpty;
       
-      // Create raw ingredient data for review, filtering out empty entries
-      final rawIngredients = rawIngredientStrings.map((raw) {
-        final parsed = _parseIngredientString(raw);
-        final bakerPct = _extractBakerPercent(raw);
-        
-        // Check if this raw string is a section header
-        final detectedSection = _detectSectionHeader(raw);
-        final effectiveSection = parsed.section ?? detectedSection;
-        final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
-                              (detectedSection != null && parsed.amount == null && parsed.unit == null);
-        
-        return RawIngredientData(
-          original: raw,
-          amount: isSectionOnly ? null : parsed.amount,
-          unit: isSectionOnly ? null : parsed.unit,
-          preparation: isSectionOnly ? null : parsed.preparation,
-          bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
-          name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
-          looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-          isSection: effectiveSection != null,
-          sectionName: effectiveSection,
-        );
-      })
-      // Filter out empty entries - must have alphanumeric in name OR have a section
-      .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
-      .toList();
+      // Create raw ingredient data for review
+      final rawIngredients = _buildRawIngredients(rawIngredientStrings);
       
       // Calculate confidence based on what was successfully parsed
       // Higher confidence when we found structured data
@@ -3943,37 +3855,8 @@ class UrlRecipeImporter {
       }
     }
 
-    // Create raw ingredient data, filtering out empty entries
-    final rawIngredients = rawIngredientStrings.map((raw) {
-      final parsed = _parseIngredientString(raw);
-      final bakerPct = _extractBakerPercent(raw);
-      
-      // Check if this raw string is a section header (e.g., "Dough", "Cinnamon apple filling")
-      final detectedSection = _detectSectionHeader(raw);
-      
-      // For section-only items: either parsed has section OR we detected one
-      final effectiveSection = parsed.section ?? detectedSection;
-      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
-                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
-      
-      // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
-      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-      
-      return RawIngredientData(
-        original: raw,
-        amount: isSectionOnly ? null : parsed.amount,
-        unit: isSectionOnly ? null : parsed.unit,
-        preparation: isSectionOnly ? null : parsed.preparation,
-        bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
-        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-        isSection: effectiveSection != null,
-        sectionName: effectiveSection,
-      );
-    })
-    // Filter out empty entries - must have alphanumeric in name OR have a section
-    .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
-    .toList();
+    // Create raw ingredient data
+    final rawIngredients = _buildRawIngredients(rawIngredientStrings);
 
     // Build notes - combine description with editor's note if present
     String notes = _decodeHtml(_parseString(data['description']) ?? '');
@@ -4969,6 +4852,78 @@ class UrlRecipeImporter {
     }
     
     return null;
+  }
+
+  /// Build a list of RawIngredientData from raw ingredient strings
+  /// This is the single source of truth for creating raw ingredient data
+  /// across all import sources (JSON-LD, HTML, YouTube, etc.)
+  List<RawIngredientData> _buildRawIngredients(List<String> rawStrings) {
+    final result = <RawIngredientData>[];
+    
+    // DEBUG: Print all incoming raw strings
+    print('DEBUG _buildRawIngredients: Processing ${rawStrings.length} raw strings');
+    for (var i = 0; i < rawStrings.length; i++) {
+      print('DEBUG raw[$i]: "${rawStrings[i]}"');
+    }
+    
+    for (final raw in rawStrings) {
+      // Skip completely empty strings
+      if (raw.trim().isEmpty) {
+        print('DEBUG: Skipping empty string');
+        continue;
+      }
+      
+      final parsed = _parseIngredientString(raw);
+      final bakerPct = _extractBakerPercent(raw);
+      
+      // Check if this raw string is a section header
+      final detectedSection = _detectSectionHeader(raw);
+      final effectiveSection = parsed.section ?? detectedSection;
+      
+      // Determine if this is a section-only entry (no actual ingredient)
+      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
+      
+      // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
+      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+      
+      // Determine the name to use
+      String name;
+      if (isSectionOnly) {
+        name = '';  // Section-only entries have empty name
+      } else if (parsed.name.isNotEmpty) {
+        name = parsed.name;
+      } else {
+        name = cleanedRaw;
+      }
+      
+      // Skip entries that have no meaningful name and no section
+      // This is the key filter that prevents blank rows
+      if (name.trim().isEmpty && effectiveSection == null) {
+        print('DEBUG: Skipping - empty name, no section: "$raw"');
+        continue;
+      }
+      if (name.trim().isNotEmpty && !RegExp(r'[a-zA-Z0-9]').hasMatch(name)) {
+        print('DEBUG: Skipping - no alphanumeric: "$raw" -> name="$name"');
+        continue;
+      }
+      
+      print('DEBUG: Adding - name="$name", sectionName=$effectiveSection, isSectionOnly=$isSectionOnly');
+      result.add(RawIngredientData(
+        original: raw,
+        amount: isSectionOnly ? null : parsed.amount,
+        unit: isSectionOnly ? null : parsed.unit,
+        preparation: isSectionOnly ? null : parsed.preparation,
+        bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
+        name: name,
+        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+        isSection: effectiveSection != null,
+        sectionName: effectiveSection,
+      ));
+    }
+    
+    print('DEBUG _buildRawIngredients: Returning ${result.length} items');
+    return result;
   }
 
   /// Parse a single ingredient string into structured data
@@ -7534,35 +7489,8 @@ class UrlRecipeImporter {
         ? (usedStructuredFormat ? 0.85 : (rawDirections.length >= 3 ? 0.75 : 0.6)) 
         : 0.0;
 
-    // Create raw ingredient data, filtering out empty entries
-    final rawIngredients = filteredIngredientStrings.map((raw) {
-      final parsed = _parseIngredientString(raw);
-      final bakerPct = _extractBakerPercent(raw);
-      
-      // Check if this raw string is a section header
-      final detectedSection = _detectSectionHeader(raw);
-      final effectiveSection = parsed.section ?? detectedSection;
-      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
-                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
-      
-      // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
-      final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-      
-      return RawIngredientData(
-        original: raw,
-        amount: isSectionOnly ? null : parsed.amount,
-        unit: isSectionOnly ? null : parsed.unit,
-        preparation: isSectionOnly ? null : parsed.preparation,
-        bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
-        name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-        isSection: effectiveSection != null,
-        sectionName: effectiveSection,
-      );
-    })
-    // Filter out empty entries - must have alphanumeric in name OR have a section
-    .where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null)
-    .toList();
+    // Create raw ingredient data
+    final rawIngredients = _buildRawIngredients(filteredIngredientStrings);
 
     // Build detected courses list - include the course we detected
     final detectedCourses = <String>[course];
