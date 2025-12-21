@@ -859,23 +859,18 @@ class UrlRecipeImporter {
 
       // Try to find JSON-LD structured data first (most reliable)
       final jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
-      print('[DEBUG importFromUrl] Found ${jsonLdScripts.length} JSON-LD scripts');
       RecipeImportResult? jsonLdResult;
       
       for (final script in jsonLdScripts) {
         try {
           // Handle potential encoding issues in JSON-LD script content
           final String scriptText = script.text;
-          print('[DEBUG importFromUrl] Processing JSON-LD script (${scriptText.length} chars)');
           // If decoding fails, try to fix common encoding issues
           try {
             final data = jsonDecode(scriptText);
-            print('[DEBUG importFromUrl] JSON-LD decoded, calling _parseJsonLdWithConfidence');
             jsonLdResult = _parseJsonLdWithConfidence(data, url);
-            print('[DEBUG importFromUrl] _parseJsonLdWithConfidence returned: ${jsonLdResult != null ? 'result' : 'null'}');
             if (jsonLdResult != null) break;
-          } on FormatException catch (e) {
-            print('[DEBUG importFromUrl] JSON decode failed: $e');
+          } on FormatException {
             // If JSON decode fails due to encoding, try to re-encode
             try {
               // Re-encode as UTF-8 bytes and decode again
@@ -889,8 +884,7 @@ class UrlRecipeImporter {
               continue;
             }
           }
-        } catch (e) {
-          print('[DEBUG importFromUrl] Exception processing JSON-LD: $e');
+        } catch (_) {
           continue;
         }
       }
@@ -909,16 +903,13 @@ class UrlRecipeImporter {
                                 document.querySelector('.structured-ingredients__list-heading') != null || // Serious Eats
                                 document.querySelector('.ingredient-section') != null; // King Arthur Baking
         
-        print('[DEBUG importFromUrl] hasHtmlSections: $hasHtmlSections');
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
           // Fall through to HTML parsing below instead of returning JSON-LD result
           // We'll use JSON-LD for other metadata but get ingredients from HTML
           var htmlIngredients = _extractIngredientsWithSections(document);
-          print('[DEBUG importFromUrl] HTML sections path: extracted ${htmlIngredients.length} htmlIngredients');
           // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
           htmlIngredients = _filterIngredientStrings(htmlIngredients);
-          print('[DEBUG importFromUrl] HTML sections path: after filter ${htmlIngredients.length} htmlIngredients');
           if (htmlIngredients.isNotEmpty) {
             // Parse the raw ingredient strings to Ingredient objects with sections
             final ingredients = _parseIngredients(htmlIngredients);
@@ -927,7 +918,6 @@ class UrlRecipeImporter {
             // Also get equipment from HTML
             final sectionResult = _parseHtmlBySections(document);
             final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
-            print('[DEBUG importFromUrl] RETURNING HTML sections result with ${ingredients.length} ingredients');
             return RecipeImportResult(
               name: jsonLdResult.name,
               course: jsonLdResult.course,
@@ -980,9 +970,6 @@ class UrlRecipeImporter {
         // (Vite SSR, Next.js, Nuxt, etc.) - these often have section groupings and better serves data
         final enhancedResult = _tryEnhanceWithEmbeddedData(body, jsonLdResult);
         if (enhancedResult != null) {
-          print('[DEBUG importFromUrl] RETURNING enhancedResult from _tryEnhanceWithEmbeddedData');
-          print('[DEBUG importFromUrl]   - ingredients: ${enhancedResult.ingredients.length}');
-          print('[DEBUG importFromUrl]   - rawIngredients: ${enhancedResult.rawIngredients.length}');
           return enhancedResult;
         }
         
@@ -1133,25 +1120,18 @@ class UrlRecipeImporter {
           );
         }
         
-        print('[DEBUG importFromUrl] RETURNING jsonLdResult directly:');
-        print('[DEBUG importFromUrl]   - ingredients: ${jsonLdResult.ingredients.length}');
-        print('[DEBUG importFromUrl]   - rawIngredients: ${jsonLdResult.rawIngredients.length}');
         return jsonLdResult;
       }
       
       // Try to extract recipe data from embedded JavaScript (React/Next.js/Vue hydration state)
-      print('[DEBUG importFromUrl] Trying _tryExtractFromEmbeddedJson...');
       final embeddedResult = _tryExtractFromEmbeddedJson(body, url);
       if (embeddedResult != null) {
-        print('[DEBUG importFromUrl] RETURNING embeddedResult from _tryExtractFromEmbeddedJson');
         return embeddedResult;
       }
 
       // Fallback: try to parse from HTML structure
-      print('[DEBUG importFromUrl] Trying _parseFromHtmlWithConfidence...');
       final result = _parseFromHtmlWithConfidence(document, url, body);
       if (result != null) {
-        print('[DEBUG importFromUrl] RETURNING result from _parseFromHtmlWithConfidence');
         return result;
       }
       
@@ -2726,10 +2706,12 @@ class UrlRecipeImporter {
   
   /// Patterns to identify direction-like lines (instructions, not ingredients)
   static final _directionLikePatterns = [
-    // Lines that start with action verbs followed by "the"
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash)\s+the\b', caseSensitive: false),
+    // Lines that start with action verbs followed by "the" or "a/an"
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Season|Taste|Serve|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Skim|Ladle|Spoon)\s+(?:the|a|an)\b', caseSensitive: false),
     // Lines that start with action verbs followed by descriptive content  
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Bring|Reduce|Simmer|Boil|Season|Taste|Serve)\s+(?:a|an|until|over|for|to|into)\b', caseSensitive: false),
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Bring|Reduce|Simmer|Boil|Season|Taste|Serve|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Using|Once|After|When|Before|While|If|Make|Start|Begin|Continue|Repeat|Turn|Flip|Rotate)\s+(?:until|over|for|to|into|all|your|this|it|them|each|every|together|well|thoroughly|gently|carefully|slowly|quickly|immediately|aside)\b', caseSensitive: false),
+    // Lines that contain multiple direction verbs (likely instructions)
+    RegExp(r'\b(?:and\s+)?(?:then\s+)?(?:stir|mix|add|cook|bake|heat|let|allow|place|cover|remove|transfer|serve|refrigerate|store)\b.*\b(?:until|for|about|approximately)\b', caseSensitive: false),
   ];
   
   /// Check if a string looks like a direction/instruction
@@ -2737,10 +2719,19 @@ class UrlRecipeImporter {
     final trimmed = line.trim();
     // Must be longer than a typical ingredient (instructions are usually verbose)
     if (trimmed.length < 40) return false;
-    // Must contain a period (complete sentence)
-    if (!trimmed.contains('.')) return false;
-    // Check against patterns
-    return _directionLikePatterns.any((p) => p.hasMatch(trimmed));
+    // Must contain a period (complete sentence) or be very long with commas
+    if (!trimmed.contains('.') && !(trimmed.length > 80 && trimmed.contains(','))) return false;
+    
+    // Check against explicit patterns
+    if (_directionLikePatterns.any((p) => p.hasMatch(trimmed))) return true;
+    
+    // Heuristic: If it's a very long line (>100 chars) with multiple sentences, likely a direction
+    if (trimmed.length > 100 && RegExp(r'\.\s+[A-Z]').hasMatch(trimmed)) return true;
+    
+    // Heuristic: Contains time indicators common in directions
+    if (RegExp(r'\b(?:minutes?|hours?|days?|weeks?)\b.*\b(?:until|or\s+until|before|after)\b', caseSensitive: false).hasMatch(trimmed)) return true;
+    
+    return false;
   }
   
   /// Shared garbage patterns for ingredient filtering
@@ -2796,8 +2787,6 @@ class UrlRecipeImporter {
   /// Also extracts direction-like lines and equipment items for separate use
   /// Returns a map with keys: 'ingredients', 'directions', 'equipment'
   Map<String, List<String>> _filterIngredientStringsWithExtraction(List<String> rawStrings) {
-    print('[DEBUG _filterIngredientStringsWithExtraction] Input count: ${rawStrings.length}');
-    
     final seenIngredients = <String>{};
     final filteredIngredients = <String>[];
     final extractedDirections = <String>[];
@@ -2810,20 +2799,17 @@ class UrlRecipeImporter {
       // Check for direction-like lines FIRST - move to directions list
       // This must come before garbage check because directions look like garbage to some patterns
       if (_isDirectionLikeLine(trimmed)) {
-        print('[DEBUG] DIRECTION: "$trimmed"');
         extractedDirections.add(trimmed);
         continue;
       }
       
       // Check for pure garbage (social media, ads, etc.) - discard completely
       if (_isGarbageIngredient(trimmed)) {
-        print('[DEBUG] GARBAGE: "$trimmed"');
         continue;
       }
       
       // Check for equipment items - move to equipment list
       if (_isEquipmentItem(trimmed)) {
-        print('[DEBUG] EQUIPMENT: "$trimmed"');
         extractedEquipment.add(trimmed);
         continue;
       }
@@ -2835,8 +2821,6 @@ class UrlRecipeImporter {
       filteredIngredients.add(trimmed);
     }
     
-    print('[DEBUG] Ingredients: ${filteredIngredients.length}, Directions: ${extractedDirections.length}, Equipment: ${extractedEquipment.length}');
-    
     return {
       'ingredients': filteredIngredients,
       'directions': extractedDirections,
@@ -2846,9 +2830,6 @@ class UrlRecipeImporter {
   
   /// Filter and deduplicate ingredient strings, removing garbage
   List<String> _filterIngredientStrings(List<String> rawStrings) {
-    // DEBUG: Print to verify this function is being called
-    print('[DEBUG _filterIngredientStrings] Input count: ${rawStrings.length}');
-    
     final seenIngredients = <String>{};
     final filtered = <String>[];
     
@@ -2859,12 +2840,6 @@ class UrlRecipeImporter {
       final isEquipment = _isEquipmentItem(trimmed);
       final isDirection = _isDirectionLikeLine(trimmed);
       
-      // DEBUG: Print what's being filtered
-      if (isGarbage || isEquipment || isDirection) {
-        final reason = isGarbage ? 'GARBAGE' : (isEquipment ? 'EQUIPMENT' : 'DIRECTION');
-        print('[DEBUG _filterIngredientStrings] FILTERED ($reason): "$trimmed"');
-      }
-      
       if (isGarbage || isEquipment || isDirection) continue;
       
       // Normalize for comparison (lowercase, collapse whitespace)
@@ -2874,7 +2849,6 @@ class UrlRecipeImporter {
       filtered.add(trimmed);
     }
     
-    print('[DEBUG _filterIngredientStrings] Output count: ${filtered.length}');
     return filtered;
   }
   
@@ -2888,19 +2862,16 @@ class UrlRecipeImporter {
       // Check if the ingredient name or the original name looks like garbage
       final nameToCheck = ing.name;
       if (_isGarbageIngredient(nameToCheck)) {
-        print('[DEBUG _filterParsedIngredients] FILTERED OUT (garbage): "${ing.name}"');
         continue;
       }
       
       // Check for equipment items
       if (_isEquipmentItem(nameToCheck)) {
-        print('[DEBUG _filterParsedIngredients] FILTERED OUT (equipment): "${ing.name}"');
         continue;
       }
       
       // Check for direction-like lines
       if (_isDirectionLikeLine(nameToCheck)) {
-        print('[DEBUG _filterParsedIngredients] FILTERED OUT (direction): "${ing.name}"');
         continue;
       }
       
@@ -3799,11 +3770,8 @@ class UrlRecipeImporter {
   
   /// Parse JSON-LD with confidence scoring for review flow
   RecipeImportResult? _parseJsonLdWithConfidence(dynamic data, String sourceUrl) {
-    print('[DEBUG _parseJsonLdWithConfidence] Called with data type: ${data.runtimeType}');
-    
     // Handle @graph structure
     if (data is Map && data['@graph'] != null) {
-      print('[DEBUG _parseJsonLdWithConfidence] Found @graph structure');
       final graph = data['@graph'] as List;
       for (final item in graph) {
         final result = _parseJsonLdWithConfidence(item, sourceUrl);
@@ -3814,7 +3782,6 @@ class UrlRecipeImporter {
 
     // Handle array of items
     if (data is List) {
-      print('[DEBUG _parseJsonLdWithConfidence] Found List with ${data.length} items');
       for (final item in data) {
         final result = _parseJsonLdWithConfidence(item, sourceUrl);
         if (result != null) return result;
@@ -3824,27 +3791,20 @@ class UrlRecipeImporter {
 
     // Check if this is a Recipe type
     if (data is! Map) {
-      print('[DEBUG _parseJsonLdWithConfidence] data is not Map, returning null');
       return null;
     }
     
     final type = data['@type'];
-    print('[DEBUG _parseJsonLdWithConfidence] @type = $type');
     final isRecipe = type == 'Recipe' || 
                      (type is List && type.contains('Recipe'));
     
     if (!isRecipe) {
-      print('[DEBUG _parseJsonLdWithConfidence] Not a Recipe type, returning null');
       return null;
     }
-
-    print('[DEBUG _parseJsonLdWithConfidence] Processing JSON-LD Recipe');
-    print('[DEBUG _parseJsonLdWithConfidence] Keys: ${data.keys.toList()}');
 
     // Parse with confidence scoring
     final name = _cleanRecipeName(_parseString(data['name']) ?? '');
     final nameConfidence = name.isNotEmpty ? 0.9 : 0.0;
-    print('[DEBUG _parseJsonLdWithConfidence] Recipe name: $name');
 
     // Parse ingredients and collect raw data
     // Use _extractRawIngredients first to rejoin incorrectly split ingredients (e.g., Diffords comma splits)
@@ -3855,13 +3815,10 @@ class UrlRecipeImporter {
       rawIngredientStrings = _extractRawIngredients(data['ingredients']);
     }
     // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
-    print('[DEBUG _parseJsonLdWithConfidence] BEFORE filter: ${rawIngredientStrings.length} ingredients');
     rawIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
-    print('[DEBUG _parseJsonLdWithConfidence] AFTER filter: ${rawIngredientStrings.length} ingredients');
     // Parse from the already-rejoined raw strings, not the original JSON-LD
     var ingredients = _parseIngredients(rawIngredientStrings);
     ingredients = _sortIngredientsByQuantity(ingredients);
-    print('[DEBUG _parseJsonLdWithConfidence] Parsed ${ingredients.length} Ingredient objects');
     
     // Calculate ingredients confidence based on how many we successfully parsed
     double ingredientsConfidence = 0.0;
@@ -3876,24 +3833,16 @@ class UrlRecipeImporter {
 
     // Parse directions with confidence
     // Support both JSON-LD format (recipeInstructions) and non-standard format (instructions)
-    print('[DEBUG _parseJsonLdWithConfidence] recipeInstructions raw: ${data['recipeInstructions']}');
     var directions = _parseInstructions(data['recipeInstructions']);
     var rawDirections = _extractRawDirections(data['recipeInstructions']);
-    print('[DEBUG _parseJsonLdWithConfidence] Parsed directions count: ${directions.length}');
-    if (directions.isNotEmpty) {
-      print('[DEBUG _parseJsonLdWithConfidence] First direction: ${directions.first}');
-    }
     // Fallback to non-standard keys if JSON-LD key not found
     if (directions.isEmpty) {
-      print('[DEBUG _parseJsonLdWithConfidence] Trying fallback instructions key');
       directions = _parseInstructions(data['instructions']);
       rawDirections = _extractRawDirections(data['instructions']);
-      print('[DEBUG _parseJsonLdWithConfidence] Fallback directions count: ${directions.length}');
     }
     // Filter out junk direction lines (ads, subscribe prompts, social media, etc.)
     directions = directions.where((d) => !_isJunkDirectionLine(d)).toList();
     rawDirections = rawDirections.where((d) => !_isJunkDirectionLine(d)).toList();
-    print('[DEBUG _parseJsonLdWithConfidence] After junk filter: ${directions.length} directions');
     
     double directionsConfidence = directions.isNotEmpty ? 0.8 : 0.0;
     // Boost if directions are detailed (more than a few words each)
@@ -3976,10 +3925,6 @@ class UrlRecipeImporter {
       }
     }
     
-    print('[DEBUG _parseJsonLdWithConfidence] Creating RecipeImportResult with:');
-    print('[DEBUG _parseJsonLdWithConfidence]   - ingredients: ${ingredients.length}');
-    print('[DEBUG _parseJsonLdWithConfidence]   - rawIngredients: ${rawIngredients.length}');
-    print('[DEBUG _parseJsonLdWithConfidence]   - directions: ${directions.length}');
     return RecipeImportResult(
       name: name.isNotEmpty ? name : null,
       course: course,
@@ -6674,7 +6619,6 @@ class UrlRecipeImporter {
     
     // If still empty, try standard selectors
     if (rawIngredientStrings.isEmpty) {
-      print('[DEBUG _parseFromHtmlWithConfidence] Trying standard selectors for ingredients');
       final ingredientElements = document.querySelectorAll(
         // Standard recipe plugins and schema.org
         '.ingredients li, .ingredient-list li, [itemprop="recipeIngredient"], .wprm-recipe-ingredient, '
@@ -6683,17 +6627,12 @@ class UrlRecipeImporter {
         // Generic patterns for blog posts
         '.entry-content ul li, .post-content ul li, article ul li',
       );
-      print('[DEBUG _parseFromHtmlWithConfidence] Found ${ingredientElements.length} ingredient elements');
       
       for (final e in ingredientElements) {
         final text = _decodeHtml((e.text ?? '').trim());
         if (text.isNotEmpty) {
           rawIngredientStrings.add(text);
         }
-      }
-      print('[DEBUG _parseFromHtmlWithConfidence] Extracted ${rawIngredientStrings.length} ingredient strings');
-      if (rawIngredientStrings.isNotEmpty) {
-        print('[DEBUG _parseFromHtmlWithConfidence] First 3 ingredients: ${rawIngredientStrings.take(3).toList()}');
       }
     }
     
@@ -6819,11 +6758,9 @@ class UrlRecipeImporter {
 
     // If Cooked format didn't find directions, try standard selectors
     if (rawDirections.isEmpty) {
-      print('[DEBUG _parseFromHtmlWithConfidence] Trying standard selectors for directions');
       final instructionElements = document.querySelectorAll(
         '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction',
       );
-      print('[DEBUG _parseFromHtmlWithConfidence] Found ${instructionElements.length} instruction elements');
       
       for (final e in instructionElements) {
         final text = _decodeHtml((e.text ?? '').trim());
@@ -6831,16 +6768,11 @@ class UrlRecipeImporter {
           rawDirections.add(text);
         }
       }
-      print('[DEBUG _parseFromHtmlWithConfidence] Extracted ${rawDirections.length} direction strings');
-      if (rawDirections.isNotEmpty) {
-        print('[DEBUG _parseFromHtmlWithConfidence] First direction: ${rawDirections.first}');
-      }
     }
     
     // If standard selectors found nothing but we extracted direction-like lines from ingredients,
     // use those as the directions
     if (rawDirections.isEmpty && extractedDirectionsFromIngredients.isNotEmpty) {
-      print('[DEBUG _parseFromHtmlWithConfidence] Using ${extractedDirectionsFromIngredients.length} directions extracted from ingredient list');
       rawDirections = extractedDirectionsFromIngredients;
     }
     
@@ -7479,13 +7411,6 @@ class UrlRecipeImporter {
       filteredDirections.add(cleaned);
     }
 
-    print('[DEBUG _parseFromHtmlWithConfidence] Final result:');
-    print('[DEBUG _parseFromHtmlWithConfidence]   - ingredients: ${ingredients.length}');
-    print('[DEBUG _parseFromHtmlWithConfidence]   - directions: ${filteredDirections.length}');
-    print('[DEBUG _parseFromHtmlWithConfidence]   - equipment: ${equipmentItems.length}');
-    if (filteredDirections.isNotEmpty) {
-      print('[DEBUG _parseFromHtmlWithConfidence]   - First direction: ${filteredDirections.first}');
-    }
     return RecipeImportResult(
       name: title != null ? _cleanRecipeName(title) : null,
       course: course,
