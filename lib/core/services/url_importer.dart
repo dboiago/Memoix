@@ -2611,6 +2611,27 @@ class UrlRecipeImporter {
     // Skip lines that are just numbers or punctuation
     if (RegExp(r'^[\d\s.,;:!?-]+$').hasMatch(trimmed)) return true;
     
+    // Skip ad scripts and JavaScript garbage
+    if (RegExp(r'adsbygoogle', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'googlesyndication', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'window\._wca', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'\.push\s*\(\s*\{\s*\}\s*\)', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'\|\|\s*\[\]', caseSensitive: false).hasMatch(trimmed)) return true;
+    
+    // Skip subscribe/newsletter prompts
+    if (RegExp(r'Subscribe\s+to\s+get', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'sign\s+up\s+for\s+(?:our|the)?\s*newsletter', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'get\s+the\s+latest\s+(?:posts|recipes)', caseSensitive: false).hasMatch(trimmed)) return true;
+    
+    // Skip social media share prompts
+    if (RegExp(r'Click\s+to\s+Share', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'Share\s+(?:this|on)\s+(?:Facebook|Twitter|Pinterest|Instagram)', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'^(?:Like|Tweet|Pin)\s+(?:this|it)?$', caseSensitive: false).hasMatch(trimmed)) return true;
+    
+    // Skip print/save buttons captured as text
+    if (RegExp(r'^(?:Print|Save|Share)\s+(?:Recipe|This)?$', caseSensitive: false).hasMatch(trimmed)) return true;
+    
     return false;
   }
   
@@ -4527,6 +4548,19 @@ class UrlRecipeImporter {
     final List<String> notesParts = [];
     String? amount;
     String? inlineSection;
+    
+    // Handle "Optional:" prefix at the start of ingredient line
+    // e.g., "Optional: 1/4 tsp calcium chloride (aka Pickle Crisp granules)"
+    // -> amount: "1/4 tsp", name: "Calcium Chloride", preparation: "optional, aka Pickle Crisp granules"
+    final optionalPrefixMatch = RegExp(
+      r'^Optional\s*:\s*',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (optionalPrefixMatch != null) {
+      isOptional = true;
+      remaining = remaining.substring(optionalPrefixMatch.end).trim();
+      notesParts.add('optional');
+    }
     
     // Handle "Top up with [Ingredient]" format (Difford's style)
     // e.g., "Top up with Thomas Henry Soda Water" -> name: "Thomas Henry Soda Water", amount: "Top"
@@ -6990,6 +7024,24 @@ class UrlRecipeImporter {
       RegExp(r'^print\s+recipe', caseSensitive: false),    // Print buttons
       RegExp(r'^share\s+recipe', caseSensitive: false),    // Share buttons
       RegExp(r'^\d+\s*(?:min(?:ute)?s?|hrs?|hours?)$', caseSensitive: false), // Standalone time labels
+      // Social media garbage
+      RegExp(r'Click\s+to\s+Share', caseSensitive: false),
+      RegExp(r'Share\s+on\s+(?:Facebook|Twitter|Pinterest|Instagram)', caseSensitive: false),
+      RegExp(r'(?:Facebook|Twitter|Pinterest|Instagram)\s+(?:Facebook|Twitter|Pinterest|Instagram)?$', caseSensitive: false),
+      RegExp(r'^(?:Like|Tweet|Pin|Share)\s+(?:this|it)?$', caseSensitive: false),
+      // Subscribe/newsletter garbage
+      RegExp(r'Subscribe\s+to', caseSensitive: false),
+      RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false),
+      RegExp(r'newsletter', caseSensitive: false),
+      // Ad script garbage
+      RegExp(r'adsbygoogle', caseSensitive: false),
+      RegExp(r'window\._wca', caseSensitive: false),
+      RegExp(r'window\.adsbygoogle', caseSensitive: false),
+      RegExp(r'googlesyndication', caseSensitive: false),
+      RegExp(r'^\s*\|\|\s*\[\]', caseSensitive: false),  // JavaScript array patterns
+      RegExp(r'\.push\s*\(', caseSensitive: false),       // JavaScript push calls
+      // Lines that look like directions, not ingredients (contain action verbs at start)
+      RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store)\s+the\b', caseSensitive: false),
     ];
     for (final s in rawIngredientStrings) {
       final trimmed = s.trim();
