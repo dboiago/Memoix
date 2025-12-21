@@ -929,7 +929,7 @@ class UrlRecipeImporter {
               subcategory: jsonLdResult.subcategory,
               serves: jsonLdResult.serves,
               time: jsonLdResult.time,
-              ingredients: ingredients,
+              ingredients: _filterParsedIngredients(ingredients),
               directions: jsonLdResult.directions,
               notes: jsonLdResult.notes,
               imageUrl: jsonLdResult.imageUrl,
@@ -1098,7 +1098,7 @@ class UrlRecipeImporter {
             subcategory: jsonLdResult.subcategory,
             serves: jsonLdResult.serves,
             time: jsonLdResult.time,
-            ingredients: needsIngredients ? htmlIngredients : jsonLdResult.ingredients,
+            ingredients: _filterParsedIngredients(needsIngredients ? htmlIngredients : jsonLdResult.ingredients),
             directions: needsDirections 
                 ? (htmlDirections.isNotEmpty ? List<String>.from(htmlDirections) : htmlDirectionStrings)
                 : jsonLdResult.directions,
@@ -1361,7 +1361,7 @@ class UrlRecipeImporter {
         subcategory: jsonLdResult.subcategory,
         serves: serves,
         time: jsonLdResult.time,
-        ingredients: ingredients,
+        ingredients: _filterParsedIngredients(ingredients),
         directions: jsonLdResult.directions,
         notes: jsonLdResult.notes,
         imageUrl: jsonLdResult.imageUrl,
@@ -1692,7 +1692,7 @@ class UrlRecipeImporter {
       cuisine: cuisine,
       serves: serves,
       time: time,
-      ingredients: ingredients,
+      ingredients: _filterParsedIngredients(ingredients),
       directions: directions,
       notes: description,
       imageUrl: imageUrl,
@@ -2055,7 +2055,7 @@ class UrlRecipeImporter {
         name: recipeName,
         course: detectedCourse ?? 'Mains',
         time: recipeTime,
-        ingredients: ingredients,
+        ingredients: _filterParsedIngredients(ingredients),
         directions: directions,
         notes: notes,
         imageUrl: thumbnail,
@@ -2758,6 +2758,31 @@ class UrlRecipeImporter {
     }
     
     print('[DEBUG _filterIngredientStrings] Output count: ${filtered.length}');
+    return filtered;
+  }
+  
+  /// Filter parsed Ingredient objects, removing garbage entries
+  /// This is a safety net for cases where raw strings weren't filtered before parsing
+  List<Ingredient> _filterParsedIngredients(List<Ingredient> ingredients) {
+    final filtered = <Ingredient>[];
+    final seenNames = <String>{};
+    
+    for (final ing in ingredients) {
+      // Check if the ingredient name or the original name looks like garbage
+      final nameToCheck = ing.name;
+      if (_isGarbageIngredient(nameToCheck)) {
+        print('[DEBUG _filterParsedIngredients] FILTERED OUT Ingredient: "${ing.name}"');
+        continue;
+      }
+      
+      // Deduplicate by name
+      final normalizedName = nameToCheck.toLowerCase().replaceAll(RegExp(r'\s+'), ' ').trim();
+      if (seenNames.contains(normalizedName)) continue;
+      seenNames.add(normalizedName);
+      
+      filtered.add(ing);
+    }
+    
     return filtered;
   }
   
@@ -3810,7 +3835,7 @@ class UrlRecipeImporter {
       subcategory: subcategory,
       serves: serves,
       time: time,
-      ingredients: ingredients,
+      ingredients: _filterParsedIngredients(ingredients),
       directions: directions,
       equipment: equipmentList,
       notes: notes,
@@ -7273,7 +7298,7 @@ class UrlRecipeImporter {
       serves: yield,
       imageUrl: imageUrl,
       time: timing,
-      ingredients: ingredients,
+      ingredients: _filterParsedIngredients(ingredients),
       directions: filteredDirections,
       notes: htmlNotes,
       equipment: equipmentItems,
