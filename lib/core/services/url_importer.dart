@@ -2692,6 +2692,57 @@ class UrlRecipeImporter {
     return false;
   }
   
+  /// Patterns to identify equipment items (not ingredients)
+  static final _equipmentPatterns = [
+    RegExp(r'^(?:half-?gallon|quart|pint|gallon)\s+(?:jar|mason\s+jar|container)', caseSensitive: false),
+    RegExp(r'^(?:measuring|mixing)\s+(?:cup|spoon|bowl)s?', caseSensitive: false),
+    RegExp(r'^(?:knife|knives)\s*(?:&|and)?\s*(?:cutting\s+board)?', caseSensitive: false),
+    RegExp(r'^cutting\s+board', caseSensitive: false),
+    RegExp(r'^(?:medium|large|small|heavy)?\s*(?:sauce)?pan', caseSensitive: false),
+    RegExp(r'^(?:medium|large|small)?\s*(?:pot|skillet|wok|dutch\s+oven)', caseSensitive: false),
+    RegExp(r'^(?:baking|sheet|cookie)\s+(?:sheet|pan|tray)', caseSensitive: false),
+    RegExp(r'^(?:food\s+)?processor', caseSensitive: false),
+    RegExp(r'^(?:stand|hand)\s+mixer', caseSensitive: false),
+    RegExp(r'^blender', caseSensitive: false),
+    RegExp(r'^(?:kitchen\s+)?scale', caseSensitive: false),
+    RegExp(r'^thermometer', caseSensitive: false),
+    RegExp(r'^(?:slotted|wooden|metal)\s+spoon', caseSensitive: false),
+    RegExp(r'^(?:rubber|silicone)\s+spatula', caseSensitive: false),
+    RegExp(r'^whisk', caseSensitive: false),
+    RegExp(r'^tongs', caseSensitive: false),
+    RegExp(r'^colander', caseSensitive: false),
+    RegExp(r'^strainer', caseSensitive: false),
+    RegExp(r'^(?:fine\s+)?mesh\s+(?:strainer|sieve)', caseSensitive: false),
+    RegExp(r'^(?:plastic|saran|cling)\s+wrap', caseSensitive: false),
+    RegExp(r'^(?:aluminum|tin|aluminium)\s+foil', caseSensitive: false),
+    RegExp(r'^parchment\s+(?:paper)?', caseSensitive: false),
+  ];
+  
+  /// Check if a string looks like equipment rather than an ingredient
+  bool _isEquipmentItem(String item) {
+    final trimmed = item.trim().toLowerCase();
+    return _equipmentPatterns.any((p) => p.hasMatch(trimmed));
+  }
+  
+  /// Patterns to identify direction-like lines (instructions, not ingredients)
+  static final _directionLikePatterns = [
+    // Lines that start with action verbs followed by "the"
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash)\s+the\b', caseSensitive: false),
+    // Lines that start with action verbs followed by descriptive content  
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Bring|Reduce|Simmer|Boil|Season|Taste|Serve)\s+(?:a|an|until|over|for|to|into)\b', caseSensitive: false),
+  ];
+  
+  /// Check if a string looks like a direction/instruction
+  bool _isDirectionLikeLine(String line) {
+    final trimmed = line.trim();
+    // Must be longer than a typical ingredient (instructions are usually verbose)
+    if (trimmed.length < 40) return false;
+    // Must contain a period (complete sentence)
+    if (!trimmed.contains('.')) return false;
+    // Check against patterns
+    return _directionLikePatterns.any((p) => p.hasMatch(trimmed));
+  }
+  
   /// Shared garbage patterns for ingredient filtering
   /// Used by both JSON-LD and HTML parsing paths
   static final _ingredientGarbagePatterns = [
@@ -2732,10 +2783,6 @@ class UrlRecipeImporter {
     RegExp(r'googlesyndication', caseSensitive: false),
     RegExp(r'^\s*\|\|\s*\[\]', caseSensitive: false),  // JavaScript array patterns
     RegExp(r'\.push\s*\(', caseSensitive: false),       // JavaScript push calls
-    // Lines that look like directions, not ingredients (contain action verbs at start + "the")
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash)\s+the\b', caseSensitive: false),
-    // Longer direction-like sentences (more than 50 chars and contains period - likely instruction not ingredient)
-    RegExp(r'^.{50,}\.', caseSensitive: false),
   ];
   
   /// Check if an ingredient string is garbage (UI element, ad script, etc.)
@@ -2743,6 +2790,69 @@ class UrlRecipeImporter {
     final trimmed = ingredient.trim();
     if (trimmed.isEmpty || !RegExp(r'[a-zA-Z0-9]').hasMatch(trimmed)) return true;
     return _ingredientGarbagePatterns.any((p) => p.hasMatch(trimmed));
+  }
+  
+  /// Result class for ingredient filtering that also captures directions
+  class FilteredIngredientsResult {
+    final List<String> ingredients;
+    final List<String> extractedDirections;
+    final List<String> extractedEquipment;
+    
+    FilteredIngredientsResult({
+      required this.ingredients,
+      required this.extractedDirections,
+      required this.extractedEquipment,
+    });
+  }
+  
+  /// Filter and deduplicate ingredient strings, removing garbage
+  /// Also extracts direction-like lines and equipment items for separate use
+  FilteredIngredientsResult _filterIngredientStringsWithExtraction(List<String> rawStrings) {
+    print('[DEBUG _filterIngredientStringsWithExtraction] Input count: ${rawStrings.length}');
+    
+    final seenIngredients = <String>{};
+    final filteredIngredients = <String>[];
+    final extractedDirections = <String>[];
+    final extractedEquipment = <String>[];
+    
+    for (final s in rawStrings) {
+      final trimmed = s.trim();
+      if (trimmed.isEmpty) continue;
+      
+      // Check for pure garbage (social media, ads, etc.) - discard completely
+      if (_isGarbageIngredient(trimmed)) {
+        print('[DEBUG] GARBAGE: "$trimmed"');
+        continue;
+      }
+      
+      // Check for equipment items - move to equipment list
+      if (_isEquipmentItem(trimmed)) {
+        print('[DEBUG] EQUIPMENT: "$trimmed"');
+        extractedEquipment.add(trimmed);
+        continue;
+      }
+      
+      // Check for direction-like lines - move to directions list
+      if (_isDirectionLikeLine(trimmed)) {
+        print('[DEBUG] DIRECTION: "$trimmed"');
+        extractedDirections.add(trimmed);
+        continue;
+      }
+      
+      // Deduplicate ingredients
+      final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+      if (seenIngredients.contains(normalizedKey)) continue;
+      seenIngredients.add(normalizedKey);
+      filteredIngredients.add(trimmed);
+    }
+    
+    print('[DEBUG] Ingredients: ${filteredIngredients.length}, Directions: ${extractedDirections.length}, Equipment: ${extractedEquipment.length}');
+    
+    return FilteredIngredientsResult(
+      ingredients: filteredIngredients,
+      extractedDirections: extractedDirections,
+      extractedEquipment: extractedEquipment,
+    );
   }
   
   /// Filter and deduplicate ingredient strings, removing garbage
@@ -2755,14 +2865,18 @@ class UrlRecipeImporter {
     
     for (final s in rawStrings) {
       final trimmed = s.trim();
+      // Check for garbage OR equipment OR direction-like (all filtered from ingredients)
       final isGarbage = _isGarbageIngredient(trimmed);
+      final isEquipment = _isEquipmentItem(trimmed);
+      final isDirection = _isDirectionLikeLine(trimmed);
       
       // DEBUG: Print what's being filtered
-      if (isGarbage) {
-        print('[DEBUG _filterIngredientStrings] FILTERED OUT: "$trimmed"');
+      if (isGarbage || isEquipment || isDirection) {
+        final reason = isGarbage ? 'GARBAGE' : (isEquipment ? 'EQUIPMENT' : 'DIRECTION');
+        print('[DEBUG _filterIngredientStrings] FILTERED ($reason): "$trimmed"');
       }
       
-      if (isGarbage) continue;
+      if (isGarbage || isEquipment || isDirection) continue;
       
       // Normalize for comparison (lowercase, collapse whitespace)
       final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
@@ -2785,7 +2899,19 @@ class UrlRecipeImporter {
       // Check if the ingredient name or the original name looks like garbage
       final nameToCheck = ing.name;
       if (_isGarbageIngredient(nameToCheck)) {
-        print('[DEBUG _filterParsedIngredients] FILTERED OUT Ingredient: "${ing.name}"');
+        print('[DEBUG _filterParsedIngredients] FILTERED OUT (garbage): "${ing.name}"');
+        continue;
+      }
+      
+      // Check for equipment items
+      if (_isEquipmentItem(nameToCheck)) {
+        print('[DEBUG _filterParsedIngredients] FILTERED OUT (equipment): "${ing.name}"');
+        continue;
+      }
+      
+      // Check for direction-like lines
+      if (_isDirectionLikeLine(nameToCheck)) {
+        print('[DEBUG _filterParsedIngredients] FILTERED OUT (direction): "${ing.name}"');
         continue;
       }
       
@@ -6679,6 +6805,23 @@ class UrlRecipeImporter {
       }
     }
     
+    // Filter ingredients and extract directions/equipment that were mixed in
+    // This handles sites where directions and equipment are in the same HTML list as ingredients
+    List<String> extractedDirectionsFromIngredients = [];
+    List<String> extractedEquipmentFromIngredients = [];
+    
+    if (rawIngredientStrings.isNotEmpty) {
+      final filterResult = _filterIngredientStringsWithExtraction(rawIngredientStrings);
+      rawIngredientStrings = filterResult.ingredients;
+      extractedDirectionsFromIngredients = filterResult.extractedDirections;
+      extractedEquipmentFromIngredients = filterResult.extractedEquipment;
+      
+      // Add extracted equipment to equipment list
+      if (extractedEquipmentFromIngredients.isNotEmpty) {
+        equipmentItems = [...equipmentItems, ...extractedEquipmentFromIngredients];
+      }
+    }
+    
     // Parse ingredients - use _parseIngredients which properly handles section headers
     // by tracking them and applying to subsequent ingredients, rather than adding empty-name entries
     var ingredients = _parseIngredients(rawIngredientStrings);
@@ -6703,6 +6846,13 @@ class UrlRecipeImporter {
       if (rawDirections.isNotEmpty) {
         print('[DEBUG _parseFromHtmlWithConfidence] First direction: ${rawDirections.first}');
       }
+    }
+    
+    // If standard selectors found nothing but we extracted direction-like lines from ingredients,
+    // use those as the directions
+    if (rawDirections.isEmpty && extractedDirectionsFromIngredients.isNotEmpty) {
+      print('[DEBUG _parseFromHtmlWithConfidence] Using ${extractedDirectionsFromIngredients.length} directions extracted from ingredient list');
+      rawDirections = extractedDirectionsFromIngredients;
     }
     
     // If standard selectors failed, try step-based parsing
