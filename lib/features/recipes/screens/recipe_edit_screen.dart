@@ -9,6 +9,10 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/text_normalizer.dart';
+import '../../modernist/models/modernist_recipe.dart';
+import '../../modernist/screens/modernist_edit_screen.dart';
+import '../../smoking/models/smoking_recipe.dart';
+import '../../smoking/screens/smoking_edit_screen.dart';
 import '../models/course.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
