@@ -1,8 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart' show ImageSource;
 
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
@@ -120,6 +122,14 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
   }
 
   Future<void> _captureImage(ImageSource source) async {
+    // OCR requires ML Kit which is only available on mobile
+    if (kIsWeb ||
+        (defaultTargetPlatform != TargetPlatform.android &&
+         defaultTargetPlatform != TargetPlatform.iOS)) {
+      MemoixSnackBar.show('OCR is only available on mobile devices');
+      return;
+    }
+    
     try {
       final ocrService = ref.read(ocrImporterProvider);
       
