@@ -6442,6 +6442,8 @@ class UrlRecipeImporter {
     // Try WordPress block heading pattern (sogoodmagazine.com style):
     // h3.wp-block-heading followed by ul (ingredients), then p (directions)
     // The content is within a .content-info section
+    // Also extract "Assembly" section content into notes
+    String? wpBlockAssemblyNotes;
     if (rawIngredientStrings.isEmpty) {
       final contentInfo = document.querySelector('.content-info');
       if (contentInfo != null) {
@@ -6453,12 +6455,44 @@ class UrlRecipeImporter {
             final sectionName = _decodeHtml((heading.text ?? '').trim());
             if (sectionName.isEmpty) continue;
             
-            // Skip "Assembly" section (directions only) and generic headings
             final lowerSection = sectionName.toLowerCase();
-            if (lowerSection == 'assembly' || 
-                lowerSection == 'others' ||
-                lowerSection.contains('discover') ||
+            
+            // Skip generic/promotional headings
+            if (lowerSection.contains('discover') ||
                 lowerSection.contains('related')) {
+              continue;
+            }
+            
+            // Capture "Assembly" section content for notes
+            if (lowerSection == 'assembly') {
+              final assemblyLines = <String>[];
+              var sibling = heading.nextElementSibling;
+              while (sibling != null) {
+                final tagName = sibling.localName?.toLowerCase() ?? '';
+                
+                // Stop at next heading or horizontal rule
+                if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4' || tagName == 'hr') {
+                  break;
+                }
+                
+                if (tagName == 'p') {
+                  final pText = _decodeHtml((sibling.text ?? '').trim());
+                  if (pText.isNotEmpty && pText != '\u00a0') {
+                    assemblyLines.add(pText);
+                  }
+                }
+                
+                sibling = sibling.nextElementSibling;
+              }
+              
+              if (assemblyLines.isNotEmpty) {
+                wpBlockAssemblyNotes = '**Assembly**\n${assemblyLines.join('\n\n')}';
+              }
+              continue;
+            }
+            
+            // Skip "Others" section (typically just garnish items with no measurements)
+            if (lowerSection == 'others') {
               continue;
             }
             
@@ -6508,6 +6542,15 @@ class UrlRecipeImporter {
             }
           }
         }
+      }
+    }
+    
+    // Add WordPress block Assembly notes to htmlNotes if extracted
+    if (wpBlockAssemblyNotes != null) {
+      if (htmlNotes != null && htmlNotes.isNotEmpty) {
+        htmlNotes = '$htmlNotes\n\n$wpBlockAssemblyNotes';
+      } else {
+        htmlNotes = wpBlockAssemblyNotes;
       }
     }
     
