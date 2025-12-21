@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 /// Unified empty state widget for consistent "no items found" experience.
 /// 
-/// Uses the Memoix filled mark (knife+fork) as the visual element.
+/// Uses the Memoix filled mark (knife+fork) as the visual element,
+/// tinted to match the current theme's muted color.
 /// 
 /// Usage:
 /// ```dart
@@ -17,14 +18,14 @@ class MemoixEmptyState extends StatelessWidget {
   /// Optional subtitle for additional context
   final String? subtitle;
   
-  /// Size of the mark image (default 48×48 for subtle branding)
+  /// Size of the mark image (default 64×64 to match previous icon size)
   final double markSize;
 
   const MemoixEmptyState({
     super.key,
     required this.message,
     this.subtitle,
-    this.markSize = 48,
+    this.markSize = 64,
   });
 
   @override
@@ -37,8 +38,11 @@ class MemoixEmptyState extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Opacity(
-              opacity: 0.4,
+            ColorFiltered(
+              colorFilter: ColorFilter.mode(
+                theme.colorScheme.outline,
+                BlendMode.srcIn,
+              ),
               child: Image.asset(
                 'assets/images/Memoix-markfilled-black-512.png',
                 width: markSize,

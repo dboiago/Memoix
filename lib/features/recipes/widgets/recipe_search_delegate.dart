@@ -82,12 +82,15 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Opacity(
-                  opacity: 0.4,
+                ColorFiltered(
+                  colorFilter: ColorFilter.mode(
+                    Theme.of(context).colorScheme.outline,
+                    BlendMode.srcIn,
+                  ),
                   child: Image.asset(
                     'assets/images/Memoix-markfilled-black-512.png',
-                    width: 48,
-                    height: 48,
+                    width: 64,
+                    height: 64,
                     fit: BoxFit.contain,
                   ),
                 ),
