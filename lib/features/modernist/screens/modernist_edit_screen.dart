@@ -1580,7 +1580,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
   }
 
   /// Handle course change - if changing to a non-Modernist course, offer to switch screens
-  Future<void> _handleCourseChange(String newCourse) async {
+  void _handleCourseChange(String newCourse) {
     final lowerCourse = newCourse.toLowerCase();
     
     // If staying in Modernist, just update the value
@@ -1589,53 +1589,22 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       return;
     }
     
-    // If switching to Smoking, convert and navigate
+    // If switching to Smoking, convert and navigate immediately
     if (lowerCourse == 'smoking') {
-      final shouldSwitch = await _showCourseChangeDialog(newCourse, 'Smoking');
-      if (shouldSwitch == true && mounted) {
-        final smokingRecipe = _buildSmokingRecipeFromCurrent(newCourse);
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (_) => SmokingEditScreen(importedRecipe: smokingRecipe),
-          ),
-        );
-      }
+      final smokingRecipe = _buildSmokingRecipeFromCurrent(newCourse);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => SmokingEditScreen(importedRecipe: smokingRecipe),
+        ),
+      );
       return;
     }
     
-    // For all other courses, convert to regular Recipe and navigate
-    final shouldSwitch = await _showCourseChangeDialog(newCourse, 'standard recipe');
-    if (shouldSwitch == true && mounted) {
-      final recipe = _buildRecipeFromCurrent(newCourse);
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-        ),
-      );
-    }
-  }
-  
-  /// Show confirmation dialog for course change
-  Future<bool?> _showCourseChangeDialog(String newCourse, String targetType) {
-    return showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Change Recipe Type?'),
-        content: Text(
-          'Changing to "${Course.displayNameFromSlug(newCourse)}" will move this recipe to the $targetType editor. '
-          'Some Modernist-specific fields (technique, equipment, science notes) may not be available.\n\n'
-          'Continue?',
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            child: const Text('Cancel'),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(ctx).pop(true),
-            child: const Text('Continue'),
-          ),
-        ],
+    // For all other courses, convert to regular Recipe and navigate immediately
+    final recipe = _buildRecipeFromCurrent(newCourse);
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => RecipeEditScreen(importedRecipe: recipe),
       ),
     );
   }
@@ -1652,36 +1621,39 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       if (row.isSection) {
         currentSection = row.nameController.text.trim();
       } else {
+        // Parse amount and unit from combined amountController
+        final amountText = row.amountController.text.trim();
+        String? amount;
+        String? unit;
+        if (amountText.isNotEmpty) {
+          final parts = amountText.split(RegExp(r'\s+'));
+          if (parts.length >= 2) {
+            amount = parts.first;
+            unit = parts.sublist(1).join(' ');
+          } else {
+            amount = amountText;
+          }
+        }
+        
         ingredients.add(Ingredient()
           ..name = row.nameController.text.trim()
-          ..amount = row.amountController.text.trim().isEmpty 
-              ? null 
-              : row.amountController.text.trim()
-          ..unit = row.unitController.text.trim().isEmpty 
-              ? null 
-              : row.unitController.text.trim()
+          ..amount = amount
+          ..unit = unit
           ..preparation = row.notesController.text.trim().isEmpty 
               ? null 
               : row.notesController.text.trim()
-          ..sectionName = currentSection);
+          ..section = currentSection);
       }
     }
     
-    // Build directions
-    final directions = _directionControllers
-        .map((c) => c.text.trim())
-        .where((d) => d.isNotEmpty)
+    // Build directions from direction rows
+    final directions = _directionRows
+        .where((row) => row.controller.text.trim().isNotEmpty)
+        .map((row) => row.controller.text.trim())
         .toList();
     
-    // Combine notes with science notes if present
-    var notes = _notesController.text.trim();
-    if (_scienceNotesController.text.trim().isNotEmpty) {
-      if (notes.isNotEmpty) {
-        notes += '\n\n**Science Notes**\n${_scienceNotesController.text.trim()}';
-      } else {
-        notes = '**Science Notes**\n${_scienceNotesController.text.trim()}';
-      }
-    }
+    // Use notes directly (Modernist doesn't have separate science notes)
+    final notes = _notesController.text.trim();
     
     return Recipe()
       ..uuid = _existingRecipe?.uuid ?? _uuid.v4()
@@ -1692,7 +1664,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       ..ingredients = ingredients
       ..directions = directions
       ..notes = notes.isEmpty ? null : notes
-      ..headerImage = _imagePath
+      ..headerImage = _headerImage
       ..stepImages = _stepImages
       ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
       ..pairedRecipeIds = _pairedRecipeIds
@@ -1716,10 +1688,10 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
             : row.amountController.text.trim());
     }
     
-    // Build directions
-    final directions = _directionControllers
-        .map((c) => c.text.trim())
-        .where((d) => d.isNotEmpty)
+    // Build directions from direction rows
+    final directions = _directionRows
+        .where((row) => row.controller.text.trim().isNotEmpty)
+        .map((row) => row.controller.text.trim())
         .toList();
     
     return SmokingRecipe()
@@ -1730,7 +1702,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       ..seasonings = seasonings
       ..directions = directions
       ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..headerImage = _imagePath
+      ..headerImage = _headerImage
       ..stepImages = _stepImages
       ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
       ..pairedRecipeIds = _pairedRecipeIds

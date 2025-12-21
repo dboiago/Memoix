@@ -1668,7 +1668,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   }
 
   /// Handle course change - if changing to a non-Smoking course, offer to switch screens
-  Future<void> _handleCourseChange(String newCourse) async {
+  void _handleCourseChange(String newCourse) {
     final lowerCourse = newCourse.toLowerCase();
     
     // If staying in Smoking, just update the value
@@ -1677,53 +1677,22 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       return;
     }
     
-    // If switching to Modernist, convert and navigate
+    // If switching to Modernist, convert and navigate immediately
     if (lowerCourse == 'modernist') {
-      final shouldSwitch = await _showCourseChangeDialog(newCourse, 'Modernist');
-      if (shouldSwitch == true && mounted) {
-        final modernistRecipe = _buildModernistRecipeFromCurrent(newCourse);
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (_) => ModernistEditScreen(importedRecipe: modernistRecipe),
-          ),
-        );
-      }
+      final modernistRecipe = _buildModernistRecipeFromCurrent(newCourse);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => ModernistEditScreen(importedRecipe: modernistRecipe),
+        ),
+      );
       return;
     }
     
-    // For all other courses, convert to regular Recipe and navigate
-    final shouldSwitch = await _showCourseChangeDialog(newCourse, 'standard recipe');
-    if (shouldSwitch == true && mounted) {
-      final recipe = _buildRecipeFromCurrent(newCourse);
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-        ),
-      );
-    }
-  }
-  
-  /// Show confirmation dialog for course change
-  Future<bool?> _showCourseChangeDialog(String newCourse, String targetType) {
-    return showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Change Recipe Type?'),
-        content: Text(
-          'Changing to "${Course.displayNameFromSlug(newCourse)}" will move this recipe to the $targetType editor. '
-          'Some Smoking-specific fields (wood type, temperature, item) may not be available.\n\n'
-          'Continue?',
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            child: const Text('Cancel'),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(ctx).pop(true),
-            child: const Text('Continue'),
-          ),
-        ],
+    // For all other courses, convert to regular Recipe and navigate immediately
+    final recipe = _buildRecipeFromCurrent(newCourse);
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => RecipeEditScreen(importedRecipe: recipe),
       ),
     );
   }
