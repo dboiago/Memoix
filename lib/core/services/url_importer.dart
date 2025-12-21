@@ -5718,6 +5718,18 @@ class UrlRecipeImporter {
     return _bbqSites.any((site) => lower.contains(site));
   }
 
+  /// Check if a URL is from a known image-only recipe site
+  /// Returns the user-friendly message if it is, null otherwise
+  String? _getImageOnlySiteMessage(String url) {
+    final lower = url.toLowerCase();
+    for (final entry in _imageOnlyRecipeSites.entries) {
+      if (lower.contains(entry.key)) {
+        return entry.value;
+      }
+    }
+    return null;
+  }
+
   /// Check if a URL indicates a pickle/fermentation site
   bool _isPickleSite(String url) {
     final lower = url.toLowerCase();
