@@ -2159,7 +2159,15 @@ class UrlRecipeImporter {
       return (course: 'Smoking', confidence: 0.8);
     }
     
+    // Priority 3.5: Pickles/Fermentation (check BEFORE modernist - calcium chloride is used in both)
+    if (_matchesCourseKeywords('Pickles', titleLower) ||
+        _matchesCourseKeywords('Pickles', urlLower) ||
+        _hasPickleIndicators(titleLower, urlLower)) {
+      return (course: 'Pickles', confidence: 0.8);
+    }
+    
     // Priority 4: Modernist (needs document + ingredients for technique detection)
+    // Skip if already detected as Pickles context
     if (document != null && _isModernistRecipe(document, urlLower, ingredientStrings)) {
       return (course: 'Modernist', confidence: 0.75);
     }
@@ -2241,7 +2249,18 @@ class UrlRecipeImporter {
     final allText = ingredients.join(' ').toLowerCase();
     return allText.contains('flour') && allText.contains('yeast');
   }
-  
+
+  /// Check for pickle/fermentation indicators in title or URL
+  bool _hasPickleIndicators(String titleLower, String urlLower) {
+    const pickleIndicators = [
+      'pickle', 'pickled', 'brine', 'brined', 'brining',
+      'ferment', 'fermented', 'lacto', 'kimchi', 'sauerkraut',
+      'canning', 'preserve', 'preserved',
+    ];
+    final combined = '$titleLower $urlLower';
+    return pickleIndicators.any((indicator) => combined.contains(indicator));
+  }
+
   /// Parse YouTube video description to extract ingredients and directions
   Map<String, dynamic> _parseYouTubeDescription(String description) {
     final result = <String, dynamic>{
@@ -5332,6 +5351,32 @@ class UrlRecipeImporter {
     return _bbqSites.any((site) => lower.contains(site));
   }
 
+  /// Check if a URL indicates a pickle/fermentation site
+  bool _isPickleSite(String url) {
+    final lower = url.toLowerCase();
+    const pickleIndicators = [
+      'pickle', 'brine', 'ferment', 'kimchi', 'sauerkraut',
+      'canning', 'preserve', 'lacto',
+    ];
+    return pickleIndicators.any((indicator) => lower.contains(indicator));
+  }
+
+  /// Check if content indicates a pickle/fermentation recipe
+  bool _isPickleRecipe(String? category, String keywords, String name, String description) {
+    final allText = '${category ?? ''} $keywords $name $description'.toLowerCase();
+    
+    const pickleIndicators = [
+      'pickle', 'pickled', 'pickles', 'pickling',
+      'brine', 'brined', 'brining',
+      'ferment', 'fermented', 'fermentation', 'lacto-ferment',
+      'kimchi', 'sauerkraut', 'kraut',
+      'canning', 'canned', 'preserve', 'preserved', 'preserves',
+      'quick pickle', 'refrigerator pickle',
+    ];
+    
+    return pickleIndicators.any((indicator) => allText.contains(indicator));
+  }
+
   /// Detect the course, with special handling for drinks/cocktails
   String _guessCourse(Map data, {String? sourceUrl}) {
     var category = _parseString(data['recipeCategory'])?.toLowerCase();
@@ -5374,6 +5419,15 @@ class UrlRecipeImporter {
     // Check for drink/cocktail indicators in the data
     if (_isDrinkRecipe(category, keywords, name, description)) {
       return 'Drinks';
+    }
+    
+    // Check for pickle/fermentation indicators BEFORE modernist
+    // (calcium chloride is used in both, but pickle context takes precedence)
+    if (sourceUrl != null && _isPickleSite(sourceUrl)) {
+      return 'Pickles';
+    }
+    if (_isPickleRecipe(category, keywords, name, description)) {
+      return 'Pickles';
     }
     
     // Check for modernist/molecular gastronomy indicators
@@ -9348,8 +9402,18 @@ class UrlRecipeImporter {
   
   /// Check if this looks like a modernist gastronomy recipe
   bool _isModernistRecipe(dynamic document, String sourceUrl, List<String> ingredients) {
-    // Check URL for modernist indicators
     final lowerUrl = sourceUrl.toLowerCase();
+    
+    // First, check if this is a pickle/fermentation context
+    // Calcium chloride is commonly used for crisp pickles (Pickle Crisp), not just modernist
+    const pickleContextIndicators = [
+      'pickle', 'pickled', 'brine', 'brined', 'brining',
+      'ferment', 'fermented', 'lacto', 'kimchi', 'sauerkraut',
+      'canning', 'preserve', 'preserved',
+    ];
+    final isPickleContext = pickleContextIndicators.any((p) => lowerUrl.contains(p));
+    
+    // Check URL for modernist indicators
     if (lowerUrl.contains('modernist') || 
         lowerUrl.contains('molecular') ||
         lowerUrl.contains('chefsteps') ||
@@ -9359,14 +9423,17 @@ class UrlRecipeImporter {
     }
     
     // Check ingredients for modernist additives
-    const modernistIngredients = [
-      'agar', 'sodium alginate', 'calcium chloride', 'calcium lactate',
+    // BUT exclude calcium chloride if in pickle context (it's Pickle Crisp)
+    final modernistIngredients = [
+      'agar', 'sodium alginate', 'calcium lactate',
       'xanthan', 'lecithin', 'maltodextrin', 'tapioca maltodextrin',
       'methylcellulose', 'gellan', 'carrageenan', 'transglutaminase',
       'activa', 'foam magic', 'versawhip', 'ultra-tex', 'ultratex',
       'sodium citrate', 'sodium hexametaphosphate', 'isomalt',
       'liquid nitrogen', 'immersion circulator', 'sous vide',
       'cream whipper', 'isi whip', 'pressure cooker',
+      // Only include calcium chloride if NOT in pickle context
+      if (!isPickleContext) 'calcium chloride',
     ];
     
     final allText = ingredients.join(' ').toLowerCase();
