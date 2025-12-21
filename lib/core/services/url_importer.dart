@@ -2171,8 +2171,29 @@ class UrlRecipeImporter {
       return (course: 'Rubs', confidence: 0.7);
     }
     
+    // Priority 7: Vegan/Vegetarian detection from URL or title
+    // Check if URL contains "vegan" or "vegetarian" - suggests dedicated veg'n recipe
+    if (_isVeganRecipe(titleLower, urlLower)) {
+      return (course: "Veg'n", confidence: 0.7);
+    }
+    
     // Default: Mains (medium confidence as it's a reasonable fallback)
     return (course: 'Mains', confidence: 0.5);
+  }
+  
+  /// Check if recipe is vegan/vegetarian based on URL and title
+  bool _isVeganRecipe(String titleLower, String urlLower) {
+    final veganPattern = RegExp(r'\bvegan\b', caseSensitive: false);
+    final vegetarianPattern = RegExp(r'\bvegetarian\b', caseSensitive: false);
+    final vegPattern = RegExp(r'\bveg\b', caseSensitive: false);
+    final plantBasedPattern = RegExp(r'\bplant[\s-]?based\b', caseSensitive: false);
+    
+    return veganPattern.hasMatch(urlLower) ||
+           veganPattern.hasMatch(titleLower) ||
+           vegetarianPattern.hasMatch(urlLower) ||
+           vegetarianPattern.hasMatch(titleLower) ||
+           vegPattern.hasMatch(urlLower) ||
+           plantBasedPattern.hasMatch(titleLower);
   }
   
   /// Check if text matches any keyword for a specific course
@@ -8135,7 +8156,8 @@ class UrlRecipeImporter {
     if (directions.isEmpty) {
       for (final heading in document.querySelectorAll('h2, h3, h4')) {
         final headingText = (heading.text?.trim() ?? '').toLowerCase();
-        if (headingText == 'method' || headingText == 'directions' || headingText == 'instructions') {
+        if (headingText == 'method' || headingText == 'directions' || 
+            headingText == 'instructions' || headingText == 'preparation') {
           // Get next sibling elements for content
           var sibling = heading.nextElementSibling;
           while (sibling != null) {
@@ -8155,6 +8177,66 @@ class UrlRecipeImporter {
             sibling = sibling.nextElementSibling;
           }
           if (directions.isNotEmpty) break;
+        }
+      }
+    }
+    
+    // Pattern 4: WordPress blog style - <p><strong>Preparation</strong></p> followed by <p> elements
+    // This handles thegentlechef.com and similar WordPress sites
+    if (directions.isEmpty) {
+      final allParagraphs = document.querySelectorAll('p');
+      for (int i = 0; i < allParagraphs.length; i++) {
+        final p = allParagraphs[i];
+        final pBold = p.querySelector('strong, b');
+        if (pBold != null) {
+          final boldText = pBold.text?.trim().toLowerCase() ?? '';
+          // Check if this is a directions header
+          if (boldText == 'preparation' || boldText == 'directions' || 
+              boldText == 'instructions' || boldText == 'method' ||
+              boldText == 'preparation:' || boldText == 'directions:') {
+            // Collect all subsequent <p> elements until we hit another section header or end
+            var nextElement = p.nextElementSibling;
+            String? currentSection;
+            
+            while (nextElement != null) {
+              final tagName = nextElement.localName?.toLowerCase();
+              
+              if (tagName == 'p') {
+                // Check if this <p> is a section header
+                final sectionBold = nextElement.querySelector('strong, b');
+                if (sectionBold != null) {
+                  final sectionText = sectionBold.text?.trim().toLowerCase() ?? '';
+                  // If it's a notes/tips section, stop
+                  if (sectionText.contains('note') || sectionText.contains('tip')) {
+                    break;
+                  }
+                  // Otherwise it might be a sub-section like "Pressure Cooker" - add as header
+                  if (sectionText.isNotEmpty && 
+                      !sectionText.contains('preparation') && 
+                      !sectionText.contains('direction')) {
+                    currentSection = TextNormalizer.toTitleCase(sectionText);
+                    directions.add('**$currentSection**');
+                  }
+                } else {
+                  // Regular paragraph - add as direction
+                  final text = _decodeHtml((nextElement.text ?? '').trim());
+                  if (text.isNotEmpty && text.length > 10) {
+                    directions.add(text);
+                  }
+                }
+              } else if (tagName == 'ol' || tagName == 'ul') {
+                for (final li in nextElement.querySelectorAll('li')) {
+                  final text = _decodeHtml((li.text ?? '').trim());
+                  if (text.isNotEmpty) directions.add(text);
+                }
+              } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+                // Hit a heading - stop
+                break;
+              }
+              nextElement = nextElement.nextElementSibling;
+            }
+            if (directions.isNotEmpty) break;
+          }
         }
       }
     }
@@ -8695,6 +8777,47 @@ class UrlRecipeImporter {
                 }
               }
               break;
+            } else if (parentTag == 'p') {
+              // Bold "Ingredients" is inside a <p> - check sibling <ul>
+              // Pattern: <p><strong>Ingredients</strong></p><ul><li>...</li></ul>
+              var nextElement = parent.nextElementSibling;
+              while (nextElement != null) {
+                final tagName = nextElement.localName?.toLowerCase();
+                if (tagName == 'ul' || tagName == 'ol') {
+                  final listItems = nextElement.querySelectorAll('li');
+                  final itemTexts = <String>[];
+                  for (final li in listItems) {
+                    final text = _decodeHtml(li.text?.trim() ?? '');
+                    if (text.isNotEmpty) {
+                      itemTexts.add(text);
+                    }
+                  }
+                  if (itemTexts.isNotEmpty) {
+                    result['ingredients'] = _processIngredientListItems(itemTexts);
+                    break;
+                  }
+                } else if (tagName == 'p') {
+                  // Check if this <p> contains a section header like "Dry Rub" or "Preparation"
+                  final pBold = nextElement.querySelector('strong, b');
+                  if (pBold != null) {
+                    final pBoldText = pBold.text?.trim().toLowerCase() ?? '';
+                    // If we hit a non-ingredient section, stop
+                    if (pBoldText.contains('preparation') || 
+                        pBoldText.contains('direction') ||
+                        pBoldText.contains('instruction') ||
+                        pBoldText.contains('method') ||
+                        pBoldText.contains('step')) {
+                      break;
+                    }
+                    // If it's another ingredient section (like "Dry Rub"), continue to next ul
+                  }
+                } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+                  // Hit a heading - stop
+                  break;
+                }
+                nextElement = nextElement.nextElementSibling;
+              }
+              if ((result['ingredients'] as List).isNotEmpty) break;
             }
             parent = parent.parent;
           }
@@ -8725,6 +8848,69 @@ class UrlRecipeImporter {
           }
           
           if ((result['ingredients'] as List).isNotEmpty) break;
+        }
+      }
+    }
+    
+    // WordPress blog pattern: <p><strong>Ingredients</strong></p> followed by <ul><li><strong>...</strong></li></ul>
+    // This handles thegentlechef.com and similar WordPress sites
+    if ((result['ingredients'] as List).isEmpty) {
+      final allParagraphs = document.querySelectorAll('p');
+      for (final p in allParagraphs) {
+        final pBold = p.querySelector('strong, b');
+        if (pBold != null) {
+          final boldText = pBold.text?.trim().toLowerCase() ?? '';
+          // Check if this is an ingredients header
+          if (boldText == 'ingredients' || boldText == 'ingredients:') {
+            // Look for lists in siblings - may have multiple sections
+            final allIngredients = <String>[];
+            var nextElement = p.nextElementSibling;
+            
+            while (nextElement != null) {
+              final tagName = nextElement.localName?.toLowerCase();
+              
+              if (tagName == 'ul' || tagName == 'ol') {
+                // Found a list - extract items
+                final listItems = nextElement.querySelectorAll('li');
+                for (final li in listItems) {
+                  final text = _decodeHtml(li.text?.trim() ?? '');
+                  if (text.isNotEmpty) {
+                    allIngredients.add(text);
+                  }
+                }
+              } else if (tagName == 'p') {
+                // Check if this <p> is a section header
+                final sectionBold = nextElement.querySelector('strong, b');
+                if (sectionBold != null) {
+                  final sectionText = sectionBold.text?.trim().toLowerCase() ?? '';
+                  // Stop if we hit directions/preparation
+                  if (sectionText.contains('preparation') || 
+                      sectionText.contains('direction') ||
+                      sectionText.contains('instruction') ||
+                      sectionText.contains('method') ||
+                      sectionText.contains('step') ||
+                      sectionText.contains('procedure')) {
+                    break;
+                  }
+                  // Otherwise it's a sub-section like "Dry Rub" - add as section header
+                  if (sectionText.isNotEmpty && !sectionText.contains('ingredient')) {
+                    // Add section header as special ingredient marker
+                    final sectionName = TextNormalizer.toTitleCase(sectionText);
+                    allIngredients.add('**$sectionName**');
+                  }
+                }
+              } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+                // Hit a heading - stop
+                break;
+              }
+              nextElement = nextElement.nextElementSibling;
+            }
+            
+            if (allIngredients.isNotEmpty) {
+              result['ingredients'] = _processIngredientListItems(allIngredients);
+              break;
+            }
+          }
         }
       }
     }
