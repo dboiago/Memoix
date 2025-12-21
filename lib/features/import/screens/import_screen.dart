@@ -268,7 +268,12 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
   bool _isMobilePlatform() {
     if (kIsWeb) return false;
-    return Platform.isAndroid || Platform.isIOS;
+    try {
+      return Platform.isAndroid || Platform.isIOS;
+    } catch (e) {
+      // Platform not available (e.g., web build)
+      return false;
+    }
   }
 
   void _handleOcrResult(BuildContext context, OcrResult result) {
