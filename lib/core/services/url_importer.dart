@@ -5024,6 +5024,58 @@ class UrlRecipeImporter {
       );
     }
     
+    // Handle leading baker's percentage format: "15% warm water" or "2% of salt"
+    // These are common in artisan bread recipes (baker's math)
+    // Also handles alternatives: "2% dry yeast, or 6% fresh yeast, or 20% sourdough starter"
+    final leadingBakerPercentMatch = RegExp(
+      r'^([\d.]+)%\s+(?:of\s+)?(.+?)(?:,\s*(.+))?$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (leadingBakerPercentMatch != null) {
+      final bakerPercent = leadingBakerPercentMatch.group(1)?.trim();
+      var name = leadingBakerPercentMatch.group(2)?.trim() ?? '';
+      final alternatives = leadingBakerPercentMatch.group(3)?.trim();
+      
+      // Clean up the name - remove leading "of" if still present
+      name = name.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '').trim();
+      
+      return Ingredient.create(
+        name: _cleanIngredientName(name),
+        bakerPercent: bakerPercent != null ? '$bakerPercent%' : null,
+        preparation: alternatives,
+      );
+    }
+    
+    // Handle ratio-based ingredients: "1 egg per 250 grams of flour"
+    // Also handles: "1 egg per 250g flour", "2 eggs per pound of flour"
+    final perRatioMatch = RegExp(
+      r'^(\d+)\s+([a-zA-Z]+(?:\s+[a-zA-Z]+)?)\s+per\s+(.+)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (perRatioMatch != null) {
+      final amountNum = perRatioMatch.group(1)?.trim() ?? '';
+      final name = perRatioMatch.group(2)?.trim() ?? '';
+      var ratioNote = perRatioMatch.group(3)?.trim() ?? '';
+      
+      // Normalize common unit patterns in the ratio note
+      ratioNote = ratioNote
+          .replaceAll(RegExp(r'grams?\s+of\s+', caseSensitive: false), 'g ')
+          .replaceAll(RegExp(r'grams?', caseSensitive: false), 'g')
+          .replaceAll(RegExp(r'kilograms?\s+of\s+', caseSensitive: false), 'kg ')
+          .replaceAll(RegExp(r'kilograms?', caseSensitive: false), 'kg')
+          .replaceAll(RegExp(r'pounds?\s+of\s+', caseSensitive: false), 'lb ')
+          .replaceAll(RegExp(r'pounds?', caseSensitive: false), 'lb')
+          .replaceAll(RegExp(r'ounces?\s+of\s+', caseSensitive: false), 'oz ')
+          .replaceAll(RegExp(r'ounces?', caseSensitive: false), 'oz')
+          .trim();
+      
+      return Ingredient.create(
+        name: _cleanIngredientName(name),
+        amount: amountNum,
+        preparation: 'per $ratioNote',
+      );
+    }
+    
     // Handle "Name, amount unit (notes)" format
     // e.g., "00 Flour, 300g (10.5 oz. or about 2 Cups)"
     // e.g., "Egg Yolks, 5 each"
@@ -6952,7 +7004,8 @@ class UrlRecipeImporter {
     }
     
     // If still empty, try <p> paragraph-based directions (Bradley Smoker style)
-    // Pattern: <h2>Preparation</h2> followed by multiple <p> elements
+    // Pattern: <h2>Preparation</h2> followed by <ol>/<ul> or multiple <p> elements
+    // This handles simple blog sites like bread-code.io with h2#instructions + <ol>
     if (rawDirections.isEmpty) {
       for (final heading in document.querySelectorAll('h1, h2, h3')) {
         final headingText = (heading.text ?? '').toLowerCase().trim();
@@ -6966,17 +7019,35 @@ class UrlRecipeImporter {
                  sibling.localName != 'h1' && 
                  sibling.localName != 'h2' && 
                  sibling.localName != 'h3') {
-            if (sibling.localName == 'p') {
+            // Handle ordered/unordered lists (most common for instructions)
+            if (sibling.localName == 'ol' || sibling.localName == 'ul') {
+              for (final li in sibling.querySelectorAll('li')) {
+                final text = _decodeHtml((li.text ?? '').trim());
+                if (text.isNotEmpty) {
+                  rawDirections.add(text);
+                }
+              }
+            } else if (sibling.localName == 'p') {
               final text = _decodeHtml((sibling.text ?? '').trim());
               if (text.isNotEmpty && text.length > 20) { // Skip short paragraphs
                 rawDirections.add(text);
               }
             } else if (sibling.localName == 'div') {
-              // Check for paragraphs inside a wrapper div
-              for (final p in sibling.querySelectorAll('p')) {
-                final text = _decodeHtml((p.text ?? '').trim());
-                if (text.isNotEmpty && text.length > 20) {
-                  rawDirections.add(text);
+              // Check for lists or paragraphs inside a wrapper div
+              final nestedList = sibling.querySelector('ol, ul');
+              if (nestedList != null) {
+                for (final li in nestedList.querySelectorAll('li')) {
+                  final text = _decodeHtml((li.text ?? '').trim());
+                  if (text.isNotEmpty) {
+                    rawDirections.add(text);
+                  }
+                }
+              } else {
+                for (final p in sibling.querySelectorAll('p')) {
+                  final text = _decodeHtml((p.text ?? '').trim());
+                  if (text.isNotEmpty && text.length > 20) {
+                    rawDirections.add(text);
+                  }
                 }
               }
             }
