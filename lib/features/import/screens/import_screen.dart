@@ -215,6 +215,21 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
   }
 
   Future<void> _scanFromCamera(BuildContext context) async {
+    // DEBUG: Unconditional dialog to verify tap is received
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('DEBUG'),
+        content: Text('isMobile: ${_isMobilePlatform()}'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('OK'),
+          ),
+        ],
+      ),
+    );
+    
     if (!_isMobilePlatform()) {
       MemoixSnackBar.show('OCR is only available on mobile devices');
       return;
