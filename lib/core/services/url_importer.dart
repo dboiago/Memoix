@@ -8027,11 +8027,16 @@ class UrlRecipeImporter {
         : 0.0;
 
     // Build image paths list: header image first, then step images
+    // Filter out the header image from step images to avoid duplication
     List<String>? imagePaths;
     if (imageUrl != null || stepImages.isNotEmpty) {
+      // Remove header image from step images if present
+      final filteredStepImages = imageUrl != null
+          ? stepImages.where((img) => img != imageUrl).toList()
+          : stepImages;
       imagePaths = [
         if (imageUrl != null) imageUrl,
-        ...stepImages,
+        ...filteredStepImages,
       ];
     }
 
@@ -10716,13 +10721,29 @@ class UrlRecipeImporter {
     ];
     final isPickleContext = pickleContextIndicators.any((p) => lowerUrl.contains(p));
     
-    // Check if this is a pastry/dessert context where 'foam' keywords would be misleading
+    // Check if this is a pastry/dessert context where 'foam' and 'gel' keywords would be misleading
     // Mousse, mousseline, chantilly, etc. are traditional pastry, not modernist
+    // Gelatin and gel-like textures are common in desserts
     const pastryContextIndicators = [
       'pastry', 'dessert', 'cake', 'mousse', 'mousseline', 'chantilly',
       'ganache', 'entremet', 'patisserie', 'baking', 'chocolate',
+      'vegan', 'cupcake', 'tart', 'pie', 'cream', 'custard', 'pudding',
     ];
     final isPastryContext = pastryContextIndicators.any((p) => lowerUrl.contains(p));
+    
+    // If this is clearly a pastry/dessert context, require explicit modernist URL indicators
+    // to classify as modernist - don't rely on technique keywords alone
+    if (isPastryContext) {
+      // Only consider modernist if URL explicitly mentions it
+      if (lowerUrl.contains('modernist') || 
+          lowerUrl.contains('molecular') ||
+          lowerUrl.contains('chefsteps')) {
+        return true;
+      }
+      // For pastry context, skip technique keyword detection entirely
+      // as mousse, gel, foam are all traditional pastry terms
+      return false;
+    }
     
     // Check URL for modernist indicators
     if (lowerUrl.contains('modernist') || 
@@ -10735,7 +10756,6 @@ class UrlRecipeImporter {
     
     // Check ingredients for modernist additives
     // Exclude calcium chloride if in pickle context (it's Pickle Crisp)
-    // Exclude common pastry equipment that can be in non-modernist contexts
     final modernistIngredients = [
       'agar', 'sodium alginate', 'calcium lactate',
       'xanthan', 'lecithin', 'maltodextrin', 'tapioca maltodextrin',
@@ -10755,14 +10775,11 @@ class UrlRecipeImporter {
     }
     
     // Check page content for technique keywords
-    // Skip foam-related keywords in pastry context (mousse, whipped cream, etc.)
     final bodyText = document.body?.text?.toLowerCase() ?? '';
-    final techniqueKeywords = [
+    const techniqueKeywords = [
       'spherification', 'gelification', 'emulsification',
       'sous vide', 'pressure cooking', 'vacuum seal',
-      'gel', 'caviar', 'pearls',
-      // Only check foam-related terms if NOT in pastry context
-      if (!isPastryContext) 'foam',
+      'caviar', 'pearls',
     ];
     
     int matchCount = 0;
