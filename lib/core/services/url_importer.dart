@@ -275,6 +275,14 @@ class UrlRecipeImporter {
     'oklahomajoes.com',      // Smoker manufacturer
   ];
 
+  /// Known sites that embed recipes as images (infographics, recipe cards)
+  /// These sites cannot be parsed via URL import - users should use OCR instead
+  /// Returns a user-friendly message explaining the limitation
+  static const _imageOnlyRecipeSites = <String, String>{
+    'modernistcuisine.com': 'Modernist Cuisine displays recipes as high-resolution images. '
+        'To import this recipe, save/screenshot the recipe image and use OCR Import from your gallery.',
+  };
+
   /// Consolidated course detection keywords
   /// Each course maps to a list of keywords that indicate that course type
   /// Keywords are matched as word boundaries (\b) in lowercase text
