@@ -2807,6 +2807,14 @@ class UrlRecipeImporter {
       final trimmed = s.trim();
       if (trimmed.isEmpty) continue;
       
+      // Check for direction-like lines FIRST - move to directions list
+      // This must come before garbage check because directions look like garbage to some patterns
+      if (_isDirectionLikeLine(trimmed)) {
+        print('[DEBUG] DIRECTION: "$trimmed"');
+        extractedDirections.add(trimmed);
+        continue;
+      }
+      
       // Check for pure garbage (social media, ads, etc.) - discard completely
       if (_isGarbageIngredient(trimmed)) {
         print('[DEBUG] GARBAGE: "$trimmed"');
@@ -2817,13 +2825,6 @@ class UrlRecipeImporter {
       if (_isEquipmentItem(trimmed)) {
         print('[DEBUG] EQUIPMENT: "$trimmed"');
         extractedEquipment.add(trimmed);
-        continue;
-      }
-      
-      // Check for direction-like lines - move to directions list
-      if (_isDirectionLikeLine(trimmed)) {
-        print('[DEBUG] DIRECTION: "$trimmed"');
-        extractedDirections.add(trimmed);
         continue;
       }
       
