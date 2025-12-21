@@ -170,6 +170,15 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Opacity(
+              opacity: 0.4,
+              child: Image.asset(
+                'assets/images/Memoix-markfilled-black-512.png',
+                width: 48,
+                height: 48,
+                fit: BoxFit.contain,
+              ),
+            ),
             const SizedBox(height: 16),
             Text(
               _searchQuery.isNotEmpty

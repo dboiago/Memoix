@@ -284,10 +284,14 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.local_pizza_outlined,
-              size: 64,
-              color: Theme.of(context).colorScheme.outline,
+            Opacity(
+              opacity: 0.4,
+              child: Image.asset(
+                'assets/images/Memoix-markfilled-black-512.png',
+                width: 48,
+                height: 48,
+                fit: BoxFit.contain,
+              ),
             ),
             const SizedBox(height: 16),
             Text(

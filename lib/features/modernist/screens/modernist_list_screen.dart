@@ -241,7 +241,6 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
   Widget _buildEmptyState() {
     return const MemoixEmptyState(
       message: 'No recipes found',
-      icon: Icons.science_outlined,
     );
   }
 

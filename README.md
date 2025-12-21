@@ -1,5 +1,9 @@
 # Memoix
 
+<p align="center">
+  <img src="assets/images/Memoix-logo-mauve-400.png" alt="Memoix Logo" width="200">
+</p>
+
 Memoix is a recipe and food reference app for people who cook seriously.
 
 It prioritizes speed, clarity, and flexibility over gamification or beginner scaffolding. Recipes, techniques, logs, and notes live side-by-side, with support for workflows that don't fit neatly into "ingredients + steps".

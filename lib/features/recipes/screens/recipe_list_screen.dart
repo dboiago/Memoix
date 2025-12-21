@@ -465,7 +465,6 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   Widget _buildEmptyState() {
     return MemoixEmptyState(
       message: widget.emptyMessage ?? 'No recipes found',
-      icon: Icons.restaurant,
     );
   }
 

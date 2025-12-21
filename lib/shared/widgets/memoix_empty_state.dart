@@ -2,28 +2,29 @@ import 'package:flutter/material.dart';
 
 /// Unified empty state widget for consistent "no items found" experience.
 /// 
+/// Uses the Memoix filled mark (knife+fork) as the visual element.
+/// 
 /// Usage:
 /// ```dart
 /// MemoixEmptyState(
 ///   message: 'No recipes found',
-///   icon: Icons.restaurant,
 /// )
 /// ```
 class MemoixEmptyState extends StatelessWidget {
   /// The message to display (e.g., "No recipes found")
   final String message;
   
-  /// Optional icon to display above the message
-  final IconData icon;
-  
   /// Optional subtitle for additional context
   final String? subtitle;
+  
+  /// Size of the mark image (default 48×48 for subtle branding)
+  final double markSize;
 
   const MemoixEmptyState({
     super.key,
     required this.message,
-    this.icon = Icons.search_off,
     this.subtitle,
+    this.markSize = 48,
   });
 
   @override
@@ -36,10 +37,14 @@ class MemoixEmptyState extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              icon,
-              size: 64,
-              color: theme.colorScheme.outline,
+            Opacity(
+              opacity: 0.4,
+              child: Image.asset(
+                'assets/images/Memoix-markfilled-black-512.png',
+                width: markSize,
+                height: markSize,
+                fit: BoxFit.contain,
+              ),
             ),
             const SizedBox(height: 16),
             Text(

@@ -82,11 +82,19 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.search_off, size: 64, color: Colors.grey),
+                Opacity(
+                  opacity: 0.4,
+                  child: Image.asset(
+                    'assets/images/Memoix-markfilled-black-512.png',
+                    width: 48,
+                    height: 48,
+                    fit: BoxFit.contain,
+                  ),
+                ),
                 const SizedBox(height: 16),
                 Text(
                   'No recipes found for "$query"',
-                  style: const TextStyle(color: Colors.grey),
+                  style: TextStyle(color: Theme.of(context).colorScheme.outline),
                 ),
               ],
             ),

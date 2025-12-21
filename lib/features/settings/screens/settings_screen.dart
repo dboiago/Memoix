@@ -436,18 +436,11 @@ class SettingsScreen extends ConsumerWidget {
       context: context,
       applicationName: 'Memoix',
       applicationVersion: version,
-      // Using a Container for the icon allows for nice rounded corners
-      applicationIcon: Container(
-        width: 64,
-        height: 64,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          image: const DecorationImage(
-            // Ensure this path matches your actual asset location
-            image: AssetImage('assets/icons/app_icon.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
+      applicationIcon: Image.asset(
+        'assets/images/Memoix-logo-mauve-400.png',
+        width: 80,
+        height: 80,
+        fit: BoxFit.contain,
       ),
       applicationLegalese: '© 2024-2025 Devon Boiago\n\n'
           'Licensed under PolyForm Noncommercial 1.0.0.\n'
