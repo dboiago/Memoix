@@ -8894,9 +8894,9 @@ class UrlRecipeImporter {
                   }
                   // Otherwise it's a sub-section like "Dry Rub" - add as section header
                   if (sectionText.isNotEmpty && !sectionText.contains('ingredient')) {
-                    // Add section header as special ingredient marker
+                    // Add section header with bracket format (recognized by import system)
                     final sectionName = TextNormalizer.toTitleCase(sectionText);
-                    allIngredients.add('**$sectionName**');
+                    allIngredients.add('[$sectionName]');
                   }
                 }
               } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
@@ -9969,6 +9969,13 @@ class UrlRecipeImporter {
     int sectionCount = 0;
     
     for (final item in items) {
+      // Check if this is already a bracketed section header [Section Name]
+      if (item.startsWith('[') && item.endsWith(']')) {
+        sectionCount++;
+        processed.add(item);
+        continue;
+      }
+      
       // Check if this is a section header - must:
       // 1. End with colon
       // 2. Not contain numbers (which would indicate an amount)
