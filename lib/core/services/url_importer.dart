@@ -4466,13 +4466,45 @@ class UrlRecipeImporter {
     }).join(' ');
   }
 
-  /// Normalize serves/yield string - strip common prefixes like "Servings: ", "Serves ", etc.
+  /// Normalize serves/yield string - extract just the serving count number
   String _normalizeServes(String text) {
     var cleaned = text.trim();
+    
+    // Check for "(X servings)" pattern first - common in King Arthur, etc.
+    // e.g., "one 9" x 4" loaf (16 servings)" -> "16"
+    final parenServingsMatch = RegExp(r'\((\d+)\s*(?:servings?|portions?)\)', caseSensitive: false).firstMatch(cleaned);
+    if (parenServingsMatch != null) {
+      return parenServingsMatch.group(1) ?? cleaned;
+    }
+    
+    // Check for "X servings" or "serves X" pattern
+    final servingsMatch = RegExp(r'(\d+)\s*(?:servings?|portions?)', caseSensitive: false).firstMatch(cleaned);
+    if (servingsMatch != null) {
+      return servingsMatch.group(1) ?? cleaned;
+    }
+    
+    final servesMatch = RegExp(r'(?:serves?|yields?|makes?)\s*:?\s*(\d+)', caseSensitive: false).firstMatch(cleaned);
+    if (servesMatch != null) {
+      return servesMatch.group(1) ?? cleaned;
+    }
+    
     // Strip common prefixes
     cleaned = cleaned.replaceFirst(RegExp(r'^(?:Servings?|Serves?|Yield|Makes?)\s*:?\s*', caseSensitive: false), '');
     // Strip trailing labels like "servings" from "4 servings"
     cleaned = cleaned.replaceFirst(RegExp(r'\s+(?:servings?|portions?)$', caseSensitive: false), '');
+    
+    // If what remains is a simple number, return it
+    final simpleNumber = RegExp(r'^(\d+)$').firstMatch(cleaned.trim());
+    if (simpleNumber != null) {
+      return simpleNumber.group(1) ?? cleaned;
+    }
+    
+    // If there's a number at the start, extract it (e.g., "4-6" -> "4-6", "4 people" -> "4")
+    final leadingNumber = RegExp(r'^(\d+(?:\s*-\s*\d+)?)').firstMatch(cleaned.trim());
+    if (leadingNumber != null) {
+      return leadingNumber.group(1) ?? cleaned;
+    }
+    
     return cleaned.trim();
   }
 
