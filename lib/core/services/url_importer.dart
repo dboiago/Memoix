@@ -901,7 +901,9 @@ class UrlRecipeImporter {
                                 document.querySelector('.ingredients__section .ingredient-section-name') != null || // Tasty.co
                                 document.querySelector('[class*="ingredientgroup_name"]') != null || // NYT Cooking
                                 document.querySelector('.structured-ingredients__list-heading') != null || // Serious Eats
-                                document.querySelector('.ingredient-section') != null; // King Arthur Baking
+                                document.querySelector('.ingredient-section') != null || // King Arthur Baking
+                                document.querySelector('.tasty-recipes-ingredients h4') != null || // Tasty Recipes plugin
+                                document.querySelector('.tasty-recipes-ingredients-body h4') != null; // Tasty Recipes (alt)
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -2204,10 +2206,12 @@ class UrlRecipeImporter {
     return woodTypes.any((w) => allText.contains(w));
   }
   
-  /// Check for bread-making indicators (flour + yeast)
+  /// Check for bread-making indicators (flour + yeast OR flour + starter for sourdough)
   bool _hasBreadIndicators(List<String> ingredients) {
     final allText = ingredients.join(' ').toLowerCase();
-    return allText.contains('flour') && allText.contains('yeast');
+    // Traditional breads use yeast, sourdough uses starter
+    return allText.contains('flour') && 
+           (allText.contains('yeast') || allText.contains('starter') || allText.contains('levain'));
   }
 
   /// Check for pickle/fermentation indicators in title or URL
@@ -5771,6 +5775,15 @@ class UrlRecipeImporter {
       return 'Smoking';
     }
     
+    // Priority: Check name for definitive recipe types BEFORE generic indicator checks
+    // A recipe named "Sourdough Bread" should be Breads, not Drinks just because
+    // some drink-related word appears elsewhere in the metadata
+    if (name.contains('bread') || name.contains('sourdough') || name.contains('focaccia') || 
+        name.contains('baguette') || name.contains('ciabatta') || name.contains('brioche') ||
+        name.contains('loaf') || name.contains('rolls') || name.contains('buns')) {
+      return 'Breads';
+    }
+    
     // Check for drink/cocktail indicators in the data
     if (_isDrinkRecipe(category, keywords, name, description)) {
       return 'Drinks';
@@ -5807,11 +5820,7 @@ class UrlRecipeImporter {
     }
     
     // Check name and keywords for specific recipe types (before dietary indicators)
-    // These are more specific than vegan/vegetarian which is just a dietary restriction
-    if (name.contains('bread') || name.contains('sourdough') || name.contains('focaccia') || 
-        name.contains('baguette') || name.contains('ciabatta') || name.contains('brioche')) {
-      return 'Breads';
-    }
+    // Note: Bread check is done earlier in the function for priority over drink detection
     if (name.contains('soup') || name.contains('stew') || name.contains('chowder')) {
       return 'Soups';
     }
@@ -8826,6 +8835,36 @@ class UrlRecipeImporter {
           final text = _decodeHtml((item.text ?? '').trim());
           if (text.isNotEmpty) {
             ingredients.add(text);
+          }
+        }
+      }
+      
+      if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
+    }
+    
+    // Try Tasty Recipes plugin format: .tasty-recipes-ingredients-body with h4 section headers followed by ul
+    final tastyRecipesBody = document.querySelector('.tasty-recipes-ingredients-body');
+    if (tastyRecipesBody != null) {
+      // Iterate through children to preserve section order
+      for (final child in tastyRecipesBody.children) {
+        final tagName = child.localName?.toLowerCase() ?? '';
+        
+        if (tagName == 'h4') {
+          // Section header
+          var sectionText = _decodeHtml((child.text ?? '').trim());
+          // Remove trailing colon if present
+          sectionText = sectionText.replaceAll(RegExp(r':$'), '').trim();
+          if (sectionText.isNotEmpty) {
+            ingredients.add('[$sectionText]');
+          }
+        } else if (tagName == 'ul') {
+          // Ingredient list
+          final items = child.querySelectorAll('li');
+          for (final item in items) {
+            final text = _decodeHtml((item.text ?? '').trim());
+            if (text.isNotEmpty) {
+              ingredients.add(text);
+            }
           }
         }
       }
