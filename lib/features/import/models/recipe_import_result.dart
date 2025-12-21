@@ -694,12 +694,6 @@ class RawIngredientData {
   
   /// Sanitize a list of raw ingredients, removing invalid and duplicate entries
   static List<RawIngredientData> sanitize(List<RawIngredientData> ingredients) {
-    print('DEBUG sanitize: Input has ${ingredients.length} items');
-    for (var i = 0; i < ingredients.length; i++) {
-      final ing = ingredients[i];
-      print('DEBUG sanitize input[$i]: name="${ing.name}", sectionName=${ing.sectionName}, isValid=${ing.isValid}');
-    }
-    
     // First, collect all section names
     final sectionNames = ingredients
         .where((i) => i.sectionName != null && i.sectionName!.trim().isNotEmpty)
@@ -709,20 +703,17 @@ class RawIngredientData {
     // Filter out invalid entries AND entries whose name duplicates a section header
     final result = ingredients.where((i) {
       if (!i.isValid) {
-        print('DEBUG sanitize: Filtering out invalid: name="${i.name}", sectionName=${i.sectionName}');
         return false;
       }
       
       // If this is a section header, keep it
       if (i.sectionName != null && i.sectionName!.trim().isNotEmpty) {
-        print('DEBUG sanitize: Keeping section header: sectionName=${i.sectionName}');
         return true;
       }
       
       // If this ingredient's name matches any section header, it's a duplicate - remove it
       final cleanName = i.name.trim().toLowerCase();
       if (sectionNames.contains(cleanName)) {
-        print('DEBUG sanitize: Filtering duplicate of section: name="${i.name}"');
         return false;
       }
       
@@ -731,16 +722,13 @@ class RawIngredientData {
       if (i.amount == null && i.unit == null && i.preparation == null) {
         // If it's a short name with no measurements and matches common header patterns, skip it
         if (cleanName.length < 50 && !_looksLikeIngredientName(cleanName)) {
-          print('DEBUG sanitize: Filtering non-ingredient looking: name="${i.name}"');
           return false;
         }
       }
       
-      print('DEBUG sanitize: Keeping ingredient: name="${i.name}"');
       return true;
     }).toList();
     
-    print('DEBUG sanitize: Output has ${result.length} items');
     return result;
   }
   

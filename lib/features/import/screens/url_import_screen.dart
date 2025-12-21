@@ -238,13 +238,6 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
       final importer = UrlRecipeImporter();
       final rawResult = await importer.importFromUrl(url, context: context);
       
-      // DEBUG: Print ingredients in the result
-      print('DEBUG url_import_screen: result has ${rawResult.ingredients.length} ingredients');
-      for (var i = 0; i < rawResult.ingredients.length; i++) {
-        final ing = rawResult.ingredients[i];
-        print('DEBUG ingredients[$i]: name="${ing.name}", section=${ing.section}');
-      }
-      
       // Apply default course if provided and no course was detected
       final result = widget.defaultCourse != null && rawResult.course == null
           ? rawResult.copyWith(course: widget.defaultCourse)

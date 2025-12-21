@@ -4860,18 +4860,9 @@ class UrlRecipeImporter {
   List<RawIngredientData> _buildRawIngredients(List<String> rawStrings) {
     final result = <RawIngredientData>[];
     
-    // DEBUG: Print caller and all incoming raw strings
-    final trace = StackTrace.current.toString().split('\n').take(5).join('\n');
-    print('DEBUG _buildRawIngredients: Processing ${rawStrings.length} raw strings');
-    print('DEBUG caller trace:\n$trace');
-    for (var i = 0; i < rawStrings.length; i++) {
-      print('DEBUG raw[$i]: "${rawStrings[i]}"');
-    }
-    
     for (final raw in rawStrings) {
       // Skip completely empty strings
       if (raw.trim().isEmpty) {
-        print('DEBUG: Skipping empty string');
         continue;
       }
       
@@ -4902,15 +4893,12 @@ class UrlRecipeImporter {
       // Skip entries that have no meaningful name and no section
       // This is the key filter that prevents blank rows
       if (name.trim().isEmpty && effectiveSection == null) {
-        print('DEBUG: Skipping - empty name, no section: "$raw"');
         continue;
       }
       if (name.trim().isNotEmpty && !RegExp(r'[a-zA-Z0-9]').hasMatch(name)) {
-        print('DEBUG: Skipping - no alphanumeric: "$raw" -> name="$name"');
         continue;
       }
       
-      print('DEBUG: Adding - name="$name", sectionName=$effectiveSection, isSectionOnly=$isSectionOnly');
       result.add(RawIngredientData(
         original: raw,
         amount: isSectionOnly ? null : parsed.amount,
@@ -4924,7 +4912,6 @@ class UrlRecipeImporter {
       ));
     }
     
-    print('DEBUG _buildRawIngredients: Returning ${result.length} items');
     return result;
   }
 
