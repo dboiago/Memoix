@@ -8207,26 +8207,41 @@ class UrlRecipeImporter {
               final tagName = nextElement.localName?.toLowerCase();
               
               if (tagName == 'p') {
-                // Check if this <p> is a section header
+                final paragraphText = _decodeHtml((nextElement.text ?? '').trim());
+                
+                // Check if this <p> is a section header (entire paragraph is bold)
                 final sectionBold = nextElement.querySelector('strong, b');
                 if (sectionBold != null) {
-                  final sectionText = sectionBold.text?.trim().toLowerCase() ?? '';
-                  // If it's a notes/tips section, stop
-                  if (sectionText.contains('note') || sectionText.contains('tip')) {
-                    break;
-                  }
-                  // Otherwise it might be a sub-section like "Pressure Cooker" - add as header
-                  if (sectionText.isNotEmpty && 
-                      !sectionText.contains('preparation') && 
-                      !sectionText.contains('direction')) {
-                    currentSection = TextNormalizer.toTitleCase(sectionText);
-                    directions.add('**$currentSection**');
+                  final boldText = sectionBold.text?.trim() ?? '';
+                  final sectionText = boldText.toLowerCase();
+                  
+                  // Check if bold text is the ENTIRE paragraph content (section header)
+                  // vs inline emphasis (just a word or phrase within a longer sentence)
+                  final isSectionHeader = boldText.isNotEmpty && 
+                      (paragraphText == boldText || paragraphText == '$boldText:');
+                  
+                  if (isSectionHeader) {
+                    // If it's a notes/tips section, stop
+                    if (sectionText.contains('note') || sectionText.contains('tip')) {
+                      break;
+                    }
+                    // Otherwise it might be a sub-section like "Pressure Cooker" - add as header
+                    if (sectionText.isNotEmpty && 
+                        !sectionText.contains('preparation') && 
+                        !sectionText.contains('direction')) {
+                      currentSection = TextNormalizer.toTitleCase(sectionText);
+                      directions.add('**$currentSection**');
+                    }
+                  } else {
+                    // Inline bold text - treat as regular direction
+                    if (paragraphText.isNotEmpty && paragraphText.length > 10) {
+                      directions.add(paragraphText);
+                    }
                   }
                 } else {
                   // Regular paragraph - add as direction
-                  final text = _decodeHtml((nextElement.text ?? '').trim());
-                  if (text.isNotEmpty && text.length > 10) {
-                    directions.add(text);
+                  if (paragraphText.isNotEmpty && paragraphText.length > 10) {
+                    directions.add(paragraphText);
                   }
                 }
               } else if (tagName == 'ol' || tagName == 'ul') {
@@ -8884,25 +8899,37 @@ class UrlRecipeImporter {
                   }
                 }
               } else if (tagName == 'p') {
-                // Check if this <p> is a section header
+                final paragraphText = _decodeHtml((nextElement.text ?? '').trim());
+                
+                // Check if this <p> is a section header (entire paragraph is bold)
                 final sectionBold = nextElement.querySelector('strong, b');
                 if (sectionBold != null) {
-                  final sectionText = sectionBold.text?.trim().toLowerCase() ?? '';
-                  // Stop if we hit directions/preparation
-                  if (sectionText.contains('preparation') || 
-                      sectionText.contains('direction') ||
-                      sectionText.contains('instruction') ||
-                      sectionText.contains('method') ||
-                      sectionText.contains('step') ||
-                      sectionText.contains('procedure')) {
-                    break;
+                  final boldText = sectionBold.text?.trim() ?? '';
+                  final sectionText = boldText.toLowerCase();
+                  
+                  // Check if bold text is the ENTIRE paragraph content (section header)
+                  // vs inline emphasis (just a word or phrase within a longer sentence)
+                  final isSectionHeader = boldText.isNotEmpty && 
+                      (paragraphText == boldText || paragraphText == '$boldText:');
+                  
+                  if (isSectionHeader) {
+                    // Stop if we hit directions/preparation
+                    if (sectionText.contains('preparation') || 
+                        sectionText.contains('direction') ||
+                        sectionText.contains('instruction') ||
+                        sectionText.contains('method') ||
+                        sectionText.contains('step') ||
+                        sectionText.contains('procedure')) {
+                      break;
+                    }
+                    // Otherwise it's a sub-section like "Dry Rub" - add as section header
+                    if (sectionText.isNotEmpty && !sectionText.contains('ingredient')) {
+                      // Add section header with bracket format (recognized by import system)
+                      final sectionName = TextNormalizer.toTitleCase(sectionText);
+                      allIngredients.add('[$sectionName]');
+                    }
                   }
-                  // Otherwise it's a sub-section like "Dry Rub" - add as section header
-                  if (sectionText.isNotEmpty && !sectionText.contains('ingredient')) {
-                    // Add section header with bracket format (recognized by import system)
-                    final sectionName = TextNormalizer.toTitleCase(sectionText);
-                    allIngredients.add('[$sectionName]');
-                  }
+                  // Note: paragraphs with inline bold are not ingredients, skip them
                 }
               } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
                 // Hit a heading - stop
