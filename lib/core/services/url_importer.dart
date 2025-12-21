@@ -320,6 +320,10 @@ class UrlRecipeImporter {
       'pastry', 'pudding', 'ice cream', 'sorbet', 'flan', 'custard', 
       'macaron', 'tiramisu', 'mousse', 'creme brulee', 'pavlova', 'baklava',
       'gelato', 'truffle', 'fudge', 'candy', 'meringue', 'souffle',
+      'gateau', 'petit four', 'entremets', 'mille-feuille', 'millefeuille',
+      'eclair', 'choux', 'profiterole', 'opera cake', 'dacquoise',
+      'genoise', 'sponge cake', 'layer cake', 'torte', 'trifle',
+      'cremeux', 'glaze', 'ganache', 'tuile', 'praline', 'bonbon',
     ],
     'Soup': [
       'soup', 'stew', 'chowder', 'bisque', 'broth', 'consomme', 
@@ -912,7 +916,8 @@ class UrlRecipeImporter {
                                 document.querySelector('.ingredient-section') != null || // King Arthur Baking
                                 document.querySelector('.tasty-recipes-ingredients h4') != null || // Tasty Recipes plugin
                                 document.querySelector('.tasty-recipes-ingredients-body h4') != null || // Tasty Recipes (alt)
-                                document.querySelector('.content-info h3.wp-block-heading') != null; // sogoodmagazine.com
+                                document.querySelector('.content-info h3.wp-block-heading') != null || // sogoodmagazine.com
+                                document.querySelector('h3.wp-block-heading + ul') != null; // pastryartsmag.com (WP block headings)
         
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
@@ -6545,6 +6550,128 @@ class UrlRecipeImporter {
       }
     }
     
+    // Try WordPress block heading pattern without .content-info wrapper (pastryartsmag.com style):
+    // h3.wp-block-heading followed by ul (ingredients) directly on document level
+    if (rawIngredientStrings.isEmpty) {
+      final wpBlockHeadings = document.querySelectorAll('h3.wp-block-heading');
+      if (wpBlockHeadings.isNotEmpty) {
+        usedStructuredFormat = true;
+        
+        for (final heading in wpBlockHeadings) {
+          final sectionName = _decodeHtml((heading.text ?? '').trim());
+          if (sectionName.isEmpty) continue;
+          
+          final lowerSection = sectionName.toLowerCase();
+          
+          // Skip generic/promotional headings
+          if (lowerSection.contains('discover') ||
+              lowerSection.contains('related') ||
+              lowerSection.contains('podcast') ||
+              lowerSection.contains('latest')) {
+            continue;
+          }
+          
+          // Skip if section name looks like a link (e.g., "Recipe Name by Author")
+          if (sectionName.contains(' by ') && lowerSection.contains('recipe')) {
+            continue;
+          }
+          
+          // Capture "Assembly" section content for notes
+          if (lowerSection == 'assembly') {
+            final assemblyLines = <String>[];
+            var sibling = heading.nextElementSibling;
+            while (sibling != null) {
+              final tagName = sibling.localName?.toLowerCase() ?? '';
+              
+              // Stop at next heading or horizontal rule
+              if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4' || tagName == 'hr') {
+                break;
+              }
+              
+              // Handle numbered list (ol) for assembly steps
+              if (tagName == 'ol') {
+                final items = sibling.querySelectorAll('li');
+                for (final item in items) {
+                  final itemText = _decodeHtml((item.text ?? '').trim());
+                  if (itemText.isNotEmpty) {
+                    assemblyLines.add(itemText);
+                  }
+                }
+              }
+              
+              if (tagName == 'p') {
+                final pText = _decodeHtml((sibling.text ?? '').trim());
+                if (pText.isNotEmpty && pText != '\u00a0') {
+                  assemblyLines.add(pText);
+                }
+              }
+              
+              sibling = sibling.nextElementSibling;
+            }
+            
+            if (assemblyLines.isNotEmpty) {
+              if (wpBlockAssemblyNotes != null) {
+                wpBlockAssemblyNotes = '$wpBlockAssemblyNotes\n\n**Assembly**\n${assemblyLines.join('\n\n')}';
+              } else {
+                wpBlockAssemblyNotes = '**Assembly**\n${assemblyLines.join('\n\n')}';
+              }
+            }
+            continue;
+          }
+          
+          // Skip "Others" section (typically just garnish items with no measurements)
+          if (lowerSection == 'others') {
+            continue;
+          }
+          
+          // Look for ul sibling after this heading (may skip &nbsp;, hr, figure)
+          var sibling = heading.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Skip separators, images, and whitespace-only elements
+            if (tagName == 'hr' || tagName == 'figure') {
+              sibling = sibling.nextElementSibling;
+              continue;
+            }
+            if (tagName == 'p') {
+              // Check if p is just whitespace/nbsp
+              final pText = (sibling.text ?? '').trim();
+              if (pText.isEmpty || pText == '\u00a0') {
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              // Otherwise it's directions, stop looking for ul
+              break;
+            }
+            
+            if (tagName == 'ul') {
+              // Found the ingredient list for this section
+              final items = sibling.querySelectorAll('li');
+              if (items.isNotEmpty) {
+                // Add section header
+                rawIngredientStrings.add('[$sectionName]');
+                for (final item in items) {
+                  final text = _decodeHtml((item.text ?? '').trim());
+                  if (text.isNotEmpty) {
+                    rawIngredientStrings.add(text);
+                  }
+                }
+              }
+              break;
+            }
+            
+            // Stop at next heading
+            if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+              break;
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+      }
+    }
+    
     // Add WordPress block Assembly notes to htmlNotes if extracted
     if (wpBlockAssemblyNotes != null) {
       if (htmlNotes != null && htmlNotes.isNotEmpty) {
@@ -7164,6 +7291,101 @@ class UrlRecipeImporter {
               
               sibling = sibling.nextElementSibling;
             }
+          }
+        }
+      }
+    }
+    
+    // Try WordPress block heading direction pattern without .content-info wrapper (pastryartsmag.com style):
+    // h3.wp-block-heading followed by ul (ingredients) then ol/p (directions) on document level
+    if (rawDirections.isEmpty) {
+      final wpBlockHeadings = document.querySelectorAll('h3.wp-block-heading');
+      if (wpBlockHeadings.isNotEmpty) {
+        for (final heading in wpBlockHeadings) {
+          final sectionName = _decodeHtml((heading.text ?? '').trim());
+          if (sectionName.isEmpty) continue;
+          
+          final lowerSection = sectionName.toLowerCase();
+          // Skip non-recipe headings
+          if (lowerSection.contains('discover') || 
+              lowerSection.contains('related') ||
+              lowerSection.contains('podcast') ||
+              lowerSection.contains('latest')) {
+            continue;
+          }
+          
+          // Skip if section name looks like a link (e.g., "Recipe Name by Author")
+          if (sectionName.contains(' by ') && lowerSection.contains('recipe')) {
+            continue;
+          }
+          
+          // Add section header for multi-component recipes
+          final sectionHeader = '**$sectionName**';
+          var addedSectionHeader = false;
+          
+          // Find the ul (ingredients) then get ol/p elements after it
+          var sibling = heading.nextElementSibling;
+          var foundUl = false;
+          
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Skip hr separators and whitespace-only elements
+            if (tagName == 'hr') {
+              sibling = sibling.nextElementSibling;
+              continue;
+            }
+            
+            if (tagName == 'ul') {
+              // Skip the ingredient list, mark that we found it
+              foundUl = true;
+              sibling = sibling.nextElementSibling;
+              continue;
+            }
+            
+            // After finding ul, extract ol (numbered list) or p elements as directions
+            if (foundUl && tagName == 'ol') {
+              final items = sibling.querySelectorAll('li');
+              if (items.isNotEmpty) {
+                // Add section header before directions
+                if (!addedSectionHeader) {
+                  rawDirections.add(sectionHeader);
+                  addedSectionHeader = true;
+                }
+                for (final item in items) {
+                  final text = _decodeHtml((item.text ?? '').trim());
+                  if (text.isNotEmpty) {
+                    rawDirections.add(text);
+                  }
+                }
+              }
+            }
+            
+            if (foundUl && tagName == 'p') {
+              final text = _decodeHtml((sibling.text ?? '').trim());
+              // Skip whitespace-only paragraphs
+              if (text.isNotEmpty && text != '\u00a0' && text.length > 15) {
+                // Add section header before first direction
+                if (!addedSectionHeader) {
+                  rawDirections.add(sectionHeader);
+                  addedSectionHeader = true;
+                }
+                rawDirections.add(text);
+              }
+            }
+            
+            // Skip figure elements (images between directions)
+            if (tagName == 'figure') {
+              sibling = sibling.nextElementSibling;
+              continue;
+            }
+            
+            // Stop at next heading or horizontal rule (new section)
+            if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+              break;
+            }
+            
+            sibling = sibling.nextElementSibling;
           }
         }
       }
@@ -9195,6 +9417,76 @@ class UrlRecipeImporter {
                   }
                 }
                 foundUl = true;
+              }
+              break;
+            }
+            
+            // Stop at next heading
+            if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+              break;
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+        if (ingredients.isNotEmpty) return _deduplicateIngredients(ingredients);
+      }
+    }
+    
+    // Try WordPress block heading pattern without .content-info wrapper (pastryartsmag.com style):
+    // h3.wp-block-heading followed by ul (ingredients) directly on document level
+    if (ingredients.isEmpty) {
+      final wpBlockHeadings = document.querySelectorAll('h3.wp-block-heading');
+      if (wpBlockHeadings.isNotEmpty) {
+        for (final heading in wpBlockHeadings) {
+          final sectionName = _decodeHtml((heading.text ?? '').trim());
+          if (sectionName.isEmpty) continue;
+          
+          // Skip "Assembly" section (directions only) and generic headings
+          final lowerSection = sectionName.toLowerCase();
+          if (lowerSection == 'assembly' || 
+              lowerSection.contains('discover') ||
+              lowerSection.contains('related') ||
+              lowerSection.contains('podcast') ||
+              lowerSection.contains('latest')) {
+            continue;
+          }
+          
+          // Skip if section name looks like a link (e.g., "Recipe Name by Author")
+          if (sectionName.contains(' by ') && lowerSection.contains('recipe')) {
+            continue;
+          }
+          
+          // Look for ul sibling immediately after this heading
+          var sibling = heading.nextElementSibling;
+          while (sibling != null) {
+            final tagName = sibling.localName?.toLowerCase() ?? '';
+            
+            // Skip separators and whitespace-only elements
+            if (tagName == 'hr' || tagName == 'p' || tagName == 'figure') {
+              // Check if p is just whitespace/nbsp
+              final pText = (sibling.text ?? '').trim();
+              if (pText.isEmpty || pText == '\u00a0') {
+                sibling = sibling.nextElementSibling;
+                continue;
+              }
+              // Otherwise it's directions, stop looking for ul
+              break;
+            }
+            
+            if (tagName == 'ul') {
+              // Found the ingredient list for this section
+              final items = sibling.querySelectorAll('li');
+              if (items.isNotEmpty) {
+                // Add section header
+                ingredients.add('[$sectionName]');
+                for (final item in items) {
+                  final text = _decodeHtml((item.text ?? '').trim());
+                  if (text.isNotEmpty) {
+                    ingredients.add(text);
+                  }
+                }
               }
               break;
             }
