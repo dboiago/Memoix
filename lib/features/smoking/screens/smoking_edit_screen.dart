@@ -43,6 +43,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
   String? _imagePath; // Header image - local file path or URL
   final List<String> _stepImages = []; // Step images
+  final Map<int, int> _stepImageMap = {}; // stepIndex -> imageIndex in _stepImages
   final List<_SeasoningEntry> _seasonings = [];
   final List<_SeasoningEntry> _ingredients = []; // For Recipe type
   final List<TextEditingController> _directionControllers = [];
@@ -74,6 +75,18 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _servesController.text = recipe.serves ?? '';
       _imagePath = recipe.getFirstImage();
       _stepImages.addAll(recipe.stepImages);
+      
+      // Load step image mappings
+      for (final mapping in recipe.stepImageMap) {
+        final parts = mapping.split(':');
+        if (parts.length == 2) {
+          final stepIndex = int.tryParse(parts[0]);
+          final imageIndex = int.tryParse(parts[1]);
+          if (stepIndex != null && imageIndex != null) {
+            _stepImageMap[stepIndex] = imageIndex;
+          }
+        }
+      }
 
       for (final seasoning in recipe.seasonings) {
         _seasonings.add(_SeasoningEntry(
@@ -112,6 +125,18 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _servesController.text = recipe.serves ?? '';
         _imagePath = recipe.getFirstImage();
         _stepImages.addAll(recipe.stepImages);
+        
+        // Load step image mappings
+        for (final mapping in recipe.stepImageMap) {
+          final parts = mapping.split(':');
+          if (parts.length == 2) {
+            final stepIndex = int.tryParse(parts[0]);
+            final imageIndex = int.tryParse(parts[1]);
+            if (stepIndex != null && imageIndex != null) {
+              _stepImageMap[stepIndex] = imageIndex;
+            }
+          }
+        }
 
         for (final seasoning in recipe.seasonings) {
           _seasonings.add(_SeasoningEntry(
@@ -888,6 +913,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   Widget _buildDirectionRowWidget(int index, ThemeData theme, {Key? key}) {
     final controller = _directionControllers[index];
     final isLast = index == _directionControllers.length - 1;
+    final hasImage = _stepImageMap.containsKey(index);
+    final imageIndex = _stepImageMap[index];
 
     return Container(
       key: key,
@@ -963,18 +990,50 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ),
           const SizedBox(width: 8),
 
-          // Delete button
-          IconButton(
-            icon: Icon(
-              Icons.close,
-              size: 18,
-              color: theme.colorScheme.outline,
-            ),
-            onPressed: _directionControllers.length > 1
-                ? () => _removeDirection(index)
-                : null,
-            padding: EdgeInsets.zero,
-            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+          // Image picker and delete buttons
+          Column(
+            children: [
+              // Image picker button
+              IconButton(
+                icon: Icon(
+                  hasImage ? Icons.image : Icons.add_photo_alternate_outlined,
+                  size: 20,
+                  color: hasImage ? theme.colorScheme.primary : theme.colorScheme.outline,
+                ),
+                tooltip: hasImage ? 'Image #${imageIndex! + 1} attached' : 'Add image for this step',
+                onPressed: () => _pickStepImageForDirection(index),
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+              // Remove image if has one
+              if (hasImage)
+                IconButton(
+                  icon: Icon(
+                    Icons.link_off,
+                    size: 16,
+                    color: theme.colorScheme.outline,
+                  ),
+                  tooltip: 'Remove image link',
+                  onPressed: () {
+                    setState(() => _stepImageMap.remove(index));
+                  },
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+                ),
+              // Delete button
+              IconButton(
+                icon: Icon(
+                  Icons.close,
+                  size: 18,
+                  color: theme.colorScheme.outline,
+                ),
+                onPressed: _directionControllers.length > 1
+                    ? () => _removeDirection(index)
+                    : null,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+            ],
           ),
         ],
       ),
@@ -1234,6 +1293,19 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     setState(() {
       _directionControllers[index].dispose();
       _directionControllers.removeAt(index);
+      
+      // Remove step image mapping for this step and adjust mappings for subsequent steps
+      _stepImageMap.remove(index);
+      final newMap = <int, int>{};
+      for (final entry in _stepImageMap.entries) {
+        if (entry.key > index) {
+          newMap[entry.key - 1] = entry.value;
+        } else {
+          newMap[entry.key] = entry.value;
+        }
+      }
+      _stepImageMap.clear();
+      _stepImageMap.addAll(newMap);
     });
   }
 
@@ -1417,8 +1489,146 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
   void _removeStepImage(int index) {
     setState(() {
+      // Also remove any step mappings to this image
+      _stepImageMap.removeWhere((k, v) => v == index);
+      // Adjust mappings for images after this one
+      final newMap = <int, int>{};
+      for (final entry in _stepImageMap.entries) {
+        if (entry.value > index) {
+          newMap[entry.key] = entry.value - 1;
+        } else {
+          newMap[entry.key] = entry.value;
+        }
+      }
+      _stepImageMap.clear();
+      _stepImageMap.addAll(newMap);
       _stepImages.removeAt(index);
     });
+  }
+
+  /// Pick or select an image for a specific direction step
+  Future<void> _pickStepImageForDirection(int stepIndex) async {
+    // If we have step images, show a picker to choose one or add new
+    if (_stepImages.isNotEmpty) {
+      await showModalBottomSheet(
+        context: context,
+        builder: (ctx) {
+          final theme = Theme.of(ctx);
+          return Container(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Select image for step ${stepIndex + 1}',
+                  style: theme.textTheme.titleMedium,
+                ),
+                const SizedBox(height: 16),
+                SizedBox(
+                  height: 100,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: _stepImages.length + 1,
+                    itemBuilder: (_, index) {
+                      if (index == _stepImages.length) {
+                        // Add new image option
+                        return GestureDetector(
+                          onTap: () async {
+                            Navigator.pop(ctx);
+                            await _addNewImageForStep(stepIndex);
+                          },
+                          child: Container(
+                            width: 100,
+                            margin: const EdgeInsets.only(right: 8),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: theme.colorScheme.outline),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.add_photo_alternate, 
+                                    color: theme.colorScheme.outline),
+                                const SizedBox(height: 4),
+                                Text('Add new', 
+                                    style: TextStyle(
+                                      color: theme.colorScheme.outline,
+                                      fontSize: 12,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        );
+                      }
+                      final isSelected = _stepImageMap[stepIndex] == index;
+                      return GestureDetector(
+                        onTap: () {
+                          setState(() => _stepImageMap[stepIndex] = index);
+                          Navigator.pop(ctx);
+                        },
+                        child: Container(
+                          width: 100,
+                          margin: const EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: isSelected 
+                                  ? theme.colorScheme.primary 
+                                  : Colors.transparent,
+                              width: 3,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(6),
+                            child: _buildStepImageWidget(_stepImages[index], 
+                                width: 100, height: 100),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
+      );
+    } else {
+      // No existing images, add a new one directly
+      await _addNewImageForStep(stepIndex);
+    }
+  }
+
+  /// Add a new image and associate it with a step
+  Future<void> _addNewImageForStep(int stepIndex) async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: ImageSource.gallery,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
+
+      if (pickedFile != null) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/smoking_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+
+        setState(() {
+          _stepImages.add(savedFile.path);
+          _stepImageMap[stepIndex] = _stepImages.length - 1;
+        });
+      }
+    } catch (e) {
+      debugPrint('Error picking image: $e');
+    }
   }
 
   Future<void> _saveRecipe() async {
@@ -1474,6 +1684,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           : _notesController.text.trim()
       ..headerImage = _imagePath
       ..stepImages = _stepImages
+      ..stepImageMap = _stepImageMap.entries
+          .map((e) => '${e.key}:${e.value}')
+          .toList()
       ..pairedRecipeIds = _pairedRecipeIds
       ..source = _existingRecipe?.source ?? SmokingSource.personal
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
