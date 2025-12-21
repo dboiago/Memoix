@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
@@ -280,40 +281,15 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
     pizzas.sort((a, b) => a.name.compareTo(b.name));
 
     if (pizzas.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Opacity(
-              opacity: 0.4,
-              child: Image.asset(
-                'assets/images/Memoix-markfilled-black-512.png',
-                width: 48,
-                height: 48,
-                fit: BoxFit.contain,
-              ),
-            ),
-            const SizedBox(height: 16),
-            Text(
-              _searchQuery.isNotEmpty
-                  ? 'No pizzas match your search'
-                  : _selectedBase != null
-                      ? 'No pizzas with ${_selectedBase!.displayName} base'
-                      : 'No pizzas yet',
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: Theme.of(context).colorScheme.outline,
-                  ),
-            ),
-            const SizedBox(height: 8),
-            if (_searchQuery.isEmpty && _selectedBase == null)
-              Text(
-                'Tap + to add your first pizza',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-              ),
-          ],
-        ),
+      return MemoixEmptyState(
+        message: _searchQuery.isNotEmpty
+            ? 'No pizzas match your search'
+            : _selectedBase != null
+                ? 'No pizzas with ${_selectedBase!.displayName} base'
+                : 'No pizzas yet',
+        subtitle: _searchQuery.isEmpty && _selectedBase == null
+            ? 'Tap + to add your first pizza'
+            : null,
       );
     }
 

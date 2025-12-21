@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/shopping_list.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -25,39 +26,9 @@ class ShoppingListScreen extends ConsumerWidget {
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (lists) {
           if (lists.isEmpty) {
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ColorFiltered(
-                    colorFilter: ColorFilter.mode(
-                      Theme.of(context).colorScheme.outline,
-                      BlendMode.srcIn,
-                    ),
-                    child: Image.asset(
-                      'assets/images/Memoix-markfilled-black-512.png',
-                      width: 64,
-                      height: 64,
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'No shopping lists yet',
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Generate one from your meal plan\nor selected recipes',
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-                  ),
-                ],
-              ),
+            return const MemoixEmptyState(
+              message: 'No shopping lists yet',
+              subtitle: 'Generate one from your meal plan\nor selected recipes',
             );
           }
 

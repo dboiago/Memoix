@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
@@ -357,38 +358,13 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
     sandwiches.sort((a, b) => a.name.compareTo(b.name));
 
     if (sandwiches.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Opacity(
-              opacity: 0.4,
-              child: Image.asset(
-                'assets/images/Memoix-markfilled-black-512.png',
-                width: 48,
-                height: 48,
-                fit: BoxFit.contain,
-              ),
-            ),
-            const SizedBox(height: 16),
-            Text(
-              _searchQuery.isNotEmpty || _selectedProtein != null
-                  ? 'No sandwiches match your filters'
-                  : 'No sandwiches yet',
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: Theme.of(context).colorScheme.outline,
-                  ),
-            ),
-            const SizedBox(height: 8),
-            if (_searchQuery.isEmpty && _selectedProtein == null)
-              Text(
-                'Tap + to add your first sandwich',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-              ),
-          ],
-        ),
+      return MemoixEmptyState(
+        message: _searchQuery.isNotEmpty || _selectedProtein != null
+            ? 'No sandwiches match your filters'
+            : 'No sandwiches yet',
+        subtitle: _searchQuery.isEmpty && _selectedProtein == null
+            ? 'Tap + to add your first sandwich'
+            : null,
       );
     }
 

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -78,29 +79,8 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
         final recipes = snapshot.data ?? [];
 
         if (recipes.isEmpty) {
-          return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ColorFiltered(
-                  colorFilter: ColorFilter.mode(
-                    Theme.of(context).colorScheme.outline,
-                    BlendMode.srcIn,
-                  ),
-                  child: Image.asset(
-                    'assets/images/Memoix-markfilled-black-512.png',
-                    width: 64,
-                    height: 64,
-                    fit: BoxFit.contain,
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'No recipes found for "$query"',
-                  style: TextStyle(color: Theme.of(context).colorScheme.outline),
-                ),
-              ],
-            ),
+          return MemoixEmptyState(
+            message: 'No recipes found for "$query"',
           );
         }
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
@@ -166,32 +167,12 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
     entries.sort((a, b) => a.name.compareTo(b.name));
 
     if (entries.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Opacity(
-              opacity: 0.4,
-              child: Image.asset(
-                'assets/images/Memoix-markfilled-black-512.png',
-                width: 48,
-                height: 48,
-                fit: BoxFit.contain,
-              ),
-            ),
-            const SizedBox(height: 16),
-            Text(
-              _searchQuery.isNotEmpty
-                  ? 'No entries match your search'
-                  : _selectedMilk != null
-                      ? 'No entries with $_selectedMilk milk'
-                      : 'No cheese entries yet',
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: Theme.of(context).colorScheme.outline,
-                  ),
-            ),
-          ],
-        ),
+      return MemoixEmptyState(
+        message: _searchQuery.isNotEmpty
+            ? 'No entries match your search'
+            : _selectedMilk != null
+                ? 'No entries with $_selectedMilk milk'
+                : 'No cheese entries yet',
       );
     }
 
