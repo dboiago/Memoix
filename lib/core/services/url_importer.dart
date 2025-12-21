@@ -6816,10 +6816,10 @@ class UrlRecipeImporter {
     if (rawDirections.isEmpty) {
       final instructionElements = document.querySelectorAll(
         '.instructions li, .directions li, [itemprop="recipeInstructions"] li, .wprm-recipe-instruction, '
-        // Shopify blog patterns
-        '.article-method-list li, .metafield-rich_text_field ul li, '
+        // Shopify blog patterns - use specific method list, not generic metafield (which includes ingredients)
+        '.article-method-list li, .article-method-list ol li, '
         // Generic method/preparation sections
-        '[class*="method"] li, [class*="preparation"] li, [class*="instruction"] li',
+        '[class*="method-list"] li, [class*="preparation"] li, [class*="instruction"] li',
       );
       
       for (final e in instructionElements) {
