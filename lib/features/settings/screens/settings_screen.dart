@@ -436,11 +436,17 @@ class SettingsScreen extends ConsumerWidget {
       context: context,
       applicationName: 'Memoix',
       applicationVersion: version,
-      applicationIcon: Image.asset(
-        'assets/images/Memoix-logo-mauve-400.png',
-        width: 80,
-        height: 80,
-        fit: BoxFit.contain,
+      applicationIcon: ColorFiltered(
+        colorFilter: ColorFilter.mode(
+          Theme.of(context).colorScheme.secondary,
+          BlendMode.srcIn,
+        ),
+        child: Image.asset(
+          'assets/images/Memoix-markfilled-black-512.png',
+          width: 80,
+          height: 80,
+          fit: BoxFit.contain,
+        ),
       ),
       applicationLegalese: '© 2024-2025 Devon Boiago\n\n'
           'Licensed under PolyForm Noncommercial 1.0.0.\n'
