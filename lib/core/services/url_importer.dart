@@ -903,13 +903,16 @@ class UrlRecipeImporter {
                                 document.querySelector('.structured-ingredients__list-heading') != null || // Serious Eats
                                 document.querySelector('.ingredient-section') != null; // King Arthur Baking
         
+        print('[DEBUG importFromUrl] hasHtmlSections: $hasHtmlSections');
         if (hasHtmlSections) {
           // Re-parse with HTML to get section headers
           // Fall through to HTML parsing below instead of returning JSON-LD result
           // We'll use JSON-LD for other metadata but get ingredients from HTML
           var htmlIngredients = _extractIngredientsWithSections(document);
+          print('[DEBUG importFromUrl] HTML sections path: extracted ${htmlIngredients.length} htmlIngredients');
           // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
           htmlIngredients = _filterIngredientStrings(htmlIngredients);
+          print('[DEBUG importFromUrl] HTML sections path: after filter ${htmlIngredients.length} htmlIngredients');
           if (htmlIngredients.isNotEmpty) {
             // Parse the raw ingredient strings to Ingredient objects with sections
             final ingredients = _parseIngredients(htmlIngredients);
@@ -918,7 +921,7 @@ class UrlRecipeImporter {
             // Also get equipment from HTML
             final sectionResult = _parseHtmlBySections(document);
             final htmlEquipment = sectionResult['equipment'] as List<String>? ?? [];
-            
+            print('[DEBUG importFromUrl] RETURNING HTML sections result with ${ingredients.length} ingredients');
             return RecipeImportResult(
               name: jsonLdResult.name,
               course: jsonLdResult.course,
@@ -970,7 +973,12 @@ class UrlRecipeImporter {
         // Try to enhance JSON-LD with richer ingredient data from embedded JavaScript
         // (Vite SSR, Next.js, Nuxt, etc.) - these often have section groupings and better serves data
         final enhancedResult = _tryEnhanceWithEmbeddedData(body, jsonLdResult);
-        if (enhancedResult != null) return enhancedResult;
+        if (enhancedResult != null) {
+          print('[DEBUG importFromUrl] RETURNING enhancedResult from _tryEnhanceWithEmbeddedData');
+          print('[DEBUG importFromUrl]   - ingredients: ${enhancedResult.ingredients.length}');
+          print('[DEBUG importFromUrl]   - rawIngredients: ${enhancedResult.rawIngredients.length}');
+          return enhancedResult;
+        }
         
         // Always try to supplement JSON-LD with glass/garnish from HTML (for drink recipes)
         // and equipment/directions/ingredients if missing. These aren't standard Schema.org Recipe properties.
@@ -1119,6 +1127,9 @@ class UrlRecipeImporter {
           );
         }
         
+        print('[DEBUG importFromUrl] RETURNING jsonLdResult directly:');
+        print('[DEBUG importFromUrl]   - ingredients: ${jsonLdResult.ingredients.length}');
+        print('[DEBUG importFromUrl]   - rawIngredients: ${jsonLdResult.rawIngredients.length}');
         return jsonLdResult;
       }
       
@@ -3675,10 +3686,13 @@ class UrlRecipeImporter {
       rawIngredientStrings = _extractRawIngredients(data['ingredients']);
     }
     // Filter out garbage (UI elements, ads, social media prompts) and deduplicate
+    print('[DEBUG _parseJsonLdWithConfidence] BEFORE filter: ${rawIngredientStrings.length} ingredients');
     rawIngredientStrings = _filterIngredientStrings(rawIngredientStrings);
+    print('[DEBUG _parseJsonLdWithConfidence] AFTER filter: ${rawIngredientStrings.length} ingredients');
     // Parse from the already-rejoined raw strings, not the original JSON-LD
     var ingredients = _parseIngredients(rawIngredientStrings);
     ingredients = _sortIngredientsByQuantity(ingredients);
+    print('[DEBUG _parseJsonLdWithConfidence] Parsed ${ingredients.length} Ingredient objects');
     
     // Calculate ingredients confidence based on how many we successfully parsed
     double ingredientsConfidence = 0.0;
@@ -3785,6 +3799,10 @@ class UrlRecipeImporter {
       }
     }
     
+    print('[DEBUG _parseJsonLdWithConfidence] Creating RecipeImportResult with:');
+    print('[DEBUG _parseJsonLdWithConfidence]   - ingredients: ${ingredients.length}');
+    print('[DEBUG _parseJsonLdWithConfidence]   - rawIngredients: ${rawIngredients.length}');
+    print('[DEBUG _parseJsonLdWithConfidence]   - directions: ${directions.length}');
     return RecipeImportResult(
       name: name.isNotEmpty ? name : null,
       course: course,

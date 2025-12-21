@@ -245,8 +245,15 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
 
       if (!mounted) return;
 
+      // DEBUG: Check confidence and routing
+      print('[DEBUG URL IMPORT] Overall confidence: ${result.overallConfidence}');
+      print('[DEBUG URL IMPORT] needsUserReview: ${result.needsUserReview}');
+      print('[DEBUG URL IMPORT] ingredients count: ${result.ingredients.length}');
+      print('[DEBUG URL IMPORT] rawIngredients count: ${result.rawIngredients.length}');
+      
       // Route based on confidence
       if (result.needsUserReview) {
+        print('[DEBUG URL IMPORT] ROUTING TO: ImportReviewScreen');
         // Low confidence - show review screen for manual mapping
         // Use push (not pushReplacement) so back button returns to URL input
         Navigator.of(context).push(
@@ -255,6 +262,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
           ),
         );
       } else {
+        print('[DEBUG URL IMPORT] ROUTING TO: EditScreen (high confidence)');
         // High confidence - go directly to edit screen
         // Route to appropriate screen based on course type
         final uuid = const Uuid().v4();
