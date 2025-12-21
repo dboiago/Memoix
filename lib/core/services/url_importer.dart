@@ -2653,6 +2653,8 @@ class UrlRecipeImporter {
     if (RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false).hasMatch(trimmed)) return true;
     if (RegExp(r'sign\s+up\s+for\s+(?:our|the)?\s*newsletter', caseSensitive: false).hasMatch(trimmed)) return true;
     if (RegExp(r'get\s+the\s+latest\s+(?:posts|recipes)', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'Type\s+your\s+email', caseSensitive: false).hasMatch(trimmed)) return true;
+    if (RegExp(r'Subscribe$', caseSensitive: false).hasMatch(trimmed)) return true;
     
     // Skip social media share prompts
     if (RegExp(r'Click\s+to\s+Share', caseSensitive: false).hasMatch(trimmed)) return true;
@@ -2674,20 +2676,30 @@ class UrlRecipeImporter {
     RegExp(r'^print\s+recipe', caseSensitive: false),    // Print buttons
     RegExp(r'^share\s+recipe', caseSensitive: false),    // Share buttons
     RegExp(r'^\d+\s*(?:min(?:ute)?s?|hrs?|hours?)$', caseSensitive: false), // Standalone time labels
-    // Social media garbage
-    RegExp(r'Click\s+to\s+Share', caseSensitive: false),
-    RegExp(r'Share\s+on\s+(?:Facebook|Twitter|Pinterest|Instagram)', caseSensitive: false),
-    RegExp(r'(?:Facebook|Twitter|Pinterest|Instagram)\s+(?:Facebook|Twitter|Pinterest|Instagram)?$', caseSensitive: false),
+    // Social media garbage - broad patterns
+    RegExp(r'Click\s*to\s*Share', caseSensitive: false),   // "Click to Share"
+    RegExp(r'^Click\s*to\s', caseSensitive: false),        // Any "Click to ..." at start
+    RegExp(r'Share\s+on\s+(?:Facebook|Twitter|Pinterest|Instagram|Linkedin|Whatsapp|Reddit|X\b)', caseSensitive: false),
+    RegExp(r'(?:Facebook|Twitter|Pinterest|Instagram|Linkedin|Whatsapp|Reddit)\s+(?:Facebook|Twitter|Pinterest|Instagram|Linkedin|Whatsapp|Reddit)?$', caseSensitive: false),
     RegExp(r'^(?:Like|Tweet|Pin|Share)\s+(?:this|it)?$', caseSensitive: false),
     RegExp(r'Facebook\s+Facebook', caseSensitive: false), // Doubled social media names
     RegExp(r'Twitter\s+Twitter', caseSensitive: false),
     RegExp(r'Pinterest\s+Pinterest', caseSensitive: false),
+    RegExp(r'Linkedin\s+Linkedin', caseSensitive: false),
+    RegExp(r'Whatsapp\s+Whatsapp', caseSensitive: false),
+    RegExp(r'Reddit\s+Reddit', caseSensitive: false),
+    RegExp(r'\bX\s+X\b', caseSensitive: false),           // X X (Twitter rebrand)
+    RegExp(r'Opens\s+in\s+new\s+window', caseSensitive: false), // Accessibility text
+    RegExp(r'Email\s+a\s+Link', caseSensitive: false),    // Email share
+    RegExp(r'Click\s+to\s+Print', caseSensitive: false),  // Print button
+    RegExp(r'Click\s+to\s+Email', caseSensitive: false),  // Email button
     // Subscribe/newsletter garbage
     RegExp(r'Subscribe\s+to', caseSensitive: false),
     RegExp(r'sent\s+to\s+your\s+email', caseSensitive: false),
     RegExp(r'newsletter', caseSensitive: false),
     RegExp(r'get\s+the\s+latest', caseSensitive: false),
     RegExp(r'sign\s+up', caseSensitive: false),
+    RegExp(r'Type\s+your\s+email', caseSensitive: false), // Email input placeholder
     // Ad script garbage
     RegExp(r'adsbygoogle', caseSensitive: false),
     RegExp(r'window\._wca', caseSensitive: false),
@@ -2710,12 +2722,22 @@ class UrlRecipeImporter {
   
   /// Filter and deduplicate ingredient strings, removing garbage
   List<String> _filterIngredientStrings(List<String> rawStrings) {
+    // DEBUG: Print to verify this function is being called
+    print('[DEBUG _filterIngredientStrings] Input count: ${rawStrings.length}');
+    
     final seenIngredients = <String>{};
     final filtered = <String>[];
     
     for (final s in rawStrings) {
       final trimmed = s.trim();
-      if (_isGarbageIngredient(trimmed)) continue;
+      final isGarbage = _isGarbageIngredient(trimmed);
+      
+      // DEBUG: Print what's being filtered
+      if (isGarbage) {
+        print('[DEBUG _filterIngredientStrings] FILTERED OUT: "$trimmed"');
+      }
+      
+      if (isGarbage) continue;
       
       // Normalize for comparison (lowercase, collapse whitespace)
       final normalizedKey = trimmed.toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
@@ -2724,6 +2746,7 @@ class UrlRecipeImporter {
       filtered.add(trimmed);
     }
     
+    print('[DEBUG _filterIngredientStrings] Output count: ${filtered.length}');
     return filtered;
   }
   
