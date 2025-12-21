@@ -4860,8 +4860,10 @@ class UrlRecipeImporter {
   List<RawIngredientData> _buildRawIngredients(List<String> rawStrings) {
     final result = <RawIngredientData>[];
     
-    // DEBUG: Print all incoming raw strings
+    // DEBUG: Print caller and all incoming raw strings
+    final trace = StackTrace.current.toString().split('\n').take(5).join('\n');
     print('DEBUG _buildRawIngredients: Processing ${rawStrings.length} raw strings');
+    print('DEBUG caller trace:\n$trace');
     for (var i = 0; i < rawStrings.length; i++) {
       print('DEBUG raw[$i]: "${rawStrings[i]}"');
     }

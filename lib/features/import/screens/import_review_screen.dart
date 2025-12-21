@@ -87,6 +87,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _garnish.clear();
     _garnish.addAll(result.garnish);
 
+    // DEBUG: Print rawIngredients before sanitization
+    print('DEBUG import_review_screen: result.rawIngredients has ${result.rawIngredients.length} items');
+    for (var i = 0; i < result.rawIngredients.length; i++) {
+      final ing = result.rawIngredients[i];
+      print('DEBUG rawIngredients[$i]: name="${ing.name}", sectionName=${ing.sectionName}');
+    }
+
     // Sanitize ingredients to remove empty/invalid entries
     _sanitizedIngredients = RawIngredientData.sanitize(result.rawIngredients);
 
