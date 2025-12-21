@@ -935,15 +935,22 @@ class UrlRecipeImporter {
                 final parsed = _parseIngredientString(raw);
                 // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
                 final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
+                
+                // Check if this raw string is a section header
+                final detectedSection = _detectSectionHeader(raw);
+                final effectiveSection = parsed.section ?? detectedSection;
+                final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                                      (detectedSection != null && parsed.amount == null && parsed.unit == null);
+                
                 return RawIngredientData(
                   original: raw,
-                  amount: parsed.amount,
-                  unit: parsed.unit,
-                  preparation: parsed.preparation,
-                  name: parsed.name.isNotEmpty ? parsed.name : cleanedRaw,
-                  looksLikeIngredient: parsed.name.isNotEmpty,
-                  isSection: parsed.section != null,
-                  sectionName: parsed.section,
+                  amount: isSectionOnly ? null : parsed.amount,
+                  unit: isSectionOnly ? null : parsed.unit,
+                  preparation: isSectionOnly ? null : parsed.preparation,
+                  name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
+                  looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+                  isSection: effectiveSection != null,
+                  sectionName: effectiveSection,
                 );
               })
               // Filter out empty entries - must have alphanumeric in name OR have a section
@@ -1335,16 +1342,22 @@ class UrlRecipeImporter {
       final rawIngredients = rawIngredientStrings.map((raw) {
         final parsed = _parseIngredientString(raw);
         final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-        final isSectionOnly = raw.startsWith('[') && raw.endsWith(']');
+        
+        // Check if this raw string is a section header
+        final detectedSection = _detectSectionHeader(raw);
+        final effectiveSection = parsed.section ?? detectedSection;
+        final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                              (detectedSection != null && parsed.amount == null && parsed.unit == null);
+        
         return RawIngredientData(
           original: raw,
-          amount: parsed.amount,
-          unit: parsed.unit,
-          preparation: parsed.preparation,
+          amount: isSectionOnly ? null : parsed.amount,
+          unit: isSectionOnly ? null : parsed.unit,
+          preparation: isSectionOnly ? null : parsed.preparation,
           name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
           looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
-          isSection: isSectionOnly,
-          sectionName: isSectionOnly ? raw.substring(1, raw.length - 1) : parsed.section,
+          isSection: effectiveSection != null,
+          sectionName: effectiveSection,
         );
       }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
       
@@ -1650,16 +1663,22 @@ class UrlRecipeImporter {
     final rawIngredients = rawIngredientStrings.map((raw) {
       final parsed = _parseIngredientString(raw);
       final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
-      final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+      
+      // Check if this raw string is a section header
+      final detectedSection = _detectSectionHeader(raw);
+      final effectiveSection = parsed.section ?? detectedSection;
+      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
+      
       return RawIngredientData(
         original: raw,
-        amount: parsed.amount,
-        unit: parsed.unit,
-        preparation: parsed.preparation,
+        amount: isSectionOnly ? null : parsed.amount,
+        unit: isSectionOnly ? null : parsed.unit,
+        preparation: isSectionOnly ? null : parsed.preparation,
         name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-        looksLikeIngredient: parsed.name.isNotEmpty,
-        isSection: parsed.section != null,
-        sectionName: parsed.section,
+        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+        isSection: effectiveSection != null,
+        sectionName: effectiveSection,
       );
     }).where((i) => (i.name.trim().isNotEmpty && RegExp(r'[a-zA-Z0-9]').hasMatch(i.name)) || i.sectionName != null).toList();
     
@@ -2013,20 +2032,22 @@ class UrlRecipeImporter {
         final parsed = _parseIngredientString(raw);
         final bakerPct = _extractBakerPercent(raw);
         
-        // For section-only items (parsed name is empty but has section),
-        // keep the empty name so the review screen can display it as a section header
-        final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+        // Check if this raw string is a section header
+        final detectedSection = _detectSectionHeader(raw);
+        final effectiveSection = parsed.section ?? detectedSection;
+        final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                              (detectedSection != null && parsed.amount == null && parsed.unit == null);
         
         return RawIngredientData(
           original: raw,
-          amount: parsed.amount,
-          unit: parsed.unit,
-          preparation: parsed.preparation,
-          bakerPercent: bakerPct != null ? '$bakerPct%' : null,
+          amount: isSectionOnly ? null : parsed.amount,
+          unit: isSectionOnly ? null : parsed.unit,
+          preparation: isSectionOnly ? null : parsed.preparation,
+          bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
           name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : raw),
-          looksLikeIngredient: parsed.name.isNotEmpty,
-          isSection: parsed.section != null,
-          sectionName: parsed.section,
+          looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+          isSection: effectiveSection != null,
+          sectionName: effectiveSection,
         );
       })
       // Filter out empty entries - must have alphanumeric in name OR have a section
@@ -3927,23 +3948,27 @@ class UrlRecipeImporter {
       final parsed = _parseIngredientString(raw);
       final bakerPct = _extractBakerPercent(raw);
       
-      // For section-only items (parsed name is empty but has section),
-      // keep the empty name so the review screen can display it as a section header
-      final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+      // Check if this raw string is a section header (e.g., "Dough", "Cinnamon apple filling")
+      final detectedSection = _detectSectionHeader(raw);
+      
+      // For section-only items: either parsed has section OR we detected one
+      final effectiveSection = parsed.section ?? detectedSection;
+      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
       
       // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
       final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
       
       return RawIngredientData(
         original: raw,
-        amount: parsed.amount,
-        unit: parsed.unit,
-        preparation: parsed.preparation,
-        bakerPercent: bakerPct != null ? '$bakerPct%' : null,
+        amount: isSectionOnly ? null : parsed.amount,
+        unit: isSectionOnly ? null : parsed.unit,
+        preparation: isSectionOnly ? null : parsed.preparation,
+        bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
         name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-        looksLikeIngredient: parsed.name.isNotEmpty,
-        isSection: parsed.section != null,
-        sectionName: parsed.section,
+        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+        isSection: effectiveSection != null,
+        sectionName: effectiveSection,
       );
     })
     // Filter out empty entries - must have alphanumeric in name OR have a section
@@ -4882,6 +4907,68 @@ class UrlRecipeImporter {
       caseSensitive: false,
     ).firstMatch(text);
     return match?.group(1);
+  }
+
+  /// Detect if a string is a section header (not an ingredient)
+  /// Returns the section name if it's a header, null otherwise
+  String? _detectSectionHeader(String text) {
+    final decoded = _decodeHtml(text.trim());
+    if (decoded.isEmpty) return null;
+    
+    // If it starts with a number/fraction, it's likely an ingredient
+    if (RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]').hasMatch(decoded)) {
+      return null;
+    }
+    
+    // Bracketed section format [Section Name]
+    final bracketMatch = RegExp(r'^\[(.+)\]$').firstMatch(decoded);
+    if (bracketMatch != null) {
+      return bracketMatch.group(1)?.trim();
+    }
+    
+    // Common section patterns with explicit suffixes
+    final sectionPatterns = [
+      RegExp(r'^For\s+(?:the\s+)?(.+?)[:.]?\s*$', caseSensitive: false),  // "For the sauce:"
+      RegExp(r'^(.+?)\s+[Ii]ngredients?[:.]?\s*$'),  // "Main ingredients:"
+      RegExp(r'^(.+?)\s+[Ss]auce[:.]?\s*$'),  // "Spicy ketchup sauce:"
+      RegExp(r'^(.+?)\s+[Mm]arinade[:.]?\s*$'),  // "Tofu marinade:"
+      RegExp(r'^(.+?)\s+[Gg]laze[:.]?\s*$'),  // "Honey glaze:"
+      RegExp(r'^(.+?)\s+[Ss]easoning[:.]?\s*$'),  // "Spice seasoning:"
+      RegExp(r'^(.+?)\s+[Rr]ub[:.]?\s*$'),  // "Spice rub:"
+      RegExp(r'^(.+?)\s+[Tt]opping[s]?[:.]?\s*$'),  // "Toppings:"
+      RegExp(r'^(.+?)\s+[Gg]arnish[:.]?\s*$'),  // "Garnish:"
+      RegExp(r'^(.+?)\s+[Ff]illing[:.]?\s*$'),  // "Filling:"
+      RegExp(r'^(.+?)[:–—]\s*$'),  // General "Something:" (must end with colon/dash)
+    ];
+    
+    for (final pattern in sectionPatterns) {
+      final match = pattern.firstMatch(decoded);
+      if (match != null) {
+        return match.group(1)?.trim() ?? decoded;
+      }
+    }
+    
+    // Short standalone words that are likely section headers (King Arthur style)
+    // Must be short (< 40 chars), no commas (ingredients often have commas),
+    // and match common section names
+    if (decoded.length < 40 && !decoded.contains(',')) {
+      final lower = decoded.toLowerCase();
+      const sectionKeywords = [
+        'dough', 'batter', 'filling', 'topping', 'frosting', 'icing', 'glaze',
+        'crust', 'base', 'sauce', 'marinade', 'rub', 'seasoning', 'garnish',
+        'assembly', 'finish', 'decoration', 'streusel', 'crumb', 'coating',
+        'syrup', 'caramel', 'ganache', 'cream', 'custard', 'curd', 'compote',
+      ];
+      // Check if any section keyword is in the text
+      for (final keyword in sectionKeywords) {
+        if (lower.contains(keyword)) {
+          // Return the original text (cleaned) as the section name
+          return decoded;
+        }
+      }
+    }
+    
+    return null;
   }
 
   /// Parse a single ingredient string into structured data
@@ -7452,23 +7539,25 @@ class UrlRecipeImporter {
       final parsed = _parseIngredientString(raw);
       final bakerPct = _extractBakerPercent(raw);
       
-      // For section-only items (parsed name is empty but has section),
-      // keep the empty name so the review screen can display it as a section header
-      final isSectionOnly = parsed.name.isEmpty && parsed.section != null;
+      // Check if this raw string is a section header
+      final detectedSection = _detectSectionHeader(raw);
+      final effectiveSection = parsed.section ?? detectedSection;
+      final isSectionOnly = (parsed.name.isEmpty && effectiveSection != null) ||
+                            (detectedSection != null && parsed.amount == null && parsed.unit == null);
       
       // Clean the fallback raw string by removing footnote markers (*, †, [1], etc.)
       final cleanedRaw = raw.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
       
       return RawIngredientData(
         original: raw,
-        amount: parsed.amount,
-        unit: parsed.unit,
-        preparation: parsed.preparation,
-        bakerPercent: bakerPct != null ? '$bakerPct%' : null,
+        amount: isSectionOnly ? null : parsed.amount,
+        unit: isSectionOnly ? null : parsed.unit,
+        preparation: isSectionOnly ? null : parsed.preparation,
+        bakerPercent: isSectionOnly ? null : (bakerPct != null ? '$bakerPct%' : null),
         name: isSectionOnly ? '' : (parsed.name.isNotEmpty ? parsed.name : cleanedRaw),
-        looksLikeIngredient: parsed.name.isNotEmpty,
-        isSection: parsed.section != null,
-        sectionName: parsed.section,
+        looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
+        isSection: effectiveSection != null,
+        sectionName: effectiveSection,
       );
     })
     // Filter out empty entries - must have alphanumeric in name OR have a section
