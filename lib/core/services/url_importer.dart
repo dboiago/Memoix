@@ -2245,10 +2245,21 @@ class UrlRecipeImporter {
   
   /// Check for spirit-related ingredients (helper for Drinks detection)
   bool _hasSpiritsInIngredients(List<String> ingredients) {
-    const spirits = ['vodka', 'gin', 'rum', 'tequila', 'whiskey', 'whisky', 
-                     'bourbon', 'scotch', 'brandy', 'cognac', 'mezcal'];
+    // Use word boundaries to avoid false positives like 'ginger' matching 'gin'
+    final spiritPatterns = [
+      RegExp(r'\bvodka\b', caseSensitive: false),
+      RegExp(r'\bgin\b', caseSensitive: false),
+      RegExp(r'\brum\b', caseSensitive: false),
+      RegExp(r'\btequila\b', caseSensitive: false),
+      RegExp(r'\bwhiske?y\b', caseSensitive: false),
+      RegExp(r'\bbourbon\b', caseSensitive: false),
+      RegExp(r'\bscotch\b', caseSensitive: false),
+      RegExp(r'\bbrandy\b', caseSensitive: false),
+      RegExp(r'\bcognac\b', caseSensitive: false),
+      RegExp(r'\bmezcal\b', caseSensitive: false),
+    ];
     final allText = ingredients.join(' ').toLowerCase();
-    return spirits.any((s) => allText.contains(s));
+    return spiritPatterns.any((p) => p.hasMatch(allText));
   }
   
   /// Check for smoking/BBQ indicators in ingredients (wood types)
@@ -2706,10 +2717,12 @@ class UrlRecipeImporter {
   
   /// Patterns to identify direction-like lines (instructions, not ingredients)
   static final _directionLikePatterns = [
-    // Lines that start with action verbs followed by "the" or "a/an"
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Season|Taste|Serve|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Skim|Ladle|Spoon)\s+(?:the|a|an)\b', caseSensitive: false),
-    // Lines that start with action verbs followed by descriptive content  
-    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Bring|Reduce|Simmer|Boil|Season|Taste|Serve|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Using|Once|After|When|Before|While|If|Make|Start|Begin|Continue|Repeat|Turn|Flip|Rotate)\s+(?:until|over|for|to|into|all|your|this|it|them|each|every|together|well|thoroughly|gently|carefully|slowly|quickly|immediately|aside)\b', caseSensitive: false),
+    // Lines that start with action verbs followed by articles
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Season|Taste|Serve|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Skim|Ladle|Spoon)\s+(?:the|a|an|your|each|all)\b', caseSensitive: false),
+    // Lines that start with action verbs followed by common prepositions or adverbs
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Mince|Add|Mix|Stir|Combine|Pour|Heat|Bake|Cook|Place|Allow|Let|Store|Preheat|Prepare|Remove|Transfer|Cover|Drain|Rinse|Wash|Bring|Reduce|Simmer|Boil|Season|Taste|Serve|Peel|Core|Grate|Shred|Massage|Pack|Press|Weight|Weigh|Sprinkle|Toss|Set|Leave|Keep|Check|Wait|Refrigerate|Ferment|Cure|Marinate|Soak|Dissolve|Whisk|Blend|Process|Puree|Strain|Filter|Using|Once|After|When|Before|While|If|Make|Start|Begin|Continue|Repeat|Turn|Flip|Rotate)\s+(?:until|over|for|to|into|in|on|at|with|all|your|this|it|them|each|every|together|well|thoroughly|gently|carefully|slowly|quickly|immediately|aside)\b', caseSensitive: false),
+    // Lines that start with action verbs followed by any word and then "in/into/until/and"
+    RegExp(r'^(?:Slice|Cut|Chop|Dice|Peel|Core|Grate|Shred|Massage|Pack|Place|Remove|Transfer)\s+\w+\s+(?:in|into|and|then|until)\b', caseSensitive: false),
     // Lines that contain multiple direction verbs (likely instructions)
     RegExp(r'\b(?:and\s+)?(?:then\s+)?(?:stir|mix|add|cook|bake|heat|let|allow|place|cover|remove|transfer|serve|refrigerate|store)\b.*\b(?:until|for|about|approximately)\b', caseSensitive: false),
   ];
