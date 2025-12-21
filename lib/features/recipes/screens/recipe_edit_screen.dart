@@ -902,7 +902,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             DropdownButtonFormField<String>(
               initialValue: _selectedCourse,
               decoration: const InputDecoration(
-                labelText: 'Category *',
+                labelText: 'Course *',
               ),
               items: const [
                 DropdownMenuItem(value: 'apps', child: Text('Apps')),
