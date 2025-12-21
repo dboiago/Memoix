@@ -221,6 +221,22 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     if (!_isMobilePlatform()) {
       debugPrint('Showing OCR snackbar');
       MemoixSnackBar.show('OCR is only available on mobile devices');
+      // Also show a dialog as fallback to verify tap is working
+      if (context.mounted) {
+        showDialog(
+          context: context,
+          builder: (_) => AlertDialog(
+            title: const Text('Desktop'),
+            content: const Text('OCR is only available on mobile devices'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('OK'),
+              ),
+            ],
+          ),
+        );
+      }
       return;
     }
     final ocrImporter = ref.read(ocrImporterProvider);
