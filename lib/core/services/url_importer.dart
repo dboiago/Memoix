@@ -4351,6 +4351,19 @@ class UrlRecipeImporter {
     
     if (raw == null) return null;
     
+    // Check for "(X servings)" pattern first - common in King Arthur, etc.
+    // e.g., "one 9" x 4" loaf (16 servings)" -> "16"
+    final parenServingsMatch = RegExp(r'\((\d+)\s*(?:servings?|portions?)\)', caseSensitive: false).firstMatch(raw);
+    if (parenServingsMatch != null) {
+      return parenServingsMatch.group(1);
+    }
+    
+    // Check for "X servings" pattern anywhere in string
+    final servingsMatch = RegExp(r'(\d+)\s*(?:servings?|portions?)', caseSensitive: false).firstMatch(raw);
+    if (servingsMatch != null) {
+      return servingsMatch.group(1);
+    }
+    
     // Strip common prefixes like "Servings:", "Serves:", "Yield:", "Makes:"
     raw = raw.replaceFirst(RegExp(r'^(?:Servings?|Serves?|Yield|Makes?)\s*:?\s*', caseSensitive: false), '').trim();
     
