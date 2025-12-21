@@ -3684,8 +3684,11 @@ class UrlRecipeImporter {
   
   /// Parse JSON-LD with confidence scoring for review flow
   RecipeImportResult? _parseJsonLdWithConfidence(dynamic data, String sourceUrl) {
+    print('[DEBUG _parseJsonLdWithConfidence] Called with data type: ${data.runtimeType}');
+    
     // Handle @graph structure
     if (data is Map && data['@graph'] != null) {
+      print('[DEBUG _parseJsonLdWithConfidence] Found @graph structure');
       final graph = data['@graph'] as List;
       for (final item in graph) {
         final result = _parseJsonLdWithConfidence(item, sourceUrl);
@@ -3696,6 +3699,7 @@ class UrlRecipeImporter {
 
     // Handle array of items
     if (data is List) {
+      print('[DEBUG _parseJsonLdWithConfidence] Found List with ${data.length} items');
       for (final item in data) {
         final result = _parseJsonLdWithConfidence(item, sourceUrl);
         if (result != null) return result;
@@ -3704,13 +3708,20 @@ class UrlRecipeImporter {
     }
 
     // Check if this is a Recipe type
-    if (data is! Map) return null;
+    if (data is! Map) {
+      print('[DEBUG _parseJsonLdWithConfidence] data is not Map, returning null');
+      return null;
+    }
     
     final type = data['@type'];
+    print('[DEBUG _parseJsonLdWithConfidence] @type = $type');
     final isRecipe = type == 'Recipe' || 
                      (type is List && type.contains('Recipe'));
     
-    if (!isRecipe) return null;
+    if (!isRecipe) {
+      print('[DEBUG _parseJsonLdWithConfidence] Not a Recipe type, returning null');
+      return null;
+    }
 
     print('[DEBUG _parseJsonLdWithConfidence] Processing JSON-LD Recipe');
     print('[DEBUG _parseJsonLdWithConfidence] Keys: ${data.keys.toList()}');
