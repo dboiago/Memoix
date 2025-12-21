@@ -442,7 +442,7 @@ class SettingsScreen extends ConsumerWidget {
           BlendMode.srcIn,
         ),
         child: Image.asset(
-          'assets/images/Memoix-markfilled-black-512.png',
+          'assets/images/Memoix-mark-black-512.png',
           width: 80,
           height: 80,
           fit: BoxFit.contain,
