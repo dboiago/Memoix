@@ -2792,22 +2792,10 @@ class UrlRecipeImporter {
     return _ingredientGarbagePatterns.any((p) => p.hasMatch(trimmed));
   }
   
-  /// Result class for ingredient filtering that also captures directions
-  class FilteredIngredientsResult {
-    final List<String> ingredients;
-    final List<String> extractedDirections;
-    final List<String> extractedEquipment;
-    
-    FilteredIngredientsResult({
-      required this.ingredients,
-      required this.extractedDirections,
-      required this.extractedEquipment,
-    });
-  }
-  
   /// Filter and deduplicate ingredient strings, removing garbage
   /// Also extracts direction-like lines and equipment items for separate use
-  FilteredIngredientsResult _filterIngredientStringsWithExtraction(List<String> rawStrings) {
+  /// Returns a map with keys: 'ingredients', 'directions', 'equipment'
+  Map<String, List<String>> _filterIngredientStringsWithExtraction(List<String> rawStrings) {
     print('[DEBUG _filterIngredientStringsWithExtraction] Input count: ${rawStrings.length}');
     
     final seenIngredients = <String>{};
@@ -2848,11 +2836,11 @@ class UrlRecipeImporter {
     
     print('[DEBUG] Ingredients: ${filteredIngredients.length}, Directions: ${extractedDirections.length}, Equipment: ${extractedEquipment.length}');
     
-    return FilteredIngredientsResult(
-      ingredients: filteredIngredients,
-      extractedDirections: extractedDirections,
-      extractedEquipment: extractedEquipment,
-    );
+    return {
+      'ingredients': filteredIngredients,
+      'directions': extractedDirections,
+      'equipment': extractedEquipment,
+    };
   }
   
   /// Filter and deduplicate ingredient strings, removing garbage
@@ -6812,9 +6800,9 @@ class UrlRecipeImporter {
     
     if (rawIngredientStrings.isNotEmpty) {
       final filterResult = _filterIngredientStringsWithExtraction(rawIngredientStrings);
-      rawIngredientStrings = filterResult.ingredients;
-      extractedDirectionsFromIngredients = filterResult.extractedDirections;
-      extractedEquipmentFromIngredients = filterResult.extractedEquipment;
+      rawIngredientStrings = filterResult['ingredients'] ?? [];
+      extractedDirectionsFromIngredients = filterResult['directions'] ?? [];
+      extractedEquipmentFromIngredients = filterResult['equipment'] ?? [];
       
       // Add extracted equipment to equipment list
       if (extractedEquipmentFromIngredients.isNotEmpty) {
