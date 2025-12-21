@@ -188,17 +188,6 @@ For data-driven visual indicator dots on cards and detail screens:
 
 **Note:** `forCourse()` and `forCuisine()` exist in colors.dart but are **not currently used** in the UI.
 
-#### Semantic Confidence Indicators (Import Review Only)
-These colors are used **only** in import_review_screen.dart for OCR confidence:
-```dart
-MemoixColors.success           // Green icon
-MemoixColors.warning           // Orange icon
-MemoixColors.error             // Red icon (NOT for general UI)
-MemoixColors.successContainer  // Light green bg
-MemoixColors.warningContainer  // Light orange bg
-MemoixColors.errorContainer    // Light red bg
-```
-
 #### Universal Accent Colors
 ```dart
 MemoixColors.favorite          // Soft red heart (recipe_rating, recipe_search_delegate)
@@ -218,10 +207,13 @@ MemoixColors.importGallery     // Warm orange
 // ❌ FORBIDDEN
 Colors.red / Colors.blue / Colors.green / Colors.orange  // Use theme or MemoixColors
 Color(0xFF4B5563)  // Hardcoded hex in widgets
-MemoixColors.error  // for general UI (use theme.colorScheme.error instead)
+MemoixColors.success / warning / error  // Use theme colors instead
+MemoixColors.successContainer / warningContainer / errorContainer  // Use theme colors
 ```
 
 **Exception:** `Colors.grey` is acceptable as a fallback in `MemoixColors` lookup methods.
+
+**Note:** No screens should have unique color themes. All screens must use the established theme colors for consistency. The import review screen uses `theme.colorScheme.surfaceContainerHighest` for cards and `theme.colorScheme.primary` for accents, like all other screens.
 
 ---
 
