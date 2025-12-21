@@ -94,8 +94,12 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       _equipment.addAll(recipe.equipment);
       
       // Load images - new structure
+      // Filter stepImages to exclude headerImage to prevent duplicates
       _headerImage = recipe.getFirstImage();
-      _stepImages.addAll(recipe.stepImages);
+      final headerImg = _headerImage;
+      _stepImages.addAll(
+        recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+      );
       
       // Parse step image map
       for (final mapping in recipe.stepImageMap) {

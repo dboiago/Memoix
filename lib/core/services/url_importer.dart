@@ -10709,6 +10709,14 @@ class UrlRecipeImporter {
     ];
     final isPickleContext = pickleContextIndicators.any((p) => lowerUrl.contains(p));
     
+    // Check if this is a pastry/dessert context where 'foam' keywords would be misleading
+    // Mousse, mousseline, chantilly, etc. are traditional pastry, not modernist
+    const pastryContextIndicators = [
+      'pastry', 'dessert', 'cake', 'mousse', 'mousseline', 'chantilly',
+      'ganache', 'entremet', 'patisserie', 'baking', 'chocolate',
+    ];
+    final isPastryContext = pastryContextIndicators.any((p) => lowerUrl.contains(p));
+    
     // Check URL for modernist indicators
     if (lowerUrl.contains('modernist') || 
         lowerUrl.contains('molecular') ||
@@ -10719,7 +10727,8 @@ class UrlRecipeImporter {
     }
     
     // Check ingredients for modernist additives
-    // BUT exclude calcium chloride if in pickle context (it's Pickle Crisp)
+    // Exclude calcium chloride if in pickle context (it's Pickle Crisp)
+    // Exclude common pastry equipment that can be in non-modernist contexts
     final modernistIngredients = [
       'agar', 'sodium alginate', 'calcium lactate',
       'xanthan', 'lecithin', 'maltodextrin', 'tapioca maltodextrin',
@@ -10727,7 +10736,6 @@ class UrlRecipeImporter {
       'activa', 'foam magic', 'versawhip', 'ultra-tex', 'ultratex',
       'sodium citrate', 'sodium hexametaphosphate', 'isomalt',
       'liquid nitrogen', 'immersion circulator', 'sous vide',
-      'cream whipper', 'isi whip', 'pressure cooker',
       // Only include calcium chloride if NOT in pickle context
       if (!isPickleContext) 'calcium chloride',
     ];
@@ -10740,11 +10748,14 @@ class UrlRecipeImporter {
     }
     
     // Check page content for technique keywords
+    // Skip foam-related keywords in pastry context (mousse, whipped cream, etc.)
     final bodyText = document.body?.text?.toLowerCase() ?? '';
-    const techniqueKeywords = [
+    final techniqueKeywords = [
       'spherification', 'gelification', 'emulsification',
       'sous vide', 'pressure cooking', 'vacuum seal',
-      'foam', 'gel', 'caviar', 'pearls',
+      'gel', 'caviar', 'pearls',
+      // Only check foam-related terms if NOT in pastry context
+      if (!isPastryContext) 'foam',
     ];
     
     int matchCount = 0;
@@ -10752,7 +10763,8 @@ class UrlRecipeImporter {
       if (bodyText.contains(keyword)) matchCount++;
     }
     
-    // If multiple technique keywords found, likely modernist
+    // Require at least 2 technique keywords for modernist classification
+    // This helps avoid false positives from single keyword matches
     return matchCount >= 2;
   }
   

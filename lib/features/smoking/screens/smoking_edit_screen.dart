@@ -80,8 +80,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _woodController.text = recipe.wood;
       _notesController.text = recipe.notes ?? '';
       _servesController.text = recipe.serves ?? '';
+      // Filter stepImages to exclude header image to prevent duplicates
       _imagePath = recipe.getFirstImage();
-      _stepImages.addAll(recipe.stepImages);
+      final headerImg = _imagePath;
+      _stepImages.addAll(
+        recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+      );
       
       // Load step image mappings
       for (final mapping in recipe.stepImageMap) {
@@ -133,8 +137,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _woodController.text = recipe.wood;
         _notesController.text = recipe.notes ?? '';
         _servesController.text = recipe.serves ?? '';
+        // Filter stepImages to exclude header image to prevent duplicates
         _imagePath = recipe.getFirstImage();
-        _stepImages.addAll(recipe.stepImages);
+        final headerImg = _imagePath;
+        _stepImages.addAll(
+          recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+        );
         
         // Load step image mappings
         for (final mapping in recipe.stepImageMap) {
