@@ -6976,7 +6976,9 @@ class UrlRecipeImporter {
         // Shopify blog patterns - use specific method list, not generic metafield (which includes ingredients)
         '.article-method-list li, .article-method-list ol li, '
         // Generic method/preparation sections
-        '[class*="method-list"] li, [class*="preparation"] li, [class*="instruction"] li',
+        '[class*="method-list"] li, [class*="preparation"] li, [class*="instruction"] li, '
+        // Generic article content - ol is typically for numbered instructions
+        'article ol li, .entry-content ol li, .post-content ol li',
       );
       
       for (final e in instructionElements) {
