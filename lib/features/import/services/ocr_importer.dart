@@ -540,6 +540,18 @@ class OcrRecipeImporter {
         'sipsmith', 'london dry', 'angostura'];
     final drinkCount = drinkKeywords.where((k) => allText.contains(k)).length;
     
+    // Mains/food indicators - if these are present, it's likely NOT a drink
+    // Used to override false positive drink detection when wine/spirits are cooking ingredients
+    final foodKeywords = ['chicken', 'beef', 'pork', 'lamb', 'fish', 'salmon', 'shrimp',
+        'eggplant', 'pasta', 'rice', 'potato', 'potatoes', 'onion', 'garlic',
+        'bake', 'roast', 'grill', 'sauté', 'braise', 'simmer', 'fry', 'frying',
+        'breast', 'thigh', 'leg', 'loin', 'steak', 'fillet', 'filet',
+        'oven', 'preheat', 'baking dish', 'casserole', 'skillet', 'pan',
+        'serve with', 'serve over', 'serve alongside', 'main course', 'entrée',
+        'mozzarella', 'parmesan', 'cheddar', 'breadcrumb', 'flour', 'egg',
+        'vegetable', 'carrot', 'celery', 'tomato', 'pepper', 'zucchini'];
+    final foodCount = foodKeywords.where((k) => allText.contains(k)).length;
+    
     // Appetizer indicators
     final appKeywords = ['appetizer', 'starter', 'dip', 'finger food', 'hors d\'oeuvre'];
     final appCount = appKeywords.where((k) => allText.contains(k)).length;
@@ -549,10 +561,13 @@ class OcrRecipeImporter {
     final sideCount = sideKeywords.where((k) => allText.contains(k)).length;
     
     // Determine course based on keyword density
+    // Food indicators override drink detection (wine/spirits used as cooking ingredients)
     if (dessertCount >= 2) {
       course = 'Desserts';
       courseConfidence = 0.6 + (dessertCount * 0.05).clamp(0.0, 0.2);
-    } else if (drinkCount >= 2) {
+    } else if (drinkCount >= 2 && foodCount < 3) {
+      // Only classify as Drinks if we have drink keywords AND not many food keywords
+      // This prevents false positives when wine/spirits are cooking ingredients
       course = 'Drinks';
       courseConfidence = 0.6 + (drinkCount * 0.05).clamp(0.0, 0.2);
     } else if (appCount >= 1) {
@@ -1717,7 +1732,14 @@ class OcrRecipeImporter {
     // Fix lowercase 'l' being read as '1' when followed by unit
     // "l cup" -> "1 cup", "l tsp" -> "1 tsp"
     fixed = fixed.replaceAllMapped(
-      RegExp(r'(^|\n|\s)l\s+(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|g\.?|kg\.?|ml\.?|c\.|t\.)\b', caseSensitive: false),
+      RegExp(r'(^|\n|\s)l\s+(cups?\.?|tbsps?\.?|tbs\.?|tsps?\.?|oz\.?|lbs?\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|g\.?|kg\.?|ml\.?|c\.|t\.)\b', caseSensitive: false),
+      (m) => '${m.group(1)}1 ${m.group(2)}',
+    );
+    
+    // Fix lowercase 'l' or uppercase 'L' being read as '1' when followed by size descriptor
+    // "l small eggplant" -> "1 small eggplant", "L large onion" -> "1 large onion"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n|\s)[lL]\s+(small|medium|large|clove|head|bunch|sprig|stalk|can|package|pkg|slice|piece)\b', caseSensitive: false),
       (m) => '${m.group(1)}1 ${m.group(2)}',
     );
     

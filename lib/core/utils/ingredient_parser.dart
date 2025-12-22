@@ -148,9 +148,21 @@ class IngredientParser {
       }
     }
     
+    // Extract comma-separated page references: ", see page 51" or ", page 78"
+    // These are common in cookbook ingredient lists without parentheses
+    final pageRefMatch = RegExp(
+      r',\s*(?:see\s+)?page\s+[\w\d]+\s*$',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (pageRefMatch != null) {
+      // Drop page references entirely (they're not useful in digital form)
+      workingLine = workingLine.substring(0, pageRefMatch.start).trim();
+    }
+    
     // Extract trailing modifiers like ", divided", ", softened"
+    // Also handles butchery terms: de-boned, skinned, etc.
     final modifierMatch = RegExp(
-      r',\s*(divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned|to taste|as needed)\s*$',
+      r',\s*(divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned|to taste|as needed|de-?boned|skinned|skin-on|bone-in|boneless|skinless|de-?boned and skinned|skinned and de-?boned)\s*$',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (modifierMatch != null) {
@@ -163,8 +175,9 @@ class IngredientParser {
     
     // Also extract trailing modifiers WITHOUT comma (OCR often misses commas)
     // "butter softened" -> "butter", prep: "softened"
+    // Also handles butchery terms: de-boned, skinned, etc.
     final noCommaModifierMatch = RegExp(
-      r'\s+(softened|melted|chilled|beaten|sifted|drained|rinsed|thawed|frozen|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed)\s*$',
+      r'\s+(softened|melted|chilled|beaten|sifted|drained|rinsed|thawed|frozen|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|de-?boned|skinned|boneless|skinless|de-?boned and skinned|skinned and de-?boned)\s*$',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (noCommaModifierMatch != null) {
@@ -217,8 +230,9 @@ class IngredientParser {
     // Try standard format: "amount unit name"
     // Includes metric units (g, kg, ml, gram, grams, kilogram, etc.) and
     // common cooking units (cloves, pinch, dash, bunch, head, sprig, etc.)
+    // Note: 'tbs' is separate from 'tbsp' because OCR often reads "Tbs." without the 'p'
     final standardMatch = RegExp(
-      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|kilograms?|ml\.?|milliliters?|millilitres?|cl\.?|centiliters?|centilitres?|l\.?|liters?|litres?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|packages?|pkgs?\.?|c\.|t\.)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞]+(?:/\d+)?)?)\s*(cups?\.?|tbsps?\.?|tbs\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|kilograms?|ml\.?|milliliters?|millilitres?|cl\.?|centiliters?|centilitres?|l\.?|liters?|litres?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|packages?|pkgs?\.?|c\.|t\.)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (standardMatch != null) {
@@ -247,8 +261,9 @@ class IngredientParser {
       final amount = simpleMatch.group(1)?.trim();
       
       // Check if name starts with a unit word
+      // Note: 'tbs' is separate from 'tbsp' because OCR often reads "Tbs." without the 'p'
       final unitAtStartMatch = RegExp(
-        r'^(cups?\.?|tbsps?\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|kilograms?|ml\.?|milliliters?|millilitres?|cl\.?|centiliters?|centilitres?|l\.?|liters?|litres?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|packages?|pkgs?\.?|c\.|t\.)\s+(.+)',
+        r'^(cups?\.?|tbsps?\.?|tbs\.?|tsps?\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|kilograms?|ml\.?|milliliters?|millilitres?|cl\.?|centiliters?|centilitres?|l\.?|liters?|litres?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|packages?|pkgs?\.?|c\.|t\.)\s+(.+)',
         caseSensitive: false,
       ).firstMatch(name);
       if (unitAtStartMatch != null) {

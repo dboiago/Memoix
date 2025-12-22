@@ -11,7 +11,7 @@ class UnitNormalizer {
     'tablespoon': 'Tbsp',
     'tablespoons': 'Tbsp',
     'tbsp': 'Tbsp',
-    'tbs': 'Tbsp',
+    'tbs': 'Tbsp',  // OCR often reads "Tbs." without the 'p'
     'tb': 'Tbsp',
     't': 'Tbsp', // Only uppercase T, lowercase t is teaspoon
     
