@@ -756,6 +756,10 @@ class OcrRecipeImporter {
     // Track paragraph-style directions to split by sentence later
     final paragraphDirections = <String>[];
     
+    // Track orphan direction continuations (lines that start with "to 60 minutes..." etc)
+    // These need to be prepended to the next direction we find
+    String? pendingDirectionContinuation;
+    
     // Pre-process lines:
     // 1. Handle two-column layouts (ingredient + direction on same line)
     // 2. Merge continuation lines (multi-line ingredients)
@@ -1158,31 +1162,49 @@ class OcrRecipeImporter {
       }
       
       // Direction continuations should be appended to previous direction
-      if (isDirectionContinuation && rawDirections.isNotEmpty) {
-        final updated = '${rawDirections.last} $line';
-        rawDirections[rawDirections.length - 1] = updated;
-        directions[directions.length - 1] = updated;
+      if (isDirectionContinuation) {
+        if (rawDirections.isNotEmpty) {
+          // Join to the last direction
+          final updated = '${rawDirections.last} $line';
+          rawDirections[rawDirections.length - 1] = updated;
+          directions[directions.length - 1] = updated;
+        } else {
+          // No direction to join to yet - store as pending continuation
+          // This handles cases like "To 60 minutes..." being read before the main direction
+          pendingDirectionContinuation = (pendingDirectionContinuation != null)
+              ? '$pendingDirectionContinuation $line'
+              : line;
+        }
         inDirections = true;
         inIngredients = false;
         continue;
+      }
+      
+      // Helper to add a direction, prepending any pending continuation
+      void addDirection(String dir) {
+        // If we have a pending continuation, it should be appended to this direction
+        // (the continuation was read out of order due to OCR column reading)
+        final cleanedDir = _cleanDirectionLine(dir);
+        if (pendingDirectionContinuation != null) {
+          // Append continuation to end of direction (it's the end fragment)
+          rawDirections.add('$cleanedDir $pendingDirectionContinuation');
+          directions.add('$cleanedDir $pendingDirectionContinuation');
+          pendingDirectionContinuation = null;
+        } else {
+          rawDirections.add(cleanedDir);
+          directions.add(cleanedDir);
+        }
       }
 
       if (isNumberedStep) {
         // Numbered step - definitely a direction
         // KEEP the number prefix for now - sorting happens in Phase 6.5
-        // Clean any trailing metric garbage from OCR merge
-        final cleanedLine = _cleanDirectionLine(line);
-        rawDirections.add(cleanedLine);
-        directions.add(cleanedLine);
+        addDirection(line);
         inDirections = true;
         inIngredients = false;
       } else if (startsWithAction) {
         // Line STARTS with an action verb - definitely a direction
-        // Add directly to rawDirections, not paragraphDirections
-        // Clean any trailing metric garbage from OCR merge
-        final cleanedLine = _cleanDirectionLine(line);
-        rawDirections.add(cleanedLine);
-        directions.add(cleanedLine);
+        addDirection(line);
         inDirections = true;
         inIngredients = false;
       } else if (isLongProse || (isLikelyDirection && line.length > 15)) {
@@ -1345,6 +1367,15 @@ class OcrRecipeImporter {
           directions.add(trimmed);
         }
       }
+    }
+    
+    // If we have an orphan direction continuation, append it to the last direction
+    // This handles cases where OCR read the end of a sentence ("to 60 minutes...") 
+    // before reading the beginning
+    if (pendingDirectionContinuation != null && rawDirections.isNotEmpty) {
+      final lastIdx = rawDirections.length - 1;
+      rawDirections[lastIdx] = '${rawDirections[lastIdx]} $pendingDirectionContinuation';
+      directions[lastIdx] = '${directions[lastIdx]} $pendingDirectionContinuation';
     }
 
     // ===== PHASE 6.5: Post-process directions - split on periods, filter prose =====
