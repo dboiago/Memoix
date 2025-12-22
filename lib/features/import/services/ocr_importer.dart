@@ -1176,13 +1176,19 @@ class OcrRecipeImporter {
       }
       
       // Direction continuations should be appended to previous direction
-      // If there's no previous direction, SKIP the fragment entirely (it's orphaned OCR garbage)
+      // Check both rawDirections AND paragraphDirections for something to join to
       if (isDirectionContinuation) {
         if (rawDirections.isNotEmpty) {
-          // Join to the last direction
+          // Join to the last raw direction
           final updated = '${rawDirections.last} $line';
           rawDirections[rawDirections.length - 1] = updated;
           directions[directions.length - 1] = updated;
+          inDirections = true;
+          inIngredients = false;
+        } else if (paragraphDirections.isNotEmpty) {
+          // Join to the last paragraph direction
+          paragraphDirections[paragraphDirections.length - 1] = 
+              '${paragraphDirections.last} $line';
           inDirections = true;
           inIngredients = false;
         }
