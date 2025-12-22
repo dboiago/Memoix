@@ -1085,7 +1085,7 @@ class OcrRecipeImporter {
       
       // Check if line STARTS with an action verb (strong direction indicator)
       final startsWithAction = RegExp(
-        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|slice|dice|chop|mince|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake|flatten|dredge|sauté|saute|fry|grill|roast|broil|steam|simmer|boil|layer|dot|lay)',
+        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|slice|dice|chop|mince|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake|flatten|dredge|sauté|saute|fry|grill|roast|broil|steam|simmer|boil|layer|dot|lay|season|toss|coat|dust|brush|drizzle|beat|fold|knead|roll|shape|form)',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       

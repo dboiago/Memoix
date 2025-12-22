@@ -160,10 +160,10 @@ class IngredientParser {
     }
     
     // Extract trailing modifiers like ", divided", ", softened"
-    // Also handles butchery terms: de-boned, skinned, etc.
+    // Also handles butchery terms: de-boned, skinned, cut into pieces, etc.
     // Note: Compound modifiers must come BEFORE simple ones in alternation
     final modifierMatch = RegExp(
-      r',\s*(de-?boned and skinned|skinned and de-?boned|divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned|to taste|as needed|de-?boned|skinned|skin-on|bone-in|boneless|skinless)\s*$',
+      r',\s*(cut into (?:pieces|chunks|cubes|strips|slices|rounds|wedges|rings|halves|quarters)|de-?boned and skinned|skinned and de-?boned|divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned|to taste|as needed|de-?boned|skinned|skin-on|bone-in|boneless|skinless)\s*$',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (modifierMatch != null) {
