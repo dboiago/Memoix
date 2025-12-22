@@ -756,10 +756,6 @@ class OcrRecipeImporter {
     // Track paragraph-style directions to split by sentence later
     final paragraphDirections = <String>[];
     
-    // Track orphan direction continuations (lines that start with "to 60 minutes..." etc)
-    // These need to be prepended to the next direction we find
-    String? pendingDirectionContinuation;
-    
     // Pre-process lines:
     // 1. Handle two-column layouts (ingredient + direction on same line)
     // 2. Merge continuation lines (multi-line ingredients)
@@ -1162,49 +1158,33 @@ class OcrRecipeImporter {
       }
       
       // Direction continuations should be appended to previous direction
+      // If there's no previous direction, SKIP the fragment entirely (it's orphaned OCR garbage)
       if (isDirectionContinuation) {
         if (rawDirections.isNotEmpty) {
           // Join to the last direction
           final updated = '${rawDirections.last} $line';
           rawDirections[rawDirections.length - 1] = updated;
           directions[directions.length - 1] = updated;
-        } else {
-          // No direction to join to yet - store as pending continuation
-          // This handles cases like "To 60 minutes..." being read before the main direction
-          pendingDirectionContinuation = (pendingDirectionContinuation != null)
-              ? '$pendingDirectionContinuation $line'
-              : line;
+          inDirections = true;
+          inIngredients = false;
         }
-        inDirections = true;
-        inIngredients = false;
+        // If no directions yet, just skip this orphan fragment
         continue;
-      }
-      
-      // Helper to add a direction, prepending any pending continuation
-      void addDirection(String dir) {
-        // If we have a pending continuation, it should be appended to this direction
-        // (the continuation was read out of order due to OCR column reading)
-        final cleanedDir = _cleanDirectionLine(dir);
-        if (pendingDirectionContinuation != null) {
-          // Append continuation to end of direction (it's the end fragment)
-          rawDirections.add('$cleanedDir $pendingDirectionContinuation');
-          directions.add('$cleanedDir $pendingDirectionContinuation');
-          pendingDirectionContinuation = null;
-        } else {
-          rawDirections.add(cleanedDir);
-          directions.add(cleanedDir);
-        }
       }
 
       if (isNumberedStep) {
         // Numbered step - definitely a direction
         // KEEP the number prefix for now - sorting happens in Phase 6.5
-        addDirection(line);
+        final cleanedLine = _cleanDirectionLine(line);
+        rawDirections.add(cleanedLine);
+        directions.add(cleanedLine);
         inDirections = true;
         inIngredients = false;
       } else if (startsWithAction) {
         // Line STARTS with an action verb - definitely a direction
-        addDirection(line);
+        final cleanedLine = _cleanDirectionLine(line);
+        rawDirections.add(cleanedLine);
+        directions.add(cleanedLine);
         inDirections = true;
         inIngredients = false;
       } else if (isLongProse || (isLikelyDirection && line.length > 15)) {
@@ -1362,20 +1342,11 @@ class OcrRecipeImporter {
           caseSensitive: false,
         ).hasMatch(lowerSentence);
         
-        if (trimmed.isNotEmpty && trimmed.length > 5 && (hasAction || trimmed.length < 50)) {
+        if (trimmed.isNotEmpty && trimmed.length > 10 && trimmed.contains(' ') && (hasAction || trimmed.length < 50)) {
           rawDirections.add(trimmed);
           directions.add(trimmed);
         }
       }
-    }
-    
-    // If we have an orphan direction continuation, append it to the last direction
-    // This handles cases where OCR read the end of a sentence ("to 60 minutes...") 
-    // before reading the beginning
-    if (pendingDirectionContinuation != null && rawDirections.isNotEmpty) {
-      final lastIdx = rawDirections.length - 1;
-      rawDirections[lastIdx] = '${rawDirections[lastIdx]} $pendingDirectionContinuation';
-      directions[lastIdx] = '${directions[lastIdx]} $pendingDirectionContinuation';
     }
 
     // ===== PHASE 6.5: Post-process directions - split on periods, filter prose =====
@@ -1404,7 +1375,10 @@ class OcrRecipeImporter {
       
       for (final sentence in sentences) {
         final trimmed = sentence.trim();
-        if (trimmed.isEmpty || trimmed.length < 5) continue;
+        if (trimmed.isEmpty || trimmed.length < 10) continue;
+        
+        // Skip single-word lines (likely OCR garbage or orphaned fragments)
+        if (!trimmed.contains(' ')) continue;
         
         // Skip prose fragments
         if (proseFragmentPattern.hasMatch(trimmed.toLowerCase())) {
