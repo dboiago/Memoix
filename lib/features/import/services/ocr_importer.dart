@@ -426,6 +426,33 @@ class OcrRecipeImporter {
       nameConfidence = titleParts.length == 1 ? 0.7 : 0.6;
     }
     
+    // Fallback: If no title found or title looks like an ingredient, scan for ALL CAPS title
+    // This handles layouts where recipe title appears mid-page (after time/serving info)
+    // e.g., "LEMON DROP COOKIES", "CHOCOLATE CHIP BROWNIES"
+    final titleLooksLikeIngredient = name != null && RegExp(
+      r'^[\d½¼¾⅓⅔⅛]|\b(cup|cups|tbsp|tsp|oz|lb|butter|sugar|flour|salt|egg)\b',
+      caseSensitive: false,
+    ).hasMatch(name);
+    
+    if (name == null || titleLooksLikeIngredient) {
+      // Look for ALL CAPS line that could be the title (2-5 words, no amounts)
+      for (int i = 0; i < lines.length && i < 30; i++) {
+        final line = lines[i].trim();
+        // ALL CAPS, 2-50 chars, at least 2 words, no digits at start
+        if (line.length >= 5 && line.length <= 50 &&
+            line == line.toUpperCase() &&
+            RegExp(r'^[A-Z][A-Z\s]+[A-Z]$').hasMatch(line) &&
+            line.split(' ').length >= 2 &&
+            !RegExp(r'^\d').hasMatch(line) &&
+            !RegExp(r'\b(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER)\b').hasMatch(line)) {
+          name = TextNormalizer.toTitleCase(line.toLowerCase());
+          nameConfidence = 0.8;
+          titleLineIndex = i;
+          break;
+        }
+      }
+    }
+    
     // Fallback to first line if no good candidate found
     if (name == null && lines.isNotEmpty) {
       name = lines.first;
@@ -899,7 +926,8 @@ class OcrRecipeImporter {
     // Pattern A: "lemons" followed by "2" -> "2 lemons"
     // Pattern B: "2" followed by "lemons" -> "2 lemons"
     final pairedLines = <String>[];
-    final standaloneNumberPattern = RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞]+\s*$');
+    // Include "L" and "l" as they're often OCR misreads of "1"
+    final standaloneNumberPattern = RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞LlIi]+\s*$');
     final standaloneFoodPattern = RegExp(
       r'^(lemon|lime|orange|egg|onion|apple|banana|tomato|potato|clove|head|bunch|stalk|rib|sprig|slice|zest|butter|sugar|flour|salt|pepper|garlic|ginger|corn\s*starch|starch|vanilla|cinnamon)s?\s*$',
       caseSensitive: false,
@@ -928,15 +956,21 @@ class OcrRecipeImporter {
       
       if (isStandaloneFoodWord && nextIsStandaloneNumber) {
         // Pattern A: "lemons" + "2" -> "2 lemons"
-        pairedLines.add('$nextLine $line');
+        // Normalize L/l/I/i to 1
+        final normalizedNum = nextLine.replaceAll(RegExp(r'[LlIi]'), '1');
+        pairedLines.add('$normalizedNum $line');
         i += 2; // Skip both lines
       } else if (isStandaloneNumber && nextIsStandaloneFoodWord) {
         // Pattern B: "2" + "lemons" -> "2 lemons"
-        pairedLines.add('$line $nextLine');
+        // Normalize L/l/I/i to 1
+        final normalizedNum = line.replaceAll(RegExp(r'[LlIi]'), '1');
+        pairedLines.add('$normalizedNum $nextLine');
         i += 2; // Skip both lines
       } else if (isStandaloneNumber && nextCouldBeIngredientName) {
         // Pattern C: "½" + "corn starch" -> "½ corn starch"
-        pairedLines.add('$line $nextLine');
+        // Normalize L/l/I/i to 1
+        final normalizedNum = line.replaceAll(RegExp(r'[LlIi]'), '1');
+        pairedLines.add('$normalizedNum $nextLine');
         i += 2; // Skip both lines
       } else {
         pairedLines.add(line);
@@ -1120,7 +1154,28 @@ class OcrRecipeImporter {
       final ingredientNoUnitMatch = ingredientNoUnitPattern.firstMatch(line);
       final ingredientFractionMatch = ingredientFractionStartPattern.firstMatch(line);
       final hasIngredientPattern = ingredientMatch != null || ingredientNoUnitMatch != null || ingredientFractionMatch != null;
-      final isNumberedStep = RegExp(r'^\d+[\.\)]\s').hasMatch(line);
+      
+      // Detect numbered steps like "1. Preheat oven" or "2) Mix ingredients"
+      // BUT exclude OCR-corrupted ingredient amounts like "602. heavy cream" (should be "6 oz. heavy cream")
+      // OCR often merges "6 oz." into "602." or "302." etc.
+      // Key insight: real step numbers are typically 1-20, not 302, 602, etc.
+      // Also check if text after the "step number" looks like an ingredient (food word, not action verb)
+      final numberedStepMatch = RegExp(r'^(\d+)[\.\)]\s+(.*)').firstMatch(line);
+      final isNumberedStep = numberedStepMatch != null && (() {
+        final stepNum = int.tryParse(numberedStepMatch.group(1) ?? '') ?? 0;
+        final restOfLine = (numberedStepMatch.group(2) ?? '').toLowerCase();
+        // Real step numbers are typically 1-30
+        // Larger numbers like 302, 602 are likely OCR-corrupted amounts (3 oz., 6 oz.)
+        if (stepNum > 30) {
+          // Check if rest of line looks like an ingredient (food word)
+          final looksLikeIngredient = RegExp(
+            r'^(heavy|light|sour|whipping|double)?\s*(cream|butter|milk|oil|wine|brandy|stock|broth|water|flour|sugar|salt|pepper|lobster|shrimp|fish|chicken|beef|pork|mushroom|tomato|onion|garlic)',
+            caseSensitive: false,
+          ).hasMatch(restOfLine);
+          return !looksLikeIngredient; // Only treat as step if NOT an ingredient
+        }
+        return true; // Small numbers (1-30) are likely real step numbers
+      })();
       
       // Long prose lines (>80 chars with multiple sentences) are likely directions
       final isLongProse = line.length > 80 && RegExp(r'\.\s+[A-Z]').hasMatch(line);
@@ -1176,7 +1231,8 @@ class OcrRecipeImporter {
       (line.isNotEmpty && line[0] == line[0].toLowerCase() && RegExp(r'^[a-z]').hasMatch(line)) ||
       // Line starts with common ingredient names that are likely continuations from wrapped direction lines
       // e.g., "onion and garlic until golden." is a continuation of "heat the oil and sauté the"
-      (inDirections && RegExp(r'^(onion|garlic|tomato|chicken|beef|pork|fish|butter|cream|cheese|pasta|rice|oil|salt|pepper|sugar|flour|milk|egg|sauce|mixture|batter|dough)s?\b', caseSensitive: false).hasMatch(lowerLine));
+      // NOTE: Do NOT include fish/chicken here - they can start new ingredient lines like "fish or chicken stock"
+      (inDirections && RegExp(r'^(onion|garlic|tomato|butter|cream|cheese|pasta|rice|oil|salt|pepper|sugar|flour|milk|egg|sauce|mixture|batter|dough)s?\b', caseSensitive: false).hasMatch(lowerLine));
       
       // Detect orphan time fragments like "to 60 minutes or until browned"
       // These are parts of directions that got split by OCR reading columns out of order
@@ -1938,6 +1994,15 @@ class OcrRecipeImporter {
       (m) => '${m.group(1)} oz',
     );
     
+    // Fix "X02." pattern where OCR merged amount with "oz." -> "6 oz."
+    // e.g., "602. heavy cream" -> "6 oz. heavy cream"
+    // e.g., "302. white wine" -> "3 oz. white wine"
+    // Pattern: single digit + 02 + period, followed by space and food word
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b(\d)02\.\s+(heavy|light|sour|whipping|double|cream|butter|milk|oil|wine|brandy|stock|broth|water|lobster|shrimp|fish|chicken|tomato|white|red)', caseSensitive: false),
+      (m) => '${m.group(1)} oz ${m.group(2)}',
+    );
+    
     // Fix "Tbsps." or "tbsps." -> normalize periods in unit abbreviations
     // OCR sometimes adds extra periods or 's' to units
     fixed = fixed.replaceAllMapped(
@@ -2045,7 +2110,20 @@ class OcrRecipeImporter {
     
     // Fix "crème" OCR issues - normalize accented characters
     // "crรจme" might be read as "creme", "crรฉme", etc.
-    fixed = fixed.replaceAll(RegExp(r'cr[eรจรฉรช]me', caseSensitive: false), 'crรจme');
+    fixed = fixed.replaceAll(RegExp(r'cr[eรจรฉรช]me', caseSensitive: false), 'crème');
+    
+    // Fix "%" being read instead of "⅛" (one-eighth) fraction
+    // "% tsp" -> "⅛ tsp", "% cup" -> "⅛ cup"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\s)%\s*(tsp|teaspoon|cup|oz)', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}⅛ ${m.group(2)}',
+    );
+    
+    // Fix "talt" being read instead of "salt" (OCR misread s as t)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\btalt\b', caseSensitive: false),
+      (m) => 'salt',
+    );
     
     // Fix merged unit+word patterns where OCR doesn't add space:
     // "cuppowdered" -> "cup powdered", "cupall-purpose" -> "cup all-purpose"
