@@ -6,11 +6,8 @@
 
 flutter_launcher_icons:
   android: true
-  ios: true
+  ios: false  # Disable - iOS folder not set up (requires Mac)
   image_path: "assets/icons/memoix-icon-black-1024.png"
-  
-  # Keep transparent background - don't add color
-  remove_alpha_ios: false
   
   # Windows configuration
   windows:
@@ -18,7 +15,6 @@ flutter_launcher_icons:
     image_path: "assets/icons/memoix-icon-black-256.png"
     icon_size: 256
   
-  # macOS configuration  
+  # macOS configuration - disable if not on Mac
   macos:
-    generate: true
-    image_path: "assets/icons/memoix-icon-black-1024.png"
+    generate: false
