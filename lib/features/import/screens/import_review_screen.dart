@@ -906,7 +906,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                             ),
                           ),
                           const SizedBox(width: 8),
-                          // Notes/Prep
+                          // Notes/Prep (includes alternative if present)
                           Expanded(
                             flex: 3,
                             child: InputDecorator(
@@ -916,7 +916,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                                 border: OutlineInputBorder(),
                               ),
                               child: Text(
-                                ingredient.preparation ?? '',
+                                _buildIngredientNotes(ingredient),
                                 style: theme.textTheme.bodyMedium?.copyWith(
                                   decoration: isSelected ? null : TextDecoration.lineThrough,
                                   color: isSelected ? null : theme.colorScheme.outline,
@@ -1574,6 +1574,18 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       stepImages: stepImages,
       source: SmokingSource.imported,
     );
+  }
+  
+  /// Build ingredient notes string combining preparation and alternative
+  String _buildIngredientNotes(RawIngredientData ingredient) {
+    final parts = <String>[];
+    if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
+      parts.add(ingredient.preparation!);
+    }
+    if (ingredient.alternative != null && ingredient.alternative!.isNotEmpty) {
+      parts.add('alt: ${ingredient.alternative}');
+    }
+    return parts.join('; ');
   }
 
   /// Build a Pizza from import data
