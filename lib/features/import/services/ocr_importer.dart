@@ -568,6 +568,14 @@ class OcrRecipeImporter {
         'dressing', 'toss gently', 'bed of lettuce', 'salad greens'];
     final saladCount = saladKeywords.where((k) => allText.contains(k)).length;
     
+    // Sauce indicators
+    final sauceKeywords = ['sauce', 'salsa', 'marinara', 'gravy', 'aioli', 'pesto',
+        'condiment', 'glaze', 'reduction', 'coulis', 'beurre blanc',
+        'hollandaise', 'bearnaise', 'béchamel', 'bechamel', 'mornay', 'velouté',
+        'served with', 'drizzle over', 'pour over', 'dipping sauce', 'relish',
+        'chutney', 'salsa verde', 'chimichurri', 'romesco', 'mole', 'ragù', 'ragu'];
+    final sauceCount = sauceKeywords.where((k) => allText.contains(k)).length;
+    
     // Vegetable-centric dishes (no meat protein) are likely sides
     final vegetableKeywords = ['fennel', 'zucchini', 'eggplant', 'asparagus', 'broccoli',
         'cauliflower', 'brussels sprouts', 'green beans', 'spinach', 'kale', 'chard',
@@ -595,6 +603,10 @@ class OcrRecipeImporter {
       // Salad detection - multiple salad keywords
       course = 'Salads';
       courseConfidence = 0.6 + (saladCount * 0.05).clamp(0.0, 0.2);
+    } else if (sauceCount >= 2) {
+      // Sauce detection - multiple sauce keywords
+      course = 'Sauces';
+      courseConfidence = 0.6 + (sauceCount * 0.05).clamp(0.0, 0.2);
     } else if (appCount >= 1 && foodCount < 3) {
       // Only classify as Apps if there aren't many main dish indicators
       course = 'Apps';
@@ -1160,7 +1172,10 @@ class OcrRecipeImporter {
         caseSensitive: false,
       ).hasMatch(lowerLine) ||
       // Line starts with lowercase letter (continuation of previous sentence)
-      (line.isNotEmpty && line[0] == line[0].toLowerCase() && RegExp(r'^[a-z]').hasMatch(line));
+      (line.isNotEmpty && line[0] == line[0].toLowerCase() && RegExp(r'^[a-z]').hasMatch(line)) ||
+      // Line starts with common ingredient names that are likely continuations from wrapped direction lines
+      // e.g., "onion and garlic until golden." is a continuation of "heat the oil and sauté the"
+      (inDirections && RegExp(r'^(onion|garlic|tomato|chicken|beef|pork|fish|butter|cream|cheese|pasta|rice|oil|salt|pepper|sugar|flour|milk|egg|sauce|mixture|batter|dough)s?\b', caseSensitive: false).hasMatch(lowerLine));
       
       // Detect orphan time fragments like "to 60 minutes or until browned"
       // These are parts of directions that got split by OCR reading columns out of order
