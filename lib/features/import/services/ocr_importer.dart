@@ -1167,8 +1167,9 @@ class OcrRecipeImporter {
       // "with a lemon wedge" is part of "Garnish with a lemon wedge"
       // Also catch lines that continue a previous sentence (start lowercase, or start with common continuation patterns)
       // NOTE: "to X minutes" patterns are handled separately below as orphan time fragments
+      // NOTE: Do NOT include "in a" or "in an" here - those are direction STARTS handled by startsWithAction
       final isDirectionContinuation = RegExp(
-        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s)',
+        r'^(with a|with the|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s)',
         caseSensitive: false,
       ).hasMatch(lowerLine) ||
       // Line starts with lowercase letter (continuation of previous sentence)
