@@ -1501,9 +1501,17 @@ class OcrRecipeImporter {
   /// - "1½ CUPS AGAVE NECTAR"
   /// - "1 CUP HOMEMADE APPLESAUCE (PAGE 78) OR STORE-BOUGHT UNSWEETENED APPLESAUCE"
   /// - Baker's percentage: "All-Purpose Flour, 100% – 600g (4 1/2 Cups)"
+  /// - Dual column: "4 breasts of chicken, de-boned 4" (trailing metric column)
   RawIngredientData _parseIngredientLine(String line) {
+    // Strip trailing metric column numbers that OCR merged from two-column layouts
+    // Pattern: line ends with a standalone number (or number+unit like "4" or "120 ml")
+    // that duplicates or converts the leading amount
+    final metricResult = _stripTrailingMetricColumn(line);
+    final cleanedLine = metricResult.cleanedLine;
+    final metricNote = metricResult.metricNote;
+    
     // Normalize fractions in the line before parsing (1/2 → ½)
-    final normalizedLine = IngredientParser.normalizeFractions(line);
+    final normalizedLine = IngredientParser.normalizeFractions(cleanedLine);
     
     // Use the shared IngredientParser for consistent parsing
     final parsed = IngredientParser.parse(normalizedLine);
@@ -1513,13 +1521,21 @@ class OcrRecipeImporter {
         ? UnitNormalizer.normalize(parsed.unit)
         : null;
     
+    // Combine parser's preparation with any extracted metric note
+    String? finalPreparation = parsed.preparation;
+    if (metricNote != null && metricNote.isNotEmpty) {
+      finalPreparation = finalPreparation != null 
+          ? '$finalPreparation ($metricNote)'
+          : metricNote;
+    }
+    
     // Convert ParsedIngredient to RawIngredientData
     return RawIngredientData(
       original: parsed.original.isNotEmpty ? parsed.original : line,
       name: _cleanIngredientName(parsed.name.isNotEmpty ? parsed.name : line),
       amount: parsed.amount,
       unit: normalizedUnit,
-      preparation: parsed.preparation,
+      preparation: finalPreparation,
       bakerPercent: parsed.bakerPercent,
       alternative: parsed.alternative,
       isSection: parsed.isSection,
@@ -1545,6 +1561,61 @@ class OcrRecipeImporter {
       }).join(' ');
     }
     return cleaned;
+  }
+  
+  /// Strip trailing metric column values from two-column cookbook layouts
+  /// 
+  /// Many cookbooks have dual columns: "4 oz. butter" (US) and "120 g" (Metric)
+  /// OCR often merges these: "4 oz. butter 120 g" or "4 breasts of chicken 4"
+  /// 
+  /// This detects and removes trailing metric measurements.
+  /// - Duplicate counts are discarded (redundant info)
+  /// - Different metric units are preserved as notes (useful conversion info)
+  ({String cleanedLine, String? metricNote}) _stripTrailingMetricColumn(String line) {
+    // Pattern 1: Trailing standalone number (same as leading amount)
+    // "4 breasts of chicken, de-boned and skinned 4" -> remove trailing "4"
+    // This is redundant info, so discard it (no note)
+    final leadingAmountMatch = RegExp(r'^(\d+)').firstMatch(line);
+    if (leadingAmountMatch != null) {
+      final leadingAmount = leadingAmountMatch.group(1);
+      // Check if line ends with the same number (with optional space before)
+      final trailingMatch = RegExp(r'\s+$leadingAmount\s*$'.replaceAll('\$leadingAmount', leadingAmount!)).firstMatch(line);
+      if (trailingMatch != null) {
+        return (cleanedLine: line.substring(0, trailingMatch.start).trim(), metricNote: null);
+      }
+    }
+    
+    // Pattern 2: Trailing metric measurement (number + metric unit)
+    // "4 oz. butter 120 g" -> remove "120 g" but preserve as note
+    // "1 cup flour 65 g" -> remove "65 g" but preserve as note
+    // "3 oz. cream 90 ml" -> remove "90 ml" but preserve as note
+    final trailingMetricMatch = RegExp(
+      r'\s+(\d+\s*(?:g|kg|ml|l|cl))\s*$',
+      caseSensitive: false,
+    ).firstMatch(line);
+    if (trailingMetricMatch != null) {
+      // Only strip if there's substantial content before it
+      final beforeMetric = line.substring(0, trailingMetricMatch.start);
+      if (beforeMetric.length > 10) {
+        final metricValue = trailingMetricMatch.group(1)?.trim();
+        return (cleanedLine: beforeMetric.trim(), metricNote: metricValue);
+      }
+    }
+    
+    // Pattern 3: Trailing fraction that duplicates leading amount
+    // "½ cup butter ½" -> remove trailing "½" (redundant, no note)
+    final leadingFractionMatch = RegExp(r'^([\d½¼¾⅓⅔]+)').firstMatch(line);
+    if (leadingFractionMatch != null) {
+      final leadingFrac = leadingFractionMatch.group(1)!;
+      // Escape special regex chars in fraction
+      final escaped = leadingFrac.replaceAll(r'½', r'½').replaceAll(r'¼', r'¼').replaceAll(r'¾', r'¾');
+      final trailingFracMatch = RegExp('\\s+$escaped\\s*\$').firstMatch(line);
+      if (trailingFracMatch != null) {
+        return (cleanedLine: line.substring(0, trailingFracMatch.start).trim(), metricNote: null);
+      }
+    }
+    
+    return (cleanedLine: line, metricNote: null);
   }
   
   /// Fix common OCR artifacts and misreadings
