@@ -688,6 +688,32 @@ class OcrRecipeImporter {
     final introLines = <String>[];
     int contentStartIndex = titleLineIndex + 1;
     
+    // ===== SPECIAL CASE: Better Homes & Gardens layout =====
+    // Check if ingredients appear BEFORE the title (common in some cookbooks)
+    // In this layout:
+    //   - Ingredients are at top of page (before title)
+    //   - Title appears mid-page (ALL CAPS)
+    //   - Directions follow the title
+    // If we find ingredient-like lines before the title, start from line 0
+    if (titleLineIndex > 3) {
+      // Check first few lines for ingredient patterns
+      bool hasIngredientsBeforeTitle = false;
+      for (int i = 0; i < titleLineIndex && i < 10; i++) {
+        final line = lines[i];
+        // Look for: standalone numbers, unit-starting lines, or amount+unit patterns
+        if (RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*$').hasMatch(line) ||  // standalone number/fraction
+            RegExp(r'^(cups?|tbsps?|tbs\.?|tsps?|oz\.?|lbs?\.?|pounds?|ounces?|teaspoons?|tablespoons?)\s', caseSensitive: false).hasMatch(line) ||  // unit-starting line
+            RegExp(r'^[\d½¼¾⅓⅔⅛]+\s*(cup|cups|tbsp|tsp|oz|lb|g|kg|ml|l|pound|ounce|teaspoon|tablespoon)', caseSensitive: false).hasMatch(line)) {  // amount+unit
+          hasIngredientsBeforeTitle = true;
+          break;
+        }
+      }
+      if (hasIngredientsBeforeTitle) {
+        // Start parsing from line 0, but skip the title line itself when we reach it
+        contentStartIndex = 0;
+      }
+    }
+    
     // Look for intro paragraphs after title - long sentences that aren't ingredients
     // Also detect and skip subtitle lines (short descriptive lines after title)
     for (int i = titleLineIndex + 1; i < lines.length && i < titleLineIndex + 12; i++) {
@@ -819,6 +845,14 @@ class OcrRecipeImporter {
       r'^([\d½¼¾⅓⅔⅛⅜⅝⅞]+)\s+(.+)$',
       caseSensitive: false,
     );
+    
+    // Pattern for unit-starting lines (no amount, like "tsp. ground cinnamon")
+    // This handles cookbook layouts where amounts are on separate lines
+    // We'll treat these as ingredients with missing amounts to be filled in
+    final unitStartPattern = RegExp(
+      r'^(cups?|tbsps?|tbs\.?|tsps?|tsp\.?|oz\.?|lbs?\.?|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+(.+)$',
+      caseSensitive: false,
+    );
 
     final rawIngredients = <RawIngredientData>[];
     final rawDirections = <String>[];
@@ -861,6 +895,16 @@ class OcrRecipeImporter {
     for (int i = contentStartIndex; i < lines.length; i++) {
       final line = lines[i];
       final lowerLine = line.toLowerCase();
+      
+      // Skip the title line if we're parsing from before the title (BHG layout)
+      if (i == titleLineIndex) {
+        continue;
+      }
+      
+      // Skip time-related lines (HANDS ON, BAKE, CHILL, etc.)
+      if (RegExp(r'\b(hands\s*on|bake|chill|cook|prep|rest|marinate|refrigerate)\s+\d', caseSensitive: false).hasMatch(line)) {
+        continue;
+      }
       
       // Check if this line is a continuation of a previous ingredient
       // Continuation lines typically:
@@ -1214,7 +1258,8 @@ class OcrRecipeImporter {
       final ingredientMatch = ingredientPattern.firstMatch(line);
       final ingredientNoUnitMatch = ingredientNoUnitPattern.firstMatch(line);
       final ingredientFractionMatch = ingredientFractionStartPattern.firstMatch(line);
-      final hasIngredientPattern = ingredientMatch != null || ingredientNoUnitMatch != null || ingredientFractionMatch != null;
+      final unitStartMatch = unitStartPattern.firstMatch(line);
+      final hasIngredientPattern = ingredientMatch != null || ingredientNoUnitMatch != null || ingredientFractionMatch != null || unitStartMatch != null;
       
       // Detect numbered steps like "1. Preheat oven" or "2) Mix ingredients"
       // BUT exclude OCR-corrupted ingredient amounts like "602. heavy cream" (should be "6 oz. heavy cream")

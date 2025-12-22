@@ -381,6 +381,43 @@ class IngredientParser {
       );
     }
     
+    // Try unit-starting lines (no amount - common in cookbook layouts with separate amount lines)
+    // "cup salted butter" -> unit: "cup", name: "salted butter", amount: (missing)
+    // "tsp. ground cinnamon" -> unit: "tsp", name: "ground cinnamon", amount: (missing)
+    final unitStartMatch = RegExp(
+      r'^(cups?\.?|tbsps?\.?|tbs\.?|tsps?\.?|tsp\.?|oz\.?|lbs?\.?|g\.?|grams?|kg\.?|ml\.?|l\.?|pounds?\.?|ounces?\.?|teaspoons?\.?|tablespoons?\.?|parts?\.?|cloves?|heads?|bunch(?:es)?|sprigs?|slices?|pieces?|pinch(?:es)?|dash(?:es)?|stalks?|cans?|c\.|t\.)\s+(.+)',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (unitStartMatch != null) {
+      var unit = UnitNormalizer.normalize(unitStartMatch.group(1)?.trim());
+      var name = unitStartMatch.group(2)?.trim() ?? workingLine;
+      
+      // Extract leading modifiers from the name portion
+      // "softened butter" -> name: "butter", prep: "softened"
+      final nameLeadingModifierMatch = RegExp(
+        r'^(chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|washed|cleaned|fresh|dried|frozen|thawed|finely|coarsely|thinly|roughly|salted|unsalted|packed)\s+',
+        caseSensitive: false,
+      ).firstMatch(name);
+      if (nameLeadingModifierMatch != null) {
+        final modifier = nameLeadingModifierMatch.group(1)?.trim();
+        name = name.substring(nameLeadingModifierMatch.end).trim();
+        if (modifier != null) {
+          preparation = preparation != null ? '$modifier; $preparation' : modifier;
+        }
+      }
+      
+      return ParsedIngredient(
+        original: original,
+        name: TextNormalizer.cleanName(name),
+        amount: null,  // Amount is missing - will need to be filled in by user
+        unit: unit,
+        preparation: preparation,
+        alternative: alternative,
+        sectionName: sectionName,
+        looksLikeIngredient: true,
+      );
+    }
+    
     // Fallback - just use the line as name
     return ParsedIngredient(
       original: original,
