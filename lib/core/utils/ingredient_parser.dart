@@ -125,6 +125,43 @@ class IngredientParser {
       );
     }
     
+    // Check for "For the X:" or "For X:" section headers (with colon)
+    final forTheMatch = RegExp(
+      r'^For\s+(?:the\s+)?([^:]+):\s*$',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (forTheMatch != null) {
+      sectionName = forTheMatch.group(1)?.trim();
+      return ParsedIngredient(
+        original: original,
+        name: '',
+        sectionName: sectionName,
+        isSection: true,
+        looksLikeIngredient: false,
+      );
+    }
+    
+    // Check for ALL CAPS section headers (2-4 words, no amounts)
+    // e.g., "LEMON GLAZE", "CREAM CHEESE FROSTING", "FOR THE CRUST"
+    // Must be short (under 40 chars) and not start with a number
+    if (workingLine.length >= 4 && workingLine.length <= 40 &&
+        workingLine == workingLine.toUpperCase() &&
+        RegExp(r'^[A-Z][A-Z\s]+[A-Z]$').hasMatch(workingLine) &&
+        !RegExp(r'^\d').hasMatch(workingLine) &&
+        !RegExp(r'\b(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?)\b').hasMatch(workingLine)) {
+      // Convert to title case for section name
+      sectionName = workingLine.split(' ').map((w) => 
+        w.isNotEmpty ? w[0] + w.substring(1).toLowerCase() : w
+      ).join(' ');
+      return ParsedIngredient(
+        original: original,
+        name: '',
+        sectionName: sectionName,
+        isSection: true,
+        looksLikeIngredient: false,
+      );
+    }
+    
     // Extract leading section markers that have content after them
     final inlineSectionMatch = RegExp(
       r'^\[([^\]]+)\]\s+|^\((?:For\s+(?:the\s+)?)?([^)]+)\)\s+',

@@ -798,6 +798,9 @@ class OcrRecipeImporter {
     bool foundIngredientHeader = false;
     bool foundDirectionHeader = false;
     
+    // Track current ingredient section (e.g., "For the Glaze", "LEMON GLAZE")
+    String? currentSection;
+    
     // Track metric values for two-column cookbook layouts
     // These will be paired with ingredients by position after parsing
     final metricValues = <String>[];
@@ -1292,16 +1295,41 @@ class OcrRecipeImporter {
       } else if (hasIngredientPattern && !isLikelyDirection) {
         // Matched ingredient pattern (with or without unit) AND doesn't look like a direction
         final parsed = _parseIngredientLine(line);
+        
+        // Check if this is a section header
+        if (parsed.isSection && parsed.sectionName != null) {
+          currentSection = parsed.sectionName;
+          // Add section header to rawIngredients for display in review
+          rawIngredients.add(parsed);
+          inIngredients = true;
+          inDirections = false;
+          continue;
+        }
+        
         // Skip garbage ingredients that are just metric column values
         // These have no real name (name is empty, just a unit, or just numbers)
         if (_isValidIngredient(parsed)) {
-          rawIngredients.add(parsed);
+          // Assign current section to this ingredient
+          final ingredientWithSection = RawIngredientData(
+            original: parsed.original,
+            name: parsed.name,
+            amount: parsed.amount,
+            unit: parsed.unit,
+            preparation: parsed.preparation,
+            bakerPercent: parsed.bakerPercent,
+            alternative: parsed.alternative,
+            isSection: false,
+            sectionName: currentSection,
+            looksLikeIngredient: parsed.looksLikeIngredient,
+          );
+          rawIngredients.add(ingredientWithSection);
           ingredients.add(Ingredient.create(
             name: parsed.name,
             amount: parsed.amount,
             unit: parsed.unit,
             preparation: parsed.preparation,
             alternative: parsed.alternative,
+            section: currentSection,
           ));
         }
         inIngredients = true;
