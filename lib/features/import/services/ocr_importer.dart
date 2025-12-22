@@ -623,12 +623,14 @@ class OcrRecipeImporter {
            RegExp(r'^[A-Z]').hasMatch(line)); // Starts with capital
       
       // Check if this is a prose/intro line (contains complete sentences or descriptive text)
-      final isProseIntro = line.length > 30 && line.contains(' ') &&
+      final isProseIntro = line.length > 20 && line.contains(' ') &&
           !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
           // Contains prose words or sentence patterns
-          (RegExp(r'\b(this|you|can|the|is|are|an|excellent|way|will|your|or)\b', caseSensitive: false).hasMatch(lowerLine) ||
+          (RegExp(r'\b(this|you|can|the|is|are|an|excellent|way|will|your|or|delicious|authentic|original|recipe|dish|make|it|fact|want|eat|every|last|crumb|also|so|in|cheese)\b', caseSensitive: false).hasMatch(lowerLine) ||
            line.contains('.') || // Contains periods (sentences)
-           line.contains(','));  // Contains commas (complex text)
+           line.contains(',')) && // Contains commas (complex text)
+          // NOT a line that looks like directions or ingredients
+          !RegExp(r'^(preheat|in a|place|pour|bake|cook|heat|let|transfer|cut|slice|mix|stir|add|combine|ingredients?|directions?)', caseSensitive: false).hasMatch(lowerLine);
       
       // Skip "Makes X", "Serves X" lines
       if (servesPatterns.any((p) => p.hasMatch(line))) {
@@ -1083,13 +1085,13 @@ class OcrRecipeImporter {
       
       // Check if line STARTS with an action verb (strong direction indicator)
       final startsWithAction = RegExp(
-        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake)',
+        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|slice|dice|chop|mince|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake|flatten|dredge|sauté|saute|fry|grill|roast|broil|steam|simmer|boil|layer|dot|lay)',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       
       // Check if line contains multiple cooking action words (likely a direction)
       final actionVerbCount = RegExp(
-        r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|spread|frost|store|remove|serve|bring|minutes?|degrees?|°F|°C|oven|rack|bowl|until|batter)\b',
+        r'\b(preheat|mix|stir|add|combine|bake|cook|heat|pour|whisk|fold|let|transfer|cut|slice|dice|chop|spread|frost|store|remove|serve|bring|minutes?|degrees?|°F|°C|oven|rack|bowl|until|batter|sauté|saute|fry|grill|roast|simmer|boil|steam|dredge|flatten|dip|layer|thickness)\b',
         caseSensitive: false,
       ).allMatches(lowerLine).length;
       
@@ -1299,7 +1301,7 @@ class OcrRecipeImporter {
         // Include short sentences or sentences with action verbs
         // Short direct instructions like "Lift instead of stir" should be included
         final hasAction = RegExp(
-          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze|instead)\b',
+          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze|instead|slice|dice|chop|cut|sauté|saute|fry|grill|roast|simmer|boil|steam|dredge|flatten|dip|layer|dot|lay|place|spread|remove|transfer)\b',
           caseSensitive: false,
         ).hasMatch(lowerSentence);
         
