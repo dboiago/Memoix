@@ -435,16 +435,16 @@ class OcrRecipeImporter {
     ).hasMatch(name);
     
     if (name == null || titleLooksLikeIngredient) {
-      // Look for ALL CAPS line that could be the title (1+ words, no amounts)
+      // Look for ALL CAPS line that could be the title (1+ words, allows apostrophes)
       for (int i = 0; i < lines.length && i < 30; i++) {
         final line = lines[i].trim();
-        // ALL CAPS, 4-50 chars, no digits at start
-        // Single words like "HERMITS" or multi-word like "LEMON DROP COOKIES"
+        // ALL CAPS, 4-50 chars, allows apostrophes, no digits at start
+        // Single words like "HERMITS" or possessives like "SANTA'S WHISKERS"
         if (line.length >= 4 && line.length <= 50 &&
             line == line.toUpperCase() &&
-            RegExp(r'^[A-Z][A-Z]*(?:\s+[A-Z]+)*$').hasMatch(line) &&
+            RegExp(r"^[A-Z][A-Z']*(?:\s+[A-Z']+)*$").hasMatch(line) &&
             !RegExp(r'^\d').hasMatch(line) &&
-            !RegExp(r'^(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC)$', caseSensitive: false).hasMatch(line)) {
+            !RegExp(r'^(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|CHILL|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC)$', caseSensitive: false).hasMatch(line)) {
           name = TextNormalizer.toTitleCase(line.toLowerCase());
           nameConfidence = 0.8;
           titleLineIndex = i;
@@ -499,41 +499,60 @@ class OcrRecipeImporter {
     String? time;
     double timeConfidence = 0.0;
     
-    // Pattern 1: "HANDS ON X minutes BAKE Y minutes" (cookbook format)
-    final handsOnBakeMatch = RegExp(
-      r'hands\s*on\s*(\d+)\s*(?:minutes?|mins?).*?bake\s*(\d+)\s*(?:minutes?|mins?)',
-      caseSensitive: false,
-    ).firstMatch(cleanedText);
-    if (handsOnBakeMatch != null) {
-      final handsOn = int.tryParse(handsOnBakeMatch.group(1) ?? '') ?? 0;
-      final bake = int.tryParse(handsOnBakeMatch.group(2) ?? '') ?? 0;
-      final totalMinutes = handsOn + bake;
-      if (totalMinutes > 0) {
-        if (totalMinutes >= 60) {
-          final hours = totalMinutes ~/ 60;
-          final mins = totalMinutes % 60;
-          time = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
+    // Comprehensive time extraction - sum all time components
+    // Handles: "HANDS ON 30 minutes CHILL 2 hours BAKE 10 minutes"
+    int totalMinutes = 0;
+    
+    // Extract all time patterns: "HANDS ON X", "CHILL X", "BAKE X", "PREP X", "COOK X", "REST X"
+    final timePatterns = [
+      RegExp(r'hands\s*on\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'chill\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'bake\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'cook\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'prep\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'rest\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'marinate\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+      RegExp(r'refrigerate\s*(\d+)\s*(hours?|hrs?|h\b|minutes?|mins?|m\b)', caseSensitive: false),
+    ];
+    
+    for (final pattern in timePatterns) {
+      final match = pattern.firstMatch(cleanedText);
+      if (match != null) {
+        final value = int.tryParse(match.group(1) ?? '') ?? 0;
+        final unit = (match.group(2) ?? '').toLowerCase();
+        if (unit.startsWith('h')) {
+          totalMinutes += value * 60;
         } else {
-          time = '$totalMinutes min';
+          totalMinutes += value;
         }
-        timeConfidence = 0.85;
       }
     }
     
-    // Pattern 2: "Prep X min" + "Cook Y min" or similar
+    if (totalMinutes > 0) {
+      if (totalMinutes >= 60) {
+        final hours = totalMinutes ~/ 60;
+        final mins = totalMinutes % 60;
+        time = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
+      } else {
+        time = '$totalMinutes min';
+      }
+      timeConfidence = 0.85;
+    }
+    
+    // Fallback: "Prep X min" + "Cook Y min" pattern
     if (time == null) {
-      int totalMinutes = 0;
+      int fallbackMinutes = 0;
       final prepMatch = RegExp(r'prep(?:aration)?[:\s]*(\d+)\s*(?:minutes?|mins?|m\b)', caseSensitive: false).firstMatch(cleanedText);
       final cookMatch = RegExp(r'cook(?:ing)?[:\s]*(\d+)\s*(?:minutes?|mins?|m\b)', caseSensitive: false).firstMatch(cleanedText);
-      if (prepMatch != null) totalMinutes += int.tryParse(prepMatch.group(1) ?? '') ?? 0;
-      if (cookMatch != null) totalMinutes += int.tryParse(cookMatch.group(1) ?? '') ?? 0;
-      if (totalMinutes > 0) {
-        if (totalMinutes >= 60) {
-          final hours = totalMinutes ~/ 60;
-          final mins = totalMinutes % 60;
+      if (prepMatch != null) fallbackMinutes += int.tryParse(prepMatch.group(1) ?? '') ?? 0;
+      if (cookMatch != null) fallbackMinutes += int.tryParse(cookMatch.group(1) ?? '') ?? 0;
+      if (fallbackMinutes > 0) {
+        if (fallbackMinutes >= 60) {
+          final hours = fallbackMinutes ~/ 60;
+          final mins = fallbackMinutes % 60;
           time = mins > 0 ? '${hours}h ${mins}m' : '${hours}h';
         } else {
-          time = '$totalMinutes min';
+          time = '$fallbackMinutes min';
         }
         timeConfidence = 0.75;
       }
@@ -2068,6 +2087,42 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'(\d)(cup|cups|teaspoon|teaspoons|tsp|tablespoon|tablespoons|tbsp|oz|lb|lbs|pound|pounds|ounce|ounces)\b', caseSensitive: false),
       (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    
+    // Fix "J0" being read instead of "10" (OCR reads 1 as J)
+    // "J0 minutes" -> "10 minutes", "J0 cookies" -> "10 cookies"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\bJ0\b'),
+      (m) => '10',
+    );
+    
+    // Fix "2/2" being read instead of "2½" (OCR reads ½ as /2)
+    // "2/2 cups" -> "2½ cups"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d)/2\s+(cups?|tbsps?|tsps?|oz|lbs?)', caseSensitive: false),
+      (m) => '${m.group(1)}½ ${m.group(2)}',
+    );
+    
+    // Fix "V tsp" or "V cup" being read instead of "½" (OCR reads ½ as V)
+    // "V tsp" -> "½ tsp", "or V tsp" -> "or ½ tsp"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\s)V\s+(tsp|teaspoon|cup|tbsp|tablespoon|oz)', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}½ ${m.group(2)}',
+    );
+    
+    // Fix "%" being read instead of fraction (OCR misreads ¼ or ⅛ as %)
+    // "% cup" -> "¼ cup", "% tsp" -> "¼ tsp"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\s)%\s+(cups?|tbsps?|tsps?|teaspoons?|tablespoons?|oz)', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}¼ ${m.group(2)}',
+    );
+    
+    // Fix "4 cup" at start of line being read instead of "¾ cup" (OCR reads ¾ as 4)
+    // Only apply when 4 is followed directly by cup/cups with no other digits nearby
+    // "4 cup sweetened" -> "¾ cup sweetened"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)4\s+cups?\s+([a-zA-Z])', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}¾ cup ${m.group(2)}',
     );
     
     // Fix fraction directly attached to word: "½corn" -> "½ corn", "¼cup" -> "¼ cup"
