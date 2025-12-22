@@ -199,8 +199,23 @@ class IngredientParser {
     
     // Remove footnote markers like [1], *, โ€ 
     workingLine = workingLine.replaceAll(RegExp(r'^[\*โ€ ]+|[\*โ€ ]+$|\[\d+\]'), '').trim();
-    
-    // Convert word numbers to digits
+        // Extract leading modifiers (before the ingredient name)
+    // "1/2 cup chopped green onion" -> after parsing, name = "chopped green onion"
+    // This pattern extracts "chopped" as preparation
+    String? leadingModifier;
+    final leadingModifierMatch = RegExp(
+      r'^(chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|washed|cleaned|fresh|dried|frozen|thawed)\s+',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (leadingModifierMatch != null) {
+      leadingModifier = leadingModifierMatch.group(1)?.trim();
+      workingLine = workingLine.substring(leadingModifierMatch.end).trim();
+      // Add leading modifier to preparation
+      if (leadingModifier != null) {
+        preparation = preparation != null ? '$leadingModifier; $preparation' : leadingModifier;
+      }
+    }
+        // Convert word numbers to digits
     final wordNumberMatch = RegExp(
       r'^(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|a|an|half|quarter)\b\s*',
       caseSensitive: false,

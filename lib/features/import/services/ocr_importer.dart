@@ -562,6 +562,12 @@ class OcrRecipeImporter {
         'sautéed', 'sauteed', 'steamed', 'braised', 'glazed'];
     final sideCount = sideKeywords.where((k) => allText.contains(k)).length;
     
+    // Salad indicators
+    final saladKeywords = ['salad', 'insalata', 'salade', 'ensalada', 'lettuce', 
+        'mixed greens', 'arugula', 'spinach salad', 'caesar', 'vinaigrette',
+        'dressing', 'toss gently', 'bed of lettuce', 'salad greens'];
+    final saladCount = saladKeywords.where((k) => allText.contains(k)).length;
+    
     // Vegetable-centric dishes (no meat protein) are likely sides
     final vegetableKeywords = ['fennel', 'zucchini', 'eggplant', 'asparagus', 'broccoli',
         'cauliflower', 'brussels sprouts', 'green beans', 'spinach', 'kale', 'chard',
@@ -585,6 +591,10 @@ class OcrRecipeImporter {
       // This prevents false positives when wine/spirits are cooking ingredients
       course = 'Drinks';
       courseConfidence = 0.6 + (drinkCount * 0.05).clamp(0.0, 0.2);
+    } else if (saladCount >= 2) {
+      // Salad detection - multiple salad keywords
+      course = 'Salads';
+      courseConfidence = 0.6 + (saladCount * 0.05).clamp(0.0, 0.2);
     } else if (appCount >= 1 && foodCount < 3) {
       // Only classify as Apps if there aren't many main dish indicators
       course = 'Apps';
@@ -1746,6 +1756,15 @@ class OcrRecipeImporter {
   String _fixOcrArtifacts(String text) {
     var fixed = text;
     
+    // Fix merged count + size for canned goods: "119 oz. tin" -> "1 19 oz. tin"
+    // OCR often merges the count (1) with the size (19 oz) for cans/tins
+    // Pattern: 3-digit number followed by oz/ml and then tin/can/jar
+    // Common sizes: 14oz, 15oz, 19oz, 28oz - so 114, 115, 119, 128 etc are likely merged
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b(1)(14|15|19|28|29)\s*(oz\.?|ml\.?)\s*(tin|can|jar)\b', caseSensitive: false),
+      (m) => '${m.group(1)} ${m.group(2)} ${m.group(3)} ${m.group(4)}',
+    );
+    
     // Normalize Unicode fraction characters to standard forms
     // OCR may produce various Unicode representations that look the same but are different
     // U+00BD (½) is the standard, but OCR might produce other variants
@@ -1884,9 +1903,17 @@ class OcrRecipeImporter {
     
     // Fix "0z" or "0z." being read instead of "oz" (OCR reads 'o' as '0')
     // "4 0z. butter" -> "4 oz. butter"
+    // Also handles "70z" where OCR merged number with unit: "1 7oz" -> "1 7 oz" handled below
     fixed = fixed.replaceAllMapped(
       RegExp(r'\b0z\.?\b', caseSensitive: false),
       (m) => 'oz',
+    );
+    
+    // Fix digit followed by 0z (e.g., "70z" -> "7 oz", "40z" -> "4 oz")
+    // OCR reads "7oz" or "7 oz" as "70z" (o -> 0)
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d)0z\.?', caseSensitive: false),
+      (m) => '${m.group(1)} oz',
     );
     
     // Fix "Tbsps." or "tbsps." -> normalize periods in unit abbreviations
