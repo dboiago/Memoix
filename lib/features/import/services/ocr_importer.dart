@@ -408,6 +408,11 @@ class OcrRecipeImporter {
         continue;
       }
       
+      // Skip time-related lines (e.g., "HANDS ON 30 minutes", "BAKE 10 minutes")
+      if (RegExp(r'\b(hands\s*on|bake|chill|cook|prep|rest|marinate|refrigerate)\s+\d', caseSensitive: false).hasMatch(line)) {
+        continue;
+      }
+      
       // Short line (under 40 chars) without amounts could be title or title part
       if (line.length >= 2 && line.length < 40 && !RegExp(r'^\d+').hasMatch(line)) {
         titleParts.add(line);
@@ -713,6 +718,8 @@ class OcrRecipeImporter {
       // Check if this is a prose/intro line (contains complete sentences or descriptive text)
       final isProseIntro = line.length > 20 && line.contains(' ') &&
           !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
+          // NOT a line starting with a unit word (likely a separated ingredient)
+          !RegExp(r'^(cups?|tbsps?|tbs\.?|tsps?|oz\.?|lbs?\.?|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s', caseSensitive: false).hasMatch(line) &&
           // Contains prose words or sentence patterns
           (RegExp(r'\b(this|you|can|the|is|are|an|excellent|way|will|your|or|delicious|authentic|original|recipe|dish|make|it|fact|want|eat|every|last|crumb|also|so|in|cheese)\b', caseSensitive: false).hasMatch(lowerLine) ||
            line.contains('.') || // Contains periods (sentences)
@@ -747,6 +754,18 @@ class OcrRecipeImporter {
           !RegExp(r'^[\d½¼¾⅓⅔⅛]').hasMatch(line) &&
           !line.contains(' ') && // Single word
           introLines.isNotEmpty; // We already have intro text
+      
+      // Check if this line starts with a unit word (likely a separated ingredient)
+      // "cup salted butter, softened" -> this is an ingredient, not intro
+      final startsWithUnitWord = RegExp(
+        r'^(cups?|tbsps?|tbs\.?|tsps?|oz\.?|lbs?\.?|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s',
+        caseSensitive: false,
+      ).hasMatch(line);
+      
+      if (startsWithUnitWord) {
+        // This is a separated ingredient line - stop intro detection and include this line
+        break;
+      }
       
       if (isTrailingWord) {
         // Append to the last intro line instead of adding as new line
