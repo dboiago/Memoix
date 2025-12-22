@@ -556,9 +556,24 @@ class OcrRecipeImporter {
     final appKeywords = ['appetizer', 'starter', 'finger food', 'hors d\'oeuvre', 'antipasto', 'antipasti'];
     final appCount = appKeywords.where((k) => RegExp('\\b${RegExp.escape(k)}\\b', caseSensitive: false).hasMatch(allText)).length;
     
-    // Side indicators
-    final sideKeywords = ['side dish', 'accompaniment', 'serve alongside'];
+    // Side indicators - vegetables as main ingredient often indicate sides
+    final sideKeywords = ['side dish', 'accompaniment', 'serve alongside', 'serve with', 
+        'fried fennel', 'fried zucchini', 'fried eggplant', 'roasted vegetables',
+        'sautéed', 'sauteed', 'steamed', 'braised', 'glazed'];
     final sideCount = sideKeywords.where((k) => allText.contains(k)).length;
+    
+    // Vegetable-centric dishes (no meat protein) are likely sides
+    final vegetableKeywords = ['fennel', 'zucchini', 'eggplant', 'asparagus', 'broccoli',
+        'cauliflower', 'brussels sprouts', 'green beans', 'spinach', 'kale', 'chard',
+        'artichoke', 'mushroom', 'potato', 'sweet potato', 'carrot', 'beet', 'turnip',
+        'parsnip', 'squash', 'pumpkin', 'corn', 'peas', 'cabbage', 'leek', 'onion'];
+    final vegetableCount = vegetableKeywords.where((k) => allText.contains(k)).length;
+    
+    // Protein keywords that indicate this is likely a main, not a side
+    final proteinKeywords = ['chicken', 'beef', 'pork', 'lamb', 'veal', 'fish', 'salmon',
+        'shrimp', 'lobster', 'crab', 'scallop', 'duck', 'turkey', 'steak', 'chop',
+        'roast', 'breast', 'thigh', 'leg', 'loin', 'tenderloin', 'rib'];
+    final proteinCount = proteinKeywords.where((k) => allText.contains(k)).length;
     
     // Determine course based on keyword density
     // Food indicators override drink/app detection when there's clear main dish content
@@ -575,6 +590,11 @@ class OcrRecipeImporter {
       course = 'Apps';
       courseConfidence = 0.5;
     } else if (sideCount >= 1 && foodCount < 3) {
+      course = 'Sides';
+      courseConfidence = 0.5;
+    } else if (vegetableCount >= 1 && proteinCount == 0 && foodCount < 3) {
+      // Vegetable-centric dish with no protein = likely a side dish
+      // e.g., "Fried Fennel", "Roasted Asparagus"
       course = 'Sides';
       courseConfidence = 0.5;
     } else if (foodCount >= 2) {
@@ -1085,7 +1105,7 @@ class OcrRecipeImporter {
       
       // Check if line STARTS with an action verb (strong direction indicator)
       final startsWithAction = RegExp(
-        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|slice|dice|chop|mince|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake|flatten|dredge|sauté|saute|fry|grill|roast|broil|steam|simmer|boil|layer|dot|lay|season|toss|coat|dust|brush|drizzle|beat|fold|knead|roll|shape|form)',
+        r'^(preheat|in a|line|place|pour|bake|cook|heat|let|transfer|cut|slice|dice|chop|mince|spread|frost|store|remove|serve|bring|add the|add|stir|whisk|combine|mix|garnish|shake|muddle|strain|fill|chill|lift|top with|float|rim|squeeze|express|dry shake|flatten|dredge|sauté|saute|fry|grill|roast|broil|steam|simmer|boil|layer|dot|lay|season|toss|coat|dust|brush|drizzle|beat|fold|knead|roll|shape|form|trim|melt|peel|core|seed|pit|hull|wash|rinse|drain|pat|dry|marinate|soak|bloom|proof|rise|rest|cool|warm|reserve|set aside|arrange|sprinkle|scatter|cover|wrap|refrigerate|freeze)',
         caseSensitive: false,
       ).hasMatch(lowerLine);
       
