@@ -1169,14 +1169,18 @@ class OcrRecipeImporter {
       } else if (hasIngredientPattern && !isLikelyDirection) {
         // Matched ingredient pattern (with or without unit) AND doesn't look like a direction
         final parsed = _parseIngredientLine(line);
-        rawIngredients.add(parsed);
-        ingredients.add(Ingredient.create(
-          name: parsed.name,
-          amount: parsed.amount,
-          unit: parsed.unit,
-          preparation: parsed.preparation,
-          alternative: parsed.alternative,
-        ));
+        // Skip garbage ingredients that are just metric column values
+        // These have no real name (name is empty, just a unit, or just numbers)
+        if (_isValidIngredient(parsed)) {
+          rawIngredients.add(parsed);
+          ingredients.add(Ingredient.create(
+            name: parsed.name,
+            amount: parsed.amount,
+            unit: parsed.unit,
+            preparation: parsed.preparation,
+            alternative: parsed.alternative,
+          ));
+        }
         inIngredients = true;
         inDirections = false;
       } else if (inDirections || isLikelyDirection) {
@@ -1206,14 +1210,17 @@ class OcrRecipeImporter {
       } else if (inIngredients || hasIngredientPattern) {
         // In ingredients section or has ingredient pattern (with or without unit)
         final parsed = _parseIngredientLine(line);
-        rawIngredients.add(parsed);
-        ingredients.add(Ingredient.create(
-          name: parsed.name,
-          amount: parsed.amount,
-          unit: parsed.unit,
-          preparation: parsed.preparation,
-          alternative: parsed.alternative,
-        ));
+        // Skip garbage ingredients that are just metric column values
+        if (_isValidIngredient(parsed)) {
+          rawIngredients.add(parsed);
+          ingredients.add(Ingredient.create(
+            name: parsed.name,
+            amount: parsed.amount,
+            unit: parsed.unit,
+            preparation: parsed.preparation,
+            alternative: parsed.alternative,
+          ));
+        }
       } else {
         // Ambiguous line - use heuristics
         // Short lines with food words are probably ingredients
@@ -1227,23 +1234,26 @@ class OcrRecipeImporter {
         if (startsWithFraction && !hasActionVerb && line.length < 60) {
           // Line starts with a fraction/number and has no action verb - treat as ingredient
           final parsed = _parseIngredientLine(line);
-          rawIngredients.add(parsed);
-          ingredients.add(Ingredient.create(
-            name: parsed.name,
-            amount: parsed.amount,
-            unit: parsed.unit,
-            preparation: parsed.preparation,
-            alternative: parsed.alternative,
-          ));
-          inIngredients = true;
+          // Skip garbage ingredients that are just metric column values
+          if (_isValidIngredient(parsed)) {
+            rawIngredients.add(parsed);
+            ingredients.add(Ingredient.create(
+              name: parsed.name,
+              amount: parsed.amount,
+              unit: parsed.unit,
+              preparation: parsed.preparation,
+              alternative: parsed.alternative,
+            ));
+            inIngredients = true;
+          }
         } else if (hasActionVerb) {
           // Line with action verb - treat as direction
           paragraphDirections.add(line);
         } else if (line.length < 60) {
           // Assume short lines without action verbs are ingredients
           final parsed = _parseIngredientLine(line);
-          // Only add if it has an amount or looks like an ingredient
-          if (parsed.amount != null || parsed.looksLikeIngredient) {
+          // Only add if it has an amount or looks like an ingredient AND is valid
+          if ((parsed.amount != null || parsed.looksLikeIngredient) && _isValidIngredient(parsed)) {
             rawIngredients.add(RawIngredientData(
               original: line,
               name: parsed.name,
@@ -1549,6 +1559,42 @@ class OcrRecipeImporter {
       sectionName: parsed.sectionName,
       looksLikeIngredient: parsed.looksLikeIngredient,
     );
+  }
+  
+  /// Check if a parsed ingredient is valid (not just garbage from metric column)
+  /// 
+  /// Filters out lines like "4 Tbs.", "1Tbs.", "120 ml", "65 g" that are just
+  /// metric column values OCR'd separately from the main ingredient.
+  bool _isValidIngredient(RawIngredientData parsed) {
+    final name = parsed.name.trim().toLowerCase();
+    
+    // Empty name is invalid
+    if (name.isEmpty) return false;
+    
+    // Name is just a unit abbreviation (with optional period/plural)
+    // "Tbs", "Tbs.", "tsp", "oz", "ml", "g", "kg", "lb", "C", etc.
+    final isJustUnit = RegExp(
+      r'^(tbs\.?|tbsp\.?|tsp\.?|oz\.?|ml\.?|g\.?|kg\.?|lb\.?|lbs\.?|c\.?|l\.?|cl\.?|cups?\.?|teaspoons?\.?|tablespoons?\.?|ounces?\.?|pounds?\.?|grams?\.?|liters?\.?|litres?\.?|milliliters?\.?|millilitres?\.?)$',
+      caseSensitive: false,
+    ).hasMatch(name);
+    if (isJustUnit) return false;
+    
+    // Name is just numbers (metric column count like "2", "1", "4")
+    if (RegExp(r'^\d+$').hasMatch(name)) return false;
+    
+    // Name is just a number + unit that got parsed wrong
+    // e.g., "4tbs" parsed as name "4tbs" with no amount
+    if (RegExp(r'^\d+\s*(tbs|tbsp|tsp|oz|ml|g|kg|lb|c|l)\.?$', caseSensitive: false).hasMatch(name)) {
+      return false;
+    }
+    
+    // Very short name (1-2 chars) that's not a known short ingredient
+    // Single letters or digits are likely garbage
+    if (name.length <= 2 && !RegExp(r'^(ok|lo)$', caseSensitive: false).hasMatch(name)) {
+      return false;
+    }
+    
+    return true;
   }
   
   /// Clean ingredient name (remove trailing punctuation, normalize case)
