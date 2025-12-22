@@ -552,16 +552,16 @@ class OcrRecipeImporter {
         'vegetable', 'carrot', 'celery', 'tomato', 'pepper', 'zucchini'];
     final foodCount = foodKeywords.where((k) => allText.contains(k)).length;
     
-    // Appetizer indicators
-    final appKeywords = ['appetizer', 'starter', 'dip', 'finger food', 'hors d\'oeuvre'];
-    final appCount = appKeywords.where((k) => allText.contains(k)).length;
+    // Appetizer indicators - require full word matching to avoid false positives
+    final appKeywords = ['appetizer', 'starter', 'finger food', 'hors d\'oeuvre', 'antipasto', 'antipasti'];
+    final appCount = appKeywords.where((k) => RegExp('\\b${RegExp.escape(k)}\\b', caseSensitive: false).hasMatch(allText)).length;
     
     // Side indicators
     final sideKeywords = ['side dish', 'accompaniment', 'serve alongside'];
     final sideCount = sideKeywords.where((k) => allText.contains(k)).length;
     
     // Determine course based on keyword density
-    // Food indicators override drink detection (wine/spirits used as cooking ingredients)
+    // Food indicators override drink/app detection when there's clear main dish content
     if (dessertCount >= 2) {
       course = 'Desserts';
       courseConfidence = 0.6 + (dessertCount * 0.05).clamp(0.0, 0.2);
@@ -570,12 +570,17 @@ class OcrRecipeImporter {
       // This prevents false positives when wine/spirits are cooking ingredients
       course = 'Drinks';
       courseConfidence = 0.6 + (drinkCount * 0.05).clamp(0.0, 0.2);
-    } else if (appCount >= 1) {
+    } else if (appCount >= 1 && foodCount < 3) {
+      // Only classify as Apps if there aren't many main dish indicators
       course = 'Apps';
       courseConfidence = 0.5;
-    } else if (sideCount >= 1) {
+    } else if (sideCount >= 1 && foodCount < 3) {
       course = 'Sides';
       courseConfidence = 0.5;
+    } else if (foodCount >= 2) {
+      // If we have substantial food keywords, default to Mains
+      course = 'Mains';
+      courseConfidence = 0.5 + (foodCount * 0.02).clamp(0.0, 0.2);
     }
 
     // ===== PHASE 4: Identify intro paragraphs as notes =====
@@ -1756,6 +1761,32 @@ class OcrRecipeImporter {
     fixed = fixed.replaceAllMapped(
       RegExp(r'\b2\s*/\s*3\b'),
       (m) => '⅔',
+    );
+    
+    // Fix "0z" or "0z." being read instead of "oz" (OCR reads 'o' as '0')
+    // "4 0z. butter" -> "4 oz. butter"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b0z\.?\b', caseSensitive: false),
+      (m) => 'oz',
+    );
+    
+    // Fix "Tbsps." or "tbsps." -> normalize periods in unit abbreviations
+    // OCR sometimes adds extra periods or 's' to units
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Tt]bsps?\.', caseSensitive: false),
+      (m) => 'Tbsp',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Tt]sps?\.', caseSensitive: false),
+      (m) => 'tsp',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Oo]z\.', caseSensitive: false),
+      (m) => 'oz',
+    );
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'\b[Ll]bs?\.', caseSensitive: false),
+      (m) => 'lb',
     );
     
     // Fix number+unit with no space: "7CUP" -> "7 CUP", "1CUP" -> "1 CUP"

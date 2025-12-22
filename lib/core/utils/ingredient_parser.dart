@@ -161,8 +161,9 @@ class IngredientParser {
     
     // Extract trailing modifiers like ", divided", ", softened"
     // Also handles butchery terms: de-boned, skinned, etc.
+    // Note: Compound modifiers must come BEFORE simple ones in alternation
     final modifierMatch = RegExp(
-      r',\s*(divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned|to taste|as needed|de-?boned|skinned|skin-on|bone-in|boneless|skinless|de-?boned and skinned|skinned and de-?boned)\s*$',
+      r',\s*(de-?boned and skinned|skinned and de-?boned|divided|softened|melted|chilled|room temperature|at room temp|cold|warm|hot|cooled|beaten|lightly beaten|well beaten|sifted|packed|firmly packed|loosely packed|drained|rinsed|thawed|frozen|fresh|dried|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|washed|cleaned|to taste|as needed|de-?boned|skinned|skin-on|bone-in|boneless|skinless)\s*$',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (modifierMatch != null) {
@@ -176,8 +177,9 @@ class IngredientParser {
     // Also extract trailing modifiers WITHOUT comma (OCR often misses commas)
     // "butter softened" -> "butter", prep: "softened"
     // Also handles butchery terms: de-boned, skinned, etc.
+    // Note: Compound modifiers must come BEFORE simple ones in alternation
     final noCommaModifierMatch = RegExp(
-      r'\s+(softened|melted|chilled|beaten|sifted|drained|rinsed|thawed|frozen|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|de-?boned|skinned|boneless|skinless|de-?boned and skinned|skinned and de-?boned)\s*$',
+      r'\s+(de-?boned and skinned|skinned and de-?boned|softened|melted|chilled|beaten|sifted|drained|rinsed|thawed|frozen|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|cubed|quartered|halved|peeled|cored|seeded|pitted|trimmed|de-?boned|skinned|boneless|skinless)\s*$',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (noCommaModifierMatch != null) {
