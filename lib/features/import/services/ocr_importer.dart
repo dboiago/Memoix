@@ -751,7 +751,7 @@ class OcrRecipeImporter {
       // - Contain food-related words or "or", "page", parentheses
       // BUT NOT if the line is a garnish line or looks like a direction
       final looksLikeGarnish = RegExp(r'(?:to\s+)?garnish[:\s]', caseSensitive: false).hasMatch(lowerLine);
-      final looksLikeDirection = RegExp(r'\b(preheat|bake|cook|roast|grill|broil|fry|saute|simmer|boil|steam|mix|combine|stir|whisk|beat|fold|pour|spread|let|place|remove|set|turn|cover|refrigerate|chill|freeze|cool|rest|allow|serve|degrees?|°F|°C|minutes?|mins?|oven)\b', caseSensitive: false).hasMatch(lowerLine);
+      final looksLikeDirection = RegExp(r'\b(preheat|bake|cook|roast|grill|broil|fry|saute|sauté|simmer|boil|steam|mix|combine|stir|whisk|beat|fold|pour|spread|let|place|remove|set|turn|cover|refrigerate|chill|freeze|cool|rest|allow|serve|slice|dice|chop|mince|cut|trim|peel|core|pit|seed|hull|julienne|brunoise|until|into|degrees?|°F|°C|minutes?|mins?|oven|thickness)\b', caseSensitive: false).hasMatch(lowerLine);
       final isLikelyContinuation = pendingIngredient != null &&
           !looksLikeGarnish &&
           !looksLikeDirection &&
@@ -1580,11 +1580,13 @@ class OcrRecipeImporter {
     // Pattern 1: Trailing standalone number (same as leading amount)
     // "4 breasts of chicken, de-boned and skinned 4" -> remove trailing "4"
     // This is redundant info, so discard it (no note)
+    // Also handle OCR reading "4" as "a" or "A" at end of line
     final leadingAmountMatch = RegExp(r'^(\d+)').firstMatch(line);
     if (leadingAmountMatch != null) {
-      final leadingAmount = leadingAmountMatch.group(1);
-      // Check if line ends with the same number (with optional space before)
-      final trailingMatch = RegExp(r'\s+$leadingAmount\s*$'.replaceAll('\$leadingAmount', leadingAmount!)).firstMatch(line);
+      final leadingAmount = leadingAmountMatch.group(1)!;
+      // Check if line ends with the same number OR a stray letter (OCR artifact)
+      final trailingPattern = RegExp('\\s+($leadingAmount|[aA])\$');
+      final trailingMatch = trailingPattern.firstMatch(line);
       if (trailingMatch != null) {
         return (cleanedLine: line.substring(0, trailingMatch.start).trim(), metricNote: null);
       }

@@ -276,7 +276,7 @@ class IngredientParser {
       
       // Check if this looks like food (not a direction)
       final looksLikeFood = !RegExp(
-        r'\b(preheat|bake|cook|stir|mix|add|pour|let|until|minutes?|degrees?|ยฐ)\b',
+        r'\b(preheat|bake|cook|stir|mix|add|pour|let|until|minutes?|degrees?|°|slice|dice|chop|cut|into|thickness)\b',
         caseSensitive: false,
       ).hasMatch(name);
       
