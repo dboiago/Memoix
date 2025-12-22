@@ -1356,7 +1356,7 @@ class OcrRecipeImporter {
         // Include short sentences or sentences with action verbs
         // Short direct instructions like "Lift instead of stir" should be included
         final hasAction = RegExp(
-          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze|instead|slice|dice|chop|cut|sauté|saute|fry|grill|roast|simmer|boil|steam|dredge|flatten|dip|layer|dot|lay|place|spread|remove|transfer)\b',
+          r'\b(combine|stir|mix|add|pour|bake|cook|heat|garnish|serve|lift|shake|muddle|strain|fill|chill|refrigerate|freeze|instead|slice|dice|chop|cut|sauté|saute|fry|grill|roast|simmer|boil|steam|dredge|flatten|dip|layer|dot|lay|place|spread|remove|transfer|toss|arrange|drain|whisk|fold|beat|knead|roll|shape|form|brush|drizzle|sprinkle|scatter|cover|wrap|season|coat|dust|top|set|let|allow|cool|warm|rest|marinate)\b',
           caseSensitive: false,
         ).hasMatch(lowerSentence);
         
