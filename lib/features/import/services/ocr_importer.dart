@@ -386,6 +386,12 @@ class OcrRecipeImporter {
         break; // Hit ingredients, stop looking for title
       }
       
+      // Skip lines that start with a unit word (likely separated ingredient)
+      // "cup salted butter, softened" should not be captured as title
+      if (RegExp(r'^(cups?|tbsps?|tbs\.?|tsps?|oz\.?|lbs?\.?|pounds?|ounces?|teaspoons?|tablespoons?)\s', caseSensitive: false).hasMatch(line)) {
+        break; // Hit separated ingredient, stop looking for title
+      }
+      
       // Skip long paragraphs (likely intro text)
       if (line.length > 80) {
         if (titleParts.isNotEmpty) break; // Already have title parts
@@ -449,7 +455,7 @@ class OcrRecipeImporter {
             line == line.toUpperCase() &&
             RegExp(r"^[A-Z][A-Z']*(?:\s+[A-Z']+)*$").hasMatch(line) &&
             !RegExp(r'^\d').hasMatch(line) &&
-            !RegExp(r'^(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|CHILL|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC)$', caseSensitive: false).hasMatch(line)) {
+            !RegExp(r'^(HANDS\s*ON|BAKE|COOK|PREP|MAKES|SERVES|PER\s|CHILL|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC)', caseSensitive: false).hasMatch(line)) {
           name = TextNormalizer.toTitleCase(line.toLowerCase());
           nameConfidence = 0.8;
           titleLineIndex = i;
@@ -2144,6 +2150,36 @@ class OcrRecipeImporter {
       (m) => '${m.group(1)}¾ cup ${m.group(2)}',
     );
     
+    // Fix "A cup" or "a cup" at start of line being misread instead of "¾ cup"
+    // OCR sometimes reads ¾ as uppercase/lowercase A
+    // "A cup packed brown sugar" -> "¾ cup packed brown sugar"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)[Aa]\s+cups?\s+', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}¾ cup ',
+    );
+    
+    // Fix "a tsp" or "A tsp" being misread instead of "¼ tsp"
+    // "a tsp. baking soda" -> "¼ tsp baking soda"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)[Aa]\s+(tsp\.?|teaspoon)\s+', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}¼ tsp ',
+    );
+    
+    // Fix "2 2 cups" being misread instead of "2½ cups" (OCR splits ½ as space+2)
+    // "2 2 cups" -> "2½ cups"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(\d)\s+2\s+(cups?|tbsps?|tsps?|oz)', caseSensitive: false),
+      (m) => '${m.group(1)}½ ${m.group(2)}',
+    );
+    
+    // Fix "12 cups" being misread instead of "1½ cups" when followed by flour/sugar (common typo)
+    // Only apply in contexts where 12 cups is unlikely (baking ingredients)
+    // "12 cups all-purpose flour" -> "1½ cups all-purpose flour"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n)12\s+cups?\s+(all-purpose|flour|sugar|butter|milk)', caseSensitive: false, multiLine: true),
+      (m) => '${m.group(1)}1½ cups ${m.group(2)}',
+    );
+    
     // Fix fraction directly attached to word: "½corn" -> "½ corn", "¼cup" -> "¼ cup"
     // This ensures fractions always have space before the ingredient/unit name
     fixed = fixed.replaceAllMapped(
@@ -2246,6 +2282,14 @@ class OcrRecipeImporter {
     // "tbspunsalted" -> "tbsp unsalted", "tspvanilla" -> "tsp vanilla"
     fixed = fixed.replaceAllMapped(
       RegExp(r'(cups?|tbsps?|tsps?|teaspoons?|tablespoons?|oz|lbs?|pounds?|ounces?)((?!s\b)[a-z]{3,})', caseSensitive: false),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    
+    // Fix common merged ingredient word patterns from cookbook OCR:
+    // "packedbrown" -> "packed brown", "softenedbutter" -> "softened butter"
+    // "choppedpitted" -> "chopped pitted", "toastedalmonds" -> "toasted almonds"
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(packed|softened|melted|chopped|diced|minced|sliced|grated|shredded|toasted|roasted|crushed|ground|dried|fresh|frozen|canned|cooked|raw|unsalted|salted)(brown|white|butter|sugar|cheese|onion|garlic|nuts|dates|raisins|almonds|pecans|walnuts|coconut|chocolate|cream|milk|flour)', caseSensitive: false),
       (m) => '${m.group(1)} ${m.group(2)}',
     );
     
