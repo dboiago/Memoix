@@ -199,23 +199,8 @@ class IngredientParser {
     
     // Remove footnote markers like [1], *, โ€ 
     workingLine = workingLine.replaceAll(RegExp(r'^[\*โ€ ]+|[\*โ€ ]+$|\[\d+\]'), '').trim();
-        // Extract leading modifiers (before the ingredient name)
-    // "1/2 cup chopped green onion" -> after parsing, name = "chopped green onion"
-    // This pattern extracts "chopped" as preparation
-    String? leadingModifier;
-    final leadingModifierMatch = RegExp(
-      r'^(chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|washed|cleaned|fresh|dried|frozen|thawed)\s+',
-      caseSensitive: false,
-    ).firstMatch(workingLine);
-    if (leadingModifierMatch != null) {
-      leadingModifier = leadingModifierMatch.group(1)?.trim();
-      workingLine = workingLine.substring(leadingModifierMatch.end).trim();
-      // Add leading modifier to preparation
-      if (leadingModifier != null) {
-        preparation = preparation != null ? '$leadingModifier; $preparation' : leadingModifier;
-      }
-    }
-        // Convert word numbers to digits
+    
+    // Convert word numbers to digits
     final wordNumberMatch = RegExp(
       r'^(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|a|an|half|quarter)\b\s*',
       caseSensitive: false,
@@ -255,9 +240,25 @@ class IngredientParser {
     if (standardMatch != null) {
       final amount = standardMatch.group(1)?.trim();
       final unit = UnitNormalizer.normalize(standardMatch.group(2)?.trim());
+      var ingredientName = standardMatch.group(3)?.trim() ?? workingLine;
+      
+      // Extract leading modifiers from the name portion
+      // "chopped green onion" -> name: "green onion", prep: "chopped"
+      final nameLeadingModifierMatch = RegExp(
+        r'^(chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|washed|cleaned|fresh|dried|frozen|thawed|finely|coarsely|thinly|roughly)\s+',
+        caseSensitive: false,
+      ).firstMatch(ingredientName);
+      if (nameLeadingModifierMatch != null) {
+        final modifier = nameLeadingModifierMatch.group(1)?.trim();
+        ingredientName = ingredientName.substring(nameLeadingModifierMatch.end).trim();
+        if (modifier != null) {
+          preparation = preparation != null ? '$modifier; $preparation' : modifier;
+        }
+      }
+      
       return ParsedIngredient(
         original: original,
-        name: TextNormalizer.cleanName(standardMatch.group(3)?.trim() ?? workingLine),
+        name: TextNormalizer.cleanName(ingredientName),
         amount: amount,
         unit: pluralizeUnit(unit, amount),
         preparation: preparation,
@@ -287,6 +288,20 @@ class IngredientParser {
         unit = UnitNormalizer.normalize(unitAtStartMatch.group(1)?.trim());
         unit = pluralizeUnit(unit, amount);
         name = unitAtStartMatch.group(2)?.trim() ?? name;
+      }
+      
+      // Extract leading modifiers from the name portion
+      // "chopped green onion" -> name: "green onion", prep: "chopped"
+      final nameLeadingModifierMatch = RegExp(
+        r'^(chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|washed|cleaned|fresh|dried|frozen|thawed|finely|coarsely|thinly|roughly)\s+',
+        caseSensitive: false,
+      ).firstMatch(name);
+      if (nameLeadingModifierMatch != null) {
+        final modifier = nameLeadingModifierMatch.group(1)?.trim();
+        name = name.substring(nameLeadingModifierMatch.end).trim();
+        if (modifier != null) {
+          preparation = preparation != null ? '$modifier; $preparation' : modifier;
+        }
       }
       
       // Check if this looks like food (not a direction)
