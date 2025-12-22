@@ -957,6 +957,14 @@ class OcrRecipeImporter {
           RegExp(r'^[a-zA-Z][a-zA-Z\s\-]*$').hasMatch(nextTrimmed) &&
           nextTrimmed.length > 2 && nextTrimmed.length < 40;
       
+      // Check if next line starts with a unit (for cookbook layouts where amount is on separate line)
+      // "2" + "cup salted butter" -> "2 cup salted butter"
+      // "1" + "Tbsp. milk" -> "1 Tbsp. milk"
+      final nextStartsWithUnit = hasNextLine && RegExp(
+        r'^(cups?|tbsps?|tbs\.?|tsps?|oz\.?|lbs?\.?|pounds?|ounces?|teaspoons?|tablespoons?|c\.|t\.)\s+',
+        caseSensitive: false,
+      ).hasMatch(nextTrimmed);
+      
       if (isStandaloneFoodWord && nextIsStandaloneNumber) {
         // Pattern A: "lemons" + "2" -> "2 lemons"
         // Normalize L/l/I/i to 1
@@ -972,6 +980,12 @@ class OcrRecipeImporter {
       } else if (isStandaloneNumber && nextCouldBeIngredientName) {
         // Pattern C: "½" + "corn starch" -> "½ corn starch"
         // Normalize L/l/I/i to 1
+        final normalizedNum = line.replaceAll(RegExp(r'[LlIi]'), '1');
+        pairedLines.add('$normalizedNum $nextLine');
+        i += 2; // Skip both lines
+      } else if (isStandaloneNumber && nextStartsWithUnit) {
+        // Pattern D: "2" + "cup salted butter" -> "2 cup salted butter"
+        // Cookbook layouts where amount is on separate line from unit+ingredient
         final normalizedNum = line.replaceAll(RegExp(r'[LlIi]'), '1');
         pairedLines.add('$normalizedNum $nextLine');
         i += 2; // Skip both lines
