@@ -128,10 +128,10 @@ class RecipeImportResult {
     final fields = <String>[];
     // Use 0.7 threshold to match when fields are dragging down the score
     // (since overall < 0.7 triggers review)
-    if (nameConfidence < 0.7) fields.add('name');
-    if (ingredientsConfidence < 0.7) fields.add('ingredients');
-    if (directionsConfidence < 0.7) fields.add('directions');
-    if (courseConfidence < 0.7) fields.add('course');
+    if (nameConfidence < 0.7) fields.add('Name');
+    if (ingredientsConfidence < 0.7) fields.add('Ingredients');
+    if (directionsConfidence < 0.7) fields.add('Directions');
+    if (courseConfidence < 0.7) fields.add('Course');
     // Don't include optional fields: cuisine, serves, time
     return fields;
   }

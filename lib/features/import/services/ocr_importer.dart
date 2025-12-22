@@ -542,14 +542,14 @@ class OcrRecipeImporter {
     
     // Mains/food indicators - if these are present, it's likely NOT a drink
     // Used to override false positive drink detection when wine/spirits are cooking ingredients
+    // Food keywords that indicate MAIN dish content (proteins, substantial ingredients)
+    // IMPORTANT: Do NOT include cooking verbs (bake, roast, fry) - those don't indicate food content
+    // Do NOT include vegetables here - they are checked separately for Sides detection
     final foodKeywords = ['chicken', 'beef', 'pork', 'lamb', 'fish', 'salmon', 'shrimp',
-        'eggplant', 'pasta', 'rice', 'potato', 'potatoes', 'onion', 'garlic',
-        'bake', 'roast', 'grill', 'sauté', 'braise', 'simmer', 'fry', 'frying',
+        'pasta', 'rice',
         'breast', 'thigh', 'leg', 'loin', 'steak', 'fillet', 'filet',
-        'oven', 'preheat', 'baking dish', 'casserole', 'skillet', 'pan',
-        'serve with', 'serve over', 'serve alongside', 'main course', 'entrée',
-        'mozzarella', 'parmesan', 'cheddar', 'breadcrumb', 'flour', 'egg',
-        'vegetable', 'carrot', 'celery', 'tomato', 'pepper', 'zucchini'];
+        'main course', 'entrée',
+        'mozzarella', 'parmesan', 'cheddar', 'breadcrumb'];
     final foodCount = foodKeywords.where((k) => allText.contains(k)).length;
     
     // Appetizer indicators - require full word matching to avoid false positives
@@ -1144,8 +1144,9 @@ class OcrRecipeImporter {
       // Check if this looks like a direction continuation (not a standalone ingredient)
       // "with a lemon wedge" is part of "Garnish with a lemon wedge"
       // Also catch lines that continue a previous sentence (start lowercase, or start with common continuation patterns)
+      // Include "to X minutes" patterns which are clearly time fragments from mid-sentence splits
       final isDirectionContinuation = RegExp(
-        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s)\b',
+        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s|to\s+\d)',
         caseSensitive: false,
       ).hasMatch(lowerLine) ||
       // Line starts with lowercase letter (continuation of previous sentence)
@@ -1169,15 +1170,19 @@ class OcrRecipeImporter {
       if (isNumberedStep) {
         // Numbered step - definitely a direction
         // KEEP the number prefix for now - sorting happens in Phase 6.5
-        rawDirections.add(line);
-        directions.add(line);
+        // Clean any trailing metric garbage from OCR merge
+        final cleanedLine = _cleanDirectionLine(line);
+        rawDirections.add(cleanedLine);
+        directions.add(cleanedLine);
         inDirections = true;
         inIngredients = false;
       } else if (startsWithAction) {
         // Line STARTS with an action verb - definitely a direction
         // Add directly to rawDirections, not paragraphDirections
-        rawDirections.add(line);
-        directions.add(line);
+        // Clean any trailing metric garbage from OCR merge
+        final cleanedLine = _cleanDirectionLine(line);
+        rawDirections.add(cleanedLine);
+        directions.add(cleanedLine);
         inDirections = true;
         inIngredients = false;
       } else if (isLongProse || (isLikelyDirection && line.length > 15)) {
@@ -1645,6 +1650,19 @@ class OcrRecipeImporter {
   /// - Duplicate counts are discarded (redundant info)
   /// - Different metric units are preserved as notes (useful conversion info)
   ({String cleanedLine, String? metricNote}) _stripTrailingMetricColumn(String line) {
+    // Pattern 0: Mid-line metric garbage from two-column OCR merge
+    // "Remove the fennel to a 2Tbs." -> OCR merged direction with metric column
+    // "... into a 120 ml" or "to a 4 Tbsp" patterns
+    // Strip "to a X(unit)" where X is a number and unit is optional
+    final midLineMetricMatch = RegExp(
+      r'\s+to\s+a\s+\d+\s*(Tbs\.?|Tbsp\.?|tsp\.?|oz\.?|g|ml|kg|l)?\s*\.?\s*$',
+      caseSensitive: false,
+    ).firstMatch(line);
+    if (midLineMetricMatch != null) {
+      // Remove the mid-line metric garbage
+      return (cleanedLine: line.substring(0, midLineMetricMatch.start).trim(), metricNote: null);
+    }
+    
     // Pattern 1: Trailing standalone number (same as leading amount)
     // "4 breasts of chicken, de-boned and skinned 4" -> remove trailing "4"
     // This is redundant info, so discard it (no note)
@@ -1691,6 +1709,24 @@ class OcrRecipeImporter {
     }
     
     return (cleanedLine: line, metricNote: null);
+  }
+  
+  /// Clean direction lines by removing metric garbage from OCR two-column merges
+  /// 
+  /// Examples:
+  /// - "Remove the fennel to a 2Tbs." -> "Remove the fennel."
+  /// - "Trim the outer leaves to a 4 oz" -> "Trim the outer leaves."
+  String _cleanDirectionLine(String line) {
+    // Strip mid-line metric garbage: "to a X(unit)" patterns
+    final cleaned = RegExp(
+      r'\s+to\s+a\s+\d+\s*(Tbs\.?|Tbsp\.?|tsp\.?|oz\.?|g|ml|kg|l)?\s*\.?\s*$',
+      caseSensitive: false,
+    ).hasMatch(line)
+        ? line.replaceFirst(
+            RegExp(r'\s+to\s+a\s+\d+\s*(Tbs\.?|Tbsp\.?|tsp\.?|oz\.?|g|ml|kg|l)?\s*\.?\s*$', caseSensitive: false),
+            '.')
+        : line;
+    return cleaned.trim();
   }
   
   /// Fix common OCR artifacts and misreadings
@@ -1912,6 +1948,14 @@ class OcrRecipeImporter {
     // "l small eggplant" -> "1 small eggplant", "L large onion" -> "1 large onion"
     fixed = fixed.replaceAllMapped(
       RegExp(r'(^|\n|\s)[lL]\s+(small|medium|large|clove|head|bunch|sprig|stalk|can|package|pkg|slice|piece)\b', caseSensitive: false),
+      (m) => '${m.group(1)}1 ${m.group(2)}',
+    );
+    
+    // Fix lowercase 'l' or uppercase 'L' being read as '1' when followed by common ingredients
+    // "l onion" -> "1 onion", "l egg" -> "1 egg", "l lemon" -> "1 lemon"
+    // Be careful not to match legitimate words starting with 'l' (like "large")
+    fixed = fixed.replaceAllMapped(
+      RegExp(r'(^|\n|\s)[lL]\s+(onion|egg|lemon|lime|orange|apple|banana|potato|tomato|carrot|celery|garlic|pepper|cucumber|avocado|mango|pear|peach|plum|cherry|grape|strawberry|raspberry|blueberry|cranberry|melon|watermelon|grapefruit|tangerine|kiwi|papaya|pineapple|coconut|fig|date|prune|apricot|nectarine|persimmon)\b', caseSensitive: false),
       (m) => '${m.group(1)}1 ${m.group(2)}',
     );
     
