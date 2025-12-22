@@ -8722,6 +8722,82 @@ class UrlRecipeImporter {
       }
     }
     
+    // WordPress blog pattern: <p><strong>Ingredients</strong></p> followed by <ul><li>...</li></ul>
+    // This handles thegentlechef.com and similar WordPress sites with section headers between lists
+    // Must run BEFORE generic list pattern to capture section headers like "Dry Rub"
+    if ((result['ingredients'] as List).isEmpty) {
+      final allParagraphs = document.querySelectorAll('p');
+      for (final p in allParagraphs) {
+        final pBold = p.querySelector('strong, b');
+        if (pBold != null) {
+          final boldText = pBold.text?.trim().toLowerCase() ?? '';
+          // Check if this is an ingredients header
+          if (boldText == 'ingredients' || boldText == 'ingredients:') {
+            // Look for lists in siblings - may have multiple sections
+            final allIngredients = <String>[];
+            var nextElement = p.nextElementSibling;
+            
+            while (nextElement != null) {
+              final tagName = nextElement.localName?.toLowerCase();
+              
+              if (tagName == 'ul' || tagName == 'ol') {
+                // Found a list - extract items
+                final listItems = nextElement.querySelectorAll('li');
+                for (final li in listItems) {
+                  final text = _decodeHtml(li.text?.trim() ?? '');
+                  if (text.isNotEmpty) {
+                    allIngredients.add(text);
+                  }
+                }
+              } else if (tagName == 'p') {
+                final paragraphText = _decodeHtml((nextElement.text ?? '').trim());
+                
+                // Check if this <p> is a section header (entire paragraph is bold)
+                final sectionBold = nextElement.querySelector('strong, b');
+                if (sectionBold != null) {
+                  final sectionBoldText = sectionBold.text?.trim() ?? '';
+                  final sectionText = sectionBoldText.toLowerCase();
+                  
+                  // Check if bold text is the ENTIRE paragraph content (section header)
+                  // vs inline emphasis (just a word or phrase within a longer sentence)
+                  final isSectionHeader = sectionBoldText.isNotEmpty && 
+                      (paragraphText == sectionBoldText || paragraphText == '$sectionBoldText:');
+                  
+                  if (isSectionHeader) {
+                    // Stop if we hit directions/preparation
+                    if (sectionText.contains('preparation') || 
+                        sectionText.contains('direction') ||
+                        sectionText.contains('instruction') ||
+                        sectionText.contains('method') ||
+                        sectionText.contains('step') ||
+                        sectionText.contains('procedure')) {
+                      break;
+                    }
+                    // Otherwise it's a sub-section like "Dry Rub" - add as section header
+                    if (sectionText.isNotEmpty && !sectionText.contains('ingredient')) {
+                      // Add section header with bracket format (recognized by import system)
+                      final sectionName = TextNormalizer.toTitleCase(sectionText);
+                      allIngredients.add('[$sectionName]');
+                    }
+                  }
+                  // Note: paragraphs with inline bold are not ingredients, skip them
+                }
+              } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
+                // Hit a heading - stop
+                break;
+              }
+              nextElement = nextElement.nextElementSibling;
+            }
+            
+            if (allIngredients.isNotEmpty) {
+              result['ingredients'] = _processIngredientListItems(allIngredients);
+              break;
+            }
+          }
+        }
+      }
+    }
+    
     // If still no ingredients, try looking for lists with specific patterns
     if ((result['ingredients'] as List).isEmpty) {
       // Look for lists that contain ingredient-like items (amounts + names)
@@ -8868,81 +8944,6 @@ class UrlRecipeImporter {
           }
           
           if ((result['ingredients'] as List).isNotEmpty) break;
-        }
-      }
-    }
-    
-    // WordPress blog pattern: <p><strong>Ingredients</strong></p> followed by <ul><li><strong>...</strong></li></ul>
-    // This handles thegentlechef.com and similar WordPress sites
-    if ((result['ingredients'] as List).isEmpty) {
-      final allParagraphs = document.querySelectorAll('p');
-      for (final p in allParagraphs) {
-        final pBold = p.querySelector('strong, b');
-        if (pBold != null) {
-          final boldText = pBold.text?.trim().toLowerCase() ?? '';
-          // Check if this is an ingredients header
-          if (boldText == 'ingredients' || boldText == 'ingredients:') {
-            // Look for lists in siblings - may have multiple sections
-            final allIngredients = <String>[];
-            var nextElement = p.nextElementSibling;
-            
-            while (nextElement != null) {
-              final tagName = nextElement.localName?.toLowerCase();
-              
-              if (tagName == 'ul' || tagName == 'ol') {
-                // Found a list - extract items
-                final listItems = nextElement.querySelectorAll('li');
-                for (final li in listItems) {
-                  final text = _decodeHtml(li.text?.trim() ?? '');
-                  if (text.isNotEmpty) {
-                    allIngredients.add(text);
-                  }
-                }
-              } else if (tagName == 'p') {
-                final paragraphText = _decodeHtml((nextElement.text ?? '').trim());
-                
-                // Check if this <p> is a section header (entire paragraph is bold)
-                final sectionBold = nextElement.querySelector('strong, b');
-                if (sectionBold != null) {
-                  final boldText = sectionBold.text?.trim() ?? '';
-                  final sectionText = boldText.toLowerCase();
-                  
-                  // Check if bold text is the ENTIRE paragraph content (section header)
-                  // vs inline emphasis (just a word or phrase within a longer sentence)
-                  final isSectionHeader = boldText.isNotEmpty && 
-                      (paragraphText == boldText || paragraphText == '$boldText:');
-                  
-                  if (isSectionHeader) {
-                    // Stop if we hit directions/preparation
-                    if (sectionText.contains('preparation') || 
-                        sectionText.contains('direction') ||
-                        sectionText.contains('instruction') ||
-                        sectionText.contains('method') ||
-                        sectionText.contains('step') ||
-                        sectionText.contains('procedure')) {
-                      break;
-                    }
-                    // Otherwise it's a sub-section like "Dry Rub" - add as section header
-                    if (sectionText.isNotEmpty && !sectionText.contains('ingredient')) {
-                      // Add section header with bracket format (recognized by import system)
-                      final sectionName = TextNormalizer.toTitleCase(sectionText);
-                      allIngredients.add('[$sectionName]');
-                    }
-                  }
-                  // Note: paragraphs with inline bold are not ingredients, skip them
-                }
-              } else if (tagName == 'h2' || tagName == 'h3' || tagName == 'h4') {
-                // Hit a heading - stop
-                break;
-              }
-              nextElement = nextElement.nextElementSibling;
-            }
-            
-            if (allIngredients.isNotEmpty) {
-              result['ingredients'] = _processIngredientListItems(allIngredients);
-              break;
-            }
-          }
         }
       }
     }
