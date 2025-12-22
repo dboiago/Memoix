@@ -1144,16 +1144,24 @@ class OcrRecipeImporter {
       // Check if this looks like a direction continuation (not a standalone ingredient)
       // "with a lemon wedge" is part of "Garnish with a lemon wedge"
       // Also catch lines that continue a previous sentence (start lowercase, or start with common continuation patterns)
-      // Include "to X minutes" patterns which are clearly time fragments from mid-sentence splits
+      // NOTE: "to X minutes" patterns are handled separately below as orphan time fragments
       final isDirectionContinuation = RegExp(
-        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s|to\s+\d)',
+        r'^(with a|with the|in a|in an|on a|on the|into a|into the|over the|highball|cocktail|martini|rocks glass|coupe|marinate|covered|liquid|turn|and\s|or\s)',
         caseSensitive: false,
       ).hasMatch(lowerLine) ||
       // Line starts with lowercase letter (continuation of previous sentence)
       (line.isNotEmpty && line[0] == line[0].toLowerCase() && RegExp(r'^[a-z]').hasMatch(line));
       
-      // Skip prose narrative and fragments entirely
-      if (isProseNarrative || isProseFragment) {
+      // Detect orphan time fragments like "to 60 minutes or until browned"
+      // These are parts of directions that got split by OCR reading columns out of order
+      // We SKIP these entirely - don't try to join them as they often join to the wrong direction
+      final isOrphanTimeFragment = RegExp(
+        r'^to\s+\d+\s*(minutes?|hours?|mins?|hrs?|seconds?|secs?)',
+        caseSensitive: false,
+      ).hasMatch(lowerLine);
+      
+      // Skip prose narrative, fragments, and orphan time fragments entirely
+      if (isProseNarrative || isProseFragment || isOrphanTimeFragment) {
         continue;
       }
       
