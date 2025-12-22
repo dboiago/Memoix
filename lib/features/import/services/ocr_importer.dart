@@ -435,16 +435,16 @@ class OcrRecipeImporter {
     ).hasMatch(name);
     
     if (name == null || titleLooksLikeIngredient) {
-      // Look for ALL CAPS line that could be the title (2-5 words, no amounts)
+      // Look for ALL CAPS line that could be the title (1+ words, no amounts)
       for (int i = 0; i < lines.length && i < 30; i++) {
         final line = lines[i].trim();
-        // ALL CAPS, 2-50 chars, at least 2 words, no digits at start
-        if (line.length >= 5 && line.length <= 50 &&
+        // ALL CAPS, 4-50 chars, no digits at start
+        // Single words like "HERMITS" or multi-word like "LEMON DROP COOKIES"
+        if (line.length >= 4 && line.length <= 50 &&
             line == line.toUpperCase() &&
-            RegExp(r'^[A-Z][A-Z\s]+[A-Z]$').hasMatch(line) &&
-            line.split(' ').length >= 2 &&
+            RegExp(r'^[A-Z][A-Z]*(?:\s+[A-Z]+)*$').hasMatch(line) &&
             !RegExp(r'^\d').hasMatch(line) &&
-            !RegExp(r'\b(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER)\b').hasMatch(line)) {
+            !RegExp(r'^(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC)$', caseSensitive: false).hasMatch(line)) {
           name = TextNormalizer.toTitleCase(line.toLowerCase());
           nameConfidence = 0.8;
           titleLineIndex = i;

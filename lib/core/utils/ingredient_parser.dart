@@ -141,14 +141,14 @@ class IngredientParser {
       );
     }
     
-    // Check for ALL CAPS section headers (2-4 words, no amounts)
-    // e.g., "LEMON GLAZE", "CREAM CHEESE FROSTING", "FOR THE CRUST"
+    // Check for ALL CAPS section headers (1-4 words, no amounts)
+    // e.g., "LEMON GLAZE", "FROSTING", "CREAM CHEESE FROSTING", "FOR THE CRUST"
     // Must be short (under 40 chars) and not start with a number
     if (workingLine.length >= 4 && workingLine.length <= 40 &&
         workingLine == workingLine.toUpperCase() &&
-        RegExp(r'^[A-Z][A-Z\s]+[A-Z]$').hasMatch(workingLine) &&
+        RegExp(r'^[A-Z][A-Z]*(?:\s+[A-Z]+)*$').hasMatch(workingLine) &&
         !RegExp(r'^\d').hasMatch(workingLine) &&
-        !RegExp(r'\b(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?)\b').hasMatch(workingLine)) {
+        !RegExp(r'^(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC|SALT|PEPPER|SUGAR|FLOUR|BUTTER|EGGS?)$').hasMatch(workingLine)) {
       // Convert to title case for section name
       sectionName = workingLine.split(' ').map((w) => 
         w.isNotEmpty ? w[0] + w.substring(1).toLowerCase() : w
