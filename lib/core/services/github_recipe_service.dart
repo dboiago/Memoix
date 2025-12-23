@@ -176,7 +176,8 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => CheeseEntry.fromJson(e as Map<String, dynamic>))
+          .map((e) => CheeseEntry.fromJson(e as Map<String, dynamic>)
+            ..source = CheeseSource.memoix)
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
@@ -193,7 +194,8 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => CellarEntry.fromJson(e as Map<String, dynamic>))
+          .map((e) => CellarEntry.fromJson(e as Map<String, dynamic>)
+            ..source = CellarSource.memoix)
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
