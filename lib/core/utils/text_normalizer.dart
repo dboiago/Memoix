@@ -37,7 +37,7 @@ class TextNormalizer {
     const uppercaseWords = {
       'bbq', 'xo', 'msg', 'aoc', 'dop', 'igp', 'pdo', 'pgi', 'abv', 'ibu',
       'usa', 'uk', 'eu', 'nyc', 'la', 'sf',
-      'ipa', 'abv', 'blt', 'pb', 'pbj',
+      'ipa', 'blt', 'pb', 'pbj',
       'evoo', 'evo',
       'diy', 'usda', 'fda',
       'ai', 'ml', 'tv', 'dvd', 'cd',
