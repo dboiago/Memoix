@@ -297,32 +297,31 @@ class SettingsScreen extends ConsumerWidget {
           const _SectionHeader(title: 'Data'),
           ListTile(
             leading: const Icon(Icons.folder_open),
-            title: const Text('Export All Recipes'),
-            subtitle: const Text('Save your recipes as JSON'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () async {
-              try {
-                final service = ref.read(recipeBackupServiceProvider);
-                await service.exportRecipes(includeAll: false);
-                MemoixSnackBar.showSuccess('Recipes exported successfully');
-              } catch (e) {
-                MemoixSnackBar.showError('Export failed: $e');
-              }
-            },
-          ),
-          // TODO(release): Remove this menu item before public release - dev/maintenance only
-          ListTile(
-            leading: const Icon(Icons.category),
-            title: const Text('Export by Course'),
-            subtitle: const Text('Separate JSON files per course (all recipes)'),
+            title: const Text('Export All'),
+            subtitle: const Text('All domains to folder (recipes, pizzas, modernist, etc.)'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () async {
               try {
                 final service = ref.read(recipeBackupServiceProvider);
                 final count = await service.exportByCourse();
                 if (count != null) {
-                  MemoixSnackBar.showSuccess('Exported $count course files');
+                  MemoixSnackBar.showSuccess('Exported $count files');
                 }
+              } catch (e) {
+                MemoixSnackBar.showError('Export failed: $e');
+              }
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.description),
+            title: const Text('Export My Recipes Only'),
+            subtitle: const Text('Single JSON file (excludes Memoix collection)'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () async {
+              try {
+                final service = ref.read(recipeBackupServiceProvider);
+                await service.exportRecipes(includeAll: false);
+                MemoixSnackBar.showSuccess('Recipes exported successfully');
               } catch (e) {
                 MemoixSnackBar.showError('Export failed: $e');
               }

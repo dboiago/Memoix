@@ -14,11 +14,13 @@ class TextNormalizer {
   /// Clean a name: collapse whitespace, remove trailing punctuation, apply Title Case.
   /// 
   /// Words like 'of', 'the', 'and', 'or' stay lowercase unless first word.
+  /// Acronyms like 'BBQ', 'XO', 'MSG' stay uppercase.
   /// 
   /// Examples:
   /// - "all-purpose FLOUR" → "All-Purpose Flour"
   /// - "olive oil, " → "Olive Oil"
   /// - "juice of lemon" → "Juice of Lemon"
+  /// - "bbq sauce" → "BBQ Sauce"
   static String cleanName(String name) {
     // Remove leading/trailing whitespace and collapse internal whitespace
     var cleaned = name.trim().replaceAll(RegExp(r'\s+'), ' ');
@@ -31,12 +33,32 @@ class TextNormalizer {
     // Words that should stay lowercase (unless first word)
     const lowercaseWords = {'a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with'};
     
+    // Words/acronyms that should stay uppercase
+    const uppercaseWords = {
+      'bbq', 'xo', 'msg', 'aoc', 'dop', 'igp', 'pdo', 'pgi', 'abv', 'ibu',
+      'usa', 'uk', 'eu', 'nyc', 'la', 'sf',
+      'ipa', 'abv', 'blt', 'pb', 'pbj',
+      'evoo', 'evo',
+      'diy', 'usda', 'fda',
+      'ai', 'ml', 'tv', 'dvd', 'cd',
+    };
+    
     // Apply Title Case to all words
     final words = cleaned.split(' ');
     final titleCased = words.asMap().entries.map((entry) {
       final i = entry.key;
       final word = entry.value;
       if (word.isEmpty) return word;
+      
+      // Check if word (without punctuation) is an uppercase acronym
+      final wordLower = word.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
+      if (uppercaseWords.contains(wordLower)) {
+        // Preserve any trailing punctuation but uppercase the letters
+        return word.replaceAllMapped(
+          RegExp(r'[a-zA-Z]+'),
+          (m) => m.group(0)!.toUpperCase(),
+        );
+      }
       
       // First word always capitalized
       if (i == 0) {

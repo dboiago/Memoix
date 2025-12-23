@@ -3,28 +3,28 @@
     "uuid": "06c77b79-3783-4de9-811f-ba80f38b446b",
     "name": "Amaretto French 75",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "1.5 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Citrus focused",
+        "amount": "1½",
+        "unit": "oz",
+        "preparation": "Citrus focused",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Amaretto",
-        "amount": "½ oz",
-        "unit": null,
+        "amount": "½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -33,8 +33,8 @@
       },
       {
         "name": "Sparkling Wine",
-        "amount": "2 oz",
-        "unit": null,
+        "amount": "2",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -43,7 +43,7 @@
       },
       {
         "name": "Lemon Curl",
-        "amount": "1.0",
+        "amount": "1",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -52,7 +52,11 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Add the gin, lemon juice and amaretto into a shaker with ice and shake until well-chilled.",
+      "Double-strain into a coupe glass.",
+      "Top with the sparkling wine."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -67,25 +71,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:34:44.278584",
+    "version": 1,
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ]
   },
   {
     "uuid": "4df2f972-83bf-4ae1-93a9-8b9a182d1e96",
     "name": "Attention (& Old Lace)",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "French Vermouth",
-        "amount": "¼ oz",
-        "unit": null,
+        "amount": "¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -94,8 +102,8 @@
       },
       {
         "name": "Absinthe",
-        "amount": "¼ oz",
-        "unit": null,
+        "amount": "¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -104,8 +112,8 @@
       },
       {
         "name": "Gin",
-        "amount": "¼ oz",
-        "unit": null,
+        "amount": "¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -114,8 +122,8 @@
       },
       {
         "name": "Creme de Violette",
-        "amount": "¼ ox",
-        "unit": null,
+        "amount": "¼",
+        "unit": "ox",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -123,7 +131,12 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Add absinthe to a chilled cocktail or coupe glass. Swirl to rinse and discard.",
+      "Add remaining ingredients to a mixing glass.",
+      "Add ice and stir until chilled",
+      "Strain into prepared glass and garnish with a lemon peel."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -138,25 +151,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:37:11.124268",
+    "version": 1,
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ]
   },
   {
     "uuid": "87c62c3d-f9e8-4f65-a02f-67534df02cf0",
     "name": "Aviation",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "2 oz",
-        "unit": null,
+        "amount": "2",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -165,8 +182,8 @@
       },
       {
         "name": "Marachino Liqueur",
-        "amount": "½ oz",
-        "unit": null,
+        "amount": "½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -175,8 +192,8 @@
       },
       {
         "name": "Creme de Violette",
-        "amount": "¼ oz",
-        "unit": null,
+        "amount": "¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -185,8 +202,8 @@
       },
       {
         "name": "Lemon Juice",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -195,7 +212,7 @@
       },
       {
         "name": "Brandied Cherry",
-        "amount": "1.0",
+        "amount": "1",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -204,7 +221,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Add all ingredients into a cocktail shaker. Shake with cracked ice and strain into a chilled cocktail glass."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -219,25 +238,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:38:30.373326",
+    "version": 1,
+    "glass": "Martini",
+    "garnish": [
+      "Brandied Cherry"
+    ]
   },
   {
     "uuid": "9f20172d-1694-44fe-945f-1975d9d81a45",
     "name": "Bijou",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -246,18 +269,18 @@
       },
       {
         "name": "Sweet Vermouth",
-        "amount": "1 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "It's Red Vermouth",
+        "amount": "1",
+        "unit": "oz",
+        "preparation": "It's Red Vermouth",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Green Chartreuse",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -266,18 +289,8 @@
       },
       {
         "name": "Campari",
-        "amount": "¼ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Orange Twist",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -285,7 +298,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Stir in mixing glass with ice and strain"
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -300,35 +315,39 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:39:22.887642",
+    "version": 1,
+    "glass": "Martini",
+    "garnish": [
+      "Orange Twist"
+    ]
   },
   {
     "uuid": "7f0db189-bb78-4c34-859c-0ac0814c55c7",
     "name": "Boiagroni",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "CA",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Grapefruit Gin",
-        "amount": "2 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Grapefruit is important",
+        "amount": "2",
+        "unit": "oz",
+        "preparation": "Grapefruit is important",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Aperol",
-        "amount": "2 oz",
-        "unit": null,
+        "amount": "2",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -337,26 +356,28 @@
       },
       {
         "name": "Sweet Vermouth",
-        "amount": "2 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "It's just Red Vermouth",
+        "amount": "2",
+        "unit": "oz",
+        "preparation": "It's just Red Vermouth",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Bitters",
-        "amount": "2-3 dashes",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Orange/Black Walnut",
+        "amount": "2-3",
+        "unit": "dashes",
+        "preparation": "Orange/Black Walnut",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Build over ice"
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -371,8 +392,12 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:39:58.144669",
+    "version": 1,
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Wheel"
+    ]
   },
   {
     "uuid": "0d141763-2cc1-45a0-a592-0efd59e69120",
@@ -380,16 +405,16 @@
     "course": "drinks",
     "cuisine": "KR",
     "subcategory": null,
-    "serves": "10.0",
+    "serves": "10",
     "time": "15 min",
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Water",
-        "amount": "2 L",
-        "unit": null,
+        "amount": "2",
+        "unit": "L",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -398,8 +423,8 @@
       },
       {
         "name": "Roasted Barley",
-        "amount": "3 Tbsp",
-        "unit": null,
+        "amount": "3",
+        "unit": "Tbsp",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -426,20 +451,20 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-23T15:32:38.408964",
     "version": 1
   },
   {
     "uuid": "d0662b00-a6fc-4f36-896d-038172255be8",
     "name": "Corpse Reviver No. 2",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "GB",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Absinthe",
@@ -453,8 +478,8 @@
       },
       {
         "name": "Dry Gin",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -463,8 +488,8 @@
       },
       {
         "name": "Lillet Blanc",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -473,8 +498,8 @@
       },
       {
         "name": "Orange Liquer",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -483,8 +508,8 @@
       },
       {
         "name": "Lemon Juice",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -493,7 +518,9 @@
       }
     ],
     "directions": [
-      "Swirl the Absinthe and discard from glass"
+      "Swirl the Absinthe and discard from glass.",
+      "Add the gin, Lillet blanc, orange liqueur and lemon juice into a shaker with ice and shake until well-chilled.",
+      "Strain into the prepared glass."
     ],
     "sourceUrl": null,
     "imageUrl": null,
@@ -509,25 +536,26 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:41:58.800953",
+    "version": 1,
+    "glass": "Coupe"
   },
   {
     "uuid": "7650379f-0ebb-4c2c-8d3c-15f8d0279ec1",
     "name": "Darkside",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "2.5 oz",
-        "unit": null,
+        "amount": "2½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -536,8 +564,8 @@
       },
       {
         "name": "Barolo Chinato",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -546,26 +574,19 @@
       },
       {
         "name": "Peychaud's Bitters",
-        "amount": "3 dashes",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Angostura",
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Brandied Cherry",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
+        "amount": "3",
+        "unit": "dashes",
+        "preparation": "alt: Angostura",
         "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Add the gin, Barolo chinato and bitters into a mixing glass with ice and stir until well-chilled.",
+      "Strain into a chilled cocktail glass."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -580,35 +601,39 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:42:44.408141",
+    "version": 1,
+    "glass": "Coupe",
+    "garnish": [
+      "Brandied Cherry"
+    ]
   },
   {
     "uuid": "67fdeb46-8cec-4e5c-bb4c-e3dc3b8cd295",
     "name": "Fallen Angel",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "GB",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Aged Gin",
-        "amount": "2 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Aged in win/port barrels",
+        "amount": "2",
+        "unit": "oz",
+        "preparation": "Aged in Wine/Port Barrels",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Lemon Juice",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -617,8 +642,8 @@
       },
       {
         "name": "Creme de Menthe",
-        "amount": "2 tsp",
-        "unit": null,
+        "amount": "2",
+        "unit": "tsp",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -627,8 +652,8 @@
       },
       {
         "name": "Simple Syrup",
-        "amount": "2 tsp",
-        "unit": null,
+        "amount": "2",
+        "unit": "tsp",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -637,16 +662,19 @@
       },
       {
         "name": "Aromatic Bitters",
-        "amount": "2 dashes",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Angostura",
+        "amount": "2",
+        "unit": "dashes",
+        "preparation": "Angostura",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "In a shaker with ice, combine all the ingredients and shake",
+      "Strain into glass"
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -661,25 +689,25 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-23T15:44:00.572847",
     "version": 1
   },
   {
     "uuid": "e9cdc0dc-a1d6-46dd-8ca1-6debb297b7a4",
     "name": "French Harvest",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Dry Gin",
-        "amount": "1.5 oz",
-        "unit": null,
+        "amount": "1½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -688,8 +716,8 @@
       },
       {
         "name": "Simple Syrup",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -698,8 +726,8 @@
       },
       {
         "name": "Lemon Juice",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -708,231 +736,8 @@
       },
       {
         "name": "Sparkling Cider",
-        "amount": "To Top",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Lemon Peel",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      }
-    ],
-    "directions": [],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "imageUrls": [],
-    "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
-    "source": "memoix",
-    "colorValue": null,
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "lastCookedAt": null,
-    "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
-  },
-  {
-    "uuid": "57dd2678-63ed-4fe9-a30a-5086fcf0a3df",
-    "name": "Gibson",
-    "course": "drinks",
-    "cuisine": "KR",
-    "subcategory": "Gin",
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "pairedRecipeIds": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Gin",
-        "amount": "2.5 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Vermouth",
-        "amount": "½ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Pickled Onion",
-        "amount": "2021-01-03 00:00:00",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      }
-    ],
-    "directions": [],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "imageUrls": [],
-    "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
-    "source": "memoix",
-    "colorValue": null,
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "lastCookedAt": null,
-    "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
-  },
-  {
-    "uuid": "b0fa6059-6dfb-4307-b681-9e62900a4a46",
-    "name": "Gimlet",
-    "course": "drinks",
-    "cuisine": "KR",
-    "subcategory": "Gin",
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "pairedRecipeIds": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Gin",
-        "amount": "2.5 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Lime Juice",
-        "amount": "½ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Simple Syrup",
-        "amount": "½ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Lime Wheel",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      }
-    ],
-    "directions": [],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "imageUrls": [],
-    "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
-    "source": "memoix",
-    "colorValue": null,
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "lastCookedAt": null,
-    "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
-  },
-  {
-    "uuid": "3bc4be40-c696-46c3-931d-cd3cd33058f7",
-    "name": "Gin Fizz",
-    "course": "drinks",
-    "cuisine": "KR",
-    "subcategory": "Gin",
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "pairedRecipeIds": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Gin",
-        "amount": "2 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Lemon Juice",
-        "amount": "1 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Simple Syrup",
-        "amount": "0.75 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Egg White",
-        "amount": "1 / ½ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Club Soda",
-        "amount": "To Top / 1 oz",
-        "unit": null,
+        "amount": "To",
+        "unit": "Top",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -941,7 +746,9 @@
       }
     ],
     "directions": [
-      "Add all to shaker and shake"
+      "Add the gin, lemon juice and simple syrup into a shaker with ice and shake until well-chilled.",
+      "Strain into a flute.",
+      "Top with the cider."
     ],
     "sourceUrl": null,
     "imageUrl": null,
@@ -957,35 +764,161 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:45:35.560709",
+    "version": 1,
+    "glass": "Flute",
+    "garnish": [
+      "Lemon Twist"
+    ]
+  },
+  {
+    "uuid": "57dd2678-63ed-4fe9-a30a-5086fcf0a3df",
+    "name": "Gibson",
+    "course": "drinks",
+    "cuisine": "US",
+    "subcategory": "Gin",
+    "serves": null,
+    "time": null,
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": null,
+    "ingredients": [
+      {
+        "name": "Gin",
+        "amount": "2½",
+        "unit": "oz",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vermouth",
+        "amount": "½",
+        "unit": "oz",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "tir well in a shaker with ice, then strain into a chilled martini glass."
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-23T15:46:32.986635",
+    "version": 1,
+    "glass": "Martini",
+    "garnish": [
+      "Cocktail Onion"
+    ]
+  },
+  {
+    "uuid": "b0fa6059-6dfb-4307-b681-9e62900a4a46",
+    "name": "Gimlet",
+    "course": "drinks",
+    "cuisine": "GB",
+    "subcategory": "Gin",
+    "serves": null,
+    "time": null,
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "Mix and serve",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "amount": "2½",
+        "unit": "oz",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lime Juice",
+        "amount": "½",
+        "unit": "oz",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Simple Syrup",
+        "amount": "½",
+        "unit": "oz",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-23T15:47:20.189431",
+    "version": 1,
+    "glass": "Martini",
+    "garnish": [
+      "Lime Wheel"
+    ]
   },
   {
     "uuid": "2963a059-fca6-4cc0-9f1b-299b77100f91",
     "name": "Gin Sonic",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "JP",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "1.5 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Roku, because this is a popular Japanese drink",
+        "amount": "1½",
+        "unit": "oz",
+        "preparation": "Roku, because this is a popular Japanese drink",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Club Soda",
-        "amount": "2.25 oz",
-        "unit": null,
+        "amount": "2¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -994,18 +927,8 @@
       },
       {
         "name": "Tonic Water",
-        "amount": "2.25 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Yuzu Twist",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "2¼",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1013,7 +936,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Fill a highball glass with ice, then add the gin, club soda and tonic."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -1028,25 +953,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:50:48.700384",
+    "version": 1,
+    "glass": "Highball",
+    "garnish": [
+      "Yuzu Twist"
+    ]
   },
   {
     "uuid": "e6d8c639-b374-485a-a58f-1da9bec1d140",
     "name": "Negroni",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "IT",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1055,8 +984,8 @@
       },
       {
         "name": "Campari",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1065,18 +994,8 @@
       },
       {
         "name": "Sweet Vermouth",
-        "amount": "1 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Orange Peel",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1084,7 +1003,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Build over ice"
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -1099,35 +1020,39 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:51:17.707032",
+    "version": 1,
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Twist"
+    ]
   },
   {
     "uuid": "84592bae-30e3-41c9-a4bb-409fa067b5e7",
     "name": "Negroni Coldbrew",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "CA",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Cold Brew Campari",
-        "amount": "1 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Coldbrew Jagermeister",
+        "amount": "1",
+        "unit": "oz",
+        "preparation": "alt: Coldbrew Jagermeister",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Gin",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1136,18 +1061,8 @@
       },
       {
         "name": "Sweet Vermouth",
-        "amount": "1 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Orange Twist",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1157,7 +1072,8 @@
     ],
     "directions": [
       "Fill mason jar half way with coffee grounds and pour Campari to fill",
-      "Steep at least 10 min; Pref overnight; Strain"
+      "Steep at least 10 min; Pref overnight; Strain",
+      "(Optional) If using Coldbrew Jagermeister or another alternative skip the previous steps"
     ],
     "sourceUrl": null,
     "imageUrl": null,
@@ -1173,25 +1089,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:52:18.730639",
+    "version": 1,
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Twist"
+    ]
   },
   {
     "uuid": "15c24e6c-ecc6-4be4-b67c-d4cac9836c2e",
     "name": "Negroni Sbagliato",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "IT",
     "subcategory": "Prosecco",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Sweet Vermouth",
-        "amount": "750 ml",
-        "unit": null,
+        "amount": "750",
+        "unit": "ml",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1200,8 +1120,8 @@
       },
       {
         "name": "Campari",
-        "amount": "750 ml",
-        "unit": null,
+        "amount": "750",
+        "unit": "ml",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1210,8 +1130,8 @@
       },
       {
         "name": "Prosecco",
-        "amount": "750 ml",
-        "unit": null,
+        "amount": "750",
+        "unit": "ml",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1220,18 +1140,18 @@
       },
       {
         "name": "Fruit",
-        "amount": "1 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Assorted seasonal",
+        "amount": "1",
+        "unit": "C",
+        "preparation": "Assorted seasonal",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Cinnamon",
-        "amount": "1-2 shavings",
-        "unit": null,
+        "amount": "1-2",
+        "unit": "shavings",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1256,25 +1176,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:56:10.006057",
+    "version": 1,
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Fruit"
+    ]
   },
   {
     "uuid": "bb1dcb3e-800d-403f-b616-30d36ca45a08",
     "name": "The Last Word",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "US",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1283,8 +1207,8 @@
       },
       {
         "name": "Green Chartreuse",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1293,8 +1217,8 @@
       },
       {
         "name": "Maraschino Liqueur",
-        "amount": "0.75 oz",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1303,18 +1227,8 @@
       },
       {
         "name": "Lime Juice",
-        "amount": "0.75 oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Brandied Cherry",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "¾",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1322,7 +1236,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Add all ingredients into a cocktail shaker. Shake with ice and strain into a chilled cocktail glass."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -1337,25 +1253,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:53:22.147218",
+    "version": 1,
+    "glass": "Martini",
+    "garnish": [
+      "Brandied Cherry"
+    ]
   },
   {
     "uuid": "fb9f2a17-630e-4cb0-b0aa-bf30061e5922",
     "name": "Tom Collins",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "GB",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "London Dry Gin",
-        "amount": "2 oz",
-        "unit": null,
+        "amount": "2",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1364,8 +1284,8 @@
       },
       {
         "name": "Lemon Juice",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1374,8 +1294,8 @@
       },
       {
         "name": "Simple Syrup",
-        "amount": "½ oz",
-        "unit": null,
+        "amount": "½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1384,8 +1304,8 @@
       },
       {
         "name": "Club Soda",
-        "amount": "To Top",
-        "unit": null,
+        "amount": "To",
+        "unit": "Top",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1394,17 +1314,7 @@
       },
       {
         "name": "Lemon Wheel",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Marachino Cherry",
-        "amount": "1.0",
+        "amount": "1",
         "unit": null,
         "preparation": null,
         "alternative": null,
@@ -1413,7 +1323,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Mix the gin, lemon juice and sugar syrup in a tall glass with ice, top up with soda water."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -1428,25 +1340,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:54:16.829535",
+    "version": 1,
+    "glass": "Collins",
+    "garnish": [
+      "Maraschino Cherry"
+    ]
   },
   {
     "uuid": "dd68057a-53c4-43f2-8ad8-e7d51c204cab",
     "name": "Vesper",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "GB",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "3 oz",
-        "unit": null,
+        "amount": "3",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1455,8 +1371,8 @@
       },
       {
         "name": "Vodka",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1465,18 +1381,8 @@
       },
       {
         "name": "Lillet Blanc",
-        "amount": "½ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Lemon Twist",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1484,7 +1390,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Pour all ingredients into a cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass."
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -1499,25 +1407,29 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:55:07.961972",
+    "version": 1,
+    "glass": "Martini",
+    "garnish": [
+      "Lemon Twist"
+    ]
   },
   {
     "uuid": "fab9bbec-cac7-407f-8255-dde61dbc65f0",
     "name": "White Negroni",
     "course": "drinks",
-    "cuisine": "KR",
+    "cuisine": "FR",
     "subcategory": "Gin",
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
     "pairsWith": [],
     "pairedRecipeIds": [],
-    "notes": "",
+    "notes": null,
     "ingredients": [
       {
         "name": "Gin",
-        "amount": "1.5 oz",
-        "unit": null,
+        "amount": "1½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1526,8 +1438,8 @@
       },
       {
         "name": "Lillet Blanc",
-        "amount": "1 oz",
-        "unit": null,
+        "amount": "1",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1536,18 +1448,8 @@
       },
       {
         "name": "Suze Gentian",
-        "amount": "½ oz",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Lemon Twist",
-        "amount": "1.0",
-        "unit": null,
+        "amount": "½",
+        "unit": "oz",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
@@ -1555,7 +1457,9 @@
         "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Build over ice"
+    ],
     "sourceUrl": null,
     "imageUrl": null,
     "imageUrls": [],
@@ -1570,7 +1474,11 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
-    "version": 1
+    "updatedAt": "2025-12-23T15:55:39.254525",
+    "version": 1,
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Lemon Twist"
+    ]
   }
 ]

@@ -10,10 +10,10 @@
     "flavour": "Super dry texture; Crumbles and rather unique",
     "priceRange": null,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:49:47.491831",
-    "updatedAt": "2025-12-23T12:49:47.491831",
+    "updatedAt": "2025-12-23T13:31:44.210096",
     "version": 1
   },
   {
@@ -27,10 +27,10 @@
     "flavour": "Brie but significantly better; Was the sleeper favourite",
     "priceRange": null,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:53:31.799406",
-    "updatedAt": "2025-12-23T12:53:31.799406",
+    "updatedAt": "2025-12-23T13:31:44.268035",
     "version": 1
   },
   {
@@ -44,10 +44,10 @@
     "flavour": "A. really liked it, I don't think I enjoy Manchego ever",
     "priceRange": null,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:48:51.612833",
-    "updatedAt": "2025-12-23T12:48:51.612833",
+    "updatedAt": "2025-12-23T13:31:44.375775",
     "version": 1
   },
   {
@@ -61,10 +61,10 @@
     "flavour": "Similar in taste to a creamy parmesean or parrano",
     "priceRange": 3,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:48:15.065550",
-    "updatedAt": "2025-12-23T12:51:33.495063",
+    "updatedAt": "2025-12-23T13:31:44.388152",
     "version": 1
   },
   {
@@ -78,10 +78,10 @@
     "flavour": "My favourte ever so far; Caramel and nutty notes -- wrapped in chestnut leaves; Expensive tho",
     "priceRange": 5,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:51:09.427313",
-    "updatedAt": "2025-12-23T12:51:18.123382",
+    "updatedAt": "2025-12-23T13:31:44.425212",
     "version": 1
   },
   {
@@ -95,10 +95,10 @@
     "flavour": "Rind washed with walnut liqueur, cheese itself was fairly mild while the rind was a bit sweet",
     "priceRange": null,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:52:29.960330",
-    "updatedAt": "2025-12-23T12:52:29.960330",
+    "updatedAt": "2025-12-23T13:31:44.446761",
     "version": 1
   }
 ]

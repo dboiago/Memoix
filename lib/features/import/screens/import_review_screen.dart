@@ -1101,6 +1101,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     'Cherry',
     'Maraschino cherry',
     'Luxardo cherry',
+    'Brandied cherry',
     'Olive',
     'Cocktail onion',
     'Mint sprig',

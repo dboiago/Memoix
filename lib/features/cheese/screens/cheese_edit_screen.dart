@@ -43,6 +43,11 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
     'Sheep',
     'Buffalo',
     'Mixed',
+    'Raw Cow',
+    'Raw Goat',
+    'Raw Sheep',
+    'Raw Buffalo',
+    'Raw Mixed',
   ];
 
   // Cheese textures as per requirements (selectable suggestions, custom allowed)

@@ -10,10 +10,10 @@
     "ageVintage": null,
     "priceRange": 4,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": false,
     "createdAt": "2025-12-23T12:57:00.972027",
-    "updatedAt": "2025-12-23T12:57:00.972027",
+    "updatedAt": "2025-12-23T13:31:44.227881",
     "version": 1
   },
   {
@@ -27,10 +27,10 @@
     "ageVintage": null,
     "priceRange": 4,
     "imageUrl": null,
-    "source": "personal",
+    "source": "memoix",
     "isFavorite": true,
     "createdAt": "2025-12-23T12:59:39.294730",
-    "updatedAt": "2025-12-23T12:59:40.841881",
+    "updatedAt": "2025-12-23T13:31:44.272052",
     "version": 1
   }
 ]

@@ -510,11 +510,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                   controller: controller,
                   focusNode: focusNode,
                   decoration: const InputDecoration(
-                    labelText: 'Wood Type *',
+                    labelText: 'Wood Type (optional)',
                     hintText: 'e.g., Hickory, Cherry, Apple',
                   ),
-                  validator: (v) =>
-                      v?.isEmpty ?? true ? 'Wood type is required' : null,
                   textCapitalization: TextCapitalization.words,
                 );
               },

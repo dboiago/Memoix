@@ -227,8 +227,8 @@ class IngredientParser {
       }
     }
     
-    // Extract "or ..." alternatives
-    final orMatch = RegExp(r'\s+or\s+(.+)$', caseSensitive: false).firstMatch(workingLine);
+    // Extract "or ..." alternatives (use word boundary to avoid matching "for", "more", etc.)
+    final orMatch = RegExp(r'\s+\bor\b\s+(.+)$', caseSensitive: false).firstMatch(workingLine);
     if (orMatch != null) {
       alternative = orMatch.group(1)?.trim();
       workingLine = workingLine.substring(0, orMatch.start).trim();

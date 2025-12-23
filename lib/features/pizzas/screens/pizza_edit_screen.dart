@@ -27,7 +27,6 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _notesController = TextEditingController();
-  final _customBaseController = TextEditingController();
 
   // Controllers for cheese rows
   final List<TextEditingController> _cheeseControllers = [];
@@ -68,7 +67,6 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   void dispose() {
     _nameController.dispose();
     _notesController.dispose();
-    _customBaseController.dispose();
     for (final c in _cheeseControllers) {
       c.dispose();
     }
@@ -342,110 +340,45 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   }
 
   Widget _buildBaseSauceSelector(ThemeData theme) {
-    final GlobalKey buttonKey = GlobalKey();
-    
-    return InkWell(
-      key: buttonKey,
-      borderRadius: BorderRadius.circular(4),
-      onTap: () => _showBaseSauceMenu(buttonKey, theme),
-      child: InputDecorator(
-        decoration: const InputDecoration(
-          border: OutlineInputBorder(),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(_selectedBase),
-            const Icon(Icons.arrow_drop_down),
-          ],
-        ),
-      ),
-    );
-  }
-
-  void _showBaseSauceMenu(GlobalKey key, ThemeData theme) {
-    final RenderBox renderBox = key.currentContext!.findRenderObject() as RenderBox;
-    final Offset offset = renderBox.localToGlobal(Offset.zero);
-    final Size size = renderBox.size;
-
-    showMenu<String>(
-      context: context,
-      position: RelativeRect.fromLTRB(
-        offset.dx,
-        offset.dy + size.height,
-        offset.dx + size.width,
-        offset.dy + size.height + 300,
-      ),
-      items: [
-        ..._defaultBases.map((base) => PopupMenuItem<String>(
-          value: base,
-          child: Row(
-            children: [
-              if (base == _selectedBase)
-                Icon(Icons.check, size: 18, color: theme.colorScheme.primary)
-              else
-                const SizedBox(width: 18),
-              const SizedBox(width: 12),
-              Text(base),
-            ],
-          ),
-        ),),
-        const PopupMenuDivider(),
-        PopupMenuItem<String>(
-          value: '__custom__',
-          child: Row(
-            children: [
-              Icon(Icons.add, size: 18, color: theme.colorScheme.primary),
-              const SizedBox(width: 12),
-              const Text('Add Custom...'),
-            ],
-          ),
-        ),
-      ],
-    ).then((value) {
-      if (value == null) return;
-      if (value == '__custom__') {
-        _showCustomBaseDialog(theme);
-      } else {
-        setState(() => _selectedBase = value);
-      }
-    });
-  }
-
-  Future<void> _showCustomBaseDialog(ThemeData theme) async {
-    _customBaseController.clear();
-    final result = await showDialog<String>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Custom Base Sauce'),
-        content: TextField(
-          controller: _customBaseController,
-          autofocus: true,
+    return Autocomplete<String>(
+      initialValue: TextEditingValue(text: _selectedBase),
+      optionsBuilder: (textEditingValue) {
+        if (textEditingValue.text.isEmpty) {
+          return _defaultBases;
+        }
+        final matches = _defaultBases.where(
+          (base) => base.toLowerCase().contains(textEditingValue.text.toLowerCase()),
+        ).toList();
+        // Always allow the typed value as an option if not in suggestions
+        final typed = textEditingValue.text.trim();
+        if (typed.isNotEmpty && !matches.any((m) => m.toLowerCase() == typed.toLowerCase())) {
+          return [...matches, typed];
+        }
+        return matches;
+      },
+      fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+        return TextField(
+          controller: controller,
+          focusNode: focusNode,
           decoration: const InputDecoration(
-            hintText: 'Enter sauce name...',
+            hintText: 'e.g., Tomato, Pesto',
             border: OutlineInputBorder(),
+            isDense: true,
           ),
           textCapitalization: TextCapitalization.words,
-          onSubmitted: (value) {
-            Navigator.of(ctx).pop(value.trim());
+          onSubmitted: (_) => onFieldSubmitted(),
+          onChanged: (value) {
+            setState(() => _selectedBase = value.trim().isEmpty ? 'Tomato' : value.trim());
           },
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text('Cancel'),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(ctx).pop(_customBaseController.text.trim()),
-            child: const Text('Add'),
-          ),
-        ],
-      ),
+        );
+      },
+      onSelected: (selection) {
+        setState(() => _selectedBase = selection);
+      },
+      optionsViewBuilder: (context, onSelected, options) {
+        return _buildOptionsView(context, onSelected, options, theme);
+      },
     );
-    
-    if (result != null && result.isNotEmpty) {
-      setState(() => _selectedBase = result);
-    }
   }
 
   Widget _buildCheeseRows(ThemeData theme) {

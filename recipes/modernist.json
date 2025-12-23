@@ -63,10 +63,10 @@
     "imageUrls": [],
     "isFavorite": false,
     "cookCount": 0,
-    "source": "personal",
+    "source": "memoix",
     "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T12:05:53.490490",
-    "updatedAt": "2025-12-23T12:05:53.490490"
+    "createdAt": "2025-12-23T13:31:44.221236",
+    "updatedAt": "2025-12-23T13:31:44.227881"
   },
   {
     "uuid": "c804ffa5-869b-4a92-a025-fa8292914d34",
@@ -117,10 +117,10 @@
     "imageUrls": [],
     "isFavorite": false,
     "cookCount": 0,
-    "source": "personal",
+    "source": "memoix",
     "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T12:11:55.009053",
-    "updatedAt": "2025-12-23T12:11:55.009053"
+    "createdAt": "2025-12-23T13:31:44.221236",
+    "updatedAt": "2025-12-23T13:31:44.314145"
   },
   {
     "uuid": "826c7636-7882-48f1-a7c4-a84ed2f9785f",
@@ -197,9 +197,9 @@
     "imageUrls": [],
     "isFavorite": false,
     "cookCount": 0,
-    "source": "personal",
+    "source": "memoix",
     "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T11:57:08.724437",
-    "updatedAt": "2025-12-23T11:57:08.724437"
+    "createdAt": "2025-12-23T13:31:44.221236",
+    "updatedAt": "2025-12-23T13:31:44.385646"
   }
 ]

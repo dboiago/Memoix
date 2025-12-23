@@ -302,8 +302,18 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               initialValue: TextEditingValue(text: _techniqueController.text),
               onSelected: (value) => _techniqueController.text = value,
               fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-                controller.text = _techniqueController.text;
-                controller.addListener(() => _techniqueController.text = controller.text);
+                // Sync with our controller (check if different to avoid losing first letter)
+                if (controller.text != _techniqueController.text) {
+                  controller.text = _techniqueController.text;
+                  controller.selection = TextSelection.collapsed(
+                    offset: controller.text.length,
+                  );
+                }
+                controller.addListener(() {
+                  if (_techniqueController.text != controller.text) {
+                    _techniqueController.text = controller.text;
+                  }
+                });
                 return TextField(
                   controller: controller,
                   focusNode: focusNode,
@@ -733,8 +743,18 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               initialValue: TextEditingValue(text: row.nameController.text),
               onSelected: (value) => row.nameController.text = value,
               fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-                controller.text = row.nameController.text;
-                controller.addListener(() => row.nameController.text = controller.text);
+                // Sync with our controller (check if different to avoid losing first letter)
+                if (controller.text != row.nameController.text) {
+                  controller.text = row.nameController.text;
+                  controller.selection = TextSelection.collapsed(
+                    offset: controller.text.length,
+                  );
+                }
+                controller.addListener(() {
+                  if (row.nameController.text != controller.text) {
+                    row.nameController.text = controller.text;
+                  }
+                });
                 return TextField(
                   controller: controller,
                   focusNode: focusNode,

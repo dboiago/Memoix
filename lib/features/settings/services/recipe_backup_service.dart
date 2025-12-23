@@ -56,10 +56,10 @@ class RecipeBackupService {
     if (includeAll) {
       recipes = await _recipeRepository.getAllRecipes();
     } else {
-      // Only personal recipes (not memoix collection)
-      recipes = await _recipeRepository.getPersonalRecipes();
-      final imported = await _recipeRepository.getImportedRecipes();
-      recipes = [...recipes, ...imported];
+      // All user recipes (not memoix collection)
+      // Includes: personal, imported, ocr, url
+      final allRecipes = await _recipeRepository.getAllRecipes();
+      recipes = allRecipes.where((r) => r.source != RecipeSource.memoix).toList();
     }
 
     if (recipes.isEmpty) {

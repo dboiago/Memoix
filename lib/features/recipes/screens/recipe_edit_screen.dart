@@ -2781,6 +2781,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     'Cherry',
     'Maraschino cherry',
     'Luxardo cherry',
+    'Brandied cherry',
     'Olive',
     'Cocktail onion',
     'Mint sprig',

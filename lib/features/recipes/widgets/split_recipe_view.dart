@@ -1006,8 +1006,8 @@ _ParsedNotes _parseNotes(String notes) {
   final altPatterns = [
     RegExp(r',?\s*alt(?:ernative)?:\s*([^,;]+)', caseSensitive: false),
     RegExp(r',?\s*sub(?:stitute)?:\s*([^,;]+)', caseSensitive: false),
-    RegExp(r',?\s*or\s+(?:use\s+)?([^,;]+)', caseSensitive: false),
-    RegExp(r'\(or\s+([^)]+)\)', caseSensitive: false),
+    RegExp(r',?\s*\bor\b\s+(?:use\s+)?([^,;]+)', caseSensitive: false),
+    RegExp(r'\(\bor\b\s+([^)]+)\)', caseSensitive: false),
   ];
 
   for (final pattern in altPatterns) {

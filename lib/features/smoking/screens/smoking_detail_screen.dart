@@ -927,13 +927,16 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     );
   }
 
-  void _editRecipe(BuildContext context, SmokingRecipe recipe) {
-    Navigator.push(
+  void _editRecipe(BuildContext context, SmokingRecipe recipe) async {
+    await Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => SmokingEditScreen(recipeId: recipe.uuid),
       ),
     );
+    // Invalidate provider to refresh data after editing
+    ref.invalidate(smokingRecipeByUuidProvider(recipe.uuid));
+    ref.invalidate(allSmokingRecipesProvider);
   }
 
   void _duplicateRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) async {

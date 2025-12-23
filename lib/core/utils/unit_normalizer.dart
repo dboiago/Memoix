@@ -197,37 +197,37 @@ class UnitNormalizer {
   }
 
   /// Normalize time strings to compact format (e.g., "4h 30m", "1d", "45m")
-  /// Handles various input formats: "1 hour", "30 minutes", "1 day 2 hours", etc.
+  /// Handles various input formats: "1 hour", "30 minutes", "1 day 2 hours", "1.5h", etc.
   static String normalizeTime(String? timeStr) {
     if (timeStr == null || timeStr.isEmpty) return '';
     
     final trimmed = timeStr.trim().toLowerCase();
     
     // Parse components
-    int totalMinutes = 0;
+    double totalMinutes = 0;
     
-    // Match days
-    final dayMatch = RegExp(r'(\d+)\s*(?:days?|d\b)').firstMatch(trimmed);
+    // Match days (including decimals like "1.5 days")
+    final dayMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:days?|d\b)').firstMatch(trimmed);
     if (dayMatch != null) {
-      totalMinutes += int.parse(dayMatch.group(1)!) * 1440;
+      totalMinutes += double.parse(dayMatch.group(1)!) * 1440;
     }
     
-    // Match hours
-    final hourMatch = RegExp(r'(\d+)\s*(?:hours?|hrs?|h\b)').firstMatch(trimmed);
+    // Match hours (including decimals like "1.5h" or "1.5 hours")
+    final hourMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:hours?|hrs?|h\b)').firstMatch(trimmed);
     if (hourMatch != null) {
-      totalMinutes += int.parse(hourMatch.group(1)!) * 60;
+      totalMinutes += double.parse(hourMatch.group(1)!) * 60;
     }
     
-    // Match minutes
-    final minMatch = RegExp(r'(\d+)\s*(?:minutes?|mins?|m\b)').firstMatch(trimmed);
+    // Match minutes (including decimals)
+    final minMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:minutes?|mins?|m\b)').firstMatch(trimmed);
     if (minMatch != null) {
-      totalMinutes += int.parse(minMatch.group(1)!);
+      totalMinutes += double.parse(minMatch.group(1)!);
     }
     
     // If nothing parsed, return original
     if (totalMinutes == 0) return timeStr;
     
-    return formatMinutes(totalMinutes);
+    return formatMinutes(totalMinutes.round());
   }
 
   /// Format total minutes as compact string (e.g., "4h 30m", "1d", "45m")

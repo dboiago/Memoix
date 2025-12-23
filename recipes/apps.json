@@ -13,50 +13,50 @@
     "ingredients": [
       {
         "name": "Tofu",
-        "amount": "600 g",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Firm; 1 Bock",
+        "amount": "600",
+        "unit": "g",
+        "preparation": "Firm; 1 Bock",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Dashi",
-        "amount": "1 C",
-        "unit": null,
+        "amount": "1",
+        "unit": "C",
         "preparation": null,
-        "alternative": "",
-        "isOptional": false,
-        "section": null,
-        "bakerPercent": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "4 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Mirin",
-        "amount": "4 Tbsp",
-        "unit": null,
+        "amount": "4",
+        "unit": "Tbsp",
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "4",
+        "unit": "Tbsp",
+        "preparation": null,
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
         "name": "Sugar",
-        "amount": "2 Tbsp",
-        "unit": null,
+        "amount": "2",
+        "unit": "Tbsp",
         "preparation": null,
-        "alternative": "",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
@@ -80,7 +80,7 @@
     "lastCookedAt": null,
     "tags": [],
     "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-23T14:08:14.110744",
     "version": 1
   }
 ]
