@@ -1,1018 +1,264 @@
 [
   {
-    "uuid": "fd4696eb-0475-41cf-b8b6-d8aa32bb400a",
-    "name": "Honey Garlic",
+    "uuid": "4f53e72f-ab7c-439a-ad29-0a1ac86a2d82",
+    "name": "Caesar Dressing",
     "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Water",
-        "amount": "2-2.5 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Brown Sugar",
-        "amount": "0.75 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Honey",
-        "amount": "5 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cornstarch",
-        "amount": "3 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ginger",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "5-6 cloves",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Add everything to pot except cornstarch and ~½ C water and bring to medium heat",
-      "Whisk cornstarch and remaining water until dissolved",
-      "Add slurry to pot and bring to boil ~5 min and remove from heat"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "e3003019-414f-4311-993a-ee9c5684fd77",
-    "name": "Fish Taco Sauce",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Pineapple",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Yellow Pepper",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Red Onion",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cilantro",
-        "amount": "Handfull",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "4-6 cloves",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ghost Pepper",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vinegar",
-        "amount": "To Taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Cider (pref)",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lime Juice",
-        "amount": "2021-01-02 00:00:00",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "S&P",
-        "amount": "To Taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Grill pineapple, pepper and onion until charred",
-      "Peel veg and rough chop",
-      "Add all ingredients to blender and adjust until consistancy and flavour is good"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "ee7d7363-6715-449a-a67d-8da0b2cd9b7f",
-    "name": "Fruity Ghost Pepper Sauce",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Shallot",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "4-5 cloves",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ghost Pepper",
-        "amount": "2021-01-02 00:00:00",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Mango",
-        "amount": "½",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Appricot Nectar",
-        "amount": "½ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Carrot",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lemon Juice",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vinegar",
-        "amount": "To Taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Cider/White Wine (pref)",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "S&P",
-        "amount": "To Taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Roast garlic and peppers",
-      "Blend everything together",
-      "Amounts are a best guess as I do everything by taste"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "b706416b-f6e4-4489-ba4d-825b5c3d24d9",
-    "name": "Green Habanaro Sauce",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Shallot",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "4-5 cloves",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cilantro",
-        "amount": "Handful",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Pear Nectar",
-        "amount": "½ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lime Juice",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Green Habanaro",
-        "amount": "2021-02-03 00:00:00",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vinegar",
-        "amount": "To Taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "S&P",
-        "amount": "To Taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Blend everything together",
-      "Add everything to taste",
-      "Add vinegar until desired consistancy"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "f0995e69-c22b-493b-8c4d-09058c5db8ff",
-    "name": "Kansas City Style BBQ Sauce",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "45 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Ketchup",
-        "amount": "2 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Dark Brown Sugar",
-        "amount": "1 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Light can be used but isn't ideal",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Yellow Mustard",
-        "amount": "½ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cider Vinegar",
-        "amount": "½ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Can use half if you don't like tart",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Worcestershire",
-        "amount": "0.33 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lemon Juice",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Steak Sauce",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "A1 / HP",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Dark Molasses",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Fancy",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Honey",
-        "amount": "¼ - 0.75 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Depends on your taste",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vegetable Oil",
-        "amount": "3 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Chili Powder",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Kosher Salt",
-        "amount": "2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Hot Sauce",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Simple like Tobasco (Chipotle is good)",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Black Pepper",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Onion",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "4 cloves",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Liquid Smoke",
-        "amount": "0.33 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Entirely optional; Better for non-meat",
-        "isOptional": true,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Mix chili powder, salt and pepper",
-      "In a large bowl mix ketchup, mustard, vinegar, Worcestershire, lemon juice, steak sauce, molasses, honey, hotsauce and brown sugar",
-      "Finely chop onion and garlic",
-      "Cook onions until translucent then add garlic and cook for ~1 min",
-      "Add dried spices and cook ~2 min until aromatic",
-      "Add wet ingredients and simmer for 15 min to thicken a bit",
-      "Taste and adjust; It may taste vinegary but this won't be as pronounced on the meat",
-      "Strain if you want to remove the onion and garlic chunks (or blend I guess)"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "d6fdab92-a809-4ab6-a996-fdb9c54a6087",
-    "name": "Peach and Sweet Corn Salsa",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Peaches",
-        "amount": "3.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Corn",
-        "amount": "3.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "3.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Shallot",
-        "amount": "2021-01-02 00:00:00",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Red Onion",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cilantro",
-        "amount": "½-0.75 bunch",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lime",
-        "amount": "2021-01-02 00:00:00",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Boil corn then cut off cob and allow to cool",
-      "Cut peaches a similar size as corn nibblets",
-      "Bruoise shallot and garlic",
-      "Rough chop cilanto",
-      "Mix everything with lime juice together"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "54617cc9-be1b-41cd-b5b8-4014bbb7d5dd",
-    "name": "Diana Sauce",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Tomato Puree",
-        "amount": "1 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "1 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "White Vinegar",
-        "amount": "¾ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Dijon",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Molasses",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic Powder",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Worcestershire",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Onion Powder",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Paprika",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Tumeric",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cayenne",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Black Pepper",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Whisk everything together in a medium sauce pan",
-      "Bring to a boil; Reduce heat and simmer ~5 minutes",
-      "Cool"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "6fcff402-f185-473c-9fab-1c4281c84d93",
-    "name": "Salvation Sauce",
-    "course": "sauces",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Serrano",
-        "amount": "165 g",
-        "unit": null,
-        "preparation": null,
-        "alternative": "green",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "5.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": "large!",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vinegar",
-        "amount": "2/3 C / 160 ml",
-        "unit": null,
-        "preparation": null,
-        "alternative": "white; too much?",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lime Juice",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "1/2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "pinch",
-        "unit": null,
-        "preparation": null,
-        "alternative": "optional",
-        "isOptional": true,
-        "section": null
-      },
-      {
-        "name": "Water",
-        "amount": "depends",
-        "unit": null,
-        "preparation": null,
-        "alternative": "optional",
-        "isOptional": true,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Blend everything together",
-      "Add water if it's too thick; more garlic if it needs it; sugar to balance; etc",
-      "I thought it was too vinegar heavy; use half then adjust (had to add water+sugar)"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "34ce1440-b4f5-4dd5-be49-ebbd0515d41b",
-    "name": "Sweet and Sour Sauce",
-    "course": "sauces",
-    "cuisine": "CN",
+    "cuisine": "IT",
     "subcategory": null,
     "serves": "4.0",
     "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Water",
+        "name": "Egg Yolk",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "2.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Black Garlic",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Parmesan",
+        "amount": "½-1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Olive Oil",
         "amount": "½ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Ketchup",
-        "amount": "4 Tbsp",
+        "name": "Worstershire",
+        "amount": "6 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sugar",
-        "amount": "4 Tbsp",
+        "name": "Dijon",
+        "amount": "½ tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Corn Starch",
-        "amount": "½ Tbsp",
+        "name": "Lemon Juice",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Lime (original)",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "S&P",
+        "amount": "To Taste",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vegetable Oil",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Rice Vinegar",
-        "amount": "2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: 1 Tbsp lemon juice",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ginger",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Scallion",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Heat oil in pan then add ketchup and sugar over low heat until large bubbles start to form",
-      "Stir in ginger, scallion and water",
-      "Add vinegar, salt and starch (disolve into a Tbsp of water first); Stir until thickened",
-      "Add in pork, chicke, tofu, etc"
+      "Mash garlic, then add everything but oil in a bowl or food processor",
+      "Slowly add oil while whisking",
+      "Add more Worstershire if needed; Add more/less cheese as needed"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "04f2651c-849a-4583-a432-34133876eb79",
+    "name": "Chili Dipping Sauce",
+    "course": "sauces",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Red Pepper Flakes",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Toasted",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Oyster Sauce",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Black Vinegar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Chinkiang / alt: Rice Vinegar",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Light Soy",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Water",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Put chili flakes, garlic, sesame seeds, garlic, ginger, scallion in a bowl and mix (first 5 ingredients)",
+      "Pour smoking hot oil on top and stir a bit",
+      "Add remaining ingredients and mix again",
+      "I opted to add the final Tbsp of sesame oil, but this is optional",
+      "I didn't toast the sesame seeds either and it was fine"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -1024,6 +270,7 @@
     "serves": "",
     "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -1033,7 +280,8 @@
         "preparation": null,
         "alternative": "Canola/Rapeseed",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Dried Chilis",
@@ -1042,7 +290,8 @@
         "preparation": null,
         "alternative": "alt: Dried Pepper Flakes",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Sichuan Pepper",
@@ -1051,7 +300,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Sesame Seeds",
@@ -1060,7 +310,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Green Onion",
@@ -1069,7 +320,8 @@
         "preparation": null,
         "alternative": "White only",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Ginger",
@@ -1078,7 +330,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Star Anise",
@@ -1087,7 +340,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Bay Leaves",
@@ -1096,7 +350,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Chinese Cinnamon",
@@ -1105,7 +360,8 @@
         "preparation": null,
         "alternative": "Small piece",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Tsaoko",
@@ -1114,7 +370,8 @@
         "preparation": null,
         "alternative": "It's Black Cardamom (optional)",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Fructus Amomi",
@@ -1123,7 +380,8 @@
         "preparation": null,
         "alternative": "It's Cardamom (optional)",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -1138,140 +396,19 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "04f2651c-849a-4583-a432-34133876eb79",
-    "name": "Chili Dipping Sauce",
-    "course": "sauces",
-    "cuisine": "CN",
-    "subcategory": null,
-    "serves": "",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Red Pepper Flakes",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "3.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Seeds",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Toasted",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Scallion",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ginger",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Oil",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Oyster Sauce",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Black Vinegar",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Chinkiang / alt: Rice Vinegar",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Light Soy",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Water",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Oil",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Optional",
-        "isOptional": true,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Put chili flakes, garlic, sesame seeds, garlic, ginger, scallion in a bowl and mix (first 5 ingredients)",
-      "Pour smoking hot oil on top and stir a bit",
-      "Add remaining ingredients and mix again",
-      "I opted to add the final Tbsp of sesame oil, but this is optional",
-      "I didn't toast the sesame seeds either and it was fine"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -1283,6 +420,7 @@
     "serves": "12.0",
     "time": "35 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -1292,7 +430,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cardamom",
@@ -1301,7 +440,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cumin",
@@ -1310,7 +450,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cinnamon",
@@ -1319,7 +460,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cloves",
@@ -1328,7 +470,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic Powder",
@@ -1337,7 +480,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nutmeg",
@@ -1346,7 +490,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garam Masala",
@@ -1355,7 +500,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Black Pepper",
@@ -1364,7 +510,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Ginger",
@@ -1373,7 +520,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Onion",
@@ -1382,7 +530,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Chilli",
@@ -1391,7 +540,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Curry",
@@ -1400,7 +550,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Butter",
@@ -1409,7 +560,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Flour",
@@ -1418,7 +570,8 @@
         "preparation": null,
         "alternative": "AP",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Honey",
@@ -1427,7 +580,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -1441,430 +595,184 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "b2b91fd4-cb2c-48fd-ae09-b7619b2c5a02",
-    "name": "Lemon Mayo",
+    "uuid": "54617cc9-be1b-41cd-b5b8-4014bbb7d5dd",
+    "name": "Diana Sauce",
     "course": "sauces",
-    "cuisine": "JP",
+    "cuisine": null,
     "subcategory": null,
-    "serves": "4.0",
-    "time": "5 min",
+    "serves": "",
+    "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Kupie Mayo",
-        "amount": "3 Tbsp",
+        "name": "Tomato Puree",
+        "amount": "1 C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Cream",
+        "name": "Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "White Vinegar",
+        "amount": "¾ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Dijon",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Molasses",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic Powder",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Worcestershire",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Onion Powder",
         "amount": "½ tsp",
         "unit": null,
         "preparation": null,
-        "alternative": "alt: milk",
+        "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Lemon Juice",
+        "name": "Paprika",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Tumeric",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cayenne",
         "amount": "¼ tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sugar",
-        "amount": "⅛ tsp",
+        "name": "Black Pepper",
+        "amount": "¼ tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Mix",
-      "Part of Japanese McDonald's copycat Teriyaki burger (burger, sauces, lettuce only)"
+      "Whisk everything together in a medium sauce pan",
+      "Bring to a boil; Reduce heat and simmer ~5 minutes",
+      "Cool"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "b09211b2-c2aa-43e8-a80c-2fd3adafd9bb",
-    "name": "Tariyaki Sauce (Burger)",
-    "course": "sauces",
-    "cuisine": "JP",
-    "subcategory": null,
-    "serves": "8.0",
-    "time": "5 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Soy Sauce",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Mirin",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sake",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Water",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ketchup",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ginger",
-        "amount": "2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
-        "amount": "2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Corn Starch",
-        "amount": "2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "diluted in 1 tsp water",
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Add everything except corn starch to saucepan and bring to a boil",
-      "Add corn starch and mix",
-      "When it comes back up to a boil and starts to thicken, turn off heat",
-      "Part of Japanese McDonald's copycat Teriyaki burger (burger, sauces, lettuce only)"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "8c075e07-417a-491e-b965-b5e629f506b6",
-    "name": "Salad Dressing",
-    "course": "sauces",
-    "cuisine": "JP",
-    "subcategory": null,
-    "serves": "4.0",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Sesame Seeds",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Miso Paste",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lemon Juice",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Water",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Grind seeds in morter; Mix",
-      "Similar-ish to restaurant salad dressing you get but better"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "f8033be5-b047-4979-b656-a303b5c92731",
-    "name": "Korean Fried Chicken Sauce",
-    "course": "sauces",
-    "cuisine": "KR",
-    "subcategory": null,
-    "serves": "2-3 meals",
-    "time": "5 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Ketchup",
-        "amount": "3 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Gochujang",
-        "amount": "2.5 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Sriracha",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Minced Garlic",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Oil",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Honey",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Brown Sugar",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Mix everything together"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "de230e2c-75a4-48cf-8c29-efb435e4f508",
-    "name": "Gochujang Bibimbap Sauce",
-    "course": "sauces",
-    "cuisine": "KR",
-    "subcategory": null,
-    "serves": "10.0",
-    "time": "5 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Gochujang",
-        "amount": "½ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Sriracha",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Oil",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Water",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Seeds",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Toasted",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vinegar",
-        "amount": "4 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Apple or Rice",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Minced Garlic",
-        "amount": "4 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Mix everything in together"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -1876,6 +784,7 @@
     "serves": "10.0",
     "time": "5 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -1885,7 +794,8 @@
         "preparation": null,
         "alternative": "alt: Miso",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Water",
@@ -1894,7 +804,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Sesame Oil",
@@ -1903,7 +814,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Sesame Seeds",
@@ -1912,7 +824,8 @@
         "preparation": null,
         "alternative": "Toasted",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Honey",
@@ -1921,7 +834,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Minced Garlic",
@@ -1930,7 +844,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -1938,82 +853,487 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "747826cb-8b9c-4e92-93b5-f40f219934dd",
-    "name": "Kid Bibimbap Sauce",
+    "uuid": "e3003019-414f-4311-993a-ee9c5684fd77",
+    "name": "Fish Taco Sauce",
+    "course": "sauces",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Yellow Pepper",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Red Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cilantro",
+        "amount": "Handfull",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "4-6 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ghost Pepper",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vinegar",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Cider (pref)",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lime Juice",
+        "amount": "2021-01-02 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "S&P",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Grill pineapple, pepper and onion until charred",
+      "Peel veg and rough chop",
+      "Add all ingredients to blender and adjust until consistancy and flavour is good"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "ee7d7363-6715-449a-a67d-8da0b2cd9b7f",
+    "name": "Fruity Ghost Pepper Sauce",
+    "course": "sauces",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Shallot",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "4-5 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ghost Pepper",
+        "amount": "2021-01-02 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Mango",
+        "amount": "½",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Appricot Nectar",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vinegar",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Cider/White Wine (pref)",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "S&P",
+        "amount": "To Taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Roast garlic and peppers",
+      "Blend everything together",
+      "Amounts are a best guess as I do everything by taste"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "de230e2c-75a4-48cf-8c29-efb435e4f508",
+    "name": "Gochujang Bibimbap Sauce",
     "course": "sauces",
     "cuisine": "KR",
     "subcategory": null,
     "serves": "10.0",
     "time": "5 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Soy Sauce",
+        "name": "Gochujang",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Sriracha",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Water",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Toasted",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vinegar",
+        "amount": "4 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Apple or Rice",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Minced Garlic",
+        "amount": "4 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Mix everything in together"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "b706416b-f6e4-4489-ba4d-825b5c3d24d9",
+    "name": "Green Habanaro Sauce",
+    "course": "sauces",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Shallot",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "4-5 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cilantro",
+        "amount": "Handful",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Pear Nectar",
         "amount": "½ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sugar",
-        "amount": "4 tsp",
+        "name": "Lime Juice",
+        "amount": "1.0",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sesame Seeds",
-        "amount": "4 tsp",
+        "name": "Green Habanaro",
+        "amount": "2021-02-03 00:00:00",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sesame Oil",
-        "amount": "2 tsp",
+        "name": "Vinegar",
+        "amount": "To Taste",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Minced Garlic",
-        "amount": "1 tsp",
+        "name": "S&P",
+        "amount": "To Taste",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Mix everything together"
+      "Blend everything together",
+      "Add everything to taste",
+      "Add vinegar until desired consistancy"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -2025,6 +1345,7 @@
     "serves": "6.0",
     "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -2034,7 +1355,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Water",
@@ -2043,7 +1365,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Lemon Juice",
@@ -2052,7 +1375,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Dijon",
@@ -2061,7 +1385,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cayenne",
@@ -2070,7 +1395,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Dijon",
@@ -2079,7 +1405,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Butter",
@@ -2088,7 +1415,8 @@
         "preparation": null,
         "alternative": "½ C / 115 g",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Salt",
@@ -2097,7 +1425,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Tarragon",
@@ -2106,7 +1435,8 @@
         "preparation": null,
         "alternative": "optional; Béarnaise",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -2117,111 +1447,691 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "4f53e72f-ab7c-439a-ad29-0a1ac86a2d82",
-    "name": "Caesar Dressing",
+    "uuid": "fd4696eb-0475-41cf-b8b6-d8aa32bb400a",
+    "name": "Honey Garlic",
     "course": "sauces",
-    "cuisine": "IT",
+    "cuisine": null,
     "subcategory": null,
-    "serves": "4.0",
+    "serves": "",
     "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Egg Yolk",
-        "amount": "2.0",
+        "name": "Water",
+        "amount": "2-2.5 C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Brown Sugar",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Honey",
+        "amount": "5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cornstarch",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic",
-        "amount": "2.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Black Garlic",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Parmesan",
-        "amount": "½-1 C",
+        "amount": "5-6 cloves",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Add everything to pot except cornstarch and ~½ C water and bring to medium heat",
+      "Whisk cornstarch and remaining water until dissolved",
+      "Add slurry to pot and bring to boil ~5 min and remove from heat"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "f0995e69-c22b-493b-8c4d-09058c5db8ff",
+    "name": "Kansas City Style BBQ Sauce",
+    "course": "sauces",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "45 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Olive Oil",
+        "name": "Dark Brown Sugar",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Light can be used but isn't ideal",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Yellow Mustard",
         "amount": "½ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Worstershire",
-        "amount": "6 tsp",
+        "name": "Cider Vinegar",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Can use half if you don't like tart",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Worcestershire",
+        "amount": "0.33 C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Dijon",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Lemon Juice",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Lime (original)",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "S&P",
-        "amount": "To Taste",
+        "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Steak Sauce",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "A1 / HP",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Dark Molasses",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Fancy",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Honey",
+        "amount": "¼ - 0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Depends on your taste",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vegetable Oil",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Chili Powder",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Kosher Salt",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Hot Sauce",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Simple like Tobasco (Chipotle is good)",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "4 cloves",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Liquid Smoke",
+        "amount": "0.33 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Entirely optional; Better for non-meat",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Mash garlic, then add everything but oil in a bowl or food processor",
-      "Slowly add oil while whisking",
-      "Add more Worstershire if needed; Add more/less cheese as needed"
+      "Mix chili powder, salt and pepper",
+      "In a large bowl mix ketchup, mustard, vinegar, Worcestershire, lemon juice, steak sauce, molasses, honey, hotsauce and brown sugar",
+      "Finely chop onion and garlic",
+      "Cook onions until translucent then add garlic and cook for ~1 min",
+      "Add dried spices and cook ~2 min until aromatic",
+      "Add wet ingredients and simmer for 15 min to thicken a bit",
+      "Taste and adjust; It may taste vinegary but this won't be as pronounced on the meat",
+      "Strain if you want to remove the onion and garlic chunks (or blend I guess)"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "747826cb-8b9c-4e92-93b5-f40f219934dd",
+    "name": "Kid Bibimbap Sauce",
+    "course": "sauces",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "10.0",
+    "time": "5 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Soy Sauce",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "4 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "4 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Minced Garlic",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Mix everything together"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "f8033be5-b047-4979-b656-a303b5c92731",
+    "name": "Korean Fried Chicken Sauce",
+    "course": "sauces",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "2-3 meals",
+    "time": "5 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Gochujang",
+        "amount": "2.5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Sriracha",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Minced Garlic",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Honey",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Brown Sugar",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Mix everything together"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "b2b91fd4-cb2c-48fd-ae09-b7619b2c5a02",
+    "name": "Lemon Mayo",
+    "course": "sauces",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "5 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Kupie Mayo",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cream",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: milk",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "⅛ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Mix",
+      "Part of Japanese McDonald's copycat Teriyaki burger (burger, sauces, lettuce only)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "d6fdab92-a809-4ab6-a996-fdb9c54a6087",
+    "name": "Peach and Sweet Corn Salsa",
+    "course": "sauces",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Peaches",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Corn",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Shallot",
+        "amount": "2021-01-02 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Red Onion",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cilantro",
+        "amount": "½-0.75 bunch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lime",
+        "amount": "2021-01-02 00:00:00",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Boil corn then cut off cob and allow to cool",
+      "Cut peaches a similar size as corn nibblets",
+      "Bruoise shallot and garlic",
+      "Rough chop cilanto",
+      "Mix everything with lime juice together"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -2233,6 +2143,7 @@
     "serves": "4.0",
     "time": "15 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -2242,7 +2153,8 @@
         "preparation": null,
         "alternative": "Cut a cross in skin to peel",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic",
@@ -2251,7 +2163,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nora Peppers",
@@ -2260,7 +2173,8 @@
         "preparation": null,
         "alternative": "alt: Cascabel, Ancho, Red Bell (worst)",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Bread",
@@ -2269,7 +2183,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Hazelnuts",
@@ -2278,7 +2193,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Almonds",
@@ -2287,7 +2203,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Salt",
@@ -2296,7 +2213,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Olive Oil",
@@ -2305,7 +2223,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Vinegar",
@@ -2314,7 +2233,8 @@
         "preparation": null,
         "alternative": "Sherry/Red Wine",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -2330,12 +2250,460 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "8c075e07-417a-491e-b965-b5e629f506b6",
+    "name": "Salad Dressing",
+    "course": "sauces",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Sesame Seeds",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Miso Paste",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Water",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Grind seeds in morter; Mix",
+      "Similar-ish to restaurant salad dressing you get but better"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "6fcff402-f185-473c-9fab-1c4281c84d93",
+    "name": "Salvation Sauce",
+    "course": "sauces",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Serrano",
+        "amount": "165 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "green",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "5.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "large!",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vinegar",
+        "amount": "2/3 C / 160 ml",
+        "unit": null,
+        "preparation": null,
+        "alternative": "white; too much?",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lime Juice",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1/2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Water",
+        "amount": "depends",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Blend everything together",
+      "Add water if it's too thick; more garlic if it needs it; sugar to balance; etc",
+      "I thought it was too vinegar heavy; use half then adjust (had to add water+sugar)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "34ce1440-b4f5-4dd5-be49-ebbd0515d41b",
+    "name": "Sweet and Sour Sauce",
+    "course": "sauces",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Water",
+        "amount": "½ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ketchup",
+        "amount": "4 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "4 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Corn Starch",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vegetable Oil",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Rice Vinegar",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: 1 Tbsp lemon juice",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Heat oil in pan then add ketchup and sugar over low heat until large bubbles start to form",
+      "Stir in ginger, scallion and water",
+      "Add vinegar, salt and starch (disolve into a Tbsp of water first); Stir until thickened",
+      "Add in pork, chicke, tofu, etc"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "b09211b2-c2aa-43e8-a80c-2fd3adafd9bb",
+    "name": "Tariyaki Sauce (Burger)",
+    "course": "sauces",
+    "cuisine": "JP",
+    "subcategory": null,
+    "serves": "8.0",
+    "time": "5 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Soy Sauce",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Mirin",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sake",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Water",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ketchup",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ginger",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Corn Starch",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "diluted in 1 tsp water",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Add everything except corn starch to saucepan and bring to a boil",
+      "Add corn starch and mix",
+      "When it comes back up to a boil and starts to thicken, turn off heat",
+      "Part of Japanese McDonald's copycat Teriyaki burger (burger, sauces, lettuce only)"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   }
 ]

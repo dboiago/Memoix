@@ -1,111 +1,246 @@
 [
   {
-    "uuid": "46e0ddc5-cb0b-493e-89e2-e635f0cc3b6b",
-    "name": "Ribs (Seitan)",
+    "uuid": "207f6234-b2a0-4d19-afbd-bdc09c915ff8",
+    "name": "Bologna (Seitan)",
     "course": "vegn",
-    "cuisine": null,
+    "cuisine": "IT",
     "subcategory": null,
-    "serves": "2021-03-04 00:00:00",
-    "time": "",
+    "serves": "1.0",
+    "time": "1 hr",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Vital Wheat Glutan",
-        "amount": "2 C",
+        "name": "Tofu",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Extra Firm",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Ketchup",
+        "amount": "½ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nutritional Yeast",
-        "amount": "4 Tbsp",
+        "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Smoked Paprika",
+        "name": "Soy Sauce",
         "amount": "2 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Onion Powder",
-        "amount": "4 tsp",
+        "amount": "1.5 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic Powder",
-        "amount": "2 tsp",
+        "amount": "1.5 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Black Pepper",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Liquid Smoke",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Peanut Buuter",
+        "name": "Paprika",
         "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
-        "alternative": "Optional / Do not like",
-        "isOptional": true,
-        "section": null
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Mustard Powder",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vital Wheat Gluten",
+        "amount": "1.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Add wet to dry to make a dough; Need 2-3 minutes",
-      "Put dough in 8x8 greased pan and flatten out to desired height",
-      "Bake 25 min at 350",
-      "Brush with BBQ sauce and grill"
+      "In food processor add everything except wheat gluten and blend until smooth(ish)",
+      "Add wheat gluten and pulse to incorporate",
+      "Kneed dough (will be crumbly) until you can form a log",
+      "Roll in foil, twisting ends (tight!)",
+      "Steam for 1 hr",
+      "Allow to cool while wrapped before eating"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "fc380837-1fbf-4b25-947e-6c488c1d2549",
+    "name": "Chicken/Other Pieces (Seitan)",
+    "course": "vegn",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "20 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Vital Wheat Gluten",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Flour",
+        "amount": "¼ C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Broth Powder",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Omit if using stock",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Onion Powder",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic Powder",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Water",
+        "amount": "0.66 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: stock or marinade",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Whisk together all dry ingredients",
+      "Pour in water and mix to form a ball",
+      "Tear pieces off and place into steamer for 10 min",
+      "Cook in frying pan and sauce as desired"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -117,6 +252,7 @@
     "serves": "4.0",
     "time": "1 hr",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -126,7 +262,8 @@
         "preparation": null,
         "alternative": "Extra firm",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Vegetable Broth",
@@ -135,7 +272,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nori",
@@ -144,7 +282,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cider Vinegar",
@@ -153,7 +292,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "White Miso",
@@ -162,7 +302,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic",
@@ -171,7 +312,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Salt",
@@ -180,7 +322,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Turmeric",
@@ -189,7 +332,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Beet",
@@ -198,7 +342,8 @@
         "preparation": null,
         "alternative": "Walnut Size / Raw; Optional",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nori",
@@ -207,7 +352,8 @@
         "preparation": null,
         "alternative": "Optional",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cornstarch",
@@ -216,7 +362,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Oil",
@@ -225,7 +372,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Lemon Wedge",
@@ -234,7 +382,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -250,178 +399,142 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "fc380837-1fbf-4b25-947e-6c488c1d2549",
-    "name": "Chicken/Other Pieces (Seitan)",
+    "uuid": "33466d85-3fd1-498d-b62f-4e3bd105dd0f",
+    "name": "Italian Sausage (Seitan)",
     "course": "vegn",
-    "cuisine": null,
+    "cuisine": "IT",
     "subcategory": null,
-    "serves": "4.0",
-    "time": "20 min",
+    "serves": "6.0",
+    "time": "1 hr",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Vital Wheat Gluten",
+        "name": "Onion",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vegetable Broth",
         "amount": "0.75 C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Flour",
+        "name": "Tomato Paste",
         "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Broth Powder",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Omit if using stock",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Onion Powder",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic Powder",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Water",
-        "amount": "0.66 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: stock or marinade",
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Whisk together all dry ingredients",
-      "Pour in water and mix to form a ball",
-      "Tear pieces off and place into steamer for 10 min",
-      "Cook in frying pan and sauce as desired"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "d2e753fe-d54c-49d8-bf87-642f3ce014c5",
-    "name": "Wheat Starch Bacon",
-    "course": "vegn",
-    "cuisine": null,
-    "subcategory": null,
-    "serves": "20.0",
-    "time": "45 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Starch Water",
-        "amount": "1.5 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
+        "name": "White Miso",
         "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Paprika",
-        "amount": "1.5 Tbsp",
+        "name": "Sundried Tomatoes",
+        "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Maple Syrup",
-        "amount": "1.5 Tbsp",
+        "name": "Nutritional Yeast",
+        "amount": "2 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Liquid Smoke",
+        "name": "Basil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Brown Sugar",
         "amount": "2 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Garlic Powder",
-        "amount": "1.5 tsp",
+        "name": "Fennel Seeds",
+        "amount": "2 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Onion Powder",
-        "amount": "1.5 tsp",
+        "name": "Rosemary",
+        "amount": "1 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Salt",
@@ -430,34 +543,18 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Starch Water",
-        "amount": "0.75 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic Powder",
+        "name": "Red Pepper Flakes",
         "amount": "½ tsp",
         "unit": null,
         "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Liquid Smoke",
@@ -466,26 +563,172 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vital Wheat Gluten",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "If using water from washed seitan let rest overnight so water seperates",
-      "Gently pour off yellow water then stir the white starch to smooth; Add splash of water if needed to thin to a batter",
-      "alt: If using purchased dry starch, mix with water to get batter consistency",
-      "Mix together the ingredients (seperate red and white if mimicing fat)",
-      "Fry red like a crepe in pan on both sides; Drizzle white over top for fat effect",
-      "Cut into strips once cooled",
-      "Fry like bacon"
+      "Saute onion and garlic until translucent",
+      "Whisk together broth, tomato paste, miso paste until smooth",
+      "Add tomatoes, yeast, basil, sugar, fennel, rosemary, salt, pepper flakes, liquid smoke and the onion and garlic (including any oil from pan)",
+      "Add wheat gluten and kneed until combined (only kneed enough to combine so it doesn't get tough)",
+      "Cut into 6 pices and shape into sausage shape",
+      "Roll in aluminium foil and twist ends closed",
+      "Steam for 40 minutes",
+      "Cool (overnight best) in foil; In fridge",
+      "Grill, fry, whatever then eat"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "46e0ddc5-cb0b-493e-89e2-e635f0cc3b6b",
+    "name": "Ribs (Seitan)",
+    "course": "vegn",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "2021-03-04 00:00:00",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Vital Wheat Glutan",
+        "amount": "2 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Nutritional Yeast",
+        "amount": "4 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Smoked Paprika",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Onion Powder",
+        "amount": "4 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic Powder",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Liquid Smoke",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Peanut Buuter",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional / Do not like",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Add wet to dry to make a dough; Need 2-3 minutes",
+      "Put dough in 8x8 greased pan and flatten out to desired height",
+      "Bake 25 min at 350",
+      "Brush with BBQ sauce and grill"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -497,6 +740,7 @@
     "serves": "4.0",
     "time": "45 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -506,7 +750,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cooked Lentils",
@@ -515,7 +760,8 @@
         "preparation": null,
         "alternative": "Canned are cooked",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Water",
@@ -524,7 +770,8 @@
         "preparation": null,
         "alternative": "alt: \"Beef: broth / Stock",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nutritional Yeast",
@@ -533,7 +780,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Tomato Paste",
@@ -542,7 +790,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Soy Sauce",
@@ -551,7 +800,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic Powder",
@@ -560,7 +810,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Chili Powder",
@@ -569,7 +820,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Liquid Smoke",
@@ -578,7 +830,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Black Pepper",
@@ -587,7 +840,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -599,12 +853,19 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -616,6 +877,7 @@
     "serves": "4.0",
     "time": "3.75 hr",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -625,7 +887,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Water",
@@ -634,7 +897,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Stock",
@@ -643,7 +907,8 @@
         "preparation": null,
         "alternative": "Use to flavour",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -665,123 +930,102 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "33466d85-3fd1-498d-b62f-4e3bd105dd0f",
-    "name": "Italian Sausage (Seitan)",
+    "uuid": "d2e753fe-d54c-49d8-bf87-642f3ce014c5",
+    "name": "Wheat Starch Bacon",
     "course": "vegn",
-    "cuisine": "IT",
+    "cuisine": null,
     "subcategory": null,
-    "serves": "6.0",
-    "time": "1 hr",
+    "serves": "20.0",
+    "time": "45 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Onion",
-        "amount": "1.0",
+        "name": "Starch Water",
+        "amount": "1.5 C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Garlic",
-        "amount": "3.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vegetable Broth",
-        "amount": "0.75 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Tomato Paste",
+        "name": "Soy Sauce",
         "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "White Miso",
-        "amount": "¼ C",
+        "name": "Paprika",
+        "amount": "1.5 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sundried Tomatoes",
-        "amount": "¼ C",
+        "name": "Maple Syrup",
+        "amount": "1.5 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Nutritional Yeast",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Basil",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Brown Sugar",
+        "name": "Liquid Smoke",
         "amount": "2 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Fennel Seeds",
-        "amount": "2 tsp",
+        "name": "Garlic Powder",
+        "amount": "1.5 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Rosemary",
-        "amount": "1 tsp",
+        "name": "Onion Powder",
+        "amount": "1.5 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Salt",
@@ -790,16 +1034,38 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Red Pepper Flakes",
+        "name": "Starch Water",
+        "amount": "0.75 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic Powder",
         "amount": "½ tsp",
         "unit": null,
         "preparation": null,
-        "alternative": "Optional",
-        "isOptional": true,
-        "section": null
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Liquid Smoke",
@@ -808,157 +1074,34 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vital Wheat Gluten",
-        "amount": "2 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Saute onion and garlic until translucent",
-      "Whisk together broth, tomato paste, miso paste until smooth",
-      "Add tomatoes, yeast, basil, sugar, fennel, rosemary, salt, pepper flakes, liquid smoke and the onion and garlic (including any oil from pan)",
-      "Add wheat gluten and kneed until combined (only kneed enough to combine so it doesn't get tough)",
-      "Cut into 6 pices and shape into sausage shape",
-      "Roll in aluminium foil and twist ends closed",
-      "Steam for 40 minutes",
-      "Cool (overnight best) in foil; In fridge",
-      "Grill, fry, whatever then eat"
+      "If using water from washed seitan let rest overnight so water seperates",
+      "Gently pour off yellow water then stir the white starch to smooth; Add splash of water if needed to thin to a batter",
+      "alt: If using purchased dry starch, mix with water to get batter consistency",
+      "Mix together the ingredients (seperate red and white if mimicing fat)",
+      "Fry red like a crepe in pan on both sides; Drizzle white over top for fat effect",
+      "Cut into strips once cooled",
+      "Fry like bacon"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "207f6234-b2a0-4d19-afbd-bdc09c915ff8",
-    "name": "Bologna (Seitan)",
-    "course": "vegn",
-    "cuisine": "IT",
-    "subcategory": null,
-    "serves": "1.0",
-    "time": "1 hr",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Tofu",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Extra Firm",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ketchup",
-        "amount": "½ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Nutritional Yeast",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Onion Powder",
-        "amount": "1.5 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic Powder",
-        "amount": "1.5 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Paprika",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Mustard Powder",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Nutmeg",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vital Wheat Gluten",
-        "amount": "1.75 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "In food processor add everything except wheat gluten and blend until smooth(ish)",
-      "Add wheat gluten and pulse to incorporate",
-      "Kneed dough (will be crumbly) until you can form a log",
-      "Roll in foil, twisting ends (tight!)",
-      "Steam for 1 hr",
-      "Allow to cool while wrapped before eating"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   }
 ]

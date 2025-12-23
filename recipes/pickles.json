@@ -1,5 +1,140 @@
 [
   {
+    "uuid": "ca04a047-5217-4acd-826f-4a917cd38c17",
+    "name": "Oi Kimchi (Cucumber)",
+    "course": "pickles",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "6.0",
+    "time": "30 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cucumbers",
+        "amount": "3 / 1 lb",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Carrot",
+        "amount": "50 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic Chive",
+        "amount": "20 g",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Chives / Optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sea Salt",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Gochugaru",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Chipotle (ideal), Red Pepper Flakes, Sriracha",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Minced Garlic",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Grated Red Apple",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Asian Pear",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Honey",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Minced Ginger",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Cut cucumber into ~6 pieces and mix with salt for 20 min",
+      "Brush off salt and add the sauce; also add other veg if using",
+      "Keep at room temperature for 12-18 hours then refrigerate"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
     "uuid": "7bdb285d-0c38-44a7-930f-42c3b445b254",
     "name": "Pickled Green Strawberries",
     "course": "pickles",
@@ -8,6 +143,7 @@
     "serves": "6-8 / 3 Quarts",
     "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -17,7 +153,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Mustard Seeds",
@@ -26,7 +163,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Coriander Seeds",
@@ -35,7 +173,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Black Peppercorn",
@@ -44,7 +183,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Honey",
@@ -53,7 +193,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Kosher Salt",
@@ -62,7 +203,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "White Verjus",
@@ -71,7 +213,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "White Balsamic Vinegar",
@@ -80,7 +223,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Water",
@@ -89,7 +233,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Thyme Sprig",
@@ -98,7 +243,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Bay Leaf",
@@ -107,7 +253,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -118,129 +265,19 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "ca04a047-5217-4acd-826f-4a917cd38c17",
-    "name": "Oi Kimchi (Cucumber)",
-    "course": "pickles",
-    "cuisine": "KR",
-    "subcategory": null,
-    "serves": "6.0",
-    "time": "30 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Cucumbers",
-        "amount": "3 / 1 lb",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Carrot",
-        "amount": "50 g",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Optional",
-        "isOptional": true,
-        "section": null
-      },
-      {
-        "name": "Garlic Chive",
-        "amount": "20 g",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Chives / Optional",
-        "isOptional": true,
-        "section": null
-      },
-      {
-        "name": "Sea Salt",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Gochugaru",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Chipotle (ideal), Red Pepper Flakes, Sriracha",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Minced Garlic",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Grated Red Apple",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Asian Pear",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Honey",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Minced Ginger",
-        "amount": "½ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Cut cucumber into ~6 pieces and mix with salt for 20 min",
-      "Brush off salt and add the sauce; also add other veg if using",
-      "Keep at room temperature for 12-18 hours then refrigerate"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   }
 ]

@@ -8,6 +8,7 @@
     "serves": "4",
     "time": null,
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
@@ -17,7 +18,8 @@
         "preparation": null,
         "alternative": "Firm; 1 Bock",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Dashi",
@@ -26,7 +28,8 @@
         "preparation": null,
         "alternative": "",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Soy Sauce",
@@ -35,7 +38,8 @@
         "preparation": null,
         "alternative": "",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Mirin",
@@ -44,7 +48,8 @@
         "preparation": null,
         "alternative": "",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Sugar",
@@ -53,7 +58,8 @@
         "preparation": null,
         "alternative": "",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -62,6 +68,10 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
     "isFavorite": false,
@@ -69,8 +79,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   }
 ]

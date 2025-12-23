@@ -1,0 +1,190 @@
+[
+  {
+    "uuid": "cf1ab28b-c25d-4b80-956b-d1dc674bf463",
+    "name": "Aegean",
+    "base": "oil",
+    "cheeses": [
+      "Feta",
+      "Mozzarella"
+    ],
+    "proteins": [
+      "Spiced Grilled Chicken"
+    ],
+    "vegetables": [
+      "Cucumber",
+      "Kalamata Olives",
+      "Parsley",
+      "Tzatziki"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:23:06.930641",
+    "updatedAt": "2025-12-23T12:23:06.930641",
+    "version": 1
+  },
+  {
+    "uuid": "dd676e80-3883-4a8d-aed6-6cb044259125",
+    "name": "Alpine",
+    "base": "oil",
+    "cheeses": [
+      "Gorgonzola",
+      "Fontina",
+      "Mozzarella"
+    ],
+    "proteins": [],
+    "vegetables": [
+      "Caramelized Onions",
+      "Caramelized Pears",
+      "Hazelnut (Optional)"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:16:13.408025",
+    "updatedAt": "2025-12-23T12:23:18.202797",
+    "version": 1
+  },
+  {
+    "uuid": "91275016-3bc8-412e-9054-ca4bf21dfe9c",
+    "name": "Buffalo Blue",
+    "base": "cream",
+    "cheeses": [
+      "Gorgonzola",
+      "Mozzarella"
+    ],
+    "proteins": [
+      "Buffalo Chicken"
+    ],
+    "vegetables": [
+      "Celery",
+      "Carrot"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:18:54.957929",
+    "updatedAt": "2025-12-23T12:25:23.849997",
+    "version": 1
+  },
+  {
+    "uuid": "81b30c45-4f64-43ae-82d4-0d9e702632fe",
+    "name": "Butcher's Harvest",
+    "base": "marinara",
+    "cheeses": [
+      "Fontina",
+      "Parmesan",
+      "Mozzarella"
+    ],
+    "proteins": [
+      "Grilled Italian Sausage"
+    ],
+    "vegetables": [
+      "Sauteed Mushrooms",
+      "Caramelized Onions"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:21:28.043627",
+    "updatedAt": "2025-12-23T12:21:28.043627",
+    "version": 1
+  },
+  {
+    "uuid": "44080d1b-d203-4e99-a9af-76ae8094c0c3",
+    "name": "Garden Roast",
+    "base": "marinara",
+    "cheeses": [
+      "Goat Cheese",
+      "Mozzarella"
+    ],
+    "proteins": [],
+    "vegetables": [
+      "Roasted Red Peppers",
+      "Roasted Yellow Peppers",
+      "Caramelized Onions",
+      "Parsley"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:20:27.716291",
+    "updatedAt": "2025-12-23T12:20:27.716291",
+    "version": 1
+  },
+  {
+    "uuid": "c22f19ab-2670-42ea-ac74-e39bc2765dcd",
+    "name": "Smokehouse",
+    "base": "bbq",
+    "cheeses": [
+      "Smoked Gouda",
+      "Mozzarella"
+    ],
+    "proteins": [
+      "BBQ Chicken"
+    ],
+    "vegetables": [
+      "Red Onions",
+      "Cilantro"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:14:30.595522",
+    "updatedAt": "2025-12-23T12:25:10.804375",
+    "version": 1
+  },
+  {
+    "uuid": "61f893ba-67ba-4806-9812-7aa55f311ea3",
+    "name": "Umami",
+    "base": "pesto",
+    "cheeses": [
+      "Fontina",
+      "Mozzarella"
+    ],
+    "proteins": [
+      "Chicken"
+    ],
+    "vegetables": [
+      "Cremini Mushrooms",
+      "Shiitake Mushrooms",
+      "Portobello Mushrooms",
+      "White Mushrooms",
+      "Parsley"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:24:31.583966",
+    "updatedAt": "2025-12-23T12:24:31.583966",
+    "version": 1
+  }
+]

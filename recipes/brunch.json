@@ -1,86 +1,95 @@
 [
   {
-    "uuid": "f27cf855-3c76-4ba5-8104-99bb84c314e8",
-    "name": "Japanese Souffle Pancake",
+    "uuid": "55537aa1-565c-4931-adc9-e598339b25b0",
+    "name": "Souffle Pancake",
     "course": "brunch",
     "cuisine": "JP",
     "subcategory": null,
-    "serves": "1 (2 pancakes)",
-    "time": "40 min",
+    "serves": "1",
+    "time": "40m",
     "pairsWith": [],
-    "notes": "",
+    "pairedRecipeIds": [],
+    "notes": null,
     "ingredients": [
       {
         "name": "Flour",
-        "amount": "3 Tbsp / 30 g",
-        "unit": null,
-        "preparation": null,
+        "amount": "3",
+        "unit": "Tbsp",
+        "preparation": "30 g",
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Milk",
-        "amount": "2 Tbsp",
-        "unit": null,
+        "amount": "2",
+        "unit": "Tbsp",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Baking Powder",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Egg Yolk",
-        "amount": "1.0",
+        "amount": "1",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Sugar",
-        "amount": "1 Tbsp",
-        "unit": null,
+        "amount": "½",
+        "unit": "Tbsp",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Cream of Tartar",
-        "amount": "0.125 tsp",
-        "unit": null,
+        "name": "Baking Powder",
+        "amount": "¼",
+        "unit": "tsp",
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Egg White",
-        "amount": "2.0",
+        "amount": "2",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": "Egg Whites",
+        "bakerPercent": null
+      },
+      {
+        "name": "Suger",
+        "amount": "1",
+        "unit": "Tbsp",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": "Egg Whites",
+        "bakerPercent": null
+      },
+      {
+        "name": "Cream of Tartar",
+        "amount": "Pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": "Egg Whites",
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -96,12 +105,19 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
-    "source": "memoix",
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "personal",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-23T10:15:56.273227",
+    "updatedAt": "2025-12-23T10:15:56.273227",
     "version": 1
   }
 ]

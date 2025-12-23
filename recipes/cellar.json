@@ -1,0 +1,36 @@
+[
+  {
+    "uuid": "6f3e10b3-90cb-43ca-9f04-58670fb72f2d",
+    "name": "Dillon's Black Walnut Amaro",
+    "producer": "CA",
+    "category": "Amaro",
+    "buy": true,
+    "tastingNotes": "Kind of like Nocino, but not as good. Still excellent.",
+    "abv": "26",
+    "ageVintage": null,
+    "priceRange": 4,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "createdAt": "2025-12-23T12:57:00.972027",
+    "updatedAt": "2025-12-23T12:57:00.972027",
+    "version": 1
+  },
+  {
+    "uuid": "b096dfd9-a4f6-47be-8aec-bf79c3d00436",
+    "name": "Nonino Quintessentia Amaro",
+    "producer": "IT",
+    "category": null,
+    "buy": true,
+    "tastingNotes": "Love this. Citrus, butter, herbs, spice. Great balance.",
+    "abv": "35",
+    "ageVintage": null,
+    "priceRange": 4,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": true,
+    "createdAt": "2025-12-23T12:59:39.294730",
+    "updatedAt": "2025-12-23T12:59:40.841881",
+    "version": 1
+  }
+]

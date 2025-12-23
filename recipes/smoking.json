@@ -1,0 +1,230 @@
+[
+  {
+    "uuid": "e4ac78fd-e64c-4bee-bce9-7220c3d8de09",
+    "name": "Carrots",
+    "course": "smoking",
+    "type": "pitNote",
+    "item": "Carrots",
+    "category": "Vegetables",
+    "temperature": "275",
+    "time": "4",
+    "wood": "Hickory",
+    "seasonings": [
+      {
+        "name": "Olive Oil",
+        "amount": null,
+        "unit": null
+      },
+      {
+        "name": "Mustard",
+        "amount": null,
+        "unit": null
+      },
+      {
+        "name": "Rub",
+        "amount": null,
+        "unit": null
+      },
+      {
+        "name": "BBQ Sauce",
+        "amount": null,
+        "unit": null
+      }
+    ],
+    "ingredients": [],
+    "serves": null,
+    "directions": [
+      "peel and chop",
+      "Toss in seasonings and smoke 2 hours",
+      "Transfer to a pan and add butter, brown sugar, honey and more rub and BBQ sauce",
+      "Cover and smoke 2 more hours (check tenderness)"
+    ],
+    "notes": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:46:40.616389",
+    "updatedAt": "2025-12-23T12:46:50.387730"
+  },
+  {
+    "uuid": "7ca0e10a-73f8-4b07-aeff-4c20da013e62",
+    "name": "Cheez-its",
+    "course": "smoking",
+    "type": "pitNote",
+    "item": "Cheez-its",
+    "category": "Snack",
+    "temperature": "225",
+    "time": "2",
+    "wood": "Hickory",
+    "seasonings": [
+      {
+        "name": "Olive oil",
+        "amount": null,
+        "unit": null
+      },
+      {
+        "name": "Seasoning",
+        "amount": null,
+        "unit": null
+      }
+    ],
+    "ingredients": [],
+    "serves": null,
+    "directions": [
+      "Cover in olive oil lightly then toss in seasoning of choice"
+    ],
+    "notes": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:41:35.955278",
+    "updatedAt": "2025-12-23T12:41:35.955278"
+  },
+  {
+    "uuid": "61189665-0ce3-4312-80e5-caf2533bfb34",
+    "name": "Cream Cheese",
+    "course": "smoking",
+    "type": "pitNote",
+    "item": "Cream Cheese",
+    "category": "Cheese",
+    "temperature": "225",
+    "time": "1½ h",
+    "wood": "Hickory",
+    "seasonings": [
+      {
+        "name": "Any rub of choice",
+        "amount": null,
+        "unit": null
+      }
+    ],
+    "ingredients": [],
+    "serves": null,
+    "directions": [
+      "Open the Cream Cheese packet and cover with whatever seasoning or rub is being used",
+      "Flip over in the foil; Cut cross hatches; season more",
+      "Can be served with jam/pepper jelly or coated with mustard before the rub/seasoning"
+    ],
+    "notes": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:38:12.396641",
+    "updatedAt": "2025-12-23T12:39:24.150565"
+  },
+  {
+    "uuid": "391d414f-6937-47f9-b7c8-623d12e28599",
+    "name": "Garlic",
+    "course": "smoking",
+    "type": "pitNote",
+    "item": "Garlic",
+    "category": "Vegetables",
+    "temperature": "165",
+    "time": "2",
+    "wood": "Hickory",
+    "seasonings": [],
+    "ingredients": [],
+    "serves": null,
+    "directions": [
+      "Smoke for the first hour normally, then wrap in foil and smoke until soft"
+    ],
+    "notes": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:43:06.007398",
+    "updatedAt": "2025-12-23T12:44:27.738312"
+  },
+  {
+    "uuid": "850fb600-8af0-4e86-951c-603e345605e9",
+    "name": "Salt",
+    "course": "smoking",
+    "type": "pitNote",
+    "item": "Salt",
+    "category": "Other",
+    "temperature": "250",
+    "time": "2",
+    "wood": "Hickory",
+    "seasonings": [],
+    "ingredients": [],
+    "serves": null,
+    "directions": [
+      "Top rack; Shake periodically so it's evenly smoked"
+    ],
+    "notes": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:42:18.490245",
+    "updatedAt": "2025-12-23T12:44:40.280414"
+  },
+  {
+    "uuid": "5e19b89d-5a3a-44b2-98fd-a238fbc8e901",
+    "name": "Watermellon",
+    "course": "smoking",
+    "type": "pitNote",
+    "item": "Watermelon",
+    "category": "Fruits",
+    "temperature": "250",
+    "time": "3",
+    "wood": "Hickory",
+    "seasonings": [
+      {
+        "name": "Sugar",
+        "amount": null,
+        "unit": null
+      },
+      {
+        "name": "Honey",
+        "amount": null,
+        "unit": null
+      },
+      {
+        "name": "Lime Juice",
+        "amount": null,
+        "unit": null
+      }
+    ],
+    "ingredients": [],
+    "serves": null,
+    "directions": [
+      "Cut off rind and score",
+      "Add rub, smoke, let cool 1h"
+    ],
+    "notes": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:44:08.215392",
+    "updatedAt": "2025-12-23T12:44:08.215392"
+  }
+]

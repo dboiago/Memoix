@@ -1,0 +1,88 @@
+[
+  {
+    "uuid": "ed36be9a-b26c-40fc-a1b6-860ae66a851f",
+    "name": "Bourbon Street",
+    "bread": "Sourdough",
+    "proteins": [
+      "Blackened Chicken",
+      "Bacon"
+    ],
+    "vegetables": [
+      "Red Onion"
+    ],
+    "cheeses": [
+      "Pepper Jack"
+    ],
+    "condiments": [
+      "Spicy Mayo"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:26:44.684479",
+    "updatedAt": "2025-12-23T12:26:44.684479",
+    "version": 1
+  },
+  {
+    "uuid": "685b093f-a401-4cd8-b1b6-c49b5a89013a",
+    "name": "Cowboy",
+    "bread": "Sourdough",
+    "proteins": [
+      "Bacon"
+    ],
+    "vegetables": [
+      "Red Onion"
+    ],
+    "cheeses": [
+      "Cheddar"
+    ],
+    "condiments": [
+      "BBQ Sauce",
+      "Ranch"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:27:33.070010",
+    "updatedAt": "2025-12-23T12:27:33.070010",
+    "version": 1
+  },
+  {
+    "uuid": "64ee13cc-2339-4827-a2c9-f6149f4f87c7",
+    "name": "Mona Lisa",
+    "bread": "Ciabatta",
+    "proteins": [
+      "Grilled Chicken"
+    ],
+    "vegetables": [
+      "Red Onion",
+      "Mushrooms",
+      "Bell Pepper"
+    ],
+    "cheeses": [
+      "Mozzarella",
+      "Parmesan"
+    ],
+    "condiments": [
+      "Pesto"
+    ],
+    "notes": null,
+    "imageUrl": null,
+    "source": "personal",
+    "isFavorite": false,
+    "cookCount": 0,
+    "rating": 0,
+    "tags": [],
+    "createdAt": "2025-12-23T12:33:56.286408",
+    "updatedAt": "2025-12-23T12:33:56.286408",
+    "version": 1
+  }
+]

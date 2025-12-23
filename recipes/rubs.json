@@ -1,115 +1,156 @@
 [
   {
-    "uuid": "035304c6-c25d-4f0d-b1a5-bdff1d1d117b",
-    "name": "Shawarma Seasoning",
+    "uuid": "8817a847-2530-4014-a68e-e8d4186ced31",
+    "name": "Blackened Seasonig",
     "course": "rubs",
     "cuisine": "TR",
     "subcategory": null,
-    "serves": "2-3 meals",
-    "time": "5 minutes",
+    "serves": "",
+    "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Cumin",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Coriander",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic Powder",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Ginger",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Black Pepper",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cinnamon",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
         "name": "Paprika",
+        "amount": "3 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Smoked; Not American",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Worcestershire",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Powder",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cayenne",
         "amount": "1 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Clove",
-        "amount": "½ tsp",
+        "name": "White Pepper",
+        "amount": "1 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Cardamom",
-        "amount": "½ tsp",
+        "name": "Lemon Pepper",
+        "amount": "1 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Turmeric",
-        "amount": "½ tsp",
+        "name": "Garlic Powder",
+        "amount": "1 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Onion Powder",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Rosemary",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Thyme",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Oregeno",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Black Pepper",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       }
     ],
-    "directions": [],
+    "directions": [
+      "Not sure if this is the \"good one\"",
+      "The good one had lemon pepper, so maybe"
+    ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -121,6 +162,7 @@
     "serves": "2.5 C",
     "time": "15 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -130,7 +172,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "White Sugar",
@@ -139,7 +182,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Paprika",
@@ -148,7 +192,8 @@
         "preparation": null,
         "alternative": "Use sweet if you don't want spicy",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic Powder",
@@ -157,7 +202,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Black Pepper",
@@ -166,7 +212,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Ginger",
@@ -175,7 +222,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Onion Powder",
@@ -184,7 +232,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Rosemary",
@@ -193,7 +242,8 @@
         "preparation": null,
         "alternative": "2-3 Tbsp leaves",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -203,146 +253,150 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "8817a847-2530-4014-a68e-e8d4186ced31",
-    "name": "Blackened Seasonig",
+    "uuid": "035304c6-c25d-4f0d-b1a5-bdff1d1d117b",
+    "name": "Shawarma Seasoning",
     "course": "rubs",
     "cuisine": "TR",
     "subcategory": null,
-    "serves": "",
-    "time": "",
+    "serves": "2-3 meals",
+    "time": "5 minutes",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Paprika",
-        "amount": "3 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Smoked; Not American",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Worcestershire",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Powder",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cayenne",
-        "amount": "1 tsp",
+        "name": "Cumin",
+        "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "White Pepper",
-        "amount": "1 tsp",
+        "name": "Coriander",
+        "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lemon Pepper",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic Powder",
-        "amount": "1 tsp",
+        "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Onion Powder",
-        "amount": "1 tsp",
+        "name": "Ginger",
+        "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Rosemary",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Thyme",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Oregeno",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Black Pepper",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Paprika",
         "amount": "1 tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Clove",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cardamom",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Turmeric",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       }
     ],
-    "directions": [
-      "Not sure if this is the \"good one\"",
-      "The good one had lemon pepper, so maybe"
-    ],
+    "directions": [],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   }
 ]

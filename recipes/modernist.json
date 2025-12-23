@@ -1,0 +1,205 @@
+[
+  {
+    "uuid": "f23249bd-2951-4821-9102-71f7648bcc73",
+    "name": "Reverse Spherification",
+    "course": "modernist",
+    "type": "technique",
+    "technique": "Reverse Spherification",
+    "serves": null,
+    "time": null,
+    "difficulty": null,
+    "equipment": [],
+    "ingredients": [
+      {
+        "name": "Flavour Liquid",
+        "amount": "500",
+        "unit": "mL",
+        "notes": "This method works with Alcohol and dairy",
+        "section": null
+      },
+      {
+        "name": "Calcium Lactate Gluconate",
+        "amount": "10",
+        "unit": "g",
+        "notes": "2 tsp",
+        "section": null
+      },
+      {
+        "name": "Xanthan Gum",
+        "amount": "1",
+        "unit": "g",
+        "notes": "optional, Pinch, Helps for some Alcohol or Watery Juices",
+        "section": null
+      },
+      {
+        "name": "Distilled Water",
+        "amount": "1",
+        "unit": "L",
+        "notes": "1000 mL",
+        "section": "Bath"
+      },
+      {
+        "name": "Sodium Alginate",
+        "amount": "5",
+        "unit": "g",
+        "notes": "1 tsp",
+        "section": "Bath"
+      }
+    ],
+    "directions": [
+      "Add 2% Calcium Lactate Gluconate by weight to the Flavour Liquid",
+      "Pour into spherical mold and freeze",
+      "Drop frozen sphere into a warm Sodium Alginate bath (~50-60 °C)",
+      "If using Diary you can add less or potentially no Calcium Lactate Gluconate and just roll it from the spoon into the bath",
+      "These can be stored for a while, keeping them in a container with the liquid they were made from (without any gelling agents) works well"
+    ],
+    "notes": null,
+    "scienceNotes": null,
+    "sourceUrl": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "imageUrls": [],
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:05:53.490490",
+    "updatedAt": "2025-12-23T12:05:53.490490"
+  },
+  {
+    "uuid": "c804ffa5-869b-4a92-a025-fa8292914d34",
+    "name": "Snow",
+    "course": "modernist",
+    "type": "technique",
+    "technique": "Snow & Powders",
+    "serves": null,
+    "time": null,
+    "difficulty": null,
+    "equipment": [],
+    "ingredients": [
+      {
+        "name": "Tapioca Maltodextrin",
+        "amount": "30-40",
+        "unit": "g",
+        "notes": "1 C, aka N-Zorbit M",
+        "section": null
+      },
+      {
+        "name": "Flavourful Fat",
+        "amount": "60",
+        "unit": "g",
+        "notes": "¼ C",
+        "section": null
+      },
+      {
+        "name": "Salt",
+        "amount": "Pinch",
+        "unit": null,
+        "notes": null,
+        "section": null
+      }
+    ],
+    "directions": [
+      "Put Tapioca Maltodextrin in a bowl and slowly drizzle fat while mixing (food processor works well)",
+      "Sift through a sieve onto whatever",
+      "If it looks like paste or is clumpy, you need more Maltodextrin",
+      "For \"soil\" it's the same, but use chocolate or browned butter (can add cookie crumble for more texture too)"
+    ],
+    "notes": null,
+    "scienceNotes": null,
+    "sourceUrl": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "imageUrls": [],
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T12:11:55.009053",
+    "updatedAt": "2025-12-23T12:11:55.009053"
+  },
+  {
+    "uuid": "826c7636-7882-48f1-a7c4-a84ed2f9785f",
+    "name": "Spherification",
+    "course": "modernist",
+    "type": "technique",
+    "technique": "Spherification",
+    "serves": null,
+    "time": null,
+    "difficulty": null,
+    "equipment": [
+      "Slotted Spoon"
+    ],
+    "ingredients": [
+      {
+        "name": "Flavoured Liquid",
+        "amount": "500",
+        "unit": "mL",
+        "notes": "Whatever you want to be a spehere of",
+        "section": null
+      },
+      {
+        "name": "Sodium Alginate",
+        "amount": "5",
+        "unit": "g",
+        "notes": "1 tsp, Gelling agent",
+        "section": null
+      },
+      {
+        "name": "Sodium Citrate",
+        "amount": "½",
+        "unit": "g",
+        "notes": "Pinch, Pervents thickening too quick",
+        "section": null
+      },
+      {
+        "name": "Water",
+        "amount": "500",
+        "unit": "mL",
+        "notes": "Cold",
+        "section": "Bath"
+      },
+      {
+        "name": "Calcium Chloride",
+        "amount": "5",
+        "unit": "g",
+        "notes": "1 tsp",
+        "section": "Bath"
+      },
+      {
+        "name": "Filtered Water",
+        "amount": "2",
+        "unit": "C",
+        "notes": "Make sure they aren't salty",
+        "section": "Rinse"
+      }
+    ],
+    "directions": [
+      "Dissolve Sodium Alginate in a pan with ¼ of the flavoured liquid; Bring to simmer while whisking",
+      "Remove from heat and add in the rest of the flavoured liquid; Whisk in the Sodium Citrate; Let cool in fridge (2-4 hours or until there's no gas/bubbles)",
+      "Mix Calcium Chloride with Water when ready",
+      "Pearls: Use syringe or squeeze bottle\nSpheres: Use a spherical spoon (Need to roll it in, almost like poached eggs)",
+      "The longer they sit in the liquid the thicker the skin is, pearls can get gummy quick; They will keep gelling once removed, so make only when ready to use",
+      "Use slotted spoon to remove and rinse in the filtered water",
+      "If you get tails, you're dropping from too high up.\nIf it's not setting add more Sodium Citrate."
+    ],
+    "notes": null,
+    "scienceNotes": null,
+    "sourceUrl": null,
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "imageUrl": null,
+    "imageUrls": [],
+    "isFavorite": false,
+    "cookCount": 0,
+    "source": "personal",
+    "pairedRecipeIds": [],
+    "createdAt": "2025-12-23T11:57:08.724437",
+    "updatedAt": "2025-12-23T11:57:08.724437"
+  }
+]

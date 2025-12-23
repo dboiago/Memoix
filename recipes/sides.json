@@ -1,150 +1,237 @@
 [
   {
-    "uuid": "b8c01d8a-1783-4781-b4ee-6d5104465e11",
-    "name": "Mexican Corn Salad (Elote)",
+    "uuid": "1167f1ac-07c8-4510-beb9-aba76e8a5cfd",
+    "name": "Ajitsuke Tamago (Ramen Egg)",
     "course": "sides",
-    "cuisine": null,
+    "cuisine": "JP",
     "subcategory": null,
-    "serves": "6.0",
-    "time": "20 min",
+    "serves": "4.0",
+    "time": "15 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Corn",
-        "amount": "4 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: smoked",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cilantro",
-        "amount": "½ C",
+        "name": "Eggs",
+        "amount": "4.0",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Red Onion",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Crema",
-        "amount": "¼ C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Sour Cream",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cotija",
-        "amount": "0.33 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Feta",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lime Juice",
-        "amount": "3 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Mayonnaise",
+        "name": "Soy Sauce",
         "amount": "2 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Cumin",
-        "amount": "½ tsp",
+        "name": "Sugar",
+        "amount": "2 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Chili Powder",
-        "amount": "½  tsp",
+        "name": "Miso",
+        "amount": "1 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Smoked Paprika",
+        "name": "Mirin",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Honey",
+        "amount": "2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Doubanjiang",
         "amount": "¼ tsp",
         "unit": null,
         "preparation": null,
-        "alternative": null,
+        "alternative": "alt: Sambal/Gochujang",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Jalapeno",
+        "name": "Garlic",
         "amount": "1.0",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Red Pepper",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Lime Zest",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Optional",
-        "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Grill corn until there is a nice char in places (ie: grill marks)",
-      "alt: Add corn to pan with some butter and cook med-high until lightly charred",
-      "Allow corn to cool, then add chopped bell pepper, cilantro, onion, japapeno",
-      "In another bowl whisk together lime juice, crema, mayo, cumin, paprika and chili powder",
-      "Pour dressing over salad",
-      "Crumble cheese over top and add more cilantro to taste",
-      "Really nice especially when using smoked corn"
+      "Bring water to boil; Add eggs",
+      "Boil 7-8 min (7 for soft, 8 for hard)",
+      "Run eggs under cold water/ice bath; Peal",
+      "Combine other ingredients except miso in saucepan and heat",
+      "Turn off just before boiling and add miso",
+      "Let sauce cool and add it and eggs to ziplock and marinate in fridge for 5+ hours"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "8b792ac9-9b8a-4225-86df-1d976a74fdcd",
+    "name": "Chinese Cucumber Salad",
+    "course": "sides",
+    "cuisine": "CN",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "7 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "3.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "¼ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Light Soy Sauce",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Black Vinegar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Chili Oil",
+        "amount": "1-2 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Sambal; optnal",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "to taste",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Wash cucumber and cut off ends; if the skin is thick then peel",
+      "Cut in half lengthwise then smash with large knife; Cut into bite sized pieces",
+      "Transfer to bowl and mix with garlic, salt and sugar (optional)",
+      "(optional) add light soy sauce and vinegar",
+      "(optional) add chili oil"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -156,6 +243,7 @@
     "serves": "8.0",
     "time": "",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -165,7 +253,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Onion",
@@ -174,7 +263,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic",
@@ -183,7 +273,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Salt",
@@ -192,7 +283,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Pepper",
@@ -201,7 +293,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Nutmeg",
@@ -210,7 +303,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Flour",
@@ -219,7 +313,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cream",
@@ -228,7 +323,8 @@
         "preparation": null,
         "alternative": "alt: Milk, Half/Half",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Spinach",
@@ -237,7 +333,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Mozzarella",
@@ -246,7 +343,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Cream Cheese",
@@ -255,7 +353,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Parmesan",
@@ -264,7 +363,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -279,423 +379,188 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
-    "uuid": "8b792ac9-9b8a-4225-86df-1d976a74fdcd",
-    "name": "Chinese Cucumber Salad",
+    "uuid": "b8c01d8a-1783-4781-b4ee-6d5104465e11",
+    "name": "Mexican Corn Salad (Elote)",
     "course": "sides",
-    "cuisine": "CN",
+    "cuisine": null,
     "subcategory": null,
-    "serves": "2.0",
-    "time": "7 min",
+    "serves": "6.0",
+    "time": "20 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
-        "name": "Cucumber",
-        "amount": "1.0",
+        "name": "Corn",
+        "amount": "4 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: smoked",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cilantro",
+        "amount": "½ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Garlic",
-        "amount": "3.0",
+        "name": "Red Onion",
+        "amount": "¼ C",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sugar",
-        "amount": "¼ tsp",
+        "name": "Crema",
+        "amount": "¼ C",
         "unit": null,
         "preparation": null,
-        "alternative": "optional",
-        "isOptional": true,
-        "section": null
+        "alternative": "alt: Sour Cream",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sesame Oil",
-        "amount": "1 Tbsp",
+        "name": "Cotija",
+        "amount": "0.33 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Feta",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lime Juice",
+        "amount": "3 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Light Soy Sauce",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "optional",
-        "isOptional": true,
-        "section": null
-      },
-      {
-        "name": "Black Vinegar",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "optional",
-        "isOptional": true,
-        "section": null
-      },
-      {
-        "name": "Chili Oil",
-        "amount": "1-2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Sambal; optnal",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "to taste",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Wash cucumber and cut off ends; if the skin is thick then peel",
-      "Cut in half lengthwise then smash with large knife; Cut into bite sized pieces",
-      "Transfer to bowl and mix with garlic, salt and sugar (optional)",
-      "(optional) add light soy sauce and vinegar",
-      "(optional) add chili oil"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "940cc80c-46b6-4031-a4bc-92c630e73e0b",
-    "name": "Sweet Potato",
-    "course": "sides",
-    "cuisine": "KR",
-    "subcategory": null,
-    "serves": "2.0",
-    "time": "40 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Water",
-        "amount": "1 C",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Cooking Oil",
+        "name": "Mayonnaise",
         "amount": "2 Tbsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Honey",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Seeds",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Toasted",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Oil",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Soy Sauce",
-        "amount": "5 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Rice Wine",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Brown Sugar",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Sautee or bake potatoes (200 C for 30 min)",
-      "Add water and braising ingredients and bring to a simmer",
-      "When very reduced and thick (~15 min) turn to low and add honey , sesame oil and seeds",
-      "Pour over potatoes and cook another ~15 minutes until potatoes are soft and colour is nice"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "4d0ccbcd-501f-4aee-a7eb-468b4c003fb7",
-    "name": "Spicy Cucumber",
-    "course": "sides",
-    "cuisine": "KR",
-    "subcategory": null,
-    "serves": "4.0",
-    "time": "",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Cucumber",
-        "amount": "1.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Korean or Kirby",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Gochugaru",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Sambal",
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Scallion",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Salt",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Seeds",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sesame Oil",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Vinegar",
-        "amount": "1 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Garlic",
+        "name": "Cumin",
         "amount": "½ tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Sugar",
-        "amount": "½ tsp",
+        "name": "Chili Powder",
+        "amount": "½  tsp",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
-      }
-    ],
-    "directions": [
-      "Slice cucumbers",
-      "Mix everything together",
-      "Best if left to sit for a while"
-    ],
-    "sourceUrl": null,
-    "imageUrl": null,
-    "source": "memoix",
-    "isFavorite": false,
-    "rating": 0,
-    "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
-    "version": 1
-  },
-  {
-    "uuid": "1167f1ac-07c8-4510-beb9-aba76e8a5cfd",
-    "name": "Ajitsuke Tamago (Ramen Egg)",
-    "course": "sides",
-    "cuisine": "JP",
-    "subcategory": null,
-    "serves": "4.0",
-    "time": "15 min",
-    "pairsWith": [],
-    "notes": "",
-    "ingredients": [
-      {
-        "name": "Eggs",
-        "amount": "4.0",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Soy Sauce",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Sugar",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Miso",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Mirin",
-        "amount": "1 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Honey",
-        "amount": "2 tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": null,
-        "isOptional": false,
-        "section": null
-      },
-      {
-        "name": "Doubanjiang",
+        "name": "Smoked Paprika",
         "amount": "¼ tsp",
         "unit": null,
         "preparation": null,
-        "alternative": "alt: Sambal/Gochujang",
+        "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
-        "name": "Garlic",
+        "name": "Jalapeno",
         "amount": "1.0",
         "unit": null,
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Red Pepper",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Lime Zest",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Optional",
+        "isOptional": true,
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
-      "Bring water to boil; Add eggs",
-      "Boil 7-8 min (7 for soft, 8 for hard)",
-      "Run eggs under cold water/ice bath; Peal",
-      "Combine other ingredients except miso in saucepan and heat",
-      "Turn off just before boiling and add miso",
-      "Let sauce cool and add it and eggs to ziplock and marinate in fridge for 5+ hours"
+      "Grill corn until there is a nice char in places (ie: grill marks)",
+      "alt: Add corn to pan with some butter and cook med-high until lightly charred",
+      "Allow corn to cool, then add chopped bell pepper, cilantro, onion, japapeno",
+      "In another bowl whisk together lime juice, crema, mayo, cumin, paprika and chili powder",
+      "Pour dressing over salad",
+      "Crumble cheese over top and add more cilantro to taste",
+      "Really nice especially when using smoked corn"
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   },
   {
@@ -707,6 +572,7 @@
     "serves": "5.0",
     "time": "40 min",
     "pairsWith": [],
+    "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
@@ -716,7 +582,8 @@
         "preparation": null,
         "alternative": "Optional",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Coconut Milk",
@@ -725,7 +592,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Kidney Beans",
@@ -734,7 +602,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Scallion",
@@ -743,7 +612,8 @@
         "preparation": null,
         "alternative": "alt: Half onion",
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Garlic",
@@ -752,7 +622,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Thyme",
@@ -761,7 +632,8 @@
         "preparation": null,
         "alternative": "Optional",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Rice",
@@ -770,7 +642,8 @@
         "preparation": null,
         "alternative": null,
         "isOptional": false,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       },
       {
         "name": "Habanero",
@@ -779,7 +652,8 @@
         "preparation": null,
         "alternative": "Optional",
         "isOptional": true,
-        "section": null
+        "section": null,
+        "bakerPercent": null
       }
     ],
     "directions": [
@@ -792,12 +666,260 @@
     ],
     "sourceUrl": null,
     "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
     "source": "memoix",
+    "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
-    "createdAt": "2025-12-10T00:00:00.000000",
-    "updatedAt": "2025-12-10T00:00:00.000000",
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "4d0ccbcd-501f-4aee-a7eb-468b4c003fb7",
+    "name": "Spicy Cucumber",
+    "course": "sides",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "4.0",
+    "time": "",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "amount": "1.0",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Korean or Kirby",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Gochugaru",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "alt: Sambal",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Scallion",
+        "amount": "1 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Vinegar",
+        "amount": "1 tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Garlic",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sugar",
+        "amount": "½ tsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Slice cucumbers",
+      "Mix everything together",
+      "Best if left to sit for a while"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
+    "version": 1
+  },
+  {
+    "uuid": "940cc80c-46b6-4031-a4bc-92c630e73e0b",
+    "name": "Sweet Potato",
+    "course": "sides",
+    "cuisine": "KR",
+    "subcategory": null,
+    "serves": "2.0",
+    "time": "40 min",
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": "",
+    "ingredients": [
+      {
+        "name": "Water",
+        "amount": "1 C",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Cooking Oil",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Honey",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Seeds",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": "Toasted",
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Sesame Oil",
+        "amount": "½ Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Soy Sauce",
+        "amount": "5 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Rice Wine",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "name": "Brown Sugar",
+        "amount": "2 Tbsp",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Sautee or bake potatoes (200 C for 30 min)",
+      "Add water and braising ingredients and bring to a simmer",
+      "When very reduced and thick (~15 min) turn to low and add honey , sesame oil and seeds",
+      "Pour over potatoes and cook another ~15 minutes until potatoes are soft and colour is nice"
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "memoix",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2025-12-10T00:00:00.000",
+    "updatedAt": "2025-12-10T00:00:00.000",
     "version": 1
   }
 ]
