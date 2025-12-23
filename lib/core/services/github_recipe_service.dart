@@ -340,31 +340,38 @@ Future<void> _syncCellarEntries(CellarRepository repo, List<CellarEntry> entries
 
 /// Sync state notifier for UI feedback
 class SyncNotifier extends StateNotifier<AsyncValue<void>> {
-  final Ref _ref;
+  final GitHubRecipeService _service;
+  final RecipeRepository _recipeRepo;
+  final PizzaRepository _pizzaRepo;
+  final SandwichRepository _sandwichRepo;
+  final SmokingRepository _smokingRepo;
+  final ModernistRepository _modernistRepo;
+  final CheeseRepository _cheeseRepo;
+  final CellarRepository _cellarRepo;
 
-  SyncNotifier(this._ref) : super(const AsyncValue.data(null));
+  SyncNotifier(
+    this._service,
+    this._recipeRepo,
+    this._pizzaRepo,
+    this._sandwichRepo,
+    this._smokingRepo,
+    this._modernistRepo,
+    this._cheeseRepo,
+    this._cellarRepo,
+  ) : super(const AsyncValue.data(null));
 
   Future<void> sync() async {
     state = const AsyncValue.loading();
     try {
-      final service = _ref.read(githubRecipeServiceProvider);
-      final recipeRepo = _ref.read(recipeRepositoryProvider);
-      final pizzaRepo = _ref.read(pizzaRepositoryProvider);
-      final sandwichRepo = _ref.read(sandwichRepositoryProvider);
-      final smokingRepo = _ref.read(smokingRepositoryProvider);
-      final modernistRepo = _ref.read(modernistRepositoryProvider);
-      final cheeseRepo = _ref.read(cheeseRepositoryProvider);
-      final cellarRepo = _ref.read(cellarRepositoryProvider);
-      
       // Sync all domains in parallel
       await Future.wait([
-        service.fetchAllRecipes().then((recipes) => recipeRepo.syncMemoixRecipes(recipes)),
-        service.fetchPizzas().then((pizzas) => _syncPizzas(pizzaRepo, pizzas)),
-        service.fetchSandwiches().then((sandwiches) => _syncSandwiches(sandwichRepo, sandwiches)),
-        service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(smokingRepo, recipes)),
-        service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(modernistRepo, recipes)),
-        service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(cheeseRepo, entries)),
-        service.fetchCellarEntries().then((entries) => _syncCellarEntries(cellarRepo, entries)),
+        _service.fetchAllRecipes().then((recipes) => _recipeRepo.syncMemoixRecipes(recipes)),
+        _service.fetchPizzas().then((pizzas) => _syncPizzas(_pizzaRepo, pizzas)),
+        _service.fetchSandwiches().then((sandwiches) => _syncSandwiches(_sandwichRepo, sandwiches)),
+        _service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(_smokingRepo, recipes)),
+        _service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(_modernistRepo, recipes)),
+        _service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(_cheeseRepo, entries)),
+        _service.fetchCellarEntries().then((entries) => _syncCellarEntries(_cellarRepo, entries)),
       ]);
       
       state = const AsyncValue.data(null);
@@ -375,5 +382,14 @@ class SyncNotifier extends StateNotifier<AsyncValue<void>> {
 }
 
 final syncNotifierProvider = StateNotifierProvider<SyncNotifier, AsyncValue<void>>((ref) {
-  return SyncNotifier(ref);
+  return SyncNotifier(
+    ref.watch(githubRecipeServiceProvider),
+    ref.watch(recipeRepositoryProvider),
+    ref.watch(pizzaRepositoryProvider),
+    ref.watch(sandwichRepositoryProvider),
+    ref.watch(smokingRepositoryProvider),
+    ref.watch(modernistRepositoryProvider),
+    ref.watch(cheeseRepositoryProvider),
+    ref.watch(cellarRepositoryProvider),
+  );
 });
