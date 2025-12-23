@@ -4,16 +4,22 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/course.dart';
+import '../../recipes/models/recipe.dart';
 import '../../recipes/models/source_filter.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_list_screen.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
 import '../../pizzas/repository/pizza_repository.dart';
+import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
+import '../../sandwiches/models/sandwich.dart';
 import '../../smoking/repository/smoking_repository.dart';
+import '../../smoking/models/smoking_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
+import '../../modernist/models/modernist_recipe.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../cellar/repository/cellar_repository.dart';
+import '../../settings/screens/settings_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -114,6 +120,7 @@ class _CourseGridView extends ConsumerWidget {
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
                     final course = courses[index];
+                    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
                     
                     // Special handling for pizzas, sandwiches, smoking, cheese, cellar - use their own counts
                     final bool isPizza = course.slug == 'pizzas';
@@ -123,39 +130,49 @@ class _CourseGridView extends ConsumerWidget {
                     final bool isCheese = course.slug == 'cheese';
                     final bool isCellar = course.slug == 'cellar';
                     
-                    // Get count for this category
+                    // Get count for this category (respecting hideMemoix setting)
                     final int itemCount;
                     if (isPizza) {
-                      final pizzasAsync = ref.watch(pizzaCountProvider);
+                      final pizzasAsync = ref.watch(allPizzasProvider);
                       itemCount = pizzasAsync.maybeWhen(
-                        data: (count) => count,
+                        data: (pizzas) => hideMemoix
+                            ? pizzas.where((p) => p.source != PizzaSource.memoix).length
+                            : pizzas.length,
                         orElse: () => 0,
                       );
                     } else if (isSandwich) {
-                      final sandwichesAsync = ref.watch(sandwichCountProvider);
+                      final sandwichesAsync = ref.watch(allSandwichesProvider);
                       itemCount = sandwichesAsync.maybeWhen(
-                        data: (count) => count,
+                        data: (sandwiches) => hideMemoix
+                            ? sandwiches.where((s) => s.source != SandwichSource.memoix).length
+                            : sandwiches.length,
                         orElse: () => 0,
                       );
                     } else if (isSmoking) {
-                      final smokingAsync = ref.watch(smokingCountProvider);
+                      final smokingAsync = ref.watch(allSmokingRecipesProvider);
                       itemCount = smokingAsync.maybeWhen(
-                        data: (count) => count,
+                        data: (recipes) => hideMemoix
+                            ? recipes.where((r) => r.source != SmokingSource.memoix).length
+                            : recipes.length,
                         orElse: () => 0,
                       );
                     } else if (isModernist) {
-                      final modernistAsync = ref.watch(modernistCountProvider);
+                      final modernistAsync = ref.watch(allModernistRecipesProvider);
                       itemCount = modernistAsync.maybeWhen(
-                        data: (count) => count,
+                        data: (recipes) => hideMemoix
+                            ? recipes.where((r) => r.source != ModernistSource.memoix).length
+                            : recipes.length,
                         orElse: () => 0,
                       );
                     } else if (isCheese) {
+                      // Cheese doesn't have Memoix source, use direct count
                       final cheeseAsync = ref.watch(cheeseCountProvider);
                       itemCount = cheeseAsync.maybeWhen(
                         data: (count) => count,
                         orElse: () => 0,
                       );
                     } else if (isCellar) {
+                      // Cellar doesn't have Memoix source, use direct count
                       final cellarAsync = ref.watch(cellarCountProvider);
                       itemCount = cellarAsync.maybeWhen(
                         data: (count) => count,
@@ -166,7 +183,9 @@ class _CourseGridView extends ConsumerWidget {
                         recipesByCourseProvider(course.slug),
                       );
                       itemCount = recipesAsync.maybeWhen(
-                        data: (recipes) => recipes.length,
+                        data: (recipes) => hideMemoix
+                            ? recipes.where((r) => r.source != RecipeSource.memoix).length
+                            : recipes.length,
                         orElse: () => 0,
                       );
                     }

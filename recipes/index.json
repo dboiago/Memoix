@@ -7,16 +7,18 @@
     "vegn.json",
     "sides.json",
     "breads.json",
+    "brunch.json",
     "desserts.json",
     "sauces.json",
     "rubs.json",
+    "pickles.json",
+    "drinks.json",
     "pizzas.json",
     "sandwiches.json",
     "cheese.json",
-    "pickles.json",
+    "cellar.json",
     "smoking.json",
     "modernist.json",
-    "scratch.json",
-    "drinks.json"
+    "scratch.json"
   ]
 }

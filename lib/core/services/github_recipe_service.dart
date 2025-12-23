@@ -2,8 +2,31 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../features/cellar/models/cellar_entry.dart';
+import '../../features/cellar/repository/cellar_repository.dart';
+import '../../features/cheese/models/cheese_entry.dart';
+import '../../features/cheese/repository/cheese_repository.dart';
+import '../../features/modernist/models/modernist_recipe.dart';
+import '../../features/modernist/repository/modernist_repository.dart';
+import '../../features/pizzas/models/pizza.dart';
+import '../../features/pizzas/repository/pizza_repository.dart';
 import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/repository/recipe_repository.dart';
+import '../../features/sandwiches/models/sandwich.dart';
+import '../../features/sandwiches/repository/sandwich_repository.dart';
+import '../../features/smoking/models/smoking_recipe.dart';
+import '../../features/smoking/repository/smoking_repository.dart';
+
+/// Specialized domain file names that need different parsing
+const _specializedDomains = {
+  'pizzas.json',
+  'sandwiches.json',
+  'smoking.json',
+  'modernist.json',
+  'cheese.json',
+  'cellar.json',
+  'scratch.json',
+};
 
 /// Service to fetch recipes from GitHub repository
 class GitHubRecipeService {
@@ -12,7 +35,7 @@ class GitHubRecipeService {
   static const String _baseUrl =
       'https://raw.githubusercontent.com/dboiago/Memoix/main/recipes';
 
-  /// Fetch all recipes from GitHub
+  /// Fetch all standard recipes from GitHub (excludes specialized domains)
   Future<List<Recipe>> fetchAllRecipes() async {
     try {
       // First, fetch the index to know what files to load
@@ -24,9 +47,12 @@ class GitHubRecipeService {
 
       final index = jsonDecode(indexResponse.body) as Map<String, dynamic>;
       final files = (index['files'] as List<dynamic>).cast<String>();
+      
+      // Filter out specialized domains - they have different models
+      final recipeFiles = files.where((f) => !_specializedDomains.contains(f)).toList();
 
       // Fetch all recipe files in parallel
-      final futures = files.map((file) => _fetchRecipeFile(file));
+      final futures = recipeFiles.map((file) => _fetchRecipeFile(file));
       final results = await Future.wait(futures);
 
       // Flatten all recipes into a single list
@@ -66,6 +92,112 @@ class GitHubRecipeService {
       ).toList();
     } catch (e) {
       print('Error fetching $filename: $e');
+      return [];
+    }
+  }
+
+  /// Fetch pizzas from GitHub
+  Future<List<Pizza>> fetchPizzas() async {
+    try {
+      final response = await http.get(Uri.parse('$_baseUrl/pizzas.json'));
+      if (response.statusCode != 200) return [];
+      
+      final data = jsonDecode(response.body) as List<dynamic>;
+      return data
+          .map((e) => Pizza.fromJson(e as Map<String, dynamic>)
+            ..source = PizzaSource.memoix)
+          .where((p) => p.name.isNotEmpty)
+          .toList();
+    } catch (e) {
+      print('Error fetching pizzas.json: $e');
+      return [];
+    }
+  }
+
+  /// Fetch sandwiches from GitHub
+  Future<List<Sandwich>> fetchSandwiches() async {
+    try {
+      final response = await http.get(Uri.parse('$_baseUrl/sandwiches.json'));
+      if (response.statusCode != 200) return [];
+      
+      final data = jsonDecode(response.body) as List<dynamic>;
+      return data
+          .map((e) => Sandwich.fromJson(e as Map<String, dynamic>)
+            ..source = SandwichSource.memoix)
+          .where((s) => s.name.isNotEmpty)
+          .toList();
+    } catch (e) {
+      print('Error fetching sandwiches.json: $e');
+      return [];
+    }
+  }
+
+  /// Fetch smoking recipes from GitHub
+  Future<List<SmokingRecipe>> fetchSmokingRecipes() async {
+    try {
+      final response = await http.get(Uri.parse('$_baseUrl/smoking.json'));
+      if (response.statusCode != 200) return [];
+      
+      final data = jsonDecode(response.body) as List<dynamic>;
+      return data
+          .map((e) => SmokingRecipe.fromJson(e as Map<String, dynamic>)
+            ..source = SmokingSource.memoix)
+          .where((s) => s.name.isNotEmpty)
+          .toList();
+    } catch (e) {
+      print('Error fetching smoking.json: $e');
+      return [];
+    }
+  }
+
+  /// Fetch modernist recipes from GitHub
+  Future<List<ModernistRecipe>> fetchModernistRecipes() async {
+    try {
+      final response = await http.get(Uri.parse('$_baseUrl/modernist.json'));
+      if (response.statusCode != 200) return [];
+      
+      final data = jsonDecode(response.body) as List<dynamic>;
+      return data
+          .map((e) => ModernistRecipe.fromJson(e as Map<String, dynamic>)
+            ..source = ModernistSource.memoix)
+          .where((m) => m.name.isNotEmpty)
+          .toList();
+    } catch (e) {
+      print('Error fetching modernist.json: $e');
+      return [];
+    }
+  }
+
+  /// Fetch cheese entries from GitHub
+  Future<List<CheeseEntry>> fetchCheeseEntries() async {
+    try {
+      final response = await http.get(Uri.parse('$_baseUrl/cheese.json'));
+      if (response.statusCode != 200) return [];
+      
+      final data = jsonDecode(response.body) as List<dynamic>;
+      return data
+          .map((e) => CheeseEntry.fromJson(e as Map<String, dynamic>))
+          .where((c) => c.name.isNotEmpty)
+          .toList();
+    } catch (e) {
+      print('Error fetching cheese.json: $e');
+      return [];
+    }
+  }
+
+  /// Fetch cellar entries from GitHub
+  Future<List<CellarEntry>> fetchCellarEntries() async {
+    try {
+      final response = await http.get(Uri.parse('$_baseUrl/cellar.json'));
+      if (response.statusCode != 200) return [];
+      
+      final data = jsonDecode(response.body) as List<dynamic>;
+      return data
+          .map((e) => CellarEntry.fromJson(e as Map<String, dynamic>))
+          .where((c) => c.name.isNotEmpty)
+          .toList();
+    } catch (e) {
+      print('Error fetching cellar.json: $e');
       return [];
     }
   }
@@ -117,27 +249,124 @@ final githubRecipeServiceProvider = Provider<GitHubRecipeService>((ref) {
   return GitHubRecipeService();
 });
 
-/// Provider to sync recipes from GitHub
+/// Provider to sync all data from GitHub (recipes + specialized domains)
 final syncRecipesProvider = FutureProvider<void>((ref) async {
   final service = ref.watch(githubRecipeServiceProvider);
-  final repository = ref.watch(recipeRepositoryProvider);
+  final recipeRepo = ref.watch(recipeRepositoryProvider);
+  final pizzaRepo = ref.watch(pizzaRepositoryProvider);
+  final sandwichRepo = ref.watch(sandwichRepositoryProvider);
+  final smokingRepo = ref.watch(smokingRepositoryProvider);
+  final modernistRepo = ref.watch(modernistRepositoryProvider);
+  final cheeseRepo = ref.watch(cheeseRepositoryProvider);
+  final cellarRepo = ref.watch(cellarRepositoryProvider);
   
-  final recipes = await service.fetchAllRecipes();
-  await repository.syncMemoixRecipes(recipes);
+  // Sync all domains in parallel
+  await Future.wait([
+    service.fetchAllRecipes().then((recipes) => recipeRepo.syncMemoixRecipes(recipes)),
+    service.fetchPizzas().then((pizzas) => _syncPizzas(pizzaRepo, pizzas)),
+    service.fetchSandwiches().then((sandwiches) => _syncSandwiches(sandwichRepo, sandwiches)),
+    service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(smokingRepo, recipes)),
+    service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(modernistRepo, recipes)),
+    service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(cheeseRepo, entries)),
+    service.fetchCellarEntries().then((entries) => _syncCellarEntries(cellarRepo, entries)),
+  ]);
 });
+
+/// Sync pizzas - upsert by UUID
+Future<void> _syncPizzas(PizzaRepository repo, List<Pizza> pizzas) async {
+  for (final pizza in pizzas) {
+    final existing = await repo.getPizzaByUuid(pizza.uuid);
+    if (existing != null) {
+      pizza.id = existing.id;
+    }
+    await repo.savePizza(pizza);
+  }
+}
+
+/// Sync sandwiches - upsert by UUID
+Future<void> _syncSandwiches(SandwichRepository repo, List<Sandwich> sandwiches) async {
+  for (final sandwich in sandwiches) {
+    final existing = await repo.getSandwichByUuid(sandwich.uuid);
+    if (existing != null) {
+      sandwich.id = existing.id;
+    }
+    await repo.saveSandwich(sandwich);
+  }
+}
+
+/// Sync smoking recipes - upsert by UUID
+Future<void> _syncSmokingRecipes(SmokingRepository repo, List<SmokingRecipe> recipes) async {
+  for (final recipe in recipes) {
+    final existing = await repo.getRecipeByUuid(recipe.uuid);
+    if (existing != null) {
+      recipe.id = existing.id;
+    }
+    await repo.saveRecipe(recipe);
+  }
+}
+
+/// Sync modernist recipes - upsert by UUID
+Future<void> _syncModernistRecipes(ModernistRepository repo, List<ModernistRecipe> recipes) async {
+  for (final recipe in recipes) {
+    final existing = await repo.getByUuid(recipe.uuid);
+    if (existing != null) {
+      recipe.id = existing.id;
+    }
+    await repo.save(recipe);
+  }
+}
+
+/// Sync cheese entries - upsert by UUID
+Future<void> _syncCheeseEntries(CheeseRepository repo, List<CheeseEntry> entries) async {
+  for (final entry in entries) {
+    final existing = await repo.getEntryByUuid(entry.uuid);
+    if (existing != null) {
+      entry.id = existing.id;
+    }
+    await repo.saveEntry(entry);
+  }
+}
+
+/// Sync cellar entries - upsert by UUID
+Future<void> _syncCellarEntries(CellarRepository repo, List<CellarEntry> entries) async {
+  for (final entry in entries) {
+    final existing = await repo.getEntryByUuid(entry.uuid);
+    if (existing != null) {
+      entry.id = existing.id;
+    }
+    await repo.saveEntry(entry);
+  }
+}
 
 /// Sync state notifier for UI feedback
 class SyncNotifier extends StateNotifier<AsyncValue<void>> {
-  final GitHubRecipeService _service;
-  final RecipeRepository _repository;
+  final Ref _ref;
 
-  SyncNotifier(this._service, this._repository) : super(const AsyncValue.data(null));
+  SyncNotifier(this._ref) : super(const AsyncValue.data(null));
 
   Future<void> sync() async {
     state = const AsyncValue.loading();
     try {
-      final recipes = await _service.fetchAllRecipes();
-      await _repository.syncMemoixRecipes(recipes);
+      final service = _ref.read(githubRecipeServiceProvider);
+      final recipeRepo = _ref.read(recipeRepositoryProvider);
+      final pizzaRepo = _ref.read(pizzaRepositoryProvider);
+      final sandwichRepo = _ref.read(sandwichRepositoryProvider);
+      final smokingRepo = _ref.read(smokingRepositoryProvider);
+      final modernistRepo = _ref.read(modernistRepositoryProvider);
+      final cheeseRepo = _ref.read(cheeseRepositoryProvider);
+      final cellarRepo = _ref.read(cellarRepositoryProvider);
+      
+      // Sync all domains in parallel
+      await Future.wait([
+        service.fetchAllRecipes().then((recipes) => recipeRepo.syncMemoixRecipes(recipes)),
+        service.fetchPizzas().then((pizzas) => _syncPizzas(pizzaRepo, pizzas)),
+        service.fetchSandwiches().then((sandwiches) => _syncSandwiches(sandwichRepo, sandwiches)),
+        service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(smokingRepo, recipes)),
+        service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(modernistRepo, recipes)),
+        service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(cheeseRepo, entries)),
+        service.fetchCellarEntries().then((entries) => _syncCellarEntries(cellarRepo, entries)),
+      ]);
+      
       state = const AsyncValue.data(null);
     } catch (e, st) {
       state = AsyncValue.error(e, st);
@@ -146,8 +375,5 @@ class SyncNotifier extends StateNotifier<AsyncValue<void>> {
 }
 
 final syncNotifierProvider = StateNotifierProvider<SyncNotifier, AsyncValue<void>>((ref) {
-  return SyncNotifier(
-    ref.watch(githubRecipeServiceProvider),
-    ref.watch(recipeRepositoryProvider),
-  );
+  return SyncNotifier(ref);
 });
