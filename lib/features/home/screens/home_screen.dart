@@ -18,7 +18,9 @@ import '../../smoking/models/smoking_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../cheese/repository/cheese_repository.dart';
+import '../../cheese/models/cheese_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
+import '../../cellar/models/cellar_entry.dart';
 import '../../settings/screens/settings_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -165,17 +167,19 @@ class _CourseGridView extends ConsumerWidget {
                         orElse: () => 0,
                       );
                     } else if (isCheese) {
-                      // Cheese doesn't have Memoix source, use direct count
-                      final cheeseAsync = ref.watch(cheeseCountProvider);
+                      final cheeseAsync = ref.watch(allCheeseEntriesProvider);
                       itemCount = cheeseAsync.maybeWhen(
-                        data: (count) => count,
+                        data: (entries) => hideMemoix
+                            ? entries.where((e) => e.source != CheeseSource.memoix).length
+                            : entries.length,
                         orElse: () => 0,
                       );
                     } else if (isCellar) {
-                      // Cellar doesn't have Memoix source, use direct count
-                      final cellarAsync = ref.watch(cellarCountProvider);
+                      final cellarAsync = ref.watch(allCellarEntriesProvider);
                       itemCount = cellarAsync.maybeWhen(
-                        data: (count) => count,
+                        data: (entries) => hideMemoix
+                            ? entries.where((e) => e.source != CellarSource.memoix).length
+                            : entries.length,
                         orElse: () => 0,
                       );
                     } else {

@@ -25,6 +25,7 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
     final theme = Theme.of(context);
     final entriesAsync = ref.watch(allCellarEntriesProvider);
     final isCompact = ref.watch(compactViewProvider);
+    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -43,8 +44,13 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (allEntries) {
+          // Apply hide memoix filter
+          final visibleEntries = hideMemoix
+              ? allEntries.where((e) => e.source != CellarSource.memoix).toList()
+              : allEntries;
+
           // Get categories that have entries
-          final availableCategories = _getAvailableCategories(allEntries);
+          final availableCategories = _getAvailableCategories(visibleEntries);
 
           return Column(
             children: [
@@ -78,9 +84,9 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _buildFilterChip(null, allEntries.length), // "All" chip
+                      _buildFilterChip(null, visibleEntries.length), // "All" chip
                       ...availableCategories.map((category) {
-                        final count = allEntries.where((e) => e.category == category).length;
+                        final count = visibleEntries.where((e) => e.category == category).length;
                         return _buildFilterChip(category, count);
                       }),
                     ],
@@ -89,7 +95,7 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
 
               // Entry list
               Expanded(
-                child: _buildEntryList(allEntries, isCompact),
+                child: _buildEntryList(visibleEntries, isCompact),
               ),
             ],
           );

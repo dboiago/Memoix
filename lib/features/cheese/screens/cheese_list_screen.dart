@@ -25,6 +25,7 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
     final theme = Theme.of(context);
     final entriesAsync = ref.watch(allCheeseEntriesProvider);
     final isCompact = ref.watch(compactViewProvider);
+    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -43,8 +44,13 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('Error: $err')),
         data: (allEntries) {
+          // Apply hide memoix filter
+          final visibleEntries = hideMemoix
+              ? allEntries.where((e) => e.source != CheeseSource.memoix).toList()
+              : allEntries;
+
           // Get milk types that have entries
-          final availableMilks = _getAvailableMilks(allEntries);
+          final availableMilks = _getAvailableMilks(visibleEntries);
 
           return Column(
             children: [
@@ -78,9 +84,9 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      _buildFilterChip(null, allEntries.length), // "All" chip
+                      _buildFilterChip(null, visibleEntries.length), // "All" chip
                       ...availableMilks.map((milk) {
-                        final count = allEntries.where((e) => e.milk == milk).length;
+                        final count = visibleEntries.where((e) => e.milk == milk).length;
                         return _buildFilterChip(milk, count);
                       }),
                     ],
@@ -89,7 +95,7 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
 
               // Entry list
               Expanded(
-                child: _buildEntryList(allEntries, isCompact),
+                child: _buildEntryList(visibleEntries, isCompact),
               ),
             ],
           );
