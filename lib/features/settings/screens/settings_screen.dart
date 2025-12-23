@@ -298,7 +298,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.folder_open),
             title: const Text('Export All'),
-            subtitle: const Text('All cuisines to folder (recipes, pizzas, modernist, etc.)'),
+            subtitle: const Text('All cuisines to folder (Mains, Pizzas, Modernist, etc.)'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () async {
               try {
