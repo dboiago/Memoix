@@ -347,6 +347,28 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
           ),
+          // TODO(release): Remove this menu item before public release - dev/maintenance only
+          ListTile(
+            leading: const Icon(Icons.folder_open),
+            title: const Text('Import from Folder'),
+            subtitle: const Text('Restore all domains from folder'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () async {
+              try {
+                final service = ref.read(recipeBackupServiceProvider);
+                final results = await service.importFromFolder();
+                if (results.isNotEmpty) {
+                  final total = results.values.fold(0, (a, b) => a + b);
+                  final domains = results.keys.join(', ');
+                  MemoixSnackBar.showSuccess('Imported $total items from: $domains');
+                } else {
+                  MemoixSnackBar.show('No items imported');
+                }
+              } catch (e) {
+                MemoixSnackBar.showError('Import failed: $e');
+              }
+            },
+          ),
 
           const Divider(),
 
