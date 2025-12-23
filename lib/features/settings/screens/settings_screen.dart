@@ -298,7 +298,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.folder_open),
             title: const Text('Export All'),
-            subtitle: const Text('All domains to folder (recipes, pizzas, modernist, etc.)'),
+            subtitle: const Text('All cuisines to folder (recipes, pizzas, modernist, etc.)'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () async {
               try {
@@ -350,7 +350,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.folder_open),
             title: const Text('Import from Folder'),
-            subtitle: const Text('Restore all domains from folder'),
+            subtitle: const Text('Restore all cuisines from folder'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () async {
               try {
@@ -358,8 +358,8 @@ class SettingsScreen extends ConsumerWidget {
                 final results = await service.importFromFolder();
                 if (results.isNotEmpty) {
                   final total = results.values.fold(0, (a, b) => a + b);
-                  final domains = results.keys.join(', ');
-                  MemoixSnackBar.showSuccess('Imported $total items from: $domains');
+                  final cuisines = results.keys.join(', ');
+                  MemoixSnackBar.showSuccess('Imported $total items from: $cuisines');
                 } else {
                   MemoixSnackBar.show('No items imported');
                 }
