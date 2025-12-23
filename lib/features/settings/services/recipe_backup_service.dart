@@ -317,19 +317,17 @@ class RecipeBackupService {
     final drafts = await _scratchPadRepository.getAllDrafts();
     final scratchData = {
       'quickNotes': quickNotes,
-      'drafts': drafts.map((d) => {
-        return {
-          'uuid': d.uuid,
-          'name': d.name,
-          'imagePath': d.imagePath,
-          'serves': d.serves,
-          'time': d.time,
-          'ingredients': d.ingredients,
-          'directions': d.directions,
-          'comments': d.comments,
-          'createdAt': d.createdAt.toIso8601String(),
-          'updatedAt': d.updatedAt.toIso8601String(),
-        };
+      'drafts': drafts.map((d) => <String, dynamic>{
+        'uuid': d.uuid,
+        'name': d.name,
+        'imagePath': d.imagePath,
+        'serves': d.serves,
+        'time': d.time,
+        'ingredients': d.ingredients,
+        'directions': d.directions,
+        'comments': d.comments,
+        'createdAt': d.createdAt.toIso8601String(),
+        'updatedAt': d.updatedAt.toIso8601String(),
       }).toList(),
     };
     await _writeJsonFile('$outputDir/scratch.json', scratchData);
