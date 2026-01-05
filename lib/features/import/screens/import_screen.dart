@@ -15,7 +15,15 @@ import 'ocr_multi_image_screen.dart';
 class ImportScreen extends ConsumerStatefulWidget {
   final String? defaultCourse;
   
-  const ImportScreen({super.key, this.defaultCourse});
+  /// If true, after saving, navigate to the saved recipe's course list screen.
+  /// If false, just pop back to wherever the user came from.
+  final bool redirectOnSave;
+  
+  const ImportScreen({
+    super.key, 
+    this.defaultCourse,
+    this.redirectOnSave = false,
+  });
 
   @override
   ConsumerState<ImportScreen> createState() => _ImportScreenState();
@@ -231,7 +239,9 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     }
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => const OCRMultiImageScreen(),
+        builder: (_) => OCRMultiImageScreen(
+          redirectOnSave: widget.redirectOnSave,
+        ),
       ),
     );
   }
@@ -272,7 +282,10 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
 
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => ImportReviewScreen(importResult: importResult),
+          builder: (_) => ImportReviewScreen(
+            importResult: importResult,
+            redirectOnSave: widget.redirectOnSave,
+          ),
         ),
       );
     } else if (result.recipe != null) {
@@ -311,7 +324,10 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
         if (result.needsUserReview) {
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(
-              builder: (_) => ImportReviewScreen(importResult: result),
+              builder: (_) => ImportReviewScreen(
+                importResult: result,
+                redirectOnSave: widget.redirectOnSave,
+              ),
             ),
           );
         } else {

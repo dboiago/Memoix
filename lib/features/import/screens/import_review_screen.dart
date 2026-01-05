@@ -9,20 +9,25 @@ import '../../../core/utils/text_normalizer.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/cuisine.dart';
+import '../../recipes/models/source_filter.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../../recipes/screens/recipe_detail_screen.dart';
+import '../../recipes/screens/recipe_list_screen.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../modernist/screens/modernist_detail_screen.dart';
+import '../../modernist/screens/modernist_list_screen.dart';
 import '../../modernist/repository/modernist_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/screens/pizza_edit_screen.dart';
 import '../../pizzas/screens/pizza_detail_screen.dart';
+import '../../pizzas/screens/pizza_list_screen.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/screens/smoking_edit_screen.dart';
 import '../../smoking/screens/smoking_detail_screen.dart';
+import '../../smoking/screens/smoking_list_screen.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../models/recipe_import_result.dart';
 
@@ -30,10 +35,15 @@ import '../models/recipe_import_result.dart';
 /// Shown when confidence is below threshold or user wants to review
 class ImportReviewScreen extends ConsumerStatefulWidget {
   final RecipeImportResult importResult;
+  
+  /// If true, after saving, navigate to the saved recipe's course list screen.
+  /// If false, just pop back to wherever the user came from.
+  final bool redirectOnSave;
 
   const ImportReviewScreen({
     super.key,
     required this.importResult,
+    this.redirectOnSave = false,
   });
 
   @override
@@ -1697,9 +1707,16 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       // Capture navigator before navigating
       final navigator = Navigator.of(context);
       
-      navigator.popUntil((route) => route.isFirst);
+      if (widget.redirectOnSave) {
+        // Redirect to the saved recipe's course list screen
+        navigator.pop(); // Pop the review screen first
+        _navigateToCourseList(navigator, _selectedCourse);
+      } else {
+        // Main screen mode - just pop back
+        navigator.pop();
+      }
       
-      // Use MemoixSnackBar for snackbar after navigation
+      // Show snackbar with option to view
       MemoixSnackBar.showSaved(
         itemName: savedName,
         actionLabel: 'View',
@@ -1710,6 +1727,41 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         },
         duration: const Duration(seconds: 4),
       );
+    }
+  }
+  
+  /// Navigate to the appropriate course list screen
+  void _navigateToCourseList(NavigatorState navigator, String course) {
+    final lowerCourse = course.toLowerCase();
+    
+    // Map course to the correct list screen
+    switch (lowerCourse) {
+      case 'modernist':
+        navigator.pushReplacement(
+          MaterialPageRoute(builder: (_) => const ModernistListScreen()),
+        );
+        break;
+      case 'smoking':
+        navigator.pushReplacement(
+          MaterialPageRoute(builder: (_) => const SmokingListScreen()),
+        );
+        break;
+      case 'pizzas':
+        navigator.pushReplacement(
+          MaterialPageRoute(builder: (_) => const PizzaListScreen()),
+        );
+        break;
+      default:
+        // For regular recipe courses (Mains, Desserts, Drinks, etc.)
+        navigator.pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => RecipeListScreen(
+              course: course,
+              sourceFilter: RecipeSourceFilter.all,
+              showAddButton: true,
+            ),
+          ),
+        );
     }
   }
 }

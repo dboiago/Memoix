@@ -12,7 +12,15 @@ import 'import_review_screen.dart';
 class OCRScannerScreen extends ConsumerStatefulWidget {
   final String? defaultCourse;
   
-  const OCRScannerScreen({super.key, this.defaultCourse});
+  /// If true, after saving, navigate to the saved recipe's course list screen.
+  /// If false, just pop back to wherever the user came from.
+  final bool redirectOnSave;
+  
+  const OCRScannerScreen({
+    super.key, 
+    this.defaultCourse,
+    this.redirectOnSave = false,
+  });
 
   @override
   ConsumerState<OCRScannerScreen> createState() => _OCRScannerScreenState();
@@ -247,7 +255,10 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
     // Use push instead of pushReplacement so back button returns to camera
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => ImportReviewScreen(importResult: importResult),
+        builder: (_) => ImportReviewScreen(
+          importResult: importResult,
+          redirectOnSave: widget.redirectOnSave,
+        ),
       ),
     );
   }

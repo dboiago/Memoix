@@ -7,7 +7,14 @@ import 'import_review_screen.dart';
 import 'multi_image_picker_screen.dart';
 
 class OCRMultiImageScreen extends ConsumerStatefulWidget {
-  const OCRMultiImageScreen({super.key});
+  /// If true, after saving, navigate to the saved recipe's course list screen.
+  /// If false, just pop back to wherever the user came from.
+  final bool redirectOnSave;
+  
+  const OCRMultiImageScreen({
+    super.key,
+    this.redirectOnSave = false,
+  });
 
   @override
   ConsumerState<OCRMultiImageScreen> createState() =>
@@ -192,6 +199,7 @@ class _OCRMultiImageScreenState extends ConsumerState<OCRMultiImageScreen> {
           MaterialPageRoute(
             builder: (_) => ImportReviewScreen(
               importResult: result.importResult!,
+              redirectOnSave: widget.redirectOnSave,
             ),
           ),
         );

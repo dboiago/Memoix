@@ -84,10 +84,13 @@ class AppRoutes {
     );
   }
 
-  static void toImport(BuildContext context, {String? course}) {
+  static void toImport(BuildContext context, {String? course, bool redirectOnSave = false}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => ImportScreen(defaultCourse: course),
+        builder: (_) => ImportScreen(
+          defaultCourse: course,
+          redirectOnSave: redirectOnSave,
+        ),
       ),
     );
   }
@@ -100,18 +103,24 @@ class AppRoutes {
     );
   }
 
-  static void toOCRScanner(BuildContext context, {String? course}) {
+  static void toOCRScanner(BuildContext context, {String? course, bool redirectOnSave = false}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => OCRScannerScreen(defaultCourse: course),
+        builder: (_) => OCRScannerScreen(
+          defaultCourse: course,
+          redirectOnSave: redirectOnSave,
+        ),
       ),
     );
   }
 
-  static void toURLImport(BuildContext context, {String? course}) {
+  static void toURLImport(BuildContext context, {String? course, bool redirectOnSave = false}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => URLImportScreen(defaultCourse: course),
+        builder: (_) => URLImportScreen(
+          defaultCourse: course,
+          redirectOnSave: redirectOnSave,
+        ),
       ),
     );
   }

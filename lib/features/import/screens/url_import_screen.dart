@@ -52,7 +52,15 @@ class SpecializedCourses {
 class URLImportScreen extends ConsumerStatefulWidget {
   final String? defaultCourse;
   
-  const URLImportScreen({super.key, this.defaultCourse});
+  /// If true, after saving, navigate to the saved recipe's course list screen.
+  /// If false, just pop back to wherever the user came from.
+  final bool redirectOnSave;
+  
+  const URLImportScreen({
+    super.key, 
+    this.defaultCourse,
+    this.redirectOnSave = false,
+  });
 
   @override
   ConsumerState<URLImportScreen> createState() => _URLImportScreenState();
@@ -247,7 +255,10 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
         // Use push (not pushReplacement) so back button returns to URL input
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (_) => ImportReviewScreen(importResult: result),
+            builder: (_) => ImportReviewScreen(
+              importResult: result,
+              redirectOnSave: widget.redirectOnSave,
+            ),
           ),
         );
       } else {
