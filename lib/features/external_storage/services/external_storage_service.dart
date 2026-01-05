@@ -94,6 +94,9 @@ class ExternalStorageService {
     return mode == SyncMode.automatic;
   }
 
+  /// Get last sync timestamp (public getter for UI)
+  Future<DateTime?> get lastSyncTime => _getLastSyncTime();
+
   // ============ CONNECTION MANAGEMENT ============
 
   /// Set the active storage provider
