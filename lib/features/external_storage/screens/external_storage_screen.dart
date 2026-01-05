@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../models/merge_result.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
@@ -464,7 +465,8 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
           TextButton(
             onPressed: () {
               Navigator.pop(ctx);
-              _pull();
+              // Execute pull directly (no confirmation needed - user just connected)
+              _executeDirectPull();
             },
             child: const Text('Pull: Import these recipes'),
           ),
@@ -485,6 +487,27 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
         ],
       ),
     );
+  }
+
+  /// Execute pull directly without confirmation (used during initial sync)
+  Future<void> _executeDirectPull() async {
+    final service = ref.read(externalStorageServiceProvider);
+    final result = await service.pull(silent: true);
+
+    // Refresh last sync time
+    _lastSyncTime = await service.lastSyncTime;
+    if (mounted) setState(() {});
+
+    // Show appropriate feedback
+    if (!mounted) return;
+    
+    if (result.hasFailed) {
+      MemoixSnackBar.showError('Pull failed: ${result.error}');
+    } else if (result.wasSkipped) {
+      MemoixSnackBar.show('No recipes found');
+    } else {
+      _showPullSummaryDialog(result);
+    }
   }
 
   /// Show confirmation dialog before pushing
@@ -525,14 +548,154 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
     if (mounted) setState(() {});
   }
 
-  /// Execute pull operation
+  /// Execute pull operation with confirmation dialog
+  /// 
+  /// Shows pre-pull confirmation and post-pull summary per EXTERNAL_STORAGE.md Section 6.2.
   Future<void> _pull() async {
+    // Show confirmation dialog first
+    final confirmed = await _showPullConfirmation();
+    if (confirmed != true) return;
+
     final service = ref.read(externalStorageServiceProvider);
-    await service.pull();
+    // Pass silent: true since we'll handle UI feedback ourselves
+    final result = await service.pull(silent: true);
 
     // Refresh last sync time
     _lastSyncTime = await service.lastSyncTime;
     if (mounted) setState(() {});
+
+    // Show appropriate feedback based on result
+    if (!mounted) return;
+    
+    if (result.hasFailed) {
+      MemoixSnackBar.showError('Pull failed: ${result.error}');
+    } else if (result.wasSkipped) {
+      MemoixSnackBar.show('Already up to date');
+    } else {
+      // Show detailed summary dialog
+      _showPullSummaryDialog(result);
+    }
+  }
+
+  /// Show confirmation dialog before pulling
+  /// 
+  /// Per EXTERNAL_STORAGE.md Section 6.2 "Manual Confirmation Dialog"
+  Future<bool?> _showPullConfirmation() async {
+    // First, get remote recipe count for the dialog
+    final remoteCount = await _googleDrive?.getRemoteRecipeCount();
+    
+    if (!mounted) return false;
+    
+    return showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Pull from Google Drive?'),
+        content: Text(
+          'Found ${remoteCount ?? 'recipes'} recipes in:\n'
+          '${_googleDrive?.connectedPath ?? "/My Drive/Memoix"}\n\n'
+          'New recipes will be added.\n'
+          'Conflicts resolved by newest wins.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Pull Now'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Show summary dialog after successful pull
+  /// 
+  /// Per EXTERNAL_STORAGE.md Section 6.2 "Post-Pull Summary (Manual)"
+  void _showPullSummaryDialog(PullResult result) {
+    showDialog(
+      context: context,
+      builder: (ctx) {
+        final theme = Theme.of(ctx);
+        
+        return AlertDialog(
+          title: const Text('Pull Complete'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (result.added > 0)
+                _buildSummaryRow(
+                  theme,
+                  icon: Icons.check_circle_outline,
+                  text: '${result.added} new recipe${result.added == 1 ? '' : 's'} added',
+                  isHighlight: true,
+                ),
+              if (result.updated > 0)
+                _buildSummaryRow(
+                  theme,
+                  icon: Icons.check_circle_outline,
+                  text: '${result.updated} recipe${result.updated == 1 ? '' : 's'} updated',
+                  isHighlight: true,
+                ),
+              if (result.unchanged > 0)
+                _buildSummaryRow(
+                  theme,
+                  icon: Icons.radio_button_unchecked,
+                  text: '${result.unchanged} recipe${result.unchanged == 1 ? '' : 's'} unchanged',
+                  isHighlight: false,
+                ),
+              if (!result.hasChanges)
+                _buildSummaryRow(
+                  theme,
+                  icon: Icons.check_circle_outline,
+                  text: 'Everything up to date',
+                  isHighlight: true,
+                ),
+            ],
+          ),
+          actions: [
+            FilledButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Done'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  /// Build a single row in the pull summary dialog
+  Widget _buildSummaryRow(
+    ThemeData theme, {
+    required IconData icon,
+    required String text,
+    required bool isHighlight,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        children: [
+          Icon(
+            icon,
+            size: 20,
+            color: isHighlight
+                ? theme.colorScheme.primary
+                : theme.colorScheme.outline,
+          ),
+          const SizedBox(width: 12),
+          Text(
+            text,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: isHighlight
+                  ? theme.colorScheme.onSurface
+                  : theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   /// Set sync mode
