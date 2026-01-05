@@ -38,6 +38,7 @@ import '../../features/favourites/screens/favourites_screen.dart';
 import '../../features/tools/measurement_converter.dart';
 import '../../features/tools/kitchen_timer_screen.dart';
 import '../../features/notes/screens/scratch_pad_screen.dart';
+import '../../features/external_storage/screens/external_storage_screen.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -193,6 +194,14 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => const ScratchPadScreen(),
+      ),
+    );
+  }
+
+  static void toExternalStorage(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => const ExternalStorageScreen(),
       ),
     );
   }

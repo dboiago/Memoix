@@ -12,6 +12,7 @@ import '../../../core/providers.dart';
 import '../../../core/widgets/update_available_dialog.dart';
 import '../services/recipe_backup_service.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../../app/routes/router.dart';
 
 /// Provider for app preferences
 final preferencesProvider = FutureProvider<SharedPreferences>((ref) async {
@@ -244,6 +245,18 @@ class SettingsScreen extends ConsumerWidget {
 
           const Divider(),
 
+          // External Storage section
+          const _SectionHeader(title: 'Backup'),
+          ListTile(
+            leading: const Icon(Icons.cloud_outlined),
+            title: const Text('External Storage'),
+            subtitle: const Text('Back up to your own cloud storage'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => _openExternalStorage(context),
+          ),
+
+          const Divider(),
+
           // Sync section
           const _SectionHeader(title: 'Sync & Updates'),
           ListTile(
@@ -445,6 +458,10 @@ class SettingsScreen extends ConsumerWidget {
         ],
       ),
     );
+  }
+
+  void _openExternalStorage(BuildContext context) {
+    AppRoutes.toExternalStorage(context);
   }
 
   void _showAbout(BuildContext context) async {

@@ -1,0 +1,641 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../models/sync_mode.dart';
+import '../models/sync_status.dart';
+import '../providers/google_drive_storage.dart';
+import '../services/external_storage_service.dart';
+
+/// External Storage settings screen
+///
+/// Shows provider connection status, push/pull buttons, and sync mode toggle.
+/// See EXTERNAL_STORAGE.md Section 5 for UX requirements.
+class ExternalStorageScreen extends ConsumerStatefulWidget {
+  const ExternalStorageScreen({super.key});
+
+  @override
+  ConsumerState<ExternalStorageScreen> createState() =>
+      _ExternalStorageScreenState();
+}
+
+class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
+  /// Google Drive provider instance
+  GoogleDriveStorage? _googleDrive;
+
+  /// Loading state for connection operations
+  bool _isConnecting = false;
+
+  /// Current sync mode
+  SyncMode _syncMode = SyncMode.manual;
+
+  /// Last sync time for display
+  DateTime? _lastSyncTime;
+
+  /// Whether the provider is connected
+  bool get _isConnected => _googleDrive?.isConnected ?? false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initializeProviders();
+  }
+
+  Future<void> _initializeProviders() async {
+    // Initialize Google Drive provider
+    _googleDrive = GoogleDriveStorage();
+    await _googleDrive!.initialize();
+
+    // Load sync mode and last sync time
+    final service = ref.read(externalStorageServiceProvider);
+    _syncMode = await service.syncMode;
+    _lastSyncTime = await service.lastSyncTime;
+
+    // If connected, set the provider on the service
+    if (_googleDrive!.isConnected) {
+      await service.setProvider(_googleDrive!);
+    }
+
+    if (mounted) setState(() {});
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final syncStatus = ref.watch(syncStatusProvider);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('External Storage'),
+      ),
+      body: ListView(
+        children: [
+          // Header explanation
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Text(
+              'Store your recipes in a location you control. '
+              'Your data never touches Memoix servers.',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+
+          const Divider(),
+
+          // Provider cards
+          if (_isConnected)
+            _buildConnectedCard(theme, syncStatus)
+          else
+            _buildProviderSelector(theme),
+
+          const Divider(),
+
+          // Footer info
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Text(
+              'Only one storage location can be connected at a time.',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Build the provider selector when disconnected
+  Widget _buildProviderSelector(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const _SectionHeader(title: 'Connect a Provider'),
+        _buildProviderTile(
+          theme: theme,
+          icon: Icons.cloud_outlined,
+          name: 'Google Drive',
+          description: 'Store in your personal Drive folder',
+          onConnect: _connectGoogleDrive,
+        ),
+        _buildProviderTile(
+          theme: theme,
+          icon: Icons.code,
+          name: 'GitHub',
+          description: 'Advanced — Store in a repository',
+          isAdvanced: true,
+          onConnect: _showGitHubNotImplemented,
+        ),
+        _buildProviderTile(
+          theme: theme,
+          icon: Icons.cloud_queue,
+          name: 'iCloud',
+          description: 'iOS only — Coming soon',
+          isDisabled: true,
+          onConnect: null,
+        ),
+      ],
+    );
+  }
+
+  /// Build a single provider connection tile
+  Widget _buildProviderTile({
+    required ThemeData theme,
+    required IconData icon,
+    required String name,
+    required String description,
+    bool isAdvanced = false,
+    bool isDisabled = false,
+    VoidCallback? onConnect,
+  }) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        color: isDisabled
+            ? theme.colorScheme.outline
+            : theme.colorScheme.onSurface,
+      ),
+      title: Row(
+        children: [
+          Text(
+            name,
+            style: TextStyle(
+              color: isDisabled
+                  ? theme.colorScheme.outline
+                  : theme.colorScheme.onSurface,
+            ),
+          ),
+          if (isAdvanced) ...[
+            const SizedBox(width: 8),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.surfaceContainerHighest,
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: Text(
+                'Advanced',
+                style: theme.textTheme.labelSmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+      subtitle: Text(
+        description,
+        style: TextStyle(
+          color: isDisabled
+              ? theme.colorScheme.outline
+              : theme.colorScheme.onSurfaceVariant,
+        ),
+      ),
+      trailing: _isConnecting
+          ? const SizedBox(
+              width: 24,
+              height: 24,
+              child: CircularProgressIndicator(strokeWidth: 2),
+            )
+          : isDisabled
+              ? null
+              : TextButton(
+                  onPressed: onConnect,
+                  child: const Text('Connect'),
+                ),
+      enabled: !isDisabled && !_isConnecting,
+    );
+  }
+
+  /// Build the connected state card with push/pull buttons
+  Widget _buildConnectedCard(ThemeData theme, SyncStatus syncStatus) {
+    final provider = _googleDrive!;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Provider header
+              Row(
+                children: [
+                  Icon(
+                    Icons.cloud_outlined,
+                    color: theme.colorScheme.primary,
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          provider.name,
+                          style: theme.textTheme.titleMedium,
+                        ),
+                        Text(
+                          provider.connectedPath ?? '/My Drive/Memoix',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // Sync status indicator
+                  _buildSyncStatusIndicator(theme, syncStatus),
+                ],
+              ),
+
+              const SizedBox(height: 8),
+
+              // Last synced timestamp
+              if (_lastSyncTime != null)
+                Text(
+                  'Last synced: ${_formatTimeAgo(_lastSyncTime!)}',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                ),
+
+              const SizedBox(height: 16),
+              const Divider(),
+              const SizedBox(height: 16),
+
+              // Sync mode toggle
+              _buildSyncModeSection(theme),
+
+              const SizedBox(height: 16),
+              const Divider(),
+              const SizedBox(height: 16),
+
+              // Push/Pull buttons
+              _buildPushPullButtons(theme, syncStatus),
+
+              const SizedBox(height: 16),
+
+              // Disconnect button
+              Center(
+                child: TextButton(
+                  onPressed: syncStatus.isInProgress ? null : _disconnect,
+                  child: Text(
+                    'Disconnect',
+                    style: TextStyle(
+                      color: theme.colorScheme.secondary,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Build sync status indicator icon
+  Widget _buildSyncStatusIndicator(ThemeData theme, SyncStatus status) {
+    switch (status) {
+      case SyncStatus.idle:
+        return Icon(
+          Icons.cloud_done_outlined,
+          color: theme.colorScheme.primary,
+        );
+      case SyncStatus.pushing:
+      case SyncStatus.pulling:
+        return SizedBox(
+          width: 24,
+          height: 24,
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            color: theme.colorScheme.primary,
+          ),
+        );
+      case SyncStatus.error:
+        return Icon(
+          Icons.cloud_off_outlined,
+          color: theme.colorScheme.secondary,
+        );
+    }
+  }
+
+  /// Build sync mode toggle section
+  Widget _buildSyncModeSection(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Sync Mode',
+              style: theme.textTheme.titleSmall,
+            ),
+            SegmentedButton<SyncMode>(
+              segments: const [
+                ButtonSegment(
+                  value: SyncMode.manual,
+                  label: Text('Manual'),
+                ),
+                ButtonSegment(
+                  value: SyncMode.automatic,
+                  label: Text('Automatic'),
+                ),
+              ],
+              selected: {_syncMode},
+              onSelectionChanged: (selection) {
+                _setSyncMode(selection.first);
+              },
+              showSelectedIcon: false,
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Text(
+          _syncMode.description,
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+        // Additional explanation for automatic mode
+        if (_syncMode == SyncMode.automatic) ...[
+          const SizedBox(height: 4),
+          Text(
+            'When the same recipe is edited on multiple devices, '
+            'the most recently saved version is kept.',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+              fontStyle: FontStyle.italic,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  /// Build push and pull buttons
+  Widget _buildPushPullButtons(ThemeData theme, SyncStatus syncStatus) {
+    final isDisabled = syncStatus.isInProgress;
+
+    return Row(
+      children: [
+        Expanded(
+          child: OutlinedButton.icon(
+            onPressed: isDisabled ? null : _push,
+            icon: const Icon(Icons.cloud_upload_outlined),
+            label: Text(
+              syncStatus == SyncStatus.pushing ? 'Pushing...' : 'Push',
+            ),
+          ),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: FilledButton.icon(
+            onPressed: isDisabled ? null : _pull,
+            icon: const Icon(Icons.cloud_download_outlined),
+            label: Text(
+              syncStatus == SyncStatus.pulling ? 'Pulling...' : 'Pull',
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ============ ACTIONS ============
+
+  /// Connect to Google Drive
+  Future<void> _connectGoogleDrive() async {
+    setState(() => _isConnecting = true);
+
+    try {
+      final success = await _googleDrive!.connect();
+
+      if (success) {
+        // Set provider on service
+        final service = ref.read(externalStorageServiceProvider);
+        await service.setProvider(_googleDrive!);
+
+        // Check if remote has existing data
+        final hasData = await _googleDrive!.hasExistingData();
+
+        if (mounted) {
+          if (hasData) {
+            // Show initial sync prompt
+            _showInitialSyncDialog();
+          } else {
+            MemoixSnackBar.showSuccess('Connected to Google Drive');
+          }
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        MemoixSnackBar.showError('Connection failed: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _isConnecting = false);
+      }
+    }
+  }
+
+  /// Show dialog when connecting to folder with existing data
+  void _showInitialSyncDialog() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Existing Data Found'),
+        content: FutureBuilder<int?>(
+          future: _googleDrive!.getRemoteRecipeCount(),
+          builder: (context, snapshot) {
+            final count = snapshot.data ?? 0;
+            return Text(
+              'Found ${count > 0 ? count : 'some'} recipes in this folder. '
+              'What would you like to do?',
+            );
+          },
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _pull();
+            },
+            child: const Text('Pull: Import these recipes'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _showPushConfirmation();
+            },
+            child: const Text('Push: Overwrite with local'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              MemoixSnackBar.showSuccess('Connected to Google Drive');
+            },
+            child: const Text('Skip: Sync later'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Show confirmation dialog before pushing
+  void _showPushConfirmation() {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Push to Google Drive?'),
+        content: Text(
+          'This will upload your local recipes to:\n'
+          '${_googleDrive?.connectedPath ?? "/My Drive/Memoix"}\n\n'
+          'This will overwrite any existing recipes in that location.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _push();
+            },
+            child: const Text('Push Now'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Execute push operation
+  Future<void> _push() async {
+    final service = ref.read(externalStorageServiceProvider);
+    await service.push();
+
+    // Refresh last sync time
+    _lastSyncTime = await service.lastSyncTime;
+    if (mounted) setState(() {});
+  }
+
+  /// Execute pull operation
+  Future<void> _pull() async {
+    final service = ref.read(externalStorageServiceProvider);
+    await service.pull();
+
+    // Refresh last sync time
+    _lastSyncTime = await service.lastSyncTime;
+    if (mounted) setState(() {});
+  }
+
+  /// Set sync mode
+  Future<void> _setSyncMode(SyncMode mode) async {
+    try {
+      final service = ref.read(externalStorageServiceProvider);
+      await service.setSyncMode(mode);
+      setState(() => _syncMode = mode);
+    } catch (e) {
+      MemoixSnackBar.showError('$e');
+    }
+  }
+
+  /// Disconnect from current provider
+  Future<void> _disconnect() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Disconnect?'),
+        content: const Text(
+          'Disconnecting will not delete your recipes from Google Drive. '
+          'You can reconnect anytime.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Disconnect'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed == true) {
+      final service = ref.read(externalStorageServiceProvider);
+      await service.disconnect();
+      _googleDrive = GoogleDriveStorage();
+      _lastSyncTime = null;
+      if (mounted) setState(() {});
+      MemoixSnackBar.show('Disconnected from Google Drive');
+    }
+  }
+
+  /// Show placeholder for GitHub (not yet implemented)
+  void _showGitHubNotImplemented() {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('GitHub Storage'),
+        content: const Text(
+          'GitHub storage is for advanced users and requires a personal '
+          'access token with repository access.\n\n'
+          'This feature is coming soon.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('OK'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Format timestamp as human-readable "time ago"
+  String _formatTimeAgo(DateTime time) {
+    final now = DateTime.now();
+    final diff = now.difference(time);
+
+    if (diff.inMinutes < 1) {
+      return 'Just now';
+    } else if (diff.inMinutes < 60) {
+      return '${diff.inMinutes} minute${diff.inMinutes == 1 ? '' : 's'} ago';
+    } else if (diff.inHours < 24) {
+      return '${diff.inHours} hour${diff.inHours == 1 ? '' : 's'} ago';
+    } else if (diff.inDays < 7) {
+      return '${diff.inDays} day${diff.inDays == 1 ? '' : 's'} ago';
+    } else {
+      return '${time.month}/${time.day}/${time.year}';
+    }
+  }
+}
+
+/// Section header widget (matches settings screen pattern)
+class _SectionHeader extends StatelessWidget {
+  final String title;
+
+  const _SectionHeader({required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+      child: Text(
+        title.toUpperCase(),
+        style: Theme.of(context).textTheme.labelMedium?.copyWith(
+              color: Theme.of(context).colorScheme.primary,
+              fontWeight: FontWeight.bold,
+            ),
+      ),
+    );
+  }
+}
