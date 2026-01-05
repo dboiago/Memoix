@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math' as math;
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
@@ -29,6 +30,7 @@ import '../models/storage_meta.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/external_storage_provider.dart';
+import '../providers/google_drive_storage.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
@@ -66,8 +68,101 @@ class ExternalStorageService {
   
   /// Maximum retry attempts for failed operations
   static const _maxRetries = 3;
+  
+  /// Base delay for exponential backoff (doubles each retry)
+  static const _baseRetryDelay = Duration(seconds: 1);
 
   ExternalStorageService(this._ref);
+
+  // ============ INITIALIZATION ============
+
+  /// Initialize the service by restoring any previously connected provider
+  /// 
+  /// This should be called once at app startup to restore the connection state.
+  /// See EXTERNAL_STORAGE.md Section 8.1 for architecture details.
+  Future<void> initialize() async {
+    final prefs = await SharedPreferences.getInstance();
+    final providerId = prefs.getString(_PrefKeys.connectedProviderId);
+    
+    if (providerId == null) {
+      // No provider was connected
+      return;
+    }
+    
+    try {
+      // Instantiate the appropriate provider based on stored ID
+      final provider = _createProvider(providerId);
+      if (provider == null) {
+        debugPrint('ExternalStorageService: Unknown provider ID: $providerId');
+        return;
+      }
+      
+      // Initialize the provider (handles silent sign-in)
+      await provider.initialize();
+      
+      if (provider.isConnected) {
+        _provider = provider;
+        debugPrint('ExternalStorageService: Restored connection to ${provider.name}');
+      } else {
+        // Silent sign-in failed (token expired/revoked)
+        // Clear stored state so user can reconnect
+        await prefs.remove(_PrefKeys.connectedProviderId);
+        debugPrint('ExternalStorageService: Failed to restore ${provider.name} connection');
+      }
+    } catch (e) {
+      debugPrint('ExternalStorageService: Provider restoration error: $e');
+      // Don't throw - just leave provider as null, user can reconnect manually
+    }
+  }
+  
+  /// Create a provider instance by ID
+  ExternalStorageProvider? _createProvider(String providerId) {
+    switch (providerId) {
+      case 'google_drive':
+        return GoogleDriveStorage();
+      // Add other providers here as they are implemented:
+      // case 'github':
+      //   return GitHubStorage();
+      // case 'icloud':
+      //   return ICloudStorage();
+      default:
+        return null;
+    }
+  }
+  
+  /// Execute an async operation with retry and exponential backoff
+  /// 
+  /// Implements the retry logic from EXTERNAL_STORAGE.md Section 10:
+  /// - Silent retry up to _maxRetries times
+  /// - Exponential backoff: 1s, 2s, 4s
+  /// - After all retries fail, throws the last error
+  Future<T> _withRetry<T>(
+    Future<T> Function() operation, {
+    required String operationName,
+  }) async {
+    Object? lastError;
+    
+    for (var attempt = 1; attempt <= _maxRetries; attempt++) {
+      try {
+        return await operation();
+      } catch (e) {
+        lastError = e;
+        debugPrint(
+          'ExternalStorageService: $operationName attempt $attempt/$_maxRetries failed: $e',
+        );
+        
+        if (attempt < _maxRetries) {
+          // Exponential backoff: 1s, 2s, 4s
+          final delay = _baseRetryDelay * math.pow(2, attempt - 1).toInt();
+          debugPrint('ExternalStorageService: Retrying in ${delay.inSeconds}s...');
+          await Future.delayed(delay);
+        }
+      }
+    }
+    
+    // All retries exhausted
+    throw lastError!;
+  }
 
   // ============ PUBLIC GETTERS ============
 
@@ -140,8 +235,13 @@ class ExternalStorageService {
   // ============ APP LIFECYCLE HOOKS ============
 
   /// Called on app startup
-  /// Triggers smart pull if automatic mode and enough time has passed.
+  /// Restores provider connection and triggers smart pull if automatic mode.
   Future<void> onAppLaunched() async {
+    // Restore provider connection from persisted state
+    if (_provider == null) {
+      await initialize();
+    }
+    
     if (!isConnected) return;
     if (!await isAutomaticMode) return;
 
@@ -193,6 +293,7 @@ class ExternalStorageService {
   /// Push local data to remote storage
   /// 
   /// [silent] - If true, show minimal UI feedback (for automatic syncs)
+  /// Implements retry with exponential backoff per EXTERNAL_STORAGE.md Section 10.
   Future<void> push({bool silent = false}) async {
     if (_provider == null) {
       if (!silent) MemoixSnackBar.showError('No storage provider connected');
@@ -207,15 +308,20 @@ class ExternalStorageService {
       // Create bundle from all local data
       final bundle = await _createBundle();
       
-      // Push to remote
-      await _provider!.push(bundle);
-      
-      // Update meta file
-      final meta = StorageMeta.create(
-        deviceName: await _getDeviceName(),
-        domains: bundle.domainCounts,
+      // Push to remote with retry logic
+      await _withRetry(
+        () async {
+          await _provider!.push(bundle);
+          
+          // Update meta file
+          final meta = StorageMeta.create(
+            deviceName: await _getDeviceName(),
+            domains: bundle.domainCounts,
+          );
+          await _provider!.updateMeta(meta);
+        },
+        operationName: 'push',
       );
-      await _provider!.updateMeta(meta);
       
       // Update last sync time
       await _setLastSyncTime(DateTime.now());
@@ -242,6 +348,7 @@ class ExternalStorageService {
   /// Pull remote data and merge into local database
   /// 
   /// [silent] - If true, show minimal UI feedback (for automatic syncs)
+  /// Implements retry with exponential backoff per EXTERNAL_STORAGE.md Section 10.
   Future<PullResult> pull({bool silent = false}) async {
     if (_provider == null) {
       if (!silent) MemoixSnackBar.showError('No storage provider connected');
@@ -255,7 +362,10 @@ class ExternalStorageService {
     try {
       // Smart pull: check meta first if provider supports it
       if (_provider!.supportsFastMetaCheck) {
-        final remoteMeta = await _provider!.getMeta();
+        final remoteMeta = await _withRetry(
+          () => _provider!.getMeta(),
+          operationName: 'getMeta',
+        );
         if (remoteMeta != null) {
           final lastSync = await _getLastSyncTime();
           if (lastSync != null && !remoteMeta.isNewerThan(lastSync)) {
@@ -269,8 +379,11 @@ class ExternalStorageService {
         }
       }
 
-      // Download bundle
-      final bundle = await _provider!.pull();
+      // Download bundle with retry logic
+      final bundle = await _withRetry(
+        () => _provider!.pull(),
+        operationName: 'pull',
+      );
       if (bundle == null) {
         _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
         if (!silent) {

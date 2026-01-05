@@ -36,6 +36,13 @@ abstract class ExternalStorageProvider {
   /// Display path of connected storage location (e.g., "/My Drive/Memoix")
   String? get connectedPath;
 
+  /// Initialize the provider and restore connection state from persistence
+  /// 
+  /// This is called on app startup to silently restore OAuth tokens.
+  /// Implementations should attempt silent sign-in and set isConnected accordingly.
+  /// This should NOT trigger any user-facing OAuth consent flows.
+  Future<void> initialize();
+
   /// Connect to the provider (OAuth flow or native auth)
   /// Returns true if connection was successful.
   Future<bool> connect();
