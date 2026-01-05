@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -310,7 +311,7 @@ class _QuickNotesTab extends StatelessWidget {
   }
 }
 
-class _RecipeDraftsTab extends StatelessWidget {
+class _RecipeDraftsTab extends StatefulWidget {
   final List<RecipeDraft> drafts;
   final VoidCallback onAddDraft;
   final ValueChanged<RecipeDraft> onEditDraft;
@@ -326,10 +327,62 @@ class _RecipeDraftsTab extends StatelessWidget {
   });
 
   @override
+  State<_RecipeDraftsTab> createState() => _RecipeDraftsTabState();
+}
+
+class _RecipeDraftsTabState extends State<_RecipeDraftsTab> {
+  // Track pending deletes by draft UUID
+  final Map<String, Timer> _pendingDeletes = {};
+  static const _undoDuration = Duration(seconds: 4);
+
+  @override
+  void dispose() {
+    // Execute any pending deletes when widget is disposed
+    for (final entry in _pendingDeletes.entries) {
+      entry.value.cancel();
+      final draft = widget.drafts.firstWhere(
+        (d) => d.uuid == entry.key,
+        orElse: () => RecipeDraft()..uuid = '',
+      );
+      if (draft.uuid.isNotEmpty) {
+        widget.onDeleteDraft(draft);
+      }
+    }
+    _pendingDeletes.clear();
+    super.dispose();
+  }
+
+  void _startDeleteTimer(RecipeDraft draft) {
+    _pendingDeletes[draft.uuid]?.cancel();
+    
+    setState(() {
+      _pendingDeletes[draft.uuid] = Timer(_undoDuration, () {
+        if (mounted) {
+          widget.onDeleteDraft(draft);
+          setState(() {
+            _pendingDeletes.remove(draft.uuid);
+          });
+        }
+      });
+    });
+  }
+
+  void _undoDelete(String uuid) {
+    _pendingDeletes[uuid]?.cancel();
+    setState(() {
+      _pendingDeletes.remove(uuid);
+    });
+  }
+
+  bool _isPendingDelete(String uuid) {
+    return _pendingDeletes.containsKey(uuid);
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    if (drafts.isEmpty) {
+    if (widget.drafts.isEmpty) {
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -360,64 +413,122 @@ class _RecipeDraftsTab extends StatelessWidget {
 
     return ListView.builder(
       padding: const EdgeInsets.all(16),
-      itemCount: drafts.length,
+      itemCount: widget.drafts.length,
       itemBuilder: (context, index) {
-        final draft = drafts[index];
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ListTile(
-            leading: draft.imagePath != null
-                ? ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: kIsWeb
-                        ? Image.network(
-                            draft.imagePath!,
-                            width: 48,
-                            height: 48,
-                            fit: BoxFit.cover,
-                          )
-                        : Image.file(
-                            File(draft.imagePath!),
-                            width: 48,
-                            height: 48,
-                            fit: BoxFit.cover,
-                          ),
-                  )
-                : CircleAvatar(
-                    backgroundColor: theme.colorScheme.primaryContainer,
-                    child: Icon(
-                      Icons.restaurant_menu,
-                      color: theme.colorScheme.primary,
+        final draft = widget.drafts[index];
+        
+        // Show inline undo placeholder if pending delete
+        if (_isPendingDelete(draft.uuid)) {
+          return Card(
+            margin: const EdgeInsets.only(bottom: 12),
+            child: Container(
+              height: 72,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.delete_outline,
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      '${draft.name} deleted',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
                     ),
                   ),
-            title: Text(draft.name),
-            subtitle: Text(
-              draft.ingredients.isEmpty
-                  ? 'No ingredients yet'
-                  : draft.ingredients.split('\n').take(2).join(', ') +
-                      (draft.ingredients.split('\n').length > 2 ? '...' : ''),
+                  TextButton(
+                    onPressed: () => _undoDelete(draft.uuid),
+                    child: Text(
+                      'UNDO',
+                      style: TextStyle(
+                        color: theme.colorScheme.primary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            trailing: PopupMenuButton<String>(
-              onSelected: (value) {
-                switch (value) {
-                  case 'edit':
-                    onEditDraft(draft);
-                    break;
-                  case 'convert':
-                    onConvertToRecipe(draft);
-                    break;
-                  case 'delete':
-                    onDeleteDraft(draft);
-                    break;
-                }
-              },
-              itemBuilder: (context) => [
-                const PopupMenuItem(
-                  value: 'edit',
-                  child: ListTile(
-                    leading: Icon(Icons.edit),
-                    title: Text('Edit'),
-                    contentPadding: EdgeInsets.zero,
+          );
+        }
+        
+        return Dismissible(
+          key: Key('draft_${draft.uuid}'),
+          direction: DismissDirection.endToStart,
+          background: Container(
+            margin: const EdgeInsets.only(bottom: 12),
+            decoration: BoxDecoration(
+              color: theme.colorScheme.secondary.withValues(alpha: 0.2),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            alignment: Alignment.centerRight,
+            padding: const EdgeInsets.only(right: 16),
+            child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+          ),
+          confirmDismiss: (direction) async {
+            // Start inline undo timer instead of immediate delete
+            _startDeleteTimer(draft);
+            return false; // Don't dismiss - show placeholder instead
+          },
+          child: Card(
+            margin: const EdgeInsets.only(bottom: 12),
+            child: ListTile(
+              leading: draft.imagePath != null
+                  ? ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: kIsWeb
+                          ? Image.network(
+                              draft.imagePath!,
+                              width: 48,
+                              height: 48,
+                              fit: BoxFit.cover,
+                            )
+                          : Image.file(
+                              File(draft.imagePath!),
+                              width: 48,
+                              height: 48,
+                              fit: BoxFit.cover,
+                            ),
+                    )
+                  : CircleAvatar(
+                      backgroundColor: theme.colorScheme.primaryContainer,
+                      child: Icon(
+                        Icons.restaurant_menu,
+                        color: theme.colorScheme.primary,
+                      ),
+                    ),
+              title: Text(draft.name),
+              subtitle: Text(
+                draft.ingredients.isEmpty
+                    ? 'No ingredients yet'
+                    : draft.ingredients.split('\n').take(2).join(', ') +
+                        (draft.ingredients.split('\n').length > 2 ? '...' : ''),
+              ),
+              trailing: PopupMenuButton<String>(
+                onSelected: (value) {
+                  switch (value) {
+                    case 'edit':
+                      widget.onEditDraft(draft);
+                      break;
+                    case 'convert':
+                      widget.onConvertToRecipe(draft);
+                      break;
+                    case 'delete':
+                      // Use inline undo instead of immediate delete
+                      _startDeleteTimer(draft);
+                      break;
+                  }
+                },
+                itemBuilder: (context) => [
+                  const PopupMenuItem(
+                    value: 'edit',
+                    child: ListTile(
+                      leading: Icon(Icons.edit),
+                      title: Text('Edit'),
+                      contentPadding: EdgeInsets.zero,
                   ),
                 ),
                 const PopupMenuItem(
@@ -438,8 +549,9 @@ class _RecipeDraftsTab extends StatelessWidget {
                 ),
               ],
             ),
-            onTap: () => onEditDraft(draft),
+            onTap: () => widget.onEditDraft(draft),
           ),
+        ),
         );
       },
     );

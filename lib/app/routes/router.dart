@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../app_shell.dart';
@@ -53,7 +54,7 @@ class AppRoutes {
 
   static void toRecipeDetail(BuildContext context, String recipeId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => RecipeDetailScreen(recipeId: recipeId),
       ),
     );
@@ -61,7 +62,7 @@ class AppRoutes {
 
   static void toRecipeList(BuildContext context, String course) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => RecipeListScreen(
           course: course,
           sourceFilter: RecipeSourceFilter.all,
@@ -73,7 +74,7 @@ class AppRoutes {
 
   static void toRecipeEdit(BuildContext context, {String? recipeId, String? course, Recipe? importedRecipe}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => RecipeEditScreen(
           recipeId: recipeId,
           defaultCourse: course,
@@ -85,7 +86,7 @@ class AppRoutes {
 
   static void toImport(BuildContext context, {String? course}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => ImportScreen(defaultCourse: course),
       ),
     );
@@ -93,7 +94,7 @@ class AppRoutes {
 
   static void toQRScanner(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const QrScannerScreen(),
       ),
     );
@@ -101,7 +102,7 @@ class AppRoutes {
 
   static void toOCRScanner(BuildContext context, {String? course}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => OCRScannerScreen(defaultCourse: course),
       ),
     );
@@ -109,7 +110,7 @@ class AppRoutes {
 
   static void toURLImport(BuildContext context, {String? course}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => URLImportScreen(defaultCourse: course),
       ),
     );
@@ -117,7 +118,7 @@ class AppRoutes {
 
   static void toShareRecipe(BuildContext context, {String? recipeId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => ShareRecipeScreen(recipeId: recipeId),
       ),
     );
@@ -125,7 +126,7 @@ class AppRoutes {
 
   static void toSettings(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const SettingsScreen(),
       ),
     );
@@ -133,7 +134,7 @@ class AppRoutes {
 
   static void toShoppingLists(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const ShoppingListScreen(),
       ),
     );
@@ -141,7 +142,7 @@ class AppRoutes {
 
   static void toMealPlan(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const MealPlanScreen(),
       ),
     );
@@ -149,7 +150,7 @@ class AppRoutes {
 
   static void toStatistics(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const StatisticsScreen(),
       ),
     );
@@ -157,7 +158,7 @@ class AppRoutes {
 
   static void toFavourites(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const FavouritesScreen(),
       ),
     );
@@ -165,7 +166,7 @@ class AppRoutes {
 
   static void toUnitConverter(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const MeasurementConverterWidget(),
       ),
     );
@@ -173,7 +174,7 @@ class AppRoutes {
 
   static void toKitchenTimer(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const KitchenTimerWidget(),
       ),
     );
@@ -181,7 +182,7 @@ class AppRoutes {
 
   static void toScratchPad(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const ScratchPadScreen(),
       ),
     );
@@ -191,7 +192,7 @@ class AppRoutes {
 
   static void toPizzaList(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const PizzaListScreen(),
       ),
     );
@@ -199,7 +200,7 @@ class AppRoutes {
 
   static void toPizzaDetail(BuildContext context, String pizzaId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => PizzaDetailScreen(pizzaId: pizzaId),
       ),
     );
@@ -207,7 +208,7 @@ class AppRoutes {
 
   static void toPizzaEdit(BuildContext context, {String? pizzaId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => PizzaEditScreen(pizzaId: pizzaId),
       ),
     );
@@ -217,7 +218,7 @@ class AppRoutes {
 
   static void toSandwichList(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const SandwichListScreen(),
       ),
     );
@@ -225,7 +226,7 @@ class AppRoutes {
 
   static void toSandwichDetail(BuildContext context, String sandwichId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => SandwichDetailScreen(sandwichId: sandwichId),
       ),
     );
@@ -233,7 +234,7 @@ class AppRoutes {
 
   static void toSandwichEdit(BuildContext context, {String? sandwichId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => SandwichEditScreen(sandwichId: sandwichId),
       ),
     );
@@ -243,7 +244,7 @@ class AppRoutes {
 
   static void toSmokingList(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const SmokingListScreen(),
       ),
     );
@@ -251,7 +252,7 @@ class AppRoutes {
 
   static void toSmokingDetail(BuildContext context, String recipeId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => SmokingDetailScreen(recipeId: recipeId),
       ),
     );
@@ -259,7 +260,7 @@ class AppRoutes {
 
   static void toSmokingEdit(BuildContext context, {String? recipeId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => SmokingEditScreen(recipeId: recipeId),
       ),
     );
@@ -269,7 +270,7 @@ class AppRoutes {
 
   static void toModernistList(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const ModernistListScreen(),
       ),
     );
@@ -277,7 +278,7 @@ class AppRoutes {
 
   static void toModernistDetail(BuildContext context, int recipeId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => ModernistDetailScreen(recipeId: recipeId),
       ),
     );
@@ -285,7 +286,7 @@ class AppRoutes {
 
   static void toModernistEdit(BuildContext context, {int? recipeId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => ModernistEditScreen(recipeId: recipeId),
       ),
     );
@@ -295,7 +296,7 @@ class AppRoutes {
 
   static void toCheeseList(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const CheeseListScreen(),
       ),
     );
@@ -303,7 +304,7 @@ class AppRoutes {
 
   static void toCheeseDetail(BuildContext context, String entryId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => CheeseDetailScreen(entryId: entryId),
       ),
     );
@@ -311,7 +312,7 @@ class AppRoutes {
 
   static void toCheeseEdit(BuildContext context, {String? entryId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => CheeseEditScreen(entryId: entryId),
       ),
     );
@@ -321,7 +322,7 @@ class AppRoutes {
 
   static void toCellarList(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => const CellarListScreen(),
       ),
     );
@@ -329,7 +330,7 @@ class AppRoutes {
 
   static void toCellarDetail(BuildContext context, String entryId) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => CellarDetailScreen(entryId: entryId),
       ),
     );
@@ -337,7 +338,7 @@ class AppRoutes {
 
   static void toCellarEdit(BuildContext context, {String? entryId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (_) => CellarEditScreen(entryId: entryId),
       ),
     );

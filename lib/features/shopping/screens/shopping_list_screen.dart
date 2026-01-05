@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -57,68 +59,161 @@ class ShoppingListScreen extends ConsumerWidget {
   }
 }
 
-class ShoppingListCard extends StatelessWidget {
+class ShoppingListCard extends ConsumerStatefulWidget {
   final ShoppingList list;
 
   const ShoppingListCard({super.key, required this.list});
 
   @override
+  ConsumerState<ShoppingListCard> createState() => _ShoppingListCardState();
+}
+
+class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
+  bool _isPendingDelete = false;
+  Timer? _deleteTimer;
+  static const _undoDuration = Duration(seconds: 4);
+
+  @override
+  void dispose() {
+    // If disposed while pending delete, execute the delete
+    if (_isPendingDelete) {
+      ref.read(shoppingListServiceProvider).delete(widget.list.id);
+    }
+    _deleteTimer?.cancel();
+    super.dispose();
+  }
+
+  void _startDeleteTimer() {
+    setState(() {
+      _isPendingDelete = true;
+    });
+    
+    _deleteTimer?.cancel();
+    _deleteTimer = Timer(_undoDuration, () {
+      if (mounted && _isPendingDelete) {
+        ref.read(shoppingListServiceProvider).delete(widget.list.id);
+      }
+    });
+  }
+
+  void _undoDelete() {
+    _deleteTimer?.cancel();
+    setState(() {
+      _isPendingDelete = false;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final progress = list.items.isEmpty ? 0.0 : list.checkedCount / list.items.length;
+    final progress = widget.list.items.isEmpty ? 0.0 : widget.list.checkedCount / widget.list.items.length;
 
-    return Card(
-      child: InkWell(
-        onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid),
-            ),
-          );
-        },
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+    // Show inline undo placeholder when pending delete
+    if (_isPendingDelete) {
+      return Card(
+        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        child: Container(
+          height: 88, // Match approximate height of normal card
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      list.name,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+              Icon(
+                Icons.delete_outline,
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  '${widget.list.name} deleted',
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
                   ),
-                  if (list.isComplete)
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: MemoixColors.successContainer,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Text(
-                        'Complete',
-                        style: TextStyle(color: MemoixColors.success, fontSize: 12),
-                      ),
-                    ),
-                ],
+                ),
               ),
-              const SizedBox(height: 8),
-              LinearProgressIndicator(
-                value: progress,
-                backgroundColor: theme.colorScheme.surfaceContainerHighest,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                '${list.checkedCount} of ${list.items.length} items',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
+              TextButton(
+                onPressed: _undoDelete,
+                child: Text(
+                  'UNDO',
+                  style: TextStyle(
+                    color: theme.colorScheme.primary,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ],
+          ),
+        ),
+      );
+    }
+
+    // Normal state: show dismissible card
+    return Dismissible(
+      key: Key('shopping_list_${widget.list.uuid}'),
+      direction: DismissDirection.endToStart,
+      background: Container(
+        color: theme.colorScheme.secondary.withValues(alpha: 0.2),
+        alignment: Alignment.centerRight,
+        padding: const EdgeInsets.only(right: 16),
+        child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+      ),
+      confirmDismiss: (direction) async {
+        // Start inline undo timer instead of immediate delete
+        _startDeleteTimer();
+        return false; // Don't dismiss - show placeholder instead
+      },
+      child: Card(
+        child: InkWell(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => ShoppingListDetailScreen(listUuid: widget.list.uuid),
+              ),
+            );
+          },
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        widget.list.name,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    if (widget.list.isComplete)
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.secondaryContainer,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Text(
+                          'Complete',
+                          style: TextStyle(color: theme.colorScheme.secondary, fontSize: 12),
+                        ),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                LinearProgressIndicator(
+                  value: progress,
+                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  '${widget.list.checkedCount} of ${widget.list.items.length} items',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -314,7 +409,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
   }
 }
 
-class _ShoppingItemTile extends StatelessWidget {
+class _ShoppingItemTile extends StatefulWidget {
   final ShoppingItem item;
   final VoidCallback onToggle;
   final VoidCallback onDelete;
@@ -326,45 +421,148 @@ class _ShoppingItemTile extends StatelessWidget {
   });
 
   @override
+  State<_ShoppingItemTile> createState() => _ShoppingItemTileState();
+}
+
+class _ShoppingItemTileState extends State<_ShoppingItemTile> {
+  bool _isPendingDelete = false;
+  Timer? _deleteTimer;
+  static const _undoDuration = Duration(seconds: 4);
+
+  @override
+  void dispose() {
+    // Execute delete if pending when disposed
+    if (_isPendingDelete) {
+      widget.onDelete();
+    }
+    _deleteTimer?.cancel();
+    super.dispose();
+  }
+
+  void _startDeleteTimer() {
+    setState(() {
+      _isPendingDelete = true;
+    });
+    
+    _deleteTimer?.cancel();
+    _deleteTimer = Timer(_undoDuration, () {
+      if (mounted && _isPendingDelete) {
+        widget.onDelete();
+      }
+    });
+  }
+
+  void _undoDelete() {
+    _deleteTimer?.cancel();
+    setState(() {
+      _isPendingDelete = false;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    // Show inline undo placeholder when pending delete
+    if (_isPendingDelete) {
+      return Container(
+        height: 56,
+        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+        decoration: BoxDecoration(
+          color: theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Row(
+          children: [
+            const SizedBox(width: 16),
+            Icon(
+              Icons.delete_outline,
+              color: theme.colorScheme.onSurfaceVariant,
+              size: 20,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                '${widget.item.name} deleted',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ),
+            TextButton(
+              onPressed: _undoDelete,
+              child: Text(
+                'UNDO',
+                style: TextStyle(
+                  color: theme.colorScheme.primary,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+          ],
+        ),
+      );
+    }
+
     return Dismissible(
-      key: ValueKey('${item.name}-${item.amount}'),
-      direction: DismissDirection.endToStart,
-      onDismissed: (_) => onDelete(),
+      key: ValueKey('${widget.item.name}-${widget.item.amount}'),
+      // Bi-directional swipe
+      direction: DismissDirection.horizontal,
+      // Left-to-right: check/uncheck (primary background)
       background: Container(
+        color: theme.colorScheme.primary.withValues(alpha: 0.2),
+        alignment: Alignment.centerLeft,
+        padding: const EdgeInsets.only(left: 16),
+        child: Icon(
+          widget.item.isChecked ? Icons.remove_done : Icons.check,
+          color: theme.colorScheme.primary,
+        ),
+      ),
+      // Right-to-left: delete (secondary background)
+      secondaryBackground: Container(
         color: theme.colorScheme.secondary.withValues(alpha: 0.2),
         alignment: Alignment.centerRight,
         padding: const EdgeInsets.only(right: 16),
         child: Icon(Icons.delete, color: theme.colorScheme.secondary),
       ),
+      confirmDismiss: (direction) async {
+        if (direction == DismissDirection.startToEnd) {
+          // Left-to-right: toggle check state, don't dismiss
+          widget.onToggle();
+          return false;
+        } else {
+          // Right-to-left: start inline undo timer
+          _startDeleteTimer();
+          return false; // Don't dismiss - show placeholder instead
+        }
+      },
       child: ListTile(
         leading: Checkbox(
-          value: item.isChecked,
-          onChanged: (_) => onToggle(),
+          value: widget.item.isChecked,
+          onChanged: (_) => widget.onToggle(),
         ),
             title: Text(
-              item.name,
+              widget.item.name,
               style: TextStyle(
-                decoration: item.isChecked ? TextDecoration.lineThrough : null,
-                color: item.isChecked
+                decoration: widget.item.isChecked ? TextDecoration.lineThrough : null,
+                color: widget.item.isChecked
                     ? theme.colorScheme.onSurface.withAlpha((0.5 * 255).round())
                     : null,
               ),
             ),
-        subtitle: item.amount != null
+        subtitle: widget.item.amount != null
             ? Text(
-                item.amount!,
+                widget.item.amount!,
                 style: TextStyle(
-                  decoration: item.isChecked ? TextDecoration.lineThrough : null,
+                  decoration: widget.item.isChecked ? TextDecoration.lineThrough : null,
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
               )
             : null,
-        trailing: item.recipeSource != null
+        trailing: widget.item.recipeSource != null
             ? Tooltip(
-                message: 'From: ${item.recipeSource}',
+                message: 'From: ${widget.item.recipeSource}',
                 child: Icon(
                   Icons.restaurant,
                   size: 16,
@@ -372,7 +570,7 @@ class _ShoppingItemTile extends StatelessWidget {
                 ),
               )
             : null,
-        onTap: onToggle,
+        onTap: widget.onToggle,
       ),
     );
   }

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
@@ -229,6 +231,68 @@ class DayCard extends ConsumerStatefulWidget {
 
 class _DayCardState extends ConsumerState<DayCard> {
   bool _hovered = false;
+  
+  // Track pending deletes by meal key (course_index)
+  final Map<String, Timer> _pendingDeletes = {};
+  static const _undoDuration = Duration(seconds: 4);
+
+  @override
+  void dispose() {
+    // Execute any pending deletes when widget is disposed
+    for (final entry in _pendingDeletes.entries) {
+      entry.value.cancel();
+      // Parse key to get course and index
+      final parts = entry.key.split('_');
+      if (parts.length == 2) {
+        final course = parts[0];
+        final index = int.tryParse(parts[1]);
+        if (index != null) {
+          _executeDelete(course, index);
+        }
+      }
+    }
+    _pendingDeletes.clear();
+    super.dispose();
+  }
+
+  String _mealKey(String course, int index) => '${course}_$index';
+
+  void _startDeleteTimer(String course, int index) {
+    final key = _mealKey(course, index);
+    _pendingDeletes[key]?.cancel();
+    
+    setState(() {
+      _pendingDeletes[key] = Timer(_undoDuration, () {
+        if (mounted) {
+          _executeDelete(course, index);
+          setState(() {
+            _pendingDeletes.remove(key);
+          });
+        }
+      });
+    });
+  }
+
+  void _undoDelete(String course, int index) {
+    final key = _mealKey(course, index);
+    _pendingDeletes[key]?.cancel();
+    setState(() {
+      _pendingDeletes.remove(key);
+    });
+  }
+
+  Future<void> _executeDelete(String course, int index) async {
+    // Get meals for this course and find the actual index
+    final meals = widget.plan?.getMeals(course) ?? [];
+    if (index < meals.length) {
+      await ref.read(mealPlanServiceProvider).removeMeal(widget.date, index);
+      ref.invalidate(weeklyPlanProvider);
+    }
+  }
+
+  bool _isPendingDelete(String course, int index) {
+    return _pendingDeletes.containsKey(_mealKey(course, index));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -313,8 +377,54 @@ class _DayCardState extends ConsumerState<DayCard> {
                       ],
                     ),
                   ),
-                  ...meals.map((meal) => Dismissible(
-                    key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}'),
+                  ...meals.asMap().entries.map((entry) {
+                    final mealIndex = entry.key;
+                    final meal = entry.value;
+                    
+                    // Show inline undo placeholder if pending delete
+                    if (_isPendingDelete(course, mealIndex)) {
+                      return Container(
+                        height: 56,
+                        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Row(
+                          children: [
+                            const SizedBox(width: 16),
+                            Icon(
+                              Icons.delete_outline,
+                              color: theme.colorScheme.onSurfaceVariant,
+                              size: 20,
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                '${meal.recipeName ?? "Meal"} removed',
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () => _undoDelete(course, mealIndex),
+                              child: Text(
+                                'UNDO',
+                                style: TextStyle(
+                                  color: theme.colorScheme.primary,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                          ],
+                        ),
+                      );
+                    }
+                    
+                    return Dismissible(
+                    key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}_$mealIndex'),
                     background: Container(
                       color: theme.colorScheme.secondary.withValues(alpha: 0.2),
                       alignment: Alignment.centerRight,
@@ -322,10 +432,10 @@ class _DayCardState extends ConsumerState<DayCard> {
                       child: Icon(Icons.delete, color: theme.colorScheme.secondary),
                     ),
                     direction: DismissDirection.endToStart,
-                    onDismissed: (_) async {
-                      // Remove the meal from the plan and refresh
-                      await ref.read(mealPlanServiceProvider).removeMeal(widget.date, meals.indexOf(meal));
-                      ref.invalidate(weeklyPlanProvider);
+                    confirmDismiss: (direction) async {
+                      // Start inline undo timer instead of immediate delete
+                      _startDeleteTimer(course, mealIndex);
+                      return false; // Don't dismiss - show placeholder instead
                     },
                     child: ListTile(
                       dense: true,
@@ -374,9 +484,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                         icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
                         onSelected: (action) async {
                           if (action == 'remove') {
-                            // Remove the meal and refresh
-                            await ref.read(mealPlanServiceProvider).removeMeal(widget.date, meals.indexOf(meal));
-                            ref.invalidate(weeklyPlanProvider);
+                            // Use inline undo instead of immediate delete
+                            _startDeleteTimer(course, mealIndex);
                           } else if (action == 'view') {
                             // Navigate to recipe detail using AppRoutes
                             if (meal.recipeId != null) {
@@ -414,7 +523,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                         }
                       },
                     ),
-                  ),),
+                  );
+                  }),
                 ],
               );
             }),

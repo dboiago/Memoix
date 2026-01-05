@@ -1,16 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'dart:ui';\nimport 'package:flutter/material.dart';\nimport 'package:flutter_riverpod/flutter_riverpod.dart';\n\nimport '../../../app/routes/router.dart';\nimport '../../../core/providers.dart';\nimport '../../../core/widgets/memoix_snackbar.dart';\nimport '../../../shared/widgets/memoix_empty_state.dart';\nimport '../../mealplan/models/meal_plan.dart';\nimport '../../settings/screens/settings_screen.dart';\nimport '../models/course.dart';\nimport '../models/recipe.dart';\nimport '../models/source_filter.dart';\nimport '../models/spirit.dart';\nimport '../repository/recipe_repository.dart';\nimport '../widgets/recipe_card.dart';
 
-import '../../../app/routes/router.dart';
-import '../../../shared/widgets/memoix_empty_state.dart';
-import '../../settings/screens/settings_screen.dart';
-import '../models/course.dart';
-import '../models/recipe.dart';
-import '../models/source_filter.dart';
-import '../models/spirit.dart';
-import '../repository/recipe_repository.dart';
-import '../widgets/recipe_card.dart';
 
 /// Recipe list screen matching Figma design
 class RecipeListScreen extends ConsumerStatefulWidget {
@@ -448,15 +437,63 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       return _buildEmptyState();
     }
 
+    final theme = Theme.of(context);
+
     // Simple list without grouping for cleaner UI
     return ListView.builder(
       padding: const EdgeInsets.only(bottom: 80),
       itemCount: filteredRecipes.length,
       itemBuilder: (context, index) {
-        return RecipeCard(
-          recipe: filteredRecipes[index],
-          onTap: () => AppRoutes.toRecipeDetail(context, filteredRecipes[index].uuid),
-          isCompact: ref.watch(compactViewProvider),
+        final recipe = filteredRecipes[index];
+        return Dismissible(
+          key: Key('recipe_swipe_${recipe.uuid}'),
+          direction: DismissDirection.startToEnd,
+          background: Container(
+            color: theme.colorScheme.primary.withValues(alpha: 0.2),
+            alignment: Alignment.centerLeft,
+            padding: const EdgeInsets.only(left: 16),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.calendar_today, color: theme.colorScheme.primary),
+                const SizedBox(width: 8),
+                Text(
+                  'Add to Meal Plan',
+                  style: TextStyle(
+                    color: theme.colorScheme.primary,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          confirmDismiss: (direction) async {
+            // Add to today's meal plan
+            final today = DateTime.now();
+            await ref.read(mealPlanServiceProvider).addMeal(
+              today,
+              recipeId: recipe.uuid,
+              recipeName: recipe.name,
+              course: recipe.course,
+              cuisine: recipe.cuisine,
+              recipeCategory: recipe.course,
+            );
+            ref.invalidate(weeklyPlanProvider);
+            
+            MemoixSnackBar.showWithAction(
+              message: '${recipe.name} added to today\'s plan',
+              actionLabel: 'View',
+              onAction: () => AppRoutes.toMealPlan(context),
+            );
+            
+            // Return false to NOT dismiss the card
+            return false;
+          },
+          child: RecipeCard(
+            recipe: recipe,
+            onTap: () => AppRoutes.toRecipeDetail(context, recipe.uuid),
+            isCompact: ref.watch(compactViewProvider),
+          ),
         );
       },
     );
