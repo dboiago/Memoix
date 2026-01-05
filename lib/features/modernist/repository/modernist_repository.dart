@@ -4,14 +4,16 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/modernist_recipe.dart';
 
 /// Repository for modernist recipe CRUD operations
 class ModernistRepository {
   final Isar _db;
+  final Ref _ref;
   static const _uuid = Uuid();
 
-  ModernistRepository(this._db);
+  ModernistRepository(this._db, this._ref);
 
   /// Watch all modernist recipes
   Stream<List<ModernistRecipe>> watchAll() {
@@ -66,7 +68,12 @@ class ModernistRepository {
     recipe.updatedAt = DateTime.now();
     // Normalize ingredient units
     _normalizeIngredientUnits(recipe);
-    return _db.writeTxn(() => _db.modernistRecipes.put(recipe));
+    final result = await _db.writeTxn(() => _db.modernistRecipes.put(recipe));
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    
+    return result;
   }
   
   /// Normalize ingredient units to standard abbreviations
@@ -126,8 +133,15 @@ class ModernistRepository {
   }
 
   /// Delete a recipe
-  Future<bool> delete(int id) {
-    return _db.writeTxn(() => _db.modernistRecipes.delete(id));
+  Future<bool> delete(int id) async {
+    final result = await _db.writeTxn(() => _db.modernistRecipes.delete(id));
+    
+    // Notify external storage service of change
+    if (result) {
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    }
+    
+    return result;
   }
 
   /// Delete by UUID
@@ -147,6 +161,9 @@ class ModernistRepository {
       recipe.updatedAt = DateTime.now();
       await _db.modernistRecipes.put(recipe);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Increment cook count
@@ -159,6 +176,9 @@ class ModernistRepository {
       recipe.updatedAt = DateTime.now();
       await _db.modernistRecipes.put(recipe);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Get unique technique categories from all recipes
@@ -204,7 +224,7 @@ class ModernistRepository {
 /// Repository provider
 final modernistRepositoryProvider = Provider<ModernistRepository>((ref) {
   final db = ref.watch(databaseProvider);
-  return ModernistRepository(db);
+  return ModernistRepository(db, ref);
 });
 
 /// All modernist recipes (stream)

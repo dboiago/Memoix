@@ -3,13 +3,15 @@ import 'package:isar/isar.dart';
 
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/smoking_recipe.dart';
 
 /// Repository for smoking recipe operations
 class SmokingRepository {
   final Isar _db;
+  final Ref _ref;
 
-  SmokingRepository(this._db);
+  SmokingRepository(this._db, this._ref);
 
   /// Get all smoking recipes
   Future<List<SmokingRecipe>> getAllRecipes() async {
@@ -40,6 +42,9 @@ class SmokingRepository {
     // Normalize seasoning units
     _normalizeSeasoningUnits(recipe);
     await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
   
   /// Normalize seasoning units to standard abbreviations
@@ -52,6 +57,9 @@ class SmokingRepository {
     final recipe = await getRecipeByUuid(uuid);
     if (recipe != null) {
       await _db.writeTxn(() => _db.smokingRecipes.delete(recipe.id));
+      
+      // Notify external storage service of change
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
     }
   }
 
@@ -62,6 +70,9 @@ class SmokingRepository {
       recipe.isFavorite = !recipe.isFavorite;
       recipe.updatedAt = DateTime.now();
       await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+      
+      // Notify external storage service of change
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
     }
   }
 
@@ -72,6 +83,9 @@ class SmokingRepository {
       recipe.cookCount += 1;
       recipe.updatedAt = DateTime.now();
       await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
+      
+      // Notify external storage service of change
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
     }
   }
 
@@ -105,7 +119,7 @@ class SmokingRepository {
 // Providers
 final smokingRepositoryProvider = Provider<SmokingRepository>((ref) {
   final db = ref.watch(databaseProvider);
-  return SmokingRepository(db);
+  return SmokingRepository(db, ref);
 });
 
 final allSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {

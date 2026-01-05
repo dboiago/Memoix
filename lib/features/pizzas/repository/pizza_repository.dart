@@ -3,14 +3,16 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/pizza.dart';
 
 /// Repository for pizza data operations
 class PizzaRepository {
   final Isar _db;
+  final Ref _ref;
   static const _uuid = Uuid();
 
-  PizzaRepository(this._db);
+  PizzaRepository(this._db, this._ref);
 
   // ============ PIZZAS ============
 
@@ -82,13 +84,23 @@ class PizzaRepository {
     await _db.writeTxn(() async {
       await _db.pizzas.put(pizza);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete a pizza by ID
   Future<bool> deletePizza(int id) async {
-    return _db.writeTxn(() async {
+    final result = await _db.writeTxn(() async {
       return _db.pizzas.delete(id);
     });
+    
+    // Notify external storage service of change
+    if (result) {
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    }
+    
+    return result;
   }
 
   /// Delete a pizza by UUID
@@ -105,6 +117,9 @@ class PizzaRepository {
     await _db.writeTxn(() async {
       await _db.pizzas.put(pizza);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Increment cook count
@@ -114,6 +129,9 @@ class PizzaRepository {
     await _db.writeTxn(() async {
       await _db.pizzas.put(pizza);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Update rating
@@ -123,6 +141,9 @@ class PizzaRepository {
     await _db.writeTxn(() async {
       await _db.pizzas.put(pizza);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all pizzas (stream for Riverpod)
@@ -208,7 +229,7 @@ class PizzaRepository {
 /// Provider for the PizzaRepository
 final pizzaRepositoryProvider = Provider<PizzaRepository>((ref) {
   final db = ref.watch(databaseProvider);
-  return PizzaRepository(db);
+  return PizzaRepository(db, ref);
 });
 
 /// Watch all pizzas

@@ -3,14 +3,16 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/cellar_entry.dart';
 
 /// Repository for cellar entry data operations
 class CellarRepository {
   final Isar _db;
+  final Ref _ref;
   static const _uuid = Uuid();
 
-  CellarRepository(this._db);
+  CellarRepository(this._db, this._ref);
 
   /// Get all cellar entries
   Future<List<CellarEntry>> getAllEntries() async {
@@ -66,13 +68,23 @@ class CellarRepository {
     await _db.writeTxn(() async {
       await _db.cellarEntrys.put(entry);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete an entry by ID
   Future<bool> deleteEntry(int id) async {
-    return _db.writeTxn(() async {
+    final result = await _db.writeTxn(() async {
       return _db.cellarEntrys.delete(id);
     });
+    
+    // Notify external storage service of change
+    if (result) {
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    }
+    
+    return result;
   }
 
   /// Delete an entry by UUID
@@ -89,6 +101,9 @@ class CellarRepository {
     await _db.writeTxn(() async {
       await _db.cellarEntrys.put(entry);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Toggle buy status
@@ -98,6 +113,9 @@ class CellarRepository {
     await _db.writeTxn(() async {
       await _db.cellarEntrys.put(entry);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all entries (stream for Riverpod)
@@ -147,7 +165,7 @@ class CellarRepository {
 /// Provider for the CellarRepository
 final cellarRepositoryProvider = Provider<CellarRepository>((ref) {
   final db = ref.watch(databaseProvider);
-  return CellarRepository(db);
+  return CellarRepository(db, ref);
 });
 
 /// Watch all cellar entries

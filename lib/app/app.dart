@@ -11,6 +11,7 @@ import '../core/widgets/update_available_dialog.dart';
 import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';
 import '../features/tools/timer_service.dart';
+import '../features/external_storage/services/external_storage_service.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -47,16 +48,47 @@ class _DeepLinkWrapper extends ConsumerStatefulWidget {
   ConsumerState<_DeepLinkWrapper> createState() => _DeepLinkWrapperState();
 }
 
-class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper> {
+class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
+    with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     // Initialize deep links and check for updates after first frame
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(deepLinkServiceProvider).initialize(context);
       _checkForUpdatesOnLaunch();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
+      _triggerExternalStorageSync();
+    });
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    final storageService = ref.read(externalStorageServiceProvider);
+    
+    if (state == AppLifecycleState.paused ||
+        state == AppLifecycleState.inactive) {
+      // App going to background - push any pending changes
+      storageService.onAppBackgrounded();
+    } else if (state == AppLifecycleState.resumed) {
+      // App coming back to foreground - could trigger pull if needed
+      // Currently handled by onAppLaunched on startup
+    }
+  }
+
+  /// Trigger external storage pull on app launch (if connected + automatic mode)
+  void _triggerExternalStorageSync() {
+    Future.microtask(() async {
+      if (!mounted) return;
+      try {
+        final storageService = ref.read(externalStorageServiceProvider);
+        await storageService.onAppLaunched();
+      } catch (e) {
+        debugPrint('External storage sync on launch failed: $e');
+      }
     });
   }
 
@@ -142,6 +174,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     ref.read(deepLinkServiceProvider).dispose();
     super.dispose();
   }

@@ -3,14 +3,16 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/sandwich.dart';
 
 /// Repository for sandwich data operations
 class SandwichRepository {
   final Isar _db;
+  final Ref _ref;
   static const _uuid = Uuid();
 
-  SandwichRepository(this._db);
+  SandwichRepository(this._db, this._ref);
 
   // ============ SANDWICHES ============
 
@@ -81,13 +83,23 @@ class SandwichRepository {
     await _db.writeTxn(() async {
       await _db.sandwichs.put(sandwich);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete a sandwich by ID
   Future<bool> deleteSandwich(int id) async {
-    return _db.writeTxn(() async {
+    final result = await _db.writeTxn(() async {
       return _db.sandwichs.delete(id);
     });
+    
+    // Notify external storage service of change
+    if (result) {
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    }
+    
+    return result;
   }
 
   /// Delete a sandwich by UUID
@@ -104,6 +116,9 @@ class SandwichRepository {
     await _db.writeTxn(() async {
       await _db.sandwichs.put(sandwich);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Increment cook count
@@ -113,6 +128,9 @@ class SandwichRepository {
     await _db.writeTxn(() async {
       await _db.sandwichs.put(sandwich);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Update rating
@@ -122,6 +140,9 @@ class SandwichRepository {
     await _db.writeTxn(() async {
       await _db.sandwichs.put(sandwich);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all sandwiches (stream for Riverpod)
@@ -210,7 +231,7 @@ class SandwichRepository {
 /// Provider for the SandwichRepository
 final sandwichRepositoryProvider = Provider<SandwichRepository>((ref) {
   final db = ref.watch(databaseProvider);
-  return SandwichRepository(db);
+  return SandwichRepository(db, ref);
 });
 
 /// Watch all sandwiches

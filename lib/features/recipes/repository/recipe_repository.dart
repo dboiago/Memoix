@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -12,9 +13,10 @@ import '../models/recipe.dart';
 /// Repository for recipe data operations
 class RecipeRepository {
   final Isar _db;
+  final Ref _ref;
   static const _uuid = Uuid();
 
-  RecipeRepository(this._db);
+  RecipeRepository(this._db, this._ref);
 
   // ============ RECIPES ============
 
@@ -128,7 +130,12 @@ class RecipeRepository {
     // Normalize ingredient units
     _normalizeIngredientUnits(recipe);
 
-    return _db.writeTxn(() => _db.recipes.put(recipe));
+    final result = await _db.writeTxn(() => _db.recipes.put(recipe));
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    
+    return result;
   }
 
   /// Save multiple recipes
@@ -146,6 +153,9 @@ class RecipeRepository {
       _normalizeIngredientUnits(recipe);
     }
     await _db.writeTxn(() => _db.recipes.putAll(recipes));
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
   
   /// Normalize ingredient units to standard abbreviations
@@ -155,7 +165,14 @@ class RecipeRepository {
 
   /// Delete a recipe
   Future<bool> deleteRecipe(int id) async {
-    return _db.writeTxn(() => _db.recipes.delete(id));
+    final result = await _db.writeTxn(() => _db.recipes.delete(id));
+    
+    // Notify external storage service of change
+    if (result) {
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    }
+    
+    return result;
   }
 
   /// Get recipes that pair with the given recipe (inverse lookup).
@@ -186,6 +203,9 @@ class RecipeRepository {
         await _db.recipes.put(recipe);
       }
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all recipes (stream)
@@ -395,7 +415,7 @@ class RecipeRepository {
 /// Provider for recipe repository
 /// Provider for recipe repository
 final recipeRepositoryProvider = Provider<RecipeRepository>((ref) {
-  return RecipeRepository(ref.watch(databaseProvider));
+  return RecipeRepository(ref.watch(databaseProvider), ref);
 });
 
 /// Provider for all recipes

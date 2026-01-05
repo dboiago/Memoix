@@ -3,14 +3,16 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../external_storage/services/external_storage_service.dart';
 import '../models/cheese_entry.dart';
 
 /// Repository for cheese entry data operations
 class CheeseRepository {
   final Isar _db;
+  final Ref _ref;
   static const _uuid = Uuid();
 
-  CheeseRepository(this._db);
+  CheeseRepository(this._db, this._ref);
 
   /// Get all cheese entries
   Future<List<CheeseEntry>> getAllEntries() async {
@@ -73,13 +75,23 @@ class CheeseRepository {
     await _db.writeTxn(() async {
       await _db.cheeseEntrys.put(entry);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete an entry by ID
   Future<bool> deleteEntry(int id) async {
-    return _db.writeTxn(() async {
+    final result = await _db.writeTxn(() async {
       return _db.cheeseEntrys.delete(id);
     });
+    
+    // Notify external storage service of change
+    if (result) {
+      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    }
+    
+    return result;
   }
 
   /// Delete an entry by UUID
@@ -96,6 +108,9 @@ class CheeseRepository {
     await _db.writeTxn(() async {
       await _db.cheeseEntrys.put(entry);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Toggle buy status
@@ -105,6 +120,9 @@ class CheeseRepository {
     await _db.writeTxn(() async {
       await _db.cheeseEntrys.put(entry);
     });
+    
+    // Notify external storage service of change
+    _ref.read(externalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all entries (stream for Riverpod)
@@ -180,7 +198,7 @@ class CheeseRepository {
 /// Provider for the CheeseRepository
 final cheeseRepositoryProvider = Provider<CheeseRepository>((ref) {
   final db = ref.watch(databaseProvider);
-  return CheeseRepository(db);
+  return CheeseRepository(db, ref);
 });
 
 /// Watch all cheese entries
