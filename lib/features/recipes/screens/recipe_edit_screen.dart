@@ -1918,38 +1918,64 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ),
             ),
           ),
-          // Ingredient name
+          // Ingredient name with autocomplete
           Expanded(
             flex: hasBakerPercent ? 2 : 3,
-            child: TextField(
-              controller: row.nameController,
-              decoration: InputDecoration(
-                isDense: true,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                border: const OutlineInputBorder(),
-                hintText: 'Ingredient',
-                hintStyle: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  color: theme.colorScheme.outline,
-                ),
-              ),
-              style: theme.textTheme.bodyMedium,
-              onChanged: (value) {
-                // Auto-add new row when typing in last row OR last row before a section
-                if (value.isNotEmpty && !row.isSection) {
-                  // Check if next row is a section header
-                  final nextIsSection = index < _ingredientRows.length - 1 &&
-                      _ingredientRows[index + 1].isSection;
-                  
-                  if (isLast) {
-                    // Append at the end
-                    _addIngredientRow();
-                    setState(() {});
-                  } else if (nextIsSection) {
-                    // Insert a new row between this ingredient and the section
-                    _insertIngredientAt(index + 1);
-                  }
+            child: Autocomplete<String>(
+              optionsBuilder: (textEditingValue) async {
+                if (textEditingValue.text.isEmpty) {
+                  return const Iterable<String>.empty();
                 }
+                final repo = ref.read(recipeRepositoryProvider);
+                return await repo.getIngredientNameSuggestions(textEditingValue.text);
+              },
+              onSelected: (selection) {
+                row.nameController.text = selection;
+              },
+              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                // Sync initial value from row.nameController
+                if (controller.text != row.nameController.text) {
+                  controller.text = row.nameController.text;
+                }
+                // Keep controllers in sync
+                controller.addListener(() {
+                  if (row.nameController.text != controller.text) {
+                    row.nameController.text = controller.text;
+                  }
+                });
+                
+                return TextField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: InputDecoration(
+                    isDense: true,
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                    border: const OutlineInputBorder(),
+                    hintText: 'Ingredient',
+                    hintStyle: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      color: theme.colorScheme.outline,
+                    ),
+                  ),
+                  style: theme.textTheme.bodyMedium,
+                  onChanged: (value) {
+                    // Auto-add new row when typing in last row OR last row before a section
+                    if (value.isNotEmpty && !row.isSection) {
+                      // Check if next row is a section header
+                      final nextIsSection = index < _ingredientRows.length - 1 &&
+                          _ingredientRows[index + 1].isSection;
+                      
+                      if (isLast) {
+                        // Append at the end
+                        _addIngredientRow();
+                        setState(() {});
+                      } else if (nextIsSection) {
+                        // Insert a new row between this ingredient and the section
+                        _insertIngredientAt(index + 1);
+                      }
+                    }
+                  },
+                );
               },
             ),
           ),
@@ -1997,22 +2023,48 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
           ),
           const SizedBox(width: 8),
           
-          // Notes/Prep
+          // Notes/Prep with autocomplete
           Expanded(
             flex: 2,
-            child: TextField(
-              controller: row.notesController,
-              decoration: InputDecoration(
-                isDense: true,
-                contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                border: const OutlineInputBorder(),
-                hintText: 'Notes',
-                hintStyle: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  color: theme.colorScheme.outline,
-                ),
-              ),
-              style: theme.textTheme.bodyMedium,
+            child: Autocomplete<String>(
+              optionsBuilder: (textEditingValue) async {
+                if (textEditingValue.text.isEmpty) {
+                  return const Iterable<String>.empty();
+                }
+                final repo = ref.read(recipeRepositoryProvider);
+                return await repo.getPrepNoteSuggestions(textEditingValue.text);
+              },
+              onSelected: (selection) {
+                row.notesController.text = selection;
+              },
+              fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+                // Sync initial value from row.notesController
+                if (controller.text != row.notesController.text) {
+                  controller.text = row.notesController.text;
+                }
+                // Keep controllers in sync
+                controller.addListener(() {
+                  if (row.notesController.text != controller.text) {
+                    row.notesController.text = controller.text;
+                  }
+                });
+                
+                return TextField(
+                  controller: controller,
+                  focusNode: focusNode,
+                  decoration: InputDecoration(
+                    isDense: true,
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                    border: const OutlineInputBorder(),
+                    hintText: 'Notes',
+                    hintStyle: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      color: theme.colorScheme.outline,
+                    ),
+                  ),
+                  style: theme.textTheme.bodyMedium,
+                );
+              },
             ),
           ),
           

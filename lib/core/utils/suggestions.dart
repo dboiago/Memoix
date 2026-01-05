@@ -1,5 +1,43 @@
 /// Common suggestions for autocomplete fields
 class Suggestions {
+  // Essential ingredient names for new users
+  static const List<String> essentialIngredients = [
+    'Salt',
+    'Black Pepper',
+    'Olive Oil',
+    'Onion',
+    'Garlic',
+    'Water',
+    'Sugar',
+    'Flour',
+    'Butter',
+    'Eggs',
+    'Milk',
+    'Chicken',
+    'Beef',
+    'Vegetable Oil',
+    'Soy Sauce',
+    'Lemon Juice',
+    'Vinegar',
+    'Honey',
+    'Rice',
+    'Pasta',
+  ];
+
+  // Essential prep notes for new users
+  static const List<String> essentialPrepNotes = [
+    'Chopped',
+    'Diced',
+    'Minced',
+    'Sliced',
+    'Crushed',
+    'Garnish',
+    'To Taste',
+    'Divided',
+    'Optional',
+    'Room Temperature',
+  ];
+
   // Pizza cheeses - common varieties used in pizza making
   static const List<String> cheeses = [
     'Mozzarella',

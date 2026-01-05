@@ -3,6 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
@@ -282,6 +283,92 @@ class RecipeRepository {
   /// Watch courses
   Stream<List<Course>> watchCourses() {
     return _db.courses.where().sortBySortOrder().watch(fireImmediately: true);
+  }
+
+  // ============ INGREDIENT SUGGESTIONS ============
+
+  /// Get ingredient name suggestions based on user's history + defaults
+  /// Returns unique names that match the query, sorted alphabetically
+  Future<List<String>> getIngredientNameSuggestions(String query) async {
+    // Get all ingredient names from saved recipes
+    final allRecipes = await _db.recipes.where().findAll();
+    
+    // Extract all ingredient names and deduplicate with a Set
+    final historyNames = <String>{};
+    for (final recipe in allRecipes) {
+      for (final ingredient in recipe.ingredients) {
+        if (ingredient.name.isNotEmpty) {
+          historyNames.add(ingredient.name);
+        }
+      }
+    }
+    
+    // Merge with essential defaults
+    final allNames = <String>{...Suggestions.essentialIngredients, ...historyNames};
+    
+    // Filter by query (case-insensitive contains match)
+    final lowerQuery = query.toLowerCase();
+    final filtered = allNames
+        .where((name) => name.toLowerCase().contains(lowerQuery))
+        .toList();
+    
+    // Sort with "starts with" matches first, then alphabetically
+    filtered.sort((a, b) {
+      final aLower = a.toLowerCase();
+      final bLower = b.toLowerCase();
+      final aStartsWith = aLower.startsWith(lowerQuery);
+      final bStartsWith = bLower.startsWith(lowerQuery);
+      
+      if (aStartsWith && !bStartsWith) return -1;
+      if (bStartsWith && !aStartsWith) return 1;
+      return aLower.compareTo(bLower);
+    });
+    
+    return filtered;
+  }
+
+  /// Get prep/notes suggestions based on user's history + defaults
+  /// Returns unique prep notes that match the query, sorted alphabetically
+  Future<List<String>> getPrepNoteSuggestions(String query) async {
+    // Get all preparation notes from saved recipes
+    final allRecipes = await _db.recipes.where().findAll();
+    
+    // Extract all preparation notes and deduplicate with a Set
+    final historyNotes = <String>{};
+    for (final recipe in allRecipes) {
+      for (final ingredient in recipe.ingredients) {
+        if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
+          historyNotes.add(ingredient.preparation!);
+        }
+      }
+    }
+    
+    // Merge with essential defaults and the full preparations list
+    final allNotes = <String>{
+      ...Suggestions.essentialPrepNotes,
+      ...Suggestions.preparations,
+      ...historyNotes,
+    };
+    
+    // Filter by query (case-insensitive contains match)
+    final lowerQuery = query.toLowerCase();
+    final filtered = allNotes
+        .where((note) => note.toLowerCase().contains(lowerQuery))
+        .toList();
+    
+    // Sort with "starts with" matches first, then alphabetically
+    filtered.sort((a, b) {
+      final aLower = a.toLowerCase();
+      final bLower = b.toLowerCase();
+      final aStartsWith = aLower.startsWith(lowerQuery);
+      final bStartsWith = bLower.startsWith(lowerQuery);
+      
+      if (aStartsWith && !bStartsWith) return -1;
+      if (bStartsWith && !aStartsWith) return 1;
+      return aLower.compareTo(bLower);
+    });
+    
+    return filtered;
   }
 
   // ============ SYNC HELPERS ============
