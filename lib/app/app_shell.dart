@@ -47,7 +47,7 @@ class AppShell extends ConsumerStatefulWidget {
 }
 
 class _AppShellState extends ConsumerState<AppShell> {
-  late final _ShellNavigatorObserver _navObserver;
+  _ShellNavigatorObserver? _navObserver;
   bool _nestedCanPop = false;
 
   @override
@@ -74,6 +74,9 @@ class _AppShellState extends ConsumerState<AppShell> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     
+    // Ensure observer is initialized (handles hot reload edge cases)
+    _navObserver ??= _ShellNavigatorObserver(onChanged: _onNavigationChanged);
+    
     return PopScope(
       // Allow system pop only when at root (nothing to pop in nested navigator)
       canPop: !_nestedCanPop,
@@ -92,7 +95,7 @@ class _AppShellState extends ConsumerState<AppShell> {
         ),
         body: Navigator(
           key: AppShellNavigator.navigatorKey,
-          observers: [_navObserver],
+          observers: [_navObserver!],
           onGenerateRoute: (settings) {
             // Single stack starting at home; other routes are pushed via AppRoutes helpers.
             return MaterialPageRoute(builder: (_) => const HomeScreen());
