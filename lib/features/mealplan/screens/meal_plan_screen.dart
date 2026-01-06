@@ -281,12 +281,27 @@ class _DayCardState extends ConsumerState<DayCard> {
     });
   }
 
-  Future<void> _executeDelete(String course, int index) async {
-    // Get meals for this course and find the actual index
-    final meals = widget.plan?.getMeals(course) ?? [];
-    if (index < meals.length) {
-      await ref.read(mealPlanServiceProvider).removeMeal(widget.date, index);
-      ref.invalidate(weeklyPlanProvider);
+  Future<void> _executeDelete(String course, int indexInCourse) async {
+    // Get meals for this course
+    final courseMeals = widget.plan?.getMeals(course) ?? [];
+    if (indexInCourse >= courseMeals.length) return;
+    
+    // Find the actual index in the full meals array
+    final allMeals = widget.plan?.meals ?? [];
+    final targetMeal = courseMeals[indexInCourse];
+    
+    // Count how many meals of this course we've seen to find the right one
+    int courseCount = 0;
+    for (int i = 0; i < allMeals.length; i++) {
+      if (allMeals[i].course == course) {
+        if (courseCount == indexInCourse) {
+          // Found it - use this index
+          await ref.read(mealPlanServiceProvider).removeMeal(widget.date, i);
+          ref.invalidate(weeklyPlanProvider);
+          return;
+        }
+        courseCount++;
+      }
     }
   }
 

@@ -486,12 +486,16 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           confirmDismiss: (direction) async {
             // Add to today's meal plan
             final today = DateTime.now();
-            // Infer meal course from time of day
+            // Infer meal course from time of day based on planning times
+            // Breakfast: before 10:30 (planning to cook)
+            // Lunch: 11:00 to 12:30 (planning window)
+            // Dinner: after 12:30
             final hour = today.hour;
+            final minute = today.minute;
             String mealCourse;
-            if (hour < 11) {
+            if (hour < 10 || (hour == 10 && minute < 30)) {
               mealCourse = 'breakfast';
-            } else if (hour < 15) {
+            } else if (hour == 11 || (hour == 12 && minute <= 30)) {
               mealCourse = 'lunch';
             } else {
               mealCourse = 'dinner';
