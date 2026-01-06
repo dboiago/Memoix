@@ -486,11 +486,22 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           confirmDismiss: (direction) async {
             // Add to today's meal plan
             final today = DateTime.now();
+            // Infer meal course from time of day
+            final hour = today.hour;
+            String mealCourse;
+            if (hour < 11) {
+              mealCourse = 'breakfast';
+            } else if (hour < 15) {
+              mealCourse = 'lunch';
+            } else {
+              mealCourse = 'dinner';
+            }
+            
             await ref.read(mealPlanServiceProvider).addMeal(
               today,
               recipeId: recipe.uuid,
               recipeName: recipe.name,
-              course: recipe.course,
+              course: mealCourse,
               cuisine: recipe.cuisine,
               recipeCategory: recipe.course,
             );
