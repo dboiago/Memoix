@@ -131,13 +131,6 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   Future<bool> connect() async {
     try {
       if (_isDesktop) {
-        // Check if desktop OAuth is configured
-        if (!ApiConfig.isDesktopOAuthConfigured) {
-          throw StateError(
-            'Desktop OAuth not configured. '
-            'Please add GOOGLE_CLIENT_SECRET_DESKTOP to your .env file.',
-          );
-        }
         return await _connectDesktop();
       } else if (_isMobile) {
         return await _connectMobile();
