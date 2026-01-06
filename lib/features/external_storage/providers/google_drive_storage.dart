@@ -1,10 +1,13 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
+import 'package:googleapis_auth/auth_io.dart' as auth_io;
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
@@ -12,13 +15,16 @@ import 'external_storage_provider.dart';
 
 /// Google Drive implementation of ExternalStorageProvider
 ///
-/// Uses OAuth 2.0 via google_sign_in with drive.file scope (app-created files only).
+/// Uses OAuth 2.0 via google_sign_in on mobile, and loopback OAuth on desktop.
 /// See EXTERNAL_STORAGE.md Section 7.1 for implementation details.
 class GoogleDriveStorage implements ExternalStorageProvider {
   // Storage keys
   static const _keyFolderId = 'google_drive_folder_id';
   static const _keyFolderPath = 'google_drive_folder_path';
   static const _keyIsConnected = 'google_drive_connected';
+  static const _keyAccessToken = 'google_drive_access_token';
+  static const _keyRefreshToken = 'google_drive_refresh_token';
+  static const _keyTokenExpiry = 'google_drive_token_expiry';
 
   // File names in the Memoix folder
   static const _recipesFileName = 'memoix_recipes.json';
@@ -29,16 +35,27 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   static const _folderMimeType = 'application/vnd.google-apps.folder';
   static const _jsonMimeType = 'application/json';
 
-  /// Google Sign-In instance with Drive file scope
-  final GoogleSignIn _googleSignIn = GoogleSignIn(
-    scopes: [drive.DriveApi.driveFileScope],
+  // OAuth scopes
+  static const _scopes = [drive.DriveApi.driveFileScope];
+
+  // OAuth client credentials for Desktop (public client - safe to embed)
+  // These are configured in Google Cloud Console for "Desktop" app type
+  // You need to create these credentials at: https://console.cloud.google.com/apis/credentials
+  // Select "Desktop app" as the application type
+  static const _desktopClientId = auth_io.ClientId(
+    // TODO: Replace with your actual Desktop OAuth Client ID from Google Cloud Console
+    'YOUR_DESKTOP_CLIENT_ID.apps.googleusercontent.com',
+    null, // Client secret is null for public clients (desktop apps)
   );
+
+  /// Google Sign-In instance for mobile platforms
+  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: _scopes);
 
   /// Drive API client (initialized after sign-in)
   drive.DriveApi? _driveApi;
 
   /// Authenticated HTTP client
-  _GoogleAuthClient? _authClient;
+  http.Client? _authClient;
 
   /// Cached folder ID for the Memoix folder
   String? _folderId;
@@ -48,6 +65,18 @@ class GoogleDriveStorage implements ExternalStorageProvider {
 
   /// Connection state
   bool _isConnected = false;
+
+  /// Desktop credentials (for token refresh)
+  auth_io.AccessCredentials? _desktopCredentials;
+
+  // --- Platform detection ---
+
+  /// Returns true if running on a desktop platform (Windows, macOS, Linux)
+  bool get _isDesktop =>
+      !kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux);
+
+  /// Returns true if running on a mobile platform (Android, iOS)
+  bool get _isMobile => !kIsWeb && (Platform.isAndroid || Platform.isIOS);
 
   // --- ExternalStorageProvider interface ---
 
@@ -79,6 +108,7 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   String? get connectedPath => _folderPath;
 
   /// Initialize provider and restore connection state from preferences
+  @override
   Future<void> initialize() async {
     final prefs = await SharedPreferences.getInstance();
     _isConnected = prefs.getBool(_keyIsConnected) ?? false;
@@ -88,12 +118,10 @@ class GoogleDriveStorage implements ExternalStorageProvider {
     // If we were connected, try to silently sign in
     if (_isConnected) {
       try {
-        final account = await _googleSignIn.signInSilently();
-        if (account != null) {
-          await _initializeDriveApi(account);
-        } else {
-          // Token expired or revoked - clear connection state
-          await _clearStoredState();
+        if (_isDesktop) {
+          await _restoreDesktopSession(prefs);
+        } else if (_isMobile) {
+          await _restoreMobileSession();
         }
       } catch (e) {
         debugPrint('GoogleDriveStorage: Silent sign-in failed: $e');
@@ -105,29 +133,13 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   @override
   Future<bool> connect() async {
     try {
-      // Sign out first to ensure we get a fresh token
-      await _googleSignIn.signOut();
-
-      // Trigger OAuth consent flow
-      final account = await _googleSignIn.signIn();
-      if (account == null) {
-        // User cancelled
-        return false;
+      if (_isDesktop) {
+        return await _connectDesktop();
+      } else if (_isMobile) {
+        return await _connectMobile();
+      } else {
+        throw UnsupportedError('Platform not supported for Google Drive');
       }
-
-      // Initialize Drive API
-      await _initializeDriveApi(account);
-
-      // Get or create the Memoix folder
-      final folderId = await _getOrCreateMemoixFolder();
-      _folderId = folderId;
-      _folderPath = '/My Drive/$_defaultFolderName';
-      _isConnected = true;
-
-      // Persist connection state
-      await _saveStoredState();
-
-      return true;
     } catch (e) {
       debugPrint('GoogleDriveStorage: Connection failed: $e');
       await _clearStoredState();
@@ -138,13 +150,17 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   @override
   Future<void> disconnect() async {
     try {
-      await _googleSignIn.signOut();
+      if (_isMobile) {
+        await _googleSignIn.signOut();
+      }
     } catch (e) {
       debugPrint('GoogleDriveStorage: Sign out error: $e');
     }
 
     _driveApi = null;
+    _authClient?.close();
     _authClient = null;
+    _desktopCredentials = null;
     await _clearStoredState();
   }
 
@@ -226,6 +242,147 @@ class GoogleDriveStorage implements ExternalStorageProvider {
     );
   }
 
+  // --- Platform-specific connection methods ---
+
+  /// Connect on mobile using google_sign_in
+  Future<bool> _connectMobile() async {
+    // Sign out first to ensure we get a fresh token
+    await _googleSignIn.signOut();
+
+    // Trigger OAuth consent flow
+    final account = await _googleSignIn.signIn();
+    if (account == null) {
+      // User cancelled
+      return false;
+    }
+
+    // Initialize Drive API
+    await _initializeDriveApiFromMobile(account);
+
+    // Get or create the Memoix folder
+    await _setupMemoixFolder();
+
+    return true;
+  }
+
+  /// Connect on desktop using loopback OAuth flow
+  Future<bool> _connectDesktop() async {
+    // Use the loopback OAuth flow which opens a browser
+    final client = await auth_io.clientViaUserConsent(
+      _desktopClientId,
+      _scopes,
+      _launchAuthUrl,
+    );
+
+    _authClient = client;
+    _desktopCredentials = client.credentials;
+    _driveApi = drive.DriveApi(client);
+
+    // Save credentials for later restoration
+    await _saveDesktopCredentials(_desktopCredentials!);
+
+    // Get or create the Memoix folder
+    await _setupMemoixFolder();
+
+    return true;
+  }
+
+  /// Launch the OAuth URL in the user's browser
+  void _launchAuthUrl(String url) {
+    launchUrl(
+      Uri.parse(url),
+      mode: LaunchMode.externalApplication,
+    );
+  }
+
+  /// Restore mobile session (silent sign-in)
+  Future<void> _restoreMobileSession() async {
+    final account = await _googleSignIn.signInSilently();
+    if (account != null) {
+      await _initializeDriveApiFromMobile(account);
+    } else {
+      // Token expired or revoked - clear connection state
+      await _clearStoredState();
+    }
+  }
+
+  /// Restore desktop session from stored tokens
+  Future<void> _restoreDesktopSession(SharedPreferences prefs) async {
+    final accessToken = prefs.getString(_keyAccessToken);
+    final refreshToken = prefs.getString(_keyRefreshToken);
+    final expiryMillis = prefs.getInt(_keyTokenExpiry);
+
+    if (accessToken == null || refreshToken == null || expiryMillis == null) {
+      await _clearStoredState();
+      return;
+    }
+
+    final expiry = DateTime.fromMillisecondsSinceEpoch(expiryMillis);
+    final credentials = auth_io.AccessCredentials(
+      auth_io.AccessToken('Bearer', accessToken, expiry.toUtc()),
+      refreshToken,
+      _scopes,
+    );
+
+    // Check if token needs refresh
+    if (expiry.isBefore(DateTime.now())) {
+      try {
+        final refreshedCredentials = await auth_io.refreshCredentials(
+          _desktopClientId,
+          credentials,
+          http.Client(),
+        );
+        _desktopCredentials = refreshedCredentials;
+        await _saveDesktopCredentials(refreshedCredentials);
+      } catch (e) {
+        debugPrint('GoogleDriveStorage: Token refresh failed: $e');
+        await _clearStoredState();
+        return;
+      }
+    } else {
+      _desktopCredentials = credentials;
+    }
+
+    // Create authenticated client
+    final client = auth_io.authenticatedClient(
+      http.Client(),
+      _desktopCredentials!,
+    );
+    _authClient = client;
+    _driveApi = drive.DriveApi(client);
+  }
+
+  /// Save desktop credentials to SharedPreferences
+  Future<void> _saveDesktopCredentials(auth_io.AccessCredentials creds) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_keyAccessToken, creds.accessToken.data);
+    if (creds.refreshToken != null) {
+      await prefs.setString(_keyRefreshToken, creds.refreshToken!);
+    }
+    await prefs.setInt(
+      _keyTokenExpiry,
+      creds.accessToken.expiry.millisecondsSinceEpoch,
+    );
+  }
+
+  /// Initialize Drive API from mobile sign-in
+  Future<void> _initializeDriveApiFromMobile(GoogleSignInAccount account) async {
+    final authHeaders = await account.authHeaders;
+    _authClient = _GoogleAuthClient(authHeaders);
+    _driveApi = drive.DriveApi(_authClient!);
+  }
+
+  /// Setup Memoix folder after successful connection
+  Future<void> _setupMemoixFolder() async {
+    final folderId = await _getOrCreateMemoixFolder();
+    _folderId = folderId;
+    _folderPath = '/My Drive/$_defaultFolderName';
+    _isConnected = true;
+
+    // Persist connection state
+    await _saveStoredState();
+  }
+
   // --- Public methods for folder selection ---
 
   /// Get list of folders in the user's Drive for folder picker
@@ -305,13 +462,6 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   }
 
   // --- Private methods ---
-
-  /// Initialize the Drive API with the signed-in account
-  Future<void> _initializeDriveApi(GoogleSignInAccount account) async {
-    final authHeaders = await account.authHeaders;
-    _authClient = _GoogleAuthClient(authHeaders);
-    _driveApi = drive.DriveApi(_authClient!);
-  }
 
   /// Ensure we have a valid Drive API connection
   void _ensureConnected() {
@@ -494,15 +644,19 @@ class GoogleDriveStorage implements ExternalStorageProvider {
     _isConnected = false;
     _folderId = null;
     _folderPath = null;
+    _desktopCredentials = null;
 
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyIsConnected);
     await prefs.remove(_keyFolderId);
     await prefs.remove(_keyFolderPath);
+    await prefs.remove(_keyAccessToken);
+    await prefs.remove(_keyRefreshToken);
+    await prefs.remove(_keyTokenExpiry);
   }
 }
 
-/// HTTP client wrapper that adds Google auth headers
+/// HTTP client wrapper that adds Google auth headers (for mobile)
 class _GoogleAuthClient extends http.BaseClient {
   final Map<String, String> _headers;
   final http.Client _client = http.Client();
