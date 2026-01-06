@@ -1,4 +1,20 @@
-import 'dart:ui';\nimport 'package:flutter/material.dart';\nimport 'package:flutter_riverpod/flutter_riverpod.dart';\n\nimport '../../../app/routes/router.dart';\nimport '../../../core/providers.dart';\nimport '../../../core/widgets/memoix_snackbar.dart';\nimport '../../../shared/widgets/memoix_empty_state.dart';\nimport '../../mealplan/models/meal_plan.dart';\nimport '../../settings/screens/settings_screen.dart';\nimport '../models/course.dart';\nimport '../models/recipe.dart';\nimport '../models/source_filter.dart';\nimport '../models/spirit.dart';\nimport '../repository/recipe_repository.dart';\nimport '../widgets/recipe_card.dart';
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../app/routes/router.dart';
+import '../../../core/providers.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../mealplan/models/meal_plan.dart';
+import '../../settings/screens/settings_screen.dart';
+import '../models/course.dart';
+import '../models/recipe.dart';
+import '../models/source_filter.dart';
+import '../models/spirit.dart';
+import '../repository/recipe_repository.dart';
+import '../widgets/recipe_card.dart';
 
 
 /// Recipe list screen matching Figma design

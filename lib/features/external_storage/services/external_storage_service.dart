@@ -426,7 +426,7 @@ class ExternalStorageService {
     // Fetch all data from each domain
     final recipes = await db.recipes.where().findAll();
     final pizzas = await db.pizzas.where().findAll();
-    final sandwiches = await db.sandwiches.where().findAll();
+    final sandwiches = await db.sandwichs.where().findAll();
     final cheeses = await db.cheeseEntrys.where().findAll();
     final cellar = await db.cellarEntrys.where().findAll();
     final smoking = await db.smokingRecipes.where().findAll();
