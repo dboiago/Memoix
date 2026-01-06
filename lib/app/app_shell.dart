@@ -13,10 +13,29 @@ class AppShellNavigator {
     return navigatorKey.currentState?.canPop() ?? false;
   }
   
-  /// Pop the nested navigator if possible
-  static void maybePop() {
-    navigatorKey.currentState?.maybePop();
+  /// Pop the nested navigator if possible, returns true if popped
+  static Future<bool> maybePop() async {
+    return await navigatorKey.currentState?.maybePop() ?? false;
   }
+}
+
+/// Observer to track navigation changes and trigger rebuilds
+class _ShellNavigatorObserver extends NavigatorObserver {
+  final VoidCallback onChanged;
+  
+  _ShellNavigatorObserver({required this.onChanged});
+  
+  @override
+  void didPush(Route route, Route? previousRoute) => onChanged();
+  
+  @override
+  void didPop(Route route, Route? previousRoute) => onChanged();
+  
+  @override
+  void didRemove(Route route, Route? previousRoute) => onChanged();
+  
+  @override
+  void didReplace({Route? newRoute, Route? oldRoute}) => onChanged();
 }
 
 /// Top-level app shell with persistent AppBar and Drawer.
@@ -28,22 +47,43 @@ class AppShell extends ConsumerStatefulWidget {
 }
 
 class _AppShellState extends ConsumerState<AppShell> {
+  late final _ShellNavigatorObserver _navObserver;
+  bool _nestedCanPop = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _navObserver = _ShellNavigatorObserver(onChanged: _onNavigationChanged);
+  }
+  
+  void _onNavigationChanged() {
+    // Schedule a microtask to check after the navigation completes
+    Future.microtask(() {
+      if (mounted) {
+        final canPop = AppShellNavigator.canPop();
+        if (canPop != _nestedCanPop) {
+          setState(() {
+            _nestedCanPop = canPop;
+          });
+        }
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    // PopScope intercepts system back gestures and routes them to the nested navigator
+    
     return PopScope(
-      canPop: false, // We handle all pops manually
-      onPopInvokedWithResult: (didPop, result) {
-        if (didPop) return; // Already handled
-        
-        // Route back gesture to nested navigator
-        if (AppShellNavigator.canPop()) {
-          AppShellNavigator.maybePop();
-        } else {
-          // At root of nested navigator - allow app to exit
-          Navigator.of(context).pop();
+      // Allow system pop only when at root (nothing to pop in nested navigator)
+      canPop: !_nestedCanPop,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) {
+          // System handled the pop (app will exit) - this happens when canPop is true
+          return;
         }
+        // System didn't pop because canPop was false - route to nested navigator
+        await AppShellNavigator.maybePop();
       },
       child: Scaffold(
         drawer: const AppDrawer(),
@@ -52,6 +92,7 @@ class _AppShellState extends ConsumerState<AppShell> {
         ),
         body: Navigator(
           key: AppShellNavigator.navigatorKey,
+          observers: [_navObserver],
           onGenerateRoute: (settings) {
             // Single stack starting at home; other routes are pushed via AppRoutes helpers.
             return MaterialPageRoute(builder: (_) => const HomeScreen());
