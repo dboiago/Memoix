@@ -1,6 +1,7 @@
 # Memoix Flutter App
 
 # Miscellaneous
+*.env
 *.class
 *.log
 *.pyc
@@ -61,6 +62,12 @@ app.*.map.json
 # Generated files
 *.g.dart
 *.freezed.dart
+
+# Android Signing Keys & Secrets
+**/android/key.properties
+**/android/app/*.jks
+**/android/*.jks
+*.keystore
 
 # Coverage
 coverage/

@@ -9,6 +9,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../config/api_config.dart';
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 import 'external_storage_provider.dart';
@@ -38,14 +39,10 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   // OAuth scopes
   static const _scopes = [drive.DriveApi.driveFileScope];
 
-  // OAuth client credentials for Desktop (public client - safe to embed)
-  // These are configured in Google Cloud Console for "Desktop" app type
-  // You need to create these credentials at: https://console.cloud.google.com/apis/credentials
-  // Select "Desktop app" as the application type
-  static final _desktopClientId = auth_io.ClientId(
-    // Desktop OAuth Client ID from Google Cloud Console
-    '889417441762-0kv07np1cu4t62d2tdl0bl4d44frorno.apps.googleusercontent.com',
-    null, // Client secret is null for public clients (desktop apps)
+  /// Desktop OAuth ClientId - loaded from .env or falls back to dev keys
+  static auth_io.ClientId get _desktopClientId => auth_io.ClientId(
+    ApiConfig.googleClientIdDesktop,
+    ApiConfig.googleClientSecretDesktop,
   );
 
   /// Google Sign-In instance for mobile platforms
@@ -134,6 +131,13 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   Future<bool> connect() async {
     try {
       if (_isDesktop) {
+        // Check if desktop OAuth is configured
+        if (!ApiConfig.isDesktopOAuthConfigured) {
+          throw StateError(
+            'Desktop OAuth not configured. '
+            'Please add GOOGLE_CLIENT_SECRET_DESKTOP to your .env file.',
+          );
+        }
         return await _connectDesktop();
       } else if (_isMobile) {
         return await _connectMobile();

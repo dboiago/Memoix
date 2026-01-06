@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -9,6 +10,9 @@ import 'core/database/database.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Load environment variables (optional - falls back to dev keys)
+  await dotenv.load(fileName: '.env', isOptional: true);
 
   // Configure desktop window
   if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
