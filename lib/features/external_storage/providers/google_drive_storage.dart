@@ -43,8 +43,8 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   // You need to create these credentials at: https://console.cloud.google.com/apis/credentials
   // Select "Desktop app" as the application type
   static const _desktopClientId = auth_io.ClientId(
-    // TODO: Replace with your actual Desktop OAuth Client ID from Google Cloud Console
-    'YOUR_DESKTOP_CLIENT_ID.apps.googleusercontent.com',
+    // Desktop OAuth Client ID from Google Cloud Console
+    '889417441762-0kv07np1cu4t62d2tdl0bl4d44frorno.apps.googleusercontent.com',
     null, // Client secret is null for public clients (desktop apps)
   );
 
