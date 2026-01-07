@@ -6124,6 +6124,145 @@ class UrlRecipeImporter {
       }
     }
     
+    // ===================================================================
+    // Divi Builder pattern (WordPress): .et_pb_text_inner with h4/h5 headers
+    // Detection: et_pb classes or known Divi sites like annaolson.ca
+    // Structure: <div class="et_pb_text_inner"><h4>Prep Time:</h4><p>25 minutes</p></div>
+    //           <div class="et_pb_text_inner"><h4>Cake:</h4><ul><li>...</li></ul></div>
+    // Must run early to catch structured content before generic selectors
+    // ===================================================================
+    final isDivi = bodyHtmlCheck.contains('et_pb_') ||
+        bodyHtmlCheck.contains('divi_') ||
+        sourceUrl.contains('annaolson.ca');
+    
+    if (isDivi && !usedStructuredFormat) {
+      final textInnerBlocks = document.querySelectorAll('.et_pb_text_inner');
+      
+      for (final block in textInnerBlocks) {
+        final h4 = block.querySelector('h4');
+        if (h4 == null) continue;
+        
+        final h4Text = (h4.text ?? '').trim();
+        
+        // === Extract Metadata (Time/Yield) ===
+        if (h4Text.contains('Prep Time') || h4Text.contains('Cook Time') || h4Text.contains('Total Time')) {
+          final nextP = h4.nextElementSibling;
+          if (nextP?.localName == 'p') {
+            final timeValue = _decodeHtml((nextP.text ?? '').trim());
+            if (timing == null) {
+              timing = timeValue;
+            } else if (!timing.contains(timeValue)) {
+              timing = '$timing, $timeValue';
+            }
+          }
+        } else if (h4Text.contains('Makes') || h4Text.contains('Serves') || h4Text.contains('Yield')) {
+          final nextP = h4.nextElementSibling;
+          if (nextP?.localName == 'p') {
+            yield = _decodeHtml((nextP.text ?? '').trim());
+          }
+        }
+        
+        // === Extract Ingredient Sections ===
+        // Look for h4 followed by <ul> (ingredient list)
+        else if (h4.nextElementSibling?.localName == 'ul') {
+          // This is an ingredient section
+          var sectionName = _decodeHtml(h4Text.trim());
+          // Remove trailing colon
+          if (sectionName.endsWith(':')) {
+            sectionName = sectionName.substring(0, sectionName.length - 1).trim();
+          }
+          // Add section header
+          if (sectionName.isNotEmpty && 
+              !sectionName.toLowerCase().contains('ingredient') && // Don't add generic "Ingredients" header
+              sectionName.length < _maxSectionHeaderLength) {
+            rawIngredientStrings.add('[$sectionName]');
+          }
+          
+          // Extract list items
+          final ul = h4.nextElementSibling!;
+          for (final li in ul.querySelectorAll('li')) {
+            final text = _decodeHtml((li.text ?? '').trim());
+            if (text.isNotEmpty && text.length < _maxIngredientLineLength) {
+              rawIngredientStrings.add(text);
+            }
+          }
+        }
+        
+        // === Extract Directions ===
+        else if (h4Text.contains('Step by Step Instructions') || 
+                 h4Text.contains('Instructions') || 
+                 h4Text.contains('Directions') ||
+                 h4Text.contains('Method')) {
+          // Found directions header - look for h5 steps or paragraphs after this block
+          var sibling = block.nextElementSibling;
+          while (sibling != null) {
+            // Stop at next major heading
+            if (sibling.querySelector('h2, h3') != null) break;
+            
+            // Check for h5 step headers (e.g., "Step 1")
+            final h5 = sibling.querySelector('h5');
+            if (h5 != null) {
+              final stepText = _decodeHtml((h5.text ?? '').trim());
+              // Look for paragraph content after h5
+              final p = h5.nextElementSibling;
+              if (p?.localName == 'p') {
+                final stepContent = _decodeHtml((p.text ?? '').trim());
+                if (stepContent.isNotEmpty && stepContent.length > 20) {
+                  // Combine step header with content
+                  rawDirections.add('$stepText: $stepContent');
+                }
+              }
+            } else {
+              // Look for direct paragraph content
+              final p = sibling.querySelector('p');
+              if (p != null) {
+                final text = _decodeHtml((p.text ?? '').trim());
+                if (text.isNotEmpty && 
+                    text.length > 20 && 
+                    !text.toLowerCase().contains('find me on') && // Skip footer text
+                    !text.toLowerCase().contains('subscribe') &&
+                    !text.toLowerCase().contains('follow me')) {
+                  rawDirections.add(text);
+                }
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+        }
+        
+        // === Extract Notes ===
+        else if (h4Text.toUpperCase().startsWith('NOTES')) {
+          // Extract all text after "NOTES:" header
+          var notesText = '';
+          var sibling = h4.nextElementSibling;
+          while (sibling != null) {
+            // Stop at next heading
+            if (sibling.querySelector('h2, h3, h4, h5') != null) break;
+            
+            final p = sibling.localName == 'p' ? sibling : sibling.querySelector('p');
+            if (p != null) {
+              final text = _decodeHtml((p.text ?? '').trim());
+              if (text.isNotEmpty) {
+                notesText = notesText.isEmpty ? text : '$notesText\n\n$text';
+              }
+            }
+            
+            sibling = sibling.nextElementSibling;
+          }
+          
+          if (notesText.isNotEmpty) {
+            htmlNotes = htmlNotes == null ? notesText : '$htmlNotes\n\n$notesText';
+          }
+        }
+      }
+      
+      // Mark as structured format if we found content
+      if (rawIngredientStrings.isNotEmpty || rawDirections.isNotEmpty) {
+        usedStructuredFormat = true;
+      }
+    }
+    
     // Check for Shopify/Lyres-style embedded HTML in JSON (recipe-info divs in product description)
     // These sites embed HTML inside JSON strings with unicode escaping (\u003c for <)
     var bodyHtml = document.outerHtml;
@@ -10093,6 +10232,25 @@ class UrlRecipeImporter {
       final href = preloadImage.attributes['href'];
       if (href != null && href.isNotEmpty && !href.contains('icon') && !href.contains('logo')) {
         return href;
+      }
+    }
+    
+    // 5b. Try Divi Builder image (et_pb_image with fetchpriority="high")
+    // Divi sites often mark the main recipe image with fetchpriority="high"
+    final diviImageHigh = document.querySelector('.et_pb_image img[fetchpriority="high"]');
+    if (diviImageHigh != null) {
+      final url = getImageUrl(diviImageHigh);
+      if (url != null && !url.contains('icon') && !url.contains('logo')) {
+        return url;
+      }
+    }
+    
+    // 5c. Try any Divi Builder image (.et_pb_image) as fallback
+    final diviImage = document.querySelector('.et_pb_image img');
+    if (diviImage != null) {
+      final url = getImageUrl(diviImage);
+      if (url != null && !url.contains('icon') && !url.contains('logo')) {
+        return url;
       }
     }
     
