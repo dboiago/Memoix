@@ -819,7 +819,11 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                               title: Text(r.name),
                               subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
                               trailing: const Icon(Icons.add_circle_outline),
-                              onTap: () => _addRecipeToMealPlan(r),
+                              onTap: () {
+                                // Cache context before async operations
+                                final navigator = Navigator.of(context);
+                                _addRecipeToMealPlan(r);
+                              },
                             ),),
                             const Divider(),
                           ],
@@ -858,7 +862,11 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                   title: Text(recipe.name),
                                   subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
                                   trailing: const Icon(Icons.add_circle_outline),
-                                  onTap: () => _addRecipeToMealPlan(recipe),
+                                  onTap: () {
+                                    // Cache context before async operations
+                                    final navigator = Navigator.of(context);
+                                    _addRecipeToMealPlan(recipe);
+                                  },
                                 ),).toList(),
                               );
                             },
