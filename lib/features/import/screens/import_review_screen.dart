@@ -284,10 +284,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           const SizedBox(height: 24),
 
           // Notes (if any)
-          if (result.notes != null && result.notes!.isNotEmpty) ...[
-            _buildSectionTitle(theme, 'Notes', Icons.notes),
+          if (result.comments != null && result.comments!.isNotEmpty) ...[
+            _buildSectionTitle(theme, 'Comments', Icons.notes),
             const SizedBox(height: 8),
-            _buildNotesCard(theme, result.notes!),
+            _buildNotesCard(theme, result.comments!),
             const SizedBox(height: 24),
           ],
           

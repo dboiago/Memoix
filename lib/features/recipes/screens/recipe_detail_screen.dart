@@ -639,7 +639,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 ),
 
                 // Comments section
-                if (recipe.notes != null && recipe.notes!.isNotEmpty)
+                if (recipe.comments != null && recipe.comments!.isNotEmpty)
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                     child: Card(
@@ -656,7 +656,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             ),
                             const SizedBox(height: 12),
                             Text(
-                              recipe.notes!,
+                              recipe.comments!,
                               textAlign: TextAlign.start,
                             ),
                           ],

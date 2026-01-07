@@ -15,7 +15,7 @@ class RecipeImportResult {
   final String? time;
   final List<Ingredient> ingredients;
   final List<String> directions;
-  final String? notes;
+  final String? comments;
   final String? imageUrl;
   final NutritionInfo? nutrition;
   
@@ -63,7 +63,7 @@ class RecipeImportResult {
     this.time,
     this.ingredients = const [],
     this.directions = const [],
-    this.notes,
+    this.comments,
     this.imageUrl,
     this.nutrition,
     this.equipment = const [],
@@ -148,7 +148,7 @@ class RecipeImportResult {
       time: time,
       ingredients: ingredients,
       directions: directions,
-      notes: notes,
+      comments: comments,
       imageUrl: imageUrl,
       sourceUrl: sourceUrl,
       source: source,
@@ -586,7 +586,7 @@ class RecipeImportResult {
       time: time ?? this.time,
       ingredients: ingredients ?? this.ingredients,
       directions: directions ?? this.directions,
-      notes: notes ?? this.notes,
+      comments: comments ?? this.comments,
       imageUrl: imageUrl ?? this.imageUrl,
       nutrition: nutrition ?? this.nutrition,
       equipment: equipment ?? this.equipment,

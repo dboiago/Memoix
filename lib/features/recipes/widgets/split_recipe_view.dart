@@ -307,7 +307,7 @@ class SplitRecipeView extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 12),
-                        Text(recipe.notes!),
+                        Text(recipe.comments!),
                       ],
                     ),
                   ),

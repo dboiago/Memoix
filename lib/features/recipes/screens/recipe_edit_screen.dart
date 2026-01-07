@@ -1719,7 +1719,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..time = _timeController.text.trim().isEmpty 
             ? null 
             : _timeController.text.trim()
-        ..notes = _notesController.text.trim().isEmpty 
+        ..comments = _notesController.text.trim().isEmpty 
             ? null 
             : _notesController.text.trim()
         ..ingredients = ingredients

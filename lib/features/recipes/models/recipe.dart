@@ -54,8 +54,8 @@ class Recipe {
   /// Stores IDs of recipes this recipe pairs with (e.g., a Main links to a Sauce)
   List<String> pairedRecipeIds = [];
 
-  /// Additional notes
-  String? notes;
+  /// Additional comments (author notes, tips, etc.)
+  String? comments;
 
   /// List of ingredients (embedded)
   List<Ingredient> ingredients = [];
@@ -147,7 +147,7 @@ class Recipe {
     this.serves,
     this.time,
     this.pairsWith = const [],
-    this.notes,
+    this.comments,
     this.ingredients = const [],
     this.directions = const [],
     this.sourceUrl,
@@ -207,7 +207,7 @@ class Recipe {
               .where((e) => e.isNotEmpty)
               .toList() ??
           []
-      ..notes = json['notes'] as String?
+      ..comments = (json['comments'] ?? json['notes']) as String?  // Backwards compatible with 'notes'
       ..ingredients = (json['ingredients'] as List<dynamic>?)
               ?.map((e) => Ingredient.fromJson(e as Map<String, dynamic>))
               .toList() ??
