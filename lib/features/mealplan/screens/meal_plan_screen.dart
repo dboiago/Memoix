@@ -282,8 +282,16 @@ class _DayCardState extends ConsumerState<DayCard> {
   }
 
   /// Generate a unique key for a meal delete operation
-  String _mealKey(String course, int index) => 
-      '${widget.date.toIso8601String()}_${course}_$index';
+  /// Use meal properties instead of index to handle multiple pending deletes
+  String _mealKey(String course, int index) {
+    final courseMeals = widget.plan?.getMeals(course) ?? [];
+    if (index >= courseMeals.length) return '${widget.date.toIso8601String()}_${course}_$index';
+    
+    final meal = courseMeals[index];
+    // Create a stable key using meal properties (not index)
+    final recipeKey = meal.recipeId ?? meal.recipeName ?? 'unknown';
+    return '${widget.date.toIso8601String()}_${course}_$recipeKey';
+  }
 
   void _startDeleteTimer(String course, int index) {
     final mealService = ref.read(mealPlanServiceProvider);
@@ -671,11 +679,19 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       recipeCategory: recipe.course,
     );
     
-    // Only update UI if still mounted
+    // Only show feedback if still mounted
     if (!mounted) return;
     
-    ref.invalidate(weeklyPlanProvider);
+    // Show SnackBar first (no rebuild yet)
     MemoixSnackBar.show('Added ${recipe.name}');
+    
+    // Delay invalidate to next frame to avoid rebuilding during SnackBar animation
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        ref.invalidate(weeklyPlanProvider);
+      }
+    });
+    
     // Clear search and keep sheet open for adding more recipes
     _searchController.clear();
     setState(() => _suggestions = []);
