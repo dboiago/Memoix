@@ -12,6 +12,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../config/api_config.dart';
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
+import '../services/repository_manager.dart';
 import 'external_storage_provider.dart';
 
 /// Google Drive implementation of ExternalStorageProvider
@@ -235,6 +236,57 @@ class GoogleDriveStorage implements ExternalStorageProvider {
       }
       rethrow; // Connection errors, etc.
     }
+  }
+
+  /// Create a new folder in Google Drive root
+  ///
+  /// Returns the new folder ID.
+  /// Used when creating a new repository.
+  Future<String> createFolder(String name) async {
+    _ensureConnected();
+
+    if (_driveApi == null) {
+      throw Exception('Drive API not initialized');
+    }
+
+    try {
+      final folderMetadata = drive.File()
+        ..name = name
+        ..mimeType = _folderMimeType
+        ..parents = ['root'];
+
+      final createdFolder = await _driveApi!.files.create(folderMetadata);
+
+      if (createdFolder.id == null) {
+        throw Exception('Failed to create folder');
+      }
+
+      debugPrint('GoogleDriveStorage: Created folder "$name" with ID: ${createdFolder.id}');
+      return createdFolder.id!;
+    } catch (e) {
+      throw Exception('Failed to create folder: $e');
+    }
+  }
+
+  /// Switch to a different repository
+  ///
+  /// This updates the target folder for all subsequent operations.
+  /// Called when user switches active repository in Repository Management.
+  Future<void> switchRepository(String folderId, String repositoryName) async {
+    _ensureConnected();
+
+    // Verify access to new folder
+    final hasAccess = await verifyFolderAccess(folderId);
+    if (!hasAccess) {
+      throw Exception('Cannot access repository folder');
+    }
+
+    // Update cached values
+    _folderId = folderId;
+    _folderPath = '/My Drive/$repositoryName';
+    await _saveStoredState();
+
+    debugPrint('GoogleDriveStorage: Switched to repository "$repositoryName"');
   }
 
   @override
@@ -546,16 +598,49 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   }
 
   /// Get the folder ID, fetching from preferences if needed
+  /// Get the folder ID for the active repository
+  ///
+  /// Migration Path:
+  /// - If no active repository exists (first run / legacy user):
+  ///   1. Search for legacy 'Memoix' folder (or create if brand new user)
+  ///   2. Register it as 'Default' repository in RepositoryManager
+  ///   3. Set it as active
+  /// - If active repository exists: Use its folderId
   Future<String> _ensureFolderId() async {
+    // Use cached folder ID if available
     if (_folderId != null) {
       return _folderId!;
     }
 
-    // Try to find or create the Memoix folder
-    _folderId = await _getOrCreateMemoixFolder();
-    _folderPath = '/My Drive/$_defaultFolderName';
-    await _saveStoredState();
+    final manager = RepositoryManager();
+    final activeRepo = await manager.getActiveRepository();
 
+    if (activeRepo != null) {
+      // Active repository exists - use it
+      debugPrint('GoogleDriveStorage: Using active repository: ${activeRepo.name}');
+      _folderId = activeRepo.folderId;
+      _folderPath = '/My Drive/${activeRepo.name}';
+    } else {
+      // No active repository - MIGRATION PATH for existing users
+      debugPrint('GoogleDriveStorage: No active repository - performing migration');
+
+      // Search for legacy 'Memoix' folder or create new
+      final legacyFolderId = await _getOrCreateMemoixFolder();
+
+      // Register as 'Default' repository
+      final defaultRepo = await manager.addRepository(
+        name: 'Default',
+        folderId: legacyFolderId,
+        isPendingVerification: false,
+      );
+
+      debugPrint('GoogleDriveStorage: Migrated to repository system - registered "Default" repository');
+
+      _folderId = legacyFolderId;
+      _folderPath = '/My Drive/Memoix';
+    }
+
+    await _saveStoredState();
     return _folderId!;
   }
 

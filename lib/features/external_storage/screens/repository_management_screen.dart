@@ -63,18 +63,25 @@ class _RepositoryManagementScreenState
     if (name == null || name.isEmpty || !mounted) return;
 
     try {
+      MemoixSnackBar.show('Creating repository...');
+      
       final storage = ref.read(googleDriveStorageProvider);
       
       // Create a new folder in Google Drive
-      // Note: This requires adding a createFolder method to GoogleDriveStorage
-      // For now, show a message
-      MemoixSnackBar.show('Creating repository...');
+      final folderId = await storage.createFolder(name);
       
-      // TODO: Implement folder creation in GoogleDriveStorage
-      // final folderId = await storage.createFolder(name);
-      // await _manager.addRepository(name: name, folderId: folderId);
-      // _loadRepositories();
+      // Register in RepositoryManager
+      await _manager.addRepository(
+        name: name,
+        folderId: folderId,
+        isPendingVerification: false,
+      );
       
+      _loadRepositories();
+      
+      if (mounted) {
+        MemoixSnackBar.showSuccess('Repository "$name" created');
+      }
     } catch (e) {
       if (mounted) {
         MemoixSnackBar.showError('Failed to create repository: $e');
@@ -84,7 +91,13 @@ class _RepositoryManagementScreenState
 
   Future<void> _switchRepository(DriveRepository repository) async {
     try {
+      // Update active repository in manager
       await _manager.setActiveRepository(repository.id);
+      
+      // Update GoogleDriveStorage to use the new folder
+      final storage = ref.read(googleDriveStorageProvider);
+      await storage.switchRepository(repository.folderId, repository.name);
+      
       _loadRepositories();
       
       if (mounted) {
