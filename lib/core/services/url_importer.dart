@@ -6193,36 +6193,35 @@ class UrlRecipeImporter {
                  h4Text.contains('Instructions') || 
                  h4Text.contains('Directions') ||
                  h4Text.contains('Method')) {
-          // Found directions header - ONLY process <h5>Step X</h5> + <p> combinations
-          // Do NOT grab loose paragraph content (prevents footer text like "Find me on YouTube")
-          var sibling = block.nextElementSibling;
-          while (sibling != null) {
-            // Stop at next major heading
-            if (sibling.querySelector('h2, h3, h4') != null) break;
+          // Divi-specific: Find ALL h5 elements on the page and filter for Step headers
+          // This avoids grabbing footer text that may be in similar containers
+          final allH5Elements = document.querySelectorAll('h5');
+          
+          for (final h5 in allH5Elements) {
+            final stepText = _decodeHtml((h5.text ?? '').trim());
             
-            // ONLY accept h5 step headers with their immediate paragraph sibling
-            final h5Elements = sibling.querySelectorAll('h5');
-            for (final h5 in h5Elements) {
-              final stepText = _decodeHtml((h5.text ?? '').trim());
-              // Only process if it looks like a step (starts with "Step" or is just a number)
-              if (stepText.toLowerCase().startsWith('step') || RegExp(r'^\d+\.?$').hasMatch(stepText)) {
-                // Get the IMMEDIATE sibling paragraph only
-                final nextElem = h5.nextElementSibling;
-                if (nextElem?.localName == 'p') {
-                  final stepContent = _decodeHtml((nextElem.text ?? '').trim());
-                  if (stepContent.isNotEmpty && 
-                      stepContent.length > 20 &&
-                      !stepContent.toLowerCase().contains('find me on') &&
-                      !stepContent.toLowerCase().contains('pastry chef') &&
-                      !stepContent.toLowerCase().contains('subscribe')) {
+            // STRICT FILTER: Only process if text matches "Step N" pattern (case-insensitive)
+            final stepPattern = RegExp(r'^Step\s+\d+', caseSensitive: false);
+            if (stepPattern.hasMatch(stepText)) {
+              // Get the IMMEDIATE next sibling element (usually a <p> tag)
+              final nextElem = h5.nextElementSibling;
+              if (nextElem?.localName == 'p') {
+                final stepContent = _decodeHtml((nextElem.text ?? '').trim());
+                
+                // Validate content exists and is substantial
+                if (stepContent.isNotEmpty && stepContent.length > 10) {
+                  // Additional filter: Skip if it contains promotional footer text
+                  final lowerContent = stepContent.toLowerCase();
+                  if (!lowerContent.contains('find me on') &&
+                      !lowerContent.contains('pastry chef online') &&
+                      !lowerContent.contains('subscribe') &&
+                      !lowerContent.contains('youtube')) {
                     // Combine step header with content
                     rawDirections.add('$stepText: $stepContent');
                   }
                 }
               }
             }
-            
-            sibling = sibling.nextElementSibling;
           }
         }
         
