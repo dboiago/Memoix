@@ -45,21 +45,19 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     
-    // Schedule for next frame to avoid widget tree issues during disposal
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      try {
-        messenger.clearSnackBars();
-        messenger.showSnackBar(
-          SnackBar(
-            content: Text(message),
-            duration: defaultDuration,
-            behavior: SnackBarBehavior.floating,
-          ),
-        );
-      } catch (_) {
-        // Ignore if widget tree is deactivated
-      }
-    });
+    // Don't clear existing snackbars - let them be replaced naturally
+    // Clearing during animation causes tree lookup issues
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: defaultDuration,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
   }
 
   /// Show a SnackBar with an action button
@@ -71,11 +69,6 @@ class MemoixSnackBar {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer();
-    try {
-      messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
     try {
       messenger.showSnackBar(
         SnackBar(
@@ -107,11 +100,6 @@ class MemoixSnackBar {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer();
-    try {
-      messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
     try {
       messenger.showSnackBar(
         SnackBar(
@@ -145,11 +133,6 @@ class MemoixSnackBar {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer();
-    try {
-      messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
     final dur = duration ?? actionDuration;
     try {
       messenger.showSnackBar(
@@ -179,11 +162,6 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     try {
-      messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
-    try {
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
@@ -201,11 +179,6 @@ class MemoixSnackBar {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer();
-    try {
-      messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
     try {
       messenger.showSnackBar(
         SnackBar(
@@ -230,11 +203,6 @@ class MemoixSnackBar {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer(); // Don't auto-dismiss alarms
-    try {
-      messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
     
     // Get the snackbar action color from theme (same as SnackBarAction uses)
     final context = rootNavigatorKey.currentContext;
