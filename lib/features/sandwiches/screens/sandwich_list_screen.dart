@@ -19,7 +19,7 @@ class SandwichListScreen extends ConsumerStatefulWidget {
 
 class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
   String _searchQuery = '';
-  String? _selectedProtein; // null = All, 'cheese' = vegetarian, otherwise protein name
+  final Set<String> _selectedProteins = {}; // empty = All
 
   @override
   Widget build(BuildContext context) {
@@ -243,12 +243,10 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
           // "All" chip
           _buildFilterChip(
             label: 'All',
-            isSelected: _selectedProtein == null,
+            isSelected: _selectedProteins.isEmpty,
             theme: theme,
-            onSelected: (selected) {
-              if (selected) {
-                setState(() => _selectedProtein = null);
-              }
+            onSelected: (_) {
+              setState(() => _selectedProteins.clear());
             },
           ),
 
@@ -256,10 +254,16 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
           if (hasVegetarian)
             _buildFilterChip(
               label: 'Cheese',
-              isSelected: _selectedProtein == 'cheese',
+              isSelected: _selectedProteins.contains('cheese'),
               theme: theme,
-              onSelected: (selected) {
-                setState(() => _selectedProtein = selected ? 'cheese' : null);
+              onSelected: (_) {
+                setState(() {
+                  if (_selectedProteins.contains('cheese')) {
+                    _selectedProteins.remove('cheese');
+                  } else {
+                    _selectedProteins.add('cheese');
+                  }
+                });
               },
             ),
 
@@ -267,22 +271,35 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
           if (hasAssorted)
             _buildFilterChip(
               label: 'Assorted',
-              isSelected: _selectedProtein == 'assorted',
+              isSelected: _selectedProteins.contains('assorted'),
               theme: theme,
-              onSelected: (selected) {
-                setState(() => _selectedProtein = selected ? 'assorted' : null);
+              onSelected: (_) {
+                setState(() {
+                  if (_selectedProteins.contains('assorted')) {
+                    _selectedProteins.remove('assorted');
+                  } else {
+                    _selectedProteins.add('assorted');
+                  }
+                });
               },
             ),
 
           // Individual protein chips
           ...proteins.map((protein) {
-            final isSelected = _selectedProtein == protein.toLowerCase();
+            final proteinKey = protein.toLowerCase();
+            final isSelected = _selectedProteins.contains(proteinKey);
             return _buildFilterChip(
               label: protein,
               isSelected: isSelected,
               theme: theme,
-              onSelected: (selected) {
-                setState(() => _selectedProtein = selected ? protein.toLowerCase() : null);
+              onSelected: (_) {
+                setState(() {
+                  if (_selectedProteins.contains(proteinKey)) {
+                    _selectedProteins.remove(proteinKey);
+                  } else {
+                    _selectedProteins.add(proteinKey);
+                  }
+                });
               },
             );
           }),
@@ -325,20 +342,24 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
   Widget _buildSandwichList(List<Sandwich> allSandwiches, bool isCompact) {
     var sandwiches = allSandwiches;
 
-    // Filter by selected protein
-    if (_selectedProtein != null) {
-      if (_selectedProtein == 'cheese') {
-        // Vegetarian: no proteins but has cheese
-        sandwiches = sandwiches.where((s) => s.proteins.isEmpty && s.cheeses.isNotEmpty).toList();
-      } else if (_selectedProtein == 'assorted') {
-        // Assorted: multiple proteins
-        sandwiches = sandwiches.where((s) => s.proteins.length > 1).toList();
-      } else {
-        // Has specific protein (includes assorted sandwiches that contain this protein)
-        sandwiches = sandwiches.where((s) => 
-          s.proteins.any((p) => p.toLowerCase() == _selectedProtein!.toLowerCase())
-        ).toList();
-      }
+    // Filter by selected proteins (multi-select)
+    if (_selectedProteins.isNotEmpty) {
+      sandwiches = sandwiches.where((s) {
+        // Check each selected filter
+        for (final filter in _selectedProteins) {
+          if (filter == 'cheese') {
+            // Vegetarian: no proteins but has cheese
+            if (s.proteins.isEmpty && s.cheeses.isNotEmpty) return true;
+          } else if (filter == 'assorted') {
+            // Assorted: multiple proteins
+            if (s.proteins.length > 1) return true;
+          } else {
+            // Has specific protein
+            if (s.proteins.any((p) => p.toLowerCase() == filter)) return true;
+          }
+        }
+        return false;
+      }).toList();
     }
 
     // Filter by search query
@@ -359,10 +380,10 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
 
     if (sandwiches.isEmpty) {
       return MemoixEmptyState(
-        message: _searchQuery.isNotEmpty || _selectedProtein != null
+        message: _searchQuery.isNotEmpty || _selectedProteins.isNotEmpty
             ? 'No sandwiches match your filters'
             : 'No sandwiches yet',
-        subtitle: _searchQuery.isEmpty && _selectedProtein == null
+        subtitle: _searchQuery.isEmpty && _selectedProteins.isEmpty
             ? 'Tap + to add your first sandwich'
             : null,
       );

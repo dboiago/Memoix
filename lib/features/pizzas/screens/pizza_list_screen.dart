@@ -17,7 +17,7 @@ class PizzaListScreen extends ConsumerStatefulWidget {
 }
 
 class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
-  PizzaBase? _selectedBase;
+  final Set<PizzaBase> _selectedBases = {};
   String _searchQuery = '';
 
   @override
@@ -222,7 +222,10 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
   }
 
   Widget _buildBaseChip(PizzaBase? base, int count) {
-    final isSelected = _selectedBase == base;
+    // "All" is selected when no bases are selected
+    final isSelected = base == null 
+        ? _selectedBases.isEmpty 
+        : _selectedBases.contains(base);
     final theme = Theme.of(context);
     final label = base?.displayName ?? 'All';
 
@@ -231,8 +234,20 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
       child: FilterChip(
         label: Text(label),
         selected: isSelected,
-        onSelected: (selected) {
-          setState(() => _selectedBase = selected ? base : null);
+        onSelected: (_) {
+          setState(() {
+            if (base == null) {
+              // Clicking "All" clears all selections
+              _selectedBases.clear();
+            } else {
+              // Toggle this base
+              if (_selectedBases.contains(base)) {
+                _selectedBases.remove(base);
+              } else {
+                _selectedBases.add(base);
+              }
+            }
+          });
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
@@ -261,10 +276,10 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
   }
 
   Widget _buildPizzaList(List<Pizza> allPizzas, bool isCompact) {
-    // Filter by base
-    var pizzas = _selectedBase == null
+    // Filter by base(s)
+    var pizzas = _selectedBases.isEmpty
         ? allPizzas
-        : allPizzas.where((p) => p.base == _selectedBase).toList();
+        : allPizzas.where((p) => _selectedBases.contains(p.base)).toList();
 
     // Filter by search query
     if (_searchQuery.isNotEmpty) {
@@ -284,10 +299,10 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
       return MemoixEmptyState(
         message: _searchQuery.isNotEmpty
             ? 'No pizzas match your search'
-            : _selectedBase != null
-                ? 'No pizzas with ${_selectedBase!.displayName} base'
+            : _selectedBases.isNotEmpty
+                ? 'No pizzas match selected filters'
                 : 'No pizzas yet',
-        subtitle: _searchQuery.isEmpty && _selectedBase == null
+        subtitle: _searchQuery.isEmpty && _selectedBases.isEmpty
             ? 'Tap + to add your first pizza'
             : null,
       );

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/smoking_recipe.dart';
@@ -20,7 +19,7 @@ class SmokingListScreen extends ConsumerStatefulWidget {
 }
 
 class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
-  String? _selectedCategory;
+  final Set<String> _selectedCategories = {};
   String _searchQuery = '';
 
   @override
@@ -66,8 +65,8 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
 
           // Filter recipes
           var filtered = visibleRecipes;
-          if (_selectedCategory != null) {
-            filtered = filtered.where((r) => r.category == _selectedCategory).toList();
+          if (_selectedCategories.isNotEmpty) {
+            filtered = filtered.where((r) => r.category != null && _selectedCategories.contains(r.category)).toList();
           }
           if (_searchQuery.isNotEmpty) {
             filtered = filtered.where((r) =>
@@ -266,27 +265,31 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
 
   Widget _buildCategoryChip(String? category, String label, int count) {
     final theme = Theme.of(context);
-    final isSelected = _selectedCategory == category;
-    final dotColor = category != null 
-        ? MemoixColors.forSmokedItemDot(category) 
-        : null;
+    // "All" is selected when no categories are selected
+    final isSelected = category == null 
+        ? _selectedCategories.isEmpty 
+        : _selectedCategories.contains(category);
 
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
-        avatar: dotColor != null
-            ? Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: dotColor,
-                  shape: BoxShape.circle,
-                ),
-              )
-            : null,
         label: Text(label),
         selected: isSelected,
-        onSelected: (_) => setState(() => _selectedCategory = category),
+        onSelected: (_) {
+          setState(() {
+            if (category == null) {
+              // Clicking "All" clears all selections
+              _selectedCategories.clear();
+            } else {
+              // Toggle this category
+              if (_selectedCategories.contains(category)) {
+                _selectedCategories.remove(category);
+              } else {
+                _selectedCategories.add(category);
+              }
+            }
+          });
+        },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
         showCheckmark: false,

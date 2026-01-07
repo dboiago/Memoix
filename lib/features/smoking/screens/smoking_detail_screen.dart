@@ -155,8 +155,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         if (recipe.type == SmokingType.pitNote) ...[
           if (recipe.temperature.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.thermostat, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeTemperature(recipe.temperature)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.thermostat, size: 12, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeTemperature(recipe.temperature)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(
                 color: theme.colorScheme.onSurface,
@@ -168,8 +174,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             ),
           if (recipe.time.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeTime(recipe.time)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(
                 color: theme.colorScheme.onSurface,
@@ -181,8 +193,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             ),
           if (recipe.wood.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.park, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(recipe.wood),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.park, size: 12, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(recipe.wood),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(
                 color: theme.colorScheme.onSurface,
@@ -198,8 +216,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         if (recipe.type == SmokingType.recipe) ...[
           if (recipe.serves != null && recipe.serves!.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeServes(recipe.serves!)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeServes(recipe.serves!)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(
                 color: theme.colorScheme.onSurface,
@@ -211,8 +235,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             ),
           if (recipe.time.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.timer, size: 12, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeTime(recipe.time)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(
                 color: theme.colorScheme.onSurface,
@@ -577,8 +607,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // Temperature (normalized with degree symbol)
           if (recipe.temperature.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.thermostat, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeTemperature(recipe.temperature)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.thermostat, size: 14, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeTemperature(recipe.temperature)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
@@ -586,8 +622,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // Time (normalized)
           if (recipe.time.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.timer, size: 14, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeTime(recipe.time)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
@@ -595,8 +637,14 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // Wood
           if (recipe.wood.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.park, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(recipe.wood),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.park, size: 14, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(recipe.wood),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
@@ -607,16 +655,28 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         if (recipe.type == SmokingType.recipe) ...[
           if (recipe.serves != null && recipe.serves!.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.people_outline, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeServes(recipe.serves!)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.people_outline, size: 14, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeServes(recipe.serves!)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
             ),
           if (recipe.time.isNotEmpty)
             Chip(
-              avatar: Icon(Icons.timer, size: 16, color: theme.colorScheme.onSurface),
-              label: Text(UnitNormalizer.normalizeTime(recipe.time)),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.timer, size: 14, color: theme.colorScheme.onSurface),
+                  const SizedBox(width: 4),
+                  Text(UnitNormalizer.normalizeTime(recipe.time)),
+                ],
+              ),
               backgroundColor: theme.colorScheme.surfaceContainerHighest,
               labelStyle: TextStyle(color: theme.colorScheme.onSurface),
               visualDensity: VisualDensity.compact,
