@@ -44,19 +44,22 @@ class MemoixSnackBar {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer();
-    try {
-      messenger.clearSnackBars();
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(message),
-          duration: defaultDuration,
-          behavior: SnackBarBehavior.floating,
-          animation: const AlwaysStoppedAnimation(1.0), // No animation
-        ),
-      );
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
+    
+    // Schedule for next frame to avoid widget tree issues during disposal
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      try {
+        messenger.clearSnackBars();
+        messenger.showSnackBar(
+          SnackBar(
+            content: Text(message),
+            duration: defaultDuration,
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      } catch (_) {
+        // Ignore if widget tree is deactivated
+      }
+    });
   }
 
   /// Show a SnackBar with an action button
