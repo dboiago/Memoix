@@ -191,72 +191,71 @@ class DeepLinkService {
 
   /// Handle recipe sharing deep link
   Future<void> _handleRecipeShare(BuildContext context, Uri uri) async {
-      // Extract the encoded recipe data
-      String? encodedData;
-      
-      if (uri.pathSegments.isNotEmpty) {
-        encodedData = uri.pathSegments.last;
-      } else if (uri.path.isNotEmpty) {
-        encodedData = uri.path.replaceFirst('/', '');
-      }
+    // Extract the encoded recipe data
+    String? encodedData;
+    
+    if (uri.pathSegments.isNotEmpty) {
+      encodedData = uri.pathSegments.last;
+    } else if (uri.path.isNotEmpty) {
+      encodedData = uri.path.replaceFirst('/', '');
+    }
 
-      if (encodedData == null || encodedData.isEmpty) {
-        _showError(context, 'Invalid recipe link');
+    if (encodedData == null || encodedData.isEmpty) {
+      _showError(context, 'Invalid recipe link');
+      return;
+    }
+
+    try {
+      final shareService = _ref.read(shareServiceProvider);
+      final recipe = shareService.parseShareLink('memoix://recipe/$encodedData');
+
+      if (recipe == null) {
+        _showError(context, 'Could not parse recipe from link');
         return;
       }
 
-      try {
-        final shareService = _ref.read(shareServiceProvider);
-        final recipe = shareService.parseShareLink('memoix://recipe/$encodedData');
+      // SECURITY: Validate recipe data before allowing import
+      if (recipe.name.trim().isEmpty) {
+        _showError(context, 'Invalid recipe link: Missing required data.');
+        return;
+      }
+      if (recipe.ingredients.isEmpty && recipe.directions.isEmpty) {
+        _showError(context, 'Invalid recipe link: Missing required data.');
+        return;
+      }
 
-        if (recipe == null) {
-          _showError(context, 'Could not parse recipe from link');
-          return;
-        }
+      // Show confirmation dialog before importing
+      if (context.mounted) {
+        final shouldImport = await showDialog<bool>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            title: const Text('Import Recipe?'),
+            content: Text('Would you like to import "${recipe.name}"?'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx, false),
+                child: const Text('Cancel'),
+              ),
+              FilledButton(
+                onPressed: () => Navigator.pop(ctx, true),
+                child: const Text('Import'),
+              ),
+            ],
+          ),
+        );
 
-        // SECURITY: Validate recipe data before allowing import
-        if (recipe.name.trim().isEmpty) {
-          _showError(context, 'Invalid recipe link: Missing required data.');
-          return;
-        }
-        if (recipe.ingredients.isEmpty && recipe.directions.isEmpty) {
-          _showError(context, 'Invalid recipe link: Missing required data.');
-          return;
-        }
-
-        // Show confirmation dialog before importing
-        if (context.mounted) {
-          final shouldImport = await showDialog<bool>(
-            context: context,
-            builder: (ctx) => AlertDialog(
-              title: const Text('Import Recipe?'),
-              content: Text('Would you like to import "${recipe.name}"?'),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.pop(ctx, false),
-                  child: const Text('Cancel'),
-                ),
-                FilledButton(
-                  onPressed: () => Navigator.pop(ctx, true),
-                  child: const Text('Import'),
-                ),
-              ],
+        if (shouldImport == true && context.mounted) {
+          // Navigate to edit screen so user can review before saving
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => RecipeEditScreen(importedRecipe: recipe),
             ),
           );
-
-          if (shouldImport == true && context.mounted) {
-            // Navigate to edit screen so user can review before saving
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-              ),
-            );
-          }
         }
-      } catch (e) {
-        debugPrint('Error handling deep link: $e');
-        _showError(context, 'Failed to import recipe');
       }
+    } catch (e) {
+      debugPrint('Error handling deep link: $e');
+      _showError(context, 'Failed to import recipe');
     }
   }
 

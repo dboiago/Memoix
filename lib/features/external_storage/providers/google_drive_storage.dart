@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
 import 'package:googleapis_auth/auth_io.dart' as auth_io;
@@ -902,3 +903,8 @@ class DriveFolder {
   @override
   String toString() => 'DriveFolder(id: $id, name: $name)';
 }
+
+/// Provider for GoogleDriveStorage instance
+final googleDriveStorageProvider = Provider<GoogleDriveStorage>((ref) {
+  return GoogleDriveStorage();
+});
