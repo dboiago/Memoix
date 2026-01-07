@@ -161,9 +161,11 @@ class _RepositoryManagementScreenState
       if (hasAccess) {
         await _manager.markAsVerified(repository.id);
         _loadRepositories();
-        MemoixSnackBar.showSuccess('Access verified!');
+        MemoixSnackBar.showSuccess('Access verified for "${repository.name}"!');
       } else {
-        MemoixSnackBar.showError('Access denied. Request permission from owner.');
+        await _manager.markAsAccessDenied(repository.id);
+        _loadRepositories();
+        MemoixSnackBar.showError('Access denied. Request permission from repository owner.');
       }
     } catch (e) {
       if (mounted) {
@@ -326,15 +328,21 @@ class _RepositoryCard extends StatelessWidget {
                         Row(
                           children: [
                             Icon(
-                              Icons.warning_amber,
+                              repository.accessDenied
+                                  ? Icons.block
+                                  : Icons.warning_amber,
                               size: 16,
                               color: theme.colorScheme.secondary,
                             ),
                             const SizedBox(width: 4),
-                            Text(
-                              'Pending verification',
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.secondary,
+                            Flexible(
+                              child: Text(
+                                repository.accessDenied
+                                    ? 'Access denied - Request permission from owner'
+                                    : 'Pending verification - Tap to retry',
+                                style: theme.textTheme.bodySmall?.copyWith(
+                                  color: theme.colorScheme.secondary,
+                                ),
                               ),
                             ),
                           ],

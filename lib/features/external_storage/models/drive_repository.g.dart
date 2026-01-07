@@ -13,6 +13,7 @@ DriveRepository _$DriveRepositoryFromJson(Map<String, dynamic> json) =>
       folderId: json['folderId'] as String,
       isActive: json['isActive'] as bool? ?? false,
       isPendingVerification: json['isPendingVerification'] as bool? ?? false,
+      accessDenied: json['accessDenied'] as bool? ?? false,
       createdAt: DateTime.parse(json['createdAt'] as String),
       lastVerified: json['lastVerified'] == null
           ? null
@@ -26,6 +27,7 @@ Map<String, dynamic> _$DriveRepositoryToJson(DriveRepository instance) =>
       'folderId': instance.folderId,
       'isActive': instance.isActive,
       'isPendingVerification': instance.isPendingVerification,
+      'accessDenied': instance.accessDenied,
       'createdAt': instance.createdAt.toIso8601String(),
       'lastVerified': instance.lastVerified?.toIso8601String(),
     };

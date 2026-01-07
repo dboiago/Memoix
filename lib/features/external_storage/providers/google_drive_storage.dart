@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -121,6 +122,11 @@ class GoogleDriveStorage implements ExternalStorageProvider {
         } else if (_isMobile) {
           await _restoreMobileSession();
         }
+        
+        // After successful session restoration, check pending repositories
+        if (_isConnected) {
+          unawaited(checkPendingRepositories());
+        }
       } catch (e) {
         debugPrint('GoogleDriveStorage: Silent sign-in failed: $e');
         await _clearStoredState();
@@ -131,13 +137,22 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   @override
   Future<bool> connect() async {
     try {
+      bool connected = false;
       if (_isDesktop) {
-        return await _connectDesktop();
+        connected = await _connectDesktop();
       } else if (_isMobile) {
-        return await _connectMobile();
+        connected = await _connectMobile();
       } else {
         throw UnsupportedError('Platform not supported for Google Drive');
       }
+
+      // After successful connection, check pending repositories
+      if (connected) {
+        // Run verification in background (don't await to not block connection)
+        unawaited(checkPendingRepositories());
+      }
+
+      return connected;
     } catch (e) {
       debugPrint('GoogleDriveStorage: Connection failed: $e');
       await _clearStoredState();
@@ -287,6 +302,53 @@ class GoogleDriveStorage implements ExternalStorageProvider {
     await _saveStoredState();
 
     debugPrint('GoogleDriveStorage: Switched to repository "$repositoryName"');
+  }
+
+  /// Check and verify pending repositories on app startup
+  ///
+  /// This is called automatically after successful connection to verify
+  /// repositories that were added while offline (via deep links).
+  Future<void> checkPendingRepositories() async {
+    if (!_isConnected) {
+      debugPrint('GoogleDriveStorage: Not connected, skipping pending verification');
+      return;
+    }
+
+    final manager = RepositoryManager();
+    final pending = await manager.getPendingRepositories();
+
+    if (pending.isEmpty) {
+      debugPrint('GoogleDriveStorage: No pending repositories to verify');
+      return;
+    }
+
+    debugPrint('GoogleDriveStorage: Verifying ${pending.length} pending repositories');
+
+    for (final repo in pending) {
+      try {
+        final hasAccess = await verifyFolderAccess(repo.folderId);
+
+        if (hasAccess) {
+          // Success - mark as verified
+          await manager.markAsVerified(repo.id);
+          debugPrint('GoogleDriveStorage: Verified repository "${repo.name}"');
+          
+          // Show success notification
+          // Note: SnackBar requires BuildContext, so we use debugPrint for now
+          // The UI will show updated status when user opens Repository Management
+        } else {
+          // Access denied (403 or 404)
+          await manager.markAsAccessDenied(repo.id);
+          debugPrint('GoogleDriveStorage: Access denied for repository "${repo.name}"');
+        }
+      } catch (e) {
+        // Network error or other issue - leave as pending
+        debugPrint('GoogleDriveStorage: Could not verify "${repo.name}": $e');
+        // Will retry on next app launch
+      }
+    }
+
+    debugPrint('GoogleDriveStorage: Pending verification complete');
   }
 
   @override

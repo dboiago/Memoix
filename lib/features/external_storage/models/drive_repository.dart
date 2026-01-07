@@ -24,6 +24,10 @@ class DriveRepository {
   /// (access not yet verified)
   final bool isPendingVerification;
 
+  /// Whether access verification failed (403 Forbidden)
+  /// User needs to request permission from repository owner
+  final bool accessDenied;
+
   /// Timestamp when this repository was added
   final DateTime createdAt;
 
@@ -36,6 +40,7 @@ class DriveRepository {
     required this.folderId,
     this.isActive = false,
     this.isPendingVerification = false,
+    this.accessDenied = false,
     required this.createdAt,
     this.lastVerified,
   });
@@ -47,6 +52,7 @@ class DriveRepository {
     String? folderId,
     bool? isActive,
     bool? isPendingVerification,
+    bool? accessDenied,
     DateTime? createdAt,
     DateTime? lastVerified,
   }) {
@@ -56,6 +62,7 @@ class DriveRepository {
       folderId: folderId ?? this.folderId,
       isActive: isActive ?? this.isActive,
       isPendingVerification: isPendingVerification ?? this.isPendingVerification,
+      accessDenied: accessDenied ?? this.accessDenied,
       createdAt: createdAt ?? this.createdAt,
       lastVerified: lastVerified ?? this.lastVerified,
     );

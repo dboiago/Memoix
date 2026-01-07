@@ -100,6 +100,30 @@ class RepositoryManager {
     await saveRepositories(updated);
   }
 
+  /// Mark repository as access denied (verification failed)
+  /// 
+  /// This keeps isPendingVerification = true and sets accessDenied = true,
+  /// allowing users to see they need permission and retry later.
+  Future<void> markAsAccessDenied(String repositoryId) async {
+    final repos = await loadRepositories();
+    final updated = repos.map((r) {
+      if (r.id == repositoryId) {
+        return r.copyWith(
+          isPendingVerification: true,
+          accessDenied: true,
+        );
+      }
+      return r;
+    }).toList();
+    await saveRepositories(updated);
+  }
+
+  /// Get all repositories with pending verification
+  Future<List<DriveRepository>> getPendingRepositories() async {
+    final repos = await loadRepositories();
+    return repos.where((r) => r.isPendingVerification).toList();
+  }
+
   /// Check if a folder ID already exists in repositories
   Future<bool> folderIdExists(String folderId) async {
     final repos = await loadRepositories();
