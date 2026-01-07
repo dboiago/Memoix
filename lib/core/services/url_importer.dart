@@ -498,11 +498,6 @@ class UrlRecipeImporter {
   /// If [context] is provided, will attempt to use WebView fallback when
   /// the site returns 403 (bot detection). This requires a valid BuildContext.
   Future<RecipeImportResult> importFromUrl(String url, {BuildContext? context}) async {
-    // DEBUG: Log URL being imported
-    print('DEBUG: ============================================');
-    print('DEBUG: Attempting to import URL: $url');
-    print('DEBUG: ============================================');
-    
     try {
       // SECURITY: Validate URL scheme before any processing
       // Only allow http:// and https:// to prevent local file access or XSS
@@ -907,14 +902,6 @@ class UrlRecipeImporter {
         }
       }
       
-      // DEBUG: Log JSON-LD parsing result
-      print('DEBUG: JSON-LD parsing result: ${jsonLdResult != null ? "FOUND" : "NOT FOUND"}');
-      if (jsonLdResult != null) {
-        print('DEBUG: JSON-LD recipe name: "${jsonLdResult.name}"');
-        print('DEBUG: JSON-LD ingredients: ${jsonLdResult.ingredients.length}');
-        print('DEBUG: JSON-LD directions: ${jsonLdResult.directions.length}');
-      }
-      
       // If JSON-LD found a result, check if we need to supplement with equipment or sections from HTML
       if (jsonLdResult != null) {
         // Check if HTML has ingredient sections that JSON-LD is missing
@@ -1143,10 +1130,8 @@ class UrlRecipeImporter {
       }
 
       // Fallback: try to parse from HTML structure
-      print('DEBUG: Falling back to HTML parsing with _parseFromHtmlWithConfidence');
       final result = _parseFromHtmlWithConfidence(document, url, body);
       if (result != null) {
-        print('DEBUG: HTML parsing returned a result');
         return result;
       }
       
@@ -5993,11 +5978,6 @@ class UrlRecipeImporter {
   
   /// Fallback HTML parsing with confidence scoring
   RecipeImportResult? _parseFromHtmlWithConfidence(dynamic document, String sourceUrl, [String? rawHtmlBody]) {
-    print('DEBUG: ========================================');
-    print('DEBUG: _parseFromHtmlWithConfidence called');
-    print('DEBUG: sourceUrl = $sourceUrl');
-    print('DEBUG: ========================================');
-    
     // Try common selectors for recipe sites
     final title = document.querySelector('h1')?.text?.trim() ?? 
                   document.querySelector('.recipe-title')?.text?.trim() ??
@@ -6141,9 +6121,6 @@ class UrlRecipeImporter {
       // If we found content, skip all other handlers
       if (rawIngredientStrings.isNotEmpty || rawDirections.isNotEmpty) {
         usedStructuredFormat = true;
-        print('DEBUG: ✓ Divi extraction complete - found ${rawIngredientStrings.length} ingredients, ${rawDirections.length} directions');
-      } else {
-        print('DEBUG: ✗ Divi extraction found NO content');
       }
     }
     
@@ -6158,15 +6135,7 @@ class UrlRecipeImporter {
         bodyHtmlCheck.contains('divi_') ||
         sourceUrl.contains('annaolson.ca');
     
-    print('DEBUG: isDivi = $isDivi for URL: $sourceUrl');
-    print('DEBUG: usedStructuredFormat = $usedStructuredFormat');
-    print('DEBUG: Has et_pb_: ${bodyHtmlCheck.contains('et_pb_')}');
-    print('DEBUG: Has divi_: ${bodyHtmlCheck.contains('divi_')}');
-    print('DEBUG: URL contains annaolson.ca: ${sourceUrl.contains('annaolson.ca')}');
-    
     if (isDivi && !usedStructuredFormat) {
-      print('DEBUG: ✓ ENTERING Divi parsing block');
-      print('DEBUG: Executing NEW Strict Divi Logic');
       
       final textInnerBlocks = document.querySelectorAll('.et_pb_text_inner');
       
@@ -6248,57 +6217,9 @@ class UrlRecipeImporter {
         }
       }
       
-      // === UNCONDITIONAL: Extract Directions from ALL Divi Sites ===
-      // Strategy: Scan ALL elements for "Step N" patterns (not just within specific h4 blocks)
-      print('DEBUG: Starting UNCONDITIONAL Divi directions extraction...');
-      
-      final allElements = document.querySelectorAll('*');
-      print('DEBUG: Scanning ${allElements.length} elements for Step patterns...');
-      
-      final stepPattern = RegExp(r'^\s*Step\s+\d+', caseSensitive: false);
-      int matchCount = 0;
-      
-      for (final element in allElements) {
-        // IGNORE anything that is not an H5 tag
-        if (element.localName?.toLowerCase() != 'h5') continue;
-        
-        final elementText = (element.text ?? '').trim();
-        
-        // Filter: Does this element's text start with "Step N"?
-        if (stepPattern.hasMatch(elementText)) {
-          matchCount++;
-          print('DEBUG: HIT #$matchCount - Found: "${elementText}" in <${element.localName}>');
-          
-          // Strategy 1: Check immediate next sibling
-          var content = element.nextElementSibling?.text?.trim();
-          
-          // Strategy 2: If sibling is empty/null, try parent's paragraph
-          if (content == null || content.isEmpty) {
-            content = element.parent?.querySelector('p')?.text?.trim();
-          }
-          
-          if (content != null && content.isNotEmpty) {
-            // Filter out footer/promotional content
-            final lowerContent = content.toLowerCase();
-            if (!lowerContent.contains('find me on') &&
-                !lowerContent.contains('youtube') &&
-                !lowerContent.contains('subscribe') &&
-                !lowerContent.contains('follow me')) {
-              print('DEBUG: ✓ Extracted Step: "${content.substring(0, content.length > 40 ? 40 : content.length)}..."');
-              rawDirections.add(content);
-            } else {
-              print('DEBUG: ✗ Rejected (promotional content): "${content.substring(0, content.length > 40 ? 40 : content.length)}..."');
-            }
-          } else {
-            print('DEBUG: ✗ No content found for this step header');
-          }
-        }
-      }
-      
-      print('DEBUG: Directions extraction complete - ${rawDirections.length} steps from $matchCount matches');
-      if (rawDirections.isEmpty) {
-        print('DEBUG: WARNING - No steps found. Returning empty list (NO FALLBACKS).');
-      }
+      // === Extract Directions from Divi Sites ===
+      final diviDirections = _extractDiviDirections(document);
+      rawDirections.addAll(diviDirections);
       
       // === Extract Notes from <p><strong>NOTES:</strong>...</p> pattern ===
       // This handles Divi sites like annaolson.ca that use inline bold NOTES
@@ -8239,6 +8160,47 @@ class UrlRecipeImporter {
       source: RecipeSource.url,
       imagePaths: imagePaths,
     );
+  }
+  
+  /// Extract directions from Divi Builder sites (e.g., annaolson.ca)
+  /// Scans for <h5> elements with "Step N" text pattern and extracts adjacent paragraph content
+  List<String> _extractDiviDirections(dynamic document) {
+    print('Using Divi/AnnaOlson extraction strategy');
+    
+    final directions = <String>[];
+    final allElements = document.querySelectorAll('*');
+    final stepPattern = RegExp(r'^\s*Step\s+\d+', caseSensitive: false);
+    
+    for (final element in allElements) {
+      // Only process <h5> elements (ignore wrapper divs that inherit child text)
+      if (element.localName?.toLowerCase() != 'h5') continue;
+      
+      final elementText = (element.text ?? '').trim();
+      
+      // Check if text starts with "Step N"
+      if (stepPattern.hasMatch(elementText)) {
+        // Strategy 1: Check immediate next sibling
+        var content = element.nextElementSibling?.text?.trim();
+        
+        // Strategy 2: If sibling is empty/null, try parent's paragraph
+        if (content == null || content.isEmpty) {
+          content = element.parent?.querySelector('p')?.text?.trim();
+        }
+        
+        if (content != null && content.isNotEmpty) {
+          // Filter out footer/promotional content
+          final lowerContent = content.toLowerCase();
+          if (!lowerContent.contains('find me on') &&
+              !lowerContent.contains('youtube') &&
+              !lowerContent.contains('subscribe') &&
+              !lowerContent.contains('follow me')) {
+            directions.add(content);
+          }
+        }
+      }
+    }
+    
+    return directions;
   }
   
   /// Extract directions from raw HTML body, handling Shopify/Lyres-style embedded JSON
