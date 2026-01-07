@@ -6193,60 +6193,66 @@ class UrlRecipeImporter {
                  h4Text.contains('Instructions') || 
                  h4Text.contains('Directions') ||
                  h4Text.contains('Method')) {
-          // Divi-specific: Find ALL h5 elements on the page and filter for Step headers
-          // Use parent-based traversal to avoid issues with text nodes
-          final allH5Elements = document.querySelectorAll('h5');
+          // Divi-specific: Use VERY broad selector to find Step headers
+          // Strategy: Select ALL elements, filter by text pattern
+          print('DEBUG: Starting Divi directions extraction...');
           
-          // Debug logging
-          print('[Divi Directions] Found ${allH5Elements.length} total h5 elements');
-          int matchedSteps = 0;
+          final allElements = document.querySelectorAll('*');
+          print('DEBUG: Found ${allElements.length} candidate elements to scan');
           
-          for (final h5 in allH5Elements) {
-            final stepText = _decodeHtml((h5.text ?? '').trim());
+          final stepPattern = RegExp(r'^\s*Step\s+\d+', caseSensitive: false);
+          int matchCount = 0;
+          
+          for (final element in allElements) {
+            final elementText = (element.text ?? '').trim();
             
-            // STRICT FILTER: Only process if text matches "Step N" pattern (case-insensitive)
-            final stepPattern = RegExp(r'^Step\s+\d+', caseSensitive: false);
-            if (stepPattern.hasMatch(stepText)) {
-              matchedSteps++;
+            // Filter: Does this element's text start with "Step N"?
+            if (stepPattern.hasMatch(elementText)) {
+              matchCount++;
+              print('DEBUG: Match #$matchCount found: "$elementText" in <${element.localName}>');
               
-              // Get parent element (likely .et_pb_text_inner)
-              final parent = h5.parent;
+              final stepHeader = _decodeHtml(elementText);
+              
+              // Strategy 1: Check immediate next sibling
+              var pTag = element.nextElementSibling;
+              if (pTag?.localName == 'p') {
+                final stepContent = _decodeHtml((pTag.text ?? '').trim());
+                if (stepContent.isNotEmpty && stepContent.length > 10) {
+                  final lowerContent = stepContent.toLowerCase();
+                  if (!lowerContent.contains('find me on') &&
+                      !lowerContent.contains('youtube')) {
+                    rawDirections.add('$stepHeader: $stepContent');
+                    print('DEBUG: ✓ Added step from nextSibling');
+                    continue;
+                  }
+                }
+              }
+              
+              // Strategy 2: Check parent container for <p> tag
+              final parent = element.parent;
               if (parent != null) {
-                // Find the first <p> tag in the same parent
-                final pTag = parent.querySelector('p');
+                pTag = parent.querySelector('p');
                 if (pTag != null) {
                   final stepContent = _decodeHtml((pTag.text ?? '').trim());
-                  
-                  // Validate content exists and is substantial
                   if (stepContent.isNotEmpty && stepContent.length > 10) {
-                    // Additional filter: Skip if it contains promotional footer text
                     final lowerContent = stepContent.toLowerCase();
                     if (!lowerContent.contains('find me on') &&
-                        !lowerContent.contains('pastry chef online') &&
-                        !lowerContent.contains('subscribe') &&
                         !lowerContent.contains('youtube')) {
-                      // Combine step header with content
-                      rawDirections.add('$stepText: $stepContent');
-                      print('[Divi Directions] ✓ Added: $stepText');
-                    } else {
-                      print('[Divi Directions] ✗ Skipped (promotional): $stepText');
+                      rawDirections.add('$stepHeader: $stepContent');
+                      print('DEBUG: ✓ Added step from parent <p>');
+                      continue;
                     }
-                  } else {
-                    print('[Divi Directions] ✗ Skipped (too short): $stepText');
                   }
-                } else {
-                  print('[Divi Directions] ✗ No <p> tag in parent for: $stepText');
                 }
-              } else {
-                print('[Divi Directions] ✗ No parent element for: $stepText');
               }
+              
+              print('DEBUG: ✗ No valid <p> content found for this step');
             }
           }
           
-          print('[Divi Directions] Matched $matchedSteps of ${allH5Elements.length} h5 elements');
-          print('[Divi Directions] Final count: ${rawDirections.length} steps extracted');
+          print('DEBUG: Total steps extracted: ${rawDirections.length} from $matchCount matches');
           
-          // NO FALLBACK: If we found 0 steps, return empty list (prefer missing data over garbage)
+          // NO FALLBACK: If 0 steps found, return empty list to expose selector issue
         }
         
         // === Extract Notes from <p> tags with <strong>NOTES:</strong> ===
