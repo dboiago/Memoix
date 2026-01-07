@@ -669,7 +669,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   }
 
   /// Add recipe to meal plan without closing the sheet
-  Future<void> _addRecipeToMealPlan(Recipe recipe) async {
+  Future<void> _addRecipeToMealPlan(Recipe recipe, {ScaffoldMessengerState? messenger}) async {
     await ref.read(mealPlanServiceProvider).addMeal(
       _selectedDate,
       recipeId: recipe.uuid,
@@ -682,8 +682,18 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     // Only show feedback if still mounted
     if (!mounted) return;
     
-    // Show SnackBar first (no rebuild yet)
-    MemoixSnackBar.show('Added ${recipe.name}');
+    // Show SnackBar using cached messenger if provided (safe), otherwise fall back to MemoixSnackBar
+    if (messenger != null) {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text('Added ${recipe.name}'),
+          duration: const Duration(seconds: 2),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } else {
+      MemoixSnackBar.show('Added ${recipe.name}');
+    }
     
     // Delay invalidate to next frame to avoid rebuilding during SnackBar animation
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -820,9 +830,9 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                               subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
                               trailing: const Icon(Icons.add_circle_outline),
                               onTap: () {
-                                // Cache context before async operations
-                                final navigator = Navigator.of(context);
-                                _addRecipeToMealPlan(r);
+                                // Cache messenger before async operations to avoid context access after await
+                                final messenger = ScaffoldMessenger.of(context);
+                                _addRecipeToMealPlan(r, messenger: messenger);
                               },
                             ),),
                             const Divider(),
@@ -863,9 +873,9 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                   subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
                                   trailing: const Icon(Icons.add_circle_outline),
                                   onTap: () {
-                                    // Cache context before async operations
-                                    final navigator = Navigator.of(context);
-                                    _addRecipeToMealPlan(recipe);
+                                    // Cache messenger before async operations to avoid context access after await
+                                    final messenger = ScaffoldMessenger.of(context);
+                                    _addRecipeToMealPlan(recipe, messenger: messenger);
                                   },
                                 ),).toList(),
                               );
