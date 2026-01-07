@@ -161,6 +161,82 @@ class GoogleDriveStorage implements ExternalStorageProvider {
     await _clearStoredState();
   }
 
+  // --- Repository Sharing ---
+
+  /// Add write permission for a user by email
+  /// 
+  /// This allows sharing a repository folder with another Google account.
+  /// The recipient will have Editor (writer) access to the folder.
+  /// 
+  /// Throws [Exception] if:
+  /// - Not connected
+  /// - Invalid email format
+  /// - API call fails (e.g., 400 for invalid email)
+  Future<void> addPermission(String folderId, String email) async {
+    _ensureConnected();
+
+    if (_driveApi == null) {
+      throw Exception('Drive API not initialized');
+    }
+
+    // Validate email format (basic check)
+    if (!email.contains('@') || !email.contains('.')) {
+      throw Exception('Invalid email address');
+    }
+
+    try {
+      final permission = drive.Permission()
+        ..type = 'user'
+        ..role = 'writer'
+        ..emailAddress = email;
+
+      await _driveApi!.permissions.create(
+        permission,
+        folderId,
+        sendNotificationEmail: true, // Google will send invite email
+      );
+    } on drive.DetailedApiRequestError catch (e) {
+      if (e.status == 400) {
+        throw Exception('Invalid email address or permission request');
+      } else if (e.status == 403) {
+        throw Exception('Permission denied. You may not have permission to share this folder.');
+      } else if (e.status == 404) {
+        throw Exception('Folder not found');
+      }
+      throw Exception('Failed to add permission: ${e.message}');
+    } catch (e) {
+      throw Exception('Failed to add permission: $e');
+    }
+  }
+
+  /// Verify access to a folder by ID
+  ///
+  /// Returns true if the folder exists and is accessible.
+  /// Throws an exception if offline or connection fails.
+  Future<bool> verifyFolderAccess(String folderId) async {
+    _ensureConnected();
+
+    if (_driveApi == null) {
+      throw Exception('Drive API not initialized');
+    }
+
+    try {
+      final file = await _driveApi!.files.get(
+        folderId,
+        $fields: 'id,name',
+      ) as drive.File;
+
+      return file.id != null;
+    } on drive.DetailedApiRequestError catch (e) {
+      if (e.status == 403) {
+        return false; // Access denied
+      } else if (e.status == 404) {
+        return false; // Not found
+      }
+      rethrow; // Connection errors, etc.
+    }
+  }
+
   @override
   Future<void> push(RecipeBundle bundle) async {
     _ensureConnected();

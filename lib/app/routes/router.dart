@@ -40,6 +40,9 @@ import '../../features/tools/measurement_converter.dart';
 import '../../features/tools/kitchen_timer_screen.dart';
 import '../../features/notes/screens/scratch_pad_screen.dart';
 import '../../features/external_storage/screens/external_storage_screen.dart';
+import '../../features/external_storage/screens/repository_management_screen.dart';
+import '../../features/external_storage/screens/share_repository_screen.dart';
+import '../../features/external_storage/models/drive_repository.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -211,6 +214,22 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => const ExternalStorageScreen(),
+      ),
+    );
+  }
+
+  static void toRepositoryManagement(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => const RepositoryManagementScreen(),
+      ),
+    );
+  }
+
+  static void toShareRepository(BuildContext context, DriveRepository repository) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => ShareRepositoryScreen(repository: repository),
       ),
     );
   }

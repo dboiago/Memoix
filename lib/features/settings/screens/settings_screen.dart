@@ -256,6 +256,13 @@ class SettingsScreen extends ConsumerWidget {
             trailing: const Icon(Icons.chevron_right),
             onTap: () => _openExternalStorage(context),
           ),
+          ListTile(
+            leading: const Icon(Icons.folder_shared_outlined),
+            title: const Text('Repositories'),
+            subtitle: const Text('Manage shared repositories'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => AppRoutes.toRepositoryManagement(context),
+          ),
 
           const Divider(),
 
