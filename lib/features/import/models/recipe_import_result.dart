@@ -189,7 +189,7 @@ class RecipeImportResult {
       equipment: equipment,
       ingredients: modernistIngredients,
       directions: directions,
-      comments: comments,
+      notes: comments,
       sourceUrl: sourceUrl,
       headerImage: imageUrl,
       source: ModernistSource.imported,
@@ -360,7 +360,7 @@ class RecipeImportResult {
       wood: woodType,
       seasonings: finalSeasonings,
       directions: directions,
-      comments: comments,
+      notes: comments,
       headerImage: imageUrl,
       source: SmokingSource.imported,
     );
@@ -432,7 +432,7 @@ class RecipeImportResult {
       time: time ?? '',
       ingredients: recipeIngredients,
       directions: directions,
-      comments: comments,
+      notes: comments,
       headerImage: imageUrl,
       source: SmokingSource.imported,
     );
@@ -455,7 +455,7 @@ class RecipeImportResult {
     final allText = [
       name ?? '',
       sourceUrl ?? '',
-      notes ?? '',
+      comments ?? '',
       ...ingredients.map((i) => i.name),
     ].join(' ').toLowerCase();
     
@@ -540,7 +540,7 @@ class RecipeImportResult {
       cheeses: cheeses,
       proteins: proteins,
       vegetables: vegetables,
-      comments: comments,
+      notes: comments,
       imageUrl: imageUrl,
       source: PizzaSource.imported,
     );

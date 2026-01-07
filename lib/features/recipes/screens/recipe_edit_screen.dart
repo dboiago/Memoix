@@ -174,7 +174,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       _nameController.text = recipe.name;
       _servesController.text = recipe.serves ?? '';
       _timeController.text = recipe.time ?? '';
-      _notesController.text = recipe.notes ?? '';
+      _notesController.text = recipe.comments ?? '';
       _regionController.text = recipe.subcategory ?? '';
       
       // Load nutrition data if present

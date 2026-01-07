@@ -279,7 +279,7 @@ class Recipe {
       'time': time,
       'pairsWith': pairsWith,
       'pairedRecipeIds': pairedRecipeIds,
-      'notes': notes,
+      'notes': comments,
       'ingredients': ingredients.map((e) => e.toJson()).toList(),
       'directions': directions,
       'sourceUrl': sourceUrl,

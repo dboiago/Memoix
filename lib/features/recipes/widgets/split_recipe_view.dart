@@ -94,7 +94,7 @@ class SplitRecipeView extends StatelessWidget {
     final splitViewHeight = estimatedContentHeight.clamp(200.0, maxSplitHeight);
     
     // Check for extra content sections
-    final hasNotes = recipe.notes != null && recipe.notes!.isNotEmpty;
+    final hasNotes = recipe.comments != null && recipe.comments!.isNotEmpty;
     final hasGallery = recipe.stepImages.isNotEmpty;
     final hasNutrition = recipe.nutrition != null;
     final hasSourceUrl = recipe.sourceUrl != null && recipe.sourceUrl!.isNotEmpty;

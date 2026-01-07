@@ -8173,7 +8173,7 @@ class UrlRecipeImporter {
       time: timing,
       ingredients: _filterParsedIngredients(ingredients),
       directions: filteredDirections,
-      notes: htmlNotes,
+      comments: htmlNotes,
       equipment: equipmentItems,
       glass: glassType,
       garnish: garnishItems,
