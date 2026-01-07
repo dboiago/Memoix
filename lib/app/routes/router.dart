@@ -31,6 +31,7 @@ import '../../features/import/screens/ocr_scanner_screen.dart';
 import '../../features/import/screens/url_import_screen.dart';
 import '../../features/import/screens/share_recipe_screen.dart';
 import '../../features/settings/screens/settings_screen.dart';
+import '../../features/settings/screens/design_notes_screen.dart';
 import '../../features/shopping/screens/shopping_list_screen.dart';
 import '../../features/mealplan/screens/meal_plan_screen.dart';
 import '../../features/statistics/screens/statistics_screen.dart';
@@ -138,6 +139,14 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => const SettingsScreen(),
+      ),
+    );
+  }
+
+  static void toDesignNotes(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => const DesignNotesScreen(),
       ),
     );
   }

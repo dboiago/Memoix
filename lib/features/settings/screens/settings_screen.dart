@@ -308,38 +308,7 @@ class SettingsScreen extends ConsumerWidget {
 
           // Data section
           const _SectionHeader(title: 'Data'),
-          ListTile(
-            leading: const Icon(Icons.folder_open),
-            title: const Text('Export All'),
-            subtitle: const Text('All cuisines to folder (Mains, Pizzas, Modernist, etc.)'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () async {
-              try {
-                final service = ref.read(recipeBackupServiceProvider);
-                final count = await service.exportByCourse();
-                if (count != null) {
-                  MemoixSnackBar.showSuccess('Exported $count files');
-                }
-              } catch (e) {
-                MemoixSnackBar.showError('Export failed: $e');
-              }
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.description),
-            title: const Text('Export My Recipes Only'),
-            subtitle: const Text('Single JSON file (excludes Memoix collection)'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () async {
-              try {
-                final service = ref.read(recipeBackupServiceProvider);
-                await service.exportRecipes(includeAll: false);
-                MemoixSnackBar.showSuccess('Recipes exported successfully');
-              } catch (e) {
-                MemoixSnackBar.showError('Export failed: $e');
-              }
-            },
-          ),
+          _ExportMyRecipesTile(ref: ref),
           ListTile(
             leading: const Icon(Icons.file_upload),
             title: const Text('Import Recipes'),
@@ -594,6 +563,97 @@ class _SectionHeader extends StatelessWidget {
               color: colour ?? Theme.of(context).colorScheme.primary,
               fontWeight: FontWeight.bold,
             ),
+      ),
+    );
+  }
+}
+
+/// Export My Recipes tile with hidden advanced export on long-press
+class _ExportMyRecipesTile extends StatefulWidget {
+  final WidgetRef ref;
+
+  const _ExportMyRecipesTile({required this.ref});
+
+  @override
+  State<_ExportMyRecipesTile> createState() => _ExportMyRecipesTileState();
+}
+
+class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
+  DateTime? _longPressStart;
+  bool _isLongPressing = false;
+
+  void _handleLongPressStart(LongPressStartDetails details) {
+    setState(() {
+      _longPressStart = DateTime.now();
+      _isLongPressing = true;
+    });
+  }
+
+  void _handleLongPressEnd(LongPressEndDetails details) {
+    final pressDuration = _longPressStart != null
+        ? DateTime.now().difference(_longPressStart!)
+        : Duration.zero;
+
+    setState(() {
+      _isLongPressing = false;
+      _longPressStart = null;
+    });
+
+    // If held for ~5 seconds, trigger advanced export
+    if (pressDuration.inMilliseconds >= 4800) {
+      _exportAdvanced();
+    }
+  }
+
+  void _handleLongPressCancel() {
+    setState(() {
+      _isLongPressing = false;
+      _longPressStart = null;
+    });
+  }
+
+  Future<void> _exportStandard() async {
+    try {
+      final service = widget.ref.read(recipeBackupServiceProvider);
+      await service.exportRecipes(includeAll: false);
+      MemoixSnackBar.showSuccess('Recipes exported successfully');
+    } catch (e) {
+      MemoixSnackBar.showError('Export failed: $e');
+    }
+  }
+
+  Future<void> _exportAdvanced() async {
+    try {
+      final service = widget.ref.read(recipeBackupServiceProvider);
+      final count = await service.exportByCourse();
+      if (count != null) {
+        MemoixSnackBar.showSuccess('Advanced export complete: $count files');
+      }
+    } catch (e) {
+      MemoixSnackBar.showError('Export failed: $e');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onLongPressStart: _handleLongPressStart,
+      onLongPressEnd: _handleLongPressEnd,
+      onLongPressCancel: _handleLongPressCancel,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        decoration: BoxDecoration(
+          color: _isLongPressing
+              ? Theme.of(context).colorScheme.surfaceContainerHighest
+              : Colors.transparent,
+        ),
+        child: ListTile(
+          leading: const Icon(Icons.description),
+          title: const Text('Export My Recipes'),
+          subtitle: const Text('Single JSON file (excludes Memoix collection)'),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: _exportStandard,
+        ),
       ),
     );
   }

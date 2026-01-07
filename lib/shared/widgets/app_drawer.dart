@@ -161,6 +161,21 @@ class AppDrawer extends StatelessWidget {
                       AppRoutes.toShareRecipe(context);
                     },
                   ),
+                  
+                  const SizedBox(height: 8),
+                  
+                  // Design Notes section (separate from Share)
+                  const _DrawerSectionHeader(
+                    title: 'Reference',
+                  ),
+                  _DrawerTile(
+                    icon: Icons.lightbulb_outline,
+                    title: 'Design Notes',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toDesignNotes(context);
+                    },
+                  ),
                 ],
               ),
             ),

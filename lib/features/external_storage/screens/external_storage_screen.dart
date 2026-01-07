@@ -121,22 +121,8 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
           description: 'Store in your personal Drive folder',
           onConnect: _connectGoogleDrive,
         ),
-        _buildProviderTile(
-          theme: theme,
-          icon: Icons.code,
-          name: 'GitHub',
-          description: 'Advanced — Store in a repository',
-          isAdvanced: true,
-          onConnect: _showGitHubNotImplemented,
-        ),
-        _buildProviderTile(
-          theme: theme,
-          icon: Icons.cloud_queue,
-          name: 'iCloud',
-          description: 'iOS only — Coming soon',
-          isDisabled: true,
-          onConnect: null,
-        ),
+        // NOTE: Other providers (GitHub, iCloud) hidden until implemented
+        // Implementation remains provider-agnostic internally
       ],
     );
   }
