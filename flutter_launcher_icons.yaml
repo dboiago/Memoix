@@ -1,18 +1,18 @@
 # Flutter Launcher Icons Configuration
 # Run: dart run flutter_launcher_icons
 #
-# Source: memoix-icon-black-1024.png (transparent background)
+# Source: memoix-icon-orange-1024.png
 # Flutter tooling handles scaling to platform-specific sizes.
 
 flutter_launcher_icons:
   android: true
   ios: false  # Disable - iOS folder not set up (requires Mac)
-  image_path: "assets/icons/memoix-icon-black-1024.png"
+  image_path: "assets/icons/memoix-icon-orange-1024.png"
   
   # Windows configuration
   windows:
     generate: true
-    image_path: "assets/icons/memoix-icon-black-256.png"
+    image_path: "assets/icons/memoix-icon-orange-256.png"
     icon_size: 256
   
   # macOS configuration - disable if not on Mac
