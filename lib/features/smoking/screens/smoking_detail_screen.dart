@@ -414,7 +414,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     
                     if (useWideLayout) {
                       return Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.all(16),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
