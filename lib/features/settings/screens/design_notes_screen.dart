@@ -22,7 +22,7 @@ class DesignNotesScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
-              'Interaction patterns and non-obvious features in Memoix.',
+              'Non-obvious behaviours and interaction patterns in Memoix.',
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -33,124 +33,76 @@ class DesignNotesScreen extends StatelessWidget {
 
           // Notes
           const _DesignNote(
-            title: 'Text Normalization',
+            title: 'Recipe Step Progress',
+            description:
+                'Tap any recipe step to mark it as completed. '
+                'Completed steps appear crossed out to help track your progress while cooking.',
+          ),
+          const _DesignNote(
+            title: 'Text Formatting',
             description:
                 'Recipe names and ingredients are automatically title-cased. '
-                'Fractions (1/2, 0.333) convert to unicode symbols (½, ⅓). '
-                'Units standardize (tablespoons → Tbsp, cups → C).',
-          ),
-          const _DesignNote(
-            title: 'Split View Layout',
-            description:
-                'Recipe detail screens use a fixed-height split container for ingredients and directions. '
-                'Each column scrolls independently. Footer content (Notes, Gallery, Nutrition) sits below and scrolls with the page.',
-          ),
-          const _DesignNote(
-            title: 'Recipe Pairing',
-            description:
-                'Pairings use parent-side storage only. Detail screens display both explicit pairings and inverse relationships (recipes that link to the current recipe).',
-          ),
-          const _DesignNote(
-            title: 'Import Pipeline',
-            description:
-                'All imported text (OCR, URL, QR, deep links) passes through TextNormalizer and UnitNormalizer before saving. '
-                'This ensures consistent formatting across import methods.',
-          ),
-          const _DesignNote(
-            title: 'Color System',
-            description:
-                'UI chrome (buttons, backgrounds, borders) uses theme colors. '
-                'Data-driven indicator dots use MemoixColors (continent dots, spirit dots, pizza base dots, etc.). '
-                'Error/warning states map to the secondary color, not red.',
-          ),
-          const _DesignNote(
-            title: 'SnackBar Pattern',
-            description:
-                'All user feedback uses MemoixSnackBar. Simple messages show for 2s. '
-                'Actions (Undo, View) extend duration. "I made this" and "Saved" patterns have specific methods.',
-          ),
-          const _DesignNote(
-            title: 'Physical Item Fields',
-            description:
-                'Wood (Smoking), Glass/Garnish (Drinks), and Equipment (Modernist) use autocomplete with free-form entry. '
-                'Users see existing suggestions but can add new items not in the list.',
-          ),
-          const _DesignNote(
-            title: 'Kitchen Timer Persistence',
-            description:
-                'Alarms managed by TimerService persist across app restarts via SharedPreferences. '
-                'Multiple timers can run simultaneously.',
-          ),
-          const _DesignNote(
-            title: 'Compact View',
-            description:
-                'Compact view is ON by default for data density. Shows more recipes per screen with tighter spacing.',
+                'Fractions (1/2, 0.333) convert to symbols (½, ⅓). '
+                'Measurement units are standardised (tablespoons → Tbsp, cups → C).',
           ),
           const _DesignNote(
             title: 'Side-by-Side Mode',
             description:
-                'When enabled, ingredients and directions appear in fixed-height side-by-side columns with independent scrolling. '
-                'Footer content (notes, gallery) sits below and scrolls with the main page.',
+                'Enable this in Settings to view ingredients and directions side-by-side. '
+                'Each column scrolls independently, while notes and gallery remain below.',
           ),
           const _DesignNote(
-            title: 'Header Images',
+            title: 'Recipe Pairing',
             description:
-                'Recipe header images are ON by default. The MemoixHeader component is model-agnostic, accepting primitive values for use across all detail screens.',
+                'Recipes can be paired with others (like a main dish with a side). '
+                'Detail screens show both recipes you linked to, and recipes that link back to the current one.',
           ),
           const _DesignNote(
-            title: 'Offline-First Architecture',
+            title: 'Import Review',
             description:
-                'All data stored in Isar (local database). Sync and external storage are opt-in features. No user accounts or server dependencies.',
+                'Recipes imported from URLs or photos show a review screen before saving. '
+                'Edit the imported data, add tags, and choose where to save it.',
           ),
           const _DesignNote(
-            title: 'Course-Based Organization',
+            title: 'Physical Items',
             description:
-                'Recipes organize by course (Mains, Desserts, Drinks, etc.) with optional subcategories. '
-                'Different domains (Pizza, Modernist, Smoking) use specialized models.',
+                'Fields like Wood (Smoking), Glass (Drinks), and Equipment (Modernist) show suggestions as you type. '
+                'You can also enter custom items not in the list.',
           ),
           const _DesignNote(
-            title: 'Search Strategy',
+            title: 'Compact View',
             description:
-                'Recipe search delegates use case-insensitive matching across names, ingredients, and tags. '
-                'Results sort by relevance with name matches weighted higher.',
+                'Enable Compact View in Settings to show more recipes per screen with tighter spacing.',
           ),
           const _DesignNote(
-            title: 'External Storage',
+            title: 'Kitchen Timers',
             description:
-                'Backup system is provider-agnostic internally. Currently supports Google Drive. '
-                'Data never touches Memoix servers—storage is in user-controlled locations.',
+                'Timers continue running if you close the app. '
+                'Multiple timers can run at the same time.',
           ),
           const _DesignNote(
-            title: 'Meal Plan Keys',
+            title: 'Offline Operation',
             description:
-                'Meal plan entries use property-based keys (date + course + recipeId) instead of index-based keys. '
-                'This prevents issues when deleting multiple items.',
+                'All recipes are stored locally on your device. '
+                'Sync and external backup are optional features. ',
           ),
           const _DesignNote(
-            title: 'Import Review Pattern',
+            title: 'Course Organisation',
             description:
-                'URL and OCR imports show a review screen before saving. Users can edit imported data, add tags, and select destination course.',
+                'Recipes organise by course (Mains, Desserts, Drinks, etc.). '
+                'Some categories (Pizza, Modernist, Smoking) use specialised layouts for their unique requirements.',
+          ),
+          const _DesignNote(
+            title: 'Search Behaviour',
+            description:
+                'Search looks through recipe names, ingredients, and tags. '
+                'Results with matching names appear before those with matching ingredients.',
           ),
           const _DesignNote(
             title: 'QR Code Sharing',
             description:
-                'Recipes can be shared as QR codes. Data is compressed with gzip and encoded. '
-                'Maximum payload: 4,096 characters. Decompression limits: input ≤ 500 KB, output ≤ 5 MB.',
-          ),
-          const _DesignNote(
-            title: 'Deep Link Support',
-            description:
-                'Recipes can be shared via memoix:// deep links. Links open directly to import review screens.',
-          ),
-          const _DesignNote(
-            title: 'HTTP Security Limits',
-            description:
-                'URL imports enforce a 10 MB response limit via streaming. Binary content types (PDF, images, video) are rejected immediately upon header receipt.',
-          ),
-          const _DesignNote(
-            title: 'Hidden Advanced Export',
-            description:
-                'Long-press (5s) on "Export My Recipes" in Settings → Data triggers an advanced export that includes all Memoix reference data organized by course.',
+                'Share recipes as QR codes to transfer them between devices without internet. '
+                'Scan the code in Memoix to import the recipe directly.',
           ),
 
           const SizedBox(height: 32),
@@ -158,7 +110,7 @@ class DesignNotesScreen extends StatelessWidget {
           // Footer
           Center(
             child: Text(
-              'Memoix is designed for chefs and serious hobbyists.',
+              'For savv(or)y minds.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
                 fontStyle: FontStyle.italic,
@@ -211,3 +163,21 @@ class _DesignNote extends StatelessWidget {
     );
   }
 }
+
+/// Potential additional Design Notes (for review)
+///
+/// The following are suggested notes that may be valuable to users.
+/// Each describes user-facing behaviour without implementation details.
+/// These are not currently displayed in the UI.
+///
+/// - Header images can be tapped to view full-screen, swipe to close.
+/// - Meal plans allow dragging recipes to different days or courses.
+/// - Shopping lists can be shared as plain text to other apps.
+/// - Favourites work as a quick-access collection separate from courses.
+/// - The scratch pad persists notes between app sessions without manual saving.
+/// - Search works across all recipe types (standard, pizza, modernist, etc.) simultaneously.
+/// - Statistics track cooking frequency per recipe, showing your most-made dishes.
+/// - Dark mode follows your system preference by default, can be overridden in Settings.
+/// - External storage keeps one copy of your data in a location you control.
+/// - Import from URL works with most recipe websites, falling back to manual review if structure is unusual.
+/// - Recipe images can be added from your device's photo library or camera.
