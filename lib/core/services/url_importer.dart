@@ -6166,8 +6166,11 @@ class UrlRecipeImporter {
     
     if (isDivi && !usedStructuredFormat) {
       print('DEBUG: ✓ ENTERING Divi parsing block');
+      print('DEBUG: Executing NEW Strict Divi Logic');
+      
       final textInnerBlocks = document.querySelectorAll('.et_pb_text_inner');
       
+      // === First Pass: Extract Metadata and Ingredients from .et_pb_text_inner blocks ===
       for (final block in textInnerBlocks) {
         final h4 = block.querySelector('h4');
         if (h4 == null) continue;
@@ -6218,73 +6221,6 @@ class UrlRecipeImporter {
           }
         }
         
-        // === Extract Directions ===
-        else if (h4Text.contains('Step by Step Instructions') || 
-                 h4Text.contains('Instructions') || 
-                 h4Text.contains('Directions') ||
-                 h4Text.contains('Method')) {
-          // Divi-specific: Use VERY broad selector to find Step headers
-          // Strategy: Select ALL elements, filter by text pattern
-          print('DEBUG: Starting Divi directions extraction...');
-          
-          final allElements = document.querySelectorAll('*');
-          print('DEBUG: Found ${allElements.length} candidate elements to scan');
-          
-          final stepPattern = RegExp(r'^\s*Step\s+\d+', caseSensitive: false);
-          int matchCount = 0;
-          
-          for (final element in allElements) {
-            final elementText = (element.text ?? '').trim();
-            
-            // Filter: Does this element's text start with "Step N"?
-            if (stepPattern.hasMatch(elementText)) {
-              matchCount++;
-              print('DEBUG: Match #$matchCount found: "$elementText" in <${element.localName}>');
-              
-              final stepHeader = _decodeHtml(elementText);
-              
-              // Strategy 1: Check immediate next sibling
-              var pTag = element.nextElementSibling;
-              if (pTag?.localName == 'p') {
-                final stepContent = _decodeHtml((pTag.text ?? '').trim());
-                if (stepContent.isNotEmpty && stepContent.length > 10) {
-                  final lowerContent = stepContent.toLowerCase();
-                  if (!lowerContent.contains('find me on') &&
-                      !lowerContent.contains('youtube')) {
-                    rawDirections.add('$stepHeader: $stepContent');
-                    print('DEBUG: ✓ Added step from nextSibling');
-                    continue;
-                  }
-                }
-              }
-              
-              // Strategy 2: Check parent container for <p> tag
-              final parent = element.parent;
-              if (parent != null) {
-                pTag = parent.querySelector('p');
-                if (pTag != null) {
-                  final stepContent = _decodeHtml((pTag.text ?? '').trim());
-                  if (stepContent.isNotEmpty && stepContent.length > 10) {
-                    final lowerContent = stepContent.toLowerCase();
-                    if (!lowerContent.contains('find me on') &&
-                        !lowerContent.contains('youtube')) {
-                      rawDirections.add('$stepHeader: $stepContent');
-                      print('DEBUG: ✓ Added step from parent <p>');
-                      continue;
-                    }
-                  }
-                }
-              }
-              
-              print('DEBUG: ✗ No valid <p> content found for this step');
-            }
-          }
-          
-          print('DEBUG: Total steps extracted: ${rawDirections.length} from $matchCount matches');
-          
-          // NO FALLBACK: If 0 steps found, return empty list to expose selector issue
-        }
-        
         // === Extract Notes from <p> tags with <strong>NOTES:</strong> ===
         // Look for paragraphs that start with bold "NOTES:" text
         else if (h4Text.toUpperCase().startsWith('NOTES')) {
@@ -6310,6 +6246,55 @@ class UrlRecipeImporter {
             htmlNotes = htmlNotes == null ? notesText : '$htmlNotes\n\n$notesText';
           }
         }
+      }
+      
+      // === UNCONDITIONAL: Extract Directions from ALL Divi Sites ===
+      // Strategy: Scan ALL elements for "Step N" patterns (not just within specific h4 blocks)
+      print('DEBUG: Starting UNCONDITIONAL Divi directions extraction...');
+      
+      final allElements = document.querySelectorAll('*');
+      print('DEBUG: Scanning ${allElements.length} elements for Step patterns...');
+      
+      final stepPattern = RegExp(r'^\s*Step\s+\d+', caseSensitive: false);
+      int matchCount = 0;
+      
+      for (final element in allElements) {
+        final elementText = (element.text ?? '').trim();
+        
+        // Filter: Does this element's text start with "Step N"?
+        if (stepPattern.hasMatch(elementText)) {
+          matchCount++;
+          print('DEBUG: HIT #$matchCount - Found: "${elementText}" in <${element.localName}>');
+          
+          // Strategy 1: Check immediate next sibling
+          var content = element.nextElementSibling?.text?.trim();
+          
+          // Strategy 2: If sibling is empty/null, try parent's paragraph
+          if (content == null || content.isEmpty) {
+            content = element.parent?.querySelector('p')?.text?.trim();
+          }
+          
+          if (content != null && content.isNotEmpty) {
+            // Filter out footer/promotional content
+            final lowerContent = content.toLowerCase();
+            if (!lowerContent.contains('find me on') &&
+                !lowerContent.contains('youtube') &&
+                !lowerContent.contains('subscribe') &&
+                !lowerContent.contains('follow me')) {
+              print('DEBUG: ✓ Extracted Step: "${content.substring(0, content.length > 40 ? 40 : content.length)}..."');
+              rawDirections.add(content);
+            } else {
+              print('DEBUG: ✗ Rejected (promotional content): "${content.substring(0, content.length > 40 ? 40 : content.length)}..."');
+            }
+          } else {
+            print('DEBUG: ✗ No content found for this step header');
+          }
+        }
+      }
+      
+      print('DEBUG: Directions extraction complete - ${rawDirections.length} steps from $matchCount matches');
+      if (rawDirections.isEmpty) {
+        print('DEBUG: WARNING - No steps found. Returning empty list (NO FALLBACKS).');
       }
       
       // === Extract Notes from <p><strong>NOTES:</strong>...</p> pattern ===
