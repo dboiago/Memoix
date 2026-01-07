@@ -46,15 +46,12 @@ class MemoixSnackBar {
     _cancelTimer();
     try {
       messenger.clearSnackBars();
-    } catch (_) {
-      // Ignore if widget tree is deactivated
-    }
-    try {
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
           duration: defaultDuration,
           behavior: SnackBarBehavior.floating,
+          animation: const AlwaysStoppedAnimation(1.0), // No animation
         ),
       );
     } catch (_) {
@@ -254,7 +251,11 @@ class MemoixSnackBar {
               ),
               TextButton(
                 onPressed: () {
-                  messenger.hideCurrentSnackBar();
+                  try {
+                    messenger.hideCurrentSnackBar();
+                  } catch (_) {
+                    // Ignore if widget tree is deactivated
+                  }
                   onDismiss();
                 },
                 style: TextButton.styleFrom(
@@ -271,7 +272,11 @@ class MemoixSnackBar {
           action: SnackBarAction(
             label: 'View',
             onPressed: () {
-              messenger.hideCurrentSnackBar();
+              try {
+                messenger.hideCurrentSnackBar();
+              } catch (_) {
+                // Ignore if widget tree is deactivated
+              }
               onGoToAlarm();
             },
           ),

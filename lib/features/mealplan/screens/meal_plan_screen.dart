@@ -647,8 +647,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   @override
   void dispose() {
     _searchController.dispose();
-    // Clear any active snackbars to prevent animation errors
-    MemoixSnackBar.clear();
     super.dispose();
   }
 
