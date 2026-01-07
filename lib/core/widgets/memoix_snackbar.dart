@@ -49,13 +49,17 @@ class MemoixSnackBar {
     } catch (_) {
       // Ignore if widget tree is deactivated
     }
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(message),
-        duration: defaultDuration,
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: defaultDuration,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
   }
 
   /// Show a SnackBar with an action button
@@ -72,21 +76,25 @@ class MemoixSnackBar {
     } catch (_) {
       // Ignore if widget tree is deactivated
     }
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(message),
-        duration: actionDuration,
-        behavior: SnackBarBehavior.floating,
-        showCloseIcon: false,
-        action: SnackBarAction(
-          label: actionLabel,
-          onPressed: () {
-            _cancelTimer();
-            onAction();
-          },
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: actionDuration,
+          behavior: SnackBarBehavior.floating,
+          showCloseIcon: false,
+          action: SnackBarAction(
+            label: actionLabel,
+            onPressed: () {
+              _cancelTimer();
+              onAction();
+            },
+          ),
         ),
-      ),
-    );
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
     _startDismissTimer(actionDuration);
   }
 
@@ -104,21 +112,25 @@ class MemoixSnackBar {
     } catch (_) {
       // Ignore if widget tree is deactivated
     }
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text('Logged cook for $recipeName'),
-        duration: actionDuration,
-        behavior: SnackBarBehavior.floating,
-        showCloseIcon: false,
-        action: SnackBarAction(
-          label: 'Stats',
-          onPressed: () {
-            _cancelTimer();
-            onViewStats();
-          },
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text('Logged cook for $recipeName'),
+          duration: actionDuration,
+          behavior: SnackBarBehavior.floating,
+          showCloseIcon: false,
+          action: SnackBarAction(
+            label: 'Stats',
+            onPressed: () {
+              _cancelTimer();
+              onViewStats();
+            },
+          ),
         ),
-      ),
-    );
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
     _startDismissTimer(actionDuration);
   }
 
@@ -139,21 +151,25 @@ class MemoixSnackBar {
       // Ignore if widget tree is deactivated
     }
     final dur = duration ?? actionDuration;
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text('$itemName saved'),
-        duration: dur,
-        behavior: SnackBarBehavior.floating,
-        showCloseIcon: false,
-        action: SnackBarAction(
-          label: actionLabel,
-          onPressed: () {
-            _cancelTimer();
-            onView();
-          },
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text('$itemName saved'),
+          duration: dur,
+          behavior: SnackBarBehavior.floating,
+          showCloseIcon: false,
+          action: SnackBarAction(
+            label: actionLabel,
+            onPressed: () {
+              _cancelTimer();
+              onView();
+            },
+          ),
         ),
-      ),
-    );
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
     _startDismissTimer(dur);
   }
 
@@ -167,13 +183,17 @@ class MemoixSnackBar {
     } catch (_) {
       // Ignore if widget tree is deactivated
     }
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(message),
-        duration: actionDuration,
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: actionDuration,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
   }
 
   /// Show a success message
@@ -186,13 +206,17 @@ class MemoixSnackBar {
     } catch (_) {
       // Ignore if widget tree is deactivated
     }
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(message),
-        duration: defaultDuration,
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: defaultDuration,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
   }
 
   /// Show a persistent alarm notification with Done and View buttons
@@ -218,40 +242,44 @@ class MemoixSnackBar {
         ? Theme.of(context).colorScheme.inversePrimary
         : Colors.lightBlueAccent;
     
-    messenger.showSnackBar(
-      SnackBar(
-        content: Row(
-          children: [
-            Expanded(
-              child: Text(
-                timerLabel.isNotEmpty ? timerLabel : 'Timer',
+    try {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Row(
+            children: [
+              Expanded(
+                child: Text(
+                  timerLabel.isNotEmpty ? timerLabel : 'Timer',
+                ),
               ),
-            ),
-            TextButton(
-              onPressed: () {
-                messenger.hideCurrentSnackBar();
-                onDismiss();
-              },
-              style: TextButton.styleFrom(
-                foregroundColor: actionColor,
-                padding: const EdgeInsets.symmetric(horizontal: 8),
+              TextButton(
+                onPressed: () {
+                  messenger.hideCurrentSnackBar();
+                  onDismiss();
+                },
+                style: TextButton.styleFrom(
+                  foregroundColor: actionColor,
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                ),
+                child: const Text('Done'),
               ),
-              child: const Text('Done'),
-            ),
-          ],
+            ],
+          ),
+          duration: const Duration(days: 1), // Effectively infinite
+          behavior: SnackBarBehavior.floating,
+          showCloseIcon: false,
+          action: SnackBarAction(
+            label: 'View',
+            onPressed: () {
+              messenger.hideCurrentSnackBar();
+              onGoToAlarm();
+            },
+          ),
         ),
-        duration: const Duration(days: 1), // Effectively infinite
-        behavior: SnackBarBehavior.floating,
-        showCloseIcon: false,
-        action: SnackBarAction(
-          label: 'View',
-          onPressed: () {
-            messenger.hideCurrentSnackBar();
-            onGoToAlarm();
-          },
-        ),
-      ),
-    );
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
   }
 
   /// Clear any visible SnackBars
