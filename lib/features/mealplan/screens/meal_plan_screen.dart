@@ -644,6 +644,14 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     _selectedDate = widget.initialDate ?? DateTime.now();
   }
 
+  @override
+  void dispose() {
+    _searchController.dispose();
+    // Clear any active snackbars to prevent animation errors
+    MemoixSnackBar.clear();
+    super.dispose();
+  }
+
   void _onSearchChanged(String q) async {
     if (q.trim().isEmpty) {
       setState(() => _suggestions = []);
