@@ -60,6 +60,14 @@ class AppDrawer extends StatelessWidget {
                     },
                   ),
                   _DrawerTile(
+                    icon: Icons.favorite_outline,
+                    title: 'Favourites',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toFavourites(context);
+                    },
+                  ),
+                  _DrawerTile(
                     icon: Icons.calendar_month,
                     title: 'Meal Plan',
                     onTap: () {
@@ -73,14 +81,6 @@ class AppDrawer extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toShoppingLists(context);
-                    },
-                  ),
-                  _DrawerTile(
-                    icon: Icons.favorite_outline,
-                    title: 'Favourites',
-                    onTap: () {
-                      Navigator.pop(context);
-                      AppRoutes.toFavourites(context);
                     },
                   ),
                   
@@ -99,19 +99,19 @@ class AppDrawer extends StatelessWidget {
                     },
                   ),
                   _DrawerTile(
-                    icon: Icons.note_outlined,
-                    title: 'Scratch Pad',
-                    onTap: () {
-                      Navigator.pop(context);
-                      AppRoutes.toScratchPad(context);
-                    },
-                  ),
-                  _DrawerTile(
                     icon: Icons.straighten,
                     title: 'Measurement Converter',
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toUnitConverter(context);
+                    },
+                  ),
+                  _DrawerTile(
+                    icon: Icons.note_outlined,
+                    title: 'Scratch Pad',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toScratchPad(context);
                     },
                   ),
                   _DrawerTile(
@@ -125,9 +125,17 @@ class AppDrawer extends StatelessWidget {
                   
                   const SizedBox(height: 8),
                   
-                  // SHARE Section
+                  // IMPORT & SHARE Section
                   const _DrawerSectionHeader(
-                    title: 'Share',
+                    title: 'Import & Share',
+                  ),
+                  _DrawerTile(
+                    icon: Icons.link,
+                    title: 'URL Import',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toURLImport(context);
+                    },
                   ),
                   _DrawerTile(
                     icon: Icons.camera_alt_outlined,
@@ -143,14 +151,6 @@ class AppDrawer extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toQRScanner(context);
-                    },
-                  ),
-                  _DrawerTile(
-                    icon: Icons.link,
-                    title: 'URL Import',
-                    onTap: () {
-                      Navigator.pop(context);
-                      AppRoutes.toURLImport(context);
                     },
                   ),
                   _DrawerTile(

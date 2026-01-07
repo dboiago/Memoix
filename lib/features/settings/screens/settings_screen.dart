@@ -215,18 +215,18 @@ class SettingsScreen extends ConsumerWidget {
             onChanged: (_) => ref.read(hideMemoixRecipesProvider.notifier).toggle(),
           ),
           SwitchListTile(
+            secondary: const Icon(Icons.view_column),
+            title: const Text('Side-by-Side Mode'),
+            subtitle: const Text('Split view with independent scrolling for ingredients and directions'),
+            value: ref.watch(useSideBySideProvider),
+            onChanged: (_) => ref.read(useSideBySideProvider.notifier).toggle(),
+          ),
+          SwitchListTile(
             secondary: const Icon(Icons.view_compact),
             title: const Text('Compact View'),
             subtitle: const Text('Show more recipes per screen'),
             value: compactView,
             onChanged: (_) => ref.read(compactViewProvider.notifier).toggle(),
-          ),
-          SwitchListTile(
-            secondary: const Icon(Icons.lightbulb),
-            title: const Text('Keep Screen On'),
-            subtitle: const Text('Prevent screen from turning off while viewing recipes'),
-            value: ref.watch(keepScreenOnProvider),
-            onChanged: (_) => ref.read(keepScreenOnProvider.notifier).toggle(),
           ),
           SwitchListTile(
             secondary: const Icon(Icons.image),
@@ -236,11 +236,11 @@ class SettingsScreen extends ConsumerWidget {
             onChanged: (_) => ref.read(showHeaderImagesProvider.notifier).toggle(),
           ),
           SwitchListTile(
-            secondary: const Icon(Icons.view_column),
-            title: const Text('Side-by-Side Mode'),
-            subtitle: const Text('Split view with independent scrolling for ingredients and directions'),
-            value: ref.watch(useSideBySideProvider),
-            onChanged: (_) => ref.read(useSideBySideProvider.notifier).toggle(),
+            secondary: const Icon(Icons.lightbulb),
+            title: const Text('Keep Screen On'),
+            subtitle: const Text('Prevent screen from turning off while viewing recipes'),
+            value: ref.watch(keepScreenOnProvider),
+            onChanged: (_) => ref.read(keepScreenOnProvider.notifier).toggle(),
           ),
 
           const Divider(),
