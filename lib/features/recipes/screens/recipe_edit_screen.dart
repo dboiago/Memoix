@@ -372,6 +372,13 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       bakerPercentController: TextEditingController(),
       isSection: true,
     ),);
+    // Always add an empty ingredient row after the section for immediate typing
+    _ingredientRows.add(_IngredientRow(
+      nameController: TextEditingController(),
+      amountController: TextEditingController(),
+      notesController: TextEditingController(),
+      bakerPercentController: TextEditingController(),
+    ),);
     setState(() {});
   }
 
@@ -2147,12 +2154,20 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   void _insertSectionAt(int index) {
     setState(() {
+      // Insert the section header
       _ingredientRows.insert(index, _IngredientRow(
         nameController: TextEditingController(),
         amountController: TextEditingController(),
         notesController: TextEditingController(),
         bakerPercentController: TextEditingController(),
         isSection: true,
+      ),);
+      // Insert an empty ingredient row after the section for immediate typing
+      _ingredientRows.insert(index + 1, _IngredientRow(
+        nameController: TextEditingController(),
+        amountController: TextEditingController(),
+        notesController: TextEditingController(),
+        bakerPercentController: TextEditingController(),
       ),);
     });
   }
