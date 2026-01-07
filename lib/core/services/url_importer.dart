@@ -6259,6 +6259,9 @@ class UrlRecipeImporter {
       int matchCount = 0;
       
       for (final element in allElements) {
+        // IGNORE anything that is not an H5 tag
+        if (element.localName?.toLowerCase() != 'h5') continue;
+        
         final elementText = (element.text ?? '').trim();
         
         // Filter: Does this element's text start with "Step N"?
