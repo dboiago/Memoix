@@ -14,6 +14,14 @@ import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
 
+/// Stores data needed to execute a delete even if widget state becomes stale
+class _PendingDeleteData {
+  final DateTime date;
+  final int actualMealIndex;
+
+  _PendingDeleteData({required this.date, required this.actualMealIndex});
+}
+
 class MealPlanScreen extends ConsumerStatefulWidget {
   const MealPlanScreen({super.key});
 
@@ -174,10 +182,25 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   }
 
   void _addMeal(BuildContext context) {
+    // Use the currently selected week's Monday as initial date,
+    // or today if it falls within the selected week
+    final weekStart = ref.read(selectedWeekProvider);
+    final now = DateTime.now();
+    final weekEnd = weekStart.add(const Duration(days: 6));
+    
+    // If today is in the selected week, use today; otherwise use the week's Monday
+    DateTime initialDate;
+    if (now.isAfter(weekStart.subtract(const Duration(days: 1))) && 
+        now.isBefore(weekEnd.add(const Duration(days: 1)))) {
+      initialDate = now;
+    } else {
+      initialDate = weekStart;
+    }
+    
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      builder: (ctx) => const AddMealSheet(),
+      builder: (ctx) => AddMealSheet(initialDate: initialDate),
     );
   }
 }
@@ -234,6 +257,8 @@ class _DayCardState extends ConsumerState<DayCard> {
   
   // Track pending deletes by meal key (course_index)
   final Map<String, Timer> _pendingDeletes = {};
+  // Store meal data at delete time so we can execute on dispose even if widget is stale
+  final Map<String, _PendingDeleteData> _pendingDeleteData = {};
   static const _undoDuration = Duration(seconds: 4);
 
   @override
@@ -241,17 +266,13 @@ class _DayCardState extends ConsumerState<DayCard> {
     // Execute any pending deletes when widget is disposed
     for (final entry in _pendingDeletes.entries) {
       entry.value.cancel();
-      // Parse key to get course and index
-      final parts = entry.key.split('_');
-      if (parts.length == 2) {
-        final course = parts[0];
-        final index = int.tryParse(parts[1]);
-        if (index != null) {
-          _executeDelete(course, index);
-        }
+      final data = _pendingDeleteData[entry.key];
+      if (data != null) {
+        _executeDeleteWithData(data);
       }
     }
     _pendingDeletes.clear();
+    _pendingDeleteData.clear();
     super.dispose();
   }
 
@@ -261,12 +282,32 @@ class _DayCardState extends ConsumerState<DayCard> {
     final key = _mealKey(course, index);
     _pendingDeletes[key]?.cancel();
     
+    // Store the data we need to execute delete later
+    final courseMeals = widget.plan?.getMeals(course) ?? [];
+    if (index < courseMeals.length) {
+      final allMeals = widget.plan?.meals ?? [];
+      int courseCount = 0;
+      for (int i = 0; i < allMeals.length; i++) {
+        if (allMeals[i].course == course) {
+          if (courseCount == index) {
+            _pendingDeleteData[key] = _PendingDeleteData(
+              date: widget.date,
+              actualMealIndex: i,
+            );
+            break;
+          }
+          courseCount++;
+        }
+      }
+    }
+    
     setState(() {
       _pendingDeletes[key] = Timer(_undoDuration, () {
         if (mounted) {
           _executeDelete(course, index);
           setState(() {
             _pendingDeletes.remove(key);
+            _pendingDeleteData.remove(key);
           });
         }
       });
@@ -278,7 +319,14 @@ class _DayCardState extends ConsumerState<DayCard> {
     _pendingDeletes[key]?.cancel();
     setState(() {
       _pendingDeletes.remove(key);
+      _pendingDeleteData.remove(key);
     });
+  }
+
+  /// Execute delete using stored data (for dispose)
+  Future<void> _executeDeleteWithData(_PendingDeleteData data) async {
+    await ref.read(mealPlanServiceProvider).removeMeal(data.date, data.actualMealIndex);
+    ref.invalidate(weeklyPlanProvider);
   }
 
   Future<void> _executeDelete(String course, int indexInCourse) async {
@@ -588,17 +636,25 @@ class _DayCardState extends ConsumerState<DayCard> {
 }
 
 class AddMealSheet extends ConsumerStatefulWidget {
-  const AddMealSheet({super.key});
+  final DateTime? initialDate;
+  
+  const AddMealSheet({super.key, this.initialDate});
 
   @override
   ConsumerState<AddMealSheet> createState() => _AddMealSheetState();
 }
 
 class _AddMealSheetState extends ConsumerState<AddMealSheet> {
-  DateTime _selectedDate = DateTime.now();
+  late DateTime _selectedDate;
   String _selectedCourse = MealCourse.dinner;
   final _searchController = TextEditingController();
   List<Recipe> _suggestions = [];
+  
+  @override
+  void initState() {
+    super.initState();
+    _selectedDate = widget.initialDate ?? DateTime.now();
+  }
 
   void _onSearchChanged(String q) async {
     if (q.trim().isEmpty) {
@@ -610,206 +666,199 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     setState(() => _suggestions = results.take(3).toList());
   }
 
+  /// Add recipe to meal plan without closing the sheet
+  Future<void> _addRecipeToMealPlan(Recipe recipe) async {
+    await ref.read(mealPlanServiceProvider).addMeal(
+      _selectedDate,
+      recipeId: recipe.uuid,
+      recipeName: recipe.name,
+      course: _selectedCourse,
+      cuisine: recipe.cuisine,
+      recipeCategory: recipe.course,
+    );
+    ref.invalidate(weeklyPlanProvider);
+    MemoixSnackBar.show('Added ${recipe.name}');
+    // Clear search and keep sheet open for adding more recipes
+    _searchController.clear();
+    setState(() => _suggestions = []);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final bottomInset = MediaQuery.of(context).viewInsets.bottom;
 
-    return DraggableScrollableSheet(
-      initialChildSize: 0.7,
-      minChildSize: 0.5,
-      maxChildSize: 0.95,
-      expand: false,
-      builder: (context, scrollController) {
-        return Container(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Handle bar
-              Center(
-                child: Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: theme.colorScheme.outline.withOpacity(0.5),
-                    borderRadius: BorderRadius.circular(2),
+    return Padding(
+      padding: EdgeInsets.only(bottom: bottomInset),
+      child: DraggableScrollableSheet(
+        initialChildSize: 0.7,
+        minChildSize: 0.5,
+        maxChildSize: 0.95,
+        expand: false,
+        builder: (context, scrollController) {
+          return Container(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Handle bar
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.outline.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 16),
-              Text(
-                'Add to Meal Plan',
-                style: theme.textTheme.titleLarge,
-              ),
-              const SizedBox(height: 16),
-              // Date selector
-              ListTile(
-                leading: const Icon(Icons.calendar_today),
-                title: const Text('Date'),
-                subtitle: Text(DateFormat('EEEE, MMM d').format(_selectedDate)),
-                onTap: () async {
-                  final picked = await showDatePicker(
-                    context: context,
-                    initialDate: _selectedDate,
-                    firstDate: DateTime.now().subtract(const Duration(days: 30)),
-                    lastDate: DateTime.now().add(const Duration(days: 365)),
-                  );
-                  if (picked != null) {
-                    setState(() => _selectedDate = picked);
-                  }
-                },
-              ),
-              // Course selector
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Wrap(
-                  spacing: 8,
-                  children: MealCourse.all.map((course) {
-                    final isSelected = _selectedCourse == course;
-                    return ChoiceChip(
-                      label: Text(
-                        '${MealCourse.emoji(course)} ${MealCourse.displayName(course)}',
-                      ),
-                      selected: isSelected,
-                      onSelected: (selected) {
-                        if (selected) {
-                          setState(() => _selectedCourse = course);
-                        }
-                      },
+                const SizedBox(height: 16),
+                Text(
+                  'Add to Meal Plan',
+                  style: theme.textTheme.titleLarge,
+                ),
+                const SizedBox(height: 16),
+                // Date selector
+                ListTile(
+                  leading: const Icon(Icons.calendar_today),
+                  title: const Text('Date'),
+                  subtitle: Text(DateFormat('EEEE, MMM d').format(_selectedDate)),
+                  onTap: () async {
+                    final picked = await showDatePicker(
+                      context: context,
+                      initialDate: _selectedDate,
+                      firstDate: DateTime.now().subtract(const Duration(days: 30)),
+                      lastDate: DateTime.now().add(const Duration(days: 365)),
                     );
-                  }).toList(),
+                    if (picked != null) {
+                      setState(() => _selectedDate = picked);
+                    }
+                  },
                 ),
-              ),
-              const SizedBox(height: 16),
-              const Divider(),
-              // Recipe search/selection
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Text(
-                  'Select a Recipe',
-                  style: theme.textTheme.titleMedium,
-                ),
-              ),
-              const SizedBox(height: 8),
-              // Search bar
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: TextField(
-                  controller: _searchController,
-                  decoration: const InputDecoration(
-                    prefixIcon: Icon(Icons.search),
-                    hintText: 'Search recipes...',
+                // Course selector
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Wrap(
+                    spacing: 8,
+                    children: MealCourse.all.map((course) {
+                      final isSelected = _selectedCourse == course;
+                      return ChoiceChip(
+                        label: Text(
+                          '${MealCourse.emoji(course)} ${MealCourse.displayName(course)}',
+                        ),
+                        selected: isSelected,
+                        onSelected: (selected) {
+                          if (selected) {
+                            setState(() => _selectedCourse = course);
+                          }
+                        },
+                      );
+                    }).toList(),
                   ),
-                  onChanged: _onSearchChanged,
                 ),
-              ),
-              const SizedBox(height: 8),
-              // Search suggestions and favourites in scrollable area
-              Expanded(
-                child: Consumer(
-                  builder: (context, ref, _) {
-                    final favouritesAsync = ref.watch(favoriteRecipesProvider);
-                    return ListView(
-                      controller: scrollController,
-                      children: [
-                        // Search suggestions
-                        if (_suggestions.isNotEmpty) ...[
+                const SizedBox(height: 16),
+                const Divider(),
+                // Recipe search/selection
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Text(
+                    'Select a Recipe',
+                    style: theme.textTheme.titleMedium,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                // Search bar
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: TextField(
+                    controller: _searchController,
+                    decoration: const InputDecoration(
+                      prefixIcon: Icon(Icons.search),
+                      hintText: 'Search recipes...',
+                    ),
+                    onChanged: _onSearchChanged,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                // Search suggestions and favourites in scrollable area
+                Expanded(
+                  child: Consumer(
+                    builder: (context, ref, _) {
+                      final favouritesAsync = ref.watch(favoriteRecipesProvider);
+                      return ListView(
+                        controller: scrollController,
+                        children: [
+                          // Search suggestions
+                          if (_suggestions.isNotEmpty) ...[
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              child: Text(
+                                'Search Results',
+                                style: theme.textTheme.labelLarge,
+                              ),
+                            ),
+                            ..._suggestions.map((r) => ListTile(
+                              leading: CircleAvatar(
+                                backgroundColor: theme.colorScheme.secondaryContainer,
+                                child: Text(r.name.isNotEmpty ? r.name[0].toUpperCase() : '?'),
+                              ),
+                              title: Text(r.name),
+                              subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
+                              trailing: const Icon(Icons.add_circle_outline),
+                              onTap: () => _addRecipeToMealPlan(r),
+                            ),),
+                            const Divider(),
+                          ],
+                          // Favourites section
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: Text(
-                              'Search Results',
+                              'Favourites',
                               style: theme.textTheme.labelLarge,
                             ),
                           ),
-                          ..._suggestions.map((r) => ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: theme.colorScheme.secondaryContainer,
-                              child: Text(r.name.isNotEmpty ? r.name[0].toUpperCase() : '?'),
+                          favouritesAsync.when(
+                            loading: () => const Padding(
+                              padding: EdgeInsets.all(32),
+                              child: Center(child: CircularProgressIndicator()),
                             ),
-                            title: Text(r.name),
-                            subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
-                            trailing: const Icon(Icons.add_circle_outline),
-                            onTap: () async {
-                              await ref.read(mealPlanServiceProvider).addMeal(
-                                _selectedDate,
-                                recipeId: r.uuid,
-                                recipeName: r.name,
-                                course: _selectedCourse,
-                                cuisine: r.cuisine,
-                                recipeCategory: r.course,
-                              );
-                              ref.invalidate(weeklyPlanProvider);
-                              if (context.mounted) {
-                                Navigator.pop(context);
-                                MemoixSnackBar.show('Added ${r.name}');
+                            error: (err, _) => Padding(
+                              padding: const EdgeInsets.all(32),
+                              child: Center(child: Text('Error: $err')),
+                            ),
+                            data: (favourites) {
+                              if (favourites.isEmpty) {
+                                return const Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.all(32),
+                                    child: Text('No favourites yet.\nMark recipes as favourites to see them here.'),
+                                  ),
+                                );
                               }
-                            },
-                          ),),
-                          const Divider(),
-                        ],
-                        // Favourites section
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Text(
-                            'Favourites',
-                            style: theme.textTheme.labelLarge,
-                          ),
-                        ),
-                        favouritesAsync.when(
-                          loading: () => const Padding(
-                            padding: EdgeInsets.all(32),
-                            child: Center(child: CircularProgressIndicator()),
-                          ),
-                          error: (err, _) => Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: Center(child: Text('Error: $err')),
-                          ),
-                          data: (favourites) {
-                            if (favourites.isEmpty) {
-                              return const Center(
-                                child: Padding(
-                                  padding: EdgeInsets.all(32),
-                                  child: Text('No favourites yet.\nMark recipes as favourites to see them here.'),
-                                ),
+                              return Column(
+                                children: favourites.map((recipe) => ListTile(
+                                  leading: CircleAvatar(
+                                    backgroundColor: theme.colorScheme.primaryContainer,
+                                    child: Text(recipe.name.isNotEmpty ? recipe.name[0].toUpperCase() : '?'),
+                                  ),
+                                  title: Text(recipe.name),
+                                  subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
+                                  trailing: const Icon(Icons.add_circle_outline),
+                                  onTap: () => _addRecipeToMealPlan(recipe),
+                                ),).toList(),
                               );
-                            }
-                            return Column(
-                              children: favourites.map((recipe) => ListTile(
-                                leading: CircleAvatar(
-                                  backgroundColor: theme.colorScheme.primaryContainer,
-                                  child: Text(recipe.name.isNotEmpty ? recipe.name[0].toUpperCase() : '?'),
-                                ),
-                                title: Text(recipe.name),
-                                subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
-                                trailing: const Icon(Icons.add_circle_outline),
-                                onTap: () async {
-                                  await ref.read(mealPlanServiceProvider).addMeal(
-                                    _selectedDate,
-                                    recipeId: recipe.uuid,
-                                    recipeName: recipe.name,
-                                    course: _selectedCourse,
-                                    cuisine: recipe.cuisine,
-                                    recipeCategory: recipe.course,
-                                  );
-                                  ref.invalidate(weeklyPlanProvider);
-                                  if (context.mounted) {
-                                    Navigator.pop(context);
-                                    MemoixSnackBar.show('Added ${recipe.name}');
-                                  }
-                                },
-                              ),).toList(),
-                            );
-                          },
-                        ),
-                      ],
-                    );
-                  },
+                            },
+                          ),
+                        ],
+                      );
+                    },
+                  ),
                 ),
-              ),
-            ],
-          ),
-        );
-      },
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 }
