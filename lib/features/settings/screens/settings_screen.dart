@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -579,44 +581,48 @@ class _ExportMyRecipesTile extends StatefulWidget {
 }
 
 class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
-  DateTime? _longPressStart;
+  Timer? _pressTimer;
   bool _isLongPressing = false;
 
-  void _handleLongPressStart(LongPressStartDetails details) {
-    setState(() {
-      _longPressStart = DateTime.now();
-      _isLongPressing = true;
+  void _handleTapDown(TapDownDetails details) {
+    setState(() => _isLongPressing = true);
+    
+    // Start timer for 5 seconds
+    _pressTimer = Timer(const Duration(milliseconds: 5000), () {
+      if (mounted) {
+        setState(() => _isLongPressing = false);
+        _exportAdvanced();
+      }
     });
   }
 
-  void _handleLongPressEnd(LongPressEndDetails details) {
-    final pressDuration = _longPressStart != null
-        ? DateTime.now().difference(_longPressStart!)
-        : Duration.zero;
-
-    setState(() {
-      _isLongPressing = false;
-      _longPressStart = null;
-    });
-
-    // If held for ~5 seconds, trigger advanced export
-    if (pressDuration.inMilliseconds >= 4800) {
-      _exportAdvanced();
+  void _handleTapUp(TapUpDetails details) {
+    if (_pressTimer?.isActive ?? false) {
+      _pressTimer?.cancel();
+      setState(() => _isLongPressing = false);
+      _exportStandard();
     }
   }
 
-  void _handleLongPressCancel() {
-    setState(() {
-      _isLongPressing = false;
-      _longPressStart = null;
-    });
+  void _handleTapCancel() {
+    _pressTimer?.cancel();
+    setState(() => _isLongPressing = false);
+  }
+
+  @override
+  void dispose() {
+    _pressTimer?.cancel();
+    super.dispose();
   }
 
   Future<void> _exportStandard() async {
     try {
       final service = widget.ref.read(recipeBackupServiceProvider);
-      await service.exportRecipes(includeAll: false);
-      MemoixSnackBar.showSuccess('Recipes exported successfully');
+      final result = await service.exportRecipes(includeAll: false);
+      // Only show success if export actually happened (user didn't cancel)
+      if (result != null) {
+        MemoixSnackBar.showSuccess('Recipes exported successfully');
+      }
     } catch (e) {
       MemoixSnackBar.showError('Export failed: $e');
     }
@@ -626,7 +632,7 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
     try {
       final service = widget.ref.read(recipeBackupServiceProvider);
       final count = await service.exportByCourse();
-      if (count != null) {
+      if (count != null && count > 0) {
         MemoixSnackBar.showSuccess('Advanced export complete: $count files');
       }
     } catch (e) {
@@ -637,9 +643,9 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onLongPressStart: _handleLongPressStart,
-      onLongPressEnd: _handleLongPressEnd,
-      onLongPressCancel: _handleLongPressCancel,
+      onTapDown: _handleTapDown,
+      onTapUp: _handleTapUp,
+      onTapCancel: _handleTapCancel,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
@@ -652,7 +658,8 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
           title: const Text('Export My Recipes'),
           subtitle: const Text('Single JSON file (excludes Memoix collection)'),
           trailing: const Icon(Icons.chevron_right),
-          onTap: _exportStandard,
+          // Prevent ListTile's own tap handling
+          onTap: null,
         ),
       ),
     );
