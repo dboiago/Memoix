@@ -1,8 +1,18 @@
+import 'dart:async';
+import 'dart:ui' show VoidCallback;
 import 'package:isar/isar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
 
 part 'meal_plan.g.dart';
+
+/// Helper class for pending delete data
+class _PendingDelete {
+  final DateTime date;
+  final int mealIndex;
+  
+  _PendingDelete({required this.date, required this.mealIndex});
+}
 
 /// Represents a single planned meal
 @embedded
@@ -125,8 +135,61 @@ class MealCourse {
 /// Service for managing meal plans
 class MealPlanService {
   final Isar _db;
+  
+  // Track pending deletes at service level so they persist across widget rebuilds
+  final Map<String, Timer> _pendingDeletes = {};
+  final Map<String, _PendingDelete> _pendingDeleteData = {};
 
   MealPlanService(this._db);
+  
+  /// Schedule a meal for deletion with undo capability
+  void scheduleMealDelete({
+    required DateTime date,
+    required int mealIndex,
+    required String key,
+    required Duration undoDuration,
+    VoidCallback? onComplete,
+  }) {
+    // Cancel any existing pending delete for this key
+    _pendingDeletes[key]?.cancel();
+    
+    // Store the delete data
+    _pendingDeleteData[key] = _PendingDelete(date: date, mealIndex: mealIndex);
+    
+    // Start timer
+    _pendingDeletes[key] = Timer(undoDuration, () async {
+      final data = _pendingDeleteData.remove(key);
+      _pendingDeletes.remove(key);
+      if (data != null) {
+        await removeMeal(data.date, data.mealIndex);
+        onComplete?.call();
+      }
+    });
+  }
+  
+  /// Cancel a pending delete (undo)
+  void cancelPendingDelete(String key) {
+    _pendingDeletes[key]?.cancel();
+    _pendingDeletes.remove(key);
+    _pendingDeleteData.remove(key);
+  }
+  
+  /// Check if a delete is pending for a key
+  bool isPendingDelete(String key) => _pendingDeletes.containsKey(key);
+  
+  /// Execute all pending deletes immediately (call on navigation away)
+  Future<void> flushPendingDeletes() async {
+    final entries = Map<String, _PendingDelete>.from(_pendingDeleteData);
+    for (final entry in _pendingDeletes.values) {
+      entry.cancel();
+    }
+    _pendingDeletes.clear();
+    _pendingDeleteData.clear();
+    
+    for (final data in entries.values) {
+      await removeMeal(data.date, data.mealIndex);
+    }
+  }
 
   /// Get or create a plan for a specific date
   Future<MealPlan> getOrCreate(DateTime date) async {

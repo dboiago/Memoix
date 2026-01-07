@@ -14,14 +14,6 @@ import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
 
-/// Stores data needed to execute a delete even if widget state becomes stale
-class _PendingDeleteData {
-  final DateTime date;
-  final int actualMealIndex;
-
-  _PendingDeleteData({required this.date, required this.actualMealIndex});
-}
-
 class MealPlanScreen extends ConsumerStatefulWidget {
   const MealPlanScreen({super.key});
 
@@ -280,112 +272,68 @@ class DayCard extends ConsumerStatefulWidget {
 
 class _DayCardState extends ConsumerState<DayCard> {
   bool _hovered = false;
-  
-  // Track pending deletes by meal key (course_index)
-  final Map<String, Timer> _pendingDeletes = {};
-  // Store meal data at delete time so we can execute on dispose even if widget is stale
-  final Map<String, _PendingDeleteData> _pendingDeleteData = {};
   static const _undoDuration = Duration(seconds: 4);
 
   @override
-  void dispose() {
-    // Execute any pending deletes when widget is disposed
-    // Capture service reference before super.dispose() invalidates ref
-    final mealService = ref.read(mealPlanServiceProvider);
-    
-    for (final entry in _pendingDeletes.entries) {
-      entry.value.cancel();
-      final data = _pendingDeleteData[entry.key];
-      if (data != null) {
-        // Fire-and-forget: execute delete without awaiting
-        // Use captured service reference since ref won't be valid after dispose
-        mealService.removeMeal(data.date, data.actualMealIndex);
-      }
-    }
-    _pendingDeletes.clear();
-    _pendingDeleteData.clear();
-    super.dispose();
+  void deactivate() {
+    // Reset hover state when navigating away
+    _hovered = false;
+    super.deactivate();
   }
 
-  String _mealKey(String course, int index) => '${course}_$index';
+  /// Generate a unique key for a meal delete operation
+  String _mealKey(String course, int index) => 
+      '${widget.date.toIso8601String()}_${course}_$index';
 
   void _startDeleteTimer(String course, int index) {
-    final key = _mealKey(course, index);
-    _pendingDeletes[key]?.cancel();
+    final mealService = ref.read(mealPlanServiceProvider);
     
-    // Store the data we need to execute delete later
+    // Find the actual meal index in the full meals array
     final courseMeals = widget.plan?.getMeals(course) ?? [];
-    if (index < courseMeals.length) {
-      final allMeals = widget.plan?.meals ?? [];
-      int courseCount = 0;
-      for (int i = 0; i < allMeals.length; i++) {
-        if (allMeals[i].course == course) {
-          if (courseCount == index) {
-            _pendingDeleteData[key] = _PendingDeleteData(
-              date: widget.date,
-              actualMealIndex: i,
-            );
-            break;
-          }
-          courseCount++;
-        }
-      }
-    }
+    if (index >= courseMeals.length) return;
     
-    setState(() {
-      _pendingDeletes[key] = Timer(_undoDuration, () {
-        if (mounted) {
-          _executeDelete(course, index);
-          setState(() {
-            _pendingDeletes.remove(key);
-            _pendingDeleteData.remove(key);
-          });
-        }
-      });
-    });
-  }
-
-  void _undoDelete(String course, int index) {
-    final key = _mealKey(course, index);
-    _pendingDeletes[key]?.cancel();
-    setState(() {
-      _pendingDeletes.remove(key);
-      _pendingDeleteData.remove(key);
-    });
-  }
-
-  /// Execute delete using stored data (for dispose)
-  Future<void> _executeDeleteWithData(_PendingDeleteData data) async {
-    await ref.read(mealPlanServiceProvider).removeMeal(data.date, data.actualMealIndex);
-    ref.invalidate(weeklyPlanProvider);
-  }
-
-  Future<void> _executeDelete(String course, int indexInCourse) async {
-    // Get meals for this course
-    final courseMeals = widget.plan?.getMeals(course) ?? [];
-    if (indexInCourse >= courseMeals.length) return;
-    
-    // Find the actual index in the full meals array
     final allMeals = widget.plan?.meals ?? [];
-    final targetMeal = courseMeals[indexInCourse];
-    
-    // Count how many meals of this course we've seen to find the right one
+    int actualIndex = -1;
     int courseCount = 0;
     for (int i = 0; i < allMeals.length; i++) {
       if (allMeals[i].course == course) {
-        if (courseCount == indexInCourse) {
-          // Found it - use this index
-          await ref.read(mealPlanServiceProvider).removeMeal(widget.date, i);
-          ref.invalidate(weeklyPlanProvider);
-          return;
+        if (courseCount == index) {
+          actualIndex = i;
+          break;
         }
         courseCount++;
       }
     }
+    
+    if (actualIndex == -1) return;
+    
+    final key = _mealKey(course, index);
+    
+    // Schedule delete at service level (persists across widget rebuilds)
+    mealService.scheduleMealDelete(
+      date: widget.date,
+      mealIndex: actualIndex,
+      key: key,
+      undoDuration: _undoDuration,
+      onComplete: () {
+        // Refresh the UI after delete completes
+        ref.invalidate(weeklyPlanProvider);
+      },
+    );
+    
+    // Trigger rebuild to show pending state
+    setState(() {});
+  }
+
+  void _undoDelete(String course, int index) {
+    final key = _mealKey(course, index);
+    ref.read(mealPlanServiceProvider).cancelPendingDelete(key);
+    setState(() {});
   }
 
   bool _isPendingDelete(String course, int index) {
-    return _pendingDeletes.containsKey(_mealKey(course, index));
+    final key = _mealKey(course, index);
+    return ref.read(mealPlanServiceProvider).isPendingDelete(key);
   }
 
   @override
