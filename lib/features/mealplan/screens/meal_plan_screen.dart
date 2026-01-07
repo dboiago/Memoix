@@ -32,6 +32,7 @@ class MealPlanScreen extends ConsumerStatefulWidget {
 class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   late PageController _pageController;
   late DateTime _currentWeekStart;
+  DateTime? _selectedDate; // Sticky selected date, null means use today
 
   @override
   void initState() {
@@ -53,6 +54,14 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   DateTime _getWeekForPage(int page) {
     final weeksFromStart = page - 1000;
     return _currentWeekStart.add(Duration(days: weeksFromStart * 7));
+  }
+
+  /// Get the effective selected date (defaults to today if none selected)
+  DateTime get _effectiveSelectedDate => _selectedDate ?? DateTime.now();
+
+  /// Select a date (sticky until week change or navigation away)
+  void _selectDate(DateTime date) {
+    setState(() => _selectedDate = date);
   }
 
   @override
@@ -135,10 +144,16 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
               onPageChanged: (page) {
                 final weekStart = _getWeekForPage(page);
                 ref.read(selectedWeekProvider.notifier).state = weekStart;
+                // Reset selected date when changing weeks
+                setState(() => _selectedDate = null);
               },
               itemBuilder: (context, page) {
                 final weekStart = _getWeekForPage(page);
-                return WeekView(weekStart: weekStart);
+                return WeekView(
+                  weekStart: weekStart,
+                  selectedDate: _effectiveSelectedDate,
+                  onDateSelected: _selectDate,
+                );
               },
             ),
           ),
@@ -182,33 +197,26 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   }
 
   void _addMeal(BuildContext context) {
-    // Use the currently selected week's Monday as initial date,
-    // or today if it falls within the selected week
-    final weekStart = ref.read(selectedWeekProvider);
-    final now = DateTime.now();
-    final weekEnd = weekStart.add(const Duration(days: 6));
-    
-    // If today is in the selected week, use today; otherwise use the week's Monday
-    DateTime initialDate;
-    if (now.isAfter(weekStart.subtract(const Duration(days: 1))) && 
-        now.isBefore(weekEnd.add(const Duration(days: 1)))) {
-      initialDate = now;
-    } else {
-      initialDate = weekStart;
-    }
-    
+    // Use the sticky selected date (defaults to today if not set)
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      builder: (ctx) => AddMealSheet(initialDate: initialDate),
+      builder: (ctx) => AddMealSheet(initialDate: _effectiveSelectedDate),
     );
   }
 }
 
 class WeekView extends ConsumerWidget {
   final DateTime weekStart;
+  final DateTime selectedDate;
+  final ValueChanged<DateTime> onDateSelected;
 
-  const WeekView({super.key, required this.weekStart});
+  const WeekView({
+    super.key,
+    required this.weekStart,
+    required this.selectedDate,
+    required this.onDateSelected,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -234,19 +242,37 @@ class WeekView extends ConsumerWidget {
           itemBuilder: (context, dayIndex) {
             final date = weekStart.add(Duration(days: dayIndex));
             final plan = weeklyPlan.planForDay(dayIndex);
-            return DayCard(date: date, plan: plan);
+            final isSelected = _isSameDay(date, selectedDate);
+            return DayCard(
+              date: date,
+              plan: plan,
+              isSelected: isSelected,
+              onSelect: () => onDateSelected(date),
+            );
           },
         );
       },
     );
+  }
+
+  bool _isSameDay(DateTime a, DateTime b) {
+    return a.year == b.year && a.month == b.month && a.day == b.day;
   }
 }
 
 class DayCard extends ConsumerStatefulWidget {
   final DateTime date;
   final MealPlan? plan;
+  final bool isSelected;
+  final VoidCallback onSelect;
 
-  const DayCard({super.key, required this.date, this.plan});
+  const DayCard({
+    super.key,
+    required this.date,
+    this.plan,
+    required this.isSelected,
+    required this.onSelect,
+  });
 
   @override
   ConsumerState<DayCard> createState() => _DayCardState();
@@ -361,6 +387,7 @@ class _DayCardState extends ConsumerState<DayCard> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isToday = _isToday(widget.date);
+    final isHighlighted = widget.isSelected || isToday || _hovered;
     final dayFormat = DateFormat('EEEE');
     final dateFormat = DateFormat('MMM d');
 
@@ -373,17 +400,23 @@ class _DayCardState extends ConsumerState<DayCard> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
           side: BorderSide(
-            color: isToday || _hovered
+            color: isHighlighted
                 ? theme.colorScheme.secondary
                 : theme.colorScheme.outline.withValues(alpha: 0.1),
-            width: isToday || _hovered ? 1.5 : 1.0,
+            width: isHighlighted ? 1.5 : 1.0,
           ),
         ),
-        color: theme.cardTheme.color ?? theme.colorScheme.surface,
+        color: widget.isSelected 
+            ? theme.colorScheme.secondary.withOpacity(0.08)
+            : theme.cardTheme.color ?? theme.colorScheme.surface,
         child: Theme(
           data: theme.copyWith(dividerColor: Colors.transparent),
           child: ExpansionTile(
-            initiallyExpanded: isToday,
+            initiallyExpanded: widget.isSelected || isToday,
+            onExpansionChanged: (_) {
+              // Select this date when tapped/expanded
+              widget.onSelect();
+            },
             leading: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -399,7 +432,7 @@ class _DayCardState extends ConsumerState<DayCard> {
             title: Text(
               dayFormat.format(widget.date),
               style: TextStyle(
-                fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
+                fontWeight: widget.isSelected || isToday ? FontWeight.bold : FontWeight.normal,
               ),
             ),
             subtitle: Text(
