@@ -59,6 +59,9 @@ class ExternalStorageService {
   
   /// Tracks if there are pending local changes not yet pushed
   bool _hasPendingChanges = false;
+  
+  /// Tracks if initialization has completed
+  bool _isInitialized = false;
 
   /// Minimum time between automatic syncs (5 minutes)
   static const _syncCooldown = Duration(minutes: 5);
@@ -81,11 +84,14 @@ class ExternalStorageService {
   /// This should be called once at app startup to restore the connection state.
   /// See EXTERNAL_STORAGE.md Section 8.1 for architecture details.
   Future<void> initialize() async {
+    if (_isInitialized) return; // Prevent double initialization
+    
     final prefs = await SharedPreferences.getInstance();
     final providerId = prefs.getString(_PrefKeys.connectedProviderId);
     
     if (providerId == null) {
       // No provider was connected
+      _isInitialized = true;
       return;
     }
     
@@ -94,6 +100,7 @@ class ExternalStorageService {
       final provider = _createProvider(providerId);
       if (provider == null) {
         debugPrint('ExternalStorageService: Unknown provider ID: $providerId');
+        _isInitialized = true;
         return;
       }
       
@@ -103,6 +110,15 @@ class ExternalStorageService {
       if (provider.isConnected) {
         _provider = provider;
         debugPrint('ExternalStorageService: Restored connection to ${provider.name}');
+        
+        // If there were pending changes queued before initialization, trigger push
+        if (_hasPendingChanges) {
+          final isAuto = await isAutomaticMode;
+          if (isAuto) {
+            debugPrint('ExternalStorageService: Flushing pending changes after init');
+            push(silent: true);
+          }
+        }
       } else {
         // Silent sign-in failed (token expired/revoked)
         // Clear stored state so user can reconnect
@@ -113,6 +129,8 @@ class ExternalStorageService {
       debugPrint('ExternalStorageService: Provider restoration error: $e');
       // Don't throw - just leave provider as null, user can reconnect manually
     }
+    
+    _isInitialized = true;
   }
   
   /// Create a provider instance by ID
@@ -255,9 +273,12 @@ class ExternalStorageService {
   /// Called after recipe save/delete
   /// Debounces and batches rapid changes before pushing.
   void onRecipeChanged() {
-    if (!isConnected) return;
-    
+    // Always mark pending changes - even if not yet initialized
+    // This ensures we don't lose changes that happen during app startup
     _hasPendingChanges = true;
+    
+    // If not initialized yet, the pending flag will trigger push after init
+    if (!_isInitialized || !isConnected) return;
     
     // Check sync mode asynchronously
     isAutomaticMode.then((isAuto) {

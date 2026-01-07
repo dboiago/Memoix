@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/utils/ingredient_parser.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/scratch_pad.dart';
@@ -141,44 +142,57 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   }
 
   void _convertToRecipe(BuildContext context, WidgetRef ref, RecipeDraft draft) {
-    // Parse ingredients from text (one per line)
+    // Parse ingredients using the shared IngredientParser (same as URL/OCR imports)
     final ingredientLines = draft.ingredients
         .split('\n')
         .where((line) => line.trim().isNotEmpty)
         .toList();
     
-    final ingredients = ingredientLines.map((line) {
-      final text = line.trim();
-      final match = RegExp(
-        r'^(?<amount>[\d\s\/\.-]+)?\s*(?<unit>cup|cups|tbsp|tsp|oz|lb|lbs|g|kg|ml|l|can|cans|bunch|clove|cloves)?\s*(?<name>.+)$',
-        caseSensitive: false,
-      ).firstMatch(text);
-
-      final ingredient = Ingredient();
-      if (match != null) {
-        final amt = match.namedGroup('amount')?.trim();
-        final unit = match.namedGroup('unit')?.trim();
-        final name = match.namedGroup('name')?.trim();
-
-        ingredient.name = (name == null || name.isEmpty) ? text : name;
-        if (amt != null && amt.isNotEmpty) {
-          ingredient.amount = amt;
-        }
-        if (unit != null && unit.isNotEmpty) {
-          ingredient.unit = unit;
-        }
-      } else {
-        ingredient.name = text;
-      }
-      return ingredient;
-    }).toList();
+    final ingredients = <Ingredient>[];
+    String? currentSection;
     
-    // Parse directions from text (split by blank lines)
-    final directions = draft.directions
-        .split(RegExp(r'\n\s*\n'))
-        .where((step) => step.trim().isNotEmpty)
-        .map((step) => step.trim())
-        .toList();
+    for (final line in ingredientLines) {
+      final parsed = IngredientParser.parse(line);
+      
+      // Handle section headers
+      if (parsed.isSection) {
+        currentSection = parsed.sectionName;
+        continue;
+      }
+      
+      // Skip lines that don't look like ingredients
+      if (!parsed.looksLikeIngredient) continue;
+      
+      final ingredient = Ingredient()
+        ..name = parsed.name
+        ..amount = parsed.amount
+        ..unit = parsed.unit
+        ..preparation = parsed.preparation
+        ..section = currentSection;
+      
+      ingredients.add(ingredient);
+    }
+    
+    // Parse directions from text (split by numbered steps, blank lines, or sentence endings)
+    final directionsText = draft.directions.trim();
+    List<String> directions;
+    
+    // Try numbered step format first (1. Step one, 2. Step two)
+    final numberedSteps = RegExp(r'^\d+[.)]\s*', multiLine: true);
+    if (numberedSteps.hasMatch(directionsText)) {
+      directions = directionsText
+          .split(numberedSteps)
+          .where((step) => step.trim().isNotEmpty)
+          .map((step) => step.trim())
+          .toList();
+    } else {
+      // Fall back to blank line separation
+      directions = directionsText
+          .split(RegExp(r'\n\s*\n'))
+          .where((step) => step.trim().isNotEmpty)
+          .map((step) => step.trim())
+          .toList();
+    }
     
     // Create Recipe object from draft
     final recipe = Recipe()

@@ -441,6 +441,195 @@ class Cuisine {
     final key = raw.toLowerCase().trim();
     return countryToAdjective[key] ?? raw;
   }
+  
+  /// Validate and normalize a cuisine string for import.
+  /// 
+  /// This method:
+  /// 1. Maps regional/provincial terms to their parent national cuisine
+  ///    (e.g., "Sichuan" -> "Chinese", "Cantonese" -> "Chinese")
+  /// 2. Returns null if the input doesn't match any known cuisine
+  /// 3. Returns the standardized cuisine name if valid
+  /// 
+  /// Use this during import to ensure only valid cuisines are assigned.
+  static String? validateForImport(String? raw) {
+    if (raw == null || raw.isEmpty) return null;
+    
+    final lower = raw.toLowerCase().trim();
+    
+    // Map of regional/provincial terms to their parent national cuisine
+    const regionToParent = <String, String>{
+      // Chinese regions
+      'sichuan': 'Chinese',
+      'szechuan': 'Chinese',
+      'szechwan': 'Chinese',
+      'cantonese': 'Chinese',
+      'hunan': 'Chinese',
+      'hunanese': 'Chinese',
+      'shanghai': 'Chinese',
+      'shanghainese': 'Chinese',
+      'beijing': 'Chinese',
+      'peking': 'Chinese',
+      'fujian': 'Chinese',
+      'hokkien': 'Chinese',
+      'teochew': 'Chinese',
+      'hakka': 'Chinese',
+      'dongbei': 'Chinese',
+      'manchurian': 'Chinese',
+      'xinjiang': 'Chinese',
+      'uyghur': 'Chinese',
+      'yunnan': 'Chinese',
+      'guangdong': 'Chinese',
+      'zhejiang': 'Chinese',
+      'jiangsu': 'Chinese',
+      'anhui': 'Chinese',
+      'shandong': 'Chinese',
+      
+      // Indian regions
+      'punjabi': 'Indian',
+      'gujarati': 'Indian',
+      'rajasthani': 'Indian',
+      'goan': 'Indian',
+      'kerala': 'Indian',
+      'south indian': 'Indian',
+      'north indian': 'Indian',
+      'bengali': 'Indian',
+      'kashmiri': 'Indian',
+      'hyderabadi': 'Indian',
+      'chettinad': 'Indian',
+      'mughlai': 'Indian',
+      'maharashtrian': 'Indian',
+      'tamil': 'Indian',
+      'andhra': 'Indian',
+      'telugu': 'Indian',
+      'konkani': 'Indian',
+      
+      // Japanese regions
+      'osaka': 'Japanese',
+      'kansai': 'Japanese',
+      'kanto': 'Japanese',
+      'tokyo': 'Japanese',
+      'hokkaido': 'Japanese',
+      'okinawan': 'Japanese',
+      'kyoto': 'Japanese',
+      
+      // Italian regions
+      'tuscan': 'Italian',
+      'tuscany': 'Italian',
+      'sicilian': 'Italian',
+      'sicily': 'Italian',
+      'neapolitan': 'Italian',
+      'naples': 'Italian',
+      'roman': 'Italian',
+      'rome': 'Italian',
+      'venetian': 'Italian',
+      'lombardy': 'Italian',
+      'milanese': 'Italian',
+      'piedmont': 'Italian',
+      'piedmontese': 'Italian',
+      'emilia-romagna': 'Italian',
+      'bolognese': 'Italian',
+      'ligurian': 'Italian',
+      'sardinian': 'Italian',
+      'calabrian': 'Italian',
+      'puglia': 'Italian',
+      'amalfi': 'Italian',
+      
+      // French regions
+      'provençal': 'French',
+      'provencal': 'French',
+      'provence': 'French',
+      'normandy': 'French',
+      'norman': 'French',
+      'breton': 'French',
+      'brittany': 'French',
+      'alsatian': 'French',
+      'alsace': 'French',
+      'burgundy': 'French',
+      'burgundian': 'French',
+      'lyonnaise': 'French',
+      'lyon': 'French',
+      'basque': 'French',
+      'parisian': 'French',
+      'bordeaux': 'French',
+      
+      // Spanish regions
+      'catalan': 'Spanish',
+      'catalonia': 'Spanish',
+      'andalusian': 'Spanish',
+      'andalusia': 'Spanish',
+      'galician': 'Spanish',
+      'valencian': 'Spanish',
+      'barcelona': 'Spanish',
+      'madrid': 'Spanish',
+      'castilian': 'Spanish',
+      
+      // American regions
+      'southern': 'American',
+      'new england': 'American',
+      'cajun': 'American',
+      'creole': 'American',
+      'tex-mex': 'American',
+      'southwestern': 'American',
+      'california': 'American',
+      'pacific northwest': 'American',
+      'new orleans': 'American',
+      'louisiana': 'American',
+      'southern american': 'American',
+      
+      // Thai regions
+      'isaan': 'Thai',
+      'isan': 'Thai',
+      'northern thai': 'Thai',
+      'southern thai': 'Thai',
+      'bangkok': 'Thai',
+      
+      // Mexican regions
+      'oaxacan': 'Mexican',
+      'oaxaca': 'Mexican',
+      'yucatan': 'Mexican',
+      'yucatecan': 'Mexican',
+      'veracruz': 'Mexican',
+      'baja': 'Mexican',
+      'jalisco': 'Mexican',
+      'michoacan': 'Mexican',
+      'puebla': 'Mexican',
+      
+      // Other regional terms
+      'levantine': 'Lebanese',
+      'aegean': 'Greek',
+      'bavarian': 'German',
+      'austrian': 'Austrian',  // Keep as valid
+      'viennese': 'Austrian',
+      'swiss german': 'Swiss',
+    };
+    
+    // Check if it's a known regional term first
+    if (regionToParent.containsKey(lower)) {
+      return regionToParent[lower];
+    }
+    
+    // Try to find a matching cuisine in our standard list
+    // First try exact match by name
+    final byNameMatch = byName(raw);
+    if (byNameMatch != null) {
+      return byNameMatch.name;
+    }
+    
+    // Try adjective conversion (handles country names -> adjective)
+    final adjective = toAdjective(raw);
+    final byAdjectiveMatch = byName(adjective);
+    if (byAdjectiveMatch != null) {
+      return byAdjectiveMatch.name;
+    }
+    
+    // Not a recognized cuisine - return null to indicate validation failure
+    return null;
+  }
+  
+  /// Get a list of all valid cuisine names (for autocomplete/validation UI)
+  static List<String> get allNames {
+    return all.map((c) => c.name).toList()..sort();
+  }
 }
 
 /// Grouped cuisine data for display

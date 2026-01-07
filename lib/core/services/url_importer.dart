@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/recipes/models/recipe.dart';
+import '../../features/recipes/models/cuisine.dart';
 import 'webview_fetcher.dart';
 import '../../features/recipes/models/spirit.dart';
 import '../../features/import/models/recipe_import_result.dart';
@@ -4332,70 +4333,23 @@ class UrlRecipeImporter {
     return raw;
   }
 
-  /// Parse cuisine - convert region names to country names
+  /// Parse cuisine - validate against standardized list and map regional terms
+  /// 
+  /// Uses Cuisine.validateForImport() to:
+  /// 1. Map regional terms to parent cuisines (e.g., "Sichuan" -> "Chinese")
+  /// 2. Validate against the standardized cuisine list
+  /// 3. Return null for unrecognized values (will show as empty in review screen)
   String? _parseCuisine(dynamic value) {
     if (value == null) return null;
     
     final cuisine = _parseString(value);
     if (cuisine == null || cuisine.isEmpty) return null;
     
-    // Map regions to countries
-    final regionToCountry = {
-      'tex-mex': 'Mexican',
-      'french': 'France',
-      'italian': 'Italy',
-      'spanish': 'Spain',
-      'german': 'Germany',
-      'british': 'UK',
-      'english': 'UK',
-      'scottish': 'UK',
-      'irish': 'Ireland',
-      'greek': 'Greece',
-      'turkish': 'Turkey',
-      'lebanese': 'Lebanon',
-      'moroccan': 'Morocco',
-      'ethiopian': 'Ethiopia',
-      'indian': 'India',
-      'thai': 'Thailand',
-      'vietnamese': 'Vietnam',
-      'chinese': 'China',
-      'japanese': 'Japan',
-      'korean': 'Korea',
-      'filipino': 'Philippines',
-      'indonesian': 'Indonesia',
-      'malaysian': 'Malaysia',
-      'mexican': 'Mexico',
-      'brazilian': 'Brazil',
-      'peruvian': 'Peru',
-      'argentine': 'Argentina',
-      'colombian': 'Colombia',
-      'caribbean': 'Caribbean',
-      'cuban': 'Cuba',
-      'jamaican': 'Jamaica',
-      'australian': 'Australia',
-      'middle eastern': 'Middle East',
-      'mediterranean': 'Mediterranean',
-      'asian': 'Asian',
-      'african': 'African',
-      'european': 'European',
-      'latin american': 'Latin America',
-      'south american': 'Latin America',
-      'scandinavian': 'Nordic',
-      'nordic': 'Nordic',
-      'portuguese': 'Portugal',
-      'polish': 'Poland',
-      'russian': 'Russia',
-      'ukrainian': 'Ukraine',
-      'hungarian': 'Hungary',
-      'austrian': 'Austria',
-      'swiss': 'Switzerland',
-      'dutch': 'Netherlands',
-      'belgian': 'Belgium',
-      'canadian': 'Canada',
-    };
-    
-    final lowered = cuisine.toLowerCase().trim();
-    return regionToCountry[lowered] ?? _capitalise(cuisine);
+    // Use the centralized cuisine validation which:
+    // - Maps regions to parent cuisines (Sichuan -> Chinese)
+    // - Validates against known cuisines
+    // - Returns null for invalid values
+    return Cuisine.validateForImport(cuisine);
   }
 
   String _capitalise(String text) {
