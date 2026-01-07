@@ -24,6 +24,14 @@ class _CourseCardState extends State<CourseCard> {
   bool _pressed = false;
 
   @override
+  void deactivate() {
+    // Reset hover state when navigating away to prevent stale hover on return
+    _hovered = false;
+    _pressed = false;
+    super.deactivate();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;

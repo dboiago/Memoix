@@ -5,7 +5,6 @@ import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
-import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../models/smoking_recipe.dart';
@@ -129,17 +128,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       spacing: 6,
       runSpacing: 4,
       children: [
-        // Category with colored dot
+        // Category chip
         if (recipe.category != null)
           Chip(
-            avatar: Container(
-              width: 12,
-              height: 12,
-              decoration: BoxDecoration(
-                color: MemoixColors.forSmokedItemDot(recipe.category),
-                shape: BoxShape.circle,
-              ),
-            ),
             label: Text(recipe.category!),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(
@@ -263,21 +254,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final textColor = theme.colorScheme.onSurfaceVariant;
     final iconColor = theme.colorScheme.onSurfaceVariant;
     
-    // Add category with colored dot
+    // Add category
     if (recipe.category != null && recipe.category!.isNotEmpty) {
-      final categoryColor = MemoixColors.forSmokedItemDot(recipe.category);
-      metadataItems.add(WidgetSpan(
-        alignment: PlaceholderAlignment.middle,
-        child: Container(
-          width: 8,
-          height: 8,
-          margin: const EdgeInsets.only(right: 4),
-          decoration: BoxDecoration(
-            color: categoryColor,
-            shape: BoxShape.circle,
-          ),
-        ),
-      ));
       metadataItems.add(TextSpan(text: recipe.category!));
     }
     
@@ -585,17 +563,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       spacing: 8,
       runSpacing: 8,
       children: [
-        // Category with colored dot (not item) - shown for both types
+        // Category chip
         if (recipe.category != null)
           Chip(
-            avatar: Container(
-              width: 12,
-              height: 12,
-              decoration: BoxDecoration(
-                color: MemoixColors.forSmokedItemDot(recipe.category),
-                shape: BoxShape.circle,
-              ),
-            ),
             label: Text(recipe.category!),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(color: theme.colorScheme.onSurface),
