@@ -6193,36 +6193,31 @@ class UrlRecipeImporter {
                  h4Text.contains('Instructions') || 
                  h4Text.contains('Directions') ||
                  h4Text.contains('Method')) {
-          // Found directions header - look for h5 steps or paragraphs after this block
+          // Found directions header - ONLY process <h5>Step X</h5> + <p> combinations
+          // Do NOT grab loose paragraph content (prevents footer text like "Find me on YouTube")
           var sibling = block.nextElementSibling;
           while (sibling != null) {
             // Stop at next major heading
-            if (sibling.querySelector('h2, h3') != null) break;
+            if (sibling.querySelector('h2, h3, h4') != null) break;
             
-            // Check for h5 step headers (e.g., "Step 1")
-            final h5 = sibling.querySelector('h5');
-            if (h5 != null) {
+            // ONLY accept h5 step headers with their immediate paragraph sibling
+            final h5Elements = sibling.querySelectorAll('h5');
+            for (final h5 in h5Elements) {
               final stepText = _decodeHtml((h5.text ?? '').trim());
-              // Look for paragraph content after h5
-              final p = h5.nextElementSibling;
-              if (p?.localName == 'p') {
-                final stepContent = _decodeHtml((p.text ?? '').trim());
-                if (stepContent.isNotEmpty && stepContent.length > 20) {
-                  // Combine step header with content
-                  rawDirections.add('$stepText: $stepContent');
-                }
-              }
-            } else {
-              // Look for direct paragraph content
-              final p = sibling.querySelector('p');
-              if (p != null) {
-                final text = _decodeHtml((p.text ?? '').trim());
-                if (text.isNotEmpty && 
-                    text.length > 20 && 
-                    !text.toLowerCase().contains('find me on') && // Skip footer text
-                    !text.toLowerCase().contains('subscribe') &&
-                    !text.toLowerCase().contains('follow me')) {
-                  rawDirections.add(text);
+              // Only process if it looks like a step (starts with "Step" or is just a number)
+              if (stepText.toLowerCase().startsWith('step') || RegExp(r'^\d+\.?$').hasMatch(stepText)) {
+                // Get the IMMEDIATE sibling paragraph only
+                final nextElem = h5.nextElementSibling;
+                if (nextElem?.localName == 'p') {
+                  final stepContent = _decodeHtml((nextElem.text ?? '').trim());
+                  if (stepContent.isNotEmpty && 
+                      stepContent.length > 20 &&
+                      !stepContent.toLowerCase().contains('find me on') &&
+                      !stepContent.toLowerCase().contains('pastry chef') &&
+                      !stepContent.toLowerCase().contains('subscribe')) {
+                    // Combine step header with content
+                    rawDirections.add('$stepText: $stepContent');
+                  }
                 }
               }
             }
@@ -6231,9 +6226,10 @@ class UrlRecipeImporter {
           }
         }
         
-        // === Extract Notes ===
+        // === Extract Notes from <p> tags with <strong>NOTES:</strong> ===
+        // Look for paragraphs that start with bold "NOTES:" text
         else if (h4Text.toUpperCase().startsWith('NOTES')) {
-          // Extract all text after "NOTES:" header
+          // Legacy h4 NOTES header support (keep for backwards compatibility)
           var notesText = '';
           var sibling = h4.nextElementSibling;
           while (sibling != null) {
@@ -6253,6 +6249,28 @@ class UrlRecipeImporter {
           
           if (notesText.isNotEmpty) {
             htmlNotes = htmlNotes == null ? notesText : '$htmlNotes\n\n$notesText';
+          }
+        }
+      }
+      
+      // === Extract Notes from <p><strong>NOTES:</strong>...</p> pattern ===
+      // This handles Divi sites like annaolson.ca that use inline bold NOTES
+      if (!usedStructuredFormat || htmlNotes == null) {
+        final allParagraphs = document.querySelectorAll('p');
+        for (final p in allParagraphs) {
+          final pText = p.text?.trim() ?? '';
+          // Check if paragraph starts with "NOTES:" (case-insensitive)
+          if (RegExp(r'^NOTES:\s*', caseSensitive: false).hasMatch(pText)) {
+            // Check if it has a <strong> tag containing "NOTES:"
+            final strong = p.querySelector('strong');
+            if (strong != null && strong.text?.toUpperCase().contains('NOTES') == true) {
+              // Extract text after the NOTES: prefix
+              var notesContent = pText.replaceFirst(RegExp(r'^NOTES:\s*', caseSensitive: false), '').trim();
+              if (notesContent.isNotEmpty) {
+                htmlNotes = htmlNotes == null ? notesContent : '$htmlNotes\n\n$notesContent';
+                break; // Found notes, stop searching
+              }
+            }
           }
         }
       }
