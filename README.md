@@ -58,6 +58,32 @@ Dedicated sections for things that aren't recipes (cheese notes, cellar inventor
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/main.jpeg" alt="Main recipe library" width="240">
+  <img src="assets/screenshots/recipeview.jpeg" alt="Recipe cooking view" width="240">
+  <img src="assets/screenshots/importreview.jpeg" alt="Recipe import review" width="240">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/mealplan.jpeg" alt="Meal planning view" width="240">
+  <img src="assets/screenshots/specializedrecipeview.jpeg" alt="Specialized recipe view" width="240">
+</p>
+
+---
+
+## Designed for Real Cooking
+
+Memoix includes a number of small behaviors intended to reduce friction during actual cooking and reference use.
+
+- Recipe steps can be marked as completed to help you keep your place
+- Different cuisines expose different configuration options where relevant
+- Recipes can be viewed in multiple layouts depending on context
+- Some sections are not recipes at all, but logs or reference material
+  
+---
+
 ## Platform Support
 
 | Platform | Status |
@@ -174,5 +200,6 @@ PolyForm Noncommercial License 1.0.0. See [LICENSE](LICENSE) for details.
 - [Riverpod](https://riverpod.dev)
 
 ---
+
 
 Built with salt.
