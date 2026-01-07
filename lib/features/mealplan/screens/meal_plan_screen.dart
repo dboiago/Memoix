@@ -290,11 +290,16 @@ class _DayCardState extends ConsumerState<DayCard> {
   @override
   void dispose() {
     // Execute any pending deletes when widget is disposed
+    // Capture service reference before super.dispose() invalidates ref
+    final mealService = ref.read(mealPlanServiceProvider);
+    
     for (final entry in _pendingDeletes.entries) {
       entry.value.cancel();
       final data = _pendingDeleteData[entry.key];
       if (data != null) {
-        _executeDeleteWithData(data);
+        // Fire-and-forget: execute delete without awaiting
+        // Use captured service reference since ref won't be valid after dispose
+        mealService.removeMeal(data.date, data.actualMealIndex);
       }
     }
     _pendingDeletes.clear();
