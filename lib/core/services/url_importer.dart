@@ -6194,8 +6194,12 @@ class UrlRecipeImporter {
                  h4Text.contains('Directions') ||
                  h4Text.contains('Method')) {
           // Divi-specific: Find ALL h5 elements on the page and filter for Step headers
-          // This avoids grabbing footer text that may be in similar containers
+          // Use parent-based traversal to avoid issues with text nodes
           final allH5Elements = document.querySelectorAll('h5');
+          
+          // Debug logging
+          print('[Divi Directions] Found ${allH5Elements.length} total h5 elements');
+          int matchedSteps = 0;
           
           for (final h5 in allH5Elements) {
             final stepText = _decodeHtml((h5.text ?? '').trim());
@@ -6203,26 +6207,46 @@ class UrlRecipeImporter {
             // STRICT FILTER: Only process if text matches "Step N" pattern (case-insensitive)
             final stepPattern = RegExp(r'^Step\s+\d+', caseSensitive: false);
             if (stepPattern.hasMatch(stepText)) {
-              // Get the IMMEDIATE next sibling element (usually a <p> tag)
-              final nextElem = h5.nextElementSibling;
-              if (nextElem?.localName == 'p') {
-                final stepContent = _decodeHtml((nextElem.text ?? '').trim());
-                
-                // Validate content exists and is substantial
-                if (stepContent.isNotEmpty && stepContent.length > 10) {
-                  // Additional filter: Skip if it contains promotional footer text
-                  final lowerContent = stepContent.toLowerCase();
-                  if (!lowerContent.contains('find me on') &&
-                      !lowerContent.contains('pastry chef online') &&
-                      !lowerContent.contains('subscribe') &&
-                      !lowerContent.contains('youtube')) {
-                    // Combine step header with content
-                    rawDirections.add('$stepText: $stepContent');
+              matchedSteps++;
+              
+              // Get parent element (likely .et_pb_text_inner)
+              final parent = h5.parent;
+              if (parent != null) {
+                // Find the first <p> tag in the same parent
+                final pTag = parent.querySelector('p');
+                if (pTag != null) {
+                  final stepContent = _decodeHtml((pTag.text ?? '').trim());
+                  
+                  // Validate content exists and is substantial
+                  if (stepContent.isNotEmpty && stepContent.length > 10) {
+                    // Additional filter: Skip if it contains promotional footer text
+                    final lowerContent = stepContent.toLowerCase();
+                    if (!lowerContent.contains('find me on') &&
+                        !lowerContent.contains('pastry chef online') &&
+                        !lowerContent.contains('subscribe') &&
+                        !lowerContent.contains('youtube')) {
+                      // Combine step header with content
+                      rawDirections.add('$stepText: $stepContent');
+                      print('[Divi Directions] ✓ Added: $stepText');
+                    } else {
+                      print('[Divi Directions] ✗ Skipped (promotional): $stepText');
+                    }
+                  } else {
+                    print('[Divi Directions] ✗ Skipped (too short): $stepText');
                   }
+                } else {
+                  print('[Divi Directions] ✗ No <p> tag in parent for: $stepText');
                 }
+              } else {
+                print('[Divi Directions] ✗ No parent element for: $stepText');
               }
             }
           }
+          
+          print('[Divi Directions] Matched $matchedSteps of ${allH5Elements.length} h5 elements');
+          print('[Divi Directions] Final count: ${rawDirections.length} steps extracted');
+          
+          // NO FALLBACK: If we found 0 steps, return empty list (prefer missing data over garbage)
         }
         
         // === Extract Notes from <p> tags with <strong>NOTES:</strong> ===
@@ -6406,7 +6430,8 @@ class UrlRecipeImporter {
     
     // Additional fallback for Lyres: search for standalone h4>Method followed by p anywhere in the HTML
     // This handles cases where Method is not inside a recipe-info div
-    if (rawDirections.isEmpty) {
+    // DO NOT run for Divi sites (prefer empty list over garbage data)
+    if (rawDirections.isEmpty && !isDivi) {
       final methodMatch = RegExp(
         r'<h4[^>]*>\s*Method\s*</h4>\s*<p[^>]*>(.*?)</p>',
         caseSensitive: false,
