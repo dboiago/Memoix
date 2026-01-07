@@ -498,6 +498,11 @@ class UrlRecipeImporter {
   /// If [context] is provided, will attempt to use WebView fallback when
   /// the site returns 403 (bot detection). This requires a valid BuildContext.
   Future<RecipeImportResult> importFromUrl(String url, {BuildContext? context}) async {
+    // DEBUG: Log URL being imported
+    print('DEBUG: ============================================');
+    print('DEBUG: Attempting to import URL: $url');
+    print('DEBUG: ============================================');
+    
     try {
       // SECURITY: Validate URL scheme before any processing
       // Only allow http:// and https:// to prevent local file access or XSS
@@ -902,6 +907,14 @@ class UrlRecipeImporter {
         }
       }
       
+      // DEBUG: Log JSON-LD parsing result
+      print('DEBUG: JSON-LD parsing result: ${jsonLdResult != null ? "FOUND" : "NOT FOUND"}');
+      if (jsonLdResult != null) {
+        print('DEBUG: JSON-LD recipe name: "${jsonLdResult.name}"');
+        print('DEBUG: JSON-LD ingredients: ${jsonLdResult.ingredients.length}');
+        print('DEBUG: JSON-LD directions: ${jsonLdResult.directions.length}');
+      }
+      
       // If JSON-LD found a result, check if we need to supplement with equipment or sections from HTML
       if (jsonLdResult != null) {
         // Check if HTML has ingredient sections that JSON-LD is missing
@@ -1130,8 +1143,10 @@ class UrlRecipeImporter {
       }
 
       // Fallback: try to parse from HTML structure
+      print('DEBUG: Falling back to HTML parsing with _parseFromHtmlWithConfidence');
       final result = _parseFromHtmlWithConfidence(document, url, body);
       if (result != null) {
+        print('DEBUG: HTML parsing returned a result');
         return result;
       }
       
@@ -5978,6 +5993,11 @@ class UrlRecipeImporter {
   
   /// Fallback HTML parsing with confidence scoring
   RecipeImportResult? _parseFromHtmlWithConfidence(dynamic document, String sourceUrl, [String? rawHtmlBody]) {
+    print('DEBUG: ========================================');
+    print('DEBUG: _parseFromHtmlWithConfidence called');
+    print('DEBUG: sourceUrl = $sourceUrl');
+    print('DEBUG: ========================================');
+    
     // Try common selectors for recipe sites
     final title = document.querySelector('h1')?.text?.trim() ?? 
                   document.querySelector('.recipe-title')?.text?.trim() ??
@@ -6121,6 +6141,9 @@ class UrlRecipeImporter {
       // If we found content, skip all other handlers
       if (rawIngredientStrings.isNotEmpty || rawDirections.isNotEmpty) {
         usedStructuredFormat = true;
+        print('DEBUG: ✓ Divi extraction complete - found ${rawIngredientStrings.length} ingredients, ${rawDirections.length} directions');
+      } else {
+        print('DEBUG: ✗ Divi extraction found NO content');
       }
     }
     
@@ -6135,7 +6158,14 @@ class UrlRecipeImporter {
         bodyHtmlCheck.contains('divi_') ||
         sourceUrl.contains('annaolson.ca');
     
+    print('DEBUG: isDivi = $isDivi for URL: $sourceUrl');
+    print('DEBUG: usedStructuredFormat = $usedStructuredFormat');
+    print('DEBUG: Has et_pb_: ${bodyHtmlCheck.contains('et_pb_')}');
+    print('DEBUG: Has divi_: ${bodyHtmlCheck.contains('divi_')}');
+    print('DEBUG: URL contains annaolson.ca: ${sourceUrl.contains('annaolson.ca')}');
+    
     if (isDivi && !usedStructuredFormat) {
+      print('DEBUG: ✓ ENTERING Divi parsing block');
       final textInnerBlocks = document.querySelectorAll('.et_pb_text_inner');
       
       for (final block in textInnerBlocks) {
