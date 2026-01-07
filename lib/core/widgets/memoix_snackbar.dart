@@ -53,6 +53,7 @@ class MemoixSnackBar {
       SnackBar(
         content: Text(message),
         duration: defaultDuration,
+        behavior: SnackBarBehavior.floating,
       ),
     );
   }
@@ -75,6 +76,7 @@ class MemoixSnackBar {
       SnackBar(
         content: Text(message),
         duration: actionDuration,
+        behavior: SnackBarBehavior.floating,
         showCloseIcon: false,
         action: SnackBarAction(
           label: actionLabel,
@@ -106,6 +108,7 @@ class MemoixSnackBar {
       SnackBar(
         content: Text('Logged cook for $recipeName'),
         duration: actionDuration,
+        behavior: SnackBarBehavior.floating,
         showCloseIcon: false,
         action: SnackBarAction(
           label: 'Stats',
@@ -140,6 +143,7 @@ class MemoixSnackBar {
       SnackBar(
         content: Text('$itemName saved'),
         duration: dur,
+        behavior: SnackBarBehavior.floating,
         showCloseIcon: false,
         action: SnackBarAction(
           label: actionLabel,
@@ -167,6 +171,7 @@ class MemoixSnackBar {
       SnackBar(
         content: Text(message),
         duration: actionDuration,
+        behavior: SnackBarBehavior.floating,
       ),
     );
   }
@@ -185,6 +190,7 @@ class MemoixSnackBar {
       SnackBar(
         content: Text(message),
         duration: defaultDuration,
+        behavior: SnackBarBehavior.floating,
       ),
     );
   }
