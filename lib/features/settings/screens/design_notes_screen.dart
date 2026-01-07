@@ -22,7 +22,7 @@ class DesignNotesScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
-              'Non-obvious behaviours and interaction patterns in Memoix.',
+              'Non-obvious behaviours and interactions in Memoix.',
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -36,20 +36,13 @@ class DesignNotesScreen extends StatelessWidget {
             title: 'Recipe Step Progress',
             description:
                 'Tap any recipe step to mark it as completed. '
-                'Completed steps appear crossed out to help track your progress while cooking.',
-          ),
-          const _DesignNote(
-            title: 'Text Formatting',
-            description:
-                'Recipe names and ingredients are automatically title-cased. '
-                'Fractions (1/2, 0.333) convert to symbols (½, ⅓). '
-                'Measurement units are standardised (tablespoons → Tbsp, cups → C).',
+                'Completed steps appear crossed out, helping you track your place while cooking.',
           ),
           const _DesignNote(
             title: 'Side-by-Side Mode',
             description:
-                'Enable this in Settings to view ingredients and directions side-by-side. '
-                'Each column scrolls independently, while notes and gallery remain below.',
+                'Designed for cooking on your phone, Side-by-Side Mode keeps ingredients and directions visible together. '
+                'Each column scrolls independently, reducing the need to jump around while cooking.',
           ),
           const _DesignNote(
             title: 'Recipe Pairing',
@@ -58,10 +51,21 @@ class DesignNotesScreen extends StatelessWidget {
                 'Detail screens show both recipes you linked to, and recipes that link back to the current one.',
           ),
           const _DesignNote(
+            title: 'Recipe Images',
+            description:
+                'Additional images can be added to a recipe and appear in a gallery at the bottom of the screen.',
+            ),
+            const _DesignNote(
+            title: 'Step Images',
+            description:
+                'Images in the gallery can be linked to specific recipe steps. '
+                'Linked steps show an image icon that opens the photo without scrolling, useful for visual checks while cooking.',
+            ),
+          const _DesignNote(
             title: 'Import Review',
             description:
                 'Recipes imported from URLs or photos show a review screen before saving. '
-                'Edit the imported data, add tags, and choose where to save it.',
+                'Review and edit the imported data, add tags, and choose where to save it.',
           ),
           const _DesignNote(
             title: 'Physical Items',
@@ -69,11 +73,23 @@ class DesignNotesScreen extends StatelessWidget {
                 'Fields like Wood (Smoking), Glass (Drinks), and Equipment (Modernist) show suggestions as you type. '
                 'You can also enter custom items not in the list.',
           ),
+        const _DesignNote(
+            title: 'Text Formatting',
+            description:
+                'Recipe names and ingredients are automatically title-cased. '
+                'Fractions (1/2, 0.333) convert to symbols (½, ⅓). '
+                'Measurement units are standardised (tablespoons → Tbsp, cups → C).',
+          ),
           const _DesignNote(
             title: 'Compact View',
             description:
                 'Enable Compact View in Settings to show more recipes per screen with tighter spacing.',
           ),
+          const _DesignNote(
+            title: 'Meal Planning',
+            description:
+                'Recipes in the meal plan can be dragged between days or courses to quickly adjust your schedule.',
+            ),
           const _DesignNote(
             title: 'Kitchen Timers',
             description:
@@ -81,10 +97,20 @@ class DesignNotesScreen extends StatelessWidget {
                 'Multiple timers can run at the same time.',
           ),
           const _DesignNote(
+            title: 'Scratch Pad',
+            description:
+                'Notes written in the scratch pad are saved automatically and remain available the next time you open the app.',
+            ),
+            const _DesignNote(
+            title: 'Favourites',
+            description:
+                'Favourited recipes appear in a dedicated list for quick access, separate from your main recipe collection.',
+            ),
+          const _DesignNote(
             title: 'Offline Operation',
             description:
                 'All recipes are stored locally on your device. '
-                'Sync and external backup are optional features. ',
+                'Sync and external backup are optional features.',
           ),
           const _DesignNote(
             title: 'Course Organisation',
@@ -164,20 +190,3 @@ class _DesignNote extends StatelessWidget {
   }
 }
 
-/// Potential additional Design Notes (for review)
-///
-/// The following are suggested notes that may be valuable to users.
-/// Each describes user-facing behaviour without implementation details.
-/// These are not currently displayed in the UI.
-///
-/// - Header images can be tapped to view full-screen, swipe to close.
-/// - Meal plans allow dragging recipes to different days or courses.
-/// - Shopping lists can be shared as plain text to other apps.
-/// - Favourites work as a quick-access collection separate from courses.
-/// - The scratch pad persists notes between app sessions without manual saving.
-/// - Search works across all recipe types (standard, pizza, modernist, etc.) simultaneously.
-/// - Statistics track cooking frequency per recipe, showing your most-made dishes.
-/// - Dark mode follows your system preference by default, can be overridden in Settings.
-/// - External storage keeps one copy of your data in a location you control.
-/// - Import from URL works with most recipe websites, falling back to manual review if structure is unusual.
-/// - Recipe images can be added from your device's photo library or camera.
