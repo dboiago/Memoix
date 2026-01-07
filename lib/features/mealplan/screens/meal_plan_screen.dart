@@ -316,8 +316,10 @@ class _DayCardState extends ConsumerState<DayCard> {
       key: key,
       undoDuration: _undoDuration,
       onComplete: () {
-        // Refresh the UI after delete completes
-        ref.invalidate(weeklyPlanProvider);
+        // Refresh the UI after delete completes (only if still mounted)
+        if (mounted) {
+          ref.invalidate(weeklyPlanProvider);
+        }
       },
     );
     
@@ -662,6 +664,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       cuisine: recipe.cuisine,
       recipeCategory: recipe.course,
     );
+    
+    // Only update UI if still mounted
+    if (!mounted) return;
+    
     ref.invalidate(weeklyPlanProvider);
     MemoixSnackBar.show('Added ${recipe.name}');
     // Clear search and keep sheet open for adding more recipes
