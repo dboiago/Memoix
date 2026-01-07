@@ -944,7 +944,7 @@ class UrlRecipeImporter {
               time: jsonLdResult.time,
               ingredients: _filterParsedIngredients(ingredients),
               directions: jsonLdResult.directions,
-              notes: jsonLdResult.notes,
+              comments: jsonLdResult.comments,
               imageUrl: jsonLdResult.imageUrl,
               nutrition: jsonLdResult.nutrition,
               equipment: htmlEquipment.isNotEmpty ? htmlEquipment : jsonLdResult.equipment,
@@ -1070,13 +1070,13 @@ class UrlRecipeImporter {
         final needsEquipment = jsonLdResult.equipment.isEmpty && htmlEquipment.isNotEmpty;
         final needsGlass = (jsonLdResult.glass == null || jsonLdResult.glass!.isEmpty) && htmlGlass != null;
         final needsGarnish = jsonLdResult.garnish.isEmpty && htmlGarnish.isNotEmpty;
-        final needsNotes = (jsonLdResult.notes == null || jsonLdResult.notes!.isEmpty) && htmlNotes != null;
+        final needsNotes = (jsonLdResult.comments == null || jsonLdResult.comments!.isEmpty) && htmlNotes != null;
         final needsDirections = jsonLdResult.directions.isEmpty && (htmlDirections.isNotEmpty || htmlDirectionStrings.isNotEmpty);
         final needsIngredients = jsonLdResult.ingredients.isEmpty && htmlIngredients.isNotEmpty;
         
         if (needsEquipment || needsGlass || needsGarnish || needsNotes || needsDirections || needsIngredients) {
           // Combine notes if both exist
-          String? combinedNotes = jsonLdResult.notes;
+          String? combinedNotes = jsonLdResult.comments;
           if (needsNotes) {
             combinedNotes = htmlNotes;
           } else if (combinedNotes != null && htmlNotes != null && !combinedNotes.contains(htmlNotes)) {
@@ -1095,7 +1095,7 @@ class UrlRecipeImporter {
             directions: needsDirections 
                 ? (htmlDirections.isNotEmpty ? List<String>.from(htmlDirections) : htmlDirectionStrings)
                 : jsonLdResult.directions,
-            notes: combinedNotes,
+            comments: combinedNotes,
             imageUrl: jsonLdResult.imageUrl,
             nutrition: jsonLdResult.nutrition,
             equipment: needsEquipment ? htmlEquipment : jsonLdResult.equipment,
@@ -1343,7 +1343,7 @@ class UrlRecipeImporter {
         time: jsonLdResult.time,
         ingredients: _filterParsedIngredients(ingredients),
         directions: jsonLdResult.directions,
-        notes: jsonLdResult.notes,
+        comments: jsonLdResult.comments,
         imageUrl: jsonLdResult.imageUrl,
         nutrition: jsonLdResult.nutrition,
         equipment: jsonLdResult.equipment,
@@ -1460,7 +1460,7 @@ class UrlRecipeImporter {
       time: original.time,
       ingredients: original.ingredients,
       directions: original.directions,
-      notes: original.notes,
+      comments: original.comments,
       imageUrl: original.imageUrl,
       nutrition: original.nutrition,
       equipment: original.equipment,
@@ -1660,7 +1660,7 @@ class UrlRecipeImporter {
       time: time,
       ingredients: _filterParsedIngredients(ingredients),
       directions: directions,
-      notes: description,
+      comments: description,
       imageUrl: imageUrl,
       rawIngredients: rawIngredients,
       rawDirections: rawDirections,
@@ -2000,7 +2000,7 @@ class UrlRecipeImporter {
         time: recipeTime,
         ingredients: _filterParsedIngredients(ingredients),
         directions: directions,
-        notes: notes,
+        comments: notes,
         imageUrl: thumbnail,
         rawIngredients: rawIngredients,
         rawDirections: directions,
@@ -3919,7 +3919,7 @@ class UrlRecipeImporter {
       ingredients: _filterParsedIngredients(ingredients),
       directions: directions,
       equipment: equipmentList,
-      notes: notes,
+      comments: notes,
       imageUrl: _parseImage(data['image']),
       nutrition: nutrition,
       rawIngredients: rawIngredients,

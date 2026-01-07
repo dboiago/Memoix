@@ -203,7 +203,7 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
       ..time = draft.time
       ..ingredients = ingredients
       ..directions = directions
-      ..notes = draft.comments.isNotEmpty ? draft.comments : null
+      ..comments = draft.comments.isNotEmpty ? draft.comments : null
       ..imageUrl = draft.imagePath
       ..source = RecipeSource.personal
       ..createdAt = DateTime.now()

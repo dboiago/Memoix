@@ -1659,7 +1659,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
       ..ingredients = ingredients
       ..directions = directions
-      ..notes = notes.isEmpty ? null : notes
+      ..comments = notes.isEmpty ? null : notes
       ..headerImage = _headerImage
       ..stepImages = _stepImages
       ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()

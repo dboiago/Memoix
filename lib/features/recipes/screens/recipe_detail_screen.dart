@@ -1117,7 +1117,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       ..serves = recipe.serves
       ..time = recipe.time
       ..pairsWith = List.from(recipe.pairsWith)
-      ..notes = recipe.notes
+      ..comments = recipe.comments
       ..ingredients = recipe.ingredients.map((i) => 
         Ingredient()
           ..name = i.name

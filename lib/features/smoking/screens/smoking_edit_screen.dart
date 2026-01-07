@@ -1751,7 +1751,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
       ..ingredients = ingredients
       ..directions = directions
-      ..notes = notes.isEmpty ? null : notes
+      ..comments = notes.isEmpty ? null : notes
       ..headerImage = _imagePath
       ..stepImages = _stepImages
       ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()

@@ -1748,7 +1748,7 @@ class OcrRecipeImporter {
       course: course,
       serves: serves,
       time: time,
-      notes: notes,
+      comments: notes,
       ingredients: ingredients,
       directions: directions,
       garnish: garnish,

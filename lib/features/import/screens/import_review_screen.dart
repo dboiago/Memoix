@@ -1425,7 +1425,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       equipment: widget.importResult.equipment,
       ingredients: ingredients,
       directions: directions,
-      notes: widget.importResult.notes,
+      comments: widget.importResult.comments,
       sourceUrl: widget.importResult.sourceUrl,
       headerImage: headerImage,
       stepImages: stepImages,
@@ -1468,11 +1468,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     }
 
     // Build notes - include equipment if present
-    String? notes = widget.importResult.notes;
+    String? comments = widget.importResult.comments;
     if (widget.importResult.equipment.isNotEmpty) {
       final equipmentText = 'Equipment: ${widget.importResult.equipment.join(', ')}';
-      notes = notes != null && notes.isNotEmpty 
-          ? '$notes\n\n$equipmentText' 
+      comments = comments != null && comments.isNotEmpty 
+          ? '$comments\n\n$equipmentText' 
           : equipmentText;
     }
 
@@ -1492,7 +1492,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           : _timeController.text.trim(),
       ingredients: ingredients,
       directions: directions,
-      notes: notes,
+      comments: comments,
       imageUrl: widget.importResult.imageUrl,
       sourceUrl: widget.importResult.sourceUrl,
       source: widget.importResult.source,
@@ -1526,7 +1526,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     
     // Try to detect wood type from ingredients or notes
     String woodType = 'Hickory'; // Default
-    final allText = [...directions, widget.importResult.notes ?? ''].join(' ').toLowerCase();
+    final allText = [...directions, widget.importResult.comments ?? ''].join(' ').toLowerCase();
     for (final wood in WoodSuggestions.common) {
       if (allText.contains(wood.toLowerCase())) {
         woodType = wood;
@@ -1580,7 +1580,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       wood: woodType,
       seasonings: seasonings,
       directions: directions,
-      notes: widget.importResult.notes,
+      comments: widget.importResult.comments,
       headerImage: headerImage,
       stepImages: stepImages,
       source: SmokingSource.imported,
@@ -1661,7 +1661,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       cheeses: cheeses,
       proteins: proteins,
       vegetables: vegetables,
-      notes: widget.importResult.notes,
+      comments: widget.importResult.comments,
       imageUrl: widget.importResult.imageUrl,
       source: PizzaSource.imported,
     );

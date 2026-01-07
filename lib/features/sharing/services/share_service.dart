@@ -142,10 +142,10 @@ class ShareService {
       buffer.writeln('${i + 1}. ${recipe.directions[i]}');
     }
     
-    if (recipe.notes != null && recipe.notes!.isNotEmpty) {
+    if (recipe.comments != null && recipe.comments!.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Notes');
-      buffer.writeln(recipe.notes);
+      buffer.writeln(recipe.comments);
     }
     
     buffer.writeln();
