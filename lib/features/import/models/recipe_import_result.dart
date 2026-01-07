@@ -215,7 +215,7 @@ class RecipeImportResult {
   SmokingRecipe toSmokingRecipe(String uuid) {
     final allText = [
       name ?? '',
-      notes ?? '',
+      comments ?? '',
       ...directions,
       ...ingredients.map((i) => i.name),
     ].join(' ');
@@ -392,7 +392,7 @@ class RecipeImportResult {
     // Detect wood type from text
     final allText = [
       name ?? '',
-      notes ?? '',
+      comments ?? '',
       ...directions,
       ...ingredients.map((i) => i.name),
     ].join(' ');
