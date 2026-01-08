@@ -24,6 +24,7 @@ import '../../sandwiches/models/sandwich.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
+import '../models/drive_repository.dart';
 import '../models/merge_result.dart';
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
@@ -344,9 +345,32 @@ class ExternalStorageService {
         operationName: 'push',
       );
       
-      // Update last sync time
-      await _setLastSyncTime(DateTime.now());
+      // Update last sync time in preferences
+      final syncTime = DateTime.now();
+      await _setLastSyncTime(syncTime);
       _hasPendingChanges = false;
+      
+      // Update lastSynced timestamp in active repository
+      final prefs = await SharedPreferences.getInstance();
+      final repositoriesJson = prefs.getString('drive_repositories');
+      if (repositoriesJson != null) {
+        final List<dynamic> list = jsonDecode(repositoriesJson);
+        final repositories = list.map((item) => 
+          DriveRepository.fromJson(item as Map<String, dynamic>)
+        ).toList();
+        
+        // Find and update active repository
+        final updated = repositories.map((r) {
+          if (r.isActive) {
+            return r.copyWith(lastSynced: syncTime);
+          }
+          return r;
+        }).toList();
+        
+        // Save updated repositories
+        final updatedJson = jsonEncode(updated.map((r) => r.toJson()).toList());
+        await prefs.setString('drive_repositories', updatedJson);
+      }
       
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 

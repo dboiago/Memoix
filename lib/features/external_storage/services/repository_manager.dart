@@ -47,6 +47,15 @@ class RepositoryManager {
   /// which cloud storage implementation to use.
   Future<void> setActiveRepository(String repositoryId) async {
     final repos = await loadRepositories();
+    
+    // Store the current active repo for rollback if switch fails
+    DriveRepository? previousActiveRepo;
+    try {
+      previousActiveRepo = repos.firstWhere((r) => r.isActive);
+    } catch (_) {
+      // No previous active repo
+    }
+    
     final updated = repos.map((r) {
       return r.copyWith(isActive: r.id == repositoryId);
     }).toList();
@@ -78,17 +87,24 @@ class RepositoryManager {
             );
             
             debugPrint('RepositoryManager: Switched to OneDrive repository: ${activeRepo.name}');
-            
-            // TODO: Trigger sync via ExternalStorageService
-            // This should be handled by the UI layer that has access to Riverpod providers
-            debugPrint('RepositoryManager: OneDrive sync should be triggered by UI layer');
           } else {
-            debugPrint('RepositoryManager: OneDrive not connected, skipping sync');
+            debugPrint('RepositoryManager: OneDrive not connected, user needs to sign in');
+            throw Exception('OneDrive not connected. Please sign in first.');
           }
           break;
       }
     } catch (e) {
       debugPrint('RepositoryManager: Error switching to repository: $e');
+      
+      // Rollback: Restore previous active repository
+      if (previousActiveRepo != null) {
+        final rolledBack = repos.map((r) {
+          return r.copyWith(isActive: r.id == previousActiveRepo!.id);
+        }).toList();
+        await saveRepositories(rolledBack);
+        debugPrint('RepositoryManager: Rolled back to previous repository: ${previousActiveRepo.name}');
+      }
+      
       rethrow;
     }
   }

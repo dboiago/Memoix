@@ -8,6 +8,18 @@ enum StorageProvider {
   oneDrive,
 }
 
+/// Extension for StorageProvider display names
+extension StorageProviderDisplay on StorageProvider {
+  String get displayName {
+    switch (this) {
+      case StorageProvider.googleDrive:
+        return 'Google Drive';
+      case StorageProvider.oneDrive:
+        return 'Microsoft OneDrive';
+    }
+  }
+}
+
 /// Represents a Google Drive repository (folder) that stores Memoix data
 ///
 /// Multiple repositories allow users to maintain separate collections

@@ -208,7 +208,7 @@ class _RepositoryManagementScreenState
         title: const Text('Remove Repository'),
         content: Text(
           'Remove "${repository.name}" from this device?\n\n'
-          'This will not delete the Google Drive folder.',
+          'This will not delete the ${repository.provider.displayName} folder.',
         ),
         actions: [
           TextButton(
@@ -452,6 +452,7 @@ class _RepositoryCard extends StatelessWidget {
                     ],
                   ),
                 ),
+                // Show more options menu for all non-active repositories
                 if (!repository.isActive)
                   IconButton(
                     icon: const Icon(Icons.more_vert),
@@ -470,14 +471,17 @@ class _RepositoryCard extends StatelessWidget {
                                   onSwitch();
                                 },
                               ),
-                              ListTile(
-                                leading: const Icon(Icons.share),
-                                title: const Text('Share'),
-                                onTap: () {
-                                  Navigator.pop(ctx);
-                                  onShare();
-                                },
-                              ),
+                              // Only show Share if repository is verified (not pending)
+                              if (!repository.isPendingVerification)
+                                ListTile(
+                                  leading: const Icon(Icons.share),
+                                  title: const Text('Share'),
+                                  onTap: () {
+                                    Navigator.pop(ctx);
+                                    onShare();
+                                  },
+                                ),
+                              // Show Verify option for pending repositories
                               if (repository.isPendingVerification)
                                 ListTile(
                                   leading: const Icon(Icons.refresh),
@@ -487,13 +491,14 @@ class _RepositoryCard extends StatelessWidget {
                                     onVerify();
                                   },
                                 ),
+                              // Always show Disconnect/Remove option
                               ListTile(
                                 leading: Icon(
                                   Icons.delete_outline,
                                   color: theme.colorScheme.secondary,
                                 ),
                                 title: Text(
-                                  'Remove',
+                                  repository.isPendingVerification ? 'Disconnect' : 'Remove',
                                   style: TextStyle(
                                     color: theme.colorScheme.secondary,
                                   ),
