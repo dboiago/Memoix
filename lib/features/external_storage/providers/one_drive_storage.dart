@@ -1,8 +1,13 @@
 import 'dart:convert';
+import 'dart:io';
+import 'dart:math';
 
+import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_appauth/flutter_appauth.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../config/app_config.dart';
 import '../../../core/services/graph_http_client.dart';
@@ -97,33 +102,14 @@ class OneDriveStorage implements CloudStorageProvider {
   @override
   Future<void> signIn() async {
     try {
-      final result = await _appAuth.authorizeAndExchangeCode(
-        AuthorizationTokenRequest(
-          AppConfig.oneDriveClientId,
-          AppConfig.oneDriveRedirectUri,
-          serviceConfiguration: const AuthorizationServiceConfiguration(
-            authorizationEndpoint: _authorizationEndpoint,
-            tokenEndpoint: _tokenEndpoint,
-          ),
-          scopes: _scopes,
-        ),
-      );
-
-      if (result == null) {
-        throw Exception('Sign in was cancelled by user');
+      // Use platform-specific OAuth flow
+      if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+        // Desktop: Manual OAuth with loopback server
+        await _signInDesktop();
+      } else {
+        // Mobile: Use flutter_appauth
+        await _signInMobile();
       }
-
-      // Store tokens securely
-      _accessToken = result.accessToken;
-      _refreshToken = result.refreshToken;
-      _tokenExpiry = result.accessTokenExpirationDateTime;
-
-      await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
-      await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
-      await _secureStorage.write(
-        key: _keyTokenExpiry,
-        value: _tokenExpiry?.toIso8601String(),
-      );
 
       _isConnected = true;
       _httpClient = GraphHttpClient(_accessToken!);
@@ -133,6 +119,152 @@ class OneDriveStorage implements CloudStorageProvider {
       debugPrint('OneDriveStorage: Sign in failed: $e');
       rethrow;
     }
+  }
+
+  /// Mobile OAuth flow using flutter_appauth
+  Future<void> _signInMobile() async {
+    final result = await _appAuth.authorizeAndExchangeCode(
+      AuthorizationTokenRequest(
+        AppConfig.oneDriveClientId,
+        AppConfig.oneDriveRedirectUri,
+        serviceConfiguration: const AuthorizationServiceConfiguration(
+          authorizationEndpoint: _authorizationEndpoint,
+          tokenEndpoint: _tokenEndpoint,
+        ),
+        scopes: _scopes,
+      ),
+    );
+
+    if (result == null) {
+      throw Exception('Sign in was cancelled by user');
+    }
+
+    // Store tokens securely
+    _accessToken = result.accessToken;
+    _refreshToken = result.refreshToken;
+    _tokenExpiry = result.accessTokenExpirationDateTime;
+
+    await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
+    if (_refreshToken != null) {
+      await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
+    }
+    await _secureStorage.write(
+      key: _keyTokenExpiry,
+      value: _tokenExpiry?.toIso8601String(),
+    );
+  }
+
+  /// Desktop OAuth flow using loopback IP redirect
+  Future<void> _signInDesktop() async {
+    HttpServer? server;
+    
+    try {
+      // Step A: Start local server on ephemeral port
+      server = await HttpServer.bind(InternetAddress.loopbackIPv4, 0);
+      final port = server.port;
+      final redirectUri = 'http://localhost:$port';
+
+      debugPrint('OneDriveStorage: Desktop OAuth server listening on $redirectUri');
+
+      // Step B: Generate PKCE code verifier and challenge
+      final codeVerifier = _generateCodeVerifier();
+      final codeChallenge = _generateCodeChallenge(codeVerifier);
+
+      // Step C: Construct authorization URL
+      final authUrl = Uri.parse(_authorizationEndpoint).replace(
+        queryParameters: {
+          'client_id': AppConfig.oneDriveClientId,
+          'response_type': 'code',
+          'redirect_uri': redirectUri,
+          'scope': _scopes.join(' '),
+          'code_challenge': codeChallenge,
+          'code_challenge_method': 'S256',
+        },
+      );
+
+      // Launch browser
+      if (!await launchUrl(authUrl, mode: LaunchMode.externalApplication)) {
+        throw Exception('Could not launch browser for authentication');
+      }
+
+      // Step D: Listen for redirect
+      final request = await server.first;
+      final code = request.uri.queryParameters['code'];
+
+      // Respond to browser
+      request.response
+        ..statusCode = 200
+        ..headers.set('Content-Type', 'text/html')
+        ..write('<html><body><h1>Authentication Successful</h1>'
+            '<p>You can close this window and return to Memoix.</p></body></html>');
+      await request.response.close();
+
+      if (code == null) {
+        throw Exception('No authorization code received');
+      }
+
+      debugPrint('OneDriveStorage: Authorization code received');
+
+      // Step E: Exchange code for tokens
+      final tokenResponse = await http.post(
+        Uri.parse(_tokenEndpoint),
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: {
+          'client_id': AppConfig.oneDriveClientId,
+          'grant_type': 'authorization_code',
+          'code': code,
+          'redirect_uri': redirectUri,
+          'code_verifier': codeVerifier,
+        },
+      );
+
+      if (tokenResponse.statusCode != 200) {
+        throw Exception(
+          'Token exchange failed: ${tokenResponse.statusCode} ${tokenResponse.body}',
+        );
+      }
+
+      final tokenData = jsonDecode(tokenResponse.body) as Map<String, dynamic>;
+
+      // Step F: Store tokens
+      _accessToken = tokenData['access_token'] as String?;
+      _refreshToken = tokenData['refresh_token'] as String?;
+      
+      final expiresIn = tokenData['expires_in'] as int?;
+      if (expiresIn != null) {
+        _tokenExpiry = DateTime.now().add(Duration(seconds: expiresIn));
+      }
+
+      await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
+      if (_refreshToken != null) {
+        await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
+      }
+      if (_tokenExpiry != null) {
+        await _secureStorage.write(
+          key: _keyTokenExpiry,
+          value: _tokenExpiry!.toIso8601String(),
+        );
+      }
+
+      debugPrint('OneDriveStorage: Desktop OAuth completed successfully');
+    } finally {
+      // Always close the server
+      await server?.close();
+    }
+  }
+
+  /// Generate a random code verifier for PKCE (43-128 characters)
+  String _generateCodeVerifier() {
+    final random = Random.secure();
+    final bytes = List<int>.generate(32, (_) => random.nextInt(256));
+    return base64Url.encode(bytes).replaceAll('=', '');
+  }
+
+  /// Generate SHA-256 code challenge from verifier
+  String _generateCodeChallenge(String verifier) {
+    final bytes = utf8.encode(verifier);
+    final digest = sha256.convert(bytes);
+    return base64Url.encode(digest.bytes).replaceAll('=', '');
   }
 
   @override

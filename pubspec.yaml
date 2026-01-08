@@ -55,6 +55,7 @@ dependencies:
   file_picker: ^10.1.0
   wakelock_plus: ^1.1.4
   flutter_ringtone_player: ^4.0.0+3
+  crypto: ^3.0.0
   
   # External Storage
   device_info_plus: ^11.2.0
