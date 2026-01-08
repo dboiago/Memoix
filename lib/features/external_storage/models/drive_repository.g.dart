@@ -18,6 +18,9 @@ DriveRepository _$DriveRepositoryFromJson(Map<String, dynamic> json) =>
       lastVerified: json['lastVerified'] == null
           ? null
           : DateTime.parse(json['lastVerified'] as String),
+      lastSynced: json['lastSynced'] == null
+          ? null
+          : DateTime.parse(json['lastSynced'] as String),
     );
 
 Map<String, dynamic> _$DriveRepositoryToJson(DriveRepository instance) =>
@@ -30,4 +33,5 @@ Map<String, dynamic> _$DriveRepositoryToJson(DriveRepository instance) =>
       'accessDenied': instance.accessDenied,
       'createdAt': instance.createdAt.toIso8601String(),
       'lastVerified': instance.lastVerified?.toIso8601String(),
+      'lastSynced': instance.lastSynced?.toIso8601String(),
     };

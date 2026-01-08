@@ -334,7 +334,7 @@ class _RepositoryCard extends StatelessWidget {
                             Icon(
                               repository.accessDenied
                                   ? Icons.block
-                                  : Icons.warning_amber,
+                                  : Icons.schedule,
                               size: 16,
                               color: theme.colorScheme.secondary,
                             ),
@@ -342,8 +342,8 @@ class _RepositoryCard extends StatelessWidget {
                             Flexible(
                               child: Text(
                                 repository.accessDenied
-                                    ? 'Access denied - Request permission from owner'
-                                    : 'Pending verification - Tap to retry',
+                                    ? 'Access denied - Tap to resolve'
+                                    : 'Waiting for connection',
                                 style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.secondary,
                                 ),
@@ -353,7 +353,7 @@ class _RepositoryCard extends StatelessWidget {
                         ),
                       ] else ...[
                         Text(
-                          'Last verified: ${_formatDate(repository.lastVerified)}',
+                          _getSyncStatusText(repository),
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -451,20 +451,48 @@ class _RepositoryCard extends StatelessWidget {
     );
   }
 
-  String _formatDate(DateTime? date) {
-    if (date == null) return 'Never';
-    
+  /// Get sync status text based on repository state
+  String _getSyncStatusText(DriveRepository repo) {
+    if (repo.lastSynced == null) {
+      return 'Ready to sync';
+    }
+    return 'Last synced: ${_formatSyncTime(repo.lastSynced!)}';
+  }
+
+  /// Format sync time in a user-friendly way
+  String _formatSyncTime(DateTime date) {
     final now = DateTime.now();
     final difference = now.difference(date);
 
+    // Today
     if (difference.inDays == 0) {
-      return 'Today';
-    } else if (difference.inDays == 1) {
-      return 'Yesterday';
-    } else if (difference.inDays < 7) {
-      return '${difference.inDays} days ago';
-    } else {
-      return '${date.day}/${date.month}/${date.year}';
+      if (difference.inMinutes < 1) {
+        return 'Just now';
+      } else if (difference.inMinutes < 60) {
+        return '${difference.inMinutes}m ago';
+      } else {
+        // Format as "Today at 4:30 PM"
+        final hour = date.hour > 12 ? date.hour - 12 : (date.hour == 0 ? 12 : date.hour);
+        final minute = date.minute.toString().padLeft(2, '0');
+        final period = date.hour >= 12 ? 'PM' : 'AM';
+        return 'Today at $hour:$minute $period';
+      }
     }
+    
+    // Yesterday
+    if (difference.inDays == 1) {
+      final hour = date.hour > 12 ? date.hour - 12 : (date.hour == 0 ? 12 : date.hour);
+      final minute = date.minute.toString().padLeft(2, '0');
+      final period = date.hour >= 12 ? 'PM' : 'AM';
+      return 'Yesterday at $hour:$minute $period';
+    }
+    
+    // This week
+    if (difference.inDays < 7) {
+      return '${difference.inDays}d ago';
+    }
+    
+    // Older
+    return '${date.day}/${date.month}/${date.year}';
   }
 }

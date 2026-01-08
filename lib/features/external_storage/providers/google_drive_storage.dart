@@ -404,6 +404,13 @@ class GoogleDriveStorage implements ExternalStorageProvider {
       content: content,
       mimeType: _jsonMimeType,
     );
+
+    // Update lastSynced timestamp for this repository
+    final manager = RepositoryManager();
+    final activeRepo = await manager.getActiveRepository();
+    if (activeRepo != null) {
+      await manager.updateLastSynced(activeRepo.id);
+    }
   }
 
   @override
@@ -422,7 +429,16 @@ class GoogleDriveStorage implements ExternalStorageProvider {
         return null;
       }
 
-      return RecipeBundle.fromJsonString(content);
+      final bundle = RecipeBundle.fromJsonString(content);
+
+      // Update lastSynced timestamp for this repository
+      final manager = RepositoryManager();
+      final activeRepo = await manager.getActiveRepository();
+      if (activeRepo != null) {
+        await manager.updateLastSynced(activeRepo.id);
+      }
+
+      return bundle;
     } catch (e) {
       debugPrint('GoogleDriveStorage: Pull failed: $e');
       return null;

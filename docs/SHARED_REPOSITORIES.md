@@ -3,6 +3,44 @@
 ## Overview
 This document tracks the implementation of the Shared Repository feature, which allows multiple users to collaborate on a shared Google Drive folder containing recipes.
 
+---
+
+## ⚡ Latest Update: Sync Time Refactor (Jan 8, 2026)
+
+**Motivation:** Users found "Last verified: Never" confusing. Verification is technical infrastructure; users care about sync freshness.
+
+### Changes Made:
+
+#### 1. Data Model (`drive_repository.dart`)
+- **Added field:** `DateTime? lastSynced` - Tracks when repository was last synced (push or pull)
+- **Updated:** `.g.dart` serialization to include `lastSynced`
+- **Kept:** `lastVerified` field (still used internally for access verification logic)
+
+#### 2. Storage Logic (`google_drive_storage.dart`)
+- **Updated `push()`:** Calls `RepositoryManager.updateLastSynced()` after successful upload
+- **Updated `pull()`:** Calls `RepositoryManager.updateLastSynced()` after successful download
+- **Added to `RepositoryManager`:** `updateLastSynced(repositoryId)` method
+
+#### 3. UI (`repository_management_screen.dart`)
+**Subtitle Logic** (replaces "Last verified: Never"):
+- **Pending + Access Denied:** "Access denied - Tap to resolve" (red block icon)
+- **Pending (not denied):** "Waiting for connection" (schedule icon)
+- **Verified + Never Synced:** "Ready to sync"
+- **Verified + Synced:** "Last synced: [formatted time]"
+
+**Time Format Examples:**
+- `Just now` (< 1 minute ago)
+- `15m ago` (< 1 hour ago)
+- `Today at 4:30 PM`
+- `Yesterday at 11:45 AM`
+- `3d ago` (< 7 days)
+- `8/1/2026` (older dates)
+
+**Icon Changes:**
+- Pending (not denied): `Icons.schedule` (was `Icons.warning_amber`)
+
+---
+
 ## Completed Components
 
 ### 1. Data Model
@@ -13,8 +51,10 @@ This document tracks the implementation of the Shared Repository feature, which 
   - `folderId` (String) - Google Drive folder ID
   - `isActive` (bool) - Whether this is the currently active repository
   - `isPendingVerification` (bool) - True when added offline, needs verification
+  - `accessDenied` (bool) - True when verification failed (access denied)
   - `createdAt` (DateTime) - When the repository was added
-  - `lastVerified` (DateTime?) - When access was last confirmed
+  - `lastVerified` (DateTime?) - When access was last confirmed (internal use)
+  - `lastSynced` (DateTime?) - When repository was last synced (push or pull)
 - JSON serialization support
 
 ### 2. Repository Manager
@@ -27,7 +67,10 @@ This document tracks the implementation of the Shared Repository feature, which 
   - `addRepository()` - Add a new repository (either verified or pending)
   - `removeRepository()` - Remove a repository from the device
   - `markAsVerified()` - Mark a pending repository as verified
+  - `markAsAccessDenied()` - Mark a repository as access denied
+  - `getPendingRepositories()` - Get all repositories needing verification
   - `folderIdExists()` - Check if a folder ID is already registered
+  - `updateLastSynced()` - Update lastSynced timestamp after sync operations
 
 ### 3. Google Drive API Integration
 ✅ **File:** `lib/features/external_storage/providers/google_drive_storage.dart`

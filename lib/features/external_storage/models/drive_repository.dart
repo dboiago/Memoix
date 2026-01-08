@@ -34,6 +34,9 @@ class DriveRepository {
   /// Timestamp when this repository was last verified/accessed
   final DateTime? lastVerified;
 
+  /// Timestamp when this repository was last synced (push or pull)
+  final DateTime? lastSynced;
+
   const DriveRepository({
     required this.id,
     required this.name,
@@ -43,6 +46,7 @@ class DriveRepository {
     this.accessDenied = false,
     required this.createdAt,
     this.lastVerified,
+    this.lastSynced,
   });
 
   /// Create a copy with updated fields
@@ -55,6 +59,7 @@ class DriveRepository {
     bool? accessDenied,
     DateTime? createdAt,
     DateTime? lastVerified,
+    DateTime? lastSynced,
   }) {
     return DriveRepository(
       id: id ?? this.id,
@@ -65,6 +70,7 @@ class DriveRepository {
       accessDenied: accessDenied ?? this.accessDenied,
       createdAt: createdAt ?? this.createdAt,
       lastVerified: lastVerified ?? this.lastVerified,
+      lastSynced: lastSynced ?? this.lastSynced,
     );
   }
 

@@ -129,4 +129,16 @@ class RepositoryManager {
     final repos = await loadRepositories();
     return repos.any((r) => r.folderId == folderId);
   }
+
+  /// Update lastSynced timestamp for a repository
+  Future<void> updateLastSynced(String repositoryId) async {
+    final repos = await loadRepositories();
+    final updated = repos.map((r) {
+      if (r.id == repositoryId) {
+        return r.copyWith(lastSynced: DateTime.now());
+      }
+      return r;
+    }).toList();
+    await saveRepositories(updated);
+  }
 }
