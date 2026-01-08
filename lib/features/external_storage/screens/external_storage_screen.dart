@@ -538,29 +538,32 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
   /// 
   /// Shows pre-pull confirmation and post-pull summary per EXTERNAL_STORAGE.md Section 6.2.
   Future<void> _pull() async {
-    // Show confirmation dialog first
-    final confirmed = await _showPullConfirmation();
-    if (confirmed != true) return;
-
     final service = ref.read(externalStorageServiceProvider);
-    // Pass silent: true since we'll handle UI feedback ourselves
+    
+    // First, check if pull is needed by doing a silent comparison
+    // This uses the smart meta check to avoid downloading data unnecessarily
     final result = await service.pull(silent: true);
-
+    
     // Refresh last sync time
     _lastSyncTime = await service.lastSyncTime;
     if (mounted) setState(() {});
 
-    // Show appropriate feedback based on result
     if (!mounted) return;
     
+    // Handle different scenarios
     if (result.hasFailed) {
       MemoixSnackBar.showError('Pull failed: ${result.error}');
-    } else if (result.wasSkipped) {
-      MemoixSnackBar.show('Already up to date');
-    } else {
-      // Show detailed summary dialog
-      _showPullSummaryDialog(result);
+      return;
     }
+    
+    if (result.wasSkipped || !result.hasChanges) {
+      // No changes detected - silent sync complete
+      MemoixSnackBar.show('Already up to date');
+      return;
+    }
+    
+    // Changes were found and applied - show summary
+    _showPullSummaryDialog(result);
   }
 
   /// Show confirmation dialog before pulling
