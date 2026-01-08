@@ -127,7 +127,7 @@ class GraphHttpClient {
         if (response.statusCode == 429) {
           if (attempt >= _maxRetries) {
             debugPrint(
-              'GraphHttpClient: Max retries ($maxRetries) reached for $method $url',
+              'GraphHttpClient: Max retries ($_maxRetries) reached for $method $url',
             );
             return response; // Return 429 response after max retries
           }

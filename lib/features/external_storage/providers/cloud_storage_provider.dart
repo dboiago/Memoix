@@ -13,7 +13,7 @@ abstract class CloudStorageProvider {
   Future<void> signOut();
 
   /// Check if user is currently connected to the provider
-  Future<bool> get isConnected;
+  bool get isConnected;
 
   /// Sync recipes (push local data to cloud)
   Future<void> syncRecipes();

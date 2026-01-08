@@ -70,7 +70,7 @@ class RepositoryManager {
           await oneDriveStorage.init();
           
           // Check if connected
-          if (await oneDriveStorage.isConnected) {
+          if (oneDriveStorage.isConnected) {
             // Switch to the repository folder
             await oneDriveStorage.switchRepository(
               activeRepo.folderId,

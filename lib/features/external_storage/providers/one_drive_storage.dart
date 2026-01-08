@@ -147,21 +147,15 @@ class OneDriveStorage implements CloudStorageProvider {
   }
 
   @override
-  Future<bool> get isConnected async {
+  bool get isConnected {
     if (!_isConnected || _accessToken == null) {
       return false;
     }
 
     // Check if token is expired
     if (_tokenExpiry != null && _tokenExpiry!.isBefore(DateTime.now())) {
-      // Try to refresh token
-      try {
-        await _refreshAccessToken();
-        return _isConnected;
-      } catch (e) {
-        debugPrint('OneDriveStorage: Token refresh failed: $e');
-        return false;
-      }
+      // Token is expired - will need refresh on next operation
+      return false;
     }
 
     return true;
