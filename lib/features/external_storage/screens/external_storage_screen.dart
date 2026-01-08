@@ -478,15 +478,9 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
         title: const Text('Existing Data Found'),
-        content: FutureBuilder<int?>(
-          future: _googleDrive!.getRemoteRecipeCount(),
-          builder: (context, snapshot) {
-            final count = snapshot.data ?? 0;
-            return Text(
-              'Found ${count > 0 ? count : 'some'} recipes in this folder. '
-              'What would you like to do?',
-            );
-          },
+        content: const Text(
+          'This storage location contains existing recipes. '
+          'What would you like to do?',
         ),
         actions: [
           TextButton(

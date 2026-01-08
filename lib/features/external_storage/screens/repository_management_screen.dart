@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/drive_repository.dart';
+import '../models/sync_mode.dart';
+import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 import '../services/external_storage_service.dart';
@@ -369,18 +371,27 @@ class _RepositoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final syncStatus = ref.watch(syncStatusProvider);
 
-    // Active repository: Expanded card matching External Storage screen style
+    // Active repository: Full card with sync controls
     if (repository.isActive) {
       return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Card(
+          elevation: 2,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: BorderSide(
+              color: theme.colorScheme.secondary.withOpacity(0.3),
+              width: 1.5,
+            ),
+          ),
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Provider header
+                // Provider header with Active badge
                 Row(
                   children: [
                     Icon(
@@ -392,10 +403,42 @@ class _RepositoryCard extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            repository.name,
-                            style: theme.textTheme.titleMedium,
+                          Row(
+                            children: [
+                              Flexible(
+                                child: Text(
+                                  repository.name,
+                                  style: theme.textTheme.titleMedium?.copyWith(
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: theme.colorScheme.secondary,
+                                    width: 1.5,
+                                  ),
+                                ),
+                                child: Text(
+                                  'Active',
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    color: theme.colorScheme.secondary,
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
+                          const SizedBox(height: 4),
                           Text(
                             repository.provider.displayName,
                             style: theme.textTheme.bodySmall?.copyWith(
@@ -405,29 +448,49 @@ class _RepositoryCard extends StatelessWidget {
                         ],
                       ),
                     ),
+                    _buildSyncStatusIcon(theme, syncStatus),
                   ],
                 ),
-                
+
                 const SizedBox(height: 8),
-                
-                // Last synced or verification status
-                if (repository.isPendingVerification) ...[
-                  Text(
-                    repository.accessDenied
-                        ? 'Access denied - Tap to resolve'
-                        : 'Waiting for connection',
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: theme.colorScheme.secondary,
-                    ),
-                  ),
-                ] else ...[
+
+                // Last synced timestamp
+                if (!repository.isPendingVerification)
                   Text(
                     _getSyncStatusText(repository),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.onSurfaceVariant,
                     ),
                   ),
-                ],
+
+                const SizedBox(height: 16),
+                const Divider(),
+                const SizedBox(height: 16),
+
+                // Sync mode toggle
+                _buildSyncModeSection(theme),
+
+                const SizedBox(height: 16),
+                const Divider(),
+                const SizedBox(height: 16),
+
+                // Push/Pull buttons
+                _buildPushPullButtons(theme, syncStatus),
+
+                const SizedBox(height: 16),
+
+                // Disconnect button
+                Center(
+                  child: TextButton(
+                    onPressed: syncStatus.isInProgress ? null : () => onDelete(),
+                    child: Text(
+                      repository.isPendingVerification ? 'Remove' : 'Disconnect',
+                      style: TextStyle(
+                        color: theme.colorScheme.secondary,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -446,6 +509,11 @@ class _RepositoryCard extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Row(
               children: [
+                Icon(
+                  Icons.cloud_outlined,
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+                const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -466,7 +534,7 @@ class _RepositoryCard extends StatelessWidget {
                         ),
                       ] else ...[
                         Text(
-                          _getSyncStatusText(repository),
+                          '${repository.provider.displayName} • ${_getSyncStatusText(repository)}',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -477,11 +545,20 @@ class _RepositoryCard extends StatelessWidget {
                 ),
                 // Three-dot menu for inactive repositories
                 PopupMenuButton<String>(
-                  icon: const Icon(Icons.more_vert),
+                  icon: Icon(
+                    Icons.more_vert,
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
                   onSelected: (value) {
                     switch (value) {
                       case 'activate':
                         onSwitch();
+                        break;
+                      case 'share':
+                        onShare();
+                        break;
+                      case 'verify':
+                        onVerify();
                         break;
                       case 'delete':
                         onDelete();
@@ -489,23 +566,68 @@ class _RepositoryCard extends StatelessWidget {
                     }
                   },
                   itemBuilder: (context) => [
-                    const PopupMenuItem(
+                    PopupMenuItem(
                       value: 'activate',
                       child: Row(
                         children: [
-                          Icon(Icons.check_circle_outline, size: 20),
-                          SizedBox(width: 12),
-                          Text('Set as Active'),
+                          Icon(
+                            Icons.check_circle_outline,
+                            size: 20,
+                            color: theme.colorScheme.onSurface,
+                          ),
+                          const SizedBox(width: 12),
+                          const Text('Set as Active'),
                         ],
                       ),
                     ),
-                    const PopupMenuItem(
+                    if (!repository.isPendingVerification)
+                      PopupMenuItem(
+                        value: 'share',
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.share,
+                              size: 20,
+                              color: theme.colorScheme.onSurface,
+                            ),
+                            const SizedBox(width: 12),
+                            const Text('Share'),
+                          ],
+                        ),
+                      ),
+                    if (repository.isPendingVerification)
+                      PopupMenuItem(
+                        value: 'verify',
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.refresh,
+                              size: 20,
+                              color: theme.colorScheme.onSurface,
+                            ),
+                            const SizedBox(width: 12),
+                            const Text('Verify Access'),
+                          ],
+                        ),
+                      ),
+                    PopupMenuItem(
                       value: 'delete',
                       child: Row(
                         children: [
-                          Icon(Icons.delete_outline, size: 20),
-                          SizedBox(width: 12),
-                          Text('Remove'),
+                          Icon(
+                            repository.isPendingVerification
+                                ? Icons.delete_outline
+                                : Icons.cloud_off,
+                            size: 20,
+                            color: theme.colorScheme.secondary,
+                          ),
+                          const SizedBox(width: 12),
+                          Text(
+                            repository.isPendingVerification ? 'Remove' : 'Disconnect',
+                            style: TextStyle(
+                              color: theme.colorScheme.secondary,
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -516,6 +638,119 @@ class _RepositoryCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  /// Build sync status icon
+  Widget _buildSyncStatusIcon(ThemeData theme, SyncStatus status) {
+    switch (status) {
+      case SyncStatus.idle:
+        return Icon(
+          Icons.cloud_done_outlined,
+          color: theme.colorScheme.primary,
+        );
+      case SyncStatus.pushing:
+      case SyncStatus.pulling:
+        return SizedBox(
+          width: 24,
+          height: 24,
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            valueColor: AlwaysStoppedAnimation(theme.colorScheme.primary),
+          ),
+        );
+      case SyncStatus.error:
+        return Icon(
+          Icons.error_outline,
+          color: theme.colorScheme.secondary,
+        );
+    }
+  }
+
+  /// Build sync mode section
+  Widget _buildSyncModeSection(ThemeData theme) {
+    return FutureBuilder<SyncMode>(
+      future: ref.read(externalStorageServiceProvider).syncMode,
+      builder: (context, snapshot) {
+        final mode = snapshot.data ?? SyncMode.manual;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Sync Mode',
+                  style: theme.textTheme.titleSmall,
+                ),
+                SegmentedButton<SyncMode>(
+                  segments: const [
+                    ButtonSegment(
+                      value: SyncMode.manual,
+                      label: Text('Manual'),
+                    ),
+                    ButtonSegment(
+                      value: SyncMode.automatic,
+                      label: Text('Automatic'),
+                    ),
+                  ],
+                  selected: {mode},
+                  onSelectionChanged: (selection) async {
+                    final service = ref.read(externalStorageServiceProvider);
+                    await service.setSyncMode(selection.first);
+                    setState(() {});
+                  },
+                  showSelectedIcon: false,
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(
+              mode.description,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  /// Build push/pull buttons
+  Widget _buildPushPullButtons(ThemeData theme, SyncStatus syncStatus) {
+    final isDisabled = syncStatus.isInProgress;
+
+    return Row(
+      children: [
+        Expanded(
+          child: OutlinedButton.icon(
+            onPressed: isDisabled ? null : () async {
+              final service = ref.read(externalStorageServiceProvider);
+              await service.push(silent: false);
+              _loadRepositories();
+            },
+            icon: const Icon(Icons.cloud_upload_outlined),
+            label: Text(
+              syncStatus == SyncStatus.pushing ? 'Pushing...' : 'Push',
+            ),
+          ),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: FilledButton.icon(
+            onPressed: isDisabled ? null : () async {
+              final service = ref.read(externalStorageServiceProvider);
+              await service.pull(silent: false);
+              _loadRepositories();
+            },
+            icon: const Icon(Icons.cloud_download_outlined),
+            label: Text(
+              syncStatus == SyncStatus.pulling ? 'Pulling...' : 'Pull',
+            ),
+          ),
+        ),
+      ],
     );
   }
 

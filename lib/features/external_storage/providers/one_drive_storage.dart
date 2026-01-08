@@ -413,38 +413,12 @@ class OneDriveStorage implements CloudStorageProvider {
     }
 
     try {
-      final result = await _appAuth.token(
-        TokenRequest(
-          AppConfig.oneDriveClientId,
-          AppConfig.oneDriveRedirectUri,
-          serviceConfiguration: const AuthorizationServiceConfiguration(
-            authorizationEndpoint: _authorizationEndpoint,
-            tokenEndpoint: _tokenEndpoint,
-          ),
-          refreshToken: _refreshToken,
-        ),
-      );
-
-      if (result == null) {
-        throw Exception('Token refresh failed');
+      // On Windows, use manual HTTP request since flutter_appauth doesn't support it
+      if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+        await _refreshTokenDesktop();
+      } else {
+        await _refreshTokenMobile();
       }
-
-      // Update tokens
-      _accessToken = result.accessToken;
-      if (result.refreshToken != null) {
-        _refreshToken = result.refreshToken;
-      }
-      _tokenExpiry = result.accessTokenExpirationDateTime;
-
-      // Save to secure storage
-      await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
-      if (_refreshToken != null) {
-        await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
-      }
-      await _secureStorage.write(
-        key: _keyTokenExpiry,
-        value: _tokenExpiry?.toIso8601String(),
-      );
 
       _isConnected = true;
 
@@ -457,6 +431,86 @@ class OneDriveStorage implements CloudStorageProvider {
       debugPrint('OneDriveStorage: Token refresh error: $e');
       _isConnected = false;
       rethrow;
+    }
+  }
+
+  /// Refresh token using flutter_appauth (mobile/web)
+  Future<void> _refreshTokenMobile() async {
+    final result = await _appAuth.token(
+      TokenRequest(
+        AppConfig.oneDriveClientId,
+        AppConfig.oneDriveRedirectUri,
+        serviceConfiguration: const AuthorizationServiceConfiguration(
+          authorizationEndpoint: _authorizationEndpoint,
+          tokenEndpoint: _tokenEndpoint,
+        ),
+        refreshToken: _refreshToken,
+      ),
+    );
+
+    if (result == null) {
+      throw Exception('Token refresh failed');
+    }
+
+    // Update tokens
+    _accessToken = result.accessToken;
+    if (result.refreshToken != null) {
+      _refreshToken = result.refreshToken;
+    }
+    _tokenExpiry = result.accessTokenExpirationDateTime;
+
+    // Save to secure storage
+    await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
+    if (_refreshToken != null) {
+      await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
+    }
+    await _secureStorage.write(
+      key: _keyTokenExpiry,
+      value: _tokenExpiry?.toIso8601String(),
+    );
+  }
+
+  /// Refresh token using manual HTTP request (desktop)
+  Future<void> _refreshTokenDesktop() async {
+    final response = await http.post(
+      Uri.parse(_tokenEndpoint),
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: {
+        'client_id': AppConfig.oneDriveClientId,
+        'grant_type': 'refresh_token',
+        'refresh_token': _refreshToken!,
+      },
+    );
+
+    if (response.statusCode != 200) {
+      throw Exception(
+        'Token refresh failed: ${response.statusCode} ${response.body}',
+      );
+    }
+
+    final tokenData = jsonDecode(response.body) as Map<String, dynamic>;
+
+    // Update tokens
+    _accessToken = tokenData['access_token'] as String?;
+    if (tokenData['refresh_token'] != null) {
+      _refreshToken = tokenData['refresh_token'] as String?;
+    }
+    
+    final expiresIn = tokenData['expires_in'] as int?;
+    if (expiresIn != null) {
+      _tokenExpiry = DateTime.now().add(Duration(seconds: expiresIn));
+    }
+
+    // Save to secure storage
+    await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
+    if (_refreshToken != null) {
+      await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
+    }
+    if (_tokenExpiry != null) {
+      await _secureStorage.write(
+        key: _keyTokenExpiry,
+        value: _tokenExpiry!.toIso8601String(),
+      );
     }
   }
 
