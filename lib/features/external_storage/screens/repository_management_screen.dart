@@ -427,42 +427,51 @@ class _RepositoryCard extends StatelessWidget {
                             ),
                           ],
                         ),
-                          const SizedBox(height: 4),
-                          if (repository.isPendingVerification) ...[
-                            Row(
-                              children: [
-                                Icon(
+                        const SizedBox(height: 4),
+                        if (repository.isPendingVerification) ...[
+                          Row(
+                            children: [
+                              Icon(
+                                repository.accessDenied
+                                    ? Icons.block
+                                    : Icons.schedule,
+                                size: 16,
+                                color: theme.colorScheme.secondary,
+                              ),
+                              const SizedBox(width: 4),
+                              Flexible(
+                                child: Text(
                                   repository.accessDenied
-                                      ? Icons.block
-                                      : Icons.schedule,
-                                  size: 16,
-                                  color: theme.colorScheme.secondary,
-                                ),
-                                const SizedBox(width: 4),
-                                Flexible(
-                                  child: Text(
-                                    repository.accessDenied
-                                        ? 'Access denied - Tap to resolve'
-                                        : 'Waiting for connection',
-                                    style: theme.textTheme.bodySmall?.copyWith(
-                                      color: theme.colorScheme.secondary,
-                                    ),
+                                      ? 'Access denied - Tap to resolve'
+                                      : 'Waiting for connection',
+                                  style: theme.textTheme.bodySmall?.copyWith(
+                                    color: theme.colorScheme.secondary,
                                   ),
                                 ),
-                              ],
-                            ),
-                          ] else ...[
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.cloud_done,
-                                  size: 14,
+                              ),
+                            ],
+                          ),
+                        ] else ...[
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.cloud_done,
+                                size: 14,
+                                color: theme.colorScheme.onSurfaceVariant,
+                              ),
+                              const SizedBox(width: 4),
+                              Text(
+                                _getSyncStatusText(repository),
+                                style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.onSurfaceVariant,
                                 ),
-                                const SizedBox(width: 4),
-                                Text(
-                                  _getSyncStatusText(repository),
-                                  style: theme.textTheme.bodySmall?.copyWith(
+                              ),
+                            ],
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
                                     color: theme.colorScheme.onSurfaceVariant,
                                   ),
                                 ),
