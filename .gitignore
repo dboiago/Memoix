@@ -70,7 +70,7 @@ app.*.map.json
 *.keystore
 
 # OneDrive
-75b201da-5de0-416e-b908-a7a3899dbc9d
+
 
 # Coverage
 coverage/
