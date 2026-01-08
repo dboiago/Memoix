@@ -258,11 +258,49 @@ class GoogleDriveStorage implements ExternalStorageProvider {
   ///
   /// Returns the new folder ID.
   /// Used when creating a new repository.
+  /// 
+  /// Handles first-time users by attempting silent sign-in,
+  /// then falling back to interactive sign-in if needed.
   Future<String> createFolder(String name) async {
+    // Ensure we have a connection
+    if (_driveApi == null) {
+      // Not connected yet - attempt to establish connection
+      try {
+        if (_isDesktop) {
+          // Desktop: Try to restore session, fallback to interactive
+          final prefs = await SharedPreferences.getInstance();
+          try {
+            await _restoreDesktopSession(prefs);
+          } catch (e) {
+            debugPrint('GoogleDriveStorage: Silent sign-in failed, triggering interactive sign-in');
+            // Silent restore failed - trigger interactive sign-in
+            await _connectDesktop();
+          }
+        } else if (_isMobile) {
+          // Mobile: Try silent sign-in first
+          final account = await _googleSignIn.signInSilently();
+          if (account == null) {
+            // Silent sign-in failed - trigger interactive sign-in
+            debugPrint('GoogleDriveStorage: Silent sign-in failed, triggering interactive sign-in');
+            final signedInAccount = await _googleSignIn.signIn();
+            if (signedInAccount == null) {
+              throw Exception('User cancelled sign-in');
+            }
+            await _initializeDriveApiFromMobile(signedInAccount);
+            await _setupMemoixFolder();
+          } else {
+            await _initializeDriveApiFromMobile(account);
+          }
+        }
+      } catch (e) {
+        throw Exception('Failed to establish Drive connection: $e');
+      }
+    }
+
     _ensureConnected();
 
     if (_driveApi == null) {
-      throw Exception('Drive API not initialized');
+      throw Exception('Drive API not initialized after connection attempt');
     }
 
     try {

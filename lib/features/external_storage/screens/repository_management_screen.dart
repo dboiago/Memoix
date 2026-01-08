@@ -192,13 +192,11 @@ class _RepositoryManagementScreenState
     return Scaffold(
       appBar: AppBar(
         title: const Text('Repositories'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.add),
-            tooltip: 'Create Repository',
-            onPressed: _createNewRepository,
-          ),
-        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _createNewRepository,
+        tooltip: 'Create Repository',
+        child: const Icon(Icons.add),
       ),
       body: FutureBuilder<List<DriveRepository>>(
         future: _repositoriesFuture,

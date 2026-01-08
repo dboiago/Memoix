@@ -421,8 +421,12 @@ class ExternalStorageService {
       
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
-      if (!silent) {
+      // Only show feedback if not silent AND there were actual changes
+      if (!silent && mergeResult.hasChanges) {
         MemoixSnackBar.show(mergeResult.summaryMessage);
+      } else if (!silent && !mergeResult.hasChanges) {
+        // Silent sync when no changes detected
+        debugPrint('ExternalStorageService: Sync complete, no changes detected');
       }
       
       return PullResult.fromMerge(mergeResult, remoteCount: bundle.totalCount);
