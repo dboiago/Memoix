@@ -228,14 +228,7 @@ class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
 
             // Info Box
             Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.primaryContainer.withOpacity(0.3),
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(
-                  color: theme.colorScheme.outline.withOpacity(0.3),
-                ),
-              ),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -243,26 +236,22 @@ class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
                     children: [
                       Icon(
                         Icons.info_outline,
-                        size: 18,
-                        color: theme.colorScheme.onSurfaceVariant,
+                        color: theme.colorScheme.primary,
                       ),
                       const SizedBox(width: 8),
                       Text(
                         'How Sharing Works',
-                        style: theme.textTheme.labelLarge,
+                        style: theme.textTheme.titleMedium,
                       ),
                     ],
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 12),
                   Text(
                     '• Invited users receive Editor access to your Google Drive folder\n'
                     '• They can add, edit, and delete recipes in the shared repository\n'
                     '• Links work offline - the app will verify access when online\n'
                     '• Remove access via Google Drive settings if needed',
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: theme.colorScheme.onSurfaceVariant,
-                      height: 1.5,
-                    ),
+                    style: theme.textTheme.bodyMedium,
                   ),
                 ],
               ),

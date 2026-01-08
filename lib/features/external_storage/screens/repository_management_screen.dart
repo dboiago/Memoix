@@ -193,10 +193,10 @@ class _RepositoryManagementScreenState
       appBar: AppBar(
         title: const Text('Repositories'),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: _createNewRepository,
-        tooltip: 'Create Repository',
-        child: const Icon(Icons.add),
+        icon: const Icon(Icons.add),
+        label: const Text('Add Repository'),
       ),
       body: FutureBuilder<List<DriveRepository>>(
         future: _repositoriesFuture,
@@ -305,17 +305,22 @@ class _RepositoryCard extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
-                                vertical: 2,
+                                vertical: 4,
                               ),
                               decoration: BoxDecoration(
-                                color: theme.colorScheme.primary,
-                                borderRadius: BorderRadius.circular(4),
+                                color: theme.colorScheme.secondary.withOpacity(0.15),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                  color: theme.colorScheme.secondary,
+                                  width: 1.5,
+                                ),
                               ),
                               child: Text(
                                 'ACTIVE',
                                 style: theme.textTheme.labelSmall?.copyWith(
-                                  color: theme.colorScheme.onPrimary,
-                                  fontWeight: FontWeight.bold,
+                                  color: theme.colorScheme.secondary,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w500,
                                 ),
                               ),
                             ),
