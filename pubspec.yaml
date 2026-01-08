@@ -61,6 +61,8 @@ dependencies:
   google_sign_in: ^6.2.2
   googleapis: ^14.0.0
   googleapis_auth: ^1.6.0
+  flutter_appauth: ^6.0.2
+  flutter_secure_storage: ^9.0.0
   
   # Desktop Window Management
   window_manager: ^0.4.3

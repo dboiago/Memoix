@@ -69,9 +69,6 @@ app.*.map.json
 **/android/*.jks
 *.keystore
 
-# OneDrive
-
-
 # Coverage
 coverage/
 
