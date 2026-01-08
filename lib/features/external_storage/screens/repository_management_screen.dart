@@ -5,6 +5,7 @@ import '../models/drive_repository.dart';
 import '../services/repository_manager.dart';
 import '../services/external_storage_service.dart';
 import '../providers/google_drive_storage.dart';
+import '../providers/one_drive_storage.dart';
 import 'share_repository_screen.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
@@ -34,6 +35,11 @@ class _RepositoryManagementScreenState
   }
 
   Future<void> _createNewRepository() async {
+    // Step 1: Select provider
+    final provider = await _showProviderSelectionDialog();
+    if (provider == null || !mounted) return;
+
+    // Step 2: Get repository name
     final nameController = TextEditingController();
 
     final name = await showDialog<String>(
@@ -63,26 +69,54 @@ class _RepositoryManagementScreenState
 
     if (name == null || name.isEmpty || !mounted) return;
 
+    // Step 3: Create repository with selected provider
     try {
       MemoixSnackBar.show('Creating repository...');
+
+      String folderId;
       
-      final storage = ref.read(googleDriveStorageProvider);
+      switch (provider) {
+        case StorageProvider.googleDrive:
+          final storage = ref.read(googleDriveStorageProvider);
+          folderId = await storage.createFolder(name);
+          
+          // Register and switch
+          await _manager.addRepository(
+            name: name,
+            folderId: folderId,
+            setAsActive: true,
+            isPendingVerification: false,
+            provider: StorageProvider.googleDrive,
+          );
+          
+          await storage.switchRepository(folderId, name);
+          break;
+          
+        case StorageProvider.oneDrive:
+          final storage = OneDriveStorage();
+          await storage.init();
+          
+          // Check if connected, sign in if needed
+          if (!storage.isConnected) {
+            await storage.signIn();
+          }
+          
+          folderId = await storage.createFolder(name);
+          
+          // Register and switch
+          await _manager.addRepository(
+            name: name,
+            folderId: folderId,
+            setAsActive: true,
+            isPendingVerification: false,
+            provider: StorageProvider.oneDrive,
+          );
+          
+          await storage.switchRepository(folderId, name);
+          break;
+      }
       
-      // Create a new folder in Google Drive
-      final folderId = await storage.createFolder(name);
-      
-      // Register in RepositoryManager and set as active
-      final newRepo = await _manager.addRepository(
-        name: name,
-        folderId: folderId,
-        setAsActive: true,  // Automatically make it active
-        isPendingVerification: false,
-      );
-      
-      // Switch to the new repository
-      await storage.switchRepository(folderId, name);
-      
-      // Immediately sync to populate the folder
+      // Sync recipes to new folder
       if (mounted) {
         MemoixSnackBar.show('Syncing recipes to "$name"...');
       }
@@ -100,6 +134,50 @@ class _RepositoryManagementScreenState
         MemoixSnackBar.showError('Failed to create repository: $e');
       }
     }
+  }
+
+  /// Show provider selection dialog
+  Future<StorageProvider?> _showProviderSelectionDialog() async {
+    final theme = Theme.of(context);
+    
+    return showDialog<StorageProvider>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Choose Storage Provider'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Google Drive option
+            ListTile(
+              leading: Icon(
+                Icons.cloud_outlined,
+                color: theme.colorScheme.onSurface,
+              ),
+              title: const Text('Google Drive'),
+              subtitle: const Text('Store in your personal Drive folder'),
+              onTap: () => Navigator.pop(ctx, StorageProvider.googleDrive),
+            ),
+            const SizedBox(height: 8),
+            // OneDrive option
+            ListTile(
+              leading: Icon(
+                Icons.grid_view,
+                color: theme.colorScheme.onSurface,
+              ),
+              title: const Text('Microsoft OneDrive'),
+              subtitle: const Text('Store in your OneDrive folder'),
+              onTap: () => Navigator.pop(ctx, StorageProvider.oneDrive),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+        ],
+      ),
+    );
   }
 
   Future<void> _switchRepository(DriveRepository repository) async {

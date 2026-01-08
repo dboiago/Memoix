@@ -7,7 +7,18 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../../../config/app_config.dart';
 import '../../../core/services/graph_http_client.dart';
 import 'cloud_storage_provider.dart';
+/// Custom exception for repository not found errors
+class RepositoryNotFoundException implements Exception {
+  final String repositoryName;
+  final String message;
 
+  RepositoryNotFoundException(this.repositoryName, {String? customMessage})
+      : message = customMessage ??
+            'Repository "$repositoryName" not found in My Files or Shared with Me';
+
+  @override
+  String toString() => 'RepositoryNotFoundException: $message';
+}
 /// OneDrive implementation of CloudStorageProvider
 /// 
 /// Uses Microsoft Graph API to interact with OneDrive storage.
@@ -20,6 +31,8 @@ class OneDriveStorage implements CloudStorageProvider {
   static const _keyTokenExpiry = 'onedrive_token_expiry';
   static const _keyFolderId = 'onedrive_folder_id';
   static const _keyFolderName = 'onedrive_folder_name';
+  static const _keyDriveId = 'onedrive_drive_id';
+  static const _keyTargetFolderId = 'onedrive_target_folder_id';
 
   // Microsoft Graph API endpoints
   static const _graphApiBase = 'https://graph.microsoft.com/v1.0';
@@ -39,13 +52,15 @@ class OneDriveStorage implements CloudStorageProvider {
   final FlutterAppAuth _appAuth = const FlutterAppAuth();
   final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
 
+  // State
   String? _accessToken;
   String? _refreshToken;
   DateTime? _tokenExpiry;
-  String? _activeFolderId;
+  String? _activeFolderId;  // Current repository folder ID
   String? _activeFolderName;
+  String? _targetDriveId;   // Drive ID where the repository folder resides
+  String? _targetFolderId;  // Folder ID within the drive (same as _activeFolderId)
   GraphHttpClient? _httpClient;
-
   bool _isConnected = false;
 
   // --- CloudStorageProvider interface ---
@@ -57,6 +72,8 @@ class OneDriveStorage implements CloudStorageProvider {
     _refreshToken = await _secureStorage.read(key: _keyRefreshToken);
     _activeFolderId = await _secureStorage.read(key: _keyFolderId);
     _activeFolderName = await _secureStorage.read(key: _keyFolderName);
+    _targetDriveId = await _secureStorage.read(key: _keyDriveId);
+    _targetFolderId = await _secureStorage.read(key: _keyTargetFolderId);
 
     final expiryStr = await _secureStorage.read(key: _keyTokenExpiry);
     if (expiryStr != null) {
@@ -198,26 +215,41 @@ class OneDriveStorage implements CloudStorageProvider {
     _ensureConnected();
 
     try {
-      // Verify folder exists
-      final url = Uri.parse('$_graphApiBase/me/drive/items/$folderId');
-      final response = await _httpClient!.get(url);
+      // Use _findRepository to locate the folder in My Files or Shared with Me
+      final repoInfo = await _findRepository(name);
+      
+      final driveId = repoInfo['driveId'] as String;
+      final targetFolderId = repoInfo['folderId'] as String;
+      final isShared = repoInfo['isShared'] as bool;
+
+      // Verify folder exists by fetching its metadata
+      final verifyUrl = Uri.parse('$_graphApiBase/drives/$driveId/items/$targetFolderId');
+      final response = await _httpClient!.get(verifyUrl);
 
       if (response.statusCode == 200) {
-        _activeFolderId = folderId;
+        _activeFolderId = targetFolderId;
         _activeFolderName = name;
+        _targetDriveId = driveId;
+        _targetFolderId = targetFolderId;
 
         // Persist to secure storage
-        await _secureStorage.write(key: _keyFolderId, value: folderId);
+        await _secureStorage.write(key: _keyFolderId, value: targetFolderId);
         await _secureStorage.write(key: _keyFolderName, value: name);
+        await _secureStorage.write(key: _keyDriveId, value: driveId);
+        await _secureStorage.write(key: _keyTargetFolderId, value: targetFolderId);
 
-        debugPrint('OneDriveStorage: Switched to folder "$name" ($folderId)');
+        final location = isShared ? 'Shared with Me' : 'My Files';
+        debugPrint('OneDriveStorage: Switched to folder "$name" ($targetFolderId) in $location (drive: $driveId)');
       } else if (response.statusCode == 404) {
-        throw Exception('Folder not found: $folderId');
+        throw Exception('Folder not found: $name ($folderId)');
       } else {
         throw Exception(
           'Failed to verify folder: ${response.statusCode} ${response.body}',
         );
       }
+    } on RepositoryNotFoundException {
+      // Re-throw with clear message
+      rethrow;
     } catch (e) {
       debugPrint('OneDriveStorage: switchRepository error: $e');
       rethrow;
@@ -296,17 +328,108 @@ class OneDriveStorage implements CloudStorageProvider {
     }
   }
 
+  /// Find a repository folder by name in My Files or Shared with Me
+  /// 
+  /// First searches in the user's personal drive (/me/drive/root/children).
+  /// If not found, searches in shared items (/me/drive/sharedWithMe).
+  /// 
+  /// For shared items, extracts the drive ID and folder ID from remoteItem.
+  /// Returns a map with 'driveId', 'folderId', and 'isShared' keys.
+  Future<Map<String, dynamic>> _findRepository(String repositoryName) async {
+    _ensureConnected();
+
+    try {
+      // Step 1: Search in My Files (personal drive root)
+      debugPrint('OneDriveStorage: Searching for "$repositoryName" in My Files...');
+      
+      final myFilesUrl = Uri.parse(
+        '$_graphApiBase/me/drive/root/children?\$filter=name eq \'$repositoryName\'',
+      );
+      final myFilesResponse = await _httpClient!.get(myFilesUrl);
+
+      if (myFilesResponse.statusCode == 200) {
+        final myFilesData = jsonDecode(myFilesResponse.body) as Map<String, dynamic>;
+        final items = myFilesData['value'] as List<dynamic>;
+
+        if (items.isNotEmpty) {
+          final folder = items.first as Map<String, dynamic>;
+          final folderId = folder['id'] as String;
+          
+          // Get the drive ID from parentReference
+          final parentRef = folder['parentReference'] as Map<String, dynamic>?;
+          final driveId = parentRef?['driveId'] as String? ?? 'me';
+
+          debugPrint('OneDriveStorage: Found "$repositoryName" in My Files (driveId: $driveId, folderId: $folderId)');
+          
+          return {
+            'driveId': driveId,
+            'folderId': folderId,
+            'isShared': false,
+          };
+        }
+      }
+
+      // Step 2: Search in Shared with Me
+      debugPrint('OneDriveStorage: Not found in My Files, searching Shared with Me...');
+      
+      final sharedUrl = Uri.parse('$_graphApiBase/me/drive/sharedWithMe');
+      final sharedResponse = await _httpClient!.get(sharedUrl);
+
+      if (sharedResponse.statusCode == 200) {
+        final sharedData = jsonDecode(sharedResponse.body) as Map<String, dynamic>;
+        final items = sharedData['value'] as List<dynamic>;
+
+        for (final item in items) {
+          final itemMap = item as Map<String, dynamic>;
+          final name = itemMap['name'] as String?;
+
+          if (name == repositoryName) {
+            // Extract drive and folder IDs from remoteItem
+            final remoteItem = itemMap['remoteItem'] as Map<String, dynamic>?;
+            
+            if (remoteItem != null) {
+              final parentRef = remoteItem['parentReference'] as Map<String, dynamic>?;
+              final driveId = parentRef?['driveId'] as String?;
+              final folderId = remoteItem['id'] as String?;
+
+              if (driveId != null && folderId != null) {
+                debugPrint('OneDriveStorage: Found "$repositoryName" in Shared with Me (driveId: $driveId, folderId: $folderId)');
+                
+                return {
+                  'driveId': driveId,
+                  'folderId': folderId,
+                  'isShared': true,
+                };
+              }
+            }
+          }
+        }
+      }
+
+      // Step 3: Not found in either location
+      throw RepositoryNotFoundException(repositoryName);
+      
+    } catch (e) {
+      if (e is RepositoryNotFoundException) {
+        rethrow;
+      }
+      debugPrint('OneDriveStorage: _findRepository error: $e');
+      rethrow;
+    }
+  }
+
   /// Upload a file to the active OneDrive folder
   Future<void> uploadFile(String fileName, String content) async {
     _ensureConnected();
 
-    if (_activeFolderId == null) {
+    if (_targetDriveId == null || _targetFolderId == null) {
       throw Exception('No active folder selected');
     }
 
     try {
+      // Use ID-based URL with drive and folder IDs
       final url = Uri.parse(
-        '$_graphApiBase/me/drive/items/$_activeFolderId:/$fileName:/content',
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$fileName:/content',
       );
 
       final response = await _httpClient!.put(
@@ -332,13 +455,14 @@ class OneDriveStorage implements CloudStorageProvider {
   Future<String?> downloadFile(String fileName) async {
     _ensureConnected();
 
-    if (_activeFolderId == null) {
+    if (_targetDriveId == null || _targetFolderId == null) {
       throw Exception('No active folder selected');
     }
 
     try {
+      // Use ID-based URL with drive and folder IDs
       final url = Uri.parse(
-        '$_graphApiBase/me/drive/items/$_activeFolderId:/$fileName:/content',
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$fileName:/content',
       );
 
       final response = await _httpClient!.get(url);
