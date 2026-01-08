@@ -344,6 +344,7 @@ class _RepositoryManagementScreenState
                 onShare: () => _shareRepository(repo),
                 onDelete: () => _deleteRepository(repo),
                 onVerify: () => _verifyRepository(repo),
+                onRefresh: _loadRepositories,
               );
             },
           );
@@ -353,12 +354,13 @@ class _RepositoryManagementScreenState
   }
 }
 
-class _RepositoryCard extends StatelessWidget {
+class _RepositoryCard extends ConsumerWidget {
   final DriveRepository repository;
   final VoidCallback onSwitch;
   final VoidCallback onShare;
   final VoidCallback onDelete;
   final VoidCallback onVerify;
+  final VoidCallback onRefresh;
 
   const _RepositoryCard({
     required this.repository,
@@ -366,10 +368,11 @@ class _RepositoryCard extends StatelessWidget {
     required this.onShare,
     required this.onDelete,
     required this.onVerify,
+    required this.onRefresh,
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final syncStatus = ref.watch(syncStatusProvider);
 
@@ -698,7 +701,7 @@ class _RepositoryCard extends StatelessWidget {
                   onSelectionChanged: (selection) async {
                     final service = ref.read(externalStorageServiceProvider);
                     await service.setSyncMode(selection.first);
-                    setState(() {});
+                    onRefresh();
                   },
                   showSelectedIcon: false,
                 ),
@@ -728,7 +731,7 @@ class _RepositoryCard extends StatelessWidget {
             onPressed: isDisabled ? null : () async {
               final service = ref.read(externalStorageServiceProvider);
               await service.push(silent: false);
-              _loadRepositories();
+              onRefresh();
             },
             icon: const Icon(Icons.cloud_upload_outlined),
             label: Text(
@@ -742,7 +745,7 @@ class _RepositoryCard extends StatelessWidget {
             onPressed: isDisabled ? null : () async {
               final service = ref.read(externalStorageServiceProvider);
               await service.pull(silent: false);
-              _loadRepositories();
+              onRefresh();
             },
             icon: const Icon(Icons.cloud_download_outlined),
             label: Text(
