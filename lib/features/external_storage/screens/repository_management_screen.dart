@@ -472,77 +472,67 @@ class _RepositoryCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                                    color: theme.colorScheme.onSurfaceVariant,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ],
-                      ),
+                  // Settings icon for active repository
+                  PopupMenuButton<String>(
+                    icon: Icon(
+                      Icons.settings,
+                      color: theme.colorScheme.onSurface,
                     ),
-                    // Settings icon for active repository
-                    PopupMenuButton<String>(
-                      icon: Icon(
-                        Icons.settings,
-                        color: theme.colorScheme.onSurface,
-                      ),
-                      tooltip: 'Repository Settings',
-                      itemBuilder: (context) => [
-                        if (!repository.isPendingVerification)
-                          const PopupMenuItem(
-                            value: 'share',
-                            child: ListTile(
-                              leading: Icon(Icons.share),
-                              title: Text('Share'),
-                              contentPadding: EdgeInsets.zero,
-                            ),
-                          ),
-                        if (repository.isPendingVerification)
-                          const PopupMenuItem(
-                            value: 'verify',
-                            child: ListTile(
-                              leading: Icon(Icons.refresh),
-                              title: Text('Verify Access'),
-                              contentPadding: EdgeInsets.zero,
-                            ),
-                          ),
-                        const PopupMenuDivider(),
-                        PopupMenuItem(
-                          value: 'disconnect',
+                    tooltip: 'Repository Settings',
+                    itemBuilder: (context) => [
+                      if (!repository.isPendingVerification)
+                        const PopupMenuItem(
+                          value: 'share',
                           child: ListTile(
-                            leading: Icon(
-                              Icons.link_off,
-                              color: theme.colorScheme.secondary,
-                            ),
-                            title: Text(
-                              'Disconnect',
-                              style: TextStyle(
-                                color: theme.colorScheme.secondary,
-                              ),
-                            ),
+                            leading: Icon(Icons.share),
+                            title: Text('Share'),
                             contentPadding: EdgeInsets.zero,
                           ),
                         ),
-                      ],
-                      onSelected: (value) {
-                        switch (value) {
-                          case 'share':
-                            onShare();
-                            break;
-                          case 'verify':
-                            onVerify();
-                            break;
-                          case 'disconnect':
-                            onDelete();
-                            break;
-                        }
-                      },
-                    ),
-                  ],
-                ),
-              ],
-            ),
+                      if (repository.isPendingVerification)
+                        const PopupMenuItem(
+                          value: 'verify',
+                          child: ListTile(
+                            leading: Icon(Icons.refresh),
+                            title: Text('Verify Access'),
+                            contentPadding: EdgeInsets.zero,
+                          ),
+                        ),
+                      const PopupMenuDivider(),
+                      PopupMenuItem(
+                        value: 'disconnect',
+                        child: ListTile(
+                          leading: Icon(
+                            Icons.link_off,
+                            color: theme.colorScheme.secondary,
+                          ),
+                          title: Text(
+                            'Disconnect',
+                            style: TextStyle(
+                              color: theme.colorScheme.secondary,
+                            ),
+                          ),
+                          contentPadding: EdgeInsets.zero,
+                        ),
+                      ),
+                    ],
+                    onSelected: (value) {
+                      switch (value) {
+                        case 'share':
+                          onShare();
+                          break;
+                        case 'verify':
+                          onVerify();
+                          break;
+                        case 'disconnect':
+                          onDelete();
+                          break;
+                      }
+                    },
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       );
