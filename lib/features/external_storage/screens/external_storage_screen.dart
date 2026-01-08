@@ -6,6 +6,7 @@ import '../models/merge_result.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
+import '../providers/one_drive_storage.dart';
 import '../services/external_storage_service.dart';
 
 /// External Storage settings screen
@@ -23,6 +24,9 @@ class ExternalStorageScreen extends ConsumerStatefulWidget {
 class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
   /// Google Drive provider instance
   GoogleDriveStorage? _googleDrive;
+  
+  /// OneDrive provider instance
+  OneDriveStorage? _oneDrive;
 
   /// Loading state for connection operations
   bool _isConnecting = false;
@@ -120,6 +124,13 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
           name: 'Google Drive',
           description: 'Store in your personal Drive folder',
           onConnect: _connectGoogleDrive,
+        ),
+        _buildProviderTile(
+          theme: theme,
+          icon: Icons.grid_view,
+          name: 'Microsoft OneDrive',
+          description: 'Store in your OneDrive folder',
+          onConnect: _connectOneDrive,
         ),
         // NOTE: Other providers (GitHub, iCloud) hidden until implemented
         // Implementation remains provider-agnostic internally
@@ -422,6 +433,36 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
     } catch (e) {
       if (mounted) {
         MemoixSnackBar.showError('Connection failed: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _isConnecting = false);
+      }
+    }
+  }
+
+  /// Connect to Microsoft OneDrive
+  Future<void> _connectOneDrive() async {
+    setState(() => _isConnecting = true);
+
+    try {
+      // Initialize OneDrive storage
+      _oneDrive = OneDriveStorage();
+      await _oneDrive!.init();
+      
+      // Attempt sign in
+      await _oneDrive!.signIn();
+
+      if (_oneDrive!.isConnected) {
+        // Note: OneDrive integration is in progress
+        // Full ExternalStorageService integration will be completed in a future update
+        if (mounted) {
+          MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        MemoixSnackBar.showError('OneDrive connection failed: $e');
       }
     } finally {
       if (mounted) {
