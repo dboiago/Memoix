@@ -1,9 +1,11 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 
 import '../models/drive_repository.dart';
+import '../providers/one_drive_storage.dart';
 
 /// Manages cloud storage repositories (multiple storage locations)
 /// Supports multiple providers (Google Drive, OneDrive, etc.)
@@ -53,15 +55,42 @@ class RepositoryManager {
     // Get the newly activated repository
     final activeRepo = updated.firstWhere((r) => r.id == repositoryId);
     
-    // TODO: Initialize appropriate provider based on activeRepo.provider
-    // switch (activeRepo.provider) {
-    //   case StorageProvider.googleDrive:
-    //     // GoogleDriveStorage is already initialized via provider
-    //     break;
-    //   case StorageProvider.oneDrive:
-    //     // Initialize OneDriveStorage here
-    //     break;
-    // }
+    // Initialize appropriate provider based on activeRepo.provider
+    try {
+      switch (activeRepo.provider) {
+        case StorageProvider.googleDrive:
+          // GoogleDriveStorage is already initialized via Riverpod provider
+          // The UI layer handles switching via googleDriveStorageProvider
+          debugPrint('RepositoryManager: Switched to Google Drive repository: ${activeRepo.name}');
+          break;
+          
+        case StorageProvider.oneDrive:
+          // Initialize OneDrive storage
+          final oneDriveStorage = OneDriveStorage();
+          await oneDriveStorage.init();
+          
+          // Check if connected
+          if (await oneDriveStorage.isConnected) {
+            // Switch to the repository folder
+            await oneDriveStorage.switchRepository(
+              activeRepo.folderId,
+              activeRepo.name,
+            );
+            
+            debugPrint('RepositoryManager: Switched to OneDrive repository: ${activeRepo.name}');
+            
+            // TODO: Trigger sync via ExternalStorageService
+            // This should be handled by the UI layer that has access to Riverpod providers
+            debugPrint('RepositoryManager: OneDrive sync should be triggered by UI layer');
+          } else {
+            debugPrint('RepositoryManager: OneDrive not connected, skipping sync');
+          }
+          break;
+      }
+    } catch (e) {
+      debugPrint('RepositoryManager: Error switching to repository: $e');
+      rethrow;
+    }
   }
 
   /// Add a new repository
