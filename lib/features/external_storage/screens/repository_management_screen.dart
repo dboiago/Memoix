@@ -370,266 +370,149 @@ class _RepositoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    // Active repository: prominent UI with direct access
+    // Active repository: Expanded card matching External Storage screen style
     if (repository.isActive) {
-      return Card(
-        margin: const EdgeInsets.only(bottom: 12),
-        elevation: 2,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-          side: BorderSide(
-            color: theme.colorScheme.secondary.withOpacity(0.3),
-            width: 1.5,
-          ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Flexible(
-                              child: Text(
-                                repository.name,
-                                style: theme.textTheme.titleMedium?.copyWith(
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 8),
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 4,
-                              ),
-                              decoration: BoxDecoration(
-                                color: theme.colorScheme.secondary.withOpacity(0.15),
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all(
-                                  color: theme.colorScheme.secondary,
-                                  width: 1.5,
-                                ),
-                              ),
-                              child: Text(
-                                'Active',
-                                style: theme.textTheme.labelSmall?.copyWith(
-                                  color: theme.colorScheme.secondary,
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 4),
-                        if (repository.isPendingVerification) ...[
-                          Row(
-                            children: [
-                              Icon(
-                                repository.accessDenied
-                                    ? Icons.block
-                                    : Icons.schedule,
-                                size: 16,
-                                color: theme.colorScheme.secondary,
-                              ),
-                              const SizedBox(width: 4),
-                              Flexible(
-                                child: Text(
-                                  repository.accessDenied
-                                      ? 'Access denied - Tap to resolve'
-                                      : 'Waiting for connection',
-                                  style: theme.textTheme.bodySmall?.copyWith(
-                                    color: theme.colorScheme.secondary,
-                                  ),
-                                ),
-                              ),
-                            ],
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        child: Card(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Provider header
+                Row(
+                  children: [
+                    Icon(
+                      Icons.cloud_outlined,
+                      color: theme.colorScheme.primary,
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            repository.name,
+                            style: theme.textTheme.titleMedium,
                           ),
-                        ] else ...[
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.cloud_done,
-                                size: 14,
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                              const SizedBox(width: 4),
-                              Text(
-                                _getSyncStatusText(repository),
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  color: theme.colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                            ],
+                          Text(
+                            repository.provider.displayName,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
                           ),
                         ],
-                      ],
+                      ),
+                    ),
+                  ],
+                ),
+                
+                const SizedBox(height: 8),
+                
+                // Last synced or verification status
+                if (repository.isPendingVerification) ...[
+                  Text(
+                    repository.accessDenied
+                        ? 'Access denied - Tap to resolve'
+                        : 'Waiting for connection',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.secondary,
                     ),
                   ),
-                  // Navigate to settings for active repository
-                  IconButton(
-                    icon: const Icon(Icons.settings),
-                    tooltip: 'Repository Settings',
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ExternalStorageScreen(),
-                        ),
-                      );
-                    },
+                ] else ...[
+                  Text(
+                    _getSyncStatusText(repository),
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
                   ),
                 ],
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       );
     }
 
-    // Inactive repository: minimal clean UI
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: InkWell(
-        onTap: onSwitch,
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      repository.name,
-                      style: theme.textTheme.titleMedium,
-                    ),
-                    const SizedBox(height: 4),
-                    if (repository.isPendingVerification) ...[
-                      Row(
-                        children: [
-                          Icon(
-                            repository.accessDenied
-                                ? Icons.block
-                                : Icons.schedule,
-                            size: 14,
+    // Inactive repository: Simple ListTile-like layout
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      child: Card(
+        child: InkWell(
+          onTap: onSwitch,
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        repository.name,
+                        style: theme.textTheme.titleMedium,
+                      ),
+                      const SizedBox(height: 4),
+                      if (repository.isPendingVerification) ...[
+                        Text(
+                          repository.accessDenied
+                              ? 'Access denied'
+                              : 'Pending verification',
+                          style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.secondary,
                           ),
-                          const SizedBox(width: 4),
-                          Flexible(
-                            child: Text(
-                              repository.accessDenied
-                                  ? 'Access denied'
-                                  : 'Pending verification',
-                              style: theme.textTheme.bodySmall?.copyWith(
-                                color: theme.colorScheme.secondary,
-                              ),
-                            ),
+                        ),
+                      ] else ...[
+                        Text(
+                          _getSyncStatusText(repository),
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+                // Three-dot menu for inactive repositories
+                PopupMenuButton<String>(
+                  icon: const Icon(Icons.more_vert),
+                  onSelected: (value) {
+                    switch (value) {
+                      case 'activate':
+                        onSwitch();
+                        break;
+                      case 'delete':
+                        onDelete();
+                        break;
+                    }
+                  },
+                  itemBuilder: (context) => [
+                    const PopupMenuItem(
+                      value: 'activate',
+                      child: Row(
+                        children: [
+                          Icon(Icons.check_circle_outline, size: 20),
+                          SizedBox(width: 12),
+                          Text('Set as Active'),
                         ],
                       ),
-                    ] else ...[
-                      Text(
-                        _getSyncStatusText(repository),
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
-                        ),
+                    ),
+                    const PopupMenuItem(
+                      value: 'delete',
+                      child: Row(
+                        children: [
+                          Icon(Icons.delete_outline, size: 20),
+                          SizedBox(width: 12),
+                          Text('Remove'),
+                        ],
                       ),
-                    ],
+                    ),
                   ],
                 ),
-              ),
-              // Three-dot menu for inactive repositories
-              PopupMenuButton<String>(
-                icon: const Icon(Icons.more_vert),
-                tooltip: 'More options',
-                itemBuilder: (context) => [
-                  const PopupMenuItem(
-                    value: 'activate',
-                    child: ListTile(
-                      leading: Icon(Icons.check_circle_outline),
-                      title: Text('Set as Active'),
-                      contentPadding: EdgeInsets.zero,
-                    ),
-                  ),
-                  const PopupMenuItem(
-                    value: 'settings',
-                    child: ListTile(
-                      leading: Icon(Icons.settings),
-                      title: Text('Settings'),
-                      contentPadding: EdgeInsets.zero,
-                    ),
-                  ),
-                  if (!repository.isPendingVerification)
-                    const PopupMenuItem(
-                      value: 'share',
-                      child: ListTile(
-                        leading: Icon(Icons.share),
-                        title: Text('Share'),
-                        contentPadding: EdgeInsets.zero,
-                      ),
-                    ),
-                  if (repository.isPendingVerification)
-                    const PopupMenuItem(
-                      value: 'verify',
-                      child: ListTile(
-                        leading: Icon(Icons.refresh),
-                        title: Text('Verify Access'),
-                        contentPadding: EdgeInsets.zero,
-                      ),
-                    ),
-                  const PopupMenuDivider(),
-                  PopupMenuItem(
-                    value: 'remove',
-                    child: ListTile(
-                      leading: Icon(
-                        repository.isPendingVerification
-                            ? Icons.link_off
-                            : Icons.delete_outline,
-                        color: theme.colorScheme.secondary,
-                      ),
-                      title: Text(
-                        repository.isPendingVerification ? 'Disconnect' : 'Remove',
-                        style: TextStyle(
-                          color: theme.colorScheme.secondary,
-                        ),
-                      ),
-                      contentPadding: EdgeInsets.zero,
-                    ),
-                  ),
-                ],
-                onSelected: (value) {
-                  switch (value) {
-                    case 'activate':
-                      onSwitch();
-                      break;
-                    case 'settings':
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ExternalStorageScreen(),
-                        ),
-                      );
-                      break;
-                    case 'share':
-                      onShare();
-                      break;
-                    case 'verify':
-                      onVerify();
-                      break;
-                    case 'remove':
-                      onDelete();
-                      break;
-                  }
-                },
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

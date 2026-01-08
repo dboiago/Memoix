@@ -549,10 +549,20 @@ class ExternalStorageService {
           await db.recipes.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Remote is newer: update local
-          remote.id = existing.id; // Preserve local ID
-          await db.recipes.put(remote);
-          updated++;
+          // Remote is newer: check if content actually differs
+          // Compare JSON size as a quick content check to avoid false positives
+          final remoteSize = jsonEncode(remote.toJson()).length;
+          final existingSize = jsonEncode(existing.toJson()).length;
+          
+          if (remoteSize != existingSize) {
+            // Content differs: update local
+            remote.id = existing.id; // Preserve local ID
+            await db.recipes.put(remote);
+            updated++;
+          } else {
+            // Same size, likely identical content: keep local
+            unchanged++;
+          }
         } else {
           // Local is same or newer: keep local
           unchanged++;
@@ -568,9 +578,17 @@ class ExternalStorageService {
     int added = 0, updated = 0, unchanged = 0;
 
     await db.writeTxn(() async {
-      for (final remote in remotePizzas) {
-        final existing = await db.pizzas
-            .filter()
+      for // Check if content differs by comparing JSON size
+          final remoteSize = jsonEncode(remote.toJson()).length;
+          final existingSize = jsonEncode(existing.toJson()).length;
+          
+          if (remoteSize != existingSize) {
+            remote.id = existing.id;
+            await db.pizzas.put(remote);
+            updated++;
+          } else {
+            unchanged++;
+          })
             .uuidEqualTo(remote.uuid)
             .findFirst();
 
@@ -739,6 +757,13 @@ class ExternalStorageService {
   Future<void> _setLastSyncTime(DateTime time) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_PrefKeys.lastSyncTime, time.toUtc().toIso8601String());
+    
+    // Also update the active repository's lastSynced field
+    final manager = RepositoryManager();
+    final activeRepo = await manager.getActiveRepository();
+    if (activeRepo != null) {
+      await manager.updateLastSynced(activeRepo.id);
+    }
   }
 
   /// Get device name for meta file

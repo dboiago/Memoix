@@ -9,9 +9,15 @@ import '../providers/one_drive_storage.dart';
 
 /// Manages cloud storage repositories (multiple storage locations)
 /// Supports multiple providers (Google Drive, OneDrive, etc.)
-class RepositoryManager {
+class RepositoryManager extends ChangeNotifier {
   static const _keyRepositories = 'drive_repositories';
   static const _uuid = Uuid();
+
+  /// Current active repository (null during switching)
+  DriveRepository? _currentRepository;
+  
+  /// Get the current active repository (may be null during switch)
+  DriveRepository? get currentRepository => _currentRepository;
 
   /// Whether a repository switch is currently in progress
   bool _isSwitching = false;
@@ -52,11 +58,11 @@ class RepositoryManager {
   /// When switching repositories, the provider type is checked to determine
   /// which cloud storage implementation to use.
   /// 
-  /// This method ensures strict ordering:
-  /// 1. Set switching flag
+  /// This method uses null safety pattern:
+  /// 1. Set _currentRepository = null and notify listeners
   /// 2. Initialize provider fully
-  /// 3. Update repository state
-  /// 4. Clear switching flag
+  /// 3. Update repository state in storage
+  /// 4. Set _currentRepository to new repo and notify
   Future<void> setActiveRepository(String repositoryId) async {
     if (_isSwitching) {
       throw Exception('Repository switch already in progress');
@@ -76,6 +82,10 @@ class RepositoryManager {
     
     // Get the target repository before updating state
     final activeRepo = repos.firstWhere((r) => r.id == repositoryId);
+    
+    // Step 1: Clear current repository and notify UI (forces loading state)
+    _currentRepository = null;
+    notifyListeners();
     
     // Initialize appropriate provider based on activeRepo.provider
     // This MUST complete before updating repository state
@@ -107,6 +117,8 @@ class RepositoryManager {
             debugPrint('RepositoryManager: OneDrive repository initialized and ready');
           } else {
             _isSwitching = false;
+            _currentRepository = previousActiveRepo; // Restore
+            notifyListeners();
             debugPrint('RepositoryManager: OneDrive not connected, user needs to sign in');
             throw Exception('OneDrive not connected. Please sign in first.');
           }
@@ -119,6 +131,10 @@ class RepositoryManager {
       }).toList();
       await saveRepositories(updated);
       
+      // Step 2: Set new active repository and notify UI
+      _currentRepository = activeRepo;
+      notifyListeners();
+      
       debugPrint('RepositoryManager: Successfully switched to ${activeRepo.name}');
       
     } catch (e) {
@@ -130,6 +146,8 @@ class RepositoryManager {
           return r.copyWith(isActive: r.id == previousActiveRepo!.id);
         }).toList();
         await saveRepositories(rolledBack);
+        _currentRepository = previousActiveRepo;
+        notifyListeners();
         debugPrint('RepositoryManager: Rolled back to previous repository: ${previousActiveRepo.name}');
       }
       
