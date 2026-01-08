@@ -13,16 +13,32 @@ class AppConfig {
   /// 
   /// To set this value, add to .env file:
   /// ONEDRIVE_CLIENT_ID=your-client-id-here
-  static String get oneDriveClientId {
-    final clientId = dotenv.maybeGet('ONEDRIVE_CLIENT_ID');
-    if (clientId == null || clientId.isEmpty) {
-      throw Exception(
-        'OneDrive Client ID not configured. '
-        'Please add ONEDRIVE_CLIENT_ID to your .env file.',
-      );
+    static String get oneDriveClientId {
+        // 1. RELEASE MODE: Strict. Must use .env (Official)
+        if (kReleaseMode) {
+        final clientId = dotenv.maybeGet('ONEDRIVE_CLIENT_ID');
+        if (clientId == null || clientId.isEmpty) {
+            throw Exception(
+            'CRITICAL: OneDrive Client ID missing for Release build. '
+            'Ensure ONEDRIVE_CLIENT_ID is in your secure .env file.',
+            );
+        }
+        return clientId;
+        } 
+        
+        // 2. DEBUG/PROFILE MODE: Flexible. 
+        // Try .env first (so you can test official flow), fall back to Hardcoded Dev Key.
+        else {
+        final envId = dotenv.maybeGet('ONEDRIVE_CLIENT_ID');
+        if (envId != null && envId.isNotEmpty) {
+            return envId;
+        }
+        
+        // FALLBACK: The "Open Source" / Dev Key
+        // This allows anyone to clone and run the app without your .env file.
+        return '75b201da-5de0-416e-b908-a7a3899dbc9d'; 
+        }
     }
-    return clientId;
-  }
 
   /// OneDrive Redirect URI for OAuth callback
   /// 
