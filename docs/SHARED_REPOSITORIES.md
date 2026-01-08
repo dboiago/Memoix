@@ -5,7 +5,26 @@ This document tracks the implementation of the Shared Repository feature, which 
 
 ---
 
-## ⚡ Latest Update: Sync Time Refactor (Jan 8, 2026)
+## ⚡ Latest Update: Auto-Sync & UX Polish (Jan 8, 2026)
+
+**Motivation:** Repository creation UX gap - new repos sat at "Ready to sync" requiring manual action.
+
+### Changes Made:
+
+#### 1. Auto-Switch & Sync on Create (`repository_management_screen.dart`)
+When creating a new repository:
+1. **Auto-activates** the new repository (`setAsActive: true`)
+2. **Auto-switches** GoogleDriveStorage to the new folder
+3. **Immediately syncs** local recipes to the new folder via `service.push()`
+4. **Result:** New repository shows "Last synced: Just now" instead of requiring manual sync
+
+#### 2. Improved Empty State Label
+- **Old:** "Ready to sync" (ambiguous)
+- **New:** "New • Not synced yet" (clearer for inactive repos)
+
+---
+
+## Previous Update: Sync Time Refactor (Jan 8, 2026)
 
 **Motivation:** Users found "Last verified: Never" confusing. Verification is technical infrastructure; users care about sync freshness.
 
@@ -22,10 +41,10 @@ This document tracks the implementation of the Shared Repository feature, which 
 - **Added to `RepositoryManager`:** `updateLastSynced(repositoryId)` method
 
 #### 3. UI (`repository_management_screen.dart`)
-**Subtitle Logic** (replaces "Last verified: Never"):
-- **Pending + Access Denied:** "Access denied - Tap to resolve" (red block icon)
+**Subtitle Logic:**
+- **Pending + Access Denied:** "Access denied - Tap to resolve" (block icon)
 - **Pending (not denied):** "Waiting for connection" (schedule icon)
-- **Verified + Never Synced:** "Ready to sync"
+- **Verified + Never Synced:** "New • Not synced yet"
 - **Verified + Synced:** "Last synced: [formatted time]"
 
 **Time Format Examples:**
@@ -35,9 +54,6 @@ This document tracks the implementation of the Shared Repository feature, which 
 - `Yesterday at 11:45 AM`
 - `3d ago` (< 7 days)
 - `8/1/2026` (older dates)
-
-**Icon Changes:**
-- Pending (not denied): `Icons.schedule` (was `Icons.warning_amber`)
 
 ---
 

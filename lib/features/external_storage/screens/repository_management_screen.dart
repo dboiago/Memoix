@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/drive_repository.dart';
 import '../services/repository_manager.dart';
-import '../providers/google_drive_storage.dart';
+import '../services/external_storage_service.dart';
 import '../providers/google_drive_storage.dart';
 import 'share_repository_screen.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -71,17 +71,29 @@ class _RepositoryManagementScreenState
       // Create a new folder in Google Drive
       final folderId = await storage.createFolder(name);
       
-      // Register in RepositoryManager
-      await _manager.addRepository(
+      // Register in RepositoryManager and set as active
+      final newRepo = await _manager.addRepository(
         name: name,
         folderId: folderId,
+        setAsActive: true,  // Automatically make it active
         isPendingVerification: false,
       );
+      
+      // Switch to the new repository
+      await storage.switchRepository(folderId, name);
+      
+      // Immediately sync to populate the folder
+      if (mounted) {
+        MemoixSnackBar.show('Syncing recipes to "$name"...');
+      }
+      
+      final service = ref.read(externalStorageServiceProvider);
+      await service.push(silent: true);
       
       _loadRepositories();
       
       if (mounted) {
-        MemoixSnackBar.showSuccess('Repository "$name" created');
+        MemoixSnackBar.showSuccess('Repository "$name" created and synced');
       }
     } catch (e) {
       if (mounted) {
@@ -454,7 +466,7 @@ class _RepositoryCard extends StatelessWidget {
   /// Get sync status text based on repository state
   String _getSyncStatusText(DriveRepository repo) {
     if (repo.lastSynced == null) {
-      return 'Ready to sync';
+      return 'New • Not synced yet';
     }
     return 'Last synced: ${_formatSyncTime(repo.lastSynced!)}';
   }
