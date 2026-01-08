@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/drive_repository.dart';
-import '../services/repository_manager.dart';
-import '../services/external_storage_service.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
+import '../services/external_storage_service.dart';
+import '../services/repository_manager.dart';
+import 'external_storage_screen.dart';
 import 'share_repository_screen.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 
 class RepositoryManagementScreen extends ConsumerStatefulWidget {
   const RepositoryManagementScreen({super.key});
@@ -472,62 +473,16 @@ class _RepositoryCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // Settings icon for active repository
-                  PopupMenuButton<String>(
-                    icon: Icon(
-                      Icons.settings,
-                      color: theme.colorScheme.onSurface,
-                    ),
+                  // Navigate to settings for active repository
+                  IconButton(
+                    icon: const Icon(Icons.settings),
                     tooltip: 'Repository Settings',
-                    itemBuilder: (context) => [
-                      if (!repository.isPendingVerification)
-                        const PopupMenuItem(
-                          value: 'share',
-                          child: ListTile(
-                            leading: Icon(Icons.share),
-                            title: Text('Share'),
-                            contentPadding: EdgeInsets.zero,
-                          ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const ExternalStorageScreen(),
                         ),
-                      if (repository.isPendingVerification)
-                        const PopupMenuItem(
-                          value: 'verify',
-                          child: ListTile(
-                            leading: Icon(Icons.refresh),
-                            title: Text('Verify Access'),
-                            contentPadding: EdgeInsets.zero,
-                          ),
-                        ),
-                      const PopupMenuDivider(),
-                      PopupMenuItem(
-                        value: 'disconnect',
-                        child: ListTile(
-                          leading: Icon(
-                            Icons.link_off,
-                            color: theme.colorScheme.secondary,
-                          ),
-                          title: Text(
-                            'Disconnect',
-                            style: TextStyle(
-                              color: theme.colorScheme.secondary,
-                            ),
-                          ),
-                          contentPadding: EdgeInsets.zero,
-                        ),
-                      ),
-                    ],
-                    onSelected: (value) {
-                      switch (value) {
-                        case 'share':
-                          onShare();
-                          break;
-                        case 'verify':
-                          onVerify();
-                          break;
-                        case 'disconnect':
-                          onDelete();
-                          break;
-                      }
+                      );
                     },
                   ),
                 ],
@@ -604,6 +559,14 @@ class _RepositoryCard extends StatelessWidget {
                       contentPadding: EdgeInsets.zero,
                     ),
                   ),
+                  const PopupMenuItem(
+                    value: 'settings',
+                    child: ListTile(
+                      leading: Icon(Icons.settings),
+                      title: Text('Settings'),
+                      contentPadding: EdgeInsets.zero,
+                    ),
+                  ),
                   if (!repository.isPendingVerification)
                     const PopupMenuItem(
                       value: 'share',
@@ -646,6 +609,13 @@ class _RepositoryCard extends StatelessWidget {
                   switch (value) {
                     case 'activate':
                       onSwitch();
+                      break;
+                    case 'settings':
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const ExternalStorageScreen(),
+                        ),
+                      );
                       break;
                     case 'share':
                       onShare();

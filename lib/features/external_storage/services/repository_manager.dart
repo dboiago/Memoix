@@ -13,6 +13,12 @@ class RepositoryManager {
   static const _keyRepositories = 'drive_repositories';
   static const _uuid = Uuid();
 
+  /// Whether a repository switch is currently in progress
+  bool _isSwitching = false;
+
+  /// Get whether a switch operation is in progress
+  bool get isSwitching => _isSwitching;
+
   /// Load all saved repositories
   Future<List<DriveRepository>> loadRepositories() async {
     final prefs = await SharedPreferences.getInstance();
@@ -45,7 +51,19 @@ class RepositoryManager {
   /// 
   /// When switching repositories, the provider type is checked to determine
   /// which cloud storage implementation to use.
+  /// 
+  /// This method ensures strict ordering:
+  /// 1. Set switching flag
+  /// 2. Initialize provider fully
+  /// 3. Update repository state
+  /// 4. Clear switching flag
   Future<void> setActiveRepository(String repositoryId) async {
+    if (_isSwitching) {
+      throw Exception('Repository switch already in progress');
+    }
+
+    _isSwitching = true;
+    
     final repos = await loadRepositories();
     
     // Store the current active repo for rollback if switch fails
@@ -56,43 +74,53 @@ class RepositoryManager {
       // No previous active repo
     }
     
-    final updated = repos.map((r) {
-      return r.copyWith(isActive: r.id == repositoryId);
-    }).toList();
-    await saveRepositories(updated);
-    
-    // Get the newly activated repository
-    final activeRepo = updated.firstWhere((r) => r.id == repositoryId);
+    // Get the target repository before updating state
+    final activeRepo = repos.firstWhere((r) => r.id == repositoryId);
     
     // Initialize appropriate provider based on activeRepo.provider
+    // This MUST complete before updating repository state
     try {
       switch (activeRepo.provider) {
         case StorageProvider.googleDrive:
           // GoogleDriveStorage is already initialized via Riverpod provider
           // The UI layer handles switching via googleDriveStorageProvider
-          debugPrint('RepositoryManager: Switched to Google Drive repository: ${activeRepo.name}');
+          debugPrint('RepositoryManager: Initializing Google Drive repository: ${activeRepo.name}');
+          // Wait a brief moment to ensure UI is ready
+          await Future.delayed(const Duration(milliseconds: 100));
           break;
           
         case StorageProvider.oneDrive:
-          // Initialize OneDrive storage
+          debugPrint('RepositoryManager: Initializing OneDrive repository: ${activeRepo.name}');
+          
+          // Initialize OneDrive storage and wait for it to be ready
           final oneDriveStorage = OneDriveStorage();
           await oneDriveStorage.init();
           
           // Check if connected
           if (oneDriveStorage.isConnected) {
-            // Switch to the repository folder
+            // Switch to the repository folder and wait for completion
             await oneDriveStorage.switchRepository(
               activeRepo.folderId,
               activeRepo.name,
             );
             
-            debugPrint('RepositoryManager: Switched to OneDrive repository: ${activeRepo.name}');
+            debugPrint('RepositoryManager: OneDrive repository initialized and ready');
           } else {
+            _isSwitching = false;
             debugPrint('RepositoryManager: OneDrive not connected, user needs to sign in');
             throw Exception('OneDrive not connected. Please sign in first.');
           }
           break;
       }
+      
+      // Provider is now fully initialized - safe to update repository state
+      final updated = repos.map((r) {
+        return r.copyWith(isActive: r.id == repositoryId);
+      }).toList();
+      await saveRepositories(updated);
+      
+      debugPrint('RepositoryManager: Successfully switched to ${activeRepo.name}');
+      
     } catch (e) {
       debugPrint('RepositoryManager: Error switching to repository: $e');
       
@@ -105,7 +133,10 @@ class RepositoryManager {
         debugPrint('RepositoryManager: Rolled back to previous repository: ${previousActiveRepo.name}');
       }
       
+      _isSwitching = false;
       rethrow;
+    } finally {
+      _isSwitching = false;
     }
   }
 
