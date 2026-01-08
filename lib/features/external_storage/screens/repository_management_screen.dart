@@ -471,14 +471,14 @@ class _RepositoryCard extends ConsumerWidget {
                 const SizedBox(height: 16),
 
                 // Sync mode toggle
-                _buildSyncModeSection(theme),
+                _buildSyncModeSection(theme, ref, onRefresh),
 
                 const SizedBox(height: 16),
                 const Divider(),
                 const SizedBox(height: 16),
 
                 // Push/Pull buttons
-                _buildPushPullButtons(theme, syncStatus),
+                _buildPushPullButtons(theme, syncStatus, ref, onRefresh),
 
                 const SizedBox(height: 16),
 
@@ -671,7 +671,7 @@ class _RepositoryCard extends ConsumerWidget {
   }
 
   /// Build sync mode section
-  Widget _buildSyncModeSection(ThemeData theme) {
+  Widget _buildSyncModeSection(ThemeData theme, WidgetRef ref, VoidCallback onRefresh) {
     return FutureBuilder<SyncMode>(
       future: ref.read(externalStorageServiceProvider).syncMode,
       builder: (context, snapshot) {
@@ -721,7 +721,7 @@ class _RepositoryCard extends ConsumerWidget {
   }
 
   /// Build push/pull buttons
-  Widget _buildPushPullButtons(ThemeData theme, SyncStatus syncStatus) {
+  Widget _buildPushPullButtons(ThemeData theme, SyncStatus syncStatus, WidgetRef ref, VoidCallback onRefresh) {
     final isDisabled = syncStatus.isInProgress;
 
     return Row(
