@@ -184,13 +184,20 @@ class _RepositoryManagementScreenState
   }
 
   Future<void> _switchRepository(DriveRepository repository) async {
-    try {
-      // Update active repository in manager
+    try {      
+      // Update active repository in manager (handles provider initialization)
       await _manager.setActiveRepository(repository.id);
       
-      // Update GoogleDriveStorage to use the new folder
-      final storage = ref.read(googleDriveStorageProvider);
-      await storage.switchRepository(repository.folderId, repository.name);
+      // Update provider-specific storage to use the new folder
+      switch (repository.provider) {
+        case StorageProvider.googleDrive:
+          final storage = ref.read(googleDriveStorageProvider);
+          await storage.switchRepository(repository.folderId, repository.name);
+          break;
+        case StorageProvider.oneDrive:
+          // OneDrive switch is handled in RepositoryManager.setActiveRepository
+          break;
+      }
       
       _loadRepositories();
       
@@ -381,24 +388,18 @@ class _RepositoryCard extends ConsumerWidget {
       return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Card(
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-            side: BorderSide(
-              color: theme.colorScheme.secondary.withOpacity(0.3),
-              width: 1.5,
-            ),
-          ),
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Provider header with Active badge
+                // Provider header
                 Row(
                   children: [
                     Icon(
-                      Icons.cloud_outlined,
+                      repository.provider == StorageProvider.oneDrive
+                          ? Icons.grid_view
+                          : Icons.cloud_outlined,
                       color: theme.colorScheme.primary,
                     ),
                     const SizedBox(width: 12),
@@ -406,40 +407,11 @@ class _RepositoryCard extends ConsumerWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            children: [
-                              Flexible(
-                                child: Text(
-                                  repository.name,
-                                  style: theme.textTheme.titleMedium?.copyWith(
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 8,
-                                  vertical: 4,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: theme.colorScheme.secondary.withOpacity(0.15),
-                                  borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(
-                                    color: theme.colorScheme.secondary,
-                                    width: 1.5,
-                                  ),
-                                ),
-                                child: Text(
-                                  'Active',
-                                  style: theme.textTheme.labelSmall?.copyWith(
-                                    color: theme.colorScheme.secondary,
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                            ],
+                          Text(
+                            repository.name,
+                            style: theme.textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                           const SizedBox(height: 4),
                           Text(
@@ -513,7 +485,9 @@ class _RepositoryCard extends ConsumerWidget {
             child: Row(
               children: [
                 Icon(
-                  Icons.cloud_outlined,
+                  repository.provider == StorageProvider.oneDrive
+                      ? Icons.grid_view
+                      : Icons.cloud_outlined,
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
                 const SizedBox(width: 12),
@@ -550,7 +524,7 @@ class _RepositoryCard extends ConsumerWidget {
                 PopupMenuButton<String>(
                   icon: Icon(
                     Icons.more_vert,
-                    color: theme.colorScheme.onSurfaceVariant,
+                    color: theme.colorScheme.primary,
                   ),
                   onSelected: (value) {
                     switch (value) {

@@ -75,19 +75,20 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
       ),
       body: ListView(
         children: [
-          // Header explanation
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(
-              'Store your recipes in a location you control. '
-              'Your data never touches Memoix servers.',
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+          // Header explanation (only when not connected)
+          if (!_isConnected) ...[
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Store your recipes in a location you control. '
+                'Your data never touches Memoix servers.',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
               ),
             ),
-          ),
-
-          const Divider(),
+            const Divider(),
+          ],
 
           // Provider cards
           if (_isConnected)
@@ -95,18 +96,19 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
           else
             _buildProviderSelector(theme),
 
-          const Divider(),
-
-          // Footer info
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(
-              'Only one storage location can be connected at a time.',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+          // Footer info (only when not connected)
+          if (!_isConnected) ...[
+            const Divider(),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Only one storage location can be connected at a time.',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
               ),
             ),
-          ),
+          ],
         ],
       ),
     );
