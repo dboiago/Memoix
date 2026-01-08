@@ -31,8 +31,7 @@ import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
-import '../providers/external_storage_provider.dart';
-import '../providers/google_drive_storage.dart';
+import '../providers/external_storage_provider.dart';import 'repository_manager.dart';import '../providers/google_drive_storage.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
@@ -578,7 +577,17 @@ class ExternalStorageService {
     int added = 0, updated = 0, unchanged = 0;
 
     await db.writeTxn(() async {
-      for // Check if content differs by comparing JSON size
+      for (final remote in remotePizzas) {
+        final existing = await db.pizzas
+            .filter()
+            .uuidEqualTo(remote.uuid)
+            .findFirst();
+
+        if (existing == null) {
+          await db.pizzas.put(remote);
+          added++;
+        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
+          // Check if content differs by comparing JSON size
           final remoteSize = jsonEncode(remote.toJson()).length;
           final existingSize = jsonEncode(existing.toJson()).length;
           
@@ -588,17 +597,7 @@ class ExternalStorageService {
             updated++;
           } else {
             unchanged++;
-          })
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.pizzas.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          remote.id = existing.id;
-          await db.pizzas.put(remote);
-          updated++;
+          }
         } else {
           unchanged++;
         }
