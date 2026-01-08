@@ -227,33 +227,35 @@ class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
             const SizedBox(height: 32),
 
             // Info Box
-            Container(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.info_outline,
-                        color: theme.colorScheme.primary,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        'How Sharing Works',
-                        style: theme.textTheme.titleMedium,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    '• Invited users receive Editor access to your Google Drive folder\n'
-                    '• They can add, edit, and delete recipes in the shared repository\n'
-                    '• Links work offline - the app will verify access when online\n'
-                    '• Remove access via Google Drive settings if needed',
-                    style: theme.textTheme.bodyMedium,
-                  ),
-                ],
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.info_outline,
+                          color: theme.colorScheme.primary,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          'How Sharing Works',
+                          style: theme.textTheme.titleMedium,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    Text(
+                      '• Invited users receive Editor access to your Google Drive folder\n'
+                      '• They can add, edit, and delete recipes in the shared repository\n'
+                      '• Links work offline - the app will verify access when online\n'
+                      '• Remove access via Google Drive settings if needed',
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

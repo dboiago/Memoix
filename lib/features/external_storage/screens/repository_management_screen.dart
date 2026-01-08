@@ -309,14 +309,14 @@ class _RepositoryCard extends StatelessWidget {
                               ),
                               decoration: BoxDecoration(
                                 color: theme.colorScheme.secondary.withOpacity(0.15),
-                                borderRadius: BorderRadius.circular(12),
+                                borderRadius: BorderRadius.circular(8),
                                 border: Border.all(
                                   color: theme.colorScheme.secondary,
                                   width: 1.5,
                                 ),
                               ),
                               child: Text(
-                                'ACTIVE',
+                                'Active',
                                 style: theme.textTheme.labelSmall?.copyWith(
                                   color: theme.colorScheme.secondary,
                                   fontSize: 11,
