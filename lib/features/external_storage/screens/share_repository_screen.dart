@@ -41,17 +41,52 @@ class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
   Future<void> _inviteUser() async {
     if (!_formKey.currentState!.validate()) return;
 
-    final email = _emailController.text.trim();
+    final input = _emailController.text.trim();
+    // Split by semicolon and filter out empty strings
+    final emails = input
+        .split(';')
+        .map((e) => e.trim())
+        .where((e) => e.isNotEmpty)
+        .toList();
+
+    if (emails.isEmpty) return;
 
     setState(() => _isInviting = true);
 
+    int successCount = 0;
+    int failCount = 0;
+    String? lastError;
+
     try {
       final storage = ref.read(googleDriveStorageProvider);
-      await storage.addPermission(widget.repository.folderId, email);
+      
+      for (final email in emails) {
+        try {
+          await storage.addPermission(widget.repository.folderId, email);
+          successCount++;
+        } catch (e) {
+          failCount++;
+          lastError = e.toString();
+        }
+      }
 
       if (mounted) {
-        MemoixSnackBar.showSuccess('Invitation sent to $email');
-        _emailController.clear();
+        if (successCount > 0 && failCount == 0) {
+          // All succeeded
+          if (successCount == 1) {
+            MemoixSnackBar.showSuccess('Invitation sent to ${emails.first}');
+          } else {
+            MemoixSnackBar.showSuccess('Invitations sent to $successCount users');
+          }
+          _emailController.clear();
+          setState(() {}); // Update button state
+        } else if (successCount > 0 && failCount > 0) {
+          // Partial success
+          MemoixSnackBar.show('$successCount sent, $failCount failed');
+        } else {
+          // All failed
+          MemoixSnackBar.showError('Failed to invite: ${lastError ?? "Unknown error"}');
+        }
       }
     } catch (e) {
       if (mounted) {
@@ -135,7 +170,8 @@ class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Add a Google account email address to grant immediate access',
+              'Add a Google account email address to grant immediate access. '
+              'Separate multiple addresses with a semicolon (;)',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -144,45 +180,56 @@ class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
 
             Form(
               key: _formKey,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(
-                    child: TextFormField(
-                      controller: _emailController,
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                        hintText: 'colleague@example.com',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        contentPadding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 14,
-                        ),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.trim().isEmpty) {
-                          return 'Enter an email address';
-                        }
-                        if (!value.contains('@') || !value.contains('.')) {
-                          return 'Enter a valid email';
-                        }
-                        return null;
-                      },
-                      enabled: !_isInviting,
+                  TextFormField(
+                    controller: _emailController,
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      labelText: 'Email Address(es)',
+                      hintText: 'colleague@example.com; friend@gmail.com',
+                      prefixIcon: const Icon(Icons.email_outlined),
+                      border: const OutlineInputBorder(),
+                      suffixIcon: _emailController.text.isNotEmpty
+                          ? IconButton(
+                              icon: const Icon(Icons.clear),
+                              onPressed: () {
+                                _emailController.clear();
+                                setState(() {});
+                              },
+                            )
+                          : null,
                     ),
+                    validator: (value) {
+                      if (value == null || value.trim().isEmpty) {
+                        return 'Enter at least one email address';
+                      }
+                      // Validate each email in the semicolon-separated list
+                      final emails = value.split(';').map((e) => e.trim()).where((e) => e.isNotEmpty);
+                      for (final email in emails) {
+                        if (!email.contains('@') || !email.contains('.')) {
+                          return 'Invalid email: $email';
+                        }
+                      }
+                      return null;
+                    },
+                    enabled: !_isInviting,
+                    onChanged: (_) => setState(() {}),
                   ),
-                  const SizedBox(width: 8),
-                  FilledButton(
-                    onPressed: _isInviting ? null : _inviteUser,
-                    child: _isInviting
+                  const SizedBox(height: 16),
+                  FilledButton.icon(
+                    onPressed: _isInviting || _emailController.text.isEmpty
+                        ? null
+                        : _inviteUser,
+                    icon: _isInviting
                         ? const SizedBox(
                             width: 20,
                             height: 20,
                             child: CircularProgressIndicator(strokeWidth: 2),
                           )
-                        : const Text('Invite'),
+                        : const Icon(Icons.send),
+                    label: Text(_isInviting ? 'Sending...' : 'Send Invitation(s)'),
                   ),
                 ],
               ),
