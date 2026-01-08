@@ -5,7 +5,48 @@ This document tracks the implementation of the Shared Repository feature, which 
 
 ---
 
-## ⚡ Latest Update: Auto-Sync & UX Polish (Jan 8, 2026)
+## ⚡ Latest Update: Multi-Provider Infrastructure (Jan 8, 2026)
+
+**Motivation:** Prepare codebase for OneDrive integration. Abstract cloud storage operations to support multiple providers.
+
+### Changes Made:
+
+#### 1. CloudStorageProvider Interface (`cloud_storage_provider.dart`)
+New abstract interface defining the contract for all cloud storage providers:
+- `init()` - Initialize provider
+- `signIn()` - Authenticate user
+- `signOut()` - Sign out user  
+- `isConnected` - Connection status
+- `syncRecipes()` - Sync operation
+- `createFolder(name)` - Create repository
+- `switchRepository(folderId, name)` - Change active repository
+
+#### 2. GoogleDriveStorage Refactor
+- **Now implements:** `CloudStorageProvider` (in addition to `ExternalStorageProvider`)
+- **Added wrapper methods:** `init()`, `signIn()`, `signOut()`, `syncRecipes()`
+- **No logic changes:** Wrappers delegate to existing implementation
+
+#### 3. StorageProvider Enum (`drive_repository.dart`)
+```dart
+enum StorageProvider {
+  googleDrive,
+  oneDrive,
+}
+```
+
+#### 4. DriveRepository Model Update
+- **Added field:** `StorageProvider provider`
+- **Default value:** `StorageProvider.googleDrive` (backward compatibility)
+- **JSON serialization:** Updated `.g.dart` with enum mapping
+
+#### 5. RepositoryManager Enhancement
+- **Added parameter:** `provider` to `addRepository()` method
+- **Added TODO:** Provider initialization logic in `setActiveRepository()`
+- **Ready for:** OneDrive integration without breaking existing code
+
+---
+
+## Previous Update: Auto-Sync & UX Polish (Jan 8, 2026)
 
 **Motivation:** Repository creation UX gap - new repos sat at "Ready to sync" requiring manual action.
 

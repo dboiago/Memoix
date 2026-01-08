@@ -2,6 +2,12 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'drive_repository.g.dart';
 
+/// Cloud storage provider type
+enum StorageProvider {
+  googleDrive,
+  oneDrive,
+}
+
 /// Represents a Google Drive repository (folder) that stores Memoix data
 ///
 /// Multiple repositories allow users to maintain separate collections
@@ -37,6 +43,9 @@ class DriveRepository {
   /// Timestamp when this repository was last synced (push or pull)
   final DateTime? lastSynced;
 
+  /// Cloud storage provider for this repository
+  final StorageProvider provider;
+
   const DriveRepository({
     required this.id,
     required this.name,
@@ -47,6 +56,7 @@ class DriveRepository {
     required this.createdAt,
     this.lastVerified,
     this.lastSynced,
+    this.provider = StorageProvider.googleDrive,  // Default for backward compatibility
   });
 
   /// Create a copy with updated fields
@@ -59,8 +69,7 @@ class DriveRepository {
     bool? accessDenied,
     DateTime? createdAt,
     DateTime? lastVerified,
-    DateTime? lastSynced,
-  }) {
+    DateTime? lastSynced,    StorageProvider? provider,  }) {
     return DriveRepository(
       id: id ?? this.id,
       name: name ?? this.name,
@@ -71,6 +80,7 @@ class DriveRepository {
       createdAt: createdAt ?? this.createdAt,
       lastVerified: lastVerified ?? this.lastVerified,
       lastSynced: lastSynced ?? this.lastSynced,
+      provider: provider ?? this.provider,
     );
   }
 

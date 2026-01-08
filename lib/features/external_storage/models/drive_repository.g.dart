@@ -21,6 +21,8 @@ DriveRepository _$DriveRepositoryFromJson(Map<String, dynamic> json) =>
       lastSynced: json['lastSynced'] == null
           ? null
           : DateTime.parse(json['lastSynced'] as String),
+      provider: $enumDecodeNullable(_$StorageProviderEnumMap, json['provider']) ??
+          StorageProvider.googleDrive,
     );
 
 Map<String, dynamic> _$DriveRepositoryToJson(DriveRepository instance) =>
@@ -34,4 +36,10 @@ Map<String, dynamic> _$DriveRepositoryToJson(DriveRepository instance) =>
       'createdAt': instance.createdAt.toIso8601String(),
       'lastVerified': instance.lastVerified?.toIso8601String(),
       'lastSynced': instance.lastSynced?.toIso8601String(),
+      'provider': _$StorageProviderEnumMap[instance.provider]!,
     };
+
+const _$StorageProviderEnumMap = {
+  StorageProvider.googleDrive: 'googleDrive',
+  StorageProvider.oneDrive: 'oneDrive',
+};

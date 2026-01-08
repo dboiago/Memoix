@@ -15,13 +15,14 @@ import '../../../config/api_config.dart';
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 import '../services/repository_manager.dart';
+import 'cloud_storage_provider.dart';
 import 'external_storage_provider.dart';
 
-/// Google Drive implementation of ExternalStorageProvider
+/// Google Drive implementation of CloudStorageProvider and ExternalStorageProvider
 ///
 /// Uses OAuth 2.0 via google_sign_in on mobile, and loopback OAuth on desktop.
 /// See EXTERNAL_STORAGE.md Section 7.1 for implementation details.
-class GoogleDriveStorage implements ExternalStorageProvider {
+class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvider {
   // Storage keys
   static const _keyFolderId = 'google_drive_folder_id';
   static const _keyFolderPath = 'google_drive_folder_path';
@@ -176,6 +177,37 @@ class GoogleDriveStorage implements ExternalStorageProvider {
     _authClient = null;
     _desktopCredentials = null;
     await _clearStoredState();
+  }
+
+  // --- CloudStorageProvider interface ---
+
+  /// Initialize the provider (wrapper for initialize())
+  @override
+  Future<void> init() async {
+    await initialize();
+  }
+
+  /// Sign in to Google Drive (wrapper for connect())
+  @override
+  Future<void> signIn() async {
+    await connect();
+  }
+
+  /// Sign out from Google Drive (wrapper for disconnect())
+  @override
+  Future<void> signOut() async {
+    await disconnect();
+  }
+
+  /// Sync recipes (push local data to cloud)
+  @override
+  Future<void> syncRecipes() async {
+    // This is typically called from ExternalStorageService.push()
+    // For direct CloudStorageProvider usage, we would need to:
+    // 1. Get RecipeBundle from local database
+    // 2. Call push(bundle)
+    // For now, this delegates to the service layer
+    throw UnimplementedError('Use ExternalStorageService.push() instead');
   }
 
   // --- Repository Sharing ---

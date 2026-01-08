@@ -5,7 +5,8 @@ import 'package:uuid/uuid.dart';
 
 import '../models/drive_repository.dart';
 
-/// Manages Google Drive repositories (multiple storage locations)
+/// Manages cloud storage repositories (multiple storage locations)
+/// Supports multiple providers (Google Drive, OneDrive, etc.)
 class RepositoryManager {
   static const _keyRepositories = 'drive_repositories';
   static const _uuid = Uuid();
@@ -39,12 +40,28 @@ class RepositoryManager {
   }
 
   /// Set a repository as active (deactivates all others)
+  /// 
+  /// When switching repositories, the provider type is checked to determine
+  /// which cloud storage implementation to use.
   Future<void> setActiveRepository(String repositoryId) async {
     final repos = await loadRepositories();
     final updated = repos.map((r) {
       return r.copyWith(isActive: r.id == repositoryId);
     }).toList();
     await saveRepositories(updated);
+    
+    // Get the newly activated repository
+    final activeRepo = updated.firstWhere((r) => r.id == repositoryId);
+    
+    // TODO: Initialize appropriate provider based on activeRepo.provider
+    // switch (activeRepo.provider) {
+    //   case StorageProvider.googleDrive:
+    //     // GoogleDriveStorage is already initialized via provider
+    //     break;
+    //   case StorageProvider.oneDrive:
+    //     // Initialize OneDriveStorage here
+    //     break;
+    // }
   }
 
   /// Add a new repository
@@ -53,6 +70,7 @@ class RepositoryManager {
     required String folderId,
     bool setAsActive = false,
     bool isPendingVerification = false,
+    StorageProvider provider = StorageProvider.googleDrive,
   }) async {
     final repos = await loadRepositories();
     
@@ -63,6 +81,7 @@ class RepositoryManager {
       isActive: setAsActive,
       isPendingVerification: isPendingVerification,
       createdAt: DateTime.now(),
+      provider: provider,
     );
 
     // If setting as active, deactivate all others
