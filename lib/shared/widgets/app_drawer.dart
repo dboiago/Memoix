@@ -111,7 +111,8 @@ class AppDrawer extends StatelessWidget {
                     title: 'Compare Recipes',
                     onTap: () {
                       Navigator.pop(context);
-                      AppRoutes.toRecipeComparison(context);
+                      // Force a reset when opening from the drawer
+                      AppRoutes.toRecipeComparison(context, resetState: true);
                     },
                   ),
                   _DrawerTile(
