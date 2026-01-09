@@ -13,6 +13,7 @@ import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/screens/smoking_edit_screen.dart';
+import '../../tools/recipe_comparison_screen.dart';
 import '../models/course.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
@@ -976,6 +977,14 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               tooltip: 'View OCR Text',
               onPressed: () => _showOcrText(context),
             ),
+          if (widget.importedRecipe != null)
+            TextButton.icon(
+              onPressed: _openInComparison,
+              icon: const Icon(Icons.compare_arrows),
+              label: const Text('Compare'),
+            ),
+          if (widget.importedRecipe != null)
+            const SizedBox(width: 4),
           TextButton.icon(
             onPressed: _isSaving ? null : _saveRecipe,
             icon: _isSaving
@@ -987,6 +996,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 : const Icon(Icons.save),
             label: const Text('Save'),
           ),
+          const SizedBox(width: 8),
         ],
       ),
       body: SingleChildScrollView(
@@ -1631,6 +1641,93 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       ..source = SmokingSource.personal
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
       ..updatedAt = DateTime.now();
+  }
+
+  /// Open the recipe in comparison tool
+  void _openInComparison() {
+    if (_nameController.text.trim().isEmpty) {
+      MemoixSnackBar.showError('Please enter a recipe name');
+      return;
+    }
+
+    // Build a Recipe object from current form data
+    final recipe = _buildRecipeFromForm();
+    
+    // Navigate to comparison with this recipe pre-filled
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => RecipeComparisonScreen(prefilledRecipe: recipe),
+      ),
+    );
+  }
+
+  Recipe _buildRecipeFromForm() {
+    // Parse ingredients
+    String? currentSection;
+    final ingredients = <Ingredient>[];
+    
+    for (final row in _ingredientRows) {
+      final name = row.nameController.text.trim();
+      if (name.isEmpty) continue;
+      
+      if (row.isSection) {
+        currentSection = name;
+        continue;
+      }
+      
+      final amountText = row.amountController.text.trim();
+      String? amount;
+      String? unit;
+      if (amountText.isNotEmpty) {
+        final parts = amountText.split(' ');
+        if (parts.length == 1) {
+          amount = parts[0];
+        } else {
+          amount = parts[0];
+          unit = parts.sublist(1).join(' ');
+        }
+      }
+      
+      ingredients.add(Ingredient()
+        ..name = name
+        ..amount = amount
+        ..unit = unit
+        ..preparation = row.preparationController.text.trim().isEmpty 
+            ? null 
+            : row.preparationController.text.trim()
+        ..section = currentSection
+      );
+    }
+    
+    // Parse directions
+    final directions = _directionControllers
+        .map((c) => c.text.trim())
+        .where((text) => text.isNotEmpty)
+        .toList();
+    
+    return Recipe.create(
+      uuid: const Uuid().v4(),
+      name: _nameController.text.trim(),
+      course: _selectedCourse,
+      cuisine: _selectedCuisine,
+      subcategory: _subcategoryController.text.trim().isEmpty 
+          ? null 
+          : _subcategoryController.text.trim(),
+      serves: _servesController.text.trim().isEmpty 
+          ? null 
+          : _servesController.text.trim(),
+      time: _timeController.text.trim().isEmpty 
+          ? null 
+          : _timeController.text.trim(),
+      ingredients: ingredients,
+      directions: directions,
+      comments: _notesController.text.trim().isEmpty 
+          ? null 
+          : _notesController.text.trim(),
+      imageUrl: widget.importedRecipe?.imageUrl,
+      source: RecipeSource.personal,
+    );
   }
 
   Future<void> _saveRecipe() async {
