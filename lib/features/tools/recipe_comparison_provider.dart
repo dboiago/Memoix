@@ -59,8 +59,22 @@ class RecipeComparisonState {
 class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
   RecipeComparisonNotifier() : super(RecipeComparisonState());
 
-  /// Assign imported recipe to first available slot (left, then right)
+  /// Assign imported recipe based on user intent (pending slot) 
+  /// OR fall back to first available slot.
   void assignImportedRecipe(Recipe recipe) {
+    // 1. Check if the user specifically requested a slot (e.g., via "Import" button on a specific card)
+    if (state.pendingImportSlot != null) {
+      if (state.pendingImportSlot == 2) {
+        setRecipe2(recipe);
+      } else {
+        setRecipe1(recipe);
+      }
+      // Clear the pending flag so it doesn't affect future actions
+      clearPendingImportSlot();
+      return;
+    }
+
+    // 2. Fallback: Default "First Available" logic
     if (state.recipe1 == null) {
       setRecipe1(recipe);
     } else if (state.recipe2 == null) {
@@ -68,24 +82,6 @@ class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
     } else {
       setRecipe1(recipe); // Default: replace left if both full
     }
-  }
-
-  /// Set recipe for slot 1
-  void setRecipe1(Recipe recipe) {
-    state = state.copyWith(
-      recipe1: recipe,
-      selectedIngredients1: {},
-      selectedSteps1: {},
-    );
-  }
-
-  /// Set recipe for slot 2
-  void setRecipe2(Recipe recipe) {
-    state = state.copyWith(
-      recipe2: recipe,
-      selectedIngredients2: {},
-      selectedSteps2: {},
-    );
   }
 
   /// Clear recipe slot 1
