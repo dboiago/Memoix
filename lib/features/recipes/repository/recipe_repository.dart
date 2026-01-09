@@ -70,9 +70,9 @@ class RecipeRepository {
         .group((q) => q
           .nameContains(query, caseSensitive: false)
           .or()
-          .ingredients((i) => i.nameContains(query, caseSensitive: false))
-          .or()
           .tagsElementContains(query, caseSensitive: false)
+          .or()
+          .cuisineContains(query, caseSensitive: false)
         )
         .limit(50)
         .findAll();
