@@ -249,12 +249,12 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     final draft = RecipeDraft()
       ..uuid = const Uuid().v4()
       ..name = 'Compared Recipe Draft'
-      ..ingredients = ingredients.map((i) => '${i.quantity} ${i.unit} ${i.name}'.trim()).join('\n')
+      ..ingredients = ingredients.map((i) => '${i.amount ?? ''} ${i.unit ?? ''} ${i.name}'.trim()).join('\n')
       ..directions = steps.join('\n\n')
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
 
-    await ref.read(scratchPadRepositoryProvider).saveDraft(draft);
+    await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
 
     if (mounted) {
       MemoixSnackBar.showSuccess('Sent to Scratch Pad');
@@ -352,7 +352,7 @@ class _RecipeSlot extends StatelessWidget {
             isSelected: isSelected,
             onTap: () => onIngredientTap(index),
             child: Text(
-              '${ingredient.quantity} ${ingredient.unit} ${ingredient.name}'.trim(),
+              '${ingredient.amount ?? ''} ${ingredient.unit ?? ''} ${ingredient.name}'.trim(),
               style: theme.textTheme.bodyMedium,
             ),
           );

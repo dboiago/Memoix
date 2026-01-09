@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../recipes/models/recipe.dart';
-import '../../recipes/repository/recipe_repository.dart';
-import '../../smoking/models/smoking_recipe.dart';
-import '../../smoking/repository/smoking_repository.dart';
-import '../../modernist/models/modernist_recipe.dart';
-import '../../modernist/repository/modernist_repository.dart';
+import '../../features/recipes/models/recipe.dart';
+import '../../features/recipes/repository/recipe_repository.dart';
+import '../../features/smoking/models/smoking_recipe.dart';
+import '../../features/smoking/repository/smoking_repository.dart';
+import '../../features/modernist/models/modernist_recipe.dart';
+import '../../features/modernist/repository/modernist_repository.dart';
 
 /// Modal bottom sheet for picking a recipe from the database
 /// 
@@ -208,7 +208,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
   }
 
   Widget _buildSmokingRecipes(ThemeData theme) {
-    final recipesAsync = ref.watch(smokingRecipesProvider);
+    final recipesAsync = ref.watch(allSmokingRecipesProvider);
 
     return recipesAsync.when(
       data: (recipes) {
@@ -248,7 +248,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
   }
 
   Widget _buildModernistRecipes(ThemeData theme) {
-    final recipesAsync = ref.watch(modernistRecipesProvider);
+    final recipesAsync = ref.watch(allModernistRecipesProvider);
 
     return recipesAsync.when(
       data: (recipes) {
