@@ -50,12 +50,14 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _draftTitleController.dispose();
+    // Reset comparison state when navigating away
+    ref.read(recipeComparisonProvider.notifier).reset();
     super.dispose();
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // Reset comparison state when app goes to background
+    // Also reset when app goes to background (keeping this for extra safety)
     if (state == AppLifecycleState.paused) {
       ref.read(recipeComparisonProvider.notifier).reset();
     }
