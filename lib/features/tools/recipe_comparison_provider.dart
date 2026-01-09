@@ -59,6 +59,16 @@ class RecipeComparisonState {
 class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
   RecipeComparisonNotifier() : super(RecipeComparisonState());
 
+  /// Set recipe 1 (left slot)
+  void setRecipe1(Recipe recipe) {
+    state = state.copyWith(recipe1: recipe, selectedIngredients1: {}, selectedSteps1: {});
+  }
+
+  /// Set recipe 2 (right slot)
+  void setRecipe2(Recipe recipe) {
+    state = state.copyWith(recipe2: recipe, selectedIngredients2: {}, selectedSteps2: {});
+  }
+
   /// Assign imported recipe based on user intent (pending slot) 
   /// OR fall back to first available slot.
   void assignImportedRecipe(Recipe recipe) {
