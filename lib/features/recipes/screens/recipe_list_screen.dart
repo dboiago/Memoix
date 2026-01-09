@@ -530,5 +530,4 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
             },
           );
         }
-      // Remove all code after this point (was dead/broken modal code)
-              onTap: () {
+      // ...existing code ends here...
