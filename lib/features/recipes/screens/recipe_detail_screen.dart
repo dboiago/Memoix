@@ -223,8 +223,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
             onComparePressed: shouldShowCompareButton(recipe)
-                ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe)
-                : null,
+              ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, resetState: true)
+              : null,
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),

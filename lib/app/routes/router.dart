@@ -211,13 +211,13 @@ class AppRoutes {
     );
   }
 
-  static void toRecipeComparison(BuildContext context, {Recipe? prefilledRecipe, int targetSlot = 1, bool clearPreviousState = true}) {
+  static void toRecipeComparison(BuildContext context, {Recipe? prefilledRecipe, int targetSlot = 1, bool resetState = false}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => RecipeComparisonScreen(
           prefilledRecipe: prefilledRecipe,
           targetSlot: targetSlot,
-          clearPreviousState: clearPreviousState,
+          resetState: resetState,
         ),
       ),
     );

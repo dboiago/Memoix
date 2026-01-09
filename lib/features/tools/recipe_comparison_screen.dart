@@ -28,14 +28,14 @@ class RecipeComparisonScreen extends ConsumerStatefulWidget {
   final Recipe? prefilledRecipe;
   /// Which slot to fill with prefilledRecipe (1 or 2)
   final int targetSlot;
-  /// Whether to clear previous state (default true)
-  final bool clearPreviousState;
+  /// Whether to reset state (default false)
+  final bool resetState;
 
   const RecipeComparisonScreen({
     super.key,
     this.prefilledRecipe,
     this.targetSlot = 1,
-    this.clearPreviousState = true,
+    this.resetState = false,
   });
 
   @override
@@ -55,23 +55,19 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
     // Run this after the first frame to ensure safe provider access
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      // 1. Check the explicit flag
-      if (widget.clearPreviousState) {
+      // 1. Explicit Reset: Only wipe if we were TOLD to wipe.
+      if (widget.resetState) {
         ref.read(recipeComparisonProvider.notifier).reset();
       }
 
-      // 2. Apply the recipe (Merge logic)
+      // 2. Apply Recipe: Always try to apply if provided.
+      // This runs AFTER the reset, so it works for both "Fresh Start" and "Import Return".
       if (widget.prefilledRecipe != null) {
         if (widget.targetSlot == 2) {
           ref.read(recipeComparisonProvider.notifier).setRecipe2(widget.prefilledRecipe!);
         } else {
-          // If we just cleared, this sets Slot 1. 
-          // If we didn't clear, this smartly assigns to an empty slot.
-          if (widget.clearPreviousState) {
-             ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
-          } else {
-             ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(widget.prefilledRecipe!);
-          }
+          // Use smart assignment to avoid overwriting Slot 1 if we kept data
+          ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(widget.prefilledRecipe!);
         }
       }
     });
