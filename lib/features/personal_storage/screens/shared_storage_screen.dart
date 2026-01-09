@@ -10,6 +10,7 @@ import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 import '../services/personal_storage_service.dart';
 import '../services/shared_storage_manager.dart';
+import '../services/storage_provider_manager.dart';
 import 'personal_storage_screen.dart';
 import 'share_storage_screen.dart';
 
@@ -43,17 +44,17 @@ class _SharedStorageScreenState
     final provider = await _showProviderSelectionDialog();
     if (provider == null || !mounted) return;
 
-    // Step 2: Get repository name
+    // Step 2: Get storage location name
     final nameController = TextEditingController();
 
     final name = await showDialog<String>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('New Repository'),
+        title: const Text('New Shared Storage'),
         content: TextField(
           controller: nameController,
           decoration: const InputDecoration(
-            labelText: 'Repository Name',
+            labelText: 'Storage Name',
             hintText: 'My Recipes',
           ),
           autofocus: true,
@@ -73,9 +74,9 @@ class _SharedStorageScreenState
 
     if (name == null || name.isEmpty || !mounted) return;
 
-    // Step 3: Create repository with selected provider
+    // Step 3: Create storage location with selected provider
     try {
-      MemoixSnackBar.show('Creating repository...');
+      MemoixSnackBar.show('Creating shared storage...');
 
       String folderId;
       
@@ -130,10 +131,8 @@ class _SharedStorageScreenState
           break;
       }
       
-      // Disconnect Personal Storage (mutual exclusivity)
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.remove('personal_storage_provider_id');
-      await prefs.remove('personal_storage_path');
+      // Disconnect all other providers (mutual exclusivity)
+      await StorageProviderManager.disconnectAll(ref);
       
       // Sync recipes to new folder
       if (mounted) {

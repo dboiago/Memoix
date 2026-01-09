@@ -18,6 +18,16 @@ extension StorageProviderDisplay on StorageProvider {
         return 'Microsoft OneDrive';
     }
   }
+  
+  /// Provider ID used for preferences and disconnection logic
+  String get id {
+    switch (this) {
+      case StorageProvider.googleDrive:
+        return 'google_drive';
+      case StorageProvider.oneDrive:
+        return 'onedrive';
+    }
+  }
 }
 
 /// Represents a Google Drive repository (folder) that stores Memoix data
