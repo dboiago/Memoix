@@ -52,25 +52,20 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
     // Run this after the first frame to ensure safe provider access
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final providerState = ref.read(recipeComparisonProvider);
+      // 1. ALWAYS reset. This guarantees a clean slate every time you enter the screen.
+      ref.read(recipeComparisonProvider.notifier).reset();
 
-      // CRITICAL: Only reset if the provider is COMPLETELY empty AND we have no arguments.
-      // This prevents wiping data if we just set it from the Detail Screen or an Import flow.
-      final hasExistingData = providerState.recipe1 != null || 
-                              providerState.recipe2 != null || 
-                              providerState.pendingImportSlot != null; // Check pending slot too!
-
-      if (!hasExistingData && widget.prefilledRecipe == null) {
-        // Only reset if we are truly starting fresh
-        ref.read(recipeComparisonProvider.notifier).reset();
-      }
-
-      // Apply argument if provided (legacy support or explicit override)
+      // 2. Handle the argument (if provided) using SMART logic.
       if (widget.prefilledRecipe != null) {
         if (widget.targetSlot == 2) {
+          // Explicit slot request (e.g. from context)
           ref.read(recipeComparisonProvider.notifier).setRecipe2(widget.prefilledRecipe!);
         } else {
-          ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
+          // Smart Assignment: "Compare" button from Detail Screen usually goes here.
+          // Instead of forcing setRecipe1, we use assignImportedRecipe 
+          // (even though we just reset, this method handles the logic correctly 
+          // and is future-proof if we change the reset behavior).
+          ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(widget.prefilledRecipe!);
         }
       }
     });

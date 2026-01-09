@@ -223,10 +223,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
             onComparePressed: shouldShowCompareButton(recipe)
-                ? () {
-                    ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(recipe);
-                    AppRoutes.toRecipeComparison(context);
-                  }
+                ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe)
                 : null,
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
