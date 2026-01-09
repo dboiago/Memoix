@@ -3,7 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
-import '../../external_storage/services/external_storage_service.dart';
+import '../../personal_storage/services/personal_storage_service.dart';
 import '../models/cheese_entry.dart';
 
 /// Repository for cheese entry data operations
@@ -76,8 +76,8 @@ class CheeseRepository {
       await _db.cheeseEntrys.put(entry);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete an entry by ID
@@ -86,9 +86,9 @@ class CheeseRepository {
       return _db.cheeseEntrys.delete(id);
     });
     
-    // Notify external storage service of change
+    // Notify personal storage service of change
     if (result) {
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
     
     return result;
@@ -109,8 +109,8 @@ class CheeseRepository {
       await _db.cheeseEntrys.put(entry);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Toggle buy status
@@ -121,8 +121,8 @@ class CheeseRepository {
       await _db.cheeseEntrys.put(entry);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all entries (stream for Riverpod)

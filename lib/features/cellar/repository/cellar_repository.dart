@@ -3,7 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
-import '../../external_storage/services/external_storage_service.dart';
+import '../../personal_storage/services/personal_storage_service.dart';
 import '../models/cellar_entry.dart';
 
 /// Repository for cellar entry data operations
@@ -69,8 +69,8 @@ class CellarRepository {
       await _db.cellarEntrys.put(entry);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete an entry by ID
@@ -79,9 +79,9 @@ class CellarRepository {
       return _db.cellarEntrys.delete(id);
     });
     
-    // Notify external storage service of change
+    // Notify personal storage service of change
     if (result) {
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
     
     return result;
@@ -102,8 +102,8 @@ class CellarRepository {
       await _db.cellarEntrys.put(entry);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Toggle buy status
@@ -114,8 +114,8 @@ class CellarRepository {
       await _db.cellarEntrys.put(entry);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all entries (stream for Riverpod)

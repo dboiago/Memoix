@@ -1,10 +1,12 @@
-# External Storage Design Document
+# Personal Storage Design Document
 
 ## Overview
 
-**Feature Name:** External Storage (User-Managed Backup & Sync)
+**Feature Name:** Personal Storage (User-Managed Backup & Sync)
 
 **Philosophy:** Users own their data. Memoix provides tools to export recipes to and import recipes from storage providers the user already controls. This is **not cloud sync** — it's explicit, user-controlled backup with optional automatic triggers.
+
+**Note:** In code, this feature is still referenced as "external_storage" for historical reasons and to avoid breaking changes. UI displays "Personal Storage" for clarity.
 
 ---
 
@@ -12,7 +14,9 @@
 
 | Term | Definition |
 |------|------------|
-| **External Storage** | A user-owned cloud location (Google Drive folder, GitHub repo, iCloud folder) |
+| **Personal Storage** | A user-owned cloud location (Google Drive folder, OneDrive folder) for individual backups |
+| **Shared Storage** | Repositories that can be shared with or accessed by multiple users |
+| **External Storage** | Legacy term for Personal Storage (used in code) |
 | **Push** | Export local recipes to external storage (overwrites remote) |
 | **Pull** | Import recipes from external storage (merges into local) |
 | **Automatic Mode** | Push/pull triggered on app lifecycle events (open, save, close) |

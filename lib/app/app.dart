@@ -11,7 +11,7 @@ import '../core/widgets/update_available_dialog.dart';
 import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';
 import '../features/tools/timer_service.dart';
-import '../features/external_storage/services/external_storage_service.dart';
+import '../features/personal_storage/services/personal_storage_service.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -60,14 +60,14 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
       _checkForUpdatesOnLaunch();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
-      _triggerExternalStorageSync();
+      _triggerPersonalStorageSync();
     });
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
-    final storageService = ref.read(externalStorageServiceProvider);
+    final storageService = ref.read(personalStorageServiceProvider);
     
     if (state == AppLifecycleState.paused ||
         state == AppLifecycleState.inactive) {
@@ -79,15 +79,15 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     }
   }
 
-  /// Trigger external storage pull on app launch (if connected + automatic mode)
-  void _triggerExternalStorageSync() {
+  /// Trigger personal storage pull on app launch (if connected + automatic mode)
+  void _triggerPersonalStorageSync() {
     Future.microtask(() async {
       if (!mounted) return;
       try {
-        final storageService = ref.read(externalStorageServiceProvider);
+        final storageService = ref.read(personalStorageServiceProvider);
         await storageService.onAppLaunched();
       } catch (e) {
-        debugPrint('External storage sync on launch failed: $e');
+        debugPrint('Personal storage sync on launch failed: $e');
       }
     });
   }

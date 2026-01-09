@@ -5,9 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/sharing/services/share_service.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
-import '../../features/external_storage/services/repository_manager.dart';
-import '../../features/external_storage/providers/google_drive_storage.dart';
-import '../../features/external_storage/models/drive_repository.dart';
+import '../../features/personal_storage/services/repository_manager.dart';
+import '../../features/personal_storage/providers/google_drive_storage.dart';
+import '../../features/personal_storage/models/drive_repository.dart';
 import '../widgets/memoix_snackbar.dart';
 
 /// Service to handle deep links (memoix://recipe/...)

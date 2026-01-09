@@ -9,9 +9,10 @@ import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 import '../services/external_storage_service.dart';
 
-/// External Storage settings screen
+/// Personal Storage settings screen
 ///
 /// Shows provider connection status, push/pull buttons, and sync mode toggle.
+/// Allows users to backup to their own cloud storage account.
 /// See EXTERNAL_STORAGE.md Section 5 for UX requirements.
 class ExternalStorageScreen extends ConsumerStatefulWidget {
   const ExternalStorageScreen({super.key});
@@ -71,7 +72,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('External Storage'),
+        title: const Text('Personal Storage'),
       ),
       body: ListView(
         padding: const EdgeInsets.only(top: 16),

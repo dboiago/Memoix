@@ -39,10 +39,10 @@ import '../../features/favourites/screens/favourites_screen.dart';
 import '../../features/tools/measurement_converter.dart';
 import '../../features/tools/kitchen_timer_screen.dart';
 import '../../features/notes/screens/scratch_pad_screen.dart';
-import '../../features/external_storage/screens/external_storage_screen.dart';
-import '../../features/external_storage/screens/repository_management_screen.dart';
-import '../../features/external_storage/screens/share_repository_screen.dart';
-import '../../features/external_storage/models/drive_repository.dart';
+import '../../features/personal_storage/screens/personal_storage_screen.dart';
+import '../../features/personal_storage/screens/repository_management_screen.dart';
+import '../../features/personal_storage/screens/share_repository_screen.dart';
+import '../../features/personal_storage/models/drive_repository.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});

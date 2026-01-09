@@ -308,7 +308,7 @@ class _RepositoryManagementScreenState
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Repositories'),
+        title: const Text('Shared Storage'),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _createNewRepository,

@@ -4,7 +4,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
-import '../../external_storage/services/external_storage_service.dart';
+import '../../personal_storage/services/personal_storage_service.dart';
 import '../models/modernist_recipe.dart';
 
 /// Repository for modernist recipe CRUD operations

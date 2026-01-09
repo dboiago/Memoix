@@ -247,19 +247,19 @@ class SettingsScreen extends ConsumerWidget {
 
           const Divider(),
 
-          // External Storage section
+          // Personal Storage section
           const _SectionHeader(title: 'Backup'),
           ListTile(
             leading: const Icon(Icons.cloud_outlined),
-            title: const Text('External Storage'),
-            subtitle: const Text('Back up to your own cloud storage'),
+            title: const Text('Personal Storage'),
+            subtitle: const Text('Backup to your own cloud storage account'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => _openExternalStorage(context),
           ),
           ListTile(
             leading: const Icon(Icons.folder_shared_outlined),
-            title: const Text('Repositories'),
-            subtitle: const Text('Manage shared repositories'),
+            title: const Text('Shared Storage'),
+            subtitle: const Text('Access shared or managed recipe collections'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => AppRoutes.toRepositoryManagement(context),
           ),
