@@ -180,7 +180,7 @@ class RecipeDraft {
       ..stepImageMap = stepImageMap ?? this.stepImageMap
       ..pairedRecipeIds = pairedRecipeIds ?? this.pairedRecipeIds
       ..createdAt = createdAt ?? this.createdAt
-      ..updatedAt = updatedAt ?? this.updatedAt;
+      ..updatedAt = updatedAt ?? this.updatedAt
       ..course = course ?? this.course;
   }
 }

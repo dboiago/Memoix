@@ -480,9 +480,6 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
 			directions: directions,
 			comments: _notesController.text.trim(),
 			imageUrl: _headerImage,
-			stepImages: List<String>.from(_stepImages),
-			stepImageMap: _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList(),
-			pairedRecipeIds: List<String>.from(_pairedRecipeIds),
 		);
 		if (mounted) {
 			Navigator.of(context).push(
