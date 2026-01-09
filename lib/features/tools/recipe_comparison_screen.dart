@@ -107,11 +107,12 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // Also reset when app goes to background
-    if (state == AppLifecycleState.paused) {
-      ref.read(recipeComparisonProvider.notifier).reset();
+      // We do NOT want to lose our work just because we switched apps!
+      /* if (state == AppLifecycleState.paused) {
+        ref.read(recipeComparisonProvider.notifier).reset();
+      }
+      */
     }
-  }
 
   @override
   Widget build(BuildContext context) {
