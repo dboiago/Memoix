@@ -197,8 +197,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
-            onComparePressed: recipe.course.toLowerCase() != 'drinks' 
-                ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe) 
+            onComparePressed: recipe.course.toLowerCase() != 'drinks'
+                ? () {
+                    // Use smart assignment before navigation
+                    ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(recipe);
+                    AppRoutes.toRecipeComparison(context);
+                  }
                 : null,
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
