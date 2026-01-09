@@ -233,7 +233,8 @@ class PersonalStorageService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_PrefKeys.connectedProviderId);
     await prefs.remove(_PrefKeys.connectedPath);
-    await prefs.remove(_PrefKeys.lastSyncTime);
+    // NOTE: Do NOT remove lastSyncTime - we want to remember the user has synced before
+    // This prevents showing the "Existing Data Found" dialog on reconnect
     
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
   }
