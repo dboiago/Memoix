@@ -74,6 +74,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
         title: const Text('External Storage'),
       ),
       body: ListView(
+        padding: const EdgeInsets.only(top: 16),
         children: [
           // Header explanation (only when not connected)
           if (!_isConnected) ...[
