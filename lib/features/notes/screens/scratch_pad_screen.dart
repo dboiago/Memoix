@@ -348,7 +348,7 @@ class _QuickNotesTab extends StatelessWidget {
   }
 }
 
-class _RecipeDraftsTab extends StatefulWidget {
+class _RecipeDraftsTab extends ConsumerStatefulWidget {
   final List<RecipeDraft> drafts;
   final VoidCallback onAddDraft;
   final ValueChanged<RecipeDraft> onEditDraft;
@@ -364,46 +364,38 @@ class _RecipeDraftsTab extends StatefulWidget {
   });
 
   @override
-  State<_RecipeDraftsTab> createState() => _RecipeDraftsTabState();
+  ConsumerState<_RecipeDraftsTab> createState() => _RecipeDraftsTabState();
 }
 
-class _RecipeDraftsTabState extends State<_RecipeDraftsTab> {
-  // Track pending deletes by draft UUID
-  final Map<String, Timer> _pendingDeletes = {};
+class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
   static const _undoDuration = Duration(seconds: 4);
 
-  @override
-  void dispose() {
-    // Do NOT execute pending deletes on dispose - let timers complete naturally
-    // This allows undo to work even if user navigates away and comes back
-    // Timers will automatically execute deletes after their duration expires
-    super.dispose();
-  }
-
-  void _startDeleteTimer(RecipeDraft draft) {
-    _pendingDeletes[draft.uuid]?.cancel();
+  void _startDeleteTimer(String uuid) {
+    final service = ref.read(draftDeletionServiceProvider);
     
-    setState(() {
-      _pendingDeletes[draft.uuid] = Timer(_undoDuration, () {
+    // Schedule delete at service level (persists across widget rebuilds)
+    service.scheduleDraftDelete(
+      uuid: uuid,
+      undoDuration: _undoDuration,
+      onComplete: () {
+        // Refresh the UI after delete completes (only if still mounted)
         if (mounted) {
-          widget.onDeleteDraft(draft);
-          setState(() {
-            _pendingDeletes.remove(draft.uuid);
-          });
+          ref.invalidate(recipeDraftsProvider);
         }
-      });
-    });
+      },
+    );
+    
+    // Trigger rebuild to show pending state
+    setState(() {});
   }
 
   void _undoDelete(String uuid) {
-    _pendingDeletes[uuid]?.cancel();
-    setState(() {
-      _pendingDeletes.remove(uuid);
-    });
+    ref.read(draftDeletionServiceProvider).cancelPendingDelete(uuid);
+    setState(() {});
   }
 
   bool _isPendingDelete(String uuid) {
-    return _pendingDeletes.containsKey(uuid);
+    return ref.read(draftDeletionServiceProvider).isPendingDelete(uuid);
   }
 
   @override
@@ -498,7 +490,7 @@ class _RecipeDraftsTabState extends State<_RecipeDraftsTab> {
           ),
           confirmDismiss: (direction) async {
             // Start inline undo timer instead of immediate delete
-            _startDeleteTimer(draft);
+            _startDeleteTimer(draft.uuid);
             return false; // Don't dismiss - show placeholder instead
           },
           child: Card(
@@ -546,7 +538,7 @@ class _RecipeDraftsTabState extends State<_RecipeDraftsTab> {
                       break;
                     case 'delete':
                       // Use inline undo instead of immediate delete
-                      _startDeleteTimer(draft);
+                      _startDeleteTimer(draft.uuid);
                       break;
                   }
                 },

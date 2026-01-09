@@ -108,3 +108,46 @@ final quickNotesProvider = StreamProvider<String>((ref) {
 final recipeDraftsProvider = StreamProvider<List<RecipeDraft>>((ref) {
   return ref.watch(scratchPadRepositoryProvider).watchAllDrafts();
 });
+
+/// Service for managing draft deletion with undo capability
+/// Stores timers at service level so they persist across widget rebuilds
+class DraftDeletionService {
+  final ScratchPadRepository _repository;
+  
+  // Track pending deletes at service level so they persist across widget rebuilds
+  final Map<String, Timer> _pendingDeletes = {};
+
+  DraftDeletionService(this._repository);
+  
+  /// Schedule a draft for deletion with undo capability
+  void scheduleDraftDelete({
+    required String uuid,
+    required Duration undoDuration,
+    VoidCallback? onComplete,
+  }) {
+    // Cancel any existing pending delete for this UUID
+    _pendingDeletes[uuid]?.cancel();
+    
+    // Start timer
+    _pendingDeletes[uuid] = Timer(undoDuration, () async {
+      _pendingDeletes.remove(uuid);
+      await _repository.deleteDraft(uuid);
+      onComplete?.call();
+    });
+  }
+  
+  /// Cancel a pending delete (undo)
+  void cancelPendingDelete(String uuid) {
+    _pendingDeletes[uuid]?.cancel();
+    _pendingDeletes.remove(uuid);
+  }
+  
+  /// Check if a delete is pending for a UUID
+  bool isPendingDelete(String uuid) => _pendingDeletes.containsKey(uuid);
+}
+
+/// Provider for the draft deletion service
+final draftDeletionServiceProvider = Provider<DraftDeletionService>((ref) {
+  final repository = ref.watch(scratchPadRepositoryProvider);
+  return DraftDeletionService(repository);
+});
