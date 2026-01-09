@@ -131,8 +131,8 @@ class _SharedStorageScreenState
           break;
       }
       
-      // Disconnect all other providers (mutual exclusivity)
-      await StorageProviderManager.disconnectAll(ref);
+      // Disconnect all other providers except the one we just activated (mutual exclusivity)
+      await StorageProviderManager.disconnectAllExcept(ref, exceptProvider: provider);
       
       // Sync recipes to new folder
       if (mounted) {

@@ -13,21 +13,22 @@ import 'shared_storage_manager.dart';
 /// - Shared Storage (Google Drive, OneDrive, etc.)
 /// 
 /// When connecting to any provider, this manager:
-/// 1. Disconnects any active Personal Storage provider
-/// 2. Deactivates any active Shared Storage location
-/// 3. Disconnects the cloud provider used by that Shared Storage
+/// 1. Disconnects competing providers (not the one being connected)
+/// 2. Deactivates competing storage locations
 class StorageProviderManager {
-  /// Disconnect all storage providers and deactivate all storage locations
+  /// Disconnect all storage providers EXCEPT the one being activated
   /// 
-  /// Call this before connecting to ANY new provider to ensure mutual exclusivity
+  /// Use this when activating Shared Storage - it disconnects Personal Storage
+  /// but leaves the Shared Storage provider connected.
   /// 
   /// [ref] - WidgetRef or ProviderRef to access providers
-  static Future<void> disconnectAll(WidgetRef ref) async {
+  /// [exceptProvider] - Provider to keep connected (optional)
+  static Future<void> disconnectAllExcept(WidgetRef ref, {StorageProvider? exceptProvider}) async {
     final prefs = await SharedPreferences.getInstance();
     
-    // 1. Disconnect Personal Storage provider
+    // 1. Disconnect Personal Storage provider (if different from the one we're activating)
     final personalProviderId = prefs.getString('personal_storage_provider_id');
-    if (personalProviderId != null) {
+    if (personalProviderId != null && personalProviderId != exceptProvider?.id) {
       await _disconnectProvider(personalProviderId, ref);
     }
     
@@ -35,19 +36,30 @@ class StorageProviderManager {
     await prefs.remove('personal_storage_provider_id');
     await prefs.remove('personal_storage_path');
     
-    // 2. Deactivate and disconnect Shared Storage
+    // 2. Deactivate Shared Storage (and disconnect its provider if different)
     final sharedManager = SharedStorageManager();
     final storageLocations = await sharedManager.loadRepositories();
     final activeLocation = storageLocations.where((r) => r.isActive).firstOrNull;
     
     if (activeLocation != null) {
-      // Disconnect the provider used by Shared Storage
-      await _disconnectProvider(activeLocation.provider.id, ref);
+      // Only disconnect if it's a different provider than the one we're activating
+      if (exceptProvider == null || activeLocation.provider != exceptProvider) {
+        await _disconnectProvider(activeLocation.provider.id, ref);
+      }
       
       // Deactivate all shared storage locations
       final updated = storageLocations.map((r) => r.copyWith(isActive: false)).toList();
       await sharedManager.saveRepositories(updated);
     }
+  }
+  
+  /// Disconnect all storage providers and deactivate all storage locations
+  /// 
+  /// Use this when connecting to Personal Storage - ensures nothing else is active
+  /// 
+  /// [ref] - WidgetRef or ProviderRef to access providers
+  static Future<void> disconnectAll(WidgetRef ref) async {
+    await disconnectAllExcept(ref, exceptProvider: null);
   }
   
   /// Disconnect a specific provider by ID
