@@ -22,17 +22,20 @@ final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 /// - Compare two recipes from any source (DB, URL, OCR)
 /// - Select ingredients and steps from both recipes
 /// - Send selections to Scratch Pad as a structured draft
+
 class RecipeComparisonScreen extends ConsumerStatefulWidget {
   /// Optional pre-filled recipe for slot 1 or 2
   final Recipe? prefilledRecipe;
-  
   /// Which slot to fill with prefilledRecipe (1 or 2)
   final int targetSlot;
+  /// Whether to clear previous state (default true)
+  final bool clearPreviousState;
 
   const RecipeComparisonScreen({
     super.key,
     this.prefilledRecipe,
     this.targetSlot = 1,
+    this.clearPreviousState = true,
   });
 
   @override
@@ -52,20 +55,23 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
     // Run this after the first frame to ensure safe provider access
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      // 1. ALWAYS reset. This guarantees a clean slate every time you enter the screen.
-      ref.read(recipeComparisonProvider.notifier).reset();
+      // 1. Check the explicit flag
+      if (widget.clearPreviousState) {
+        ref.read(recipeComparisonProvider.notifier).reset();
+      }
 
-      // 2. Handle the argument (if provided) using SMART logic.
+      // 2. Apply the recipe (Merge logic)
       if (widget.prefilledRecipe != null) {
         if (widget.targetSlot == 2) {
-          // Explicit slot request (e.g. from context)
           ref.read(recipeComparisonProvider.notifier).setRecipe2(widget.prefilledRecipe!);
         } else {
-          // Smart Assignment: "Compare" button from Detail Screen usually goes here.
-          // Instead of forcing setRecipe1, we use assignImportedRecipe 
-          // (even though we just reset, this method handles the logic correctly 
-          // and is future-proof if we change the reset behavior).
-          ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(widget.prefilledRecipe!);
+          // If we just cleared, this sets Slot 1. 
+          // If we didn't clear, this smartly assigns to an empty slot.
+          if (widget.clearPreviousState) {
+             ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
+          } else {
+             ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(widget.prefilledRecipe!);
+          }
         }
       }
     });

@@ -1801,7 +1801,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     ref.read(recipeComparisonProvider.notifier).clearPendingImportSlot();
 
     // Navigate to Recipe Comparison with this recipe pre-filled in correct slot
-    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, targetSlot: targetSlot);
+    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, targetSlot: targetSlot, clearPreviousState: false);
   }
 
   Future<void> _saveRecipe() async {
