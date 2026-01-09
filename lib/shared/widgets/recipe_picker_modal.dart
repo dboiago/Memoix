@@ -223,44 +223,6 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
       error: (e, _) => Center(child: Text('Error loading recipes: $e')),
     );
   }
-    final recipesAsync = ref.watch(allModernistRecipesProvider);
-
-    return recipesAsync.when(
-      data: (recipes) {
-        var filtered = recipes.where((recipe) {
-          return _searchQuery.isEmpty ||
-              recipe.name.toLowerCase().contains(_searchQuery) ||
-              (recipe.technique?.toLowerCase().contains(_searchQuery) ?? false);
-        }).toList();
-
-        if (filtered.isEmpty) {
-          return Center(
-            child: Text(
-              _searchQuery.isEmpty ? 'No modernist concepts found' : 'No matching concepts',
-              style: theme.textTheme.bodyLarge?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-            ),
-          );
-        }
-
-        return ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          children: filtered.map((recipe) => _RecipeListItem(
-                name: recipe.name,
-                subtitle: recipe.technique ?? recipe.type.name,
-                onTap: () {
-                  // Convert to standard Recipe for comparison
-                  final standardRecipe = _convertModernistToRecipe(recipe);
-                  Navigator.pop(context, standardRecipe);
-                },
-              )).toList(),
-        );
-      },
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (e, _) => Center(child: Text('Error: $e')),
-    );
-  }
 
   /// Convert SmokingRecipe to standard Recipe format
   Recipe _convertSmokingToRecipe(SmokingRecipe smoking) {
