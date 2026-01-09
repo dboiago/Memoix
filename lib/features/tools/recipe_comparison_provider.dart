@@ -11,6 +11,7 @@ class RecipeComparisonState {
   final Set<int> selectedIngredients2;
   final Set<int> selectedSteps1;
   final Set<int> selectedSteps2;
+  final String? currentDraftUuid;  // Track the current draft being edited
 
   RecipeComparisonState({
     this.recipe1,
@@ -19,6 +20,7 @@ class RecipeComparisonState {
     Set<int>? selectedIngredients2,
     Set<int>? selectedSteps1,
     Set<int>? selectedSteps2,
+    this.currentDraftUuid,
   })  : selectedIngredients1 = selectedIngredients1 ?? {},
         selectedIngredients2 = selectedIngredients2 ?? {},
         selectedSteps1 = selectedSteps1 ?? {},
@@ -31,8 +33,10 @@ class RecipeComparisonState {
     Set<int>? selectedIngredients2,
     Set<int>? selectedSteps1,
     Set<int>? selectedSteps2,
+    String? currentDraftUuid,
     bool clearRecipe1 = false,
     bool clearRecipe2 = false,
+    bool clearDraftUuid = false,
   }) {
     return RecipeComparisonState(
       recipe1: clearRecipe1 ? null : recipe1 ?? this.recipe1,
@@ -41,6 +45,7 @@ class RecipeComparisonState {
       selectedIngredients2: selectedIngredients2 ?? this.selectedIngredients2,
       selectedSteps1: selectedSteps1 ?? this.selectedSteps1,
       selectedSteps2: selectedSteps2 ?? this.selectedSteps2,
+      currentDraftUuid: clearDraftUuid ? null : currentDraftUuid ?? this.currentDraftUuid,
     );
   }
 }
@@ -132,6 +137,11 @@ class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
   /// Reset all state (for when leaving the screen)
   void reset() {
     state = RecipeComparisonState();
+  }
+
+  /// Set the current draft UUID (when sending to scratch pad)
+  void setCurrentDraftUuid(String uuid) {
+    state = state.copyWith(currentDraftUuid: uuid);
   }
 }
 

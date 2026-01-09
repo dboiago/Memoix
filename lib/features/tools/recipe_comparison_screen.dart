@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
@@ -29,15 +31,33 @@ class RecipeComparisonScreen extends ConsumerStatefulWidget {
   ConsumerState<RecipeComparisonScreen> createState() => _RecipeComparisonScreenState();
 }
 
-class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen> {
+class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen> with WidgetsBindingObserver {
+  final _draftTitleController = TextEditingController(text: 'Compared Recipe Draft');
+
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     // Set prefilled recipe if provided
     if (widget.prefilledRecipe != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
       });
+    }
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _draftTitleController.dispose();
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // Reset comparison state when app goes to background
+    if (state == AppLifecycleState.paused) {
+      ref.read(recipeComparisonProvider.notifier).reset();
     }
   }
 
@@ -55,10 +75,10 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
         title: const Text('Compare Recipes'),
         actions: [
           if (hasSelection)
-            IconButton(
-              icon: const Icon(Icons.send),
-              tooltip: 'Send to Scratch Pad',
+            TextButton.icon(
               onPressed: () => _sendToScratchPad(context, ref, comparison),
+              icon: const Icon(Icons.send),
+              label: const Text('Send to Draft'),
             ),
         ],
       ),
@@ -160,17 +180,17 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
           children: [
             ListTile(
               leading: const Icon(Icons.library_books),
-              title: const Text('Select from Library'),
+              title: const Text('Saved Recipes'),
               onTap: () => Navigator.pop(context, 'library'),
             ),
             ListTile(
               leading: const Icon(Icons.link),
-              title: const Text('Import from URL'),
+              title: const Text('URL Import'),
               onTap: () => Navigator.pop(context, 'url'),
             ),
             ListTile(
               leading: const Icon(Icons.camera_alt),
-              title: const Text('Scan Text (OCR)'),
+              title: const Text('OCR Import'),
               onTap: () => Navigator.pop(context, 'ocr'),
             ),
             const SizedBox(height: 16),
@@ -214,7 +234,7 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     WidgetRef ref,
     RecipeComparisonState comparison,
   ) async {
-    // Collect all selected ingredients
+    // Collect all selected ingredients with their preparation notes
     final ingredients = <Ingredient>[];
     for (final index in comparison.selectedIngredients1) {
       if (index < comparison.recipe1!.ingredients.length) {
@@ -227,16 +247,64 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       }
     }
 
-    // Collect all selected steps
+    // Collect all selected steps with their images
     final steps = <String>[];
+    final stepImages = <String>[];
+    final stepImageMap = <String>[];
+    
+    var stepCounter = 0;
+    
+    // Recipe 1 steps
     for (final index in comparison.selectedSteps1) {
       if (index < comparison.recipe1!.directions.length) {
         steps.add(comparison.recipe1!.directions[index]);
+        
+        // Find images for this step
+        final imagesForStep = <String>[];
+        for (var i = 0; i < comparison.recipe1!.stepImageMap.length; i++) {
+          final parts = comparison.recipe1!.stepImageMap[i].split(':');
+          if (parts.length == 2 && int.parse(parts[0]) == index) {
+            final imageIndex = int.parse(parts[1]);
+            if (imageIndex < comparison.recipe1!.stepImages.length) {
+              imagesForStep.add(comparison.recipe1!.stepImages[imageIndex]);
+            }
+          }
+        }
+        
+        // Add images to draft
+        for (final image in imagesForStep) {
+          stepImages.add(image);
+          stepImageMap.add('$stepCounter:${stepImages.length - 1}');
+        }
+        
+        stepCounter++;
       }
     }
+    
+    // Recipe 2 steps
     for (final index in comparison.selectedSteps2) {
       if (index < comparison.recipe2!.directions.length) {
         steps.add(comparison.recipe2!.directions[index]);
+        
+        // Find images for this step
+        final imagesForStep = <String>[];
+        for (var i = 0; i < comparison.recipe2!.stepImageMap.length; i++) {
+          final parts = comparison.recipe2!.stepImageMap[i].split(':');
+          if (parts.length == 2 && int.parse(parts[0]) == index) {
+            final imageIndex = int.parse(parts[1]);
+            if (imageIndex < comparison.recipe2!.stepImages.length) {
+              imagesForStep.add(comparison.recipe2!.stepImages[imageIndex]);
+            }
+          }
+        }
+        
+        // Add images to draft
+        for (final image in imagesForStep) {
+          stepImages.add(image);
+          stepImageMap.add('$stepCounter:${stepImages.length - 1}');
+        }
+        
+        stepCounter++;
       }
     }
 
@@ -245,20 +313,82 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       return;
     }
 
-    // Create a structured draft
+    // Show dialog to confirm title
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Draft Title'),
+        content: TextField(
+          controller: _draftTitleController,
+          decoration: const InputDecoration(
+            labelText: 'Recipe Name',
+            hintText: 'Enter a name for this draft',
+            border: OutlineInputBorder(),
+          ),
+          autofocus: true,
+          textCapitalization: TextCapitalization.words,
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Send to Draft'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true || !mounted) return;
+
+    final titleChanged = _draftTitleController.text.trim() != 'Compared Recipe Draft' &&
+                        _draftTitleController.text.trim().isNotEmpty;
+    
+    // Determine if we should create new draft or update existing
+    final String draftUuid;
+    if (comparison.currentDraftUuid != null && !titleChanged) {
+      // Reuse existing draft UUID if title hasn't changed
+      draftUuid = comparison.currentDraftUuid!;
+    } else {
+      // Create new UUID if title changed or first time
+      draftUuid = const Uuid().v4();
+      ref.read(recipeComparisonProvider.notifier).setCurrentDraftUuid(draftUuid);
+    }
+
+    // Convert Ingredients to DraftIngredients (structured format with preparation notes)
+    final draftIngredients = ingredients.map((i) => DraftIngredient(
+      name: i.name,
+      quantity: i.amount,
+      unit: i.unit,
+      preparation: i.preparation,
+    )).toList();
+
+    // Create or update draft using structured format
     final draft = RecipeDraft()
-      ..uuid = const Uuid().v4()
-      ..name = 'Compared Recipe Draft'
-      ..ingredients = ingredients.map((i) => '${i.amount ?? ''} ${i.unit ?? ''} ${i.name}'.trim()).join('\n')
-      ..directions = steps.join('\n\n')
+      ..uuid = draftUuid
+      ..name = _draftTitleController.text.trim().isEmpty 
+          ? 'Compared Recipe Draft' 
+          : _draftTitleController.text.trim()
+      ..structuredIngredients = draftIngredients
+      ..structuredDirections = steps
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
 
     await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
 
     if (mounted) {
-      MemoixSnackBar.showSuccess('Sent to Scratch Pad');
-      // Navigate to Scratch Pad
+      MemoixSnackBar.showSaved(
+        itemName: draft.name,
+        actionLabel: 'View',
+        onView: () {
+          // Navigate to Scratch Pad with the specific draft
+          AppRoutes.toScratchPad(context);
+        },
+      );
+      
+      // Also navigate immediately to scratch pad
       AppRoutes.toScratchPad(context);
     }
   }
@@ -348,13 +478,11 @@ class _RecipeSlot extends StatelessWidget {
         ...List.generate(recipe!.ingredients.length, (index) {
           final ingredient = recipe!.ingredients[index];
           final isSelected = selectedIngredients.contains(index);
-          return _SelectableItem(
+          
+          return _SelectableIngredient(
             isSelected: isSelected,
             onTap: () => onIngredientTap(index),
-            child: Text(
-              '${ingredient.amount ?? ''} ${ingredient.unit ?? ''} ${ingredient.name}'.trim(),
-              style: theme.textTheme.bodyMedium,
-            ),
+            ingredient: ingredient,
           );
         }),
 
@@ -372,29 +500,248 @@ class _RecipeSlot extends StatelessWidget {
         ...List.generate(recipe!.directions.length, (index) {
           final step = recipe!.directions[index];
           final isSelected = selectedSteps.contains(index);
-          return _SelectableItem(
+          
+          // Find associated image for this step
+          String? stepImagePath;
+          for (final mapping in recipe!.stepImageMap) {
+            final parts = mapping.split(':');
+            if (parts.length == 2 && int.tryParse(parts[0]) == index) {
+              final imageIndex = int.tryParse(parts[1]);
+              if (imageIndex != null && imageIndex < recipe!.stepImages.length) {
+                stepImagePath = recipe!.stepImages[imageIndex];
+              }
+            }
+          }
+          
+          return _SelectableStep(
             isSelected: isSelected,
             onTap: () => onStepTap(index),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '${index + 1}. ',
-                  style: theme.textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                Expanded(
-                  child: Text(
-                    step,
-                    style: theme.textTheme.bodyMedium,
-                  ),
-                ),
-              ],
-            ),
+            stepNumber: index + 1,
+            stepText: step,
+            imagePath: stepImagePath,
           );
         }),
       ],
+    );
+  }
+}
+
+/// Selectable ingredient item with linked preparation bubble
+class _SelectableIngredient extends StatelessWidget {
+  final bool isSelected;
+  final VoidCallback onTap;
+  final Ingredient ingredient;
+
+  const _SelectableIngredient({
+    required this.isSelected,
+    required this.onTap,
+    required this.ingredient,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final hasPrep = ingredient.preparation != null && ingredient.preparation!.isNotEmpty;
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      decoration: BoxDecoration(
+        color: isSelected
+            ? theme.colorScheme.secondaryContainer.withValues(alpha: 0.3)
+            : theme.colorScheme.surface,
+        border: Border.all(
+          color: isSelected
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
+          width: isSelected ? 2 : 1,
+        ),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
+                child: Icon(
+                  isSelected ? Icons.check_circle : Icons.circle_outlined,
+                  size: 20,
+                  color: isSelected
+                      ? theme.colorScheme.secondary
+                      : theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '${ingredient.amount ?? ''} ${ingredient.unit ?? ''} ${ingredient.name}'.trim(),
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                    if (hasPrep) ...[
+                      const SizedBox(height: 6),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          ingredient.preparation!,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.onSurfaceVariant,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Selectable step item with optional image
+class _SelectableStep extends StatelessWidget {
+  final bool isSelected;
+  final VoidCallback onTap;
+  final int stepNumber;
+  final String stepText;
+  final String? imagePath;
+
+  const _SelectableStep({
+    required this.isSelected,
+    required this.onTap,
+    required this.stepNumber,
+    required this.stepText,
+    this.imagePath,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final hasImage = imagePath != null && imagePath!.isNotEmpty;
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      decoration: BoxDecoration(
+        color: isSelected
+            ? theme.colorScheme.secondaryContainer.withValues(alpha: 0.3)
+            : theme.colorScheme.surface,
+        border: Border.all(
+          color: isSelected
+              ? theme.colorScheme.secondary
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
+          width: isSelected ? 2 : 1,
+        ),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Step number in circle (like directions)
+              Container(
+                width: 28,
+                height: 28,
+                margin: const EdgeInsets.only(right: 12),
+                decoration: BoxDecoration(
+                  color: isSelected
+                      ? theme.colorScheme.secondary
+                      : theme.colorScheme.secondaryContainer,
+                  shape: BoxShape.circle,
+                ),
+                child: Center(
+                  child: Text(
+                    '$stepNumber',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: isSelected
+                          ? theme.colorScheme.onSecondary
+                          : theme.colorScheme.onSecondaryContainer,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              // Content
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      stepText,
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                    if (hasImage) ...[
+                      const SizedBox(height: 8),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: imagePath!.startsWith('http://') || imagePath!.startsWith('https://')
+                            ? Image.network(
+                                imagePath!,
+                                height: 120,
+                                width: double.infinity,
+                                fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Container(
+                                    height: 120,
+                                    color: theme.colorScheme.surfaceContainerHighest,
+                                    child: Icon(
+                                      Icons.broken_image,
+                                      color: theme.colorScheme.onSurfaceVariant,
+                                    ),
+                                  );
+                                },
+                              )
+                            : Image.file(
+                                File(imagePath!),
+                                height: 120,
+                                width: double.infinity,
+                                fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Container(
+                                    height: 120,
+                                    color: theme.colorScheme.surfaceContainerHighest,
+                                    child: Icon(
+                                      Icons.broken_image,
+                                      color: theme.colorScheme.onSurfaceVariant,
+                                    ),
+                                  );
+                                },
+                              ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+              // Checkmark
+              const SizedBox(width: 12),
+              Icon(
+                isSelected ? Icons.check_circle : Icons.circle_outlined,
+                size: 20,
+                color: isSelected
+                    ? theme.colorScheme.secondary
+                    : theme.colorScheme.onSurfaceVariant,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -419,11 +766,11 @@ class _SelectableItem extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 8),
       decoration: BoxDecoration(
         color: isSelected
-            ? theme.colorScheme.primaryContainer.withValues(alpha: 0.5)
+            ? theme.colorScheme.secondaryContainer.withValues(alpha: 0.3)
             : theme.colorScheme.surface,
         border: Border.all(
           color: isSelected
-              ? theme.colorScheme.primary
+              ? theme.colorScheme.secondary
               : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 2 : 1,
         ),
@@ -440,7 +787,7 @@ class _SelectableItem extends StatelessWidget {
                 isSelected ? Icons.check_circle : Icons.circle_outlined,
                 size: 20,
                 color: isSelected
-                    ? theme.colorScheme.primary
+                    ? theme.colorScheme.secondary
                     : theme.colorScheme.onSurfaceVariant,
               ),
               const SizedBox(width: 12),

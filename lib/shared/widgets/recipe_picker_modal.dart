@@ -31,7 +31,6 @@ class RecipePickerModal extends ConsumerStatefulWidget {
 
 class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
   String _searchQuery = '';
-  int _selectedTab = 0; // 0 = Recipes, 1 = Smoking, 2 = Modernist
 
   @override
   Widget build(BuildContext context) {
@@ -95,159 +94,135 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
             ),
           ),
 
-          // Tab selector
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              children: [
-                Expanded(
-                  child: SegmentedButton<int>(
-                    segments: const [
-                      ButtonSegment(value: 0, label: Text('Recipes')),
-                      ButtonSegment(value: 1, label: Text('Smoking')),
-                      ButtonSegment(value: 2, label: Text('Modernist')),
-                    ],
-                    selected: {_selectedTab},
-                    onSelectionChanged: (Set<int> selection) {
-                      setState(() => _selectedTab = selection.first);
-                    },
-                  ),
-                ),
-              ],
-            ),
-          ),
-
-          const SizedBox(height: 16),
-
-          // Recipe list
+          // Combined recipe list (no tabs)
           Expanded(
-            child: _buildRecipeList(theme),
+            child: _buildAllRecipes(theme),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildRecipeList(ThemeData theme) {
-    switch (_selectedTab) {
-      case 0:
-        return _buildStandardRecipes(theme);
-      case 1:
-        return _buildSmokingRecipes(theme);
-      case 2:
-        return _buildModernistRecipes(theme);
-      default:
-        return const SizedBox.shrink();
-    }
-  }
-
-  Widget _buildStandardRecipes(ThemeData theme) {
+  Widget _buildAllRecipes(ThemeData theme) {
     final recipesAsync = ref.watch(allRecipesProvider);
+    final smokingAsync = ref.watch(allSmokingRecipesProvider);
+    final modernistAsync = ref.watch(allModernistRecipesProvider);
 
     return recipesAsync.when(
-      data: (recipes) {
-        // Apply search filter
-        var filtered = recipes.where((recipe) {
-          final matchesSearch = _searchQuery.isEmpty ||
-              recipe.name.toLowerCase().contains(_searchQuery) ||
-              (recipe.cuisine?.toLowerCase().contains(_searchQuery) ?? false);
-          
-          // Apply custom filter if provided
-          final matchesCustom = widget.recipeFilter?.call(recipe) ?? true;
-          
-          return matchesSearch && matchesCustom;
-        }).toList();
+      data: (standardRecipes) {
+        return smokingAsync.when(
+          data: (smokingRecipes) {
+            return modernistAsync.when(
+              data: (modernistRecipes) {
+                // Combine all recipes into one list (after conversion)
+                final allRecipes = <Recipe>[];
+                
+                // Add standard recipes
+                for (final recipe in standardRecipes) {
+                  final matchesSearch = _searchQuery.isEmpty ||
+                      recipe.name.toLowerCase().contains(_searchQuery) ||
+                      (recipe.cuisine?.toLowerCase().contains(_searchQuery) ?? false);
+                  final matchesCustom = widget.recipeFilter?.call(recipe) ?? true;
+                  if (matchesSearch && matchesCustom) {
+                    allRecipes.add(recipe);
+                  }
+                }
+                
+                // Convert and add smoking recipes
+                for (final smoking in smokingRecipes) {
+                  if (_searchQuery.isEmpty ||
+                      smoking.name.toLowerCase().contains(_searchQuery) ||
+                      (smoking.item?.toLowerCase().contains(_searchQuery) ?? false)) {
+                    allRecipes.add(_convertSmokingToRecipe(smoking));
+                  }
+                }
+                
+                // Convert and add modernist recipes
+                for (final modernist in modernistRecipes) {
+                  if (_searchQuery.isEmpty ||
+                      modernist.name.toLowerCase().contains(_searchQuery) ||
+                      (modernist.technique?.toLowerCase().contains(_searchQuery) ?? false)) {
+                    allRecipes.add(_convertModernistToRecipe(modernist));
+                  }
+                }
 
-        if (filtered.isEmpty) {
-          return Center(
-            child: Text(
-              _searchQuery.isEmpty ? 'No recipes found' : 'No matching recipes',
-              style: theme.textTheme.bodyLarge?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-            ),
-          );
-        }
-
-        // Group by course
-        final grouped = <String, List<Recipe>>{};
-        for (final recipe in filtered) {
-          grouped.putIfAbsent(recipe.course, () => []).add(recipe);
-        }
-
-        return ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          children: grouped.entries.map((entry) {
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
-                  child: Text(
-                    entry.key,
-                    style: theme.textTheme.titleSmall?.copyWith(
-                      fontWeight: FontWeight.w600,
-                      color: theme.colorScheme.primary,
+                if (allRecipes.isEmpty) {
+                  return Center(
+                    child: Text(
+                      _searchQuery.isEmpty ? 'No recipes found' : 'No matching recipes',
+                      style: theme.textTheme.bodyLarge?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
                     ),
-                  ),
-                ),
-                ...entry.value.map((recipe) => _RecipeListItem(
-                      name: recipe.name,
-                      subtitle: recipe.cuisine ?? '',
-                      onTap: () => Navigator.pop(context, recipe),
-                    )),
-                const SizedBox(height: 8),
-              ],
+                  );
+                }
+
+                // Group by course
+                final grouped = <String, List<Recipe>>{};
+                for (final recipe in allRecipes) {
+                  grouped.putIfAbsent(recipe.course, () => []).add(recipe);
+                }
+
+                // Define course order matching main screen
+                const courseOrder = [
+                  'Apps', 'Soups', 'Mains', 'Veg\'n', 'Sides', 'Salads', 
+                  'Desserts', 'Brunch', 'Drinks', 'Breads', 'Sauces', 'Rubs', 'Pickles',
+                  'Modernist', 'Smoking'
+                ];
+
+                // Sort courses by defined order
+                final sortedCourses = grouped.keys.toList()..sort((a, b) {
+                  final aIndex = courseOrder.indexOf(a);
+                  final bIndex = courseOrder.indexOf(b);
+                  if (aIndex == -1 && bIndex == -1) return a.compareTo(b);
+                  if (aIndex == -1) return 1;
+                  if (bIndex == -1) return -1;
+                  return aIndex.compareTo(bIndex);
+                });
+
+                return ListView(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  children: sortedCourses.map((course) {
+                    final recipes = grouped[course]!;
+                    // Capitalize first letter of course name
+                    final displayName = course[0].toUpperCase() + course.substring(1);
+                    
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: Text(
+                            displayName,
+                            style: theme.textTheme.titleSmall?.copyWith(
+                              fontWeight: FontWeight.w600,
+                              color: theme.colorScheme.primary,
+                            ),
+                          ),
+                        ),
+                        ...recipes.map((recipe) => _RecipeListItem(
+                              name: recipe.name,
+                              subtitle: recipe.cuisine ?? recipe.course,
+                              onTap: () => Navigator.pop(context, recipe),
+                            )),
+                        const SizedBox(height: 8),
+                      ],
+                    );
+                  }).toList(),
+                );
+              },
+              loading: () => const Center(child: CircularProgressIndicator()),
+              error: (e, _) => Center(child: Text('Error loading modernist: $e')),
             );
-          }).toList(),
+          },
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (e, _) => Center(child: Text('Error loading smoking: $e')),
         );
       },
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (e, _) => Center(child: Text('Error: $e')),
+      error: (e, _) => Center(child: Text('Error loading recipes: $e')),
     );
   }
-
-  Widget _buildSmokingRecipes(ThemeData theme) {
-    final recipesAsync = ref.watch(allSmokingRecipesProvider);
-
-    return recipesAsync.when(
-      data: (recipes) {
-        var filtered = recipes.where((recipe) {
-          return _searchQuery.isEmpty ||
-              recipe.name.toLowerCase().contains(_searchQuery) ||
-              (recipe.item?.toLowerCase().contains(_searchQuery) ?? false);
-        }).toList();
-
-        if (filtered.isEmpty) {
-          return Center(
-            child: Text(
-              _searchQuery.isEmpty ? 'No smoking recipes found' : 'No matching recipes',
-              style: theme.textTheme.bodyLarge?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-            ),
-          );
-        }
-
-        return ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          children: filtered.map((recipe) => _RecipeListItem(
-                name: recipe.name,
-                subtitle: '${recipe.item} • ${recipe.time}',
-                onTap: () {
-                  // Convert to standard Recipe for comparison
-                  final standardRecipe = _convertSmokingToRecipe(recipe);
-                  Navigator.pop(context, standardRecipe);
-                },
-              )).toList(),
-        );
-      },
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (e, _) => Center(child: Text('Error: $e')),
-    );
-  }
-
-  Widget _buildModernistRecipes(ThemeData theme) {
     final recipesAsync = ref.watch(allModernistRecipesProvider);
 
     return recipesAsync.when(

@@ -21,6 +21,7 @@ import '../../cheese/repository/cheese_repository.dart';
 import '../../cheese/models/cheese_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/models/cellar_entry.dart';
+import '../../notes/repository/scratch_pad_repository.dart';
 import '../../settings/screens/settings_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -131,10 +132,18 @@ class _CourseGridView extends ConsumerWidget {
                     final bool isModernist = course.slug == 'modernist';
                     final bool isCheese = course.slug == 'cheese';
                     final bool isCellar = course.slug == 'cellar';
+                    final bool isScratch = course.slug == 'scratch';
                     
                     // Get count for this category (respecting hideMemoix setting)
                     final int itemCount;
-                    if (isPizza) {
+                    if (isScratch) {
+                      // For Scratch Pad, show draft count
+                      final draftsAsync = ref.watch(recipeDraftsProvider);
+                      itemCount = draftsAsync.maybeWhen(
+                        data: (drafts) => drafts.length,
+                        orElse: () => 0,
+                      );
+                    } else if (isPizza) {
                       final pizzasAsync = ref.watch(allPizzasProvider);
                       itemCount = pizzasAsync.maybeWhen(
                         data: (pizzas) => hideMemoix
