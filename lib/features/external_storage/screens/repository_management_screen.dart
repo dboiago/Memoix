@@ -206,17 +206,7 @@ class _RepositoryManagementScreenState
             throw StateError('Google Drive connection could not be restored. Please reconnect.');
           }
           
-          // Brief delay to ensure Drive API is fully initialized
-          await Future.delayed(const Duration(milliseconds: 100));
-          
-          try {
-            await storage.switchRepository(repository.folderId, repository.name);
-          } catch (e) {
-            // If verification fails but we're connected, the switch still succeeded
-            // The folder access check might fail due to API timing, but the repository is set
-            debugPrint('GoogleDriveStorage: switchRepository warning: $e');
-            // Don't rethrow - the switch was successful in the manager
-          }
+          await storage.switchRepository(repository.folderId, repository.name);
           break;
         case StorageProvider.oneDrive:
           // OneDrive switch is handled in RepositoryManager.setActiveRepository

@@ -366,18 +366,26 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
   Future<void> switchRepository(String folderId, String repositoryName) async {
     _ensureConnected();
 
-    // Verify access to new folder
-    final hasAccess = await verifyFolderAccess(folderId);
-    if (!hasAccess) {
-      throw Exception('Cannot access repository folder');
-    }
-
-    // Update cached values
+    // Update cached values immediately
+    // Folder ID comes from RepositoryManager (trusted source), no need to verify
     _folderId = folderId;
     _folderPath = '/My Drive/$repositoryName';
     await _saveStoredState();
 
     debugPrint('GoogleDriveStorage: Switched to repository "$repositoryName"');
+    
+    // Verify access in background (don't block the switch)
+    // This helps catch permission issues but doesn't prevent the switch
+    unawaited(Future.delayed(const Duration(milliseconds: 500)).then((_) async {
+      try {
+        final hasAccess = await verifyFolderAccess(folderId);
+        if (!hasAccess) {
+          debugPrint('GoogleDriveStorage: Warning - folder access verification failed for $repositoryName');
+        }
+      } catch (e) {
+        debugPrint('GoogleDriveStorage: Background verification error: $e');
+      }
+    }));
   }
 
   /// Check and verify pending repositories on app startup
