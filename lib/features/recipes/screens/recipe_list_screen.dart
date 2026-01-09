@@ -219,7 +219,54 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
               // Recipe list
               Expanded(
-                child: _buildRecipeList(recipes),
+                child: FutureBuilder<List<Recipe>>(
+                  future: _searchRecipes(),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return const Center(child: CircularProgressIndicator());
+                    }
+                    final filteredRecipes = snapshot.data ?? [];
+                    if (filteredRecipes.isEmpty) {
+                      return _buildEmptyState();
+                    }
+                    final theme = Theme.of(context);
+                    return ListView.builder(
+                      padding: const EdgeInsets.only(bottom: 80),
+                      itemCount: filteredRecipes.length,
+                      itemBuilder: (context, index) {
+                        final recipe = filteredRecipes[index];
+                        return Dismissible(
+                          key: Key('recipe_swipe_${recipe.uuid}'),
+                          direction: DismissDirection.startToEnd,
+                          background: Container(
+                            color: theme.colorScheme.primary.withOpacity(0.2),
+                            alignment: Alignment.centerLeft,
+                            padding: const EdgeInsets.only(left: 16),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.calendar_today, color: theme.colorScheme.primary),
+                                const SizedBox(width: 8),
+                                Text(
+                                  'Add to Meal Plan',
+                                  style: TextStyle(
+                                    color: theme.colorScheme.primary,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          child: RecipeCard(
+                            recipe: recipe,
+                            onTap: () => AppRoutes.toRecipeDetail(context, recipe.uuid),
+                            isCompact: ref.watch(compactViewProvider),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                ),
               ),
             ],
           );
