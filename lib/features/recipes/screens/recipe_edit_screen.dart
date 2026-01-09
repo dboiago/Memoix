@@ -1693,16 +1693,16 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..name = name
         ..amount = amount
         ..unit = unit
-        ..preparation = row.preparationController.text.trim().isEmpty 
+        ..preparation = row.notesController.text.trim().isEmpty 
             ? null 
-            : row.preparationController.text.trim()
+            : row.notesController.text.trim()
         ..section = currentSection
       );
     }
     
     // Parse directions
-    final directions = _directionControllers
-        .map((c) => c.text.trim())
+    final directions = _directionRows
+        .map((row) => row.controller.text.trim())
         .where((text) => text.isNotEmpty)
         .toList();
     
@@ -1711,9 +1711,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       name: _nameController.text.trim(),
       course: _selectedCourse,
       cuisine: _selectedCuisine,
-      subcategory: _subcategoryController.text.trim().isEmpty 
+      subcategory: _regionController.text.trim().isEmpty 
           ? null 
-          : _subcategoryController.text.trim(),
+          : _regionController.text.trim(),
       serves: _servesController.text.trim().isEmpty 
           ? null 
           : _servesController.text.trim(),
