@@ -22,9 +22,6 @@ final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 /// - Compare two recipes from any source (DB, URL, OCR)
 /// - Select ingredients and steps from both recipes
 /// - Send selections to Scratch Pad as a structured draft
-// Use correct provider type for autoDispose
-typedef RecipeComparisonProviderType = AutoDisposeStateNotifierProvider<RecipeComparisonNotifier, RecipeComparisonState>;
-
 class RecipeComparisonScreen extends ConsumerStatefulWidget {
   /// Optional pre-filled recipe for slot 1 or 2
   final Recipe? prefilledRecipe;
@@ -86,11 +83,13 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
   
   // RouteAware methods - called when route visibility changes
   @override
-  void didPushNext() {
-    // Another route was pushed on top of this one - user navigated away
-    _isActive = false;
-    ref.read(recipeComparisonProvider.notifier).reset();
-  }
+    void didPushNext() {
+      // Another route was pushed on top of this one (e.g. Import Screen).
+      _isActive = false;
+      
+      // EXPLANATION: If we reset here, we lose the 'pendingImportSlot' 
+      // we just set before navigating to the import screen.
+    }
   
   @override
   void didPopNext() {
