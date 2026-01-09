@@ -45,20 +45,28 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
   // Track if this screen is currently visible
   bool _isActive = true;
 
-  @override
+@override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    // Set prefilled recipe in the requested slot
-    if (widget.prefilledRecipe != null) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
+
+    // Run this after the first frame to ensure safe provider access
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // 1. ALWAYS reset the state when entering this screen.
+      // This fixes the "sloppy" behavior where old data persists if the 
+      // previous screen instance wasn't fully disposed.
+      ref.read(recipeComparisonProvider.notifier).reset();
+
+      // 2. If we have a prefilled recipe (e.g. from Detail Screen), apply it NOW.
+      // This runs immediately after the reset, so the user sees the correct state.
+      if (widget.prefilledRecipe != null) {
         if (widget.targetSlot == 2) {
           ref.read(recipeComparisonProvider.notifier).setRecipe2(widget.prefilledRecipe!);
         } else {
           ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
         }
-      });
-    }
+      }
+    });
   }
   
   @override
