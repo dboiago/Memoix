@@ -117,6 +117,13 @@ class Recipe {
   /// Nutrition information (optional, imported from URL or user-added)
   NutritionInfo? nutrition;
 
+
+  /// Modernist type (e.g., "Concept", "Technique")
+  String? modernistType;
+
+  /// Smoking type (e.g., "Recipe", "Pit Note")
+  String? smokingType;
+
   /// Glass type for drinks (e.g., "Coupe", "Highball", "Rocks")
   String? glass;
 
