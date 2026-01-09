@@ -524,6 +524,40 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   }
 
   void _showAddOptions(BuildContext context) {
-    // Modal logic removed. No-op.
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.edit),
+              title: const Text('Create Manually'),
+              onTap: () {
+                Navigator.pop(ctx);
+                // Create a new empty recipe and navigate to edit
+                AppRoutes.toRecipeEdit(context, course: widget.course);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.link),
+              title: const Text('Import from URL'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toURLImport(context, course: widget.course);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.camera_alt),
+              title: const Text('Scan from Photo (OCR)'),
+              onTap: () {
+                Navigator.pop(ctx);
+                AppRoutes.toOCRImport(context, course: widget.course);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -34,13 +34,20 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   void initState() {
     super.initState();
     _tabController = TabController(
-      length: 2, 
+      length: 2,
       vsync: this,
       initialIndex: widget.draftToEdit != null ? 1 : 0,
     );
-    _notesController = TextEditingController();
     
-    // Auto-open draft editor if UUID was provided
+    // CRITICAL: Listen to tab changes to toggle the FAB
+    _tabController.addListener(() {
+      if (!_tabController.indexIsChanging) {
+        setState(() {}); // Rebuilds the widget to show/hide FAB
+      }
+    });
+
+    _notesController = TextEditingController();
+
     if (widget.draftToEdit != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _openDraftByUuid(widget.draftToEdit!);
