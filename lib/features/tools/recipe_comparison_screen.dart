@@ -262,9 +262,11 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
         }
         break;
       case 'url':
+        ref.read(recipeComparisonProvider.notifier).setPendingImportSlot(slot);
         AppRoutes.toURLImport(context);
         break;
       case 'ocr':
+        ref.read(recipeComparisonProvider.notifier).setPendingImportSlot(slot);
         AppRoutes.toOCRScanner(context);
         break;
     }

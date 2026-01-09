@@ -14,6 +14,7 @@ import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/screens/smoking_edit_screen.dart';
 import '../../tools/recipe_comparison_screen.dart';
+import '../../tools/recipe_comparison_provider.dart';
 import '../models/course.dart';
 import '../models/recipe.dart';
 import '../models/cuisine.dart';
@@ -132,6 +133,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         course == 'sandwiches' || course == 'drinks') {
       return false;
     }
+    // Allow all others including 'smoking', 'modernist', and standard courses
     return true;
   }
 

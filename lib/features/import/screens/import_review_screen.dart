@@ -31,6 +31,7 @@ import '../../smoking/screens/smoking_detail_screen.dart';
 import '../../smoking/screens/smoking_list_screen.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../models/recipe_import_result.dart';
+import '../../tools/recipe_comparison_provider.dart';
 
 /// Screen for reviewing and mapping imported recipe data
 /// Shown when confidence is below threshold or user wants to review
@@ -1421,7 +1422,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       recipe = _buildRecipe();
     }
 
-    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe);
+    // Check if there's a pending import slot from comparison screen
+    final comparisonState = ref.read(recipeComparisonProvider);
+    final targetSlot = comparisonState.pendingImportSlot ?? 1;
+    
+    // Clear the pending slot
+    ref.read(recipeComparisonProvider.notifier).clearPendingImportSlot();
+
+    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, targetSlot: targetSlot);
   }
 
   /// Build a ModernistRecipe from import data
@@ -1810,8 +1818,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
     if (!mounted) return;
 
-    // Navigate to Recipe Comparison with this recipe pre-filled
-    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe);
+    // Check if there's a pending import slot from comparison screen
+    final comparisonState = ref.read(recipeComparisonProvider);
+    final targetSlot = comparisonState.pendingImportSlot ?? 1;
+    
+    // Clear the pending slot
+    ref.read(recipeComparisonProvider.notifier).clearPendingImportSlot();
+
+    // Navigate to Recipe Comparison with this recipe pre-filled in correct slot
+    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, targetSlot: targetSlot);
   }
 
   Future<void> _saveRecipe() async {

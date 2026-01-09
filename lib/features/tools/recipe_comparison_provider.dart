@@ -12,6 +12,7 @@ class RecipeComparisonState {
   final Set<int> selectedSteps1;
   final Set<int> selectedSteps2;
   final String? currentDraftUuid;  // Track the current draft being edited
+  final int? pendingImportSlot;  // Track which slot (1 or 2) a pending import should fill
 
   RecipeComparisonState({
     this.recipe1,
@@ -21,6 +22,7 @@ class RecipeComparisonState {
     Set<int>? selectedSteps1,
     Set<int>? selectedSteps2,
     this.currentDraftUuid,
+    this.pendingImportSlot,
   })  : selectedIngredients1 = selectedIngredients1 ?? {},
         selectedIngredients2 = selectedIngredients2 ?? {},
         selectedSteps1 = selectedSteps1 ?? {},
@@ -34,9 +36,11 @@ class RecipeComparisonState {
     Set<int>? selectedSteps1,
     Set<int>? selectedSteps2,
     String? currentDraftUuid,
+    int? pendingImportSlot,
     bool clearRecipe1 = false,
     bool clearRecipe2 = false,
     bool clearDraftUuid = false,
+    bool clearPendingImportSlot = false,
   }) {
     return RecipeComparisonState(
       recipe1: clearRecipe1 ? null : recipe1 ?? this.recipe1,
@@ -46,6 +50,7 @@ class RecipeComparisonState {
       selectedSteps1: selectedSteps1 ?? this.selectedSteps1,
       selectedSteps2: selectedSteps2 ?? this.selectedSteps2,
       currentDraftUuid: clearDraftUuid ? null : currentDraftUuid ?? this.currentDraftUuid,
+      pendingImportSlot: clearPendingImportSlot ? null : pendingImportSlot ?? this.pendingImportSlot,
     );
   }
 }
@@ -142,6 +147,16 @@ class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
   /// Set the current draft UUID (when sending to scratch pad)
   void setCurrentDraftUuid(String uuid) {
     state = state.copyWith(currentDraftUuid: uuid);
+  }
+  
+  /// Set which slot a pending import should fill
+  void setPendingImportSlot(int slot) {
+    state = state.copyWith(pendingImportSlot: slot);
+  }
+  
+  /// Clear pending import slot
+  void clearPendingImportSlot() {
+    state = state.copyWith(clearPendingImportSlot: true);
   }
 }
 
