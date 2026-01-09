@@ -82,6 +82,16 @@ class _SharedStorageScreenState
       switch (provider) {
         case StorageProvider.googleDrive:
           final storage = ref.read(googleDriveStorageProvider);
+          
+          // Ensure Google Drive is connected before attempting to create folder
+          if (!storage.isConnected) {
+            // Try to connect
+            final connected = await storage.connect();
+            if (!connected) {
+              throw Exception('Please connect to Google Drive first');
+            }
+          }
+          
           folderId = await storage.createFolder(name);
           
           // Register and switch
@@ -136,11 +146,11 @@ class _SharedStorageScreenState
       _loadRepositories();
       
       if (mounted) {
-        MemoixSnackBar.showSuccess('Repository "$name" created and synced');
+        MemoixSnackBar.showSuccess('Shared storage "$name" created and synced');
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to create repository: $e');
+        MemoixSnackBar.showError('Failed to create shared storage: $e');
       }
     }
   }
@@ -229,19 +239,66 @@ class _SharedStorageScreenState
       _loadRepositories();
       
       if (mounted) {
-        MemoixSnackBar.showError('Failed to switch repository: $e');
+        MemoixSnackBar.showError('Failed to switch storage: $e');
       }
     }
   }
 
-  Future<void> _deleteRepository(StorageLocation repository) async {
+  Future<void> _disconnectStorage(StorageLocation storage) async {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Remove Repository'),
+        title: const Text('Disconnect Storage'),
         content: Text(
-          'Remove "${repository.name}" from this device?\n\n'
-          'This will not delete the ${repository.provider.displayName} folder.',
+          'Disconnect from "${storage.name}"?\n\n'
+          'You can reconnect to it later from the storage list.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Disconnect'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true || !mounted) return;
+
+    try {
+      // Just deactivate, don't delete
+      final repos = await _manager.loadRepositories();
+      final updated = repos.map((r) {
+        if (r.id == storage.id) {
+          return r.copyWith(isActive: false);
+        }
+        return r;
+      }).toList();
+      await _manager.saveRepositories(updated);
+      
+      _loadRepositories();
+      
+      if (mounted) {
+        MemoixSnackBar.show('Disconnected from "${storage.name}"');
+      }
+    } catch (e) {
+      if (mounted) {
+        MemoixSnackBar.showError('Failed to disconnect: $e');
+      }
+    }
+  }
+
+  Future<void> _deleteStorage(StorageLocation storage) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Remove Storage Location'),
+        content: Text(
+          'Remove "${storage.name}" from this device?\n\n'
+          'This will not delete the ${storage.provider.displayName} folder.',
         ),
         actions: [
           TextButton(
@@ -262,34 +319,34 @@ class _SharedStorageScreenState
     if (confirmed != true || !mounted) return;
 
     try {
-      await _manager.removeRepository(repository.id);
+      await _manager.removeRepository(storage.id);
       _loadRepositories();
       
       if (mounted) {
-        MemoixSnackBar.show('Repository removed');
+        MemoixSnackBar.show('Storage location removed');
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to remove repository: $e');
+        MemoixSnackBar.showError('Failed to remove storage location: $e');
       }
     }
   }
 
-  Future<void> _verifyRepository(StorageLocation repository) async {
+  Future<void> _verifyStorage(StorageLocation storage) async {
     try {
-      final storage = ref.read(googleDriveStorageProvider);
-      final hasAccess = await storage.verifyFolderAccess(repository.folderId);
+      final driveStorage = ref.read(googleDriveStorageProvider);
+      final hasAccess = await driveStorage.verifyFolderAccess(storage.folderId);
 
       if (!mounted) return;
 
       if (hasAccess) {
-        await _manager.markAsVerified(repository.id);
+        await _manager.markAsVerified(storage.id);
         _loadRepositories();
-        MemoixSnackBar.showSuccess('Access verified for "${repository.name}"!');
+        MemoixSnackBar.showSuccess('Access verified for "${storage.name}"!');
       } else {
-        await _manager.markAsAccessDenied(repository.id);
+        await _manager.markAsAccessDenied(storage.id);
         _loadRepositories();
-        MemoixSnackBar.showError('Access denied. Request permission from repository owner.');
+        MemoixSnackBar.showError('Access denied. Request permission from storage owner.');
       }
     } catch (e) {
       if (mounted) {
@@ -369,11 +426,11 @@ class _SharedStorageScreenState
             itemBuilder: (context, index) {
               final repo = repositories[index];
               return _RepositoryCard(
-                repository: repo,
+                storage: repo,
                 onSwitch: () => _switchRepository(repo),
                 onShare: () => _shareRepository(repo),
-                onDelete: () => _deleteRepository(repo),
-                onVerify: () => _verifyRepository(repo),
+                onDelete: () => _deleteStorage(repo),
+                onVerify: () => _verifyStorage(repo),
                 onRefresh: _loadRepositories,
               );
             },
@@ -385,7 +442,7 @@ class _SharedStorageScreenState
 }
 
 class _RepositoryCard extends ConsumerWidget {
-  final StorageLocation repository;
+  final StorageLocation storage;
   final VoidCallback onSwitch;
   final VoidCallback onShare;
   final VoidCallback onDelete;
@@ -393,7 +450,7 @@ class _RepositoryCard extends ConsumerWidget {
   final VoidCallback onRefresh;
 
   const _RepositoryCard({
-    required this.repository,
+    required this.storage,
     required this.onSwitch,
     required this.onShare,
     required this.onDelete,
@@ -407,7 +464,7 @@ class _RepositoryCard extends ConsumerWidget {
     final syncStatus = ref.watch(syncStatusProvider);
 
     // Active repository: Full card with sync controls
-    if (repository.isActive) {
+    if (storage.isActive) {
       return Padding(
         padding: const EdgeInsets.all(16),
         child: Card(
@@ -420,7 +477,7 @@ class _RepositoryCard extends ConsumerWidget {
                 Row(
                   children: [
                     Icon(
-                      repository.provider == StorageProvider.oneDrive
+                      storage.provider == StorageProvider.oneDrive
                           ? Icons.grid_view
                           : Icons.cloud_outlined,
                       color: theme.colorScheme.primary,
@@ -431,14 +488,14 @@ class _RepositoryCard extends ConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            repository.name,
+                            storage.name,
                             style: theme.textTheme.titleMedium?.copyWith(
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            repository.provider.displayName,
+                            storage.provider.displayName,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.colorScheme.onSurfaceVariant,
                             ),
@@ -453,9 +510,9 @@ class _RepositoryCard extends ConsumerWidget {
                 const SizedBox(height: 8),
 
                 // Last synced timestamp
-                if (!repository.isPendingVerification)
+                if (!storage.isPendingVerification)
                   Text(
-                    _getSyncStatusText(repository),
+                    _getSyncStatusText(storage),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.onSurfaceVariant,
                     ),
@@ -480,9 +537,9 @@ class _RepositoryCard extends ConsumerWidget {
                 // Disconnect button
                 Center(
                   child: TextButton(
-                    onPressed: syncStatus.isInProgress ? null : () => onDelete(),
+                    onPressed: syncStatus.isInProgress ? null : () => _disconnectStorage(storage),
                     child: Text(
-                      repository.isPendingVerification ? 'Remove' : 'Disconnect',
+                      storage.isPendingVerification ? 'Remove' : 'Disconnect',
                       style: TextStyle(
                         color: theme.colorScheme.secondary,
                       ),
@@ -508,7 +565,7 @@ class _RepositoryCard extends ConsumerWidget {
             child: Row(
               children: [
                 Icon(
-                  repository.provider == StorageProvider.oneDrive
+                  storage.provider == StorageProvider.oneDrive
                       ? Icons.grid_view
                       : Icons.cloud_outlined,
                   color: theme.colorScheme.onSurfaceVariant,
@@ -519,13 +576,13 @@ class _RepositoryCard extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        repository.name,
+                        storage.name,
                         style: theme.textTheme.titleMedium,
                       ),
                       const SizedBox(height: 4),
-                      if (repository.isPendingVerification) ...[
+                      if (storage.isPendingVerification) ...[
                         Text(
-                          repository.accessDenied
+                          storage.accessDenied
                               ? 'Access denied'
                               : 'Pending verification',
                           style: theme.textTheme.bodySmall?.copyWith(
@@ -534,7 +591,7 @@ class _RepositoryCard extends ConsumerWidget {
                         ),
                       ] else ...[
                         Text(
-                          '${repository.provider.displayName} • ${_getSyncStatusText(repository)}',
+                          '${storage.provider.displayName} • ${_getSyncStatusText(storage)}',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -559,6 +616,9 @@ class _RepositoryCard extends ConsumerWidget {
                         break;
                       case 'verify':
                         onVerify();
+                        break;
+                      case 'disconnect':
+                        _disconnectStorage(storage);
                         break;
                       case 'delete':
                         onDelete();
@@ -595,7 +655,7 @@ class _RepositoryCard extends ConsumerWidget {
                           ],
                         ),
                       ),
-                    if (repository.isPendingVerification)
+                    if (storage.isPendingVerification)
                       PopupMenuItem(
                         value: 'verify',
                         child: Row(
@@ -610,20 +670,33 @@ class _RepositoryCard extends ConsumerWidget {
                           ],
                         ),
                       ),
+                    if (!storage.isPendingVerification)
+                      PopupMenuItem(
+                        value: 'disconnect',
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.cloud_off,
+                              size: 20,
+                              color: theme.colorScheme.onSurface,
+                            ),
+                            const SizedBox(width: 12),
+                            const Text('Disconnect'),
+                          ],
+                        ),
+                      ),
                     PopupMenuItem(
                       value: 'delete',
                       child: Row(
                         children: [
                           Icon(
-                            repository.isPendingVerification
-                                ? Icons.delete_outline
-                                : Icons.cloud_off,
+                            Icons.delete_outline,
                             size: 20,
                             color: theme.colorScheme.secondary,
                           ),
                           const SizedBox(width: 12),
                           Text(
-                            repository.isPendingVerification ? 'Remove' : 'Disconnect',
+                              storage.isPendingVerification ? 'Remove' : 'Delete',
                             style: TextStyle(
                               color: theme.colorScheme.secondary,
                             ),
