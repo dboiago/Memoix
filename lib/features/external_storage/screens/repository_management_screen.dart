@@ -184,6 +184,11 @@ class _RepositoryManagementScreenState
   }
 
   Future<void> _switchRepository(DriveRepository repository) async {
+    // Show loading indicator
+    if (mounted) {
+      MemoixSnackBar.show('Switching to "${repository.name}"...');
+    }
+    
     try {      
       // Update active repository in manager (handles provider initialization)
       await _manager.setActiveRepository(repository.id);
@@ -192,6 +197,17 @@ class _RepositoryManagementScreenState
       switch (repository.provider) {
         case StorageProvider.googleDrive:
           final storage = ref.read(googleDriveStorageProvider);
+          
+          // Ensure Google Drive is connected before switching
+          if (!storage.isConnected) {
+            debugPrint('GoogleDriveStorage not connected, attempting to restore session...');
+            await storage.initialize();
+            
+            if (!storage.isConnected) {
+              throw StateError('Google Drive connection could not be restored. Please reconnect.');
+            }
+          }
+          
           await storage.switchRepository(repository.folderId, repository.name);
           break;
         case StorageProvider.oneDrive:
@@ -386,7 +402,7 @@ class _RepositoryCard extends ConsumerWidget {
     // Active repository: Full card with sync controls
     if (repository.isActive) {
       return Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: const EdgeInsets.all(16),
         child: Card(
           child: Padding(
             padding: const EdgeInsets.all(16),
