@@ -310,7 +310,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   child: const Text('Edit More Details'),
                 ),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 8),
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: _openInCompareView,
+                  child: const Text('Compare'),
+                ),
+              ),
+              const SizedBox(width: 8),
               Expanded(
                 child: FilledButton(
                   onPressed: _saveRecipe,
@@ -1351,6 +1358,18 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         ),
       );
     }
+  }
+
+  /// Open recipe comparison view with this imported recipe
+  void _openInCompareView() {
+    // Only support standard recipes for comparison (not Modernist, Pizza, Smoking)
+    if (_isModernistCourse || _isSmokingCourse || _isPizzasCourse) {
+      MemoixSnackBar.show('Recipe comparison is only available for standard recipes');
+      return;
+    }
+
+    final recipe = _buildRecipe();
+    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe);
   }
 
   /// Build a ModernistRecipe from import data

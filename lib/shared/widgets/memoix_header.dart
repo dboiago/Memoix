@@ -26,6 +26,7 @@ class MemoixHeader extends StatelessWidget {
     this.onFavoritePressed,
     this.onLogCookPressed,
     this.onSharePressed,
+    this.onComparePressed,
     this.onEditPressed,
     this.onDuplicatePressed,
     this.onDeletePressed,
@@ -48,6 +49,9 @@ class MemoixHeader extends StatelessWidget {
 
   /// Callback when share button is pressed.
   final VoidCallback? onSharePressed;
+
+  /// Callback when compare is selected from menu.
+  final VoidCallback? onComparePressed;
 
   /// Callback when edit is selected from menu.
   final VoidCallback? onEditPressed;
@@ -254,6 +258,9 @@ class MemoixHeader extends StatelessWidget {
               PopupMenuButton<String>(
                 onSelected: (value) {
                   switch (value) {
+                    case 'compare':
+                      onComparePressed?.call();
+                      break;
                     case 'edit':
                       onEditPressed?.call();
                       break;
@@ -267,6 +274,8 @@ class MemoixHeader extends StatelessWidget {
                 },
                 constraints: const BoxConstraints(maxWidth: 200),
                 itemBuilder: (_) => [
+                  if (onComparePressed != null)
+                    const PopupMenuItem(value: 'compare', child: Text('Compare')),
                   if (onEditPressed != null)
                     const PopupMenuItem(value: 'edit', child: Text('Edit')),
                   if (onDuplicatePressed != null)

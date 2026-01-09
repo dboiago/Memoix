@@ -38,6 +38,7 @@ import '../../features/statistics/screens/statistics_screen.dart';
 import '../../features/favourites/screens/favourites_screen.dart';
 import '../../features/tools/measurement_converter.dart';
 import '../../features/tools/kitchen_timer_screen.dart';
+import '../../features/tools/recipe_comparison_screen.dart';
 import '../../features/notes/screens/scratch_pad_screen.dart';
 import '../../features/personal_storage/screens/personal_storage_screen.dart';
 import '../../features/personal_storage/screens/shared_storage_screen.dart';
@@ -206,6 +207,14 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => const ScratchPadScreen(),
+      ),
+    );
+  }
+
+  static void toRecipeComparison(BuildContext context, {Recipe? prefilledRecipe}) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => RecipeComparisonScreen(prefilledRecipe: prefilledRecipe),
       ),
     );
   }

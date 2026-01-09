@@ -107,6 +107,14 @@ class AppDrawer extends StatelessWidget {
                     },
                   ),
                   _DrawerTile(
+                    icon: Icons.compare_arrows,
+                    title: 'Compare Recipes',
+                    onTap: () {
+                      Navigator.pop(context);
+                      AppRoutes.toRecipeComparison(context);
+                    },
+                  ),
+                  _DrawerTile(
                     icon: Icons.note_outlined,
                     title: 'Scratch Pad',
                     onTap: () {
