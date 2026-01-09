@@ -60,46 +60,23 @@ class RecipeRepository {
     return _db.recipes.filter().isFavoriteEqualTo(true).findAll();
   }
 
-  /// Search recipes by name
-  Future<List<Recipe>> searchRecipes(String query) async {
+  /// Search recipes by name, ingredient, or tag, with optional course filter
+  Future<List<Recipe>> searchRecipes(String query, {List<String>? courseFilter}) async {
     if (query.isEmpty) return getAllRecipes();
-    
-    final allRecipes = await _db.recipes
-        .filter()
-        .nameContains(query, caseSensitive: false)
-        .or()
-        .cuisineContains(query, caseSensitive: false)
-        .or()
-        .tagsElementContains(query, caseSensitive: false)
-        .findAll();
 
-    // Sort by relevance: exact matches > starts with > contains
-    final lowerQuery = query.toLowerCase();
-    allRecipes.sort((a, b) {
-      final aNameLower = a.name.toLowerCase();
-      final bNameLower = b.name.toLowerCase();
-      
-      // Exact match on name
-      if (aNameLower == lowerQuery && bNameLower != lowerQuery) return -1;
-      if (bNameLower == lowerQuery && aNameLower != lowerQuery) return 1;
-      
-      // Exact match on cuisine
-      final aCuisineLower = (a.cuisine ?? '').toLowerCase();
-      final bCuisineLower = (b.cuisine ?? '').toLowerCase();
-      if (aCuisineLower == lowerQuery && bCuisineLower != lowerQuery) return -1;
-      if (bCuisineLower == lowerQuery && aCuisineLower != lowerQuery) return 1;
-      
-      // Starts with (prefix match)
-      if (aNameLower.startsWith(lowerQuery) && !bNameLower.startsWith(lowerQuery)) return -1;
-      if (bNameLower.startsWith(lowerQuery) && !aNameLower.startsWith(lowerQuery)) return 1;
-      if (aCuisineLower.startsWith(lowerQuery) && !bCuisineLower.startsWith(lowerQuery)) return -1;
-      if (bCuisineLower.startsWith(lowerQuery) && !aCuisineLower.startsWith(lowerQuery)) return 1;
-      
-      // Default: keep original order
-      return 0;
-    });
-    
-    return allRecipes;
+    final results = await _db.recipes
+        .filter()
+        .optional(courseFilter != null, (q) => q.anyOf(courseFilter!, (q, slug) => q.courseEqualTo(slug, caseSensitive: false)))
+        .group((q) => q
+          .nameContains(query, caseSensitive: false)
+          .or()
+          .ingredients((i) => i.nameContains(query, caseSensitive: false))
+          .or()
+          .tagsElementContains(query, caseSensitive: false)
+        )
+        .limit(50)
+        .findAll();
+    return results;
   }
 
   /// Get a single recipe by ID

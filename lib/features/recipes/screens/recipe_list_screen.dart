@@ -553,37 +553,10 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     }
   }
 
-  List<Recipe> _filterRecipes(List<Recipe> recipes) {
-    var filtered = recipes;
-
-    // Filter by search query
-    if (_searchQuery.isNotEmpty) {
-      filtered = filtered.where((r) {
-        return r.name.toLowerCase().contains(_searchQuery) ||
-            (r.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
-            (r.subcategory?.toLowerCase().contains(_searchQuery) ?? false) ||
-            (r.tags.any((tag) => tag.toLowerCase().contains(_searchQuery)));
-      }).toList();
-    }
-
-    // Filter by base spirit (for drinks) or cuisine (for food)
-    if (_selectedCuisines.isNotEmpty) {
-      if (_isDrinksScreen) {
-        // Filter by base spirit (stored in subcategory)
-        filtered = filtered.where((r) {
-          if (r.subcategory == null) return false;
-          return _selectedCuisines.any((c) => r.subcategory == c);
-        }).toList();
-      } else {
-        // Filter by cuisine
-        filtered = filtered.where((r) {
-          if (r.cuisine == null) return false;
-          return _selectedCuisines.any((c) => r.cuisine!.toLowerCase() == c.toLowerCase());
-        }).toList();
-      }
-    }
-
-    return filtered;
+  Future<List<Recipe>> _searchRecipes() async {
+    // If searching from "All Recipes" or similar, pass null for course filter
+    final courseFilter = widget.course.toLowerCase() == 'all' ? null : [widget.course];
+    return await ref.read(recipeRepositoryProvider).searchRecipes(_searchQuery, courseFilter: courseFilter);
   }
 
   void _showAddOptions(BuildContext context) {
@@ -592,35 +565,51 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       builder: (ctx) => SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.edit),
-              title: const Text('Create New Recipe'),
+          return FutureBuilder<List<Recipe>>(
+            future: _searchRecipes(),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return const Center(child: CircularProgressIndicator());
+              }
+              final filteredRecipes = snapshot.data ?? [];
+              if (filteredRecipes.isEmpty) {
+                return _buildEmptyState();
+              }
+              final theme = Theme.of(context);
+              return ListView.builder(
+                padding: const EdgeInsets.only(bottom: 80),
+                itemCount: filteredRecipes.length,
+                itemBuilder: (context, index) {
+                  final recipe = filteredRecipes[index];
+                  return Dismissible(
+                    key: Key('recipe_swipe_${recipe.uuid}'),
+                    direction: DismissDirection.startToEnd,
+                    background: Container(
+                      color: theme.colorScheme.primary.withOpacity(0.2),
+                      alignment: Alignment.centerLeft,
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.calendar_today, color: theme.colorScheme.primary),
+                          const SizedBox(width: 8),
+                          Text(
+                            'Add to Meal Plan',
+                            style: TextStyle(
+                              color: theme.colorScheme.primary,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    child: RecipeCard(
+                      recipe: recipe,
+                      onTap: () => AppRoutes.toRecipeDetail(context, recipe.uuid),
+                    ),
+                  );
+                },
+              );
+            },
+          );
               onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toRecipeEdit(context, course: widget.course);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.camera_alt),
-              title: const Text('Scan from Photo'),
-              onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toOCRScanner(context, course: widget.course);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.link),
-              title: const Text('Import from URL'),
-              onTap: () {
-                Navigator.pop(ctx);
-                AppRoutes.toURLImport(context, course: widget.course);
-              },
-            ),
-            const SizedBox(height: 8),
-          ],
-        ),
-      ),
-    );
-  }
-}
