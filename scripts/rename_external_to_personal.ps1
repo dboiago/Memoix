@@ -13,23 +13,22 @@ $replacements = @{
     'ExternalStorageProvider' = 'PersonalStorageProvider'
     'ExternalStorageScreen' = 'PersonalStorageScreen'
     
-    # Comments (keep some references for documentation)
+    # Comments
     'Notify external storage service' = 'Notify personal storage service'
-    'external storage sync' = 'personal storage sync'
-    'External storage sync' = 'Personal storage sync'
+    'external storage sync on launch' = 'personal storage sync on launch'
     
     # File imports (only update the path, filenames already renamed)
     "import '../features/external_storage/" = "import '../features/personal_storage/"
     "import '../../external_storage/" = "import '../../personal_storage/"
-    'import ''external_storage_provider.dart''' = 'import ''personal_storage_provider.dart'''
-    'import ''external_storage_service.dart''' = 'import ''personal_storage_service.dart'''
-    'import ''external_storage_screen.dart''' = 'import ''personal_storage_screen.dart'''
+    "import 'external_storage_provider.dart'" = "import 'personal_storage_provider.dart'"
+    "import 'external_storage_service.dart'" = "import 'personal_storage_service.dart'"
+    "import 'external_storage_screen.dart'" = "import 'personal_storage_screen.dart'"
     
     # SharedPreferences keys (update for consistency since user is only tester)
-    '''external_storage_last_sync''' = '''personal_storage_last_sync'''
-    '''external_storage_sync_mode''' = '''personal_storage_sync_mode'''
-    '''external_storage_provider_id''' = '''personal_storage_provider_id'''
-    '''external_storage_path''' = '''personal_storage_path'''
+    "'external_storage_last_sync'" = "'personal_storage_last_sync'"
+    "'external_storage_sync_mode'" = "'personal_storage_sync_mode'"
+    "'external_storage_provider_id'" = "'personal_storage_provider_id'"
+    "'external_storage_path'" = "'personal_storage_path'"
 }
 
 # Get all Dart files
