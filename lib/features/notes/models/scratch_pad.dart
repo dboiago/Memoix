@@ -80,6 +80,15 @@ class RecipeDraft {
   /// Freeform notes section
   String notes = '';
 
+  /// Step images for each direction step (paths or URLs)
+  List<String> stepImages = [];
+
+  /// Map of step index to image index in stepImages ("stepIndex:imageIndex")
+  List<String> stepImageMap = [];
+
+  /// Linked recipe UUIDs for bi-directional pairing
+  List<String> pairedRecipeIds = [];
+
   /// When the draft was created
   DateTime createdAt = DateTime.now();
 
@@ -132,5 +141,41 @@ class RecipeDraft {
   @ignore
   set comments(String value) {
     notes = value;
+  }
+
+  /// CopyWith for updating drafts
+  RecipeDraft copyWith({
+    String? uuid,
+    String? name,
+    String? imagePath,
+    String? serves,
+    String? time,
+    List<DraftIngredient>? structuredIngredients,
+    List<String>? structuredDirections,
+    String? legacyIngredients,
+    String? legacyDirections,
+    String? notes,
+    List<String>? stepImages,
+    List<String>? stepImageMap,
+    List<String>? pairedRecipeIds,
+    DateTime? createdAt,
+    DateTime? updatedAt,
+  }) {
+    return RecipeDraft()
+      ..uuid = uuid ?? this.uuid
+      ..name = name ?? this.name
+      ..imagePath = imagePath ?? this.imagePath
+      ..serves = serves ?? this.serves
+      ..time = time ?? this.time
+      ..structuredIngredients = structuredIngredients ?? this.structuredIngredients
+      ..structuredDirections = structuredDirections ?? this.structuredDirections
+      ..legacyIngredients = legacyIngredients ?? this.legacyIngredients
+      ..legacyDirections = legacyDirections ?? this.legacyDirections
+      ..notes = notes ?? this.notes
+      ..stepImages = stepImages ?? this.stepImages
+      ..stepImageMap = stepImageMap ?? this.stepImageMap
+      ..pairedRecipeIds = pairedRecipeIds ?? this.pairedRecipeIds
+      ..createdAt = createdAt ?? this.createdAt
+      ..updatedAt = updatedAt ?? this.updatedAt;
   }
 }
