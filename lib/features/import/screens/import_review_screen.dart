@@ -1391,10 +1391,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       return;
     }
     
-    // For Smoking, only allow recipes (pit notes are not stored as SmokingType in import)
-    // Import screen doesn't have pit note type selection, so all Smoking imports are recipes
+    // Build appropriate recipe format for comparison
+    final Recipe recipe;
+    if (_isSmokingCourse) {
+      // Convert Smoking import to standard Recipe format
+      recipe = _buildRecipeFromSmoking();
+    } else {
+      recipe = _buildRecipe();
+    }
 
-    final recipe = _buildRecipe();
     AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe);
   }
 
@@ -1557,6 +1562,47 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     }
 
     return recipe;
+  }
+
+  /// Convert Smoking import to standard Recipe format for comparison
+  Recipe _buildRecipeFromSmoking() {
+    // Build ingredients from selected (convert seasonings to ingredients)
+    final ingredients = <Ingredient>[];
+    for (final index in _selectedIngredientIndices.toList()..sort()) {
+      if (index < _sanitizedIngredients.length) {
+        final rawIngredient = _sanitizedIngredients[index];
+        if (rawIngredient.name.trim().isNotEmpty) {
+          ingredients.add(rawIngredient.toIngredient());
+        }
+      }
+    }
+
+    // Build directions from selected
+    final directions = <String>[];
+    for (final index in _selectedDirectionIndices.toList()..sort()) {
+      if (index < widget.importResult.rawDirections.length) {
+        directions.add(widget.importResult.rawDirections[index]);
+      }
+    }
+
+    return Recipe.create(
+      uuid: const Uuid().v4(),
+      name: _nameController.text.trim().isEmpty
+          ? 'Untitled Recipe'
+          : _nameController.text.trim(),
+      course: 'Smoking',
+      ingredients: ingredients,
+      directions: directions,
+      serves: _servesController.text.trim().isEmpty
+          ? null
+          : _servesController.text.trim(),
+      time: _timeController.text.trim().isEmpty
+          ? null
+          : _timeController.text.trim(),
+      comments: widget.importResult.comments,
+      imageUrl: widget.importResult.imageUrl,
+      source: RecipeSource.imported,
+    );
   }
 
   /// Build a SmokingRecipe from import data
@@ -1731,12 +1777,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       MemoixSnackBar.show('Only Modernist concepts can be compared (not techniques)');
       return;
     }
-    
-    // For Smoking, only allow recipes (pit notes are not stored as SmokingType in import)
-    // Import screen doesn't have pit note type selection, so all Smoking imports are recipes
 
-    // Build a temporary Recipe object from the imported data
-    final recipe = _buildRecipe();
+    // Build appropriate recipe format for comparison
+    final Recipe recipe;
+    if (_isSmokingCourse) {
+      // Convert Smoking import to standard Recipe format
+      recipe = _buildRecipeFromSmoking();
+    } else {
+      recipe = _buildRecipe();
+    }
 
     if (!mounted) return;
 

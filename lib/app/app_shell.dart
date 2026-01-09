@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../features/home/screens/home_screen.dart';
 import '../shared/widgets/app_drawer.dart';
+import '../features/tools/recipe_comparison_screen.dart' show routeObserver;
 
 class AppShellNavigator {
   AppShellNavigator._();
@@ -95,7 +96,7 @@ class _AppShellState extends ConsumerState<AppShell> {
         ),
         body: Navigator(
           key: AppShellNavigator.navigatorKey,
-          observers: [_navObserver!],
+          observers: [_navObserver!, routeObserver],
           onGenerateRoute: (settings) {
             // Single stack starting at home; other routes are pushed via AppRoutes helpers.
             return MaterialPageRoute(builder: (_) => const HomeScreen());
