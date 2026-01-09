@@ -1,3 +1,5 @@
+  String? _selectedModernistType;
+  String? _selectedSmokingType;
 import 'dart:io';
 
 import 'package:flutter/material.dart';
