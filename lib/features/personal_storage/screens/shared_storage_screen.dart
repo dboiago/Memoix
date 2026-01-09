@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -86,10 +88,15 @@ class _SharedStorageScreenState
           
           // Ensure Google Drive is connected before attempting to create folder
           if (!storage.isConnected) {
-            // Try to connect
-            final connected = await storage.connect();
+            // Try to connect with 60 second timeout
+            final connected = await storage.connect().timeout(
+              const Duration(seconds: 60),
+              onTimeout: () {
+                throw TimeoutException('Connection timed out. Please try again.');
+              },
+            );
             if (!connected) {
-              throw Exception('Please connect to Google Drive first');
+              throw Exception('Connection cancelled or failed');
             }
           }
           
@@ -113,7 +120,12 @@ class _SharedStorageScreenState
           
           // Check if connected, sign in if needed
           if (!storage.isConnected) {
-            await storage.signIn();
+            await storage.signIn().timeout(
+              const Duration(seconds: 60),
+              onTimeout: () {
+                throw TimeoutException('Connection timed out. Please try again.');
+              },
+            );
           }
           
           folderId = await storage.createFolder(name);
@@ -149,6 +161,10 @@ class _SharedStorageScreenState
       
       if (mounted) {
         MemoixSnackBar.showSuccess('Shared storage "$name" created and synced');
+      }
+    } on TimeoutException catch (e) {
+      if (mounted) {
+        MemoixSnackBar.showError(e.message ?? 'Connection timed out');
       }
     } catch (e) {
       if (mounted) {

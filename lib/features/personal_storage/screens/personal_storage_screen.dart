@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -426,7 +428,13 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     setState(() => _isConnecting = true);
 
     try {
-      final success = await _googleDrive!.connect();
+      // Add 60 second timeout for connection attempt
+      final success = await _googleDrive!.connect().timeout(
+        const Duration(seconds: 60),
+        onTimeout: () {
+          throw TimeoutException('Connection timed out. Please try again.');
+        },
+      );
 
       if (success) {
         // Disconnect all other providers (mutual exclusivity)
@@ -458,6 +466,15 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
             }
           }
         }
+      } else {
+        // Connection failed (user cancelled or auth failed)
+        if (mounted) {
+          MemoixSnackBar.show('Connection cancelled');
+        }
+      }
+    } on TimeoutException catch (e) {
+      if (mounted) {
+        MemoixSnackBar.showError(e.message ?? 'Connection timed out');
       }
     } catch (e) {
       if (mounted) {
@@ -479,8 +496,13 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       _oneDrive = OneDriveStorage();
       await _oneDrive!.init();
       
-      // Attempt sign in
-      await _oneDrive!.signIn();
+      // Add 60 second timeout for sign in attempt
+      await _oneDrive!.signIn().timeout(
+        const Duration(seconds: 60),
+        onTimeout: () {
+          throw TimeoutException('Connection timed out. Please try again.');
+        },
+      );
 
       if (_oneDrive!.isConnected) {
         // Disconnect all other providers (mutual exclusivity)
@@ -494,6 +516,14 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
         if (mounted) {
           MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
         }
+      } else {
+        if (mounted) {
+          MemoixSnackBar.show('Connection cancelled');
+        }
+      }
+    } on TimeoutException catch (e) {
+      if (mounted) {
+        MemoixSnackBar.showError(e.message ?? 'Connection timed out');
       }
     } catch (e) {
       if (mounted) {
