@@ -478,3 +478,5 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
   void _showAddOptions(BuildContext context) {
     // Modal logic removed. No-op.
+  }
+}
