@@ -125,15 +125,21 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   Recipe? _existingRecipe;
   bool _showBakerPercent = false; // Toggle for showing baker's percentage column
 
-  /// Check if current course allows comparison
+  /// Check if current course allows comparison (explicit allow-list)
   bool get _canCompare {
+    final allowed = [
+      'mains',
+      'desserts',
+      'brunch',
+      'smoking',
+      'modernist',
+    ];
     final course = _selectedCourse.toLowerCase();
-    // Block non-comparable courses
-    if (course == 'pizzas' || course == 'cheese' || course == 'cellar' || 
-        course == 'sandwiches' || course == 'drinks') {
+    if (!allowed.contains(course)) return false;
+    // For Modernist, only concepts can be compared
+    if (course == 'modernist' && _selectedModernistType == ModernistType.technique) {
       return false;
     }
-    // Allow all others including 'smoking', 'modernist', and standard courses
     return true;
   }
 
@@ -1663,15 +1669,12 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       MemoixSnackBar.showError('Please enter a recipe name');
       return;
     }
-
-    // Build a Recipe object from current form data
     final recipe = _buildRecipeFromForm();
-    
-    // Navigate to comparison with this recipe pre-filled
+    ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(recipe);
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => RecipeComparisonScreen(prefilledRecipe: recipe),
+        builder: (_) => RecipeComparisonScreen(),
       ),
     );
   }

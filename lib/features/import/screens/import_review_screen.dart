@@ -544,20 +544,21 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   /// Check if current course is Sandwiches
   bool get _isSandwichesCourse => _selectedCourse.toLowerCase() == 'sandwiches';
   
-  /// Check if current course allows comparison
+  /// Check if current course allows comparison (explicit allow-list)
   bool get _canCompare {
-    // Block non-comparable courses
-    if (_isPizzasCourse || _isCheeseCourse || _isCellarCourse || 
-        _isSandwichesCourse || _isDrinksCourse) {
-      return false;
-    }
-    
+    final allowed = [
+      'mains',
+      'desserts',
+      'brunch',
+      'smoking',
+      'modernist',
+    ];
+    final course = _selectedCourse.toLowerCase();
+    if (!allowed.contains(course)) return false;
     // For Modernist, only concepts can be compared
-    if (_isModernistCourse && _selectedModernistType == ModernistType.technique) {
+    if (course == 'modernist' && _selectedModernistType == ModernistType.technique) {
       return false;
     }
-    
-    // All others are allowed (standard recipes, Smoking, Modernist concepts)
     return true;
   }
   
@@ -1401,35 +1402,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   /// Open recipe comparison view with this imported recipe
   void _openInCompareView() {
-    // Block non-comparable recipe types
-    if (_isPizzasCourse || _isCheeseCourse || _isCellarCourse || _isSandwichesCourse || _isDrinksCourse) {
-      MemoixSnackBar.show('Recipe comparison is not available for this recipe type');
-      return;
-    }
-    
-    // For Modernist, only allow concepts (not techniques)
-    if (_isModernistCourse && _selectedModernistType == ModernistType.technique) {
-      MemoixSnackBar.show('Only Modernist concepts can be compared (not techniques)');
-      return;
-    }
-    
-    // Build appropriate recipe format for comparison
-    final Recipe recipe;
-    if (_isSmokingCourse) {
-      // Convert Smoking import to standard Recipe format
-      recipe = _buildRecipeFromSmoking();
-    } else {
-      recipe = _buildRecipe();
-    }
-
-    // Check if there's a pending import slot from comparison screen
-    final comparisonState = ref.read(recipeComparisonProvider);
-    final targetSlot = comparisonState.pendingImportSlot ?? 1;
-    
-    // Clear the pending slot
-    ref.read(recipeComparisonProvider.notifier).clearPendingImportSlot();
-
-    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, targetSlot: targetSlot);
+    final Recipe recipe = _isSmokingCourse ? _buildRecipeFromSmoking() : _buildRecipe();
+    ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(recipe);
+    AppRoutes.toRecipeComparison(context);
   }
 
   /// Build a ModernistRecipe from import data

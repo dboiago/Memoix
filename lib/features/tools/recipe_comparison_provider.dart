@@ -1,6 +1,6 @@
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
-
 import '../recipes/models/recipe.dart';
 
 /// State for recipe comparison view
@@ -58,6 +58,17 @@ class RecipeComparisonState {
 /// Provider for recipe comparison state management
 class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
   RecipeComparisonNotifier() : super(RecipeComparisonState());
+
+  /// Assign imported recipe to first available slot (left, then right)
+  void assignImportedRecipe(Recipe recipe) {
+    if (state.recipe1 == null) {
+      setRecipe1(recipe);
+    } else if (state.recipe2 == null) {
+      setRecipe2(recipe);
+    } else {
+      setRecipe1(recipe); // Default: replace left if both full
+    }
+  }
 
   /// Set recipe for slot 1
   void setRecipe1(Recipe recipe) {
@@ -162,6 +173,6 @@ class RecipeComparisonNotifier extends StateNotifier<RecipeComparisonState> {
 
 /// Provider for recipe comparison
 final recipeComparisonProvider =
-    StateNotifierProvider<RecipeComparisonNotifier, RecipeComparisonState>(
+    StateNotifierProvider.autoDispose<RecipeComparisonNotifier, RecipeComparisonState>(
   (ref) => RecipeComparisonNotifier(),
 );
