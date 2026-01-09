@@ -22,6 +22,9 @@ final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 /// - Compare two recipes from any source (DB, URL, OCR)
 /// - Select ingredients and steps from both recipes
 /// - Send selections to Scratch Pad as a structured draft
+// Use correct provider type for autoDispose
+typedef RecipeComparisonProviderType = AutoDisposeStateNotifierProvider<RecipeComparisonNotifier, RecipeComparisonState>;
+
 class RecipeComparisonScreen extends ConsumerStatefulWidget {
   /// Optional pre-filled recipe for slot 1 or 2
   final Recipe? prefilledRecipe;
