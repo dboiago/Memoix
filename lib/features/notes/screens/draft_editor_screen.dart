@@ -11,7 +11,6 @@ import 'package:uuid/uuid.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/scratch_pad.dart';
 import '../../recipes/models/recipe.dart'; // Needed for recipe selector
-import '../../recipes/models/ingredient.dart'; // Needed for conversion
 import '../../recipes/repository/recipe_repository.dart'; // Needed for allRecipesProvider
 import '../../recipes/screens/recipe_edit_screen.dart'; // Needed for conversion nav
 import '../repository/scratch_pad_repository.dart'; // Needed for saving

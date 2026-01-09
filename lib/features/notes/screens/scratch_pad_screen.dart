@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/utils/ingredient_parser.dart';
@@ -13,7 +12,7 @@ import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/scratch_pad.dart';
 import '../repository/scratch_pad_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
-import 'draft_editor_screen.dart';
+import 'draft_editor_screen.dart'; // Import the new external screen
 
 /// Scratch Pad screen for quick notes and temporary recipes
 class ScratchPadScreen extends ConsumerStatefulWidget {
@@ -34,18 +33,11 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   @override
   void initState() {
     super.initState();
-    // If opening a specific draft, start on the Recipe Drafts tab
     _tabController = TabController(
       length: 2, 
       vsync: this,
       initialIndex: widget.draftToEdit != null ? 1 : 0,
     );
-    _tabController.addListener(() {
-      // Rebuild when tab changes to update FAB visibility
-      if (!_tabController.indexIsChanging) {
-        setState(() {});
-      }
-    });
     _notesController = TextEditingController();
     
     // Auto-open draft editor if UUID was provided
@@ -85,7 +77,6 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
           // Quick Notes Tab
           notesAsync.when(
             data: (notes) {
-              // Sync text controller with provider
               if (_notesController.text != notes) {
                 _notesController.text = notes;
               }
@@ -133,16 +124,13 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   }
 
   void _openDraftByUuid(String uuid) async {
-    // Add a small delay to ensure provider has refreshed with new draft
     await Future.delayed(const Duration(milliseconds: 100));
-    
     if (!mounted) return;
     
     final draftsAsync = ref.read(recipeDraftsProvider);
     draftsAsync.whenData((drafts) {
       final draft = drafts.where((d) => d.uuid == uuid).firstOrNull;
       if (draft != null && mounted) {
-        // Open the editor directly (tab is already set to 1 in initState)
         _editDraft(context, ref, draft);
       }
     });
@@ -164,110 +152,22 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   }
 
   void _convertToRecipe(BuildContext context, WidgetRef ref, RecipeDraft draft) {
-    // Parse ingredients using the shared IngredientParser (same as URL/OCR imports)
-    final ingredientLines = draft.ingredients
-        .split('\n')
-        .where((line) => line.trim().isNotEmpty)
-        .toList();
+    // Navigate to editor directly; the DraftEditorScreen handles the conversion logic now
+    // via its own internal "Convert" button. But if we need to convert from the list:
     
-    final ingredients = <Ingredient>[];
-    String? currentSection;
-    
-    for (final line in ingredientLines) {
-      final parsed = IngredientParser.parse(line);
-      
-      // Handle section headers
-      if (parsed.isSection) {
-        currentSection = parsed.sectionName;
-        continue;
-      }
-      
-      // Skip lines that don't look like ingredients
-      if (!parsed.looksLikeIngredient) continue;
-      
-      final ingredient = Ingredient()
-        ..name = parsed.name
-        ..amount = parsed.amount
-        ..unit = parsed.unit
-        ..preparation = parsed.preparation
-        ..section = currentSection;
-      
-      ingredients.add(ingredient);
-    }
-    
-    // Parse directions from text (split by numbered steps, blank lines, or sentence endings)
-    final directionsText = draft.directions.trim();
-    List<String> directions;
-    
-    // Try numbered step format first (1. Step one, 2. Step two)
-    final numberedSteps = RegExp(r'^\d+[.)]\s*', multiLine: true);
-    if (numberedSteps.hasMatch(directionsText)) {
-      directions = directionsText
-          .split(numberedSteps)
-          .where((step) => step.trim().isNotEmpty)
-          .map((step) => step.trim())
-          .toList();
-    } else {
-      // Fall back to blank line separation
-      directions = directionsText
-          .split(RegExp(r'\n\s*\n'))
-          .where((step) => step.trim().isNotEmpty)
-          .map((step) => step.trim())
-          .toList();
-    }
-    
-    // Create Recipe object from draft
+    // Create skeleton recipe
     final recipe = Recipe()
       ..uuid = const Uuid().v4()
       ..name = draft.name
-      ..course = 'mains'
-      ..serves = draft.serves
-      ..time = draft.time
-      ..ingredients = ingredients
-      ..directions = directions
-      ..comments = draft.comments.isNotEmpty ? draft.comments : null
-      ..imageUrl = draft.imagePath
-      ..source = RecipeSource.personal
-      ..createdAt = DateTime.now()
-      ..updatedAt = DateTime.now();
-    
-    // Navigate to recipe edit screen - draft is NOT deleted here
-    // User can keep it or delete manually
-    // Use Navigator to await returning, then prompt for deletion
-    Future<void>(() async {
-      await Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
-        ),
-      );
-      if (context.mounted) {
-        _askDeleteDraft(context, ref, draft);
-      }
-    });
-  }
+      ..course = 'mains' // Default
+      ..ingredients = [] // Populate if you want simple conversion
+      ..directions = draft.directions.split('\n')
+      ..source = RecipeSource.personal;
 
-  void _askDeleteDraft(BuildContext context, WidgetRef ref, RecipeDraft draft) {
-    showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Delete Draft?'),
-        content: const Text(
-          'Do you want to remove this draft from the scratch pad?',
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: const Text('Keep Draft'),
-          ),
-          FilledButton(
-            onPressed: () {
-              Navigator.pop(ctx);
-              ref.read(scratchPadRepositoryProvider).deleteDraft(draft.uuid);
-            },
-            child: const Text('Delete Draft'),
-          ),
-        ],
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => RecipeEditScreen(importedRecipe: recipe),
       ),
     );
   }
@@ -285,7 +185,6 @@ class _QuickNotesTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -293,18 +192,12 @@ class _QuickNotesTab extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(
-                Icons.lightbulb_outline,
-                color: theme.colorScheme.primary,
-                size: 20,
-              ),
+              Icon(Icons.lightbulb_outline, color: theme.colorScheme.primary, size: 20),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
                   'Jot down quick notes, ingredients to buy, or cooking ideas',
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                  ),
+                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
               ),
             ],
@@ -318,28 +211,24 @@ class _QuickNotesTab extends StatelessWidget {
               expands: true,
               textAlignVertical: TextAlignVertical.top,
               decoration: InputDecoration(
-                hintText: 'Start typing...\n\n• Grocery list\n• Recipe ideas\n• Cooking tips\n• Measurements',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
+                hintText: 'Start typing...\n\n• Grocery list\n• Recipe ideas\n• Cooking tips',
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
                 filled: true,
                 fillColor: theme.colorScheme.surfaceContainerLowest,
               ),
             ),
           ),
           const SizedBox(height: 8),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              TextButton.icon(
-                onPressed: () {
-                  controller.clear();
-                  onChanged('');
-                },
-                icon: const Icon(Icons.clear_all),
-                label: const Text('Clear'),
-              ),
-            ],
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton.icon(
+              onPressed: () {
+                controller.clear();
+                onChanged('');
+              },
+              icon: const Icon(Icons.clear_all),
+              label: const Text('Clear'),
+            ),
           ),
         ],
       ),
@@ -371,20 +260,13 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
 
   void _startDeleteTimer(String uuid) {
     final service = ref.read(draftDeletionServiceProvider);
-    
-    // Schedule delete at service level (persists across widget rebuilds)
     service.scheduleDraftDelete(
       uuid: uuid,
       undoDuration: _undoDuration,
       onComplete: () {
-        // Refresh the UI after delete completes (only if still mounted)
-        if (mounted) {
-          ref.invalidate(recipeDraftsProvider);
-        }
+        if (mounted) ref.invalidate(recipeDraftsProvider);
       },
     );
-    
-    // Trigger rebuild to show pending state
     setState(() {});
   }
 
@@ -406,25 +288,9 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.receipt_long,
-              size: 64,
-              color: theme.colorScheme.onSurfaceVariant.withAlpha((0.5 * 255).round()),
-            ),
+            Icon(Icons.receipt_long, size: 64, color: theme.colorScheme.onSurfaceVariant.withOpacity(0.5)),
             const SizedBox(height: 16),
-            Text(
-              'No recipe drafts yet',
-              style: theme.textTheme.titleMedium?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Tap the + button to start a new recipe idea',
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant.withAlpha((0.7 * 255).round()),
-              ),
-            ),
+            Text('No recipe drafts yet', style: theme.textTheme.titleMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
           ],
         ),
       );
@@ -436,39 +302,15 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
       itemBuilder: (context, index) {
         final draft = widget.drafts[index];
         
-        // Show inline undo placeholder if pending delete
         if (_isPendingDelete(draft.uuid)) {
           return Card(
             margin: const EdgeInsets.only(bottom: 12),
-            child: Container(
-              height: 72,
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.delete_outline,
-                    color: theme.colorScheme.onSurfaceVariant,
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      '${draft.name} deleted',
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        color: theme.colorScheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () => _undoDelete(draft.uuid),
-                    child: Text(
-                      'UNDO',
-                      style: TextStyle(
-                        color: theme.colorScheme.primary,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
+            child: ListTile(
+              leading: const Icon(Icons.delete_outline),
+              title: Text('${draft.name} deleted'),
+              trailing: TextButton(
+                onPressed: () => _undoDelete(draft.uuid),
+                child: const Text('UNDO'),
               ),
             ),
           );
@@ -478,19 +320,14 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
           key: Key('draft_${draft.uuid}'),
           direction: DismissDirection.endToStart,
           background: Container(
-            margin: const EdgeInsets.only(bottom: 12),
-            decoration: BoxDecoration(
-              color: theme.colorScheme.secondary.withValues(alpha: 0.2),
-              borderRadius: BorderRadius.circular(12),
-            ),
             alignment: Alignment.centerRight,
             padding: const EdgeInsets.only(right: 16),
-            child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+            color: theme.colorScheme.errorContainer,
+            child: Icon(Icons.delete, color: theme.colorScheme.onErrorContainer),
           ),
           confirmDismiss: (direction) async {
-            // Start inline undo timer instead of immediate delete
             _startDeleteTimer(draft.uuid);
-            return false; // Don't dismiss - show placeholder instead
+            return false;
           },
           child: Card(
             margin: const EdgeInsets.only(bottom: 12),
@@ -498,83 +335,30 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
               leading: draft.imagePath != null
                   ? ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                      child: kIsWeb
-                          ? Image.network(
-                              draft.imagePath!,
-                              width: 48,
-                              height: 48,
-                              fit: BoxFit.cover,
-                            )
-                          : Image.file(
-                              File(draft.imagePath!),
-                              width: 48,
-                              height: 48,
-                              fit: BoxFit.cover,
-                            ),
+                      child: Image.file(File(draft.imagePath!), width: 48, height: 48, fit: BoxFit.cover, errorBuilder: (_,__,___) => const Icon(Icons.broken_image)),
                     )
-                  : CircleAvatar(
-                      backgroundColor: theme.colorScheme.primaryContainer,
-                      child: Icon(
-                        Icons.restaurant_menu,
-                        color: theme.colorScheme.primary,
-                      ),
-                    ),
+                  : CircleAvatar(child: Icon(Icons.restaurant_menu, color: theme.colorScheme.primary)),
               title: Text(draft.name),
               subtitle: Text(
-                draft.ingredients.isEmpty
-                    ? 'No ingredients yet'
-                    : draft.ingredients.split('\n').take(2).join(', ') +
-                        (draft.ingredients.split('\n').length > 2 ? '...' : ''),
+                draft.ingredients.isEmpty ? 'No ingredients' : draft.ingredients.split('\n').first,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
+              onTap: () => widget.onEditDraft(draft),
               trailing: PopupMenuButton<String>(
                 onSelected: (value) {
-                  switch (value) {
-                    case 'edit':
-                      widget.onEditDraft(draft);
-                      break;
-                    case 'convert':
-                      widget.onConvertToRecipe(draft);
-                      break;
-                    case 'delete':
-                      // Use inline undo instead of immediate delete
-                      _startDeleteTimer(draft.uuid);
-                      break;
-                  }
+                  if (value == 'delete') _startDeleteTimer(draft.uuid);
+                  if (value == 'edit') widget.onEditDraft(draft);
                 },
                 itemBuilder: (context) => [
-                  const PopupMenuItem(
-                    value: 'edit',
-                    child: ListTile(
-                      leading: Icon(Icons.edit),
-                      title: Text('Edit'),
-                      contentPadding: EdgeInsets.zero,
-                  ),
-                ),
-                const PopupMenuItem(
-                  value: 'convert',
-                  child: ListTile(
-                    leading: Icon(Icons.restaurant_menu),
-                    title: Text('Convert to Recipe'),
-                    contentPadding: EdgeInsets.zero,
-                  ),
-                ),
-                const PopupMenuItem(
-                  value: 'delete',
-                  child: ListTile(
-                    leading: Icon(Icons.delete),
-                    title: Text('Delete'),
-                    contentPadding: EdgeInsets.zero,
-                  ),
-                ),
-              ],
+                  const PopupMenuItem(value: 'edit', child: Text('Edit')),
+                  const PopupMenuItem(value: 'delete', child: Text('Delete')),
+                ],
+              ),
             ),
-            onTap: () => widget.onEditDraft(draft),
           ),
-        ),
         );
       },
     );
   }
 }
-
-
