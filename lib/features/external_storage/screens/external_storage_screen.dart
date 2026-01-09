@@ -214,7 +214,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
     final provider = _googleDrive!;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.all(16),
       child: Card(
         child: Padding(
           padding: const EdgeInsets.all(16),

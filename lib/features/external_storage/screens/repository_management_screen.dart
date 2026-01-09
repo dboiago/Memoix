@@ -208,7 +208,25 @@ class _RepositoryManagementScreenState
             }
           }
           
-          await storage.switchRepository(repository.folderId, repository.name);
+          // Attempt to switch repository with retry logic
+          try {
+            await storage.switchRepository(repository.folderId, repository.name);
+          } catch (e) {
+            // If switch fails due to connection issues, try one more time after re-initializing
+            if (e.toString().contains('Cannot access repository folder') || 
+                e.toString().contains('Not connected')) {
+              debugPrint('GoogleDriveStorage switch failed, re-initializing...');
+              await storage.initialize();
+              
+              if (storage.isConnected) {
+                await storage.switchRepository(repository.folderId, repository.name);
+              } else {
+                throw StateError('Google Drive connection could not be restored. Please reconnect.');
+              }
+            } else {
+              rethrow;
+            }
+          }
           break;
         case StorageProvider.oneDrive:
           // OneDrive switch is handled in RepositoryManager.setActiveRepository
@@ -221,6 +239,9 @@ class _RepositoryManagementScreenState
         MemoixSnackBar.showSuccess('Switched to "${repository.name}"');
       }
     } catch (e) {
+      // Reload repositories in case state changed
+      _loadRepositories();
+      
       if (mounted) {
         MemoixSnackBar.showError('Failed to switch repository: $e');
       }
