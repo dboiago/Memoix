@@ -139,11 +139,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     if (allowed.contains(course)) {
       // Modernist: only allow if Concept
       if (course == 'modernist') {
-        return _selectedModernistType == ModernistType.concept;
+        return _selectedModernistType?.toLowerCase() == 'concept';
       }
       // Smoking: only allow if Recipe
       if (course == 'smoking') {
-        return _selectedSmokingType == null || _selectedSmokingType == SmokingType.recipe;
+        return _selectedSmokingType?.toLowerCase() != 'pit note';
       }
       return true;
     }
@@ -1004,7 +1004,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               onPressed: () => _showOcrText(context),
             ),
           // Show Compare only if imported AND current course is comparable
-          if (widget.importedRecipe != null && _canCompare) ...[
+          if (widget.importedRecipe != null && shouldShowCompareButton) ...[
             TextButton.icon(
               onPressed: _openInComparison,
               icon: const Icon(Icons.compare_arrows),

@@ -11,11 +11,11 @@
     if (allowed.contains(course)) {
       // Modernist: only allow if Concept
       if (course == 'modernist') {
-        return recipe.modernistType == ModernistType.concept;
+        return recipe.modernistType?.toLowerCase() == 'concept';
       }
       // Smoking: only allow if Recipe
       if (course == 'smoking') {
-        return recipe.smokingType == null || recipe.smokingType == SmokingType.recipe;
+        return recipe.smokingType?.toLowerCase() != 'pit note';
       }
       return true;
     }
