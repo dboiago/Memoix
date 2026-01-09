@@ -127,12 +127,14 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       appBar: AppBar(
         title: const Text('Compare Recipes'),
         actions: [
-          if (hasSelection)
-            TextButton.icon(
-              onPressed: () => _sendToScratchPad(context, ref, comparison),
-              icon: const Icon(Icons.send),
-              label: const Text('Send to Draft'),
-            ),
+          TextButton.icon(
+            // Disable the button if nothing is selected, instead of hiding it
+            onPressed: hasSelection 
+                ? () => _sendToScratchPad(context, ref, comparison)
+                : null,
+            icon: const Icon(Icons.send),
+            label: const Text('Send to Draft'),
+          ),
         ],
       ),
       body: LayoutBuilder(
