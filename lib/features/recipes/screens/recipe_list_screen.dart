@@ -535,7 +535,6 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               title: const Text('Create Manually'),
               onTap: () {
                 Navigator.pop(ctx);
-                // Create a new empty recipe and navigate to edit
                 AppRoutes.toRecipeEdit(context, course: widget.course);
               },
             ),
@@ -552,7 +551,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               title: const Text('Scan from Photo (OCR)'),
               onTap: () {
                 Navigator.pop(ctx);
-                AppRoutes.toOCRImport(context, course: widget.course);
+                // FIX: Changed from toOCRImport to toOCRScanner
+                AppRoutes.toOCRScanner(context, course: widget.course);
               },
             ),
           ],
