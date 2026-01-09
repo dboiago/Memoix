@@ -116,23 +116,28 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
     _folderId = prefs.getString(_keyFolderId);
     _folderPath = prefs.getString(_keyFolderPath);
 
-    // If we were connected, try to silently sign in
-    if (_isConnected) {
-      try {
-        if (_isDesktop) {
-          await _restoreDesktopSession(prefs);
-        } else if (_isMobile) {
-          await _restoreMobileSession();
+    // Try to restore session if we have stored credentials
+    // (even if _isConnected is false, e.g., after switching from another provider)
+    try {
+      if (_isDesktop) {
+        await _restoreDesktopSession(prefs);
+        // If session was restored successfully, mark as connected
+        if (_driveApi != null) {
+          _isConnected = true;
+          await prefs.setBool(_keyIsConnected, true);
         }
-        
-        // After successful session restoration, check pending repositories
-        if (_isConnected) {
-          unawaited(checkPendingRepositories());
-        }
-      } catch (e) {
-        debugPrint('GoogleDriveStorage: Silent sign-in failed: $e');
-        await _clearStoredState();
+      } else if (_isMobile) {
+        await _restoreMobileSession();
+        // _restoreMobileSession already sets _isConnected
       }
+      
+      // After successful session restoration, check pending repositories
+      if (_isConnected) {
+        unawaited(checkPendingRepositories());
+      }
+    } catch (e) {
+      debugPrint('GoogleDriveStorage: Silent sign-in failed: $e');
+      await _clearStoredState();
     }
   }
 
