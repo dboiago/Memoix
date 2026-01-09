@@ -12,6 +12,7 @@ $replacements = @{
     'ExternalStorageService' = 'PersonalStorageService'
     'ExternalStorageProvider' = 'PersonalStorageProvider'
     'ExternalStorageScreen' = 'PersonalStorageScreen'
+    'toExternalStorage' = 'toPersonalStorage'
     
     # Comments
     'Notify external storage service' = 'Notify personal storage service'
@@ -29,6 +30,10 @@ $replacements = @{
     "'external_storage_sync_mode'" = "'personal_storage_sync_mode'"
     "'external_storage_provider_id'" = "'personal_storage_provider_id'"
     "'external_storage_path'" = "'personal_storage_path'"
+    
+    # Debug messages
+    'ExternalStorageService:' = 'PersonalStorageService:'
+    'ExternalStorageProvider interface' = 'PersonalStorageProvider interface'
 }
 
 # Get all Dart files
