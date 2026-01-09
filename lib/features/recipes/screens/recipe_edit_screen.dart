@@ -1,5 +1,4 @@
-  String? _selectedModernistType;
-  String? _selectedSmokingType;
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -23,6 +22,9 @@ import '../models/cuisine.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import 'recipe_detail_screen.dart';
+
+String? _selectedModernistType;
+String? _selectedSmokingType;
 
 /// Converts text fractions and decimals to unicode fraction symbols
 String _normalizeFractions(String input) {
