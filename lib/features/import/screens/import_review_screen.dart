@@ -128,6 +128,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       appBar: AppBar(
         title: const Text('Review Import'),
         actions: [
+          TextButton.icon(
+            onPressed: _openInComparison,
+            icon: const Icon(Icons.compare_arrows),
+            label: const Text('Compare'),
+          ),
+          const SizedBox(width: 8),
           TextButton(
             onPressed: _saveRecipe,
             child: const Text('Save'),
@@ -1685,6 +1691,31 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       imageUrl: widget.importResult.imageUrl,
       source: PizzaSource.imported,
     );
+  }
+
+  /// Open the imported recipe in Recipe Comparison tool
+  Future<void> _openInComparison() async {
+    if (_nameController.text.trim().isEmpty) {
+      MemoixSnackBar.showError('Please enter a recipe name');
+      return;
+    }
+
+    // Build a temporary Recipe object from the imported data
+    // This recipe is NOT saved to the database - only used for comparison
+    Recipe recipe;
+    
+    if (_isModernistCourse || _isSmokingCourse || _isPizzasCourse) {
+      // For non-standard recipe types, show a message
+      MemoixSnackBar.show('Comparison is only available for standard recipes');
+      return;
+    } else {
+      recipe = _buildRecipe();
+    }
+
+    if (!mounted) return;
+
+    // Navigate to Recipe Comparison with this recipe pre-filled
+    AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe);
   }
 
   Future<void> _saveRecipe() async {
