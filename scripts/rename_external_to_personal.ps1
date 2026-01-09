@@ -14,6 +14,17 @@ $replacements = @{
     'ExternalStorageScreen' = 'PersonalStorageScreen'
     'toExternalStorage' = 'toPersonalStorage'
     
+    # Repository → Shared Storage (for code clarity)
+    'RepositoryManagementScreen' = 'SharedStorageScreen'
+    'toRepositoryManagement' = 'toSharedStorage'
+    'ShareRepositoryScreen' = 'ShareStorageScreen'
+    'RepositoryManager' = 'SharedStorageManager'
+    'DriveRepository' = 'StorageLocation'
+    'repository_management_screen' = 'shared_storage_screen'
+    'share_repository_screen' = 'share_storage_screen'
+    'repository_manager' = 'shared_storage_manager'
+    'drive_repository' = 'storage_location'
+    
     # Comments
     'Notify external storage service' = 'Notify personal storage service'
     'external storage sync on launch' = 'personal storage sync on launch'
@@ -65,6 +76,12 @@ Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "Files updated: $fileCount" -ForegroundColor Yellow
 Write-Host "Replacements made: $replaceCount" -ForegroundColor Yellow
 Write-Host "`nDon't forget to:" -ForegroundColor Magenta
-Write-Host "1. Run: flutter pub get" -ForegroundColor White
-Write-Host "2. Run: flutter pub run build_runner build --delete-conflicting-outputs" -ForegroundColor White
-Write-Host "3. Test the app thoroughly" -ForegroundColor White
+Write-Host "1. Rename these files manually:" -ForegroundColor White
+Write-Host "   lib/features/personal_storage/screens/repository_management_screen.dart → shared_storage_screen.dart" -ForegroundColor Cyan
+Write-Host "   lib/features/personal_storage/screens/share_repository_screen.dart → share_storage_screen.dart" -ForegroundColor Cyan
+Write-Host "   lib/features/personal_storage/services/repository_manager.dart → shared_storage_manager.dart" -ForegroundColor Cyan
+Write-Host "   lib/features/personal_storage/models/drive_repository.dart → storage_location.dart" -ForegroundColor Cyan
+Write-Host "   lib/features/personal_storage/models/drive_repository.g.dart → storage_location.g.dart" -ForegroundColor Cyan
+Write-Host "2. Run: flutter pub get" -ForegroundColor White
+Write-Host "3. Run: flutter pub run build_runner build --delete-conflicting-outputs" -ForegroundColor White
+Write-Host "4. Test the app thoroughly" -ForegroundColor White
