@@ -136,10 +136,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     ];
     final course = _selectedCourse.toLowerCase();
     if (!allowed.contains(course)) return false;
-    // For Modernist, only concepts can be compared
-    if (course == 'modernist' && _selectedModernistType == ModernistType.technique) {
-      return false;
-    }
+    // All modernist recipes in this screen are concepts, so no further check needed
     return true;
   }
 
