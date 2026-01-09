@@ -21,6 +21,7 @@ import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../tools/recipe_comparison_provider.dart';
 
 /// Capitalize the first letter of each word in a string
 String _capitalizeWords(String text) {
