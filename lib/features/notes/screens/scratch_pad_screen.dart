@@ -33,7 +33,12 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
+    // If opening a specific draft, start on the Recipe Drafts tab
+    _tabController = TabController(
+      length: 2, 
+      vsync: this,
+      initialIndex: widget.draftToEdit != null ? 1 : 0,
+    );
     _tabController.addListener(() {
       // Rebuild when tab changes to update FAB visibility
       if (!_tabController.indexIsChanging) {
@@ -131,9 +136,7 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     draftsAsync.whenData((drafts) {
       final draft = drafts.where((d) => d.uuid == uuid).firstOrNull;
       if (draft != null && mounted) {
-        // Switch to drafts tab first
-        _tabController.animateTo(1);
-        // Then open the editor
+        // Open the editor directly (tab is already set to 1 in initState)
         _editDraft(context, ref, draft);
       }
     });
