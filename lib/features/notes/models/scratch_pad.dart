@@ -63,6 +63,9 @@ class RecipeDraft {
   /// Cooking time
   String? time;
 
+  /// Course category (e.g., "Mains", "Desserts")
+  String course = 'mains';
+
   /// Structured ingredients (new format)
   List<DraftIngredient> structuredIngredients = [];
 
@@ -160,6 +163,7 @@ class RecipeDraft {
     List<String>? pairedRecipeIds,
     DateTime? createdAt,
     DateTime? updatedAt,
+    String? course,
   }) {
     return RecipeDraft()
       ..uuid = uuid ?? this.uuid
@@ -177,5 +181,6 @@ class RecipeDraft {
       ..pairedRecipeIds = pairedRecipeIds ?? this.pairedRecipeIds
       ..createdAt = createdAt ?? this.createdAt
       ..updatedAt = updatedAt ?? this.updatedAt;
+      ..course = course ?? this.course;
   }
 }
