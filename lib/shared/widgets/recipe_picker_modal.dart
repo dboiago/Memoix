@@ -131,8 +131,11 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                   }
                 }
                 
-                // Convert and add smoking recipes
+                // Convert and add smoking recipes (ONLY full recipes, not pit notes)
                 for (final smoking in smokingRecipes) {
+                  // Skip pit notes - only include full recipes
+                  if (smoking.type != SmokingType.recipe) continue;
+                  
                   if (_searchQuery.isEmpty ||
                       smoking.name.toLowerCase().contains(_searchQuery) ||
                       (smoking.item?.toLowerCase().contains(_searchQuery) ?? false)) {
@@ -140,8 +143,11 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                   }
                 }
                 
-                // Convert and add modernist recipes
+                // Convert and add modernist recipes (ONLY concepts, not techniques)
                 for (final modernist in modernistRecipes) {
+                  // Skip techniques - only include concepts
+                  if (modernist.type != ModernistType.concept) continue;
+                  
                   if (_searchQuery.isEmpty ||
                       modernist.name.toLowerCase().contains(_searchQuery) ||
                       (modernist.technique?.toLowerCase().contains(_searchQuery) ?? false)) {
