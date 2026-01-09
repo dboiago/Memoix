@@ -73,6 +73,9 @@ class RecipeRepository {
           .tagsElementContains(query, caseSensitive: false)
           .or()
           .cuisineContains(query, caseSensitive: false)
+          // --- MISSING PART ADDED BELOW ---
+          .or()
+          .ingredients((i) => i.nameContains(query, caseSensitive: false))
         )
         .limit(50)
         .findAll();
