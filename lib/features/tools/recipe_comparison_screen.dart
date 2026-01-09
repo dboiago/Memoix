@@ -23,12 +23,16 @@ final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 /// - Select ingredients and steps from both recipes
 /// - Send selections to Scratch Pad as a structured draft
 class RecipeComparisonScreen extends ConsumerStatefulWidget {
-  /// Optional pre-filled recipe for slot 1
+  /// Optional pre-filled recipe for slot 1 or 2
   final Recipe? prefilledRecipe;
+  
+  /// Which slot to fill with prefilledRecipe (1 or 2)
+  final int targetSlot;
 
   const RecipeComparisonScreen({
     super.key,
     this.prefilledRecipe,
+    this.targetSlot = 1,
   });
 
   @override
@@ -45,10 +49,14 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    // Set prefilled recipe if provided
+    // Set prefilled recipe in the requested slot
     if (widget.prefilledRecipe != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
+        if (widget.targetSlot == 2) {
+          ref.read(recipeComparisonProvider.notifier).setRecipe2(widget.prefilledRecipe!);
+        } else {
+          ref.read(recipeComparisonProvider.notifier).setRecipe1(widget.prefilledRecipe!);
+        }
       });
     }
   }

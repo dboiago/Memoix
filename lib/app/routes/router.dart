@@ -211,10 +211,13 @@ class AppRoutes {
     );
   }
 
-  static void toRecipeComparison(BuildContext context, {Recipe? prefilledRecipe}) {
+  static void toRecipeComparison(BuildContext context, {Recipe? prefilledRecipe, int targetSlot = 1}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => RecipeComparisonScreen(prefilledRecipe: prefilledRecipe),
+        builder: (_) => RecipeComparisonScreen(
+          prefilledRecipe: prefilledRecipe,
+          targetSlot: targetSlot,
+        ),
       ),
     );
   }

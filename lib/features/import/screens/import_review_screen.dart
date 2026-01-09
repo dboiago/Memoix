@@ -128,12 +128,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       appBar: AppBar(
         title: const Text('Review Import'),
         actions: [
-          TextButton.icon(
-            onPressed: _openInComparison,
-            icon: const Icon(Icons.compare_arrows),
-            label: const Text('Compare'),
-          ),
-          const SizedBox(width: 4),
+          if (_canCompare)
+            TextButton.icon(
+              onPressed: _openInComparison,
+              icon: const Icon(Icons.compare_arrows),
+              label: const Text('Compare'),
+            ),
+          if (_canCompare)
+            const SizedBox(width: 4),
           TextButton(
             onPressed: _saveRecipe,
             child: const Text('Save'),
@@ -318,13 +320,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   child: const Text('Edit More Details'),
                 ),
               ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: _openInCompareView,
-                  child: const Text('Compare'),
+              if (_canCompare) ..[
+                const SizedBox(width: 8),
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: _openInCompareView,
+                    child: const Text('Compare'),
+                  ),
                 ),
-              ),
+              ],
               const SizedBox(width: 8),
               Expanded(
                 child: FilledButton(
@@ -538,6 +542,23 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   
   /// Check if current course is Sandwiches
   bool get _isSandwichesCourse => _selectedCourse.toLowerCase() == 'sandwiches';
+  
+  /// Check if current course allows comparison
+  bool get _canCompare {
+    // Block non-comparable courses
+    if (_isPizzasCourse || _isCheeseCourse || _isCellarCourse || 
+        _isSandwichesCourse || _isDrinksCourse) {
+      return false;
+    }
+    
+    // For Modernist, only concepts can be compared
+    if (_isModernistCourse && _selectedModernistType == ModernistType.technique) {
+      return false;
+    }
+    
+    // All others are allowed (standard recipes, Smoking, Modernist concepts)
+    return true;
+  }
   
   /// Check if current course has a specialized edit screen
   bool get _hasSpecializedScreen => _isModernistCourse || _isSmokingCourse || _isPizzasCourse;
