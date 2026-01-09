@@ -8,6 +8,7 @@ import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 import '../services/personal_storage_service.dart';
+import '../services/shared_storage_manager.dart';
 
 /// Personal Storage settings screen
 ///
@@ -418,6 +419,15 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       final success = await _googleDrive!.connect();
 
       if (success) {
+        // Deactivate any active Shared Storage repositories (mutual exclusivity)
+        final sharedManager = SharedStorageManager();
+        final repos = await sharedManager.loadRepositories();
+        final activeRepo = repos.where((r) => r.isActive).firstOrNull;
+        if (activeRepo != null) {
+          final updated = repos.map((r) => r.copyWith(isActive: false)).toList();
+          await sharedManager.saveRepositories(updated);
+        }
+        
         // Set provider on service
         final service = ref.read(personalStorageServiceProvider);
         await service.setProvider(_googleDrive!);
@@ -466,6 +476,15 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       await _oneDrive!.signIn();
 
       if (_oneDrive!.isConnected) {
+        // Deactivate any active Shared Storage repositories (mutual exclusivity)
+        final sharedManager = SharedStorageManager();
+        final repos = await sharedManager.loadRepositories();
+        final activeRepo = repos.where((r) => r.isActive).firstOrNull;
+        if (activeRepo != null) {
+          final updated = repos.map((r) => r.copyWith(isActive: false)).toList();
+          await sharedManager.saveRepositories(updated);
+        }
+        
         // Note: OneDrive integration is in progress
         // Full PersonalStorageService integration will be completed in a future update
         if (mounted) {

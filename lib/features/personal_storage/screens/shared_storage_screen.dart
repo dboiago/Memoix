@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/storage_location.dart';
@@ -118,6 +119,11 @@ class _SharedStorageScreenState
           await storage.switchRepository(folderId, name);
           break;
       }
+      
+      // Disconnect Personal Storage (mutual exclusivity)
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove('personal_storage_provider_id');
+      await prefs.remove('personal_storage_path');
       
       // Sync recipes to new folder
       if (mounted) {

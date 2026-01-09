@@ -87,6 +87,12 @@ class SharedStorageManager extends ChangeNotifier {
     _currentRepository = null;
     notifyListeners();
     
+    // Disconnect Personal Storage to ensure mutual exclusivity
+    // Only one storage location (Personal OR Shared) can be active at a time
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('personal_storage_provider_id');
+    await prefs.remove('personal_storage_path');
+    
     // Initialize appropriate provider based on activeRepo.provider
     // This MUST complete before updating repository state
     try {
