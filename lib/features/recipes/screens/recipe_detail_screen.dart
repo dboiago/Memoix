@@ -1,3 +1,26 @@
+  bool shouldShowCompareButton(Recipe recipe) {
+    final allowed = {
+      'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
+      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles'
+    };
+    final blocked = {
+      'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar'
+    };
+    final course = recipe.course.toLowerCase();
+    if (blocked.contains(course)) return false;
+    if (allowed.contains(course)) {
+      // Modernist: only allow if Concept
+      if (course == 'modernist') {
+        return recipe.modernistType == ModernistType.concept;
+      }
+      // Smoking: only allow if Recipe
+      if (course == 'smoking') {
+        return recipe.smokingType == null || recipe.smokingType == SmokingType.recipe;
+      }
+      return true;
+    }
+    return false;
+  }
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -198,9 +221,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
-            onComparePressed: recipe.course.toLowerCase() != 'drinks'
+            onComparePressed: shouldShowCompareButton(recipe)
                 ? () {
-                    // Use smart assignment before navigation
                     ref.read(recipeComparisonProvider.notifier).assignImportedRecipe(recipe);
                     AppRoutes.toRecipeComparison(context);
                   }

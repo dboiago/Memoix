@@ -126,18 +126,28 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   bool _showBakerPercent = false; // Toggle for showing baker's percentage column
 
   /// Check if current course allows comparison (explicit allow-list)
-  bool get _canCompare {
-    final allowed = [
-      'mains',
-      'desserts',
-      'brunch',
-      'smoking',
-      'modernist',
-    ];
+  bool get shouldShowCompareButton {
+    final allowed = {
+      'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
+      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles'
+    };
+    final blocked = {
+      'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar'
+    };
     final course = _selectedCourse.toLowerCase();
-    if (!allowed.contains(course)) return false;
-    // All modernist recipes in this screen are concepts, so no further check needed
-    return true;
+    if (blocked.contains(course)) return false;
+    if (allowed.contains(course)) {
+      // Modernist: only allow if Concept
+      if (course == 'modernist') {
+        return _selectedModernistType == ModernistType.concept;
+      }
+      // Smoking: only allow if Recipe
+      if (course == 'smoking') {
+        return _selectedSmokingType == null || _selectedSmokingType == SmokingType.recipe;
+      }
+      return true;
+    }
+    return false;
   }
 
   // Drinks-specific fields
