@@ -193,8 +193,9 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   children: sortedCourses.map((course) {
                     final recipes = grouped[course]!;
-                    // Display course name properly (preserves Veg'n apostrophe)
-                    final displayName = course;
+                    // Normalize course display name with proper capitalization
+                    // Map lowercase course slugs to display names
+                    final displayName = _getCoursDisplayName(course);
                     
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -231,6 +232,39 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (e, _) => Center(child: Text('Error loading recipes: $e')),
     );
+  }
+
+  /// Get proper display name for course (handles capitalization and special cases)
+  String _getCoursDisplayName(String course) {
+    // Map of course slugs/names to proper display names
+    const courseDisplayNames = {
+      'apps': 'Apps',
+      'soup': 'Soups',
+      'soups': 'Soups',
+      'mains': 'Mains',
+      'vegn': 'Veg\'n',
+      'veg\'n': 'Veg\'n',
+      'sides': 'Sides',
+      'salad': 'Salads',
+      'salads': 'Salads',
+      'desserts': 'Desserts',
+      'brunch': 'Brunch',
+      'drinks': 'Drinks',
+      'breads': 'Breads',
+      'sauces': 'Sauces',
+      'rubs': 'Rubs',
+      'pickles': 'Pickles',
+      'modernist': 'Modernist',
+      'pizzas': 'Pizzas',
+      'sandwiches': 'Sandwiches',
+      'smoking': 'Smoking',
+      'cheese': 'Cheese',
+      'cellar': 'Cellar',
+      'scratch': 'Scratch',
+    };
+    
+    final lower = course.toLowerCase();
+    return courseDisplayNames[lower] ?? course;
   }
 
   /// Convert SmokingRecipe to standard Recipe format
