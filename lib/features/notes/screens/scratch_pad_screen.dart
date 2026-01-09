@@ -351,16 +351,9 @@ class _RecipeDraftsTabState extends State<_RecipeDraftsTab> {
 
   @override
   void dispose() {
-    // Execute any pending deletes when widget is disposed (e.g., navigating away)
-    for (final uuid in _pendingDeletes.keys.toList()) {
-      _pendingDeletes[uuid]?.cancel();
-      // Call delete directly with UUID - no need to look up the draft object
-      final draft = widget.drafts.where((d) => d.uuid == uuid).firstOrNull;
-      if (draft != null) {
-        widget.onDeleteDraft(draft);
-      }
-    }
-    _pendingDeletes.clear();
+    // Do NOT execute pending deletes on dispose - let timers complete naturally
+    // This allows undo to work even if user navigates away and comes back
+    // Timers will automatically execute deletes after their duration expires
     super.dispose();
   }
 
