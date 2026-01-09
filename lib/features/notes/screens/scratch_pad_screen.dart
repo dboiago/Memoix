@@ -166,7 +166,16 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
         ),
       ),
     );
-  }
+    }
+  
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => DraftEditorScreen(
+            initialDraft: draft,
+          ),
+        ),
+      ).then((_) => ref.refresh(recipeDraftsProvider)); // Refresh list on return
 
   Future<void> _deleteDraft(WidgetRef ref, RecipeDraft draft) async {
     await ref.read(scratchPadRepositoryProvider).deleteDraft(draft.uuid);
