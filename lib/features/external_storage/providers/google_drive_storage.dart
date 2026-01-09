@@ -376,7 +376,8 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
     
     // Verify access in background (don't block the switch)
     // This helps catch permission issues but doesn't prevent the switch
-    unawaited(Future.delayed(const Duration(milliseconds: 500)).then((_) async {
+    // Delay allows Drive API to fully stabilize after initialization
+    unawaited(Future.delayed(const Duration(seconds: 2)).then((_) async {
       try {
         final hasAccess = await verifyFolderAccess(folderId);
         if (!hasAccess) {
