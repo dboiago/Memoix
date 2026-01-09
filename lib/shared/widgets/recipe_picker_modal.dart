@@ -215,7 +215,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
         var filtered = recipes.where((recipe) {
           return _searchQuery.isEmpty ||
               recipe.name.toLowerCase().contains(_searchQuery) ||
-              recipe.item.toLowerCase().contains(_searchQuery);
+              (recipe.item.toLowerCase().contains(_searchQuery));
         }).toList();
 
         if (filtered.isEmpty) {
@@ -298,7 +298,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
         Ingredient()
           ..name = smoking.item
           ..amount = ''
-          ..unit = '',
+          ..unit = ''
       ]
       ..directions = smoking.directions.isNotEmpty
           ? smoking.directions
