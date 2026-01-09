@@ -117,8 +117,11 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                 // Combine all recipes into one list (after conversion)
                 final allRecipes = <Recipe>[];
                 
-                // Add standard recipes
+                // Add standard recipes (exclude Drinks - not comparable)
                 for (final recipe in standardRecipes) {
+                  // Skip Drinks course
+                  if (recipe.course.toLowerCase() == 'drinks') continue;
+                  
                   final matchesSearch = _searchQuery.isEmpty ||
                       recipe.name.toLowerCase().contains(_searchQuery) ||
                       (recipe.cuisine?.toLowerCase().contains(_searchQuery) ?? false);
@@ -184,8 +187,8 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   children: sortedCourses.map((course) {
                     final recipes = grouped[course]!;
-                    // Capitalize first letter of course name
-                    final displayName = course[0].toUpperCase() + course.substring(1);
+                    // Display course name properly (preserves Veg'n apostrophe)
+                    final displayName = course;
                     
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

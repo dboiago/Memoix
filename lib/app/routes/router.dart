@@ -203,10 +203,10 @@ class AppRoutes {
     );
   }
 
-  static void toScratchPad(BuildContext context) {
+  static void toScratchPad(BuildContext context, {String? draftUuid}) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => const ScratchPadScreen(),
+        builder: (_) => ScratchPadScreen(draftToEdit: draftUuid),
       ),
     );
   }

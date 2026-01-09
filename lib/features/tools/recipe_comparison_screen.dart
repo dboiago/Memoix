@@ -379,17 +379,17 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
 
     if (mounted) {
+      // Navigate immediately to the draft editor
+      AppRoutes.toScratchPad(context, draftUuid: draftUuid);
+      
+      // Show success message
       MemoixSnackBar.showSaved(
         itemName: draft.name,
         actionLabel: 'View',
         onView: () {
-          // Navigate to Scratch Pad with the specific draft
-          AppRoutes.toScratchPad(context);
+          // Already navigated, this is just for consistency
         },
       );
-      
-      // Also navigate immediately to scratch pad
-      AppRoutes.toScratchPad(context);
     }
   }
 }
@@ -655,29 +655,15 @@ class _SelectableStep extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Step number in circle (like directions)
-              Container(
-                width: 28,
-                height: 28,
-                margin: const EdgeInsets.only(right: 12),
-                decoration: BoxDecoration(
-                  color: isSelected
-                      ? theme.colorScheme.secondary
-                      : theme.colorScheme.secondaryContainer,
-                  shape: BoxShape.circle,
-                ),
-                child: Center(
-                  child: Text(
-                    '$stepNumber',
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: isSelected
-                          ? theme.colorScheme.onSecondary
-                          : theme.colorScheme.onSecondaryContainer,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
+              // Checkmark on left (like ingredients)
+              Icon(
+                isSelected ? Icons.check_circle : Icons.circle_outlined,
+                size: 20,
+                color: isSelected
+                    ? theme.colorScheme.secondary
+                    : theme.colorScheme.onSurfaceVariant,
               ),
+              const SizedBox(width: 12),
               // Content
               Expanded(
                 child: Column(
@@ -728,15 +714,6 @@ class _SelectableStep extends StatelessWidget {
                     ],
                   ],
                 ),
-              ),
-              // Checkmark
-              const SizedBox(width: 12),
-              Icon(
-                isSelected ? Icons.check_circle : Icons.circle_outlined,
-                size: 20,
-                color: isSelected
-                    ? theme.colorScheme.secondary
-                    : theme.colorScheme.onSurfaceVariant,
               ),
             ],
           ),

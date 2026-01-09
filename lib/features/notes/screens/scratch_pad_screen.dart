@@ -16,7 +16,10 @@ import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Scratch Pad screen for quick notes and temporary recipes
 class ScratchPadScreen extends ConsumerStatefulWidget {
-  const ScratchPadScreen({super.key});
+  /// Optional UUID of draft to open immediately
+  final String? draftToEdit;
+  
+  const ScratchPadScreen({super.key, this.draftToEdit});
 
   @override
   ConsumerState<ScratchPadScreen> createState() => _ScratchPadScreenState();
@@ -38,6 +41,13 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
       }
     });
     _notesController = TextEditingController();
+    
+    // Auto-open draft editor if UUID was provided
+    if (widget.draftToEdit != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _openDraftByUuid(widget.draftToEdit!);
+      });
+    }
   }
 
   @override
@@ -116,6 +126,19 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     }
   }
 
+  void _openDraftByUuid(String uuid) {
+    final draftsAsync = ref.read(recipeDraftsProvider);
+    draftsAsync.whenData((drafts) {
+      final draft = drafts.where((d) => d.uuid == uuid).firstOrNull;
+      if (draft != null && mounted) {
+        // Switch to drafts tab first
+        _tabController.animateTo(1);
+        // Then open the editor
+        _editDraft(context, ref, draft);
+      }
+    });
+  }
+  
   void _editDraft(BuildContext context, WidgetRef ref, RecipeDraft draft) {
     Navigator.push(
       context,
