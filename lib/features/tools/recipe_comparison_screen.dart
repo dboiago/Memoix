@@ -4,6 +4,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../app/routes/router.dart';
 import '../../core/widgets/memoix_snackbar.dart';
+import '../../shared/widgets/recipe_picker_modal.dart';
 import '../recipes/models/recipe.dart';
 import '../notes/models/scratch_pad.dart';
 import '../notes/repository/scratch_pad_repository.dart';
@@ -182,8 +183,21 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
     switch (selected) {
       case 'library':
-        // TODO: Open recipe picker
-        MemoixSnackBar.show('Recipe picker coming soon');
+        final recipe = await showModalBottomSheet<Recipe>(
+          context: context,
+          isScrollControlled: true,
+          builder: (context) => const RecipePickerModal(
+            title: 'Select Recipe',
+          ),
+        );
+        
+        if (recipe != null && mounted) {
+          if (slot == 1) {
+            ref.read(recipeComparisonProvider.notifier).setRecipe1(recipe);
+          } else {
+            ref.read(recipeComparisonProvider.notifier).setRecipe2(recipe);
+          }
+        }
         break;
       case 'url':
         AppRoutes.toURLImport(context);
