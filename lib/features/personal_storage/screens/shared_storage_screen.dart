@@ -143,6 +143,9 @@ class _SharedStorageScreenState
       final service = ref.read(personalStorageServiceProvider);
       await service.push(silent: true);
       
+      // Wait a moment for SharedPreferences to persist the updated lastSynced time
+      await Future.delayed(const Duration(milliseconds: 100));
+      
       _loadRepositories();
       
       if (mounted) {
