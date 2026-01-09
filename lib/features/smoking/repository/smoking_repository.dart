@@ -43,8 +43,8 @@ class SmokingRepository {
     _normalizeSeasoningUnits(recipe);
     await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
   
   /// Normalize seasoning units to standard abbreviations
@@ -58,8 +58,8 @@ class SmokingRepository {
     if (recipe != null) {
       await _db.writeTxn(() => _db.smokingRecipes.delete(recipe.id));
       
-      // Notify external storage service of change
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      // Notify personal storage service of change
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
   }
 
@@ -71,8 +71,8 @@ class SmokingRepository {
       recipe.updatedAt = DateTime.now();
       await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
       
-      // Notify external storage service of change
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      // Notify personal storage service of change
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
   }
 
@@ -84,8 +84,8 @@ class SmokingRepository {
       recipe.updatedAt = DateTime.now();
       await _db.writeTxn(() => _db.smokingRecipes.put(recipe));
       
-      // Notify external storage service of change
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      // Notify personal storage service of change
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
   }
 

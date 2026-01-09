@@ -390,10 +390,10 @@ class OneDriveStorage implements CloudStorageProvider {
 
   @override
   Future<void> syncRecipes() async {
-    // This method is called from ExternalStorageService
+    // This method is called from PersonalStorageService
     // The actual sync logic (creating RecipeBundle, etc.) lives in the service layer
     throw UnimplementedError(
-      'OneDriveStorage: Use ExternalStorageService.push() for syncing',
+      'OneDriveStorage: Use PersonalStorageService.push() for syncing',
     );
   }
 

@@ -261,7 +261,7 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('Shared Storage'),
             subtitle: const Text('Access shared or managed recipe collections'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () => AppRoutes.toRepositoryManagement(context),
+            onTap: () => AppRoutes.toSharedStorage(context),
           ),
 
           const Divider(),
@@ -439,7 +439,7 @@ class SettingsScreen extends ConsumerWidget {
   }
 
   void _openExternalStorage(BuildContext context) {
-    AppRoutes.toExternalStorage(context);
+    AppRoutes.toPersonalStorage(context);
   }
 
   void _showAbout(BuildContext context) async {

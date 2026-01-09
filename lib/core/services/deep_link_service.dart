@@ -5,9 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/sharing/services/share_service.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
-import '../../features/personal_storage/services/repository_manager.dart';
+import '../../features/personal_storage/services/shared_storage_manager.dart';
 import '../../features/personal_storage/providers/google_drive_storage.dart';
-import '../../features/personal_storage/models/drive_repository.dart';
+import '../../features/personal_storage/models/storage_location.dart';
 import '../widgets/memoix_snackbar.dart';
 
 /// Service to handle deep links (memoix://recipe/...)
@@ -76,7 +76,7 @@ class DeepLinkService {
     }
 
     // Check if already added
-    final manager = RepositoryManager();
+    final manager = SharedStorageManager();
     final repositories = await manager.loadRepositories();
     
     if (repositories.any((r) => r.folderId == folderId)) {

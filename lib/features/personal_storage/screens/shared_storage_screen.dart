@@ -2,28 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
-import '../models/drive_repository.dart';
+import '../models/storage_location.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 import '../services/external_storage_service.dart';
-import '../services/repository_manager.dart';
-import 'external_storage_screen.dart';
-import 'share_repository_screen.dart';
+import '../services/shared_storage_manager.dart';
+import 'personal_storage_screen.dart';
+import 'share_storage_screen.dart';
 
-class RepositoryManagementScreen extends ConsumerStatefulWidget {
-  const RepositoryManagementScreen({super.key});
+class SharedStorageScreen extends ConsumerStatefulWidget {
+  const SharedStorageScreen({super.key});
 
   @override
-  ConsumerState<RepositoryManagementScreen> createState() =>
-      _RepositoryManagementScreenState();
+  ConsumerState<SharedStorageScreen> createState() =>
+      _SharedStorageScreenState();
 }
 
-class _RepositoryManagementScreenState
-    extends ConsumerState<RepositoryManagementScreen> {
-  late Future<List<DriveRepository>> _repositoriesFuture;
-  final _manager = RepositoryManager();
+class _SharedStorageScreenState
+    extends ConsumerState<SharedStorageScreen> {
+  late Future<List<StorageLocation>> _repositoriesFuture;
+  final _manager = SharedStorageManager();
 
   @override
   void initState() {
@@ -124,7 +124,7 @@ class _RepositoryManagementScreenState
         MemoixSnackBar.show('Syncing recipes to "$name"...');
       }
       
-      final service = ref.read(externalStorageServiceProvider);
+      final service = ref.read(personalStorageServiceProvider);
       await service.push(silent: true);
       
       _loadRepositories();
@@ -183,7 +183,7 @@ class _RepositoryManagementScreenState
     );
   }
 
-  Future<void> _switchRepository(DriveRepository repository) async {
+  Future<void> _switchRepository(StorageLocation repository) async {
     // Show loading indicator
     if (mounted) {
       MemoixSnackBar.show('Switching to "${repository.name}"...');
@@ -209,7 +209,7 @@ class _RepositoryManagementScreenState
           await storage.switchRepository(repository.folderId, repository.name);
           break;
         case StorageProvider.oneDrive:
-          // OneDrive switch is handled in RepositoryManager.setActiveRepository
+          // OneDrive switch is handled in SharedStorageManager.setActiveRepository
           break;
       }
       
@@ -228,7 +228,7 @@ class _RepositoryManagementScreenState
     }
   }
 
-  Future<void> _deleteRepository(DriveRepository repository) async {
+  Future<void> _deleteRepository(StorageLocation repository) async {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -269,7 +269,7 @@ class _RepositoryManagementScreenState
     }
   }
 
-  Future<void> _verifyRepository(DriveRepository repository) async {
+  Future<void> _verifyRepository(StorageLocation repository) async {
     try {
       final storage = ref.read(googleDriveStorageProvider);
       final hasAccess = await storage.verifyFolderAccess(repository.folderId);
@@ -292,12 +292,12 @@ class _RepositoryManagementScreenState
     }
   }
 
-  Future<void> _shareRepository(DriveRepository repository) async {
+  Future<void> _shareRepository(StorageLocation repository) async {
     if (!mounted) return;
     
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => ShareRepositoryScreen(repository: repository),
+        builder: (_) => ShareStorageScreen(repository: repository),
       ),
     );
   }
@@ -315,7 +315,7 @@ class _RepositoryManagementScreenState
         icon: const Icon(Icons.add),
         label: const Text('Add Repository'),
       ),
-      body: FutureBuilder<List<DriveRepository>>(
+      body: FutureBuilder<List<StorageLocation>>(
         future: _repositoriesFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -379,7 +379,7 @@ class _RepositoryManagementScreenState
 }
 
 class _RepositoryCard extends ConsumerWidget {
-  final DriveRepository repository;
+  final StorageLocation repository;
   final VoidCallback onSwitch;
   final VoidCallback onShare;
   final VoidCallback onDelete;
@@ -664,7 +664,7 @@ class _RepositoryCard extends ConsumerWidget {
   /// Build sync mode section
   Widget _buildSyncModeSection(ThemeData theme, WidgetRef ref, VoidCallback onRefresh) {
     return FutureBuilder<SyncMode>(
-      future: ref.read(externalStorageServiceProvider).syncMode,
+      future: ref.read(personalStorageServiceProvider).syncMode,
       builder: (context, snapshot) {
         final mode = snapshot.data ?? SyncMode.manual;
         return Column(
@@ -690,7 +690,7 @@ class _RepositoryCard extends ConsumerWidget {
                   ],
                   selected: {mode},
                   onSelectionChanged: (selection) async {
-                    final service = ref.read(externalStorageServiceProvider);
+                    final service = ref.read(personalStorageServiceProvider);
                     await service.setSyncMode(selection.first);
                     onRefresh();
                   },
@@ -720,7 +720,7 @@ class _RepositoryCard extends ConsumerWidget {
         Expanded(
           child: OutlinedButton.icon(
             onPressed: isDisabled ? null : () async {
-              final service = ref.read(externalStorageServiceProvider);
+              final service = ref.read(personalStorageServiceProvider);
               await service.push(silent: false);
               onRefresh();
             },
@@ -734,7 +734,7 @@ class _RepositoryCard extends ConsumerWidget {
         Expanded(
           child: FilledButton.icon(
             onPressed: isDisabled ? null : () async {
-              final service = ref.read(externalStorageServiceProvider);
+              final service = ref.read(personalStorageServiceProvider);
               await service.pull(silent: false);
               onRefresh();
             },
@@ -749,7 +749,7 @@ class _RepositoryCard extends ConsumerWidget {
   }
 
   /// Get sync status text based on repository state
-  String _getSyncStatusText(DriveRepository repo) {
+  String _getSyncStatusText(StorageLocation repo) {
     if (repo.lastSynced == null) {
       return 'New • Not synced yet';
     }

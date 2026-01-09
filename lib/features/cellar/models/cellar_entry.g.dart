@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'pizza.dart';
+part of 'cellar_entry.dart';
 
 // **************************************************************************
 // IsarCollectionGenerator
@@ -9,75 +9,74 @@ part of 'pizza.dart';
 // coverage:ignore-file
 // ignore_for_file: duplicate_ignore, non_constant_identifier_names, constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast, prefer_const_constructors, lines_longer_than_80_chars, require_trailing_commas, inference_failure_on_function_invocation, unnecessary_parenthesis, unnecessary_raw_strings, unnecessary_null_checks, join_return_with_assignment, prefer_final_locals, avoid_js_rounded_ints, avoid_positional_boolean_parameters, always_specify_types
 
-extension GetPizzaCollection on Isar {
-  IsarCollection<Pizza> get pizzas => this.collection();
+extension GetCellarEntryCollection on Isar {
+  IsarCollection<CellarEntry> get cellarEntrys => this.collection();
 }
 
-const PizzaSchema = CollectionSchema(
-  name: r'Pizza',
-  id: -5940396934508515181,
+const CellarEntrySchema = CollectionSchema(
+  name: r'CellarEntry',
+  id: -4716563931739247436,
   properties: {
-    r'base': PropertySchema(
+    r'abv': PropertySchema(
       id: 0,
-      name: r'base',
+      name: r'abv',
       type: IsarType.string,
-      enumMap: _PizzabaseEnumValueMap,
     ),
-    r'cheeses': PropertySchema(
+    r'ageVintage': PropertySchema(
       id: 1,
-      name: r'cheeses',
-      type: IsarType.stringList,
+      name: r'ageVintage',
+      type: IsarType.string,
     ),
-    r'cookCount': PropertySchema(
+    r'buy': PropertySchema(
       id: 2,
-      name: r'cookCount',
-      type: IsarType.long,
+      name: r'buy',
+      type: IsarType.bool,
+    ),
+    r'category': PropertySchema(
+      id: 3,
+      name: r'category',
+      type: IsarType.string,
     ),
     r'createdAt': PropertySchema(
-      id: 3,
+      id: 4,
       name: r'createdAt',
       type: IsarType.dateTime,
     ),
     r'imageUrl': PropertySchema(
-      id: 4,
+      id: 5,
       name: r'imageUrl',
       type: IsarType.string,
     ),
     r'isFavorite': PropertySchema(
-      id: 5,
+      id: 6,
       name: r'isFavorite',
       type: IsarType.bool,
     ),
     r'name': PropertySchema(
-      id: 6,
+      id: 7,
       name: r'name',
       type: IsarType.string,
     ),
-    r'notes': PropertySchema(
-      id: 7,
-      name: r'notes',
-      type: IsarType.string,
-    ),
-    r'proteins': PropertySchema(
+    r'priceRange': PropertySchema(
       id: 8,
-      name: r'proteins',
-      type: IsarType.stringList,
-    ),
-    r'rating': PropertySchema(
-      id: 9,
-      name: r'rating',
+      name: r'priceRange',
       type: IsarType.long,
+    ),
+    r'producer': PropertySchema(
+      id: 9,
+      name: r'producer',
+      type: IsarType.string,
     ),
     r'source': PropertySchema(
       id: 10,
       name: r'source',
       type: IsarType.string,
-      enumMap: _PizzasourceEnumValueMap,
+      enumMap: _CellarEntrysourceEnumValueMap,
     ),
-    r'tags': PropertySchema(
+    r'tastingNotes': PropertySchema(
       id: 11,
-      name: r'tags',
-      type: IsarType.stringList,
+      name: r'tastingNotes',
+      type: IsarType.string,
     ),
     r'updatedAt': PropertySchema(
       id: 12,
@@ -89,21 +88,16 @@ const PizzaSchema = CollectionSchema(
       name: r'uuid',
       type: IsarType.string,
     ),
-    r'vegetables': PropertySchema(
-      id: 14,
-      name: r'vegetables',
-      type: IsarType.stringList,
-    ),
     r'version': PropertySchema(
-      id: 15,
+      id: 14,
       name: r'version',
       type: IsarType.long,
     )
   },
-  estimateSize: _pizzaEstimateSize,
-  serialize: _pizzaSerialize,
-  deserialize: _pizzaDeserialize,
-  deserializeProp: _pizzaDeserializeProp,
+  estimateSize: _cellarEntryEstimateSize,
+  serialize: _cellarEntrySerialize,
+  deserialize: _cellarEntryDeserialize,
+  deserializeProp: _cellarEntryDeserializeProp,
   idName: r'id',
   indexes: {
     r'uuid': IndexSchema(
@@ -135,24 +129,34 @@ const PizzaSchema = CollectionSchema(
   },
   links: {},
   embeddedSchemas: {},
-  getId: _pizzaGetId,
-  getLinks: _pizzaGetLinks,
-  attach: _pizzaAttach,
+  getId: _cellarEntryGetId,
+  getLinks: _cellarEntryGetLinks,
+  attach: _cellarEntryAttach,
   version: '3.1.0+1',
 );
 
-int _pizzaEstimateSize(
-  Pizza object,
+int _cellarEntryEstimateSize(
+  CellarEntry object,
   List<int> offsets,
   Map<Type, List<int>> allOffsets,
 ) {
   var bytesCount = offsets.last;
-  bytesCount += 3 + object.base.name.length * 3;
-  bytesCount += 3 + object.cheeses.length * 3;
   {
-    for (var i = 0; i < object.cheeses.length; i++) {
-      final value = object.cheeses[i];
-      bytesCount += value.length * 3;
+    final value = object.abv;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
+    }
+  }
+  {
+    final value = object.ageVintage;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
+    }
+  }
+  {
+    final value = object.category;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
     }
   }
   {
@@ -163,92 +167,74 @@ int _pizzaEstimateSize(
   }
   bytesCount += 3 + object.name.length * 3;
   {
-    final value = object.notes;
+    final value = object.producer;
     if (value != null) {
       bytesCount += 3 + value.length * 3;
     }
   }
-  bytesCount += 3 + object.proteins.length * 3;
-  {
-    for (var i = 0; i < object.proteins.length; i++) {
-      final value = object.proteins[i];
-      bytesCount += value.length * 3;
-    }
-  }
   bytesCount += 3 + object.source.name.length * 3;
-  bytesCount += 3 + object.tags.length * 3;
   {
-    for (var i = 0; i < object.tags.length; i++) {
-      final value = object.tags[i];
-      bytesCount += value.length * 3;
+    final value = object.tastingNotes;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
     }
   }
   bytesCount += 3 + object.uuid.length * 3;
-  bytesCount += 3 + object.vegetables.length * 3;
-  {
-    for (var i = 0; i < object.vegetables.length; i++) {
-      final value = object.vegetables[i];
-      bytesCount += value.length * 3;
-    }
-  }
   return bytesCount;
 }
 
-void _pizzaSerialize(
-  Pizza object,
+void _cellarEntrySerialize(
+  CellarEntry object,
   IsarWriter writer,
   List<int> offsets,
   Map<Type, List<int>> allOffsets,
 ) {
-  writer.writeString(offsets[0], object.base.name);
-  writer.writeStringList(offsets[1], object.cheeses);
-  writer.writeLong(offsets[2], object.cookCount);
-  writer.writeDateTime(offsets[3], object.createdAt);
-  writer.writeString(offsets[4], object.imageUrl);
-  writer.writeBool(offsets[5], object.isFavorite);
-  writer.writeString(offsets[6], object.name);
-  writer.writeString(offsets[7], object.notes);
-  writer.writeStringList(offsets[8], object.proteins);
-  writer.writeLong(offsets[9], object.rating);
+  writer.writeString(offsets[0], object.abv);
+  writer.writeString(offsets[1], object.ageVintage);
+  writer.writeBool(offsets[2], object.buy);
+  writer.writeString(offsets[3], object.category);
+  writer.writeDateTime(offsets[4], object.createdAt);
+  writer.writeString(offsets[5], object.imageUrl);
+  writer.writeBool(offsets[6], object.isFavorite);
+  writer.writeString(offsets[7], object.name);
+  writer.writeLong(offsets[8], object.priceRange);
+  writer.writeString(offsets[9], object.producer);
   writer.writeString(offsets[10], object.source.name);
-  writer.writeStringList(offsets[11], object.tags);
+  writer.writeString(offsets[11], object.tastingNotes);
   writer.writeDateTime(offsets[12], object.updatedAt);
   writer.writeString(offsets[13], object.uuid);
-  writer.writeStringList(offsets[14], object.vegetables);
-  writer.writeLong(offsets[15], object.version);
+  writer.writeLong(offsets[14], object.version);
 }
 
-Pizza _pizzaDeserialize(
+CellarEntry _cellarEntryDeserialize(
   Id id,
   IsarReader reader,
   List<int> offsets,
   Map<Type, List<int>> allOffsets,
 ) {
-  final object = Pizza();
-  object.base = _PizzabaseValueEnumMap[reader.readStringOrNull(offsets[0])] ??
-      PizzaBase.marinara;
-  object.cheeses = reader.readStringList(offsets[1]) ?? [];
-  object.cookCount = reader.readLong(offsets[2]);
-  object.createdAt = reader.readDateTime(offsets[3]);
+  final object = CellarEntry();
+  object.abv = reader.readStringOrNull(offsets[0]);
+  object.ageVintage = reader.readStringOrNull(offsets[1]);
+  object.buy = reader.readBool(offsets[2]);
+  object.category = reader.readStringOrNull(offsets[3]);
+  object.createdAt = reader.readDateTime(offsets[4]);
   object.id = id;
-  object.imageUrl = reader.readStringOrNull(offsets[4]);
-  object.isFavorite = reader.readBool(offsets[5]);
-  object.name = reader.readString(offsets[6]);
-  object.notes = reader.readStringOrNull(offsets[7]);
-  object.proteins = reader.readStringList(offsets[8]) ?? [];
-  object.rating = reader.readLong(offsets[9]);
+  object.imageUrl = reader.readStringOrNull(offsets[5]);
+  object.isFavorite = reader.readBool(offsets[6]);
+  object.name = reader.readString(offsets[7]);
+  object.priceRange = reader.readLongOrNull(offsets[8]);
+  object.producer = reader.readStringOrNull(offsets[9]);
   object.source =
-      _PizzasourceValueEnumMap[reader.readStringOrNull(offsets[10])] ??
-          PizzaSource.memoix;
-  object.tags = reader.readStringList(offsets[11]) ?? [];
+      _CellarEntrysourceValueEnumMap[reader.readStringOrNull(offsets[10])] ??
+          CellarSource.memoix;
+  object.tastingNotes = reader.readStringOrNull(offsets[11]);
   object.updatedAt = reader.readDateTime(offsets[12]);
   object.uuid = reader.readString(offsets[13]);
-  object.vegetables = reader.readStringList(offsets[14]) ?? [];
-  object.version = reader.readLong(offsets[15]);
+  object.version = reader.readLong(offsets[14]);
   return object;
 }
 
-P _pizzaDeserializeProp<P>(
+P _cellarEntryDeserializeProp<P>(
   IsarReader reader,
   int propertyId,
   int offset,
@@ -256,95 +242,71 @@ P _pizzaDeserializeProp<P>(
 ) {
   switch (propertyId) {
     case 0:
-      return (_PizzabaseValueEnumMap[reader.readStringOrNull(offset)] ??
-          PizzaBase.marinara) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 1:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 2:
-      return (reader.readLong(offset)) as P;
-    case 3:
-      return (reader.readDateTime(offset)) as P;
-    case 4:
-      return (reader.readStringOrNull(offset)) as P;
-    case 5:
       return (reader.readBool(offset)) as P;
-    case 6:
-      return (reader.readString(offset)) as P;
-    case 7:
+    case 3:
       return (reader.readStringOrNull(offset)) as P;
+    case 4:
+      return (reader.readDateTime(offset)) as P;
+    case 5:
+      return (reader.readStringOrNull(offset)) as P;
+    case 6:
+      return (reader.readBool(offset)) as P;
+    case 7:
+      return (reader.readString(offset)) as P;
     case 8:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readLongOrNull(offset)) as P;
     case 9:
-      return (reader.readLong(offset)) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 10:
-      return (_PizzasourceValueEnumMap[reader.readStringOrNull(offset)] ??
-          PizzaSource.memoix) as P;
+      return (_CellarEntrysourceValueEnumMap[reader.readStringOrNull(offset)] ??
+          CellarSource.memoix) as P;
     case 11:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 12:
       return (reader.readDateTime(offset)) as P;
     case 13:
       return (reader.readString(offset)) as P;
     case 14:
-      return (reader.readStringList(offset) ?? []) as P;
-    case 15:
       return (reader.readLong(offset)) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
   }
 }
 
-const _PizzabaseEnumValueMap = {
-  r'marinara': r'marinara',
-  r'oil': r'oil',
-  r'pesto': r'pesto',
-  r'cream': r'cream',
-  r'bbq': r'bbq',
-  r'buffalo': r'buffalo',
-  r'alfredo': r'alfredo',
-  r'garlic': r'garlic',
-  r'none': r'none',
-};
-const _PizzabaseValueEnumMap = {
-  r'marinara': PizzaBase.marinara,
-  r'oil': PizzaBase.oil,
-  r'pesto': PizzaBase.pesto,
-  r'cream': PizzaBase.cream,
-  r'bbq': PizzaBase.bbq,
-  r'buffalo': PizzaBase.buffalo,
-  r'alfredo': PizzaBase.alfredo,
-  r'garlic': PizzaBase.garlic,
-  r'none': PizzaBase.none,
-};
-const _PizzasourceEnumValueMap = {
+const _CellarEntrysourceEnumValueMap = {
   r'memoix': r'memoix',
   r'personal': r'personal',
   r'imported': r'imported',
 };
-const _PizzasourceValueEnumMap = {
-  r'memoix': PizzaSource.memoix,
-  r'personal': PizzaSource.personal,
-  r'imported': PizzaSource.imported,
+const _CellarEntrysourceValueEnumMap = {
+  r'memoix': CellarSource.memoix,
+  r'personal': CellarSource.personal,
+  r'imported': CellarSource.imported,
 };
 
-Id _pizzaGetId(Pizza object) {
+Id _cellarEntryGetId(CellarEntry object) {
   return object.id;
 }
 
-List<IsarLinkBase<dynamic>> _pizzaGetLinks(Pizza object) {
+List<IsarLinkBase<dynamic>> _cellarEntryGetLinks(CellarEntry object) {
   return [];
 }
 
-void _pizzaAttach(IsarCollection<dynamic> col, Id id, Pizza object) {
+void _cellarEntryAttach(
+    IsarCollection<dynamic> col, Id id, CellarEntry object) {
   object.id = id;
 }
 
-extension PizzaByIndex on IsarCollection<Pizza> {
-  Future<Pizza?> getByUuid(String uuid) {
+extension CellarEntryByIndex on IsarCollection<CellarEntry> {
+  Future<CellarEntry?> getByUuid(String uuid) {
     return getByIndex(r'uuid', [uuid]);
   }
 
-  Pizza? getByUuidSync(String uuid) {
+  CellarEntry? getByUuidSync(String uuid) {
     return getByIndexSync(r'uuid', [uuid]);
   }
 
@@ -356,12 +318,12 @@ extension PizzaByIndex on IsarCollection<Pizza> {
     return deleteByIndexSync(r'uuid', [uuid]);
   }
 
-  Future<List<Pizza?>> getAllByUuid(List<String> uuidValues) {
+  Future<List<CellarEntry?>> getAllByUuid(List<String> uuidValues) {
     final values = uuidValues.map((e) => [e]).toList();
     return getAllByIndex(r'uuid', values);
   }
 
-  List<Pizza?> getAllByUuidSync(List<String> uuidValues) {
+  List<CellarEntry?> getAllByUuidSync(List<String> uuidValues) {
     final values = uuidValues.map((e) => [e]).toList();
     return getAllByIndexSync(r'uuid', values);
   }
@@ -376,31 +338,33 @@ extension PizzaByIndex on IsarCollection<Pizza> {
     return deleteAllByIndexSync(r'uuid', values);
   }
 
-  Future<Id> putByUuid(Pizza object) {
+  Future<Id> putByUuid(CellarEntry object) {
     return putByIndex(r'uuid', object);
   }
 
-  Id putByUuidSync(Pizza object, {bool saveLinks = true}) {
+  Id putByUuidSync(CellarEntry object, {bool saveLinks = true}) {
     return putByIndexSync(r'uuid', object, saveLinks: saveLinks);
   }
 
-  Future<List<Id>> putAllByUuid(List<Pizza> objects) {
+  Future<List<Id>> putAllByUuid(List<CellarEntry> objects) {
     return putAllByIndex(r'uuid', objects);
   }
 
-  List<Id> putAllByUuidSync(List<Pizza> objects, {bool saveLinks = true}) {
+  List<Id> putAllByUuidSync(List<CellarEntry> objects,
+      {bool saveLinks = true}) {
     return putAllByIndexSync(r'uuid', objects, saveLinks: saveLinks);
   }
 }
 
-extension PizzaQueryWhereSort on QueryBuilder<Pizza, Pizza, QWhere> {
-  QueryBuilder<Pizza, Pizza, QAfterWhere> anyId() {
+extension CellarEntryQueryWhereSort
+    on QueryBuilder<CellarEntry, CellarEntry, QWhere> {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhere> anyId() {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(const IdWhereClause.any());
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhere> anyName() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhere> anyName() {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(
         const IndexWhereClause.any(indexName: r'name'),
@@ -409,8 +373,9 @@ extension PizzaQueryWhereSort on QueryBuilder<Pizza, Pizza, QWhere> {
   }
 }
 
-extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> idEqualTo(Id id) {
+extension CellarEntryQueryWhere
+    on QueryBuilder<CellarEntry, CellarEntry, QWhereClause> {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> idEqualTo(Id id) {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(IdWhereClause.between(
         lower: id,
@@ -419,7 +384,8 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> idNotEqualTo(Id id) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> idNotEqualTo(
+      Id id) {
     return QueryBuilder.apply(this, (query) {
       if (query.whereSort == Sort.asc) {
         return query
@@ -441,7 +407,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> idGreaterThan(Id id,
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> idGreaterThan(Id id,
       {bool include = false}) {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(
@@ -450,7 +416,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> idLessThan(Id id,
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> idLessThan(Id id,
       {bool include = false}) {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(
@@ -459,7 +425,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> idBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> idBetween(
     Id lowerId,
     Id upperId, {
     bool includeLower = true,
@@ -475,7 +441,8 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> uuidEqualTo(String uuid) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> uuidEqualTo(
+      String uuid) {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(IndexWhereClause.equalTo(
         indexName: r'uuid',
@@ -484,7 +451,8 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> uuidNotEqualTo(String uuid) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> uuidNotEqualTo(
+      String uuid) {
     return QueryBuilder.apply(this, (query) {
       if (query.whereSort == Sort.asc) {
         return query
@@ -518,7 +486,8 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameEqualTo(String name) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameEqualTo(
+      String name) {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(IndexWhereClause.equalTo(
         indexName: r'name',
@@ -527,7 +496,8 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameNotEqualTo(String name) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameNotEqualTo(
+      String name) {
     return QueryBuilder.apply(this, (query) {
       if (query.whereSort == Sort.asc) {
         return query
@@ -561,7 +531,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameGreaterThan(
     String name, {
     bool include = false,
   }) {
@@ -575,7 +545,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameLessThan(
     String name, {
     bool include = false,
   }) {
@@ -589,7 +559,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameBetween(
     String lowerName,
     String upperName, {
     bool includeLower = true,
@@ -606,7 +576,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameStartsWith(
       String NamePrefix) {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(IndexWhereClause.between(
@@ -617,7 +587,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(IndexWhereClause.equalTo(
         indexName: r'name',
@@ -626,7 +596,7 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterWhereClause> nameIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterWhereClause> nameIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       if (query.whereSort == Sort.asc) {
         return query
@@ -653,60 +623,77 @@ extension PizzaQueryWhere on QueryBuilder<Pizza, Pizza, QWhereClause> {
   }
 }
 
-extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseEqualTo(
-    PizzaBase value, {
+extension CellarEntryQueryFilter
+    on QueryBuilder<CellarEntry, CellarEntry, QFilterCondition> {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'abv',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'abv',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvEqualTo(
+    String? value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'base',
+        property: r'abv',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseGreaterThan(
-    PizzaBase value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvGreaterThan(
+    String? value, {
     bool include = false,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         include: include,
-        property: r'base',
+        property: r'abv',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseLessThan(
-    PizzaBase value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvLessThan(
+    String? value, {
     bool include = false,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.lessThan(
         include: include,
-        property: r'base',
+        property: r'abv',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseBetween(
-    PizzaBase lower,
-    PizzaBase upper, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvBetween(
+    String? lower,
+    String? upper, {
     bool includeLower = true,
     bool includeUpper = true,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.between(
-        property: r'base',
+        property: r'abv',
         lower: lower,
         includeLower: includeLower,
         upper: upper,
@@ -716,341 +703,394 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'base',
+        property: r'abv',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'base',
+        property: r'abv',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseContains(String value,
-      {bool caseSensitive = true}) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.contains(
-        property: r'base',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseMatches(String pattern,
-      {bool caseSensitive = true}) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.matches(
-        property: r'base',
-        wildcard: pattern,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'base',
-        value: '',
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> baseIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'base',
-        value: '',
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementEqualTo(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'cheeses',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementGreaterThan(
-    String value, {
-    bool include = false,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        include: include,
-        property: r'cheeses',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementLessThan(
-    String value, {
-    bool include = false,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.lessThan(
-        include: include,
-        property: r'cheeses',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementBetween(
-    String lower,
-    String upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.between(
-        property: r'cheeses',
-        lower: lower,
-        includeLower: includeLower,
-        upper: upper,
-        includeUpper: includeUpper,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementStartsWith(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'cheeses',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementEndsWith(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'cheeses',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementContains(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvContains(
       String value,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
-        property: r'cheeses',
+        property: r'abv',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementMatches(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvMatches(
       String pattern,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.matches(
-        property: r'cheeses',
+        property: r'abv',
         wildcard: pattern,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> abvIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'cheeses',
+        property: r'abv',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesElementIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      abvIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'cheeses',
+        property: r'abv',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesLengthEqualTo(
-      int length) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageIsNull() {
     return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'cheeses',
-        length,
-        true,
-        length,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'cheeses',
-        0,
-        true,
-        0,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'cheeses',
-        0,
-        false,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesLengthLessThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'cheeses',
-        0,
-        true,
-        length,
-        include,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesLengthGreaterThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'cheeses',
-        length,
-        include,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cheesesLengthBetween(
-    int lower,
-    int upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'cheeses',
-        lower,
-        includeLower,
-        upper,
-        includeUpper,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cookCountEqualTo(
-      int value) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'cookCount',
-        value: value,
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'ageVintage',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cookCountGreaterThan(
-    int value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'ageVintage',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageEqualTo(
+    String? value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'ageVintage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageGreaterThan(
+    String? value, {
     bool include = false,
+    bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         include: include,
-        property: r'cookCount',
+        property: r'ageVintage',
         value: value,
+        caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cookCountLessThan(
-    int value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageLessThan(
+    String? value, {
     bool include = false,
+    bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.lessThan(
         include: include,
-        property: r'cookCount',
+        property: r'ageVintage',
         value: value,
+        caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> cookCountBetween(
-    int lower,
-    int upper, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageBetween(
+    String? lower,
+    String? upper, {
     bool includeLower = true,
     bool includeUpper = true,
+    bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.between(
-        property: r'cookCount',
+        property: r'ageVintage',
         lower: lower,
         includeLower: includeLower,
         upper: upper,
         includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> createdAtEqualTo(
-      DateTime value) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'ageVintage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'ageVintage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'ageVintage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'ageVintage',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'ageVintage',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      ageVintageIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'ageVintage',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> buyEqualTo(
+      bool value) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'buy',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'category',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'category',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> categoryEqualTo(
+    String? value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'category',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryGreaterThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'category',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryLessThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'category',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> categoryBetween(
+    String? lower,
+    String? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'category',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'category',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'category',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'category',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> categoryMatches(
+      String pattern,
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'category',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'category',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      categoryIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'category',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      createdAtEqualTo(DateTime value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'createdAt',
@@ -1059,7 +1099,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> createdAtGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      createdAtGreaterThan(
     DateTime value, {
     bool include = false,
   }) {
@@ -1072,7 +1113,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> createdAtLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      createdAtLessThan(
     DateTime value, {
     bool include = false,
   }) {
@@ -1085,7 +1127,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> createdAtBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      createdAtBetween(
     DateTime lower,
     DateTime upper, {
     bool includeLower = true,
@@ -1102,7 +1145,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> idEqualTo(Id value) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> idEqualTo(
+      Id value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'id',
@@ -1111,7 +1155,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> idGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> idGreaterThan(
     Id value, {
     bool include = false,
   }) {
@@ -1124,7 +1168,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> idLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> idLessThan(
     Id value, {
     bool include = false,
   }) {
@@ -1137,7 +1181,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> idBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> idBetween(
     Id lower,
     Id upper, {
     bool includeLower = true,
@@ -1154,7 +1198,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlIsNull() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlIsNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(const FilterCondition.isNull(
         property: r'imageUrl',
@@ -1162,7 +1207,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlIsNotNull() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlIsNotNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(const FilterCondition.isNotNull(
         property: r'imageUrl',
@@ -1170,7 +1216,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlEqualTo(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> imageUrlEqualTo(
     String? value, {
     bool caseSensitive = true,
   }) {
@@ -1183,7 +1229,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlGreaterThan(
     String? value, {
     bool include = false,
     bool caseSensitive = true,
@@ -1198,7 +1245,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlLessThan(
     String? value, {
     bool include = false,
     bool caseSensitive = true,
@@ -1213,7 +1261,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> imageUrlBetween(
     String? lower,
     String? upper, {
     bool includeLower = true,
@@ -1232,7 +1280,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -1245,7 +1294,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -1258,9 +1308,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlContains(
-      String value,
-      {bool caseSensitive = true}) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlContains(String value, {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
         property: r'imageUrl',
@@ -1270,7 +1319,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlMatches(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> imageUrlMatches(
       String pattern,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
@@ -1282,7 +1331,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'imageUrl',
@@ -1291,7 +1341,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> imageUrlIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      imageUrlIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         property: r'imageUrl',
@@ -1300,8 +1351,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> isFavoriteEqualTo(
-      bool value) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      isFavoriteEqualTo(bool value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'isFavorite',
@@ -1310,7 +1361,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameEqualTo(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameEqualTo(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -1323,7 +1374,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameGreaterThan(
     String value, {
     bool include = false,
     bool caseSensitive = true,
@@ -1338,7 +1389,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameLessThan(
     String value, {
     bool include = false,
     bool caseSensitive = true,
@@ -1353,7 +1404,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameBetween(
     String lower,
     String upper, {
     bool includeLower = true,
@@ -1372,7 +1423,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -1385,7 +1436,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -1398,7 +1449,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameContains(String value,
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameContains(
+      String value,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
@@ -1409,7 +1461,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameMatches(String pattern,
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameMatches(
+      String pattern,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.matches(
@@ -1420,7 +1473,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> nameIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'name',
@@ -1429,7 +1482,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> nameIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      nameIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         property: r'name',
@@ -1438,36 +1492,113 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesIsNull() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      priceRangeIsNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(const FilterCondition.isNull(
-        property: r'notes',
+        property: r'priceRange',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesIsNotNull() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      priceRangeIsNotNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(const FilterCondition.isNotNull(
-        property: r'notes',
+        property: r'priceRange',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesEqualTo(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      priceRangeEqualTo(int? value) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'priceRange',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      priceRangeGreaterThan(
+    int? value, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'priceRange',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      priceRangeLessThan(
+    int? value, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'priceRange',
+        value: value,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      priceRangeBetween(
+    int? lower,
+    int? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'priceRange',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'producer',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'producer',
+      ));
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> producerEqualTo(
     String? value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'notes',
+        property: r'producer',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerGreaterThan(
     String? value, {
     bool include = false,
     bool caseSensitive = true,
@@ -1475,14 +1606,15 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         include: include,
-        property: r'notes',
+        property: r'producer',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerLessThan(
     String? value, {
     bool include = false,
     bool caseSensitive = true,
@@ -1490,14 +1622,14 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.lessThan(
         include: include,
-        property: r'notes',
+        property: r'producer',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> producerBetween(
     String? lower,
     String? upper, {
     bool includeLower = true,
@@ -1506,7 +1638,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.between(
-        property: r'notes',
+        property: r'producer',
         lower: lower,
         includeLower: includeLower,
         upper: upper,
@@ -1516,125 +1648,131 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'notes',
+        property: r'producer',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'notes',
+        property: r'producer',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesContains(String value,
-      {bool caseSensitive = true}) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerContains(String value, {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
-        property: r'notes',
+        property: r'producer',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesMatches(String pattern,
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> producerMatches(
+      String pattern,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.matches(
-        property: r'notes',
+        property: r'producer',
         wildcard: pattern,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'notes',
+        property: r'producer',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> notesIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      producerIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'notes',
+        property: r'producer',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementEqualTo(
-    String value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> sourceEqualTo(
+    CellarSource value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'proteins',
+        property: r'source',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementGreaterThan(
-    String value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      sourceGreaterThan(
+    CellarSource value, {
     bool include = false,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         include: include,
-        property: r'proteins',
+        property: r'source',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementLessThan(
-    String value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> sourceLessThan(
+    CellarSource value, {
     bool include = false,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.lessThan(
         include: include,
-        property: r'proteins',
+        property: r'source',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementBetween(
-    String lower,
-    String upper, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> sourceBetween(
+    CellarSource lower,
+    CellarSource upper, {
     bool includeLower = true,
     bool includeUpper = true,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.between(
-        property: r'proteins',
+        property: r'source',
         lower: lower,
         includeLower: includeLower,
         upper: upper,
@@ -1644,264 +1782,152 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      sourceStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'proteins',
+        property: r'source',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> sourceEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'proteins',
+        property: r'source',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementContains(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> sourceContains(
       String value,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
-        property: r'proteins',
+        property: r'source',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementMatches(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> sourceMatches(
       String pattern,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.matches(
-        property: r'proteins',
+        property: r'source',
         wildcard: pattern,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsElementIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      sourceIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'proteins',
+        property: r'source',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition>
-      proteinsElementIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      sourceIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'proteins',
+        property: r'source',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsLengthEqualTo(
-      int length) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesIsNull() {
     return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'proteins',
-        length,
-        true,
-        length,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'proteins',
-        0,
-        true,
-        0,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'proteins',
-        0,
-        false,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsLengthLessThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'proteins',
-        0,
-        true,
-        length,
-        include,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsLengthGreaterThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'proteins',
-        length,
-        include,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> proteinsLengthBetween(
-    int lower,
-    int upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'proteins',
-        lower,
-        includeLower,
-        upper,
-        includeUpper,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> ratingEqualTo(int value) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'rating',
-        value: value,
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'tastingNotes',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> ratingGreaterThan(
-    int value, {
-    bool include = false,
-  }) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesIsNotNull() {
     return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        include: include,
-        property: r'rating',
-        value: value,
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'tastingNotes',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> ratingLessThan(
-    int value, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.lessThan(
-        include: include,
-        property: r'rating',
-        value: value,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> ratingBetween(
-    int lower,
-    int upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.between(
-        property: r'rating',
-        lower: lower,
-        includeLower: includeLower,
-        upper: upper,
-        includeUpper: includeUpper,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceEqualTo(
-    PizzaSource value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesEqualTo(
+    String? value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'source',
+        property: r'tastingNotes',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceGreaterThan(
-    PizzaSource value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesGreaterThan(
+    String? value, {
     bool include = false,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         include: include,
-        property: r'source',
+        property: r'tastingNotes',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceLessThan(
-    PizzaSource value, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesLessThan(
+    String? value, {
     bool include = false,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.lessThan(
         include: include,
-        property: r'source',
+        property: r'tastingNotes',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceBetween(
-    PizzaSource lower,
-    PizzaSource upper, {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesBetween(
+    String? lower,
+    String? upper, {
     bool includeLower = true,
     bool includeUpper = true,
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.between(
-        property: r'source',
+        property: r'tastingNotes',
         lower: lower,
         includeLower: includeLower,
         upper: upper,
@@ -1911,289 +1937,78 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'source',
+        property: r'tastingNotes',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'source',
+        property: r'tastingNotes',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceContains(String value,
-      {bool caseSensitive = true}) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesContains(String value, {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
-        property: r'source',
+        property: r'tastingNotes',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceMatches(
-      String pattern,
-      {bool caseSensitive = true}) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesMatches(String pattern, {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.matches(
-        property: r'source',
+        property: r'tastingNotes',
         wildcard: pattern,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'source',
+        property: r'tastingNotes',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> sourceIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      tastingNotesIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'source',
+        property: r'tastingNotes',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementEqualTo(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'tags',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementGreaterThan(
-    String value, {
-    bool include = false,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        include: include,
-        property: r'tags',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementLessThan(
-    String value, {
-    bool include = false,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.lessThan(
-        include: include,
-        property: r'tags',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementBetween(
-    String lower,
-    String upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.between(
-        property: r'tags',
-        lower: lower,
-        includeLower: includeLower,
-        upper: upper,
-        includeUpper: includeUpper,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementStartsWith(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'tags',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementEndsWith(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'tags',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementContains(
-      String value,
-      {bool caseSensitive = true}) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.contains(
-        property: r'tags',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementMatches(
-      String pattern,
-      {bool caseSensitive = true}) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.matches(
-        property: r'tags',
-        wildcard: pattern,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'tags',
-        value: '',
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsElementIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'tags',
-        value: '',
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsLengthEqualTo(
-      int length) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'tags',
-        length,
-        true,
-        length,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'tags',
-        0,
-        true,
-        0,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'tags',
-        0,
-        false,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsLengthLessThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'tags',
-        0,
-        true,
-        length,
-        include,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsLengthGreaterThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'tags',
-        length,
-        include,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> tagsLengthBetween(
-    int lower,
-    int upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'tags',
-        lower,
-        includeLower,
-        upper,
-        includeUpper,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> updatedAtEqualTo(
-      DateTime value) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      updatedAtEqualTo(DateTime value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'updatedAt',
@@ -2202,7 +2017,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> updatedAtGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      updatedAtGreaterThan(
     DateTime value, {
     bool include = false,
   }) {
@@ -2215,7 +2031,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> updatedAtLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      updatedAtLessThan(
     DateTime value, {
     bool include = false,
   }) {
@@ -2228,7 +2045,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> updatedAtBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      updatedAtBetween(
     DateTime lower,
     DateTime upper, {
     bool includeLower = true,
@@ -2245,7 +2063,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidEqualTo(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidEqualTo(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -2258,7 +2076,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidGreaterThan(
     String value, {
     bool include = false,
     bool caseSensitive = true,
@@ -2273,7 +2091,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidLessThan(
     String value, {
     bool include = false,
     bool caseSensitive = true,
@@ -2288,7 +2106,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidBetween(
     String lower,
     String upper, {
     bool includeLower = true,
@@ -2307,7 +2125,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidStartsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -2320,7 +2138,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidEndsWith(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
@@ -2333,263 +2151,51 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidContains(String value,
-      {bool caseSensitive = true}) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.contains(
-        property: r'uuid',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidMatches(String pattern,
-      {bool caseSensitive = true}) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.matches(
-        property: r'uuid',
-        wildcard: pattern,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'uuid',
-        value: '',
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> uuidIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'uuid',
-        value: '',
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementEqualTo(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'vegetables',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition>
-      vegetablesElementGreaterThan(
-    String value, {
-    bool include = false,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.greaterThan(
-        include: include,
-        property: r'vegetables',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementLessThan(
-    String value, {
-    bool include = false,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.lessThan(
-        include: include,
-        property: r'vegetables',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementBetween(
-    String lower,
-    String upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.between(
-        property: r'vegetables',
-        lower: lower,
-        includeLower: includeLower,
-        upper: upper,
-        includeUpper: includeUpper,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementStartsWith(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.startsWith(
-        property: r'vegetables',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementEndsWith(
-    String value, {
-    bool caseSensitive = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.addFilterCondition(FilterCondition.endsWith(
-        property: r'vegetables',
-        value: value,
-        caseSensitive: caseSensitive,
-      ));
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementContains(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidContains(
       String value,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.contains(
-        property: r'vegetables',
+        property: r'uuid',
         value: value,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementMatches(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidMatches(
       String pattern,
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.matches(
-        property: r'vegetables',
+        property: r'uuid',
         wildcard: pattern,
         caseSensitive: caseSensitive,
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesElementIsEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> uuidIsEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
-        property: r'vegetables',
+        property: r'uuid',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition>
-      vegetablesElementIsNotEmpty() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      uuidIsNotEmpty() {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
-        property: r'vegetables',
+        property: r'uuid',
         value: '',
       ));
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesLengthEqualTo(
-      int length) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'vegetables',
-        length,
-        true,
-        length,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesIsEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'vegetables',
-        0,
-        true,
-        0,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesIsNotEmpty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'vegetables',
-        0,
-        false,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesLengthLessThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'vegetables',
-        0,
-        true,
-        length,
-        include,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesLengthGreaterThan(
-    int length, {
-    bool include = false,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'vegetables',
-        length,
-        include,
-        999999,
-        true,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> vegetablesLengthBetween(
-    int lower,
-    int upper, {
-    bool includeLower = true,
-    bool includeUpper = true,
-  }) {
-    return QueryBuilder.apply(this, (query) {
-      return query.listLength(
-        r'vegetables',
-        lower,
-        includeLower,
-        upper,
-        includeUpper,
-      );
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> versionEqualTo(int value) {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> versionEqualTo(
+      int value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
         property: r'version',
@@ -2598,7 +2204,8 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> versionGreaterThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition>
+      versionGreaterThan(
     int value, {
     bool include = false,
   }) {
@@ -2611,7 +2218,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> versionLessThan(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> versionLessThan(
     int value, {
     bool include = false,
   }) {
@@ -2624,7 +2231,7 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterFilterCondition> versionBetween(
+  QueryBuilder<CellarEntry, CellarEntry, QAfterFilterCondition> versionBetween(
     int lower,
     int upper, {
     bool includeLower = true,
@@ -2642,516 +2249,587 @@ extension PizzaQueryFilter on QueryBuilder<Pizza, Pizza, QFilterCondition> {
   }
 }
 
-extension PizzaQueryObject on QueryBuilder<Pizza, Pizza, QFilterCondition> {}
+extension CellarEntryQueryObject
+    on QueryBuilder<CellarEntry, CellarEntry, QFilterCondition> {}
 
-extension PizzaQueryLinks on QueryBuilder<Pizza, Pizza, QFilterCondition> {}
+extension CellarEntryQueryLinks
+    on QueryBuilder<CellarEntry, CellarEntry, QFilterCondition> {}
 
-extension PizzaQuerySortBy on QueryBuilder<Pizza, Pizza, QSortBy> {
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByBase() {
+extension CellarEntryQuerySortBy
+    on QueryBuilder<CellarEntry, CellarEntry, QSortBy> {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByAbv() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'base', Sort.asc);
+      return query.addSortBy(r'abv', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByBaseDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByAbvDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'base', Sort.desc);
+      return query.addSortBy(r'abv', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByCookCount() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByAgeVintage() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'cookCount', Sort.asc);
+      return query.addSortBy(r'ageVintage', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByCookCountDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByAgeVintageDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'cookCount', Sort.desc);
+      return query.addSortBy(r'ageVintage', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByCreatedAt() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByBuy() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'buy', Sort.asc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByBuyDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'buy', Sort.desc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByCategory() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'category', Sort.asc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByCategoryDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'category', Sort.desc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByCreatedAtDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByCreatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByImageUrl() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByImageUrl() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'imageUrl', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByImageUrlDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByImageUrlDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'imageUrl', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByIsFavorite() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByIsFavorite() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'isFavorite', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByIsFavoriteDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByIsFavoriteDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'isFavorite', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByName() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByName() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'name', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByNameDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByNameDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'name', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByNotes() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByPriceRange() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'notes', Sort.asc);
+      return query.addSortBy(r'priceRange', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByNotesDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByPriceRangeDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'notes', Sort.desc);
+      return query.addSortBy(r'priceRange', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByRating() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByProducer() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'rating', Sort.asc);
+      return query.addSortBy(r'producer', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByRatingDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByProducerDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'rating', Sort.desc);
+      return query.addSortBy(r'producer', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortBySource() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortBySource() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'source', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortBySourceDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortBySourceDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'source', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByUpdatedAt() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByTastingNotes() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'tastingNotes', Sort.asc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy>
+      sortByTastingNotesDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'tastingNotes', Sort.desc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByUpdatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'updatedAt', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByUpdatedAtDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByUpdatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'updatedAt', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByUuid() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByUuid() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'uuid', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByUuidDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByUuidDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'uuid', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByVersion() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByVersion() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'version', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> sortByVersionDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> sortByVersionDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'version', Sort.desc);
     });
   }
 }
 
-extension PizzaQuerySortThenBy on QueryBuilder<Pizza, Pizza, QSortThenBy> {
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByBase() {
+extension CellarEntryQuerySortThenBy
+    on QueryBuilder<CellarEntry, CellarEntry, QSortThenBy> {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByAbv() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'base', Sort.asc);
+      return query.addSortBy(r'abv', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByBaseDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByAbvDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'base', Sort.desc);
+      return query.addSortBy(r'abv', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByCookCount() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByAgeVintage() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'cookCount', Sort.asc);
+      return query.addSortBy(r'ageVintage', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByCookCountDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByAgeVintageDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'cookCount', Sort.desc);
+      return query.addSortBy(r'ageVintage', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByCreatedAt() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByBuy() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'buy', Sort.asc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByBuyDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'buy', Sort.desc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByCategory() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'category', Sort.asc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByCategoryDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'category', Sort.desc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByCreatedAtDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByCreatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenById() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenById() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'id', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByIdDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByIdDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'id', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByImageUrl() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByImageUrl() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'imageUrl', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByImageUrlDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByImageUrlDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'imageUrl', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByIsFavorite() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByIsFavorite() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'isFavorite', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByIsFavoriteDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByIsFavoriteDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'isFavorite', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByName() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByName() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'name', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByNameDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByNameDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'name', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByNotes() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByPriceRange() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'notes', Sort.asc);
+      return query.addSortBy(r'priceRange', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByNotesDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByPriceRangeDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'notes', Sort.desc);
+      return query.addSortBy(r'priceRange', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByRating() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByProducer() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'rating', Sort.asc);
+      return query.addSortBy(r'producer', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByRatingDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByProducerDesc() {
     return QueryBuilder.apply(this, (query) {
-      return query.addSortBy(r'rating', Sort.desc);
+      return query.addSortBy(r'producer', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenBySource() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenBySource() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'source', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenBySourceDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenBySourceDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'source', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByUpdatedAt() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByTastingNotes() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'tastingNotes', Sort.asc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy>
+      thenByTastingNotesDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'tastingNotes', Sort.desc);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByUpdatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'updatedAt', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByUpdatedAtDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByUpdatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'updatedAt', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByUuid() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByUuid() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'uuid', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByUuidDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByUuidDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'uuid', Sort.desc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByVersion() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByVersion() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'version', Sort.asc);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QAfterSortBy> thenByVersionDesc() {
+  QueryBuilder<CellarEntry, CellarEntry, QAfterSortBy> thenByVersionDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'version', Sort.desc);
     });
   }
 }
 
-extension PizzaQueryWhereDistinct on QueryBuilder<Pizza, Pizza, QDistinct> {
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByBase(
+extension CellarEntryQueryWhereDistinct
+    on QueryBuilder<CellarEntry, CellarEntry, QDistinct> {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByAbv(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'base', caseSensitive: caseSensitive);
+      return query.addDistinctBy(r'abv', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByCheeses() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByAgeVintage(
+      {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'cheeses');
+      return query.addDistinctBy(r'ageVintage', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByCookCount() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByBuy() {
     return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'cookCount');
+      return query.addDistinctBy(r'buy');
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByCreatedAt() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByCategory(
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'category', caseSensitive: caseSensitive);
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'createdAt');
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByImageUrl(
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByImageUrl(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'imageUrl', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByIsFavorite() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByIsFavorite() {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'isFavorite');
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByName(
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByName(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'name', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByNotes(
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByPriceRange() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'priceRange');
+    });
+  }
+
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByProducer(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'notes', caseSensitive: caseSensitive);
+      return query.addDistinctBy(r'producer', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByProteins() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'proteins');
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByRating() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'rating');
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctBySource(
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctBySource(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'source', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByTags() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByTastingNotes(
+      {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'tags');
+      return query.addDistinctBy(r'tastingNotes', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByUpdatedAt() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByUpdatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'updatedAt');
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByUuid(
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByUuid(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'uuid', caseSensitive: caseSensitive);
     });
   }
 
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByVegetables() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addDistinctBy(r'vegetables');
-    });
-  }
-
-  QueryBuilder<Pizza, Pizza, QDistinct> distinctByVersion() {
+  QueryBuilder<CellarEntry, CellarEntry, QDistinct> distinctByVersion() {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'version');
     });
   }
 }
 
-extension PizzaQueryProperty on QueryBuilder<Pizza, Pizza, QQueryProperty> {
-  QueryBuilder<Pizza, int, QQueryOperations> idProperty() {
+extension CellarEntryQueryProperty
+    on QueryBuilder<CellarEntry, CellarEntry, QQueryProperty> {
+  QueryBuilder<CellarEntry, int, QQueryOperations> idProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'id');
     });
   }
 
-  QueryBuilder<Pizza, PizzaBase, QQueryOperations> baseProperty() {
+  QueryBuilder<CellarEntry, String?, QQueryOperations> abvProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'base');
+      return query.addPropertyName(r'abv');
     });
   }
 
-  QueryBuilder<Pizza, List<String>, QQueryOperations> cheesesProperty() {
+  QueryBuilder<CellarEntry, String?, QQueryOperations> ageVintageProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'cheeses');
+      return query.addPropertyName(r'ageVintage');
     });
   }
 
-  QueryBuilder<Pizza, int, QQueryOperations> cookCountProperty() {
+  QueryBuilder<CellarEntry, bool, QQueryOperations> buyProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'cookCount');
+      return query.addPropertyName(r'buy');
     });
   }
 
-  QueryBuilder<Pizza, DateTime, QQueryOperations> createdAtProperty() {
+  QueryBuilder<CellarEntry, String?, QQueryOperations> categoryProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'category');
+    });
+  }
+
+  QueryBuilder<CellarEntry, DateTime, QQueryOperations> createdAtProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'createdAt');
     });
   }
 
-  QueryBuilder<Pizza, String?, QQueryOperations> imageUrlProperty() {
+  QueryBuilder<CellarEntry, String?, QQueryOperations> imageUrlProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'imageUrl');
     });
   }
 
-  QueryBuilder<Pizza, bool, QQueryOperations> isFavoriteProperty() {
+  QueryBuilder<CellarEntry, bool, QQueryOperations> isFavoriteProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'isFavorite');
     });
   }
 
-  QueryBuilder<Pizza, String, QQueryOperations> nameProperty() {
+  QueryBuilder<CellarEntry, String, QQueryOperations> nameProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'name');
     });
   }
 
-  QueryBuilder<Pizza, String?, QQueryOperations> notesProperty() {
+  QueryBuilder<CellarEntry, int?, QQueryOperations> priceRangeProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'notes');
+      return query.addPropertyName(r'priceRange');
     });
   }
 
-  QueryBuilder<Pizza, List<String>, QQueryOperations> proteinsProperty() {
+  QueryBuilder<CellarEntry, String?, QQueryOperations> producerProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'proteins');
+      return query.addPropertyName(r'producer');
     });
   }
 
-  QueryBuilder<Pizza, int, QQueryOperations> ratingProperty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'rating');
-    });
-  }
-
-  QueryBuilder<Pizza, PizzaSource, QQueryOperations> sourceProperty() {
+  QueryBuilder<CellarEntry, CellarSource, QQueryOperations> sourceProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'source');
     });
   }
 
-  QueryBuilder<Pizza, List<String>, QQueryOperations> tagsProperty() {
+  QueryBuilder<CellarEntry, String?, QQueryOperations> tastingNotesProperty() {
     return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'tags');
+      return query.addPropertyName(r'tastingNotes');
     });
   }
 
-  QueryBuilder<Pizza, DateTime, QQueryOperations> updatedAtProperty() {
+  QueryBuilder<CellarEntry, DateTime, QQueryOperations> updatedAtProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'updatedAt');
     });
   }
 
-  QueryBuilder<Pizza, String, QQueryOperations> uuidProperty() {
+  QueryBuilder<CellarEntry, String, QQueryOperations> uuidProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'uuid');
     });
   }
 
-  QueryBuilder<Pizza, List<String>, QQueryOperations> vegetablesProperty() {
-    return QueryBuilder.apply(this, (query) {
-      return query.addPropertyName(r'vegetables');
-    });
-  }
-
-  QueryBuilder<Pizza, int, QQueryOperations> versionProperty() {
+  QueryBuilder<CellarEntry, int, QQueryOperations> versionProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'version');
     });

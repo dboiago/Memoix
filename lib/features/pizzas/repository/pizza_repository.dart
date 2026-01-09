@@ -85,8 +85,8 @@ class PizzaRepository {
       await _db.pizzas.put(pizza);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete a pizza by ID
@@ -95,9 +95,9 @@ class PizzaRepository {
       return _db.pizzas.delete(id);
     });
     
-    // Notify external storage service of change
+    // Notify personal storage service of change
     if (result) {
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
     
     return result;
@@ -118,8 +118,8 @@ class PizzaRepository {
       await _db.pizzas.put(pizza);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Increment cook count
@@ -130,8 +130,8 @@ class PizzaRepository {
       await _db.pizzas.put(pizza);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Update rating
@@ -142,8 +142,8 @@ class PizzaRepository {
       await _db.pizzas.put(pizza);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all pizzas (stream for Riverpod)

@@ -27,75 +27,117 @@ const SmokingRecipeSchema = CollectionSchema(
       name: r'cookCount',
       type: IsarType.long,
     ),
-    r'createdAt': PropertySchema(
+    r'course': PropertySchema(
       id: 2,
+      name: r'course',
+      type: IsarType.string,
+    ),
+    r'createdAt': PropertySchema(
+      id: 3,
       name: r'createdAt',
       type: IsarType.dateTime,
     ),
     r'directions': PropertySchema(
-      id: 3,
+      id: 4,
       name: r'directions',
       type: IsarType.stringList,
     ),
+    r'headerImage': PropertySchema(
+      id: 5,
+      name: r'headerImage',
+      type: IsarType.string,
+    ),
     r'imageUrl': PropertySchema(
-      id: 4,
+      id: 6,
       name: r'imageUrl',
       type: IsarType.string,
     ),
+    r'ingredients': PropertySchema(
+      id: 7,
+      name: r'ingredients',
+      type: IsarType.objectList,
+      target: r'SmokingSeasoning',
+    ),
     r'isFavorite': PropertySchema(
-      id: 5,
+      id: 8,
       name: r'isFavorite',
       type: IsarType.bool,
     ),
     r'item': PropertySchema(
-      id: 6,
+      id: 9,
       name: r'item',
       type: IsarType.string,
     ),
     r'name': PropertySchema(
-      id: 7,
+      id: 10,
       name: r'name',
       type: IsarType.string,
     ),
     r'notes': PropertySchema(
-      id: 8,
+      id: 11,
       name: r'notes',
       type: IsarType.string,
     ),
+    r'pairedRecipeIds': PropertySchema(
+      id: 12,
+      name: r'pairedRecipeIds',
+      type: IsarType.stringList,
+    ),
     r'seasonings': PropertySchema(
-      id: 9,
+      id: 13,
       name: r'seasonings',
       type: IsarType.objectList,
       target: r'SmokingSeasoning',
     ),
+    r'serves': PropertySchema(
+      id: 14,
+      name: r'serves',
+      type: IsarType.string,
+    ),
     r'source': PropertySchema(
-      id: 10,
+      id: 15,
       name: r'source',
       type: IsarType.string,
       enumMap: _SmokingRecipesourceEnumValueMap,
     ),
+    r'stepImageMap': PropertySchema(
+      id: 16,
+      name: r'stepImageMap',
+      type: IsarType.stringList,
+    ),
+    r'stepImages': PropertySchema(
+      id: 17,
+      name: r'stepImages',
+      type: IsarType.stringList,
+    ),
     r'temperature': PropertySchema(
-      id: 11,
+      id: 18,
       name: r'temperature',
       type: IsarType.string,
     ),
     r'time': PropertySchema(
-      id: 12,
+      id: 19,
       name: r'time',
       type: IsarType.string,
     ),
+    r'type': PropertySchema(
+      id: 20,
+      name: r'type',
+      type: IsarType.string,
+      enumMap: _SmokingRecipetypeEnumValueMap,
+    ),
     r'updatedAt': PropertySchema(
-      id: 13,
+      id: 21,
       name: r'updatedAt',
       type: IsarType.dateTime,
     ),
     r'uuid': PropertySchema(
-      id: 14,
+      id: 22,
       name: r'uuid',
       type: IsarType.string,
     ),
     r'wood': PropertySchema(
-      id: 15,
+      id: 23,
       name: r'wood',
       type: IsarType.string,
     )
@@ -127,6 +169,19 @@ const SmokingRecipeSchema = CollectionSchema(
       properties: [
         IndexPropertySchema(
           name: r'name',
+          type: IndexType.hash,
+          caseSensitive: true,
+        )
+      ],
+    ),
+    r'course': IndexSchema(
+      id: 5284280814786439068,
+      name: r'course',
+      unique: false,
+      replace: false,
+      properties: [
+        IndexPropertySchema(
+          name: r'course',
           type: IndexType.hash,
           caseSensitive: true,
         )
@@ -192,6 +247,7 @@ int _smokingRecipeEstimateSize(
       bytesCount += 3 + value.length * 3;
     }
   }
+  bytesCount += 3 + object.course.length * 3;
   bytesCount += 3 + object.directions.length * 3;
   {
     for (var i = 0; i < object.directions.length; i++) {
@@ -200,9 +256,24 @@ int _smokingRecipeEstimateSize(
     }
   }
   {
+    final value = object.headerImage;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
+    }
+  }
+  {
     final value = object.imageUrl;
     if (value != null) {
       bytesCount += 3 + value.length * 3;
+    }
+  }
+  bytesCount += 3 + object.ingredients.length * 3;
+  {
+    final offsets = allOffsets[SmokingSeasoning]!;
+    for (var i = 0; i < object.ingredients.length; i++) {
+      final value = object.ingredients[i];
+      bytesCount +=
+          SmokingSeasoningSchema.estimateSize(value, offsets, allOffsets);
     }
   }
   {
@@ -218,6 +289,13 @@ int _smokingRecipeEstimateSize(
       bytesCount += 3 + value.length * 3;
     }
   }
+  bytesCount += 3 + object.pairedRecipeIds.length * 3;
+  {
+    for (var i = 0; i < object.pairedRecipeIds.length; i++) {
+      final value = object.pairedRecipeIds[i];
+      bytesCount += value.length * 3;
+    }
+  }
   bytesCount += 3 + object.seasonings.length * 3;
   {
     final offsets = allOffsets[SmokingSeasoning]!;
@@ -227,9 +305,30 @@ int _smokingRecipeEstimateSize(
           SmokingSeasoningSchema.estimateSize(value, offsets, allOffsets);
     }
   }
+  {
+    final value = object.serves;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
+    }
+  }
   bytesCount += 3 + object.source.name.length * 3;
+  bytesCount += 3 + object.stepImageMap.length * 3;
+  {
+    for (var i = 0; i < object.stepImageMap.length; i++) {
+      final value = object.stepImageMap[i];
+      bytesCount += value.length * 3;
+    }
+  }
+  bytesCount += 3 + object.stepImages.length * 3;
+  {
+    for (var i = 0; i < object.stepImages.length; i++) {
+      final value = object.stepImages[i];
+      bytesCount += value.length * 3;
+    }
+  }
   bytesCount += 3 + object.temperature.length * 3;
   bytesCount += 3 + object.time.length * 3;
+  bytesCount += 3 + object.type.name.length * 3;
   bytesCount += 3 + object.uuid.length * 3;
   bytesCount += 3 + object.wood.length * 3;
   return bytesCount;
@@ -243,25 +342,38 @@ void _smokingRecipeSerialize(
 ) {
   writer.writeString(offsets[0], object.category);
   writer.writeLong(offsets[1], object.cookCount);
-  writer.writeDateTime(offsets[2], object.createdAt);
-  writer.writeStringList(offsets[3], object.directions);
-  writer.writeString(offsets[4], object.imageUrl);
-  writer.writeBool(offsets[5], object.isFavorite);
-  writer.writeString(offsets[6], object.item);
-  writer.writeString(offsets[7], object.name);
-  writer.writeString(offsets[8], object.notes);
+  writer.writeString(offsets[2], object.course);
+  writer.writeDateTime(offsets[3], object.createdAt);
+  writer.writeStringList(offsets[4], object.directions);
+  writer.writeString(offsets[5], object.headerImage);
+  writer.writeString(offsets[6], object.imageUrl);
   writer.writeObjectList<SmokingSeasoning>(
-    offsets[9],
+    offsets[7],
+    allOffsets,
+    SmokingSeasoningSchema.serialize,
+    object.ingredients,
+  );
+  writer.writeBool(offsets[8], object.isFavorite);
+  writer.writeString(offsets[9], object.item);
+  writer.writeString(offsets[10], object.name);
+  writer.writeString(offsets[11], object.notes);
+  writer.writeStringList(offsets[12], object.pairedRecipeIds);
+  writer.writeObjectList<SmokingSeasoning>(
+    offsets[13],
     allOffsets,
     SmokingSeasoningSchema.serialize,
     object.seasonings,
   );
-  writer.writeString(offsets[10], object.source.name);
-  writer.writeString(offsets[11], object.temperature);
-  writer.writeString(offsets[12], object.time);
-  writer.writeDateTime(offsets[13], object.updatedAt);
-  writer.writeString(offsets[14], object.uuid);
-  writer.writeString(offsets[15], object.wood);
+  writer.writeString(offsets[14], object.serves);
+  writer.writeString(offsets[15], object.source.name);
+  writer.writeStringList(offsets[16], object.stepImageMap);
+  writer.writeStringList(offsets[17], object.stepImages);
+  writer.writeString(offsets[18], object.temperature);
+  writer.writeString(offsets[19], object.time);
+  writer.writeString(offsets[20], object.type.name);
+  writer.writeDateTime(offsets[21], object.updatedAt);
+  writer.writeString(offsets[22], object.uuid);
+  writer.writeString(offsets[23], object.wood);
 }
 
 SmokingRecipe _smokingRecipeDeserialize(
@@ -273,29 +385,45 @@ SmokingRecipe _smokingRecipeDeserialize(
   final object = SmokingRecipe();
   object.category = reader.readStringOrNull(offsets[0]);
   object.cookCount = reader.readLong(offsets[1]);
-  object.createdAt = reader.readDateTime(offsets[2]);
-  object.directions = reader.readStringList(offsets[3]) ?? [];
+  object.course = reader.readString(offsets[2]);
+  object.createdAt = reader.readDateTime(offsets[3]);
+  object.directions = reader.readStringList(offsets[4]) ?? [];
+  object.headerImage = reader.readStringOrNull(offsets[5]);
   object.id = id;
-  object.imageUrl = reader.readStringOrNull(offsets[4]);
-  object.isFavorite = reader.readBool(offsets[5]);
-  object.item = reader.readStringOrNull(offsets[6]);
-  object.name = reader.readString(offsets[7]);
-  object.notes = reader.readStringOrNull(offsets[8]);
-  object.seasonings = reader.readObjectList<SmokingSeasoning>(
-        offsets[9],
+  object.imageUrl = reader.readStringOrNull(offsets[6]);
+  object.ingredients = reader.readObjectList<SmokingSeasoning>(
+        offsets[7],
         SmokingSeasoningSchema.deserialize,
         allOffsets,
         SmokingSeasoning(),
       ) ??
       [];
+  object.isFavorite = reader.readBool(offsets[8]);
+  object.item = reader.readStringOrNull(offsets[9]);
+  object.name = reader.readString(offsets[10]);
+  object.notes = reader.readStringOrNull(offsets[11]);
+  object.pairedRecipeIds = reader.readStringList(offsets[12]) ?? [];
+  object.seasonings = reader.readObjectList<SmokingSeasoning>(
+        offsets[13],
+        SmokingSeasoningSchema.deserialize,
+        allOffsets,
+        SmokingSeasoning(),
+      ) ??
+      [];
+  object.serves = reader.readStringOrNull(offsets[14]);
   object.source =
-      _SmokingRecipesourceValueEnumMap[reader.readStringOrNull(offsets[10])] ??
+      _SmokingRecipesourceValueEnumMap[reader.readStringOrNull(offsets[15])] ??
           SmokingSource.memoix;
-  object.temperature = reader.readString(offsets[11]);
-  object.time = reader.readString(offsets[12]);
-  object.updatedAt = reader.readDateTime(offsets[13]);
-  object.uuid = reader.readString(offsets[14]);
-  object.wood = reader.readString(offsets[15]);
+  object.stepImageMap = reader.readStringList(offsets[16]) ?? [];
+  object.stepImages = reader.readStringList(offsets[17]) ?? [];
+  object.temperature = reader.readString(offsets[18]);
+  object.time = reader.readString(offsets[19]);
+  object.type =
+      _SmokingRecipetypeValueEnumMap[reader.readStringOrNull(offsets[20])] ??
+          SmokingType.pitNote;
+  object.updatedAt = reader.readDateTime(offsets[21]);
+  object.uuid = reader.readString(offsets[22]);
+  object.wood = reader.readString(offsets[23]);
   return object;
 }
 
@@ -311,20 +439,16 @@ P _smokingRecipeDeserializeProp<P>(
     case 1:
       return (reader.readLong(offset)) as P;
     case 2:
-      return (reader.readDateTime(offset)) as P;
+      return (reader.readString(offset)) as P;
     case 3:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readDateTime(offset)) as P;
     case 4:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readStringList(offset) ?? []) as P;
     case 5:
-      return (reader.readBool(offset)) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 6:
       return (reader.readStringOrNull(offset)) as P;
     case 7:
-      return (reader.readString(offset)) as P;
-    case 8:
-      return (reader.readStringOrNull(offset)) as P;
-    case 9:
       return (reader.readObjectList<SmokingSeasoning>(
             offset,
             SmokingSeasoningSchema.deserialize,
@@ -332,19 +456,46 @@ P _smokingRecipeDeserializeProp<P>(
             SmokingSeasoning(),
           ) ??
           []) as P;
+    case 8:
+      return (reader.readBool(offset)) as P;
+    case 9:
+      return (reader.readStringOrNull(offset)) as P;
     case 10:
+      return (reader.readString(offset)) as P;
+    case 11:
+      return (reader.readStringOrNull(offset)) as P;
+    case 12:
+      return (reader.readStringList(offset) ?? []) as P;
+    case 13:
+      return (reader.readObjectList<SmokingSeasoning>(
+            offset,
+            SmokingSeasoningSchema.deserialize,
+            allOffsets,
+            SmokingSeasoning(),
+          ) ??
+          []) as P;
+    case 14:
+      return (reader.readStringOrNull(offset)) as P;
+    case 15:
       return (_SmokingRecipesourceValueEnumMap[
               reader.readStringOrNull(offset)] ??
           SmokingSource.memoix) as P;
-    case 11:
+    case 16:
+      return (reader.readStringList(offset) ?? []) as P;
+    case 17:
+      return (reader.readStringList(offset) ?? []) as P;
+    case 18:
       return (reader.readString(offset)) as P;
-    case 12:
+    case 19:
       return (reader.readString(offset)) as P;
-    case 13:
+    case 20:
+      return (_SmokingRecipetypeValueEnumMap[reader.readStringOrNull(offset)] ??
+          SmokingType.pitNote) as P;
+    case 21:
       return (reader.readDateTime(offset)) as P;
-    case 14:
+    case 22:
       return (reader.readString(offset)) as P;
-    case 15:
+    case 23:
       return (reader.readString(offset)) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
@@ -360,6 +511,14 @@ const _SmokingRecipesourceValueEnumMap = {
   r'memoix': SmokingSource.memoix,
   r'personal': SmokingSource.personal,
   r'imported': SmokingSource.imported,
+};
+const _SmokingRecipetypeEnumValueMap = {
+  r'pitNote': r'pitNote',
+  r'recipe': r'recipe',
+};
+const _SmokingRecipetypeValueEnumMap = {
+  r'pitNote': SmokingType.pitNote,
+  r'recipe': SmokingType.recipe,
 };
 
 Id _smokingRecipeGetId(SmokingRecipe object) {
@@ -594,6 +753,51 @@ extension SmokingRecipeQueryWhere
               indexName: r'name',
               lower: [],
               upper: [name],
+              includeUpper: false,
+            ));
+      }
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterWhereClause> courseEqualTo(
+      String course) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IndexWhereClause.equalTo(
+        indexName: r'course',
+        value: [course],
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterWhereClause>
+      courseNotEqualTo(String course) {
+    return QueryBuilder.apply(this, (query) {
+      if (query.whereSort == Sort.asc) {
+        return query
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [],
+              upper: [course],
+              includeUpper: false,
+            ))
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [course],
+              includeLower: false,
+              upper: [],
+            ));
+      } else {
+        return query
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [course],
+              includeLower: false,
+              upper: [],
+            ))
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [],
+              upper: [course],
               includeUpper: false,
             ));
       }
@@ -992,6 +1196,142 @@ extension SmokingRecipeQueryFilter
   }
 
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseEqualTo(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseGreaterThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseLessThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseBetween(
+    String lower,
+    String upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'course',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'course',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'course',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      courseIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'course',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
       createdAtEqualTo(DateTime value) {
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.equalTo(
@@ -1272,6 +1612,160 @@ extension SmokingRecipeQueryFilter
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'headerImage',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'headerImage',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageEqualTo(
+    String? value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'headerImage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageGreaterThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'headerImage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageLessThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'headerImage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageBetween(
+    String? lower,
+    String? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'headerImage',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'headerImage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'headerImage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'headerImage',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'headerImage',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'headerImage',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      headerImageIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'headerImage',
+        value: '',
+      ));
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition> idEqualTo(
       Id value) {
     return QueryBuilder.apply(this, (query) {
@@ -1477,6 +1971,95 @@ extension SmokingRecipeQueryFilter
         property: r'imageUrl',
         value: '',
       ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsLengthEqualTo(int length) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'ingredients',
+        length,
+        true,
+        length,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'ingredients',
+        0,
+        true,
+        0,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'ingredients',
+        0,
+        false,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsLengthLessThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'ingredients',
+        0,
+        true,
+        length,
+        include,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsLengthGreaterThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'ingredients',
+        length,
+        include,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsLengthBetween(
+    int lower,
+    int upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'ingredients',
+        lower,
+        includeLower,
+        upper,
+        includeUpper,
+      );
     });
   }
 
@@ -1933,6 +2516,233 @@ extension SmokingRecipeQueryFilter
   }
 
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementEqualTo(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementGreaterThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementLessThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementBetween(
+    String lower,
+    String upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'pairedRecipeIds',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementContains(String value,
+          {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementMatches(String pattern,
+          {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'pairedRecipeIds',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'pairedRecipeIds',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'pairedRecipeIds',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthEqualTo(int length) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        length,
+        true,
+        length,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        0,
+        true,
+        0,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        0,
+        false,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthLessThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        0,
+        true,
+        length,
+        include,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthGreaterThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        length,
+        include,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthBetween(
+    int lower,
+    int upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        lower,
+        includeLower,
+        upper,
+        includeUpper,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
       seasoningsLengthEqualTo(int length) {
     return QueryBuilder.apply(this, (query) {
       return query.listLength(
@@ -2018,6 +2828,160 @@ extension SmokingRecipeQueryFilter
         upper,
         includeUpper,
       );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'serves',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'serves',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesEqualTo(
+    String? value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'serves',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesGreaterThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'serves',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesLessThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'serves',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesBetween(
+    String? lower,
+    String? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'serves',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'serves',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'serves',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'serves',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'serves',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'serves',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      servesIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'serves',
+        value: '',
+      ));
     });
   }
 
@@ -2154,6 +3118,456 @@ extension SmokingRecipeQueryFilter
         property: r'source',
         value: '',
       ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementEqualTo(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'stepImageMap',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementGreaterThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'stepImageMap',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementLessThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'stepImageMap',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementBetween(
+    String lower,
+    String upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'stepImageMap',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'stepImageMap',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'stepImageMap',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'stepImageMap',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'stepImageMap',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'stepImageMap',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapElementIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'stepImageMap',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapLengthEqualTo(int length) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImageMap',
+        length,
+        true,
+        length,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImageMap',
+        0,
+        true,
+        0,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImageMap',
+        0,
+        false,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapLengthLessThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImageMap',
+        0,
+        true,
+        length,
+        include,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapLengthGreaterThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImageMap',
+        length,
+        include,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImageMapLengthBetween(
+    int lower,
+    int upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImageMap',
+        lower,
+        includeLower,
+        upper,
+        includeUpper,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementEqualTo(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'stepImages',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementGreaterThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'stepImages',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementLessThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'stepImages',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementBetween(
+    String lower,
+    String upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'stepImages',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'stepImages',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'stepImages',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'stepImages',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'stepImages',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'stepImages',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesElementIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'stepImages',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesLengthEqualTo(int length) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImages',
+        length,
+        true,
+        length,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImages',
+        0,
+        true,
+        0,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImages',
+        0,
+        false,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesLengthLessThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImages',
+        0,
+        true,
+        length,
+        include,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesLengthGreaterThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImages',
+        length,
+        include,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      stepImagesLengthBetween(
+    int lower,
+    int upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'stepImages',
+        lower,
+        includeLower,
+        upper,
+        includeUpper,
+      );
     });
   }
 
@@ -2423,6 +3837,141 @@ extension SmokingRecipeQueryFilter
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         property: r'time',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition> typeEqualTo(
+    SmokingType value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'type',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeGreaterThan(
+    SmokingType value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'type',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeLessThan(
+    SmokingType value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'type',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition> typeBetween(
+    SmokingType lower,
+    SmokingType upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'type',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'type',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'type',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'type',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition> typeMatches(
+      String pattern,
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'type',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'type',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      typeIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'type',
         value: '',
       ));
     });
@@ -2758,6 +4307,13 @@ extension SmokingRecipeQueryFilter
 extension SmokingRecipeQueryObject
     on QueryBuilder<SmokingRecipe, SmokingRecipe, QFilterCondition> {
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
+      ingredientsElement(FilterQuery<SmokingSeasoning> q) {
+    return QueryBuilder.apply(this, (query) {
+      return query.object(q, r'ingredients');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterFilterCondition>
       seasoningsElement(FilterQuery<SmokingSeasoning> q) {
     return QueryBuilder.apply(this, (query) {
       return query.object(q, r'seasonings');
@@ -2796,6 +4352,18 @@ extension SmokingRecipeQuerySortBy
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByCourse() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByCourseDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.desc);
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.asc);
@@ -2806,6 +4374,19 @@ extension SmokingRecipeQuerySortBy
       sortByCreatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.desc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByHeaderImage() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'headerImage', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy>
+      sortByHeaderImageDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'headerImage', Sort.desc);
     });
   }
 
@@ -2871,6 +4452,18 @@ extension SmokingRecipeQuerySortBy
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByServes() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'serves', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByServesDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'serves', Sort.desc);
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortBySource() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'source', Sort.asc);
@@ -2905,6 +4498,18 @@ extension SmokingRecipeQuerySortBy
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByTimeDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'time', Sort.desc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByType() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'type', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> sortByTypeDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'type', Sort.desc);
     });
   }
 
@@ -2974,6 +4579,18 @@ extension SmokingRecipeQuerySortThenBy
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByCourse() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByCourseDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.desc);
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.asc);
@@ -2984,6 +4601,19 @@ extension SmokingRecipeQuerySortThenBy
       thenByCreatedAtDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'createdAt', Sort.desc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByHeaderImage() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'headerImage', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy>
+      thenByHeaderImageDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'headerImage', Sort.desc);
     });
   }
 
@@ -3061,6 +4691,18 @@ extension SmokingRecipeQuerySortThenBy
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByServes() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'serves', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByServesDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'serves', Sort.desc);
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenBySource() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'source', Sort.asc);
@@ -3095,6 +4737,18 @@ extension SmokingRecipeQuerySortThenBy
   QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByTimeDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'time', Sort.desc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByType() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'type', Sort.asc);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QAfterSortBy> thenByTypeDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'type', Sort.desc);
     });
   }
 
@@ -3151,6 +4805,13 @@ extension SmokingRecipeQueryWhereDistinct
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByCourse(
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'course', caseSensitive: caseSensitive);
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'createdAt');
@@ -3160,6 +4821,13 @@ extension SmokingRecipeQueryWhereDistinct
   QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByDirections() {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'directions');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByHeaderImage(
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'headerImage', caseSensitive: caseSensitive);
     });
   }
 
@@ -3197,10 +4865,37 @@ extension SmokingRecipeQueryWhereDistinct
     });
   }
 
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct>
+      distinctByPairedRecipeIds() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'pairedRecipeIds');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByServes(
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'serves', caseSensitive: caseSensitive);
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctBySource(
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'source', caseSensitive: caseSensitive);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct>
+      distinctByStepImageMap() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'stepImageMap');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByStepImages() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'stepImages');
     });
   }
 
@@ -3215,6 +4910,13 @@ extension SmokingRecipeQueryWhereDistinct
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'time', caseSensitive: caseSensitive);
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingRecipe, QDistinct> distinctByType(
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'type', caseSensitive: caseSensitive);
     });
   }
 
@@ -3259,6 +4961,12 @@ extension SmokingRecipeQueryProperty
     });
   }
 
+  QueryBuilder<SmokingRecipe, String, QQueryOperations> courseProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'course');
+    });
+  }
+
   QueryBuilder<SmokingRecipe, DateTime, QQueryOperations> createdAtProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'createdAt');
@@ -3272,9 +4980,22 @@ extension SmokingRecipeQueryProperty
     });
   }
 
+  QueryBuilder<SmokingRecipe, String?, QQueryOperations> headerImageProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'headerImage');
+    });
+  }
+
   QueryBuilder<SmokingRecipe, String?, QQueryOperations> imageUrlProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'imageUrl');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, List<SmokingSeasoning>, QQueryOperations>
+      ingredientsProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'ingredients');
     });
   }
 
@@ -3302,6 +5023,13 @@ extension SmokingRecipeQueryProperty
     });
   }
 
+  QueryBuilder<SmokingRecipe, List<String>, QQueryOperations>
+      pairedRecipeIdsProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'pairedRecipeIds');
+    });
+  }
+
   QueryBuilder<SmokingRecipe, List<SmokingSeasoning>, QQueryOperations>
       seasoningsProperty() {
     return QueryBuilder.apply(this, (query) {
@@ -3309,10 +5037,30 @@ extension SmokingRecipeQueryProperty
     });
   }
 
+  QueryBuilder<SmokingRecipe, String?, QQueryOperations> servesProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'serves');
+    });
+  }
+
   QueryBuilder<SmokingRecipe, SmokingSource, QQueryOperations>
       sourceProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'source');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, List<String>, QQueryOperations>
+      stepImageMapProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'stepImageMap');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, List<String>, QQueryOperations>
+      stepImagesProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'stepImages');
     });
   }
 
@@ -3325,6 +5073,12 @@ extension SmokingRecipeQueryProperty
   QueryBuilder<SmokingRecipe, String, QQueryOperations> timeProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'time');
+    });
+  }
+
+  QueryBuilder<SmokingRecipe, SmokingType, QQueryOperations> typeProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'type');
     });
   }
 

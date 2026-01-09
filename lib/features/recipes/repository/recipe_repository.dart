@@ -132,8 +132,8 @@ class RecipeRepository {
 
     final result = await _db.writeTxn(() => _db.recipes.put(recipe));
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
     
     return result;
   }
@@ -154,8 +154,8 @@ class RecipeRepository {
     }
     await _db.writeTxn(() => _db.recipes.putAll(recipes));
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
   
   /// Normalize ingredient units to standard abbreviations
@@ -167,9 +167,9 @@ class RecipeRepository {
   Future<bool> deleteRecipe(int id) async {
     final result = await _db.writeTxn(() => _db.recipes.delete(id));
     
-    // Notify external storage service of change
+    // Notify personal storage service of change
     if (result) {
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
     
     return result;
@@ -204,8 +204,8 @@ class RecipeRepository {
       }
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all recipes (stream)

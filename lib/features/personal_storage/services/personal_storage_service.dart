@@ -25,29 +25,29 @@ import '../../sandwiches/models/sandwich.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
-import '../models/drive_repository.dart';
+import '../models/storage_location.dart';
 import '../models/merge_result.dart';
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
-import '../providers/external_storage_provider.dart';import 'repository_manager.dart';import '../providers/google_drive_storage.dart';
+import '../providers/external_storage_provider.dart';import 'shared_storage_manager.dart';import '../providers/google_drive_storage.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
-  static const lastSyncTime = 'external_storage_last_sync';
-  static const syncMode = 'external_storage_sync_mode';
-  static const connectedProviderId = 'external_storage_provider_id';
-  static const connectedPath = 'external_storage_path';
+  static const lastSyncTime = 'personal_storage_last_sync';
+  static const syncMode = 'personal_storage_sync_mode';
+  static const connectedProviderId = 'personal_storage_provider_id';
+  static const connectedPath = 'personal_storage_path';
 }
 
 /// Core service for external storage sync operations
 /// 
 /// Handles push/pull logic, merge strategy, and app lifecycle integration.
 /// See EXTERNAL_STORAGE.md Section 8 for architecture details.
-class ExternalStorageService {
+class PersonalStorageService {
   final Ref _ref;
-  ExternalStorageProvider? _provider;
+  PersonalStorageProvider? _provider;
   
   /// Debounce timer for batching rapid recipe changes
   Timer? _pushDebouncer;
@@ -76,7 +76,7 @@ class ExternalStorageService {
   /// Base delay for exponential backoff (doubles each retry)
   static const _baseRetryDelay = Duration(seconds: 1);
 
-  ExternalStorageService(this._ref);
+  PersonalStorageService(this._ref);
 
   // ============ INITIALIZATION ============
 
@@ -100,7 +100,7 @@ class ExternalStorageService {
       // Instantiate the appropriate provider based on stored ID
       final provider = _createProvider(providerId);
       if (provider == null) {
-        debugPrint('ExternalStorageService: Unknown provider ID: $providerId');
+        debugPrint('PersonalStorageService: Unknown provider ID: $providerId');
         _isInitialized = true;
         return;
       }
@@ -110,13 +110,13 @@ class ExternalStorageService {
       
       if (provider.isConnected) {
         _provider = provider;
-        debugPrint('ExternalStorageService: Restored connection to ${provider.name}');
+        debugPrint('PersonalStorageService: Restored connection to ${provider.name}');
         
         // If there were pending changes queued before initialization, trigger push
         if (_hasPendingChanges) {
           final isAuto = await isAutomaticMode;
           if (isAuto) {
-            debugPrint('ExternalStorageService: Flushing pending changes after init');
+            debugPrint('PersonalStorageService: Flushing pending changes after init');
             push(silent: true);
           }
         }
@@ -124,10 +124,10 @@ class ExternalStorageService {
         // Silent sign-in failed (token expired/revoked)
         // Clear stored state so user can reconnect
         await prefs.remove(_PrefKeys.connectedProviderId);
-        debugPrint('ExternalStorageService: Failed to restore ${provider.name} connection');
+        debugPrint('PersonalStorageService: Failed to restore ${provider.name} connection');
       }
     } catch (e) {
-      debugPrint('ExternalStorageService: Provider restoration error: $e');
+      debugPrint('PersonalStorageService: Provider restoration error: $e');
       // Don't throw - just leave provider as null, user can reconnect manually
     }
     
@@ -135,7 +135,7 @@ class ExternalStorageService {
   }
   
   /// Create a provider instance by ID
-  ExternalStorageProvider? _createProvider(String providerId) {
+  PersonalStorageProvider? _createProvider(String providerId) {
     switch (providerId) {
       case 'google_drive':
         return GoogleDriveStorage();
@@ -167,13 +167,13 @@ class ExternalStorageService {
       } catch (e) {
         lastError = e;
         debugPrint(
-          'ExternalStorageService: $operationName attempt $attempt/$_maxRetries failed: $e',
+          'PersonalStorageService: $operationName attempt $attempt/$_maxRetries failed: $e',
         );
         
         if (attempt < _maxRetries) {
           // Exponential backoff: 1s, 2s, 4s
           final delay = _baseRetryDelay * math.pow(2, attempt - 1).toInt();
-          debugPrint('ExternalStorageService: Retrying in ${delay.inSeconds}s...');
+          debugPrint('PersonalStorageService: Retrying in ${delay.inSeconds}s...');
           await Future.delayed(delay);
         }
       }
@@ -189,7 +189,7 @@ class ExternalStorageService {
   bool get isConnected => _provider?.isConnected ?? false;
 
   /// Currently connected provider (null if none)
-  ExternalStorageProvider? get provider => _provider;
+  PersonalStorageProvider? get provider => _provider;
 
   /// Current sync mode setting
   Future<SyncMode> get syncMode async {
@@ -214,7 +214,7 @@ class ExternalStorageService {
   // ============ CONNECTION MANAGEMENT ============
 
   /// Set the active storage provider
-  Future<void> setProvider(ExternalStorageProvider provider) async {
+  Future<void> setProvider(PersonalStorageProvider provider) async {
     _provider = provider;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_PrefKeys.connectedProviderId, provider.id);
@@ -356,7 +356,7 @@ class ExternalStorageService {
       if (repositoriesJson != null) {
         final List<dynamic> list = jsonDecode(repositoriesJson);
         final repositories = list.map((item) => 
-          DriveRepository.fromJson(item as Map<String, dynamic>)
+          StorageLocation.fromJson(item as Map<String, dynamic>)
         ).toList();
         
         // Find and update active repository
@@ -382,7 +382,7 @@ class ExternalStorageService {
       if (!silent) {
         MemoixSnackBar.showError('Push failed: $e');
       }
-      debugPrint('ExternalStorageService.push error: $e');
+      debugPrint('PersonalStorageService.push error: $e');
     } finally {
       _isPushing = false;
     }
@@ -450,7 +450,7 @@ class ExternalStorageService {
         MemoixSnackBar.show(mergeResult.summaryMessage);
       } else if (!silent && !mergeResult.hasChanges) {
         // Silent sync when no changes detected
-        debugPrint('ExternalStorageService: Sync complete, no changes detected');
+        debugPrint('PersonalStorageService: Sync complete, no changes detected');
       }
       
       return PullResult.fromMerge(mergeResult, remoteCount: bundle.totalCount);
@@ -459,7 +459,7 @@ class ExternalStorageService {
       if (!silent) {
         MemoixSnackBar.showError('Pull failed: $e');
       }
-      debugPrint('ExternalStorageService.pull error: $e');
+      debugPrint('PersonalStorageService.pull error: $e');
       return PullResult.failed(e);
     } finally {
       _isPulling = false;
@@ -758,7 +758,7 @@ class ExternalStorageService {
     await prefs.setString(_PrefKeys.lastSyncTime, time.toUtc().toIso8601String());
     
     // Also update the active repository's lastSynced field
-    final manager = RepositoryManager();
+    final manager = SharedStorageManager();
     final activeRepo = await manager.getActiveRepository();
     if (activeRepo != null) {
       await manager.updateLastSynced(activeRepo.id);
@@ -787,6 +787,6 @@ class ExternalStorageService {
 final syncStatusProvider = StateProvider<SyncStatus>((ref) => SyncStatus.idle);
 
 /// Provider for the external storage service
-final externalStorageServiceProvider = Provider<ExternalStorageService>((ref) {
-  return ExternalStorageService(ref);
+final personalStorageServiceProvider = Provider<PersonalStorageService>((ref) {
+  return PersonalStorageService(ref);
 });

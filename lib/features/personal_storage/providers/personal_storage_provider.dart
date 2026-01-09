@@ -5,7 +5,7 @@ import '../models/storage_meta.dart';
 /// 
 /// Each provider (Google Drive, GitHub, iCloud) implements this interface.
 /// See EXTERNAL_STORAGE.md Section 2.2 for capability flags.
-abstract class ExternalStorageProvider {
+abstract class PersonalStorageProvider {
   /// Provider display name (e.g., "Google Drive")
   String get name;
 

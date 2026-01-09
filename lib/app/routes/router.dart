@@ -40,9 +40,9 @@ import '../../features/tools/measurement_converter.dart';
 import '../../features/tools/kitchen_timer_screen.dart';
 import '../../features/notes/screens/scratch_pad_screen.dart';
 import '../../features/personal_storage/screens/personal_storage_screen.dart';
-import '../../features/personal_storage/screens/repository_management_screen.dart';
-import '../../features/personal_storage/screens/share_repository_screen.dart';
-import '../../features/personal_storage/models/drive_repository.dart';
+import '../../features/personal_storage/screens/shared_storage_screen.dart';
+import '../../features/personal_storage/screens/share_storage_screen.dart';
+import '../../features/personal_storage/models/storage_location.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -210,26 +210,26 @@ class AppRoutes {
     );
   }
 
-  static void toExternalStorage(BuildContext context) {
+  static void toPersonalStorage(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => const ExternalStorageScreen(),
+        builder: (_) => const PersonalStorageScreen(),
       ),
     );
   }
 
-  static void toRepositoryManagement(BuildContext context) {
+  static void toSharedStorage(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => const RepositoryManagementScreen(),
+        builder: (_) => const SharedStorageScreen(),
       ),
     );
   }
 
-  static void toShareRepository(BuildContext context, DriveRepository repository) {
+  static void toShareRepository(BuildContext context, StorageLocation repository) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => ShareRepositoryScreen(repository: repository),
+        builder: (_) => ShareStorageScreen(repository: repository),
       ),
     );
   }

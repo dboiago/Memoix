@@ -3,26 +3,26 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 
-import '../models/drive_repository.dart';
+import '../models/storage_location.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/google_drive_storage.dart';
-import '../services/repository_manager.dart';
+import '../services/shared_storage_manager.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
-class ShareRepositoryScreen extends ConsumerStatefulWidget {
-  final DriveRepository repository;
+class ShareStorageScreen extends ConsumerStatefulWidget {
+  final StorageLocation repository;
 
-  const ShareRepositoryScreen({
+  const ShareStorageScreen({
     super.key,
     required this.repository,
   });
 
   @override
-  ConsumerState<ShareRepositoryScreen> createState() =>
-      _ShareRepositoryScreenState();
+  ConsumerState<ShareStorageScreen> createState() =>
+      _ShareStorageScreenState();
 }
 
-class _ShareRepositoryScreenState extends ConsumerState<ShareRepositoryScreen> {
+class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
   final _emailController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _isInviting = false;

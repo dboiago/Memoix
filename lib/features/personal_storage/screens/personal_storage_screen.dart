@@ -14,15 +14,15 @@ import '../services/external_storage_service.dart';
 /// Shows provider connection status, push/pull buttons, and sync mode toggle.
 /// Allows users to backup to their own cloud storage account.
 /// See EXTERNAL_STORAGE.md Section 5 for UX requirements.
-class ExternalStorageScreen extends ConsumerStatefulWidget {
-  const ExternalStorageScreen({super.key});
+class PersonalStorageScreen extends ConsumerStatefulWidget {
+  const PersonalStorageScreen({super.key});
 
   @override
-  ConsumerState<ExternalStorageScreen> createState() =>
-      _ExternalStorageScreenState();
+  ConsumerState<PersonalStorageScreen> createState() =>
+      _PersonalStorageScreenState();
 }
 
-class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
+class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
   /// Google Drive provider instance
   GoogleDriveStorage? _googleDrive;
   
@@ -53,7 +53,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
     await _googleDrive!.initialize();
 
     // Load sync mode and last sync time
-    final service = ref.read(externalStorageServiceProvider);
+    final service = ref.read(personalStorageServiceProvider);
     _syncMode = await service.syncMode;
     _lastSyncTime = await service.lastSyncTime;
 
@@ -419,7 +419,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
 
       if (success) {
         // Set provider on service
-        final service = ref.read(externalStorageServiceProvider);
+        final service = ref.read(personalStorageServiceProvider);
         await service.setProvider(_googleDrive!);
 
         // Check if remote has existing data
@@ -459,7 +459,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
 
       if (_oneDrive!.isConnected) {
         // Note: OneDrive integration is in progress
-        // Full ExternalStorageService integration will be completed in a future update
+        // Full PersonalStorageService integration will be completed in a future update
         if (mounted) {
           MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
         }
@@ -516,7 +516,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
 
   /// Execute pull directly without confirmation (used during initial sync)
   Future<void> _executeDirectPull() async {
-    final service = ref.read(externalStorageServiceProvider);
+    final service = ref.read(personalStorageServiceProvider);
     final result = await service.pull(silent: true);
 
     // Refresh last sync time
@@ -565,7 +565,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
 
   /// Execute push operation
   Future<void> _push() async {
-    final service = ref.read(externalStorageServiceProvider);
+    final service = ref.read(personalStorageServiceProvider);
     await service.push();
 
     // Refresh last sync time
@@ -577,7 +577,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
   /// 
   /// Shows pre-pull confirmation and post-pull summary per EXTERNAL_STORAGE.md Section 6.2.
   Future<void> _pull() async {
-    final service = ref.read(externalStorageServiceProvider);
+    final service = ref.read(personalStorageServiceProvider);
     
     // First, check if pull is needed by doing a silent comparison
     // This uses the smart meta check to avoid downloading data unnecessarily
@@ -729,7 +729,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
   /// Set sync mode
   Future<void> _setSyncMode(SyncMode mode) async {
     try {
-      final service = ref.read(externalStorageServiceProvider);
+      final service = ref.read(personalStorageServiceProvider);
       await service.setSyncMode(mode);
       setState(() => _syncMode = mode);
     } catch (e) {
@@ -761,7 +761,7 @@ class _ExternalStorageScreenState extends ConsumerState<ExternalStorageScreen> {
     );
 
     if (confirmed == true) {
-      final service = ref.read(externalStorageServiceProvider);
+      final service = ref.read(personalStorageServiceProvider);
       await service.disconnect();
       _googleDrive = GoogleDriveStorage();
       _lastSyncTime = null;

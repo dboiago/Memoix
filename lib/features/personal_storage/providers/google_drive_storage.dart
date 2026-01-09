@@ -14,15 +14,15 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../config/api_config.dart';
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
-import '../services/repository_manager.dart';
+import '../services/shared_storage_manager.dart';
 import 'cloud_storage_provider.dart';
-import 'external_storage_provider.dart';
+import 'personal_storage_provider.dart';
 
-/// Google Drive implementation of CloudStorageProvider and ExternalStorageProvider
+/// Google Drive implementation of CloudStorageProvider and PersonalStorageProvider
 ///
 /// Uses OAuth 2.0 via google_sign_in on mobile, and loopback OAuth on desktop.
 /// See EXTERNAL_STORAGE.md Section 7.1 for implementation details.
-class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvider {
+class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   // Storage keys
   static const _keyFolderId = 'google_drive_folder_id';
   static const _keyFolderPath = 'google_drive_folder_path';
@@ -79,7 +79,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
   /// Returns true if running on a mobile platform (Android, iOS)
   bool get _isMobile => !kIsWeb && (Platform.isAndroid || Platform.isIOS);
 
-  // --- ExternalStorageProvider interface ---
+  // --- PersonalStorageProvider interface ---
 
   @override
   String get name => 'Google Drive';
@@ -207,12 +207,12 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
   /// Sync recipes (push local data to cloud)
   @override
   Future<void> syncRecipes() async {
-    // This is typically called from ExternalStorageService.push()
+    // This is typically called from PersonalStorageService.push()
     // For direct CloudStorageProvider usage, we would need to:
     // 1. Get RecipeBundle from local database
     // 2. Call push(bundle)
     // For now, this delegates to the service layer
-    throw UnimplementedError('Use ExternalStorageService.push() instead');
+    throw UnimplementedError('Use PersonalStorageService.push() instead');
   }
 
   // --- Repository Sharing ---
@@ -367,7 +367,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
     _ensureConnected();
 
     // Update cached values immediately
-    // Folder ID comes from RepositoryManager (trusted source), no need to verify
+    // Folder ID comes from SharedStorageManager (trusted source), no need to verify
     _folderId = folderId;
     _folderPath = '/My Drive/$repositoryName';
     await _saveStoredState();
@@ -399,7 +399,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
       return;
     }
 
-    final manager = RepositoryManager();
+    final manager = SharedStorageManager();
     final pending = await manager.getPendingRepositories();
 
     if (pending.isEmpty) {
@@ -452,7 +452,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
     );
 
     // Update lastSynced timestamp for this repository
-    final manager = RepositoryManager();
+    final manager = SharedStorageManager();
     final activeRepo = await manager.getActiveRepository();
     if (activeRepo != null) {
       await manager.updateLastSynced(activeRepo.id);
@@ -478,7 +478,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
       final bundle = RecipeBundle.fromJsonString(content);
 
       // Update lastSynced timestamp for this repository
-      final manager = RepositoryManager();
+      final manager = SharedStorageManager();
       final activeRepo = await manager.getActiveRepository();
       if (activeRepo != null) {
         await manager.updateLastSynced(activeRepo.id);
@@ -766,7 +766,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
   /// Migration Path:
   /// - If no active repository exists (first run / legacy user):
   ///   1. Search for legacy 'Memoix' folder (or create if brand new user)
-  ///   2. Register it as 'Default' repository in RepositoryManager
+  ///   2. Register it as 'Default' repository in SharedStorageManager
   ///   3. Set it as active
   /// - If active repository exists: Use its folderId
   Future<String> _ensureFolderId() async {
@@ -775,7 +775,7 @@ class GoogleDriveStorage implements CloudStorageProvider, ExternalStorageProvide
       return _folderId!;
     }
 
-    final manager = RepositoryManager();
+    final manager = SharedStorageManager();
     final activeRepo = await manager.getActiveRepository();
 
     if (activeRepo != null) {

@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'drive_repository.g.dart';
+part 'storage_location.g.dart';
 
 /// Cloud storage provider type
 enum StorageProvider {
@@ -25,7 +25,7 @@ extension StorageProviderDisplay on StorageProvider {
 /// Multiple repositories allow users to maintain separate collections
 /// (e.g., Personal, Family Shared, Work) that can be shared with others.
 @JsonSerializable()
-class DriveRepository {
+class StorageLocation {
   /// Unique identifier for this repository configuration
   final String id;
 
@@ -58,7 +58,7 @@ class DriveRepository {
   /// Cloud storage provider for this repository
   final StorageProvider provider;
 
-  const DriveRepository({
+  const StorageLocation({
     required this.id,
     required this.name,
     required this.folderId,
@@ -72,7 +72,7 @@ class DriveRepository {
   });
 
   /// Create a copy with updated fields
-  DriveRepository copyWith({
+  StorageLocation copyWith({
     String? id,
     String? name,
     String? folderId,
@@ -82,7 +82,7 @@ class DriveRepository {
     DateTime? createdAt,
     DateTime? lastVerified,
     DateTime? lastSynced,    StorageProvider? provider,  }) {
-    return DriveRepository(
+    return StorageLocation(
       id: id ?? this.id,
       name: name ?? this.name,
       folderId: folderId ?? this.folderId,
@@ -96,8 +96,8 @@ class DriveRepository {
     );
   }
 
-  factory DriveRepository.fromJson(Map<String, dynamic> json) =>
-      _$DriveRepositoryFromJson(json);
+  factory StorageLocation.fromJson(Map<String, dynamic> json) =>
+      _$StorageLocationFromJson(json);
 
-  Map<String, dynamic> toJson() => _$DriveRepositoryToJson(this);
+  Map<String, dynamic> toJson() => _$StorageLocationToJson(this);
 }

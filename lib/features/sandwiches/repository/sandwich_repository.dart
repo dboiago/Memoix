@@ -84,8 +84,8 @@ class SandwichRepository {
       await _db.sandwichs.put(sandwich);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete a sandwich by ID
@@ -94,9 +94,9 @@ class SandwichRepository {
       return _db.sandwichs.delete(id);
     });
     
-    // Notify external storage service of change
+    // Notify personal storage service of change
     if (result) {
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
     
     return result;
@@ -117,8 +117,8 @@ class SandwichRepository {
       await _db.sandwichs.put(sandwich);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Increment cook count
@@ -129,8 +129,8 @@ class SandwichRepository {
       await _db.sandwichs.put(sandwich);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Update rating
@@ -141,8 +141,8 @@ class SandwichRepository {
       await _db.sandwichs.put(sandwich);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all sandwiches (stream for Riverpod)

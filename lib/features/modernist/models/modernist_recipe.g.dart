@@ -22,116 +22,126 @@ const ModernistRecipeSchema = CollectionSchema(
       name: r'cookCount',
       type: IsarType.long,
     ),
-    r'createdAt': PropertySchema(
+    r'course': PropertySchema(
       id: 1,
+      name: r'course',
+      type: IsarType.string,
+    ),
+    r'createdAt': PropertySchema(
+      id: 2,
       name: r'createdAt',
       type: IsarType.dateTime,
     ),
     r'difficulty': PropertySchema(
-      id: 2,
+      id: 3,
       name: r'difficulty',
       type: IsarType.string,
     ),
     r'directions': PropertySchema(
-      id: 3,
+      id: 4,
       name: r'directions',
       type: IsarType.stringList,
     ),
     r'equipment': PropertySchema(
-      id: 4,
+      id: 5,
       name: r'equipment',
       type: IsarType.stringList,
     ),
     r'headerImage': PropertySchema(
-      id: 5,
+      id: 6,
       name: r'headerImage',
       type: IsarType.string,
     ),
     r'imageUrl': PropertySchema(
-      id: 6,
+      id: 7,
       name: r'imageUrl',
       type: IsarType.string,
     ),
     r'imageUrls': PropertySchema(
-      id: 7,
+      id: 8,
       name: r'imageUrls',
       type: IsarType.stringList,
     ),
     r'ingredients': PropertySchema(
-      id: 8,
+      id: 9,
       name: r'ingredients',
       type: IsarType.objectList,
       target: r'ModernistIngredient',
     ),
     r'isFavorite': PropertySchema(
-      id: 9,
+      id: 10,
       name: r'isFavorite',
       type: IsarType.bool,
     ),
     r'name': PropertySchema(
-      id: 10,
+      id: 11,
       name: r'name',
       type: IsarType.string,
     ),
     r'notes': PropertySchema(
-      id: 11,
+      id: 12,
       name: r'notes',
       type: IsarType.string,
     ),
+    r'pairedRecipeIds': PropertySchema(
+      id: 13,
+      name: r'pairedRecipeIds',
+      type: IsarType.stringList,
+    ),
     r'scienceNotes': PropertySchema(
-      id: 12,
+      id: 14,
       name: r'scienceNotes',
       type: IsarType.string,
     ),
     r'serves': PropertySchema(
-      id: 13,
+      id: 15,
       name: r'serves',
       type: IsarType.string,
     ),
     r'source': PropertySchema(
-      id: 14,
+      id: 16,
       name: r'source',
       type: IsarType.string,
       enumMap: _ModernistRecipesourceEnumValueMap,
     ),
     r'sourceUrl': PropertySchema(
-      id: 15,
+      id: 17,
       name: r'sourceUrl',
       type: IsarType.string,
     ),
     r'stepImageMap': PropertySchema(
-      id: 16,
+      id: 18,
       name: r'stepImageMap',
       type: IsarType.stringList,
     ),
     r'stepImages': PropertySchema(
-      id: 17,
+      id: 19,
       name: r'stepImages',
       type: IsarType.stringList,
     ),
     r'technique': PropertySchema(
-      id: 18,
+      id: 20,
       name: r'technique',
       type: IsarType.string,
     ),
     r'time': PropertySchema(
-      id: 19,
+      id: 21,
       name: r'time',
       type: IsarType.string,
     ),
     r'type': PropertySchema(
-      id: 20,
+      id: 22,
       name: r'type',
       type: IsarType.string,
       enumMap: _ModernistRecipetypeEnumValueMap,
     ),
     r'updatedAt': PropertySchema(
-      id: 21,
+      id: 23,
       name: r'updatedAt',
       type: IsarType.dateTime,
     ),
     r'uuid': PropertySchema(
-      id: 22,
+      id: 24,
       name: r'uuid',
       type: IsarType.string,
     )
@@ -168,6 +178,19 @@ const ModernistRecipeSchema = CollectionSchema(
         )
       ],
     ),
+    r'course': IndexSchema(
+      id: 5284280814786439068,
+      name: r'course',
+      unique: false,
+      replace: false,
+      properties: [
+        IndexPropertySchema(
+          name: r'course',
+          type: IndexType.hash,
+          caseSensitive: true,
+        )
+      ],
+    ),
     r'technique': IndexSchema(
       id: -5643282214358479019,
       name: r'technique',
@@ -196,6 +219,7 @@ int _modernistRecipeEstimateSize(
   Map<Type, List<int>> allOffsets,
 ) {
   var bytesCount = offsets.last;
+  bytesCount += 3 + object.course.length * 3;
   {
     final value = object.difficulty;
     if (value != null) {
@@ -249,6 +273,13 @@ int _modernistRecipeEstimateSize(
     final value = object.notes;
     if (value != null) {
       bytesCount += 3 + value.length * 3;
+    }
+  }
+  bytesCount += 3 + object.pairedRecipeIds.length * 3;
+  {
+    for (var i = 0; i < object.pairedRecipeIds.length; i++) {
+      final value = object.pairedRecipeIds[i];
+      bytesCount += value.length * 3;
     }
   }
   {
@@ -308,33 +339,35 @@ void _modernistRecipeSerialize(
   Map<Type, List<int>> allOffsets,
 ) {
   writer.writeLong(offsets[0], object.cookCount);
-  writer.writeDateTime(offsets[1], object.createdAt);
-  writer.writeString(offsets[2], object.difficulty);
-  writer.writeStringList(offsets[3], object.directions);
-  writer.writeStringList(offsets[4], object.equipment);
-  writer.writeString(offsets[5], object.headerImage);
-  writer.writeString(offsets[6], object.imageUrl);
-  writer.writeStringList(offsets[7], object.imageUrls);
+  writer.writeString(offsets[1], object.course);
+  writer.writeDateTime(offsets[2], object.createdAt);
+  writer.writeString(offsets[3], object.difficulty);
+  writer.writeStringList(offsets[4], object.directions);
+  writer.writeStringList(offsets[5], object.equipment);
+  writer.writeString(offsets[6], object.headerImage);
+  writer.writeString(offsets[7], object.imageUrl);
+  writer.writeStringList(offsets[8], object.imageUrls);
   writer.writeObjectList<ModernistIngredient>(
-    offsets[8],
+    offsets[9],
     allOffsets,
     ModernistIngredientSchema.serialize,
     object.ingredients,
   );
-  writer.writeBool(offsets[9], object.isFavorite);
-  writer.writeString(offsets[10], object.name);
-  writer.writeString(offsets[11], object.notes);
-  writer.writeString(offsets[12], object.scienceNotes);
-  writer.writeString(offsets[13], object.serves);
-  writer.writeString(offsets[14], object.source.name);
-  writer.writeString(offsets[15], object.sourceUrl);
-  writer.writeStringList(offsets[16], object.stepImageMap);
-  writer.writeStringList(offsets[17], object.stepImages);
-  writer.writeString(offsets[18], object.technique);
-  writer.writeString(offsets[19], object.time);
-  writer.writeString(offsets[20], object.type.name);
-  writer.writeDateTime(offsets[21], object.updatedAt);
-  writer.writeString(offsets[22], object.uuid);
+  writer.writeBool(offsets[10], object.isFavorite);
+  writer.writeString(offsets[11], object.name);
+  writer.writeString(offsets[12], object.notes);
+  writer.writeStringList(offsets[13], object.pairedRecipeIds);
+  writer.writeString(offsets[14], object.scienceNotes);
+  writer.writeString(offsets[15], object.serves);
+  writer.writeString(offsets[16], object.source.name);
+  writer.writeString(offsets[17], object.sourceUrl);
+  writer.writeStringList(offsets[18], object.stepImageMap);
+  writer.writeStringList(offsets[19], object.stepImages);
+  writer.writeString(offsets[20], object.technique);
+  writer.writeString(offsets[21], object.time);
+  writer.writeString(offsets[22], object.type.name);
+  writer.writeDateTime(offsets[23], object.updatedAt);
+  writer.writeString(offsets[24], object.uuid);
 }
 
 ModernistRecipe _modernistRecipeDeserialize(
@@ -345,39 +378,41 @@ ModernistRecipe _modernistRecipeDeserialize(
 ) {
   final object = ModernistRecipe();
   object.cookCount = reader.readLong(offsets[0]);
-  object.createdAt = reader.readDateTime(offsets[1]);
-  object.difficulty = reader.readStringOrNull(offsets[2]);
-  object.directions = reader.readStringList(offsets[3]) ?? [];
-  object.equipment = reader.readStringList(offsets[4]) ?? [];
-  object.headerImage = reader.readStringOrNull(offsets[5]);
+  object.course = reader.readString(offsets[1]);
+  object.createdAt = reader.readDateTime(offsets[2]);
+  object.difficulty = reader.readStringOrNull(offsets[3]);
+  object.directions = reader.readStringList(offsets[4]) ?? [];
+  object.equipment = reader.readStringList(offsets[5]) ?? [];
+  object.headerImage = reader.readStringOrNull(offsets[6]);
   object.id = id;
-  object.imageUrl = reader.readStringOrNull(offsets[6]);
-  object.imageUrls = reader.readStringList(offsets[7]) ?? [];
+  object.imageUrl = reader.readStringOrNull(offsets[7]);
+  object.imageUrls = reader.readStringList(offsets[8]) ?? [];
   object.ingredients = reader.readObjectList<ModernistIngredient>(
-        offsets[8],
+        offsets[9],
         ModernistIngredientSchema.deserialize,
         allOffsets,
         ModernistIngredient(),
       ) ??
       [];
-  object.isFavorite = reader.readBool(offsets[9]);
-  object.name = reader.readString(offsets[10]);
-  object.notes = reader.readStringOrNull(offsets[11]);
-  object.scienceNotes = reader.readStringOrNull(offsets[12]);
-  object.serves = reader.readStringOrNull(offsets[13]);
+  object.isFavorite = reader.readBool(offsets[10]);
+  object.name = reader.readString(offsets[11]);
+  object.notes = reader.readStringOrNull(offsets[12]);
+  object.pairedRecipeIds = reader.readStringList(offsets[13]) ?? [];
+  object.scienceNotes = reader.readStringOrNull(offsets[14]);
+  object.serves = reader.readStringOrNull(offsets[15]);
   object.source = _ModernistRecipesourceValueEnumMap[
-          reader.readStringOrNull(offsets[14])] ??
+          reader.readStringOrNull(offsets[16])] ??
       ModernistSource.memoix;
-  object.sourceUrl = reader.readStringOrNull(offsets[15]);
-  object.stepImageMap = reader.readStringList(offsets[16]) ?? [];
-  object.stepImages = reader.readStringList(offsets[17]) ?? [];
-  object.technique = reader.readStringOrNull(offsets[18]);
-  object.time = reader.readStringOrNull(offsets[19]);
+  object.sourceUrl = reader.readStringOrNull(offsets[17]);
+  object.stepImageMap = reader.readStringList(offsets[18]) ?? [];
+  object.stepImages = reader.readStringList(offsets[19]) ?? [];
+  object.technique = reader.readStringOrNull(offsets[20]);
+  object.time = reader.readStringOrNull(offsets[21]);
   object.type =
-      _ModernistRecipetypeValueEnumMap[reader.readStringOrNull(offsets[20])] ??
+      _ModernistRecipetypeValueEnumMap[reader.readStringOrNull(offsets[22])] ??
           ModernistType.concept;
-  object.updatedAt = reader.readDateTime(offsets[21]);
-  object.uuid = reader.readString(offsets[22]);
+  object.updatedAt = reader.readDateTime(offsets[23]);
+  object.uuid = reader.readString(offsets[24]);
   return object;
 }
 
@@ -391,20 +426,22 @@ P _modernistRecipeDeserializeProp<P>(
     case 0:
       return (reader.readLong(offset)) as P;
     case 1:
-      return (reader.readDateTime(offset)) as P;
+      return (reader.readString(offset)) as P;
     case 2:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readDateTime(offset)) as P;
     case 3:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 4:
       return (reader.readStringList(offset) ?? []) as P;
     case 5:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readStringList(offset) ?? []) as P;
     case 6:
       return (reader.readStringOrNull(offset)) as P;
     case 7:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 8:
+      return (reader.readStringList(offset) ?? []) as P;
+    case 9:
       return (reader.readObjectList<ModernistIngredient>(
             offset,
             ModernistIngredientSchema.deserialize,
@@ -412,37 +449,39 @@ P _modernistRecipeDeserializeProp<P>(
             ModernistIngredient(),
           ) ??
           []) as P;
-    case 9:
-      return (reader.readBool(offset)) as P;
     case 10:
-      return (reader.readString(offset)) as P;
+      return (reader.readBool(offset)) as P;
     case 11:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readString(offset)) as P;
     case 12:
       return (reader.readStringOrNull(offset)) as P;
     case 13:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readStringList(offset) ?? []) as P;
     case 14:
-      return (_ModernistRecipesourceValueEnumMap[
-              reader.readStringOrNull(offset)] ??
-          ModernistSource.memoix) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 15:
       return (reader.readStringOrNull(offset)) as P;
     case 16:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (_ModernistRecipesourceValueEnumMap[
+              reader.readStringOrNull(offset)] ??
+          ModernistSource.memoix) as P;
     case 17:
-      return (reader.readStringList(offset) ?? []) as P;
+      return (reader.readStringOrNull(offset)) as P;
     case 18:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readStringList(offset) ?? []) as P;
     case 19:
-      return (reader.readStringOrNull(offset)) as P;
+      return (reader.readStringList(offset) ?? []) as P;
     case 20:
+      return (reader.readStringOrNull(offset)) as P;
+    case 21:
+      return (reader.readStringOrNull(offset)) as P;
+    case 22:
       return (_ModernistRecipetypeValueEnumMap[
               reader.readStringOrNull(offset)] ??
           ModernistType.concept) as P;
-    case 21:
+    case 23:
       return (reader.readDateTime(offset)) as P;
-    case 22:
+    case 24:
       return (reader.readString(offset)) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
@@ -706,6 +745,51 @@ extension ModernistRecipeQueryWhere
   }
 
   QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterWhereClause>
+      courseEqualTo(String course) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IndexWhereClause.equalTo(
+        indexName: r'course',
+        value: [course],
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterWhereClause>
+      courseNotEqualTo(String course) {
+    return QueryBuilder.apply(this, (query) {
+      if (query.whereSort == Sort.asc) {
+        return query
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [],
+              upper: [course],
+              includeUpper: false,
+            ))
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [course],
+              includeLower: false,
+              upper: [],
+            ));
+      } else {
+        return query
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [course],
+              includeLower: false,
+              upper: [],
+            ))
+            .addWhereClause(IndexWhereClause.between(
+              indexName: r'course',
+              lower: [],
+              upper: [course],
+              includeUpper: false,
+            ));
+      }
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterWhereClause>
       techniqueIsNull() {
     return QueryBuilder.apply(this, (query) {
       return query.addWhereClause(IndexWhereClause.equalTo(
@@ -827,6 +911,142 @@ extension ModernistRecipeQueryFilter
         includeLower: includeLower,
         upper: upper,
         includeUpper: includeUpper,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseEqualTo(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseGreaterThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseLessThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseBetween(
+    String lower,
+    String upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'course',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'course',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'course',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'course',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      courseIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'course',
+        value: '',
       ));
     });
   }
@@ -2466,6 +2686,233 @@ extension ModernistRecipeQueryFilter
         property: r'notes',
         value: '',
       ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementEqualTo(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementGreaterThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementLessThan(
+    String value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementBetween(
+    String lower,
+    String upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'pairedRecipeIds',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementContains(String value,
+          {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'pairedRecipeIds',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementMatches(String pattern,
+          {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'pairedRecipeIds',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'pairedRecipeIds',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsElementIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'pairedRecipeIds',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthEqualTo(int length) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        length,
+        true,
+        length,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        0,
+        true,
+        0,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        0,
+        false,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthLessThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        0,
+        true,
+        length,
+        include,
+      );
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthGreaterThan(
+    int length, {
+    bool include = false,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        length,
+        include,
+        999999,
+        true,
+      );
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterFilterCondition>
+      pairedRecipeIdsLengthBetween(
+    int lower,
+    int upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.listLength(
+        r'pairedRecipeIds',
+        lower,
+        includeLower,
+        upper,
+        includeUpper,
+      );
     });
   }
 
@@ -4183,6 +4630,19 @@ extension ModernistRecipeQuerySortBy
     });
   }
 
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterSortBy> sortByCourse() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.asc);
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterSortBy>
+      sortByCourseDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.desc);
+    });
+  }
+
   QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterSortBy>
       sortByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
@@ -4414,6 +4874,19 @@ extension ModernistRecipeQuerySortThenBy
       thenByCookCountDesc() {
     return QueryBuilder.apply(this, (query) {
       return query.addSortBy(r'cookCount', Sort.desc);
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterSortBy> thenByCourse() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.asc);
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QAfterSortBy>
+      thenByCourseDesc() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'course', Sort.desc);
     });
   }
 
@@ -4656,6 +5129,13 @@ extension ModernistRecipeQueryWhereDistinct
     });
   }
 
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QDistinct> distinctByCourse(
+      {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'course', caseSensitive: caseSensitive);
+    });
+  }
+
   QueryBuilder<ModernistRecipe, ModernistRecipe, QDistinct>
       distinctByCreatedAt() {
     return QueryBuilder.apply(this, (query) {
@@ -4723,6 +5203,13 @@ extension ModernistRecipeQueryWhereDistinct
       {bool caseSensitive = true}) {
     return QueryBuilder.apply(this, (query) {
       return query.addDistinctBy(r'notes', caseSensitive: caseSensitive);
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, ModernistRecipe, QDistinct>
+      distinctByPairedRecipeIds() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'pairedRecipeIds');
     });
   }
 
@@ -4818,6 +5305,12 @@ extension ModernistRecipeQueryProperty
     });
   }
 
+  QueryBuilder<ModernistRecipe, String, QQueryOperations> courseProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'course');
+    });
+  }
+
   QueryBuilder<ModernistRecipe, DateTime, QQueryOperations>
       createdAtProperty() {
     return QueryBuilder.apply(this, (query) {
@@ -4888,6 +5381,13 @@ extension ModernistRecipeQueryProperty
   QueryBuilder<ModernistRecipe, String?, QQueryOperations> notesProperty() {
     return QueryBuilder.apply(this, (query) {
       return query.addPropertyName(r'notes');
+    });
+  }
+
+  QueryBuilder<ModernistRecipe, List<String>, QQueryOperations>
+      pairedRecipeIdsProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'pairedRecipeIds');
     });
   }
 
@@ -4995,8 +5495,13 @@ const ModernistIngredientSchema = Schema(
       name: r'notes',
       type: IsarType.string,
     ),
-    r'unit': PropertySchema(
+    r'section': PropertySchema(
       id: 4,
+      name: r'section',
+      type: IsarType.string,
+    ),
+    r'unit': PropertySchema(
+      id: 5,
       name: r'unit',
       type: IsarType.string,
     )
@@ -5028,6 +5533,12 @@ int _modernistIngredientEstimateSize(
     }
   }
   {
+    final value = object.section;
+    if (value != null) {
+      bytesCount += 3 + value.length * 3;
+    }
+  }
+  {
     final value = object.unit;
     if (value != null) {
       bytesCount += 3 + value.length * 3;
@@ -5046,7 +5557,8 @@ void _modernistIngredientSerialize(
   writer.writeString(offsets[1], object.displayText);
   writer.writeString(offsets[2], object.name);
   writer.writeString(offsets[3], object.notes);
-  writer.writeString(offsets[4], object.unit);
+  writer.writeString(offsets[4], object.section);
+  writer.writeString(offsets[5], object.unit);
 }
 
 ModernistIngredient _modernistIngredientDeserialize(
@@ -5059,7 +5571,8 @@ ModernistIngredient _modernistIngredientDeserialize(
   object.amount = reader.readStringOrNull(offsets[0]);
   object.name = reader.readString(offsets[2]);
   object.notes = reader.readStringOrNull(offsets[3]);
-  object.unit = reader.readStringOrNull(offsets[4]);
+  object.section = reader.readStringOrNull(offsets[4]);
+  object.unit = reader.readStringOrNull(offsets[5]);
   return object;
 }
 
@@ -5079,6 +5592,8 @@ P _modernistIngredientDeserializeProp<P>(
     case 3:
       return (reader.readStringOrNull(offset)) as P;
     case 4:
+      return (reader.readStringOrNull(offset)) as P;
+    case 5:
       return (reader.readStringOrNull(offset)) as P;
     default:
       throw IsarError('Unknown property with id $propertyId');
@@ -5662,6 +6177,160 @@ extension ModernistIngredientQueryFilter on QueryBuilder<ModernistIngredient,
     return QueryBuilder.apply(this, (query) {
       return query.addFilterCondition(FilterCondition.greaterThan(
         property: r'notes',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionIsNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNull(
+        property: r'section',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionIsNotNull() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(const FilterCondition.isNotNull(
+        property: r'section',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionEqualTo(
+    String? value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'section',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionGreaterThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'section',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionLessThan(
+    String? value, {
+    bool include = false,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'section',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionBetween(
+    String? lower,
+    String? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'section',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionStartsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'section',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionEndsWith(
+    String value, {
+    bool caseSensitive = true,
+  }) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'section',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionContains(String value, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'section',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionMatches(String pattern, {bool caseSensitive = true}) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'section',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'section',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<ModernistIngredient, ModernistIngredient, QAfterFilterCondition>
+      sectionIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'section',
         value: '',
       ));
     });

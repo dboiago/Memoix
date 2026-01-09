@@ -70,8 +70,8 @@ class ModernistRepository {
     _normalizeIngredientUnits(recipe);
     final result = await _db.writeTxn(() => _db.modernistRecipes.put(recipe));
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
     
     return result;
   }
@@ -136,9 +136,9 @@ class ModernistRepository {
   Future<bool> delete(int id) async {
     final result = await _db.writeTxn(() => _db.modernistRecipes.delete(id));
     
-    // Notify external storage service of change
+    // Notify personal storage service of change
     if (result) {
-      _ref.read(externalStorageServiceProvider).onRecipeChanged();
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
     
     return result;
@@ -162,8 +162,8 @@ class ModernistRepository {
       await _db.modernistRecipes.put(recipe);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Increment cook count
@@ -177,8 +177,8 @@ class ModernistRepository {
       await _db.modernistRecipes.put(recipe);
     });
     
-    // Notify external storage service of change
-    _ref.read(externalStorageServiceProvider).onRecipeChanged();
+    // Notify personal storage service of change
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Get unique technique categories from all recipes
