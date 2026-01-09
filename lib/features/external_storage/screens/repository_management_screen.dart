@@ -198,35 +198,15 @@ class _RepositoryManagementScreenState
         case StorageProvider.googleDrive:
           final storage = ref.read(googleDriveStorageProvider);
           
-          // Ensure Google Drive is connected before switching
+          // Always initialize to ensure _driveApi is ready
+          // This is needed when switching from another provider
+          await storage.initialize();
+          
           if (!storage.isConnected) {
-            debugPrint('GoogleDriveStorage not connected, attempting to restore session...');
-            await storage.initialize();
-            
-            if (!storage.isConnected) {
-              throw StateError('Google Drive connection could not be restored. Please reconnect.');
-            }
+            throw StateError('Google Drive connection could not be restored. Please reconnect.');
           }
           
-          // Attempt to switch repository with retry logic
-          try {
-            await storage.switchRepository(repository.folderId, repository.name);
-          } catch (e) {
-            // If switch fails due to connection issues, try one more time after re-initializing
-            if (e.toString().contains('Cannot access repository folder') || 
-                e.toString().contains('Not connected')) {
-              debugPrint('GoogleDriveStorage switch failed, re-initializing...');
-              await storage.initialize();
-              
-              if (storage.isConnected) {
-                await storage.switchRepository(repository.folderId, repository.name);
-              } else {
-                throw StateError('Google Drive connection could not be restored. Please reconnect.');
-              }
-            } else {
-              rethrow;
-            }
-          }
+          await storage.switchRepository(repository.folderId, repository.name);
           break;
         case StorageProvider.oneDrive:
           // OneDrive switch is handled in RepositoryManager.setActiveRepository
