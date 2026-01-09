@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/merge_result.dart';
@@ -41,8 +42,11 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
   /// Last sync time for display
   DateTime? _lastSyncTime;
 
-  /// Whether the provider is connected
-  bool get _isConnected => _googleDrive?.isConnected ?? false;
+  /// Whether Personal Storage is configured (has preferences set)
+  bool _isPersonalStorageConfigured = false;
+
+  /// Whether the provider is connected AND Personal Storage is configured
+  bool get _isConnected => (_googleDrive?.isConnected ?? false) && _isPersonalStorageConfigured;
 
   @override
   void initState() {
@@ -55,13 +59,17 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     _googleDrive = GoogleDriveStorage();
     await _googleDrive!.initialize();
 
+    // Check if Personal Storage is configured (has preferences)
+    final prefs = await SharedPreferences.getInstance();
+    _isPersonalStorageConfigured = prefs.getString('personal_storage_provider_id') != null;
+
     // Load sync mode and last sync time
     final service = ref.read(personalStorageServiceProvider);
     _syncMode = await service.syncMode;
     _lastSyncTime = await service.lastSyncTime;
 
-    // If connected, set the provider on the service
-    if (_googleDrive!.isConnected) {
+    // If connected AND configured, set the provider on the service
+    if (_googleDrive!.isConnected && _isPersonalStorageConfigured) {
       await service.setProvider(_googleDrive!);
     }
 
@@ -428,6 +436,9 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
         final service = ref.read(personalStorageServiceProvider);
         await service.setProvider(_googleDrive!);
 
+        // Mark Personal Storage as configured
+        setState(() => _isPersonalStorageConfigured = true);
+
         // Check if user has ever synced before
         final hasEverSynced = await service.lastSyncTime != null;
         
@@ -474,6 +485,9 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       if (_oneDrive!.isConnected) {
         // Disconnect all other providers (mutual exclusivity)
         await StorageProviderManager.disconnectAll(ref);
+        
+        // Mark Personal Storage as configured
+        setState(() => _isPersonalStorageConfigured = true);
         
         // Note: OneDrive integration is in progress
         // Full PersonalStorageService integration will be completed in a future update

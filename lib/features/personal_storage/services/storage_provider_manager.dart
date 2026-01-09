@@ -26,13 +26,18 @@ class StorageProviderManager {
   static Future<void> disconnectAllExcept(WidgetRef ref, {StorageProvider? exceptProvider}) async {
     final prefs = await SharedPreferences.getInstance();
     
-    // 1. Disconnect Personal Storage provider (if different from the one we're activating)
+    // 1. Always disconnect Personal Storage provider (even if same as Shared)
+    // Personal Storage UI needs to show as disconnected when Shared is active
     final personalProviderId = prefs.getString('personal_storage_provider_id');
-    if (personalProviderId != null && personalProviderId != exceptProvider?.id) {
-      await _disconnectProvider(personalProviderId, ref);
+    if (personalProviderId != null) {
+      // Only physically disconnect if it's NOT the provider being activated for Shared
+      // (Shared Storage needs the provider to remain connected)
+      if (personalProviderId != exceptProvider?.id) {
+        await _disconnectProvider(personalProviderId, ref);
+      }
     }
     
-    // Clear Personal Storage preferences
+    // Always clear Personal Storage preferences (so UI shows disconnected)
     await prefs.remove('personal_storage_provider_id');
     await prefs.remove('personal_storage_path');
     
