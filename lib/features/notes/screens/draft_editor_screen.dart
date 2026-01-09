@@ -10,6 +10,11 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/scratch_pad.dart';
+import '../../recipes/models/recipe.dart'; // Needed for recipe selector
+import '../../recipes/models/ingredient.dart'; // Needed for conversion
+import '../../recipes/repository/recipe_repository.dart'; // Needed for allRecipesProvider
+import '../../recipes/screens/recipe_edit_screen.dart'; // Needed for conversion nav
+import '../repository/scratch_pad_repository.dart'; // Needed for saving
 
 class DraftEditorScreen extends ConsumerStatefulWidget {
 	final RecipeDraft? initialDraft;
@@ -538,31 +543,100 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
 		);
 	}
 
-	Widget _buildDirectionRowWidget(int index, ThemeData theme) {
-		final row = _directionRows[index];
-		return Row(
-			children: [
-				Expanded(
-					child: TextField(
-						controller: row.controller,
-						decoration: InputDecoration(hintText: 'Step ${index + 1}'),
-						maxLines: 2,
-					),
-				),
-				IconButton(
-					icon: const Icon(Icons.delete_outline),
-					onPressed: _directionRows.length > 1
-							? () {
-									setState(() {
-										row.dispose();
-										_directionRows.removeAt(index);
-									});
-								}
-							: null,
-				),
-			],
-		);
-	}
+    Widget _buildDirectionRowWidget(int index, ThemeData theme) {
+        final row = _directionRows[index];
+        final hasImage = _stepImageMap.containsKey(index);
+        final imageIndex = _stepImageMap[index];
+
+        return Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+            // Step Number
+            Padding(
+            padding: const EdgeInsets.only(top: 12, right: 8),
+            child: Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(
+                color: theme.colorScheme.secondary.withOpacity(0.15),
+                shape: BoxShape.circle,
+                ),
+                child: Center(
+                child: Text(
+                    '${index + 1}',
+                    style: TextStyle(
+                    color: theme.colorScheme.secondary,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 11,
+                    ),
+                ),
+                ),
+            ),
+            ),
+            
+            // Text Field
+            Expanded(
+            child: TextField(
+                controller: row.controller,
+                decoration: InputDecoration(
+                hintText: 'Enter step ${index + 1}...',
+                isDense: true,
+                contentPadding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                border: const OutlineInputBorder(),
+                ),
+                maxLines: 3,
+                minLines: 1,
+            ),
+            ),
+            const SizedBox(width: 8),
+
+            // Actions Column (Image + Delete)
+            Column(
+            children: [
+                // Image Button
+                IconButton(
+                icon: Icon(
+                    hasImage ? Icons.image : Icons.add_photo_alternate_outlined,
+                    size: 20,
+                    color: hasImage ? theme.colorScheme.primary : theme.colorScheme.outline,
+                ),
+                tooltip: hasImage ? 'Image #${imageIndex! + 1} attached' : 'Attach image',
+                onPressed: () => _pickStepImage(index),
+                ),
+                
+                // Delete Button
+                IconButton(
+                icon: const Icon(Icons.close),
+                iconSize: 18,
+                color: theme.colorScheme.outline,
+                onPressed: _directionRows.length > 1
+                    ? () {
+                        setState(() {
+                            // Remove image link if exists
+                            _stepImageMap.remove(index);
+                            // Shift image map indices for subsequent steps
+                            final newMap = <int, int>{};
+                            for (final entry in _stepImageMap.entries) {
+                            if (entry.key > index) {
+                                newMap[entry.key - 1] = entry.value;
+                            } else if (entry.key < index) {
+                                newMap[entry.key] = entry.value;
+                            }
+                            }
+                            _stepImageMap.clear();
+                            _stepImageMap.addAll(newMap);
+                            
+                            row.dispose();
+                            _directionRows.removeAt(index);
+                        });
+                        }
+                    : null,
+                ),
+            ],
+            ),
+        ],
+        );
+    }
 
 	Widget _buildImagePicker(ThemeData theme) {
 		final hasImage = _headerImage != null && _headerImage!.isNotEmpty;
@@ -715,6 +789,90 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
 			),
 		);
 	}
+
+Future<void> _pickStepImage(int stepIndex) async {
+    // If we have gallery images, let user choose: New or Existing?
+    if (_stepImages.isNotEmpty) {
+      showModalBottomSheet(
+        context: context,
+        builder: (ctx) => SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                leading: const Icon(Icons.add_photo_alternate),
+                title: const Text('Add New Image'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  _pickNewStepImage(stepIndex);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.photo_library),
+                title: const Text('Link Existing Gallery Image'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  _selectExistingStepImage(stepIndex);
+                },
+              ),
+            ],
+          ),
+        ),
+      );
+    } else {
+      // No gallery images yet, just pick new
+      _pickNewStepImage(stepIndex);
+    }
+  }
+
+  Future<void> _pickNewStepImage(int stepIndex) async {
+    // Re-use the existing gallery picker logic but link it immediately
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+      if (pickedFile != null) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/recipe_images');
+        if (!await imagesDir.exists()) await imagesDir.create(recursive: true);
+        
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedFile = await File(pickedFile.path).copy('${imagesDir.path}/$fileName');
+        
+        setState(() {
+          _stepImages.add(savedFile.path);
+          _stepImageMap[stepIndex] = _stepImages.length - 1; // Link to the new last image
+        });
+      }
+    } catch (e) {
+      MemoixSnackBar.showError('Error: $e');
+    }
+  }
+
+  void _selectExistingStepImage(int stepIndex) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Select Image'),
+        content: SizedBox(
+          width: 300,
+          height: 300,
+          child: GridView.builder(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, crossAxisSpacing: 4, mainAxisSpacing: 4),
+            itemCount: _stepImages.length,
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                onTap: () {
+                  setState(() => _stepImageMap[stepIndex] = index);
+                  Navigator.pop(ctx);
+                },
+                child: _buildStepImageWidget(_stepImages[index]),
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
 
 	Widget _buildStepImagesGallery(ThemeData theme) {
 		return Column(
