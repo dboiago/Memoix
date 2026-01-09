@@ -12,6 +12,10 @@ import '../notes/models/scratch_pad.dart';
 import '../notes/repository/scratch_pad_repository.dart';
 import 'recipe_comparison_provider.dart';
 
+/// Global RouteObserver to track when comparison screen becomes inactive
+/// Exported for registration in MaterialApp
+final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
+
 /// Recipe Comparison screen for side-by-side recipe comparison
 /// 
 /// Allows users to:
@@ -31,8 +35,11 @@ class RecipeComparisonScreen extends ConsumerStatefulWidget {
   ConsumerState<RecipeComparisonScreen> createState() => _RecipeComparisonScreenState();
 }
 
-class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen> with WidgetsBindingObserver {
+class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen> with WidgetsBindingObserver, RouteAware {
   final _draftTitleController = TextEditingController(text: 'Compared Recipe Draft');
+  
+  // Track if this screen is currently visible
+  bool _isActive = true;
 
   @override
   void initState() {
@@ -45,19 +52,44 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       });
     }
   }
+  
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Subscribe to route changes
+    final route = ModalRoute.of(context);
+    if (route is PageRoute) {
+      routeObserver.subscribe(this, route);
+    }
+  }
 
   @override
   void dispose() {
+    routeObserver.unsubscribe(this);
     WidgetsBinding.instance.removeObserver(this);
     _draftTitleController.dispose();
-    // Reset comparison state when navigating away
+    // Reset comparison state when screen is disposed
     ref.read(recipeComparisonProvider.notifier).reset();
     super.dispose();
+  }
+  
+  // RouteAware methods - called when route visibility changes
+  @override
+  void didPushNext() {
+    // Another route was pushed on top of this one - user navigated away
+    _isActive = false;
+    ref.read(recipeComparisonProvider.notifier).reset();
+  }
+  
+  @override
+  void didPopNext() {
+    // The route that was on top was popped, this route is now visible again
+    _isActive = true;
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // Also reset when app goes to background (keeping this for extra safety)
+    // Also reset when app goes to background
     if (state == AppLifecycleState.paused) {
       ref.read(recipeComparisonProvider.notifier).reset();
     }
