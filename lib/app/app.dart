@@ -12,7 +12,6 @@ import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';
 import '../features/tools/timer_service.dart';
 import '../features/personal_storage/services/personal_storage_service.dart';
-import '../features/tools/recipe_comparison_screen.dart' show routeObserver;
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -34,7 +33,6 @@ class MemoixApp extends ConsumerWidget {
       themeMode: mode,
       navigatorKey: rootNavigatorKey,
       scaffoldMessengerKey: rootScaffoldMessengerKey,
-      navigatorObservers: [routeObserver],
       home: const _DeepLinkWrapper(child: AppRouter()),
     );
   }
