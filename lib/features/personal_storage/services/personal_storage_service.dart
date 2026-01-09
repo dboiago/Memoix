@@ -551,17 +551,20 @@ class PersonalStorageService {
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
           // Remote is newer: check if content actually differs
-          // Compare JSON size as a quick content check to avoid false positives
-          final remoteSize = jsonEncode(remote.toJson()).length;
-          final existingSize = jsonEncode(existing.toJson()).length;
+          // Compare key fields to determine if content changed
+          final contentChanged = remote.name != existing.name ||
+              remote.ingredients.length != existing.ingredients.length ||
+              remote.directions.length != existing.directions.length ||
+              remote.serves != existing.serves ||
+              remote.time != existing.time;
           
-          if (remoteSize != existingSize) {
+          if (contentChanged) {
             // Content differs: update local
             remote.id = existing.id; // Preserve local ID
             await db.recipes.put(remote);
             updated++;
           } else {
-            // Same size, likely identical content: keep local
+            // Same content, just timestamp differs: keep local
             unchanged++;
           }
         } else {
@@ -589,11 +592,13 @@ class PersonalStorageService {
           await db.pizzas.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content differs by comparing JSON size
-          final remoteSize = jsonEncode(remote.toJson()).length;
-          final existingSize = jsonEncode(existing.toJson()).length;
+          // Check if content differs by comparing key fields
+          final contentChanged = remote.name != existing.name ||
+              remote.base != existing.base ||
+              remote.components.length != existing.components.length ||
+              remote.serves != existing.serves;
           
-          if (remoteSize != existingSize) {
+          if (contentChanged) {
             remote.id = existing.id;
             await db.pizzas.put(remote);
             updated++;
@@ -624,9 +629,19 @@ class PersonalStorageService {
           await db.sandwichs.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          remote.id = existing.id;
-          await db.sandwichs.put(remote);
-          updated++;
+          // Check if content actually differs
+          final contentChanged = remote.name != existing.name ||
+              remote.bread != existing.bread ||
+              remote.components.length != existing.components.length ||
+              remote.serves != existing.serves;
+          
+          if (contentChanged) {
+            remote.id = existing.id;
+            await db.sandwichs.put(remote);
+            updated++;
+          } else {
+            unchanged++;
+          }
         } else {
           unchanged++;
         }
@@ -651,9 +666,19 @@ class PersonalStorageService {
           await db.cheeseEntrys.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          remote.id = existing.id;
-          await db.cheeseEntrys.put(remote);
-          updated++;
+          // Check if content actually differs
+          final contentChanged = remote.name != existing.name ||
+              remote.type != existing.type ||
+              remote.origin != existing.origin ||
+              remote.notes != existing.notes;
+          
+          if (contentChanged) {
+            remote.id = existing.id;
+            await db.cheeseEntrys.put(remote);
+            updated++;
+          } else {
+            unchanged++;
+          }
         } else {
           unchanged++;
         }
@@ -678,9 +703,20 @@ class PersonalStorageService {
           await db.cellarEntrys.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          remote.id = existing.id;
-          await db.cellarEntrys.put(remote);
-          updated++;
+          // Check if content actually differs
+          final contentChanged = remote.name != existing.name ||
+              remote.spirit != existing.spirit ||
+              remote.vintage != existing.vintage ||
+              remote.quantity != existing.quantity ||
+              remote.notes != existing.notes;
+          
+          if (contentChanged) {
+            remote.id = existing.id;
+            await db.cellarEntrys.put(remote);
+            updated++;
+          } else {
+            unchanged++;
+          }
         } else {
           unchanged++;
         }
@@ -705,9 +741,20 @@ class PersonalStorageService {
           await db.smokingRecipes.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          remote.id = existing.id;
-          await db.smokingRecipes.put(remote);
-          updated++;
+          // Check if content actually differs
+          final contentChanged = remote.name != existing.name ||
+              remote.protein != existing.protein ||
+              remote.wood != existing.wood ||
+              remote.time != existing.time ||
+              remote.temp != existing.temp;
+          
+          if (contentChanged) {
+            remote.id = existing.id;
+            await db.smokingRecipes.put(remote);
+            updated++;
+          } else {
+            unchanged++;
+          }
         } else {
           unchanged++;
         }
@@ -732,9 +779,20 @@ class PersonalStorageService {
           await db.modernistRecipes.put(remote);
           added++;
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          remote.id = existing.id;
-          await db.modernistRecipes.put(remote);
-          updated++;
+          // Check if content actually differs
+          final contentChanged = remote.name != existing.name ||
+              remote.type != existing.type ||
+              remote.equipment.length != existing.equipment.length ||
+              remote.ingredients.length != existing.ingredients.length ||
+              remote.directions.length != existing.directions.length;
+          
+          if (contentChanged) {
+            remote.id = existing.id;
+            await db.modernistRecipes.put(remote);
+            updated++;
+          } else {
+            unchanged++;
+          }
         } else {
           unchanged++;
         }

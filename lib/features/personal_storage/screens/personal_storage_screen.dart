@@ -422,15 +422,23 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
         final service = ref.read(personalStorageServiceProvider);
         await service.setProvider(_googleDrive!);
 
-        // Check if remote has existing data
-        final hasData = await _googleDrive!.hasExistingData();
-
+        // Check if user has ever synced before
+        final hasEverSynced = await service.lastSyncTime != null;
+        
         if (mounted) {
-          if (hasData) {
-            // Show initial sync prompt
-            _showInitialSyncDialog();
-          } else {
+          if (hasEverSynced) {
+            // User has synced before - just silently pull to sync any changes
             MemoixSnackBar.showSuccess('Connected to Google Drive');
+            _executeDirectPull(showFullSummary: false);
+          } else {
+            // First-time connection - check if remote has existing data
+            final hasData = await _googleDrive!.hasExistingData();
+            if (hasData) {
+              // Show initial sync prompt only on first connection
+              _showInitialSyncDialog();
+            } else {
+              MemoixSnackBar.showSuccess('Connected to Google Drive');
+            }
           }
         }
       }
@@ -514,8 +522,8 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     );
   }
 
-  /// Execute pull directly without confirmation (used during initial sync)
-  Future<void> _executeDirectPull() async {
+  /// Execute pull directly without confirmation (used during initial sync and auto-sync on reconnect)
+  Future<void> _executeDirectPull({bool showFullSummary = true}) async {
     final service = ref.read(personalStorageServiceProvider);
     final result = await service.pull(silent: true);
 
@@ -529,11 +537,21 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (result.hasFailed) {
       MemoixSnackBar.showError('Pull failed: ${result.error}');
     } else if (result.wasSkipped) {
-      MemoixSnackBar.show('No recipes found');
+      // Silent - no message needed
     } else {
-      _showPullSummaryDialog(result);
-    }
-  }
+      if (showFullSummary) {
+        // First-time sync: show detailed dialog
+        _showPullSummaryDialog(result);
+      } else {
+        // Auto-sync on reconnect: just show simple toast if changes detected
+        if (result.hasChanges) {
+          final parts = <String>[];
+          if (result.added > 0) parts.add('${result.added} new');
+          if (result.updated > 0) parts.add('${result.updated} updated');
+          MemoixSnackBar.show('Synced: ${parts.join(', ')}');
+        }
+        // No message if no changes
+      }\n    }\n  }
 
   /// Show confirmation dialog before pushing
   void _showPushConfirmation() {
