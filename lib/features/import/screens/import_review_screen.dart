@@ -320,7 +320,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   child: const Text('Edit More Details'),
                 ),
               ),
-              if (_canCompare) ..[
+              if (_canCompare) ...[
                 const SizedBox(width: 8),
                 Expanded(
                   child: OutlinedButton(

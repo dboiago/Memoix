@@ -124,6 +124,17 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   Recipe? _existingRecipe;
   bool _showBakerPercent = false; // Toggle for showing baker's percentage column
 
+  /// Check if current course allows comparison
+  bool get _canCompare {
+    final course = _selectedCourse.toLowerCase();
+    // Block non-comparable courses
+    if (course == 'pizzas' || course == 'cheese' || course == 'cellar' || 
+        course == 'sandwiches' || course == 'drinks') {
+      return false;
+    }
+    return true;
+  }
+
   // Drinks-specific fields
   String? _glass;
   final List<String> _garnish = [];
