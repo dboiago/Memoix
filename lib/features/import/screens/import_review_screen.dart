@@ -133,11 +133,12 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             icon: const Icon(Icons.compare_arrows),
             label: const Text('Compare'),
           ),
-          const SizedBox(width: 8),
+          const SizedBox(width: 4),
           TextButton(
             onPressed: _saveRecipe,
             child: const Text('Save'),
           ),
+          const SizedBox(width: 8),
         ],
       ),
       body: ListView(

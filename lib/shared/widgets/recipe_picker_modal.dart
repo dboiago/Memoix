@@ -163,11 +163,11 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                   grouped.putIfAbsent(recipe.course, () => []).add(recipe);
                 }
 
-                // Define course order matching main screen
+                // Define course order matching main screen (sortOrder from course.dart)
                 const courseOrder = [
                   'Apps', 'Soups', 'Mains', 'Veg\'n', 'Sides', 'Salads', 
                   'Desserts', 'Brunch', 'Drinks', 'Breads', 'Sauces', 'Rubs', 'Pickles',
-                  'Modernist', 'Smoking'
+                  'Modernist', 'Pizzas', 'Sandwiches', 'Smoking', 'Cheese', 'Cellar', 'Scratch'
                 ];
 
                 // Sort courses by defined order
