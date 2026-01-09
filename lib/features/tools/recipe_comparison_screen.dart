@@ -52,11 +52,21 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
     // Run this after the first frame to ensure safe provider access
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      // Only reset if no prefilledRecipe is provided (e.g. direct navigation)
-      if (widget.prefilledRecipe == null) {
+      final providerState = ref.read(recipeComparisonProvider);
+
+      // CRITICAL: Only reset if the provider is COMPLETELY empty AND we have no arguments.
+      // This prevents wiping data if we just set it from the Detail Screen or an Import flow.
+      final hasExistingData = providerState.recipe1 != null || 
+                              providerState.recipe2 != null || 
+                              providerState.pendingImportSlot != null; // Check pending slot too!
+
+      if (!hasExistingData && widget.prefilledRecipe == null) {
+        // Only reset if we are truly starting fresh
         ref.read(recipeComparisonProvider.notifier).reset();
-      } else {
-        // If a prefilled recipe is provided, do not reset—just set the slot
+      }
+
+      // Apply argument if provided (legacy support or explicit override)
+      if (widget.prefilledRecipe != null) {
         if (widget.targetSlot == 2) {
           ref.read(recipeComparisonProvider.notifier).setRecipe2(widget.prefilledRecipe!);
         } else {
