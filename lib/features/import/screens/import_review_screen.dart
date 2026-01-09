@@ -530,6 +530,15 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   /// Check if current course is Drinks
   bool get _isDrinksCourse => _selectedCourse.toLowerCase() == 'drinks';
   
+  /// Check if current course is Cheese
+  bool get _isCheeseCourse => _selectedCourse.toLowerCase() == 'cheese';
+  
+  /// Check if current course is Cellar
+  bool get _isCellarCourse => _selectedCourse.toLowerCase() == 'cellar';
+  
+  /// Check if current course is Sandwiches
+  bool get _isSandwichesCourse => _selectedCourse.toLowerCase() == 'sandwiches';
+  
   /// Check if current course has a specialized edit screen
   bool get _hasSpecializedScreen => _isModernistCourse || _isSmokingCourse || _isPizzasCourse;
 
@@ -1370,11 +1379,20 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   /// Open recipe comparison view with this imported recipe
   void _openInCompareView() {
-    // Only support standard recipes for comparison (not Modernist, Pizza, Smoking)
-    if (_isModernistCourse || _isSmokingCourse || _isPizzasCourse) {
-      MemoixSnackBar.show('Recipe comparison is only available for standard recipes');
+    // Block non-comparable recipe types
+    if (_isPizzasCourse || _isCheeseCourse || _isCellarCourse || _isSandwichesCourse || _isDrinksCourse) {
+      MemoixSnackBar.show('Recipe comparison is not available for this recipe type');
       return;
     }
+    
+    // For Modernist, only allow concepts (not techniques)
+    if (_isModernistCourse && _selectedModernistType == ModernistType.technique) {
+      MemoixSnackBar.show('Only Modernist concepts can be compared (not techniques)');
+      return;
+    }
+    
+    // For Smoking, only allow recipes (pit notes are not stored as SmokingType in import)
+    // Import screen doesn't have pit note type selection, so all Smoking imports are recipes
 
     final recipe = _buildRecipe();
     AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe);
@@ -1601,6 +1619,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Recipe'
           : _nameController.text.trim(),
+      type: SmokingType.recipe, // Imports are always full recipes, never pit notes
       item: _nameController.text.trim(), // Use recipe name as item being smoked
       temperature: temperature,
       time: _timeController.text.trim().isEmpty ? '' : _timeController.text.trim(),
@@ -1701,17 +1720,23 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       return;
     }
 
-    // Build a temporary Recipe object from the imported data
-    // This recipe is NOT saved to the database - only used for comparison
-    Recipe recipe;
-    
-    if (_isModernistCourse || _isSmokingCourse || _isPizzasCourse) {
-      // For non-standard recipe types, show a message
-      MemoixSnackBar.show('Comparison is only available for standard recipes');
+    // Block non-comparable recipe types
+    if (_isPizzasCourse || _isCheeseCourse || _isCellarCourse || _isSandwichesCourse || _isDrinksCourse) {
+      MemoixSnackBar.show('Recipe comparison is not available for this recipe type');
       return;
-    } else {
-      recipe = _buildRecipe();
     }
+    
+    // For Modernist, only allow concepts (not techniques)
+    if (_isModernistCourse && _selectedModernistType == ModernistType.technique) {
+      MemoixSnackBar.show('Only Modernist concepts can be compared (not techniques)');
+      return;
+    }
+    
+    // For Smoking, only allow recipes (pit notes are not stored as SmokingType in import)
+    // Import screen doesn't have pit note type selection, so all Smoking imports are recipes
+
+    // Build a temporary Recipe object from the imported data
+    final recipe = _buildRecipe();
 
     if (!mounted) return;
 
