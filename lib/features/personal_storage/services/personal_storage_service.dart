@@ -595,8 +595,9 @@ class PersonalStorageService {
           // Check if content differs by comparing key fields
           final contentChanged = remote.name != existing.name ||
               remote.base != existing.base ||
-              remote.components.length != existing.components.length ||
-              remote.serves != existing.serves;
+              remote.cheeses.length != existing.cheeses.length ||
+              remote.proteins.length != existing.proteins.length ||
+              remote.vegetables.length != existing.vegetables.length;
           
           if (contentChanged) {
             remote.id = existing.id;
@@ -632,8 +633,10 @@ class PersonalStorageService {
           // Check if content actually differs
           final contentChanged = remote.name != existing.name ||
               remote.bread != existing.bread ||
-              remote.components.length != existing.components.length ||
-              remote.serves != existing.serves;
+              remote.proteins.length != existing.proteins.length ||
+              remote.vegetables.length != existing.vegetables.length ||
+              remote.cheeses.length != existing.cheeses.length ||
+              remote.condiments.length != existing.condiments.length;
           
           if (contentChanged) {
             remote.id = existing.id;
@@ -669,8 +672,10 @@ class PersonalStorageService {
           // Check if content actually differs
           final contentChanged = remote.name != existing.name ||
               remote.type != existing.type ||
-              remote.origin != existing.origin ||
-              remote.notes != existing.notes;
+              remote.country != existing.country ||
+              remote.milk != existing.milk ||
+              remote.texture != existing.texture ||
+              remote.flavour != existing.flavour;
           
           if (contentChanged) {
             remote.id = existing.id;
@@ -705,10 +710,11 @@ class PersonalStorageService {
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
           // Check if content actually differs
           final contentChanged = remote.name != existing.name ||
-              remote.spirit != existing.spirit ||
-              remote.vintage != existing.vintage ||
-              remote.quantity != existing.quantity ||
-              remote.notes != existing.notes;
+              remote.producer != existing.producer ||
+              remote.category != existing.category ||
+              remote.tastingNotes != existing.tastingNotes ||
+              remote.abv != existing.abv ||
+              remote.ageVintage != existing.ageVintage;
           
           if (contentChanged) {
             remote.id = existing.id;
@@ -743,10 +749,11 @@ class PersonalStorageService {
         } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
           // Check if content actually differs
           final contentChanged = remote.name != existing.name ||
-              remote.protein != existing.protein ||
+              remote.item != existing.item ||
+              remote.category != existing.category ||
               remote.wood != existing.wood ||
               remote.time != existing.time ||
-              remote.temp != existing.temp;
+              remote.temperature != existing.temperature;
           
           if (contentChanged) {
             remote.id = existing.id;

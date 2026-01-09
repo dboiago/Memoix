@@ -551,7 +551,9 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
           MemoixSnackBar.show('Synced: ${parts.join(', ')}');
         }
         // No message if no changes
-      }\n    }\n  }
+      }
+    }
+  }
 
   /// Show confirmation dialog before pushing
   void _showPushConfirmation() {
