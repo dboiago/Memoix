@@ -381,6 +381,9 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
 
     if (mounted) {
+      // Invalidate the drafts provider to ensure the new draft is available
+      ref.invalidate(recipeDraftsProvider);
+      
       // Navigate immediately to the draft editor
       AppRoutes.toScratchPad(context, draftUuid: draftUuid);
       

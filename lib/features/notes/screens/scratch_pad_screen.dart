@@ -131,7 +131,12 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     }
   }
 
-  void _openDraftByUuid(String uuid) {
+  void _openDraftByUuid(String uuid) async {
+    // Add a small delay to ensure provider has refreshed with new draft
+    await Future.delayed(const Duration(milliseconds: 100));
+    
+    if (!mounted) return;
+    
     final draftsAsync = ref.read(recipeDraftsProvider);
     draftsAsync.whenData((drafts) {
       final draft = drafts.where((d) => d.uuid == uuid).firstOrNull;
