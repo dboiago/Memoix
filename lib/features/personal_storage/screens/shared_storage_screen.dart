@@ -425,7 +425,7 @@ class _SharedStorageScreenState
             itemCount: repositories.length,
             itemBuilder: (context, index) {
               final repo = repositories[index];
-              return _RepositoryCard(
+              return _StorageCard(
                 storage: repo,
                 onSwitch: () => _switchRepository(repo),
                 onShare: () => _shareRepository(repo),
@@ -442,7 +442,7 @@ class _SharedStorageScreenState
   }
 }
 
-class _RepositoryCard extends ConsumerWidget {
+class _StorageCard extends ConsumerWidget {
   final StorageLocation storage;
   final VoidCallback onSwitch;
   final VoidCallback onShare;
@@ -451,7 +451,7 @@ class _RepositoryCard extends ConsumerWidget {
   final VoidCallback onVerify;
   final VoidCallback onRefresh;
 
-  const _RepositoryCard({
+  const _StorageCard({
     required this.storage,
     required this.onSwitch,
     required this.onShare,
@@ -538,9 +538,9 @@ class _RepositoryCard extends ConsumerWidget {
                 const SizedBox(height: 16),
 
                 // Disconnect button
-                Center(onDisconnect
+                Center(
                   child: TextButton(
-                    onPressed: syncStatus.isInProgress ? null : () => _disconnectStorage(storage),
+                    onPressed: syncStatus.isInProgress ? null : onDisconnect,
                     child: Text(
                       storage.isPendingVerification ? 'Remove' : 'Disconnect',
                       style: TextStyle(
@@ -620,8 +620,8 @@ class _RepositoryCard extends ConsumerWidget {
                       case 'verify':
                         onVerify();
                         break;
-                      caonDisconnect(
-                        _disconnectStorage(storage);
+                      case 'disconnect':
+                        onDisconnect();
                         break;
                       case 'delete':
                         onDelete();
