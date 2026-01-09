@@ -430,6 +430,7 @@ class _SharedStorageScreenState
                 onSwitch: () => _switchRepository(repo),
                 onShare: () => _shareRepository(repo),
                 onDelete: () => _deleteStorage(repo),
+                onDisconnect: () => _disconnectStorage(repo),
                 onVerify: () => _verifyStorage(repo),
                 onRefresh: _loadRepositories,
               );
@@ -446,6 +447,7 @@ class _RepositoryCard extends ConsumerWidget {
   final VoidCallback onSwitch;
   final VoidCallback onShare;
   final VoidCallback onDelete;
+  final VoidCallback onDisconnect;
   final VoidCallback onVerify;
   final VoidCallback onRefresh;
 
@@ -454,6 +456,7 @@ class _RepositoryCard extends ConsumerWidget {
     required this.onSwitch,
     required this.onShare,
     required this.onDelete,
+    required this.onDisconnect,
     required this.onVerify,
     required this.onRefresh,
   });
@@ -535,7 +538,7 @@ class _RepositoryCard extends ConsumerWidget {
                 const SizedBox(height: 16),
 
                 // Disconnect button
-                Center(
+                Center(onDisconnect
                   child: TextButton(
                     onPressed: syncStatus.isInProgress ? null : () => _disconnectStorage(storage),
                     child: Text(
@@ -617,7 +620,7 @@ class _RepositoryCard extends ConsumerWidget {
                       case 'verify':
                         onVerify();
                         break;
-                      case 'disconnect':
+                      caonDisconnect(
                         _disconnectStorage(storage);
                         break;
                       case 'delete':
@@ -640,7 +643,7 @@ class _RepositoryCard extends ConsumerWidget {
                         ],
                       ),
                     ),
-                    if (!repository.isPendingVerification)
+                    if (!storage.isPendingVerification)
                       PopupMenuItem(
                         value: 'share',
                         child: Row(
