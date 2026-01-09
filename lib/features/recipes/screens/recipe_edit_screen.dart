@@ -990,14 +990,15 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               tooltip: 'View OCR Text',
               onPressed: () => _showOcrText(context),
             ),
-          if (widget.importedRecipe != null && _canCompare)
+          // Show Compare only if imported AND current course is comparable
+          if (widget.importedRecipe != null && _canCompare) ...[
             TextButton.icon(
               onPressed: _openInComparison,
               icon: const Icon(Icons.compare_arrows),
               label: const Text('Compare'),
             ),
-          if (widget.importedRecipe != null && _canCompare)
             const SizedBox(width: 4),
+          ],
           TextButton.icon(
             onPressed: _isSaving ? null : _saveRecipe,
             icon: _isSaving
