@@ -285,7 +285,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           ),
         );
         
-        MemoixSnackBar.show('Promoted to $_selectedCourse');
+        MemoixSnackBar.show('Saved to $_selectedCourse');
       }
     } catch (e) {
       MemoixSnackBar.showError('Error converting recipe: $e');
