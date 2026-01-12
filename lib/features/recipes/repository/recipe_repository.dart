@@ -62,8 +62,19 @@ class RecipeRepository {
 
   /// Search recipes by name, ingredient, or tag, with optional course filter
   Future<List<Recipe>> searchRecipes(String query, {List<String>? courseFilter}) async {
-    if (query.isEmpty) return getAllRecipes();
+    // 1. Handle Empty Query (Just filtering)
+    if (query.isEmpty) {
+      if (courseFilter != null && courseFilter.isNotEmpty) {
+        // If we have a filter but no text, return all recipes in that course
+        return await _db.recipes.filter()
+            .anyOf(courseFilter, (q, slug) => q.courseEqualTo(slug, caseSensitive: false))
+            .findAll();
+      }
+      // No filter, no text -> Return everything
+      return getAllRecipes();
+    }
 
+    // 2. Handle Text Query + Optional Filter
     final results = await _db.recipes
         .filter()
         .optional(courseFilter != null, (q) => q.anyOf(courseFilter!, (q, slug) => q.courseEqualTo(slug, caseSensitive: false)))
@@ -73,7 +84,6 @@ class RecipeRepository {
           .tagsElementContains(query, caseSensitive: false)
           .or()
           .cuisineContains(query, caseSensitive: false)
-          // --- FIX: Use ingredientsElement ---
           .or()
           .ingredientsElement((i) => i.nameContains(query, caseSensitive: false))
         )
