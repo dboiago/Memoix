@@ -8,6 +8,7 @@
 - Added "Compare" button to ImportReviewScreen and RecipeEditScreen for streamlined comparison entry
 - Refactored draft editor screen for to match standard edit screen
 - Added support for multiple email invitations in repository sharing, with improved validation and feedback
+- Added Google Drive provider selection and connection logic to external storage screen
 - Added OneDrive provider selection and connection logic to external storage screen
 
 ### Fixed
