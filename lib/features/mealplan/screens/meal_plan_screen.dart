@@ -703,17 +703,6 @@ class _DayCardState extends ConsumerState<DayCard> {
   }
 }
 
-class _DayCardState extends ConsumerState<DayCard> {
-  bool _hovered = false;
-  static const _undoDuration = Duration(seconds: 4);
-
-  @override
-  void deactivate() {
-    // Reset hover state when navigating away
-    _hovered = false;
-    super.deactivate();
-  }
-
   /// Generate a unique key for a meal delete operation
   String _mealKey(String course, int index) {
     final courseMeals = widget.plan?.getMeals(course) ?? [];
