@@ -499,7 +499,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                                         const SizedBox(height: 24)
                                       else
                                         ...meals.map((meal) {
-                                          // Safety: Ensure instanceId exists, or fallback to name if migration incomplete
+                                          // Safety: Ensure instanceId exists
                                           final instanceId = meal.instanceId ?? meal.recipeName ?? 'unknown';
                                           
                                           if (_isPendingDelete(instanceId)) {
@@ -658,8 +658,7 @@ class _DayCardState extends ConsumerState<DayCard> {
       data: _DraggableMealData(
         sourceDate: widget.date,
         sourceCourse: course,
-        index: 0, // Not needed anymore thanks to unique IDs
-        instanceId: instanceId, // Pass the ID
+        instanceId: instanceId, // Pass unique ID
         meal: meal,
       ),
       delay: const Duration(milliseconds: 300), // Short hold to grab
