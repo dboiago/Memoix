@@ -7,6 +7,7 @@ import 'dart:convert';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:ota_update/ota_update.dart'; // REQUIRED: Add to pubspec.yaml
 
 /// Represents available app version info
 class AppVersion {
@@ -36,7 +37,7 @@ class UpdateService {
   Future<AppVersion?> checkForUpdate() async {
     try {
       final packageInfo = await PackageInfo.fromPlatform();
-      final currentVersion = packageInfo.version; // e.g., "1.0.0"
+      final currentVersion = packageInfo.version;
 
       final response = await http.get(
         Uri.parse(_apiUrl),
@@ -46,7 +47,38 @@ class UpdateService {
         final json = jsonDecode(response.body) as Map<String, dynamic>;
         final tagName = (json['tag_name'] as String?)?.replaceFirst('v', '') ?? '';
         final releaseNotes = (json['body'] as String?) ?? 'See release notes on GitHub';
-        final releaseUrl = (json['html_url'] as String?) ?? '';
+        
+        // DYNAMIC ASSET FINDER (New Logic)
+        final assets = (json['assets'] as List?) ?? [];
+        String downloadUrl = (json['html_url'] as String?) ?? ''; // Fallback
+
+        // Find correct asset based on Platform
+        if (Platform.isAndroid) {
+          final apkAsset = assets.firstWhere(
+            (a) => (a['name'] as String).toLowerCase().endsWith('.apk'),
+            orElse: () => null,
+          );
+          if (apkAsset != null) downloadUrl = apkAsset['browser_download_url'];
+        } else if (Platform.isWindows) {
+          final exeAsset = assets.firstWhere(
+            (a) => (a['name'] as String).toLowerCase().endsWith('.exe'),
+            orElse: () => null,
+          );
+          if (exeAsset != null) downloadUrl = exeAsset['browser_download_url'];
+        } else if (Platform.isLinux) {
+           // Basic logic, improved later in install step
+           final linuxAsset = assets.firstWhere(
+            (a) => (a['name'] as String).toLowerCase().endsWith('.deb') || (a['name'] as String).toLowerCase().endsWith('.rpm'),
+            orElse: () => null,
+          );
+          if (linuxAsset != null) downloadUrl = linuxAsset['browser_download_url'];
+        } else if (Platform.isMacOS) {
+           final dmgAsset = assets.firstWhere(
+            (a) => (a['name'] as String).toLowerCase().endsWith('.dmg'),
+            orElse: () => null,
+          );
+          if (dmgAsset != null) downloadUrl = dmgAsset['browser_download_url'];
+        }
 
         final hasUpdate = _compareVersions(currentVersion, tagName) < 0;
 
@@ -54,31 +86,23 @@ class UpdateService {
           currentVersion: currentVersion,
           latestVersion: tagName,
           hasUpdate: hasUpdate,
-          downloadUrl: releaseUrl,
+          downloadUrl: downloadUrl,
           releaseNotes: releaseNotes,
         );
       }
     } catch (e) {
-      // Silently fail if update check fails
       print('Update check failed: $e');
     }
 
     return null;
   }
 
-  /// Compare two semantic versions
-  /// Returns -1 if v1 < v2, 0 if equal, 1 if v1 > v2
   int _compareVersions(String v1, String v2) {
     final parts1 = v1.split('.').map((p) => int.tryParse(p) ?? 0).toList();
     final parts2 = v2.split('.').map((p) => int.tryParse(p) ?? 0).toList();
 
-    // Pad to same length
-    while (parts1.length < parts2.length) {
-      parts1.add(0);
-    }
-    while (parts2.length < parts1.length) {
-      parts2.add(0);
-    }
+    while (parts1.length < parts2.length) parts1.add(0);
+    while (parts2.length < parts1.length) parts2.add(0);
 
     for (int i = 0; i < parts1.length; i++) {
       if (parts1[i] < parts2[i]) return -1;
@@ -117,38 +141,20 @@ class UpdateService {
     }
   }
 
-  /// Install update on Android by downloading APK and installing via platform channel
-  Future<bool> _installAndroidUpdate(String releaseUrl) async {
+  /// Install update on Android using OTA Update package
+  Future<bool> _installAndroidUpdate(String apkUrl) async {
     try {
-      // Extract the APK download URL from the release page URL
-      // GitHub release URLs are typically: https://github.com/owner/repo/releases/tag/v1.0.0
-      // We need to download from: https://github.com/owner/repo/releases/download/v1.0.0/app-release.apk
-      
-      final tagMatch = RegExp(r'/tag/([^/]+)$').firstMatch(releaseUrl);
-      if (tagMatch == null) return false;
-      
-      final tag = tagMatch.group(1)!;
-      final apkUrl = 'https://github.com/$_owner/$_repo/releases/download/$tag/app-release.apk';
-      
-      // Download the APK
-      final response = await http.get(Uri.parse(apkUrl)).timeout(const Duration(minutes: 5));
-      if (response.statusCode != 200) {
-        print('Failed to download APK: ${response.statusCode}');
-        return false;
-      }
-
-      // Save APK to temp directory
-      final tempDir = await getTemporaryDirectory();
-      final apkFile = File('${tempDir.path}/memoix_update.apk');
-      await apkFile.writeAsBytes(response.bodyBytes);
-
-      // Use platform channel to install APK
-      const platform = MethodChannel('com.memoix/update');
-      final result = await platform.invokeMethod<bool>('installApk', {
-        'apkPath': apkFile.path,
-      });
-
-      return result ?? false;
+      // Use OTA Update to handle download + install intent automatically
+      // This avoids writing custom native code
+      OtaUpdate()
+          .execute(apkUrl, destinationFilename: 'memoix_update.apk')
+          .listen(
+        (OtaEvent event) {
+          // Optional: Add stream controller here if you want to expose progress
+          print('OTA Status: ${event.status}, Value: ${event.value}');
+        },
+      );
+      return true; // OTA Update handles the rest async
     } catch (e) {
       print('Android update failed: $e');
       return false;
@@ -158,15 +164,11 @@ class UpdateService {
   /// Install update on iOS
   Future<bool> _installIOSUpdate(String releaseUrl) async {
     try {
-      // For iOS, we can't directly install from GitHub releases like Android
-      // Instead, we'll open the App Store or provide instructions
-      // In a real app, you'd want to use TestFlight for beta updates
-      // or submit to App Store for public updates
-      
-      // For now, open the GitHub release page
       final uri = Uri.parse(releaseUrl);
-      print('iOS update available at: $releaseUrl');
-      return false; // Indicate manual installation needed
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+      }
+      return true; 
     } catch (e) {
       print('iOS update failed: $e');
       return false;
@@ -174,15 +176,8 @@ class UpdateService {
   }
 
   /// Install update on Windows
-  Future<bool> _installWindowsUpdate(String releaseUrl) async {
+  Future<bool> _installWindowsUpdate(String installerUrl) async {
     try {
-      final tagMatch = RegExp(r'/tag/([^/]+)$').firstMatch(releaseUrl);
-      if (tagMatch == null) return false;
-
-      final tag = tagMatch.group(1)!;
-      // Assuming Windows release is available as .exe or .msi
-      final installerUrl = 'https://github.com/$_owner/$_repo/releases/download/$tag/MemoixInstaller.exe';
-      
       // Download the installer
       final response = await http.get(Uri.parse(installerUrl)).timeout(const Duration(minutes: 5));
       if (response.statusCode != 200) {
@@ -195,8 +190,7 @@ class UpdateService {
       final installerFile = File('${tempDir.path}/MemoixInstaller.exe');
       await installerFile.writeAsBytes(response.bodyBytes);
 
-      // Execute the installer with /S (silent) and /D (installation directory) flags
-      // The installer should handle app restart
+      // Execute the installer with /S (silent)
       await Process.run(installerFile.path, ['/S'], runInShell: true);
       
       return true;
@@ -207,15 +201,8 @@ class UpdateService {
   }
 
   /// Install update on macOS
-  Future<bool> _installMacOSUpdate(String releaseUrl) async {
+  Future<bool> _installMacOSUpdate(String dmgUrl) async {
     try {
-      final tagMatch = RegExp(r'/tag/([^/]+)$').firstMatch(releaseUrl);
-      if (tagMatch == null) return false;
-
-      final tag = tagMatch.group(1)!;
-      // Assuming macOS release is available as .dmg
-      final dmgUrl = 'https://github.com/$_owner/$_repo/releases/download/$tag/Memoix.dmg';
-      
       // Download the DMG
       final response = await http.get(Uri.parse(dmgUrl)).timeout(const Duration(minutes: 5));
       if (response.statusCode != 200) {
@@ -245,27 +232,34 @@ class UpdateService {
   /// Install update on Linux
   Future<bool> _installLinuxUpdate(String releaseUrl) async {
     try {
-      final tagMatch = RegExp(r'/tag/([^/]+)$').firstMatch(releaseUrl);
-      if (tagMatch == null) return false;
-
-      final tag = tagMatch.group(1)!;
+      // NOTE: For Linux, the "downloadUrl" passed in might be just the release page
+      // if checkUpdate() didn't find a specific asset. 
+      // Ideally, checkUpdate should be smart enough to pass the .deb/.rpm url.
       
-      // Try to detect distro and download appropriate package
-      final distroFile = File('/etc/os-release');
-      String distro = 'generic';
+      // If the URL is just the release page (fallback), try to parse the tag again
+      String packageUrl = releaseUrl;
       
-      if (await distroFile.exists()) {
-        final content = await distroFile.readAsString();
-        if (content.contains('ubuntu') || content.contains('debian')) {
-          distro = 'deb';
-        } else if (content.contains('fedora') || content.contains('rhel') || content.contains('centos')) {
-          distro = 'rpm';
-        }
+      // Basic check if it's already a direct download link
+      if (!releaseUrl.endsWith('.deb') && !releaseUrl.endsWith('.rpm')) {
+         final tagMatch = RegExp(r'/tag/([^/]+)$').firstMatch(releaseUrl);
+         if (tagMatch != null) {
+            final tag = tagMatch.group(1)!;
+            
+            final distroFile = File('/etc/os-release');
+            String distro = 'generic';
+            if (await distroFile.exists()) {
+              final content = await distroFile.readAsString();
+              if (content.contains('ubuntu') || content.contains('debian')) {
+                distro = 'deb';
+              } else if (content.contains('fedora') || content.contains('rhel') || content.contains('centos')) {
+                distro = 'rpm';
+              }
+            }
+            // Construct likely URL (Caution: This assumes standard naming "memoix.deb")
+            // A safer bet is just opening the release page if not direct.
+            packageUrl = 'https://github.com/$_owner/$_repo/releases/download/$tag/memoix.${distro == 'deb' ? 'deb' : 'rpm'}';
+         }
       }
-
-      final packageUrl = distro == 'deb'
-          ? 'https://github.com/$_owner/$_repo/releases/download/$tag/memoix.deb'
-          : 'https://github.com/$_owner/$_repo/releases/download/$tag/memoix.rpm';
 
       // Download the package
       final response = await http.get(Uri.parse(packageUrl)).timeout(const Duration(minutes: 5));
@@ -276,15 +270,14 @@ class UpdateService {
 
       // Save package to temp directory
       final tempDir = await getTemporaryDirectory();
-      final packageFile = File('${tempDir.path}/memoix.${distro == 'deb' ? 'deb' : 'rpm'}');
+      final ext = packageUrl.endsWith('.rpm') ? 'rpm' : 'deb';
+      final packageFile = File('${tempDir.path}/memoix_update.$ext');
       await packageFile.writeAsBytes(response.bodyBytes);
 
       // Install using appropriate package manager with sudo
-      if (distro == 'deb') {
-        // For DEB: sudo apt install ./memoix.deb
+      if (ext == 'deb') {
         await Process.run('pkexec', ['apt', 'install', '-y', packageFile.path]);
       } else {
-        // For RPM: sudo dnf install ./memoix.rpm or sudo yum install ./memoix.rpm
         await Process.run('pkexec', ['dnf', 'install', '-y', packageFile.path]);
       }
 
