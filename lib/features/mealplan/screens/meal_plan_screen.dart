@@ -19,12 +19,14 @@ class _DraggableMealData {
   final DateTime sourceDate;
   final String sourceCourse;
   final String instanceId; // Unique ID for moving specific instances
+  final int index; // Kept for debugging/legacy compatibility, though logic uses instanceId
   final PlannedMeal meal;
 
   _DraggableMealData({
     required this.sourceDate,
     required this.sourceCourse,
     required this.instanceId,
+    required this.index,
     required this.meal,
   });
 }
@@ -506,6 +508,9 @@ class _DayCardState extends ConsumerState<DayCard> {
                                             return _buildPendingDeleteRow(theme, meal, instanceId);
                                           }
                                           
+                                          // Note: We access mealIndex here for the map, but logic uses instanceId
+                                          // To get index for compatibility if needed, we could use asMap()
+                                          // But buildDraggableRow handles data creation correctly now.
                                           return _buildDraggableMealRow(theme, meal, course, instanceId);
                                         }),
                                     ],
@@ -659,6 +664,7 @@ class _DayCardState extends ConsumerState<DayCard> {
         sourceDate: widget.date,
         sourceCourse: course,
         instanceId: instanceId, // Pass unique ID
+        index: 0, // Placeholder index, logic now uses instanceId
         meal: meal,
       ),
       delay: const Duration(milliseconds: 300), // Short hold to grab
