@@ -291,6 +291,424 @@ class _DayCardState extends ConsumerState<DayCard> {
 
   @override
   void deactivate() {
+    _hovered = false;
+    super.deactivate();
+  }
+
+  String _mealKey(String course, int index) {
+    final courseMeals = widget.plan?.getMeals(course) ?? [];
+    if (index >= courseMeals.length) return '${widget.date.toIso8601String()}_${course}_$index';
+    
+    final meal = courseMeals[index];
+    final recipeKey = meal.recipeId ?? meal.recipeName ?? 'unknown';
+    return '${widget.date.toIso8601String()}_${course}_$recipeKey';
+  }
+
+  void _startDeleteTimer(String course, int index) {
+    final mealService = ref.read(mealPlanServiceProvider);
+    
+    final courseMeals = widget.plan?.getMeals(course) ?? [];
+    if (index >= courseMeals.length) return;
+    
+    final allMeals = widget.plan?.meals ?? [];
+    int actualIndex = -1;
+    int courseCount = 0;
+    for (int i = 0; i < allMeals.length; i++) {
+      if (allMeals[i].course == course) {
+        if (courseCount == index) {
+          actualIndex = i;
+          break;
+        }
+        courseCount++;
+      }
+    }
+    
+    if (actualIndex == -1) return;
+    
+    final key = _mealKey(course, index);
+    
+    mealService.scheduleMealDelete(
+      date: widget.date,
+      mealIndex: actualIndex,
+      key: key,
+      undoDuration: _undoDuration,
+      onComplete: () {
+        if (mounted) ref.invalidate(weeklyPlanProvider);
+      },
+    );
+    
+    setState(() {});
+  }
+
+  void _undoDelete(String course, int index) {
+    final key = _mealKey(course, index);
+    ref.read(mealPlanServiceProvider).cancelPendingDelete(key);
+    setState(() {});
+  }
+
+  bool _isPendingDelete(String course, int index) {
+    final key = _mealKey(course, index);
+    return ref.read(mealPlanServiceProvider).isPendingDelete(key);
+  }
+
+  Future<void> _handleDrop(_DraggableMealData data, String targetCourse) async {
+    // Prevent dropping on self
+    if (data.sourceDate == widget.date && data.sourceCourse == targetCourse) return;
+
+    final service = ref.read(mealPlanServiceProvider);
+    final sourcePlan = await service.getOrCreate(data.sourceDate);
+    
+    int actualIndex = -1;
+    int courseCount = 0;
+    
+    for (int i = 0; i < sourcePlan.meals.length; i++) {
+      if (sourcePlan.meals[i].course == data.sourceCourse) {
+        if (courseCount == data.index) {
+          actualIndex = i;
+          break;
+        }
+        courseCount++;
+      }
+    }
+
+    if (actualIndex != -1) {
+      await service.moveMeal(
+        data.sourceDate,
+        actualIndex,
+        widget.date,
+        targetCourse,
+      );
+      ref.invalidate(weeklyPlanProvider);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isToday = _isToday(widget.date);
+    final isHighlighted = widget.isSelected || isToday || _hovered;
+    final dayFormat = DateFormat('EEEE');
+
+    // 1. WRAP THE ENTIRE CARD IN A DRAG TARGET
+    // This allows dropping onto the card even when collapsed (or on empty space when expanded)
+    return DragTarget<_DraggableMealData>(
+      onWillAccept: (data) {
+        if (data == null) return false;
+        // Don't highlight if dragging over same day/same course
+        // (We default to source course, so if days match, it's a no-op)
+        if (data.sourceDate == widget.date) return false;
+        return true;
+      },
+      onAccept: (data) {
+        // "Smart Drop": If dropped on the card generally (not a specific section),
+        // preserve the original course time.
+        _handleDrop(data, data.sourceCourse);
+      },
+      builder: (context, candidateData, rejectedData) {
+        final isDragHovering = candidateData.isNotEmpty;
+        
+        // Calculate border color: Hover takes precedence, then selection/today
+        final borderColor = isDragHovering
+            ? theme.colorScheme.primary
+            : (isHighlighted ? theme.colorScheme.secondary : theme.colorScheme.outline.withOpacity(0.1));
+            
+        final borderWidth = (isHighlighted || isDragHovering) ? 1.5 : 1.0;
+        
+        // Visual feedback background when hovering over the collapsed card
+        final cardColor = isDragHovering
+            ? theme.colorScheme.primaryContainer.withOpacity(0.15)
+            : (widget.isSelected 
+                ? theme.colorScheme.secondary.withOpacity(0.08)
+                : theme.cardTheme.color ?? theme.colorScheme.surface);
+
+        return MouseRegion(
+          onEnter: (_) => setState(() => _hovered = true),
+          onExit: (_) => setState(() => _hovered = false),
+          child: Card(
+            elevation: 0,
+            margin: const EdgeInsets.symmetric(vertical: 4),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+              side: BorderSide(
+                color: borderColor,
+                width: borderWidth,
+              ),
+            ),
+            color: cardColor,
+            child: Theme(
+              data: theme.copyWith(dividerColor: Colors.transparent),
+              child: ExpansionTile(
+                initiallyExpanded: widget.isSelected || isToday,
+                onExpansionChanged: (_) => widget.onSelect(),
+                leading: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      widget.date.day.toString(),
+                      style: theme.textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: isToday ? theme.colorScheme.primary : null,
+                      ),
+                    ),
+                  ],
+                ),
+                title: Text(
+                  dayFormat.format(widget.date),
+                  style: TextStyle(
+                    fontWeight: widget.isSelected || isToday ? FontWeight.bold : FontWeight.normal,
+                  ),
+                ),
+                subtitle: Text(
+                  widget.plan != null && !widget.plan!.isEmpty
+                      ? '${widget.plan!.mealCount} meal${widget.plan!.mealCount == 1 ? '' : 's'} planned'
+                      : 'No meals planned',
+                  style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                ),
+                children: [
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Column(
+                      children: [
+                        // EMPTY STATE TEXT
+                        if (widget.plan == null || widget.plan!.isEmpty)
+                          Padding(
+                            padding: const EdgeInsets.all(24),
+                            child: Text(
+                              'Tap + to add a meal\nOr drop a meal here',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                            ),
+                          )
+                        else
+                          // 2. MEAL LIST WITH INNER TARGETS
+                          // These targets sit "on top" of the card target.
+                          // If you drag over a section, these fire instead of the card target.
+                          ...MealCourse.all.map((course) {
+                            final meals = widget.plan!.getMeals(course);
+                            
+                            return DragTarget<_DraggableMealData>(
+                              onWillAccept: (data) => true,
+                              onAccept: (data) => _handleDrop(data, course),
+                              builder: (context, innerCandidates, innerRejects) {
+                                final isHoveringSection = innerCandidates.isNotEmpty;
+                                
+                                // Hide empty sections UNLESS we are hovering over them directly
+                                if (meals.isEmpty && !isHoveringSection) {
+                                  return const SizedBox.shrink();
+                                }
+
+                                return Container(
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: isHoveringSection 
+                                        ? theme.colorScheme.primaryContainer.withOpacity(0.5) 
+                                        : null,
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: isHoveringSection 
+                                        ? Border.all(color: theme.colorScheme.primary, width: 1.5)
+                                        : null,
+                                  ),
+                                  margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      // Section Header
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                                        child: Row(
+                                          children: [
+                                            Text(
+                                              MealCourse.displayName(course),
+                                              style: theme.textTheme.labelMedium?.copyWith(
+                                                color: theme.colorScheme.onSurfaceVariant,
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                            ),
+                                            const SizedBox(width: 8),
+                                            _MealCourseNutritionChip(meals: meals),
+                                          ],
+                                        ),
+                                      ),
+                                      
+                                      // Meal Rows
+                                      if (meals.isEmpty)
+                                        // Invisible placeholder to give drop target height
+                                        const SizedBox(height: 24)
+                                      else
+                                        ...meals.asMap().entries.map((entry) {
+                                          final mealIndex = entry.key;
+                                          final meal = entry.value;
+                                          
+                                          if (_isPendingDelete(course, mealIndex)) {
+                                            return _buildPendingDeleteRow(theme, meal, course, mealIndex);
+                                          }
+                                          
+                                          return _buildDraggableMealRow(theme, meal, course, mealIndex);
+                                        }),
+                                    ],
+                                  ),
+                                );
+                              },
+                            );
+                          }),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildPendingDeleteRow(ThemeData theme, PlannedMeal meal, String course, int mealIndex) {
+    return Container(
+      height: 56,
+      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Row(
+        children: [
+          const SizedBox(width: 16),
+          Icon(Icons.delete_outline, color: theme.colorScheme.onSurfaceVariant, size: 20),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              '${meal.recipeName ?? "Meal"} removed',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+          TextButton(
+            onPressed: () => _undoDelete(course, mealIndex),
+            child: Text(
+              'UNDO',
+              style: TextStyle(
+                color: theme.colorScheme.primary,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildDraggableMealRow(ThemeData theme, PlannedMeal meal, String course, int mealIndex) {
+    final content = ListTile(
+      dense: true,
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      title: Text(
+        meal.recipeName ?? 'Unknown',
+        style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w500),
+      ),
+      subtitle: Padding(
+        padding: const EdgeInsets.only(top: 4),
+        child: Row(
+          children: [
+            if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
+              Text(
+                '\u2022',
+                style: TextStyle(
+                  color: MemoixColors.forContinentDot(meal.cuisine),
+                  fontSize: 14,
+                ),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                Cuisine.toAdjective(meal.cuisine),
+                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+              ),
+              const SizedBox(width: 8),
+            ],
+            if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) ...[
+              Text(
+                _capitalizeFirst(meal.recipeCategory!),
+                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+              ),
+            ],
+          ],
+        ),
+      ),
+      trailing: PopupMenuButton<String>(
+        icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
+        onSelected: (action) async {
+          if (action == 'remove') _startDeleteTimer(course, mealIndex);
+          if (action == 'view' && meal.recipeId != null) AppRoutes.toRecipeDetail(context, meal.recipeId!);
+        },
+        itemBuilder: (context) => [
+          const PopupMenuItem(value: 'view', child: Row(children: [Icon(Icons.visibility), SizedBox(width: 8), Text('View Recipe')])),
+          const PopupMenuItem(value: 'remove', child: Row(children: [Icon(Icons.delete, color: Color(0xFFA88FA8)), SizedBox(width: 8), Text('Remove', style: TextStyle(color: Color(0xFFA88FA8)))])),
+        ],
+      ),
+      onTap: () {
+        if (meal.recipeId != null) AppRoutes.toRecipeDetail(context, meal.recipeId!);
+      },
+    );
+
+    return LongPressDraggable<_DraggableMealData>(
+      data: _DraggableMealData(
+        sourceDate: widget.date,
+        sourceCourse: course,
+        index: mealIndex,
+        meal: meal,
+      ),
+      delay: const Duration(milliseconds: 300),
+      feedback: Material(
+        elevation: 4,
+        borderRadius: BorderRadius.circular(8),
+        color: theme.cardTheme.color ?? theme.colorScheme.surface,
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width * 0.8,
+          child: content,
+        ),
+      ),
+      childWhenDragging: Opacity(
+        opacity: 0.3,
+        child: content,
+      ),
+      child: Dismissible(
+        key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}_$mealIndex'),
+        background: Container(
+          color: theme.colorScheme.secondary.withOpacity(0.2),
+          alignment: Alignment.centerRight,
+          padding: const EdgeInsets.only(right: 16),
+          child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+        ),
+        direction: DismissDirection.endToStart,
+        confirmDismiss: (_) async {
+          _startDeleteTimer(course, mealIndex);
+          return false;
+        },
+        child: content,
+      ),
+    );
+  }
+
+  bool _isToday(DateTime date) {
+    final now = DateTime.now();
+    return date.year == now.year && date.month == now.month && date.day == now.day;
+  }
+
+  String _capitalizeFirst(String s) {
+    if (s.isEmpty) return s;
+    return s[0].toUpperCase() + s.substring(1);
+  }
+}
+
+class _DayCardState extends ConsumerState<DayCard> {
+  bool _hovered = false;
+  static const _undoDuration = Duration(seconds: 4);
+
+  @override
+  void deactivate() {
     // Reset hover state when navigating away
     _hovered = false;
     super.deactivate();
