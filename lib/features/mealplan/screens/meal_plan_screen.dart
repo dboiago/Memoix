@@ -362,7 +362,9 @@ class _DayCardState extends ConsumerState<DayCard> {
 
   // Handle Drop Logic
   Future<void> _handleDrop(_DraggableMealData data, String targetCourse) async {
-    // Prevent dropping on self
+    // Prevent dropping on self (same day, same course)
+    // Note: We allow dropping on same day if moving to different course,
+    // OR same course if moving to different day.
     if (data.sourceDate == widget.date && data.sourceCourse == targetCourse) return;
 
     final service = ref.read(mealPlanServiceProvider);
@@ -402,6 +404,11 @@ class _DayCardState extends ConsumerState<DayCard> {
     final isHighlighted = widget.isSelected || isToday || _hovered;
     final dayFormat = DateFormat('EEEE');
 
+    // Calculate drag target border color (visual feedback)
+    final borderColor = isHighlighted
+        ? theme.colorScheme.secondary
+        : theme.colorScheme.outline.withOpacity(0.1);
+
     return MouseRegion(
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
@@ -411,9 +418,7 @@ class _DayCardState extends ConsumerState<DayCard> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
           side: BorderSide(
-            color: isHighlighted
-                ? theme.colorScheme.secondary
-                : theme.colorScheme.outline.withOpacity(0.1),
+            color: borderColor,
             width: isHighlighted ? 1.5 : 1.0,
           ),
         ),
@@ -455,93 +460,124 @@ class _DayCardState extends ConsumerState<DayCard> {
               ),
             ),
             children: [
-              if (widget.plan == null || widget.plan!.isEmpty)
-                // When empty, allow dropping anywhere on the "Empty" text area to add to Dinner default
-                DragTarget<_DraggableMealData>(
-                  onWillAccept: (data) => true,
-                  onAccept: (data) => _handleDrop(data, MealCourse.dinner),
-                  builder: (context, candidateData, rejectedData) {
-                    final isHovering = candidateData.isNotEmpty;
-                    return Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(16),
-                      color: isHovering ? theme.colorScheme.primaryContainer.withOpacity(0.3) : null,
-                      child: const Text('Tap + to add a meal, or drag a meal here'),
-                    );
-                  },
-                )
-              else
-                ...MealCourse.all.map((course) {
-                  final meals = widget.plan!.getMeals(course);
+              // OUTER DRAG TARGET (Catch-All for "Smart Drop")
+              // If you drop here (on empty day or whitespace), it preserves the SOURCE COURSE.
+              DragTarget<_DraggableMealData>(
+                onWillAccept: (data) {
+                  // Basic validation
+                  if (data == null) return false;
+                  // Allow dropping on same day if it missed inner targets (no-op, but prevents snapback confusion)
+                  // Or prevent same-day same-course drops in handleDrop
+                  return true;
+                },
+                onAccept: (data) {
+                  // Fallback: Drop on the "Day" generally -> Keep original course (Smart Drop)
+                  _handleDrop(data, data.sourceCourse);
+                },
+                builder: (context, candidateData, rejectedData) {
+                  final isHoveringCard = candidateData.isNotEmpty;
                   
-                  // Wrap the entire Course Section in a DragTarget
-                  return DragTarget<_DraggableMealData>(
-                    onWillAccept: (data) {
-                      // Don't highlight if dragging over self
-                      if (data == null) return false;
-                      if (data.sourceDate == widget.date && data.sourceCourse == course) return false;
-                      return true;
-                    },
-                    onAccept: (data) => _handleDrop(data, course),
-                    builder: (context, candidateData, rejectedData) {
-                      final isHovering = candidateData.isNotEmpty;
-                      
-                      // If empty and not hovering, don't show the section header to keep UI clean
-                      // Unless we want to allow dropping into empty sections? 
-                      // Let's show empty sections if dragging over them, or if they have meals.
-                      if (meals.isEmpty && !isHovering) return const SizedBox.shrink();
-
-                      return Container(
-                        decoration: BoxDecoration(
-                          color: isHovering 
-                              ? theme.colorScheme.primaryContainer.withOpacity(0.3) 
-                              : null,
-                          borderRadius: BorderRadius.circular(8),
-                          border: isHovering 
-                              ? Border.all(color: theme.colorScheme.primary, width: 1)
-                              : null,
-                        ),
-                        margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-                              child: Row(
-                                children: [
-                                  Text(
-                                    MealCourse.displayName(course),
-                                    style: theme.textTheme.labelMedium?.copyWith(
-                                      color: theme.colorScheme.onSurfaceVariant,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                  const SizedBox(width: 8),
-                                  // Nutrition summary for this meal course
-                                  _MealCourseNutritionChip(meals: meals),
-                                ],
-                              ),
+                  return Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: isHoveringCard 
+                          ? theme.colorScheme.primaryContainer.withOpacity(0.2) 
+                          : null,
+                      borderRadius: const BorderRadius.vertical(bottom: Radius.circular(12)),
+                    ),
+                    child: Column(
+                      children: [
+                        // EMPTY STATE
+                        if (widget.plan == null || widget.plan!.isEmpty)
+                          Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Text(
+                              'Tap + to add a meal',
+                              style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                             ),
-                            if (meals.isEmpty)
-                              // Placeholder height for drop target when empty
-                              const SizedBox(height: 24)
-                            else
-                              ...meals.asMap().entries.map((entry) {
-                                final mealIndex = entry.key;
-                                final meal = entry.value;
+                          )
+                        else
+                          // MEAL LIST
+                          ...MealCourse.all.map((course) {
+                            final meals = widget.plan!.getMeals(course);
+                            
+                            // INNER DRAG TARGET (Specific Section)
+                            // This catches drops specifically on "Dinner", "Lunch", etc.
+                            // If dropped here, we force the course to THIS section.
+                            return DragTarget<_DraggableMealData>(
+                              onWillAccept: (data) => true, // Accept any meal
+                              onAccept: (data) => _handleDrop(data, course),
+                              builder: (context, innerCandidates, innerRejects) {
+                                final isHoveringSection = innerCandidates.isNotEmpty;
                                 
-                                if (_isPendingDelete(course, mealIndex)) {
-                                  return _buildPendingDeleteRow(theme, meal, course, mealIndex);
+                                // Hide empty sections UNLESS we are hovering over them directly
+                                // (This keeps UI clean but allows precise dropping if user finds the area)
+                                if (meals.isEmpty && !isHoveringSection) {
+                                  return const SizedBox.shrink();
                                 }
-                                
-                                return _buildDraggableMealRow(theme, meal, course, mealIndex);
-                              }),
-                          ],
-                        ),
-                      );
-                    },
+
+                                return Container(
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: isHoveringSection 
+                                        ? theme.colorScheme.primaryContainer.withOpacity(0.5) 
+                                        : null,
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: isHoveringSection 
+                                        ? Border.all(color: theme.colorScheme.primary, width: 1.5)
+                                        : null,
+                                  ),
+                                  margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      // Section Header
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                                        child: Row(
+                                          children: [
+                                            Text(
+                                              MealCourse.displayName(course),
+                                              style: theme.textTheme.labelMedium?.copyWith(
+                                                color: theme.colorScheme.onSurfaceVariant,
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                            ),
+                                            const SizedBox(width: 8),
+                                            _MealCourseNutritionChip(meals: meals),
+                                          ],
+                                        ),
+                                      ),
+                                      
+                                      // Meal Rows (Placeholder or List)
+                                      if (meals.isEmpty)
+                                        // Invisible placeholder to giving the drop target some height
+                                        const SizedBox(height: 24)
+                                      else
+                                        ...meals.asMap().entries.map((entry) {
+                                          final mealIndex = entry.key;
+                                          final meal = entry.value;
+                                          
+                                          if (_isPendingDelete(course, mealIndex)) {
+                                            return _buildPendingDeleteRow(theme, meal, course, mealIndex);
+                                          }
+                                          
+                                          return _buildDraggableMealRow(theme, meal, course, mealIndex);
+                                        }),
+                                    ],
+                                  ),
+                                );
+                              },
+                            );
+                          }),
+                          
+                          // Bottom spacing to ensure drop target extends to bottom of card
+                          const SizedBox(height: 12),
+                      ],
+                    ),
                   );
-                }),
+                },
+              ),
             ],
           ),
         ),
@@ -560,11 +596,7 @@ class _DayCardState extends ConsumerState<DayCard> {
       child: Row(
         children: [
           const SizedBox(width: 16),
-          Icon(
-            Icons.delete_outline,
-            color: theme.colorScheme.onSurfaceVariant,
-            size: 20,
-          ),
+          Icon(Icons.delete_outline, color: theme.colorScheme.onSurfaceVariant, size: 20),
           const SizedBox(width: 12),
           Expanded(
             child: Text(
@@ -597,15 +629,12 @@ class _DayCardState extends ConsumerState<DayCard> {
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       title: Text(
         meal.recipeName ?? 'Unknown',
-        style: theme.textTheme.bodyLarge?.copyWith(
-          fontWeight: FontWeight.w500,
-        ),
+        style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w500),
       ),
       subtitle: Padding(
         padding: const EdgeInsets.only(top: 4),
         child: Row(
           children: [
-            // Cuisine with continent-colored dot
             if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
               Text(
                 '\u2022',
@@ -617,19 +646,14 @@ class _DayCardState extends ConsumerState<DayCard> {
               const SizedBox(width: 4),
               Text(
                 Cuisine.toAdjective(meal.cuisine),
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
+                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
               ),
               const SizedBox(width: 8),
             ],
-            // Category (Apps, Mains, Drinks, etc.)
             if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) ...[
               Text(
                 _capitalizeFirst(meal.recipeCategory!),
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
+                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
               ),
             ],
           ],
@@ -638,41 +662,16 @@ class _DayCardState extends ConsumerState<DayCard> {
       trailing: PopupMenuButton<String>(
         icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
         onSelected: (action) async {
-          if (action == 'remove') {
-            _startDeleteTimer(course, mealIndex);
-          } else if (action == 'view') {
-            if (meal.recipeId != null) {
-              AppRoutes.toRecipeDetail(context, meal.recipeId!);
-            }
-          }
+          if (action == 'remove') _startDeleteTimer(course, mealIndex);
+          if (action == 'view' && meal.recipeId != null) AppRoutes.toRecipeDetail(context, meal.recipeId!);
         },
         itemBuilder: (context) => [
-          const PopupMenuItem(
-            value: 'view',
-            child: Row(
-              children: [
-                Icon(Icons.visibility),
-                SizedBox(width: 8),
-                Text('View Recipe'),
-              ],
-            ),
-          ),
-          const PopupMenuItem(
-            value: 'remove',
-            child: Row(
-              children: [
-                Icon(Icons.delete, color: Color(0xFFA88FA8)),
-                SizedBox(width: 8),
-                Text('Remove', style: TextStyle(color: Color(0xFFA88FA8))),
-              ],
-            ),
-          ),
+          const PopupMenuItem(value: 'view', child: Row(children: [Icon(Icons.visibility), SizedBox(width: 8), Text('View Recipe')])),
+          const PopupMenuItem(value: 'remove', child: Row(children: [Icon(Icons.delete, color: Color(0xFFA88FA8)), SizedBox(width: 8), Text('Remove', style: TextStyle(color: Color(0xFFA88FA8)))])),
         ],
       ),
       onTap: () {
-        if (meal.recipeId != null) {
-          AppRoutes.toRecipeDetail(context, meal.recipeId!);
-        }
+        if (meal.recipeId != null) AppRoutes.toRecipeDetail(context, meal.recipeId!);
       },
     );
 
@@ -707,7 +706,7 @@ class _DayCardState extends ConsumerState<DayCard> {
           child: Icon(Icons.delete, color: theme.colorScheme.secondary),
         ),
         direction: DismissDirection.endToStart,
-        confirmDismiss: (direction) async {
+        confirmDismiss: (_) async {
           _startDeleteTimer(course, mealIndex);
           return false;
         },
@@ -718,9 +717,7 @@ class _DayCardState extends ConsumerState<DayCard> {
 
   bool _isToday(DateTime date) {
     final now = DateTime.now();
-    return date.year == now.year &&
-        date.month == now.month &&
-        date.day == now.day;
+    return date.year == now.year && date.month == now.month && date.day == now.day;
   }
 
   String _capitalizeFirst(String s) {
@@ -766,7 +763,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     setState(() => _suggestions = results.take(3).toList());
   }
 
-  /// Add recipe to meal plan without closing the sheet
   Future<void> _addRecipeToMealPlan(Recipe recipe, {ScaffoldMessengerState? messenger}) async {
     await ref.read(mealPlanServiceProvider).addMeal(
       _selectedDate,
@@ -830,10 +826,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                Text(
-                  'Add to Meal Plan',
-                  style: theme.textTheme.titleLarge,
-                ),
+                Text('Add to Meal Plan', style: theme.textTheme.titleLarge),
                 const SizedBox(height: 16),
                 ListTile(
                   leading: const Icon(Icons.calendar_today),
@@ -858,14 +851,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                     children: MealCourse.all.map((course) {
                       final isSelected = _selectedCourse == course;
                       return ChoiceChip(
-                        label: Text(
-                          '${MealCourse.emoji(course)} ${MealCourse.displayName(course)}',
-                        ),
+                        label: Text('${MealCourse.emoji(course)} ${MealCourse.displayName(course)}'),
                         selected: isSelected,
                         onSelected: (selected) {
-                          if (selected) {
-                            setState(() => _selectedCourse = course);
-                          }
+                          if (selected) setState(() => _selectedCourse = course);
                         },
                       );
                     }).toList(),
@@ -875,10 +864,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                 const Divider(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Text(
-                    'Select a Recipe',
-                    style: theme.textTheme.titleMedium,
-                  ),
+                  child: Text('Select a Recipe', style: theme.textTheme.titleMedium),
                 ),
                 const SizedBox(height: 8),
                 Padding(
@@ -903,10 +889,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                           if (_suggestions.isNotEmpty) ...[
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                              child: Text(
-                                'Search Results',
-                                style: theme.textTheme.labelLarge,
-                              ),
+                              child: Text('Search Results', style: theme.textTheme.labelLarge),
                             ),
                             ..._suggestions.map((r) => ListTile(
                               leading: CircleAvatar(
@@ -925,10 +908,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                           ],
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            child: Text(
-                              'Favourites',
-                              style: theme.textTheme.labelLarge,
-                            ),
+                            child: Text('Favourites', style: theme.textTheme.labelLarge),
                           ),
                           favouritesAsync.when(
                             loading: () => const Padding(
