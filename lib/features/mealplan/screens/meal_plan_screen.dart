@@ -18,13 +18,13 @@ import '../../shopping/screens/shopping_list_screen.dart';
 class _DraggableMealData {
   final DateTime sourceDate;
   final String sourceCourse;
-  final int index;
+  final String instanceId; // Unique ID for moving specific instances
   final PlannedMeal meal;
 
   _DraggableMealData({
     required this.sourceDate,
     required this.sourceCourse,
-    required this.index,
+    required this.instanceId,
     required this.meal,
   });
 }
@@ -296,52 +296,16 @@ class _DayCardState extends ConsumerState<DayCard> {
     super.deactivate();
   }
 
-  /// Generate a unique key for a meal delete operation
-  String _mealKey(String course, int index) {
-    final courseMeals = widget.plan?.getMeals(course) ?? [];
-    if (index >= courseMeals.length) return '${widget.date.toIso8601String()}_${course}_$index';
-    
-    final meal = courseMeals[index];
-    // Create a stable key using meal properties (not index)
-    final recipeKey = meal.recipeId ?? meal.recipeName ?? 'unknown';
-    return '${widget.date.toIso8601String()}_${course}_$recipeKey';
-  }
-
-  void _startDeleteTimer(String course, int index) {
+  void _startDeleteTimer(String instanceId) {
     final mealService = ref.read(mealPlanServiceProvider);
     
-    // Find the actual meal index in the full meals array
-    final courseMeals = widget.plan?.getMeals(course) ?? [];
-    if (index >= courseMeals.length) return;
-    
-    final allMeals = widget.plan?.meals ?? [];
-    int actualIndex = -1;
-    int courseCount = 0;
-    for (int i = 0; i < allMeals.length; i++) {
-      if (allMeals[i].course == course) {
-        if (courseCount == index) {
-          actualIndex = i;
-          break;
-        }
-        courseCount++;
-      }
-    }
-    
-    if (actualIndex == -1) return;
-    
-    final key = _mealKey(course, index);
-    
-    // Schedule delete at service level (persists across widget rebuilds)
+    // Schedule delete using unique ID
     mealService.scheduleMealDelete(
       date: widget.date,
-      mealIndex: actualIndex,
-      key: key,
+      instanceId: instanceId,
       undoDuration: _undoDuration,
       onComplete: () {
-        // Refresh the UI after delete completes (only if still mounted)
-        if (mounted) {
-          ref.invalidate(weeklyPlanProvider);
-        }
+        if (mounted) ref.invalidate(weeklyPlanProvider);
       },
     );
     
@@ -349,50 +313,31 @@ class _DayCardState extends ConsumerState<DayCard> {
     setState(() {});
   }
 
-  void _undoDelete(String course, int index) {
-    final key = _mealKey(course, index);
-    ref.read(mealPlanServiceProvider).cancelPendingDelete(key);
+  void _undoDelete(String instanceId) {
+    ref.read(mealPlanServiceProvider).cancelPendingDelete(instanceId);
     setState(() {});
   }
 
-  bool _isPendingDelete(String course, int index) {
-    final key = _mealKey(course, index);
-    return ref.read(mealPlanServiceProvider).isPendingDelete(key);
+  bool _isPendingDelete(String instanceId) {
+    return ref.read(mealPlanServiceProvider).isPendingDelete(instanceId);
   }
 
-  // Handle Drop Logic
   Future<void> _handleDrop(_DraggableMealData data, String targetCourse) async {
-    // Prevent dropping on self
+    // Prevent dropping on self (same day, same course)
     if (data.sourceDate == widget.date && data.sourceCourse == targetCourse) return;
 
     final service = ref.read(mealPlanServiceProvider);
     
-    // Find the ACTUAL index in the source plan's full list
-    final sourcePlan = await service.getOrCreate(data.sourceDate);
-    int actualIndex = -1;
-    int courseCount = 0;
+    // Move using Instance ID to avoid duplicates or index errors
+    await service.moveMeal(
+      data.sourceDate,
+      data.instanceId,
+      widget.date,
+      targetCourse,
+    );
     
-    // Logic to map the relative course index back to the absolute storage index
-    for (int i = 0; i < sourcePlan.meals.length; i++) {
-      if (sourcePlan.meals[i].course == data.sourceCourse) {
-        if (courseCount == data.index) {
-          actualIndex = i;
-          break;
-        }
-        courseCount++;
-      }
-    }
-
-    if (actualIndex != -1) {
-      await service.moveMeal(
-        data.sourceDate,
-        actualIndex,
-        widget.date,
-        targetCourse,
-      );
-      // Force refresh of the UI
-      ref.invalidate(weeklyPlanProvider);
-    }
+    // Force refresh of the UI
+    ref.invalidate(weeklyPlanProvider);
   }
 
   @override
@@ -408,7 +353,7 @@ class _DayCardState extends ConsumerState<DayCard> {
     return DragTarget<_DraggableMealData>(
       onWillAccept: (data) {
         if (data == null) return false;
-        // Don't highlight if dropping on same day
+        // Don't highlight if dragging over same day
         if (data.sourceDate == widget.date) return false;
         return true;
       },
@@ -553,15 +498,15 @@ class _DayCardState extends ConsumerState<DayCard> {
                                         // Invisible placeholder to give drop target height
                                         const SizedBox(height: 24)
                                       else
-                                        ...meals.asMap().entries.map((entry) {
-                                          final mealIndex = entry.key;
-                                          final meal = entry.value;
+                                        ...meals.map((meal) {
+                                          // Safety: Ensure instanceId exists, or fallback to name if migration incomplete
+                                          final instanceId = meal.instanceId ?? meal.recipeName ?? 'unknown';
                                           
-                                          if (_isPendingDelete(course, mealIndex)) {
-                                            return _buildPendingDeleteRow(theme, meal, course, mealIndex);
+                                          if (_isPendingDelete(instanceId)) {
+                                            return _buildPendingDeleteRow(theme, meal, instanceId);
                                           }
                                           
-                                          return _buildDraggableMealRow(theme, meal, course, mealIndex);
+                                          return _buildDraggableMealRow(theme, meal, course, instanceId);
                                         }),
                                     ],
                                   ),
@@ -581,7 +526,7 @@ class _DayCardState extends ConsumerState<DayCard> {
     );
   }
 
-  Widget _buildPendingDeleteRow(ThemeData theme, PlannedMeal meal, String course, int mealIndex) {
+  Widget _buildPendingDeleteRow(ThemeData theme, PlannedMeal meal, String instanceId) {
     return Container(
       height: 56,
       margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -607,7 +552,7 @@ class _DayCardState extends ConsumerState<DayCard> {
             ),
           ),
           TextButton(
-            onPressed: () => _undoDelete(course, mealIndex),
+            onPressed: () => _undoDelete(instanceId),
             child: Text(
               'UNDO',
               style: TextStyle(
@@ -622,7 +567,7 @@ class _DayCardState extends ConsumerState<DayCard> {
     );
   }
 
-  Widget _buildDraggableMealRow(ThemeData theme, PlannedMeal meal, String course, int mealIndex) {
+  Widget _buildDraggableMealRow(ThemeData theme, PlannedMeal meal, String course, String instanceId) {
     // Create the content widget once to reuse for draggable feedback
     final content = ListTile(
       dense: true,
@@ -671,7 +616,7 @@ class _DayCardState extends ConsumerState<DayCard> {
         icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
         onSelected: (action) async {
           if (action == 'remove') {
-            _startDeleteTimer(course, mealIndex);
+            _startDeleteTimer(instanceId);
           } else if (action == 'view') {
             if (meal.recipeId != null) {
               AppRoutes.toRecipeDetail(context, meal.recipeId!);
@@ -713,7 +658,8 @@ class _DayCardState extends ConsumerState<DayCard> {
       data: _DraggableMealData(
         sourceDate: widget.date,
         sourceCourse: course,
-        index: mealIndex,
+        index: 0, // Not needed anymore thanks to unique IDs
+        instanceId: instanceId, // Pass the ID
         meal: meal,
       ),
       delay: const Duration(milliseconds: 300), // Short hold to grab
@@ -731,7 +677,7 @@ class _DayCardState extends ConsumerState<DayCard> {
         child: content,
       ),
       child: Dismissible(
-        key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}_$mealIndex'),
+        key: Key('${widget.date.toIso8601String()}_${course}_$instanceId'),
         background: Container(
           color: theme.colorScheme.secondary.withOpacity(0.2),
           alignment: Alignment.centerRight,
@@ -739,8 +685,8 @@ class _DayCardState extends ConsumerState<DayCard> {
           child: Icon(Icons.delete, color: theme.colorScheme.secondary),
         ),
         direction: DismissDirection.endToStart,
-        confirmDismiss: (_) async {
-          _startDeleteTimer(course, mealIndex);
+        confirmDismiss: (direction) async {
+          _startDeleteTimer(instanceId);
           return false;
         },
         child: content,
@@ -861,7 +807,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                Text('Add to Meal Plan', style: theme.textTheme.titleLarge),
+                Text(
+                  'Add to Meal Plan',
+                  style: theme.textTheme.titleLarge,
+                ),
                 const SizedBox(height: 16),
                 ListTile(
                   leading: const Icon(Icons.calendar_today),
@@ -886,10 +835,14 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                     children: MealCourse.all.map((course) {
                       final isSelected = _selectedCourse == course;
                       return ChoiceChip(
-                        label: Text('${MealCourse.emoji(course)} ${MealCourse.displayName(course)}'),
+                        label: Text(
+                          '${MealCourse.emoji(course)} ${MealCourse.displayName(course)}',
+                        ),
                         selected: isSelected,
                         onSelected: (selected) {
-                          if (selected) setState(() => _selectedCourse = course);
+                          if (selected) {
+                            setState(() => _selectedCourse = course);
+                          }
                         },
                       );
                     }).toList(),
@@ -899,7 +852,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                 const Divider(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Text('Select a Recipe', style: theme.textTheme.titleMedium),
+                  child: Text(
+                    'Select a Recipe',
+                    style: theme.textTheme.titleMedium,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 Padding(
@@ -924,7 +880,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                           if (_suggestions.isNotEmpty) ...[
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                              child: Text('Search Results', style: theme.textTheme.labelLarge),
+                              child: Text(
+                                'Search Results',
+                                style: theme.textTheme.labelLarge,
+                              ),
                             ),
                             ..._suggestions.map((r) => ListTile(
                               leading: CircleAvatar(
@@ -943,7 +902,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                           ],
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            child: Text('Favourites', style: theme.textTheme.labelLarge),
+                            child: Text(
+                              'Favourites',
+                              style: theme.textTheme.labelLarge,
+                            ),
                           ),
                           favouritesAsync.when(
                             loading: () => const Padding(
