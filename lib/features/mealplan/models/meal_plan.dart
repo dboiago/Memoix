@@ -10,7 +10,7 @@ part 'meal_plan.g.dart';
 /// Helper class for pending delete data
 class _PendingDelete {
   final DateTime date;
-  final String instanceId; // Changed from index to unique ID
+  final String instanceId; // Target unique ID
   
   _PendingDelete({required this.date, required this.instanceId});
 }
@@ -21,11 +21,11 @@ class PlannedMeal {
   String? instanceId; // Unique ID for this specific meal instance
   String? recipeId;
   String? recipeName;
-  String? course; 
+  String? course; // breakfast, lunch, dinner, snack
   String? notes;
   int? servings;
-  String? cuisine; 
-  String? recipeCategory; 
+  String? cuisine; // e.g., "Korean", "Italian"
+  String? recipeCategory; // e.g., "mains", "soup"
 
   PlannedMeal();
 
@@ -47,7 +47,7 @@ class MealPlan {
   Id id = Isar.autoIncrement;
 
   @Index(unique: true)
-  late String date; 
+  late String date; // Format: 'yyyy-MM-dd'
 
   late List<PlannedMeal> meals;
 
@@ -73,7 +73,7 @@ class MealPlan {
 /// Weekly meal plan view model
 class WeeklyPlan {
   final DateTime weekStart;
-  final Map<String, MealPlan> dailyPlans; 
+  final Map<String, MealPlan> dailyPlans; // date string -> plan
 
   WeeklyPlan({
     required this.weekStart,
@@ -116,15 +116,22 @@ class MealCourse {
 
   static String displayName(String course) {
     switch (course) {
-      case breakfast: return 'Breakfast';
-      case lunch: return 'Lunch';
-      case dinner: return 'Dinner';
-      case snack: return 'Snack';
-      default: return course;
+      case breakfast:
+        return 'Breakfast';
+      case lunch:
+        return 'Lunch';
+      case dinner:
+        return 'Dinner';
+      case snack:
+        return 'Snack';
+      default:
+        return course;
     }
   }
 
-  static String emoji(String course) => '';
+  static String emoji(String course) {
+    return '';
+  }
 }
 
 /// Service for managing meal plans
@@ -155,7 +162,7 @@ class MealPlanService {
       await _db.writeTxn(() => _db.mealPlans.put(plan));
     }
   }
-
+  
   /// Schedule a meal for deletion with undo capability
   void scheduleMealDelete({
     required DateTime date,
@@ -166,10 +173,13 @@ class MealPlanService {
     // Key is simply the instanceId (it's unique globally)
     final key = instanceId;
     
+    // Cancel any existing pending delete for this key
     _pendingDeletes[key]?.cancel();
     
+    // Store the delete data
     _pendingDeleteData[key] = _PendingDelete(date: date, instanceId: instanceId);
     
+    // Start timer
     _pendingDeletes[key] = Timer(undoDuration, () async {
       final data = _pendingDeleteData.remove(key);
       _pendingDeletes.remove(key);
@@ -190,10 +200,12 @@ class MealPlanService {
   /// Check if a delete is pending for this ID
   bool isPendingDelete(String instanceId) => _pendingDeletes.containsKey(instanceId);
   
-  /// Execute all pending deletes immediately
+  /// Execute all pending deletes immediately (call on navigation away)
   Future<void> flushPendingDeletes() async {
     final entries = Map<String, _PendingDelete>.from(_pendingDeleteData);
-    for (final entry in _pendingDeletes.values) entry.cancel();
+    for (final entry in _pendingDeletes.values) {
+      entry.cancel();
+    }
     _pendingDeletes.clear();
     _pendingDeleteData.clear();
     
@@ -252,6 +264,8 @@ class MealPlanService {
     
     final originalCount = plan.meals.length;
     final meals = List<PlannedMeal>.from(plan.meals);
+    
+    // Explicit ID Match
     meals.removeWhere((m) => m.instanceId == instanceId);
     
     if (meals.length < originalCount) {
@@ -267,37 +281,52 @@ class MealPlanService {
     DateTime toDate,
     String newCourse,
   ) async {
+    // 1. Handle Same-Day vs Different-Day logic to avoid "Double Save" duplication
+    final isSameDay = fromDate.year == toDate.year && 
+                      fromDate.month == toDate.month && 
+                      fromDate.day == toDate.day;
+
     final fromPlan = await getOrCreate(fromDate);
-    
-    // Find the exact meal instance
+    // If same day, we reuse the object reference so changes to 'fromPlan' appear in 'toPlan'
+    final toPlan = isSameDay ? fromPlan : await getOrCreate(toDate);
+
+    // 2. Find the exact meal instance
     final mealIndex = fromPlan.meals.indexWhere((m) => m.instanceId == instanceId);
     if (mealIndex == -1) return;
 
     final meal = fromPlan.meals[mealIndex];
     
-    // Remove from original date
+    // 3. Remove from Source
     final fromMeals = List<PlannedMeal>.from(fromPlan.meals);
     fromMeals.removeAt(mealIndex);
     fromPlan.meals = fromMeals;
 
-    // Add to new date (with same Instance ID to track identity, or new one? 
-    // New ID is safer to prevent key collisions if dragging rapidly)
-    final toPlan = await getOrCreate(toDate);
+    // 4. Create Moved Meal (Preserve ID to keep identity)
     final movedMeal = PlannedMeal.create(
       recipeId: meal.recipeId,
       recipeName: meal.recipeName,
       course: newCourse,
       servings: meal.servings,
       notes: meal.notes,
+      // FIX: Copy metadata explicitly
       cuisine: meal.cuisine,
       recipeCategory: meal.recipeCategory,
-      instanceId: meal.instanceId, // Preserve ID if possible, or generate new
+      instanceId: meal.instanceId, 
     );
-    toPlan.meals = [...toPlan.meals, movedMeal];
 
+    // 5. Add to Target
+    // If same day, 'toPlan' is 'fromPlan', so 'toPlan.meals' is already updated with removal
+    final toMeals = isSameDay ? fromMeals : List<PlannedMeal>.from(toPlan.meals);
+    toPlan.meals = [...toMeals, movedMeal];
+
+    // 6. Save
     await _db.writeTxn(() async {
-      await _db.mealPlans.put(fromPlan);
-      await _db.mealPlans.put(toPlan);
+      if (isSameDay) {
+        await _db.mealPlans.put(fromPlan);
+      } else {
+        await _db.mealPlans.put(fromPlan);
+        await _db.mealPlans.put(toPlan);
+      }
     });
   }
 
@@ -311,7 +340,6 @@ class MealPlanService {
       final dateStr = _formatDate(date);
       final plan = await _db.mealPlans.where().dateEqualTo(dateStr).findFirst();
       if (plan != null) {
-        // Ensure IDs exist
         await _ensureInstanceIds(plan);
         plans[dateStr] = plan;
       }
@@ -320,12 +348,21 @@ class MealPlanService {
     return WeeklyPlan(weekStart: monday, dailyPlans: plans);
   }
 
+  /// Watch plans for a date range
   Stream<List<MealPlan>> watchDateRange(DateTime start, DateTime end) {
     final startStr = _formatDate(start);
     final endStr = _formatDate(end);
-    return _db.mealPlans.where().filter().dateGreaterThan(startStr).and().dateLessThan(endStr).watch(fireImmediately: true);
+    
+    return _db.mealPlans
+        .where()
+        .filter()
+        .dateGreaterThan(startStr)
+        .and()
+        .dateLessThan(endStr)
+        .watch(fireImmediately: true);
   }
 
+  /// Clear all meals for a date
   Future<void> clearDay(DateTime date) async {
     final dateStr = _formatDate(date);
     final plan = await _db.mealPlans.where().dateEqualTo(dateStr).findFirst();
@@ -335,6 +372,7 @@ class MealPlanService {
     }
   }
 
+  /// Copy a day's meals to another day
   Future<void> copyDay(DateTime from, DateTime to) async {
     final fromPlan = await getOrCreate(from);
     final toPlan = await getOrCreate(to);
@@ -360,6 +398,9 @@ class MealPlanService {
 }
 
 // Riverpod providers
+
+// Use central provider from core/providers.dart
+
 final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, weekStart) async {
   final service = ref.watch(mealPlanServiceProvider);
   return service.getWeek(weekStart);
@@ -367,5 +408,6 @@ final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, wee
 
 final selectedWeekProvider = StateProvider<DateTime>((ref) {
   final now = DateTime.now();
+  // Start of current week (Monday)
   return now.subtract(Duration(days: now.weekday - 1));
 });
