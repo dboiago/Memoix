@@ -14,6 +14,21 @@ import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
 
+/// Data passed during drag operation
+class _DraggableMealData {
+  final DateTime sourceDate;
+  final String sourceCourse;
+  final int index;
+  final PlannedMeal meal;
+
+  _DraggableMealData({
+    required this.sourceDate,
+    required this.sourceCourse,
+    required this.index,
+    required this.meal,
+  });
+}
+
 class MealPlanScreen extends ConsumerStatefulWidget {
   const MealPlanScreen({super.key});
 
@@ -282,7 +297,6 @@ class _DayCardState extends ConsumerState<DayCard> {
   }
 
   /// Generate a unique key for a meal delete operation
-  /// Use meal properties instead of index to handle multiple pending deletes
   String _mealKey(String course, int index) {
     final courseMeals = widget.plan?.getMeals(course) ?? [];
     if (index >= courseMeals.length) return '${widget.date.toIso8601String()}_${course}_$index';
@@ -346,13 +360,47 @@ class _DayCardState extends ConsumerState<DayCard> {
     return ref.read(mealPlanServiceProvider).isPendingDelete(key);
   }
 
+  // Handle Drop Logic
+  Future<void> _handleDrop(_DraggableMealData data, String targetCourse) async {
+    // Prevent dropping on self
+    if (data.sourceDate == widget.date && data.sourceCourse == targetCourse) return;
+
+    final service = ref.read(mealPlanServiceProvider);
+    
+    // Find the ACTUAL index in the source plan's full list
+    final sourcePlan = await service.getOrCreate(data.sourceDate);
+    int actualIndex = -1;
+    int courseCount = 0;
+    
+    // Logic to map the relative course index back to the absolute storage index
+    for (int i = 0; i < sourcePlan.meals.length; i++) {
+      if (sourcePlan.meals[i].course == data.sourceCourse) {
+        if (courseCount == data.index) {
+          actualIndex = i;
+          break;
+        }
+        courseCount++;
+      }
+    }
+
+    if (actualIndex != -1) {
+      await service.moveMeal(
+        data.sourceDate,
+        actualIndex,
+        widget.date,
+        targetCourse,
+      );
+      // Force refresh of the UI
+      ref.invalidate(weeklyPlanProvider);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isToday = _isToday(widget.date);
     final isHighlighted = widget.isSelected || isToday || _hovered;
     final dayFormat = DateFormat('EEEE');
-    final dateFormat = DateFormat('MMM d');
 
     return MouseRegion(
       onEnter: (_) => setState(() => _hovered = true),
@@ -365,7 +413,7 @@ class _DayCardState extends ConsumerState<DayCard> {
           side: BorderSide(
             color: isHighlighted
                 ? theme.colorScheme.secondary
-                : theme.colorScheme.outline.withValues(alpha: 0.1),
+                : theme.colorScheme.outline.withOpacity(0.1),
             width: isHighlighted ? 1.5 : 1.0,
           ),
         ),
@@ -408,214 +456,264 @@ class _DayCardState extends ConsumerState<DayCard> {
             ),
             children: [
               if (widget.plan == null || widget.plan!.isEmpty)
-                const Padding(
-                  padding: EdgeInsets.all(16),
-                  child: Text('Tap + to add a meal'),
+                // When empty, allow dropping anywhere on the "Empty" text area to add to Dinner default
+                DragTarget<_DraggableMealData>(
+                  onWillAccept: (data) => true,
+                  onAccept: (data) => _handleDrop(data, MealCourse.dinner),
+                  builder: (context, candidateData, rejectedData) {
+                    final isHovering = candidateData.isNotEmpty;
+                    return Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(16),
+                      color: isHovering ? theme.colorScheme.primaryContainer.withOpacity(0.3) : null,
+                      child: const Text('Tap + to add a meal, or drag a meal here'),
+                    );
+                  },
                 )
               else
                 ...MealCourse.all.map((course) {
                   final meals = widget.plan!.getMeals(course);
-              if (meals.isEmpty) return const SizedBox.shrink();
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          MealCourse.displayName(course),
-                          style: theme.textTheme.labelMedium?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        // Nutrition summary for this meal course
-                        _MealCourseNutritionChip(meals: meals),
-                      ],
-                    ),
-                  ),
-                  ...meals.asMap().entries.map((entry) {
-                    final mealIndex = entry.key;
-                    final meal = entry.value;
-                    
-                    // Show inline undo placeholder if pending delete
-                    if (_isPendingDelete(course, mealIndex)) {
+                  
+                  // Wrap the entire Course Section in a DragTarget
+                  return DragTarget<_DraggableMealData>(
+                    onWillAccept: (data) {
+                      // Don't highlight if dragging over self
+                      if (data == null) return false;
+                      if (data.sourceDate == widget.date && data.sourceCourse == course) return false;
+                      return true;
+                    },
+                    onAccept: (data) => _handleDrop(data, course),
+                    builder: (context, candidateData, rejectedData) {
+                      final isHovering = candidateData.isNotEmpty;
+                      
+                      // If empty and not hovering, don't show the section header to keep UI clean
+                      // Unless we want to allow dropping into empty sections? 
+                      // Let's show empty sections if dragging over them, or if they have meals.
+                      if (meals.isEmpty && !isHovering) return const SizedBox.shrink();
+
                       return Container(
-                        height: 56,
-                        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.surfaceContainerHighest,
+                          color: isHovering 
+                              ? theme.colorScheme.primaryContainer.withOpacity(0.3) 
+                              : null,
                           borderRadius: BorderRadius.circular(8),
+                          border: isHovering 
+                              ? Border.all(color: theme.colorScheme.primary, width: 1)
+                              : null,
                         ),
-                        child: Row(
+                        margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const SizedBox(width: 16),
-                            Icon(
-                              Icons.delete_outline,
-                              color: theme.colorScheme.onSurfaceVariant,
-                              size: 20,
-                            ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Text(
-                                '${meal.recipeName ?? "Meal"} removed',
-                                style: theme.textTheme.bodyMedium?.copyWith(
-                                  color: theme.colorScheme.onSurfaceVariant,
-                                ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    MealCourse.displayName(course),
+                                    style: theme.textTheme.labelMedium?.copyWith(
+                                      color: theme.colorScheme.onSurfaceVariant,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  // Nutrition summary for this meal course
+                                  _MealCourseNutritionChip(meals: meals),
+                                ],
                               ),
                             ),
-                            TextButton(
-                              onPressed: () => _undoDelete(course, mealIndex),
-                              child: Text(
-                                'UNDO',
-                                style: TextStyle(
-                                  color: theme.colorScheme.primary,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 8),
+                            if (meals.isEmpty)
+                              // Placeholder height for drop target when empty
+                              const SizedBox(height: 24)
+                            else
+                              ...meals.asMap().entries.map((entry) {
+                                final mealIndex = entry.key;
+                                final meal = entry.value;
+                                
+                                if (_isPendingDelete(course, mealIndex)) {
+                                  return _buildPendingDeleteRow(theme, meal, course, mealIndex);
+                                }
+                                
+                                return _buildDraggableMealRow(theme, meal, course, mealIndex);
+                              }),
                           ],
                         ),
                       );
-                    }
-                    
-                    return Dismissible(
-                    key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}_$mealIndex'),
-                    background: Container(
-                      color: theme.colorScheme.secondary.withValues(alpha: 0.2),
-                      alignment: Alignment.centerRight,
-                      padding: const EdgeInsets.only(right: 16),
-                      child: Icon(Icons.delete, color: theme.colorScheme.secondary),
-                    ),
-                    direction: DismissDirection.endToStart,
-                    confirmDismiss: (direction) async {
-                      // Start inline undo timer instead of immediate delete
-                      _startDeleteTimer(course, mealIndex);
-                      return false; // Don't dismiss - show placeholder instead
                     },
-                    child: ListTile(
-                      dense: true,
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                      title: Text(
-                        meal.recipeName ?? 'Unknown',
-                        style: theme.textTheme.bodyLarge?.copyWith(
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      subtitle: Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: Row(
-                          children: [
-                            // Cuisine with continent-colored dot
-                            if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
-                              Text(
-                                '\u2022',
-                                style: TextStyle(
-                                  color: MemoixColors.forContinentDot(meal.cuisine),
-                                  fontSize: 14,
-                                ),
-                              ),
-                              const SizedBox(width: 4),
-                              Text(
-                                Cuisine.toAdjective(meal.cuisine),
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  color: theme.colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                            ],
-                            // Category (Apps, Mains, Drinks, etc.)
-                            if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) ...[
-                              Text(
-                                _capitalizeFirst(meal.recipeCategory!),
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  color: theme.colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                            ],
-                          ],
-                        ),
-                      ),
-                      trailing: PopupMenuButton<String>(
-                        icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
-                        onSelected: (action) async {
-                          if (action == 'remove') {
-                            // Use inline undo instead of immediate delete
-                            _startDeleteTimer(course, mealIndex);
-                          } else if (action == 'view') {
-                            // Navigate to recipe detail using AppRoutes
-                            if (meal.recipeId != null) {
-                              AppRoutes.toRecipeDetail(context, meal.recipeId!);
-                            }
-                          }
-                        },
-                        itemBuilder: (context) => [
-                          const PopupMenuItem(
-                            value: 'view',
-                            child: Row(
-                              children: [
-                                Icon(Icons.visibility),
-                                SizedBox(width: 8),
-                                Text('View Recipe'),
-                              ],
-                            ),
-                          ),
-                          const PopupMenuItem(
-                            value: 'remove',
-                            child: Row(
-                              children: [
-                                Icon(Icons.delete, color: Color(0xFFA88FA8)),
-                                SizedBox(width: 8),
-                                Text('Remove', style: TextStyle(color: Color(0xFFA88FA8))),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      onTap: () {
-                        // Navigate to recipe detail using AppRoutes
-                        if (meal.recipeId != null) {
-                          AppRoutes.toRecipeDetail(context, meal.recipeId!);
-                        }
-                      },
-                    ),
                   );
-                  }),
-                ],
-              );
-            }),
-          ],
-        ),
+                }),
+            ],
+          ),
         ),
       ),
     );
   }
 
-  Widget? _buildMealSubtitle(PlannedMeal meal, ThemeData theme) {
-    final parts = <String>[];
-    if (meal.cuisine != null && meal.cuisine!.isNotEmpty) {
-      parts.add(meal.cuisine!);
-    }
-    if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) {
-      // Capitalize first letter of category slug
-      final categoryDisplay = meal.recipeCategory![0].toUpperCase() + meal.recipeCategory!.substring(1);
-      parts.add(categoryDisplay);
-    }
-    
-    if (parts.isEmpty) {
-      return meal.servings != null
-          ? Text('${meal.servings} servings', style: theme.textTheme.labelSmall)
-          : null;
-    }
-    
-    final subtitle = parts.join(' • ');
-    if (meal.servings != null) {
-      return Text('$subtitle • ${meal.servings} servings', style: theme.textTheme.labelSmall);
-    }
-    return Text(subtitle, style: theme.textTheme.labelSmall);
+  Widget _buildPendingDeleteRow(ThemeData theme, PlannedMeal meal, String course, int mealIndex) {
+    return Container(
+      height: 56,
+      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Row(
+        children: [
+          const SizedBox(width: 16),
+          Icon(
+            Icons.delete_outline,
+            color: theme.colorScheme.onSurfaceVariant,
+            size: 20,
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              '${meal.recipeName ?? "Meal"} removed',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+          TextButton(
+            onPressed: () => _undoDelete(course, mealIndex),
+            child: Text(
+              'UNDO',
+              style: TextStyle(
+                color: theme.colorScheme.primary,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildDraggableMealRow(ThemeData theme, PlannedMeal meal, String course, int mealIndex) {
+    // Create the content widget once to reuse for draggable feedback
+    final content = ListTile(
+      dense: true,
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      title: Text(
+        meal.recipeName ?? 'Unknown',
+        style: theme.textTheme.bodyLarge?.copyWith(
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      subtitle: Padding(
+        padding: const EdgeInsets.only(top: 4),
+        child: Row(
+          children: [
+            // Cuisine with continent-colored dot
+            if (meal.cuisine != null && meal.cuisine!.isNotEmpty) ...[
+              Text(
+                '\u2022',
+                style: TextStyle(
+                  color: MemoixColors.forContinentDot(meal.cuisine),
+                  fontSize: 14,
+                ),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                Cuisine.toAdjective(meal.cuisine),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+              const SizedBox(width: 8),
+            ],
+            // Category (Apps, Mains, Drinks, etc.)
+            if (meal.recipeCategory != null && meal.recipeCategory!.isNotEmpty) ...[
+              Text(
+                _capitalizeFirst(meal.recipeCategory!),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+      trailing: PopupMenuButton<String>(
+        icon: Icon(Icons.more_vert, size: 20, color: theme.colorScheme.onSurfaceVariant),
+        onSelected: (action) async {
+          if (action == 'remove') {
+            _startDeleteTimer(course, mealIndex);
+          } else if (action == 'view') {
+            if (meal.recipeId != null) {
+              AppRoutes.toRecipeDetail(context, meal.recipeId!);
+            }
+          }
+        },
+        itemBuilder: (context) => [
+          const PopupMenuItem(
+            value: 'view',
+            child: Row(
+              children: [
+                Icon(Icons.visibility),
+                SizedBox(width: 8),
+                Text('View Recipe'),
+              ],
+            ),
+          ),
+          const PopupMenuItem(
+            value: 'remove',
+            child: Row(
+              children: [
+                Icon(Icons.delete, color: Color(0xFFA88FA8)),
+                SizedBox(width: 8),
+                Text('Remove', style: TextStyle(color: Color(0xFFA88FA8))),
+              ],
+            ),
+          ),
+        ],
+      ),
+      onTap: () {
+        if (meal.recipeId != null) {
+          AppRoutes.toRecipeDetail(context, meal.recipeId!);
+        }
+      },
+    );
+
+    // Wrap in LongPressDraggable for move functionality
+    return LongPressDraggable<_DraggableMealData>(
+      data: _DraggableMealData(
+        sourceDate: widget.date,
+        sourceCourse: course,
+        index: mealIndex,
+        meal: meal,
+      ),
+      delay: const Duration(milliseconds: 300), // Short hold to grab
+      feedback: Material(
+        elevation: 4,
+        borderRadius: BorderRadius.circular(8),
+        color: theme.cardTheme.color ?? theme.colorScheme.surface,
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width * 0.8,
+          child: content,
+        ),
+      ),
+      childWhenDragging: Opacity(
+        opacity: 0.3,
+        child: content,
+      ),
+      child: Dismissible(
+        key: Key('${widget.date.toIso8601String()}_${course}_${meal.recipeId ?? meal.recipeName}_$mealIndex'),
+        background: Container(
+          color: theme.colorScheme.secondary.withOpacity(0.2),
+          alignment: Alignment.centerRight,
+          padding: const EdgeInsets.only(right: 16),
+          child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+        ),
+        direction: DismissDirection.endToStart,
+        confirmDismiss: (direction) async {
+          _startDeleteTimer(course, mealIndex);
+          return false;
+        },
+        child: content,
+      ),
+    );
   }
 
   bool _isToday(DateTime date) {
@@ -679,10 +777,8 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       recipeCategory: recipe.course,
     );
     
-    // Only show feedback if still mounted
     if (!mounted) return;
     
-    // Show SnackBar using cached messenger if provided (safe), otherwise fall back to MemoixSnackBar
     if (messenger != null) {
       messenger.showSnackBar(
         SnackBar(
@@ -695,14 +791,12 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       MemoixSnackBar.show('Added ${recipe.name}');
     }
     
-    // Delay invalidate to next frame to avoid rebuilding during SnackBar animation
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         ref.invalidate(weeklyPlanProvider);
       }
     });
     
-    // Clear search and keep sheet open for adding more recipes
     _searchController.clear();
     setState(() => _suggestions = []);
   }
@@ -725,7 +819,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Handle bar
                 Center(
                   child: Container(
                     width: 40,
@@ -742,7 +835,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                   style: theme.textTheme.titleLarge,
                 ),
                 const SizedBox(height: 16),
-                // Date selector
                 ListTile(
                   leading: const Icon(Icons.calendar_today),
                   title: const Text('Date'),
@@ -759,7 +851,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                     }
                   },
                 ),
-                // Course selector
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Wrap(
@@ -782,7 +873,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                 ),
                 const SizedBox(height: 16),
                 const Divider(),
-                // Recipe search/selection
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
@@ -791,7 +881,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                // Search bar
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: TextField(
@@ -804,7 +893,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                // Search suggestions and favourites in scrollable area
                 Expanded(
                   child: Consumer(
                     builder: (context, ref, _) {
@@ -812,7 +900,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                       return ListView(
                         controller: scrollController,
                         children: [
-                          // Search suggestions
                           if (_suggestions.isNotEmpty) ...[
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -830,14 +917,12 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                               subtitle: r.cuisine != null ? Text(r.cuisine!) : null,
                               trailing: const Icon(Icons.add_circle_outline),
                               onTap: () {
-                                // Cache messenger before async operations to avoid context access after await
                                 final messenger = ScaffoldMessenger.of(context);
                                 _addRecipeToMealPlan(r, messenger: messenger);
                               },
                             ),),
                             const Divider(),
                           ],
-                          // Favourites section
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: Text(
@@ -873,7 +958,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                                   subtitle: recipe.cuisine != null ? Text(recipe.cuisine!) : null,
                                   trailing: const Icon(Icons.add_circle_outline),
                                   onTap: () {
-                                    // Cache messenger before async operations to avoid context access after await
                                     final messenger = ScaffoldMessenger.of(context);
                                     _addRecipeToMealPlan(recipe, messenger: messenger);
                                   },
@@ -894,7 +978,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     );
   }
 }
-/// Widget that shows total calories for the week's meal plan
+
 class _WeeklyNutritionChip extends ConsumerWidget {
   final DateTime weekStart;
 
@@ -908,18 +992,14 @@ class _WeeklyNutritionChip extends ConsumerWidget {
       loading: () => const SizedBox.shrink(),
       error: (_, __) => const SizedBox.shrink(),
       data: (weeklyPlan) {
-        // Get all recipe IDs for the week
         final recipeIds = weeklyPlan.allRecipeIds;
         if (recipeIds.isEmpty) return const SizedBox.shrink();
-        
-        // Calculate total calories from recipes
         return _NutritionSummaryChip(recipeIds: recipeIds.toList());
       },
     );
   }
 }
 
-/// Widget that shows calories for meals in a specific course (Breakfast, Lunch, Dinner, etc.)
 class _MealCourseNutritionChip extends ConsumerWidget {
   final List<PlannedMeal> meals;
 
@@ -930,7 +1010,6 @@ class _MealCourseNutritionChip extends ConsumerWidget {
     final theme = Theme.of(context);
     final recipesAsync = ref.watch(allRecipesProvider);
     
-    // Extract recipe IDs from meals
     final recipeIds = meals
         .where((m) => m.recipeId != null)
         .map((m) => m.recipeId!)
@@ -953,18 +1032,10 @@ class _MealCourseNutritionChip extends ConsumerWidget {
             orElse: () => Recipe()..name = '',
           );
           if (recipe.nutrition != null && recipe.nutrition!.hasData) {
-            if (recipe.nutrition!.calories != null) {
-              totalCalories += recipe.nutrition!.calories!;
-            }
-            if (recipe.nutrition!.proteinContent != null) {
-              totalProtein += recipe.nutrition!.proteinContent!;
-            }
-            if (recipe.nutrition!.carbohydrateContent != null) {
-              totalCarbs += recipe.nutrition!.carbohydrateContent!;
-            }
-            if (recipe.nutrition!.fatContent != null) {
-              totalFat += recipe.nutrition!.fatContent!;
-            }
+            if (recipe.nutrition!.calories != null) totalCalories += recipe.nutrition!.calories!;
+            if (recipe.nutrition!.proteinContent != null) totalProtein += recipe.nutrition!.proteinContent!;
+            if (recipe.nutrition!.carbohydrateContent != null) totalCarbs += recipe.nutrition!.carbohydrateContent!;
+            if (recipe.nutrition!.fatContent != null) totalFat += recipe.nutrition!.fatContent!;
           }
         }
         
@@ -998,7 +1069,6 @@ class _MealCourseNutritionChip extends ConsumerWidget {
   }
 }
 
-/// Chip that calculates and displays total nutrition for a list of recipes
 class _NutritionSummaryChip extends ConsumerWidget {
   final List<String> recipeIds;
 
@@ -1013,7 +1083,6 @@ class _NutritionSummaryChip extends ConsumerWidget {
       loading: () => const SizedBox.shrink(),
       error: (_, __) => const SizedBox.shrink(),
       data: (allRecipes) {
-        // Find recipes and sum up nutrition
         int totalCalories = 0;
         double totalProtein = 0;
         double totalCarbs = 0;
@@ -1027,18 +1096,10 @@ class _NutritionSummaryChip extends ConsumerWidget {
           );
           if (recipe.nutrition != null && recipe.nutrition!.hasData) {
             recipesWithNutrition++;
-            if (recipe.nutrition!.calories != null) {
-              totalCalories += recipe.nutrition!.calories!;
-            }
-            if (recipe.nutrition!.proteinContent != null) {
-              totalProtein += recipe.nutrition!.proteinContent!;
-            }
-            if (recipe.nutrition!.carbohydrateContent != null) {
-              totalCarbs += recipe.nutrition!.carbohydrateContent!;
-            }
-            if (recipe.nutrition!.fatContent != null) {
-              totalFat += recipe.nutrition!.fatContent!;
-            }
+            if (recipe.nutrition!.calories != null) totalCalories += recipe.nutrition!.calories!;
+            if (recipe.nutrition!.proteinContent != null) totalProtein += recipe.nutrition!.proteinContent!;
+            if (recipe.nutrition!.carbohydrateContent != null) totalCarbs += recipe.nutrition!.carbohydrateContent!;
+            if (recipe.nutrition!.fatContent != null) totalFat += recipe.nutrition!.fatContent!;
           }
         }
         
