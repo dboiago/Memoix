@@ -127,7 +127,6 @@ class MealCourse {
   }
 
   static String emoji(String course) {
-    // Removed emojis for cleaner design
     return '';
   }
 }
@@ -267,6 +266,9 @@ class MealPlanService {
       course: newCourse,
       servings: meal.servings,
       notes: meal.notes,
+      // FIX: Ensure metadata is copied to new entry
+      cuisine: meal.cuisine,
+      recipeCategory: meal.recipeCategory,
     );
     toPlan.meals = [...toPlan.meals, movedMeal];
 
@@ -328,7 +330,10 @@ class MealPlanService {
       course: m.course,
       servings: m.servings,
       notes: m.notes,
-    ),).toList();
+      // FIX: Ensure metadata is copied
+      cuisine: m.cuisine,
+      recipeCategory: m.recipeCategory,
+    )).toList();
 
     toPlan.meals = [...toPlan.meals, ...copiedMeals];
     await _db.writeTxn(() => _db.mealPlans.put(toPlan));
