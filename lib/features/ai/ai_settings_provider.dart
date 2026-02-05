@@ -53,29 +53,29 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     state = AiSettings(
       providers: updatedProviders,
       preferredProvider: state.preferredProvider,
-      autoSelect: state.autoSelect,
+      autoSelectProviderProvider: state.autoSelectProviderProvider,
     );
 
     await _save();
   }
 
-  /// Set preferred provider (used when autoSelect = false)
+  /// Set preferred provider (used when autoSelectProviderProvider = false)
   Future<void> setPreferredProvider(AiProvider provider) async {
     state = AiSettings(
       providers: state.providers,
       preferredProvider: provider,
-      autoSelect: state.autoSelect,
+      autoSelectProviderProvider: state.autoSelectProviderProvider,
     );
 
     await _save();
   }
 
   /// Toggle auto-selection
-  Future<void> setAutoSelect(bool value) async {
+  Future<void> setautoSelectProvider(bool value) async {
     state = AiSettings(
       providers: state.providers,
       preferredProvider: state.preferredProvider,
-      autoSelect: value,
+      autoSelectProvider: value,
     );
 
     await _save();
@@ -92,7 +92,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
         provider: config,
       },
       preferredProvider: state.preferredProvider,
-      autoSelect: state.autoSelect,
+      autoSelectProvider: state.autoSelectProvider,
     );
 
     await _save();
