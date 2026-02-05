@@ -1,3 +1,5 @@
+import '../import/ai/ai_provider.dart';
+
 class AiProviderConfig {
   final AiProviderType provider;
   final String? apiKey;
