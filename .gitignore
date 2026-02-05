@@ -64,11 +64,11 @@ app.*.map.json
 # Windows
 Thumbs.db
 desktop.ini
-/windows/flutter/ephemeral/
-/windows/flutter/generated_config.cmake
-/windows/runner/*.exe
-/windows/runner/*.dll
-/windows/runner/*.pdb
+**/windows/flutter/ephemeral/
+**/windows/runner/*.exe
+**/windows/runner/*.dll
+**/windows/runner/*.pdb
+**/windows/flutter/generated_config.cmake
 
 # Linux
 **/linux/flutter/ephemeral/
