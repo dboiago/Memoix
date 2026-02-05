@@ -38,7 +38,7 @@ class AiProviderConfig {
 
   static AiProviderConfig fromJson(Map<String, dynamic> json) {
     return AiProviderConfig(
-      provider: AiProviderType.values.firstWhere(
+      provider: AiProvider.values.firstWhere(
         (e) => e.name == json['provider'],
       ),
       apiKey: json['apiKey'],
