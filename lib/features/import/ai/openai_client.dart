@@ -1,3 +1,4 @@
+// OpenAI (ChatGPT, Responses API – vision + text)
 final payload = {
   "model": "gpt-4.1",
   "response_format": {
