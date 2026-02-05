@@ -79,7 +79,7 @@ class AiSettings {
 class AiSettingsRepository {
   static const _key = 'ai_settings';
 
-  final SettingsStore store; // whatever you already use
+  //final SettingsStore store; // TODO: add this or remove line
 
   AiSettingsRepository(this.store);
 
