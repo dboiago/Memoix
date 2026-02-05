@@ -56,11 +56,11 @@ app.*.map.json
 **/macos/Flutter/ephemeral/
 
 # Windows
-**/windows/flutter/ephemeral/
-**/windows/flutter/generated_config.cmake
-**/windows/runner/*.exe
-**/windows/runner/*.dll
-**/windows/runner/*.pdb
+/windows/flutter/ephemeral/
+/windows/flutter/generated_config.cmake
+/windows/runner/*.exe
+/windows/runner/*.dll
+/windows/runner/*.pdb
 
 # Linux
 **/linux/flutter/ephemeral/
