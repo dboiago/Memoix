@@ -7,13 +7,13 @@ import '../import/ai/claude_client.dart';
 import '../import/ai/gemini_client.dart';
 
 class AiSettings {
-  final Map<AiProviderType, AiProviderConfig> providers;
+  final Map<AiProvider, AiProviderConfig> providers;
 
   factory AiSettings.defaults() => const AiSettings(providers: {});
   
   /// Sticky preference
   final bool autoSelectProvider;
-  final AiProviderType? preferredProvider;
+  final AiProvider? preferredProvider;
 
   const AiSettings({
     required this.providers,
@@ -21,7 +21,7 @@ class AiSettings {
     this.preferredProvider,
   });
 
-  AiProviderConfig configFor(AiProviderType provider) {
+  AiProviderConfig configFor(AiProvider provider) {
     return providers[provider] ??
         AiProviderConfig(provider: provider);
   }
@@ -30,9 +30,9 @@ class AiSettings {
       providers.values.where((p) => p.isActive).toList();
 
   AiSettings copyWith({
-    Map<AiProviderType, AiProviderConfig>? providers,
+    Map<AiProvider, AiProviderConfig>? providers,
     bool? autoSelectProvider,
-    AiProviderType? preferredProvider,
+    AiProvider? preferredProvider,
   }) {
     return AiSettings(
       providers: providers ?? this.providers,
@@ -52,10 +52,10 @@ class AiSettings {
   static AiSettings fromJson(Map<String, dynamic> json) {
     final providersJson = json['providers'] as Map<String, dynamic>? ?? {};
 
-    final providers = <AiProviderType, AiProviderConfig>{};
+    final providers = <AiProvider, AiProviderConfig>{};
 
     for (final entry in providersJson.entries) {
-      final provider = AiProviderType.values.firstWhere(
+      final provider = AiProvider.values.firstWhere(
         (e) => e.name == entry.key,
       );
       providers[provider] =
@@ -65,7 +65,7 @@ class AiSettings {
     return AiSettings(
       autoSelectProvider: json['autoSelectProvider'] ?? true,
       preferredProvider: json['preferredProvider'] != null
-          ? AiProviderType.values.firstWhere(
+          ? AiProvider.values.firstWhere(
               (e) => e.name == json['preferredProvider'],
             )
           : null,
@@ -106,7 +106,7 @@ class AiSettingsNotifier extends ChangeNotifier {
   AiSettings get settings => _settings;
 
   void updateProvider(AiProviderConfig config) {
-    final updated = Map<AiProviderType, AiProviderConfig>.from(
+    final updated = Map<AiProvider, AiProviderConfig>.from(
       _settings.providers,
     )..[config.provider] = config;
 
@@ -121,7 +121,7 @@ class AiSettingsNotifier extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setPreferredProvider(AiProviderType? provider) {
+  void setPreferredProvider(AiProvider? provider) {
     _settings = _settings.copyWith(preferredProvider: provider);
     repo.save(_settings);
     notifyListeners();
@@ -130,9 +130,9 @@ class AiSettingsNotifier extends ChangeNotifier {
 
 AiRecipeImporter fromSettings(AiSettings settings) {
   return AiRecipeImporter(
-    openAi: OpenAiClient(settings.configFor(AiProviderType.openai).apiKey!),
-    claude: ClaudeClient(settings.configFor(AiProviderType.claude).apiKey!),
-    gemini: GeminiClient(settings.configFor(AiProviderType.gemini).apiKey!),
+    openAi: OpenAiClient(settings.configFor(AiProvider.openai).apiKey!),
+    claude: ClaudeClient(settings.configFor(AiProvider.claude).apiKey!),
+    gemini: GeminiClient(settings.configFor(AiProvider.gemini).apiKey!),
     defaultProvider:
         settings.preferredProvider ?? AiProvider.openai,
     autoSelect: settings.autoSelectProvider,
