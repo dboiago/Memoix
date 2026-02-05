@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart'; // For ChangeNotifier
 import 'ai_provider_config.dart';
 import '../import/ai/ai_provider.dart'; 
-import '../../import/ai/ai_recipe_importer.dart';
-import '../../import/ai/openai_client.dart';
-import '../../import/ai/calude_client.dart';
-import '../../import/ai/gemini_client.dart';
+import '../import/ai/ai_recipe_importer.dart';
+import '../import/ai/openai_client.dart';
+import '../import/ai/calude_client.dart';
+import '../import/ai/gemini_client.dart';
 
 class AiSettings {
   final Map<AiProviderType, AiProviderConfig> providers;
