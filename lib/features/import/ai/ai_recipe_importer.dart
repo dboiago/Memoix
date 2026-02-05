@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import '../../recipes/import/models/recipe_import_result.dart';
+import '../../import/models/recipe_import_result.dart';
 import 'ai_provider.dart';
 import 'openai_client.dart';
 import 'claude_client.dart';
