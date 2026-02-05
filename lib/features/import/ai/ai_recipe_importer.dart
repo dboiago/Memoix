@@ -12,16 +12,6 @@ enum AiImportInputType {
   rawText,
 }
 
-Future<RecipeImportResult> import(
-  AiImportInput input, {
-  String? sourceUrl,
-}) async {
-  final provider = _selectProvider(input);
-
-  // Optional debug hook later
-  // debugPrint('AI import using $provider (${input.type})');
-}
-
 class AiImportInput {
   final AiImportInputType type;
   final String? text; // URL or raw text
@@ -97,9 +87,10 @@ class AiRecipeImporter {
     String systemPrompt,
     AiImportInput input,
   ) async {
-    return openAi.extractRecipe(
+    return openAi.analyzeRecipe(
       systemPrompt: systemPrompt,
-      input: input,
+      text: input.text,
+      imageBytes: input.image,
     );
   }
 
@@ -107,9 +98,10 @@ class AiRecipeImporter {
     String systemPrompt,
     AiImportInput input,
   ) async {
-    return claude.extractRecipe(
+    return claude.analyzeRecipe(
       systemPrompt: systemPrompt,
-      input: input,
+      text: input.text,
+      imageBytes: input.image,
     );
   }
 
@@ -117,9 +109,10 @@ class AiRecipeImporter {
     String systemPrompt,
     AiImportInput input,
   ) async {
-    return gemini.extractRecipe(
+    return gemini.analyzeRecipe(
       systemPrompt: systemPrompt,
-      input: input,
+      text: input.text,
+      imageBytes: input.image,
     );
   }
 
