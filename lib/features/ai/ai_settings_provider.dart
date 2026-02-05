@@ -53,18 +53,18 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     state = AiSettings(
       providers: updatedProviders,
       preferredProvider: state.preferredProvider,
-      autoSelectProviderProvider: state.autoSelectProviderProvider,
+      autoSelectProvider: state.autoSelectProvider,
     );
 
     await _save();
   }
 
-  /// Set preferred provider (used when autoSelectProviderProvider = false)
+  /// Set preferred provider (used when autoSelectProvider = false)
   Future<void> setPreferredProvider(AiProvider provider) async {
     state = AiSettings(
       providers: state.providers,
       preferredProvider: provider,
-      autoSelectProviderProvider: state.autoSelectProviderProvider,
+      autoSelectProvider: state.autoSelectProvider,
     );
 
     await _save();
