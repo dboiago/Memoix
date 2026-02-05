@@ -1,34 +1,49 @@
 class AiProviderConfig {
-  final bool enabled;
+  final AiProviderType provider;
   final String? apiKey;
-  final String? defaultModel;
+  final bool enabled;
   final DateTime? validatedAt;
 
   const AiProviderConfig({
-    required this.enabled,
+    required this.provider,
     this.apiKey,
-    this.defaultModel,
+    this.enabled = false,
     this.validatedAt,
   });
 
-  bool get isConfigured => enabled && apiKey != null;
+  bool get isConfigured => apiKey != null && apiKey!.isNotEmpty;
+  bool get isActive => enabled && isConfigured;
 
-  factory AiProviderConfig.fromJson(Map<String, dynamic> json) {
+  AiProviderConfig copyWith({
+    String? apiKey,
+    bool? enabled,
+    DateTime? validatedAt,
+  }) {
     return AiProviderConfig(
-      enabled: json['enabled'] ?? false,
+      provider: provider,
+      apiKey: apiKey ?? this.apiKey,
+      enabled: enabled ?? this.enabled,
+      validatedAt: validatedAt ?? this.validatedAt,
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'provider': provider.name,
+        'apiKey': apiKey,
+        'enabled': enabled,
+        'validatedAt': validatedAt?.toIso8601String(),
+      };
+
+  static AiProviderConfig fromJson(Map<String, dynamic> json) {
+    return AiProviderConfig(
+      provider: AiProviderType.values.firstWhere(
+        (e) => e.name == json['provider'],
+      ),
       apiKey: json['apiKey'],
-      defaultModel: json['defaultModel'],
+      enabled: json['enabled'] ?? false,
       validatedAt: json['validatedAt'] != null
           ? DateTime.parse(json['validatedAt'])
           : null,
     );
   }
-
-  Map<String, dynamic> toJson() => {
-        'enabled': enabled,
-        if (apiKey != null) 'apiKey': apiKey,
-        if (defaultModel != null) 'defaultModel': defaultModel,
-        if (validatedAt != null)
-          'validatedAt': validatedAt!.toIso8601String(),
-      };
 }
