@@ -164,9 +164,11 @@ class _ProviderTile extends StatelessWidget {
     required this.onEditKey,
   });
 
-  @override
-  Widget build(BuildContext context) {
-    return SwitchListTile(
+@override
+Widget build(BuildContext context) {
+  return GestureDetector(
+    onLongPress: onEditKey, // Now the whole tile responds to long press
+    child: SwitchListTile(
       secondary: const Icon(Icons.smart_toy_outlined),
       title: Text(_label(provider)),
       subtitle: Text(
@@ -175,17 +177,10 @@ class _ProviderTile extends StatelessWidget {
             : 'API key configured',
       ),
       value: config.enabled,
-      onChanged: onToggle,
-      GestureDetector(
-        onLongPress: onEditKey,
-        child: SwitchListTile(
-          value: settings.autoSelectProvider,
-          onChanged: (val) => ...,
-          title: Text("Auto Select"),
-        ),
-      )
-    );
-  }
+      onChanged: onToggle, // Existing toggle logic
+    ),
+  );
+}
 
   static String _label(AiProvider provider) {
     switch (provider) {
