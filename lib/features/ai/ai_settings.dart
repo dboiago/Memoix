@@ -1,3 +1,5 @@
+import 'ai_provider_config.dart';
+
 class AiSettings {
   final Map<AiProviderType, AiProviderConfig> providers;
 
