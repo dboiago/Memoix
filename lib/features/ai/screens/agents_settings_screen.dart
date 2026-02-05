@@ -30,11 +30,11 @@ class AgentsSettingsScreen extends ConsumerWidget {
             subtitle: const Text(
               'Choose the best AI automatically based on input type',
             ),
-            value: settings.autoSelect,
-            onChanged: notifier.setAutoSelect,
+            value: settings.autoSelectProvider,
+            onChanged: notifier.setautoSelectProvider,
           ),
 
-          if (!settings.autoSelect)
+          if (!settings.autoSelectProvider)
             ListTile(
               leading: const Icon(Icons.star_outline),
               title: const Text('Preferred Provider'),
