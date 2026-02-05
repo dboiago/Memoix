@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'ai_settings.dart';
-import '../../import/ai/ai_provider.dart';
+import '../import/ai/ai_provider.dart';
 
 /// Riverpod provider
 final aiSettingsProvider =
