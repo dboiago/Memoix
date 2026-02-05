@@ -1,4 +1,4 @@
-// Claude (Anthropic, Messages API)
+/// Claude (Anthropic, Messages API)
 // Excellent at multi-column cookbooks
 // Very conservative
 // Doesn’t hallucinate structure as aggressively
