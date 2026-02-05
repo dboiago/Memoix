@@ -130,15 +130,9 @@ class AiSettingsNotifier extends ChangeNotifier {
 
 AiRecipeImporter fromSettings(AiSettings settings) {
   return AiRecipeImporter(
-    openAi: OpenAiClient(
-      apiKey: settings.configFor(AiProviderType.openai).apiKey!,
-    ),
-    claude: ClaudeClient(
-      apiKey: settings.configFor(AiProviderType.claude).apiKey!,
-    ),
-    gemini: GeminiClient(
-      apiKey: settings.configFor(AiProviderType.gemini).apiKey!,
-    ),
+    openAi: OpenAiClient(settings.configFor(AiProviderType.openai).apiKey!),
+    claude: ClaudeClient(settings.configFor(AiProviderType.claude).apiKey!),
+    gemini: GeminiClient(settings.configFor(AiProviderType.gemini).apiKey!),
     defaultProvider:
         settings.preferredProvider ?? AiProvider.openai,
     autoSelect: settings.autoSelectProvider,
