@@ -9,6 +9,8 @@ import '../../import/ai/gemini_client.dart';
 class AiSettings {
   final Map<AiProviderType, AiProviderConfig> providers;
 
+  factory AiSettings.defaults() => const AiSettings(providers: {});
+  
   /// Sticky preference
   final bool autoSelectProvider;
   final AiProviderType? preferredProvider;
