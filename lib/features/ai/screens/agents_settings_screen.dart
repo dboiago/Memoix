@@ -39,7 +39,9 @@ class AgentsSettingsScreen extends ConsumerWidget {
               leading: const Icon(Icons.star_outline),
               title: const Text('Preferred Provider'),
               subtitle: Text(
-                _providerLabel(settings.preferredProvider),
+                settings.preferredProvider != null
+                    ? _providerLabel(settings.preferredProvider!)
+                    : 'Not set',
               ),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => _pickPreferredProvider(
