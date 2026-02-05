@@ -40,13 +40,11 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-.gradle/
-local.properties
-/android/app/debug
-/android/app/profile
-/android/app/release
-**/android/**/generated/
-**/android/app/src/main/res/values/strings.xml
+**/android/.gradle/
+**/android/build/
+**/android/local.properties
+**/android/generated/
+**/android/app/src/main/res/values/gradle.xml
 
 # iOS
 **/ios/Pods/
@@ -59,6 +57,10 @@ local.properties
 
 # Windows
 **/windows/flutter/ephemeral/
+**/windows/flutter/generated_config.cmake
+**/windows/runner/*.exe
+**/windows/runner/*.dll
+**/windows/runner/*.pdb
 
 # Linux
 **/linux/flutter/ephemeral/
