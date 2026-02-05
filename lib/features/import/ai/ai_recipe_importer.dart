@@ -7,55 +7,67 @@ import 'openai_client.dart';
 import 'claude_client.dart';
 import 'gemini_client.dart';
 
+enum AiProvider {
+  openai,
+  claude,
+  gemini,
+}
+
+enum AiImportInputType {
+  image,
+  url,
+  rawText,
+}
+
+class AiImportInput {
+  final AiImportInputType type;
+  final String? text; // URL or raw text
+  final Uint8List? image; // Image bytes
+
+  AiImportInput.image(this.image)
+      : type = AiImportInputType.image,
+        text = null;
+
+  AiImportInput.url(this.text)
+      : type = AiImportInputType.url,
+        image = null;
+
+  AiImportInput.rawText(this.text)
+      : type = AiImportInputType.rawText,
+        image = null;
+}
+
 class AiRecipeImporter {
-  final AiProvider provider;
-  final String apiKey;
+  final OpenAiClient openAi;
+  final ClaudeClient claude;
+  final GeminiClient gemini;
+
+  final AiProvider defaultProvider;
+  final bool autoSelect;
 
   AiRecipeImporter({
-    required this.provider,
-    required this.apiKey,
+    required this.openAi,
+    required this.claude,
+    required this.gemini,
+    required this.defaultProvider,
+    this.autoSelect = true,
   });
 
-  /// Main entry point
-  ///
-  /// At least ONE of [ocrText], [imageBytes], or [urlText] must be provided
-  Future<RecipeImportResult> importRecipe({
-    String? ocrText,
-    Uint8List? imageBytes,
-    String? urlText,
-    String? sourceUrl,
-  }) async {
-    if (ocrText == null && imageBytes == null && urlText == null) {
-      throw ArgumentError('AI import requires OCR text, image, or URL content');
-    }
-
+  /// Main entry point for importing
+  Future<RecipeImportResult> import(AiImportInput input, {String? sourceUrl}) async {
+    final provider = _selectProvider(input);
     final systemPrompt = _buildSystemPrompt();
-
     final Map<String, dynamic> responseJson;
 
     switch (provider) {
       case AiProvider.openai:
-        responseJson = await OpenAiClient(apiKey).analyzeRecipe(
-          systemPrompt: systemPrompt,
-          imageBytes: imageBytes,
-          text: _combineText(ocrText, urlText),
-        );
+        responseJson = await _importWithOpenAi(systemPrompt, input);
         break;
-
       case AiProvider.claude:
-        responseJson = await ClaudeClient(apiKey).analyzeRecipe(
-          systemPrompt: systemPrompt,
-          imageBytes: imageBytes,
-          text: _combineText(ocrText, urlText),
-        );
+        responseJson = await _importWithClaude(systemPrompt, input);
         break;
-
       case AiProvider.gemini:
-        responseJson = await GeminiClient(apiKey).analyzeRecipe(
-          systemPrompt: systemPrompt,
-          imageBytes: imageBytes,
-          text: _combineText(ocrText, urlText),
-        );
+        responseJson = await _importWithGemini(systemPrompt, input);
         break;
     }
 
@@ -66,19 +78,46 @@ class AiRecipeImporter {
     });
   }
 
-  /// Combine OCR + URL text without losing provenance
-  String? _combineText(String? ocrText, String? urlText) {
-    if (ocrText == null && urlText == null) return null;
-    if (ocrText != null && urlText == null) return ocrText;
-    if (ocrText == null && urlText != null) return urlText;
+  AiProvider _selectProvider(AiImportInput input) {
+    if (!autoSelect) return defaultProvider;
 
-    return '''
---- OCR TEXT ---
-$ocrText
+    switch (input.type) {
+      case AiImportInputType.image:
+        return AiProvider.claude; // best vision reliability
+      case AiImportInputType.url:
+      case AiImportInputType.rawText:
+        return AiProvider.openai;
+    }
+  }
 
---- URL TEXT ---
-$urlText
-''';
+  Future<Map<String, dynamic>> _importWithOpenAi(
+    String systemPrompt,
+    AiImportInput input,
+  ) async {
+    return openAi.extractRecipe(
+      systemPrompt: systemPrompt,
+      input: input,
+    );
+  }
+
+  Future<Map<String, dynamic>> _importWithClaude(
+    String systemPrompt,
+    AiImportInput input,
+  ) async {
+    return claude.extractRecipe(
+      systemPrompt: systemPrompt,
+      input: input,
+    );
+  }
+
+  Future<Map<String, dynamic>> _importWithGemini(
+    String systemPrompt,
+    AiImportInput input,
+  ) async {
+    return gemini.extractRecipe(
+      systemPrompt: systemPrompt,
+      input: input,
+    );
   }
 
   String _buildSystemPrompt() {
@@ -93,6 +132,11 @@ Rules:
 - If information is unclear, omit it or mark it as uncertain.
 - Never merge multiple recipes into one.
 
+Layout handling:
+- Images may contain multiple columns, pages, or non-linear layouts.
+- You may reorder text mentally to reconstruct the recipe.
+- Do not assume left-to-right, top-to-bottom order.
+
 Multi-recipe handling:
 - If more than one recipe is detected:
   - Identify each recipe internally.
@@ -102,21 +146,19 @@ Multi-recipe handling:
   - Do not mention discarded recipes unless asked.
 
 Output requirements:
-- title
-- ingredients
-- instructions
-- optional metadata (time, servings)
-- per-field confidence scores (0.0–1.0)
-- overall confidence score
+- Title
+- Ingredients (structured if possible, raw otherwise)
+- Instructions
+- Optional metadata (time, servings)
+- Per-field confidence scores (0.0–1.0)
+- Overall confidence score
 
 Formatting rules:
 - Ingredients must remain separate entries.
 - Instructions must preserve original order.
 - Do not guess missing quantities.
 
-If input is ambiguous, prioritize transparency.
-
-Return ONLY valid JSON.
+Output ONLY valid JSON.
 ''';
   }
 }
