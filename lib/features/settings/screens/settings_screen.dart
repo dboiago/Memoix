@@ -265,6 +265,18 @@ class SettingsScreen extends ConsumerWidget {
           ),
 
           const Divider(),
+          
+          // Agents section
+          const _SectionHeader(title: 'Agents'),
+          ListTile(
+            leading: const Icon(Icons.smart_toy_outlined),
+            title: const Text('AI Agents'),
+            subtitle: const Text('Manage AI providers and preferences'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => AppRoutes.toAgentsSettings(context),
+          ),
+
+          const Divider(),
 
           // Sync section
           const _SectionHeader(title: 'Sync & Updates'),
@@ -672,3 +684,4 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
     );
   }
 }
+
