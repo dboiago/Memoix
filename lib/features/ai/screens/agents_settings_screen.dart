@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../ai_settings_provider.dart';
-import '../ai_provider.dart';
+import '../../import/ai/ai_provider.dart';
 import '../ai_provider_config.dart';
 
 class AgentsSettingsScreen extends ConsumerWidget {
