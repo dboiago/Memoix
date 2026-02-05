@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart'; // For ChangeNotifier
 import 'ai_provider_config.dart';
 import '../import/ai/ai_provider.dart'; 
 import '../import/ai/ai_recipe_importer.dart';
@@ -76,58 +75,6 @@ class AiSettings {
   static AiSettings empty() => const AiSettings(providers: {});
 }
 
-class AiSettingsRepository {
-  static const _key = 'ai_settings';
-
-  //final SettingsStore store; // TODO: add this or remove line
-
-  AiSettingsRepository(this.store);
-
-  AiSettings load() {
-    final json = store.getJson(_key);
-    if (json == null) return AiSettings.empty();
-    return AiSettings.fromJson(json);
-  }
-
-  Future<void> save(AiSettings settings) {
-    return store.setJson(_key, settings.toJson());
-  }
-}
-
-class AiSettingsNotifier extends ChangeNotifier {
-  final AiSettingsRepository repo;
-
-  late AiSettings _settings;
-
-  AiSettingsNotifier(this.repo) {
-    _settings = repo.load();
-  }
-
-  AiSettings get settings => _settings;
-
-  void updateProvider(AiProviderConfig config) {
-    final updated = Map<AiProvider, AiProviderConfig>.from(
-      _settings.providers,
-    )..[config.provider] = config;
-
-    _settings = _settings.copyWith(providers: updated);
-    repo.save(_settings);
-    notifyListeners();
-  }
-
-  void setAutoSelect(bool value) {
-    _settings = _settings.copyWith(autoSelectProvider: value);
-    repo.save(_settings);
-    notifyListeners();
-  }
-
-  void setPreferredProvider(AiProvider? provider) {
-    _settings = _settings.copyWith(preferredProvider: provider);
-    repo.save(_settings);
-    notifyListeners();
-  }
-}
-
 AiRecipeImporter fromSettings(AiSettings settings) {
   return AiRecipeImporter(
     openAi: OpenAiClient(settings.configFor(AiProvider.openai).apiKey!),
@@ -138,4 +85,3 @@ AiRecipeImporter fromSettings(AiSettings settings) {
     autoSelect: settings.autoSelectProvider,
   );
 }
-
