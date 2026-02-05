@@ -170,7 +170,70 @@ class RecipeImportResult {
   }
 
   factory RecipeImportResult.fromAi(Map<String, dynamic> data) {
-    // TODO: logic to parse AI response into a result
+    // Parse ingredients from AI response
+    final ingredients = <Ingredient>[];
+    if (data['ingredients'] != null) {
+      final ingredientsList = data['ingredients'] as List<dynamic>?;
+      if (ingredientsList != null) {
+        for (final item in ingredientsList) {
+          if (item is Map<String, dynamic>) {
+            ingredients.add(Ingredient.create(
+              name: item['name'] as String? ?? '',
+              amount: item['amount'] as String?,
+              unit: item['unit'] as String?,
+              preparation: item['preparation'] as String?,
+              section: item['section'] as String?,
+            ));
+          }
+        }
+      }
+    }
+
+    // Parse directions
+    final directions = <String>[];
+    if (data['directions'] != null) {
+      final directionsList = data['directions'] as List<dynamic>?;
+      if (directionsList != null) {
+        directions.addAll(
+          directionsList.map((d) => d.toString()).where((d) => d.isNotEmpty),
+        );
+      }
+    }
+
+    return RecipeImportResult(
+      name: data['name'] as String?,
+      course: data['course'] as String?,
+      cuisine: data['cuisine'] as String?,
+      subcategory: data['subcategory'] as String?,
+      serves: data['serves'] as String?,
+      time: data['time'] as String?,
+      ingredients: ingredients,
+      directions: directions,
+      comments: data['comments'] as String?,
+      imageUrl: data['imageUrl'] as String?,
+      equipment: (data['equipment'] as List<dynamic>?)
+              ?.map((e) => e.toString())
+              .toList() ??
+          const [],
+      glass: data['glass'] as String?,
+      garnish: (data['garnish'] as List<dynamic>?)
+              ?.map((g) => g.toString())
+              .toList() ??
+          const [],
+      nameConfidence: (data['nameConfidence'] as num?)?.toDouble() ?? 0.0,
+      courseConfidence: (data['courseConfidence'] as num?)?.toDouble() ?? 0.0,
+      cuisineConfidence: (data['cuisineConfidence'] as num?)?.toDouble() ?? 0.0,
+      ingredientsConfidence:
+          (data['ingredientsConfidence'] as num?)?.toDouble() ?? 0.0,
+      directionsConfidence:
+          (data['directionsConfidence'] as num?)?.toDouble() ?? 0.0,
+      servesConfidence: (data['servesConfidence'] as num?)?.toDouble() ?? 0.0,
+      timeConfidence: (data['timeConfidence'] as num?)?.toDouble() ?? 0.0,
+      sourceUrl: data['sourceUrl'] as String?,
+      source: data['source'] == 'ai'
+          ? RecipeSource.ocr
+          : RecipeSource.url, // AI imports treated as OCR-like
+    );
   }
 
   /// Convert to a ModernistRecipe (for high-confidence Modernist imports)
@@ -785,4 +848,3 @@ class RawDirectionData {
     this.isSelected = true,
   });
 }
-
