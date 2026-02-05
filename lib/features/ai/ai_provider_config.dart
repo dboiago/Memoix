@@ -1,7 +1,7 @@
 import '../import/ai/ai_provider.dart';
 
 class AiProviderConfig {
-  final AiProviderType provider;
+  final AiProvider provider;
   final String? apiKey;
   final bool enabled;
   final DateTime? validatedAt;
