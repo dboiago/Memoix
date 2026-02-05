@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:typed_data';
 
 import '../../recipes/import/recipe_import_result.dart';
@@ -7,16 +6,20 @@ import 'openai_client.dart';
 import 'claude_client.dart';
 import 'gemini_client.dart';
 
-enum AiProvider {
-  openai,
-  claude,
-  gemini,
-}
-
 enum AiImportInputType {
   image,
   url,
   rawText,
+}
+
+Future<RecipeImportResult> import(
+  AiImportInput input, {
+  String? sourceUrl,
+}) async {
+  final provider = _selectProvider(input);
+
+  // Optional debug hook later
+  // debugPrint('AI import using $provider (${input.type})');
 }
 
 class AiImportInput {
@@ -73,7 +76,7 @@ class AiRecipeImporter {
 
     return RecipeImportResult.fromAi({
       ...responseJson,
-      'sourceUrl': sourceUrl,
+      if (sourceUrl != null) 'sourceUrl': sourceUrl,
       'source': 'ai',
     });
   }
