@@ -176,7 +176,14 @@ class _ProviderTile extends StatelessWidget {
       ),
       value: config.enabled,
       onChanged: onToggle,
-      onLongPress: onEditKey,
+      GestureDetector(
+        onLongPress: onEditKey,
+        child: SwitchListTile(
+          value: settings.autoSelectProvider,
+          onChanged: (val) => ...,
+          title: Text("Auto Select"),
+        ),
+      )
     );
   }
 
