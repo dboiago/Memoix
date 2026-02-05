@@ -40,9 +40,13 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
+.gradle/
+local.properties
 /android/app/debug
 /android/app/profile
 /android/app/release
+**/android/**/generated/
+**/android/app/src/main/res/values/strings.xml
 
 # iOS
 **/ios/Pods/
