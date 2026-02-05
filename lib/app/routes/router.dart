@@ -44,6 +44,7 @@ import '../../features/personal_storage/screens/personal_storage_screen.dart';
 import '../../features/personal_storage/screens/shared_storage_screen.dart';
 import '../../features/personal_storage/screens/share_storage_screen.dart';
 import '../../features/personal_storage/models/storage_location.dart';
+import '../../features/ai/screens/agents_settings_screen.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -130,6 +131,14 @@ class AppRoutes {
       ),
     );
   }
+
+  static void toAgentsSettings(BuildContext context) {
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (_) => const AgentsSettingsScreen(),
+    ),
+  );
+}
 
   static void toShareRecipe(BuildContext context, {String? recipeId}) {
     AppShellNavigator.navigatorKey.currentState!.push(
@@ -403,3 +412,4 @@ class AppRoutes {
     );
   }
 }
+
