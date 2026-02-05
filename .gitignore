@@ -46,6 +46,12 @@ app.*.map.json
 **/android/generated/
 **/android/app/src/main/res/values/gradle.xml
 
+# Visual Studio / C++
+*.vcxproj
+*.user
+*.filters
+*.sln
+
 # iOS
 **/ios/Pods/
 **/ios/.symlinks/
@@ -56,6 +62,8 @@ app.*.map.json
 **/macos/Flutter/ephemeral/
 
 # Windows
+Thumbs.db
+desktop.ini
 /windows/flutter/ephemeral/
 /windows/flutter/generated_config.cmake
 /windows/runner/*.exe
