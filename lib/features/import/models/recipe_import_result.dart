@@ -169,6 +169,10 @@ class RecipeImportResult {
     return recipe;
   }
 
+  factory RecipeImportResult.fromAi(Map<String, dynamic> data) {
+    // TODO: logic to parse AI response into a result
+  }
+
   /// Convert to a ModernistRecipe (for high-confidence Modernist imports)
   ModernistRecipe toModernistRecipe(String uuid) {
     // Convert regular ingredients to ModernistIngredients, preserving sections
@@ -781,3 +785,4 @@ class RawDirectionData {
     this.isSelected = true,
   });
 }
+
