@@ -68,6 +68,12 @@ class IngredientService {
   }
 
   /// Normalizes input to isolate core ingredient name
+  /// Useful for deduplication in shopping lists
+  String normalize(String input) {
+    return _normalize(input);
+  }
+
+  /// Internal normalization logic
   String _normalize(String input) {
     return input.toLowerCase()
         .trim()
