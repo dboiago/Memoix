@@ -276,21 +276,32 @@ class ShoppingListDetailScreen extends ConsumerWidget {
               ),
             ],
           ),
-          body: ListView.builder(
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            itemCount: list.items.length,
-            itemBuilder: (context, index) {
-              final item = list.items[index];
-              return _ShoppingItemTile(
-                item: item,
-                onToggle: () async {
-                  await ref.read(shoppingListServiceProvider).toggleItem(list, index);
-                },
-                onDelete: () async {
-                  await ref.read(shoppingListServiceProvider).removeItem(list, index);
-                },
+          body: ListView(
+            padding: const EdgeInsets.only(bottom: 88),
+            children: list.groupedItems.entries.map((entry) {
+              final category = entry.key;
+              final items = entry.value;
+              
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _CategoryHeader(title: category),
+                  ...items.map((item) {
+                    final index = list.items.indexOf(item);
+                    return _ShoppingItemTile(
+                      item: item,
+                      onToggle: () async {
+                        await ref.read(shoppingListServiceProvider).toggleItem(list, index);
+                      },
+                      onDelete: () async {
+                        await ref.read(shoppingListServiceProvider).removeItem(list, index);
+                      },
+                    );
+                  }),
+                ],
               );
-            },
+            }).toList(),
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () => _addItem(context, ref, list),
@@ -404,6 +415,28 @@ class ShoppingListDetailScreen extends ConsumerWidget {
             child: const Text('Rename'),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _CategoryHeader extends StatelessWidget {
+  final String title;
+
+  const _CategoryHeader({required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 24, 16, 8),
+      child: Text(
+        title.toUpperCase(),
+        style: theme.textTheme.labelLarge?.copyWith(
+          color: theme.colorScheme.primary,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 1.2,
+        ),
       ),
     );
   }

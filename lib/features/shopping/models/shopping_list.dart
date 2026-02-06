@@ -197,7 +197,8 @@ class ShoppingListService {
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null) {
       // 1. Normalize Name and Amount
-      item.name = TextNormalizer.cleanName(item.name);
+      final normalizedName = TextNormalizer.cleanName(item.name);
+      item.name = normalizedName;
       
       // Attempt to normalize complex amount string (e.g. "2 tablespoons" -> "2 Tbsp")
       if (item.amount != null && item.amount!.isNotEmpty) {
@@ -210,14 +211,49 @@ class ShoppingListService {
         item.category = _categoryDisplayName(catEnum);
       }
 
-      final newItems = List<ShoppingItem>.from(latestList.items)..add(item);
+      final newItems = List<ShoppingItem>.from(latestList.items);
+
+      // 3. Check for Existing Item (Merge Strategy)
+      // We look for an exact name match (normalized)
+      final existingIndex = newItems.indexWhere((i) => i.name == item.name);
+
+      if (existingIndex != -1) {
+        // Merge logic
+        final existing = newItems[existingIndex];
+        
+        // Combine amounts
+        final combinedAmount = _combineAmounts(existing.amount, item.amount);
+        
+        // Create updated item
+        newItems[existingIndex] = ShoppingItem()
+          ..name = existing.name
+          ..amount = combinedAmount
+          ..unit = existing.unit // Keep existing unit or attempt merge? Simple is best for manual.
+          ..category = existing.category // Keep existing category
+          ..recipeSource = existing.recipeSource // Keep existing source info
+          ..manualNotes = (existing.manualNotes?.isNotEmpty == true) 
+              ? '${existing.manualNotes}, Manual Add' 
+              : 'Manual Add'
+          ..isChecked = false; // Uncheck when adding more
+      } else {
+        // New item
+        newItems.add(item);
+      }
       
-      // 3. Sort entire list by Category Flow then Name
+      // 4. Sort entire list by Category Flow then Name
       _sortItems(newItems);
 
       latestList.items = newItems;
       await _db.writeTxn(() => _db.shoppingLists.put(latestList));
     }
+  }
+
+  String? _combineAmounts(String? a, String? b) {
+    if (a == null || a.isEmpty) return b;
+    if (b == null || b.isEmpty) return a;
+    // If they are identical, maybe don't duplicate? "1 each + 1 each" vs "2 each"
+    // Since parsing manual text is hard, just concatenating is safe: "1 large + 2"
+    return '$a + $b';
   }
 
   /// Sorts items in place based on Store Flow and Name
