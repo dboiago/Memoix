@@ -215,10 +215,11 @@ class ShoppingListService {
       final newItems = List<ShoppingItem>.from(latestList.items);
 
       // 3. Check for Existing Item (Merge Strategy)
-      // Case-insensitive match to handle "Tomato Paste" vs "Tomato paste"
-      final lowerName = item.name.toLowerCase();
+      // Use IngredientService.normalize() so "Egg" and "Eggs" resolve to the same key
+      final svc = IngredientService();
+      final mergeKey = svc.normalize(item.name);
       final existingIndex = newItems.indexWhere(
-        (i) => i.name.toLowerCase() == lowerName,
+        (i) => svc.normalize(i.name) == mergeKey,
       );
 
       if (existingIndex != -1) {

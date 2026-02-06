@@ -15,6 +15,7 @@ class IngredientService {
 
   Map<String, int> _lookupMap = {};
   List<String> _sortedKeys = [];
+  Set<String> _fallbackKeys = {};
   bool _isInitialized = false;
 
   /// Call this once at app startup
@@ -324,6 +325,9 @@ class IngredientService {
     fallback.forEach((k, v) {
       _lookupMap[k] = v;
     });
+    
+    // Track which keys came from the authoritative fallback
+    _fallbackKeys = fallback.keys.toSet();
 
     // Re-sort keys by length descending for longest-match-first
     _sortedKeys = _lookupMap.keys.toList()
@@ -335,17 +339,36 @@ class IngredientService {
     if (!_isInitialized || input.isEmpty) return IngredientCategory.unknown;
 
     final normalized = _normalize(input);
+    if (normalized.isEmpty) return IngredientCategory.unknown;
 
-    // Step 1: Exact Match (Fastest)
+    // Step 1: Exact match on the full normalized string
     if (_lookupMap.containsKey(normalized)) {
-      return _indexToCategory(_lookupMap[normalized]!);
+      final idx = _lookupMap[normalized]!;
+      // Trust exact matches from gzip ONLY if they are non-produce (index > 0)
+      // or are in the fallback map (which always overwrites).
+      // Produce (0) from gzip is unreliable because the OFF script defaulted
+      // everything uncategorised to produce.
+      if (idx != 0) {
+        return _indexToCategory(idx);
+      }
+      // For idx == 0, check if this key exists in the fallback (authoritative).
+      // Fallback always overwrites, so if it's still 0 here, it means the
+      // fallback intentionally set it to produce — trust it.
+      if (_fallbackKeys.contains(normalized)) {
+        return IngredientCategory.produce;
+      }
+      // Otherwise idx 0 came from gzip — unreliable, continue searching
     }
 
-    // Step 2: Greedy Substring Match
-    // We iterate through keys starting from the longest strings.
+    // Step 2: Greedy Substring Match (longest key first)
+    // Minimum key length of 3 to prevent false matches like "za" from "pizza"
     for (final key in _sortedKeys) {
+      if (key.length < 3) continue;
       if (normalized.contains(key)) {
-        return _indexToCategory(_lookupMap[key]!);
+        final idx = _lookupMap[key]!;
+        // Same produce-skepticism: skip gzip-sourced produce
+        if (idx == 0 && !_fallbackKeys.contains(key)) continue;
+        return _indexToCategory(idx);
       }
     }
 
