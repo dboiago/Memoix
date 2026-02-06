@@ -23,7 +23,8 @@ class IngredientService {
 
     try {
       // 1. Load the Gzipped binary from assets
-      final ByteData data = await rootBundle.load('assets/ingredients.json.gz');
+      // Corrected path to match workspace structure
+      final ByteData data = await rootBundle.load('assets/ingredients/ingredients_json.gz');
       final List<int> bytes = data.buffer.asUint8List();
 
       // 2. Decompress and decode JSON
@@ -73,7 +74,8 @@ class IngredientService {
         // Remove quantities and common measurement units
         .replaceAll(RegExp(r'\b(\d+|cups?|tbsps?|tsps?|oz|grams?|kg|ml|l|lb|units?|pinch|handful|dash)\b'), '')
         // Remove common recipe adjectives that aren't part of the ingredient identity
-        .replaceAll(RegExp(r'\b(organic|fresh|diced|chopped|sliced|frozen|dried|cold|pressed|extra|virgin|large|small|minced)\b'), '')
+        // Added negative lookbehind (?<!-) to protect compound words like "sun-dried"
+        .replaceAll(RegExp(r'(?<!-)\b(organic|fresh|diced|chopped|sliced|frozen|dried|cold|pressed|extra|virgin|large|small|minced)\b'), '')
         // Simple plural handling
         .replaceAll(RegExp(r's$'), '')
         .replaceAll(RegExp(r'\s+'), ' ')

@@ -27,11 +27,17 @@ void main() {
       final gzippedBytes = GZipCodec().encode(utf8Bytes);
       final byteData = ByteData.view(Uint8List.fromList(gzippedBytes).buffer);
 
-      // Intercept rootBundle loading
+      // Intercept rootBundle loading using setMockMessageHandler
       TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-          .setMock(rootBundle.load('assets/ingredients.json.gz'),
-              (ByteData? message) async {
-        return byteData;
+          .setMockMessageHandler('flutter/assets', (ByteData? message) async {
+        // In most environments, the message is the UTF-8 encoded asset key
+        if (message == null) return null;
+        final String key = utf8.decode(message.buffer.asUint8List());
+        
+        if (key == 'assets/ingredients/ingredients_json.gz') {
+          return byteData;
+        }
+        return null; // Return null to signal 404 or let other handlers try
       });
 
       service = IngredientService();
