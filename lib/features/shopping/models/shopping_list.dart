@@ -292,14 +292,6 @@ class ShoppingListService {
     }
     return null;
   }
-}
-
-class _ParsedAmount {
-  final double qty;
-  final String unit;
-  _ParsedAmount(this.qty, this.unit);
-}
-
 
   /// Sorts items in place based on Store Flow and Name
   void _sortItems(List<ShoppingItem> items) {
@@ -381,3 +373,9 @@ class _ParsedAmount {
 }
 
 // Providers moved to core/providers.dart
+
+class _ParsedAmount {
+  final double qty;
+  final String unit;
+  _ParsedAmount(this.qty, this.unit);
+}
