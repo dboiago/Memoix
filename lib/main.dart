@@ -7,6 +7,7 @@ import 'package:window_manager/window_manager.dart';
 
 import 'app/app.dart';
 import 'core/database/database.dart';
+import 'core/utils/ingredient_categorizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,6 +35,9 @@ void main() async {
 
   // Initialize local database
   await MemoixDatabase.initialize();
+  
+  // Initialize Ingredient Service
+  await IngredientService().initialize();
   
   // Refresh courses to apply any order/name updates
   await MemoixDatabase.refreshCourses();
