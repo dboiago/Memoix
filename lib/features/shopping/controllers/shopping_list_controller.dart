@@ -97,7 +97,7 @@ class ShoppingListController {
     IngredientCategory.flour:     'Baking',
     IngredientCategory.sugar:     'Baking',
     IngredientCategory.leavening: 'Baking',
-    IngredientCategory.nut:       'Nuts & Seeds',
+    IngredientCategory.nut:       'Baking',
     IngredientCategory.juice:     'Beverages',
     IngredientCategory.beverage:  'Beverages',
     IngredientCategory.alcohol:   'Beverages',
@@ -116,7 +116,6 @@ class ShoppingListController {
     'Spices & Seasonings',
     'Condiments & Sauces',
     'Oils & Vinegars',
-    'Nuts & Seeds',
     'Beverages',
     'Other',
   ];
