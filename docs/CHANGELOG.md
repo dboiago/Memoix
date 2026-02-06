@@ -31,6 +31,7 @@
 - Updated comparison screen to reset state only when appropriate, preserving in-progress work during import flows
 - Updated navigation and state management for recipe comparison to use RouteObserver and RouteAware for reliable resets.
 - Updated draft and scratch pad screens to improve provider refresh and tab handling
+- Updated application ID from `com.example.memoix` to `io.github.dboiago.memoix`
 - [Internal] Restructured code for provider-specific initialization and error handling in storage services
 - [Internal] Cleaned up duplicate code and improved debug logging in import and storage modules
 - [Internal] Restructured Compare button UI to group elements for more reliable reactive hiding/showing
