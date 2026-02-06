@@ -92,6 +92,7 @@ class ShoppingListController {
     IngredientCategory.flour,
     IngredientCategory.spice,
     IngredientCategory.condiment,
+    IngredientCategory.pantry,
     IngredientCategory.oil,
     IngredientCategory.vinegar,
     IngredientCategory.nut,

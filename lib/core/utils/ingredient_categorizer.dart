@@ -5,7 +5,61 @@ import 'package:flutter/services.dart';
 enum IngredientCategory {
   produce, meat, poultry, seafood, egg, cheese, dairy,
   grain, pasta, legume, nut, spice, condiment, oil,
-  vinegar, flour, sugar, leavening, alcohol, pop, juice, beverage, unknown
+  vinegar, flour, sugar, leavening, alcohol, pop, juice, beverage,
+  unknown, // index 22 — must stay here for gzip compatibility
+  pantry,  // index 23 — jarred/canned/preserved goods, spreads (store center aisles)
+}
+
+/// Rich metadata for an ingredient from OpenFoodFacts.
+/// Available when ingredients_meta.gz is loaded.
+class IngredientMeta {
+  final int categoryIndex;
+  final bool isVegan;
+  final bool isVegetarian;
+  final String? allergens;
+  final int? kcal;
+  final double? protein;
+  final double? carbs;
+  final double? fat;
+  final double? fiber;
+  final double? sodium;
+
+  const IngredientMeta({
+    required this.categoryIndex,
+    this.isVegan = false,
+    this.isVegetarian = false,
+    this.allergens,
+    this.kcal,
+    this.protein,
+    this.carbs,
+    this.fat,
+    this.fiber,
+    this.sodium,
+  });
+
+  factory IngredientMeta.fromJson(Map<String, dynamic> json) {
+    return IngredientMeta(
+      categoryIndex: json['cat'] as int? ?? 22,
+      isVegan: json['vegan'] as bool? ?? false,
+      isVegetarian: json['vegetarian'] as bool? ?? false,
+      allergens: json['allergens'] as String?,
+      kcal: json['kcal'] as int?,
+      protein: (json['protein'] as num?)?.toDouble(),
+      carbs: (json['carbs'] as num?)?.toDouble(),
+      fat: (json['fat'] as num?)?.toDouble(),
+      fiber: (json['fiber'] as num?)?.toDouble(),
+      sodium: (json['sodium'] as num?)?.toDouble(),
+    );
+  }
+
+  /// The "true" category from OpenFoodFacts data (may differ from shopping
+  /// aisle category used by classify()).
+  IngredientCategory get trueCategory {
+    if (categoryIndex < 0 || categoryIndex >= IngredientCategory.values.length) {
+      return IngredientCategory.unknown;
+    }
+    return IngredientCategory.values[categoryIndex];
+  }
 }
 
 class IngredientService {
@@ -14,9 +68,11 @@ class IngredientService {
   IngredientService._internal();
 
   Map<String, int> _lookupMap = {};
+  Map<String, IngredientMeta> _metaMap = {};
   List<String> _sortedKeys = [];
   Set<String> _fallbackKeys = {};
   bool _isInitialized = false;
+  bool _metaLoaded = false;
 
   /// Call this once at app startup
   Future<void> initialize() async {
@@ -50,6 +106,51 @@ class IngredientService {
       _injectFallbackData();
       _isInitialized = true;
     }
+
+    // Load metadata (non-blocking, best-effort)
+    await _loadMeta();
+  }
+
+  /// Loads the rich metadata file (ingredients_meta.gz).
+  /// Non-critical — app works fine without it.
+  Future<void> _loadMeta() async {
+    if (_metaLoaded) return;
+    try {
+      final ByteData data = await rootBundle.load('assets/ingredients/ingredients_meta.gz');
+      final List<int> bytes = data.buffer.asUint8List();
+      final decodedBytes = GZipCodec().decode(bytes);
+      final String jsonString = utf8.decode(decodedBytes);
+      final Map<String, dynamic> rawMap = json.decode(jsonString);
+
+      _metaMap = rawMap.map((key, value) =>
+        MapEntry(key, IngredientMeta.fromJson(value as Map<String, dynamic>)));
+      _metaLoaded = true;
+    } catch (e) {
+      // Meta is optional — don't fail init
+      print("IngredientService meta load skipped: $e");
+    }
+  }
+
+  /// Whether rich metadata is available.
+  bool get hasMetadata => _metaLoaded;
+
+  /// Look up rich metadata for an ingredient (allergens, nutrition, etc.).
+  /// Returns null if meta file not loaded or ingredient not found.
+  IngredientMeta? lookupMeta(String input) {
+    if (!_metaLoaded) return null;
+    final normalized = _normalize(input);
+    if (normalized.isEmpty) return null;
+
+    // Exact match first
+    if (_metaMap.containsKey(normalized)) return _metaMap[normalized];
+
+    // Substring match (longest key first)
+    for (final key in _metaMap.keys.toList()
+        ..sort((a, b) => b.length.compareTo(a.length))) {
+      if (key.length < 3) continue;
+      if (normalized.contains(key)) return _metaMap[key];
+    }
+    return null;
   }
 
   void _injectFallbackData() {
@@ -212,7 +313,7 @@ class IngredientService {
       'italian seasoning': IngredientCategory.spice.index,
       'onion powder': IngredientCategory.spice.index,
       'garlic powder': IngredientCategory.spice.index,
-      // Condiment
+      // Condiment (true condiments — found in the condiment aisle)
       'soy sauce': IngredientCategory.condiment.index,
       'fish sauce': IngredientCategory.condiment.index,
       'worcestershire': IngredientCategory.condiment.index,
@@ -220,19 +321,43 @@ class IngredientService {
       'ketchup': IngredientCategory.condiment.index,
       'mustard': IngredientCategory.condiment.index,
       'mayonnaise': IngredientCategory.condiment.index,
-      'tomato paste': IngredientCategory.condiment.index,
-      'tomato sauce': IngredientCategory.condiment.index,
       'sriracha': IngredientCategory.condiment.index,
       'hoisin sauce': IngredientCategory.condiment.index,
       'oyster sauce': IngredientCategory.condiment.index,
-      'miso': IngredientCategory.condiment.index,
-      'tahini': IngredientCategory.condiment.index,
       'dijon': IngredientCategory.condiment.index,
       'sambal': IngredientCategory.condiment.index,
-      'pesto': IngredientCategory.condiment.index,
       'salsa': IngredientCategory.condiment.index,
       'barbecue sauce': IngredientCategory.condiment.index,
       'teriyaki sauce': IngredientCategory.condiment.index,
+      // Pantry (jarred, canned, preserved, spreads — store center aisles)
+      'tomato paste': IngredientCategory.pantry.index,
+      'tomato sauce': IngredientCategory.pantry.index,
+      'sun-dried tomato': IngredientCategory.pantry.index,
+      'sun dried tomato': IngredientCategory.pantry.index,
+      'sundried tomato': IngredientCategory.pantry.index,
+      'pickle': IngredientCategory.pantry.index,
+      'pickled': IngredientCategory.pantry.index,
+      'olive': IngredientCategory.pantry.index,
+      'caper': IngredientCategory.pantry.index,
+      'artichoke heart': IngredientCategory.pantry.index,
+      'roasted pepper': IngredientCategory.pantry.index,
+      'roasted red pepper': IngredientCategory.pantry.index,
+      'canned tomato': IngredientCategory.pantry.index,
+      'diced tomato': IngredientCategory.pantry.index,
+      'crushed tomato': IngredientCategory.pantry.index,
+      'whole tomato': IngredientCategory.pantry.index,
+      'peanut butter': IngredientCategory.pantry.index,
+      'almond butter': IngredientCategory.pantry.index,
+      'cashew butter': IngredientCategory.pantry.index,
+      'nutella': IngredientCategory.pantry.index,
+      'miso': IngredientCategory.pantry.index,
+      'tahini': IngredientCategory.pantry.index,
+      'pesto': IngredientCategory.pantry.index,
+      'coconut cream': IngredientCategory.pantry.index,
+      'anchovy paste': IngredientCategory.pantry.index,
+      'harissa': IngredientCategory.pantry.index,
+      'gochujang': IngredientCategory.pantry.index,
+      'chipotle': IngredientCategory.pantry.index,
       // Oil
       'oil': IngredientCategory.oil.index,
       'olive oil': IngredientCategory.oil.index,
@@ -280,11 +405,10 @@ class IngredientService {
       'cashew': IngredientCategory.nut.index,
       'pistachio': IngredientCategory.nut.index,
       'peanut': IngredientCategory.nut.index,
-      'peanut butter': IngredientCategory.nut.index,
       'pine nut': IngredientCategory.nut.index,
       'hazelnut': IngredientCategory.nut.index,
       'coconut': IngredientCategory.nut.index,
-      'coconut milk': IngredientCategory.nut.index,
+      'coconut milk': IngredientCategory.pantry.index,
       'sesame seed': IngredientCategory.nut.index,
       // Alcohol
       'wine': IngredientCategory.alcohol.index,

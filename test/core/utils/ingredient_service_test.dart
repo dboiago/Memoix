@@ -12,8 +12,8 @@ void main() {
 
     // Mock data mimicking the production JSON structure
     final Map<String, int> mockDatabase = {
-      'sun-dried tomato': IngredientCategory.condiment.index,
-      'coconut milk': IngredientCategory.beverage.index,
+      'sun-dried tomato': IngredientCategory.pantry.index,
+      'coconut milk': IngredientCategory.pantry.index,
       'milk': IngredientCategory.dairy.index, // For substring conflict test
       'chicken breast': IngredientCategory.poultry.index,
       'kosher salt': IngredientCategory.spice.index,
@@ -66,7 +66,7 @@ void main() {
       // So Longest Match Wins should catch it.
       
       final result = service.classify('2 cups organic sun-dried tomatoes');
-      expect(result, IngredientCategory.condiment);
+      expect(result, IngredientCategory.pantry);
     });
 
     test('Matching Logic: "100ml cold-pressed coconut milk" (Longest Match)', () {
@@ -74,7 +74,7 @@ void main() {
       // "100ml" removed. "cold" removed. "pressed" removed.
       // "coconut milk" remains.
       final result = service.classify('100ml cold-pressed coconut milk');
-      expect(result, IngredientCategory.beverage);
+      expect(result, IngredientCategory.pantry);
       expect(result, isNot(IngredientCategory.dairy));
     });
 

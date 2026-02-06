@@ -17,7 +17,7 @@ The category index maps to the IngredientCategory enum in Dart:
   0=produce, 1=meat, 2=poultry, 3=seafood, 4=egg, 5=cheese, 6=dairy,
   7=grain, 8=pasta, 9=legume, 10=nut, 11=spice, 12=condiment, 13=oil,
   14=vinegar, 15=flour, 16=sugar, 17=leavening, 18=alcohol, 19=pop,
-  20=juice, 21=beverage, 22=unknown
+  20=juice, 21=beverage, 22=unknown, 23=pantry
 """
 
 import argparse
@@ -37,7 +37,7 @@ CATEGORIES = [
     "produce", "meat", "poultry", "seafood", "egg", "cheese", "dairy",
     "grain", "pasta", "legume", "nut", "spice", "condiment", "oil",
     "vinegar", "flour", "sugar", "leavening", "alcohol", "pop", "juice",
-    "beverage", "unknown"
+    "beverage", "unknown", "pantry"
 ]
 CAT = {cat: i for i, cat in enumerate(CATEGORIES)}
 UNKNOWN = CAT["unknown"]
@@ -52,11 +52,34 @@ UNKNOWN = CAT["unknown"]
 # =============================================================================
 KEYWORD_RULES = [
     # ── Specific multi-word items (must come first: longest match wins) ──
-    (["tomato paste"],          "condiment"),
-    (["tomato sauce"],          "condiment"),
-    (["tomato puree"],          "condiment"),
+    # Pantry items (jarred/canned/preserved goods, spreads — store center aisles)
+    (["tomato paste"],          "pantry"),
+    (["tomato sauce"],          "pantry"),
+    (["tomato puree"],          "pantry"),
+    (["sun-dried tomato"],      "pantry"),
+    (["sundried tomato"],       "pantry"),
+    (["sun dried tomato"],      "pantry"),
+    (["canned tomato"],         "pantry"),
+    (["diced tomato"],          "pantry"),
+    (["crushed tomato"],        "pantry"),
+    (["whole tomato"],          "pantry"),
+    (["roasted pepper"],        "pantry"),
+    (["artichoke heart"],       "pantry"),
+    (["olive"],                 "pantry"),
+    (["caper"],                 "pantry"),
+    (["pickle"],                "pantry"),
+    (["gherkin"],               "pantry"),
+    (["coconut cream"],         "pantry"),
+    (["coconut milk"],          "pantry"),
+    (["anchovy paste"],         "pantry"),
+    (["chipotle"],              "pantry"),
+    (["harissa"],               "pantry"),
+    (["gochujang"],             "pantry"),
+    (["miso"],                  "pantry"),
+    (["tahini"],                "pantry"),
+    (["pesto"],                 "pantry"),
+    # True condiments (found in the condiment aisle)
     (["tomato ketchup"],        "condiment"),
-    (["sun-dried tomato"],      "condiment"),
     (["soy sauce"],             "condiment"),
     (["fish sauce"],            "condiment"),
     (["hot sauce"],             "condiment"),
@@ -77,13 +100,14 @@ KEYWORD_RULES = [
     (["sambal"],                "condiment"),
     (["chutney"],               "condiment"),
     (["relish"],                "condiment"),
-    (["pickle"],                "condiment"),
     (["dressing"],              "condiment"),
 
-    (["coconut milk"],          "nut"),
-    (["almond milk"],           "nut"),
-    (["oat milk"],              "grain"),
-    (["soy milk"],              "legume"),
+    # Nut butters / spreads → pantry (not with whole nuts)
+    (["peanut butter"],         "pantry"),
+    (["almond butter"],         "pantry"),
+    (["cashew butter"],         "pantry"),
+    (["nutella"],               "pantry"),
+    (["hazelnut spread"],       "pantry"),
 
     (["chicken stock"],         "beverage"),
     (["chicken broth"],         "beverage"),
@@ -97,9 +121,10 @@ KEYWORD_RULES = [
     (["blue cheese"],           "cheese"),
     (["cottage cheese"],        "cheese"),
 
-    (["peanut butter"],         "nut"),
-    (["almond butter"],         "nut"),
-    (["cashew butter"],         "nut"),
+    # Plant milks
+    (["almond milk"],           "pantry"),
+    (["oat milk"],              "pantry"),
+    (["soy milk"],              "pantry"),
 
     (["olive oil"],             "oil"),
     (["sesame oil"],            "oil"),
