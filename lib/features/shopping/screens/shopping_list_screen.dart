@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/theme/colors.dart';
+import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/shopping_list.dart';
 import '../../../core/providers.dart';
@@ -297,6 +298,9 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                       onDelete: () async {
                         await ref.read(shoppingListServiceProvider).removeItem(list, index);
                       },
+                      onRecipeTap: item.recipeSource != null && item.recipeSource!.isNotEmpty
+                          ? () => _navigateToRecipe(context, ref, item.recipeSource!)
+                          : null,
                     );
                   }),
                 ],
@@ -384,6 +388,63 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     );
   }
 
+  Future<void> _navigateToRecipe(BuildContext context, WidgetRef ref, String recipeSource) async {
+    final names = recipeSource.split(', ').where((s) => s.isNotEmpty).toList();
+    if (names.isEmpty) return;
+
+    final repo = ref.read(recipeRepositoryProvider);
+
+    if (names.length == 1) {
+      // Single recipe — navigate directly
+      final results = await repo.searchRecipes(names.first);
+      final match = results.where(
+        (r) => r.name.toLowerCase() == names.first.toLowerCase(),
+      ).firstOrNull;
+      if (match != null && context.mounted) {
+        AppRoutes.toRecipeDetail(context, match.uuid);
+      }
+    } else {
+      // Multiple recipes — let the user pick
+      if (!context.mounted) return;
+      final theme = Theme.of(context);
+      showModalBottomSheet(
+        context: context,
+        builder: (ctx) => SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                child: Text(
+                  'From Recipes',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              ...names.map((name) => ListTile(
+                title: Text(name),
+                trailing: Icon(Icons.chevron_right, color: theme.colorScheme.outline),
+                onTap: () async {
+                  Navigator.pop(ctx);
+                  final results = await repo.searchRecipes(name);
+                  final match = results.where(
+                    (r) => r.name.toLowerCase() == name.toLowerCase(),
+                  ).firstOrNull;
+                  if (match != null && context.mounted) {
+                    AppRoutes.toRecipeDetail(context, match.uuid);
+                  }
+                },
+              )),
+              const SizedBox(height: 8),
+            ],
+          ),
+        ),
+      );
+    }
+  }
+
   void _showRenameDialog(BuildContext context, WidgetRef ref, ShoppingList list) {
     final controller = TextEditingController(text: list.name);
     showDialog(
@@ -446,11 +507,13 @@ class _ShoppingItemTile extends StatefulWidget {
   final ShoppingItem item;
   final VoidCallback onToggle;
   final VoidCallback onDelete;
+  final VoidCallback? onRecipeTap;
 
   const _ShoppingItemTile({
     required this.item,
     required this.onToggle,
     required this.onDelete,
+    this.onRecipeTap,
   });
 
   @override
@@ -593,16 +656,28 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
                 ),
               )
             : null,
-        trailing: widget.item.recipeSource != null
-            ? Tooltip(
-                message: 'From: ${widget.item.recipeSource}',
-                child: Icon(
-                  Icons.restaurant,
-                  size: 16,
-                  color: theme.colorScheme.outline,
+        trailing: widget.item.recipeSource != null && widget.onRecipeTap != null
+            ? GestureDetector(
+                onTap: widget.onRecipeTap,
+                child: Tooltip(
+                  message: 'From: ${widget.item.recipeSource}',
+                  child: Icon(
+                    Icons.restaurant,
+                    size: 16,
+                    color: theme.colorScheme.primary,
+                  ),
                 ),
               )
-            : null,
+            : widget.item.recipeSource != null
+                ? Tooltip(
+                    message: 'From: ${widget.item.recipeSource}',
+                    child: Icon(
+                      Icons.restaurant,
+                      size: 16,
+                      color: theme.colorScheme.outline,
+                    ),
+                  )
+                : null,
         onTap: widget.onToggle,
       ),
     );

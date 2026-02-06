@@ -75,33 +75,55 @@ class ShoppingListController {
     return grouped;
   }
 
-  /// Public accessor for Store Flow
-  static const List<IngredientCategory> storeFlow = [
-    IngredientCategory.produce,
-    IngredientCategory.meat,
-    IngredientCategory.poultry,
-    IngredientCategory.seafood,
-    IngredientCategory.egg,
-    IngredientCategory.dairy,
-    IngredientCategory.cheese,
-    IngredientCategory.grain,
-    IngredientCategory.pasta,
-    IngredientCategory.legume,
-    IngredientCategory.leavening,
-    IngredientCategory.sugar,
-    IngredientCategory.flour,
-    IngredientCategory.spice,
-    IngredientCategory.condiment,
-    IngredientCategory.pantry,
-    IngredientCategory.oil,
-    IngredientCategory.vinegar,
-    IngredientCategory.nut,
-    IngredientCategory.juice,
-    IngredientCategory.beverage,
-    IngredientCategory.alcohol,
-    IngredientCategory.pop,
-    IngredientCategory.unknown,
+  /// Maps granular IngredientCategory to a store aisle name.
+  /// Used by the shopping list for grouping; the rest of the app
+  /// continues to use the fine-grained enum.
+  static const Map<IngredientCategory, String> storeAisle = {
+    IngredientCategory.produce:   'Produce',
+    IngredientCategory.meat:      'Meat & Seafood',
+    IngredientCategory.poultry:   'Meat & Seafood',
+    IngredientCategory.seafood:   'Meat & Seafood',
+    IngredientCategory.egg:       'Dairy & Eggs',
+    IngredientCategory.cheese:    'Dairy & Eggs',
+    IngredientCategory.dairy:     'Dairy & Eggs',
+    IngredientCategory.grain:     'Grains & Pasta',
+    IngredientCategory.pasta:     'Grains & Pasta',
+    IngredientCategory.legume:    'Pantry',
+    IngredientCategory.pantry:    'Pantry',
+    IngredientCategory.condiment: 'Condiments & Sauces',
+    IngredientCategory.spice:     'Spices & Seasonings',
+    IngredientCategory.oil:       'Oils & Vinegars',
+    IngredientCategory.vinegar:   'Oils & Vinegars',
+    IngredientCategory.flour:     'Baking',
+    IngredientCategory.sugar:     'Baking',
+    IngredientCategory.leavening: 'Baking',
+    IngredientCategory.nut:       'Nuts & Seeds',
+    IngredientCategory.juice:     'Beverages',
+    IngredientCategory.beverage:  'Beverages',
+    IngredientCategory.alcohol:   'Beverages',
+    IngredientCategory.pop:       'Beverages',
+    IngredientCategory.unknown:   'Other',
+  };
+
+  /// Store aisle order — the sequence a shopper would walk.
+  static const List<String> storeAisleFlow = [
+    'Produce',
+    'Meat & Seafood',
+    'Dairy & Eggs',
+    'Grains & Pasta',
+    'Pantry',
+    'Baking',
+    'Spices & Seasonings',
+    'Condiments & Sauces',
+    'Oils & Vinegars',
+    'Nuts & Seeds',
+    'Beverages',
+    'Other',
   ];
+
+  /// Resolve a category enum to a store aisle name.
+  static String aisleFor(IngredientCategory cat) =>
+      storeAisle[cat] ?? 'Other';
 
   /// Parses diverse quantity strings into a double.
   /// 

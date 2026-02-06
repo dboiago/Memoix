@@ -149,15 +149,10 @@ class ShoppingListService {
   }
 
   String _categoryDisplayName(dynamic cat) {
-    // Handle both Enum and String input if necessary, though mostly Enum here
-    String s = '';
     if (cat is IngredientCategory) {
-      if (cat == IngredientCategory.unknown) return 'Other';
-      s = cat.name;
-    } else {
-      s = cat.toString();
+      return ShoppingListController.aisleFor(cat);
     }
-    
+    final s = cat.toString();
     if (s.isEmpty) return 'Other';
     return s[0].toUpperCase() + s.substring(1);
   }
@@ -291,7 +286,20 @@ class ShoppingListService {
         return '$totalStr $unitA';
       }
 
-      // 4. Incompatible units (e.g. 500g vs 2 count) → comma-separated
+      // 4. Count / descriptor items (e.g. "1 large" + "2" → "3 large")
+      // If neither side is a real measurement unit, sum as counts.
+      final aIsUnit = UnitNormalizer.isRecognizedUnit(unitA);
+      final bIsUnit = UnitNormalizer.isRecognizedUnit(unitB);
+
+      if (!aIsUnit && !bIsUnit) {
+        final total = pA.qty + pB.qty;
+        final totalStr = MeasurementConverter.formatNumber(total);
+        // Keep the more descriptive label (non-empty one)
+        final descriptor = unitA.isNotEmpty ? unitA : unitB;
+        return descriptor.isEmpty ? totalStr : '$totalStr $descriptor';
+      }
+
+      // 5. Truly incompatible units (e.g. 500g vs 2 cups) → comma-separated
       return '$a, $b';
     }
 
@@ -313,13 +321,11 @@ class ShoppingListService {
     return null;
   }
 
-  /// Sorts items in place based on Store Flow and Name
+  /// Sorts items in place based on Store Aisle Flow and Name
   void _sortItems(List<ShoppingItem> items) {
-    // build map for O(1) lookup
-    // Using simple string matching against the enum names
     final sortMap = <String, int>{};
-    for (int i = 0; i < ShoppingListController.storeFlow.length; i++) {
-     sortMap[_categoryDisplayName(ShoppingListController.storeFlow[i])] = i;
+    for (int i = 0; i < ShoppingListController.storeAisleFlow.length; i++) {
+      sortMap[ShoppingListController.storeAisleFlow[i]] = i;
     }
 
     items.sort((a, b) {
