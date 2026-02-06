@@ -1,5 +1,6 @@
 import 'package:isar/isar.dart';
 import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
+import 'package:memoix/features/tools/measurement_converter.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
 import 'package:memoix/core/utils/text_normalizer.dart';
 import 'package:memoix/core/utils/unit_normalizer.dart';
@@ -214,8 +215,11 @@ class ShoppingListService {
       final newItems = List<ShoppingItem>.from(latestList.items);
 
       // 3. Check for Existing Item (Merge Strategy)
-      // We look for an exact name match (normalized)
-      final existingIndex = newItems.indexWhere((i) => i.name == item.name);
+      // Case-insensitive match to handle "Tomato Paste" vs "Tomato paste"
+      final lowerName = item.name.toLowerCase();
+      final existingIndex = newItems.indexWhere(
+        (i) => i.name.toLowerCase() == lowerName,
+      );
 
       if (existingIndex != -1) {
         // Merge logic
@@ -252,40 +256,55 @@ class ShoppingListService {
     if (a == null || a.isEmpty) return b;
     if (b == null || b.isEmpty) return a;
 
-    // Attempt to parse and sum if units are compatible
     final pA = _simpleParse(a);
     final pB = _simpleParse(b);
 
     if (pA != null && pB != null) {
-      // Normalize units to check compatibility
       final unitA = UnitNormalizer.normalize(pA.unit);
       final unitB = UnitNormalizer.normalize(pB.unit);
 
-      if (unitA == unitB) {
+      // 1. Same unit (or both unitless) → sum directly
+      if (unitA.toLowerCase() == unitB.toLowerCase()) {
         final total = pA.qty + pB.qty;
-        // Format: 1.0 -> "1", 1.5 -> "1.5"
-        final totalStr = total.truncateToDouble() == total 
-            ? total.toInt().toString() 
-            : total.toString();
-        
+        final totalStr = MeasurementConverter.formatNumber(total);
         return unitA.isEmpty ? totalStr : '$totalStr $unitA';
       }
+
+      // 2. Both are volume → convert to same unit and sum
+      final volConvert = MeasurementConverter.convertVolume(
+        pB.qty, unitB, unitA,
+      );
+      if (volConvert != null) {
+        final total = pA.qty + volConvert;
+        final totalStr = MeasurementConverter.formatNumber(total);
+        return '$totalStr $unitA';
+      }
+
+      // 3. Both are weight → convert to same unit and sum
+      final weightConvert = MeasurementConverter.convertWeight(
+        pB.qty, unitB, unitA,
+      );
+      if (weightConvert != null) {
+        final total = pA.qty + weightConvert;
+        final totalStr = MeasurementConverter.formatNumber(total);
+        return '$totalStr $unitA';
+      }
+
+      // 4. Incompatible units (e.g. 500g vs 2 count) → comma-separated
+      return '$a, $b';
     }
 
-    // Fallback: concatenate
-    return '$a + $b';
+    // Could not parse one or both → comma-separated
+    return '$a, $b';
   }
 
   _ParsedAmount? _simpleParse(String s) {
-    // matches "1.5 kg", "2", "1/2 cup"
-    // We trust UnitNormalizer to handle cleaning, just extract roughly
-    final cleaned = TextNormalizer.normalizeFractions(s);
-    final match = RegExp(r'^([\d\.]+|[\d\.]+\s*[\d\./]+)\s*(.*)$').firstMatch(cleaned);
+    final cleaned = TextNormalizer.normalizeFractions(s.trim());
+    // Match: number (int/decimal/unicode fraction combo) then optional unit text
+    // E.g. "1.5 kg", "2", "½ cup", "1½ Tbsp"
+    final match = RegExp(r'^([\d]+(?:\.[\d]+)?)\s*(.*)$').firstMatch(cleaned);
     if (match != null) {
-      final numStr = match.group(1)?.replaceAll(' ', '') ?? '0';
-      // Handle "1 1/2" which regex might catch as "11/2" or valid. 
-      // Simplified: assume double.tryParse works or it sends back null
-      final qt = double.tryParse(numStr);
+      final qt = double.tryParse(match.group(1) ?? '');
       if (qt != null) {
         return _ParsedAmount(qt, match.group(2)?.trim() ?? '');
       }

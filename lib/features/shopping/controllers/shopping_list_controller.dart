@@ -38,8 +38,7 @@ class ShoppingListController {
         // Get or create builder
         final builder = builders.putIfAbsent(canonical, () => _TermBuilder(
           canonical: canonical,
-          // Use Title Case for display (e.g., "Yellow Onion")
-          displayName: TextNormalizer.toTitleCase(canonical),
+          displayName: TextNormalizer.cleanName(canonical),
           category: _ingredientService.classify(ingredient.name),
         ));
 

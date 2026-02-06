@@ -52,57 +52,280 @@ class IngredientService {
   }
 
   void _injectFallbackData() {
-    // Basic fallback map to ensure key ingredients work even if asset is bad
-    final fallback = {
+    // Authoritative fallback map — always wins over gzip data.
+    // This guarantees correct categorization for common ingredients
+    // regardless of gzip quality.
+    final fallback = <String, int>{
+      // Produce
       'onion': IngredientCategory.produce.index,
-      'bacon': IngredientCategory.meat.index,
       'garlic': IngredientCategory.produce.index,
       'apple': IngredientCategory.produce.index,
-      'chicken': IngredientCategory.poultry.index,
+      'tomato': IngredientCategory.produce.index,
+      'potato': IngredientCategory.produce.index,
+      'carrot': IngredientCategory.produce.index,
+      'celery': IngredientCategory.produce.index,
+      'lettuce': IngredientCategory.produce.index,
+      'spinach': IngredientCategory.produce.index,
+      'broccoli': IngredientCategory.produce.index,
+      'cucumber': IngredientCategory.produce.index,
+      'bell pepper': IngredientCategory.produce.index,
+      'zucchini': IngredientCategory.produce.index,
+      'mushroom': IngredientCategory.produce.index,
+      'avocado': IngredientCategory.produce.index,
+      'lemon': IngredientCategory.produce.index,
+      'lime': IngredientCategory.produce.index,
+      'orange': IngredientCategory.produce.index,
+      'ginger': IngredientCategory.produce.index,
+      'scallion': IngredientCategory.produce.index,
+      'green onion': IngredientCategory.produce.index,
+      'shallot': IngredientCategory.produce.index,
+      'jalapeño': IngredientCategory.produce.index,
+      'jalapeno': IngredientCategory.produce.index,
+      'cilantro': IngredientCategory.produce.index,
+      'parsley': IngredientCategory.produce.index,
+      'basil': IngredientCategory.produce.index,
+      'thyme': IngredientCategory.produce.index,
+      'rosemary': IngredientCategory.produce.index,
+      'mint': IngredientCategory.produce.index,
+      'dill': IngredientCategory.produce.index,
+      'cabbage': IngredientCategory.produce.index,
+      'kale': IngredientCategory.produce.index,
+      'corn': IngredientCategory.produce.index,
+      'asparagus': IngredientCategory.produce.index,
+      'eggplant': IngredientCategory.produce.index,
+      'pea': IngredientCategory.produce.index,
+      'green bean': IngredientCategory.produce.index,
+      'sweet potato': IngredientCategory.produce.index,
+      // Meat
       'beef': IngredientCategory.meat.index,
+      'steak': IngredientCategory.meat.index,
+      'ground beef': IngredientCategory.meat.index,
       'pork': IngredientCategory.meat.index,
+      'bacon': IngredientCategory.meat.index,
+      'ham': IngredientCategory.meat.index,
+      'sausage': IngredientCategory.meat.index,
+      'lamb': IngredientCategory.meat.index,
+      'veal': IngredientCategory.meat.index,
+      'prosciutto': IngredientCategory.meat.index,
+      'pancetta': IngredientCategory.meat.index,
+      'chorizo': IngredientCategory.meat.index,
+      // Poultry
+      'chicken': IngredientCategory.poultry.index,
+      'turkey': IngredientCategory.poultry.index,
+      'duck': IngredientCategory.poultry.index,
+      'chicken breast': IngredientCategory.poultry.index,
+      'chicken thigh': IngredientCategory.poultry.index,
+      // Seafood
       'salmon': IngredientCategory.seafood.index,
       'tuna': IngredientCategory.seafood.index,
       'shrimp': IngredientCategory.seafood.index,
-      'milk': IngredientCategory.dairy.index,
+      'cod': IngredientCategory.seafood.index,
+      'crab': IngredientCategory.seafood.index,
+      'lobster': IngredientCategory.seafood.index,
+      'scallop': IngredientCategory.seafood.index,
+      'mussel': IngredientCategory.seafood.index,
+      'clam': IngredientCategory.seafood.index,
+      'anchovy': IngredientCategory.seafood.index,
+      'fish': IngredientCategory.seafood.index,
+      'squid': IngredientCategory.seafood.index,
+      // Egg
+      'egg': IngredientCategory.egg.index,
+      // Cheese
       'cheese': IngredientCategory.cheese.index,
       'cheddar': IngredientCategory.cheese.index,
       'parmesan': IngredientCategory.cheese.index,
       'mozzarella': IngredientCategory.cheese.index,
-      'egg': IngredientCategory.egg.index,
-      'eggs': IngredientCategory.egg.index,
-      'flour': IngredientCategory.flour.index,
-      'sugar': IngredientCategory.sugar.index,
-      'salt': IngredientCategory.spice.index,
-      'pepper': IngredientCategory.spice.index,
-      'oil': IngredientCategory.oil.index,
-      'olive oil': IngredientCategory.oil.index,
-      'vinegar': IngredientCategory.vinegar.index,
+      'gruyere': IngredientCategory.cheese.index,
+      'feta': IngredientCategory.cheese.index,
+      'brie': IngredientCategory.cheese.index,
+      'gouda': IngredientCategory.cheese.index,
+      'ricotta': IngredientCategory.cheese.index,
+      'cream cheese': IngredientCategory.cheese.index,
+      'goat cheese': IngredientCategory.cheese.index,
+      'blue cheese': IngredientCategory.cheese.index,
+      'pecorino': IngredientCategory.cheese.index,
+      'mascarpone': IngredientCategory.cheese.index,
+      // Dairy
+      'milk': IngredientCategory.dairy.index,
       'butter': IngredientCategory.dairy.index,
       'cream': IngredientCategory.dairy.index,
+      'heavy cream': IngredientCategory.dairy.index,
+      'sour cream': IngredientCategory.dairy.index,
       'yogurt': IngredientCategory.dairy.index,
+      'buttermilk': IngredientCategory.dairy.index,
+      'whipping cream': IngredientCategory.dairy.index,
+      'half and half': IngredientCategory.dairy.index,
+      // Grain
       'rice': IngredientCategory.grain.index,
-      'pasta': IngredientCategory.pasta.index,
       'bread': IngredientCategory.grain.index,
-      'tomato': IngredientCategory.produce.index,
-      'potato': IngredientCategory.produce.index,
-      'carrot': IngredientCategory.produce.index,
-      'lettuce': IngredientCategory.produce.index,
-      'steak': IngredientCategory.meat.index,
-      'ground beef': IngredientCategory.meat.index,
+      'oat': IngredientCategory.grain.index,
+      'quinoa': IngredientCategory.grain.index,
+      'couscous': IngredientCategory.grain.index,
+      'barley': IngredientCategory.grain.index,
+      'breadcrumb': IngredientCategory.grain.index,
+      'panko': IngredientCategory.grain.index,
+      'tortilla': IngredientCategory.grain.index,
+      // Pasta
+      'pasta': IngredientCategory.pasta.index,
+      'spaghetti': IngredientCategory.pasta.index,
+      'penne': IngredientCategory.pasta.index,
+      'linguine': IngredientCategory.pasta.index,
+      'fettuccine': IngredientCategory.pasta.index,
+      'noodle': IngredientCategory.pasta.index,
+      'lasagna': IngredientCategory.pasta.index,
+      'macaroni': IngredientCategory.pasta.index,
+      // Legume
+      'bean': IngredientCategory.legume.index,
+      'black bean': IngredientCategory.legume.index,
+      'kidney bean': IngredientCategory.legume.index,
+      'chickpea': IngredientCategory.legume.index,
+      'lentil': IngredientCategory.legume.index,
+      'tofu': IngredientCategory.legume.index,
+      // Spice
+      'salt': IngredientCategory.spice.index,
+      'pepper': IngredientCategory.spice.index,
+      'black pepper': IngredientCategory.spice.index,
+      'white pepper': IngredientCategory.spice.index,
+      'cumin': IngredientCategory.spice.index,
+      'paprika': IngredientCategory.spice.index,
+      'cayenne': IngredientCategory.spice.index,
+      'cinnamon': IngredientCategory.spice.index,
+      'nutmeg': IngredientCategory.spice.index,
+      'oregano': IngredientCategory.spice.index,
+      'turmeric': IngredientCategory.spice.index,
+      'coriander': IngredientCategory.spice.index,
+      'chili powder': IngredientCategory.spice.index,
+      'chili flake': IngredientCategory.spice.index,
+      'red pepper flake': IngredientCategory.spice.index,
+      'bay leaf': IngredientCategory.spice.index,
+      'clove': IngredientCategory.spice.index,
+      'cardamom': IngredientCategory.spice.index,
+      'star anise': IngredientCategory.spice.index,
+      'fennel seed': IngredientCategory.spice.index,
+      'mustard powder': IngredientCategory.spice.index,
+      'allspice': IngredientCategory.spice.index,
+      'sage': IngredientCategory.spice.index,
+      'tarragon': IngredientCategory.spice.index,
+      'curry powder': IngredientCategory.spice.index,
+      'garam masala': IngredientCategory.spice.index,
+      'italian seasoning': IngredientCategory.spice.index,
+      'onion powder': IngredientCategory.spice.index,
+      'garlic powder': IngredientCategory.spice.index,
+      // Condiment
+      'soy sauce': IngredientCategory.condiment.index,
+      'fish sauce': IngredientCategory.condiment.index,
+      'worcestershire': IngredientCategory.condiment.index,
+      'hot sauce': IngredientCategory.condiment.index,
+      'ketchup': IngredientCategory.condiment.index,
+      'mustard': IngredientCategory.condiment.index,
+      'mayonnaise': IngredientCategory.condiment.index,
+      'tomato paste': IngredientCategory.condiment.index,
+      'tomato sauce': IngredientCategory.condiment.index,
+      'sriracha': IngredientCategory.condiment.index,
+      'hoisin sauce': IngredientCategory.condiment.index,
+      'oyster sauce': IngredientCategory.condiment.index,
+      'miso': IngredientCategory.condiment.index,
+      'tahini': IngredientCategory.condiment.index,
+      'dijon': IngredientCategory.condiment.index,
+      'sambal': IngredientCategory.condiment.index,
+      'pesto': IngredientCategory.condiment.index,
+      'salsa': IngredientCategory.condiment.index,
+      'barbecue sauce': IngredientCategory.condiment.index,
+      'teriyaki sauce': IngredientCategory.condiment.index,
+      // Oil
+      'oil': IngredientCategory.oil.index,
+      'olive oil': IngredientCategory.oil.index,
+      'vegetable oil': IngredientCategory.oil.index,
+      'canola oil': IngredientCategory.oil.index,
+      'sesame oil': IngredientCategory.oil.index,
+      'coconut oil': IngredientCategory.oil.index,
+      'cooking spray': IngredientCategory.oil.index,
+      // Vinegar
+      'vinegar': IngredientCategory.vinegar.index,
+      'balsamic vinegar': IngredientCategory.vinegar.index,
+      'red wine vinegar': IngredientCategory.vinegar.index,
+      'white wine vinegar': IngredientCategory.vinegar.index,
+      'apple cider vinegar': IngredientCategory.vinegar.index,
+      'rice vinegar': IngredientCategory.vinegar.index,
+      // Flour
+      'flour': IngredientCategory.flour.index,
+      'all-purpose flour': IngredientCategory.flour.index,
+      'bread flour': IngredientCategory.flour.index,
+      'cornstarch': IngredientCategory.flour.index,
+      'corn starch': IngredientCategory.flour.index,
+      'almond flour': IngredientCategory.flour.index,
+      // Sugar
+      'sugar': IngredientCategory.sugar.index,
+      'brown sugar': IngredientCategory.sugar.index,
+      'powdered sugar': IngredientCategory.sugar.index,
+      'honey': IngredientCategory.sugar.index,
+      'maple syrup': IngredientCategory.sugar.index,
+      'molasses': IngredientCategory.sugar.index,
+      'corn syrup': IngredientCategory.sugar.index,
+      'agave': IngredientCategory.sugar.index,
+      'vanilla extract': IngredientCategory.sugar.index,
+      'vanilla': IngredientCategory.sugar.index,
+      'chocolate': IngredientCategory.sugar.index,
+      'cocoa powder': IngredientCategory.sugar.index,
+      // Leavening
+      'baking powder': IngredientCategory.leavening.index,
+      'baking soda': IngredientCategory.leavening.index,
+      'yeast': IngredientCategory.leavening.index,
+      'gelatin': IngredientCategory.leavening.index,
+      // Nut
+      'almond': IngredientCategory.nut.index,
+      'walnut': IngredientCategory.nut.index,
+      'pecan': IngredientCategory.nut.index,
+      'cashew': IngredientCategory.nut.index,
+      'pistachio': IngredientCategory.nut.index,
+      'peanut': IngredientCategory.nut.index,
+      'peanut butter': IngredientCategory.nut.index,
+      'pine nut': IngredientCategory.nut.index,
+      'hazelnut': IngredientCategory.nut.index,
+      'coconut': IngredientCategory.nut.index,
+      'coconut milk': IngredientCategory.nut.index,
+      'sesame seed': IngredientCategory.nut.index,
+      // Alcohol
+      'wine': IngredientCategory.alcohol.index,
+      'red wine': IngredientCategory.alcohol.index,
+      'white wine': IngredientCategory.alcohol.index,
+      'beer': IngredientCategory.alcohol.index,
+      'brandy': IngredientCategory.alcohol.index,
+      'rum': IngredientCategory.alcohol.index,
+      'vodka': IngredientCategory.alcohol.index,
+      'whiskey': IngredientCategory.alcohol.index,
+      'bourbon': IngredientCategory.alcohol.index,
+      'sake': IngredientCategory.alcohol.index,
+      'sherry': IngredientCategory.alcohol.index,
+      'port': IngredientCategory.alcohol.index,
+      'marsala': IngredientCategory.alcohol.index,
+      'mirin': IngredientCategory.alcohol.index,
+      'kahlua': IngredientCategory.alcohol.index,
+      'tequila': IngredientCategory.alcohol.index,
+      'gin': IngredientCategory.alcohol.index,
+      'cognac': IngredientCategory.alcohol.index,
+      // Juice
+      'lemon juice': IngredientCategory.juice.index,
+      'lime juice': IngredientCategory.juice.index,
+      'orange juice': IngredientCategory.juice.index,
+      // Beverage
+      'coffee': IngredientCategory.beverage.index,
+      'tea': IngredientCategory.beverage.index,
+      'broth': IngredientCategory.beverage.index,
+      'stock': IngredientCategory.beverage.index,
+      'chicken broth': IngredientCategory.beverage.index,
+      'chicken stock': IngredientCategory.beverage.index,
+      'beef broth': IngredientCategory.beverage.index,
+      'vegetable broth': IngredientCategory.beverage.index,
+      'water': IngredientCategory.beverage.index,
     };
     
+    // Fallback always wins — overwrite unconditionally
     fallback.forEach((k, v) {
-      if (!_lookupMap.containsKey(k) || _lookupMap[k] == 0) {
-         // Overwrite if 0 (Assume 0 is sketchy unless it's produce) 
-         // Actually, produce IS index 0. 
-         // But "beef" being 0 is wrong.
-         // So we prioritize our fallback map.
-         _lookupMap[k] = v;
-      }
+      _lookupMap[k] = v;
     });
 
-    // Re-sort keys
+    // Re-sort keys by length descending for longest-match-first
     _sortedKeys = _lookupMap.keys.toList()
         ..sort((a, b) => b.length.compareTo(a.length));
   }
@@ -137,17 +360,32 @@ class IngredientService {
 
   /// Internal normalization logic
   String _normalize(String input) {
-    return input.toLowerCase()
-        .trim()
-        // Remove quantities and common measurement units
-        .replaceAll(RegExp(r'\b(\d+|cups?|tbsps?|tsps?|oz|grams?|kg|ml|l|lb|units?|pinch|handful|dash)\b'), '')
-        // Remove common recipe adjectives that aren't part of the ingredient identity
-        // Added negative lookbehind (?<!-) to protect compound words like "sun-dried"
-        .replaceAll(RegExp(r'(?<!-)\b(organic|fresh|diced|chopped|sliced|frozen|dried|cold|pressed|extra|virgin|large|small|minced)\b'), '')
-        // Simple plural handling
-        .replaceAll(RegExp(r's$'), '')
-        .replaceAll(RegExp(r'\s+'), ' ')
-        .trim();
+    var result = input.toLowerCase().trim();
+    
+    // Remove quantities and common measurement units
+    result = result.replaceAll(RegExp(r'\b(\d+|cups?|tbsps?|tsps?|oz|grams?|kg|ml|l|lb|units?|pinch|handful|dash)\b'), '');
+    
+    // Remove common recipe adjectives that aren't part of the ingredient identity
+    // Negative lookbehind (?<!-) protects compound words like "sun-dried"
+    result = result.replaceAll(RegExp(r'(?<!-)\b(organic|fresh|diced|chopped|sliced|frozen|dried|cold|pressed|extra|virgin|large|small|minced|ground|whole|crushed|roasted|toasted|raw|cooked|boneless|skinless|thick|thin|finely|roughly|coarsely)\b'), '');
+    
+    // Proper plural handling (order matters)
+    // "cherries" -> "cherry", "berries" -> "berry"
+    result = result.replaceAll(RegExp(r'ies$'), 'y');
+    // "tomatoes" -> "tomato", "potatoes" -> "potato"
+    result = result.replaceAll(RegExp(r'oes$'), 'o');
+    // "cheeses" -> "cheese", "sauces" -> "sauce"
+    result = result.replaceAll(RegExp(r'ses$'), 'se');
+    // "leaves" -> "leaf" (special case)
+    result = result.replaceAll(RegExp(r'ves$'), 'f');
+    // General: "onions" -> "onion", "peppers" -> "pepper"
+    // But NOT words ending in 'ss' (e.g. "grass"), 'us', 'is'
+    result = result.replaceAll(RegExp(r'(?<![sui])s$'), '');
+    
+    // Collapse whitespace
+    result = result.replaceAll(RegExp(r'\s+'), ' ').trim();
+    
+    return result;
   }
 
   IngredientCategory _indexToCategory(int index) {
