@@ -73,51 +73,43 @@ class ShoppingListController {
       list.sort((a, b) => a.name.compareTo(b.name));
     }
 
-    // 3. Category Sorting (Grocery Store Flow)
-    final sortedMap = <IngredientCategory, List<ShoppingListItem>>{};
+  /// Public accessor for Store Flow
+  static const List<IngredientCategory> storeFlow = [
+    IngredientCategory.produce,
+    IngredientCategory.meat,
+    IngredientCategory.poultry,
+    IngredientCategory.seafood,
+    IngredientCategory.egg,
+    IngredientCategory.dairy,
+    IngredientCategory.cheese,
+    IngredientCategory.grain,
+    IngredientCategory.pasta,
+    IngredientCategory.legume,
+    IngredientCategory.leavening,
+    IngredientCategory.sugar,
+    IngredientCategory.flour,
+    IngredientCategory.spice,
+    IngredientCategory.condiment,
+    IngredientCategory.oil,
+    IngredientCategory.vinegar,
+    IngredientCategory.nut,
+    IngredientCategory.juice,
+    IngredientCategory.beverage,
+    IngredientCategory.alcohol,
+    IngredientCategory.pop,
+    IngredientCategory.unknown,
+  ];
+
+  /// Generates a categorized shopping list from a list of recipes.
+  /// 
+  /// Returns a Map where keys are categories (sorted by store flow)
+  /// and values are the list of items in that category (sorted alphabetically).
+  Future<Map<IngredientCategory, List<ShoppingListItem>>> generateShoppingList(
+      List<Recipe> recipes) async {
     
-    // Define logical store flow
-    const storeFlow = [
-      IngredientCategory.produce,
-      IngredientCategory.meat,
-      IngredientCategory.poultry,
-      IngredientCategory.seafood,
-      IngredientCategory.egg,
-      IngredientCategory.dairy,
-      IngredientCategory.cheese,
-      IngredientCategory.grain,
-      IngredientCategory.pasta,
-      IngredientCategory.legume,
-      IngredientCategory.leavening,
-      IngredientCategory.sugar,
-      IngredientCategory.flour,
-      IngredientCategory.spice,
-      IngredientCategory.condiment,
-      IngredientCategory.oil,
-      IngredientCategory.vinegar,
-      IngredientCategory.nut,
-      IngredientCategory.juice,
-      IngredientCategory.beverage,
-      IngredientCategory.alcohol,
-      IngredientCategory.pop,
-      IngredientCategory.unknown,
-    ];
-
-    for (final category in storeFlow) {
-      if (grouped.containsKey(category)) {
-        sortedMap[category] = grouped[category]!;
-      }
-    }
-
-    // Catch any missing categories safely
-    for (final category in grouped.keys) {
-      if (!sortedMap.containsKey(category)) {
-        sortedMap[category] = grouped[category]!;
-      }
-    }
-
-    return sortedMap;
-  }
+    // Intermediate storage for aggregation
+    // Key: Canonical Name (e.g., "yellow onion")
+    final Map<String, _TermBuilder> builders = {};
 
   /// Parses diverse quantity strings into a double.
   /// 

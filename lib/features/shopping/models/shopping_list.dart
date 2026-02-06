@@ -1,6 +1,8 @@
 import 'package:isar/isar.dart';
 import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
+import 'package:memoix/core/utils/text_normalizer.dart';
+import 'package:memoix/core/utils/unit_normalizer.dart';
 import '../../recipes/models/recipe.dart';
 
 part 'shopping_list.g.dart';
@@ -145,9 +147,17 @@ class ShoppingListService {
     return list;
   }
 
-  String _categoryDisplayName(IngredientCategory cat) {
-    // Capitalize first letter
-    final s = cat.name; 
+  String _categoryDisplayName(dynamic cat) {
+    // Handle both Enum and String input if necessary, though mostly Enum here
+    String s = '';
+    if (cat is IngredientCategory) {
+      if (cat == IngredientCategory.unknown) return 'Other';
+      s = cat.name;
+    } else {
+      s = cat.toString();
+    }
+    
+    if (s.isEmpty) return 'Other';
     return s[0].toUpperCase() + s.substring(1);
   }
 
@@ -183,14 +193,69 @@ class ShoppingListService {
 
   /// Add a manual item to a list
   Future<void> addItem(ShoppingList list, ShoppingItem item) async {
-    // Re-fetch the list to ensure we have the latest version and it's managed
+    // Re-fetch to ensure latest version
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null) {
-      // Create a new list for items to ensure change detection
+      // 1. Normalize Name and Amount
+      item.name = TextNormalizer.cleanName(item.name);
+      
+      // Attempt to normalize complex amount string (e.g. "2 tablespoons" -> "2 Tbsp")
+      if (item.amount != null && item.amount!.isNotEmpty) {
+        item.amount = _normalizeManualAmount(item.amount!);
+      }
+
+      // 2. Classify (Auto-Category)
+      if (item.category == null || item.category!.isEmpty) {
+        final catEnum = IngredientService().classify(item.name);
+        item.category = _categoryDisplayName(catEnum);
+      }
+
       final newItems = List<ShoppingItem>.from(latestList.items)..add(item);
+      
+      // 3. Sort entire list by Category Flow then Name
+      _sortItems(newItems);
+
       latestList.items = newItems;
       await _db.writeTxn(() => _db.shoppingLists.put(latestList));
     }
+  }
+
+  /// Sorts items in place based on Store Flow and Name
+  void _sortItems(List<ShoppingItem> items) {
+    // build map for O(1) lookup
+    // Using simple string matching against the enum names
+    final sortMap = <String, int>{};
+    for (int i = 0; i < ShoppingListController.storeFlow.length; i++) {
+     sortMap[_categoryDisplayName(ShoppingListController.storeFlow[i])] = i;
+    }
+
+    items.sort((a, b) {
+      // Primary Sort: Category Index
+      final catA = sortMap[a.category ?? 'Other'] ?? 999;
+      final catB = sortMap[b.category ?? 'Other'] ?? 999;
+      final catCompare = catA.compareTo(catB);
+      
+      if (catCompare != 0) return catCompare;
+
+      // Secondary Sort: Name
+      return a.name.toLowerCase().compareTo(b.name.toLowerCase());
+    });
+  }
+
+  /// Attempt to normalize a user-typed amount string like "2 tablespoons"
+  String _normalizeManualAmount(String raw) {
+    // Split by digits vs text if possible, or just look for units
+    // Simple heuristic: split by space, normalize each part if it matches a unit
+    final parts = raw.split(' ');
+    final normalizedParts = parts.map((part) {
+      // Check if this part is a unit
+      if (UnitNormalizer.isRecognizedUnit(part)) {
+        return UnitNormalizer.normalize(part);
+      }
+      return part;
+    }).toList();
+    
+    return normalizedParts.join(' ');
   }
 
   /// Remove an item from a list
