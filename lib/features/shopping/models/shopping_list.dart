@@ -124,9 +124,12 @@ class ShoppingListService {
       final categoryName = _categoryDisplayName(entry.key);
       
       for (final item in entry.value) {
+        // Normalize the amount display before saving
+        final normalizedAmount = _normalizeAmount(item.quantityDisplay);
+        
         flatItems.add(ShoppingItem()
           ..name = item.name
-          ..amount = item.quantityDisplay
+          ..amount = normalizedAmount
           // Store raw unit if single, otherwise empty as it's in amount
           ..unit = item.unit == 'mixed' ? null : item.unit 
           ..category = categoryName
@@ -252,6 +255,12 @@ class ShoppingListService {
     if (a == null || a.isEmpty) return b;
     if (b == null || b.isEmpty) return a;
 
+    // If either amount is already comma-separated, don't try to merge
+    // (prevents cascading parse errors)
+    if (a.contains(',') || b.contains(',')) {
+      return '$a, $b';
+    }
+
     final pA = _simpleParse(a);
     final pB = _simpleParse(b);
 
@@ -263,7 +272,8 @@ class ShoppingListService {
       if (unitA.toLowerCase() == unitB.toLowerCase()) {
         final total = pA.qty + pB.qty;
         final totalStr = MeasurementConverter.formatNumber(total);
-        return unitA.isEmpty ? totalStr : '$totalStr $unitA';
+        final combined = unitA.isEmpty ? totalStr : '$totalStr $unitA';
+        return _normalizeAmount(combined);
       }
 
       // 2. Both are volume → convert to same unit and sum
@@ -273,7 +283,7 @@ class ShoppingListService {
       if (volConvert != null) {
         final total = pA.qty + volConvert;
         final totalStr = MeasurementConverter.formatNumber(total);
-        return '$totalStr $unitA';
+        return _normalizeAmount('$totalStr $unitA');
       }
 
       // 3. Both are weight → convert to same unit and sum
@@ -283,7 +293,7 @@ class ShoppingListService {
       if (weightConvert != null) {
         final total = pA.qty + weightConvert;
         final totalStr = MeasurementConverter.formatNumber(total);
-        return '$totalStr $unitA';
+        return _normalizeAmount('$totalStr $unitA');
       }
 
       // 4. Count / descriptor items (e.g. "1 large" + "2" → "3 large")
@@ -296,29 +306,56 @@ class ShoppingListService {
         final totalStr = MeasurementConverter.formatNumber(total);
         // Keep the more descriptive label (non-empty one)
         final descriptor = unitA.isNotEmpty ? unitA : unitB;
-        return descriptor.isEmpty ? totalStr : '$totalStr $descriptor';
+        final combined = descriptor.isEmpty ? totalStr : '$totalStr $descriptor';
+        return _normalizeAmount(combined);
       }
 
       // 5. Truly incompatible units (e.g. 500g vs 2 cups) → comma-separated
-      return '$a, $b';
+      return '${_normalizeAmount(a)}, ${_normalizeAmount(b)}';
     }
 
     // Could not parse one or both → comma-separated
-    return '$a, $b';
+    return '${_normalizeAmount(a)}, ${_normalizeAmount(b)}';
   }
 
   _ParsedAmount? _simpleParse(String s) {
     final cleaned = TextNormalizer.normalizeFractions(s.trim());
-    // Match: number (int/decimal/unicode fraction combo) then optional unit text
-    // E.g. "1.5 kg", "2", "½ cup", "1½ Tbsp"
-    final match = RegExp(r'^([\d]+(?:\.[\d]+)?)\s*(.*)$').firstMatch(cleaned);
-    if (match != null) {
-      final qt = double.tryParse(match.group(1) ?? '');
-      if (qt != null) {
-        return _ParsedAmount(qt, match.group(2)?.trim() ?? '');
+    
+    // Parse quantity: supports "1.5", "2", "½", "1 ½" (mixed fraction)
+    double qty = 0.0;
+    String remainder = cleaned;
+
+    // Unicode fraction map
+    const fractionMap = {
+      '½': 0.5, '¼': 0.25, '¾': 0.75,
+      '⅓': 0.333, '⅔': 0.666,
+      '⅛': 0.125, '⅜': 0.375, '⅝': 0.625, '⅞': 0.875,
+      '⅕': 0.2, '⅖': 0.4, '⅗': 0.6, '⅘': 0.8,
+      '⅙': 0.166, '⅚': 0.833,
+    };
+
+    // Extract all numbers and fractions
+    final regex = RegExp(r'([\d]+(?:\.[\d]+)?)|([' + fractionMap.keys.join() + r'])');
+    final matches = regex.allMatches(cleaned);
+    
+    int lastMatchEnd = 0;
+    for (final match in matches) {
+      final numStr = match.group(1);
+      final fracStr = match.group(2);
+      
+      if (numStr != null) {
+        qty += double.tryParse(numStr) ?? 0.0;
+      } else if (fracStr != null) {
+        qty += fractionMap[fracStr] ?? 0.0;
       }
+      lastMatchEnd = match.end;
     }
-    return null;
+
+    if (qty == 0.0) return null;
+
+    // Everything after the last number/fraction is the unit
+    remainder = cleaned.substring(lastMatchEnd).trim();
+    return _ParsedAmount(qty, remainder);
   }
 
   /// Sorts items in place based on Store Aisle Flow and Name
@@ -341,13 +378,16 @@ class ShoppingListService {
     });
   }
 
-  /// Attempt to normalize a user-typed amount string like "2 tablespoons"
-  String _normalizeManualAmount(String raw) {
-    // Split by digits vs text if possible, or just look for units
-    // Simple heuristic: split by space, normalize each part if it matches a unit
-    final parts = raw.split(' ');
+  /// Normalize an amount string: fractions → Unicode, units → proper case
+  String _normalizeAmount(String raw) {
+    if (raw.isEmpty) return raw;
+    
+    // 1. Convert text fractions to Unicode ("1/2" → "½")
+    String result = TextNormalizer.normalizeFractions(raw);
+    
+    // 2. Normalize unit capitalization
+    final parts = result.split(' ');
     final normalizedParts = parts.map((part) {
-      // Check if this part is a unit
       if (UnitNormalizer.isRecognizedUnit(part)) {
         return UnitNormalizer.normalize(part);
       }
@@ -356,6 +396,9 @@ class ShoppingListService {
     
     return normalizedParts.join(' ');
   }
+
+  /// Attempt to normalize a user-typed amount string like "2 tablespoons"
+  String _normalizeManualAmount(String raw) => _normalizeAmount(raw);
 
   /// Remove an item from a list
   Future<void> removeItem(ShoppingList list, int itemIndex) async {
