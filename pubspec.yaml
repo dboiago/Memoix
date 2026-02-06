@@ -92,3 +92,4 @@ flutter:
     - .env
     - assets/icons/
     - assets/images/
+    - assets/ingredients/

@@ -1,5 +1,6 @@
 import 'package:isar/isar.dart';
-
+import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
+import 'package:memoix/core/utils/ingredient_categorizer.dart';
 import '../../recipes/models/recipe.dart';
 
 part 'shopping_list.g.dart';
@@ -9,10 +10,11 @@ part 'shopping_list.g.dart';
 class ShoppingItem {
   String name = '';
   String? amount;
-  String? unit;
+  String? unit; // Kept for legacy, logic now combined in detail
   String? category; // Produce, Dairy, Meat, etc.
-  String? recipeSource; // Which recipe this came from
+  String? recipeSource; // Which recipe this came from (comma sep)
   bool isChecked = false;
+  String? manualNotes; // Notes from controller aggregation
 
   ShoppingItem();
 
@@ -23,6 +25,7 @@ class ShoppingItem {
     this.category,
     this.recipeSource,
     this.isChecked = false,
+    this.manualNotes,
   });
 
   /// Create from an ingredient
@@ -104,39 +107,48 @@ class ShoppingListService {
 
   /// Generate a shopping list from recipes
   Future<ShoppingList> generateFromRecipes(List<Recipe> recipes, {String? name}) async {
-    final items = <String, ShoppingItem>{};
-    final recipeIds = <String>[];
-
-    for (final recipe in recipes) {
-      recipeIds.add(recipe.uuid);
+    final recipeIds = recipes.map((r) => r.uuid).toList();
+    
+    // Use professional controller for aggregation
+    final controller = ShoppingListController();
+    final categoriesMap = await controller.generateShoppingList(recipes);
+    
+    // Flatten result for Isar storage
+    final flatItems = <ShoppingItem>[];
+    
+    // Iterate through categories (already sorted by Store Flow in Controller)
+    for (final entry in categoriesMap.entries) {
+      final categoryName = _categoryDisplayName(entry.key);
       
-      for (final ingredient in recipe.ingredients) {
-        if (ingredient.isOptional) continue; // Skip optional by default
-        
-        final key = ingredient.name.toLowerCase().trim();
-        final item = ShoppingItem.fromIngredient(ingredient, recipe.name);
-        
-        if (items.containsKey(key)) {
-          // Combine with existing
-          items[key] = items[key]!.combine(item);
-        } else {
-          items[key] = item;
-        }
+      for (final item in entry.value) {
+        flatItems.add(ShoppingItem()
+          ..name = item.name
+          ..amount = item.quantityDisplay
+          // Store raw unit if single, otherwise empty as it's in amount
+          ..unit = item.unit == 'mixed' ? null : item.unit 
+          ..category = categoryName
+          ..recipeSource = item.references.join(', ')
+          ..manualNotes = item.manualNotes
+          ..isChecked = false
+        );
       }
     }
 
     final list = ShoppingList()
       ..uuid = DateTime.now().millisecondsSinceEpoch.toString()
       ..name = name ?? 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
-      ..items = items.values.toList()
+      ..items = flatItems
       ..recipeIds = recipeIds
       ..createdAt = DateTime.now();
 
-    // Sort items alphabetically by name
-    list.items.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
-
     await _db.writeTxn(() => _db.shoppingLists.put(list));
     return list;
+  }
+
+  String _categoryDisplayName(IngredientCategory cat) {
+    // Capitalize first letter
+    final s = cat.name; 
+    return s[0].toUpperCase() + s.substring(1);
   }
 
   /// Get all shopping lists
