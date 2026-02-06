@@ -73,6 +73,9 @@ class ShoppingListController {
       list.sort((a, b) => a.name.compareTo(b.name));
     }
 
+    return grouped;
+  }
+
   /// Public accessor for Store Flow
   static const List<IngredientCategory> storeFlow = [
     IngredientCategory.produce,
@@ -99,17 +102,6 @@ class ShoppingListController {
     IngredientCategory.pop,
     IngredientCategory.unknown,
   ];
-
-  /// Generates a categorized shopping list from a list of recipes.
-  /// 
-  /// Returns a Map where keys are categories (sorted by store flow)
-  /// and values are the list of items in that category (sorted alphabetically).
-  Future<Map<IngredientCategory, List<ShoppingListItem>>> generateShoppingList(
-      List<Recipe> recipes) async {
-    
-    // Intermediate storage for aggregation
-    // Key: Canonical Name (e.g., "yellow onion")
-    final Map<String, _TermBuilder> builders = {};
 
   /// Parses diverse quantity strings into a double.
   /// 
