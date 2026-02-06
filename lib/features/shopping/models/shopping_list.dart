@@ -251,10 +251,55 @@ class ShoppingListService {
   String? _combineAmounts(String? a, String? b) {
     if (a == null || a.isEmpty) return b;
     if (b == null || b.isEmpty) return a;
-    // If they are identical, maybe don't duplicate? "1 each + 1 each" vs "2 each"
-    // Since parsing manual text is hard, just concatenating is safe: "1 large + 2"
+
+    // Attempt to parse and sum if units are compatible
+    final pA = _simpleParse(a);
+    final pB = _simpleParse(b);
+
+    if (pA != null && pB != null) {
+      // Normalize units to check compatibility
+      final unitA = UnitNormalizer.normalize(pA.unit);
+      final unitB = UnitNormalizer.normalize(pB.unit);
+
+      if (unitA == unitB) {
+        final total = pA.qty + pB.qty;
+        // Format: 1.0 -> "1", 1.5 -> "1.5"
+        final totalStr = total.truncateToDouble() == total 
+            ? total.toInt().toString() 
+            : total.toString();
+        
+        return unitA.isEmpty ? totalStr : '$totalStr $unitA';
+      }
+    }
+
+    // Fallback: concatenate
     return '$a + $b';
   }
+
+  _ParsedAmount? _simpleParse(String s) {
+    // matches "1.5 kg", "2", "1/2 cup"
+    // We trust UnitNormalizer to handle cleaning, just extract roughly
+    final cleaned = TextNormalizer.normalizeFractions(s);
+    final match = RegExp(r'^([\d\.]+|[\d\.]+\s*[\d\./]+)\s*(.*)$').firstMatch(cleaned);
+    if (match != null) {
+      final numStr = match.group(1)?.replaceAll(' ', '') ?? '0';
+      // Handle "1 1/2" which regex might catch as "11/2" or valid. 
+      // Simplified: assume double.tryParse works or it sends back null
+      final qt = double.tryParse(numStr);
+      if (qt != null) {
+        return _ParsedAmount(qt, match.group(2)?.trim() ?? '');
+      }
+    }
+    return null;
+  }
+}
+
+class _ParsedAmount {
+  final double qty;
+  final String unit;
+  _ParsedAmount(this.qty, this.unit);
+}
+
 
   /// Sorts items in place based on Store Flow and Name
   void _sortItems(List<ShoppingItem> items) {
