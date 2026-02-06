@@ -21,6 +21,7 @@
 ### Changed
 - Refactored Recipe model to use `comments` field (serializes as 'notes' for compatibility); updated all screens and importers to use `comments`
 - Refactored draft and scratch pad screens to use service-level deletion management and improved parsing via IngredientParser
+- Updated application ID from `com.example.memoix` to `io.github.dboiago.memoix`"
 - Updated all recipe screens (detail, edit, split view) and importers to use `comments` for recipe-level notes
 - Updated swipe-to-delete and undo logic for consistency across lists
 - Updated repository management UI for clearer status, actionable sync messages, and improved menu options
@@ -43,4 +44,5 @@
 - Removed unused and duplicate code in picker and import modules
 - Removed Apple icons from launcher assets due to build limitations
 - Removed deprecated `ingredient.dart` model from recipes feature
+
 - Removed references to unused variables and dead code in edit and comparison screens
