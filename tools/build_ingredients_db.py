@@ -77,7 +77,6 @@ KEYWORD_RULES = [
     (["gochujang"],             "pantry"),
     (["doubanjiang"],            "pantry"),
     (["doenjang"],               "pantry"),
-    (["ya cai"],                 "pantry"),
     (["preserved mustard"],      "pantry"),
     (["sesame paste"],           "pantry"),
     (["dashi"],                  "pantry"),
@@ -237,6 +236,7 @@ KEYWORD_RULES = [
     (["pineapple"],             "produce"),
     (["kiwi"],                  "produce"),
     (["papaya"],                "produce"),
+    (["ya cai"],                "produce"),
 
     # Produce (vegetables)
     (["leek"],                  "produce"),
