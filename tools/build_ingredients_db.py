@@ -57,6 +57,7 @@ KEYWORD_RULES = [
     (["vegetable stock"],       "pantry"),
     (["chicken stock"],         "pantry"),
     (["beef stock"],            "pantry"),
+    (["bouillon"],              "pantry"),
     (["tomato sauce"],          "pantry"),
     (["tomato puree"],          "pantry"),
     (["sun-dried tomato"],      "pantry"),
@@ -104,8 +105,7 @@ KEYWORD_RULES = [
     (["hot sauce"],             "condiment"),
     (["barbecue sauce"],        "condiment"),
     (["bbq sauce"],             "condiment"),
-    (["teriyaki"],              "condiment"),
-    (["hoisin"],                "condiment"),
+    (["teriyaki"],              "condiment"),    (["]steak sauce"],           "condiment"),    (["hoisin"],                "condiment"),
     (["oyster sauce"],          "condiment"),
     (["worcestershire"],        "condiment"),
     (["sriracha"],              "condiment"),
@@ -126,8 +126,10 @@ KEYWORD_RULES = [
     (["almond butter"],         "pantry"),
     (["cashew butter"],         "pantry"),
     (["nutella"],               "pantry"),
-    (["hazelnut spread"],       "pantry"),
-
+    (["hazelnut spread"],       "pantry"),    (["]oyster mushroom sauce"], "pantry"),
+    (["]starch water"],          "pantry"),
+    (["]stick rice flour"],      "pantry"),
+    (["]wakame"],                "pantry"),
     (["cream cheese"],          "cheese"),
     (["goat cheese"],           "cheese"),
     (["blue cheese"],           "cheese"),
@@ -189,7 +191,8 @@ KEYWORD_RULES = [
     (["vital wheat gluten"],    "flour"),
     (["wheat gluten"],          "flour"),
     (["vital gluten"],          "flour"),
-    (["cornstarch"],            "flour"),
+    (["]shortening"],            "flour"),
+    (["]cornstarch"],            "flour"),
     (["corn starch"],           "flour"),
     (["cornflour"],             "flour"),
     (["almond flour"],          "flour"),
@@ -260,6 +263,9 @@ KEYWORD_RULES = [
     (["plantain"],              "produce"),
     (["fig"],                   "produce"),
     (["guava"],                 "produce"),
+    (["lemon zest"],            "produce"),
+    (["lime zest"],             "produce"),
+    (["orange zest"],           "produce"),
 
     (["black bean"],            "legume"),
     (["kidney bean"],           "legume"),
@@ -357,12 +363,11 @@ KEYWORD_RULES = [
     (["sprite"],     "pop"),
     (["ginger ale"], "pop"),
 
-    # Beverage (stock is canned/pantry, not liquid beverage)
+    # Beverage
     (["coffee"],     "beverage"),
     (["tea"],        "beverage"),
     (["broth"],      "beverage"),
-    # Note: stock moved to pantry (shelf-stable canned/boxed)
-    (["bouillon"],   "beverage"),
+    (["stock"],      "beverage"),
     (["water"],      "beverage"),
 
     # Juice
@@ -557,8 +562,7 @@ KEYWORD_RULES = [
     (["allspice"],   "spice"),
     (["saffron"],    "spice"),
     (["anise"],      "spice"),
-    (["fennel"],     "spice"),
-    (["dill"],       "spice"),
+    (["fennel"],     "spice"),    (["]tsaoko"],     "spice"),    (["dill"],       "spice"),
     (["thyme"],      "spice"),
     (["rosemary"],   "spice"),
     (["sage"],       "spice"),

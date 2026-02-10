@@ -255,85 +255,115 @@ class ShoppingListService {
     if (a == null || a.isEmpty) return b;
     if (b == null || b.isEmpty) return a;
 
-    // 🎯 Handle comma-separated amounts intelligently
-    // If `a` has commas (e.g., "4 C, 1 tsp"), try to merge `b` with a compatible part
+    // 🎯 Strategy: Parse all amounts (handling comma-separated), attempt unit conversion,
+    // sum everything that's convertible, and comma-separate only truly incompatible items.
+    
+    // Collect ALL amounts (comma-separated if present)
+    final allParts = <String>[];
     if (a.contains(',')) {
-      final parts = a.split(',').map((p) => p.trim()).toList();
+      allParts.addAll(a.split(',').map((p) => p.trim()));
+    } else {
+      allParts.add(a);
+    }
+    if (b.contains(',')) {
+      allParts.addAll(b.split(',').map((p) => p.trim()));
+    } else {
+      allParts.add(b);
+    }
+
+    // Parse all parts
+    final parsed = <_ParsedAmount>[];
+    final unparseable = <String>[];
+    for (final part in allParts) {
+      final p = _simpleParse(part);
+      if (p != null) {
+        parsed.add(p);
+      } else {
+        unparseable.add(part);
+      }
+    }
+
+    // If we have parseable amounts, try to combine them
+    if (parsed.isNotEmpty) {
+      // Attempt to find a common unit for all parsed amounts
+      final commonUnit = _findCommonUnit(parsed);
       
-      // Try to merge `b` with each part. If any merge succeeds, update that part.
-      for (int i = 0; i < parts.length; i++) {
-        final merged = _combineAmounts(parts[i], b);
-        // If merge happened and result is not a new comma-separated string,
-        // replace this part and return
-        if (merged != null && !merged.contains(',')) {
-          parts[i] = merged;
-          return parts.join(', ');
-        } else if (merged != null && i == parts.length - 1) {
-          // Last part: if merge result has commas, use it as-is
-          parts[i] = merged;
-          return parts.join(', ');
+      if (commonUnit != null) {
+        // Convert all to common unit and sum
+        double total = 0.0;
+        for (final p in parsed) {
+          final normalized = UnitNormalizer.normalize(p.unit);
+          final converted = _convertToUnit(p.qty, normalized, commonUnit);
+          if (converted != null) {
+            total += converted;
+          }
         }
+        
+        final totalStr = MeasurementConverter.formatNumber(total);
+        final result = commonUnit.isEmpty ? totalStr : '$totalStr $commonUnit';
+        final normalized = _normalizeAmount(result);
+        
+        // If we had unparseable items, append them
+        if (unparseable.isNotEmpty) {
+          return '$normalized, ${unparseable.join(', ')}';
+        }
+        return normalized;
       }
-      // No compatible merge found: append `b` as a new comma-separated entry
-      return '$a, $b';
     }
 
-    // 🎯 Both sides are comma-free: proceed with detailed matching
-    final pA = _simpleParse(a);
-    final pB = _simpleParse(b);
+    // Fallback: comma-separate all items (at least normalize them)
+    final normalized = (allParts + unparseable)
+        .map((p) => _normalizeAmount(p))
+        .toList();
+    return normalized.join(', ');
+  }
 
-    if (pA != null && pB != null) {
-      final unitA = UnitNormalizer.normalize(pA.unit);
-      final unitB = UnitNormalizer.normalize(pB.unit);
-
-      // 1. Same unit (or both unitless) → sum directly
-      if (unitA.toLowerCase() == unitB.toLowerCase()) {
-        final total = pA.qty + pB.qty;
-        final totalStr = MeasurementConverter.formatNumber(total);
-        final combined = unitA.isEmpty ? totalStr : '$totalStr $unitA';
-        return _normalizeAmount(combined);
-      }
-
-      // 2. Both are volume → convert to same unit and sum
-      final volConvert = MeasurementConverter.convertVolume(
-        pB.qty, unitB, unitA,
-      );
-      if (volConvert != null) {
-        final total = pA.qty + volConvert;
-        final totalStr = MeasurementConverter.formatNumber(total);
-        return _normalizeAmount('$totalStr $unitA');
-      }
-
-      // 3. Both are weight → convert to same unit and sum
-      final weightConvert = MeasurementConverter.convertWeight(
-        pB.qty, unitB, unitA,
-      );
-      if (weightConvert != null) {
-        final total = pA.qty + weightConvert;
-        final totalStr = MeasurementConverter.formatNumber(total);
-        return _normalizeAmount('$totalStr $unitA');
-      }
-
-      // 4. Count / descriptor items (e.g. "1 large" + "2" → "3 large")
-      // If neither side is a real measurement unit, sum as counts.
-      final aIsUnit = UnitNormalizer.isRecognizedUnit(unitA);
-      final bIsUnit = UnitNormalizer.isRecognizedUnit(unitB);
-
-      if (!aIsUnit && !bIsUnit) {
-        final total = pA.qty + pB.qty;
-        final totalStr = MeasurementConverter.formatNumber(total);
-        // Keep the more descriptive label (non-empty one)
-        final descriptor = unitA.isNotEmpty ? unitA : unitB;
-        final combined = descriptor.isEmpty ? totalStr : '$totalStr $descriptor';
-        return _normalizeAmount(combined);
-      }
-
-      // 5. Truly incompatible units (e.g. 500g vs 2 cups) → comma-separated
-      return '${_normalizeAmount(a)}, ${_normalizeAmount(b)}';
+  /// Find a common unit that all amounts can convert to, preferring the first unit
+  String? _findCommonUnit(List<_ParsedAmount> amounts) {
+    if (amounts.isEmpty) return null;
+    
+    // Start with the first unit as the target
+    final firstUnit = UnitNormalizer.normalize(amounts[0].unit);
+    
+    // Check if all amounts can convert to this unit
+    for (final p in amounts) {
+      final unit = UnitNormalizer.normalize(p.unit);
+      if (unit == firstUnit) continue; // Already same
+      
+      // Try volume conversion
+      final volConvert = MeasurementConverter.convertVolume(1.0, unit, firstUnit);
+      if (volConvert != null) continue; // Volume compatible
+      
+      // Try weight conversion
+      final weightConvert = MeasurementConverter.convertWeight(1.0, unit, firstUnit);
+      if (weightConvert != null) continue; // Weight compatible
+      
+      // No conversion possible with this unit - try the next one
+      return null;
     }
+    
+    // All amounts can convert to firstUnit
+    return firstUnit;
+  }
 
-    // Could not parse one or both → comma-separated
-    return '${_normalizeAmount(a)}, ${_normalizeAmount(b)}';
+  /// Convert qty from one unit to another (handles volume, weight, or identity)
+  double? _convertToUnit(double qty, String fromUnit, String toUnit) {
+    final normFrom = UnitNormalizer.normalize(fromUnit);
+    final normTo = UnitNormalizer.normalize(toUnit);
+    
+    if (normFrom.toLowerCase() == normTo.toLowerCase()) {
+      return qty;
+    }
+    
+    // Try volume
+    final vol = MeasurementConverter.convertVolume(qty, normFrom, normTo);
+    if (vol != null) return vol;
+    
+    // Try weight
+    final weight = MeasurementConverter.convertWeight(qty, normFrom, normTo);
+    if (weight != null) return weight;
+    
+    return null;
   }
 
   _ParsedAmount? _simpleParse(String s) {

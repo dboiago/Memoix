@@ -261,6 +261,7 @@ class IngredientService {
       'passion fruit': IngredientCategory.produce.index,
       'guava': IngredientCategory.produce.index,
       'plantain': IngredientCategory.produce.index,
+      'lemon zest': IngredientCategory.produce.index,
       // Meat
       'beef': IngredientCategory.meat.index,
       'steak': IngredientCategory.meat.index,
@@ -402,6 +403,7 @@ class IngredientService {
       'lemongrass': IngredientCategory.spice.index,
       'szechuan pepper': IngredientCategory.spice.index,
       'sichuan pepper': IngredientCategory.spice.index,
+      'tsaoko': IngredientCategory.spice.index,
       'white peppercorn': IngredientCategory.spice.index,
       'pink peppercorn': IngredientCategory.spice.index,
       'juniper berry': IngredientCategory.spice.index,
@@ -422,10 +424,12 @@ class IngredientService {
       'hoisin sauce': IngredientCategory.condiment.index,
       'hoisin': IngredientCategory.condiment.index,
       'oyster sauce': IngredientCategory.condiment.index,
+      'oyster mushroom sauce': IngredientCategory.pantry.index,
       'dijon': IngredientCategory.condiment.index,
       'sambal': IngredientCategory.condiment.index,
       'salsa': IngredientCategory.condiment.index,
       'barbecue sauce': IngredientCategory.condiment.index,
+      'steak sauce': IngredientCategory.condiment.index,
       'teriyaki sauce': IngredientCategory.condiment.index,
       // Pantry (jarred, canned, preserved, spreads — store center aisles)
       'tomato paste': IngredientCategory.pantry.index,
@@ -466,12 +470,15 @@ class IngredientService {
       'kombu': IngredientCategory.pantry.index,
       'nori': IngredientCategory.pantry.index,
       'seaweed': IngredientCategory.pantry.index,
+      'wakame': IngredientCategory.pantry.index,
+      'nori sheet': IngredientCategory.pantry.index,
       'dried shrimp': IngredientCategory.pantry.index,
       'fish paste': IngredientCategory.pantry.index,
       'shrimp paste': IngredientCategory.pantry.index,
       'curry paste': IngredientCategory.pantry.index,
       'bean paste': IngredientCategory.pantry.index,
       'chili paste': IngredientCategory.pantry.index,
+      'starch water': IngredientCategory.pantry.index,
       // Oil
       'oil': IngredientCategory.oil.index,
       'olive oil': IngredientCategory.oil.index,
@@ -494,6 +501,7 @@ class IngredientService {
       'cornstarch': IngredientCategory.flour.index,
       'corn starch': IngredientCategory.flour.index,
       'almond flour': IngredientCategory.flour.index,
+      'shortening': IngredientCategory.flour.index,
       // Sugar
       'sugar': IngredientCategory.sugar.index,
       'brown sugar': IngredientCategory.sugar.index,
@@ -564,12 +572,6 @@ class IngredientService {
       // Beverage
       'coffee': IngredientCategory.beverage.index,
       'tea': IngredientCategory.beverage.index,
-      'broth': IngredientCategory.beverage.index,
-      'stock': IngredientCategory.beverage.index,
-      'chicken broth': IngredientCategory.beverage.index,
-      'chicken stock': IngredientCategory.beverage.index,
-      'beef broth': IngredientCategory.beverage.index,
-      'vegetable broth': IngredientCategory.beverage.index,
       'water': IngredientCategory.beverage.index,
     };
     
