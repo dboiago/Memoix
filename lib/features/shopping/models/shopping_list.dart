@@ -255,12 +255,30 @@ class ShoppingListService {
     if (a == null || a.isEmpty) return b;
     if (b == null || b.isEmpty) return a;
 
-    // If either amount is already comma-separated, don't try to merge
-    // (prevents cascading parse errors)
-    if (a.contains(',') || b.contains(',')) {
+    // 🎯 Handle comma-separated amounts intelligently
+    // If `a` has commas (e.g., "4 C, 1 tsp"), try to merge `b` with a compatible part
+    if (a.contains(',')) {
+      final parts = a.split(',').map((p) => p.trim()).toList();
+      
+      // Try to merge `b` with each part. If any merge succeeds, update that part.
+      for (int i = 0; i < parts.length; i++) {
+        final merged = _combineAmounts(parts[i], b);
+        // If merge happened and result is not a new comma-separated string,
+        // replace this part and return
+        if (merged != null && !merged.contains(',')) {
+          parts[i] = merged;
+          return parts.join(', ');
+        } else if (merged != null && i == parts.length - 1) {
+          // Last part: if merge result has commas, use it as-is
+          parts[i] = merged;
+          return parts.join(', ');
+        }
+      }
+      // No compatible merge found: append `b` as a new comma-separated entry
       return '$a, $b';
     }
 
+    // 🎯 Both sides are comma-free: proceed with detailed matching
     final pA = _simpleParse(a);
     final pB = _simpleParse(b);
 

@@ -52,8 +52,11 @@ UNKNOWN = CAT["unknown"]
 # =============================================================================
 KEYWORD_RULES = [
     # ── Specific multi-word items (must come first: longest match wins) ──
-    # Pantry items (jarred/canned/preserved goods, spreads — store center aisles)
-    (["tomato paste"],          "pantry"),
+    # Pantry (shelf-stable, canned, jarred, preserved)
+    (["stock"],                 "pantry"),
+    (["vegetable stock"],       "pantry"),
+    (["chicken stock"],         "pantry"),
+    (["beef stock"],            "pantry"),
     (["tomato sauce"],          "pantry"),
     (["tomato puree"],          "pantry"),
     (["sun-dried tomato"],      "pantry"),
@@ -125,13 +128,6 @@ KEYWORD_RULES = [
     (["nutella"],               "pantry"),
     (["hazelnut spread"],       "pantry"),
 
-    (["chicken stock"],         "beverage"),
-    (["chicken broth"],         "beverage"),
-    (["beef stock"],            "beverage"),
-    (["beef broth"],            "beverage"),
-    (["vegetable stock"],       "beverage"),
-    (["vegetable broth"],       "beverage"),
-
     (["cream cheese"],          "cheese"),
     (["goat cheese"],           "cheese"),
     (["blue cheese"],           "cheese"),
@@ -188,8 +184,11 @@ KEYWORD_RULES = [
     (["cake flour"],            "flour"),
     (["pastry flour"],          "flour"),
     (["self-raising flour"],    "flour"),
-    (["self rising flour"],     "flour"),
+    (["self raising flour"],    "flour"),
     (["whole wheat flour"],     "flour"),
+    (["vital wheat gluten"],    "flour"),
+    (["wheat gluten"],          "flour"),
+    (["vital gluten"],          "flour"),
     (["cornstarch"],            "flour"),
     (["corn starch"],           "flour"),
     (["cornflour"],             "flour"),
@@ -208,6 +207,11 @@ KEYWORD_RULES = [
     (["muscovado"],             "sugar"),
     (["caster sugar"],          "sugar"),
     (["granulated sugar"],      "sugar"),
+
+    (["dark chocolate"],        "sugar"),
+    (["white chocolate"],       "sugar"),
+    (["milk chocolate"],        "sugar"),
+    (["chocolate chip"],        "sugar"),
 
     (["ground beef"],           "meat"),
     (["ground pork"],           "meat"),
@@ -353,11 +357,11 @@ KEYWORD_RULES = [
     (["sprite"],     "pop"),
     (["ginger ale"], "pop"),
 
-    # Beverage
+    # Beverage (stock is canned/pantry, not liquid beverage)
     (["coffee"],     "beverage"),
     (["tea"],        "beverage"),
     (["broth"],      "beverage"),
-    (["stock"],      "beverage"),
+    # Note: stock moved to pantry (shelf-stable canned/boxed)
     (["bouillon"],   "beverage"),
     (["water"],      "beverage"),
 
@@ -385,6 +389,17 @@ KEYWORD_RULES = [
     (["lardon"],     "meat"),
     (["bresaola"],   "meat"),
     (["nduja"],      "meat"),
+    (["short ribs"],    "meat"),
+    (["slab ribs"],     "meat"),
+    (["spare ribs"],    "meat"),
+    (["beef ribs"],     "meat"),
+    (["pork ribs"],     "meat"),
+    (["oxtail"],        "meat"),
+    (["tongue"],        "meat"),
+    (["liver"],         "meat"),
+    (["kidney"],        "meat"),
+    (["heart"],         "meat"),
+    (["offal"],         "meat"),
 
     # Poultry
     (["chicken"],    "poultry"),

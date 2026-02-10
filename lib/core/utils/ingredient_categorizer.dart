@@ -211,7 +211,32 @@ class IngredientService {
       'cantaloupe': IngredientCategory.produce.index,
       'mango': IngredientCategory.produce.index,
       'pineapple': IngredientCategory.produce.index,
-      'leek': IngredientCategory.produce.index,
+      // Peppers & Chilies (important: must be specific to match before spice rules)
+      'green pepper': IngredientCategory.produce.index,
+      'red pepper': IngredientCategory.produce.index,
+      'yellow pepper': IngredientCategory.produce.index,
+      'bell pepper': IngredientCategory.produce.index,
+      'red chili': IngredientCategory.produce.index,
+      'green chili': IngredientCategory.produce.index,
+      'habanero': IngredientCategory.produce.index,
+      'serrano': IngredientCategory.produce.index,
+      'thai chili': IngredientCategory.produce.index,
+      'poblano': IngredientCategory.produce.index,
+      // Meat
+      'slab ribs': IngredientCategory.meat.index,
+      'spare ribs': IngredientCategory.meat.index,
+      'short ribs': IngredientCategory.meat.index,
+      'beef ribs': IngredientCategory.meat.index,
+      'pork ribs': IngredientCategory.meat.index,
+      // Chocolate (sugar category, not beverages)
+      'dark chocolate': IngredientCategory.sugar.index,
+      'white chocolate': IngredientCategory.sugar.index,
+      'milk chocolate': IngredientCategory.sugar.index,
+      // Stock/broth (pantry, not beverages)
+      'stock': IngredientCategory.pantry.index,
+      'vegetable stock': IngredientCategory.pantry.index,
+      'chicken stock': IngredientCategory.pantry.index,
+      'beef stock': IngredientCategory.pantry.index,
       'shiitake': IngredientCategory.produce.index,
       'enoki': IngredientCategory.produce.index,
       'oyster mushroom': IngredientCategory.produce.index,
@@ -480,6 +505,7 @@ class IngredientService {
       'agave': IngredientCategory.sugar.index,
       'vanilla extract': IngredientCategory.sugar.index,
       'vanilla': IngredientCategory.sugar.index,
+      // Chocolate (sugar, not beverage)
       'chocolate': IngredientCategory.sugar.index,
       'cocoa powder': IngredientCategory.sugar.index,
       // Leavening
