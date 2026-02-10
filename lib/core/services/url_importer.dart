@@ -4915,35 +4915,6 @@ class UrlRecipeImporter {
     String? amount;
     String? inlineSection;
     
-    // Extract leading adjectives/modifiers FIRST, before any pattern matching
-    // e.g., "boneless, skinless chicken thighs" -> extract "boneless, skinless"
-    // This must happen before other patterns consume the string
-    // Handles both space-separated and comma-separated modifiers
-    final leadingModifierRegex = RegExp(
-      r'^(boneless|skinless|skin-?on|bone-?in|frozen|fresh|dried|organic|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|finely|coarsely)(?:,?\s+)',
-      caseSensitive: false,
-    );
-    
-    final extractedMods = <String>[];
-    while (remaining.isNotEmpty) {
-      final match = leadingModifierRegex.firstMatch(remaining);
-      if (match == null) break;
-      
-      final mod = match.group(1)?.trim().toLowerCase();
-      if (mod != null && mod.isNotEmpty) {
-        extractedMods.add(mod);
-      }
-      // Strip the matched modifier AND any following comma+space or just space
-      remaining = remaining.substring(match.end).trim();
-      // Also strip any leading comma that might remain
-      remaining = remaining.replaceFirst(RegExp(r'^,\s*'), '');
-    }
-    
-    // Add extracted modifiers to notesParts in correct order
-    if (extractedMods.isNotEmpty) {
-      notesParts.addAll(extractedMods);
-    }
-    
     // Handle "Optional:" prefix at the start of ingredient line
     // e.g., "Optional: 1/4 tsp calcium chloride (aka Pickle Crisp granules)"
     // -> amount: "1/4 tsp", name: "Calcium Chloride", preparation: "optional, aka Pickle Crisp granules"
@@ -5458,6 +5429,34 @@ class UrlRecipeImporter {
     // Strip leading "of" that some sites include after the amount
     // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
     remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');
+    
+    // Extract leading adjectives/modifiers AFTER amount extraction
+    // e.g., "boneless, skinless chicken thighs" -> extract "boneless, skinless"
+    // Handles both space-separated and comma-separated modifiers
+    final leadingModifierRegex = RegExp(
+      r'^(boneless|skinless|skin-?on|bone-?in|frozen|fresh|dried|organic|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|finely|coarsely)(?:,?\s+)',
+      caseSensitive: false,
+    );
+    
+    final extractedMods = <String>[];
+    while (remaining.isNotEmpty) {
+      final match = leadingModifierRegex.firstMatch(remaining);
+      if (match == null) break;
+      
+      final mod = match.group(1)?.trim().toLowerCase();
+      if (mod != null && mod.isNotEmpty) {
+        extractedMods.add(mod);
+      }
+      // Strip the matched modifier AND any following comma+space or just space
+      remaining = remaining.substring(match.end).trim();
+      // Also strip any leading comma that might remain
+      remaining = remaining.replaceFirst(RegExp(r'^,\s*'), '');
+    }
+    
+    // Add extracted modifiers to notesParts in correct order
+    if (extractedMods.isNotEmpty) {
+      notesParts.addAll(extractedMods);
+    }
     
     // Extract preparation instructions after comma (e.g., "oil, I used rice bran oil")
     // But don't split on commas that are inside parentheses
