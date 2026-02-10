@@ -653,9 +653,8 @@ class IngredientService {
     result = result.replaceAll(RegExp(r'oes$'), 'o');
     // "cheeses" -> "cheese", "sauces" -> "sauce"
     result = result.replaceAll(RegExp(r'ses$'), 'se');
-    // "leaves" -> "leaf" (special case)
-    result = result.replaceAll(RegExp(r'ves$'), 'f');
-    // General: "onions" -> "onion", "peppers" -> "pepper"
+    // General: "onions" -> "onion", "peppers" -> "pepper", "cloves" -> "clove"
+    // Also: "leaves" -> "leave", "knives" -> "knive" (not perfect, but better than mangling)
     // But NOT words ending in 'ss' (e.g. "grass"), 'us', 'is'
     result = result.replaceAll(RegExp(r'(?<![sui])s$'), '');
     
