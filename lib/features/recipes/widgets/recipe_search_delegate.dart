@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
@@ -77,6 +78,14 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
         }
 
         final recipes = snapshot.data ?? [];
+
+        IntegrityService.reportEvent(
+          'activity.search_performed',
+          metadata: {
+            'query': query,
+            'result_count': recipes.length,
+          },
+        );
 
         if (recipes.isEmpty) {
           return MemoixEmptyState(

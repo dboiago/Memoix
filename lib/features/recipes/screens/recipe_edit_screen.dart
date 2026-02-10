@@ -21,6 +21,7 @@ import '../models/cuisine.dart';
 import '../models/spirit.dart';
 import '../repository/recipe_repository.dart';
 import 'recipe_detail_screen.dart';
+import '../../../core/services/integrity_service.dart';
 
 String? _selectedModernistType;
 String? _selectedSmokingType;
@@ -1869,6 +1870,24 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       await repository.saveRecipe(recipe);
       final savedId = recipe.uuid;
       final recipeName = recipe.name;
+
+      // Report recipe saved
+      await IntegrityService.reportEvent(
+        'activity.recipe_saved',
+        metadata: {
+          'recipe_id': recipe.uuid,
+          'has_ingredients': recipe.ingredients.isNotEmpty,
+          'has_directions': recipe.directions.isNotEmpty,
+          'ingredient_count': recipe.ingredients.length,
+          'direction_count': recipe.directions.length,
+          'recipe_source': recipe.source.name,
+          'has_header_image': recipe.headerImage != null,
+          'created_days_ago': recipe.createdAt != null
+              ? DateTime.now().difference(recipe.createdAt!).inDays
+              : -1,
+        },
+      );
+      await processIntegrityResponses(ref);
 
       if (mounted) {
         // Capture navigator before popping

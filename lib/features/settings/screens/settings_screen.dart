@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/services/github_recipe_service.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/database/database.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -42,6 +43,7 @@ class HideMemoixRecipesNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
   }
 }
 
@@ -66,6 +68,7 @@ class CompactViewNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
   }
 }
 
@@ -90,6 +93,7 @@ class KeepScreenOnNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
   }
 }
 
@@ -114,6 +118,7 @@ class UseSideBySideNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
   }
 }
 
@@ -138,6 +143,7 @@ class ShowHeaderImagesNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
   }
 }
 
@@ -162,6 +168,7 @@ class AutoCheckUpdatesNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
   }
 }
 
@@ -456,7 +463,9 @@ class SettingsScreen extends ConsumerWidget {
 
   void _showAbout(BuildContext context) async {
     final packageInfo = await PackageInfo.fromPlatform();
-    final version = '${packageInfo.version} (${packageInfo.buildNumber})';
+    final prefs = await SharedPreferences.getInstance();
+    final versionSuffix = prefs.getString('app.version.suffix') ?? '';
+    final version = '${packageInfo.version} (${packageInfo.buildNumber})$versionSuffix';", "oldString": "  void _showAbout(BuildContext context) async {\n    final packageInfo = await PackageInfo.fromPlatform();\n    final version = '${packageInfo.version} (${packageInfo.buildNumber})';
 
     if (!context.mounted) return;
 

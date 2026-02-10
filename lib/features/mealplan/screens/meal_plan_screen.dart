@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 
 import '../models/meal_plan.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
@@ -337,6 +338,27 @@ class _DayCardState extends ConsumerState<DayCard> {
       widget.date,
       targetCourse,
     );
+
+    // Report meal plan move
+    final weekStart = ref.read(selectedWeekProvider);
+    final weekly = await service.getWeek(weekStart);
+    int daysWithMeals = 0;
+    int totalMeals = 0;
+    for (final plan in weekly.dailyPlans.values) {
+      if (plan.meals.isNotEmpty) {
+        daysWithMeals++;
+        totalMeals += plan.meals.length;
+      }
+    }
+    await IntegrityService.reportEvent(
+      'activity.meal_plan_updated',
+      metadata: {
+        'action': 'move',
+        'days_with_meals': daysWithMeals,
+        'total_meals_set': totalMeals,
+      },
+    );
+    await processIntegrityResponses(ref);
     
     // Force refresh of the UI
     ref.invalidate(weeklyPlanProvider);
@@ -758,6 +780,27 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       cuisine: recipe.cuisine,
       recipeCategory: recipe.course,
     );
+
+    // Report meal plan activity
+    final weekStart = ref.read(selectedWeekProvider);
+    final weekly = await ref.read(mealPlanServiceProvider).getWeek(weekStart);
+    int daysWithMeals = 0;
+    int totalMeals = 0;
+    for (final plan in weekly.dailyPlans.values) {
+      if (plan.meals.isNotEmpty) {
+        daysWithMeals++;
+        totalMeals += plan.meals.length;
+      }
+    }
+    await IntegrityService.reportEvent(
+      'activity.meal_plan_updated',
+      metadata: {
+        'action': 'add',
+        'days_with_meals': daysWithMeals,
+        'total_meals_set': totalMeals,
+      },
+    );
+    await processIntegrityResponses(ref);
     
     if (!mounted) return;
     

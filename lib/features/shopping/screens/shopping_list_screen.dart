@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/theme/colors.dart';
 import '../../../app/routes/router.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/shopping_list.dart';
 import '../../../core/providers.dart';
@@ -827,6 +828,7 @@ class _CreateShoppingListSheetState extends ConsumerState<CreateShoppingListShee
               }
               if (recipes.isNotEmpty) {
                 final list = await ref.read(shoppingListServiceProvider).generateFromRecipes(recipes, name: name.isNotEmpty ? name : null);
+                await _reportShoppingListCreated(ref, list, 'meal_plan');
                 if (context.mounted) {
                   Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
                 }
@@ -859,6 +861,7 @@ class _CreateShoppingListSheetState extends ConsumerState<CreateShoppingListShee
               final name = _nameController.text.trim();
               Navigator.pop(context);
               final list = await ref.read(shoppingListServiceProvider).createEmpty(name: name.isNotEmpty ? name : null);
+              await _reportShoppingListCreated(ref, list, 'empty');
               if (context.mounted) {
                 Navigator.of(context).push(MaterialPageRoute(builder: (_) => ShoppingListDetailScreen(listUuid: list.uuid)));
               }
@@ -1054,6 +1057,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
       recipes,
       name: widget.listName,
     );
+    await _reportShoppingListCreated(ref, list, 'recipes');
 
     if (context.mounted) {
       // Pop the selector and navigate to the new list
@@ -1062,6 +1066,42 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
       );
     }
   }
+}
+
+Future<void> _reportShoppingListCreated(
+  WidgetRef ref,
+  ShoppingList list,
+  String source,
+) async {
+  int produce = 0, meat = 0, dairy = 0, pantry = 0, other = 0;
+  for (final item in list.items) {
+    final cat = (item.category ?? '').toLowerCase();
+    if (cat.contains('produce') || cat.contains('fruit') || cat.contains('vegetable')) {
+      produce++;
+    } else if (cat.contains('meat') || cat.contains('seafood') || cat.contains('poultry')) {
+      meat++;
+    } else if (cat.contains('dairy')) {
+      dairy++;
+    } else if (cat.contains('pantry') || cat.contains('spice') || cat.contains('baking')) {
+      pantry++;
+    } else {
+      other++;
+    }
+  }
+  await IntegrityService.reportEvent(
+    'activity.shopping_list_created',
+    metadata: {
+      'source': source,
+      'item_count': list.items.length,
+      'recipe_count': list.recipeIds.length,
+      'produce_count': produce,
+      'meat_count': meat,
+      'dairy_count': dairy,
+      'pantry_count': pantry,
+      'other_count': other,
+    },
+  );
+  await processIntegrityResponses(ref);
 }
 
 /// Chip that displays total nutrition for recipes in a shopping list

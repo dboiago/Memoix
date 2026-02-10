@@ -22,6 +22,7 @@ import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../tools/recipe_comparison_provider.dart';
+import '../../../core/services/integrity_service.dart';
 
 bool shouldShowCompareButton(Recipe recipe) {
   final allowed = {
@@ -217,8 +218,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
+              final wasFavourited = recipe.isFavorite;
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
+              IntegrityService.reportEvent(
+                'activity.recipe_favourited',
+                metadata: {
+                  'recipe_id': recipe.uuid,
+                  'is_adding': !wasFavourited,
+                },
+              ).then((_) => processIntegrityResponses(ref));
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
@@ -480,8 +489,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
+              final wasFavourited = recipe.isFavorite;
               await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
               ref.invalidate(allRecipesProvider);
+              IntegrityService.reportEvent(
+                'activity.recipe_favourited',
+                metadata: {
+                  'recipe_id': recipe.uuid,
+                  'is_adding': !wasFavourited,
+                },
+              ).then((_) => processIntegrityResponses(ref));
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
@@ -1041,6 +1058,17 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     return chips;
   }
 
+  void _reportShare(Recipe recipe, String exportType) {
+    IntegrityService.reportEvent(
+      'activity.recipe_shared',
+      metadata: {
+        'recipe_id': recipe.uuid,
+        'export_type': exportType,
+        'recipe_source': recipe.source.name,
+      },
+    ).then((_) => processIntegrityResponses(ref));
+  }
+
   Future<void> _logCook(BuildContext context, Recipe recipe) async {
     await ref.read(cookingStatsServiceProvider).logCook(
       recipeId: recipe.uuid,
@@ -1085,6 +1113,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               onTap: () {
                 Navigator.pop(ctx);
                 shareService.showQrCode(context, recipe);
+                _reportShare(recipe, 'qr');
               },
             ),
             ListTile(
@@ -1094,6 +1123,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               onTap: () {
                 Navigator.pop(ctx);
                 shareService.shareRecipe(recipe);
+                _reportShare(recipe, 'link');
               },
             ),
             ListTile(
@@ -1104,6 +1134,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                 Navigator.pop(ctx);
                 await shareService.copyShareLink(recipe);
                 MemoixSnackBar.show('Link copied to clipboard');
+                _reportShare(recipe, 'clipboard');
               },
             ),
             ListTile(
@@ -1113,6 +1144,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               onTap: () {
                 Navigator.pop(ctx);
                 shareService.shareAsText(recipe);
+                _reportShare(recipe, 'text');
               },
             ),
             const SizedBox(height: 8),

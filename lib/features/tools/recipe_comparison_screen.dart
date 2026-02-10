@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../app/routes/router.dart';
+import '../../core/services/integrity_service.dart';
 import '../../core/widgets/memoix_snackbar.dart';
 import '../../shared/widgets/recipe_picker_modal.dart';
 import '../recipes/models/recipe.dart';
@@ -438,6 +439,19 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       ..updatedAt = DateTime.now();
 
     await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
+
+    await IntegrityService.reportEvent(
+      'activity.recipes_compared',
+      metadata: {
+        'recipe_a_id': comparison.recipe1!.uuid,
+        'recipe_b_id': comparison.recipe2!.uuid,
+        'recipe_a_steps': comparison.recipe1!.directions.length,
+        'recipe_b_steps': comparison.recipe2!.directions.length,
+        'result_saved': true,
+        'result_steps': steps.length,
+      },
+    );
+    await processIntegrityResponses(ref);
 
     if (mounted) {
       // Invalidate the drafts provider to ensure the new draft is available

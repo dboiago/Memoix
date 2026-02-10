@@ -6,6 +6,8 @@ import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
+import '../../core/services/integrity_service.dart';
+
 /// Available timer alarm sounds (maps to system sounds)
 enum TimerSound {
   alarm('Alarm'),
@@ -139,6 +141,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     state = state.copyWith(timers: timers);
     _ensureTickerRunning();
     _updateWakelock();
+    _reportTimerState('start');
   }
 
   /// Pause a timer
@@ -151,6 +154,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     }).toList();
     state = state.copyWith(timers: timers);
     _updateWakelock();
+    _reportTimerState('pause');
   }
 
   /// Resume a paused timer
@@ -164,6 +168,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     state = state.copyWith(timers: timers);
     _ensureTickerRunning();
     _updateWakelock();
+    _reportTimerState('resume');
   }
 
   /// Reset a timer to its original duration
@@ -234,6 +239,18 @@ class TimerService extends StateNotifier<TimerServiceState> {
       hasAlarmingTimer: timers.any((t) => t.isAlarming),
     );
     _updateWakelock();
+  }
+
+  void _reportTimerState(String action) {
+    final active = state.timers.where((t) => t.isRunning && !t.isPaused).toList();
+    IntegrityService.reportEvent(
+      'activity.timer_state_changed',
+      metadata: {
+        'action': action,
+        'active_count': active.length,
+        'active_durations_seconds': active.map((t) => t.duration.inSeconds).toList(),
+      },
+    );
   }
 
   /// Update timer settings

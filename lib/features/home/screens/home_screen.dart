@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
@@ -84,11 +85,16 @@ class _CourseGridView extends ConsumerWidget {
                 child: Builder(
                   builder: (context) {
                     final theme = Theme.of(context);
+                    final overrides = ref.watch(viewOverrideProvider);
+                    final searchHint = overrides['search.hint']?.value ?? 'Search recipes...';
+                    final searchIcon = overrides.containsKey('search.icon')
+                        ? _resolveIcon(overrides['search.icon']!.value)
+                        : Icons.search;
                     return TextField(
                       decoration: InputDecoration(
-                        hintText: 'Search recipes...',
+                        hintText: searchHint,
                         hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
+                        prefixIcon: Icon(searchIcon, color: theme.colorScheme.onSurfaceVariant),
                         filled: true,
                         fillColor: theme.colorScheme.surfaceContainerHighest,
                         border: OutlineInputBorder(
@@ -99,6 +105,13 @@ class _CourseGridView extends ConsumerWidget {
                       style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                       readOnly: true,
                       onTap: () {
+                        // Consume view override uses when search is activated
+                        if (overrides.containsKey('search.hint')) {
+                          ref.read(viewOverrideProvider.notifier).consumeUse('search.hint');
+                        }
+                        if (overrides.containsKey('search.icon')) {
+                          ref.read(viewOverrideProvider.notifier).consumeUse('search.icon');
+                        }
                         showSearch(
                           context: context,
                           delegate: RecipeSearchDelegate(ref),
@@ -335,4 +348,17 @@ class _CourseRecipeViewState extends State<CourseRecipeView> with SingleTickerPr
       ],
     );
   }
+}
+
+/// Resolve an icon name string to an IconData.
+/// Used by the view override system to swap icons dynamically.
+IconData _resolveIcon(String name) {
+  const map = <String, IconData>{
+    'search': Icons.search,
+    'set_meal': Icons.set_meal,
+    'restaurant': Icons.restaurant,
+    'kitchen': Icons.kitchen,
+    'eco': Icons.eco,
+  };
+  return map[name] ?? Icons.search;
 }

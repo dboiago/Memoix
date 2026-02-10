@@ -5,6 +5,7 @@ import 'theme/theme.dart';
 import 'routes/router.dart';
 import '../core/providers.dart';
 import '../core/services/deep_link_service.dart';
+import '../core/services/integrity_service.dart';
 import '../core/services/update_service.dart';
 import '../core/services/github_recipe_service.dart';
 import '../core/widgets/update_available_dialog.dart';
@@ -76,6 +77,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     } else if (state == AppLifecycleState.resumed) {
       // App coming back to foreground - could trigger pull if needed
       // Currently handled by onAppLaunched on startup
+      processIntegrityResponses(ref);
     }
   }
 

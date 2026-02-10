@@ -7,6 +7,7 @@ import 'package:window_manager/window_manager.dart';
 
 import 'app/app.dart';
 import 'core/database/database.dart';
+import 'core/services/integrity_service.dart';
 import 'core/utils/ingredient_categorizer.dart';
 
 void main() async {
@@ -35,6 +36,9 @@ void main() async {
 
   // Initialize local database
   await MemoixDatabase.initialize();
+
+  // Initialize integrity layer
+  await IntegrityService.initialize();
   
   // Initialize Ingredient Service
   await IngredientService().initialize();

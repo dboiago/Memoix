@@ -1,15 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/routes/router.dart';
 import '../../app/app_shell.dart';
+import '../../core/services/integrity_service.dart';
 
 /// Navigation drawer with organized sections
 /// Sections: Navigate, Tools, Share
-class AppDrawer extends StatelessWidget {
+class AppDrawer extends ConsumerWidget {
   const AppDrawer({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final overrides = ref.watch(viewOverrideProvider);
+    final timerLabel = overrides['drawer.timer.label']?.value ?? 'Kitchen Timer';
+    if (overrides.containsKey('drawer.timer.label')) {
+      // Consume one use each time the drawer is built
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        ref.read(viewOverrideProvider.notifier).consumeUse('drawer.timer.label');
+      });
+    }
     
     return Drawer(
       child: SafeArea(
@@ -92,7 +102,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                   _DrawerTile(
                     icon: Icons.timer,
-                    title: 'Kitchen Timer',
+                    title: timerLabel,
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toKitchenTimer(context);

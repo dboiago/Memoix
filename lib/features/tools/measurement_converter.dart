@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/services/integrity_service.dart';
+
 /// Measurement conversion utility for cooking
 class MeasurementConverter {
   // Volume conversions to milliliters (base unit)
@@ -218,6 +220,17 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
       setState(() {
         _result = MeasurementConverter.formatNumber(converted!);
       });
+      final tabNames = ['volume', 'weight', 'temperature'];
+      IntegrityService.reportEvent(
+        'activity.conversion_attempted',
+        metadata: {
+          'category': _selectedTab < tabNames.length ? tabNames[_selectedTab] : 'reference',
+          'from_unit': _fromUnit,
+          'to_unit': _toUnit,
+          'input_raw': _amountController.text,
+          'input_numeric': amount,
+        },
+      );
     }
   }
 
