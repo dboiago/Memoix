@@ -29,7 +29,7 @@ class IntegrityResponse {
 /// Key-value store backed by SharedPreferences.
 /// All keys are prefixed to avoid collisions with app settings.
 class IntegrityStateStore {
-  static const _prefix = '_ix_';
+  static const _prefix = 'runtime_';
   SharedPreferences? _prefs;
 
   Future<void> initialize() async {
@@ -108,7 +108,7 @@ class IntegrityService {
     _initialized = true;
   }
 
-  /// Register the event handler (typically the encrypted logic module).
+  /// Register the runtime rule handler.
   static void registerHandler(IntegrityEventHandler handler) {
     _handler = handler;
   }
