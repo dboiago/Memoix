@@ -456,7 +456,6 @@ class IngredientService {
       'nutella': IngredientCategory.pantry.index,
       'miso': IngredientCategory.pantry.index,
       'tahini': IngredientCategory.pantry.index,
-      'kimchi': IngredientCategory.pantry.index,
       'pesto': IngredientCategory.pantry.index,
       'coconut cream': IngredientCategory.pantry.index,
       'anchovy paste': IngredientCategory.pantry.index,

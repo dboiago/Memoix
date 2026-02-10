@@ -95,7 +95,8 @@ KEYWORD_RULES = [
     (["curry paste"],            "pantry"),
     (["bean paste"],             "pantry"),
     (["chili paste"],            "pantry"),
-    (["miso"],                  "pantry"),    (["]kimchi"],                "pantry"),    (["tahini"],                "pantry"),
+    (["miso"],                  "pantry"),
+    (["tahini"],                "pantry"),
     (["pesto"],                 "pantry"),
     (["hoisin"],                "condiment"),
     # True condiments (found in the condiment aisle)
@@ -121,6 +122,7 @@ KEYWORD_RULES = [
     (["sambal"],                "condiment"),
     (["chutney"],               "condiment"),
     (["relish"],                "condiment"),
+    (["]kimchi"],               "condiment"),
     (["dressing"],              "condiment"),
 
     # Nut butters / spreads → pantry (not with whole nuts)
