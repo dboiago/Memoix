@@ -4915,6 +4915,31 @@ class UrlRecipeImporter {
     String? amount;
     String? inlineSection;
     
+    // Extract leading adjectives/modifiers FIRST, before any pattern matching
+    // e.g., "boneless skinless chicken thighs" -> extract "boneless, skinless"
+    // This must happen before other patterns consume the string
+    final leadingModifierRegex = RegExp(
+      r'^(boneless|skinless|skin-?on|bone-?in|frozen|fresh|dried|organic|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|finely|coarsely)\s+',
+      caseSensitive: false,
+    );
+    
+    final extractedMods = <String>[];
+    while (remaining.isNotEmpty) {
+      final match = leadingModifierRegex.firstMatch(remaining);
+      if (match == null) break;
+      
+      final mod = match.group(1)?.trim().toLowerCase();
+      if (mod != null && mod.isNotEmpty) {
+        extractedMods.add(mod);
+      }
+      remaining = remaining.substring(match.end).trim();
+    }
+    
+    // Add extracted modifiers to notesParts in correct order
+    if (extractedMods.isNotEmpty) {
+      notesParts.addAll(extractedMods);
+    }
+    
     // Handle "Optional:" prefix at the start of ingredient line
     // e.g., "Optional: 1/4 tsp calcium chloride (aka Pickle Crisp granules)"
     // -> amount: "1/4 tsp", name: "Calcium Chloride", preparation: "optional, aka Pickle Crisp granules"
@@ -5504,31 +5529,6 @@ class UrlRecipeImporter {
     
     // Clean the ingredient name - remove trailing/leading punctuation
     remaining = remaining.replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '');
-    
-    // Extract leading adjectives/modifiers from the ingredient name
-    // e.g., "chopped green onions" -> name: "green onions", prep: "chopped"
-    // e.g., "boneless skinless chicken thighs" -> name: "chicken thighs", prep: "boneless, skinless"
-    final leadingModifierRegex = RegExp(
-      r'^(boneless|skinless|skin-?on|bone-?in|frozen|fresh|dried|organic|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|finely|coarsely)\s+',
-      caseSensitive: false,
-    );
-    
-    final extractedMods = <String>[];
-    while (remaining.isNotEmpty) {
-      final match = leadingModifierRegex.firstMatch(remaining);
-      if (match == null) break;
-      
-      final mod = match.group(1)?.trim().toLowerCase();
-      if (mod != null && mod.isNotEmpty) {
-        extractedMods.add(mod);
-      }
-      remaining = remaining.substring(match.end).trim();
-    }
-    
-    // Add extracted modifiers to the front of notesParts (in correct order)
-    if (extractedMods.isNotEmpty) {
-      notesParts.insertAll(0, extractedMods);
-    }
     
     // Build final notes string, cleaning up any remaining stray parentheses, commas, and footnotes
     String? finalNotes;
