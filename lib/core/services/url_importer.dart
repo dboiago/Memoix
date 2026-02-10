@@ -4916,10 +4916,11 @@ class UrlRecipeImporter {
     String? inlineSection;
     
     // Extract leading adjectives/modifiers FIRST, before any pattern matching
-    // e.g., "boneless skinless chicken thighs" -> extract "boneless, skinless"
+    // e.g., "boneless, skinless chicken thighs" -> extract "boneless, skinless"
     // This must happen before other patterns consume the string
+    // Handles both space-separated and comma-separated modifiers
     final leadingModifierRegex = RegExp(
-      r'^(boneless|skinless|skin-?on|bone-?in|frozen|fresh|dried|organic|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|finely|coarsely)\s+',
+      r'^(boneless|skinless|skin-?on|bone-?in|frozen|fresh|dried|organic|chopped|minced|diced|sliced|grated|shredded|crushed|crumbled|smashed|cubed|melted|softened|beaten|sifted|peeled|cored|seeded|pitted|trimmed|finely|coarsely)(?:,?\s+)',
       caseSensitive: false,
     );
     
@@ -4932,7 +4933,10 @@ class UrlRecipeImporter {
       if (mod != null && mod.isNotEmpty) {
         extractedMods.add(mod);
       }
+      // Strip the matched modifier AND any following comma+space or just space
       remaining = remaining.substring(match.end).trim();
+      // Also strip any leading comma that might remain
+      remaining = remaining.replaceFirst(RegExp(r'^,\s*'), '');
     }
     
     // Add extracted modifiers to notesParts in correct order
@@ -5487,15 +5491,32 @@ class UrlRecipeImporter {
     }
     
     // Handle "or" alternatives - e.g., "confectioners' sugar or King Arthur Snow White Sugar"
+    // BUT: Don't split on "or" when it's between adjectives describing the same ingredient
+    // e.g., "red or yellow onion" should stay as "red or yellow onion", not split to "red" + "alt: yellow onion"
     // Match " or " but not at very start, and not "for" or other words ending in "or"
     final orMatch = RegExp(r'\s+or\s+', caseSensitive: false).firstMatch(remaining);
     if (orMatch != null && orMatch.start > 0) {
       final beforeOr = remaining.substring(0, orMatch.start).trim();
       final afterOr = remaining.substring(orMatch.end).trim();
       
-      // Only treat as alternative if afterOr looks like an ingredient name, not a phrase
+      // Check if beforeOr is just a simple adjective (color, size, etc.)
+      // If so, keep the entire phrase together as the ingredient name
+      final adjectivePattern = RegExp(
+        r'^(red|yellow|green|white|black|brown|orange|purple|pink|blue|'
+        r'large|medium|small|big|tiny|fresh|dried|frozen|canned|raw|cooked|'
+        r'hot|cold|warm|sweet|sour|spicy|mild)$',
+        caseSensitive: false,
+      );
+      
+      final isSimpleAdjective = adjectivePattern.hasMatch(beforeOr);
+      
+      // Only treat as alternative if:
+      // 1. beforeOr is NOT just a simple adjective
+      // 2. afterOr looks like an ingredient name, not a phrase
       // (avoid splitting on "or until golden brown" type phrases in directions that leaked in)
-      if (afterOr.isNotEmpty && !RegExp(r'^(until|if|when|as)\s', caseSensitive: false).hasMatch(afterOr)) {
+      if (!isSimpleAdjective && 
+          afterOr.isNotEmpty && 
+          !RegExp(r'^(until|if|when|as)\s', caseSensitive: false).hasMatch(afterOr)) {
         remaining = beforeOr;
         // Clean up the alternative - remove trailing punctuation and footnotes
         var alternative = afterOr
@@ -5506,6 +5527,7 @@ class UrlRecipeImporter {
           notesParts.insert(0, 'alt: $alternative');
         }
       }
+      // If isSimpleAdjective, keep the entire "red or yellow onion" as the name (don't split)
     }
     
     // Skip empty ingredients (like just "cooking oil" with nothing useful after extraction)
