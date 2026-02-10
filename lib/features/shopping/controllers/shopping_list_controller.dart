@@ -35,6 +35,10 @@ class ShoppingListController {
         // "Heavy Cream" -> "heavy cream"
         final canonical = _ingredientService.normalize(ingredient.name);
         
+        // Skip plain "water" (assumed pantry staple)
+        // But allow specific types: bottled water, tonic water, sparkling water, etc.
+        if (canonical == 'water') continue;
+        
         // Get or create builder
         final builder = builders.putIfAbsent(canonical, () => _TermBuilder(
           canonical: canonical,

@@ -264,6 +264,9 @@ class IngredientService {
       'guava': IngredientCategory.produce.index,
       'plantain': IngredientCategory.produce.index,
       'lemon zest': IngredientCategory.produce.index,
+      'lime zest': IngredientCategory.produce.index,
+      'orange zest': IngredientCategory.produce.index,
+      'kimchi': IngredientCategory.produce.index,
       // Meat
       'beef': IngredientCategory.meat.index,
       'steak': IngredientCategory.meat.index,
@@ -567,6 +570,14 @@ class IngredientService {
       'tequila': IngredientCategory.alcohol.index,
       'gin': IngredientCategory.alcohol.index,
       'cognac': IngredientCategory.alcohol.index,
+      'maraschino liqueur': IngredientCategory.alcohol.index,
+      'prosecco': IngredientCategory.alcohol.index,
+      'creme de violette': IngredientCategory.alcohol.index,
+      'lillet blanc': IngredientCategory.alcohol.index,
+      // Pantry items (garnishes, specialty ingredients)
+      'brandied cherry': IngredientCategory.pantry.index,
+      'vital wheat gluten': IngredientCategory.flour.index,
+      'liquid smoke': IngredientCategory.pantry.index,
       // Juice
       'lemon juice': IngredientCategory.juice.index,
       'lime juice': IngredientCategory.juice.index,
