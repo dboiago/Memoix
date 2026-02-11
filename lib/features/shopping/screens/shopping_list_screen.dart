@@ -604,7 +604,7 @@ class _CategoryHeader extends StatelessWidget {
 class _ShoppingItemTile extends StatefulWidget {
   final ShoppingItem item;
   final VoidCallback onToggle;
-  final VoidCallback onDelete;
+  final Future<void> Function() onDelete;
   final VoidCallback onUndo;
   final bool Function() isPendingDelete;
   final VoidCallback? onRecipeTap;
@@ -625,17 +625,18 @@ class _ShoppingItemTile extends StatefulWidget {
 }
 
 class _ShoppingItemTileState extends State<_ShoppingItemTile> {
-  bool _isPendingDelete = false;
   static const undoDuration = Duration(seconds: 4);
 
-  void _startDeleteTimer() {
-    widget.onDelete();
-    setState(() => _isPendingDelete = true);
+  Future<void> _startDeleteTimer() async {
+    await widget.onDelete();
+    if (mounted) {
+      setState(() {});
+    }
   }
 
   void _undoDelete() {
     widget.onUndo();
-    setState(() => _isPendingDelete = false);
+    setState(() {});
   }
 
   @override
@@ -643,7 +644,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
     final theme = Theme.of(context);
 
     // Show inline undo placeholder when pending delete
-    final isPending = _isPendingDelete || widget.isPendingDelete();
+    final isPending = widget.isPendingDelete();
     if (isPending) {
       return Container(
         height: 56,
@@ -713,7 +714,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
           return false;
         } else {
           // Right-to-left: start inline undo timer
-          _startDeleteTimer();
+          await _startDeleteTimer();
           return false; // Don't dismiss - show placeholder instead
         }
       },
