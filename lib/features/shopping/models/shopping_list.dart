@@ -609,6 +609,10 @@ class ShoppingListService {
   }) async {
     if (itemUuid.isEmpty && fallbackIndex == null) return;
 
+    final key = itemUuid.isNotEmpty
+        ? '$listId:$itemUuid'
+        : '$listId:index:$fallbackIndex';
+
     var resolvedUuid = itemUuid;
     var resolvedIndex = fallbackIndex;
 
@@ -623,10 +627,6 @@ class ShoppingListService {
         }
       }
     }
-
-    final key = resolvedUuid.isNotEmpty
-        ? '$listId:$resolvedUuid'
-        : '$listId:index:$resolvedIndex';
 
     _pendingItemDeletes[key]?.cancel();
     _pendingItemDeleteData[key] = _PendingItemDelete(
