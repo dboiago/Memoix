@@ -72,46 +72,61 @@ class ShoppingListCard extends ConsumerStatefulWidget {
 
 class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
   bool _isPendingDelete = false;
-  Timer? _deleteTimer;
   static const _undoDuration = Duration(seconds: 4);
 
-  @override
-  void dispose() {
-    // If disposed while pending delete, execute the delete
-    if (_isPendingDelete) {
-      ref.read(shoppingListServiceProvider).delete(widget.list.id);
-    }
-    _deleteTimer?.cancel();
-    super.dispose();
-  }
-
   void _startDeleteTimer() {
-    setState(() {
-      _isPendingDelete = true;
-    });
-    
-    _deleteTimer?.cancel();
-    _deleteTimer = Timer(_undoDuration, () {
-      if (mounted && _isPendingDelete) {
-        ref.read(shoppingListServiceProvider).delete(widget.list.id);
-      }
-    });
+    ref.read(shoppingListServiceProvider).scheduleListDelete(
+      listId: widget.list.id,
+      undoDuration: _undoDuration,
+      onComplete: () {
+        if (mounted) {
+          setState(() => _isPendingDelete = false);
+        }
+      },
+    );
+    setState(() => _isPendingDelete = true);
   }
 
   void _undoDelete() {
-    _deleteTimer?.cancel();
-    setState(() {
-      _isPendingDelete = false;
-    });
+    ref.read(shoppingListServiceProvider).cancelPendingDelete(widget.list.id);
+    setState(() => _isPendingDelete = false);
+  }
+
+  void _confirmDelete(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Delete List?'),
+        content: Text('Delete "${widget.list.name}"?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _startDeleteTimer();
+            },
+            style: TextButton.styleFrom(
+              foregroundColor: Theme.of(context).colorScheme.secondary,
+            ),
+            child: const Text('Delete'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final progress = widget.list.items.isEmpty ? 0.0 : widget.list.checkedCount / widget.list.items.length;
+    final isPendingDelete =
+      _isPendingDelete || ref.read(shoppingListServiceProvider).isPendingDelete(widget.list.id);
 
     // Show inline undo placeholder when pending delete
-    if (_isPendingDelete) {
+    if (isPendingDelete) {
       return Card(
         margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         child: Container(
@@ -200,6 +215,11 @@ class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
                           style: TextStyle(color: theme.colorScheme.secondary, fontSize: 12),
                         ),
                       ),
+                    IconButton(
+                      tooltip: 'Delete list',
+                      icon: Icon(Icons.delete_outline, color: theme.colorScheme.secondary),
+                      onPressed: () => _confirmDelete(context),
+                    ),
                   ],
                 ),
                 const SizedBox(height: 8),
@@ -254,6 +274,12 @@ class ShoppingListDetailScreen extends ConsumerWidget {
           );
         }
 
+        if (list.items.any((item) => item.uuid.isEmpty)) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            ref.read(shoppingListServiceProvider).ensureItemUuids(list);
+          });
+        }
+
         return Scaffold(
           appBar: AppBar(
             title: Text(list.name),
@@ -290,18 +316,19 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                 children: [
                   _CategoryHeader(title: category),
                   ...items.map((item) {
-                    final index = list.items.indexOf(item);
+                    final itemUuid = item.uuid;
                     return _ShoppingItemTile(
                       item: item,
                       onToggle: () async {
-                        await ref.read(shoppingListServiceProvider).toggleItem(list, index);
+                        await ref.read(shoppingListServiceProvider).toggleItemById(list, itemUuid);
                       },
                       onDelete: () async {
-                        final updated = await ref.read(shoppingListServiceProvider).removeItem(list, index);
+                        final updated = await ref.read(shoppingListServiceProvider).removeItemById(list, itemUuid);
                         if (updated != null) {
                           await _reportShoppingListSaved(ref, updated, 'manual_save');
                         }
                       },
+                      onEditAmount: () => _editItemAmount(context, ref, list, item),
                       onRecipeTap: item.recipeSource != null && item.recipeSource!.isNotEmpty
                           ? () => _navigateToRecipe(context, ref, item.recipeSource!)
                           : null,
@@ -343,15 +370,15 @@ class ShoppingListDetailScreen extends ConsumerWidget {
         break;
       case 'clear':
         // Clear checked items
-        final checkedIndices = <int>[];
-        for (int i = list.items.length - 1; i >= 0; i--) {
-          if (list.items[i].isChecked) {
-            checkedIndices.add(i);
+        final checkedUuids = <String>[];
+        for (final item in list.items) {
+          if (item.isChecked && item.uuid.isNotEmpty) {
+            checkedUuids.add(item.uuid);
           }
         }
         ShoppingList? latest;
-        for (final i in checkedIndices) {
-          latest = await ref.read(shoppingListServiceProvider).removeItem(list, i) ?? latest;
+        for (final itemUuid in checkedUuids) {
+          latest = await ref.read(shoppingListServiceProvider).removeItemById(list, itemUuid) ?? latest;
         }
         if (latest != null) {
           await _reportShoppingListSaved(ref, latest, 'manual_save');
@@ -395,6 +422,49 @@ class ShoppingListDetailScreen extends ConsumerWidget {
           }
           Navigator.pop(ctx);
         },
+      ),
+    );
+  }
+
+  void _editItemAmount(
+    BuildContext context,
+    WidgetRef ref,
+    ShoppingList list,
+    ShoppingItem item,
+  ) {
+    final controller = TextEditingController(text: item.amount ?? '');
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text('Update Amount: ${item.name}'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          decoration: const InputDecoration(
+            labelText: 'Amount',
+            hintText: 'e.g., 2 Tbsp',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () async {
+              final updated = await ref
+                  .read(shoppingListServiceProvider)
+                  .updateItemAmountById(list, item.uuid, controller.text);
+              if (updated != null) {
+                await _reportShoppingListSaved(ref, updated, 'manual_save');
+              }
+              if (ctx.mounted) {
+                Navigator.pop(ctx);
+              }
+            },
+            child: const Text('Save'),
+          ),
+        ],
       ),
     );
   }
@@ -519,12 +589,14 @@ class _ShoppingItemTile extends StatefulWidget {
   final VoidCallback onToggle;
   final VoidCallback onDelete;
   final VoidCallback? onRecipeTap;
+  final VoidCallback? onEditAmount;
 
   const _ShoppingItemTile({
     required this.item,
     required this.onToggle,
     required this.onDelete,
     this.onRecipeTap,
+    this.onEditAmount,
   });
 
   @override
@@ -690,6 +762,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
                   )
                 : null,
         onTap: widget.onToggle,
+        onLongPress: widget.onEditAmount,
       ),
     );
   }

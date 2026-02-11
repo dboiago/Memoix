@@ -1,16 +1,22 @@
+import 'dart:async';
+
 import 'package:isar/isar.dart';
 import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
 import 'package:memoix/features/tools/measurement_converter.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
 import 'package:memoix/core/utils/text_normalizer.dart';
 import 'package:memoix/core/utils/unit_normalizer.dart';
+import 'package:uuid/uuid.dart';
 import '../../recipes/models/recipe.dart';
 
 part 'shopping_list.g.dart';
 
+final Uuid _uuid = Uuid();
+
 /// A shopping list item
 @embedded
 class ShoppingItem {
+  String uuid = '';
   String name = '';
   String? amount;
   String? unit; // Kept for legacy, logic now combined in detail
@@ -29,11 +35,12 @@ class ShoppingItem {
     this.recipeSource,
     this.isChecked = false,
     this.manualNotes,
-  });
+  }) : uuid = _uuid.v4();
 
   /// Create from an ingredient
   factory ShoppingItem.fromIngredient(Ingredient ingredient, String? recipeName) {
     return ShoppingItem()
+      ..uuid = _uuid.v4()
       ..name = ingredient.name
       ..amount = ingredient.amount
       ..category = null // No auto-categorization - just alphabetical
@@ -51,6 +58,7 @@ class ShoppingItem {
     }
     
     return ShoppingItem()
+      ..uuid = uuid
       ..name = name
       ..amount = _combineAmounts(amount, other.amount)
       ..category = category ?? other.category
@@ -106,6 +114,8 @@ class ShoppingList {
 class ShoppingListService {
   final Isar _db;
 
+  final Map<int, Timer> _pendingDeletes = {};
+
   ShoppingListService(this._db);
 
   /// Generate a shopping list from recipes
@@ -128,6 +138,7 @@ class ShoppingListService {
         final normalizedAmount = _normalizeAmount(item.quantityDisplay);
         
         flatItems.add(ShoppingItem()
+          ..uuid = _uuid.v4()
           ..name = item.name
           ..amount = normalizedAmount
           // Store raw unit if single, otherwise empty as it's in amount
@@ -141,7 +152,7 @@ class ShoppingListService {
     }
 
     final list = ShoppingList()
-      ..uuid = DateTime.now().millisecondsSinceEpoch.toString()
+      ..uuid = _uuid.v4()
       ..name = name ?? 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
       ..items = flatItems
       ..recipeIds = recipeIds
@@ -192,11 +203,42 @@ class ShoppingListService {
     return null;
   }
 
+  /// Update an item's checked status using its UUID
+  Future<ShoppingList?> toggleItemById(ShoppingList list, String itemUuid) async {
+    final latestList = await _db.shoppingLists.get(list.id);
+    if (latestList == null) return null;
+
+    final didUpdateUuids = _ensureItemUuids(latestList);
+    final index = latestList.items.indexWhere((item) => item.uuid == itemUuid);
+    if (index == -1) {
+      if (didUpdateUuids) {
+        await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      }
+      return null;
+    }
+
+    final newItems = List<ShoppingItem>.from(latestList.items);
+    newItems[index].isChecked = !newItems[index].isChecked;
+    latestList.items = newItems;
+
+    if (latestList.isComplete) {
+      latestList.completedAt = DateTime.now();
+    } else {
+      latestList.completedAt = null;
+    }
+
+    await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+    return latestList;
+  }
+
   /// Add a manual item to a list
   Future<ShoppingList?> addItem(ShoppingList list, ShoppingItem item) async {
     // Re-fetch to ensure latest version
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null) {
+      if (item.uuid.isEmpty) {
+        item.uuid = _uuid.v4();
+      }
       // 1. Normalize Name and Amount
       final normalizedName = TextNormalizer.cleanName(item.name);
       item.name = normalizedName;
@@ -231,6 +273,7 @@ class ShoppingListService {
         
         // Create updated item
         newItems[existingIndex] = ShoppingItem()
+          ..uuid = existing.uuid
           ..name = existing.name
           ..amount = combinedAmount
           ..unit = existing.unit // Keep existing unit or attempt merge? Simple is best for manual.
@@ -464,10 +507,81 @@ class ShoppingListService {
     return null;
   }
 
+  /// Remove an item from a list using its UUID
+  Future<ShoppingList?> removeItemById(ShoppingList list, String itemUuid) async {
+    final latestList = await _db.shoppingLists.get(list.id);
+    if (latestList == null) return null;
+
+    final didUpdateUuids = _ensureItemUuids(latestList);
+    final index = latestList.items.indexWhere((item) => item.uuid == itemUuid);
+    if (index == -1) {
+      if (didUpdateUuids) {
+        await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      }
+      return null;
+    }
+
+    final newItems = List<ShoppingItem>.from(latestList.items)..removeAt(index);
+    latestList.items = newItems;
+    await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+    return latestList;
+  }
+
+  /// Update an item's amount using its UUID
+  Future<ShoppingList?> updateItemAmountById(
+    ShoppingList list,
+    String itemUuid,
+    String? amount,
+  ) async {
+    final latestList = await _db.shoppingLists.get(list.id);
+    if (latestList == null) return null;
+
+    final didUpdateUuids = _ensureItemUuids(latestList);
+    final index = latestList.items.indexWhere((item) => item.uuid == itemUuid);
+    if (index == -1) {
+      if (didUpdateUuids) {
+        await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      }
+      return null;
+    }
+
+    final newItems = List<ShoppingItem>.from(latestList.items);
+    final normalizedAmount = (amount == null || amount.trim().isEmpty)
+        ? null
+        : _normalizeManualAmount(amount.trim());
+    newItems[index].amount = normalizedAmount;
+    latestList.items = newItems;
+    await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+    return latestList;
+  }
+
   /// Delete a shopping list
   Future<void> delete(int id) async {
     await _db.writeTxn(() => _db.shoppingLists.delete(id));
   }
+
+  /// Schedule a list deletion with undo capability
+  void scheduleListDelete({
+    required int listId,
+    required Duration undoDuration,
+    VoidCallback? onComplete,
+  }) {
+    _pendingDeletes[listId]?.cancel();
+    _pendingDeletes[listId] = Timer(undoDuration, () async {
+      _pendingDeletes.remove(listId);
+      await delete(listId);
+      onComplete?.call();
+    });
+  }
+
+  /// Cancel a pending delete (undo)
+  void cancelPendingDelete(int listId) {
+    _pendingDeletes[listId]?.cancel();
+    _pendingDeletes.remove(listId);
+  }
+
+  /// Check if a delete is pending for this list
+  bool isPendingDelete(int listId) => _pendingDeletes.containsKey(listId);
 
   /// Rename a shopping list
   Future<ShoppingList?> rename(ShoppingList list, String newName) async {
@@ -483,7 +597,7 @@ class ShoppingListService {
   /// Create an empty list with a name
   Future<ShoppingList> createEmpty({String? name}) async {
     final list = ShoppingList()
-      ..uuid = DateTime.now().millisecondsSinceEpoch.toString()
+      ..uuid = _uuid.v4()
       ..name = name ?? 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
       ..items = []
       ..createdAt = DateTime.now();
@@ -494,6 +608,26 @@ class ShoppingListService {
   /// Watch all shopping lists
   Stream<List<ShoppingList>> watchAll() {
     return _db.shoppingLists.where().sortByCreatedAtDesc().watch(fireImmediately: true);
+  }
+
+  Future<void> ensureItemUuids(ShoppingList list) async {
+    final latestList = await _db.shoppingLists.get(list.id);
+    if (latestList == null) return;
+
+    if (_ensureItemUuids(latestList)) {
+      await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+    }
+  }
+
+  bool _ensureItemUuids(ShoppingList list) {
+    var changed = false;
+    for (final item in list.items) {
+      if (item.uuid.isEmpty) {
+        item.uuid = _uuid.v4();
+        changed = true;
+      }
+    }
+    return changed;
   }
 }
 

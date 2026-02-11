@@ -207,10 +207,13 @@ class IngredientService {
       'pear': IngredientCategory.produce.index,
       'cherry': IngredientCategory.produce.index,
       'plum': IngredientCategory.produce.index,
+      'tangerine': IngredientCategory.produce.index,
+      'kiwi': IngredientCategory.produce.index,
       'watermelon': IngredientCategory.produce.index,
       'cantaloupe': IngredientCategory.produce.index,
       'mango': IngredientCategory.produce.index,
       'pineapple': IngredientCategory.produce.index,
+      'coconut': IngredientCategory.produce.index,
       // Peppers & Chilies (important: must be specific to match before spice rules)
       'green pepper': IngredientCategory.produce.index,
       'red pepper': IngredientCategory.produce.index,
@@ -535,7 +538,6 @@ class IngredientService {
       'peanut': IngredientCategory.nut.index,
       'pine nut': IngredientCategory.nut.index,
       'hazelnut': IngredientCategory.nut.index,
-      'coconut': IngredientCategory.nut.index,
       'coconut milk': IngredientCategory.pantry.index,
       'sesame seed': IngredientCategory.nut.index,
       // Alcohol
