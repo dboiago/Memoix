@@ -79,13 +79,17 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
 
         final recipes = snapshot.data ?? [];
 
-        IntegrityService.reportEvent(
-          'activity.search_performed',
-          metadata: {
-            'query': query,
-            'result_count': recipes.length,
-          },
-        );
+        // Report search event after build phase completes to avoid
+        // state mutations during build and prevent duplicate events
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          IntegrityService.reportEvent(
+            'activity.search_performed',
+            metadata: {
+              'query': query,
+              'result_count': recipes.length,
+            },
+          );
+        });
 
         if (recipes.isEmpty) {
           return MemoixEmptyState(
