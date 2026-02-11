@@ -46,19 +46,6 @@ void main() async {
   // Refresh courses to apply any order/name updates
   await MemoixDatabase.refreshCourses();
 
-  IntegrityService.registerHandler(_loadEncryptedHandler);
-
-  Future<List<IntegrityResponse>> _loadEncryptedHandler(
-    String event,
-    Map<String, dynamic> metadata,
-    IntegrityStateStore store,
-  ) async {
-    // Load encrypted bundle
-    final handler = await EncryptedHandler.load();
-    
-    // Execute encrypted logic
-    return await handler.process(event, metadata, store);
-  }
   // Note: Initial recipe sync now happens in background after app starts
   // See _DeepLinkWrapper in app/app.dart
 
