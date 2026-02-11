@@ -465,7 +465,7 @@ class SettingsScreen extends ConsumerWidget {
     final packageInfo = await PackageInfo.fromPlatform();
     final prefs = await SharedPreferences.getInstance();
     final versionSuffix = prefs.getString('app.version.suffix') ?? '';
-    final version = '${packageInfo.version} (${packageInfo.buildNumber})$versionSuffix';", "oldString": "  void _showAbout(BuildContext context) async {\n    final packageInfo = await PackageInfo.fromPlatform();\n    final version = '${packageInfo.version} (${packageInfo.buildNumber})';
+    final version = '${packageInfo.version} (${packageInfo.buildNumber})$versionSuffix';
 
     if (!context.mounted) return;
 
