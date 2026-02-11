@@ -625,18 +625,33 @@ class _ShoppingItemTile extends StatefulWidget {
 }
 
 class _ShoppingItemTileState extends State<_ShoppingItemTile> {
+  bool _isPendingDelete = false;
+  Timer? _undoTimer;
   static const undoDuration = Duration(seconds: 4);
 
   Future<void> _startDeleteTimer() async {
     await widget.onDelete();
     if (mounted) {
-      setState(() {});
+      setState(() => _isPendingDelete = true);
+      _undoTimer?.cancel();
+      _undoTimer = Timer(undoDuration, () {
+        if (mounted) {
+          setState(() => _isPendingDelete = false);
+        }
+      });
     }
   }
 
   void _undoDelete() {
     widget.onUndo();
-    setState(() {});
+    _undoTimer?.cancel();
+    setState(() => _isPendingDelete = false);
+  }
+
+  @override
+  void dispose() {
+    _undoTimer?.cancel();
+    super.dispose();
   }
 
   @override
@@ -644,7 +659,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
     final theme = Theme.of(context);
 
     // Show inline undo placeholder when pending delete
-    final isPending = widget.isPendingDelete();
+    final isPending = _isPendingDelete;
     if (isPending) {
       return Container(
         height: 56,
