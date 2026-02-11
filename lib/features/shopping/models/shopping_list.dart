@@ -564,7 +564,7 @@ class ShoppingListService {
   void scheduleListDelete({
     required int listId,
     required Duration undoDuration,
-    VoidCallback? onComplete,
+    void Function()? onComplete,
   }) {
     _pendingDeletes[listId]?.cancel();
     _pendingDeletes[listId] = Timer(undoDuration, () async {

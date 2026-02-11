@@ -685,7 +685,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
     }
 
     return Dismissible(
-      key: ValueKey('${widget.item.name}-${widget.item.amount}'),
+      key: ValueKey(widget.item.uuid),
       // Bi-directional swipe
       direction: DismissDirection.horizontal,
       // Left-to-right: check/uncheck (primary background)
