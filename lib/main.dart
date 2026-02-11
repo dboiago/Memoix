@@ -57,14 +57,21 @@ void main() async {
   );
 }
 
-Future<List<IntegrityResponse>> _loadEncryptedHandler(
-  String event,
-  Map<String, dynamic> metadata,
-  IntegrityStateStore store,
-) async {
-  // Load encrypted bundle
-  final handler = await EncryptedHandler.load();
+
+class EncryptedHandler {
+  static Future<EncryptedHandler> load() async {
+    return EncryptedHandler();
   
-  // Execute encrypted logic
-  return await handler.process(event, metadata, store);
+  Future<List<IntegrityResponse>> _loadEncryptedHandler(
+    String event,
+    Map<String, dynamic> metadata,
+    IntegrityStateStore store,
+  ) async {
+    // Load encrypted bundle
+    final handler = await EncryptedHandler.load();
+    
+    // Execute encrypted logic
+      return await handler.process(event, metadata, store);
+    }
+  }
 }
