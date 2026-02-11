@@ -317,16 +317,33 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                   _CategoryHeader(title: category),
                   ...items.map((item) {
                     final itemUuid = item.uuid;
+                    final itemIndex = list.items.indexOf(item);
                     return _ShoppingItemTile(
                       item: item,
                       onToggle: () async {
                         await ref.read(shoppingListServiceProvider).toggleItemById(list, itemUuid);
                       },
-                      onDelete: () async {
-                        final updated = await ref.read(shoppingListServiceProvider).removeItemById(list, itemUuid);
-                        if (updated != null) {
-                          await _reportShoppingListSaved(ref, updated, 'manual_save');
-                        }
+                      onDelete: () {
+                        ref.read(shoppingListServiceProvider).scheduleItemDelete(
+                          listId: list.id,
+                          itemUuid: itemUuid,
+                          fallbackIndex: itemIndex,
+                          undoDuration: _ShoppingItemTileState.undoDuration,
+                        );
+                      },
+                      onUndo: () {
+                        ref.read(shoppingListServiceProvider).cancelPendingItemDelete(
+                          listId: list.id,
+                          itemUuid: itemUuid,
+                          fallbackIndex: itemIndex,
+                        );
+                      },
+                      isPendingDelete: () {
+                        return ref.read(shoppingListServiceProvider).isPendingItemDelete(
+                          listId: list.id,
+                          itemUuid: itemUuid,
+                          fallbackIndex: itemIndex,
+                        );
                       },
                       onEditAmount: () => _editItemAmount(context, ref, list, item),
                       onRecipeTap: item.recipeSource != null && item.recipeSource!.isNotEmpty
@@ -588,6 +605,8 @@ class _ShoppingItemTile extends StatefulWidget {
   final ShoppingItem item;
   final VoidCallback onToggle;
   final VoidCallback onDelete;
+  final VoidCallback onUndo;
+  final bool Function() isPendingDelete;
   final VoidCallback? onRecipeTap;
   final VoidCallback? onEditAmount;
 
@@ -595,6 +614,8 @@ class _ShoppingItemTile extends StatefulWidget {
     required this.item,
     required this.onToggle,
     required this.onDelete,
+    required this.onUndo,
+    required this.isPendingDelete,
     this.onRecipeTap,
     this.onEditAmount,
   });
@@ -605,37 +626,16 @@ class _ShoppingItemTile extends StatefulWidget {
 
 class _ShoppingItemTileState extends State<_ShoppingItemTile> {
   bool _isPendingDelete = false;
-  Timer? _deleteTimer;
-  static const _undoDuration = Duration(seconds: 4);
-
-  @override
-  void dispose() {
-    // Execute delete if pending when disposed
-    if (_isPendingDelete) {
-      widget.onDelete();
-    }
-    _deleteTimer?.cancel();
-    super.dispose();
-  }
+  static const undoDuration = Duration(seconds: 4);
 
   void _startDeleteTimer() {
-    setState(() {
-      _isPendingDelete = true;
-    });
-    
-    _deleteTimer?.cancel();
-    _deleteTimer = Timer(_undoDuration, () {
-      if (mounted && _isPendingDelete) {
-        widget.onDelete();
-      }
-    });
+    widget.onDelete();
+    setState(() => _isPendingDelete = true);
   }
 
   void _undoDelete() {
-    _deleteTimer?.cancel();
-    setState(() {
-      _isPendingDelete = false;
-    });
+    widget.onUndo();
+    setState(() => _isPendingDelete = false);
   }
 
   @override
@@ -643,7 +643,8 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
     final theme = Theme.of(context);
 
     // Show inline undo placeholder when pending delete
-    if (_isPendingDelete) {
+    final isPending = _isPendingDelete || widget.isPendingDelete();
+    if (isPending) {
       return Container(
         height: 56,
         margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),

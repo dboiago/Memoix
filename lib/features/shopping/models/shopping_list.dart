@@ -115,6 +115,8 @@ class ShoppingListService {
   final Isar _db;
 
   final Map<int, Timer> _pendingDeletes = {};
+  final Map<String, Timer> _pendingItemDeletes = {};
+  final Map<String, _PendingItemDelete> _pendingItemDeleteData = {};
 
   ShoppingListService(this._db);
 
@@ -527,6 +529,20 @@ class ShoppingListService {
     return latestList;
   }
 
+  /// Remove an item by UUID using list ID only
+  Future<ShoppingList?> removeItemByUuid(int listId, String itemUuid) async {
+    final latestList = await _db.shoppingLists.get(listId);
+    if (latestList == null) return null;
+    return removeItemById(latestList, itemUuid);
+  }
+
+  /// Remove an item by index using list ID only (fallback)
+  Future<ShoppingList?> removeItemByIndex(int listId, int itemIndex) async {
+    final latestList = await _db.shoppingLists.get(listId);
+    if (latestList == null) return null;
+    return removeItem(latestList, itemIndex);
+  }
+
   /// Update an item's amount using its UUID
   Future<ShoppingList?> updateItemAmountById(
     ShoppingList list,
@@ -583,6 +599,67 @@ class ShoppingListService {
   /// Check if a delete is pending for this list
   bool isPendingDelete(int listId) => _pendingDeletes.containsKey(listId);
 
+  /// Schedule an item deletion with undo capability
+  void scheduleItemDelete({
+    required int listId,
+    required String itemUuid,
+    int? fallbackIndex,
+    required Duration undoDuration,
+    void Function()? onComplete,
+  }) {
+    if (itemUuid.isEmpty && fallbackIndex == null) return;
+
+    final key = itemUuid.isNotEmpty
+        ? '$listId:$itemUuid'
+        : '$listId:index:$fallbackIndex';
+
+    _pendingItemDeletes[key]?.cancel();
+    _pendingItemDeleteData[key] = _PendingItemDelete(
+      listId: listId,
+      itemUuid: itemUuid,
+      fallbackIndex: fallbackIndex,
+    );
+
+    _pendingItemDeletes[key] = Timer(undoDuration, () async {
+      final data = _pendingItemDeleteData.remove(key);
+      _pendingItemDeletes.remove(key);
+      if (data == null) return;
+
+      if (data.itemUuid.isNotEmpty) {
+        await removeItemByUuid(data.listId, data.itemUuid);
+      } else if (data.fallbackIndex != null) {
+        await removeItemByIndex(data.listId, data.fallbackIndex!);
+      }
+      onComplete?.call();
+    });
+  }
+
+  /// Cancel a pending item delete (undo)
+  void cancelPendingItemDelete({
+    required int listId,
+    required String itemUuid,
+    int? fallbackIndex,
+  }) {
+    final key = itemUuid.isNotEmpty
+        ? '$listId:$itemUuid'
+        : '$listId:index:$fallbackIndex';
+    _pendingItemDeletes[key]?.cancel();
+    _pendingItemDeletes.remove(key);
+    _pendingItemDeleteData.remove(key);
+  }
+
+  /// Check if an item delete is pending
+  bool isPendingItemDelete({
+    required int listId,
+    required String itemUuid,
+    int? fallbackIndex,
+  }) {
+    final key = itemUuid.isNotEmpty
+        ? '$listId:$itemUuid'
+        : '$listId:index:$fallbackIndex';
+    return _pendingItemDeletes.containsKey(key);
+  }
+
   /// Rename a shopping list
   Future<ShoppingList?> rename(ShoppingList list, String newName) async {
     final latestList = await _db.shoppingLists.get(list.id);
@@ -637,4 +714,16 @@ class _ParsedAmount {
   final double qty;
   final String unit;
   _ParsedAmount(this.qty, this.unit);
+}
+
+class _PendingItemDelete {
+  final int listId;
+  final String itemUuid;
+  final int? fallbackIndex;
+
+  const _PendingItemDelete({
+    required this.listId,
+    required this.itemUuid,
+    required this.fallbackIndex,
+  });
 }
