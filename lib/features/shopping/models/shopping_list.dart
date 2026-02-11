@@ -600,24 +600,39 @@ class ShoppingListService {
   bool isPendingDelete(int listId) => _pendingDeletes.containsKey(listId);
 
   /// Schedule an item deletion with undo capability
-  void scheduleItemDelete({
+  Future<void> scheduleItemDelete({
     required int listId,
     required String itemUuid,
     int? fallbackIndex,
     required Duration undoDuration,
     void Function()? onComplete,
-  }) {
+  }) async {
     if (itemUuid.isEmpty && fallbackIndex == null) return;
 
-    final key = itemUuid.isNotEmpty
-        ? '$listId:$itemUuid'
-        : '$listId:index:$fallbackIndex';
+    var resolvedUuid = itemUuid;
+    var resolvedIndex = fallbackIndex;
+
+    if (resolvedUuid.isEmpty && resolvedIndex != null) {
+      final latestList = await _db.shoppingLists.get(listId);
+      if (latestList != null) {
+        if (_ensureItemUuids(latestList)) {
+          await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+        }
+        if (resolvedIndex >= 0 && resolvedIndex < latestList.items.length) {
+          resolvedUuid = latestList.items[resolvedIndex].uuid;
+        }
+      }
+    }
+
+    final key = resolvedUuid.isNotEmpty
+        ? '$listId:$resolvedUuid'
+        : '$listId:index:$resolvedIndex';
 
     _pendingItemDeletes[key]?.cancel();
     _pendingItemDeleteData[key] = _PendingItemDelete(
       listId: listId,
-      itemUuid: itemUuid,
-      fallbackIndex: fallbackIndex,
+      itemUuid: resolvedUuid,
+      fallbackIndex: resolvedIndex,
     );
 
     _pendingItemDeletes[key] = Timer(undoDuration, () async {

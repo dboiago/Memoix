@@ -323,8 +323,8 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                       onToggle: () async {
                         await ref.read(shoppingListServiceProvider).toggleItemById(list, itemUuid);
                       },
-                      onDelete: () {
-                        ref.read(shoppingListServiceProvider).scheduleItemDelete(
+                      onDelete: () async {
+                        await ref.read(shoppingListServiceProvider).scheduleItemDelete(
                           listId: list.id,
                           itemUuid: itemUuid,
                           fallbackIndex: itemIndex,
