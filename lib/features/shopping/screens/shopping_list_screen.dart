@@ -274,11 +274,9 @@ class ShoppingListDetailScreen extends ConsumerWidget {
           );
         }
 
-        if (list.items.any((item) => item.uuid.isEmpty)) {
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            ref.read(shoppingListServiceProvider).ensureItemUuids(list);
-          });
-        }
+        // UUID migration is now handled internally by service methods
+        // (addItem, toggleItemById, scheduleItemDelete, etc.)
+        // No need to call ensureItemUuids here — doing so races with writes.
 
         return Scaffold(
           appBar: AppBar(
@@ -436,11 +434,20 @@ class ShoppingListDetailScreen extends ConsumerWidget {
       context: context,
       builder: (ctx) => _AddItemDialog(
         onAdd: (item) async {
-          final updated = await ref.read(shoppingListServiceProvider).addItem(list, item);
-          if (updated != null) {
-            await _reportShoppingListSaved(ref, updated, 'manual_save');
+          try {
+            final updated = await ref.read(shoppingListServiceProvider).addItem(list, item);
+            // Pop dialog immediately so the user sees the result
+            if (ctx.mounted) Navigator.pop(ctx);
+            if (updated != null) {
+              // Report asynchronously — don't block the UI
+              _reportShoppingListSaved(ref, updated, 'manual_save');
+            }
+          } catch (e) {
+            if (ctx.mounted) Navigator.pop(ctx);
+            if (context.mounted) {
+              MemoixSnackBar.showError('Failed to add item');
+            }
           }
-          Navigator.pop(ctx);
         },
       ),
     );
@@ -801,6 +808,7 @@ class _AddItemDialogState extends State<_AddItemDialog> {
   final _nameController = TextEditingController();
   final _amountController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+  bool _isSubmitting = false;
 
   @override
   void dispose() {
@@ -849,18 +857,27 @@ class _AddItemDialogState extends State<_AddItemDialog> {
           child: const Text('Cancel'),
         ),
         FilledButton(
-          onPressed: () async {
-            if (_formKey.currentState!.validate()) {
-              final item = ShoppingItem.create(
-                name: _nameController.text.trim(),
-                amount: _amountController.text.trim().isEmpty
-                    ? null
-                    : _amountController.text.trim(),
-              );
-              await widget.onAdd(item);
-            }
-          },
-          child: const Text('Add'),
+          onPressed: _isSubmitting
+              ? null
+              : () async {
+                  if (_formKey.currentState!.validate()) {
+                    setState(() => _isSubmitting = true);
+                    final item = ShoppingItem.create(
+                      name: _nameController.text.trim(),
+                      amount: _amountController.text.trim().isEmpty
+                          ? null
+                          : _amountController.text.trim(),
+                    );
+                    await widget.onAdd(item);
+                  }
+                },
+          child: _isSubmitting
+              ? const SizedBox(
+                  width: 16,
+                  height: 16,
+                  child: CircularProgressIndicator(strokeWidth: 2),
+                )
+              : const Text('Add'),
         ),
       ],
     );

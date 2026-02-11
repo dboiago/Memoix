@@ -238,6 +238,9 @@ class ShoppingListService {
     // Re-fetch to ensure latest version
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null) {
+      // Ensure all existing items have UUIDs (prevents race with ensureItemUuids)
+      _ensureItemUuids(latestList);
+
       if (item.uuid.isEmpty) {
         item.uuid = _uuid.v4();
       }
