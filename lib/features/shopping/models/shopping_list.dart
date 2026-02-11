@@ -603,6 +603,9 @@ class ShoppingListService {
   Future<void> scheduleItemDelete({
     required int listId,
     required String itemUuid,
+    required String itemName,
+    String? itemAmount,
+    String? itemRecipeSource,
     int? fallbackIndex,
     required Duration undoDuration,
     void Function()? onComplete,
@@ -632,6 +635,9 @@ class ShoppingListService {
     _pendingItemDeleteData[key] = _PendingItemDelete(
       listId: listId,
       itemUuid: resolvedUuid,
+      itemName: itemName,
+      itemAmount: itemAmount,
+      itemRecipeSource: itemRecipeSource,
       fallbackIndex: resolvedIndex,
     );
 
@@ -640,9 +646,27 @@ class ShoppingListService {
       _pendingItemDeletes.remove(key);
       if (data == null) return;
 
+      var removed = false;
       if (data.itemUuid.isNotEmpty) {
-        await removeItemByUuid(data.listId, data.itemUuid);
-      } else if (data.fallbackIndex != null) {
+        removed = (await removeItemByUuid(data.listId, data.itemUuid)) != null;
+      }
+
+      if (!removed) {
+        final latestList = await _db.shoppingLists.get(data.listId);
+        if (latestList != null) {
+          final matchIndex = _findItemIndexByFields(
+            latestList,
+            data.itemName,
+            data.itemAmount,
+            data.itemRecipeSource,
+          );
+          if (matchIndex != null) {
+            removed = (await removeItemByIndex(data.listId, matchIndex)) != null;
+          }
+        }
+      }
+
+      if (!removed && data.fallbackIndex != null) {
         await removeItemByIndex(data.listId, data.fallbackIndex!);
       }
       onComplete?.call();
@@ -721,6 +745,23 @@ class ShoppingListService {
     }
     return changed;
   }
+
+  int? _findItemIndexByFields(
+    ShoppingList list,
+    String name,
+    String? amount,
+    String? recipeSource,
+  ) {
+    for (var i = 0; i < list.items.length; i++) {
+      final item = list.items[i];
+      if (item.name == name &&
+          item.amount == amount &&
+          item.recipeSource == recipeSource) {
+        return i;
+      }
+    }
+    return null;
+  }
 }
 
 // Providers moved to core/providers.dart
@@ -734,11 +775,17 @@ class _ParsedAmount {
 class _PendingItemDelete {
   final int listId;
   final String itemUuid;
+  final String itemName;
+  final String? itemAmount;
+  final String? itemRecipeSource;
   final int? fallbackIndex;
 
   const _PendingItemDelete({
     required this.listId,
     required this.itemUuid,
+    required this.itemName,
+    required this.itemAmount,
+    required this.itemRecipeSource,
     required this.fallbackIndex,
   });
 }

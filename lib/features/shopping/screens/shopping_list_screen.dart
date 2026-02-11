@@ -327,6 +327,9 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                         await ref.read(shoppingListServiceProvider).scheduleItemDelete(
                           listId: list.id,
                           itemUuid: itemUuid,
+                          itemName: item.name,
+                          itemAmount: item.amount,
+                          itemRecipeSource: item.recipeSource,
                           fallbackIndex: itemIndex,
                           undoDuration: _ShoppingItemTileState.undoDuration,
                         );
