@@ -171,7 +171,7 @@ class ShoppingListService {
   }
 
   /// Update an item's checked status
-  Future<void> toggleItem(ShoppingList list, int itemIndex) async {
+  Future<ShoppingList?> toggleItem(ShoppingList list, int itemIndex) async {
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null && itemIndex < latestList.items.length) {
       // Modify a copy to trigger Isar update
@@ -187,11 +187,13 @@ class ShoppingListService {
       }
       
       await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      return latestList;
     }
+    return null;
   }
 
   /// Add a manual item to a list
-  Future<void> addItem(ShoppingList list, ShoppingItem item) async {
+  Future<ShoppingList?> addItem(ShoppingList list, ShoppingItem item) async {
     // Re-fetch to ensure latest version
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null) {
@@ -248,7 +250,9 @@ class ShoppingListService {
 
       latestList.items = newItems;
       await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      return latestList;
     }
+    return null;
   }
 
   String? _combineAmounts(String? a, String? b) {
@@ -449,13 +453,15 @@ class ShoppingListService {
   String _normalizeManualAmount(String raw) => _normalizeAmount(raw);
 
   /// Remove an item from a list
-  Future<void> removeItem(ShoppingList list, int itemIndex) async {
+  Future<ShoppingList?> removeItem(ShoppingList list, int itemIndex) async {
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null && itemIndex < latestList.items.length) {
       final newItems = List<ShoppingItem>.from(latestList.items)..removeAt(itemIndex);
       latestList.items = newItems;
       await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      return latestList;
     }
+    return null;
   }
 
   /// Delete a shopping list
@@ -464,12 +470,14 @@ class ShoppingListService {
   }
 
   /// Rename a shopping list
-  Future<void> rename(ShoppingList list, String newName) async {
+  Future<ShoppingList?> rename(ShoppingList list, String newName) async {
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList != null) {
       latestList.name = newName;
       await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+      return latestList;
     }
+    return null;
   }
 
   /// Create an empty list with a name

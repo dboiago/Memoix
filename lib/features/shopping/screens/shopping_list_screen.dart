@@ -297,7 +297,10 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                         await ref.read(shoppingListServiceProvider).toggleItem(list, index);
                       },
                       onDelete: () async {
-                        await ref.read(shoppingListServiceProvider).removeItem(list, index);
+                        final updated = await ref.read(shoppingListServiceProvider).removeItem(list, index);
+                        if (updated != null) {
+                          await _reportShoppingListSaved(ref, updated, 'manual_save');
+                        }
                       },
                       onRecipeTap: item.recipeSource != null && item.recipeSource!.isNotEmpty
                           ? () => _navigateToRecipe(context, ref, item.recipeSource!)
@@ -333,7 +336,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     // Share.share(buffer.toString());
   }
 
-  void _handleMenuAction(BuildContext context, WidgetRef ref, String action, ShoppingList list) {
+  Future<void> _handleMenuAction(BuildContext context, WidgetRef ref, String action, ShoppingList list) async {
     switch (action) {
       case 'rename':
         _showRenameDialog(context, ref, list);
@@ -346,8 +349,12 @@ class ShoppingListDetailScreen extends ConsumerWidget {
             checkedIndices.add(i);
           }
         }
+        ShoppingList? latest;
         for (final i in checkedIndices) {
-          ref.read(shoppingListServiceProvider).removeItem(list, i);
+          latest = await ref.read(shoppingListServiceProvider).removeItem(list, i) ?? latest;
+        }
+        if (latest != null) {
+          await _reportShoppingListSaved(ref, latest, 'manual_save');
         }
         break;
       case 'delete':
@@ -381,8 +388,11 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     showDialog(
       context: context,
       builder: (ctx) => _AddItemDialog(
-        onAdd: (item) {
-          ref.read(shoppingListServiceProvider).addItem(list, item);
+        onAdd: (item) async {
+          final updated = await ref.read(shoppingListServiceProvider).addItem(list, item);
+          if (updated != null) {
+            await _reportShoppingListSaved(ref, updated, 'manual_save');
+          }
           Navigator.pop(ctx);
         },
       ),
@@ -686,7 +696,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
 }
 
 class _AddItemDialog extends StatefulWidget {
-  final void Function(ShoppingItem item) onAdd;
+  final Future<void> Function(ShoppingItem item) onAdd;
 
   const _AddItemDialog({required this.onAdd});
 
@@ -746,7 +756,7 @@ class _AddItemDialogState extends State<_AddItemDialog> {
           child: const Text('Cancel'),
         ),
         FilledButton(
-          onPressed: () {
+          onPressed: () async {
             if (_formKey.currentState!.validate()) {
               final item = ShoppingItem.create(
                 name: _nameController.text.trim(),
@@ -754,7 +764,7 @@ class _AddItemDialogState extends State<_AddItemDialog> {
                     ? null
                     : _amountController.text.trim(),
               );
-              widget.onAdd(item);
+              await widget.onAdd(item);
             }
           },
           child: const Text('Add'),
@@ -1088,6 +1098,7 @@ Future<void> _reportShoppingListCreated(
       other++;
     }
   }
+  
   await IntegrityService.reportEvent(
     'activity.shopping_list_created',
     metadata: {
@@ -1102,6 +1113,14 @@ Future<void> _reportShoppingListCreated(
     },
   );
   await processIntegrityResponses(ref);
+}
+
+Future<void> _reportShoppingListSaved(
+  WidgetRef ref,
+  ShoppingList list,
+  String source,
+) async {
+  await _reportShoppingListCreated(ref, list, source);
 }
 
 /// Chip that displays total nutrition for recipes in a shopping list
