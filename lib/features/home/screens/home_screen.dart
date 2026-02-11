@@ -39,7 +39,7 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
-/// View showing courses as a grid of cards matching Figma design
+/// View showing courses as a grid of cards
 class _CourseGridView extends ConsumerWidget {
   final List<Course> courses;
 
