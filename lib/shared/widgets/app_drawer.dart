@@ -6,18 +6,32 @@ import '../../core/services/integrity_service.dart';
 
 /// Navigation drawer with organized sections
 /// Sections: Navigate, Tools, Share
-class AppDrawer extends ConsumerWidget {
+class AppDrawer extends ConsumerStatefulWidget {
   const AppDrawer({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<AppDrawer> createState() => _AppDrawerState();
+}
+
+class _AppDrawerState extends ConsumerState<AppDrawer> {
+  /// Keys for which we have already consumed one use during
+  /// this drawer's lifetime (open → close).
+  final Set<String> _consumedKeys = {};
+
+  @override
+  Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final overrides = ref.watch(viewOverrideProvider);
     final timerLabel = overrides['drawer.timer.label']?.value ?? 'Kitchen Timer';
-    if (overrides.containsKey('drawer.timer.label')) {
-      // Consume one use each time the drawer is built
+
+    // Consume one use only once per drawer open, not per rebuild.
+    if (overrides.containsKey('drawer.timer.label') &&
+        !_consumedKeys.contains('drawer.timer.label')) {
+      _consumedKeys.add('drawer.timer.label');
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        ref.read(viewOverrideProvider.notifier).consumeUse('drawer.timer.label');
+        if (mounted) {
+          ref.read(viewOverrideProvider.notifier).consumeUse('drawer.timer.label');
+        }
       });
     }
     

@@ -177,6 +177,10 @@ class ViewOverrideEntry {
 class ViewOverrideNotifier extends StateNotifier<Map<String, ViewOverrideEntry>> {
   ViewOverrideNotifier() : super({});
 
+  /// Keys currently being consumed this microtask — prevents
+  /// rebuild loops from draining all uses in one frame.
+  final Set<String> _consumingThisFrame = {};
+
   /// Set an override for [target]. If [remainingUses] is provided, the
   /// override is automatically removed after that many consumptions.
   void set(String target, dynamic value, {int? remainingUses}) {
@@ -188,9 +192,20 @@ class ViewOverrideNotifier extends StateNotifier<Map<String, ViewOverrideEntry>>
 
   /// Consume one use of the override keyed by [key].
   /// Call this when the UI element that reads the override is displayed.
+  ///
+  /// Guards against re-entrant consumption: if the same key is consumed
+  /// multiple times within the same microtask (e.g. because the state
+  /// change triggers a rebuild that calls consumeUse again), only the
+  /// first call takes effect.
   void consumeUse(String key) {
     final entry = state[key];
     if (entry == null) return;
+
+    // Prevent the watch→consume→rebuild→consume loop from
+    // draining all remaining uses in a single frame.
+    if (_consumingThisFrame.contains(key)) return;
+    _consumingThisFrame.add(key);
+    Future.microtask(() => _consumingThisFrame.remove(key));
 
     if (entry.remainingUses != null) {
       final remaining = entry.remainingUses! - 1;
