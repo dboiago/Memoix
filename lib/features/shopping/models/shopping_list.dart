@@ -205,13 +205,25 @@ class ShoppingListService {
     return null;
   }
 
-  /// Update an item's checked status using its UUID
-  Future<ShoppingList?> toggleItemById(ShoppingList list, String itemUuid) async {
+  /// Update an item's checked status using its UUID (with fallback to index)
+  Future<ShoppingList?> toggleItemById(
+    ShoppingList list,
+    String itemUuid, {
+    int? fallbackIndex,
+  }) async {
     final latestList = await _db.shoppingLists.get(list.id);
     if (latestList == null) return null;
 
     final didUpdateUuids = _ensureItemUuids(latestList);
-    final index = latestList.items.indexWhere((item) => item.uuid == itemUuid);
+    var index = itemUuid.isNotEmpty
+        ? latestList.items.indexWhere((item) => item.uuid == itemUuid)
+        : -1;
+    
+    // Fallback to index if UUID lookup failed
+    if (index == -1 && fallbackIndex != null && fallbackIndex < latestList.items.length) {
+      index = fallbackIndex;
+    }
+    
     if (index == -1) {
       if (didUpdateUuids) {
         await _db.writeTxn(() => _db.shoppingLists.put(latestList));

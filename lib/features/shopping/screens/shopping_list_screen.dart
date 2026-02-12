@@ -319,8 +319,12 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                     return _ShoppingItemTile(
                       item: item,
                       onToggle: () async {
-                        print('[TOGGLE] Tapping item: ${item.name}, current isChecked: ${item.isChecked}');
-                        final result = await ref.read(shoppingListServiceProvider).toggleItemById(list, itemUuid);
+                        print('[TOGGLE] Tapping item: ${item.name}, UUID: "$itemUuid", index: $itemIndex');
+                        final result = await ref.read(shoppingListServiceProvider).toggleItemById(
+                          list,
+                          itemUuid,
+                          fallbackIndex: itemIndex,
+                        );
                         print('[TOGGLE] After toggle, result: ${result != null ? "success" : "null"}');
                       },
                       onDelete: () async {
