@@ -43,10 +43,10 @@ void main() async {
 
   // Initialize calibration evaluator (single instance, reused across events)
   final calibrationIndex = LocalInterfaceIndex();
-  await calibrationIndex.initialize();
+  await calibrationIndex.init();
   final calibrationEvaluator = CalibrationEvaluator(
     db: MemoixDatabase.instance,
-    index: calibrationIndex,
+    idx: calibrationIndex,
   );
 
   IntegrityService.registerHandler((event, metadata, store) async {
