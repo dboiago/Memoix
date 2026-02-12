@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:convert';
+import 'package:flutter/services.dart';
 
 import '../../app/app.dart';
 
@@ -247,6 +249,39 @@ final executedAdjustmentsProvider =
   (ref) => _ExecutedAdjustmentsNotifier(),
 );
 
+class _ContentResolver {
+  static Map<String, dynamic>? _content;
+  
+  static Future<void> _ensureLoaded() async {
+    if (_content != null) return;
+    
+    try {
+      // TODO: This will load encrypted content
+      // For now, load from a JSON file
+      final data = await rootBundle.loadString('assets/integrity_content.json');
+      _content = jsonDecode(data);
+    } catch (e) {
+      debugPrint('[Content] Failed to load: $e');
+      _content = {};
+    }
+  }
+  
+  static Future<String?> getAlertText(String alertId) async {
+    await _ensureLoaded();
+    return _content?['alerts']?[alertId] as String?;
+  }
+  
+  static Future<Map<String, dynamic>?> getBreadcrumbPatch(String breadcrumbId) async {
+    await _ensureLoaded();
+    return _content?['breadcrumbs']?[breadcrumbId] as Map<String, dynamic>?;
+  }
+  
+  static Future<Map<String, dynamic>?> getEffectPatch(String effectKey) async {
+    await _ensureLoaded();
+    return _content?['effects']?[effectKey] as Map<String, dynamic>?;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Response processor
 // ---------------------------------------------------------------------------
@@ -277,6 +312,55 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
             ),
           ),
         );
+        break;
+      
+      case 'alert':
+        debugPrint('[PROCESS] Processing alert');
+        final alertId = response.data['alert_id'] as String?;
+        if (alertId != null) {
+            final text = await _ContentResolver.getAlertText(alertId);
+            if (text != null) {
+            rootScaffoldMessengerKey.currentState?.showSnackBar(
+                SnackBar(
+                content: Text(text),
+                duration: Duration(seconds: 5),
+                ),
+            );
+            debugPrint('[PROCESS] Showed alert: $alertId');
+            }
+        }
+        break;
+
+        case 'breadcrumb':
+        debugPrint('[PROCESS] Processing breadcrumb');
+        final breadcrumbId = response.data['breadcrumb_id'] as String?;
+        if (breadcrumbId != null) {
+            final patch = await _ContentResolver.getBreadcrumbPatch(breadcrumbId);
+            if (patch != null) {
+            ref.read(viewOverrideProvider.notifier).set(
+                patch['target'] as String,
+                patch['value'],
+                remainingUses: patch['uses'] as int?,
+            );
+            debugPrint('[PROCESS] Applied breadcrumb: $breadcrumbId');
+            }
+        }
+        break;
+
+        case 'noop':
+        debugPrint('[PROCESS] Processing effect noop');
+        final effectKey = response.data['effect_key'] as String?;
+        if (effectKey != null) {
+            final patch = await _ContentResolver.getEffectPatch(effectKey);
+            if (patch != null) {
+            ref.read(viewOverrideProvider.notifier).set(
+                patch['target'] as String,
+                patch['value'],
+                remainingUses: patch['uses'] as int?,
+            );
+            debugPrint('[PROCESS] Applied effect: $effectKey');
+            }
+        }
         break;
 
       case 'ui_patch':
