@@ -319,7 +319,9 @@ class ShoppingListDetailScreen extends ConsumerWidget {
                     return _ShoppingItemTile(
                       item: item,
                       onToggle: () async {
-                        await ref.read(shoppingListServiceProvider).toggleItemById(list, itemUuid);
+                        print('[TOGGLE] Tapping item: ${item.name}, current isChecked: ${item.isChecked}');
+                        final result = await ref.read(shoppingListServiceProvider).toggleItemById(list, itemUuid);
+                        print('[TOGGLE] After toggle, result: ${result != null ? "success" : "null"}');
                       },
                       onDelete: () async {
                         await ref.read(shoppingListServiceProvider).scheduleItemDelete(
@@ -613,7 +615,7 @@ class _CategoryHeader extends StatelessWidget {
 
 class _ShoppingItemTile extends StatefulWidget {
   final ShoppingItem item;
-  final VoidCallback onToggle;
+  final Future<void> Function() onToggle;
   final Future<void> Function() onDelete;
   final VoidCallback onUndo;
   final bool Function() isPendingDelete;
@@ -735,7 +737,8 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
       confirmDismiss: (direction) async {
         if (direction == DismissDirection.startToEnd) {
           // Left-to-right: toggle check state, don't dismiss
-          widget.onToggle();
+          print('[SWIPE] Left-to-right swipe for: ${widget.item.name}'); 
+          await widget.onToggle();
           return false;
         } else {
           // Right-to-left: start inline undo timer
@@ -746,7 +749,10 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
       child: ListTile(
         leading: Checkbox(
           value: widget.item.isChecked,
-          onChanged: (_) => widget.onToggle(),
+          onChanged: (_) {
+            print('[CHECKBOX] Checkbox tapped for: ${widget.item.name}');
+            widget.onToggle();
+          },
         ),
             title: Text(
               widget.item.name,
@@ -788,7 +794,10 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
                     ),
                   )
                 : null,
-        onTap: widget.onToggle,
+        onTap: () {
+          print('[LISTTILE] ListTile tapped for: ${widget.item.name}');
+          widget.onToggle();
+        },
         onLongPress: widget.onEditAmount,
       ),
     );
