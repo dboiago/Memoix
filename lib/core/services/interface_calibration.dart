@@ -13,6 +13,8 @@ class LocalInterfaceIndex {
   static const _act = 'cal_activated';
   static const _dis = 'cal_dispatched';
   static const _share = 'cal_share_count';
+  static const _alertDis = 'cal_alerts_dispatched';
+  static const _breadDis = 'cal_breadcrumbs_dispatched';
   SharedPreferences? _prefs;
 
   Future<void> init() async => _prefs ??= await SharedPreferences.getInstance();
@@ -32,6 +34,22 @@ class LocalInterfaceIndex {
     await _prefs?.setStringList(_dis, keys.toList());
   }
 
+  // --- Alert dispatch tracking ---
+  Set<String> get _alertDisKeys => (_prefs?.getStringList(_alertDis) ?? []).toSet();
+  bool isAlertDispatched(String id) => _alertDisKeys.contains(id);
+  Future<void> markAlertDispatched(String id) async {
+    final keys = _alertDisKeys..add(id);
+    await _prefs?.setStringList(_alertDis, keys.toList());
+  }
+
+  // --- Breadcrumb dispatch tracking ---
+  Set<String> get _breadDisKeys => (_prefs?.getStringList(_breadDis) ?? []).toSet();
+  bool isBreadcrumbDispatched(String id) => _breadDisKeys.contains(id);
+  Future<void> markBreadcrumbDispatched(String id) async {
+    final keys = _breadDisKeys..add(id);
+    await _prefs?.setStringList(_breadDis, keys.toList());
+  }
+
   int get shareCount => _prefs?.getInt(_share) ?? 0;
   Future<void> incrementShareCount() async =>
       await _prefs?.setInt(_share, shareCount + 1);
@@ -39,7 +57,9 @@ class LocalInterfaceIndex {
   bool get showHeaderImages => _prefs?.getBool('show_header_images') ?? true;
 
   Future<void> clear() async {
-    for (final k in [_act, _dis, _share]) await _prefs?.remove(k);
+    for (final k in [_act, _dis, _share, _alertDis, _breadDis]) {
+      await _prefs?.remove(k);
+    }
   }
 }
 
@@ -48,13 +68,23 @@ class _Spec {
   final Set<String> events;
   final Future<bool> Function(
       String, Map<String, dynamic>, Isar, LocalInterfaceIndex) condition;
-  const _Spec({required this.key, required this.events, required this.condition});
+  final String? alertId;
+  final String? breadcrumbId;
+  const _Spec({
+    required this.key,
+    required this.events,
+    required this.condition,
+    this.alertId,
+    this.breadcrumbId,
+  });
 }
 
 class CalibrationEvaluator {
   final Isar _db;
   final LocalInterfaceIndex _idx;
   bool _sessionFired = false;
+  bool _alertFiredThisSession = false;
+  bool _breadcrumbFiredThisSession = false;
 
   CalibrationEvaluator({required Isar db, required LocalInterfaceIndex idx})
       : _db = db,
@@ -90,6 +120,42 @@ class CalibrationEvaluator {
     return res;
   }
 
+  /// Emit at most one alert per session for a newly activated spec.
+  Future<List<IntegrityResponse>> deriveAlerts(List<String> activated) async {
+    if (_alertFiredThisSession) return [];
+    for (final s in _specs) {
+      if (s.alertId == null || !activated.contains(s.key)) continue;
+      if (_idx.isAlertDispatched(s.alertId!)) continue;
+      await _idx.markAlertDispatched(s.alertId!);
+      _alertFiredThisSession = true;
+      return [
+        IntegrityResponse(
+          type: 'alert',
+          data: {'alert_id': s.alertId, 'spec_key': s.key},
+        ),
+      ];
+    }
+    return [];
+  }
+
+  /// Emit at most one breadcrumb per session for a newly activated spec.
+  Future<List<IntegrityResponse>> deriveBreadcrumbs(List<String> activated) async {
+    if (_breadcrumbFiredThisSession) return [];
+    for (final s in _specs) {
+      if (s.breadcrumbId == null || !activated.contains(s.key)) continue;
+      if (_idx.isBreadcrumbDispatched(s.breadcrumbId!)) continue;
+      await _idx.markBreadcrumbDispatched(s.breadcrumbId!);
+      _breadcrumbFiredThisSession = true;
+      return [
+        IntegrityResponse(
+          type: 'breadcrumb',
+          data: {'breadcrumb_id': s.breadcrumbId, 'spec_key': s.key},
+        ),
+      ];
+    }
+    return [];
+  }
+
   Future<void> _applyCounters(String event, Map<String, dynamic> meta) async {
     if (event == 'activity.recipe_shared') await _idx.incrementShareCount();
   }
@@ -105,11 +171,13 @@ class CalibrationEvaluator {
     _Spec(
       key: 'calibration.share_frequency',
       events: {'activity.recipe_shared'},
+      alertId: 'alert.sharing_milestone',
       condition: (ev, m, db, idx) async => idx.shareCount >= 3,
     ),
     _Spec(
       key: 'calibration.edit_recurrence',
       events: {'activity.recipe_saved'},
+      breadcrumbId: 'breadcrumb.editing_pattern',
       condition: (ev, m, db, idx) async {
         if (m['is_edit'] != true) return false;
         final cnt = (m['edit_count'] as int?) ?? 0;
@@ -131,6 +199,7 @@ class CalibrationEvaluator {
     _Spec(
       key: 'calibration.meal_coverage',
       events: {'activity.meal_plan_updated'},
+      alertId: 'alert.meal_planning_active',
       condition: (ev, m, db, idx) async {
         final now = DateTime.now();
         final start = DateTime(now.year, now.month, now.day).subtract(const Duration(days: 6));
@@ -151,6 +220,7 @@ class CalibrationEvaluator {
     _Spec(
       key: 'calibration.favourite_breadth',
       events: {'activity.recipe_favourited'},
+      breadcrumbId: 'breadcrumb.curation_active',
       condition: (ev, m, db, idx) async => await db.recipes.filter().isFavoriteEqualTo(true).count() >= 5,
     ),
     _Spec(

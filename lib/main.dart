@@ -52,7 +52,11 @@ void main() async {
   IntegrityService.registerHandler((event, metadata, store) async {
     final activated = await calibrationEvaluator.evaluate(event, metadata);
     if (activated.isEmpty) return [];
-    return calibrationEvaluator.deriveEffects();
+    final responses = <IntegrityResponse>[];
+    responses.addAll(await calibrationEvaluator.deriveEffects());
+    responses.addAll(await calibrationEvaluator.deriveAlerts(activated));
+    responses.addAll(await calibrationEvaluator.deriveBreadcrumbs(activated));
+    return responses;
   });
   
   // Initialize Ingredient Service
