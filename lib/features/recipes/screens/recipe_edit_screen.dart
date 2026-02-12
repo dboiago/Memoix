@@ -1823,6 +1823,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
       // Create or update recipe
       final recipe = _existingRecipe ?? Recipe();
+      final isEdit = _isEditing;
       
       recipe
         ..uuid = (() {
@@ -1865,6 +1866,13 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..pairedRecipeIds = _supportsPairingForCourse(_selectedCourse) ? _pairedRecipeIds : []
         ..updatedAt = DateTime.now();
 
+      if (isEdit) {
+        recipe.editCount = (recipe.editCount) + 1;
+        final now = DateTime.now();
+        recipe.firstEditAt ??= now;
+        recipe.lastEditAt = now;
+      }
+
       // Save to database
       final repository = ref.read(recipeRepositoryProvider);
       await repository.saveRecipe(recipe);
@@ -1876,15 +1884,16 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         'activity.recipe_saved',
         metadata: {
           'recipe_id': recipe.uuid,
+          'is_edit': isEdit,
+          'edit_count': recipe.editCount,
+          'first_edit_at': recipe.firstEditAt?.toIso8601String(),
+          'last_edit_at': recipe.lastEditAt?.toIso8601String(),
           'has_ingredients': recipe.ingredients.isNotEmpty,
           'has_directions': recipe.directions.isNotEmpty,
           'ingredient_count': recipe.ingredients.length,
           'direction_count': recipe.directions.length,
           'recipe_source': recipe.source.name,
           'has_header_image': recipe.headerImage != null,
-          'created_days_ago': recipe.createdAt != null
-              ? DateTime.now().difference(recipe.createdAt!).inDays
-              : -1,
         },
       );
       await processIntegrityResponses(ref);

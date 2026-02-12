@@ -8,6 +8,7 @@ import 'package:window_manager/window_manager.dart';
 import 'app/app.dart';
 import 'core/database/database.dart';
 import 'core/services/integrity_service.dart';
+import 'core/services/interface_calibration.dart';
 import 'core/utils/ingredient_categorizer.dart';
 
 void main() async {
@@ -39,6 +40,20 @@ void main() async {
 
   // Initialize integrity layer
   await IntegrityService.initialize();
+
+  // Initialize calibration evaluator (single instance, reused across events)
+  final calibrationIndex = LocalInterfaceIndex();
+  await calibrationIndex.initialize();
+  final calibrationEvaluator = CalibrationEvaluator(
+    db: MemoixDatabase.instance,
+    index: calibrationIndex,
+  );
+
+  IntegrityService.registerHandler((event, metadata, store) async {
+    final activated = await calibrationEvaluator.evaluate(event, metadata);
+    if (activated.isEmpty) return [];
+    return calibrationEvaluator.deriveEffects();
+  });
   
   // Initialize Ingredient Service
   await IngredientService().initialize();

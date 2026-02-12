@@ -105,6 +105,15 @@ class Recipe {
   /// Number of times this recipe has been cooked
   int cookCount = 0;
 
+  /// Number of times this recipe has been re-saved after initial creation
+  int editCount = 0;
+
+  /// When the first edit (re-save) occurred
+  DateTime? firstEditAt;
+
+  /// When the most recent edit (re-save) occurred
+  DateTime? lastEditAt;
+
   /// When the recipe was last cooked
   DateTime? lastCookedAt;
 
