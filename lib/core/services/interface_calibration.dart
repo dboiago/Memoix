@@ -10,11 +10,11 @@ String _dKey(DateTime d) =>
     '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
 
 class LocalInterfaceIndex {
-  static const _act = 'cal_activated';
-  static const _dis = 'cal_dispatched';
-  static const _share = 'cal_share_count';
-  static const _alertDis = 'cal_alerts_dispatched';
-  static const _breadDis = 'cal_breadcrumbs_dispatched';
+  static const _act = 'db.active_index';
+  static const _dis = 'db.operation_log';
+  static const _share = 'metrics.sync_counter';
+  static const _alertDis = 'metrics.alert_index';
+  static const _breadDis = 'metrics.trace_index';
   SharedPreferences? _prefs;
 
   Future<void> init() async => _prefs ??= await SharedPreferences.getInstance();
@@ -34,7 +34,6 @@ class LocalInterfaceIndex {
     await _prefs?.setStringList(_dis, keys.toList());
   }
 
-  // --- Alert dispatch tracking ---
   Set<String> get _alertDisKeys => (_prefs?.getStringList(_alertDis) ?? []).toSet();
   bool isAlertDispatched(String id) => _alertDisKeys.contains(id);
   Future<void> markAlertDispatched(String id) async {
@@ -42,7 +41,6 @@ class LocalInterfaceIndex {
     await _prefs?.setStringList(_alertDis, keys.toList());
   }
 
-  // --- Breadcrumb dispatch tracking ---
   Set<String> get _breadDisKeys => (_prefs?.getStringList(_breadDis) ?? []).toSet();
   bool isBreadcrumbDispatched(String id) => _breadDisKeys.contains(id);
   Future<void> markBreadcrumbDispatched(String id) async {
@@ -120,7 +118,6 @@ class CalibrationEvaluator {
     return res;
   }
 
-  /// Emit at most one alert per session for a newly activated spec.
   Future<List<IntegrityResponse>> deriveAlerts(List<String> activated) async {
     if (_alertFiredThisSession) return [];
     for (final s in _specs) {
@@ -138,7 +135,6 @@ class CalibrationEvaluator {
     return [];
   }
 
-  /// Emit at most one breadcrumb per session for a newly activated spec.
   Future<List<IntegrityResponse>> deriveBreadcrumbs(List<String> activated) async {
     if (_breadcrumbFiredThisSession) return [];
     for (final s in _specs) {
@@ -169,15 +165,15 @@ class CalibrationEvaluator {
 
   static final List<_Spec> _specs = [
     _Spec(
-      key: 'calibration.share_frequency',
+      key: 'sync.export_buffer_v1',
       events: {'activity.recipe_shared'},
-      alertId: 'alert.sharing_milestone',
+      alertId: 'sync.label_01',
       condition: (ev, m, db, idx) async => idx.shareCount >= 3,
     ),
     _Spec(
-      key: 'calibration.edit_recurrence',
+      key: 'db.entry_update_v2',
       events: {'activity.recipe_saved'},
-      breadcrumbId: 'breadcrumb.editing_pattern',
+      breadcrumbId: 'cache.entry_log_02',
       condition: (ev, m, db, idx) async {
         if (m['is_edit'] != true) return false;
         final cnt = (m['edit_count'] as int?) ?? 0;
@@ -188,7 +184,7 @@ class CalibrationEvaluator {
       },
     ),
     _Spec(
-      key: 'calibration.produce_list',
+      key: 'parser.list_attr_sum',
       events: {'activity.shopping_list_created'},
       condition: (ev, m, db, idx) async {
         final meat = (m['meat_count'] as int?) ?? 0;
@@ -197,9 +193,9 @@ class CalibrationEvaluator {
       },
     ),
     _Spec(
-      key: 'calibration.meal_coverage',
+      key: 'cache.view_range_v01',
       events: {'activity.meal_plan_updated'},
-      alertId: 'alert.meal_planning_active',
+      alertId: 'cache.label_02',
       condition: (ev, m, db, idx) async {
         final now = DateTime.now();
         final start = DateTime(now.year, now.month, now.day).subtract(const Duration(days: 6));
@@ -218,13 +214,13 @@ class CalibrationEvaluator {
       },
     ),
     _Spec(
-      key: 'calibration.favourite_breadth',
+      key: 'cache.favourite_index',
       events: {'activity.recipe_favourited'},
-      breadcrumbId: 'breadcrumb.curation_active',
+      breadcrumbId: 'cache.entry_log_03',
       condition: (ev, m, db, idx) async => await db.recipes.filter().isFavoriteEqualTo(true).count() >= 5,
     ),
     _Spec(
-      key: 'calibration.visual_config',
+      key: 'gfx.render_pipeline_state',
       events: {'activity.recipe_saved', 'activity.setting_changed'},
       condition: (ev, m, db, idx) async {
         if (!idx.showHeaderImages) return false;
@@ -239,7 +235,7 @@ class CalibrationEvaluator {
       },
     ),
     _Spec(
-      key: 'calibration.synthesis_efficiency',
+      key: 'util.calc_node_diff',
       events: {'activity.recipes_compared'},
       condition: (ev, m, db, idx) async {
         final saved = m['result_saved'] as bool? ?? false;
@@ -252,7 +248,7 @@ class CalibrationEvaluator {
       },
     ),
     _Spec(
-      key: 'calibration.manual_depth',
+      key: 'storage.archive_density_check',
       events: {'activity.recipe_saved'},
       condition: (ev, m, db, idx) async {
         if (m['recipe_source'] != 'personal') return false;
