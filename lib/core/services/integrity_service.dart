@@ -301,6 +301,17 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
 
     switch (response.type) {
       case 'noop':
+        final effectKey = response.data['effect_key'] as String?;
+        if (effectKey != null) {
+          final patch = await _ContentResolver.getEffectPatch(effectKey);
+          if (patch != null) {
+            ref.read(viewOverrideProvider.notifier).set(
+              patch['target'] as String,
+              patch['value'],
+              remainingUses: patch['uses'] as int?,
+            );
+          }
+        }
         break;
 
       case 'system_message':
@@ -315,51 +326,31 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         break;
       
       case 'alert':
-        debugPrint('[PROCESS] Processing alert');
         final alertId = response.data['alert_id'] as String?;
         if (alertId != null) {
-            final text = await _ContentResolver.getAlertText(alertId);
-            if (text != null) {
+          final text = await _ContentResolver.getAlertText(alertId);
+          if (text != null) {
             rootScaffoldMessengerKey.currentState?.showSnackBar(
-                SnackBar(
+              SnackBar(
                 content: Text(text),
                 duration: Duration(seconds: 5),
-                ),
+              ),
             );
-            debugPrint('[PROCESS] Showed alert: $alertId');
-            }
+          }
         }
         break;
 
-        case 'breadcrumb':
-        debugPrint('[PROCESS] Processing breadcrumb');
+      case 'breadcrumb':
         final breadcrumbId = response.data['breadcrumb_id'] as String?;
         if (breadcrumbId != null) {
-            final patch = await _ContentResolver.getBreadcrumbPatch(breadcrumbId);
-            if (patch != null) {
+          final patch = await _ContentResolver.getBreadcrumbPatch(breadcrumbId);
+          if (patch != null) {
             ref.read(viewOverrideProvider.notifier).set(
-                patch['target'] as String,
-                patch['value'],
-                remainingUses: patch['uses'] as int?,
+              patch['target'] as String,
+              patch['value'],
+              remainingUses: patch['uses'] as int?,
             );
-            debugPrint('[PROCESS] Applied breadcrumb: $breadcrumbId');
-            }
-        }
-        break;
-
-        case 'noop':
-        debugPrint('[PROCESS] Processing effect noop');
-        final effectKey = response.data['effect_key'] as String?;
-        if (effectKey != null) {
-            final patch = await _ContentResolver.getEffectPatch(effectKey);
-            if (patch != null) {
-            ref.read(viewOverrideProvider.notifier).set(
-                patch['target'] as String,
-                patch['value'],
-                remainingUses: patch['uses'] as int?,
-            );
-            debugPrint('[PROCESS] Applied effect: $effectKey');
-            }
+          }
         }
         break;
 
@@ -369,10 +360,10 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         final uses = response.data['uses_remaining'] as int?;
         if (target != null) {
           ref.read(viewOverrideProvider.notifier).set(
-                target,
-                value,
-                remainingUses: uses,
-              );
+            target,
+            value,
+            remainingUses: uses,
+          );
         }
         break;
 
@@ -407,12 +398,8 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
 
       case 'navigation_request':
         final screen = response.data['screen'] as String?;
-        if (screen != null) {
-          if (IntegrityService.diagnosticsEnabled) {
-            debugPrint('[Integrity] Navigation request: $screen');
-          }
-          // Navigation targets are registered by the encrypted handler.
-          // Default: log unknown targets.
+        if (screen != null && IntegrityService.diagnosticsEnabled) {
+          debugPrint('[Integrity] Navigation request: $screen');
         }
         break;
 
