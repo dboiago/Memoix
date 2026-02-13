@@ -3,6 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../models/cheese_entry.dart';
 
@@ -103,6 +104,7 @@ class CheeseRepository {
 
   /// Toggle favorite status
   Future<void> toggleFavorite(CheeseEntry entry) async {
+    final wasFavorited = entry.isFavorite;
     entry.isFavorite = !entry.isFavorite;
     entry.updatedAt = DateTime.now();
     await _db.writeTxn(() async {
@@ -111,6 +113,15 @@ class CheeseRepository {
     
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+
+    // Report favorite toggle
+    await IntegrityService.reportEvent(
+      'activity.recipe_favourited',
+      metadata: {
+        'recipe_id': entry.uuid,
+        'is_adding': !wasFavorited,
+      },
+    );
   }
 
   /// Toggle buy status

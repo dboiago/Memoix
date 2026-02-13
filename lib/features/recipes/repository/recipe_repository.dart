@@ -3,6 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -185,6 +186,11 @@ class RecipeRepository {
 
   /// Toggle favorite status
   Future<void> toggleFavorite(int id) async {
+    // Read state before transaction to capture pre-toggle value
+    final existing = await _db.recipes.get(id);
+    if (existing == null) return;
+    final wasFavorited = existing.isFavorite;
+
     await _db.writeTxn(() async {
       final recipe = await _db.recipes.get(id);
       if (recipe != null) {
@@ -196,6 +202,15 @@ class RecipeRepository {
     
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+
+    // Report favorite toggle
+    await IntegrityService.reportEvent(
+      'activity.recipe_favourited',
+      metadata: {
+        'recipe_id': id,
+        'is_adding': !wasFavorited,
+      },
+    );
   }
 
   /// Watch all recipes (stream)

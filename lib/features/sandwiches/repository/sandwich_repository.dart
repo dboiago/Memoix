@@ -3,6 +3,7 @@ import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../models/sandwich.dart';
 
@@ -111,6 +112,7 @@ class SandwichRepository {
 
   /// Toggle favorite status
   Future<void> toggleFavorite(Sandwich sandwich) async {
+    final wasFavorited = sandwich.isFavorite;
     sandwich.isFavorite = !sandwich.isFavorite;
     sandwich.updatedAt = DateTime.now();
     await _db.writeTxn(() async {
@@ -119,6 +121,15 @@ class SandwichRepository {
     
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+
+    // Report favorite toggle
+    await IntegrityService.reportEvent(
+      'activity.recipe_favourited',
+      metadata: {
+        'recipe_id': sandwich.uuid,
+        'is_adding': !wasFavorited,
+      },
+    );
   }
 
   /// Increment cook count
