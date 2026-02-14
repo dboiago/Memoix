@@ -90,7 +90,7 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     WidgetsBinding.instance.removeObserver(this);
     _draftTitleController.dispose();
     // Reset comparison state when screen is disposed
-    ref.read(recipeComparisonProvider.notifier).reset();
+    //ref.read(recipeComparisonProvider.notifier).reset(); //May not be needed
     super.dispose();
   }
   
