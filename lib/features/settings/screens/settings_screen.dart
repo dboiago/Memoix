@@ -386,7 +386,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.info_outline),
             title: const Text('About Memoix'),
-            onTap: () => _showAbout(context),
+            onTap: () => _showAbout(context, ref),
           ),
           ListTile(
             leading: const Icon(Icons.code),
@@ -461,11 +461,23 @@ class SettingsScreen extends ConsumerWidget {
     AppRoutes.toPersonalStorage(context);
   }
 
-  void _showAbout(BuildContext context) async {
+  void _showAbout(BuildContext context, WidgetRef ref) async {
     final packageInfo = await PackageInfo.fromPlatform();
-    final prefs = await SharedPreferences.getInstance();
-    final versionSuffix = prefs.getString('app.version.suffix') ?? '';
-    final version = '${packageInfo.version} (${packageInfo.buildNumber})$versionSuffix';
+    final baseVersion = '${packageInfo.version} (${packageInfo.buildNumber})';
+    
+    // Check for version suffix override
+    final overrides = ref.read(viewOverrideProvider);
+    final suffixOverride = overrides['version.suffix'];
+    final version = suffixOverride != null 
+        ? '$baseVersion${suffixOverride.value}'
+        : baseVersion;
+    
+    // Consume if present
+    if (suffixOverride != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        ref.read(viewOverrideProvider.notifier).consumeUse('version.suffix');
+      });
+    }
 
     if (!context.mounted) return;
 
@@ -693,4 +705,3 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
     );
   }
 }
-

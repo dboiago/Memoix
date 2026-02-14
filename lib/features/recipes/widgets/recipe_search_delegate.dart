@@ -12,8 +12,15 @@ import 'package:flutter/foundation.dart';
 
 class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   final WidgetRef ref;
+  bool _hasCheckedForEffect = false;
 
   RecipeSearchDelegate(this.ref);
+
+  @override
+  String get searchFieldLabel {
+    final overrides = ref.read(viewOverrideProvider);
+    return overrides['search.hint']?.value ?? 'Search recipes...';
+  }
 
   @override
   List<Widget>? buildActions(BuildContext context) {
@@ -44,17 +51,30 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
+    // Check once when delegate opens for transition override
+    if (!_hasCheckedForEffect) {
+      _hasCheckedForEffect = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        final overrides = ref.read(viewOverrideProvider);
+        if (overrides.containsKey('search.icon.animation')) {
+          _executeTransitionEffect();
+        }
+      });
+    }
+
     if (query.isEmpty) {
-      return const Center(
+      final overrides = ref.read(viewOverrideProvider);
+      final hintText = overrides['search.hint']?.value ?? 'Search recipes...';
+      return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.search, size: 64, color: Colors.grey),
-            SizedBox(height: 16),
+            const Icon(Icons.search, size: 64, color: Colors.grey),
+            const SizedBox(height: 16),
             Text(
-              'Search recipes by name,\ncuisine, or ingredients',
+              hintText,
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
+              style: const TextStyle(color: Colors.grey),
             ),
           ],
         ),
@@ -125,5 +145,10 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
         );
       },
     );
+  }
+
+  /// Stub: visual transition effect triggered by view override.
+  void _executeTransitionEffect() {
+    // TODO: implement visual effect payload
   }
 }

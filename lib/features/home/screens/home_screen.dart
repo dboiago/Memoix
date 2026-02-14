@@ -40,13 +40,22 @@ class HomeScreen extends ConsumerWidget {
 }
 
 /// View showing courses as a grid of cards
-class _CourseGridView extends ConsumerWidget {
+class _CourseGridView extends ConsumerStatefulWidget {
   final List<Course> courses;
 
   const _CourseGridView({required this.courses});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<_CourseGridView> createState() => _CourseGridViewState();
+}
+
+class _CourseGridViewState extends ConsumerState<_CourseGridView> {
+  String? _lastConsumedHintValue;
+  dynamic _lastConsumedIconValue;
+
+  @override
+  Widget build(BuildContext context) {
+    final courses = widget.courses;
     if (courses.isEmpty) {
       return const Center(
         child: Text('No courses found'),
@@ -90,6 +99,28 @@ class _CourseGridView extends ConsumerWidget {
                     final searchIcon = overrides.containsKey('search.icon')
                         ? _resolveIcon(overrides['search.icon']!.value)
                         : Icons.search;
+
+                    // Consume when override value changes, not on every rebuild
+                    final hintOverride = overrides['search.hint'];
+                    if (hintOverride != null && hintOverride.value != _lastConsumedHintValue) {
+                      _lastConsumedHintValue = hintOverride.value;
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        if (mounted) {
+                          ref.read(viewOverrideProvider.notifier).consumeUse('search.hint');
+                        }
+                      });
+                    }
+
+                    final iconOverride = overrides['search.icon'];
+                    if (iconOverride != null && iconOverride.value != _lastConsumedIconValue) {
+                      _lastConsumedIconValue = iconOverride.value;
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        if (mounted) {
+                          ref.read(viewOverrideProvider.notifier).consumeUse('search.icon');
+                        }
+                      });
+                    }
+
                     return TextField(
                       decoration: InputDecoration(
                         hintText: searchHint,
@@ -105,13 +136,6 @@ class _CourseGridView extends ConsumerWidget {
                       style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                       readOnly: true,
                       onTap: () {
-                        // Consume view override uses when search is activated
-                        if (overrides.containsKey('search.hint')) {
-                          ref.read(viewOverrideProvider.notifier).consumeUse('search.hint');
-                        }
-                        if (overrides.containsKey('search.icon')) {
-                          ref.read(viewOverrideProvider.notifier).consumeUse('search.icon');
-                        }
                         showSearch(
                           context: context,
                           delegate: RecipeSearchDelegate(ref),

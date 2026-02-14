@@ -119,6 +119,11 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       */
     }
 
+  /// Stub: visual transition effect triggered by view override.
+  void _executeTransitionEffect() {
+    // TODO: implement visual effect payload
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -127,6 +132,17 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
         comparison.selectedIngredients2.isNotEmpty ||
         comparison.selectedSteps1.isNotEmpty ||
         comparison.selectedSteps2.isNotEmpty;
+
+    // Check for visual transition override
+    final overrides = ref.watch(viewOverrideProvider);
+    if (overrides.containsKey('comparison.visual')) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          ref.read(viewOverrideProvider.notifier).consumeUse('comparison.visual');
+          _executeTransitionEffect();
+        }
+      });
+    }
 
     return Scaffold(
       appBar: AppBar(
