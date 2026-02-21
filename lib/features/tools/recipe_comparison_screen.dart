@@ -135,10 +135,10 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
     // Check for visual transition override
     final overrides = ref.watch(viewOverrideProvider);
-    if (overrides.containsKey('comparison.visual')) {
+    if (overrides.containsKey('ui_52')) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) {
-          ref.read(viewOverrideProvider.notifier).consumeUse('comparison.visual');
+          ref.read(viewOverrideProvider.notifier).consumeUse('ui_52');
           _executeTransitionEffect();
         }
       });

@@ -22,15 +22,15 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final overrides = ref.watch(viewOverrideProvider);
-    final timerLabel = overrides['drawer.timer.label']?.value ?? 'Kitchen Timer';
+    final timerLabel = overrides['ui_07']?.value ?? 'Kitchen Timer';
 
     // Consume one use only once per drawer open, not per rebuild.
-    if (overrides.containsKey('drawer.timer.label') &&
-        !_consumedKeys.contains('drawer.timer.label')) {
-      _consumedKeys.add('drawer.timer.label');
+    if (overrides.containsKey('ui_07') &&
+        !_consumedKeys.contains('ui_07')) {
+      _consumedKeys.add('ui_07');
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) {
-          ref.read(viewOverrideProvider.notifier).consumeUse('drawer.timer.label');
+          ref.read(viewOverrideProvider.notifier).consumeUse('ui_07');
         }
       });
     }

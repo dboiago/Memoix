@@ -467,7 +467,7 @@ class SettingsScreen extends ConsumerWidget {
     
     // Check for version suffix override
     final overrides = ref.read(viewOverrideProvider);
-    final suffixOverride = overrides['version.suffix'];
+    final suffixOverride = overrides['ui_89'];
     final version = suffixOverride != null 
         ? '$baseVersion${suffixOverride.value}'
         : baseVersion;
@@ -475,7 +475,7 @@ class SettingsScreen extends ConsumerWidget {
     // Consume if present
     if (suffixOverride != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        ref.read(viewOverrideProvider.notifier).consumeUse('version.suffix');
+        ref.read(viewOverrideProvider.notifier).consumeUse('ui_89');
       });
     }
 

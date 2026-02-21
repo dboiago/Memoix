@@ -19,7 +19,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   @override
   String get searchFieldLabel {
     final overrides = ref.read(viewOverrideProvider);
-    return overrides['search.hint']?.value ?? 'Search recipes...';
+    return overrides['ui_23']?.value ?? 'Search recipes...';
   }
 
   @override
@@ -56,7 +56,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
       _hasCheckedForEffect = true;
       WidgetsBinding.instance.addPostFrameCallback((_) {
         final overrides = ref.read(viewOverrideProvider);
-        if (overrides.containsKey('search.icon.animation')) {
+        if (overrides.containsKey('ui_16')) {
           _executeTransitionEffect();
         }
       });
@@ -64,7 +64,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
 
     if (query.isEmpty) {
       final overrides = ref.read(viewOverrideProvider);
-      final hintText = overrides['search.hint']?.value ?? 'Search recipes...';
+      final hintText = overrides['ui_23']?.value ?? 'Search recipes...';
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
