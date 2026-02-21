@@ -50,7 +50,8 @@ class _CourseGridView extends ConsumerStatefulWidget {
 }
 
 class _CourseGridViewState extends ConsumerState<_CourseGridView> {
-
+  String? _lastConsumedHintValue;
+  dynamic _lastConsumedIconValue;
 
   @override
   Widget build(BuildContext context) {
@@ -94,26 +95,28 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                   builder: (context) {
                     final theme = Theme.of(context);
                     final overrides = ref.watch(viewOverrideProvider);
-                    final searchHint = overrides['search.hint']?.value ?? 'Search recipes...';
-                    final searchIcon = overrides.containsKey('search.icon')
-                        ? _resolveIcon(overrides['search.icon']!.value)
+                    final searchHint = overrides['ui_23']?.value ?? 'Search recipes...';
+                    final searchIcon = overrides.containsKey('ui_41')
+                        ? _resolveIcon(overrides['ui_41']!.value)
                         : Icons.search;
 
                     // Consume when override value changes, not on every rebuild
-                    final hintOverride = overrides['search.hint'];
-                    if (hintOverride != null) {
+                    final hintOverride = overrides['ui_23'];
+                    if (hintOverride != null && hintOverride.value != _lastConsumedHintValue) {
+                      _lastConsumedHintValue = hintOverride.value;
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         if (mounted) {
-                          ref.read(viewOverrideProvider.notifier).consumeUse('search.hint');
+                          ref.read(viewOverrideProvider.notifier).consumeUse('ui_23');
                         }
                       });
                     }
 
-                    final iconOverride = overrides['search.icon'];
-                    if (iconOverride != null) {
+                    final iconOverride = overrides['ui_41'];
+                    if (iconOverride != null && iconOverride.value != _lastConsumedIconValue) {
+                      _lastConsumedIconValue = iconOverride.value;
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         if (mounted) {
-                          ref.read(viewOverrideProvider.notifier).consumeUse('search.icon');
+                          ref.read(viewOverrideProvider.notifier).consumeUse('ui_41');
                         }
                       });
                     }
