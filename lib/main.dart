@@ -51,7 +51,9 @@ void main() async {
 
   IntegrityService.registerHandler((event, metadata, store) async {
     final activated = await calibrationEvaluator.evaluate(event, metadata);
-    if (activated.isEmpty) return [];
+    if (activated.isEmpty) {
+      return [];
+    }
     final responses = <IntegrityResponse>[];
     responses.addAll(await calibrationEvaluator.deriveEffects());
     responses.addAll(await calibrationEvaluator.deriveAlerts(activated));
