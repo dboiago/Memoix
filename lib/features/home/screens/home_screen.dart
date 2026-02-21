@@ -50,8 +50,7 @@ class _CourseGridView extends ConsumerStatefulWidget {
 }
 
 class _CourseGridViewState extends ConsumerState<_CourseGridView> {
-  String? _lastConsumedHintValue;
-  dynamic _lastConsumedIconValue;
+
 
   @override
   Widget build(BuildContext context) {
@@ -102,8 +101,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
 
                     // Consume when override value changes, not on every rebuild
                     final hintOverride = overrides['search.hint'];
-                    if (hintOverride != null && hintOverride.value != _lastConsumedHintValue) {
-                      _lastConsumedHintValue = hintOverride.value;
+                    if (hintOverride != null) {
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         if (mounted) {
                           ref.read(viewOverrideProvider.notifier).consumeUse('search.hint');
@@ -112,8 +110,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                     }
 
                     final iconOverride = overrides['search.icon'];
-                    if (iconOverride != null && iconOverride.value != _lastConsumedIconValue) {
-                      _lastConsumedIconValue = iconOverride.value;
+                    if (iconOverride != null) {
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         if (mounted) {
                           ref.read(viewOverrideProvider.notifier).consumeUse('search.icon');
