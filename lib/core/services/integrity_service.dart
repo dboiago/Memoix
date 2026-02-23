@@ -128,9 +128,7 @@ class IntegrityService {
     if (!_initialized) return;
 
     if (_diagnosticsEnabled) {
-      debugPrint('[Integrity] Event: $event');
       if (metadata != null && metadata.isNotEmpty) {
-        debugPrint('[Integrity] Metadata: $metadata');
       }
     }
 
@@ -140,7 +138,6 @@ class IntegrityService {
         _queue.addAll(responses);
       } catch (e) {
         if (_diagnosticsEnabled) {
-          debugPrint('[Integrity] Handler error: $e');
         }
       }
     }
