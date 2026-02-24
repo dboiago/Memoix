@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
@@ -104,10 +105,11 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     color: widget.recipe.isFavorite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
-                    onPressed: () {
-                      ref
+                    onPressed: () async {
+                      await ref
                           .read(smokingRepositoryProvider)
                           .toggleFavorite(widget.recipe.uuid);
+                      await processIntegrityResponses(ref);
                     },
                     padding: const EdgeInsets.all(8),
                     constraints: const BoxConstraints(),

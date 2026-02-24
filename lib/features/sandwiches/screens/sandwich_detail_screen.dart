@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
@@ -88,6 +89,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
               ref.invalidate(allSandwichesProvider);
+              await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, sandwich),
             onSharePressed: () => _shareSandwich(context, ref, sandwich),
@@ -198,6 +200,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
               ref.invalidate(allSandwichesProvider);
+              await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, sandwich),
             onSharePressed: () => _shareSandwich(context, ref, sandwich),
@@ -340,6 +343,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
         onPressed: () async {
           await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
           ref.invalidate(allSandwichesProvider);
+          await processIntegrityResponses(ref);
         },
       ),
       IconButton(

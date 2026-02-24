@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
@@ -118,6 +119,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(pizzaRepositoryProvider).toggleFavorite(widget.pizza);
+                      await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),

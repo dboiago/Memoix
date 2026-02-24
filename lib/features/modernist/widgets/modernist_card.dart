@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
@@ -147,8 +148,9 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                     color: recipe.isFavorite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
-                    onPressed: () {
-                      ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+                    onPressed: () async {
+                      await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+                      await processIntegrityResponses(ref);
                     },
                     padding: const EdgeInsets.all(8),
                     constraints: const BoxConstraints(),

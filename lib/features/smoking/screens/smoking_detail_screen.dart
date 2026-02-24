@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
@@ -90,6 +91,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
               ref.invalidate(allSmokingRecipesProvider);
+              await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref, recipe),
@@ -325,6 +327,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         onPressed: () async {
           await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
           ref.invalidate(allSmokingRecipesProvider);
+          await processIntegrityResponses(ref);
         },
       ),
       IconButton(
@@ -387,6 +390,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
               ref.invalidate(allSmokingRecipesProvider);
+              await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref, recipe),

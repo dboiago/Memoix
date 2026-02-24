@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
@@ -86,6 +87,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
               ref.invalidate(allPizzasProvider);
+              await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, pizza),
             onSharePressed: () => _sharePizza(context, ref, pizza),
@@ -206,6 +208,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
               ref.invalidate(allPizzasProvider);
+              await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, pizza),
             onSharePressed: () => _sharePizza(context, ref, pizza),
@@ -300,6 +303,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
         onPressed: () async {
           await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
           ref.invalidate(allPizzasProvider);
+          await processIntegrityResponses(ref);
         },
       ),
       IconButton(

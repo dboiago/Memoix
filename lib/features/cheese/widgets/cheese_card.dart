@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/colors.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../recipes/models/cuisine.dart';import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 
@@ -107,6 +108,7 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(cheeseRepositoryProvider).toggleFavorite(widget.entry);
+                      await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),

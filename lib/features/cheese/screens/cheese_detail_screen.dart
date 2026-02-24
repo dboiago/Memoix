@@ -8,6 +8,7 @@ import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Cheese detail screen - displays cheese entry info
@@ -68,6 +69,7 @@ class _CheeseDetailView extends ConsumerWidget {
             onFavoritePressed: () async {
               await ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
               ref.invalidate(allCheeseEntriesProvider);
+              await processIntegrityResponses(ref);
             },
             onSharePressed: () => _shareEntry(context, ref),
             onEditPressed: () => AppRoutes.toCheeseEdit(context, entryId: entry.uuid),

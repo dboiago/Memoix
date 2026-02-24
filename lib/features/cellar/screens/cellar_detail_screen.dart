@@ -8,6 +8,7 @@ import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Cellar detail screen - displays cellar entry info
@@ -68,6 +69,7 @@ class _CellarDetailView extends ConsumerWidget {
             onFavoritePressed: () async {
               await ref.read(cellarRepositoryProvider).toggleFavorite(entry);
               ref.invalidate(allCellarEntriesProvider);
+              await processIntegrityResponses(ref);
             },
             onSharePressed: () => _shareEntry(context, ref),
             onEditPressed: () => AppRoutes.toCellarEdit(context, entryId: entry.uuid),

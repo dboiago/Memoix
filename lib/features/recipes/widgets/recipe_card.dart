@@ -7,6 +7,7 @@ import '../repository/recipe_repository.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colors.dart';
 
@@ -221,8 +222,9 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   color: widget.recipe.isFavorite 
                       ? theme.colorScheme.secondary 
                       : theme.colorScheme.onSurfaceVariant,
-                  onPressed: () {
-                    ref.read(recipeRepositoryProvider).toggleFavorite(widget.recipe.id);
+                  onPressed: () async {
+                    await ref.read(recipeRepositoryProvider).toggleFavorite(widget.recipe.id);
+                    await processIntegrityResponses(ref);
                   },
                   padding: const EdgeInsets.all(8),
                   constraints: const BoxConstraints(),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
+import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
@@ -97,6 +98,7 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
                       await ref.read(sandwichRepositoryProvider).toggleFavorite(widget.sandwich);
+                      await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),
                     constraints: const BoxConstraints(),
