@@ -475,6 +475,7 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       // Navigate immediately to the draft editor
       AppRoutes.toScratchPad(context, draftUuid: draftUuid);
       
+      /* I think this is redundant  -- we're already on the draft
       // Show success message
       MemoixSnackBar.showSaved(
         itemName: draft.name,
@@ -483,6 +484,7 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
           // Already navigated, this is just for consistency
         },
       );
+      */
     }
   }
 }
