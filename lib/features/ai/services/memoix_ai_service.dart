@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../ai_provider_config.dart';
 import '../ai_settings.dart';
 import '../ai_settings_provider.dart';
 import '../models/ai_response.dart';
