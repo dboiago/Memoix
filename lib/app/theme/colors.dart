@@ -137,6 +137,7 @@ class MemoixColors {
   static const Color importCamera = Color(0xFF7AB89E);         // Sage green
   static const Color importMultiPage = Color(0xFF6BA3B5);      // Ocean teal
   static const Color importGallery = Color(0xFFE8A86B);        // Warm orange
+  static const Color importAi = Color(0xFFA88FA8);             // Soft mauve
 
   /// Get color for a course category
   static Color forCourse(String course) {

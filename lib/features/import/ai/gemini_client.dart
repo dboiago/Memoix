@@ -6,6 +6,9 @@ import 'dart:convert';
 import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 
+/// Maximum response body size (10 MB per AGENTS.md).
+const _maxResponseBytes = 10 * 1024 * 1024;
+
 class GeminiClient {
   final String apiKey;
 
@@ -19,7 +22,7 @@ class GeminiClient {
     final parts = <Map<String, dynamic>>[];
 
     if (text != null && text.trim().isNotEmpty) {
-      parts.add({ "text": text });
+      parts.add({"text": text});
     }
 
     if (imageBytes != null) {
@@ -31,17 +34,23 @@ class GeminiClient {
       });
     }
 
-    final response = await http.post(
-      Uri.parse(
-        'https://generativelanguage.googleapis.com/v1/models/'
-        'gemini-1.5-pro:generateContent?key=$apiKey'
-      ),
-      headers: {
+    final client = http.Client();
+    try {
+      final request = http.Request(
+        'POST',
+        Uri.parse(
+          'https://generativelanguage.googleapis.com/v1/models/'
+          'gemini-1.5-pro:generateContent?key=$apiKey',
+        ),
+      );
+      request.headers.addAll({
         'Content-Type': 'application/json',
-      },
-      body: jsonEncode({
+      });
+      request.body = jsonEncode({
         "systemInstruction": {
-          "parts": [{ "text": systemPrompt }]
+          "parts": [
+            {"text": systemPrompt}
+          ]
         },
         "contents": [
           {
@@ -53,14 +62,33 @@ class GeminiClient {
           "temperature": 0.0,
           "responseMimeType": "application/json",
         }
-      }),
-    );
+      });
 
-    if (response.statusCode != 200) {
-      throw Exception('Gemini error: ${response.body}');
+      final streamed = await client.send(request);
+      final bodyBytes = await _readWithLimit(streamed);
+      final body = utf8.decode(bodyBytes);
+
+      if (streamed.statusCode != 200) {
+        throw Exception('Gemini error (${streamed.statusCode}): $body');
+      }
+
+      final decoded = jsonDecode(body);
+      return jsonDecode(
+          decoded['candidates'][0]['content']['parts'][0]['text']);
+    } finally {
+      client.close();
     }
+  }
 
-    final decoded = jsonDecode(response.body);
-    return jsonDecode(decoded['candidates'][0]['content']['parts'][0]['text']);
+  Future<List<int>> _readWithLimit(http.StreamedResponse response) async {
+    final buffer = <int>[];
+    await for (final chunk in response.stream) {
+      buffer.addAll(chunk);
+      if (buffer.length > _maxResponseBytes) {
+        throw Exception(
+            'Response exceeded ${_maxResponseBytes ~/ (1024 * 1024)} MB limit');
+      }
+    }
+    return buffer;
   }
 }

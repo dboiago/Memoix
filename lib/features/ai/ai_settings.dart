@@ -1,9 +1,5 @@
 import 'ai_provider_config.dart';
-import '../import/ai/ai_provider.dart'; 
-import '../import/ai/ai_recipe_importer.dart';
-import '../import/ai/openai_client.dart';
-import '../import/ai/claude_client.dart';
-import '../import/ai/gemini_client.dart';
+import '../import/ai/ai_provider.dart';
 
 class AiSettings {
   final Map<AiProvider, AiProviderConfig> providers;
@@ -73,15 +69,4 @@ class AiSettings {
   }
 
   static AiSettings empty() => const AiSettings(providers: {});
-}
-
-AiRecipeImporter fromSettings(AiSettings settings) {
-  return AiRecipeImporter(
-    openAi: OpenAiClient(settings.configFor(AiProvider.openai).apiKey!),
-    claude: ClaudeClient(settings.configFor(AiProvider.claude).apiKey!),
-    gemini: GeminiClient(settings.configFor(AiProvider.gemini).apiKey!),
-    defaultProvider:
-        settings.preferredProvider ?? AiProvider.openai,
-    autoSelect: settings.autoSelectProvider,
-  );
 }

@@ -8,6 +8,9 @@ import 'dart:convert';
 import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 
+/// Maximum response body size (10 MB per AGENTS.md).
+const _maxResponseBytes = 10 * 1024 * 1024;
+
 class OpenAiClient {
   final String apiKey;
 
@@ -29,26 +32,48 @@ class OpenAiClient {
       }
     ];
 
-    final response = await http.post(
-      Uri.parse('https://api.openai.com/v1/chat/completions'),
-      headers: {
+    final client = http.Client();
+    try {
+      final request = http.Request(
+        'POST',
+        Uri.parse('https://api.openai.com/v1/chat/completions'),
+      );
+      request.headers.addAll({
         'Authorization': 'Bearer $apiKey',
         'Content-Type': 'application/json',
-      },
-      body: jsonEncode({
+      });
+      request.body = jsonEncode({
         "model": imageBytes != null ? "gpt-4o" : "gpt-4.1",
         "messages": messages,
         "temperature": 0.0,
-        "response_format": { "type": "json_object" },
-      }),
-    );
+        "response_format": {"type": "json_object"},
+      });
 
-    if (response.statusCode != 200) {
-      throw Exception('OpenAI error: ${response.body}');
+      final streamed = await client.send(request);
+      final bodyBytes = await _readWithLimit(streamed);
+      final body = utf8.decode(bodyBytes);
+
+      if (streamed.statusCode != 200) {
+        throw Exception('OpenAI error (${streamed.statusCode}): $body');
+      }
+
+      final decoded = jsonDecode(body);
+      return jsonDecode(decoded['choices'][0]['message']['content']);
+    } finally {
+      client.close();
     }
+  }
 
-    final decoded = jsonDecode(response.body);
-    return jsonDecode(decoded['choices'][0]['message']['content']);
+  Future<List<int>> _readWithLimit(http.StreamedResponse response) async {
+    final buffer = <int>[];
+    await for (final chunk in response.stream) {
+      buffer.addAll(chunk);
+      if (buffer.length > _maxResponseBytes) {
+        throw Exception(
+            'Response exceeded ${_maxResponseBytes ~/ (1024 * 1024)} MB limit');
+      }
+    }
+    return buffer;
   }
 
   List<Map<String, dynamic>> _buildUserContent(

@@ -7,7 +7,9 @@ import '../../../app/theme/colors.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/services/url_importer.dart';
 import '../services/ocr_importer.dart';
+import '../../ai/ai_settings_provider.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import 'ai_import_screen.dart';
 import 'import_review_screen.dart';
 import 'qr_scanner_screen.dart';
 import 'ocr_multi_image_screen.dart';
@@ -94,6 +96,18 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               color: MemoixColors.importGallery,
               onTap: () => _scanFromGallery(context),
             ),
+
+            const SizedBox(height: 16),
+
+            // AI import (only shown when at least one provider is configured)
+            if (ref.watch(aiSettingsProvider).activeProviders.isNotEmpty)
+              _ImportOption(
+                icon: Icons.smart_toy_outlined,
+                title: 'AI Import',
+                description: 'Paste recipe text and let AI extract it',
+                color: MemoixColors.importAi,
+                onTap: () => _importWithAi(context),
+              ),
 
             const SizedBox(height: 24),
             const Divider(),
@@ -351,6 +365,17 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => const QrScannerScreen(),
+      ),
+    );
+  }
+
+  void _importWithAi(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => AiImportScreen(
+          defaultCourse: widget.defaultCourse,
+          redirectOnSave: widget.redirectOnSave,
+        ),
       ),
     );
   }

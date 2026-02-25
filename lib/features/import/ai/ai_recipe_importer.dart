@@ -49,7 +49,7 @@ class AiRecipeImporter {
   /// Main entry point for importing
   Future<RecipeImportResult> import(AiImportInput input, {String? sourceUrl}) async {
     final provider = _selectProvider(input);
-    final systemPrompt = _buildSystemPrompt();
+    final systemPrompt = buildSystemPrompt();
     final Map<String, dynamic> responseJson;
 
     switch (provider) {
@@ -116,7 +116,7 @@ class AiRecipeImporter {
     );
   }
 
-  String _buildSystemPrompt() {
+  static String buildSystemPrompt() {
     return '''
 You are extracting structured recipe data from OCR text or images.
 

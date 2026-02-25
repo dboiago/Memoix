@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../ai_settings_provider.dart';
 import '../../import/ai/ai_provider.dart';
 import '../ai_provider_config.dart';
@@ -31,7 +32,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
               'Choose the best AI automatically based on input type',
             ),
             value: settings.autoSelectProvider,
-            onChanged: notifier.setautoSelectProvider,
+            onChanged: notifier.setAutoSelectProvider,
           ),
 
           if (!settings.autoSelectProvider)
@@ -56,19 +57,36 @@ class AgentsSettingsScreen extends ConsumerWidget {
           // Providers section
           _SectionHeader(title: 'Providers'),
 
-          for (final entry in settings.providers.entries)
+          for (final provider in AiProvider.values)
             _ProviderTile(
-              provider: entry.key,
-              config: entry.value,
+              provider: provider,
+              config: settings.configFor(provider),
               onToggle: (enabled) =>
-                  notifier.setProviderEnabled(entry.key, enabled),
+                  notifier.setProviderEnabled(provider, enabled),
               onEditKey: () => _editApiKey(
                 context,
-                entry.key,
-                entry.value,
+                provider,
+                settings.configFor(provider),
+                notifier,
+              ),
+              onClearKey: () => _clearApiKey(
+                context,
+                provider,
                 notifier,
               ),
             ),
+
+          const SizedBox(height: 16),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'Tap a provider to edit its API key. '
+              'Keys are stored securely on your device and never sent anywhere except the provider\'s own API.',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
 
           const SizedBox(height: 24),
         ],
@@ -116,20 +134,34 @@ class AgentsSettingsScreen extends ConsumerWidget {
     BuildContext context,
     AiProvider provider,
     AiProviderConfig config,
-    notifier,
+    AiSettingsNotifier notifier,
   ) async {
-    final controller = TextEditingController(text: config.apiKey);
+    final controller = TextEditingController();
 
     final saved = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
         title: Text('${_providerLabel(provider)} API Key'),
-        content: TextField(
-          controller: controller,
-          obscureText: true,
-          decoration: const InputDecoration(
-            labelText: 'API Key',
-          ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: controller,
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: config.hasKeyStored
+                    ? 'Enter new key (leave blank to keep current)'
+                    : 'API Key',
+              ),
+            ),
+            if (config.hasKeyStored) ...[
+              const SizedBox(height: 8),
+              Text(
+                'A key is already stored.',
+                style: Theme.of(ctx).textTheme.bodySmall,
+              ),
+            ],
+          ],
         ),
         actions: [
           TextButton(
@@ -145,10 +177,46 @@ class AgentsSettingsScreen extends ConsumerWidget {
     );
 
     if (saved == true) {
-      notifier.updateProviderConfig(
-        provider,
-        config.copyWith(apiKey: controller.text),
-      );
+      final key = controller.text.trim();
+      if (key.isNotEmpty) {
+        await notifier.setApiKey(provider, key);
+        MemoixSnackBar.showSuccess('API key saved');
+      } else if (!config.hasKeyStored) {
+        MemoixSnackBar.show('No key entered');
+      }
+      // If key is empty but one was already stored, keep the existing key
+    }
+  }
+
+  Future<void> _clearApiKey(
+    BuildContext context,
+    AiProvider provider,
+    AiSettingsNotifier notifier,
+  ) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Remove API Key?'),
+        content: Text(
+          'This will remove the stored key for ${_providerLabel(provider)} '
+          'and disable the provider.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Remove'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed == true) {
+      await notifier.clearApiKey(provider);
+      MemoixSnackBar.show('API key removed');
     }
   }
 }
@@ -158,31 +226,34 @@ class _ProviderTile extends StatelessWidget {
   final AiProviderConfig config;
   final ValueChanged<bool> onToggle;
   final VoidCallback onEditKey;
+  final VoidCallback onClearKey;
 
   const _ProviderTile({
     required this.provider,
     required this.config,
     required this.onToggle,
     required this.onEditKey,
+    required this.onClearKey,
   });
 
-@override
-Widget build(BuildContext context) {
-  return GestureDetector(
-    onLongPress: onEditKey, // Now the whole tile responds to long press
-    child: SwitchListTile(
-      secondary: const Icon(Icons.smart_toy_outlined),
-      title: Text(_label(provider)),
-      subtitle: Text(
-        config.apiKey == null || config.apiKey!.isEmpty
-            ? 'No API key set'
-            : 'API key configured',
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onEditKey,
+      onLongPress: config.hasKeyStored ? onClearKey : null,
+      child: SwitchListTile(
+        secondary: const Icon(Icons.smart_toy_outlined),
+        title: Text(_label(provider)),
+        subtitle: Text(
+          config.hasKeyStored
+              ? 'API key configured'
+              : 'No API key set',
+        ),
+        value: config.enabled,
+        onChanged: onToggle,
       ),
-      value: config.enabled,
-      onChanged: onToggle, // Existing toggle logic
-    ),
-  );
-}
+    );
+  }
 
   static String _label(AiProvider provider) {
     switch (provider) {

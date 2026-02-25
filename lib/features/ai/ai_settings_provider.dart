@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'ai_settings.dart';
 import 'ai_provider_config.dart';
+import 'services/ai_key_storage.dart';
 import '../import/ai/ai_provider.dart';
 
 /// Riverpod provider
@@ -24,14 +25,61 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_prefsKey);
 
-    if (raw == null) return;
+    AiSettings loaded;
+    if (raw == null) {
+      loaded = AiSettings.defaults();
+    } else {
+      try {
+        final json = jsonDecode(raw) as Map<String, dynamic>;
+        loaded = AiSettings.fromJson(json);
+      } catch (_) {
+        loaded = AiSettings.defaults();
+      }
+    }
 
-    try {
-      final json = jsonDecode(raw) as Map<String, dynamic>;
-      state = AiSettings.fromJson(json);
-    } catch (_) {
-      // If something goes wrong, fall back to defaults
-      state = AiSettings.defaults();
+    // Migrate: if legacy JSON contained plain-text apiKey values,
+    // move them into secure storage and strip them from SharedPreferences.
+    var migrated = false;
+    final migratedProviders = <AiProvider, AiProviderConfig>{};
+
+    for (final provider in AiProvider.values) {
+      var config = loaded.configFor(provider);
+
+      // Check if secure storage actually has a key
+      final hasKey = await AiKeyStorage.hasToken(provider);
+
+      // Legacy migration: the old JSON format stored 'apiKey' inline.
+      // If we detect a key in the parsed config but secure storage is empty,
+      // move it across.
+      if (!hasKey && raw != null) {
+        try {
+          final jsonMap = jsonDecode(raw) as Map<String, dynamic>;
+          final providersMap =
+              jsonMap['providers'] as Map<String, dynamic>? ?? {};
+          final pJson = providersMap[provider.name] as Map<String, dynamic>?;
+          if (pJson != null) {
+            final legacyKey = pJson['apiKey'] as String?;
+            if (legacyKey != null && legacyKey.isNotEmpty) {
+              await AiKeyStorage.saveToken(provider, legacyKey);
+              config = config.copyWith(hasKeyStored: true);
+              migrated = true;
+            }
+          }
+        } catch (_) {
+          // Ignore parse errors during migration
+        }
+      } else {
+        config = config.copyWith(hasKeyStored: hasKey);
+      }
+
+      migratedProviders[provider] = config;
+    }
+
+    state = loaded.copyWith(providers: migratedProviders);
+
+    if (migrated) {
+      // Re-save without legacy apiKey fields
+      await _save();
     }
   }
 
@@ -71,7 +119,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
   }
 
   /// Toggle auto-selection
-  Future<void> setautoSelectProvider(bool value) async {
+  Future<void> setAutoSelectProvider(bool value) async {
     state = AiSettings(
       providers: state.providers,
       preferredProvider: state.preferredProvider,
@@ -81,20 +129,42 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     await _save();
   }
 
-  /// Update API key or provider config
-  Future<void> updateProviderConfig(
-    AiProvider provider,
-    AiProviderConfig config,
-  ) async {
-    state = AiSettings(
-      providers: {
-        ...state.providers,
-        provider: config,
-      },
-      preferredProvider: state.preferredProvider,
-      autoSelectProvider: state.autoSelectProvider,
-    );
+  /// Save or update the API key for [provider] in secure storage,
+  /// then update the in-memory state.
+  Future<void> setApiKey(AiProvider provider, String key) async {
+    if (key.trim().isEmpty) {
+      await clearApiKey(provider);
+      return;
+    }
+
+    await AiKeyStorage.saveToken(provider, key.trim());
+
+    final updatedConfig =
+        state.configFor(provider).copyWith(hasKeyStored: true);
+
+    state = state.copyWith(providers: {
+      ...state.providers,
+      provider: updatedConfig,
+    });
 
     await _save();
   }
+
+  /// Remove the API key for [provider].
+  Future<void> clearApiKey(AiProvider provider) async {
+    await AiKeyStorage.clearToken(provider);
+
+    final updatedConfig =
+        state.configFor(provider).copyWith(hasKeyStored: false, enabled: false);
+
+    state = state.copyWith(providers: {
+      ...state.providers,
+      provider: updatedConfig,
+    });
+
+    await _save();
+  }
+
+  /// Whether at least one provider is enabled and has a key.
+  bool get hasActiveProvider => state.activeProviders.isNotEmpty;
 }
