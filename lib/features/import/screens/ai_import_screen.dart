@@ -3,6 +3,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart' show ImagePicker, ImageSource;
@@ -277,11 +278,22 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Icon(Icons.error_outline,
                         color: theme.colorScheme.error),
                     const SizedBox(width: 8),
                     Expanded(child: Text(_errorMessage!)),
+                    const SizedBox(width: 8),
+                    IconButton(
+                      icon: const Icon(Icons.copy, size: 18),
+                      tooltip: 'Copy error',
+                      onPressed: () {
+                        Clipboard.setData(
+                            ClipboardData(text: _errorMessage!));
+                        MemoixSnackBar.show('Error copied to clipboard');
+                      },
+                    ),
                   ],
                 ),
               ),
@@ -444,29 +456,9 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   }
 
   void _handleError(AiResponse response) {
-    switch (response.errorType) {
-      case AiErrorType.noToken:
-      case AiErrorType.invalidToken:
-      case AiErrorType.disabled:
-        MemoixSnackBar.showError(
-            response.errorMessage ?? 'Configuration error');
-        break;
-      case AiErrorType.rateLimited:
-        MemoixSnackBar.showError(
-            response.errorMessage ?? 'Rate limited');
-        break;
-      case AiErrorType.noInternet:
-        MemoixSnackBar.showError(
-            response.errorMessage ?? 'No connection');
-        break;
-      case AiErrorType.timeout:
-        MemoixSnackBar.showError(
-            response.errorMessage ?? 'Request timed out');
-        break;
-      default:
-        MemoixSnackBar.showError(
-            response.errorMessage ?? 'Something went wrong');
-    }
+    setState(() {
+      _errorMessage = response.errorMessage ?? 'Something went wrong';
+    });
   }
 }
 
