@@ -29,24 +29,18 @@ class MemoixAiService implements AiService {
 
   @override
   Future<AiResponse> sendMessage(AiRequest request) async {
-    // Check if any provider is active
-    if (_settings.activeProviders.isEmpty) {
+    final active = _settings.activeProviders;
+
+    // No providers enabled + configured → hard stop
+    if (active.isEmpty) {
       return const AiResponse.error(
         'No AI providers are enabled. Enable one in Settings → Agents.',
         AiErrorType.disabled,
       );
     }
 
-    // Determine provider
-    final provider = request.provider ?? _selectProvider(request);
-    final config = _settings.configFor(provider);
-
-    if (!config.enabled) {
-      return AiResponse.error(
-        '${_providerLabel(provider)} is disabled in settings.',
-        AiErrorType.disabled,
-      );
-    }
+    // Resolve which provider to use (respects enabled state)
+    final provider = request.provider ?? _selectProvider(request, active);
 
     // Read key from secure storage
     final apiKey = await AiKeyStorage.getToken(provider);
@@ -108,15 +102,46 @@ class MemoixAiService implements AiService {
     }
   }
 
-  /// Auto-select the best provider for a given request.
-  AiProvider _selectProvider(AiRequest request) {
-    if (!_settings.autoSelectProvider &&
-        _settings.preferredProvider != null) {
-      return _settings.preferredProvider!;
+  /// Resolve which provider to use.
+  ///
+  /// Rules (in order):
+  /// 1. If auto-select is **off** and the preferred provider is active → use it.
+  /// 2. If auto-select is **off** but preferred provider is NOT active →
+  ///    fall back to whatever IS active (first match).
+  /// 3. If auto-select is **on** → pick the best active provider for the
+  ///    request type (vision → Claude, text → OpenAI) but only from the
+  ///    active list. If the ideal choice is not active, use the first active.
+  AiProvider _selectProvider(
+    AiRequest request,
+    List<AiProviderConfig> active,
+  ) {
+    final activeIds = active.map((c) => c.provider).toSet();
+
+    // ── Manual preferred provider ──
+    if (!_settings.autoSelectProvider) {
+      final preferred = _settings.preferredProvider;
+      if (preferred != null && activeIds.contains(preferred)) {
+        return preferred;
+      }
+      // Preferred not active – fall back to first active
+      return active.first.provider;
     }
-    // Vision → Claude, Text → OpenAI (matches existing logic)
-    if (request.imageBytes != null) return AiProvider.claude;
-    return AiProvider.openai;
+
+    // ── Auto-select: pick best match from active providers ──
+    if (request.imageBytes != null) {
+      // Vision: prefer Claude > Gemini > OpenAI
+      for (final ideal in [AiProvider.claude, AiProvider.gemini, AiProvider.openai]) {
+        if (activeIds.contains(ideal)) return ideal;
+      }
+    } else {
+      // Text: prefer OpenAI > Claude > Gemini
+      for (final ideal in [AiProvider.openai, AiProvider.claude, AiProvider.gemini]) {
+        if (activeIds.contains(ideal)) return ideal;
+      }
+    }
+
+    // Should never reach here (active is non-empty), but safe fallback
+    return active.first.provider;
   }
 
   /// Turn an opaque [Exception] from a client into a typed [AiResponse].
