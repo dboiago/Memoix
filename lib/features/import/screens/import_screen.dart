@@ -104,7 +104,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
               _ImportOption(
                 icon: Icons.smart_toy_outlined,
                 title: 'AI Import',
-                description: 'Paste recipe text and let AI extract it',
+                description: 'Use AI to extract recipes from photos, URLs, or text',
                 color: MemoixColors.importAi,
                 onTap: () => _importWithAi(context),
               ),
