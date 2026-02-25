@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/routes/router.dart';
 import '../../app/app_shell.dart';
 import '../../core/services/integrity_service.dart';
+import '../../features/ai/ai_settings_provider.dart';
 
 /// Navigation drawer with organized sections
 /// Sections: Navigate, Tools, Share
@@ -178,6 +179,15 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
                       AppRoutes.toOCRScanner(context);
                     },
                   ),
+                  if (ref.watch(aiSettingsProvider).activeProviders.isNotEmpty)
+                    _DrawerTile(
+                      icon: Icons.smart_toy_outlined,
+                      title: 'AI Import',
+                      onTap: () {
+                        Navigator.pop(context);
+                        AppRoutes.toAiImport(context);
+                      },
+                    ),
                   _DrawerTile(
                     icon: Icons.qr_code_scanner,
                     title: 'Scan QR Code',

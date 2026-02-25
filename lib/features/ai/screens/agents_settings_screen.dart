@@ -69,18 +69,13 @@ class AgentsSettingsScreen extends ConsumerWidget {
                 settings.configFor(provider),
                 notifier,
               ),
-              onClearKey: () => _clearApiKey(
-                context,
-                provider,
-                notifier,
-              ),
             ),
 
           const SizedBox(height: 16),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
-              'Tap a provider to edit its API key. '
+              'Long-press a provider to edit its API key. '
               'Keys are stored securely on your device and never sent anywhere except the provider\'s own API.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
@@ -138,7 +133,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
   ) async {
     final controller = TextEditingController();
 
-    final saved = await showDialog<bool>(
+    final result = await showDialog<String>(
       context: context,
       builder: (ctx) => AlertDialog(
         title: Text('${_providerLabel(provider)} API Key'),
@@ -164,19 +159,24 @@ class AgentsSettingsScreen extends ConsumerWidget {
           ],
         ),
         actions: [
+          if (config.hasKeyStored)
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, 'remove'),
+              child: const Text('Remove Key'),
+            ),
           TextButton(
-            onPressed: () => Navigator.pop(ctx, false),
+            onPressed: () => Navigator.pop(ctx, 'cancel'),
             child: const Text('Cancel'),
           ),
           TextButton(
-            onPressed: () => Navigator.pop(ctx, true),
+            onPressed: () => Navigator.pop(ctx, 'save'),
             child: const Text('Save'),
           ),
         ],
       ),
     );
 
-    if (saved == true) {
+    if (result == 'save') {
       final key = controller.text.trim();
       if (key.isNotEmpty) {
         await notifier.setApiKey(provider, key);
@@ -184,37 +184,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
       } else if (!config.hasKeyStored) {
         MemoixSnackBar.show('No key entered');
       }
-      // If key is empty but one was already stored, keep the existing key
-    }
-  }
-
-  Future<void> _clearApiKey(
-    BuildContext context,
-    AiProvider provider,
-    AiSettingsNotifier notifier,
-  ) async {
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Remove API Key?'),
-        content: Text(
-          'This will remove the stored key for ${_providerLabel(provider)} '
-          'and disable the provider.',
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Remove'),
-          ),
-        ],
-      ),
-    );
-
-    if (confirmed == true) {
+    } else if (result == 'remove') {
       await notifier.clearApiKey(provider);
       MemoixSnackBar.show('API key removed');
     }
@@ -226,28 +196,25 @@ class _ProviderTile extends StatelessWidget {
   final AiProviderConfig config;
   final ValueChanged<bool> onToggle;
   final VoidCallback onEditKey;
-  final VoidCallback onClearKey;
 
   const _ProviderTile({
     required this.provider,
     required this.config,
     required this.onToggle,
     required this.onEditKey,
-    required this.onClearKey,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onEditKey,
-      onLongPress: config.hasKeyStored ? onClearKey : null,
+      onLongPress: onEditKey,
       child: SwitchListTile(
         secondary: const Icon(Icons.smart_toy_outlined),
         title: Text(_label(provider)),
         subtitle: Text(
           config.hasKeyStored
               ? 'API key configured'
-              : 'No API key set',
+              : 'No API key set — long-press to add',
         ),
         value: config.enabled,
         onChanged: onToggle,
