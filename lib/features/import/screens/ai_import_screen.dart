@@ -296,12 +296,15 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
 
   // ───────────────────────── Image capture ─────────────────────────
 
+  bool get _isMobile =>
+      !kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.android ||
+       defaultTargetPlatform == TargetPlatform.iOS);
+
   Future<void> _captureImage(ImageSource source) async {
-    // Camera / gallery only available on mobile
-    if (kIsWeb ||
-        (defaultTargetPlatform != TargetPlatform.android &&
-         defaultTargetPlatform != TargetPlatform.iOS)) {
-      MemoixSnackBar.show('Camera and gallery are only available on mobile devices');
+    // Camera requires mobile; gallery works on all platforms
+    if (source == ImageSource.camera && !_isMobile) {
+      MemoixSnackBar.show('Camera is only available on mobile devices');
       return;
     }
 
@@ -309,18 +312,20 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
 
     try {
       // Step 1: Pick image
-      final picked = source == ImageSource.camera
-          ? await _imagePicker.pickImage(source: ImageSource.camera)
-          : await _imagePicker.pickImage(source: ImageSource.gallery);
-
+      final picked = await _imagePicker.pickImage(source: source);
       if (!mounted || picked == null) return;
 
-      // Step 2: Crop
-      final cropped = await _cropImage(picked.path);
-      if (!mounted || cropped == null) return;
+      // Step 2: Crop (mobile only – image_cropper is not available on desktop/web)
+      Uint8List imageBytes;
+      if (_isMobile) {
+        final cropped = await _cropImage(picked.path);
+        if (!mounted || cropped == null) return;
+        imageBytes = await File(cropped.path).readAsBytes();
+      } else {
+        imageBytes = await File(picked.path).readAsBytes();
+      }
 
-      // Step 3: Read bytes and send to AI
-      final imageBytes = await File(cropped.path).readAsBytes();
+      // Step 3: Send to AI
       await _sendToAi(imageBytes: imageBytes);
     } catch (e) {
       if (mounted) {
