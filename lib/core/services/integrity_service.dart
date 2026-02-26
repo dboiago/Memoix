@@ -6,6 +6,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 import '../../app/app.dart';
+import '../widgets/memoix_snackbar.dart';
 
 // ---------------------------------------------------------------------------
 // Response model
@@ -374,14 +375,7 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         break;
 
       case 'system_message':
-        rootScaffoldMessengerKey.currentState?.showSnackBar(
-          SnackBar(
-            content: Text(response.data['text'] ?? ''),
-            duration: Duration(
-              seconds: (response.data['duration_seconds'] as int?) ?? 3,
-            ),
-          ),
-        );
+        MemoixSnackBar.show(response.data['text'] ?? '');
         break;
       
       case 'alert':
@@ -390,13 +384,7 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
           final text = await _ContentResolver.getAlertText(alertId);
           if (text != null) {
             
-            rootScaffoldMessengerKey.currentState?.clearSnackBars();
-            rootScaffoldMessengerKey.currentState?.showSnackBar(
-              SnackBar(
-                content: Text(text),
-                duration: Duration(seconds: 8),
-              ),
-            );
+            MemoixSnackBar.show(text);
           }
         }
         break;

@@ -51,7 +51,7 @@ class RecipeRating extends StatelessWidget {
           onTap: readOnly ? null : () => onFavouriteChanged?.call(!isFavourite),
           child: Icon(
             isFavourite ? Icons.favorite : Icons.favorite_border,
-            color: isFavourite ? MemoixColors.favorite : theme.colorScheme.outline,
+            color: isFavourite ? theme.colorScheme.secondary : theme.colorScheme.outline,
             size: size,
           ),
         ),
@@ -90,7 +90,7 @@ class RecipeRatingCompact extends StatelessWidget {
         ],
         if (isFavourite) ...[
           const SizedBox(width: 4),
-          Icon(Icons.favorite, color: MemoixColors.favorite, size: 16),
+          Icon(Icons.favorite, color: theme.colorScheme.secondary, size: 16),
         ],
       ],
     );

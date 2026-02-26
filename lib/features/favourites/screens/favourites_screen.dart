@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/widgets/recipe_card.dart';
 import '../../recipes/models/recipe.dart';
@@ -234,32 +235,9 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     _sortItems(filteredItems);
 
     if (filteredItems.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.favorite_border,
-              size: 64,
-              color: theme.colorScheme.outline,
-            ),
-            const SizedBox(height: 16),
-            Text(
-              'No favourites yet',
-              style: theme.textTheme.titleLarge?.copyWith(
-                color: theme.colorScheme.outline,
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Tap the heart on items you love\nto add them here',
-              textAlign: TextAlign.center,
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.outline,
-              ),
-            ),
-          ],
-        ),
+      return MemoixEmptyState(
+        message: 'No favourites yet',
+        subtitle: 'Tap the heart on items you love\nto add them here',
       );
     }
 

@@ -45,9 +45,8 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     
-    // Don't clear existing snackbars - let them be replaced naturally
-    // Clearing during animation causes tree lookup issues
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
@@ -70,6 +69,7 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
@@ -101,6 +101,7 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Text('Logged cook for $recipeName'),
@@ -135,6 +136,7 @@ class MemoixSnackBar {
     _cancelTimer();
     final dur = duration ?? actionDuration;
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Text('$itemName saved'),
@@ -162,6 +164,7 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
@@ -180,6 +183,7 @@ class MemoixSnackBar {
     if (messenger == null) return;
     _cancelTimer();
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
@@ -211,6 +215,7 @@ class MemoixSnackBar {
         : Colors.lightBlueAccent;
     
     try {
+      messenger.hideCurrentSnackBar();
       messenger.showSnackBar(
         SnackBar(
           content: Row(

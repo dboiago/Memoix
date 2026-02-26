@@ -219,18 +219,15 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
               // Recipe list
               Expanded(
-                child: FutureBuilder<List<Recipe>>(
-                  future: _searchRecipes(),
-                  builder: (context, snapshot) {
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Center(child: CircularProgressIndicator());
-                    }
-                    final filteredRecipes = snapshot.data ?? [];
+                child: Builder(
+                  builder: (context) {
+                    final filteredRecipes = _filterRecipesInMemory(recipes);
                     if (filteredRecipes.isEmpty) {
                       return _buildEmptyState();
                     }
                     final theme = Theme.of(context);
                     return ListView.builder(
+                      key: const PageStorageKey('recipe_list'),
                       padding: const EdgeInsets.only(bottom: 80),
                       itemCount: filteredRecipes.length,
                       itemBuilder: (context, index) {
@@ -517,10 +514,34 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     }
   }
 
-  Future<List<Recipe>> _searchRecipes() async {
-    // If searching from "All Recipes" or similar, pass null for course filter
-    final courseFilter = widget.course.toLowerCase() == 'all' ? null : [widget.course];
-    return await ref.read(recipeRepositoryProvider).searchRecipes(_searchQuery, courseFilter: courseFilter);
+  /// Filter the already-loaded recipe list in-memory to avoid
+  /// creating a new Future on every rebuild (which causes scroll jumps).
+  List<Recipe> _filterRecipesInMemory(List<Recipe> recipes) {
+    var result = recipes;
+
+    // Apply cuisine / base-spirit chip filter
+    if (_selectedCuisines.isNotEmpty) {
+      if (_isDrinksScreen) {
+        result = result.where((r) => _selectedCuisines.contains(r.subcategory)).toList();
+      } else {
+        result = result.where((r) =>
+            r.cuisine != null && _selectedCuisines.contains(r.cuisine)).toList();
+      }
+    }
+
+    // Apply text search
+    if (_searchQuery.isNotEmpty) {
+      final q = _searchQuery.toLowerCase();
+      result = result.where((r) {
+        if (r.name.toLowerCase().contains(q)) return true;
+        if (r.cuisine != null && r.cuisine!.toLowerCase().contains(q)) return true;
+        if (r.tags.any((t) => t.toLowerCase().contains(q))) return true;
+        if (r.ingredients.any((i) => i.name.toLowerCase().contains(q))) return true;
+        return false;
+      }).toList();
+    }
+
+    return result;
   }
 
   void _showAddOptions(BuildContext context) {

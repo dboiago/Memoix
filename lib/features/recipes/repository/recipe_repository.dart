@@ -195,7 +195,6 @@ class RecipeRepository {
       final recipe = await _db.recipes.get(id);
       if (recipe != null) {
         recipe.isFavorite = !recipe.isFavorite;
-        recipe.updatedAt = DateTime.now();
         await _db.recipes.put(recipe);
       }
     });
@@ -399,11 +398,53 @@ class RecipeRepository {
   // ============ SYNC HELPERS ============
 
   /// Replace all memoix recipes (for sync from GitHub)
+  /// Preserves user-local fields (isFavorite, rating, cookCount, etc.)
+  /// that exist on previously-synced recipes.
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
     await _db.writeTxn(() async {
-      // Delete existing memoix recipes
-      await _db.recipes.filter().sourceEqualTo(RecipeSource.memoix).deleteAll();
-      // Insert new ones
+      // Build a lookup of existing memoix recipes by UUID
+      final existing = await _db.recipes
+          .filter()
+          .sourceEqualTo(RecipeSource.memoix)
+          .findAll();
+      final existingByUuid = {for (final r in existing) r.uuid: r};
+
+      // Track which existing UUIDs are still present in the sync payload
+      final incomingUuids = <String>{};
+
+      for (final incoming in recipes) {
+        incomingUuids.add(incoming.uuid);
+        final prev = existingByUuid[incoming.uuid];
+        if (prev != null) {
+          // Preserve Isar ID so `put` updates in-place
+          incoming.id = prev.id;
+          // Preserve user-local metadata
+          incoming.isFavorite = prev.isFavorite;
+          incoming.rating = prev.rating;
+          incoming.cookCount = prev.cookCount;
+          incoming.lastCookedAt = prev.lastCookedAt;
+          incoming.editCount = prev.editCount;
+          incoming.firstEditAt = prev.firstEditAt;
+          incoming.lastEditAt = prev.lastEditAt;
+          // Keep user-added images if the incoming recipe has none
+          if (prev.headerImage != null && prev.headerImage!.isNotEmpty) {
+            incoming.headerImage = prev.headerImage;
+          }
+          if (prev.stepImages.isNotEmpty && incoming.stepImages.isEmpty) {
+            incoming.stepImages = prev.stepImages;
+            incoming.stepImageMap = prev.stepImageMap;
+          }
+        }
+      }
+
+      // Delete memoix recipes that are no longer in the sync payload
+      for (final prev in existing) {
+        if (!incomingUuids.contains(prev.uuid)) {
+          await _db.recipes.delete(prev.id);
+        }
+      }
+
+      // Upsert all incoming recipes
       await _db.recipes.putAll(recipes);
     });
   }
