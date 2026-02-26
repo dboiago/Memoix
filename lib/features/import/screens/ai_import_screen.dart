@@ -43,6 +43,7 @@ class AiImportScreen extends ConsumerStatefulWidget {
 class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   final _urlController = TextEditingController();
   final _textController = TextEditingController();
+  final _scrollController = ScrollController();
   final _imagePicker = ImagePicker();
   bool _isProcessing = false;
   String? _errorMessage;
@@ -51,6 +52,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   void dispose() {
     _urlController.dispose();
     _textController.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
@@ -123,6 +125,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
     }
 
     return SingleChildScrollView(
+      controller: _scrollController,
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -272,27 +275,43 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
 
           // ── Error display ──
           if (_errorMessage != null) ...[
-            const SizedBox(height: 24),
+            const SizedBox(height: 16),
             Card(
               color: theme.colorScheme.errorContainer,
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 12, vertical: 10),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(Icons.error_outline,
-                        color: theme.colorScheme.error),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Icon(Icons.error_outline,
+                          size: 18,
+                          color: theme.colorScheme.onErrorContainer),
+                    ),
                     const SizedBox(width: 8),
-                    Expanded(child: Text(_errorMessage!)),
-                    const SizedBox(width: 8),
-                    IconButton(
-                      icon: const Icon(Icons.copy, size: 18),
-                      tooltip: 'Copy error',
-                      onPressed: () {
+                    Expanded(
+                      child: Text(
+                        _errorMessage!,
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: theme.colorScheme.onErrorContainer,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                    GestureDetector(
+                      onTap: () {
                         Clipboard.setData(
                             ClipboardData(text: _errorMessage!));
                         MemoixSnackBar.show('Error copied to clipboard');
                       },
+                      child: Padding(
+                        padding: const EdgeInsets.all(4),
+                        child: Icon(Icons.copy,
+                            size: 16,
+                            color: theme.colorScheme.onErrorContainer),
+                      ),
                     ),
                   ],
                 ),
@@ -342,6 +361,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
     } catch (e) {
       if (mounted) {
         setState(() => _errorMessage = 'Failed to process image: $e');
+        _scrollToError();
       }
     }
   }
@@ -389,6 +409,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
     final lower = url.toLowerCase();
     if (!lower.startsWith('http://') && !lower.startsWith('https://')) {
       setState(() => _errorMessage = 'Only http:// and https:// URLs are supported.');
+      _scrollToError();
       return;
     }
 
@@ -458,6 +479,19 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   void _handleError(AiResponse response) {
     setState(() {
       _errorMessage = response.errorMessage ?? 'Something went wrong';
+    });
+    _scrollToError();
+  }
+
+  void _scrollToError() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scrollController.hasClients) {
+        _scrollController.animateTo(
+          _scrollController.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeOut,
+        );
+      }
     });
   }
 }

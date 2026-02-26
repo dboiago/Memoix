@@ -1,6 +1,6 @@
-/// Gemini (Gemini 1.5 Pro)
-// Slightly looser with schema
-// Very good with dense scanned PDFs
+/// Gemini (Gemini 2.0 Flash)
+// Fast, high-throughput model with generous free-tier limits
+// Very good with dense scanned PDFs and images
   
 import 'dart:convert';
 import 'dart:typed_data';
@@ -40,7 +40,7 @@ class GeminiClient {
         'POST',
         Uri.parse(
           'https://generativelanguage.googleapis.com/v1beta/models/'
-          'gemini-1.5-pro:generateContent?key=$apiKey',
+          'gemini-2.0-flash:generateContent?key=$apiKey',
         ),
       );
       request.headers.addAll({
