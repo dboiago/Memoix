@@ -207,7 +207,7 @@ class RecipeRepository {
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
-        'recipe_id': recipe.uuid,
+        'recipe_id': existing.uuid,
         'is_adding': !wasFavorited,
       },
     );
