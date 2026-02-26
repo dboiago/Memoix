@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../app/theme/colors.dart';
 
 /// Recipe rating widget (1-5 stars + favourite)
+// No intention of adding a rating system to recipes (why add a recipe you don't like)
+// It exists for cheese, cellar, or other journaling
 class RecipeRating extends StatelessWidget {
   final int rating; // 0-5 (0 = unrated)
   final bool isFavourite;
