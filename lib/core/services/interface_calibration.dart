@@ -107,6 +107,10 @@ class CalibrationEvaluator {
   final LocalInterfaceIndex _idx;
   static bool _sessionHasFired = false;
 
+  static void setSessionFired() {
+    _sessionHasFired = true;
+  }
+
   static void resetSessionFlag() {
     _sessionHasFired = false;
   }
@@ -169,7 +173,6 @@ class CalibrationEvaluator {
     for (final entry in _effectThresholds.entries) {
       final threshold = entry.key;
       final effectKey = entry.value;
-      
       if (alertsDispatched >= threshold && !_idx.isEffectDispatched(effectKey)) {
         await _idx.markEffectDispatched(effectKey);
         _sessionHasFired = true;

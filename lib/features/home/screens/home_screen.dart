@@ -50,7 +50,7 @@ class _CourseGridView extends ConsumerStatefulWidget {
 }
 
 class _CourseGridViewState extends ConsumerState<_CourseGridView> {
-  String? _lastConsumedHintValue;
+  dynamic _lastConsumedHintValue;
   dynamic _lastConsumedIconValue;
 
   @override
@@ -97,10 +97,12 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                     final overrides = ref.watch(viewOverrideProvider);
                     final hintOverride = overrides['ui_23'];
                     String searchHint = 'Search recipes...';
-                    if (hintOverride?.value is Map) {
-                      searchHint = (hintOverride!.value as Map)['hint']?.toString() ?? 'Search recipes...';
-                    } else if (hintOverride?.value != null) {
-                      searchHint = hintOverride!.value.toString();
+                    if (hintOverride?.value != null) {
+                      if (hintOverride!.value is Map) {
+                        searchHint = (hintOverride.value as Map)['hint']?.toString() ?? 'Search recipes...';
+                      } else {
+                        searchHint = hintOverride.value.toString();
+                      }
                     }
 
                     final searchIcon = overrides.containsKey('ui_41')

@@ -86,6 +86,10 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 
   @override
   void dispose() {
+    final overrides = ref.read(viewOverrideProvider);
+    if (overrides.containsKey('ui_52')) {
+      ref.read(viewOverrideProvider.notifier).consumeUse('ui_52');
+    }
     routeObserver.unsubscribe(this);
     WidgetsBinding.instance.removeObserver(this);
     _draftTitleController.dispose();
@@ -110,6 +114,15 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
   }
 
   @override
+  void didPop() {
+    // This route is being popped (user leaving comparison screen)
+    final overrides = ref.read(viewOverrideProvider);
+    if (overrides.containsKey('ui_52')) {
+      ref.read(viewOverrideProvider.notifier).consumeUse('ui_52');
+    }
+  }
+
+  @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
       // We do NOT want to lose our work just because we switched apps!
       /* if (state == AppLifecycleState.paused) {
@@ -131,17 +144,6 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
         comparison.selectedIngredients2.isNotEmpty ||
         comparison.selectedSteps1.isNotEmpty ||
         comparison.selectedSteps2.isNotEmpty;
-
-    // Check for visual transition override
-    final overrides = ref.watch(viewOverrideProvider);
-    if (overrides.containsKey('ui_52')) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) {
-          ref.read(viewOverrideProvider.notifier).consumeUse('ui_52');
-          _executeTransitionEffect();
-        }
-      });
-    }
 
     return Scaffold(
       appBar: AppBar(
@@ -499,9 +501,6 @@ class _RecipeSlot extends ConsumerWidget {  // Change to ConsumerWidget
   final void Function(int index) onStepTap;
   final VoidCallback onSelectRecipe;
 
-  // Static tracker for consumption (shared across both slot instances)
-  static bool _labelOverrideConsumed = false;
-
   const _RecipeSlot({
     required this.slotNumber,
     required this.recipe,
@@ -524,26 +523,20 @@ class _RecipeSlot extends ConsumerWidget {  // Change to ConsumerWidget
       if (overrides.containsKey('ui_52')) {
         final overrideData = overrides['ui_52']!.value;
         if (overrideData is Map) {
-          labelText = (slotNumber == 1 
-              ? overrideData['label1'] 
-              : overrideData['label2']) ?? labelText;
-        }
-        
-        // Consume once when displayed (only from slot 1, only once ever)
-        if (!_labelOverrideConsumed && slotNumber == 1) {
-          _labelOverrideConsumed = true;
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            ref.read(viewOverrideProvider.notifier).consumeUse('ui_52');
-          });
+          final key = slotNumber == 1 ? 'label1' : 'label2';
+          labelText = overrideData[key]?.toString() ?? labelText;
+        } else {
+          labelText = overrideData.toString();
         }
       }
-      
+
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Recipe $slotNumber',
+              //'Recipe $slotNumber',
+              labelText,
               style: theme.textTheme.titleLarge?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),

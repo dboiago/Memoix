@@ -78,28 +78,30 @@ void main() async {
     return responses;
   });
 
-  // Hydrate persisted view overrides from prior sessions
   final persistedOverrides = IntegrityService.getPersistedOverrides();
-  for (final entry in persistedOverrides.entries) {
-    IntegrityService.enqueueStartupArtifacts([
-      IntegrityResponse(
-        type: 'ui_patch',
-        data: {
-          'target': entry.key,
-          'value': entry.value['value'],
-          if (entry.value.containsKey('uses'))
-            'uses_remaining': entry.value['uses'],
-        },
-      ),
-    ]);
+  if (persistedOverrides.isNotEmpty) {
+    for (final entry in persistedOverrides.entries) {
+      IntegrityService.enqueueStartupArtifacts([
+        IntegrityResponse(
+          type: 'ui_patch',
+          data: {
+            'target': entry.key,
+            'value': entry.value['value'],
+            if (entry.value.containsKey('uses'))
+              'uses_remaining': entry.value['uses'],
+          },
+        ),
+      ]);
+    }
+    CalibrationEvaluator.setSessionFired();
   }
 
-  // Resolve any newly eligible effect thresholds
+
   final startupAlertCount = calibrationEvaluator.countDispatchedAlerts();
-  final startupEffect =
+  final startupBreadcrumb =
       await calibrationEvaluator.checkPendingBreadcrumb(startupAlertCount);
-  if (startupEffect != null) {
-    IntegrityService.enqueueStartupArtifacts([startupEffect]);
+  if (startupBreadcrumb != null) {
+    IntegrityService.enqueueStartupArtifacts([startupBreadcrumb]);
   }
 
   await IngredientService().initialize();
