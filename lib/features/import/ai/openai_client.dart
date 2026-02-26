@@ -13,8 +13,9 @@ const _maxResponseBytes = 10 * 1024 * 1024;
 
 class OpenAiClient {
   final String apiKey;
+  final String model;
 
-  OpenAiClient(this.apiKey);
+  OpenAiClient(this.apiKey, {this.model = 'gpt-4.1'});
 
   Future<Map<String, dynamic>> analyzeRecipe({
     required String systemPrompt,
@@ -43,7 +44,7 @@ class OpenAiClient {
         'Content-Type': 'application/json',
       });
       request.body = jsonEncode({
-        "model": imageBytes != null ? "gpt-4o" : "gpt-4.1",
+        "model": model,
         "messages": messages,
         "temperature": 0.0,
         "response_format": {"type": "json_object"},

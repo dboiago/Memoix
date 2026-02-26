@@ -55,11 +55,12 @@ class MemoixAiService implements AiService {
 
     try {
       final systemPrompt = AiRecipeImporter.buildSystemPrompt();
+      final model = _settings.configFor(provider).effectiveModel;
 
       final Map<String, dynamic> json;
       switch (provider) {
         case AiProvider.openai:
-          json = await OpenAiClient(apiKey)
+          json = await OpenAiClient(apiKey, model: model)
               .analyzeRecipe(
                 systemPrompt: systemPrompt,
                 text: request.text,
@@ -68,7 +69,7 @@ class MemoixAiService implements AiService {
               .timeout(_requestTimeout);
           break;
         case AiProvider.claude:
-          json = await ClaudeClient(apiKey)
+          json = await ClaudeClient(apiKey, model: model)
               .analyzeRecipe(
                 systemPrompt: systemPrompt,
                 text: request.text,
@@ -77,7 +78,7 @@ class MemoixAiService implements AiService {
               .timeout(_requestTimeout);
           break;
         case AiProvider.gemini:
-          json = await GeminiClient(apiKey)
+          json = await GeminiClient(apiKey, model: model)
               .analyzeRecipe(
                 systemPrompt: systemPrompt,
                 text: request.text,
@@ -148,6 +149,13 @@ class MemoixAiService implements AiService {
   /// Turn an opaque [Exception] from a client into a typed [AiResponse].
   AiResponse _classifyError(Exception e, AiProvider provider) {
     final msg = e.toString().toLowerCase();
+    if (msg.contains('404') || msg.contains('not found') || msg.contains('does not exist')) {
+      return AiResponse.error(
+        'Model not available for your ${_providerLabel(provider)} key. '
+        'Choose a different model in Settings → Agents.',
+        AiErrorType.invalidToken,
+      );
+    }
     if (msg.contains('401') || msg.contains('unauthorized')) {
       return AiResponse.error(
         'Invalid API key for ${_providerLabel(provider)}. '

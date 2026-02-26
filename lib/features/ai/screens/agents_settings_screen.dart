@@ -57,7 +57,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
           // Providers section
           _SectionHeader(title: 'Providers'),
 
-          for (final provider in AiProvider.values)
+          for (final provider in AiProvider.values) ...[
             _ProviderTile(
               provider: provider,
               config: settings.configFor(provider),
@@ -70,6 +70,14 @@ class AgentsSettingsScreen extends ConsumerWidget {
                 notifier,
               ),
             ),
+            // Model selector – shown only when the provider has a key
+            if (settings.configFor(provider).hasKeyStored)
+              _ModelSelector(
+                provider: provider,
+                config: settings.configFor(provider),
+                onChanged: (model) => notifier.setModel(provider, model),
+              ),
+          ],
 
           const SizedBox(height: 16),
           Padding(
@@ -249,6 +257,60 @@ class _SectionHeader extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Theme.of(context).colorScheme.primary,
             ),
+      ),
+    );
+  }
+}
+
+/// Dropdown for selecting a model within a provider.
+///
+/// Displayed directly below the provider tile when a key is stored.
+class _ModelSelector extends StatelessWidget {
+  final AiProvider provider;
+  final AiProviderConfig config;
+  final ValueChanged<String?> onChanged;
+
+  const _ModelSelector({
+    required this.provider,
+    required this.config,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final models = aiProviderModels[provider] ?? [];
+    if (models.isEmpty) return const SizedBox.shrink();
+
+    final current = config.effectiveModel;
+
+    return Padding(
+      padding: const EdgeInsets.only(left: 56, right: 16, bottom: 8),
+      child: DropdownButtonFormField<String>(
+        value: models.contains(current) ? current : models.first,
+        decoration: InputDecoration(
+          labelText: 'Model',
+          isDense: true,
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+        style: theme.textTheme.bodyMedium,
+        isExpanded: true,
+        items: models
+            .map((m) => DropdownMenuItem(
+                  value: m,
+                  child: Text(m, overflow: TextOverflow.ellipsis),
+                ))
+            .toList(),
+        onChanged: (value) {
+          if (value == null) return;
+          // If the user picks the default, store null to track "default"
+          final isDefault = value == defaultModelFor(provider);
+          onChanged(isDefault ? null : value);
+        },
       ),
     );
   }

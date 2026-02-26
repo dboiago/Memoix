@@ -12,26 +12,40 @@ class AiProviderConfig {
   final bool enabled;
   final DateTime? validatedAt;
 
+  /// User-selected model ID (e.g. 'gpt-4.1', 'claude-sonnet-4-20250514').
+  ///
+  /// When `null` the default for the provider is used.
+  final String? selectedModel;
+
   const AiProviderConfig({
     required this.provider,
     this.hasKeyStored = false,
     this.enabled = false,
     this.validatedAt,
+    this.selectedModel,
   });
 
   bool get isConfigured => hasKeyStored;
   bool get isActive => enabled && isConfigured;
 
+  /// Resolves the model to use — selected choice or provider default.
+  String get effectiveModel =>
+      selectedModel ?? defaultModelFor(provider);
+
   AiProviderConfig copyWith({
     bool? hasKeyStored,
     bool? enabled,
     DateTime? validatedAt,
+    String? selectedModel,
+    bool clearModel = false,
   }) {
     return AiProviderConfig(
       provider: provider,
       hasKeyStored: hasKeyStored ?? this.hasKeyStored,
       enabled: enabled ?? this.enabled,
       validatedAt: validatedAt ?? this.validatedAt,
+      selectedModel:
+          clearModel ? null : (selectedModel ?? this.selectedModel),
     );
   }
 
@@ -43,6 +57,7 @@ class AiProviderConfig {
         'hasKeyStored': hasKeyStored,
         'enabled': enabled,
         'validatedAt': validatedAt?.toIso8601String(),
+        if (selectedModel != null) 'selectedModel': selectedModel,
       };
 
   static AiProviderConfig fromJson(Map<String, dynamic> json) {
@@ -58,6 +73,7 @@ class AiProviderConfig {
       validatedAt: json['validatedAt'] != null
           ? DateTime.parse(json['validatedAt'])
           : null,
+      selectedModel: json['selectedModel'] as String?,
     );
   }
 }

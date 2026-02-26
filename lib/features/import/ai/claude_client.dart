@@ -12,8 +12,9 @@ const _maxResponseBytes = 10 * 1024 * 1024;
 
 class ClaudeClient {
   final String apiKey;
+  final String model;
 
-  ClaudeClient(this.apiKey);
+  ClaudeClient(this.apiKey, {this.model = 'claude-sonnet-4-20250514'});
 
   Future<Map<String, dynamic>> analyzeRecipe({
     required String systemPrompt,
@@ -52,7 +53,7 @@ class ClaudeClient {
         'content-type': 'application/json',
       });
       request.body = jsonEncode({
-        "model": "claude-3-5-sonnet-20240620",
+        "model": model,
         "system": systemPrompt,
         "messages": [
           {"role": "user", "content": content}

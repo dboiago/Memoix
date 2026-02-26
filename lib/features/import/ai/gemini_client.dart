@@ -11,8 +11,9 @@ const _maxResponseBytes = 10 * 1024 * 1024;
 
 class GeminiClient {
   final String apiKey;
+  final String model;
 
-  GeminiClient(this.apiKey);
+  GeminiClient(this.apiKey, {this.model = 'gemini-2.0-flash'});
 
   Future<Map<String, dynamic>> analyzeRecipe({
     required String systemPrompt,
@@ -40,7 +41,7 @@ class GeminiClient {
         'POST',
         Uri.parse(
           'https://generativelanguage.googleapis.com/v1beta/models/'
-          'gemini-2.0-flash:generateContent?key=$apiKey',
+          '$model:generateContent?key=$apiKey',
         ),
       );
       request.headers.addAll({

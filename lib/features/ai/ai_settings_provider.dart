@@ -165,6 +165,20 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     await _save();
   }
 
+  /// Set the selected model for [provider].
+  Future<void> setModel(AiProvider provider, String? model) async {
+    final updated = model == null
+        ? state.configFor(provider).copyWith(clearModel: true)
+        : state.configFor(provider).copyWith(selectedModel: model);
+
+    state = state.copyWith(providers: {
+      ...state.providers,
+      provider: updated,
+    });
+
+    await _save();
+  }
+
   /// Whether at least one provider is enabled and has a key.
   bool get hasActiveProvider => state.activeProviders.isNotEmpty;
 }
