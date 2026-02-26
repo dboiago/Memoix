@@ -390,4 +390,4 @@ IconData _resolveIcon(String name) {
     'eco': Icons.eco,
   };
   return map[name] ?? Icons.search;
-}re
+}
