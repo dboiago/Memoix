@@ -4,6 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../features/mealplan/models/meal_plan.dart';
 import '../../features/recipes/models/recipe.dart';
 import 'integrity_service.dart';
+import 'package:flutter/foundation.dart';
+import 'dart:convert';
 
 // Helper: zero-padded YYYY-MM-DD string
 String _dKey(DateTime d) =>
@@ -12,9 +14,11 @@ String _dKey(DateTime d) =>
 class LocalInterfaceIndex {
   static const _act = 'db.active_index';
   static const _dis = 'db.operation_log';
-  static const _share = 'metrics.sync_counter';
-  static const _alertDis = 'metrics.alert_index';
-  static const _breadDis = 'metrics.trace_index';
+  static const _share = 'sync.buffer_count';
+  static const _alertDis = 'state.notification_log';
+  static const _breadDis = 'state.trace_log';
+  static const _pendingQueue = 'cache.deferred_queue';
+
   SharedPreferences? _prefs;
 
   Future<void> init() async => _prefs ??= await SharedPreferences.getInstance();
@@ -54,8 +58,29 @@ class LocalInterfaceIndex {
 
   bool get showHeaderImages => _prefs?.getBool('show_header_images') ?? true;
 
+  Map<String, String> get pendingAlerts {
+    final json = _prefs?.getString(_pendingQueue) ?? '{}';
+    try {
+      return Map<String, String>.from(jsonDecode(json));
+    } catch (e) {
+      return {};
+    }
+  }
+
+  Future<void> queueAlert(String alertId, String eventType) async {
+    final pending = pendingAlerts;
+    pending[alertId] = eventType;
+    await _prefs?.setString(_pendingQueue, jsonEncode(pending));
+  }
+  
+  Future<void> clearPendingAlert(String alertId) async {
+    final pending = pendingAlerts;
+    pending.remove(alertId);
+    await _prefs?.setString(_pendingQueue, jsonEncode(pending));
+  }
+
   Future<void> clear() async {
-    for (final k in [_act, _dis, _share, _alertDis, _breadDis]) {
+    for (final k in [_act, _dis, _share, _alertDis, _breadDis, _pendingQueue]) {
       await _prefs?.remove(k);
     }
   }
@@ -80,9 +105,17 @@ class _Spec {
 class CalibrationEvaluator {
   final Isar _db;
   final LocalInterfaceIndex _idx;
-  bool _sessionFired = false;
-  bool _alertFiredThisSession = false;
-  bool _breadcrumbFiredThisSession = false;
+  static bool _sessionHasFired = false;
+
+  static void resetSessionFlag() {
+    _sessionHasFired = false;
+  }
+
+  int countDispatchedAlerts() {
+    return _specs
+        .where((s) => s.alertId != null && _idx.isAlertDispatched(s.alertId!))
+        .length;
+  }
 
   CalibrationEvaluator({required Isar db, required LocalInterfaceIndex idx})
       : _db = db,
@@ -92,8 +125,11 @@ class CalibrationEvaluator {
     await _applyCounters(event, meta);
     final activated = <String>[];
     for (final s in _specs) {
-      if (_idx.isActivated(s.key) || !s.events.contains(event)) continue;
-      if (await s.condition(event, meta, _db, _idx)) {
+      if (_idx.isActivated(s.key) || !s.events.contains(event)) {
+        continue;
+      }
+      final passed = await s.condition(event, meta, _db, _idx);
+      if (passed) {
         await _idx.activate(s.key);
         activated.add(s.key);
       }
@@ -101,30 +137,69 @@ class CalibrationEvaluator {
     return activated;
   }
 
-  Future<List<IntegrityResponse>> deriveEffects() async {
-    if (_sessionFired) return [];
-    final total = _idx.activatedCount;
-    final res = <IntegrityResponse>[];
-    for (final e in _effectThresholds.entries) {
-      final t = e.key, k = e.value;
-      if (total >= t && !_idx.isEffectDispatched(k)) {
-        await _idx.markEffectDispatched(k);
-        res.add(IntegrityResponse(
-            type: 'noop', data: {'effect_key': k, 'threshold': t}));
-        _sessionFired = true;
-        break;
+  Future<IntegrityResponse?> checkPendingAlert(String currentEvent) async {
+    if (_sessionHasFired) return null;
+    
+    for (final entry in _idx.pendingAlerts.entries) {
+      if (entry.value == currentEvent) {
+        await _idx.clearPendingAlert(entry.key);
+        await _idx.markAlertDispatched(entry.key);
+        _sessionHasFired = true;
+        
+        String? specKey;
+        for (final s in _specs) {
+          if (s.alertId == entry.key) {
+            specKey = s.key;
+            break;
+          }
+        }
+        
+        return IntegrityResponse(
+          type: 'alert',
+          data: {'alert_id': entry.key, 'spec_key': specKey},
+        );
       }
     }
-    return res;
+    return null;
   }
 
-  Future<List<IntegrityResponse>> deriveAlerts(List<String> activated) async {
-    if (_alertFiredThisSession) return [];
+  Future<IntegrityResponse?> checkPendingBreadcrumb(int alertsDispatched) async {
+    if (_sessionHasFired) return null;
+    
+    for (final entry in _effectThresholds.entries) {
+      final threshold = entry.key;
+      final effectKey = entry.value;
+      
+      if (alertsDispatched >= threshold && !_idx.isEffectDispatched(effectKey)) {
+        await _idx.markEffectDispatched(effectKey);
+        _sessionHasFired = true;
+        
+        return IntegrityResponse(
+          type: 'noop',
+          data: {'effect_key': effectKey, 'threshold': threshold},
+        );
+      }
+    }
+    
+    return null;
+  }
+
+  Future<List<IntegrityResponse>> deriveAlerts(List<String> activated, String currentEvent) async {
+    if (_sessionHasFired) {
+      for (final s in _specs) {
+        if (s.alertId == null || !activated.contains(s.key)) continue;
+        if (_idx.isAlertDispatched(s.alertId!)) continue;
+        await _idx.queueAlert(s.alertId!, currentEvent);
+      }
+      return [];
+    }
+    
     for (final s in _specs) {
       if (s.alertId == null || !activated.contains(s.key)) continue;
       if (_idx.isAlertDispatched(s.alertId!)) continue;
+      
       await _idx.markAlertDispatched(s.alertId!);
-      _alertFiredThisSession = true;
+      _sessionHasFired = true;
       return [
         IntegrityResponse(
           type: 'alert',
@@ -132,16 +207,19 @@ class CalibrationEvaluator {
         ),
       ];
     }
+    
     return [];
   }
 
   Future<List<IntegrityResponse>> deriveBreadcrumbs(List<String> activated) async {
-    if (_breadcrumbFiredThisSession) return [];
+     if (_sessionHasFired) return [];
+    
     for (final s in _specs) {
       if (s.breadcrumbId == null || !activated.contains(s.key)) continue;
       if (_idx.isBreadcrumbDispatched(s.breadcrumbId!)) continue;
+      
       await _idx.markBreadcrumbDispatched(s.breadcrumbId!);
-      _breadcrumbFiredThisSession = true;
+      _sessionHasFired = true;
       return [
         IntegrityResponse(
           type: 'breadcrumb',
@@ -173,6 +251,7 @@ class CalibrationEvaluator {
     _Spec(
       key: 'db.entry_update_v2',
       events: {'activity.recipe_saved'},
+      alertId: 'db.label_01',
       breadcrumbId: 'cache.entry_log_02',
       condition: (ev, m, db, idx) async {
         if (m['is_edit'] != true) return false;
@@ -186,6 +265,7 @@ class CalibrationEvaluator {
     _Spec(
       key: 'parser.list_attr_sum',
       events: {'activity.shopping_list_created'},
+      alertId: 'parser.label_01',
       condition: (ev, m, db, idx) async {
         final meat = (m['meat_count'] as int?) ?? 0;
         final prod = (m['produce_count'] as int?) ?? 0;
@@ -197,52 +277,73 @@ class CalibrationEvaluator {
       events: {'activity.meal_plan_updated'},
       alertId: 'cache.label_02',
       condition: (ev, m, db, idx) async {
-        final now = DateTime.now();
-        final start = DateTime(now.year, now.month, now.day).subtract(const Duration(days: 6));
-        final startKey = _dKey(start);
-        final todayKey = _dKey(now);
-        // Fetch all meal plans and filter in Dart (string comparison on date)
         final plans = await db.mealPlans.where().findAll();
-        final inRange = plans
-            .where((p) =>
-                p.date.compareTo(startKey) >= 0 &&
-                p.date.compareTo(todayKey) <= 0 &&
-                p.meals.isNotEmpty)
+        if (plans.isEmpty) return false;
+        
+        final daysWithMeals = plans
+            .where((p) => p.meals.isNotEmpty)
             .map((p) => p.date)
-            .toSet();
-        return inRange.length >= 5;
+            .toSet()
+            .toList()
+          ..sort();
+        
+        if (daysWithMeals.length < 5) return false;
+        
+        for (int i = 0; i < daysWithMeals.length - 4; i++) {
+          final startDate = daysWithMeals[i];
+          final endDate = DateTime.parse(startDate).add(Duration(days: 6));
+          final endKey = _dKey(endDate);
+          
+          final daysInWindow = daysWithMeals
+              .skip(i)
+              .takeWhile((d) => d.compareTo(endKey) <= 0)
+              .length;
+              
+          if (daysInWindow >= 5) return true;
+        }
+        
+        return false;
       },
     ),
     _Spec(
       key: 'cache.favourite_index',
       events: {'activity.recipe_favourited'},
-      breadcrumbId: 'cache.entry_log_03',
-      condition: (ev, m, db, idx) async => await db.recipes.filter().isFavoriteEqualTo(true).count() >= 5,
+      alertId: 'cache.label_03',
+      condition: (ev, m, db, idx) async {
+        if (m['is_adding'] != true) return false;
+        
+        final count = await db.recipes.filter().isFavoriteEqualTo(true).count();
+        return count >= 5;
+      },
     ),
     _Spec(
       key: 'gfx.render_pipeline_state',
       events: {'activity.recipe_saved', 'activity.setting_changed'},
+      alertId: 'gfx.label_01',
       condition: (ev, m, db, idx) async {
         if (!idx.showHeaderImages) return false;
+        
         return await db.recipes
-                .filter()
-                .sourceEqualTo(RecipeSource.personal)
-                .and()
-                .headerImageIsNotNull()
-                .and()
-                .headerImageIsNotEmpty()
-                .count() >= 4;
+            .filter()
+            .sourceEqualTo(RecipeSource.personal)
+            .and()
+            .headerImageIsNotNull()
+            .and()
+            .headerImageIsNotEmpty()
+            .count() >= 4;
       },
     ),
     _Spec(
       key: 'util.calc_node_diff',
       events: {'activity.recipes_compared'},
+      alertId: 'util.label_01',
       condition: (ev, m, db, idx) async {
         final saved = m['result_saved'] as bool? ?? false;
+        final steps = m['result_steps'] as int? ?? 0;
+        final a = m['recipe_a_steps'] as int? ?? 0;
+        final b = m['recipe_b_steps'] as int? ?? 0;
+        
         if (!saved) return false;
-        final steps = (m['result_steps'] as int?) ?? 0;
-        final a = (m['recipe_a_steps'] as int?) ?? 0;
-        final b = (m['recipe_b_steps'] as int?) ?? 0;
         if (a == 0 || b == 0) return false;
         return steps < min(a, b);
       },
@@ -250,12 +351,19 @@ class CalibrationEvaluator {
     _Spec(
       key: 'storage.archive_density_check',
       events: {'activity.recipe_saved'},
+      alertId: 'storage.label_01',
       condition: (ev, m, db, idx) async {
         if (m['recipe_source'] != 'personal') return false;
+        
         final total = await db.recipes.filter().sourceEqualTo(RecipeSource.personal).count();
         if (total < 40) return false;
+        
         final items = await db.recipes.filter().sourceEqualTo(RecipeSource.personal).findAll();
-        final filtered = items.where((r) => r.directions.length >= 4 && r.ingredients.length >= 5).toList();
+        final filtered = items.where((r) => 
+            r.directions.length >= 4 && 
+            r.ingredients.length >= 5
+        ).toList();
+        
         final days = filtered.map((r) => _dKey(r.createdAt)).toSet();
         return filtered.length >= 40 && days.length >= 14;
       },

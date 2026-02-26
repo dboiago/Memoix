@@ -490,7 +490,7 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
 }
 
 /// Widget for a single recipe slot
-class _RecipeSlot extends StatelessWidget {
+class _RecipeSlot extends ConsumerWidget {  // Change to ConsumerWidget
   final int slotNumber;
   final Recipe? recipe;
   final Set<int> selectedIngredients;
@@ -498,6 +498,9 @@ class _RecipeSlot extends StatelessWidget {
   final void Function(int index) onIngredientTap;
   final void Function(int index) onStepTap;
   final VoidCallback onSelectRecipe;
+
+  // Static tracker for consumption (shared across both slot instances)
+  static bool _labelOverrideConsumed = false;
 
   const _RecipeSlot({
     required this.slotNumber,
@@ -510,11 +513,31 @@ class _RecipeSlot extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {  // Add WidgetRef ref parameter
     final theme = Theme.of(context);
 
     if (recipe == null) {
-      // Empty state
+      final overrides = ref.watch(viewOverrideProvider);
+      
+      // Check for comparison label override
+      String labelText = 'Recipe $slotNumber';
+      if (overrides.containsKey('ui_52')) {
+        final overrideData = overrides['ui_52']!.value;
+        if (overrideData is Map) {
+          labelText = (slotNumber == 1 
+              ? overrideData['label1'] 
+              : overrideData['label2']) ?? labelText;
+        }
+        
+        // Consume once when displayed (only from slot 1, only once ever)
+        if (!_labelOverrideConsumed && slotNumber == 1) {
+          _labelOverrideConsumed = true;
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            ref.read(viewOverrideProvider.notifier).consumeUse('ui_52');
+          });
+        }
+      }
+      
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

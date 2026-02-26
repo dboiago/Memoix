@@ -95,13 +95,18 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                   builder: (context) {
                     final theme = Theme.of(context);
                     final overrides = ref.watch(viewOverrideProvider);
-                    final searchHint = overrides['ui_23']?.value ?? 'Search recipes...';
+                    final hintOverride = overrides['ui_23'];
+                    String searchHint = 'Search recipes...';
+                    if (hintOverride?.value is Map) {
+                      searchHint = (hintOverride!.value as Map)['hint']?.toString() ?? 'Search recipes...';
+                    } else if (hintOverride?.value != null) {
+                      searchHint = hintOverride!.value.toString();
+                    }
+
                     final searchIcon = overrides.containsKey('ui_41')
                         ? _resolveIcon(overrides['ui_41']!.value)
                         : Icons.search;
 
-                    // Consume when override value changes, not on every rebuild
-                    final hintOverride = overrides['ui_23'];
                     if (hintOverride != null && hintOverride.value != _lastConsumedHintValue) {
                       _lastConsumedHintValue = hintOverride.value;
                       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -385,4 +390,4 @@ IconData _resolveIcon(String name) {
     'eco': Icons.eco,
   };
   return map[name] ?? Icons.search;
-}
+}re

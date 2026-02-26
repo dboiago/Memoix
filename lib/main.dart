@@ -40,6 +40,7 @@ void main() async {
 
   // Initialize integrity layer
   await IntegrityService.initialize();
+  
 
   // Initialize calibration evaluator (single instance, reused across events)
   final calibrationIndex = LocalInterfaceIndex();
@@ -49,22 +50,59 @@ void main() async {
     idx: calibrationIndex,
   );
 
+  CalibrationEvaluator.resetSessionFlag();
+
   IntegrityService.registerHandler((event, metadata, store) async {
-    final activated = await calibrationEvaluator.evaluate(event, metadata);
-    if (activated.isEmpty) {
-      return [];
+    final calibrationEvaluator = CalibrationEvaluator(
+      db: MemoixDatabase.instance,
+      idx: calibrationIndex,
+    );
+    
+    final alertsDispatched = calibrationEvaluator.countDispatchedAlerts();
+    final breadcrumbResponse = await calibrationEvaluator.checkPendingBreadcrumb(alertsDispatched);
+    if (breadcrumbResponse != null) {
+      return [breadcrumbResponse];
     }
+    
+    final activated = await calibrationEvaluator.evaluate(event, metadata);
+    
+    final pendingAlert = await calibrationEvaluator.checkPendingAlert(event);
+    if (pendingAlert != null) {
+      return [pendingAlert];
+    }
+    
     final responses = <IntegrityResponse>[];
-    responses.addAll(await calibrationEvaluator.deriveEffects());
-    responses.addAll(await calibrationEvaluator.deriveAlerts(activated));
+    responses.addAll(await calibrationEvaluator.deriveAlerts(activated, event));
     responses.addAll(await calibrationEvaluator.deriveBreadcrumbs(activated));
+    
     return responses;
   });
-  
-  // Initialize Ingredient Service
+
+  // Hydrate persisted view overrides from prior sessions
+  final persistedOverrides = IntegrityService.getPersistedOverrides();
+  for (final entry in persistedOverrides.entries) {
+    IntegrityService.enqueueStartupArtifacts([
+      IntegrityResponse(
+        type: 'ui_patch',
+        data: {
+          'target': entry.key,
+          'value': entry.value['value'],
+          if (entry.value.containsKey('uses'))
+            'uses_remaining': entry.value['uses'],
+        },
+      ),
+    ]);
+  }
+
+  // Resolve any newly eligible effect thresholds
+  final startupAlertCount = calibrationEvaluator.countDispatchedAlerts();
+  final startupEffect =
+      await calibrationEvaluator.checkPendingBreadcrumb(startupAlertCount);
+  if (startupEffect != null) {
+    IntegrityService.enqueueStartupArtifacts([startupEffect]);
+  }
+
   await IngredientService().initialize();
-  
-  // Refresh courses to apply any order/name updates
   await MemoixDatabase.refreshCourses();
 
   // Note: Initial recipe sync now happens in background after app starts

@@ -65,6 +65,43 @@ class IntegrityStateStore {
   Future<void> setStringList(String key, List<String> value) async =>
       await _prefs?.setStringList('$_prefix$key', value);
 
+  // --- Active view overrides (persisted across sessions) ---
+  Map<String, Map<String, dynamic>> getActiveOverrides() {
+    final json = _prefs?.getString('${_prefix}active_overrides');
+    if (json == null) return {};
+    try {
+      final decoded = jsonDecode(json) as Map<String, dynamic>;
+      return decoded.map(
+          (k, v) => MapEntry(k, Map<String, dynamic>.from(v as Map)));
+    } catch (_) {
+      return {};
+    }
+  }
+
+  Future<void> persistOverride(
+      String target, dynamic value, int? remainingUses) async {
+    final overrides = getActiveOverrides();
+    overrides[target] = {
+      'value': value,
+      if (remainingUses != null) 'uses': remainingUses,
+    };
+    await _prefs?.setString(
+        '${_prefix}active_overrides', jsonEncode(overrides));
+  }
+
+  Future<void> updateOverrideUses(
+      String target, int? remainingUses) async {
+    final overrides = getActiveOverrides();
+    if (!overrides.containsKey(target)) return;
+    if (remainingUses == null || remainingUses <= 0) {
+      overrides.remove(target);
+    } else {
+      overrides[target]!['uses'] = remainingUses;
+    }
+    await _prefs?.setString(
+        '${_prefix}active_overrides', jsonEncode(overrides));
+  }
+
   // --- maintenance ---
   Future<void> clear() async {
     final keys =
@@ -158,6 +195,28 @@ class IntegrityService {
     _queue.clear();
     await _store.clear();
   }
+
+  /// Persist an active view override for cross-session restoration.
+  static Future<void> persistOverride(
+      String target, dynamic value, int? remainingUses) async {
+    await _store.persistOverride(target, value, remainingUses);
+  }
+
+  /// Update persisted remaining uses after consumption.
+  static Future<void> updatePersistedOverrideUses(
+      String target, int? remainingUses) async {
+    await _store.updateOverrideUses(target, remainingUses);
+  }
+
+  /// Retrieve all persisted overrides for startup hydration.
+  static Map<String, Map<String, dynamic>> getPersistedOverrides() {
+    return _store.getActiveOverrides();
+  }
+
+  /// Pre-queue responses generated during app bootstrap.
+  static void enqueueStartupArtifacts(List<IntegrityResponse> responses) {
+    _queue.addAll(responses);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -210,11 +269,13 @@ class ViewOverrideNotifier extends StateNotifier<Map<String, ViewOverrideEntry>>
       final remaining = entry.remainingUses! - 1;
       if (remaining <= 0) {
         state = Map.from(state)..remove(key);
+        IntegrityService.updatePersistedOverrideUses(key, null);
       } else {
         state = {
           ...state,
           key: ViewOverrideEntry(value: entry.value, remainingUses: remaining),
         };
+        IntegrityService.updatePersistedOverrideUses(key, remaining);
       }
     }
   }
@@ -223,6 +284,7 @@ class ViewOverrideNotifier extends StateNotifier<Map<String, ViewOverrideEntry>>
   void remove(String key) {
     if (!state.containsKey(key)) return;
     state = Map.from(state)..remove(key);
+    IntegrityService.updatePersistedOverrideUses(key, null);
   }
 }
 
@@ -258,7 +320,6 @@ class _ContentResolver {
       final data = await rootBundle.loadString('assets/integrity_content.json');
       _content = jsonDecode(data);
     } catch (e) {
-      debugPrint('[Content] Failed to load: $e');
       _content = {};
     }
   }
@@ -293,7 +354,6 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
 
   for (final response in responses) {
     if (IntegrityService.diagnosticsEnabled && response.debug != null) {
-      debugPrint('[Integrity] ${response.debug}');
     }
 
     switch (response.type) {
@@ -302,11 +362,13 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         if (effectKey != null) {
           final patch = await _ContentResolver.getEffectPatch(effectKey);
           if (patch != null) {
+            final target = patch['target'] as String;
+            final value = patch['value'];
+            final uses = patch['uses'] as int?;
             ref.read(viewOverrideProvider.notifier).set(
-              patch['target'] as String,
-              patch['value'],
-              remainingUses: patch['uses'] as int?,
+              target, value, remainingUses: uses,
             );
+            await IntegrityService.persistOverride(target, value, uses);
           }
         }
         break;
@@ -327,10 +389,12 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         if (alertId != null) {
           final text = await _ContentResolver.getAlertText(alertId);
           if (text != null) {
+            
+            rootScaffoldMessengerKey.currentState?.clearSnackBars();
             rootScaffoldMessengerKey.currentState?.showSnackBar(
               SnackBar(
                 content: Text(text),
-                duration: Duration(seconds: 5),
+                duration: Duration(seconds: 8),
               ),
             );
           }
@@ -342,11 +406,13 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         if (breadcrumbId != null) {
           final patch = await _ContentResolver.getBreadcrumbPatch(breadcrumbId);
           if (patch != null) {
+            final target = patch['target'] as String;
+            final value = patch['value'];
+            final uses = patch['uses'] as int?;
             ref.read(viewOverrideProvider.notifier).set(
-              patch['target'] as String,
-              patch['value'],
-              remainingUses: patch['uses'] as int?,
+              target, value, remainingUses: uses,
             );
+            await IntegrityService.persistOverride(target, value, uses);
           }
         }
         break;
@@ -396,13 +462,11 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
       case 'navigation_request':
         final screen = response.data['screen'] as String?;
         if (screen != null && IntegrityService.diagnosticsEnabled) {
-          debugPrint('[Integrity] Navigation request: $screen');
         }
         break;
 
       default:
         if (IntegrityService.diagnosticsEnabled) {
-          debugPrint('[Integrity] Unknown response type: ${response.type}');
         }
     }
   }
@@ -421,9 +485,5 @@ void _applyViewAdjustment(WidgetRef ref, Map<String, dynamic> data) {
           data['value'],
           remainingUses: data['uses'] as int?,
         );
-  }
-
-  if (IntegrityService.diagnosticsEnabled) {
-    debugPrint('[Integrity] Applied view adjustment: $id');
   }
 }

@@ -57,6 +57,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     WidgetsBinding.instance.addObserver(this);
     // Initialize deep links and check for updates after first frame
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      processIntegrityResponses(ref);
       ref.read(deepLinkServiceProvider).initialize(context);
       _checkForUpdatesOnLaunch();
       _performBackgroundSync();

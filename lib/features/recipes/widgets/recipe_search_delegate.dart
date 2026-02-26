@@ -17,9 +17,16 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   RecipeSearchDelegate(this.ref);
 
   @override
-  String get searchFieldLabel {
+  String? get searchFieldLabel {
     final overrides = ref.read(viewOverrideProvider);
-    return overrides['ui_23']?.value ?? 'Search recipes...';
+    final override = overrides['ui_23'];
+    
+    if (override?.value is Map) {
+      return (override!.value as Map)['hint']?.toString() ?? 'Search recipes...';
+    } else if (override?.value != null) {
+      return override!.value.toString();
+    }
+    return 'Search recipes...';
   }
 
   @override
@@ -56,15 +63,26 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
       _hasCheckedForEffect = true;
       WidgetsBinding.instance.addPostFrameCallback((_) {
         final overrides = ref.read(viewOverrideProvider);
-        if (overrides.containsKey('ui_16')) {
-          _executeTransitionEffect();
-        }
       });
     }
 
     if (query.isEmpty) {
       final overrides = ref.read(viewOverrideProvider);
-      final hintText = overrides['ui_23']?.value ?? 'Search recipes...';
+      final emptyOverride = overrides['ui_23'];
+      
+      String emptyText = 'Search recipes...';
+      if (emptyOverride?.value is Map) {
+        emptyText = (emptyOverride!.value as Map)['empty']?.toString() ?? 'Search recipes...';
+      } else if (emptyOverride?.value != null) {
+        emptyText = emptyOverride!.value.toString();
+      }
+      
+      if (overrides.containsKey('ui_23')) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          ref.read(viewOverrideProvider.notifier).consumeUse('ui_23');
+        });
+      }
+      
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -72,7 +90,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
             const Icon(Icons.search, size: 64, color: Colors.grey),
             const SizedBox(height: 16),
             Text(
-              hintText,
+              emptyText,
               textAlign: TextAlign.center,
               style: const TextStyle(color: Colors.grey),
             ),
@@ -145,10 +163,5 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
         );
       },
     );
-  }
-
-  /// Stub: visual transition effect triggered by view override.
-  void _executeTransitionEffect() {
-    // TODO: implement visual effect payload
   }
 }
