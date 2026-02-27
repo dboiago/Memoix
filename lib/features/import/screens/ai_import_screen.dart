@@ -426,7 +426,10 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
     setState(() {
       _isProcessing = true;
       _errorMessage = null;
-        _rawError = null;
+      _rawError = null;
+    });
+
+    final service = ref.read(aiServiceProvider);
     final response = await service.sendMessage(
       AiRequest(text: text, imageBytes: imageBytes),
     );
