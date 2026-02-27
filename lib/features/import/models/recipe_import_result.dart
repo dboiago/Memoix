@@ -170,34 +170,77 @@ class RecipeImportResult {
   }
 
   factory RecipeImportResult.fromAi(Map<String, dynamic> data) {
-    // Parse ingredients from AI response
+    // ── Ingredients ──────────────────────────────────────────────────────────
+    // Parse structured objects first; fall back gracefully to plain strings so
+    // a model that ignores the schema still produces usable results.
     final ingredients = <Ingredient>[];
-    if (data['ingredients'] != null) {
-      final ingredientsList = data['ingredients'] as List<dynamic>?;
-      if (ingredientsList != null) {
-        for (final item in ingredientsList) {
-          if (item is Map<String, dynamic>) {
-            ingredients.add(Ingredient.create(
-              name: item['name'] as String? ?? '',
-              amount: item['amount'] as String?,
-              unit: item['unit'] as String?,
-              preparation: item['preparation'] as String?,
-              section: item['section'] as String?,
-            ));
-          }
+    final rawIngredients = <RawIngredientData>[];
+
+    final ingredientsList = data['ingredients'] as List<dynamic>?;
+    if (ingredientsList != null) {
+      for (final item in ingredientsList) {
+        if (item is Map<String, dynamic>) {
+          // Preferred: structured object matching the schema
+          final name = (item['name'] as String? ?? '').trim();
+          if (name.isEmpty) continue;
+          final amount = item['amount'] as String?;
+          final unit = item['unit'] as String?;
+          final preparation = item['preparation'] as String?;
+          final section = item['section'] as String?;
+
+          ingredients.add(Ingredient.create(
+            name: name,
+            amount: amount,
+            unit: unit,
+            preparation: preparation,
+            section: section,
+          ));
+          rawIngredients.add(RawIngredientData(
+            original: [amount, unit, name, preparation]
+                .where((s) => s != null && s!.isNotEmpty)
+                .join(' '),
+            name: name,
+            amount: amount,
+            unit: unit,
+            preparation: preparation,
+            sectionName: section,
+          ));
+        } else if (item != null) {
+          // Fallback: AI returned a plain string — treat entire string as name
+          final raw = item.toString().trim();
+          if (raw.isEmpty) continue;
+          ingredients.add(Ingredient.create(name: raw));
+          rawIngredients.add(RawIngredientData(original: raw, name: raw));
         }
       }
     }
 
-    // Parse directions
-    final directions = <String>[];
-    if (data['directions'] != null) {
-      final directionsList = data['directions'] as List<dynamic>?;
-      if (directionsList != null) {
-        directions.addAll(
-          directionsList.map((d) => d.toString()).where((d) => d.isNotEmpty),
-        );
+    // Add a section-header sentinel before the first ingredient that carries a
+    // section so the review screen groups them correctly.
+    final rawIngredientsWithSections = <RawIngredientData>[];
+    String? lastSection;
+    for (final r in rawIngredients) {
+      if (r.sectionName != null && r.sectionName != lastSection) {
+        rawIngredientsWithSections.add(RawIngredientData(
+          original: r.sectionName!,
+          name: '',
+          sectionName: r.sectionName,
+          isSection: true,
+        ));
+        lastSection = r.sectionName;
       }
+      rawIngredientsWithSections.add(r);
+    }
+
+    // ── Directions ───────────────────────────────────────────────────────────
+    final directions = <String>[];
+    final directionsList = data['directions'] as List<dynamic>?;
+    if (directionsList != null) {
+      directions.addAll(
+        directionsList
+            .map((d) => d.toString().trim())
+            .where((d) => d.isNotEmpty),
+      );
     }
 
     return RecipeImportResult(
@@ -209,6 +252,9 @@ class RecipeImportResult {
       time: data['time'] as String?,
       ingredients: ingredients,
       directions: directions,
+      // Bridge to the review-screen checklist fields
+      rawIngredients: rawIngredientsWithSections,
+      rawDirections: directions,
       comments: data['comments'] as String?,
       imageUrl: data['imageUrl'] as String?,
       equipment: (data['equipment'] as List<dynamic>?)

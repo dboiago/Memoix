@@ -117,7 +117,7 @@ class AiRecipeImporter {
   }
 
   static String buildSystemPrompt() {
-    return '''
+    return r'''
 You are extracting structured recipe data from OCR text or images.
 
 Your goal is accuracy, not completeness.
@@ -125,36 +125,58 @@ Your goal is accuracy, not completeness.
 Rules:
 - Do NOT invent ingredients, quantities, or steps.
 - Preserve original wording whenever possible.
-- If information is unclear, omit it or mark it as uncertain.
+- If information is unclear, omit it — do not guess.
 - Never merge multiple recipes into one.
 
 Layout handling:
 - Images may contain multiple columns, pages, or non-linear layouts.
 - You may reorder text mentally to reconstruct the recipe.
 - Do not assume left-to-right, top-to-bottom order.
+- Sidebar notes, drink pairings, and serving suggestions are NOT directions.
 
 Multi-recipe handling:
-- If more than one recipe is detected:
-  - Identify each recipe internally.
-  - Select the most complete recipe as the primary result.
-  - Reduce overall confidence.
-  - Preserve all original text in rawText.
-  - Do not mention discarded recipes unless asked.
+- If more than one recipe is detected, select the most complete recipe as
+  the primary result and reduce overall confidence.
 
-Output requirements:
-- Title
-- Ingredients (structured if possible, raw otherwise)
-- Instructions
-- Optional metadata (time, servings)
-- Per-field confidence scores (0.0–1.0)
-- Overall confidence score
+Output ONLY valid JSON matching EXACTLY this schema — no extra keys, no
+renamed keys, no markdown fences:
 
-Formatting rules:
-- Ingredients must remain separate entries.
-- Instructions must preserve original order.
-- Do not guess missing quantities.
+{
+  "name": "<recipe title as a string>",
+  "course": "<one of: Mains | Desserts | Baking | Brunch | Sides | Salads | Soups | Drinks | Sandwiches | Smoking | Pizzas | Modernist | Cheese | Cellar | Snacks>",
+  "cuisine": "<country or region, or null>",
+  "serves": "<serving size as a string, e.g. \"4\" or \"Makes 12\", or null>",
+  "time": "<total time as a string, e.g. \"1 hr 15 mins\", or null>",
+  "ingredients": [
+    {
+      "name": "<ingredient name>",
+      "amount": "<numeric quantity as a string, e.g. \"250\" or \"1½\", or null>",
+      "unit": "<unit of measurement, e.g. \"g\" or \"cup\", or null>",
+      "preparation": "<prep note, e.g. \"peeled and crushed\", or null>",
+      "section": "<ingredient group heading if present, e.g. \"For the sauce\", or null>"
+    }
+  ],
+  "directions": [
+    "<step 1 as a plain string>",
+    "<step 2 as a plain string>"
+  ],
+  "comments": "<chef notes, serving suggestions, drink pairings — everything that is NOT an ingredient or direction — or null>",
+  "nameConfidence": <0.0–1.0>,
+  "courseConfidence": <0.0–1.0>,
+  "cuisineConfidence": <0.0–1.0>,
+  "ingredientsConfidence": <0.0–1.0>,
+  "directionsConfidence": <0.0–1.0>,
+  "servesConfidence": <0.0–1.0>,
+  "timeConfidence": <0.0–1.0>
+}
 
-Output ONLY valid JSON.
+Confidence scoring:
+- 1.0 = clearly present and unambiguous
+- 0.7 = present but slightly uncertain
+- 0.4 = partially extracted or guessed
+- 0.0 = not found
+
+Do not include any text outside the JSON object.
 ''';
   }
 }
