@@ -5,9 +5,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 import 'package:http/http.dart' as http;
-
-/// Maximum response body size (10 MB per AGENTS.md).
-const _maxResponseBytes = 10 * 1024 * 1024;
+import 'ai_http_utils.dart';
 
 class GeminiClient {
   final String apiKey;
@@ -66,30 +64,12 @@ class GeminiClient {
       });
 
       final streamed = await client.send(request);
-      final bodyBytes = await _readWithLimit(streamed);
-      final body = utf8.decode(bodyBytes);
-
-      if (streamed.statusCode != 200) {
-        throw Exception('Gemini error (${streamed.statusCode}): $body');
-      }
-
+      final body = await readAiResponse(streamed, 'Gemini');
       final decoded = jsonDecode(body);
       return jsonDecode(
           decoded['candidates'][0]['content']['parts'][0]['text']);
     } finally {
       client.close();
     }
-  }
-
-  Future<List<int>> _readWithLimit(http.StreamedResponse response) async {
-    final buffer = <int>[];
-    await for (final chunk in response.stream) {
-      buffer.addAll(chunk);
-      if (buffer.length > _maxResponseBytes) {
-        throw Exception(
-            'Response exceeded ${_maxResponseBytes ~/ (1024 * 1024)} MB limit');
-      }
-    }
-    return buffer;
   }
 }

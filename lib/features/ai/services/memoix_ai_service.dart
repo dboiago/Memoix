@@ -170,7 +170,25 @@ class MemoixAiService implements AiService {
         AiErrorType.invalidToken,
       );
     }
-    if (msg.contains('429') || msg.contains('rate')) {
+    // 400 can indicate an invalid API key (Gemini: API_KEY_INVALID),
+    // an unsupported model, or a malformed request body.
+    if (msg.contains('400') ||
+        msg.contains('api_key_invalid') ||
+        msg.contains('invalid_argument')) {
+      return AiResponse.error(
+        'Request rejected by ${_providerLabel(provider)} (400). '
+        'Your API key may be invalid or the model may not support this '
+        'request type. Check your key in Settings → Agents.',
+        AiErrorType.invalidToken,
+      );
+    }
+    // Use specific terms to avoid false-positives — the word "generate"
+    // (as in "GenerateContent") contains the substring "rate" and would
+    // mis-fire here if we used msg.contains('rate').
+    if (msg.contains('429') ||
+        msg.contains('resource_exhausted') ||
+        msg.contains('rate_limit') ||
+        msg.contains('quota')) {
       return AiResponse.error(
         'Rate limit exceeded. Wait a moment and try again.',
         AiErrorType.rateLimited,
