@@ -5,7 +5,7 @@
 /// and ClaudeClient.
 
 import 'dart:convert';
-import 'dart:developer' as dev;
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 /// Maximum AI response body size (10 MB, per AGENTS.md security rules).
@@ -38,11 +38,7 @@ Future<String> readAiResponse(
   final body = utf8.decode(buffer);
 
   if (response.statusCode != 200) {
-    dev.log(
-      '$provider HTTP ${response.statusCode}\n$body',
-      name: 'AiClient',
-      level: 900, // WARNING
-    );
+    debugPrint('[AiClient] $provider HTTP ${response.statusCode}\n$body');
     throw Exception('$provider error (${response.statusCode}): $body');
   }
 
