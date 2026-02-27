@@ -46,7 +46,8 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   final _scrollController = ScrollController();
   final _imagePicker = ImagePicker();
   bool _isProcessing = false;
-  String? _errorMessage;
+  String? _errorMessage;  // Friendly message shown to the user
+  String? _rawError;      // Full technical detail used by the copy button
 
   @override
   void dispose() {
@@ -297,8 +298,8 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
                   GestureDetector(
                     onTap: () {
                       Clipboard.setData(
-                          ClipboardData(text: _errorMessage!));
-                      MemoixSnackBar.show('Error copied to clipboard');
+                          ClipboardData(text: _rawError ?? _errorMessage!));
+                      MemoixSnackBar.show('Error details copied to clipboard');
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(4),
@@ -332,7 +333,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
       return;
     }
 
-    setState(() => _errorMessage = null);
+    setState(() { _errorMessage = null; _rawError = null; });
 
     try {
       // Step 1: Pick image
@@ -353,7 +354,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
       await _sendToAi(imageBytes: imageBytes);
     } catch (e) {
       if (mounted) {
-        setState(() => _errorMessage = 'Failed to process image: $e');
+        setState(() { _errorMessage = 'Failed to process image. Tap the copy icon for details.'; _rawError = e.toString(); });
         _scrollToError();
       }
     }
@@ -425,9 +426,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
     setState(() {
       _isProcessing = true;
       _errorMessage = null;
-    });
-
-    final service = ref.read(aiServiceProvider);
+        _rawError = null;
     final response = await service.sendMessage(
       AiRequest(text: text, imageBytes: imageBytes),
     );
@@ -472,6 +471,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   void _handleError(AiResponse response) {
     setState(() {
       _errorMessage = response.errorMessage ?? 'Something went wrong';
+      _rawError = response.rawError;
     });
     _scrollToError();
   }

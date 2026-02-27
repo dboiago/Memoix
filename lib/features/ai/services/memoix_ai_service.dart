@@ -148,26 +148,34 @@ class MemoixAiService implements AiService {
 
   /// Turn an opaque [Exception] from a client into a typed [AiResponse].
   AiResponse _classifyError(Exception e, AiProvider provider) {
-    final msg = e.toString().toLowerCase();
+    final raw = e.toString();
+    final msg = raw.toLowerCase();
+    final label = _providerLabel(provider);
+    // The raw string to hand to the copy button—strips the Dart "Exception: " prefix.
+    final rawForClipboard = raw.replaceFirst('Exception: ', '');
+
     if (msg.contains('404') || msg.contains('not found') || msg.contains('does not exist')) {
       return AiResponse.error(
-        'Model not available for your ${_providerLabel(provider)} key. '
+        'Model not available for your $label key. '
         'Choose a different model in Settings → Agents.',
         AiErrorType.invalidToken,
+        rawError: rawForClipboard,
       );
     }
     if (msg.contains('401') || msg.contains('unauthorized')) {
       return AiResponse.error(
-        'Invalid API key for ${_providerLabel(provider)}. '
+        'Invalid API key for $label. '
         'Check or replace it in Settings → Agents.',
         AiErrorType.invalidToken,
+        rawError: rawForClipboard,
       );
     }
     if (msg.contains('403') || msg.contains('forbidden')) {
       return AiResponse.error(
-        'Access denied by ${_providerLabel(provider)}. '
+        'Access denied by $label. '
         'Your key may lack the required permissions.',
         AiErrorType.invalidToken,
+        rawError: rawForClipboard,
       );
     }
     // 400 can indicate an invalid API key (Gemini: API_KEY_INVALID),
@@ -176,10 +184,11 @@ class MemoixAiService implements AiService {
         msg.contains('api_key_invalid') ||
         msg.contains('invalid_argument')) {
       return AiResponse.error(
-        'Request rejected by ${_providerLabel(provider)} (400). '
+        'Request rejected by $label (400). '
         'Your API key may be invalid or the model may not support this '
         'request type. Check your key in Settings → Agents.',
         AiErrorType.invalidToken,
+        rawError: rawForClipboard,
       );
     }
     // Use specific terms to avoid false-positives — the word "generate"
@@ -190,20 +199,64 @@ class MemoixAiService implements AiService {
         msg.contains('rate_limit') ||
         msg.contains('quota')) {
       return AiResponse.error(
-        'Rate limit exceeded. Wait a moment and try again.',
+        '$label is rate-limited. Wait a moment and try again.',
         AiErrorType.rateLimited,
+        rawError: rawForClipboard,
+      );
+    }
+    if (msg.contains('503') ||
+        msg.contains('unavailable') ||
+        msg.contains('overloaded')) {
+      final apiMsg = _extractApiMessage(raw);
+      return AiResponse.error(
+        apiMsg != null
+            ? '$label (503): $apiMsg'
+            : '$label is temporarily unavailable. Try again in a moment.',
+        AiErrorType.unknown,
+        rawError: rawForClipboard,
       );
     }
     if (msg.contains('formatexception') || msg.contains('unexpected')) {
       return AiResponse.error(
         'The AI returned an unreadable response. Try again.',
         AiErrorType.malformedResponse,
+        rawError: rawForClipboard,
       );
     }
+    // Generic fallback: try to surface the API's own message rather than
+    // dumping raw JSON at the user.
+    final apiMsg = _extractApiMessage(raw);
+    final statusMatch = RegExp(r'\((\d{3})\)').firstMatch(raw);
+    final status = statusMatch?.group(1);
     return AiResponse.error(
-      'Something went wrong: ${e.toString().replaceAll('Exception: ', '')}',
+      apiMsg != null
+          ? '$label error${status != null ? ' ($status)' : ''}: $apiMsg'
+          : 'Unexpected error from $label. Tap the copy icon for details.',
       AiErrorType.unknown,
+      rawError: rawForClipboard,
     );
+  }
+
+  /// Extract the human-readable message from a raw API error body.
+  ///
+  /// Handles the JSON shapes used by Gemini, OpenAI, and Claude—all of which
+  /// nest the user-facing message under `error.message`.
+  /// Returns `null` if the body cannot be parsed.
+  static String? _extractApiMessage(String exceptionStr) {
+    final jsonStart = exceptionStr.indexOf('{');
+    if (jsonStart == -1) return null;
+    try {
+      final decoded =
+          jsonDecode(exceptionStr.substring(jsonStart)) as Map<String, dynamic>;
+      final error = decoded['error'];
+      if (error is Map) {
+        final message = error['message'] as String?;
+        if (message != null && message.trim().isNotEmpty) return message.trim();
+      }
+      return null;
+    } catch (_) {
+      return null;
+    }
   }
 
   static String _providerLabel(AiProvider p) {

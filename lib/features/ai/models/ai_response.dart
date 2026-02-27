@@ -14,10 +14,15 @@ class AiResponse {
 
   const AiResponse.success(this.data)
       : errorMessage = null,
-        errorType = null;
+        errorType = null,
+        rawError = null;
 
-  const AiResponse.error(this.errorMessage, this.errorType)
+  const AiResponse.error(this.errorMessage, this.errorType, {this.rawError})
       : data = null;
+
+  /// Full technical error text (raw API JSON) for clipboard copy.
+  /// Only present on error responses where a parseable body was available.
+  final String? rawError;
 
   bool get isSuccess => data != null && errorType == null;
 }
