@@ -2,6 +2,8 @@ import '../../modernist/models/modernist_recipe.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../recipes/models/recipe.dart';
 import '../../smoking/models/smoking_recipe.dart';
+import '../../../core/utils/text_normalizer.dart';
+import '../../../core/utils/unit_normalizer.dart';
 
 /// Result of importing a recipe from URL or OCR
 /// Contains both parsed data and raw extracted data for user review
@@ -181,12 +183,23 @@ class RecipeImportResult {
       for (final item in ingredientsList) {
         if (item is Map<String, dynamic>) {
           // Preferred: structured object matching the schema
-          final name = (item['name'] as String? ?? '').trim();
-          if (name.isEmpty) continue;
-          final amount = item['amount'] as String?;
-          final unit = item['unit'] as String?;
+          final rawName = (item['name'] as String? ?? '').trim();
+          if (rawName.isEmpty) continue;
+          final rawAmount = item['amount'] as String?;
+          final rawUnit = item['unit'] as String?;
           final preparation = item['preparation'] as String?;
           final section = item['section'] as String?;
+          final rawAlt = item['alternative'] as String?;
+
+          // Apply normalizers per AGENTS.md: all imports MUST pass through normalizers
+          final name = TextNormalizer.cleanName(rawName);
+          final amount = TextNormalizer.normalizeFractions(rawAmount);
+          final unit = rawUnit != null && rawUnit.isNotEmpty
+              ? UnitNormalizer.normalize(rawUnit)
+              : null;
+          final alternative = rawAlt != null && rawAlt.trim().isNotEmpty
+              ? TextNormalizer.cleanName(rawAlt.trim())
+              : null;
 
           ingredients.add(Ingredient.create(
             name: name,
@@ -194,6 +207,7 @@ class RecipeImportResult {
             unit: unit,
             preparation: preparation,
             section: section,
+            alternative: alternative,
           ));
           rawIngredients.add(RawIngredientData(
             original: [amount, unit, name, preparation]
@@ -203,14 +217,32 @@ class RecipeImportResult {
             amount: amount,
             unit: unit,
             preparation: preparation,
+            alternative: alternative,
             sectionName: section,
           ));
         } else if (item != null) {
-          // Fallback: AI returned a plain string — treat entire string as name
+          // Fallback: AI returned a plain string — parse 'X or Y' alternatives
           final raw = item.toString().trim();
           if (raw.isEmpty) continue;
-          ingredients.add(Ingredient.create(name: raw));
-          rawIngredients.add(RawIngredientData(original: raw, name: raw));
+          final orMatch = RegExp(r'\s+\bor\b\s+(.+)$', caseSensitive: false)
+              .firstMatch(raw);
+          final altRaw = orMatch?.group(1)?.trim();
+          final namePart = orMatch != null
+              ? raw.substring(0, orMatch.start).trim()
+              : raw;
+          final normalizedName = TextNormalizer.cleanName(namePart);
+          final normalizedAlt = altRaw != null && altRaw.isNotEmpty
+              ? TextNormalizer.cleanName(altRaw)
+              : null;
+          ingredients.add(Ingredient.create(
+            name: normalizedName,
+            alternative: normalizedAlt,
+          ));
+          rawIngredients.add(RawIngredientData(
+            original: raw,
+            name: normalizedName,
+            alternative: normalizedAlt,
+          ));
         }
       }
     }

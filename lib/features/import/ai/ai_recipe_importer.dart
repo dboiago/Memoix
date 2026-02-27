@@ -138,6 +138,11 @@ Multi-recipe handling:
 - If more than one recipe is detected, select the most complete recipe as
   the primary result and reduce overall confidence.
 
+Alternative ingredients:
+- When an ingredient lists an alternative (e.g. "green beans or celery",
+  "butter or margarine"), put the PRIMARY ingredient in "name" and the
+  substitute in "alternative". Do not include the word "or" in either field.
+
 Output ONLY valid JSON matching EXACTLY this schema — no extra keys, no
 renamed keys, no markdown fences:
 
@@ -149,10 +154,11 @@ renamed keys, no markdown fences:
   "time": "<total time as a string, e.g. \"1 hr 15 mins\", or null>",
   "ingredients": [
     {
-      "name": "<ingredient name>",
+      "name": "<primary ingredient name>",
       "amount": "<numeric quantity as a string, e.g. \"250\" or \"1½\", or null>",
       "unit": "<unit of measurement, e.g. \"g\" or \"cup\", or null>",
       "preparation": "<prep note, e.g. \"peeled and crushed\", or null>",
+      "alternative": "<substitute ingredient name only, e.g. \"celery\", or null>",
       "section": "<ingredient group heading if present, e.g. \"For the sauce\", or null>"
     }
   ],
@@ -160,7 +166,10 @@ renamed keys, no markdown fences:
     "<step 1 as a plain string>",
     "<step 2 as a plain string>"
   ],
-  "comments": "<chef notes, serving suggestions, drink pairings — everything that is NOT an ingredient or direction — or null>",
+  "comments": "<chef notes, serving suggestions — everything that is NOT an ingredient or direction — or null>",
+  "glass": "<glass type for drink recipes, e.g. \"Highball\", \"Rocks\", \"Coupe\", or null>",
+  "garnish": ["<garnish item 1>", "<garnish item 2>"],
+  "equipment": ["<special equipment required, e.g. \"Immersion circulator\", \"Vacuum sealer\">"],
   "nameConfidence": <0.0–1.0>,
   "courseConfidence": <0.0–1.0>,
   "cuisineConfidence": <0.0–1.0>,
