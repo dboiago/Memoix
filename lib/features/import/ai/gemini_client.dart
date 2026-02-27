@@ -11,7 +11,7 @@ class GeminiClient {
   final String apiKey;
   final String model;
 
-  GeminiClient(this.apiKey, {this.model = 'gemini-2.0-flash'});
+  GeminiClient(this.apiKey, {this.model = 'gemini-2.5-flash-lite'});
 
   Future<Map<String, dynamic>> analyzeRecipe({
     required String systemPrompt,
