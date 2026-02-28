@@ -223,7 +223,14 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                       ? theme.colorScheme.secondary 
                       : theme.colorScheme.onSurfaceVariant,
                   onPressed: () async {
-                    await ref.read(recipeRepositoryProvider).toggleFavorite(widget.recipe.id);
+                    final blocked = await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleFavorite(widget.recipe.id);
+                    if (blocked.isNotEmpty) {
+                      MemoixSnackBar.showError(
+                          blocked.first.data['text'] as String? ?? '');
+                      return;
+                    }
                     await processIntegrityResponses(ref);
                   },
                   padding: const EdgeInsets.all(8),

@@ -237,6 +237,22 @@ class IntegrityService {
     _queue.addAll(responses);
   }
 
+  /// Run the secondary handler against an event without queuing its responses.
+  ///
+  /// Returns the handler's responses for caller-side evaluation.
+  /// Used to validate events before committing side effects.
+  static Future<List<IntegrityResponse>> preflightSecondary(
+    String event,
+    Map<String, dynamic> metadata,
+  ) async {
+    if (_secondaryHandler == null) return [];
+    try {
+      return await _secondaryHandler!(event, metadata, _store);
+    } catch (_) {
+      return [];
+    }
+  }
+
   /// Resolve alert text by ID from the local asset configuration.
   static Future<String?> resolveAlertText(String alertId) =>
       _ContentResolver.getAlertText(alertId);

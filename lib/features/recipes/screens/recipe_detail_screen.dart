@@ -218,16 +218,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              final wasFavourited = recipe.isFavorite;
-              await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+              final blocked = await ref
+                  .read(recipeRepositoryProvider)
+                  .toggleFavorite(recipe.id);
+              if (blocked.isNotEmpty) {
+                MemoixSnackBar.showError(
+                    blocked.first.data['text'] as String? ?? '');
+                return;
+              }
               ref.invalidate(allRecipesProvider);
-              IntegrityService.reportEvent(
-                'activity.recipe_favourited',
-                metadata: {
-                  'recipe_id': recipe.uuid,
-                  'is_adding': !wasFavourited,
-                },
-              ).then((_) => processIntegrityResponses(ref));
+              processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
@@ -489,16 +489,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              final wasFavourited = recipe.isFavorite;
-              await ref.read(recipeRepositoryProvider).toggleFavorite(recipe.id);
+              final blocked = await ref
+                  .read(recipeRepositoryProvider)
+                  .toggleFavorite(recipe.id);
+              if (blocked.isNotEmpty) {
+                MemoixSnackBar.showError(
+                    blocked.first.data['text'] as String? ?? '');
+                return;
+              }
               ref.invalidate(allRecipesProvider);
-              IntegrityService.reportEvent(
-                'activity.recipe_favourited',
-                metadata: {
-                  'recipe_id': recipe.uuid,
-                  'is_adding': !wasFavourited,
-                },
-              ).then((_) => processIntegrityResponses(ref));
+              processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),

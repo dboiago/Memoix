@@ -184,12 +184,31 @@ class RecipeRepository {
     return results;
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(int id) async {
+  /// Toggle favorite status.
+  ///
+  /// Returns an empty list on success. Returns a non-empty list of blocking
+  /// responses when the action is rejected — callers should display the
+  /// message and not proceed with any post-toggle UI update.
+  Future<List<IntegrityResponse>> toggleFavorite(int id) async {
     // Read state before transaction to capture pre-toggle value
     final existing = await _db.recipes.get(id);
-    if (existing == null) return;
+    if (existing == null) return [];
     final wasFavorited = existing.isFavorite;
+
+    // Validate content requirements before persisting a new favourite.
+    if (!wasFavorited) {
+      final preflight = await IntegrityService.preflightSecondary(
+        'activity.recipe_favourite',
+        {
+          'recipe_id': existing.uuid,
+          'content_validated': existing.ingredients.isNotEmpty,
+          'structure_verified': existing.directions.isNotEmpty,
+        },
+      );
+      final blocking =
+          preflight.where((r) => r.type == 'system_message').toList();
+      if (blocking.isNotEmpty) return blocking;
+    }
 
     await _db.writeTxn(() async {
       final recipe = await _db.recipes.get(id);
@@ -202,7 +221,7 @@ class RecipeRepository {
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
-    // Report favorite toggle
+    // Report completed toggle for the calibration pass.
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
@@ -210,6 +229,8 @@ class RecipeRepository {
         'is_adding': !wasFavorited,
       },
     );
+
+    return [];
   }
 
   /// Watch all recipes (stream)
