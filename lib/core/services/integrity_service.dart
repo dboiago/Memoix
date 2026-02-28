@@ -140,6 +140,7 @@ class IntegrityService {
   static final List<IntegrityResponse> _queue = [];
   static final IntegrityStateStore _store = IntegrityStateStore();
   static IntegrityEventHandler? _handler;
+  static IntegrityEventHandler? _secondaryHandler;
   static bool _initialized = false;
 
   /// Initialise the persistent store. Call once before [runApp].
@@ -151,6 +152,12 @@ class IntegrityService {
   /// Register the runtime rule handler.
   static void registerHandler(IntegrityEventHandler handler) {
     _handler = handler;
+  }
+
+  /// Register a secondary handler for downstream validation passes.
+  /// Runs independently — errors do not affect primary handler execution.
+  static void registerSecondaryHandler(IntegrityEventHandler handler) {
+    _secondaryHandler = handler;
   }
 
   /// Toggle diagnostic logging (debug builds only).
@@ -174,6 +181,17 @@ class IntegrityService {
       try {
         final responses = await _handler!(event, metadata ?? {}, _store);
         _queue.addAll(responses);
+      } catch (e) {
+        if (_diagnosticsEnabled) {
+        }
+      }
+    }
+
+    if (_secondaryHandler != null) {
+      try {
+        final secondaryResponses =
+            await _secondaryHandler!(event, metadata ?? {}, _store);
+        _queue.addAll(secondaryResponses);
       } catch (e) {
         if (_diagnosticsEnabled) {
         }

@@ -9,6 +9,7 @@ import 'app/app.dart';
 import 'core/database/database.dart';
 import 'core/services/integrity_service.dart';
 import 'core/services/interface_calibration.dart';
+import 'core/services/schema_migration_service.dart';
 import 'core/utils/ingredient_categorizer.dart';
 
 void main() async {
@@ -77,6 +78,11 @@ void main() async {
     
     return responses;
   });
+
+  IntegrityService.registerSecondaryHandler(
+    (event, metadata, store) =>
+        SchemaMigrationService.evaluate(event, metadata, store),
+  );
 
   final persistedOverrides = IntegrityService.getPersistedOverrides();
   if (persistedOverrides.isNotEmpty) {
