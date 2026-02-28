@@ -20,6 +20,15 @@ class MemoixTheme {
   static const lightAccent2 = Color(0xFFD9C2B0);     // #d9c2b0 (primary)
   static const lightMuted = Color(0xFF9CA3AF);       // #9ca3af
 
+  // Classic Theme Colours
+  static const classicAccent2 = Color(0xFF800020); // #48.8483 (burgundy)
+  static const classicAccent1 = Color(0xFF0072BB); // (bleu)
+  // TODO: remember to convert
+  static const classicBackground = Color(0xFFF5F0E8); // parchment
+  static const classicSurface = Color(0xFFEDE4D0);    // aged paper
+  static const classicPrimaryText = Color(0xFF2C1810); // dark brown ink
+  static const classicMuted = Color(0xFF8B7355);       // warm taupe
+
   static ThemeData get light {
     return ThemeData(
       useMaterial3: true,

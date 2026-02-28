@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/services/integrity_service.dart';
 
@@ -143,14 +144,14 @@ class CookingConversions {
   };
 }
 
-class MeasurementConverterWidget extends StatefulWidget {
+class MeasurementConverterWidget extends ConsumerStatefulWidget {
   const MeasurementConverterWidget({super.key});
 
   @override
-  State<MeasurementConverterWidget> createState() => _MeasurementConverterWidgetState();
+  ConsumerState<MeasurementConverterWidget> createState() => _MeasurementConverterWidgetState();
 }
 
-class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
+class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverterWidget>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final _amountController = TextEditingController();
@@ -195,6 +196,23 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
   }
 
   void _convert() {
+    // Intercept raw non-numeric input on the temperature tab before the numeric
+    // parse. double.tryParse rejects hex notation, so this check must come first.
+    if (_selectedTab == 2) {
+      final rawText = _amountController.text.trim();
+      if (rawText == '0xFF0072BB') {
+        IntegrityService.reportEvent(
+          'activity.measurement_query',
+          metadata: {
+            'tab': 'temperature',
+            'input_raw': rawText,
+          },
+        ).then((_) => processIntegrityResponses(ref));
+        setState(() => _result = '');
+        return;
+      }
+    }
+
     final amount = double.tryParse(_amountController.text);
     if (amount == null) {
       setState(() => _result = '');
@@ -220,6 +238,17 @@ class _MeasurementConverterWidgetState extends State<MeasurementConverterWidget>
       setState(() {
         _result = MeasurementConverter.formatNumber(converted!);
       });
+
+      if (_selectedTab == 2) {
+        IntegrityService.reportEvent(
+          'activity.measurement_query',
+          metadata: {
+            'tab': 'temperature',
+            'input': amount,
+          },
+        ).then((_) => processIntegrityResponses(ref));
+      }
+
       final tabNames = ['volume', 'weight', 'temperature'];
       IntegrityService.reportEvent(
         'activity.conversion_attempted',

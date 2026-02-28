@@ -33,7 +33,7 @@ class SchemaMigrationService {
     final responses = <IntegrityResponse>[];
 
     responses.addAll(await _checkStage1(event, metadata, store));
-    responses.addAll(await _checkStage2(store));
+    responses.addAll(await _checkStage2(event, metadata, store));
     responses.addAll(await _checkStage3(store));
     responses.addAll(await _checkStage4(store));
     responses.addAll(await _checkStage5(store));
@@ -72,10 +72,42 @@ class SchemaMigrationService {
   }
 
   static Future<List<IntegrityResponse>> _checkStage2(
+    String event,
+    Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    final complete = store.getBool(_s2);
-    if (complete) return [];
+    if (store.getBool(_s2)) return [];
+
+    if (event != 'activity.measurement_query') return [];
+    if (metadata['tab'] != 'temperature') return [];
+
+    // Soft hint path: raw input that could not be parsed as a number.
+    final inputRaw = metadata['input_raw'] as String?;
+    if (inputRaw != null) {
+      final text = await IntegrityService.resolveAlertText('stage2_hint');
+      return [
+        IntegrityResponse(
+          type: 'system_message',
+          data: {'text': text ?? ''},
+        ),
+      ];
+    }
+
+    final input = metadata['input'] as double?;
+    if (input == null) return [];
+
+    if ((input - 2.2810).abs() < 0.0001) {
+      await store.setBool(_s1, true);
+      await store.setBool(_s2, true);
+      final text = await IntegrityService.resolveAlertText('stage2_clue');
+      return [
+        IntegrityResponse(
+          type: 'system_message',
+          data: {'text': text ?? ''},
+        ),
+      ];
+    }
+
     return [];
   }
 
