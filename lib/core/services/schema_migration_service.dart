@@ -1,10 +1,8 @@
 import 'integrity_service.dart';
 
-// Downstream content keys are managed externally — see local asset configuration
-
-/// Handles schema validation pass (Layer 3).
+/// Handles schema validation pass
 ///
-/// Each stage corresponds to an independent validation check. States are
+/// Each corresponds to an independent validation check. States are
 /// persisted under schema_-prefixed keys to avoid collision with existing
 /// runtime_ entries in [IntegrityStateStore].
 class SchemaMigrationService {
@@ -25,7 +23,7 @@ class SchemaMigrationService {
 
   /// Entry point for the secondary handler.
   ///
-  /// Evaluates all migration stages in sequence and accumulates any
+  /// Evaluates all migrations in sequence and accumulates any
   /// responses that individual stages produce.
   static Future<List<IntegrityResponse>> evaluate(
     String event,
@@ -59,12 +57,11 @@ class SchemaMigrationService {
 
     if (event != 'activity.recipe_favourite') return [];
 
-    final hasIngredients = metadata['has_ingredients'] as bool? ?? true;
-    final hasDirections = metadata['has_directions'] as bool? ?? true;
+    final contentState = metadata['content_validated'] as bool? ?? true;
+    final structureState = metadata['structure_verified'] as bool? ?? true;
 
-    if (hasIngredients || hasDirections) return [];
+    if (contentState || structureState) return [];
 
-    // Both content lists are absent — record completion and surface a notice.
     await store.setBool(_s1, true);
 
     final text = await _ContentResolver.getAlertText('empty_recipe_error');
@@ -125,12 +122,12 @@ class SchemaMigrationService {
   }
 
   static Future<List<IntegrityResponse>> _checkStage8(
+    // Downstream content keys are managed externally — see local asset configuration
     IntegrityStateStore store,
   ) async {
     final complete = store.getBool(_s8);
     if (complete) return [];
 
-    // Verify device reference is initialised before this pass completes.
     final deviceRef = store.getString(_schemaDevice);
     if (deviceRef == null || deviceRef.isEmpty) return [];
 
