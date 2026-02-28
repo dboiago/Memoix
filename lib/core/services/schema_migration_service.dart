@@ -64,7 +64,7 @@ class SchemaMigrationService {
 
     await store.setBool(_s1, true);
 
-    final text = await _ContentResolver.getAlertText('empty_recipe_error');
+    final text = await IntegrityService.resolveAlertText('empty_recipe_error');
     return [
       IntegrityResponse(
         type: 'system_message',

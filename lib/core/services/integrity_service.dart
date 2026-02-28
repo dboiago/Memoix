@@ -236,6 +236,10 @@ class IntegrityService {
   static void enqueueStartupArtifacts(List<IntegrityResponse> responses) {
     _queue.addAll(responses);
   }
+
+  /// Resolve alert text by ID from the local asset configuration.
+  static Future<String?> resolveAlertText(String alertId) =>
+      _ContentResolver.getAlertText(alertId);
 }
 
 // ---------------------------------------------------------------------------
