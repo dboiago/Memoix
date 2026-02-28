@@ -53,16 +53,14 @@ class SchemaMigrationService {
     Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    if (store.getBool(_s1)) return [];
+    if (store.getBool(_s2)) return []
 
     if (event != 'activity.recipe_favourite') return [];
 
-    final contentState = metadata['content_validated'] as bool? ?? true;
-    final structureState = metadata['structure_verified'] as bool? ?? true;
+    final refCount = metadata['ref_count'] as int? ?? 1;
+    final nodeCount = metadata['node_count'] as int? ?? 1;
 
-    if (contentState || structureState) return [];
-
-    await store.setBool(_s1, true);
+    if (refCount > 0 || nodeCount > 0) return [];
 
     final text = await IntegrityService.resolveAlertText('empty_recipe_error');
     return [
