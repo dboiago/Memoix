@@ -112,22 +112,30 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
             IntegrityService.store.getBool('cfg_locale_pass');
 
         if (isReservationQuery) {
-          return FutureBuilder<Map<String, dynamic>?>(
-        future: ReservationService.getGuestEntry(),
+          return FutureBuilder<(Map<String, dynamic>?, String?, String, String)>(
+        future: () async {
+          final entry = await ReservationService.getGuestEntry();
+          final template = await IntegrityService.resolveAlertText('service_template_idx');
+          final table = await IntegrityService.resolveLegacyValue('legacy_table_schema') ?? '';
+          final time = await IntegrityService.resolveLegacyValue('legacy_time_schema') ?? '';
+          return (entry, template, table, time);
+        }(),
         builder: (context, guestSnapshot) {
           if (guestSnapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
           }
 
-          final guestEntry = guestSnapshot.data;
-          if (guestEntry == null) {
+          final guestEntry = guestSnapshot.data?.$1;
+          final template = guestSnapshot.data?.$2;
+          if (guestEntry == null || template == null) {
             return _buildNormalSearch();
           }
 
-          final name = guestEntry['name']?.toString() ?? '';
-          final tableNo = guestEntry['table_no']?.toString() ?? '';
-          final time = guestEntry['time']?.toString() ?? '';
-          final partySize = guestEntry['party_size']?.toString() ?? '';
+          final display = template
+              .replaceAll('{name}', guestEntry['name'] as String? ?? '')
+              .replaceAll('{table}', guestSnapshot.data!.$3)
+              .replaceAll('{time}', guestSnapshot.data!.$4)
+              .replaceAll('{minutes}', guestEntry['party_size']?.toString() ?? '');
           final theme = Theme.of(context);
 
           return FutureBuilder<List<Recipe>>(
@@ -158,7 +166,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                         ),
                       ),
                       child: Text(
-                        "Reservation for '$name' — Table $tableNo, $time. Firing Apps. $partySize minutes out!",
+                        display,
                         style: theme.textTheme.bodyMedium,
                       ),
                     ),

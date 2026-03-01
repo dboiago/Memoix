@@ -134,11 +134,13 @@ class RuntimeCalibrationService {
     // Soft hint path: raw input that could not be parsed as a number.
     final inputRaw = metadata['input_raw'] as String?;
     if (inputRaw != null) {
-      final text = await IntegrityService.resolveAlertText('conversion_fallback');
+      final amount = await DeviceConfiguration.getNumericSeed(digits: 2, offset: 4);
+      final text = (await IntegrityService.resolveAlertText('conversion_fallback') ?? '')
+          .replaceAll('{amount}', amount.toString());
       return [
         IntegrityResponse(
           type: 'system_message',
-          data: {'text': text ?? ''},
+          data: {'text': text},
         ),
       ];
     }
