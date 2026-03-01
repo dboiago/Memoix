@@ -192,8 +192,8 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final durations = _stageDurations ?? {};
     final tipUrl = _tipUrl ?? '';
 
-    const border = '═' * 33;
-    const divider = '─' * 33;
+    final border = '═' * 33;
+    final divider = '─' * 33;
 
     return Scaffold(
       backgroundColor: Colors.white,
