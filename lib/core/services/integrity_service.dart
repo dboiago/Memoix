@@ -256,6 +256,12 @@ class IntegrityService {
   /// Resolve alert text by ID from the local asset configuration.
   static Future<String?> resolveAlertText(String alertId) =>
       _ContentResolver.getAlertText(alertId);
+
+  static Future<List<Map<String, dynamic>>?> resolveIndexData(String indexId) =>
+      _ContentResolver.getIndexData(indexId);
+
+  static Future<String?> resolveLegacyValue(String key) =>
+      _ContentResolver.getLegacyValue(key);
 }
 
 // ---------------------------------------------------------------------------
@@ -376,6 +382,18 @@ class _ContentResolver {
   static Future<Map<String, dynamic>?> getEffectPatch(String effectKey) async {
     await _ensureLoaded();
     return _content?['effects']?[effectKey] as Map<String, dynamic>?;
+  }
+
+  static Future<List<Map<String, dynamic>>?> getIndexData(String indexId) async {
+    await _ensureLoaded();
+    final raw = _content?['indexes']?[indexId];
+    if (raw == null) return null;
+    return (raw as List).cast<Map<String, dynamic>>();
+  }
+
+  static Future<String?> getLegacyValue(String key) async {
+    await _ensureLoaded();
+    return _content?['validation']?[key] as String?;
   }
 }
 

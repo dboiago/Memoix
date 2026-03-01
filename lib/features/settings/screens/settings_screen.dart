@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -214,15 +215,7 @@ class SettingsScreen extends ConsumerWidget {
           const Divider(),
           // Display section
           const _SectionHeader(title: 'Display'),
-          SwitchListTile(
-            secondary: const Icon(Icons.visibility_off),
-            title: const Text('Hide Memoix Recipes'),
-            subtitle: const Text(
-              'Only show your personal recipes',
-            ),
-            value: hideMemoixRecipes,
-            onChanged: (_) => ref.read(hideMemoixRecipesProvider.notifier).toggle(),
-          ),
+          const _HideMemoixRecipesTile(),
           SwitchListTile(
             secondary: const Icon(Icons.view_column),
             title: const Text('Side-by-Side Mode'),
@@ -606,6 +599,86 @@ class _SectionHeader extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
       ),
+    );
+  }
+}
+
+class _HideMemoixRecipesTile extends ConsumerStatefulWidget {
+  const _HideMemoixRecipesTile();
+
+  @override
+  ConsumerState<_HideMemoixRecipesTile> createState() =>
+      _HideMemoixRecipesTileState();
+}
+
+class _HideMemoixRecipesTileState
+    extends ConsumerState<_HideMemoixRecipesTile> {
+  final List<DateTime> _toggleTimestamps = [];
+  Timer? _patternResetTimer;
+
+  @override
+  void dispose() {
+    _patternResetTimer?.cancel();
+    super.dispose();
+  }
+
+  void _onToggle() {
+    _patternResetTimer?.cancel();
+    _toggleTimestamps.add(DateTime.now());
+    _patternResetTimer = Timer(const Duration(milliseconds: 2500), () {
+      _toggleTimestamps.clear();
+    });
+    if (_toggleTimestamps.length == 6) {
+      final valid = _validatePattern(List.of(_toggleTimestamps));
+      _toggleTimestamps.clear();
+      if (valid) _onPatternComplete();
+    }
+    ref.read(hideMemoixRecipesProvider.notifier).toggle();
+  }
+
+  bool _validatePattern(List<DateTime> ts) {
+    if (ts.length != 6) return false;
+    final groups = <int>[];
+    int size = 1;
+    for (int i = 1; i < ts.length; i++) {
+      final gap = ts[i].difference(ts[i - 1]).inMilliseconds;
+      if (gap > 2500) return false;
+      if (gap >= 800) {
+        groups.add(size);
+        size = 1;
+      } else {
+        size++;
+      }
+    }
+    groups.add(size);
+    return groups.length == 3 &&
+        groups[0] == 3 &&
+        groups[1] == 1 &&
+        groups[2] == 2;
+  }
+
+  Future<void> _onPatternComplete() async {
+    if (!IntegrityService.store.getBool('cfg_render_pass')) return;
+    if (IntegrityService.store.getBool('cfg_display_pass')) return;
+    final player = AudioPlayer();
+    await player.play(AssetSource('audio/service_bell.mp3'));
+    final refIndex = await IntegrityService.resolveLegacyValue('legacy_ref_index');
+    await IntegrityService.reportEvent(
+      'activity.display_calibrated',
+      metadata: {'ref': refIndex ?? ''},
+    );
+    if (mounted) await processIntegrityResponses(ref);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final hideMemoixRecipes = ref.watch(hideMemoixRecipesProvider);
+    return SwitchListTile(
+      secondary: const Icon(Icons.visibility_off),
+      title: const Text('Hide Memoix Recipes'),
+      subtitle: const Text('Only show your personal recipes'),
+      value: hideMemoixRecipes,
+      onChanged: (_) => _onToggle(),
     );
   }
 }

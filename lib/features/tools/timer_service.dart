@@ -360,19 +360,28 @@ class TimerService extends StateNotifier<TimerServiceState> {
     _checkPatternCondition();
   }
 
-  /// Check if the specific timer configuration is active and trigger pattern feedback.
-  void _checkPatternCondition() {
+  Future<void> _checkPatternCondition() async {
     if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) return;
+
+    final timerSchema = await IntegrityService.resolveLegacyValue('legacy_timer_schema');
+    if (timerSchema == null) return;
+    final expectedDurations = timerSchema
+        .replaceAll('[', '')
+        .replaceAll(']', '')
+        .split(',')
+        .map((s) => int.tryParse(s.trim()) ?? 0)
+        .toList();
 
     final activeDurations = state.timers
         .where((t) => t.isRunning && !t.isPaused)
         .map((t) => t.duration.inSeconds)
         .toList();
 
-    final conditionMet = activeDurations.length == 3 &&
-        activeDurations[0] == 1020 &&
-        activeDurations[1] == 480 &&
-        activeDurations[2] == 120;
+    final conditionMet = activeDurations.length == expectedDurations.length &&
+        List.generate(
+          expectedDurations.length,
+          (i) => activeDurations[i] == expectedDurations[i],
+        ).every((b) => b);
 
     if (conditionMet && !_isPatternActive) {
       _isPatternActive = true;
@@ -385,13 +394,11 @@ class TimerService extends StateNotifier<TimerServiceState> {
     }
   }
 
-  /// Play the configured alert pattern and schedule repetition.
   void _playAlertPattern() {
     if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) return;
 
     Vibration.vibrate(pattern: _alertPattern);
 
-    // Schedule next loop: pattern duration (7500 ms) + 2 s pause
     _patternLoopTimer = Timer(const Duration(milliseconds: 9500), () {
       if (_isPatternActive) {
         _playAlertPattern();

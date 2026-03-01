@@ -37,7 +37,7 @@ class ReservationLedgerScreen extends StatelessWidget {
 
           final entries = snapshot.data ?? [];
           final hasGuestRef =
-              IntegrityService.store.getString('schema_guest_ref') != null;
+              IntegrityService.store.getString('cfg_session_token') != null;
 
           return SingleChildScrollView(
             scrollDirection: Axis.horizontal,

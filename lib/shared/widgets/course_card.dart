@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../features/recipes/models/course.dart';
 
-/// Course card widget matching Figma design
+/// Course card widget
 /// Shows course icon, name, and recipe count in a card layout
 class CourseCard extends StatefulWidget {
   final Course course;

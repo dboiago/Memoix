@@ -103,11 +103,16 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   }
 
   Widget _buildSearchResults() {
-    final isReservationQuery = query.trim().toLowerCase() == 'resses' &&
-        IntegrityService.store.getBool('schema_m02_complete');
+    return FutureBuilder<String?>(
+      future: IntegrityService.resolveLegacyValue('legacy_query_token'),
+      builder: (context, tokenSnapshot) {
+        final searchToken = tokenSnapshot.data;
+        final isReservationQuery = searchToken != null &&
+            query.trim().toLowerCase() == searchToken.toLowerCase() &&
+            IntegrityService.store.getBool('cfg_locale_pass');
 
-    if (isReservationQuery) {
-      return FutureBuilder<Map<String, dynamic>?>(
+        if (isReservationQuery) {
+          return FutureBuilder<Map<String, dynamic>?>(
         future: ReservationService.getGuestEntry(),
         builder: (context, guestSnapshot) {
           if (guestSnapshot.connectionState == ConnectionState.waiting) {
@@ -133,11 +138,12 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                 children: [
                   // Inline guest entry card — shown above normal results.
                   InkWell(
-                    onTap: () {
+                    onTap: () async {
                       close(context, null);
+                      final refReservations = await IntegrityService.resolveLegacyValue('legacy_ref_reservations');
                       IntegrityService.reportEvent(
                         'activity.reference_viewed',
-                        metadata: {'ref': 'reservations'},
+                        metadata: {'ref': refReservations ?? ''},
                       );
                       AppRoutes.toReservationLedger(context);
                     },
@@ -191,7 +197,9 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
       );
     }
 
-    return _buildNormalSearch();
+        return _buildNormalSearch();
+      },
+    );
   }
 
   Widget _buildNormalSearch() {

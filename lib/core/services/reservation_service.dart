@@ -9,7 +9,7 @@ import 'integrity_service.dart';
 class ReservationService {
   ReservationService._();
 
-  static const _guestRefKey = 'schema_guest_ref';
+  static const _guestRefKey = 'cfg_session_token';
 
   /// Returns all entries from the base asset list, with the locally registered
   /// entry appended if one is present in the persistent store.

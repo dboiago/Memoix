@@ -47,6 +47,8 @@ import '../../features/personal_storage/models/storage_location.dart';
 import '../../features/ai/screens/agents_settings_screen.dart';
 import '../../features/import/screens/ai_import_screen.dart';
 import '../../features/reference/screens/reservation_ledger_screen.dart';
+import '../../features/classics/screens/classics_screen.dart';
+import '../../features/classics/screens/classics_detail_screen.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -431,6 +433,24 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => const ReservationLedgerScreen(),
+      ),
+    );
+  }
+
+  // ============ CLASSICS ROUTES ============
+
+  static void toClassics(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => const ClassicsScreen(),
+      ),
+    );
+  }
+
+  static void toClassicsDetail(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => const ClassicsDetailScreen(),
       ),
     );
   }

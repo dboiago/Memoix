@@ -6,10 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/services/integrity_service.dart';
 
-/// Design Notes screen - factual descriptions of interaction patterns and features
-///
-/// Presents important UI behaviors and non-obvious features without instructional language.
-/// Tone is matter-of-fact, not promotional or tutorial-like.
 class DesignNotesScreen extends ConsumerStatefulWidget {
   const DesignNotesScreen({super.key});
 
@@ -26,14 +22,14 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
   static const _resetTimeout = 5000;
 
   static const List<bool> _targetSequence = [
-    false, false, false,          // S
-    false, true,                  // A
-    false, false, false, true,    // V
-    false, false, false, true,    // V
-    true, true, true,             // O
-    false, false, true,           // U
-    false, true, false,           // R
-    true, false, true, true,      // Y
+    false, false, false,          
+    false, true,                  
+    false, false, false, true,    
+    false, false, false, true,    
+    true, true, true,             
+    false, false, true,           
+    false, true, false,           
+    true, false, true, true,      
   ];
 
   late final TapGestureRecognizer _ouRecognizer;
@@ -65,10 +61,12 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
     _morseResetTimer?.cancel();
     _morseResetTimer = null;
     setState(() => _morseInput.clear());
-    IntegrityService.reportEvent(
-      'activity.content_verified',
-      metadata: {'ref': 'design_notes'},
-    ).then((_) => processIntegrityResponses(ref));
+    IntegrityService.resolveLegacyValue('legacy_ref_design').then((refDesign) {
+      IntegrityService.reportEvent(
+        'activity.content_verified',
+        metadata: {'ref': refDesign ?? ''},
+      ).then((_) => processIntegrityResponses(ref));
+    });
   }
 
   @override

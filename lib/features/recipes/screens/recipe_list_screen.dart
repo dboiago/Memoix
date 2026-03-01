@@ -17,7 +17,7 @@ import '../repository/recipe_repository.dart';
 import '../widgets/recipe_card.dart';
 
 
-/// Recipe list screen matching Figma design
+/// Recipe list screen
 class RecipeListScreen extends ConsumerStatefulWidget {
   final String course;
   final RecipeSourceFilter sourceFilter;

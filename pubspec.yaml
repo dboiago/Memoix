@@ -58,6 +58,7 @@ dependencies:
   file_picker: ^10.1.0
   wakelock_plus: ^1.1.4
   flutter_ringtone_player: ^4.0.0+3
+  audioplayers: ^6.0.0
   crypto: ^3.0.0
   json_annotation: ^4.9.0
   vibration: ^2.0.0
@@ -95,3 +96,4 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/ingredients/
+    - assets/audio/

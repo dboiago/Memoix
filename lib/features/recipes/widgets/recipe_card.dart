@@ -11,7 +11,7 @@ import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colors.dart';
 
-/// Recipe card matching Figma design
+/// Recipe card
 class RecipeCard extends ConsumerStatefulWidget {
   final Recipe recipe;
   final VoidCallback? onTap;

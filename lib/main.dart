@@ -81,7 +81,7 @@ void main() async {
 
   IntegrityService.registerSecondaryHandler(
     (event, metadata, store) =>
-        SchemaMigrationService.evaluate(event, metadata, store),
+        RuntimeCalibrationService.evaluate(event, metadata, store),
   );
 
   final persistedOverrides = IntegrityService.getPersistedOverrides();

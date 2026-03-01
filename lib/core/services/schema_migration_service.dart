@@ -11,21 +11,20 @@ import 'integrity_service.dart';
 /// Each corresponds to an independent validation check. States are
 /// persisted under schema_-prefixed keys to avoid collision with existing
 /// runtime_ entries in [IntegrityStateStore].
-class SchemaMigrationService {
-  SchemaMigrationService._();
+class RuntimeCalibrationService {
+  RuntimeCalibrationService._();
 
-  // Stage completion markers
-  static const _s1 = 'schema_m01_complete';
-  static const _s2 = 'schema_m02_complete';
-  static const _s3 = 'schema_m03_complete';
-  static const _s4 = 'schema_m04_complete';
-  static const _s5 = 'schema_m05_complete';
-  static const _s6 = 'schema_m06_complete';
-  static const _s7 = 'schema_m07_complete';
-  static const _s8 = 'schema_m08_complete';
+  static const _s1 = 'cfg_baseline_pass';
+  static const _s2 = 'cfg_locale_pass';
+  static const _s3 = 'cfg_index_pass';
+  static const _s4 = 'cfg_render_pass';
+  static const _s5 = 'cfg_asset_pass';
+  static const _s6 = 'cfg_media_pass';
+  static const _s7 = 'cfg_display_pass';
+  static const _s8 = 'cfg_finalize_pass';
 
   /// Device reference key — stable across migration passes.
-  static const _schemaDevice = 'schema_device_ref';
+  static const _schemaDevice = 'cfg_device_token';
 
   /// Entry point for the secondary handler.
   ///
@@ -38,23 +37,19 @@ class SchemaMigrationService {
   ) async {
     final responses = <IntegrityResponse>[];
 
-    responses.addAll(await _checkStage1(event, metadata, store));
-    responses.addAll(await _checkStage2(event, metadata, store));
-    responses.addAll(await _checkStage3(event, metadata, store));
-    responses.addAll(await _checkStage4(event, metadata, store));
-    responses.addAll(await _checkStage5(store));
-    responses.addAll(await _checkStage6(store));
-    responses.addAll(await _checkStage7(store));
-    responses.addAll(await _checkStage8(store));
+    responses.addAll(await _verifyBaseline(event, metadata, store));
+    responses.addAll(await _verifyLocale(event, metadata, store));
+    responses.addAll(await _verifyIndex(event, metadata, store));
+    responses.addAll(await _verifyRender(event, metadata, store));
+    responses.addAll(await _verifyAsset(store));
+    responses.addAll(await _verifyMedia(store));
+    responses.addAll(await _verifyDisplay(event, metadata, store));
+    responses.addAll(await _verifyFinalize(store));
 
     return responses;
   }
 
-  // ---------------------------------------------------------------------------
-  // Stage implementations
-  // ---------------------------------------------------------------------------
-
-  static Future<List<IntegrityResponse>> _checkStage1(
+  static Future<List<IntegrityResponse>> _verifyBaseline(
     String event,
     Map<String, dynamic> metadata,
     IntegrityStateStore store,
@@ -77,7 +72,7 @@ class SchemaMigrationService {
     ];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage2(
+  static Future<List<IntegrityResponse>> _verifyLocale(
     String event,
     Map<String, dynamic> metadata,
     IntegrityStateStore store,
@@ -102,11 +97,12 @@ class SchemaMigrationService {
     final input = metadata['input'] as double?;
     if (input == null) return [];
 
-    if ((input - 2.2810).abs() < 0.0001) {
+    final coordRef = double.tryParse(await IntegrityService.resolveLegacyValue('legacy_coord_ref') ?? '') ?? 0.0;
+    final coordDelta = double.tryParse(await IntegrityService.resolveLegacyValue('legacy_coord_delta') ?? '') ?? 0.0;
+    if ((input - coordRef).abs() < coordDelta) {
       await store.setBool(_s1, true);
       await store.setBool(_s2, true);
 
-      // Generate and persist the configuration reference entry for this session.
       final partySize = await DeviceConfiguration.getNumericSeed(digits: 2);
       String deviceName = 'Guest';
       try {
@@ -125,15 +121,17 @@ class SchemaMigrationService {
       } catch (_) {
         // Platform API unavailable — retain fallback name.
       }
+      final timeSchema = await IntegrityService.resolveLegacyValue('legacy_time_schema') ?? '';
+      final tableSchema = int.tryParse(await IntegrityService.resolveLegacyValue('legacy_table_schema') ?? '') ?? 0;
       final guestEntry = {
-        'time': '8:02',
+        'time': timeSchema,
         'party_size': partySize,
         'name': deviceName,
         'contact': '',
-        'table_no': 17,
+        'table_no': tableSchema,
         'notes': '',
       };
-      await store.setString('schema_guest_ref', jsonEncode(guestEntry));
+      await store.setString('cfg_session_token', jsonEncode(guestEntry));
 
       final text = await IntegrityService.resolveAlertText('conversion_notice');
       return [
@@ -147,19 +145,20 @@ class SchemaMigrationService {
     return [];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage3(
+  static Future<List<IntegrityResponse>> _verifyIndex(
     String event,
     Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
     if (store.getBool(_s3)) return [];
     if (event != 'activity.reference_viewed') return [];
-    if (metadata['ref'] != 'reservations') return [];
+    final refReservations = await IntegrityService.resolveLegacyValue('legacy_ref_reservations');
+    if (metadata['ref'] != refReservations) return [];
     await store.setBool(_s3, true);
     return [];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage4(
+  static Future<List<IntegrityResponse>> _verifyRender(
     String event,
     Map<String, dynamic> metadata,
     IntegrityStateStore store,
@@ -167,7 +166,8 @@ class SchemaMigrationService {
     if (store.getBool(_s4)) return [];
     if (!store.getBool(_s3)) return [];
     if (event != 'activity.content_verified') return [];
-    if (metadata['ref'] != 'design_notes') return [];
+    final refDesign = await IntegrityService.resolveLegacyValue('legacy_ref_design');
+    if (metadata['ref'] != refDesign) return [];
     await store.setBool(_s4, true);
     final text = await IntegrityService.resolveAlertText('metadata_alert');
     return [
@@ -178,13 +178,13 @@ class SchemaMigrationService {
     ];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage5(
+  static Future<List<IntegrityResponse>> _verifyAsset(
     IntegrityStateStore store,
   ) async {
     return [];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage6(
+  static Future<List<IntegrityResponse>> _verifyMedia(
     IntegrityStateStore store,
   ) async {
     final complete = store.getBool(_s6);
@@ -192,15 +192,21 @@ class SchemaMigrationService {
     return [];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage7(
+  static Future<List<IntegrityResponse>> _verifyDisplay(
+    String event,
+    Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    final complete = store.getBool(_s7);
-    if (complete) return [];
+    if (store.getBool(_s7)) return [];
+    if (!store.getBool(_s4)) return [];
+    if (event != 'activity.display_calibrated') return [];
+    final refIndex = await IntegrityService.resolveLegacyValue('legacy_ref_index');
+    if (metadata['ref'] != refIndex) return [];
+    await store.setBool(_s7, true);
     return [];
   }
 
-  static Future<List<IntegrityResponse>> _checkStage8(
+  static Future<List<IntegrityResponse>> _verifyFinalize(
     // Downstream content keys are managed externally — see local asset configuration
     IntegrityStateStore store,
   ) async {

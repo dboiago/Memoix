@@ -24,6 +24,7 @@ import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/models/cellar_entry.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../classics/screens/classics_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -166,6 +167,25 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
+                    final bool showClassics =
+                        IntegrityService.store.getBool('cfg_display_pass') &&
+                        !IntegrityService.store.getBool('cfg_finalize_pass');
+
+                    if (showClassics && index == courses.length) {
+                      final classicsCourse = Course.create(
+                        slug: 'classics',
+                        name: 'Classics',
+                        iconName: 'restaurant',
+                        sortOrder: 99,
+                        colorValue: 0xFFFFB74D,
+                      );
+                      return CourseCard(
+                        course: classicsCourse,
+                        recipeCount: 0,
+                        onTap: () => AppRoutes.toClassics(context),
+                      );
+                    }
+
                     final course = courses[index];
                     final hideMemoix = ref.watch(hideMemoixRecipesProvider);
                     
@@ -272,7 +292,12 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       },
                     );
                   },
-                  childCount: courses.length,
+                  childCount: courses.length +
+                      (IntegrityService.store.getBool('cfg_display_pass') &&
+                              !IntegrityService.store
+                                  .getBool('cfg_finalize_pass')
+                          ? 1
+                          : 0),
                 ),
               ),
             ),
