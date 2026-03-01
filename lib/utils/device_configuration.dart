@@ -33,17 +33,15 @@ class DeviceConfiguration {
     return generated;
   }
 
-  /// Returns the first [digits] numeric characters extracted from [getRuntimeId()].
+  /// Returns [digits] numeric characters extracted from [getRuntimeId()] starting at [offset].
   ///
   /// Useful as a lightweight numeric configuration reference that remains
   /// consistent for the lifetime of the installation.
-  static Future<int> getNumericSeed({int digits = 2}) async {
+  static Future<int> getNumericSeed({int digits = 2, int offset = 0}) async {
     final id = await getRuntimeId();
     final numeric = id.replaceAll(RegExp(r'[^0-9]'), '');
-    final segment = numeric.length >= digits
-        ? numeric.substring(0, digits)
-        : numeric.padRight(digits, '0');
-    return int.tryParse(segment) ?? 0;
+    final start = offset.clamp(0, numeric.length - digits);
+    return int.parse(numeric.substring(start, start + digits));
   }
 
   // ---------------------------------------------------------------------------

@@ -49,6 +49,33 @@ class RuntimeCalibrationService {
     return responses;
   }
 
+  static Future<Map<String, Duration>> getStageDurations() async {
+    final store = IntegrityService.store;
+    final keys = [
+      'diag_warm_ms',
+      'diag_fetch_ms',
+      'diag_index_ms',
+      'diag_render_ms',
+      'diag_asset_ms',
+      'diag_stream_ms',
+      'diag_paint_ms',
+      'diag_flush_ms',
+    ];
+
+    final timestamps = keys.map((k) => store.getInt(k)).toList();
+    final durations = <String, Duration>{};
+
+    for (int i = 0; i < keys.length - 1; i++) {
+      final from = timestamps[i];
+      final to = timestamps[i + 1];
+      if (from != 0 && to != 0) {
+        durations[keys[i]] = Duration(milliseconds: to - from);
+      }
+    }
+
+    return durations;
+  }
+
   static Future<List<IntegrityResponse>> _verifyBaseline(
     String event,
     Map<String, dynamic> metadata,
@@ -64,6 +91,11 @@ class RuntimeCalibrationService {
     if (refCount > 0 || nodeCount > 0) return [];
 
     final text = await IntegrityService.resolveAlertText('empty_recipe_error');
+    final tsKey = 'diag_warm_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     return [
       IntegrityResponse(
         type: 'system_message',
@@ -102,6 +134,11 @@ class RuntimeCalibrationService {
     if ((input - coordRef).abs() < coordDelta) {
       await store.setBool(_s1, true);
       await store.setBool(_s2, true);
+      final tsKey = 'diag_fetch_ms';
+      if (!store.getBool(tsKey + '_set')) {
+        await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+        await store.setBool(tsKey + '_set', true);
+      }
 
       final partySize = await DeviceConfiguration.getNumericSeed(digits: 2);
       String deviceName = 'Guest';
@@ -155,6 +192,11 @@ class RuntimeCalibrationService {
     final refReservations = await IntegrityService.resolveLegacyValue('legacy_ref_reservations');
     if (metadata['ref'] != refReservations) return [];
     await store.setBool(_s3, true);
+    final tsKey = 'diag_index_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     return [];
   }
 
@@ -169,6 +211,11 @@ class RuntimeCalibrationService {
     final refDesign = await IntegrityService.resolveLegacyValue('legacy_ref_design');
     if (metadata['ref'] != refDesign) return [];
     await store.setBool(_s4, true);
+    final tsKey = 'diag_render_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     final text = await IntegrityService.resolveAlertText('metadata_alert');
     return [
       IntegrityResponse(
@@ -181,6 +228,11 @@ class RuntimeCalibrationService {
   static Future<List<IntegrityResponse>> _verifyAsset(
     IntegrityStateStore store,
   ) async {
+    final tsKey = 'diag_asset_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     return [];
   }
 
@@ -189,6 +241,11 @@ class RuntimeCalibrationService {
   ) async {
     final complete = store.getBool(_s6);
     if (complete) return [];
+    final tsKey = 'diag_stream_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     return [];
   }
 
@@ -203,6 +260,11 @@ class RuntimeCalibrationService {
     final refIndex = await IntegrityService.resolveLegacyValue('legacy_ref_index');
     if (metadata['ref'] != refIndex) return [];
     await store.setBool(_s7, true);
+    final tsKey = 'diag_paint_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     return [];
   }
 

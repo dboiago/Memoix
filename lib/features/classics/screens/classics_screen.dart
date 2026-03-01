@@ -69,7 +69,7 @@ class _ClassicsScreenState extends ConsumerState<ClassicsScreen> {
                           ? null
                           : const Icon(Icons.heart_broken),
                       onTap: isTarget
-                          ? () => AppRoutes.toClassicsDetail(context)
+                          ? () => AppRoutes.toClassicsEntry(context)
                           : null,
                     );
                   },

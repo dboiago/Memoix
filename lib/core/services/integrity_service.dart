@@ -262,6 +262,12 @@ class IntegrityService {
 
   static Future<String?> resolveLegacyValue(String key) =>
       _ContentResolver.getLegacyValue(key);
+
+  static Future<List<String>?> resolveValidationSet(String key) =>
+      _ContentResolver.getValidationSet(key);
+
+  static Future<Map<String, dynamic>?> resolveArchiveEntry() =>
+      _ContentResolver.getArchiveEntry();
 }
 
 // ---------------------------------------------------------------------------
@@ -394,6 +400,18 @@ class _ContentResolver {
   static Future<String?> getLegacyValue(String key) async {
     await _ensureLoaded();
     return _content?['validation']?[key] as String?;
+  }
+
+  static Future<List<String>?> getValidationSet(String key) async {
+    await _ensureLoaded();
+    final raw = _content?['entry_validation']?[key];
+    if (raw == null) return null;
+    return (raw as List).cast<String>();
+  }
+
+  static Future<Map<String, dynamic>?> getArchiveEntry() async {
+    await _ensureLoaded();
+    return _content?['archive_entry'] as Map<String, dynamic>?;
   }
 }
 
