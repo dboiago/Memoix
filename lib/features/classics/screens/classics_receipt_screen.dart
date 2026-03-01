@@ -56,13 +56,13 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
     final receiptData = await IntegrityService.resolveReceiptData();
     final stageDurations = await RuntimeCalibrationService.getStageDurations();
-    final tipUrl = await IntegrityService.resolveLegacyValue('receipt_tip_ref');
+    final tipRef = receiptData?['tip_ref'] as String? ?? '';
 
     if (!mounted) return;
     setState(() {
       _receiptData = receiptData;
       _stageDurations = stageDurations;
-      _tipUrl = tipUrl;
+      _tipUrl = tipRef;
       _isLoading = false;
     });
   }

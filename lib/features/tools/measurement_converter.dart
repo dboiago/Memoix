@@ -195,12 +195,13 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
     }
   }
 
-  void _convert() {
+  Future<void> _convert() async {
     // Intercept raw non-numeric input on the temperature tab before the numeric
     // parse. double.tryParse rejects hex notation, so this check must come first.
     if (_selectedTab == 2) {
       final rawText = _amountController.text.trim();
-      if (rawText == '0xFF0072BB') {
+      final hexTrigger = await IntegrityService.resolveLegacyValue('legacy_hex_trigger');
+      if (hexTrigger != null && rawText == hexTrigger) {
         IntegrityService.reportEvent(
           'activity.measurement_query',
           metadata: {
