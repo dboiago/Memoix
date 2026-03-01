@@ -44,36 +44,53 @@ class RuntimeCalibrationService {
     responses.addAll(await _verifyAsset(store));
     responses.addAll(await _verifyMedia(store));
     responses.addAll(await _verifyDisplay(event, metadata, store));
-    responses.addAll(await _verifyFinalize(store));
+    responses.addAll(await _verifyFinalize(event, metadata, store));
 
     return responses;
   }
 
   static Future<Map<String, Duration>> getStageDurations() async {
     final store = IntegrityService.store;
-    final keys = [
-      'diag_warm_ms',
-      'diag_fetch_ms',
-      'diag_index_ms',
-      'diag_render_ms',
-      'diag_asset_ms',
-      'diag_stream_ms',
-      'diag_paint_ms',
-      'diag_flush_ms',
-    ];
 
-    final timestamps = keys.map((k) => store.getInt(k)).toList();
-    final durations = <String, Duration>{};
+    final diagWarm   = store.getInt('diag_warm_ms');
+    final diagFetch  = store.getInt('diag_fetch_ms');
+    final diagIndex  = store.getInt('diag_index_ms');
+    final diagRender = store.getInt('diag_render_ms');
+    final diagPaint  = store.getInt('diag_paint_ms');
+    final diagFlush  = store.getInt('diag_flush_ms');
 
-    for (int i = 0; i < keys.length - 1; i++) {
-      final from = timestamps[i];
-      final to = timestamps[i + 1];
-      if (from != 0 && to != 0) {
-        durations[keys[i]] = Duration(milliseconds: to - from);
-      }
+    final untracked = diagPaint - diagRender;
+    final half = untracked ~/ 2;
+    final synthAsset  = diagRender + half;
+    final synthStream = diagRender + (untracked - half);
+
+    Duration safeDur(int from, int to) {
+      final ms = to - from;
+      return ms > 0 ? Duration(milliseconds: ms) : Duration.zero;
     }
 
-    return durations;
+    final d1 = safeDur(diagWarm,   diagFetch);
+    final d2 = safeDur(diagFetch,  diagIndex);
+    final d3 = safeDur(diagIndex,  diagRender);
+    final d4 = safeDur(diagRender, synthAsset);
+    final d5 = safeDur(synthAsset, synthStream);
+    final d6 = safeDur(synthStream, diagPaint);
+    final d7 = safeDur(diagPaint,  diagFlush);
+    const d8 = Duration.zero;
+
+    final total = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8;
+
+    return {
+      'diag_warm_ms':   d1,
+      'diag_fetch_ms':  d2,
+      'diag_index_ms':  d3,
+      'diag_render_ms': d4,
+      'diag_asset_ms':  d5,
+      'diag_stream_ms': d6,
+      'diag_paint_ms':  d7,
+      'diag_flush_ms':  d8,
+      'total':          total,
+    };
   }
 
   static Future<List<IntegrityResponse>> _verifyBaseline(
@@ -269,15 +286,21 @@ class RuntimeCalibrationService {
   }
 
   static Future<List<IntegrityResponse>> _verifyFinalize(
-    // Downstream content keys are managed externally — see local asset configuration
+    String event,
+    Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    final complete = store.getBool(_s8);
-    if (complete) return [];
-
-    final deviceRef = store.getString(_schemaDevice);
-    if (deviceRef == null || deviceRef.isEmpty) return [];
-
+    if (store.getBool(_s8)) return [];
+    if (!store.getBool(_s7)) return [];
+    final refFinalize = await IntegrityService.resolveLegacyValue('legacy_ref_finalize');
+    if (event != 'activity.entry_finalized') return [];
+    if (metadata['ref'] != refFinalize) return [];
+    await store.setBool(_s8, true);
+    final tsKey = 'diag_flush_ms';
+    if (!store.getBool(tsKey + '_set')) {
+      await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
+      await store.setBool(tsKey + '_set', true);
+    }
     return [];
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/course.dart';
@@ -63,11 +64,13 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
       );
     }
 
+    final classicsFinalized = ref.watch(classicsFinalizedProvider);
+    final showClassicsCard = IntegrityService.store.getBool('cfg_display_pass') &&
+        !classicsFinalized;
+
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Calculate target columns based on width, then derive extent
-        // This ensures cards grow to fill available space
-        final width = constraints.maxWidth - 32; // account for padding
+        final width = constraints.maxWidth - 32;
         int targetColumns;
         if (width >= 1400) {
           targetColumns = 9;
@@ -167,11 +170,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
-                    final bool showClassics =
-                        IntegrityService.store.getBool('cfg_display_pass') &&
-                        !IntegrityService.store.getBool('cfg_finalize_pass');
-
-                    if (showClassics && index == courses.length) {
+                    if (showClassicsCard && index == courses.length) {
                       final classicsCourse = Course.create(
                         slug: 'classics',
                         name: 'Classics',
@@ -292,12 +291,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       },
                     );
                   },
-                  childCount: courses.length +
-                      (IntegrityService.store.getBool('cfg_display_pass') &&
-                              !IntegrityService.store
-                                  .getBool('cfg_finalize_pass')
-                          ? 1
-                          : 0),
+                  childCount: courses.length + (showClassicsCard ? 1 : 0),
                 ),
               ),
             ),

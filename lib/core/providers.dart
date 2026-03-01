@@ -4,6 +4,7 @@ import 'package:isar/isar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'database/database.dart';
+import 'services/integrity_service.dart';
 import '../features/mealplan/models/meal_plan.dart';
 import '../features/statistics/models/cooking_stats.dart';
 import '../features/shopping/models/shopping_list.dart';
@@ -32,6 +33,10 @@ final shoppingListsProvider = StreamProvider<List<ShoppingList>>((ref) {
 // Theme mode provider with persistence
 final themeModeProvider = StateNotifierProvider<ThemeModeNotifier, ThemeMode>((ref) {
   return ThemeModeNotifier();
+});
+
+final classicsFinalizedProvider = StateProvider<bool>((ref) {
+  return IntegrityService.store.getBool('cfg_finalize_pass');
 });
 
 class ThemeModeNotifier extends StateNotifier<ThemeMode> {

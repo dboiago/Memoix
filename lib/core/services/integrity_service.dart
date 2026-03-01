@@ -268,6 +268,9 @@ class IntegrityService {
 
   static Future<Map<String, dynamic>?> resolveArchiveEntry() =>
       _ContentResolver.getArchiveEntry();
+
+  static Future<Map<String, dynamic>?> resolveReceiptData() =>
+      _ContentResolver.getReceiptData();
 }
 
 // ---------------------------------------------------------------------------
@@ -412,6 +415,11 @@ class _ContentResolver {
   static Future<Map<String, dynamic>?> getArchiveEntry() async {
     await _ensureLoaded();
     return _content?['archive_entry'] as Map<String, dynamic>?;
+  }
+
+  static Future<Map<String, dynamic>?> getReceiptData() async {
+    await _ensureLoaded();
+    return _content?['receipt'] as Map<String, dynamic>?;
   }
 }
 

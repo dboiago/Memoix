@@ -77,6 +77,10 @@ dependencies:
   # Configuration
   flutter_dotenv: ^5.2.1
 
+  # PDF generation & sharing
+  pdf: ^3.10.8
+  printing: ^5.13.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
