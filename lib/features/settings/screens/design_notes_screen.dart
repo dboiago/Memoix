@@ -1,11 +1,82 @@
+import 'dart:async';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../core/services/integrity_service.dart';
 
 /// Design Notes screen - factual descriptions of interaction patterns and features
 ///
 /// Presents important UI behaviors and non-obvious features without instructional language.
 /// Tone is matter-of-fact, not promotional or tutorial-like.
-class DesignNotesScreen extends StatelessWidget {
+class DesignNotesScreen extends ConsumerStatefulWidget {
   const DesignNotesScreen({super.key});
+
+  @override
+  ConsumerState<DesignNotesScreen> createState() => _DesignNotesScreenState();
+}
+
+class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
+  final List<bool> _morseInput = [];
+  DateTime? _tapStart;
+  Timer? _morseResetTimer;
+
+  static const _dotThreshold = 400;
+  static const _resetTimeout = 5000;
+
+  static const List<bool> _targetSequence = [
+    false, false, false,          // S
+    false, true,                  // A
+    false, false, false, true,    // V
+    false, false, false, true,    // V
+    true, true, true,             // O
+    false, false, true,           // U
+    false, true, false,           // R
+    true, false, true, true,      // Y
+  ];
+
+  late final TapGestureRecognizer _ouRecognizer;
+
+  @override
+  void initState() {
+    super.initState();
+    _ouRecognizer = TapGestureRecognizer()
+      ..onTapDown = (_) {
+        _tapStart = DateTime.now();
+        _morseResetTimer?.cancel();
+      }
+      ..onTapUp = (_) {
+        if (_tapStart == null) return;
+        final duration = DateTime.now().difference(_tapStart!).inMilliseconds;
+        _tapStart = null;
+        _morseResetTimer?.cancel();
+        _morseResetTimer = Timer(const Duration(milliseconds: _resetTimeout), () {
+          if (mounted) setState(() => _morseInput.clear());
+        });
+        setState(() => _morseInput.add(duration >= _dotThreshold));
+        if (listEquals(_morseInput, _targetSequence)) {
+          _onSequenceComplete();
+        }
+      };
+  }
+
+  void _onSequenceComplete() {
+    _morseResetTimer?.cancel();
+    _morseResetTimer = null;
+    setState(() => _morseInput.clear());
+    IntegrityService.reportEvent(
+      'activity.content_verified',
+      metadata: {'ref': 'design_notes'},
+    ).then((_) => processIntegrityResponses(ref));
+  }
+
+  @override
+  void dispose() {
+    _morseResetTimer?.cancel();
+    _ouRecognizer.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -134,12 +205,24 @@ class DesignNotesScreen extends StatelessWidget {
           const SizedBox(height: 32),
 
           // Footer
-          Center(
-            child: Text(
-              'For savv(ou)ry minds.',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-                fontStyle: FontStyle.italic,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 24),
+            child: Center(
+              child: RichText(
+                text: TextSpan(
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  children: [
+                    const TextSpan(text: 'For savv'),
+                    TextSpan(
+                      text: '(ou)',
+                      recognizer: _ouRecognizer,
+                    ),
+                    const TextSpan(text: 'ry minds.'),
+                  ],
+                ),
               ),
             ),
           ),

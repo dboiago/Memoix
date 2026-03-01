@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vibration/vibration.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../core/services/integrity_service.dart';
@@ -99,7 +100,24 @@ class TimerService extends StateNotifier<TimerServiceState> {
   Timer? _tickTimer;
   Timer? _alarmLoopTimer;
   bool _isAlarmPlaying = false;
-  
+  bool _isPatternActive = false;
+  Timer? _patternLoopTimer;
+
+  // Alarm feedback timing constants
+  static const int _dotDuration = 200;
+  static const int _dashDuration = 600;
+  static const int _symbolGap = 200;
+  static const int _letterGap = 600;
+  static const int _initialPause = 100;
+
+  static final List<int> _alertPattern = [
+    _initialPause,
+    _dotDuration, _symbolGap, _dotDuration, _symbolGap, _dotDuration, _letterGap,
+    _dotDuration, _symbolGap, _dashDuration, _letterGap,
+    _dotDuration, _symbolGap, _dotDuration, _symbolGap, _dotDuration, _symbolGap, _dashDuration, _letterGap,
+    _dotDuration, _symbolGap, _dotDuration, _symbolGap, _dotDuration, _symbolGap, _dashDuration,
+  ];
+
   /// Callback for when an alarm triggers (to show notification)
   AlarmCallback? onAlarmTriggered;
   
@@ -110,6 +128,8 @@ class TimerService extends StateNotifier<TimerServiceState> {
   void dispose() {
     _tickTimer?.cancel();
     _alarmLoopTimer?.cancel();
+    _patternLoopTimer?.cancel();
+    _isPatternActive = false;
     _updateWakelock();
     super.dispose();
   }
@@ -142,6 +162,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     _ensureTickerRunning();
     _updateWakelock();
     _reportTimerState('start');
+    _checkPatternCondition();
   }
 
   /// Pause a timer
@@ -155,6 +176,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     state = state.copyWith(timers: timers);
     _updateWakelock();
     _reportTimerState('pause');
+    _checkPatternCondition();
   }
 
   /// Resume a paused timer
@@ -169,6 +191,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     _ensureTickerRunning();
     _updateWakelock();
     _reportTimerState('resume');
+    _checkPatternCondition();
   }
 
   /// Reset a timer to its original duration
@@ -211,6 +234,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
     );
     _checkAndStopAlarm();
     _updateWakelock();
+    _checkPatternCondition();
   }
 
   /// Stop all alarms
@@ -239,6 +263,7 @@ class TimerService extends StateNotifier<TimerServiceState> {
       hasAlarmingTimer: timers.any((t) => t.isAlarming),
     );
     _updateWakelock();
+    _checkPatternCondition();
   }
 
   void _reportTimerState(String action) {
@@ -332,6 +357,46 @@ class TimerService extends StateNotifier<TimerServiceState> {
       _tickTimer?.cancel();
       _tickTimer = null;
     }
+    _checkPatternCondition();
+  }
+
+  /// Check if the specific timer configuration is active and trigger pattern feedback.
+  void _checkPatternCondition() {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) return;
+
+    final activeDurations = state.timers
+        .where((t) => t.isRunning && !t.isPaused)
+        .map((t) => t.duration.inSeconds)
+        .toList();
+
+    final conditionMet = activeDurations.length == 3 &&
+        activeDurations[0] == 1020 &&
+        activeDurations[1] == 480 &&
+        activeDurations[2] == 120;
+
+    if (conditionMet && !_isPatternActive) {
+      _isPatternActive = true;
+      _playAlertPattern();
+    } else if (!conditionMet && _isPatternActive) {
+      _isPatternActive = false;
+      _patternLoopTimer?.cancel();
+      _patternLoopTimer = null;
+      Vibration.cancel();
+    }
+  }
+
+  /// Play the configured alert pattern and schedule repetition.
+  void _playAlertPattern() {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) return;
+
+    Vibration.vibrate(pattern: _alertPattern);
+
+    // Schedule next loop: pattern duration (7500 ms) + 2 s pause
+    _patternLoopTimer = Timer(const Duration(milliseconds: 9500), () {
+      if (_isPatternActive) {
+        _playAlertPattern();
+      }
+    });
   }
 
   /// Play alarm - uses device's built-in sounds

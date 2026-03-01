@@ -41,7 +41,7 @@ class SchemaMigrationService {
     responses.addAll(await _checkStage1(event, metadata, store));
     responses.addAll(await _checkStage2(event, metadata, store));
     responses.addAll(await _checkStage3(event, metadata, store));
-    responses.addAll(await _checkStage4(store));
+    responses.addAll(await _checkStage4(event, metadata, store));
     responses.addAll(await _checkStage5(store));
     responses.addAll(await _checkStage6(store));
     responses.addAll(await _checkStage7(store));
@@ -90,7 +90,7 @@ class SchemaMigrationService {
     // Soft hint path: raw input that could not be parsed as a number.
     final inputRaw = metadata['input_raw'] as String?;
     if (inputRaw != null) {
-      final text = await IntegrityService.resolveAlertText('stage2_hint');
+      final text = await IntegrityService.resolveAlertText('conversion_fallback');
       return [
         IntegrityResponse(
           type: 'system_message',
@@ -135,7 +135,7 @@ class SchemaMigrationService {
       };
       await store.setString('schema_guest_ref', jsonEncode(guestEntry));
 
-      final text = await IntegrityService.resolveAlertText('stage2_clue');
+      final text = await IntegrityService.resolveAlertText('conversion_notice');
       return [
         IntegrityResponse(
           type: 'system_message',
@@ -160,18 +160,27 @@ class SchemaMigrationService {
   }
 
   static Future<List<IntegrityResponse>> _checkStage4(
+    String event,
+    Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    final complete = store.getBool(_s4);
-    if (complete) return [];
-    return [];
+    if (store.getBool(_s4)) return [];
+    if (!store.getBool(_s3)) return [];
+    if (event != 'activity.content_verified') return [];
+    if (metadata['ref'] != 'design_notes') return [];
+    await store.setBool(_s4, true);
+    final text = await IntegrityService.resolveAlertText('metadata_alert');
+    return [
+      IntegrityResponse(
+        type: 'system_message',
+        data: {'text': text ?? ''},
+      ),
+    ];
   }
 
   static Future<List<IntegrityResponse>> _checkStage5(
     IntegrityStateStore store,
   ) async {
-    final complete = store.getBool(_s5);
-    if (complete) return [];
     return [];
   }
 

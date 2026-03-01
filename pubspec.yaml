@@ -60,6 +60,7 @@ dependencies:
   flutter_ringtone_player: ^4.0.0+3
   crypto: ^3.0.0
   json_annotation: ^4.9.0
+  vibration: ^2.0.0
   
   # External Storage
   device_info_plus: ^11.2.0
