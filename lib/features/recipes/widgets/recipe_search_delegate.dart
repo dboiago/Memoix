@@ -3,7 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/reservation_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../reference/screens/reservation_ledger_screen.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -101,6 +103,98 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   }
 
   Widget _buildSearchResults() {
+    final isReservationQuery = query.trim().toLowerCase() == 'resses' &&
+        IntegrityService.store.getBool('schema_m02_complete');
+
+    if (isReservationQuery) {
+      return FutureBuilder<Map<String, dynamic>?>(
+        future: ReservationService.getGuestEntry(),
+        builder: (context, guestSnapshot) {
+          if (guestSnapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          final guestEntry = guestSnapshot.data;
+          if (guestEntry == null) {
+            return _buildNormalSearch();
+          }
+
+          final name = guestEntry['name']?.toString() ?? '';
+          final tableNo = guestEntry['table_no']?.toString() ?? '';
+          final time = guestEntry['time']?.toString() ?? '';
+          final partySize = guestEntry['party_size']?.toString() ?? '';
+          final theme = Theme.of(context);
+
+          return FutureBuilder<List<Recipe>>(
+            future: ref.read(recipeSearchProvider(query).future),
+            builder: (context, recipesSnapshot) {
+              final recipes = recipesSnapshot.data ?? [];
+              return ListView(
+                children: [
+                  // Inline guest entry card — shown above normal results.
+                  InkWell(
+                    onTap: () {
+                      close(context, null);
+                      IntegrityService.reportEvent(
+                        'activity.reference_viewed',
+                        metadata: {'ref': 'reservations'},
+                      );
+                      AppRoutes.toReservationLedger(context);
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.fromLTRB(12, 12, 12, 4),
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: theme.colorScheme.primary.withValues(alpha: 0.4),
+                        ),
+                      ),
+                      child: Text(
+                        "Reservation for '$name' — Table $tableNo, $time. Firing Apps. $partySize minutes out!",
+                        style: theme.textTheme.bodyMedium,
+                      ),
+                    ),
+                  ),
+                  // Normal recipe results below.
+                  for (final recipe in recipes)
+                    ListTile(
+                      leading: const CircleAvatar(
+                        child: Icon(Icons.restaurant),
+                      ),
+                      title: Text(recipe.name),
+                      subtitle: Text(
+                        [recipe.cuisine, recipe.course]
+                            .whereType<String>()
+                            .join(' • '),
+                      ),
+                      trailing: recipe.isFavorite
+                          ? Icon(Icons.favorite,
+                              color: theme.colorScheme.secondary, size: 20)
+                          : null,
+                      onTap: () async {
+                        close(context, recipe);
+                        final exists = await ref
+                            .read(recipeRepositoryProvider)
+                            .getRecipeByUuid(recipe.uuid);
+                        if (exists != null) {
+                          AppRoutes.toRecipeDetail(context, recipe.uuid);
+                        }
+                      },
+                    ),
+                ],
+              );
+            },
+          );
+        },
+      );
+    }
+
+    return _buildNormalSearch();
+  }
+
+  Widget _buildNormalSearch() {
     final searchFuture = ref.read(recipeSearchProvider(query).future);
 
     return FutureBuilder<List<Recipe>>(
@@ -147,12 +241,15 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                 [recipe.cuisine, recipe.course].whereType<String>().join(' • '),
               ),
               trailing: recipe.isFavorite
-                  ? Icon(Icons.favorite, color: Theme.of(context).colorScheme.secondary, size: 20)
+                  ? Icon(Icons.favorite,
+                      color: Theme.of(context).colorScheme.secondary, size: 20)
                   : null,
               onTap: () async {
                 close(context, recipe);
                 // Verify recipe still exists before navigating
-                final exists = await ref.read(recipeRepositoryProvider).getRecipeByUuid(recipe.uuid);
+                final exists = await ref
+                    .read(recipeRepositoryProvider)
+                    .getRecipeByUuid(recipe.uuid);
                 if (exists != null) {
                   AppRoutes.toRecipeDetail(context, recipe.uuid);
                 }

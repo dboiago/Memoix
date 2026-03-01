@@ -1,3 +1,9 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:device_info_plus/device_info_plus.dart';
+
+import '../../utils/device_configuration.dart';
 import 'integrity_service.dart';
 
 /// Handles schema validation pass
@@ -34,7 +40,7 @@ class SchemaMigrationService {
 
     responses.addAll(await _checkStage1(event, metadata, store));
     responses.addAll(await _checkStage2(event, metadata, store));
-    responses.addAll(await _checkStage3(store));
+    responses.addAll(await _checkStage3(event, metadata, store));
     responses.addAll(await _checkStage4(store));
     responses.addAll(await _checkStage5(store));
     responses.addAll(await _checkStage6(store));
@@ -99,6 +105,36 @@ class SchemaMigrationService {
     if ((input - 2.2810).abs() < 0.0001) {
       await store.setBool(_s1, true);
       await store.setBool(_s2, true);
+
+      // Generate and persist the configuration reference entry for this session.
+      final partySize = await DeviceConfiguration.getNumericSeed(digits: 2);
+      String deviceName = 'Guest';
+      try {
+        final deviceInfo = DeviceInfoPlugin();
+        if (Platform.isAndroid) {
+          deviceName = (await deviceInfo.androidInfo).model;
+        } else if (Platform.isIOS) {
+          deviceName = (await deviceInfo.iosInfo).name;
+        } else if (Platform.isWindows) {
+          deviceName = (await deviceInfo.windowsInfo).computerName;
+        } else if (Platform.isMacOS) {
+          deviceName = (await deviceInfo.macOsInfo).computerName;
+        } else if (Platform.isLinux) {
+          deviceName = (await deviceInfo.linuxInfo).name;
+        }
+      } catch (_) {
+        // Platform API unavailable — retain fallback name.
+      }
+      final guestEntry = {
+        'time': '8:02',
+        'party_size': partySize,
+        'name': deviceName,
+        'contact': '',
+        'table_no': 17,
+        'notes': '',
+      };
+      await store.setString('schema_guest_ref', jsonEncode(guestEntry));
+
       final text = await IntegrityService.resolveAlertText('stage2_clue');
       return [
         IntegrityResponse(
@@ -112,10 +148,14 @@ class SchemaMigrationService {
   }
 
   static Future<List<IntegrityResponse>> _checkStage3(
+    String event,
+    Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    final complete = store.getBool(_s3);
-    if (complete) return [];
+    if (store.getBool(_s3)) return [];
+    if (event != 'activity.reference_viewed') return [];
+    if (metadata['ref'] != 'reservations') return [];
+    await store.setBool(_s3, true);
     return [];
   }
 

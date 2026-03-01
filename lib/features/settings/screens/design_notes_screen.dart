@@ -136,7 +136,7 @@ class DesignNotesScreen extends StatelessWidget {
           // Footer
           Center(
             child: Text(
-              'For savv(or)y minds.',
+              'For savv(ou)ry minds.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
                 fontStyle: FontStyle.italic,

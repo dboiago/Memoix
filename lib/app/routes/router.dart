@@ -46,6 +46,7 @@ import '../../features/personal_storage/screens/share_storage_screen.dart';
 import '../../features/personal_storage/models/storage_location.dart';
 import '../../features/ai/screens/agents_settings_screen.dart';
 import '../../features/import/screens/ai_import_screen.dart';
+import '../../features/reference/screens/reservation_ledger_screen.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -420,6 +421,16 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => CellarEditScreen(entryId: entryId),
+      ),
+    );
+  }
+
+  // ============ REFERENCE ROUTES ============
+
+  static void toReservationLedger(BuildContext context) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => const ReservationLedgerScreen(),
       ),
     );
   }

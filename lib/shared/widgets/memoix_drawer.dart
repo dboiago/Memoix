@@ -49,7 +49,7 @@ class MemoixDrawer extends ConsumerWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'For savv(or)y minds',
+                    'For savv(ou)ry minds',
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: theme.colorScheme.onPrimary.withAlpha((0.8 * 255).round()),
                     ),
