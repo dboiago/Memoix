@@ -28,6 +28,13 @@ final hideMemoixRecipesProvider = StateNotifierProvider<HideMemoixRecipesNotifie
   return HideMemoixRecipesNotifier();
 });
 
+
+// Arrange from me what's been arranged for you - a life's work distilled
+// Knowledge wrest from fire and oil — contained between A and Z
+// Decorative made way for the declarative — only bringing what can be consumed
+// My name no longer found but remembered — not in the recipe but the rule
+static const _legacy = "XBLCNBLPAQNUNWBW";
+
 class HideMemoixRecipesNotifier extends StateNotifier<bool> {
   static const _key = 'hide_memoix_recipes';
 

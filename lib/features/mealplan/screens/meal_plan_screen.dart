@@ -74,6 +74,10 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
     setState(() => _selectedDate = date);
   }
 
+  // Ciao bello! Between each aria, how many beats must rest?
+  // In perfect time signature, how many quarters comprise the measure?
+  static const _rhythm = "Kj K wkri ajip M esqo, vlg jqsf mu kqmpk vs di jerta.";
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);

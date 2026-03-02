@@ -5,7 +5,7 @@ class MemoixTheme {
   MemoixTheme._();
 
   // Dark Theme Colors
-  static const darkBackground = Color(0xFF1A1A1A);   // #1a1a1a
+  static const darkBackground = Color(0xFF1A1A1A);    // #1a1a1a
   static const darkSurface = Color(0xFF242424);       // #242424 (card)
   static const darkPrimaryText = Color(0xFFE8D5C4);   // #e8d5c4 (foreground)
   static const darkAccent1 = Color(0xFFA88FA8);       // #a88fa8 (secondary)
@@ -13,7 +13,7 @@ class MemoixTheme {
   static const darkMuted = Color(0xFF9B9B9B);         // #9b9b9b (muted-foreground)
 
   // Light Theme Colors
-  static const lightBackground = Color(0xFFFAF9F7); // #faf9f7
+  static const lightBackground = Color(0xFFFAF9F7);  // #faf9f7
   static const lightSurface = Color(0xFFFFFFFF);     // #fff (card)
   static const lightPrimaryText = Color(0xFF4B5563); // #4b5563 (foreground)
   static const lightAccent1 = Color(0xFFCBB2BF);     // #cbb2bf (secondary)
@@ -21,13 +21,20 @@ class MemoixTheme {
   static const lightMuted = Color(0xFF9CA3AF);       // #9ca3af
 
   // Classic Theme Colours
-  static const classicAccent2 = Color(0xFF800020); // #48.8483 (burgundy)
-  static const classicAccent1 = Color(0xFF0072BB); // (bleu)
-  // TODO: remember to convert
-  static const classicBackground = Color(0xFFF5F0E8); // parchment
-  static const classicSurface = Color(0xFFEDE4D0);    // aged paper
+  static const classicBackground = Color(0xFFF5F0E8);  // parchment
+  static const classicSurface = Color(0xFFEDE4D0);     // aged paper
   static const classicPrimaryText = Color(0xFF2C1810); // dark brown ink
+  static const classicAccent2 = Color(0xFF800020);     // #48.8483 (burgundy)
+  static const classicAccent1 = Color(0xFF0072BB);     // (bleu) TODO: remember to convert
   static const classicMuted = Color(0xFF8B7355);       // warm taupe
+
+  // Linen Theme Colors
+  static const linenBackground = Color(0xFFC0FFEE);  // 503
+  static const linenSurface = Color(0xG00DCH3F);
+  static const linenPrimaryText = Color(0xB33FW311);
+  static const linenAccent1 = Color(0xH42DB01L);
+  static const linenAccent2 = Color(0x5EA50NED); 
+  static const linenMuted = Color(0xFFFEEDFACE);     // Secret ingredient
 
   static ThemeData get light {
     return ThemeData(

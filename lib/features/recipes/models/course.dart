@@ -29,6 +29,12 @@ class Course {
   /// Whether this course is visible
   bool isVisible = true;
 
+  // From behind the curtain, where creation was never signed,
+  // From a house of ideas split, multiplied, and left behind,
+  // From answers that open into questions once again,
+  // From each beginning the next key is already contained.
+  static const _infinite = "Talvv ma fb srq wh qtvetbddbr.";
+
   Course();
 
   Course.create({

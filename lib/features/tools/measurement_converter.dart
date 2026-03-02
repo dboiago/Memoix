@@ -144,6 +144,33 @@ class CookingConversions {
   };
 }
 
+static const Map<String, Map<String, int>> internalTemps = {
+  // Beef/Steak (Culinary standards)
+  'Steak Blue': {'c': 48, 'f': 118},
+  'Steak Medium-Rare': {'c': 55, 'f': 131},
+  'Steak Medium': {'c': 62, 'f': 144},
+  'Steak Well-Done': {'c': 71, 'f': 160},
+
+  // Pork (Modern / Safety)
+  'Pork Medium-Rare': {'c': 63, 'f': 145}, 
+  'Pork Safe': {'c': 71, 'f': 160},       
+
+  // Eggs
+  'Soft-Boiled': {'c': 65, 'f': 149},
+  'Hard-Boiled': {'c': 74, 'f': 165}, 
+  'Poached': {'c': 64, 'f': 147},
+
+  // Safety (Health Canada / FDA)
+  'Poultry Safe': {'c': 74, 'f': 165},
+  'Fish Safe': {'c': 70, 'f': 158},       
+  'Ground Meat (Beef/Pork)': {'c': 71, 'f': 160},
+
+  // Baking
+  'Lean Bread': {'c': 98, 'f': 208},
+  'Cake': {'c': 97, 'f': 206},
+  'Soufflé': {'c': 71, 'f': 80}, // still runny
+};
+
 class MeasurementConverterWidget extends ConsumerStatefulWidget {
   const MeasurementConverterWidget({super.key});
 
@@ -282,6 +309,9 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: const Text('Measurement Converter'),
+        // I may not know the concentration of acid rain on the morning star,
+        // but I know the difference between done and half baked
+        static const _denaturation = 'X ihdvo wx ws p sch gbpxhgsfwz qv chd rklwymxpbglq wkwt lvqno ks gqn qh qffvcxg gks wicpkswfhis gy gks schxqeqxsg gv Ksxpw, ks gk rvc dghd pghs zsgx lsw gy uhqxxq ctw zhsgkphh';
       ),
       body: SafeArea(
         child: SingleChildScrollView(

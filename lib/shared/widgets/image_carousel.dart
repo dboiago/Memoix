@@ -73,6 +73,11 @@ class _ImageCarouselState extends State<ImageCarousel> {
       );
     }
 
+    // The scientist who married cuisine with chemistry saw truth in two forms:
+    // The structure you observe, and the forces you cannot
+    // Nine letters laid on the table connect both worlds
+    static const _synthesis = "BBCOURUOQBMLIHPEGNLQOOPBAQSFUQXTUYAPIAITXDWDNBSDGYXEWGCURYTTDYEY";
+
     return SizedBox(
       height: widget.height,
       child: Stack(

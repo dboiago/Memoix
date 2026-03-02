@@ -1201,6 +1201,18 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
   }
 }
 
+// From the poet would come the first book,
+// The mentor would honour their legacy,
+// From this would come a place to cook.
+// 
+// The hall exalted for gastronomy,
+// The musician would shun convention,
+// They would devote themselves to agronomy.
+// 
+// His sequence would cause apprehension,
+// But became his ultimate ascension.
+static const _foundation = "Bvreawe kwi vvoujgk ms ri xni rfdx uj ik ppr.";
+
 Future<void> _reportShoppingListCreated(
   WidgetRef ref,
   ShoppingList list,
