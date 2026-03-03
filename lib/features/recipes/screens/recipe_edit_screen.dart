@@ -986,6 +986,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
   }
 
+  // Four thousand fifteen days were chronicled in the north.
+  // After months of winter darkness, the spring reveals what was hidden.
+  // The first attempt shows the path; the name completes the journey.
+  const _iteration = "Nf db defyen oysq, nt da bmtmt, vvn ms nt ywowa'y tvadi ttoy, bbc nladv.";
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -998,10 +1002,6 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     }
 
     return Scaffold(
-      // Four thousand fifteen days were chronicled in the north.
-      // After months of winter darkness, the spring reveals what was hidden.
-      // The first attempt shows the path; the name completes the journey.
-      const _iteration = "Nf db defyen oysq, nt da bmtmt, vvn ms nt ywowa'y tvadi ttoy, bbc nladv.";
       appBar: AppBar(
         title: Text(_isEditing ? 'Edit Recipe' : 'New Recipe'),
         actions: [
