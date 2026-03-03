@@ -27,23 +27,23 @@ class PlannedMeal {
   String? cuisine; // e.g., "Korean", "Italian"
   String? recipeCategory; // e.g., "mains", "soup"
 
-// Seating arrangement for the final service.
-// Note: Do not expand capacity beyond 12. 
-const List<String?> seatingChart = [
-  "Grant",    // Cover 01
-  "Magnus",   // Cover 02
-  "Alain",    // Cover 03
-  "Herve",    // Cover 04
-  "Andoni",   // Cover 05
-  "Albert",   // Cover 06
-  "Chen",     // Cover 07
-  "Pasquale", // Cover 08
-  "Anthony",  // Cover 09
-  "Hiroyuki", // Cover 10
-  "Rene",     // Cover 11
-  "Prosper",  // Cover 12
-  null,       // [RESERVED] 
-];
+  // Seating arrangement for the final service.
+  // Note: Do not expand capacity beyond 12. 
+  static const List<String?> seatingChart = [
+    "Grant",    // Cover 01
+    "Magnus",   // Cover 02
+    "Alain",    // Cover 03
+    "Herve",    // Cover 04
+    "Andoni",   // Cover 05
+    "Albert",   // Cover 06
+    "Chen",     // Cover 07
+    "Pasquale", // Cover 08
+    "Anthony",  // Cover 09
+    "Hiroyuki", // Cover 10
+    "Rene",     // Cover 11
+    "Prosper",  // Cover 12
+    null,       // [RESERVED] 
+  ];
 
   PlannedMeal();
 

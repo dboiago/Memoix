@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/recipe.dart';
+import '../../../core/utils/timer_duration_extractor.dart';
+import '../../tools/timer_service.dart';
 
 /// Capitalize the first letter of a sentence
 String _capitalizeSentence(String text) {
@@ -8,12 +12,13 @@ String _capitalizeSentence(String text) {
   return text[0].toUpperCase() + text.substring(1);
 }
 
-class DirectionList extends StatefulWidget {
+class DirectionList extends ConsumerStatefulWidget {
   final List<String> directions;
   final Recipe? recipe;  // Optional: pass recipe for step image support
   final VoidCallback? onStepImageTap;  // Callback when step image icon is tapped
   final Function(int stepIndex)? onScrollToImage;  // Callback to scroll to image
   final bool isCompact;
+  final bool enableTimerLongPress;
 
   const DirectionList({
     super.key,
@@ -22,13 +27,14 @@ class DirectionList extends StatefulWidget {
     this.onStepImageTap,
     this.onScrollToImage,
     this.isCompact = false,
+    this.enableTimerLongPress = false,
   });
 
   @override
-  State<DirectionList> createState() => _DirectionListState();
+  ConsumerState<DirectionList> createState() => _DirectionListState();
 }
 
-class _DirectionListState extends State<DirectionList> {
+class _DirectionListState extends ConsumerState<DirectionList> {
   final Set<int> _completedSteps = {};
 
   // Check if a step is a section header (wrapped in square brackets)
@@ -161,7 +167,7 @@ class _DirectionListState extends State<DirectionList> {
         final isCompleted = _completedSteps.contains(index);
         final hasImage = widget.recipe?.getStepImageIndex(index) != null;
 
-        return InkWell(
+        final inkWell = InkWell(
           onTap: () {
             setState(() {
               if (isCompleted) {
@@ -238,7 +244,93 @@ class _DirectionListState extends State<DirectionList> {
             ),
           ),
         );
+
+        if (!widget.enableTimerLongPress) return inkWell;
+
+        return GestureDetector(
+          onLongPress: () async {
+            final duration = extractTimerDuration(step);
+            if (duration == null) return;
+            await HapticFeedback.mediumImpact();
+            if (context.mounted) {
+              _showTimerBottomSheet(context, ref, duration, step);
+            }
+          },
+          child: inkWell,
+        );
       }),
     );
   }
+}
+
+// ---------------------------------------------------------------------------
+// Timer quick-start bottom sheet
+// ---------------------------------------------------------------------------
+
+String _formatTimerDuration(Duration d) {
+  final h = d.inHours;
+  final m = d.inMinutes.remainder(60).toString().padLeft(2, '0');
+  final s = d.inSeconds.remainder(60).toString().padLeft(2, '0');
+  return h > 0 ? '$h:$m:$s' : '$m:$s';
+}
+
+void _showTimerBottomSheet(
+  BuildContext context,
+  WidgetRef ref,
+  Duration duration,
+  String stepText,
+) {
+  final label = stepText.length > 60 ? '${stepText.substring(0, 60)}…' : stepText;
+  final theme = Theme.of(context);
+
+  showModalBottomSheet(
+    context: context,
+    builder: (ctx) => SafeArea(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
+            child: Text(
+              label,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              _formatTimerDuration(duration),
+              style: theme.textTheme.titleLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.timer_outlined, color: theme.colorScheme.primary),
+            title: const Text('Start Timer'),
+            onTap: () {
+              ref.read(timerServiceProvider.notifier).addTimer(
+                duration: duration,
+                label: label,
+                sound: TimerSound.alarm,
+              );
+              final timers = ref.read(timerServiceProvider).timers;
+              if (timers.isNotEmpty) {
+                ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
+              }
+              Navigator.pop(ctx);
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.close, color: theme.colorScheme.outline),
+            title: const Text('Cancel'),
+            onTap: () => Navigator.pop(ctx),
+          ),
+          const SizedBox(height: 8),
+        ],
+      ),
+    ),
+  );
 }

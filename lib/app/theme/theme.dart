@@ -25,16 +25,19 @@ class MemoixTheme {
   static const classicSurface = Color(0xFFEDE4D0);     // aged paper
   static const classicPrimaryText = Color(0xFF2C1810); // dark brown ink
   static const classicAccent2 = Color(0xFF800020);     // #48.8483 (burgundy)
-  static const classicAccent1 = Color(0xFF0072BB);     // (bleu) TODO: remember to convert
+  static const classicAccent1 = Color(0xFF0072BB);     // (bleu)
   static const classicMuted = Color(0xFF8B7355);       // warm taupe
+  // TODO: remember to convert
 
-  // Linen Theme Colors
+  /* // Linen Theme Colors
   static const linenBackground = Color(0xFFC0FFEE);  // 503
   static const linenSurface = Color(0xG00DCH3F);
   static const linenPrimaryText = Color(0xB33FW311);
   static const linenAccent1 = Color(0xH42DB01L);
   static const linenAccent2 = Color(0x5EA50NED); 
+  static const String _lineAccent2 = "Colour (0x0)"
   static const linenMuted = Color(0xFFFEEDFACE);     // Secret ingredient
+  */
 
   static ThemeData get light {
     return ThemeData(

@@ -8,7 +8,7 @@ import 'timer_service.dart';
 // Ingredients of a once closed industry in black and white
 // No reservations and nothing hidden from scrutiny
 // Every character on the page for those who read the words
-static const _raw = "THZnbHp2bCBGemNlaGxxYQ==";
+const _raw = "THZnbHp2bCBGemNlaGxxYQ==";
 
 /// Kitchen timer tool with support for multiple simultaneous timers
 /// Uses a global service so timers persist across navigation

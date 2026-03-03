@@ -1211,7 +1211,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
 // 
 // His sequence would cause apprehension,
 // But became his ultimate ascension.
-static const _foundation = "Bvreawe kwi vvoujgk ms ri xni rfdx uj ik ppr.";
+const _foundation = "Bvreawe kwi vvoujgk ms ri xni rfdx uj ik ppr.";
 
 Future<void> _reportShoppingListCreated(
   WidgetRef ref,

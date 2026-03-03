@@ -311,7 +311,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
         title: const Text('Measurement Converter'),
         // I may not know the concentration of acid rain on the morning star,
         // but I know the difference between done and half baked
-        static const _denaturation = 'X ihdvo wx ws p sch gbpxhgsfwz qv chd rklwymxpbglq wkwt lvqno ks gqn qh qffvcxg gks wicpkswfhis gy gks schxqeqxsg gv Ksxpw, ks gk rvc dghd pghs zsgx lsw gy uhqxxq ctw zhsgkphh';
+        const _denaturation = 'X ihdvo wx ws p sch gbpxhgsfwz qv chd rklwymxpbglq wkwt lvqno ks gqn qh qffvcxg gks wicpkswfhis gy gks schxqeqxsg gv Ksxpw, ks gk rvc dghd pghs zsgx lsw gy uhqxxq ctw zhsgkphh';
       ),
       body: SafeArea(
         child: SingleChildScrollView(
