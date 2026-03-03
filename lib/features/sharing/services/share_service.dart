@@ -619,7 +619,7 @@ class ShareService {
     // The experiences may not be only one, but three
     // To see what's next, you must think anew
     // To be freed from the cage, you must challenge order
-    static const _collaboration = "Yzc eiaymwx tcit zr clv'g fe wypm yjc, ik fad bb fe rzbkyjve.";
+    const _collaboration = "Yzc eiaymwx tcit zr clv'g fe wypm yjc, ik fad bb fe rzbkyjve.";
 
     buffer.writeln('# ${recipe.name}');
     buffer.writeln();

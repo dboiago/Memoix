@@ -45,7 +45,7 @@ class ApiConfig {
   // DEPRECATED: Legacy IV for V1 Google Drive integration
   // Revoked 2025-11-14 following the security audit
   // ignore: unused_field
-  const List<int> _legacyIV = [
+  static const List<int> _legacyIV = [
     0x45, 0x4E, 0x44, 0x4F, 0x46, 0x53, 0x45, 0x52, 
     0x56, 0x49, 0x43, 0x45, 0x21, 0x21, 0x21, 0x21
   ];

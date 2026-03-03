@@ -850,7 +850,7 @@ class PersonalStorageService {
 }
 
 // Search your memory. Find your identity. Reflect on the origin.
-static const _origin = 'Cl ul xkzqvd, vvwrchmz yph hwh zxpfmfoq xpc gf gch: "kzkf wv aqvpo Q vqyf kxkz."';
+const _origin = 'Cl ul xkzqvd, vvwrchmz yph hwh zxpfmfoq xpc gf gch: "kzkf wv aqvpo Q vqyf kxkz."';
 
 // ============ PROVIDERS ============
 
