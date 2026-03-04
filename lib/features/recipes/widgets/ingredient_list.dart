@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/utils/amount_scaler.dart';
 import '../../../core/utils/amount_utils.dart';
 import '../models/recipe.dart';
 
@@ -105,8 +106,16 @@ String _capitalizeWords(String text) {
 class IngredientList extends StatefulWidget {
   final List<Ingredient> ingredients;
   final bool isCompact;
+  /// Scaling factor applied at render time. 1.0 means no scaling.
+  /// Never written to the database — purely a display transformation.
+  final double scaleFactor;
 
-  const IngredientList({super.key, required this.ingredients, this.isCompact = false});
+  const IngredientList({
+    super.key,
+    required this.ingredients,
+    this.isCompact = false,
+    this.scaleFactor = 1.0,
+  });
 
   @override
   State<IngredientList> createState() => _IngredientListState();
@@ -172,7 +181,7 @@ class _IngredientListState extends State<IngredientList> {
     // Build the amount string with proper formatting
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = AmountUtils.formatRaw(ingredient.amount!);
+      amountText = AmountScaler.scale(ingredient.amount, widget.scaleFactor) ?? AmountUtils.formatRaw(ingredient.amount!);
       if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
         amountText += ' ${ingredient.unit}';
       }

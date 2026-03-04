@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/utils/amount_scaler.dart';
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/utils/timer_duration_extractor.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -26,6 +27,8 @@ class SplitRecipeView extends StatelessWidget {
   final Function(int stepIndex)? onScrollToImage;
   final Widget? metadataWidget;
   final List<Widget>? pairedRecipeChips;
+  /// Scaling factor applied at render time. 1.0 means no scaling.
+  final double scaleFactor;
 
   const SplitRecipeView({
     super.key,
@@ -33,6 +36,7 @@ class SplitRecipeView extends StatelessWidget {
     this.onScrollToImage,
     this.metadataWidget,
     this.pairedRecipeChips,
+    this.scaleFactor = 1.0,
   });
 
   /// Calculate the flex ratio for ingredients column based on screen width.
@@ -259,6 +263,7 @@ class SplitRecipeView extends StatelessWidget {
                             child: _IngredientsColumn(
                               ingredients: recipe.ingredients,
                               isCompact: isCompact,
+                              scaleFactor: scaleFactor,
                             ),
                           ),
                         ),
@@ -555,10 +560,12 @@ class SplitRecipeView extends StatelessWidget {
 class _IngredientsColumn extends StatefulWidget {
   final List<Ingredient> ingredients;
   final bool isCompact;
+  final double scaleFactor;
 
   const _IngredientsColumn({
     required this.ingredients,
     required this.isCompact,
+    this.scaleFactor = 1.0,
   });
 
   @override
@@ -610,7 +617,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     // Build amount string
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = AmountUtils.formatRaw(ingredient.amount!);
+      amountText = AmountScaler.scale(ingredient.amount, widget.scaleFactor) ?? AmountUtils.formatRaw(ingredient.amount!);
       if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
         amountText += ' ${ingredient.unit}';
       }

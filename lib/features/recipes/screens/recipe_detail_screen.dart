@@ -1,10 +1,13 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/utils/amount_scaler.dart';
+import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
@@ -160,6 +163,17 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   final ScrollController _scrollController = ScrollController();
   final GlobalKey _stepImagesKey = GlobalKey();
 
+  /// Ephemeral serving count. null = unscaled (factor 1.0).
+  /// Never written to the database.
+  int? _targetServes;
+
+  /// Derives the current scale factor from [_targetServes].
+  double _scaleFactor(Recipe recipe) {
+    if (_targetServes == null) return 1.0;
+    final baseline = AmountUtils.extractBaselineServes(recipe.serves);
+    return _targetServes! / baseline;
+  }
+
   @override
   void dispose() {
     _scrollController.dispose();
@@ -248,6 +262,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   ? _buildPairedRecipeChips(context, ref, recipe, theme)
                   : null,
               onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+              scaleFactor: _scaleFactor(recipe),
             ),
           ),
         ],
@@ -293,25 +308,48 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,
           ),
-        // Serves chip
+        // Serves chip — long-press to scale, tap to reset
         if (recipe.serves != null && recipe.serves!.isNotEmpty)
-          Chip(
-            label: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.people, size: 12, color: theme.colorScheme.onSurface),
-                const SizedBox(width: 3),
-                Text(UnitNormalizer.normalizeServes(recipe.serves!)),
-              ],
+          GestureDetector(
+            onLongPress: () {
+              HapticFeedback.mediumImpact();
+              _showServingsBottomSheet(context, recipe);
+            },
+            onTap: _targetServes != null
+                ? () => setState(() => _targetServes = null)
+                : null,
+            child: Chip(
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.people,
+                    size: 12,
+                    color: _targetServes != null
+                        ? theme.colorScheme.onPrimaryContainer
+                        : theme.colorScheme.onSurface,
+                  ),
+                  const SizedBox(width: 3),
+                  Text(
+                    _targetServes != null
+                        ? _targetServes.toString()
+                        : UnitNormalizer.normalizeServes(recipe.serves!),
+                  ),
+                ],
+              ),
+              backgroundColor: _targetServes != null
+                  ? theme.colorScheme.primaryContainer
+                  : theme.colorScheme.surfaceContainerHighest,
+              labelStyle: TextStyle(
+                color: _targetServes != null
+                    ? theme.colorScheme.onPrimaryContainer
+                    : theme.colorScheme.onSurface,
+                fontSize: chipFontSize,
+              ),
+              visualDensity: VisualDensity.compact,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              padding: EdgeInsets.zero,
             ),
-            backgroundColor: theme.colorScheme.surfaceContainerHighest,
-            labelStyle: TextStyle(
-              color: theme.colorScheme.onSurface,
-              fontSize: chipFontSize,
-            ),
-            visualDensity: VisualDensity.compact,
-            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            padding: EdgeInsets.zero,
           ),
         // Time chip
         if (recipe.time != null && recipe.time!.isNotEmpty)
@@ -334,6 +372,84 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             padding: EdgeInsets.zero,
           ),
       ],
+    );
+  }
+
+  void _showServingsBottomSheet(BuildContext context, Recipe recipe) {
+    final baseline = AmountUtils.extractBaselineServes(recipe.serves);
+    final controller = TextEditingController(
+      text: _targetServes?.toString() ?? baseline.round().toString(),
+    );
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (sheetContext, setSheetState) {
+            final theme = Theme.of(sheetContext);
+            return SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Servings', style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 4),
+                    Text(
+                      'Original: ${UnitNormalizer.normalizeServes(recipe.serves!)}',
+                      style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                    ),
+                    const SizedBox(height: 20),
+                    TextField(
+                      controller: controller,
+                      keyboardType: TextInputType.number,
+                      inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                      decoration: InputDecoration(
+                        labelText: 'Number of servings',
+                        border: const OutlineInputBorder(),
+                      ),
+                      autofocus: true,
+                    ),
+                    const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        TextButton(
+                          onPressed: () => Navigator.pop(ctx),
+                          child: const Text('Cancel'),
+                        ),
+                        if (_targetServes != null) ...[
+                          const SizedBox(width: 8),
+                          TextButton(
+                            onPressed: () {
+                              setState(() => _targetServes = null);
+                              Navigator.pop(ctx);
+                            },
+                            child: const Text('Reset'),
+                          ),
+                        ],
+                        const SizedBox(width: 8),
+                        FilledButton(
+                          onPressed: () {
+                            final parsed = int.tryParse(controller.text.trim());
+                            if (parsed != null && parsed > 0) {
+                              setState(() => _targetServes = parsed);
+                              Navigator.pop(ctx);
+                            }
+                          },
+                          child: const Text('Apply'),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        );
+      },
     );
   }
 
@@ -620,7 +736,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                     children: [
                                       Text('Ingredients', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
                                       const SizedBox(height: 12),
-                                      IngredientList(ingredients: recipe.ingredients),
+                                      IngredientList(ingredients: recipe.ingredients, scaleFactor: _scaleFactor(recipe)),
                                     ],
                                   ),
                                 ),
@@ -667,7 +783,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          IngredientList(ingredients: recipe.ingredients),
+                          IngredientList(ingredients: recipe.ingredients, scaleFactor: _scaleFactor(recipe)),
                           const SizedBox(height: 24),
                           Text(
                             'Directions',
