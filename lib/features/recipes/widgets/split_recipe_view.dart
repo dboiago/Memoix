@@ -8,6 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/utils/amount_scaler.dart';
 import '../../../core/utils/amount_utils.dart';
+import '../../../core/utils/ingredient_categorizer.dart';
 import '../../../core/utils/timer_duration_extractor.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/time_picker_column.dart';
@@ -617,9 +618,24 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     // Build amount string
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = AmountScaler.scale(ingredient.amount, widget.scaleFactor) ?? AmountUtils.formatRaw(ingredient.amount!);
-      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
-        amountText += ' ${ingredient.unit}';
+      final category = IngredientService().classify(ingredient.name);
+      final scaled = AmountScaler.scale(
+        ingredient.amount,
+        widget.scaleFactor,
+        unit: ingredient.unit,
+        category: category,
+      );
+      if (scaled != null) {
+        amountText = scaled;
+        final unitStr = ingredient.unit?.trim() ?? '';
+        if (unitStr.isNotEmpty && !amountText.contains(unitStr)) {
+          amountText += ' $unitStr';
+        }
+      } else {
+        amountText = AmountUtils.formatRaw(ingredient.amount!);
+        if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
+          amountText += ' ${ingredient.unit}';
+        }
       }
     }
 

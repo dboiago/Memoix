@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/utils/amount_scaler.dart';
 import '../../../core/utils/amount_utils.dart';
+import '../../../core/utils/ingredient_categorizer.dart';
 import '../models/recipe.dart';
 
 /// Result of parsing ingredient notes for special patterns
@@ -181,9 +182,26 @@ class _IngredientListState extends State<IngredientList> {
     // Build the amount string with proper formatting
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = AmountScaler.scale(ingredient.amount, widget.scaleFactor) ?? AmountUtils.formatRaw(ingredient.amount!);
-      if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
-        amountText += ' ${ingredient.unit}';
+      final category = IngredientService().classify(ingredient.name);
+      final scaled = AmountScaler.scale(
+        ingredient.amount,
+        widget.scaleFactor,
+        unit: ingredient.unit,
+        category: category,
+      );
+      if (scaled != null) {
+        // _formatAndEscalate may have embedded the unit already.
+        amountText = scaled;
+        // Append unit only if the scaled string doesn't already include it.
+        final unitStr = ingredient.unit?.trim() ?? '';
+        if (unitStr.isNotEmpty && !amountText.contains(unitStr)) {
+          amountText += ' $unitStr';
+        }
+      } else {
+        amountText = AmountUtils.formatRaw(ingredient.amount!);
+        if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
+          amountText += ' ${ingredient.unit}';
+        }
       }
     }
     
