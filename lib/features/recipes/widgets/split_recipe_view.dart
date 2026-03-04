@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/utils/amount_utils.dart';
 import '../../../core/utils/timer_duration_extractor.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/time_picker_column.dart';
@@ -609,7 +610,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     // Build amount string
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = _formatAmount(ingredient.amount!);
+      amountText = AmountUtils.formatRaw(ingredient.amount!);
       if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
         amountText += ' ${ingredient.unit}';
       }
@@ -1166,56 +1167,6 @@ _ParsedNotes _parseNotes(String notes) {
     alternative: alternative,
     remainingNotes: remaining,
   );
-}
-
-/// Format amount to clean up decimals and display fractions
-String _formatAmount(String amount) {
-  var result = amount.trim();
-  
-  // Remove trailing .0 from whole numbers
-  result = result.replaceAllMapped(
-    RegExp(r'(\d+)\.0(?=\s|$|-|–)'),
-    (match) => match.group(1)!,
-  );
-  if (result.endsWith('.0')) {
-    result = result.substring(0, result.length - 2);
-  }
-  
-  // Convert common decimal fractions to unicode fractions
-  final fractionMap = {
-    '.5': '½',
-    '.25': '¼',
-    '.75': '¾',
-    '.33': '⅓',
-    '.333': '⅓',
-    '.67': '⅔',
-    '.667': '⅔',
-  };
-  
-  for (final entry in fractionMap.entries) {
-    result = result.replaceAllMapped(
-      RegExp('(\\d+)${RegExp.escape(entry.key)}(?=\\s|\$|-|–)'),
-      (match) => '${match.group(1)}${entry.value}',
-    );
-    if (result == entry.key || result.startsWith('${entry.key} ')) {
-      result = result.replaceFirst(entry.key, entry.value);
-    }
-  }
-  
-  // Text fractions
-  final textFractionMap = {
-    '1/2': '½',
-    '1/4': '¼',
-    '3/4': '¾',
-    '1/3': '⅓',
-    '2/3': '⅔',
-  };
-  
-  for (final entry in textFractionMap.entries) {
-    result = result.replaceAll(entry.key, entry.value);
-  }
-  
-  return result;
 }
 
 /// Capitalize the first letter of each word

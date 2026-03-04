@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
@@ -1211,20 +1212,6 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
     }).join(' ');
   }
   
-  /// Format amount to clean up decimals
-  String _formatAmount(String amount) {
-    var result = amount.trim();
-    // Remove trailing .0 from whole numbers
-    result = result.replaceAllMapped(
-      RegExp(r'(\d+)\.0(?=\s|$|-|–)'),
-      (match) => match.group(1)!,
-    );
-    if (result.endsWith('.0')) {
-      result = result.substring(0, result.length - 2);
-    }
-    return result;
-  }
-  
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -1239,7 +1226,7 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
         // Build amount string
         String amountText = '';
         if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-          amountText = _formatAmount(ingredient.amount!);
+          amountText = AmountUtils.formatRaw(ingredient.amount!);
           if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
             amountText += ' ${ingredient.unit}';
           }

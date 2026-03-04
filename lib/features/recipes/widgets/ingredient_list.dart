@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../../../core/utils/amount_utils.dart';
 import '../models/recipe.dart';
 
 /// Result of parsing ingredient notes for special patterns
@@ -100,68 +102,6 @@ String _capitalizeWords(String text) {
   }).join(' ');
 }
 
-/// Format amount to clean up decimals and display fractions
-String _formatAmount(String amount) {
-  var result = amount.trim();
-  
-  // Remove trailing .0 from whole numbers (e.g., "2.0" -> "2")
-  result = result.replaceAllMapped(
-    RegExp(r'(\d+)\.0(?=\s|$|-|–)'),
-    (match) => match.group(1)!,
-  );
-  // Handle standalone .0
-  if (result.endsWith('.0')) {
-    result = result.substring(0, result.length - 2);
-  }
-  
-  // Convert common decimal fractions to unicode fractions
-  final fractionMap = {
-    '.5': '½',
-    '.25': '¼',
-    '.75': '¾',
-    '.33': '⅓',
-    '.333': '⅓',
-    '.67': '⅔',
-    '.667': '⅔',
-    '.125': '⅛',
-    '.375': '⅜',
-    '.625': '⅝',
-    '.875': '⅞',
-  };
-  
-  // Replace decimal fractions with unicode
-  for (final entry in fractionMap.entries) {
-    // Handle "1.5" -> "1½"
-    result = result.replaceAllMapped(
-      RegExp('(\\d+)${RegExp.escape(entry.key)}(?=\\s|\$|-|–)'),
-      (match) => '${match.group(1)}${entry.value}',
-    );
-    // Handle standalone ".5" -> "½"
-    if (result == entry.key || result.startsWith('${entry.key} ')) {
-      result = result.replaceFirst(entry.key, entry.value);
-    }
-  }
-  
-  // Also convert text fractions like "1/2" to "½"
-  final textFractionMap = {
-    '1/2': '½',
-    '1/4': '¼',
-    '3/4': '¾',
-    '1/3': '⅓',
-    '2/3': '⅔',
-    '1/8': '⅛',
-    '3/8': '⅜',
-    '5/8': '⅝',
-    '7/8': '⅞',
-  };
-  
-  for (final entry in textFractionMap.entries) {
-    result = result.replaceAll(entry.key, entry.value);
-  }
-  
-  return result;
-}
-
 class IngredientList extends StatefulWidget {
   final List<Ingredient> ingredients;
   final bool isCompact;
@@ -232,7 +172,7 @@ class _IngredientListState extends State<IngredientList> {
     // Build the amount string with proper formatting
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      amountText = _formatAmount(ingredient.amount!);
+      amountText = AmountUtils.formatRaw(ingredient.amount!);
       if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
         amountText += ' ${ingredient.unit}';
       }

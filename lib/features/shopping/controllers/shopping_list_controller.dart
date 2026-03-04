@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:memoix/core/utils/amount_utils.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
 import 'package:memoix/core/utils/text_normalizer.dart';
 import 'package:memoix/core/utils/unit_normalizer.dart';
@@ -128,58 +129,13 @@ class ShoppingListController {
   static String aisleFor(IngredientCategory cat) =>
       storeAisle[cat] ?? 'Other';
 
-  /// Parses diverse quantity strings into a double.
-  /// 
-  /// Handles:
-  /// - Integers: "1" -> 1.0
-  /// - Decimals: "1.5" -> 1.5
-  /// - Unicode Fractions: "½" -> 0.5
-  /// - Ranges: "1-2" -> 2.0 (Conservative/Max)
-  /// - Text Fractions: "1/2" -> 0.5 (via normalizeFractions)
-  double _parseQuantity(String? amount) {
-    if (amount == null || amount.isEmpty) return 0.0;
-
-    // 1. Normalize fractions (1/2 -> ½)
-    String cleaned = TextNormalizer.normalizeFractions(amount);
-    
-    // 2. Handle ranges (take max)
-    if (cleaned.contains('-') || cleaned.contains('–')) {
-       final parts = cleaned.split(RegExp(r'[-–]'));
-       // Usually last part is max (1-2)
-       if (parts.length > 1) {
-         return _parseQuantity(parts.last);
-       }
-    }
-
-    double total = 0.0;
-    
-    // 3. Unicode Fraction Map
-    const fractionMap = {
-      '½': 0.5, '¼': 0.25, '¾': 0.75,
-      '⅓': 0.333, '⅔': 0.666,
-      '⅛': 0.125, '⅜': 0.375, '⅝': 0.625, '⅞': 0.875,
-      '⅕': 0.2, '⅖': 0.4, '⅗': 0.6, '⅘': 0.8,
-      '⅙': 0.166, '⅚': 0.833,
-    };
-
-    // 4. Sum up numbers and fractions
-    // "1 ½" -> 1.0 + 0.5
-    final regex = RegExp(r'(\d+(?:\.\d+)?)|([' + fractionMap.keys.join() + r'])');
-    final matches = regex.allMatches(cleaned);
-    
-    for (final match in matches) {
-      final numStr = match.group(1);
-      final fracStr = match.group(2);
-      
-      if (numStr != null) {
-        total += double.tryParse(numStr) ?? 0.0;
-      } else if (fracStr != null) {
-        total += fractionMap[fracStr] ?? 0.0;
-      }
-    }
-
-    return total;
-  }
+  /// Parse an ingredient amount string into a [double].
+  ///
+  /// Delegates to [AmountUtils.parseMax], which handles all recognised
+  /// formats (integers, decimals, fractions, mixed numbers, ranges).
+  /// For range strings the maximum value is returned, consistent with the
+  /// previous behaviour of taking a conservative/worst-case purchase quantity.
+  double _parseQuantity(String? amount) => AmountUtils.parseMax(amount);
 }
 
 /// Helper to aggregate variants before building final item
