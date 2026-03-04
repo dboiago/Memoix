@@ -1040,7 +1040,7 @@ void _showTimerBottomSheet(
                             final rootCtx = sheetContext;
                             Navigator.pop(ctx);
                             MemoixSnackBar.showWithAction(
-                              message: 'Timer started — ${_formatTimerDuration(d)}',
+                              message: 'Timer started - ${_formatTimerDuration(d)}',
                               actionLabel: 'View',
                               onAction: () => AppRoutes.toKitchenTimer(rootCtx),
                             );
