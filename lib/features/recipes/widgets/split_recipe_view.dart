@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/utils/timer_duration_extractor.dart';
+import '../../../shared/widgets/time_picker_column.dart';
 import '../../tools/timer_service.dart';
 import '../models/recipe.dart';
 
@@ -863,7 +864,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final verticalPadding = widget.isCompact ? 4.0 : 6.0;
     final fontSize = widget.isCompact ? 12.0 : 14.0;
 
-    final inkWell = InkWell(
+    return InkWell(
       onTap: () {
         setState(() {
           if (isCompleted) {
@@ -872,6 +873,14 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
             _completedSteps.add(index);
           }
         });
+      },
+      onLongPress: () async {
+        final duration = extractTimerDuration(step);
+        if (duration == null) return;
+        await HapticFeedback.mediumImpact();
+        if (context.mounted) {
+          _showTimerBottomSheet(context, ref, duration, step);
+        }
       },
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: verticalPadding),
@@ -927,18 +936,6 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
         ),
       ),
     );
-
-    return GestureDetector(
-      onLongPress: () async {
-        final duration = extractTimerDuration(step);
-        if (duration == null) return;
-        await HapticFeedback.mediumImpact();
-        if (context.mounted) {
-          _showTimerBottomSheet(context, ref, duration, step);
-        }
-      },
-      child: inkWell,
-    );
   }
 }
 
@@ -946,71 +943,102 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
 // Timer quick-start bottom sheet (split view)
 // ---------------------------------------------------------------------------
 
-String _formatTimerDuration(Duration d) {
-  final h = d.inHours;
-  final m = d.inMinutes.remainder(60).toString().padLeft(2, '0');
-  final s = d.inSeconds.remainder(60).toString().padLeft(2, '0');
-  return h > 0 ? '$h:$m:$s' : '$m:$s';
-}
-
 void _showTimerBottomSheet(
   BuildContext context,
   WidgetRef ref,
   Duration duration,
   String stepText,
 ) {
-  final label = stepText.length > 60 ? '${stepText.substring(0, 60)}…' : stepText;
-  final theme = Theme.of(context);
+  final label = stepText.length > 60 ? '${stepText.substring(0, 60)}\u2026' : stepText;
 
   showModalBottomSheet(
     context: context,
-    builder: (ctx) => SafeArea(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
-            child: Text(
-              label,
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+    isScrollControlled: true,
+    builder: (ctx) {
+      int hours = duration.inHours;
+      int minutes = duration.inMinutes.remainder(60);
+      int seconds = duration.inSeconds.remainder(60);
+
+      return StatefulBuilder(
+        builder: (sheetContext, setSheetState) {
+          final theme = Theme.of(sheetContext);
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    label,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      TimePickerColumn(
+                        label: 'Hours',
+                        value: hours,
+                        max: 23,
+                        onChanged: (v) => setSheetState(() => hours = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Min',
+                        value: minutes,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => minutes = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Sec',
+                        value: seconds,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => seconds = v),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(ctx),
+                        child: const Text('Cancel'),
+                      ),
+                      const SizedBox(width: 8),
+                      FilledButton(
+                        onPressed: () {
+                          final d = Duration(
+                            hours: hours,
+                            minutes: minutes,
+                            seconds: seconds,
+                          );
+                          if (d.inSeconds > 0) {
+                            ref.read(timerServiceProvider.notifier).addTimer(
+                              duration: d,
+                              label: label,
+                              sound: TimerSound.alarm,
+                            );
+                            final timers = ref.read(timerServiceProvider).timers;
+                            if (timers.isNotEmpty) {
+                              ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
+                            }
+                          }
+                          Navigator.pop(ctx);
+                        },
+                        child: const Text('Start'),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            child: Text(
-              _formatTimerDuration(duration),
-              style: theme.textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-          ListTile(
-            leading: Icon(Icons.timer_outlined, color: theme.colorScheme.primary),
-            title: const Text('Start Timer'),
-            onTap: () {
-              ref.read(timerServiceProvider.notifier).addTimer(
-                duration: duration,
-                label: label,
-                sound: TimerSound.alarm,
-              );
-              final timers = ref.read(timerServiceProvider).timers;
-              if (timers.isNotEmpty) {
-                ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
-              }
-              Navigator.pop(ctx);
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.close, color: theme.colorScheme.outline),
-            title: const Text('Cancel'),
-            onTap: () => Navigator.pop(ctx),
-          ),
-          const SizedBox(height: 8),
-        ],
-      ),
-    ),
+          );
+        },
+      );
+    },
   );
 }
 
