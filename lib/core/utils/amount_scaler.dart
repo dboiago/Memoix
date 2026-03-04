@@ -22,13 +22,13 @@ import 'ingredient_categorizer.dart';
 /// This enum is **internal to the scaling layer only**. It does not replace
 /// or modify [IngredientCategory] or [IngredientService].
 enum ScalingCategory {
-  salt,      // exponent 0.75 — very sub-linear at catering scale
-  spice,     // exponent 0.68
-  heat,      // exponent 0.62 — chili / hot sauce / capsicum compounds
-  acid,      // exponent 0.72 — vinegar, citrus juice
-  aromatic,  // exponent 0.82 — garlic, onion, shallot, ginger
-  leavening, // exponent 0.80
-  linear,    // exponent 1.0 — default for all other categories
+  salt,        // salinity-dominant, moderate dampening
+  heat,        // capsaicin/heat compounds, aggressive dampening
+  acid,        // brightness/acidity, moderate dampening
+  leavening,   // baking science, well-established dampening
+  strongSpice, // dominant savory flavor, noticeable saturation
+  mildSpice,   // background/baking flavor, nearly linear
+  linear,      // everything else — default
 }
 
 // ── Scaling classifier ──────────────────────────────────────────────────────
@@ -39,41 +39,54 @@ enum ScalingCategory {
 /// cross-category ingredients (e.g. soy sauce classified as `condiment` but
 /// behaves like `salt`) receive the correct dampening.
 ///
-/// To extend the keyword lists, add entries to the relevant list below.
-/// Order within each method has no effect — all lists are checked exhaustively.
+/// To extend coverage, add keywords to the relevant list below.
+/// Order within each list has no effect — all keywords are checked exhaustively.
 class ScalingClassifier {
-  // ── Salt keywords ─────────────────────────────────────────────────────
+  // ── Salt (0.75) — salinity sources and pepper ──────────────────────────
+  // Add keywords here to expand salt coverage.
   static const List<String> _saltKeywords = [
     'salt', 'miso', 'soy sauce', 'fish sauce', 'worcestershire',
-    'tamari', 'anchovies', 'anchovy', 'capers', 'caper',
-    'msg',
+    'tamari', 'anchov', 'caper', 'black pepper', 'white pepper',
+    'peppercorn',
   ];
 
-  // ── Heat keywords ─────────────────────────────────────────────────────
+  // ── Heat (0.62) — capsaicin and heat compounds only ────────────────────
+  // Add keywords here to expand heat coverage.
   static const List<String> _heatKeywords = [
-    'chili', 'chile', 'cayenne', 'pepper flakes', 'red pepper flake',
-    'sriracha', 'tabasco', 'harissa', 'jalapeño', 'jalapeno',
-    'habanero', 'serrano', 'scotch bonnet', 'ghost pepper',
-    'gochugaru', 'gochujang', 'sambal', 'chipotle', 'ancho',
-    'thai chili', 'bird eye', "bird's eye",
+    'cayenne', 'chili', 'chile', 'chilli', 'pepper flake',
+    'red pepper', 'sriracha', 'tabasco', 'harissa', 'jalapeño',
+    'jalapeno', 'habanero', 'serrano', 'chipotle', 'ghost pepper',
+    'scotch bonnet',
   ];
 
-  // ── Acid keywords ─────────────────────────────────────────────────────
+  // ── Acid (0.72) ────────────────────────────────────────────────────────
+  // Add keywords here to expand acid coverage.
   static const List<String> _acidKeywords = [
     'vinegar', 'lemon juice', 'lime juice', 'citrus juice',
-    'tamarind', 'verjuice',
+    'tamarind', 'sumac',
   ];
 
-  // ── Leavening keywords ────────────────────────────────────────────────
+  // ── Leavening (0.80) ───────────────────────────────────────────────────
+  // Add keywords here to expand leavening coverage.
   static const List<String> _leaveningKeywords = [
-    'baking powder', 'baking soda', 'yeast', 'cream of tartar',
-    'bicarbonate', 'sodium bicarbonate',
+    'baking powder', 'baking soda', 'bicarbonate', 'yeast',
+    'cream of tartar',
   ];
 
-  // ── Aromatic keywords ─────────────────────────────────────────────────
-  static const List<String> _aromaticKeywords = [
-    'garlic', 'onion', 'shallot', 'ginger', 'leek', 'scallion',
-    'green onion', 'spring onion', 'chive',
+  // ── Strong spice (0.75) — dominant savory spices ───────────────────────
+  // Add keywords here to expand strong spice coverage.
+  static const List<String> _strongSpiceKeywords = [
+    'cumin', 'coriander', 'turmeric', 'paprika', 'caraway',
+    'clove', 'star anise', 'fennel seed', 'fenugreek', 'mustard seed',
+    'szechuan', 'sichuan', 'five spice', "za'atar", 'ras el hanout',
+    'garam masala', 'curry powder', 'smoked paprika',
+  ];
+
+  // ── Mild spice (0.90) — background and baking spices ───────────────────
+  // Add keywords here to expand mild spice coverage.
+  static const List<String> _mildSpiceKeywords = [
+    'cinnamon', 'nutmeg', 'allspice', 'cardamom', 'vanilla',
+    'mace', 'ginger', 'anise seed', 'mixed spice',
   ];
 
   /// Classify [ingredientName] for scaling purposes.
@@ -87,21 +100,22 @@ class ScalingClassifier {
     final lower = ingredientName.toLowerCase();
 
     // ── Keyword pass first ──────────────────────────────────────────────
-    if (_matchesAny(lower, _saltKeywords))     return ScalingCategory.salt;
-    if (_matchesAny(lower, _heatKeywords))     return ScalingCategory.heat;
-    if (_matchesAny(lower, _acidKeywords))     return ScalingCategory.acid;
-    if (_matchesAny(lower, _leaveningKeywords)) return ScalingCategory.leavening;
-    if (_matchesAny(lower, _aromaticKeywords)) return ScalingCategory.aromatic;
+    if (_matchesAny(lower, _saltKeywords))        return ScalingCategory.salt;
+    if (_matchesAny(lower, _heatKeywords))        return ScalingCategory.heat;
+    if (_matchesAny(lower, _acidKeywords))        return ScalingCategory.acid;
+    if (_matchesAny(lower, _leaveningKeywords))   return ScalingCategory.leavening;
+    if (_matchesAny(lower, _strongSpiceKeywords)) return ScalingCategory.strongSpice;
+    if (_matchesAny(lower, _mildSpiceKeywords))   return ScalingCategory.mildSpice;
 
     // ── Category fallback ───────────────────────────────────────────────
+    // Allium, herb, produce, condiment, dairy, fat, and all other categories
+    // fall through to linear — this is intentional.
     switch (category) {
       case IngredientCategory.spice:
-        return ScalingCategory.spice;
+        // Conservative — unrecognised spices are more likely savory.
+        return ScalingCategory.strongSpice;
       case IngredientCategory.vinegar:
         return ScalingCategory.acid;
-      case IngredientCategory.condiment:
-        // Conservative — condiments vary; default to spice-level dampening.
-        return ScalingCategory.spice;
       default:
         return ScalingCategory.linear;
     }
@@ -145,12 +159,12 @@ class AmountScaler {
   /// Values are calibrated for catering-scale factors (4 → 200 servings)
   /// as well as home-cooking scale (1 → 4 servings).
   static const Map<ScalingCategory, double> scalingExponents = {
-    ScalingCategory.salt:      0.75,
-    ScalingCategory.spice:     0.68,
-    ScalingCategory.heat:      0.62,
-    ScalingCategory.acid:      0.72,
-    ScalingCategory.aromatic:  0.82,
-    ScalingCategory.leavening: 0.80,
+    ScalingCategory.salt:        0.75,
+    ScalingCategory.heat:        0.62,
+    ScalingCategory.acid:        0.72,
+    ScalingCategory.leavening:   0.80,
+    ScalingCategory.strongSpice: 0.75,
+    ScalingCategory.mildSpice:   0.90,
     // ScalingCategory.linear → 1.0, no entry needed
   };
 

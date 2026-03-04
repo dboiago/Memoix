@@ -381,19 +381,18 @@ void main() {
   // ── AmountScaler upgrade: power law, snap-to-grid, escalation ─────────────
   //
   // ScalingCategory mapping used in these tests:
-  //   salt keywords   → ScalingCategory.salt      (exponent 0.75)
-  //   spice category  → ScalingCategory.spice     (exponent 0.68)
-  //   heat keywords   → ScalingCategory.heat      (exponent 0.62)
-  //   leavening kwds  → ScalingCategory.leavening (exponent 0.80)
-  //   aromatic kwds   → ScalingCategory.aromatic  (exponent 0.82)
-  //   null / unmapped → ScalingCategory.linear    (exponent 1.0)
+  //   salt keywords        → ScalingCategory.salt        (exponent 0.75)
+  //   strongSpice keywords → ScalingCategory.strongSpice (exponent 0.75)
+  //   heat keywords        → ScalingCategory.heat        (exponent 0.62)
+  //   leavening keywords   → ScalingCategory.leavening   (exponent 0.80)
+  //   mildSpice keywords   → ScalingCategory.mildSpice   (exponent 0.90)
+  //   null / unmapped      → ScalingCategory.linear      (exponent 1.0)
   //
   // Key pre-calculated values (scaledAmount = raw × factor^exp):
   //   "1 tsp" salt   ×4 (salt/0.75):  1 × 4^0.75 = 2.828 → spoon-grid 2¾ tsp → 2.75/3≈0.917 not clean
   //   "½ C"          ×1.444 (linear): 0.5 × 1.444 = 0.722 → full-grid ¾ C
-  //   "½ tsp" spice  ×1.444 (spice/0.68): 0.5 × 1.444^0.68 = 0.5×1.274 = 0.637 → spoon-grid ½ tsp (d=0.137 vs ¾ d=0.113) → ¾
-  //     wait: recalc: 1.444^0.68 = e^(0.68×ln1.444) = e^(0.68×0.3674) = e^0.2498 = 1.2837
-  //     → 0.5 × 1.2837 = 0.6418; spoon grid: ½(d=0.1418) vs ¾(d=0.1082) → snaps to ¾ tsp
+  //   "½ tsp" spice  ×1.444 (strongSpice/0.75): 0.5 × 1.444^0.75 = 0.5×1.3173 = 0.6587
+  //     spoon grid: ¾(d=0.0913) beats ½(d=0.1587) → snaps to ¾ tsp
   //   "2 eggs"       ×1.444 (countable): 2 × 1.444 = 2.888 → round → 3
   //   "½ tsp"        ×0.25  (linear):   0.5 × 0.25 = 0.125 → floor → ⅛ tsp
   //   "3 tsp"        ×2     (linear):   3 × 2 = 6 tsp ÷ 3 = 2 (int) → escalate → 2 Tbsp
@@ -409,11 +408,11 @@ void main() {
       );
     });
 
-    test('"½ tsp" cinnamon ×1.444 (spice/0.68): → snaps ¾ tsp', () {
-      // 1.444^0.68 = e^(0.68×0.3674) = e^0.2498 = 1.2837
-      // 0.5 × 1.2837 = 0.6418; spoon grid: ¾(d=0.1082) beats ½(d=0.1418) → ¾ tsp
+    test('"½ tsp" cinnamon ×1.444 (strongSpice/0.75): → snaps ¾ tsp', () {
+      // 1.444^0.75 = e^(0.75×0.3674) = e^0.2756 = 1.3173
+      // 0.5 × 1.3173 = 0.6587; spoon grid: ¾(d=0.0913) beats ½(d=0.1587) → ¾ tsp
       expect(
-        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.strongSpice),
         '¾ tsp',
       );
     });
@@ -430,12 +429,12 @@ void main() {
       );
     });
 
-    test('aromatic dampening (0.82): "4" cloves ×4 → 4×4^0.82=4×3.261=13.044 → countable round 13', () {
-      // 4^0.82 = e^(0.82×ln4) = e^(0.82×1.3863) = e^1.1368 = 3.1157
-      // 4 × 3.1157 = 12.463 → round → 12
+    test('linear: "4" cloves ×4 → countable round 16 (alliums are linear)', () {
+      // garlic/alliums fall through to linear (no aromatic category in new design)
+      // 4 × 4 = 16 → countable → 16
       expect(
-        AmountScaler.scale('4', 4.0, unit: 'cloves', scalingCategory: ScalingCategory.aromatic),
-        '12',
+        AmountScaler.scale('4', 4.0, unit: 'cloves', scalingCategory: ScalingCategory.linear),
+        '16',
       );
     });
   });
@@ -540,11 +539,11 @@ void main() {
       expect(AmountScaler.scale('1', 1.444, unit: 'C'), '1½ C');
     });
 
-    test('"½ tsp" ×1.444 (spice/0.68): dampened 0.6418 tsp → snaps ¾ tsp — 0.75÷3=0.25 not int → "¾ tsp"', () {
-      // 1.444^0.68 = 1.2837; 0.5 × 1.2837 = 0.6418; spoon grid: ¾(d=0.108)
+    test('"½ tsp" ×1.444 (strongSpice/0.75): dampened 0.6587 tsp → snaps ¾ tsp — 0.75÷3=0.25 not int → "¾ tsp"', () {
+      // 1.444^0.75 = 1.3173; 0.5 × 1.3173 = 0.6587; spoon grid: ¾(d=0.0913)
       // 0.75 ÷ 3 = 0.25 → not integer → no escalation
       expect(
-        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.strongSpice),
         '¾ tsp',
       );
     });
@@ -571,10 +570,10 @@ void main() {
       expect(AmountScaler.scale('1', 4.0, unit: 'C'), '4 C');
     });
 
-    test('"½ tsp" ×1.444 (spice): stays tsp, no escalation', () {
-      // Duplicate of the spice test above, expressed as the spec table requires
+    test('"½ tsp" ×1.444 (strongSpice/0.75): stays tsp, no escalation', () {
+      // 1.444^0.75 = 1.3173; 0.5 × 1.3173 = 0.6587 → ¾ tsp
       expect(
-        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.strongSpice),
         '¾ tsp',
       );
     });
@@ -701,26 +700,28 @@ void main() {
       );
     });
 
-    test('garlic → aromatic (keyword wins over produce)', () {
+    test('garlic → linear (alliums are linear by design)', () {
       expect(
         ScalingClassifier.classifyForScaling('garlic cloves, minced', IngredientCategory.produce),
-        ScalingCategory.aromatic,
+        ScalingCategory.linear,
       );
     });
 
-    test('shallot → aromatic', () {
+    test('shallot → linear (alliums are linear by design)', () {
       expect(
         ScalingClassifier.classifyForScaling('shallot', IngredientCategory.produce),
-        ScalingCategory.aromatic,
+        ScalingCategory.linear,
       );
     });
   });
 
   group('ScalingClassifier.classifyForScaling — category fallback', () {
-    test('spice category (non-keyword) → ScalingCategory.spice', () {
+    test('spice category (non-keyword) → ScalingCategory.strongSpice (conservative fallback)', () {
+      // Unrecognised spice category members default to strongSpice.
+      // cinnamon IS in mildSpice keywords, so use an unknown spice name here.
       expect(
-        ScalingClassifier.classifyForScaling('cinnamon', IngredientCategory.spice),
-        ScalingCategory.spice,
+        ScalingClassifier.classifyForScaling('za\'atar blend', IngredientCategory.spice),
+        ScalingCategory.strongSpice,
       );
     });
 
@@ -731,10 +732,11 @@ void main() {
       );
     });
 
-    test('condiment category (non-keyword) → ScalingCategory.spice (conservative)', () {
+    test('condiment category (non-keyword) → ScalingCategory.linear', () {
+      // condiment no longer has a special fallback — falls through to linear.
       expect(
         ScalingClassifier.classifyForScaling('dijon mustard', IngredientCategory.condiment),
-        ScalingCategory.spice,
+        ScalingCategory.linear,
       );
     });
 
@@ -777,17 +779,16 @@ void main() {
   //    11.25/3 = 3.75 → not integer → no escalation → stays "11¼ tsp"
   //    → "11¼ tsp"
   //
-  // 3. "1 tsp" cumin (spice/0.68):
-  //    50^0.68 = e^(0.68×3.912) = e^2.660 = 14.297
-  //    1 × 14.297 = 14.297 tsp
-  //    spoon grid: whole=14, frac=0.297 → ¼(d=0.047) beats ½(d=0.203) → 14¼ tsp
-  //    14.25/3 = 4.75 → not integer → no escalation → stays "14¼ tsp"
-  //    → "14¼ tsp"
+  // 3. "1 tsp" cumin (strongSpice/0.75):
+  //    50^0.75 = e^(0.75×3.912) = e^2.934 = 18.827
+  //    1 × 18.827 = 18.827 tsp
+  //    spoon grid: whole=18, frac=0.827 → ¾(d=0.077) beats ½(d=0.327) → 18¾ tsp
+  //    18.75/3 = 6.25 → not integer → no escalation → stays "18¾ tsp"
+  //    → "18¾ tsp"
   //
-  // 4. "2 cloves" garlic (aromatic/0.82):
-  //    50^0.82 = e^(0.82×3.912) = e^3.208 = 24.741
-  //    2 × 24.741 = 49.482 → countable → round = 49
-  //    → "49 cloves"
+  // 4. "2 cloves" garlic (linear/1.0 — alliums are linear by design):
+  //    50^1.0 = 50; 2 × 50 = 100 → countable → 100
+  //    → "100 cloves"
   //
   // 5. "1 tsp" baking powder (leavening/0.80):
   //    50^0.80 = e^(0.80×3.912) = e^3.130 = 22.909
@@ -817,18 +818,21 @@ void main() {
       );
     });
 
-    test('"1 tsp" cumin ×50 (spice/0.68) → "14¼ tsp" (escalation requires integer)', () {
-      // 14.25 tsp: 14.25 ÷ 3 = 4.75 → not integer → no escalation
+    test('"1 tsp" cumin ×50 (strongSpice/0.75) → "18¾ tsp"', () {
+      // 50^0.75 = 18.827; 1 × 18.827 = 18.827
+      // spoon grid: whole=18, frac=0.827 → ¾(d=0.077) → 18¾ tsp
+      // 18.75/3 = 6.25 → not integer → no escalation
       expect(
-        AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.spice),
-        '14¼ tsp',
+        AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.strongSpice),
+        '18¾ tsp',
       );
     });
 
-    test('"2 cloves" garlic ×50 (aromatic/0.82) → "49 cloves"', () {
+    test('"2 cloves" garlic ×50 (linear — alliums are linear) → "100 cloves"', () {
+      // Alliums are linear by design; 2 × 50 = 100
       expect(
-        AmountScaler.scale('2', 50.0, unit: 'cloves', scalingCategory: ScalingCategory.aromatic),
-        '49 cloves',
+        AmountScaler.scale('2', 50.0, unit: 'cloves', scalingCategory: ScalingCategory.linear),
+        '100 cloves',
       );
     });
 
@@ -844,6 +848,188 @@ void main() {
       expect(
         AmountScaler.scale('2', 50.0, unit: 'C', scalingCategory: ScalingCategory.linear),
         '100 C',
+      );
+    });
+  });
+
+  // ── ScalingClassifier — new classification table tests ────────────────────
+  //
+  // These test classifyForScaling() directly, independent of the full scale
+  // pipeline. All inputs use null category to confirm keyword-only routing.
+
+  group('ScalingClassifier.classifyForScaling — new classification table', () {
+    test('cinnamon → mildSpice', () {
+      expect(
+        ScalingClassifier.classifyForScaling('cinnamon', null),
+        ScalingCategory.mildSpice,
+      );
+    });
+
+    test('cumin → strongSpice', () {
+      expect(
+        ScalingClassifier.classifyForScaling('cumin', null),
+        ScalingCategory.strongSpice,
+      );
+    });
+
+    test('salt → salt', () {
+      expect(
+        ScalingClassifier.classifyForScaling('salt', null),
+        ScalingCategory.salt,
+      );
+    });
+
+    test('black pepper → salt', () {
+      expect(
+        ScalingClassifier.classifyForScaling('black pepper', null),
+        ScalingCategory.salt,
+      );
+    });
+
+    test('cayenne pepper → heat', () {
+      expect(
+        ScalingClassifier.classifyForScaling('cayenne pepper', null),
+        ScalingCategory.heat,
+      );
+    });
+
+    test('chili flakes → heat', () {
+      expect(
+        ScalingClassifier.classifyForScaling('chili flakes', null),
+        ScalingCategory.heat,
+      );
+    });
+
+    test('baking powder → leavening', () {
+      expect(
+        ScalingClassifier.classifyForScaling('baking powder', null),
+        ScalingCategory.leavening,
+      );
+    });
+
+    test('garlic → linear (alliums are linear by design)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('garlic', null),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('thyme → linear (herbs are linear by design)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('thyme', null),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('onion → linear (alliums are linear by design)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('onion', null),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('sugar → linear', () {
+      expect(
+        ScalingClassifier.classifyForScaling('sugar', null),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('flour → linear', () {
+      expect(
+        ScalingClassifier.classifyForScaling('flour', null),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('lemon juice → acid', () {
+      expect(
+        ScalingClassifier.classifyForScaling('lemon juice', null),
+        ScalingCategory.acid,
+      );
+    });
+
+    test('ginger → mildSpice', () {
+      expect(
+        ScalingClassifier.classifyForScaling('ginger', null),
+        ScalingCategory.mildSpice,
+      );
+    });
+
+    test('smoked paprika → strongSpice', () {
+      expect(
+        ScalingClassifier.classifyForScaling('smoked paprika', null),
+        ScalingCategory.strongSpice,
+      );
+    });
+  });
+
+  // ── Cupcake sanity check (18 → 26 servings, factor = 26/18 ≈ 1.4444) ─────
+  //
+  // Pre-calculated values:
+  //
+  // Sugar "1 C" (linear/1.0):
+  //   1 × 1.4444 = 1.4444 → full grid: ½(d=0.056) beats ⅓(d=0.111) → 1½ C
+  //
+  // Salt "1 tsp" (salt/0.75):
+  //   1.4444^0.75 = e^(0.75×0.3674) = e^0.2756 = 1.3173
+  //   spoon grid: whole=1, frac=0.3173 → ¼(d=0.0673) beats ½(d=0.1827) → 1¼ tsp
+  //   1.25/3 = 0.4167 → not integer → stays "1¼ tsp"
+  //
+  // Cinnamon "½ tsp" (mildSpice/0.90):
+  //   1.4444^0.90 = e^(0.90×0.3674) = e^0.3307 = 1.3920
+  //   0.5 × 1.3920 = 0.6960 → spoon grid: ¾(d=0.054) beats ½(d=0.196) → ¾ tsp
+  //   More sensible than old spice/0.68 result (same ¾ tsp, but now correctly
+  //   classified as near-linear baking flavor rather than aggressive dampening)
+
+  group('AmountScaler.scale — cupcake sanity check (18→26, factor≈1.4444)', () {
+    test('sugar "1 C" (linear) → "1½ C"', () {
+      expect(
+        AmountScaler.scale('1', 26 / 18, unit: 'C', scalingCategory: ScalingCategory.linear),
+        '1½ C',
+      );
+    });
+
+    test('salt "1 tsp" (salt/0.75) → "1¼ tsp"', () {
+      // 1.4444^0.75 = 1.3173; spoon grid: 1¼ tsp
+      expect(
+        AmountScaler.scale('1', 26 / 18, unit: 'tsp', scalingCategory: ScalingCategory.salt),
+        '1¼ tsp',
+      );
+    });
+
+    test('cinnamon "½ tsp" (mildSpice/0.90) → "¾ tsp" — more sensible than old spice/0.68', () {
+      // 1.4444^0.90 = 1.3920; 0.5 × 1.3920 = 0.6960
+      // spoon grid: ¾(d=0.054) → "¾ tsp"
+      // Old spice/0.68 also snapped to ¾ tsp, but mildSpice/0.90 is culinarily correct:
+      // cinnamon saturates slowly and scales nearly linearly.
+      expect(
+        AmountScaler.scale('1/2', 26 / 18, unit: 'tsp', scalingCategory: ScalingCategory.mildSpice),
+        '¾ tsp',
+      );
+    });
+  });
+
+  // ── Catering check: cinnamon ½ tsp × 11.11 (18 → 200) ───────────────────
+  //
+  // Cinnamon "½ tsp" (mildSpice/0.90), factor = 200/18 ≈ 11.111:
+  //   11.111^0.90 = e^(0.90×ln(11.111)) = e^(0.90×2.4079) = e^2.1671 = 8.737
+  //   0.5 × 8.737 = 4.369 tsp
+  //   spoon grid: whole=4, frac=0.369 → ¼(d=0.119) beats ½(d=0.131) → 4¼ tsp
+  //   4.25/3 = 1.4167 → not integer → stays "4¼ tsp"
+  //
+  // Culinary assessment: 4¼ tsp for 200 servings is sensible — cinnamon
+  // saturates slowly, and mildSpice/0.90 correctly keeps it near-linear.
+  // The old spice/0.68 produced 2½ tsp for the same batch, which was too low
+  // (over-dampened for a flavor that doesn't significantly saturate).
+
+  group('AmountScaler.scale — cinnamon catering check (18→200, factor≈11.111)', () {
+    test('cinnamon "½ tsp" ×11.111 (mildSpice/0.90) → "4¼ tsp"', () {
+      // 11.111^0.90 = 8.737; 0.5 × 8.737 = 4.369
+      // spoon grid: 4¼ tsp — culinarily sensible, near-linear as expected.
+      expect(
+        AmountScaler.scale('1/2', 200 / 18, unit: 'tsp', scalingCategory: ScalingCategory.mildSpice),
+        '4¼ tsp',
       );
     });
   });
