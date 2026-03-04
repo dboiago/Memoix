@@ -628,9 +628,19 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
       );
       if (scaled != null) {
         amountText = scaled;
-        final unitStr = ingredient.unit?.trim() ?? '';
-        if (unitStr.isNotEmpty && !amountText.contains(unitStr)) {
-          amountText += ' $unitStr';
+        // Append the unit only when scale() returned the rawAmount unchanged
+        // (factor=1.0 short-circuit or freeform passthrough). In that case the
+        // unit is not yet embedded in the string.
+        //
+        // When scale() transformed the amount it already embedded the final
+        // (possibly escalated) unit via _formatAndEscalate. Appending the
+        // original unit again would corrupt the display:
+        //   "1 Tbsp" + " tsp" → "1 Tbsp tsp"   ← the regression this fixes.
+        if (scaled == ingredient.amount) {
+          final unitStr = ingredient.unit?.trim() ?? '';
+          if (unitStr.isNotEmpty && !amountText.contains(unitStr)) {
+            amountText += ' $unitStr';
+          }
         }
       } else {
         amountText = AmountUtils.formatRaw(ingredient.amount!);

@@ -250,6 +250,12 @@ class AmountScaler {
     if (rawAmount == null) return null;
     final trimmed = rawAmount.trim();
     if (trimmed.isEmpty) return rawAmount;
+    // ── Short-circuit: an unscaled recipe must never be transformed ──────────
+    // At factor 1.0 the stored string is returned exactly as-is — no
+    // formatting, no snap-to-grid, no unit escalation.  This is the primary
+    // guard against the regression where the pipeline ran on every render and
+    // corrupted amounts (e.g. "3 tsp" → "1 Tbsp" on an unscaled recipe).
+    if (factor == 1.0) return rawAmount;
     if (factor <= 0) return AmountUtils.formatRaw(trimmed);
 
     // Resolve the effective exponent for this scaling category.

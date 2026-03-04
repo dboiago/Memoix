@@ -307,13 +307,14 @@ void main() {
   });
 
   group('AmountScaler.scale — factor edge cases', () {
-    test('factor of 1.0 normalizes without arithmetic', () {
-      // "1/2" should be display-normalized to "½"
-      expect(AmountScaler.scale('1/2', 1.0), '½');
+    test('factor of 1.0 returns rawAmount unchanged (short-circuit)', () {
+      // No processing at all — the stored string is returned exactly as-is.
+      expect(AmountScaler.scale('1/2', 1.0), '1/2');
     });
 
-    test('factor of 1.0 on integer normalizes', () {
-      expect(AmountScaler.scale('2.0', 1.0), '2');
+    test('factor of 1.0 on written-out decimal returns unchanged', () {
+      // Before the fix this was normalised to '2'; now the raw value is preserved.
+      expect(AmountScaler.scale('2.0', 1.0), '2.0');
     });
 
     test('scaling down: 4 × 0.25 = 1', () {
@@ -323,6 +324,43 @@ void main() {
     test('non-integer result formats as fraction', () {
       // 1 × 0.5 = 0.5 → "½"
       expect(AmountScaler.scale('1', 0.5), '½');
+    });
+  });
+
+  // ── Factor=1.0 passthrough regression guard ───────────────────────────────
+  //
+  // Before the short-circuit fix the full pipeline ran at factor=1.0,
+  // reformatting stored strings and triggering unit escalation on unscaled
+  // recipes.  Every format that occurs in real recipe data must survive
+  // AmountScaler.scale(input, 1.0) == input exactly.
+
+  group('AmountScaler.scale — factor=1.0 passthrough (regression guard)', () {
+    test('"1/2 tsp" returns unchanged', () {
+      expect(AmountScaler.scale('1/2 tsp', 1.0), '1/2 tsp');
+    });
+
+    test('"½ C" returns unchanged', () {
+      expect(AmountScaler.scale('½ C', 1.0), '½ C');
+    });
+
+    test('"1½ Tbsp" returns unchanged', () {
+      expect(AmountScaler.scale('1½ Tbsp', 1.0), '1½ Tbsp');
+    });
+
+    test('"2-3" returns unchanged', () {
+      expect(AmountScaler.scale('2-3', 1.0), '2-3');
+    });
+
+    test('"to taste" returns unchanged', () {
+      expect(AmountScaler.scale('to taste', 1.0), 'to taste');
+    });
+
+    test('"1 (14 oz) can" returns unchanged', () {
+      expect(AmountScaler.scale('1 (14 oz) can', 1.0), '1 (14 oz) can');
+    });
+
+    test('null returns null', () {
+      expect(AmountScaler.scale(null, 1.0), null);
     });
   });
 
