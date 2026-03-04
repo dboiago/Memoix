@@ -67,25 +67,25 @@ class ParsedIngredient {
 class IngredientParser {
   
   /// Unicode fraction characters for parsing
-  static const unicodeFractions = 'ยฝยผยพโ…"โ…"โ…›โ…œโ…โ…ž';
+  static const unicodeFractions = '½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚';
   
   /// Fraction conversion map (text to unicode)
   static const fractionMap = <String, String>{
-    '1/2': 'ยฝ',
-    '1/4': 'ยผ',
-    '3/4': 'ยพ',
-    '1/3': 'โ…"',
-    '2/3': 'โ…"',
-    '1/8': 'โ…›',
-    '3/8': 'โ…œ',
-    '5/8': 'โ…',
-    '7/8': 'โ…ž',
-    '1/5': 'โ…•',
-    '2/5': 'โ…–',
-    '3/5': 'โ…—',
-    '4/5': 'โ…˜',
-    '1/6': 'โ…™',
-    '5/6': 'โ…š',
+    '1/2': '½',
+    '1/4': '¼',
+    '3/4': '¾',
+    '1/3': '⅓',
+    '2/3': '⅔',
+    '1/8': '⅛',
+    '3/8': '⅜',
+    '5/8': '⅝',
+    '7/8': '⅞',
+    '1/5': '⅕',
+    '2/5': '⅖',
+    '3/5': '⅗',
+    '4/5': '⅘',
+    '1/6': '⅙',
+    '5/6': '⅚',
   };
   
   /// Word numbers to digits
@@ -93,7 +93,7 @@ class IngredientParser {
     'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5',
     'six': '6', 'seven': '7', 'eight': '8', 'nine': '9', 'ten': '10',
     'eleven': '11', 'twelve': '12', 'a': '1', 'an': '1',
-    'half': 'ยฝ', 'quarter': 'ยผ',
+    'half': '½', 'quarter': '¼',
   };
   
   /// Parse an ingredient line into structured components.
@@ -307,7 +307,7 @@ class IngredientParser {
     
     // Try format without explicit unit: "2 eggs", "3 cloves garlic"
     final simpleMatch = RegExp(
-      r'^([\dยฝยผยพโ…"โ…"โ…›โ…œโ…โ…ž]+(?:\s*/\s*\d+)?(?:\s*[\dยฝยผยพโ…"โ…"โ…›โ…œโ…โ…ž]+)?)\s+(.+)',
+      r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]+(?:\s*/\s*\d+)?(?:\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]+)?)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (simpleMatch != null) {
@@ -361,7 +361,7 @@ class IngredientParser {
     
     // Try "X of Y" patterns: "Juice of 1 lemon"
     final ofPatternMatch = RegExp(
-      r'^(juice|zest|rind|peel)\s+of\s+([\dยฝยผยพโ…"โ…"โ…›โ…œโ…โ…ž]+)\s+(.+)',
+      r'^(juice|zest|rind|peel)\s+of\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]+)\s+(.+)',
       caseSensitive: false,
     ).firstMatch(workingLine);
     if (ofPatternMatch != null) {
@@ -458,7 +458,7 @@ class IngredientParser {
     }
     
     // Check for fractions > 1 like "1ยฝ" or "2"
-    if (amount.contains('ยฝ') || amount.contains('ยผ') || amount.contains('ยพ')) {
+    if (amount.contains('½') || amount.contains('¼') || amount.contains('¾')) {
       final firstChar = amount.isNotEmpty ? amount[0] : '0';
       final firstNum = int.tryParse(firstChar);
       if (firstNum != null && firstNum >= 1 && amount.length > 1) {
