@@ -182,12 +182,13 @@ class _IngredientListState extends State<IngredientList> {
     // Build the amount string with proper formatting
     String amountText = '';
     if (ingredient.amount != null && ingredient.amount!.isNotEmpty) {
-      final category = IngredientService().classify(ingredient.name);
+      final rawCategory = IngredientService().classify(ingredient.name);
+      final scalingCat = ScalingClassifier.classifyForScaling(ingredient.name, rawCategory);
       final scaled = AmountScaler.scale(
         ingredient.amount,
         widget.scaleFactor,
         unit: ingredient.unit,
-        category: category,
+        scalingCategory: scalingCat,
       );
       if (scaled != null) {
         // _formatAndEscalate may have embedded the unit already.

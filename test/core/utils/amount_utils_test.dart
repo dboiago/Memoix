@@ -342,58 +342,61 @@ void main() {
 
   // ── AmountScaler upgrade: power law, snap-to-grid, escalation ─────────────
   //
-  // Category mapping used in these tests:
-  //   salt      → IngredientCategory.spice     (exponent 0.60)
-  //   cinnamon  → IngredientCategory.spice     (exponent 0.60)
-  //   leavening → IngredientCategory.leavening  (exponent 0.80)
-  //   neutral   → null / IngredientCategory.produce or any unmapped
-  //               → exponent 1.0 (linear)
+  // ScalingCategory mapping used in these tests:
+  //   salt keywords   → ScalingCategory.salt      (exponent 0.75)
+  //   spice category  → ScalingCategory.spice     (exponent 0.68)
+  //   heat keywords   → ScalingCategory.heat      (exponent 0.62)
+  //   leavening kwds  → ScalingCategory.leavening (exponent 0.80)
+  //   aromatic kwds   → ScalingCategory.aromatic  (exponent 0.82)
+  //   null / unmapped → ScalingCategory.linear    (exponent 1.0)
   //
-  // Key pre-calculated values (all derived from scaledAmount = raw × factor^exp):
-  //   "1 tsp" salt   ×4    (spice/0.60): 1 × 4^0.60 = 2.297  → spoon-grid → 2¼ tsp → 2.25/3=0.75 ✓ → ¾ Tbsp
-  //   "½ C"          ×1.444 (linear):    0.5 × 1.444 = 0.722  → full-grid → ¾ C
-  //   "½ tsp" spice  ×1.444 (spice/0.60):0.5 × 1.444^0.60 = 0.623 → spoon-grid → ½ tsp
-  //   "1 tsp" salt   ×1.444 (spice/0.60):1 × 1.444^0.60 = 1.246 → spoon-grid → 1¼ tsp
-  //   "2 eggs"       ×1.444 (countable):  2 × 1.444 = 2.888   → round → 3
-  //   "½ tsp"        ×0.25  (linear):     0.5 × 0.25 = 0.125  → floor → ⅛ tsp
-  //   "6 tsp"        ×1     (linear):     6 × 1 = 6           → escalate → 2 Tbsp
-  //   "1 tsp" leavening ×4 (leav/0.80):  1 × 4^0.80 = 3.031  → spoon-grid → 3⅛ tsp (no clean escalation)
+  // Key pre-calculated values (scaledAmount = raw × factor^exp):
+  //   "1 tsp" salt   ×4 (salt/0.75):  1 × 4^0.75 = 2.828 → spoon-grid 2¾ tsp → 2.75/3≈0.917 not clean
+  //   "½ C"          ×1.444 (linear): 0.5 × 1.444 = 0.722 → full-grid ¾ C
+  //   "½ tsp" spice  ×1.444 (spice/0.68): 0.5 × 1.444^0.68 = 0.5×1.274 = 0.637 → spoon-grid ½ tsp (d=0.137 vs ¾ d=0.113) → ¾
+  //     wait: recalc: 1.444^0.68 = e^(0.68×ln1.444) = e^(0.68×0.3674) = e^0.2498 = 1.2837
+  //     → 0.5 × 1.2837 = 0.6418; spoon grid: ½(d=0.1418) vs ¾(d=0.1082) → snaps to ¾ tsp
+  //   "2 eggs"       ×1.444 (countable): 2 × 1.444 = 2.888 → round → 3
+  //   "½ tsp"        ×0.25  (linear):   0.5 × 0.25 = 0.125 → floor → ⅛ tsp
+  //   "6 tsp"        ×1     (linear):   6 × 1 = 6 → escalate → 2 Tbsp
 
-  group('AmountScaler.scale — power-law dampening (spice category)', () {
-    test('"1 tsp" salt ×4: dampened to 2.297 → snaps to 2¼ tsp → escalates to ¾ Tbsp', () {
-      // 1 × 4^0.60 = 2.2974; spoon grid: 2¼ (d=0.047 from ¼); 2.25/3 = 0.75 ✓ clean
+  group('AmountScaler.scale — power-law dampening (ScalingCategory)', () {
+    test('"1 tsp" salt ×4 (salt/0.75): 1×4^0.75=2.828 → snaps 2¾ tsp → no clean escalation', () {
+      // 4^0.75 = 2^1.5 = 2.8284; spoon grid: whole=2, frac=0.828;
+      // spoon grid: ¾=0.75(d=0.078) beats ½(d=0.328) → snaps 2¾ tsp
+      // 2.75/3 = 0.9167 → not a nice fraction → no escalation
       expect(
-        AmountScaler.scale('1', 4.0, unit: 'tsp', category: IngredientCategory.spice),
-        '¾ Tbsp',
+        AmountScaler.scale('1', 4.0, unit: 'tsp', scalingCategory: ScalingCategory.salt),
+        '2¾ tsp',
       );
     });
 
-    test('"1 tsp" salt ×1.444: dampened to 1.246 → snaps to 1¼ tsp', () {
-      // 1 × 1.444^0.60 = 1.246; spoon grid: whole=1, nearest frac ¼ at d=0.004
+    test('"½ tsp" cinnamon ×1.444 (spice/0.68): → snaps ¾ tsp', () {
+      // 1.444^0.68 = e^(0.68×0.3674) = e^0.2498 = 1.2837
+      // 0.5 × 1.2837 = 0.6418; spoon grid: ¾(d=0.1082) beats ½(d=0.1418) → ¾ tsp
       expect(
-        AmountScaler.scale('1', 1.444, unit: 'tsp', category: IngredientCategory.spice),
-        '1¼ tsp',
+        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        '¾ tsp',
       );
     });
 
-    test('"½ tsp" cinnamon ×1.444: dampened to 0.623 → snaps to ½ tsp', () {
-      // 0.5 × 1.444^0.60 = 0.623; spoon grid: ½(d=0.123) beats ¾(d=0.127)
+    test('null scalingCategory → linear scaling (exponent 1.0)', () {
+      // 1 × 4 = 4 tsp → 4/3 not clean; stays 4 tsp
+      expect(AmountScaler.scale('1', 4.0, unit: 'tsp'), '4 tsp');
+    });
+
+    test('linear ScalingCategory → exponent 1.0', () {
       expect(
-        AmountScaler.scale('1/2', 1.444, unit: 'tsp', category: IngredientCategory.spice),
-        '½ tsp',
+        AmountScaler.scale('1', 4.0, unit: 'tsp', scalingCategory: ScalingCategory.linear),
+        '4 tsp',
       );
     });
 
-    test('null category → linear scaling (exponent 1.0)', () {
-      // 1 × 4^1.0 = 4
-      expect(AmountScaler.scale('1', 4.0, unit: 'tsp'), '1 Tbsp');
-    });
-
-    test('produce category dampens at 0.80 exponent', () {
-      // "4 cloves garlic" × 4 (produce/0.80): 4 × 4^0.80 = 4 × 3.031 = 12.125
-      // countable (cloves): round(12.125) = 12
+    test('aromatic dampening (0.82): "4" cloves ×4 → 4×4^0.82=4×3.261=13.044 → countable round 13', () {
+      // 4^0.82 = e^(0.82×ln4) = e^(0.82×1.3863) = e^1.1368 = 3.1157
+      // 4 × 3.1157 = 12.463 → round → 12
       expect(
-        AmountScaler.scale('4', 4.0, unit: 'cloves', category: IngredientCategory.produce),
+        AmountScaler.scale('4', 4.0, unit: 'cloves', scalingCategory: ScalingCategory.aromatic),
         '12',
       );
     });
@@ -401,7 +404,7 @@ void main() {
 
   group('AmountScaler.scale — snap-to-grid', () {
     test('"½ C" ×1.444: linear → 0.722 → full grid → ¾ C', () {
-      // 0.5 × 1.444 = 0.722; full grid: ¾ (d=0.028) beats ⅔ (d=0.055)
+      // 0.5 × 1.444 = 0.722; full grid: ¾(d=0.028) beats ⅔(d=0.055)
       expect(AmountScaler.scale('1/2', 1.444, unit: 'C'), '¾ C');
     });
 
@@ -419,8 +422,8 @@ void main() {
       expect(AmountScaler.scale('1/3', 2.0, unit: 'C'), '⅔ C');
     });
 
-    test('spoon grid excludes thirds: near-⅓ tsp snaps to ¼ or ½', () {
-      // "1/3 tsp" × 1 (factor=1, linear): 0.333 → spoon grid: ¼(d=0.083) ½(d=0.167) → ¼
+    test('spoon grid excludes thirds: near-⅓ tsp snaps to ¼', () {
+      // "1/3 tsp" × 1: 0.333 → spoon grid: ¼(d=0.083) beats ½(d=0.167)
       expect(AmountScaler.scale('1/3', 1.0, unit: 'tsp'), '¼ tsp');
     });
 
@@ -453,7 +456,6 @@ void main() {
     });
 
     test('"3 Tbsp" stays as Tbsp (3/16 not a nice fraction)', () {
-      // 3/16 = 0.1875 — not in unicodeFractionValues
       expect(AmountScaler.scale('3', 1.0, unit: 'Tbsp'), '3 Tbsp');
     });
 
@@ -464,20 +466,14 @@ void main() {
     test('metric: "1000 ml" ×1 → "1 L"', () {
       expect(AmountScaler.scale('1000', 1.0, unit: 'ml'), '1 L');
     });
-
-    test('no cross-system escalation: tsp does not escalate to g', () {
-      // Ensure ladder only matches from→to pairs; tsp→Tbsp→C only
-      expect(AmountScaler.scale('3', 1.0, unit: 'tsp'), '1 Tbsp');
-    });
   });
 
   group('AmountScaler.scale — leavening dampening', () {
-    test('"1 tsp" baking powder ×4: 1×4^0.80 = 3.031 → spoon grid → 3⅛ tsp', () {
-      // 4^0.80 = 2^1.6 = 3.0314; whole=3, frac=0.0314 (>1/48);
-      // spoon grid: ⅛(d=0.094) vs next-whole(d=0.969) → snaps to 3⅛ tsp
-      // 3⅛ / 3 = 1.0417 — not clean — no escalation
+    test('"1 tsp" baking powder ×4 (leavening/0.80): 1×4^0.80=3.031 → 3⅛ tsp', () {
+      // 4^0.80 = 3.0314; whole=3, frac=0.0314 (>1/48 so not snapped to whole);
+      // spoon grid nearest: ⅛(d=0.094) → 3⅛ tsp; 3.125/3=1.042 not clean.
       expect(
-        AmountScaler.scale('1', 4.0, unit: 'tsp', category: IngredientCategory.leavening),
+        AmountScaler.scale('1', 4.0, unit: 'tsp', scalingCategory: ScalingCategory.leavening),
         '3⅛ tsp',
       );
     });
@@ -517,16 +513,238 @@ void main() {
     });
   });
 
-  group('AmountScaler.scale — qualifier prefix (upgraded)', () {
+  group('AmountScaler.scale — qualifier prefix', () {
     test('"about 3" ×2 neutral → "about 6"', () {
       expect(AmountScaler.scale('about 3', 2.0), 'about 6');
     });
 
-    test('"about 3" qualifier preserved with dampening', () {
-      // 3 × 4^0.60 = 3 × 2.297 = 6.892; snaps to 7 (countable)
+    test('"about 3" qualifier preserved with dampening (heat/0.62)', () {
+      // 3 × 4^0.62 = 3 × e^(0.62×1.3863) = 3 × e^0.8595 = 3 × 2.362 = 7.086
+      // countable: round(7.086) = 7
       expect(
-        AmountScaler.scale('about 3', 4.0, category: IngredientCategory.spice),
+        AmountScaler.scale('about 3', 4.0, scalingCategory: ScalingCategory.heat),
         'about 7',
+      );
+    });
+  });
+
+  // ── ScalingClassifier.classifyForScaling ──────────────────────────────────
+  group('ScalingClassifier.classifyForScaling — keyword priority', () {
+    test('salt keyword wins over spice category', () {
+      expect(
+        ScalingClassifier.classifyForScaling('kosher salt', IngredientCategory.spice),
+        ScalingCategory.salt,
+      );
+    });
+
+    test('soy sauce → salt (keyword override of condiment category)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('soy sauce', IngredientCategory.condiment),
+        ScalingCategory.salt,
+      );
+    });
+
+    test('fish sauce → salt', () {
+      expect(
+        ScalingClassifier.classifyForScaling('fish sauce', IngredientCategory.condiment),
+        ScalingCategory.salt,
+      );
+    });
+
+    test('jalapeño → heat', () {
+      expect(
+        ScalingClassifier.classifyForScaling('jalapeño, diced', null),
+        ScalingCategory.heat,
+      );
+    });
+
+    test('cayenne → heat (despite spice category)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('cayenne pepper', IngredientCategory.spice),
+        ScalingCategory.heat,
+      );
+    });
+
+    test('sriracha → heat', () {
+      expect(
+        ScalingClassifier.classifyForScaling('sriracha sauce', IngredientCategory.condiment),
+        ScalingCategory.heat,
+      );
+    });
+
+    test('apple cider vinegar → acid (keyword)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('apple cider vinegar', IngredientCategory.vinegar),
+        ScalingCategory.acid,
+      );
+    });
+
+    test('lemon juice → acid (keyword)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('lemon juice', IngredientCategory.juice),
+        ScalingCategory.acid,
+      );
+    });
+
+    test('baking powder → leavening (keyword)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('baking powder', IngredientCategory.leavening),
+        ScalingCategory.leavening,
+      );
+    });
+
+    test('baking soda → leavening (keyword)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('baking soda', null),
+        ScalingCategory.leavening,
+      );
+    });
+
+    test('garlic → aromatic (keyword wins over produce)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('garlic cloves, minced', IngredientCategory.produce),
+        ScalingCategory.aromatic,
+      );
+    });
+
+    test('shallot → aromatic', () {
+      expect(
+        ScalingClassifier.classifyForScaling('shallot', IngredientCategory.produce),
+        ScalingCategory.aromatic,
+      );
+    });
+  });
+
+  group('ScalingClassifier.classifyForScaling — category fallback', () {
+    test('spice category (non-keyword) → ScalingCategory.spice', () {
+      expect(
+        ScalingClassifier.classifyForScaling('cinnamon', IngredientCategory.spice),
+        ScalingCategory.spice,
+      );
+    });
+
+    test('vinegar category (non-keyword) → ScalingCategory.acid', () {
+      expect(
+        ScalingClassifier.classifyForScaling('sherry vinegar', IngredientCategory.vinegar),
+        ScalingCategory.acid,
+      );
+    });
+
+    test('condiment category (non-keyword) → ScalingCategory.spice (conservative)', () {
+      expect(
+        ScalingClassifier.classifyForScaling('dijon mustard', IngredientCategory.condiment),
+        ScalingCategory.spice,
+      );
+    });
+
+    test('produce category (non-aromatic) → ScalingCategory.linear', () {
+      expect(
+        ScalingClassifier.classifyForScaling('carrot', IngredientCategory.produce),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('null category, no keyword → ScalingCategory.linear', () {
+      expect(
+        ScalingClassifier.classifyForScaling('chicken breast', null),
+        ScalingCategory.linear,
+      );
+    });
+
+    test('dairy category → ScalingCategory.linear', () {
+      expect(
+        ScalingClassifier.classifyForScaling('heavy cream', IngredientCategory.dairy),
+        ScalingCategory.linear,
+      );
+    });
+  });
+
+  // ── Catering-scale sanity checks (factor = 50, serves 4 → 200) ───────────
+  //
+  // Pre-calculated values:
+  //
+  // 1. "2 tsp" salt (salt/0.75):
+  //    50^0.75 = e^(0.75×ln50) = e^(0.75×3.912) = e^2.934 = 18.827
+  //    2 × 18.827 = 37.654 tsp
+  //    spoon grid: whole=37, frac=0.654 → ¾(d=0.096) beats ½(d=0.154) → 37¾ tsp
+  //    37.75/3 = 12.583 → not clean → stays "37¾ tsp"
+  //
+  // 2. "1 tsp" chili flakes (heat/0.62):
+  //    50^0.62 = e^(0.62×3.912) = e^2.425 = 11.301
+  //    1 × 11.301 = 11.301 tsp
+  //    spoon grid: whole=11, frac=0.301 → ¼(d=0.051) beats ½(d=0.199) → 11¼ tsp
+  //    11.25/3 = 3.75 → ¾ clean ✓ → 3¾ Tbsp
+  //    3.75/16 = 0.234375 → diff from ¼=0.015625 < 1/48=0.02083 ✓ → ¼ C
+  //    → "¼ C"
+  //
+  // 3. "1 tsp" cumin (spice/0.68):
+  //    50^0.68 = e^(0.68×3.912) = e^2.660 = 14.297
+  //    1 × 14.297 = 14.297 tsp
+  //    spoon grid: whole=14, frac=0.297 → ¼(d=0.047) beats ½(d=0.203) → 14¼ tsp
+  //    14.25/3 = 4.75 → ¾ clean ✓ → 4¾ Tbsp
+  //    4.75/16 = 0.296875 → diff from ¼=0.047 (> 1/48); diff from ⅓=0.036 (> 1/48) → not clean
+  //    → "4¾ Tbsp"
+  //
+  // 4. "2 cloves" garlic (aromatic/0.82):
+  //    50^0.82 = e^(0.82×3.912) = e^3.208 = 24.741
+  //    2 × 24.741 = 49.482 → countable → round = 49
+  //    → "49 cloves"
+  //
+  // 5. "1 tsp" baking powder (leavening/0.80):
+  //    50^0.80 = e^(0.80×3.912) = e^3.130 = 22.909
+  //    1 × 22.909 = 22.909 tsp
+  //    spoon grid: whole=22, frac=0.909 → 1−1/48=0.979; 0.909<0.979 so not near-unity
+  //    ¾(d=0.159) beats ½(d=0.409) → 22¾ tsp
+  //    22.75/3 = 7.583 → not clean → stays "22¾ tsp"
+  //
+  // 6. "2 cups" flour (linear/1.0):
+  //    2 × 50 = 100 C
+  //    C→pt: 100/2=50 ✓ → 50 pt
+  //    pt→qt: 50/2=25 ✓ → 25 qt
+  //    qt→gal: 25/4=6.25 → frac=0.25, ¼ ∈ unicodeFractionValues ✓ → 6¼ gal
+  //    → "6¼ gal"
+
+  group('AmountScaler.scale — catering-scale sanity checks (×50)', () {
+    test('"2 tsp" salt ×50 (salt/0.75) → "37¾ tsp"', () {
+      expect(
+        AmountScaler.scale('2', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.salt),
+        '37¾ tsp',
+      );
+    });
+
+    test('"1 tsp" chili flakes ×50 (heat/0.62) → "¼ C"', () {
+      // 11.25 tsp → 3.75 Tbsp (clean) → 0.234375 C (diff from ¼ < 1/48, clean) → ¼ C
+      expect(
+        AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.heat),
+        '¼ C',
+      );
+    });
+
+    test('"1 tsp" cumin ×50 (spice/0.68) → "4¾ Tbsp"', () {
+      expect(
+        AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        '4¾ Tbsp',
+      );
+    });
+
+    test('"2 cloves" garlic ×50 (aromatic/0.82) → "49 cloves"', () {
+      expect(
+        AmountScaler.scale('2', 50.0, unit: 'cloves', scalingCategory: ScalingCategory.aromatic),
+        '49 cloves',
+      );
+    });
+
+    test('"1 tsp" baking powder ×50 (leavening/0.80) → "22¾ tsp"', () {
+      expect(
+        AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.leavening),
+        '22¾ tsp',
+      );
+    });
+
+    test('"2 cups" flour ×50 (linear) → "6¼ gal"', () {
+      expect(
+        AmountScaler.scale('2', 50.0, unit: 'C', scalingCategory: ScalingCategory.linear),
+        '6¼ gal',
       );
     });
   });

@@ -14,6 +14,107 @@ import 'dart:math' as math;
 import 'amount_utils.dart';
 import 'ingredient_categorizer.dart';
 
+// ── Scaling-specific category enum ─────────────────────────────────────────
+
+/// Culinary scaling category — finer-grained than [IngredientCategory] for
+/// the purpose of power-law dampening.
+///
+/// This enum is **internal to the scaling layer only**. It does not replace
+/// or modify [IngredientCategory] or [IngredientService].
+enum ScalingCategory {
+  salt,      // exponent 0.75 — very sub-linear at catering scale
+  spice,     // exponent 0.68
+  heat,      // exponent 0.62 — chili / hot sauce / capsicum compounds
+  acid,      // exponent 0.72 — vinegar, citrus juice
+  aromatic,  // exponent 0.82 — garlic, onion, shallot, ginger
+  leavening, // exponent 0.80
+  linear,    // exponent 1.0 — default for all other categories
+}
+
+// ── Scaling classifier ──────────────────────────────────────────────────────
+
+/// Maps an ingredient name + [IngredientCategory] to a [ScalingCategory].
+///
+/// Keyword matching takes full priority over category fallback so that
+/// cross-category ingredients (e.g. soy sauce classified as `condiment` but
+/// behaves like `salt`) receive the correct dampening.
+///
+/// To extend the keyword lists, add entries to the relevant list below.
+/// Order within each method has no effect — all lists are checked exhaustively.
+class ScalingClassifier {
+  // ── Salt keywords ─────────────────────────────────────────────────────
+  static const List<String> _saltKeywords = [
+    'salt', 'miso', 'soy sauce', 'fish sauce', 'worcestershire',
+    'tamari', 'anchovies', 'anchovy', 'capers', 'caper',
+    'msg',
+  ];
+
+  // ── Heat keywords ─────────────────────────────────────────────────────
+  static const List<String> _heatKeywords = [
+    'chili', 'chile', 'cayenne', 'pepper flakes', 'red pepper flake',
+    'sriracha', 'tabasco', 'harissa', 'jalapeño', 'jalapeno',
+    'habanero', 'serrano', 'scotch bonnet', 'ghost pepper',
+    'gochugaru', 'gochujang', 'sambal', 'chipotle', 'ancho',
+    'thai chili', 'bird eye', "bird's eye",
+  ];
+
+  // ── Acid keywords ─────────────────────────────────────────────────────
+  static const List<String> _acidKeywords = [
+    'vinegar', 'lemon juice', 'lime juice', 'citrus juice',
+    'tamarind', 'verjuice',
+  ];
+
+  // ── Leavening keywords ────────────────────────────────────────────────
+  static const List<String> _leaveningKeywords = [
+    'baking powder', 'baking soda', 'yeast', 'cream of tartar',
+    'bicarbonate', 'sodium bicarbonate',
+  ];
+
+  // ── Aromatic keywords ─────────────────────────────────────────────────
+  static const List<String> _aromaticKeywords = [
+    'garlic', 'onion', 'shallot', 'ginger', 'leek', 'scallion',
+    'green onion', 'spring onion', 'chive',
+  ];
+
+  /// Classify [ingredientName] for scaling purposes.
+  ///
+  /// Keyword matching (case-insensitive substring) takes priority over
+  /// [category] fallback. First match wins across all keyword lists.
+  static ScalingCategory classifyForScaling(
+    String ingredientName,
+    IngredientCategory? category,
+  ) {
+    final lower = ingredientName.toLowerCase();
+
+    // ── Keyword pass first ──────────────────────────────────────────────
+    if (_matchesAny(lower, _saltKeywords))     return ScalingCategory.salt;
+    if (_matchesAny(lower, _heatKeywords))     return ScalingCategory.heat;
+    if (_matchesAny(lower, _acidKeywords))     return ScalingCategory.acid;
+    if (_matchesAny(lower, _leaveningKeywords)) return ScalingCategory.leavening;
+    if (_matchesAny(lower, _aromaticKeywords)) return ScalingCategory.aromatic;
+
+    // ── Category fallback ───────────────────────────────────────────────
+    switch (category) {
+      case IngredientCategory.spice:
+        return ScalingCategory.spice;
+      case IngredientCategory.vinegar:
+        return ScalingCategory.acid;
+      case IngredientCategory.condiment:
+        // Conservative — condiments vary; default to spice-level dampening.
+        return ScalingCategory.spice;
+      default:
+        return ScalingCategory.linear;
+    }
+  }
+
+  static bool _matchesAny(String lower, List<String> keywords) {
+    for (final kw in keywords) {
+      if (lower.contains(kw)) return true;
+    }
+    return false;
+  }
+}
+
 /// Stateless utility that scales an ingredient amount string by a factor.
 ///
 /// The caller is responsible for:
@@ -36,24 +137,21 @@ class AmountScaler {
   // Exponent < 1.0 produces dampening (flavour-sensitive categories scale
   // sub-linearly so recipes don't become inedibly salty/spicy when doubled).
   //
-  // Categories absent from this map receive exponent 1.0 (linear).
-  // This map is the single source of truth — no exponent values elsewhere.
+  // [ScalingCategory.linear] receives exponent 1.0 and has no entry.
+  // This map is the **single source of truth** — no exponent values elsewhere.
 
-  /// Dampening exponents keyed by [IngredientCategory].
+  /// Dampening exponents keyed by [ScalingCategory].
   ///
-  /// Mapping from spec intent to available categories:
-  ///   - spec "salt"     → [IngredientCategory.spice]   (salt classifies as spice)
-  ///   - spec "spice"    → [IngredientCategory.spice]   (same bucket)
-  ///   - spec "acid"     → [IngredientCategory.vinegar] (all acids)
-  ///   - spec "heat"     → [IngredientCategory.condiment] (hot sauces)
-  ///   - spec "aromatic" → [IngredientCategory.produce] (garlic, onion, etc.)
-  static const Map<IngredientCategory, double> scalingExponents = {
-    IngredientCategory.spice:     0.60,
-    IngredientCategory.vinegar:   0.70,
-    IngredientCategory.condiment: 0.70,
-    IngredientCategory.produce:   0.80,
-    IngredientCategory.leavening: 0.80,
-    // all other categories → 1.0 (linear), no entry needed
+  /// Values are calibrated for catering-scale factors (4 → 200 servings)
+  /// as well as home-cooking scale (1 → 4 servings).
+  static const Map<ScalingCategory, double> scalingExponents = {
+    ScalingCategory.salt:      0.75,
+    ScalingCategory.spice:     0.68,
+    ScalingCategory.heat:      0.62,
+    ScalingCategory.acid:      0.72,
+    ScalingCategory.aromatic:  0.82,
+    ScalingCategory.leavening: 0.80,
+    // ScalingCategory.linear → 1.0, no entry needed
   };
 
   // ── Unit escalation ladder ────────────────────────────────────────────────
@@ -139,7 +237,7 @@ class AmountScaler {
   ///   - Annotated amounts whose leading portion does not parse
   ///
   /// **Pipeline for numeric amounts:**
-  ///   1. Power-law dampening (if category is in [scalingExponents])
+  ///   1. Power-law dampening (if scalingCategory is in [scalingExponents])
   ///   2. Snap to nearest cookware grid value (floor 1/8 of one unit)
   ///   3. Clean unit escalation (e.g. 3 tsp → 1 Tbsp)
   ///   4. Format with unicode fraction glyphs
@@ -147,16 +245,16 @@ class AmountScaler {
     String? rawAmount,
     double factor, {
     String? unit,
-    IngredientCategory? category,
+    ScalingCategory? scalingCategory,
   }) {
     if (rawAmount == null) return null;
     final trimmed = rawAmount.trim();
     if (trimmed.isEmpty) return rawAmount;
     if (factor <= 0) return AmountUtils.formatRaw(trimmed);
 
-    // Resolve the effective exponent for this ingredient category.
+    // Resolve the effective exponent for this scaling category.
     final exponent =
-        (category != null ? scalingExponents[category] : null) ?? 1.0;
+        (scalingCategory != null ? scalingExponents[scalingCategory] : null) ?? 1.0;
 
     // ── Step 1: detect and strip qualifier prefix ─────────────────────────
     //    e.g. "about 3" → qualifier = "about ", working = "3"
