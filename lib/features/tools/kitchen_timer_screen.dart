@@ -193,6 +193,8 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
                 _PresetChip('+15 min', () => _addTime(0, 15, 0)),
                 _PresetChip('+30 min', () => _addTime(0, 30, 0)),
                 _PresetChip('+1 hour', () => _addTime(1, 0, 0)),
+                _PresetChip('Soft Egg', () => _addTime(0 6, 0)),
+                _PresetChip('Hard Egg', () => _addTime(0, 9, 0)),
               ],
             ),
             const SizedBox(height: 24),
