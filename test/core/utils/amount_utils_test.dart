@@ -396,7 +396,7 @@ void main() {
   //     → 0.5 × 1.2837 = 0.6418; spoon grid: ½(d=0.1418) vs ¾(d=0.1082) → snaps to ¾ tsp
   //   "2 eggs"       ×1.444 (countable): 2 × 1.444 = 2.888 → round → 3
   //   "½ tsp"        ×0.25  (linear):   0.5 × 0.25 = 0.125 → floor → ⅛ tsp
-  //   "6 tsp"        ×1     (linear):   6 × 1 = 6 → escalate → 2 Tbsp
+  //   "3 tsp"        ×2     (linear):   3 × 2 = 6 tsp ÷ 3 = 2 (int) → escalate → 2 Tbsp
 
   group('AmountScaler.scale — power-law dampening (ScalingCategory)', () {
     test('"1 tsp" salt ×4 (salt/0.75): 1×4^0.75=2.828 → snaps 2¾ tsp → no clean escalation', () {
@@ -460,9 +460,10 @@ void main() {
       expect(AmountScaler.scale('1/3', 2.0, unit: 'C'), '⅔ C');
     });
 
-    test('spoon grid excludes thirds: near-⅓ tsp snaps to ¼', () {
-      // "1/3 tsp" × 1: 0.333 → spoon grid: ¼(d=0.083) beats ½(d=0.167)
-      expect(AmountScaler.scale('1/3', 1.0, unit: 'tsp'), '¼ tsp');
+    test('spoon grid excludes thirds: near-⅓ tsp snaps to ¼, not ⅓', () {
+      // "1/3 tsp" × 1.1: 0.333 × 1.1 = 0.367; spoon grid {1/8,¼,½,¾}:
+      // ¼(d=0.117) beats all others; ⅓ and ⅔ absent from spoon grid
+      expect(AmountScaler.scale('1/3', 1.1, unit: 'tsp'), '¼ tsp');
     });
 
     test('countable: "2 eggs" ×1.444 rounds to nearest whole', () {
@@ -476,33 +477,41 @@ void main() {
     });
   });
 
-  group('AmountScaler.scale — unit escalation', () {
-    test('"6 tsp" ×1 → escalates to "2 Tbsp" (clean: 6/3=2)', () {
-      expect(AmountScaler.scale('6', 1.0, unit: 'tsp'), '2 Tbsp');
-    });
-
-    test('"3 tsp" ×1 → escalates to "1 Tbsp" (clean: 3/3=1)', () {
-      expect(AmountScaler.scale('3', 1.0, unit: 'tsp'), '1 Tbsp');
-    });
-
-    test('"5 tsp" stays as tsp (5/3 not clean)', () {
-      expect(AmountScaler.scale('5', 1.0, unit: 'tsp'), '5 tsp');
-    });
-
-    test('"4 Tbsp" ×1 → "¼ C" (4/16=0.25 ✓)', () {
-      expect(AmountScaler.scale('4', 1.0, unit: 'Tbsp'), '¼ C');
-    });
-
-    test('"3 Tbsp" stays as Tbsp (3/16 not a nice fraction)', () {
-      expect(AmountScaler.scale('3', 1.0, unit: 'Tbsp'), '3 Tbsp');
-    });
-
-    test('scaled result escalates: "1 tsp" ×3 → 3 tsp → 1 Tbsp', () {
+  // ── Unit escalation — fires only on clean whole-number results ─────────────────
+  //
+  // Fractional results (e.g. 8 Tbsp ÷ 16 = 0.5) do NOT escalate. Only
+  // integer conversions (6 tsp ÷ 3 = 2) trigger a unit change. The
+  // volume ladder stops at cup — pt, qt, gal are not in the ladder.
+  //
+  // Factor=1.0 short-circuits before escalation runs (regression guard),
+  // so these tests use factor ≠ 1.0.
+  group('AmountScaler.scale — unit escalation (integer-only, stops at cup)', () {
+    test('"1 tsp" ×3: 3 tsp ÷ 3 = 1 (int) → "1 Tbsp"', () {
       expect(AmountScaler.scale('1', 3.0, unit: 'tsp'), '1 Tbsp');
     });
 
-    test('metric: "1000 ml" ×1 → "1 L"', () {
-      expect(AmountScaler.scale('1000', 1.0, unit: 'ml'), '1 L');
+    test('"3 tsp" ×2: 6 tsp ÷ 3 = 2 (int) → "2 Tbsp"', () {
+      expect(AmountScaler.scale('3', 2.0, unit: 'tsp'), '2 Tbsp');
+    });
+
+    test('"5 tsp" ×2: 10 tsp ÷ 3 = 3.33 (not int) → stays "10 tsp"', () {
+      expect(AmountScaler.scale('5', 2.0, unit: 'tsp'), '10 tsp');
+    });
+
+    test('"1 Tbsp" ×16: 16 Tbsp ÷ 16 = 1 (int) → "1 C"', () {
+      expect(AmountScaler.scale('1', 16.0, unit: 'Tbsp'), '1 C');
+    });
+
+    test('"4 Tbsp" ×2: 8 Tbsp ÷ 16 = 0.5 (not int) → stays "8 Tbsp"', () {
+      expect(AmountScaler.scale('4', 2.0, unit: 'Tbsp'), '8 Tbsp');
+    });
+
+    test('"1 C" ×4: 4 C — no pt/qt/gal in ladder → stays "4 C"', () {
+      expect(AmountScaler.scale('1', 4.0, unit: 'C'), '4 C');
+    });
+
+    test('metric: "500 ml" ×2: 1000 ml ÷ 1000 = 1 (int) → "1 L"', () {
+      expect(AmountScaler.scale('500', 2.0, unit: 'ml'), '1 L');
     });
   });
 
@@ -513,6 +522,60 @@ void main() {
       expect(
         AmountScaler.scale('1', 4.0, unit: 'tsp', scalingCategory: ScalingCategory.leavening),
         '3⅛ tsp',
+      );
+    });
+  });
+
+  // ── Escalation boundary tests ─────────────────────────────────────────────
+  //
+  // These cases verify the interaction of snap-to-grid + integer-only
+  // escalation.  None of the snapped values below divide cleanly (integer)
+  // into the next-larger unit, so they all stay in their current unit.
+  // Cases that DO escalate are already covered in the escalation group above.
+
+  group('AmountScaler.scale — escalation boundaries', () {
+    test('"1 C" ×1.444: 1.444 C → snaps "1½ C" — 1.5÷2=0.75 not int, no pt step → "1½ C"', () {
+      // 1 × 1.444 = 1.444; full grid: ½(d=0.056) → 1½ C
+      // C has no ladder step (pt/qt/gal removed) → stays cups regardless
+      expect(AmountScaler.scale('1', 1.444, unit: 'C'), '1½ C');
+    });
+
+    test('"½ tsp" ×1.444 (spice/0.68): dampened 0.6418 tsp → snaps ¾ tsp — 0.75÷3=0.25 not int → "¾ tsp"', () {
+      // 1.444^0.68 = 1.2837; 0.5 × 1.2837 = 0.6418; spoon grid: ¾(d=0.108)
+      // 0.75 ÷ 3 = 0.25 → not integer → no escalation
+      expect(
+        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        '¾ tsp',
+      );
+    });
+
+    test('"1 tsp" salt ×1.444 (salt/0.75): 1.3173 → snaps "1¼ tsp" — 1.25÷3=0.417 not int → "1¼ tsp"', () {
+      // 1.444^0.75 = e^(0.75×0.3674) = e^0.2756 = 1.3173
+      // spoon grid: ¼(d=0.067) beats ½(d=0.183) → 1¼ tsp
+      // 1.25 ÷ 3 = 0.4167 → not integer → no escalation
+      expect(
+        AmountScaler.scale('1', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.salt),
+        '1¼ tsp',
+      );
+    });
+
+    test('"3 tsp" ×1.0: factor short-circuits before escalation → "3 tsp"', () {
+      expect(AmountScaler.scale('3', 1.0, unit: 'tsp'), '3 tsp');
+    });
+
+    test('"3 tsp" ×2.0: 6 tsp ÷ 3 = 2 (int) → "2 Tbsp"', () {
+      expect(AmountScaler.scale('3', 2.0, unit: 'tsp'), '2 Tbsp');
+    });
+
+    test('"1 C" ×4.0: 4 C — no ladder step beyond cup → "4 C"', () {
+      expect(AmountScaler.scale('1', 4.0, unit: 'C'), '4 C');
+    });
+
+    test('"½ tsp" ×1.444 (spice): stays tsp, no escalation', () {
+      // Duplicate of the spice test above, expressed as the spec table requires
+      expect(
+        AmountScaler.scale('1/2', 1.444, unit: 'tsp', scalingCategory: ScalingCategory.spice),
+        '¾ tsp',
       );
     });
   });
@@ -711,17 +774,15 @@ void main() {
   //    50^0.62 = e^(0.62×3.912) = e^2.425 = 11.301
   //    1 × 11.301 = 11.301 tsp
   //    spoon grid: whole=11, frac=0.301 → ¼(d=0.051) beats ½(d=0.199) → 11¼ tsp
-  //    11.25/3 = 3.75 → ¾ clean ✓ → 3¾ Tbsp
-  //    3.75/16 = 0.234375 → diff from ¼=0.015625 < 1/48=0.02083 ✓ → ¼ C
-  //    → "¼ C"
+  //    11.25/3 = 3.75 → not integer → no escalation → stays "11¼ tsp"
+  //    → "11¼ tsp"
   //
   // 3. "1 tsp" cumin (spice/0.68):
   //    50^0.68 = e^(0.68×3.912) = e^2.660 = 14.297
   //    1 × 14.297 = 14.297 tsp
   //    spoon grid: whole=14, frac=0.297 → ¼(d=0.047) beats ½(d=0.203) → 14¼ tsp
-  //    14.25/3 = 4.75 → ¾ clean ✓ → 4¾ Tbsp
-  //    4.75/16 = 0.296875 → diff from ¼=0.047 (> 1/48); diff from ⅓=0.036 (> 1/48) → not clean
-  //    → "4¾ Tbsp"
+  //    14.25/3 = 4.75 → not integer → no escalation → stays "14¼ tsp"
+  //    → "14¼ tsp"
   //
   // 4. "2 cloves" garlic (aromatic/0.82):
   //    50^0.82 = e^(0.82×3.912) = e^3.208 = 24.741
@@ -737,10 +798,8 @@ void main() {
   //
   // 6. "2 cups" flour (linear/1.0):
   //    2 × 50 = 100 C
-  //    C→pt: 100/2=50 ✓ → 50 pt
-  //    pt→qt: 50/2=25 ✓ → 25 qt
-  //    qt→gal: 25/4=6.25 → frac=0.25, ¼ ∈ unicodeFractionValues ✓ → 6¼ gal
-  //    → "6¼ gal"
+  //    Ladder stops at cup (no pt/qt/gal) → stays "100 C"
+  //    → "100 C"
 
   group('AmountScaler.scale — catering-scale sanity checks (×50)', () {
     test('"2 tsp" salt ×50 (salt/0.75) → "37¾ tsp"', () {
@@ -750,18 +809,19 @@ void main() {
       );
     });
 
-    test('"1 tsp" chili flakes ×50 (heat/0.62) → "¼ C"', () {
-      // 11.25 tsp → 3.75 Tbsp (clean) → 0.234375 C (diff from ¼ < 1/48, clean) → ¼ C
+    test('"1 tsp" chili flakes ×50 (heat/0.62) → "11¼ tsp" (escalation requires integer)', () {
+      // 11.25 tsp: 11.25 ÷ 3 = 3.75 → not integer → no escalation
       expect(
         AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.heat),
-        '¼ C',
+        '11¼ tsp',
       );
     });
 
-    test('"1 tsp" cumin ×50 (spice/0.68) → "4¾ Tbsp"', () {
+    test('"1 tsp" cumin ×50 (spice/0.68) → "14¼ tsp" (escalation requires integer)', () {
+      // 14.25 tsp: 14.25 ÷ 3 = 4.75 → not integer → no escalation
       expect(
         AmountScaler.scale('1', 50.0, unit: 'tsp', scalingCategory: ScalingCategory.spice),
-        '4¾ Tbsp',
+        '14¼ tsp',
       );
     });
 
@@ -779,10 +839,11 @@ void main() {
       );
     });
 
-    test('"2 cups" flour ×50 (linear) → "6¼ gal"', () {
+    test('"2 cups" flour ×50 (linear) → "100 C" (ladder stops at cup)', () {
+      // 100 C: pt/qt/gal not in ladder → stays cups
       expect(
         AmountScaler.scale('2', 50.0, unit: 'C', scalingCategory: ScalingCategory.linear),
-        '6¼ gal',
+        '100 C',
       );
     });
   });

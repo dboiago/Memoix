@@ -165,19 +165,17 @@ class AmountScaler {
   // Imperial and metric ladders are fully separate — no cross-system escalation.
 
   static const List<_UnitStep> _escalationLadder = [
-    // Imperial volume
-    _UnitStep(from: 'tsp',  to: 'Tbsp', divisor: 3),   // 3 tsp  → 1 Tbsp
-    _UnitStep(from: 'Tbsp', to: 'C',    divisor: 16),   // 16 Tbsp → 1 C  (via 4 Tbsp = ¼ C)
-    _UnitStep(from: 'C',    to: 'pt',   divisor: 2),    // 2 C    → 1 pt
-    _UnitStep(from: 'pt',   to: 'qt',   divisor: 2),    // 2 pt   → 1 qt
-    _UnitStep(from: 'qt',   to: 'gal',  divisor: 4),    // 4 qt   → 1 gal
+    // Imperial volume — deliberately stops at cup.
+    // Pint, quart, and gallon are not standard cooking measurements and
+    // must not appear in scaled recipe output.
+    _UnitStep(from: 'tsp',  to: 'Tbsp', divisor: 3),   // 3 tsp  = 1 Tbsp
+    _UnitStep(from: 'Tbsp', to: 'C',    divisor: 16),  // 16 Tbsp = 1 C  — STOP
     // Imperial weight
-    _UnitStep(from: 'oz',   to: 'lb',   divisor: 16),   // 16 oz → 1 lb
+    _UnitStep(from: 'oz',   to: 'lb',   divisor: 16),  // 16 oz = 1 lb
     // Metric weight
-    _UnitStep(from: 'mg',   to: 'g',    divisor: 1000), // 1000 mg → 1 g
-    _UnitStep(from: 'g',    to: 'kg',   divisor: 1000), // 1000 g  → 1 kg
+    _UnitStep(from: 'g',    to: 'kg',   divisor: 1000), // 1000 g = 1 kg
     // Metric volume
-    _UnitStep(from: 'ml',   to: 'L',    divisor: 1000), // 1000 ml → 1 L
+    _UnitStep(from: 'ml',   to: 'L',    divisor: 1000), // 1000 ml = 1 L
   ];
 
   // ── Snap-to-grid configuration ────────────────────────────────────────────
@@ -423,21 +421,20 @@ class AmountScaler {
     return '$formatted $currentUnit';
   }
 
-  /// Returns true when [ratio] is an integer or a "nice" fraction
-  /// (one that exists in [AmountUtils.unicodeFractionValues]).
+  /// Returns true when [ratio] is a whole number.
+  ///
+  /// Escalation fires only for integer results — "3 tsp ÷ 3 = 1 Tbsp" ✓,
+  /// "4 Tbsp ÷ 16 = 0.25 C" ✗. Allowing fractions produced culinary
+  /// nonsense equivalents such as expressing ¼ cup when the recipe card
+  /// says "4 Tbsp", or escalating 11.25 tsp to ¼ C at catering scale.
+  ///
+  /// The near-unity guard handles floating-point artefacts (e.g. 0.9999…
+  /// produced by ⅓ × 3 in double arithmetic).
   static bool _isCleanRatio(double ratio) {
     if (ratio <= 0) return false;
-    final whole = ratio.floor();
-    final frac = ratio - whole;
-    // Integer case.
-    if (frac < 1.0 / 48.0) return true;
-    // Snap-to-unity case.
-    if (frac > 1.0 - 1.0 / 48.0) return true;
-    // Must be an exact nice fraction.
-    for (final v in AmountUtils.unicodeFractionValues.values) {
-      if ((frac - v).abs() < 1.0 / 48.0) return true;
-    }
-    return false;
+    final frac = ratio - ratio.floor();
+    // Only a whole-number result warrants unit escalation.
+    return frac < 1.0 / 48.0 || frac > 1.0 - 1.0 / 48.0;
   }
 
   // ── Private: string helpers ───────────────────────────────────────────────
