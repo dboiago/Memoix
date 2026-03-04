@@ -308,47 +308,53 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,
           ),
-        // Serves chip — long-press to scale, tap to reset
+        // Serves chip — long-press to scale, tap to reset.
+        // Wrapped in Material(transparency)+InkWell so the ripple fires on
+        // long-press initiation rather than release (GestureDetector has no
+        // visual feedback).
         if (recipe.serves != null && recipe.serves!.isNotEmpty)
-          GestureDetector(
-            onLongPress: () {
-              HapticFeedback.mediumImpact();
-              _showServingsBottomSheet(context, recipe);
-            },
-            onTap: _targetServes != null
-                ? () => setState(() => _targetServes = null)
-                : null,
-            child: Chip(
-              label: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(
-                    Icons.people,
-                    size: 12,
-                    color: _targetServes != null
-                        ? theme.colorScheme.onPrimaryContainer
-                        : theme.colorScheme.onSurface,
-                  ),
-                  const SizedBox(width: 3),
-                  Text(
-                    _targetServes != null
-                        ? _targetServes.toString()
-                        : UnitNormalizer.normalizeServes(recipe.serves!),
-                  ),
-                ],
+          Material(
+            type: MaterialType.transparency,
+            child: InkWell(
+              onLongPress: () async {
+                await HapticFeedback.mediumImpact();
+                _showServingsBottomSheet(context, recipe);
+              },
+              onTap: _targetServes != null
+                  ? () => setState(() => _targetServes = null)
+                  : null,
+              child: Chip(
+                label: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      Icons.people,
+                      size: 12,
+                      color: _targetServes != null
+                          ? theme.colorScheme.onPrimaryContainer
+                          : theme.colorScheme.onSurface,
+                    ),
+                    const SizedBox(width: 3),
+                    Text(
+                      _targetServes != null
+                          ? _targetServes.toString()
+                          : UnitNormalizer.normalizeServes(recipe.serves!),
+                    ),
+                  ],
+                ),
+                backgroundColor: _targetServes != null
+                    ? theme.colorScheme.primaryContainer
+                    : theme.colorScheme.surfaceContainerHighest,
+                labelStyle: TextStyle(
+                  color: _targetServes != null
+                      ? theme.colorScheme.onPrimaryContainer
+                      : theme.colorScheme.onSurface,
+                  fontSize: chipFontSize,
+                ),
+                visualDensity: VisualDensity.compact,
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                padding: EdgeInsets.zero,
               ),
-              backgroundColor: _targetServes != null
-                  ? theme.colorScheme.primaryContainer
-                  : theme.colorScheme.surfaceContainerHighest,
-              labelStyle: TextStyle(
-                color: _targetServes != null
-                    ? theme.colorScheme.onPrimaryContainer
-                    : theme.colorScheme.onSurface,
-                fontSize: chipFontSize,
-              ),
-              visualDensity: VisualDensity.compact,
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              padding: EdgeInsets.zero,
             ),
           ),
         // Time chip
@@ -454,134 +460,162 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   }
 
   /// Build compact text-based metadata row (for side-by-side views).
+  ///
+  /// The serves portion is interactive: long-press opens the servings sheet,
+  /// tap resets to baseline when scaling is active. The icon and text shift to
+  /// [theme.colorScheme.primary] when a custom target is set.
   Widget _buildCompactMetadata(Recipe recipe, ThemeData theme) {
     final textColor = theme.colorScheme.onSurfaceVariant;
-    final metadataItems = <InlineSpan>[];
-
-    // Check if this is a drink (course == 'drinks')
+    final baseStyle = theme.textTheme.bodySmall?.copyWith(color: textColor);
     final isDrink = recipe.course?.toLowerCase() == 'drinks';
+
+    // ── Pre-serves items: cuisine / spirit ─────────────────────────────────
+    final preItems = <InlineSpan>[];
 
     if (isDrink) {
       // For drinks: show spirit dot + "Spirit (Cuisine)" like list view
       if (recipe.subcategory != null && recipe.subcategory!.isNotEmpty) {
         final spiritColor = MemoixColors.forSpiritDot(recipe.subcategory);
-        metadataItems.add(WidgetSpan(
+        preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
             width: 8,
             height: 8,
             margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(
-              color: spiritColor,
-              shape: BoxShape.circle,
-            ),
+            decoration: BoxDecoration(color: spiritColor, shape: BoxShape.circle),
           ),
         ));
-        // Display spirit with optional cuisine origin
         final spirit = Spirit.toDisplayName(recipe.subcategory!);
         if (recipe.cuisine != null && recipe.cuisine!.isNotEmpty) {
-          final cuisineAdj = Cuisine.toAdjective(recipe.cuisine);
-          metadataItems.add(TextSpan(text: '$spirit ($cuisineAdj)'));
+          preItems.add(TextSpan(text: '$spirit (${Cuisine.toAdjective(recipe.cuisine)})')); 
         } else {
-          metadataItems.add(TextSpan(text: spirit));
+          preItems.add(TextSpan(text: spirit));
         }
       } else if (recipe.cuisine != null) {
-        // Fallback to cuisine for drinks without spirit
         final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
-        metadataItems.add(WidgetSpan(
+        preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
             width: 8,
             height: 8,
             margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(
-              color: cuisineColor,
-              shape: BoxShape.circle,
-            ),
+            decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
         ));
-        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+        preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     } else {
-      // For food recipes: show cuisine dot with cuisine name
       if (recipe.cuisine != null) {
         final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
-        metadataItems.add(WidgetSpan(
+        preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
             width: 8,
             height: 8,
             margin: const EdgeInsets.only(right: 4),
-            decoration: BoxDecoration(
-              color: cuisineColor,
-              shape: BoxShape.circle,
-            ),
+            decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
         ));
-        metadataItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+        preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     }
 
-    // Add serves (normalized to just number with icon)
-    if (recipe.serves != null && recipe.serves!.isNotEmpty) {
-      final normalized = UnitNormalizer.normalizeServes(recipe.serves!);
-      if (normalized.isNotEmpty) {
-        if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '   '));
-        }
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.people, size: 12, color: textColor),
-        ));
-        metadataItems.add(TextSpan(text: ' $normalized'));
-      }
-    }
+    // ── Post-serves items: time and glass ──────────────────────────────────
+    final postItems = <InlineSpan>[];
 
-    // Add time (normalized to compact format with icon)
     if (recipe.time != null && recipe.time!.isNotEmpty) {
       final normalized = UnitNormalizer.normalizeTime(recipe.time!);
       if (normalized.isNotEmpty) {
-        if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '   '));
-        }
-        metadataItems.add(WidgetSpan(
+        postItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: textColor),
         ));
-        metadataItems.add(TextSpan(text: ' $normalized'));
+        postItems.add(TextSpan(text: ' $normalized'));
       }
     }
 
-    // Add glass for drinks
-    final isDrinkCourse = recipe.course?.toLowerCase() == 'drinks';
-    if (isDrinkCourse) {
-      final hasGlass = recipe.glass != null && recipe.glass!.isNotEmpty;
-
-      if (hasGlass) {
-        if (metadataItems.isNotEmpty) {
-          metadataItems.add(const TextSpan(text: '   '));
-        }
-        metadataItems.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Icon(Icons.local_bar, size: 12, color: textColor),
-        ));
-        metadataItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
-      }
+    if (isDrink && recipe.glass != null && recipe.glass!.isNotEmpty) {
+      if (postItems.isNotEmpty) postItems.add(const TextSpan(text: '   '));
+      postItems.add(WidgetSpan(
+        alignment: PlaceholderAlignment.middle,
+        child: Icon(Icons.local_bar, size: 12, color: textColor),
+      ));
+      postItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
     }
 
-    if (metadataItems.isEmpty) {
+    // ── Serves state ────────────────────────────────────────────────────────
+    final hasServes = recipe.serves != null && recipe.serves!.isNotEmpty;
+    final servesNormalized = hasServes ? UnitNormalizer.normalizeServes(recipe.serves!) : '';
+    final effectiveHasServes = hasServes && servesNormalized.isNotEmpty;
+    final isScaled = _targetServes != null;
+
+    if (preItems.isEmpty && !effectiveHasServes && postItems.isEmpty) {
       return const SizedBox.shrink();
     }
 
-    return Text.rich(
-      TextSpan(
-        style: theme.textTheme.bodySmall?.copyWith(
-          color: textColor,
+    // ── Spacing: add '   ' between sections ────────────────────────────────
+    // Mirror the original logic: each section adds a spacer before itself if
+    // something already precedes it.
+    if (preItems.isNotEmpty && (effectiveHasServes || postItems.isNotEmpty)) {
+      preItems.add(const TextSpan(text: '   '));
+    }
+    if (postItems.isNotEmpty && (preItems.isNotEmpty || effectiveHasServes)) {
+      postItems.insert(0, const TextSpan(text: '   '));
+    }
+
+    // ── Interactive serves widget ───────────────────────────────────────────
+    // Wrapped in Material(transparency)+InkWell — same pattern as direction
+    // step long-press in this view. Long-press fires haptic + sheet;
+    // tap resets scaling when a target is active.
+    Widget? servesWidget;
+    if (effectiveHasServes) {
+      final indicatorColor =
+          isScaled ? theme.colorScheme.primary : textColor;
+      final displayText =
+          isScaled ? _targetServes.toString() : servesNormalized;
+      servesWidget = Material(
+        type: MaterialType.transparency,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(4),
+          onLongPress: () async {
+            await HapticFeedback.mediumImpact();
+            if (context.mounted) _showServingsBottomSheet(context, recipe);
+          },
+          onTap: isScaled ? () => setState(() => _targetServes = null) : null,
+          child: Text.rich(
+            TextSpan(
+              style: baseStyle?.copyWith(color: indicatorColor),
+              children: [
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: Icon(Icons.people, size: 12, color: indicatorColor),
+                ),
+                TextSpan(text: ' $displayText'),
+              ],
+            ),
+          ),
         ),
-        children: metadataItems,
-      ),
-      maxLines: 1,
-      overflow: TextOverflow.ellipsis,
+      );
+    }
+
+    return Wrap(
+      spacing: 0,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        if (preItems.isNotEmpty)
+          Text.rich(
+            TextSpan(style: baseStyle, children: preItems),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+        if (servesWidget != null) servesWidget,
+        if (postItems.isNotEmpty)
+          Text.rich(
+            TextSpan(style: baseStyle, children: postItems),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+      ],
     );
   }
 

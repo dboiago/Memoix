@@ -223,9 +223,11 @@ class AmountScaler {
   /// When ingredient.unit is one of these (or null/empty), only whole numbers
   /// and ½ are allowed — no other fractions.
   static const Set<String> _countableUnits = {
-    '', 'pc', 'pcs', 'piece', 'pieces', 'whole', 'slice', 'slices',
-    'clove', 'cloves', 'sprig', 'sprigs', 'stalk', 'stalks',
-    'head', 'heads', 'bunch', 'bunches',
+   '','bag','bags','bottle','bottles','box','boxes','breast','breasts','bulb','bulbs','bunch','bunches',
+   'can','cans','clove','cloves','ear','ears','fillet','fillets','head','heads','jar','jars','leaf','leaves',
+   'leg','legs','package','packages','pc','pcs','piece','pieces','pieces','pieces','pkg','rib','ribs','sheet',
+   'sheets', 'slice','slices','sprig','sprigs','stalk','stalks','stick','sticks','strip','strips','thigh',
+   'thighs','whole','whole',
   };
 
   // ── Public API ──────────────────────────────────────────────────────────
