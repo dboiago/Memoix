@@ -226,7 +226,7 @@ class AmountScaler {
    '','bag','bags','bottle','bottles','box','boxes','breast','breasts','bulb','bulbs','bunch','bunches',
    'can','cans','clove','cloves','ear','ears','fillet','fillets','head','heads','jar','jars','leaf','leaves',
    'leg','legs','package','packages','pc','pcs','piece','pieces','pkg','rib','ribs','sheet','sheets', 'slice',
-   'slices','sprig','sprigs','stalk','stalks','stick','sticks','strip','strips','thigh','thighs','whole','whole',
+   'slices','sprig','sprigs','stalk','stalks','stick','sticks','strip','strips','thigh','thighs','whole',
   };
 
   // ── Public API ──────────────────────────────────────────────────────────
