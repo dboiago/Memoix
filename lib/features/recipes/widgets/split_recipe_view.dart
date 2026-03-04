@@ -864,75 +864,78 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final verticalPadding = widget.isCompact ? 4.0 : 6.0;
     final fontSize = widget.isCompact ? 12.0 : 14.0;
 
-    return InkWell(
-      onTap: () {
-        setState(() {
-          if (isCompleted) {
-            _completedSteps.remove(index);
-          } else {
-            _completedSteps.add(index);
+    return Material(
+      type: MaterialType.transparency,
+      child: InkWell(
+        onTap: () {
+          setState(() {
+            if (isCompleted) {
+              _completedSteps.remove(index);
+            } else {
+              _completedSteps.add(index);
+            }
+          });
+        },
+        onLongPress: () async {
+          final duration = extractTimerDuration(step);
+          if (duration == null) return;
+          await HapticFeedback.mediumImpact();
+          if (context.mounted) {
+            _showTimerBottomSheet(context, ref, duration, step);
           }
-        });
-      },
-      onLongPress: () async {
-        final duration = extractTimerDuration(step);
-        if (duration == null) return;
-        await HapticFeedback.mediumImpact();
-        if (context.mounted) {
-          _showTimerBottomSheet(context, ref, duration, step);
-        }
-      },
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: verticalPadding),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Step number circle
-            Container(
-              width: circleSize,
-              height: circleSize,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: isCompleted
-                    ? theme.colorScheme.surfaceContainerHighest
-                    : theme.colorScheme.secondary.withOpacity(0.15),
-                border: Border.all(
+        },
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: verticalPadding),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Step number circle
+              Container(
+                width: circleSize,
+                height: circleSize,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
                   color: isCompleted
-                      ? theme.colorScheme.outline.withOpacity(0.5)
-                      : theme.colorScheme.secondary,
-                  width: 1.5,
+                      ? theme.colorScheme.surfaceContainerHighest
+                      : theme.colorScheme.secondary.withOpacity(0.15),
+                  border: Border.all(
+                    color: isCompleted
+                        ? theme.colorScheme.outline.withOpacity(0.5)
+                        : theme.colorScheme.secondary,
+                    width: 1.5,
+                  ),
                 ),
-              ),
-              child: Center(
-                child: isCompleted
-                    ? Icon(Icons.check, size: circleIconSize, color: theme.colorScheme.outline)
-                    : Text(
-                        '$stepNumber',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: circleFontSize,
-                          color: theme.colorScheme.secondary,
+                child: Center(
+                  child: isCompleted
+                      ? Icon(Icons.check, size: circleIconSize, color: theme.colorScheme.outline)
+                      : Text(
+                          '$stepNumber',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: circleFontSize,
+                            color: theme.colorScheme.secondary,
+                          ),
                         ),
-                      ),
-              ),
-            ),
-            SizedBox(width: widget.isCompact ? 6 : 8),
-
-            // Step text
-            Expanded(
-              child: Text(
-                _capitalizeSentence(step),
-                style: TextStyle(
-                  fontSize: fontSize,
-                  decoration: isCompleted ? TextDecoration.lineThrough : null,
-                  color: isCompleted
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : theme.colorScheme.onSurface,
-                  height: 1.4,
                 ),
               ),
-            ),
-          ],
+              SizedBox(width: widget.isCompact ? 6 : 8),
+
+              // Step text
+              Expanded(
+                child: Text(
+                  _capitalizeSentence(step),
+                  style: TextStyle(
+                    fontSize: fontSize,
+                    decoration: isCompleted ? TextDecoration.lineThrough : null,
+                    color: isCompleted
+                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        : theme.colorScheme.onSurface,
+                    height: 1.4,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
