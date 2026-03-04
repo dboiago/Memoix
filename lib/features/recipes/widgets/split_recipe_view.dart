@@ -5,7 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../app/routes/router.dart';
 import '../../../core/utils/timer_duration_extractor.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/time_picker_column.dart';
 import '../../tools/timer_service.dart';
 import '../models/recipe.dart';
@@ -946,6 +948,13 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
 // Timer quick-start bottom sheet (split view)
 // ---------------------------------------------------------------------------
 
+String _formatTimerDuration(Duration d) {
+  final h = d.inHours;
+  final m = d.inMinutes.remainder(60).toString().padLeft(2, '0');
+  final s = d.inSeconds.remainder(60).toString().padLeft(2, '0');
+  return h > 0 ? '$h:$m:$s' : '$m:$s';
+}
+
 void _showTimerBottomSheet(
   BuildContext context,
   WidgetRef ref,
@@ -1028,8 +1037,16 @@ void _showTimerBottomSheet(
                             if (timers.isNotEmpty) {
                               ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
                             }
+                            final rootCtx = sheetContext;
+                            Navigator.pop(ctx);
+                            MemoixSnackBar.showWithAction(
+                              message: 'Timer started — ${_formatTimerDuration(d)}',
+                              actionLabel: 'View',
+                              onAction: () => AppRoutes.toKitchenTimer(rootCtx),
+                            );
+                          } else {
+                            Navigator.pop(ctx);
                           }
-                          Navigator.pop(ctx);
                         },
                         child: const Text('Start'),
                       ),
