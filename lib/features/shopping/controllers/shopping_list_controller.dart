@@ -48,12 +48,24 @@ class ShoppingListController {
           category: _ingredientService.classify(ingredient.name),
         ));
 
+        // Fix S2-A: recover units embedded in the amount string when the unit
+        // field is empty — a common import artifact (e.g. { amount: "1 C", unit: "" }).
+        String rawAmount = ingredient.amount ?? '';
+        String rawUnit   = ingredient.unit ?? '';
+        if (rawUnit.isEmpty && rawAmount.isNotEmpty) {
+          final extracted = _extractEmbeddedUnit(rawAmount);
+          if (extracted != null) {
+            rawAmount = extracted.amount;
+            rawUnit   = extracted.unit;
+          }
+        }
+
         // Fix B: detect freeform amounts ("to taste", "a pinch", "as needed").
         // Mirrors AmountScaler's freeform gate: AmountUtils.parseMax returns 0.0
         // for non-numeric strings, so we preserve the original text verbatim.
-        final isFreeform = _isFreeformAmount(ingredient.amount);
-        final qty = isFreeform ? 0.0 : _parseQuantity(ingredient.amount);
-        final unit = isFreeform ? '' : UnitNormalizer.normalize(ingredient.unit);
+        final isFreeform = _isFreeformAmount(rawAmount);
+        final qty = isFreeform ? 0.0 : _parseQuantity(rawAmount);
+        final unit = isFreeform ? '' : UnitNormalizer.normalize(rawUnit);
 
         // Add variant
         builder.addVariant(
@@ -152,6 +164,47 @@ class ShoppingListController {
     return AmountUtils.parseMax(amount) == 0.0;
   }
 
+  /// Attempts to recover a unit that was embedded in the amount string.
+  ///
+  /// A common import artifact stores `{ amount: "1 C", unit: "" }` instead
+  /// of the canonical `{ amount: "1", unit: "C" }`. When `ingredient.unit`
+  /// is empty this helper splits the last space-delimited token off the
+  /// amount string and checks whether it is a recognised unit via
+  /// [UnitNormalizer.isRecognizedUnit]. Returns a named record on success,
+  /// `null` if no parseable unit tail is found.
+  ///
+  /// Multi-word units (`fl oz`, `fluid ounce`) are detected before the
+  /// single-token split to prevent `"oz"` being extracted from `"2 fl oz"`.
+  static ({String amount, String unit})? _extractEmbeddedUnit(String rawAmount) {
+    final trimmed = rawAmount.trim();
+    if (trimmed.isEmpty) return null;
+
+    // Phase 1: check for known multi-word units at the tail of the string.
+    const multiWordUnits = ['fl oz', 'fluid ounces', 'fluid ounce'];
+    for (final mu in multiWordUnits) {
+      final lower = trimmed.toLowerCase();
+      if (lower.endsWith(mu) && trimmed.length > mu.length) {
+        final numPart = trimmed.substring(0, trimmed.length - mu.length).trim();
+        if (numPart.isNotEmpty) {
+          return (amount: numPart, unit: mu);
+        }
+      }
+    }
+
+    // Phase 2: split on the last space; check if the right-hand token is a
+    // recognised unit.  E.g. "1 C", "2.5 Tbsp", "1½ tsp", "200 g".
+    final lastSpace = trimmed.lastIndexOf(' ');
+    if (lastSpace == -1) return null; // no space → no embedded unit
+
+    final numPart  = trimmed.substring(0, lastSpace).trim();
+    final unitPart = trimmed.substring(lastSpace + 1).trim();
+
+    if (numPart.isEmpty || unitPart.isEmpty) return null;
+    if (!UnitNormalizer.isRecognizedUnit(unitPart)) return null;
+
+    return (amount: numPart, unit: unitPart);
+  }
+
   // ── Unit-system membership sets (after UnitNormalizer + normalizeUnit, lowercase) ──
 
   /// Metric volume units.
@@ -179,12 +232,36 @@ class ShoppingListController {
       Map<String, double> unitSums) {
     if (unitSums.length <= 1) return null;
 
-    final units = unitSums.keys.toSet();
+    // Fix S2-B: absorb any unitless quantity (empty-string key) into the
+    // dominant real-unit bucket before attempting system-level reduction.
+    // This handles import artifacts where the unit was embedded in the amount
+    // string and silently discarded (e.g. { amount: "1 C", unit: "" }).
+    Map<String, double> effectiveSums = unitSums;
+    if (unitSums.containsKey('') && unitSums.length > 1) {
+      final unitlessQty = unitSums['']!;
+      final realEntries =
+          unitSums.entries.where((e) => e.key.isNotEmpty).toList();
+      if (realEntries.isNotEmpty) {
+        final dominant =
+            realEntries.reduce((a, b) => a.value >= b.value ? a : b).key;
+        effectiveSums = Map<String, double>.fromEntries(realEntries);
+        effectiveSums[dominant] = effectiveSums[dominant]! + unitlessQty;
+        // If absorption yields a single unit, return it directly.
+        if (effectiveSums.length == 1) {
+          return (
+            unit: effectiveSums.keys.first,
+            qty: effectiveSums.values.first,
+          );
+        }
+      }
+    }
+
+    final units = effectiveSums.keys.toSet();
 
     // Metric volume: convert everything to ml, optionally escalate to L.
     if (units.every((u) => _metricVol.contains(u))) {
       double total = 0.0;
-      for (final entry in unitSums.entries) {
+      for (final entry in effectiveSums.entries) {
         final converted =
             MeasurementConverter.convertVolume(entry.value, entry.key, 'ml');
         if (converted == null) return null;
@@ -200,7 +277,7 @@ class ShoppingListController {
       final targetUnit =
           volOrder.firstWhere((u) => units.contains(u), orElse: () => units.first);
       double total = 0.0;
-      for (final entry in unitSums.entries) {
+      for (final entry in effectiveSums.entries) {
         final converted = MeasurementConverter.convertVolume(
             entry.value, entry.key, targetUnit);
         if (converted == null) return null;
@@ -212,7 +289,7 @@ class ShoppingListController {
     // Metric weight: convert to g, optionally escalate to kg.
     if (units.every((u) => _metricWeight.contains(u))) {
       double total = 0.0;
-      for (final entry in unitSums.entries) {
+      for (final entry in effectiveSums.entries) {
         final converted =
             MeasurementConverter.convertWeight(entry.value, entry.key, 'g');
         if (converted == null) return null;
@@ -226,7 +303,7 @@ class ShoppingListController {
     if (units.every((u) => _imperialWeight.contains(u))) {
       final targetUnit = units.contains('lb') ? 'lb' : 'oz';
       double total = 0.0;
-      for (final entry in unitSums.entries) {
+      for (final entry in effectiveSums.entries) {
         final converted = MeasurementConverter.convertWeight(
             entry.value, entry.key, targetUnit);
         if (converted == null) return null;
@@ -246,6 +323,14 @@ class _TermBuilder {
   final IngredientCategory category;
   final List<ShoppingItemVariant> variants = [];
   final Set<String> references = {};
+
+  /// Stores the first-seen display form for each unit bucket key.
+  ///
+  /// [UnitNormalizer.normalizeUnit] lowercases units for bucketing
+  /// (e.g. `"C"` → `"c"`, `"Tbsp"` → `"tbsp"`). This map preserves the
+  /// original casing of the first variant so the shopping list displays
+  /// `"4¾ C"` instead of `"4¾ c"`.
+  final Map<String, String> _unitDisplayForms = {};
 
   _TermBuilder({
     required this.canonical,
@@ -268,6 +353,12 @@ class _TermBuilder {
       displayOverride: displayOverride,
     ));
     references.add(recipeName);
+    // Fix S1-B: record first-seen display unit per bucket so that the original
+    // casing (e.g. "C" not "c") is restored when building the final item.
+    if (displayOverride == null) {
+      final bucketKey = UnitNormalizer.normalizeUnit(unit.toLowerCase());
+      _unitDisplayForms.putIfAbsent(bucketKey, () => unit);
+    }
   }
 
   ShoppingListItem build() {
@@ -300,13 +391,16 @@ class _TermBuilder {
       finalUnit = '';
       finalQty = 0.0;
     } else if (unitSums.length == 1) {
-      finalUnit = unitSums.keys.first;
+      // Fix S1-B: restore original display casing from the first-seen unit.
+      final bucketKey = unitSums.keys.first;
+      finalUnit = _unitDisplayForms[bucketKey] ?? bucketKey;
       finalQty = unitSums.values.first;
     } else {
       // Fix D: attempt unit conversion before declaring 'mixed'.
       final unified = ShoppingListController._tryReduceUnits(unitSums);
       if (unified != null) {
-        finalUnit = unified.unit;
+        // Fix S1-B: restore original display casing for the resolved unit.
+        finalUnit = _unitDisplayForms[unified.unit] ?? unified.unit;
         finalQty = unified.qty;
       } else {
         finalUnit = 'mixed';
@@ -314,13 +408,20 @@ class _TermBuilder {
       }
     }
 
+    // Fix S2-B: when falling through to 'mixed', exclude bare-number (no-unit)
+    // variants from the display list — a lone "1" alongside "2½ C" is not
+    // useful information; its quantity was already absorbed by _tryReduceUnits.
+    final displayVariants = (finalUnit == 'mixed')
+        ? numericVariants.where((v) => v.unit.isNotEmpty).toList()
+        : numericVariants;
+
     return ShoppingListItem(
       name: displayName,
       category: category,
       totalQuantity: finalQty,
       unit: finalUnit,
       references: references.toList()..sort(),
-      variants: numericVariants,
+      variants: displayVariants,
       freeformNote: freeformNote,
       manualNotes: '',
     );

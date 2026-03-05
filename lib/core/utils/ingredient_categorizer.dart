@@ -74,6 +74,42 @@ class IngredientService {
   bool _isInitialized = false;
   bool _metaLoaded = false;
 
+  /// Synonym map for shopping list grouping key resolution.
+  ///
+  /// Applied as the **final step** in [_normalize] to resolve common ingredient
+  /// name variants to a single canonical form. Enables aggregation across
+  /// spellings like `"all-purpose flour"` and `"plain flour"`.
+  ///
+  /// This map is consulted for the **grouping key only** — it never modifies
+  /// stored ingredient names or display values in the UI.
+  ///
+  /// Add entries here only when two names refer to EXACTLY the same ingredient.
+  static const Map<String, String> _synonymMap = {
+    // Flour — regional and common name variants
+    'all-purpose flour': 'flour',
+    'all purpose flour': 'flour',
+    'plain flour':       'flour',
+    'ap flour':          'flour',
+
+    // Garlic — unit descriptor included in ingredient name
+    'garlic clove':    'garlic',
+    'clove of garlic': 'garlic',
+
+    // Cornstarch — regional name difference only
+    'cornflour':  'cornstarch',
+    'corn flour': 'cornstarch',
+
+    // Scallion — same vegetable, different regional names
+    'green onion':  'scallion',
+    'spring onion': 'scallion',
+
+    // Cilantro — same herb, different regional names
+    'coriander leaf':  'cilantro',
+    'fresh coriander': 'cilantro',
+
+    // add synonyms here only when two names refer to EXACTLY the same ingredient
+  };
+
   /// Call this once at app startup
   Future<void> initialize() async {
     if (_isInitialized) return;
@@ -690,8 +726,10 @@ class IngredientService {
     
     // Collapse whitespace
     result = result.replaceAll(RegExp(r'\s+'), ' ').trim();
-    
-    return result;
+
+    // Synonym resolution — applied last so all prior normalization has run.
+    // e.g. "all-purpose flour" → "flour", "garlic cloves" → "garlic".
+    return _synonymMap[result] ?? result;
   }
 
   IngredientCategory _indexToCategory(int index) {
