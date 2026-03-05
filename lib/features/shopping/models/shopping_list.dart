@@ -356,7 +356,9 @@ class ShoppingListService {
         // Convert all to common unit and sum
         double total = 0.0;
         for (final p in parsed) {
-          final normalized = UnitNormalizer.normalize(p.unit);
+          final normalized = UnitNormalizer.normalizeUnit(
+            UnitNormalizer.normalize(p.unit).toLowerCase()
+          );
           final converted = _convertToUnit(p.qty, normalized, commonUnit);
           if (converted != null) {
             total += converted;
