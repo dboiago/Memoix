@@ -125,7 +125,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                   _buildProteinIndicator(sandwich, theme),
                   const SizedBox(height: 16),
                   // Use same grid as normal mode
-                  _SandwichComponentsGrid(sandwich: sandwich),
+                  _SandwichComponentsGrid(sandwich: sandwich, onIngredientLongPress: _ingredientLongPressHandler()),
                   // Notes (full width)
                   if (sandwich.notes != null && sandwich.notes!.isNotEmpty) ...[
                     const SizedBox(height: 16),
@@ -235,7 +235,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
                 const SizedBox(height: 16),
 
                 // Main content with responsive layout
-                _SandwichComponentsGrid(sandwich: sandwich),
+                _SandwichComponentsGrid(sandwich: sandwich, onIngredientLongPress: _ingredientLongPressHandler()),
                 
                 // Notes section (if present)
                 if (sandwich.notes != null && sandwich.notes!.isNotEmpty)
@@ -542,8 +542,9 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
 /// Always 50/50 side-by-side: Bread (full), Cheese | Condiments, Proteins | Vegetables
 class _SandwichComponentsGrid extends StatelessWidget {
   final Sandwich sandwich;
+  final void Function(String name)? onIngredientLongPress;
 
-  const _SandwichComponentsGrid({required this.sandwich});
+  const _SandwichComponentsGrid({required this.sandwich, this.onIngredientLongPress});
 
   @override
   Widget build(BuildContext context) {
@@ -640,7 +641,7 @@ class _SandwichComponentsGrid extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            _SandwichIngredientList(items: items, onIngredientLongPress: _ingredientLongPressHandler()),
+            _SandwichIngredientList(items: items, onIngredientLongPress: onIngredientLongPress),
           ],
         ),
       ),

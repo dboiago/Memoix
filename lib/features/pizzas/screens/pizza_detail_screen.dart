@@ -123,7 +123,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                   _buildCompactMetadata(pizza, theme),
                   const SizedBox(height: 16),
                   // Use same grid as normal mode
-                  _PizzaComponentsGrid(pizza: pizza),
+                  _PizzaComponentsGrid(pizza: pizza, onIngredientLongPress: _ingredientLongPressHandler()),
                   // Notes (full width)
                   if (pizza.notes != null && pizza.notes!.isNotEmpty) ...[
                     const SizedBox(height: 16),
@@ -243,7 +243,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
                 const SizedBox(height: 16),
                 
                 // Content - responsive grid layout for Sauce - Cheese - Toppings
-                _PizzaComponentsGrid(pizza: pizza),
+                _PizzaComponentsGrid(pizza: pizza, onIngredientLongPress: _ingredientLongPressHandler()),
                 
                 // Notes section (if present)
                 if (pizza.notes != null && pizza.notes!.isNotEmpty)
@@ -471,8 +471,9 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
 /// Always 50/50 side-by-side: Sauce | Cheese, Proteins | Vegetables
 class _PizzaComponentsGrid extends StatelessWidget {
   final Pizza pizza;
+  final void Function(String name)? onIngredientLongPress;
 
-  const _PizzaComponentsGrid({required this.pizza});
+  const _PizzaComponentsGrid({required this.pizza, this.onIngredientLongPress});
 
   @override
   Widget build(BuildContext context) {
@@ -554,7 +555,7 @@ class _PizzaComponentsGrid extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-        _PizzaIngredientList(items: items, onIngredientLongPress: _ingredientLongPressHandler()),
+        _PizzaIngredientList(items: items, onIngredientLongPress: onIngredientLongPress),
           ],
         ),
       ),
