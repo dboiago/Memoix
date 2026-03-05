@@ -165,6 +165,7 @@ class UnitNormalizer {
     var u = unit.toLowerCase().trim();
     u = u.replaceAll(RegExp(r'ies$'), 'y');
     u = u.replaceAll(RegExp(r'oes$'), 'o');
+    u = u.replaceAll(RegExp(r'(?<=[^aeiou])es$'), ''); // bunches→bunch, dashes→dash, pinches→pinch
     u = u.replaceAll(RegExp(r'ses$'), 's');
     u = u.replaceAll(RegExp(r'(?<![sui])s$'), '');
     return u;
