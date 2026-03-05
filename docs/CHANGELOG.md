@@ -1,6 +1,11 @@
 ## Memoix v0.2.0-beta — 2026-01-12
 
 ### Added
+- Added quick-start timers accessible from direction long-press actions
+- Added preset egg timers (soft-boiled and hard-boiled)
+- Added ingredient scaling system allowing recipes to be dynamically scaled by servings
+- Added ingredient long-press actions with optional AI-powered ingredient reference and substitution lookup
+- Added AI-assisted recipe import option for difficult sources (e.g. cookbook photos) where OCR or URL parsing fails
 - Implemented side-by-side recipe comparison feature with selection system and three entry points (tools menu, recipe detail, import preview)
 - Integrated Scratch Pad with structured data model (DraftIngredient, structuredIngredients, structuredDirections)
 - Added swipe gestures and inline undo for swipe deletes across lists
@@ -19,6 +24,8 @@
 - Fixed various UI and logic bugs in recipe, meal plan, and import screens
 
 ### Changed
+- Updated recipe detail screen to support dynamic ingredient scaling
+- Updated direction interaction model to support timer shortcuts via long press
 - Refactored Recipe model to use `comments` field (serializes as 'notes' for compatibility); updated all screens and importers to use `comments`
 - Refactored draft and scratch pad screens to use service-level deletion management and improved parsing via IngredientParser
 - Updated application ID from `com.example.memoix` to `io.github.dboiago.memoix`"
@@ -46,3 +53,4 @@
 - Removed deprecated `ingredient.dart` model from recipes feature
 
 - Removed references to unused variables and dead code in edit and comparison screens
+
