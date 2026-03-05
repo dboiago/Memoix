@@ -130,6 +130,24 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
                 'Images in the gallery can be linked to specific recipe steps. '
                 'Linked steps show an image icon that opens the photo without scrolling, useful for visual checks while cooking.',
             ),
+            const _DesignNote(
+              title: 'Step Timers',
+              description:
+                  'Long-press a recipe step with a time to start a timer for that direction. '
+                  'Useful for resting, simmering, or other timed steps while cooking.',
+            ),
+            const _DesignNote(
+              title: 'Ingredient Scaling',
+              description:
+                  'Scale ingredients by long-pressing the serving size.'
+                  'Ingredient quantities update automatically while keeping original measurements intact. ',
+            ),
+            const _DesignNote(
+              title: 'Ingredient Reference',
+              description:
+                  'Long-press an ingredient to view alternate names, flavour descriptions, or common substitutions. '
+                  'Requires an AI provider to be configured in Settings.',
+            ),
           const _DesignNote(
             title: 'Import Review',
             description:
@@ -162,7 +180,7 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
           const _DesignNote(
             title: 'Kitchen Timers',
             description:
-                'Timers continue running if you close the app. '
+                'Timers continue running if you close the app or switch screens. '
                 'Multiple timers can run at the same time.',
           ),
           const _DesignNote(
