@@ -76,7 +76,7 @@ class UnitNormalizer {
     'bunch': 'bunch',
     'bunches': 'bunches',
     'clove': 'clove',
-    'cloves': 'cloves',
+    'cloves': 'clove',
     'pinch': 'pinch',
     'pinches': 'pinches',
     'dash': 'dash',
