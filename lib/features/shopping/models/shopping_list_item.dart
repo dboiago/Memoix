@@ -94,98 +94,65 @@ class ShoppingItemVariant {
 
 // ── Shopping list heading pluralization ──────────────────────────────────────
 
-/// Exceptions map for ingredient name pluralization.
+/// Categories for which ingredient names are countable and should be
+/// pluralized in shopping list headings.
 ///
-/// - A [null] value means the word is uncountable or already plural — return as-is.
-/// - A non-null [String] value is the explicit plural form to use.
+/// Uncountable categories (spices, dairy, oils, grains, etc.) are excluded.
+/// The category gate replaces the need for an uncountables exceptions list.
+const _countableCategories = {
+  IngredientCategory.produce,
+  IngredientCategory.egg,
+  IngredientCategory.nut,
+  IngredientCategory.meat,
+  IngredientCategory.poultry,
+  IngredientCategory.seafood,
+};
+
+/// Exceptions map for irregular plurals and invariant countables.
+///
+/// - A [null] value means the ingredient is invariant (singular = plural).
+/// - A non-null [String] value is the explicit irregular plural form.
+///
+/// Uncountable ingredients are **not** listed here — the category gate in
+/// [pluralizeIngredient] handles them before this map is consulted.
 ///
 // add entries here as edge cases are found
 const Map<String, String?> _pluralExceptions = {
-  // Uncountable — return as-is
-  'salt': null,
-  'flour': null,
-  'sugar': null,
-  'butter': null,
-  'oil': null,
-  'water': null,
-  'milk': null,
-  'cream': null,
-  'honey': null,
-  'rice': null,
-  'garlic': null,
-  'ginger': null,
-  'vinegar': null,
-  'pasta': null,
-  'bread': null,
-  'cheese': null,
-  'bacon': null,
-  'ham': null,
-  'beef': null,
-  'pork': null,
-  'lamb': null,
-  'veal': null,
-  'salmon': null,
-  'tuna': null,
-  'cod': null,
-  'chicken': null,
-  'turkey': null,
-  'duck': null,
-  'quinoa': null,
-  'couscous': null,
-  'barley': null,
-  'oat': null,
-  'cornstarch': null,
-  'paprika': null,
-  'cumin': null,
-  'turmeric': null,
-  'cinnamon': null,
-  'nutmeg': null,
-  'oregano': null,
-  'thyme': null,
-  'rosemary': null,
-  'basil': null,
-  'parsley': null,
-  'cilantro': null,
-  'dill': null,
-  'sage': null,
-  'tarragon': null,
-  'coriander': null,
-  'saffron': null,
-  'cardamom': null,
   // Irregular plurals
   'leaf': 'leaves',
   'loaf': 'loaves',
   'half': 'halves',
   'tomato': 'tomatoes',
   'potato': 'potatoes',
-  'avocado': 'avocados',
   'mango': 'mangoes',
-  'jalapeños': 'jalapeños',
-  // Invariant (same form singular and plural)
-  'fish': 'fish',
-  'shrimp': 'shrimp',
-  'deer': 'deer',
-  // Already plural — return as-is
-  'oats': null,
-  'grits': null,
-  'greens': null,
-  'sprouts': null,
-  // Irregular -y
-  'anchovy': 'anchovies',
+  'avocado': 'avocados',
+  // Invariant countables (singular = plural)
+  'fish': null,
+  'shrimp': null,
+  'salmon': null,
+  'cod': null,
+  'tuna': null,
+  'deer': null,
+  'garlic': null, // produce but uncountable in practice
+  'ginger': null,
+  // add entries here as edge cases are found
 };
 
-/// Applies the programmatic pluralization rules to a single [word].
+/// Applies programmatic pluralization rules to a single [word].
+///
+/// Checks [_pluralExceptions] first; falls through to suffix rules.
+/// Only called within the countable-category gate — uncountables never reach here.
 String _pluralizeWord(String word) {
   final lower = word.toLowerCase();
 
-  // 1. Exceptions map takes priority (case-insensitive lookup).
+  // Exceptions map: irregular plurals and invariants.
   if (_pluralExceptions.containsKey(lower)) {
     final override = _pluralExceptions[lower];
-    if (override == null) return word; // uncountable / already plural
+    if (override == null) return word; // invariant — return unchanged
     return _matchCase(word, override);
   }
 
-  // 2. Programmatic rules — first match wins.
+  // Programmatic rules — first match wins.
   // "donkey→donkeys" — vowel-y endings just append 's'.
   if (lower.endsWith('ey') || lower.endsWith('ay') ||
       lower.endsWith('oy') || lower.endsWith('uy')) {
@@ -212,6 +179,17 @@ String _pluralizeWord(String word) {
   return '${word}s';
 }
 
+/// Applies [_pluralizeWord] to the **last word only** of a multi-word name.
+///
+/// "sesame seed" → "sesame seeds"
+/// "bay leaf"    → "bay leaves"
+String _pluralizeLastWord(String name) {
+  final words = name.split(' ');
+  final pluralLast = _pluralizeWord(words.last);
+  if (words.length == 1) return pluralLast;
+  return '${words.sublist(0, words.length - 1).join(' ')} $pluralLast';
+}
+
 /// Preserves the capitalisation style of [source] when applying [target].
 String _matchCase(String source, String target) {
   if (source.isEmpty || target.isEmpty) return target;
@@ -224,18 +202,26 @@ String _matchCase(String source, String target) {
 /// Returns the plural display form of an ingredient [name] for shopping list
 /// headings.
 ///
-/// Multi-word names pluralize the **last word only**:
-///   "sesame seed" → "sesame seeds"
-///   "bay leaf"    → "bay leaves"
-///   "olive oil"   → "olive oil"  (uncountable, unchanged)
-///
-/// If the name is uncountable or already plural it is returned unchanged.
+/// Returns [name] unchanged when [category] is not in [_countableCategories].
+/// For countable categories, checks [_pluralExceptions] on the full name first,
+/// then applies [_pluralizeLastWord] for general programmatic pluralization.
 ///
 /// **Apply to heading display only — never to stored data.**
-String pluralizeIngredient(String name) {
+String pluralizeIngredient(String name, IngredientCategory category) {
   if (name.trim().isEmpty) return name;
-  final words = name.split(' ');
-  final pluralLast = _pluralizeWord(words.last);
-  if (words.length == 1) return pluralLast;
-  return '${words.sublist(0, words.length - 1).join(' ')} $pluralLast';
+
+  // Category gate: uncountable categories (spices, dairy, flour, oils, etc.)
+  // are returned unchanged without consulting any rules or exceptions.
+  if (!_countableCategories.contains(category)) return name;
+
+  // Full-name exception check — handles invariant countables (e.g. "shrimp",
+  // "garlic") and irregular multi-word names if ever added.
+  final lower = name.toLowerCase();
+  if (_pluralExceptions.containsKey(lower)) {
+    final override = _pluralExceptions[lower];
+    return override == null ? name : _matchCase(name, override);
+  }
+
+  // Apply programmatic rules to the last word only.
+  return _pluralizeLastWord(name);
 }
