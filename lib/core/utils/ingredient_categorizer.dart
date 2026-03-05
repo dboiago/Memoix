@@ -177,6 +177,7 @@ class IngredientService {
       'lemon': IngredientCategory.produce.index,
       'lime': IngredientCategory.produce.index,
       'orange': IngredientCategory.produce.index,
+      'jackfruit': IngredientCategory.produce.index,
       'ginger': IngredientCategory.produce.index,
       'scallion': IngredientCategory.produce.index,
       'green onion': IngredientCategory.produce.index,
@@ -242,9 +243,17 @@ class IngredientService {
       'chicken broth': IngredientCategory.pantry.index,
       'beef stock': IngredientCategory.pantry.index,
       'beef broth': IngredientCategory.pantry.index,
+      'dried wood ear mushroom': IngredientCategory.pantry.index,
+      'dried shiitake mushroom': IngredientCategory.pantry.index,
+      'hen of the woods': IngredientCategory.pantry.index,
+      'lion\'s mane': IngredientCategory.pantry.index,
+      'turkey tail': IngredientCategory.pantry.index,
+      'king trumpet': IngredientCategory.pantry.index,
+      'king oyster': IngredientCategory.pantry.index,
+      'oyster mushroom': IngredientCategory.pantry.index,
+      'textured vegetable protein': IngredientCategory.pantry.index,
       'shiitake': IngredientCategory.produce.index,
       'enoki': IngredientCategory.produce.index,
-      'oyster mushroom': IngredientCategory.produce.index,
       'portobello': IngredientCategory.produce.index,
       'radish': IngredientCategory.produce.index,
       'turnip': IngredientCategory.produce.index,
@@ -270,6 +279,7 @@ class IngredientService {
       'lime zest': IngredientCategory.produce.index,
       'orange zest': IngredientCategory.produce.index,
       'kimchi': IngredientCategory.produce.index,
+      'ube': IngredientCategory.produce.index,
       // Meat
       'beef': IngredientCategory.meat.index,
       'steak': IngredientCategory.meat.index,
@@ -310,6 +320,10 @@ class IngredientService {
       'squid': IngredientCategory.seafood.index,
       // Egg
       'egg': IngredientCategory.egg.index,
+      'goose egg': IngredientCategory.egg.index,
+      'quail egg': IngredientCategory.egg.index,
+      'turkey egg': IngredientCategory.egg.index,
+      'duck egg': IngredientCategory.egg.index,
       // Cheese
       'cheese': IngredientCategory.cheese.index,
       'cheddar': IngredientCategory.cheese.index,
@@ -335,6 +349,10 @@ class IngredientService {
       'buttermilk': IngredientCategory.dairy.index,
       'whipping cream': IngredientCategory.dairy.index,
       'half and half': IngredientCategory.dairy.index,
+      'kefir': IngredientCategory.dairy.index,
+      'drinking yogurt': IngredientCategory.dairy.index,
+      'lassi': IngredientCategory.dairy.index,
+      'ayran': IngredientCategory.dairy.index,
       // Grain
       'rice': IngredientCategory.grain.index,
       'bread': IngredientCategory.grain.index,
@@ -370,6 +388,9 @@ class IngredientService {
       'lentil': IngredientCategory.legume.index,
       // Dairy (store-shelf: tofu is found in the dairy/fridge section)
       'tofu': IngredientCategory.dairy.index,
+      'nattō': IngredientCategory.dairy.index,
+      'tempeh': IngredientCategory.dairy.index,
+      'seitan': IngredientCategory.dairy.index,
       // Spice
       'salt': IngredientCategory.spice.index,
       'pepper': IngredientCategory.spice.index,
@@ -440,6 +461,11 @@ class IngredientService {
       'steak sauce': IngredientCategory.condiment.index,
       'teriyaki sauce': IngredientCategory.condiment.index,
       // Pantry (jarred, canned, preserved, spreads — store center aisles)
+      'shaoxing wine': IngredientCategory.pantry.index,
+      'shaoxing rice wine': IngredientCategory.pantry.index,
+      'mirin': IngredientCategory.pantry.index,
+      'shaoxing': IngredientCategory.pantry.index,
+      'aquafaba': IngredientCategory.pantry.index,
       'tomato paste': IngredientCategory.pantry.index,
       'tomato sauce': IngredientCategory.pantry.index,
       'sun-dried tomato': IngredientCategory.pantry.index,
@@ -449,6 +475,7 @@ class IngredientService {
       'pickled': IngredientCategory.pantry.index,
       'olive': IngredientCategory.pantry.index,
       'caper': IngredientCategory.pantry.index,
+      'huitlacoche': IngredientCategory.pantry.index, // corn smut
       'artichoke heart': IngredientCategory.pantry.index,
       'roasted pepper': IngredientCategory.pantry.index,
       'roasted red pepper': IngredientCategory.pantry.index,
@@ -463,6 +490,7 @@ class IngredientService {
       'miso': IngredientCategory.pantry.index,
       'tahini': IngredientCategory.pantry.index,
       'pesto': IngredientCategory.pantry.index,
+      'ube halaya': IngredientCategory.pantry.index, // purple yam jam
       'coconut cream': IngredientCategory.pantry.index,
       'anchovy paste': IngredientCategory.pantry.index,
       'harissa': IngredientCategory.pantry.index,
@@ -495,6 +523,7 @@ class IngredientService {
       'sesame oil': IngredientCategory.oil.index,
       'coconut oil': IngredientCategory.oil.index,
       'cooking spray': IngredientCategory.oil.index,
+      'duck fat': IngredientCategory.oil.index,
       // Vinegar
       'vinegar': IngredientCategory.vinegar.index,
       'balsamic vinegar': IngredientCategory.vinegar.index,
@@ -529,6 +558,7 @@ class IngredientService {
       'baking soda': IngredientCategory.leavening.index,
       'yeast': IngredientCategory.leavening.index,
       'gelatin': IngredientCategory.leavening.index,
+      'psyllium': IngredientCategory.leavening.index,
       // Nut
       'almond': IngredientCategory.nut.index,
       'walnut': IngredientCategory.nut.index,
@@ -554,7 +584,6 @@ class IngredientService {
       'sherry': IngredientCategory.alcohol.index,
       'port': IngredientCategory.alcohol.index,
       'marsala': IngredientCategory.alcohol.index,
-      'mirin': IngredientCategory.alcohol.index,
       'campari': IngredientCategory.alcohol.index,
       'sweet vermouth': IngredientCategory.alcohol.index,
       'dry vermouth': IngredientCategory.alcohol.index,
@@ -613,20 +642,7 @@ class IngredientService {
     // Step 1: Exact match on the full normalized string
     if (_lookupMap.containsKey(normalized)) {
       final idx = _lookupMap[normalized]!;
-      // Trust exact matches from gzip ONLY if they are non-produce (index > 0)
-      // or are in the fallback map (which always overwrites).
-      // Produce (0) from gzip is unreliable because the OFF script defaulted
-      // everything uncategorised to produce.
-      if (idx != 0) {
-        return _indexToCategory(idx);
-      }
-      // For idx == 0, check if this key exists in the fallback (authoritative).
-      // Fallback always overwrites, so if it's still 0 here, it means the
-      // fallback intentionally set it to produce — trust it.
-      if (_fallbackKeys.contains(normalized)) {
-        return IngredientCategory.produce;
-      }
-      // Otherwise idx 0 came from gzip — unreliable, continue searching
+      return _indexToCategory(idx); // trust all gzip results now — script no longer defaults to produce
     }
 
     // Step 2: Greedy Substring Match (longest key first)
@@ -635,8 +651,6 @@ class IngredientService {
       if (key.length < 3) continue;
       if (normalized.contains(key)) {
         final idx = _lookupMap[key]!;
-        // Same produce-skepticism: skip gzip-sourced produce
-        if (idx == 0 && !_fallbackKeys.contains(key)) continue;
         return _indexToCategory(idx);
       }
     }
