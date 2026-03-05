@@ -107,6 +107,12 @@ class IngredientService {
     'coriander leaf':  'cilantro',
     'fresh coriander': 'cilantro',
 
+    //  Heading uses the canonical normalized form, - meaning the heading is "Unsalted Butter". I want "butter".
+    'unsalted butter': 'butter',
+    'salted butter': 'butter',
+    'clarified butter': 'butter',
+    'cultured butter': 'butter',
+
     // add synonyms here only when two names refer to EXACTLY the same ingredient
   };
 
