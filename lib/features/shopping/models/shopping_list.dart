@@ -387,11 +387,15 @@ class ShoppingListService {
     if (amounts.isEmpty) return null;
     
     // Start with the first unit as the target
-    final firstUnit = UnitNormalizer.normalize(amounts[0].unit);
+    final firstUnit = UnitNormalizer.normalizeUnit(
+      UnitNormalizer.normalize(amounts[0].unit).toLowerCase()
+    );
     
     // Check if all amounts can convert to this unit
     for (final p in amounts) {
-      final unit = UnitNormalizer.normalize(p.unit);
+      final unit = UnitNormalizer.normalizeUnit(
+        UnitNormalizer.normalize(p.unit).toLowerCase()
+      );
       if (unit == firstUnit) continue; // Already same
       
       // Try volume conversion
