@@ -174,7 +174,21 @@ class _DirectionListState extends ConsumerState<DirectionList> {
         final isCompleted = _completedSteps.contains(index);
         final hasImage = widget.recipe?.getStepImageIndex(index) != null;
 
-        final rowContent = Padding(
+        final inkWell = InkWell(
+          onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
+            setState(() {
+              if (isCompleted) {
+                _completedSteps.remove(index);
+              } else {
+                _completedSteps.add(index);
+              }
+            });
+          },
+          child: Padding(
             padding: EdgeInsets.symmetric(vertical: verticalPadding),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -239,52 +253,25 @@ class _DirectionListState extends ConsumerState<DirectionList> {
                   ),
               ],
             ),
+          ),
         );
 
-        if (!widget.enableTimerLongPress) {
-          return GestureDetector(
-            onTap: () {
-              setState(() {
-                if (isCompleted) {
-                  _completedSteps.remove(index);
-                } else {
-                  _completedSteps.add(index);
-                }
-              });
-            },
-            child: rowContent,
-          );
-        }
+        if (!widget.enableTimerLongPress) return inkWell;
 
         return GestureDetector(
-          onTap: () {
-            if (_suppressNextTap) {
+          onLongPress: () async {
+            _suppressNextTap = true;
+            final duration = extractTimerDuration(step);
+            if (duration == null) {
               _suppressNextTap = false;
               return;
             }
-            setState(() {
-              if (isCompleted) {
-                _completedSteps.remove(index);
-              } else {
-                _completedSteps.add(index);
-              }
-            });
+            await HapticFeedback.mediumImpact();
+            if (context.mounted) {
+              _showTimerBottomSheet(context, ref, duration, step);
+            }
           },
-          child: InkWell(
-            onLongPress: () async {
-              _suppressNextTap = true;
-              final duration = extractTimerDuration(step);
-              if (duration == null) {
-                _suppressNextTap = false;
-                return;
-              }
-              await HapticFeedback.mediumImpact();
-              if (context.mounted) {
-                _showTimerBottomSheet(context, ref, duration, step);
-              }
-            },
-            child: rowContent,
-          ),
+          child: inkWell,
         );
       }),
     );

@@ -845,7 +845,6 @@ class _DirectionsColumn extends ConsumerStatefulWidget {
 
 class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
   final Set<int> _completedSteps = {};
-  bool _suppressNextStepTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -927,36 +926,29 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final verticalPadding = widget.isCompact ? 4.0 : 6.0;
     final fontSize = widget.isCompact ? 12.0 : 14.0;
 
-    return GestureDetector(
-      onTap: () {
-        if (_suppressNextStepTap) {
-          _suppressNextStepTap = false;
-          return;
-        }
-        setState(() {
-          if (isCompleted) {
-            _completedSteps.remove(index);
-          } else {
-            _completedSteps.add(index);
+    return Material(
+      type: MaterialType.transparency,
+      child: InkWell(
+        splashFactory: NoSplash.splashFactory,
+        highlightColor: Colors.transparent,
+        onTap: () {
+          setState(() {
+            if (isCompleted) {
+              _completedSteps.remove(index);
+            } else {
+              _completedSteps.add(index);
+            }
+          });
+        },
+        onLongPress: () async {
+          final duration = extractTimerDuration(step);
+          if (duration == null) return;
+          await HapticFeedback.mediumImpact();
+          if (context.mounted) {
+            _showTimerBottomSheet(context, ref, duration, step);
           }
-        });
-      },
-      child: Material(
-        type: MaterialType.transparency,
-        child: InkWell(
-          onLongPress: () async {
-            _suppressNextStepTap = true;
-            final duration = extractTimerDuration(step);
-            if (duration == null) {
-              _suppressNextStepTap = false;
-              return;
-            }
-            await HapticFeedback.mediumImpact();
-            if (context.mounted) {
-              _showTimerBottomSheet(context, ref, duration, step);
-            }
-          },
-          child: Padding(
+        },
+        child: Padding(
           padding: EdgeInsets.symmetric(vertical: verticalPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -1009,7 +1001,6 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
             ],
           ),
         ),
-      ),
       ),
     );
   }

@@ -774,36 +774,37 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         final isCompleted = _completedDirections.contains(index);
         final hasImage = recipe.getStepImageIndex(index) != null;
 
-        return GestureDetector(
-          onTap: () {
-            if (_suppressNextStepTap) {
-              _suppressNextStepTap = false;
-              return;
-            }
-            setState(() {
-              if (isCompleted) {
-                _completedDirections.remove(index);
-              } else {
-                _completedDirections.add(index);
+        return Material(
+          type: MaterialType.transparency,
+          child: InkWell(
+            splashFactory: NoSplash.splashFactory,
+            highlightColor: Colors.transparent,
+            onTap: () {
+              if (_suppressNextStepTap) {
+                _suppressNextStepTap = false;
+                return;
               }
-            });
-          },
-          child: Material(
-            type: MaterialType.transparency,
-            child: InkWell(
-              onLongPress: () async {
-                _suppressNextStepTap = true;
-                final duration = extractTimerDuration(direction);
-                if (duration == null) {
-                  _suppressNextStepTap = false;
-                  return;
+              setState(() {
+                if (isCompleted) {
+                  _completedDirections.remove(index);
+                } else {
+                  _completedDirections.add(index);
                 }
-                await HapticFeedback.mediumImpact();
-                if (context.mounted) {
-                  _showTimerBottomSheet(context, ref, duration, direction);
-                }
-              },
-              child: Padding(
+              });
+            },
+            onLongPress: () async {
+              _suppressNextStepTap = true;
+              final duration = extractTimerDuration(direction);
+              if (duration == null) {
+                _suppressNextStepTap = false;
+                return;
+              }
+              await HapticFeedback.mediumImpact();
+              if (context.mounted) {
+                _showTimerBottomSheet(context, ref, duration, direction);
+              }
+            },
+            child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -859,7 +860,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ),
               ],
             ),
-          ),
           ),
           ),
         );
