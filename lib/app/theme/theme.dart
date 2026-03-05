@@ -42,6 +42,7 @@ class MemoixTheme {
   static ThemeData get light {
     return ThemeData(
       useMaterial3: true,
+      splashFactory: NoSplash.splashFactory,
       brightness: Brightness.light,
       colorScheme: const ColorScheme.light(
         primary: lightAccent2,
@@ -162,6 +163,7 @@ class MemoixTheme {
   static ThemeData get dark {
     return ThemeData(
       useMaterial3: true,
+      splashFactory: NoSplash.splashFactory,
       brightness: Brightness.dark,
       colorScheme: const ColorScheme.dark(
         primary: darkAccent2,

@@ -774,11 +774,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         final isCompleted = _completedDirections.contains(index);
         final hasImage = recipe.getStepImageIndex(index) != null;
 
-        return Material(
-          type: MaterialType.transparency,
-          child: InkWell(
-            splashFactory: NoSplash.splashFactory,
-            highlightColor: Colors.transparent,
+        return GestureDetector(
             onTap: () {
               if (_suppressNextStepTap) {
                 _suppressNextStepTap = false;
@@ -860,7 +856,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ),
               ],
             ),
-          ),
           ),
         );
       }).toList(),

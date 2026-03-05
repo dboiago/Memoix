@@ -586,11 +586,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final circleFontSize = widget.isCompact ? 10.0 : 12.0;
     final stepFontSize = widget.isCompact ? 13.0 : 14.0;
 
-    return Material(
-      type: MaterialType.transparency,
-      child: InkWell(
-        splashFactory: NoSplash.splashFactory,
-        highlightColor: Colors.transparent,
+    return GestureDetector(
         onTap: () {
           if (_suppressNextStepTap) {
             _suppressNextStepTap = false;
@@ -680,7 +676,6 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
             ],
           ),
         ),
-      ),
     );
   }
 }

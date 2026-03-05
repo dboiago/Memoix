@@ -926,11 +926,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final verticalPadding = widget.isCompact ? 4.0 : 6.0;
     final fontSize = widget.isCompact ? 12.0 : 14.0;
 
-    return Material(
-      type: MaterialType.transparency,
-      child: InkWell(
-        splashFactory: NoSplash.splashFactory,
-        highlightColor: Colors.transparent,
+    return GestureDetector(
         onTap: () {
           setState(() {
             if (isCompleted) {
@@ -1001,7 +997,6 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
             ],
           ),
         ),
-      ),
     );
   }
 }

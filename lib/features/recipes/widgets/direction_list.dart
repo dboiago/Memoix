@@ -174,7 +174,7 @@ class _DirectionListState extends ConsumerState<DirectionList> {
         final isCompleted = _completedSteps.contains(index);
         final hasImage = widget.recipe?.getStepImageIndex(index) != null;
 
-        final inkWell = InkWell(
+        final gestureRow = GestureDetector(
           onTap: () {
             if (_suppressNextTap) {
               _suppressNextTap = false;
@@ -256,9 +256,22 @@ class _DirectionListState extends ConsumerState<DirectionList> {
           ),
         );
 
-        if (!widget.enableTimerLongPress) return inkWell;
+        if (!widget.enableTimerLongPress) return gestureRow;
 
         return GestureDetector(
+          onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
+            setState(() {
+              if (isCompleted) {
+                _completedSteps.remove(index);
+              } else {
+                _completedSteps.add(index);
+              }
+            });
+          },
           onLongPress: () async {
             _suppressNextTap = true;
             final duration = extractTimerDuration(step);
@@ -271,7 +284,72 @@ class _DirectionListState extends ConsumerState<DirectionList> {
               _showTimerBottomSheet(context, ref, duration, step);
             }
           },
-          child: inkWell,
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: verticalPadding),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Step number circle
+                Container(
+                  width: circleSize,
+                  height: circleSize,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: isCompleted
+                        ? theme.colorScheme.surfaceContainerHighest
+                        : theme.colorScheme.secondary.withOpacity(0.15),
+                    border: Border.all(
+                      color: isCompleted
+                          ? theme.colorScheme.outline.withOpacity(0.5)
+                          : theme.colorScheme.secondary,
+                      width: 1.5,
+                    ),
+                  ),
+                  child: Center(
+                    child: isCompleted
+                        ? Icon(Icons.check, size: circleIconSize, color: theme.colorScheme.outline)
+                        : Text(
+                            '$displayNumber',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: circleFontSize,
+                              color: theme.colorScheme.secondary,
+                            ),
+                          ),
+                  ),
+                ),
+                SizedBox(width: gapWidth),
+
+                // Step text with optional/alternative parts in italics
+                Expanded(
+                  child: _buildStyledText(
+                    _capitalizeSentence(step),
+                    textStyle,
+                    isCompleted,
+                    theme,
+                  ),
+                ),
+
+                // Step image icon if this step has an associated image
+                if (hasImage)
+                  IconButton(
+                    icon: Icon(
+                      Icons.image_outlined,
+                      size: widget.isCompact ? 16 : 20,
+                      color: theme.colorScheme.primary,
+                    ),
+                    padding: EdgeInsets.zero,
+                    constraints: BoxConstraints(minWidth: widget.isCompact ? 24 : 32, minHeight: widget.isCompact ? 24 : 32),
+                    tooltip: 'View step image',
+                    onPressed: () {
+                      if (widget.onScrollToImage != null) {
+                        widget.onScrollToImage!(index);
+                      }
+                    },
+                  ),
+              ],
+            ),
+          ),
         );
       }),
     );

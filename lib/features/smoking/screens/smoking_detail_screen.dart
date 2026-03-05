@@ -730,9 +730,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         final step = entry.value;
         final hasStepImage = recipe.getStepImageIndex(index) != null;
 
-        return Material(
-          type: MaterialType.transparency,
-          child: InkWell(
+        return GestureDetector(
             onLongPress: () async {
               final duration = extractTimerDuration(step);
               if (duration == null) return;
@@ -798,7 +796,6 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                 ],
               ),
             ),
-          ),
         );
       }).toList(),
     );
