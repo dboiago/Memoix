@@ -323,6 +323,13 @@ class IngredientService {
       'orange zest': IngredientCategory.produce.index,
       'kimchi': IngredientCategory.produce.index,
       'ube': IngredientCategory.produce.index,
+      'ya cai': IngredientCategory.produce.index,
+      'yu choi': IngredientCategory.produce.index,
+      'gai lan': IngredientCategory.produce.index,
+      'gai choy': IngredientCategory.produce.index,
+      'tong ho': IngredientCategory.produce.index,
+      'ong choy': IngredientCategory.produce.index,
+
       // Meat
       'beef': IngredientCategory.meat.index,
       'steak': IngredientCategory.meat.index,
