@@ -586,35 +586,36 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final circleFontSize = widget.isCompact ? 10.0 : 12.0;
     final stepFontSize = widget.isCompact ? 13.0 : 14.0;
 
-    return Material(
-      type: MaterialType.transparency,
-      child: InkWell(
-        onTap: () {
-          if (_suppressNextStepTap) {
-            _suppressNextStepTap = false;
-            return;
+    return GestureDetector(
+      onTap: () {
+        if (_suppressNextStepTap) {
+          _suppressNextStepTap = false;
+          return;
+        }
+        setState(() {
+          if (isCompleted) {
+            _completedSteps.remove(index);
+          } else {
+            _completedSteps.add(index);
           }
-          setState(() {
-            if (isCompleted) {
-              _completedSteps.remove(index);
-            } else {
-              _completedSteps.add(index);
+        });
+      },
+      child: Material(
+        type: MaterialType.transparency,
+        child: InkWell(
+          onLongPress: () async {
+            _suppressNextStepTap = true;
+            final duration = extractTimerDuration(step);
+            if (duration == null) {
+              _suppressNextStepTap = false;
+              return;
             }
-          });
-        },
-        onLongPress: () async {
-          _suppressNextStepTap = true;
-          final duration = extractTimerDuration(step);
-          if (duration == null) {
-            _suppressNextStepTap = false;
-            return;
-          }
-          await HapticFeedback.mediumImpact();
-          if (context.mounted) {
-            _showTimerBottomSheet(context, ref, duration, step);
-          }
-        },
-        child: Padding(
+            await HapticFeedback.mediumImpact();
+            if (context.mounted) {
+              _showTimerBottomSheet(context, ref, duration, step);
+            }
+          },
+          child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 6),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -678,6 +679,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
             ],
           ),
         ),
+      ),
       ),
     );
   }
