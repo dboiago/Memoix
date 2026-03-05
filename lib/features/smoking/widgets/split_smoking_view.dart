@@ -1,8 +1,15 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/smoking_recipe.dart';
+import '../../../app/routes/router.dart';
+import '../../../core/utils/timer_duration_extractor.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../shared/widgets/time_picker_column.dart';
+import '../../tools/timer_service.dart';
 
 /// A specialized split-view widget for "Side-by-Side Mode" that displays
 /// Ingredients and Directions side-by-side with independent scrolling.
@@ -519,7 +526,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
 }
 
 /// Directions column with sticky header and independent scrolling.
-class _DirectionsColumn extends StatefulWidget {
+class _DirectionsColumn extends ConsumerStatefulWidget {
   final List<String> directions;
   final SmokingRecipe? recipe;
   final Function(int stepIndex)? onScrollToImage;
@@ -533,11 +540,12 @@ class _DirectionsColumn extends StatefulWidget {
   });
 
   @override
-  State<_DirectionsColumn> createState() => _DirectionsColumnState();
+  ConsumerState<_DirectionsColumn> createState() => _DirectionsColumnState();
 }
 
-class _DirectionsColumnState extends State<_DirectionsColumn> {
+class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
   final Set<int> _completedSteps = {};
+  bool _suppressNextStepTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -578,82 +586,219 @@ class _DirectionsColumnState extends State<_DirectionsColumn> {
     final circleFontSize = widget.isCompact ? 10.0 : 12.0;
     final stepFontSize = widget.isCompact ? 13.0 : 14.0;
 
-    return InkWell(
-      onTap: () {
-        setState(() {
-          if (isCompleted) {
-            _completedSteps.remove(index);
-          } else {
-            _completedSteps.add(index);
+    return Material(
+      type: MaterialType.transparency,
+      child: InkWell(
+        onTap: () {
+          if (_suppressNextStepTap) {
+            _suppressNextStepTap = false;
+            return;
           }
-        });
-      },
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Step number circle
-            Container(
-              width: circleSize,
-              height: circleSize,
-              decoration: BoxDecoration(
-                color: isCompleted
-                    ? theme.colorScheme.secondary.withOpacity(0.2)
-                    : theme.colorScheme.secondary.withOpacity(0.15),
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: theme.colorScheme.secondary,
-                  width: 1.5,
-                ),
-              ),
-              child: Center(
-                child: isCompleted
-                    ? Icon(Icons.check, size: circleSize * 0.6, color: theme.colorScheme.secondary)
-                    : Text(
-                        '${index + 1}',
-                        style: TextStyle(
-                          color: theme.colorScheme.secondary,
-                          fontWeight: FontWeight.bold,
-                          fontSize: circleFontSize,
-                        ),
-                      ),
-              ),
-            ),
-            const SizedBox(width: 8),
-
-            // Step text
-            Expanded(
-              child: Text(
-                step,
-                style: TextStyle(
-                  fontSize: stepFontSize,
-                  decoration: isCompleted ? TextDecoration.lineThrough : null,
+          setState(() {
+            if (isCompleted) {
+              _completedSteps.remove(index);
+            } else {
+              _completedSteps.add(index);
+            }
+          });
+        },
+        onLongPress: () async {
+          _suppressNextStepTap = true;
+          final duration = extractTimerDuration(step);
+          if (duration == null) {
+            _suppressNextStepTap = false;
+            return;
+          }
+          await HapticFeedback.mediumImpact();
+          if (context.mounted) {
+            _showTimerBottomSheet(context, ref, duration, step);
+          }
+        },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 6),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Step number circle
+              Container(
+                width: circleSize,
+                height: circleSize,
+                decoration: BoxDecoration(
                   color: isCompleted
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
-                      : null,
+                      ? theme.colorScheme.secondary.withOpacity(0.2)
+                      : theme.colorScheme.secondary.withOpacity(0.15),
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: theme.colorScheme.secondary,
+                    width: 1.5,
+                  ),
+                ),
+                child: Center(
+                  child: isCompleted
+                      ? Icon(Icons.check, size: circleSize * 0.6, color: theme.colorScheme.secondary)
+                      : Text(
+                          '${index + 1}',
+                          style: TextStyle(
+                            color: theme.colorScheme.secondary,
+                            fontWeight: FontWeight.bold,
+                            fontSize: circleFontSize,
+                          ),
+                        ),
                 ),
               ),
-            ),
+              const SizedBox(width: 8),
 
-            // Image icon if step has an image
-            if (hasImage)
-              IconButton(
-                icon: Icon(
-                  Icons.image_outlined,
-                  size: 18,
-                  color: theme.colorScheme.primary,
+              // Step text
+              Expanded(
+                child: Text(
+                  step,
+                  style: TextStyle(
+                    fontSize: stepFontSize,
+                    decoration: isCompleted ? TextDecoration.lineThrough : null,
+                    color: isCompleted
+                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        : null,
+                  ),
                 ),
-                padding: EdgeInsets.zero,
-                constraints: const BoxConstraints(minWidth: 28, minHeight: 28),
-                tooltip: 'View step image',
-                onPressed: () => widget.onScrollToImage?.call(index),
               ),
-          ],
+
+              // Image icon if step has an image
+              if (hasImage)
+                IconButton(
+                  icon: Icon(
+                    Icons.image_outlined,
+                    size: 18,
+                    color: theme.colorScheme.primary,
+                  ),
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(minWidth: 28, minHeight: 28),
+                  tooltip: 'View step image',
+                  onPressed: () => widget.onScrollToImage?.call(index),
+                ),
+            ],
+          ),
         ),
       ),
     );
   }
+}
+
+// ---------------------------------------------------------------------------
+// Timer quick-start bottom sheet (split smoking)
+// ---------------------------------------------------------------------------
+
+String _formatTimerDuration(Duration d) {
+  final h = d.inHours;
+  final m = d.inMinutes.remainder(60).toString().padLeft(2, '0');
+  final s = d.inSeconds.remainder(60).toString().padLeft(2, '0');
+  return h > 0 ? '$h:$m:$s' : '$m:$s';
+}
+
+void _showTimerBottomSheet(
+  BuildContext context,
+  WidgetRef ref,
+  Duration duration,
+  String stepText,
+) {
+  final label = stepText.length > 60 ? '${stepText.substring(0, 60)}\u2026' : stepText;
+
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    builder: (ctx) {
+      int hours = duration.inHours;
+      int minutes = duration.inMinutes.remainder(60);
+      int seconds = duration.inSeconds.remainder(60);
+
+      return StatefulBuilder(
+        builder: (sheetContext, setSheetState) {
+          final theme = Theme.of(sheetContext);
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    label,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      TimePickerColumn(
+                        label: 'Hours',
+                        value: hours,
+                        max: 23,
+                        onChanged: (v) => setSheetState(() => hours = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Min',
+                        value: minutes,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => minutes = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Sec',
+                        value: seconds,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => seconds = v),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(ctx),
+                        child: const Text('Cancel'),
+                      ),
+                      const SizedBox(width: 8),
+                      FilledButton(
+                        onPressed: () {
+                          final d = Duration(
+                            hours: hours,
+                            minutes: minutes,
+                            seconds: seconds,
+                          );
+                          if (d.inSeconds > 0) {
+                            ref.read(timerServiceProvider.notifier).addTimer(
+                              duration: d,
+                              label: label,
+                              sound: TimerSound.alarm,
+                            );
+                            final timers = ref.read(timerServiceProvider).timers;
+                            if (timers.isNotEmpty) {
+                              ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
+                            }
+                            final rootCtx = sheetContext;
+                            Navigator.pop(ctx);
+                            MemoixSnackBar.showWithAction(
+                              message: 'Timer started - ${_formatTimerDuration(d)}',
+                              actionLabel: 'View',
+                              onAction: () => AppRoutes.toKitchenTimer(rootCtx),
+                            );
+                          } else {
+                            Navigator.pop(ctx);
+                          }
+                        },
+                        child: const Text('Start'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      );
+    },
+  );
 }
 
 /// Delegate for sticky headers in CustomScrollView

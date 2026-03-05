@@ -17,6 +17,10 @@ import '../../ai/ai_settings_provider.dart';
 import '../../recipes/models/recipe.dart' show Ingredient;
 import '../../recipes/widgets/ingredient_reference_sheet.dart';
 import 'modernist_edit_screen.dart';
+import 'package:flutter/services.dart';
+import '../../../core/utils/timer_duration_extractor.dart';
+import '../../../shared/widgets/time_picker_column.dart';
+import '../../tools/timer_service.dart';
 
 /// Detail screen for viewing a modernist recipe - follows Mains pattern exactly
 class ModernistDetailScreen extends ConsumerStatefulWidget {
@@ -38,6 +42,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   final GlobalKey _stepImagesKey = GlobalKey();
   bool _equipmentExpanded = false;
   bool _suppressNextCheckbox = false;
+  bool _suppressNextStepTap = false;
 
   /// Returns the ingredient long-press callback when AI is active, or null.
   void Function(String name)? _ingredientLongPressHandler() {
@@ -769,15 +774,35 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         final isCompleted = _completedDirections.contains(index);
         final hasImage = recipe.getStepImageIndex(index) != null;
 
-        return InkWell(
-          onTap: () => setState(() {
-            if (isCompleted) {
-              _completedDirections.remove(index);
-            } else {
-              _completedDirections.add(index);
-            }
-          }),
-          child: Padding(
+        return Material(
+          type: MaterialType.transparency,
+          child: InkWell(
+            onTap: () {
+              if (_suppressNextStepTap) {
+                _suppressNextStepTap = false;
+                return;
+              }
+              setState(() {
+                if (isCompleted) {
+                  _completedDirections.remove(index);
+                } else {
+                  _completedDirections.add(index);
+                }
+              });
+            },
+            onLongPress: () async {
+              _suppressNextStepTap = true;
+              final duration = extractTimerDuration(direction);
+              if (duration == null) {
+                _suppressNextStepTap = false;
+                return;
+              }
+              await HapticFeedback.mediumImpact();
+              if (context.mounted) {
+                _showTimerBottomSheet(context, ref, duration, direction);
+              }
+            },
+            child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -833,6 +858,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   ),
               ],
             ),
+          ),
           ),
         );
       }).toList(),
@@ -1170,6 +1196,124 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       ),
     );
   }
+}
+
+// ---------------------------------------------------------------------------
+// Timer quick-start bottom sheet (modernist)
+// ---------------------------------------------------------------------------
+
+String _formatTimerDuration(Duration d) {
+  final h = d.inHours;
+  final m = d.inMinutes.remainder(60).toString().padLeft(2, '0');
+  final s = d.inSeconds.remainder(60).toString().padLeft(2, '0');
+  return h > 0 ? '$h:$m:$s' : '$m:$s';
+}
+
+void _showTimerBottomSheet(
+  BuildContext context,
+  WidgetRef ref,
+  Duration duration,
+  String stepText,
+) {
+  final label = stepText.length > 60 ? '${stepText.substring(0, 60)}\u2026' : stepText;
+
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    builder: (ctx) {
+      int hours = duration.inHours;
+      int minutes = duration.inMinutes.remainder(60);
+      int seconds = duration.inSeconds.remainder(60);
+
+      return StatefulBuilder(
+        builder: (sheetContext, setSheetState) {
+          final theme = Theme.of(sheetContext);
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    label,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      TimePickerColumn(
+                        label: 'Hours',
+                        value: hours,
+                        max: 23,
+                        onChanged: (v) => setSheetState(() => hours = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Min',
+                        value: minutes,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => minutes = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Sec',
+                        value: seconds,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => seconds = v),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(ctx),
+                        child: const Text('Cancel'),
+                      ),
+                      const SizedBox(width: 8),
+                      FilledButton(
+                        onPressed: () {
+                          final d = Duration(
+                            hours: hours,
+                            minutes: minutes,
+                            seconds: seconds,
+                          );
+                          if (d.inSeconds > 0) {
+                            ref.read(timerServiceProvider.notifier).addTimer(
+                              duration: d,
+                              label: label,
+                              sound: TimerSound.alarm,
+                            );
+                            final timers = ref.read(timerServiceProvider).timers;
+                            if (timers.isNotEmpty) {
+                              ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
+                            }
+                            final rootCtx = sheetContext;
+                            Navigator.pop(ctx);
+                            MemoixSnackBar.showWithAction(
+                              message: 'Timer started - ${_formatTimerDuration(d)}',
+                              actionLabel: 'View',
+                              onAction: () => AppRoutes.toKitchenTimer(rootCtx),
+                            );
+                          } else {
+                            Navigator.pop(ctx);
+                          }
+                        },
+                        child: const Text('Start'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      );
+    },
+  );
 }
 
 /// Helper class for indexed ingredients

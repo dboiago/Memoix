@@ -18,6 +18,10 @@ import '../../recipes/widgets/ingredient_reference_sheet.dart';
 import '../../sharing/services/share_service.dart';
 import '../../settings/screens/settings_screen.dart';
 import 'smoking_edit_screen.dart';
+import 'package:flutter/services.dart';
+import '../../../core/utils/timer_duration_extractor.dart';
+import '../../../shared/widgets/time_picker_column.dart';
+import '../../tools/timer_service.dart';
 
 /// Detail screen showing a smoking recipe's full information
 class SmokingDetailScreen extends ConsumerWidget {
@@ -726,61 +730,74 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         final step = entry.value;
         final hasStepImage = recipe.getStepImageIndex(index) != null;
 
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 12),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Step number with outlined secondary styling
-              Container(
-                width: 28,
-                height: 28,
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: theme.colorScheme.secondary,
-                    width: 1.5,
+        return Material(
+          type: MaterialType.transparency,
+          child: InkWell(
+            onLongPress: () async {
+              final duration = extractTimerDuration(step);
+              if (duration == null) return;
+              await HapticFeedback.mediumImpact();
+              if (context.mounted) {
+                _showTimerBottomSheet(context, ref, duration, step);
+              }
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Step number with outlined secondary styling
+                  Container(
+                    width: 28,
+                    height: 28,
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.secondary.withOpacity(0.15),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: theme.colorScheme.secondary,
+                        width: 1.5,
+                      ),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      '${index + 1}',
+                      style: TextStyle(
+                        color: theme.colorScheme.secondary,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 13,
+                      ),
+                    ),
                   ),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  '${index + 1}',
-                  style: TextStyle(
-                    color: theme.colorScheme.secondary,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 13,
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        step,
+                        style: theme.textTheme.bodyLarge,
+                      ),
+                    ),
                   ),
-                ),
+                  // Step image indicator
+                  if (hasStepImage)
+                    IconButton(
+                      icon: Icon(
+                        Icons.image,
+                        size: 20,
+                        color: theme.colorScheme.primary,
+                      ),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                      tooltip: 'View step image',
+                      onPressed: () => _scrollToAndShowImage(recipe, index),
+                    ),
+                ],
               ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: theme.colorScheme.surfaceContainerHighest,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    step,
-                    style: theme.textTheme.bodyLarge,
-                  ),
-                ),
-              ),
-              // Step image indicator
-              if (hasStepImage)
-                IconButton(
-                  icon: Icon(
-                    Icons.image,
-                    size: 20,
-                    color: theme.colorScheme.primary,
-                  ),
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
-                  tooltip: 'View step image',
-                  onPressed: () => _scrollToAndShowImage(recipe, index),
-                ),
-            ],
+            ),
           ),
         );
       }).toList(),
@@ -1343,4 +1360,122 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
       }).toList(),
     );
   }
+}
+
+// ---------------------------------------------------------------------------
+// Timer quick-start bottom sheet (smoking)
+// ---------------------------------------------------------------------------
+
+String _formatTimerDuration(Duration d) {
+  final h = d.inHours;
+  final m = d.inMinutes.remainder(60).toString().padLeft(2, '0');
+  final s = d.inSeconds.remainder(60).toString().padLeft(2, '0');
+  return h > 0 ? '$h:$m:$s' : '$m:$s';
+}
+
+void _showTimerBottomSheet(
+  BuildContext context,
+  WidgetRef ref,
+  Duration duration,
+  String stepText,
+) {
+  final label = stepText.length > 60 ? '${stepText.substring(0, 60)}\u2026' : stepText;
+
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    builder: (ctx) {
+      int hours = duration.inHours;
+      int minutes = duration.inMinutes.remainder(60);
+      int seconds = duration.inSeconds.remainder(60);
+
+      return StatefulBuilder(
+        builder: (sheetContext, setSheetState) {
+          final theme = Theme.of(sheetContext);
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    label,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      TimePickerColumn(
+                        label: 'Hours',
+                        value: hours,
+                        max: 23,
+                        onChanged: (v) => setSheetState(() => hours = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Min',
+                        value: minutes,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => minutes = v),
+                      ),
+                      TimePickerColumn(
+                        label: 'Sec',
+                        value: seconds,
+                        max: 59,
+                        onChanged: (v) => setSheetState(() => seconds = v),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(ctx),
+                        child: const Text('Cancel'),
+                      ),
+                      const SizedBox(width: 8),
+                      FilledButton(
+                        onPressed: () {
+                          final d = Duration(
+                            hours: hours,
+                            minutes: minutes,
+                            seconds: seconds,
+                          );
+                          if (d.inSeconds > 0) {
+                            ref.read(timerServiceProvider.notifier).addTimer(
+                              duration: d,
+                              label: label,
+                              sound: TimerSound.alarm,
+                            );
+                            final timers = ref.read(timerServiceProvider).timers;
+                            if (timers.isNotEmpty) {
+                              ref.read(timerServiceProvider.notifier).startTimer(timers.last.id);
+                            }
+                            final rootCtx = sheetContext;
+                            Navigator.pop(ctx);
+                            MemoixSnackBar.showWithAction(
+                              message: 'Timer started - ${_formatTimerDuration(d)}',
+                              actionLabel: 'View',
+                              onAction: () => AppRoutes.toKitchenTimer(rootCtx),
+                            );
+                          } else {
+                            Navigator.pop(ctx);
+                          }
+                        },
+                        child: const Text('Start'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      );
+    },
+  );
 }

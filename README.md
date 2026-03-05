@@ -4,7 +4,7 @@
   <img src="assets/images/Memoix-logo-mauve-2000.png" alt="Memoix Logo" width="200">
 </p>
 
-Memoix is a recipe and food reference app for people who cook seriously.
+Memoix is a recipe and culinary reference app for people who cook seriously.
 
 It prioritizes speed, clarity, and flexibility over gamification or beginner scaffolding. Recipes, techniques, logs, and notes live side-by-side, with support for workflows that don't fit neatly into "ingredients + steps".
 
@@ -29,6 +29,9 @@ It intentionally avoids:
 
 Some sections are recipes. Others are reference logs, technique notes, or memory aids. That distinction is deliberate.
 
+Memoix does not rely on AI to function.
+AI features exist only as optional tools when a human cook chooses to use them.
+
 ---
 
 ## Core Features
@@ -47,8 +50,19 @@ Capture recipes from photos of books, notebooks, or printed pages.
 **URL import**  
 Import recipes from websites and normalize them into Memoix's data model.
 
+**AI import (optional)**  
+For recipes that OCR cannot reliably parse (such as complex cookbook layouts), Memoix can optionally use an AI agent provided by the user to import the recipe.
+
+This requires supplying your own API key and is entirely opt-in.
+
 **Side-by-side cooking view**  
 Ingredients and directions displayed together for hands-free use.
+
+**Cooking utilities**
+Small tools designed for real kitchen use:
+- Direction-based quick timers
+- Dynamic ingredient scaling for adjusting serving sizes
+- Ingredient reference (optional) using user provided AI to provide details, alternate names and practical substitutions
 
 **Offline-first**  
 Local database. No account required. No cloud dependency.
@@ -78,7 +92,10 @@ Dedicated sections for things that aren't recipes (cheese notes, cellar inventor
 Memoix includes a number of small behaviors intended to reduce friction during actual cooking and reference use.
 
 - Recipe steps can be marked as completed to help you keep your place
+- Recipe directions can start timers directly from the directions
+- Recipes can be scaled dynamically to adjust serving sizes
 - Different cuisines expose different configuration options where relevant
+- Ingredient references and substitutions can be looked up without leaving the recipe
 - Recipes can be viewed in multiple layouts depending on context
 - Some sections are not recipes at all, but logs or reference material
   
