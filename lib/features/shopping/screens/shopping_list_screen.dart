@@ -8,6 +8,7 @@ import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/shopping_list.dart';
+import '../models/shopping_list_item.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -759,7 +760,7 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
           },
         ),
             title: Text(
-              widget.item.name,
+              pluralizeIngredient(widget.item.name),
               style: TextStyle(
                 decoration: widget.item.isChecked ? TextDecoration.lineThrough : null,
                 color: widget.item.isChecked

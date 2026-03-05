@@ -147,7 +147,27 @@ class UnitNormalizer {
     // Return original if no match
     return trimmed;
   }
-  
+
+  /// De-pluralizes a unit string for use as a grouping key.
+  ///
+  /// Applied **only** during shopping list aggregation to ensure that variant
+  /// spellings of the same unit (e.g. "cloves" vs "clove", "pinches" vs
+  /// "pinch") land in the same quantity bucket.
+  ///
+  /// Does NOT modify the stored or displayed unit — purely for bucketing.
+  ///
+  /// Examples:
+  ///   normalizeUnit('cloves')  → 'clove'
+  ///   normalizeUnit('pinches') → 'pinch'
+  ///   normalizeUnit('tbsp')    → 'tbsp'   (no trailing 's', unchanged)
+  ///   normalizeUnit('C')       → 'c'      (lowercased)
+  static String normalizeUnit(String unit) {
+    var u = unit.toLowerCase().trim();
+    u = u.replaceAll(RegExp(r'ies$'), 'y');
+    u = u.replaceAll(RegExp(r'(?<![sui])s$'), '');
+    return u;
+  }
+
   /// Check if a string is a recognized unit
   static bool isRecognizedUnit(String? unit) {
     if (unit == null || unit.isEmpty) return false;
