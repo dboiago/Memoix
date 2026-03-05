@@ -128,7 +128,11 @@ const Map<String, String?> _pluralExceptions = {
   'avocado': 'avocados',
   // Invariant countables (singular = plural)
   'fish': null,
+  'zest': null,
   'celery': null,
+  'kimchi': null,
+  'spinach': null,
+  'rosemary': null,
   'basil': null,
   'parsley': null,
   'thyme': null,
