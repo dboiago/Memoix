@@ -40,6 +40,10 @@ class DirectionList extends ConsumerStatefulWidget {
 class _DirectionListState extends ConsumerState<DirectionList> {
   final Set<int> _completedSteps = {};
 
+  /// Set to true by GestureDetector.onLongPress so the InkWell.onTap
+  /// that fires on finger-lift is swallowed and does not mark the step complete.
+  bool _suppressNextTap = false;
+
   // Check if a step is a section header (wrapped in square brackets)
   bool _isSection(String step) {
     final trimmed = step.trim();
@@ -172,6 +176,10 @@ class _DirectionListState extends ConsumerState<DirectionList> {
 
         final inkWell = InkWell(
           onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
             setState(() {
               if (isCompleted) {
                 _completedSteps.remove(index);
@@ -252,8 +260,12 @@ class _DirectionListState extends ConsumerState<DirectionList> {
 
         return GestureDetector(
           onLongPress: () async {
+            _suppressNextTap = true;
             final duration = extractTimerDuration(step);
-            if (duration == null) return;
+            if (duration == null) {
+              _suppressNextTap = false;
+              return;
+            }
             await HapticFeedback.mediumImpact();
             if (context.mounted) {
               _showTimerBottomSheet(context, ref, duration, step);

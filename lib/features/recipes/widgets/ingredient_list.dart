@@ -130,6 +130,10 @@ class IngredientList extends StatefulWidget {
 class _IngredientListState extends State<IngredientList> {
   final Set<int> _checkedItems = {};
 
+  /// Set to true by onLongPress so the onTap that fires on finger-lift
+  /// does not toggle the checkbox when opening the reference sheet.
+  bool _suppressNextTap = false;
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -243,6 +247,10 @@ class _IngredientListState extends State<IngredientList> {
 
     return InkWell(
       onTap: () {
+        if (_suppressNextTap) {
+          _suppressNextTap = false;
+          return;
+        }
         setState(() {
           if (isChecked) {
             _checkedItems.remove(item.index);
@@ -252,7 +260,10 @@ class _IngredientListState extends State<IngredientList> {
         });
       },
       onLongPress: widget.onIngredientLongPress != null
-          ? () => widget.onIngredientLongPress!(item.ingredient)
+          ? () {
+              _suppressNextTap = true;
+              widget.onIngredientLongPress!(item.ingredient);
+            }
           : null,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: verticalPadding),

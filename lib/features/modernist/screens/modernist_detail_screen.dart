@@ -13,6 +13,9 @@ import '../../sharing/services/share_service.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import '../widgets/split_modernist_view.dart';
+import '../../ai/ai_settings_provider.dart';
+import '../../recipes/models/recipe.dart' show Ingredient;
+import '../../recipes/widgets/ingredient_reference_sheet.dart';
 import 'modernist_edit_screen.dart';
 
 /// Detail screen for viewing a modernist recipe - follows Mains pattern exactly
@@ -34,6 +37,21 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   final ScrollController _scrollController = ScrollController();
   final GlobalKey _stepImagesKey = GlobalKey();
   bool _equipmentExpanded = false;
+  bool _suppressNextCheckbox = false;
+
+  /// Returns the ingredient long-press callback when AI is active, or null.
+  void Function(String name)? _ingredientLongPressHandler() {
+    final aiSettings = ref.watch(aiSettingsProvider);
+    if (aiSettings.activeProviders.isEmpty) return null;
+    return (name) {
+      if (!mounted) return;
+      showIngredientReferenceSheet(
+        context: context,
+        ref: ref,
+        ingredient: Ingredient()..name = name,
+      );
+    };
+  }
 
   @override
   void dispose() {
@@ -123,6 +141,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             child: SplitModernistView(
               recipe: recipe,
               onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+              onIngredientLongPress: _ingredientLongPressHandler(),
             ),
           ),
         ],
@@ -595,6 +614,9 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       );
     }
 
+    // Resolve once at build time — ref.watch must not be called in callbacks.
+    final onLongPress = _ingredientLongPressHandler();
+
     // Group by section if available
     final grouped = _groupBySection(ingredients);
 
@@ -621,20 +643,24 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
               ),
             ],
             // Ingredients in this section
-            ...items.map((item) => _buildIngredientRow(theme, item)),
+            ...items.map((item) => _buildIngredientRow(theme, item, onLongPress: onLongPress)),
           ],
         );
       }).toList(),
     );
   }
 
-  Widget _buildIngredientRow(ThemeData theme, _IndexedIngredient item) {
+  Widget _buildIngredientRow(ThemeData theme, _IndexedIngredient item, {void Function(String name)? onLongPress}) {
     final index = item.index;
     final ingredient = item.ingredient;
     final isChecked = _checkedIngredients.contains(index);
 
     return InkWell(
       onTap: () {
+        if (_suppressNextCheckbox) {
+          _suppressNextCheckbox = false;
+          return;
+        }
         setState(() {
           if (isChecked) {
             _checkedIngredients.remove(index);
@@ -643,6 +669,12 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           }
         });
       },
+      onLongPress: onLongPress != null
+          ? () {
+              _suppressNextCheckbox = true;
+              onLongPress(ingredient.name);
+            }
+          : null,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
         child: Row(

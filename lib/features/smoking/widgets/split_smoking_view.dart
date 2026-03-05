@@ -13,11 +13,13 @@ import '../models/smoking_recipe.dart';
 class SplitSmokingView extends StatelessWidget {
   final SmokingRecipe recipe;
   final Function(int stepIndex)? onScrollToImage;
+  final void Function(String name)? onIngredientLongPress;
 
   const SplitSmokingView({
     super.key,
     required this.recipe,
     this.onScrollToImage,
+    this.onIngredientLongPress,
   });
 
   /// Calculate the flex ratio for ingredients column based on screen width.
@@ -129,6 +131,7 @@ class SplitSmokingView extends StatelessWidget {
                             child: _IngredientsColumn(
                               recipe: recipe,
                               isCompact: isCompact,
+                              onIngredientLongPress: onIngredientLongPress,
                             ),
                           ),
                         ),
@@ -345,10 +348,12 @@ class SplitSmokingView extends StatelessWidget {
 class _IngredientsColumn extends StatefulWidget {
   final SmokingRecipe recipe;
   final bool isCompact;
+  final void Function(String name)? onIngredientLongPress;
 
   const _IngredientsColumn({
     required this.recipe,
     required this.isCompact,
+    this.onIngredientLongPress,
   });
 
   @override
@@ -357,6 +362,7 @@ class _IngredientsColumn extends StatefulWidget {
 
 class _IngredientsColumnState extends State<_IngredientsColumn> {
   final Set<int> _checkedItems = {};
+  bool _suppressNextTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -380,7 +386,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
       // Pit Note: show main item and seasonings
       if (recipe.item != null && recipe.item!.isNotEmpty) {
         widgets.add(_buildSectionHeader(theme, 'Main'));
-        widgets.add(_buildIngredientRow(context, 0, recipe.item!));
+        widgets.add(_buildIngredientRow(context, 0, recipe.item!, ingredientName: recipe.item!));
       }
       
       if (recipe.seasonings.isNotEmpty) {
@@ -394,6 +400,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
             context, 
             i + 1, // Offset by 1 for the main item
             recipe.seasonings[i].displayText,
+            ingredientName: recipe.seasonings[i].name,
           ));
         }
       }
@@ -418,6 +425,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
             context, 
             i,
             recipe.ingredients[i].displayText,
+            ingredientName: recipe.ingredients[i].name,
           ));
         }
       }
@@ -439,12 +447,17 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     );
   }
 
-  Widget _buildIngredientRow(BuildContext context, int index, String text) {
+  Widget _buildIngredientRow(BuildContext context, int index, String text, {String? ingredientName}) {
     final theme = Theme.of(context);
     final isChecked = _checkedItems.contains(index);
+    final nameForAi = ingredientName ?? text;
 
     return InkWell(
       onTap: () {
+        if (_suppressNextTap) {
+          _suppressNextTap = false;
+          return;
+        }
         setState(() {
           if (isChecked) {
             _checkedItems.remove(index);
@@ -453,6 +466,12 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
           }
         });
       },
+      onLongPress: widget.onIngredientLongPress != null
+          ? () {
+              _suppressNextTap = true;
+              widget.onIngredientLongPress!(nameForAi);
+            }
+          : null,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 4),
         child: Row(

@@ -14,11 +14,13 @@ import '../models/modernist_recipe.dart';
 class SplitModernistView extends StatelessWidget {
   final ModernistRecipe recipe;
   final Function(int stepIndex)? onScrollToImage;
+  final void Function(String name)? onIngredientLongPress;
 
   const SplitModernistView({
     super.key,
     required this.recipe,
     this.onScrollToImage,
+    this.onIngredientLongPress,
   });
 
   /// Calculate the flex ratio for ingredients column based on screen width.
@@ -132,6 +134,7 @@ class SplitModernistView extends StatelessWidget {
                             child: _IngredientsColumn(
                               ingredients: recipe.ingredients,
                               isCompact: isCompact,
+                              onIngredientLongPress: onIngredientLongPress,
                             ),
                           ),
                         ),
@@ -398,10 +401,12 @@ class SplitModernistView extends StatelessWidget {
 class _IngredientsColumn extends StatefulWidget {
   final List<ModernistIngredient> ingredients;
   final bool isCompact;
+  final void Function(String name)? onIngredientLongPress;
 
   const _IngredientsColumn({
     required this.ingredients,
     required this.isCompact,
+    this.onIngredientLongPress,
   });
 
   @override
@@ -410,6 +415,7 @@ class _IngredientsColumn extends StatefulWidget {
 
 class _IngredientsColumnState extends State<_IngredientsColumn> {
   final Set<int> _checkedItems = {};
+  bool _suppressNextTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -496,6 +502,10 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
 
     return InkWell(
       onTap: () {
+        if (_suppressNextTap) {
+          _suppressNextTap = false;
+          return;
+        }
         setState(() {
           if (isChecked) {
             _checkedItems.remove(index);
@@ -504,6 +514,12 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
           }
         });
       },
+      onLongPress: widget.onIngredientLongPress != null
+          ? () {
+              _suppressNextTap = true;
+              widget.onIngredientLongPress!(ingredient.name);
+            }
+          : null,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 4),
         child: Row(

@@ -12,6 +12,9 @@ import '../../../shared/widgets/memoix_header.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/split_smoking_view.dart';
+import '../../ai/ai_settings_provider.dart';
+import '../../recipes/models/recipe.dart' show Ingredient;
+import '../../recipes/widgets/ingredient_reference_sheet.dart';
 import '../../sharing/services/share_service.dart';
 import '../../settings/screens/settings_screen.dart';
 import 'smoking_edit_screen.dart';
@@ -114,6 +117,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             child: SplitSmokingView(
               recipe: recipe,
               onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
+              onIngredientLongPress: _ingredientLongPressHandler(),
             ),
           ),
         ],
@@ -540,6 +544,20 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   }
   
   /// Build an ingredient section with header and checkable list
+  /// Returns the ingredient long-press callback when AI is active, or null.
+  void Function(String name)? _ingredientLongPressHandler() {
+    final aiSettings = ref.watch(aiSettingsProvider);
+    if (aiSettings.activeProviders.isEmpty) return null;
+    return (name) {
+      if (!mounted) return;
+      showIngredientReferenceSheet(
+        context: context,
+        ref: ref,
+        ingredient: Ingredient()..name = name,
+      );
+    };
+  }
+
   Widget _buildIngredientSection(ThemeData theme, String title, List<String> items) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -556,7 +574,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           ),
         ),
         // Ingredient list
-        _SmokingIngredientList(items: items),
+        _SmokingIngredientList(items: items, onIngredientLongPress: _ingredientLongPressHandler()),
       ],
     );
   }
@@ -696,7 +714,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       );
     }
     
-    return _SmokingIngredientsList(ingredients: recipe.ingredients);
+    return _SmokingIngredientsList(ingredients: recipe.ingredients, onIngredientLongPress: _ingredientLongPressHandler());
   }
 
   Widget _buildDirectionsList(BuildContext context, SmokingRecipe recipe) {
@@ -1115,8 +1133,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
 /// Stateful ingredient list with checkboxes for smoking recipes
 class _SmokingIngredientList extends StatefulWidget {
   final List<String> items;
+  final void Function(String name)? onIngredientLongPress;
 
-  const _SmokingIngredientList({required this.items});
+  const _SmokingIngredientList({required this.items, this.onIngredientLongPress});
 
   @override
   State<_SmokingIngredientList> createState() => _SmokingIngredientListState();
@@ -1124,6 +1143,7 @@ class _SmokingIngredientList extends StatefulWidget {
 
 class _SmokingIngredientListState extends State<_SmokingIngredientList> {
   final Set<int> _checkedItems = {};
+  bool _suppressNextTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -1138,6 +1158,10 @@ class _SmokingIngredientListState extends State<_SmokingIngredientList> {
 
         return InkWell(
           onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
             setState(() {
               if (isChecked) {
                 _checkedItems.remove(index);
@@ -1146,6 +1170,12 @@ class _SmokingIngredientListState extends State<_SmokingIngredientList> {
               }
             });
           },
+          onLongPress: widget.onIngredientLongPress != null
+              ? () {
+                  _suppressNextTap = true;
+                  widget.onIngredientLongPress!(item);
+                }
+              : null,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(
@@ -1189,8 +1219,9 @@ class _SmokingIngredientListState extends State<_SmokingIngredientList> {
 /// Stateful widget for smoking ingredients with checkboxes
 class _SmokingIngredientsList extends StatefulWidget {
   final List<SmokingSeasoning> ingredients;
+  final void Function(String name)? onIngredientLongPress;
   
-  const _SmokingIngredientsList({required this.ingredients});
+  const _SmokingIngredientsList({required this.ingredients, this.onIngredientLongPress});
   
   @override
   State<_SmokingIngredientsList> createState() => _SmokingIngredientsListState();
@@ -1198,6 +1229,7 @@ class _SmokingIngredientsList extends StatefulWidget {
 
 class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
   final Set<int> _checkedItems = {};
+  bool _suppressNextTap = false;
   
   /// Capitalize the first letter of each word
   String _capitalizeWords(String text) {
@@ -1234,6 +1266,10 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
         
         return InkWell(
           onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
             setState(() {
               if (isChecked) {
                 _checkedItems.remove(index);
@@ -1242,6 +1278,12 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
               }
             });
           },
+          onLongPress: widget.onIngredientLongPress != null
+              ? () {
+                  _suppressNextTap = true;
+                  widget.onIngredientLongPress!(ingredient.name);
+                }
+              : null,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(

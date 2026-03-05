@@ -11,6 +11,9 @@ import '../../settings/screens/settings_screen.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../../sharing/services/share_service.dart';
+import '../../ai/ai_settings_provider.dart';
+import '../../recipes/models/recipe.dart' show Ingredient;
+import '../../recipes/widgets/ingredient_reference_sheet.dart';
 
 /// Sandwich detail screen - displays sandwich info with all components
 class SandwichDetailScreen extends ConsumerWidget {
@@ -61,6 +64,19 @@ class _SandwichDetailView extends ConsumerStatefulWidget {
 }
 
 class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
+  /// Returns the ingredient long-press callback when AI is active, or null.
+  void Function(String name)? _ingredientLongPressHandler() {
+    final aiSettings = ref.watch(aiSettingsProvider);
+    if (aiSettings.activeProviders.isEmpty) return null;
+    return (name) {
+      if (!mounted) return;
+      showIngredientReferenceSheet(
+        context: context,
+        ref: ref,
+        ingredient: Ingredient()..name = name,
+      );
+    };
+  }
   @override
   Widget build(BuildContext context) {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
@@ -624,7 +640,7 @@ class _SandwichComponentsGrid extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            _SandwichIngredientList(items: items),
+            _SandwichIngredientList(items: items, onIngredientLongPress: _ingredientLongPressHandler()),
           ],
         ),
       ),
@@ -649,9 +665,11 @@ String _capitalizeWords(String text) {
 /// A simple checkable list for sandwich ingredients
 class _SandwichIngredientList extends StatefulWidget {
   final List<String> items;
+  final void Function(String name)? onIngredientLongPress;
 
   const _SandwichIngredientList({
     required this.items,
+    this.onIngredientLongPress,
   });
 
   @override
@@ -660,6 +678,7 @@ class _SandwichIngredientList extends StatefulWidget {
 
 class _SandwichIngredientListState extends State<_SandwichIngredientList> {
   final Set<int> _checkedItems = {};
+  bool _suppressNextTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -674,6 +693,10 @@ class _SandwichIngredientListState extends State<_SandwichIngredientList> {
 
         return InkWell(
           onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
             setState(() {
               if (isChecked) {
                 _checkedItems.remove(index);
@@ -682,6 +705,12 @@ class _SandwichIngredientListState extends State<_SandwichIngredientList> {
               }
             });
           },
+          onLongPress: widget.onIngredientLongPress != null
+              ? () {
+                  _suppressNextTap = true;
+                  widget.onIngredientLongPress!(item);
+                }
+              : null,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(

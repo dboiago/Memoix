@@ -11,6 +11,9 @@ import '../../settings/screens/settings_screen.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../../sharing/services/share_service.dart';
+import '../../ai/ai_settings_provider.dart';
+import '../../recipes/models/recipe.dart' show Ingredient;
+import '../../recipes/widgets/ingredient_reference_sheet.dart';
 
 /// Pizza detail screen - displays pizza info with cheeses, toppings, and notes
 class PizzaDetailScreen extends ConsumerWidget {
@@ -59,6 +62,19 @@ class _PizzaDetailView extends ConsumerStatefulWidget {
 }
 
 class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
+  /// Returns the ingredient long-press callback when AI is active, or null.
+  void Function(String name)? _ingredientLongPressHandler() {
+    final aiSettings = ref.watch(aiSettingsProvider);
+    if (aiSettings.activeProviders.isEmpty) return null;
+    return (name) {
+      if (!mounted) return;
+      showIngredientReferenceSheet(
+        context: context,
+        ref: ref,
+        ingredient: Ingredient()..name = name,
+      );
+    };
+  }
   @override
   Widget build(BuildContext context) {
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
@@ -538,7 +554,7 @@ class _PizzaComponentsGrid extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            _PizzaIngredientList(items: items),
+        _PizzaIngredientList(items: items, onIngredientLongPress: _ingredientLongPressHandler()),
           ],
         ),
       ),
@@ -563,9 +579,11 @@ String _capitalizeWords(String text) {
 /// A simple checkable list for pizza ingredients (cheeses/toppings)
 class _PizzaIngredientList extends StatefulWidget {
   final List<String> items;
+  final void Function(String name)? onIngredientLongPress;
 
   const _PizzaIngredientList({
     required this.items,
+    this.onIngredientLongPress,
   });
 
   @override
@@ -574,6 +592,7 @@ class _PizzaIngredientList extends StatefulWidget {
 
 class _PizzaIngredientListState extends State<_PizzaIngredientList> {
   final Set<int> _checkedItems = {};
+  bool _suppressNextTap = false;
 
   @override
   Widget build(BuildContext context) {
@@ -588,6 +607,10 @@ class _PizzaIngredientListState extends State<_PizzaIngredientList> {
 
         return InkWell(
           onTap: () {
+            if (_suppressNextTap) {
+              _suppressNextTap = false;
+              return;
+            }
             setState(() {
               if (isChecked) {
                 _checkedItems.remove(index);
@@ -596,6 +619,12 @@ class _PizzaIngredientListState extends State<_PizzaIngredientList> {
               }
             });
           },
+          onLongPress: widget.onIngredientLongPress != null
+              ? () {
+                  _suppressNextTap = true;
+                  widget.onIngredientLongPress!(item);
+                }
+              : null,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 6),
             child: Row(
