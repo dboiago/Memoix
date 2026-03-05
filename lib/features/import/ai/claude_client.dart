@@ -18,6 +18,7 @@ class ClaudeClient {
     required String systemPrompt,
     String? text,
     Uint8List? imageBytes,
+    double temperature = 0.0,
   }) async {
     final content = <Map<String, dynamic>>[];
 
@@ -56,7 +57,7 @@ class ClaudeClient {
         "messages": [
           {"role": "user", "content": content}
         ],
-        "temperature": 0.0,
+        "temperature": temperature,
         "max_tokens": 4096,
       });
 

@@ -31,6 +31,10 @@ class SplitRecipeView extends StatelessWidget {
   /// Scaling factor applied at render time. 1.0 means no scaling.
   final double scaleFactor;
 
+  /// Called when the user long-presses an ingredient row.
+  /// Null disables the long-press gesture entirely.
+  final void Function(Ingredient ingredient)? onIngredientLongPress;
+
   const SplitRecipeView({
     super.key,
     required this.recipe,
@@ -38,6 +42,7 @@ class SplitRecipeView extends StatelessWidget {
     this.metadataWidget,
     this.pairedRecipeChips,
     this.scaleFactor = 1.0,
+    this.onIngredientLongPress,
   });
 
   /// Calculate the flex ratio for ingredients column based on screen width.
@@ -265,6 +270,7 @@ class SplitRecipeView extends StatelessWidget {
                               ingredients: recipe.ingredients,
                               isCompact: isCompact,
                               scaleFactor: scaleFactor,
+                              onIngredientLongPress: onIngredientLongPress,
                             ),
                           ),
                         ),
@@ -562,11 +568,13 @@ class _IngredientsColumn extends StatefulWidget {
   final List<Ingredient> ingredients;
   final bool isCompact;
   final double scaleFactor;
+  final void Function(Ingredient ingredient)? onIngredientLongPress;
 
   const _IngredientsColumn({
     required this.ingredients,
     required this.isCompact,
     this.scaleFactor = 1.0,
+    this.onIngredientLongPress,
   });
 
   @override
@@ -678,6 +686,9 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
           }
         });
       },
+      onLongPress: widget.onIngredientLongPress != null
+          ? () => widget.onIngredientLongPress!(ingredient)
+          : null,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: verticalPadding),
         child: Row(

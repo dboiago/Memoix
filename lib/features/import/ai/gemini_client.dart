@@ -17,6 +17,7 @@ class GeminiClient {
     required String systemPrompt,
     String? text,
     Uint8List? imageBytes,
+    double temperature = 0.0,
   }) async {
     final parts = <Map<String, dynamic>>[];
 
@@ -58,7 +59,7 @@ class GeminiClient {
           }
         ],
         "generationConfig": {
-          "temperature": 0.0,
+          "temperature": temperature,
           "responseMimeType": "application/json",
         }
       });

@@ -19,6 +19,7 @@ class OpenAiClient {
     required String systemPrompt,
     String? text,
     Uint8List? imageBytes,
+    double temperature = 0.0,
   }) async {
     final messages = <Map<String, dynamic>>[
       {
@@ -44,7 +45,7 @@ class OpenAiClient {
       request.body = jsonEncode({
         "model": model,
         "messages": messages,
-        "temperature": 0.0,
+        "temperature": temperature,
         "response_format": {"type": "json_object"},
       });
 

@@ -26,6 +26,8 @@ import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../tools/recipe_comparison_provider.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../ai/ai_settings_provider.dart';
+import '../widgets/ingredient_reference_sheet.dart';
 
 bool shouldShowCompareButton(Recipe recipe) {
   final allowed = {
@@ -174,6 +176,22 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     return _targetServes! / baseline;
   }
 
+  /// Returns the ingredient long-press callback when AI is active, or null.
+  ///
+  /// When null, InkWell suppresses the long-press gesture entirely.
+  void Function(Ingredient)? _ingredientLongPressHandler(Recipe recipe) {
+    final aiSettings = ref.watch(aiSettingsProvider);
+    if (aiSettings.activeProviders.isEmpty) return null;
+    return (ingredient) {
+      showIngredientReferenceSheet(
+        context: context,
+        ref: ref,
+        ingredient: ingredient,
+        cuisine: recipe.cuisine,
+      );
+    };
+  }
+
   @override
   void dispose() {
     _scrollController.dispose();
@@ -263,6 +281,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   : null,
               onScrollToImage: hasStepImages ? (stepIndex) => _scrollToAndShowImage(recipe, stepIndex) : null,
               scaleFactor: _scaleFactor(recipe),
+              onIngredientLongPress: _ingredientLongPressHandler(recipe),
             ),
           ),
         ],
@@ -770,7 +789,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                     children: [
                                       Text('Ingredients', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
                                       const SizedBox(height: 12),
-                                      IngredientList(ingredients: recipe.ingredients, scaleFactor: _scaleFactor(recipe)),
+                                      IngredientList(ingredients: recipe.ingredients, scaleFactor: _scaleFactor(recipe), onIngredientLongPress: _ingredientLongPressHandler(recipe)),
                                     ],
                                   ),
                                 ),
@@ -817,7 +836,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          IngredientList(ingredients: recipe.ingredients, scaleFactor: _scaleFactor(recipe)),
+                          IngredientList(ingredients: recipe.ingredients, scaleFactor: _scaleFactor(recipe), onIngredientLongPress: _ingredientLongPressHandler(recipe)),
                           const SizedBox(height: 24),
                           Text(
                             'Directions',

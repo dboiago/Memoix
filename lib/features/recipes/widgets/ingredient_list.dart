@@ -111,11 +111,16 @@ class IngredientList extends StatefulWidget {
   /// Never written to the database — purely a display transformation.
   final double scaleFactor;
 
+  /// Called when the user long-presses an ingredient row.
+  /// Null disables the long-press gesture entirely.
+  final void Function(Ingredient ingredient)? onIngredientLongPress;
+
   const IngredientList({
     super.key,
     required this.ingredients,
     this.isCompact = false,
     this.scaleFactor = 1.0,
+    this.onIngredientLongPress,
   });
 
   @override
@@ -246,6 +251,9 @@ class _IngredientListState extends State<IngredientList> {
           }
         });
       },
+      onLongPress: widget.onIngredientLongPress != null
+          ? () => widget.onIngredientLongPress!(item.ingredient)
+          : null,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: verticalPadding),
         child: Row(
