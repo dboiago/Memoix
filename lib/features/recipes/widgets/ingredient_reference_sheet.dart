@@ -350,11 +350,15 @@ class _IngredientReferenceContent extends StatelessWidget {
 
             // 11. Disclaimer
             const SizedBox(height: 16),
-            Text(
-              'AI suggestions - verify before substituting',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
-                fontSize: 11,
+            SizedBox(
+              width: double.infinity,
+              child: Text(
+                'AI suggestions — verify before substituting',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                  fontSize: 11,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
           ],

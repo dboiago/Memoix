@@ -676,21 +676,23 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     final notesText = parsedNotes.remainingNotes;
     final hasNotes = notesText.isNotEmpty;
 
-    return InkWell(
-      onTap: () {
-        setState(() {
-          if (isChecked) {
-            _checkedItems.remove(index);
-          } else {
-            _checkedItems.add(index);
-          }
-        });
-      },
-      onLongPress: widget.onIngredientLongPress != null
-          ? () => widget.onIngredientLongPress!(ingredient)
-          : null,
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: verticalPadding),
+    return Material(
+      type: MaterialType.transparency,
+      child: InkWell(
+        onTap: () {
+          setState(() {
+            if (isChecked) {
+              _checkedItems.remove(index);
+            } else {
+              _checkedItems.add(index);
+            }
+          });
+        },
+        onLongPress: widget.onIngredientLongPress != null
+            ? () => widget.onIngredientLongPress!(ingredient)
+            : null,
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: verticalPadding),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
