@@ -275,29 +275,12 @@ class ShoppingListController {
       Map<String, double> unitSums) {
     if (unitSums.length <= 1) return null;
 
-    // Fix S2-B: absorb any unitless quantity (empty-string key) into the
-    // dominant real-unit bucket before attempting system-level reduction.
-    // This handles import artifacts where the unit was embedded in the amount
-    // string and silently discarded (e.g. { amount: "1 C", unit: "" }).
-    Map<String, double> effectiveSums = unitSums;
-    if (unitSums.containsKey('') && unitSums.length > 1) {
-      final unitlessQty = unitSums['']!;
-      final realEntries =
-          unitSums.entries.where((e) => e.key.isNotEmpty).toList();
-      if (realEntries.isNotEmpty) {
-        final dominant =
-            realEntries.reduce((a, b) => a.value >= b.value ? a : b).key;
-        effectiveSums = Map<String, double>.fromEntries(realEntries);
-        effectiveSums[dominant] = effectiveSums[dominant]! + unitlessQty;
-        // If absorption yields a single unit, return it directly.
-        if (effectiveSums.length == 1) {
-          return (
-            unit: effectiveSums.keys.first,
-            qty: effectiveSums.values.first,
-          );
-        }
-      }
-    }
+    // Remove empty-string key before unit reduction — unitless quantities
+    // are countable items (e.g. "3 eggs") and must never be absorbed into
+    // measurement-unit buckets (tbsp, C, etc.).
+    Map<String, double> effectiveSums = Map<String, double>.of(unitSums);
+    effectiveSums.remove('');
+    if (effectiveSums.isEmpty) return null;
 
     final units = effectiveSums.keys.toSet();
 

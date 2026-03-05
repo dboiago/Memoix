@@ -164,6 +164,8 @@ class UnitNormalizer {
   static String normalizeUnit(String unit) {
     var u = unit.toLowerCase().trim();
     u = u.replaceAll(RegExp(r'ies$'), 'y');
+    u = u.replaceAll(RegExp(r'oes$'), 'o');
+    u = u.replaceAll(RegExp(r'ses$'), 's');
     u = u.replaceAll(RegExp(r'(?<![sui])s$'), '');
     return u;
   }

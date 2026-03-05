@@ -113,6 +113,15 @@ class IngredientService {
     'clarified butter': 'butter',
     'cultured butter': 'butter',
 
+    // Sugar variants — same product for shopping, different recipe terminology.
+    // Excluded: brown sugar, powdered sugar, icing sugar, demerara, turbinado,
+    // muscovado — these are genuinely distinct products.
+    'granulated sugar': 'sugar',
+    'white sugar':      'sugar',
+    'caster sugar':     'sugar',
+    'castor sugar':     'sugar',
+    'superfine sugar':  'sugar',
+
     // add synonyms here only when two names refer to EXACTLY the same ingredient
   };
 
