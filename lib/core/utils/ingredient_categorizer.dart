@@ -172,6 +172,7 @@ class IngredientService {
       'cucumber': IngredientCategory.produce.index,
       'bell pepper': IngredientCategory.produce.index,
       'zucchini': IngredientCategory.produce.index,
+      'pumpkin': IngredientCategory.produce.index,
       'mushroom': IngredientCategory.produce.index,
       'avocado': IngredientCategory.produce.index,
       'lemon': IngredientCategory.produce.index,
