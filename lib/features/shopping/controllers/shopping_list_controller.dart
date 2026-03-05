@@ -60,10 +60,34 @@ class ShoppingListController {
           }
         }
 
+        // Fix R3-2: if unit is non-empty but not a recognized measurement unit,
+        // it may be part of a freeform phrase split across amount/unit fields
+        // (e.g. amount: "to", unit: "taste" → reconstruct as "to taste").
+        if (rawUnit.isNotEmpty && !UnitNormalizer.isRecognizedUnit(rawUnit)) {
+          final reconstructed = '$rawAmount $rawUnit'.trim();
+          if (_isFreeformAmount(reconstructed)) {
+            rawAmount = reconstructed;
+            rawUnit = '';
+          }
+        }
+
         // Fix B: detect freeform amounts ("to taste", "a pinch", "as needed").
         // Mirrors AmountScaler's freeform gate: AmountUtils.parseMax returns 0.0
         // for non-numeric strings, so we preserve the original text verbatim.
-        final isFreeform = _isFreeformAmount(rawAmount);
+        var isFreeform = _isFreeformAmount(rawAmount);
+        String? displayOverride = isFreeform ? rawAmount.trim() : null;
+
+        // Fix R3-3: freeform phrases moved to preparation by the parser
+        // (e.g. "salt, to taste" → amount: null, preparation: "to taste").
+        // Surface them as a freeform note on the shopping list.
+        if (!isFreeform && ingredient.preparation != null) {
+          final prep = ingredient.preparation!.toLowerCase().trim();
+          if (_freeformPreparations.any((p) => prep.contains(p))) {
+            isFreeform = true;
+            displayOverride = ingredient.preparation!.trim();
+          }
+        }
+
         final qty = isFreeform ? 0.0 : _parseQuantity(rawAmount);
         final unit = isFreeform ? '' : UnitNormalizer.normalize(rawUnit);
 
@@ -73,7 +97,7 @@ class ShoppingListController {
           unit: unit,
           preparation: ingredient.preparation ?? '',
           recipeName: recipe.name,
-          displayOverride: isFreeform ? ingredient.amount?.trim() : null,
+          displayOverride: displayOverride,
         );
       }
     }
@@ -145,6 +169,25 @@ class ShoppingListController {
   /// Resolve a category enum to a store aisle name.
   static String aisleFor(IngredientCategory cat) =>
       storeAisle[cat] ?? 'Other';
+
+  /// Freeform preparation phrases that should surface as shopping list notes.
+  ///
+  /// When the import pipeline moves a phrase like `"to taste"` from the amount
+  /// field into `ingredient.preparation`, the shopping list controller checks
+  /// this set to recover it as a freeform display note.
+  ///
+  /// This is the **single source of truth** for freeform prep detection.
+  static const _freeformPreparations = {
+    'to taste',
+    'as needed',
+    'as required',
+    'to preference',
+    'a pinch',
+    'for frying',
+    'for garnish',
+    'for serving',
+    'to serve',
+  };
 
   /// Parse an ingredient amount string into a [double].
   ///
@@ -267,8 +310,12 @@ class ShoppingListController {
         if (converted == null) return null;
         total += converted;
       }
-      if (total >= 1000) return (unit: 'l', qty: total / 1000.0);
-      return (unit: 'ml', qty: total);
+      double qty = total;
+      String u = 'ml';
+      if (total >= 1000) { qty = total / 1000.0; u = 'l'; }
+      final formatted = AmountUtils.format(qty);
+      if (formatted.contains('.')) return null;
+      return (unit: u, qty: qty);
     }
 
     // Imperial volume: prefer the largest unit present.
@@ -283,6 +330,11 @@ class ShoppingListController {
         if (converted == null) return null;
         total += converted;
       }
+      // Snappability gate: if the reduced total formats as a decimal (e.g.
+      // 1.0833 C), the result is not useful — return null so `build()` falls
+      // through to the per-unit variant display ("1 C, 4 tsp").
+      final formatted = AmountUtils.format(total);
+      if (formatted.contains('.')) return null;
       return (unit: targetUnit, qty: total);
     }
 
@@ -295,8 +347,12 @@ class ShoppingListController {
         if (converted == null) return null;
         total += converted;
       }
-      if (total >= 1000) return (unit: 'kg', qty: total / 1000.0);
-      return (unit: 'g', qty: total);
+      double qty = total;
+      String u = 'g';
+      if (total >= 1000) { qty = total / 1000.0; u = 'kg'; }
+      final formatted = AmountUtils.format(qty);
+      if (formatted.contains('.')) return null;
+      return (unit: u, qty: qty);
     }
 
     // Imperial weight: prefer lb if present.
@@ -309,6 +365,8 @@ class ShoppingListController {
         if (converted == null) return null;
         total += converted;
       }
+      final formatted = AmountUtils.format(total);
+      if (formatted.contains('.')) return null;
       return (unit: targetUnit, qty: total);
     }
 

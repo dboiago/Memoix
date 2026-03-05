@@ -171,9 +171,14 @@ class UnitNormalizer {
   /// Check if a string is a recognized unit
   static bool isRecognizedUnit(String? unit) {
     if (unit == null || unit.isEmpty) return false;
-    final lower = unit.toLowerCase().trim();
-    return _unitMap.containsKey(lower) || 
-           _unitMap.values.contains(unit.trim());
+    var cleaned = unit.trim();
+    // Strip trailing period (e.g. "C." → "C", "tsp." → "tsp")
+    if (cleaned.endsWith('.')) {
+      cleaned = cleaned.substring(0, cleaned.length - 1);
+    }
+    final lower = cleaned.toLowerCase();
+    return _unitMap.containsKey(lower) ||
+           _unitMap.values.contains(cleaned);
   }
   
   /// Get all possible unit options for autocomplete
