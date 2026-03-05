@@ -1,4 +1,4 @@
-## Memoix v0.2.0-beta — 2026-01-12
+## Memoix v0.2.0-beta — 2026-03-05
 
 ### Added
 - Added quick-start timers accessible from direction long-press actions
@@ -53,4 +53,5 @@
 - Removed deprecated `ingredient.dart` model from recipes feature
 
 - Removed references to unused variables and dead code in edit and comparison screens
+
 
