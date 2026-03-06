@@ -209,7 +209,6 @@ void _showErrorSnackbar(BuildContext context, IngredientReferenceResult error) {
                 Clipboard.setData(
                   ClipboardData(text: error.rawError!),
                 );
-                MemoixSnackBar.show('Error details copied to clipboard');
               },
             )
           : null,

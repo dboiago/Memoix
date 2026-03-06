@@ -43,6 +43,8 @@ class MemoixTheme {
     return ThemeData(
       useMaterial3: true,
       splashFactory: NoSplash.splashFactory,
+      highlightColor: Colors.transparent,
+      hoverColor: Colors.transparent,
       brightness: Brightness.light,
       colorScheme: const ColorScheme.light(
         primary: lightAccent2,
@@ -164,6 +166,8 @@ class MemoixTheme {
     return ThemeData(
       useMaterial3: true,
       splashFactory: NoSplash.splashFactory,
+      highlightColor: Colors.transparent,
+      hoverColor: Colors.transparent,
       brightness: Brightness.dark,
       colorScheme: const ColorScheme.dark(
         primary: darkAccent2,
