@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/utils/ingredient_categorizer.dart';
+import '../../../app/app.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/ingredient_reference.dart';
 import '../models/recipe.dart';
@@ -64,24 +65,33 @@ String _substitutionDisplay(
 /// Show the ingredient reference bottom sheet.
 ///
 /// On cache hit, opens immediately with data.
-/// On cache miss, opens with shimmer, fetches, then renders or dismisses on error.
-void showIngredientReferenceSheet({
+/// On cache miss, fetches first — opens sheet only on success; shows snackbar
+/// only on error (sheet never opens on error, preventing the flash).
+Future<void> showIngredientReferenceSheet({
   required BuildContext context,
   required WidgetRef ref,
   required Ingredient ingredient,
   String? cuisine,
-}) {
+}) async {
   final cache = ref.read(ingredientReferenceCacheProvider.notifier);
   final cached = cache.lookup(ingredient.name);
 
   if (cached != null && cached.isSuccess) {
-    // Cache hit — open sheet immediately
+    // Cache hit — open sheet immediately with no fetch needed
     _openSheet(context, ingredient, cached.data!);
     return;
   }
 
-  // Cache miss — open sheet with loading, then fetch
-  _openSheetWithLoading(context, ref, ingredient, cuisine);
+  // Cache miss — fetch first, then decide
+  final result = await _fetchAndCache(ref, ingredient, cuisine);
+
+  if (!context.mounted) return;
+
+  if (result.isSuccess) {
+    _openSheet(context, ingredient, result.data!);
+  } else {
+    _showErrorSnackbar(context, result);
+  }
 }
 
 /// Open a bottom sheet that shows shimmer while fetching, then replaces
@@ -195,9 +205,10 @@ void _openSheet(
 
 /// Show error snackbar with copy action — mirrors AI import error pattern.
 void _showErrorSnackbar(BuildContext context, IngredientReferenceResult error) {
-  final messenger = ScaffoldMessenger.maybeOf(context);
+  final messenger = rootScaffoldMessengerKey.currentState;
   if (messenger == null) return;
 
+  messenger.hideCurrentSnackBar();
   messenger.showSnackBar(
     SnackBar(
       content: Text(error.errorMessage ?? 'Unable to fetch ingredient reference'),
