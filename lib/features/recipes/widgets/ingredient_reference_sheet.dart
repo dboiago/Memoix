@@ -9,7 +9,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/utils/ingredient_categorizer.dart';
-import '../../../app/app.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/ingredient_reference.dart';
 import '../models/recipe.dart';
@@ -90,7 +89,7 @@ Future<void> showIngredientReferenceSheet({
   if (result.isSuccess) {
     _openSheet(context, ingredient, result.data!);
   } else {
-    _showErrorSnackbar(context, result);
+    _showErrorSnackbar(result);
   }
 }
 
@@ -126,7 +125,7 @@ void _openSheetWithLoading(
             // Dismiss the sheet and show error snackbar
             WidgetsBinding.instance.addPostFrameCallback((_) {
               Navigator.of(ctx).pop();
-              _showErrorSnackbar(context, error);
+              _showErrorSnackbar(error);
             });
             // Return empty container while dismissing
             return const SizedBox.shrink();
@@ -204,27 +203,19 @@ void _openSheet(
 }
 
 /// Show error snackbar with copy action — mirrors AI import error pattern.
-void _showErrorSnackbar(BuildContext context, IngredientReferenceResult error) {
-  final messenger = rootScaffoldMessengerKey.currentState;
-  if (messenger == null) return;
-
-  messenger.hideCurrentSnackBar();
-  messenger.showSnackBar(
-    SnackBar(
-      content: Text(error.errorMessage ?? 'Unable to fetch ingredient reference'),
-      duration: const Duration(seconds: 4),
-      action: error.rawError != null
-          ? SnackBarAction(
-              label: 'Copy',
-              onPressed: () {
-                Clipboard.setData(
-                  ClipboardData(text: error.rawError!),
-                );
-              },
-            )
-          : null,
-    ),
-  );
+void _showErrorSnackbar(IngredientReferenceResult error) {
+  final message = error.errorMessage ?? 'Unable to fetch ingredient reference';
+  if (error.rawError != null) {
+    MemoixSnackBar.showWithAction(
+      message: message,
+      actionLabel: 'Copy',
+      onAction: () {
+        Clipboard.setData(ClipboardData(text: error.rawError!));
+      },
+    );
+  } else {
+    MemoixSnackBar.showError(message);
+  }
 }
 
 /// The actual content of the bottom sheet once data is loaded.
