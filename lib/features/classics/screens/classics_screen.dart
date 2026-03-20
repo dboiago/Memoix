@@ -24,7 +24,7 @@ class _ClassicsScreenState extends ConsumerState<ClassicsScreen> {
   }
 
   Future<void> _loadEntries() async {
-    final data = await IntegrityService.resolveIndexData('regional_index_data)');
+    final data = await IntegrityService.resolveIndexData('regional_index_data');
     final recordRef = await IntegrityService.resolveLegacyValue('legacy_record_ref');
     if (mounted) {
       final shuffled = List<Map<String, dynamic>>.from(data ?? []);
