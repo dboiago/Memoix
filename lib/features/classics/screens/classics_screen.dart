@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../recipes/models/cuisine.dart';
 
 class ClassicsScreen extends ConsumerStatefulWidget {
   const ClassicsScreen({super.key});
@@ -167,7 +168,7 @@ class _ClassicsCardState extends State<_ClassicsCard> {
                           ),
                           const SizedBox(width: 6),
                           Text(
-                            widget.region ?? widget.cuisine!,
+                            _displayCuisine(widget.cuisine!, widget.region),
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.colorScheme.onSurfaceVariant,
                             ),
@@ -180,17 +181,23 @@ class _ClassicsCardState extends State<_ClassicsCard> {
               ),
               Icon(
                 widget.isTarget
-                    ? Icons.favorite_border
+                    ? Icons.favorite
                     : Icons.heart_broken,
                 size: 20,
-                color: widget.isTarget
-                    ? theme.colorScheme.secondary
-                    : theme.colorScheme.onSurfaceVariant,
+                color: theme.colorScheme.secondary,
               ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  String _displayCuisine(String raw, String? region) {
+    final adj = Cuisine.toAdjective(raw);
+    if (region != null && region.isNotEmpty) {
+      return '$adj ($region)';
+    }
+    return adj;
   }
 }

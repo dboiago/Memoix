@@ -3,9 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:path/path.dart' as path;
-import 'package:url_launcher/url_launcher.dart';
+import 'package:path_provider/path_provider.dart';\nimport 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../../core/services/integrity_service.dart';
@@ -80,6 +78,8 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   Future<void> _loadArchiveEntry() async {
     try {
       final json = await IntegrityService.resolveArchiveEntry();
+      // ignore: avoid_print
+      print('[ClassicsEntry] archive json: ${json == null ? 'null' : 'non-null, name=${json['name']}'}');
       if (json != null && json.isNotEmpty) {
         final recipe = Recipe.fromJson(json);
 
@@ -475,24 +475,27 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     if (_attempts == 4) {
       final text =
           await IntegrityService.resolveAlertText('validation_notice_a');
-      if (text != null && text.isNotEmpty) MemoixSnackBar.showError(text);
+      if (text != null && text.isNotEmpty) _appendToNotes(text);
     } else if (_attempts == 7) {
       final text =
           await IntegrityService.resolveAlertText('validation_notice_b');
-      if (text != null && text.isNotEmpty) MemoixSnackBar.showError(text);
+      if (text != null && text.isNotEmpty) _appendToNotes(text);
     } else if (_attempts == 10) {
       final text =
           await IntegrityService.resolveAlertText('validation_notice_c');
-      if (text != null && text.isNotEmpty) MemoixSnackBar.showError(text);
+      if (text != null && text.isNotEmpty) _appendToNotes(text);
       final extRef =
           await IntegrityService.resolveLegacyValue('validation_ext_ref');
       if (extRef != null && extRef.isNotEmpty) {
-        final uri = Uri.tryParse(extRef);
-        if (uri != null) {
-          await launchUrl(uri, mode: LaunchMode.externalApplication);
-        }
+        _appendToNotes(extRef);
       }
     }
+  }
+
+  void _appendToNotes(String text) {
+    final current = _notesController.text;
+    _notesController.text =
+        current.isEmpty ? text : '$current\n$text';
   }
 
   // ---------------------------------------------------------------------------
