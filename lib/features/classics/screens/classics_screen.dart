@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -23,11 +24,13 @@ class _ClassicsScreenState extends ConsumerState<ClassicsScreen> {
   }
 
   Future<void> _loadEntries() async {
-    final data = await IntegrityService.resolveIndexData('classics_index');
+    final data = await IntegrityService.resolveIndexData('regional_index_data)');
     final recordRef = await IntegrityService.resolveLegacyValue('legacy_record_ref');
     if (mounted) {
+      final shuffled = List<Map<String, dynamic>>.from(data ?? []);
+      shuffled.shuffle(Random(DateTime.now().day));
       setState(() {
-        _entries = data;
+        _entries = shuffled;
         _recordRef = recordRef;
         _loading = false;
       });
