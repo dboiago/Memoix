@@ -82,19 +82,9 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   Future<void> _loadArchiveEntry() async {
     try {
       final json = await IntegrityService.resolveArchiveEntry();
-      // ignore: avoid_print
       print('[ClassicsEntry] archive json: ${json == null ? 'null' : 'non-null, name=${json['name']}'}');
       if (json != null && json.isNotEmpty) {
-        final recipe = Recipe.fromJson(json);
-        // ignore: avoid_print
-        print('[ClassicsEntry] ingredients: ${recipe.ingredients.length}');
-        // ignore: avoid_print
-        print('[ClassicsEntry] serves: ${recipe.serves}');
-        // ignore: avoid_print
-        print('[ClassicsEntry] time: ${recipe.time}');
-        // ignore: avoid_print
-        print('[ClassicsEntry] first ingredient name: '
-            '${recipe.ingredients.isNotEmpty ? recipe.ingredients.first.name : 'none'}');
+        final recipe = Recipe.fromJson(_sanitizeArchiveJson(json));
 
         _nameController.text = recipe.name;
         _servesController.text = recipe.serves ?? '';
@@ -237,6 +227,18 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     }
 
     setState(() => _isLoading = false);
+  }
+
+  /// Replaces null values for fields that Recipe.fromJson() casts directly
+  /// to non-nullable String (uuid, name, course) with safe fallbacks so that
+  /// the cast does not throw. List and object fields are left untouched.
+  Map<String, dynamic> _sanitizeArchiveJson(Map<String, dynamic> raw) {
+    return {
+      ...raw,
+      'uuid': raw['uuid'] as String? ?? '',
+      'name': raw['name'] as String? ?? '',
+      'course': raw['course'] as String? ?? 'mains',
+    };
   }
 
   String _normaliseCourseSlug(String course) {

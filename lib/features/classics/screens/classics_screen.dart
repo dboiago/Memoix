@@ -88,11 +88,6 @@ class _ClassicsScreenState extends ConsumerState<ClassicsScreen> {
   }
 }
 
-/// A card widget that mirrors RecipeCard's visual structure — same Card
-/// elevation, border-state behaviour, InkWell, padding and Row layout —
-/// but renders a static trailing icon (broken heart for decoy entries,
-/// outline heart for the target) instead of interactive favourite/cooked
-/// buttons, and never persists anything to Isar.
 class _ClassicsCard extends StatefulWidget {
   final String name;
   final String? cuisine;
