@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
+import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/services/integrity_service.dart';
@@ -60,6 +61,8 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   final List<String> _pairedRecipeIds = [];
 
   int _attempts = 0;
+  String? _notesLinkText;
+  String? _notesLinkUrl;
 
   @override
   void initState() {
@@ -83,6 +86,15 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
       print('[ClassicsEntry] archive json: ${json == null ? 'null' : 'non-null, name=${json['name']}'}');
       if (json != null && json.isNotEmpty) {
         final recipe = Recipe.fromJson(json);
+        // ignore: avoid_print
+        print('[ClassicsEntry] ingredients: ${recipe.ingredients.length}');
+        // ignore: avoid_print
+        print('[ClassicsEntry] serves: ${recipe.serves}');
+        // ignore: avoid_print
+        print('[ClassicsEntry] time: ${recipe.time}');
+        // ignore: avoid_print
+        print('[ClassicsEntry] first ingredient name: '
+            '${recipe.ingredients.isNotEmpty ? recipe.ingredients.first.name : 'none'}');
 
         _nameController.text = recipe.name;
         _servesController.text = recipe.serves ?? '';
@@ -484,11 +496,15 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     } else if (_attempts == 10) {
       final text =
           await IntegrityService.resolveAlertText('validation_notice_c');
-      if (text != null && text.isNotEmpty) _appendToNotes(text);
       final extRef =
           await IntegrityService.resolveLegacyValue('validation_ext_ref');
-      if (extRef != null && extRef.isNotEmpty) {
-        _appendToNotes(extRef);
+      if (text != null && text.isNotEmpty && extRef != null && extRef.isNotEmpty) {
+        setState(() {
+          _notesLinkText = text;
+          _notesLinkUrl = extRef;
+        });
+      } else if (text != null && text.isNotEmpty) {
+        _appendToNotes(text);
       }
     }
   }
@@ -497,6 +513,28 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     final current = _notesController.text;
     _notesController.text =
         current.isEmpty ? text : '$current\n$text';
+  }
+
+  List<Widget> _buildNotesLink(ThemeData theme) {
+    final uri = Uri.tryParse(_notesLinkUrl!);
+    return [
+      const SizedBox(height: 8),
+      GestureDetector(
+        onTap: uri == null
+            ? null
+            : () => launchUrl(uri, mode: LaunchMode.externalApplication),
+        child: RichText(
+          text: TextSpan(
+            text: _notesLinkText!,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: theme.colorScheme.primary,
+              decoration: TextDecoration.underline,
+              decorationColor: theme.colorScheme.primary,
+            ),
+          ),
+        ),
+      ),
+    ];
   }
 
   // ---------------------------------------------------------------------------
@@ -940,6 +978,8 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               maxLines: 4,
               minLines: 2,
             ),
+            if (_notesLinkText != null && _notesLinkUrl != null) ...
+              _buildNotesLink(theme),
 
             const SizedBox(height: 16),
 
