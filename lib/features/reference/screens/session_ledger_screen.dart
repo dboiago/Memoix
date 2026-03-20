@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/services/integrity_service.dart';
-import '../../../core/services/reservation_service.dart';
+import '../../../core/services/session_index_service.dart';
 
-class ReservationLedgerScreen extends StatelessWidget {
-  const ReservationLedgerScreen({super.key});
+class SessionLedgerScreen extends StatelessWidget {
+  const SessionLedgerScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class ReservationLedgerScreen extends StatelessWidget {
         ),
       ),
       body: FutureBuilder<List<Map<String, dynamic>>>(
-        future: ReservationService.getReservations(),
+        future: SessionIndexService.getEntries(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());

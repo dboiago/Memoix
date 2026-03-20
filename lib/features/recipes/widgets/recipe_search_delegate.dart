@@ -3,9 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
-import '../../../core/services/reservation_service.dart';
+import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
-import '../../reference/screens/reservation_ledger_screen.dart';
+import '../../reference/screens/session_ledger_screen.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -114,7 +114,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
         if (isReservationQuery) {
           return FutureBuilder<(Map<String, dynamic>?, String?, String, String)>(
         future: () async {
-          final entry = await ReservationService.getGuestEntry();
+          final entry = await SessionIndexService.getLocalEntry();
           final template = await IntegrityService.resolveAlertText('service_template_idx');
           final table = await IntegrityService.resolveLegacyValue('legacy_table_schema') ?? '';
           final time = await IntegrityService.resolveLegacyValue('legacy_time_schema') ?? '';
@@ -153,7 +153,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                         'activity.reference_viewed',
                         metadata: {'ref': refReservations ?? ''},
                       );
-                      AppRoutes.toReservationLedger(context);
+                      AppRoutes.toSessionLedger(context);
                     },
                     child: Container(
                       margin: const EdgeInsets.fromLTRB(12, 12, 12, 4),

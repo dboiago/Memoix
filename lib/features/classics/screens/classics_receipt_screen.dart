@@ -8,6 +8,7 @@ import 'package:printing/printing.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/schema_migration_service.dart';
+import '../../../core/services/session_index_service.dart';
 
 class ClassicsReceiptScreen extends ConsumerStatefulWidget {
   const ClassicsReceiptScreen({super.key});
@@ -33,6 +34,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   Map<String, dynamic>? _receiptData;
   Map<String, Duration>? _stageDurations;
   String? _tipUrl;
+  String? _exportRef;
 
   @override
   void initState() {
@@ -58,11 +60,29 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final stageDurations = await RuntimeCalibrationService.getStageDurations();
     final tipRef = receiptData?['tip_ref'] as String? ?? '';
 
+    String? exportRef;
+    final diagWarmMs = IntegrityService.store.getInt('diag_warm_ms');
+    if (diagWarmMs > 0) {
+      final elapsed =
+          (DateTime.now().millisecondsSinceEpoch - diagWarmMs) ~/ 1000;
+      final interval = RuntimeCalibrationService.resolveIntervalLabel(elapsed);
+      final guest = await SessionIndexService.getLocalEntry();
+      final nodeSeed = guest?['party_size'] as int? ?? 0;
+      final indexRef = guest?['table_no'] as int? ?? 0;
+      exportRef = RuntimeCalibrationService.resolveExportUri(
+        nodeSeed: nodeSeed,
+        indexRef: indexRef,
+        intervalLabel: interval.label,
+        intervalRaw: interval.raw,
+      );
+    }
+
     if (!mounted) return;
     setState(() {
       _receiptData = receiptData;
       _stageDurations = stageDurations;
       _tipUrl = tipRef;
+      _exportRef = exportRef;
       _isLoading = false;
     });
   }
@@ -197,12 +217,6 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        onPressed: _saveReceipt,
-        child: const Icon(Icons.print),
-      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
@@ -324,6 +338,50 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                 border,
                 style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
               ),
+              if (_exportRef != null) ...[
+                const SizedBox(height: 12),
+                GestureDetector(
+                  onTap: _saveReceipt,
+                  child: Text(
+                    '   >> GUEST COPY <<',
+                    textAlign: TextAlign.center,
+                    style: receiptFont.copyWith(
+                      color: Colors.black,
+                      fontSize: 13,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Text(
+                      'TIP  ',
+                      style: receiptFont.copyWith(
+                        color: Colors.black,
+                        fontSize: 13,
+                      ),
+                    ),
+                    Expanded(
+                      child: SelectableText(
+                        _exportRef!,
+                        style: receiptFont.copyWith(
+                          color: Colors.black87,
+                          fontSize: 1.8,
+                          letterSpacing: 0,
+                          height: 1.0,
+                        ),
+                        maxLines: 1,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  border,
+                  style: receiptFont.copyWith(
+                      color: Colors.black, fontSize: 14),
+                ),
+              ],
             ],
           ),
         ),

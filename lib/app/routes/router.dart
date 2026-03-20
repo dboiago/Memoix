@@ -46,7 +46,7 @@ import '../../features/personal_storage/screens/share_storage_screen.dart';
 import '../../features/personal_storage/models/storage_location.dart';
 import '../../features/ai/screens/agents_settings_screen.dart';
 import '../../features/import/screens/ai_import_screen.dart';
-import '../../features/reference/screens/reservation_ledger_screen.dart';
+import '../../features/reference/screens/session_ledger_screen.dart';
 import '../../features/classics/screens/classics_screen.dart';
 import '../../features/classics/screens/classics_detail_screen.dart';
 import '../../features/classics/screens/classics_entry_screen.dart';
@@ -430,10 +430,10 @@ class AppRoutes {
 
   // ============ REFERENCE ROUTES ============
 
-  static void toReservationLedger(BuildContext context) {
+  static void toSessionLedger(BuildContext context) {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
-        builder: (_) => const ReservationLedgerScreen(),
+        builder: (_) => const SessionLedgerScreen(),
       ),
     );
   }
