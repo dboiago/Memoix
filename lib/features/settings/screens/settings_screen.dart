@@ -643,6 +643,11 @@ class _HideMemoixRecipesTileState
       if (pause != null) _patternPause = int.tryParse(pause) ?? _patternPause;
       if (window != null) _patternWindow = int.tryParse(window) ?? _patternWindow;
     });
+    assert(
+      _patternSchema.isNotEmpty,
+      '_HideMemoixRecipesTileState: _patternSchema is empty after _loadPatternSchema() — '
+      'check that legacy_pattern_schema exists and is a non-empty int list in integrity_content.json',
+    );
   }
 
   @override
