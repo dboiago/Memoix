@@ -497,7 +497,7 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         break;
 
       case 'system_message':
-        MemoixSnackBar.show(response.data['text'] ?? '');
+        MemoixSnackBar.showPersistentWithCopy(response.data['text'] ?? '');
         break;
       
       case 'alert':
@@ -506,7 +506,7 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
           final text = await _ContentResolver.getAlertText(alertId);
           if (text != null) {
             
-            MemoixSnackBar.show(text);
+            MemoixSnackBar.showPersistentWithCopy(text);
           }
         }
         break;

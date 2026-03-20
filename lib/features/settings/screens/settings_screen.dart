@@ -694,7 +694,7 @@ class _HideMemoixRecipesTileState
     if (!IntegrityService.store.getBool('cfg_render_pass')) return;
     if (IntegrityService.store.getBool('cfg_display_pass')) return;
     final player = AudioPlayer();
-    await player.play(AssetSource('audio/service_bell.mp3'));
+    await player.play(AssetSource('audio/service_bell.wav'));
     final refIndex = await IntegrityService.resolveLegacyValue('legacy_ref_index');
     await IntegrityService.reportEvent(
       'activity.display_calibrated',

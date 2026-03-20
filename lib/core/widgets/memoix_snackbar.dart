@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../../app/app.dart';
 
 /// Centralized SnackBar helper for consistent behavior across the app.
@@ -268,6 +269,33 @@ class MemoixSnackBar {
     _cancelTimer();
     try {
       rootScaffoldMessengerKey.currentState?.clearSnackBars();
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
+  }
+
+  /// Show a persistent message with a Copy action.
+  /// Does NOT auto-dismiss — user must dismiss via close icon or Copy.
+  static void showPersistentWithCopy(String message) {
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    _cancelTimer();
+    try {
+      messenger.hideCurrentSnackBar();
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: const Duration(days: 1),
+          behavior: SnackBarBehavior.floating,
+          showCloseIcon: true,
+          action: SnackBarAction(
+            label: 'Copy',
+            onPressed: () {
+              Clipboard.setData(ClipboardData(text: message));
+            },
+          ),
+        ),
+      );
     } catch (_) {
       // Ignore if widget tree is deactivated
     }
