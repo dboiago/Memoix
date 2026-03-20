@@ -496,13 +496,14 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
           await IntegrityService.resolveAlertText('validation_notice_c');
       final extRef =
           await IntegrityService.resolveLegacyValue('validation_ext_ref');
-      if (text != null && text.isNotEmpty && extRef != null && extRef.isNotEmpty) {
-        setState(() {
-          _notesLinkText = text;
-          _notesLinkUrl = extRef;
-        });
-      } else if (text != null && text.isNotEmpty) {
+      if (text != null && text.isNotEmpty) {
         _appendToNotes(text);
+        if (extRef != null && extRef.isNotEmpty) {
+          setState(() {
+            _notesLinkText = text;
+            _notesLinkUrl = extRef;
+          });
+        }
       }
     }
   }
