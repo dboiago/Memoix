@@ -19,13 +19,19 @@ class SessionLedgerScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back, color: Color(0xFF2C1810)),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text(
-          'Reference',
-          style: GoogleFonts.playfairDisplay(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-            color: const Color(0xFF2C1810),
-          ),
+        title: FutureBuilder<String?>(
+          future: IntegrityService.resolveLegacyValue('legacy_ref_reservations'),
+          builder: (context, snap) {
+            final label = snap.data ?? 'Reference';
+            return Text(
+              label,
+              style: GoogleFonts.playfairDisplay(
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+                color: const Color(0xFF2C1810),
+              ),
+            );
+          },
         ),
       ),
       body: FutureBuilder<List<Map<String, dynamic>>>(

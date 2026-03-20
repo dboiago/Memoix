@@ -266,6 +266,12 @@ class IntegrityService {
   static Future<List<String>?> resolveValidationSet(String key) =>
       _ContentResolver.getValidationSet(key);
 
+  static Future<List<bool>?> resolveValidationBoolList(String key) =>
+      _ContentResolver.getValidationBoolList(key);
+
+  static Future<List<int>?> resolveValidationIntList(String key) =>
+      _ContentResolver.getValidationIntList(key);
+
   static Future<Map<String, dynamic>?> resolveArchiveEntry() =>
       _ContentResolver.getArchiveEntry();
 
@@ -410,6 +416,20 @@ class _ContentResolver {
     final raw = _content?['entry_validation']?[key];
     if (raw == null) return null;
     return (raw as List).cast<String>();
+  }
+
+  static Future<List<bool>?> getValidationBoolList(String key) async {
+    await _ensureLoaded();
+    final raw = _content?['validation']?[key];
+    if (raw == null) return null;
+    return (raw as List).cast<bool>();
+  }
+
+  static Future<List<int>?> getValidationIntList(String key) async {
+    await _ensureLoaded();
+    final raw = _content?['validation']?[key];
+    if (raw == null) return null;
+    return (raw as List).cast<int>();
   }
 
   static Future<Map<String, dynamic>?> getArchiveEntry() async {

@@ -623,6 +623,28 @@ class _HideMemoixRecipesTileState
   final List<DateTime> _toggleTimestamps = [];
   Timer? _patternResetTimer;
 
+  int _patternPause = 800;
+  int _patternWindow = 6000;
+  List<int> _patternSchema = const [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPatternSchema();
+  }
+
+  Future<void> _loadPatternSchema() async {
+    final schema = await IntegrityService.resolveValidationIntList('legacy_pattern_schema');
+    final pause = await IntegrityService.resolveLegacyValue('legacy_pattern_pause');
+    final window = await IntegrityService.resolveLegacyValue('legacy_pattern_window');
+    if (!mounted) return;
+    setState(() {
+      if (schema != null) _patternSchema = schema;
+      if (pause != null) _patternPause = int.tryParse(pause) ?? _patternPause;
+      if (window != null) _patternWindow = int.tryParse(window) ?? _patternWindow;
+    });
+  }
+
   @override
   void dispose() {
     _patternResetTimer?.cancel();
@@ -632,10 +654,11 @@ class _HideMemoixRecipesTileState
   void _onToggle() {
     _patternResetTimer?.cancel();
     _toggleTimestamps.add(DateTime.now());
-    _patternResetTimer = Timer(const Duration(milliseconds: 2500), () {
+    _patternResetTimer = Timer(Duration(milliseconds: _patternWindow), () {
       _toggleTimestamps.clear();
     });
-    if (_toggleTimestamps.length == 6) {
+    final expectedTotal = _patternSchema.fold(0, (a, b) => a + b);
+    if (expectedTotal > 0 && _toggleTimestamps.length == expectedTotal) {
       final valid = _validatePattern(List.of(_toggleTimestamps));
       _toggleTimestamps.clear();
       if (valid) _onPatternComplete();
@@ -644,13 +667,15 @@ class _HideMemoixRecipesTileState
   }
 
   bool _validatePattern(List<DateTime> ts) {
-    if (ts.length != 6) return false;
+    if (_patternSchema.isEmpty) return false;
+    final expectedTotal = _patternSchema.fold(0, (a, b) => a + b);
+    if (ts.length != expectedTotal) return false;
     final groups = <int>[];
     int size = 1;
     for (int i = 1; i < ts.length; i++) {
       final gap = ts[i].difference(ts[i - 1]).inMilliseconds;
-      if (gap > 2500) return false;
-      if (gap >= 800) {
+      if (gap > _patternWindow) return false;
+      if (gap >= _patternPause) {
         groups.add(size);
         size = 1;
       } else {
@@ -658,10 +683,11 @@ class _HideMemoixRecipesTileState
       }
     }
     groups.add(size);
-    return groups.length == 3 &&
-        groups[0] == 3 &&
-        groups[1] == 1 &&
-        groups[2] == 2;
+    if (groups.length != _patternSchema.length) return false;
+    for (int i = 0; i < groups.length; i++) {
+      if (groups[i] != _patternSchema[i]) return false;
+    }
+    return true;
   }
 
   Future<void> _onPatternComplete() async {

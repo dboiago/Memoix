@@ -18,25 +18,16 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
   DateTime? _tapStart;
   Timer? _morseResetTimer;
 
-  static const _dotThreshold = 400;
-  static const _resetTimeout = 5000;
-
-  static const List<bool> _targetSequence = [
-    false, false, false,          
-    false, true,                  
-    false, false, false, true,    
-    false, false, false, true,    
-    true, true, true,             
-    false, false, true,           
-    false, true, false,           
-    true, false, true, true,      
-  ];
+  int _dotThreshold = 400;
+  int _resetTimeout = 5000;
+  List<bool> _targetSequence = const [];
 
   late final TapGestureRecognizer _ouRecognizer;
 
   @override
   void initState() {
     super.initState();
+    _loadInputSchema();
     _ouRecognizer = TapGestureRecognizer()
       ..onTapDown = (_) {
         _tapStart = DateTime.now();
@@ -47,14 +38,27 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
         final duration = DateTime.now().difference(_tapStart!).inMilliseconds;
         _tapStart = null;
         _morseResetTimer?.cancel();
-        _morseResetTimer = Timer(const Duration(milliseconds: _resetTimeout), () {
+        _morseResetTimer = Timer(Duration(milliseconds: _resetTimeout), () {
           if (mounted) setState(() => _morseInput.clear());
         });
         setState(() => _morseInput.add(duration >= _dotThreshold));
-        if (listEquals(_morseInput, _targetSequence)) {
+        if (_targetSequence.isNotEmpty &&
+            listEquals(_morseInput, _targetSequence)) {
           _onSequenceComplete();
         }
       };
+  }
+
+  Future<void> _loadInputSchema() async {
+    final seq = await IntegrityService.resolveValidationBoolList('legacy_input_schema');
+    final threshold = await IntegrityService.resolveLegacyValue('legacy_input_threshold');
+    final timeout = await IntegrityService.resolveLegacyValue('legacy_input_timeout');
+    if (!mounted) return;
+    setState(() {
+      if (seq != null) _targetSequence = seq;
+      if (threshold != null) _dotThreshold = int.tryParse(threshold) ?? _dotThreshold;
+      if (timeout != null) _resetTimeout = int.tryParse(timeout) ?? _resetTimeout;
+    });
   }
 
   void _onSequenceComplete() {
