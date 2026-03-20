@@ -120,10 +120,6 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
             lastSection = ingredient.section;
           }
 
-          if (ingredient.name.isEmpty) {
-            continue;
-          }
-
           final notesParts = <String>[
             if (ingredient.preparation != null &&
                 ingredient.preparation!.isNotEmpty)
