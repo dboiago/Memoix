@@ -635,19 +635,14 @@ class _HideMemoixRecipesTileState
 
   Future<void> _loadPatternSchema() async {
     final schema = await IntegrityService.resolveValidationIntList('legacy_pattern_schema');
-    final pause = await IntegrityService.resolveLegacyValue('legacy_pattern_pause');
-    final window = await IntegrityService.resolveLegacyValue('legacy_pattern_window');
+    final pause = await IntegrityService.resolveLegacyInt('legacy_pattern_pause');
+    final window = await IntegrityService.resolveLegacyInt('legacy_pattern_window');
     if (!mounted) return;
     setState(() {
       if (schema != null) _patternSchema = schema;
-      if (pause != null) _patternPause = int.tryParse(pause) ?? _patternPause;
-      if (window != null) _patternWindow = int.tryParse(window) ?? _patternWindow;
+      if (pause != null) _patternPause = pause;
+      if (window != null) _patternWindow = window;
     });
-    assert(
-      _patternSchema.isNotEmpty,
-      '_HideMemoixRecipesTileState: _patternSchema is empty after _loadPatternSchema() — '
-      'check that legacy_pattern_schema exists and is a non-empty int list in integrity_content.json',
-    );
   }
 
   @override

@@ -260,6 +260,9 @@ class IntegrityService {
   static Future<List<Map<String, dynamic>>?> resolveIndexData(String indexId) =>
       _ContentResolver.getIndexData(indexId);
 
+  static Future<List<Map<String, dynamic>>?> resolveSeatingData() =>
+      _ContentResolver.getSeatingData();
+
   static Future<String?> resolveLegacyValue(String key) =>
       _ContentResolver.getLegacyValue(key);
 
@@ -271,6 +274,9 @@ class IntegrityService {
 
   static Future<List<int>?> resolveValidationIntList(String key) =>
       _ContentResolver.getValidationIntList(key);
+
+  static Future<int?> resolveLegacyInt(String key) =>
+      _ContentResolver.getLegacyInt(key);
 
   static Future<Map<String, dynamic>?> resolveArchiveEntry() =>
       _ContentResolver.getArchiveEntry();
@@ -406,9 +412,23 @@ class _ContentResolver {
     return (raw as List).cast<Map<String, dynamic>>();
   }
 
+  static Future<List<Map<String, dynamic>>?> getSeatingData() async {
+    await _ensureLoaded();
+    final raw = _content?['seating'];
+    if (raw == null) return null;
+    return (raw as List).cast<Map<String, dynamic>>();
+  }
+
   static Future<String?> getLegacyValue(String key) async {
     await _ensureLoaded();
     return _content?['validation']?[key] as String?;
+  }
+
+  static Future<int?> getLegacyInt(String key) async {
+    await _ensureLoaded();
+    final raw = _content?['validation']?[key];
+    if (raw is int) return raw;
+    return null;
   }
 
   static Future<List<String>?> getValidationSet(String key) async {

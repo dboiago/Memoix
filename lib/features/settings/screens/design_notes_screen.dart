@@ -51,13 +51,13 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
 
   Future<void> _loadInputSchema() async {
     final seq = await IntegrityService.resolveValidationBoolList('legacy_input_schema');
-    final threshold = await IntegrityService.resolveLegacyValue('legacy_input_threshold');
-    final timeout = await IntegrityService.resolveLegacyValue('legacy_input_timeout');
+    final threshold = await IntegrityService.resolveLegacyInt('legacy_input_threshold');
+    final timeout = await IntegrityService.resolveLegacyInt('legacy_input_timeout');
     if (!mounted) return;
     setState(() {
       if (seq != null) _targetSequence = seq;
-      if (threshold != null) _dotThreshold = int.tryParse(threshold) ?? _dotThreshold;
-      if (timeout != null) _resetTimeout = int.tryParse(timeout) ?? _resetTimeout;
+      if (threshold != null) _dotThreshold = threshold;
+      if (timeout != null) _resetTimeout = timeout;
     });
   }
 

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
-import '../../reference/screens/session_ledger_screen.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -110,16 +108,17 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
         final searchToken = tokenSnapshot.data;
         final isReservationQuery = searchToken != null &&
             query.trim().toLowerCase() == searchToken.toLowerCase() &&
-            IntegrityService.store.getBool('cfg_locale_pass');
+            IntegrityService.store.getBool('cfg_locale_pass') &&
+            !IntegrityService.store.getBool('cfg_index_pass');
 
         if (isReservationQuery) {
-          return FutureBuilder<(Map<String, dynamic>?, String?, String, String, Map<String, dynamic>?)>(
+          return FutureBuilder<(Map<String, dynamic>?, String?, String, String)>(
         future: () async {
           final localEntry = await SessionIndexService.getLocalEntry();
           final template = await IntegrityService.resolveAlertText('service_template_idx');
           final table = await IntegrityService.resolveLegacyValue('legacy_table_schema') ?? '';
           final time = await IntegrityService.resolveLegacyValue('legacy_time_schema') ?? '';
-          return (localEntry, template, table, time, localEntry);
+          return (localEntry, template, table, time);
         }(),
         builder: (context, guestSnapshot) {
           if (guestSnapshot.connectionState == ConnectionState.waiting) {
@@ -138,7 +137,6 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               .replaceAll('{time}', guestSnapshot.data!.$4)
               .replaceAll('{minutes}', guestEntry['party_size']?.toString() ?? '');
           final theme = Theme.of(context);
-          final localEntry = guestSnapshot.data?.$5;
 
           return FutureBuilder<List<Recipe>>(
             future: ref.read(recipeSearchProvider(query).future),
@@ -172,51 +170,6 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                       ),
                     ),
                   ),
-                  if (localEntry != null)
-                    Container(
-                      margin: const EdgeInsets.fromLTRB(12, 4, 12, 4),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.surfaceContainerHighest,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(
-                          color: theme.colorScheme.primary
-                              .withValues(alpha: 0.4),
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          Text(
-                            localEntry['time']?.toString() ?? '',
-                            style: GoogleFonts.courierPrime(
-                              fontSize: 12,
-                              color: theme.colorScheme.onSurface,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              localEntry['name']?.toString() ?? '',
-                              style: GoogleFonts.courierPrime(
-                                fontSize: 12,
-                                color: theme.colorScheme.onSurface,
-                                fontWeight: FontWeight.w700,
-                              ),
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Text(
-                            "PTY ${localEntry['party_size'] ?? ''}  TBL ${localEntry['table_no'] ?? ''}",
-                            style: GoogleFonts.courierPrime(
-                              fontSize: 12,
-                              color: theme.colorScheme.onSurface,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
                   // Normal recipe results below.
                   for (final recipe in recipes)
                     ListTile(

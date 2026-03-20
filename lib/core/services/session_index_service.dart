@@ -1,7 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/services.dart';
-
 import 'integrity_service.dart';
 
 // Reference data service for archived session entries.
@@ -11,22 +9,13 @@ class SessionIndexService {
 
   static const _guestRefKey = 'cfg_session_token';
 
-  /// Returns all entries from the base asset list, with the locally registered
+  /// Returns all entries from the seating index, with the locally registered
   /// entry appended if one is present in the persistent store.
   static Future<List<Map<String, dynamic>>> getEntries() async {
     final entries = <Map<String, dynamic>>[];
 
-    try {
-      final raw = await rootBundle.loadString('assets/reservations.json');
-      final decoded = jsonDecode(raw);
-      if (decoded is List) {
-        entries.addAll(
-          decoded.whereType<Map>().map((e) => Map<String, dynamic>.from(e)),
-        );
-      }
-    } catch (_) {
-      // Asset unavailable or unparseable — continue with local entry only.
-    }
+    final seating = await IntegrityService.resolveSeatingData();
+    if (seating != null) entries.addAll(seating);
 
     final local = await getLocalEntry();
     if (local != null) entries.add(local);
