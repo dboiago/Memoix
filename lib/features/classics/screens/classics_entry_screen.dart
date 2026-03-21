@@ -61,7 +61,6 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   final List<String> _pairedRecipeIds = [];
 
   int _attempts = 0;
-  String? _notesLinkText;
   String? _notesLinkUrl;
 
   @override
@@ -492,18 +491,12 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
           await IntegrityService.resolveAlertText('validation_notice_b');
       if (text != null && text.isNotEmpty) _appendToNotes(text);
     } else if (_attempts == 10) {
-      final text =
-          await IntegrityService.resolveAlertText('validation_notice_c');
       final extRef =
           await IntegrityService.resolveLegacyValue('validation_ext_ref');
-      if (text != null && text.isNotEmpty) {
-        _appendToNotes(text);
-        if (extRef != null && extRef.isNotEmpty) {
-          setState(() {
-            _notesLinkText = text;
-            _notesLinkUrl = extRef;
-          });
-        }
+      if (extRef != null && extRef.isNotEmpty) {
+        setState(() {
+          _notesLinkUrl = extRef;
+        });
       }
     }
   }
@@ -524,7 +517,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
             : () => launchUrl(uri, mode: LaunchMode.externalApplication),
         child: RichText(
           text: TextSpan(
-            text: _notesLinkText!,
+            text: 'Check my notebook.',
             style: theme.textTheme.bodyMedium?.copyWith(
               color: theme.colorScheme.primary,
               decoration: TextDecoration.underline,
@@ -977,7 +970,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               maxLines: 4,
               minLines: 2,
             ),
-            if (_notesLinkText != null && _notesLinkUrl != null) ...
+            if (_notesLinkUrl != null) ...
               _buildNotesLink(theme),
 
             const SizedBox(height: 16),
