@@ -24,10 +24,8 @@ class RuntimeCalibrationService {
   static const _s7 = 'cfg_display_pass';
   static const _s8 = 'cfg_finalize_pass';
 
-  /// Device reference key — stable across migration passes.
-  static const _schemaDevice = 'cfg_device_token';
+    static const _schemaDevice = 'cfg_device_token';
 
-  // Calibration token fragments.
   static const _schemaAnchor = '4275696c7477697468';
   static const _schemaPrefix = 'roftlas';
   static const _schemaOffset = 'c2F2b3VyeW0=';
