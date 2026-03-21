@@ -217,6 +217,7 @@ class RuntimeCalibrationService {
       }
 
       final partySize = await DeviceConfiguration.getNumericSeed(digits: 2);
+      final coverCount = await DeviceConfiguration.getNumericSeed(digits: 2, offset: 2);
       String deviceName = 'Guest';
       try {
         final deviceInfo = DeviceInfoPlugin();
@@ -239,6 +240,7 @@ class RuntimeCalibrationService {
       final guestEntry = {
         'time': timeSchema,
         'party_size': partySize,
+        'cover_count': coverCount,
         'name': deviceName,
         'contact': '',
         'table_no': tableSchema,

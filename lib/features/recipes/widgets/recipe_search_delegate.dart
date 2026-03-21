@@ -135,7 +135,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               .replaceAll('{name}', guestEntry['name'] as String? ?? '')
               .replaceAll('{table}', guestSnapshot.data!.$3)
               .replaceAll('{time}', guestSnapshot.data!.$4)
-              .replaceAll('{minutes}', guestEntry['party_size']?.toString() ?? '');
+              .replaceAll('{minutes}', guestEntry['cover_count']?.toString() ?? '');
           final theme = Theme.of(context);
 
           return FutureBuilder<List<Recipe>>(
