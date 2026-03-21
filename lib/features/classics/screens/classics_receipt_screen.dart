@@ -99,8 +99,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final durations = _stageDurations ?? {};
     final tipUrl = _tipUrl ?? '';
 
-    final border = '=' * 42;
-    final divider = '-' * 42;
+    final divider = '─' * 51;
 
     doc.addPage(
       pw.Page(
@@ -110,7 +109,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
           return pw.Column(
             crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
-              pw.Text(border),
+              pw.Text(divider),
               pw.Center(
                 child: pw.Text(
                   header,
@@ -122,7 +121,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                   ),
                 ),
               ),
-              pw.Text(border),
+              pw.Text(divider),
               pw.SizedBox(height: 8),
               for (final key in _stageOrder) ...[
                 pw.Row(
@@ -238,7 +237,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                 ),
               ),
               pw.SizedBox(height: 8),
-              pw.Text(border),
+              pw.Text(divider),
             ],
           );
         },
@@ -271,8 +270,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
     final durations = _stageDurations ?? {};
 
-    final border = '═' * 42;
-    final divider = '─' * 42;
+    final divider = '─' * 51;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -288,10 +286,10 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        border,
+                        divider,
                         style: receiptFont.copyWith(
                           color: Colors.black,
-                          fontSize: 14,
+                          fontSize: 13,
                           letterSpacing: 0,
                         ),
                       ),
@@ -306,10 +304,10 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                         ),
                       ),
                       Text(
-                        border,
+                        divider,
                         style: receiptFont.copyWith(
                           color: Colors.black,
-                          fontSize: 14,
+                          fontSize: 13,
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -340,7 +338,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       const SizedBox(height: 4),
                       Text(
                         divider,
-                        style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
+                        style: receiptFont.copyWith(color: Colors.black, fontSize: 13),
                       ),
                       Row(
                         children: [
@@ -366,7 +364,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       ),
                       Text(
                         divider,
-                        style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
+                        style: receiptFont.copyWith(color: Colors.black, fontSize: 13),
                       ),
                       const SizedBox(height: 4),
                       if (_exportRef != null)
@@ -438,8 +436,8 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        border,
-                        style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
+                        divider,
+                        style: receiptFont.copyWith(color: Colors.black, fontSize: 13),
                       ),
                     ],
                   ),
