@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vibration/vibration.dart';
 
 import '../../../core/services/integrity_service.dart';
 
@@ -29,9 +30,11 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
     super.initState();
     _loadInputSchema();
     _ouRecognizer = TapGestureRecognizer()
-      ..onTapDown = (_) {
+      ..onTapDown = (_) async {
         _tapStart = DateTime.now();
         _morseResetTimer?.cancel();
+        if (await Vibration.hasVibrator() ?? false)
+          Vibration.vibrate(duration: 50);
       }
       ..onTapUp = (_) {
         if (_tapStart == null) return;
