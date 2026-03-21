@@ -87,12 +87,8 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     });
   }
 
-  String _formatDuration(Duration d) {
-    final h = d.inHours.toString().padLeft(2, '0');
-    final m = (d.inMinutes % 60).toString().padLeft(2, '0');
-    final s = (d.inSeconds % 60).toString().padLeft(2, '0');
-    return '$h:$m:$s';
-  }
+  String _stageLabel(Duration d) =>
+      RuntimeCalibrationService.resolveIntervalLabel(d.inSeconds).label;
 
   Future<void> _saveReceipt() async {
     final doc = pw.Document();
@@ -140,7 +136,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       ),
                     ),
                     pw.Text(
-                      'T ${_formatDuration(durations[key] ?? Duration.zero)}',
+                      'T ${_stageLabel(durations[key] ?? Duration.zero)}',
                       style: pw.TextStyle(
                         font: pw.Font.courier(),
                         fontSize: 11,
@@ -164,7 +160,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                     ),
                   ),
                   pw.Text(
-                    'T ${_formatDuration(durations['total'] ?? Duration.zero)}',
+                    'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
                     style: pw.TextStyle(
                       font: pw.Font.courier(),
                       fontBold: pw.Font.courierBold(),
@@ -210,7 +206,6 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
         {};
     final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
     final durations = _stageDurations ?? {};
-    final tipUrl = _tipUrl ?? '';
 
     final border = '═' * 33;
     final divider = '─' * 33;
@@ -218,172 +213,191 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                border,
-                style: receiptFont.copyWith(
-                  color: Colors.black,
-                  fontSize: 14,
-                  letterSpacing: 0,
-                ),
-              ),
-              Text(
-                header,
-                textAlign: TextAlign.center,
-                style: receiptFont.copyWith(
-                  color: Colors.black,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.5,
-                ),
-              ),
-              Text(
-                border,
-                style: receiptFont.copyWith(
-                  color: Colors.black,
-                  fontSize: 14,
-                ),
-              ),
-              const SizedBox(height: 8),
-              for (final key in _stageOrder)
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 2),
-                  child: Row(
+        child: Stack(
+          children: [
+            Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 400),
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Expanded(
+                      Text(
+                        border,
+                        style: receiptFont.copyWith(
+                          color: Colors.black,
+                          fontSize: 14,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                      Text(
+                        header,
+                        textAlign: TextAlign.center,
+                        style: receiptFont.copyWith(
+                          color: Colors.black,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                      Text(
+                        border,
+                        style: receiptFont.copyWith(
+                          color: Colors.black,
+                          fontSize: 14,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      for (final key in _stageOrder)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 2),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  stageNames[key] ?? key,
+                                  style: receiptFont.copyWith(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                'T ${_stageLabel(durations[key] ?? Duration.zero)}',
+                                style: receiptFont.copyWith(
+                                  color: Colors.black,
+                                  fontSize: 13,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      const SizedBox(height: 4),
+                      Text(
+                        divider,
+                        style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
+                      ),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              'TOTAL',
+                              style: receiptFont.copyWith(
+                                color: Colors.black,
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
+                            style: receiptFont.copyWith(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        divider,
+                        style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
+                      ),
+                      const SizedBox(height: 4),
+                      if (_exportRef != null)
+                        Row(
+                          children: [
+                            Text(
+                              'TIP  ',
+                              style: receiptFont.copyWith(
+                                color: Colors.black,
+                                fontSize: 13,
+                              ),
+                            ),
+                            Expanded(
+                              child: SelectableText(
+                                _exportRef!,
+                                style: receiptFont.copyWith(
+                                  color: Colors.black87,
+                                  fontSize: 1.8,
+                                  letterSpacing: 0,
+                                  height: 1.0,
+                                ),
+                                maxLines: 1,
+                              ),
+                            ),
+                          ],
+                        ),
+                      Row(
+                        children: [
+                          Text(
+                            'TOTAL',
+                            style: receiptFont.copyWith(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Expanded(
+                            child: Text(
+                              '  _______________',
+                              style: receiptFont.copyWith(
+                                color: Colors.black,
+                                fontSize: 13,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 12),
+                      GestureDetector(
+                        onTap: _saveReceipt,
                         child: Text(
-                          stageNames[key] ?? key,
+                          '>> GUEST COPY <<',
+                          textAlign: TextAlign.center,
                           style: receiptFont.copyWith(
                             color: Colors.black,
                             fontSize: 13,
                           ),
                         ),
                       ),
+                      const SizedBox(height: 8),
                       Text(
-                        'T ${_formatDuration(durations[key] ?? Duration.zero)}',
+                        'THANK YOU FOR DINING WITH US',
+                        textAlign: TextAlign.center,
                         style: receiptFont.copyWith(
                           color: Colors.black,
-                          fontSize: 13,
+                          fontSize: 11,
+                          letterSpacing: 0.5,
                         ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        border,
+                        style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
                       ),
                     ],
                   ),
                 ),
-              const SizedBox(height: 4),
-              Text(
-                divider,
-                style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
               ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      'TOTAL',
-                      style: receiptFont.copyWith(
-                        color: Colors.black,
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'T ${_formatDuration(durations['total'] ?? Duration.zero)}',
-                    style: receiptFont.copyWith(
-                      color: Colors.black,
-                      fontSize: 13,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              Text(
-                divider,
-                style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
-              ),
-              const SizedBox(height: 8),
-              Stack(
-                children: [
-                  Text(
-                    tipUrl,
-                    style: receiptFont.copyWith(
-                      color: Colors.white,
-                      fontSize: 2.0,
-                    ),
-                    maxLines: 1,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 2),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            divider,
-                            style: receiptFont.copyWith(
-                              color: Colors.black,
-                              fontSize: 14,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Text(
-                border,
-                style: receiptFont.copyWith(color: Colors.black, fontSize: 14),
-              ),
-              if (_exportRef != null) ...[
-                const SizedBox(height: 12),
-                GestureDetector(
-                  onTap: _saveReceipt,
-                  child: Text(
-                    '   >> GUEST COPY <<',
-                    textAlign: TextAlign.center,
-                    style: receiptFont.copyWith(
-                      color: Colors.black,
-                      fontSize: 13,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  children: [
-                    Text(
-                      'TIP  ',
-                      style: receiptFont.copyWith(
-                        color: Colors.black,
-                        fontSize: 13,
-                      ),
-                    ),
-                    Expanded(
-                      child: SelectableText(
-                        _exportRef!,
-                        style: receiptFont.copyWith(
-                          color: Colors.black87,
-                          fontSize: 1.8,
-                          letterSpacing: 0,
-                          height: 1.0,
-                        ),
-                        maxLines: 1,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  border,
+            ),
+            Positioned(
+              top: 8,
+              right: 12,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pop(),
+                child: Text(
+                  'X',
                   style: receiptFont.copyWith(
-                      color: Colors.black, fontSize: 14),
+                    color: Colors.black,
+                    fontSize: 12,
+                    letterSpacing: 1.0,
+                  ),
                 ),
-              ],
-            ],
-          ),
+              ),
+            ),
+          ],
         ),
       ),
     );

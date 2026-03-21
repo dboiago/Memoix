@@ -133,7 +133,8 @@ class RuntimeCalibrationService {
     final d5 = safeDur(synthAsset, synthStream);
     final d6 = safeDur(synthStream, diagPaint);
     final d7 = safeDur(diagPaint,  diagFlush);
-    const d8 = Duration.zero;
+    final diagFlushEnd = diagFlush > 0 ? diagFlush : DateTime.now().millisecondsSinceEpoch;
+    final d8 = safeDur(diagPaint, diagFlushEnd);
 
     final total = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8;
 
