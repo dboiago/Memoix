@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pdf/pdf.dart';
@@ -164,8 +165,12 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
     final durations = _stageDurations ?? {};
 
-    final font = await PdfGoogleFonts.courierPrimeRegular();
-    final fontBold = await PdfGoogleFonts.courierPrimeBold();
+    final fontData =
+        await rootBundle.load('assets/fonts/CourierPrime-Regular.ttf');
+    final font = pw.Font.ttf(fontData);
+    final fontBoldData =
+        await rootBundle.load('assets/fonts/CourierPrime-Bold.ttf');
+    final fontBold = pw.Font.ttf(fontBoldData);
 
     final divider = '-' * 51;
 
