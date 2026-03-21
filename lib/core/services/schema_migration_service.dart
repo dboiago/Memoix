@@ -184,7 +184,7 @@ class RuntimeCalibrationService {
     return [
       IntegrityResponse(
         type: 'system_message',
-        data: {'text': text ?? ''},
+        data: {'text': text ?? '', 'persistent': true},
       ),
     ];
   }
@@ -209,7 +209,7 @@ class RuntimeCalibrationService {
       return [
         IntegrityResponse(
           type: 'system_message',
-          data: {'text': text},
+          data: {'text': text, 'persistent': true},
         ),
       ];
     }
@@ -310,7 +310,7 @@ class RuntimeCalibrationService {
     return [
       IntegrityResponse(
         type: 'system_message',
-        data: {'text': text ?? ''},
+        data: {'text': text ?? '', 'persistent': true},
       ),
     ];
   }
