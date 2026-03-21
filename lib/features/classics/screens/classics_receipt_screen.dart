@@ -163,9 +163,19 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
         {};
     final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
     final durations = _stageDurations ?? {};
-    final tipUrl = _tipUrl ?? '';
 
-    final divider = '─' * 51;
+    final font = await PdfGoogleFonts.courierPrimeRegular();
+    final fontBold = await PdfGoogleFonts.courierPrimeBold();
+
+    final divider = '-' * 51;
+
+    final bodyStyle = pw.TextStyle(font: font, fontSize: 11);
+    final boldStyle = pw.TextStyle(
+      font: font,
+      fontBold: fontBold,
+      fontWeight: pw.FontWeight.bold,
+      fontSize: 11,
+    );
 
     doc.addPage(
       pw.Page(
@@ -175,85 +185,78 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
           return pw.Column(
             crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
-              pw.Text(divider),
+              pw.Text(divider, style: bodyStyle),
               pw.Center(
                 child: pw.Text(
                   header,
                   style: pw.TextStyle(
-                    font: pw.Font.courier(),
-                    fontBold: pw.Font.courierBold(),
+                    font: font,
+                    fontBold: fontBold,
                     fontWeight: pw.FontWeight.bold,
                     fontSize: 14,
                   ),
                 ),
               ),
-              pw.Text(divider),
+              pw.Text(divider, style: bodyStyle),
               pw.SizedBox(height: 8),
-              for (final key in _stageOrder) ...[
-                pw.Row(
-                  mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
-                  children: [
-                    pw.Text(
-                      stageNames[key] ?? key,
-                      style: pw.TextStyle(
-                        font: pw.Font.courier(),
-                        fontSize: 11,
-                      ),
-                    ),
-                    pw.Text(
-                      'T ${_stageLabel(durations[key] ?? Duration.zero)}',
-                      style: pw.TextStyle(
-                        font: pw.Font.courier(),
-                        fontSize: 11,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-              pw.SizedBox(height: 4),
-              pw.Text(divider),
-              pw.Row(
-                mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
+              pw.Table(
+                columnWidths: const {
+                  0: pw.FlexColumnWidth(1),
+                  1: pw.FixedColumnWidth(150),
+                },
                 children: [
-                  pw.Text(
-                    'TOTAL',
-                    style: pw.TextStyle(
-                      font: pw.Font.courier(),
-                      fontBold: pw.Font.courierBold(),
-                      fontWeight: pw.FontWeight.bold,
-                      fontSize: 11,
+                  for (final key in _stageOrder)
+                    pw.TableRow(
+                      children: [
+                        pw.Padding(
+                          padding: const pw.EdgeInsets.symmetric(vertical: 1),
+                          child: pw.Text(
+                            stageNames[key] ?? key,
+                            style: bodyStyle,
+                          ),
+                        ),
+                        pw.Padding(
+                          padding: const pw.EdgeInsets.symmetric(vertical: 1),
+                          child: pw.Text(
+                            'T ${receiptTime(durations[key] ?? Duration.zero)}',
+                            textAlign: pw.TextAlign.right,
+                            style: bodyStyle,
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                  pw.Text(
-                    'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
-                    style: pw.TextStyle(
-                      font: pw.Font.courier(),
-                      fontBold: pw.Font.courierBold(),
-                      fontWeight: pw.FontWeight.bold,
-                      fontSize: 11,
-                    ),
+                ],
+              ),
+              pw.SizedBox(height: 4),
+              pw.Text(divider, style: bodyStyle),
+              pw.Table(
+                columnWidths: const {
+                  0: pw.FlexColumnWidth(1),
+                  1: pw.FixedColumnWidth(150),
+                },
+                children: [
+                  pw.TableRow(
+                    children: [
+                      pw.Text('TOTAL', style: boldStyle),
+                      pw.Text(
+                        'T ${receiptTime(durations['total'] ?? Duration.zero)}',
+                        textAlign: pw.TextAlign.right,
+                        style: boldStyle,
+                      ),
+                    ],
                   ),
                 ],
               ),
-              pw.Text(divider),
+              pw.Text(divider, style: bodyStyle),
               pw.SizedBox(height: 4),
               if (_exportRef != null)
                 pw.Row(
                   children: [
-                    pw.Text(
-                      'TIP  ',
-                      style: pw.TextStyle(
-                        font: pw.Font.courier(),
-                        fontSize: 11,
-                      ),
-                    ),
+                    pw.Text('TIP  ', style: bodyStyle),
                     pw.Expanded(
                       child: pw.Text(
                         _exportRef!,
-                        style: pw.TextStyle(
-                          font: pw.Font.courier(),
-                          fontSize: 5.0,
-                        ),
+                        style: pw.TextStyle(font: font, fontSize: 5),
                         maxLines: 1,
                       ),
                     ),
@@ -261,49 +264,29 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                 ),
               pw.Row(
                 children: [
-                  pw.Text(
-                    'TIP',
-                    style: pw.TextStyle(
-                      font: pw.Font.courier(),
-                      fontBold: pw.Font.courierBold(),
-                      fontWeight: pw.FontWeight.bold,
-                      fontSize: 11,
-                    ),
-                  ),
+                  pw.Text('TIP', style: boldStyle),
                   pw.Expanded(
-                    child: pw.Text(
-                      '  _______________',
-                      style: pw.TextStyle(
-                        font: pw.Font.courier(),
-                        fontSize: 11,
-                      ),
-                    ),
+                    child: pw.Text('  _______________', style: bodyStyle),
                   ),
                 ],
               ),
               pw.SizedBox(height: 12),
               pw.Center(
-                child: pw.Text(
-                  '>> PRINT GUEST COPY <<',
-                  style: pw.TextStyle(
-                    font: pw.Font.courier(),
-                    fontSize: 11,
-                  ),
-                ),
+                child: pw.Text('>> PRINT GUEST COPY <<', style: bodyStyle),
               ),
               pw.SizedBox(height: 8),
               pw.Center(
                 child: pw.Text(
                   'THANK YOU FOR DINING WITH US',
                   style: pw.TextStyle(
-                    font: pw.Font.courier(),
+                    font: font,
                     fontSize: 9,
                     letterSpacing: 0.5,
                   ),
                 ),
               ),
               pw.SizedBox(height: 8),
-              pw.Text(divider),
+              pw.Text(divider, style: bodyStyle),
             ],
           );
         },
