@@ -182,7 +182,6 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final _amountController = TextEditingController();
-  final _temperatureFocusNode = FocusNode();
   String _fromUnit = 'cup';
   String _toUnit = 'ml';
   String _result = '';
@@ -198,14 +197,6 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
           _selectedTab = _tabController.index;
           _resetForTab();
         });
-        if (_tabController.index == 2 &&
-            IntegrityService.store.getBool('cfg_locale_pass') &&
-            !IntegrityService.store.getBool('cfg_index_pass')) {
-          FocusScope.of(context).unfocus();
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            if (mounted) _temperatureFocusNode.requestFocus();
-          });
-        }
       }
     });
   }
@@ -304,7 +295,6 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
   void dispose() {
     _tabController.dispose();
     _amountController.dispose();
-    _temperatureFocusNode.dispose();
     super.dispose();
   }
 
@@ -365,19 +355,10 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                   child: _ConversionTypeButton(
                     label: 'Temperature',
                     isSelected: _selectedTab == 2,
-                    onTap: () {
-                      setState(() {
-                        _selectedTab = 2;
-                        _resetForTab();
-                      });
-                      if (IntegrityService.store.getBool('cfg_locale_pass') &&
-                          !IntegrityService.store.getBool('cfg_index_pass')) {
-                        FocusScope.of(context).unfocus();
-                        WidgetsBinding.instance.addPostFrameCallback((_) {
-                          if (mounted) _temperatureFocusNode.requestFocus();
-                        });
-                      }
-                    },
+                    onTap: () => setState(() {
+                      _selectedTab = 2;
+                      _resetForTab();
+                    }),
                   ),
                 ),
               ],
@@ -398,7 +379,6 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                   flex: 3,
                   child: TextField(
                     key: ValueKey('input_${_selectedTab}_${IntegrityService.store.getBool('cfg_locale_pass')}_${IntegrityService.store.getBool('cfg_index_pass')}'),
-                    focusNode: _selectedTab == 2 ? _temperatureFocusNode : null,
                     controller: _amountController,
                     keyboardType: (_selectedTab == 2 &&
                             IntegrityService.store
