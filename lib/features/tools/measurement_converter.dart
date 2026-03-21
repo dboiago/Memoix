@@ -379,7 +379,14 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                   flex: 3,
                   child: TextField(
                     controller: _amountController,
-                    keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                    keyboardType: (_selectedTab == 2 &&
+                            IntegrityService.store
+                                .getBool('cfg_locale_pass') &&
+                            !IntegrityService.store
+                                .getBool('cfg_index_pass'))
+                        ? TextInputType.text
+                        : const TextInputType.numberWithOptions(
+                            decimal: true),
                     decoration: InputDecoration(
                       hintText: '0',
                       filled: true,

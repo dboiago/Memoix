@@ -228,21 +228,32 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
           Padding(
             padding: const EdgeInsets.only(bottom: 24),
             child: Center(
-              child: RichText(
-                text: TextSpan(
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                    fontStyle: FontStyle.italic,
-                  ),
-                  children: [
-                    const TextSpan(text: 'For savv'),
-                    TextSpan(
-                      text: '(ou)',
-                      recognizer: _ouRecognizer,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  RichText(
+                    text: TextSpan(
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                        fontStyle: FontStyle.italic,
+                      ),
+                      children: [
+                        const TextSpan(text: 'For savv'),
+                        TextSpan(
+                          text: '(ou)',
+                          recognizer: _ouRecognizer,
+                        ),
+                        const TextSpan(text: 'ry minds.'),
+                      ],
                     ),
-                    const TextSpan(text: 'ry minds.'),
-                  ],
-                ),
+                  ),
+                  GestureDetector(
+                    behavior: HitTestBehavior.translucent,
+                    onTapDown: _ouRecognizer.onTapDown,
+                    onTapUp: _ouRecognizer.onTapUp,
+                    child: const SizedBox(width: 48, height: 48),
+                  ),
+                ],
               ),
             ),
           ),
