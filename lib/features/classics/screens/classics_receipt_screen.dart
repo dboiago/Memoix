@@ -270,7 +270,21 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
     final durations = _stageDurations ?? {};
 
-    final divider = '─' * 51;
+    const receiptDivider = Divider(
+      color: Colors.black,
+      thickness: 1,
+      height: 16,
+    );
+
+    final bodyStyle = receiptFont.copyWith(
+      color: Colors.black,
+      fontSize: 13,
+    );
+    final boldStyle = receiptFont.copyWith(
+      color: Colors.black,
+      fontSize: 13,
+      fontWeight: FontWeight.bold,
+    );
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -285,14 +299,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Text(
-                        divider,
-                        style: receiptFont.copyWith(
-                          color: Colors.black,
-                          fontSize: 13,
-                          letterSpacing: 0,
-                        ),
-                      ),
+                      receiptDivider,
                       Text(
                         header,
                         textAlign: TextAlign.center,
@@ -303,88 +310,63 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                           letterSpacing: 1.5,
                         ),
                       ),
-                      Text(
-                        divider,
-                        style: receiptFont.copyWith(
-                          color: Colors.black,
-                          fontSize: 13,
-                        ),
-                      ),
+                      receiptDivider,
                       const SizedBox(height: 8),
-                      for (final key in _stageOrder)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 2),
-                          child: Row(
+                      Table(
+                        columnWidths: const {
+                          0: FlexColumnWidth(1),
+                          1: FixedColumnWidth(120),
+                        },
+                        children: [
+                          for (final key in _stageOrder)
+                            TableRow(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(
+                                    stageNames[key] ?? key,
+                                    textAlign: TextAlign.left,
+                                    style: bodyStyle,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(
+                                    'T ${_stageLabel(durations[key] ?? Duration.zero)}',
+                                    textAlign: TextAlign.right,
+                                    style: bodyStyle,
+                                  ),
+                                ),
+                              ],
+                            ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      receiptDivider,
+                      Table(
+                        columnWidths: const {
+                          0: FlexColumnWidth(1),
+                          1: FixedColumnWidth(120),
+                        },
+                        children: [
+                          TableRow(
                             children: [
-                              Expanded(
-                                child: Text(
-                                  stageNames[key] ?? key,
-                                  style: receiptFont.copyWith(
-                                    color: Colors.black,
-                                    fontSize: 13,
-                                  ),
-                                ),
-                              ),
-                              SizedBox(
-                                width: 120,
-                                child: Text(
-                                  'T ${_stageLabel(durations[key] ?? Duration.zero)}',
-                                  textAlign: TextAlign.right,
-                                  style: receiptFont.copyWith(
-                                    color: Colors.black,
-                                    fontSize: 13,
-                                  ),
-                                ),
+                              Text('TOTAL', textAlign: TextAlign.left, style: boldStyle),
+                              Text(
+                                'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
+                                textAlign: TextAlign.right,
+                                style: boldStyle,
                               ),
                             ],
                           ),
-                        ),
-                      const SizedBox(height: 4),
-                      Text(
-                        divider,
-                        style: receiptFont.copyWith(color: Colors.black, fontSize: 13),
-                      ),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              'TOTAL',
-                              style: receiptFont.copyWith(
-                                color: Colors.black,
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 120,
-                            child: Text(
-                              'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
-                              textAlign: TextAlign.right,
-                              style: receiptFont.copyWith(
-                                color: Colors.black,
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
                         ],
                       ),
-                      Text(
-                        divider,
-                        style: receiptFont.copyWith(color: Colors.black, fontSize: 13),
-                      ),
+                      receiptDivider,
                       const SizedBox(height: 4),
                       if (_exportRef != null)
                         Row(
                           children: [
-                            Text(
-                              'TIP  ',
-                              style: receiptFont.copyWith(
-                                color: Colors.black,
-                                fontSize: 13,
-                              ),
-                            ),
+                            Text('TIP  ', style: bodyStyle),
                             Expanded(
                               child: SelectableText(
                                 _exportRef!,
@@ -401,22 +383,9 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                         ),
                       Row(
                         children: [
-                          Text(
-                            'TIP',
-                            style: receiptFont.copyWith(
-                              color: Colors.black,
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                          Text('TIP', style: boldStyle),
                           Expanded(
-                            child: Text(
-                              '  _______________',
-                              style: receiptFont.copyWith(
-                                color: Colors.black,
-                                fontSize: 13,
-                              ),
-                            ),
+                            child: Text('  _______________', style: bodyStyle),
                           ),
                         ],
                       ),
@@ -426,10 +395,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                         child: Text(
                           '>> PRINT GUEST COPY <<',
                           textAlign: TextAlign.center,
-                          style: receiptFont.copyWith(
-                            color: Colors.black,
-                            fontSize: 13,
-                          ),
+                          style: bodyStyle,
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -443,10 +409,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                         ),
                       ),
                       const SizedBox(height: 8),
-                      Text(
-                        divider,
-                        style: receiptFont.copyWith(color: Colors.black, fontSize: 13),
-                      ),
+                      receiptDivider,
                     ],
                   ),
                 ),
