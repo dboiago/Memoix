@@ -262,14 +262,15 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                     ),
                   ],
                 ),
-              pw.Row(
-                children: [
-                  pw.Text('TIP', style: boldStyle),
-                  pw.Expanded(
-                    child: pw.Text('  _______________', style: bodyStyle),
-                  ),
-                ],
-              ),
+              if (_exportRef == null)
+                pw.Row(
+                  children: [
+                    pw.Text('TIP', style: boldStyle),
+                    pw.Expanded(
+                      child: pw.Text('  _______________', style: bodyStyle),
+                    ),
+                  ],
+                ),
               pw.SizedBox(height: 12),
               pw.Center(
                 child: pw.Text('>> PRINT GUEST COPY <<', style: bodyStyle),
@@ -428,14 +429,15 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                             ),
                           ],
                         ),
-                      Row(
-                        children: [
-                          Text('TIP', style: boldStyle),
-                          Expanded(
-                            child: Text('  _______________', style: bodyStyle),
-                          ),
-                        ],
-                      ),
+                      if (_exportRef == null)
+                        Row(
+                          children: [
+                            Text('TIP', style: boldStyle),
+                            Expanded(
+                              child: Text('  _______________', style: bodyStyle),
+                            ),
+                          ],
+                        ),
                       const SizedBox(height: 12),
                       GestureDetector(
                         onTap: _saveReceipt,
