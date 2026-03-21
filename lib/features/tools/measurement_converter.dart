@@ -396,19 +396,11 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
               children: [
                 Expanded(
                   flex: 3,
-                  child: TextField(
-                    key: ValueKey('input_${_selectedTab}_${IntegrityService.store.getBool('cfg_locale_pass')}_${IntegrityService.store.getBool('cfg_index_pass')}'),
-                    focusNode: _selectedTab == 2 ? _temperatureFocusNode : null,
-                    controller: _amountController,
-                    keyboardType: (_selectedTab == 2 &&
-                            IntegrityService.store
-                                .getBool('cfg_locale_pass') &&
-                            !IntegrityService.store
-                                .getBool('cfg_index_pass'))
-                        ? TextInputType.text
-                        : const TextInputType.numberWithOptions(
-                            decimal: true),
-                    decoration: InputDecoration(
+                  child: Builder(builder: (context) {
+                    final bool useTextInput = _selectedTab == 2 &&
+                        IntegrityService.store.getBool('cfg_locale_pass') &&
+                        !IntegrityService.store.getBool('cfg_index_pass');
+                    final decoration = InputDecoration(
                       hintText: '0',
                       filled: true,
                       fillColor: theme.colorScheme.surfaceContainerHighest,
@@ -416,9 +408,26 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide.none,
                       ),
-                    ),
-                    onChanged: (_) => _convert(),
-                  ),
+                    );
+                    if (useTextInput) {
+                      return TextField(
+                        key: const ValueKey('temp_text'),
+                        focusNode: _temperatureFocusNode,
+                        controller: _amountController,
+                        keyboardType: TextInputType.text,
+                        decoration: decoration,
+                        onChanged: (_) => _convert(),
+                      );
+                    }
+                    return TextField(
+                      key: const ValueKey('temp_numeric'),
+                      focusNode: _selectedTab == 2 ? _temperatureFocusNode : null,
+                      controller: _amountController,
+                      keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                      decoration: decoration,
+                      onChanged: (_) => _convert(),
+                    );
+                  }),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
