@@ -186,7 +186,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                         _exportRef!,
                         style: pw.TextStyle(
                           font: pw.Font.courier(),
-                          fontSize: 2.5,
+                          fontSize: 5.0,
                         ),
                         maxLines: 1,
                       ),
@@ -218,7 +218,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               pw.SizedBox(height: 12),
               pw.Center(
                 child: pw.Text(
-                  '>> GUEST COPY <<',
+                  '>> PRINT GUEST COPY <<',
                   style: pw.TextStyle(
                     font: pw.Font.courier(),
                     fontSize: 11,
@@ -325,11 +325,15 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                                   ),
                                 ),
                               ),
-                              Text(
-                                'T ${_stageLabel(durations[key] ?? Duration.zero)}',
-                                style: receiptFont.copyWith(
-                                  color: Colors.black,
-                                  fontSize: 13,
+                              SizedBox(
+                                width: 120,
+                                child: Text(
+                                  'T ${_stageLabel(durations[key] ?? Duration.zero)}',
+                                  textAlign: TextAlign.right,
+                                  style: receiptFont.copyWith(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                  ),
                                 ),
                               ),
                             ],
@@ -352,12 +356,16 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                               ),
                             ),
                           ),
-                          Text(
-                            'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
-                            style: receiptFont.copyWith(
-                              color: Colors.black,
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
+                          SizedBox(
+                            width: 120,
+                            child: Text(
+                              'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
+                              textAlign: TextAlign.right,
+                              style: receiptFont.copyWith(
+                                color: Colors.black,
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ],
@@ -382,7 +390,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                                 _exportRef!,
                                 style: receiptFont.copyWith(
                                   color: Colors.black87,
-                                  fontSize: 2.5,
+                                  fontSize: 5.0,
                                   letterSpacing: 0,
                                   height: 1.0,
                                 ),
@@ -416,7 +424,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       GestureDetector(
                         onTap: _saveReceipt,
                         child: Text(
-                          '>> GUEST COPY <<',
+                          '>> PRINT GUEST COPY <<',
                           textAlign: TextAlign.center,
                           style: receiptFont.copyWith(
                             color: Colors.black,
