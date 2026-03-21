@@ -1,7 +1,11 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pdf/pdf.dart';
+import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 
 import '../../../core/providers.dart';
@@ -74,6 +78,8 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     'diag_paint_ms',
     'diag_flush_ms',
   ];
+
+  final _receiptKey = GlobalKey();
 
   bool _isLoading = true;
   Map<String, dynamic>? _receiptData;
@@ -156,12 +162,29 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   }
 
   Future<void> _saveReceipt() async {
-    await Printing.layoutPdf(
-      onLayout: (format) => Printing.convertFlutter(
-        format: format,
-        builder: (context) async => _buildReceiptWidget(),
+    final boundary =
+        _receiptKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+    if (boundary == null) return;
+    final image = await boundary.toImage(pixelRatio: 3.0);
+    final byteData = await image.toByteData(format: ui.ImageByteFormat.png);
+    if (byteData == null) return;
+    final pngBytes = byteData.buffer.asUint8List();
+
+    final doc = pw.Document();
+    doc.addPage(
+      pw.Page(
+        pageFormat: PdfPageFormat.a4,
+        margin: pw.EdgeInsets.zero,
+        build: (_) => pw.Image(
+          pw.MemoryImage(pngBytes),
+          fit: pw.BoxFit.contain,
+        ),
       ),
-      name: 'receipt.pdf',
+    );
+
+    await Printing.layoutPdf(
+      name: 'Le_Grand_Memoix.pdf',
+      onLayout: (_) async => doc.save(),
     );
   }
 
@@ -334,9 +357,12 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
             SingleChildScrollView(
               padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
               child: Center(
-                child: SizedBox(
-                  width: 400,
-                  child: _buildReceiptWidget(),
+                child: RepaintBoundary(
+                  key: _receiptKey,
+                  child: SizedBox(
+                    width: 400,
+                    child: _buildReceiptWidget(),
+                  ),
                 ),
               ),
             ),
