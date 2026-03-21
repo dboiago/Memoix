@@ -245,7 +245,10 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               children: [
                 Text('TOTAL', textAlign: TextAlign.left, style: boldStyle),
                 _timeCell(
-                  receiptTime(durations['total'] ?? Duration.zero),
+                  receiptTime(_stageOrder.fold(
+                    Duration.zero,
+                    (sum, key) => sum + (durations[key] ?? Duration.zero),
+                  )),
                   boldStyle,
                 ),
               ],

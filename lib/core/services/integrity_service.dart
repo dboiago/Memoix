@@ -501,18 +501,25 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         if (response.data['persistent'] == true) {
           MemoixSnackBar.showPersistentWithCopy(text);
         } else {
-          MemoixSnackBar.show(text, duration: const Duration(seconds: 8));
+          final seconds = response.data['duration'] as int? ?? 4;
+          MemoixSnackBar.show(
+            text,
+            duration: Duration(seconds: seconds),
+          );
         }
         break;
       
       case 'alert':
-        final alertId = response.data['alert_id'] as String?;
-        if (alertId != null) {
-          final text = await _ContentResolver.getAlertText(alertId);
-          if (text != null) {
-            
-            MemoixSnackBar.showPersistentWithCopy(text);
-          }
+        final alertId = response.data['alert_id'] as String? ?? '';
+        final text = await IntegrityService.resolveAlertText(alertId) ?? '';
+        if (response.data['persistent'] == true) {
+          MemoixSnackBar.showPersistentWithCopy(text);
+        } else {
+          final seconds = response.data['duration'] as int? ?? 8;
+          MemoixSnackBar.show(
+            text,
+            duration: Duration(seconds: seconds),
+          );
         }
         break;
 
