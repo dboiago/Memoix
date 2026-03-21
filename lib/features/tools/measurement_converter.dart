@@ -378,6 +378,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                 Expanded(
                   flex: 3,
                   child: TextField(
+                    key: ValueKey('input_${_selectedTab}_${IntegrityService.store.getBool('cfg_locale_pass')}_${IntegrityService.store.getBool('cfg_index_pass')}'),
                     controller: _amountController,
                     keyboardType: (_selectedTab == 2 &&
                             IntegrityService.store
