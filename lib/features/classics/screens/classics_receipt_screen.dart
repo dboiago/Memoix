@@ -145,11 +145,11 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
       mainAxisSize: MainAxisSize.max,
       children: [
         SizedBox(
-          width: 80,
+          width: 120,
           child: Text(left, textAlign: TextAlign.right, style: style),
         ),
         SizedBox(
-          width: 36,
+          width: 46,
           child: Text(right, textAlign: TextAlign.left, style: style),
         ),
       ],
@@ -381,7 +381,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       Table(
                         columnWidths: const {
                           0: FlexColumnWidth(1),
-                          1: FixedColumnWidth(150),
+                          1: FixedColumnWidth(200),
                         },
                         children: [
                           for (final key in _stageOrder)
@@ -411,7 +411,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       Table(
                         columnWidths: const {
                           0: FlexColumnWidth(1),
-                          1: FixedColumnWidth(150),
+                          1: FixedColumnWidth(200),
                         },
                         children: [
                           TableRow(

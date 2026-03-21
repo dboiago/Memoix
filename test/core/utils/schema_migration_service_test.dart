@@ -81,5 +81,14 @@ void main() {
     test('zero → 0.00', () {
       expect(rt(Duration.zero), '0.00');
     });
+
+    test('57y 0mo 12d 1h 29m → 57:00:12:01.29', () {
+      // 57 years × 12 months × 30 days + 12 days + 1h 29m
+      // = 57 × 360 + 12 = 20532 days
+      expect(
+        rt(const Duration(days: 20532, hours: 1, minutes: 29)),
+        '57:00:12:01.29',
+      );
+    });
   });
 }
