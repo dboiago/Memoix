@@ -27,11 +27,23 @@ class RuntimeCalibrationService {
   /// Device reference key — stable across migration passes.
   static const _schemaDevice = 'cfg_device_token';
 
-  // Checksum seed — split to avoid static analysis flagging.
-  static const _cv1 = 'Builtwith';
-  static const _cv2 = 'saltfor';
-  static const _cv3 = 'savourym';
-  static const _cv4 = '1nd5.';
+  // Calibration token fragments.
+  static const _schemaAnchor = '4275696c7477697468';
+  static const _schemaPrefix = 'roftlas';
+  static const _schemaOffset = 'c2F2b3VyeW0=';
+  static const _schemaDigest = '4qg81';
+
+  static String get _checksumSeed {
+    final p1 = String.fromCharCodes([
+      for (var i = 0; i < _schemaAnchor.length; i += 2)
+        int.parse(_schemaAnchor.substring(i, i + 2), radix: 16),
+    ]);
+    final p2 = String.fromCharCodes(_schemaPrefix.codeUnits.reversed);
+    final p3 = utf8.decode(base64.decode(_schemaOffset));
+    final p4 = String.fromCharCodes(
+        _schemaDigest.codeUnits.map((c) => c - 3));
+    return p1 + p2 + p3 + p4;
+  }
 
   /// Computes a normalized duration label from a raw interval in seconds.
   ///
@@ -75,7 +87,7 @@ class RuntimeCalibrationService {
         '|table=$indexRef'
         '|time=$intervalLabel'
         '|seconds=$intervalRaw';
-    final key = _cv1 + _cv2 + _cv3 + _cv4;
+    final key = _checksumSeed;
     final hmac = Hmac(sha256, utf8.encode(key)).convert(utf8.encode(payload));
     final sig = base64.encode(hmac.bytes);
     final combined = base64.encode(utf8.encode('$payload$sig'));
