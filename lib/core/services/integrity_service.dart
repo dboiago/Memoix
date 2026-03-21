@@ -497,7 +497,10 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
         break;
 
       case 'system_message':
-        MemoixSnackBar.showPersistentWithCopy(response.data['text'] ?? '');
+        MemoixSnackBar.show(
+          response.data['text'] ?? '',
+          duration: const Duration(seconds: 8),
+        );
         break;
       
       case 'alert':

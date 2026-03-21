@@ -474,12 +474,18 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               right: 12,
               child: GestureDetector(
                 onTap: () => Navigator.of(context).pop(),
-                child: Text(
-                  'X',
-                  style: receiptFont.copyWith(
-                    color: Colors.black,
-                    fontSize: 12,
-                    letterSpacing: 1.0,
+                child: SizedBox(
+                  width: 48,
+                  height: 48,
+                  child: Center(
+                    child: Text(
+                      'X',
+                      style: receiptFont.copyWith(
+                        color: Colors.black,
+                        fontSize: 12,
+                        letterSpacing: 1.0,
+                      ),
+                    ),
                   ),
                 ),
               ),

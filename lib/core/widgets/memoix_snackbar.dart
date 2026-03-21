@@ -41,7 +41,7 @@ class MemoixSnackBar {
   }
 
   /// Show a simple message SnackBar
-  static void show(String message) {
+  static void show(String message, {Duration duration = defaultDuration}) {
     final messenger = rootScaffoldMessengerKey.currentState;
     if (messenger == null) return;
     _cancelTimer();
@@ -51,7 +51,7 @@ class MemoixSnackBar {
       messenger.showSnackBar(
         SnackBar(
           content: Text(message),
-          duration: defaultDuration,
+          duration: duration,
           behavior: SnackBarBehavior.floating,
         ),
       );
