@@ -10,6 +10,52 @@ import '../../../core/services/integrity_service.dart';
 import '../../../core/services/schema_migration_service.dart';
 import '../../../core/services/session_index_service.dart';
 
+/// Formats a Duration as a decimal-aligned receipt time string.
+///
+/// Uses 30-day months and 12-month years.
+/// Returns segments separated by ':' with minutes after '.'.
+String receiptTime(Duration d) {
+  var totalMinutes = d.inMinutes;
+  if (totalMinutes <= 0) return '0.00';
+
+  final mm = totalMinutes % 60;
+  totalMinutes ~/= 60;
+  final hh = totalMinutes % 24;
+  totalMinutes ~/= 24;
+  final dd = totalMinutes % 30;
+  totalMinutes ~/= 30;
+  final mo = totalMinutes % 12;
+  final yy = totalMinutes ~/ 12;
+
+  final buf = StringBuffer();
+  var started = false;
+
+  if (yy > 0) {
+    buf.write(yy.toString().padLeft(2, '0'));
+    started = true;
+  }
+  if (started || mo > 0) {
+    if (started) buf.write(':');
+    buf.write(started ? mo.toString().padLeft(2, '0') : mo.toString());
+    started = true;
+  }
+  if (started || dd > 0) {
+    if (started) buf.write(':');
+    buf.write(started ? dd.toString().padLeft(2, '0') : dd.toString());
+    started = true;
+  }
+  if (started || hh > 0) {
+    if (started) buf.write(':');
+    buf.write(started ? hh.toString().padLeft(2, '0') : hh.toString());
+    started = true;
+  }
+  if (!started) {
+    buf.write('0');
+  }
+  buf.write('.${mm.toString().padLeft(2, '0')}');
+  return buf.toString();
+}
+
 class ClassicsReceiptScreen extends ConsumerStatefulWidget {
   const ClassicsReceiptScreen({super.key});
 
@@ -89,6 +135,26 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
   String _stageLabel(Duration d) =>
       RuntimeCalibrationService.resolveIntervalLabel(d.inSeconds).label;
+
+  Widget _timeCell(String time, TextStyle style) {
+    final dotIndex = time.indexOf('.');
+    final left = 'T ${time.substring(0, dotIndex)}';
+    final right = time.substring(dotIndex);
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        SizedBox(
+          width: 86,
+          child: Text(left, textAlign: TextAlign.right, style: style),
+        ),
+        SizedBox(
+          width: 34,
+          child: Text(right, textAlign: TextAlign.left, style: style),
+        ),
+      ],
+    );
+  }
 
   Future<void> _saveReceipt() async {
     final doc = pw.Document();
@@ -331,10 +397,9 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 2),
-                                  child: Text(
-                                    'T ${_stageLabel(durations[key] ?? Duration.zero)}',
-                                    textAlign: TextAlign.right,
-                                    style: bodyStyle,
+                                  child: _timeCell(
+                                    receiptTime(durations[key] ?? Duration.zero),
+                                    bodyStyle,
                                   ),
                                 ),
                               ],
@@ -352,10 +417,9 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                           TableRow(
                             children: [
                               Text('TOTAL', textAlign: TextAlign.left, style: boldStyle),
-                              Text(
-                                'T ${_stageLabel(durations['total'] ?? Duration.zero)}',
-                                textAlign: TextAlign.right,
-                                style: boldStyle,
+                              _timeCell(
+                                receiptTime(durations['total'] ?? Duration.zero),
+                                boldStyle,
                               ),
                             ],
                           ),
