@@ -156,12 +156,12 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   }
 
   Future<void> _saveReceipt() async {
-    await Printing.sharePdf(
-      bytes: await Printing.convertFlutter(
-        format: PdfPageFormat.roll80,
-        builder: (context) => _buildReceiptWidget(),
+    await Printing.layoutPdf(
+      onLayout: (format) => Printing.convertFlutter(
+        format: format,
+        builder: (context) async => _buildReceiptWidget(),
       ),
-      filename: 'receipt.pdf',
+      name: 'receipt.pdf',
     );
   }
 
