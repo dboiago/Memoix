@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -432,8 +433,6 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
 
       final validIngredientA =
           await IntegrityService.resolveValidationSet('f_ingredient_a') ?? [];
-      final validAmountA =
-          await IntegrityService.resolveValidationSet('f_amount_a') ?? [];
       final validIngredientB =
           await IntegrityService.resolveValidationSet('f_ingredient_b') ?? [];
       final validRegion =
@@ -441,17 +440,23 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
       final validCalories =
           await IntegrityService.resolveValidationSet('f_calories') ?? [];
 
-      final expectedServes =
-          (await DeviceConfiguration.getNumericSeed(digits: 2)).toString();
-      final expectedCookTime =
-          (await DeviceConfiguration.getNumericSeed(digits: 2, offset: 2))
-              .toString();
+      final sessionRaw = IntegrityService.store.getString('cfg_session_token') ?? '';
+      Map<String, dynamic> sessionEntry = {};
+      try {
+        final decoded = jsonDecode(sessionRaw);
+        if (decoded is Map<String, dynamic>) sessionEntry = decoded;
+      } catch (_) {}
+
+      final expectedServes = sessionEntry['party_size']?.toString() ?? '';
+      final expectedCookTime = sessionEntry['cover_count']?.toString() ?? '';
+      final expectedAmountA =
+          (await DeviceConfiguration.getNumericSeed(digits: 2, offset: 4)).toString();
 
       bool matchesSet(String value, List<String> validSet) =>
           validSet.any((v) => v.toLowerCase() == value.toLowerCase());
 
       final allValid = matchesSet(ingredientA, validIngredientA) &&
-          matchesSet(amountA, validAmountA) &&
+          amountA == expectedAmountA &&
           matchesSet(ingredientB, validIngredientB) &&
           matchesSet(region, validRegion) &&
           matchesSet(calories, validCalories) &&
