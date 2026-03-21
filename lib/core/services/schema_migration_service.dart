@@ -166,7 +166,7 @@ class RuntimeCalibrationService {
     Map<String, dynamic> metadata,
     IntegrityStateStore store,
   ) async {
-    if (store.getBool(_s2)) return [];
+    if (store.getBool(_s1)) return [];
 
     if (event != 'activity.recipe_favourite') return [];
 
