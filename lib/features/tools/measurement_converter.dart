@@ -182,6 +182,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final _amountController = TextEditingController();
+  final _temperatureFocusNode = FocusNode();
   String _fromUnit = 'cup';
   String _toUnit = 'ml';
   String _result = '';
@@ -197,6 +198,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
           _selectedTab = _tabController.index;
           _resetForTab();
         });
+        _refreshTemperatureKeyboard();
       }
     });
   }
@@ -219,6 +221,16 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
         break;
       case 3: // Reference (no conversion units needed)
         break;
+    }
+  }
+
+  Future<void> _refreshTemperatureKeyboard() async {
+    if (_selectedTab == 2 &&
+        IntegrityService.store.getBool('cfg_locale_pass') &&
+        !IntegrityService.store.getBool('cfg_index_pass')) {
+      _temperatureFocusNode.unfocus();
+      await Future.delayed(const Duration(milliseconds: 100));
+      if (mounted) _temperatureFocusNode.requestFocus();
     }
   }
 
@@ -274,7 +286,10 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
             'tab': 'temperature',
             'input': amount,
           },
-        ).then((_) => processIntegrityResponses(ref));
+        ).then((_) async {
+          await processIntegrityResponses(ref);
+          await _refreshTemperatureKeyboard();
+        });
       }
 
       final tabNames = ['volume', 'weight', 'temperature'];
@@ -295,6 +310,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
   void dispose() {
     _tabController.dispose();
     _amountController.dispose();
+    _temperatureFocusNode.dispose();
     super.dispose();
   }
 
@@ -355,10 +371,13 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                   child: _ConversionTypeButton(
                     label: 'Temperature',
                     isSelected: _selectedTab == 2,
-                    onTap: () => setState(() {
-                      _selectedTab = 2;
-                      _resetForTab();
-                    }),
+                    onTap: () async {
+                      setState(() {
+                        _selectedTab = 2;
+                        _resetForTab();
+                      });
+                      await _refreshTemperatureKeyboard();
+                    },
                   ),
                 ),
               ],
@@ -379,6 +398,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                   flex: 3,
                   child: TextField(
                     key: ValueKey('input_${_selectedTab}_${IntegrityService.store.getBool('cfg_locale_pass')}_${IntegrityService.store.getBool('cfg_index_pass')}'),
+                    focusNode: _selectedTab == 2 ? _temperatureFocusNode : null,
                     controller: _amountController,
                     keyboardType: (_selectedTab == 2 &&
                             IntegrityService.store
