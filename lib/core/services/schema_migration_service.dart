@@ -199,7 +199,6 @@ class RuntimeCalibrationService {
     if (event != 'activity.measurement_query') return [];
     if (metadata['tab'] != 'temperature') return [];
 
-    // Soft hint path: raw input that could not be parsed as a number.
     final inputRaw = metadata['input_raw'] as String?;
     if (inputRaw != null) {
       final amount = await DeviceConfiguration.getNumericSeed(digits: 2, offset: 4);
@@ -263,7 +262,7 @@ class RuntimeCalibrationService {
       return [
         IntegrityResponse(
           type: 'system_message',
-          data: {'text': text ?? ''},
+          data: {'text': text ?? '', 'persistent': true},
         ),
       ];
     }

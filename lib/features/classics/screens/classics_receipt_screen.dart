@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pdf/pdf.dart';
-import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 
 import '../../../core/providers.dart';
@@ -158,167 +156,17 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   }
 
   Future<void> _saveReceipt() async {
-    final doc = pw.Document();
-    final stageNames = (_receiptData?['stage_names'] as Map?)
-            ?.map((k, v) => MapEntry(k as String, v as String)) ??
-        {};
-    final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
-    final durations = _stageDurations ?? {};
-
-    final fontData =
-        await rootBundle.load('assets/fonts/CourierPrime-Regular.ttf');
-    final font = pw.Font.ttf(fontData);
-    final fontBoldData =
-        await rootBundle.load('assets/fonts/CourierPrime-Bold.ttf');
-    final fontBold = pw.Font.ttf(fontBoldData);
-
-    final divider = '-' * 51;
-
-    final bodyStyle = pw.TextStyle(font: font, fontSize: 11);
-    final boldStyle = pw.TextStyle(
-      font: font,
-      fontBold: fontBold,
-      fontWeight: pw.FontWeight.bold,
-      fontSize: 11,
-    );
-
-    doc.addPage(
-      pw.Page(
-        pageFormat: PdfPageFormat.a4,
-        margin: const pw.EdgeInsets.symmetric(horizontal: 72, vertical: 72),
-        build: (pw.Context context) {
-          return pw.Column(
-            crossAxisAlignment: pw.CrossAxisAlignment.start,
-            children: [
-              pw.Text(divider, style: bodyStyle),
-              pw.Center(
-                child: pw.Text(
-                  header,
-                  style: pw.TextStyle(
-                    font: font,
-                    fontBold: fontBold,
-                    fontWeight: pw.FontWeight.bold,
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-              pw.Text(divider, style: bodyStyle),
-              pw.SizedBox(height: 8),
-              pw.Table(
-                columnWidths: const {
-                  0: pw.FlexColumnWidth(1),
-                  1: pw.FixedColumnWidth(150),
-                },
-                children: [
-                  for (final key in _stageOrder)
-                    pw.TableRow(
-                      children: [
-                        pw.Padding(
-                          padding: const pw.EdgeInsets.symmetric(vertical: 1),
-                          child: pw.Text(
-                            stageNames[key] ?? key,
-                            style: bodyStyle,
-                          ),
-                        ),
-                        pw.Padding(
-                          padding: const pw.EdgeInsets.symmetric(vertical: 1),
-                          child: pw.Text(
-                            'T ${receiptTime(durations[key] ?? Duration.zero)}',
-                            textAlign: pw.TextAlign.right,
-                            style: bodyStyle,
-                          ),
-                        ),
-                      ],
-                    ),
-                ],
-              ),
-              pw.SizedBox(height: 4),
-              pw.Text(divider, style: bodyStyle),
-              pw.Table(
-                columnWidths: const {
-                  0: pw.FlexColumnWidth(1),
-                  1: pw.FixedColumnWidth(150),
-                },
-                children: [
-                  pw.TableRow(
-                    children: [
-                      pw.Text('TOTAL', style: boldStyle),
-                      pw.Text(
-                        'T ${receiptTime(durations['total'] ?? Duration.zero)}',
-                        textAlign: pw.TextAlign.right,
-                        style: boldStyle,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              pw.Text(divider, style: bodyStyle),
-              pw.SizedBox(height: 4),
-              if (_exportRef != null)
-                pw.Row(
-                  children: [
-                    pw.Text('TIP  ', style: bodyStyle),
-                    pw.Expanded(
-                      child: pw.Text(
-                        _exportRef!,
-                        style: pw.TextStyle(font: font, fontSize: 5),
-                        maxLines: 1,
-                      ),
-                    ),
-                  ],
-                ),
-              if (_exportRef == null)
-                pw.Row(
-                  children: [
-                    pw.Text('TIP', style: boldStyle),
-                    pw.Expanded(
-                      child: pw.Text('  _______________', style: bodyStyle),
-                    ),
-                  ],
-                ),
-              pw.SizedBox(height: 12),
-              pw.Center(
-                child: pw.Text('>> PRINT GUEST COPY <<', style: bodyStyle),
-              ),
-              pw.SizedBox(height: 8),
-              pw.Center(
-                child: pw.Text(
-                  'THANK YOU FOR DINING WITH US',
-                  style: pw.TextStyle(
-                    font: font,
-                    fontSize: 9,
-                    letterSpacing: 0.5,
-                  ),
-                ),
-              ),
-              pw.SizedBox(height: 8),
-              pw.Text(divider, style: bodyStyle),
-            ],
-          );
-        },
-      ),
-    );
-
     await Printing.sharePdf(
-      bytes: await doc.save(),
+      bytes: await Printing.convertFlutter(
+        format: PdfPageFormat.roll80,
+        builder: (context) => _buildReceiptWidget(),
+      ),
       filename: 'receipt.pdf',
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
+  Widget _buildReceiptWidget() {
     final receiptFont = GoogleFonts.courierPrime();
-    if (_isLoading) {
-      return Scaffold(
-        backgroundColor: Colors.white,
-        body: Center(
-          child: CircularProgressIndicator(
-            color: Colors.black,
-          ),
-        ),
-      );
-    }
-
     final stageNames = (_receiptData?['stage_names'] as Map?)
             ?.map((k, v) => MapEntry(k as String, v as String)) ??
         {};
@@ -341,6 +189,140 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
       fontWeight: FontWeight.bold,
     );
 
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        receiptDivider,
+        Text(
+          header,
+          textAlign: TextAlign.center,
+          style: receiptFont.copyWith(
+            color: Colors.black,
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.5,
+          ),
+        ),
+        receiptDivider,
+        const SizedBox(height: 8),
+        Table(
+          columnWidths: const {
+            0: FlexColumnWidth(1),
+            1: FixedColumnWidth(200),
+          },
+          children: [
+            for (final key in _stageOrder)
+              TableRow(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 2),
+                    child: Text(
+                      stageNames[key] ?? key,
+                      textAlign: TextAlign.left,
+                      style: bodyStyle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 2),
+                    child: _timeCell(
+                      receiptTime(durations[key] ?? Duration.zero),
+                      bodyStyle,
+                    ),
+                  ),
+                ],
+              ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        receiptDivider,
+        Table(
+          columnWidths: const {
+            0: FlexColumnWidth(1),
+            1: FixedColumnWidth(200),
+          },
+          children: [
+            TableRow(
+              children: [
+                Text('TOTAL', textAlign: TextAlign.left, style: boldStyle),
+                _timeCell(
+                  receiptTime(durations['total'] ?? Duration.zero),
+                  boldStyle,
+                ),
+              ],
+            ),
+          ],
+        ),
+        receiptDivider,
+        const SizedBox(height: 4),
+        if (_exportRef != null)
+          Row(
+            children: [
+              Text('TIP  ', style: bodyStyle),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 3.0),
+                  child: SelectableText(
+                    _exportRef!,
+                    style: receiptFont.copyWith(
+                      color: Colors.black87,
+                      fontSize: 2.0,
+                      letterSpacing: 0,
+                      height: 1.0,
+                    ),
+                    maxLines: 1,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        if (_exportRef == null)
+          Row(
+            children: [
+              Text('TIP', style: boldStyle),
+              Expanded(
+                child: Text('  _______________', style: bodyStyle),
+              ),
+            ],
+          ),
+        const SizedBox(height: 12),
+        GestureDetector(
+          onTap: _saveReceipt,
+          child: Text(
+            '>> PRINT GUEST COPY <<',
+            textAlign: TextAlign.center,
+            style: bodyStyle,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'THANK YOU FOR DINING WITH US',
+          textAlign: TextAlign.center,
+          style: receiptFont.copyWith(
+            color: Colors.black,
+            fontSize: 11,
+            letterSpacing: 0.5,
+          ),
+        ),
+        const SizedBox(height: 8),
+        receiptDivider,
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final receiptFont = GoogleFonts.courierPrime();
+    if (_isLoading) {
+      return Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: CircularProgressIndicator(
+            color: Colors.black,
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -351,121 +333,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               child: Center(
                 child: SizedBox(
                   width: 400,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      receiptDivider,
-                      Text(
-                        header,
-                        textAlign: TextAlign.center,
-                        style: receiptFont.copyWith(
-                          color: Colors.black,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.5,
-                        ),
-                      ),
-                      receiptDivider,
-                      const SizedBox(height: 8),
-                      Table(
-                        columnWidths: const {
-                          0: FlexColumnWidth(1),
-                          1: FixedColumnWidth(200),
-                        },
-                        children: [
-                          for (final key in _stageOrder)
-                            TableRow(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 2),
-                                  child: Text(
-                                    stageNames[key] ?? key,
-                                    textAlign: TextAlign.left,
-                                    style: bodyStyle,
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 2),
-                                  child: _timeCell(
-                                    receiptTime(durations[key] ?? Duration.zero),
-                                    bodyStyle,
-                                  ),
-                                ),
-                              ],
-                            ),
-                        ],
-                      ),
-                      const SizedBox(height: 4),
-                      receiptDivider,
-                      Table(
-                        columnWidths: const {
-                          0: FlexColumnWidth(1),
-                          1: FixedColumnWidth(200),
-                        },
-                        children: [
-                          TableRow(
-                            children: [
-                              Text('TOTAL', textAlign: TextAlign.left, style: boldStyle),
-                              _timeCell(
-                                receiptTime(durations['total'] ?? Duration.zero),
-                                boldStyle,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      receiptDivider,
-                      const SizedBox(height: 4),
-                      if (_exportRef != null)
-                        Row(
-                          children: [
-                            Text('TIP  ', style: bodyStyle),
-                            Expanded(
-                              child: SelectableText(
-                                _exportRef!,
-                                style: receiptFont.copyWith(
-                                  color: Colors.black87,
-                                  fontSize: 5.0,
-                                  letterSpacing: 0,
-                                  height: 1.0,
-                                ),
-                                maxLines: 1,
-                              ),
-                            ),
-                          ],
-                        ),
-                      if (_exportRef == null)
-                        Row(
-                          children: [
-                            Text('TIP', style: boldStyle),
-                            Expanded(
-                              child: Text('  _______________', style: bodyStyle),
-                            ),
-                          ],
-                        ),
-                      const SizedBox(height: 12),
-                      GestureDetector(
-                        onTap: _saveReceipt,
-                        child: Text(
-                          '>> PRINT GUEST COPY <<',
-                          textAlign: TextAlign.center,
-                          style: bodyStyle,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'THANK YOU FOR DINING WITH US',
-                        textAlign: TextAlign.center,
-                        style: receiptFont.copyWith(
-                          color: Colors.black,
-                          fontSize: 11,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      receiptDivider,
-                    ],
-                  ),
+                  child: _buildReceiptWidget(),
                 ),
               ),
             ),
