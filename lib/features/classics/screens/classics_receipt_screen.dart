@@ -99,8 +99,8 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final durations = _stageDurations ?? {};
     final tipUrl = _tipUrl ?? '';
 
-    final border = '=' * 33;
-    final divider = '-' * 33;
+    final border = '=' * 42;
+    final divider = '-' * 42;
 
     doc.addPage(
       pw.Page(
@@ -171,9 +171,73 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                 ],
               ),
               pw.Text(divider),
-              pw.SizedBox(height: 8),
-              if (tipUrl.isNotEmpty) pw.Text(tipUrl, style: pw.TextStyle(font: pw.Font.courier(), fontSize: 10)),
               pw.SizedBox(height: 4),
+              if (_exportRef != null)
+                pw.Row(
+                  children: [
+                    pw.Text(
+                      'TIP  ',
+                      style: pw.TextStyle(
+                        font: pw.Font.courier(),
+                        fontSize: 11,
+                      ),
+                    ),
+                    pw.Expanded(
+                      child: pw.Text(
+                        _exportRef!,
+                        style: pw.TextStyle(
+                          font: pw.Font.courier(),
+                          fontSize: 2.5,
+                        ),
+                        maxLines: 1,
+                      ),
+                    ),
+                  ],
+                ),
+              pw.Row(
+                children: [
+                  pw.Text(
+                    'TIP',
+                    style: pw.TextStyle(
+                      font: pw.Font.courier(),
+                      fontBold: pw.Font.courierBold(),
+                      fontWeight: pw.FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
+                  pw.Expanded(
+                    child: pw.Text(
+                      '  _______________',
+                      style: pw.TextStyle(
+                        font: pw.Font.courier(),
+                        fontSize: 11,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              pw.SizedBox(height: 12),
+              pw.Center(
+                child: pw.Text(
+                  '>> GUEST COPY <<',
+                  style: pw.TextStyle(
+                    font: pw.Font.courier(),
+                    fontSize: 11,
+                  ),
+                ),
+              ),
+              pw.SizedBox(height: 8),
+              pw.Center(
+                child: pw.Text(
+                  'THANK YOU FOR DINING WITH US',
+                  style: pw.TextStyle(
+                    font: pw.Font.courier(),
+                    fontSize: 9,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ),
+              pw.SizedBox(height: 8),
               pw.Text(border),
             ],
           );
@@ -207,19 +271,19 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final header = (_receiptData?['header'] as String?) ?? 'LE GRAND MEMOIX';
     final durations = _stageDurations ?? {};
 
-    final border = '═' * 33;
-    final divider = '─' * 33;
+    final border = '═' * 42;
+    final divider = '─' * 42;
 
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
-            Center(
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 400),
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
+            SingleChildScrollView(
+              padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
+              child: Center(
+                child: SizedBox(
+                  width: 400,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
@@ -320,7 +384,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                                 _exportRef!,
                                 style: receiptFont.copyWith(
                                   color: Colors.black87,
-                                  fontSize: 1.8,
+                                  fontSize: 2.5,
                                   letterSpacing: 0,
                                   height: 1.0,
                                 ),
@@ -332,7 +396,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       Row(
                         children: [
                           Text(
-                            'TOTAL',
+                            'TIP',
                             style: receiptFont.copyWith(
                               color: Colors.black,
                               fontSize: 13,
