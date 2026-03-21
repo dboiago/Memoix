@@ -207,8 +207,8 @@ class RecipeRepository {
         'activity.recipe_favourite',
         {
           'recipe_id': existing.uuid,
-          'content_validated': existing.ingredients.isNotEmpty,
-          'structure_verified': existing.directions.isNotEmpty,
+          'ref_count': existing.ingredients.length,
+          'node_count': existing.directions.length,
         },
       );
       final blocking =
