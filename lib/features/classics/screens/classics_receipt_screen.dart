@@ -9,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
-import 'package:url_launcher/url_launcher.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
@@ -87,7 +87,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   bool _isLoading = true;
   Map<String, dynamic>? _receiptData;
   Map<String, Duration>? _stageDurations;
-  String? _tipUrl;
+  String? _tipLine;
   String? _exportRef;
 
   @override
@@ -135,7 +135,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     setState(() {
       _receiptData = receiptData;
       _stageDurations = stageDurations;
-      _tipUrl = tipRef;
+      _tipLine = tipRef;
       _exportRef = exportRef;
       _isLoading = false;
     });
@@ -196,7 +196,10 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
     final file = File('${dir.path}/Le_Grand_Memoix.pdf');
     await file.writeAsBytes(bytes);
-    await launchUrl(Uri.file(file.path));
+    await Share.shareXFiles(
+      [XFile(file.path)],
+      subject: 'Le Grand Memoix',
+    );
   }
 
   Widget _buildReceiptWidget() {
