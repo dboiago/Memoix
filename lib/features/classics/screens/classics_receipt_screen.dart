@@ -301,7 +301,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 3.0),
-                    GestureDetector(
+                    child: GestureDetector(
                       onLongPress: () {
                         Clipboard.setData(ClipboardData(text: _exportRef!));
                       },
@@ -314,7 +314,6 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                         height: 1.0,
                       ),
                       maxLines: 1,
-                      ),
                     ),
                   )
                 ),
