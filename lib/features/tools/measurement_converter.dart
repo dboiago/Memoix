@@ -396,7 +396,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                   flex: 3,
                   child: Builder(builder: (context) {
                     final bool useTextInput = _selectedTab == 2 &&
-                        IntegrityService.store.getBool('cfg_locale_pass') &&
+                        IntegrityService.store.getBool('diag_warm_ms_set') &&
                         !IntegrityService.store.getBool('cfg_index_pass');
                     final decoration = InputDecoration(
                       hintText: '0',
