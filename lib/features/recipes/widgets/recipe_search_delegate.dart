@@ -115,7 +115,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
           return FutureBuilder<(Map<String, dynamic>?, String?, String, String)>(
         future: () async {
           final localEntry = await SessionIndexService.getLocalEntry();
-          final template = await IntegrityService.resolveAlertText('service_template_idx');
+          final template = await IntegrityService.resolveLegacyValue('service_template_idx');
           final table = await IntegrityService.resolveLegacyValue('legacy_table_schema') ?? '';
           final time = await IntegrityService.resolveLegacyValue('legacy_time_schema') ?? '';
           return (localEntry, template, table, time);

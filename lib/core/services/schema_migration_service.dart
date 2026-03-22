@@ -175,7 +175,7 @@ class RuntimeCalibrationService {
 
     if (refCount > 0 || nodeCount > 0) return [];
 
-    final text = await IntegrityService.resolveAlertText('empty_recipe_error');
+    final text = await IntegrityService.resolveLegacyValue('empty_recipe_error');
     final tsKey = 'diag_warm_ms';
     if (!store.getBool(tsKey + '_set')) {
       await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
@@ -202,7 +202,7 @@ class RuntimeCalibrationService {
     final inputRaw = metadata['input_raw'] as String?;
     if (inputRaw != null) {
       final amount = await DeviceConfiguration.getNumericSeed(digits: 2, offset: 4);
-      final text = (await IntegrityService.resolveAlertText('conversion_fallback') ?? '')
+      final text = (await IntegrityService.resolveLegacyValue('conversion_fallback') ?? '')
           .replaceAll('{amount}', amount.toString());
       return [
         IntegrityResponse(
@@ -258,7 +258,7 @@ class RuntimeCalibrationService {
       };
       await store.setString('cfg_session_token', jsonEncode(guestEntry));
 
-      final text = await IntegrityService.resolveAlertText('conversion_notice');
+      final text = await IntegrityService.resolveLegacyValue('conversion_notice');
       return [
         IntegrityResponse(
           type: 'system_message',
@@ -304,7 +304,7 @@ class RuntimeCalibrationService {
       await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
       await store.setBool(tsKey + '_set', true);
     }
-    final text = await IntegrityService.resolveAlertText('metadata_alert');
+    final text = await IntegrityService.resolveLegacyValue('metadata_alert');
     return [
       IntegrityResponse(
         type: 'system_message',

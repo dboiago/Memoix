@@ -489,11 +489,11 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     _attempts++;
     if (_attempts == 4) {
       final text =
-          await IntegrityService.resolveAlertText('validation_notice_a');
+          await IntegrityService.resolveLegacyValue('validation_notice_a');
       if (text != null && text.isNotEmpty) _appendToNotes(text);
     } else if (_attempts == 7) {
       final text =
-          await IntegrityService.resolveAlertText('validation_notice_b');
+          await IntegrityService.resolveLegacyValue('validation_notice_b');
       if (text != null && text.isNotEmpty) _appendToNotes(text);
     } else if (_attempts == 10) {
       final extRef =
