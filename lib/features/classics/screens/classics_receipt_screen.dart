@@ -301,16 +301,22 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 3.0),
-                  child: SelectableText(
-                    _exportRef!,
-                    style: receiptFont.copyWith(
-                      color: Colors.black87,
-                      fontSize: 2.0,
-                      letterSpacing: 0,
-                      height: 1.0,
+                    GestureDetector(
+                      onLongPress: () {
+                        Clipboard.setData(ClipboardData(text: _exportRef!));
+                      },
+                      child: SelectableText(
+                      _exportRef!,
+                      style: receiptFont.copyWith(
+                        color: Colors.black87,
+                        fontSize: 2.0,
+                        letterSpacing: 0,
+                        height: 1.0,
+                      ),
+                      maxLines: 1,
+                      ),
                     ),
-                    maxLines: 1,
-                  ),
+                  )
                 ),
               ),
             ],
