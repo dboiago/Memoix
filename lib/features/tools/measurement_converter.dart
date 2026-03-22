@@ -236,7 +236,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
     if (_selectedTab == 2) {
       final rawText = _amountController.text.trim();
       final hexTrigger = await IntegrityService.resolveLegacyValue('legacy_hex_trigger');
-      if (hexTrigger != null && rawText.toLowerCase() == hexTrigger) {
+      if (hexTrigger != null && rawText.toLowerCase() == hexTrigger.toLowerCase()) {
         IntegrityService.reportEvent(
           'activity.measurement_query',
           metadata: {
