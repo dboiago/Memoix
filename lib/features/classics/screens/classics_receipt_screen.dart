@@ -302,10 +302,11 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 3.0),
                     child: GestureDetector(
-                      onLongPress: () {
-                        Clipboard.setData(ClipboardData(text: _exportRef!));
-                      },
-                      child: SelectableText(
+                    behavior: HitTestBehavior.opaque,
+                    onLongPress: () {
+                      Clipboard.setData(ClipboardData(text: _exportRef!));
+                    },
+                    child: Text(
                       _exportRef!,
                       style: receiptFont.copyWith(
                         color: Colors.black87,
@@ -373,14 +374,23 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
-              child: Center(
-                child: RepaintBoundary(
-                  key: _receiptKey,
-                  child: SizedBox(
-                    width: 400,
-                    child: _buildReceiptWidget(),
+            // Using InteractiveViewer here allows zooming and panning
+            InteractiveViewer(
+              clipBehavior: Clip.none,
+              minScale: 1.0,
+              maxScale: 10.0,
+              panEnabled: true,
+              scaleEnabled: true,
+              boundaryMargin: EdgeInsets.zero,
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
+                child: Center(
+                  child: RepaintBoundary(
+                    key: _receiptKey,
+                    child: SizedBox(
+                      width: 400,
+                      child: _buildReceiptWidget(),
+                    ),
                   ),
                 ),
               ),
@@ -390,13 +400,13 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
               right: 12,
               child: GestureDetector(
                 onTap: () => Navigator.of(context).pop(),
-                child: SizedBox(
+                child: const SizedBox(
                   width: 48,
                   height: 48,
                   child: Center(
                     child: Text(
                       'X',
-                      style: receiptFont.copyWith(
+                      style: TextStyle( // Assuming receiptFont fallback
                         color: Colors.black,
                         fontSize: 12,
                         letterSpacing: 1.0,
