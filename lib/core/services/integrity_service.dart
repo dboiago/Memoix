@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:encrypt/encrypt.dart' as enc;
 
 import '../../app/app.dart';
 import '../widgets/memoix_snackbar.dart';
@@ -376,15 +377,28 @@ final executedAdjustmentsProvider =
 
 class _ContentResolver {
   static Map<String, dynamic>? _content;
-  
+
+  // Split-string key/IV constants — replace TODO values before release.
+  // Key: 32 UTF-8 characters (256 bits). IV: 16 UTF-8 characters (128 bits).
+  static const _kA = 'AAAAAAAAAAAAAAAA'; // TODO: FILL IN (key bytes 0–15)
+  static const _kB = 'AAAAAAAAAAAAAAAA'; // TODO: FILL IN (key bytes 16–31)
+  static const _ivA = 'AAAAAAAA'; // TODO: FILL IN (IV bytes 0–7)
+  static const _ivB = 'AAAAAAAA'; // TODO: FILL IN (IV bytes 8–15)
+
   static Future<void> _ensureLoaded() async {
     if (_content != null) return;
-    
+
     try {
-      // TODO: This will load encrypted content
-      // For now, load from a JSON file
-      final data = await rootBundle.loadString('assets/integrity_content.json');
-      _content = jsonDecode(data);
+      final byteData = await rootBundle.load('assets/integrity_content.bin');
+      final encrypted = byteData.buffer.asUint8List();
+
+      final key = enc.Key.fromUtf8(_kA + _kB);
+      final iv = enc.IV.fromUtf8(_ivA + _ivB);
+      final encrypter = enc.Encrypter(enc.AES(key, mode: enc.AESMode.cbc));
+      final decrypted = encrypter.decryptBytes(enc.Encrypted(encrypted), iv: iv);
+
+      final jsonString = utf8.decode(decrypted);
+      _content = jsonDecode(jsonString) as Map<String, dynamic>;
     } catch (e) {
       _content = {};
     }
