@@ -93,7 +93,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  
+
   assets:
     - .env
     - assets/
@@ -102,3 +102,16 @@ flutter:
     - assets/images/
     - assets/ingredients/
     - assets/audio/
+
+flutter_launcher_icons:
+  android: true 
+  ios: true
+  image_path: "assets/icon/memoix-appicon-orange-1024.png"
+  
+  windows:
+    generate: true
+    image_path: "assets/icon/memoix-appicon-orange-1024.png"
+    icon_size: 48
+
+  adaptive_icon_background: "#242424"
+  adaptive_icon_foreground: "assets/icon/memoix-appicon-orange-transparent-1200.png"
