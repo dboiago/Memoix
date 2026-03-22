@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: visioncortex VTracer 0.6.12 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <metadata>
+                <![CDATA[
+            {
+  "prompt": {
+    "4": {
+      "inputs": {
+        "vae_name": "ae.safetensors"
+      },
+      "class_type": "VAELoader",
+      "_meta": {
+        "title": "Load VAE"
+      }
+    },
+    "5": {
+      "inputs": {
+        "clip_name": "qwen3_4b_fp8_scaled.safetensors",
+        "type": "lumina2",
+        "device": "default"
+      },
+      "class_type": "CLIPLoader",
+      "_meta": {
+        "title": "Load CLIP"
+      }
+    },
+    "6": {
+      "inputs": {
+        "ckpt_name": "zEpicrealism_turboV1Fp8.safetensors"
+      },
+      "class_type": "CheckpointLoaderSimple",
+      "_meta": {
+        "title": "Load Checkpoint"
+      }
+    },
+    "7": {
+      "inputs": {
+        "shift": 6.0,
+        "model": [
+          "6",
+          0
+        ]
+      },
+      "class_type": "ModelSamplingAuraFlow",
+      "_meta": {
+        "title": "ModelSamplingAuraFlow"
+      }
+    },
+    "8": {
+      "inputs": {
+        "PowerLoraLoaderHeaderWidget": {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        "lora_1": {
+          "on": true,
+          "lora": "MinimalistVectorArtZ.safetensors",
+          "strength": 0.4
+        },
+        "lora_2": {
+          "on": false,
+          "lora": "None",
+          "strength": 0.75
+        },
+        "\u2795 Add Lora": "",
+        "model": [
+          "7",
+          0
+        ],
+        "clip": [
+          "5",
+          0
+        ]
+      },
+      "class_type": "Power Lora Loader (rgthree)",
+      "_meta": {
+        "title": "Power Lora Loader (rgthree)"
+      }
+    },
+    "9": {
+      "inputs": {
+        "text": "A bold, heavy solid black icon of a singular, massive, squat wooden aging cask (barrel). Side profile 3/4 view. Highly simplified linocut print aesthetic. The entire bulging cylinder and the flat circular ends are a single, dense contiguous dark mass. Thick, bold white negative space is used only to create two massive, horizontal \"banding\" lines encircling the barrel to represent iron hoops. These bands are chunky and provide a heavy, high-contrast anchor. A single, thick white \"circle\" void is placed on the top-center of the barrel's side to represent a wooden bung (plug). Minimalist, heavy visual weight, no gray. Isolated on white. Optimized for a clean, single-boolean SVG silhouette.",
+        "clip": [
+          "8",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "Positive Prompt"
+      }
+    },
+    "10": {
+      "inputs": {
+        "text": "blurry, bad, shadow, color, grey, text, watermark, logo,",
+        "clip": [
+          "8",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "Negative Prompt"
+      }
+    },
+    "11": {
+      "inputs": {
+        "seed": 840053582098240,
+        "steps": 9,
+        "cfg": 0.9,
+        "sampler_name": "euler",
+        "scheduler": "beta",
+        "denoise": 1.0,
+        "preview_method": "auto",
+        "vae_decode": "true",
+        "model": [
+          "8",
+          0
+        ],
+        "positive": [
+          "9",
+          0
+        ],
+        "negative": [
+          "10",
+          0
+        ],
+        "latent_image": [
+          "27",
+          0
+        ],
+        "optional_vae": [
+          "4",
+          0
+        ]
+      },
+      "class_type": "KSampler (Efficient)",
+      "_meta": {
+        "title": "KSampler (Efficient)"
+      }
+    },
+    "13": {
+      "inputs": {
+        "filename_prefix": [
+          "35",
+          0
+        ],
+        "images": [
+          "11",
+          5
+        ]
+      },
+      "class_type": "SaveImage",
+      "_meta": {
+        "title": "Save Image"
+      }
+    },
+    "27": {
+      "inputs": {
+        "dimensions": "512 x 512 (1:1)",
+        "invert": false,
+        "batch_size": 1
+      },
+      "class_type": "EmptyLatentImagePresets",
+      "_meta": {
+        "title": "Empty Latent Image Presets"
+      }
+    },
+    "32": {
+      "inputs": {
+        "filename_prefix": [
+          "35",
+          0
+        ],
+        "svg": [
+          "34",
+          0
+        ]
+      },
+      "class_type": "SaveSVGNode",
+      "_meta": {
+        "title": "SaveSVGNode"
+      }
+    },
+    "33": {
+      "inputs": {
+        "mode": "spline",
+        "filter_speckle": 4,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "splice_threshold": 45,
+        "image": [
+          "11",
+          5
+        ]
+      },
+      "class_type": "TS_ImageToSVGStringBW_Vtracer",
+      "_meta": {
+        "title": "Image to SVG String BW_Vtracer"
+      }
+    },
+    "34": {
+      "inputs": {
+        "SVG_String": [
+          "33",
+          0
+        ]
+      },
+      "class_type": "TS_SVGStringToSVGBytesIO",
+      "_meta": {
+        "title": "SVG String to SVG BytesIO"
+      }
+    },
+    "35": {
+      "inputs": {
+        "value": "Icons/cellar-"
+      },
+      "class_type": "PrimitiveString",
+      "_meta": {
+        "title": "String"
+      }
+    }
+  },
+  "workflow": {
+    "id": "b863a6d5-b1c1-49ed-82de-40ff658289d1",
+    "revision": 0,
+    "last_node_id": 38,
+    "last_link_id": 50,
+    "nodes": [
+      {
+        "id": 4,
+        "type": "VAELoader",
+        "pos": [
+          -6219.529416223988,
+          -970.9071955967029
+        ],
+        "size": [
+          373.8333435058594,
+          123.80000305175781
+        ],
+        "flags": {},
+        "order": 0,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "VAE",
+            "type": "VAE",
+            "links": [
+              13,
+              48
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.9.2",
+          "Node name for S&R": "VAELoader"
+        },
+        "widgets_values": [
+          "ae.safetensors"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "CLIPLoader",
+        "pos": [
+          -6634.625060962726,
+          -1114.719863560585
+        ],
+        "size": [
+          366.1666564941406,
+          542.9833374023438
+        ],
+        "flags": {},
+        "order": 1,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "CLIP",
+            "type": "CLIP",
+            "links": [
+              6
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.9.2",
+          "Node name for S&R": "CLIPLoader"
+        },
+        "widgets_values": [
+          "qwen3_4b_fp8_scaled.safetensors",
+          "lumina2",
+          "default"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "CheckpointLoaderSimple",
+        "pos": [
+          -7142.718609403837,
+          -1274.2970319785854
+        ],
+        "size": [
+          456,
+          154.6666717529297
+        ],
+        "flags": {},
+        "order": 2,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "links": [
+              4
+            ]
+          },
+          {
+            "name": "CLIP",
+            "type": "CLIP",
+            "links": []
+          },
+          {
+            "name": "VAE",
+            "type": "VAE",
+            "links": []
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.9.2",
+          "Node name for S&R": "CheckpointLoaderSimple"
+        },
+        "widgets_values": [
+          "zEpicrealism_turboV1Fp8.safetensors"
+        ],
+        "color": "#453f4f",
+        "bgcolor": "#312b3b"
+      },
+      {
+        "id": 7,
+        "type": "ModelSamplingAuraFlow",
+        "pos": [
+          -6599.990108813057,
+          -1269.9450961666446
+        ],
+        "size": [
+          270,
+          104
+        ],
+        "flags": {},
+        "order": 7,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "model",
+            "type": "MODEL",
+            "link": 4
+          }
+        ],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "links": [
+              5
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.10.0",
+          "Node name for S&R": "ModelSamplingAuraFlow"
+        },
+        "widgets_values": [
+          6
+        ]
+      },
+      {
+        "id": 8,
+        "type": "Power Lora Loader (rgthree)",
+        "pos": [
+          -6200.008875558856,
+          -1269.9450961666446
+        ],
+        "size": [
+          340.48333740234375,
+          232
+        ],
+        "flags": {},
+        "order": 8,
+        "mode": 0,
+        "inputs": [
+          {
+            "dir": 3,
+            "name": "model",
+            "type": "MODEL",
+            "link": 5
+          },
+          {
+            "dir": 3,
+            "name": "clip",
+            "type": "CLIP",
+            "link": 6
+          }
+        ],
+        "outputs": [
+          {
+            "dir": 4,
+            "name": "MODEL",
+            "shape": 3,
+            "type": "MODEL",
+            "links": [
+              47
+            ]
+          },
+          {
+            "dir": 4,
+            "name": "CLIP",
+            "shape": 3,
+            "type": "CLIP",
+            "links": [
+              7,
+              8
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "rgthree-comfy",
+          "ver": "8ff50e4521881eca1fe26aec9615fc9362474931",
+          "Show Strengths": "Single Strength"
+        },
+        "widgets_values": [
+          {},
+          {
+            "type": "PowerLoraLoaderHeaderWidget"
+          },
+          {
+            "on": true,
+            "lora": "MinimalistVectorArtZ.safetensors",
+            "strength": 0.4,
+            "strengthTwo": null
+          },
+          {
+            "on": false,
+            "lora": "None",
+            "strength": 0.75,
+            "strengthTwo": null
+          },
+          {},
+          ""
+        ]
+      },
+      {
+        "id": 9,
+        "type": "CLIPTextEncode",
+        "pos": [
+          -5665.298067285652,
+          -968.8847480145092
+        ],
+        "size": [
+          495.1833190917969,
+          389.6333312988281
+        ],
+        "flags": {},
+        "order": 10,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 7
+          }
+        ],
+        "outputs": [
+          {
+            "name": "CONDITIONING",
+            "type": "CONDITIONING",
+            "links": [
+              9
+            ]
+          }
+        ],
+        "title": "Positive Prompt",
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.9.2",
+          "Node name for S&R": "CLIPTextEncode"
+        },
+        "widgets_values": [
+          "A bold, heavy solid black icon of a singular, massive, squat wooden aging cask (barrel). Side profile 3/4 view. Highly simplified linocut print aesthetic. The entire bulging cylinder and the flat circular ends are a single, dense contiguous dark mass. Thick, bold white negative space is used only to create two massive, horizontal \"banding\" lines encircling the barrel to represent iron hoops. These bands are chunky and provide a heavy, high-contrast anchor. A single, thick white \"circle\" void is placed on the top-center of the barrel's side to represent a wooden bung (plug). Minimalist, heavy visual weight, no gray. Isolated on white. Optimized for a clean, single-boolean SVG silhouette."
+        ],
+        "color": "#232",
+        "bgcolor": "#353"
+      },
+      {
+        "id": 10,
+        "type": "CLIPTextEncode",
+        "pos": [
+          -5666.5260314864745,
+          -512.2921596736592
+        ],
+        "size": [
+          470,
+          142
+        ],
+        "flags": {},
+        "order": 11,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 8
+          }
+        ],
+        "outputs": [
+          {
+            "name": "CONDITIONING",
+            "type": "CONDITIONING",
+            "links": [
+              10
+            ]
+          }
+        ],
+        "title": "Negative Prompt",
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.9.2",
+          "Node name for S&R": "CLIPTextEncode"
+        },
+        "widgets_values": [
+          "blurry, bad, shadow, color, grey, text, watermark, logo,"
+        ],
+        "color": "#322",
+        "bgcolor": "#533"
+      },
+      {
+        "id": 11,
+        "type": "KSampler (Efficient)",
+        "pos": [
+          -4910.913678672515,
+          -1342.5015025857194
+        ],
+        "size": [
+          400.1000061035156,
+          966.6666870117188
+        ],
+        "flags": {},
+        "order": 12,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "model",
+            "type": "MODEL",
+            "link": 46
+          },
+          {
+            "name": "positive",
+            "type": "CONDITIONING",
+            "link": 9
+          },
+          {
+            "name": "negative",
+            "type": "CONDITIONING",
+            "link": 10
+          },
+          {
+            "name": "latent_image",
+            "type": "LATENT",
+            "link": 37
+          },
+          {
+            "name": "optional_vae",
+            "shape": 7,
+            "type": "VAE",
+            "link": 13
+          },
+          {
+            "name": "script",
+            "shape": 7,
+            "type": "SCRIPT",
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "links": null
+          },
+          {
+            "name": "CONDITIONING+",
+            "type": "CONDITIONING",
+            "links": null
+          },
+          {
+            "name": "CONDITIONING-",
+            "type": "CONDITIONING",
+            "links": null
+          },
+          {
+            "name": "LATENT",
+            "type": "LATENT",
+            "links": null
+          },
+          {
+            "name": "VAE",
+            "type": "VAE",
+            "links": null
+          },
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "links": [
+              14,
+              39
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "efficiency-nodes-comfyui",
+          "ver": "1.0.8",
+          "Node name for S&R": "KSampler (Efficient)"
+        },
+        "widgets_values": [
+          -1,
+          null,
+          9,
+          0.9,
+          "euler",
+          "beta",
+          1,
+          "auto",
+          "true"
+        ],
+        "color": "#223333",
+        "bgcolor": "#335555",
+        "shape": "box"
+      },
+      {
+        "id": 13,
+        "type": "SaveImage",
+        "pos": [
+          -4410.458584695532,
+          -1352.0179936878044
+        ],
+        "size": [
+          461.7833251953125,
+          344
+        ],
+        "flags": {},
+        "order": 13,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "images",
+            "type": "IMAGE",
+            "link": 14
+          },
+          {
+            "name": "filename_prefix",
+            "type": "STRING",
+            "widget": {
+              "name": "filename_prefix"
+            },
+            "link": 43
+          }
+        ],
+        "outputs": [],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.17.2"
+        },
+        "widgets_values": [
+          "Icons/apps-"
+        ]
+      },
+      {
+        "id": 27,
+        "type": "EmptyLatentImagePresets",
+        "pos": [
+          -5667.013573414988,
+          -1285.095614520352
+        ],
+        "size": [
+          285.0833435058594,
+          214.6666717529297
+        ],
+        "flags": {},
+        "order": 3,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "Latent",
+            "type": "LATENT",
+            "links": [
+              37
+            ]
+          },
+          {
+            "name": "Width",
+            "type": "INT",
+            "links": null
+          },
+          {
+            "name": "Height",
+            "type": "INT",
+            "links": null
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfyui-kjnodes",
+          "ver": "c88ac88a8f8a6a090a0d5d607156090cb2911503",
+          "Node name for S&R": "EmptyLatentImagePresets"
+        },
+        "widgets_values": [
+          "512 x 512 (1:1)",
+          false,
+          1
+        ]
+      },
+      {
+        "id": 32,
+        "type": "SaveSVGNode",
+        "pos": [
+          -3813.087098958786,
+          -782.3652587471762
+        ],
+        "size": [
+          270,
+          344
+        ],
+        "flags": {},
+        "order": 16,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "svg",
+            "type": "SVG",
+            "link": 42
+          },
+          {
+            "name": "filename_prefix",
+            "type": "STRING",
+            "widget": {
+              "name": "filename_prefix"
+            },
+            "link": 44
+          }
+        ],
+        "outputs": [],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.17.2",
+          "Node name for S&R": "SaveSVGNode"
+        },
+        "widgets_values": [
+          "Icons/apps-"
+        ]
+      },
+      {
+        "id": 33,
+        "type": "TS_ImageToSVGStringBW_Vtracer",
+        "pos": [
+          -4400.364267959555,
+          -795.4572061170688
+        ],
+        "size": [
+          314.01666259765625,
+          234.66665649414062
+        ],
+        "flags": {},
+        "order": 14,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "image",
+            "type": "IMAGE",
+            "link": 39
+          }
+        ],
+        "outputs": [
+          {
+            "name": "STRING",
+            "shape": 6,
+            "type": "STRING",
+            "links": [
+              41
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfyui-tosvg",
+          "ver": "1.0.1",
+          "Node name for S&R": "TS_ImageToSVGStringBW_Vtracer"
+        },
+        "widgets_values": [
+          "spline",
+          4,
+          60,
+          4,
+          45
+        ]
+      },
+      {
+        "id": 34,
+        "type": "TS_SVGStringToSVGBytesIO",
+        "pos": [
+          -4063.4410199893787,
+          -778.4467045599912
+        ],
+        "size": [
+          225,
+          72
+        ],
+        "flags": {},
+        "order": 15,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "SVG_String",
+            "type": "STRING",
+            "link": 41
+          }
+        ],
+        "outputs": [
+          {
+            "name": "SVG",
+            "type": "SVG",
+            "links": [
+              42
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfyui-tosvg",
+          "ver": "1.0.1",
+          "Node name for S&R": "TS_SVGStringToSVGBytesIO"
+        },
+        "widgets_values": []
+      },
+      {
+        "id": 35,
+        "type": "PrimitiveString",
+        "pos": [
+          -4406.648318050964,
+          -1528.2986560802276
+        ],
+        "size": [
+          270,
+          108
+        ],
+        "flags": {},
+        "order": 4,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "STRING",
+            "type": "STRING",
+            "links": [
+              43,
+              44
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.17.2",
+          "Node name for S&R": "PrimitiveString"
+        },
+        "widgets_values": [
+          "Icons/cellar-"
+        ]
+      },
+      {
+        "id": 36,
+        "type": "ModelPatchLoader",
+        "pos": [
+          -7059.345533943512,
+          -330.0523924799236
+        ],
+        "size": [
+          427.6000061035156,
+          106.66667175292969
+        ],
+        "flags": {},
+        "order": 5,
+        "mode": 4,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "MODEL_PATCH",
+            "type": "MODEL_PATCH",
+            "links": [
+              45
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.16.3",
+          "Node name for S&R": "ModelPatchLoader"
+        },
+        "widgets_values": [
+          "Z-Image-Turbo-Fun-Controlnet-Union-2.1.safetensors"
+        ]
+      },
+      {
+        "id": 37,
+        "type": "ZImageFunControlnet",
+        "pos": [
+          -6611.258196381201,
+          -335.79477340395954
+        ],
+        "size": [
+          361.6000061035156,
+          224
+        ],
+        "flags": {},
+        "order": 9,
+        "mode": 4,
+        "inputs": [
+          {
+            "name": "model",
+            "type": "MODEL",
+            "link": 47
+          },
+          {
+            "name": "model_patch",
+            "type": "MODEL_PATCH",
+            "link": 45
+          },
+          {
+            "name": "vae",
+            "type": "VAE",
+            "link": 48
+          },
+          {
+            "name": "image",
+            "shape": 7,
+            "type": "IMAGE",
+            "link": 50
+          },
+          {
+            "name": "inpaint_image",
+            "shape": 7,
+            "type": "IMAGE",
+            "link": null
+          },
+          {
+            "name": "mask",
+            "shape": 7,
+            "type": "MASK",
+            "link": null
+          }
+        ],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "links": [
+              46
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.16.3",
+          "Node name for S&R": "ZImageFunControlnet"
+        },
+        "widgets_values": [
+          0.15
+        ]
+      },
+      {
+        "id": 38,
+        "type": "LoadImage",
+        "pos": [
+          -6229.443165549208,
+          -560.5968682946624
+        ],
+        "size": [
+          458.8333435058594,
+          788.2999877929688
+        ],
+        "flags": {},
+        "order": 6,
+        "mode": 4,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "links": [
+              50
+            ]
+          },
+          {
+            "name": "MASK",
+            "type": "MASK",
+            "links": null
+          }
+        ],
+        "title": "Reference",
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.9.2",
+          "Node name for S&R": "LoadImage"
+        },
+        "widgets_values": [
+          "background-removed (1).png",
+          "image"
+        ],
+        "color": "#322",
+        "bgcolor": "#533"
+      }
+    ],
+    "links": [
+      [
+        4,
+        6,
+        0,
+        7,
+        0,
+        "MODEL"
+      ],
+      [
+        5,
+        7,
+        0,
+        8,
+        0,
+        "MODEL"
+      ],
+      [
+        6,
+        5,
+        0,
+        8,
+        1,
+        "CLIP"
+      ],
+      [
+        7,
+        8,
+        1,
+        9,
+        0,
+        "CLIP"
+      ],
+      [
+        8,
+        8,
+        1,
+        10,
+        0,
+        "CLIP"
+      ],
+      [
+        9,
+        9,
+        0,
+        11,
+        1,
+        "CONDITIONING"
+      ],
+      [
+        10,
+        10,
+        0,
+        11,
+        2,
+        "CONDITIONING"
+      ],
+      [
+        13,
+        4,
+        0,
+        11,
+        4,
+        "VAE"
+      ],
+      [
+        14,
+        11,
+        5,
+        13,
+        0,
+        "IMAGE"
+      ],
+      [
+        37,
+        27,
+        0,
+        11,
+        3,
+        "LATENT"
+      ],
+      [
+        39,
+        11,
+        5,
+        33,
+        0,
+        "IMAGE"
+      ],
+      [
+        41,
+        33,
+        0,
+        34,
+        0,
+        "STRING"
+      ],
+      [
+        42,
+        34,
+        0,
+        32,
+        0,
+        "SVG"
+      ],
+      [
+        43,
+        35,
+        0,
+        13,
+        1,
+        "STRING"
+      ],
+      [
+        44,
+        35,
+        0,
+        32,
+        1,
+        "STRING"
+      ],
+      [
+        45,
+        36,
+        0,
+        37,
+        1,
+        "MODEL_PATCH"
+      ],
+      [
+        46,
+        37,
+        0,
+        11,
+        0,
+        "MODEL"
+      ],
+      [
+        47,
+        8,
+        0,
+        37,
+        0,
+        "MODEL"
+      ],
+      [
+        48,
+        4,
+        0,
+        37,
+        2,
+        "VAE"
+      ],
+      [
+        50,
+        38,
+        0,
+        37,
+        3,
+        "IMAGE"
+      ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+      "ds": {
+        "scale": 0.8390545288824771,
+        "offset": [
+          5561.9125464702265,
+          1724.203510523208
+        ]
+      },
+      "workflowRendererVersion": "Vue",
+      "frontendVersion": "1.41.20",
+      "VHS_latentpreview": false,
+      "VHS_latentpreviewrate": 0,
+      "VHS_MetadataImage": true,
+      "VHS_KeepIntermediate": true
+    },
+    "version": 0.4
+  }
+}
+                ]]>
+            </metadata>
+            
+<path d="M0 0 C0.9512576293945472 -0.001007080078125 1.9025152587890943 -0.00201416015625 2.882598876953125 -0.0030517578125 C37.66154397277353 0.02177808739538989 84.90779449514389 2.278485844301244 112.34765625 26.96875 C117.83687017343311 32.903035322630416 120.3060283103502 40.230226931361855 120.4375 48.25 C109.11746528515232 64.97160379111058 81.46884833982779 69.08465862509887 63.06591796875 72.71826171875 C43.33856755928707 76.46001860247361 23.82609172152911 77.60089007192883 3.761962890625 77.565673828125 C0.03696907704596697 77.56253118943485 -3.6872139647076096 77.58600208187767 -7.412109375 77.611328125 C-40.97141566428621 77.70028723726546 -92.92981598829112 77.10550030352002 -119.12109375 51.953125 C-121.42305021058766 49.23319812515928 -121.83803653031194 47.831974894055335 -121.5625 44.25 C-118.96962098536139 33.446337439005745 -113.77019596650752 27.101529038383404 -104.5625 21.125 C-73.56737351767396 3.1323642188765035 -35.110316829449516 0.02582059746285381 0 0 Z M-16.1875 32.4375 C-18.5625 35.25 -18.5625 35.25 -18.75 38.8125 C-17.337856786781373 42.900282985632856 -16.266738240017673 44.07577320694614 -12.5625 46.25 C-4.136114465379649 49.62055421384814 4.855980683263454 49.057375442127764 13.33203125 46.16015625 C16.151043141065372 44.94154814124633 17.791246300115006 43.86903997708977 19.4375 41.25 C19.9375 38.25 19.9375 38.25 19.4375 35.25 C16.283610821779632 31.044814429039505 12.62518176218424 29.736151502707614 7.625 28.625 C-0.45262683801149706 27.674690960233946 -9.27016222018841 27.569743784577014 -16.1875 32.4375 Z " fill="#000000" transform="translate(254.5625,52.75)"/>
+<path d="M0 0 C0.3229101562500034 0.21205078124999943 0.3229101562500034 0.21205078124999943 1.95703125 1.28515625 C24.19499761667612 15.126845301761477 51.317580376074204 20.09301410530395 77 23 C77.81404296875002 23.102963867187498 78.6280859375 23.205927734374995 79.466796875 23.31201171875 C112.00981056346069 27.357519901152898 146.5788236951824 26.66318220875243 179 22 C180.01126953125004 21.860781250000002 181.02253906249996 21.721562500000005 182.064453125 21.578125 C204.14022275824965 18.45542281219258 229.98956798181945 13.917152014048611 248 0 C248.66000000000003 0 249.32 0 250 0 C252.7533524352869 9.926179246004779 255.1718596190804 19.876814705143715 257.29248046875 29.9560546875 C257.75731586245684 32.15968202885085 258.23189948094597 34.36107231416841 258.70703125 36.5625 C259.00839259351284 37.98164777219935 259.3091953951497 39.40091429528991 259.609375 40.8203125 C259.877177734375 42.0811767578125 260.14498046875 43.342041015625 260.4208984375 44.64111328125 C260.9229337743091 47.55300289500204 261.2951376831155 50.06412201924314 261 53 C243.45686749545717 69.30632538919474 211.4895678384496 73.89873668063393 188.9375 77.75 C188.35907348632816 77.84937866210936 188.35907348632816 77.84937866210936 185.431884765625 78.352294921875 C165.31957126761688 81.59792177328629 145.28412100825392 82.37472849724173 124.9375 82.3125 C123.72932617187499 82.31100952148438 122.52115234375 82.30951904296876 121.2763671875 82.3079833984375 C103.32340419259677 82.2681961359124 85.76797624286255 81.74308467033381 68 79 C67.0198291015625 78.86078125 66.03965820312499 78.7215625 65.02978515625 78.578125 C40.76570966800347 75.10551257299238 7.175737897981236 70.17573789798124 -11 52 C-10.900634765625 49.86962890625 -10.900634765625 49.86962890625 -10.37890625 47.1015625 C-10.177973632812495 46.02293945312499 -9.977041015625005 44.94431640625001 -9.77001953125 43.8330078125 C-9.642966308593756 43.2005615234375 -9.642966308593756 43.2005615234375 -9 40 C-8.85520202636718 39.27744018554688 -8.710404052734376 38.55488037109376 -8.56121826171875 37.8104248046875 C-7.563530820838253 32.85751240416667 -6.532496218336092 27.912066406612297 -5.486083984375 22.96923828125 C-4.931409293307965 20.346197218820805 -4.382488000188019 17.721993896945776 -3.833984375 15.09765625 C-3.4821113735656297 13.427011572130084 -3.1299101749956577 11.756435977939844 -2.77734375 10.0859375 C-2.6137889099121026 9.302701110839848 -2.4502340698242193 8.519464721679697 -2.2817230224609375 7.712493896484375 C-1.1149033513370767 2.2298067026741393 -1.1149033513370767 2.2298067026741393 0 0 Z " fill="#000000" transform="translate(129,121)"/>
+<path d="M0 0 C3.495187317909682 1.3016104000533346 6.726650002229604 2.897883655046712 10.008056640625 4.664794921875 C51.93471438141353 26.88809863896512 105.5584306486596 28.756980669156576 152 28 C152.43304443359375 27.993715820312502 152.43304443359375 27.993715820312502 154.62451171875 27.9619140625 C193.8640715179124 27.228184457402136 240.5051491762939 22.15849787553762 274.74609375 1.79296875 C278 0 278 0 281 0 C286.0521198277983 33.977783851886244 289.38413050936634 69.82409218680687 284 104 C283.9087182617187 104.57975585937498 283.9087182617187 104.57975585937498 283.44677734375 107.513671875 C278.4847124282359 138.4146878978883 278.4847124282359 138.4146878978883 275.328125 141.78515625 C268.52989010701185 145.96377055452467 261.4332079897404 149.1132409182701 254 152 C252.9158984375 152.4215234375 251.831796875 152.84304687500003 250.71484375 153.27734375 C217.12634046749451 165.3476095679382 180.35077058674227 168.37490717907065 144.94677734375 168.315673828125 C141.03324135600596 168.31252673126488 137.12047387627055 168.33602463532605 133.20703125 168.361328125 C110.84640487636591 168.41773653320217 88.56203586170449 166.84686153888947 66.5625 162.6875 C65.42256591796877 162.4765771484375 64.28263183593748 162.26565429687503 63.108154296875 162.04833984375 C17.279851515985 153.279851515985 17.279851515985 153.279851515985 3 139 C2.361572265625 136.814697265625 2.361572265625 136.814697265625 1.81640625 134.06640625 C1.7143688964843733 133.55348022460936 1.7143688964843733 133.55348022460936 1.197998046875 130.957763671875 C-6.790528289484243 88.27761163201797 -9.055772992674648 42.80727822662877 0 0 Z " fill="#000000" transform="translate(114,195)"/>
+<path d="M0 0 C0.660000000000025 0.3299999999999841 1.3199999999999932 0.660000000000025 2 1 C-1.7824499258094306 14.01856149552981 -5.5849769754644285 27.035297323328507 -9.75 39.9375 C-10.018850097656241 40.79947998046873 -10.287700195312482 41.66145996093752 -10.564697265625 42.549560546875 C-12.81809759070461 49.398374499567126 -15.511558834017194 52.47848896434641 -22.0224609375 55.8916015625 C-79.10546901807209 84.27806533392521 -162.97770400315045 81.79401180370422 -222.23388671875 62.93212890625 C-242.26716503925633 56.1812854263124 -242.26716503925633 56.1812854263124 -247 50 C-248.90725103165823 45.78558428393177 -250.1991668785034 41.43351792259563 -251.5 37 C-251.88019287109375 35.761533203125 -252.2603857421875 34.523066406249995 -252.652099609375 33.2470703125 C-253.79280832267273 29.504909999085044 -254.90206392623455 25.754911332987206 -256 22 C-256.3262939453125 20.889472656250007 -256.652587890625 19.778945312500014 -256.98876953125 18.634765625 C-258.7044045753335 12.768693921541171 -260.3740862795339 6.89154618710063 -262 1 C-258.1179053159092 2.244771209100861 -254.41131244631055 3.6580710260241176 -250.6875 5.3125 C-215.01649069283337 20.200889441546906 -173.38977171823637 23.415192461117442 -135.1455078125 23.2607421875 C-132.000455173207 23.250001554456787 -128.85597336900003 23.260736205716967 -125.7109375 23.2734375 C-85.85629629871215 23.30189210410009 -37.417813901102306 20.417116641097948 -1.87939453125 0.831298828125 C-1.2591943359374795 0.5569702148437727 -0.6389941406250159 0.28264160156248863 0 0 Z " fill="#000000" transform="translate(385,360)"/>
+<path d="M0 0 C0.3299999999999841 0.16500000000002046 0.3299999999999841 0.16500000000002046 2 1 C-0.6702115699513342 9.536974490469333 -3.0704228081684732 16.309629177380714 -11 21 C-15.203241580653525 23.101620790326763 -19.511862398893413 24.63729089221613 -24 26 C-24.68513671874996 26.20866699218749 -25.370273437500032 26.417333984374977 -26.076171875 26.63232421875 C-48.7334226603067 33.30721901968445 -73.15434366686043 36.14181158668055 -96.73828125 36.16796875 C-97.82094772338866 36.17129714965819 -98.90361419677731 36.174625549316374 -100.01908874511719 36.17805480957031 C-102.29893575784354 36.183083108262906 -104.57879002607592 36.18546441457869 -106.858642578125 36.185302734375 C-110.26591856386611 36.18747036594857 -113.67285997472186 36.20561872732924 -117.080078125 36.224609375 C-135.61741767353521 36.272920455171516 -154.08357234024976 35.38591912746955 -172.375 32.1875 C-173.3619384765625 32.01790771484377 -174.348876953125 31.84831542968749 -175.36572265625 31.673583984375 C-207.36266605436896 25.923687048886336 -207.36266605436896 25.923687048886336 -216 15 C-218.7592153783888 10.476388393253728 -220.46710542214603 6.328945778539776 -221 1 C-218.04731356107885 1.9623570615743233 -215.1249105181869 2.9513747489145317 -212.23046875 4.078125 C-180.559959921688 16.274726602687565 -145.29166042766997 19.235990982305168 -111.625 19.1875 C-110.84142120361327 19.186895751953102 -110.05784240722656 19.18629150390626 -109.25051879882813 19.1856689453125 C-73.08463286621361 19.110515243598797 -32.87035264736687 16.435176323683436 0 0 Z " fill="#000000" transform="translate(365,428)"/>
+</svg>
