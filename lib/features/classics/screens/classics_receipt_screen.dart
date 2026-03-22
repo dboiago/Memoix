@@ -1,13 +1,15 @@
+import 'dart:io';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
-import 'package:printing/printing.dart';
-import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
@@ -121,7 +123,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
       final guest = await SessionIndexService.getLocalEntry();
       final nodeSeed = guest?['party_size'] as int? ?? 0;
       final indexRef = guest?['table_no'] as int? ?? 0;
-      exportRef = RuntimeCalibrationService.resolveExportUri(
+      exportRef = await RuntimeCalibrationService.resolveExportUri(
         nodeSeed: nodeSeed,
         indexRef: indexRef,
         intervalLabel: interval.label,
@@ -183,10 +185,18 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
       ),
     );
 
-    await Printing.layoutPdf(
-      name: 'Le_Grand_Memoix.pdf',
-      onLayout: (_) async => doc.save(),
-    );
+    final bytes = await doc.save();
+
+    Directory dir;
+    if (Platform.isAndroid) {
+      dir = (await getExternalStorageDirectory()) ?? await getApplicationDocumentsDirectory();
+    } else {
+      dir = await getApplicationDocumentsDirectory();
+    }
+
+    final file = File('${dir.path}/Le_Grand_Memoix.pdf');
+    await file.writeAsBytes(bytes);
+    await launchUrl(Uri.file(file.path));
   }
 
   Widget _buildReceiptWidget() {
