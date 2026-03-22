@@ -468,17 +468,6 @@ class _ContentResolver {
 /// or on app lifecycle resume.
 Future<void> processIntegrityResponses(WidgetRef ref) async {
   final responses = await IntegrityService.getQueuedArtifacts();
-  await processIntegrityResponseList(responses, ref);
-}
-
-/// Process a provided list of integrity responses.
-///
-/// Useful for preflight callers that receive responses directly instead of
-/// through the queued artifact channel.
-Future<void> processIntegrityResponseList(
-  List<IntegrityResponse> responses,
-  Ref ref,
-) async {
   if (responses.isEmpty) return;
 
   for (final response in responses) {
@@ -514,7 +503,7 @@ Future<void> processIntegrityResponseList(
           );
         }
         break;
-      
+
       case 'alert':
         final alertId = response.data['alert_id'] as String? ?? '';
         final text = await IntegrityService.resolveAlertText(alertId) ?? '';
@@ -584,7 +573,69 @@ Future<void> processIntegrityResponseList(
   }
 }
 
-void _applyViewAdjustment(Ref ref, Map<String, dynamic> data) {
+/// Process a provided list of integrity responses directly.
+///
+/// Useful for preflight callers (e.g. repository layer) that receive
+/// responses without going through the queued artifact channel.
+/// Only handles response types that do not require view-override access
+/// (`system_message`, `alert`, `config_update`).
+Future<void> processIntegrityResponseList(
+  List<IntegrityResponse> responses,
+  Ref ref,
+) async {
+  if (responses.isEmpty) return;
+
+  for (final response in responses) {
+    switch (response.type) {
+      case 'system_message':
+        final text = response.data['text'] as String? ?? '';
+        if (response.data['persistent'] == true) {
+          MemoixSnackBar.showPersistentWithCopy(text);
+        } else {
+          final seconds = response.data['duration'] as int? ?? 4;
+          MemoixSnackBar.show(
+            text,
+            duration: Duration(seconds: seconds),
+          );
+        }
+        break;
+
+      case 'alert':
+        final alertId = response.data['alert_id'] as String? ?? '';
+        final text = await IntegrityService.resolveAlertText(alertId) ?? '';
+        if (response.data['persistent'] == true) {
+          MemoixSnackBar.showPersistentWithCopy(text);
+        } else {
+          final seconds = response.data['duration'] as int? ?? 8;
+          MemoixSnackBar.show(
+            text,
+            duration: Duration(seconds: seconds),
+          );
+        }
+        break;
+
+      case 'config_update':
+        final key = response.data['key'] as String?;
+        final value = response.data['value'];
+        if (key != null) {
+          final prefs = await SharedPreferences.getInstance();
+          if (value is bool) {
+            await prefs.setBool(key, value);
+          } else if (value is String) {
+            await prefs.setString(key, value);
+          } else if (value is int) {
+            await prefs.setInt(key, value);
+          }
+        }
+        break;
+
+      default:
+        break;
+    }
+  }
+}
+
+void _applyViewAdjustment(WidgetRef ref, Map<String, dynamic> data) {
   final id = data['id'] as String?;
   if (id == null) return;
 
