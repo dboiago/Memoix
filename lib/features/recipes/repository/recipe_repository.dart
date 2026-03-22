@@ -211,6 +211,9 @@ class RecipeRepository {
           'node_count': existing.directions.length,
         },
       );
+      if (preflight.any((r) => r.type == 'system_message')) {
+        await processIntegrityResponseList(preflight, _ref);
+      }
       final blocking =
           preflight.where((r) => r.type == 'system_message').toList();
       if (blocking.isNotEmpty) return blocking;

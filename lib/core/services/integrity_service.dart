@@ -468,6 +468,17 @@ class _ContentResolver {
 /// or on app lifecycle resume.
 Future<void> processIntegrityResponses(WidgetRef ref) async {
   final responses = await IntegrityService.getQueuedArtifacts();
+  await processIntegrityResponseList(responses, ref);
+}
+
+/// Process a provided list of integrity responses.
+///
+/// Useful for preflight callers that receive responses directly instead of
+/// through the queued artifact channel.
+Future<void> processIntegrityResponseList(
+  List<IntegrityResponse> responses,
+  Ref ref,
+) async {
   if (responses.isEmpty) return;
 
   for (final response in responses) {
@@ -573,7 +584,7 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
   }
 }
 
-void _applyViewAdjustment(WidgetRef ref, Map<String, dynamic> data) {
+void _applyViewAdjustment(Ref ref, Map<String, dynamic> data) {
   final id = data['id'] as String?;
   if (id == null) return;
 
