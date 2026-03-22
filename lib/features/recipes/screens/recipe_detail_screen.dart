@@ -13,6 +13,7 @@ import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
+import '../../../shared/widgets/course_icon_widget.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -65,54 +66,6 @@ String _capitalizeWords(String text) {
     }
     return word[0].toUpperCase() + word.substring(1).toLowerCase();
   }).join(' ');
-}
-
-/// Get the Material icon for a course category slug
-IconData _iconForCourse(String course) {
-  switch (course.toLowerCase()) {
-    case 'apps':
-      return Icons.restaurant;
-    case 'soup':
-    case 'soups':
-      return Icons.soup_kitchen;
-    case 'mains':
-      return Icons.dinner_dining;
-    case 'vegn':
-      return Icons.eco;
-    case 'sides':
-      return Icons.rice_bowl;
-    case 'salad':
-    case 'salads':
-      return Icons.grass;
-    case 'desserts':
-      return Icons.cake;
-    case 'brunch':
-      return Icons.egg_alt;
-    case 'drinks':
-      return Icons.local_bar;
-    case 'breads':
-      return Icons.bakery_dining;
-    case 'sauces':
-      return Icons.water_drop;
-    case 'rubs':
-      return Icons.local_fire_department;
-    case 'pickles':
-      return Icons.local_florist;
-    case 'modernist':
-      return Icons.science;
-    case 'pizzas':
-      return Icons.local_pizza;
-    case 'sandwiches':
-      return Icons.lunch_dining;
-    case 'smoking':
-      return Icons.outdoor_grill;
-    case 'cheese':
-      return Icons.lunch_dining;
-    case 'scratch':
-      return Icons.note_alt;
-    default:
-      return Icons.restaurant_menu;
-  }
 }
 
 class RecipeDetailScreen extends ConsumerWidget {
@@ -1202,8 +1155,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     for (final paired in pairedRecipes) {
       chips.add(
         ActionChip(
-          avatar: Icon(
-            _iconForCourse(paired.course),
+          avatar: CourseIconWidget(
+            slug: paired.course,
             size: isCompact ? 14 : 16,
             color: theme.colorScheme.onSurface,
           ),

@@ -17,6 +17,7 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
+import '../../../shared/widgets/course_icon_widget.dart';
 
 /// Edit/create screen for smoking recipes
 class SmokingEditScreen extends ConsumerStatefulWidget {
@@ -1896,8 +1897,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
               final course = recipe?.course ?? 'mains';
               
               return Chip(
-                avatar: Icon(
-                  _iconForCourse(course),
+                avatar: CourseIconWidget(
+                  slug: course,
                   size: 16,
                   color: theme.colorScheme.onSurface,
                 ),
@@ -1928,48 +1929,6 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         ],
       ],
     );
-  }
-
-  /// Get the Material icon for a course category slug
-  IconData _iconForCourse(String course) {
-    switch (course.toLowerCase()) {
-      case 'apps':
-        return Icons.restaurant;
-      case 'soup':
-      case 'soups':
-        return Icons.soup_kitchen;
-      case 'mains':
-        return Icons.dinner_dining;
-      case 'vegn':
-        return Icons.eco;
-      case 'sides':
-        return Icons.rice_bowl;
-      case 'salad':
-      case 'salads':
-        return Icons.grass;
-      case 'desserts':
-        return Icons.cake;
-      case 'brunch':
-        return Icons.egg_alt;
-      case 'drinks':
-        return Icons.local_bar;
-      case 'breads':
-        return Icons.bakery_dining;
-      case 'sauces':
-        return Icons.water_drop;
-      case 'rubs':
-        return Icons.local_fire_department;
-      case 'pickles':
-        return Icons.local_florist;
-      case 'modernist':
-        return Icons.science;
-      case 'smoking':
-        return Icons.outdoor_grill;
-      case 'scratch':
-        return Icons.note_alt;
-      default:
-        return Icons.restaurant_menu;
-    }
   }
 
   /// Show a dialog to select a recipe to pair with
@@ -2038,8 +1997,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                           itemBuilder: (context, index) {
                             final recipe = filteredRecipes[index];
                             return ListTile(
-                              leading: Icon(
-                                _iconForCourse(recipe.course),
+                              leading: CourseIconWidget(
+                                slug: recipe.course,
                                 color: theme.colorScheme.primary,
                               ),
                               title: Text(recipe.name),

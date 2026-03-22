@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../features/recipes/models/course.dart';
+import 'course_icon_widget.dart';
 
 /// Course card widget
 /// Shows course icon, name, and recipe count in a card layout
@@ -75,12 +76,12 @@ class _CourseCardState extends State<CourseCard> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
-                      child: Icon(
-                        _getIconData(widget.course.iconName),
+                      child: CourseIconWidget(
+                        slug: widget.course.slug,
+                        size: 18,
                         color: (_hovered || _pressed)
                             ? (isDark ? Colors.black87 : Colors.white)
                             : theme.colorScheme.primary,
-                        size: 18,
                       ),
                     ),
                   ),
@@ -121,31 +122,4 @@ class _CourseCardState extends State<CourseCard> {
     );
   }
 
-  /// Get Material IconData from icon name string
-  IconData _getIconData(String? iconName) {
-    if (iconName == null) return Icons.restaurant_menu;
-    
-    // Map of icon names to Material Icons
-    final iconMap = {
-      'restaurant': Icons.restaurant_menu,
-      'soup_kitchen': Icons.soup_kitchen,
-      'grass': Icons.grass,
-      'dinner_dining': Icons.dinner_dining,
-      'eco': Icons.eco,
-      'rice_bowl': Icons.rice_bowl,
-      'bakery_dining': Icons.bakery_dining,
-      'cake': Icons.cake,
-      'water_drop': Icons.water_drop,
-      'local_fire_department': Icons.local_fire_department,
-      'local_pizza': Icons.local_pizza,
-      'lunch_dining': Icons.lunch_dining,
-      'local_florist': Icons.local_florist,
-      'outdoor_grill': Icons.outdoor_grill,
-      'science': Icons.science,
-      'note_alt': Icons.note_alt,
-      'local_bar': Icons.local_bar,
-    };
-    
-    return iconMap[iconName] ?? Icons.restaurant_menu;
-  }
 }
