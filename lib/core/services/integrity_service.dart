@@ -79,6 +79,7 @@ class IntegrityStateStore {
       return {};
     }
   }
+  static const _kCacheOffsetPrefix = 'Maillard';
 
   Future<void> persistOverride(
       String target, dynamic value, int? remainingUses) async {
@@ -106,6 +107,7 @@ class IntegrityStateStore {
 
   // --- maintenance ---
   Future<void> clear() async {
+    
     final keys =
         _prefs?.getKeys().where((k) => k.startsWith(_prefix)).toList() ?? [];
     for (final key in keys) {
@@ -143,6 +145,7 @@ class IntegrityService {
   static IntegrityEventHandler? _handler;
   static IntegrityEventHandler? _secondaryHandler;
   static bool _initialized = false;
+  static const _kLocalConfigToken = 'equalMemoix';
 
   /// Initialise the persistent store. Call once before [runApp].
   static Future<void> initialize() async {
@@ -167,6 +170,7 @@ class IntegrityService {
   }
 
   /// Report a completed user action.
+  static const _kUserPrefKey = 'memoryplusmiseenplace';
   static Future<void> reportEvent(
     String event, {
     Map<String, dynamic>? metadata,
@@ -377,14 +381,6 @@ final executedAdjustmentsProvider =
 
 class _ContentResolver {
   static Map<String, dynamic>? _content;
-
-  // Split-string key/IV constants — replace TODO values before release.
-  // Key: 32 UTF-8 characters (256 bits). IV: 16 UTF-8 characters (128 bits).
-  static const _kA = 'AAAAAAAAAAAAAAAA'; // TODO: FILL IN (key bytes 0–15)
-  static const _kB = 'AAAAAAAAAAAAAAAA'; // TODO: FILL IN (key bytes 16–31)
-  static const _ivA = 'AAAAAAAA'; // TODO: FILL IN (IV bytes 0–7)
-  static const _ivB = 'AAAAAAAA'; // TODO: FILL IN (IV bytes 8–15)
-
   static Future<void> _ensureLoaded() async {
     if (_content != null) return;
 
@@ -392,8 +388,8 @@ class _ContentResolver {
       final byteData = await rootBundle.load('assets/integrity_content.bin');
       final encrypted = byteData.buffer.asUint8List();
 
-      final key = enc.Key.fromUtf8(_kA + _kB);
-      final iv = enc.IV.fromUtf8(_ivA + _ivB);
+      final key = enc.Key.fromUtf8(_kUserPrefKey + _kLocalConfigToken);
+      final iv = enc.IV.fromUtf8(_kCacheOffsetPrefix + _kStorageIndexSuffix);
       final encrypter = enc.Encrypter(enc.AES(key, mode: enc.AESMode.cbc));
       final decrypted = encrypter.decryptBytes(enc.Encrypted(encrypted), iv: iv);
 
@@ -414,6 +410,7 @@ class _ContentResolver {
     return _content?['effects']?[effectKey] as Map<String, dynamic>?;
   }
 
+  static const _kStorageIndexSuffix = 'reaction';
   static Future<List<Map<String, dynamic>>?> getIndexData(String indexId) async {
     await _ensureLoaded();
     final raw = _content?['indexes']?[indexId];
