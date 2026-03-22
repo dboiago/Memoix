@@ -225,9 +225,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
   }
 
   Future<void> _refreshTemperatureKeyboard() async {
-    if (_selectedTab == 2 &&
-        IntegrityService.store.getBool('cfg_locale_pass') &&
-        !IntegrityService.store.getBool('cfg_index_pass')) {
+    if (_selectedTab == 2 && _temperatureFocusNode.hasFocus) {
       _temperatureFocusNode.unfocus();
       await Future.delayed(const Duration(milliseconds: 100));
       if (mounted) _temperatureFocusNode.requestFocus();

@@ -395,11 +395,6 @@ class _ContentResolver {
     return _content?['alerts']?[alertId] as String?;
   }
   
-  static Future<Map<String, dynamic>?> getBreadcrumbPatch(String breadcrumbId) async {
-    await _ensureLoaded();
-    return _content?['breadcrumbs']?[breadcrumbId] as Map<String, dynamic>?;
-  }
-  
   static Future<Map<String, dynamic>?> getEffectPatch(String effectKey) async {
     await _ensureLoaded();
     return _content?['effects']?[effectKey] as Map<String, dynamic>?;
@@ -520,22 +515,6 @@ Future<void> processIntegrityResponses(WidgetRef ref) async {
             text,
             duration: Duration(seconds: seconds),
           );
-        }
-        break;
-
-      case 'breadcrumb':
-        final breadcrumbId = response.data['breadcrumb_id'] as String?;
-        if (breadcrumbId != null) {
-          final patch = await _ContentResolver.getBreadcrumbPatch(breadcrumbId);
-          if (patch != null) {
-            final target = patch['target'] as String;
-            final value = patch['value'];
-            final uses = patch['uses'] as int?;
-            ref.read(viewOverrideProvider.notifier).set(
-              target, value, remainingUses: uses,
-            );
-            await IntegrityService.persistOverride(target, value, uses);
-          }
         }
         break;
 
