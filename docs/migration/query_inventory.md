@@ -303,6 +303,3 @@ Each transaction involves filtering for existing entries by `uuid` and performin
 | `_Spec.condition`     | READ           | `db.mealPlans.where().findAll()` | None | None |
 
 These operations involve filtering and counting records in the recipes and `mealPlans` collections. No transactions or write operations are present.
-
-
-
