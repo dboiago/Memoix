@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:ui' show VoidCallback;
-import 'package:isar/isar.dart';
+import '../../../core/database/app_database.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
@@ -154,7 +154,7 @@ class MealCourse {
 
 /// Service for managing meal plans
 class MealPlanService {
-  final Isar _db;
+  final AppDatabase _db;
   
   // Track pending deletes by instanceId (unique) instead of fuzzy keys
   final Map<String, Timer> _pendingDeletes = {};

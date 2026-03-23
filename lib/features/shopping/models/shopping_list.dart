@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:isar/isar.dart';
+import '../../../core/database/app_database.dart';
 import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
 import 'package:memoix/features/tools/measurement_converter.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
@@ -112,7 +112,7 @@ class ShoppingList {
 
 /// Service for managing shopping lists
 class ShoppingListService {
-  final Isar _db;
+  final AppDatabase _db;
 
   final Map<int, Timer> _pendingDeletes = {};
   final Map<String, Timer> _pendingItemDeletes = {};
