@@ -1,42 +1,7 @@
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
 import '../../../core/database/app_database.dart';
-
-part 'cooking_stats.g.dart';
-
-/// Tracks when a user cooks a recipe
-@collection
-class CookingLog {
-  Id id = Isar.autoIncrement;
-
-  @Index()
-  late String recipeId;
-
-  late String recipeName;
-  late String? recipeCourse;
-  late String? recipeCuisine;
-
-  @Index()
-  late DateTime cookedAt;
-
-  /// Optional notes about this cooking session
-  String? notes;
-
-  /// Servings made (may differ from recipe default)
-  int? servingsMade;
-
-  CookingLog();
-
-  CookingLog.create({
-    required this.recipeId,
-    required this.recipeName,
-    this.recipeCourse,
-    this.recipeCuisine,
-    DateTime? cookedAt,
-    this.notes,
-    this.servingsMade,
-  }) : cookedAt = cookedAt ?? DateTime.now();
-}
 
 /// Aggregated statistics
 class CookingStats {
@@ -101,41 +66,29 @@ class CookingStatsService {
     int? servings,
     String? notes,
   }) async {
-    final log = CookingLog.create(
-      recipeId: recipeId,
-      recipeName: recipeName,
-      recipeCourse: course,
-      recipeCuisine: cuisine,
-      servingsMade: servings,
-      notes: notes,
+    final companion = CookingLogsCompanion(
+      recipeId: Value(recipeId),
+      recipeName: Value(recipeName),
+      recipeCourse: Value(course),
+      recipeCuisine: Value(cuisine),
+      servingsMade: Value(servings),
+      notes: Value(notes),
+      cookedAt: Value(DateTime.now()),
     );
-
-    await _db.writeTxn(() => _db.cookingLogs.put(log));
+    await _db.cookingLogDao.logCook(companion);
   }
 
   /// Get cook count for a specific recipe
-  Future<int> getCookCount(String recipeId) async {
-    return await _db.cookingLogs
-        .where()
-        .recipeIdEqualTo(recipeId)
-        .count();
-  }
+  Future<int> getCookCount(String recipeId) =>
+      _db.cookingLogDao.getCookCount(recipeId);
 
   /// Get last cook date for a recipe
-  Future<DateTime?> getLastCookDate(String recipeId) async {
-    final logs = await _db.cookingLogs
-        .where()
-        .recipeIdEqualTo(recipeId)
-        .sortByCookedAtDesc()
-        .limit(1)
-        .findAll();
-
-    return logs.isNotEmpty ? logs.first.cookedAt : null;
-  }
+  Future<DateTime?> getLastCookDate(String recipeId) =>
+      _db.cookingLogDao.getLastCookDate(recipeId);
 
   /// Get aggregated statistics
   Future<CookingStats> getStats() async {
-    final allLogs = await _db.cookingLogs.where().findAll();
+    final allLogs = await _db.cookingLogDao.getStats();
 
     if (allLogs.isEmpty) return CookingStats.empty;
 
@@ -190,11 +143,7 @@ class CookingStatsService {
       ..sort((a, b) => b.cookCount.compareTo(a.cookCount));
 
     // Recent cooks
-    final recentLogs = await _db.cookingLogs
-        .where()
-        .sortByCookedAtDesc()
-        .limit(10)
-        .findAll();
+    final recentLogs = await _db.cookingLogDao.getRecentStats();
 
     return CookingStats(
       totalCooks: allLogs.length,
@@ -209,13 +158,13 @@ class CookingStatsService {
   }
 
   /// Watch stats changes
-  Stream<void> watchChanges() {
-    return _db.cookingLogs.watchLazy();
+  Stream<List<CookingLog>> watchChanges() {
+    return _db.cookingLogDao.watchChanges();
   }
 
   /// Delete a cooking log
   Future<void> deleteLog(int logId) async {
-    await _db.writeTxn(() => _db.cookingLogs.delete(logId));
+    await _db.cookingLogDao.deleteLog(logId);
   }
 }
 
