@@ -428,6 +428,20 @@ class Courses extends Table {
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.e);
 
+  static AppDatabase? _instance;
+
+  static AppDatabase get instance {
+    if (_instance == null) {
+      throw StateError(
+          'AppDatabase not initialized. Call AppDatabase.initialize() first.');
+    }
+    return _instance!;
+  }
+
+  static void initialize(QueryExecutor executor) {
+    _instance ??= AppDatabase(executor);
+  }
+
   @override
   int get schemaVersion => 1;
 
