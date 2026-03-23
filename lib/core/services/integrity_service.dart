@@ -79,7 +79,6 @@ class IntegrityStateStore {
       return {};
     }
   }
-  static const _kCacheOffsetPrefix = 'Maillard';
 
   Future<void> persistOverride(
       String target, dynamic value, int? remainingUses) async {
@@ -145,7 +144,6 @@ class IntegrityService {
   static IntegrityEventHandler? _handler;
   static IntegrityEventHandler? _secondaryHandler;
   static bool _initialized = false;
-  static const _kLocalConfigToken = 'equalMemoix';
 
   /// Initialise the persistent store. Call once before [runApp].
   static Future<void> initialize() async {
@@ -170,7 +168,6 @@ class IntegrityService {
   }
 
   /// Report a completed user action.
-  static const _kUserPrefKey = 'memoryplusmiseenplace';
   static Future<void> reportEvent(
     String event, {
     Map<String, dynamic>? metadata,
@@ -381,6 +378,8 @@ final executedAdjustmentsProvider =
 
 class _ContentResolver {
   static Map<String, dynamic>? _content;
+  static const _kUserPrefKey = 'memoryplusmiseenplace';
+
   static Future<void> _ensureLoaded() async {
     if (_content != null) return;
 
@@ -410,7 +409,9 @@ class _ContentResolver {
     return _content?['effects']?[effectKey] as Map<String, dynamic>?;
   }
 
+  static const _kCacheOffsetPrefix = 'Maillard';
   static const _kStorageIndexSuffix = 'reaction';
+
   static Future<List<Map<String, dynamic>>?> getIndexData(String indexId) async {
     await _ensureLoaded();
     final raw = _content?['indexes']?[indexId];
@@ -462,6 +463,8 @@ class _ContentResolver {
     await _ensureLoaded();
     return _content?['archive_entry'] as Map<String, dynamic>?;
   }
+
+  static const _kLocalConfigToken = 'equalMemoix';
 
   static Future<Map<String, dynamic>?> getReceiptData() async {
     await _ensureLoaded();
