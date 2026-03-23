@@ -60,6 +60,14 @@ class Recipes extends Table {
   // List<String> stored as JSON array
   TextColumn get garnish => text().withDefault(const Constant('[]'))();
   TextColumn get pickleMethod => text().nullable()();
+  // 'standard' | 'modernist' | 'smoking'
+  TextColumn get recipeType => text().withDefault(const Constant('standard'))();
+  // Modernist-only nullable fields
+  TextColumn get technique => text().nullable()();
+  TextColumn get difficulty => text().nullable()();
+  TextColumn get scienceNotes => text().nullable()();
+  // List<String> stored as JSON array — modernist equipment
+  TextColumn get equipmentJson => text().nullable()();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -194,52 +202,6 @@ class PlannedMeals extends Table {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// MODERNIST RECIPES
-// ─────────────────────────────────────────────────────────────────────────────
-
-@TableIndex(name: 'idx_modernist_recipes_uuid', columns: {#uuid}, unique: true)
-@TableIndex(name: 'idx_modernist_recipes_name', columns: {#name})
-@TableIndex(name: 'idx_modernist_recipes_course', columns: {#course})
-@TableIndex(name: 'idx_modernist_recipes_technique', columns: {#technique})
-class ModernistRecipes extends Table {
-  IntColumn get id => integer().autoIncrement()();
-  TextColumn get uuid => text()();
-  TextColumn get name => text()();
-  TextColumn get course => text().withDefault(const Constant('modernist'))();
-  // ModernistType enum stored as name string
-  TextColumn get type => text().withDefault(const Constant('concept'))();
-  TextColumn get technique => text().nullable()();
-  TextColumn get serves => text().nullable()();
-  TextColumn get time => text().nullable()();
-  TextColumn get difficulty => text().nullable()();
-  // List<String> stored as JSON array
-  TextColumn get equipment => text().withDefault(const Constant('[]'))();
-  // List<ModernistIngredient> — JSON COLUMN (never individually queried)
-  TextColumn get ingredients => text().withDefault(const Constant('[]'))();
-  // List<String> stored as JSON array
-  TextColumn get directions => text().withDefault(const Constant('[]'))();
-  TextColumn get notes => text().nullable()();
-  TextColumn get scienceNotes => text().nullable()();
-  TextColumn get sourceUrl => text().nullable()();
-  TextColumn get headerImage => text().nullable()();
-  // List<String> stored as JSON array
-  TextColumn get stepImages => text().withDefault(const Constant('[]'))();
-  // List<String> stored as JSON array
-  TextColumn get stepImageMap => text().withDefault(const Constant('[]'))();
-  TextColumn get imageUrl => text().nullable()();
-  // List<String> stored as JSON array
-  TextColumn get imageUrls => text().withDefault(const Constant('[]'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
-  IntColumn get cookCount => integer().withDefault(const Constant(0))();
-  // ModernistSource enum stored as name string
-  TextColumn get source => text().withDefault(const Constant('personal'))();
-  // List<String> stored as JSON array
-  TextColumn get pairedRecipeIds => text().withDefault(const Constant('[]'))();
-  DateTimeColumn get createdAt => dateTime()();
-  DateTimeColumn get updatedAt => dateTime()();
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
 // SCRATCH PADS
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -369,9 +331,9 @@ class SmokingRecipes extends Table {
   TextColumn get time => text().withDefault(const Constant(''))();
   TextColumn get wood => text().withDefault(const Constant(''))();
   // List<SmokingSeasoning> — JSON COLUMN (never individually queried)
-  TextColumn get seasonings => text().withDefault(const Constant('[]'))();
+  TextColumn get seasoningsJson => text().withDefault(const Constant('[]'))();
   // List<SmokingSeasoning> — JSON COLUMN (never individually queried)
-  TextColumn get ingredients => text().withDefault(const Constant('[]'))();
+  TextColumn get ingredientsJson => text().withDefault(const Constant('[]'))();
   TextColumn get serves => text().nullable()();
   // List<String> stored as JSON array
   TextColumn get directions => text().withDefault(const Constant('[]'))();
@@ -436,7 +398,6 @@ class Courses extends Table {
   CheeseEntries,
   MealPlans,
   PlannedMeals,
-  ModernistRecipes,
   ScratchPads,
   RecipeDrafts,
   Sandwiches,
