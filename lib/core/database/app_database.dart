@@ -1,5 +1,14 @@
 import 'package:drift/drift.dart';
 
+import '../../data/drift/daos/cooking_log_dao.dart';
+import '../../data/drift/daos/utility_dao.dart';
+import '../../data/drift/daos/cellar_dao.dart';
+import '../../data/drift/daos/shopping_dao.dart';
+import '../../data/drift/daos/meal_plan_dao.dart';
+import '../../data/drift/daos/catalogue_dao.dart';
+import '../../data/drift/daos/smoking_dao.dart';
+import '../../data/drift/daos/recipe_dao.dart';
+
 part 'app_database.g.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -406,10 +415,28 @@ class Courses extends Table {
   SmokingRecipes,
   CookingLogs,
   Courses,
+], daos: [
+  CookingLogDao,
+  UtilityDao,
+  CellarDao,
+  ShoppingDao,
+  MealPlanDao,
+  CatalogueDao,
+  SmokingDao,
+  RecipeDao,
 ])
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.e);
 
   @override
   int get schemaVersion => 1;
+
+  CookingLogDao get cookingLogDao => CookingLogDao(this);
+  UtilityDao get utilityDao => UtilityDao(this);
+  CellarDao get cellarDao => CellarDao(this);
+  ShoppingDao get shoppingDao => ShoppingDao(this);
+  MealPlanDao get mealPlanDao => MealPlanDao(this);
+  CatalogueDao get catalogueDao => CatalogueDao(this);
+  SmokingDao get smokingDao => SmokingDao(this);
+  RecipeDao get recipeDao => RecipeDao(this);
 }
