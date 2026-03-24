@@ -1,15 +1,18 @@
+import 'dart:convert';
+
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/pizza.dart';
+import '../models/pizza.dart' hide Pizza;
 
 /// Repository for pizza data operations
 class PizzaRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
@@ -18,112 +21,85 @@ class PizzaRepository {
   // ============ PIZZAS ============
 
   /// Get all pizzas
-  Future<List<Pizza>> getAllPizzas() async {
-    return _db.pizzas.where().findAll();
-  }
+  Future<List<Pizza>> getAllPizzas() => _db.catalogueDao.getAllPizzas();
 
   /// Get pizzas by base sauce
-  Future<List<Pizza>> getPizzasByBase(PizzaBase base) async {
-    return _db.pizzas.filter().baseEqualTo(base).findAll();
-  }
+  Future<List<Pizza>> getPizzasByBase(PizzaBase base) =>
+      _db.catalogueDao.getPizzasByBase(base.name);
 
   /// Get pizzas by source
-  Future<List<Pizza>> getPizzasBySource(PizzaSource source) async {
-    return _db.pizzas.filter().sourceEqualTo(source).findAll();
-  }
+  Future<List<Pizza>> getPizzasBySource(PizzaSource source) =>
+      _db.catalogueDao.getPizzasBySource(source.name);
 
   /// Get personal pizzas (user's own)
-  Future<List<Pizza>> getPersonalPizzas() async {
-    return _db.pizzas.filter().sourceEqualTo(PizzaSource.personal).findAll();
-  }
+  Future<List<Pizza>> getPersonalPizzas() =>
+      _db.catalogueDao.getPersonalPizzas();
 
   /// Get memoix collection pizzas (from GitHub)
-  Future<List<Pizza>> getMemoixPizzas() async {
-    return _db.pizzas.filter().sourceEqualTo(PizzaSource.memoix).findAll();
-  }
+  Future<List<Pizza>> getMemoixPizzas() => _db.catalogueDao.getMemoixPizzas();
 
   /// Get favorite pizzas
-  Future<List<Pizza>> getFavorites() async {
-    return _db.pizzas.filter().isFavoriteEqualTo(true).findAll();
-  }
+  Future<List<Pizza>> getFavorites() => _db.catalogueDao.getFavoritePizzas();
 
   /// Search pizzas by name, cheese, protein, or vegetable
-  Future<List<Pizza>> searchPizzas(String query) async {
-    if (query.isEmpty) return getAllPizzas();
-    
-    return _db.pizzas
-        .filter()
-        .nameContains(query, caseSensitive: false)
-        .or()
-        .cheesesElementContains(query, caseSensitive: false)
-        .or()
-        .proteinsElementContains(query, caseSensitive: false)
-        .or()
-        .vegetablesElementContains(query, caseSensitive: false)
-        .or()
-        .tagsElementContains(query, caseSensitive: false)
-        .findAll();
-  }
+  Future<List<Pizza>> searchPizzas(String query) =>
+      _db.catalogueDao.searchPizzas(query);
 
   /// Get a single pizza by ID
-  Future<Pizza?> getPizzaById(int id) async {
-    return _db.pizzas.get(id);
-  }
+  Future<Pizza?> getPizzaById(int id) => _db.catalogueDao.getPizzaById(id);
 
   /// Get a single pizza by UUID
-  Future<Pizza?> getPizzaByUuid(String uuid) async {
-    return _db.pizzas.filter().uuidEqualTo(uuid).findFirst();
-  }
+  Future<Pizza?> getPizzaByUuid(String uuid) =>
+      _db.catalogueDao.getPizzaByUuid(uuid);
 
   /// Save a pizza (insert or update)
   Future<void> savePizza(Pizza pizza) async {
-    if (pizza.uuid.isEmpty) {
-      pizza.uuid = _uuid.v4();
-    }
-    pizza.updatedAt = DateTime.now();
-    
-    await _db.writeTxn(() async {
-      await _db.pizzas.put(pizza);
-    });
-    
-    // Notify personal storage service of change
+    final entryUuid = pizza.uuid.isEmpty ? _uuid.v4() : pizza.uuid;
+    await _db.catalogueDao.savePizza(PizzasCompanion(
+      id: Value(pizza.id),
+      uuid: Value(entryUuid),
+      name: Value(pizza.name),
+      base: Value(pizza.base),
+      cheeses: Value(pizza.cheeses),
+      proteins: Value(pizza.proteins),
+      vegetables: Value(pizza.vegetables),
+      notes: Value(pizza.notes),
+      imageUrl: Value(pizza.imageUrl),
+      source: Value(pizza.source),
+      isFavorite: Value(pizza.isFavorite),
+      cookCount: Value(pizza.cookCount),
+      rating: Value(pizza.rating),
+      tags: Value(pizza.tags),
+      createdAt: Value(pizza.createdAt),
+      updatedAt: Value(DateTime.now()),
+      version: Value(pizza.version),
+    ));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete a pizza by ID
   Future<bool> deletePizza(int id) async {
-    final result = await _db.writeTxn(() async {
-      return _db.pizzas.delete(id);
-    });
-    
-    // Notify personal storage service of change
-    if (result) {
+    final count = await _db.catalogueDao.deletePizza(id);
+    if (count > 0) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
-    
-    return result;
+    return count > 0;
   }
 
   /// Delete a pizza by UUID
   Future<bool> deletePizzaByUuid(String uuid) async {
-    final pizza = await getPizzaByUuid(uuid);
-    if (pizza == null) return false;
-    return deletePizza(pizza.id);
+    final count = await _db.catalogueDao.deletePizzaByUuid(uuid);
+    if (count > 0) {
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    }
+    return count > 0;
   }
 
   /// Toggle favorite status
   Future<void> toggleFavorite(Pizza pizza) async {
     final wasFavorited = pizza.isFavorite;
-    pizza.isFavorite = !pizza.isFavorite;
-    pizza.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.pizzas.put(pizza);
-    });
-    
-    // Notify personal storage service of change
+    await _db.catalogueDao.togglePizzaFavorite(pizza.id, pizza.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
-
-    // Report favorite toggle
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
@@ -135,103 +111,86 @@ class PizzaRepository {
 
   /// Increment cook count
   Future<void> incrementCookCount(Pizza pizza) async {
-    pizza.cookCount += 1;
-    pizza.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.pizzas.put(pizza);
-    });
-    
-    // Notify personal storage service of change
+    await _db.catalogueDao.incrementPizzaCookCount(pizza.id);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Update rating
   Future<void> updateRating(Pizza pizza, int rating) async {
-    pizza.rating = rating.clamp(0, 5);
-    pizza.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.pizzas.put(pizza);
-    });
-    
-    // Notify personal storage service of change
+    await _db.catalogueDao.updatePizzaRating(pizza.id, rating.clamp(0, 5));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all pizzas (stream for Riverpod)
-  Stream<List<Pizza>> watchAllPizzas() {
-    return _db.pizzas.where().watch(fireImmediately: true);
-  }
+  Stream<List<Pizza>> watchAllPizzas() => _db.catalogueDao.watchAllPizzas();
 
   /// Watch pizzas by base
-  Stream<List<Pizza>> watchPizzasByBase(PizzaBase base) {
-    return _db.pizzas.filter().baseEqualTo(base).watch(fireImmediately: true);
-  }
+  Stream<List<Pizza>> watchPizzasByBase(PizzaBase base) =>
+      _db.catalogueDao.watchPizzasByBase(base.name);
 
   /// Watch favorites
-  Stream<List<Pizza>> watchFavorites() {
-    return _db.pizzas.filter().isFavoriteEqualTo(true).watch(fireImmediately: true);
-  }
+  Stream<List<Pizza>> watchFavorites() =>
+      _db.catalogueDao.watchFavoritePizzas();
 
   /// Get count of all pizzas
-  Future<int> getPizzaCount() async {
-    return _db.pizzas.count();
-  }
+  Future<int> getPizzaCount() => _db.catalogueDao.getPizzaCount();
 
   /// Get count by base
-  Future<int> getPizzaCountByBase(PizzaBase base) async {
-    return _db.pizzas.filter().baseEqualTo(base).count();
-  }
+  Future<int> getPizzaCountByBase(PizzaBase base) =>
+      _db.catalogueDao.getPizzaCountByBase(base.name);
 
   /// Bulk import pizzas (for GitHub sync)
   Future<void> importPizzas(List<Pizza> pizzas) async {
-    await _db.writeTxn(() async {
-      for (final pizza in pizzas) {
-        // Check if pizza already exists
-        final existing = await _db.pizzas.filter().uuidEqualTo(pizza.uuid).findFirst();
-        if (existing != null) {
-          // Only update if newer version
-          if (pizza.version > existing.version) {
-            pizza.id = existing.id;
-            await _db.pizzas.put(pizza);
-          }
-        } else {
-          await _db.pizzas.put(pizza);
-        }
-      }
-    });
+    final companions = pizzas.map((pizza) => PizzasCompanion(
+          id: Value(pizza.id),
+          uuid: Value(pizza.uuid),
+          name: Value(pizza.name),
+          base: Value(pizza.base),
+          cheeses: Value(pizza.cheeses),
+          proteins: Value(pizza.proteins),
+          vegetables: Value(pizza.vegetables),
+          notes: Value(pizza.notes),
+          imageUrl: Value(pizza.imageUrl),
+          source: Value(pizza.source),
+          isFavorite: Value(pizza.isFavorite),
+          cookCount: Value(pizza.cookCount),
+          rating: Value(pizza.rating),
+          tags: Value(pizza.tags),
+          createdAt: Value(pizza.createdAt),
+          updatedAt: Value(pizza.updatedAt),
+          version: Value(pizza.version),
+        )).toList();
+    await _db.catalogueDao.importPizzas(companions);
   }
 
   /// Get all unique cheeses used across pizzas
   Future<List<String>> getAllCheeses() async {
-    final pizzas = await getAllPizzas();
+    final allPizzas = await getAllPizzas();
     final cheeses = <String>{};
-    for (final pizza in pizzas) {
-      cheeses.addAll(pizza.cheeses);
+    for (final pizza in allPizzas) {
+      cheeses.addAll((jsonDecode(pizza.cheeses) as List).cast<String>());
     }
-    final sorted = cheeses.toList()..sort();
-    return sorted;
+    return cheeses.toList()..sort();
   }
 
   /// Get all unique proteins used across pizzas
   Future<List<String>> getAllProteins() async {
-    final pizzas = await getAllPizzas();
+    final allPizzas = await getAllPizzas();
     final proteins = <String>{};
-    for (final pizza in pizzas) {
-      proteins.addAll(pizza.proteins);
+    for (final pizza in allPizzas) {
+      proteins.addAll((jsonDecode(pizza.proteins) as List).cast<String>());
     }
-    final sorted = proteins.toList()..sort();
-    return sorted;
+    return proteins.toList()..sort();
   }
 
   /// Get all unique vegetables used across pizzas
   Future<List<String>> getAllVegetables() async {
-    final pizzas = await getAllPizzas();
+    final allPizzas = await getAllPizzas();
     final vegetables = <String>{};
-    for (final pizza in pizzas) {
-      vegetables.addAll(pizza.vegetables);
+    for (final pizza in allPizzas) {
+      vegetables.addAll((jsonDecode(pizza.vegetables) as List).cast<String>());
     }
-    final sorted = vegetables.toList()..sort();
-    return sorted;
+    return vegetables.toList()..sort();
   }
 }
 
