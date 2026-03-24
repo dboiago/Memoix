@@ -1,7 +1,10 @@
+import 'dart:convert';
+
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
@@ -10,76 +13,201 @@ import '../models/modernist_recipe.dart';
 
 /// Repository for modernist recipe CRUD operations
 class ModernistRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
   ModernistRepository(this._db, this._ref);
 
+  // ── Private helpers ──────────────────────────────────────────────────────
+
+  ModernistRecipe _toModernistRecipe(Recipe r, List<Ingredient> ings) {
+    return ModernistRecipe()
+      ..id = r.id
+      ..uuid = r.uuid
+      ..name = r.name
+      ..course = r.course
+      ..type = ModernistTypeExtension.fromString(r.modernistType)
+      ..technique = r.technique
+      ..serves = r.serves
+      ..time = r.time
+      ..difficulty = r.difficulty
+      ..equipment = r.equipmentJson != null
+          ? (jsonDecode(r.equipmentJson!) as List).cast<String>()
+          : []
+      ..ingredients = ings
+          .map((i) => ModernistIngredient.create(
+                name: i.name,
+                amount: i.amount,
+                unit: i.unit,
+                notes: i.preparation,
+                section: i.section,
+              ))
+          .toList()
+      ..directions = (jsonDecode(r.directions) as List).cast<String>()
+      ..notes = r.comments
+      ..scienceNotes = r.scienceNotes
+      ..sourceUrl = r.sourceUrl
+      ..headerImage = r.headerImage
+      ..stepImages = (jsonDecode(r.stepImages) as List).cast<String>()
+      ..stepImageMap = (jsonDecode(r.stepImageMap) as List).cast<String>()
+      ..imageUrl = r.imageUrl
+      ..imageUrls = (jsonDecode(r.imageUrls) as List).cast<String>()
+      ..isFavorite = r.isFavorite
+      ..cookCount = r.cookCount
+      ..source = ModernistSource.values.firstWhere(
+            (s) => s.name == r.source,
+            orElse: () => ModernistSource.personal)
+      ..pairedRecipeIds =
+          (jsonDecode(r.pairedRecipeIds) as List).cast<String>()
+      ..createdAt = r.createdAt
+      ..updatedAt = r.updatedAt;
+  }
+
+  void _normalizeIngredientUnits(ModernistRecipe recipe) {
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
+  }
+
+  // ── Watch methods ────────────────────────────────────────────────────────
+
   /// Watch all modernist recipes
   Stream<List<ModernistRecipe>> watchAll() {
-    return _db.modernistRecipes
-        .where()
-        .sortByName()
-        .watch(fireImmediately: true);
+    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
+      final filtered =
+          recipes.where((r) => r.recipeType == 'modernist').toList();
+      return Future.wait(filtered.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toModernistRecipe(r, ings);
+      }));
+    });
   }
 
   /// Watch recipes by type (Concept or Technique)
   Stream<List<ModernistRecipe>> watchByType(ModernistType type) {
-    return _db.modernistRecipes
-        .where()
-        .filter()
-        .typeEqualTo(type)
-        .sortByName()
-        .watch(fireImmediately: true);
+    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
+      final filtered = recipes
+          .where((r) =>
+              r.recipeType == 'modernist' && r.modernistType == type.name)
+          .toList();
+      return Future.wait(filtered.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toModernistRecipe(r, ings);
+      }));
+    });
   }
 
   /// Watch recipes by technique category
   Stream<List<ModernistRecipe>> watchByTechnique(String technique) {
-    return _db.modernistRecipes
-        .where()
-        .filter()
-        .techniqueEqualTo(technique, caseSensitive: false)
-        .sortByName()
-        .watch(fireImmediately: true);
+    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
+      final filtered = recipes
+          .where((r) =>
+              r.recipeType == 'modernist' &&
+              r.technique?.toLowerCase() == technique.toLowerCase())
+          .toList();
+      return Future.wait(filtered.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toModernistRecipe(r, ings);
+      }));
+    });
   }
 
+  /// Watch favorite recipes
+  Stream<List<ModernistRecipe>> watchFavorites() {
+    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
+      final filtered = recipes
+          .where((r) => r.recipeType == 'modernist' && r.isFavorite)
+          .toList();
+      return Future.wait(filtered.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toModernistRecipe(r, ings);
+      }));
+    });
+  }
+
+  // ── Fetch methods ────────────────────────────────────────────────────────
+
   /// Get all recipes
-  Future<List<ModernistRecipe>> getAll() {
-    return _db.modernistRecipes.where().sortByName().findAll();
+  Future<List<ModernistRecipe>> getAll() async {
+    final rows = await _db.recipeDao.getRecipesByType('modernist');
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toModernistRecipe(r, ings);
+    }));
   }
 
   /// Get recipe by ID
-  Future<ModernistRecipe?> getById(int id) {
-    return _db.modernistRecipes.get(id);
+  Future<ModernistRecipe?> getById(int id) async {
+    final r = await _db.recipeDao.getRecipeById(id);
+    if (r == null) return null;
+    final ings = await _db.recipeDao.getIngredientsForRecipe(id);
+    return _toModernistRecipe(r, ings);
   }
 
   /// Get recipe by UUID
-  Future<ModernistRecipe?> getByUuid(String uuid) {
-    return _db.modernistRecipes.where().uuidEqualTo(uuid).findFirst();
+  Future<ModernistRecipe?> getByUuid(String uuid) async {
+    final r = await _db.recipeDao.getRecipeByUuid(uuid);
+    if (r == null) return null;
+    final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+    return _toModernistRecipe(r, ings);
   }
 
   /// Get count of all recipes
-  Future<int> getCount() {
-    return _db.modernistRecipes.count();
+  Future<int> getCount() async {
+    final all = await getAll();
+    return all.length;
   }
+
+  // ── Write methods ────────────────────────────────────────────────────────
 
   /// Save a recipe (insert or update)
   Future<int> save(ModernistRecipe recipe) async {
-    recipe.updatedAt = DateTime.now();
-    // Normalize ingredient units
     _normalizeIngredientUnits(recipe);
-    final result = await _db.writeTxn(() => _db.modernistRecipes.put(recipe));
-    
-    // Notify personal storage service of change
+    final entryUuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid;
+    final recipeId = await _db.recipeDao.saveRecipe(RecipesCompanion(
+      id: recipe.id > 0 ? Value(recipe.id) : const Value.absent(),
+      uuid: Value(entryUuid),
+      name: Value(recipe.name),
+      course: Value(recipe.course),
+      recipeType: const Value('modernist'),
+      modernistType: Value(recipe.type.name),
+      technique: Value(recipe.technique),
+      serves: Value(recipe.serves),
+      time: Value(recipe.time),
+      difficulty: Value(recipe.difficulty),
+      equipmentJson: Value(jsonEncode(recipe.equipment)),
+      directions: Value(jsonEncode(recipe.directions)),
+      comments: Value(recipe.notes),
+      scienceNotes: Value(recipe.scienceNotes),
+      sourceUrl: Value(recipe.sourceUrl),
+      headerImage: Value(recipe.headerImage),
+      stepImages: Value(jsonEncode(recipe.stepImages)),
+      stepImageMap: Value(jsonEncode(recipe.stepImageMap)),
+      imageUrl: Value(recipe.imageUrl),
+      imageUrls: Value(jsonEncode(recipe.imageUrls)),
+      isFavorite: Value(recipe.isFavorite),
+      cookCount: Value(recipe.cookCount),
+      source: Value(recipe.source.name),
+      pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
+      createdAt: Value(recipe.createdAt),
+      updatedAt: Value(DateTime.now()),
+    ));
+    await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
+    final ingredientCompanions = recipe.ingredients
+        .map((i) => IngredientsCompanion(
+              recipeId: Value(recipeId),
+              name: Value(i.name),
+              amount: Value(i.amount),
+              unit: Value(i.unit),
+              preparation: Value(i.notes),
+              alternative: const Value(null),
+              isOptional: const Value(false),
+              section: Value(i.section),
+              bakerPercent: const Value(null),
+            ))
+        .toList();
+    await _db.recipeDao.saveIngredients(ingredientCompanions);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
-    
-    return result;
-  }
-  
-  /// Normalize ingredient units to standard abbreviations
-  void _normalizeIngredientUnits(ModernistRecipe recipe) {
-    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
+    return recipeId;
   }
 
   /// Create a new recipe with generated UUID
@@ -128,21 +256,16 @@ class ModernistRepository {
       pairedRecipeIds: pairedRecipeIds,
       source: source,
     );
-
-    await save(recipe);
+    final dbId = await save(recipe);
+    recipe.id = dbId;
     return recipe;
   }
 
   /// Delete a recipe
   Future<bool> delete(int id) async {
-    final result = await _db.writeTxn(() => _db.modernistRecipes.delete(id));
-    
-    // Notify personal storage service of change
-    if (result) {
-      _ref.read(personalStorageServiceProvider).onRecipeChanged();
-    }
-    
-    return result;
+    await _db.recipeDao.deleteRecipe(id);
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    return true;
   }
 
   /// Delete by UUID
@@ -154,24 +277,11 @@ class ModernistRepository {
 
   /// Toggle favorite status
   Future<void> toggleFavorite(int id) async {
-    // Read state before transaction to capture pre-toggle value
-    final existing = await _db.modernistRecipes.get(id);
+    final existing = await _db.recipeDao.getRecipeById(id);
     if (existing == null) return;
     final wasFavorited = existing.isFavorite;
-
-    await _db.writeTxn(() async {
-      final recipe = await _db.modernistRecipes.get(id);
-      if (recipe == null) return;
-
-      recipe.isFavorite = !recipe.isFavorite;
-      recipe.updatedAt = DateTime.now();
-      await _db.modernistRecipes.put(recipe);
-    });
-    
-    // Notify personal storage service of change
+    await _db.recipeDao.toggleFavorite(id, existing.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
-
-    // Report favorite toggle
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
@@ -183,16 +293,54 @@ class ModernistRepository {
 
   /// Increment cook count
   Future<void> incrementCookCount(int id) async {
-    await _db.writeTxn(() async {
-      final recipe = await _db.modernistRecipes.get(id);
-      if (recipe == null) return;
-
-      recipe.cookCount++;
-      recipe.updatedAt = DateTime.now();
-      await _db.modernistRecipes.put(recipe);
-    });
-    
-    // Notify personal storage service of change
+    final existing = await _db.recipeDao.getRecipeById(id);
+    if (existing == null) return;
+    await _db.recipeDao.saveRecipe(RecipesCompanion(
+      id: Value(existing.id),
+      uuid: Value(existing.uuid),
+      name: Value(existing.name),
+      course: Value(existing.course),
+      cuisine: Value(existing.cuisine),
+      subcategory: Value(existing.subcategory),
+      continent: Value(existing.continent),
+      country: Value(existing.country),
+      serves: Value(existing.serves),
+      time: Value(existing.time),
+      pairsWith: Value(existing.pairsWith),
+      pairedRecipeIds: Value(existing.pairedRecipeIds),
+      comments: Value(existing.comments),
+      directions: Value(existing.directions),
+      sourceUrl: Value(existing.sourceUrl),
+      imageUrls: Value(existing.imageUrls),
+      imageUrl: Value(existing.imageUrl),
+      headerImage: Value(existing.headerImage),
+      stepImages: Value(existing.stepImages),
+      stepImageMap: Value(existing.stepImageMap),
+      source: Value(existing.source),
+      colorValue: Value(existing.colorValue),
+      createdAt: Value(existing.createdAt),
+      updatedAt: Value(DateTime.now()),
+      isFavorite: Value(existing.isFavorite),
+      rating: Value(existing.rating),
+      cookCount: Value(existing.cookCount + 1),
+      editCount: Value(existing.editCount),
+      firstEditAt: Value(existing.firstEditAt),
+      lastEditAt: Value(existing.lastEditAt),
+      lastCookedAt: Value(existing.lastCookedAt),
+      tags: Value(existing.tags),
+      version: Value(existing.version),
+      nutrition: Value(existing.nutrition),
+      modernistType: Value(existing.modernistType),
+      smokingType: Value(existing.smokingType),
+      glass: Value(existing.glass),
+      garnish: Value(existing.garnish),
+      pickleMethod: Value(existing.pickleMethod),
+      recipeType: Value(existing.recipeType),
+      technique: Value(existing.technique),
+      difficulty: Value(existing.difficulty),
+      scienceNotes: Value(existing.scienceNotes),
+      equipmentJson: Value(existing.equipmentJson),
+    ));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
@@ -211,26 +359,14 @@ class ModernistRepository {
   /// Search recipes
   Future<List<ModernistRecipe>> search(String query) async {
     if (query.isEmpty) return getAll();
-    
     final lower = query.toLowerCase();
     final all = await getAll();
-    
     return all.where((r) {
       return r.name.toLowerCase().contains(lower) ||
           (r.technique?.toLowerCase().contains(lower) ?? false) ||
           r.equipment.any((e) => e.toLowerCase().contains(lower)) ||
           r.ingredients.any((i) => i.name.toLowerCase().contains(lower));
     }).toList();
-  }
-
-  /// Watch favorite recipes
-  Stream<List<ModernistRecipe>> watchFavorites() {
-    return _db.modernistRecipes
-        .where()
-        .filter()
-        .isFavoriteEqualTo(true)
-        .sortByName()
-        .watch(fireImmediately: true);
   }
 }
 
