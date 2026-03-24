@@ -1,11 +1,10 @@
 import 'dart:async';
 import 'dart:ui' show VoidCallback;
+import 'package:drift/drift.dart';
 import '../../../core/database/app_database.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
-
-part 'meal_plan.g.dart';
 
 /// Helper class for pending delete data
 class _PendingDelete {
@@ -15,87 +14,18 @@ class _PendingDelete {
   _PendingDelete({required this.date, required this.instanceId});
 }
 
-/// Represents a single planned meal
-@embedded
-class PlannedMeal {
-  String? instanceId; // Unique ID for this specific meal instance
-  String? recipeId;
-  String? recipeName;
-  String? course; // breakfast, lunch, dinner, snack
-  String? notes;
-  int? servings;
-  String? cuisine; // e.g., "Korean", "Italian"
-  String? recipeCategory; // e.g., "mains", "soup"
 
-  // Seating arrangement for the final service.
-  // Note: Do not expand capacity beyond 12. 
-  static const List<String?> seatingChart = [
-    "Grant",    // Cover 01
-    "Magnus",   // Cover 02
-    "Alain",    // Cover 03
-    "Herve",    // Cover 04
-    "Andoni",   // Cover 05
-    "Albert",   // Cover 06
-    "Chen",     // Cover 07
-    "Pasquale", // Cover 08
-    "Anthony",  // Cover 09
-    "Hiroyuki", // Cover 10
-    "Rene",     // Cover 11
-    "Prosper",  // Cover 12
-    null,       // [RESERVED] 
-  ];
-
-  PlannedMeal();
-
-  PlannedMeal.create({
-    required this.recipeId,
-    required this.recipeName,
-    this.course,
-    this.notes,
-    this.servings,
-    this.cuisine,
-    this.recipeCategory,
-    String? instanceId,
-  }) : instanceId = instanceId ?? const Uuid().v4();
-}
-
-/// A meal plan for a specific date
-@collection
-class MealPlan {
-  Id id = Isar.autoIncrement;
-
-  @Index(unique: true)
-  late String date; // Format: 'yyyy-MM-dd'
-
-  late List<PlannedMeal> meals;
-
-  MealPlan();
-
-  MealPlan.create({
-    required this.date,
-    this.meals = const [],
-  });
-
-  /// Get meals by course
-  List<PlannedMeal> getMeals(String course) {
-    return meals.where((m) => m.course == course).toList();
-  }
-
-  /// Check if this day has any meals
-  bool get isEmpty => meals.isEmpty;
-
-  /// Total meals planned for this day
-  int get mealCount => meals.length;
-}
 
 /// Weekly meal plan view model
 class WeeklyPlan {
   final DateTime weekStart;
   final Map<String, MealPlan> dailyPlans; // date string -> plan
+  final Map<String, List<PlannedMeal>> meals; // date string -> meals
 
   WeeklyPlan({
     required this.weekStart,
     required this.dailyPlans,
+    required this.meals,
   });
 
   /// Get the plan for a specific day of the week (0 = Monday)
@@ -105,6 +35,13 @@ class WeeklyPlan {
     return dailyPlans[dateStr];
   }
 
+  /// Get meals for a specific day of the week (0 = Monday)
+  List<PlannedMeal> mealsForDay(int dayIndex) {
+    final date = weekStart.add(Duration(days: dayIndex));
+    final dateStr = _formatDate(date);
+    return meals[dateStr] ?? [];
+  }
+
   static String _formatDate(DateTime date) {
     return '${date.year}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
   }
@@ -112,8 +49,8 @@ class WeeklyPlan {
   /// Get all recipe IDs in this week's plan
   Set<String> get allRecipeIds {
     final ids = <String>{};
-    for (final plan in dailyPlans.values) {
-      for (final meal in plan.meals) {
+    for (final mealList in meals.values) {
+      for (final meal in mealList) {
         if (meal.recipeId != null) {
           ids.add(meal.recipeId!);
         }
@@ -161,25 +98,6 @@ class MealPlanService {
   final Map<String, _PendingDelete> _pendingDeleteData = {};
 
   MealPlanService(this._db);
-  
-  /// Helper: Ensure all meals in a plan have IDs (Migration fix)
-  Future<void> _ensureInstanceIds(MealPlan plan) async {
-    bool dirty = false;
-    final updatedMeals = <PlannedMeal>[];
-    
-    for (final meal in plan.meals) {
-      if (meal.instanceId == null) {
-        meal.instanceId = const Uuid().v4();
-        dirty = true;
-      }
-      updatedMeals.add(meal);
-    }
-    
-    if (dirty) {
-      plan.meals = updatedMeals;
-      await _db.writeTxn(() => _db.mealPlans.put(plan));
-    }
-  }
   
   /// Schedule a meal for deletion with undo capability
   void scheduleMealDelete({
@@ -233,20 +151,8 @@ class MealPlanService {
   }
 
   /// Get or create a plan for a specific date
-  Future<MealPlan> getOrCreate(DateTime date) async {
-    final dateStr = _formatDate(date);
-    var plan = await _db.mealPlans.where().dateEqualTo(dateStr).findFirst();
-
-    if (plan == null) {
-      plan = MealPlan.create(date: dateStr, meals: []);
-      await _db.writeTxn(() => _db.mealPlans.put(plan!));
-    } else {
-      // Lazy migration: Ensure IDs exist whenever we access a plan
-      await _ensureInstanceIds(plan);
-    }
-
-    return plan;
-  }
+  Future<MealPlan> getOrCreate(DateTime date) =>
+      _db.mealPlanDao.getOrCreatePlan(_formatDate(date));
 
   /// Add a meal to a specific date
   Future<void> addMeal(
@@ -260,155 +166,72 @@ class MealPlanService {
     String? recipeCategory,
   }) async {
     final plan = await getOrCreate(date);
-
-    final meal = PlannedMeal.create(
-      recipeId: recipeId,
-      recipeName: recipeName,
-      course: course,
-      servings: servings,
-      notes: notes,
-      cuisine: cuisine,
-      recipeCategory: recipeCategory,
-      instanceId: const Uuid().v4(), // Always generate ID
-    );
-
-    plan.meals = [...plan.meals, meal];
-    await _db.writeTxn(() => _db.mealPlans.put(plan));
+    await _db.mealPlanDao.addMeal(PlannedMealsCompanion.insert(
+      mealPlanId: plan.id,
+      instanceId: const Uuid().v4(),
+      recipeId: Value(recipeId),
+      recipeName: Value(recipeName),
+      course: Value(course),
+      servings: Value(servings),
+      notes: Value(notes),
+      cuisine: Value(cuisine),
+      recipeCategory: Value(recipeCategory),
+    ));
   }
 
   /// Remove a meal by unique Instance ID
-  Future<void> removeMeal(DateTime date, String instanceId) async {
-    final plan = await getOrCreate(date);
-    
-    final originalCount = plan.meals.length;
-    final meals = List<PlannedMeal>.from(plan.meals);
-    
-    // Explicit ID Match
-    meals.removeWhere((m) => m.instanceId == instanceId);
-    
-    if (meals.length < originalCount) {
-      plan.meals = meals;
-      await _db.writeTxn(() => _db.mealPlans.put(plan));
-    }
-  }
+  Future<void> removeMeal(DateTime date, String instanceId) =>
+      _db.mealPlanDao.removeMeal(instanceId);
 
   /// Move a meal from one date to another
   Future<void> moveMeal(
     DateTime fromDate,
-    String instanceId, // Target by ID
+    String instanceId,
     DateTime toDate,
     String newCourse,
   ) async {
-    // 1. Handle Same-Day vs Different-Day logic to avoid "Double Save" duplication
-    final isSameDay = fromDate.year == toDate.year && 
-                      fromDate.month == toDate.month && 
-                      fromDate.day == toDate.day;
-
-    final fromPlan = await getOrCreate(fromDate);
-    // If same day, we reuse the object reference so changes to 'fromPlan' appear in 'toPlan'
-    final toPlan = isSameDay ? fromPlan : await getOrCreate(toDate);
-
-    // 2. Find the exact meal instance
-    final mealIndex = fromPlan.meals.indexWhere((m) => m.instanceId == instanceId);
-    if (mealIndex == -1) return;
-
-    final meal = fromPlan.meals[mealIndex];
-    
-    // 3. Remove from Source
-    final fromMeals = List<PlannedMeal>.from(fromPlan.meals);
-    fromMeals.removeAt(mealIndex);
-    fromPlan.meals = fromMeals;
-
-    // 4. Create Moved Meal (Preserve ID to keep identity)
-    final movedMeal = PlannedMeal.create(
-      recipeId: meal.recipeId,
-      recipeName: meal.recipeName,
-      course: newCourse,
-      servings: meal.servings,
-      notes: meal.notes,
-      // FIX: Copy metadata explicitly
-      cuisine: meal.cuisine,
-      recipeCategory: meal.recipeCategory,
-      instanceId: meal.instanceId, 
-    );
-
-    // 5. Add to Target
-    // If same day, 'toPlan' is 'fromPlan', so 'toPlan.meals' is already updated with removal
-    final toMeals = isSameDay ? fromMeals : List<PlannedMeal>.from(toPlan.meals);
-    toPlan.meals = [...toMeals, movedMeal];
-
-    // 6. Save
-    await _db.writeTxn(() async {
-      if (isSameDay) {
-        await _db.mealPlans.put(fromPlan);
-      } else {
-        await _db.mealPlans.put(fromPlan);
-        await _db.mealPlans.put(toPlan);
-      }
-    });
+    final meal = await _db.mealPlanDao.getMealByInstanceId(instanceId);
+    if (meal == null) return;
+    final toPlan = await _db.mealPlanDao.getOrCreatePlan(_formatDate(toDate));
+    await _db.mealPlanDao.removeMeal(instanceId);
+    await _db.mealPlanDao.addMeal(PlannedMealsCompanion.insert(
+      mealPlanId: toPlan.id,
+      instanceId: meal.instanceId,
+      recipeId: Value(meal.recipeId),
+      recipeName: Value(meal.recipeName),
+      course: Value(newCourse),
+      notes: Value(meal.notes),
+      servings: Value(meal.servings),
+      cuisine: Value(meal.cuisine),
+      recipeCategory: Value(meal.recipeCategory),
+    ));
   }
 
   /// Get a week's worth of plans
   Future<WeeklyPlan> getWeek(DateTime weekStart) async {
     final monday = weekStart.subtract(Duration(days: weekStart.weekday - 1));
+    final dates = List.generate(7, (i) => _formatDate(monday.add(Duration(days: i))));
+    final plansList = await _db.mealPlanDao.getWeekPlans(dates);
     final plans = <String, MealPlan>{};
-
-    for (var i = 0; i < 7; i++) {
-      final date = monday.add(Duration(days: i));
-      final dateStr = _formatDate(date);
-      final plan = await _db.mealPlans.where().dateEqualTo(dateStr).findFirst();
-      if (plan != null) {
-        await _ensureInstanceIds(plan);
-        plans[dateStr] = plan;
-      }
+    final mealsMap = <String, List<PlannedMeal>>{};
+    for (final plan in plansList) {
+      plans[plan.date] = plan;
+      mealsMap[plan.date] = await _db.mealPlanDao.getMealsForPlan(plan.id);
     }
-
-    return WeeklyPlan(weekStart: monday, dailyPlans: plans);
+    return WeeklyPlan(weekStart: monday, dailyPlans: plans, meals: mealsMap);
   }
 
   /// Watch plans for a date range
-  Stream<List<MealPlan>> watchDateRange(DateTime start, DateTime end) {
-    final startStr = _formatDate(start);
-    final endStr = _formatDate(end);
-    
-    return _db.mealPlans
-        .where()
-        .filter()
-        .dateGreaterThan(startStr)
-        .and()
-        .dateLessThan(endStr)
-        .watch(fireImmediately: true);
-  }
+  Stream<List<MealPlan>> watchDateRange(DateTime start, DateTime end) =>
+      _db.mealPlanDao.watchDateRange(_formatDate(start), _formatDate(end));
 
   /// Clear all meals for a date
-  Future<void> clearDay(DateTime date) async {
-    final dateStr = _formatDate(date);
-    final plan = await _db.mealPlans.where().dateEqualTo(dateStr).findFirst();
-    if (plan != null) {
-      plan.meals = [];
-      await _db.writeTxn(() => _db.mealPlans.put(plan));
-    }
-  }
+  Future<void> clearDay(DateTime date) =>
+      _db.mealPlanDao.clearDay(_formatDate(date));
 
   /// Copy a day's meals to another day
-  Future<void> copyDay(DateTime from, DateTime to) async {
-    final fromPlan = await getOrCreate(from);
-    final toPlan = await getOrCreate(to);
-
-    final copiedMeals = fromPlan.meals.map((m) => PlannedMeal.create(
-      recipeId: m.recipeId,
-      recipeName: m.recipeName,
-      course: m.course,
-      servings: m.servings,
-      notes: m.notes,
-      cuisine: m.cuisine,
-      recipeCategory: m.recipeCategory,
-      instanceId: const Uuid().v4(), // Generate NEW IDs for copies
-    )).toList();
-
-    toPlan.meals = [...toPlan.meals, ...copiedMeals];
-    await _db.writeTxn(() => _db.mealPlans.put(toPlan));
-  }
+  Future<void> copyDay(DateTime from, DateTime to) =>
+      _db.mealPlanDao.copyDay(_formatDate(from), _formatDate(to));
 
   static String _formatDate(DateTime date) {
     return '${date.year}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
