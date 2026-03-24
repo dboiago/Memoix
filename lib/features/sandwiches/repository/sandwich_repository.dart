@@ -1,15 +1,18 @@
+import 'dart:convert';
+
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/sandwich.dart';
+import '../models/sandwich.dart' hide Sandwich;
 
 /// Repository for sandwich data operations
 class SandwichRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
@@ -18,111 +21,86 @@ class SandwichRepository {
   // ============ SANDWICHES ============
 
   /// Get all sandwiches
-  Future<List<Sandwich>> getAllSandwiches() async {
-    return _db.sandwichs.where().findAll();
-  }
+  Future<List<Sandwich>> getAllSandwiches() =>
+      _db.catalogueDao.getAllSandwiches();
 
   /// Get sandwiches by source
-  Future<List<Sandwich>> getSandwichesBySource(SandwichSource source) async {
-    return _db.sandwichs.filter().sourceEqualTo(source).findAll();
-  }
+  Future<List<Sandwich>> getSandwichesBySource(SandwichSource source) =>
+      _db.catalogueDao.getSandwichesBySource(source.name);
 
   /// Get personal sandwiches (user's own)
-  Future<List<Sandwich>> getPersonalSandwiches() async {
-    return _db.sandwichs.filter().sourceEqualTo(SandwichSource.personal).findAll();
-  }
+  Future<List<Sandwich>> getPersonalSandwiches() =>
+      _db.catalogueDao.getPersonalSandwiches();
 
   /// Get memoix collection sandwiches (from GitHub)
-  Future<List<Sandwich>> getMemoixSandwiches() async {
-    return _db.sandwichs.filter().sourceEqualTo(SandwichSource.memoix).findAll();
-  }
+  Future<List<Sandwich>> getMemoixSandwiches() =>
+      _db.catalogueDao.getMemoixSandwiches();
 
   /// Get favorite sandwiches
-  Future<List<Sandwich>> getFavorites() async {
-    return _db.sandwichs.filter().isFavoriteEqualTo(true).findAll();
-  }
+  Future<List<Sandwich>> getFavorites() =>
+      _db.catalogueDao.getFavoriteSandwiches();
 
   /// Search sandwiches by name, bread, protein, cheese, or condiment
-  Future<List<Sandwich>> searchSandwiches(String query) async {
-    if (query.isEmpty) return getAllSandwiches();
-    
-    return _db.sandwichs
-        .filter()
-        .nameContains(query, caseSensitive: false)
-        .or()
-        .breadContains(query, caseSensitive: false)
-        .or()
-        .proteinsElementContains(query, caseSensitive: false)
-        .or()
-        .vegetablesElementContains(query, caseSensitive: false)
-        .or()
-        .cheesesElementContains(query, caseSensitive: false)
-        .or()
-        .condimentsElementContains(query, caseSensitive: false)
-        .or()
-        .tagsElementContains(query, caseSensitive: false)
-        .findAll();
-  }
+  Future<List<Sandwich>> searchSandwiches(String query) =>
+      _db.catalogueDao.searchSandwiches(query);
 
   /// Get a single sandwich by ID
-  Future<Sandwich?> getSandwichById(int id) async {
-    return _db.sandwichs.get(id);
-  }
+  Future<Sandwich?> getSandwichById(int id) =>
+      _db.catalogueDao.getSandwichById(id);
 
   /// Get a single sandwich by UUID
-  Future<Sandwich?> getSandwichByUuid(String uuid) async {
-    return _db.sandwichs.filter().uuidEqualTo(uuid).findFirst();
-  }
+  Future<Sandwich?> getSandwichByUuid(String uuid) =>
+      _db.catalogueDao.getSandwichByUuid(uuid);
 
   /// Save a sandwich (insert or update)
   Future<void> saveSandwich(Sandwich sandwich) async {
-    if (sandwich.uuid.isEmpty) {
-      sandwich.uuid = _uuid.v4();
-    }
-    sandwich.updatedAt = DateTime.now();
-    
-    await _db.writeTxn(() async {
-      await _db.sandwichs.put(sandwich);
-    });
-    
-    // Notify personal storage service of change
+    final entryUuid = sandwich.uuid.isEmpty ? _uuid.v4() : sandwich.uuid;
+    await _db.catalogueDao.saveSandwich(SandwichesCompanion(
+      id: Value(sandwich.id),
+      uuid: Value(entryUuid),
+      name: Value(sandwich.name),
+      bread: Value(sandwich.bread),
+      proteins: Value(sandwich.proteins),
+      vegetables: Value(sandwich.vegetables),
+      cheeses: Value(sandwich.cheeses),
+      condiments: Value(sandwich.condiments),
+      notes: Value(sandwich.notes),
+      imageUrl: Value(sandwich.imageUrl),
+      source: Value(sandwich.source),
+      isFavorite: Value(sandwich.isFavorite),
+      cookCount: Value(sandwich.cookCount),
+      rating: Value(sandwich.rating),
+      tags: Value(sandwich.tags),
+      createdAt: Value(sandwich.createdAt),
+      updatedAt: Value(DateTime.now()),
+      version: Value(sandwich.version),
+    ));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete a sandwich by ID
   Future<bool> deleteSandwich(int id) async {
-    final result = await _db.writeTxn(() async {
-      return _db.sandwichs.delete(id);
-    });
-    
-    // Notify personal storage service of change
-    if (result) {
+    final count = await _db.catalogueDao.deleteSandwich(id);
+    if (count > 0) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
-    
-    return result;
+    return count > 0;
   }
 
   /// Delete a sandwich by UUID
   Future<bool> deleteSandwichByUuid(String uuid) async {
-    final sandwich = await getSandwichByUuid(uuid);
-    if (sandwich == null) return false;
-    return deleteSandwich(sandwich.id);
+    final count = await _db.catalogueDao.deleteSandwichByUuid(uuid);
+    if (count > 0) {
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    }
+    return count > 0;
   }
 
   /// Toggle favorite status
   Future<void> toggleFavorite(Sandwich sandwich) async {
     final wasFavorited = sandwich.isFavorite;
-    sandwich.isFavorite = !sandwich.isFavorite;
-    sandwich.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.sandwichs.put(sandwich);
-    });
-    
-    // Notify personal storage service of change
+    await _db.catalogueDao.toggleSandwichFavorite(sandwich.id, sandwich.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
-
-    // Report favorite toggle
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
@@ -134,106 +112,92 @@ class SandwichRepository {
 
   /// Increment cook count
   Future<void> incrementCookCount(Sandwich sandwich) async {
-    sandwich.cookCount += 1;
-    sandwich.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.sandwichs.put(sandwich);
-    });
-    
-    // Notify personal storage service of change
+    await _db.catalogueDao.incrementSandwichCookCount(sandwich.id);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Update rating
   Future<void> updateRating(Sandwich sandwich, int rating) async {
-    sandwich.rating = rating.clamp(0, 5);
-    sandwich.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.sandwichs.put(sandwich);
-    });
-    
-    // Notify personal storage service of change
+    await _db.catalogueDao.updateSandwichRating(sandwich.id, rating.clamp(0, 5));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all sandwiches (stream for Riverpod)
-  Stream<List<Sandwich>> watchAllSandwiches() {
-    return _db.sandwichs.where().watch(fireImmediately: true);
-  }
+  Stream<List<Sandwich>> watchAllSandwiches() =>
+      _db.catalogueDao.watchAllSandwiches();
 
   /// Watch favorites
-  Stream<List<Sandwich>> watchFavorites() {
-    return _db.sandwichs.filter().isFavoriteEqualTo(true).watch(fireImmediately: true);
-  }
+  Stream<List<Sandwich>> watchFavorites() =>
+      _db.catalogueDao.watchFavoriteSandwiches();
 
   /// Get count of all sandwiches
-  Future<int> getSandwichCount() async {
-    return _db.sandwichs.count();
-  }
+  Future<int> getSandwichCount() => _db.catalogueDao.getSandwichCount();
 
   /// Bulk import sandwiches (for GitHub sync)
   Future<void> importSandwiches(List<Sandwich> sandwiches) async {
-    await _db.writeTxn(() async {
-      for (final sandwich in sandwiches) {
-        // Check if sandwich already exists
-        final existing = await _db.sandwichs.filter().uuidEqualTo(sandwich.uuid).findFirst();
-        if (existing != null) {
-          // Only update if newer version
-          if (sandwich.version > existing.version) {
-            sandwich.id = existing.id;
-            await _db.sandwichs.put(sandwich);
-          }
-        } else {
-          await _db.sandwichs.put(sandwich);
-        }
-      }
-    });
+    final companions = sandwiches.map((sandwich) => SandwichesCompanion(
+          id: Value(sandwich.id),
+          uuid: Value(sandwich.uuid),
+          name: Value(sandwich.name),
+          bread: Value(sandwich.bread),
+          proteins: Value(sandwich.proteins),
+          vegetables: Value(sandwich.vegetables),
+          cheeses: Value(sandwich.cheeses),
+          condiments: Value(sandwich.condiments),
+          notes: Value(sandwich.notes),
+          imageUrl: Value(sandwich.imageUrl),
+          source: Value(sandwich.source),
+          isFavorite: Value(sandwich.isFavorite),
+          cookCount: Value(sandwich.cookCount),
+          rating: Value(sandwich.rating),
+          tags: Value(sandwich.tags),
+          createdAt: Value(sandwich.createdAt),
+          updatedAt: Value(sandwich.updatedAt),
+          version: Value(sandwich.version),
+        )).toList();
+    await _db.catalogueDao.importSandwiches(companions);
   }
 
   /// Get all unique breads used across sandwiches
   Future<List<String>> getAllBreads() async {
-    final sandwiches = await getAllSandwiches();
+    final allSandwiches = await getAllSandwiches();
     final breads = <String>{};
-    for (final sandwich in sandwiches) {
+    for (final sandwich in allSandwiches) {
       if (sandwich.bread.isNotEmpty) {
         breads.add(sandwich.bread);
       }
     }
-    final sorted = breads.toList()..sort();
-    return sorted;
+    return breads.toList()..sort();
   }
 
   /// Get all unique proteins used across sandwiches
   Future<List<String>> getAllProteins() async {
-    final sandwiches = await getAllSandwiches();
+    final allSandwiches = await getAllSandwiches();
     final proteins = <String>{};
-    for (final sandwich in sandwiches) {
-      proteins.addAll(sandwich.proteins);
+    for (final sandwich in allSandwiches) {
+      proteins.addAll((jsonDecode(sandwich.proteins) as List).cast<String>());
     }
-    final sorted = proteins.toList()..sort();
-    return sorted;
+    return proteins.toList()..sort();
   }
 
   /// Get all unique cheeses used across sandwiches
   Future<List<String>> getAllCheeses() async {
-    final sandwiches = await getAllSandwiches();
+    final allSandwiches = await getAllSandwiches();
     final cheeses = <String>{};
-    for (final sandwich in sandwiches) {
-      cheeses.addAll(sandwich.cheeses);
+    for (final sandwich in allSandwiches) {
+      cheeses.addAll((jsonDecode(sandwich.cheeses) as List).cast<String>());
     }
-    final sorted = cheeses.toList()..sort();
-    return sorted;
+    return cheeses.toList()..sort();
   }
 
   /// Get all unique condiments used across sandwiches
   Future<List<String>> getAllCondiments() async {
-    final sandwiches = await getAllSandwiches();
+    final allSandwiches = await getAllSandwiches();
     final condiments = <String>{};
-    for (final sandwich in sandwiches) {
-      condiments.addAll(sandwich.condiments);
+    for (final sandwich in allSandwiches) {
+      condiments.addAll((jsonDecode(sandwich.condiments) as List).cast<String>());
     }
-    final sorted = condiments.toList()..sort();
-    return sorted;
+    return condiments.toList()..sort();
   }
 }
 
