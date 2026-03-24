@@ -1,116 +1,108 @@
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/cheese_entry.dart';
 
 /// Repository for cheese entry data operations
 class CheeseRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
   CheeseRepository(this._db, this._ref);
 
   /// Get all cheese entries
-  Future<List<CheeseEntry>> getAllEntries() async {
-    return _db.cheeseEntrys.where().findAll();
-  }
+  Future<List<CheeseEntry>> getAllEntries() =>
+      _db.cellarDao.getAllCheeseEntries();
 
   /// Get entries by country
-  Future<List<CheeseEntry>> getEntriesByCountry(String country) async {
-    return _db.cheeseEntrys.filter().countryEqualTo(country, caseSensitive: false).findAll();
-  }
+  Future<List<CheeseEntry>> getEntriesByCountry(String country) =>
+      _db.cellarDao.getCheeseEntriesByCountry(country);
 
   /// Get entries by milk type
-  Future<List<CheeseEntry>> getEntriesByMilk(String milk) async {
-    return _db.cheeseEntrys.filter().milkEqualTo(milk, caseSensitive: false).findAll();
-  }
+  Future<List<CheeseEntry>> getEntriesByMilk(String milk) =>
+      _db.cellarDao.getCheeseEntriesByMilk(milk);
 
   /// Get entries marked as "would buy again"
-  Future<List<CheeseEntry>> getBuyAgainEntries() async {
-    return _db.cheeseEntrys.filter().buyEqualTo(true).findAll();
-  }
+  Future<List<CheeseEntry>> getBuyAgainEntries() =>
+      _db.cellarDao.getCheeseBuyAgainEntries();
 
   /// Get favorite entries
-  Future<List<CheeseEntry>> getFavorites() async {
-    return _db.cheeseEntrys.filter().isFavoriteEqualTo(true).findAll();
-  }
+  Future<List<CheeseEntry>> getFavorites() =>
+      _db.cellarDao.getCheeseFavorites();
 
   /// Search entries by name, type, or country
-  Future<List<CheeseEntry>> searchEntries(String query) async {
+  Future<List<CheeseEntry>> searchEntries(String query) {
     if (query.isEmpty) return getAllEntries();
-    
-    return _db.cheeseEntrys
-        .filter()
-        .nameContains(query, caseSensitive: false)
-        .or()
-        .typeContains(query, caseSensitive: false)
-        .or()
-        .countryContains(query, caseSensitive: false)
-        .or()
-        .milkContains(query, caseSensitive: false)
-        .findAll();
+    return _db.cellarDao.searchCheeseEntries(query);
   }
 
   /// Get a single entry by ID
-  Future<CheeseEntry?> getEntryById(int id) async {
-    return _db.cheeseEntrys.get(id);
-  }
+  Future<CheeseEntry?> getEntryById(int id) =>
+      _db.cellarDao.getCheeseEntryById(id);
 
   /// Get a single entry by UUID
-  Future<CheeseEntry?> getEntryByUuid(String uuid) async {
-    return _db.cheeseEntrys.filter().uuidEqualTo(uuid).findFirst();
-  }
+  Future<CheeseEntry?> getEntryByUuid(String uuid) =>
+      _db.cellarDao.getCheeseEntryByUuid(uuid);
 
   /// Save an entry (insert or update)
   Future<void> saveEntry(CheeseEntry entry) async {
-    if (entry.uuid.isEmpty) {
-      entry.uuid = _uuid.v4();
-    }
-    entry.updatedAt = DateTime.now();
-    
-    await _db.writeTxn(() async {
-      await _db.cheeseEntrys.put(entry);
-    });
-    
+    final entryUuid = entry.uuid.isEmpty ? _uuid.v4() : entry.uuid;
+    await _db.cellarDao.saveCheeseEntry(CheeseEntriesCompanion(
+      id: Value(entry.id),
+      uuid: Value(entryUuid),
+      name: Value(entry.name),
+      country: Value(entry.country),
+      milk: Value(entry.milk),
+      texture: Value(entry.texture),
+      type: Value(entry.type),
+      buy: Value(entry.buy),
+      flavour: Value(entry.flavour),
+      priceRange: Value(entry.priceRange),
+      imageUrl: Value(entry.imageUrl),
+      source: Value(entry.source),
+      isFavorite: Value(entry.isFavorite),
+      createdAt: Value(entry.createdAt),
+      updatedAt: Value(DateTime.now()),
+      version: Value(entry.version),
+    ));
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete an entry by ID
   Future<bool> deleteEntry(int id) async {
-    final result = await _db.writeTxn(() async {
-      return _db.cheeseEntrys.delete(id);
-    });
-    
+    final deleted = await _db.cellarDao.deleteCheeseEntry(id);
+    final result = deleted > 0;
+
     // Notify personal storage service of change
     if (result) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
-    
+
     return result;
   }
 
   /// Delete an entry by UUID
   Future<bool> deleteEntryByUuid(String uuid) async {
-    final entry = await getEntryByUuid(uuid);
-    if (entry == null) return false;
-    return deleteEntry(entry.id);
+    final deleted = await _db.cellarDao.deleteCheeseEntryByUuid(uuid);
+    final result = deleted > 0;
+    if (result) {
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    }
+    return result;
   }
 
   /// Toggle favorite status
   Future<void> toggleFavorite(CheeseEntry entry) async {
     final wasFavorited = entry.isFavorite;
-    entry.isFavorite = !entry.isFavorite;
-    entry.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.cheeseEntrys.put(entry);
-    });
-    
+    await _db.cellarDao.toggleCheeseFavorite(entry.id, entry.isFavorite);
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
@@ -126,30 +118,23 @@ class CheeseRepository {
 
   /// Toggle buy status
   Future<void> toggleBuy(CheeseEntry entry) async {
-    entry.buy = !entry.buy;
-    entry.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.cheeseEntrys.put(entry);
-    });
-    
+    await _db.cellarDao.toggleCheeseBuy(entry.id, entry.buy);
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all entries (stream for Riverpod)
-  Stream<List<CheeseEntry>> watchAllEntries() {
-    return _db.cheeseEntrys.where().watch(fireImmediately: true);
-  }
+  Stream<List<CheeseEntry>> watchAllEntries() =>
+      _db.cellarDao.watchAllCheeseEntries();
 
   /// Watch favorites
-  Stream<List<CheeseEntry>> watchFavorites() {
-    return _db.cheeseEntrys.filter().isFavoriteEqualTo(true).watch(fireImmediately: true);
-  }
+  Stream<List<CheeseEntry>> watchFavorites() =>
+      _db.cellarDao.watchCheeseFavorites();
 
   /// Get count of all entries
-  Future<int> getEntryCount() async {
-    return _db.cheeseEntrys.count();
-  }
+  Future<int> getEntryCount() =>
+      _db.cellarDao.getCheeseEntryCount();
 
   /// Get all unique countries
   Future<List<String>> getAllCountries() async {
