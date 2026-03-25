@@ -1,7 +1,15 @@
+import 'dart:convert';
+
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart'
+    hide Recipe, Ingredient, Course;
+import '../../../core/database/app_database.dart'
+    show Recipe as DriftRecipe,
+        Ingredient as DriftIngredient,
+        Course as DriftCourse;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/suggestions.dart';
@@ -13,174 +21,323 @@ import '../models/recipe.dart';
 
 /// Repository for recipe data operations
 class RecipeRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
   RecipeRepository(this._db, this._ref);
 
+  // ============ PRIVATE HELPERS ============
+
+  RecipesCompanion _toCompanion(Recipe recipe) {
+    return RecipesCompanion(
+      uuid: Value(recipe.uuid),
+      name: Value(recipe.name),
+      course: Value(recipe.course),
+      cuisine: Value(recipe.cuisine),
+      subcategory: Value(recipe.subcategory),
+      continent: Value(recipe.continent),
+      country: Value(recipe.country),
+      serves: Value(recipe.serves),
+      time: Value(recipe.time),
+      pairsWith: Value(jsonEncode(recipe.pairsWith)),
+      pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
+      comments: Value(recipe.comments),
+      directions: Value(jsonEncode(recipe.directions)),
+      sourceUrl: Value(recipe.sourceUrl),
+      imageUrls: Value(jsonEncode(recipe.imageUrls)),
+      imageUrl: Value(recipe.imageUrl),
+      headerImage: Value(recipe.headerImage),
+      stepImages: Value(jsonEncode(recipe.stepImages)),
+      stepImageMap: Value(jsonEncode(recipe.stepImageMap)),
+      source: Value(recipe.source.name),
+      colorValue: Value(recipe.colorValue),
+      createdAt: Value(recipe.createdAt),
+      updatedAt: Value(recipe.updatedAt),
+      isFavorite: Value(recipe.isFavorite),
+      rating: Value(recipe.rating),
+      cookCount: Value(recipe.cookCount),
+      editCount: Value(recipe.editCount),
+      firstEditAt: Value(recipe.firstEditAt),
+      lastEditAt: Value(recipe.lastEditAt),
+      lastCookedAt: Value(recipe.lastCookedAt),
+      tags: Value(jsonEncode(recipe.tags)),
+      version: Value(recipe.version),
+      nutrition: Value(recipe.nutrition != null ? jsonEncode(recipe.nutrition!.toJson()) : null),
+      modernistType: Value(recipe.modernistType),
+      smokingType: Value(recipe.smokingType),
+      glass: Value(recipe.glass),
+      garnish: Value(jsonEncode(recipe.garnish)),
+      pickleMethod: Value(recipe.pickleMethod),
+    );
+  }
+
+  List<IngredientsCompanion> _toIngredientCompanions(
+      int recipeId, List<Ingredient> ingredients) {
+    return ingredients
+        .map((i) => IngredientsCompanion(
+              recipeId: Value(recipeId),
+              name: Value(i.name),
+              amount: Value(i.amount),
+              unit: Value(i.unit),
+              notes: Value(i.preparation),
+              alternative: Value(i.alternative),
+              isOptional: Value(i.isOptional),
+              section: Value(i.section),
+              bakerPercent: Value(i.bakerPercent),
+            ))
+        .toList();
+  }
+
+  Recipe _toIsarRecipe(DriftRecipe r, List<DriftIngredient> ings) {
+    return Recipe()
+      ..id = r.id
+      ..uuid = r.uuid
+      ..name = r.name
+      ..course = r.course
+      ..cuisine = r.cuisine
+      ..subcategory = r.subcategory
+      ..continent = r.continent
+      ..country = r.country
+      ..serves = r.serves
+      ..time = r.time
+      ..pairsWith = (jsonDecode(r.pairsWith) as List).cast<String>()
+      ..pairedRecipeIds = (jsonDecode(r.pairedRecipeIds) as List).cast<String>()
+      ..comments = r.comments
+      ..directions = (jsonDecode(r.directions) as List).cast<String>()
+      ..sourceUrl = r.sourceUrl
+      ..imageUrls = (jsonDecode(r.imageUrls) as List).cast<String>()
+      ..imageUrl = r.imageUrl
+      ..headerImage = r.headerImage
+      ..stepImages = (jsonDecode(r.stepImages) as List).cast<String>()
+      ..stepImageMap = (jsonDecode(r.stepImageMap) as List).cast<String>()
+      ..source = RecipeSource.values.firstWhere(
+            (s) => s.name == r.source,
+            orElse: () => RecipeSource.personal)
+      ..colorValue = r.colorValue
+      ..createdAt = r.createdAt
+      ..updatedAt = r.updatedAt
+      ..isFavorite = r.isFavorite
+      ..rating = r.rating
+      ..cookCount = r.cookCount
+      ..editCount = r.editCount
+      ..firstEditAt = r.firstEditAt
+      ..lastEditAt = r.lastEditAt
+      ..lastCookedAt = r.lastCookedAt
+      ..tags = (jsonDecode(r.tags) as List).cast<String>()
+      ..version = r.version
+      ..nutrition = r.nutrition != null
+          ? NutritionInfo.fromJson(jsonDecode(r.nutrition!) as Map<String, dynamic>)
+          : null
+      ..modernistType = r.modernistType
+      ..smokingType = r.smokingType
+      ..glass = r.glass
+      ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
+      ..pickleMethod = r.pickleMethod
+      ..ingredients = ings
+          .map((i) => Ingredient()
+            ..name = i.name
+            ..amount = i.amount
+            ..unit = i.unit
+            ..preparation = i.notes
+            ..alternative = i.alternative
+            ..isOptional = i.isOptional
+            ..section = i.section
+            ..bakerPercent = i.bakerPercent)
+          .toList();
+  }
+
+  void _normalizeIngredientUnits(Recipe recipe) {
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
+  }
+
+  Course _toCourse(DriftCourse c) {
+    return Course()
+      ..id = c.id
+      ..slug = c.slug
+      ..name = c.name
+      ..iconName = c.iconName
+      ..sortOrder = c.sortOrder
+      ..colorValue = c.colorValue
+      ..isVisible = c.isVisible;
+  }
+
   // ============ RECIPES ============
 
-  /// Get all recipes
   Future<List<Recipe>> getAllRecipes() async {
-    return _db.recipes.where().findAll();
+    final rows = await _db.recipeDao.getAllRecipes();
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get recipes by course/category
   Future<List<Recipe>> getRecipesByCourse(String course) async {
-    return _db.recipes.filter().courseEqualTo(course, caseSensitive: false).findAll();
+    final rows = await _db.recipeDao.getRecipesByCourse(course);
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get recipes by cuisine
   Future<List<Recipe>> getRecipesByCuisine(String cuisine) async {
-    return _db.recipes.filter().cuisineEqualTo(cuisine, caseSensitive: false).findAll();
+    final rows = await _db.recipeDao.getRecipesByCuisine(cuisine);
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get recipes by source
   Future<List<Recipe>> getRecipesBySource(RecipeSource source) async {
-    return _db.recipes.filter().sourceEqualTo(source).findAll();
+    final rows = await _db.recipeDao.getRecipesBySource(source.name);
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get personal recipes (user's own)
   Future<List<Recipe>> getPersonalRecipes() async {
-    return _db.recipes.filter().sourceEqualTo(RecipeSource.personal).findAll();
+    final rows = await _db.recipeDao.getPersonalRecipes();
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get memoix collection recipes (from GitHub)
   Future<List<Recipe>> getMemoixRecipes() async {
-    return _db.recipes.filter().sourceEqualTo(RecipeSource.memoix).findAll();
+    final rows = await _db.recipeDao.getMemoixRecipes();
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get imported/shared recipes
   Future<List<Recipe>> getImportedRecipes() async {
-    return _db.recipes.filter().sourceEqualTo(RecipeSource.imported).findAll();
+    final rows = await _db.recipeDao.getImportedRecipes();
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Get favorite recipes
   Future<List<Recipe>> getFavorites() async {
-    return _db.recipes.filter().isFavoriteEqualTo(true).findAll();
+    final rows = await _db.recipeDao.getFavoriteRecipes();
+    return Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  /// Search recipes by name, ingredient, or tag, with optional course filter
-  Future<List<Recipe>> searchRecipes(String query, {List<String>? courseFilter}) async {
-    // 1. Handle Empty Query (Just filtering)
+  Future<List<Recipe>> searchRecipes(String query,
+      {List<String>? courseFilter}) async {
     if (query.isEmpty) {
       if (courseFilter != null && courseFilter.isNotEmpty) {
-        // If we have a filter but no text, return all recipes in that course
-        return await _db.recipes.filter()
-            .anyOf(courseFilter, (q, slug) => q.courseEqualTo(slug, caseSensitive: false))
-            .findAll();
+        final all = await getAllRecipes();
+        return all
+            .where((r) => courseFilter
+                .any((slug) => r.course.toLowerCase() == slug.toLowerCase()))
+            .toList();
       }
-      // No filter, no text -> Return everything
       return getAllRecipes();
     }
 
-    // 2. Handle Text Query + Optional Filter
-    final results = await _db.recipes
-        .filter()
-        .optional(courseFilter != null, (q) => q.anyOf(courseFilter!, (q, slug) => q.courseEqualTo(slug, caseSensitive: false)))
-        .group((q) => q
-          .nameContains(query, caseSensitive: false)
-          .or()
-          .tagsElementContains(query, caseSensitive: false)
-          .or()
-          .cuisineContains(query, caseSensitive: false)
-          .or()
-          .ingredientsElement((i) => i.nameContains(query, caseSensitive: false))
-        )
-        .limit(50)
-        .findAll();
+    final rows = await _db.recipeDao.searchRecipes(query);
+    final results = await Future.wait(rows.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
+
+    if (courseFilter != null && courseFilter.isNotEmpty) {
+      return results
+          .where((r) => courseFilter
+              .any((slug) => r.course.toLowerCase() == slug.toLowerCase()))
+          .toList();
+    }
     return results;
   }
 
-  /// Get a single recipe by ID
   Future<Recipe?> getRecipeById(int id) async {
-    return _db.recipes.get(id);
+    final row = await _db.recipeDao.getRecipeById(id);
+    if (row == null) return null;
+    final ings = await _db.recipeDao.getIngredientsForRecipe(id);
+    return _toIsarRecipe(row, ings);
   }
 
-  /// Get a single recipe by UUID
   Future<Recipe?> getRecipeByUuid(String uuid) async {
-    return _db.recipes.filter().uuidEqualTo(uuid).findFirst();
+    final row = await _db.recipeDao.getRecipeByUuid(uuid);
+    if (row == null) return null;
+    final ings = await _db.recipeDao.getIngredientsForRecipe(row.id);
+    return _toIsarRecipe(row, ings);
   }
 
-  /// Save a recipe (insert or update)
   Future<int> saveRecipe(Recipe recipe) async {
-    // Ensure the recipe has a UUID
     try {
-      if (recipe.uuid.isEmpty) {
-        recipe.uuid = _uuid.v4();
-      }
+      if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
     } catch (_) {
-      // If uuid was not initialized, set a new one
       recipe.uuid = _uuid.v4();
     }
-
     recipe.updatedAt = DateTime.now();
-    // `createdAt` is initialized in the model; no-op here.
-    
-    // Normalize ingredient units
     _normalizeIngredientUnits(recipe);
 
-    final result = await _db.writeTxn(() => _db.recipes.put(recipe));
-    
-    // Notify personal storage service of change
+    final companion = _toCompanion(recipe);
+    final recipeId = await _db.recipeDao.saveRecipe(companion);
+    await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
+    await _db.recipeDao
+        .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
-    
-    return result;
+    return recipeId;
   }
 
-  /// Save multiple recipes
   Future<void> saveRecipes(List<Recipe> recipes) async {
     final now = DateTime.now();
     for (final recipe in recipes) {
-      // Ensure each recipe has a uuid
       try {
         if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
       } catch (_) {
         recipe.uuid = _uuid.v4();
       }
       recipe.updatedAt = now;
-      // Normalize ingredient units
       _normalizeIngredientUnits(recipe);
     }
-    await _db.writeTxn(() => _db.recipes.putAll(recipes));
-    
-    // Notify personal storage service of change
+
+    final companions = recipes.map(_toCompanion).toList();
+    await _db.recipeDao.saveRecipes(companions);
+
+    for (final recipe in recipes) {
+      final row = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (row != null) {
+        await _db.recipeDao.deleteIngredientsForRecipe(row.id);
+        await _db.recipeDao.saveIngredients(
+            _toIngredientCompanions(row.id, recipe.ingredients));
+      }
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
-  
-  /// Normalize ingredient units to standard abbreviations
-  void _normalizeIngredientUnits(Recipe recipe) {
-    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
-  }
 
-  /// Delete a recipe
   Future<bool> deleteRecipe(int id) async {
-    final result = await _db.writeTxn(() => _db.recipes.delete(id));
-    
-    // Notify personal storage service of change
-    if (result) {
-      _ref.read(personalStorageServiceProvider).onRecipeChanged();
-    }
-    
-    return result;
+    await _db.recipeDao.deleteRecipe(id);
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    return true;
   }
 
-  /// Get recipes that pair with the given recipe (inverse lookup).
-  /// Finds recipes that have this recipe's UUID in their pairedRecipeIds list.
-  Future<List<Recipe>> getRecipesPairedWith(String recipeUuid) async {
-    final all = await _db.recipes.where().findAll();
-    return all.where((r) => r.pairedRecipeIds.contains(recipeUuid)).toList();
+  Future<List<Recipe>> getRecipesPairedWith(
+      String recipeUuid) async {
+    final all = await _db.recipeDao.getAllRecipes();
+    final matched = all.where((r) {
+      final ids =
+          (jsonDecode(r.pairedRecipeIds) as List).cast<String>();
+      return ids.contains(recipeUuid);
+    }).toList();
+    return Future.wait(matched.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }));
   }
 
-  // Where frontier and oak converge, we couldn't see ourselves clearly
-  // Reject the over-elaborate to find the starting point
-  // Remove what tangles to reveal what was already there
-  // Count what remains to confirm your suspicions
-  static const _reduction = "\\x62\\x70\\x2b\\x7e\\x7f\\x6c\\x7d\\x7f\\x70\\x6f\\x2b\\x7a\\x80\\x7f\\x2b\\x7a\\x79\\x2b\\x7f\\x73\\x74\\x7e\\x2b\\x7c\\x80\\x70\\x7e\\x7f\\x2b\\x6c\\x7d\\x78\\x70\\x6f\\x2b\\x82\\x74\\x7f\\x73\\x2b\\x7a\\x79\\x70\\x2b\\x82\\x7a\\x7d\\x6f\\x45\\x2b\\x77\\x70\\x7e\\x7e\\x39";
-
-  /// Get multiple recipes by their UUIDs
-  Future<List<Recipe>> getRecipesByUuids(List<String> uuids) async {
+  Future<List<Recipe>> getRecipesByUuids(
+      List<String> uuids) async {
     if (uuids.isEmpty) return [];
     final results = <Recipe>[];
     for (final uuid in uuids) {
@@ -190,18 +347,11 @@ class RecipeRepository {
     return results;
   }
 
-  /// Toggle favorite status.
-  ///
-  /// Returns an empty list on success. Returns a non-empty list of blocking
-  /// responses when the action is rejected — callers should display the
-  /// message and not proceed with any post-toggle UI update.
   Future<List<IntegrityResponse>> toggleFavorite(int id) async {
-    // Read state before transaction to capture pre-toggle value
-    final existing = await _db.recipes.get(id);
+    final existing = await getRecipeById(id);
     if (existing == null) return [];
     final wasFavorited = existing.isFavorite;
 
-    // Validate content requirements before persisting a new favourite.
     if (!wasFavorited) {
       final preflight = await IntegrityService.preflightSecondary(
         'activity.recipe_favourite',
@@ -219,18 +369,9 @@ class RecipeRepository {
       if (blocking.isNotEmpty) return blocking;
     }
 
-    await _db.writeTxn(() async {
-      final recipe = await _db.recipes.get(id);
-      if (recipe != null) {
-        recipe.isFavorite = !recipe.isFavorite;
-        await _db.recipes.put(recipe);
-      }
-    });
-    
-    // Notify personal storage service of change
+    await _db.recipeDao.toggleFavorite(id, wasFavorited);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
-    // Report completed toggle for the calibration pass.
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
@@ -242,112 +383,112 @@ class RecipeRepository {
     return [];
   }
 
-  /// Watch all recipes (stream)
   Stream<List<Recipe>> watchAllRecipes() {
-    return _db.recipes.where().watch(fireImmediately: true);
+    return _db.recipeDao.watchAllRecipes().asyncMap((rows) async {
+      return Future.wait(rows.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toIsarRecipe(r, ings);
+      }));
+    });
   }
 
-  /// Watch favorite recipes (stream)
   Stream<List<Recipe>> watchFavorites() {
-    return _db.recipes
-        .filter()
-        .isFavoriteEqualTo(true)
-        .watch(fireImmediately: true);
+    return _db.recipeDao.watchFavoriteRecipes().asyncMap((rows) async {
+      return Future.wait(rows.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toIsarRecipe(r, ings);
+      }));
+    });
   }
 
-  /// Watch recipes by course (sorted by cuisine region, country, province, then name)
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
-    return _db.recipes
-        .filter()
-        .courseEqualTo(course, caseSensitive: false)
-        .watch(fireImmediately: true)
-        .map((recipes) {
-          // Define continent order for sorting
-          const continentOrder = [
-            'Asian',
-            'Caribbean', 
-            'European',
-            'Middle Eastern',
-            'African',
-            'North American',
-            'Central American',
-            'South American',
-            'Oceanian',
-          ];
-          
-          // Sort by: 1) Continent, 2) Country, 3) Subcategory (province), 4) Recipe name
-          recipes.sort((a, b) {
-            // 1. Compare by continent
-            final aCont = Cuisine.continentFor(a.cuisine);
-            final bCont = Cuisine.continentFor(b.cuisine);
-            
-            final aContIndex = aCont != null ? continentOrder.indexOf(aCont) : continentOrder.length;
-            final bContIndex = bCont != null ? continentOrder.indexOf(bCont) : continentOrder.length;
-            final aOrder = aContIndex == -1 ? continentOrder.length : aContIndex;
-            final bOrder = bContIndex == -1 ? continentOrder.length : bContIndex;
-            
-            if (aOrder != bOrder) {
-              return aOrder.compareTo(bOrder);
-            }
-            
-            // 2. Same continent, compare by country name
-            final aCountry = Cuisine.toAdjective(a.cuisine);
-            final bCountry = Cuisine.toAdjective(b.cuisine);
-            
-            if (aCountry != bCountry) {
-              return aCountry.toLowerCase().compareTo(bCountry.toLowerCase());
-            }
-            
-            // 3. Same country, compare by subcategory (province/region)
-            final aProvince = a.subcategory ?? '';
-            final bProvince = b.subcategory ?? '';
-            
-            if (aProvince != bProvince) {
-              return aProvince.toLowerCase().compareTo(bProvince.toLowerCase());
-            }
-            
-            // 4. Same province, sort by recipe name
-            return a.name.toLowerCase().compareTo(b.name.toLowerCase());
-          });
-          return recipes;
-        });
+    return _db.recipeDao.watchRecipesByCourse(course).asyncMap((rows) async {
+      final recipes = await Future.wait(rows.map((r) async {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return _toIsarRecipe(r, ings);
+      }));
+
+      const continentOrder = [
+        'Asian',
+        'Caribbean',
+        'European',
+        'Middle Eastern',
+        'African',
+        'North American',
+        'Central American',
+        'South American',
+        'Oceanian',
+      ];
+
+      recipes.sort((a, b) {
+        final aCont = Cuisine.continentFor(a.cuisine);
+        final bCont = Cuisine.continentFor(b.cuisine);
+
+        final aContIndex = aCont != null
+            ? continentOrder.indexOf(aCont)
+            : continentOrder.length;
+        final bContIndex = bCont != null
+            ? continentOrder.indexOf(bCont)
+            : continentOrder.length;
+        final aOrder =
+            aContIndex == -1 ? continentOrder.length : aContIndex;
+        final bOrder =
+            bContIndex == -1 ? continentOrder.length : bContIndex;
+
+        if (aOrder != bOrder) return aOrder.compareTo(bOrder);
+
+        final aCountry = Cuisine.toAdjective(a.cuisine);
+        final bCountry = Cuisine.toAdjective(b.cuisine);
+        if (aCountry != bCountry) {
+          return aCountry.toLowerCase().compareTo(bCountry.toLowerCase());
+        }
+
+        final aProvince = a.subcategory ?? '';
+        final bProvince = b.subcategory ?? '';
+        if (aProvince != bProvince) {
+          return aProvince.toLowerCase().compareTo(bProvince.toLowerCase());
+        }
+
+        return a.name.toLowerCase().compareTo(b.name.toLowerCase());
+      });
+
+      return recipes;
+    });
   }
 
   // ============ COURSES ============
 
-  /// Get all courses sorted by order
   Future<List<Course>> getAllCourses() async {
-    return _db.courses.where().sortBySortOrder().findAll();
+    final rows = await _db.recipeDao.getAllCourses();
+    return rows.map(_toCourse).toList();
   }
 
-  /// Get visible courses only
   Future<List<Course>> getVisibleCourses() async {
-    return _db.courses
-        .filter()
-        .isVisibleEqualTo(true)
-        .sortBySortOrder()
-        .findAll();
+    final rows = await _db.recipeDao.getVisibleCourses();
+    return rows.map(_toCourse).toList();
   }
 
-  /// Save a course
   Future<int> saveCourse(Course course) async {
-    return _db.writeTxn(() => _db.courses.put(course));
+    final companion = CoursesCompanion(
+      slug: Value(course.slug),
+      name: Value(course.name),
+      iconName: Value(course.iconName),
+      sortOrder: Value(course.sortOrder),
+      colorValue: Value(course.colorValue),
+      isVisible: Value(course.isVisible),
+    );
+    return _db.recipeDao.saveCourse(companion);
   }
 
-  /// Watch courses
   Stream<List<Course>> watchCourses() {
-    return _db.courses.where().sortBySortOrder().watch(fireImmediately: true);
+    return _db.recipeDao.watchCourses().map((rows) => rows.map(_toCourse).toList());
   }
 
   // ============ INGREDIENT SUGGESTIONS ============
 
-  /// Get ingredient name suggestions based on user's history + defaults
-  /// Returns unique names that match the query, sorted alphabetically
   Future<List<String>> getIngredientNameSuggestions(String query) async {
-    // Get all ingredient names from saved recipes
-    final allRecipes = await _db.recipes.where().findAll();
-    
-    // Extract all ingredient names and deduplicate with a Set
+    final allRecipes = await getAllRecipes();
+
     final historyNames = <String>{};
     for (final recipe in allRecipes) {
       for (final ingredient in recipe.ingredients) {
@@ -356,132 +497,73 @@ class RecipeRepository {
         }
       }
     }
-    
-    // Merge with essential defaults
-    final allNames = <String>{...Suggestions.essentialIngredients, ...historyNames};
-    
-    // Filter by query (case-insensitive contains match)
+
+    final allNames = <String>{
+      ...Suggestions.essentialIngredients,
+      ...historyNames
+    };
+
     final lowerQuery = query.toLowerCase();
-    final filtered = allNames
-        .where((name) => name.toLowerCase().contains(lowerQuery))
-        .toList();
-    
-    // Sort with "starts with" matches first, then alphabetically
+    final filtered =
+        allNames.where((name) => name.toLowerCase().contains(lowerQuery)).toList();
+
     filtered.sort((a, b) {
       final aLower = a.toLowerCase();
       final bLower = b.toLowerCase();
       final aStartsWith = aLower.startsWith(lowerQuery);
       final bStartsWith = bLower.startsWith(lowerQuery);
-      
       if (aStartsWith && !bStartsWith) return -1;
       if (bStartsWith && !aStartsWith) return 1;
       return aLower.compareTo(bLower);
     });
-    
+
     return filtered;
   }
 
-  /// Get prep/notes suggestions based on user's history + defaults
-  /// Returns unique prep notes that match the query, sorted alphabetically
   Future<List<String>> getPrepNoteSuggestions(String query) async {
-    // Get all preparation notes from saved recipes
-    final allRecipes = await _db.recipes.where().findAll();
-    
-    // Extract all preparation notes and deduplicate with a Set
+    final allRecipes = await getAllRecipes();
+
     final historyNotes = <String>{};
     for (final recipe in allRecipes) {
       for (final ingredient in recipe.ingredients) {
-        if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
+        if (ingredient.preparation != null &&
+            ingredient.preparation!.isNotEmpty) {
           historyNotes.add(ingredient.preparation!);
         }
       }
     }
-    
-    // Merge with essential defaults and the full preparations list
+
     final allNotes = <String>{
       ...Suggestions.essentialPrepNotes,
       ...Suggestions.preparations,
       ...historyNotes,
     };
-    
-    // Filter by query (case-insensitive contains match)
+
     final lowerQuery = query.toLowerCase();
-    final filtered = allNotes
-        .where((note) => note.toLowerCase().contains(lowerQuery))
-        .toList();
-    
-    // Sort with "starts with" matches first, then alphabetically
+    final filtered =
+        allNotes.where((note) => note.toLowerCase().contains(lowerQuery)).toList();
+
     filtered.sort((a, b) {
       final aLower = a.toLowerCase();
       final bLower = b.toLowerCase();
       final aStartsWith = aLower.startsWith(lowerQuery);
       final bStartsWith = bLower.startsWith(lowerQuery);
-      
       if (aStartsWith && !bStartsWith) return -1;
       if (bStartsWith && !aStartsWith) return 1;
       return aLower.compareTo(bLower);
     });
-    
+
     return filtered;
   }
 
   // ============ SYNC HELPERS ============
 
-  /// Replace all memoix recipes (for sync from GitHub)
-  /// Preserves user-local fields (isFavorite, rating, cookCount, etc.)
-  /// that exist on previously-synced recipes.
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
-    await _db.writeTxn(() async {
-      // Build a lookup of existing memoix recipes by UUID
-      final existing = await _db.recipes
-          .filter()
-          .sourceEqualTo(RecipeSource.memoix)
-          .findAll();
-      final existingByUuid = {for (final r in existing) r.uuid: r};
-
-      // Track which existing UUIDs are still present in the sync payload
-      final incomingUuids = <String>{};
-
-      for (final incoming in recipes) {
-        incomingUuids.add(incoming.uuid);
-        final prev = existingByUuid[incoming.uuid];
-        if (prev != null) {
-          // Preserve Isar ID so `put` updates in-place
-          incoming.id = prev.id;
-          // Preserve user-local metadata
-          incoming.isFavorite = prev.isFavorite;
-          incoming.rating = prev.rating;
-          incoming.cookCount = prev.cookCount;
-          incoming.lastCookedAt = prev.lastCookedAt;
-          incoming.editCount = prev.editCount;
-          incoming.firstEditAt = prev.firstEditAt;
-          incoming.lastEditAt = prev.lastEditAt;
-          // Keep user-added images if the incoming recipe has none
-          if (prev.headerImage != null && prev.headerImage!.isNotEmpty) {
-            incoming.headerImage = prev.headerImage;
-          }
-          if (prev.stepImages.isNotEmpty && incoming.stepImages.isEmpty) {
-            incoming.stepImages = prev.stepImages;
-            incoming.stepImageMap = prev.stepImageMap;
-          }
-        }
-      }
-
-      // Delete memoix recipes that are no longer in the sync payload
-      for (final prev in existing) {
-        if (!incomingUuids.contains(prev.uuid)) {
-          await _db.recipes.delete(prev.id);
-        }
-      }
-
-      // Upsert all incoming recipes
-      await _db.recipes.putAll(recipes);
-    });
+    final companions = recipes.map(_toCompanion).toList();
+    await _db.recipeDao.syncMemoixRecipes(companions);
   }
 
-  /// Get last sync time (stored as a recipe tag, hacky but works)
   Future<DateTime?> getLastSyncTime() async {
-    // Could use SharedPreferences, but keeping it simple
     return null;
   }
 }
