@@ -40,7 +40,7 @@ class ModernistRepository {
                 name: i.name,
                 amount: i.amount,
                 unit: i.unit,
-                notes: i.preparation,
+                notes: i.notes,
                 section: i.section,
               ))
           .toList()
@@ -198,7 +198,7 @@ class ModernistRepository {
               name: Value(i.name),
               amount: Value(i.amount),
               unit: Value(i.unit),
-              preparation: Value(i.notes),
+              notes: Value(i.notes),
               alternative: const Value(null),
               isOptional: const Value(false),
               section: Value(i.section),

@@ -90,7 +90,7 @@ class Ingredients extends Table {
   TextColumn get name => text()();
   TextColumn get amount => text().nullable()();
   TextColumn get unit => text().nullable()();
-  TextColumn get preparation => text().nullable()();
+  TextColumn get notes => text().nullable()();
   TextColumn get alternative => text().nullable()();
   BoolColumn get isOptional => boolean().withDefault(const Constant(false))();
   TextColumn get section => text().nullable()();
