@@ -67,9 +67,9 @@ dependencies:
   
   # External Storage
   device_info_plus: ^11.2.0
-  google_sign_in: ^6.2.2
-  googleapis: ^14.0.0
-  googleapis_auth: ^1.6.0
+  google_sign_in: ^7.2.0
+  googleapis: ^16.0.0
+  googleapis_auth: ^2.1.0
   flutter_appauth: ^6.0.2
   flutter_secure_storage: ^9.0.0
   
@@ -86,11 +86,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.14.3
-  build_runner: ^2.4.8
+  build_runner: ^2.13.1
   riverpod_generator: ^2.3.9
-  json_serializable: ^6.7.1
+  json_serializable: ^6.13.1
 
 flutter:
   uses-material-design: true
