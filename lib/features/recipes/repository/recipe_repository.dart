@@ -6,10 +6,8 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart'
     hide Recipe, Ingredient, Course;
-import '../../../core/database/app_database.dart'
-    show Recipe as DriftRecipe,
-        Ingredient as DriftIngredient,
-        Course as DriftCourse;
+import '../../../core/database/app_database.dart' as db
+    show Recipe, Ingredient, Course;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/suggestions.dart';
@@ -89,7 +87,7 @@ class RecipeRepository {
         .toList();
   }
 
-  Recipe _toIsarRecipe(DriftRecipe r, List<DriftIngredient> ings) {
+  Recipe _toIsarRecipe(db.Recipe r, List<db.Ingredient> ings) {
     return Recipe()
       ..id = r.id
       ..uuid = r.uuid
@@ -151,7 +149,7 @@ class RecipeRepository {
     UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
   }
 
-  Course _toCourse(DriftCourse c) {
+  Course _toCourse(db.Course c) {
     return Course()
       ..id = c.id
       ..slug = c.slug
