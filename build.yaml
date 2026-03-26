@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        enabled: true
+      drift_dev:preparing_builder:
+        enabled: true
