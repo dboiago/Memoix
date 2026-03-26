@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'modernist_recipe.g.dart';
 
 /// Type of modernist recipe
 enum ModernistType {
@@ -170,7 +168,6 @@ class ModernistEquipment {
 }
 
 /// Embedded ingredient for modernist recipes
-@embedded
 class ModernistIngredient {
   String name = '';
   String? amount;
@@ -222,28 +219,22 @@ class ModernistIngredient {
 }
 
 /// A modernist cooking recipe entity
-@collection
 class ModernistRecipe {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
-  @Index(unique: true, replace: true)
   late String uuid;
 
-  @Index()
   late String name;
 
   /// Course (e.g., "Mains", "Desserts", "Sauces")
   /// Defaults to "modernist" but can be changed
-  @Index()
   String course = 'modernist';
 
   /// Type of recipe: Concept or Technique
-  @Enumerated(EnumType.name)
   ModernistType type = ModernistType.concept;
 
   /// Technique category (e.g., "Spherification", "Foams", etc.)
   /// Used for filtering and organization
-  @Index()
   String? technique;
 
   /// Number of servings
@@ -296,7 +287,6 @@ class ModernistRecipe {
   int cookCount = 0;
 
   /// Source of the recipe
-  @Enumerated(EnumType.name)
   ModernistSource source = ModernistSource.personal;
 
   /// Paired recipe IDs (links to related Recipe items)

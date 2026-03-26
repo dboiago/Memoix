@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'cheese_entry.g.dart';
 
 /// Source of the cheese entry
 enum CheeseSource {
@@ -9,16 +7,13 @@ enum CheeseSource {
   imported, // Shared with the user
 }
 
-@collection
 class CheeseEntry {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Cheese name
-  @Index(type: IndexType.value)
   late String name;
 
   /// Country of origin
@@ -46,7 +41,6 @@ class CheeseEntry {
   String? imageUrl;
 
   /// Where this entry came from
-  @Enumerated(EnumType.name)
   CheeseSource source = CheeseSource.personal;
 
   /// Whether this is a favourite

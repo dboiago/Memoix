@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:isar/isar.dart';
 
 import '../../../app/theme/colors.dart';
 
-part 'course.g.dart';
 
 /// Represents a recipe course (like tabs in the spreadsheet)
-@collection
 class Course {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier
-  @Index(unique: true, replace: true)
   late String slug;
 
   /// Display name (e.g., "Mains", "Pickles")
@@ -47,7 +43,6 @@ class Course {
   });
 
   /// Get Color object from stored value
-  @ignore
   Color get color => Color(colorValue);
 
   /// Default courses matching your spreadsheet

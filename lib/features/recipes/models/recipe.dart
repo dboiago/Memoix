@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'recipe.g.dart';
 
 /// Source of the recipe
 enum RecipeSource {
@@ -11,24 +9,19 @@ enum RecipeSource {
   url,       // Imported from URL
 }
 
-@collection
 class Recipe {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Recipe name (e.g., "Korean Fried Chicken")
-  @Index(type: IndexType.value)
   late String name;
 
   /// Course category (e.g., "Mains", "Soups", "Desserts")
-  @Index()
   late String course;
 
   /// Cuisine style (e.g., "Korean", "French", "Italian")
-  @Index()
   String? cuisine;
 
   /// Subcategory within cuisine (e.g., "French" under "European")
@@ -84,7 +77,6 @@ class Recipe {
   List<String> stepImageMap = [];
 
   /// Where this recipe came from
-  @Enumerated(EnumType.name)
   RecipeSource source = RecipeSource.personal;
 
   /// Custom color override (stored as hex int)
@@ -144,7 +136,6 @@ class Recipe {
 
   /// Whether this recipe type supports pairing with other recipes.
   /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
-  @ignore
   bool get supportsPairing {
     const excludedCourses = {'pizzas', 'sandwiches', 'cellar', 'cheese'};
     return !excludedCourses.contains(course.toLowerCase());
@@ -413,7 +404,6 @@ class Recipe {
 }
 
 /// Embedded ingredient model
-@embedded
 class Ingredient {
   /// Ingredient name (e.g., "White Beans")
   String name = '';
@@ -516,7 +506,6 @@ class Ingredient {
 
 /// Embedded nutrition information model
 /// Based on schema.org NutritionInformation
-@embedded
 class NutritionInfo {
   /// Serving size description (e.g., "1 serving", "100g")
   String? servingSize;

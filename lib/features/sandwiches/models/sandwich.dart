@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'sandwich.g.dart';
 
 /// Source of the sandwich
 enum SandwichSource {
@@ -9,16 +7,13 @@ enum SandwichSource {
   imported, // Shared with the user
 }
 
-@collection
 class Sandwich {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Sandwich name (e.g., "Bourbon Street", "Cuban")
-  @Index(type: IndexType.value)
   late String name;
 
   /// Bread type (e.g., "Sourdough", "Ciabatta", "Hoagie Roll")
@@ -43,7 +38,6 @@ class Sandwich {
   String? imageUrl;
 
   /// Where this sandwich came from
-  @Enumerated(EnumType.name)
   SandwichSource source = SandwichSource.personal;
 
   /// Whether this is a favourite

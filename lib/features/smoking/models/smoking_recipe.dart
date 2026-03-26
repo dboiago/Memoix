@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'smoking_recipe.g.dart';
 
 /// Type of smoking entry
 enum SmokingType {
@@ -154,7 +152,6 @@ enum SmokingSource {
 }
 
 /// Seasoning/rub ingredient for smoking
-@embedded
 class SmokingSeasoning {
   String name = '';
   String? amount;
@@ -183,32 +180,25 @@ class SmokingSeasoning {
 }
 
 /// A smoking recipe entity
-@collection
 class SmokingRecipe {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
-  @Index(unique: true, replace: true)
   late String uuid;
 
-  @Index()
   late String name;
 
   /// Course (e.g., "Mains", "Sides", "Apps")
   /// Defaults to "smoking" but can be changed
-  @Index()
   String course = 'smoking';
 
   /// Type of entry: Pit Note (quick reference) or Recipe (full recipe)
-  @Enumerated(EnumType.name)
   SmokingType type = SmokingType.pitNote;
 
   /// The main item being smoked (e.g., "Brisket", "Pork Shoulder", "Mac & Cheese")
-  @Index()
   String? item;
 
   /// Category of the item being smoked (e.g., "Beef", "Pork", "Desserts")
   /// Used for filtering and color-coded display
-  @Index()
   String? category;
 
   /// Temperature for smoking (e.g., "275°F", "135°C")
@@ -221,7 +211,6 @@ class SmokingRecipe {
 
   /// Type of wood used (free-form text)
   /// Displayed as chips for Pit Notes
-  @Index()
   String wood = '';
 
   /// Seasonings/rub ingredients (for Pit Notes - displayed as chips)
@@ -259,7 +248,6 @@ class SmokingRecipe {
   int cookCount = 0;
 
   /// Source of the recipe
-  @Enumerated(EnumType.name)
   SmokingSource source = SmokingSource.personal;
 
   /// Paired recipe IDs (links to related Recipe items)

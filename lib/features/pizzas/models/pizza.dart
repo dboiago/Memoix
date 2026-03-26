@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'pizza.g.dart';
 
 /// Source of the pizza
 enum PizzaSource {
@@ -67,20 +65,16 @@ extension PizzaBaseExtension on PizzaBase {
   }
 }
 
-@collection
 class Pizza {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Pizza name (e.g., "Margherita", "BBQ Chicken")
-  @Index(type: IndexType.value)
   late String name;
 
   /// Base sauce type
-  @Enumerated(EnumType.name)
   PizzaBase base = PizzaBase.marinara;
 
   /// List of cheeses (e.g., "Mozzarella", "Parmesan", "Goat Cheese")
@@ -99,7 +93,6 @@ class Pizza {
   String? imageUrl;
 
   /// Where this pizza came from
-  @Enumerated(EnumType.name)
   PizzaSource source = PizzaSource.personal;
 
   /// Whether this is a favourite

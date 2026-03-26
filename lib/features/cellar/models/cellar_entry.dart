@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'cellar_entry.g.dart';
 
 /// Source of the cellar entry
 enum CellarSource {
@@ -9,16 +7,13 @@ enum CellarSource {
   imported, // Shared with the user
 }
 
-@collection
 class CellarEntry {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Item name
-  @Index(type: IndexType.value)
   late String name;
 
   /// Producer or origin
@@ -46,7 +41,6 @@ class CellarEntry {
   String? imageUrl;
 
   /// Where this entry came from
-  @Enumerated(EnumType.name)
   CellarSource source = CellarSource.personal;
 
   /// Whether this is a favourite

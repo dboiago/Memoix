@@ -1,11 +1,8 @@
-import 'package:isar/isar.dart';
 
-part 'scratch_pad.g.dart';
 
 /// Persisted scratch pad data including quick notes and recipe drafts
-@collection
 class ScratchPad {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Quick notes text content
   String quickNotes = '';
@@ -15,7 +12,6 @@ class ScratchPad {
 }
 
 /// Embedded ingredient for recipe drafts
-@embedded
 class DraftIngredient {
   String name = '';
   String? quantity;
@@ -43,12 +39,10 @@ class DraftIngredient {
 }
 
 /// Persisted temporary recipe draft
-@collection
 class RecipeDraft {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for the draft
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Recipe name
@@ -99,7 +93,6 @@ class RecipeDraft {
   DateTime updatedAt = DateTime.now();
 
   /// Helper getters for backward compatibility with existing UI code
-  @ignore
   String get ingredients {
     // If we have structured ingredients, convert them to text
     if (structuredIngredients.isNotEmpty) {
@@ -112,14 +105,12 @@ class RecipeDraft {
   }
 
   /// Helper setter for backward compatibility - writes to legacy field
-  @ignore
   set ingredients(String value) {
     legacyIngredients = value;
     // Clear structured data when writing raw text
     structuredIngredients = [];
   }
 
-  @ignore
   String get directions {
     // If we have structured directions, convert them to text
     if (structuredDirections.isNotEmpty) {
@@ -130,7 +121,6 @@ class RecipeDraft {
   }
 
   /// Helper setter for backward compatibility - writes to legacy field
-  @ignore
   set directions(String value) {
     legacyDirections = value;
     // Clear structured data when writing raw text
@@ -138,10 +128,8 @@ class RecipeDraft {
   }
 
   /// Helper getter/setter for comments field (renamed to notes)
-  @ignore
   String get comments => notes;
 
-  @ignore
   set comments(String value) {
     notes = value;
   }
