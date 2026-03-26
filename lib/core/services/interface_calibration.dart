@@ -1,6 +1,6 @@
 import 'dart:math' show min;
-import 'package:isar/isar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../database/app_database.dart';
 import '../../features/mealplan/models/meal_plan.dart';
 import '../../features/recipes/models/recipe.dart';
 import 'integrity_service.dart';
@@ -90,7 +90,7 @@ class _Spec {
   final String key;
   final Set<String> events;
   final Future<bool> Function(
-      String, Map<String, dynamic>, Isar, LocalInterfaceIndex) condition;
+      String, Map<String, dynamic>, AppDatabase, LocalInterfaceIndex) condition;
   final String? alertId;
   final String? breadcrumbId;
   const _Spec({
@@ -103,7 +103,7 @@ class _Spec {
 }
 
 class CalibrationEvaluator {
-  final Isar _db;
+  final AppDatabase _db;
   final LocalInterfaceIndex _idx;
   static bool _sessionHasFired = false;
 
@@ -121,7 +121,7 @@ class CalibrationEvaluator {
         .length;
   }
 
-  CalibrationEvaluator({required Isar db, required LocalInterfaceIndex idx})
+  CalibrationEvaluator({required AppDatabase db, required LocalInterfaceIndex idx})
       : _db = db,
         _idx = idx;
 
@@ -280,11 +280,14 @@ class CalibrationEvaluator {
       events: {'activity.meal_plan_updated'},
       alertId: 'cache.label_02',
       condition: (ev, m, db, idx) async {
-        final plans = await db.mealPlans.where().findAll();
+        final allMeals = await db.select(db.plannedMeals).get();
+        if (allMeals.isEmpty) return false;
+        final planIds = allMeals.map((m) => m.mealPlanId).toSet();
+        final allPlans = await db.select(db.mealPlans).get();
+        final plans = allPlans.where((p) => planIds.contains(p.id)).toList();
         if (plans.isEmpty) return false;
-        
+
         final daysWithMeals = plans
-            .where((p) => p.meals.isNotEmpty)
             .map((p) => p.date)
             .toSet()
             .toList()
@@ -315,7 +318,7 @@ class CalibrationEvaluator {
       condition: (ev, m, db, idx) async {
         if (m['is_adding'] != true) return false;
         
-        final count = await db.recipes.filter().isFavoriteEqualTo(true).count();
+        final count = (await db.recipeDao.getFavoriteRecipes()).length;
         return count >= 5;
       },
     ),
@@ -326,14 +329,8 @@ class CalibrationEvaluator {
       condition: (ev, m, db, idx) async {
         if (!idx.showHeaderImages) return false;
         
-        return await db.recipes
-            .filter()
-            .sourceEqualTo(RecipeSource.personal)
-            .and()
-            .headerImageIsNotNull()
-            .and()
-            .headerImageIsNotEmpty()
-            .count() >= 4;
+        final items = await db.recipeDao.getRecipesBySource(RecipeSource.personal.name);
+        return items.where((r) => r.headerImage != null && r.headerImage!.isNotEmpty).length >= 4;
       },
     ),
     _Spec(
@@ -358,10 +355,10 @@ class CalibrationEvaluator {
       condition: (ev, m, db, idx) async {
         if (m['recipe_source'] != 'personal') return false;
         
-        final total = await db.recipes.filter().sourceEqualTo(RecipeSource.personal).count();
+        final total = (await db.recipeDao.getRecipesBySource(RecipeSource.personal.name)).length;
         if (total < 40) return false;
-        
-        final items = await db.recipes.filter().sourceEqualTo(RecipeSource.personal).findAll();
+
+        final items = await db.recipeDao.getRecipesBySource(RecipeSource.personal.name);
         final filtered = items.where((r) => 
             r.directions.length >= 4 && 
             r.ingredients.length >= 5
