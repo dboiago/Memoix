@@ -69,7 +69,8 @@ dependencies:
   device_info_plus: ^11.2.0
   google_sign_in: ^7.2.0
   googleapis: ^16.0.0
-  googleapis_auth: ^2.2.0
+  # Flutter 3.41.6 uses Dart 3.11.4 pinned to meta 1.17.0; googleapis_auth ^2.2.0, brings in google_cloud, which requires meta ^1.18.1
+  googleapis_auth: ^2.1.0
   flutter_appauth: ^6.0.2
   flutter_secure_storage: ^9.0.0
   
@@ -82,11 +83,6 @@ dependencies:
   # PDF generation & sharing
   pdf: ^3.10.8
   printing: ^5.13.1
-
-# Flutter 3.41.6 uses Dart 3.11.4 pinned to meta 1.17.0; googleapis_auth ^2.2.0, brings in google_cloud, which requires meta ^1.18.1
-# otherwise can try googleapis_auth: ^2.1.0 instead
-dependency_overrides:
-meta: 1.17.0
 
 dev_dependencies:
   flutter_test:
