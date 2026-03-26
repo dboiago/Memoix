@@ -6,11 +6,6 @@ version: 1.0.0+1
 environment:
   sdk: '>=3.2.0 <4.0.0'
 
-# Flutter 3.41.6 uses Dart 3.11.4 pinned to meta 1.17.0; googleapis_auth ^2.2.0, brings in google_cloud, which requires meta ^1.18.1
-dependency_overrides:
-  meta: 1.17.0
-  google_cloud: 0.2.0
-
 dependencies:
   flutter:
     sdk: flutter
@@ -22,8 +17,8 @@ dependencies:
   cached_network_image: ^3.3.1
   
   # State Management
-  flutter_riverpod: ^2.4.9
-  riverpod_annotation: ^2.3.3
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
   
   # Local Database
   drift: ^2.22.1
@@ -74,7 +69,7 @@ dependencies:
   device_info_plus: ^11.2.0
   google_sign_in: ^7.2.0
   googleapis: ^16.0.0
-  googleapis_auth: ^2.2.0
+  googleapis_auth: ^2.1.0
   flutter_appauth: ^6.0.2
   flutter_secure_storage: ^9.0.0
   
@@ -95,7 +90,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.14.3
   build_runner: ^2.13.1
   drift_dev: ^2.22.1
-  riverpod_generator: ^2.3.9
+  riverpod_generator: ^2.6.3
   json_serializable: ^6.13.1
 
 flutter:
@@ -123,3 +118,7 @@ flutter_launcher_icons:
 
   adaptive_icon_background: "#242424"
   adaptive_icon_foreground: "assets/icons/memoix-appicon-orange-transparent-1200.png"
+
+# Flutter 3.41.6 uses Dart 3.11.4 pinned to meta 1.17.0; googleapis_auth ^2.2.0, brings in google_cloud, which requires meta ^1.18.1
+dependency_overrides:
+  meta: 1.17.0
