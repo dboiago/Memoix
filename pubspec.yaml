@@ -67,7 +67,7 @@ dependencies:
   
   # External Storage
   device_info_plus: ^11.2.0
-  google_sign_in: ^7.2.0
+  google_sign_in: ^6.2.2
   googleapis: ^14.0.0
   googleapis_auth: ^1.6.0
   flutter_appauth: ^6.0.2
