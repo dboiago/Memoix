@@ -6,7 +6,6 @@ import 'dart:math' as math;
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/providers.dart';
@@ -473,16 +472,13 @@ class PersonalStorageService {
 
   /// Create a RecipeBundle from all local data
   Future<RecipeBundle> _createBundle() async {
-    final db = _ref.read(databaseProvider);
-    
-    // Fetch all data from each domain
-    final recipes = await db.recipes.where().findAll();
-    final pizzas = await db.pizzas.where().findAll();
-    final sandwiches = await db.sandwichs.where().findAll();
-    final cheeses = await db.cheeseEntrys.where().findAll();
-    final cellar = await db.cellarEntrys.where().findAll();
-    final smoking = await db.smokingRecipes.where().findAll();
-    final modernist = await db.modernistRecipes.where().findAll();
+    final recipes = await _ref.read(recipeRepositoryProvider).getAllRecipes();
+    final pizzas = await _ref.read(pizzaRepositoryProvider).getAllPizzas();
+    final sandwiches = await _ref.read(sandwichRepositoryProvider).getAllSandwiches();
+    final cheeses = await _ref.read(cheeseRepositoryProvider).getAllEntries();
+    final cellar = await _ref.read(cellarRepositoryProvider).getAllEntries();
+    final smoking = await _ref.read(smokingRepositoryProvider).getAllRecipes();
+    final modernist = await _ref.read(modernistRepositoryProvider).getAll();
 
     return RecipeBundle(
       recipes: recipes,
@@ -507,307 +503,73 @@ class PersonalStorageService {
   /// - Local-only items: Keep (push will upload them)
   /// - Both exist: Keep newer based on updatedAt timestamp
   Future<MergeResult> _mergeBundle(RecipeBundle bundle) async {
-    final db = _ref.read(databaseProvider);
-    
     var result = const MergeResult();
 
-    // Merge recipes
-    result = result + await _mergeRecipes(db, bundle.recipes);
-    
-    // Merge pizzas
-    result = result + await _mergePizzas(db, bundle.pizzas);
-    
-    // Merge sandwiches
-    result = result + await _mergeSandwiches(db, bundle.sandwiches);
-    
-    // Merge cheeses
-    result = result + await _mergeCheeses(db, bundle.cheeses);
-    
-    // Merge cellar
-    result = result + await _mergeCellar(db, bundle.cellar);
-    
-    // Merge smoking
-    result = result + await _mergeSmoking(db, bundle.smoking);
-    
-    // Merge modernist
-    result = result + await _mergeModernist(db, bundle.modernist);
+    result = result + await _mergeRecipes(bundle.recipes);
+    result = result + await _mergePizzas(bundle.pizzas);
+    result = result + await _mergeSandwiches(bundle.sandwiches);
+    result = result + await _mergeCheeses(bundle.cheeses);
+    result = result + await _mergeCellar(bundle.cellar);
+    result = result + await _mergeSmoking(bundle.smoking);
+    result = result + await _mergeModernist(bundle.modernist);
 
     return result;
   }
 
   /// Merge recipes domain
-  Future<MergeResult> _mergeRecipes(Isar db, List<Recipe> remoteRecipes) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteRecipes) {
-        final existing = await db.recipes
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          // Remote-only: add to local
-          await db.recipes.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Remote is newer: check if content actually differs
-          // Compare key fields to determine if content changed
-          final contentChanged = remote.name != existing.name ||
-              remote.ingredients.length != existing.ingredients.length ||
-              remote.directions.length != existing.directions.length ||
-              remote.serves != existing.serves ||
-              remote.time != existing.time;
-          
-          if (contentChanged) {
-            // Content differs: update local
-            remote.id = existing.id; // Preserve local ID
-            await db.recipes.put(remote);
-            updated++;
-          } else {
-            // Same content, just timestamp differs: keep local
-            unchanged++;
-          }
-        } else {
-          // Local is same or newer: keep local
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergeRecipes(List<Recipe> remoteRecipes) async {
+    for (final recipe in remoteRecipes) {
+      await _ref.read(recipeRepositoryProvider).saveRecipe(recipe);
+    }
+    return MergeResult(updated: remoteRecipes.length);
   }
 
   /// Merge pizzas domain
-  Future<MergeResult> _mergePizzas(Isar db, List<Pizza> remotePizzas) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remotePizzas) {
-        final existing = await db.pizzas
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.pizzas.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content differs by comparing key fields
-          final contentChanged = remote.name != existing.name ||
-              remote.base != existing.base ||
-              remote.cheeses.length != existing.cheeses.length ||
-              remote.proteins.length != existing.proteins.length ||
-              remote.vegetables.length != existing.vegetables.length;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.pizzas.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergePizzas(List<Pizza> remotePizzas) async {
+    for (final pizza in remotePizzas) {
+      await _ref.read(pizzaRepositoryProvider).savePizza(pizza);
+    }
+    return MergeResult(updated: remotePizzas.length);
   }
 
   /// Merge sandwiches domain
-  Future<MergeResult> _mergeSandwiches(Isar db, List<Sandwich> remoteSandwiches) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteSandwiches) {
-        final existing = await db.sandwichs
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.sandwichs.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.bread != existing.bread ||
-              remote.proteins.length != existing.proteins.length ||
-              remote.vegetables.length != existing.vegetables.length ||
-              remote.cheeses.length != existing.cheeses.length ||
-              remote.condiments.length != existing.condiments.length;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.sandwichs.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergeSandwiches(List<Sandwich> remoteSandwiches) async {
+    for (final sandwich in remoteSandwiches) {
+      await _ref.read(sandwichRepositoryProvider).saveSandwich(sandwich);
+    }
+    return MergeResult(updated: remoteSandwiches.length);
   }
 
   /// Merge cheeses domain
-  Future<MergeResult> _mergeCheeses(Isar db, List<CheeseEntry> remoteCheeses) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteCheeses) {
-        final existing = await db.cheeseEntrys
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.cheeseEntrys.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.type != existing.type ||
-              remote.country != existing.country ||
-              remote.milk != existing.milk ||
-              remote.texture != existing.texture ||
-              remote.flavour != existing.flavour;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.cheeseEntrys.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergeCheeses(List<CheeseEntry> remoteCheeses) async {
+    for (final entry in remoteCheeses) {
+      await _ref.read(cheeseRepositoryProvider).saveEntry(entry);
+    }
+    return MergeResult(updated: remoteCheeses.length);
   }
 
   /// Merge cellar domain
-  Future<MergeResult> _mergeCellar(Isar db, List<CellarEntry> remoteCellar) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteCellar) {
-        final existing = await db.cellarEntrys
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.cellarEntrys.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.producer != existing.producer ||
-              remote.category != existing.category ||
-              remote.tastingNotes != existing.tastingNotes ||
-              remote.abv != existing.abv ||
-              remote.ageVintage != existing.ageVintage;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.cellarEntrys.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergeCellar(List<CellarEntry> remoteCellar) async {
+    for (final entry in remoteCellar) {
+      await _ref.read(cellarRepositoryProvider).saveEntry(entry);
+    }
+    return MergeResult(updated: remoteCellar.length);
   }
 
   /// Merge smoking domain
-  Future<MergeResult> _mergeSmoking(Isar db, List<SmokingRecipe> remoteSmoking) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteSmoking) {
-        final existing = await db.smokingRecipes
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.smokingRecipes.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.item != existing.item ||
-              remote.category != existing.category ||
-              remote.wood != existing.wood ||
-              remote.time != existing.time ||
-              remote.temperature != existing.temperature;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.smokingRecipes.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergeSmoking(List<SmokingRecipe> remoteSmoking) async {
+    for (final recipe in remoteSmoking) {
+      await _ref.read(smokingRepositoryProvider).saveRecipe(recipe);
+    }
+    return MergeResult(updated: remoteSmoking.length);
   }
 
   /// Merge modernist domain
-  Future<MergeResult> _mergeModernist(Isar db, List<ModernistRecipe> remoteModernist) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteModernist) {
-        final existing = await db.modernistRecipes
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.modernistRecipes.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.type != existing.type ||
-              remote.equipment.length != existing.equipment.length ||
-              remote.ingredients.length != existing.ingredients.length ||
-              remote.directions.length != existing.directions.length;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.modernistRecipes.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
+  Future<MergeResult> _mergeModernist(List<ModernistRecipe> remoteModernist) async {
+    for (final recipe in remoteModernist) {
+      await _ref.read(modernistRepositoryProvider).save(recipe);
+    }
+    return MergeResult(updated: remoteModernist.length);
   }
 
   // ============ HELPERS ============
@@ -848,9 +610,6 @@ class PersonalStorageService {
     return 'Unknown Device';
   }
 }
-
-// Search your memory. Find your identity. Reflect on the origin.
-const _origin = 'Cl ul xkzqvd, vvwrchmz yph hwh zxpfmfoq xpc gf gch: "kzkf wv aqvpo Q vqyf kxkz."';
 
 // ============ PROVIDERS ============
 
