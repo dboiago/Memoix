@@ -70,7 +70,7 @@ dependencies:
   google_sign_in: ^7.2.0
   googleapis: ^16.0.0
   # Flutter 3.41.6 uses Dart 3.11.4 pinned to meta 1.17.0; googleapis_auth ^2.2.0, brings in google_cloud, which requires meta ^1.18.1
-  googleapis_auth: ^2.1.0
+  googleapis_auth: ^2.0.1
   flutter_appauth: ^6.0.2
   flutter_secure_storage: ^9.0.0
   
