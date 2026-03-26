@@ -12,24 +12,23 @@ dependencies:
   
   # UI & Design
   cupertino_icons: ^1.0.6
-  google_fonts: ^8.0.2
+  google_fonts: ^6.1.0
   flutter_svg: ^2.0.9
   cached_network_image: ^3.3.1
   
   # State Management
-  flutter_riverpod: ^2.6.1
-  riverpod_annotation: ^2.6.1
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
   
   # Local Database
-  drift: ^2.22.1
-  drift_flutter: ^0.2.4
-  sqlite3_flutter_libs: ^0.5.27
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
   path_provider: ^2.1.2
   
   # Networking
   http: ^1.2.0
   connectivity_plus: ^6.1.1
-  package_info_plus: ^9.0.0
+  package_info_plus: ^8.1.2
   webview_flutter: ^4.10.0
   
   # Recipe URL Parsing
@@ -42,39 +41,39 @@ dependencies:
   image_cropper: ^8.0.2
   
   # Sharing & Deep Links
-  share_plus: ^12.0.1
+  share_plus: ^7.2.1
   qr_flutter: ^4.1.0
-  mobile_scanner: ^7.2.0
+  mobile_scanner: ^4.0.1
   app_links: ^3.5.1
   
   # Handles Android APK download & install intent
-  ota_update: ^7.1.0
+  ota_update: ^5.1.0
 
   # Utilities
-  uuid: ^4.5.3
-  intl: ^0.20.2
+  uuid: ^4.3.3
+  intl: ^0.19.0
   collection: ^1.18.0
   url_launcher: ^6.3.0
   shared_preferences: ^2.2.2
   file_picker: ^10.1.0
-  wakelock_plus: ^1.5.1
+  wakelock_plus: ^1.1.4
   flutter_ringtone_player: ^4.0.0+3
   audioplayers: ^6.0.0
   crypto: ^3.0.0
   encrypt: ^5.0.3
-  json_annotation: ^4.11.0
-  vibration: ^3.1.8
+  json_annotation: ^4.9.0
+  vibration: ^2.0.0
   
   # External Storage
   device_info_plus: ^11.2.0
-  google_sign_in: ^7.2.0
-  googleapis: ^16.0.0
-  googleapis_auth: ^2.1.0
+  google_sign_in: ^6.2.2
+  googleapis: ^14.0.0
+  googleapis_auth: ^1.6.0
   flutter_appauth: ^6.0.2
   flutter_secure_storage: ^9.0.0
   
   # Desktop Window Management
-  window_manager: ^0.5.1
+  window_manager: ^0.4.3
   
   # Configuration
   flutter_dotenv: ^5.2.1
@@ -86,12 +85,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.1
   flutter_launcher_icons: ^0.14.3
-  build_runner: ^2.4.9
-  drift_dev: ^2.22.1
-  riverpod_generator: ^2.6.3
-  json_serializable: ^6.13.1
+  build_runner: ^2.4.8
+  isar_generator: ^3.1.0+1
+  riverpod_generator: ^2.3.9
+  json_serializable: ^6.7.1
 
 flutter:
   uses-material-design: true
@@ -118,7 +117,3 @@ flutter_launcher_icons:
 
   adaptive_icon_background: "#242424"
   adaptive_icon_foreground: "assets/icons/memoix-appicon-orange-transparent-1200.png"
-
-# Flutter 3.41.6 uses Dart 3.11.4 pinned to meta 1.17.0; googleapis_auth ^2.2.0, brings in google_cloud, which requires meta ^1.18.1
-dependency_overrides:
-  meta: 1.17.0
