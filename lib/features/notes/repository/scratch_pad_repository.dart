@@ -102,7 +102,7 @@ final scratchPadRepositoryProvider = Provider<ScratchPadRepository>((ref) {
 });
 
 /// Provider for quick notes stream
-final quickNotesProvider = StreamProvider<String>((ref) {
+final quickNotesProvider = StreamProvider<ScratchPad?>((ref) {
   return ref.watch(scratchPadRepositoryProvider).watchQuickNotes();
 });
 
