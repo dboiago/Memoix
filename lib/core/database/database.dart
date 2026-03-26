@@ -1,97 +1,69 @@
-import 'package:isar/isar.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:drift/drift.dart';
+import 'package:drift_flutter/drift_flutter.dart';
 
-import '../../features/recipes/models/recipe.dart';
-import '../../features/recipes/models/course.dart';
-import '../../features/pizzas/models/pizza.dart';
-import '../../features/sandwiches/models/sandwich.dart';
-import '../../features/smoking/models/smoking_recipe.dart';
-import '../../features/modernist/models/modernist_recipe.dart';
-import '../../features/shopping/models/shopping_list.dart';
-import '../../features/mealplan/models/meal_plan.dart';
-import '../../features/statistics/models/cooking_stats.dart';
-import '../../features/notes/models/scratch_pad.dart';
-import '../../features/cheese/models/cheese_entry.dart';
-import '../../features/cellar/models/cellar_entry.dart';
+import '../../features/recipes/models/course.dart' as domainModels;
+import 'app_database.dart';
 
-/// Singleton database manager for Memoix
+/// Compatibility bridge for callers that still reference MemoixDatabase.
+/// The Isar-based implementation has been replaced by [AppDatabase] (Drift).
+/// Migrate callers directly to [AppDatabase] when possible.
 class MemoixDatabase {
-  static Isar? _instance;
-
   MemoixDatabase._();
 
-  /// Get the Isar database instance
-  static Isar get instance {
-    if (_instance == null) {
-      throw Exception('Database not initialized. Call MemoixDatabase.initialize() first.');
-    }
-    return _instance!;
-  }
+  /// The underlying Drift database instance.
+  static AppDatabase get instance => AppDatabase.instance;
 
-  /// Initialize the database
+  /// Initialize the Drift database and seed default courses.
   static Future<void> initialize() async {
-    if (_instance != null) return;
-
-    final dir = await getApplicationDocumentsDirectory();
-    
-    _instance = await Isar.open(
-      [
-        RecipeSchema,
-        CourseSchema,
-        PizzaSchema,
-        SandwichSchema,
-        SmokingRecipeSchema,
-        ModernistRecipeSchema,
-        ShoppingListSchema,
-        MealPlanSchema,
-        CookingLogSchema,
-        ScratchPadSchema,
-        RecipeDraftSchema,
-        CheeseEntrySchema,
-        CellarEntrySchema,
-      ],
-      directory: dir.path,
-      name: 'memoix',
-    );
-
-    // Seed default courses if empty
+    AppDatabase.initialize(driftDatabase(name: 'memoix'));
     await _seedDefaultCourses();
   }
 
-  /// Seed default courses on first run
+  /// Seed default courses only when the courses table is empty.
   static Future<void> _seedDefaultCourses() async {
-    final db = instance;
-    final count = await db.courses.count();
-    
-    if (count == 0) {
-      await db.writeTxn(() async {
-        await db.courses.putAll(Course.defaults);
-      });
+    final existing = await AppDatabase.instance.recipeDao.getAllCourses();
+    if (existing.isEmpty) {
+      await refreshCourses();
     }
   }
 
-  /// Refresh courses with latest defaults (updates order, names, etc.)
-  /// Call this on app startup to apply course changes
+  /// Refresh courses with latest defaults.
   static Future<void> refreshCourses() async {
-    final db = instance;
-    await db.writeTxn(() async {
-      // Clear existing courses and replace with fresh defaults
-      await db.courses.clear();
-      await db.courses.putAll(Course.defaults);
+    final db = AppDatabase.instance;
+    await db.transaction(() async {
+      await db.delete(db.courses).go();
+      for (final c in domainModels.Course.defaults) {
+        await db.recipeDao.saveCourse(CoursesCompanion(
+          slug: Value(c.slug),
+          name: Value(c.name),
+          iconName: Value(c.iconName),
+          sortOrder: Value(c.sortOrder),
+          colorValue: Value(c.colorValue),
+          isVisible: Value(c.isVisible),
+        ));
+      }
     });
   }
 
-  /// Close the database (call on app dispose)
-  static Future<void> close() async {
-    await _instance?.close();
-    _instance = null;
-  }
-
-  /// Clear all data (for testing/reset)
+  /// Delete all data from every table and re-seed default courses.
   static Future<void> clearAll() async {
-    final db = instance;
-    await db.writeTxn(() async {
-      await db.clear();
+    final db = AppDatabase.instance;
+    await db.transaction(() async {
+      await db.delete(db.recipes).go();
+      await db.delete(db.ingredients).go();
+      await db.delete(db.courses).go();
+      await db.delete(db.pizzas).go();
+      await db.delete(db.sandwiches).go();
+      await db.delete(db.smokingRecipes).go();
+      await db.delete(db.shoppingLists).go();
+      await db.delete(db.shoppingItems).go();
+      await db.delete(db.mealPlans).go();
+      await db.delete(db.plannedMeals).go();
+      await db.delete(db.cookingLogs).go();
+      await db.delete(db.scratchPads).go();
+      await db.delete(db.recipeDrafts).go();
+      await db.delete(db.cheeseEntries).go();
+      await db.delete(db.cellarEntries).go();
     });
     await _seedDefaultCourses();
   }
