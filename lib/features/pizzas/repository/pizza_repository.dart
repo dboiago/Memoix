@@ -8,7 +8,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/pizza.dart' hide Pizza;
+import '../models/pizza.dart';
 
 /// Repository for pizza data operations
 class PizzaRepository {

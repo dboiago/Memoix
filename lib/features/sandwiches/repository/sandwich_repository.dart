@@ -8,7 +8,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/sandwich.dart' hide Sandwich;
+import '../models/sandwich.dart';
 
 /// Repository for sandwich data operations
 class SandwichRepository {

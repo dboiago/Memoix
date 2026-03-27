@@ -8,7 +8,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/smoking_recipe.dart' hide SmokingRecipe;
+import '../models/smoking_recipe.dart';
 
 /// Repository for smoking recipe operations
 class SmokingRepository {
