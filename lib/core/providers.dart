@@ -29,6 +29,10 @@ final shoppingListsProvider = StreamProvider<List<ShoppingList>>((ref) {
   return service.watchAll();
 });
 
+final shoppingItemsProvider = StreamProvider.family<List<ShoppingItem>, int>((ref, listId) {
+  return ref.watch(databaseProvider).shoppingDao.watchItemsForList(listId);
+});
+
 // Theme mode provider with persistence
 final themeModeProvider = StateNotifierProvider<ThemeModeNotifier, ThemeMode>((ref) {
   return ThemeModeNotifier();

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -7,6 +8,7 @@ import '../../../app/theme/colors.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../core/database/app_database.dart';
 import '../models/shopping_list.dart';
 import '../models/shopping_list_item.dart';
 import '../../../core/utils/ingredient_categorizer.dart';
@@ -123,7 +125,11 @@ class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final progress = widget.list.items.isEmpty ? 0.0 : widget.list.checkedCount / widget.list.items.length;
+    final itemsAsync = ref.watch(shoppingItemsProvider(widget.list.id));
+    final items = itemsAsync.valueOrNull ?? const [];
+    final itemCount = items.length;
+    final checkedCount = items.where((i) => i.isChecked).length;
+    final progress = itemCount == 0 ? 0.0 : checkedCount / itemCount;
     final isPendingDelete =
       _isPendingDelete || ref.read(shoppingListServiceProvider).isPendingDelete(widget.list.id);
 
@@ -205,7 +211,7 @@ class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
                         ),
                       ),
                     ),
-                    if (widget.list.isComplete)
+                    if (widget.list.completedAt != null)
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
@@ -231,7 +237,7 @@ class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  '${widget.list.checkedCount} of ${widget.list.items.length} items',
+                  '$checkedCount of $itemCount items',
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: theme.colorScheme.onSurfaceVariant,
                   ),
@@ -264,32 +270,25 @@ class ShoppingListDetailScreen extends ConsumerWidget {
         body: Center(child: Text('Error: $err')),
       ),
       data: (lists) {
-        final list = lists.firstWhere(
-          (l) => l.uuid == listUuid,
-          orElse: () => ShoppingList()..name = 'Not Found',
-        );
+        final list = lists.where((l) => l.uuid == listUuid).firstOrNull;
 
-        if (list.name == 'Not Found') {
+        if (list == null) {
           return Scaffold(
             appBar: AppBar(title: const Text('List Not Found')),
             body: const Center(child: Text('This shopping list no longer exists.')),
           );
         }
 
-        // UUID migration is now handled internally by service methods
-        // (addItem, toggleItemById, scheduleItemDelete, etc.)
-        // No need to call ensureItemUuids here — doing so races with writes.
-
+        final decodedRecipeIds = (jsonDecode(list.recipeIds) as List).cast<String>();
         return Scaffold(
           appBar: AppBar(
             title: Text(list.name),
             actions: [
-              // Nutrition summary chip if list has recipe IDs
-              if (list.recipeIds.isNotEmpty)
-                _ShoppingListNutritionChip(recipeIds: list.recipeIds),
+              if (decodedRecipeIds.isNotEmpty)
+                _ShoppingListNutritionChip(recipeIds: decodedRecipeIds),
               IconButton(
                 icon: const Icon(Icons.share),
-                onPressed: () => _shareList(context, list),
+                onPressed: () => _shareList(context, ref, list),
               ),
               PopupMenuButton<String>(
                 onSelected: (value) => _handleMenuAction(context, ref, value, list),
@@ -304,66 +303,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
               ),
             ],
           ),
-          body: ListView(
-            padding: const EdgeInsets.only(bottom: 88),
-            children: list.groupedItems.entries.map((entry) {
-              final category = entry.key;
-              final items = entry.value;
-              
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  _CategoryHeader(title: category),
-                  ...items.map((item) {
-                    final itemUuid = item.uuid;
-                    final itemIndex = list.items.indexOf(item);
-                    return _ShoppingItemTile(
-                      item: item,
-                      onToggle: () async {
-                        print('[TOGGLE] Tapping item: ${item.name}, UUID: "$itemUuid", index: $itemIndex');
-                        final result = await ref.read(shoppingListServiceProvider).toggleItemById(
-                          list,
-                          itemUuid,
-                          fallbackIndex: itemIndex,
-                        );
-                        print('[TOGGLE] After toggle, result: ${result != null ? "success" : "null"}');
-                      },
-                      onDelete: () async {
-                        await ref.read(shoppingListServiceProvider).scheduleItemDelete(
-                          listId: list.id,
-                          itemUuid: itemUuid,
-                          itemName: item.name,
-                          itemAmount: item.amount,
-                          itemRecipeSource: item.recipeSource,
-                          fallbackIndex: itemIndex,
-                          undoDuration: _ShoppingItemTileState.undoDuration,
-                        );
-                      },
-                      onUndo: () {
-                        ref.read(shoppingListServiceProvider).cancelPendingItemDelete(
-                          listId: list.id,
-                          itemUuid: itemUuid,
-                          fallbackIndex: itemIndex,
-                        );
-                      },
-                      isPendingDelete: () {
-                        return ref.read(shoppingListServiceProvider).isPendingItemDelete(
-                          listId: list.id,
-                          itemUuid: itemUuid,
-                          fallbackIndex: itemIndex,
-                        );
-                      },
-                      onEditAmount: () => _editItemAmount(context, ref, list, item),
-                      onRecipeTap: item.recipeSource != null && item.recipeSource!.isNotEmpty
-                          ? () => _navigateToRecipe(context, ref, item.recipeSource!)
-                          : null,
-                    );
-                  }),
-                ],
-              );
-            }).toList(),
-          ),
+          body: _ShoppingListDetailBody(list: list),
           floatingActionButton: FloatingActionButton(
             onPressed: () => _addItem(context, ref, list),
             child: const Icon(Icons.add),
@@ -373,18 +313,18 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     );
   }
 
-  void _shareList(BuildContext context, ShoppingList list) {
-    // Share as text
+  Future<void> _shareList(BuildContext context, WidgetRef ref, ShoppingList list) async {
+    final items = await ref.read(databaseProvider).shoppingDao.getItemsForList(list.id);
     final buffer = StringBuffer();
     buffer.writeln('Shopping List: ${list.name}');
     buffer.writeln();
-    
-    for (final item in list.items) {
+
+    for (final item in items) {
       final check = item.isChecked ? '[x]' : '[ ]';
       final amount = item.amount != null ? '${item.amount} ' : '';
       buffer.writeln('$check $amount${item.name}');
     }
-    
+
     // Use share_plus to share
     // Share.share(buffer.toString());
   }
@@ -395,13 +335,11 @@ class ShoppingListDetailScreen extends ConsumerWidget {
         _showRenameDialog(context, ref, list);
         break;
       case 'clear':
-        // Clear checked items
-        final checkedUuids = <String>[];
-        for (final item in list.items) {
-          if (item.isChecked && item.uuid.isNotEmpty) {
-            checkedUuids.add(item.uuid);
-          }
-        }
+        final currentItems = await ref.read(databaseProvider).shoppingDao.getItemsForList(list.id);
+        final checkedUuids = currentItems
+            .where((i) => i.isChecked && i.uuid.isNotEmpty)
+            .map((i) => i.uuid)
+            .toList();
         ShoppingList? latest;
         for (final itemUuid in checkedUuids) {
           latest = await ref.read(shoppingListServiceProvider).removeItemById(list, itemUuid) ?? latest;
@@ -461,12 +399,125 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     );
   }
 
-  void _editItemAmount(
-    BuildContext context,
-    WidgetRef ref,
-    ShoppingList list,
-    ShoppingItem item,
-  ) {
+  void _showRenameDialog(BuildContext context, WidgetRef ref, ShoppingList list) {
+    final controller = TextEditingController(text: list.name);
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Rename List'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          decoration: const InputDecoration(
+            labelText: 'List Name',
+            hintText: 'Enter a name for this list',
+          ),
+          textCapitalization: TextCapitalization.words,
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          FilledButton(
+            onPressed: () {
+              final newName = controller.text.trim();
+              if (newName.isNotEmpty) {
+                ref.read(shoppingListServiceProvider).rename(list, newName);
+              }
+              Navigator.pop(ctx);
+            },
+            child: const Text('Rename'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ShoppingListDetailBody extends ConsumerWidget {
+  final ShoppingList list;
+
+  const _ShoppingListDetailBody({required this.list});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final itemsAsync = ref.watch(shoppingItemsProvider(list.id));
+    return itemsAsync.when(
+      loading: () => const Center(child: CircularProgressIndicator()),
+      error: (e, _) => Center(child: Text('Error: $e')),
+      data: (items) => _buildList(context, ref, items),
+    );
+  }
+
+  Widget _buildList(BuildContext context, WidgetRef ref, List<ShoppingItem> items) {
+    final grouped = <String, List<ShoppingItem>>{};
+    for (final item in items) {
+      final cat = item.category ?? 'Other';
+      grouped.putIfAbsent(cat, () => []).add(item);
+    }
+    return ListView(
+      padding: const EdgeInsets.only(bottom: 88),
+      children: grouped.entries.map((entry) {
+        final category = entry.key;
+        final catItems = entry.value;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _CategoryHeader(title: category),
+            ...catItems.map((item) {
+              final itemUuid = item.uuid;
+              final itemIndex = items.indexOf(item);
+              return _ShoppingItemTile(
+                item: item,
+                onToggle: () async {
+                  print('[TOGGLE] Tapping item: ${item.name}, UUID: "$itemUuid", index: $itemIndex');
+                  final result = await ref.read(shoppingListServiceProvider).toggleItemById(
+                    list,
+                    itemUuid,
+                    fallbackIndex: itemIndex,
+                  );
+                  print('[TOGGLE] After toggle, result: ${result != null ? "success" : "null"}');
+                },
+                onDelete: () async {
+                  await ref.read(shoppingListServiceProvider).scheduleItemDelete(
+                    listId: list.id,
+                    itemUuid: itemUuid,
+                    itemName: item.name,
+                    itemAmount: item.amount,
+                    itemRecipeSource: item.recipeSource,
+                    fallbackIndex: itemIndex,
+                    undoDuration: _ShoppingItemTileState.undoDuration,
+                  );
+                },
+                onUndo: () {
+                  ref.read(shoppingListServiceProvider).cancelPendingItemDelete(
+                    listId: list.id,
+                    itemUuid: itemUuid,
+                    fallbackIndex: itemIndex,
+                  );
+                },
+                isPendingDelete: () {
+                  return ref.read(shoppingListServiceProvider).isPendingItemDelete(
+                    listId: list.id,
+                    itemUuid: itemUuid,
+                    fallbackIndex: itemIndex,
+                  );
+                },
+                onEditAmount: () => _editItemAmount(context, ref, item),
+                onRecipeTap: item.recipeSource != null && item.recipeSource!.isNotEmpty
+                    ? () => _navigateToRecipe(context, ref, item.recipeSource!)
+                    : null,
+              );
+            }),
+          ],
+        );
+      }).toList(),
+    );
+  }
+
+  void _editItemAmount(BuildContext context, WidgetRef ref, ShoppingItem item) {
     final controller = TextEditingController(text: item.amount ?? '');
     showDialog(
       context: context,
@@ -511,7 +562,6 @@ class ShoppingListDetailScreen extends ConsumerWidget {
     final repo = ref.read(recipeRepositoryProvider);
 
     if (names.length == 1) {
-      // Single recipe — navigate directly
       final results = await repo.searchRecipes(names.first);
       final match = results.where(
         (r) => r.name.toLowerCase() == names.first.toLowerCase(),
@@ -520,7 +570,6 @@ class ShoppingListDetailScreen extends ConsumerWidget {
         AppRoutes.toRecipeDetail(context, match.uuid);
       }
     } else {
-      // Multiple recipes — let the user pick
       if (!context.mounted) return;
       final theme = Theme.of(context);
       showModalBottomSheet(
@@ -559,41 +608,6 @@ class ShoppingListDetailScreen extends ConsumerWidget {
         ),
       );
     }
-  }
-
-  void _showRenameDialog(BuildContext context, WidgetRef ref, ShoppingList list) {
-    final controller = TextEditingController(text: list.name);
-    showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Rename List'),
-        content: TextField(
-          controller: controller,
-          autofocus: true,
-          decoration: const InputDecoration(
-            labelText: 'List Name',
-            hintText: 'Enter a name for this list',
-          ),
-          textCapitalization: TextCapitalization.words,
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
-          ),
-          FilledButton(
-            onPressed: () {
-              final newName = controller.text.trim();
-              if (newName.isNotEmpty) {
-                ref.read(shoppingListServiceProvider).rename(list, newName);
-              }
-              Navigator.pop(ctx);
-            },
-            child: const Text('Rename'),
-          ),
-        ],
-      ),
-    );
   }
 }
 
@@ -880,11 +894,19 @@ class _AddItemDialogState extends State<_AddItemDialog> {
               : () async {
                   if (_formKey.currentState!.validate()) {
                     setState(() => _isSubmitting = true);
-                    final item = ShoppingItem.create(
+                    final item = ShoppingItem(
+                      id: 0,
+                      shoppingListId: 0,
+                      uuid: '',
                       name: _nameController.text.trim(),
                       amount: _amountController.text.trim().isEmpty
                           ? null
                           : _amountController.text.trim(),
+                      unit: null,
+                      category: null,
+                      recipeSource: null,
+                      isChecked: false,
+                      manualNotes: null,
                     );
                     await widget.onAdd(item);
                   }
@@ -1223,8 +1245,9 @@ Future<void> _reportShoppingListCreated(
   ShoppingList list,
   String source,
 ) async {
+  final items = await ref.read(databaseProvider).shoppingDao.getItemsForList(list.id);
   int produce = 0, meat = 0, dairy = 0, pantry = 0, other = 0;
-  for (final item in list.items) {
+  for (final item in items) {
     final cat = (item.category ?? '').toLowerCase();
     if (cat.contains('produce') || cat.contains('fruit') || cat.contains('vegetable')) {
       produce++;
@@ -1243,8 +1266,8 @@ Future<void> _reportShoppingListCreated(
     'activity.shopping_list_created',
     metadata: {
       'source': source,
-      'item_count': list.items.length,
-      'recipe_count': list.recipeIds.length,
+      'item_count': items.length,
+      'recipe_count': (jsonDecode(list.recipeIds) as List).length,
       'produce_count': produce,
       'meat_count': meat,
       'dairy_count': dairy,
