@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:drift/drift.dart';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Recipe;
 import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
 import 'package:memoix/features/tools/measurement_converter.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
