@@ -256,10 +256,12 @@ class WeekView extends ConsumerWidget {
           itemBuilder: (context, dayIndex) {
             final date = weekStart.add(Duration(days: dayIndex));
             final plan = weeklyPlan.planForDay(dayIndex);
+            final dayMeals = weeklyPlan.mealsForDay(dayIndex);
             final isSelected = _isSameDay(date, selectedDate);
             return DayCard(
               date: date,
               plan: plan,
+              meals: dayMeals,
               isSelected: isSelected,
               onSelect: () => onDateSelected(date),
             );
@@ -277,6 +279,7 @@ class WeekView extends ConsumerWidget {
 class DayCard extends ConsumerStatefulWidget {
   final DateTime date;
   final MealPlan? plan;
+  final List<PlannedMeal> meals;
   final bool isSelected;
   final VoidCallback onSelect;
 
@@ -284,6 +287,7 @@ class DayCard extends ConsumerStatefulWidget {
     super.key,
     required this.date,
     this.plan,
+    required this.meals,
     required this.isSelected,
     required this.onSelect,
   });
@@ -349,9 +353,10 @@ class _DayCardState extends ConsumerState<DayCard> {
     int daysWithMeals = 0;
     int totalMeals = 0;
     for (final plan in weekly.dailyPlans.values) {
-      if (plan.meals.isNotEmpty) {
+      final planMeals = weekly.meals[plan.date] ?? [];
+      if (planMeals.isNotEmpty) {
         daysWithMeals++;
-        totalMeals += plan.meals.length;
+        totalMeals += planMeals.length;
       }
     }
     await IntegrityService.reportEvent(
@@ -447,8 +452,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                   ),
                 ),
                 subtitle: Text(
-                  widget.plan != null && !widget.plan!.isEmpty
-                      ? '${widget.plan!.mealCount} meal${widget.plan!.mealCount == 1 ? '' : 's'} planned'
+                  widget.meals.isNotEmpty
+                      ? '${widget.meals.length} meal${widget.meals.length == 1 ? '' : 's'} planned'
                       : 'No meals planned',
                   style: TextStyle(
                     color: theme.colorScheme.onSurfaceVariant,
@@ -461,7 +466,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                     child: Column(
                       children: [
                         // EMPTY STATE TEXT
-                        if (widget.plan == null || widget.plan!.isEmpty)
+                        if (widget.meals.isEmpty)
                           Padding(
                             padding: const EdgeInsets.all(24),
                             child: Text(
@@ -475,7 +480,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                           // These are inside the expansion tile. If dropped here,
                           // we FORCE the course to this section (e.g. Lunch).
                           ...MealCourse.all.map((course) {
-                            final meals = widget.plan!.getMeals(course);
+                            final meals = widget.meals.where((m) => m.course == course).toList();
                             
                             return DragTarget<_DraggableMealData>(
                               onWillAccept: (data) => true,
@@ -791,9 +796,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     int daysWithMeals = 0;
     int totalMeals = 0;
     for (final plan in weekly.dailyPlans.values) {
-      if (plan.meals.isNotEmpty) {
+      final planMeals = weekly.meals[plan.date] ?? [];
+      if (planMeals.isNotEmpty) {
         daysWithMeals++;
-        totalMeals += plan.meals.length;
+        totalMeals += planMeals.length;
       }
     }
     await IntegrityService.reportEvent(
