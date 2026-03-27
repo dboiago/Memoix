@@ -323,9 +323,9 @@ class RecipeBackupService {
         'imagePath': d.imagePath,
         'serves': d.serves,
         'time': d.time,
-        'ingredients': d.ingredients,
-        'directions': d.directions,
-        'comments': d.comments,
+        'structuredIngredients': d.structuredIngredients,
+        'structuredDirections': d.structuredDirections,
+        'notes': d.notes,
         'createdAt': d.createdAt.toIso8601String(),
         'updatedAt': d.updatedAt.toIso8601String(),
       }).toList(),
@@ -595,9 +595,9 @@ class RecipeBackupService {
             ..imagePath = draftJson['imagePath'] as String?
             ..serves = draftJson['serves'] as String?
             ..time = draftJson['time'] as String?
-            ..ingredients = draftJson['ingredients'] as String? ?? ''
-            ..directions = draftJson['directions'] as String? ?? ''
-            ..comments = draftJson['comments'] as String? ?? '';
+            ..structuredIngredients = draftJson['structuredIngredients'] as String? ?? '[]'
+            ..structuredDirections = draftJson['structuredDirections'] as String? ?? '[]'
+            ..notes = draftJson['notes'] as String? ?? '';
           
           if (draftJson['createdAt'] != null) {
             draft.createdAt = DateTime.parse(draftJson['createdAt'] as String);

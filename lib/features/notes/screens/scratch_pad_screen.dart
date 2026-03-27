@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:async';
 import 'dart:io';
 
@@ -83,7 +84,8 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
         children: [
           // Quick Notes Tab
           notesAsync.when(
-            data: (notes) {
+            data: (pad) {
+              final notes = pad?.quickNotes ?? '';
               if (_notesController.text != notes) {
                 _notesController.text = notes;
               }
@@ -166,9 +168,9 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     final recipe = Recipe()
       ..uuid = const Uuid().v4()
       ..name = draft.name
-      ..course = 'mains' // Default
-      ..ingredients = [] // Populate if you want simple conversion
-      ..directions = draft.directions.split('\n')
+      ..course = 'mains'
+      ..ingredients = []
+      ..directions = (jsonDecode(draft.structuredDirections) as List).cast<String>()
       ..source = RecipeSource.personal;
 
     Navigator.push(

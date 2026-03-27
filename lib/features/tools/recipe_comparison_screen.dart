@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -450,8 +451,13 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       ..name = _draftTitleController.text.trim().isEmpty 
           ? 'Compared Recipe Draft' 
           : _draftTitleController.text.trim()
-      ..structuredIngredients = draftIngredients
-      ..structuredDirections = steps
+      ..structuredIngredients = jsonEncode(draftIngredients.map((i) => {
+          'name': i.name,
+          'quantity': i.quantity,
+          'unit': i.unit,
+          'preparation': i.preparation,
+        }).toList())
+      ..structuredDirections = jsonEncode(steps)
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
 

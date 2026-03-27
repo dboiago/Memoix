@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -73,7 +74,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (widget.importedRecipe != null) {
       final recipe = widget.importedRecipe!;
       _nameController.text = recipe.name;
-      _selectedType = recipe.type;
+      _selectedType = SmokingTypeExtension.fromString(recipe.type);
       _itemController.text = recipe.item ?? '';
       _categoryController.text = recipe.category ?? '';
       _temperatureController.text = recipe.temperature;
@@ -82,14 +83,15 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _notesController.text = recipe.notes ?? '';
       _servesController.text = recipe.serves ?? '';
       // Filter stepImages to exclude header image to prevent duplicates
-      _imagePath = recipe.getFirstImage();
+      final decodedStepImages0 = (jsonDecode(recipe.stepImages) as List).cast<String>();
+      _imagePath = decodedStepImages0.isNotEmpty ? decodedStepImages0.first : recipe.imageUrl;
       final headerImg = _imagePath;
       _stepImages.addAll(
-        recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+        decodedStepImages0.where((img) => headerImg == null || img != headerImg),
       );
       
       // Load step image mappings
-      for (final mapping in recipe.stepImageMap) {
+      for (final mapping in (jsonDecode(recipe.stepImageMap) as List).cast<String>()) {
         final parts = mapping.split(':');
         if (parts.length == 2) {
           final stepIndex = int.tryParse(parts[0]);
@@ -100,26 +102,28 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         }
       }
 
-      for (final seasoning in recipe.seasonings) {
+      for (final s in (jsonDecode(recipe.seasoningsJson) as List)) {
+        final seasoning = s as Map<String, dynamic>;
         _seasonings.add(_SeasoningEntry(
-          nameController: TextEditingController(text: seasoning.name),
-          amountController: TextEditingController(text: seasoning.amount ?? ''),
+          nameController: TextEditingController(text: seasoning['name'] as String? ?? ''),
+          amountController: TextEditingController(text: seasoning['amount'] as String? ?? ''),
         ),);
       }
 
-      for (final ingredient in recipe.ingredients) {
+      for (final i in (jsonDecode(recipe.ingredientsJson) as List)) {
+        final ingredient = i as Map<String, dynamic>;
         _ingredients.add(_SeasoningEntry(
-          nameController: TextEditingController(text: ingredient.name),
-          amountController: TextEditingController(text: ingredient.amount ?? ''),
+          nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
+          amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
         ),);
       }
 
-      for (final direction in recipe.directions) {
+      for (final direction in (jsonDecode(recipe.directions) as List).cast<String>()) {
         _directionControllers.add(TextEditingController(text: direction));
       }
       
       // Load paired recipe IDs
-      _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
+      _pairedRecipeIds.addAll((jsonDecode(recipe.pairedRecipeIds) as List).cast<String>());
       
       // Load course
       _selectedCourse = recipe.course;
@@ -130,7 +134,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       if (recipe != null) {
         _existingRecipe = recipe;
         _nameController.text = recipe.name;
-        _selectedType = recipe.type;
+        _selectedType = SmokingTypeExtension.fromString(recipe.type);
         _itemController.text = recipe.item ?? '';
         _categoryController.text = recipe.category ?? '';
         _temperatureController.text = recipe.temperature;
@@ -139,14 +143,15 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _notesController.text = recipe.notes ?? '';
         _servesController.text = recipe.serves ?? '';
         // Filter stepImages to exclude header image to prevent duplicates
-        _imagePath = recipe.getFirstImage();
+        final decodedStepImages1 = (jsonDecode(recipe.stepImages) as List).cast<String>();
+        _imagePath = decodedStepImages1.isNotEmpty ? decodedStepImages1.first : recipe.imageUrl;
         final headerImg = _imagePath;
         _stepImages.addAll(
-          recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+          decodedStepImages1.where((img) => headerImg == null || img != headerImg),
         );
         
         // Load step image mappings
-        for (final mapping in recipe.stepImageMap) {
+        for (final mapping in (jsonDecode(recipe.stepImageMap) as List).cast<String>()) {
           final parts = mapping.split(':');
           if (parts.length == 2) {
             final stepIndex = int.tryParse(parts[0]);
@@ -157,26 +162,28 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           }
         }
 
-        for (final seasoning in recipe.seasonings) {
+        for (final s in (jsonDecode(recipe.seasoningsJson) as List)) {
+          final seasoning = s as Map<String, dynamic>;
           _seasonings.add(_SeasoningEntry(
-            nameController: TextEditingController(text: seasoning.name),
-            amountController: TextEditingController(text: seasoning.amount ?? ''),
+            nameController: TextEditingController(text: seasoning['name'] as String? ?? ''),
+            amountController: TextEditingController(text: seasoning['amount'] as String? ?? ''),
           ),);
         }
 
-        for (final ingredient in recipe.ingredients) {
+        for (final i in (jsonDecode(recipe.ingredientsJson) as List)) {
+          final ingredient = i as Map<String, dynamic>;
           _ingredients.add(_SeasoningEntry(
-            nameController: TextEditingController(text: ingredient.name),
-            amountController: TextEditingController(text: ingredient.amount ?? ''),
+            nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
+            amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
           ),);
         }
 
-        for (final direction in recipe.directions) {
+        for (final direction in (jsonDecode(recipe.directions) as List).cast<String>()) {
           _directionControllers.add(TextEditingController(text: direction));
         }
         
         // Load paired recipe IDs
-        _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
+        _pairedRecipeIds.addAll((jsonDecode(recipe.pairedRecipeIds) as List).cast<String>());
         
         // Load course
         _selectedCourse = recipe.course;
@@ -1834,7 +1841,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     final recipe = SmokingRecipe()
       ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
       ..name = _nameController.text.trim()
-      ..type = _selectedType
+      ..type = _selectedType.name
       ..course = _selectedCourse
       ..item = _itemController.text.trim().isEmpty
           ? null
@@ -1845,22 +1852,22 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ..temperature = _temperatureController.text.trim()
       ..time = _timeController.text.trim()
       ..wood = _woodController.text.trim()
-      ..seasonings = seasonings
-      ..ingredients = ingredients
+      ..seasoningsJson = jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList())
+      ..ingredientsJson = jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit}).toList())
       ..serves = _servesController.text.trim().isEmpty
           ? null
           : _servesController.text.trim()
-      ..directions = directions
+      ..directions = jsonEncode(directions)
       ..notes = _notesController.text.trim().isEmpty
           ? null
           : _notesController.text.trim()
       ..headerImage = _imagePath
-      ..stepImages = _stepImages
-      ..stepImageMap = _stepImageMap.entries
+      ..stepImages = jsonEncode(_stepImages)
+      ..stepImageMap = jsonEncode(_stepImageMap.entries
           .map((e) => '${e.key}:${e.value}')
-          .toList()
-      ..pairedRecipeIds = _pairedRecipeIds
-      ..source = _existingRecipe?.source ?? SmokingSource.personal
+          .toList())
+      ..pairedRecipeIds = jsonEncode(_pairedRecipeIds)
+      ..source = (_existingRecipe?.source ?? SmokingSource.personal.name)
       ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
       ..updatedAt = DateTime.now();
 

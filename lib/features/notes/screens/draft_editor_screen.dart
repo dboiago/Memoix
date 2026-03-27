@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -85,8 +86,8 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
       _timeController.text = draft.time ?? '';
       _commentsController.text = draft.notes;
       
-      _stepImages.addAll(draft.stepImages);
-      for (final mapping in draft.stepImageMap) {
+      _stepImages.addAll((jsonDecode(draft.stepImages) as List).cast<String>());
+      for (final mapping in (jsonDecode(draft.stepImageMap) as List).cast<String>()) {
         final parts = mapping.split(':');
         if (parts.length == 2) {
           final stepIndex = int.tryParse(parts[0]);
@@ -96,34 +97,35 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           }
         }
       }
-      _pairedRecipeIds.addAll(draft.pairedRecipeIds);
+      _pairedRecipeIds.addAll((jsonDecode(draft.pairedRecipeIds) as List).cast<String>());
       
       _selectedCourse = (draft.course != null && draft.course!.isNotEmpty)
           ? draft.course!
           : 'mains';
 
-      for (final ingredient in draft.structuredIngredients) {
+      for (final ingredient in (jsonDecode(draft.structuredIngredients) as List)) {
+        final m = ingredient as Map<String, dynamic>;
         String amountText = '';
-        if (ingredient.quantity != null && ingredient.quantity!.isNotEmpty) {
-          amountText = ingredient.quantity!;
-          if (ingredient.unit != null && ingredient.unit!.isNotEmpty) {
-            amountText += ' ${ingredient.unit}';
+        if (m['quantity'] != null && (m['quantity'] as String).isNotEmpty) {
+          amountText = m['quantity'] as String;
+          if (m['unit'] != null && (m['unit'] as String).isNotEmpty) {
+            amountText += ' ${m['unit']}';
           }
         }
 
         // Check if this was saved as a section header
-        final isSection = ingredient.preparation == '__SECTION__';
-        final notes = isSection ? '' : (ingredient.preparation ?? '');
+        final isSection = m['preparation'] == '__SECTION__';
+        final notes = isSection ? '' : (m['preparation'] as String? ?? '');
 
         _ingredientRows.add(_DraftIngredientRow(
-          nameController: TextEditingController(text: ingredient.name),
+          nameController: TextEditingController(text: m['name'] as String? ?? ''),
           amountController: TextEditingController(text: amountText),
           prepController: TextEditingController(text: notes),
           isSection: isSection,
         ));
       }
 
-      for (final direction in draft.structuredDirections) {
+      for (final direction in (jsonDecode(draft.structuredDirections) as List).cast<String>()) {
         _directionRows.add(_DirectionRow(controller: TextEditingController(text: direction)));
       }
       
@@ -340,12 +342,17 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
       ..name = _nameController.text.trim()
       ..serves = _servesController.text.trim().isEmpty ? null : _servesController.text.trim()
       ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
-      ..structuredIngredients = ingredients
-      ..structuredDirections = directions
+      ..structuredIngredients = jsonEncode(ingredients.map((i) => {
+            'name': i.name,
+            'quantity': i.quantity,
+            'unit': i.unit,
+            'preparation': i.preparation,
+          }).toList())
+      ..structuredDirections = jsonEncode(directions)
       ..notes = _commentsController.text.trim()
-      ..stepImages = List<String>.from(_stepImages)
-      ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
-      ..pairedRecipeIds = List<String>.from(_pairedRecipeIds)
+      ..stepImages = jsonEncode(List<String>.from(_stepImages))
+      ..stepImageMap = jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList())
+      ..pairedRecipeIds = jsonEncode(List<String>.from(_pairedRecipeIds))
       ..imagePath = _headerImage
       ..updatedAt = DateTime.now()
       ..course = _selectedCourse;

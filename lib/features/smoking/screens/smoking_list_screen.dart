@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -99,9 +101,10 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                       if (recipe.wood.toLowerCase().contains(query)) {
                         matches.add(recipe.wood);
                       }
-                      for (final seasoning in recipe.seasonings) {
-                        if (seasoning.name.toLowerCase().contains(query)) {
-                          matches.add(seasoning.name);
+                      for (final s in (jsonDecode(recipe.seasoningsJson) as List)) {
+                        final sName = (s as Map<String, dynamic>)['name'] as String? ?? '';
+                        if (sName.toLowerCase().contains(query)) {
+                          matches.add(sName);
                         }
                       }
                     }

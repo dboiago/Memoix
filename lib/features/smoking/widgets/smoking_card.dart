@@ -81,7 +81,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
                       // Different metadata based on type
-                      if (widget.recipe.type == SmokingType.pitNote) 
+                      if (widget.recipe.type == SmokingType.pitNote.name) 
                         _buildPitNoteMetadata(theme)
                       else
                         _buildRecipeMetadata(theme),
