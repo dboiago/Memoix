@@ -77,7 +77,7 @@ desktop.ini
 **/linux/flutter/ephemeral/
 
 # Generated files
-#*.g.dart
+*.g.dart
 *.freezed.dart
 
 # Android Signing Keys & Secrets
