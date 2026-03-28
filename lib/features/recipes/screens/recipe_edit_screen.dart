@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/text_normalizer.dart';
 import '../../modernist/models/modernist_recipe.dart';
@@ -1662,21 +1664,35 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         .map((row) => row.controller.text.trim())
         .toList();
     
-    return SmokingRecipe()
-      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..course = course
-      ..type = SmokingType.recipe
-      ..seasonings = seasonings
-      ..directions = directions
-      ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..headerImage = _headerImage
-      ..stepImages = _stepImages
-      ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
-      ..pairedRecipeIds = _pairedRecipeIds
-      ..source = SmokingSource.personal
-      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
-      ..updatedAt = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
+      uuid: _existingRecipe?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      course: course,
+      type: SmokingType.recipe.name,
+      item: null,
+      category: null,
+      temperature: '',
+      time: '',
+      wood: '',
+      seasoningsJson: jsonEncode(seasonings
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .toList()),
+      ingredientsJson: '[]',
+      serves: null,
+      directions: jsonEncode(directions),
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      headerImage: _headerImage,
+      stepImages: jsonEncode(_stepImages),
+      stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.personal.name,
+      pairedRecipeIds: jsonEncode(_pairedRecipeIds),
+      createdAt: _existingRecipe?.createdAt ?? DateTime.now(),
+      updatedAt: DateTime.now(),
+    );
   }
 
   /// Open the recipe in comparison tool

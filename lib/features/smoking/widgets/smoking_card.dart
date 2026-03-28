@@ -6,6 +6,7 @@ import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/database/app_database.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 

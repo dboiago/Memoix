@@ -350,7 +350,13 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
                   : CircleAvatar(child: Icon(Icons.restaurant_menu, color: theme.colorScheme.primary)),
               title: Text(draft.name),
               subtitle: Text(
-                draft.ingredients.isEmpty ? 'No ingredients' : draft.ingredients.split('\n').first,
+                draft.structuredIngredients == '[]' || draft.structuredIngredients.isEmpty
+                    ? 'No ingredients'
+                    : (jsonDecode(draft.structuredIngredients) as List<dynamic>).isEmpty
+                        ? 'No ingredients'
+                        : ((jsonDecode(draft.structuredIngredients) as List<dynamic>).first
+                                as Map<String, dynamic>)['name'] as String? ??
+                            'No ingredients',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),

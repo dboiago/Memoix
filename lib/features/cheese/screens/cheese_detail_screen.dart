@@ -6,6 +6,7 @@ import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 import '../../../core/services/integrity_service.dart';

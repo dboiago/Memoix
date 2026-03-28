@@ -337,28 +337,34 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
         .where((text) => text.isNotEmpty)
         .toList();
 
-    final draft = _existingDraft ?? RecipeDraft();
-    draft
-      ..uuid = draft.uuid.isNotEmpty ? draft.uuid : _uuid.v4()
-      ..name = _nameController.text.trim()
-      ..serves = _servesController.text.trim().isEmpty ? null : _servesController.text.trim()
-      ..time = _timeController.text.trim().isEmpty ? null : _timeController.text.trim()
-      ..structuredIngredients = jsonEncode(ingredients.map((i) => {
+    final existingDraft = _existingDraft;
+    final now = DateTime.now();
+    return RecipeDraft(
+      id: existingDraft?.id ?? 0,
+      uuid: existingDraft != null && existingDraft.uuid.isNotEmpty
+          ? existingDraft.uuid
+          : _uuid.v4(),
+      name: _nameController.text.trim(),
+      imagePath: _headerImage,
+      serves: _servesController.text.trim().isEmpty ? null : _servesController.text.trim(),
+      time: _timeController.text.trim().isEmpty ? null : _timeController.text.trim(),
+      course: _selectedCourse,
+      structuredIngredients: jsonEncode(ingredients.map((i) => {
             'name': i.name,
             'quantity': i.quantity,
             'unit': i.unit,
             'preparation': i.preparation,
-          }).toList())
-      ..structuredDirections = jsonEncode(directions)
-      ..notes = _commentsController.text.trim()
-      ..stepImages = jsonEncode(List<String>.from(_stepImages))
-      ..stepImageMap = jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList())
-      ..pairedRecipeIds = jsonEncode(List<String>.from(_pairedRecipeIds))
-      ..imagePath = _headerImage
-      ..updatedAt = DateTime.now()
-      ..course = _selectedCourse;
-      
-    return draft;
+          }).toList()),
+      structuredDirections: jsonEncode(directions),
+      legacyIngredients: existingDraft?.legacyIngredients,
+      legacyDirections: existingDraft?.legacyDirections,
+      notes: _commentsController.text.trim(),
+      stepImages: jsonEncode(List<String>.from(_stepImages)),
+      stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
+      pairedRecipeIds: jsonEncode(List<String>.from(_pairedRecipeIds)),
+      createdAt: existingDraft?.createdAt ?? now,
+      updatedAt: now,
+    );
   }
 
   @override

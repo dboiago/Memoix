@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../../core/database/app_database.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/smoking_card.dart';

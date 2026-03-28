@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/models/sandwich.dart';

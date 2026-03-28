@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/colors.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 

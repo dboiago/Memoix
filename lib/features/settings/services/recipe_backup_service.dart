@@ -25,7 +25,7 @@ import '../../sandwiches/models/sandwich.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 
 /// Service for exporting and importing recipes as JSON backup files
 class RecipeBackupService {

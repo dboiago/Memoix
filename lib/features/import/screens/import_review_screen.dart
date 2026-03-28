@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 

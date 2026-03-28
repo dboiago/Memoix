@@ -8,7 +8,7 @@ import '../../../app/theme/colors.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../models/shopping_list.dart';
 import '../models/shopping_list_item.dart';
 import '../../../core/utils/ingredient_categorizer.dart';

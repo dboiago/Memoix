@@ -10,6 +10,7 @@ import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/split_smoking_view.dart';

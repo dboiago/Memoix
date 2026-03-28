@@ -1,5 +1,5 @@
 import 'dart:convert';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../modernist/models/modernist_recipe.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../recipes/models/recipe.dart';

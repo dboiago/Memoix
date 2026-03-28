@@ -8,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/utils/suggestions.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../modernist/models/modernist_recipe.dart';

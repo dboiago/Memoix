@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/repository/recipe_repository.dart';

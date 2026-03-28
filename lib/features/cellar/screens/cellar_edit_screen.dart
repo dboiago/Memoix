@@ -7,6 +7,7 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../recipes/models/cuisine.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';

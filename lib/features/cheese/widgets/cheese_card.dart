@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/services/integrity_service.dart';
-import '../../recipes/models/cuisine.dart';import '../models/cheese_entry.dart';
+import '../../recipes/models/cuisine.dart';import '../../../core/database/app_database.dart';
+import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 
 /// Cheese entry card widget for list display
