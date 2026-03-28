@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/utils/ingredient_parser.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';

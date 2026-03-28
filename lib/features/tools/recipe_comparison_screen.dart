@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../app/routes/router.dart';
+import '../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../core/services/integrity_service.dart';
 import '../../core/widgets/memoix_snackbar.dart';
 import '../../shared/widgets/recipe_picker_modal.dart';
@@ -437,6 +438,10 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       ref.read(recipeComparisonProvider.notifier).setCurrentDraftUuid(draftUuid);
     }
 
+    final draftName = _draftTitleController.text.trim().isEmpty
+        ? 'Compared Recipe Draft'
+        : _draftTitleController.text.trim();
+
     // Convert Ingredients to DraftIngredients (structured format with preparation notes)
     final draftIngredients = ingredients.map((i) => DraftIngredient(
       name: i.name,
@@ -445,23 +450,37 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       preparation: i.preparation,
     )).toList();
 
-    // Create or update draft using structured format
-    final draft = RecipeDraft()
-      ..uuid = draftUuid
-      ..name = _draftTitleController.text.trim().isEmpty 
-          ? 'Compared Recipe Draft' 
-          : _draftTitleController.text.trim()
-      ..structuredIngredients = jsonEncode(draftIngredients.map((i) => {
-          'name': i.name,
-          'quantity': i.quantity,
-          'unit': i.unit,
-          'preparation': i.preparation,
-        }).toList())
-      ..structuredDirections = jsonEncode(steps)
-      ..createdAt = DateTime.now()
-      ..updatedAt = DateTime.now();
+    final siJson = jsonEncode(draftIngredients.map((i) => {
+        'name': i.name,
+        'quantity': i.quantity,
+        'unit': i.unit,
+        'preparation': i.preparation,
+      }).toList());
 
-    await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
+    // Look up existing draft; create a new one if not found, then update with full content
+    final existingDraft =
+        await ref.read(scratchPadRepositoryProvider).getDraftByUuid(draftUuid);
+    final RecipeDraft draftToSave;
+    if (existingDraft != null) {
+      draftToSave = existingDraft.copyWith(
+        name: draftName,
+        structuredIngredients: siJson,
+        structuredDirections: jsonEncode(steps),
+        stepImages: jsonEncode(stepImages),
+        stepImageMap: jsonEncode(stepImageMap),
+      );
+    } else {
+      final created =
+          await ref.read(scratchPadRepositoryProvider).createDraft(name: draftName);
+      draftToSave = created.copyWith(
+        uuid: draftUuid,
+        structuredIngredients: siJson,
+        structuredDirections: jsonEncode(steps),
+        stepImages: jsonEncode(stepImages),
+        stepImageMap: jsonEncode(stepImageMap),
+      );
+    }
+    await ref.read(scratchPadRepositoryProvider).updateDraft(draftToSave);
 
     await IntegrityService.reportEvent(
       'activity.recipes_compared',

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/course_card.dart';
@@ -210,7 +211,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final pizzasAsync = ref.watch(allPizzasProvider);
                       itemCount = pizzasAsync.maybeWhen(
                         data: (pizzas) => hideMemoix
-                            ? pizzas.where((p) => p.source != PizzaSource.memoix).length
+                            ? pizzas.where((p) => p.source != PizzaSource.memoix.name).length
                             : pizzas.length,
                         orElse: () => 0,
                       );
@@ -218,7 +219,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final sandwichesAsync = ref.watch(allSandwichesProvider);
                       itemCount = sandwichesAsync.maybeWhen(
                         data: (sandwiches) => hideMemoix
-                            ? sandwiches.where((s) => s.source != SandwichSource.memoix).length
+                            ? sandwiches.where((s) => s.source != SandwichSource.memoix.name).length
                             : sandwiches.length,
                         orElse: () => 0,
                       );
@@ -226,7 +227,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final smokingAsync = ref.watch(allSmokingRecipesProvider);
                       itemCount = smokingAsync.maybeWhen(
                         data: (recipes) => hideMemoix
-                            ? recipes.where((r) => r.source != SmokingSource.memoix).length
+                            ? recipes.where((r) => r.source != SmokingSource.memoix.name).length
                             : recipes.length,
                         orElse: () => 0,
                       );
@@ -242,7 +243,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final cheeseAsync = ref.watch(allCheeseEntriesProvider);
                       itemCount = cheeseAsync.maybeWhen(
                         data: (entries) => hideMemoix
-                            ? entries.where((e) => e.source != CheeseSource.memoix).length
+                            ? entries.where((e) => e.source != CheeseSource.memoix.name).length
                             : entries.length,
                         orElse: () => 0,
                       );
@@ -250,7 +251,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final cellarAsync = ref.watch(allCellarEntriesProvider);
                       itemCount = cellarAsync.maybeWhen(
                         data: (entries) => hideMemoix
-                            ? entries.where((e) => e.source != CellarSource.memoix).length
+                            ? entries.where((e) => e.source != CellarSource.memoix.name).length
                             : entries.length,
                         orElse: () => 0,
                       );

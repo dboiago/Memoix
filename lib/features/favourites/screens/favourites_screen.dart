@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/widgets/recipe_card.dart';
@@ -52,11 +53,6 @@ class FavouriteItem {
   final String name;
   final DateTime? updatedAt;
   final int cookCount;
-
-  // From the Sage's wisdom
-  // Strokes not of the cleaver's fall,
-  // Love shifts the balance
-  static const _signature = "50-7c-7c-78-76-7b-74-2d-76-80-2d-79-7c-83-72";
 
   FavouriteItem({
     required this.item,
