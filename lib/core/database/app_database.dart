@@ -283,6 +283,10 @@ class Sandwiches extends Table {
   IntColumn get version => integer().withDefault(const Constant(1))();
 }
 
+/// Type alias: Drift generates 'Sandwiche' from the Sandwiches table name.
+/// All app code uses 'Sandwich' — this alias keeps them compatible.
+typedef Sandwich = Sandwiche;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // SHOPPING LISTS
 // ─────────────────────────────────────────────────────────────────────────────

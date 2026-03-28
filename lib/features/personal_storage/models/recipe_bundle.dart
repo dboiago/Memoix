@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient;
 import '../../cellar/models/cellar_entry.dart';
 import '../../cheese/models/cheese_entry.dart';
 import '../../modernist/models/modernist_recipe.dart';
@@ -91,23 +92,23 @@ class RecipeBundle {
               .toList() ??
           [],
       pizzas: (json['pizzas'] as List<dynamic>?)
-              ?.map((e) => Pizza.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => pizzaFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       sandwiches: (json['sandwiches'] as List<dynamic>?)
-              ?.map((e) => Sandwich.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => sandwichFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       cheeses: (json['cheeses'] as List<dynamic>?)
-              ?.map((e) => CheeseEntry.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => cheeseEntryFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       cellar: (json['cellar'] as List<dynamic>?)
-              ?.map((e) => CellarEntry.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => cellarEntryFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       smoking: (json['smoking'] as List<dynamic>?)
-              ?.map((e) => SmokingRecipe.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => smokingRecipeFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       modernist: (json['modernist'] as List<dynamic>?)

@@ -2,7 +2,7 @@ import 'dart:math' show min;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../database/app_database.dart';
 import '../../features/mealplan/models/meal_plan.dart';
-import '../../features/recipes/models/recipe.dart';
+import '../../features/recipes/models/recipe.dart' hide Recipe;
 import 'integrity_service.dart';
 import 'package:flutter/foundation.dart';
 import 'dart:convert';
@@ -359,9 +359,8 @@ class CalibrationEvaluator {
         if (total < 40) return false;
 
         final items = await db.recipeDao.getRecipesBySource(RecipeSource.personal.name);
-        final filtered = items.where((r) => 
-            r.directions.length >= 4 && 
-            r.ingredients.length >= 5
+        final filtered = items.where((r) =>
+            (jsonDecode(r.directions) as List).length >= 4
         ).toList();
         
         final days = filtered.map((r) => _dKey(r.createdAt)).toSet();

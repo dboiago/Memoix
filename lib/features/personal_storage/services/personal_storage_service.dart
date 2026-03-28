@@ -8,6 +8,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient;
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../cellar/models/cellar_entry.dart';
