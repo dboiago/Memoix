@@ -33,7 +33,7 @@ class CheeseDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CheeseEntry(id: 0, uuid: '', name: '', buy: false, source: CheeseSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),,
+          orElse: () => CheeseEntry(id: 0, uuid: '', name: '', buy: false, source: CheeseSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
         );
 
         if (entry.name.isEmpty) {
