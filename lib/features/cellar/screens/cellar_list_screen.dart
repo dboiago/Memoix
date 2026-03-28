@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/database/app_database.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cellar_entry.dart';
@@ -46,7 +47,7 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
         data: (allEntries) {
           // Apply hide memoix filter
           final visibleEntries = hideMemoix
-              ? allEntries.where((e) => e.source != CellarSource.memoix).toList()
+              ? allEntries.where((e) => e.source != CellarSource.memoix.name).toList()
               : allEntries;
 
           // Get categories that have entries
