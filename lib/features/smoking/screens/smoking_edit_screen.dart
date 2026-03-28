@@ -1838,38 +1838,34 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         .where((d) => d.isNotEmpty)
         .toList();
 
-    final recipe = SmokingRecipe()
-      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..type = _selectedType.name
-      ..course = _selectedCourse
-      ..item = _itemController.text.trim().isEmpty
-          ? null
-          : _itemController.text.trim()
-      ..category = _categoryController.text.trim().isEmpty
-          ? null
-          : _categoryController.text.trim()
-      ..temperature = _temperatureController.text.trim()
-      ..time = _timeController.text.trim()
-      ..wood = _woodController.text.trim()
-      ..seasoningsJson = jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList())
-      ..ingredientsJson = jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit}).toList())
-      ..serves = _servesController.text.trim().isEmpty
-          ? null
-          : _servesController.text.trim()
-      ..directions = jsonEncode(directions)
-      ..notes = _notesController.text.trim().isEmpty
-          ? null
-          : _notesController.text.trim()
-      ..headerImage = _imagePath
-      ..stepImages = jsonEncode(_stepImages)
-      ..stepImageMap = jsonEncode(_stepImageMap.entries
-          .map((e) => '${e.key}:${e.value}')
-          .toList())
-      ..pairedRecipeIds = jsonEncode(_pairedRecipeIds)
-      ..source = (_existingRecipe?.source ?? SmokingSource.personal.name)
-      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
-      ..updatedAt = DateTime.now();
+    final now = DateTime.now();
+    final recipe = SmokingRecipe(
+      id: _existingRecipe?.id ?? 0,
+      uuid: _existingRecipe?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      type: _selectedType.name,
+      course: _selectedCourse,
+      item: _itemController.text.trim().isEmpty ? null : _itemController.text.trim(),
+      category: _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim(),
+      temperature: _temperatureController.text.trim(),
+      time: _timeController.text.trim(),
+      wood: _woodController.text.trim(),
+      seasoningsJson: jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList()),
+      ingredientsJson: jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit}).toList()),
+      serves: _servesController.text.trim().isEmpty ? null : _servesController.text.trim(),
+      directions: jsonEncode(directions),
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      headerImage: _imagePath,
+      stepImages: jsonEncode(_stepImages),
+      stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
+      pairedRecipeIds: jsonEncode(_pairedRecipeIds),
+      source: _existingRecipe?.source ?? SmokingSource.personal.name,
+      isFavorite: _existingRecipe?.isFavorite ?? false,
+      cookCount: _existingRecipe?.cookCount ?? 0,
+      imageUrl: _existingRecipe?.imageUrl,
+      createdAt: _existingRecipe?.createdAt ?? now,
+      updatedAt: now,
+    );
 
     await ref.read(smokingRepositoryProvider).saveRecipe(recipe);
 

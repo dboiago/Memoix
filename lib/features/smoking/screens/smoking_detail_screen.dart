@@ -449,7 +449,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                               ),
                             ),
                             const SizedBox(width: 16),
-                            if ((jsonDecode(recipe.directions) as List).isNotEmpty
+                            if ((jsonDecode(recipe.directions) as List).isNotEmpty)
                               Expanded(
                                 flex: 3,
                                 child: Card(
@@ -1057,30 +1057,34 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   void _duplicateRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) async {
     final repo = ref.read(smokingRepositoryProvider);
     final newUuid = const Uuid().v4();
-    
-    final newRecipe = SmokingRecipe.create(
+    final now = DateTime.now();
+
+    final newRecipe = SmokingRecipe(
+      id: 0,
       uuid: newUuid,
       name: '${recipe.name} (Copy)',
+      course: recipe.course,
       type: recipe.type,
       item: recipe.item,
       category: recipe.category,
       temperature: recipe.temperature,
       time: recipe.time,
       wood: recipe.wood,
-      seasonings: recipe.seasonings.map((s) => SmokingSeasoning.create(
-        name: s.name,
-        amount: s.amount,
-        unit: s.unit,
-      )).toList(),
-      ingredients: recipe.ingredients.map((i) => SmokingSeasoning.create(
-        name: i.name,
-        amount: i.amount,
-        unit: i.unit,
-      )).toList(),
+      seasoningsJson: recipe.seasoningsJson,
+      ingredientsJson: recipe.ingredientsJson,
       serves: recipe.serves,
-      directions: List.from(recipe.directions),
+      directions: recipe.directions,
       notes: recipe.notes,
-      source: SmokingSource.personal,
+      headerImage: recipe.headerImage,
+      stepImages: recipe.stepImages,
+      stepImageMap: recipe.stepImageMap,
+      imageUrl: recipe.imageUrl,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.personal.name,
+      pairedRecipeIds: recipe.pairedRecipeIds,
+      createdAt: now,
+      updatedAt: now,
     );
     
     await repo.saveRecipe(newRecipe);

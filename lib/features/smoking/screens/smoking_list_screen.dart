@@ -50,7 +50,7 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
         data: (recipes) {
           // Apply Hide Memoix filter if enabled
           final visibleRecipes = hideMemoix
-              ? recipes.where((r) => r.source != SmokingSource.memoix).toList()
+              ? recipes.where((r) => r.source != SmokingSource.memoix.name).toList()
               : recipes;
           if (recipes.isEmpty) {
             return _buildEmptyState(theme);
