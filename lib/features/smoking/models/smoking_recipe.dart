@@ -1,4 +1,6 @@
 
+import 'dart:convert';
+import '../../../core/database/app_database.dart';
 
 /// Type of smoking entry
 enum SmokingType {
@@ -179,3 +181,98 @@ class SmokingSeasoning {
   }
 }
 
+/// Decode a SmokingRecipe from a JSON map (for backup import).
+SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
+  String encodeList(dynamic v) =>
+      v is List ? jsonEncode(v) : (v as String? ?? '[]');
+  return SmokingRecipe(
+    id: (json['id'] as num?)?.toInt() ?? 0,
+    uuid: json['uuid'] as String? ?? '',
+    name: json['name'] as String? ?? '',
+    course: json['course'] as String? ?? 'smoking',
+    type: json['type'] as String? ?? SmokingType.pitNote.name,
+    item: json['item'] as String?,
+    category: json['category'] as String?,
+    temperature: json['temperature'] as String? ?? '',
+    time: json['time'] as String? ?? '',
+    wood: json['wood'] as String? ?? '',
+    seasoningsJson: encodeList(json['seasoningsJson'] ?? json['seasonings']),
+    ingredientsJson: encodeList(json['ingredientsJson'] ?? json['ingredients']),
+    serves: json['serves'] as String?,
+    directions: encodeList(json['directions']),
+    notes: json['notes'] as String?,
+    headerImage: json['headerImage'] as String?,
+    stepImages: encodeList(json['stepImages']),
+    stepImageMap: encodeList(json['stepImageMap']),
+    imageUrl: json['imageUrl'] as String?,
+    isFavorite: json['isFavorite'] as bool? ?? false,
+    cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
+    source: json['source'] as String? ?? SmokingSource.personal.name,
+    pairedRecipeIds: encodeList(json['pairedRecipeIds']),
+    createdAt: json['createdAt'] != null
+        ? DateTime.parse(json['createdAt'] as String)
+        : DateTime.now(),
+    updatedAt: json['updatedAt'] != null
+        ? DateTime.parse(json['updatedAt'] as String)
+        : DateTime.now(),
+  );
+}
+
+extension SmokingRecipeX on SmokingRecipe {
+  List<SmokingSeasoning> get seasoningsList =>
+      (jsonDecode(seasoningsJson) as List).map((m) {
+        final map = m as Map<String, dynamic>;
+        return SmokingSeasoning.create(
+          name: map['name'] as String? ?? '',
+          amount: map['amount'] as String?,
+          unit: map['unit'] as String?,
+        );
+      }).toList();
+
+  List<String> get directionsList =>
+      (jsonDecode(directions) as List).cast<String>();
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'uuid': uuid,
+        'name': name,
+        'course': course,
+        'type': type,
+        'item': item,
+        'category': category,
+        'temperature': temperature,
+        'time': time,
+        'wood': wood,
+        'seasoningsJson': jsonDecode(seasoningsJson),
+        'ingredientsJson': jsonDecode(ingredientsJson),
+        'serves': serves,
+        'directions': jsonDecode(directions),
+        'notes': notes,
+        'headerImage': headerImage,
+        'stepImages': jsonDecode(stepImages),
+        'stepImageMap': jsonDecode(stepImageMap),
+        'imageUrl': imageUrl,
+        'isFavorite': isFavorite,
+        'cookCount': cookCount,
+        'source': source,
+        'pairedRecipeIds': jsonDecode(pairedRecipeIds),
+        'createdAt': createdAt.toIso8601String(),
+        'updatedAt': updatedAt.toIso8601String(),
+      };
+
+  Map<String, dynamic> toShareableJson() => {
+        'name': name,
+        'type': type,
+        'item': item,
+        'category': category,
+        'temperature': temperature,
+        'time': time,
+        'wood': wood,
+        'seasoningsJson': jsonDecode(seasoningsJson),
+        'ingredientsJson': jsonDecode(ingredientsJson),
+        'serves': serves,
+        'directions': jsonDecode(directions),
+        'notes': notes,
+        'headerImage': headerImage,
+      };
+}

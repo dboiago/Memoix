@@ -255,28 +255,31 @@ class ShareService {
     
     buffer.writeln('# ${pizza.name}');
     buffer.writeln();
-    buffer.writeln('Base: ${pizza.base.displayName}');
+    buffer.writeln('Base: ${PizzaBaseExtension.fromString(pizza.base).displayName}');
     
-    if (pizza.cheeses.isNotEmpty) {
+    final cheeses = pizza.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Cheeses');
-      for (final cheese in pizza.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('- $cheese');
       }
     }
     
-    if (pizza.proteins.isNotEmpty) {
+    final proteins = pizza.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Proteins');
-      for (final protein in pizza.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('- $protein');
       }
     }
     
-    if (pizza.vegetables.isNotEmpty) {
+    final vegetables = pizza.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Vegetables');
-      for (final vegetable in pizza.vegetables) {
+      for (final vegetable in vegetables) {
         buffer.writeln('- $vegetable');
       }
     }
@@ -377,34 +380,38 @@ class ShareService {
       buffer.writeln('Bread: ${sandwich.bread}');
     }
     
-    if (sandwich.proteins.isNotEmpty) {
+    final proteins = sandwich.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Proteins');
-      for (final protein in sandwich.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('- $protein');
       }
     }
     
-    if (sandwich.vegetables.isNotEmpty) {
+    final vegetables = sandwich.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Vegetables');
-      for (final vegetable in sandwich.vegetables) {
+      for (final vegetable in vegetables) {
         buffer.writeln('- $vegetable');
       }
     }
     
-    if (sandwich.cheeses.isNotEmpty) {
+    final cheeses = sandwich.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Cheeses');
-      for (final cheese in sandwich.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('- $cheese');
       }
     }
     
-    if (sandwich.condiments.isNotEmpty) {
+    final condiments = sandwich.condimentsList;
+    if (condiments.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Condiments');
-      for (final condiment in sandwich.condiments) {
+      for (final condiment in condiments) {
         buffer.writeln('- $condiment');
       }
     }
@@ -505,10 +512,11 @@ class ShareService {
     buffer.writeln('Time: ${recipe.time}');
     buffer.writeln('Wood: ${recipe.wood}');
     
-    if (recipe.seasonings.isNotEmpty) {
+    final seasonings = recipe.seasoningsList;
+    if (seasonings.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Seasonings');
-      for (final seasoning in recipe.seasonings) {
+      for (final seasoning in seasonings) {
         if (seasoning.amount != null && seasoning.amount!.isNotEmpty) {
           buffer.writeln('- ${seasoning.amount} ${seasoning.name}');
         } else {
@@ -517,11 +525,12 @@ class ShareService {
       }
     }
     
-    if (recipe.directions.isNotEmpty) {
+    final directions = recipe.directionsList;
+    if (directions.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Directions');
-      for (int i = 0; i < recipe.directions.length; i++) {
-        buffer.writeln('${i + 1}. ${recipe.directions[i]}');
+      for (int i = 0; i < directions.length; i++) {
+        buffer.writeln('${i + 1}. ${directions[i]}');
       }
     }
     

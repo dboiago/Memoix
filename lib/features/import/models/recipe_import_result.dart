@@ -1,3 +1,5 @@
+import 'dart:convert';
+import '../../../core/database/app_database.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../recipes/models/recipe.dart';
@@ -495,30 +497,42 @@ class RecipeImportResult {
             unit: i.unit,
           )).toList();
 
-    final recipe = SmokingRecipe.create(
+    final headerImg = (imagePaths != null && imagePaths!.isNotEmpty)
+        ? imagePaths!.first
+        : imageUrl;
+    final stepImgs = (imagePaths != null && imagePaths!.length > 1)
+        ? imagePaths!.sublist(1)
+        : <String>[];
+    final now = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
-      type: SmokingType.pitNote, // Converted recipes become Pit Notes
-      item: name, // Use recipe name as item being smoked
+      course: 'smoking',
+      type: SmokingType.pitNote.name,
+      item: name,
+      category: null,
       temperature: temperature,
       time: time ?? '',
-      wood: woodType,
-      seasonings: finalSeasonings,
-      directions: directions,
+      wood: woodType ?? 'Hickory',
+      seasoningsJson: jsonEncode(finalSeasonings
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .toList()),
+      ingredientsJson: '[]',
+      serves: null,
+      directions: '[]',
       notes: comments,
-      headerImage: imageUrl,
-      source: SmokingSource.imported,
+      headerImage: headerImg,
+      stepImages: jsonEncode(stepImgs),
+      stepImageMap: '[]',
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.imported.name,
+      pairedRecipeIds: '[]',
+      createdAt: now,
+      updatedAt: now,
     );
-    
-    // Set multiple images if available
-    if (imagePaths != null && imagePaths!.isNotEmpty) {
-      recipe.headerImage = imagePaths!.first;
-      if (imagePaths!.length > 1) {
-        recipe.stepImages = imagePaths!.sublist(1);
-      }
-    }
-    
-    return recipe;
   }
 
   /// Convert to a SmokingRecipe as a full Recipe type (not Pit Note)
@@ -567,30 +581,42 @@ class RecipeImportResult {
       }
     }
     
-    final recipe = SmokingRecipe.create(
+    final headerImg = (imagePaths != null && imagePaths!.isNotEmpty)
+        ? imagePaths!.first
+        : imageUrl;
+    final stepImgs = (imagePaths != null && imagePaths!.length > 1)
+        ? imagePaths!.sublist(1)
+        : <String>[];
+    final now = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
-      type: SmokingType.recipe, // Full recipe, not Pit Note
+      course: 'smoking',
+      type: SmokingType.recipe.name,
+      item: null,
       category: detectedCategory,
-      wood: woodType ?? '',
-      serves: serves,
+      temperature: '',
       time: time ?? '',
-      ingredients: recipeIngredients,
-      directions: directions,
+      wood: woodType ?? '',
+      seasoningsJson: '[]',
+      ingredientsJson: jsonEncode(recipeIngredients
+          .map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit})
+          .toList()),
+      serves: serves,
+      directions: jsonEncode(directions),
       notes: comments,
-      headerImage: imageUrl,
-      source: SmokingSource.imported,
+      headerImage: headerImg,
+      stepImages: jsonEncode(stepImgs),
+      stepImageMap: '[]',
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.imported.name,
+      pairedRecipeIds: '[]',
+      createdAt: now,
+      updatedAt: now,
     );
-    
-    // Set multiple images if available
-    if (imagePaths != null && imagePaths!.isNotEmpty) {
-      recipe.headerImage = imagePaths!.first;
-      if (imagePaths!.length > 1) {
-        recipe.stepImages = imagePaths!.sublist(1);
-      }
-    }
-    
-    return recipe;
   }
 
   /// Detect smoking category from name, URL, and ingredients
@@ -678,16 +704,25 @@ class RecipeImportResult {
       }
     }
 
-    return Pizza.create(
+    final now = DateTime.now();
+    return Pizza(
+      id: 0,
       uuid: uuid,
       name: name ?? 'Untitled Pizza',
-      base: base,
-      cheeses: cheeses,
-      proteins: proteins,
-      vegetables: vegetables,
+      base: base.name,
+      cheeses: jsonEncode(cheeses),
+      proteins: jsonEncode(proteins),
+      vegetables: jsonEncode(vegetables),
       notes: comments,
       imageUrl: imageUrl,
-      source: PizzaSource.imported,
+      source: PizzaSource.imported.name,
+      isFavorite: false,
+      cookCount: 0,
+      rating: 0,
+      tags: '[]',
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
     );
   }
   RecipeImportResult copyWith({

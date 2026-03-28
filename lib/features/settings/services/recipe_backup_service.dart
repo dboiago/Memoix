@@ -25,6 +25,7 @@ import '../../sandwiches/models/sandwich.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
+import '../../../core/database/app_database.dart';
 
 /// Service for exporting and importing recipes as JSON backup files
 class RecipeBackupService {
@@ -442,14 +443,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final pizza = Pizza.fromJson(json as Map<String, dynamic>);
-        if (pizza.source == PizzaSource.memoix) {
-          pizza.source = PizzaSource.imported;
+        var pizza = pizzaFromJson(json as Map<String, dynamic>);
+        if (pizza.source == PizzaSource.memoix.name) {
+          pizza = pizza.copyWith(source: PizzaSource.imported.name);
         }
         final existing = await _pizzaRepository.getPizzaByUuid(pizza.uuid);
         if (existing != null) {
-          pizza.version = existing.version + 1;
-          pizza.id = existing.id;
+          pizza = pizza.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _pizzaRepository.savePizza(pizza);
         imported++;
@@ -465,14 +468,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final sandwich = Sandwich.fromJson(json as Map<String, dynamic>);
-        if (sandwich.source == SandwichSource.memoix) {
-          sandwich.source = SandwichSource.imported;
+        var sandwich = sandwichFromJson(json as Map<String, dynamic>);
+        if (sandwich.source == SandwichSource.memoix.name) {
+          sandwich = sandwich.copyWith(source: SandwichSource.imported.name);
         }
         final existing = await _sandwichRepository.getSandwichByUuid(sandwich.uuid);
         if (existing != null) {
-          sandwich.version = existing.version + 1;
-          sandwich.id = existing.id;
+          sandwich = sandwich.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _sandwichRepository.saveSandwich(sandwich);
         imported++;
@@ -488,13 +493,13 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final recipe = SmokingRecipe.fromJson(json as Map<String, dynamic>);
-        if (recipe.source == SmokingSource.memoix) {
-          recipe.source = SmokingSource.imported;
+        var recipe = smokingRecipeFromJson(json as Map<String, dynamic>);
+        if (recipe.source == SmokingSource.memoix.name) {
+          recipe = recipe.copyWith(source: SmokingSource.imported.name);
         }
         final existing = await _smokingRepository.getRecipeByUuid(recipe.uuid);
         if (existing != null) {
-          recipe.id = existing.id;
+          recipe = recipe.copyWith(id: existing.id);
         }
         await _smokingRepository.saveRecipe(recipe);
         imported++;
@@ -532,14 +537,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final entry = CellarEntry.fromJson(json as Map<String, dynamic>);
-        if (entry.source == CellarSource.personal) {
-          entry.source = CellarSource.imported;
+        var entry = cellarEntryFromJson(json as Map<String, dynamic>);
+        if (entry.source == CellarSource.personal.name) {
+          entry = entry.copyWith(source: CellarSource.imported.name);
         }
         final existing = await _cellarRepository.getEntryByUuid(entry.uuid);
         if (existing != null) {
-          entry.version = existing.version + 1;
-          entry.id = existing.id;
+          entry = entry.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _cellarRepository.saveEntry(entry);
         imported++;
@@ -555,14 +562,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final entry = CheeseEntry.fromJson(json as Map<String, dynamic>);
-        if (entry.source == CheeseSource.personal) {
-          entry.source = CheeseSource.imported;
+        var entry = cheeseEntryFromJson(json as Map<String, dynamic>);
+        if (entry.source == CheeseSource.personal.name) {
+          entry = entry.copyWith(source: CheeseSource.imported.name);
         }
         final existing = await _cheeseRepository.getEntryByUuid(entry.uuid);
         if (existing != null) {
-          entry.version = existing.version + 1;
-          entry.id = existing.id;
+          entry = entry.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _cheeseRepository.saveEntry(entry);
         imported++;
@@ -589,22 +598,29 @@ class RecipeBackupService {
     if (drafts != null) {
       for (final draftJson in drafts) {
         try {
-          final draft = RecipeDraft()
-            ..uuid = draftJson['uuid'] as String
-            ..name = draftJson['name'] as String? ?? ''
-            ..imagePath = draftJson['imagePath'] as String?
-            ..serves = draftJson['serves'] as String?
-            ..time = draftJson['time'] as String?
-            ..structuredIngredients = draftJson['structuredIngredients'] as String? ?? '[]'
-            ..structuredDirections = draftJson['structuredDirections'] as String? ?? '[]'
-            ..notes = draftJson['notes'] as String? ?? '';
-          
-          if (draftJson['createdAt'] != null) {
-            draft.createdAt = DateTime.parse(draftJson['createdAt'] as String);
-          }
-          if (draftJson['updatedAt'] != null) {
-            draft.updatedAt = DateTime.parse(draftJson['updatedAt'] as String);
-          }
+          final draft = RecipeDraft(
+            id: 0,
+            uuid: draftJson['uuid'] as String? ?? '',
+            name: draftJson['name'] as String? ?? '',
+            imagePath: draftJson['imagePath'] as String?,
+            serves: draftJson['serves'] as String?,
+            time: draftJson['time'] as String?,
+            course: draftJson['course'] as String? ?? 'mains',
+            structuredIngredients:
+                draftJson['structuredIngredients'] as String? ?? '[]',
+            structuredDirections:
+                draftJson['structuredDirections'] as String? ?? '[]',
+            legacyIngredients: null,
+            legacyDirections: null,
+            notes: draftJson['notes'] as String? ?? '',
+            stepImages: '[]',
+            stepImageMap: '[]',
+            pairedRecipeIds: '[]',
+            createdAt: draftJson['createdAt'] != null
+                ? DateTime.parse(draftJson['createdAt'] as String)
+                : DateTime.now(),
+            updatedAt: DateTime.now(),
+          );
           
           await _scratchPadRepository.updateDraft(draft);
           imported++;

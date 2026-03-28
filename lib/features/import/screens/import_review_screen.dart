@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:convert';
+import '../../../core/database/app_database.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
@@ -1664,22 +1666,37 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       headerImage = widget.importResult.imageUrl;
     }
 
-    return SmokingRecipe.create(
+    final now = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Recipe'
           : _nameController.text.trim(),
-      type: SmokingType.recipe, // Imports are always full recipes, never pit notes
-      item: _nameController.text.trim(), // Use recipe name as item being smoked
+      course: 'smoking',
+      type: SmokingType.recipe.name,
+      item: _nameController.text.trim(),
+      category: null,
       temperature: temperature,
       time: _timeController.text.trim().isEmpty ? '' : _timeController.text.trim(),
       wood: woodType,
-      seasonings: seasonings,
-      directions: directions,
+      seasoningsJson: jsonEncode(seasonings
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .toList()),
+      ingredientsJson: '[]',
+      serves: null,
+      directions: jsonEncode(directions),
       notes: widget.importResult.comments,
       headerImage: headerImage,
-      stepImages: stepImages,
-      source: SmokingSource.imported,
+      stepImages: jsonEncode(stepImages ?? []),
+      stepImageMap: '[]',
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.imported.name,
+      pairedRecipeIds: '[]',
+      createdAt: now,
+      updatedAt: now,
     );
   }
   
@@ -1748,18 +1765,27 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       }
     }
 
-    return Pizza.create(
+    final now = DateTime.now();
+    return Pizza(
+      id: 0,
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Pizza'
           : _nameController.text.trim(),
-      base: base,
-      cheeses: cheeses,
-      proteins: proteins,
-      vegetables: vegetables,
+      base: base.name,
+      cheeses: jsonEncode(cheeses),
+      proteins: jsonEncode(proteins),
+      vegetables: jsonEncode(vegetables),
       notes: widget.importResult.comments,
       imageUrl: widget.importResult.imageUrl,
-      source: PizzaSource.imported,
+      source: PizzaSource.imported.name,
+      isFavorite: false,
+      cookCount: 0,
+      rating: 0,
+      tags: '[]',
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
     );
   }
 

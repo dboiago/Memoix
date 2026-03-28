@@ -212,7 +212,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           uuid: p.uuid,
           name: p.name,
           category: 'Pizzas',
-          subtitle: p.base.displayName,
+          subtitle: PizzaBaseExtension.fromString(p.base).displayName,
           type: ShareableType.pizza,
           original: p,
         ));
