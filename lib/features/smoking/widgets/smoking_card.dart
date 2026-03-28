@@ -109,7 +109,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () async {
                       await ref
                           .read(smokingRepositoryProvider)
-                          .toggleFavorite(widget.recipe.uuid);
+                          .toggleFavorite(widget.recipe);
                       await processIntegrityResponses(ref);
                     },
                     padding: const EdgeInsets.all(8),
@@ -128,7 +128,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () {
                       ref
                           .read(smokingRepositoryProvider)
-                          .incrementCookCount(widget.recipe.uuid);
+                          .incrementCookCount(widget.recipe);
                       MemoixSnackBar.showLoggedCook(
                         recipeName: widget.recipe.name,
                         onViewStats: () => AppRoutes.toStatistics(context),

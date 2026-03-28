@@ -411,24 +411,25 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       return;
     }
 
-    final entry = _existingEntry ?? CellarEntry();
-    entry
-      ..uuid = _existingEntry?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..producer = _selectedProducer
-      ..category = _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim()
-      ..buy = _buy
-      ..tastingNotes = _tastingNotesController.text.trim().isEmpty ? null : _tastingNotesController.text.trim()
-      ..abv = _abvController.text.trim().isEmpty ? null : _abvController.text.trim()
-      ..ageVintage = _ageVintageController.text.trim().isEmpty ? null : _ageVintageController.text.trim()
-      ..priceRange = _priceRange > 0 ? _priceRange : null
-      ..imageUrl = _imagePath
-      ..source = _existingEntry?.source ?? CellarSource.personal
-      ..updatedAt = DateTime.now();
-
-    if (_existingEntry == null) {
-      entry.createdAt = DateTime.now();
-    }
+    final now = DateTime.now();
+    final entry = CellarEntry(
+      id: _existingEntry?.id ?? 0,
+      uuid: _existingEntry?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      producer: _selectedProducer,
+      category: _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim(),
+      buy: _buy,
+      tastingNotes: _tastingNotesController.text.trim().isEmpty ? null : _tastingNotesController.text.trim(),
+      abv: _abvController.text.trim().isEmpty ? null : _abvController.text.trim(),
+      ageVintage: _ageVintageController.text.trim().isEmpty ? null : _ageVintageController.text.trim(),
+      priceRange: _priceRange > 0 ? _priceRange : null,
+      imageUrl: _imagePath,
+      source: _existingEntry?.source ?? CellarSource.personal.name,
+      isFavorite: _existingEntry?.isFavorite ?? false,
+      createdAt: _existingEntry?.createdAt ?? now,
+      updatedAt: now,
+      version: _existingEntry?.version ?? 1,
+    );
 
     final repo = ref.read(cellarRepositoryProvider);
     await repo.saveEntry(entry);

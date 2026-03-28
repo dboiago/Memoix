@@ -9,7 +9,7 @@ import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Ingredient;
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../../sharing/services/share_service.dart';

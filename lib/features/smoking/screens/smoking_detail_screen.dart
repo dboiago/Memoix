@@ -99,7 +99,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
             },
@@ -336,7 +336,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           color: recipe.isFavorite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
-          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
           ref.invalidate(allSmokingRecipesProvider);
           await processIntegrityResponses(ref);
         },
@@ -345,7 +345,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         icon: const Icon(Icons.check_circle_outline),
         tooltip: 'I made this',
         onPressed: () async {
-          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe);
           MemoixSnackBar.showLoggedCook(
             recipeName: recipe.name,
             onViewStats: () => AppRoutes.toStatistics(context),
@@ -399,7 +399,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
             },
@@ -1119,13 +1119,13 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     );
 
     if (confirmed == true && context.mounted) {
-      await ref.read(smokingRepositoryProvider).deleteRecipe(recipe.uuid);
+      await ref.read(smokingRepositoryProvider).deleteRecipe(recipe);
       Navigator.pop(context);
     }
   }
 
   void _logCook(BuildContext context, SmokingRecipe recipe) {
-    ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+    ref.read(smokingRepositoryProvider).incrementCookCount(recipe);
     ref.invalidate(allSmokingRecipesProvider);
     MemoixSnackBar.showLoggedCook(
       recipeName: recipe.name,

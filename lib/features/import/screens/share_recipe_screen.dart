@@ -796,23 +796,26 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   void _formatPizzaAsText(StringBuffer buffer, Pizza pizza) {
     buffer.writeln('${pizza.name}');
     buffer.writeln();
-    buffer.writeln('Base: ${pizza.base.displayName}');
+    buffer.writeln('Base: ${PizzaBaseExtension.fromString(pizza.base).displayName}');
 
-    if (pizza.cheeses.isNotEmpty) {
+    final cheeses = pizza.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln('\nCheeses:');
-      for (final cheese in pizza.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('• $cheese');
       }
     }
-    if (pizza.proteins.isNotEmpty) {
+    final proteins = pizza.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln('\nProteins:');
-      for (final protein in pizza.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('• $protein');
       }
     }
-    if (pizza.vegetables.isNotEmpty) {
+    final vegetables = pizza.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln('\nVegetables:');
-      for (final veg in pizza.vegetables) {
+      for (final veg in vegetables) {
         buffer.writeln('• $veg');
       }
     }
@@ -826,27 +829,31 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     buffer.writeln();
     buffer.writeln('Bread: ${sandwich.bread}');
 
-    if (sandwich.proteins.isNotEmpty) {
+    final proteins = sandwich.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln('\nProteins:');
-      for (final protein in sandwich.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('• $protein');
       }
     }
-    if (sandwich.cheeses.isNotEmpty) {
+    final cheeses = sandwich.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln('\nCheeses:');
-      for (final cheese in sandwich.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('• $cheese');
       }
     }
-    if (sandwich.vegetables.isNotEmpty) {
+    final vegetables = sandwich.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln('\nVegetables:');
-      for (final veg in sandwich.vegetables) {
+      for (final veg in vegetables) {
         buffer.writeln('• $veg');
       }
     }
-    if (sandwich.condiments.isNotEmpty) {
+    final condiments = sandwich.condimentsList;
+    if (condiments.isNotEmpty) {
       buffer.writeln('\nCondiments:');
-      for (final condiment in sandwich.condiments) {
+      for (final condiment in condiments) {
         buffer.writeln('• $condiment');
       }
     }
@@ -863,17 +870,19 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     buffer.writeln('Time: ${recipe.time}');
     buffer.writeln('Wood: ${recipe.wood}');
 
-    if (recipe.seasonings.isNotEmpty) {
+    final seasonings = recipe.seasoningsList;
+    if (seasonings.isNotEmpty) {
       buffer.writeln('\nSeasonings:');
-      for (final s in recipe.seasonings) {
+      for (final s in seasonings) {
         final amount = s.amount != null && s.amount!.isNotEmpty ? '${s.amount} ' : '';
         buffer.writeln('• $amount${s.name}');
       }
     }
-    if (recipe.directions.isNotEmpty) {
+    final directions = recipe.directionsList;
+    if (directions.isNotEmpty) {
       buffer.writeln('\nDirections:');
-      for (var i = 0; i < recipe.directions.length; i++) {
-        buffer.writeln('${i + 1}. ${recipe.directions[i]}');
+      for (var i = 0; i < directions.length; i++) {
+        buffer.writeln('${i + 1}. ${directions[i]}');
       }
     }
     if (recipe.notes != null && recipe.notes!.isNotEmpty) {

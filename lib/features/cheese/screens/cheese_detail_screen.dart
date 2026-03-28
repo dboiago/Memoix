@@ -33,7 +33,7 @@ class CheeseDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CheeseEntry()..name = '',
+          orElse: () => CheeseEntry(id: 0, uuid: '', name: '', buy: false, source: CheeseSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),,
         );
 
         if (entry.name.isEmpty) {
@@ -233,19 +233,25 @@ class _CheeseDetailView extends ConsumerWidget {
 
   void _duplicateEntry(BuildContext context, WidgetRef ref) async {
     final repo = ref.read(cheeseRepositoryProvider);
-    final newEntry = CheeseEntry()
-      ..uuid = ''  // Will be generated on save
-      ..name = '${entry.name} (Copy)'
-      ..country = entry.country
-      ..milk = entry.milk
-      ..texture = entry.texture
-      ..type = entry.type
-      ..flavour = entry.flavour
-      ..buy = entry.buy
-      ..priceRange = entry.priceRange
-      ..imageUrl = entry.imageUrl
-      ..source = CheeseSource.personal
-      ..isFavorite = false;
+    final now = DateTime.now();
+    final newEntry = CheeseEntry(
+      id: 0,
+      uuid: '',
+      name: '${entry.name} (Copy)',
+      country: entry.country,
+      milk: entry.milk,
+      texture: entry.texture,
+      type: entry.type,
+      flavour: entry.flavour,
+      buy: entry.buy,
+      priceRange: entry.priceRange,
+      imageUrl: entry.imageUrl,
+      source: CheeseSource.personal.name,
+      isFavorite: false,
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
+    );
     
     await repo.saveEntry(newEntry);
     MemoixSnackBar.show('Created copy: ${newEntry.name}');

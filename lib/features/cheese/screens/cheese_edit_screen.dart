@@ -491,24 +491,25 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       return;
     }
 
-    final entry = _existingEntry ?? CheeseEntry();
-    entry
-      ..uuid = _existingEntry?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..country = _selectedCountry
-      ..milk = _milkController.text.trim().isEmpty ? null : _milkController.text.trim()
-      ..texture = _textureController.text.trim().isEmpty ? null : _textureController.text.trim()
-      ..type = _typeController.text.trim().isEmpty ? null : _typeController.text.trim()
-      ..buy = _buy
-      ..flavour = _flavourController.text.trim().isEmpty ? null : _flavourController.text.trim()
-      ..priceRange = _priceRange > 0 ? _priceRange : null
-      ..imageUrl = _imagePath
-      ..source = _existingEntry?.source ?? CheeseSource.personal
-      ..updatedAt = DateTime.now();
-
-    if (_existingEntry == null) {
-      entry.createdAt = DateTime.now();
-    }
+    final now = DateTime.now();
+    final entry = CheeseEntry(
+      id: _existingEntry?.id ?? 0,
+      uuid: _existingEntry?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      country: _selectedCountry,
+      milk: _milkController.text.trim().isEmpty ? null : _milkController.text.trim(),
+      texture: _textureController.text.trim().isEmpty ? null : _textureController.text.trim(),
+      type: _typeController.text.trim().isEmpty ? null : _typeController.text.trim(),
+      buy: _buy,
+      flavour: _flavourController.text.trim().isEmpty ? null : _flavourController.text.trim(),
+      priceRange: _priceRange > 0 ? _priceRange : null,
+      imageUrl: _imagePath,
+      source: _existingEntry?.source ?? CheeseSource.personal.name,
+      isFavorite: _existingEntry?.isFavorite ?? false,
+      createdAt: _existingEntry?.createdAt ?? now,
+      updatedAt: now,
+      version: _existingEntry?.version ?? 1,
+    );
 
     final repo = ref.read(cheeseRepositoryProvider);
     await repo.saveEntry(entry);
