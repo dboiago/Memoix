@@ -1,9 +1,12 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../../core/database/app_database.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../widgets/pizza_card.dart';
@@ -17,7 +20,7 @@ class PizzaListScreen extends ConsumerStatefulWidget {
 }
 
 class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
-  final Set<PizzaBase> _selectedBases = {};
+  final Set<String> _selectedBases = {};
   String _searchQuery = '';
 
   @override
@@ -46,7 +49,7 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
         data: (allPizzas) {
           // Apply Hide Memoix filter if enabled
           final visiblePizzas = hideMemoix
-              ? allPizzas.where((p) => p.source != PizzaSource.memoix).toList()
+              ? allPizzas.where((p) => p.source != PizzaSource.memoix.name).toList()
               : allPizzas;
           // Get bases that have pizzas
           final availableBases = _getAvailableBases(visiblePizzas);
@@ -68,17 +71,17 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
                       if (pizza.name.toLowerCase().contains(query)) {
                         matches.add(pizza.name);
                       }
-                      for (final cheese in pizza.cheeses) {
+                      for (final cheese in (jsonDecode(pizza.cheeses) as List).cast<String>()) {
                         if (cheese.toLowerCase().contains(query)) {
                           matches.add(cheese);
                         }
                       }
-                      for (final protein in pizza.proteins) {
+                      for (final protein in (jsonDecode(pizza.proteins) as List).cast<String>()) {
                         if (protein.toLowerCase().contains(query)) {
                           matches.add(protein);
                         }
                       }
-                      for (final vegetable in pizza.vegetables) {
+                      for (final vegetable in (jsonDecode(pizza.vegetables) as List).cast<String>()) {
                         if (vegetable.toLowerCase().contains(query)) {
                           matches.add(vegetable);
                         }
@@ -221,13 +224,13 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
     );
   }
 
-  Widget _buildBaseChip(PizzaBase? base, int count) {
+  Widget _buildBaseChip(String? base, int count) {
     // "All" is selected when no bases are selected
     final isSelected = base == null 
         ? _selectedBases.isEmpty 
         : _selectedBases.contains(base);
     final theme = Theme.of(context);
-    final label = base?.displayName ?? 'All';
+    final label = base != null ? PizzaBaseExtension.fromString(base).displayName : 'All';
 
     return Padding(
       padding: const EdgeInsets.only(right: 8),
@@ -268,10 +271,14 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
     );
   }
 
-  List<PizzaBase> _getAvailableBases(List<Pizza> pizzas) {
+  List<String> _getAvailableBases(List<Pizza> pizzas) {
     final bases = pizzas.map((p) => p.base).toSet().toList();
     // Sort by enum order
-    bases.sort((a, b) => a.index.compareTo(b.index));
+    bases.sort((a, b) {
+      final aEnum = PizzaBaseExtension.fromString(a);
+      final bEnum = PizzaBaseExtension.fromString(b);
+      return aEnum.index.compareTo(bEnum.index);
+    });
     return bases;
   }
 
@@ -285,9 +292,9 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
     if (_searchQuery.isNotEmpty) {
       pizzas = pizzas.where((p) {
         final nameMatch = p.name.toLowerCase().contains(_searchQuery);
-        final cheeseMatch = p.cheeses.any((c) => c.toLowerCase().contains(_searchQuery));
-        final proteinMatch = p.proteins.any((t) => t.toLowerCase().contains(_searchQuery));
-        final vegetableMatch = p.vegetables.any((v) => v.toLowerCase().contains(_searchQuery));
+        final cheeseMatch = (jsonDecode(p.cheeses) as List).cast<String>().any((c) => c.toLowerCase().contains(_searchQuery));
+        final proteinMatch = (jsonDecode(p.proteins) as List).cast<String>().any((t) => t.toLowerCase().contains(_searchQuery));
+        final vegetableMatch = (jsonDecode(p.vegetables) as List).cast<String>().any((v) => v.toLowerCase().contains(_searchQuery));
         return nameMatch || cheeseMatch || proteinMatch || vegetableMatch;
       }).toList();
     }

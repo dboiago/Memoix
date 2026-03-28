@@ -4,6 +4,9 @@ import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import 'dart:convert';
+
+import '../../../core/database/app_database.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 
@@ -134,8 +137,8 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
 
   /// Build protein summary: first protein, "Cheese" (vegetarian), or "Assorted"
   Widget _buildProteinSummary(ThemeData theme) {
-    final proteins = widget.sandwich.proteins;
-    final cheeses = widget.sandwich.cheeses;
+    final proteins = (jsonDecode(widget.sandwich.proteins) as List).cast<String>();
+    final cheeses = (jsonDecode(widget.sandwich.cheeses) as List).cast<String>();
     
     String label;
     Color dotColor;
@@ -182,9 +185,9 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
 
   /// Build ingredient counts summary with icons
   Widget _buildIngredientsSummary(ThemeData theme) {
-    final cheeseCount = widget.sandwich.cheeses.length;
-    final proteinCount = widget.sandwich.proteins.length;
-    final vegetableCount = widget.sandwich.vegetables.length;
+    final cheeseCount = (jsonDecode(widget.sandwich.cheeses) as List).length;
+    final proteinCount = (jsonDecode(widget.sandwich.proteins) as List).length;
+    final vegetableCount = (jsonDecode(widget.sandwich.vegetables) as List).length;
 
     return Row(
       children: [

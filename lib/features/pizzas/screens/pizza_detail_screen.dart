@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,6 +9,7 @@ import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../../core/database/app_database.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -34,19 +36,15 @@ class PizzaDetailScreen extends ConsumerWidget {
         body: Center(child: Text('Error: $err')),
       ),
       data: (pizzas) {
-        final pizza = pizzas.firstWhere(
-          (p) => p.uuid == pizzaId,
-          orElse: () => Pizza()..name = '',
-        );
-
-        if (pizza.name.isEmpty) {
+        final matches = pizzas.where((p) => p.uuid == pizzaId).toList();
+        if (matches.isEmpty) {
           return Scaffold(
             appBar: AppBar(),
             body: const Center(child: Text('Pizza not found')),
           );
         }
 
-        return _PizzaDetailView(pizza: pizza);
+        return _PizzaDetailView(pizza: matches.first);
       },
     );
   }
@@ -173,7 +171,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
       children: [
         // Base sauce chip
         Chip(
-          label: Text(pizza.base.displayName),
+          label: Text(PizzaBaseExtension.fromString(pizza.base).displayName),
           backgroundColor: theme.colorScheme.surfaceContainerHighest,
           labelStyle: TextStyle(
             color: theme.colorScheme.onSurface,
@@ -198,12 +196,12 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           height: 8,
           margin: const EdgeInsets.only(right: 4),
           decoration: BoxDecoration(
-            color: MemoixColors.forPizzaBaseDot(pizza.base.name),
+            color: MemoixColors.forPizzaBaseDot(pizza.base),
             shape: BoxShape.circle,
           ),
         ),
         Text(
-          pizza.base.displayName,
+          PizzaBaseExtension.fromString(pizza.base).displayName,
           style: theme.textTheme.bodySmall?.copyWith(
             color: textColor,
           ),
@@ -478,6 +476,9 @@ class _PizzaComponentsGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final cheeses = (jsonDecode(pizza.cheeses) as List).cast<String>();
+    final proteins = (jsonDecode(pizza.proteins) as List).cast<String>();
+    final vegetables = (jsonDecode(pizza.vegetables) as List).cast<String>();
     
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -489,16 +490,16 @@ class _PizzaComponentsGrid extends StatelessWidget {
             children: [
               // Sauce section - always 50%
               Expanded(
-                child: _buildComponentSection(theme, 'Sauce', [pizza.base.displayName]),
+                child: _buildComponentSection(theme, 'Sauce', [PizzaBaseExtension.fromString(pizza.base).displayName]),
               ),
               const SizedBox(width: 16),
               // Cheese section - always 50%
               Expanded(
-                child: pizza.cheeses.isNotEmpty
+                child: cheeses.isNotEmpty
                     ? _buildComponentSection(
                         theme,
-                        pizza.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                        pizza.cheeses,
+                        cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                        cheeses,
                       )
                     : const SizedBox(),
               ),
@@ -506,7 +507,7 @@ class _PizzaComponentsGrid extends StatelessWidget {
           ),
         ),
         // Row 2: Proteins (50%) | Vegetables (50%)
-        if (pizza.proteins.isNotEmpty || pizza.vegetables.isNotEmpty) ...[
+        if (proteins.isNotEmpty || vegetables.isNotEmpty) ...[
           const SizedBox(height: 16),
           IntrinsicHeight(
             child: Row(
@@ -514,22 +515,22 @@ class _PizzaComponentsGrid extends StatelessWidget {
               children: [
                 // Proteins section - always 50%
                 Expanded(
-                  child: pizza.proteins.isNotEmpty
+                  child: proteins.isNotEmpty
                       ? _buildComponentSection(
                           theme,
                           'Proteins',
-                          pizza.proteins,
+                          proteins,
                         )
                       : const SizedBox(),
                 ),
                 const SizedBox(width: 16),
                 // Vegetables section - always 50%
                 Expanded(
-                  child: pizza.vegetables.isNotEmpty
+                  child: vegetables.isNotEmpty
                       ? _buildComponentSection(
                           theme,
-                          pizza.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-                          pizza.vegetables,
+                          vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                          vegetables,
                         )
                       : const SizedBox(),
                 ),
