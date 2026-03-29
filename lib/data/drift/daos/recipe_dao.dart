@@ -93,12 +93,12 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   // ── Recipe write ───────────────────────────────────────────────────────────
 
   Future<int> saveRecipe(RecipesCompanion recipe) =>
-      into(recipes).insertOnConflictUpdate(recipe);
+      into(recipes).insertOnConflictUpdate(recipe, target: [recipes.uuid]);
 
   Future<void> saveRecipes(List<RecipesCompanion> rows) =>
       transaction(() async {
         for (final row in rows) {
-          await into(recipes).insertOnConflictUpdate(row);
+          await into(recipes).insertOnConflictUpdate(row, target: [recipes.uuid]);
         }
       });
 
@@ -138,7 +138,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             );
           }
 
-          await into(recipes).insertOnConflictUpdate(row);
+          await into(recipes).insertOnConflictUpdate(row, target: [recipes.uuid]);
         }
 
         if (incomingUuids.isNotEmpty) {
@@ -178,12 +178,12 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
           .get();
 
   Future<int> saveIngredient(IngredientsCompanion ingredient) =>
-      into(ingredients).insertOnConflictUpdate(ingredient);
+      into(ingredients).insert(ingredient);
 
   Future<void> saveIngredients(List<IngredientsCompanion> rows) =>
       transaction(() async {
         for (final row in rows) {
-          await into(ingredients).insertOnConflictUpdate(row);
+          await into(ingredients).insert(row);
         }
       });
 
