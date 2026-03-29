@@ -559,6 +559,14 @@ class RecipeRepository {
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
     final companions = recipes.map(_toCompanion).toList();
     await _db.recipeDao.syncMemoixRecipes(companions);
+
+    for (final recipe in recipes) {
+      final dbRecipe = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (dbRecipe == null) continue;
+      await _db.recipeDao.deleteIngredientsForRecipe(dbRecipe.id);
+      final ingredientCompanions = _toIngredientCompanions(dbRecipe.id, recipe.ingredients);
+      await _db.recipeDao.saveIngredients(ingredientCompanions);
+    }
   }
 
   Future<DateTime?> getLastSyncTime() async {
