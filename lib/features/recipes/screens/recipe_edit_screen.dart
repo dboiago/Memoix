@@ -1887,6 +1887,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..pairedRecipeIds = _supportsPairingForCourse(_selectedCourse) ? _pairedRecipeIds : []
         ..updatedAt = DateTime.now();
 
+      if (_existingRecipe != null) {
+        recipe.id = _existingRecipe!.id;
+      }
+
       if (isEdit) {
         recipe.editCount = (recipe.editCount) + 1;
         final now = DateTime.now();
