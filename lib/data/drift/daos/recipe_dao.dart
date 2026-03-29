@@ -93,12 +93,18 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   // ── Recipe write ───────────────────────────────────────────────────────────
 
   Future<int> saveRecipe(RecipesCompanion recipe) =>
-      into(recipes).insertOnConflictUpdate(recipe, target: [recipes.uuid]);
+      into(recipes).insert(
+        recipe,
+        onConflict: DoUpdate((old) => recipe, target: [recipes.uuid]),
+      );
 
   Future<void> saveRecipes(List<RecipesCompanion> rows) =>
       transaction(() async {
         for (final row in rows) {
-          await into(recipes).insertOnConflictUpdate(row, target: [recipes.uuid]);
+          await into(recipes).insert(
+            row,
+            onConflict: DoUpdate((old) => row, target: [recipes.uuid]),
+          );
         }
       });
 
@@ -138,7 +144,10 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             );
           }
 
-          await into(recipes).insertOnConflictUpdate(row, target: [recipes.uuid]);
+          await into(recipes).insert(
+            row,
+            onConflict: DoUpdate((old) => row, target: [recipes.uuid]),
+          );
         }
 
         if (incomingUuids.isNotEmpty) {
