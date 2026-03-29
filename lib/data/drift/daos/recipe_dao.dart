@@ -92,11 +92,16 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
 
   // ── Recipe write ───────────────────────────────────────────────────────────
 
-  Future<int> saveRecipe(RecipesCompanion recipe) =>
-      into(recipes).insert(
-        recipe,
-        onConflict: DoUpdate((old) => recipe, target: [recipes.uuid]),
-      );
+  Future<int> saveRecipe(RecipesCompanion companion) async {
+    if (companion.id != const Value.absent() && companion.id.value > 0) {
+      return (update(recipes)..where((r) => r.id.equals(companion.id.value)))
+          .write(companion);
+    }
+    return into(recipes).insert(
+      companion,
+      onConflict: DoUpdate((old) => companion, target: [recipes.uuid]),
+    );
+  }
 
   Future<void> saveRecipes(List<RecipesCompanion> rows) =>
       transaction(() async {

@@ -29,6 +29,7 @@ class RecipeRepository {
 
   RecipesCompanion _toCompanion(Recipe recipe) {
     return RecipesCompanion(
+      id: recipe.id > 0 ? Value(recipe.id) : const Value.absent(),
       uuid: Value(recipe.uuid),
       name: Value(recipe.name),
       course: Value(recipe.course),
@@ -67,6 +68,11 @@ class RecipeRepository {
       glass: Value(recipe.glass),
       garnish: Value(jsonEncode(recipe.garnish)),
       pickleMethod: Value(recipe.pickleMethod),
+      recipeType: const Value('standard'),
+      technique: const Value(null),
+      difficulty: const Value(null),
+      scienceNotes: const Value(null),
+      equipmentJson: const Value(null),
     );
   }
 
