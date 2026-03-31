@@ -98,8 +98,9 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       'saveRecipe called with no id and no uuid',
     );
     if (companion.id != const Value.absent() && companion.id.value > 0) {
-      return (update(recipes)..where((r) => r.id.equals(companion.id.value)))
+      await (update(recipes)..where((r) => r.id.equals(companion.id.value)))
           .write(companion);
+      return companion.id.value;
     }
     return into(recipes).insert(
       companion,
