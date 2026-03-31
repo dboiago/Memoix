@@ -93,6 +93,10 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   // ── Recipe write ───────────────────────────────────────────────────────────
 
   Future<int> saveRecipe(RecipesCompanion companion) async {
+    assert(
+      companion.id != const Value.absent() || companion.uuid.value.isNotEmpty,
+      'saveRecipe called with no id and no uuid',
+    );
     if (companion.id != const Value.absent() && companion.id.value > 0) {
       return (update(recipes)..where((r) => r.id.equals(companion.id.value)))
           .write(companion);
