@@ -11,6 +11,7 @@ import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
+import '../providers/personal_storage_provider.dart';
 import '../services/personal_storage_service.dart';
 import '../services/shared_storage_manager.dart';
 import '../services/storage_provider_manager.dart';
