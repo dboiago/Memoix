@@ -177,7 +177,7 @@ class Recipe {
   /// Create from JSON (for GitHub import)
   factory Recipe.fromJson(Map<String, dynamic> json) {
     // Clean up course field - remove "recipes" prefix if present
-    String course = json['course'] as String;
+    String course = (json['course'] as String?) ?? 'mains';
     if (course.toLowerCase().contains('recipes')) {
       // Extract actual course name (e.g., "recipes   mains" -> "mains")
       course = course.replaceAll(RegExp(r'recipes\s*', caseSensitive: false), '').trim();
@@ -200,10 +200,10 @@ class Recipe {
       ..uuid = json['uuid'] as String
       ..name = json['name'] as String
       ..course = course
-      ..cuisine = json['cuisine'] as String?
-      ..subcategory = json['subcategory'] as String?
-      ..serves = json['serves'] as String?
-      ..time = json['time'] as String?
+      ..cuisine = json['cuisine']?.toString()
+      ..subcategory = json['subcategory']?.toString()
+      ..serves = json['serves']?.toString()
+      ..time = json['time']?.toString()
       ..pairsWith = (json['pairsWith'] as List<dynamic>?)
               ?.map((e) => e as String)
               .where((e) => e.isNotEmpty && e != 'Pairs With')
@@ -214,7 +214,7 @@ class Recipe {
               .where((e) => e.isNotEmpty)
               .toList() ??
           []
-      ..comments = (json['comments'] ?? json['notes']) as String?  // Backwards compatible with 'notes'
+      ..comments = (json['comments'] ?? json['notes'])?.toString()  // Backwards compatible with 'notes'
       ..ingredients = (json['ingredients'] as List<dynamic>?)
               ?.map((e) => Ingredient.fromJson(e as Map<String, dynamic>))
               .toList() ??
@@ -224,13 +224,13 @@ class Recipe {
               .where((e) => e.isNotEmpty && e != 'Directions')
               .toList() ??
           []
-      ..sourceUrl = json['sourceUrl'] as String?
-      ..imageUrl = json['imageUrl'] as String?
+      ..sourceUrl = json['sourceUrl']?.toString()
+      ..imageUrl = json['imageUrl']?.toString()
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
           []
-      ..headerImage = json['headerImage'] as String?
+      ..headerImage = json['headerImage']?.toString()
       ..stepImages = (json['stepImages'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
@@ -254,12 +254,12 @@ class Recipe {
       ..nutrition = json['nutrition'] != null
           ? NutritionInfo.fromJson(json['nutrition'] as Map<String, dynamic>)
           : null
-      ..glass = json['glass'] as String?
+      ..glass = json['glass']?.toString()
       ..garnish = (json['garnish'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
           []
-      ..pickleMethod = json['pickleMethod'] as String?;
+      ..pickleMethod = json['pickleMethod']?.toString();
 
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'] as String);
@@ -444,14 +444,14 @@ class Ingredient {
 
   factory Ingredient.fromJson(Map<String, dynamic> json) {
     return Ingredient()
-      ..name = json['name'] as String
-      ..amount = json['amount'] as String?
-      ..unit = json['unit'] as String?
-      ..preparation = json['preparation'] as String?
-      ..alternative = json['alternative'] as String?
+      ..name = (json['name'] as String?) ?? ''
+      ..amount = json['amount']?.toString()
+      ..unit = json['unit']?.toString()
+      ..preparation = json['preparation']?.toString()
+      ..alternative = json['alternative']?.toString()
       ..isOptional = json['isOptional'] as bool? ?? false
-      ..section = json['section'] as String?
-      ..bakerPercent = json['bakerPercent'] as String?;
+      ..section = json['section']?.toString()
+      ..bakerPercent = json['bakerPercent']?.toString();
   }
 
   Map<String, dynamic> toJson() {
