@@ -523,60 +523,109 @@ class PersonalStorageService {
     return result;
   }
 
-  /// Merge recipes domain
+  /// Merge recipes domain — last-write-wins by updatedAt
   Future<MergeResult> _mergeRecipes(List<Recipe> remoteRecipes) async {
-    for (final recipe in remoteRecipes) {
-      await _ref.read(recipeRepositoryProvider).saveRecipe(recipe);
+    final local = await _ref.read(recipeRepositoryProvider).getAllRecipes();
+    final localByUuid = {for (final r in local) r.uuid: r};
+    int added = 0, updated = 0;
+    for (final remote in remoteRecipes) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(recipeRepositoryProvider).saveRecipe(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remoteRecipes.length);
+    return MergeResult(added: added, updated: updated);
   }
 
-  /// Merge pizzas domain
+  /// Merge pizzas domain — last-write-wins by updatedAt
   Future<MergeResult> _mergePizzas(List<Pizza> remotePizzas) async {
-    for (final pizza in remotePizzas) {
-      await _ref.read(pizzaRepositoryProvider).savePizza(pizza);
+    final local = await _ref.read(pizzaRepositoryProvider).getAllPizzas();
+    final localByUuid = {for (final p in local) p.uuid: p};
+    int added = 0, updated = 0;
+    for (final remote in remotePizzas) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(pizzaRepositoryProvider).savePizza(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remotePizzas.length);
+    return MergeResult(added: added, updated: updated);
   }
 
-  /// Merge sandwiches domain
+  /// Merge sandwiches domain — last-write-wins by updatedAt
   Future<MergeResult> _mergeSandwiches(List<Sandwich> remoteSandwiches) async {
-    for (final sandwich in remoteSandwiches) {
-      await _ref.read(sandwichRepositoryProvider).saveSandwich(sandwich);
+    final local = await _ref.read(sandwichRepositoryProvider).getAllSandwiches();
+    final localByUuid = {for (final s in local) s.uuid: s};
+    int added = 0, updated = 0;
+    for (final remote in remoteSandwiches) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(sandwichRepositoryProvider).saveSandwich(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remoteSandwiches.length);
+    return MergeResult(added: added, updated: updated);
   }
 
-  /// Merge cheeses domain
+  /// Merge cheeses domain — last-write-wins by updatedAt
   Future<MergeResult> _mergeCheeses(List<CheeseEntry> remoteCheeses) async {
-    for (final entry in remoteCheeses) {
-      await _ref.read(cheeseRepositoryProvider).saveEntry(entry);
+    final local = await _ref.read(cheeseRepositoryProvider).getAllEntries();
+    final localByUuid = {for (final e in local) e.uuid: e};
+    int added = 0, updated = 0;
+    for (final remote in remoteCheeses) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(cheeseRepositoryProvider).saveEntry(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remoteCheeses.length);
+    return MergeResult(added: added, updated: updated);
   }
 
-  /// Merge cellar domain
+  /// Merge cellar domain — last-write-wins by updatedAt
   Future<MergeResult> _mergeCellar(List<CellarEntry> remoteCellar) async {
-    for (final entry in remoteCellar) {
-      await _ref.read(cellarRepositoryProvider).saveEntry(entry);
+    final local = await _ref.read(cellarRepositoryProvider).getAllEntries();
+    final localByUuid = {for (final e in local) e.uuid: e};
+    int added = 0, updated = 0;
+    for (final remote in remoteCellar) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(cellarRepositoryProvider).saveEntry(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remoteCellar.length);
+    return MergeResult(added: added, updated: updated);
   }
 
-  /// Merge smoking domain
+  /// Merge smoking domain — last-write-wins by updatedAt
   Future<MergeResult> _mergeSmoking(List<SmokingRecipe> remoteSmoking) async {
-    for (final recipe in remoteSmoking) {
-      await _ref.read(smokingRepositoryProvider).saveRecipe(recipe);
+    final local = await _ref.read(smokingRepositoryProvider).getAllRecipes();
+    final localByUuid = {for (final r in local) r.uuid: r};
+    int added = 0, updated = 0;
+    for (final remote in remoteSmoking) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(smokingRepositoryProvider).saveRecipe(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remoteSmoking.length);
+    return MergeResult(added: added, updated: updated);
   }
 
-  /// Merge modernist domain
+  /// Merge modernist domain — last-write-wins by updatedAt
   Future<MergeResult> _mergeModernist(List<ModernistRecipe> remoteModernist) async {
-    for (final recipe in remoteModernist) {
-      await _ref.read(modernistRepositoryProvider).save(recipe);
+    final local = await _ref.read(modernistRepositoryProvider).getAll();
+    final localByUuid = {for (final r in local) r.uuid: r};
+    int added = 0, updated = 0;
+    for (final remote in remoteModernist) {
+      final existing = localByUuid[remote.uuid];
+      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
+        await _ref.read(modernistRepositoryProvider).save(remote);
+        if (existing == null) added++; else updated++;
+      }
     }
-    return MergeResult(updated: remoteModernist.length);
+    return MergeResult(added: added, updated: updated);
   }
 
   // ============ HELPERS ============
