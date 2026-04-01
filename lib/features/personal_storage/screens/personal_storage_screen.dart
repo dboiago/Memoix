@@ -476,13 +476,16 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
             MemoixSnackBar.showSuccess('Connected to Google Drive');
             _executeDirectPull(showFullSummary: false);
           } else {
-            // First-time connection - check if remote has existing data
+            // First-time connection — auto-sync based on remote state
             final hasData = await _googleDrive!.hasExistingData();
             if (hasData) {
-              // Show initial sync prompt only on first connection
-              _showInitialSyncDialog();
-            } else {
+              // Remote file exists: pull to import existing recipes
               MemoixSnackBar.showSuccess('Connected to Google Drive');
+              _executeDirectPull(showFullSummary: true);
+            } else {
+              // No remote file yet: push local recipes to initialize cloud storage
+              MemoixSnackBar.showSuccess('Connected to Google Drive');
+              unawaited(ref.read(personalStorageServiceProvider).push(silent: true));
             }
           }
         }

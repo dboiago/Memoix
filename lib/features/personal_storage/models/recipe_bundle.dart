@@ -223,7 +223,7 @@ class BundleMetadata {
       version: json['version'] as int? ?? 1,
       schemaVersion: json['schemaVersion'] as int? ?? 1,
       createdAt: json['createdAt'] != null
-          ? DateTime.parse(json['createdAt'] as String)
+          ? DateTime.parse(json['createdAt'].toString())
           : DateTime.now().toUtc(),
       createdBy: json['createdBy'] as String? ?? 'Unknown',
       appVersion: json['appVersion'] as String?,

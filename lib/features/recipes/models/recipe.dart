@@ -197,20 +197,20 @@ class Recipe {
     course = courseMapping[course] ?? course;
 
     final recipe = Recipe()
-      ..uuid = json['uuid'] as String
-      ..name = json['name'] as String
+      ..uuid = json['uuid']?.toString() ?? ''
+      ..name = json['name']?.toString() ?? ''
       ..course = course
       ..cuisine = json['cuisine']?.toString()
       ..subcategory = json['subcategory']?.toString()
       ..serves = json['serves']?.toString()
       ..time = json['time']?.toString()
       ..pairsWith = (json['pairsWith'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .where((e) => e.isNotEmpty && e != 'Pairs With')
               .toList() ??
           []
       ..pairedRecipeIds = (json['pairedRecipeIds'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .where((e) => e.isNotEmpty)
               .toList() ??
           []
@@ -220,23 +220,23 @@ class Recipe {
               .toList() ??
           []
       ..directions = (json['directions'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .where((e) => e.isNotEmpty && e != 'Directions')
               .toList() ??
           []
       ..sourceUrl = json['sourceUrl']?.toString()
       ..imageUrl = json['imageUrl']?.toString()
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
       ..headerImage = json['headerImage']?.toString()
       ..stepImages = (json['stepImages'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
       ..stepImageMap = (json['stepImageMap'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
       ..source = RecipeSource.values.firstWhere(
@@ -248,7 +248,7 @@ class Recipe {
       ..rating = json['rating'] as int? ?? 0
       ..cookCount = json['cookCount'] as int? ?? 0
       ..tags =
-          (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList() ??
+          (json['tags'] as List<dynamic>?)?.map((e) => e.toString()).toList() ??
               []
       ..version = json['version'] as int? ?? 1
       ..nutrition = json['nutrition'] != null
@@ -256,19 +256,19 @@ class Recipe {
           : null
       ..glass = json['glass']?.toString()
       ..garnish = (json['garnish'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
       ..pickleMethod = json['pickleMethod']?.toString();
 
     if (json['createdAt'] != null) {
-      recipe.createdAt = DateTime.parse(json['createdAt'] as String);
+      recipe.createdAt = DateTime.parse(json['createdAt'].toString());
     }
     if (json['updatedAt'] != null) {
-      recipe.updatedAt = DateTime.parse(json['updatedAt'] as String);
+      recipe.updatedAt = DateTime.parse(json['updatedAt'].toString());
     }
     if (json['lastCookedAt'] != null) {
-      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'] as String);
+      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'].toString());
     }
 
     return recipe;

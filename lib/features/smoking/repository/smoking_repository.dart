@@ -41,9 +41,9 @@ class SmokingRepository {
             .map((e) {
               final m = e as Map<String, dynamic>;
               return SmokingSeasoning.create(
-                name: m['name'] as String? ?? '',
-                amount: m['amount'] as String?,
-                unit: m['unit'] as String?,
+                name: m['name']?.toString() ?? '',
+                amount: m['amount']?.toString(),
+                unit: m['unit']?.toString(),
               );
             })
             .toList(),
@@ -55,9 +55,9 @@ class SmokingRepository {
             .map((e) {
               final m = e as Map<String, dynamic>;
               return SmokingSeasoning.create(
-                name: m['name'] as String? ?? '',
-                amount: m['amount'] as String?,
-                unit: m['unit'] as String?,
+                name: m['name']?.toString() ?? '',
+                amount: m['amount']?.toString(),
+                unit: m['unit']?.toString(),
               );
             })
             .toList(),
