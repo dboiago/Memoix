@@ -143,6 +143,7 @@ class _SharedStorageScreenState
           // Register with service so the subsequent push() uses this instance
           await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
+      }
       await StorageProviderManager.disconnectAllExcept(ref, exceptProvider: provider);
       
       // Sync recipes to new folder

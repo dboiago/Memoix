@@ -249,11 +249,11 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          provider.name,
+                          (provider as PersonalStorageProvider).name,
                           style: theme.textTheme.titleMedium,
                         ),
                         Text(
-                          provider.connectedPath ?? '/My Drive/Memoix',
+                          (provider as PersonalStorageProvider).connectedPath ?? '/My Drive/Memoix',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
