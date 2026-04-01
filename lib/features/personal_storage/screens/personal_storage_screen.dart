@@ -48,8 +48,15 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
   /// Whether Personal Storage is configured (has preferences set)
   bool _isPersonalStorageConfigured = false;
 
+  /// The currently active (connected) provider, or null if none
+  PersonalStorageProvider? get _activeProvider {
+    if (_oneDrive?.isConnected == true) return _oneDrive;
+    if (_googleDrive?.isConnected == true) return _googleDrive;
+    return null;
+  }
+
   /// Whether the provider is connected AND Personal Storage is configured
-  bool get _isConnected => (_googleDrive?.isConnected ?? false) && _isPersonalStorageConfigured;
+  bool get _isConnected => _activeProvider != null && _isPersonalStorageConfigured;
 
   @override
   void initState() {
@@ -58,23 +65,30 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
   }
 
   Future<void> _initializeProviders() async {
-    // Initialize Google Drive provider
-    _googleDrive = GoogleDriveStorage();
-    await _googleDrive!.initialize();
+    final service = ref.read(personalStorageServiceProvider);
+
+    // Ensure service is initialized (may already be done via onAppLaunched)
+    await service.initialize();
+
+    // Sync local provider fields from the service to avoid creating duplicate instances
+    final existingProvider = service.provider;
+    if (existingProvider is GoogleDriveStorage) {
+      _googleDrive = existingProvider;
+    } else if (existingProvider is OneDriveStorage) {
+      _oneDrive = existingProvider;
+    } else {
+      // No active provider — initialize Google Drive for a potential new connection
+      _googleDrive = GoogleDriveStorage();
+      await _googleDrive!.initialize();
+    }
 
     // Check if Personal Storage is configured (has preferences)
     final prefs = await SharedPreferences.getInstance();
     _isPersonalStorageConfigured = prefs.getString('personal_storage_provider_id') != null;
 
     // Load sync mode and last sync time
-    final service = ref.read(personalStorageServiceProvider);
     _syncMode = await service.syncMode;
     _lastSyncTime = await service.lastSyncTime;
-
-    // If connected AND configured, set the provider on the service
-    if (_googleDrive!.isConnected && _isPersonalStorageConfigured) {
-      await service.setProvider(_googleDrive!);
-    }
 
     if (mounted) setState(() {});
   }
@@ -429,6 +443,11 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     setState(() => _isConnecting = true);
 
     try {
+      // Lazy-initialize if needed (e.g. after disconnect)
+      if (_googleDrive == null) {
+        _googleDrive = GoogleDriveStorage();
+        await _googleDrive!.initialize();
+      }
       // Add 60 second timeout for connection attempt
       final success = await _googleDrive!.connect().timeout(
         const Duration(seconds: 60),
@@ -815,12 +834,13 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
 
   /// Disconnect from current provider
   Future<void> _disconnect() async {
+    final providerName = _activeProvider?.name ?? 'storage';
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
         title: const Text('Disconnect?'),
-        content: const Text(
-          'Disconnecting will not delete your recipes from Google Drive. '
+        content: Text(
+          'Disconnecting will not delete your recipes from $providerName. '
           'You can reconnect anytime.',
         ),
         actions: [
@@ -839,10 +859,12 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (confirmed == true) {
       final service = ref.read(personalStorageServiceProvider);
       await service.disconnect();
-      _googleDrive = GoogleDriveStorage();
+      _googleDrive = null;
+      _oneDrive = null;
+      _isPersonalStorageConfigured = false;
       _lastSyncTime = null;
       if (mounted) setState(() {});
-      MemoixSnackBar.show('Disconnected from Google Drive');
+      MemoixSnackBar.show('Disconnected from $providerName');
     }
   }
 

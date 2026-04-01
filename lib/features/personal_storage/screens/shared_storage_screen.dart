@@ -243,7 +243,22 @@ class _SharedStorageScreenState
           await storage.switchRepository(repository.folderId, repository.name);
           break;
         case StorageProvider.oneDrive:
-          // OneDrive switch is handled in SharedStorageManager.setActiveRepository
+          // OneDrive: sign in if needed, switch folder, and register with service
+          final oneDriveStorage = OneDriveStorage();
+          await oneDriveStorage.init();
+          if (!oneDriveStorage.isConnected) {
+            await oneDriveStorage.signIn().timeout(
+              const Duration(seconds: 60),
+              onTimeout: () {
+                throw TimeoutException('Connection timed out. Please try again.');
+              },
+            );
+            if (!oneDriveStorage.isConnected) {
+              throw StateError('OneDrive sign-in cancelled. Please try again.');
+            }
+          }
+          await oneDriveStorage.switchRepository(repository.folderId, repository.name);
+          await ref.read(personalStorageServiceProvider).setProvider(oneDriveStorage);
           break;
       }
       

@@ -116,7 +116,11 @@ class SharedStorageManager extends ChangeNotifier {
           final oneDriveStorage = OneDriveStorage();
           await oneDriveStorage.init();
           
-          // Check if connected
+          // If not connected via silent restore, attempt interactive sign-in
+          if (!oneDriveStorage.isConnected) {
+            await oneDriveStorage.signIn();
+          }
+          
           if (oneDriveStorage.isConnected) {
             // Switch to the repository folder and wait for completion
             await oneDriveStorage.switchRepository(
@@ -129,8 +133,8 @@ class SharedStorageManager extends ChangeNotifier {
             _isSwitching = false;
             _currentRepository = previousActiveRepo; // Restore
             notifyListeners();
-            debugPrint('SharedStorageManager: OneDrive not connected, user needs to sign in');
-            throw Exception('OneDrive not connected. Please sign in first.');
+            debugPrint('SharedStorageManager: OneDrive sign-in was cancelled');
+            throw Exception('OneDrive sign-in was cancelled. Please try again.');
           }
           break;
       }
