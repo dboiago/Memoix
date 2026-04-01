@@ -41,7 +41,21 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   static const _jsonMimeType = 'application/json';
 
   // OAuth scopes
-  static const _scopes = [drive.DriveApi.driveFileScope];
+  //
+  // MUST use driveScope (account-wide), NOT driveFileScope.
+  // driveFileScope is scoped per-OAuth-client: files.list only returns files
+  // created by the exact client ID that made the token. Desktop and mobile use
+  // different client IDs, so each device would only see its own "Memoix" folder
+  // and silently create a second one — breaking cross-device sync entirely.
+  // driveScope operates at the user-account level: all devices signed in to the
+  // same Google account see the same Drive, enabling true cross-device sync.
+  static const _scopes = [drive.DriveApi.driveScope];
+
+  // Schema version stored in SharedPreferences.
+  // Bump when the OAuth scope or stored-state format changes; initialize() will
+  // clear old credentials so the user re-authorizes with the updated scope.
+  static const _keySchemaVersion = 'google_drive_schema_version';
+  static const _schemaVersion = 2; // v2: driveScope replaces driveFileScope
 
   /// Desktop OAuth ClientId - loaded from .env or falls back to dev keys
   static auth_io.ClientId get _desktopClientId => auth_io.ClientId(
@@ -112,6 +126,22 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   @override
   Future<void> initialize() async {
     final prefs = await SharedPreferences.getInstance();
+
+    // Schema-version migration: v1 used driveFileScope (per-client, breaks
+    // cross-device). v2+ uses driveScope. Clear stored credentials so the
+    // user re-authorizes once with the correct scope. This is a one-time cost.
+    final storedVersion = prefs.getInt(_keySchemaVersion) ?? 1;
+    if (storedVersion < _schemaVersion) {
+      debugPrint(
+        'GoogleDriveStorage: Upgrading schema '
+        'v$storedVersion → v$_schemaVersion — clearing credentials '
+        '(user will need to reconnect once for cross-device sync)',
+      );
+      await _clearStoredState();
+      await prefs.setInt(_keySchemaVersion, _schemaVersion);
+      return; // Provider appears disconnected; user reconnects with drive scope
+    }
+
     _isConnected = prefs.getBool(_keyIsConnected) ?? false;
     _folderId = prefs.getString(_keyFolderId);
     _folderPath = prefs.getString(_keyFolderPath);
@@ -723,8 +753,10 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<String?> findExistingMemoixFolder() async {
     _ensureConnected();
 
+    // Anchor to Drive root so we never match a "Memoix" folder that is nested
+    // inside another folder (e.g. a shared folder or a subdirectory).
     final query =
-        "mimeType='$_folderMimeType' and name='$_defaultFolderName' and trashed=false";
+        "mimeType='$_folderMimeType' and name='$_defaultFolderName' and 'root' in parents and trashed=false";
 
     final fileList = await _driveApi!.files.list(
       q: query,
@@ -957,6 +989,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<void> _saveStoredState() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_keyIsConnected, _isConnected);
+    await prefs.setInt(_keySchemaVersion, _schemaVersion); // Lock in current version
     if (_folderId != null) {
       await prefs.setString(_keyFolderId, _folderId!);
     }
