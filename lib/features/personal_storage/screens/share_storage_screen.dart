@@ -92,12 +92,12 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
           MemoixSnackBar.show('$successCount sent, $failCount failed');
         } else {
           // All failed
-          MemoixSnackBar.showError('Failed to invite: ${lastError ?? "Unknown error"}');
+          MemoixSnackBar.showPersistentWithCopy('Failed to invite: ${lastError ?? "Unknown error"}');
         }
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to invite: ${e.toString()}');
+        MemoixSnackBar.showPersistentWithCopy('Failed to invite: ${e.toString()}');
       }
     } finally {
       if (mounted) {

@@ -170,7 +170,7 @@ class _SharedStorageScreenState
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to create shared storage: $e');
+        MemoixSnackBar.showPersistentWithCopy('Failed to create shared storage: $e');
       }
     }
   }
@@ -275,7 +275,7 @@ class _SharedStorageScreenState
       _loadRepositories();
       
       if (mounted) {
-        MemoixSnackBar.showError('Failed to switch storage: $e');
+        MemoixSnackBar.showPersistentWithCopy('Failed to switch storage: $e');
       }
     }
   }
@@ -322,7 +322,7 @@ class _SharedStorageScreenState
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to disconnect: $e');
+        MemoixSnackBar.showPersistentWithCopy('Failed to disconnect: $e');
       }
     }
   }

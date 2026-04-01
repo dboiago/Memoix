@@ -141,7 +141,10 @@ class PersonalStorageService {
   PersonalStorageProvider? _createProvider(String providerId) {
     switch (providerId) {
       case 'google_drive':
-        return GoogleDriveStorage();
+        // Use the Riverpod singleton to prevent two instances with diverging
+        // in-memory state (e.g. _folderId set on one but not the other after
+        // switchRepository() is called from the UI).
+        return _ref.read(googleDriveStorageProvider);
       case 'onedrive':
         return OneDriveStorage();
       // Add other providers here as they are implemented:

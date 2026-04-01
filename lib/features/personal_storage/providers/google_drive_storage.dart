@@ -547,8 +547,19 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     // Initialize Drive API
     await _initializeDriveApiFromMobile(account);
 
-    // Get or create the Memoix folder
-    await _setupMemoixFolder();
+    // Only run first-time folder setup when no folder ID is already stored.
+    // An existing stored ID means switchRepository() previously set the target
+    // folder; calling _setupMemoixFolder() would overwrite it with the default.
+    final prefs = await SharedPreferences.getInstance();
+    final storedFolderId = prefs.getString(_keyFolderId);
+    if (storedFolderId != null) {
+      _folderId    = storedFolderId;
+      _folderPath  = prefs.getString(_keyFolderPath);
+      _isConnected = true;
+      await prefs.setBool(_keyIsConnected, true);
+    } else {
+      await _setupMemoixFolder();
+    }
 
     return true;
   }
@@ -569,8 +580,19 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     // Save credentials for later restoration
     await _saveDesktopCredentials(_desktopCredentials!);
 
-    // Get or create the Memoix folder
-    await _setupMemoixFolder();
+    // Only run first-time folder setup when no folder ID is already stored.
+    // An existing stored ID means switchRepository() previously set the target
+    // folder; calling _setupMemoixFolder() would overwrite it with the default.
+    final prefs = await SharedPreferences.getInstance();
+    final storedFolderId = prefs.getString(_keyFolderId);
+    if (storedFolderId != null) {
+      _folderId    = storedFolderId;
+      _folderPath  = prefs.getString(_keyFolderPath);
+      _isConnected = true;
+      await prefs.setBool(_keyIsConnected, true);
+    } else {
+      await _setupMemoixFolder();
+    }
 
     return true;
   }

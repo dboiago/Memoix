@@ -268,7 +268,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
                           style: theme.textTheme.titleMedium,
                         ),
                         Text(
-                          (provider as PersonalStorageProvider).connectedPath ?? '/My Drive/Memoix',
+                          (provider as PersonalStorageProvider).connectedPath ?? '/Memoix',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -498,7 +498,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Connection failed: $e');
+        MemoixSnackBar.showPersistentWithCopy('Connection failed: $e');
       }
     } finally {
       if (mounted) {
@@ -525,6 +525,10 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       );
 
       if (_oneDrive!.isConnected) {
+        // Set up the default Memoix folder so connectedPath is populated
+        // and push/pull have a valid target folder.
+        await _oneDrive!.setupDefaultFolder();
+
         // Disconnect all other providers (mutual exclusivity)
         await StorageProviderManager.disconnectAll(ref);
 
@@ -549,7 +553,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('OneDrive connection failed: $e');
+        MemoixSnackBar.showPersistentWithCopy('OneDrive connection failed: $e');
       }
     } finally {
       if (mounted) {
@@ -610,7 +614,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (!mounted) return;
     
     if (result.hasFailed) {
-      MemoixSnackBar.showError('Pull failed: ${result.error}');
+      MemoixSnackBar.showPersistentWithCopy('Pull failed: ${result.error}');
     } else if (result.wasSkipped) {
       // Silent - no message needed
     } else {
@@ -686,7 +690,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     
     // Handle different scenarios
     if (result.hasFailed) {
-      MemoixSnackBar.showError('Pull failed: ${result.error}');
+      MemoixSnackBar.showPersistentWithCopy('Pull failed: ${result.error}');
       return;
     }
     

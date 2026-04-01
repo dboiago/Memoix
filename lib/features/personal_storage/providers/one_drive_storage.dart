@@ -450,7 +450,13 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
       if (myDriveResponse.statusCode == 200) {
         final data = jsonDecode(myDriveResponse.body) as Map<String, dynamic>;
         final parentRef = data['parentReference'] as Map<String, dynamic>?;
-        driveId = parentRef?['driveId'] as String? ?? 'me';
+        final resolvedDriveId = parentRef?['driveId'] as String?;
+        // parentReference.driveId may be absent for root-level items on some
+        // personal account configurations. Never fall back to the string 'me'
+        // because it is invalid in /drives/{id}/ Graph API URLs.
+        driveId = (resolvedDriveId != null && resolvedDriveId.isNotEmpty)
+            ? resolvedDriveId
+            : await _fetchOwnDriveId();
         debugPrint('OneDriveStorage: Resolved "$name" in own drive (driveId: $driveId)');
       } else {
         // Step 2: Search Shared with Me items for the supplied folder ID.
@@ -539,6 +545,67 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     } catch (_) {
       return false;
     }
+  }
+
+  /// Fetch the user's own OneDrive drive ID via GET /me/drive.
+  ///
+  /// Used as a fallback when parentReference.driveId is absent from an item
+  /// metadata response. Never returns 'me' — throws on failure.
+  Future<String> _fetchOwnDriveId() async {
+    final url = Uri.parse('$_graphApiBase/me/drive');
+    final response = await _httpClient!.get(url);
+    if (response.statusCode != 200) {
+      throw Exception(
+        'OneDriveStorage: Failed to fetch own drive ID: '
+        '${response.statusCode} ${response.body}',
+      );
+    }
+    final data = jsonDecode(response.body) as Map<String, dynamic>;
+    final id = data['id'] as String?;
+    if (id == null || id.isEmpty) {
+      throw Exception('OneDriveStorage: /me/drive did not return a valid id');
+    }
+    debugPrint('OneDriveStorage: Own drive ID fetched: $id');
+    return id;
+  }
+
+  /// Find or create the default "Memoix" folder in the user's OneDrive root,
+  /// then call [switchRepository] to set all target fields.
+  ///
+  /// This mirrors [GoogleDriveStorage._setupMemoixFolder] and is called from
+  /// [personal_storage_screen._connectOneDrive] after a successful sign-in.
+  Future<void> setupDefaultFolder() async {
+    _ensureConnected();
+
+    const defaultName = 'Memoix';
+
+    // Search for an existing Memoix folder at root level.
+    final searchUrl = Uri.parse(
+      '$_graphApiBase/me/drive/root/children?\$filter=name eq \'$defaultName\'',
+    );
+    final searchResponse = await _httpClient!.get(searchUrl);
+
+    String folderId;
+
+    if (searchResponse.statusCode == 200) {
+      final data = jsonDecode(searchResponse.body) as Map<String, dynamic>;
+      final items = data['value'] as List<dynamic>;
+      if (items.isNotEmpty) {
+        final existing = items.first as Map<String, dynamic>;
+        folderId = existing['id'] as String;
+        debugPrint('OneDriveStorage: Found existing Memoix folder: $folderId');
+      } else {
+        // Not found — create it.
+        folderId = await createFolder(defaultName);
+        debugPrint('OneDriveStorage: Created Memoix folder: $folderId');
+      }
+    } else {
+      // Search failed — create a new folder.
+      folderId = await createFolder(defaultName);
+      debugPrint('OneDriveStorage: Created Memoix folder (search failed): $folderId');
+    }
+
+    await switchRepository(folderId, defaultName);
   }
 
   /// Grant folder permission to a user by email.
