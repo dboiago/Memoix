@@ -42,7 +42,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
   // OAuth scopes
   //
-  // MUST use driveScope (account-wide), NOT driveFileScope.
+  // MUST use driveScope (account-wide), NOT driveFileScope. 
   // driveFileScope is scoped per-OAuth-client: files.list only returns files
   // created by the exact client ID that made the token. Desktop and mobile use
   // different client IDs, so each device would only see its own "Memoix" folder
