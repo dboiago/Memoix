@@ -11,7 +11,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../config/app_config.dart';
 import '../../../core/services/graph_http_client.dart';
+import '../models/recipe_bundle.dart';
+import '../models/storage_meta.dart';
 import 'cloud_storage_provider.dart';
+import 'personal_storage_provider.dart';
 /// Custom exception for repository not found errors
 class RepositoryNotFoundException implements Exception {
   final String repositoryName;
@@ -29,7 +32,7 @@ class RepositoryNotFoundException implements Exception {
 /// Uses Microsoft Graph API to interact with OneDrive storage.
 /// Authentication is handled via OAuth2 using flutter_appauth.
 /// Access tokens are securely stored using flutter_secure_storage.
-class OneDriveStorage implements CloudStorageProvider {
+class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   // Secure storage keys
   static const _keyAccessToken = 'onedrive_access_token';
   static const _keyRefreshToken = 'onedrive_refresh_token';
@@ -38,6 +41,10 @@ class OneDriveStorage implements CloudStorageProvider {
   static const _keyFolderName = 'onedrive_folder_name';
   static const _keyDriveId = 'onedrive_drive_id';
   static const _keyTargetFolderId = 'onedrive_target_folder_id';
+
+  // File names for storage files
+  static const _recipesFileName = 'memoix_recipes.json';
+  static const _metaFileName = '.memoix_meta.json';
 
   // Microsoft Graph API endpoints
   static const _graphApiBase = 'https://graph.microsoft.com/v1.0';
@@ -67,6 +74,89 @@ class OneDriveStorage implements CloudStorageProvider {
   String? _targetFolderId;  // Folder ID within the drive (same as _activeFolderId)
   GraphHttpClient? _httpClient;
   bool _isConnected = false;
+
+  // --- PersonalStorageProvider interface ---
+
+  @override
+  String get name => 'Microsoft OneDrive';
+
+  @override
+  String get id => 'onedrive';
+
+  @override
+  bool get supportsAutomaticSync => true;
+
+  @override
+  bool get supportsFastMetaCheck => true;
+
+  @override
+  bool get supportsAtomicWrites => true;
+
+  @override
+  bool get supportsFolders => true;
+
+  @override
+  bool get isAdvanced => false;
+
+  @override
+  String? get connectedPath => _activeFolderName;
+
+  @override
+  Future<void> initialize() async {
+    await init();
+  }
+
+  @override
+  Future<bool> connect() async {
+    await signIn();
+    return isConnected;
+  }
+
+  @override
+  Future<void> disconnect() async {
+    await signOut();
+  }
+
+  @override
+  Future<void> push(RecipeBundle bundle) async {
+    _ensureConnected();
+    final content = bundle.toJsonString(pretty: true);
+    await uploadFile(_recipesFileName, content);
+  }
+
+  @override
+  Future<RecipeBundle?> pull() async {
+    _ensureConnected();
+    try {
+      final content = await downloadFile(_recipesFileName);
+      if (content == null) return null;
+      return RecipeBundle.fromJsonString(content);
+    } catch (e) {
+      debugPrint('OneDriveStorage: Pull failed: $e');
+      return null;
+    }
+  }
+
+  @override
+  Future<StorageMeta?> getMeta() async {
+    _ensureConnected();
+    try {
+      final content = await downloadFile(_metaFileName);
+      if (content == null) return null;
+      final json = jsonDecode(content) as Map<String, dynamic>;
+      return StorageMeta.fromJson(json);
+    } catch (e) {
+      debugPrint('OneDriveStorage: Get meta failed: $e');
+      return null;
+    }
+  }
+
+  @override
+  Future<void> updateMeta(StorageMeta meta) async {
+    _ensureConnected();
+    final content = const JsonEncoder.withIndent('  ').convert(meta.toJson());
+    await uploadFile(_metaFileName, content);
+  }
 
   // --- CloudStorageProvider interface ---
 

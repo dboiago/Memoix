@@ -507,12 +507,14 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       if (_oneDrive!.isConnected) {
         // Disconnect all other providers (mutual exclusivity)
         await StorageProviderManager.disconnectAll(ref);
-        
+
+        // Set provider on service
+        final service = ref.read(personalStorageServiceProvider);
+        await service.setProvider(_oneDrive!);
+
         // Mark Personal Storage as configured
         setState(() => _isPersonalStorageConfigured = true);
-        
-        // Note: OneDrive integration is in progress
-        // Full PersonalStorageService integration will be completed in a future update
+
         if (mounted) {
           MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
         }

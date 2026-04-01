@@ -34,6 +34,7 @@ import '../models/sync_status.dart';
 import '../providers/personal_storage_provider.dart';
 import 'shared_storage_manager.dart';
 import '../providers/google_drive_storage.dart';
+import '../providers/one_drive_storage.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
@@ -141,6 +142,8 @@ class PersonalStorageService {
     switch (providerId) {
       case 'google_drive':
         return GoogleDriveStorage();
+      case 'onedrive':
+        return OneDriveStorage();
       // Add other providers here as they are implemented:
       // case 'github':
       //   return GitHubStorage();
