@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 
 import '../models/storage_location.dart';
+import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 
 /// Manages cloud storage repositories (multiple storage locations)
@@ -99,14 +100,22 @@ class SharedStorageManager extends ChangeNotifier {
       switch (activeRepo.provider) {
         case StorageProvider.googleDrive:
           debugPrint('SharedStorageManager: Initializing Google Drive repository: ${activeRepo.name}');
-          
-          // GoogleDriveStorage is managed via Riverpod, but we need to ensure it's connected
-          // The UI layer will handle the actual folder switch via googleDriveStorageProvider
-          // Just ensure the user has authenticated
-          
-          // Note: GoogleDriveStorage initialization happens in the UI layer via Riverpod
-          // We just verify basic state here
-          await Future.delayed(const Duration(milliseconds: 100));
+
+          final googleDriveStorage = GoogleDriveStorage();
+          await googleDriveStorage.initialize();
+
+          if (!googleDriveStorage.isConnected) {
+            throw Exception(
+              'Google Drive not connected. Please sign in via Personal Storage first.',
+            );
+          }
+
+          await googleDriveStorage.switchRepository(
+            activeRepo.folderId,
+            activeRepo.name,
+          );
+
+          debugPrint('SharedStorageManager: Google Drive repository initialized and ready');
           break;
           
         case StorageProvider.oneDrive:

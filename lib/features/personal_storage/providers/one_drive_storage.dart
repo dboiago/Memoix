@@ -366,6 +366,8 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
       await _secureStorage.delete(key: _keyTokenExpiry);
       await _secureStorage.delete(key: _keyFolderId);
       await _secureStorage.delete(key: _keyFolderName);
+      await _secureStorage.delete(key: _keyDriveId);
+      await _secureStorage.delete(key: _keyTargetFolderId);
 
       // Clear in-memory state
       _accessToken = null;
@@ -437,14 +439,55 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     _ensureConnected();
 
     try {
-      // Use _findRepository to locate the folder in My Files or Shared with Me
-      final repoInfo = await _findRepository(name);
-      
-      final driveId = repoInfo['driveId'] as String;
-      final targetFolderId = repoInfo['folderId'] as String;
-      final isShared = repoInfo['isShared'] as bool;
+      // Step 1: Try to resolve the folder by ID in the user's own drive.
+      // This avoids the name-lookup ambiguity that existed previously.
+      final myDriveUrl = Uri.parse('$_graphApiBase/me/drive/items/$folderId');
+      final myDriveResponse = await _httpClient!.get(myDriveUrl);
 
-      // Verify folder exists by fetching its metadata
+      String driveId;
+      final String targetFolderId = folderId;
+
+      if (myDriveResponse.statusCode == 200) {
+        final data = jsonDecode(myDriveResponse.body) as Map<String, dynamic>;
+        final parentRef = data['parentReference'] as Map<String, dynamic>?;
+        driveId = parentRef?['driveId'] as String? ?? 'me';
+        debugPrint('OneDriveStorage: Resolved "$name" in own drive (driveId: $driveId)');
+      } else {
+        // Step 2: Search Shared with Me items for the supplied folder ID.
+        debugPrint('OneDriveStorage: "$name" not in own drive, checking Shared with Me...');
+        final sharedUrl = Uri.parse('$_graphApiBase/me/drive/sharedWithMe');
+        final sharedResponse = await _httpClient!.get(sharedUrl);
+
+        if (sharedResponse.statusCode != 200) {
+          throw RepositoryNotFoundException(name,
+              customMessage: 'Folder "$name" ($folderId) not found');
+        }
+
+        final sharedData = jsonDecode(sharedResponse.body) as Map<String, dynamic>;
+        final items = sharedData['value'] as List<dynamic>;
+
+        String? foundDriveId;
+        for (final item in items) {
+          final itemMap = item as Map<String, dynamic>;
+          final remoteItem = itemMap['remoteItem'] as Map<String, dynamic>?;
+          final remoteId = remoteItem?['id'] as String?;
+          if (remoteId == folderId) {
+            final parentRef = remoteItem?['parentReference'] as Map<String, dynamic>?;
+            foundDriveId = parentRef?['driveId'] as String?;
+            break;
+          }
+        }
+
+        if (foundDriveId == null) {
+          throw RepositoryNotFoundException(name,
+              customMessage:
+                  'Folder "$name" ($folderId) not found in My Files or Shared with Me');
+        }
+        driveId = foundDriveId;
+        debugPrint('OneDriveStorage: Resolved "$name" in Shared with Me (driveId: $driveId)');
+      }
+
+      // Step 3: Verify reachability using the resolved drive ID.
       final verifyUrl = Uri.parse('$_graphApiBase/drives/$driveId/items/$targetFolderId');
       final response = await _httpClient!.get(verifyUrl);
 
@@ -454,14 +497,12 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
         _targetDriveId = driveId;
         _targetFolderId = targetFolderId;
 
-        // Persist to secure storage
         await _secureStorage.write(key: _keyFolderId, value: targetFolderId);
         await _secureStorage.write(key: _keyFolderName, value: name);
         await _secureStorage.write(key: _keyDriveId, value: driveId);
         await _secureStorage.write(key: _keyTargetFolderId, value: targetFolderId);
 
-        final location = isShared ? 'Shared with Me' : 'My Files';
-        debugPrint('OneDriveStorage: Switched to folder "$name" ($targetFolderId) in $location (drive: $driveId)');
+        debugPrint('OneDriveStorage: Switched to folder "$name" ($targetFolderId) on drive $driveId');
       } else if (response.statusCode == 404) {
         throw Exception('Folder not found: $name ($folderId)');
       } else {
@@ -470,12 +511,44 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
         );
       }
     } on RepositoryNotFoundException {
-      // Re-throw with clear message
       rethrow;
     } catch (e) {
       debugPrint('OneDriveStorage: switchRepository error: $e');
       rethrow;
     }
+  }
+
+  /// Verify access to a folder by ID.
+  ///
+  /// Returns true if the folder is reachable with the current credentials.
+  /// Used by [_verifyStorage] in SharedStorageScreen for OneDrive repositories.
+  Future<bool> verifyFolderAccess(String folderId) async {
+    if (!_isConnected || _httpClient == null) return false;
+    try {
+      // If we already have the target drive ID cached, use it first.
+      if (_targetDriveId != null) {
+        final url = Uri.parse('$_graphApiBase/drives/$_targetDriveId/items/$folderId');
+        final response = await _httpClient!.get(url);
+        if (response.statusCode == 200) return true;
+        if (response.statusCode == 403) return false;
+      }
+      // Fallback: try via the user's own drive root.
+      final url = Uri.parse('$_graphApiBase/me/drive/items/$folderId');
+      final response = await _httpClient!.get(url);
+      return response.statusCode == 200;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Grant folder permission to a user by email.
+  ///
+  /// OneDrive folder sharing via Microsoft Graph is not yet implemented.
+  /// Use the share link instead.
+  Future<void> addPermission(String folderId, String email) async {
+    throw UnimplementedError(
+      'OneDrive email invitations are not yet supported. Use the share link instead.',
+    );
   }
 
   @override

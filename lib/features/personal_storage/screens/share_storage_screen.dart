@@ -5,7 +5,7 @@ import 'package:share_plus/share_plus.dart';
 
 import '../models/storage_location.dart';
 import '../providers/google_drive_storage.dart';
-import '../providers/google_drive_storage.dart';
+import '../providers/one_drive_storage.dart';
 import '../services/shared_storage_manager.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
@@ -58,11 +58,18 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
     String? lastError;
 
     try {
-      final storage = ref.read(googleDriveStorageProvider);
-      
       for (final email in emails) {
         try {
-          await storage.addPermission(widget.repository.folderId, email);
+          switch (widget.repository.provider) {
+            case StorageProvider.googleDrive:
+              final storage = ref.read(googleDriveStorageProvider);
+              await storage.addPermission(widget.repository.folderId, email);
+              break;
+            case StorageProvider.oneDrive:
+              // Stub: throws UnimplementedError until Graph sharing is wired up.
+              await OneDriveStorage().addPermission(widget.repository.folderId, email);
+              break;
+          }
           successCount++;
         } catch (e) {
           failCount++;
@@ -170,7 +177,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Add a Google account email address to grant immediate access. '
+              'Add an email address to grant immediate access. '
               'Separate multiple addresses with a semicolon (;)',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
@@ -295,10 +302,10 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      '• Invited users receive Editor access to your Google Drive folder\n'
+                      '• Invited users receive Editor access to the shared repository folder\n'
                       '• They can add, edit, and delete recipes in the shared repository\n'
                       '• Links work offline - the app will verify access when online\n'
-                      '• Remove access via Google Drive settings if needed',
+                      '• Remove access via the cloud storage provider settings if needed',
                       style: theme.textTheme.bodyMedium,
                     ),
                   ],

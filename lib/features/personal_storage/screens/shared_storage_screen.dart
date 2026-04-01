@@ -112,6 +112,8 @@ class _SharedStorageScreenState
           );
           
           await storage.switchRepository(folderId, name);
+          // Register with service so the subsequent push() uses this instance.
+          await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
           
         case StorageProvider.oneDrive:
@@ -241,6 +243,7 @@ class _SharedStorageScreenState
           }
           
           await storage.switchRepository(repository.folderId, repository.name);
+          await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
         case StorageProvider.oneDrive:
           // OneDrive: sign in if needed, switch folder, and register with service
@@ -367,8 +370,21 @@ class _SharedStorageScreenState
 
   Future<void> _verifyStorage(StorageLocation storage) async {
     try {
-      final driveStorage = ref.read(googleDriveStorageProvider);
-      final hasAccess = await driveStorage.verifyFolderAccess(storage.folderId);
+      bool hasAccess;
+      switch (storage.provider) {
+        case StorageProvider.googleDrive:
+          final driveStorage = ref.read(googleDriveStorageProvider);
+          hasAccess = await driveStorage.verifyFolderAccess(storage.folderId);
+          break;
+        case StorageProvider.oneDrive:
+          final service = ref.read(personalStorageServiceProvider);
+          final provider = service.provider;
+          if (provider is! OneDriveStorage || !provider.isConnected) {
+            throw Exception('OneDrive is not connected. Switch to this repository first.');
+          }
+          hasAccess = await provider.verifyFolderAccess(storage.folderId);
+          break;
+      }
 
       if (!mounted) return;
 
