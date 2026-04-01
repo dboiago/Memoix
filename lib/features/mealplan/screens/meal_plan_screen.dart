@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
@@ -690,45 +691,67 @@ class _DayCardState extends ConsumerState<DayCard> {
       },
     );
 
-    // Wrap in LongPressDraggable for move functionality
-    return LongPressDraggable<_DraggableMealData>(
-      data: _DraggableMealData(
-        sourceDate: widget.date,
-        sourceCourse: course,
-        instanceId: instanceId, // Pass unique ID
-        index: 0, // Placeholder index, logic now uses instanceId
-        meal: meal,
-      ),
-      delay: const Duration(milliseconds: 300), // Short hold to grab
-      feedback: Material(
-        elevation: 4,
-        borderRadius: BorderRadius.circular(8),
-        color: theme.cardTheme.color ?? theme.colorScheme.surface,
-        child: SizedBox(
-          width: MediaQuery.of(context).size.width * 0.8,
-          child: content,
-        ),
-      ),
-      childWhenDragging: Opacity(
-        opacity: 0.3,
-        child: content,
-      ),
-      child: Dismissible(
-        key: Key('${widget.date.toIso8601String()}_${course}_$instanceId'),
-        background: Container(
-          color: theme.colorScheme.secondary.withOpacity(0.2),
-          alignment: Alignment.centerRight,
-          padding: const EdgeInsets.only(right: 16),
-          child: Icon(Icons.delete, color: theme.colorScheme.secondary),
-        ),
-        direction: DismissDirection.endToStart,
-        confirmDismiss: (direction) async {
-          _startDeleteTimer(instanceId);
-          return false;
-        },
+    // Wrap in a platform-aware draggable:
+    // - Desktop/mouse: Draggable (responds to click-and-drag)
+    // - Touch: LongPressDraggable with 300ms delay
+    final dragData = _DraggableMealData(
+      sourceDate: widget.date,
+      sourceCourse: course,
+      instanceId: instanceId,
+      index: 0,
+      meal: meal,
+    );
+    final feedback = Material(
+      elevation: 4,
+      borderRadius: BorderRadius.circular(8),
+      color: theme.cardTheme.color ?? theme.colorScheme.surface,
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width * 0.8,
         child: content,
       ),
     );
+    final childWhenDragging = Opacity(
+      opacity: 0.3,
+      child: content,
+    );
+    final dismissible = Dismissible(
+      key: Key('${widget.date.toIso8601String()}_${course}_$instanceId'),
+      background: Container(
+        color: theme.colorScheme.secondary.withOpacity(0.2),
+        alignment: Alignment.centerRight,
+        padding: const EdgeInsets.only(right: 16),
+        child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+      ),
+      direction: DismissDirection.endToStart,
+      confirmDismiss: (direction) async {
+        _startDeleteTimer(instanceId);
+        return false;
+      },
+      child: content,
+    );
+
+    final platform = Theme.of(context).platform;
+    final isDesktopOrWeb = kIsWeb ||
+        platform == TargetPlatform.windows ||
+        platform == TargetPlatform.linux ||
+        platform == TargetPlatform.macOS;
+
+    if (isDesktopOrWeb) {
+      return Draggable<_DraggableMealData>(
+        data: dragData,
+        feedback: feedback,
+        childWhenDragging: childWhenDragging,
+        child: dismissible,
+      );
+    } else {
+      return LongPressDraggable<_DraggableMealData>(
+        data: dragData,
+        delay: const Duration(milliseconds: 300),
+        feedback: feedback,
+        childWhenDragging: childWhenDragging,
+        child: dismissible,
+      );
+    }
   }
 
   bool _isToday(DateTime date) {
