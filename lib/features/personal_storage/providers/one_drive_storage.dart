@@ -498,15 +498,15 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
       final response = await _httpClient!.get(verifyUrl);
 
       if (response.statusCode == 200) {
+        // Update in-memory state only — do NOT persist to secure storage here.
+        // Persisting here would overwrite the personal Memoix folder keys with
+        // the shared repo's IDs, breaking personal backup on next app launch.
+        // Persistence is only done explicitly via _persistFolderState(), which
+        // is called from setupDefaultFolder() for the personal Memoix folder.
         _activeFolderId = targetFolderId;
         _activeFolderName = name;
         _targetDriveId = driveId;
         _targetFolderId = targetFolderId;
-
-        await _secureStorage.write(key: _keyFolderId, value: targetFolderId);
-        await _secureStorage.write(key: _keyFolderName, value: name);
-        await _secureStorage.write(key: _keyDriveId, value: driveId);
-        await _secureStorage.write(key: _keyTargetFolderId, value: targetFolderId);
 
         debugPrint('OneDriveStorage: Switched to folder "$name" ($targetFolderId) on drive $driveId');
       } else if (response.statusCode == 404) {
@@ -606,6 +606,32 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     }
 
     await switchRepository(folderId, defaultName);
+
+    // Persist the personal Memoix folder state so it survives app restarts.
+    // This is the ONLY place that writes to the personal folder secure-storage
+    // keys. switchRepository() is deliberately in-memory-only to prevent
+    // shared repo switches from contaminating personal storage state.
+    await _persistFolderState();
+  }
+
+  /// Persist the current folder state to secure storage.
+  ///
+  /// Called only from [setupDefaultFolder] to save the personal Memoix folder.
+  /// Must NOT be called from [switchRepository] so shared repo operations
+  /// stay isolated from personal backup preferences.
+  Future<void> _persistFolderState() async {
+    if (_targetFolderId != null) {
+      await _secureStorage.write(key: _keyTargetFolderId, value: _targetFolderId);
+    }
+    if (_targetDriveId != null) {
+      await _secureStorage.write(key: _keyDriveId, value: _targetDriveId);
+    }
+    if (_activeFolderId != null) {
+      await _secureStorage.write(key: _keyFolderId, value: _activeFolderId);
+    }
+    if (_activeFolderName != null) {
+      await _secureStorage.write(key: _keyFolderName, value: _activeFolderName);
+    }
   }
 
   /// Grant folder permission to a user by email.

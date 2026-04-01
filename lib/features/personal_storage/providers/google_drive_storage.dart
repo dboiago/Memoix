@@ -366,11 +366,12 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<void> switchRepository(String folderId, String repositoryName) async {
     _ensureConnected();
 
-    // Update cached values immediately
-    // Folder ID comes from SharedStorageManager (trusted source), no need to verify
+    // Update in-memory state only — do NOT persist to SharedPreferences.
+    // Persisting here would overwrite the personal Memoix folder ID with the
+    // shared repo's folder ID, breaking personal backup on next app launch.
+    // Persistence for personal storage is handled exclusively by _setupMemoixFolder().
     _folderId = folderId;
     _folderPath = '/My Drive/$repositoryName';
-    await _saveStoredState();
 
     debugPrint('GoogleDriveStorage: Switched to repository "$repositoryName"');
     
@@ -547,9 +548,10 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     // Initialize Drive API
     await _initializeDriveApiFromMobile(account);
 
-    // Only run first-time folder setup when no folder ID is already stored.
-    // An existing stored ID means switchRepository() previously set the target
-    // folder; calling _setupMemoixFolder() would overwrite it with the default.
+    // Only run first-time folder setup when no personal Memoix folder ID is
+    // stored yet. Once set by _setupMemoixFolder(), this key persists across
+    // app launches. switchRepository() does NOT write this key, so a stored
+    // value always represents the genuine personal Memoix folder.
     final prefs = await SharedPreferences.getInstance();
     final storedFolderId = prefs.getString(_keyFolderId);
     if (storedFolderId != null) {
@@ -580,9 +582,10 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     // Save credentials for later restoration
     await _saveDesktopCredentials(_desktopCredentials!);
 
-    // Only run first-time folder setup when no folder ID is already stored.
-    // An existing stored ID means switchRepository() previously set the target
-    // folder; calling _setupMemoixFolder() would overwrite it with the default.
+    // Only run first-time folder setup when no personal Memoix folder ID is
+    // stored yet. Once set by _setupMemoixFolder(), this key persists across
+    // app launches. switchRepository() does NOT write this key, so a stored
+    // value always represents the genuine personal Memoix folder.
     final prefs = await SharedPreferences.getInstance();
     final storedFolderId = prefs.getString(_keyFolderId);
     if (storedFolderId != null) {
@@ -792,39 +795,19 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   ///   3. Set it as active
   /// - If active repository exists: Use its folderId
   Future<String> _ensureFolderId() async {
-    // Use cached folder ID if available
+    // Use cached folder ID if available (set during connect or restored from prefs).
     if (_folderId != null) {
       return _folderId!;
     }
 
-    final manager = SharedStorageManager();
-    final activeRepo = await manager.getActiveRepository();
-
-    if (activeRepo != null) {
-      // Active repository exists - use it
-      debugPrint('GoogleDriveStorage: Using active repository: ${activeRepo.name}');
-      _folderId = activeRepo.folderId;
-      _folderPath = '/My Drive/${activeRepo.name}';
-    } else {
-      // No active repository - MIGRATION PATH for existing users
-      debugPrint('GoogleDriveStorage: No active repository - performing migration');
-
-      // Search for legacy 'Memoix' folder or create new
-      final legacyFolderId = await _getOrCreateMemoixFolder();
-
-      // Register as 'Default' repository
-      final defaultRepo = await manager.addRepository(
-        name: 'Default',
-        folderId: legacyFolderId,
-        isPendingVerification: false,
-      );
-
-      debugPrint('GoogleDriveStorage: Migrated to repository system - registered "Default" repository');
-
-      _folderId = legacyFolderId;
-      _folderPath = '/My Drive/Memoix';
-    }
-
+    // No cached ID — find or create the personal Memoix folder.
+    // Personal storage always targets the 'Memoix' folder in Drive root.
+    // DO NOT fall back to SharedStorageManager.getActiveRepository() — that is
+    // the shared-repo system and is independent of personal backup.
+    debugPrint('GoogleDriveStorage: No cached folder ID — finding/creating Memoix folder');
+    final folderId = await _getOrCreateMemoixFolder();
+    _folderId = folderId;
+    _folderPath = '/My Drive/$_defaultFolderName';
     await _saveStoredState();
     return _folderId!;
   }
