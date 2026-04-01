@@ -140,10 +140,9 @@ class _SharedStorageScreenState
           );
           
           await storage.switchRepository(folderId, name);
+          // Register with service so the subsequent push() uses this instance
+          await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
-      }
-      
-      // Disconnect all other providers except the one we just activated (mutual exclusivity)
       await StorageProviderManager.disconnectAllExcept(ref, exceptProvider: provider);
       
       // Sync recipes to new folder
@@ -525,6 +524,94 @@ class _StorageCard extends ConsumerWidget {
                       ),
                     ),
                     _buildSyncStatusIcon(theme, syncStatus),
+                    PopupMenuButton<String>(
+                      icon: Icon(
+                        Icons.more_vert,
+                        color: theme.colorScheme.primary,
+                      ),
+                      onSelected: (value) {
+                        switch (value) {
+                          case 'share':
+                            onShare();
+                            break;
+                          case 'verify':
+                            onVerify();
+                            break;
+                          case 'disconnect':
+                            onDisconnect();
+                            break;
+                          case 'delete':
+                            onDelete();
+                            break;
+                        }
+                      },
+                      itemBuilder: (context) => [
+                        if (!storage.isPendingVerification)
+                          PopupMenuItem(
+                            value: 'share',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.share,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurface,
+                                ),
+                                const SizedBox(width: 12),
+                                const Text('Share'),
+                              ],
+                            ),
+                          ),
+                        if (storage.isPendingVerification)
+                          PopupMenuItem(
+                            value: 'verify',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.refresh,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurface,
+                                ),
+                                const SizedBox(width: 12),
+                                const Text('Verify Access'),
+                              ],
+                            ),
+                          ),
+                        if (!storage.isPendingVerification)
+                          PopupMenuItem(
+                            value: 'disconnect',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.cloud_off,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurface,
+                                ),
+                                const SizedBox(width: 12),
+                                const Text('Disconnect'),
+                              ],
+                            ),
+                          ),
+                        PopupMenuItem(
+                          value: 'delete',
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.delete_outline,
+                                size: 20,
+                                color: theme.colorScheme.secondary,
+                              ),
+                              const SizedBox(width: 12),
+                              Text(
+                                storage.isPendingVerification ? 'Remove' : 'Delete',
+                                style: TextStyle(
+                                  color: theme.colorScheme.secondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
 

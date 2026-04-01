@@ -226,7 +226,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
 
   /// Build the connected state card with push/pull buttons
   Widget _buildConnectedCard(ThemeData theme, SyncStatus syncStatus) {
-    final provider = _googleDrive!;
+    final provider = _oneDrive?.isConnected == true ? _oneDrive! : _googleDrive!;
 
     return Padding(
       padding: const EdgeInsets.all(16),
