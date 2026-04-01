@@ -41,21 +41,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   static const _jsonMimeType = 'application/json';
 
   // OAuth scopes
-  //
-  // MUST use driveScope (account-wide), NOT driveFileScope. 
-  // driveFileScope is scoped per-OAuth-client: files.list only returns files
-  // created by the exact client ID that made the token. Desktop and mobile use
-  // different client IDs, so each device would only see its own "Memoix" folder
-  // and silently create a second one — breaking cross-device sync entirely.
-  // driveScope operates at the user-account level: all devices signed in to the
-  // same Google account see the same Drive, enabling true cross-device sync.
-  static const _scopes = [drive.DriveApi.driveScope];
-
-  // Schema version stored in SharedPreferences.
-  // Bump when the OAuth scope or stored-state format changes; initialize() will
-  // clear old credentials so the user re-authorizes with the updated scope.
-  static const _keySchemaVersion = 'google_drive_schema_version';
-  static const _schemaVersion = 2; // v2: driveScope replaces driveFileScope
+  static const _scopes = [drive.DriveApi.driveFileScope];
 
   /// Desktop OAuth ClientId - loaded from .env or falls back to dev keys
   static auth_io.ClientId get _desktopClientId => auth_io.ClientId(
@@ -126,22 +112,6 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   @override
   Future<void> initialize() async {
     final prefs = await SharedPreferences.getInstance();
-
-    // Schema-version migration: v1 used driveFileScope (per-client, breaks
-    // cross-device). v2+ uses driveScope. Clear stored credentials so the
-    // user re-authorizes once with the correct scope. This is a one-time cost.
-    final storedVersion = prefs.getInt(_keySchemaVersion) ?? 1;
-    if (storedVersion < _schemaVersion) {
-      debugPrint(
-        'GoogleDriveStorage: Upgrading schema '
-        'v$storedVersion → v$_schemaVersion — clearing credentials '
-        '(user will need to reconnect once for cross-device sync)',
-      );
-      await _clearStoredState();
-      await prefs.setInt(_keySchemaVersion, _schemaVersion);
-      return; // Provider appears disconnected; user reconnects with drive scope
-    }
-
     _isConnected = prefs.getBool(_keyIsConnected) ?? false;
     _folderId = prefs.getString(_keyFolderId);
     _folderPath = prefs.getString(_keyFolderPath);
@@ -160,9 +130,44 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
         await _restoreMobileSession();
         // _restoreMobileSession already sets _isConnected
       }
-      
+
       // After successful session restoration, check pending repositories
       if (_isConnected) {
+        // Canonical folder confirmation: use Drive itself as the source of truth
+        // for _folderId. Local SharedPreferences may be empty or stale on a
+        // second device, causing _ensureFolderId() to land on the wrong folder.
+        // This lookup corrects the mismatch at startup so all devices converge
+        // on the same "Memoix" folder regardless of local state.
+        //
+        // Skipped when a shared repository is active — its folderId was set
+        // explicitly by switchRepository() and must not be overridden here.
+        //
+        // Guard: _driveApi is only non-null after _restoreMobileSession() /
+        // _restoreDesktopSession() completes successfully, so no async gap.
+        if (_driveApi != null) {
+          try {
+            final manager = SharedStorageManager();
+            final activeRepo = await manager.getActiveRepository();
+            if (activeRepo == null) {
+              // Personal storage mode — verify folder ID against Drive.
+              final canonicalId = await findExistingMemoixFolder();
+              if (canonicalId != null && canonicalId != _folderId) {
+                debugPrint(
+                  'GoogleDriveStorage: Folder ID corrected '
+                  '${_folderId ?? "(null)"} → $canonicalId',
+                );
+                _folderId = canonicalId;
+                _folderPath = '/My Drive/$_defaultFolderName';
+                await _saveStoredState();
+              }
+            }
+          } catch (e) {
+            // Non-fatal: local cache is kept; lookup will retry on next launch.
+            debugPrint(
+              'GoogleDriveStorage: Canonical folder lookup failed (non-fatal): $e',
+            );
+          }
+        }
         unawaited(checkPendingRepositories());
       }
     } catch (e) {
@@ -396,12 +401,11 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<void> switchRepository(String folderId, String repositoryName) async {
     _ensureConnected();
 
-    // Update in-memory state only — do NOT persist to SharedPreferences.
-    // Persisting here would overwrite the personal Memoix folder ID with the
-    // shared repo's folder ID, breaking personal backup on next app launch.
-    // Persistence for personal storage is handled exclusively by _setupMemoixFolder().
+    // Update cached values immediately
+    // Folder ID comes from SharedStorageManager (trusted source), no need to verify
     _folderId = folderId;
     _folderPath = '/My Drive/$repositoryName';
+    await _saveStoredState();
 
     debugPrint('GoogleDriveStorage: Switched to repository "$repositoryName"');
     
@@ -578,20 +582,8 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     // Initialize Drive API
     await _initializeDriveApiFromMobile(account);
 
-    // Only run first-time folder setup when no personal Memoix folder ID is
-    // stored yet. Once set by _setupMemoixFolder(), this key persists across
-    // app launches. switchRepository() does NOT write this key, so a stored
-    // value always represents the genuine personal Memoix folder.
-    final prefs = await SharedPreferences.getInstance();
-    final storedFolderId = prefs.getString(_keyFolderId);
-    if (storedFolderId != null) {
-      _folderId    = storedFolderId;
-      _folderPath  = prefs.getString(_keyFolderPath);
-      _isConnected = true;
-      await prefs.setBool(_keyIsConnected, true);
-    } else {
-      await _setupMemoixFolder();
-    }
+    // Get or create the Memoix folder
+    await _setupMemoixFolder();
 
     return true;
   }
@@ -612,20 +604,8 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     // Save credentials for later restoration
     await _saveDesktopCredentials(_desktopCredentials!);
 
-    // Only run first-time folder setup when no personal Memoix folder ID is
-    // stored yet. Once set by _setupMemoixFolder(), this key persists across
-    // app launches. switchRepository() does NOT write this key, so a stored
-    // value always represents the genuine personal Memoix folder.
-    final prefs = await SharedPreferences.getInstance();
-    final storedFolderId = prefs.getString(_keyFolderId);
-    if (storedFolderId != null) {
-      _folderId    = storedFolderId;
-      _folderPath  = prefs.getString(_keyFolderPath);
-      _isConnected = true;
-      await prefs.setBool(_keyIsConnected, true);
-    } else {
-      await _setupMemoixFolder();
-    }
+    // Get or create the Memoix folder
+    await _setupMemoixFolder();
 
     return true;
   }
@@ -753,10 +733,8 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<String?> findExistingMemoixFolder() async {
     _ensureConnected();
 
-    // Anchor to Drive root so we never match a "Memoix" folder that is nested
-    // inside another folder (e.g. a shared folder or a subdirectory).
     final query =
-        "mimeType='$_folderMimeType' and name='$_defaultFolderName' and 'root' in parents and trashed=false";
+        "mimeType='$_folderMimeType' and name='$_defaultFolderName' and trashed=false";
 
     final fileList = await _driveApi!.files.list(
       q: query,
@@ -827,19 +805,39 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   ///   3. Set it as active
   /// - If active repository exists: Use its folderId
   Future<String> _ensureFolderId() async {
-    // Use cached folder ID if available (set during connect or restored from prefs).
+    // Use cached folder ID if available
     if (_folderId != null) {
       return _folderId!;
     }
 
-    // No cached ID — find or create the personal Memoix folder.
-    // Personal storage always targets the 'Memoix' folder in Drive root.
-    // DO NOT fall back to SharedStorageManager.getActiveRepository() — that is
-    // the shared-repo system and is independent of personal backup.
-    debugPrint('GoogleDriveStorage: No cached folder ID — finding/creating Memoix folder');
-    final folderId = await _getOrCreateMemoixFolder();
-    _folderId = folderId;
-    _folderPath = '/My Drive/$_defaultFolderName';
+    final manager = SharedStorageManager();
+    final activeRepo = await manager.getActiveRepository();
+
+    if (activeRepo != null) {
+      // Active repository exists - use it
+      debugPrint('GoogleDriveStorage: Using active repository: ${activeRepo.name}');
+      _folderId = activeRepo.folderId;
+      _folderPath = '/My Drive/${activeRepo.name}';
+    } else {
+      // No active repository - MIGRATION PATH for existing users
+      debugPrint('GoogleDriveStorage: No active repository - performing migration');
+
+      // Search for legacy 'Memoix' folder or create new
+      final legacyFolderId = await _getOrCreateMemoixFolder();
+
+      // Register as 'Default' repository
+      final defaultRepo = await manager.addRepository(
+        name: 'Default',
+        folderId: legacyFolderId,
+        isPendingVerification: false,
+      );
+
+      debugPrint('GoogleDriveStorage: Migrated to repository system - registered "Default" repository');
+
+      _folderId = legacyFolderId;
+      _folderPath = '/My Drive/Memoix';
+    }
+
     await _saveStoredState();
     return _folderId!;
   }
@@ -989,7 +987,6 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<void> _saveStoredState() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_keyIsConnected, _isConnected);
-    await prefs.setInt(_keySchemaVersion, _schemaVersion); // Lock in current version
     if (_folderId != null) {
       await prefs.setString(_keyFolderId, _folderId!);
     }
