@@ -548,8 +548,12 @@ class PersonalStorageService {
     for (final remote in remoteRecipes) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(recipeRepositoryProvider).saveRecipe(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(recipeRepositoryProvider).saveRecipe(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge recipe ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);
@@ -563,8 +567,12 @@ class PersonalStorageService {
     for (final remote in remotePizzas) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(pizzaRepositoryProvider).savePizza(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(pizzaRepositoryProvider).savePizza(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge pizza ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);
@@ -578,8 +586,12 @@ class PersonalStorageService {
     for (final remote in remoteSandwiches) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(sandwichRepositoryProvider).saveSandwich(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(sandwichRepositoryProvider).saveSandwich(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge sandwich ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);
@@ -593,8 +605,12 @@ class PersonalStorageService {
     for (final remote in remoteCheeses) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(cheeseRepositoryProvider).saveEntry(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(cheeseRepositoryProvider).saveEntry(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge cheese ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);
@@ -608,8 +624,12 @@ class PersonalStorageService {
     for (final remote in remoteCellar) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(cellarRepositoryProvider).saveEntry(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(cellarRepositoryProvider).saveEntry(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge cellar entry ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);
@@ -623,8 +643,12 @@ class PersonalStorageService {
     for (final remote in remoteSmoking) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(smokingRepositoryProvider).saveRecipe(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(smokingRepositoryProvider).saveRecipe(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge smoking recipe ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);
@@ -638,8 +662,12 @@ class PersonalStorageService {
     for (final remote in remoteModernist) {
       final existing = localByUuid[remote.uuid];
       if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        await _ref.read(modernistRepositoryProvider).save(remote);
-        if (existing == null) added++; else updated++;
+        try {
+          await _ref.read(modernistRepositoryProvider).save(remote, preserveTimestamp: true);
+          if (existing == null) added++; else updated++;
+        } catch (e) {
+          debugPrint('PersonalStorageService: failed to merge modernist recipe ${remote.uuid}: $e');
+        }
       }
     }
     return MergeResult(added: added, updated: updated);

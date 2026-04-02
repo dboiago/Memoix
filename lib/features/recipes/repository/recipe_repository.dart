@@ -274,13 +274,13 @@ class RecipeRepository {
     return _toIsarRecipe(row, ings);
   }
 
-  Future<int> saveRecipe(Recipe recipe) async {
+  Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false}) async {
     try {
       if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
     } catch (_) {
       recipe.uuid = _uuid.v4();
     }
-    recipe.updatedAt = DateTime.now();
+    if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
     _normalizeIngredientUnits(recipe);
 
     final companion = _toCompanion(recipe);

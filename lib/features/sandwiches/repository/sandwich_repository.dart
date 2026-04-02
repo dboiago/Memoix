@@ -53,7 +53,7 @@ class SandwichRepository {
       _db.catalogueDao.getSandwichByUuid(uuid);
 
   /// Save a sandwich (insert or update)
-  Future<void> saveSandwich(Sandwich sandwich) async {
+  Future<void> saveSandwich(Sandwich sandwich, {bool preserveTimestamp = false}) async {
     final entryUuid = sandwich.uuid.isEmpty ? _uuid.v4() : sandwich.uuid;
     await _db.catalogueDao.saveSandwich(SandwichesCompanion(
       id: Value(sandwich.id),
@@ -72,7 +72,7 @@ class SandwichRepository {
       rating: Value(sandwich.rating),
       tags: Value(sandwich.tags),
       createdAt: Value(sandwich.createdAt),
-      updatedAt: Value(DateTime.now()),
+      updatedAt: Value(preserveTimestamp ? sandwich.updatedAt : DateTime.now()),
       version: Value(sandwich.version),
     ));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();

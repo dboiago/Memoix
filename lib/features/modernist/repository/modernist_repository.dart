@@ -160,7 +160,7 @@ class ModernistRepository {
   // ── Write methods ────────────────────────────────────────────────────────
 
   /// Save a recipe (insert or update)
-  Future<int> save(ModernistRecipe recipe) async {
+  Future<int> save(ModernistRecipe recipe, {bool preserveTimestamp = false}) async {
     _normalizeIngredientUnits(recipe);
     final entryUuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid;
     final recipeId = await _db.recipeDao.saveRecipe(RecipesCompanion(
@@ -189,7 +189,7 @@ class ModernistRepository {
       source: Value(recipe.source.name),
       pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
       createdAt: Value(recipe.createdAt),
-      updatedAt: Value(DateTime.now()),
+      updatedAt: Value(preserveTimestamp ? recipe.updatedAt : DateTime.now()),
     ));
     await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
     final ingredientCompanions = recipe.ingredients

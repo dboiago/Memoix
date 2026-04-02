@@ -34,7 +34,7 @@ class SmokingRepository {
       _db.smokingDao.getRecipeByUuid(uuid);
 
   /// Save a smoking recipe
-  Future<void> saveRecipe(SmokingRecipe recipe) async {
+  Future<void> saveRecipe(SmokingRecipe recipe, {bool preserveTimestamp = false}) async {
     final normalizedSeasoningsJson = jsonEncode(
       _normalizeSeasoningUnits(
         (jsonDecode(recipe.seasoningsJson) as List)
@@ -88,7 +88,7 @@ class SmokingRepository {
       source: Value(recipe.source),
       pairedRecipeIds: Value(recipe.pairedRecipeIds),
       createdAt: Value(recipe.createdAt),
-      updatedAt: Value(DateTime.now()),
+      updatedAt: Value(preserveTimestamp ? recipe.updatedAt : DateTime.now()),
     ));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }

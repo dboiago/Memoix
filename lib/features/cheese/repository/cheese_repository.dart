@@ -50,7 +50,7 @@ class CheeseRepository {
       _db.cellarDao.getCheeseEntryByUuid(uuid);
 
   /// Save an entry (insert or update)
-  Future<void> saveEntry(CheeseEntry entry) async {
+  Future<void> saveEntry(CheeseEntry entry, {bool preserveTimestamp = false}) async {
     final entryUuid = entry.uuid.isEmpty ? _uuid.v4() : entry.uuid;
     await _db.cellarDao.saveCheeseEntry(CheeseEntriesCompanion(
       id: Value(entry.id),
@@ -67,7 +67,7 @@ class CheeseRepository {
       source: Value(entry.source),
       isFavorite: Value(entry.isFavorite),
       createdAt: Value(entry.createdAt),
-      updatedAt: Value(DateTime.now()),
+      updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
       version: Value(entry.version),
     ));
 

@@ -53,7 +53,7 @@ class PizzaRepository {
       _db.catalogueDao.getPizzaByUuid(uuid);
 
   /// Save a pizza (insert or update)
-  Future<void> savePizza(Pizza pizza) async {
+  Future<void> savePizza(Pizza pizza, {bool preserveTimestamp = false}) async {
     final entryUuid = pizza.uuid.isEmpty ? _uuid.v4() : pizza.uuid;
     await _db.catalogueDao.savePizza(PizzasCompanion(
       id: Value(pizza.id),
@@ -71,7 +71,7 @@ class PizzaRepository {
       rating: Value(pizza.rating),
       tags: Value(pizza.tags),
       createdAt: Value(pizza.createdAt),
-      updatedAt: Value(DateTime.now()),
+      updatedAt: Value(preserveTimestamp ? pizza.updatedAt : DateTime.now()),
       version: Value(pizza.version),
     ));
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
