@@ -67,6 +67,11 @@ class PersonalStorageService {
   /// Tracks if initialization has completed
   bool _isInitialized = false;
 
+  /// Prevents automatic push when the last pull failed.
+  /// Protects remote data from being overwritten by local data that may be
+  /// incompatible with the remote schema. Cleared on successful pull or push.
+  bool _pullFailed = false;
+
   /// Minimum time between automatic syncs (5 minutes)
   static const _syncCooldown = Duration(minutes: 5);
   
@@ -116,7 +121,7 @@ class PersonalStorageService {
         debugPrint('PersonalStorageService: Restored connection to ${provider.name}');
         
         // If there were pending changes queued before initialization, trigger push
-        if (_hasPendingChanges) {
+        if (_hasPendingChanges && !_pullFailed) {
           final isAuto = await isAutomaticMode;
           if (isAuto) {
             debugPrint('PersonalStorageService: Flushing pending changes after init');
@@ -288,7 +293,7 @@ class PersonalStorageService {
     _hasPendingChanges = true;
     
     // If not initialized yet, the pending flag will trigger push after init
-    if (!_isInitialized || !isConnected) return;
+    if (!_isInitialized || !isConnected || _pullFailed) return;
     
     // Check sync mode asynchronously
     isAutomaticMode.then((isAuto) {
@@ -314,7 +319,7 @@ class PersonalStorageService {
     _pushDebouncer?.cancel();
     _pushDebouncer = null;
     
-    if (_hasPendingChanges) {
+    if (_hasPendingChanges && !_pullFailed) {
       await push(silent: true);
     }
   }
@@ -332,6 +337,17 @@ class PersonalStorageService {
     }
     
     if (_isPushing) return; // Prevent concurrent pushes
+
+    // Guard: refuse automatic push when the last pull failed to prevent
+    // overwriting remote data that the local code cannot currently parse.
+    if (_pullFailed && silent) {
+      debugPrint(
+        'PersonalStorageService: Skipping silent push — last pull failed; '
+        'push manually to confirm intent',
+      );
+      return;
+    }
+
     _isPushing = true;
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.pushing;
 
@@ -358,6 +374,7 @@ class PersonalStorageService {
       final syncTime = DateTime.now();
       await _setLastSyncTime(syncTime);
       _hasPendingChanges = false;
+      _pullFailed = false; // successful push clears the pull-failure guard
       
       // Update lastSynced timestamp in active repository
       final prefs = await SharedPreferences.getInstance();
@@ -451,6 +468,7 @@ class PersonalStorageService {
       
       // Update last sync time
       await _setLastSyncTime(DateTime.now());
+      _pullFailed = false; // successful pull clears the guard
       
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
@@ -464,10 +482,9 @@ class PersonalStorageService {
       
       return PullResult.fromMerge(mergeResult, remoteCount: bundle.totalCount);
     } catch (e) {
+      _pullFailed = true;
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
-      if (!silent) {
-        MemoixSnackBar.showError('Pull failed: $e');
-      }
+      MemoixSnackBar.showPersistentWithCopy('Pull failed: $e');
       debugPrint('PersonalStorageService.pull error: $e');
       return PullResult.failed(e);
     } finally {

@@ -542,8 +542,22 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
         // Mark Personal Storage as configured
         setState(() => _isPersonalStorageConfigured = true);
 
+        // Auto-sync on connect (mirrors Google Drive behaviour)
+        final hasEverSynced = await service.lastSyncTime != null;
         if (mounted) {
-          MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+          if (hasEverSynced) {
+            MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+            _executeDirectPull(showFullSummary: false);
+          } else {
+            final hasData = await _oneDrive!.hasExistingData();
+            if (hasData) {
+              MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+              _executeDirectPull(showFullSummary: true);
+            } else {
+              MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+              unawaited(ref.read(personalStorageServiceProvider).push(silent: true));
+            }
+          }
         }
       } else {
         if (mounted) {
@@ -616,9 +630,8 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     // Show appropriate feedback
     if (!mounted) return;
     
-    if (result.hasFailed) {
-      MemoixSnackBar.showPersistentWithCopy('Pull failed: ${result.error}');
-    } else if (result.wasSkipped) {
+    if (result.hasFailed) return; // error already surfaced by service
+    if (result.wasSkipped) {
       // Silent - no message needed
     } else {
       if (showFullSummary) {
@@ -692,10 +705,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (!mounted) return;
     
     // Handle different scenarios
-    if (result.hasFailed) {
-      MemoixSnackBar.showPersistentWithCopy('Pull failed: ${result.error}');
-      return;
-    }
+    if (result.hasFailed) return; // error already surfaced by service
     
     if (result.wasSkipped || !result.hasChanges) {
       // No changes detected - silent sync complete

@@ -13,24 +13,28 @@ enum CheeseSource {
 CheeseEntry cheeseEntryFromJson(Map<String, dynamic> json) {
   return CheeseEntry(
     id: (json['id'] as num?)?.toInt() ?? 0,
-    uuid: json['uuid'] as String? ?? '',
-    name: json['name'] as String? ?? '',
-    country: json['country'] as String?,
-    milk: json['milk'] as String?,
-    texture: json['texture'] as String?,
-    type: json['type'] as String?,
+    uuid: json['uuid']?.toString() ?? '',
+    name: json['name']?.toString() ?? '',
+    country: json['country']?.toString(),
+    milk: json['milk']?.toString(),
+    texture: json['texture']?.toString(),
+    type: json['type']?.toString(),
     buy: json['buy'] as bool? ?? false,
-    flavour: json['flavour'] as String?,
+    flavour: json['flavour']?.toString(),
     priceRange: (json['priceRange'] as num?)?.toInt(),
-    imageUrl: json['imageUrl'] as String?,
-    source: json['source'] as String? ?? CheeseSource.personal.name,
+    imageUrl: json['imageUrl']?.toString(),
+    source: json['source']?.toString() ?? CheeseSource.personal.name,
     isFavorite: json['isFavorite'] as bool? ?? false,
-    createdAt: json['createdAt'] != null
-        ? DateTime.parse(json['createdAt'] as String)
-        : DateTime.now(),
-    updatedAt: json['updatedAt'] != null
-        ? DateTime.parse(json['updatedAt'] as String)
-        : DateTime.now(),
+    createdAt: json['createdAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        : json['createdAt'] != null
+            ? DateTime.parse(json['createdAt'].toString())
+            : DateTime.now(),
+    updatedAt: json['updatedAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        : json['updatedAt'] != null
+            ? DateTime.parse(json['updatedAt'].toString())
+            : DateTime.now(),
     version: (json['version'] as num?)?.toInt() ?? 1,
   );
 }

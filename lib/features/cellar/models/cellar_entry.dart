@@ -13,24 +13,28 @@ enum CellarSource {
 CellarEntry cellarEntryFromJson(Map<String, dynamic> json) {
   return CellarEntry(
     id: (json['id'] as num?)?.toInt() ?? 0,
-    uuid: json['uuid'] as String? ?? '',
-    name: json['name'] as String? ?? '',
-    producer: json['producer'] as String?,
-    category: json['category'] as String?,
+    uuid: json['uuid']?.toString() ?? '',
+    name: json['name']?.toString() ?? '',
+    producer: json['producer']?.toString(),
+    category: json['category']?.toString(),
     buy: json['buy'] as bool? ?? false,
-    tastingNotes: json['tastingNotes'] as String?,
-    abv: json['abv'] as String?,
-    ageVintage: json['ageVintage'] as String?,
+    tastingNotes: json['tastingNotes']?.toString(),
+    abv: json['abv']?.toString(),
+    ageVintage: json['ageVintage']?.toString(),
     priceRange: (json['priceRange'] as num?)?.toInt(),
-    imageUrl: json['imageUrl'] as String?,
-    source: json['source'] as String? ?? CellarSource.personal.name,
+    imageUrl: json['imageUrl']?.toString(),
+    source: json['source']?.toString() ?? CellarSource.personal.name,
     isFavorite: json['isFavorite'] as bool? ?? false,
-    createdAt: json['createdAt'] != null
-        ? DateTime.parse(json['createdAt'] as String)
-        : DateTime.now(),
-    updatedAt: json['updatedAt'] != null
-        ? DateTime.parse(json['updatedAt'] as String)
-        : DateTime.now(),
+    createdAt: json['createdAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        : json['createdAt'] != null
+            ? DateTime.parse(json['createdAt'].toString())
+            : DateTime.now(),
+    updatedAt: json['updatedAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        : json['updatedAt'] != null
+            ? DateTime.parse(json['updatedAt'].toString())
+            : DateTime.now(),
     version: (json['version'] as num?)?.toInt() ?? 1,
   );
 }

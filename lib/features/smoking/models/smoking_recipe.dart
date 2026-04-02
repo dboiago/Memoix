@@ -187,34 +187,38 @@ SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
       v is List ? jsonEncode(v) : (v as String? ?? '[]');
   return SmokingRecipe(
     id: (json['id'] as num?)?.toInt() ?? 0,
-    uuid: json['uuid'] as String? ?? '',
-    name: json['name'] as String? ?? '',
-    course: json['course'] as String? ?? 'smoking',
-    type: json['type'] as String? ?? SmokingType.pitNote.name,
-    item: json['item'] as String?,
-    category: json['category'] as String?,
-    temperature: json['temperature'] as String? ?? '',
-    time: json['time'] as String? ?? '',
-    wood: json['wood'] as String? ?? '',
+    uuid: json['uuid']?.toString() ?? '',
+    name: json['name']?.toString() ?? '',
+    course: json['course']?.toString() ?? 'smoking',
+    type: json['type']?.toString() ?? SmokingType.pitNote.name,
+    item: json['item']?.toString(),
+    category: json['category']?.toString(),
+    temperature: json['temperature']?.toString() ?? '',
+    time: json['time']?.toString() ?? '',
+    wood: json['wood']?.toString() ?? '',
     seasoningsJson: encodeList(json['seasoningsJson'] ?? json['seasonings']),
     ingredientsJson: encodeList(json['ingredientsJson'] ?? json['ingredients']),
-    serves: json['serves'] as String?,
+    serves: json['serves']?.toString(),
     directions: encodeList(json['directions']),
-    notes: json['notes'] as String?,
-    headerImage: json['headerImage'] as String?,
+    notes: json['notes']?.toString(),
+    headerImage: json['headerImage']?.toString(),
     stepImages: encodeList(json['stepImages']),
     stepImageMap: encodeList(json['stepImageMap']),
-    imageUrl: json['imageUrl'] as String?,
+    imageUrl: json['imageUrl']?.toString(),
     isFavorite: json['isFavorite'] as bool? ?? false,
     cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
-    source: json['source'] as String? ?? SmokingSource.personal.name,
+    source: json['source']?.toString() ?? SmokingSource.personal.name,
     pairedRecipeIds: encodeList(json['pairedRecipeIds']),
-    createdAt: json['createdAt'] != null
-        ? DateTime.parse(json['createdAt'] as String)
-        : DateTime.now(),
-    updatedAt: json['updatedAt'] != null
-        ? DateTime.parse(json['updatedAt'] as String)
-        : DateTime.now(),
+    createdAt: json['createdAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        : json['createdAt'] != null
+            ? DateTime.parse(json['createdAt'].toString())
+            : DateTime.now(),
+    updatedAt: json['updatedAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        : json['updatedAt'] != null
+            ? DateTime.parse(json['updatedAt'].toString())
+            : DateTime.now(),
   );
 }
 
@@ -223,9 +227,9 @@ extension SmokingRecipeX on SmokingRecipe {
       (jsonDecode(seasoningsJson) as List).map((m) {
         final map = m as Map<String, dynamic>;
         return SmokingSeasoning.create(
-          name: map['name'] as String? ?? '',
-          amount: map['amount'] as String?,
-          unit: map['unit'] as String?,
+          name: map['name']?.toString() ?? '',
+          amount: map['amount']?.toString(),
+          unit: map['unit']?.toString(),
         );
       }).toList();
 

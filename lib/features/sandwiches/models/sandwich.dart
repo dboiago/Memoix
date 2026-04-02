@@ -15,26 +15,30 @@ Sandwich sandwichFromJson(Map<String, dynamic> json) {
       v is List ? jsonEncode(v) : (v as String? ?? '[]');
   return Sandwich(
     id: (json['id'] as num?)?.toInt() ?? 0,
-    uuid: json['uuid'] as String? ?? '',
-    name: json['name'] as String? ?? '',
-    bread: json['bread'] as String? ?? '',
+    uuid: json['uuid']?.toString() ?? '',
+    name: json['name']?.toString() ?? '',
+    bread: json['bread']?.toString() ?? '',
     proteins: encodeList(json['proteins']),
     vegetables: encodeList(json['vegetables']),
     cheeses: encodeList(json['cheeses']),
     condiments: encodeList(json['condiments']),
-    notes: json['notes'] as String?,
-    imageUrl: json['imageUrl'] as String?,
-    source: json['source'] as String? ?? SandwichSource.personal.name,
+    notes: json['notes']?.toString(),
+    imageUrl: json['imageUrl']?.toString(),
+    source: json['source']?.toString() ?? SandwichSource.personal.name,
     isFavorite: json['isFavorite'] as bool? ?? false,
     cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
     rating: (json['rating'] as num?)?.toInt() ?? 0,
     tags: encodeList(json['tags']),
-    createdAt: json['createdAt'] != null
-        ? DateTime.parse(json['createdAt'] as String)
-        : DateTime.now(),
-    updatedAt: json['updatedAt'] != null
-        ? DateTime.parse(json['updatedAt'] as String)
-        : DateTime.now(),
+    createdAt: json['createdAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        : json['createdAt'] != null
+            ? DateTime.parse(json['createdAt'].toString())
+            : DateTime.now(),
+    updatedAt: json['updatedAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        : json['updatedAt'] != null
+            ? DateTime.parse(json['updatedAt'].toString())
+            : DateTime.now(),
     version: (json['version'] as num?)?.toInt() ?? 1,
   );
 }

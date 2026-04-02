@@ -500,30 +500,25 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
     final folderId = await _ensureFolderId();
 
-    try {
-      final content = await _downloadFile(
-        folderId: folderId,
-        fileName: _recipesFileName,
-      );
+    final content = await _downloadFile(
+      folderId: folderId,
+      fileName: _recipesFileName,
+    );
 
-      if (content == null) {
-        return null;
-      }
-
-      final bundle = RecipeBundle.fromJsonString(content);
-
-      // Update lastSynced timestamp for this repository
-      final manager = SharedStorageManager();
-      final activeRepo = await manager.getActiveRepository();
-      if (activeRepo != null) {
-        await manager.updateLastSynced(activeRepo.id);
-      }
-
-      return bundle;
-    } catch (e) {
-      debugPrint('GoogleDriveStorage: Pull failed: $e');
+    if (content == null) {
       return null;
     }
+
+    final bundle = RecipeBundle.fromJsonString(content);
+
+    // Update lastSynced timestamp for this repository
+    final manager = SharedStorageManager();
+    final activeRepo = await manager.getActiveRepository();
+    if (activeRepo != null) {
+      await manager.updateLastSynced(activeRepo.id);
+    }
+
+    return bundle;
   }
 
   @override

@@ -222,11 +222,11 @@ class BundleMetadata {
     return BundleMetadata(
       version: json['version'] as int? ?? 1,
       schemaVersion: json['schemaVersion'] as int? ?? 1,
-      createdAt: json['createdAt'] != null
-          ? DateTime.parse(json['createdAt'].toString())
-          : DateTime.now().toUtc(),
-      createdBy: json['createdBy'] as String? ?? 'Unknown',
-      appVersion: json['appVersion'] as String?,
+      createdAt: json['createdAt'] is int
+          ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+          : DateTime.tryParse(json['createdAt']?.toString() ?? '') ?? DateTime.now().toUtc(),
+      createdBy: json['createdBy']?.toString() ?? 'Unknown',
+      appVersion: json['appVersion']?.toString(),
     );
   }
 

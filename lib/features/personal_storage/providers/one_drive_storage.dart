@@ -127,14 +127,9 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   @override
   Future<RecipeBundle?> pull() async {
     _ensureConnected();
-    try {
-      final content = await downloadFile(_recipesFileName);
-      if (content == null) return null;
-      return RecipeBundle.fromJsonString(content);
-    } catch (e) {
-      debugPrint('OneDriveStorage: Pull failed: $e');
-      return null;
-    }
+    final content = await downloadFile(_recipesFileName);
+    if (content == null) return null;
+    return RecipeBundle.fromJsonString(content);
   }
 
   @override
@@ -631,6 +626,25 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     }
     if (_activeFolderName != null) {
       await _secureStorage.write(key: _keyFolderName, value: _activeFolderName);
+    }
+  }
+
+  /// Check if remote folder already contains an existing memoix_recipes.json file.
+  ///
+  /// Returns true if the file exists, false if not found or an error occurs.
+  /// Used in the connect flow to decide whether to push (first-time) or pull.
+  Future<bool> hasExistingData() async {
+    if (!isConnected || _targetDriveId == null || _targetFolderId == null) {
+      return false;
+    }
+    try {
+      final url = Uri.parse(
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$_recipesFileName',
+      );
+      final response = await _httpClient!.get(url);
+      return response.statusCode == 200;
+    } catch (_) {
+      return false;
     }
   }
 

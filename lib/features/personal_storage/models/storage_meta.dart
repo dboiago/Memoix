@@ -43,11 +43,13 @@ class StorageMeta {
     return StorageMeta(
       version: json['version'] as int? ?? 1,
       schemaVersion: json['schemaVersion'] as int? ?? 1,
-      bundleFormat: json['bundleFormat'] as String? ?? 'single-file',
-      lastModified: DateTime.parse(json['lastModified'] as String),
-      lastModifiedBy: json['lastModifiedBy'] as String? ?? 'Unknown',
+      bundleFormat: json['bundleFormat']?.toString() ?? 'single-file',
+      lastModified: json['lastModified'] is int
+          ? DateTime.fromMillisecondsSinceEpoch(json['lastModified'] as int)
+          : DateTime.tryParse(json['lastModified']?.toString() ?? '') ?? DateTime.now().toUtc(),
+      lastModifiedBy: json['lastModifiedBy']?.toString() ?? 'Unknown',
       recipeCount: json['recipeCount'] as int? ?? 0,
-      checksum: json['checksum'] as String?,
+      checksum: json['checksum']?.toString(),
       domains: DomainCounts.fromJson(
         json['domains'] as Map<String, dynamic>? ?? {},
       ),
