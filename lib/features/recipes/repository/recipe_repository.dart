@@ -285,7 +285,8 @@ class RecipeRepository {
     _normalizeIngredientUnits(recipe);
 
     final companion = _toCompanion(recipe);
-    final recipeId = await _db.recipeDao.saveRecipe(companion);
+    await _db.recipeDao.saveRecipe(companion);
+    final recipeId = await _db.recipeDao.getIdByUuid(recipe.uuid) ?? 0;
     await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
     await _db.recipeDao
         .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));

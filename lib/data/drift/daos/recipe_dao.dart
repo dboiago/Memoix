@@ -108,6 +108,11 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
+  Future<int?> getIdByUuid(String uuid) async {
+    final row = await (select(recipes)..where((r) => r.uuid.equals(uuid))).getSingleOrNull();
+    return row?.id;
+  }
+
   Future<void> saveRecipes(List<RecipesCompanion> rows) =>
       transaction(() async {
         for (final row in rows) {
