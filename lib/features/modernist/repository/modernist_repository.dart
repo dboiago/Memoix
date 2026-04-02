@@ -9,6 +9,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 import '../models/modernist_recipe.dart';
 
 /// Repository for modernist recipe CRUD operations
@@ -269,7 +270,10 @@ class ModernistRepository {
   }
 
   /// Delete by UUID
-  Future<bool> deleteByUuid(String uuid) async {
+  Future<bool> deleteByUuid(String uuid, {bool fromMerge = false}) async {
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.modernist, uuid);
+    }
     final recipe = await getByUuid(uuid);
     if (recipe == null) return false;
     return delete(recipe.id);

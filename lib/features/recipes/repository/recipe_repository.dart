@@ -13,6 +13,7 @@ import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -321,7 +322,26 @@ class RecipeRepository {
   }
 
   Future<bool> deleteRecipe(int id) async {
+    if (id > 0) {
+      final row = await _db.recipeDao.getRecipeById(id);
+      if (row != null) {
+        await TombstoneStore.add(TombstoneDomain.recipes, row.uuid);
+      }
+    }
     await _db.recipeDao.deleteRecipe(id);
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    return true;
+  }
+
+  /// Delete a recipe by UUID. Pass [fromMerge] = true when called during a
+  /// pull merge to prevent recording a tombstone for a remotely-deleted item.
+  Future<bool> deleteRecipeByUuid(String uuid, {bool fromMerge = false}) async {
+    final row = await _db.recipeDao.getRecipeByUuid(uuid);
+    if (row == null) return false;
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.recipes, uuid);
+    }
+    await _db.recipeDao.deleteRecipe(row.id);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     return true;
   }

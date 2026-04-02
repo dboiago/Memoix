@@ -8,6 +8,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 import '../models/pizza.dart';
 
 /// Repository for pizza data operations
@@ -87,7 +88,10 @@ class PizzaRepository {
   }
 
   /// Delete a pizza by UUID
-  Future<bool> deletePizzaByUuid(String uuid) async {
+  Future<bool> deletePizzaByUuid(String uuid, {bool fromMerge = false}) async {
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.pizzas, uuid);
+    }
     final count = await _db.catalogueDao.deletePizzaByUuid(uuid);
     if (count > 0) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();

@@ -8,6 +8,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 import '../models/smoking_recipe.dart';
 
 /// Repository for smoking recipe operations
@@ -99,9 +100,21 @@ class SmokingRepository {
   }
 
   /// Delete a smoking recipe
-  Future<void> deleteRecipe(SmokingRecipe recipe) async {
+  Future<void> deleteRecipe(SmokingRecipe recipe, {bool fromMerge = false}) async {
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.smoking, recipe.uuid);
+    }
     await _db.smokingDao.deleteRecipe(recipe.id);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
+  /// Delete a smoking recipe by UUID. Pass [fromMerge] = true when called
+  /// during a pull merge to prevent recording a tombstone.
+  Future<void> deleteRecipeByUuid(String uuid, {bool fromMerge = false}) async {
+    final recipe = await getRecipeByUuid(uuid);
+    if (recipe != null) {
+      await deleteRecipe(recipe, fromMerge: fromMerge);
+    }
   }
 
   /// Toggle favorite status

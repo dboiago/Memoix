@@ -6,6 +6,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 
 /// Repository for cheese entry data operations
 class CheeseRepository {
@@ -89,7 +90,10 @@ class CheeseRepository {
   }
 
   /// Delete an entry by UUID
-  Future<bool> deleteEntryByUuid(String uuid) async {
+  Future<bool> deleteEntryByUuid(String uuid, {bool fromMerge = false}) async {
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.cheeses, uuid);
+    }
     final deleted = await _db.cellarDao.deleteCheeseEntryByUuid(uuid);
     final result = deleted > 0;
     if (result) {

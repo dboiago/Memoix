@@ -33,6 +33,7 @@ import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/personal_storage_provider.dart';
 import 'shared_storage_manager.dart';
+import 'tombstone_store.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 
@@ -503,6 +504,7 @@ class PersonalStorageService {
     final cellar = await _ref.read(cellarRepositoryProvider).getAllEntries();
     final smoking = await _ref.read(smokingRepositoryProvider).getAllRecipes();
     final modernist = await _ref.read(modernistRepositoryProvider).getAll();
+    final deletedUuids = await TombstoneStore.getAll();
 
     return RecipeBundle(
       recipes: recipes,
@@ -512,6 +514,7 @@ class PersonalStorageService {
       cellar: cellar,
       smoking: smoking,
       modernist: modernist,
+      deletedUuids: deletedUuids,
       metadata: BundleMetadata.create(
         deviceName: await _getDeviceName(),
       ),
@@ -537,7 +540,97 @@ class PersonalStorageService {
     result = result + await _mergeSmoking(bundle.smoking);
     result = result + await _mergeModernist(bundle.modernist);
 
+    // Apply tombstone deletions from remote bundle after all add/update passes.
+    // A tombstoned UUID is only deleted if it is NOT present in the remote
+    // recipe list (absence confirms intentional deletion, not a partial bundle).
+    if (bundle.deletedUuids.isNotEmpty) {
+      await _applyTombstones(bundle);
+    }
+
     return result;
+  }
+
+  /// Apply tombstone deletions from the remote bundle.
+  ///
+  /// Deletes a local item only when:
+  ///   1. The UUID appears in [bundle.deletedUuids] for that domain, AND
+  ///   2. The UUID is NOT present in the remote item list for that domain
+  ///      (so a later re-creation on another device is never wiped out).
+  ///
+  /// After applying, clears those UUIDs from the local tombstone store so
+  /// they are not re-sent on the next push.
+  Future<void> _applyTombstones(RecipeBundle bundle) async {
+    // Build lookup sets of remote UUIDs per domain
+    final remoteRecipeUuids = bundle.recipes.map((r) => r.uuid).toSet();
+    final remotePizzaUuids = bundle.pizzas.map((p) => p.uuid).toSet();
+    final remoteSandwichUuids = bundle.sandwiches.map((s) => s.uuid).toSet();
+    final remoteCheesesUuids = bundle.cheeses.map((c) => c.uuid).toSet();
+    final remoteCellarUuids = bundle.cellar.map((c) => c.uuid).toSet();
+    final remoteSmokingUuids = bundle.smoking.map((r) => r.uuid).toSet();
+    final remoteModernistUuids = bundle.modernist.map((r) => r.uuid).toSet();
+
+    Future<void> applyForDomain({
+      required String domain,
+      required Set<String> remoteUuids,
+      required Future<void> Function(String uuid) deleteByUuid,
+    }) async {
+      final uuids = bundle.deletedUuids[domain] ?? [];
+      final toDelete = uuids.where((u) => !remoteUuids.contains(u)).toList();
+      for (final uuid in toDelete) {
+        try {
+          await deleteByUuid(uuid);
+        } catch (e) {
+          debugPrint('PersonalStorageService: tombstone delete failed ($domain $uuid): $e');
+        }
+      }
+      if (toDelete.isNotEmpty) {
+        await TombstoneStore.clear(domain, toDelete);
+      }
+    }
+
+    final repo = _ref.read(recipeRepositoryProvider);
+    final pizzaRepo = _ref.read(pizzaRepositoryProvider);
+    final sandwichRepo = _ref.read(sandwichRepositoryProvider);
+    final cheeseRepo = _ref.read(cheeseRepositoryProvider);
+    final cellarRepo = _ref.read(cellarRepositoryProvider);
+    final smokingRepo = _ref.read(smokingRepositoryProvider);
+    final modernistRepo = _ref.read(modernistRepositoryProvider);
+
+    await applyForDomain(
+      domain: TombstoneDomain.recipes,
+      remoteUuids: remoteRecipeUuids,
+      deleteByUuid: (uuid) => repo.deleteRecipeByUuid(uuid, fromMerge: true),
+    );
+    await applyForDomain(
+      domain: TombstoneDomain.pizzas,
+      remoteUuids: remotePizzaUuids,
+      deleteByUuid: (uuid) => pizzaRepo.deletePizzaByUuid(uuid, fromMerge: true),
+    );
+    await applyForDomain(
+      domain: TombstoneDomain.sandwiches,
+      remoteUuids: remoteSandwichUuids,
+      deleteByUuid: (uuid) => sandwichRepo.deleteSandwichByUuid(uuid, fromMerge: true),
+    );
+    await applyForDomain(
+      domain: TombstoneDomain.cheeses,
+      remoteUuids: remoteCheesesUuids,
+      deleteByUuid: (uuid) => cheeseRepo.deleteEntryByUuid(uuid, fromMerge: true),
+    );
+    await applyForDomain(
+      domain: TombstoneDomain.cellar,
+      remoteUuids: remoteCellarUuids,
+      deleteByUuid: (uuid) => cellarRepo.deleteEntryByUuid(uuid, fromMerge: true),
+    );
+    await applyForDomain(
+      domain: TombstoneDomain.smoking,
+      remoteUuids: remoteSmokingUuids,
+      deleteByUuid: (uuid) => smokingRepo.deleteRecipeByUuid(uuid, fromMerge: true),
+    );
+    await applyForDomain(
+      domain: TombstoneDomain.modernist,
+      remoteUuids: remoteModernistUuids,
+      deleteByUuid: (uuid) => modernistRepo.deleteByUuid(uuid, fromMerge: true),
+    );
   }
 
   /// Merge recipes domain — last-write-wins by updatedAt

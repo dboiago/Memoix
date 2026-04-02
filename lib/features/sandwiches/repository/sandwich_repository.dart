@@ -8,6 +8,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 import '../models/sandwich.dart';
 
 /// Repository for sandwich data operations
@@ -88,7 +89,10 @@ class SandwichRepository {
   }
 
   /// Delete a sandwich by UUID
-  Future<bool> deleteSandwichByUuid(String uuid) async {
+  Future<bool> deleteSandwichByUuid(String uuid, {bool fromMerge = false}) async {
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.sandwiches, uuid);
+    }
     final count = await _db.catalogueDao.deleteSandwichByUuid(uuid);
     if (count > 0) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();

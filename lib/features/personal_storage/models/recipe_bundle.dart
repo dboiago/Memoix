@@ -36,6 +36,11 @@ class RecipeBundle {
   /// Modernist/molecular gastronomy recipes
   final List<ModernistRecipe> modernist;
 
+  /// UUIDs of items deleted locally since the last push, keyed by domain.
+  /// Used to propagate deletions to other devices on pull.
+  /// Example: { 'recipes': ['uuid1', 'uuid2'], 'pizzas': ['uuid3'] }
+  final Map<String, List<String>> deletedUuids;
+
   /// Bundle metadata (version, timestamp, etc.)
   final BundleMetadata metadata;
 
@@ -47,6 +52,7 @@ class RecipeBundle {
     this.cellar = const [],
     this.smoking = const [],
     this.modernist = const [],
+    this.deletedUuids = const {},
     required this.metadata,
   });
 
@@ -115,6 +121,7 @@ class RecipeBundle {
               ?.map((e) => ModernistRecipe.fromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
+      deletedUuids: _parseDeletedUuids(json['deletedUuids']),
       metadata: json['_metadata'] != null
           ? BundleMetadata.fromJson(json['_metadata'] as Map<String, dynamic>)
           : BundleMetadata.create(),
@@ -132,6 +139,7 @@ class RecipeBundle {
       'cellar': cellar.map((e) => e.toJson()).toList(),
       'smoking': smoking.map((e) => e.toJson()).toList(),
       'modernist': modernist.map((e) => e.toJson()).toList(),
+      if (deletedUuids.isNotEmpty) 'deletedUuids': deletedUuids,
     };
   }
 
@@ -152,6 +160,7 @@ class RecipeBundle {
     List<CellarEntry>? cellar,
     List<SmokingRecipe>? smoking,
     List<ModernistRecipe>? modernist,
+    Map<String, List<String>>? deletedUuids,
     BundleMetadata? metadata,
   }) {
     return RecipeBundle(
@@ -162,6 +171,7 @@ class RecipeBundle {
       cellar: cellar ?? this.cellar,
       smoking: smoking ?? this.smoking,
       modernist: modernist ?? this.modernist,
+      deletedUuids: deletedUuids ?? this.deletedUuids,
       metadata: metadata ?? this.metadata,
     );
   }
@@ -172,6 +182,21 @@ class RecipeBundle {
         'pizzas: ${pizzas.length}, sandwiches: ${sandwiches.length}, '
         'cheeses: ${cheeses.length}, cellar: ${cellar.length}, '
         'smoking: ${smoking.length}, modernist: ${modernist.length})';
+  }
+}
+
+/// Safely parse the `deletedUuids` field from a bundle JSON map.
+/// Returns an empty map if the field is absent or malformed.
+Map<String, List<String>> _parseDeletedUuids(dynamic raw) {
+  if (raw == null) return const {};
+  try {
+    final map = raw as Map<String, dynamic>;
+    return map.map((domain, value) {
+      final uuids = (value as List<dynamic>).cast<String>();
+      return MapEntry(domain, uuids);
+    });
+  } catch (_) {
+    return const {};
   }
 }
 
