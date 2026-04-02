@@ -262,13 +262,13 @@ class Recipe {
       ..pickleMethod = json['pickleMethod']?.toString();
 
     if (json['createdAt'] != null) {
-      recipe.createdAt = DateTime.parse(json['createdAt'].toString());
+      recipe.createdAt = DateTime.parse(json['createdAt'].toString()).toUtc();
     }
     if (json['updatedAt'] != null) {
-      recipe.updatedAt = DateTime.parse(json['updatedAt'].toString());
+      recipe.updatedAt = DateTime.parse(json['updatedAt'].toString()).toUtc();
     }
     if (json['lastCookedAt'] != null) {
-      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'].toString());
+      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'].toString()).toUtc();
     }
 
     return recipe;
@@ -300,10 +300,10 @@ class Recipe {
       'isFavorite': isFavorite,
       'rating': rating,
       'cookCount': cookCount,
-      'lastCookedAt': lastCookedAt?.toIso8601String(),
+      'lastCookedAt': lastCookedAt?.toUtc().toIso8601String(),
       'tags': tags,
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
+      'createdAt': createdAt.toUtc().toIso8601String(),
+      'updatedAt': updatedAt.toUtc().toIso8601String(),
       'version': version,
       if (nutrition != null) 'nutrition': nutrition!.toJson(),
       if (glass != null) 'glass': glass,

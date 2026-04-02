@@ -26,15 +26,15 @@ CellarEntry cellarEntryFromJson(Map<String, dynamic> json) {
     source: json['source']?.toString() ?? CellarSource.personal.name,
     isFavorite: json['isFavorite'] as bool? ?? false,
     createdAt: json['createdAt'] is int
-        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int).toUtc()
         : json['createdAt'] != null
-            ? DateTime.parse(json['createdAt'].toString())
-            : DateTime.now(),
+            ? DateTime.parse(json['createdAt'].toString()).toUtc()
+            : DateTime.now().toUtc(),
     updatedAt: json['updatedAt'] is int
-        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int).toUtc()
         : json['updatedAt'] != null
-            ? DateTime.parse(json['updatedAt'].toString())
-            : DateTime.now(),
+            ? DateTime.parse(json['updatedAt'].toString()).toUtc()
+            : DateTime.now().toUtc(),
     version: (json['version'] as num?)?.toInt() ?? 1,
   );
 }
@@ -54,8 +54,8 @@ extension CellarEntryX on CellarEntry {
         'imageUrl': imageUrl,
         'source': source,
         'isFavorite': isFavorite,
-        'createdAt': createdAt.toIso8601String(),
-        'updatedAt': updatedAt.toIso8601String(),
+        'createdAt': createdAt.toUtc().toIso8601String(),
+        'updatedAt': updatedAt.toUtc().toIso8601String(),
         'version': version,
       };
 
