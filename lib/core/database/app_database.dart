@@ -3,6 +3,7 @@ import 'package:drift/drift.dart';
 import '../../data/drift/daos/cooking_log_dao.dart';
 import '../../data/drift/daos/utility_dao.dart';
 import '../../data/drift/daos/cellar_dao.dart';
+import '../../data/drift/daos/image_dao.dart';
 import '../../data/drift/daos/shopping_dao.dart';
 import '../../data/drift/daos/meal_plan_dao.dart';
 import '../../data/drift/daos/catalogue_dao.dart';
@@ -400,6 +401,23 @@ class Courses extends Table {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// RECIPE IMAGES (binary blob storage for sync)
+// ─────────────────────────────────────────────────────────────────────────────
+
+@TableIndex(name: 'idx_recipe_images_recipe_id', columns: {#recipeId})
+@TableIndex(name: 'idx_recipe_images_file_name', columns: {#fileName}, unique: true)
+class RecipeImages extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  IntColumn get recipeId => integer().references(Recipes, #id)();
+  TextColumn get fileName => text()(); // original filename, used as stable sync identifier
+  TextColumn get imageType => text()(); // 'header' | 'step' | 'gallery'
+  IntColumn get stepIndex => integer().nullable()(); // only set when imageType == 'step'
+  BlobColumn get imageData => blob()();
+  TextColumn get mimeType => text().withDefault(const Constant('image/jpeg'))();
+  DateTimeColumn get createdAt => dateTime()();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // DATABASE
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -419,6 +437,7 @@ class Courses extends Table {
   SmokingRecipes,
   CookingLogs,
   Courses,
+  RecipeImages,
 ], daos: [
   CookingLogDao,
   UtilityDao,
@@ -428,6 +447,7 @@ class Courses extends Table {
   CatalogueDao,
   SmokingDao,
   RecipeDao,
+  ImageDao,
 ])
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.e);
@@ -447,7 +467,16 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
+
+  @override
+  MigrationStrategy get migration => MigrationStrategy(
+    onUpgrade: (m, from, to) async {
+      if (from < 2) {
+        await m.createTable(recipeImages);
+      }
+    },
+  );
 
   CookingLogDao get cookingLogDao => CookingLogDao(this);
   UtilityDao get utilityDao => UtilityDao(this);
@@ -457,4 +486,5 @@ class AppDatabase extends _$AppDatabase {
   CatalogueDao get catalogueDao => CatalogueDao(this);
   SmokingDao get smokingDao => SmokingDao(this);
   RecipeDao get recipeDao => RecipeDao(this);
+  ImageDao get imageDao => ImageDao(this);
 }
