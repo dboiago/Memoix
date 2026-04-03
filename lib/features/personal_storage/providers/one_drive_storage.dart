@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
+import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
@@ -45,6 +46,7 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   // File names for storage files
   static const _recipesFileName = 'memoix_recipes.json';
   static const _metaFileName = '.memoix_meta.json';
+  static const _databaseFileName = 'memoix.db';
 
   // Microsoft Graph API endpoints
   static const _graphApiBase = 'https://graph.microsoft.com/v1.0';
@@ -151,6 +153,18 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     _ensureConnected();
     final content = const JsonEncoder.withIndent('  ').convert(meta.toJson());
     await uploadFile(_metaFileName, content);
+  }
+
+  @override
+  Future<void> pushDatabaseBytes(Uint8List bytes) async {
+    _ensureConnected();
+    await uploadFileBytes(_databaseFileName, bytes);
+  }
+
+  @override
+  Future<Uint8List?> pullDatabaseBytes() async {
+    _ensureConnected();
+    return downloadFileBytes(_databaseFileName);
   }
 
   // --- CloudStorageProvider interface ---
@@ -936,6 +950,70 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
       }
     } catch (e) {
       debugPrint('OneDriveStorage: downloadFile error: $e');
+      rethrow;
+    }
+  }
+
+  /// Upload raw bytes to the active OneDrive folder
+  Future<void> uploadFileBytes(String fileName, Uint8List bytes) async {
+    _ensureConnected();
+
+    if (_targetDriveId == null || _targetFolderId == null) {
+      throw Exception('No active folder selected');
+    }
+
+    try {
+      final url = Uri.parse(
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$fileName:/content',
+      );
+
+      final response = await _httpClient!.put(
+        url,
+        body: bytes,
+        headers: {'Content-Type': 'application/octet-stream'},
+      );
+
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        debugPrint('OneDriveStorage: File "$fileName" (bytes) uploaded successfully');
+      } else {
+        throw Exception(
+          'Failed to upload file: ${response.statusCode} ${response.body}',
+        );
+      }
+    } catch (e) {
+      debugPrint('OneDriveStorage: uploadFileBytes error: $e');
+      rethrow;
+    }
+  }
+
+  /// Download raw bytes from the active OneDrive folder
+  Future<Uint8List?> downloadFileBytes(String fileName) async {
+    _ensureConnected();
+
+    if (_targetDriveId == null || _targetFolderId == null) {
+      throw Exception('No active folder selected');
+    }
+
+    try {
+      final url = Uri.parse(
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$fileName:/content',
+      );
+
+      final response = await _httpClient!.get(url);
+
+      if (response.statusCode == 200) {
+        debugPrint('OneDriveStorage: File "$fileName" (bytes) downloaded successfully');
+        return response.bodyBytes;
+      } else if (response.statusCode == 404) {
+        debugPrint('OneDriveStorage: File "$fileName" not found');
+        return null;
+      } else {
+        throw Exception(
+          'Failed to download file: ${response.statusCode} ${response.body}',
+        );
+      }
+    } catch (e) {
+      debugPrint('OneDriveStorage: downloadFileBytes error: $e');
       rethrow;
     }
   }

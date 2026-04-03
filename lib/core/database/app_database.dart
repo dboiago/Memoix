@@ -466,6 +466,11 @@ class AppDatabase extends _$AppDatabase {
     _instance ??= AppDatabase(executor);
   }
 
+  /// Reset the singleton to allow reinitialization after a DB file replacement.
+  static void resetInstance() {
+    _instance = null;
+  }
+
   @override
   int get schemaVersion => 2;
 

@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:async';
+import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -34,6 +35,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   // File names in the Memoix folder
   static const _recipesFileName = 'memoix_recipes.json';
   static const _metaFileName = '.memoix_meta.json';
+  static const _databaseFileName = 'memoix.db';
   static const _defaultFolderName = 'Memoix';
 
   // MIME types
@@ -560,6 +562,25 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     );
   }
 
+  @override
+  Future<void> pushDatabaseBytes(Uint8List bytes) async {
+    _ensureConnected();
+    final folderId = await _ensureFolderId();
+    await _uploadFileBytes(
+      folderId: folderId,
+      fileName: _databaseFileName,
+      bytes: bytes,
+      mimeType: 'application/octet-stream',
+    );
+  }
+
+  @override
+  Future<Uint8List?> pullDatabaseBytes() async {
+    _ensureConnected();
+    final folderId = await _ensureFolderId();
+    return _downloadFileBytes(folderId: folderId, fileName: _databaseFileName);
+  }
+
   // --- Platform-specific connection methods ---
 
   /// Connect on mobile using google_sign_in
@@ -955,6 +976,72 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     }
 
     return utf8.decode(bytes);
+  }
+
+  /// Upload raw bytes to the specified folder.
+  ///
+  /// If the file already exists, it will be updated (overwritten).
+  Future<void> _uploadFileBytes({
+    required String folderId,
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+  }) async {
+    _ensureConnected();
+
+    final existingFileId = await _findFile(
+      folderId: folderId,
+      fileName: fileName,
+    );
+
+    final fileContent = Stream.value(bytes.toList());
+    final media = drive.Media(fileContent, bytes.length);
+
+    if (existingFileId != null) {
+      final file = drive.File()..name = fileName;
+      await _driveApi!.files.update(file, existingFileId, uploadMedia: media);
+      debugPrint('GoogleDriveStorage: Updated $fileName (bytes)');
+    } else {
+      final file = drive.File()
+        ..name = fileName
+        ..mimeType = mimeType
+        ..parents = [folderId];
+      await _driveApi!.files.create(file, uploadMedia: media);
+      debugPrint('GoogleDriveStorage: Created $fileName (bytes)');
+    }
+  }
+
+  /// Download raw bytes from the specified folder.
+  ///
+  /// Returns null if the file doesn't exist.
+  Future<Uint8List?> _downloadFileBytes({
+    required String folderId,
+    required String fileName,
+  }) async {
+    _ensureConnected();
+
+    final fileId = await _findFile(folderId: folderId, fileName: fileName);
+
+    if (fileId == null) {
+      debugPrint('GoogleDriveStorage: File $fileName not found');
+      return null;
+    }
+
+    final media = await _driveApi!.files.get(
+      fileId,
+      downloadOptions: drive.DownloadOptions.fullMedia,
+    ) as drive.Media;
+
+    final chunks = <int>[];
+    await for (final chunk in media.stream) {
+      chunks.addAll(chunk);
+      // Security: Enforce 10 MB limit (AGENTS.md constraint)
+      if (chunks.length > 10 * 1024 * 1024) {
+        throw Exception('File exceeds maximum allowed size (10 MB)');
+      }
+    }
+
+    return Uint8List.fromList(chunks);
   }
 
   /// Find a file by name in the specified folder

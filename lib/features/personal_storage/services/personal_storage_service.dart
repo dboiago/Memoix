@@ -2,38 +2,27 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math' as math;
+import 'dart:typed_data';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../../core/database/app_database.dart' hide Recipe, Ingredient;
+import '../../../core/database/app_database.dart';
+import '../../../core/database/database.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
-import '../../cellar/models/cellar_entry.dart';
-import '../../cellar/repository/cellar_repository.dart';
-import '../../cheese/models/cheese_entry.dart';
-import '../../cheese/repository/cheese_repository.dart';
-import '../../modernist/models/modernist_recipe.dart';
-import '../../modernist/repository/modernist_repository.dart';
-import '../../pizzas/models/pizza.dart';
-import '../../pizzas/repository/pizza_repository.dart';
-import '../../recipes/models/recipe.dart';
+import '../../mealplan/models/meal_plan.dart';
 import '../../recipes/repository/recipe_repository.dart';
-import '../../sandwiches/models/sandwich.dart';
-import '../../sandwiches/repository/sandwich_repository.dart';
-import '../../smoking/models/smoking_recipe.dart';
-import '../../smoking/repository/smoking_repository.dart';
 import '../models/storage_location.dart';
 import '../models/merge_result.dart';
-import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/personal_storage_provider.dart';
 import 'shared_storage_manager.dart';
-import 'tombstone_store.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 
@@ -327,8 +316,8 @@ class PersonalStorageService {
 
   // ============ PUSH OPERATION ============
 
-  /// Push local data to remote storage
-  /// 
+  /// Push local data to remote storage as a raw SQLite database file.
+  ///
   /// [silent] - If true, show minimal UI feedback (for automatic syncs)
   /// Implements retry with exponential backoff per EXTERNAL_STORAGE.md Section 10.
   Future<void> push({bool silent = false}) async {
@@ -336,7 +325,7 @@ class PersonalStorageService {
       if (!silent) MemoixSnackBar.showError('No storage provider connected');
       return;
     }
-    
+
     if (_isPushing) return; // Prevent concurrent pushes
 
     // Guard: refuse automatic push when the last pull failed to prevent
@@ -353,39 +342,56 @@ class PersonalStorageService {
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.pushing;
 
     try {
-      // Create bundle from all local data
-      final bundle = await _createBundle();
-      
+      final db = AppDatabase.instance;
+
+      // Flush WAL to main DB file before reading bytes
+      await db.customStatement('PRAGMA wal_checkpoint(TRUNCATE)');
+
+      // Locate database file (same path used by driftDatabase(name: 'memoix'))
+      final dir = await getApplicationDocumentsDirectory();
+      final dbFile = File('${dir.path}/memoix.db');
+
+      // One-time log: first push supersedes legacy memoix_recipes.json format
+      final prefs = await SharedPreferences.getInstance();
+      if (prefs.getBool('pss_db_format_active') != true) {
+        debugPrint(
+          'PersonalStorageService: Switching to memoix.db format; '
+          'supersedes legacy memoix_recipes.json',
+        );
+        await prefs.setBool('pss_db_format_active', true);
+      }
+
+      final bytes = await dbFile.readAsBytes();
+
       // Push to remote with retry logic
       await _withRetry(
         () async {
-          await _provider!.push(bundle);
-          
-          // Update meta file
+          await _provider!.pushDatabaseBytes(bytes);
+
+          // Update meta file (kept for UI display)
           final meta = StorageMeta.create(
             deviceName: await _getDeviceName(),
-            domains: bundle.domainCounts,
+            domains: const DomainCounts(),
           );
           await _provider!.updateMeta(meta);
         },
         operationName: 'push',
       );
-      
+
       // Update last sync time in preferences
       final syncTime = DateTime.now();
       await _setLastSyncTime(syncTime);
       _hasPendingChanges = false;
       _pullFailed = false; // successful push clears the pull-failure guard
-      
+
       // Update lastSynced timestamp in active repository
-      final prefs = await SharedPreferences.getInstance();
       final repositoriesJson = prefs.getString('drive_repositories');
       if (repositoriesJson != null) {
         final List<dynamic> list = jsonDecode(repositoriesJson);
-        final repositories = list.map((item) => 
+        final repositories = list.map((item) =>
           StorageLocation.fromJson(item as Map<String, dynamic>)
         ).toList();
-        
+
         // Find and update active repository
         final updated = repositories.map((r) {
           if (r.isActive) {
@@ -393,16 +399,16 @@ class PersonalStorageService {
           }
           return r;
         }).toList();
-        
+
         // Save updated repositories
         final updatedJson = jsonEncode(updated.map((r) => r.toJson()).toList());
         await prefs.setString('drive_repositories', updatedJson);
       }
-      
+
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
       if (!silent) {
-        MemoixSnackBar.showSuccess('Pushed ${bundle.totalCount} recipes');
+        MemoixSnackBar.showSuccess('Database pushed');
       }
     } catch (e) {
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
@@ -417,8 +423,9 @@ class PersonalStorageService {
 
   // ============ PULL OPERATION ============
 
-  /// Pull remote data and merge into local database
-  /// 
+  /// Pull remote data by downloading the raw SQLite database file and replacing
+  /// the local database.
+  ///
   /// [silent] - If true, show minimal UI feedback (for automatic syncs)
   /// Implements retry with exponential backoff per EXTERNAL_STORAGE.md Section 10.
   Future<PullResult> pull({bool silent = false}) async {
@@ -426,7 +433,7 @@ class PersonalStorageService {
       if (!silent) MemoixSnackBar.showError('No storage provider connected');
       return PullResult.failed('No storage provider connected');
     }
-    
+
     if (_isPulling) return PullResult.skipped(); // Prevent concurrent pulls
     _isPulling = true;
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.pulling;
@@ -441,7 +448,6 @@ class PersonalStorageService {
         if (remoteMeta != null) {
           final lastSync = await _getLastSyncTime();
           if (lastSync != null && !remoteMeta.isNewerThan(lastSync)) {
-            // Remote hasn't changed since last sync
             _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
             if (!silent) {
               MemoixSnackBar.show('Already up to date');
@@ -451,37 +457,61 @@ class PersonalStorageService {
         }
       }
 
-      // Download bundle with retry logic
-      final bundle = await _withRetry(
-        () => _provider!.pull(),
+      // Download raw database bytes
+      final bytes = await _withRetry(
+        () => _provider!.pullDatabaseBytes(),
         operationName: 'pull',
       );
-      if (bundle == null) {
+
+      if (bytes == null) {
         _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
         if (!silent) {
-          MemoixSnackBar.show('No recipes found in storage');
+          MemoixSnackBar.show('No database found in storage');
         }
         return PullResult.skipped();
       }
 
-      // Merge into local database
-      final mergeResult = await _mergeBundle(bundle);
-      
-      // Update last sync time
+      // Locate local database file
+      final dir = await getApplicationDocumentsDirectory();
+      final dbFile = File('${dir.path}/memoix.db');
+      final tempFile = File('${dir.path}/memoix_sync_tmp.db');
+
+      // Write downloaded bytes to a temp file first
+      await tempFile.writeAsBytes(bytes, flush: true);
+
+      // Close the Drift connection before swapping the file
+      await AppDatabase.instance.close();
+
+      // Replace local DB with downloaded file
+      await tempFile.copy(dbFile.path);
+      await tempFile.delete();
+
+      // Delete stale WAL/SHM sidecar files if present
+      final walFile = File('${dir.path}/memoix.db-wal');
+      final shmFile = File('${dir.path}/memoix.db-shm');
+      if (await walFile.exists()) await walFile.delete();
+      if (await shmFile.exists()) await shmFile.delete();
+
+      // Reset singleton and reinitialize with a fresh executor
+      AppDatabase.resetInstance();
+      await MemoixDatabase.initialize();
+
+      // Invalidate providers so all UI rebuilds against the new database
+      _ref.invalidate(databaseProvider);
+      _ref.invalidate(recipeRepositoryProvider);
+      _ref.invalidate(allRecipesProvider);
+      _ref.invalidate(weeklyPlanProvider);
+
       await _setLastSyncTime(DateTime.now());
-      _pullFailed = false; // successful pull clears the guard
-      
+      _pullFailed = false;
+
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
-      // Only show feedback if not silent AND there were actual changes
-      if (!silent && mergeResult.hasChanges) {
-        MemoixSnackBar.show(mergeResult.summaryMessage);
-      } else if (!silent && !mergeResult.hasChanges) {
-        // Silent sync when no changes detected
-        debugPrint('PersonalStorageService: Sync complete, no changes detected');
+      if (!silent) {
+        MemoixSnackBar.showSuccess('Database synced');
       }
-      
-      return PullResult.fromMerge(mergeResult, remoteCount: bundle.totalCount);
+
+      return const PullResult();
     } catch (e) {
       _pullFailed = true;
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
@@ -491,279 +521,6 @@ class PersonalStorageService {
     } finally {
       _isPulling = false;
     }
-  }
-
-  // ============ BUNDLE CREATION ============
-
-  /// Create a RecipeBundle from all local data
-  Future<RecipeBundle> _createBundle() async {
-    final recipes = await _ref.read(recipeRepositoryProvider).getAllRecipes();
-    final pizzas = await _ref.read(pizzaRepositoryProvider).getAllPizzas();
-    final sandwiches = await _ref.read(sandwichRepositoryProvider).getAllSandwiches();
-    final cheeses = await _ref.read(cheeseRepositoryProvider).getAllEntries();
-    final cellar = await _ref.read(cellarRepositoryProvider).getAllEntries();
-    final smoking = await _ref.read(smokingRepositoryProvider).getAllRecipes();
-    final modernist = await _ref.read(modernistRepositoryProvider).getAll();
-    final deletedUuids = await TombstoneStore.getAll();
-
-    return RecipeBundle(
-      recipes: recipes,
-      pizzas: pizzas,
-      sandwiches: sandwiches,
-      cheeses: cheeses,
-      cellar: cellar,
-      smoking: smoking,
-      modernist: modernist,
-      deletedUuids: deletedUuids,
-      metadata: BundleMetadata.create(
-        deviceName: await _getDeviceName(),
-      ),
-    );
-  }
-
-  // ============ MERGE LOGIC ============
-
-  /// Merge a pulled bundle into local database
-  /// 
-  /// Strategy: Last-Write-Wins with Merge
-  /// - Remote-only items: Add to local
-  /// - Local-only items: Keep (push will upload them)
-  /// - Both exist: Keep newer based on updatedAt timestamp
-  Future<MergeResult> _mergeBundle(RecipeBundle bundle) async {
-    var result = const MergeResult();
-
-    result = result + await _mergeRecipes(bundle.recipes);
-    result = result + await _mergePizzas(bundle.pizzas);
-    result = result + await _mergeSandwiches(bundle.sandwiches);
-    result = result + await _mergeCheeses(bundle.cheeses);
-    result = result + await _mergeCellar(bundle.cellar);
-    result = result + await _mergeSmoking(bundle.smoking);
-    result = result + await _mergeModernist(bundle.modernist);
-
-    // Apply tombstone deletions from remote bundle after all add/update passes.
-    // A tombstoned UUID is only deleted if it is NOT present in the remote
-    // recipe list (absence confirms intentional deletion, not a partial bundle).
-    if (bundle.deletedUuids.isNotEmpty) {
-      await _applyTombstones(bundle);
-    }
-
-    return result;
-  }
-
-  /// Apply tombstone deletions from the remote bundle.
-  ///
-  /// Deletes a local item only when:
-  ///   1. The UUID appears in [bundle.deletedUuids] for that domain, AND
-  ///   2. The UUID is NOT present in the remote item list for that domain
-  ///      (so a later re-creation on another device is never wiped out).
-  ///
-  /// After applying, clears those UUIDs from the local tombstone store so
-  /// they are not re-sent on the next push.
-  Future<void> _applyTombstones(RecipeBundle bundle) async {
-    // Build lookup sets of remote UUIDs per domain
-    final remoteRecipeUuids = bundle.recipes.map((r) => r.uuid).toSet();
-    final remotePizzaUuids = bundle.pizzas.map((p) => p.uuid).toSet();
-    final remoteSandwichUuids = bundle.sandwiches.map((s) => s.uuid).toSet();
-    final remoteCheesesUuids = bundle.cheeses.map((c) => c.uuid).toSet();
-    final remoteCellarUuids = bundle.cellar.map((c) => c.uuid).toSet();
-    final remoteSmokingUuids = bundle.smoking.map((r) => r.uuid).toSet();
-    final remoteModernistUuids = bundle.modernist.map((r) => r.uuid).toSet();
-
-    Future<void> applyForDomain({
-      required String domain,
-      required Set<String> remoteUuids,
-      required Future<void> Function(String uuid) deleteByUuid,
-    }) async {
-      final uuids = bundle.deletedUuids[domain] ?? [];
-      final toDelete = uuids.where((u) => !remoteUuids.contains(u)).toList();
-      for (final uuid in toDelete) {
-        try {
-          await deleteByUuid(uuid);
-        } catch (e) {
-          debugPrint('PersonalStorageService: tombstone delete failed ($domain $uuid): $e');
-        }
-      }
-      if (toDelete.isNotEmpty) {
-        await TombstoneStore.clear(domain, toDelete);
-      }
-    }
-
-    final repo = _ref.read(recipeRepositoryProvider);
-    final pizzaRepo = _ref.read(pizzaRepositoryProvider);
-    final sandwichRepo = _ref.read(sandwichRepositoryProvider);
-    final cheeseRepo = _ref.read(cheeseRepositoryProvider);
-    final cellarRepo = _ref.read(cellarRepositoryProvider);
-    final smokingRepo = _ref.read(smokingRepositoryProvider);
-    final modernistRepo = _ref.read(modernistRepositoryProvider);
-
-    await applyForDomain(
-      domain: TombstoneDomain.recipes,
-      remoteUuids: remoteRecipeUuids,
-      deleteByUuid: (uuid) => repo.deleteRecipeByUuid(uuid, fromMerge: true),
-    );
-    await applyForDomain(
-      domain: TombstoneDomain.pizzas,
-      remoteUuids: remotePizzaUuids,
-      deleteByUuid: (uuid) => pizzaRepo.deletePizzaByUuid(uuid, fromMerge: true),
-    );
-    await applyForDomain(
-      domain: TombstoneDomain.sandwiches,
-      remoteUuids: remoteSandwichUuids,
-      deleteByUuid: (uuid) => sandwichRepo.deleteSandwichByUuid(uuid, fromMerge: true),
-    );
-    await applyForDomain(
-      domain: TombstoneDomain.cheeses,
-      remoteUuids: remoteCheesesUuids,
-      deleteByUuid: (uuid) => cheeseRepo.deleteEntryByUuid(uuid, fromMerge: true),
-    );
-    await applyForDomain(
-      domain: TombstoneDomain.cellar,
-      remoteUuids: remoteCellarUuids,
-      deleteByUuid: (uuid) => cellarRepo.deleteEntryByUuid(uuid, fromMerge: true),
-    );
-    await applyForDomain(
-      domain: TombstoneDomain.smoking,
-      remoteUuids: remoteSmokingUuids,
-      deleteByUuid: (uuid) => smokingRepo.deleteRecipeByUuid(uuid, fromMerge: true),
-    );
-    await applyForDomain(
-      domain: TombstoneDomain.modernist,
-      remoteUuids: remoteModernistUuids,
-      deleteByUuid: (uuid) => modernistRepo.deleteByUuid(uuid, fromMerge: true),
-    );
-  }
-
-  /// Merge recipes domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergeRecipes(List<Recipe> remoteRecipes) async {
-    final local = await _ref.read(recipeRepositoryProvider).getAllRecipes();
-    final localByUuid = {for (final r in local) r.uuid: r};
-    int added = 0, updated = 0;
-    for (final remote in remoteRecipes) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(recipeRepositoryProvider).saveRecipe(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge recipe ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
-  }
-
-  /// Merge pizzas domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergePizzas(List<Pizza> remotePizzas) async {
-    final local = await _ref.read(pizzaRepositoryProvider).getAllPizzas();
-    final localByUuid = {for (final p in local) p.uuid: p};
-    int added = 0, updated = 0;
-    for (final remote in remotePizzas) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(pizzaRepositoryProvider).savePizza(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge pizza ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
-  }
-
-  /// Merge sandwiches domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergeSandwiches(List<Sandwich> remoteSandwiches) async {
-    final local = await _ref.read(sandwichRepositoryProvider).getAllSandwiches();
-    final localByUuid = {for (final s in local) s.uuid: s};
-    int added = 0, updated = 0;
-    for (final remote in remoteSandwiches) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(sandwichRepositoryProvider).saveSandwich(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge sandwich ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
-  }
-
-  /// Merge cheeses domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergeCheeses(List<CheeseEntry> remoteCheeses) async {
-    final local = await _ref.read(cheeseRepositoryProvider).getAllEntries();
-    final localByUuid = {for (final e in local) e.uuid: e};
-    int added = 0, updated = 0;
-    for (final remote in remoteCheeses) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(cheeseRepositoryProvider).saveEntry(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge cheese ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
-  }
-
-  /// Merge cellar domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergeCellar(List<CellarEntry> remoteCellar) async {
-    final local = await _ref.read(cellarRepositoryProvider).getAllEntries();
-    final localByUuid = {for (final e in local) e.uuid: e};
-    int added = 0, updated = 0;
-    for (final remote in remoteCellar) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(cellarRepositoryProvider).saveEntry(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge cellar entry ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
-  }
-
-  /// Merge smoking domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergeSmoking(List<SmokingRecipe> remoteSmoking) async {
-    final local = await _ref.read(smokingRepositoryProvider).getAllRecipes();
-    final localByUuid = {for (final r in local) r.uuid: r};
-    int added = 0, updated = 0;
-    for (final remote in remoteSmoking) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(smokingRepositoryProvider).saveRecipe(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge smoking recipe ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
-  }
-
-  /// Merge modernist domain — last-write-wins by updatedAt
-  Future<MergeResult> _mergeModernist(List<ModernistRecipe> remoteModernist) async {
-    final local = await _ref.read(modernistRepositoryProvider).getAll();
-    final localByUuid = {for (final r in local) r.uuid: r};
-    int added = 0, updated = 0;
-    for (final remote in remoteModernist) {
-      final existing = localByUuid[remote.uuid];
-      if (existing == null || remote.updatedAt.isAfter(existing.updatedAt)) {
-        try {
-          await _ref.read(modernistRepositoryProvider).save(remote, preserveTimestamp: true);
-          if (existing == null) added++; else updated++;
-        } catch (e) {
-          debugPrint('PersonalStorageService: failed to merge modernist recipe ${remote.uuid}: $e');
-        }
-      }
-    }
-    return MergeResult(added: added, updated: updated);
   }
 
   // ============ HELPERS ============
