@@ -7,6 +7,7 @@ import 'dart:typed_data';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -355,9 +356,8 @@ class PersonalStorageService {
       // Flush WAL to main DB file before reading bytes
       await db.customStatement('PRAGMA wal_checkpoint(TRUNCATE)');
 
-      // Locate database file (same path used by driftDatabase(name: 'memoix'))
-      final dir = await getApplicationDocumentsDirectory();
-      final dbFile = File('${dir.path}/memoix.db');
+      // Locate database file using platform-correct path
+      final dbFile = await _getDatabaseFile();
 
       // One-time log: first push supersedes legacy memoix_recipes.json format
       final prefs = await SharedPreferences.getInstance();
@@ -479,10 +479,9 @@ class PersonalStorageService {
         return PullResult.skipped();
       }
 
-      // Locate local database file
-      final dir = await getApplicationDocumentsDirectory();
-      final dbFile = File('${dir.path}/memoix.db');
-      final tempFile = File('${dir.path}/memoix_sync_tmp.db');
+      // Locate local database file using platform-correct path
+      final dbFile = await _getDatabaseFile();
+      final tempFile = File('${path.join(dbFile.parent.path, 'memoix_sync_tmp.db')}');
 
       // Write downloaded bytes to a temp file first
       await tempFile.writeAsBytes(bytes, flush: true);
@@ -495,8 +494,8 @@ class PersonalStorageService {
       await tempFile.delete();
 
       // Delete stale WAL/SHM sidecar files if present
-      final walFile = File('${dir.path}/memoix.db-wal');
-      final shmFile = File('${dir.path}/memoix.db-shm');
+      final walFile = File('${path.join(dbFile.parent.path, 'memoix.db-wal')}');
+      final shmFile = File('${path.join(dbFile.parent.path, 'memoix.db-shm')}');
       if (await walFile.exists()) await walFile.delete();
       if (await shmFile.exists()) await shmFile.delete();
 
@@ -625,6 +624,19 @@ class PersonalStorageService {
     if (activeRepo != null) {
       await manager.updateLastSynced(activeRepo.id);
     }
+  }
+
+  /// Returns the platform-correct path to the Drift database file.
+  /// On desktop (Windows, Linux, macOS) drift_flutter uses
+  /// getApplicationSupportDirectory(); on mobile it uses
+  /// getApplicationDocumentsDirectory().
+  Future<File> _getDatabaseFile() async {
+    final dir = defaultTargetPlatform == TargetPlatform.windows ||
+                defaultTargetPlatform == TargetPlatform.linux ||
+                defaultTargetPlatform == TargetPlatform.macOS
+        ? await getApplicationSupportDirectory()
+        : await getApplicationDocumentsDirectory();
+    return File(path.join(dir.path, 'memoix.db'));
   }
 
   /// Get device name for meta file
