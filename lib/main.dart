@@ -7,6 +7,7 @@ import 'package:window_manager/window_manager.dart';
 
 import 'app/app.dart';
 import 'core/database/database.dart';
+import 'core/services/image_migration_service.dart';
 import 'core/services/integrity_service.dart';
 import 'core/services/interface_calibration.dart';
 import 'core/services/schema_migration_service.dart';
@@ -38,6 +39,9 @@ void main() async {
 
   // Initialize local database
   await MemoixDatabase.initialize();
+
+  // Migrate existing local image paths to blob storage (one-time, non-fatal)
+  await ImageMigrationService.runIfNeeded();
 
   // Initialize integrity layer
   await IntegrityService.initialize();
