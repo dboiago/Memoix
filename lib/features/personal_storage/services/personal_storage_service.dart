@@ -14,8 +14,16 @@ import '../../../core/database/app_database.dart';
 import '../../../core/database/database.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../cellar/repository/cellar_repository.dart';
+import '../../cheese/repository/cheese_repository.dart';
 import '../../mealplan/models/meal_plan.dart';
+import '../../modernist/repository/modernist_repository.dart';
+import '../../notes/repository/scratch_pad_repository.dart';
+import '../../pizzas/repository/pizza_repository.dart' as pizzaRepo;
 import '../../recipes/repository/recipe_repository.dart';
+import '../../sandwiches/repository/sandwich_repository.dart' as sandwichRepo;
+import '../../smoking/repository/smoking_repository.dart';
+import '../../statistics/models/cooking_stats.dart';
 import '../models/storage_location.dart';
 import '../models/merge_result.dart';
 import '../models/storage_meta.dart';
@@ -496,10 +504,83 @@ class PersonalStorageService {
       AppDatabase.resetInstance();
       await MemoixDatabase.initialize();
 
-      // Invalidate providers so all UI rebuilds against the new database
+      // Invalidate ALL providers so every screen rebuilds against the new database.
+      // databaseProvider is the root; cascade covers repositories, but all leaf
+      // StreamProviders/FutureProviders are also explicitly invalidated for safety.
       _ref.invalidate(databaseProvider);
+      // Core services (watch databaseProvider directly)
+      _ref.invalidate(mealPlanServiceProvider);
+      _ref.invalidate(cookingStatsServiceProvider);
+      _ref.invalidate(shoppingListServiceProvider);
+      _ref.invalidate(shoppingListsProvider);
+      _ref.invalidate(shoppingItemsProvider);
+      // Recipes
       _ref.invalidate(recipeRepositoryProvider);
       _ref.invalidate(allRecipesProvider);
+      _ref.invalidate(recipesByCourseProvider);
+      _ref.invalidate(coursesProvider);
+      _ref.invalidate(favoriteRecipesProvider);
+      _ref.invalidate(recipeSearchProvider);
+      _ref.invalidate(availableCuisinesProvider);
+      _ref.invalidate(recipesPairedWithProvider);
+      _ref.invalidate(recipesByUuidsProvider);
+      // Pizzas
+      _ref.invalidate(pizzaRepo.pizzaRepositoryProvider);
+      _ref.invalidate(pizzaRepo.allPizzasProvider);
+      _ref.invalidate(pizzaRepo.pizzasByBaseProvider);
+      _ref.invalidate(pizzaRepo.favoritePizzasProvider);
+      _ref.invalidate(pizzaRepo.pizzaCountProvider);
+      _ref.invalidate(pizzaRepo.pizzaCountByBaseProvider);
+      _ref.invalidate(pizzaRepo.allCheesesProvider);
+      _ref.invalidate(pizzaRepo.allProteinsProvider);
+      _ref.invalidate(pizzaRepo.allVegetablesProvider);
+      // Sandwiches
+      _ref.invalidate(sandwichRepo.sandwichRepositoryProvider);
+      _ref.invalidate(sandwichRepo.allSandwichesProvider);
+      _ref.invalidate(sandwichRepo.favoriteSandwichesProvider);
+      _ref.invalidate(sandwichRepo.sandwichCountProvider);
+      _ref.invalidate(sandwichRepo.allBreadsProvider);
+      _ref.invalidate(sandwichRepo.allProteinsProvider);
+      _ref.invalidate(sandwichRepo.allSandwichCheesesProvider);
+      _ref.invalidate(sandwichRepo.allCondimentsProvider);
+      // Cellar
+      _ref.invalidate(cellarRepositoryProvider);
+      _ref.invalidate(allCellarEntriesProvider);
+      _ref.invalidate(favoriteCellarEntriesProvider);
+      _ref.invalidate(cellarCategoriesProvider);
+      _ref.invalidate(cellarProducersProvider);
+      // Cheese
+      _ref.invalidate(cheeseRepositoryProvider);
+      _ref.invalidate(allCheeseEntriesProvider);
+      _ref.invalidate(favoriteCheeseEntriesProvider);
+      _ref.invalidate(cheeseCountriesProvider);
+      _ref.invalidate(cheeseMilkTypesProvider);
+      _ref.invalidate(cheeseTexturesProvider);
+      _ref.invalidate(cheeseTypesProvider);
+      // Smoking
+      _ref.invalidate(smokingRepositoryProvider);
+      _ref.invalidate(allSmokingRecipesProvider);
+      _ref.invalidate(favoriteSmokingRecipesProvider);
+      _ref.invalidate(smokingCountProvider);
+      _ref.invalidate(smokingRecipeByUuidProvider);
+      // Modernist
+      _ref.invalidate(modernistRepositoryProvider);
+      _ref.invalidate(allModernistRecipesProvider);
+      _ref.invalidate(favoriteModernistRecipesProvider);
+      _ref.invalidate(modernistByTypeProvider);
+      _ref.invalidate(modernistByTechniqueProvider);
+      _ref.invalidate(modernistCountProvider);
+      _ref.invalidate(modernistTechniquesProvider);
+      _ref.invalidate(modernistRecipeProvider);
+      // Notes / scratch pad
+      _ref.invalidate(scratchPadRepositoryProvider);
+      _ref.invalidate(quickNotesProvider);
+      _ref.invalidate(recipeDraftsProvider);
+      // Statistics (cooking logs)
+      _ref.invalidate(cookingStatsProvider);
+      _ref.invalidate(recipeCookCountProvider);
+      _ref.invalidate(recipeLastCookProvider);
+      // Meal plan
       _ref.invalidate(weeklyPlanProvider);
 
       await _setLastSyncTime(DateTime.now());
