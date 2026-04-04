@@ -178,7 +178,26 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
 
   // ── Recipe watch ───────────────────────────────────────────────────────────
 
-  Stream<List<Recipe>> watchAllRecipes() => select(recipes).watch();
+  /// Watches both [recipes] and [ingredients] tables so that the stream
+  /// re-emits whenever either table is written to (e.g. after saveRecipe()
+  /// deletes and reinserts ingredient rows). The left-outer join includes
+  /// recipes that have no ingredients. Results are de-duplicated by recipe.id
+  /// because the join produces one row per ingredient.
+  Stream<List<Recipe>> watchAllRecipes() {
+    return select(recipes).join([
+      leftOuterJoin(ingredients, ingredients.recipeId.equalsExp(recipes.id)),
+    ]).watch().map((rows) {
+      final seen = <int>{};
+      final result = <Recipe>[];
+      for (final row in rows) {
+        final recipe = row.readTable(recipes);
+        if (seen.add(recipe.id)) {
+          result.add(recipe);
+        }
+      }
+      return result;
+    });
+  }
 
   Stream<List<Recipe>> watchFavoriteRecipes() =>
       (select(recipes)..where((r) => r.isFavorite.equals(true))).watch();
