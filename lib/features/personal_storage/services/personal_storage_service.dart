@@ -638,7 +638,7 @@ class PersonalStorageService {
   /// getApplicationSupportDirectory(); on mobile it uses
   /// getApplicationDocumentsDirectory().
   Future<File> _getDatabaseFile() async {
-    final dbPath = await AppDatabase.instance.getDatabasePath();
+    final dbPath = await AppDatabase.instance.utilityDao.getDatabasePath();
     return File(dbPath);
   }
 

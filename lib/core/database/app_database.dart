@@ -12,11 +12,6 @@ import '../../data/drift/daos/recipe_dao.dart';
 
 part 'app_database.g.dart';
 
-Future<String> getDatabasePath() async {
-  final result = await customSelect('PRAGMA database_list').getSingle();
-  return result.data['file'] as String;
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // RECIPES
 // ─────────────────────────────────────────────────────────────────────────────
