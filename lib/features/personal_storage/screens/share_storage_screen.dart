@@ -87,12 +87,6 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
           }
           _emailController.clear();
           setState(() {}); // Update button state
-          // Open share sheet so the user can also send the join link directly
-          final link = _generateDeepLink();
-          await Share.share(
-            'Join my Memoix recipe repository "${widget.repository.name}":\n$link',
-            subject: 'Join my Memoix repository: ${widget.repository.name}',
-          );
         } else if (successCount > 0 && failCount > 0) {
           // Partial success
           MemoixSnackBar.show('$successCount sent, $failCount failed');
@@ -109,6 +103,16 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
       if (mounted) {
         setState(() => _isInviting = false);
       }
+    }
+
+    // Open the share sheet regardless of grant outcome — the link is how the
+    // recipient actually joins the repository in the app.
+    if (mounted) {
+      final link = _generateDeepLink();
+      await Share.share(
+        'Join my Memoix recipe repository "${widget.repository.name}":\n$link',
+        subject: 'Join my Memoix repository: ${widget.repository.name}',
+      );
     }
   }
 
