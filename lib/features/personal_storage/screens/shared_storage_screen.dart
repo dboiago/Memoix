@@ -244,97 +244,10 @@ class _SharedStorageScreenState
   }
 
   Future<void> _showJoinByLinkDialog() async {
-    final linkController = TextEditingController();
-    final nameController = TextEditingController();
-    String? linkError;
-    String? nameError;
-
     final uri = await showDialog<Uri>(
       context: context,
-      builder: (ctx) => StatefulBuilder(
-        builder: (ctx, setLocalState) => AlertDialog(
-          title: const Text('Join Repository'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: linkController,
-                decoration: InputDecoration(
-                  labelText: 'Share link or Folder ID',
-                  hintText: 'memoix://share/repo?id=... or folder ID',
-                  errorText: linkError,
-                ),
-                autofocus: true,
-                onChanged: (_) {
-                  if (linkError != null) setLocalState(() => linkError = null);
-                },
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: nameController,
-                decoration: InputDecoration(
-                  labelText: 'Name (required for raw folder ID)',
-                  hintText: 'My Recipes',
-                  errorText: nameError,
-                ),
-                onChanged: (_) {
-                  if (nameError != null) setLocalState(() => nameError = null);
-                },
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: const Text('Cancel'),
-            ),
-            FilledButton(
-              onPressed: () {
-                final input = linkController.text.trim();
-                final name = nameController.text.trim();
-
-                if (input.isEmpty) {
-                  setLocalState(() => linkError = 'Enter a share link or folder ID');
-                  return;
-                }
-
-                Uri? result;
-
-                if (input.startsWith('memoix://')) {
-                  result = Uri.tryParse(input);
-                  if (result == null ||
-                      result.host != 'share' ||
-                      !result.pathSegments.contains('repo') ||
-                      (result.queryParameters['id']?.isEmpty ?? true) ||
-                      (result.queryParameters['name']?.isEmpty ?? true)) {
-                    setLocalState(() => linkError = 'Invalid share link');
-                    return;
-                  }
-                } else {
-                  // Raw folder ID — name required, provider defaults to Google Drive
-                  if (name.isEmpty) {
-                    setLocalState(() => nameError = 'Name is required for a folder ID');
-                    return;
-                  }
-                  result = Uri(
-                    scheme: 'memoix',
-                    host: 'share',
-                    pathSegments: ['repo'],
-                    queryParameters: {'id': input, 'name': name},
-                  );
-                }
-
-                Navigator.pop(ctx, result);
-              },
-              child: const Text('Join'),
-            ),
-          ],
-        ),
-      ),
+      builder: (_) => const _JoinByLinkDialog(),
     );
-
-    linkController.dispose();
-    nameController.dispose();
 
     if (uri == null || !mounted) return;
 
@@ -611,6 +524,113 @@ class _SharedStorageScreenState
           );
         },
       ),
+    );
+  }
+}
+
+class _JoinByLinkDialog extends StatefulWidget {
+  const _JoinByLinkDialog();
+
+  @override
+  State<_JoinByLinkDialog> createState() => _JoinByLinkDialogState();
+}
+
+class _JoinByLinkDialogState extends State<_JoinByLinkDialog> {
+  final _linkController = TextEditingController();
+  final _nameController = TextEditingController();
+  String? _linkError;
+  String? _nameError;
+
+  @override
+  void dispose() {
+    _linkController.dispose();
+    _nameController.dispose();
+    super.dispose();
+  }
+
+  void _submit() {
+    final input = _linkController.text.trim();
+    final name = _nameController.text.trim();
+
+    if (input.isEmpty) {
+      setState(() => _linkError = 'Enter a share link or folder ID');
+      return;
+    }
+
+    Uri? result;
+
+    if (input.startsWith('memoix://')) {
+      result = Uri.tryParse(input);
+      if (result == null ||
+          result.host != 'share' ||
+          !result.pathSegments.contains('repo') ||
+          (result.queryParameters['id']?.isEmpty ?? true) ||
+          (result.queryParameters['name']?.isEmpty ?? true)) {
+        setState(() => _linkError = 'Invalid share link');
+        return;
+      }
+    } else {
+      // Raw folder ID — name required, provider defaults to Google Drive
+      if (name.isEmpty) {
+        setState(() => _nameError = 'Name is required for a folder ID');
+        return;
+      }
+      result = Uri(
+        scheme: 'memoix',
+        host: 'share',
+        pathSegments: ['repo'],
+        queryParameters: {'id': input, 'name': name},
+      );
+    }
+
+    Navigator.pop(context, result);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Join Repository'),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: _linkController,
+              decoration: InputDecoration(
+                labelText: 'Share link or Folder ID',
+                hintText: 'memoix://share/repo?id=... or folder ID',
+                errorText: _linkError,
+              ),
+              autofocus: true,
+              onChanged: (_) {
+                if (_linkError != null) setState(() => _linkError = null);
+              },
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _nameController,
+              decoration: InputDecoration(
+                labelText: 'Name (required for raw folder ID)',
+                hintText: 'My Recipes',
+                errorText: _nameError,
+              ),
+              onChanged: (_) {
+                if (_nameError != null) setState(() => _nameError = null);
+              },
+            ),
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Cancel'),
+        ),
+        FilledButton(
+          onPressed: _submit,
+          child: const Text('Join'),
+        ),
+      ],
     );
   }
 }
