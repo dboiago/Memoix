@@ -236,6 +236,9 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
         scopes: _scopes,
       ),
     );
+    if (result == null) {
+      throw Exception('OneDrive sign-in failed: no response from flutter_appauth');
+    }
     _accessToken = result.accessToken;
     _refreshToken = result.refreshToken;
     _tokenExpiry = result.accessTokenExpirationDateTime;
