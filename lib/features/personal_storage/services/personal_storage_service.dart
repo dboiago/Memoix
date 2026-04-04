@@ -614,7 +614,7 @@ class PersonalStorageService {
     final prefs = await SharedPreferences.getInstance();
     final value = prefs.getString(_PrefKeys.lastSyncTime);
     if (value == null) return null;
-    return DateTime.tryParse(value);
+    return DateTime.tryParse(value)?.toUtc();
   }
 
   /// Store last sync timestamp
