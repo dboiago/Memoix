@@ -4,6 +4,7 @@ import 'dart:io';
 import 'dart:math' as math;
 import 'dart:typed_data';
 
+import 'package:drift/drift.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -696,7 +697,7 @@ class PersonalStorageService {
       timestamps[uuid] = DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
     }
 
-    int _count(List<TypedResult> rows) => rows.first.rawData.data['c'] as int;
+    int _count(List<QueryRow> rows) => rows.first.data['c'] as int;
 
     final pizzaCount    = _count(await db.customSelect('SELECT COUNT(*) AS c FROM pizzas').get());
     final cellarCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cellar_entries').get());
