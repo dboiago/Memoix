@@ -290,12 +290,14 @@ class PersonalStorageService {
     // Always mark pending changes - even if not yet initialized
     // This ensures we don't lose changes that happen during app startup
     _hasPendingChanges = true;
-    
     // If not initialized yet, the pending flag will trigger push after init
     if (!_isInitialized || !isConnected) return;
+
+    debugPrint('PSS: onRecipeChanged reached debounce check, isConnected=$isConnected, isInitialized=$_isInitialized'); //debug, remove after
     
     // Check sync mode asynchronously
     isAutomaticMode.then((isAuto) {
+      debugPrint('PSS: isAuto=$isAuto'); //debug, remove after
       if (!isAuto) return;
       
       // Cancel any pending debounce timer
@@ -308,20 +310,6 @@ class PersonalStorageService {
     });
   }
 
-void onRecipeChanged() {
-  _hasPendingChanges = true;
-  if (!_isInitialized || !isConnected) return;
-  debugPrint('PSS: onRecipeChanged reached debounce check, isConnected=$isConnected, isInitialized=$_isInitialized');
-  isAutomaticMode.then((isAuto) {
-    debugPrint('PSS: isAuto=$isAuto');
-    if (!isAuto) return;
-    _pushDebouncer?.cancel();
-    _pushDebouncer = Timer(_pushDebounceDelay, () {
-      push(silent: true);
-    });
-  });
-}
-/* temporary to debug
   /// Called when app goes to background
   /// Flushes any pending changes immediately.
   Future<void> onAppBackgrounded() async {
@@ -336,7 +324,6 @@ void onRecipeChanged() {
       await push(silent: true);
     }
   }
-  */
 
   // ============ PUSH OPERATION ============
 
