@@ -49,5 +49,5 @@ class AppConfig {
   /// To override, add to .env file:
   /// ONEDRIVE_REDIRECT_URI=your-custom-uri
   static String get oneDriveRedirectUri =>
-      dotenv.maybeGet('ONEDRIVE_REDIRECT_URI') ?? 'memoix://oauth/callback';
+      dotenv.maybeGet('ONEDRIVE_REDIRECT_URI') ?? 'io.github.dboiago.memoix://oauth/callback';
 }
