@@ -292,7 +292,9 @@ class PersonalStorageService {
     _hasPendingChanges = true;
     
     // If not initialized yet, the pending flag will trigger push after init
-    if (!_isInitialized || !isConnected || _pullFailed) return;
+    if (!_isInitialized || !isConnected) return;
+    // Temporary block, auto-clears after 60s
+    if (_pullFailed) return;
     
     // Check sync mode asynchronously
     isAutomaticMode.then((isAuto) {
@@ -595,6 +597,10 @@ class PersonalStorageService {
       return const PullResult();
     } catch (e) {
       _pullFailed = true;
+      // Auto-clear after 60 seconds so sync can resume
+      Future.delayed(const Duration(seconds: 60), () {
+        _pullFailed = false;
+      });
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
       MemoixSnackBar.showPersistentWithCopy('Pull failed: $e');
       debugPrint('PersonalStorageService.pull error: $e');
