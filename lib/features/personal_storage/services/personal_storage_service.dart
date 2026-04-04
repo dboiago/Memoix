@@ -358,6 +358,7 @@ class PersonalStorageService {
 
       // Locate database file using platform-correct path
       final dbFile = await _getDatabaseFile();
+      if (!await dbFile.exists()) return;
 
       // One-time log: first push supersedes legacy memoix_recipes.json format
       final prefs = await SharedPreferences.getInstance();
