@@ -23,7 +23,7 @@ class DeepLinkService {
     // Handle initial link if app was opened via deep link
     try {
       final initialUri = await _appLinks.getInitialAppLink();
-      if (initialUri != null) {
+      if (initialUri != null && initialUri.scheme == 'memoix') {
         await _handleDeepLink(context, initialUri);
       }
     } catch (e) {
@@ -32,7 +32,9 @@ class DeepLinkService {
 
     // Listen for subsequent deep links
     _subscription = _appLinks.uriLinkStream.listen((uri) {
-      _handleDeepLink(context, uri);
+      if (uri.scheme == 'memoix') {
+        _handleDeepLink(context, uri);
+      }
     });
   }
 
