@@ -643,7 +643,6 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
           final parts = <String>[];
           if (result.added > 0) parts.add('${result.added} new');
           if (result.updated > 0) parts.add('${result.updated} updated');
-          MemoixSnackBar.show('Synced: ${parts.join(', ')}');
         }
         // No message if no changes
       }
@@ -718,7 +717,6 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (result.added > 0) parts.add('${result.added} added');
     if (result.updated > 0) parts.add('${result.updated} updated');
     if (result.deleted > 0) parts.add('${result.deleted} removed');
-    MemoixSnackBar.show(parts.isEmpty ? 'Synced' : 'Synced: ${parts.join(', ')}');
     _showPullSummaryDialog(result);
   }
 
@@ -778,6 +776,13 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
                   isHighlight: true,
                 ),
               if (result.updated > 0)
+                _buildSummaryRow(
+                  theme,
+                  icon: Icons.check_circle_outline,
+                  text: '${result.updated} recipe${result.updated == 1 ? '' : 's'} updated',
+                  isHighlight: true,
+                ),
+              if (result.deleted > 0)
                 _buildSummaryRow(
                   theme,
                   icon: Icons.check_circle_outline,
