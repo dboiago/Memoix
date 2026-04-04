@@ -276,7 +276,16 @@ class _SharedStorageScreenState
           await storage.initialize();
           
           if (!storage.isConnected) {
-            throw StateError('Google Drive connection could not be restored. Please reconnect.');
+            // No saved session — trigger interactive sign-in
+            final connected = await storage.connect().timeout(
+              const Duration(seconds: 60),
+              onTimeout: () {
+                throw TimeoutException('Connection timed out. Please try again.');
+              },
+            );
+            if (!connected) {
+              throw Exception('Sign-in cancelled or failed');
+            }
           }
           
           await storage.switchRepository(repository.folderId, repository.name);

@@ -102,18 +102,16 @@ class SharedStorageManager extends ChangeNotifier {
           final googleDriveStorage = GoogleDriveStorage();
           await googleDriveStorage.initialize();
 
-          if (!googleDriveStorage.isConnected) {
-            throw Exception(
-              'Google Drive not connected. Please sign in via Personal Storage first.',
+          if (googleDriveStorage.isConnected) {
+            await googleDriveStorage.switchRepository(
+              activeRepo.folderId,
+              activeRepo.name,
             );
+            debugPrint('SharedStorageManager: Google Drive repository initialized and ready');
+          } else {
+            // Not connected — the UI layer (screen) will handle connect() and switchRepository
+            debugPrint('SharedStorageManager: Google Drive not connected, deferring sign-in to UI layer');
           }
-
-          await googleDriveStorage.switchRepository(
-            activeRepo.folderId,
-            activeRepo.name,
-          );
-
-          debugPrint('SharedStorageManager: Google Drive repository initialized and ready');
           break;
           
         case StorageProvider.oneDrive:
@@ -137,11 +135,8 @@ class SharedStorageManager extends ChangeNotifier {
             
             debugPrint('SharedStorageManager: OneDrive repository initialized and ready');
           } else {
-            _isSwitching = false;
-            _currentRepository = previousActiveRepo; // Restore
-            notifyListeners();
-            debugPrint('SharedStorageManager: OneDrive sign-in was cancelled');
-            throw Exception('OneDrive sign-in was cancelled. Please try again.');
+            // Not connected after silent auth attempt — UI layer will handle interactive sign-in
+            debugPrint('SharedStorageManager: OneDrive not connected after init, deferring sign-in to UI layer');
           }
           break;
       }

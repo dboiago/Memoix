@@ -104,12 +104,17 @@ class DeepLinkService {
     // Attempt to verify access
     bool? hasAccess;
     bool isOffline = false;
+    bool isAuthFailure = false;
 
     try {
       switch (storageProvider) {
         case StorageProvider.googleDrive:
           final storage = _ref.read(googleDriveStorageProvider);
-          hasAccess = await storage.verifyFolderAccess(folderId);
+          if (!storage.isConnected) {
+            isAuthFailure = true;
+          } else {
+            hasAccess = await storage.verifyFolderAccess(folderId);
+          }
           break;
         case StorageProvider.oneDrive:
           final storage = OneDriveStorage();
@@ -117,13 +122,23 @@ class DeepLinkService {
           if (storage.isConnected) {
             hasAccess = await storage.verifyFolderAccess(folderId);
           } else {
-            isOffline = true;
+            isAuthFailure = true;
           }
           break;
       }
     } catch (e) {
-      debugPrint('Repository verification error (likely offline): $e');
-      isOffline = true;
+      debugPrint('Repository verification error: $e');
+      final msg = e.toString().toLowerCase();
+      if (msg.contains('auth') ||
+          msg.contains('401') ||
+          msg.contains('403') ||
+          msg.contains('unauthorized') ||
+          msg.contains('unauthenticated') ||
+          msg.contains('sign in')) {
+        isAuthFailure = true;
+      } else {
+        isOffline = true;
+      }
     }
 
     if (!context.mounted) return;
@@ -189,9 +204,9 @@ class DeepLinkService {
       return;
     }
 
-    // Scenario C: Offline - add provisionally
-    if (isOffline) {
-      final repo = await manager.addRepository(
+    // Scenario C: Offline or unauthenticated — add provisionally
+    if (isOffline || isAuthFailure) {
+      await manager.addRepository(
         name: repositoryName,
         folderId: folderId,
         isPendingVerification: true,
@@ -199,14 +214,15 @@ class DeepLinkService {
       );
 
       if (context.mounted) {
+        final message = isAuthFailure
+            ? 'Sign in required — tap the repository to connect and sync'
+            : '"$repositoryName" has been added but could not be verified.\n\n'
+              'Access will be checked when you\'re online.';
         showDialog(
           context: context,
           builder: (ctx) => AlertDialog(
-            title: const Text('Repository Saved'),
-            content: Text(
-              '"$repositoryName" has been added but could not be verified.\n\n'
-              'Access will be checked when you\'re online.',
-            ),
+            title: const Text('Repository Added'),
+            content: Text(message),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(ctx),
