@@ -45,6 +45,9 @@ class DeepLinkService {
   Future<void> _handleDeepLink(BuildContext context, Uri uri) async {
     debugPrint('Received deep link: $uri');
 
+    // Let flutter_appauth handle OAuth callbacks
+    if (uri.host == 'oauth') return;
+
     if (uri.scheme != 'memoix') return;
 
     // Handle repository sharing links: memoix://share/repo?id=XXX&name=YYY
