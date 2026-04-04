@@ -1,10 +1,8 @@
-import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:app_links/app_links.dart';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_appauth/flutter_appauth.dart';
@@ -225,113 +223,22 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     }
   }
 
-  /// Mobile OAuth flow using a manual PKCE authorization request and
-  /// [AppLinks] to capture the redirect callback via the app's deep link
-  /// intent filter (e.g. memoix://oauth/callback).
-  ///
-  /// [AppConfig.oneDriveRedirectUri] must be registered in Azure App
-  /// Registration and as an intent filter in AndroidManifest.xml / iOS
-  /// Info.plist.
   Future<void> _signInMobile() async {
-    final redirectUri = AppConfig.oneDriveRedirectUri;
-    final redirectBase = Uri.parse(redirectUri);
-
-    // Generate PKCE code verifier and challenge
-    final codeVerifier = _generateCodeVerifier();
-    final codeChallenge = _generateCodeChallenge(codeVerifier);
-
-    // Construct authorization URL
-    final authUrl = Uri.parse(_authorizationEndpoint).replace(
-      queryParameters: {
-        'client_id': AppConfig.oneDriveClientId,
-        'response_type': 'code',
-        'redirect_uri': redirectUri,
-        'scope': _scopes.join(' '),
-        'code_challenge': codeChallenge,
-        'code_challenge_method': 'S256',
-      },
+    const appAuth = FlutterAppAuth();
+    final result = await appAuth.authorizeAndExchangeCode(
+      AuthorizationTokenRequest(
+        AppConfig.oneDriveClientId,
+        AppConfig.oneDriveRedirectUri,
+        serviceConfiguration: const AuthorizationServiceConfiguration(
+          authorizationEndpoint: _authorizationEndpoint,
+          tokenEndpoint: _tokenEndpoint,
+        ),
+        scopes: _scopes,
+      ),
     );
-
-    // Launch browser — the OS intent filter routes the redirect back to the app
-    if (!await launchUrl(authUrl, mode: LaunchMode.externalApplication)) {
-      throw Exception('Could not launch browser for authentication');
-    }
-
-    // Wait for the deep link callback via app_links
-    final completer = Completer<Uri>();
-    final appLinks = AppLinks();
-    StreamSubscription<Uri>? subscription;
-
-    subscription = appLinks.uriLinkStream.listen(
-      (uri) {
-        if (uri.scheme == redirectBase.scheme &&
-            uri.host == redirectBase.host &&
-            !completer.isCompleted) {
-          completer.complete(uri);
-          subscription?.cancel();
-        }
-      },
-      onError: (Object e) {
-        if (!completer.isCompleted) completer.completeError(e);
-        subscription?.cancel();
-      },
-    );
-
-    late final Uri callbackUri;
-    try {
-      callbackUri = await completer.future.timeout(
-        const Duration(minutes: 5),
-        onTimeout: () {
-          subscription?.cancel();
-          throw Exception('OneDrive sign-in timed out after 5 minutes');
-        },
-      );
-    } catch (_) {
-      subscription?.cancel();
-      rethrow;
-    }
-
-    final code = callbackUri.queryParameters['code'];
-    if (code == null) {
-      final error = callbackUri.queryParameters['error'];
-      throw Exception(
-        'OAuth callback did not contain an authorization code'
-        '${error != null ? ': $error' : ''}',
-      );
-    }
-
-    debugPrint('OneDriveStorage: Authorization code received via deep link');
-
-    // Exchange code for tokens — redirect_uri must exactly match the auth request
-    final tokenResponse = await http.post(
-      Uri.parse(_tokenEndpoint),
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-      body: {
-        'client_id': AppConfig.oneDriveClientId,
-        'grant_type': 'authorization_code',
-        'code': code,
-        'redirect_uri': redirectUri,
-        'code_verifier': codeVerifier,
-      },
-    );
-
-    if (tokenResponse.statusCode != 200) {
-      throw Exception(
-        'Token exchange failed: ${tokenResponse.statusCode} ${tokenResponse.body}',
-      );
-    }
-
-    final tokenData = jsonDecode(tokenResponse.body) as Map<String, dynamic>;
-
-    // Store tokens securely
-    _accessToken = tokenData['access_token'] as String?;
-    _refreshToken = tokenData['refresh_token'] as String?;
-
-    final expiresIn = tokenData['expires_in'] as int?;
-    if (expiresIn != null) {
-      _tokenExpiry = DateTime.now().add(Duration(seconds: expiresIn));
-    }
-
+    _accessToken = result.accessToken;
+    _refreshToken = result.refreshToken;
+    _tokenExpiry = result.accessTokenExpirationDateTime;
     await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
     if (_refreshToken != null) {
       await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
