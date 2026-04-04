@@ -696,7 +696,7 @@ class PersonalStorageService {
       timestamps[uuid] = DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
     }
 
-    int _count(List<QueryRow> rows) => rows.first.data['c'] as int;
+    int _count(List<TypedResult> rows) => rows.first.rawData.data['c'] as int;
 
     final pizzaCount    = _count(await db.customSelect('SELECT COUNT(*) AS c FROM pizzas').get());
     final cellarCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cellar_entries').get());
