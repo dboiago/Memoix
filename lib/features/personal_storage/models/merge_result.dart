@@ -11,6 +11,9 @@ class MergeResult {
   /// Number of items unchanged (local was same or newer)
   final int unchanged;
 
+  /// Number of items deleted (remote was deleted)
+  final int deleted;
+
   /// Optional error message if merge failed
   final String? error;
 
@@ -52,6 +55,7 @@ class MergeResult {
     return MergeResult(
       added: added + other.added,
       updated: updated + other.updated,
+      deleted: deleted + other.deleted,
       unchanged: unchanged + other.unchanged,
     );
   }
@@ -87,6 +91,7 @@ class PullResult extends MergeResult {
   const PullResult({
     super.added = 0,
     super.updated = 0,
+    super.deleted = 0,
     super.unchanged = 0,
     super.error,
     this.wasSkipped = false,
@@ -108,6 +113,7 @@ class PullResult extends MergeResult {
     return PullResult(
       added: merge.added,
       updated: merge.updated,
+      deleted: merge.deleted,
       unchanged: merge.unchanged,
       error: merge.error,
       remoteCount: remoteCount,
