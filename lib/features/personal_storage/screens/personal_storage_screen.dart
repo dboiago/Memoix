@@ -786,7 +786,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
                 _buildSummaryRow(
                   theme,
                   icon: Icons.check_circle_outline,
-                  text: '${result.updated} recipe${result.updated == 1 ? '' : 's'} updated',
+                  text: '${result.deleted} recipe${result.deleted == 1 ? '' : 's'} updated',
                   isHighlight: true,
                 ),
               if (result.unchanged > 0)
