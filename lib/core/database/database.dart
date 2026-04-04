@@ -1,3 +1,7 @@
+import 'dart:io';
+import 'package:drift/native.dart';
+import 'package:path/path.dart' as path;
+import 'package:path_provider/path_provider.dart';
 import 'package:drift/drift.dart';
 import 'package:drift_flutter/drift_flutter.dart';
 
@@ -25,7 +29,7 @@ class MemoixDatabase {
     AppDatabase.initialize(NativeDatabase(dbFile));
     await _seedDefaultCourses();
   }
-  
+
   /// Seed default courses only when the courses table is empty.
   static Future<void> _seedDefaultCourses() async {
     final existing = await AppDatabase.instance.recipeDao.getAllCourses();
