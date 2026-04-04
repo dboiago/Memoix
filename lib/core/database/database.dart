@@ -1,7 +1,3 @@
-import 'dart:io';
-import 'package:drift/native.dart';
-import 'package:path/path.dart' as path;
-import 'package:path_provider/path_provider.dart';
 import 'package:drift/drift.dart';
 import 'package:drift_flutter/drift_flutter.dart';
 
@@ -19,14 +15,7 @@ class MemoixDatabase {
 
   /// Initialize the Drift database and seed default courses.
   static Future<void> initialize() async {
-    final dir = Platform.isWindows || Platform.isLinux || Platform.isMacOS
-        ? await getApplicationSupportDirectory()
-        : await getApplicationDocumentsDirectory();
-    
-    final dbFile = File(path.join(dir.path, 'memoix.db'));
-    await dbFile.parent.create(recursive: true); // ensure directory exists
-    
-    AppDatabase.initialize(NativeDatabase(dbFile));
+    AppDatabase.initialize(driftDatabase(name: 'memoix'));
     await _seedDefaultCourses();
   }
 
