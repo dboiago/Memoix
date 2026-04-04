@@ -502,7 +502,7 @@ class PersonalStorageService {
       await AppDatabase.instance.close();
 
       // Replace local DB with downloaded file
-      await tempFile.copy(dbFile.path);
+      await dbFile.writeAsBytes(await tempFile.readAsBytes());
       await tempFile.delete();
 
       // Delete stale WAL/SHM sidecar files if present
@@ -782,7 +782,7 @@ class PersonalStorageService {
     for (final uuid in local.recipeTimestamps.keys) {
       if (!remote.recipeTimestamps.containsKey(uuid)) deleted++;
     }
-
+  
     return _SyncDiff(
       recipesAdded: added,
       recipesUpdated: updated,
