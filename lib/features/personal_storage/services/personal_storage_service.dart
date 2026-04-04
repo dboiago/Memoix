@@ -308,6 +308,20 @@ class PersonalStorageService {
     });
   }
 
+void onRecipeChanged() {
+  _hasPendingChanges = true;
+  if (!_isInitialized || !isConnected) return;
+  debugPrint('PSS: onRecipeChanged reached debounce check, isConnected=$isConnected, isInitialized=$_isInitialized');
+  isAutomaticMode.then((isAuto) {
+    debugPrint('PSS: isAuto=$isAuto');
+    if (!isAuto) return;
+    _pushDebouncer?.cancel();
+    _pushDebouncer = Timer(_pushDebounceDelay, () {
+      push(silent: true);
+    });
+  });
+}
+/* temporary to debug
   /// Called when app goes to background
   /// Flushes any pending changes immediately.
   Future<void> onAppBackgrounded() async {
@@ -322,6 +336,7 @@ class PersonalStorageService {
       await push(silent: true);
     }
   }
+  */
 
   // ============ PUSH OPERATION ============
 
