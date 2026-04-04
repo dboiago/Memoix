@@ -292,12 +292,9 @@ class PersonalStorageService {
     _hasPendingChanges = true;
     // If not initialized yet, the pending flag will trigger push after init
     if (!_isInitialized || !isConnected) return;
-
-    debugPrint('PSS: onRecipeChanged reached debounce check, isConnected=$isConnected, isInitialized=$_isInitialized'); //debug, remove after
     
     // Check sync mode asynchronously
     isAutomaticMode.then((isAuto) {
-      debugPrint('PSS: isAuto=$isAuto'); //debug, remove after
       if (!isAuto) return;
       
       // Cancel any pending debounce timer
