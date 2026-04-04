@@ -371,6 +371,13 @@ class PersonalStorageService {
 
       final bytes = await dbFile.readAsBytes();
 
+      // Capture ONE timestamp before the retry block so that meta.lastModified
+      // and the locally-stored lastSync value are identical. If syncTime were
+      // captured after _withRetry completes it would always be slightly later
+      // than meta.lastModified, causing isNewerThan() to return false on the
+      // next pull and reporting "already up to date" incorrectly.
+      final syncTime = DateTime.now().toUtc();
+
       // Push to remote with retry logic
       await _withRetry(
         () async {
@@ -380,6 +387,7 @@ class PersonalStorageService {
           final meta = StorageMeta.create(
             deviceName: await _getDeviceName(),
             domains: const DomainCounts(),
+            lastModified: syncTime,
           );
           await _provider!.updateMeta(meta);
         },
@@ -387,7 +395,6 @@ class PersonalStorageService {
       );
 
       // Update last sync time in preferences
-      final syncTime = DateTime.now();
       await _setLastSyncTime(syncTime);
       _hasPendingChanges = false;
       _pullFailed = false; // successful push clears the pull-failure guard

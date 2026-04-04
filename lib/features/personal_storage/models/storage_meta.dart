@@ -76,12 +76,13 @@ class StorageMeta {
     required DomainCounts domains,
     String? checksum,
     String bundleFormat = 'single-file',
+    DateTime? lastModified,
   }) {
     return StorageMeta(
       version: 1,
       schemaVersion: 3,
       bundleFormat: bundleFormat,
-      lastModified: DateTime.now().toUtc(),
+      lastModified: lastModified ?? DateTime.now().toUtc(),
       lastModifiedBy: deviceName,
       recipeCount: domains.total,
       checksum: checksum,
