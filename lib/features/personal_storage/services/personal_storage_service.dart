@@ -34,6 +34,7 @@ import '../providers/personal_storage_provider.dart';
 import 'shared_storage_manager.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
+import 'package:drift/native.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
@@ -454,24 +455,6 @@ class PersonalStorageService {
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.pulling;
 
     try {
-      // Smart pull: check meta first if provider supports it
-      if (_provider!.supportsFastMetaCheck) {
-        final remoteMeta = await _withRetry(
-          () => _provider!.getMeta(),
-          operationName: 'getMeta',
-        );
-        if (remoteMeta != null) {
-          final lastSync = await _getLastSyncTime();
-          if (lastSync != null && !remoteMeta.isNewerThan(lastSync)) {
-            _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
-            if (!silent) {
-              MemoixSnackBar.show('Already up to date');
-            }
-            return PullResult.skipped();
-          }
-        }
-      }
-
       // Download raw database bytes
       final bytes = await _withRetry(
         () => _provider!.pullDatabaseBytes(),
@@ -492,6 +475,27 @@ class PersonalStorageService {
 
       // Write downloaded bytes to a temp file first
       await tempFile.writeAsBytes(bytes, flush: true);
+
+      // Diff-based up-to-date check: compare local vs remote snapshots before
+      // touching the main DB. If identical, delete the temp file and bail out.
+      _SyncDiff? diff;
+      try {
+        final localSnapshot = await _snapshotLocal();
+        final remoteSnapshot = await _snapshotTemp(tempFile);
+        diff = _diffSnapshots(localSnapshot, remoteSnapshot);
+
+        if (diff.isEmpty) {
+          await tempFile.delete();
+          _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
+          if (!silent) MemoixSnackBar.show('Already up to date');
+          return PullResult.skipped();
+        }
+      } catch (e) {
+        // Snapshot failed (e.g. schema mismatch on temp DB) — proceed with
+        // the full replace and show a generic success message.
+        debugPrint('PersonalStorageService: diff snapshot error (will proceed): $e');
+        diff = null;
+      }
 
       // Close the Drift connection before swapping the file
       await AppDatabase.instance.close();
@@ -595,7 +599,7 @@ class PersonalStorageService {
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
       if (!silent) {
-        MemoixSnackBar.showSuccess('Database synced');
+        MemoixSnackBar.showSuccess(diff?.toSummary() ?? 'Database synced');
       }
 
       return const PullResult();
@@ -659,6 +663,162 @@ class PersonalStorageService {
       }
     } catch (_) {}
     return 'Unknown Device';
+  }
+
+  // ============ DIFF HELPERS ============
+
+  /// Lightweight snapshot of the live local database.
+  Future<_DbSnapshot> _snapshotLocal() async {
+    final db = AppDatabase.instance;
+    return _querySnapshot(db);
+  }
+
+  /// Open the downloaded temp DB read-only, snapshot it, then close immediately.
+  Future<_DbSnapshot> _snapshotTemp(File tempFile) async {
+    final tempDb = AppDatabase(NativeDatabase(tempFile, logStatements: false));
+    try {
+      return await _querySnapshot(tempDb);
+    } finally {
+      await tempDb.close();
+    }
+  }
+
+  /// Run the snapshot queries against any [AppDatabase] instance.
+  /// Drift stores [DateTime] as integer milliseconds since epoch.
+  Future<_DbSnapshot> _querySnapshot(AppDatabase db) async {
+    final recipeRows = await db
+        .customSelect('SELECT uuid, updated_at FROM recipes')
+        .get();
+    final timestamps = <String, DateTime>{};
+    for (final row in recipeRows) {
+      final uuid = row.data['uuid'] as String;
+      final ms = row.data['updated_at'] as int;
+      timestamps[uuid] = DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
+    }
+
+    int _count(List<QueryRow> rows) => rows.first.data['c'] as int;
+
+    final pizzaCount    = _count(await db.customSelect('SELECT COUNT(*) AS c FROM pizzas').get());
+    final cellarCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cellar_entries').get());
+    final cheeseCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cheese_entries').get());
+    final sandwichCount = _count(await db.customSelect('SELECT COUNT(*) AS c FROM sandwiches').get());
+    final smokingCount  = _count(await db.customSelect('SELECT COUNT(*) AS c FROM smoking_recipes').get());
+
+    return _DbSnapshot(
+      recipeTimestamps: timestamps,
+      pizzaCount: pizzaCount,
+      cellarCount: cellarCount,
+      cheeseCount: cheeseCount,
+      sandwichCount: sandwichCount,
+      smokingCount: smokingCount,
+    );
+  }
+
+  /// Compute the diff between a local and remote [_DbSnapshot].
+  _SyncDiff _diffSnapshots(_DbSnapshot local, _DbSnapshot remote) {
+    int added = 0, updated = 0, deleted = 0;
+
+    for (final entry in remote.recipeTimestamps.entries) {
+      final localTime = local.recipeTimestamps[entry.key];
+      if (localTime == null) {
+        added++;
+      } else if (entry.value.isAfter(localTime)) {
+        updated++;
+      }
+    }
+    for (final uuid in local.recipeTimestamps.keys) {
+      if (!remote.recipeTimestamps.containsKey(uuid)) deleted++;
+    }
+
+    return _SyncDiff(
+      recipesAdded: added,
+      recipesUpdated: updated,
+      recipesDeleted: deleted,
+      pizzaDelta: remote.pizzaCount - local.pizzaCount,
+      cellarDelta: remote.cellarCount - local.cellarCount,
+      cheeseDelta: remote.cheeseCount - local.cheeseCount,
+      sandwichDelta: remote.sandwichCount - local.sandwichCount,
+      smokingDelta: remote.smokingCount - local.smokingCount,
+    );
+  }
+}
+
+// ============ SNAPSHOT / DIFF TYPES ============
+
+/// Lightweight snapshot of a database for sync diff comparison.
+class _DbSnapshot {
+  final Map<String, DateTime> recipeTimestamps;
+  final int pizzaCount;
+  final int cellarCount;
+  final int cheeseCount;
+  final int sandwichCount;
+  final int smokingCount;
+
+  const _DbSnapshot({
+    required this.recipeTimestamps,
+    required this.pizzaCount,
+    required this.cellarCount,
+    required this.cheeseCount,
+    required this.sandwichCount,
+    required this.smokingCount,
+  });
+}
+
+/// Computed difference between a local and a remote [_DbSnapshot].
+class _SyncDiff {
+  final int recipesAdded;
+  final int recipesUpdated;
+  final int recipesDeleted;
+  final int pizzaDelta;
+  final int cellarDelta;
+  final int cheeseDelta;
+  final int sandwichDelta;
+  final int smokingDelta;
+
+  const _SyncDiff({
+    required this.recipesAdded,
+    required this.recipesUpdated,
+    required this.recipesDeleted,
+    required this.pizzaDelta,
+    required this.cellarDelta,
+    required this.cheeseDelta,
+    required this.sandwichDelta,
+    required this.smokingDelta,
+  });
+
+  bool get isEmpty =>
+      recipesAdded == 0 &&
+      recipesUpdated == 0 &&
+      recipesDeleted == 0 &&
+      pizzaDelta == 0 &&
+      cellarDelta == 0 &&
+      cheeseDelta == 0 &&
+      sandwichDelta == 0 &&
+      smokingDelta == 0;
+
+  String toSummary() {
+    final parts = <String>[];
+
+    // Recipes: detailed breakdown
+    if (recipesAdded > 0 || recipesUpdated > 0 || recipesDeleted > 0) {
+      final rParts = <String>[];
+      if (recipesAdded > 0) rParts.add('$recipesAdded added');
+      if (recipesUpdated > 0) rParts.add('$recipesUpdated updated');
+      if (recipesDeleted > 0) rParts.add('$recipesDeleted removed');
+      parts.add('recipes: ${rParts.join(', ')}');
+    }
+
+    // Other domains: count delta only
+    void _addDelta(String label, int delta) {
+      if (delta != 0) parts.add('${delta > 0 ? '+$delta' : '$delta'} $label');
+    }
+    _addDelta('pizzas', pizzaDelta);
+    _addDelta('cellar', cellarDelta);
+    _addDelta('cheese', cheeseDelta);
+    _addDelta('sandwiches', sandwichDelta);
+    _addDelta('smoking', smokingDelta);
+
+    return parts.isEmpty ? 'Database synced' : 'Synced: ${parts.join(' · ')}';
   }
 }
 
