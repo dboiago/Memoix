@@ -46,9 +46,9 @@ class UtilityDao extends DatabaseAccessor<AppDatabase>
 
   Future<int> deleteDraftById(int id) =>
       (delete(recipeDrafts)..where((t) => t.id.equals(id))).go();
-}
 
-Future<String> getDatabasePath() async {
-  final result = await customSelect('PRAGMA database_list').getSingle();
-  return result.data['file'] as String;
+    Future<String> getDatabasePath() async {
+    final result = await customSelect('PRAGMA database_list').getSingle();
+    return result.data['file'] as String;
+    }
 }
