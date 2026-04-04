@@ -15,6 +15,9 @@ import '../services/shared_storage_manager.dart';
 import '../services/storage_provider_manager.dart';
 import 'personal_storage_screen.dart';
 import 'share_storage_screen.dart';
+import '../../../core/services/deep_link_service.dart';
+
+enum _RepositoryAction { googleDrive, oneDrive, joinByLink }
 
 class SharedStorageScreen extends ConsumerStatefulWidget {
   const SharedStorageScreen({super.key});
@@ -42,9 +45,19 @@ class _SharedStorageScreenState
   }
 
   Future<void> _createNewRepository() async {
-    // Step 1: Select provider
-    final provider = await _showProviderSelectionDialog();
-    if (provider == null || !mounted) return;
+    // Step 1: Select action
+    final action = await _showProviderSelectionDialog();
+    if (action == null || !mounted) return;
+
+    // Handle join by link separately
+    if (action == _RepositoryAction.joinByLink) {
+      await _showJoinByLinkDialog();
+      return;
+    }
+
+    final provider = action == _RepositoryAction.googleDrive
+        ? StorageProvider.googleDrive
+        : StorageProvider.oneDrive;
 
     // Step 2: Get storage location name
     final nameController = TextEditingController();
@@ -175,14 +188,14 @@ class _SharedStorageScreenState
     }
   }
 
-  /// Show provider selection dialog
-  Future<StorageProvider?> _showProviderSelectionDialog() async {
+  /// Show options dialog for adding a repository
+  Future<_RepositoryAction?> _showProviderSelectionDialog() async {
     final theme = Theme.of(context);
-    
-    return showDialog<StorageProvider>(
+
+    return showDialog<_RepositoryAction>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Choose Storage Provider'),
+        title: const Text('Add Repository'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -194,7 +207,7 @@ class _SharedStorageScreenState
               ),
               title: const Text('Google Drive'),
               subtitle: const Text('Store in your personal Drive folder'),
-              onTap: () => Navigator.pop(ctx, StorageProvider.googleDrive),
+              onTap: () => Navigator.pop(ctx, _RepositoryAction.googleDrive),
             ),
             const SizedBox(height: 8),
             // OneDrive option
@@ -205,7 +218,18 @@ class _SharedStorageScreenState
               ),
               title: const Text('Microsoft OneDrive'),
               subtitle: const Text('Store in your OneDrive folder'),
-              onTap: () => Navigator.pop(ctx, StorageProvider.oneDrive),
+              onTap: () => Navigator.pop(ctx, _RepositoryAction.oneDrive),
+            ),
+            const SizedBox(height: 8),
+            // Join by link option
+            ListTile(
+              leading: Icon(
+                Icons.link,
+                color: theme.colorScheme.onSurface,
+              ),
+              title: const Text('Join by link'),
+              subtitle: const Text('Join a shared repository using a share link'),
+              onTap: () => Navigator.pop(ctx, _RepositoryAction.joinByLink),
             ),
           ],
         ),
@@ -217,6 +241,106 @@ class _SharedStorageScreenState
         ],
       ),
     );
+  }
+
+  Future<void> _showJoinByLinkDialog() async {
+    final linkController = TextEditingController();
+    final nameController = TextEditingController();
+    String? linkError;
+    String? nameError;
+
+    final uri = await showDialog<Uri>(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setLocalState) => AlertDialog(
+          title: const Text('Join Repository'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: linkController,
+                decoration: InputDecoration(
+                  labelText: 'Share link or Folder ID',
+                  hintText: 'memoix://share/repo?id=... or folder ID',
+                  errorText: linkError,
+                ),
+                autofocus: true,
+                onChanged: (_) {
+                  if (linkError != null) setLocalState(() => linkError = null);
+                },
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: nameController,
+                decoration: InputDecoration(
+                  labelText: 'Name (required for raw folder ID)',
+                  hintText: 'My Recipes',
+                  errorText: nameError,
+                ),
+                onChanged: (_) {
+                  if (nameError != null) setLocalState(() => nameError = null);
+                },
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Cancel'),
+            ),
+            FilledButton(
+              onPressed: () {
+                final input = linkController.text.trim();
+                final name = nameController.text.trim();
+
+                if (input.isEmpty) {
+                  setLocalState(() => linkError = 'Enter a share link or folder ID');
+                  return;
+                }
+
+                Uri? result;
+
+                if (input.startsWith('memoix://')) {
+                  result = Uri.tryParse(input);
+                  if (result == null ||
+                      result.host != 'share' ||
+                      !result.pathSegments.contains('repo') ||
+                      (result.queryParameters['id']?.isEmpty ?? true) ||
+                      (result.queryParameters['name']?.isEmpty ?? true)) {
+                    setLocalState(() => linkError = 'Invalid share link');
+                    return;
+                  }
+                } else {
+                  // Raw folder ID — name required, provider defaults to Google Drive
+                  if (name.isEmpty) {
+                    setLocalState(() => nameError = 'Name is required for a folder ID');
+                    return;
+                  }
+                  result = Uri(
+                    scheme: 'memoix',
+                    host: 'share',
+                    pathSegments: ['repo'],
+                    queryParameters: {'id': input, 'name': name},
+                  );
+                }
+
+                Navigator.pop(ctx, result);
+              },
+              child: const Text('Join'),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    linkController.dispose();
+    nameController.dispose();
+
+    if (uri == null || !mounted) return;
+
+    final service = ref.read(deepLinkServiceProvider);
+    await service.handleRepositoryShare(context, uri);
+    _loadRepositories();
   }
 
   Future<void> _switchRepository(StorageLocation repository) async {

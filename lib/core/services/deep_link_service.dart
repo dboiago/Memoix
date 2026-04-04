@@ -55,7 +55,7 @@ class DeepLinkService {
 
     // Handle repository sharing links: memoix://share/repo?id=XXX&name=YYY
     if (uri.host == 'share' && uri.pathSegments.contains('repo')) {
-      await _handleRepositoryShare(context, uri);
+      await handleRepositoryShare(context, uri);
       return;
     }
 
@@ -67,7 +67,7 @@ class DeepLinkService {
   }
 
   /// Handle repository sharing deep link
-  Future<void> _handleRepositoryShare(BuildContext context, Uri uri) async {
+  Future<void> handleRepositoryShare(BuildContext context, Uri uri) async {
     final folderId = uri.queryParameters['id'];
     final repositoryName = uri.queryParameters['name'];
 
