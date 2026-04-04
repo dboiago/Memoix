@@ -5,6 +5,7 @@ import 'dart:math' as math;
 import 'dart:typed_data';
 
 import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -35,7 +36,6 @@ import '../providers/personal_storage_provider.dart';
 import 'shared_storage_manager.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
-import 'package:drift/native.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
@@ -674,18 +674,61 @@ class PersonalStorageService {
     return _querySnapshot(db);
   }
 
-  /// Open the downloaded temp DB read-only, snapshot it, then close immediately.
+  /// Snapshot the downloaded temp DB using a raw [NativeDatabase] executor.
+  /// Never wraps in [AppDatabase] to avoid Drift's multiple-database warning.
   Future<_DbSnapshot> _snapshotTemp(File tempFile) async {
-    final tempDb = AppDatabase(NativeDatabase(tempFile, logStatements: false));
+    final executor = NativeDatabase(tempFile, logStatements: false);
+    await executor.ensureOpen(_NoOpQueryExecutorUser());
     try {
-      return await _querySnapshot(tempDb);
+      final recipeRows = await executor
+          .runSelect('SELECT uuid, updated_at FROM recipes', []);
+      final timestamps = <String, DateTime>{};
+      for (final row in recipeRows) {
+        final uuid = row['uuid'] as String;
+        final rawMs = row['updated_at'];
+        final int ms;
+        if (rawMs is int) {
+          ms = rawMs;
+        } else {
+          ms = int.tryParse(rawMs?.toString() ?? '') ?? 0;
+        }
+        if (ms > 0) {
+          timestamps[uuid] =
+              DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
+        }
+      }
+
+      int _countFrom(List<Map<String, Object?>> rows) =>
+          (rows.first['c'] as int?) ?? 0;
+
+      final pizzaCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM pizzas', []));
+      final cellarCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM cellar_entries', []));
+      final cheeseCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM cheese_entries', []));
+      final sandwichCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM sandwiches', []));
+      final smokingCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM smoking_recipes', []));
+
+      return _DbSnapshot(
+        recipeTimestamps: timestamps,
+        pizzaCount: pizzaCount,
+        cellarCount: cellarCount,
+        cheeseCount: cheeseCount,
+        sandwichCount: sandwichCount,
+        smokingCount: smokingCount,
+      );
     } finally {
-      await tempDb.close();
+      await executor.close();
     }
   }
 
-  /// Run the snapshot queries against any [AppDatabase] instance.
-  /// Drift stores [DateTime] as integer milliseconds since epoch.
+  /// Run the snapshot queries against the live local [AppDatabase].
+  /// Drift stores [DateTimeColumn] as integer milliseconds since epoch.
+  /// The cast is made defensive in case SQLite returns the value as a String
+  /// (e.g. when the database was written by an older schema).
   Future<_DbSnapshot> _querySnapshot(AppDatabase db) async {
     final recipeRows = await db
         .customSelect('SELECT uuid, updated_at FROM recipes')
@@ -693,11 +736,20 @@ class PersonalStorageService {
     final timestamps = <String, DateTime>{};
     for (final row in recipeRows) {
       final uuid = row.data['uuid'] as String;
-      final ms = row.data['updated_at'] as int;
-      timestamps[uuid] = DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
+      final rawMs = row.data['updated_at'];
+      final int ms;
+      if (rawMs is int) {
+        ms = rawMs;
+      } else {
+        ms = int.tryParse(rawMs?.toString() ?? '') ?? 0;
+      }
+      if (ms > 0) {
+        timestamps[uuid] = DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
+      }
     }
 
-    int _count(List<QueryRow> rows) => rows.first.data['c'] as int;
+    int _count(List<QueryRow> rows) =>
+        (rows.first.data['c'] as int?) ?? 0;
 
     final pizzaCount    = _count(await db.customSelect('SELECT COUNT(*) AS c FROM pizzas').get());
     final cellarCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cellar_entries').get());
@@ -745,6 +797,16 @@ class PersonalStorageService {
 }
 
 // ============ SNAPSHOT / DIFF TYPES ============
+
+/// Minimal [QueryExecutorUser] used to open a [NativeDatabase] for read-only
+/// snapshot queries. No migrations are performed on the temp file.
+class _NoOpQueryExecutorUser extends QueryExecutorUser {
+  @override
+  int get schemaVersion => 1;
+
+  @override
+  Future<void> beforeOpen(QueryExecutor db, OpeningDetails details) async {}
+}
 
 /// Lightweight snapshot of a database for sync diff comparison.
 class _DbSnapshot {
