@@ -638,12 +638,8 @@ class PersonalStorageService {
   /// getApplicationSupportDirectory(); on mobile it uses
   /// getApplicationDocumentsDirectory().
   Future<File> _getDatabaseFile() async {
-    final dir = defaultTargetPlatform == TargetPlatform.windows ||
-                defaultTargetPlatform == TargetPlatform.linux ||
-                defaultTargetPlatform == TargetPlatform.macOS
-        ? await getApplicationSupportDirectory()
-        : await getApplicationDocumentsDirectory();
-    return File(path.join(dir.path, 'memoix.db'));
+    final dbPath = await AppDatabase.instance.getDatabasePath();
+    return File(dbPath);
   }
 
   /// Get device name for meta file
