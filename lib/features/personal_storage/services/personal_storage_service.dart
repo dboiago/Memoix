@@ -603,7 +603,11 @@ class PersonalStorageService {
         MemoixSnackBar.showSuccess(diff?.toSummary() ?? 'Database synced');
       }
 
-      return const PullResult();
+      return PullResult(
+        added: diff?.recipesAdded ?? 0,
+        updated: diff?.recipesUpdated ?? 0,
+        unchanged: 0,
+      );
     } catch (e) {
       _pullFailed = true;
       // Auto-clear after 60 seconds so sync can resume
