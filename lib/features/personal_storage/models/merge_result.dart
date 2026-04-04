@@ -17,6 +17,7 @@ class MergeResult {
   const MergeResult({
     this.added = 0,
     this.updated = 0,
+    this.deleted = 0,
     this.unchanged = 0,
     this.error,
   });
@@ -35,7 +36,7 @@ class MergeResult {
   int get total => added + updated + unchanged;
 
   /// Whether any items were added or updated
-  bool get hasChanges => added > 0 || updated > 0;
+  bool get hasChanges => added > 0 || updated > 0 || deleted > 0;
 
   /// Whether the merge failed
   bool get hasFailed => error != null;

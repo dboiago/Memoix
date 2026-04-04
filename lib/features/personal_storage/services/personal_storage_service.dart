@@ -606,6 +606,7 @@ class PersonalStorageService {
       return PullResult(
         added: diff?.recipesAdded ?? 0,
         updated: diff?.recipesUpdated ?? 0,
+        deleted: diff?.recipesDeleted ?? 0,
         unchanged: 0,
       );
     } catch (e) {

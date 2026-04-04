@@ -717,6 +717,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     final parts = <String>[];
     if (result.added > 0) parts.add('${result.added} added');
     if (result.updated > 0) parts.add('${result.updated} updated');
+    if (result.deleted > 0) parts.add('${result.deleted} removed');
     MemoixSnackBar.show(parts.isEmpty ? 'Synced' : 'Synced: ${parts.join(', ')}');
     _showPullSummaryDialog(result);
   }
