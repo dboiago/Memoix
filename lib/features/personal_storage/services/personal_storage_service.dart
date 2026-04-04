@@ -293,8 +293,6 @@ class PersonalStorageService {
     
     // If not initialized yet, the pending flag will trigger push after init
     if (!_isInitialized || !isConnected) return;
-    // Temporary block, auto-clears after 60s
-    if (_pullFailed) return;
     
     // Check sync mode asynchronously
     isAutomaticMode.then((isAuto) {
