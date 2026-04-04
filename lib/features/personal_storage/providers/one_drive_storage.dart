@@ -224,8 +224,7 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   }
 
   Future<void> _signInMobile() async {
-    const appAuth = FlutterAppAuth();
-    final result = await appAuth.authorizeAndExchangeCode(
+    final result = await _appAuth.authorizeAndExchangeCode(
       AuthorizationTokenRequest(
         AppConfig.oneDriveClientId,
         AppConfig.oneDriveRedirectUri,
@@ -237,7 +236,7 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
       ),
     );
     if (result == null) {
-      throw Exception('OneDrive sign-in failed: no response from flutter_appauth');
+      throw Exception('Sign in was cancelled by user');
     }
     _accessToken = result.accessToken;
     _refreshToken = result.refreshToken;
@@ -246,12 +245,10 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
     if (_refreshToken != null) {
       await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
     }
-    if (_tokenExpiry != null) {
-      await _secureStorage.write(
-        key: _keyTokenExpiry,
-        value: _tokenExpiry!.toIso8601String(),
-      );
-    }
+    await _secureStorage.write(
+      key: _keyTokenExpiry,
+      value: _tokenExpiry?.toIso8601String(),
+    );
   }
 
   /// Desktop OAuth flow using loopback IP redirect
