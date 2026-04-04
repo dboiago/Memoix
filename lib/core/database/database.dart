@@ -15,10 +15,17 @@ class MemoixDatabase {
 
   /// Initialize the Drift database and seed default courses.
   static Future<void> initialize() async {
-    AppDatabase.initialize(driftDatabase(name: 'memoix'));
+    final dir = Platform.isWindows || Platform.isLinux || Platform.isMacOS
+        ? await getApplicationSupportDirectory()
+        : await getApplicationDocumentsDirectory();
+    
+    final dbFile = File(path.join(dir.path, 'memoix.db'));
+    await dbFile.parent.create(recursive: true); // ensure directory exists
+    
+    AppDatabase.initialize(NativeDatabase(dbFile));
     await _seedDefaultCourses();
   }
-
+  
   /// Seed default courses only when the courses table is empty.
   static Future<void> _seedDefaultCourses() async {
     final existing = await AppDatabase.instance.recipeDao.getAllCourses();
