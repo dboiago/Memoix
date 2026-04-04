@@ -7,6 +7,7 @@ import '../../features/sharing/services/share_service.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/personal_storage/services/shared_storage_manager.dart';
 import '../../features/personal_storage/providers/google_drive_storage.dart';
+import '../../features/personal_storage/providers/one_drive_storage.dart';
 import '../../features/personal_storage/models/storage_location.dart';
 import '../widgets/memoix_snackbar.dart';
 
@@ -91,13 +92,35 @@ class DeepLinkService {
       return;
     }
 
+    // Parse provider from URI — default to googleDrive for backwards compatibility
+    final providerStr = uri.queryParameters['provider'];
+    final storageProvider = providerStr != null
+        ? StorageProvider.values.firstWhere(
+            (e) => e.name == providerStr,
+            orElse: () => StorageProvider.googleDrive,
+          )
+        : StorageProvider.googleDrive;
+
     // Attempt to verify access
     bool? hasAccess;
     bool isOffline = false;
 
     try {
-      final storage = _ref.read(googleDriveStorageProvider);
-      hasAccess = await storage.verifyFolderAccess(folderId);
+      switch (storageProvider) {
+        case StorageProvider.googleDrive:
+          final storage = _ref.read(googleDriveStorageProvider);
+          hasAccess = await storage.verifyFolderAccess(folderId);
+          break;
+        case StorageProvider.oneDrive:
+          final storage = OneDriveStorage();
+          await storage.init();
+          if (storage.isConnected) {
+            hasAccess = await storage.verifyFolderAccess(folderId);
+          } else {
+            isOffline = true;
+          }
+          break;
+      }
     } catch (e) {
       debugPrint('Repository verification error (likely offline): $e');
       isOffline = true;
@@ -111,6 +134,7 @@ class DeepLinkService {
         name: repositoryName,
         folderId: folderId,
         isPendingVerification: false,
+        provider: storageProvider,
       );
 
       if (context.mounted) {
@@ -171,6 +195,7 @@ class DeepLinkService {
         name: repositoryName,
         folderId: folderId,
         isPendingVerification: true,
+        provider: storageProvider,
       );
 
       if (context.mounted) {

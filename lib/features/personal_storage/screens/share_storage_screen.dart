@@ -35,7 +35,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
 
   String _generateDeepLink() {
     final encodedName = Uri.encodeComponent(widget.repository.name);
-    return 'memoix://share/repo?id=${widget.repository.folderId}&name=$encodedName';
+    return 'memoix://share/repo?id=${widget.repository.folderId}&name=$encodedName&provider=${widget.repository.provider.name}';
   }
 
   Future<void> _inviteUser() async {
