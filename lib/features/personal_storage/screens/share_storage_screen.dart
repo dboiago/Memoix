@@ -188,8 +188,8 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
             const SizedBox(height: 8),
             Text(
               'Add an email address of the person you want to invite. '
-              'Separate multiple addresses with a semicolon (;)',
-              'This grants them access to the shared folder — you\'ll then be prompted to send them a join link. '
+              'Separate multiple addresses with a semicolon (;). '
+              'This grants them access to the shared folder — you\'ll then be prompted to send them a join link.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
