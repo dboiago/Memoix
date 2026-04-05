@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:typed_data';
+
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:drift/drift.dart';
 import 'package:flutter/foundation.dart';
@@ -33,6 +36,7 @@ abstract class SupabaseSyncService {
   static const _keyShoppingLists = 'supabase_sync_shopping_lists';
   static const _keyRecipeDrafts = 'supabase_sync_recipe_drafts';
   static const _keyCookingLogs = 'supabase_sync_cooking_logs';
+  static const _keyRecipeImages = 'supabase_sync_recipe_images';
 
   // ─────────────────────────────────────────────────────────────────────────
   // Entry point
@@ -78,6 +82,7 @@ abstract class SupabaseSyncService {
     final lastSyncShoppingLists = _getLastSync(prefs, _keyShoppingLists);
     final lastSyncRecipeDrafts = _getLastSync(prefs, _keyRecipeDrafts);
     final lastSyncCookingLogs = _getLastSync(prefs, _keyCookingLogs);
+    final lastSyncRecipeImages = _getLastSync(prefs, _keyRecipeImages);
 
     // ── Recipes — independent error boundary ──────────────────────────────
     List<String> pulledRecipeUuids = [];
@@ -190,6 +195,14 @@ abstract class SupabaseSyncService {
       await _setLastSync(prefs, _keyCookingLogs, DateTime.now().toUtc());
     } catch (e) {
       debugPrint('SupabaseSyncService: cooking log sync error: $e');
+    }
+
+    // ── Recipe images ─────────────────────────────────────────────────────
+    try {
+      await _syncRecipeImages(groupId, lastSyncRecipeImages);
+      await _setLastSync(prefs, _keyRecipeImages, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: recipe image sync error: $e');
     }
   }
 
@@ -1788,6 +1801,141 @@ abstract class SupabaseSyncService {
   }
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Recipe images
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Syncs recipe image blobs with Supabase.
+  ///
+  /// PUSH: images with createdAt > lastSync are upserted one at a time to
+  /// avoid holding multiple blobs in memory simultaneously.
+  ///
+  /// PULL: metadata columns are fetched first (without image_data). For each
+  /// row not already present locally, the blob is fetched in a separate
+  /// single-row query and inserted via ImageDao.
+  ///
+  /// Missing DAO methods — raw Drift queries used:
+  /// - No getImagesCreatedSince() on ImageDao  → db.select(db.recipeImages)
+  /// - No getRecipeById() anywhere              → db.select(db.recipes)
+  static Future<void> _syncRecipeImages(
+      String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // ── PUSH: local → Supabase ───────────────────────────────────────────
+    // No ImageDao method for timestamp filtering; use raw Drift.
+    // Images are fetched and upserted one at a time — never bulk-loaded.
+    final localChanged = lastSync == null
+        ? await db.select(db.recipeImages).get()
+        : await (db.select(db.recipeImages)
+                ..where((t) =>
+                    t.createdAt.isBiggerThan(Variable<DateTime>(lastSync))))
+            .get();
+
+    for (final image in localChanged) {
+      // Resolve parent recipe UUID — no ImageDao helper; raw Drift used.
+      final parentRecipe = await (db.select(db.recipes)
+            ..where((t) => t.id.equals(image.recipeId))
+            ..limit(1))
+          .getSingleOrNull();
+      if (parentRecipe == null) {
+        debugPrint(
+            'SupabaseSyncService: recipe image ${image.fileName} '
+            'has no parent recipe — skipping push.');
+        continue;
+      }
+      await client
+          .schema('memoix')
+          .from('recipe_images')
+          .upsert(
+            _recipeImageToRow(image, parentRecipe.uuid, groupId, userId),
+            onConflict: 'file_name',
+          );
+    }
+
+    // ── PULL: Supabase → local ───────────────────────────────────────────
+    // Step 1: fetch metadata only (no image_data) to avoid a large blob list
+    // in memory.
+    final metaQuery = client
+        .schema('memoix')
+        .from('recipe_images')
+        .select(
+            'file_name, recipe_uuid, image_type, step_index, mime_type, created_at')
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remoteMeta = lastSync == null
+        ? await metaQuery
+        : await metaQuery.gt('created_at', lastSync.toIso8601String());
+
+    // Step 2: for each image not already stored locally, fetch its blob
+    // individually and insert.
+    for (final meta in remoteMeta) {
+      final fileName = meta['file_name'] as String;
+
+      // Skip if already stored locally.
+      final existing = await db.imageDao.getImageByFileName(fileName);
+      if (existing != null) continue;
+
+      // Resolve remote recipe_uuid to a local recipe row.
+      final recipeUuid = meta['recipe_uuid'] as String?;
+      if (recipeUuid == null) {
+        debugPrint(
+            'SupabaseSyncService: remote image $fileName '
+            'has no recipe_uuid — skipping pull.');
+        continue;
+      }
+
+      final parentRecipe = await db.recipeDao.getRecipeByUuid(recipeUuid);
+      if (parentRecipe == null) {
+        debugPrint(
+            'SupabaseSyncService: remote image $fileName — '
+            'parent recipe $recipeUuid not found locally — skipping pull.');
+        continue;
+      }
+
+      // Fetch the blob for this single image only.
+      final List<Map<String, dynamic>> blobRows = await client
+          .schema('memoix')
+          .from('recipe_images')
+          .select('image_data')
+          .eq('file_name', fileName)
+          .limit(1);
+
+      if (blobRows.isEmpty) continue;
+
+      final imageDataRaw = blobRows.first['image_data'];
+      if (imageDataRaw == null) continue;
+
+      // PostgREST returns bytea columns as base64-encoded strings.
+      final Uint8List imageBytes = base64Decode(imageDataRaw as String);
+
+      await db.imageDao.saveImage(
+        _remoteToRecipeImageCompanion(meta, parentRecipe.id, imageBytes),
+      );
+    }
+  }
+
+  static Map<String, dynamic> _recipeImageToRow(
+    RecipeImage img,
+    String recipeUuid,
+    String groupId,
+    String? userId,
+  ) {
+    return {
+      'file_name': img.fileName,
+      'recipe_uuid': recipeUuid,
+      'image_type': img.imageType,
+      'step_index': img.stepIndex,
+      // PostgREST expects bytea columns as base64-encoded strings.
+      'image_data': base64Encode(img.imageData),
+      'mime_type': img.mimeType,
+      'created_at': img.createdAt.toUtc().toIso8601String(),
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
   // Column mappers: remote → local Companion (personal tables)
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -1887,6 +2035,23 @@ abstract class SupabaseSyncService {
       quickNotes: Value(row['quick_notes'] as String? ?? ''),
       updatedAt:
           Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+    );
+  }
+
+  static RecipeImagesCompanion _remoteToRecipeImageCompanion(
+    Map<String, dynamic> meta,
+    int localRecipeId,
+    Uint8List imageBytes,
+  ) {
+    return RecipeImagesCompanion(
+      recipeId: Value(localRecipeId),
+      fileName: Value(meta['file_name'] as String),
+      imageType: Value(meta['image_type'] as String),
+      stepIndex: Value(meta['step_index'] as int?),
+      imageData: Value(imageBytes),
+      mimeType: Value(meta['mime_type'] as String? ?? 'image/jpeg'),
+      createdAt:
+          Value(DateTime.parse(meta['created_at'] as String).toLocal()),
     );
   }
 
