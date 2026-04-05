@@ -43,6 +43,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> sync() async {
+    debugPrint('SupabaseSyncService: sync() called, isSignedIn: ${SupabaseAuthService.isSignedIn}');
     // Guard: must be signed in.
     if (!SupabaseAuthService.isSignedIn) return;
 

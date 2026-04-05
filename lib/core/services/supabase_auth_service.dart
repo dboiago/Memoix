@@ -130,6 +130,7 @@ abstract class SupabaseAuthService {
   /// Safe to call at startup even if Supabase was not initialized — the
   /// guard returns early in that case. Only registers the listener once.
   static void initSyncListener() {
+    debugPrint('SupabaseAuth: initSyncListener called, already registered: $_syncListenerRegistered');
     if (_syncListenerRegistered) return;
     try {
       final client = _client;
@@ -138,6 +139,7 @@ abstract class SupabaseAuthService {
       client.auth.onAuthStateChange.listen((data) {
         final event = data.event;
         final session = data.session;
+        debugPrint('SupabaseAuth: auth event received: $event, session: ${session != null}');
         if ((event == AuthChangeEvent.initialSession ||
                 event == AuthChangeEvent.signedIn) &&
             session != null) {
