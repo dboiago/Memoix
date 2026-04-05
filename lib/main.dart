@@ -39,6 +39,10 @@ void main() async {
     debugPrint('Supabase initialization failed: $e');
   }
 
+  // Subscribe to auth state changes to trigger sync once the persisted
+  // session is restored (or on fresh sign-in). Must be called before runApp.
+  SupabaseAuthService.initSyncListener();
+
   // Configure desktop window
   if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
     await windowManager.ensureInitialized();
@@ -139,11 +143,6 @@ void main() async {
 
   // Note: Initial recipe sync now happens in background after app starts
   // See _DeepLinkWrapper in app/app.dart
-
-  // Supabase background sync — fire-and-forget; sync() never throws.
-  if (SupabaseAuthService.isSignedIn) {
-    SupabaseSyncService.sync().then((_) {});
-  }
 
   runApp(
     const ProviderScope(

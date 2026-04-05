@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'supabase_sync_service.dart';
+
 /// Auth service for the invite-only sync feature.
 ///
 /// All methods are static and never throw — errors are logged via [debugPrint]
@@ -12,6 +14,9 @@ abstract class SupabaseAuthService {
   // Cached group UUID fetched from memoix.group_members.
   // Cleared on sign-in and sign-out to force a fresh fetch.
   static String? _cachedGroupId;
+
+  // Guards against registering the auth state listener more than once.
+  static bool _syncListenerRegistered = false;
 
   // ─────────────────────────────────────────────────────────────────────
   // Internal helpers
@@ -114,6 +119,33 @@ abstract class SupabaseAuthService {
     } catch (e) {
       debugPrint('SupabaseAuthService.groupId error: $e');
       return null;
+    }
+  }
+
+  /// Subscribes to Supabase auth state changes and fires
+  /// [SupabaseSyncService.sync] fire-and-forget when:
+  /// - A persisted session is restored on app launch ([AuthChangeEvent.initialSession]).
+  /// - The user signs in freshly ([AuthChangeEvent.signedIn]).
+  ///
+  /// Safe to call at startup even if Supabase was not initialized — the
+  /// guard returns early in that case. Only registers the listener once.
+  static void initSyncListener() {
+    if (_syncListenerRegistered) return;
+    try {
+      final client = _client;
+      if (client == null) return;
+      _syncListenerRegistered = true;
+      client.auth.onAuthStateChange.listen((data) {
+        final event = data.event;
+        final session = data.session;
+        if ((event == AuthChangeEvent.initialSession ||
+                event == AuthChangeEvent.signedIn) &&
+            session != null) {
+          SupabaseSyncService.sync().then((_) {});
+        }
+      });
+    } catch (e) {
+      debugPrint('SupabaseAuthService.initSyncListener error: $e');
     }
   }
 }
