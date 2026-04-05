@@ -491,26 +491,59 @@ class AppDatabase extends _$AppDatabase {
       }
       if (from < 3) {
         const _uuid = Uuid();
-        await m.addColumn(ingredients, ingredients.uuid);
-        await m.addColumn(mealPlans, mealPlans.uuid);
-        await m.addColumn(scratchPads, scratchPads.uuid);
-        await m.addColumn(cookingLogs, cookingLogs.uuid);
-        final ingredientRows = await select(ingredients).get();
+
+        // Guard each ALTER TABLE: only add the column if it does not already exist.
+        // This prevents "duplicate column name: uuid" when the migration partially ran
+        // on a previous launch and is being retried.
+        final ingredientCols =
+            await customSelect('PRAGMA table_info(ingredients)').get();
+        if (!ingredientCols.any((r) => r.read<String>('name') == 'uuid')) {
+          await m.addColumn(ingredients, ingredients.uuid);
+        }
+
+        final mealPlanCols =
+            await customSelect('PRAGMA table_info(meal_plans)').get();
+        if (!mealPlanCols.any((r) => r.read<String>('name') == 'uuid')) {
+          await m.addColumn(mealPlans, mealPlans.uuid);
+        }
+
+        final scratchPadCols =
+            await customSelect('PRAGMA table_info(scratch_pads)').get();
+        if (!scratchPadCols.any((r) => r.read<String>('name') == 'uuid')) {
+          await m.addColumn(scratchPads, scratchPads.uuid);
+        }
+
+        final cookingLogCols =
+            await customSelect('PRAGMA table_info(cooking_logs)').get();
+        if (!cookingLogCols.any((r) => r.read<String>('name') == 'uuid')) {
+          await m.addColumn(cookingLogs, cookingLogs.uuid);
+        }
+
+        // Only update rows that still carry the empty-string default.
+        // Re-running after a partial migration will never overwrite already-assigned UUIDs.
+        final ingredientRows =
+            await (select(ingredients)..where((t) => t.uuid.equals(''))).get();
         for (final row in ingredientRows) {
           await (update(ingredients)..where((t) => t.id.equals(row.id)))
               .write(IngredientsCompanion(uuid: Value(_uuid.v4())));
         }
-        final mealPlanRows = await select(mealPlans).get();
+
+        final mealPlanRows =
+            await (select(mealPlans)..where((t) => t.uuid.equals(''))).get();
         for (final row in mealPlanRows) {
           await (update(mealPlans)..where((t) => t.id.equals(row.id)))
               .write(MealPlansCompanion(uuid: Value(_uuid.v4())));
         }
-        final scratchPadRows = await select(scratchPads).get();
+
+        final scratchPadRows =
+            await (select(scratchPads)..where((t) => t.uuid.equals(''))).get();
         for (final row in scratchPadRows) {
           await (update(scratchPads)..where((t) => t.id.equals(row.id)))
               .write(ScratchPadsCompanion(uuid: Value(_uuid.v4())));
         }
-        final cookingLogRows = await select(cookingLogs).get();
+
+        final cookingLogRows =
+            await (select(cookingLogs)..where((t) => t.uuid.equals(''))).get();
         for (final row in cookingLogRows) {
           await (update(cookingLogs)..where((t) => t.id.equals(row.id)))
               .write(CookingLogsCompanion(uuid: Value(_uuid.v4())));
