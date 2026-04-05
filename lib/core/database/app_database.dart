@@ -1,4 +1,5 @@
 import 'package:drift/drift.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../data/drift/daos/cooking_log_dao.dart';
 import '../../data/drift/daos/utility_dao.dart';
@@ -84,9 +85,11 @@ class Recipes extends Table {
 // INGREDIENTS  (was @embedded Ingredient — promoted to SEPARATE TABLE)
 // ─────────────────────────────────────────────────────────────────────────────
 
+@TableIndex(name: 'idx_ingredients_uuid', columns: {#uuid}, unique: true)
 @TableIndex(name: 'idx_ingredients_recipe_id', columns: {#recipeId})
 class Ingredients extends Table {
   IntColumn get id => integer().autoIncrement()();
+  TextColumn get uuid => text().withDefault(const Constant(''))();
   IntColumn get recipeId => integer().references(Recipes, #id)();
   TextColumn get name => text()();
   TextColumn get amount => text().nullable()();
@@ -186,9 +189,11 @@ class CheeseEntries extends Table {
 // MEAL PLANS
 // ─────────────────────────────────────────────────────────────────────────────
 
+@TableIndex(name: 'idx_meal_plans_uuid', columns: {#uuid}, unique: true)
 @TableIndex(name: 'idx_meal_plans_date', columns: {#date}, unique: true)
 class MealPlans extends Table {
   IntColumn get id => integer().autoIncrement()();
+  TextColumn get uuid => text().withDefault(const Constant(''))();
   TextColumn get date => text()();
 }
 
@@ -215,8 +220,10 @@ class PlannedMeals extends Table {
 // SCRATCH PADS
 // ─────────────────────────────────────────────────────────────────────────────
 
+@TableIndex(name: 'idx_scratch_pads_uuid', columns: {#uuid}, unique: true)
 class ScratchPads extends Table {
   IntColumn get id => integer().autoIncrement()();
+  TextColumn get uuid => text().withDefault(const Constant(''))();
   TextColumn get quickNotes => text().withDefault(const Constant(''))();
   DateTimeColumn get updatedAt => dateTime()();
 }
@@ -372,10 +379,12 @@ class SmokingRecipes extends Table {
 // COOKING LOGS
 // ─────────────────────────────────────────────────────────────────────────────
 
+@TableIndex(name: 'idx_cooking_logs_uuid', columns: {#uuid}, unique: true)
 @TableIndex(name: 'idx_cooking_logs_recipe_id', columns: {#recipeId})
 @TableIndex(name: 'idx_cooking_logs_cooked_at', columns: {#cookedAt})
 class CookingLogs extends Table {
   IntColumn get id => integer().autoIncrement()();
+  TextColumn get uuid => text().withDefault(const Constant(''))();
   TextColumn get recipeId => text()();
   TextColumn get recipeName => text()();
   TextColumn get recipeCourse => text().nullable()();
@@ -472,13 +481,40 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 2;
+  int get schemaVersion => 3;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
     onUpgrade: (m, from, to) async {
       if (from < 2) {
         await m.createTable(recipeImages);
+      }
+      if (from < 3) {
+        const _uuid = Uuid();
+        await m.addColumn(ingredients, ingredients.uuid);
+        await m.addColumn(mealPlans, mealPlans.uuid);
+        await m.addColumn(scratchPads, scratchPads.uuid);
+        await m.addColumn(cookingLogs, cookingLogs.uuid);
+        final ingredientRows = await select(ingredients).get();
+        for (final row in ingredientRows) {
+          await (update(ingredients)..where((t) => t.id.equals(row.id)))
+              .write(IngredientsCompanion(uuid: Value(_uuid.v4())));
+        }
+        final mealPlanRows = await select(mealPlans).get();
+        for (final row in mealPlanRows) {
+          await (update(mealPlans)..where((t) => t.id.equals(row.id)))
+              .write(MealPlansCompanion(uuid: Value(_uuid.v4())));
+        }
+        final scratchPadRows = await select(scratchPads).get();
+        for (final row in scratchPadRows) {
+          await (update(scratchPads)..where((t) => t.id.equals(row.id)))
+              .write(ScratchPadsCompanion(uuid: Value(_uuid.v4())));
+        }
+        final cookingLogRows = await select(cookingLogs).get();
+        for (final row in cookingLogRows) {
+          await (update(cookingLogs)..where((t) => t.id.equals(row.id)))
+              .write(CookingLogsCompanion(uuid: Value(_uuid.v4())));
+        }
       }
     },
   );
