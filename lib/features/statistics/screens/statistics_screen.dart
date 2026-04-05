@@ -104,7 +104,7 @@ class _StatsContent extends StatelessWidget {
             const SizedBox(width: 12),
             Expanded(
               child: _StatCard(
-                label: 'Favorites',
+                label: 'Favourites',
                 value: stats.totalCooks.toString(),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
