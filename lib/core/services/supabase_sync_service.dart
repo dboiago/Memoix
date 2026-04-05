@@ -207,6 +207,72 @@ abstract class SupabaseSyncService {
   }
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Soft-delete notification
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Marks a row in Supabase as soft-deleted by setting [deleted_at] to now.
+  ///
+  /// Call this immediately after performing a hard delete locally so that
+  /// other devices learn of the deletion on their next [sync].
+  ///
+  /// If the row does not yet exist in Supabase (created locally, never synced),
+  /// the call updates zero rows and is a safe no-op.
+  ///
+  /// [entityType] must match the Supabase table name exactly:
+  /// `'recipes'`, `'pizzas'`, `'sandwiches'`, `'cellar_entries'`,
+  /// `'cheese_entries'`, `'smoking_recipes'`, `'courses'`, `'scratch_pads'`,
+  /// `'meal_plans'`, `'shopping_lists'`, `'recipe_drafts'`, `'cooking_logs'`,
+  /// `'user_entity_preferences'`.
+  ///
+  /// For `'courses'`, pass the **slug** as [uuid].
+  ///
+  /// `'user_entity_preferences'` uses a composite key
+  /// `(user_id, entity_type, entity_uuid)` that cannot be expressed via this
+  /// single-uuid interface — the call is a documented no-op. Preference rows
+  /// are implicitly invalidated when the parent entity row is soft-deleted.
+  ///
+  /// Child tables (`'ingredients'`, `'planned_meals'`, `'shopping_items'`,
+  /// `'recipe_images'`) cascade automatically in Supabase when the parent is
+  /// soft-deleted; callers should **not** call this method for child rows.
+  ///
+  /// Never throws — all errors are caught and logged.
+  static Future<void> notifyDeleted(String entityType, String uuid) async {
+    if (!SupabaseAuthService.isSignedIn) return;
+    try {
+      // Composite-key table: not expressible via single-uuid interface.
+      if (entityType == 'user_entity_preferences') {
+        debugPrint(
+            'SupabaseSyncService.notifyDeleted: '
+            'user_entity_preferences uses a composite key — '
+            'skipped; deletion propagates via parent entity.');
+        return;
+      }
+
+      final client = _requireClient();
+      final now = DateTime.now().toUtc().toIso8601String();
+
+      // Tables whose remote schema has no updated_at column.
+      const _noUpdatedAt = {'meal_plans', 'shopping_lists', 'cooking_logs'};
+
+      final Map<String, dynamic> updateData = {'deleted_at': now};
+      if (!_noUpdatedAt.contains(entityType)) {
+        updateData['updated_at'] = now;
+      }
+
+      // courses uses slug as its sync key; all other tables use uuid.
+      final String keyColumn = entityType == 'courses' ? 'slug' : 'uuid';
+
+      await client
+          .schema('memoix')
+          .from(entityType)
+          .update(updateData)
+          .eq(keyColumn, uuid);
+    } catch (e) {
+      debugPrint('SupabaseSyncService.notifyDeleted($entityType, $uuid): $e');
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
   // Recipes
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -248,7 +314,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('recipes')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteRows = lastSync == null
         ? await remoteQuery
@@ -289,6 +356,27 @@ abstract class SupabaseSyncService {
       }
 
       pulledUuids.add(remoteUuid);
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedRecipesQuery = client
+        .schema('memoix')
+        .from('recipes')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedRecipes = lastSync == null
+        ? await deletedRecipesQuery
+        : await deletedRecipesQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedRecipes) {
+      final uuid = row['uuid'] as String;
+      final local = await db.recipeDao.getRecipeByUuid(uuid);
+      if (local == null) continue;
+      // RecipeDao.deleteRecipe handles ingredients but not images — delete
+      // images first since there is no SQLite-level cascade.
+      await db.imageDao.deleteImagesForRecipe(local.id);
+      await db.recipeDao.deleteRecipe(local.id);
     }
 
     return pulledUuids;
@@ -350,7 +438,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('ingredients')
         .select()
-        .inFilter('recipe_uuid', pulledRecipeUuids);
+        .inFilter('recipe_uuid', pulledRecipeUuids)
+        .filter('deleted_at', 'is', null);
 
     // Group by recipe_uuid for efficient per-recipe replacement.
     final byRecipe = <String, List<Map<String, dynamic>>>{};
@@ -570,7 +659,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('pizzas')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remotePizzas = lastSync == null
         ? await remoteQueryPizzas
@@ -598,6 +688,21 @@ abstract class SupabaseSyncService {
           rating: 0,
         ));
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedPizzasQuery = client
+        .schema('memoix')
+        .from('pizzas')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedPizzas = lastSync == null
+        ? await deletedPizzasQuery
+        : await deletedPizzasQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedPizzas) {
+      await db.catalogueDao.deletePizzaByUuid(row['uuid'] as String);
     }
   }
 
@@ -633,7 +738,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('sandwiches')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteSandwiches = lastSync == null
         ? await remoteQuerySandwiches
@@ -662,6 +768,21 @@ abstract class SupabaseSyncService {
           rating: 0,
         ));
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedSandwichesQuery = client
+        .schema('memoix')
+        .from('sandwiches')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedSandwiches = lastSync == null
+        ? await deletedSandwichesQuery
+        : await deletedSandwichesQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedSandwiches) {
+      await db.catalogueDao.deleteSandwichByUuid(row['uuid'] as String);
     }
   }
 
@@ -699,7 +820,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('cellar_entries')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteCellar = lastSync == null
         ? await remoteQueryCellar
@@ -725,6 +847,21 @@ abstract class SupabaseSyncService {
           buy: false,
         ));
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedCellarQuery = client
+        .schema('memoix')
+        .from('cellar_entries')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedCellar = lastSync == null
+        ? await deletedCellarQuery
+        : await deletedCellarQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedCellar) {
+      await db.cellarDao.deleteEntryByUuid(row['uuid'] as String);
     }
   }
 
@@ -762,7 +899,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('cheese_entries')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteCheese = lastSync == null
         ? await remoteQueryCheese
@@ -788,6 +926,21 @@ abstract class SupabaseSyncService {
           buy: false,
         ));
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedCheeseQuery = client
+        .schema('memoix')
+        .from('cheese_entries')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedCheese = lastSync == null
+        ? await deletedCheeseQuery
+        : await deletedCheeseQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedCheese) {
+      await db.cellarDao.deleteCheeseEntryByUuid(row['uuid'] as String);
     }
   }
 
@@ -825,7 +978,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('smoking_recipes')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteSmoking = lastSync == null
         ? await remoteQuerySmoking
@@ -852,6 +1006,21 @@ abstract class SupabaseSyncService {
           cookCount: 0,
         ));
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedSmokingQuery = client
+        .schema('memoix')
+        .from('smoking_recipes')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedSmoking = lastSync == null
+        ? await deletedSmokingQuery
+        : await deletedSmokingQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedSmoking) {
+      await db.smokingDao.deleteRecipeByUuid(row['uuid'] as String);
     }
   }
 
@@ -883,7 +1052,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('courses')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteCourses = lastSync == null
         ? await remoteQueryCourses
@@ -915,6 +1085,26 @@ abstract class SupabaseSyncService {
               mode: InsertMode.insertOrIgnore,
             );
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedCoursesQuery = client
+        .schema('memoix')
+        .from('courses')
+        .select('slug')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedCourses = lastSync == null
+        ? await deletedCoursesQuery
+        : await deletedCoursesQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedCourses) {
+      final slug = row['slug'] as String;
+      final local = await (db.select(db.courses)
+            ..where((c) => c.slug.equals(slug)))
+          .getSingleOrNull();
+      if (local == null) continue;
+      await db.recipeDao.deleteCourse(local.id);
     }
   }
 
@@ -952,7 +1142,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('scratch_pads')
         .select()
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remotePads = lastSync == null
         ? await remoteQueryPads
@@ -976,6 +1167,24 @@ abstract class SupabaseSyncService {
       } else {
         await db.utilityDao.saveQuickNotes(companion);
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedPadsQuery = client
+        .schema('memoix')
+        .from('scratch_pads')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedPads = lastSync == null
+        ? await deletedPadsQuery
+        : await deletedPadsQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedPads) {
+      // No DAO delete method for scratch pads — raw Drift used.
+      await (db.delete(db.scratchPads)
+            ..where((s) => s.uuid.equals(row['uuid'] as String)))
+          .go();
     }
   }
 
@@ -1386,7 +1595,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('user_entity_preferences')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> prefs = lastSync == null
         ? await remoteQuery
@@ -1510,7 +1720,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('meal_plans')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     for (final row in remotePlans) {
       final remoteUuid = row['uuid'] as String;
@@ -1527,7 +1738,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('planned_meals')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     for (final row in remoteMeals) {
       final instanceId = row['instance_id'] as String;
@@ -1544,6 +1756,28 @@ abstract class SupabaseSyncService {
 
       await db.mealPlanDao.addMeal(
           _remoteToPlannedMealCompanion(row, localPlan.id));
+    }
+
+    // ── Deletion propagation (meal plans) ──────────────────────────────
+    // There is no SQLite-level cascade on meal_plans → planned_meals, so
+    // planned_meals rows must be removed explicitly before the plan is deleted.
+    final deletedPlansQuery = client
+        .schema('memoix')
+        .from('meal_plans')
+        .select('uuid')
+        .eq('user_id', userId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedPlans = lastSync == null
+        ? await deletedPlansQuery
+        : await deletedPlansQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedPlans) {
+      final localPlan = await (db.select(db.mealPlans)
+            ..where((p) => p.uuid.equals(row['uuid'] as String)))
+          .getSingleOrNull();
+      if (localPlan == null) continue;
+      await db.mealPlanDao.removeAllMealsForPlan(localPlan.id);
+      await db.mealPlanDao.deletePlan(localPlan.id);
     }
   }
 
@@ -1600,7 +1834,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('shopping_lists')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     for (final row in remoteLists) {
       final remoteUuid = row['uuid'] as String;
@@ -1614,7 +1849,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('shopping_items')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     for (final row in remoteItems) {
       final itemUuid = row['uuid'] as String;
@@ -1628,6 +1864,23 @@ abstract class SupabaseSyncService {
 
       await db.shoppingDao
           .saveItem(_remoteToShoppingItemCompanion(row, localList.id));
+    }
+
+    // ── Deletion propagation (shopping lists) ───────────────────────────
+    // ShoppingDao.deleteListByUuid already calls deleteAllItemsForList first,
+    // so no explicit child-row cleanup is needed here.
+    final deletedListsQuery = client
+        .schema('memoix')
+        .from('shopping_lists')
+        .select('uuid')
+        .eq('user_id', userId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedLists = lastSync == null
+        ? await deletedListsQuery
+        : await deletedListsQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedLists) {
+      await db.shoppingDao.deleteListByUuid(row['uuid'] as String);
     }
   }
 
@@ -1662,7 +1915,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('recipe_drafts')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteDrafts = lastSync == null
         ? await remoteQuery
@@ -1683,6 +1937,21 @@ abstract class SupabaseSyncService {
       } else {
         await db.utilityDao.createDraft(_remoteToRecipeDraftCompanion(row));
       }
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    final deletedDraftsQuery = client
+        .schema('memoix')
+        .from('recipe_drafts')
+        .select('uuid')
+        .eq('user_id', userId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedDrafts = lastSync == null
+        ? await deletedDraftsQuery
+        : await deletedDraftsQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedDrafts) {
+      await db.utilityDao.deleteDraftByUuid(row['uuid'] as String);
     }
   }
 
@@ -1719,7 +1988,8 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('cooking_logs')
         .select()
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .filter('deleted_at', 'is', null);
 
     for (final row in remoteLogs) {
       final remoteUuid = row['uuid'] as String;
@@ -1729,6 +1999,26 @@ abstract class SupabaseSyncService {
           .getSingleOrNull();
       if (existing != null) continue;
       await db.cookingLogDao.logCook(_remoteToCookingLogCompanion(row));
+    }
+
+    // ── Deletion propagation ─────────────────────────────────────────────
+    // No getByUuid on CookingLogDao — raw Drift used for lookup.
+    final deletedLogsQuery = client
+        .schema('memoix')
+        .from('cooking_logs')
+        .select('uuid')
+        .eq('user_id', userId)
+        .not('deleted_at', 'is', null);
+    final List<Map<String, dynamic>> deletedLogs = lastSync == null
+        ? await deletedLogsQuery
+        : await deletedLogsQuery
+            .gt('deleted_at', lastSync.toIso8601String());
+    for (final row in deletedLogs) {
+      final localLog = await (db.select(db.cookingLogs)
+            ..where((l) => l.uuid.equals(row['uuid'] as String)))
+          .getSingleOrNull();
+      if (localLog == null) continue;
+      await db.cookingLogDao.deleteLog(localLog.id);
     }
   }
 
@@ -1887,7 +2177,8 @@ abstract class SupabaseSyncService {
         .from('recipe_images')
         .select(
             'file_name, recipe_uuid, image_type, step_index, mime_type, created_at')
-        .eq('group_id', groupId);
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
 
     final List<Map<String, dynamic>> remoteMeta = lastSync == null
         ? await metaQuery
