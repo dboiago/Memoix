@@ -1,7 +1,10 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:path/path.dart' as p;
+import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart'
@@ -94,8 +97,8 @@ class RecipeRepository {
         .toList();
   }
 
-  Recipe _toIsarRecipe(db.Recipe r, List<db.Ingredient> ings) {
-    return Recipe()
+  Future<Recipe> _toIsarRecipe(db.Recipe r, List<db.Ingredient> ings) async {
+    final recipe = Recipe()
       ..id = r.id
       ..uuid = r.uuid
       ..name = r.name
@@ -150,10 +153,128 @@ class RecipeRepository {
             ..section = i.section
             ..bakerPercent = i.bakerPercent)
           .toList();
+
+    // Resolve plain filenames → cached local paths from the blob store.
+    recipe.headerImage = await _resolveNullableImagePath(recipe.headerImage);
+    recipe.stepImages = await Future.wait(
+        recipe.stepImages.map((v) => _resolveImagePath(v)));
+    recipe.imageUrls = await Future.wait(
+        recipe.imageUrls.map((v) => _resolveImagePath(v)));
+
+    return recipe;
   }
 
   void _normalizeIngredientUnits(Recipe recipe) {
     UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
+  }
+
+  // ── Image helpers ──────────────────────────────────────────────────────────
+
+  /// True for absolute file-system paths (Unix leading-slash or Windows
+  /// drive-letter prefix).
+  bool _isAbsolutePath(String value) =>
+      value.startsWith('/') || RegExp(r'^[A-Za-z]:').hasMatch(value);
+
+  /// Replaces absolute-path image values in [recipe] with their basenames and
+  /// records the original paths in [out] so blobs can be persisted afterwards.
+  void _collectAndNormaliseImagePaths(
+      Recipe recipe, Map<String, String> out) {
+    String? normalise(String? value) {
+      if (value == null || value.isEmpty || value.startsWith('http')) {
+        return value;
+      }
+      if (!_isAbsolutePath(value)) return value; // already a basename
+      final fileName = p.basename(value);
+      out[fileName] = value;
+      return fileName;
+    }
+
+    recipe.headerImage = normalise(recipe.headerImage);
+
+    for (int i = 0; i < recipe.stepImages.length; i++) {
+      recipe.stepImages[i] =
+          normalise(recipe.stepImages[i]) ?? recipe.stepImages[i];
+    }
+
+    for (int i = 0; i < recipe.imageUrls.length; i++) {
+      recipe.imageUrls[i] =
+          normalise(recipe.imageUrls[i]) ?? recipe.imageUrls[i];
+    }
+  }
+
+  /// Persists image blobs for all local files collected during pre-processing.
+  Future<void> _saveImageBlobs(
+      int recipeId, Recipe recipe, Map<String, String> fileNameToPath) async {
+    Future<void> save(String fileName, String imageType, int? stepIndex) async {
+      final existing = await _db.imageDao.getImageByFileName(fileName);
+      if (existing != null) return; // already in the blob store
+
+      final original = fileNameToPath[fileName];
+      if (original == null) return;
+
+      final file = File(original);
+      if (!await file.exists()) return; // file missing – skip silently
+
+      try {
+        final bytes = await file.readAsBytes();
+        await _db.imageDao.saveImage(RecipeImagesCompanion(
+          recipeId: Value(recipeId),
+          fileName: Value(fileName),
+          imageType: Value(imageType),
+          stepIndex:
+              stepIndex != null ? Value(stepIndex) : const Value.absent(),
+          imageData: Value(bytes),
+          mimeType: const Value('image/jpeg'),
+          createdAt: Value(DateTime.now()),
+        ));
+      } catch (_) {
+        // Failed blob write must not abort the recipe save.
+      }
+    }
+
+    if (recipe.headerImage != null &&
+        recipe.headerImage!.isNotEmpty &&
+        !recipe.headerImage!.startsWith('http')) {
+      await save(recipe.headerImage!, 'header', null);
+    }
+
+    for (int i = 0; i < recipe.stepImages.length; i++) {
+      final v = recipe.stepImages[i];
+      if (!v.startsWith('http')) await save(v, 'step', i);
+    }
+
+    for (final v in recipe.imageUrls) {
+      if (!v.startsWith('http')) await save(v, 'gallery', null);
+    }
+  }
+
+  /// Resolves a nullable image value. See [_resolveImagePath].
+  Future<String?> _resolveNullableImagePath(String? value) async {
+    if (value == null || value.isEmpty) return value;
+    return _resolveImagePath(value);
+  }
+
+  /// Resolves a single image value:
+  /// - URLs pass through unchanged.
+  /// - Absolute paths pass through unchanged (legacy data on device).
+  /// - Plain filenames are looked up in the blob store; if found, the bytes
+  ///   are written to the local cache directory and the full path is returned.
+  Future<String> _resolveImagePath(String value) async {
+    if (value.startsWith('http')) return value;
+    if (_isAbsolutePath(value)) return value;
+
+    final appDir = await getApplicationDocumentsDirectory();
+    final cacheDir = Directory('${appDir.path}/recipe_images');
+    final cachedFile = File('${cacheDir.path}/$value');
+
+    if (await cachedFile.exists()) return cachedFile.path;
+
+    final blob = await _db.imageDao.getImageByFileName(value);
+    if (blob == null) return value; // no blob found – leave as-is
+
+    if (!await cacheDir.exists()) await cacheDir.create(recursive: true);
+    await cachedFile.writeAsBytes(blob.imageData);
+    return cachedFile.path;
   }
 
   Course _toCourse(db.Course c) {
@@ -284,12 +405,22 @@ class RecipeRepository {
     if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
     _normalizeIngredientUnits(recipe);
 
+    // Replace absolute image paths with basenames before persisting.
+    // Collect the originals so blobs can be written after we have a recipeId.
+    final fileNameToPath = <String, String>{};
+    _collectAndNormaliseImagePaths(recipe, fileNameToPath);
+
     final companion = _toCompanion(recipe);
     await _db.recipeDao.saveRecipe(companion);
     final recipeId = await _db.recipeDao.getIdByUuid(recipe.uuid) ?? 0;
     await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
     await _db.recipeDao
         .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
+
+    // Persist image blobs for any new local files.
+    if (recipeId > 0 && fileNameToPath.isNotEmpty) {
+      await _saveImageBlobs(recipeId, recipe, fileNameToPath);
+    }
 
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     return recipeId;
