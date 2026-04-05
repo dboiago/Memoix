@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'app/app.dart';
@@ -18,6 +19,23 @@ void main() async {
 
   // Load environment variables (optional - falls back to dev keys)
   await dotenv.load(fileName: '.env', isOptional: true);
+
+  // Initialize Supabase (non-fatal — app starts normally if keys are absent)
+  try {
+    final supabaseUrl = dotenv.maybeGet('SUPABASE_URL');
+    final supabaseAnonKey = dotenv.maybeGet('SUPABASE_ANON_KEY');
+    if (supabaseUrl != null && supabaseUrl.isNotEmpty &&
+        supabaseAnonKey != null && supabaseAnonKey.isNotEmpty) {
+      await Supabase.initialize(
+        url: supabaseUrl,
+        anonKey: supabaseAnonKey,
+      );
+    } else {
+      debugPrint('Supabase: SUPABASE_URL or SUPABASE_ANON_KEY not set — skipping initialization.');
+    }
+  } catch (e) {
+    debugPrint('Supabase initialization failed: $e');
+  }
 
   // Configure desktop window
   if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
