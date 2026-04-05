@@ -231,12 +231,16 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
-      final pushRows =
-          localChanged.map((r) => _recipeToRow(r, groupId, userId)).toList();
-      await client
-          .schema('memoix')
-          .from('recipes')
-          .upsert(pushRows, onConflict: 'uuid');
+      final pushRows = localChanged
+          .where((r) => r.uuid.trim().isNotEmpty)
+          .map((r) => _recipeToRow(r, groupId, userId))
+          .toList();
+      if (pushRows.isNotEmpty) {
+        await client
+            .schema('memoix')
+            .from('recipes')
+            .upsert(pushRows, onConflict: 'uuid');
+      }
     }
 
     // ── PULL: Supabase → local ───────────────────────────────────────────
@@ -321,15 +325,20 @@ abstract class SupabaseSyncService {
           .get();
 
       if (changedIngredients.isNotEmpty) {
-        final pushRows = changedIngredients.map((ing) {
-          final recipeUuid = recipeIdToUuid[ing.recipeId] ?? '';
-          return _ingredientToRow(ing, recipeUuid, groupId);
-        }).toList();
+        final pushRows = changedIngredients
+            .where((ing) => ing.uuid.trim().isNotEmpty)
+            .map((ing) {
+              final recipeUuid = recipeIdToUuid[ing.recipeId] ?? '';
+              return _ingredientToRow(ing, recipeUuid, groupId);
+            })
+            .toList();
 
-        await client
-            .schema('memoix')
-            .from('ingredients')
-            .upsert(pushRows, onConflict: 'uuid');
+        if (pushRows.isNotEmpty) {
+          await client
+              .schema('memoix')
+              .from('ingredients')
+              .upsert(pushRows, onConflict: 'uuid');
+        }
       }
     }
 
@@ -1278,7 +1287,6 @@ abstract class SupabaseSyncService {
         'cook_count': r.cookCount,
         'buy': null,
         'last_cooked_at': r.lastCookedAt?.toUtc().toIso8601String(),
-        'rating': r.rating,
         'updated_at': now,
       });
     }
@@ -1291,7 +1299,6 @@ abstract class SupabaseSyncService {
         'cook_count': p.cookCount,
         'buy': null,
         'last_cooked_at': null,
-        'rating': p.rating,
         'updated_at': now,
       });
     }
@@ -1304,7 +1311,6 @@ abstract class SupabaseSyncService {
         'cook_count': null,
         'buy': e.buy,
         'last_cooked_at': null,
-        'rating': null,
         'updated_at': now,
       });
     }
@@ -1317,7 +1323,6 @@ abstract class SupabaseSyncService {
         'cook_count': null,
         'buy': e.buy,
         'last_cooked_at': null,
-        'rating': null,
         'updated_at': now,
       });
     }
@@ -1330,7 +1335,6 @@ abstract class SupabaseSyncService {
         'cook_count': s.cookCount,
         'buy': null,
         'last_cooked_at': null,
-        'rating': s.rating,
         'updated_at': now,
       });
     }
@@ -1343,7 +1347,6 @@ abstract class SupabaseSyncService {
         'cook_count': r.cookCount,
         'buy': null,
         'last_cooked_at': null,
-        'rating': null,
         'updated_at': now,
       });
     }
