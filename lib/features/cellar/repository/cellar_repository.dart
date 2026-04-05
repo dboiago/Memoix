@@ -50,7 +50,7 @@ class CellarRepository {
   Future<void> saveEntry(CellarEntry entry, {bool preserveTimestamp = false}) async {
     final entryUuid = entry.uuid.isEmpty ? _uuid.v4() : entry.uuid;
     await _db.cellarDao.saveEntry(CellarEntriesCompanion(
-      id: Value(entry.id),
+      id: entry.id > 0 ? Value(entry.id) : const Value.absent(),
       uuid: Value(entryUuid),
       name: Value(entry.name),
       producer: Value(entry.producer),

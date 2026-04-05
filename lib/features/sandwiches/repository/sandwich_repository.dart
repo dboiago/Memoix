@@ -57,7 +57,7 @@ class SandwichRepository {
   Future<void> saveSandwich(Sandwich sandwich, {bool preserveTimestamp = false}) async {
     final entryUuid = sandwich.uuid.isEmpty ? _uuid.v4() : sandwich.uuid;
     await _db.catalogueDao.saveSandwich(SandwichesCompanion(
-      id: Value(sandwich.id),
+      id: sandwich.id > 0 ? Value(sandwich.id) : const Value.absent(),
       uuid: Value(entryUuid),
       name: Value(sandwich.name),
       bread: Value(sandwich.bread),

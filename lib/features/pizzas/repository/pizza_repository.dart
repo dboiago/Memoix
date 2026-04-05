@@ -57,7 +57,7 @@ class PizzaRepository {
   Future<void> savePizza(Pizza pizza, {bool preserveTimestamp = false}) async {
     final entryUuid = pizza.uuid.isEmpty ? _uuid.v4() : pizza.uuid;
     await _db.catalogueDao.savePizza(PizzasCompanion(
-      id: Value(pizza.id),
+      id: pizza.id > 0 ? Value(pizza.id) : const Value.absent(),
       uuid: Value(entryUuid),
       name: Value(pizza.name),
       base: Value(pizza.base),

@@ -54,7 +54,7 @@ class CheeseRepository {
   Future<void> saveEntry(CheeseEntry entry, {bool preserveTimestamp = false}) async {
     final entryUuid = entry.uuid.isEmpty ? _uuid.v4() : entry.uuid;
     await _db.cellarDao.saveCheeseEntry(CheeseEntriesCompanion(
-      id: Value(entry.id),
+      id: entry.id > 0 ? Value(entry.id) : const Value.absent(),
       uuid: Value(entryUuid),
       name: Value(entry.name),
       country: Value(entry.country),
