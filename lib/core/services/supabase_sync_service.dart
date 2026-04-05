@@ -43,11 +43,9 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> sync() async {
-    debugPrint('SupabaseSyncService: sync() called, isSignedIn: ${SupabaseAuthService.isSignedIn}');
     // Guard: must be signed in.
     if (!SupabaseAuthService.isSignedIn) return;
 
-    debugPrint('SupabaseSyncService: checking connectivity');
     // Guard: must have actual network connectivity (connectivity_plus v6
     // returns List<ConnectivityResult>).
     final connectivityResults = await Connectivity().checkConnectivity();
@@ -55,10 +53,8 @@ abstract class SupabaseSyncService {
         connectivityResults.any((r) => r != ConnectivityResult.none);
     if (!hasConnection) return;
 
-    debugPrint('SupabaseSyncService: connectivity ok, fetching groupId');
     // Guard: must belong to a sync group.
     final groupId = await SupabaseAuthService.groupId;
-    debugPrint('SupabaseSyncService: groupId resolved: $groupId');
     if (groupId == null) {
       debugPrint('SupabaseSyncService: no group_id found — skipping sync.');
       return;
@@ -91,7 +87,6 @@ abstract class SupabaseSyncService {
     // ── Recipes — independent error boundary ──────────────────────────────
     List<String> pulledRecipeUuids = [];
     try {
-      debugPrint('SupabaseSyncService: syncing recipes...');
       pulledRecipeUuids = await _syncRecipes(groupId, lastSyncRecipes);
       await _setLastSync(prefs, _keyRecipes, DateTime.now().toUtc());
     } catch (e) {
@@ -100,7 +95,6 @@ abstract class SupabaseSyncService {
 
     // ── Ingredients — independent error boundary ──────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing ingredients...');
       await _syncIngredients(groupId, lastSyncIngredients, pulledRecipeUuids);
       await _setLastSync(prefs, _keyIngredients, DateTime.now().toUtc());
     } catch (e) {
@@ -109,7 +103,6 @@ abstract class SupabaseSyncService {
 
     // ── Pizzas ────────────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing pizzas...');
       await _syncPizzas(groupId, lastSyncPizzas);
       await _setLastSync(prefs, _keyPizzas, DateTime.now().toUtc());
     } catch (e) {
@@ -118,7 +111,6 @@ abstract class SupabaseSyncService {
 
     // ── Sandwiches ────────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing sandwiches...');
       await _syncSandwiches(groupId, lastSyncSandwiches);
       await _setLastSync(prefs, _keySandwiches, DateTime.now().toUtc());
     } catch (e) {
@@ -127,7 +119,6 @@ abstract class SupabaseSyncService {
 
     // ── Cellar entries ────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing cellar entries...');
       await _syncCellarEntries(groupId, lastSyncCellarEntries);
       await _setLastSync(prefs, _keyCellarEntries, DateTime.now().toUtc());
     } catch (e) {
@@ -136,7 +127,6 @@ abstract class SupabaseSyncService {
 
     // ── Cheese entries ────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing cheese entries...');
       await _syncCheeseEntries(groupId, lastSyncCheeseEntries);
       await _setLastSync(prefs, _keyCheeseEntries, DateTime.now().toUtc());
     } catch (e) {
@@ -145,7 +135,6 @@ abstract class SupabaseSyncService {
 
     // ── Smoking recipes ───────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing smoking recipes...');
       await _syncSmokingRecipes(groupId, lastSyncSmokingRecipes);
       await _setLastSync(prefs, _keySmokingRecipes, DateTime.now().toUtc());
     } catch (e) {
@@ -154,7 +143,6 @@ abstract class SupabaseSyncService {
 
     // ── Courses ───────────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing courses...');
       await _syncCourses(groupId, lastSyncCourses);
       await _setLastSync(prefs, _keyCourses, DateTime.now().toUtc());
     } catch (e) {
@@ -163,7 +151,6 @@ abstract class SupabaseSyncService {
 
     // ── Scratch pads ──────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing scratch pads...');
       await _syncScratchPads(groupId, lastSyncScratchPads);
       await _setLastSync(prefs, _keyScratchPads, DateTime.now().toUtc());
     } catch (e) {
@@ -172,7 +159,6 @@ abstract class SupabaseSyncService {
 
     // ── User entity preferences ───────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing user entity preferences...');
       await _syncUserEntityPreferences(userId, lastSyncUserEntityPrefs);
       await _setLastSync(prefs, _keyUserEntityPrefs, DateTime.now().toUtc());
     } catch (e) {
@@ -181,7 +167,6 @@ abstract class SupabaseSyncService {
 
     // ── Meal plans + planned meals ────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing meal plans...');
       await _syncMealPlans(userId, lastSyncMealPlans);
       await _setLastSync(prefs, _keyMealPlans, DateTime.now().toUtc());
     } catch (e) {
@@ -190,7 +175,6 @@ abstract class SupabaseSyncService {
 
     // ── Shopping lists + shopping items ───────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing shopping lists...');
       await _syncShoppingLists(userId, lastSyncShoppingLists);
       await _setLastSync(prefs, _keyShoppingLists, DateTime.now().toUtc());
     } catch (e) {
@@ -199,7 +183,6 @@ abstract class SupabaseSyncService {
 
     // ── Recipe drafts ─────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing recipe drafts...');
       await _syncRecipeDrafts(userId, lastSyncRecipeDrafts);
       await _setLastSync(prefs, _keyRecipeDrafts, DateTime.now().toUtc());
     } catch (e) {
@@ -208,7 +191,6 @@ abstract class SupabaseSyncService {
 
     // ── Cooking logs ──────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing cooking logs...');
       await _syncCookingLogs(userId, lastSyncCookingLogs);
       await _setLastSync(prefs, _keyCookingLogs, DateTime.now().toUtc());
     } catch (e) {
@@ -217,7 +199,6 @@ abstract class SupabaseSyncService {
 
     // ── Recipe images ─────────────────────────────────────────────────────
     try {
-      debugPrint('SupabaseSyncService: syncing recipe images...');
       await _syncRecipeImages(groupId, lastSyncRecipeImages);
       await _setLastSync(prefs, _keyRecipeImages, DateTime.now().toUtc());
     } catch (e) {
@@ -329,7 +310,6 @@ abstract class SupabaseSyncService {
     }
 
     // ── PULL: Supabase → local ───────────────────────────────────────────
-    debugPrint('SupabaseSyncService: recipe pull lastSync: $lastSync');
     final remoteQuery = client
         .schema('memoix')
         .from('recipes')
@@ -341,11 +321,7 @@ abstract class SupabaseSyncService {
         ? await remoteQuery
         : await remoteQuery.gt('updated_at', lastSync.toIso8601String());
 
-    debugPrint('SupabaseSyncService: recipe pull fetched ${remoteRows.length} rows from Supabase');
     final pulledUuids = <String>[];
-    int skipped = 0;
-    int updated = 0;
-    int inserted = 0;
 
     for (final row in remoteRows) {
       final remoteUuid = row['uuid'] as String;
@@ -356,10 +332,7 @@ abstract class SupabaseSyncService {
 
       if (existing != null) {
         // Local wins if same age or newer — skip.
-        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) {
-          skipped++;
-          continue;
-        }
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
 
         // Remote is newer: update, preserving personal fields.
         final companion = _remoteToRecipeCompanion(
@@ -370,7 +343,6 @@ abstract class SupabaseSyncService {
           lastCookedAt: existing.lastCookedAt,
         );
         await db.recipeDao.saveRecipe(companion.copyWith(id: Value(existing.id)));
-        updated++;
       } else {
         // New recipe from remote: insert with clean personal fields.
         final companion = _remoteToRecipeCompanion(
@@ -381,12 +353,10 @@ abstract class SupabaseSyncService {
           lastCookedAt: null,
         );
         await db.recipeDao.saveRecipe(companion);
-        inserted++;
       }
 
       pulledUuids.add(remoteUuid);
     }
-    debugPrint('SupabaseSyncService: recipe pull result — skipped: $skipped, updated: $updated, inserted: $inserted');
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedRecipesQuery = client
