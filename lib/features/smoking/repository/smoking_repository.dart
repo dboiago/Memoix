@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:drift/drift.dart';
@@ -6,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -114,6 +116,7 @@ class SmokingRepository {
     final recipe = await getRecipeByUuid(uuid);
     if (recipe != null) {
       await deleteRecipe(recipe, fromMerge: fromMerge);
+      unawaited(SupabaseSyncService.notifyDeleted('smoking_recipes', uuid));
     }
   }
 

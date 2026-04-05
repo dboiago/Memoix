@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -11,6 +12,7 @@ import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../../shared/widgets/course_icon_widget.dart';
@@ -1338,6 +1340,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           TextButton(
             onPressed: () async {
               await ref.read(recipeRepositoryProvider).deleteRecipe(recipe.id);
+              unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
               if (context.mounted) {
                 Navigator.pop(ctx);
                 Navigator.pop(context);

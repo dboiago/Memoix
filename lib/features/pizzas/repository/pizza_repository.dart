@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:drift/drift.dart';
@@ -7,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
 import '../models/pizza.dart';
@@ -95,6 +97,7 @@ class PizzaRepository {
     final count = await _db.catalogueDao.deletePizzaByUuid(uuid);
     if (count > 0) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();
+      unawaited(SupabaseSyncService.notifyDeleted('pizzas', uuid));
     }
     return count > 0;
   }

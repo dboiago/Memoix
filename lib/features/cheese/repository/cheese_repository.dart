@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
@@ -5,6 +7,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
 
@@ -98,6 +101,7 @@ class CheeseRepository {
     final result = deleted > 0;
     if (result) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();
+      unawaited(SupabaseSyncService.notifyDeleted('cheese_entries', uuid));
     }
     return result;
   }

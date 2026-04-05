@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/colors.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../models/shopping_list.dart';
@@ -111,6 +112,7 @@ class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
             onPressed: () {
               Navigator.pop(ctx);
               _startDeleteTimer();
+              unawaited(SupabaseSyncService.notifyDeleted('shopping_lists', widget.list.uuid));
             },
             style: TextButton.styleFrom(
               foregroundColor: Theme.of(context).colorScheme.secondary,
