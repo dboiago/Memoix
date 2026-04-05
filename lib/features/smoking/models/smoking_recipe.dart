@@ -1,6 +1,7 @@
 
 import 'dart:convert';
 import '../../../core/database/app_database.dart';
+import '../../recipes/models/recipe.dart' as r;
 
 /// Type of smoking entry
 enum SmokingType {
@@ -279,4 +280,43 @@ extension SmokingRecipeX on SmokingRecipe {
         'notes': notes,
         'headerImage': headerImage,
       };
+
+  /// Convert to a [r.Recipe] suitable for the Recipe Comparison screen.
+  r.Recipe toRecipe() {
+    final dirs =
+        (jsonDecode(directions) as List).cast<String>().toList();
+    if (wood.isNotEmpty) dirs.add('Wood: $wood');
+    if (temperature.isNotEmpty) dirs.add('Temperature: $temperature');
+
+    final ings = <r.Ingredient>[];
+    for (final m in (jsonDecode(ingredientsJson) as List)) {
+      final map = m as Map<String, dynamic>;
+      ings.add(r.Ingredient()
+        ..name = map['name']?.toString() ?? ''
+        ..amount = map['amount']?.toString()
+        ..unit = map['unit']?.toString());
+    }
+    for (final m in (jsonDecode(seasoningsJson) as List)) {
+      final map = m as Map<String, dynamic>;
+      ings.add(r.Ingredient()
+        ..name = map['name']?.toString() ?? ''
+        ..amount = map['amount']?.toString()
+        ..unit = map['unit']?.toString());
+    }
+
+    return r.Recipe()
+      ..uuid = uuid
+      ..name = name
+      ..course = item ?? 'smoking'
+      ..smokingType = type
+      ..recipeType = 'smoking'
+      ..directions = dirs
+      ..stepImages =
+          (jsonDecode(stepImages) as List).cast<String>().toList()
+      ..stepImageMap =
+          (jsonDecode(stepImageMap) as List).cast<String>().toList()
+      ..ingredients = ings
+      ..createdAt = createdAt
+      ..updatedAt = updatedAt;
+  }
 }

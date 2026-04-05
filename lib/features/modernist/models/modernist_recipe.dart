@@ -1,4 +1,5 @@
 
+import '../../recipes/models/recipe.dart';
 
 /// Type of modernist recipe
 enum ModernistType {
@@ -512,5 +513,35 @@ class ModernistRecipe {
       'scienceNotes': scienceNotes,
       'sourceUrl': sourceUrl,
     };
+  }
+
+  /// Convert to a [Recipe] suitable for the Recipe Comparison screen.
+  Recipe toRecipe() {
+    final dirs = List<String>.from(directions);
+    if (technique != null && technique!.isNotEmpty) {
+      dirs.add('Technique: $technique');
+    }
+    if (scienceNotes != null && scienceNotes!.isNotEmpty) {
+      dirs.add('Science Notes: $scienceNotes');
+    }
+    return Recipe()
+      ..uuid = uuid
+      ..name = name
+      ..course = 'modernist'
+      ..modernistType = type.name
+      ..recipeType = 'modernist'
+      ..directions = dirs
+      ..stepImages = List<String>.from(stepImages)
+      ..stepImageMap = List<String>.from(stepImageMap)
+      ..ingredients = ingredients
+          .map((i) => Ingredient()
+            ..name = i.name
+            ..amount = i.amount
+            ..unit = i.unit
+            ..preparation = i.notes
+            ..section = i.section)
+          .toList()
+      ..createdAt = createdAt
+      ..updatedAt = updatedAt;
   }
 }

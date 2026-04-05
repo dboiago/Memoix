@@ -105,6 +105,10 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref, recipe),
+            onComparePressed: recipe.type != SmokingType.pitNote.name
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true)
+                : null,
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
@@ -405,6 +409,10 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref, recipe),
+            onComparePressed: recipe.type != SmokingType.pitNote.name
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true)
+                : null,
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),

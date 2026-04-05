@@ -124,6 +124,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, recipe),
+            onComparePressed: recipe.type == ModernistType.concept
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true)
+                : null,
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
@@ -430,6 +434,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, recipe),
+            onComparePressed: recipe.type == ModernistType.concept
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true)
+                : null,
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),

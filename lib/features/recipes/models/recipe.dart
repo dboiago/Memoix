@@ -134,6 +134,9 @@ class Recipe {
   /// Pickle method for pickles (e.g., "Pickle", "Brine", "Fermentation")
   String? pickleMethod;
 
+  /// Domain type discriminator: 'standard' | 'modernist' | 'smoking'
+  String recipeType = 'standard';
+
   /// Whether this recipe type supports pairing with other recipes.
   /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
   bool get supportsPairing {
