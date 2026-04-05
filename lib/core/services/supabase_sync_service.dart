@@ -28,6 +28,11 @@ abstract class SupabaseSyncService {
   static const _keySmokingRecipes = 'supabase_sync_smoking_recipes';
   static const _keyCourses = 'supabase_sync_courses';
   static const _keyScratchPads = 'supabase_sync_scratch_pads';
+  static const _keyUserEntityPrefs = 'supabase_sync_user_entity_prefs';
+  static const _keyMealPlans = 'supabase_sync_meal_plans';
+  static const _keyShoppingLists = 'supabase_sync_shopping_lists';
+  static const _keyRecipeDrafts = 'supabase_sync_recipe_drafts';
+  static const _keyCookingLogs = 'supabase_sync_cooking_logs';
 
   // ─────────────────────────────────────────────────────────────────────────
   // Entry point
@@ -51,6 +56,13 @@ abstract class SupabaseSyncService {
       return;
     }
 
+    // Extract userId once — required for all personal-table sync methods.
+    final userId = SupabaseAuthService.currentUserId;
+    if (userId == null) {
+      debugPrint('SupabaseSyncService: no user_id — skipping sync.');
+      return;
+    }
+
     final prefs = await SharedPreferences.getInstance();
     final lastSyncRecipes = _getLastSync(prefs, _keyRecipes);
     final lastSyncIngredients = _getLastSync(prefs, _keyIngredients);
@@ -61,6 +73,11 @@ abstract class SupabaseSyncService {
     final lastSyncSmokingRecipes = _getLastSync(prefs, _keySmokingRecipes);
     final lastSyncCourses = _getLastSync(prefs, _keyCourses);
     final lastSyncScratchPads = _getLastSync(prefs, _keyScratchPads);
+    final lastSyncUserEntityPrefs = _getLastSync(prefs, _keyUserEntityPrefs);
+    final lastSyncMealPlans = _getLastSync(prefs, _keyMealPlans);
+    final lastSyncShoppingLists = _getLastSync(prefs, _keyShoppingLists);
+    final lastSyncRecipeDrafts = _getLastSync(prefs, _keyRecipeDrafts);
+    final lastSyncCookingLogs = _getLastSync(prefs, _keyCookingLogs);
 
     // ── Recipes — independent error boundary ──────────────────────────────
     List<String> pulledRecipeUuids = [];
@@ -133,6 +150,46 @@ abstract class SupabaseSyncService {
       await _setLastSync(prefs, _keyScratchPads, DateTime.now().toUtc());
     } catch (e) {
       debugPrint('SupabaseSyncService: scratch pad sync error: $e');
+    }
+
+    // ── User entity preferences ───────────────────────────────────────────
+    try {
+      await _syncUserEntityPreferences(userId, lastSyncUserEntityPrefs);
+      await _setLastSync(prefs, _keyUserEntityPrefs, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: user entity prefs sync error: $e');
+    }
+
+    // ── Meal plans + planned meals ────────────────────────────────────────
+    try {
+      await _syncMealPlans(userId, lastSyncMealPlans);
+      await _setLastSync(prefs, _keyMealPlans, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: meal plan sync error: $e');
+    }
+
+    // ── Shopping lists + shopping items ───────────────────────────────────
+    try {
+      await _syncShoppingLists(userId, lastSyncShoppingLists);
+      await _setLastSync(prefs, _keyShoppingLists, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: shopping list sync error: $e');
+    }
+
+    // ── Recipe drafts ─────────────────────────────────────────────────────
+    try {
+      await _syncRecipeDrafts(userId, lastSyncRecipeDrafts);
+      await _setLastSync(prefs, _keyRecipeDrafts, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: recipe draft sync error: $e');
+    }
+
+    // ── Cooking logs ──────────────────────────────────────────────────────
+    try {
+      await _syncCookingLogs(userId, lastSyncCookingLogs);
+      await _setLastSync(prefs, _keyCookingLogs, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: cooking log sync error: $e');
     }
   }
 
@@ -1178,6 +1235,648 @@ abstract class SupabaseSyncService {
       sortOrder: Value(row['sort_order'] as int? ?? 0),
       colorValue: Value(row['color_value'] as int? ?? 0xFFFFB74D),
       isVisible: Value(row['is_visible'] as bool? ?? true),
+    );
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // User entity preferences
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Pushes all local personal preference columns from every shared entity type
+  /// into memoix.user_entity_preferences, keyed on (user_id, entity_type, entity_uuid).
+  ///
+  /// Pulls back rows updated since [lastSync] and writes the personal fields
+  /// (isFavorite, cookCount, buy, lastCookedAt, rating) into the matching local
+  /// entity rows. Only those fields are overwritten — shared columns are untouched.
+  static Future<void> _syncUserEntityPreferences(
+      String userId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final now = DateTime.now().toUtc().toIso8601String();
+    final rows = <Map<String, dynamic>>[];
+
+    // PUSH — build preference rows from every relevant local table.
+    for (final r in await db.select(db.recipes).get()) {
+      rows.add({
+        'user_id': userId,
+        'entity_type': 'recipe',
+        'entity_uuid': r.uuid,
+        'is_favorite': r.isFavorite,
+        'cook_count': r.cookCount,
+        'buy': null,
+        'last_cooked_at': r.lastCookedAt?.toUtc().toIso8601String(),
+        'rating': r.rating,
+        'updated_at': now,
+      });
+    }
+    for (final p in await db.select(db.pizzas).get()) {
+      rows.add({
+        'user_id': userId,
+        'entity_type': 'pizza',
+        'entity_uuid': p.uuid,
+        'is_favorite': p.isFavorite,
+        'cook_count': p.cookCount,
+        'buy': null,
+        'last_cooked_at': null,
+        'rating': p.rating,
+        'updated_at': now,
+      });
+    }
+    for (final e in await db.select(db.cellarEntries).get()) {
+      rows.add({
+        'user_id': userId,
+        'entity_type': 'cellar',
+        'entity_uuid': e.uuid,
+        'is_favorite': e.isFavorite,
+        'cook_count': null,
+        'buy': e.buy,
+        'last_cooked_at': null,
+        'rating': null,
+        'updated_at': now,
+      });
+    }
+    for (final e in await db.select(db.cheeseEntries).get()) {
+      rows.add({
+        'user_id': userId,
+        'entity_type': 'cheese',
+        'entity_uuid': e.uuid,
+        'is_favorite': e.isFavorite,
+        'cook_count': null,
+        'buy': e.buy,
+        'last_cooked_at': null,
+        'rating': null,
+        'updated_at': now,
+      });
+    }
+    for (final s in await db.select(db.sandwiches).get()) {
+      rows.add({
+        'user_id': userId,
+        'entity_type': 'sandwich',
+        'entity_uuid': s.uuid,
+        'is_favorite': s.isFavorite,
+        'cook_count': s.cookCount,
+        'buy': null,
+        'last_cooked_at': null,
+        'rating': s.rating,
+        'updated_at': now,
+      });
+    }
+    for (final r in await db.select(db.smokingRecipes).get()) {
+      rows.add({
+        'user_id': userId,
+        'entity_type': 'smoking',
+        'entity_uuid': r.uuid,
+        'is_favorite': r.isFavorite,
+        'cook_count': r.cookCount,
+        'buy': null,
+        'last_cooked_at': null,
+        'rating': null,
+        'updated_at': now,
+      });
+    }
+
+    if (rows.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('user_entity_preferences')
+          .upsert(rows, onConflict: 'user_id,entity_type,entity_uuid');
+    }
+
+    // PULL — write personal fields back into local entity rows.
+    final remoteQuery = client
+        .schema('memoix')
+        .from('user_entity_preferences')
+        .select()
+        .eq('user_id', userId);
+
+    final List<Map<String, dynamic>> prefs = lastSync == null
+        ? await remoteQuery
+        : await remoteQuery.gt('updated_at', lastSync.toIso8601String());
+
+    for (final pref in prefs) {
+      final entityType = pref['entity_type'] as String;
+      final entityUuid = pref['entity_uuid'] as String;
+      final isFavorite = pref['is_favorite'] as bool? ?? false;
+      final cookCount = pref['cook_count'] as int? ?? 0;
+      final buy = pref['buy'] as bool? ?? false;
+      final lastCookedAtStr = pref['last_cooked_at'] as String?;
+      final lastCookedAt =
+          lastCookedAtStr != null ? DateTime.parse(lastCookedAtStr).toLocal() : null;
+      final rating = pref['rating'] as int? ?? 0;
+
+      switch (entityType) {
+        case 'recipe':
+          await (db.update(db.recipes)..where((r) => r.uuid.equals(entityUuid)))
+              .write(RecipesCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+                lastCookedAt: Value(lastCookedAt),
+                rating: Value(rating),
+              ));
+          break;
+        case 'pizza':
+          await (db.update(db.pizzas)..where((p) => p.uuid.equals(entityUuid)))
+              .write(PizzasCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+                rating: Value(rating),
+              ));
+          break;
+        case 'cellar':
+          await (db.update(db.cellarEntries)
+                ..where((e) => e.uuid.equals(entityUuid)))
+              .write(CellarEntriesCompanion(
+                isFavorite: Value(isFavorite),
+                buy: Value(buy),
+              ));
+          break;
+        case 'cheese':
+          await (db.update(db.cheeseEntries)
+                ..where((e) => e.uuid.equals(entityUuid)))
+              .write(CheeseEntriesCompanion(
+                isFavorite: Value(isFavorite),
+                buy: Value(buy),
+              ));
+          break;
+        case 'sandwich':
+          await (db.update(db.sandwiches)
+                ..where((s) => s.uuid.equals(entityUuid)))
+              .write(SandwichesCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+                rating: Value(rating),
+              ));
+          break;
+        case 'smoking':
+          await (db.update(db.smokingRecipes)
+                ..where((r) => r.uuid.equals(entityUuid)))
+              .write(SmokingRecipesCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+              ));
+          break;
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Meal plans + planned meals
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Append-only sync for MealPlans and PlannedMeals.
+  ///
+  /// Neither table has a local updatedAt column — all rows are always pushed
+  /// and pulled. FK meal_plan_uuid is resolved to a local int id on pull.
+  ///
+  /// Missing DAO methods:
+  /// - getAllPlans() → raw Drift db.select(db.mealPlans)
+  /// - getPlanByUuid() → raw Drift
+  /// - getPlannedMealsByPlanIds() → raw Drift
+  static Future<void> _syncMealPlans(String userId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+
+    // PUSH MealPlans — MealPlanDao has no getAllPlans(); raw Drift used.
+    final allPlans = await db.select(db.mealPlans).get();
+    if (allPlans.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('meal_plans')
+          .upsert(
+            allPlans.map((p) => _mealPlanToRow(p, userId)).toList(),
+            onConflict: 'uuid',
+          );
+
+      // PUSH PlannedMeals — MealPlanDao has no bulk getter; raw Drift used.
+      final planIds = allPlans.map((p) => p.id).toList();
+      final uuidById = {for (final p in allPlans) p.id: p.uuid};
+      final allMeals = await (db.select(db.plannedMeals)
+            ..where((m) => m.mealPlanId.isIn(planIds)))
+          .get();
+      if (allMeals.isNotEmpty) {
+        await client
+            .schema('memoix')
+            .from('planned_meals')
+            .upsert(
+              allMeals
+                  .map((m) => _plannedMealToRow(m, uuidById[m.mealPlanId] ?? '', userId))
+                  .toList(),
+              onConflict: 'instance_id',
+            );
+      }
+    }
+
+    // PULL MealPlans — append-only: skip rows whose uuid already exists locally.
+    final List<Map<String, dynamic>> remotePlans = await client
+        .schema('memoix')
+        .from('meal_plans')
+        .select()
+        .eq('user_id', userId);
+
+    for (final row in remotePlans) {
+      final remoteUuid = row['uuid'] as String;
+      // MealPlanDao has no getPlanByUuid(); raw Drift used.
+      final existing = await (db.select(db.mealPlans)
+            ..where((p) => p.uuid.equals(remoteUuid)))
+          .getSingleOrNull();
+      if (existing != null) continue; // append-only: local copy wins
+      await db.mealPlanDao.savePlan(_remoteToMealPlanCompanion(row));
+    }
+
+    // PULL PlannedMeals — append-only: skip rows whose instanceId already exists.
+    final List<Map<String, dynamic>> remoteMeals = await client
+        .schema('memoix')
+        .from('planned_meals')
+        .select()
+        .eq('user_id', userId);
+
+    for (final row in remoteMeals) {
+      final instanceId = row['instance_id'] as String;
+      final existing =
+          await db.mealPlanDao.getMealByInstanceId(instanceId);
+      if (existing != null) continue; // append-only
+
+      // Resolve meal_plan_uuid → local int id.
+      final mealPlanUuid = row['meal_plan_uuid'] as String;
+      final localPlan = await (db.select(db.mealPlans)
+            ..where((p) => p.uuid.equals(mealPlanUuid)))
+          .getSingleOrNull();
+      if (localPlan == null) continue; // parent not yet pulled — skip
+
+      await db.mealPlanDao.addMeal(
+          _remoteToPlannedMealCompanion(row, localPlan.id));
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Shopping lists + shopping items
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Append-only sync for ShoppingLists and ShoppingItems.
+  ///
+  /// ShoppingLists has createdAt only; ShoppingItems has no timestamps.
+  /// All rows are always pushed and pulled (small dataset).
+  /// FK shopping_list_uuid is resolved to local int id on pull.
+  ///
+  /// Missing DAO methods:
+  /// - getItemsByListIds() → raw Drift db.select(db.shoppingItems)
+  static Future<void> _syncShoppingLists(
+      String userId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+
+    // PUSH ShoppingLists.
+    final allLists = await db.shoppingDao.getAllLists();
+    if (allLists.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('shopping_lists')
+          .upsert(
+            allLists.map((l) => _shoppingListToRow(l, userId)).toList(),
+            onConflict: 'uuid',
+          );
+
+      // PUSH ShoppingItems — ShoppingDao has no bulk getByListIds(); raw Drift used.
+      final listIds = allLists.map((l) => l.id).toList();
+      final uuidById = {for (final l in allLists) l.id: l.uuid};
+      final allItems = await (db.select(db.shoppingItems)
+            ..where((i) => i.shoppingListId.isIn(listIds)))
+          .get();
+      if (allItems.isNotEmpty) {
+        await client
+            .schema('memoix')
+            .from('shopping_items')
+            .upsert(
+              allItems
+                  .map((i) =>
+                      _shoppingItemToRow(i, uuidById[i.shoppingListId] ?? '', userId))
+                  .toList(),
+              onConflict: 'uuid',
+            );
+      }
+    }
+
+    // PULL ShoppingLists — append-only.
+    final List<Map<String, dynamic>> remoteLists = await client
+        .schema('memoix')
+        .from('shopping_lists')
+        .select()
+        .eq('user_id', userId);
+
+    for (final row in remoteLists) {
+      final remoteUuid = row['uuid'] as String;
+      final existing = await db.shoppingDao.getListByUuid(remoteUuid);
+      if (existing != null) continue;
+      await db.shoppingDao.saveList(_remoteToShoppingListCompanion(row));
+    }
+
+    // PULL ShoppingItems — append-only.
+    final List<Map<String, dynamic>> remoteItems = await client
+        .schema('memoix')
+        .from('shopping_items')
+        .select()
+        .eq('user_id', userId);
+
+    for (final row in remoteItems) {
+      final itemUuid = row['uuid'] as String;
+      final existing = await db.shoppingDao.getItemByUuid(itemUuid);
+      if (existing != null) continue;
+
+      // Resolve shopping_list_uuid → local int id.
+      final listUuid = row['shopping_list_uuid'] as String;
+      final localList = await db.shoppingDao.getListByUuid(listUuid);
+      if (localList == null) continue; // parent not pulled yet — skip
+
+      await db.shoppingDao
+          .saveItem(_remoteToShoppingItemCompanion(row, localList.id));
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Recipe drafts
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncRecipeDrafts(
+      String userId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+
+    // PUSH — updatedAt available; send only changed drafts.
+    final localChanged = lastSync == null
+        ? await db.utilityDao.getAllDrafts()
+        : await (db.select(db.recipeDrafts)
+                ..where((d) => d.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('recipe_drafts')
+          .upsert(
+            localChanged.map((d) => _recipeDraftToRow(d, userId)).toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL — last-write-wins on updatedAt.
+    final remoteQuery = client
+        .schema('memoix')
+        .from('recipe_drafts')
+        .select()
+        .eq('user_id', userId);
+
+    final List<Map<String, dynamic>> remoteDrafts = lastSync == null
+        ? await remoteQuery
+        : await remoteQuery.gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remoteDrafts) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      final existing = await db.utilityDao.getDraftByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.utilityDao
+            .updateDraft(_remoteToRecipeDraftCompanion(row).copyWith(
+          id: Value(existing.id),
+        ));
+      } else {
+        await db.utilityDao.createDraft(_remoteToRecipeDraftCompanion(row));
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Cooking logs
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Append-only sync for CookingLogs.
+  ///
+  /// No updatedAt column — push and pull by uuid existence only.
+  ///
+  /// Missing DAO methods:
+  /// - getAllLogs() → use existing getStats() which returns all rows
+  /// - getLogByUuid() → raw Drift
+  static Future<void> _syncCookingLogs(
+      String userId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+
+    // PUSH — CookingLogDao.getStats() returns all rows.
+    final allLogs = await db.cookingLogDao.getStats();
+    if (allLogs.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('cooking_logs')
+          .upsert(
+            allLogs.map((l) => _cookingLogToRow(l, userId)).toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL — append-only: only insert rows whose uuid is absent locally.
+    final List<Map<String, dynamic>> remoteLogs = await client
+        .schema('memoix')
+        .from('cooking_logs')
+        .select()
+        .eq('user_id', userId);
+
+    for (final row in remoteLogs) {
+      final remoteUuid = row['uuid'] as String;
+      // CookingLogDao has no getLogByUuid(); raw Drift used.
+      final existing = await (db.select(db.cookingLogs)
+            ..where((l) => l.uuid.equals(remoteUuid)))
+          .getSingleOrNull();
+      if (existing != null) continue;
+      await db.cookingLogDao.logCook(_remoteToCookingLogCompanion(row));
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Column mappers: local → remote (personal tables)
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Map<String, dynamic> _mealPlanToRow(MealPlan p, String userId) {
+    return {
+      'uuid': p.uuid,
+      'date': p.date,
+      'user_id': userId,
+    };
+  }
+
+  static Map<String, dynamic> _plannedMealToRow(
+      PlannedMeal m, String mealPlanUuid, String userId) {
+    return {
+      'instance_id': m.instanceId,
+      'meal_plan_uuid': mealPlanUuid,
+      'recipe_id': m.recipeId,
+      'recipe_name': m.recipeName,
+      'course': m.course,
+      'notes': m.notes,
+      'servings': m.servings,
+      'cuisine': m.cuisine,
+      'recipe_category': m.recipeCategory,
+      'user_id': userId,
+    };
+  }
+
+  static Map<String, dynamic> _shoppingListToRow(
+      ShoppingList l, String userId) {
+    return {
+      'uuid': l.uuid,
+      'name': l.name,
+      'created_at': l.createdAt.toUtc().toIso8601String(),
+      'completed_at': l.completedAt?.toUtc().toIso8601String(),
+      'recipe_ids': l.recipeIds,
+      'user_id': userId,
+    };
+  }
+
+  static Map<String, dynamic> _shoppingItemToRow(
+      ShoppingItem i, String shoppingListUuid, String userId) {
+    return {
+      'uuid': i.uuid,
+      'shopping_list_uuid': shoppingListUuid,
+      'name': i.name,
+      'amount': i.amount,
+      'unit': i.unit,
+      'category': i.category,
+      'recipe_source': i.recipeSource,
+      'is_checked': i.isChecked,
+      'manual_notes': i.manualNotes,
+      'user_id': userId,
+    };
+  }
+
+  static Map<String, dynamic> _recipeDraftToRow(
+      RecipeDraft d, String userId) {
+    return {
+      'uuid': d.uuid,
+      'name': d.name,
+      'image_path': d.imagePath,
+      'serves': d.serves,
+      'time': d.time,
+      'course': d.course,
+      'structured_ingredients': d.structuredIngredients,
+      'structured_directions': d.structuredDirections,
+      'legacy_ingredients': d.legacyIngredients,
+      'legacy_directions': d.legacyDirections,
+      'notes': d.notes,
+      'step_images': d.stepImages,
+      'step_image_map': d.stepImageMap,
+      'paired_recipe_ids': d.pairedRecipeIds,
+      'created_at': d.createdAt.toUtc().toIso8601String(),
+      'updated_at': d.updatedAt.toUtc().toIso8601String(),
+      'user_id': userId,
+    };
+  }
+
+  static Map<String, dynamic> _cookingLogToRow(
+      CookingLog l, String userId) {
+    return {
+      'uuid': l.uuid,
+      'recipe_id': l.recipeId,
+      'recipe_name': l.recipeName,
+      'recipe_course': l.recipeCourse,
+      'recipe_cuisine': l.recipeCuisine,
+      'cooked_at': l.cookedAt.toUtc().toIso8601String(),
+      'notes': l.notes,
+      'servings_made': l.servingsMade,
+      'user_id': userId,
+    };
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Column mappers: remote → local Companion (personal tables)
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static MealPlansCompanion _remoteToMealPlanCompanion(
+      Map<String, dynamic> row) {
+    return MealPlansCompanion(
+      uuid: Value(row['uuid'] as String? ?? ''),
+      date: Value(row['date'] as String),
+    );
+  }
+
+  static PlannedMealsCompanion _remoteToPlannedMealCompanion(
+      Map<String, dynamic> row, int localPlanId) {
+    return PlannedMealsCompanion(
+      mealPlanId: Value(localPlanId),
+      instanceId: Value(row['instance_id'] as String),
+      recipeId: Value(row['recipe_id'] as String?),
+      recipeName: Value(row['recipe_name'] as String?),
+      course: Value(row['course'] as String?),
+      notes: Value(row['notes'] as String?),
+      servings: Value(row['servings'] as int?),
+      cuisine: Value(row['cuisine'] as String?),
+      recipeCategory: Value(row['recipe_category'] as String?),
+    );
+  }
+
+  static ShoppingListsCompanion _remoteToShoppingListCompanion(
+      Map<String, dynamic> row) {
+    return ShoppingListsCompanion(
+      uuid: Value(row['uuid'] as String),
+      name: Value(row['name'] as String),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      completedAt: Value(row['completed_at'] == null
+          ? null
+          : DateTime.parse(row['completed_at'] as String).toLocal()),
+      recipeIds: Value(row['recipe_ids'] as String? ?? '[]'),
+    );
+  }
+
+  static ShoppingItemsCompanion _remoteToShoppingItemCompanion(
+      Map<String, dynamic> row, int localListId) {
+    return ShoppingItemsCompanion(
+      shoppingListId: Value(localListId),
+      uuid: Value(row['uuid'] as String),
+      name: Value(row['name'] as String),
+      amount: Value(row['amount'] as String?),
+      unit: Value(row['unit'] as String?),
+      category: Value(row['category'] as String?),
+      recipeSource: Value(row['recipe_source'] as String?),
+      isChecked: Value(row['is_checked'] as bool? ?? false),
+      manualNotes: Value(row['manual_notes'] as String?),
+    );
+  }
+
+  static RecipeDraftsCompanion _remoteToRecipeDraftCompanion(
+      Map<String, dynamic> row) {
+    String text(String key, [String fallback = '']) =>
+        row[key] as String? ?? fallback;
+    return RecipeDraftsCompanion(
+      uuid: Value(text('uuid')),
+      name: Value(text('name')),
+      imagePath: Value(row['image_path'] as String?),
+      serves: Value(row['serves'] as String?),
+      time: Value(row['time'] as String?),
+      course: Value(text('course', 'mains')),
+      structuredIngredients: Value(text('structured_ingredients', '[]')),
+      structuredDirections: Value(text('structured_directions', '[]')),
+      legacyIngredients: Value(row['legacy_ingredients'] as String?),
+      legacyDirections: Value(row['legacy_directions'] as String?),
+      notes: Value(text('notes')),
+      stepImages: Value(text('step_images', '[]')),
+      stepImageMap: Value(text('step_image_map', '[]')),
+      pairedRecipeIds: Value(text('paired_recipe_ids', '[]')),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+    );
+  }
+
+  static CookingLogsCompanion _remoteToCookingLogCompanion(
+      Map<String, dynamic> row) {
+    return CookingLogsCompanion(
+      uuid: Value(row['uuid'] as String? ?? ''),
+      recipeId: Value(row['recipe_id'] as String),
+      recipeName: Value(row['recipe_name'] as String),
+      recipeCourse: Value(row['recipe_course'] as String?),
+      recipeCuisine: Value(row['recipe_cuisine'] as String?),
+      cookedAt: Value(DateTime.parse(row['cooked_at'] as String).toLocal()),
+      notes: Value(row['notes'] as String?),
+      servingsMade: Value(row['servings_made'] as int?),
     );
   }
 
