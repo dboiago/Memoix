@@ -891,7 +891,30 @@ abstract class SupabaseSyncService {
             .gt('updated_at', lastSync.toIso8601String());
 
     for (final row in remoteCourses) {
-      await db.recipeDao.saveCourse(_remoteToCourseCompanion(row));
+      final remoteSlug = row['slug'] as String;
+      final companion = _remoteToCourseCompanion(row);
+
+      // Slug is the sync key — never use id-based conflict resolution.
+      final existing = await (db.select(db.courses)
+            ..where((c) => c.slug.equals(remoteSlug)))
+          .getSingleOrNull();
+
+      if (existing != null) {
+        // Update only shared display fields; preserve local id.
+        await (db.update(db.courses)..where((c) => c.id.equals(existing.id)))
+            .write(CoursesCompanion(
+              name: companion.name,
+              iconName: companion.iconName,
+              sortOrder: companion.sortOrder,
+              colorValue: companion.colorValue,
+              isVisible: companion.isVisible,
+            ));
+      } else {
+        await db.into(db.courses).insert(
+              companion,
+              mode: InsertMode.insertOrIgnore,
+            );
+      }
     }
   }
 
