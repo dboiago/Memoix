@@ -329,6 +329,7 @@ abstract class SupabaseSyncService {
     }
 
     // ── PULL: Supabase → local ───────────────────────────────────────────
+    debugPrint('SupabaseSyncService: recipe pull lastSync: $lastSync');
     final remoteQuery = client
         .schema('memoix')
         .from('recipes')
@@ -340,7 +341,11 @@ abstract class SupabaseSyncService {
         ? await remoteQuery
         : await remoteQuery.gt('updated_at', lastSync.toIso8601String());
 
+    debugPrint('SupabaseSyncService: recipe pull fetched ${remoteRows.length} rows from Supabase');
     final pulledUuids = <String>[];
+    int skipped = 0;
+    int updated = 0;
+    int inserted = 0;
 
     for (final row in remoteRows) {
       final remoteUuid = row['uuid'] as String;
@@ -351,7 +356,10 @@ abstract class SupabaseSyncService {
 
       if (existing != null) {
         // Local wins if same age or newer — skip.
-        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) {
+          skipped++;
+          continue;
+        }
 
         // Remote is newer: update, preserving personal fields.
         final companion = _remoteToRecipeCompanion(
@@ -362,6 +370,7 @@ abstract class SupabaseSyncService {
           lastCookedAt: existing.lastCookedAt,
         );
         await db.recipeDao.saveRecipe(companion.copyWith(id: Value(existing.id)));
+        updated++;
       } else {
         // New recipe from remote: insert with clean personal fields.
         final companion = _remoteToRecipeCompanion(
@@ -372,10 +381,12 @@ abstract class SupabaseSyncService {
           lastCookedAt: null,
         );
         await db.recipeDao.saveRecipe(companion);
+        inserted++;
       }
 
       pulledUuids.add(remoteUuid);
     }
+    debugPrint('SupabaseSyncService: recipe pull result — skipped: $skipped, updated: $updated, inserted: $inserted');
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedRecipesQuery = client
