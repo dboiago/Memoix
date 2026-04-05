@@ -12,6 +12,8 @@ import 'core/services/image_migration_service.dart';
 import 'core/services/integrity_service.dart';
 import 'core/services/interface_calibration.dart';
 import 'core/services/schema_migration_service.dart';
+import 'core/services/supabase_auth_service.dart';
+import 'core/services/supabase_sync_service.dart';
 import 'core/utils/ingredient_categorizer.dart';
 
 void main() async {
@@ -137,6 +139,11 @@ void main() async {
 
   // Note: Initial recipe sync now happens in background after app starts
   // See _DeepLinkWrapper in app/app.dart
+
+  // Supabase background sync — fire-and-forget; sync() never throws.
+  if (SupabaseAuthService.isSignedIn) {
+    SupabaseSyncService.sync().then((_) {});
+  }
 
   runApp(
     const ProviderScope(

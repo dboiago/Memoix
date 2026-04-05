@@ -16,6 +16,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/database/database.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/supabase_auth_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../cheese/repository/cheese_repository.dart';
@@ -305,6 +307,9 @@ class PersonalStorageService {
       // Start new debounce timer
       _pushDebouncer = Timer(_pushDebounceDelay, () {
         push(silent: true);
+        if (SupabaseAuthService.isSignedIn) {
+          SupabaseSyncService.sync().then((_) {});
+        }
       });
     });
   }
