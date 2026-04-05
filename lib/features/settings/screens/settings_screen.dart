@@ -9,6 +9,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/services/github_recipe_service.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/supabase_auth_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/database/database.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -263,13 +265,7 @@ class SettingsScreen extends ConsumerWidget {
             trailing: const Icon(Icons.chevron_right),
             onTap: () => _openExternalStorage(context),
           ),
-          ListTile(
-            leading: const Icon(Icons.folder_shared_outlined),
-            title: const Text('Shared Storage'),
-            subtitle: const Text('Access shared or managed recipe collections'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () => AppRoutes.toSharedStorage(context),
-          ),
+          _SupabaseConnectTile(context: context),
 
           const Divider(),
           
@@ -811,3 +807,208 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
     );
   }
 }
+
+/// Hidden Supabase connect/disconnect entry point.
+///
+/// Appears as the standard "Shared Storage" row. A normal tap navigates to
+/// Shared Storage as usual. Holding for 8 seconds reveals the connect /
+/// disconnect bottom sheet.
+class _SupabaseConnectTile extends StatefulWidget {
+  final BuildContext context;
+
+  const _SupabaseConnectTile({required this.context});
+
+  @override
+  State<_SupabaseConnectTile> createState() => _SupabaseConnectTileState();
+}
+
+class _SupabaseConnectTileState extends State<_SupabaseConnectTile> {
+  Timer? _pressTimer;
+  bool _isLongPressing = false;
+
+  void _handleTapDown(TapDownDetails details) {
+    setState(() => _isLongPressing = true);
+    _pressTimer = Timer(const Duration(milliseconds: 8000), () {
+      if (mounted) {
+        setState(() => _isLongPressing = false);
+        _showConnectSheet();
+      }
+    });
+  }
+
+  void _handleTapUp(TapUpDetails details) {
+    if (_pressTimer?.isActive ?? false) {
+      _pressTimer?.cancel();
+      setState(() => _isLongPressing = false);
+      AppRoutes.toSharedStorage(widget.context);
+    }
+  }
+
+  void _handleTapCancel() {
+    _pressTimer?.cancel();
+    setState(() => _isLongPressing = false);
+  }
+
+  @override
+  void dispose() {
+    _pressTimer?.cancel();
+    super.dispose();
+  }
+
+  void _showConnectSheet() {
+    if (SupabaseAuthService.isSignedIn) {
+      _showDisconnectSheet();
+    } else {
+      _showSignInSheet();
+    }
+  }
+
+  void _showSignInSheet() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => _SignInSheet(),
+    );
+  }
+
+  void _showDisconnectSheet() {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () async {
+                    Navigator.pop(ctx);
+                    await SupabaseAuthService.signOut();
+                    MemoixSnackBar.show('Disconnected');
+                  },
+                  child: const Text('Disconnect'),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTapDown: _handleTapDown,
+      onTapUp: _handleTapUp,
+      onTapCancel: _handleTapCancel,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        decoration: BoxDecoration(
+          color: _isLongPressing
+              ? Theme.of(context).colorScheme.surfaceContainerHighest
+              : Colors.transparent,
+        ),
+        child: ListTile(
+          leading: const Icon(Icons.folder_shared_outlined),
+          title: const Text('Shared Storage'),
+          subtitle: const Text('Access shared or managed recipe collections'),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: null,
+        ),
+      ),
+    );
+  }
+}
+
+/// Sign-in bottom sheet for [_SupabaseConnectTile].
+class _SignInSheet extends StatefulWidget {
+  @override
+  State<_SignInSheet> createState() => _SignInSheetState();
+}
+
+class _SignInSheetState extends State<_SignInSheet> {
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+  bool _loading = false;
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _connect() async {
+    setState(() => _loading = true);
+    final success = await SupabaseAuthService.signIn(
+      _emailController.text.trim(),
+      _passwordController.text,
+    );
+    if (!mounted) return;
+    if (success) {
+      Navigator.pop(context);
+      SupabaseSyncService.sync().then((_) {});
+      MemoixSnackBar.show('Connected');
+    } else {
+      setState(() => _loading = false);
+      MemoixSnackBar.showError('Connection failed');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: EdgeInsets.only(
+          left: 16,
+          right: 16,
+          top: 16,
+          bottom: MediaQuery.of(context).viewInsets.bottom + 16,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: _emailController,
+              keyboardType: TextInputType.emailAddress,
+              autofillHints: const [AutofillHints.email],
+              enabled: !_loading,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _passwordController,
+              obscureText: true,
+              autofillHints: const [AutofillHints.password],
+              enabled: !_loading,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: _loading ? null : _connect,
+                child: _loading
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Colors.white,
+                        ),
+                      )
+                    : const Text('Connect'),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
