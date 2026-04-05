@@ -182,13 +182,14 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
 
             // Invite by Email Section
             Text(
-              'Invite by Email',
+              'Grant Access',
               style: theme.textTheme.titleMedium,
             ),
             const SizedBox(height: 8),
             Text(
-              'Add an email address to grant immediate access. '
+              'Add an email address of the person you want to invite. '
               'Separate multiple addresses with a semicolon (;)',
+              'This grants them access to the shared folder — you\'ll then be prompted to send them a join link. '
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -261,7 +262,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Generate a link to share via messaging, email, or other apps',
+              'Generate a link to share via messaging, email, or other apps with anyone you want to invite.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
