@@ -7,6 +7,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/supabase_sync_service.dart';
 
 /// Repository for scratch pad data operations
 class ScratchPadRepository {
@@ -88,7 +89,9 @@ class ScratchPadRepository {
 
   /// Delete a draft by UUID
   Future<void> deleteDraft(String uuid) =>
-      _db.utilityDao.deleteDraftByUuid(uuid).then((_) {});
+      _db.utilityDao.deleteDraftByUuid(uuid).then((_) {
+        unawaited(SupabaseSyncService.notifyDeleted('recipe_drafts', uuid));
+      });
 
   /// Delete a draft by ID
   Future<void> deleteDraftById(int id) =>
