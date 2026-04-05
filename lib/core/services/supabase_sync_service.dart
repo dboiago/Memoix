@@ -21,6 +21,13 @@ abstract class SupabaseSyncService {
   // SharedPreferences keys for last-sync timestamps (ISO8601 UTC strings).
   static const _keyRecipes = 'supabase_sync_recipes';
   static const _keyIngredients = 'supabase_sync_ingredients';
+  static const _keyPizzas = 'supabase_sync_pizzas';
+  static const _keySandwiches = 'supabase_sync_sandwiches';
+  static const _keyCellarEntries = 'supabase_sync_cellar_entries';
+  static const _keyCheeseEntries = 'supabase_sync_cheese_entries';
+  static const _keySmokingRecipes = 'supabase_sync_smoking_recipes';
+  static const _keyCourses = 'supabase_sync_courses';
+  static const _keyScratchPads = 'supabase_sync_scratch_pads';
 
   // ─────────────────────────────────────────────────────────────────────────
   // Entry point
@@ -47,6 +54,13 @@ abstract class SupabaseSyncService {
     final prefs = await SharedPreferences.getInstance();
     final lastSyncRecipes = _getLastSync(prefs, _keyRecipes);
     final lastSyncIngredients = _getLastSync(prefs, _keyIngredients);
+    final lastSyncPizzas = _getLastSync(prefs, _keyPizzas);
+    final lastSyncSandwiches = _getLastSync(prefs, _keySandwiches);
+    final lastSyncCellarEntries = _getLastSync(prefs, _keyCellarEntries);
+    final lastSyncCheeseEntries = _getLastSync(prefs, _keyCheeseEntries);
+    final lastSyncSmokingRecipes = _getLastSync(prefs, _keySmokingRecipes);
+    final lastSyncCourses = _getLastSync(prefs, _keyCourses);
+    final lastSyncScratchPads = _getLastSync(prefs, _keyScratchPads);
 
     // ── Recipes — independent error boundary ──────────────────────────────
     List<String> pulledRecipeUuids = [];
@@ -63,6 +77,62 @@ abstract class SupabaseSyncService {
       await _setLastSync(prefs, _keyIngredients, DateTime.now().toUtc());
     } catch (e) {
       debugPrint('SupabaseSyncService: ingredient sync error: $e');
+    }
+
+    // ── Pizzas ────────────────────────────────────────────────────────────
+    try {
+      await _syncPizzas(groupId, lastSyncPizzas);
+      await _setLastSync(prefs, _keyPizzas, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: pizza sync error: $e');
+    }
+
+    // ── Sandwiches ────────────────────────────────────────────────────────
+    try {
+      await _syncSandwiches(groupId, lastSyncSandwiches);
+      await _setLastSync(prefs, _keySandwiches, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: sandwich sync error: $e');
+    }
+
+    // ── Cellar entries ────────────────────────────────────────────────────
+    try {
+      await _syncCellarEntries(groupId, lastSyncCellarEntries);
+      await _setLastSync(prefs, _keyCellarEntries, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: cellar entry sync error: $e');
+    }
+
+    // ── Cheese entries ────────────────────────────────────────────────────
+    try {
+      await _syncCheeseEntries(groupId, lastSyncCheeseEntries);
+      await _setLastSync(prefs, _keyCheeseEntries, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: cheese entry sync error: $e');
+    }
+
+    // ── Smoking recipes ───────────────────────────────────────────────────
+    try {
+      await _syncSmokingRecipes(groupId, lastSyncSmokingRecipes);
+      await _setLastSync(prefs, _keySmokingRecipes, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: smoking recipe sync error: $e');
+    }
+
+    // ── Courses ───────────────────────────────────────────────────────────
+    try {
+      await _syncCourses(groupId, lastSyncCourses);
+      await _setLastSync(prefs, _keyCourses, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: course sync error: $e');
+    }
+
+    // ── Scratch pads ──────────────────────────────────────────────────────
+    try {
+      await _syncScratchPads(groupId, lastSyncScratchPads);
+      await _setLastSync(prefs, _keyScratchPads, DateTime.now().toUtc());
+    } catch (e) {
+      debugPrint('SupabaseSyncService: scratch pad sync error: $e');
     }
   }
 
@@ -387,6 +457,737 @@ abstract class SupabaseSyncService {
       isOptional: Value(row['is_optional'] as bool? ?? false),
       section: Value(row['section'] as String?),
       bakerPercent: Value(row['baker_percent'] as String?),
+    );
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Pizzas
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncPizzas(String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // PUSH — CatalogueDao has no updatedSince method; raw Drift used.
+    final localChanged = lastSync == null
+        ? await db.select(db.pizzas).get()
+        : await (db.select(db.pizzas)
+                ..where((p) => p.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('pizzas')
+          .upsert(
+            localChanged.map((p) => _pizzaToRow(p, groupId, userId)).toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL
+    final remoteQueryPizzas = client
+        .schema('memoix')
+        .from('pizzas')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remotePizzas = lastSync == null
+        ? await remoteQueryPizzas
+        : await remoteQueryPizzas.gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remotePizzas) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      final existing = await db.catalogueDao.getPizzaByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          cookCount: existing.cookCount,
+          rating: existing.rating,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
+          row,
+          isFavorite: false,
+          cookCount: 0,
+          rating: 0,
+        ));
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Sandwiches
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncSandwiches(
+      String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // PUSH — CatalogueDao has no updatedSince method; raw Drift used.
+    final localChanged = lastSync == null
+        ? await db.select(db.sandwiches).get()
+        : await (db.select(db.sandwiches)
+                ..where((s) => s.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('sandwiches')
+          .upsert(
+            localChanged.map((s) => _sandwichToRow(s, groupId, userId)).toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL
+    final remoteQuerySandwiches = client
+        .schema('memoix')
+        .from('sandwiches')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remoteSandwiches = lastSync == null
+        ? await remoteQuerySandwiches
+        : await remoteQuerySandwiches
+            .gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remoteSandwiches) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      final existing = await db.catalogueDao.getSandwichByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          cookCount: existing.cookCount,
+          rating: existing.rating,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
+          row,
+          isFavorite: false,
+          cookCount: 0,
+          rating: 0,
+        ));
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Cellar entries
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncCellarEntries(
+      String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // PUSH — CellarDao has no updatedSince method; raw Drift used.
+    final localChanged = lastSync == null
+        ? await db.select(db.cellarEntries).get()
+        : await (db.select(db.cellarEntries)
+                ..where((e) => e.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('cellar_entries')
+          .upsert(
+            localChanged
+                .map((e) => _cellarEntryToRow(e, groupId, userId))
+                .toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL
+    final remoteQueryCellar = client
+        .schema('memoix')
+        .from('cellar_entries')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remoteCellar = lastSync == null
+        ? await remoteQueryCellar
+        : await remoteQueryCellar.gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remoteCellar) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      final existing = await db.cellarDao.getEntryByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          buy: existing.buy,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
+          row,
+          isFavorite: false,
+          buy: false,
+        ));
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Cheese entries
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncCheeseEntries(
+      String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // PUSH — CellarDao has no updatedSince method; raw Drift used.
+    final localChanged = lastSync == null
+        ? await db.select(db.cheeseEntries).get()
+        : await (db.select(db.cheeseEntries)
+                ..where((e) => e.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('cheese_entries')
+          .upsert(
+            localChanged
+                .map((e) => _cheeseEntryToRow(e, groupId, userId))
+                .toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL
+    final remoteQueryCheese = client
+        .schema('memoix')
+        .from('cheese_entries')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remoteCheese = lastSync == null
+        ? await remoteQueryCheese
+        : await remoteQueryCheese.gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remoteCheese) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      final existing = await db.cellarDao.getCheeseEntryByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          buy: existing.buy,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
+          row,
+          isFavorite: false,
+          buy: false,
+        ));
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Smoking recipes
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncSmokingRecipes(
+      String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // PUSH — SmokingDao has no updatedSince method; raw Drift used.
+    final localChanged = lastSync == null
+        ? await db.select(db.smokingRecipes).get()
+        : await (db.select(db.smokingRecipes)
+                ..where((r) => r.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('smoking_recipes')
+          .upsert(
+            localChanged
+                .map((r) => _smokingRecipeToRow(r, groupId, userId))
+                .toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL
+    final remoteQuerySmoking = client
+        .schema('memoix')
+        .from('smoking_recipes')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remoteSmoking = lastSync == null
+        ? await remoteQuerySmoking
+        : await remoteQuerySmoking
+            .gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remoteSmoking) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      final existing = await db.smokingDao.getRecipeByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          cookCount: existing.cookCount,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
+          row,
+          isFavorite: false,
+          cookCount: 0,
+        ));
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Courses
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncCourses(String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+
+    // PUSH — Courses table has no local updatedAt column; always push all.
+    // A client-side timestamp is sent as updated_at so remote can filter.
+    final allCourses = await db.recipeDao.getAllCourses();
+    if (allCourses.isNotEmpty) {
+      final now = DateTime.now().toUtc().toIso8601String();
+      await client
+          .schema('memoix')
+          .from('courses')
+          .upsert(
+            allCourses.map((c) => _courseToRow(c, groupId, now)).toList(),
+            onConflict: 'slug',
+          );
+    }
+
+    // PULL — inserts/updates only; never deletes local courses.
+    // No local updatedAt to compare, so remote always wins on pull.
+    final remoteQueryCourses = client
+        .schema('memoix')
+        .from('courses')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remoteCourses = lastSync == null
+        ? await remoteQueryCourses
+        : await remoteQueryCourses
+            .gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remoteCourses) {
+      await db.recipeDao.saveCourse(_remoteToCourseCompanion(row));
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Scratch pads
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Future<void> _syncScratchPads(
+      String groupId, DateTime? lastSync) async {
+    final db = AppDatabase.instance;
+    final client = _requireClient();
+    final userId = SupabaseAuthService.currentUserId;
+
+    // PUSH — UtilityDao has no updatedSince method; raw Drift used.
+    final localChanged = lastSync == null
+        ? await db.select(db.scratchPads).get()
+        : await (db.select(db.scratchPads)
+                ..where((s) => s.updatedAt.isBiggerThan(Variable(lastSync))))
+            .get();
+
+    if (localChanged.isNotEmpty) {
+      await client
+          .schema('memoix')
+          .from('scratch_pads')
+          .upsert(
+            localChanged
+                .map((s) => _scratchPadToRow(s, groupId, userId))
+                .toList(),
+            onConflict: 'uuid',
+          );
+    }
+
+    // PULL
+    final remoteQueryPads = client
+        .schema('memoix')
+        .from('scratch_pads')
+        .select()
+        .eq('group_id', groupId);
+
+    final List<Map<String, dynamic>> remotePads = lastSync == null
+        ? await remoteQueryPads
+        : await remoteQueryPads.gt('updated_at', lastSync.toIso8601String());
+
+    for (final row in remotePads) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
+
+      // UtilityDao has no getByUuid; raw Drift used.
+      final existing = await (db.select(db.scratchPads)
+            ..where((s) => s.uuid.equals(remoteUuid)))
+          .getSingleOrNull();
+
+      final companion = _remoteToScratchPadCompanion(row);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.utilityDao
+            .saveQuickNotes(companion.copyWith(id: Value(existing.id)));
+      } else {
+        await db.utilityDao.saveQuickNotes(companion);
+      }
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Column mappers: local → remote
+  // (Pizzas, Sandwiches, CellarEntries, CheeseEntries, SmokingRecipes,
+  //  Courses, ScratchPads)
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static Map<String, dynamic> _pizzaToRow(
+      Pizza p, String groupId, String? userId) {
+    return {
+      'uuid': p.uuid,
+      'name': p.name,
+      'base': p.base,
+      'cheeses': p.cheeses,
+      'proteins': p.proteins,
+      'vegetables': p.vegetables,
+      'notes': p.notes,
+      'image_url': p.imageUrl,
+      'source': p.source,
+      'tags': p.tags,
+      'created_at': p.createdAt.toUtc().toIso8601String(),
+      'updated_at': p.updatedAt.toUtc().toIso8601String(),
+      'version': p.version,
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  static Map<String, dynamic> _sandwichToRow(
+      Sandwich s, String groupId, String? userId) {
+    return {
+      'uuid': s.uuid,
+      'name': s.name,
+      'bread': s.bread,
+      'proteins': s.proteins,
+      'vegetables': s.vegetables,
+      'cheeses': s.cheeses,
+      'condiments': s.condiments,
+      'notes': s.notes,
+      'image_url': s.imageUrl,
+      'source': s.source,
+      'tags': s.tags,
+      'created_at': s.createdAt.toUtc().toIso8601String(),
+      'updated_at': s.updatedAt.toUtc().toIso8601String(),
+      'version': s.version,
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  static Map<String, dynamic> _cellarEntryToRow(
+      CellarEntry e, String groupId, String? userId) {
+    return {
+      'uuid': e.uuid,
+      'name': e.name,
+      'producer': e.producer,
+      'category': e.category,
+      'tasting_notes': e.tastingNotes,
+      'abv': e.abv,
+      'age_vintage': e.ageVintage,
+      'price_range': e.priceRange,
+      'image_url': e.imageUrl,
+      'source': e.source,
+      'created_at': e.createdAt.toUtc().toIso8601String(),
+      'updated_at': e.updatedAt.toUtc().toIso8601String(),
+      'version': e.version,
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  static Map<String, dynamic> _cheeseEntryToRow(
+      CheeseEntry e, String groupId, String? userId) {
+    return {
+      'uuid': e.uuid,
+      'name': e.name,
+      'country': e.country,
+      'milk': e.milk,
+      'texture': e.texture,
+      'type': e.type,
+      'flavour': e.flavour,
+      'price_range': e.priceRange,
+      'image_url': e.imageUrl,
+      'source': e.source,
+      'created_at': e.createdAt.toUtc().toIso8601String(),
+      'updated_at': e.updatedAt.toUtc().toIso8601String(),
+      'version': e.version,
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  static Map<String, dynamic> _smokingRecipeToRow(
+      SmokingRecipe r, String groupId, String? userId) {
+    return {
+      'uuid': r.uuid,
+      'name': r.name,
+      'course': r.course,
+      'type': r.type,
+      'item': r.item,
+      'category': r.category,
+      'temperature': r.temperature,
+      'time': r.time,
+      'wood': r.wood,
+      'seasonings_json': r.seasoningsJson,
+      'ingredients_json': r.ingredientsJson,
+      'serves': r.serves,
+      'directions': r.directions,
+      'notes': r.notes,
+      'header_image': r.headerImage,
+      'step_images': r.stepImages,
+      'step_image_map': r.stepImageMap,
+      'image_url': r.imageUrl,
+      'source': r.source,
+      'paired_recipe_ids': r.pairedRecipeIds,
+      'created_at': r.createdAt.toUtc().toIso8601String(),
+      'updated_at': r.updatedAt.toUtc().toIso8601String(),
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  static Map<String, dynamic> _courseToRow(
+      Course c, String groupId, String updatedAt) {
+    return {
+      'slug': c.slug,
+      'name': c.name,
+      'icon_name': c.iconName,
+      'sort_order': c.sortOrder,
+      'color_value': c.colorValue,
+      'is_visible': c.isVisible,
+      'group_id': groupId,
+      'updated_at': updatedAt,
+    };
+  }
+
+  static Map<String, dynamic> _scratchPadToRow(
+      ScratchPad s, String groupId, String? userId) {
+    return {
+      'uuid': s.uuid,
+      'quick_notes': s.quickNotes,
+      'updated_at': s.updatedAt.toUtc().toIso8601String(),
+      'group_id': groupId,
+      'updated_by': userId,
+    };
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Column mappers: remote → local Companion
+  // (Pizzas, Sandwiches, CellarEntries, CheeseEntries, SmokingRecipes,
+  //  Courses, ScratchPads)
+  // ─────────────────────────────────────────────────────────────────────────
+
+  static PizzasCompanion _remoteToPizzaCompanion(
+    Map<String, dynamic> row, {
+    required bool isFavorite,
+    required int cookCount,
+    required int rating,
+  }) {
+    String text(String key, [String fallback = '']) =>
+        row[key] as String? ?? fallback;
+    return PizzasCompanion(
+      uuid: Value(text('uuid')),
+      name: Value(text('name')),
+      base: Value(text('base', 'marinara')),
+      cheeses: Value(text('cheeses', '[]')),
+      proteins: Value(text('proteins', '[]')),
+      vegetables: Value(text('vegetables', '[]')),
+      notes: Value(row['notes'] as String?),
+      imageUrl: Value(row['image_url'] as String?),
+      source: Value(text('source', 'personal')),
+      tags: Value(text('tags', '[]')),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+      version: Value(row['version'] as int? ?? 1),
+      isFavorite: Value(isFavorite),
+      cookCount: Value(cookCount),
+      rating: Value(rating),
+    );
+  }
+
+  static SandwichesCompanion _remoteToSandwichCompanion(
+    Map<String, dynamic> row, {
+    required bool isFavorite,
+    required int cookCount,
+    required int rating,
+  }) {
+    String text(String key, [String fallback = '']) =>
+        row[key] as String? ?? fallback;
+    return SandwichesCompanion(
+      uuid: Value(text('uuid')),
+      name: Value(text('name')),
+      bread: Value(text('bread')),
+      proteins: Value(text('proteins', '[]')),
+      vegetables: Value(text('vegetables', '[]')),
+      cheeses: Value(text('cheeses', '[]')),
+      condiments: Value(text('condiments', '[]')),
+      notes: Value(row['notes'] as String?),
+      imageUrl: Value(row['image_url'] as String?),
+      source: Value(text('source', 'personal')),
+      tags: Value(text('tags', '[]')),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+      version: Value(row['version'] as int? ?? 1),
+      isFavorite: Value(isFavorite),
+      cookCount: Value(cookCount),
+      rating: Value(rating),
+    );
+  }
+
+  static CellarEntriesCompanion _remoteToCellarEntryCompanion(
+    Map<String, dynamic> row, {
+    required bool isFavorite,
+    required bool buy,
+  }) {
+    return CellarEntriesCompanion(
+      uuid: Value(row['uuid'] as String),
+      name: Value(row['name'] as String),
+      producer: Value(row['producer'] as String?),
+      category: Value(row['category'] as String?),
+      tastingNotes: Value(row['tasting_notes'] as String?),
+      abv: Value(row['abv'] as String?),
+      ageVintage: Value(row['age_vintage'] as String?),
+      priceRange: Value(row['price_range'] as int?),
+      imageUrl: Value(row['image_url'] as String?),
+      source: Value(row['source'] as String? ?? 'personal'),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+      version: Value(row['version'] as int? ?? 1),
+      isFavorite: Value(isFavorite),
+      buy: Value(buy),
+    );
+  }
+
+  static CheeseEntriesCompanion _remoteToCheeseEntryCompanion(
+    Map<String, dynamic> row, {
+    required bool isFavorite,
+    required bool buy,
+  }) {
+    return CheeseEntriesCompanion(
+      uuid: Value(row['uuid'] as String),
+      name: Value(row['name'] as String),
+      country: Value(row['country'] as String?),
+      milk: Value(row['milk'] as String?),
+      texture: Value(row['texture'] as String?),
+      type: Value(row['type'] as String?),
+      flavour: Value(row['flavour'] as String?),
+      priceRange: Value(row['price_range'] as int?),
+      imageUrl: Value(row['image_url'] as String?),
+      source: Value(row['source'] as String? ?? 'personal'),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+      version: Value(row['version'] as int? ?? 1),
+      isFavorite: Value(isFavorite),
+      buy: Value(buy),
+    );
+  }
+
+  static SmokingRecipesCompanion _remoteToSmokingRecipeCompanion(
+    Map<String, dynamic> row, {
+    required bool isFavorite,
+    required int cookCount,
+  }) {
+    String text(String key, [String fallback = '']) =>
+        row[key] as String? ?? fallback;
+    return SmokingRecipesCompanion(
+      uuid: Value(text('uuid')),
+      name: Value(text('name')),
+      course: Value(text('course', 'smoking')),
+      type: Value(text('type', 'pitNote')),
+      item: Value(row['item'] as String?),
+      category: Value(row['category'] as String?),
+      temperature: Value(text('temperature')),
+      time: Value(text('time')),
+      wood: Value(text('wood')),
+      seasoningsJson: Value(text('seasonings_json', '[]')),
+      ingredientsJson: Value(text('ingredients_json', '[]')),
+      serves: Value(row['serves'] as String?),
+      directions: Value(text('directions', '[]')),
+      notes: Value(row['notes'] as String?),
+      headerImage: Value(row['header_image'] as String?),
+      stepImages: Value(text('step_images', '[]')),
+      stepImageMap: Value(text('step_image_map', '[]')),
+      imageUrl: Value(row['image_url'] as String?),
+      source: Value(text('source', 'personal')),
+      pairedRecipeIds: Value(text('paired_recipe_ids', '[]')),
+      createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
+      updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
+      isFavorite: Value(isFavorite),
+      cookCount: Value(cookCount),
+    );
+  }
+
+  static CoursesCompanion _remoteToCourseCompanion(
+      Map<String, dynamic> row) {
+    return CoursesCompanion(
+      slug: Value(row['slug'] as String),
+      name: Value(row['name'] as String),
+      iconName: Value(row['icon_name'] as String?),
+      sortOrder: Value(row['sort_order'] as int? ?? 0),
+      colorValue: Value(row['color_value'] as int? ?? 0xFFFFB74D),
+      isVisible: Value(row['is_visible'] as bool? ?? true),
+    );
+  }
+
+  static ScratchPadsCompanion _remoteToScratchPadCompanion(
+      Map<String, dynamic> row) {
+    return ScratchPadsCompanion(
+      uuid: Value(row['uuid'] as String? ?? ''),
+      quickNotes: Value(row['quick_notes'] as String? ?? ''),
+      updatedAt:
+          Value(DateTime.parse(row['updated_at'] as String).toLocal()),
     );
   }
 
