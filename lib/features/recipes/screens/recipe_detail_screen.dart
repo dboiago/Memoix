@@ -164,8 +164,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
-    // Use headerImage for the app bar, fall back to legacy imageUrl/imageUrls
-    final headerImage = recipe.headerImage ?? recipe.getFirstImage();
+    // Use headerImage for the app bar only — no fallback to step/gallery images
+    final headerImage = recipe.headerImage;
     // Check if header images should be shown (user setting)
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;

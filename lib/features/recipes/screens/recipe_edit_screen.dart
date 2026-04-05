@@ -277,10 +277,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         }
       }
       
-      // Load header image only (from getFirstImage)
-      final firstImage = recipe.getFirstImage();
-      if (firstImage != null && firstImage.isNotEmpty) {
-        _headerImage = firstImage;
+      // Load header image only — do not fall back to step/gallery images
+      if (recipe.headerImage != null && recipe.headerImage!.isNotEmpty) {
+        _headerImage = recipe.headerImage;
       }
       
       // Load drinks-specific fields
