@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';
 
@@ -38,9 +39,30 @@ abstract class SupabaseSyncService {
   static const _keyCookingLogs = 'supabase_sync_cooking_logs';
   static const _keyRecipeImages = 'supabase_sync_recipe_images';
 
+  // Debounce timer for notifyChanged().
+  static Timer? _debounceTimer;
+
   // ─────────────────────────────────────────────────────────────────────────
   // Entry point
   // ─────────────────────────────────────────────────────────────────────────
+
+  /// Schedules a debounced [sync] call, independent of any storage provider.
+  ///
+  /// Cancels any pending timer and starts a new 5-second countdown.
+  /// On fire, calls [sync] fire-and-forget if the user is signed in.
+  /// Never throws.
+  static void notifyChanged() {
+    try {
+      _debounceTimer?.cancel();
+      _debounceTimer = Timer(const Duration(seconds: 5), () {
+        if (SupabaseAuthService.isSignedIn) {
+          sync().then((_) {});
+        }
+      });
+    } catch (e) {
+      debugPrint('SupabaseSyncService.notifyChanged error: $e');
+    }
+  }
 
   static Future<void> sync() async {
     // Guard: must be signed in.
