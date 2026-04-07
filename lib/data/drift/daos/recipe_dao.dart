@@ -220,13 +220,23 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             ..where((i) => i.recipeId.equals(recipeId)))
           .get();
 
-  Future<int> saveIngredient(IngredientsCompanion ingredient) =>
-      into(ingredients).insert(ingredient);
+  Future<int> saveIngredient(IngredientsCompanion ingredient) async {
+    final id = await into(ingredients).insert(ingredient);
+    await (update(recipes)
+          ..where((r) => r.id.equals(ingredient.recipeId.value)))
+        .write(RecipesCompanion(updatedAt: Value(DateTime.now())));
+    return id;
+  }
 
   Future<void> saveIngredients(List<IngredientsCompanion> rows) =>
       transaction(() async {
         for (final row in rows) {
           await into(ingredients).insert(row);
+        }
+        if (rows.isNotEmpty) {
+          await (update(recipes)
+                ..where((r) => r.id.equals(rows.first.recipeId.value)))
+              .write(RecipesCompanion(updatedAt: Value(DateTime.now())));
         }
       });
 
