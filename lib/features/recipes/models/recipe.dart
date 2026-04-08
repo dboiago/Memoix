@@ -7,6 +7,7 @@ enum RecipeSource {
   imported,  // Shared with the user / imported
   ocr,       // Scanned from photo
   url,       // Imported from URL
+  ai,        // Scanned by AI
 }
 
 class Recipe {
@@ -408,6 +409,9 @@ class Recipe {
 
 /// Embedded ingredient model
 class Ingredient {
+  /// Unique identifier for sync
+  String uuid = '';
+
   /// Ingredient name (e.g., "White Beans")
   String name = '';
 
@@ -435,6 +439,7 @@ class Ingredient {
   Ingredient();
 
   Ingredient.create({
+    this.uuid = '',
     required this.name,
     this.amount,
     this.unit,
@@ -447,6 +452,7 @@ class Ingredient {
 
   factory Ingredient.fromJson(Map<String, dynamic> json) {
     return Ingredient()
+      ..uuid = json['uuid']?.toString() ?? ''
       ..name = (json['name'] as String?) ?? ''
       ..amount = json['amount']?.toString()
       ..unit = json['unit']?.toString()
@@ -459,6 +465,7 @@ class Ingredient {
 
   Map<String, dynamic> toJson() {
     return {
+      'uuid': uuid,
       'name': name,
       'amount': amount,
       'unit': unit,

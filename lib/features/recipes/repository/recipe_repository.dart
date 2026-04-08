@@ -84,7 +84,7 @@ class RecipeRepository {
       int recipeId, List<Ingredient> ingredients) {
     return ingredients
         .map((i) => IngredientsCompanion(
-              uuid: Value(_uuid.v4()),
+              uuid: Value(i.uuid.trim().isNotEmpty ? i.uuid : _uuid.v4()),
               recipeId: Value(recipeId),
               name: Value(i.name),
               amount: Value(i.amount),
@@ -145,6 +145,7 @@ class RecipeRepository {
       ..pickleMethod = r.pickleMethod
       ..ingredients = ings
           .map((i) => Ingredient()
+            ..uuid = i.uuid
             ..name = i.name
             ..amount = i.amount
             ..unit = i.unit
