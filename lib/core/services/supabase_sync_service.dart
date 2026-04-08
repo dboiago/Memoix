@@ -455,14 +455,14 @@ abstract class SupabaseSyncService {
     }
 
     // ── PULL: Supabase → local ───────────────────────────────────────────
-    // Only pull ingredients for recipes that were just pulled.
-    if (pulledRecipeUuids.isEmpty) return;
-
+    // Fetch all non-deleted remote ingredients for the group. Replacement is
+    // driven solely by whether remote has rows for a recipe_uuid — independent
+    // of the recipe-level timestamp comparison made in _syncRecipes.
     final List<Map<String, dynamic>> remoteIngredients = await client
         .schema('memoix')
         .from('ingredients')
         .select()
-        .inFilter('recipe_uuid', pulledRecipeUuids)
+        .eq('group_id', groupId)
         .filter('deleted_at', 'is', null);
     debugPrint('SupabaseSyncService: ingredient sync — remote rows fetched: ${remoteIngredients.length}');
 
