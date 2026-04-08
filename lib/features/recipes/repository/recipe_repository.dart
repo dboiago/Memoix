@@ -416,6 +416,7 @@ class RecipeRepository {
     await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
     await _db.recipeDao
         .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
+    if (recipeId > 0) await _db.recipeDao.touchRecipe(recipeId);
 
     // Persist image blobs for any new local files.
     if (recipeId > 0 && fileNameToPath.isNotEmpty) {

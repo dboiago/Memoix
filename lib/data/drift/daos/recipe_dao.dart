@@ -137,6 +137,13 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
         RecipesCompanion(isFavorite: Value(!current)),
       );
 
+  /// Stamps [updatedAt] to now for a single recipe row. No other fields are
+  /// touched. Called after ingredient writes to ensure the parent recipe's
+  /// timestamp reflects the time all changes settled.
+  Future<void> touchRecipe(int id) =>
+      (update(recipes)..where((r) => r.id.equals(id)))
+          .write(RecipesCompanion(updatedAt: Value(DateTime.now())));
+
   /// Replaces all memoix-sourced recipes atomically.
   Future<void> syncMemoixRecipes(List<RecipesCompanion> incoming) =>
       transaction(() async {
