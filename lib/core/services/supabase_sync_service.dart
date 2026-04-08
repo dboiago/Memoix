@@ -2319,6 +2319,7 @@ abstract class SupabaseSyncService {
       await db.imageDao.saveImage(
         _remoteToRecipeImageCompanion(meta, parentRecipe.id, imageBytes),
       );
+    }
 
       // Write the blob to the local file cache immediately so that any
       // recipe already loaded in memory can display the image without
