@@ -2319,7 +2319,6 @@ abstract class SupabaseSyncService {
       await db.imageDao.saveImage(
         _remoteToRecipeImageCompanion(meta, parentRecipe.id, imageBytes),
       );
-    }
 
       // Write the blob to the local file cache immediately so that any
       // recipe already loaded in memory can display the image without
@@ -2337,6 +2336,7 @@ abstract class SupabaseSyncService {
         debugPrint(
             'SupabaseSyncService: could not write image cache for $fileName: $e');
       }
+    }
   }
 
   static Map<String, dynamic> _recipeImageToRow(
