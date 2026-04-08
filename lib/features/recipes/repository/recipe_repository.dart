@@ -84,6 +84,7 @@ class RecipeRepository {
       int recipeId, List<Ingredient> ingredients) {
     return ingredients
         .map((i) => IngredientsCompanion(
+              uuid: Value(_uuid.v4()),
               recipeId: Value(recipeId),
               name: Value(i.name),
               amount: Value(i.amount),
