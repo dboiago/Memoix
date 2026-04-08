@@ -455,14 +455,34 @@ abstract class SupabaseSyncService {
     }
 
     // ── PULL: Supabase → local ───────────────────────────────────────────
-    // Fetch all non-deleted remote ingredients for the group. Replacement is
-    // driven solely by whether remote has rows for a recipe_uuid — independent
-    // of the recipe-level timestamp comparison made in _syncRecipes.
+    // Ingredients have no updated_at column. Use Supabase recipes.updated_at
+    // as a proxy: only pull ingredients for recipes that changed remotely
+    // since lastSync. When lastSync is null this is a full bootstrap.
+    final remoteChangedRecipesQuery = client
+        .schema('memoix')
+        .from('recipes')
+        .select('uuid')
+        .eq('group_id', groupId)
+        .filter('deleted_at', 'is', null);
+
+    final List<Map<String, dynamic>> remoteChangedRecipeMeta = lastSync == null
+        ? await remoteChangedRecipesQuery
+        : await remoteChangedRecipesQuery
+            .gt('updated_at', lastSync.toIso8601String());
+
+    final remoteChangedRecipeUuids =
+        remoteChangedRecipeMeta.map((r) => r['uuid'] as String).toList();
+
+    if (remoteChangedRecipeUuids.isEmpty) {
+      debugPrint('SupabaseSyncService: ingredient sync — no remote recipe changes, skipping pull.');
+      return;
+    }
+
     final List<Map<String, dynamic>> remoteIngredients = await client
         .schema('memoix')
         .from('ingredients')
         .select()
-        .eq('group_id', groupId)
+        .inFilter('recipe_uuid', remoteChangedRecipeUuids)
         .filter('deleted_at', 'is', null);
     debugPrint('SupabaseSyncService: ingredient sync — remote rows fetched: ${remoteIngredients.length}');
 
@@ -478,12 +498,16 @@ abstract class SupabaseSyncService {
       final recipe = await db.recipeDao.getRecipeByUuid(entry.key);
       if (recipe == null) continue;
 
-      await db.recipeDao.deleteIngredientsForRecipe(recipe.id);
-
       final companions = entry.value
           .map((row) => _remoteToIngredientCompanion(row, recipe.id))
           .toList();
-      await db.recipeDao.saveIngredients(companions);
+
+      // Delete and reinsert atomically so a crash between the two operations
+      // cannot leave the table in a partial (duplicated) state.
+      await db.transaction(() async {
+        await db.recipeDao.deleteIngredientsForRecipe(recipe.id);
+        await db.recipeDao.saveIngredients(companions);
+      });
       replacedCount++;
     }
     debugPrint('SupabaseSyncService: ingredient sync — recipes replaced locally: $replacedCount');
