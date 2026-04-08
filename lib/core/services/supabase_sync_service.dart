@@ -427,6 +427,7 @@ abstract class SupabaseSyncService {
 
     if (changedRecipes.isNotEmpty) {
       final changedRecipeIds = changedRecipes.map((r) => r.id).toList();
+      debugPrint('SupabaseSyncService: ingredient sync — changed recipe ids: ${changedRecipeIds.length}');
       // Build recipeId → uuid map to avoid per-ingredient DB lookups.
       final recipeIdToUuid = {for (final r in changedRecipes) r.id: r.uuid};
 
@@ -442,6 +443,7 @@ abstract class SupabaseSyncService {
               return _ingredientToRow(ing, recipeUuid, groupId);
             })
             .toList();
+        debugPrint('SupabaseSyncService: ingredient sync — push rows: ${pushRows.length}');
 
         if (pushRows.isNotEmpty) {
           await client
@@ -462,6 +464,7 @@ abstract class SupabaseSyncService {
         .select()
         .inFilter('recipe_uuid', pulledRecipeUuids)
         .filter('deleted_at', 'is', null);
+    debugPrint('SupabaseSyncService: ingredient sync — remote rows fetched: ${remoteIngredients.length}');
 
     // Group by recipe_uuid for efficient per-recipe replacement.
     final byRecipe = <String, List<Map<String, dynamic>>>{};
@@ -470,6 +473,7 @@ abstract class SupabaseSyncService {
       byRecipe.putIfAbsent(rUuid, () => []).add(row);
     }
 
+    var replacedCount = 0;
     for (final entry in byRecipe.entries) {
       final recipe = await db.recipeDao.getRecipeByUuid(entry.key);
       if (recipe == null) continue;
@@ -480,7 +484,9 @@ abstract class SupabaseSyncService {
           .map((row) => _remoteToIngredientCompanion(row, recipe.id))
           .toList();
       await db.recipeDao.saveIngredients(companions);
+      replacedCount++;
     }
+    debugPrint('SupabaseSyncService: ingredient sync — recipes replaced locally: $replacedCount');
   }
 
   // ─────────────────────────────────────────────────────────────────────────
