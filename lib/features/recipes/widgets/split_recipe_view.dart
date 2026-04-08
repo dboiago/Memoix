@@ -294,6 +294,8 @@ class SplitRecipeView extends StatelessWidget {
                             child: _DirectionsColumn(
                               directions: recipe.directions,
                               isCompact: isCompact,
+                              recipe: recipe,
+                              onScrollToImage: onScrollToImage,
                             ),
                           ),
                         ),
@@ -833,10 +835,14 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
 class _DirectionsColumn extends ConsumerStatefulWidget {
   final List<String> directions;
   final bool isCompact;
+  final Recipe? recipe;
+  final Function(int stepIndex)? onScrollToImage;
 
   const _DirectionsColumn({
     required this.directions,
     required this.isCompact,
+    this.recipe,
+    this.onScrollToImage,
   });
 
   @override
@@ -994,6 +1000,25 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                   ),
                 ),
               ),
+
+              // Step image icon if this step has an associated image
+              if (widget.recipe?.getStepImageIndex(index) != null)
+                IconButton(
+                  icon: Icon(
+                    Icons.image_outlined,
+                    size: widget.isCompact ? 16 : 20,
+                    color: theme.colorScheme.primary,
+                  ),
+                  padding: EdgeInsets.zero,
+                  constraints: BoxConstraints(
+                    minWidth: widget.isCompact ? 24 : 32,
+                    minHeight: widget.isCompact ? 24 : 32,
+                  ),
+                  tooltip: 'View step image',
+                  onPressed: widget.onScrollToImage != null
+                      ? () => widget.onScrollToImage!(index)
+                      : null,
+                ),
             ],
           ),
         ),
