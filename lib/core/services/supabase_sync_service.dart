@@ -437,19 +437,34 @@ abstract class SupabaseSyncService {
 
       if (changedIngredients.isNotEmpty) {
         final pushRows = changedIngredients
-            .where((ing) => ing.uuid.trim().isNotEmpty)
+            .where((ing) =>
+                ing.uuid.trim().isNotEmpty &&
+                (recipeIdToUuid[ing.recipeId] ?? '').isNotEmpty)
             .map((ing) {
-              final recipeUuid = recipeIdToUuid[ing.recipeId] ?? '';
+              final recipeUuid = recipeIdToUuid[ing.recipeId]!;
               return _ingredientToRow(ing, recipeUuid, groupId);
             })
             .toList();
         debugPrint('SupabaseSyncService: ingredient sync — push rows: ${pushRows.length}');
 
         if (pushRows.isNotEmpty) {
+          // Ingredient UUIDs are regenerated on every local save, so upsert-by-uuid
+          // would accumulate stale remote rows. Instead: delete all existing Supabase
+          // rows for the affected recipes, then insert the current set wholesale.
+          final affectedRecipeUuids = pushRows
+              .map((row) => row['recipe_uuid'] as String)
+              .toSet()
+              .toList();
           await client
               .schema('memoix')
               .from('ingredients')
-              .upsert(pushRows, onConflict: 'uuid');
+              .delete()
+              .inFilter('recipe_uuid', affectedRecipeUuids)
+              .eq('group_id', groupId);
+          await client
+              .schema('memoix')
+              .from('ingredients')
+              .insert(pushRows);
         }
       }
     }
