@@ -481,7 +481,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 3;
+  int get schemaVersion => 4;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -548,6 +548,36 @@ class AppDatabase extends _$AppDatabase {
           await (update(cookingLogs)..where((t) => t.id.equals(row.id)))
               .write(CookingLogsCompanion(uuid: Value(_uuid.v4())));
         }
+      }
+      if (from < 4) {
+        // Ensure the unique index on recipe_images.file_name exists.
+        // `m.createTable(recipeImages)` in the v1→v2 migration may not have
+        // created @TableIndex indexes on some Drift versions/configurations,
+        // allowing duplicate file_name rows to accumulate. Those duplicates
+        // cause `getSingleOrNull()` to throw `StateError: Too many elements`.
+        //
+        // Step 1 — deduplicate: keep only the row with the highest id for each
+        // file_name (most recently written, therefore most likely to be correct).
+        await customStatement('''
+          DELETE FROM recipe_images
+          WHERE id NOT IN (
+            SELECT MAX(id) FROM recipe_images GROUP BY file_name
+          )
+        ''');
+
+        // Step 2 — create the unique index so future inserts can never produce
+        // duplicates again. IF NOT EXISTS makes this idempotent if the index
+        // was already created correctly by the v2 migration.
+        await customStatement('''
+          CREATE UNIQUE INDEX IF NOT EXISTS idx_recipe_images_file_name
+          ON recipe_images (file_name)
+        ''');
+
+        // Step 3 — create the non-unique lookup index for the same reason.
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipe_images_recipe_id
+          ON recipe_images (recipe_id)
+        ''');
       }
     },
   );

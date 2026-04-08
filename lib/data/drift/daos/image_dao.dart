@@ -31,7 +31,15 @@ class ImageDao extends DatabaseAccessor<AppDatabase> with _$ImageDaoMixin {
   Future<void> deleteImagesForRecipe(int recipeId) =>
       (delete(recipeImages)..where((t) => t.recipeId.equals(recipeId))).go();
 
+  /// Returns the image with the given [fileName], or null if none exists.
+  ///
+  /// Uses `limit(1)` deliberately: if duplicate rows exist (e.g. the unique
+  /// index was absent during a v1→v2 migration), `getSingleOrNull` would throw
+  /// `StateError: Too many elements`. Returning the first row is always safe
+  /// because all duplicates hold the same bytes for the same filename.
   Future<RecipeImage?> getImageByFileName(String fileName) =>
-      (select(recipeImages)..where((t) => t.fileName.equals(fileName)))
+      (select(recipeImages)
+            ..where((t) => t.fileName.equals(fileName))
+            ..limit(1))
           .getSingleOrNull();
 }

@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:drift/drift.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
@@ -208,16 +209,16 @@ class RecipeRepository {
   Future<void> _saveImageBlobs(
       int recipeId, Recipe recipe, Map<String, String> fileNameToPath) async {
     Future<void> save(String fileName, String imageType, int? stepIndex) async {
-      final existing = await _db.imageDao.getImageByFileName(fileName);
-      if (existing != null) return; // already in the blob store
-
-      final original = fileNameToPath[fileName];
-      if (original == null) return;
-
-      final file = File(original);
-      if (!await file.exists()) return; // file missing – skip silently
-
       try {
+        final existing = await _db.imageDao.getImageByFileName(fileName);
+        if (existing != null) return; // already in the blob store
+
+        final original = fileNameToPath[fileName];
+        if (original == null) return;
+
+        final file = File(original);
+        if (!await file.exists()) return; // file missing – skip silently
+
         final bytes = await file.readAsBytes();
         await _db.imageDao.saveImage(RecipeImagesCompanion(
           recipeId: Value(recipeId),
@@ -229,8 +230,9 @@ class RecipeRepository {
           mimeType: const Value('image/jpeg'),
           createdAt: Value(DateTime.now()),
         ));
-      } catch (_) {
-        // Failed blob write must not abort the recipe save.
+      } catch (e) {
+        // Blob write failures must not abort the recipe save.
+        debugPrint('RecipeRepository._saveImageBlobs: skipping $fileName — $e');
       }
     }
 
@@ -292,68 +294,61 @@ class RecipeRepository {
 
   // ============ RECIPES ============
 
+  /// Converts a list of raw [db.Recipe] rows into model [Recipe] objects,
+  /// skipping any row that fails to load (e.g. corrupted image reference).
+  ///
+  /// A single bad recipe must never prevent the rest of a course from loading.
+  Future<List<Recipe>> _loadRecipesFrom(List<db.Recipe> rows) async {
+    final results = await Future.wait(rows.map((r) async {
+      try {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return await _toIsarRecipe(r, ings);
+      } catch (e) {
+        debugPrint('RecipeRepository: skipping recipe ${r.id} (${r.name}): $e');
+        return null;
+      }
+    }));
+    return results.whereType<Recipe>().toList();
+  }
+
   Future<List<Recipe>> getAllRecipes() async {
     final rows = await _db.recipeDao.getAllRecipes();
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getRecipesByCourse(String course) async {
     final rows = await _db.recipeDao.getRecipesByCourse(course);
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getRecipesByCuisine(String cuisine) async {
     final rows = await _db.recipeDao.getRecipesByCuisine(cuisine);
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getRecipesBySource(RecipeSource source) async {
     final rows = await _db.recipeDao.getRecipesBySource(source.name);
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getPersonalRecipes() async {
     final rows = await _db.recipeDao.getPersonalRecipes();
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getMemoixRecipes() async {
     final rows = await _db.recipeDao.getMemoixRecipes();
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getImportedRecipes() async {
     final rows = await _db.recipeDao.getImportedRecipes();
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> getFavorites() async {
     final rows = await _db.recipeDao.getFavoriteRecipes();
-    return Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    return _loadRecipesFrom(rows);
   }
 
   Future<List<Recipe>> searchRecipes(String query,
@@ -370,10 +365,7 @@ class RecipeRepository {
     }
 
     final rows = await _db.recipeDao.searchRecipes(query);
-    final results = await Future.wait(rows.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }));
+    final results = await _loadRecipesFrom(rows);
 
     if (courseFilter != null && courseFilter.isNotEmpty) {
       return results
