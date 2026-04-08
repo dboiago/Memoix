@@ -284,7 +284,6 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
           },
         ).then((_) async {
           await processIntegrityResponses(ref);
-          await _refreshTemperatureKeyboard();
         });
       }
 
