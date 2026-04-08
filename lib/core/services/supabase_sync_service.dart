@@ -2217,6 +2217,9 @@ abstract class SupabaseSyncService {
                     t.createdAt.isBiggerThan(Variable<DateTime>(lastSync))))
             .get();
 
+    // Tracks recipe UUIDs already upserted this call to avoid redundant pushes.
+    final pushedRecipeUuids = <String>{};
+
     for (final image in localChanged) {
       // Resolve parent recipe UUID — no ImageDao helper; raw Drift used.
       final parentRecipe = await (db.select(db.recipes)
@@ -2229,6 +2232,23 @@ abstract class SupabaseSyncService {
             'has no parent recipe — skipping push.');
         continue;
       }
+
+      // Ensure the parent recipe exists in Supabase before pushing the image.
+      // The recipe may never have been synced (e.g. it pre-dates the first
+      // image sync, or its updatedAt is older than lastSyncRecipes). Upserting
+      // here prevents the recipe_images_recipe_uuid_fkey FK violation.
+      // Tracked per-call so each recipe is pushed at most once.
+      if (!pushedRecipeUuids.contains(parentRecipe.uuid)) {
+        if (parentRecipe.uuid.trim().isNotEmpty) {
+          await client
+              .schema('memoix')
+              .from('recipes')
+              .upsert(_recipeToRow(parentRecipe, groupId, userId),
+                  onConflict: 'uuid');
+          pushedRecipeUuids.add(parentRecipe.uuid);
+        }
+      }
+
       await client
           .schema('memoix')
           .from('recipe_images')

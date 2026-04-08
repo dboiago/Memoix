@@ -263,6 +263,11 @@ class RecipeRepository {
   /// - Absolute paths pass through unchanged (legacy data on device).
   /// - Plain filenames are looked up in the blob store; if found, the bytes
   ///   are written to the local cache directory and the full path is returned.
+  /// - If no blob is found (image not yet synced from another device), the
+  ///   absolute cache path is returned even though the file does not yet exist.
+  ///   This prevents PathNotFoundException from bare-filename paths being passed
+  ///   to File() in image widgets — widgets handle a missing absolute path
+  ///   gracefully (show placeholder) whereas a bare filename causes a crash.
   Future<String> _resolveImagePath(String value) async {
     if (value.startsWith('http')) return value;
     if (_isAbsolutePath(value)) return value;
@@ -274,7 +279,10 @@ class RecipeRepository {
     if (await cachedFile.exists()) return cachedFile.path;
 
     final blob = await _db.imageDao.getImageByFileName(value);
-    if (blob == null) return value; // no blob found – leave as-is
+    // Return the absolute path regardless of whether blob exists yet.
+    // The file may not be on disk (not yet synced), but an absolute path
+    // lets image widgets show a placeholder instead of throwing.
+    if (blob == null) return cachedFile.path;
 
     if (!await cacheDir.exists()) await cacheDir.create(recursive: true);
     await cachedFile.writeAsBytes(blob.imageData);
