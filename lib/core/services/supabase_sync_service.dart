@@ -1,10 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:drift/drift.dart';
 import 'package:flutter/foundation.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -2317,7 +2319,23 @@ abstract class SupabaseSyncService {
       await db.imageDao.saveImage(
         _remoteToRecipeImageCompanion(meta, parentRecipe.id, imageBytes),
       );
-    }
+
+      // Write the blob to the local file cache immediately so that any
+      // recipe already loaded in memory can display the image without
+      // a restart. _resolveImagePath (in RecipeRepository) uses the same
+      // path: <appDocDir>/recipe_images/<fileName>.
+      try {
+        final appDir = await getApplicationDocumentsDirectory();
+        final cacheDir = Directory('${appDir.path}/recipe_images');
+        if (!await cacheDir.exists()) await cacheDir.create(recursive: true);
+        final cachedFile = File('${cacheDir.path}/$fileName');
+        if (!await cachedFile.exists()) {
+          await cachedFile.writeAsBytes(imageBytes);
+        }
+      } catch (e) {
+        debugPrint(
+            'SupabaseSyncService: could not write image cache for $fileName: $e');
+      }
   }
 
   static Map<String, dynamic> _recipeImageToRow(
