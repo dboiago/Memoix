@@ -419,17 +419,27 @@ abstract class SupabaseSyncService {
     // ── PUSH: local → Supabase ───────────────────────────────────────────
     // Ingredients that belong to recipes changed since lastSync.
     // RecipeDao has no bulk getIngredientsByRecipeIds() — raw Drift query used.
+    //
+    // IMPORTANT: exclude recipes in pulledRecipeUuids. Those recipes were just
+    // pulled from remote in _syncRecipes, which stamped their local updatedAt to
+    // the remote timestamp. That makes them appear in the updatedAt filter below,
+    // but their local ingredients are the stale pre-pull set — pushing them would
+    // overwrite the remote device's ingredient changes.
     final changedRecipes = lastSync == null
         ? await db.select(db.recipes).get()
         : await (db.select(db.recipes)
                 ..where((r) => r.updatedAt.isBiggerThan(Variable(lastSync))))
             .get();
 
-    if (changedRecipes.isNotEmpty) {
-      final changedRecipeIds = changedRecipes.map((r) => r.id).toList();
+    final recipesToPush = changedRecipes
+        .where((r) => !pulledRecipeUuids.contains(r.uuid))
+        .toList();
+
+    if (recipesToPush.isNotEmpty) {
+      final changedRecipeIds = recipesToPush.map((r) => r.id).toList();
       debugPrint('SupabaseSyncService: ingredient sync — changed recipe ids: ${changedRecipeIds.length}');
       // Build recipeId → uuid map to avoid per-ingredient DB lookups.
-      final recipeIdToUuid = {for (final r in changedRecipes) r.id: r.uuid};
+      final recipeIdToUuid = {for (final r in recipesToPush) r.id: r.uuid};
 
       final changedIngredients = await (db.select(db.ingredients)
             ..where((i) => i.recipeId.isIn(changedRecipeIds)))
