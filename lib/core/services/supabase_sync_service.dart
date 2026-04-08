@@ -2292,8 +2292,7 @@ abstract class SupabaseSyncService {
       final imageDataRaw = blobRows.first['image_data'];
       if (imageDataRaw == null) continue;
 
-      // PostgREST returns bytea columns as base64-encoded strings.
-      final Uint8List imageBytes = base64Decode(imageDataRaw as String);
+      final Uint8List imageBytes = _decodePostgrestBytea(imageDataRaw as String);
 
       await db.imageDao.saveImage(
         _remoteToRecipeImageCompanion(meta, parentRecipe.id, imageBytes),
@@ -2444,6 +2443,31 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
   // Utilities
   // ─────────────────────────────────────────────────────────────────────────
+
+  /// Decodes a bytea value returned by PostgREST/Supabase.
+  ///
+  /// PostgREST may return bytea columns in one of two formats depending on
+  /// the server's `bytea_output` setting:
+  ///
+  /// - `\x<hex>` — PostgreSQL hex format. The stored bytes are the UTF-8
+  ///   encoding of the original base64 string (because PostgREST stored the
+  ///   JSON base64 value byte-for-byte without decoding it). Recover via:
+  ///   hex-decode → utf8 string → base64-decode.
+  /// - Plain base64 string — decode directly.
+  static Uint8List _decodePostgrestBytea(String raw) {
+    if (raw.startsWith('\\x')) {
+      // Hex-decode: each pair of hex chars → one byte.
+      final hex = raw.substring(2);
+      final asciiBytes = Uint8List(hex.length ~/ 2);
+      for (var i = 0; i < asciiBytes.length; i++) {
+        asciiBytes[i] = int.parse(hex.substring(i * 2, i * 2 + 2), radix: 16);
+      }
+      // The resulting bytes are the UTF-8 encoding of our original base64
+      // push string — decode it to recover the raw image bytes.
+      return base64Decode(String.fromCharCodes(asciiBytes));
+    }
+    return base64Decode(raw);
+  }
 
   /// Returns the Supabase client, or throws [StateError] if not initialized.
   ///
