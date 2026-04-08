@@ -448,56 +448,48 @@ abstract class SupabaseSyncService {
         debugPrint('SupabaseSyncService: ingredient sync — push rows: ${pushRows.length}');
 
         if (pushRows.isNotEmpty) {
-          // Ingredient UUIDs are regenerated on every local save, so upsert-by-uuid
-          // would accumulate stale remote rows. Instead: delete all existing Supabase
-          // rows for the affected recipes, then insert the current set wholesale.
+          // Ingredient UUIDs are now stable (generated once, round-tripped through
+          // the model), so upsert-by-uuid correctly updates existing rows and
+          // inserts new ones without accumulating stale rows.
+          await client
+              .schema('memoix')
+              .from('ingredients')
+              .upsert(pushRows, onConflict: 'uuid');
+
+          // Delete remote rows for these recipes that no longer exist locally
+          // (e.g., the user removed an ingredient). Scoped to affected recipes
+          // and excludes the uuids we just upserted.
           final affectedRecipeUuids = pushRows
               .map((row) => row['recipe_uuid'] as String)
               .toSet()
+              .toList();
+          final currentUuids = pushRows
+              .map((row) => row['uuid'] as String)
               .toList();
           await client
               .schema('memoix')
               .from('ingredients')
               .delete()
               .inFilter('recipe_uuid', affectedRecipeUuids)
+              .not('uuid', 'in', '(${currentUuids.join(',')})')
               .eq('group_id', groupId);
-          await client
-              .schema('memoix')
-              .from('ingredients')
-              .insert(pushRows);
         }
       }
     }
 
     // ── PULL: Supabase → local ───────────────────────────────────────────
-    // Ingredients have no updated_at column. Use Supabase recipes.updated_at
-    // as a proxy: only pull ingredients for recipes that changed remotely
-    // since lastSync. When lastSync is null this is a full bootstrap.
-    final remoteChangedRecipesQuery = client
-        .schema('memoix')
-        .from('recipes')
-        .select('uuid')
-        .eq('group_id', groupId)
-        .filter('deleted_at', 'is', null);
-
-    final List<Map<String, dynamic>> remoteChangedRecipeMeta = lastSync == null
-        ? await remoteChangedRecipesQuery
-        : await remoteChangedRecipesQuery
-            .gt('updated_at', lastSync.toIso8601String());
-
-    final remoteChangedRecipeUuids =
-        remoteChangedRecipeMeta.map((r) => r['uuid'] as String).toList();
-
-    if (remoteChangedRecipeUuids.isEmpty) {
-      debugPrint('SupabaseSyncService: ingredient sync — no remote recipe changes, skipping pull.');
-      return;
-    }
+    // Scope to recipes that _syncRecipes confirmed are newer on remote.
+    // This is the authoritative signal: if remote recipe metadata was pulled,
+    // its ingredients must also be replaced. Using a Supabase timestamp query
+    // as a proxy is unreliable once lastSyncIngredients advances past a missed
+    // change — those changes would never be retried.
+    if (pulledRecipeUuids.isEmpty) return;
 
     final List<Map<String, dynamic>> remoteIngredients = await client
         .schema('memoix')
         .from('ingredients')
         .select()
-        .inFilter('recipe_uuid', remoteChangedRecipeUuids)
+        .inFilter('recipe_uuid', pulledRecipeUuids)
         .filter('deleted_at', 'is', null);
     debugPrint('SupabaseSyncService: ingredient sync — remote rows fetched: ${remoteIngredients.length}');
 
