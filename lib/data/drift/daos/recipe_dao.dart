@@ -206,6 +206,43 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
     });
   }
 
+  /// Like [watchAllRecipes] but includes each recipe's ingredients in the
+  /// result, extracted from the same JOIN so no extra queries are needed.
+  Stream<List<({Recipe recipe, List<Ingredient> ingredients})>>
+      watchRecipesWithIngredients() {
+    return select(recipes).join([
+      leftOuterJoin(ingredients, ingredients.recipeId.equalsExp(recipes.id)),
+    ]).watch().map((rows) {
+      // Preserve insertion order while building grouped result.
+      final recipeOrder = <int>[];
+      final recipeMap = <int, Recipe>{};
+      final ingredientMap = <int, List<Ingredient>>{};
+      for (final row in rows) {
+        final recipe = row.readTable(recipes);
+        if (!recipeMap.containsKey(recipe.id)) {
+          recipeMap[recipe.id] = recipe;
+          ingredientMap[recipe.id] = [];
+          recipeOrder.add(recipe.id);
+        }
+        final ingredient = row.readTableOrNull(ingredients);
+        if (ingredient != null) {
+          ingredientMap[recipe.id]!.add(ingredient);
+        }
+      }
+      return recipeOrder
+          .map((id) => (
+                recipe: recipeMap[id]!,
+                ingredients: ingredientMap[id]!,
+              ))
+          .toList();
+    });
+  }
+
+  /// Returns all ingredient rows in a single query.
+  /// Used with [watchFavoriteRecipes] / [watchRecipesByCourse] to avoid N+1
+  /// queries: fetch all ingredients once, then group in Dart.
+  Future<List<Ingredient>> getAllIngredients() => select(ingredients).get();
+
   Stream<List<Recipe>> watchFavoriteRecipes() =>
       (select(recipes)..where((r) => r.isFavorite.equals(true))).watch();
 

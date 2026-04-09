@@ -1060,7 +1060,23 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final recipesAsync = ref.watch(allRecipesProvider);
+    // Select only fields used by this picker (uuid, name, cuisine, course,
+    // ingredientCount) — avoids rebuilds from unrelated recipe field changes.
+    final recipesAsync = ref.watch(
+      allRecipesProvider.select(
+        (v) => v.whenData(
+          (list) => list
+              .map((r) => (
+                uuid: r.uuid,
+                name: r.name,
+                cuisine: r.cuisine,
+                course: r.course,
+                ingredientCount: r.ingredients.length,
+              ))
+              .toList(),
+        ),
+      ),
+    );
 
     return Scaffold(
       appBar: AppBar(
@@ -1126,6 +1142,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
                         r.course.toLowerCase().contains(_searchQuery),
                       ).toList();
 
+
                 if (filtered.isEmpty) {
                   return Center(
                     child: Text(
@@ -1160,7 +1177,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
                         style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                       ),
                       trailing: Text(
-                        '${recipe.ingredients.length} items',
+                        '${recipe.ingredientCount} items',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: theme.colorScheme.outline,
                         ),
@@ -1297,65 +1314,63 @@ class _ShoppingListNutritionChip extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final recipesAsync = ref.watch(allRecipesProvider);
-    
-    return recipesAsync.when(
-      loading: () => const SizedBox.shrink(),
-      error: (_, __) => const SizedBox.shrink(),
-      data: (allRecipes) {
-        // Find recipes and sum up nutrition
-        int totalCalories = 0;
-        double totalProtein = 0;
-        double totalCarbs = 0;
-        double totalFat = 0;
-        int recipesWithNutrition = 0;
-        
-        for (final id in recipeIds) {
-          final recipe = allRecipes.firstWhere(
-            (r) => r.uuid == id,
-            orElse: () => Recipe()..name = '',
-          );
-          if (recipe.nutrition != null && recipe.nutrition!.hasData) {
-            recipesWithNutrition++;
-            if (recipe.nutrition!.calories != null) {
-              totalCalories += recipe.nutrition!.calories!;
-            }
-            if (recipe.nutrition!.proteinContent != null) {
-              totalProtein += recipe.nutrition!.proteinContent!;
-            }
-            if (recipe.nutrition!.carbohydrateContent != null) {
-              totalCarbs += recipe.nutrition!.carbohydrateContent!;
-            }
-            if (recipe.nutrition!.fatContent != null) {
-              totalFat += recipe.nutrition!.fatContent!;
-            }
-          }
-        }
-        
-        if (totalCalories == 0) return const SizedBox.shrink();
-        
-        return Padding(
-          padding: const EdgeInsets.only(right: 8),
-          child: Tooltip(
-            message: '${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat',
-            child: ActionChip(
-              avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.primary),
-              label: Text('$totalCalories cal'),
-              visualDensity: VisualDensity.compact,
-              backgroundColor: theme.colorScheme.surfaceContainerHighest,
-              onPressed: () => _showNutritionDetails(
-                context,
-                totalCalories: totalCalories,
-                totalProtein: totalProtein,
-                totalCarbs: totalCarbs,
-                totalFat: totalFat,
-                recipesWithNutrition: recipesWithNutrition,
-                totalRecipes: recipeIds.length,
-              ),
-            ),
+
+    final recipeIdSet = recipeIds.toSet();
+
+    // Select only nutrition primitives for the shopping list's recipe IDs.
+    final nutritionData = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? [])
+            .where((r) => recipeIdSet.contains(r.uuid))
+            .map((r) => (
+              calories: r.nutrition?.calories,
+              protein: r.nutrition?.proteinContent,
+              carbs: r.nutrition?.carbohydrateContent,
+              fat: r.nutrition?.fatContent,
+            ))
+            .toList(),
+      ),
+    );
+
+    int totalCalories = 0;
+    double totalProtein = 0;
+    double totalCarbs = 0;
+    double totalFat = 0;
+    int recipesWithNutrition = 0;
+
+    for (final n in nutritionData) {
+      final hasData = n.calories != null || n.fat != null || n.carbs != null || n.protein != null;
+      if (hasData) {
+        recipesWithNutrition++;
+        if (n.calories != null) totalCalories += n.calories!;
+        if (n.protein != null) totalProtein += n.protein!;
+        if (n.carbs != null) totalCarbs += n.carbs!;
+        if (n.fat != null) totalFat += n.fat!;
+      }
+    }
+
+    if (totalCalories == 0) return const SizedBox.shrink();
+
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: Tooltip(
+        message: '${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat',
+        child: ActionChip(
+          avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.primary),
+          label: Text('$totalCalories cal'),
+          visualDensity: VisualDensity.compact,
+          backgroundColor: theme.colorScheme.surfaceContainerHighest,
+          onPressed: () => _showNutritionDetails(
+            context,
+            totalCalories: totalCalories,
+            totalProtein: totalProtein,
+            totalCarbs: totalCarbs,
+            totalFat: totalFat,
+            recipesWithNutrition: recipesWithNutrition,
+            totalRecipes: recipeIds.length,
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 

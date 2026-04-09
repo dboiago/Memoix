@@ -73,55 +73,45 @@ class ModernistRepository {
 
   /// Watch all modernist recipes
   Stream<List<ModernistRecipe>> watchAll() {
-    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
-      final filtered =
-          recipes.where((r) => r.recipeType == 'modernist').toList();
-      return Future.wait(filtered.map((r) async {
-        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-        return _toModernistRecipe(r, ings);
-      }));
+    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
+      return pairs
+          .where((p) => p.recipe.recipeType == 'modernist')
+          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
+          .toList();
     });
   }
 
   /// Watch recipes by type (Concept or Technique)
   Stream<List<ModernistRecipe>> watchByType(ModernistType type) {
-    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
-      final filtered = recipes
-          .where((r) =>
-              r.recipeType == 'modernist' && r.modernistType == type.name)
+    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
+      return pairs
+          .where((p) =>
+              p.recipe.recipeType == 'modernist' &&
+              p.recipe.modernistType == type.name)
+          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
           .toList();
-      return Future.wait(filtered.map((r) async {
-        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-        return _toModernistRecipe(r, ings);
-      }));
     });
   }
 
   /// Watch recipes by technique category
   Stream<List<ModernistRecipe>> watchByTechnique(String technique) {
-    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
-      final filtered = recipes
-          .where((r) =>
-              r.recipeType == 'modernist' &&
-              r.technique?.toLowerCase() == technique.toLowerCase())
+    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
+      return pairs
+          .where((p) =>
+              p.recipe.recipeType == 'modernist' &&
+              p.recipe.technique?.toLowerCase() == technique.toLowerCase())
+          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
           .toList();
-      return Future.wait(filtered.map((r) async {
-        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-        return _toModernistRecipe(r, ings);
-      }));
     });
   }
 
   /// Watch favorite recipes
   Stream<List<ModernistRecipe>> watchFavorites() {
-    return _db.recipeDao.watchAllRecipes().asyncMap((recipes) async {
-      final filtered = recipes
-          .where((r) => r.recipeType == 'modernist' && r.isFavorite)
+    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
+      return pairs
+          .where((p) => p.recipe.recipeType == 'modernist' && p.recipe.isFavorite)
+          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
           .toList();
-      return Future.wait(filtered.map((r) async {
-        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-        return _toModernistRecipe(r, ings);
-      }));
     });
   }
 

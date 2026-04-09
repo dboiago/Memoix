@@ -77,8 +77,16 @@ class RecipeDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Watch the recipes stream to get live updates on favourite changes
-    final recipesAsync = ref.watch(allRecipesProvider);
+    // Watch only the single recipe matching this screen's UUID so unrelated
+    // recipe changes (other recipes' cookCount, nutrition, etc.) do not cause
+    // this screen to rebuild.
+    final recipesAsync = ref.watch(
+      allRecipesProvider.select(
+        (v) => v.whenData(
+          (list) => list.firstWhereOrNull((r) => r.uuid == recipeId),
+        ),
+      ),
+    );
 
     return recipesAsync.when(
       loading: () => const Scaffold(
@@ -88,13 +96,8 @@ class RecipeDetailScreen extends ConsumerWidget {
         appBar: AppBar(),
         body: Center(child: Text('Error: $err')),
       ),
-      data: (recipes) {
-        final recipe = recipes.firstWhere(
-          (r) => r.uuid == recipeId,
-          orElse: () => Recipe()..name = '',
-        );
-        
-        if (recipe.name.isEmpty) {
+      data: (recipe) {
+        if (recipe == null || recipe.name.isEmpty) {
           return Scaffold(
             appBar: AppBar(),
             body: const Center(child: Text('Recipe not found')),
@@ -1100,19 +1103,21 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   /// Check if a recipe has any paired recipes (explicit or inverse)
   bool _hasPairedRecipes(WidgetRef ref, Recipe recipe) {
-    final allRecipesAsync = ref.watch(allRecipesProvider);
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
-    
-    if (allRecipes.isEmpty) return false;
-    
-    // Check for explicit pairings
+    // Select only the (uuid, pairedRecipeIds) pairs needed for pairing logic.
+    final pairs = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? []).map((r) => (uuid: r.uuid, pairedIds: r.pairedRecipeIds)).toList(),
+      ),
+    );
+
+    if (pairs.isEmpty) return false;
+
     if (recipe.pairedRecipeIds.isNotEmpty) return true;
-    
-    // Check for inverse pairings
-    for (final r in allRecipes) {
-      if (r.pairedRecipeIds.contains(recipe.uuid)) return true;
+
+    for (final p in pairs) {
+      if (p.pairedIds.contains(recipe.uuid)) return true;
     }
-    
+
     return false;
   }
 
@@ -1127,28 +1132,34 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   ) {
     final chips = <Widget>[];
     
-    // Get all recipes for lookup
-    final allRecipesAsync = ref.watch(allRecipesProvider);
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
-    
-    if (allRecipes.isEmpty) return chips;
-    
+    // Select only (uuid, name, course, pairedRecipeIds) — rebuilds only when
+    // pairing data changes, not when unrelated fields like cookCount change.
+    final pairs = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? [])
+            .map((r) => (uuid: r.uuid, name: r.name, course: r.course, pairedIds: r.pairedRecipeIds))
+            .toList(),
+      ),
+    );
+
+    if (pairs.isEmpty) return chips;
+
     // Collect all paired recipes (explicit + inverse)
-    final pairedRecipes = <Recipe>[];
-    
+    final pairedRecipes = <({String uuid, String name, String course})>[];
+
     // 1. Explicit pairings: recipes we link to
     for (final uuid in recipe.pairedRecipeIds) {
-      final linked = allRecipes.where((r) => r.uuid == uuid).firstOrNull;
+      final linked = pairs.firstWhereOrNull((p) => p.uuid == uuid);
       if (linked != null && !pairedRecipes.any((r) => r.uuid == linked.uuid)) {
-        pairedRecipes.add(linked);
+        pairedRecipes.add((uuid: linked.uuid, name: linked.name, course: linked.course));
       }
     }
-    
+
     // 2. Inverse pairings: recipes that link to us
-    for (final r in allRecipes) {
-      if (r.pairedRecipeIds.contains(recipe.uuid) && 
-          !pairedRecipes.any((pr) => pr.uuid == r.uuid)) {
-        pairedRecipes.add(r);
+    for (final p in pairs) {
+      if (p.pairedIds.contains(recipe.uuid) &&
+          !pairedRecipes.any((pr) => pr.uuid == p.uuid)) {
+        pairedRecipes.add((uuid: p.uuid, name: p.name, course: p.course));
       }
     }
     
