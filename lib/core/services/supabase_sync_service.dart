@@ -315,43 +315,40 @@ abstract class SupabaseSyncService {
 
     final pulledUuids = <String>[];
 
-    await db.transaction(() async {
-      for (final row in remoteRows) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remoteRows) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.recipeDao.getRecipeByUuid(remoteUuid);
+      final existing = await db.recipeDao.getRecipeByUuid(remoteUuid);
 
-        if (existing != null) {
-          // Local wins if same age or newer — skip.
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+      if (existing != null) {
+        // Local wins if same age or newer — skip.
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
 
-          // Remote is newer: update, preserving personal fields.
-          final companion = _remoteToRecipeCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            rating: existing.rating,
-            cookCount: existing.cookCount,
-            lastCookedAt: existing.lastCookedAt,
-          );
-          await db.recipeDao
-              .saveRecipe(companion.copyWith(id: Value(existing.id)));
-        } else {
-          // New recipe from remote: insert with clean personal fields.
-          final companion = _remoteToRecipeCompanion(
-            row,
-            isFavorite: false,
-            rating: 0,
-            cookCount: 0,
-            lastCookedAt: null,
-          );
-          await db.recipeDao.saveRecipe(companion);
-        }
-
-        pulledUuids.add(remoteUuid);
+        // Remote is newer: update, preserving personal fields.
+        final companion = _remoteToRecipeCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          rating: existing.rating,
+          cookCount: existing.cookCount,
+          lastCookedAt: existing.lastCookedAt,
+        );
+        await db.recipeDao.saveRecipe(companion.copyWith(id: Value(existing.id)));
+      } else {
+        // New recipe from remote: insert with clean personal fields.
+        final companion = _remoteToRecipeCompanion(
+          row,
+          isFavorite: false,
+          rating: 0,
+          cookCount: 0,
+          lastCookedAt: null,
+        );
+        await db.recipeDao.saveRecipe(companion);
       }
-    });
+
+      pulledUuids.add(remoteUuid);
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedRecipesQuery = client
@@ -364,17 +361,15 @@ abstract class SupabaseSyncService {
         ? await deletedRecipesQuery
         : await deletedRecipesQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedRecipes) {
-        final uuid = row['uuid'] as String;
-        final local = await db.recipeDao.getRecipeByUuid(uuid);
-        if (local == null) continue;
-        // RecipeDao.deleteRecipe handles ingredients but not images — delete
-        // images first since there is no SQLite-level cascade.
-        await db.imageDao.deleteImagesForRecipe(local.id);
-        await db.recipeDao.deleteRecipe(local.id);
-      }
-    });
+    for (final row in deletedRecipes) {
+      final uuid = row['uuid'] as String;
+      final local = await db.recipeDao.getRecipeByUuid(uuid);
+      if (local == null) continue;
+      // RecipeDao.deleteRecipe handles ingredients but not images — delete
+      // images first since there is no SQLite-level cascade.
+      await db.imageDao.deleteImagesForRecipe(local.id);
+      await db.recipeDao.deleteRecipe(local.id);
+    }
 
     return pulledUuids;
   }
@@ -706,31 +701,29 @@ abstract class SupabaseSyncService {
         ? await remoteQueryPizzas
         : await remoteQueryPizzas.gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remotePizzas) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remotePizzas) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.catalogueDao.getPizzaByUuid(remoteUuid);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            cookCount: existing.cookCount,
-            rating: existing.rating,
-          ).copyWith(id: Value(existing.id)));
-        } else {
-          await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
-            row,
-            isFavorite: false,
-            cookCount: 0,
-            rating: 0,
-          ));
-        }
+      final existing = await db.catalogueDao.getPizzaByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          cookCount: existing.cookCount,
+          rating: existing.rating,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
+          row,
+          isFavorite: false,
+          cookCount: 0,
+          rating: 0,
+        ));
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedPizzasQuery = client
@@ -743,11 +736,9 @@ abstract class SupabaseSyncService {
         ? await deletedPizzasQuery
         : await deletedPizzasQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedPizzas) {
-        await db.catalogueDao.deletePizzaByUuid(row['uuid'] as String);
-      }
-    });
+    for (final row in deletedPizzas) {
+      await db.catalogueDao.deletePizzaByUuid(row['uuid'] as String);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -790,31 +781,29 @@ abstract class SupabaseSyncService {
         : await remoteQuerySandwiches
             .gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remoteSandwiches) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remoteSandwiches) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.catalogueDao.getSandwichByUuid(remoteUuid);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            cookCount: existing.cookCount,
-            rating: existing.rating,
-          ).copyWith(id: Value(existing.id)));
-        } else {
-          await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
-            row,
-            isFavorite: false,
-            cookCount: 0,
-            rating: 0,
-          ));
-        }
+      final existing = await db.catalogueDao.getSandwichByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          cookCount: existing.cookCount,
+          rating: existing.rating,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
+          row,
+          isFavorite: false,
+          cookCount: 0,
+          rating: 0,
+        ));
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedSandwichesQuery = client
@@ -827,11 +816,9 @@ abstract class SupabaseSyncService {
         ? await deletedSandwichesQuery
         : await deletedSandwichesQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedSandwiches) {
-        await db.catalogueDao.deleteSandwichByUuid(row['uuid'] as String);
-      }
-    });
+    for (final row in deletedSandwiches) {
+      await db.catalogueDao.deleteSandwichByUuid(row['uuid'] as String);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -875,29 +862,27 @@ abstract class SupabaseSyncService {
         ? await remoteQueryCellar
         : await remoteQueryCellar.gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remoteCellar) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remoteCellar) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.cellarDao.getEntryByUuid(remoteUuid);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            buy: existing.buy,
-          ).copyWith(id: Value(existing.id)));
-        } else {
-          await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
-            row,
-            isFavorite: false,
-            buy: false,
-          ));
-        }
+      final existing = await db.cellarDao.getEntryByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          buy: existing.buy,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
+          row,
+          isFavorite: false,
+          buy: false,
+        ));
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedCellarQuery = client
@@ -910,11 +895,9 @@ abstract class SupabaseSyncService {
         ? await deletedCellarQuery
         : await deletedCellarQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedCellar) {
-        await db.cellarDao.deleteEntryByUuid(row['uuid'] as String);
-      }
-    });
+    for (final row in deletedCellar) {
+      await db.cellarDao.deleteEntryByUuid(row['uuid'] as String);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -958,29 +941,27 @@ abstract class SupabaseSyncService {
         ? await remoteQueryCheese
         : await remoteQueryCheese.gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remoteCheese) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remoteCheese) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.cellarDao.getCheeseEntryByUuid(remoteUuid);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            buy: existing.buy,
-          ).copyWith(id: Value(existing.id)));
-        } else {
-          await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
-            row,
-            isFavorite: false,
-            buy: false,
-          ));
-        }
+      final existing = await db.cellarDao.getCheeseEntryByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          buy: existing.buy,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
+          row,
+          isFavorite: false,
+          buy: false,
+        ));
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedCheeseQuery = client
@@ -993,11 +974,9 @@ abstract class SupabaseSyncService {
         ? await deletedCheeseQuery
         : await deletedCheeseQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedCheese) {
-        await db.cellarDao.deleteCheeseEntryByUuid(row['uuid'] as String);
-      }
-    });
+    for (final row in deletedCheese) {
+      await db.cellarDao.deleteCheeseEntryByUuid(row['uuid'] as String);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1042,29 +1021,27 @@ abstract class SupabaseSyncService {
         : await remoteQuerySmoking
             .gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remoteSmoking) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remoteSmoking) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.smokingDao.getRecipeByUuid(remoteUuid);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            cookCount: existing.cookCount,
-          ).copyWith(id: Value(existing.id)));
-        } else {
-          await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
-            row,
-            isFavorite: false,
-            cookCount: 0,
-          ));
-        }
+      final existing = await db.smokingDao.getRecipeByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
+          row,
+          isFavorite: existing.isFavorite,
+          cookCount: existing.cookCount,
+        ).copyWith(id: Value(existing.id)));
+      } else {
+        await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
+          row,
+          isFavorite: false,
+          cookCount: 0,
+        ));
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedSmokingQuery = client
@@ -1077,11 +1054,9 @@ abstract class SupabaseSyncService {
         ? await deletedSmokingQuery
         : await deletedSmokingQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedSmoking) {
-        await db.smokingDao.deleteRecipeByUuid(row['uuid'] as String);
-      }
-    });
+    for (final row in deletedSmoking) {
+      await db.smokingDao.deleteRecipeByUuid(row['uuid'] as String);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1120,34 +1095,32 @@ abstract class SupabaseSyncService {
         : await remoteQueryCourses
             .gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remoteCourses) {
-        final remoteSlug = row['slug'] as String;
-        final companion = _remoteToCourseCompanion(row);
+    for (final row in remoteCourses) {
+      final remoteSlug = row['slug'] as String;
+      final companion = _remoteToCourseCompanion(row);
 
-        // Slug is the sync key — never use id-based conflict resolution.
-        final existing = await (db.select(db.courses)
-              ..where((c) => c.slug.equals(remoteSlug)))
-            .getSingleOrNull();
+      // Slug is the sync key — never use id-based conflict resolution.
+      final existing = await (db.select(db.courses)
+            ..where((c) => c.slug.equals(remoteSlug)))
+          .getSingleOrNull();
 
-        if (existing != null) {
-          // Update only shared display fields; preserve local id.
-          await (db.update(db.courses)..where((c) => c.id.equals(existing.id)))
-              .write(CoursesCompanion(
-                name: companion.name,
-                iconName: companion.iconName,
-                sortOrder: companion.sortOrder,
-                colorValue: companion.colorValue,
-                isVisible: companion.isVisible,
-              ));
-        } else {
-          await db.into(db.courses).insert(
-                companion,
-                mode: InsertMode.insertOrIgnore,
-              );
-        }
+      if (existing != null) {
+        // Update only shared display fields; preserve local id.
+        await (db.update(db.courses)..where((c) => c.id.equals(existing.id)))
+            .write(CoursesCompanion(
+              name: companion.name,
+              iconName: companion.iconName,
+              sortOrder: companion.sortOrder,
+              colorValue: companion.colorValue,
+              isVisible: companion.isVisible,
+            ));
+      } else {
+        await db.into(db.courses).insert(
+              companion,
+              mode: InsertMode.insertOrIgnore,
+            );
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedCoursesQuery = client
@@ -1160,16 +1133,14 @@ abstract class SupabaseSyncService {
         ? await deletedCoursesQuery
         : await deletedCoursesQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedCourses) {
-        final slug = row['slug'] as String;
-        final local = await (db.select(db.courses)
-              ..where((c) => c.slug.equals(slug)))
-            .getSingleOrNull();
-        if (local == null) continue;
-        await db.recipeDao.deleteCourse(local.id);
-      }
-    });
+    for (final row in deletedCourses) {
+      final slug = row['slug'] as String;
+      final local = await (db.select(db.courses)
+            ..where((c) => c.slug.equals(slug)))
+          .getSingleOrNull();
+      if (local == null) continue;
+      await db.recipeDao.deleteCourse(local.id);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1213,27 +1184,25 @@ abstract class SupabaseSyncService {
         ? await remoteQueryPads
         : await remoteQueryPads.gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remotePads) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remotePads) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        // UtilityDao has no getByUuid; raw Drift used.
-        final existing = await (db.select(db.scratchPads)
-              ..where((s) => s.uuid.equals(remoteUuid)))
-            .getSingleOrNull();
+      // UtilityDao has no getByUuid; raw Drift used.
+      final existing = await (db.select(db.scratchPads)
+            ..where((s) => s.uuid.equals(remoteUuid)))
+          .getSingleOrNull();
 
-        final companion = _remoteToScratchPadCompanion(row);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.utilityDao
-              .saveQuickNotes(companion.copyWith(id: Value(existing.id)));
-        } else {
-          await db.utilityDao.saveQuickNotes(companion);
-        }
+      final companion = _remoteToScratchPadCompanion(row);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.utilityDao
+            .saveQuickNotes(companion.copyWith(id: Value(existing.id)));
+      } else {
+        await db.utilityDao.saveQuickNotes(companion);
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedPadsQuery = client
@@ -1246,14 +1215,12 @@ abstract class SupabaseSyncService {
         ? await deletedPadsQuery
         : await deletedPadsQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedPads) {
-        // No DAO delete method for scratch pads — raw Drift used.
-        await (db.delete(db.scratchPads)
-              ..where((s) => s.uuid.equals(row['uuid'] as String)))
-            .go();
-      }
-    });
+    for (final row in deletedPads) {
+      // No DAO delete method for scratch pads — raw Drift used.
+      await (db.delete(db.scratchPads)
+            ..where((s) => s.uuid.equals(row['uuid'] as String)))
+          .go();
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1670,72 +1637,70 @@ abstract class SupabaseSyncService {
         ? await remoteQuery
         : await remoteQuery.gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final pref in prefs) {
-        final entityType = pref['entity_type'] as String;
-        final entityUuid = pref['entity_uuid'] as String;
-        final isFavorite = pref['is_favorite'] as bool? ?? false;
-        final cookCount = pref['cook_count'] as int? ?? 0;
-        final buy = pref['buy'] as bool? ?? false;
-        final lastCookedAtStr = pref['last_cooked_at'] as String?;
-        final lastCookedAt =
-            lastCookedAtStr != null ? DateTime.parse(lastCookedAtStr).toLocal() : null;
-        final rating = pref['rating'] as int? ?? 0;
+    for (final pref in prefs) {
+      final entityType = pref['entity_type'] as String;
+      final entityUuid = pref['entity_uuid'] as String;
+      final isFavorite = pref['is_favorite'] as bool? ?? false;
+      final cookCount = pref['cook_count'] as int? ?? 0;
+      final buy = pref['buy'] as bool? ?? false;
+      final lastCookedAtStr = pref['last_cooked_at'] as String?;
+      final lastCookedAt =
+          lastCookedAtStr != null ? DateTime.parse(lastCookedAtStr).toLocal() : null;
+      final rating = pref['rating'] as int? ?? 0;
 
-        switch (entityType) {
-          case 'recipe':
-            await (db.update(db.recipes)..where((r) => r.uuid.equals(entityUuid)))
-                .write(RecipesCompanion(
-                  isFavorite: Value(isFavorite),
-                  cookCount: Value(cookCount),
-                  lastCookedAt: Value(lastCookedAt),
-                  rating: Value(rating),
-                ));
-            break;
-          case 'pizza':
-            await (db.update(db.pizzas)..where((p) => p.uuid.equals(entityUuid)))
-                .write(PizzasCompanion(
-                  isFavorite: Value(isFavorite),
-                  cookCount: Value(cookCount),
-                  rating: Value(rating),
-                ));
-            break;
-          case 'cellar':
-            await (db.update(db.cellarEntries)
-                  ..where((e) => e.uuid.equals(entityUuid)))
-                .write(CellarEntriesCompanion(
-                  isFavorite: Value(isFavorite),
-                  buy: Value(buy),
-                ));
-            break;
-          case 'cheese':
-            await (db.update(db.cheeseEntries)
-                  ..where((e) => e.uuid.equals(entityUuid)))
-                .write(CheeseEntriesCompanion(
-                  isFavorite: Value(isFavorite),
-                  buy: Value(buy),
-                ));
-            break;
-          case 'sandwich':
-            await (db.update(db.sandwiches)
-                  ..where((s) => s.uuid.equals(entityUuid)))
-                .write(SandwichesCompanion(
-                  isFavorite: Value(isFavorite),
-                  cookCount: Value(cookCount),
-                  rating: Value(rating),
-                ));
-            break;
-          case 'smoking':
-            await (db.update(db.smokingRecipes)
-                  ..where((r) => r.uuid.equals(entityUuid)))
-                .write(SmokingRecipesCompanion(
-                  isFavorite: Value(isFavorite),
-                  cookCount: Value(cookCount),
-                ));
-            break;
-        }
+      switch (entityType) {
+        case 'recipe':
+          await (db.update(db.recipes)..where((r) => r.uuid.equals(entityUuid)))
+              .write(RecipesCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+                lastCookedAt: Value(lastCookedAt),
+                rating: Value(rating),
+              ));
+          break;
+        case 'pizza':
+          await (db.update(db.pizzas)..where((p) => p.uuid.equals(entityUuid)))
+              .write(PizzasCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+                rating: Value(rating),
+              ));
+          break;
+        case 'cellar':
+          await (db.update(db.cellarEntries)
+                ..where((e) => e.uuid.equals(entityUuid)))
+              .write(CellarEntriesCompanion(
+                isFavorite: Value(isFavorite),
+                buy: Value(buy),
+              ));
+          break;
+        case 'cheese':
+          await (db.update(db.cheeseEntries)
+                ..where((e) => e.uuid.equals(entityUuid)))
+              .write(CheeseEntriesCompanion(
+                isFavorite: Value(isFavorite),
+                buy: Value(buy),
+              ));
+          break;
+        case 'sandwich':
+          await (db.update(db.sandwiches)
+                ..where((s) => s.uuid.equals(entityUuid)))
+              .write(SandwichesCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+                rating: Value(rating),
+              ));
+          break;
+        case 'smoking':
+          await (db.update(db.smokingRecipes)
+                ..where((r) => r.uuid.equals(entityUuid)))
+              .write(SmokingRecipesCompanion(
+                isFavorite: Value(isFavorite),
+                cookCount: Value(cookCount),
+              ));
+          break;
       }
-    });
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1793,17 +1758,15 @@ abstract class SupabaseSyncService {
         .eq('user_id', userId)
         .filter('deleted_at', 'is', null);
 
-    await db.transaction(() async {
-      for (final row in remotePlans) {
-        final remoteUuid = row['uuid'] as String;
-        // MealPlanDao has no getPlanByUuid(); raw Drift used.
-        final existing = await (db.select(db.mealPlans)
-              ..where((p) => p.uuid.equals(remoteUuid)))
-            .getSingleOrNull();
-        if (existing != null) continue; // append-only: local copy wins
-        await db.mealPlanDao.savePlan(_remoteToMealPlanCompanion(row));
-      }
-    });
+    for (final row in remotePlans) {
+      final remoteUuid = row['uuid'] as String;
+      // MealPlanDao has no getPlanByUuid(); raw Drift used.
+      final existing = await (db.select(db.mealPlans)
+            ..where((p) => p.uuid.equals(remoteUuid)))
+          .getSingleOrNull();
+      if (existing != null) continue; // append-only: local copy wins
+      await db.mealPlanDao.savePlan(_remoteToMealPlanCompanion(row));
+    }
 
     // PULL PlannedMeals — append-only: skip rows whose instanceId already exists.
     final List<Map<String, dynamic>> remoteMeals = await client
@@ -1813,24 +1776,22 @@ abstract class SupabaseSyncService {
         .eq('user_id', userId)
         .filter('deleted_at', 'is', null);
 
-    await db.transaction(() async {
-      for (final row in remoteMeals) {
-        final instanceId = row['instance_id'] as String;
-        final existing =
-            await db.mealPlanDao.getMealByInstanceId(instanceId);
-        if (existing != null) continue; // append-only
+    for (final row in remoteMeals) {
+      final instanceId = row['instance_id'] as String;
+      final existing =
+          await db.mealPlanDao.getMealByInstanceId(instanceId);
+      if (existing != null) continue; // append-only
 
-        // Resolve meal_plan_uuid → local int id.
-        final mealPlanUuid = row['meal_plan_uuid'] as String;
-        final localPlan = await (db.select(db.mealPlans)
-              ..where((p) => p.uuid.equals(mealPlanUuid)))
-            .getSingleOrNull();
-        if (localPlan == null) continue; // parent not yet pulled — skip
+      // Resolve meal_plan_uuid → local int id.
+      final mealPlanUuid = row['meal_plan_uuid'] as String;
+      final localPlan = await (db.select(db.mealPlans)
+            ..where((p) => p.uuid.equals(mealPlanUuid)))
+          .getSingleOrNull();
+      if (localPlan == null) continue; // parent not yet pulled — skip
 
-        await db.mealPlanDao.addMeal(
-            _remoteToPlannedMealCompanion(row, localPlan.id));
-      }
-    });
+      await db.mealPlanDao.addMeal(
+          _remoteToPlannedMealCompanion(row, localPlan.id));
+    }
 
     // ── Deletion propagation (meal plans) ──────────────────────────────
     // There is no SQLite-level cascade on meal_plans → planned_meals, so
@@ -1845,16 +1806,14 @@ abstract class SupabaseSyncService {
         ? await deletedPlansQuery
         : await deletedPlansQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedPlans) {
-        final localPlan = await (db.select(db.mealPlans)
-              ..where((p) => p.uuid.equals(row['uuid'] as String)))
-            .getSingleOrNull();
-        if (localPlan == null) continue;
-        await db.mealPlanDao.removeAllMealsForPlan(localPlan.id);
-        await db.mealPlanDao.deletePlan(localPlan.id);
-      }
-    });
+    for (final row in deletedPlans) {
+      final localPlan = await (db.select(db.mealPlans)
+            ..where((p) => p.uuid.equals(row['uuid'] as String)))
+          .getSingleOrNull();
+      if (localPlan == null) continue;
+      await db.mealPlanDao.removeAllMealsForPlan(localPlan.id);
+      await db.mealPlanDao.deletePlan(localPlan.id);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1913,14 +1872,12 @@ abstract class SupabaseSyncService {
         .eq('user_id', userId)
         .filter('deleted_at', 'is', null);
 
-    await db.transaction(() async {
-      for (final row in remoteLists) {
-        final remoteUuid = row['uuid'] as String;
-        final existing = await db.shoppingDao.getListByUuid(remoteUuid);
-        if (existing != null) continue;
-        await db.shoppingDao.saveList(_remoteToShoppingListCompanion(row));
-      }
-    });
+    for (final row in remoteLists) {
+      final remoteUuid = row['uuid'] as String;
+      final existing = await db.shoppingDao.getListByUuid(remoteUuid);
+      if (existing != null) continue;
+      await db.shoppingDao.saveList(_remoteToShoppingListCompanion(row));
+    }
 
     // PULL ShoppingItems — append-only.
     final List<Map<String, dynamic>> remoteItems = await client
@@ -1930,21 +1887,19 @@ abstract class SupabaseSyncService {
         .eq('user_id', userId)
         .filter('deleted_at', 'is', null);
 
-    await db.transaction(() async {
-      for (final row in remoteItems) {
-        final itemUuid = row['uuid'] as String;
-        final existing = await db.shoppingDao.getItemByUuid(itemUuid);
-        if (existing != null) continue;
+    for (final row in remoteItems) {
+      final itemUuid = row['uuid'] as String;
+      final existing = await db.shoppingDao.getItemByUuid(itemUuid);
+      if (existing != null) continue;
 
-        // Resolve shopping_list_uuid → local int id.
-        final listUuid = row['shopping_list_uuid'] as String;
-        final localList = await db.shoppingDao.getListByUuid(listUuid);
-        if (localList == null) continue; // parent not pulled yet — skip
+      // Resolve shopping_list_uuid → local int id.
+      final listUuid = row['shopping_list_uuid'] as String;
+      final localList = await db.shoppingDao.getListByUuid(listUuid);
+      if (localList == null) continue; // parent not pulled yet — skip
 
-        await db.shoppingDao
-            .saveItem(_remoteToShoppingItemCompanion(row, localList.id));
-      }
-    });
+      await db.shoppingDao
+          .saveItem(_remoteToShoppingItemCompanion(row, localList.id));
+    }
 
     // ── Deletion propagation (shopping lists) ───────────────────────────
     // ShoppingDao.deleteListByUuid already calls deleteAllItemsForList first,
@@ -1959,11 +1914,9 @@ abstract class SupabaseSyncService {
         ? await deletedListsQuery
         : await deletedListsQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedLists) {
-        await db.shoppingDao.deleteListByUuid(row['uuid'] as String);
-      }
-    });
+    for (final row in deletedLists) {
+      await db.shoppingDao.deleteListByUuid(row['uuid'] as String);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2004,24 +1957,22 @@ abstract class SupabaseSyncService {
         ? await remoteQuery
         : await remoteQuery.gt('updated_at', lastSync.toIso8601String());
 
-    await db.transaction(() async {
-      for (final row in remoteDrafts) {
-        final remoteUuid = row['uuid'] as String;
-        final remoteUpdatedAt =
-            DateTime.parse(row['updated_at'] as String).toUtc();
+    for (final row in remoteDrafts) {
+      final remoteUuid = row['uuid'] as String;
+      final remoteUpdatedAt =
+          DateTime.parse(row['updated_at'] as String).toUtc();
 
-        final existing = await db.utilityDao.getDraftByUuid(remoteUuid);
-        if (existing != null) {
-          if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.utilityDao
-              .updateDraft(_remoteToRecipeDraftCompanion(row).copyWith(
-            id: Value(existing.id),
-          ));
-        } else {
-          await db.utilityDao.createDraft(_remoteToRecipeDraftCompanion(row));
-        }
+      final existing = await db.utilityDao.getDraftByUuid(remoteUuid);
+      if (existing != null) {
+        if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
+        await db.utilityDao
+            .updateDraft(_remoteToRecipeDraftCompanion(row).copyWith(
+          id: Value(existing.id),
+        ));
+      } else {
+        await db.utilityDao.createDraft(_remoteToRecipeDraftCompanion(row));
       }
-    });
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     final deletedDraftsQuery = client
@@ -2075,17 +2026,15 @@ abstract class SupabaseSyncService {
         .eq('user_id', userId)
         .filter('deleted_at', 'is', null);
 
-    await db.transaction(() async {
-      for (final row in remoteLogs) {
-        final remoteUuid = row['uuid'] as String;
-        // CookingLogDao has no getLogByUuid(); raw Drift used.
-        final existing = await (db.select(db.cookingLogs)
-              ..where((l) => l.uuid.equals(remoteUuid)))
-            .getSingleOrNull();
-        if (existing != null) continue;
-        await db.cookingLogDao.logCook(_remoteToCookingLogCompanion(row));
-      }
-    });
+    for (final row in remoteLogs) {
+      final remoteUuid = row['uuid'] as String;
+      // CookingLogDao has no getLogByUuid(); raw Drift used.
+      final existing = await (db.select(db.cookingLogs)
+            ..where((l) => l.uuid.equals(remoteUuid)))
+          .getSingleOrNull();
+      if (existing != null) continue;
+      await db.cookingLogDao.logCook(_remoteToCookingLogCompanion(row));
+    }
 
     // ── Deletion propagation ─────────────────────────────────────────────
     // No getByUuid on CookingLogDao — raw Drift used for lookup.
@@ -2099,15 +2048,13 @@ abstract class SupabaseSyncService {
         ? await deletedLogsQuery
         : await deletedLogsQuery
             .gt('deleted_at', lastSync.toIso8601String());
-    await db.transaction(() async {
-      for (final row in deletedLogs) {
-        final localLog = await (db.select(db.cookingLogs)
-              ..where((l) => l.uuid.equals(row['uuid'] as String)))
-            .getSingleOrNull();
-        if (localLog == null) continue;
-        await db.cookingLogDao.deleteLog(localLog.id);
-      }
-    });
+    for (final row in deletedLogs) {
+      final localLog = await (db.select(db.cookingLogs)
+            ..where((l) => l.uuid.equals(row['uuid'] as String)))
+          .getSingleOrNull();
+      if (localLog == null) continue;
+      await db.cookingLogDao.deleteLog(localLog.id);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2365,27 +2312,33 @@ abstract class SupabaseSyncService {
 
     // No-op write on each affected recipe to fire the SQLite update hook.
     //
-    // Batch all touches in one transaction so Drift emits the recipes stream
-    // exactly once (after commit) instead of once per image-having recipe.
-    if (refreshRecipeIds.isNotEmpty) {
-      await db.transaction(() async {
-        for (final recipeId in refreshRecipeIds) {
-          try {
-            final recipe = await (db.select(db.recipes)
-                  ..where((t) => t.id.equals(recipeId))
-                  ..limit(1))
-                .getSingleOrNull();
-            if (recipe == null) continue;
-            // Write the same updatedAt back — this is intentionally a no-op on
-            // the data, but SQLite still fires its update hook for Drift streams.
-            await (db.update(db.recipes)..where((t) => t.id.equals(recipeId)))
-                .write(RecipesCompanion(updatedAt: Value(recipe.updatedAt)));
-          } catch (e) {
-            debugPrint(
-                'SupabaseSyncService: could not touch recipe $recipeId for stream refresh: $e');
-          }
-        }
-      });
+    // _syncRecipes runs before _syncRecipeImages, so when the recipe stream
+    // first re-emits (after _syncRecipes saves the updated recipe metadata),
+    // the image blob isn't in the DB yet. _resolveImagePath returns the
+    // absolute cache path but the file doesn't exist, so image widgets show
+    // a placeholder. By touching each recipe here (writing the same updatedAt
+    // value back), Drift re-emits the stream a second time. This time
+    // _resolveImagePath finds the blob in the DB, writes the cache file,
+    // and returns the correct absolute path — image displays without restart.
+    //
+    // Writing the same updatedAt value means _syncRecipes will NOT detect
+    // these rows as changed on the next sync (updatedAt > lastSyncRecipes
+    // is false for equal values), avoiding spurious re-pushes.
+    for (final recipeId in refreshRecipeIds) {
+      try {
+        final recipe = await (db.select(db.recipes)
+              ..where((t) => t.id.equals(recipeId))
+              ..limit(1))
+            .getSingleOrNull();
+        if (recipe == null) continue;
+        // Write the same updatedAt back — this is intentionally a no-op on
+        // the data, but SQLite still fires its update hook for Drift streams.
+        await (db.update(db.recipes)..where((t) => t.id.equals(recipeId)))
+            .write(RecipesCompanion(updatedAt: Value(recipe.updatedAt)));
+      } catch (e) {
+        debugPrint(
+            'SupabaseSyncService: could not touch recipe $recipeId for stream refresh: $e');
+      }
     }
   }
 
