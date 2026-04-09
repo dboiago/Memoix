@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:drift/drift.dart';
-import 'package:drift_flutter/drift_flutter.dart';
+import 'package:drift/native.dart';
+import 'package:path_provider/path_provider.dart';
 
 import '../../features/recipes/models/course.dart' as domainModels;
 import 'app_database.dart';
@@ -14,8 +17,23 @@ class MemoixDatabase {
   static AppDatabase get instance => AppDatabase.instance;
 
   /// Initialize the Drift database and seed default courses.
+  ///
+  /// Opens the database in a dedicated background isolate via
+  /// [NativeDatabase.createInBackground] so that all SQLite I/O (queries,
+  /// write notifications, WAL checkpointing) runs off the main thread.
+  /// The database file path mirrors what [drift_flutter]'s driftDatabase()
+  /// resolves to on each platform, so existing data is preserved on upgrade.
   static Future<void> initialize() async {
-    AppDatabase.initialize(driftDatabase(name: 'memoix'));
+    final Directory dbDir;
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      dbDir = await getApplicationSupportDirectory();
+    } else {
+      // Android, iOS — documents directory is the app-private location.
+      dbDir = await getApplicationDocumentsDirectory();
+    }
+    final dbFile =
+        File('${dbDir.path}${Platform.pathSeparator}memoix.db');
+    AppDatabase.initialize(NativeDatabase.createInBackground(dbFile));
     await _seedDefaultCourses();
   }
 
