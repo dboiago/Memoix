@@ -311,8 +311,8 @@ class RecipeImportResult {
       timeConfidence: (data['timeConfidence'] as num?)?.toDouble() ?? 0.0,
       sourceUrl: data['sourceUrl'] as String?,
       source: data['source'] == 'ai'
-          ? RecipeSource.ocr
-          : RecipeSource.url, // AI imports treated as OCR-like
+          ? RecipeSource.ai
+          : RecipeSource.url,
     );
   }
 

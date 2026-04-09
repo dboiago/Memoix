@@ -507,6 +507,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                 r.source == RecipeSource.personal ||
                 r.source == RecipeSource.imported ||
                 r.source == RecipeSource.ocr ||
+                r.source == RecipeSource.ai ||
                 r.source == RecipeSource.url,)
             .toList();
       case RecipeSourceFilter.all:

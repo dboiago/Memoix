@@ -10,6 +10,7 @@ import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colors.dart';
+import '../../../shared/widgets/memoix_card_shell.dart';
 
 /// Recipe card
 class RecipeCard extends ConsumerStatefulWidget {
@@ -29,41 +30,20 @@ class RecipeCard extends ConsumerStatefulWidget {
 }
 
 class _RecipeCardState extends ConsumerState<RecipeCard> {
-  bool _hovered = false;
-  bool _pressed = false;
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final cuisine = widget.recipe.cuisine;
 
     final bool isDark = theme.brightness == Brightness.dark;
-    return Card(
-      elevation: 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-        side: BorderSide(
-          color: (_hovered || _pressed)
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.12),
-          width: (_hovered || _pressed) ? 1.5 : 1.0,
-        ),
+    return MemoixCardShell(
+      onTap: widget.onTap,
+      isCompact: widget.isCompact,
+      padding: EdgeInsets.symmetric(
+        horizontal: widget.isCompact ? 8 : 12,
+        vertical: widget.isCompact ? 6 : 10,
       ),
-      color: theme.cardTheme.color ?? theme.colorScheme.surface,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(12),
-        onTap: widget.onTap,
-        onHover: (h) => setState(() => _hovered = h),
-        onHighlightChanged: (p) => setState(() => _pressed = p),
-        splashColor: Colors.transparent,
-        hoverColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        child: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: widget.isCompact ? 8 : 12,
-          vertical: widget.isCompact ? 6 : 10,
-        ),
-        child: Row(
+      child: Row(
           children: [
             // Recipe name and metadata
             Expanded(
@@ -265,9 +245,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
             ),
           ],
         ),
-      ),
-    ),
-  );
+      );
   }
 
   String _displayCuisine(String raw, String? subcategory) {

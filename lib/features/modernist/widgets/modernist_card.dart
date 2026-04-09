@@ -179,8 +179,6 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
               ),
             ],
           ),
-        ),
-      ),
-    );
+        );
   }
 }
