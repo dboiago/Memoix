@@ -7,7 +7,8 @@ import 'dart:convert';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:ota_update/ota_update.dart'; // REQUIRED: Add to pubspec.yaml
+import 'package:ota_update/ota_update.dart';
+import 'package:flutter/foundation.dart'; // for DebugPrint
 
 /// Represents available app version info
 class AppVersion {
