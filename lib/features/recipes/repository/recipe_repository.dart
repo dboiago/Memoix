@@ -24,22 +24,190 @@ import '../models/cuisine.dart';
 import '../models/recipe.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Top-level isolate helpers (must be top-level so Isolate.run can capture them)
+// Sendable plain-Dart record types for cross-isolate communication.
+//
+// All fields are primitive Dart types (String, int, bool, DateTime, List of
+// primitives, Map of primitives). No Drift DataClass, no app-model class, and
+// no framework state crosses the Isolate.run boundary.
 // ─────────────────────────────────────────────────────────────────────────────
 
-/// Groups a flat list of [db.Ingredient] rows by [recipeId].
-Map<int, List<db.Ingredient>> _groupIngredientsByRecipe(
-    List<db.Ingredient> allIngs) {
-  final grouped = <int, List<db.Ingredient>>{};
+/// Mirrors a [db.Recipe] row as a primitive record.
+/// JSON-encoded TEXT columns (pairsWith, directions, etc.) are kept as [String]
+/// for decoding inside the isolate.
+typedef _RecipeRaw = ({
+  int id,
+  String uuid,
+  String name,
+  String course,
+  String? cuisine,
+  String? subcategory,
+  String? continent,
+  String? country,
+  String? serves,
+  String? time,
+  String pairsWith,
+  String pairedRecipeIds,
+  String? comments,
+  String directions,
+  String? sourceUrl,
+  String imageUrls,
+  String? imageUrl,
+  String? headerImage,
+  String stepImages,
+  String stepImageMap,
+  String source,
+  int? colorValue,
+  DateTime createdAt,
+  DateTime updatedAt,
+  bool isFavorite,
+  int rating,
+  int cookCount,
+  int editCount,
+  DateTime? firstEditAt,
+  DateTime? lastEditAt,
+  DateTime? lastCookedAt,
+  String tags,
+  int version,
+  String? nutrition,
+  String? modernistType,
+  String? smokingType,
+  String? glass,
+  String garnish,
+  String? pickleMethod,
+});
+
+/// Single ingredient row as a primitive record (no JSON columns).
+typedef _IngRaw = ({
+  String uuid,
+  String name,
+  String? amount,
+  String? unit,
+  String? notes,
+  String? alternative,
+  bool isOptional,
+  String? section,
+  String? bakerPercent,
+});
+
+/// Fully decoded recipe — JSON fields parsed, image paths checked against the
+/// on-disk cache. All fields are primitive Dart types so the value is sendable
+/// back from the isolate to the main thread.
+typedef _RecipeDecoded = ({
+  int id,
+  String uuid,
+  String name,
+  String course,
+  String? cuisine,
+  String? subcategory,
+  String? continent,
+  String? country,
+  String? serves,
+  String? time,
+  List<String> pairsWith,
+  List<String> pairedRecipeIds,
+  String? comments,
+  List<String> directions,
+  String? sourceUrl,
+  List<String> imageUrls,
+  String? imageUrl,
+  String? headerImage,
+  List<String> stepImages,
+  List<String> stepImageMap,
+  String source,
+  int? colorValue,
+  DateTime createdAt,
+  DateTime updatedAt,
+  bool isFavorite,
+  int rating,
+  int cookCount,
+  int editCount,
+  DateTime? firstEditAt,
+  DateTime? lastEditAt,
+  DateTime? lastCookedAt,
+  List<String> tags,
+  int version,
+  Map<String, dynamic>? nutritionJson,
+  String? modernistType,
+  String? smokingType,
+  String? glass,
+  List<String> garnish,
+  String? pickleMethod,
+  List<_IngRaw> ingredients,
+});
+
+/// Converts a Drift [db.Recipe] row to a [_RecipeRaw] record.
+/// Called on the main thread before [Isolate.run].
+_RecipeRaw _toRecipeRaw(db.Recipe r) => (
+      id: r.id,
+      uuid: r.uuid,
+      name: r.name,
+      course: r.course,
+      cuisine: r.cuisine,
+      subcategory: r.subcategory,
+      continent: r.continent,
+      country: r.country,
+      serves: r.serves,
+      time: r.time,
+      pairsWith: r.pairsWith,
+      pairedRecipeIds: r.pairedRecipeIds,
+      comments: r.comments,
+      directions: r.directions,
+      sourceUrl: r.sourceUrl,
+      imageUrls: r.imageUrls,
+      imageUrl: r.imageUrl,
+      headerImage: r.headerImage,
+      stepImages: r.stepImages,
+      stepImageMap: r.stepImageMap,
+      source: r.source,
+      colorValue: r.colorValue,
+      createdAt: r.createdAt,
+      updatedAt: r.updatedAt,
+      isFavorite: r.isFavorite,
+      rating: r.rating,
+      cookCount: r.cookCount,
+      editCount: r.editCount,
+      firstEditAt: r.firstEditAt,
+      lastEditAt: r.lastEditAt,
+      lastCookedAt: r.lastCookedAt,
+      tags: r.tags,
+      version: r.version,
+      nutrition: r.nutrition,
+      modernistType: r.modernistType,
+      smokingType: r.smokingType,
+      glass: r.glass,
+      garnish: r.garnish,
+      pickleMethod: r.pickleMethod,
+    );
+
+/// Converts a Drift [db.Ingredient] row to an [_IngRaw] record.
+/// Called on the main thread before [Isolate.run].
+_IngRaw _toIngRaw(db.Ingredient i) => (
+      uuid: i.uuid,
+      name: i.name,
+      amount: i.amount,
+      unit: i.unit,
+      notes: i.notes,
+      alternative: i.alternative,
+      isOptional: i.isOptional,
+      section: i.section,
+      bakerPercent: i.bakerPercent,
+    );
+
+/// Groups a flat list of [db.Ingredient] rows by recipe id, converting each
+/// to an [_IngRaw] record in the same pass.
+Map<int, List<_IngRaw>> _groupIngRaw(List<db.Ingredient> allIngs) {
+  final grouped = <int, List<_IngRaw>>{};
   for (final ing in allIngs) {
-    grouped.putIfAbsent(ing.recipeId, () => []).add(ing);
+    grouped.putIfAbsent(ing.recipeId, () => []).add(_toIngRaw(ing));
   }
   return grouped;
 }
 
 /// Synchronously resolves an image value against the on-disk cache.
 /// Returns the absolute cache path when the file exists, otherwise returns
-/// [value] unchanged (bare filename) so the main thread can do a DB lookup.
+/// [value] unchanged so the main thread can perform the async DB lookup.
+/// All parameters and return values are primitives — safe to call inside an
+/// isolate with no captured class state.
 String _resolvePathSync(String value, String cacheBasePath) {
   if (value.startsWith('http')) return value;
   if (value.startsWith('/') || RegExp(r'^[A-Za-z]:').hasMatch(value)) {
@@ -49,111 +217,85 @@ String _resolvePathSync(String value, String cacheBasePath) {
   return cached.existsSync() ? cached.path : value;
 }
 
-String? _resolvePathSyncNullable(String? value, String cacheBasePath) {
-  if (value == null || value.isEmpty) return value;
-  return _resolvePathSync(value, cacheBasePath);
-}
-
 /// Runs inside [Isolate.run].
-/// Performs all JSON-heavy decoding and model construction for a batch of
-/// recipe rows, then does a synchronous [File.existsSync] cache check for
-/// each image value. Images that are already in the on-disk cache are replaced
-/// with their absolute path. Images that are not yet cached remain as bare
-/// filenames so [RecipeRepository._finalizeImagePaths] can complete them on
-/// the main thread with a DB-only existence check (no BLOB read needed on the
-/// hot path).
 ///
-/// Returns [null] in the output list for any recipe that fails to decode so
-/// a single corrupt row never aborts the entire batch.
-List<Recipe?> _batchDecodeRecipes(
+/// Accepts only [_RecipeRaw] and [_IngRaw] primitive records — no Drift row
+/// objects, no app model classes, no database state, no [this] capture.
+/// Performs all JSON decoding and synchronous on-disk cache checks, then
+/// returns [_RecipeDecoded] records that the main thread converts to [Recipe]
+/// app models inside [RecipeRepository._finalizeImagePaths].
+///
+/// Failures on individual rows are silently dropped so one corrupt recipe
+/// never aborts the entire batch.
+List<_RecipeDecoded> _batchDecodeRecipes(
     ({
-      List<db.Recipe> rawRecipes,
-      Map<int, List<db.Ingredient>> grouped,
+      List<_RecipeRaw> rawRecipes,
+      Map<int, List<_IngRaw>> grouped,
       String cacheBasePath,
     }) args) {
-  final result = <Recipe?>[];
+  final result = <_RecipeDecoded>[];
   for (final r in args.rawRecipes) {
     try {
       final ings = args.grouped[r.id] ?? [];
-      final recipe = Recipe()
-        ..id = r.id
-        ..uuid = r.uuid
-        ..name = r.name
-        ..course = r.course
-        ..cuisine = r.cuisine
-        ..subcategory = r.subcategory
-        ..continent = r.continent
-        ..country = r.country
-        ..serves = r.serves
-        ..time = r.time
-        ..pairsWith =
-            (jsonDecode(r.pairsWith) as List).cast<String>()
-        ..pairedRecipeIds =
-            (jsonDecode(r.pairedRecipeIds) as List).cast<String>()
-        ..comments = r.comments
-        ..directions =
-            (jsonDecode(r.directions) as List).cast<String>()
-        ..sourceUrl = r.sourceUrl
-        ..imageUrls =
-            (jsonDecode(r.imageUrls) as List).cast<String>()
-        ..imageUrl = r.imageUrl
-        ..headerImage = r.headerImage
-        ..stepImages =
-            (jsonDecode(r.stepImages) as List).cast<String>()
-        ..stepImageMap =
-            (jsonDecode(r.stepImageMap) as List).cast<String>()
-        ..source = RecipeSource.values.firstWhere(
-              (s) => s.name == r.source,
-              orElse: () => RecipeSource.personal)
-        ..colorValue = r.colorValue
-        ..createdAt = r.createdAt
-        ..updatedAt = r.updatedAt
-        ..isFavorite = r.isFavorite
-        ..rating = r.rating
-        ..cookCount = r.cookCount
-        ..editCount = r.editCount
-        ..firstEditAt = r.firstEditAt
-        ..lastEditAt = r.lastEditAt
-        ..lastCookedAt = r.lastCookedAt
-        ..tags = (jsonDecode(r.tags) as List).cast<String>()
-        ..version = r.version
-        ..nutrition = r.nutrition != null
-            ? NutritionInfo.fromJson(
-                jsonDecode(r.nutrition!) as Map<String, dynamic>)
-            : null
-        ..modernistType = r.modernistType
-        ..smokingType = r.smokingType
-        ..glass = r.glass
-        ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
-        ..pickleMethod = r.pickleMethod
-        ..ingredients = ings
-            .map((i) => Ingredient()
-              ..uuid = i.uuid
-              ..name = i.name
-              ..amount = i.amount
-              ..unit = i.unit
-              ..preparation = i.notes
-              ..alternative = i.alternative
-              ..isOptional = i.isOptional
-              ..section = i.section
-              ..bakerPercent = i.bakerPercent)
-            .toList();
 
-      // Resolve image paths that are already in the on-disk cache.
-      // Bare filenames that miss the cache are left unchanged for the
-      // main-thread _finalizeImagePaths step.
-      recipe.headerImage =
-          _resolvePathSyncNullable(recipe.headerImage, args.cacheBasePath);
-      recipe.stepImages = recipe.stepImages
-          .map((v) => _resolvePathSync(v, args.cacheBasePath))
-          .toList();
-      recipe.imageUrls = recipe.imageUrls
-          .map((v) => _resolvePathSync(v, args.cacheBasePath))
-          .toList();
+      String? headerImage = r.headerImage;
+      if (headerImage != null && headerImage.isNotEmpty) {
+        headerImage = _resolvePathSync(headerImage, args.cacheBasePath);
+      }
 
-      result.add(recipe);
+      result.add((
+        id: r.id,
+        uuid: r.uuid,
+        name: r.name,
+        course: r.course,
+        cuisine: r.cuisine,
+        subcategory: r.subcategory,
+        continent: r.continent,
+        country: r.country,
+        serves: r.serves,
+        time: r.time,
+        pairsWith: (jsonDecode(r.pairsWith) as List).cast<String>(),
+        pairedRecipeIds:
+            (jsonDecode(r.pairedRecipeIds) as List).cast<String>(),
+        comments: r.comments,
+        directions: (jsonDecode(r.directions) as List).cast<String>(),
+        sourceUrl: r.sourceUrl,
+        imageUrls: (jsonDecode(r.imageUrls) as List)
+            .cast<String>()
+            .map((v) => _resolvePathSync(v, args.cacheBasePath))
+            .toList(),
+        imageUrl: r.imageUrl,
+        headerImage: headerImage,
+        stepImages: (jsonDecode(r.stepImages) as List)
+            .cast<String>()
+            .map((v) => _resolvePathSync(v, args.cacheBasePath))
+            .toList(),
+        stepImageMap: (jsonDecode(r.stepImageMap) as List).cast<String>(),
+        source: r.source,
+        colorValue: r.colorValue,
+        createdAt: r.createdAt,
+        updatedAt: r.updatedAt,
+        isFavorite: r.isFavorite,
+        rating: r.rating,
+        cookCount: r.cookCount,
+        editCount: r.editCount,
+        firstEditAt: r.firstEditAt,
+        lastEditAt: r.lastEditAt,
+        lastCookedAt: r.lastCookedAt,
+        tags: (jsonDecode(r.tags) as List).cast<String>(),
+        version: r.version,
+        nutritionJson: r.nutrition != null
+            ? jsonDecode(r.nutrition!) as Map<String, dynamic>
+            : null,
+        modernistType: r.modernistType,
+        smokingType: r.smokingType,
+        glass: r.glass,
+        garnish: (jsonDecode(r.garnish) as List).cast<String>(),
+        pickleMethod: r.pickleMethod,
+        ingredients: ings,
+      ));
     } catch (_) {
-      result.add(null);
+      // Skip corrupt rows — a single failure must not abort the entire batch.
     }
   }
   return result;
@@ -389,25 +531,86 @@ class RecipeRepository {
     }
   }
 
-  /// Completes image path resolution for the [partial] list returned by
-  /// [_batchDecodeRecipes] after [Isolate.run].
+  /// Constructs [Recipe] app model objects from the [_RecipeDecoded] records
+  /// returned by [_batchDecodeRecipes] after [Isolate.run].
   ///
-  /// The isolate already resolved paths whose files were present in the
-  /// on-disk cache (common case). This method handles the remaining bare
-  /// filenames via a BLOB-free DB existence check; actual BLOB bytes are only
-  /// fetched when the file genuinely needs to be written to the cache.
-  /// Null entries (decode failures) are dropped.
-  Future<List<Recipe>> _finalizeImagePaths(List<Recipe?> partial) async {
+  /// The isolate already resolved image paths that hit the on-disk cache
+  /// (synchronous fast path). Here, any remaining bare filenames (cache misses)
+  /// are resolved via the async DB check — the only step that requires [_db].
+  /// App model construction also happens here so the isolate never touches
+  /// mutable Dart objects or framework types.
+  Future<List<Recipe>> _finalizeImagePaths(List<_RecipeDecoded> decoded) async {
     final result = <Recipe>[];
-    for (final recipe in partial) {
-      if (recipe == null) continue;
-      recipe.headerImage =
-          await _resolveNullableImagePath(recipe.headerImage);
-      recipe.stepImages =
-          await Future.wait(recipe.stepImages.map(_resolveImagePath));
-      recipe.imageUrls =
-          await Future.wait(recipe.imageUrls.map(_resolveImagePath));
-      result.add(recipe);
+    for (final d in decoded) {
+      try {
+        final recipe = Recipe()
+          ..id = d.id
+          ..uuid = d.uuid
+          ..name = d.name
+          ..course = d.course
+          ..cuisine = d.cuisine
+          ..subcategory = d.subcategory
+          ..continent = d.continent
+          ..country = d.country
+          ..serves = d.serves
+          ..time = d.time
+          ..pairsWith = d.pairsWith
+          ..pairedRecipeIds = d.pairedRecipeIds
+          ..comments = d.comments
+          ..directions = d.directions
+          ..sourceUrl = d.sourceUrl
+          ..imageUrl = d.imageUrl
+          ..stepImageMap = d.stepImageMap
+          ..source = RecipeSource.values.firstWhere(
+                (s) => s.name == d.source,
+                orElse: () => RecipeSource.personal)
+          ..colorValue = d.colorValue
+          ..createdAt = d.createdAt
+          ..updatedAt = d.updatedAt
+          ..isFavorite = d.isFavorite
+          ..rating = d.rating
+          ..cookCount = d.cookCount
+          ..editCount = d.editCount
+          ..firstEditAt = d.firstEditAt
+          ..lastEditAt = d.lastEditAt
+          ..lastCookedAt = d.lastCookedAt
+          ..tags = d.tags
+          ..version = d.version
+          ..nutrition = d.nutritionJson != null
+              ? NutritionInfo.fromJson(d.nutritionJson!)
+              : null
+          ..modernistType = d.modernistType
+          ..smokingType = d.smokingType
+          ..glass = d.glass
+          ..garnish = d.garnish
+          ..pickleMethod = d.pickleMethod
+          ..ingredients = d.ingredients
+              .map((i) => Ingredient()
+                ..uuid = i.uuid
+                ..name = i.name
+                ..amount = i.amount
+                ..unit = i.unit
+                ..preparation = i.notes
+                ..alternative = i.alternative
+                ..isOptional = i.isOptional
+                ..section = i.section
+                ..bakerPercent = i.bakerPercent)
+              .toList();
+
+        // Resolve any image paths that were bare filenames after the isolate
+        // (cache misses). Paths already resolved to absolute form by the
+        // isolate's sync check are returned immediately by _resolveImagePath.
+        recipe.headerImage = await _resolveNullableImagePath(d.headerImage);
+        recipe.stepImages =
+            await Future.wait(d.stepImages.map(_resolveImagePath));
+        recipe.imageUrls =
+            await Future.wait(d.imageUrls.map(_resolveImagePath));
+
+        result.add(recipe);
+      } catch (e) {
+        debugPrint(
+            'RecipeRepository._finalizeImagePaths: skipping ${d.id}: $e');
+      }
     }
     return result;
   }
@@ -708,15 +911,17 @@ class RecipeRepository {
       if (rows.isEmpty) return <Recipe>[];
       final allIngs = await _db.recipeDao
           .getIngredientsForRecipes(rows.map((r) => r.id));
-      final grouped = _groupIngredientsByRecipe(allIngs);
+      // Convert to primitive records before crossing the isolate boundary.
+      final rawRecipes = rows.map(_toRecipeRaw).toList();
+      final grouped = _groupIngRaw(allIngs);
       final appDir = await getApplicationDocumentsDirectory();
       final cacheBasePath = '${appDir.path}/recipe_images';
-      final partial = await Isolate.run(() => _batchDecodeRecipes((
-            rawRecipes: rows,
+      final decoded = await Isolate.run(() => _batchDecodeRecipes((
+            rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
           )));
-      return _finalizeImagePaths(partial);
+      return _finalizeImagePaths(decoded);
     });
   }
 
@@ -726,15 +931,16 @@ class RecipeRepository {
       if (rows.isEmpty) return <Recipe>[];
       final allIngs = await _db.recipeDao
           .getIngredientsForRecipes(rows.map((r) => r.id));
-      final grouped = _groupIngredientsByRecipe(allIngs);
+      final rawRecipes = rows.map(_toRecipeRaw).toList();
+      final grouped = _groupIngRaw(allIngs);
       final appDir = await getApplicationDocumentsDirectory();
       final cacheBasePath = '${appDir.path}/recipe_images';
-      final partial = await Isolate.run(() => _batchDecodeRecipes((
-            rawRecipes: rows,
+      final decoded = await Isolate.run(() => _batchDecodeRecipes((
+            rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
           )));
-      return _finalizeImagePaths(partial);
+      return _finalizeImagePaths(decoded);
     });
   }
 
@@ -744,15 +950,16 @@ class RecipeRepository {
       if (rows.isEmpty) return <Recipe>[];
       final allIngs = await _db.recipeDao
           .getIngredientsForRecipes(rows.map((r) => r.id));
-      final grouped = _groupIngredientsByRecipe(allIngs);
+      final rawRecipes = rows.map(_toRecipeRaw).toList();
+      final grouped = _groupIngRaw(allIngs);
       final appDir = await getApplicationDocumentsDirectory();
       final cacheBasePath = '${appDir.path}/recipe_images';
-      final partial = await Isolate.run(() => _batchDecodeRecipes((
-            rawRecipes: rows,
+      final decoded = await Isolate.run(() => _batchDecodeRecipes((
+            rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
           )));
-      final recipes = await _finalizeImagePaths(partial);
+      final recipes = await _finalizeImagePaths(decoded);
 
       const continentOrder = [
         'Asian',
