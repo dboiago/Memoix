@@ -533,22 +533,23 @@ class SettingsScreen extends ConsumerWidget {
       MemoixSnackBar.showSuccess('You\'re already running the latest version!');
       return;
     }
+    final validVersion = appVersion!;
 
     // Show update dialog
     showDialog(
       context: context,
       barrierDismissible: false,
       builder: (ctx) => UpdateAvailableDialog(
-        currentVersion: appVersion.currentVersion,
-        latestVersion: appVersion.latestVersion,
-        releaseNotes: appVersion.releaseNotes,
-        releaseUrl: appVersion.downloadUrl,
+        currentVersion: validVersion.currentVersion,
+        latestVersion: validVersion.latestVersion,
+        releaseNotes: validVersion.releaseNotes,
+        releaseUrl: validVersion.downloadUrl,
         onUpdate: () async {
-          final success = await updateService.installUpdate(appVersion.downloadUrl);
+          final success = await updateService.installUpdate(validVersion.downloadUrl);
           if (!success && ctx.mounted) {
             // Fallback: open browser if auto-install failed
             Navigator.pop(ctx);
-            await updateService.openReleaseUrl(appVersion.downloadUrl);
+            await updateService.openReleaseUrl(validVersion.downloadUrl);
           }
           return success;
         },
