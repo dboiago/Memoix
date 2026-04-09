@@ -595,25 +595,58 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     final theme = Theme.of(context);
     final padding = widget.isCompact ? 8.0 : 12.0;
 
-    return ListView.builder(
+    if (widget.ingredients.isEmpty) {
+      return Padding(
+        padding: EdgeInsets.symmetric(horizontal: padding),
+        child: Text(
+          'No ingredients listed',
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      );
+    }
+
+    // Group ingredients by section, preserving original flat indices for checkbox state.
+    final Map<String, List<int>> groupIndices = {};
+    for (int i = 0; i < widget.ingredients.length; i++) {
+      final section = widget.ingredients[i].section ?? '';
+      groupIndices.putIfAbsent(section, () => []);
+      groupIndices[section]!.add(i);
+    }
+
+    // Build flat list of items: optional section header followed by ingredient rows.
+    final items = <Widget>[];
+    for (final entry in groupIndices.entries) {
+      final section = entry.key;
+      final indices = entry.value;
+
+      if (section.isNotEmpty) {
+        items.add(Padding(
+          padding: const EdgeInsets.only(top: 12, bottom: 4),
+          child: Text(
+            section,
+            style: theme.textTheme.titleSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: theme.colorScheme.primary,
+            ),
+          ),
+        ));
+      }
+
+      for (final index in indices) {
+        final ingredient = widget.ingredients[index];
+        final isChecked = _checkedItems.contains(index);
+        items.add(_buildIngredientRow(context, ingredient, index, isChecked));
+      }
+    }
+
+    return ListView(
       primary: false,
       physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 16),
-      itemCount: widget.ingredients.isEmpty ? 1 : widget.ingredients.length,
-      itemBuilder: (context, index) {
-        if (widget.ingredients.isEmpty) {
-          return Text(
-            'No ingredients listed',
-            style: TextStyle(
-              fontStyle: FontStyle.italic,
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          );
-        }
-        final ingredient = widget.ingredients[index];
-        final isChecked = _checkedItems.contains(index);
-        return _buildIngredientRow(context, ingredient, index, isChecked);
-      },
+      children: items,
     );
   }
 
