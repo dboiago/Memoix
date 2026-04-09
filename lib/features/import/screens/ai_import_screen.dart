@@ -9,6 +9,7 @@ import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart' show ImagePicker, ImageSource;
 
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../widgets/capture_option.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../../ai/models/ai_response.dart';
 import '../../ai/services/ai_service.dart';
@@ -164,7 +165,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
           Row(
             children: [
               Expanded(
-                child: _CaptureOption(
+                child: CaptureOption(
                   icon: Icons.camera_alt,
                   label: 'Take Photo',
                   onTap: () => _captureImage(ImageSource.camera),
@@ -172,7 +173,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
               ),
               const SizedBox(width: 16),
               Expanded(
-                child: _CaptureOption(
+                child: CaptureOption(
                   icon: Icons.photo_library,
                   label: 'Choose Photo',
                   onTap: () => _captureImage(ImageSource.gallery),
@@ -188,9 +189,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
           // ── Recipe URL section ──
           Text(
             'Recipe URL',
-            style: theme.textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+            style: theme.textTheme.titleMedium,
           ),
           const SizedBox(height: 8),
           Text(
@@ -204,6 +203,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
             controller: _urlController,
             decoration: InputDecoration(
               hintText: 'https://example.com/recipe...',
+              border: const OutlineInputBorder(),
               prefixIcon: const Icon(Icons.link),
               suffixIcon: _urlController.text.isNotEmpty
                   ? IconButton(
@@ -234,9 +234,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
           // ── Paste text section ──
           Text(
             'Paste Recipe Text',
-            style: theme.textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+            style: theme.textTheme.titleMedium,
           ),
           const SizedBox(height: 8),
           Text(
@@ -277,38 +275,35 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
           // ── Error display ──
           if (_errorMessage != null) ...[
             const SizedBox(height: 12),
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.errorContainer,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.error, color: theme.colorScheme.error),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      _errorMessage!,
-                      style: TextStyle(
-                          color: theme.colorScheme.onErrorContainer),
-                    ),
+            Card(
+              color: theme.colorScheme.errorContainer,
+              child: InkWell(
+                onTap: () {
+                  Clipboard.setData(
+                      ClipboardData(text: _rawError ?? _errorMessage!));
+                  MemoixSnackBar.show('Error details copied to clipboard');
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Row(
+                    children: [
+                      Icon(Icons.error_outline, color: theme.colorScheme.error),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          _errorMessage!,
+                          style: TextStyle(
+                              color: theme.colorScheme.onErrorContainer),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Icon(Icons.copy,
+                          size: 18,
+                          color: theme.colorScheme.onErrorContainer
+                              .withOpacity(0.7)),
+                    ],
                   ),
-                  const SizedBox(width: 4),
-                  GestureDetector(
-                    onTap: () {
-                      Clipboard.setData(
-                          ClipboardData(text: _rawError ?? _errorMessage!));
-                      MemoixSnackBar.show('Error details copied to clipboard');
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: Icon(Icons.copy,
-                          size: 16,
-                          color: theme.colorScheme.onErrorContainer),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ],
@@ -492,39 +487,4 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
   }
 }
 
-// ─────────────────────────── Capture card ───────────────────────────
 
-/// Reusable capture-option card matching the OCR scanner screen style.
-class _CaptureOption extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final VoidCallback onTap;
-
-  const _CaptureOption({
-    required this.icon,
-    required this.label,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    return Card(
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            children: [
-              Icon(icon, size: 48, color: theme.colorScheme.primary),
-              const SizedBox(height: 12),
-              Text(label, style: theme.textTheme.titleSmall),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
