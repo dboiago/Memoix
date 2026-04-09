@@ -80,14 +80,12 @@ abstract class SupabaseSyncService {
     // Guard: must belong to a sync group.
     final groupId = await SupabaseAuthService.groupId;
     if (groupId == null) {
-      debugPrint('SupabaseSyncService: no group_id found — skipping sync.');
       return;
     }
 
     // Extract userId once — required for all personal-table sync methods.
     final userId = SupabaseAuthService.currentUserId;
     if (userId == null) {
-      debugPrint('SupabaseSyncService: no user_id — skipping sync.');
       return;
     }
 
@@ -113,121 +111,91 @@ abstract class SupabaseSyncService {
     try {
       pulledRecipeUuids = await _syncRecipes(groupId, lastSyncRecipes);
       await _setLastSync(prefs, _keyRecipes, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: recipe sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Ingredients — independent error boundary ──────────────────────────
     try {
       await _syncIngredients(groupId, lastSyncIngredients, pulledRecipeUuids);
       await _setLastSync(prefs, _keyIngredients, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: ingredient sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Pizzas ────────────────────────────────────────────────────────────
     try {
       await _syncPizzas(groupId, lastSyncPizzas);
       await _setLastSync(prefs, _keyPizzas, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: pizza sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Sandwiches ────────────────────────────────────────────────────────
     try {
       await _syncSandwiches(groupId, lastSyncSandwiches);
       await _setLastSync(prefs, _keySandwiches, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: sandwich sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Cellar entries ────────────────────────────────────────────────────
     try {
       await _syncCellarEntries(groupId, lastSyncCellarEntries);
       await _setLastSync(prefs, _keyCellarEntries, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: cellar entry sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Cheese entries ────────────────────────────────────────────────────
     try {
       await _syncCheeseEntries(groupId, lastSyncCheeseEntries);
       await _setLastSync(prefs, _keyCheeseEntries, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: cheese entry sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Smoking recipes ───────────────────────────────────────────────────
     try {
       await _syncSmokingRecipes(groupId, lastSyncSmokingRecipes);
       await _setLastSync(prefs, _keySmokingRecipes, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: smoking recipe sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Courses ───────────────────────────────────────────────────────────
     try {
       await _syncCourses(groupId, lastSyncCourses);
       await _setLastSync(prefs, _keyCourses, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: course sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Scratch pads ──────────────────────────────────────────────────────
     try {
       await _syncScratchPads(groupId, lastSyncScratchPads);
       await _setLastSync(prefs, _keyScratchPads, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: scratch pad sync error: $e');
-    }
+    } catch (e) {}
 
     // ── User entity preferences ───────────────────────────────────────────
     try {
       await _syncUserEntityPreferences(userId, lastSyncUserEntityPrefs);
       await _setLastSync(prefs, _keyUserEntityPrefs, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: user entity prefs sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Meal plans + planned meals ────────────────────────────────────────
     try {
       await _syncMealPlans(userId, lastSyncMealPlans);
       await _setLastSync(prefs, _keyMealPlans, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: meal plan sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Shopping lists + shopping items ───────────────────────────────────
     try {
       await _syncShoppingLists(userId, lastSyncShoppingLists);
       await _setLastSync(prefs, _keyShoppingLists, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: shopping list sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Recipe drafts ─────────────────────────────────────────────────────
     try {
       await _syncRecipeDrafts(userId, lastSyncRecipeDrafts);
       await _setLastSync(prefs, _keyRecipeDrafts, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: recipe draft sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Cooking logs ──────────────────────────────────────────────────────
     try {
       await _syncCookingLogs(userId, lastSyncCookingLogs);
       await _setLastSync(prefs, _keyCookingLogs, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: cooking log sync error: $e');
-    }
+    } catch (e) {}
 
     // ── Recipe images ─────────────────────────────────────────────────────
     try {
       await _syncRecipeImages(groupId, lastSyncRecipeImages);
       await _setLastSync(prefs, _keyRecipeImages, DateTime.now().toUtc());
-    } catch (e) {
-      debugPrint('SupabaseSyncService: recipe image sync error: $e');
-    }
+    } catch (e) {}
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -439,7 +407,6 @@ abstract class SupabaseSyncService {
 
     if (recipesToPush.isNotEmpty) {
       final changedRecipeIds = recipesToPush.map((r) => r.id).toList();
-      debugPrint('SupabaseSyncService: ingredient sync — changed recipe ids: ${changedRecipeIds.length}');
       // Build recipeId → uuid map to avoid per-ingredient DB lookups.
       final recipeIdToUuid = {for (final r in recipesToPush) r.id: r.uuid};
 
@@ -457,7 +424,6 @@ abstract class SupabaseSyncService {
               return _ingredientToRow(ing, recipeUuid, groupId);
             })
             .toList();
-        debugPrint('SupabaseSyncService: ingredient sync — push rows: ${pushRows.length}');
 
         if (pushRows.isNotEmpty) {
           // Ingredient UUIDs are now stable (generated once, round-tripped through
@@ -503,7 +469,6 @@ abstract class SupabaseSyncService {
         .select()
         .inFilter('recipe_uuid', pulledRecipeUuids)
         .filter('deleted_at', 'is', null);
-    debugPrint('SupabaseSyncService: ingredient sync — remote rows fetched: ${remoteIngredients.length}');
 
     // Group by recipe_uuid for efficient per-recipe replacement.
     final byRecipe = <String, List<Map<String, dynamic>>>{};
@@ -529,7 +494,6 @@ abstract class SupabaseSyncService {
       });
       replacedCount++;
     }
-    debugPrint('SupabaseSyncService: ingredient sync — recipes replaced locally: $replacedCount');
   }
 
   // ─────────────────────────────────────────────────────────────────────────
