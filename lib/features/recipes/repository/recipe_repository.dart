@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:isolate';
 
 import 'package:drift/drift.dart';
 import 'package:flutter/foundation.dart';
@@ -916,11 +915,11 @@ class RecipeRepository {
       final grouped = _groupIngRaw(allIngs);
       final appDir = await getApplicationDocumentsDirectory();
       final cacheBasePath = '${appDir.path}/recipe_images';
-      final decoded = await Isolate.run(() => _batchDecodeRecipes((
+      final decoded = await compute(_batchDecodeRecipes, (
             rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
-          )));
+          ));
       return _finalizeImagePaths(decoded);
     });
   }
@@ -935,11 +934,11 @@ class RecipeRepository {
       final grouped = _groupIngRaw(allIngs);
       final appDir = await getApplicationDocumentsDirectory();
       final cacheBasePath = '${appDir.path}/recipe_images';
-      final decoded = await Isolate.run(() => _batchDecodeRecipes((
+      final decoded = await compute(_batchDecodeRecipes, (
             rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
-          )));
+          ));
       return _finalizeImagePaths(decoded);
     });
   }
@@ -954,11 +953,11 @@ class RecipeRepository {
       final grouped = _groupIngRaw(allIngs);
       final appDir = await getApplicationDocumentsDirectory();
       final cacheBasePath = '${appDir.path}/recipe_images';
-      final decoded = await Isolate.run(() => _batchDecodeRecipes((
+      final decoded = await compute(_batchDecodeRecipes, (
             rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
-          )));
+          ));
       final recipes = await _finalizeImagePaths(decoded);
 
       const continentOrder = [
