@@ -35,66 +35,63 @@ class UpdateService {
 
   /// Check for available updates
   Future<AppVersion?> checkForUpdate() async {
-    try {
-      final packageInfo = await PackageInfo.fromPlatform();
-      final currentVersion = packageInfo.version;
+    final packageInfo = await PackageInfo.fromPlatform();
+    final currentVersion = packageInfo.version;
 
-      final response = await http.get(
-        Uri.parse(_apiUrl),
-      ).timeout(const Duration(seconds: 10));
+    final response = await http.get(
+      Uri.parse(_apiUrl),
+    ).timeout(const Duration(seconds: 10));
 
-      if (response.statusCode == 200) {
-        final json = jsonDecode(response.body) as Map<String, dynamic>;
-        final tagName = (json['tag_name'] as String?)?.replaceFirst('v', '') ?? '';
-        final releaseNotes = (json['body'] as String?) ?? 'See release notes on GitHub';
-        
-        // DYNAMIC ASSET FINDER (New Logic)
-        final assets = (json['assets'] as List?) ?? [];
-        String downloadUrl = (json['html_url'] as String?) ?? ''; // Fallback
+    if (response.statusCode == 200) {
+      final json = jsonDecode(response.body) as Map<String, dynamic>;
+      final tagName = (json['tag_name'] as String?)?.replaceFirst(RegExp(r'^v', caseSensitive: false), '') ?? '';
+      final releaseNotes = (json['body'] as String?) ?? 'See release notes on GitHub';
 
-        // Find correct asset based on Platform
-        if (Platform.isAndroid) {
-          final apkAsset = assets.firstWhere(
-            (a) => (a['name'] as String).toLowerCase().endsWith('.apk'),
-            orElse: () => null,
-          );
-          if (apkAsset != null) downloadUrl = apkAsset['browser_download_url'];
-        } else if (Platform.isWindows) {
-          final exeAsset = assets.firstWhere(
-            (a) => (a['name'] as String).toLowerCase().endsWith('.exe'),
-            orElse: () => null,
-          );
-          if (exeAsset != null) downloadUrl = exeAsset['browser_download_url'];
-        } else if (Platform.isLinux) {
-           // Basic logic, improved later in install step
-           final linuxAsset = assets.firstWhere(
-            (a) => (a['name'] as String).toLowerCase().endsWith('.deb') || (a['name'] as String).toLowerCase().endsWith('.rpm'),
-            orElse: () => null,
-          );
-          if (linuxAsset != null) downloadUrl = linuxAsset['browser_download_url'];
-        } else if (Platform.isMacOS) {
-           final dmgAsset = assets.firstWhere(
-            (a) => (a['name'] as String).toLowerCase().endsWith('.dmg'),
-            orElse: () => null,
-          );
-          if (dmgAsset != null) downloadUrl = dmgAsset['browser_download_url'];
-        }
+      // DYNAMIC ASSET FINDER
+      final assets = (json['assets'] as List?) ?? [];
+      String downloadUrl = (json['html_url'] as String?) ?? ''; // Fallback: release page
 
-        final hasUpdate = _compareVersions(currentVersion, tagName) < 0;
-
-        return AppVersion(
-          currentVersion: currentVersion,
-          latestVersion: tagName,
-          hasUpdate: hasUpdate,
-          downloadUrl: downloadUrl,
-          releaseNotes: releaseNotes,
+      // Find correct asset based on Platform
+      if (Platform.isAndroid) {
+        final apkAsset = assets.firstWhere(
+          (a) => (a['name'] as String).toLowerCase().endsWith('.apk'),
+          orElse: () => null,
         );
+        if (apkAsset != null) downloadUrl = apkAsset['browser_download_url'];
+      } else if (Platform.isWindows) {
+        final exeAsset = assets.firstWhere(
+          (a) => (a['name'] as String).toLowerCase().endsWith('.exe'),
+          orElse: () => null,
+        );
+        if (exeAsset != null) downloadUrl = exeAsset['browser_download_url'];
+      } else if (Platform.isLinux) {
+        final linuxAsset = assets.firstWhere(
+          (a) => (a['name'] as String).toLowerCase().endsWith('.deb') || (a['name'] as String).toLowerCase().endsWith('.rpm'),
+          orElse: () => null,
+        );
+        if (linuxAsset != null) downloadUrl = linuxAsset['browser_download_url'];
+      } else if (Platform.isMacOS) {
+        final dmgAsset = assets.firstWhere(
+          (a) => (a['name'] as String).toLowerCase().endsWith('.dmg'),
+          orElse: () => null,
+        );
+        if (dmgAsset != null) downloadUrl = dmgAsset['browser_download_url'];
       }
-    } catch (e) {
-      print('Update check failed: $e');
-    }
 
-    return null;
+      final hasUpdate = _compareVersions(currentVersion, tagName) < 0;
+
+      return AppVersion(
+        currentVersion: currentVersion,
+        latestVersion: tagName,
+        hasUpdate: hasUpdate,
+        downloadUrl: downloadUrl,
+        releaseNotes: releaseNotes,
+      );
+    } else if (response.statusCode == 403) {
+      throw Exception('GitHub API rate limit exceeded. Please try again later.');
+    } else {
+      throw Exception('Failed to check for updates: HTTP ${response.statusCode}');
+    }
   }
 
   int _compareVersions(String v1, String v2) {
@@ -122,6 +119,14 @@ class UpdateService {
 
   /// Download and install the app update automatically
   Future<bool> installUpdate(String downloadUrl) async {
+    // Guard: release page URLs are not downloadable binaries.
+    // This happens when checkForUpdate found no matching asset for this platform.
+    if (downloadUrl.contains('/releases/tag/')) {
+      throw Exception(
+        'No direct download asset was found for this platform. '
+        'Please download the update manually from: $downloadUrl',
+      );
+    }
     try {
       if (Platform.isAndroid) {
         return await _installAndroidUpdate(downloadUrl);
@@ -136,7 +141,7 @@ class UpdateService {
       }
       return false;
     } catch (e) {
-      print('Failed to install update: $e');
+      debugPrint('Failed to install update: $e');
       return false;
     }
   }
@@ -151,12 +156,12 @@ class UpdateService {
           .listen(
         (OtaEvent event) {
           // Optional: Add stream controller here if you want to expose progress
-          print('OTA Status: ${event.status}, Value: ${event.value}');
+          debugPrint('OTA Status: ${event.status}, Value: ${event.value}');
         },
       );
       return true; // OTA Update handles the rest async
     } catch (e) {
-      print('Android update failed: $e');
+      debugPrint('Android update failed: $e');
       return false;
     }
   }
@@ -170,7 +175,7 @@ class UpdateService {
       }
       return true; 
     } catch (e) {
-      print('iOS update failed: $e');
+      debugPrint('iOS update failed: $e');
       return false;
     }
   }
@@ -181,7 +186,7 @@ class UpdateService {
       // Download the installer
       final response = await http.get(Uri.parse(installerUrl)).timeout(const Duration(minutes: 5));
       if (response.statusCode != 200) {
-        print('Failed to download Windows installer: ${response.statusCode}');
+        debugPrint('Failed to download Windows installer: ${response.statusCode}');
         return false;
       }
 
@@ -192,10 +197,10 @@ class UpdateService {
 
       // Execute the installer with /S (silent)
       await Process.run(installerFile.path, ['/S'], runInShell: true);
-      
+
       return true;
     } catch (e) {
-      print('Windows update failed: $e');
+      debugPrint('Windows update failed: $e');
       return false;
     }
   }
@@ -206,7 +211,7 @@ class UpdateService {
       // Download the DMG
       final response = await http.get(Uri.parse(dmgUrl)).timeout(const Duration(minutes: 5));
       if (response.statusCode != 200) {
-        print('Failed to download macOS DMG: ${response.statusCode}');
+        debugPrint('Failed to download macOS DMG: ${response.statusCode}');
         return false;
       }
 
@@ -221,10 +226,10 @@ class UpdateService {
 
       // Open the DMG file (system will mount and show it)
       await Process.run('open', [dmgFile.path]);
-      
+
       return true;
     } catch (e) {
-      print('macOS update failed: $e');
+      debugPrint('macOS update failed: $e');
       return false;
     }
   }
@@ -264,7 +269,7 @@ class UpdateService {
       // Download the package
       final response = await http.get(Uri.parse(packageUrl)).timeout(const Duration(minutes: 5));
       if (response.statusCode != 200) {
-        print('Failed to download Linux package: ${response.statusCode}');
+        debugPrint('Failed to download Linux package: ${response.statusCode}');
         return false;
       }
 
@@ -283,7 +288,7 @@ class UpdateService {
 
       return true;
     } catch (e) {
-      print('Linux update failed: $e');
+      debugPrint('Linux update failed: $e');
       return false;
     }
   }
