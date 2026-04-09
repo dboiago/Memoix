@@ -146,7 +146,13 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     if (!autoCheck) return;
 
     final updateService = ref.read(updateServiceProvider);
-    final appVersion = await updateService.checkForUpdate();
+    final AppVersion? appVersion;
+    try {
+      appVersion = await updateService.checkForUpdate();
+    } catch (e) {
+      debugPrint('Update check on launch failed: $e');
+      return;
+    }
 
     if (!mounted || appVersion == null || !appVersion.hasUpdate) return;
 
