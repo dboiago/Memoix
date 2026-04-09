@@ -42,4 +42,17 @@ class ImageDao extends DatabaseAccessor<AppDatabase> with _$ImageDaoMixin {
             ..where((t) => t.fileName.equals(fileName))
             ..limit(1))
           .getSingleOrNull();
+
+  /// Checks whether a blob row exists for [fileName] without fetching
+  /// the [imageData] column. Use this instead of [getImageByFileName] whenever
+  /// only existence needs to be verified, to avoid loading multi-MB BLOBs into
+  /// the Dart heap unnecessarily.
+  Future<bool> checkImageExists(String fileName) async {
+    final query = selectOnly(recipeImages)
+      ..addColumns([recipeImages.fileName])
+      ..where(recipeImages.fileName.equals(fileName))
+      ..limit(1);
+    final row = await query.getSingleOrNull();
+    return row != null;
+  }
 }

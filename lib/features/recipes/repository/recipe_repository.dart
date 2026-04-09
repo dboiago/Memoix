@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:isolate';
 
 import 'package:drift/drift.dart';
 import 'package:flutter/foundation.dart';
@@ -21,6 +22,142 @@ import '../../personal_storage/services/tombstone_store.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Top-level isolate helpers (must be top-level so Isolate.run can capture them)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Groups a flat list of [db.Ingredient] rows by [recipeId].
+Map<int, List<db.Ingredient>> _groupIngredientsByRecipe(
+    List<db.Ingredient> allIngs) {
+  final grouped = <int, List<db.Ingredient>>{};
+  for (final ing in allIngs) {
+    grouped.putIfAbsent(ing.recipeId, () => []).add(ing);
+  }
+  return grouped;
+}
+
+/// Synchronously resolves an image value against the on-disk cache.
+/// Returns the absolute cache path when the file exists, otherwise returns
+/// [value] unchanged (bare filename) so the main thread can do a DB lookup.
+String _resolvePathSync(String value, String cacheBasePath) {
+  if (value.startsWith('http')) return value;
+  if (value.startsWith('/') || RegExp(r'^[A-Za-z]:').hasMatch(value)) {
+    return value;
+  }
+  final cached = File('$cacheBasePath/$value');
+  return cached.existsSync() ? cached.path : value;
+}
+
+String? _resolvePathSyncNullable(String? value, String cacheBasePath) {
+  if (value == null || value.isEmpty) return value;
+  return _resolvePathSync(value, cacheBasePath);
+}
+
+/// Runs inside [Isolate.run].
+/// Performs all JSON-heavy decoding and model construction for a batch of
+/// recipe rows, then does a synchronous [File.existsSync] cache check for
+/// each image value. Images that are already in the on-disk cache are replaced
+/// with their absolute path. Images that are not yet cached remain as bare
+/// filenames so [RecipeRepository._finalizeImagePaths] can complete them on
+/// the main thread with a DB-only existence check (no BLOB read needed on the
+/// hot path).
+///
+/// Returns [null] in the output list for any recipe that fails to decode so
+/// a single corrupt row never aborts the entire batch.
+List<Recipe?> _batchDecodeRecipes(
+    ({
+      List<db.Recipe> rawRecipes,
+      Map<int, List<db.Ingredient>> grouped,
+      String cacheBasePath,
+    }) args) {
+  final result = <Recipe?>[];
+  for (final r in args.rawRecipes) {
+    try {
+      final ings = args.grouped[r.id] ?? [];
+      final recipe = Recipe()
+        ..id = r.id
+        ..uuid = r.uuid
+        ..name = r.name
+        ..course = r.course
+        ..cuisine = r.cuisine
+        ..subcategory = r.subcategory
+        ..continent = r.continent
+        ..country = r.country
+        ..serves = r.serves
+        ..time = r.time
+        ..pairsWith =
+            (jsonDecode(r.pairsWith) as List).cast<String>()
+        ..pairedRecipeIds =
+            (jsonDecode(r.pairedRecipeIds) as List).cast<String>()
+        ..comments = r.comments
+        ..directions =
+            (jsonDecode(r.directions) as List).cast<String>()
+        ..sourceUrl = r.sourceUrl
+        ..imageUrls =
+            (jsonDecode(r.imageUrls) as List).cast<String>()
+        ..imageUrl = r.imageUrl
+        ..headerImage = r.headerImage
+        ..stepImages =
+            (jsonDecode(r.stepImages) as List).cast<String>()
+        ..stepImageMap =
+            (jsonDecode(r.stepImageMap) as List).cast<String>()
+        ..source = RecipeSource.values.firstWhere(
+              (s) => s.name == r.source,
+              orElse: () => RecipeSource.personal)
+        ..colorValue = r.colorValue
+        ..createdAt = r.createdAt
+        ..updatedAt = r.updatedAt
+        ..isFavorite = r.isFavorite
+        ..rating = r.rating
+        ..cookCount = r.cookCount
+        ..editCount = r.editCount
+        ..firstEditAt = r.firstEditAt
+        ..lastEditAt = r.lastEditAt
+        ..lastCookedAt = r.lastCookedAt
+        ..tags = (jsonDecode(r.tags) as List).cast<String>()
+        ..version = r.version
+        ..nutrition = r.nutrition != null
+            ? NutritionInfo.fromJson(
+                jsonDecode(r.nutrition!) as Map<String, dynamic>)
+            : null
+        ..modernistType = r.modernistType
+        ..smokingType = r.smokingType
+        ..glass = r.glass
+        ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
+        ..pickleMethod = r.pickleMethod
+        ..ingredients = ings
+            .map((i) => Ingredient()
+              ..uuid = i.uuid
+              ..name = i.name
+              ..amount = i.amount
+              ..unit = i.unit
+              ..preparation = i.notes
+              ..alternative = i.alternative
+              ..isOptional = i.isOptional
+              ..section = i.section
+              ..bakerPercent = i.bakerPercent)
+            .toList();
+
+      // Resolve image paths that are already in the on-disk cache.
+      // Bare filenames that miss the cache are left unchanged for the
+      // main-thread _finalizeImagePaths step.
+      recipe.headerImage =
+          _resolvePathSyncNullable(recipe.headerImage, args.cacheBasePath);
+      recipe.stepImages = recipe.stepImages
+          .map((v) => _resolvePathSync(v, args.cacheBasePath))
+          .toList();
+      recipe.imageUrls = recipe.imageUrls
+          .map((v) => _resolvePathSync(v, args.cacheBasePath))
+          .toList();
+
+      result.add(recipe);
+    } catch (_) {
+      result.add(null);
+    }
+  }
+  return result;
+}
 
 /// Repository for recipe data operations
 class RecipeRepository {
@@ -210,8 +347,8 @@ class RecipeRepository {
       int recipeId, Recipe recipe, Map<String, String> fileNameToPath) async {
     Future<void> save(String fileName, String imageType, int? stepIndex) async {
       try {
-        final existing = await _db.imageDao.getImageByFileName(fileName);
-        if (existing != null) return; // already in the blob store
+        final exists = await _db.imageDao.checkImageExists(fileName);
+        if (exists) return; // already in the blob store
 
         final original = fileNameToPath[fileName];
         if (original == null) return;
@@ -252,6 +389,29 @@ class RecipeRepository {
     }
   }
 
+  /// Completes image path resolution for the [partial] list returned by
+  /// [_batchDecodeRecipes] after [Isolate.run].
+  ///
+  /// The isolate already resolved paths whose files were present in the
+  /// on-disk cache (common case). This method handles the remaining bare
+  /// filenames via a BLOB-free DB existence check; actual BLOB bytes are only
+  /// fetched when the file genuinely needs to be written to the cache.
+  /// Null entries (decode failures) are dropped.
+  Future<List<Recipe>> _finalizeImagePaths(List<Recipe?> partial) async {
+    final result = <Recipe>[];
+    for (final recipe in partial) {
+      if (recipe == null) continue;
+      recipe.headerImage =
+          await _resolveNullableImagePath(recipe.headerImage);
+      recipe.stepImages =
+          await Future.wait(recipe.stepImages.map(_resolveImagePath));
+      recipe.imageUrls =
+          await Future.wait(recipe.imageUrls.map(_resolveImagePath));
+      result.add(recipe);
+    }
+    return result;
+  }
+
   /// Resolves a nullable image value. See [_resolveImagePath].
   Future<String?> _resolveNullableImagePath(String? value) async {
     if (value == null || value.isEmpty) return value;
@@ -259,15 +419,14 @@ class RecipeRepository {
   }
 
   /// Resolves a single image value:
-  /// - URLs pass through unchanged.
-  /// - Absolute paths pass through unchanged (legacy data on device).
-  /// - Plain filenames are looked up in the blob store; if found, the bytes
-  ///   are written to the local cache directory and the full path is returned.
+  /// - URLs and absolute paths pass through unchanged.
+  /// - Plain filenames first check the on-disk cache (fast path).
+  /// - On cache miss, [ImageDao.checkImageExists] verifies blob presence
+  ///   without fetching the [imageData] BLOB column. The full BLOB is only
+  ///   read when the file must be written to the cache.
   /// - If no blob is found (image not yet synced from another device), the
-  ///   absolute cache path is returned even though the file does not yet exist.
-  ///   This prevents PathNotFoundException from bare-filename paths being passed
-  ///   to File() in image widgets — widgets handle a missing absolute path
-  ///   gracefully (show placeholder) whereas a bare filename causes a crash.
+  ///   absolute cache path is returned even though the file does not yet exist
+  ///   so image widgets show a placeholder rather than throwing.
   Future<String> _resolveImagePath(String value) async {
     if (value.startsWith('http')) return value;
     if (_isAbsolutePath(value)) return value;
@@ -278,11 +437,13 @@ class RecipeRepository {
 
     if (await cachedFile.exists()) return cachedFile.path;
 
+    // Check existence without pulling the imageData BLOB into memory.
+    final exists = await _db.imageDao.checkImageExists(value);
+    if (!exists) return cachedFile.path;
+
+    // Only fetch the BLOB now that we know it exists and the cache is cold.
     final blob = await _db.imageDao.getImageByFileName(value);
-    // Return the absolute path regardless of whether blob exists yet.
-    // The file may not be on disk (not yet synced), but an absolute path
-    // lets image widgets show a placeholder instead of throwing.
-    if (blob == null) return cachedFile.path;
+    if (blob == null) return cachedFile.path; // race-condition safety
 
     if (!await cacheDir.exists()) await cacheDir.create(recursive: true);
     await cachedFile.writeAsBytes(blob.imageData);
@@ -543,55 +704,55 @@ class RecipeRepository {
   }
 
   Stream<List<Recipe>> watchAllRecipes() {
-    // Use the join-based stream so ingredient data is loaded in the same
-    // query as the recipe rows — no N+1 per-recipe getIngredientsForRecipe.
-    // asyncMap is required because _toIsarRecipe is async.
-    return _db.recipeDao.watchRecipesWithIngredients().asyncMap((pairs) =>
-        Future.wait(pairs.map((p) => _toIsarRecipe(p.recipe, p.ingredients))));
+    return _db.recipeDao.watchAllRecipes().asyncMap((rows) async {
+      if (rows.isEmpty) return <Recipe>[];
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(rows.map((r) => r.id));
+      final grouped = _groupIngredientsByRecipe(allIngs);
+      final appDir = await getApplicationDocumentsDirectory();
+      final cacheBasePath = '${appDir.path}/recipe_images';
+      final partial = await Isolate.run(() => _batchDecodeRecipes((
+            rawRecipes: rows,
+            grouped: grouped,
+            cacheBasePath: cacheBasePath,
+          )));
+      return _finalizeImagePaths(partial);
+    });
   }
 
   Stream<List<Recipe>> watchFavorites() {
-    // 2-query pattern: fetch all ingredients once, then group in Dart.
-    // Avoids the previous N+1 (one getIngredientsForRecipe per favorite).
+    // Fetch only ingredients for the returned favorites — no full table scan.
     return _db.recipeDao.watchFavoriteRecipes().asyncMap((rows) async {
       if (rows.isEmpty) return <Recipe>[];
-      final recipeIds = rows.map((r) => r.id).toSet();
-      final allIngs = await _db.recipeDao.getAllIngredients();
-      final ingsByRecipe = <int, List<db.Ingredient>>{};
-      for (final ing in allIngs) {
-        if (recipeIds.contains(ing.recipeId)) {
-          ingsByRecipe.putIfAbsent(ing.recipeId, () => []).add(ing);
-        }
-      }
-      return Future.wait(
-          rows.map((r) => _toIsarRecipe(r, ingsByRecipe[r.id] ?? [])));
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(rows.map((r) => r.id));
+      final grouped = _groupIngredientsByRecipe(allIngs);
+      final appDir = await getApplicationDocumentsDirectory();
+      final cacheBasePath = '${appDir.path}/recipe_images';
+      final partial = await Isolate.run(() => _batchDecodeRecipes((
+            rawRecipes: rows,
+            grouped: grouped,
+            cacheBasePath: cacheBasePath,
+          )));
+      return _finalizeImagePaths(partial);
     });
   }
 
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
-    // 2-query pattern: fetch all ingredients once, then group in Dart.
-    // Avoids the previous N+1 (one getIngredientsForRecipe per recipe).
+    // Fetch only ingredients for the course's recipes — no full table scan.
     return _db.recipeDao.watchRecipesByCourse(course).asyncMap((rows) async {
       if (rows.isEmpty) return <Recipe>[];
-      final recipeIds = rows.map((r) => r.id).toSet();
-      final allIngs = await _db.recipeDao.getAllIngredients();
-      final ingsByRecipe = <int, List<db.Ingredient>>{};
-      for (final ing in allIngs) {
-        if (recipeIds.contains(ing.recipeId)) {
-          ingsByRecipe.putIfAbsent(ing.recipeId, () => []).add(ing);
-        }
-      }
-      final futures = rows.map((r) async {
-        try {
-          return await _toIsarRecipe(r, ingsByRecipe[r.id] ?? []);
-        } catch (e) {
-          debugPrint(
-              'RecipeRepository.watchRecipesByCourse: skipping recipe ${r.id} (${r.name}): $e');
-          return null;
-        }
-      }).toList();
-      final awaited = await Future.wait(futures);
-      final recipes = awaited.whereType<Recipe>().toList();
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(rows.map((r) => r.id));
+      final grouped = _groupIngredientsByRecipe(allIngs);
+      final appDir = await getApplicationDocumentsDirectory();
+      final cacheBasePath = '${appDir.path}/recipe_images';
+      final partial = await Isolate.run(() => _batchDecodeRecipes((
+            rawRecipes: rows,
+            grouped: grouped,
+            cacheBasePath: cacheBasePath,
+          )));
+      final recipes = await _finalizeImagePaths(partial);
 
       const continentOrder = [
         'Asian',

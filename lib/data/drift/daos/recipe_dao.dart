@@ -185,63 +185,11 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
 
   // ── Recipe watch ───────────────────────────────────────────────────────────
 
-  /// Watches both [recipes] and [ingredients] tables so that the stream
-  /// re-emits whenever either table is written to (e.g. after saveRecipe()
-  /// deletes and reinserts ingredient rows). The left-outer join includes
-  /// recipes that have no ingredients. Results are de-duplicated by recipe.id
-  /// because the join produces one row per ingredient.
-  Stream<List<Recipe>> watchAllRecipes() {
-    return select(recipes).join([
-      leftOuterJoin(ingredients, ingredients.recipeId.equalsExp(recipes.id)),
-    ]).watch().map((rows) {
-      final seen = <int>{};
-      final result = <Recipe>[];
-      for (final row in rows) {
-        final recipe = row.readTable(recipes);
-        if (seen.add(recipe.id)) {
-          result.add(recipe);
-        }
-      }
-      return result;
-    });
-  }
-
-  /// Like [watchAllRecipes] but includes each recipe's ingredients in the
-  /// result, extracted from the same JOIN so no extra queries are needed.
-  Stream<List<({Recipe recipe, List<Ingredient> ingredients})>>
-      watchRecipesWithIngredients() {
-    return select(recipes).join([
-      leftOuterJoin(ingredients, ingredients.recipeId.equalsExp(recipes.id)),
-    ]).watch().map((rows) {
-      // Preserve insertion order while building grouped result.
-      final recipeOrder = <int>[];
-      final recipeMap = <int, Recipe>{};
-      final ingredientMap = <int, List<Ingredient>>{};
-      for (final row in rows) {
-        final recipe = row.readTable(recipes);
-        if (!recipeMap.containsKey(recipe.id)) {
-          recipeMap[recipe.id] = recipe;
-          ingredientMap[recipe.id] = [];
-          recipeOrder.add(recipe.id);
-        }
-        final ingredient = row.readTableOrNull(ingredients);
-        if (ingredient != null) {
-          ingredientMap[recipe.id]!.add(ingredient);
-        }
-      }
-      return recipeOrder
-          .map((id) => (
-                recipe: recipeMap[id]!,
-                ingredients: ingredientMap[id]!,
-              ))
-          .toList();
-    });
-  }
-
-  /// Returns all ingredient rows in a single query.
-  /// Used with [watchFavoriteRecipes] / [watchRecipesByCourse] to avoid N+1
-  /// queries: fetch all ingredients once, then group in Dart.
-  Future<List<Ingredient>> getAllIngredients() => select(ingredients).get();
+  /// Watches the [recipes] table only — no JOIN amplification.
+  /// The stream re-emits on any write to the recipes table, including the
+  /// [touchRecipe] stamp that [RecipeRepository.saveRecipe] issues after
+  /// writing ingredient rows, so ingredient changes are always propagated.
+  Stream<List<Recipe>> watchAllRecipes() => select(recipes).watch();
 
   Stream<List<Recipe>> watchFavoriteRecipes() =>
       (select(recipes)..where((r) => r.isFavorite.equals(true))).watch();
@@ -257,12 +205,28 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             ..where((r) => r.course.lower().equals(course.toLowerCase())))
           .watch();
 
+  /// Returns a stream of recipes whose [recipeType] column matches [type].
+  /// Used by domain-specific repositories (e.g. Modernist) to avoid scanning
+  /// the full table when only one type is needed.
+  Stream<List<Recipe>> watchRecipesByType(String type) =>
+      (select(recipes)..where((r) => r.recipeType.equals(type))).watch();
+
   // ── Ingredient methods ─────────────────────────────────────────────────────
 
   Future<List<Ingredient>> getIngredientsForRecipe(int recipeId) =>
       (select(ingredients)
             ..where((i) => i.recipeId.equals(recipeId)))
           .get();
+
+  /// Fetches all ingredient rows whose [recipeId] is in [recipeIds].
+  /// A single `WHERE recipe_id IN (...)` replaces N separate queries.
+  Future<List<Ingredient>> getIngredientsForRecipes(
+    Iterable<int> recipeIds,
+  ) {
+    final ids = recipeIds.toList();
+    if (ids.isEmpty) return Future.value([]);
+    return (select(ingredients)..where((i) => i.recipeId.isIn(ids))).get();
+  }
 
   Future<int> saveIngredient(IngredientsCompanion ingredient) =>
       into(ingredients).insert(ingredient);

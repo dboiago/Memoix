@@ -71,49 +71,40 @@ class ModernistRepository {
 
   // ── Watch methods ────────────────────────────────────────────────────────
 
-  /// Watch all modernist recipes
-  Stream<List<ModernistRecipe>> watchAll() {
-    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
-      return pairs
-          .where((p) => p.recipe.recipeType == 'modernist')
-          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
+  Stream<List<ModernistRecipe>> _watchModernistWithIngredients(
+      bool Function(Recipe) filter) {
+    return _db.recipeDao.watchRecipesByType('modernist').asyncMap((rows) async {
+      final filtered = rows.where(filter).toList();
+      if (filtered.isEmpty) return <ModernistRecipe>[];
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(filtered.map((r) => r.id));
+      final grouped = <int, List<Ingredient>>{};
+      for (final ing in allIngs) {
+        grouped.putIfAbsent(ing.recipeId, () => []).add(ing);
+      }
+      return filtered
+          .map((r) => _toModernistRecipe(r, grouped[r.id] ?? []))
           .toList();
     });
   }
+
+  /// Watch all modernist recipes
+  Stream<List<ModernistRecipe>> watchAll() =>
+      _watchModernistWithIngredients((_) => true);
 
   /// Watch recipes by type (Concept or Technique)
-  Stream<List<ModernistRecipe>> watchByType(ModernistType type) {
-    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
-      return pairs
-          .where((p) =>
-              p.recipe.recipeType == 'modernist' &&
-              p.recipe.modernistType == type.name)
-          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
-          .toList();
-    });
-  }
+  Stream<List<ModernistRecipe>> watchByType(ModernistType type) =>
+      _watchModernistWithIngredients(
+          (r) => r.modernistType == type.name);
 
   /// Watch recipes by technique category
-  Stream<List<ModernistRecipe>> watchByTechnique(String technique) {
-    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
-      return pairs
-          .where((p) =>
-              p.recipe.recipeType == 'modernist' &&
-              p.recipe.technique?.toLowerCase() == technique.toLowerCase())
-          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
-          .toList();
-    });
-  }
+  Stream<List<ModernistRecipe>> watchByTechnique(String technique) =>
+      _watchModernistWithIngredients(
+          (r) => r.technique?.toLowerCase() == technique.toLowerCase());
 
   /// Watch favorite recipes
-  Stream<List<ModernistRecipe>> watchFavorites() {
-    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
-      return pairs
-          .where((p) => p.recipe.recipeType == 'modernist' && p.recipe.isFavorite)
-          .map((p) => _toModernistRecipe(p.recipe, p.ingredients))
-          .toList();
-    });
-  }
+  Stream<List<ModernistRecipe>> watchFavorites() =>
+      _watchModernistWithIngredients((r) => r.isFavorite);
 
   // ── Fetch methods ────────────────────────────────────────────────────────
 
