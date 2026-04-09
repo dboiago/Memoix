@@ -545,9 +545,9 @@ class RecipeRepository {
   Stream<List<Recipe>> watchAllRecipes() {
     // Use the join-based stream so ingredient data is loaded in the same
     // query as the recipe rows — no N+1 per-recipe getIngredientsForRecipe.
-    return _db.recipeDao.watchRecipesWithIngredients().map((pairs) {
-      return pairs.map((p) => _toIsarRecipe(p.recipe, p.ingredients)).toList();
-    });
+    // asyncMap is required because _toIsarRecipe is async.
+    return _db.recipeDao.watchRecipesWithIngredients().asyncMap((pairs) =>
+        Future.wait(pairs.map((p) => _toIsarRecipe(p.recipe, p.ingredients))));
   }
 
   Stream<List<Recipe>> watchFavorites() {
@@ -557,15 +557,14 @@ class RecipeRepository {
       if (rows.isEmpty) return <Recipe>[];
       final recipeIds = rows.map((r) => r.id).toSet();
       final allIngs = await _db.recipeDao.getAllIngredients();
-      final ingsByRecipe = <int, List<Ingredient>>{};
+      final ingsByRecipe = <int, List<db.Ingredient>>{};
       for (final ing in allIngs) {
         if (recipeIds.contains(ing.recipeId)) {
           ingsByRecipe.putIfAbsent(ing.recipeId, () => []).add(ing);
         }
       }
-      return rows
-          .map((r) => _toIsarRecipe(r, ingsByRecipe[r.id] ?? []))
-          .toList();
+      return Future.wait(
+          rows.map((r) => _toIsarRecipe(r, ingsByRecipe[r.id] ?? [])));
     });
   }
 
@@ -576,21 +575,23 @@ class RecipeRepository {
       if (rows.isEmpty) return <Recipe>[];
       final recipeIds = rows.map((r) => r.id).toSet();
       final allIngs = await _db.recipeDao.getAllIngredients();
-      final ingsByRecipe = <int, List<Ingredient>>{};
+      final ingsByRecipe = <int, List<db.Ingredient>>{};
       for (final ing in allIngs) {
         if (recipeIds.contains(ing.recipeId)) {
           ingsByRecipe.putIfAbsent(ing.recipeId, () => []).add(ing);
         }
       }
-      final recipes = rows.map((r) {
+      final futures = rows.map((r) async {
         try {
-          return _toIsarRecipe(r, ingsByRecipe[r.id] ?? []);
+          return await _toIsarRecipe(r, ingsByRecipe[r.id] ?? []);
         } catch (e) {
           debugPrint(
               'RecipeRepository.watchRecipesByCourse: skipping recipe ${r.id} (${r.name}): $e');
           return null;
         }
-      }).whereType<Recipe>().toList();
+      }).toList();
+      final awaited = await Future.wait(futures);
+      final recipes = awaited.whereType<Recipe>().toList();
 
       const continentOrder = [
         'Asian',
