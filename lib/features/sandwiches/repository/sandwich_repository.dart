@@ -7,6 +7,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -168,43 +169,32 @@ class SandwichRepository {
   /// Get all unique breads used across sandwiches
   Future<List<String>> getAllBreads() async {
     final allSandwiches = await getAllSandwiches();
-    final breads = <String>{};
-    for (final sandwich in allSandwiches) {
-      if (sandwich.bread.isNotEmpty) {
-        breads.add(sandwich.bread);
-      }
-    }
-    return breads.toList()..sort();
+    return extractUniqueStrings(
+        allSandwiches, (s) => s.bread.isEmpty ? null : s.bread);
   }
 
   /// Get all unique proteins used across sandwiches
   Future<List<String>> getAllProteins() async {
     final allSandwiches = await getAllSandwiches();
-    final proteins = <String>{};
-    for (final sandwich in allSandwiches) {
-      proteins.addAll((jsonDecode(sandwich.proteins) as List).cast<String>());
-    }
-    return proteins.toList()..sort();
+    return extractUniqueStringLists(
+        allSandwiches,
+        (s) => (jsonDecode(s.proteins) as List).cast<String>());
   }
 
   /// Get all unique cheeses used across sandwiches
   Future<List<String>> getAllCheeses() async {
     final allSandwiches = await getAllSandwiches();
-    final cheeses = <String>{};
-    for (final sandwich in allSandwiches) {
-      cheeses.addAll((jsonDecode(sandwich.cheeses) as List).cast<String>());
-    }
-    return cheeses.toList()..sort();
+    return extractUniqueStringLists(
+        allSandwiches,
+        (s) => (jsonDecode(s.cheeses) as List).cast<String>());
   }
 
   /// Get all unique condiments used across sandwiches
   Future<List<String>> getAllCondiments() async {
     final allSandwiches = await getAllSandwiches();
-    final condiments = <String>{};
-    for (final sandwich in allSandwiches) {
-      condiments.addAll((jsonDecode(sandwich.condiments) as List).cast<String>());
-    }
-    return condiments.toList()..sort();
+    return extractUniqueStringLists(
+        allSandwiches,
+        (s) => (jsonDecode(s.condiments) as List).cast<String>());
   }
 }
 

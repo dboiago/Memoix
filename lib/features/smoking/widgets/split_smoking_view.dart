@@ -31,22 +31,6 @@ class SplitSmokingView extends StatelessWidget {
     this.onIngredientLongPress,
   });
 
-  /// Calculate the flex ratio for ingredients column based on screen width.
-  int _getIngredientsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 1; // ~35% on tablet
-  }
-
-  /// Calculate the flex ratio for directions column based on screen width.
-  int _getDirectionsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 2; // ~65% on tablet
-  }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
@@ -106,7 +90,7 @@ class SplitSmokingView extends StatelessWidget {
                     children: [
                       // Ingredients header
                       Expanded(
-                        flex: _getIngredientsFlex(screenWidth),
+                        flex: 1,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -118,7 +102,7 @@ class SplitSmokingView extends StatelessWidget {
                       SizedBox(width: dividerPadding * 2 + 1),
                       // Directions header
                       Expanded(
-                        flex: _getDirectionsFlex(screenWidth),
+                        flex: screenWidth < 600 ? 1 : 2,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -137,7 +121,7 @@ class SplitSmokingView extends StatelessWidget {
                       children: [
                         // Ingredients Column - independently scrollable
                         Expanded(
-                          flex: _getIngredientsFlex(screenWidth),
+                          flex: 1,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
@@ -161,7 +145,7 @@ class SplitSmokingView extends StatelessWidget {
 
                         // Directions Column - independently scrollable
                         Expanded(
-                          flex: _getDirectionsFlex(screenWidth),
+                          flex: screenWidth < 600 ? 1 : 2,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),

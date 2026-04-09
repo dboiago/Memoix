@@ -6,6 +6,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -147,53 +148,25 @@ class CheeseRepository {
   /// Get all unique countries
   Future<List<String>> getAllCountries() async {
     final entries = await getAllEntries();
-    final countries = <String>{};
-    for (final entry in entries) {
-      if (entry.country != null && entry.country!.isNotEmpty) {
-        countries.add(entry.country!);
-      }
-    }
-    final sorted = countries.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.country);
   }
 
   /// Get all unique milk types
   Future<List<String>> getAllMilkTypes() async {
     final entries = await getAllEntries();
-    final milks = <String>{};
-    for (final entry in entries) {
-      if (entry.milk != null && entry.milk!.isNotEmpty) {
-        milks.add(entry.milk!);
-      }
-    }
-    final sorted = milks.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.milk);
   }
 
   /// Get all unique textures
   Future<List<String>> getAllTextures() async {
     final entries = await getAllEntries();
-    final textures = <String>{};
-    for (final entry in entries) {
-      if (entry.texture != null && entry.texture!.isNotEmpty) {
-        textures.add(entry.texture!);
-      }
-    }
-    final sorted = textures.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.texture);
   }
 
   /// Get all unique types
   Future<List<String>> getAllTypes() async {
     final entries = await getAllEntries();
-    final types = <String>{};
-    for (final entry in entries) {
-      if (entry.type != null && entry.type!.isNotEmpty) {
-        types.add(entry.type!);
-      }
-    }
-    final sorted = types.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.type);
   }
 }
 

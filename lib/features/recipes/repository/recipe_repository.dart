@@ -445,10 +445,6 @@ class RecipeRepository {
     return recipe;
   }
 
-  void _normalizeIngredientUnits(Recipe recipe) {
-    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
-  }
-
   // ── Image helpers ──────────────────────────────────────────────────────────
 
   /// True for absolute file-system paths (Unix leading-slash or Windows
@@ -768,7 +764,7 @@ class RecipeRepository {
       recipe.uuid = _uuid.v4();
     }
     if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
-    _normalizeIngredientUnits(recipe);
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
 
     // Replace absolute image paths with basenames before persisting.
     // Collect the originals so blobs can be written after we have a recipeId.
@@ -801,7 +797,7 @@ class RecipeRepository {
         recipe.uuid = _uuid.v4();
       }
       recipe.updatedAt = now;
-      _normalizeIngredientUnits(recipe);
+      UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
     }
 
     final companions = recipes.map(_toCompanion).toList();

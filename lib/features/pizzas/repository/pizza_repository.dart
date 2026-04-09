@@ -7,6 +7,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -173,31 +174,22 @@ class PizzaRepository {
   /// Get all unique cheeses used across pizzas
   Future<List<String>> getAllCheeses() async {
     final allPizzas = await getAllPizzas();
-    final cheeses = <String>{};
-    for (final pizza in allPizzas) {
-      cheeses.addAll((jsonDecode(pizza.cheeses) as List).cast<String>());
-    }
-    return cheeses.toList()..sort();
+    return extractUniqueStringLists(
+        allPizzas, (p) => (jsonDecode(p.cheeses) as List).cast<String>());
   }
 
   /// Get all unique proteins used across pizzas
   Future<List<String>> getAllProteins() async {
     final allPizzas = await getAllPizzas();
-    final proteins = <String>{};
-    for (final pizza in allPizzas) {
-      proteins.addAll((jsonDecode(pizza.proteins) as List).cast<String>());
-    }
-    return proteins.toList()..sort();
+    return extractUniqueStringLists(
+        allPizzas, (p) => (jsonDecode(p.proteins) as List).cast<String>());
   }
 
   /// Get all unique vegetables used across pizzas
   Future<List<String>> getAllVegetables() async {
     final allPizzas = await getAllPizzas();
-    final vegetables = <String>{};
-    for (final pizza in allPizzas) {
-      vegetables.addAll((jsonDecode(pizza.vegetables) as List).cast<String>());
-    }
-    return vegetables.toList()..sort();
+    return extractUniqueStringLists(
+        allPizzas, (p) => (jsonDecode(p.vegetables) as List).cast<String>());
   }
 }
 

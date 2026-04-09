@@ -65,10 +65,6 @@ class ModernistRepository {
       ..updatedAt = r.updatedAt;
   }
 
-  void _normalizeIngredientUnits(ModernistRecipe recipe) {
-    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
-  }
-
   // ── Watch methods ────────────────────────────────────────────────────────
 
   Stream<List<ModernistRecipe>> _watchModernistWithIngredients(
@@ -143,7 +139,7 @@ class ModernistRepository {
 
   /// Save a recipe (insert or update)
   Future<int> save(ModernistRecipe recipe, {bool preserveTimestamp = false}) async {
-    _normalizeIngredientUnits(recipe);
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
     final entryUuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid;
     final recipeId = await _db.recipeDao.saveRecipe(RecipesCompanion(
       id: recipe.id > 0 ? Value(recipe.id) : const Value.absent(),

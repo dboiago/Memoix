@@ -6,6 +6,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -143,27 +144,13 @@ class CellarRepository {
   /// Get all unique categories
   Future<List<String>> getAllCategories() async {
     final entries = await getAllEntries();
-    final categories = <String>{};
-    for (final entry in entries) {
-      if (entry.category != null && entry.category!.isNotEmpty) {
-        categories.add(entry.category!);
-      }
-    }
-    final sorted = categories.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.category);
   }
 
   /// Get all unique producers
   Future<List<String>> getAllProducers() async {
     final entries = await getAllEntries();
-    final producers = <String>{};
-    for (final entry in entries) {
-      if (entry.producer != null && entry.producer!.isNotEmpty) {
-        producers.add(entry.producer!);
-      }
-    }
-    final sorted = producers.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.producer);
   }
 }
 

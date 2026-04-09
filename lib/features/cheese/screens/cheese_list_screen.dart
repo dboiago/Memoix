@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/database/app_database.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cheese_entry.dart';
@@ -51,7 +52,7 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
               : allEntries;
 
           // Get milk types that have entries
-          final availableMilks = _getAvailableMilks(visibleEntries);
+          final availableMilks = extractUniqueStrings(visibleEntries, (e) => e.milk);
 
           return Column(
             children: [
@@ -140,17 +141,6 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
         ),
       ),
     );
-  }
-
-  List<String> _getAvailableMilks(List<CheeseEntry> entries) {
-    final milks = <String>{};
-    for (final entry in entries) {
-      if (entry.milk != null && entry.milk!.isNotEmpty) {
-        milks.add(entry.milk!);
-      }
-    }
-    final sorted = milks.toList()..sort();
-    return sorted;
   }
 
   Widget _buildEntryList(List<CheeseEntry> allEntries, bool isCompact) {

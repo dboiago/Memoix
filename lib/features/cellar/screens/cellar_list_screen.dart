@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/database/app_database.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cellar_entry.dart';
@@ -51,7 +52,7 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
               : allEntries;
 
           // Get categories that have entries
-          final availableCategories = _getAvailableCategories(visibleEntries);
+          final availableCategories = extractUniqueStrings(visibleEntries, (e) => e.category);
 
           return Column(
             children: [
@@ -140,17 +141,6 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
         ),
       ),
     );
-  }
-
-  List<String> _getAvailableCategories(List<CellarEntry> entries) {
-    final categories = <String>{};
-    for (final entry in entries) {
-      if (entry.category != null && entry.category!.isNotEmpty) {
-        categories.add(entry.category!);
-      }
-    }
-    final sorted = categories.toList()..sort();
-    return sorted;
   }
 
   Widget _buildEntryList(List<CellarEntry> allEntries, bool isCompact) {
