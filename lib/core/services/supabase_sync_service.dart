@@ -2277,6 +2277,12 @@ abstract class SupabaseSyncService {
 
     // Step 2: for each image not already stored locally, fetch its blob
     // individually and insert.
+    // Collect IDs of recipes that received new images this pull cycle.
+    // After the loop, a no-op DB write fires SQLite's update hook so that
+    // Drift streams re-emit, _toIsarRecipe re-runs, finds the newly written
+    // cache file, and image widgets refresh without a restart.
+    final refreshRecipeIds = <int>{};
+
     for (final meta in remoteMeta) {
       final fileName = meta['file_name'] as String;
 
@@ -2335,6 +2341,39 @@ abstract class SupabaseSyncService {
       } catch (e) {
         debugPrint(
             'SupabaseSyncService: could not write image cache for $fileName: $e');
+      }
+
+      refreshRecipeIds.add(parentRecipe.id);
+    }
+
+    // No-op write on each affected recipe to fire the SQLite update hook.
+    //
+    // _syncRecipes runs before _syncRecipeImages, so when the recipe stream
+    // first re-emits (after _syncRecipes saves the updated recipe metadata),
+    // the image blob isn't in the DB yet. _resolveImagePath returns the
+    // absolute cache path but the file doesn't exist, so image widgets show
+    // a placeholder. By touching each recipe here (writing the same updatedAt
+    // value back), Drift re-emits the stream a second time. This time
+    // _resolveImagePath finds the blob in the DB, writes the cache file,
+    // and returns the correct absolute path — image displays without restart.
+    //
+    // Writing the same updatedAt value means _syncRecipes will NOT detect
+    // these rows as changed on the next sync (updatedAt > lastSyncRecipes
+    // is false for equal values), avoiding spurious re-pushes.
+    for (final recipeId in refreshRecipeIds) {
+      try {
+        final recipe = await (db.select(db.recipes)
+              ..where((t) => t.id.equals(recipeId))
+              ..limit(1))
+            .getSingleOrNull();
+        if (recipe == null) continue;
+        // Write the same updatedAt back — this is intentionally a no-op on
+        // the data, but SQLite still fires its update hook for Drift streams.
+        await (db.update(db.recipes)..where((t) => t.id.equals(recipeId)))
+            .write(RecipesCompanion(updatedAt: Value(recipe.updatedAt)));
+      } catch (e) {
+        debugPrint(
+            'SupabaseSyncService: could not touch recipe $recipeId for stream refresh: $e');
       }
     }
   }

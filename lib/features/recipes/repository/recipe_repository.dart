@@ -562,10 +562,17 @@ class RecipeRepository {
 
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
     return _db.recipeDao.watchRecipesByCourse(course).asyncMap((rows) async {
-      final recipes = await Future.wait(rows.map((r) async {
-        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-        return _toIsarRecipe(r, ings);
+      final results = await Future.wait(rows.map((r) async {
+        try {
+          final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+          return await _toIsarRecipe(r, ings);
+        } catch (e) {
+          debugPrint(
+              'RecipeRepository.watchRecipesByCourse: skipping recipe ${r.id} (${r.name}): $e');
+          return null;
+        }
       }));
+      final recipes = results.whereType<Recipe>().toList();
 
       const continentOrder = [
         'Asian',
