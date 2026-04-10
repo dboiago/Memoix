@@ -3,16 +3,16 @@ import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
+import '../../core/services/integrity_service.dart';
+import '../../features/ai/ai_settings_provider.dart';
 
 bool _hasNoCamera() =>
     kIsWeb ||
     Platform.isWindows ||
     Platform.isMacOS ||
     Platform.isLinux;
-import '../../app/app_shell.dart';
-import '../../core/services/integrity_service.dart';
-import '../../features/ai/ai_settings_provider.dart';
 
 /// Navigation drawer with organized sections
 /// Sections: Navigate, Tools, Share
