@@ -26,6 +26,7 @@ import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Service for exporting and importing recipes as JSON backup files
 class RecipeBackupService {
@@ -105,11 +106,16 @@ class RecipeBackupService {
     await file.writeAsString(jsonString);
 
     // Share the file
-    await Share.shareXFiles(
-      [XFile(file.path)],
-      subject: 'Memoix Recipe Backup',
-      text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
-    );
+    try {
+      await Share.shareXFiles(
+        [XFile(file.path)],
+        subject: 'Memoix Recipe Backup',
+        text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
+      );
+    } catch (e) {
+      debugPrint('RecipeBackupService.exportRecipes error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
 
     return file.path;
   }
@@ -229,11 +235,16 @@ class RecipeBackupService {
 
     // Share all files
     if (files.isNotEmpty) {
-      await Share.shareXFiles(
-        files,
-        subject: 'Memoix Full Backup',
-        text: 'Exported $filesWritten domain files',
-      );
+      try {
+        await Share.shareXFiles(
+          files,
+          subject: 'Memoix Full Backup',
+          text: 'Exported $filesWritten domain files',
+        );
+      } catch (e) {
+        debugPrint('RecipeBackupService.exportByCourse error: $e');
+        MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+      }
     }
 
     return filesWritten;

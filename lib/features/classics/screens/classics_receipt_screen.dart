@@ -15,6 +15,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/schema_migration_service.dart';
 import '../../../core/services/session_index_service.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Formats a Duration as a decimal-aligned receipt time string.
 ///
@@ -196,10 +197,17 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
     final file = File('${dir.path}/Le_Grand_Memoix.pdf');
     await file.writeAsBytes(bytes);
-    await Share.shareXFiles(
-      [XFile(file.path)],
-      subject: 'Le Grand Memoix',
-    );
+    try {
+      await Share.shareXFiles(
+        [XFile(file.path)],
+        subject: 'Le Grand Memoix',
+      );
+    } catch (e) {
+      debugPrint('ClassicsReceiptScreen._saveReceipt error: $e');
+      if (mounted) {
+        MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+      }
+    }
   }
 
   Widget _buildReceiptWidget() {
