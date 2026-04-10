@@ -64,6 +64,11 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
       _triggerPersonalStorageSync();
+      Future<void> _deferredInit() async {
+        await ImageMigrationService.runIfNeeded();
+        await IngredientService().initialize();
+        await MemoixDatabase.refreshCourses();
+      }
     });
   }
 

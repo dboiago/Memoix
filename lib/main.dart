@@ -22,22 +22,25 @@ void main() async {
   // Load environment variables (optional - falls back to dev keys)
   await dotenv.load(fileName: '.env', isOptional: true);
 
-  // Initialize Supabase (non-fatal — app starts normally if keys are absent)
-  try {
-    final supabaseUrl = dotenv.maybeGet('SUPABASE_URL');
-    final supabaseAnonKey = dotenv.maybeGet('SUPABASE_ANON_KEY');
-    if (supabaseUrl != null && supabaseUrl.isNotEmpty &&
-        supabaseAnonKey != null && supabaseAnonKey.isNotEmpty) {
-      await Supabase.initialize(
-        url: supabaseUrl,
-        anonKey: supabaseAnonKey,
-      );
-    } else {
-      debugPrint('Supabase: SUPABASE_URL or SUPABASE_ANON_KEY not set — skipping initialization.');
-    }
-  } catch (e) {
-    debugPrint('Supabase initialization failed: $e');
-  }
+  // Initialize Supabase and local database in parallel
+  final supabaseUrl = dotenv.maybeGet('SUPABASE_URL');
+  final supabaseAnonKey = dotenv.maybeGet('SUPABASE_ANON_KEY');
+
+  final supabaseFuture = (supabaseUrl != null && supabaseUrl.isNotEmpty &&
+          supabaseAnonKey != null && supabaseAnonKey.isNotEmpty)
+      ? Supabase.initialize(
+          url: supabaseUrl,
+          anonKey: supabaseAnonKey,
+        ).catchError((e) {
+          debugPrint('Supabase initialization failed: $e');
+        })
+      : Future.value().then((_) => debugPrint(
+          'Supabase: SUPABASE_URL or SUPABASE_ANON_KEY not set — skipping initialization.'));
+
+  await Future.wait([
+    supabaseFuture,
+    MemoixDatabase.initialize(),
+  ]);
 
   // Subscribe to auth state changes to trigger sync once the persisted
   // session is restored (or on fresh sign-in). Must be called before runApp.
@@ -46,7 +49,7 @@ void main() async {
   // Configure desktop window
   if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
     await windowManager.ensureInitialized();
-    
+
     const windowOptions = WindowOptions(
       size: Size(1280, 800),
       minimumSize: Size(400, 600),
@@ -54,22 +57,15 @@ void main() async {
       title: 'Memoix',
       titleBarStyle: TitleBarStyle.normal,
     );
-    
+
     await windowManager.waitUntilReadyToShow(windowOptions, () async {
       await windowManager.show();
       await windowManager.focus();
     });
   }
 
-  // Initialize local database
-  await MemoixDatabase.initialize();
-
-  // Migrate existing local image paths to blob storage (one-time, non-fatal)
-  await ImageMigrationService.runIfNeeded();
-
   // Initialize integrity layer
   await IntegrityService.initialize();
-  
 
   // Initialize calibration evaluator (single instance, reused across events)
   final calibrationIndex = LocalInterfaceIndex();
@@ -86,24 +82,25 @@ void main() async {
       db: MemoixDatabase.instance,
       idx: calibrationIndex,
     );
-    
+
     final alertsDispatched = calibrationEvaluator.countDispatchedAlerts();
-    final breadcrumbResponse = await calibrationEvaluator.checkPendingBreadcrumb(alertsDispatched);
+    final breadcrumbResponse =
+        await calibrationEvaluator.checkPendingBreadcrumb(alertsDispatched);
     if (breadcrumbResponse != null) {
       return [breadcrumbResponse];
     }
-    
+
     final activated = await calibrationEvaluator.evaluate(event, metadata);
-    
+
     final pendingAlert = await calibrationEvaluator.checkPendingAlert(event);
     if (pendingAlert != null) {
       return [pendingAlert];
     }
-    
+
     final responses = <IntegrityResponse>[];
     responses.addAll(await calibrationEvaluator.deriveAlerts(activated, event));
     responses.addAll(await calibrationEvaluator.deriveBreadcrumbs(activated));
-    
+
     return responses;
   });
 
@@ -130,7 +127,6 @@ void main() async {
     CalibrationEvaluator.setSessionFired();
   }
 
-
   final startupAlertCount = calibrationEvaluator.countDispatchedAlerts();
   final startupBreadcrumb =
       await calibrationEvaluator.checkPendingBreadcrumb(startupAlertCount);
@@ -138,15 +134,14 @@ void main() async {
     IntegrityService.enqueueStartupArtifacts([startupBreadcrumb]);
   }
 
-  await IngredientService().initialize();
-  await MemoixDatabase.refreshCourses();
-
-  // Note: Initial recipe sync now happens in background after app starts
-  // See _DeepLinkWrapper in app/app.dart
-
   runApp(
-    const ProviderScope(
-      child: MemoixApp(),
+    ProviderScope(
+      child: MemoixApp(
+  runApp(
+        const ProviderScope(
+          child: MemoixApp(),
+        ),
+      ),
     ),
   );
 }
