@@ -75,7 +75,6 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
       await IngredientService().initialize();
       await MemoixDatabase.refreshCourses();
     }
-    });
   }
 
   @override
@@ -208,4 +207,3 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
   Widget build(BuildContext context) {
     return widget.child;
   }
-}
