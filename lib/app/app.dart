@@ -55,26 +55,25 @@ class _DeepLinkWrapper extends ConsumerStatefulWidget {
 class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     with WidgetsBindingObserver {
   @override
-    void initState() {
-      super.initState();
-      WidgetsBinding.instance.addObserver(this);
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        processIntegrityResponses(ref);
-        ref.read(deepLinkServiceProvider).initialize(context);
-        ref.read(deepLinkServiceProvider).checkClipboard(context);
-        _checkForUpdatesOnLaunch();
-        _performBackgroundSync();
-        _setupTimerAlarmCallbacks();
-        _triggerPersonalStorageSync();
-        _deferredInit();
-      });
-    }
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      processIntegrityResponses(ref);
+      ref.read(deepLinkServiceProvider).initialize(context);
+      ref.read(deepLinkServiceProvider).checkClipboard(context);
+      _checkForUpdatesOnLaunch();
+      _performBackgroundSync();
+      _setupTimerAlarmCallbacks();
+      _triggerPersonalStorageSync();
+      _deferredInit();
+    });
+  }
 
-    Future<void> _deferredInit() async {
-      await ImageMigrationService.runIfNeeded();
-      await IngredientService().initialize();
-      await MemoixDatabase.refreshCourses();
-    }
+  Future<void> _deferredInit() async {
+    await ImageMigrationService.runIfNeeded();
+    await IngredientService().initialize();
+    await MemoixDatabase.refreshCourses();
   }
 
   @override
