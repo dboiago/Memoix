@@ -889,7 +889,7 @@ class _AddItemDialogState extends State<_AddItemDialog> {
           onPressed: _isSubmitting
               ? null
               : () async {
-                  if (_formKey.currentState!.validate()) {
+                  if (_formKey.currentState?.validate() ?? false) {
                     setState(() => _isSubmitting = true);
                     final item = ShoppingItem(
                       id: 0,

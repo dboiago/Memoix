@@ -1811,7 +1811,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   }
 
   Future<void> _saveRecipe() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     // Build seasonings list (for Pit Notes)
     final seasonings = _seasonings

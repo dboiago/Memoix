@@ -753,7 +753,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
   }
 
   Future<void> _saveSandwich() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     // Collect non-empty values from controllers
     final proteins = _proteinControllers

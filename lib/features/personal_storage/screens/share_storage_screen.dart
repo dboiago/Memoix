@@ -39,7 +39,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
   }
 
   Future<void> _inviteUser() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     final input = _emailController.text.trim();
     // Split by semicolon and filter out empty strings
