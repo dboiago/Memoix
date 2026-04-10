@@ -352,7 +352,7 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
           ),
-          // TODO(release): Remove this menu item before public release - dev/maintenance only
+          // Import recipes from folder (advanced, includes all cuisines and metadata)
           ListTile(
             leading: const Icon(Icons.folder_open),
             title: const Text('Import from Folder'),

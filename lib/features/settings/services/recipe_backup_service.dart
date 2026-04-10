@@ -200,7 +200,7 @@ class RecipeBackupService {
   /// - Specialized domains: pizzas, sandwiches, smoking, modernist, cellar, cheese
   /// - Scratch pad (quick notes and recipe drafts)
   ///
-  // TODO(release): Remove this method before public release - dev/maintenance only
+  // Dev feature - Used for exporting recipes to be used a Memoix default recipes in the correct format
   Future<int?> exportByCourse() async {
     // On desktop, use folder picker
     if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
