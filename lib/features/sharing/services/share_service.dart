@@ -39,7 +39,7 @@ class ShareService {
       // SECURITY: Reject oversized input before any processing
       // This is a first line of defense against decompression bombs
       if (encoded.length > _maxEncodedInputLength) {
-        print('Security: Rejected encoded input (${encoded.length} bytes > $_maxEncodedInputLength max)');
+        debugPrint('Security: Rejected encoded input (${encoded.length} bytes > $_maxEncodedInputLength max)');
         return null;
       }
 
@@ -49,7 +49,7 @@ class ShareService {
       // A 500KB base64 string decodes to ~375KB compressed data
       // Normal recipes compress to <5KB, so anything over 100KB is suspicious
       if (compressed.length > 100 * 1024) {
-        print('Security: Suspicious compressed size (${compressed.length} bytes)');
+        debugPrint('Security: Suspicious compressed size (${compressed.length} bytes)');
         return null;
       }
 
@@ -58,7 +58,7 @@ class ShareService {
       // SECURITY: Reject decompressed data that exceeds size limit
       // This catches decompression bombs that expand to huge sizes
       if (decompressed.length > _maxDecompressedSize) {
-        print('Security: Rejected decompression bomb (${decompressed.length} bytes > $_maxDecompressedSize max)');
+        debugPrint('Security: Rejected decompression bomb (${decompressed.length} bytes > $_maxDecompressedSize max)');
         return null;
       }
 
@@ -72,7 +72,7 @@ class ShareService {
         }
         final decoded = utf8.decode(base64Url.decode(encoded));
         if (decoded.length > _maxDecompressedSize) {
-          print('Security: Rejected oversized uncompressed data (${decoded.length} bytes)');
+          debugPrint('Security: Rejected oversized uncompressed data (${decoded.length} bytes)');
           return null;
         }
         return jsonDecode(decoded) as Map<String, dynamic>;
@@ -172,7 +172,7 @@ class ShareService {
       
       return Recipe.fromJson(json)..source = RecipeSource.imported;
     } catch (e) {
-      print('Error parsing share link: $e');
+      debugPrint('Error parsing share link: $e');
       return null;
     }
   }

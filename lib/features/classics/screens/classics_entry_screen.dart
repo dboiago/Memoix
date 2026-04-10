@@ -82,7 +82,6 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   Future<void> _loadArchiveEntry() async {
     try {
       final json = await IntegrityService.resolveArchiveEntry();
-      print('[ClassicsEntry] archive json: ${json == null ? 'null' : 'non-null, name=${json['name']}'}');
       if (json != null && json.isNotEmpty) {
         final recipe = Recipe.fromJson(_sanitizeArchiveJson(json));
 

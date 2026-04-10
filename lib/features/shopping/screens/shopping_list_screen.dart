@@ -474,13 +474,11 @@ class _ShoppingListDetailBody extends ConsumerWidget {
               return _ShoppingItemTile(
                 item: item,
                 onToggle: () async {
-                  print('[TOGGLE] Tapping item: ${item.name}, UUID: "$itemUuid", index: $itemIndex');
                   final result = await ref.read(shoppingListServiceProvider).toggleItemById(
                     list,
                     itemUuid,
                     fallbackIndex: itemIndex,
                   );
-                  print('[TOGGLE] After toggle, result: ${result != null ? "success" : "null"}');
                 },
                 onDelete: () async {
                   await ref.read(shoppingListServiceProvider).scheduleItemDelete(
@@ -759,7 +757,6 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
       confirmDismiss: (direction) async {
         if (direction == DismissDirection.startToEnd) {
           // Left-to-right: toggle check state, don't dismiss
-          print('[SWIPE] Left-to-right swipe for: ${widget.item.name}'); 
           await widget.onToggle();
           return false;
         } else {
@@ -772,7 +769,6 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
         leading: Checkbox(
           value: widget.item.isChecked,
           onChanged: (_) {
-            print('[CHECKBOX] Checkbox tapped for: ${widget.item.name}');
             widget.onToggle();
           },
         ),
@@ -820,7 +816,6 @@ class _ShoppingItemTileState extends State<_ShoppingItemTile> {
                   )
                 : null,
         onTap: () {
-          print('[LISTTILE] ListTile tapped for: ${widget.item.name}');
           widget.onToggle();
         },
         onLongPress: widget.onEditAmount,

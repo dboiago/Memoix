@@ -69,7 +69,7 @@ class GitHubRecipeService {
       final response = await http.get(Uri.parse('$_baseUrl/$filename'));
       
       if (response.statusCode != 200) {
-        print('Warning: Failed to fetch $filename');
+        debugPrint('Warning: Failed to fetch $filename');
         return [];
       }
 
@@ -92,7 +92,7 @@ class GitHubRecipeService {
         !r.name.toLowerCase().startsWith('template'),
       ).toList();
     } catch (e) {
-      print('Error fetching $filename: $e');
+      debugPrint('Error fetching $filename: $e');
       return [];
     }
   }
@@ -110,7 +110,7 @@ class GitHubRecipeService {
           .where((p) => p.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching pizzas.json: $e');
+      debugPrint('Error fetching pizzas.json: $e');
       return [];
     }
   }
@@ -128,7 +128,7 @@ class GitHubRecipeService {
           .where((s) => s.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching sandwiches.json: $e');
+      debugPrint('Error fetching sandwiches.json: $e');
       return [];
     }
   }
@@ -146,7 +146,7 @@ class GitHubRecipeService {
           .where((s) => s.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching smoking.json: $e');
+      debugPrint('Error fetching smoking.json: $e');
       return [];
     }
   }
@@ -164,7 +164,7 @@ class GitHubRecipeService {
           .where((m) => m.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching modernist.json: $e');
+      debugPrint('Error fetching modernist.json: $e');
       return [];
     }
   }
@@ -182,7 +182,7 @@ class GitHubRecipeService {
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching cheese.json: $e');
+      debugPrint('Error fetching cheese.json: $e');
       return [];
     }
   }
@@ -200,7 +200,7 @@ class GitHubRecipeService {
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching cellar.json: $e');
+      debugPrint('Error fetching cellar.json: $e');
       return [];
     }
   }
@@ -222,7 +222,7 @@ class GitHubRecipeService {
             ..source = RecipeSource.memoix,)
           .toList();
     } catch (e) {
-      print('Error fetching $course recipes: $e');
+      debugPrint('Error fetching $course recipes: $e');
       return [];
     }
   }

@@ -8254,7 +8254,7 @@ class UrlRecipeImporter {
   /// Extract directions from Divi Builder sites (e.g., annaolson.ca)
   /// Scans for <h5> elements with "Step N" text pattern and extracts adjacent paragraph content
   List<String> _extractDiviDirections(dynamic document) {
-    print('Using Divi/AnnaOlson extraction strategy');
+    debugPrint('Using Divi/AnnaOlson extraction strategy');
     
     final directions = <String>[];
     final allElements = document.querySelectorAll('*');

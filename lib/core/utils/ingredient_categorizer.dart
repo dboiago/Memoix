@@ -152,7 +152,7 @@ class IngredientService {
 
       _isInitialized = true;
     } catch (e) {
-      print("IngredientService Init Error: $e");
+      debugPrint("IngredientService Init Error: $e");
       // Fallback: Use manual map
       _injectFallbackData();
       _isInitialized = true;
@@ -178,7 +178,7 @@ class IngredientService {
       _metaLoaded = true;
     } catch (e) {
       // Meta is optional — don't fail init
-      print("IngredientService meta load skipped: $e");
+      debugPrint("IngredientService meta load skipped: $e");
     }
   }
 
