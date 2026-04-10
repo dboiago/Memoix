@@ -1565,6 +1565,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       if (widget.importResult.imagePaths!.length > 1) {
         recipe.stepImages = widget.importResult.imagePaths!.sublist(1);
       }
+    } else if (widget.importResult.imageUrl != null &&
+        widget.importResult.imageUrl!.isNotEmpty) {
+      recipe.headerImage = widget.importResult.imageUrl;
     }
 
     return recipe;

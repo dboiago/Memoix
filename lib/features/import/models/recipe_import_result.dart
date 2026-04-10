@@ -168,6 +168,8 @@ class RecipeImportResult {
       if (imagePaths!.length > 1) {
         recipe.stepImages = imagePaths!.sublist(1);
       }
+    } else if (imageUrl != null && imageUrl!.isNotEmpty) {
+      recipe.headerImage = imageUrl;
     }
     
     return recipe;
