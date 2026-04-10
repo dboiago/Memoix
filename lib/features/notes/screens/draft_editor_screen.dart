@@ -848,13 +848,17 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
   }
 
   void _pickHeaderImage() async {
-    final picker = ImagePicker();
-    final file = await picker.pickImage(source: ImageSource.gallery);
-    if (file != null) {
+    try {
+      final picker = ImagePicker();
+      final file = await picker.pickImage(source: ImageSource.gallery);
+      if (file != null) {
         final appDir = await getApplicationDocumentsDirectory();
         final fileName = '${const Uuid().v4()}${path.extension(file.path)}';
         final saved = await File(file.path).copy('${appDir.path}/$fileName');
         setState(() => _headerImage = saved.path);
+      }
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
   
@@ -874,17 +878,21 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
 
   // Step Images Logic
   Future<void> _pickStepImage(int stepIndex) async {
-     final picker = ImagePicker();
-     final file = await picker.pickImage(source: ImageSource.gallery);
-     if (file != null) {
+    try {
+      final picker = ImagePicker();
+      final file = await picker.pickImage(source: ImageSource.gallery);
+      if (file != null) {
         final appDir = await getApplicationDocumentsDirectory();
         final fileName = '${const Uuid().v4()}${path.extension(file.path)}';
         final saved = await File(file.path).copy('${appDir.path}/$fileName');
         setState(() {
-           _stepImages.add(saved.path);
-           _stepImageMap[stepIndex] = _stepImages.length - 1;
+          _stepImages.add(saved.path);
+          _stepImageMap[stepIndex] = _stepImages.length - 1;
         });
-     }
+      }
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
+    }
   }
 
   void _removeGalleryImage(int index) {

@@ -461,26 +461,30 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
   }
 
   Future<void> _pickImage(ImageSource source) async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(
-      source: source,
-      maxWidth: 1200,
-      maxHeight: 1200,
-      imageQuality: 85,
-    );
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
 
-    if (pickedFile != null) {
-      final appDir = await getApplicationDocumentsDirectory();
-      final imagesDir = Directory('${appDir.path}/cheese_images');
-      if (!await imagesDir.exists()) {
-        await imagesDir.create(recursive: true);
+      if (pickedFile != null) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/cheese_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedPath = '${imagesDir.path}/$fileName';
+        await File(pickedFile.path).copy(savedPath);
+
+        setState(() => _imagePath = savedPath);
       }
-
-      final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
-      final savedPath = '${imagesDir.path}/$fileName';
-      await File(pickedFile.path).copy(savedPath);
-
-      setState(() => _imagePath = savedPath);
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
