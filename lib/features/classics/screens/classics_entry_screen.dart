@@ -481,7 +481,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
         await _onValidationFailed();
       }
     } finally {
-      setState(() => _isSaving = false);
+      if (mounted) setState(() => _isSaving = false);
     }
   }
 

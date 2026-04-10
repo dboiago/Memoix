@@ -1836,14 +1836,14 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         );
       }
 
-      MemoixSnackBar.show('${_nameController.text} saved');
       if (mounted) {
+        MemoixSnackBar.show('${_nameController.text} saved');
         Navigator.pop(context);
       }
     } catch (e) {
-      MemoixSnackBar.showError('Error saving: $e');
+      if (mounted) MemoixSnackBar.showError('Error saving: $e');
     } finally {
-      setState(() => _isSaving = false);
+      if (mounted) setState(() => _isSaving = false);
     }
   }
 

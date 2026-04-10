@@ -1944,9 +1944,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         );
       }
     } catch (e) {
-      MemoixSnackBar.showError('Error saving recipe: $e');
+      if (mounted) MemoixSnackBar.showError('Error saving recipe: $e');
     } finally {
-      setState(() => _isSaving = false);
+      if (mounted) setState(() => _isSaving = false);
     }
   }
 
