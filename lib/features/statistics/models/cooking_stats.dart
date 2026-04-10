@@ -16,6 +16,7 @@ class CookingStats {
   final int totalRecipes;
   final int distinctCuisineCount;
   final int? avgCookTimeMinutes;
+  final int favouriteCount;
 
   const CookingStats({
     required this.totalCooks,
@@ -28,6 +29,7 @@ class CookingStats {
     required this.recentCooks,
     required this.totalRecipes,
     required this.distinctCuisineCount,
+    required this.favouriteCount,
     this.avgCookTimeMinutes,
   });
 
@@ -42,6 +44,7 @@ class CookingStats {
     recentCooks: [],
     totalRecipes: 0,
     distinctCuisineCount: 0,
+    favouriteCount: 0,
   );
 }
 
@@ -98,6 +101,7 @@ class CookingStatsService {
   Future<CookingStats> getStats() async {
     final allRecipes = await _db.recipeDao.getAllRecipes();
     final totalRecipes = allRecipes.length;
+    final favouriteCount = allRecipes.where((r) => r.isFavorite).length;
 
     final cuisineValues = <String>{};
     for (final r in allRecipes) {
@@ -133,6 +137,7 @@ class CookingStatsService {
         totalRecipes: totalRecipes,
         distinctCuisineCount: distinctCuisineCount,
         avgCookTimeMinutes: avgCookTimeMinutes,
+        favouriteCount: favouriteCount,
       );
     }
 
@@ -201,6 +206,7 @@ class CookingStatsService {
       totalRecipes: totalRecipes,
       distinctCuisineCount: distinctCuisineCount,
       avgCookTimeMinutes: avgCookTimeMinutes,
+      favouriteCount: favouriteCount,
     );
   }
 
