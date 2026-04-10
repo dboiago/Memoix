@@ -2,6 +2,13 @@ import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
 import '../../../core/database/app_database.dart';
+import '../../recipes/repository/recipe_repository.dart';
+import '../../cheese/repository/cheese_repository.dart';
+import '../../cellar/repository/cellar_repository.dart';
+import '../../pizzas/repository/pizza_repository.dart';
+import '../../sandwiches/repository/sandwich_repository.dart';
+import '../../modernist/repository/modernist_repository.dart';
+import '../../smoking/repository/smoking_repository.dart';
 
 /// Aggregated statistics
 class CookingStats {
@@ -16,7 +23,6 @@ class CookingStats {
   final int totalRecipes;
   final int distinctCuisineCount;
   final int? avgCookTimeMinutes;
-  final int favouriteCount;
 
   const CookingStats({
     required this.totalCooks,
@@ -29,7 +35,6 @@ class CookingStats {
     required this.recentCooks,
     required this.totalRecipes,
     required this.distinctCuisineCount,
-    required this.favouriteCount,
     this.avgCookTimeMinutes,
   });
 
@@ -44,7 +49,6 @@ class CookingStats {
     recentCooks: [],
     totalRecipes: 0,
     distinctCuisineCount: 0,
-    favouriteCount: 0,
   );
 }
 
@@ -101,7 +105,6 @@ class CookingStatsService {
   Future<CookingStats> getStats() async {
     final allRecipes = await _db.recipeDao.getAllRecipes();
     final totalRecipes = allRecipes.length;
-    final favouriteCount = allRecipes.where((r) => r.isFavorite).length;
 
     final cuisineValues = <String>{};
     for (final r in allRecipes) {
@@ -137,7 +140,6 @@ class CookingStatsService {
         totalRecipes: totalRecipes,
         distinctCuisineCount: distinctCuisineCount,
         avgCookTimeMinutes: avgCookTimeMinutes,
-        favouriteCount: favouriteCount,
       );
     }
 
@@ -206,7 +208,6 @@ class CookingStatsService {
       totalRecipes: totalRecipes,
       distinctCuisineCount: distinctCuisineCount,
       avgCookTimeMinutes: avgCookTimeMinutes,
-      favouriteCount: favouriteCount,
     );
   }
 
@@ -245,6 +246,34 @@ final cookingStatsProvider = StreamProvider<CookingStats>((ref) async* {
   await for (final _ in service.watchChanges()) {
     yield await service.getStats();
   }
+});
+
+/// Counts favourites across all item types, matching the Favourites screen.
+final totalFavouriteCountProvider = Provider<AsyncValue<int>>((ref) {
+  final recipes = ref.watch(favoriteRecipesProvider);
+  final cheese = ref.watch(favoriteCheeseEntriesProvider);
+  final cellar = ref.watch(favoriteCellarEntriesProvider);
+  final pizzas = ref.watch(favoritePizzasProvider);
+  final sandwiches = ref.watch(favoriteSandwichesProvider);
+  final modernist = ref.watch(favoriteModernistRecipesProvider);
+  final smoking = ref.watch(favoriteSmokingRecipesProvider);
+
+  final all = [recipes, cheese, cellar, pizzas, sandwiches, modernist, smoking];
+  if (all.any((a) => a.isLoading)) return const AsyncValue.loading();
+  final errored = all.where((a) => a.hasError);
+  if (errored.isNotEmpty) {
+    return AsyncValue.error(errored.first.error!, errored.first.stackTrace!);
+  }
+
+  final count = (recipes.valueOrNull?.length ?? 0) +
+      (cheese.valueOrNull?.length ?? 0) +
+      (cellar.valueOrNull?.length ?? 0) +
+      (pizzas.valueOrNull?.length ?? 0) +
+      (sandwiches.valueOrNull?.length ?? 0) +
+      (modernist.valueOrNull?.length ?? 0) +
+      (smoking.valueOrNull?.length ?? 0);
+
+  return AsyncValue.data(count);
 });
 
 final recipeCookCountProvider =

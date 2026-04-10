@@ -37,14 +37,16 @@ class StatisticsScreen extends ConsumerWidget {
   }
 }
 
-class _StatsContent extends StatelessWidget {
+class _StatsContent extends ConsumerWidget {
   final CookingStats stats;
 
   const _StatsContent({required this.stats});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final favouriteCount = ref.watch(totalFavouriteCountProvider)
+        .maybeWhen(data: (n) => n.toString(), orElse: () => '—');
 
     if (stats.totalCooks == 0) {
       return Center(
@@ -113,7 +115,7 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Favourites',
-                value: stats.favouriteCount.toString(),
+                value: favouriteCount,
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
