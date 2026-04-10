@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:drift/drift.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
 import '../../../core/database/app_database.dart';
@@ -186,12 +187,19 @@ class CookingStatsService {
 
     // Top recipes
     final topRecipes = recipeCountMap.entries
-        .map((e) => TopRecipe(
-              recipeId: e.key,
-              recipeName: recipeNames[e.key] ?? 'Unknown',
-              cookCount: e.value,
-              lastCooked: recipeLastCook[e.key]!,
-            ),)
+        .expand((e) {
+          final lastCook = recipeLastCook[e.key];
+          if (lastCook == null) {
+            debugPrint('Warning: no lastCook entry found for key ${e.key}, skipping');
+            return <TopRecipe>[];
+          }
+          return [TopRecipe(
+            recipeId: e.key,
+            recipeName: recipeNames[e.key] ?? 'Unknown',
+            cookCount: e.value,
+            lastCooked: lastCook,
+          )];
+        })
         .toList()
       ..sort((a, b) => b.cookCount.compareTo(a.cookCount));
 
