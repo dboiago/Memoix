@@ -53,7 +53,7 @@ class _DeepLinkWrapper extends ConsumerStatefulWidget {
 }
 
 class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
-    with WidgetsBindingObserver {
+  with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
@@ -206,3 +206,4 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
   Widget build(BuildContext context) {
     return widget.child;
   }
+}
