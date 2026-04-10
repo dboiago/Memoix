@@ -133,11 +133,6 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       */
     }
 
-  /// Stub: visual transition effect triggered by view override.
-  void _executeTransitionEffect() {
-    // TODO: implement visual effect payload
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
