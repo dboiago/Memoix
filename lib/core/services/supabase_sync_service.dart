@@ -421,12 +421,14 @@ abstract class SupabaseSyncService {
 
       if (changedIngredients.isNotEmpty) {
         final pushRows = changedIngredients
-            .where((ing) =>
-                ing.uuid.trim().isNotEmpty &&
-                (recipeIdToUuid[ing.recipeId] ?? '').isNotEmpty)
-            .map((ing) {
-              final recipeUuid = recipeIdToUuid[ing.recipeId]!;
-              return _ingredientToRow(ing, recipeUuid, groupId);
+            .where((ing) => ing.uuid.trim().isNotEmpty)
+            .expand((ing) {
+              final recipeUuid = recipeIdToUuid[ing.recipeId];
+              if (recipeUuid == null || recipeUuid.isEmpty) {
+                debugPrint('Warning: no UUID found for recipeId ${ing.recipeId}, skipping ingredient sync');
+                return <Map<String, dynamic>>[];
+              }
+              return [_ingredientToRow(ing, recipeUuid, groupId)];
             })
             .toList();
 
