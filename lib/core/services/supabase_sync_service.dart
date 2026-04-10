@@ -111,91 +111,121 @@ abstract class SupabaseSyncService {
     try {
       pulledRecipeUuids = await _syncRecipes(groupId, lastSyncRecipes);
       await _setLastSync(prefs, _keyRecipes, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncRecipes: $e');
+    }
 
     // ── Ingredients — independent error boundary ──────────────────────────
     try {
       await _syncIngredients(groupId, lastSyncIngredients, pulledRecipeUuids);
       await _setLastSync(prefs, _keyIngredients, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncIngredients: $e');
+    }
 
     // ── Pizzas ────────────────────────────────────────────────────────────
     try {
       await _syncPizzas(groupId, lastSyncPizzas);
       await _setLastSync(prefs, _keyPizzas, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncPizzas: $e');
+    }
 
     // ── Sandwiches ────────────────────────────────────────────────────────
     try {
       await _syncSandwiches(groupId, lastSyncSandwiches);
       await _setLastSync(prefs, _keySandwiches, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncSandwiches: $e');
+    }
 
     // ── Cellar entries ────────────────────────────────────────────────────
     try {
       await _syncCellarEntries(groupId, lastSyncCellarEntries);
       await _setLastSync(prefs, _keyCellarEntries, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncCellarEntries: $e');
+    }
 
     // ── Cheese entries ────────────────────────────────────────────────────
     try {
       await _syncCheeseEntries(groupId, lastSyncCheeseEntries);
       await _setLastSync(prefs, _keyCheeseEntries, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncCheeseEntries: $e');
+    }
 
     // ── Smoking recipes ───────────────────────────────────────────────────
     try {
       await _syncSmokingRecipes(groupId, lastSyncSmokingRecipes);
       await _setLastSync(prefs, _keySmokingRecipes, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncSmokingRecipes: $e');
+    }
 
     // ── Courses ───────────────────────────────────────────────────────────
     try {
       await _syncCourses(groupId, lastSyncCourses);
       await _setLastSync(prefs, _keyCourses, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncCourses: $e');
+    }
 
     // ── Scratch pads ──────────────────────────────────────────────────────
     try {
       await _syncScratchPads(groupId, lastSyncScratchPads);
       await _setLastSync(prefs, _keyScratchPads, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncScratchPads: $e');
+    }
 
     // ── User entity preferences ───────────────────────────────────────────
     try {
       await _syncUserEntityPreferences(userId, lastSyncUserEntityPrefs);
       await _setLastSync(prefs, _keyUserEntityPrefs, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncUserEntityPreferences: $e');
+    }
 
     // ── Meal plans + planned meals ────────────────────────────────────────
     try {
       await _syncMealPlans(userId, lastSyncMealPlans);
       await _setLastSync(prefs, _keyMealPlans, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncMealPlans: $e');
+    }
 
     // ── Shopping lists + shopping items ───────────────────────────────────
     try {
       await _syncShoppingLists(userId, lastSyncShoppingLists);
       await _setLastSync(prefs, _keyShoppingLists, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncShoppingLists: $e');
+    }
 
     // ── Recipe drafts ─────────────────────────────────────────────────────
     try {
       await _syncRecipeDrafts(userId, lastSyncRecipeDrafts);
       await _setLastSync(prefs, _keyRecipeDrafts, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncRecipeDrafts: $e');
+    }
 
     // ── Cooking logs ──────────────────────────────────────────────────────
     try {
       await _syncCookingLogs(userId, lastSyncCookingLogs);
       await _setLastSync(prefs, _keyCookingLogs, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncCookingLogs: $e');
+    }
 
     // ── Recipe images ─────────────────────────────────────────────────────
     try {
       await _syncRecipeImages(groupId, lastSyncRecipeImages);
       await _setLastSync(prefs, _keyRecipeImages, DateTime.now().toUtc());
-    } catch (e) {}
+    } catch (e) {
+      debugPrint('Supabase sync error in _syncRecipeImages: $e');
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────────
