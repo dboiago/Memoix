@@ -274,6 +274,40 @@ class MemoixSnackBar {
     }
   }
 
+  /// Show a persistent SnackBar with a labelled action button.
+  /// Does NOT auto-dismiss — user must interact via the action or close icon.
+  /// The [onAction] callback is invoked after the snackbar is dismissed.
+  /// Uses [rootScaffoldMessengerKey] so dismiss is clean regardless of navigation.
+  static void showPersistentWithAction({
+    required String message,
+    required String actionLabel,
+    required VoidCallback onAction,
+  }) {
+    final messenger = rootScaffoldMessengerKey.currentState;
+    if (messenger == null) return;
+    _cancelTimer();
+    try {
+      messenger.hideCurrentSnackBar();
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: const Duration(days: 1),
+          behavior: SnackBarBehavior.floating,
+          showCloseIcon: true,
+          action: SnackBarAction(
+            label: actionLabel,
+            onPressed: () {
+              messenger.hideCurrentSnackBar();
+              onAction();
+            },
+          ),
+        ),
+      );
+    } catch (_) {
+      // Ignore if widget tree is deactivated
+    }
+  }
+
   /// Show a persistent message with a Copy action.
   /// Does NOT auto-dismiss — user must dismiss via close icon or Copy.
   static void showPersistentWithCopy(String message) {

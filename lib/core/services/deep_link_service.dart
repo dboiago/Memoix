@@ -1,7 +1,10 @@
 import 'dart:async';
+import 'dart:io';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../features/sharing/services/share_service.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
@@ -9,6 +12,7 @@ import '../../features/personal_storage/services/shared_storage_manager.dart';
 import '../../features/personal_storage/providers/google_drive_storage.dart';
 import '../../features/personal_storage/providers/one_drive_storage.dart';
 import '../../features/personal_storage/models/storage_location.dart';
+import '../../app/app.dart' show rootNavigatorKey;
 import '../widgets/memoix_snackbar.dart';
 
 /// Service to handle deep links (memoix://recipe/...)
@@ -303,6 +307,63 @@ class DeepLinkService {
       debugPrint('Error handling deep link: $e');
       _showError(context, 'Failed to import recipe');
     }
+  }
+
+  /// Check the clipboard for a Memoix recipe link and surface a persistent
+  /// import prompt. Only runs on Android and iOS. Uses SharedPreferences to
+  /// deduplicate — the same link will not be prompted on subsequent launches.
+  Future<void> checkClipboard(BuildContext context) async {
+    if (!Platform.isAndroid && !Platform.isIOS) return;
+
+    final ClipboardData? data;
+    try {
+      data = await Clipboard.getData(Clipboard.kTextPlain);
+    } catch (e) {
+      debugPrint('Clipboard read error: $e');
+      return;
+    }
+
+    final text = data?.text?.trim();
+    if (text == null || text.isEmpty) return;
+
+    // Only handle recipe links — repo links require auth flows, not inline prompts
+    if (!text.startsWith('memoix://recipe/')) return;
+
+    // SECURITY: Reject oversized payloads before parsing (mirrors QR scanner limit)
+    if (text.length > 4096) return;
+
+    // Validate the URI is well-formed before proceeding
+    final uri = Uri.tryParse(text);
+    if (uri == null) return;
+
+    // Deduplicate: do not re-prompt for a link the user has already seen
+    final prefs = await SharedPreferences.getInstance();
+    const prefKey = 'deep_link_last_clipboard_link';
+    if (prefs.getString(prefKey) == text) return;
+
+    // Persist before showing — if the app is killed before the tap we still
+    // won't re-prompt, which is preferable to spamming the user.
+    await prefs.setString(prefKey, text);
+
+    MemoixSnackBar.showPersistentWithAction(
+      message: 'Memoix recipe link detected. Tap to import.',
+      actionLabel: 'Import',
+      onAction: () async {
+        // Resolve context at tap time so we never use a stale BuildContext
+        // captured at initState. rootNavigatorKey always tracks the live root.
+        final ctx = rootNavigatorKey.currentContext;
+        if (ctx == null) {
+          MemoixSnackBar.showError('Unable to open import — try reopening the app.');
+          return;
+        }
+        try {
+          await _handleDeepLink(ctx, uri);
+        } catch (e) {
+          debugPrint('Clipboard import error: $e');
+          MemoixSnackBar.showError('Failed to process recipe link');
+        }
+      },
+    );
   }
 
   void _showError(BuildContext context, String message) {
