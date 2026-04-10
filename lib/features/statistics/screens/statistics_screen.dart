@@ -5,6 +5,14 @@ import '../models/cooking_stats.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/cuisine.dart';
 
+String _formatCookTime(int? minutes) {
+  if (minutes == null) return '\u2014';
+  if (minutes < 60) return '${minutes}m';
+  final h = minutes ~/ 60;
+  final m = minutes % 60;
+  return m == 0 ? '${h}h' : '${h}h ${m}m';
+}
+
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
 
@@ -77,7 +85,7 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Total Recipes',
-                value: '78', // TODO: Get from actual data
+                value: stats.totalRecipes.toString(),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
@@ -85,7 +93,7 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Countries',
-                value: '12', // TODO: Get from actual data
+                value: stats.distinctCuisineCount.toString(),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
@@ -97,7 +105,7 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Avg Cook Time',
-                value: '35m', // TODO: Calculate from recipes
+                value: _formatCookTime(stats.avgCookTimeMinutes),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),

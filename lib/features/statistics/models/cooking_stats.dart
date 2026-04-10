@@ -13,6 +13,9 @@ class CookingStats {
   final Map<String, int> cooksByCuisine;
   final List<TopRecipe> topRecipes;
   final List<CookingLog> recentCooks;
+  final int totalRecipes;
+  final int distinctCuisineCount;
+  final int? avgCookTimeMinutes;
 
   const CookingStats({
     required this.totalCooks,
@@ -23,6 +26,9 @@ class CookingStats {
     required this.cooksByCuisine,
     required this.topRecipes,
     required this.recentCooks,
+    required this.totalRecipes,
+    required this.distinctCuisineCount,
+    this.avgCookTimeMinutes,
   });
 
   static const empty = CookingStats(
@@ -34,6 +40,8 @@ class CookingStats {
     cooksByCuisine: {},
     topRecipes: [],
     recentCooks: [],
+    totalRecipes: 0,
+    distinctCuisineCount: 0,
   );
 }
 
@@ -88,9 +96,45 @@ class CookingStatsService {
 
   /// Get aggregated statistics
   Future<CookingStats> getStats() async {
+    final allRecipes = await _db.recipeDao.getAllRecipes();
+    final totalRecipes = allRecipes.length;
+
+    final cuisineValues = <String>{};
+    for (final r in allRecipes) {
+      if (r.cuisine != null && r.cuisine!.trim().isNotEmpty) {
+        cuisineValues.add(r.cuisine!.trim().toLowerCase());
+      }
+      if (r.country != null && r.country!.trim().isNotEmpty) {
+        cuisineValues.add(r.country!.trim().toLowerCase());
+      }
+    }
+    final distinctCuisineCount = cuisineValues.length;
+
+    final timesInMinutes = allRecipes
+        .map((r) => _parseTimeToMinutes(r.time))
+        .whereType<int>()
+        .toList();
+    final int? avgCookTimeMinutes = timesInMinutes.isNotEmpty
+        ? timesInMinutes.reduce((a, b) => a + b) ~/ timesInMinutes.length
+        : null;
+
     final allLogs = await _db.cookingLogDao.getStats();
 
-    if (allLogs.isEmpty) return CookingStats.empty;
+    if (allLogs.isEmpty) {
+      return CookingStats(
+        totalCooks: 0,
+        uniqueRecipes: 0,
+        recipesThisMonth: 0,
+        cooksThisMonth: 0,
+        cooksByCourse: {},
+        cooksByCuisine: {},
+        topRecipes: [],
+        recentCooks: [],
+        totalRecipes: totalRecipes,
+        distinctCuisineCount: distinctCuisineCount,
+        avgCookTimeMinutes: avgCookTimeMinutes,
+      );
+    }
 
     final now = DateTime.now();
     final startOfMonth = DateTime(now.year, now.month, 1);
@@ -154,7 +198,21 @@ class CookingStatsService {
       cooksByCuisine: cooksByCuisine,
       topRecipes: topRecipes.take(10).toList(),
       recentCooks: recentLogs,
+      totalRecipes: totalRecipes,
+      distinctCuisineCount: distinctCuisineCount,
+      avgCookTimeMinutes: avgCookTimeMinutes,
     );
+  }
+
+  static int? _parseTimeToMinutes(String? time) {
+    if (time == null || time.trim().isEmpty) return null;
+    final t = time.trim();
+    final hoursMatch = RegExp(r'(\d+)\s*h').firstMatch(t);
+    final minsMatch = RegExp(r'(\d+)\s*m(?!o)').firstMatch(t);
+    final hours = hoursMatch != null ? int.tryParse(hoursMatch.group(1)!) ?? 0 : 0;
+    final mins = minsMatch != null ? int.tryParse(minsMatch.group(1)!) ?? 0 : 0;
+    final total = hours * 60 + mins;
+    return total > 0 ? total : null;
   }
 
   /// Watch stats changes
