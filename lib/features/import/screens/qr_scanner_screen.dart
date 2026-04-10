@@ -1,3 +1,6 @@
+import 'dart:io' show Platform;
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
@@ -5,6 +8,9 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import '../../sharing/services/share_service.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+
+bool _hasNoCamera() =>
+    kIsWeb || Platform.isWindows || Platform.isMacOS || Platform.isLinux;
 
 /// QR Code scanner screen for importing shared recipes
 class QrScannerScreen extends ConsumerStatefulWidget {
@@ -23,16 +29,44 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
   bool _isProcessing = false;
   String? _errorMessage;
   bool _torchEnabled = false;
+  bool _permissionDenied = false;
+
+  final _linkController = TextEditingController();
+  bool _linkIsValid = false;
+
+  // SECURITY: Maximum allowed link/QR data length
+  static const _maxLinkLength = 4096;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller.addListener(_onScannerState);
+  }
+
+  void _onScannerState() {
+    final error = _controller.value.error;
+    if (error != null &&
+        error.errorCode == MobileScannerErrorCode.permissionDenied &&
+        !_permissionDenied) {
+      setState(() => _permissionDenied = true);
+    }
+  }
 
   @override
   void dispose() {
+    _controller.removeListener(_onScannerState);
     _controller.dispose();
+    _linkController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
+    if (_hasNoCamera() || _permissionDenied) {
+      return _buildLinkImportScreen(theme);
+    }
 
     return Scaffold(
       appBar: AppBar(
@@ -134,6 +168,97 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLinkImportScreen(ThemeData theme) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Link Import')),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(children: [
+                      Icon(Icons.link, color: theme.colorScheme.primary),
+                      const SizedBox(width: 8),
+                      Text('Import via Share Link',
+                          style: theme.textTheme.titleMedium),
+                    ]),
+                    const SizedBox(height: 12),
+                    const Text(
+                        'Paste a Memoix recipe share link to import the recipe.'),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Format: memoix://recipe/...',
+                      style: theme.textTheme.bodySmall
+                          ?.copyWith(color: theme.colorScheme.outline),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            TextField(
+              controller: _linkController,
+              maxLength: _maxLinkLength,
+              decoration: InputDecoration(
+                labelText: 'Recipe Link',
+                hintText: 'memoix://recipe/...',
+                prefixIcon: const Icon(Icons.link),
+                border: const OutlineInputBorder(),
+                counterText: '',
+                suffixIcon: _linkController.text.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _linkController.clear();
+                          setState(() => _linkIsValid = false);
+                        },
+                      )
+                    : null,
+              ),
+              autocorrect: false,
+              onChanged: (value) {
+                setState(() {
+                  _linkIsValid = value.startsWith('memoix://recipe/') &&
+                      value.length > 17 &&
+                      value.length <= _maxLinkLength;
+                });
+              },
+            ),
+            const SizedBox(height: 16),
+            FilledButton.icon(
+              onPressed:
+                  _linkIsValid ? () => _importRecipe(_linkController.text) : null,
+              icon: _isProcessing
+                  ? const SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(strokeWidth: 2))
+                  : const Icon(Icons.download),
+              label: Text(_isProcessing ? 'Importing...' : 'Import Recipe'),
+            ),
+            if (_permissionDenied && !_hasNoCamera()) ...[
+              const SizedBox(height: 12),
+              OutlinedButton.icon(
+                onPressed: () async {
+                  setState(() => _permissionDenied = false);
+                  await _controller.start();
+                },
+                icon: const Icon(Icons.camera_alt),
+                label: const Text('Request Camera Access'),
+              ),
+            ],
+          ],
         ),
       ),
     );
