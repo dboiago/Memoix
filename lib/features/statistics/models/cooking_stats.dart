@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
@@ -236,16 +238,37 @@ class CookingStatsService {
 // Providers
 // Use central provider from core/providers.dart
 
-final cookingStatsProvider = StreamProvider<CookingStats>((ref) async* {
+final cookingStatsProvider = StreamProvider<CookingStats>((ref) {
   final service = ref.watch(cookingStatsServiceProvider);
-  
-  // Emit initial stats
-  yield await service.getStats();
-  
-  // Watch for changes and re-emit stats
-  await for (final _ in service.watchChanges()) {
-    yield await service.getStats();
+  final db = ref.watch(databaseProvider);
+
+  // ignore: close_sinks — closed in onDispose
+  final controller = StreamController<CookingStats>.broadcast();
+
+  Future<void> emit() async {
+    try {
+      controller.add(await service.getStats());
+    } catch (e, st) {
+      controller.addError(e, st);
+    }
   }
+
+  // Emit initial value immediately.
+  emit();
+
+  // Re-emit whenever cooking logs change (cook count, course, cuisine).
+  final logSub = service.watchChanges().listen((_) => emit());
+
+  // Re-emit whenever recipes change (total count, distinct cuisines, avg time).
+  final recipeSub = db.recipeDao.watchAllRecipes().listen((_) => emit());
+
+  ref.onDispose(() {
+    logSub.cancel();
+    recipeSub.cancel();
+    controller.close();
+  });
+
+  return controller.stream;
 });
 
 /// Counts favourites across all item types, matching the Favourites screen.
