@@ -1,7 +1,16 @@
+import 'dart:io' show Platform;
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/routes/router.dart';
+
+bool _hasNoCamera() =>
+    kIsWeb ||
+    Platform.isWindows ||
+    Platform.isMacOS ||
+    Platform.isLinux;
 
 /// Main navigation drawer for Memoix
 class MemoixDrawer extends ConsumerWidget {
@@ -150,7 +159,7 @@ class MemoixDrawer extends ConsumerWidget {
                   ),
                   _DrawerItem(
                     icon: Icons.qr_code_scanner,
-                    label: 'Scan QR Code',
+                    label: _hasNoCamera() ? 'Link Import' : 'QR Import',
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toQRScanner(context);

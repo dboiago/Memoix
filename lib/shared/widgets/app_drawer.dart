@@ -1,6 +1,15 @@
+import 'dart:io' show Platform;
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/routes/router.dart';
+
+bool _hasNoCamera() =>
+    kIsWeb ||
+    Platform.isWindows ||
+    Platform.isMacOS ||
+    Platform.isLinux;
 import '../../app/app_shell.dart';
 import '../../core/services/integrity_service.dart';
 import '../../features/ai/ai_settings_provider.dart';
@@ -200,7 +209,7 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
                     ),
                   _DrawerTile(
                     icon: Icons.qr_code_scanner,
-                    title: 'Scan QR Code',
+                    title: _hasNoCamera() ? 'Link Import' : 'QR Import',
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toQRScanner(context);
