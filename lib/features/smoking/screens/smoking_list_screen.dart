@@ -47,7 +47,10 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
       ),
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('SmokingListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (recipes) {
           // Apply Hide Memoix filter if enabled
           final visibleRecipes = hideMemoix

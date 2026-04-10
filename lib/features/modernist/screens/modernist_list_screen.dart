@@ -40,7 +40,10 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
       ),
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('ModernistListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (allRecipes) {
           // Watch settings
           final hideMemoix = ref.watch(hideMemoixRecipesProvider);

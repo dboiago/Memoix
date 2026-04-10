@@ -44,7 +44,10 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
       ),
       body: entriesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('CheeseListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (allEntries) {
           // Apply hide memoix filter
           final visibleEntries = hideMemoix

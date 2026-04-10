@@ -45,7 +45,10 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
       ),
       body: pizzasAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('PizzaListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (allPizzas) {
           // Apply Hide Memoix filter if enabled
           final visiblePizzas = hideMemoix

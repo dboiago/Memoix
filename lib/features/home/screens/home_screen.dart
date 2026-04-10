@@ -36,7 +36,10 @@ class HomeScreen extends ConsumerWidget {
     final coursesAsync = ref.watch(coursesProvider);
     return coursesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error: $err')),
+      error: (err, _) {
+        debugPrint('HomeScreen error: $err');
+        return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+      },
       data: (courses) => _CourseGridView(courses: courses),
     );
   }
