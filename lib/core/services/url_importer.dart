@@ -5766,6 +5766,49 @@ class UrlRecipeImporter {
     return [];
   }
 
+  /// Strip WordPress thumbnail dimension suffixes from image URLs.
+  /// e.g. "hero-300x200.jpg" → "hero.jpg", "thumb-150x150.webp?v=1" → "thumb.webp?v=1"
+  String? _stripWpDimensions(String? url) {
+    if (url == null) return null;
+    return url.replaceFirstMapped(
+      RegExp(r'-\d+x\d+(\.[a-zA-Z0-9]+)(\?[^#]*)?(#.*)?$'),
+      (m) => '${m.group(1)}${m.group(2) ?? ''}${m.group(3) ?? ''}',
+    );
+  }
+
+  /// From a `srcset` attribute value, return the URL with the highest width descriptor.
+  /// Falls back to the last candidate entry when no `NNNw` descriptors are present.
+  String? _bestSrcsetUrl(String srcset) {
+    final candidates = srcset
+        .split(',')
+        .map((s) => s.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+    if (candidates.isEmpty) return null;
+    String? bestUrl;
+    int bestWidth = -1;
+    for (final candidate in candidates) {
+      final parts = candidate.split(RegExp(r'\s+'));
+      if (parts.isEmpty) continue;
+      final url = parts.first.trim();
+      if (url.isEmpty) continue;
+      int width = 0;
+      if (parts.length > 1) {
+        final descriptor = parts.last.trim().toLowerCase();
+        if (descriptor.endsWith('w')) {
+          width = int.tryParse(descriptor.substring(0, descriptor.length - 1)) ?? 0;
+        }
+      }
+      if (width > bestWidth) {
+        bestWidth = width;
+        bestUrl = url;
+      } else {
+        bestUrl ??= url;
+      }
+    }
+    return bestUrl;
+  }
+
   String? _parseImage(dynamic value) {
     if (value == null) return null;
     if (value is String) {
@@ -5773,7 +5816,7 @@ class UrlRecipeImporter {
       if (value.contains('web.archive.org') || value.contains('archive.org/web/')) {
         return null;
       }
-      return value;
+      return _stripWpDimensions(value);
     }
     if (value is List && value.isNotEmpty) {
       return _parseImage(value.first);
@@ -10244,68 +10287,83 @@ class UrlRecipeImporter {
     return processed;
   }
   
-  /// Extract recipe image from HTML document
-  /// Checks schema.org markup, Open Graph meta tags, and common recipe image selectors
+  /// Extract recipe image from HTML document.
+  /// Priority: Open Graph / Twitter Card meta tags (most reliable for full-res) →
+  /// Schema.org microdata → preload hints → site-specific selectors.
   String? _extractImageFromHtml(dynamic document) {
-    // Helper to get image URL from various attributes
+    // Helper to get the best image URL from element attributes.
+    // Checks lazy-loading attributes before src (src is often a low-res placeholder).
     String? getImageUrl(dynamic element) {
       if (element == null) return null;
-      // Try various attributes - sites use different ones for lazy loading
-      final attrs = ['src', 'content', 'data-src', 'data-lazy-src', 'data-original', 'srcset'];
-      for (final attr in attrs) {
-        var value = element.attributes[attr];
-        if (value != null && value.isNotEmpty) {
-          // For srcset, take the first URL
-          if (attr == 'srcset') {
-            value = value.split(',').first.split(' ').first.trim();
-          }
-          // Skip placeholder images
-          if (value.contains('data:image') || 
-              value.contains('placeholder') ||
-              value.contains('loading') ||
-              value.contains('blank')) {
-            continue;
-          }
-          return value;
+      // Prefer lazy-loading source attributes over src
+      for (final attr in ['data-src', 'data-lazy-src', 'data-original', 'content']) {
+        final value = element.attributes[attr];
+        if (value != null &&
+            value.isNotEmpty &&
+            !value.contains('data:image') &&
+            !value.contains('placeholder') &&
+            !value.contains('loading') &&
+            !value.contains('blank')) {
+          return _stripWpDimensions(value);
         }
+      }
+      // srcset: pick the highest-width candidate rather than the default lowest-res src
+      final srcset = element.attributes['srcset'];
+      if (srcset != null && srcset.isNotEmpty) {
+        final best = _bestSrcsetUrl(srcset);
+        if (best != null &&
+            !best.contains('data:image') &&
+            !best.contains('placeholder')) {
+          return _stripWpDimensions(best);
+        }
+      }
+      // Fall back to src
+      final src = element.attributes['src'];
+      if (src != null &&
+          src.isNotEmpty &&
+          !src.contains('data:image') &&
+          !src.contains('placeholder') &&
+          !src.contains('loading') &&
+          !src.contains('blank')) {
+        return _stripWpDimensions(src);
       }
       return null;
     }
-    
-    // 1. Try schema.org Recipe image (itemprop="image")
+
+    // 1. Open Graph image — explicitly declared for social sharing, typically full-resolution
+    final ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage != null) {
+      final content = ogImage.attributes['content'];
+      if (content != null && content.isNotEmpty) return _stripWpDimensions(content);
+    }
+
+    // 2. Twitter Card image — also a reliable meta-declared full-resolution image
+    final twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage != null) {
+      final content = twitterImage.attributes['content'];
+      if (content != null && content.isNotEmpty) return _stripWpDimensions(content);
+    }
+
+    // 3. Schema.org Recipe microdata image (itemprop="image" within Recipe itemscope)
     final schemaImg = document.querySelector('[itemscope][itemtype*="Recipe"] [itemprop="image"]');
     if (schemaImg != null) {
       final url = getImageUrl(schemaImg);
       if (url != null) return url;
     }
-    
-    // 2. Try itemprop="image" directly (without parent scope check)
+
+    // 4. itemprop="image" (without parent scope check)
     final itempropImg = document.querySelector('[itemprop="image"]');
     if (itempropImg != null) {
       final url = getImageUrl(itempropImg);
       if (url != null) return url;
     }
-    
-    // 3. Try Open Graph image meta tag
-    final ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage != null) {
-      final content = ogImage.attributes['content'];
-      if (content != null && content.isNotEmpty) return content;
-    }
-    
-    // 4. Try Twitter card image
-    final twitterImage = document.querySelector('meta[name="twitter:image"]');
-    if (twitterImage != null) {
-      final content = twitterImage.attributes['content'];
-      if (content != null && content.isNotEmpty) return content;
-    }
-    
-    // 5. Try preloaded image link (used by some sites like Seedlip)
+
+    // 5. Preloaded image link (used by some sites like Seedlip)
     final preloadImage = document.querySelector('link[rel="preload"][as="image"]');
     if (preloadImage != null) {
       final href = preloadImage.attributes['href'];
       if (href != null && href.isNotEmpty && !href.contains('icon') && !href.contains('logo')) {
-        return href;
+        return _stripWpDimensions(href);
       }
     }
     
