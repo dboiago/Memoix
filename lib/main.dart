@@ -135,13 +135,8 @@ void main() async {
   }
 
   runApp(
-    ProviderScope(
-      child: MemoixApp(
-  runApp(
-        const ProviderScope(
-          child: MemoixApp(),
-        ),
-      ),
+    const ProviderScope(
+      child: MemoixApp(),
     ),
   );
 }

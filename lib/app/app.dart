@@ -13,6 +13,9 @@ import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';
 import '../features/tools/timer_service.dart';
 import '../features/personal_storage/services/personal_storage_service.dart';
+import '../core/database/database.dart';
+import '../core/services/image_migration_service.dart';
+import '../core/utils/ingredient_categorizer.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -52,23 +55,26 @@ class _DeepLinkWrapper extends ConsumerStatefulWidget {
 class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     with WidgetsBindingObserver {
   @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addObserver(this);
-    // Initialize deep links and check for updates after first frame
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      processIntegrityResponses(ref);
-      ref.read(deepLinkServiceProvider).initialize(context);
-      ref.read(deepLinkServiceProvider).checkClipboard(context);
-      _checkForUpdatesOnLaunch();
-      _performBackgroundSync();
-      _setupTimerAlarmCallbacks();
-      _triggerPersonalStorageSync();
-      Future<void> _deferredInit() async {
-        await ImageMigrationService.runIfNeeded();
-        await IngredientService().initialize();
-        await MemoixDatabase.refreshCourses();
-      }
+    void initState() {
+      super.initState();
+      WidgetsBinding.instance.addObserver(this);
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        processIntegrityResponses(ref);
+        ref.read(deepLinkServiceProvider).initialize(context);
+        ref.read(deepLinkServiceProvider).checkClipboard(context);
+        _checkForUpdatesOnLaunch();
+        _performBackgroundSync();
+        _setupTimerAlarmCallbacks();
+        _triggerPersonalStorageSync();
+        _deferredInit();
+      });
+    }
+
+    Future<void> _deferredInit() async {
+      await ImageMigrationService.runIfNeeded();
+      await IngredientService().initialize();
+      await MemoixDatabase.refreshCourses();
+    }
     });
   }
 
