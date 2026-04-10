@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io' show gzip, HttpClient;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart' show BuildContext;
 import 'package:http/http.dart' as http;
 import 'package:http/io_client.dart';
