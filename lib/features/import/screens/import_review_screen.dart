@@ -119,6 +119,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _servesController.dispose();
     _timeController.dispose();
     _techniqueController.dispose();
+    _garnishFieldController?.dispose();
     super.dispose();
   }
 
