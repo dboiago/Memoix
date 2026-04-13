@@ -1795,7 +1795,7 @@ abstract class SupabaseSyncService {
           .from('meal_plans')
           .upsert(
             allPlans.map((p) => _mealPlanToRow(p, userId)).toList(),
-            onConflict: 'uuid',
+            onConflict: 'date',
           );
 
       // PUSH PlannedMeals — MealPlanDao has no bulk getter; raw Drift used.
