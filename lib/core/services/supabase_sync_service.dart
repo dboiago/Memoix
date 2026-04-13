@@ -486,7 +486,7 @@ abstract class SupabaseSyncService {
               .from('ingredients')
               .delete()
               .inFilter('recipe_uuid', affectedRecipeUuids)
-              .not('uuid', 'in', '(${currentUuids.join(',')})')
+              .filter('uuid', 'not.in', currentUuids)
               .eq('group_id', groupId);
         }
       }
@@ -1795,7 +1795,7 @@ abstract class SupabaseSyncService {
           .from('meal_plans')
           .upsert(
             allPlans.map((p) => _mealPlanToRow(p, userId)).toList(),
-            onConflict: 'date',
+            onConflict: 'uuid',
           );
 
       // PUSH PlannedMeals — MealPlanDao has no bulk getter; raw Drift used.
@@ -1828,11 +1828,13 @@ abstract class SupabaseSyncService {
     await db.transaction(() async {
       for (final row in remotePlans) {
         final remoteUuid = row['uuid'] as String;
-        // MealPlanDao has no getPlanByUuid(); raw Drift used.
+        final remoteDate = row['date'] as String;
+        // Check for BOTH uuid and date to prevent SQLite constraint crashes
         final existing = await (db.select(db.mealPlans)
-              ..where((p) => p.uuid.equals(remoteUuid)))
-            .getSingleOrNull();
-        if (existing != null) continue; // append-only: local copy wins
+              ..where((p) => p.uuid.equals(remoteUuid) | p.date.equals(remoteDate)))
+            .get();
+            
+        if (existing.isNotEmpty) continue; // append-only: local copy wins
         await db.mealPlanDao.savePlan(_remoteToMealPlanCompanion(row));
       }
     });
