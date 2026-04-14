@@ -752,12 +752,14 @@ abstract class SupabaseSyncService {
         final existing = await db.catalogueDao.getPizzaByUuid(remoteUuid);
         if (existing != null) {
           if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            cookCount: existing.cookCount,
-            rating: existing.rating,
-          ).copyWith(id: Value(existing.id)),);
+          await (db.update(db.pizzas)
+                ..where((t) => t.id.equals(existing.id)))
+              .write(_remoteToPizzaCompanion(
+                row,
+                isFavorite: existing.isFavorite,
+                cookCount: existing.cookCount,
+                rating: existing.rating,
+              ));
         } else {
           await db.into(db.pizzas).insert(
             _remoteToPizzaCompanion(row, isFavorite: false, cookCount: 0, rating: 0),
@@ -838,12 +840,14 @@ abstract class SupabaseSyncService {
         final existing = await db.catalogueDao.getSandwichByUuid(remoteUuid);
         if (existing != null) {
           if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            cookCount: existing.cookCount,
-            rating: existing.rating,
-          ).copyWith(id: Value(existing.id)),);
+          await (db.update(db.sandwiches)
+                ..where((t) => t.id.equals(existing.id)))
+              .write(_remoteToSandwichCompanion(
+                row,
+                isFavorite: existing.isFavorite,
+                cookCount: existing.cookCount,
+                rating: existing.rating,
+              ));
         } else {
           await db.into(db.sandwiches).insert(
             _remoteToSandwichCompanion(row, isFavorite: false, cookCount: 0, rating: 0),
@@ -930,11 +934,13 @@ abstract class SupabaseSyncService {
         final existing = await db.cellarDao.getEntryByUuid(remoteUuid);
         if (existing != null) {
           if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            buy: existing.buy,
-          ).copyWith(id: Value(existing.id)),);
+          await (db.update(db.cellarEntries)
+                ..where((t) => t.id.equals(existing.id)))
+              .write(_remoteToCellarEntryCompanion(
+                row,
+                isFavorite: existing.isFavorite,
+                buy: existing.buy,
+              ));
         } else {
           await db.into(db.cellarEntries).insert(
             _remoteToCellarEntryCompanion(row, isFavorite: false, buy: false),
@@ -1016,11 +1022,13 @@ abstract class SupabaseSyncService {
         final existing = await db.cellarDao.getCheeseEntryByUuid(remoteUuid);
         if (existing != null) {
           if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            buy: existing.buy,
-          ).copyWith(id: Value(existing.id)),);
+          await (db.update(db.cheeseEntries)
+                ..where((t) => t.id.equals(existing.id)))
+              .write(_remoteToCheeseEntryCompanion(
+                row,
+                isFavorite: existing.isFavorite,
+                buy: existing.buy,
+              ));
         } else {
           await db.into(db.cheeseEntries).insert(
             _remoteToCheeseEntryCompanion(row, isFavorite: false, buy: false),
@@ -1103,11 +1111,13 @@ abstract class SupabaseSyncService {
         final existing = await db.smokingDao.getRecipeByUuid(remoteUuid);
         if (existing != null) {
           if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
-            row,
-            isFavorite: existing.isFavorite,
-            cookCount: existing.cookCount,
-          ).copyWith(id: Value(existing.id)),);
+          await (db.update(db.smokingRecipes)
+                ..where((t) => t.id.equals(existing.id)))
+              .write(_remoteToSmokingRecipeCompanion(
+                row,
+                isFavorite: existing.isFavorite,
+                cookCount: existing.cookCount,
+              ));
         } else {
           await db.into(db.smokingRecipes).insert(
             _remoteToSmokingRecipeCompanion(row, isFavorite: false, cookCount: 0),
@@ -1283,8 +1293,9 @@ abstract class SupabaseSyncService {
         final companion = _remoteToScratchPadCompanion(row);
         if (existing != null) {
           if (!existing.updatedAt.toUtc().isBefore(remoteUpdatedAt)) continue;
-          await db.utilityDao
-              .saveQuickNotes(companion.copyWith(id: Value(existing.id)));
+          await (db.update(db.scratchPads)
+                ..where((t) => t.id.equals(existing.id)))
+              .write(companion);
         } else {
           await db.into(db.scratchPads).insert(
             companion,
