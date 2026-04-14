@@ -33,8 +33,17 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
       (select(smokingRecipes)..where((t) => t.id.equals(id)))
           .getSingleOrNull();
 
-  Future<int> saveRecipe(SmokingRecipesCompanion recipe) =>
-      into(smokingRecipes).insertOnConflictUpdate(recipe);
+  Future<int> saveRecipe(SmokingRecipesCompanion recipe) async {
+    if (recipe.id != const Value.absent() && recipe.id.value > 0) {
+      await (update(smokingRecipes)..where((t) => t.id.equals(recipe.id.value)))
+          .write(recipe);
+      return recipe.id.value;
+    }
+    return into(smokingRecipes).insert(
+      recipe,
+      onConflict: DoUpdate((old) => recipe, target: [smokingRecipes.uuid]),
+    );
+  }
 
   Future<int> deleteRecipe(int id) =>
       (delete(smokingRecipes)..where((t) => t.id.equals(id))).go();

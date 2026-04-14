@@ -44,8 +44,17 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Future<Pizza?> getPizzaByUuid(String uuid) =>
       (select(pizzas)..where((t) => t.uuid.equals(uuid))).getSingleOrNull();
 
-  Future<int> savePizza(PizzasCompanion pizza) =>
-      into(pizzas).insertOnConflictUpdate(pizza);
+  Future<int> savePizza(PizzasCompanion pizza) async {
+    if (pizza.id != const Value.absent() && pizza.id.value > 0) {
+      await (update(pizzas)..where((t) => t.id.equals(pizza.id.value)))
+          .write(pizza);
+      return pizza.id.value;
+    }
+    return into(pizzas).insert(
+      pizza,
+      onConflict: DoUpdate((old) => pizza, target: [pizzas.uuid]),
+    );
+  }
 
   Future<int> deletePizza(int id) =>
       (delete(pizzas)..where((t) => t.id.equals(id))).go();
@@ -142,8 +151,17 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       (select(sandwiches)..where((t) => t.uuid.equals(uuid)))
           .getSingleOrNull();
 
-  Future<int> saveSandwich(SandwichesCompanion sandwich) =>
-      into(sandwiches).insertOnConflictUpdate(sandwich);
+  Future<int> saveSandwich(SandwichesCompanion sandwich) async {
+    if (sandwich.id != const Value.absent() && sandwich.id.value > 0) {
+      await (update(sandwiches)..where((t) => t.id.equals(sandwich.id.value)))
+          .write(sandwich);
+      return sandwich.id.value;
+    }
+    return into(sandwiches).insert(
+      sandwich,
+      onConflict: DoUpdate((old) => sandwich, target: [sandwiches.uuid]),
+    );
+  }
 
   Future<int> deleteSandwich(int id) =>
       (delete(sandwiches)..where((t) => t.id.equals(id))).go();

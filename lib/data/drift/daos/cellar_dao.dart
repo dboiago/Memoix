@@ -42,8 +42,17 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       (select(cellarEntries)..where((t) => t.uuid.equals(uuid)))
           .getSingleOrNull();
 
-  Future<int> saveEntry(CellarEntriesCompanion entry) =>
-      into(cellarEntries).insertOnConflictUpdate(entry);
+  Future<int> saveEntry(CellarEntriesCompanion entry) async {
+    if (entry.id != const Value.absent() && entry.id.value > 0) {
+      await (update(cellarEntries)..where((t) => t.id.equals(entry.id.value)))
+          .write(entry);
+      return entry.id.value;
+    }
+    return into(cellarEntries).insert(
+      entry,
+      onConflict: DoUpdate((old) => entry, target: [cellarEntries.uuid]),
+    );
+  }
 
   Future<int> deleteEntry(int id) =>
       (delete(cellarEntries)..where((t) => t.id.equals(id))).go();
@@ -121,8 +130,17 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       (select(cheeseEntries)..where((t) => t.uuid.equals(uuid)))
           .getSingleOrNull();
 
-  Future<int> saveCheeseEntry(CheeseEntriesCompanion entry) =>
-      into(cheeseEntries).insertOnConflictUpdate(entry);
+  Future<int> saveCheeseEntry(CheeseEntriesCompanion entry) async {
+    if (entry.id != const Value.absent() && entry.id.value > 0) {
+      await (update(cheeseEntries)..where((t) => t.id.equals(entry.id.value)))
+          .write(entry);
+      return entry.id.value;
+    }
+    return into(cheeseEntries).insert(
+      entry,
+      onConflict: DoUpdate((old) => entry, target: [cheeseEntries.uuid]),
+    );
+  }
 
   Future<int> deleteCheeseEntry(int id) =>
       (delete(cheeseEntries)..where((t) => t.id.equals(id))).go();
