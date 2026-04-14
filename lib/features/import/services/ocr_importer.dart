@@ -1548,7 +1548,7 @@ class OcrRecipeImporter {
         final lowerSentence = trimmed.toLowerCase();
         
         // Skip prose/historical narrative sentences
-        if (prosePattern.allMatches(lowerSentence).length >= 1) {
+        if (prosePattern.allMatches(lowerSentence).isNotEmpty) {
           continue;
         }
         

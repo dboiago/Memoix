@@ -761,7 +761,8 @@ abstract class SupabaseSyncService {
                 isFavorite: existing.isFavorite,
                 cookCount: existing.cookCount,
                 rating: existing.rating,
-              ));
+              ),
+              );
         } else {
           await db.into(db.pizzas).insert(
             _remoteToPizzaCompanion(row, isFavorite: false, cookCount: 0, rating: 0),
@@ -849,7 +850,8 @@ abstract class SupabaseSyncService {
                 isFavorite: existing.isFavorite,
                 cookCount: existing.cookCount,
                 rating: existing.rating,
-              ));
+              ),
+              );
         } else {
           await db.into(db.sandwiches).insert(
             _remoteToSandwichCompanion(row, isFavorite: false, cookCount: 0, rating: 0),
@@ -942,7 +944,8 @@ abstract class SupabaseSyncService {
                 row,
                 isFavorite: existing.isFavorite,
                 buy: existing.buy,
-              ));
+              ),
+              );
         } else {
           await db.into(db.cellarEntries).insert(
             _remoteToCellarEntryCompanion(row, isFavorite: false, buy: false),
@@ -1030,7 +1033,8 @@ abstract class SupabaseSyncService {
                 row,
                 isFavorite: existing.isFavorite,
                 buy: existing.buy,
-              ));
+              ),
+              );
         } else {
           await db.into(db.cheeseEntries).insert(
             _remoteToCheeseEntryCompanion(row, isFavorite: false, buy: false),
@@ -1119,7 +1123,8 @@ abstract class SupabaseSyncService {
                 row,
                 isFavorite: existing.isFavorite,
                 cookCount: existing.cookCount,
-              ));
+              ),
+              );
         } else {
           await db.into(db.smokingRecipes).insert(
             _remoteToSmokingRecipeCompanion(row, isFavorite: false, cookCount: 0),

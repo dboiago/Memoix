@@ -473,7 +473,7 @@ class PersonalStorageService {
 
       // Locate local database file using platform-correct path
       final dbFile = await _getDatabaseFile();
-      final tempFile = File('${path.join(dbFile.parent.path, 'memoix_sync_tmp.db')}');
+      final tempFile = File(path.join(dbFile.parent.path, 'memoix_sync_tmp.db'));
 
       // Write downloaded bytes to a temp file first
       await tempFile.writeAsBytes(bytes, flush: true);
@@ -507,8 +507,8 @@ class PersonalStorageService {
       await tempFile.delete();
 
       // Delete stale WAL/SHM sidecar files if present
-      final walFile = File('${path.join(dbFile.parent.path, 'memoix.db-wal')}');
-      final shmFile = File('${path.join(dbFile.parent.path, 'memoix.db-shm')}');
+      final walFile = File(path.join(dbFile.parent.path, 'memoix.db-wal'));
+      final shmFile = File(path.join(dbFile.parent.path, 'memoix.db-shm'));
       if (await walFile.exists()) await walFile.delete();
       if (await shmFile.exists()) await shmFile.delete();
 

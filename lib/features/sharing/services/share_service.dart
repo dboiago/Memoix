@@ -102,7 +102,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: '🍳 Check out this recipe: ${recipe.name}\n\n$link',
         subject: 'Recipe: ${recipe.name}',
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.shareRecipe error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -258,7 +259,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: 'Check out this pizza: ${pizza.name}\n\n$link',
         subject: 'Pizza: ${pizza.name}',
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.sharePizza error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -389,7 +391,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: 'Check out this sandwich: ${sandwich.name}\n\n$link',
         subject: 'Sandwich: ${sandwich.name}',
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.shareSandwich error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -531,7 +534,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: 'Check out this smoking recipe: ${recipe.name}\n\n$link',
         subject: 'Smoking: ${recipe.name}',
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.shareSmokingRecipe error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -659,7 +663,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: 'Check out this modernist recipe: ${recipe.name}\n\n$link',
         subject: 'Modernist: ${recipe.name}',
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.shareModernistRecipe error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -808,7 +813,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: '🍷 Check out this: ${entry.name}\n\n$link',
         subject: entry.name,
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.shareCellarEntry error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -886,7 +892,8 @@ class ShareService {
       await SharePlus.instance.share(ShareParams(
         text: '🧀 Check out this cheese: ${entry.name}\n\n$link',
         subject: entry.name,
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareService.shareCheeseEntry error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');

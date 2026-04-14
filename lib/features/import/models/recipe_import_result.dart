@@ -215,7 +215,7 @@ class RecipeImportResult {
           ),);
           rawIngredients.add(RawIngredientData(
             original: [amount, unit, name, preparation]
-                .where((s) => s != null && s!.isNotEmpty)
+                .where((s) => s != null && s.isNotEmpty)
                 .join(' '),
             name: name,
             amount: amount,

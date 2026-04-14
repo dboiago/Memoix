@@ -110,7 +110,8 @@ class RecipeBackupService {
         files: [XFile(file.path)],
         subject: 'Memoix Recipe Backup',
         text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('RecipeBackupService.exportRecipes error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -239,7 +240,8 @@ class RecipeBackupService {
           files: files,
           subject: 'Memoix Full Backup',
           text: 'Exported $filesWritten domain files',
-        ));
+        ),
+        );
       } catch (e) {
         debugPrint('RecipeBackupService.exportByCourse error: $e');
         MemoixSnackBar.showError('Could not open share sheet. Please try again.');

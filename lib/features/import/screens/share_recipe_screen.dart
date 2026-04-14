@@ -725,7 +725,8 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
       SharePlus.instance.share(ShareParams(
         text: 'Check out this ${_selectedItem!.type.singularName.toLowerCase()}: ${_selectedItem!.name}\n\n$_shareLink',
         subject: _selectedItem!.name,
-      ));
+      ),
+      );
     } catch (e) {
       debugPrint('ShareRecipeScreen._shareViaLink error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -779,7 +780,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatRecipeAsText(StringBuffer buffer, Recipe recipe) {
-    buffer.writeln('${recipe.name}');
+    buffer.writeln(recipe.name);
     buffer.writeln();
     buffer.writeln('Course: ${recipe.course}');
     if (recipe.cuisine != null) buffer.writeln('Cuisine: ${recipe.cuisine}');
@@ -802,7 +803,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatPizzaAsText(StringBuffer buffer, Pizza pizza) {
-    buffer.writeln('${pizza.name}');
+    buffer.writeln(pizza.name);
     buffer.writeln();
     buffer.writeln('Base: ${PizzaBaseExtension.fromString(pizza.base).displayName}');
 
@@ -833,7 +834,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatSandwichAsText(StringBuffer buffer, Sandwich sandwich) {
-    buffer.writeln('${sandwich.name}');
+    buffer.writeln(sandwich.name);
     buffer.writeln();
     buffer.writeln('Bread: ${sandwich.bread}');
 
@@ -871,7 +872,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatSmokingAsText(StringBuffer buffer, SmokingRecipe recipe) {
-    buffer.writeln('${recipe.name}');
+    buffer.writeln(recipe.name);
     buffer.writeln();
     if (recipe.item != null) buffer.writeln('Item: ${recipe.item}');
     buffer.writeln('Temperature: ${recipe.temperature}');
@@ -899,7 +900,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatModernistAsText(StringBuffer buffer, ModernistRecipe recipe) {
-    buffer.writeln('${recipe.name}');
+    buffer.writeln(recipe.name);
     buffer.writeln();
     buffer.writeln('Type: ${recipe.type.displayName}');
     if (recipe.technique != null) buffer.writeln('Technique: ${recipe.technique}');
@@ -933,7 +934,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatCellarAsText(StringBuffer buffer, CellarEntry entry) {
-    buffer.writeln('${entry.name}');
+    buffer.writeln(entry.name);
     buffer.writeln();
     if (entry.producer != null) buffer.writeln('Producer: ${entry.producer}');
     if (entry.category != null) buffer.writeln('Category: ${entry.category}');
@@ -946,7 +947,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatCheeseAsText(StringBuffer buffer, CheeseEntry entry) {
-    buffer.writeln('${entry.name}');
+    buffer.writeln(entry.name);
     buffer.writeln();
     if (entry.country != null) buffer.writeln('Country: ${entry.country}');
     if (entry.milk != null) buffer.writeln('Milk: ${entry.milk}');

@@ -334,6 +334,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   /// 
   /// Handles first-time users by attempting silent sign-in,
   /// then falling back to interactive sign-in if needed.
+  @override
   Future<String> createFolder(String name) async {
     // Ensure we have a connection
     if (_driveApi == null) {
@@ -399,6 +400,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   ///
   /// This updates the target folder for all subsequent operations.
   /// Called when user switches active repository in Repository Management.
+  @override
   Future<void> switchRepository(String folderId, String repositoryName) async {
     _ensureConnected();
 

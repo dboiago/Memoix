@@ -787,7 +787,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     width: 28,
                     height: 28,
                     decoration: BoxDecoration(
-                      color: theme.colorScheme.secondary.withOpacity(0.15),
+                      color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                       shape: BoxShape.circle,
                       border: Border.all(
                         color: theme.colorScheme.secondary,
@@ -933,7 +933,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                             child: Container(
                               padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
+                                color: Colors.black.withValues(alpha: 0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: const Icon(
@@ -1026,7 +1026,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -1278,7 +1278,7 @@ class _SmokingIngredientListState extends State<_SmokingIngredientList> {
                     style: theme.textTheme.bodyLarge?.copyWith(
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                     ),
                   ),
@@ -1393,7 +1393,7 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
                           fontWeight: FontWeight.w500,
                           decoration: isChecked ? TextDecoration.lineThrough : null,
                           color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
+                              ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                               : null,
                         ),
                       ),
@@ -1404,7 +1404,7 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
                           style: theme.textTheme.bodySmall?.copyWith(
                             decoration: isChecked ? TextDecoration.lineThrough : null,
                             color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                 : theme.colorScheme.onSurfaceVariant,
                           ),
                         ),

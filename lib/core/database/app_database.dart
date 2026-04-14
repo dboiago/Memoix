@@ -582,13 +582,22 @@ class AppDatabase extends _$AppDatabase {
     },
   );
 
+  @override
   CookingLogDao get cookingLogDao => CookingLogDao(this);
+  @override
   UtilityDao get utilityDao => UtilityDao(this);
+  @override
   CellarDao get cellarDao => CellarDao(this);
+  @override
   ShoppingDao get shoppingDao => ShoppingDao(this);
+  @override
   MealPlanDao get mealPlanDao => MealPlanDao(this);
+  @override
   CatalogueDao get catalogueDao => CatalogueDao(this);
+  @override
   SmokingDao get smokingDao => SmokingDao(this);
+  @override
   RecipeDao get recipeDao => RecipeDao(this);
+  @override
   ImageDao get imageDao => ImageDao(this);
 }

@@ -111,7 +111,8 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
       await SharePlus.instance.share(ShareParams(
         text: 'Join my Memoix recipe repository "${widget.repository.name}":\n$link',
         subject: 'Join my Memoix repository: ${widget.repository.name}',
-      ));
+      ),
+      );
     }
   }
 
@@ -123,7 +124,8 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
         text: 'Join my Memoix repository: ${widget.repository.name}\n\n'
             'Tap this link to add it to your Memoix app:\n$link',
         subject: 'Memoix Repository: ${widget.repository.name}',
-      ));
+      ),
+      );
     } catch (e) {
       if (mounted) {
         MemoixSnackBar.showError('Failed to share: ${e.toString()}');
