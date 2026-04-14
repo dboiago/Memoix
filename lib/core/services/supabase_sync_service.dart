@@ -755,12 +755,19 @@ abstract class SupabaseSyncService {
             rating: existing.rating,
           ).copyWith(id: Value(existing.id)),);
         } else {
-          await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
+          final newPizza = _remoteToPizzaCompanion(
             row,
             isFavorite: false,
             cookCount: 0,
             rating: 0,
-          ),);
+          );
+          await db.into(db.pizzas).insert(
+            newPizza,
+            onConflict: DoUpdate(
+              (_) => newPizza,
+              target: [db.pizzas.uuid],
+            ),
+          );
         }
       }
     });
@@ -839,12 +846,19 @@ abstract class SupabaseSyncService {
             rating: existing.rating,
           ).copyWith(id: Value(existing.id)),);
         } else {
-          await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
+          final newSandwich = _remoteToSandwichCompanion(
             row,
             isFavorite: false,
             cookCount: 0,
             rating: 0,
-          ),);
+          );
+          await db.into(db.sandwiches).insert(
+            newSandwich,
+            onConflict: DoUpdate(
+              (_) => newSandwich,
+              target: [db.sandwiches.uuid],
+            ),
+          );
         }
       }
     });
@@ -1026,11 +1040,18 @@ abstract class SupabaseSyncService {
             buy: existing.buy,
           ).copyWith(id: Value(existing.id)),);
         } else {
-          await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
+          final newCheese = _remoteToCheeseEntryCompanion(
             row,
             isFavorite: false,
             buy: false,
-          ),);
+          );
+          await db.into(db.cheeseEntries).insert(
+            newCheese,
+            onConflict: DoUpdate(
+              (_) => newCheese,
+              target: [db.cheeseEntries.uuid],
+            ),
+          );
         }
       }
     });
@@ -1110,11 +1131,18 @@ abstract class SupabaseSyncService {
             cookCount: existing.cookCount,
           ).copyWith(id: Value(existing.id)),);
         } else {
-          await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
+          final newSmokingRecipe = _remoteToSmokingRecipeCompanion(
             row,
             isFavorite: false,
             cookCount: 0,
-          ),);
+          );
+          await db.into(db.smokingRecipes).insert(
+            newSmokingRecipe,
+            onConflict: DoUpdate(
+              (_) => newSmokingRecipe,
+              target: [db.smokingRecipes.uuid],
+            ),
+          );
         }
       }
     });
@@ -1283,7 +1311,13 @@ abstract class SupabaseSyncService {
           await db.utilityDao
               .saveQuickNotes(companion.copyWith(id: Value(existing.id)));
         } else {
-          await db.utilityDao.saveQuickNotes(companion);
+          await db.into(db.scratchPads).insert(
+            companion,
+            onConflict: DoUpdate(
+              (_) => companion,
+              target: [db.scratchPads.uuid],
+            ),
+          );
         }
       }
     });
