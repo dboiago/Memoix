@@ -904,9 +904,18 @@ abstract class SupabaseSyncService {
         .eq('group_id', groupId)
         .filter('deleted_at', 'is', null);
 
-    final List<Map<String, dynamic>> remoteCellar = lastSync == null
+    final List<Map<String, dynamic>> remoteCellarRaw = lastSync == null
         ? await remoteQueryCellar
         : await remoteQueryCellar.gt('updated_at', lastSync.toIso8601String());
+
+    // Deduplicate by uuid — Supabase can return duplicate rows (replication lag
+    // / data quirk). A duplicate causes a SQLite UNIQUE constraint crash (2067)
+    // because the INSERT path uses ON CONFLICT(id) DO UPDATE which does not
+    // cover the uuid UNIQUE index.
+    final seenCellarUuids = <String>{};
+    final remoteCellar = remoteCellarRaw
+        .where((row) => seenCellarUuids.add(row['uuid'] as String))
+        .toList();
 
     await db.transaction(() async {
       for (final row in remoteCellar) {
@@ -1791,11 +1800,15 @@ abstract class SupabaseSyncService {
     // PUSH MealPlans — MealPlanDao has no getAllPlans(); raw Drift used.
     final allPlans = await db.select(db.mealPlans).get();
     if (allPlans.isNotEmpty) {
+      // Deduplicate by uuid before pushing — duplicate local rows cause Postgres
+      // error 21000: "ON CONFLICT DO UPDATE command cannot affect row a second time".
+      final uniquePlans =
+          {for (final p in allPlans) p.uuid: p}.values.toList();
       await client
           .schema('memoix')
           .from('meal_plans')
           .upsert(
-            allPlans.map((p) => _mealPlanToRow(p, userId)).toList(),
+            uniquePlans.map((p) => _mealPlanToRow(p, userId)).toList(),
             onConflict: 'uuid',
           );
 
@@ -1806,11 +1819,14 @@ abstract class SupabaseSyncService {
             ..where((m) => m.mealPlanId.isIn(planIds)))
           .get();
       if (allMeals.isNotEmpty) {
+        // Deduplicate by instanceId for the same reason.
+        final uniqueMeals =
+            {for (final m in allMeals) m.instanceId: m}.values.toList();
         await client
             .schema('memoix')
             .from('planned_meals')
             .upsert(
-              allMeals
+              uniqueMeals
                   .map((m) => _plannedMealToRow(m, uuidById[m.mealPlanId] ?? '', userId))
                   .toList(),
               onConflict: 'instance_id',
