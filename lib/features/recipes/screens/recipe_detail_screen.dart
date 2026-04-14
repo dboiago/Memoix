@@ -8,7 +8,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../core/utils/amount_scaler.dart';
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
@@ -17,7 +16,6 @@ import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../../shared/widgets/course_icon_widget.dart';
-import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
 import '../models/spirit.dart';
@@ -28,7 +26,6 @@ import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
-import '../../tools/recipe_comparison_provider.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../widgets/ingredient_reference_sheet.dart';
@@ -36,10 +33,10 @@ import '../widgets/ingredient_reference_sheet.dart';
 bool shouldShowCompareButton(Recipe recipe) {
   final allowed = {
     'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
-    'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles'
+    'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles',
   };
   final blocked = {
-    'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar'
+    'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar',
   };
   final course = recipe.course.toLowerCase();
   if (blocked.contains(course)) return false;
@@ -214,7 +211,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   .toggleFavorite(recipe.id);
               if (blocked.isNotEmpty) {
                 MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '');
+                    blocked.first.data['text'] as String? ?? '',);
                 return;
               }
               ref.invalidate(allRecipesProvider);
@@ -390,9 +387,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                       controller: controller,
                       keyboardType: TextInputType.number,
                       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Number of servings',
-                        border: const OutlineInputBorder(),
+                        border: OutlineInputBorder(),
                       ),
                       autofocus: true,
                     ),
@@ -462,7 +459,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             margin: const EdgeInsets.only(right: 4),
             decoration: BoxDecoration(color: spiritColor, shape: BoxShape.circle),
           ),
-        ));
+        ),);
         final spirit = Spirit.toDisplayName(recipe.subcategory!);
         if (recipe.cuisine != null && recipe.cuisine!.isNotEmpty) {
           preItems.add(TextSpan(text: '$spirit (${Cuisine.toAdjective(recipe.cuisine)})')); 
@@ -479,7 +476,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             margin: const EdgeInsets.only(right: 4),
             decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
-        ));
+        ),);
         preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     } else {
@@ -493,7 +490,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             margin: const EdgeInsets.only(right: 4),
             decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
-        ));
+        ),);
         preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     }
@@ -507,7 +504,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         postItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: textColor),
-        ));
+        ),);
         postItems.add(TextSpan(text: ' $normalized'));
       }
     }
@@ -517,7 +514,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       postItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.local_bar, size: 12, color: textColor),
-      ));
+      ),);
       postItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
     }
 
@@ -622,7 +619,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   .toggleFavorite(recipe.id);
               if (blocked.isNotEmpty) {
                 MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '');
+                    blocked.first.data['text'] as String? ?? '',);
                 return;
               }
               ref.invalidate(allRecipesProvider);
@@ -717,7 +714,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                       fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
                                     ),
                                     visualDensity: VisualDensity.compact,
-                                  )).toList(),
+                                  ),).toList(),
                                 ),
                               ],
                             ),
@@ -912,7 +909,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                             child: Container(
                                               padding: const EdgeInsets.all(4),
                                               decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(0.5),
+                                                color: Colors.black.withValues(alpha: 0.5),
                                                 borderRadius: BorderRadius.circular(4),
                                               ),
                                               child: const Icon(
@@ -1012,7 +1009,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             ),
           ),
         ],
-      )).toList(),
+      ),).toList(),
     );
   }
 
@@ -1077,7 +1074,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(

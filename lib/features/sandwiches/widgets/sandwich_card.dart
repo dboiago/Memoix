@@ -7,7 +7,6 @@ import '../../../core/widgets/memoix_snackbar.dart';
 import 'dart:convert';
 
 import '../../../core/database/app_database.dart';
-import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 
 /// Sandwich card widget for list display

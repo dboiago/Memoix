@@ -1,10 +1,8 @@
 import 'dart:math' show min;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../database/app_database.dart';
-import '../../features/mealplan/models/meal_plan.dart';
 import '../../features/recipes/models/recipe.dart' hide Recipe;
 import 'integrity_service.dart';
-import 'package:flutter/foundation.dart';
 import 'dart:convert';
 
 // Helper: zero-padded YYYY-MM-DD string
@@ -90,7 +88,7 @@ class _Spec {
   final String key;
   final Set<String> events;
   final Future<bool> Function(
-      String, Map<String, dynamic>, AppDatabase, LocalInterfaceIndex) condition;
+      String, Map<String, dynamic>, AppDatabase, LocalInterfaceIndex,) condition;
   final String? alertId;
   final String? breadcrumbId;
   const _Spec({
@@ -297,7 +295,7 @@ class CalibrationEvaluator {
         
         for (int i = 0; i < daysWithMeals.length - 4; i++) {
           final startDate = daysWithMeals[i];
-          final endDate = DateTime.parse(startDate).add(Duration(days: 6));
+          final endDate = DateTime.parse(startDate).add(const Duration(days: 6));
           final endKey = _dKey(endDate);
           
           final daysInWindow = daysWithMeals
@@ -360,7 +358,7 @@ class CalibrationEvaluator {
 
         final items = await db.recipeDao.getRecipesBySource(RecipeSource.personal.name);
         final filtered = items.where((r) =>
-            (jsonDecode(r.directions) as List).length >= 4
+            (jsonDecode(r.directions) as List).length >= 4,
         ).toList();
         
         final days = filtered.map((r) => _dKey(r.createdAt)).toSet();

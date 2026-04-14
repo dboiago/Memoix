@@ -168,7 +168,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     }
 
     if (!mounted || appVersion == null || !appVersion.hasUpdate) return;
-    final validVersion = appVersion!;
+    final validVersion = appVersion;
 
     // Show update dialog
     showDialog(

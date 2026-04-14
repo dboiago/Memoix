@@ -6,7 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
 import '../../core/services/integrity_service.dart';
-import '../../features/ai/ai_settings_provider.dart';
 
 bool _hasNoCamera() =>
     kIsWeb ||
@@ -240,7 +239,7 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
                       // In the place where rot becomes savory
                       // I walked through the lichen and followed the game
                       // Here the end and beginning are one and the same
-                      const _wild = "Erar Erqmrcv";
+                      const _wild = 'Erar Erqmrcv';
                     },
                   ),
                 ],

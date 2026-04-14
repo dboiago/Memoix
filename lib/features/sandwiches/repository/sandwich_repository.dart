@@ -78,7 +78,7 @@ class SandwichRepository {
       createdAt: Value(sandwich.createdAt),
       updatedAt: Value(preserveTimestamp ? sandwich.updatedAt : DateTime.now()),
       version: Value(sandwich.version),
-    ));
+    ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
@@ -162,7 +162,7 @@ class SandwichRepository {
           createdAt: Value(sandwich.createdAt),
           updatedAt: Value(sandwich.updatedAt),
           version: Value(sandwich.version),
-        )).toList();
+        ),).toList();
     await _db.catalogueDao.importSandwiches(companions);
   }
 
@@ -170,7 +170,7 @@ class SandwichRepository {
   Future<List<String>> getAllBreads() async {
     final allSandwiches = await getAllSandwiches();
     return extractUniqueStrings(
-        allSandwiches, (s) => s.bread.isEmpty ? null : s.bread);
+        allSandwiches, (s) => s.bread.isEmpty ? null : s.bread,);
   }
 
   /// Get all unique proteins used across sandwiches
@@ -178,7 +178,7 @@ class SandwichRepository {
     final allSandwiches = await getAllSandwiches();
     return extractUniqueStringLists(
         allSandwiches,
-        (s) => (jsonDecode(s.proteins) as List).cast<String>());
+        (s) => (jsonDecode(s.proteins) as List).cast<String>(),);
   }
 
   /// Get all unique cheeses used across sandwiches
@@ -186,7 +186,7 @@ class SandwichRepository {
     final allSandwiches = await getAllSandwiches();
     return extractUniqueStringLists(
         allSandwiches,
-        (s) => (jsonDecode(s.cheeses) as List).cast<String>());
+        (s) => (jsonDecode(s.cheeses) as List).cast<String>(),);
   }
 
   /// Get all unique condiments used across sandwiches
@@ -194,7 +194,7 @@ class SandwichRepository {
     final allSandwiches = await getAllSandwiches();
     return extractUniqueStringLists(
         allSandwiches,
-        (s) => (jsonDecode(s.condiments) as List).cast<String>());
+        (s) => (jsonDecode(s.condiments) as List).cast<String>(),);
   }
 }
 

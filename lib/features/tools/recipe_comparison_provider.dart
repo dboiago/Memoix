@@ -1,6 +1,5 @@
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:uuid/uuid.dart';
 import '../recipes/models/recipe.dart';
 
 /// State for recipe comparison view

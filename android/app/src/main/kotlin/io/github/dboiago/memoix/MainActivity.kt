@@ -1,4 +1,4 @@
-package com.example.memoix
+package io.github.dboiago.memoix
 
 import io.flutter.embedding.android.FlutterActivity
 

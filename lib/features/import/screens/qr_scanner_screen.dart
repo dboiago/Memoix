@@ -7,7 +7,6 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../sharing/services/share_service.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 
 bool _hasNoCamera() =>
     kIsWeb || Platform.isWindows || Platform.isMacOS || Platform.isLinux;
@@ -191,11 +190,11 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
                       Icon(Icons.link, color: theme.colorScheme.primary),
                       const SizedBox(width: 8),
                       Text('Import via Share Link',
-                          style: theme.textTheme.titleMedium),
-                    ]),
+                          style: theme.textTheme.titleMedium,),
+                    ],),
                     const SizedBox(height: 12),
                     const Text(
-                        'Paste a Memoix recipe share link to import the recipe.'),
+                        'Paste a Memoix recipe share link to import the recipe.',),
                     const SizedBox(height: 8),
                     Text(
                       'Format: memoix://recipe/...',
@@ -243,7 +242,7 @@ class _QrScannerScreenState extends ConsumerState<QrScannerScreen> {
                   ? const SizedBox(
                       width: 20,
                       height: 20,
-                      child: CircularProgressIndicator(strokeWidth: 2))
+                      child: CircularProgressIndicator(strokeWidth: 2),)
                   : const Icon(Icons.download),
               label: Text(_isProcessing ? 'Importing...' : 'Import Recipe'),
             ),

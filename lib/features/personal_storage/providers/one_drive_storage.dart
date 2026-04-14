@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
-import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
@@ -473,7 +472,7 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
 
         if (sharedResponse.statusCode != 200) {
           throw RepositoryNotFoundException(name,
-              customMessage: 'Folder "$name" ($folderId) not found');
+              customMessage: 'Folder "$name" ($folderId) not found',);
         }
 
         final sharedData = jsonDecode(sharedResponse.body) as Map<String, dynamic>;
@@ -494,7 +493,7 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
         if (foundDriveId == null) {
           throw RepositoryNotFoundException(name,
               customMessage:
-                  'Folder "$name" ($folderId) not found in My Files or Shared with Me');
+                  'Folder "$name" ($folderId) not found in My Files or Shared with Me',);
         }
         driveId = foundDriveId;
         debugPrint('OneDriveStorage: Resolved "$name" in Shared with Me (driveId: $driveId)');

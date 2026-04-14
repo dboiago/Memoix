@@ -10,7 +10,6 @@ import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/utils/suggestions.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../recipes/models/course.dart';
@@ -310,7 +309,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             // Course dropdown
             DropdownButtonFormField<String>(
-              value: _selectedCourse,
+              initialValue: _selectedCourse,
               decoration: const InputDecoration(
                 labelText: 'Course',
               ),
@@ -796,13 +795,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected
-              ? theme.colorScheme.secondary.withOpacity(0.15)
+              ? theme.colorScheme.secondary.withValues(alpha: 0.15)
               : theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             color: isSelected
                 ? theme.colorScheme.secondary
-                : theme.colorScheme.outline.withOpacity(0.3),
+                : theme.colorScheme.outline.withValues(alpha: 0.3),
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
@@ -843,7 +842,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         decoration: BoxDecoration(
           border: isLast 
               ? null 
-              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -972,7 +971,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -994,7 +993,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
                 ),
@@ -1180,7 +1179,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         // Ingredient rows (reorderable)
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+            border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
             borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
           ),
           child: ReorderableListView.builder(
@@ -1228,7 +1227,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       decoration: BoxDecoration(
         border: isLast
             ? null
-            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -1415,7 +1414,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                       color: theme.colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: theme.colorScheme.outline.withOpacity(0.3),
+                        color: theme.colorScheme.outline.withValues(alpha: 0.3),
                       ),
                     ),
                     child: Column(
@@ -1453,7 +1452,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                       top: 4,
                       right: 4,
                       child: Material(
-                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        color: theme.colorScheme.surface.withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
                           onTap: () => _removeStepImage(index),
@@ -1600,13 +1599,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(Icons.add_photo_alternate, 
-                                    color: theme.colorScheme.outline),
+                                    color: theme.colorScheme.outline,),
                                 const SizedBox(height: 4),
                                 Text('Add new', 
                                     style: TextStyle(
                                       color: theme.colorScheme.outline,
                                       fontSize: 12,
-                                    )),
+                                    ),),
                               ],
                             ),
                           ),
@@ -1633,7 +1632,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(6),
                             child: _buildStepImageWidget(_stepImages[index], 
-                                width: 100, height: 100),
+                                width: 100, height: 100,),
                           ),
                         ),
                       );
@@ -1726,7 +1725,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         ..name = entry.nameController.text.trim()
         ..amount = entry.amountController.text.trim().isEmpty 
             ? null 
-            : entry.amountController.text.trim());
+            : entry.amountController.text.trim(),);
     }
     
     // Build directions
@@ -1784,7 +1783,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         amount: entry.amountController.text.trim().isEmpty 
             ? null 
             : entry.amountController.text.trim(),
-      ));
+      ),);
     }
     
     // Build directions
@@ -1981,7 +1980,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });
@@ -2080,7 +2079,7 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+                color: theme.colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: hasImage
@@ -2144,7 +2143,7 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
     required ThemeData theme,
   }) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,

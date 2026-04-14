@@ -300,7 +300,7 @@ class _CountryList extends StatelessWidget {
                 height: 28,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: theme.colorScheme.secondary,

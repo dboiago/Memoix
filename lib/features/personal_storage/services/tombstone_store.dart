@@ -95,7 +95,7 @@ class TombstoneStore {
   // ── private helpers ────────────────────────────────────────────────────────
 
   static Future<List<_TombstoneEntry>> _load(
-      SharedPreferences prefs, String domain) async {
+      SharedPreferences prefs, String domain,) async {
     final raw = prefs.getString('$_prefixKey$domain');
     if (raw == null) return [];
     try {
@@ -111,7 +111,7 @@ class TombstoneStore {
   }
 
   static Future<void> _save(SharedPreferences prefs, String domain,
-      List<_TombstoneEntry> entries) async {
+      List<_TombstoneEntry> entries,) async {
     await prefs.setString(
       '$_prefixKey$domain',
       jsonEncode(entries.map((e) => e.toJson()).toList()),

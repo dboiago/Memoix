@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:async';
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -423,7 +422,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
       } catch (e) {
         debugPrint('GoogleDriveStorage: Background verification error: $e');
       }
-    }));
+    }),);
   }
 
   /// Check and verify pending repositories on app startup

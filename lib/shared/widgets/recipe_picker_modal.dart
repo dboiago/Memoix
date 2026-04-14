@@ -176,7 +176,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                 const courseOrder = [
                   'Apps', 'Soups', 'Mains', 'Veg\'n', 'Sides', 'Salads', 
                   'Desserts', 'Brunch', 'Drinks', 'Breads', 'Sauces', 'Rubs', 'Pickles',
-                  'Modernist', 'Pizzas', 'Sandwiches', 'Smoking', 'Cheese', 'Cellar', 'Scratch'
+                  'Modernist', 'Pizzas', 'Sandwiches', 'Smoking', 'Cheese', 'Cellar', 'Scratch',
                 ];
 
                 // Sort courses by defined order
@@ -214,7 +214,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                               name: recipe.name,
                               subtitle: recipe.cuisine ?? recipe.course,
                               onTap: () => Navigator.pop(context, recipe),
-                            )),
+                            ),),
                         const SizedBox(height: 8),
                       ],
                     );
@@ -278,7 +278,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
         Ingredient()
           ..name = smoking.item ?? 'Unknown Item'
           ..amount = ''
-          ..unit = ''
+          ..unit = '',
       ]
       ..directions = smoking.directions.isNotEmpty
           ? (jsonDecode(smoking.directions) as List).cast<String>()
@@ -299,7 +299,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
         ..amount = i.amount
         ..unit = i.unit
         ..preparation = i.notes
-        ..section = i.section
+        ..section = i.section,
       ).toList()
       ..directions = modernist.directions
       ..comments = modernist.notes;

@@ -22,15 +22,15 @@ class GeminiClient {
     final parts = <Map<String, dynamic>>[];
 
     if (text != null && text.trim().isNotEmpty) {
-      parts.add({"text": text});
+      parts.add({'text': text});
     }
 
     if (imageBytes != null) {
       parts.add({
-        "inlineData": {
-          "mimeType": "image/jpeg",
-          "data": base64Encode(imageBytes),
-        }
+        'inlineData': {
+          'mimeType': 'image/jpeg',
+          'data': base64Encode(imageBytes),
+        },
       });
     }
 
@@ -47,28 +47,28 @@ class GeminiClient {
         'Content-Type': 'application/json',
       });
       request.body = jsonEncode({
-        "systemInstruction": {
-          "parts": [
-            {"text": systemPrompt}
-          ]
+        'systemInstruction': {
+          'parts': [
+            {'text': systemPrompt},
+          ],
         },
-        "contents": [
+        'contents': [
           {
-            "role": "user",
-            "parts": parts,
+            'role': 'user',
+            'parts': parts,
           }
         ],
-        "generationConfig": {
-          "temperature": temperature,
-          "responseMimeType": "application/json",
-        }
+        'generationConfig': {
+          'temperature': temperature,
+          'responseMimeType': 'application/json',
+        },
       });
 
       final streamed = await client.send(request);
       final body = await readAiResponse(streamed, 'Gemini');
       final decoded = jsonDecode(body);
       return jsonDecode(
-          decoded['candidates'][0]['content']['parts'][0]['text']);
+          decoded['candidates'][0]['content']['parts'][0]['text'],);
     } finally {
       client.close();
     }

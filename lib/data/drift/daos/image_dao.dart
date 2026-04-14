@@ -17,14 +17,14 @@ class ImageDao extends DatabaseAccessor<AppDatabase> with _$ImageDaoMixin {
   Future<RecipeImage?> getHeaderImage(int recipeId) =>
       (select(recipeImages)
             ..where((t) =>
-                t.recipeId.equals(recipeId) & t.imageType.equals('header'))
+                t.recipeId.equals(recipeId) & t.imageType.equals('header'),)
             ..limit(1))
           .getSingleOrNull();
 
   Future<List<RecipeImage>> getStepImages(int recipeId) =>
       (select(recipeImages)
             ..where((t) =>
-                t.recipeId.equals(recipeId) & t.imageType.equals('step'))
+                t.recipeId.equals(recipeId) & t.imageType.equals('step'),)
             ..orderBy([(t) => OrderingTerm.asc(t.stepIndex)]))
           .get();
 

@@ -35,7 +35,7 @@ class MealPlanDao extends DatabaseAccessor<AppDatabase>
       (select(mealPlans)
             ..where((t) =>
                 t.date.isBiggerThanValue(startDate) &
-                t.date.isSmallerThanValue(endDate)))
+                t.date.isSmallerThanValue(endDate),))
           .watch();
 
   Future<List<MealPlan>> getWeekPlans(List<String> dates) =>
@@ -94,7 +94,7 @@ class MealPlanDao extends DatabaseAccessor<AppDatabase>
         servings: Value(meal.servings),
         cuisine: Value(meal.cuisine),
         recipeCategory: Value(meal.recipeCategory),
-      ));
+      ),);
     }
   }
 }

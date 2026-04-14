@@ -8,13 +8,10 @@ import 'package:window_manager/window_manager.dart';
 
 import 'app/app.dart';
 import 'core/database/database.dart';
-import 'core/services/image_migration_service.dart';
 import 'core/services/integrity_service.dart';
 import 'core/services/interface_calibration.dart';
 import 'core/services/schema_migration_service.dart';
 import 'core/services/supabase_auth_service.dart';
-import 'core/services/supabase_sync_service.dart';
-import 'core/utils/ingredient_categorizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +32,7 @@ void main() async {
           debugPrint('Supabase initialization failed: $e');
         })
       : Future.value().then((_) => debugPrint(
-          'Supabase: SUPABASE_URL or SUPABASE_ANON_KEY not set — skipping initialization.'));
+          'Supabase: SUPABASE_URL or SUPABASE_ANON_KEY not set — skipping initialization.',),);
 
   await Future.wait([
     supabaseFuture,

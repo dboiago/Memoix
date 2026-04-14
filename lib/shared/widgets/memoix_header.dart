@@ -101,8 +101,8 @@ class MemoixHeader extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0.3),
-                      Colors.black.withOpacity(0.6),
+                      Colors.black.withValues(alpha: 0.3),
+                      Colors.black.withValues(alpha: 0.6),
                     ],
                   ),
                 ),
@@ -136,7 +136,7 @@ class MemoixHeader extends StatelessWidget {
                                 fontSize: baseFontSize,
                                 color: theme.colorScheme.onSurfaceVariant,
                                 letterSpacing: 0.5,
-                                shadows: [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))],
+                                shadows: [Shadow(blurRadius: 4, color: Colors.black.withValues(alpha: 0.7), offset: const Offset(0, 1))],
                               ),
                             )
                           // Without image: layered text effect
@@ -161,10 +161,10 @@ class MemoixHeader extends StatelessWidget {
     final mainColor = theme.colorScheme.primary;
     
     // Layer text color: secondary accent with opacity
-    final layerColor = theme.colorScheme.secondary.withOpacity(isDark ? 0.4 : 0.5);
+    final layerColor = theme.colorScheme.secondary.withValues(alpha: isDark ? 0.4 : 0.5);
     
     // Stroke color: subtle charcoal stroke for definition (light mode only)
-    final strokeColor = isDark ? Colors.transparent : const Color(0xFF4B5563).withOpacity(0.5);
+    final strokeColor = isDark ? Colors.transparent : const Color(0xFF4B5563).withValues(alpha: 0.5);
 
     final textStyle = TextStyle(
       fontWeight: FontWeight.w600,
@@ -210,7 +210,7 @@ class MemoixHeader extends StatelessWidget {
         : theme.colorScheme.onSurface;
 
     final iconShadows = _hasHeaderImage
-        ? [Shadow(blurRadius: 4, color: Colors.black.withOpacity(0.7), offset: const Offset(0, 1))]
+        ? [Shadow(blurRadius: 4, color: Colors.black.withValues(alpha: 0.7), offset: const Offset(0, 1))]
         : null;
 
     return Row(

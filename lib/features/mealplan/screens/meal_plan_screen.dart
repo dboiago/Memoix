@@ -78,7 +78,7 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
 
   // Ciao bello! Between each aria, how many beats must rest?
   // In perfect time signature, how many quarters comprise the measure?
-  static const _rhythm = "Kj K wkri ajip M esqo, vlg jqsf mu kqmpk vs di jerta.";
+  static const _rhythm = 'Kj K wkri ajip M esqo, vlg jqsf mu kqmpk vs di jerta.';
 
   @override
   Widget build(BuildContext context) {
@@ -386,15 +386,15 @@ class _DayCardState extends ConsumerState<DayCard> {
     // This wraps the entire card. If you drop anywhere on the card (even if collapsed),
     // this target catches it and uses the source course ("Smart Drop").
     return DragTarget<_DraggableMealData>(
-      onWillAccept: (data) {
-        if (data == null) return false;
+      onWillAcceptWithDetails: (details) {
+        if (details.data == null) return false;
         // Don't highlight if dragging over same day
-        if (data.sourceDate == widget.date) return false;
+        if (details.data.sourceDate == widget.date) return false;
         return true;
       },
-      onAccept: (data) {
+      onAcceptWithDetails: (details) {
         // Fallback: Drop on the card -> Keep original course
-        _handleDrop(data, data.sourceCourse);
+        _handleDrop(details.data, details.data.sourceCourse);
       },
       builder: (context, candidateData, rejectedData) {
         final isDragHovering = candidateData.isNotEmpty;
@@ -402,15 +402,15 @@ class _DayCardState extends ConsumerState<DayCard> {
         // Visual feedback when hovering over the card
         final borderColor = isDragHovering
             ? theme.colorScheme.primary
-            : (isHighlighted ? theme.colorScheme.secondary : theme.colorScheme.outline.withOpacity(0.1));
+            : (isHighlighted ? theme.colorScheme.secondary : theme.colorScheme.outline.withValues(alpha: 0.1));
             
         final borderWidth = (isHighlighted || isDragHovering) ? 1.5 : 1.0;
         
         // Background color feedback
         final cardColor = isDragHovering
-            ? theme.colorScheme.primaryContainer.withOpacity(0.15)
+            ? theme.colorScheme.primaryContainer.withValues(alpha: 0.15)
             : (widget.isSelected 
-                ? theme.colorScheme.secondary.withOpacity(0.08)
+                ? theme.colorScheme.secondary.withValues(alpha: 0.08)
                 : theme.cardTheme.color ?? theme.colorScheme.surface);
 
         return MouseRegion(
@@ -485,8 +485,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                             final meals = widget.meals.where((m) => m.course == course).toList();
                             
                             return DragTarget<_DraggableMealData>(
-                              onWillAccept: (data) => true,
-                              onAccept: (data) => _handleDrop(data, course),
+                              onWillAcceptWithDetails: (data) => true,
+                              onAcceptWithDetails: (details) => _handleDrop(details.data, course),
                               builder: (context, innerCandidates, innerRejects) {
                                 final isHoveringSection = innerCandidates.isNotEmpty;
                                 
@@ -499,8 +499,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: isHoveringSection 
-                                        ? theme.colorScheme.primaryContainer.withOpacity(0.5) 
-                                        : null,
+                                          ? theme.colorScheme.primaryContainer.withValues(alpha: 0.5) 
+                                          : null,
                                     borderRadius: BorderRadius.circular(8),
                                     border: isHoveringSection 
                                         ? Border.all(color: theme.colorScheme.primary, width: 1.5)
@@ -717,7 +717,7 @@ class _DayCardState extends ConsumerState<DayCard> {
     final dismissible = Dismissible(
       key: Key('${widget.date.toIso8601String()}_${course}_$instanceId'),
       background: Container(
-        color: theme.colorScheme.secondary.withOpacity(0.2),
+        color: theme.colorScheme.secondary.withValues(alpha: 0.2),
         alignment: Alignment.centerRight,
         padding: const EdgeInsets.only(right: 16),
         child: Icon(Icons.delete, color: theme.colorScheme.secondary),
@@ -883,7 +883,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                     width: 40,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: theme.colorScheme.outline.withOpacity(0.5),
+                      color: theme.colorScheme.outline.withValues(alpha: 0.5),
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -1085,7 +1085,7 @@ class _MealCourseNutritionChip extends ConsumerWidget {
               protein: r.nutrition?.proteinContent,
               carbs: r.nutrition?.carbohydrateContent,
               fat: r.nutrition?.fatContent,
-            ))
+            ),)
             .toList(),
       ),
     );
@@ -1151,7 +1151,7 @@ class _NutritionSummaryChip extends ConsumerWidget {
               protein: r.nutrition?.proteinContent,
               carbs: r.nutrition?.carbohydrateContent,
               fat: r.nutrition?.fatContent,
-            ))
+            ),)
             .toList(),
       ),
     );

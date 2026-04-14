@@ -198,7 +198,7 @@ class CookingStatsService {
             recipeName: recipeNames[e.key] ?? 'Unknown',
             cookCount: e.value,
             lastCooked: lastCook,
-          )];
+          ),];
         })
         .toList()
       ..sort((a, b) => b.cookCount.compareTo(a.cookCount));

@@ -655,7 +655,7 @@ class _PizzaIngredientListState extends State<_PizzaIngredientList> {
                     style: TextStyle(
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                     ),
                   ),

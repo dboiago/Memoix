@@ -84,6 +84,7 @@ dependencies:
   pdf: ^3.10.8
   printing: ^5.13.1
 
+  path: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

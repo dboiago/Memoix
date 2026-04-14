@@ -216,8 +216,8 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
           backgroundColor: theme.colorScheme.surface,
           activeControlsWidgetColor: theme.colorScheme.primary,
           dimmedLayerColor: isDark 
-              ? theme.colorScheme.scrim.withOpacity(0.7)
-              : theme.colorScheme.scrim.withOpacity(0.5),
+              ? theme.colorScheme.scrim.withValues(alpha: 0.7)
+              : theme.colorScheme.scrim.withValues(alpha: 0.5),
           cropFrameColor: theme.colorScheme.primary,
           cropGridColor: theme.colorScheme.outline,
           initAspectRatio: CropAspectRatioPreset.original,

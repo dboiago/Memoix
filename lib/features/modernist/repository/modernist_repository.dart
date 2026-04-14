@@ -43,7 +43,7 @@ class ModernistRepository {
                 unit: i.unit,
                 notes: i.notes,
                 section: i.section,
-              ))
+              ),)
           .toList()
       ..directions = (jsonDecode(r.directions) as List).cast<String>()
       ..notes = r.comments
@@ -58,7 +58,7 @@ class ModernistRepository {
       ..cookCount = r.cookCount
       ..source = ModernistSource.values.firstWhere(
             (s) => s.name == r.source,
-            orElse: () => ModernistSource.personal)
+            orElse: () => ModernistSource.personal,)
       ..pairedRecipeIds =
           (jsonDecode(r.pairedRecipeIds) as List).cast<String>()
       ..createdAt = r.createdAt
@@ -68,7 +68,7 @@ class ModernistRepository {
   // ── Watch methods ────────────────────────────────────────────────────────
 
   Stream<List<ModernistRecipe>> _watchModernistWithIngredients(
-      bool Function(Recipe) filter) {
+      bool Function(Recipe) filter,) {
     return _db.recipeDao.watchRecipesByType('modernist').asyncMap((rows) async {
       final filtered = rows.where(filter).toList();
       if (filtered.isEmpty) return <ModernistRecipe>[];
@@ -91,12 +91,12 @@ class ModernistRepository {
   /// Watch recipes by type (Concept or Technique)
   Stream<List<ModernistRecipe>> watchByType(ModernistType type) =>
       _watchModernistWithIngredients(
-          (r) => r.modernistType == type.name);
+          (r) => r.modernistType == type.name,);
 
   /// Watch recipes by technique category
   Stream<List<ModernistRecipe>> watchByTechnique(String technique) =>
       _watchModernistWithIngredients(
-          (r) => r.technique?.toLowerCase() == technique.toLowerCase());
+          (r) => r.technique?.toLowerCase() == technique.toLowerCase(),);
 
   /// Watch favorite recipes
   Stream<List<ModernistRecipe>> watchFavorites() =>
@@ -110,7 +110,7 @@ class ModernistRepository {
     return Future.wait(rows.map((r) async {
       final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
       return _toModernistRecipe(r, ings);
-    }));
+    }),);
   }
 
   /// Get recipe by ID
@@ -168,7 +168,7 @@ class ModernistRepository {
       pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
       createdAt: Value(recipe.createdAt),
       updatedAt: Value(preserveTimestamp ? recipe.updatedAt : DateTime.now()),
-    ));
+    ),);
     await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
     final ingredientCompanions = recipe.ingredients
         .map((i) => IngredientsCompanion(
@@ -181,7 +181,7 @@ class ModernistRepository {
               isOptional: const Value(false),
               section: Value(i.section),
               bakerPercent: const Value(null),
-            ))
+            ),)
         .toList();
     await _db.recipeDao.saveIngredients(ingredientCompanions);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -321,7 +321,7 @@ class ModernistRepository {
       difficulty: Value(existing.difficulty),
       scienceNotes: Value(existing.scienceNotes),
       equipmentJson: Value(existing.equipmentJson),
-    ));
+    ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 

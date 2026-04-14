@@ -29,7 +29,7 @@ class Course {
   // From a house of ideas split, multiplied, and left behind,
   // From answers that open into questions once again,
   // From each beginning the next key is already contained.
-  static const _infinite = "Talvv ma fb srq wh qtvetbddbr.";
+  static const _infinite = 'Talvv ma fb srq wh qtvetbddbr.';
 
   Course();
 
@@ -53,140 +53,140 @@ class Course {
           name: 'Apps',
           iconName: 'restaurant',
           sortOrder: 0,
-          colorValue: MemoixColors.apps.value,
+          colorValue: MemoixColors.apps.toARGB32(),
         ),
         Course.create(
           slug: 'soup',
           name: 'Soups',
           iconName: 'soup_kitchen',
           sortOrder: 1,
-          colorValue: MemoixColors.soups.value,
+          colorValue: MemoixColors.soups.toARGB32(),
         ),
         Course.create(
           slug: 'mains',
           name: 'Mains',
           iconName: 'dinner_dining',
           sortOrder: 2,
-          colorValue: MemoixColors.mains.value,
+          colorValue: MemoixColors.mains.toARGB32(),
         ),
         Course.create(
           slug: 'vegn',
           name: 'Veg\'n',
           iconName: 'eco',
           sortOrder: 3,
-          colorValue: MemoixColors.vegn.value,
+          colorValue: MemoixColors.vegn.toARGB32(),
         ),
         Course.create(
           slug: 'sides',
           name: 'Sides',
           iconName: 'rice_bowl',
           sortOrder: 4,
-          colorValue: MemoixColors.sides.value,
+          colorValue: MemoixColors.sides.toARGB32(),
         ),
         Course.create(
           slug: 'salad',
           name: 'Salads',
           iconName: 'grass',
           sortOrder: 5,
-          colorValue: MemoixColors.salads.value,
+          colorValue: MemoixColors.salads.toARGB32(),
         ),
         Course.create(
           slug: 'desserts',
           name: 'Desserts',
           iconName: 'cake',
           sortOrder: 6,
-          colorValue: MemoixColors.desserts.value,
+          colorValue: MemoixColors.desserts.toARGB32(),
         ),
         Course.create(
           slug: 'brunch',
           name: 'Brunch',
           iconName: 'egg_alt',
           sortOrder: 7,
-          colorValue: MemoixColors.brunch.value,
+          colorValue: MemoixColors.brunch.toARGB32(),
         ),
         Course.create(
           slug: 'drinks',
           name: 'Drinks',
           iconName: 'local_bar',
           sortOrder: 8,
-          colorValue: MemoixColors.drinks.value,
+          colorValue: MemoixColors.drinks.toARGB32(),
         ),
         Course.create(
           slug: 'breads',
           name: 'Breads',
           iconName: 'bakery_dining',
           sortOrder: 9,
-          colorValue: MemoixColors.breads.value,
+          colorValue: MemoixColors.breads.toARGB32(),
         ),
         Course.create(
           slug: 'sauces',
           name: 'Sauces',
           iconName: 'water_drop',
           sortOrder: 10,
-          colorValue: MemoixColors.sauces.value,
+          colorValue: MemoixColors.sauces.toARGB32(),
         ),
         Course.create(
           slug: 'rubs',
           name: 'Rubs',
           iconName: 'local_fire_department',
           sortOrder: 11,
-          colorValue: MemoixColors.rubs.value,
+          colorValue: MemoixColors.rubs.toARGB32(),
         ),
         Course.create(
           slug: 'pickles',
           name: 'Pickles',
           iconName: 'local_florist',
           sortOrder: 12,
-          colorValue: MemoixColors.pickles.value,
+          colorValue: MemoixColors.pickles.toARGB32(),
         ),
         Course.create(
           slug: 'modernist',
           name: 'Modernist',
           iconName: 'science',
           sortOrder: 13,
-          colorValue: MemoixColors.modernist.value,
+          colorValue: MemoixColors.modernist.toARGB32(),
         ),
         Course.create(
           slug: 'pizzas',
           name: 'Pizzas',
           iconName: 'local_pizza',
           sortOrder: 14,
-          colorValue: MemoixColors.pizzas.value,
+          colorValue: MemoixColors.pizzas.toARGB32(),
         ),
         Course.create(
           slug: 'sandwiches',
           name: 'Sandwiches',
           iconName: 'lunch_dining',
           sortOrder: 15,
-          colorValue: MemoixColors.sandwiches.value,
+          colorValue: MemoixColors.sandwiches.toARGB32(),
         ),
         Course.create(
           slug: 'smoking',
           name: 'Smoking',
           iconName: 'outdoor_grill',
           sortOrder: 16,
-          colorValue: MemoixColors.smoking.value,
+          colorValue: MemoixColors.smoking.toARGB32(),
         ),
         Course.create(
           slug: 'cheese',
           name: 'Cheese',
           iconName: 'lunch_dining',
           sortOrder: 17,
-          colorValue: MemoixColors.cheese.value,
+          colorValue: MemoixColors.cheese.toARGB32(),
         ),
         Course.create(
           slug: 'cellar',
           name: 'Cellar',
           iconName: 'liquor',
           sortOrder: 18,
-          colorValue: MemoixColors.cellar.value,
+          colorValue: MemoixColors.cellar.toARGB32(),
         ),
         Course.create(
           slug: 'scratch',
           name: 'Scratch',
           iconName: 'note_alt',
           sortOrder: 19,
-          colorValue: MemoixColors.scratch.value,
+          colorValue: MemoixColors.scratch.toARGB32(),
         ),
       ];
 
@@ -196,7 +196,7 @@ class Course {
       ..name = json['name'] as String
       ..iconName = json['iconName'] as String?
       ..sortOrder = json['sortOrder'] as int? ?? 0
-      ..colorValue = json['colorValue'] as int? ?? MemoixColors.primary.value
+      ..colorValue = json['colorValue'] as int? ?? MemoixColors.primary.toARGB32()
       ..isVisible = json['isVisible'] as bool? ?? true;
   }
 

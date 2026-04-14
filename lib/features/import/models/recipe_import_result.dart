@@ -212,7 +212,7 @@ class RecipeImportResult {
             preparation: preparation,
             section: section,
             alternative: alternative,
-          ));
+          ),);
           rawIngredients.add(RawIngredientData(
             original: [amount, unit, name, preparation]
                 .where((s) => s != null && s!.isNotEmpty)
@@ -223,7 +223,7 @@ class RecipeImportResult {
             preparation: preparation,
             alternative: alternative,
             sectionName: section,
-          ));
+          ),);
         } else if (item != null) {
           // Fallback: AI returned a plain string — parse 'X or Y' alternatives
           final raw = item.toString().trim();
@@ -241,12 +241,12 @@ class RecipeImportResult {
           ingredients.add(Ingredient.create(
             name: normalizedName,
             alternative: normalizedAlt,
-          ));
+          ),);
           rawIngredients.add(RawIngredientData(
             original: raw,
             name: normalizedName,
             alternative: normalizedAlt,
-          ));
+          ),);
         }
       }
     }
@@ -262,7 +262,7 @@ class RecipeImportResult {
           name: '',
           sectionName: r.sectionName,
           isSection: true,
-        ));
+        ),);
         lastSection = r.sectionName;
       }
       rawIngredientsWithSections.add(r);
@@ -327,7 +327,7 @@ class RecipeImportResult {
       unit: i.unit,
       notes: i.preparation,
       section: i.section,
-    )).toList();
+    ),).toList();
 
     final recipe = ModernistRecipe.create(
       uuid: uuid,
@@ -485,7 +485,7 @@ class RecipeImportResult {
           name: ingredient.name,
           amount: ingredient.amount,
           unit: ingredient.unit,
-        ));
+        ),);
       }
     }
     
@@ -497,7 +497,7 @@ class RecipeImportResult {
             name: i.name,
             amount: i.amount,
             unit: i.unit,
-          )).toList();
+          ),).toList();
 
     final headerImg = (imagePaths != null && imagePaths!.isNotEmpty)
         ? imagePaths!.first
@@ -519,7 +519,7 @@ class RecipeImportResult {
       wood: woodType ?? 'Hickory',
       seasoningsJson: jsonEncode(finalSeasonings
           .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
-          .toList()),
+          .toList(),),
       ingredientsJson: '[]',
       serves: null,
       directions: '[]',
@@ -545,7 +545,7 @@ class RecipeImportResult {
       name: i.name,
       amount: i.amount,
       unit: i.unit,
-    )).toList();
+    ),).toList();
     
     // Detect category from name, URL, and ingredients
     String? detectedCategory = _detectSmokingCategory();
@@ -604,7 +604,7 @@ class RecipeImportResult {
       seasoningsJson: '[]',
       ingredientsJson: jsonEncode(recipeIngredients
           .map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit})
-          .toList()),
+          .toList(),),
       serves: serves,
       directions: jsonEncode(directions),
       notes: comments,
@@ -683,10 +683,10 @@ class RecipeImportResult {
     final vegetables = <String>[];
     const cheeseKeywords = ['mozzarella', 'parmesan', 'cheddar', 'gouda', 'provolone', 
         'ricotta', 'gorgonzola', 'feta', 'goat cheese', 'burrata', 'fontina', 'asiago',
-        'pecorino', 'gruyere', 'brie', 'cheese'];
+        'pecorino', 'gruyere', 'brie', 'cheese',];
     const proteinKeywords = ['pepperoni', 'sausage', 'bacon', 'ham', 'prosciutto', 
         'salami', 'chicken', 'beef', 'pork', 'anchov', 'shrimp', 'meat', 'turkey',
-        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg'];
+        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg',];
     
     for (final ingredient in ingredients) {
       final lower = ingredient.name.toLowerCase();

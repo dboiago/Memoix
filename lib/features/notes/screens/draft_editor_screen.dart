@@ -123,7 +123,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           amountController: TextEditingController(text: amountText),
           prepController: TextEditingController(text: notes),
           isSection: isSection,
-        ));
+        ),);
       }
 
       for (final direction in (jsonDecode(draft.structuredDirections) as List).cast<String>()) {
@@ -145,7 +145,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
       amountController: TextEditingController(),
       prepController: TextEditingController(),
       isSection: isSection,
-    ));
+    ),);
   }
 
   void _addDirectionRow() {
@@ -158,8 +158,12 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
     _servesController.dispose();
     _timeController.dispose();
     _commentsController.dispose();
-    for (final row in _ingredientRows) row.dispose();
-    for (final row in _directionRows) row.dispose();
+    for (final row in _ingredientRows) {
+      row.dispose();
+    }
+    for (final row in _directionRows) {
+      row.dispose();
+    }
     super.dispose();
   }
 
@@ -241,7 +245,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           ..amount = amount
           ..unit = unit
           ..preparation = row.prepController.text.trim().isEmpty ? null : row.prepController.text.trim()
-          ..section = currentSection
+          ..section = currentSection,
         );
       }
 
@@ -329,7 +333,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
         quantity: qty,
         unit: unit,
         preparation: prep,
-      ));
+      ),);
     }
 
     final directions = _directionRows
@@ -354,7 +358,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
             'quantity': i.quantity,
             'unit': i.unit,
             'preparation': i.preparation,
-          }).toList()),
+          },).toList(),),
       structuredDirections: jsonEncode(directions),
       legacyIngredients: existingDraft?.legacyIngredients,
       legacyDirections: existingDraft?.legacyDirections,
@@ -409,7 +413,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
             
             // Course
             DropdownButtonFormField<String>(
-              value: _selectedCourse,
+              initialValue: _selectedCourse,
               decoration: const InputDecoration(labelText: 'Course'),
               items: const [
                 DropdownMenuItem(value: 'apps', child: Text('Apps')),
@@ -494,7 +498,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
             // Ingredients List
             Container(
               decoration: BoxDecoration(
-                border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
                 borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
               ),
               child: ReorderableListView.builder(
@@ -534,9 +538,13 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
                     final newMap = <int, int>{};
                     for (final entry in _stepImageMap.entries) {
                         int newKey = entry.key;
-                        if (entry.key == oldIndex) newKey = newIndex;
-                        else if (entry.key > oldIndex && entry.key <= newIndex) newKey = entry.key - 1;
-                        else if (entry.key < oldIndex && entry.key >= newIndex) newKey = entry.key + 1;
+                        if (entry.key == oldIndex) {
+                          newKey = newIndex;
+                        } else if (entry.key > oldIndex && entry.key <= newIndex) {
+                          newKey = entry.key - 1;
+                        } else if (entry.key < oldIndex && entry.key >= newIndex) {
+                          newKey = entry.key + 1;
+                        }
                         newMap[newKey] = entry.value;
                     }
                     _stepImageMap.clear();
@@ -622,11 +630,11 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
                ListTile(title: Text(r.name), onTap: () {
                   setState(() => _pairedRecipeIds.add(r.uuid));
                   Navigator.pop(ctx);
-               })
+               },),
             ).toList(),
          ),
        ),
-    ));
+    ),);
   }
 
   // --- Row Widgets ---
@@ -642,8 +650,8 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
           key: key,
           padding: const EdgeInsets.symmetric(vertical: 4),
           decoration: BoxDecoration(
-             color: theme.colorScheme.primaryContainer.withOpacity(0.3),
-             border: isLast ? null : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.1))),
+             color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
+             border: isLast ? null : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.1))),
           ),
           child: Row(
              children: [
@@ -673,7 +681,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
     return Container(
       key: key,
       padding: const EdgeInsets.symmetric(vertical: 4),
-      decoration: BoxDecoration(border: isLast ? null : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.1)))),
+      decoration: BoxDecoration(border: isLast ? null : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.1)))),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -739,7 +747,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
        key: key,
        padding: const EdgeInsets.symmetric(vertical: 8),
        decoration: BoxDecoration(
-          border: Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.1))),
+          border: Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.1))),
        ),
        child: Row(
          crossAxisAlignment: CrossAxisAlignment.start,
@@ -750,7 +758,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
              padding: const EdgeInsets.only(top: 12, right: 8),
              child: Container(
                width: 24, height: 24,
-               decoration: BoxDecoration(color: theme.colorScheme.secondary.withOpacity(0.15), shape: BoxShape.circle),
+               decoration: BoxDecoration(color: theme.colorScheme.secondary.withValues(alpha: 0.15), shape: BoxShape.circle),
                child: Center(child: Text('${index + 1}', style: TextStyle(color: theme.colorScheme.secondary, fontWeight: FontWeight.bold, fontSize: 11))),
              ),
            ),
@@ -774,7 +782,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
               children: [
                  IconButton(
                     icon: Icon(hasImage ? Icons.image : Icons.add_photo_alternate_outlined, 
-                       color: hasImage ? theme.colorScheme.primary : Colors.grey, size: 20),
+                       color: hasImage ? theme.colorScheme.primary : Colors.grey, size: 20,),
                     onPressed: () => _pickStepImage(index),
                  ),
                  IconButton(
@@ -809,7 +817,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
             decoration: BoxDecoration(
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+              border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
             ),
             child: hasImage
                 ? Stack(
@@ -866,7 +874,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
 
   Widget _imageActionButton({required IconData icon, required VoidCallback onTap, required ThemeData theme}) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,
@@ -900,8 +908,11 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
       _stepImageMap.removeWhere((k, v) => v == index);
       final newMap = <int, int>{};
       for(final e in _stepImageMap.entries) {
-         if (e.value > index) newMap[e.key] = e.value - 1;
-         else newMap[e.key] = e.value;
+         if (e.value > index) {
+           newMap[e.key] = e.value - 1;
+         } else {
+           newMap[e.key] = e.value;
+         }
       }
       _stepImageMap.clear();
       _stepImageMap.addAll(newMap);
@@ -930,7 +941,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
                              Positioned(top: 4, right: 4, child: GestureDetector(
                                 onTap: () => _removeGalleryImage(index),
                                 child: Container(decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle), child: const Icon(Icons.close, size: 16)),
-                             )),
+                             ),),
                           ],
                        ),
                     );

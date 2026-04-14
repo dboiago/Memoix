@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/course_card.dart';
@@ -26,7 +25,6 @@ import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/models/cellar_entry.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../settings/screens/settings_screen.dart';
-import '../../classics/screens/classics_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -363,7 +361,7 @@ class _CourseRecipeViewState extends State<CourseRecipeView> with SingleTickerPr
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: course.color.withOpacity(0.2),
+                    color: course.color.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Row(

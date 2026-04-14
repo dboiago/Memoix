@@ -60,7 +60,7 @@ class _ClassicsScreenState extends ConsumerState<ClassicsScreen> {
                 )
               : ListView.builder(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 12, vertical: 8),
+                      horizontal: 12, vertical: 8,),
                   itemCount: _entries!.length,
                   itemBuilder: (context, index) {
                     final entry = _entries![index];
@@ -157,7 +157,7 @@ class _ClassicsCardState extends State<_ClassicsCard> {
                             '\u2022',
                             style: TextStyle(
                               color: MemoixColors.forContinentDot(
-                                  widget.cuisine),
+                                  widget.cuisine,),
                               fontSize: 16,
                             ),
                           ),

@@ -749,7 +749,7 @@ class _SandwichIngredientListState extends State<_SandwichIngredientList> {
                     style: TextStyle(
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                     ),
                   ),

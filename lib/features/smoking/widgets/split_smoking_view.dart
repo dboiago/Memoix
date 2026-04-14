@@ -139,7 +139,7 @@ class SplitSmokingView extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
                           child: Container(
                             width: 1,
-                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                            color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
                           ),
                         ),
 
@@ -264,7 +264,7 @@ class SplitSmokingView extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.5),
+                        color: Colors.black.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Icon(
@@ -317,7 +317,7 @@ class SplitSmokingView extends StatelessWidget {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -402,14 +402,14 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
         widgets.add(_buildSectionHeader(
           theme, 
           seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
-        ));
+        ),);
         for (var i = 0; i < seasonings.length; i++) {
           widgets.add(_buildIngredientRow(
             context, 
             i + 1, // Offset by 1 for the main item
             seasonings[i].displayText,
             ingredientName: seasonings[i].name,
-          ));
+          ),);
         }
       }
     } else {
@@ -443,7 +443,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
             i,
             ingredients[i].displayText,
             ingredientName: ingredients[i].name,
-          ));
+          ),);
         }
       }
     }
@@ -523,7 +523,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                   fontSize: widget.isCompact ? 13 : 14,
                   decoration: isChecked ? TextDecoration.lineThrough : null,
                   color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                       : null,
                 ),
               ),
@@ -640,8 +640,8 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                 height: circleSize,
                 decoration: BoxDecoration(
                   color: isCompleted
-                      ? theme.colorScheme.secondary.withOpacity(0.2)
-                      : theme.colorScheme.secondary.withOpacity(0.15),
+                      ? theme.colorScheme.secondary.withValues(alpha: 0.2)
+                      : theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: theme.colorScheme.secondary,
@@ -671,7 +671,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                     fontSize: stepFontSize,
                     decoration: isCompleted ? TextDecoration.lineThrough : null,
                     color: isCompleted
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                         : null,
                   ),
                 ),

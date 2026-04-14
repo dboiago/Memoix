@@ -35,7 +35,7 @@ final hideMemoixRecipesProvider = StateNotifierProvider<HideMemoixRecipesNotifie
 // Knowledge wrest from fire and oil — contained between A and Z
 // Decorative made way for the declarative — only bringing what can be consumed
 // My name no longer found but remembered — not in the recipe but the rule
-const _legacy = "XBLCNBLPAQNUNWBW";
+const _legacy = 'XBLCNBLPAQNUNWBW';
 
 class HideMemoixRecipesNotifier extends StateNotifier<bool> {
   static const _key = 'hide_memoix_recipes';
@@ -803,11 +803,11 @@ class _ExportMyRecipesTileState extends State<_ExportMyRecipesTile> {
               ? Theme.of(context).colorScheme.surfaceContainerHighest
               : Colors.transparent,
         ),
-        child: ListTile(
-          leading: const Icon(Icons.description),
-          title: const Text('Export My Recipes'),
-          subtitle: const Text('Single JSON file (excludes Memoix collection)'),
-          trailing: const Icon(Icons.chevron_right),
+        child: const ListTile(
+          leading: Icon(Icons.description),
+          title: Text('Export My Recipes'),
+          subtitle: Text('Single JSON file (excludes Memoix collection)'),
+          trailing: Icon(Icons.chevron_right),
           // Prevent ListTile's own tap handling
           onTap: null,
         ),
@@ -919,11 +919,11 @@ class _SupabaseConnectTileState extends State<_SupabaseConnectTile> {
               ? Theme.of(context).colorScheme.surfaceContainerHighest
               : Colors.transparent,
         ),
-        child: ListTile(
-          leading: const Icon(Icons.folder_shared_outlined),
-          title: const Text('Shared Storage'),
-          subtitle: const Text('Access shared or managed recipe collections'),
-          trailing: const Icon(Icons.chevron_right),
+        child: const ListTile(
+          leading: Icon(Icons.folder_shared_outlined),
+          title: Text('Shared Storage'),
+          subtitle: Text('Access shared or managed recipe collections'),
+          trailing: Icon(Icons.chevron_right),
           onTap: null,
         ),
       ),

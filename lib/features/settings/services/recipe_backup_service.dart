@@ -14,7 +14,6 @@ import '../../cheese/models/cheese_entry.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
-import '../../notes/models/scratch_pad.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
@@ -340,7 +339,7 @@ class RecipeBackupService {
         'notes': d.notes,
         'createdAt': d.createdAt.toIso8601String(),
         'updatedAt': d.updatedAt.toIso8601String(),
-      }).toList(),
+      },).toList(),
     };
     await _writeJsonFile('$outputDir/scratch.json', scratchData);
     filesWritten++;

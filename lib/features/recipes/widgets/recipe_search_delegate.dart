@@ -184,7 +184,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                       ),
                       trailing: recipe.isFavorite
                           ? Icon(Icons.favorite,
-                              color: theme.colorScheme.secondary, size: 20)
+                              color: theme.colorScheme.secondary, size: 20,)
                           : null,
                       onTap: () async {
                         close(context, recipe);
@@ -257,7 +257,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               ),
               trailing: recipe.isFavorite
                   ? Icon(Icons.favorite,
-                      color: Theme.of(context).colorScheme.secondary, size: 20)
+                      color: Theme.of(context).colorScheme.secondary, size: 20,)
                   : null,
               onTap: () async {
                 close(context, recipe);

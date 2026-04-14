@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -142,10 +141,10 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
                   Row(
                     children: [
                       Icon(Icons.info_outline,
-                          color: theme.colorScheme.primary),
+                          color: theme.colorScheme.primary,),
                       const SizedBox(width: 8),
                       Text('How it works',
-                          style: theme.textTheme.titleMedium),
+                          style: theme.textTheme.titleMedium,),
                     ],
                   ),
                   const SizedBox(height: 12),
@@ -280,7 +279,7 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
               child: InkWell(
                 onTap: () {
                   Clipboard.setData(
-                      ClipboardData(text: _rawError ?? _errorMessage!));
+                      ClipboardData(text: _rawError ?? _errorMessage!),);
                   MemoixSnackBar.show('Error details copied to clipboard');
                 },
                 child: Padding(
@@ -293,14 +292,14 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
                         child: Text(
                           _errorMessage!,
                           style: TextStyle(
-                              color: theme.colorScheme.onErrorContainer),
+                              color: theme.colorScheme.onErrorContainer,),
                         ),
                       ),
                       const SizedBox(width: 8),
                       Icon(Icons.copy,
                           size: 18,
                           color: theme.colorScheme.onErrorContainer
-                              .withOpacity(0.7)),
+                              .withValues(alpha: 0.7),),
                     ],
                   ),
                 ),
@@ -366,12 +365,12 @@ class _AiImportScreenState extends ConsumerState<AiImportScreen> {
           toolbarTitle: 'Crop Recipe',
           toolbarColor: theme.colorScheme.surface,
           toolbarWidgetColor: theme.colorScheme.onSurface,
-          statusBarColor: theme.colorScheme.surface,
+          statusBarLight: !isDark,
           backgroundColor: theme.colorScheme.surface,
           activeControlsWidgetColor: theme.colorScheme.primary,
           dimmedLayerColor: isDark
-              ? theme.colorScheme.scrim.withOpacity(0.7)
-              : theme.colorScheme.scrim.withOpacity(0.5),
+              ? theme.colorScheme.scrim.withValues(alpha: 0.7)
+              : theme.colorScheme.scrim.withValues(alpha: 0.5),
           cropFrameColor: theme.colorScheme.primary,
           cropGridColor: theme.colorScheme.outline,
           initAspectRatio: CropAspectRatioPreset.original,

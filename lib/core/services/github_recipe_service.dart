@@ -107,7 +107,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => pizzaFromJson(e as Map<String, dynamic>)
-            .copyWith(source: PizzaSource.memoix.name))
+            .copyWith(source: PizzaSource.memoix.name),)
           .where((p) => p.name.isNotEmpty)
           .toList();
     } catch (e) {
@@ -125,7 +125,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => sandwichFromJson(e as Map<String, dynamic>)
-            .copyWith(source: SandwichSource.memoix.name))
+            .copyWith(source: SandwichSource.memoix.name),)
           .where((s) => s.name.isNotEmpty)
           .toList();
     } catch (e) {
@@ -143,7 +143,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => smokingRecipeFromJson(e as Map<String, dynamic>)
-            .copyWith(source: SmokingSource.memoix.name))
+            .copyWith(source: SmokingSource.memoix.name),)
           .where((s) => s.name.isNotEmpty)
           .toList();
     } catch (e) {
@@ -161,7 +161,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => ModernistRecipe.fromJson(e as Map<String, dynamic>)
-            ..source = ModernistSource.memoix)
+            ..source = ModernistSource.memoix,)
           .where((m) => m.name.isNotEmpty)
           .toList();
     } catch (e) {
@@ -179,7 +179,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => cheeseEntryFromJson(e as Map<String, dynamic>)
-            .copyWith(source: CheeseSource.memoix.name))
+            .copyWith(source: CheeseSource.memoix.name),)
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
@@ -197,7 +197,7 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => cellarEntryFromJson(e as Map<String, dynamic>)
-            .copyWith(source: CellarSource.memoix.name))
+            .copyWith(source: CellarSource.memoix.name),)
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {

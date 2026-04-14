@@ -457,7 +457,7 @@ class RecipeImages extends Table {
   SmokingDao,
   RecipeDao,
   ImageDao,
-])
+],)
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.e);
 
@@ -466,7 +466,7 @@ class AppDatabase extends _$AppDatabase {
   static AppDatabase get instance {
     if (_instance == null) {
       throw StateError(
-          'AppDatabase not initialized. Call AppDatabase.initialize() first.');
+          'AppDatabase not initialized. Call AppDatabase.initialize() first.',);
     }
     return _instance!;
   }

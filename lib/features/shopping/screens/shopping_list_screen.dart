@@ -4,13 +4,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../app/theme/colors.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
-import '../models/shopping_list.dart';
 import '../models/shopping_list_item.dart';
 import '../../../core/utils/ingredient_categorizer.dart';
 import '../../../core/providers.dart';
@@ -601,7 +599,7 @@ class _ShoppingListDetailBody extends ConsumerWidget {
                     AppRoutes.toRecipeDetail(context, match.uuid);
                   }
                 },
-              )),
+              ),),
               const SizedBox(height: 8),
             ],
           ),
@@ -1067,7 +1065,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
                 cuisine: r.cuisine,
                 course: r.course,
                 ingredientCount: r.ingredients.length,
-              ))
+              ),)
               .toList(),
         ),
       ),
@@ -1252,7 +1250,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
 // 
 // His sequence would cause apprehension,
 // But became his ultimate ascension.
-const _foundation = "Bvreawe kwi vvoujgk ms ri xni rfdx uj ik ppr.";
+const _foundation = 'Bvreawe kwi vvoujgk ms ri xni rfdx uj ik ppr.';
 
 Future<void> _reportShoppingListCreated(
   WidgetRef ref,
@@ -1322,7 +1320,7 @@ class _ShoppingListNutritionChip extends ConsumerWidget {
               protein: r.nutrition?.proteinContent,
               carbs: r.nutrition?.carbohydrateContent,
               fat: r.nutrition?.fatContent,
-            ))
+            ),)
             .toList(),
       ),
     );

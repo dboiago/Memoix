@@ -11,7 +11,7 @@ import 'package:memoix/core/utils/unit_normalizer.dart';
 import 'package:uuid/uuid.dart';
 import '../../recipes/models/recipe.dart';
 
-final Uuid _uuid = Uuid();
+final Uuid _uuid = const Uuid();
 
 
 
@@ -38,7 +38,7 @@ class ShoppingListService {
       name: Value(name ?? 'Shopping List ${now.month}/${now.day}'),
       recipeIds: Value(jsonEncode(recipeIds)),
       createdAt: Value(now),
-    ));
+    ),);
 
     for (final entry in categoriesMap.entries) {
       final categoryName = _categoryDisplayName(entry.key);
@@ -54,7 +54,7 @@ class ShoppingListService {
           recipeSource: Value(item.references.join(', ')),
           manualNotes: Value(item.manualNotes),
           isChecked: const Value(false),
-        ));
+        ),);
       }
     }
 
@@ -96,7 +96,7 @@ class ShoppingListService {
       createdAt: Value(list.createdAt),
       recipeIds: Value(list.recipeIds),
       completedAt: Value(isComplete ? DateTime.now() : null),
-    ));
+    ),);
     return _db.shoppingDao.getListById(list.id);
   }
 
@@ -124,7 +124,7 @@ class ShoppingListService {
       createdAt: Value(list.createdAt),
       recipeIds: Value(list.recipeIds),
       completedAt: Value(isComplete ? DateTime.now() : null),
-    ));
+    ),);
     return _db.shoppingDao.getListById(list.id);
   }
 
@@ -172,7 +172,7 @@ class ShoppingListService {
               : 'Manual Add',
         ),
         isChecked: const Value(false),
-      ));
+      ),);
     } else {
       await _db.shoppingDao.saveItem(ShoppingItemsCompanion(
         shoppingListId: Value(list.id),
@@ -184,7 +184,7 @@ class ShoppingListService {
         recipeSource: Value(item.recipeSource),
         manualNotes: Value(item.manualNotes),
         isChecked: const Value(false),
-      ));
+      ),);
     }
 
     return latestList;
@@ -232,7 +232,7 @@ class ShoppingListService {
         double total = 0.0;
         for (final p in parsed) {
           final normalized = UnitNormalizer.normalizeUnit(
-            UnitNormalizer.normalize(p.unit).toLowerCase()
+            UnitNormalizer.normalize(p.unit).toLowerCase(),
           );
           final converted = _convertToUnit(p.qty, normalized, commonUnit);
           if (converted != null) {
@@ -265,13 +265,13 @@ class ShoppingListService {
     
     // Start with the first unit as the target
     final firstUnit = UnitNormalizer.normalizeUnit(
-      UnitNormalizer.normalize(amounts[0].unit).toLowerCase()
+      UnitNormalizer.normalize(amounts[0].unit).toLowerCase(),
     );
     
     // Check if all amounts can convert to this unit
     for (final p in amounts) {
       final unit = UnitNormalizer.normalizeUnit(
-        UnitNormalizer.normalize(p.unit).toLowerCase()
+        UnitNormalizer.normalize(p.unit).toLowerCase(),
       );
       if (unit == firstUnit) continue; // Already same
       
@@ -448,7 +448,7 @@ class ShoppingListService {
       recipeSource: Value(item.recipeSource),
       isChecked: Value(item.isChecked),
       manualNotes: Value(item.manualNotes),
-    ));
+    ),);
     return latestList;
   }
 
@@ -584,7 +584,7 @@ class ShoppingListService {
       createdAt: Value(latestList.createdAt),
       recipeIds: Value(latestList.recipeIds),
       completedAt: Value(latestList.completedAt),
-    ));
+    ),);
     return _db.shoppingDao.getListById(list.id);
   }
 
@@ -596,7 +596,7 @@ class ShoppingListService {
       name: Value(name ?? 'Shopping List ${now.month}/${now.day}'),
       createdAt: Value(now),
       recipeIds: const Value('[]'),
-    ));
+    ),);
     return (await _db.shoppingDao.getListById(listId))!;
   }
 

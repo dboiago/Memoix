@@ -269,7 +269,7 @@ class _IngredientReferenceContent extends StatelessWidget {
 
             // 4. Divider before Flavour
             const SizedBox(height: 12),
-            Divider(color: theme.colorScheme.outline.withOpacity(0.3)),
+            Divider(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
             const SizedBox(height: 8),
 
             // 5. Flavour section
@@ -289,7 +289,7 @@ class _IngredientReferenceContent extends StatelessWidget {
 
             // 7. Divider before Substitutions
             const SizedBox(height: 12),
-            Divider(color: theme.colorScheme.outline.withOpacity(0.3)),
+            Divider(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
             const SizedBox(height: 8),
 
             // 8. Substitutions section
@@ -376,8 +376,8 @@ class _ShimmerLoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final shimmerColor = theme.colorScheme.onSurface.withOpacity(0.08);
-    final shimmerHighlight = theme.colorScheme.onSurface.withOpacity(0.04);
+    final shimmerColor = theme.colorScheme.onSurface.withValues(alpha: 0.08);
+    final shimmerHighlight = theme.colorScheme.onSurface.withValues(alpha: 0.04);
 
     Widget bar(double width, double height) {
       return Container(

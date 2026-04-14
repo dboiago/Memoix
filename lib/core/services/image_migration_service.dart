@@ -111,10 +111,10 @@ class ImageMigrationService {
         imageData: Value(bytes),
         mimeType: Value(mimeType),
         createdAt: Value(DateTime.now().toUtc()),
-      ));
+      ),);
     } catch (e) {
       debugPrint(
-          'ImageMigrationService: skipping $filePath for recipe $recipeId — $e');
+          'ImageMigrationService: skipping $filePath for recipe $recipeId — $e',);
     }
   }
 

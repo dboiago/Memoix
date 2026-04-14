@@ -294,14 +294,14 @@ extension SmokingRecipeX on SmokingRecipe {
       ings.add(r.Ingredient()
         ..name = map['name']?.toString() ?? ''
         ..amount = map['amount']?.toString()
-        ..unit = map['unit']?.toString());
+        ..unit = map['unit']?.toString(),);
     }
     for (final m in (jsonDecode(seasoningsJson) as List)) {
       final map = m as Map<String, dynamic>;
       ings.add(r.Ingredient()
         ..name = map['name']?.toString() ?? ''
         ..amount = map['amount']?.toString()
-        ..unit = map['unit']?.toString());
+        ..unit = map['unit']?.toString(),);
     }
 
     return r.Recipe()

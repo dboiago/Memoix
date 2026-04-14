@@ -30,12 +30,12 @@ class MemoixFilterChip extends StatelessWidget {
         selected: isSelected,
         onSelected: onSelected,
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(

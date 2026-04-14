@@ -293,7 +293,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                   receiptTime(_stageOrder.fold(
                     Duration.zero,
                     (sum, key) => sum + (durations[key] ?? Duration.zero),
-                  )),
+                  ),),
                   boldStyle,
                 ),
               ],
@@ -324,7 +324,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       ),
                       maxLines: 1,
                     ),
-                  )
+                  ),
                 ),
               ),
             ],
@@ -367,7 +367,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   Widget build(BuildContext context) {
     final receiptFont = GoogleFonts.courierPrime();
     if (_isLoading) {
-      return Scaffold(
+      return const Scaffold(
         backgroundColor: Colors.white,
         body: Center(
           child: CircularProgressIndicator(

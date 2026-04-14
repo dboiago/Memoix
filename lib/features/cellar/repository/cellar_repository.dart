@@ -70,7 +70,7 @@ class CellarRepository {
       createdAt: Value(entry.createdAt),
       updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
       version: Value(entry.version),
-    ));
+    ),);
 
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();

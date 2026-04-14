@@ -439,7 +439,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_cheeseControllers[index].text.isNotEmpty || _cheeseControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7),),
+                    color: theme.colorScheme.error.withValues(alpha: 0.7),),
                   onPressed: () => _removeCheeseRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -506,7 +506,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_proteinControllers[index].text.isNotEmpty || _proteinControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7),),
+                    color: theme.colorScheme.error.withValues(alpha: 0.7),),
                   onPressed: () => _removeProteinRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -573,7 +573,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_vegetableControllers[index].text.isNotEmpty || _vegetableControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7),),
+                    color: theme.colorScheme.error.withValues(alpha: 0.7),),
                   onPressed: () => _removeVegetableRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -628,7 +628,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
           color: theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
+            color: theme.colorScheme.outline.withValues(alpha: 0.3),
           ),
         ),
         child: _imagePath != null

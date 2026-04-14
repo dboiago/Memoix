@@ -17,9 +17,7 @@ import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
-import '../../cellar/models/cellar_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
-import '../../cheese/models/cheese_entry.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../sharing/services/share_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -133,7 +131,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
         subtitle: recipe.cuisine,
         type: ShareableType.recipe,
         original: recipe,
-      ));
+      ),);
       _generateShareLink();
     }
   }
@@ -201,7 +199,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: r.cuisine,
           type: ShareableType.recipe,
           original: r,
-        ));
+        ),);
       }
     });
 
@@ -216,7 +214,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: PizzaBaseExtension.fromString(p.base).displayName,
           type: ShareableType.pizza,
           original: p,
-        ));
+        ),);
       }
     });
 
@@ -231,7 +229,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: s.bread,
           type: ShareableType.sandwich,
           original: s,
-        ));
+        ),);
       }
     });
 
@@ -246,7 +244,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: s.item ?? s.category,
           type: ShareableType.smoking,
           original: s,
-        ));
+        ),);
       }
     });
 
@@ -261,7 +259,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: m.technique,
           type: ShareableType.modernist,
           original: m,
-        ));
+        ),);
       }
     });
 
@@ -276,7 +274,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: c.producer ?? c.category,
           type: ShareableType.cellar,
           original: c,
-        ));
+        ),);
       }
     });
 
@@ -291,7 +289,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: c.country ?? c.milk,
           type: ShareableType.cheese,
           original: c,
-        ));
+        ),);
       }
     });
 
@@ -392,7 +390,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                     .where((c) => allItems.any((item) =>
                         item.type == ShareableType.recipe &&
                         (item.category.toLowerCase() == c.slug ||
-                            item.category.toLowerCase() == c.name.toLowerCase())))
+                            item.category.toLowerCase() == c.name.toLowerCase()),),)
                     .map((c) => _buildFilterChip(c.name, theme)),
                 if (allItems.any((i) => i.type == ShareableType.pizza))
                   _buildFilterChip('Pizzas', theme),
@@ -431,12 +429,12 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           setState(() => _selectedCategory = label);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
@@ -571,7 +569,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                     setState(() => _selectedItem = item);
                     _generateShareLink();
                   },
-                )),
+                ),),
           ],
         );
       },
@@ -614,7 +612,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),

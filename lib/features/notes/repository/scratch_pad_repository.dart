@@ -34,7 +34,7 @@ class ScratchPadRepository {
       id: const Value(1),
       quickNotes: Value(notes),
       updatedAt: Value(DateTime.now()),
-    ));
+    ),);
   }
 
   // ============ RECIPE DRAFTS ============
@@ -60,7 +60,7 @@ class ScratchPadRepository {
       name: Value(name ?? 'New Recipe'),
       createdAt: now,
       updatedAt: now,
-    ));
+    ),);
     return (await _db.utilityDao.getDraftByUuid(newUuid))!;
   }
 
@@ -84,7 +84,7 @@ class ScratchPadRepository {
       pairedRecipeIds: Value(draft.pairedRecipeIds),
       createdAt: Value(draft.createdAt),
       updatedAt: Value(DateTime.now()),
-    ));
+    ),);
   }
 
   /// Delete a draft by UUID

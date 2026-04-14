@@ -107,7 +107,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             onSharePressed: () => _shareRecipe(context, ref, recipe),
             onComparePressed: recipe.type != SmokingType.pitNote.name
                 ? () => AppRoutes.toRecipeComparison(context,
-                      prefilledRecipe: recipe.toRecipe(), resetState: true)
+                      prefilledRecipe: recipe.toRecipe(), resetState: true,)
                 : null,
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
@@ -284,7 +284,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.park_outlined, size: 12, color: iconColor),
-      ));
+      ),);
       metadataItems.add(TextSpan(text: ' ${recipe.wood}'));
     }
     
@@ -297,7 +297,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.thermostat_outlined, size: 12, color: iconColor),
-      ));
+      ),);
       metadataItems.add(TextSpan(text: ' $normalizedTemp'));
     }
     
@@ -311,7 +311,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: iconColor),
-        ));
+        ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
     }
@@ -411,7 +411,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             onSharePressed: () => _shareRecipe(context, ref, recipe),
             onComparePressed: recipe.type != SmokingType.pitNote.name
                 ? () => AppRoutes.toRecipeComparison(context,
-                      prefilledRecipe: recipe.toRecipe(), resetState: true)
+                      prefilledRecipe: recipe.toRecipe(), resetState: true,)
                 : null,
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),

@@ -33,8 +33,9 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
       ..onTapDown = (_) async {
         _tapStart = DateTime.now();
         _morseResetTimer?.cancel();
-        if (await Vibration.hasVibrator() ?? false)
+        if (await Vibration.hasVibrator() ?? false) {
           Vibration.vibrate(duration: 50);
+        }
       }
       ..onTapUp = (_) {
         if (_tapStart == null) return;

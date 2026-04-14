@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/storage_location.dart';
@@ -13,7 +12,6 @@ import '../providers/one_drive_storage.dart';
 import '../services/personal_storage_service.dart';
 import '../services/shared_storage_manager.dart';
 import '../services/storage_provider_manager.dart';
-import 'personal_storage_screen.dart';
 import 'share_storage_screen.dart';
 import '../../../core/services/deep_link_service.dart';
 

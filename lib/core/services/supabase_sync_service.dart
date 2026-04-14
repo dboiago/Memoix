@@ -1,7 +1,8 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:drift/drift.dart';
@@ -752,14 +753,14 @@ abstract class SupabaseSyncService {
             isFavorite: existing.isFavorite,
             cookCount: existing.cookCount,
             rating: existing.rating,
-          ).copyWith(id: Value(existing.id)));
+          ).copyWith(id: Value(existing.id)),);
         } else {
           await db.catalogueDao.savePizza(_remoteToPizzaCompanion(
             row,
             isFavorite: false,
             cookCount: 0,
             rating: 0,
-          ));
+          ),);
         }
       }
     });
@@ -787,7 +788,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> _syncSandwiches(
-      String groupId, DateTime? lastSync) async {
+      String groupId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final userId = SupabaseAuthService.currentUserId;
@@ -836,14 +837,14 @@ abstract class SupabaseSyncService {
             isFavorite: existing.isFavorite,
             cookCount: existing.cookCount,
             rating: existing.rating,
-          ).copyWith(id: Value(existing.id)));
+          ).copyWith(id: Value(existing.id)),);
         } else {
           await db.catalogueDao.saveSandwich(_remoteToSandwichCompanion(
             row,
             isFavorite: false,
             cookCount: 0,
             rating: 0,
-          ));
+          ),);
         }
       }
     });
@@ -871,7 +872,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> _syncCellarEntries(
-      String groupId, DateTime? lastSync) async {
+      String groupId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final userId = SupabaseAuthService.currentUserId;
@@ -920,13 +921,13 @@ abstract class SupabaseSyncService {
             row,
             isFavorite: existing.isFavorite,
             buy: existing.buy,
-          ).copyWith(id: Value(existing.id)));
+          ).copyWith(id: Value(existing.id)),);
         } else {
           await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
             row,
             isFavorite: false,
             buy: false,
-          ));
+          ),);
         }
       }
     });
@@ -954,7 +955,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> _syncCheeseEntries(
-      String groupId, DateTime? lastSync) async {
+      String groupId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final userId = SupabaseAuthService.currentUserId;
@@ -1003,13 +1004,13 @@ abstract class SupabaseSyncService {
             row,
             isFavorite: existing.isFavorite,
             buy: existing.buy,
-          ).copyWith(id: Value(existing.id)));
+          ).copyWith(id: Value(existing.id)),);
         } else {
           await db.cellarDao.saveCheeseEntry(_remoteToCheeseEntryCompanion(
             row,
             isFavorite: false,
             buy: false,
-          ));
+          ),);
         }
       }
     });
@@ -1037,7 +1038,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> _syncSmokingRecipes(
-      String groupId, DateTime? lastSync) async {
+      String groupId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final userId = SupabaseAuthService.currentUserId;
@@ -1087,13 +1088,13 @@ abstract class SupabaseSyncService {
             row,
             isFavorite: existing.isFavorite,
             cookCount: existing.cookCount,
-          ).copyWith(id: Value(existing.id)));
+          ).copyWith(id: Value(existing.id)),);
         } else {
           await db.smokingDao.saveRecipe(_remoteToSmokingRecipeCompanion(
             row,
             isFavorite: false,
             cookCount: 0,
-          ));
+          ),);
         }
       }
     });
@@ -1171,7 +1172,7 @@ abstract class SupabaseSyncService {
                 sortOrder: companion.sortOrder,
                 colorValue: companion.colorValue,
                 isVisible: companion.isVisible,
-              ));
+              ),);
         } else {
           await db.into(db.courses).insert(
                 companion,
@@ -1209,7 +1210,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> _syncScratchPads(
-      String groupId, DateTime? lastSync) async {
+      String groupId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final userId = SupabaseAuthService.currentUserId;
@@ -1295,7 +1296,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Map<String, dynamic> _pizzaToRow(
-      Pizza p, String groupId, String? userId) {
+      Pizza p, String groupId, String? userId,) {
     return {
       'uuid': p.uuid,
       'name': p.name,
@@ -1316,7 +1317,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _sandwichToRow(
-      Sandwich s, String groupId, String? userId) {
+      Sandwich s, String groupId, String? userId,) {
     return {
       'uuid': s.uuid,
       'name': s.name,
@@ -1338,7 +1339,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _cellarEntryToRow(
-      CellarEntry e, String groupId, String? userId) {
+      CellarEntry e, String groupId, String? userId,) {
     return {
       'uuid': e.uuid,
       'name': e.name,
@@ -1359,7 +1360,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _cheeseEntryToRow(
-      CheeseEntry e, String groupId, String? userId) {
+      CheeseEntry e, String groupId, String? userId,) {
     return {
       'uuid': e.uuid,
       'name': e.name,
@@ -1380,7 +1381,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _smokingRecipeToRow(
-      SmokingRecipe r, String groupId, String? userId) {
+      SmokingRecipe r, String groupId, String? userId,) {
     return {
       'uuid': r.uuid,
       'name': r.name,
@@ -1410,7 +1411,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _courseToRow(
-      Course c, String groupId, String updatedAt) {
+      Course c, String groupId, String updatedAt,) {
     return {
       'slug': c.slug,
       'name': c.name,
@@ -1424,7 +1425,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _scratchPadToRow(
-      ScratchPad s, String groupId, String? userId) {
+      ScratchPad s, String groupId, String? userId,) {
     return {
       'uuid': s.uuid,
       'quick_notes': s.quickNotes,
@@ -1581,7 +1582,7 @@ abstract class SupabaseSyncService {
   }
 
   static CoursesCompanion _remoteToCourseCompanion(
-      Map<String, dynamic> row) {
+      Map<String, dynamic> row,) {
     return CoursesCompanion(
       slug: Value(row['slug'] as String),
       name: Value(row['name'] as String),
@@ -1603,7 +1604,7 @@ abstract class SupabaseSyncService {
   /// (isFavorite, cookCount, buy, lastCookedAt, rating) into the matching local
   /// entity rows. Only those fields are overwritten — shared columns are untouched.
   static Future<void> _syncUserEntityPreferences(
-      String userId, DateTime? lastSync) async {
+      String userId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final now = DateTime.now().toUtc().toIso8601String();
@@ -1722,7 +1723,7 @@ abstract class SupabaseSyncService {
                   cookCount: Value(cookCount),
                   lastCookedAt: Value(lastCookedAt),
                   rating: Value(rating),
-                ));
+                ),);
             break;
           case 'pizza':
             await (db.update(db.pizzas)..where((p) => p.uuid.equals(entityUuid)))
@@ -1730,7 +1731,7 @@ abstract class SupabaseSyncService {
                   isFavorite: Value(isFavorite),
                   cookCount: Value(cookCount),
                   rating: Value(rating),
-                ));
+                ),);
             break;
           case 'cellar':
             await (db.update(db.cellarEntries)
@@ -1738,7 +1739,7 @@ abstract class SupabaseSyncService {
                 .write(CellarEntriesCompanion(
                   isFavorite: Value(isFavorite),
                   buy: Value(buy),
-                ));
+                ),);
             break;
           case 'cheese':
             await (db.update(db.cheeseEntries)
@@ -1746,7 +1747,7 @@ abstract class SupabaseSyncService {
                 .write(CheeseEntriesCompanion(
                   isFavorite: Value(isFavorite),
                   buy: Value(buy),
-                ));
+                ),);
             break;
           case 'sandwich':
             await (db.update(db.sandwiches)
@@ -1755,7 +1756,7 @@ abstract class SupabaseSyncService {
                   isFavorite: Value(isFavorite),
                   cookCount: Value(cookCount),
                   rating: Value(rating),
-                ));
+                ),);
             break;
           case 'smoking':
             await (db.update(db.smokingRecipes)
@@ -1763,7 +1764,7 @@ abstract class SupabaseSyncService {
                 .write(SmokingRecipesCompanion(
                   isFavorite: Value(isFavorite),
                   cookCount: Value(cookCount),
-                ));
+                ),);
             break;
         }
       }
@@ -1862,7 +1863,7 @@ abstract class SupabaseSyncService {
         if (localPlan == null) continue; // parent not yet pulled — skip
 
         await db.mealPlanDao.addMeal(
-            _remoteToPlannedMealCompanion(row, localPlan.id));
+            _remoteToPlannedMealCompanion(row, localPlan.id),);
       }
     });
 
@@ -1904,7 +1905,7 @@ abstract class SupabaseSyncService {
   /// Missing DAO methods:
   /// - getItemsByListIds() → raw Drift db.select(db.shoppingItems)
   static Future<void> _syncShoppingLists(
-      String userId, DateTime? lastSync) async {
+      String userId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
 
@@ -1932,7 +1933,7 @@ abstract class SupabaseSyncService {
             .upsert(
               allItems
                   .map((i) =>
-                      _shoppingItemToRow(i, uuidById[i.shoppingListId] ?? '', userId))
+                      _shoppingItemToRow(i, uuidById[i.shoppingListId] ?? '', userId),)
                   .toList(),
               onConflict: 'uuid',
             );
@@ -2005,7 +2006,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static Future<void> _syncRecipeDrafts(
-      String userId, DateTime? lastSync) async {
+      String userId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
 
@@ -2050,7 +2051,7 @@ abstract class SupabaseSyncService {
           await db.utilityDao
               .updateDraft(_remoteToRecipeDraftCompanion(row).copyWith(
             id: Value(existing.id),
-          ));
+          ),);
         } else {
           await db.utilityDao.createDraft(_remoteToRecipeDraftCompanion(row));
         }
@@ -2087,7 +2088,7 @@ abstract class SupabaseSyncService {
   /// - getAllLogs() → use existing getStats() which returns all rows
   /// - getLogByUuid() → raw Drift
   static Future<void> _syncCookingLogs(
-      String userId, DateTime? lastSync) async {
+      String userId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
 
@@ -2159,7 +2160,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _plannedMealToRow(
-      PlannedMeal m, String mealPlanUuid, String userId) {
+      PlannedMeal m, String mealPlanUuid, String userId,) {
     return {
       'instance_id': m.instanceId,
       'meal_plan_uuid': mealPlanUuid,
@@ -2175,7 +2176,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _shoppingListToRow(
-      ShoppingList l, String userId) {
+      ShoppingList l, String userId,) {
     return {
       'uuid': l.uuid,
       'name': l.name,
@@ -2187,7 +2188,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _shoppingItemToRow(
-      ShoppingItem i, String shoppingListUuid, String userId) {
+      ShoppingItem i, String shoppingListUuid, String userId,) {
     return {
       'uuid': i.uuid,
       'shopping_list_uuid': shoppingListUuid,
@@ -2203,7 +2204,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _recipeDraftToRow(
-      RecipeDraft d, String userId) {
+      RecipeDraft d, String userId,) {
     return {
       'uuid': d.uuid,
       'name': d.name,
@@ -2226,7 +2227,7 @@ abstract class SupabaseSyncService {
   }
 
   static Map<String, dynamic> _cookingLogToRow(
-      CookingLog l, String userId) {
+      CookingLog l, String userId,) {
     return {
       'uuid': l.uuid,
       'recipe_id': l.recipeId,
@@ -2257,7 +2258,7 @@ abstract class SupabaseSyncService {
   /// - No getImagesCreatedSince() on ImageDao  → db.select(db.recipeImages)
   /// - No getRecipeById() anywhere              → db.select(db.recipes)
   static Future<void> _syncRecipeImages(
-      String groupId, DateTime? lastSync) async {
+      String groupId, DateTime? lastSync,) async {
     final db = AppDatabase.instance;
     final client = _requireClient();
     final userId = SupabaseAuthService.currentUserId;
@@ -2269,7 +2270,7 @@ abstract class SupabaseSyncService {
         ? await db.select(db.recipeImages).get()
         : await (db.select(db.recipeImages)
                 ..where((t) =>
-                    t.createdAt.isBiggerThan(Variable<DateTime>(lastSync))))
+                    t.createdAt.isBiggerThan(Variable<DateTime>(lastSync)),))
             .get();
 
     // Tracks recipe UUIDs already upserted this call to avoid redundant pushes.
@@ -2299,7 +2300,7 @@ abstract class SupabaseSyncService {
               .schema('memoix')
               .from('recipes')
               .upsert(_recipeToRow(parentRecipe, groupId, userId),
-                  onConflict: 'uuid');
+                  onConflict: 'uuid',);
           pushedRecipeUuids.add(parentRecipe.uuid);
         }
       }
@@ -2320,7 +2321,7 @@ abstract class SupabaseSyncService {
         .schema('memoix')
         .from('recipe_images')
         .select(
-            'file_name, recipe_uuid, image_type, step_index, mime_type, created_at')
+            'file_name, recipe_uuid, image_type, step_index, mime_type, created_at',)
         .eq('group_id', groupId)
         .filter('deleted_at', 'is', null);
 
@@ -2393,7 +2394,7 @@ abstract class SupabaseSyncService {
         }
       } catch (e) {
         debugPrint(
-            'SupabaseSyncService: could not write image cache for $fileName: $e');
+            'SupabaseSyncService: could not write image cache for $fileName: $e',);
       }
 
       refreshRecipeIds.add(parentRecipe.id);
@@ -2417,7 +2418,7 @@ abstract class SupabaseSyncService {
                 .write(RecipesCompanion(updatedAt: Value(recipe.updatedAt)));
           } catch (e) {
             debugPrint(
-                'SupabaseSyncService: could not touch recipe $recipeId for stream refresh: $e');
+                'SupabaseSyncService: could not touch recipe $recipeId for stream refresh: $e',);
           }
         }
       });
@@ -2449,7 +2450,7 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
 
   static MealPlansCompanion _remoteToMealPlanCompanion(
-      Map<String, dynamic> row) {
+      Map<String, dynamic> row,) {
     return MealPlansCompanion(
       uuid: Value(row['uuid'] as String? ?? ''),
       date: Value(row['date'] as String),
@@ -2457,7 +2458,7 @@ abstract class SupabaseSyncService {
   }
 
   static PlannedMealsCompanion _remoteToPlannedMealCompanion(
-      Map<String, dynamic> row, int localPlanId) {
+      Map<String, dynamic> row, int localPlanId,) {
     return PlannedMealsCompanion(
       mealPlanId: Value(localPlanId),
       instanceId: Value(row['instance_id'] as String),
@@ -2472,20 +2473,20 @@ abstract class SupabaseSyncService {
   }
 
   static ShoppingListsCompanion _remoteToShoppingListCompanion(
-      Map<String, dynamic> row) {
+      Map<String, dynamic> row,) {
     return ShoppingListsCompanion(
       uuid: Value(row['uuid'] as String),
       name: Value(row['name'] as String),
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       completedAt: Value(row['completed_at'] == null
           ? null
-          : DateTime.parse(row['completed_at'] as String).toLocal()),
+          : DateTime.parse(row['completed_at'] as String).toLocal(),),
       recipeIds: Value(row['recipe_ids'] as String? ?? '[]'),
     );
   }
 
   static ShoppingItemsCompanion _remoteToShoppingItemCompanion(
-      Map<String, dynamic> row, int localListId) {
+      Map<String, dynamic> row, int localListId,) {
     return ShoppingItemsCompanion(
       shoppingListId: Value(localListId),
       uuid: Value(row['uuid'] as String),
@@ -2500,7 +2501,7 @@ abstract class SupabaseSyncService {
   }
 
   static RecipeDraftsCompanion _remoteToRecipeDraftCompanion(
-      Map<String, dynamic> row) {
+      Map<String, dynamic> row,) {
     String text(String key, [String fallback = '']) =>
         row[key] as String? ?? fallback;
     return RecipeDraftsCompanion(
@@ -2524,7 +2525,7 @@ abstract class SupabaseSyncService {
   }
 
   static CookingLogsCompanion _remoteToCookingLogCompanion(
-      Map<String, dynamic> row) {
+      Map<String, dynamic> row,) {
     return CookingLogsCompanion(
       uuid: Value(row['uuid'] as String? ?? ''),
       recipeId: Value(row['recipe_id'] as String),
@@ -2538,7 +2539,7 @@ abstract class SupabaseSyncService {
   }
 
   static ScratchPadsCompanion _remoteToScratchPadCompanion(
-      Map<String, dynamic> row) {
+      Map<String, dynamic> row,) {
     return ScratchPadsCompanion(
       uuid: Value(row['uuid'] as String? ?? ''),
       quickNotes: Value(row['quick_notes'] as String? ?? ''),

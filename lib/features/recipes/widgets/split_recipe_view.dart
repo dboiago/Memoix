@@ -180,7 +180,7 @@ class SplitRecipeView extends StatelessWidget {
                                 fontSize: isCompact ? 12 : 14,
                               ),
                               visualDensity: VisualDensity.compact,
-                            )).toList(),
+                            ),).toList(),
                           ),
                         ],
                       ),
@@ -262,7 +262,7 @@ class SplitRecipeView extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
                           child: Container(
                             width: 1,
-                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                            color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
                           ),
                         ),
 
@@ -435,7 +435,7 @@ class SplitRecipeView extends StatelessWidget {
             ),
           ),
         ],
-      )).toList(),
+      ),).toList(),
     );
   }
 
@@ -468,7 +468,7 @@ class SplitRecipeView extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.5),
+                        color: Colors.black.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Icon(
@@ -521,7 +521,7 @@ class SplitRecipeView extends StatelessWidget {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -614,7 +614,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
               color: theme.colorScheme.primary,
             ),
           ),
-        ));
+        ),);
       }
 
       for (final index in indices) {
@@ -759,7 +759,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                           style: textStyle.copyWith(
                             decoration: isChecked ? TextDecoration.lineThrough : null,
                             color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                 : theme.colorScheme.onSurface,
                             fontWeight: FontWeight.w500,
                           ),
@@ -771,7 +771,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                           decoration: BoxDecoration(
-                            color: theme.colorScheme.secondary.withOpacity(0.15),
+                            color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(3),
                           ),
                           child: Text(
@@ -793,7 +793,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                       style: textStyle.copyWith(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                             : theme.colorScheme.onSurfaceVariant,
                       ),
                     ),
@@ -805,7 +805,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         fontSize: widget.isCompact ? 10 : 11,
                         fontStyle: FontStyle.italic,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.4)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
                             : theme.colorScheme.primary,
                       ),
                     ),
@@ -818,7 +818,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                             decoration: BoxDecoration(
-                              color: theme.colorScheme.primary.withOpacity(0.15),
+                              color: theme.colorScheme.primary.withValues(alpha: 0.15),
                               borderRadius: BorderRadius.circular(3),
                             ),
                             child: Text(
@@ -826,7 +826,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                               style: TextStyle(
                                 fontSize: widget.isCompact ? 9 : 10,
                                 color: isChecked
-                                    ? theme.colorScheme.onSurface.withOpacity(0.4)
+                                    ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
                                     : theme.colorScheme.primary,
                                 fontStyle: FontStyle.italic,
                               ),
@@ -883,7 +883,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
           fontStyle: FontStyle.italic,
           color: theme.colorScheme.onSurfaceVariant,
         ),
-      ));
+      ),);
     } else {
       for (int i = 0; i < widget.directions.length; i++) {
         items.add(_buildDirectionRow(context, i));
@@ -978,10 +978,10 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                   shape: BoxShape.circle,
                   color: isCompleted
                       ? theme.colorScheme.surfaceContainerHighest
-                      : theme.colorScheme.secondary.withOpacity(0.15),
+                      : theme.colorScheme.secondary.withValues(alpha: 0.15),
                   border: Border.all(
                     color: isCompleted
-                        ? theme.colorScheme.outline.withOpacity(0.5)
+                        ? theme.colorScheme.outline.withValues(alpha: 0.5)
                         : theme.colorScheme.secondary,
                     width: 1.5,
                   ),
@@ -1009,7 +1009,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                     fontSize: fontSize,
                     decoration: isCompleted ? TextDecoration.lineThrough : null,
                     color: isCompleted
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                         : theme.colorScheme.onSurface,
                     height: 1.4,
                   ),

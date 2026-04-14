@@ -443,14 +443,14 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       quantity: i.amount,
       unit: i.unit,
       preparation: i.preparation,
-    )).toList();
+    ),).toList();
 
     final siJson = jsonEncode(draftIngredients.map((i) => {
         'name': i.name,
         'quantity': i.quantity,
         'unit': i.unit,
         'preparation': i.preparation,
-      }).toList());
+      },).toList(),);
 
     // Look up existing draft; create a new one if not found, then update with full content
     final existingDraft =

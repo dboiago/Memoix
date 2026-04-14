@@ -231,7 +231,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
       List<_RecipeRaw> rawRecipes,
       Map<int, List<_IngRaw>> grouped,
       String cacheBasePath,
-    }) args) {
+    }) args,) {
   final result = <_RecipeDecoded>[];
   for (final r in args.rawRecipes) {
     try {
@@ -292,7 +292,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         garnish: (jsonDecode(r.garnish) as List).cast<String>(),
         pickleMethod: r.pickleMethod,
         ingredients: ings,
-      ));
+      ),);
     } catch (_) {
       // Skip corrupt rows — a single failure must not abort the entire batch.
     }
@@ -360,7 +360,7 @@ class RecipeRepository {
   }
 
   List<IngredientsCompanion> _toIngredientCompanions(
-      int recipeId, List<Ingredient> ingredients) {
+      int recipeId, List<Ingredient> ingredients,) {
     return ingredients
         .map((i) => IngredientsCompanion(
               uuid: Value(i.uuid.trim().isNotEmpty ? i.uuid : _uuid.v4()),
@@ -373,7 +373,7 @@ class RecipeRepository {
               isOptional: Value(i.isOptional),
               section: Value(i.section),
               bakerPercent: Value(i.bakerPercent),
-            ))
+            ),)
         .toList();
   }
 
@@ -401,7 +401,7 @@ class RecipeRepository {
       ..stepImageMap = (jsonDecode(r.stepImageMap) as List).cast<String>()
       ..source = RecipeSource.values.firstWhere(
             (s) => s.name == r.source,
-            orElse: () => RecipeSource.personal)
+            orElse: () => RecipeSource.personal,)
       ..colorValue = r.colorValue
       ..createdAt = r.createdAt
       ..updatedAt = r.updatedAt
@@ -432,15 +432,15 @@ class RecipeRepository {
             ..alternative = i.alternative
             ..isOptional = i.isOptional
             ..section = i.section
-            ..bakerPercent = i.bakerPercent)
+            ..bakerPercent = i.bakerPercent,)
           .toList();
 
     // Resolve plain filenames → cached local paths from the blob store.
     recipe.headerImage = await _resolveNullableImagePath(recipe.headerImage);
     recipe.stepImages = await Future.wait(
-        recipe.stepImages.map((v) => _resolveImagePath(v)));
+        recipe.stepImages.map((v) => _resolveImagePath(v)),);
     recipe.imageUrls = await Future.wait(
-        recipe.imageUrls.map((v) => _resolveImagePath(v)));
+        recipe.imageUrls.map((v) => _resolveImagePath(v)),);
 
     return recipe;
   }
@@ -455,7 +455,7 @@ class RecipeRepository {
   /// Replaces absolute-path image values in [recipe] with their basenames and
   /// records the original paths in [out] so blobs can be persisted afterwards.
   void _collectAndNormaliseImagePaths(
-      Recipe recipe, Map<String, String> out) {
+      Recipe recipe, Map<String, String> out,) {
     String? normalise(String? value) {
       if (value == null || value.isEmpty || value.startsWith('http')) {
         return value;
@@ -481,7 +481,7 @@ class RecipeRepository {
 
   /// Persists image blobs for all local files collected during pre-processing.
   Future<void> _saveImageBlobs(
-      int recipeId, Recipe recipe, Map<String, String> fileNameToPath) async {
+      int recipeId, Recipe recipe, Map<String, String> fileNameToPath,) async {
     Future<void> save(String fileName, String imageType, int? stepIndex) async {
       try {
         final exists = await _db.imageDao.checkImageExists(fileName);
@@ -503,7 +503,7 @@ class RecipeRepository {
           imageData: Value(bytes),
           mimeType: const Value('image/jpeg'),
           createdAt: Value(DateTime.now()),
-        ));
+        ),);
       } catch (e) {
         // Blob write failures must not abort the recipe save.
         debugPrint('RecipeRepository._saveImageBlobs: skipping $fileName — $e');
@@ -558,7 +558,7 @@ class RecipeRepository {
           ..stepImageMap = d.stepImageMap
           ..source = RecipeSource.values.firstWhere(
                 (s) => s.name == d.source,
-                orElse: () => RecipeSource.personal)
+                orElse: () => RecipeSource.personal,)
           ..colorValue = d.colorValue
           ..createdAt = d.createdAt
           ..updatedAt = d.updatedAt
@@ -589,7 +589,7 @@ class RecipeRepository {
                 ..alternative = i.alternative
                 ..isOptional = i.isOptional
                 ..section = i.section
-                ..bakerPercent = i.bakerPercent)
+                ..bakerPercent = i.bakerPercent,)
               .toList();
 
         // Resolve any image paths that were bare filenames after the isolate
@@ -604,7 +604,7 @@ class RecipeRepository {
         result.add(recipe);
       } catch (e) {
         debugPrint(
-            'RecipeRepository._finalizeImagePaths: skipping ${d.id}: $e');
+            'RecipeRepository._finalizeImagePaths: skipping ${d.id}: $e',);
       }
     }
     return result;
@@ -674,7 +674,7 @@ class RecipeRepository {
         debugPrint('RecipeRepository: skipping recipe ${r.id} (${r.name}): $e');
         return null;
       }
-    }));
+    }),);
     return results.whereType<Recipe>().toList();
   }
 
@@ -719,13 +719,13 @@ class RecipeRepository {
   }
 
   Future<List<Recipe>> searchRecipes(String query,
-      {List<String>? courseFilter}) async {
+      {List<String>? courseFilter,}) async {
     if (query.isEmpty) {
       if (courseFilter != null && courseFilter.isNotEmpty) {
         final all = await getAllRecipes();
         return all
             .where((r) => courseFilter
-                .any((slug) => r.course.toLowerCase() == slug.toLowerCase()))
+                .any((slug) => r.course.toLowerCase() == slug.toLowerCase()),)
             .toList();
       }
       return getAllRecipes();
@@ -737,7 +737,7 @@ class RecipeRepository {
     if (courseFilter != null && courseFilter.isNotEmpty) {
       return results
           .where((r) => courseFilter
-              .any((slug) => r.course.toLowerCase() == slug.toLowerCase()))
+              .any((slug) => r.course.toLowerCase() == slug.toLowerCase()),)
           .toList();
     }
     return results;
@@ -808,7 +808,7 @@ class RecipeRepository {
       if (row != null) {
         await _db.recipeDao.deleteIngredientsForRecipe(row.id);
         await _db.recipeDao.saveIngredients(
-            _toIngredientCompanions(row.id, recipe.ingredients));
+            _toIngredientCompanions(row.id, recipe.ingredients),);
       }
     }
 
@@ -841,7 +841,7 @@ class RecipeRepository {
   }
 
   Future<List<Recipe>> getRecipesPairedWith(
-      String recipeUuid) async {
+      String recipeUuid,) async {
     final all = await _db.recipeDao.getAllRecipes();
     final matched = all.where((r) {
       final ids =
@@ -851,11 +851,11 @@ class RecipeRepository {
     return Future.wait(matched.map((r) async {
       final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
       return _toIsarRecipe(r, ings);
-    }));
+    }),);
   }
 
   Future<List<Recipe>> getRecipesByUuids(
-      List<String> uuids) async {
+      List<String> uuids,) async {
     if (uuids.isEmpty) return [];
     final results = <Recipe>[];
     for (final uuid in uuids) {
@@ -915,7 +915,7 @@ class RecipeRepository {
             rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
-          ));
+          ),);
       return _finalizeImagePaths(decoded);
     });
   }
@@ -934,7 +934,7 @@ class RecipeRepository {
             rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
-          ));
+          ),);
       return _finalizeImagePaths(decoded);
     });
   }
@@ -953,7 +953,7 @@ class RecipeRepository {
             rawRecipes: rawRecipes,
             grouped: grouped,
             cacheBasePath: cacheBasePath,
-          ));
+          ),);
       final recipes = await _finalizeImagePaths(decoded);
 
       const continentOrder = [
@@ -1048,7 +1048,7 @@ class RecipeRepository {
 
     final allNames = <String>{
       ...Suggestions.essentialIngredients,
-      ...historyNames
+      ...historyNames,
     };
 
     final lowerQuery = query.toLowerCase();

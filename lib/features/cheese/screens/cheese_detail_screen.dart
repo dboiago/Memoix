@@ -134,7 +134,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Country (use adjective form like "French" not "France")
@@ -144,7 +144,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Milk
@@ -154,7 +154,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Texture
@@ -164,7 +164,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Type
@@ -174,7 +174,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Price range (displayed as dollar signs)
@@ -185,7 +185,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     if (chips.isEmpty) {

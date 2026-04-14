@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../../core/database/app_database.dart';
@@ -326,12 +325,12 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
         selected: isSelected,
         onSelected: onSelected,
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(

@@ -579,7 +579,7 @@ class OcrRecipeImporter {
         'icing', 'sugar', 'vanilla extract', 'chocolate', 'dessert', 'sweet',
         'muffin', 'pie', 'tart', 'pastry', 'baking powder', 'baking soda',
         'shortbread', 'biscotti', 'scone', 'macaron', 'truffle', 'fudge',
-        'meringue', 'pudding', 'custard', 'mousse', 'cheesecake', 'ice cream'];
+        'meringue', 'pudding', 'custard', 'mousse', 'cheesecake', 'ice cream',];
     final dessertCount = dessertKeywords.where((k) => allText.contains(k)).length;
     
     // Drink indicators - check for spirits, beer/wine, and cocktail-specific terms
@@ -594,7 +594,7 @@ class OcrRecipeImporter {
         'oz vodka', 'oz gin', 'oz rum', 'oz whiskey', 'oz tequila',
         'garnish with', 'to garnish', 'highball', 'martini glass', 'coupe',
         'rocks glass', 'collins glass', 'shaker', 'muddle', 'strain',
-        'sipsmith', 'london dry', 'angostura'];
+        'sipsmith', 'london dry', 'angostura',];
     final drinkCount = drinkKeywords.where((k) => allText.contains(k)).length;
     
     // Mains/food indicators - if these are present, it's likely NOT a drink
@@ -606,7 +606,7 @@ class OcrRecipeImporter {
         'pasta', 'rice',
         'breast', 'thigh', 'leg', 'loin', 'steak', 'fillet', 'filet',
         'main course', 'entrée',
-        'mozzarella', 'parmesan', 'cheddar', 'breadcrumb'];
+        'mozzarella', 'parmesan', 'cheddar', 'breadcrumb',];
     final foodCount = foodKeywords.where((k) => allText.contains(k)).length;
     
     // Appetizer indicators - require full word matching to avoid false positives
@@ -616,13 +616,13 @@ class OcrRecipeImporter {
     // Side indicators - vegetables as main ingredient often indicate sides
     final sideKeywords = ['side dish', 'accompaniment', 'serve alongside', 'serve with', 
         'fried fennel', 'fried zucchini', 'fried eggplant', 'roasted vegetables',
-        'sautéed', 'sauteed', 'steamed', 'braised', 'glazed'];
+        'sautéed', 'sauteed', 'steamed', 'braised', 'glazed',];
     final sideCount = sideKeywords.where((k) => allText.contains(k)).length;
     
     // Salad indicators
     final saladKeywords = ['salad', 'insalata', 'salade', 'ensalada', 'lettuce', 
         'mixed greens', 'arugula', 'spinach salad', 'caesar', 'vinaigrette',
-        'dressing', 'toss gently', 'bed of lettuce', 'salad greens'];
+        'dressing', 'toss gently', 'bed of lettuce', 'salad greens',];
     final saladCount = saladKeywords.where((k) => allText.contains(k)).length;
     
     // Sauce indicators
@@ -630,20 +630,20 @@ class OcrRecipeImporter {
         'condiment', 'glaze', 'reduction', 'coulis', 'beurre blanc',
         'hollandaise', 'bearnaise', 'béchamel', 'bechamel', 'mornay', 'velouté',
         'served with', 'drizzle over', 'pour over', 'dipping sauce', 'relish',
-        'chutney', 'salsa verde', 'chimichurri', 'romesco', 'mole', 'ragù', 'ragu'];
+        'chutney', 'salsa verde', 'chimichurri', 'romesco', 'mole', 'ragù', 'ragu',];
     final sauceCount = sauceKeywords.where((k) => allText.contains(k)).length;
     
     // Vegetable-centric dishes (no meat protein) are likely sides
     final vegetableKeywords = ['fennel', 'zucchini', 'eggplant', 'asparagus', 'broccoli',
         'cauliflower', 'brussels sprouts', 'green beans', 'spinach', 'kale', 'chard',
         'artichoke', 'mushroom', 'potato', 'sweet potato', 'carrot', 'beet', 'turnip',
-        'parsnip', 'squash', 'pumpkin', 'corn', 'peas', 'cabbage', 'leek', 'onion'];
+        'parsnip', 'squash', 'pumpkin', 'corn', 'peas', 'cabbage', 'leek', 'onion',];
     final vegetableCount = vegetableKeywords.where((k) => allText.contains(k)).length;
     
     // Protein keywords that indicate this is likely a main, not a side
     final proteinKeywords = ['chicken', 'beef', 'pork', 'lamb', 'veal', 'fish', 'salmon',
         'shrimp', 'lobster', 'crab', 'scallop', 'duck', 'turkey', 'steak', 'chop',
-        'roast', 'breast', 'thigh', 'leg', 'loin', 'tenderloin', 'rib'];
+        'roast', 'breast', 'thigh', 'leg', 'loin', 'tenderloin', 'rib',];
     final proteinCount = proteinKeywords.where((k) => allText.contains(k)).length;
     
     // Determine course based on keyword density
@@ -1433,7 +1433,7 @@ class OcrRecipeImporter {
             preparation: parsed.preparation,
             alternative: parsed.alternative,
             section: currentSection,
-          ));
+          ),);
         }
         inIngredients = true;
         inDirections = false;
@@ -1473,7 +1473,7 @@ class OcrRecipeImporter {
             unit: parsed.unit,
             preparation: parsed.preparation,
             alternative: parsed.alternative,
-          ));
+          ),);
         }
       } else {
         // Ambiguous line - use heuristics
@@ -1497,7 +1497,7 @@ class OcrRecipeImporter {
               unit: parsed.unit,
               preparation: parsed.preparation,
               alternative: parsed.alternative,
-            ));
+            ),);
             inIngredients = true;
           }
         } else if (hasActionVerb) {
@@ -1516,14 +1516,14 @@ class OcrRecipeImporter {
               bakerPercent: parsed.bakerPercent,
               alternative: parsed.alternative,
               looksLikeIngredient: parsed.amount != null,
-            ));
+            ),);
             ingredients.add(Ingredient.create(
               name: parsed.name,
               amount: parsed.amount,
               unit: parsed.unit,
               preparation: parsed.preparation,
               alternative: parsed.alternative,
-            ));
+            ),);
           }
         } else {
           // Long lines without action verbs - probably prose, skip
@@ -1956,7 +1956,7 @@ class OcrRecipeImporter {
     ).hasMatch(line)
         ? line.replaceFirst(
             RegExp(r'\s+to\s+a\s+\d+\s*(Tbs\.?|Tbsp\.?|tsp\.?|oz\.?|g|ml|kg|l)?\s*\.?\s*$', caseSensitive: false),
-            '.')
+            '.',)
         : line;
     return cleaned.trim();
   }

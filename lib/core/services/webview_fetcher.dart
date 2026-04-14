@@ -49,7 +49,7 @@ class WebViewFetcher {
             try {
               // Extract the HTML
               final html = await controller.runJavaScriptReturningResult(
-                'document.documentElement.outerHTML'
+                'document.documentElement.outerHTML',
               );
               
               // Remove overlay
@@ -114,7 +114,7 @@ class WebViewFetcher {
     if (!uri.isScheme('http') && !uri.isScheme('https')) {
       overlayEntry.remove();
       throw ArgumentError(
-        'Invalid URL scheme: "${uri.scheme}". Only HTTP and HTTPS URLs are allowed in WebView.'
+        'Invalid URL scheme: "${uri.scheme}". Only HTTP and HTTPS URLs are allowed in WebView.',
       );
     }
     

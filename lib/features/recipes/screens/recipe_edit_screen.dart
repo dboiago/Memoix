@@ -136,10 +136,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   bool get shouldShowCompareButton {
     final allowed = {
       'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
-      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles'
+      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles',
     };
     final blocked = {
-      'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar'
+      'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar',
     };
     final course = _selectedCourse.toLowerCase();
     if (blocked.contains(course)) return false;
@@ -330,7 +330,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 amountController: TextEditingController(),
                 notesController: TextEditingController(),
                 bakerPercentController: TextEditingController(),
-              ));
+              ),);
             }
           }
         }
@@ -381,7 +381,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     const validSlugs = {
       'apps', 'soup', 'mains', 'vegn', 'sides', 'salad', 'desserts', 
       'brunch', 'drinks', 'breads', 'sauces', 'rubs', 'pickles', 
-      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch'
+      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch',
     };
     
     return validSlugs.contains(mapped) ? mapped : 'mains';
@@ -502,7 +502,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -524,7 +524,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
                 ),
@@ -676,7 +676,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       color: theme.colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: theme.colorScheme.outline.withOpacity(0.3),
+                        color: theme.colorScheme.outline.withValues(alpha: 0.3),
                       ),
                     ),
                     child: Column(
@@ -740,7 +740,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       top: 4,
                       right: 4,
                       child: Material(
-                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        color: theme.colorScheme.surface.withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
                           onTap: () => _removeGalleryImage(index),
@@ -1315,7 +1315,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   // Ingredient rows (reorderable)
                   Container(
                     decoration: BoxDecoration(
-                      border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                      border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
                       borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
                     ),
                     child: ReorderableListView.builder(
@@ -1613,7 +1613,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ? null 
               : row.notesController.text.trim(),
           section: currentSection,
-        ));
+        ),);
       }
     }
     
@@ -1654,7 +1654,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..name = row.nameController.text.trim()
         ..amount = row.amountController.text.trim().isEmpty 
             ? null 
-            : row.amountController.text.trim());
+            : row.amountController.text.trim(),);
     }
     
     // Build directions
@@ -1676,7 +1676,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       wood: '',
       seasoningsJson: jsonEncode(seasonings
           .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
-          .toList()),
+          .toList(),),
       ingredientsJson: '[]',
       serves: null,
       directions: jsonEncode(directions),
@@ -1705,7 +1705,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => RecipeComparisonScreen(),
+        builder: (_) => const RecipeComparisonScreen(),
       ),
     );
   }
@@ -1744,7 +1744,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..preparation = row.notesController.text.trim().isEmpty 
             ? null 
             : row.notesController.text.trim()
-        ..section = currentSection
+        ..section = currentSection,
       );
     }
     
@@ -1961,10 +1961,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         key: key,
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
           border: isLast 
               ? null 
-              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
         ),
         child: Row(
           children: [
@@ -2084,7 +2084,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       decoration: BoxDecoration(
         border: isLast 
             ? null 
-            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -2382,7 +2382,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+                color: theme.colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: hasImage
@@ -2541,7 +2541,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     double size = 20,
   }) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,
@@ -2711,7 +2711,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               label: Text(item),
               deleteIcon: const Icon(Icons.close, size: 18),
               onDeleted: () => setState(() => _garnish.remove(item)),
-            )).toList(),
+            ),).toList(),
           ),
         ],
       ],
@@ -2889,7 +2889,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });

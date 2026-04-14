@@ -287,12 +287,12 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               children: [
                 Expanded(
                   child: _buildCategoryChip(
-                      'Concept', ModernistType.concept, theme),
+                      'Concept', ModernistType.concept, theme,),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: _buildCategoryChip(
-                      'Technique', ModernistType.technique, theme),
+                      'Technique', ModernistType.technique, theme,),
                 ),
               ],
             ),
@@ -332,7 +332,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
             // Course dropdown
             DropdownButtonFormField<String>(
-              value: _selectedCourse,
+              initialValue: _selectedCourse,
               decoration: const InputDecoration(
                 labelText: 'Course',
               ),
@@ -340,7 +340,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                   .map((c) => DropdownMenuItem(
                         value: c.slug,
                         child: Text(c.name),
-                      ))
+                      ),)
                   .toList(),
               onChanged: (value) {
                 if (value != null && value != _selectedCourse) {
@@ -428,13 +428,13 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected
-              ? theme.colorScheme.secondary.withOpacity(0.15)
+              ? theme.colorScheme.secondary.withValues(alpha: 0.15)
               : theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             color: isSelected
                 ? theme.colorScheme.secondary
-                : theme.colorScheme.outline.withOpacity(0.3),
+                : theme.colorScheme.outline.withValues(alpha: 0.3),
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
@@ -600,7 +600,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         // Ingredient rows (reorderable like Mains)
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+            border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
             borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
           ),
           child: ReorderableListView.builder(
@@ -648,10 +648,10 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         key: key,
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
           border: isLast
               ? null
-              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
         ),
         child: Row(
           children: [
@@ -719,7 +719,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       decoration: BoxDecoration(
         border: isLast
             ? null
-            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -868,7 +868,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+                color: theme.colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: hasImage
@@ -1002,7 +1002,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
     double size = 20,
   }) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,
@@ -1175,7 +1175,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -1197,7 +1197,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
                 ),
@@ -1349,7 +1349,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                       color: theme.colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: theme.colorScheme.outline.withOpacity(0.3),
+                        color: theme.colorScheme.outline.withValues(alpha: 0.3),
                       ),
                     ),
                     child: Column(
@@ -1413,7 +1413,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                       top: 4,
                       right: 4,
                       child: Material(
-                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        color: theme.colorScheme.surface.withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
                           onTap: () => _removeStepImage(index),
@@ -1641,7 +1641,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ..preparation = row.notesController.text.trim().isEmpty 
               ? null 
               : row.notesController.text.trim()
-          ..section = currentSection);
+          ..section = currentSection,);
       }
     }
     
@@ -1684,7 +1684,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         ..name = row.nameController.text.trim()
         ..amount = row.amountController.text.trim().isEmpty 
             ? null 
-            : row.amountController.text.trim());
+            : row.amountController.text.trim(),);
     }
     
     // Build directions from direction rows
@@ -1706,7 +1706,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       wood: '',
       seasoningsJson: jsonEncode(seasonings
           .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
-          .toList()),
+          .toList(),),
       ingredientsJson: '[]',
       serves: null,
       directions: jsonEncode(directions),
@@ -1765,7 +1765,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                 ? null
                 : row.notesController.text.trim(),
             section: currentSection,
-          ));
+          ),);
         }
       }
 
@@ -1953,7 +1953,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });

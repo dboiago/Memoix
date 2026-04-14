@@ -539,7 +539,7 @@ class ModernistRecipe {
             ..amount = i.amount
             ..unit = i.unit
             ..preparation = i.notes
-            ..section = i.section)
+            ..section = i.section,)
           .toList()
       ..createdAt = createdAt
       ..updatedAt = updatedAt;

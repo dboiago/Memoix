@@ -6,7 +6,6 @@ import '../../recipes/models/cuisine.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/database/app_database.dart';
 import '../../../shared/widgets/memoix_card_shell.dart';
-import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 
 /// Cellar entry card widget for list display
@@ -68,7 +67,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
                       padding: const EdgeInsets.only(right: 8),
                       child: Chip(
                         label: const Text('Buy'),
-                        backgroundColor: theme.colorScheme.secondary.withOpacity(0.15),
+                        backgroundColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
                         labelStyle: TextStyle(color: theme.colorScheme.secondary),
                         side: BorderSide(color: theme.colorScheme.secondary),
                         visualDensity: VisualDensity.compact,

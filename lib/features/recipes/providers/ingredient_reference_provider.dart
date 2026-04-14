@@ -4,7 +4,6 @@
 /// Session lifetime only — no Isar or SharedPreferences persistence.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/ingredient_reference.dart';
 import '../services/ingredient_reference_service.dart';
 
 /// Normalise the cache key: trim, lowercase, collapse internal whitespace.

@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math' as math;
-import 'dart:typed_data';
 
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
@@ -10,7 +9,6 @@ import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:path/path.dart' as path;
-import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/database/app_database.dart';
@@ -409,7 +407,7 @@ class PersonalStorageService {
       if (repositoriesJson != null) {
         final List<dynamic> list = jsonDecode(repositoriesJson);
         final repositories = list.map((item) =>
-          StorageLocation.fromJson(item as Map<String, dynamic>)
+          StorageLocation.fromJson(item as Map<String, dynamic>),
         ).toList();
 
         // Find and update active repository

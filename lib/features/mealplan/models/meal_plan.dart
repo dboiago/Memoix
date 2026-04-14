@@ -176,7 +176,7 @@ class MealPlanService {
       notes: Value(notes),
       cuisine: Value(cuisine),
       recipeCategory: Value(recipeCategory),
-    ));
+    ),);
   }
 
   /// Remove a meal by unique Instance ID
@@ -204,7 +204,7 @@ class MealPlanService {
       servings: Value(meal.servings),
       cuisine: Value(meal.cuisine),
       recipeCategory: Value(meal.recipeCategory),
-    ));
+    ),);
   }
 
   /// Get a week's worth of plans

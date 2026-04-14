@@ -180,7 +180,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                   return _defaultMilkTypes;
                 }
                 return _defaultMilkTypes.where((m) =>
-                    m.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                    m.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
               },
               fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                 if (controller.text != _milkController.text) {
@@ -219,7 +219,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                         return _defaultTextures;
                       }
                       return _defaultTextures.where((t) =>
-                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
                     },
                     fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                       if (controller.text != _textureController.text) {
@@ -254,7 +254,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                         return _defaultTypes;
                       }
                       return _defaultTypes.where((t) =>
-                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
                     },
                     fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                       if (controller.text != _typeController.text) {
@@ -338,7 +338,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
           color: theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
+            color: theme.colorScheme.outline.withValues(alpha: 0.3),
           ),
         ),
         child: _imagePath != null
@@ -712,7 +712,7 @@ class _CountryPickerSheetState extends State<_CountryPickerSheet> {
           leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
           title: Text(cuisine.name),
           subtitle: Text(cuisine.continent, 
-            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12),),
           trailing: isSelected
               ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
               : null,
@@ -791,7 +791,7 @@ class _PriceRangeSelector extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: isSelected 
                       ? theme.colorScheme.primary 
-                      : theme.colorScheme.outline.withOpacity(0.4),
+                      : theme.colorScheme.outline.withValues(alpha: 0.4),
                 ),
               ),
             ),

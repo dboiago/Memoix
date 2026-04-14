@@ -267,7 +267,7 @@ class _DrawerItem extends StatelessWidget {
         ),
       ),
       selected: isSelected,
-      selectedTileColor: theme.colorScheme.primaryContainer.withOpacity(0.3),
+      selectedTileColor: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),

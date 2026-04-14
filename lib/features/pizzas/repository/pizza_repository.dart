@@ -77,7 +77,7 @@ class PizzaRepository {
       createdAt: Value(pizza.createdAt),
       updatedAt: Value(preserveTimestamp ? pizza.updatedAt : DateTime.now()),
       version: Value(pizza.version),
-    ));
+    ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
@@ -167,7 +167,7 @@ class PizzaRepository {
           createdAt: Value(pizza.createdAt),
           updatedAt: Value(pizza.updatedAt),
           version: Value(pizza.version),
-        )).toList();
+        ),).toList();
     await _db.catalogueDao.importPizzas(companions);
   }
 
@@ -175,21 +175,21 @@ class PizzaRepository {
   Future<List<String>> getAllCheeses() async {
     final allPizzas = await getAllPizzas();
     return extractUniqueStringLists(
-        allPizzas, (p) => (jsonDecode(p.cheeses) as List).cast<String>());
+        allPizzas, (p) => (jsonDecode(p.cheeses) as List).cast<String>(),);
   }
 
   /// Get all unique proteins used across pizzas
   Future<List<String>> getAllProteins() async {
     final allPizzas = await getAllPizzas();
     return extractUniqueStringLists(
-        allPizzas, (p) => (jsonDecode(p.proteins) as List).cast<String>());
+        allPizzas, (p) => (jsonDecode(p.proteins) as List).cast<String>(),);
   }
 
   /// Get all unique vegetables used across pizzas
   Future<List<String>> getAllVegetables() async {
     final allPizzas = await getAllPizzas();
     return extractUniqueStringLists(
-        allPizzas, (p) => (jsonDecode(p.vegetables) as List).cast<String>());
+        allPizzas, (p) => (jsonDecode(p.vegetables) as List).cast<String>(),);
   }
 }
 

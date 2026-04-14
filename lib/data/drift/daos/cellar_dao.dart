@@ -30,7 +30,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
           ..where((t) =>
               t.name.lower().like('%$q%') |
               t.producer.lower().like('%$q%') |
-              t.category.lower().like('%$q%')))
+              t.category.lower().like('%$q%'),))
         .get();
   }
 
@@ -109,7 +109,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
               t.name.lower().like('%$q%') |
               t.type.lower().like('%$q%') |
               t.country.lower().like('%$q%') |
-              t.milk.lower().like('%$q%')))
+              t.milk.lower().like('%$q%'),))
         .get();
   }
 

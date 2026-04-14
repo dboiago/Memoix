@@ -134,7 +134,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Category
@@ -144,7 +144,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Producer (use 2-letter country code in ALL CAPS - e.g., "ZA" not "Za")
@@ -156,7 +156,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // ABV (with % suffix, sanitized)
@@ -168,7 +168,7 @@ class _CellarDetailView extends ConsumerWidget {
           backgroundColor: theme.colorScheme.surfaceContainerHighest,
           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
           visualDensity: VisualDensity.compact,
-        ));
+        ),);
       }
     }
 
@@ -179,7 +179,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Price range (displayed as dollar signs)
@@ -190,7 +190,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     if (chips.isEmpty) {

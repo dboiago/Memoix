@@ -71,7 +71,6 @@ class IngredientService {
   Map<String, int> _lookupMap = {};
   Map<String, IngredientMeta> _metaMap = {};
   List<String> _sortedKeys = [];
-  Set<String> _fallbackKeys = {};
   bool _isInitialized = false;
   bool _metaLoaded = false;
 
@@ -153,7 +152,7 @@ class IngredientService {
 
       _isInitialized = true;
     } catch (e) {
-      debugPrint("IngredientService Init Error: $e");
+      debugPrint('IngredientService Init Error: $e');
       // Fallback: Use manual map
       _injectFallbackData();
       _isInitialized = true;
@@ -175,10 +174,11 @@ class IngredientService {
       final Map<String, dynamic> rawMap = json.decode(jsonString);
 
       _metaMap = rawMap.map((key, value) =>
-        MapEntry(key, IngredientMeta.fromJson(value as Map<String, dynamic>)));
+        MapEntry(key, IngredientMeta.fromJson(value as Map<String, dynamic>)),);
       _metaLoaded = true;
     } catch (e) {
       // Meta is optional — don't fail init
+      // ignore: prefer_single_quotes
       debugPrint("IngredientService meta load skipped: $e");
     }
   }
@@ -222,7 +222,6 @@ class IngredientService {
       'spinach': IngredientCategory.produce.index,
       'broccoli': IngredientCategory.produce.index,
       'cucumber': IngredientCategory.produce.index,
-      'bell pepper': IngredientCategory.produce.index,
       'zucchini': IngredientCategory.produce.index,
       'pumpkin': IngredientCategory.produce.index,
       'mushroom': IngredientCategory.produce.index,
@@ -558,7 +557,6 @@ class IngredientService {
       'chipotle': IngredientCategory.pantry.index,
       'doubanjiang': IngredientCategory.pantry.index,
       'doenjang': IngredientCategory.pantry.index,
-      'ya cai': IngredientCategory.pantry.index,
       'preserved mustard': IngredientCategory.pantry.index,
       'sesame paste': IngredientCategory.pantry.index,
       'dashi': IngredientCategory.pantry.index,
@@ -683,9 +681,6 @@ class IngredientService {
     fallback.forEach((k, v) {
       _lookupMap[k] = v;
     });
-    
-    // Track which keys came from the authoritative fallback
-    _fallbackKeys = fallback.keys.toSet();
 
     // Re-sort keys by length descending for longest-match-first
     _sortedKeys = _lookupMap.keys.toList()

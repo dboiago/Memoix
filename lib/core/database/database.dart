@@ -40,7 +40,7 @@ class MemoixDatabase {
           sortOrder: Value(c.sortOrder),
           colorValue: Value(c.colorValue),
           isVisible: Value(c.isVisible),
-        ));
+        ),);
       }
     });
   }

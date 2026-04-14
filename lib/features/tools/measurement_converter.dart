@@ -422,7 +422,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                       decoration: decoration,
                       onChanged: (_) => _convert(),
                     );
-                  }),
+                  },),
                 ),
                 const SizedBox(width: 12),
                 Expanded(

@@ -176,7 +176,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                         Icon(
                           Icons.copy,
                           size: 18,
-                          color: theme.colorScheme.onErrorContainer.withOpacity(0.7),
+                          color: theme.colorScheme.onErrorContainer.withValues(alpha: 0.7),
                         ),
                       ],
                     ),

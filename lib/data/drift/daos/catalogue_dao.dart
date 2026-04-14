@@ -34,7 +34,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
               t.cheeses.lower().like(q) |
               t.proteins.lower().like(q) |
               t.vegetables.lower().like(q) |
-              t.tags.lower().like(q)))
+              t.tags.lower().like(q),))
         .get();
   }
 
@@ -131,7 +131,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
               t.vegetables.lower().like(q) |
               t.cheeses.lower().like(q) |
               t.condiments.lower().like(q) |
-              t.tags.lower().like(q)))
+              t.tags.lower().like(q),))
         .get();
   }
 

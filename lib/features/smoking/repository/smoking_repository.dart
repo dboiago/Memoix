@@ -92,7 +92,7 @@ class SmokingRepository {
       pairedRecipeIds: Value(recipe.pairedRecipeIds),
       createdAt: Value(recipe.createdAt),
       updatedAt: Value(preserveTimestamp ? recipe.updatedAt : DateTime.now()),
-    ));
+    ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
