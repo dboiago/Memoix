@@ -106,7 +106,7 @@ class RecipeBackupService {
 
     // Share the file
     try {
-      await Share.shareXFiles(
+      await SharePlus.shareXFiles(
         [XFile(file.path)],
         subject: 'Memoix Recipe Backup',
         text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
@@ -235,7 +235,7 @@ class RecipeBackupService {
     // Share all files
     if (files.isNotEmpty) {
       try {
-        await Share.shareXFiles(
+        await SharePlus.shareXFiles(
           files,
           subject: 'Memoix Full Backup',
           text: 'Exported $filesWritten domain files',

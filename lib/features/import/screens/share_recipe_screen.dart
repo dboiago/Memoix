@@ -722,7 +722,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   void _shareViaLink() {
     if (_shareLink == null || _selectedItem == null) return;
     try {
-      Share.share(
+      SharePlus.share(
         'Check out this ${_selectedItem!.type.singularName.toLowerCase()}: ${_selectedItem!.name}\n\n$_shareLink',
         subject: _selectedItem!.name,
       );
@@ -771,7 +771,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     buffer.writeln('Shared from Memoix');
 
     try {
-      Share.share(buffer.toString(), subject: _selectedItem!.name);
+      SharePlus.share(buffer.toString(), subject: _selectedItem!.name);
     } catch (e) {
       debugPrint('ShareRecipeScreen._shareAsText error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');

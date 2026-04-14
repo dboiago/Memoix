@@ -99,7 +99,7 @@ class ShareService {
     final link = generateShareLink(recipe);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         '🍳 Check out this recipe: ${recipe.name}\n\n$link',
         subject: 'Recipe: ${recipe.name}',
       );
@@ -159,7 +159,7 @@ class ShareService {
     buffer.writeln('Shared from Memoix');
     
     try {
-      await Share.share(buffer.toString(), subject: recipe.name);
+      await SharePlus.share(buffer.toString(), subject: recipe.name);
     } catch (e) {
       debugPrint('ShareService.shareAsText error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -255,7 +255,7 @@ class ShareService {
     final link = generatePizzaShareLink(pizza);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         'Check out this pizza: ${pizza.name}\n\n$link',
         subject: 'Pizza: ${pizza.name}',
       );
@@ -311,7 +311,7 @@ class ShareService {
     buffer.writeln('Shared from Memoix');
     
     try {
-      await Share.share(buffer.toString(), subject: pizza.name);
+      await SharePlus.share(buffer.toString(), subject: pizza.name);
     } catch (e) {
       debugPrint('ShareService.sharePizzaAsText error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -386,7 +386,7 @@ class ShareService {
     final link = generateSandwichShareLink(sandwich);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         'Check out this sandwich: ${sandwich.name}\n\n$link',
         subject: 'Sandwich: ${sandwich.name}',
       );
@@ -453,7 +453,7 @@ class ShareService {
     buffer.writeln('Shared from Memoix');
     
     try {
-      await Share.share(buffer.toString(), subject: sandwich.name);
+      await SharePlus.share(buffer.toString(), subject: sandwich.name);
     } catch (e) {
       debugPrint('ShareService.shareSandwichAsText error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -528,7 +528,7 @@ class ShareService {
     final link = generateSmokingShareLink(recipe);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         'Check out this smoking recipe: ${recipe.name}\n\n$link',
         subject: 'Smoking: ${recipe.name}',
       );
@@ -581,7 +581,7 @@ class ShareService {
     buffer.writeln('Shared from Memoix');
     
     try {
-      await Share.share(buffer.toString(), subject: recipe.name);
+      await SharePlus.share(buffer.toString(), subject: recipe.name);
     } catch (e) {
       debugPrint('ShareService.shareSmokingAsText error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -656,7 +656,7 @@ class ShareService {
     final link = generateModernistShareLink(recipe);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         'Check out this modernist recipe: ${recipe.name}\n\n$link',
         subject: 'Modernist: ${recipe.name}',
       );
@@ -730,7 +730,7 @@ class ShareService {
     buffer.writeln('Shared from Memoix');
     
     try {
-      await Share.share(buffer.toString(), subject: recipe.name);
+      await SharePlus.share(buffer.toString(), subject: recipe.name);
     } catch (e) {
       debugPrint('ShareService.shareModernistAsText error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -805,7 +805,7 @@ class ShareService {
     final link = generateCellarShareLink(entry);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         '🍷 Check out this: ${entry.name}\n\n$link',
         subject: entry.name,
       );
@@ -883,7 +883,7 @@ class ShareService {
     final link = generateCheeseShareLink(entry);
     
     try {
-      await Share.share(
+      await SharePlus.share(
         '🧀 Check out this cheese: ${entry.name}\n\n$link',
         subject: entry.name,
       );

@@ -198,7 +198,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final file = File('${dir.path}/Le_Grand_Memoix.pdf');
     await file.writeAsBytes(bytes);
     try {
-      await Share.shareXFiles(
+      await SharePlus.shareXFiles(
         [XFile(file.path)],
         subject: 'Le Grand Memoix',
       );

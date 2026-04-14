@@ -108,7 +108,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
     // recipient actually joins the repository in the app.
     if (mounted) {
       final link = _generateDeepLink();
-      await Share.share(
+      await SharePlus.share(
         'Join my Memoix recipe repository "${widget.repository.name}":\n$link',
         subject: 'Join my Memoix repository: ${widget.repository.name}',
       );
@@ -119,7 +119,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
     final link = _generateDeepLink();
 
     try {
-      await Share.share(
+      await SharePlus.share(
         'Join my Memoix repository: ${widget.repository.name}\n\n'
         'Tap this link to add it to your Memoix app:\n$link',
         subject: 'Memoix Repository: ${widget.repository.name}',
