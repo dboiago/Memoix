@@ -932,11 +932,22 @@ abstract class SupabaseSyncService {
             buy: existing.buy,
           ).copyWith(id: Value(existing.id)),);
         } else {
-          await db.cellarDao.saveEntry(_remoteToCellarEntryCompanion(
+          // Use uuid as the conflict target so that if getEntryByUuid()
+          // returned null while the row actually exists (e.g. encoding edge
+          // case, transaction visibility quirk), the INSERT falls back to an
+          // UPDATE instead of crashing with SQLite error 2067.
+          final newEntry = _remoteToCellarEntryCompanion(
             row,
             isFavorite: false,
             buy: false,
-          ),);
+          );
+          await db.into(db.cellarEntries).insert(
+            newEntry,
+            onConflict: DoUpdate(
+              (_) => newEntry,
+              target: [db.cellarEntries.uuid],
+            ),
+          );
         }
       }
     });
