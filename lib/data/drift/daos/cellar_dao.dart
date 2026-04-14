@@ -48,9 +48,15 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
           .write(entry);
       return entry.id.value;
     }
+    final forInsert = entry.id == const Value(0)
+        ? entry.copyWith(id: const Value.absent())
+        : entry;
     return into(cellarEntries).insert(
-      entry,
-      onConflict: DoUpdate((old) => entry, target: [cellarEntries.uuid]),
+      forInsert,
+      onConflict: DoUpdate(
+        (old) => forInsert.copyWith(id: const Value.absent()),
+        target: [cellarEntries.uuid],
+      ),
     );
   }
 
@@ -136,9 +142,15 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
           .write(entry);
       return entry.id.value;
     }
+    final forInsert = entry.id == const Value(0)
+        ? entry.copyWith(id: const Value.absent())
+        : entry;
     return into(cheeseEntries).insert(
-      entry,
-      onConflict: DoUpdate((old) => entry, target: [cheeseEntries.uuid]),
+      forInsert,
+      onConflict: DoUpdate(
+        (old) => forInsert.copyWith(id: const Value.absent()),
+        target: [cheeseEntries.uuid],
+      ),
     );
   }
 

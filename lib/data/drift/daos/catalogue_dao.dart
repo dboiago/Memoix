@@ -50,9 +50,15 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
           .write(pizza);
       return pizza.id.value;
     }
+    final forInsert = pizza.id == const Value(0)
+        ? pizza.copyWith(id: const Value.absent())
+        : pizza;
     return into(pizzas).insert(
-      pizza,
-      onConflict: DoUpdate((old) => pizza, target: [pizzas.uuid]),
+      forInsert,
+      onConflict: DoUpdate(
+        (old) => forInsert.copyWith(id: const Value.absent()),
+        target: [pizzas.uuid],
+      ),
     );
   }
 
@@ -157,9 +163,15 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
           .write(sandwich);
       return sandwich.id.value;
     }
+    final forInsert = sandwich.id == const Value(0)
+        ? sandwich.copyWith(id: const Value.absent())
+        : sandwich;
     return into(sandwiches).insert(
-      sandwich,
-      onConflict: DoUpdate((old) => sandwich, target: [sandwiches.uuid]),
+      forInsert,
+      onConflict: DoUpdate(
+        (old) => forInsert.copyWith(id: const Value.absent()),
+        target: [sandwiches.uuid],
+      ),
     );
   }
 

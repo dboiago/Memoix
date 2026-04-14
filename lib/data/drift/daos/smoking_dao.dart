@@ -39,9 +39,15 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
           .write(recipe);
       return recipe.id.value;
     }
+    final forInsert = recipe.id == const Value(0)
+        ? recipe.copyWith(id: const Value.absent())
+        : recipe;
     return into(smokingRecipes).insert(
-      recipe,
-      onConflict: DoUpdate((old) => recipe, target: [smokingRecipes.uuid]),
+      forInsert,
+      onConflict: DoUpdate(
+        (old) => forInsert.copyWith(id: const Value.absent()),
+        target: [smokingRecipes.uuid],
+      ),
     );
   }
 

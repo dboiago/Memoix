@@ -67,7 +67,7 @@ class SmokingRepository {
       ).map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList(),
     );
     await _db.smokingDao.saveRecipe(SmokingRecipesCompanion(
-      id: Value(recipe.id),
+      id: recipe.id > 0 ? Value(recipe.id) : const Value.absent(),
       uuid: Value(recipe.uuid),
       name: Value(recipe.name),
       course: Value(recipe.course),
