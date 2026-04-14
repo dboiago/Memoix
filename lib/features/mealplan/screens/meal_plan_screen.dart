@@ -302,6 +302,9 @@ class _DayCardState extends ConsumerState<DayCard> {
   bool _hovered = false;
   static const _undoDuration = Duration(seconds: 4);
 
+  static DateTime _weekStartOf(DateTime date) =>
+      date.subtract(Duration(days: date.weekday - 1));
+
   @override
   void deactivate() {
     // Reset hover state when navigating away
@@ -318,7 +321,7 @@ class _DayCardState extends ConsumerState<DayCard> {
       instanceId: instanceId,
       undoDuration: _undoDuration,
       onComplete: () {
-        if (mounted) ref.invalidate(weeklyPlanProvider);
+        if (mounted) ref.invalidate(weeklyPlanProvider(_weekStartOf(widget.date)));
       },
     );
     
@@ -349,30 +352,37 @@ class _DayCardState extends ConsumerState<DayCard> {
       targetCourse,
     );
 
-    // Report meal plan move
-    final weekStart = ref.read(selectedWeekProvider);
-    final weekly = await service.getWeek(weekStart);
-    int daysWithMeals = 0;
-    int totalMeals = 0;
-    for (final plan in weekly.dailyPlans.values) {
-      final planMeals = weekly.meals[plan.date] ?? [];
-      if (planMeals.isNotEmpty) {
-        daysWithMeals++;
-        totalMeals += planMeals.length;
-      }
+    // Force refresh of the UI (targeted to affected weeks only)
+    final sourceWeek = _weekStartOf(data.sourceDate);
+    final destWeek = _weekStartOf(widget.date);
+    ref.invalidate(weeklyPlanProvider(sourceWeek));
+    if (sourceWeek != destWeek) {
+      ref.invalidate(weeklyPlanProvider(destWeek));
     }
-    await IntegrityService.reportEvent(
-      'activity.meal_plan_updated',
-      metadata: {
-        'action': 'move',
-        'days_with_meals': daysWithMeals,
-        'total_meals_set': totalMeals,
-      },
-    );
-    await processIntegrityResponses(ref);
-    
-    // Force refresh of the UI
-    ref.invalidate(weeklyPlanProvider);
+
+    // Report meal plan move (fire-and-forget — must not block the UI)
+    unawaited(() async {
+      final weekStart = ref.read(selectedWeekProvider);
+      final weekly = await service.getWeek(weekStart);
+      int daysWithMeals = 0;
+      int totalMeals = 0;
+      for (final plan in weekly.dailyPlans.values) {
+        final planMeals = weekly.meals[plan.date] ?? [];
+        if (planMeals.isNotEmpty) {
+          daysWithMeals++;
+          totalMeals += planMeals.length;
+        }
+      }
+      await IntegrityService.reportEvent(
+        'activity.meal_plan_updated',
+        metadata: {
+          'action': 'move',
+          'days_with_meals': daysWithMeals,
+          'total_meals_set': totalMeals,
+        },
+      );
+      await processIntegrityResponses(ref);
+    }());
   }
 
   @override
@@ -781,7 +791,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   String _selectedCourse = MealCourse.dinner;
   final _searchController = TextEditingController();
   List<Recipe> _suggestions = [];
-  
+
+  static DateTime _weekStartOf(DateTime date) =>
+      date.subtract(Duration(days: date.weekday - 1));
+
   @override
   void initState() {
     super.initState();
@@ -814,28 +827,30 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       recipeCategory: recipe.course,
     );
 
-    // Report meal plan activity
-    final weekStart = ref.read(selectedWeekProvider);
-    final weekly = await ref.read(mealPlanServiceProvider).getWeek(weekStart);
-    int daysWithMeals = 0;
-    int totalMeals = 0;
-    for (final plan in weekly.dailyPlans.values) {
-      final planMeals = weekly.meals[plan.date] ?? [];
-      if (planMeals.isNotEmpty) {
-        daysWithMeals++;
-        totalMeals += planMeals.length;
+    // Report meal plan activity (fire-and-forget — must not block the UI)
+    unawaited(() async {
+      final weekStart = ref.read(selectedWeekProvider);
+      final weekly = await ref.read(mealPlanServiceProvider).getWeek(weekStart);
+      int daysWithMeals = 0;
+      int totalMeals = 0;
+      for (final plan in weekly.dailyPlans.values) {
+        final planMeals = weekly.meals[plan.date] ?? [];
+        if (planMeals.isNotEmpty) {
+          daysWithMeals++;
+          totalMeals += planMeals.length;
+        }
       }
-    }
-    await IntegrityService.reportEvent(
-      'activity.meal_plan_updated',
-      metadata: {
-        'action': 'add',
-        'days_with_meals': daysWithMeals,
-        'total_meals_set': totalMeals,
-      },
-    );
-    await processIntegrityResponses(ref);
-    
+      await IntegrityService.reportEvent(
+        'activity.meal_plan_updated',
+        metadata: {
+          'action': 'add',
+          'days_with_meals': daysWithMeals,
+          'total_meals_set': totalMeals,
+        },
+      );
+      await processIntegrityResponses(ref);
+    }());
+
     if (!mounted) return;
     
     if (messenger != null) {
@@ -849,10 +864,12 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     } else {
       MemoixSnackBar.show('Added ${recipe.name}');
     }
-    
+
+    // Invalidate only the added meal's week, not the entire provider family
+    final addedWeekStart = _weekStartOf(_selectedDate);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
-        ref.invalidate(weeklyPlanProvider);
+        ref.invalidate(weeklyPlanProvider(addedWeekStart));
       }
     });
     
