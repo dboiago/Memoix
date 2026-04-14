@@ -117,14 +117,20 @@ class AgentsSettingsScreen extends ConsumerWidget {
       context: context,
       builder: (ctx) => SimpleDialog(
         title: const Text('Preferred Provider'),
-        children: AiProvider.values.map((p) {
-          return RadioListTile<AiProvider>(
-            title: Text(_providerLabel(p)),
-            value: p,
+        children: [
+          RadioGroup<AiProvider>(
             groupValue: settings.preferredProvider,
             onChanged: (v) => Navigator.pop(ctx, v),
-          );
-        }).toList(),
+            child: Column(
+              children: AiProvider.values.map((p) {
+                return RadioListTile<AiProvider>(
+                  title: Text(_providerLabel(p)),
+                  value: p,
+                );
+              }).toList(),
+            ),
+          ),
+        ],
       ),
     );
 
