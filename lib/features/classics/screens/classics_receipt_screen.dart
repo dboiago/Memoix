@@ -198,10 +198,10 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
     final file = File('${dir.path}/Le_Grand_Memoix.pdf');
     await file.writeAsBytes(bytes);
     try {
-      await SharePlus.shareXFiles(
-        [XFile(file.path)],
+      await SharePlus.instance.share(ShareParams(
+        files: [XFile(file.path)],
         subject: 'Le Grand Memoix',
-      );
+      ));
     } catch (e) {
       debugPrint('ClassicsReceiptScreen._saveReceipt error: $e');
       if (mounted) {

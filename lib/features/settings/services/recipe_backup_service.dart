@@ -106,11 +106,11 @@ class RecipeBackupService {
 
     // Share the file
     try {
-      await SharePlus.shareXFiles(
-        [XFile(file.path)],
+      await SharePlus.instance.share(ShareParams(
+        files: [XFile(file.path)],
         subject: 'Memoix Recipe Backup',
         text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
-      );
+      ));
     } catch (e) {
       debugPrint('RecipeBackupService.exportRecipes error: $e');
       MemoixSnackBar.showError('Could not open share sheet. Please try again.');
@@ -235,11 +235,11 @@ class RecipeBackupService {
     // Share all files
     if (files.isNotEmpty) {
       try {
-        await SharePlus.shareXFiles(
-          files,
+        await SharePlus.instance.share(ShareParams(
+          files: files,
           subject: 'Memoix Full Backup',
           text: 'Exported $filesWritten domain files',
-        );
+        ));
       } catch (e) {
         debugPrint('RecipeBackupService.exportByCourse error: $e');
         MemoixSnackBar.showError('Could not open share sheet. Please try again.');
