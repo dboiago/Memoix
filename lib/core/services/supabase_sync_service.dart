@@ -482,12 +482,14 @@ abstract class SupabaseSyncService {
           final currentUuids = pushRows
               .map((row) => row['uuid'] as String)
               .toList();
+          // PostgREST requires not.in values as (a,b,c) — parentheses, not
+          // curly braces. Using .not().inFilter() produces the correct syntax.
           await client
               .schema('memoix')
               .from('ingredients')
               .delete()
               .inFilter('recipe_uuid', affectedRecipeUuids)
-              .filter('uuid', 'not.in', currentUuids)
+              .not('uuid', 'in', '(${currentUuids.join(',')})')
               .eq('group_id', groupId);
         }
       }
