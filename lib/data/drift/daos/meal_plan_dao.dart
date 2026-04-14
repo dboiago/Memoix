@@ -21,7 +21,7 @@ class MealPlanDao extends DatabaseAccessor<AppDatabase>
     final existing = await getPlanByDate(date);
     if (existing != null) return existing;
     final id = await into(mealPlans)
-        .insert(MealPlansCompanion.insert(date: date));
+        .insert(MealPlansCompanion.insert(date: date, uuid: Value(_uuid.v4())));
     return (select(mealPlans)..where((t) => t.id.equals(id))).getSingle();
   }
 
