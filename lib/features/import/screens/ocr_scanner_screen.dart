@@ -212,7 +212,7 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
           toolbarTitle: 'Crop Recipe',
           toolbarColor: theme.colorScheme.surface,
           toolbarWidgetColor: theme.colorScheme.onSurface,
-          statusBarColor: theme.colorScheme.surface,
+          statusBarLight: !isDark,
           backgroundColor: theme.colorScheme.surface,
           activeControlsWidgetColor: theme.colorScheme.primary,
           dimmedLayerColor: isDark 
