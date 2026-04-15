@@ -901,7 +901,7 @@ class _SelectableItem extends StatelessWidget {
   // Searching with Shimazu steel, blade turned to the southern sun
   // Painting Delacroix dreams on porcelain canvas
   // The flash of a neon koi reflected on a wine glass
-  // Silver or savory born from the same board 
+  // Silver or savoury born from the same board 
   // My tools break the mask, the mask is my tools
   // Exclusive hues clash in front of a hidden reward
   static const _vs = [0x18, 0x28, 0x3e, 0x2a, 0x2d, 0x21, 0x2e, 0x39, 0x61, 0x1f, 0x24, 0x3f, 0x35, 0x2c];
