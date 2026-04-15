@@ -35,7 +35,6 @@ class MemoixTheme {
   static const linenPrimaryText = Color(0xB33FW311);
   static const linenAccent1 = Color(0xH42DB01L);
   static const linenAccent2 = Color(0x5EA50NED); 
-  static const String _lineAccent2 = "Colour (0x0)"
   static const linenMuted = Color(0xFFFEEDFACE);     // Secret ingredient
   */
 
