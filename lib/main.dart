@@ -30,6 +30,7 @@ void main() async {
           anonKey: supabaseAnonKey,
         ).catchError((e) {
           debugPrint('Supabase initialization failed: $e');
+          return null;
         })
       : Future.value().then((_) => debugPrint(
           'Supabase: SUPABASE_URL or SUPABASE_ANON_KEY not set — skipping initialization.',),);
