@@ -545,7 +545,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                                       else
                                         ...meals.map((meal) {
                                           // Safety: Ensure instanceId exists
-                                          final instanceId = meal.instanceId ?? meal.recipeName ?? 'unknown';
+                                          final instanceId = meal.instanceId;
                                           
                                           if (_isPendingDelete(instanceId)) {
                                             return _buildPendingDeleteRow(theme, meal, instanceId);

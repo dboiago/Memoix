@@ -100,8 +100,8 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
       }
       _pairedRecipeIds.addAll((jsonDecode(draft.pairedRecipeIds) as List).cast<String>());
       
-      _selectedCourse = (draft.course != null && draft.course!.isNotEmpty)
-          ? draft.course!
+      _selectedCourse = draft.course.isNotEmpty
+          ? draft.course
           : 'mains';
 
       for (final ingredient in (jsonDecode(draft.structuredIngredients) as List)) {
