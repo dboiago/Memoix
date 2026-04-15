@@ -1161,7 +1161,7 @@ final recipeSearchProvider = FutureProvider.family<List<Recipe>, String>((ref, q
 
 /// Provider for available cuisines in the database
 final availableCuisinesProvider = StreamProvider<Set<String>>((ref) {
-  return ref.watch(allRecipesProvider.stream).map((recipes) {
+  return ref.watch(recipeRepositoryProvider).watchAllRecipes().map((recipes) {
     return recipes
         .map((r) => r.cuisine)
         .where((c) => c != null && c.isNotEmpty)
