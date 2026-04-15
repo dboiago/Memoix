@@ -94,4 +94,4 @@ coverage/
 /test/
 
 # Specific Files
-integrity_content.bin
+assets/integrity_content.bin
