@@ -443,7 +443,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   Widget _buildCompactMetadata(Recipe recipe, ThemeData theme) {
     final textColor = theme.colorScheme.onSurfaceVariant;
     final baseStyle = theme.textTheme.bodySmall?.copyWith(color: textColor);
-    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+    final isDrink = recipe.course.toLowerCase() == 'drinks';
 
     // ── Pre-serves items: cuisine / spirit ─────────────────────────────────
     final preItems = <InlineSpan>[];

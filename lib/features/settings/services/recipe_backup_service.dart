@@ -258,7 +258,7 @@ class RecipeBackupService {
 
     // 1. Export all Recipe courses (including empty ones)
     final recipes = await _recipeRepository.getAllRecipes();
-    final groupedRecipes = groupBy(recipes, (Recipe r) => r.course?.toLowerCase() ?? 'uncategorized');
+    final groupedRecipes = groupBy(recipes, (Recipe r) => r.course.toLowerCase());
     
     // Get all course slugs from defaults
     final allCourseSlugs = Course.defaults

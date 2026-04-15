@@ -61,7 +61,7 @@ class SplitRecipeView extends StatelessWidget {
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
     // Check if this is a drink with glass/garnish info
-    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+    final isDrink = recipe.course.toLowerCase() == 'drinks';
     final hasGlassOrGarnish = isDrink && 
         ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty);
     
