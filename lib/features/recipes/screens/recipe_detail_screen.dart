@@ -293,6 +293,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             child: InkWell(
               onLongPress: () async {
                 await HapticFeedback.mediumImpact();
+                if (!mounted) return;
                 _showServingsBottomSheet(context, recipe);
               },
               onTap: _targetServes != null
@@ -554,7 +555,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           borderRadius: BorderRadius.circular(4),
           onLongPress: () async {
             await HapticFeedback.mediumImpact();
-            if (context.mounted) _showServingsBottomSheet(context, recipe);
+            if (!mounted) return;
+            _showServingsBottomSheet(context, recipe);
           },
           onTap: isScaled ? () => setState(() => _targetServes = null) : null,
           child: Text.rich(

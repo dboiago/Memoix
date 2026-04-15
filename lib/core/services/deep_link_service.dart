@@ -29,6 +29,7 @@ class DeepLinkService {
     try {
       final initialUri = await _appLinks.getInitialAppLink();
       if (initialUri != null && initialUri.scheme == 'memoix') {
+        if (!context.mounted) return;
         await _handleDeepLink(context, initialUri);
       }
     } catch (e) {
@@ -38,6 +39,7 @@ class DeepLinkService {
     // Listen for subsequent deep links
     _subscription = _appLinks.uriLinkStream.listen((uri) {
       if (uri.scheme == 'memoix') {
+        if (!context.mounted) return;
         _handleDeepLink(context, uri);
       }
     });
@@ -305,6 +307,7 @@ class DeepLinkService {
       }
     } catch (e) {
       debugPrint('Error handling deep link: $e');
+      if (!context.mounted) return;
       _showError(context, 'Failed to import recipe');
     }
   }

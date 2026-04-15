@@ -273,7 +273,8 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       ),
     );
 
-    if (selected == null || !mounted) return;
+    if (selected == null) return;
+    if (!mounted) return;
 
     switch (selected) {
       case 'library':
@@ -490,13 +491,12 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     );
     await processIntegrityResponses(ref);
 
-    if (mounted) {
-      // Invalidate the drafts provider to ensure the new draft is available
-      ref.invalidate(recipeDraftsProvider);
-      
-      // Navigate immediately to the draft editor
-      AppRoutes.toScratchPad(context, draftUuid: draftUuid);
-    }
+    if (!mounted) return;
+    // Invalidate the drafts provider to ensure the new draft is available
+    ref.invalidate(recipeDraftsProvider);
+    
+    // Navigate immediately to the draft editor
+    AppRoutes.toScratchPad(context, draftUuid: draftUuid);
   }
 }
 

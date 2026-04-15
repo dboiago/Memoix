@@ -243,6 +243,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     }
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromCamera();
+    if (!mounted) return;
     _handleOcrResult(context, result);
   }
 
@@ -267,6 +268,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     }
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromGallery();
+    if (!mounted) return;
     _handleOcrResult(context, result);
   }
 

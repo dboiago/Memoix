@@ -804,9 +804,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 return;
               }
               await HapticFeedback.mediumImpact();
-              if (context.mounted) {
-                _showTimerBottomSheet(context, ref, duration, direction);
-              }
+              if (!mounted) return;
+              _showTimerBottomSheet(context, ref, duration, direction);
             },
             child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
@@ -1124,6 +1123,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         );
         if (confirm == true && mounted) {
           await ref.read(modernistRepositoryProvider).delete(recipe.id);
+          if (!mounted) return;
           Navigator.pop(context);
         }
         break;

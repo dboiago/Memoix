@@ -1126,8 +1126,9 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       ),
     );
 
-    if (confirmed == true && context.mounted) {
+    if (confirmed == true && mounted) {
       await ref.read(smokingRepositoryProvider).deleteRecipe(recipe);
+      if (!mounted) return;
       Navigator.pop(context);
     }
   }
