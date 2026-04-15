@@ -91,4 +91,7 @@ desktop.ini
 coverage/
 
 # Test outputs
-/test/.test_coverage.dart
+/test/
+
+# Specific Files
+integrity_content.bin
