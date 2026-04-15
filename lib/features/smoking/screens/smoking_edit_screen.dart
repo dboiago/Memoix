@@ -2034,33 +2034,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ),
     );
   }
-}
 
-/// Helper class to manage seasoning input fields
-class _SeasoningEntry {
-  final TextEditingController nameController;
-  final TextEditingController amountController;
-  final TextEditingController notesController;
+  // ============ IMAGE PICKER METHODS ============
 
-  _SeasoningEntry({
-    required this.nameController,
-    required this.amountController,
-    TextEditingController? notesController,
-  }) : notesController = notesController ?? TextEditingController();
-
-  void dispose() {
-    nameController.dispose();
-    amountController.dispose();
-    notesController.dispose();
-  }
-}
-
-// ============ IMAGE PICKER EXTENSION ============
-
-extension _ImagePickerExtension on _SmokingEditScreenState {
   Widget _buildImagePicker(ThemeData theme) {
     final hasImage = _imagePath != null && _imagePath!.isNotEmpty;
-    
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -2158,7 +2137,7 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
 
   Widget _buildImageWidget() {
     if (_imagePath == null) return const SizedBox.shrink();
-    
+
     // Check if it's a URL or local file
     if (_imagePath!.startsWith('http://') || _imagePath!.startsWith('https://')) {
       return Image.network(
@@ -2255,5 +2234,24 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
     setState(() {
       _imagePath = null;
     });
+  }
+}
+
+/// Helper class to manage seasoning input fields
+class _SeasoningEntry {
+  final TextEditingController nameController;
+  final TextEditingController amountController;
+  final TextEditingController notesController;
+
+  _SeasoningEntry({
+    required this.nameController,
+    required this.amountController,
+    TextEditingController? notesController,
+  }) : notesController = notesController ?? TextEditingController();
+
+  void dispose() {
+    nameController.dispose();
+    amountController.dispose();
+    notesController.dispose();
   }
 }
