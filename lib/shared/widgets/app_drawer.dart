@@ -236,7 +236,7 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
                       Navigator.pop(context);
                       AppRoutes.toDesignNotes(context);
                       // From wooded floor to salt and sea
-                      // In the place where rot becomes savory
+                      // In the place where rot becomes savoury
                       // I walked through the lichen and followed the game
                       // Here the end and beginning are one and the same
                       const _wild = 'Erar Erqmrcv';
