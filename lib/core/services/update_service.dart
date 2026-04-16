@@ -41,9 +41,18 @@ class UpdateService {
     final packageInfo = await PackageInfo.fromPlatform();
     final currentVersion = packageInfo.version;
 
-    final response = await http.get(
-      Uri.parse(_apiUrl),
-    ).timeout(const Duration(seconds: 10));
+    final http.Response response;
+    try {
+      response = await http.get(
+        Uri.parse(_apiUrl),
+      ).timeout(const Duration(seconds: 10));
+    } on SocketException {
+      return null;
+    } on http.ClientException {
+      return null;
+    } on TimeoutException {
+      return null;
+    }
 
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as Map<String, dynamic>;

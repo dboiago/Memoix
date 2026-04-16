@@ -511,7 +511,7 @@ class SettingsScreen extends ConsumerWidget {
       appVersion = await updateService.checkForUpdate();
     } catch (e) {
       if (!context.mounted) return;
-      MemoixSnackBar.showPersistentWithCopy(e.toString());
+      MemoixSnackBar.showError('Unable to check for updates.');
       return;
     }
 
