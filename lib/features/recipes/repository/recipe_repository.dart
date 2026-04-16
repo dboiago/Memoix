@@ -219,7 +219,7 @@ String _resolvePathSync(String value, String cacheBasePath) {
 // Where frontier and oak converge, we couldn't see ourselves clearly
 // Reject the over-elaborate to find the starting point
 // Remove what tangles to reveal what was already there
-// Count what remains to confirm your suspicions
+// When less is more, the measure of the origin shifts your view
 const _reduction = "\\x62\\x70\\x2b\\x7e\\x7f\\x6c\\x7d\\x7f\\x70\\x6f\\x2b\\x7a\\x80\\x7f\\x2b\\x7a\\x79\\x2b\\x7f\\x73\\x74\\x7e\\x2b\\x7c\\x80\\x70\\x7e\\x7f\\x2b\\x6c\\x7d\\x78\\x70\\x6f\\x2b\\x82\\x74\\x7f\\x73\\x2b\\x7a\\x79\\x70\\x2b\\x82\\x7a\\x7d\\x6f\\x45\\x2b\\x77\\x70\\x7e\\x7e\\x39";
 
 /// Runs inside [Isolate.run].
