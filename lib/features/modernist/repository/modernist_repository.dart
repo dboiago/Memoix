@@ -172,6 +172,7 @@ class ModernistRepository {
     await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
     final ingredientCompanions = recipe.ingredients
         .map((i) => IngredientsCompanion(
+              uuid: Value(const Uuid().v4()),
               recipeId: Value(recipeId),
               name: Value(i.name),
               amount: Value(i.amount),

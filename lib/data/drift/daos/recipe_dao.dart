@@ -229,12 +229,18 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<int> saveIngredient(IngredientsCompanion ingredient) =>
-      into(ingredients).insert(ingredient);
+      into(ingredients).insert(
+        ingredient,
+        onConflict: DoUpdate((old) => ingredient, target: [ingredients.uuid]),
+      );
 
   Future<void> saveIngredients(List<IngredientsCompanion> rows) =>
       transaction(() async {
         for (final row in rows) {
-          await into(ingredients).insert(row);
+          await into(ingredients).insert(
+            row,
+            onConflict: DoUpdate((old) => row, target: [ingredients.uuid]),
+          );
         }
       });
 
