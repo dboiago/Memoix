@@ -394,7 +394,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.favorite_outline),
             title: const Text('Support Development'),
-            subtitle: const Text('Buy me a coffee'),
+            subtitle: const Text('Optional'),
             trailing: const Icon(Icons.open_in_new),
             onTap: () async {
               final uri = Uri.parse('https://www.buymeacoffee.com/dboiago');

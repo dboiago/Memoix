@@ -144,8 +144,8 @@ class SandwichRepository {
   /// Bulk import sandwiches (for GitHub sync)
   Future<void> importSandwiches(List<Sandwich> sandwiches) async {
     final companions = sandwiches.map((sandwich) => SandwichesCompanion(
-          id: Value(sandwich.id),
-          uuid: Value(sandwich.uuid),
+          id: sandwich.id > 0 ? Value(sandwich.id) : const Value.absent(),
+          uuid: Value(sandwich.uuid.isEmpty ? _uuid.v4() : sandwich.uuid),
           name: Value(sandwich.name),
           bread: Value(sandwich.bread),
           proteins: Value(sandwich.proteins),

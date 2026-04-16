@@ -150,8 +150,8 @@ class PizzaRepository {
   /// Bulk import pizzas (for GitHub sync)
   Future<void> importPizzas(List<Pizza> pizzas) async {
     final companions = pizzas.map((pizza) => PizzasCompanion(
-          id: Value(pizza.id),
-          uuid: Value(pizza.uuid),
+          id: pizza.id > 0 ? Value(pizza.id) : const Value.absent(),
+          uuid: Value(pizza.uuid.isEmpty ? _uuid.v4() : pizza.uuid),
           name: Value(pizza.name),
           base: Value(pizza.base),
           cheeses: Value(pizza.cheeses),

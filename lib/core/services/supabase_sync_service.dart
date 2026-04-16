@@ -6,6 +6,7 @@ import 'dart:io';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:drift/drift.dart';
+import 'package:uuid/uuid.dart';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -638,8 +639,9 @@ abstract class SupabaseSyncService {
     String text(String key, [String fallback = '']) =>
         row[key] as String? ?? fallback;
 
+    final recipeUuid = text('uuid');
     return RecipesCompanion(
-      uuid: Value(text('uuid')),
+      uuid: Value(recipeUuid.isEmpty ? const Uuid().v4() : recipeUuid),
       name: Value(text('name')),
       course: Value(text('course')),
       cuisine: Value(row['cuisine'] as String?),
@@ -690,7 +692,7 @@ abstract class SupabaseSyncService {
     int recipeId,
   ) {
     return IngredientsCompanion(
-      uuid: Value(row['uuid'] as String? ?? ''),
+      uuid: Value(row['uuid'] as String? ?? const Uuid().v4()),
       recipeId: Value(recipeId),
       name: Value(row['name'] as String),
       amount: Value(row['amount'] as String?),

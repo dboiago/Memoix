@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
@@ -15,6 +16,7 @@ import '../models/smoking_recipe.dart';
 
 /// Repository for smoking recipe operations
 class SmokingRepository {
+  static const _uuid = Uuid();
   final AppDatabase _db;
   final Ref _ref;
 
@@ -66,9 +68,10 @@ class SmokingRepository {
             .toList(),
       ).map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList(),
     );
+    final entryUuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid;
     await _db.smokingDao.saveRecipe(SmokingRecipesCompanion(
       id: recipe.id > 0 ? Value(recipe.id) : const Value.absent(),
-      uuid: Value(recipe.uuid),
+      uuid: Value(entryUuid),
       name: Value(recipe.name),
       course: Value(recipe.course),
       type: Value(recipe.type),
