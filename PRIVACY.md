@@ -42,25 +42,37 @@ from a third-party AI provider. When these features are used, content you submit
 credentials and your subscription. The developer has no access to this data
 or your API key. Your use is governed by your AI provider's privacy policy.
 
+## Credential Storage
+Your API keys and authentication tokens are encrypted and stored securely in your 
+device's native hardware keystore (Android Keystore / iOS Keychain). They are 
+never backed up to the database or transmitted anywhere except directly to the 
+provider.
+
 ### Camera
 Camera access is used for two purposes: on-device OCR (optical character
 recognition) to assist with recipe text import, and QR code scanning for
 recipe link import. No images are stored or transmitted as part of either
 process.
 
-## Automatic Network Requests
+### Clipboard Access (Mobile)
+When you resume the app on a mobile device, Memoix briefly checks your device's 
+clipboard specifically for `memoix://` recipe links so it can prompt you to import them. 
+This check happens entirely locally on your device. The app does not save, transmit, or 
+read any other clipboard content.
 
-The following outbound requests occur automatically during normal app use and
-do not transmit personal data beyond your IP address:
+## Network Requests
+
+The following outbound requests only occur if triggered by user action or if 
+explicitly enabled in your settings. They do not transmit personal data beyond 
+your IP address:
 
 ### App Update Check
-On startup, the app makes an unauthenticated request to the GitHub API to
-check whether a newer version is available. No personal data is transmitted.
+If enabled in settings, or when manually triggered, the app makes an 
+unauthenticated request to the GitHub API to check whether a newer version 
+is available. No personal data is transmitted. This feature is disabled by default.
 
 ### URL Import Fallback
-When importing a recipe from a URL, if the original source is unavailable,
-the app may forward that URL to the Wayback Machine (archive.org) as a
-fallback. This is triggered only by a deliberate user import action.
+When importing a recipe from a URL, if the original source is unavailable, the app may forward that URL to the Wayback Machine (archive.org) as a fallback. This is triggered only by a deliberate user import action.
 
 ## Donations
 

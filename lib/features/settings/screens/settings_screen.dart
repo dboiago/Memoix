@@ -165,13 +165,13 @@ final autoCheckUpdatesProvider = StateNotifierProvider<AutoCheckUpdatesNotifier,
 class AutoCheckUpdatesNotifier extends StateNotifier<bool> {
   static const _key = 'auto_check_updates';
 
-  AutoCheckUpdatesNotifier() : super(true) {
+  AutoCheckUpdatesNotifier() : super(false) {
     _loadPreference();
   }
 
   Future<void> _loadPreference() async {
     final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? true; // Default to ON
+    state = prefs.getBool(_key) ?? false; // Default to OFF
   }
 
   Future<void> toggle() async {
