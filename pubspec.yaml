@@ -107,11 +107,6 @@ flutter:
   fonts:
     - family: Inter
       fonts:
-        - asset: assets/fonts/Inter_18pt-Light.ttf
-          weight: 300
-        - asset: assets/fonts/Inter_18pt-LightItalic.ttf
-          weight: 300
-          style: italic
         - asset: assets/fonts/Inter_18pt-Regular.ttf
           weight: 400
         - asset: assets/fonts/Inter_18pt-Italic.ttf
@@ -119,19 +114,10 @@ flutter:
           style: italic
         - asset: assets/fonts/Inter_18pt-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Inter_18pt-MediumItalic.ttf
-          weight: 500
-          style: italic
         - asset: assets/fonts/Inter_18pt-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/Inter_18pt-SemiBoldItalic.ttf
-          weight: 600
-          style: italic
         - asset: assets/fonts/Inter_18pt-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Inter_18pt-BoldItalic.ttf
-          weight: 700
-          style: italic
     - family: Courier Prime
       fonts:
         - asset: assets/fonts/CourierPrime-Regular.ttf
@@ -166,17 +152,7 @@ flutter:
         - asset: assets/fonts/PlayfairDisplay-BoldItalic.ttf
           weight: 700
           style: italic
-        - asset: assets/fonts/PlayfairDisplay-ExtraBold.ttf
-          weight: 800
-        - asset: assets/fonts/PlayfairDisplay-ExtraBoldItalic.ttf
-          weight: 800
-          style: italic
-        - asset: assets/fonts/PlayfairDisplay-Black.ttf
-          weight: 900
-        - asset: assets/fonts/PlayfairDisplay-BlackItalic.ttf
-          weight: 900
-          style: italic
-
+          
 flutter_launcher_icons:
   android: "ic_launcher"
   ios: true
