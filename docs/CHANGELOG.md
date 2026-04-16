@@ -1,3 +1,38 @@
+## Memoix [Version Number] — 2026-04-16
+
+### Added
+- Added comprehensive data access layer (DAOs) to handle complex relational queries via Drift
+- Added image migration service to safely transition legacy file paths and blob data into the new database
+- Added strict `.env` file environment configuration for all API keys and OAuth credentials
+- Integrated deep linking infrastructure to route `memoix://` URIs internally
+- Added intelligent clipboard sniffer on mobile to securely prompt recipe imports upon app resume
+- Added dynamic manual link-entry fallback to the QR scanner for desktop/web or when camera access is denied
+- Added new reusable core UI components: card shell, filter chip, and themed search bar
+- [Internal] Added 5-second debounce timer to background sync triggers to prevent excessive network calls
+
+### Fixed
+- Fixed PostgreSQL `bytea` base64 encoding bug that caused failures in Supabase cloud sync
+- Fixed Supabase query filtering by correctly mapping Dart lists to PostgREST CSVs
+- Fixed OneDrive token persistence issues by properly clearing secure storage upon sign-out
+- Fixed Google Drive OAuth scoping by migrating to account-wide `driveScope` to prevent false matches on nested folders
+- Fixed Dark Mode status bar icon contrast logic to correctly support Material 3 surfaces
+- Fixed GitHub auto-update crash that occurred when encountering pre-release tags
+- Fixed memory leaks by disposing dangling text controllers in the import review screens
+- [Internal] Resolved Dart analyzer warnings, including resolving API deprecations and enforcing strict `mounted` checks across async UI operations
+
+### Changed
+- Migrated the entire offline-first local database architecture from Isar to Drift (SQLite)
+- Rewrote Supabase cloud sync conflict resolution to fully support Drift's relational structure (`insertOrIgnore` and `DoUpdate`)
+- Updated OneDrive repository switching to use stable, ID-based resolution instead of fragile name lookups
+- Upgraded sharing engine to `SharePlus` (v12.0.1) and refactored call sites with robust error handling
+- [Internal] Optimized app startup sequence to initialize core databases in parallel and defer non-critical tasks to post-frame callbacks
+- [Internal] Shifted heavy data parsing to background isolates using `compute()` to prevent main thread blocking
+
+### Removed
+- Removed Isar database engine and all related dependencies (`isar`, `isar_flutter_libs`, `isar_generator`)
+- Removed all hardcoded dev API keys and OAuth credentials from local configuration files
+
+
 ## Memoix v0.2.0-beta — 2026-03-05
 
 ### Added
