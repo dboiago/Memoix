@@ -31,7 +31,7 @@ Memoix does not rely on AI as part of the product surface. It is available only 
 
 ## Core Features
 
-**Flexible recipe model** 
+**Flexible recipe model**  
 Supports conventional recipes as well as formats that don’t map cleanly to ingredients + steps
 
 - Smoking notes  
