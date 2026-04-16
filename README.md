@@ -6,7 +6,7 @@
 
 Memoix is an offline-first recipe and culinary reference app built for real cooking
 
-It prioritizes speed, clarity, and flexibility over structure, guidance, or engagement mechanics. Recipes, techniques, logs, and notes live side-by-side to reflect real kitchen use.
+It prioritizes speed, clarity, and flexibility over structure, guidance, or engagement mechanics. Recipes, techniques, logs, and notes live side-by-side to reflect how cooking actually happens.
 
 ---
 
