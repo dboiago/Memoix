@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/session_index_service.dart';
@@ -25,10 +24,11 @@ class SessionLedgerScreen extends StatelessWidget {
             final label = snap.data ?? 'Reference';
             return Text(
               label,
-              style: GoogleFonts.playfairDisplay(
+              style: const TextStyle(
+                fontFamily: 'Playfair Display',
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
-                color: const Color(0xFF2C1810),
+                color: Color(0xFF2C1810),
               ),
             );
           },
@@ -69,22 +69,24 @@ class _LedgerTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final headerStyle = TextStyle(
-      fontFamily: GoogleFonts.inter().fontFamily,
+    final headerStyle = const TextStyle(
+      fontFamily: 'Inter',
       fontSize: 10,
       fontWeight: FontWeight.w700,
       letterSpacing: 1.6,
-      color: const Color(0xFF8B7355),
+      color: Color(0xFF8B7355),
     );
 
-    final rowStyle = GoogleFonts.courierPrime(
+    const rowStyle = TextStyle(
+      fontFamily: 'Courier Prime',
       fontSize: 13,
-      color: const Color(0xFF2C1810),
+      color: Color(0xFF2C1810),
     );
 
-    final guestRowStyle = GoogleFonts.courierPrime(
+    const guestRowStyle = TextStyle(
+      fontFamily: 'Courier Prime',
       fontSize: 13,
-      color: const Color(0xFF2C1810),
+      color: Color(0xFF2C1810),
       fontWeight: FontWeight.w700,
     );
 

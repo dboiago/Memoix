@@ -62,11 +62,6 @@ When importing a recipe from a URL, if the original source is unavailable,
 the app may forward that URL to the Wayback Machine (archive.org) as a
 fallback. This is triggered only by a deliberate user import action.
 
-### Font Loading
-The app uses Google Fonts. Fonts are currently fetched at runtime from
-Google's servers (fonts.googleapis.com), which exposes your IP address to
-Google. Bundling fonts locally is a planned improvement.
-
 ## Donations
 
 The app is free. An optional donation link (Ko-fi) is provided for users who

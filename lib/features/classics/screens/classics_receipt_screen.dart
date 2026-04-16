@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -211,7 +210,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
   }
 
   Widget _buildReceiptWidget() {
-    final receiptFont = GoogleFonts.courierPrime();
+    const receiptFont = TextStyle(fontFamily: 'Courier Prime');
     final stageNames = (_receiptData?['stage_names'] as Map?)
             ?.map((k, v) => MapEntry(k as String, v as String)) ??
         {};
@@ -365,7 +364,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final receiptFont = GoogleFonts.courierPrime();
+    const receiptFont = TextStyle(fontFamily: 'Courier Prime');
     if (_isLoading) {
       return const Scaffold(
         backgroundColor: Colors.white,

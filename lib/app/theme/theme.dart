@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MemoixTheme {
   MemoixTheme._();
@@ -61,7 +60,8 @@ class MemoixTheme {
         outline: lightMuted,
       ),
       scaffoldBackgroundColor: lightBackground,
-      textTheme: GoogleFonts.interTextTheme().apply(
+      textTheme: const TextTheme().apply(
+        fontFamily: 'Inter',
         bodyColor: lightPrimaryText,
         displayColor: lightPrimaryText,
       ),
@@ -184,7 +184,8 @@ class MemoixTheme {
         outline: darkMuted,
       ),
       scaffoldBackgroundColor: darkBackground,
-      textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme).apply(
+      textTheme: ThemeData.dark().textTheme.apply(
+        fontFamily: 'Inter',
         bodyColor: darkPrimaryText,
         displayColor: darkPrimaryText,
       ),
