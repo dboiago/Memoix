@@ -56,6 +56,7 @@ abstract class SupabaseSyncService {
   /// On fire, calls [sync] fire-and-forget if the user is signed in.
   /// Never throws.
   static void notifyChanged() {
+    if (!SupabaseAuthService.isSignedIn) return;
     try {
       _debounceTimer?.cancel();
       _debounceTimer = Timer(const Duration(seconds: 5), () {
