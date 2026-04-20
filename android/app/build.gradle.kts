@@ -32,11 +32,14 @@ android {
         versionName = flutter.versionName
     }
 
-    buildTypes {
-        release {
+	buildTypes {
+        getByName("release") {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
+            
+            // Make sure this line exists with the parentheses and double quotes!
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
 }
