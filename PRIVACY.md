@@ -54,12 +54,6 @@ recognition) to assist with recipe text import, and QR code scanning for
 recipe link import. No images are stored or transmitted as part of either
 process.
 
-### Clipboard Access (Mobile)
-When you resume the app on a mobile device, Memoix briefly checks your device's 
-clipboard specifically for `memoix://` recipe links so it can prompt you to import them. 
-This check happens entirely locally on your device. The app does not save, transmit, or 
-read any other clipboard content.
-
 ## Network Requests
 
 The following outbound requests only occur if triggered by user action or if 
