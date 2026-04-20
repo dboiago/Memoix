@@ -7,6 +7,7 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../recipes/models/cuisine.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -179,7 +180,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                   return _defaultMilkTypes;
                 }
                 return _defaultMilkTypes.where((m) =>
-                    m.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                    m.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
               },
               fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                 if (controller.text != _milkController.text) {
@@ -218,7 +219,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                         return _defaultTextures;
                       }
                       return _defaultTextures.where((t) =>
-                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
                     },
                     fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                       if (controller.text != _textureController.text) {
@@ -253,7 +254,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                         return _defaultTypes;
                       }
                       return _defaultTypes.where((t) =>
-                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                          t.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
                     },
                     fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                       if (controller.text != _typeController.text) {
@@ -337,7 +338,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
           color: theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
+            color: theme.colorScheme.outline.withValues(alpha: 0.3),
           ),
         ),
         child: _imagePath != null
@@ -460,26 +461,30 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
   }
 
   Future<void> _pickImage(ImageSource source) async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(
-      source: source,
-      maxWidth: 1200,
-      maxHeight: 1200,
-      imageQuality: 85,
-    );
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
 
-    if (pickedFile != null) {
-      final appDir = await getApplicationDocumentsDirectory();
-      final imagesDir = Directory('${appDir.path}/cheese_images');
-      if (!await imagesDir.exists()) {
-        await imagesDir.create(recursive: true);
+      if (pickedFile != null) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/cheese_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedPath = '${imagesDir.path}/$fileName';
+        await File(pickedFile.path).copy(savedPath);
+
+        setState(() => _imagePath = savedPath);
       }
-
-      final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
-      final savedPath = '${imagesDir.path}/$fileName';
-      await File(pickedFile.path).copy(savedPath);
-
-      setState(() => _imagePath = savedPath);
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
@@ -490,24 +495,25 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       return;
     }
 
-    final entry = _existingEntry ?? CheeseEntry();
-    entry
-      ..uuid = _existingEntry?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..country = _selectedCountry
-      ..milk = _milkController.text.trim().isEmpty ? null : _milkController.text.trim()
-      ..texture = _textureController.text.trim().isEmpty ? null : _textureController.text.trim()
-      ..type = _typeController.text.trim().isEmpty ? null : _typeController.text.trim()
-      ..buy = _buy
-      ..flavour = _flavourController.text.trim().isEmpty ? null : _flavourController.text.trim()
-      ..priceRange = _priceRange > 0 ? _priceRange : null
-      ..imageUrl = _imagePath
-      ..source = _existingEntry?.source ?? CheeseSource.personal
-      ..updatedAt = DateTime.now();
-
-    if (_existingEntry == null) {
-      entry.createdAt = DateTime.now();
-    }
+    final now = DateTime.now();
+    final entry = CheeseEntry(
+      id: _existingEntry?.id ?? 0,
+      uuid: _existingEntry?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      country: _selectedCountry,
+      milk: _milkController.text.trim().isEmpty ? null : _milkController.text.trim(),
+      texture: _textureController.text.trim().isEmpty ? null : _textureController.text.trim(),
+      type: _typeController.text.trim().isEmpty ? null : _typeController.text.trim(),
+      buy: _buy,
+      flavour: _flavourController.text.trim().isEmpty ? null : _flavourController.text.trim(),
+      priceRange: _priceRange > 0 ? _priceRange : null,
+      imageUrl: _imagePath,
+      source: _existingEntry?.source ?? CheeseSource.personal.name,
+      isFavorite: _existingEntry?.isFavorite ?? false,
+      createdAt: _existingEntry?.createdAt ?? now,
+      updatedAt: now,
+      version: _existingEntry?.version ?? 1,
+    );
 
     final repo = ref.read(cheeseRepositoryProvider);
     await repo.saveEntry(entry);
@@ -706,7 +712,7 @@ class _CountryPickerSheetState extends State<_CountryPickerSheet> {
           leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
           title: Text(cuisine.name),
           subtitle: Text(cuisine.continent, 
-            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12),),
           trailing: isSelected
               ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
               : null,
@@ -785,7 +791,7 @@ class _PriceRangeSelector extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: isSelected 
                       ? theme.colorScheme.primary 
-                      : theme.colorScheme.outline.withOpacity(0.4),
+                      : theme.colorScheme.outline.withValues(alpha: 0.4),
                 ),
               ),
             ),

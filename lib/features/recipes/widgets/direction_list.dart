@@ -73,7 +73,7 @@ class _DirectionListState extends ConsumerState<DirectionList> {
         style: baseStyle?.copyWith(
           decoration: isCompleted ? TextDecoration.lineThrough : null,
           color: isCompleted
-              ? theme.colorScheme.onSurface.withOpacity(0.5)
+              ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
               : null,
           height: 1.5,
         ),
@@ -98,7 +98,7 @@ class _DirectionListState extends ConsumerState<DirectionList> {
         style: TextStyle(
           fontStyle: FontStyle.italic,
           color: isCompleted 
-              ? theme.colorScheme.onSurface.withOpacity(0.4)
+              ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
               : theme.colorScheme.secondary,
         ),
       ),);
@@ -118,7 +118,7 @@ class _DirectionListState extends ConsumerState<DirectionList> {
         style: baseStyle?.copyWith(
           decoration: isCompleted ? TextDecoration.lineThrough : null,
           color: isCompleted
-              ? theme.colorScheme.onSurface.withOpacity(0.5)
+              ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
               : theme.colorScheme.onSurface,
           height: 1.5,
         ),
@@ -201,10 +201,10 @@ class _DirectionListState extends ConsumerState<DirectionList> {
                     shape: BoxShape.circle,
                     color: isCompleted
                         ? theme.colorScheme.surfaceContainerHighest
-                        : theme.colorScheme.secondary.withOpacity(0.15),
+                        : theme.colorScheme.secondary.withValues(alpha: 0.15),
                     border: Border.all(
                       color: isCompleted
-                          ? theme.colorScheme.outline.withOpacity(0.5)
+                          ? theme.colorScheme.outline.withValues(alpha: 0.5)
                           : theme.colorScheme.secondary,
                       width: 1.5,
                     ),
@@ -297,10 +297,10 @@ class _DirectionListState extends ConsumerState<DirectionList> {
                     shape: BoxShape.circle,
                     color: isCompleted
                         ? theme.colorScheme.surfaceContainerHighest
-                        : theme.colorScheme.secondary.withOpacity(0.15),
+                        : theme.colorScheme.secondary.withValues(alpha: 0.15),
                     border: Border.all(
                       color: isCompleted
-                          ? theme.colorScheme.outline.withOpacity(0.5)
+                          ? theme.colorScheme.outline.withValues(alpha: 0.5)
                           : theme.colorScheme.secondary,
                       width: 1.5,
                     ),

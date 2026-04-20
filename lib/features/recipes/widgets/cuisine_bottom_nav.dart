@@ -135,7 +135,7 @@ class _CuisineChip extends StatelessWidget {
       message: name ?? code,
       child: Material(
         color: isSelected
-            ? (colour ?? theme.colorScheme.primary).withOpacity(0.2)
+            ? (colour ?? theme.colorScheme.primary).withValues(alpha: 0.2)
             : Colors.transparent,
         borderRadius: BorderRadius.circular(20),
         child: InkWell(
@@ -224,7 +224,7 @@ class CuisineSelectorSheet extends StatelessWidget {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.outline.withOpacity(0.5),
+                  color: theme.colorScheme.outline.withValues(alpha: 0.5),
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -280,7 +280,7 @@ class CuisineSelectorSheet extends StatelessWidget {
                               avatar: Text(cuisine.flag),
                               label: Text(cuisine.name),
                               backgroundColor: isSelected
-                                  ? cuisine.colour.withOpacity(0.2)
+                                  ? cuisine.colour.withValues(alpha: 0.2)
                                   : null,
                               side: BorderSide(
                                 color: isSelected

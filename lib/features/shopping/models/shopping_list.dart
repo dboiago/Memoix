@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'dart:convert';
 
-import 'package:isar/isar.dart';
+import 'package:drift/drift.dart';
+import '../../../core/database/app_database.dart' hide Recipe;
 import 'package:memoix/features/shopping/controllers/shopping_list_controller.dart';
 import 'package:memoix/features/tools/measurement_converter.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
@@ -9,110 +11,13 @@ import 'package:memoix/core/utils/unit_normalizer.dart';
 import 'package:uuid/uuid.dart';
 import '../../recipes/models/recipe.dart';
 
-part 'shopping_list.g.dart';
+final Uuid _uuid = const Uuid();
 
-final Uuid _uuid = Uuid();
 
-/// A shopping list item
-@embedded
-class ShoppingItem {
-  String uuid = '';
-  String name = '';
-  String? amount;
-  String? unit; // Kept for legacy, logic now combined in detail
-  String? category; // Produce, Dairy, Meat, etc.
-  String? recipeSource; // Which recipe this came from (comma sep)
-  bool isChecked = false;
-  String? manualNotes; // Notes from controller aggregation
-
-  ShoppingItem();
-
-  ShoppingItem.create({
-    required this.name,
-    this.amount,
-    this.unit,
-    this.category,
-    this.recipeSource,
-    this.isChecked = false,
-    this.manualNotes,
-  }) : uuid = _uuid.v4();
-
-  /// Create from an ingredient
-  factory ShoppingItem.fromIngredient(Ingredient ingredient, String? recipeName) {
-    return ShoppingItem()
-      ..uuid = _uuid.v4()
-      ..name = ingredient.name
-      ..amount = ingredient.amount
-      ..category = null // No auto-categorization - just alphabetical
-      ..recipeSource = recipeName
-      ..isChecked = false;
-  }
-
-  /// Combine with another item of the same ingredient
-  ShoppingItem combine(ShoppingItem other) {
-    // For now, just note both sources. Advanced: add amounts
-    final sources = <String>[];
-    if (recipeSource != null) sources.add(recipeSource!);
-    if (other.recipeSource != null && other.recipeSource != recipeSource) {
-      sources.add(other.recipeSource!);
-    }
-    
-    return ShoppingItem()
-      ..uuid = uuid
-      ..name = name
-      ..amount = _combineAmounts(amount, other.amount)
-      ..category = category ?? other.category
-      ..recipeSource = sources.join(', ')
-      ..isChecked = false;
-  }
-
-  String? _combineAmounts(String? a, String? b) {
-    if (a == null || a.isEmpty) return b;
-    if (b == null || b.isEmpty) return a;
-    return '$a + $b'; // Simplified - could parse and add
-  }
-}
-
-/// A shopping list collection
-@collection
-class ShoppingList {
-  Id id = Isar.autoIncrement;
-
-  @Index(unique: true, replace: true)
-  late String uuid;
-
-  late String name;
-  List<ShoppingItem> items = [];
-  DateTime createdAt = DateTime.now();
-  DateTime? completedAt;
-
-  /// IDs of recipes this list was generated from
-  List<String> recipeIds = [];
-
-  ShoppingList();
-
-  bool get isComplete => items.every((item) => item.isChecked);
-
-  int get checkedCount => items.where((item) => item.isChecked).length;
-
-  /// Group items by category for display
-  @ignore
-  Map<String, List<ShoppingItem>> get groupedItems {
-    final Map<String, List<ShoppingItem>> grouped = {};
-    
-    for (final item in items) {
-      final category = item.category ?? 'Other';
-      grouped.putIfAbsent(category, () => []);
-      grouped[category]!.add(item);
-    }
-    
-    return grouped;
-  }
-}
 
 /// Service for managing shopping lists
 class ShoppingListService {
-  final Isar _db;
+  final AppDatabase _db;
 
   final Map<int, Timer> _pendingDeletes = {};
   final Map<String, Timer> _pendingItemDeletes = {};
@@ -123,45 +28,37 @@ class ShoppingListService {
   /// Generate a shopping list from recipes
   Future<ShoppingList> generateFromRecipes(List<Recipe> recipes, {String? name}) async {
     final recipeIds = recipes.map((r) => r.uuid).toList();
-    
-    // Use professional controller for aggregation
+
     final controller = ShoppingListController();
     final categoriesMap = await controller.generateShoppingList(recipes);
-    
-    // Flatten result for Isar storage
-    final flatItems = <ShoppingItem>[];
-    
-    // Iterate through categories (already sorted by Store Flow in Controller)
+
+    final now = DateTime.now();
+    final listId = await _db.shoppingDao.saveList(ShoppingListsCompanion(
+      uuid: Value(_uuid.v4()),
+      name: Value(name ?? 'Shopping List ${now.month}/${now.day}'),
+      recipeIds: Value(jsonEncode(recipeIds)),
+      createdAt: Value(now),
+    ),);
+
     for (final entry in categoriesMap.entries) {
       final categoryName = _categoryDisplayName(entry.key);
-      
       for (final item in entry.value) {
-        // Normalize the amount display before saving
         final normalizedAmount = _normalizeAmount(item.quantityDisplay);
-        
-        flatItems.add(ShoppingItem()
-          ..uuid = _uuid.v4()
-          ..name = item.name
-          ..amount = normalizedAmount
-          // Store raw unit if single, otherwise empty as it's in amount
-          ..unit = item.unit == 'mixed' ? null : item.unit 
-          ..category = categoryName
-          ..recipeSource = item.references.join(', ')
-          ..manualNotes = item.manualNotes
-          ..isChecked = false
-        );
+        await _db.shoppingDao.saveItem(ShoppingItemsCompanion(
+          shoppingListId: Value(listId),
+          uuid: Value(_uuid.v4()),
+          name: Value(item.name),
+          amount: Value(normalizedAmount),
+          unit: Value(item.unit == 'mixed' ? null : item.unit),
+          category: Value(categoryName),
+          recipeSource: Value(item.references.join(', ')),
+          manualNotes: Value(item.manualNotes),
+          isChecked: const Value(false),
+        ),);
       }
     }
 
-    final list = ShoppingList()
-      ..uuid = _uuid.v4()
-      ..name = name ?? 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
-      ..items = flatItems
-      ..recipeIds = recipeIds
-      ..createdAt = DateTime.now();
-
-    await _db.writeTxn(() => _db.shoppingLists.put(list));
-    return list;
+    return (await _db.shoppingDao.getListById(listId))!;
   }
 
   String _categoryDisplayName(dynamic cat) {
@@ -175,34 +72,32 @@ class ShoppingListService {
 
   /// Get all shopping lists
   Future<List<ShoppingList>> getAll() async {
-    return _db.shoppingLists.where().sortByCreatedAtDesc().findAll();
+    final lists = await _db.shoppingDao.getAllLists();
+    return lists..sort((a, b) => b.createdAt.compareTo(a.createdAt));
   }
 
   /// Get active (incomplete) lists
   Future<List<ShoppingList>> getActive() async {
-    return _db.shoppingLists.filter().completedAtIsNull().findAll();
+    final lists = await _db.shoppingDao.getAllLists();
+    return lists.where((l) => l.completedAt == null).toList();
   }
 
   /// Update an item's checked status
   Future<ShoppingList?> toggleItem(ShoppingList list, int itemIndex) async {
-    final latestList = await _db.shoppingLists.get(list.id);
-    if (latestList != null && itemIndex < latestList.items.length) {
-      // Modify a copy to trigger Isar update
-      final newItems = List<ShoppingItem>.from(latestList.items);
-      newItems[itemIndex].isChecked = !newItems[itemIndex].isChecked;
-      latestList.items = newItems;
-      
-      // Check if all items are complete
-      if (latestList.isComplete) {
-        latestList.completedAt = DateTime.now();
-      } else {
-        latestList.completedAt = null;
-      }
-      
-      await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      return latestList;
-    }
-    return null;
+    final items = await _db.shoppingDao.getItemsForList(list.id);
+    if (itemIndex >= items.length) return null;
+    await _db.shoppingDao.toggleItemChecked(items[itemIndex].id, items[itemIndex].isChecked);
+    final updatedItems = await _db.shoppingDao.getItemsForList(list.id);
+    final isComplete = updatedItems.isNotEmpty && updatedItems.every((i) => i.isChecked);
+    await _db.shoppingDao.saveList(ShoppingListsCompanion(
+      id: Value(list.id),
+      uuid: Value(list.uuid),
+      name: Value(list.name),
+      createdAt: Value(list.createdAt),
+      recipeIds: Value(list.recipeIds),
+      completedAt: Value(isComplete ? DateTime.now() : null),
+    ),);
+    return _db.shoppingDao.getListById(list.id);
   }
 
   /// Update an item's checked status using its UUID (with fallback to index)
@@ -211,108 +106,88 @@ class ShoppingListService {
     String itemUuid, {
     int? fallbackIndex,
   }) async {
-    final latestList = await _db.shoppingLists.get(list.id);
-    if (latestList == null) return null;
-
-    final didUpdateUuids = _ensureItemUuids(latestList);
+    final items = await _db.shoppingDao.getItemsForList(list.id);
     var index = itemUuid.isNotEmpty
-        ? latestList.items.indexWhere((item) => item.uuid == itemUuid)
+        ? items.indexWhere((i) => i.uuid == itemUuid)
         : -1;
-    
-    // Fallback to index if UUID lookup failed
-    if (index == -1 && fallbackIndex != null && fallbackIndex < latestList.items.length) {
+    if (index == -1 && fallbackIndex != null && fallbackIndex < items.length) {
       index = fallbackIndex;
     }
-    
-    if (index == -1) {
-      if (didUpdateUuids) {
-        await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      }
-      return null;
-    }
-
-    final newItems = List<ShoppingItem>.from(latestList.items);
-    newItems[index].isChecked = !newItems[index].isChecked;
-    latestList.items = newItems;
-
-    if (latestList.isComplete) {
-      latestList.completedAt = DateTime.now();
-    } else {
-      latestList.completedAt = null;
-    }
-
-    await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-    return latestList;
+    if (index == -1) return null;
+    await _db.shoppingDao.toggleItemChecked(items[index].id, items[index].isChecked);
+    final updatedItems = await _db.shoppingDao.getItemsForList(list.id);
+    final isComplete = updatedItems.isNotEmpty && updatedItems.every((i) => i.isChecked);
+    await _db.shoppingDao.saveList(ShoppingListsCompanion(
+      id: Value(list.id),
+      uuid: Value(list.uuid),
+      name: Value(list.name),
+      createdAt: Value(list.createdAt),
+      recipeIds: Value(list.recipeIds),
+      completedAt: Value(isComplete ? DateTime.now() : null),
+    ),);
+    return _db.shoppingDao.getListById(list.id);
   }
 
   /// Add a manual item to a list
   Future<ShoppingList?> addItem(ShoppingList list, ShoppingItem item) async {
-    // Re-fetch to ensure latest version
-    final latestList = await _db.shoppingLists.get(list.id);
-    if (latestList != null) {
-      // Ensure all existing items have UUIDs (prevents race with ensureItemUuids)
-      _ensureItemUuids(latestList);
+    final latestList = await _db.shoppingDao.getListById(list.id);
+    if (latestList == null) return null;
 
-      if (item.uuid.isEmpty) {
-        item.uuid = _uuid.v4();
-      }
-      // 1. Normalize Name and Amount
-      final normalizedName = TextNormalizer.cleanName(item.name);
-      item.name = normalizedName;
-      
-      // Attempt to normalize complex amount string (e.g. "2 tablespoons" -> "2 Tbsp")
-      if (item.amount != null && item.amount!.isNotEmpty) {
-        item.amount = _normalizeManualAmount(item.amount!);
-      }
+    final itemUuid = item.uuid.isEmpty ? _uuid.v4() : item.uuid;
 
-      // 2. Classify (Auto-Category)
-      if (item.category == null || item.category!.isEmpty) {
-        final catEnum = IngredientService().classify(item.name);
-        item.category = _categoryDisplayName(catEnum);
-      }
+    // 1. Normalize Name and Amount
+    final normalizedName = TextNormalizer.cleanName(item.name);
+    final normalizedAmount = (item.amount != null && item.amount!.isNotEmpty)
+        ? _normalizeManualAmount(item.amount!)
+        : item.amount;
 
-      final newItems = List<ShoppingItem>.from(latestList.items);
+    // 2. Classify (Auto-Category)
+    final categoryName = (item.category == null || item.category!.isEmpty)
+        ? _categoryDisplayName(IngredientService().classify(normalizedName))
+        : item.category;
 
-      // 3. Check for Existing Item (Merge Strategy)
-      // Use IngredientService.normalize() so "Egg" and "Eggs" resolve to the same key
-      final svc = IngredientService();
-      final mergeKey = svc.normalize(item.name);
-      final existingIndex = newItems.indexWhere(
-        (i) => svc.normalize(i.name) == mergeKey,
-      );
+    // 3. Check for Existing Item (Merge Strategy)
+    final existingItems = await _db.shoppingDao.getItemsForList(list.id);
+    final svc = IngredientService();
+    final mergeKey = svc.normalize(normalizedName);
+    final existingIndex = existingItems.indexWhere(
+      (i) => svc.normalize(i.name) == mergeKey,
+    );
 
-      if (existingIndex != -1) {
-        // Merge logic
-        final existing = newItems[existingIndex];
-        
-        // Combine amounts
-        final combinedAmount = _combineAmounts(existing.amount, item.amount);
-        
-        // Create updated item
-        newItems[existingIndex] = ShoppingItem()
-          ..uuid = existing.uuid
-          ..name = existing.name
-          ..amount = combinedAmount
-          ..unit = existing.unit // Keep existing unit or attempt merge? Simple is best for manual.
-          ..category = existing.category // Keep existing category
-          ..recipeSource = existing.recipeSource // Keep existing source info
-          ..manualNotes = (existing.manualNotes?.isNotEmpty == true) 
-              ? '${existing.manualNotes}, Manual Add' 
-              : 'Manual Add'
-          ..isChecked = false; // Uncheck when adding more
-      } else {
-        // New item
-        newItems.add(item);
-      }
-      
-      // 4. Sort entire list by Category Flow then Name
-      _sortItems(newItems);
-
-      latestList.items = newItems;
-      await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      return latestList;
+    if (existingIndex != -1) {
+      final existing = existingItems[existingIndex];
+      final combinedAmount = _combineAmounts(existing.amount, normalizedAmount);
+      await _db.shoppingDao.saveItem(ShoppingItemsCompanion(
+        id: Value(existing.id),
+        shoppingListId: Value(list.id),
+        uuid: Value(existing.uuid),
+        name: Value(existing.name),
+        amount: Value(combinedAmount),
+        unit: Value(existing.unit),
+        category: Value(existing.category),
+        recipeSource: Value(existing.recipeSource),
+        manualNotes: Value(
+          (existing.manualNotes?.isNotEmpty == true)
+              ? '${existing.manualNotes}, Manual Add'
+              : 'Manual Add',
+        ),
+        isChecked: const Value(false),
+      ),);
+    } else {
+      await _db.shoppingDao.saveItem(ShoppingItemsCompanion(
+        shoppingListId: Value(list.id),
+        uuid: Value(itemUuid),
+        name: Value(normalizedName),
+        amount: Value(normalizedAmount),
+        unit: Value(item.unit),
+        category: Value(categoryName),
+        recipeSource: Value(item.recipeSource),
+        manualNotes: Value(item.manualNotes),
+        isChecked: const Value(false),
+      ),);
     }
-    return null;
+
+    return latestList;
   }
 
   String? _combineAmounts(String? a, String? b) {
@@ -357,7 +232,7 @@ class ShoppingListService {
         double total = 0.0;
         for (final p in parsed) {
           final normalized = UnitNormalizer.normalizeUnit(
-            UnitNormalizer.normalize(p.unit).toLowerCase()
+            UnitNormalizer.normalize(p.unit).toLowerCase(),
           );
           final converted = _convertToUnit(p.qty, normalized, commonUnit);
           if (converted != null) {
@@ -390,13 +265,13 @@ class ShoppingListService {
     
     // Start with the first unit as the target
     final firstUnit = UnitNormalizer.normalizeUnit(
-      UnitNormalizer.normalize(amounts[0].unit).toLowerCase()
+      UnitNormalizer.normalize(amounts[0].unit).toLowerCase(),
     );
     
     // Check if all amounts can convert to this unit
     for (final p in amounts) {
       final unit = UnitNormalizer.normalizeUnit(
-        UnitNormalizer.normalize(p.unit).toLowerCase()
+        UnitNormalizer.normalize(p.unit).toLowerCase(),
       );
       if (unit == firstUnit) continue; // Already same
       
@@ -520,46 +395,31 @@ class ShoppingListService {
 
   /// Remove an item from a list
   Future<ShoppingList?> removeItem(ShoppingList list, int itemIndex) async {
-    final latestList = await _db.shoppingLists.get(list.id);
-    if (latestList != null && itemIndex < latestList.items.length) {
-      final newItems = List<ShoppingItem>.from(latestList.items)..removeAt(itemIndex);
-      latestList.items = newItems;
-      await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      return latestList;
-    }
-    return null;
+    final latestList = await _db.shoppingDao.getListById(list.id);
+    if (latestList == null) return null;
+    final items = await _db.shoppingDao.getItemsForList(list.id);
+    if (itemIndex >= items.length) return null;
+    await _db.shoppingDao.deleteItem(items[itemIndex].id);
+    return latestList;
   }
 
   /// Remove an item from a list using its UUID
   Future<ShoppingList?> removeItemById(ShoppingList list, String itemUuid) async {
-    final latestList = await _db.shoppingLists.get(list.id);
+    final latestList = await _db.shoppingDao.getListById(list.id);
     if (latestList == null) return null;
-
-    final didUpdateUuids = _ensureItemUuids(latestList);
-    final index = latestList.items.indexWhere((item) => item.uuid == itemUuid);
-    if (index == -1) {
-      if (didUpdateUuids) {
-        await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      }
-      return null;
-    }
-
-    final newItems = List<ShoppingItem>.from(latestList.items)..removeAt(index);
-    latestList.items = newItems;
-    await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+    await _db.shoppingDao.deleteItemByUuid(itemUuid);
     return latestList;
   }
 
   /// Remove an item by UUID using list ID only
   Future<ShoppingList?> removeItemByUuid(int listId, String itemUuid) async {
-    final latestList = await _db.shoppingLists.get(listId);
-    if (latestList == null) return null;
-    return removeItemById(latestList, itemUuid);
+    await _db.shoppingDao.deleteItemByUuid(itemUuid);
+    return _db.shoppingDao.getListById(listId);
   }
 
   /// Remove an item by index using list ID only (fallback)
   Future<ShoppingList?> removeItemByIndex(int listId, int itemIndex) async {
-    final latestList = await _db.shoppingLists.get(listId);
+    final latestList = await _db.shoppingDao.getListById(listId);
     if (latestList == null) return null;
     return removeItem(latestList, itemIndex);
   }
@@ -570,31 +430,31 @@ class ShoppingListService {
     String itemUuid,
     String? amount,
   ) async {
-    final latestList = await _db.shoppingLists.get(list.id);
+    final latestList = await _db.shoppingDao.getListById(list.id);
     if (latestList == null) return null;
-
-    final didUpdateUuids = _ensureItemUuids(latestList);
-    final index = latestList.items.indexWhere((item) => item.uuid == itemUuid);
-    if (index == -1) {
-      if (didUpdateUuids) {
-        await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      }
-      return null;
-    }
-
-    final newItems = List<ShoppingItem>.from(latestList.items);
+    final item = await _db.shoppingDao.getItemByUuid(itemUuid);
+    if (item == null) return null;
     final normalizedAmount = (amount == null || amount.trim().isEmpty)
         ? null
         : _normalizeManualAmount(amount.trim());
-    newItems[index].amount = normalizedAmount;
-    latestList.items = newItems;
-    await _db.writeTxn(() => _db.shoppingLists.put(latestList));
+    await _db.shoppingDao.saveItem(ShoppingItemsCompanion(
+      id: Value(item.id),
+      shoppingListId: Value(item.shoppingListId),
+      uuid: Value(item.uuid),
+      name: Value(item.name),
+      amount: Value(normalizedAmount),
+      unit: Value(item.unit),
+      category: Value(item.category),
+      recipeSource: Value(item.recipeSource),
+      isChecked: Value(item.isChecked),
+      manualNotes: Value(item.manualNotes),
+    ),);
     return latestList;
   }
 
   /// Delete a shopping list
   Future<void> delete(int id) async {
-    await _db.writeTxn(() => _db.shoppingLists.delete(id));
+    await _db.shoppingDao.deleteList(id);
   }
 
   /// Schedule a list deletion with undo capability
@@ -641,14 +501,9 @@ class ShoppingListService {
     var resolvedIndex = fallbackIndex;
 
     if (resolvedUuid.isEmpty && resolvedIndex != null) {
-      final latestList = await _db.shoppingLists.get(listId);
-      if (latestList != null) {
-        if (_ensureItemUuids(latestList)) {
-          await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-        }
-        if (resolvedIndex >= 0 && resolvedIndex < latestList.items.length) {
-          resolvedUuid = latestList.items[resolvedIndex].uuid;
-        }
+      final items = await _db.shoppingDao.getItemsForList(listId);
+      if (resolvedIndex >= 0 && resolvedIndex < items.length) {
+        resolvedUuid = items[resolvedIndex].uuid;
       }
     }
 
@@ -673,17 +528,15 @@ class ShoppingListService {
       }
 
       if (!removed) {
-        final latestList = await _db.shoppingLists.get(data.listId);
-        if (latestList != null) {
-          final matchIndex = _findItemIndexByFields(
-            latestList,
-            data.itemName,
-            data.itemAmount,
-            data.itemRecipeSource,
-          );
-          if (matchIndex != null) {
-            removed = (await removeItemByIndex(data.listId, matchIndex)) != null;
-          }
+        final items = await _db.shoppingDao.getItemsForList(data.listId);
+        final matchIndex = _findItemIndexByFields(
+          items,
+          data.itemName,
+          data.itemAmount,
+          data.itemRecipeSource,
+        );
+        if (matchIndex != null) {
+          removed = (await removeItemByIndex(data.listId, matchIndex)) != null;
         }
       }
 
@@ -722,59 +575,48 @@ class ShoppingListService {
 
   /// Rename a shopping list
   Future<ShoppingList?> rename(ShoppingList list, String newName) async {
-    final latestList = await _db.shoppingLists.get(list.id);
-    if (latestList != null) {
-      latestList.name = newName;
-      await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-      return latestList;
-    }
-    return null;
+    final latestList = await _db.shoppingDao.getListById(list.id);
+    if (latestList == null) return null;
+    await _db.shoppingDao.saveList(ShoppingListsCompanion(
+      id: Value(latestList.id),
+      uuid: Value(latestList.uuid),
+      name: Value(newName),
+      createdAt: Value(latestList.createdAt),
+      recipeIds: Value(latestList.recipeIds),
+      completedAt: Value(latestList.completedAt),
+    ),);
+    return _db.shoppingDao.getListById(list.id);
   }
 
   /// Create an empty list with a name
   Future<ShoppingList> createEmpty({String? name}) async {
-    final list = ShoppingList()
-      ..uuid = _uuid.v4()
-      ..name = name ?? 'Shopping List ${DateTime.now().month}/${DateTime.now().day}'
-      ..items = []
-      ..createdAt = DateTime.now();
-    await _db.writeTxn(() => _db.shoppingLists.put(list));
-    return list;
+    final now = DateTime.now();
+    final listId = await _db.shoppingDao.saveList(ShoppingListsCompanion(
+      uuid: Value(_uuid.v4()),
+      name: Value(name ?? 'Shopping List ${now.month}/${now.day}'),
+      createdAt: Value(now),
+      recipeIds: const Value('[]'),
+    ),);
+    return (await _db.shoppingDao.getListById(listId))!;
   }
 
   /// Watch all shopping lists
   Stream<List<ShoppingList>> watchAll() {
-    return _db.shoppingLists.where().sortByCreatedAtDesc().watch(fireImmediately: true);
+    return _db.shoppingDao.watchAllLists();
   }
 
-  Future<void> ensureItemUuids(ShoppingList list) async {
-    final latestList = await _db.shoppingLists.get(list.id);
-    if (latestList == null) return;
+  Future<void> ensureItemUuids(ShoppingList list) async {}
 
-    if (_ensureItemUuids(latestList)) {
-      await _db.writeTxn(() => _db.shoppingLists.put(latestList));
-    }
-  }
-
-  bool _ensureItemUuids(ShoppingList list) {
-    var changed = false;
-    for (final item in list.items) {
-      if (item.uuid.isEmpty) {
-        item.uuid = _uuid.v4();
-        changed = true;
-      }
-    }
-    return changed;
-  }
+  bool _ensureItemUuids(ShoppingList list) => false;
 
   int? _findItemIndexByFields(
-    ShoppingList list,
+    List<ShoppingItem> items,
     String name,
     String? amount,
     String? recipeSource,
   ) {
-    for (var i = 0; i < list.items.length; i++) {
-      final item = list.items[i];
+    for (var i = 0; i < items.length; i++) {
+      final item = items[i];
       if (item.name == name &&
           item.amount == amount &&
           item.recipeSource == recipeSource) {

@@ -13,7 +13,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../ai/ai_settings.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../../ai/ai_provider_config.dart';
-import '../../ai/models/ai_response.dart';
 import '../../ai/services/ai_key_storage.dart';
 import '../../import/ai/ai_provider.dart';
 import '../../import/ai/claude_client.dart';

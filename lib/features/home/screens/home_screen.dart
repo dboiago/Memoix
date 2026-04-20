@@ -25,7 +25,6 @@ import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/models/cellar_entry.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../settings/screens/settings_screen.dart';
-import '../../classics/screens/classics_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -35,7 +34,10 @@ class HomeScreen extends ConsumerWidget {
     final coursesAsync = ref.watch(coursesProvider);
     return coursesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (err, _) => Center(child: Text('Error: $err')),
+      error: (err, _) {
+        debugPrint('HomeScreen error: $err');
+        return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+      },
       data: (courses) => _CourseGridView(courses: courses),
     );
   }
@@ -210,7 +212,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final pizzasAsync = ref.watch(allPizzasProvider);
                       itemCount = pizzasAsync.maybeWhen(
                         data: (pizzas) => hideMemoix
-                            ? pizzas.where((p) => p.source != PizzaSource.memoix).length
+                            ? pizzas.where((p) => p.source != PizzaSource.memoix.name).length
                             : pizzas.length,
                         orElse: () => 0,
                       );
@@ -218,7 +220,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final sandwichesAsync = ref.watch(allSandwichesProvider);
                       itemCount = sandwichesAsync.maybeWhen(
                         data: (sandwiches) => hideMemoix
-                            ? sandwiches.where((s) => s.source != SandwichSource.memoix).length
+                            ? sandwiches.where((s) => s.source != SandwichSource.memoix.name).length
                             : sandwiches.length,
                         orElse: () => 0,
                       );
@@ -226,7 +228,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final smokingAsync = ref.watch(allSmokingRecipesProvider);
                       itemCount = smokingAsync.maybeWhen(
                         data: (recipes) => hideMemoix
-                            ? recipes.where((r) => r.source != SmokingSource.memoix).length
+                            ? recipes.where((r) => r.source != SmokingSource.memoix.name).length
                             : recipes.length,
                         orElse: () => 0,
                       );
@@ -242,7 +244,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final cheeseAsync = ref.watch(allCheeseEntriesProvider);
                       itemCount = cheeseAsync.maybeWhen(
                         data: (entries) => hideMemoix
-                            ? entries.where((e) => e.source != CheeseSource.memoix).length
+                            ? entries.where((e) => e.source != CheeseSource.memoix.name).length
                             : entries.length,
                         orElse: () => 0,
                       );
@@ -250,7 +252,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                       final cellarAsync = ref.watch(allCellarEntriesProvider);
                       itemCount = cellarAsync.maybeWhen(
                         data: (entries) => hideMemoix
-                            ? entries.where((e) => e.source != CellarSource.memoix).length
+                            ? entries.where((e) => e.source != CellarSource.memoix.name).length
                             : entries.length,
                         orElse: () => 0,
                       );
@@ -359,7 +361,7 @@ class _CourseRecipeViewState extends State<CourseRecipeView> with SingleTickerPr
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: course.color.withOpacity(0.2),
+                    color: course.color.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Row(

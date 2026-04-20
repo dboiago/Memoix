@@ -24,19 +24,19 @@ class ClaudeClient {
 
     if (text != null && text.trim().isNotEmpty) {
       content.add({
-        "type": "text",
-        "text": text,
+        'type': 'text',
+        'text': text,
       });
     }
 
     if (imageBytes != null) {
       content.add({
-        "type": "image",
-        "source": {
-          "type": "base64",
-          "media_type": "image/jpeg",
-          "data": base64Encode(imageBytes),
-        }
+        'type': 'image',
+        'source': {
+          'type': 'base64',
+          'media_type': 'image/jpeg',
+          'data': base64Encode(imageBytes),
+        },
       });
     }
 
@@ -52,13 +52,13 @@ class ClaudeClient {
         'content-type': 'application/json',
       });
       request.body = jsonEncode({
-        "model": model,
-        "system": systemPrompt,
-        "messages": [
-          {"role": "user", "content": content}
+        'model': model,
+        'system': systemPrompt,
+        'messages': [
+          {'role': 'user', 'content': content},
         ],
-        "temperature": temperature,
-        "max_tokens": 4096,
+        'temperature': temperature,
+        'max_tokens': 4096,
       });
 
       final streamed = await client.send(request);

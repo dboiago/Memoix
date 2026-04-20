@@ -6,13 +6,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.memoix"
+    namespace = "io.github.dboiago.memoix"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+		isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
@@ -31,13 +32,20 @@ android {
         versionName = flutter.versionName
     }
 
-    buildTypes {
-        release {
+	buildTypes {
+        getByName("release") {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
+            
+            // Make sure this line exists with the parentheses and double quotes!
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 
 flutter {

@@ -312,7 +312,7 @@ class _IngredientListState extends State<IngredientList> {
                               style: textStyle?.copyWith(
                                 decoration: isChecked ? TextDecoration.lineThrough : null,
                                 color: isChecked
-                                    ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                    ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                     : null,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -325,7 +325,7 @@ class _IngredientListState extends State<IngredientList> {
                                 style: textStyle?.copyWith(
                                   decoration: isChecked ? TextDecoration.lineThrough : null,
                                   color: isChecked
-                                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                      ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                       : theme.colorScheme.onSurfaceVariant,
                                 ),
                               ),
@@ -335,7 +335,7 @@ class _IngredientListState extends State<IngredientList> {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                                 decoration: BoxDecoration(
-                                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                                   borderRadius: BorderRadius.circular(4),
                                   border: Border.all(
                                     color: theme.colorScheme.secondary,
@@ -356,7 +356,7 @@ class _IngredientListState extends State<IngredientList> {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                                 decoration: BoxDecoration(
-                                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                                   borderRadius: BorderRadius.circular(4),
                                   border: Border.all(
                                     color: theme.colorScheme.secondary,
@@ -387,7 +387,7 @@ class _IngredientListState extends State<IngredientList> {
                                 style: textStyle?.copyWith(
                                   decoration: isChecked ? TextDecoration.lineThrough : null,
                                   color: isChecked
-                                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                      ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                       : theme.colorScheme.primary,
                                   fontStyle: FontStyle.italic,
                                 ),
@@ -406,7 +406,7 @@ class _IngredientListState extends State<IngredientList> {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.primary.withOpacity(0.15),
+                          color: theme.colorScheme.primary.withValues(alpha: 0.15),
                           borderRadius: BorderRadius.circular(4),
                           border: Border.all(
                             color: theme.colorScheme.primary,

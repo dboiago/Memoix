@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/text_normalizer.dart';
 import '../../modernist/models/modernist_recipe.dart';
@@ -134,10 +136,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   bool get shouldShowCompareButton {
     final allowed = {
       'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
-      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles'
+      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles',
     };
     final blocked = {
-      'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar'
+      'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar',
     };
     final course = _selectedCourse.toLowerCase();
     if (blocked.contains(course)) return false;
@@ -275,10 +277,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         }
       }
       
-      // Load header image only (from getFirstImage)
-      final firstImage = recipe.getFirstImage();
-      if (firstImage != null && firstImage.isNotEmpty) {
-        _headerImage = firstImage;
+      // Load header image only — do not fall back to step/gallery images
+      if (recipe.headerImage != null && recipe.headerImage!.isNotEmpty) {
+        _headerImage = recipe.headerImage;
       }
       
       // Load drinks-specific fields
@@ -329,7 +330,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 amountController: TextEditingController(),
                 notesController: TextEditingController(),
                 bakerPercentController: TextEditingController(),
-              ));
+              ),);
             }
           }
         }
@@ -380,7 +381,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     const validSlugs = {
       'apps', 'soup', 'mains', 'vegn', 'sides', 'salad', 'desserts', 
       'brunch', 'drinks', 'breads', 'sauces', 'rubs', 'pickles', 
-      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch'
+      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch',
     };
     
     return validSlugs.contains(mapped) ? mapped : 'mains';
@@ -501,7 +502,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -523,7 +524,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
                 ),
@@ -675,7 +676,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       color: theme.colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: theme.colorScheme.outline.withOpacity(0.3),
+                        color: theme.colorScheme.outline.withValues(alpha: 0.3),
                       ),
                     ),
                     child: Column(
@@ -739,7 +740,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       top: 4,
                       right: 4,
                       child: Material(
-                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        color: theme.colorScheme.surface.withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
                           onTap: () => _removeGalleryImage(index),
@@ -1314,7 +1315,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   // Ingredient rows (reorderable)
                   Container(
                     decoration: BoxDecoration(
-                      border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                      border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
                       borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
                     ),
                     child: ReorderableListView.builder(
@@ -1612,7 +1613,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               ? null 
               : row.notesController.text.trim(),
           section: currentSection,
-        ));
+        ),);
       }
     }
     
@@ -1653,7 +1654,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..name = row.nameController.text.trim()
         ..amount = row.amountController.text.trim().isEmpty 
             ? null 
-            : row.amountController.text.trim());
+            : row.amountController.text.trim(),);
     }
     
     // Build directions
@@ -1662,21 +1663,35 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         .map((row) => row.controller.text.trim())
         .toList();
     
-    return SmokingRecipe()
-      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..course = course
-      ..type = SmokingType.recipe
-      ..seasonings = seasonings
-      ..directions = directions
-      ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..headerImage = _headerImage
-      ..stepImages = _stepImages
-      ..stepImageMap = _stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()
-      ..pairedRecipeIds = _pairedRecipeIds
-      ..source = SmokingSource.personal
-      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
-      ..updatedAt = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
+      uuid: _existingRecipe?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      course: course,
+      type: SmokingType.recipe.name,
+      item: null,
+      category: null,
+      temperature: '',
+      time: '',
+      wood: '',
+      seasoningsJson: jsonEncode(seasonings
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .toList(),),
+      ingredientsJson: '[]',
+      serves: null,
+      directions: jsonEncode(directions),
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      headerImage: _headerImage,
+      stepImages: jsonEncode(_stepImages),
+      stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.personal.name,
+      pairedRecipeIds: jsonEncode(_pairedRecipeIds),
+      createdAt: _existingRecipe?.createdAt ?? DateTime.now(),
+      updatedAt: DateTime.now(),
+    );
   }
 
   /// Open the recipe in comparison tool
@@ -1690,7 +1705,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => RecipeComparisonScreen(),
+        builder: (_) => const RecipeComparisonScreen(),
       ),
     );
   }
@@ -1729,7 +1744,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..preparation = row.notesController.text.trim().isEmpty 
             ? null 
             : row.notesController.text.trim()
-        ..section = currentSection
+        ..section = currentSection,
       );
     }
     
@@ -1871,6 +1886,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..pairedRecipeIds = _supportsPairingForCourse(_selectedCourse) ? _pairedRecipeIds : []
         ..updatedAt = DateTime.now();
 
+      if (_existingRecipe != null) {
+        recipe.id = _existingRecipe!.id;
+      }
+
       if (isEdit) {
         recipe.editCount = (recipe.editCount) + 1;
         final now = DateTime.now();
@@ -1925,9 +1944,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         );
       }
     } catch (e) {
-      MemoixSnackBar.showError('Error saving recipe: $e');
+      if (mounted) MemoixSnackBar.showError('Error saving recipe: $e');
     } finally {
-      setState(() => _isSaving = false);
+      if (mounted) setState(() => _isSaving = false);
     }
   }
 
@@ -1942,10 +1961,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         key: key,
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
           border: isLast 
               ? null 
-              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
         ),
         child: Row(
           children: [
@@ -2065,7 +2084,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       decoration: BoxDecoration(
         border: isLast 
             ? null 
-            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -2363,7 +2382,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+                color: theme.colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: hasImage
@@ -2522,7 +2541,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     double size = 20,
   }) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,
@@ -2692,7 +2711,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               label: Text(item),
               deleteIcon: const Icon(Icons.close, size: 18),
               onDeleted: () => setState(() => _garnish.remove(item)),
-            )).toList(),
+            ),).toList(),
           ),
         ],
       ],
@@ -2870,7 +2889,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });

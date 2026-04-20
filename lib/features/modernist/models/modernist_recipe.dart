@@ -1,6 +1,5 @@
-import 'package:isar/isar.dart';
 
-part 'modernist_recipe.g.dart';
+import '../../recipes/models/recipe.dart';
 
 /// Type of modernist recipe
 enum ModernistType {
@@ -170,7 +169,6 @@ class ModernistEquipment {
 }
 
 /// Embedded ingredient for modernist recipes
-@embedded
 class ModernistIngredient {
   String name = '';
   String? amount;
@@ -213,37 +211,31 @@ class ModernistIngredient {
 
   factory ModernistIngredient.fromJson(Map<String, dynamic> json) {
     return ModernistIngredient()
-      ..name = json['name'] as String? ?? ''
-      ..amount = json['amount'] as String?
-      ..unit = json['unit'] as String?
-      ..notes = json['notes'] as String?
-      ..section = json['section'] as String?;
+      ..name = json['name']?.toString() ?? ''
+      ..amount = json['amount']?.toString()
+      ..unit = json['unit']?.toString()
+      ..notes = json['notes']?.toString()
+      ..section = json['section']?.toString();
   }
 }
 
 /// A modernist cooking recipe entity
-@collection
 class ModernistRecipe {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
-  @Index(unique: true, replace: true)
   late String uuid;
 
-  @Index()
   late String name;
 
   /// Course (e.g., "Mains", "Desserts", "Sauces")
   /// Defaults to "modernist" but can be changed
-  @Index()
   String course = 'modernist';
 
   /// Type of recipe: Concept or Technique
-  @Enumerated(EnumType.name)
   ModernistType type = ModernistType.concept;
 
   /// Technique category (e.g., "Spherification", "Foams", etc.)
   /// Used for filtering and organization
-  @Index()
   String? technique;
 
   /// Number of servings
@@ -296,7 +288,6 @@ class ModernistRecipe {
   int cookCount = 0;
 
   /// Source of the recipe
-  @Enumerated(EnumType.name)
   ModernistSource source = ModernistSource.personal;
 
   /// Paired recipe IDs (links to related Recipe items)
@@ -451,47 +442,47 @@ class ModernistRecipe {
       'cookCount': cookCount,
       'source': source.name,
       'pairedRecipeIds': pairedRecipeIds,
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
+      'createdAt': createdAt.toUtc().toIso8601String(),
+      'updatedAt': updatedAt.toUtc().toIso8601String(),
     };
   }
 
   /// Create from JSON
   factory ModernistRecipe.fromJson(Map<String, dynamic> json) {
     return ModernistRecipe()
-      ..uuid = json['uuid'] as String
-      ..name = json['name'] as String
-      ..course = json['course'] as String? ?? 'modernist'
+      ..uuid = json['uuid']?.toString() ?? ''
+      ..name = json['name']?.toString() ?? ''
+      ..course = json['course']?.toString() ?? 'modernist'
       ..type = ModernistType.values.firstWhere(
         (e) => e.name == json['type'],
         orElse: () => ModernistType.concept,
       )
-      ..technique = json['technique'] as String?
-      ..serves = json['serves'] as String?
-      ..time = json['time'] as String?
-      ..difficulty = json['difficulty'] as String?
+      ..technique = json['technique']?.toString()
+      ..serves = json['serves']?.toString()
+      ..time = json['time']?.toString()
+      ..difficulty = json['difficulty']?.toString()
       ..equipment = (json['equipment'] as List<dynamic>?)
-          ?.map((e) => e as String)
+          ?.map((e) => e.toString())
           .toList() ?? []
       ..ingredients = (json['ingredients'] as List<dynamic>?)
           ?.map((e) => ModernistIngredient.fromJson(e as Map<String, dynamic>))
           .toList() ?? []
       ..directions = (json['directions'] as List<dynamic>?)
-          ?.map((e) => e as String)
+          ?.map((e) => e.toString())
           .toList() ?? []
-      ..notes = json['notes'] as String?
-      ..scienceNotes = json['scienceNotes'] as String?
-      ..sourceUrl = json['sourceUrl'] as String?
-      ..headerImage = json['headerImage'] as String?
+      ..notes = json['notes']?.toString()
+      ..scienceNotes = json['scienceNotes']?.toString()
+      ..sourceUrl = json['sourceUrl']?.toString()
+      ..headerImage = json['headerImage']?.toString()
       ..stepImages = (json['stepImages'] as List<dynamic>?)
-          ?.map((e) => e as String)
+          ?.map((e) => e.toString())
           .toList() ?? []
       ..stepImageMap = (json['stepImageMap'] as List<dynamic>?)
-          ?.map((e) => e as String)
+          ?.map((e) => e.toString())
           .toList() ?? []
-      ..imageUrl = json['imageUrl'] as String?
+      ..imageUrl = json['imageUrl']?.toString()
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
-          ?.map((e) => e as String)
+          ?.map((e) => e.toString())
           .toList() ?? []
       ..isFavorite = json['isFavorite'] as bool? ?? false
       ..cookCount = json['cookCount'] as int? ?? 0
@@ -500,7 +491,7 @@ class ModernistRecipe {
         orElse: () => ModernistSource.personal,
       )
       ..pairedRecipeIds = (json['pairedRecipeIds'] as List<dynamic>?)
-          ?.map((e) => e as String)
+          ?.map((e) => e.toString())
           .toList() ?? [];
   }
 
@@ -522,5 +513,35 @@ class ModernistRecipe {
       'scienceNotes': scienceNotes,
       'sourceUrl': sourceUrl,
     };
+  }
+
+  /// Convert to a [Recipe] suitable for the Recipe Comparison screen.
+  Recipe toRecipe() {
+    final dirs = List<String>.from(directions);
+    if (technique != null && technique!.isNotEmpty) {
+      dirs.add('Technique: $technique');
+    }
+    if (scienceNotes != null && scienceNotes!.isNotEmpty) {
+      dirs.add('Science Notes: $scienceNotes');
+    }
+    return Recipe()
+      ..uuid = uuid
+      ..name = name
+      ..course = 'modernist'
+      ..modernistType = type.name
+      ..recipeType = 'modernist'
+      ..directions = dirs
+      ..stepImages = List<String>.from(stepImages)
+      ..stepImageMap = List<String>.from(stepImageMap)
+      ..ingredients = ingredients
+          .map((i) => Ingredient()
+            ..name = i.name
+            ..amount = i.amount
+            ..unit = i.unit
+            ..preparation = i.notes
+            ..section = i.section,)
+          .toList()
+      ..createdAt = createdAt
+      ..updatedAt = updatedAt;
   }
 }

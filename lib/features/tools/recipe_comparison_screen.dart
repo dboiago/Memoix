@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../app/routes/router.dart';
+import '../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../core/services/integrity_service.dart';
 import '../../core/widgets/memoix_snackbar.dart';
 import '../../shared/widgets/recipe_picker_modal.dart';
@@ -130,11 +132,6 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       }
       */
     }
-
-  /// Stub: visual transition effect triggered by view override.
-  void _executeTransitionEffect() {
-    // TODO: implement visual effect payload
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -276,7 +273,8 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       ),
     );
 
-    if (selected == null || !mounted) return;
+    if (selected == null) return;
+    if (!mounted) return;
 
     switch (selected) {
       case 'library':
@@ -436,26 +434,49 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
       ref.read(recipeComparisonProvider.notifier).setCurrentDraftUuid(draftUuid);
     }
 
+    final draftName = _draftTitleController.text.trim().isEmpty
+        ? 'Compared Recipe Draft'
+        : _draftTitleController.text.trim();
+
     // Convert Ingredients to DraftIngredients (structured format with preparation notes)
     final draftIngredients = ingredients.map((i) => DraftIngredient(
       name: i.name,
       quantity: i.amount,
       unit: i.unit,
       preparation: i.preparation,
-    )).toList();
+    ),).toList();
 
-    // Create or update draft using structured format
-    final draft = RecipeDraft()
-      ..uuid = draftUuid
-      ..name = _draftTitleController.text.trim().isEmpty 
-          ? 'Compared Recipe Draft' 
-          : _draftTitleController.text.trim()
-      ..structuredIngredients = draftIngredients
-      ..structuredDirections = steps
-      ..createdAt = DateTime.now()
-      ..updatedAt = DateTime.now();
+    final siJson = jsonEncode(draftIngredients.map((i) => {
+        'name': i.name,
+        'quantity': i.quantity,
+        'unit': i.unit,
+        'preparation': i.preparation,
+      },).toList(),);
 
-    await ref.read(scratchPadRepositoryProvider).updateDraft(draft);
+    // Look up existing draft; create a new one if not found, then update with full content
+    final existingDraft =
+        await ref.read(scratchPadRepositoryProvider).getDraftByUuid(draftUuid);
+    final RecipeDraft draftToSave;
+    if (existingDraft != null) {
+      draftToSave = existingDraft.copyWith(
+        name: draftName,
+        structuredIngredients: siJson,
+        structuredDirections: jsonEncode(steps),
+        stepImages: jsonEncode(stepImages),
+        stepImageMap: jsonEncode(stepImageMap),
+      );
+    } else {
+      final created =
+          await ref.read(scratchPadRepositoryProvider).createDraft(name: draftName);
+      draftToSave = created.copyWith(
+        uuid: draftUuid,
+        structuredIngredients: siJson,
+        structuredDirections: jsonEncode(steps),
+        stepImages: jsonEncode(stepImages),
+        stepImageMap: jsonEncode(stepImageMap),
+      );
+    }
+    await ref.read(scratchPadRepositoryProvider).updateDraft(draftToSave);
 
     await IntegrityService.reportEvent(
       'activity.recipes_compared',
@@ -470,13 +491,12 @@ class _RecipeComparisonScreenState extends ConsumerState<RecipeComparisonScreen>
     );
     await processIntegrityResponses(ref);
 
-    if (mounted) {
-      // Invalidate the drafts provider to ensure the new draft is available
-      ref.invalidate(recipeDraftsProvider);
-      
-      // Navigate immediately to the draft editor
-      AppRoutes.toScratchPad(context, draftUuid: draftUuid);
-    }
+    if (!mounted) return;
+    // Invalidate the drafts provider to ensure the new draft is available
+    ref.invalidate(recipeDraftsProvider);
+    
+    // Navigate immediately to the draft editor
+    AppRoutes.toScratchPad(context, draftUuid: draftUuid);
   }
 }
 
@@ -881,7 +901,7 @@ class _SelectableItem extends StatelessWidget {
   // Searching with Shimazu steel, blade turned to the southern sun
   // Painting Delacroix dreams on porcelain canvas
   // The flash of a neon koi reflected on a wine glass
-  // Silver or savory born from the same board 
+  // Silver or savoury born from the same board 
   // My tools break the mask, the mask is my tools
   // Exclusive hues clash in front of a hidden reward
   static const _vs = [0x18, 0x28, 0x3e, 0x2a, 0x2d, 0x21, 0x2e, 0x39, 0x61, 0x1f, 0x24, 0x3f, 0x35, 0x2c];

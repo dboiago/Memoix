@@ -152,6 +152,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                         'activity.reference_viewed',
                         metadata: {'ref': refReservations ?? ''},
                       );
+                      if (!context.mounted) return;
                       AppRoutes.toSessionLedger(context);
                     },
                     child: Container(
@@ -184,13 +185,14 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                       ),
                       trailing: recipe.isFavorite
                           ? Icon(Icons.favorite,
-                              color: theme.colorScheme.secondary, size: 20)
+                              color: theme.colorScheme.secondary, size: 20,)
                           : null,
                       onTap: () async {
                         close(context, recipe);
                         final exists = await ref
                             .read(recipeRepositoryProvider)
                             .getRecipeByUuid(recipe.uuid);
+                        if (!context.mounted) return;
                         if (exists != null) {
                           AppRoutes.toRecipeDetail(context, recipe.uuid);
                         }
@@ -257,7 +259,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               ),
               trailing: recipe.isFavorite
                   ? Icon(Icons.favorite,
-                      color: Theme.of(context).colorScheme.secondary, size: 20)
+                      color: Theme.of(context).colorScheme.secondary, size: 20,)
                   : null,
               onTap: () async {
                 close(context, recipe);
@@ -265,6 +267,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                 final exists = await ref
                     .read(recipeRepositoryProvider)
                     .getRecipeByUuid(recipe.uuid);
+                if (!context.mounted) return;
                 if (exists != null) {
                   AppRoutes.toRecipeDetail(context, recipe.uuid);
                 }

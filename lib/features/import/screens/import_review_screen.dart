@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:convert';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/text_normalizer.dart';
 import '../../recipes/models/recipe.dart';
@@ -117,6 +118,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _servesController.dispose();
     _timeController.dispose();
     _techniqueController.dispose();
+    _garnishFieldController?.dispose();
     super.dispose();
   }
 
@@ -318,7 +320,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               Expanded(
                 child: OutlinedButton(
                   onPressed: _openInEditScreen,
-                  child: const Text('Edit More Details'),
+                  child: const Text('Edit'),
                 ),
               ),
               if (_canCompare) ...[
@@ -375,11 +377,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                 children: [
                   Text(message, style: theme.textTheme.titleSmall?.copyWith(
                     color: theme.colorScheme.onSurface,
-                  )),
+                  ),),
                   const SizedBox(height: 8),
                   LinearProgressIndicator(
                     value: confidence,
-                    backgroundColor: theme.colorScheme.outline.withOpacity(0.3),
+                    backgroundColor: theme.colorScheme.outline.withValues(alpha: 0.3),
                     color: theme.colorScheme.primary,
                   ),
                   const SizedBox(height: 8),
@@ -594,7 +596,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           label: Text(_courseDisplayName(course)),
           selected: isSelected,
           onSelected: (_) => setState(() => _selectedCourse = course),
-          selectedColor: theme.colorScheme.primary.withOpacity(0.2),
+          selectedColor: theme.colorScheme.primary.withValues(alpha: 0.2),
           showCheckmark: false,
         );
       }).toList(),
@@ -643,13 +645,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
           color: isSelected
-              ? theme.colorScheme.secondary.withOpacity(0.15)
+              ? theme.colorScheme.secondary.withValues(alpha: 0.15)
               : theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             color: isSelected
                 ? theme.colorScheme.secondary
-                : theme.colorScheme.outline.withOpacity(0.3),
+                : theme.colorScheme.outline.withValues(alpha: 0.3),
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
@@ -710,7 +712,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   Widget _buildIngredientsList(ThemeData theme, RecipeImportResult result) {
     if (_sanitizedIngredients.isEmpty) {
       return Card(
-        color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+        color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Text(
@@ -808,7 +810,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
               // Ingredient rows in bordered container
               Container(
                 decoration: BoxDecoration(
-                  border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+                  border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
                   borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
                 ),
                 child: Column(
@@ -836,10 +838,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                       return Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+                          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
                           border: isLast 
-                              ? null 
-                              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+                          ? null 
+                          : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
                         ),
                         child: Row(
                           children: [
@@ -880,7 +882,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                       decoration: BoxDecoration(
                         border: isLast 
                             ? null 
-                            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+                            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -1005,7 +1007,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             return Chip(
               avatar: const Icon(Icons.build_outlined, size: 18),
               label: Text(item),
-              backgroundColor: theme.colorScheme.secondaryContainer.withOpacity(0.5),
+              backgroundColor: theme.colorScheme.secondaryContainer.withValues(alpha: 0.5),
             );
           }).toList(),
         ),
@@ -1111,7 +1113,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                   label: Text(item),
                   deleteIcon: const Icon(Icons.close, size: 18),
                   onDeleted: () => setState(() => _garnish.remove(item)),
-                )).toList(),
+                ),).toList(),
               ),
             ],
           ],
@@ -1182,7 +1184,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   Widget _buildDirectionsList(ThemeData theme, RecipeImportResult result) {
     if (result.rawDirections.isEmpty) {
       return Card(
-        color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+        color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Text(
@@ -1230,7 +1232,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             margin: const EdgeInsets.only(bottom: 8),
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+              border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
@@ -1256,7 +1258,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                       width: 24,
                       height: 24,
                       decoration: BoxDecoration(
-                        color: theme.colorScheme.secondary.withOpacity(0.15),
+                        color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                         shape: BoxShape.circle,
                         border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
                       ),
@@ -1302,7 +1304,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
 
   Widget _buildNotesCard(ThemeData theme, String notes) {
     return Card(
-      color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+      color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Text(
@@ -1342,7 +1344,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     }
     
     return Card(
-      color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.5),
+      color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Wrap(
@@ -1436,7 +1438,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           unit: rawIngredient.unit,
           notes: rawIngredient.preparation,
           section: currentSection,
-        ));
+        ),);
       }
     }
 
@@ -1563,6 +1565,9 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       if (widget.importResult.imagePaths!.length > 1) {
         recipe.stepImages = widget.importResult.imagePaths!.sublist(1);
       }
+    } else if (widget.importResult.imageUrl != null &&
+        widget.importResult.imageUrl!.isNotEmpty) {
+      recipe.headerImage = widget.importResult.imageUrl;
     }
 
     return recipe;
@@ -1646,7 +1651,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             name: rawIngredient.name,
             amount: rawIngredient.amount,
             unit: rawIngredient.unit,
-          ));
+          ),);
         }
       }
     }
@@ -1664,22 +1669,37 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       headerImage = widget.importResult.imageUrl;
     }
 
-    return SmokingRecipe.create(
+    final now = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Recipe'
           : _nameController.text.trim(),
-      type: SmokingType.recipe, // Imports are always full recipes, never pit notes
-      item: _nameController.text.trim(), // Use recipe name as item being smoked
+      course: 'smoking',
+      type: SmokingType.recipe.name,
+      item: _nameController.text.trim(),
+      category: null,
       temperature: temperature,
       time: _timeController.text.trim().isEmpty ? '' : _timeController.text.trim(),
       wood: woodType,
-      seasonings: seasonings,
-      directions: directions,
+      seasoningsJson: jsonEncode(seasonings
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .toList(),),
+      ingredientsJson: '[]',
+      serves: null,
+      directions: jsonEncode(directions),
       notes: widget.importResult.comments,
       headerImage: headerImage,
-      stepImages: stepImages,
-      source: SmokingSource.imported,
+      stepImages: jsonEncode(stepImages ?? []),
+      stepImageMap: '[]',
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.imported.name,
+      pairedRecipeIds: '[]',
+      createdAt: now,
+      updatedAt: now,
     );
   }
   
@@ -1720,10 +1740,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     final vegetables = <String>[];
     const cheeseKeywords = ['mozzarella', 'parmesan', 'cheddar', 'gouda', 'provolone', 
         'ricotta', 'gorgonzola', 'feta', 'goat cheese', 'burrata', 'fontina', 'asiago',
-        'pecorino', 'gruyere', 'brie', 'cheese'];
+        'pecorino', 'gruyere', 'brie', 'cheese',];
     const proteinKeywords = ['pepperoni', 'sausage', 'bacon', 'ham', 'prosciutto', 
         'salami', 'chicken', 'beef', 'pork', 'anchov', 'shrimp', 'meat', 'turkey',
-        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg'];
+        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg',];
     
     for (final index in _selectedIngredientIndices.toList()..sort()) {
       if (index < _sanitizedIngredients.length) {
@@ -1748,18 +1768,27 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       }
     }
 
-    return Pizza.create(
+    final now = DateTime.now();
+    return Pizza(
+      id: 0,
       uuid: const Uuid().v4(),
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Pizza'
           : _nameController.text.trim(),
-      base: base,
-      cheeses: cheeses,
-      proteins: proteins,
-      vegetables: vegetables,
+      base: base.name,
+      cheeses: jsonEncode(cheeses),
+      proteins: jsonEncode(proteins),
+      vegetables: jsonEncode(vegetables),
       notes: widget.importResult.comments,
       imageUrl: widget.importResult.imageUrl,
-      source: PizzaSource.imported,
+      source: PizzaSource.imported.name,
+      isFavorite: false,
+      cookCount: 0,
+      rating: 0,
+      tags: '[]',
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
     );
   }
 

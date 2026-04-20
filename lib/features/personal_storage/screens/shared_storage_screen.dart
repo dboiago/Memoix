@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/storage_location.dart';
@@ -13,8 +12,10 @@ import '../providers/one_drive_storage.dart';
 import '../services/personal_storage_service.dart';
 import '../services/shared_storage_manager.dart';
 import '../services/storage_provider_manager.dart';
-import 'personal_storage_screen.dart';
 import 'share_storage_screen.dart';
+import '../../../core/services/deep_link_service.dart';
+
+enum _RepositoryAction { googleDrive, oneDrive, joinByLink }
 
 class SharedStorageScreen extends ConsumerStatefulWidget {
   const SharedStorageScreen({super.key});
@@ -42,9 +43,19 @@ class _SharedStorageScreenState
   }
 
   Future<void> _createNewRepository() async {
-    // Step 1: Select provider
-    final provider = await _showProviderSelectionDialog();
-    if (provider == null || !mounted) return;
+    // Step 1: Select action
+    final action = await _showProviderSelectionDialog();
+    if (action == null || !mounted) return;
+
+    // Handle join by link separately
+    if (action == _RepositoryAction.joinByLink) {
+      await _showJoinByLinkDialog();
+      return;
+    }
+
+    final provider = action == _RepositoryAction.googleDrive
+        ? StorageProvider.googleDrive
+        : StorageProvider.oneDrive;
 
     // Step 2: Get storage location name
     final nameController = TextEditingController();
@@ -112,6 +123,8 @@ class _SharedStorageScreenState
           );
           
           await storage.switchRepository(folderId, name);
+          // Register with service so the subsequent push() uses this instance.
+          await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
           
         case StorageProvider.oneDrive:
@@ -140,10 +153,10 @@ class _SharedStorageScreenState
           );
           
           await storage.switchRepository(folderId, name);
+          // Register with service so the subsequent push() uses this instance
+          await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
       }
-      
-      // Disconnect all other providers except the one we just activated (mutual exclusivity)
       await StorageProviderManager.disconnectAllExcept(ref, exceptProvider: provider);
       
       // Sync recipes to new folder
@@ -168,19 +181,19 @@ class _SharedStorageScreenState
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to create shared storage: $e');
+        MemoixSnackBar.showPersistentWithCopy('Failed to create shared storage: $e');
       }
     }
   }
 
-  /// Show provider selection dialog
-  Future<StorageProvider?> _showProviderSelectionDialog() async {
+  /// Show options dialog for adding a repository
+  Future<_RepositoryAction?> _showProviderSelectionDialog() async {
     final theme = Theme.of(context);
-    
-    return showDialog<StorageProvider>(
+
+    return showDialog<_RepositoryAction>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Choose Storage Provider'),
+        title: const Text('Add Repository'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -192,7 +205,7 @@ class _SharedStorageScreenState
               ),
               title: const Text('Google Drive'),
               subtitle: const Text('Store in your personal Drive folder'),
-              onTap: () => Navigator.pop(ctx, StorageProvider.googleDrive),
+              onTap: () => Navigator.pop(ctx, _RepositoryAction.googleDrive),
             ),
             const SizedBox(height: 8),
             // OneDrive option
@@ -203,7 +216,18 @@ class _SharedStorageScreenState
               ),
               title: const Text('Microsoft OneDrive'),
               subtitle: const Text('Store in your OneDrive folder'),
-              onTap: () => Navigator.pop(ctx, StorageProvider.oneDrive),
+              onTap: () => Navigator.pop(ctx, _RepositoryAction.oneDrive),
+            ),
+            const SizedBox(height: 8),
+            // Join by link option
+            ListTile(
+              leading: Icon(
+                Icons.link,
+                color: theme.colorScheme.onSurface,
+              ),
+              title: const Text('Join by link'),
+              subtitle: const Text('Join a shared repository using a share link'),
+              onTap: () => Navigator.pop(ctx, _RepositoryAction.joinByLink),
             ),
           ],
         ),
@@ -215,6 +239,19 @@ class _SharedStorageScreenState
         ],
       ),
     );
+  }
+
+  Future<void> _showJoinByLinkDialog() async {
+    final uri = await showDialog<Uri>(
+      context: context,
+      builder: (_) => const _JoinByLinkDialog(),
+    );
+
+    if (uri == null || !mounted) return;
+
+    final service = ref.read(deepLinkServiceProvider);
+    await service.handleRepositoryShare(context, uri);
+    _loadRepositories();
   }
 
   Future<void> _switchRepository(StorageLocation repository) async {
@@ -237,13 +274,38 @@ class _SharedStorageScreenState
           await storage.initialize();
           
           if (!storage.isConnected) {
-            throw StateError('Google Drive connection could not be restored. Please reconnect.');
+            // No saved session — trigger interactive sign-in
+            final connected = await storage.connect().timeout(
+              const Duration(seconds: 60),
+              onTimeout: () {
+                throw TimeoutException('Connection timed out. Please try again.');
+              },
+            );
+            if (!connected) {
+              throw Exception('Sign-in cancelled or failed');
+            }
           }
           
           await storage.switchRepository(repository.folderId, repository.name);
+          await ref.read(personalStorageServiceProvider).setProvider(storage);
           break;
         case StorageProvider.oneDrive:
-          // OneDrive switch is handled in SharedStorageManager.setActiveRepository
+          // OneDrive: sign in if needed, switch folder, and register with service
+          final oneDriveStorage = OneDriveStorage();
+          await oneDriveStorage.init();
+          if (!oneDriveStorage.isConnected) {
+            await oneDriveStorage.signIn().timeout(
+              const Duration(seconds: 60),
+              onTimeout: () {
+                throw TimeoutException('Connection timed out. Please try again.');
+              },
+            );
+            if (!oneDriveStorage.isConnected) {
+              throw StateError('OneDrive sign-in cancelled. Please try again.');
+            }
+          }
+          await oneDriveStorage.switchRepository(repository.folderId, repository.name);
+          await ref.read(personalStorageServiceProvider).setProvider(oneDriveStorage);
           break;
       }
       
@@ -257,7 +319,7 @@ class _SharedStorageScreenState
       _loadRepositories();
       
       if (mounted) {
-        MemoixSnackBar.showError('Failed to switch storage: $e');
+        MemoixSnackBar.showPersistentWithCopy('Failed to switch storage: $e');
       }
     }
   }
@@ -304,7 +366,7 @@ class _SharedStorageScreenState
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to disconnect: $e');
+        MemoixSnackBar.showPersistentWithCopy('Failed to disconnect: $e');
       }
     }
   }
@@ -352,8 +414,21 @@ class _SharedStorageScreenState
 
   Future<void> _verifyStorage(StorageLocation storage) async {
     try {
-      final driveStorage = ref.read(googleDriveStorageProvider);
-      final hasAccess = await driveStorage.verifyFolderAccess(storage.folderId);
+      bool hasAccess;
+      switch (storage.provider) {
+        case StorageProvider.googleDrive:
+          final driveStorage = ref.read(googleDriveStorageProvider);
+          hasAccess = await driveStorage.verifyFolderAccess(storage.folderId);
+          break;
+        case StorageProvider.oneDrive:
+          final service = ref.read(personalStorageServiceProvider);
+          final provider = service.provider;
+          if (provider is! OneDriveStorage || !provider.isConnected) {
+            throw Exception('OneDrive is not connected. Switch to this repository first.');
+          }
+          hasAccess = await provider.verifyFolderAccess(storage.folderId);
+          break;
+      }
 
       if (!mounted) return;
 
@@ -460,6 +535,113 @@ class _SharedStorageScreenState
   }
 }
 
+class _JoinByLinkDialog extends StatefulWidget {
+  const _JoinByLinkDialog();
+
+  @override
+  State<_JoinByLinkDialog> createState() => _JoinByLinkDialogState();
+}
+
+class _JoinByLinkDialogState extends State<_JoinByLinkDialog> {
+  final _linkController = TextEditingController();
+  final _nameController = TextEditingController();
+  String? _linkError;
+  String? _nameError;
+
+  @override
+  void dispose() {
+    _linkController.dispose();
+    _nameController.dispose();
+    super.dispose();
+  }
+
+  void _submit() {
+    final input = _linkController.text.trim();
+    final name = _nameController.text.trim();
+
+    if (input.isEmpty) {
+      setState(() => _linkError = 'Enter a share link or folder ID');
+      return;
+    }
+
+    Uri? result;
+
+    if (input.startsWith('memoix://')) {
+      result = Uri.tryParse(input);
+      if (result == null ||
+          result.host != 'share' ||
+          !result.pathSegments.contains('repo') ||
+          (result.queryParameters['id']?.isEmpty ?? true) ||
+          (result.queryParameters['name']?.isEmpty ?? true)) {
+        setState(() => _linkError = 'Invalid share link');
+        return;
+      }
+    } else {
+      // Raw folder ID — name required, provider defaults to Google Drive
+      if (name.isEmpty) {
+        setState(() => _nameError = 'Name is required for a folder ID');
+        return;
+      }
+      result = Uri(
+        scheme: 'memoix',
+        host: 'share',
+        pathSegments: ['repo'],
+        queryParameters: {'id': input, 'name': name},
+      );
+    }
+
+    Navigator.pop(context, result);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Join Repository'),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: _linkController,
+              decoration: InputDecoration(
+                labelText: 'Share link or Folder ID',
+                hintText: 'memoix://share/repo?id=... or folder ID',
+                errorText: _linkError,
+              ),
+              autofocus: true,
+              onChanged: (_) {
+                if (_linkError != null) setState(() => _linkError = null);
+              },
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _nameController,
+              decoration: InputDecoration(
+                labelText: 'Name (required for raw folder ID)',
+                hintText: 'My Recipes',
+                errorText: _nameError,
+              ),
+              onChanged: (_) {
+                if (_nameError != null) setState(() => _nameError = null);
+              },
+            ),
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Cancel'),
+        ),
+        FilledButton(
+          onPressed: _submit,
+          child: const Text('Join'),
+        ),
+      ],
+    );
+  }
+}
+
 class _StorageCard extends ConsumerWidget {
   final StorageLocation storage;
   final VoidCallback onSwitch;
@@ -525,6 +707,94 @@ class _StorageCard extends ConsumerWidget {
                       ),
                     ),
                     _buildSyncStatusIcon(theme, syncStatus),
+                    PopupMenuButton<String>(
+                      icon: Icon(
+                        Icons.more_vert,
+                        color: theme.colorScheme.primary,
+                      ),
+                      onSelected: (value) {
+                        switch (value) {
+                          case 'share':
+                            onShare();
+                            break;
+                          case 'verify':
+                            onVerify();
+                            break;
+                          case 'disconnect':
+                            onDisconnect();
+                            break;
+                          case 'delete':
+                            onDelete();
+                            break;
+                        }
+                      },
+                      itemBuilder: (context) => [
+                        if (!storage.isPendingVerification)
+                          PopupMenuItem(
+                            value: 'share',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.share,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurface,
+                                ),
+                                const SizedBox(width: 12),
+                                const Text('Share'),
+                              ],
+                            ),
+                          ),
+                        if (storage.isPendingVerification)
+                          PopupMenuItem(
+                            value: 'verify',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.refresh,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurface,
+                                ),
+                                const SizedBox(width: 12),
+                                const Text('Verify Access'),
+                              ],
+                            ),
+                          ),
+                        if (!storage.isPendingVerification)
+                          PopupMenuItem(
+                            value: 'disconnect',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.cloud_off,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurface,
+                                ),
+                                const SizedBox(width: 12),
+                                const Text('Disconnect'),
+                              ],
+                            ),
+                          ),
+                        PopupMenuItem(
+                          value: 'delete',
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.delete_outline,
+                                size: 20,
+                                color: theme.colorScheme.secondary,
+                              ),
+                              const SizedBox(width: 12),
+                              Text(
+                                storage.isPendingVerification ? 'Remove' : 'Delete',
+                                style: TextStyle(
+                                  color: theme.colorScheme.secondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
 

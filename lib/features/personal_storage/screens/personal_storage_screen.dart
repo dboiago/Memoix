@@ -6,13 +6,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/merge_result.dart';
-import '../models/storage_location.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
+import '../providers/personal_storage_provider.dart';
 import '../services/personal_storage_service.dart';
-import '../services/shared_storage_manager.dart';
 import '../services/storage_provider_manager.dart';
 
 /// Personal Storage settings screen
@@ -47,8 +46,15 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
   /// Whether Personal Storage is configured (has preferences set)
   bool _isPersonalStorageConfigured = false;
 
+  /// The currently active (connected) provider, or null if none
+  PersonalStorageProvider? get _activeProvider {
+    if (_oneDrive?.isConnected == true) return _oneDrive;
+    if (_googleDrive?.isConnected == true) return _googleDrive;
+    return null;
+  }
+
   /// Whether the provider is connected AND Personal Storage is configured
-  bool get _isConnected => (_googleDrive?.isConnected ?? false) && _isPersonalStorageConfigured;
+  bool get _isConnected => _activeProvider != null && _isPersonalStorageConfigured;
 
   @override
   void initState() {
@@ -57,23 +63,30 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
   }
 
   Future<void> _initializeProviders() async {
-    // Initialize Google Drive provider
-    _googleDrive = GoogleDriveStorage();
-    await _googleDrive!.initialize();
+    final service = ref.read(personalStorageServiceProvider);
+
+    // Ensure service is initialized (may already be done via onAppLaunched)
+    await service.initialize();
+
+    // Sync local provider fields from the service to avoid creating duplicate instances
+    final existingProvider = service.provider;
+    if (existingProvider is GoogleDriveStorage) {
+      _googleDrive = existingProvider;
+    } else if (existingProvider is OneDriveStorage) {
+      _oneDrive = existingProvider;
+    } else {
+      // No active provider — initialize Google Drive for a potential new connection
+      _googleDrive = GoogleDriveStorage();
+      await _googleDrive!.initialize();
+    }
 
     // Check if Personal Storage is configured (has preferences)
     final prefs = await SharedPreferences.getInstance();
     _isPersonalStorageConfigured = prefs.getString('personal_storage_provider_id') != null;
 
     // Load sync mode and last sync time
-    final service = ref.read(personalStorageServiceProvider);
     _syncMode = await service.syncMode;
     _lastSyncTime = await service.lastSyncTime;
-
-    // If connected AND configured, set the provider on the service
-    if (_googleDrive!.isConnected && _isPersonalStorageConfigured) {
-      await service.setProvider(_googleDrive!);
-    }
 
     if (mounted) setState(() {});
   }
@@ -226,7 +239,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
 
   /// Build the connected state card with push/pull buttons
   Widget _buildConnectedCard(ThemeData theme, SyncStatus syncStatus) {
-    final provider = _googleDrive!;
+    final provider = _oneDrive?.isConnected == true ? _oneDrive! : _googleDrive!;
 
     return Padding(
       padding: const EdgeInsets.all(16),
@@ -249,11 +262,11 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          provider.name,
+                          (provider as PersonalStorageProvider).name,
                           style: theme.textTheme.titleMedium,
                         ),
                         Text(
-                          provider.connectedPath ?? '/My Drive/Memoix',
+                          (provider as PersonalStorageProvider).connectedPath ?? '/Memoix',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurfaceVariant,
                           ),
@@ -428,6 +441,11 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     setState(() => _isConnecting = true);
 
     try {
+      // Lazy-initialize if needed (e.g. after disconnect)
+      if (_googleDrive == null) {
+        _googleDrive = GoogleDriveStorage();
+        await _googleDrive!.initialize();
+      }
       // Add 60 second timeout for connection attempt
       final success = await _googleDrive!.connect().timeout(
         const Duration(seconds: 60),
@@ -456,13 +474,16 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
             MemoixSnackBar.showSuccess('Connected to Google Drive');
             _executeDirectPull(showFullSummary: false);
           } else {
-            // First-time connection - check if remote has existing data
+            // First-time connection — auto-sync based on remote state
             final hasData = await _googleDrive!.hasExistingData();
             if (hasData) {
-              // Show initial sync prompt only on first connection
-              _showInitialSyncDialog();
-            } else {
+              // Remote file exists: pull to import existing recipes
               MemoixSnackBar.showSuccess('Connected to Google Drive');
+              _executeDirectPull(showFullSummary: true);
+            } else {
+              // No remote file yet: push local recipes to initialize cloud storage
+              MemoixSnackBar.showSuccess('Connected to Google Drive');
+              unawaited(ref.read(personalStorageServiceProvider).push(silent: true));
             }
           }
         }
@@ -478,7 +499,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Connection failed: $e');
+        MemoixSnackBar.showPersistentWithCopy('Connection failed: $e');
       }
     } finally {
       if (mounted) {
@@ -505,16 +526,36 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       );
 
       if (_oneDrive!.isConnected) {
+        // Set up the default Memoix folder so connectedPath is populated
+        // and push/pull have a valid target folder.
+        await _oneDrive!.setupDefaultFolder();
+
         // Disconnect all other providers (mutual exclusivity)
         await StorageProviderManager.disconnectAll(ref);
-        
+
+        // Set provider on service
+        final service = ref.read(personalStorageServiceProvider);
+        await service.setProvider(_oneDrive!);
+
         // Mark Personal Storage as configured
         setState(() => _isPersonalStorageConfigured = true);
-        
-        // Note: OneDrive integration is in progress
-        // Full PersonalStorageService integration will be completed in a future update
+
+        // Auto-sync on connect (mirrors Google Drive behaviour)
+        final hasEverSynced = await service.lastSyncTime != null;
         if (mounted) {
-          MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+          if (hasEverSynced) {
+            MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+            _executeDirectPull(showFullSummary: false);
+          } else {
+            final hasData = await _oneDrive!.hasExistingData();
+            if (hasData) {
+              MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+              _executeDirectPull(showFullSummary: true);
+            } else {
+              MemoixSnackBar.showSuccess('Connected to Microsoft OneDrive');
+              unawaited(ref.read(personalStorageServiceProvider).push(silent: true));
+            }
+          }
         }
       } else {
         if (mounted) {
@@ -527,7 +568,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('OneDrive connection failed: $e');
+        MemoixSnackBar.showPersistentWithCopy('OneDrive connection failed: $e');
       }
     } finally {
       if (mounted) {
@@ -587,9 +628,8 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     // Show appropriate feedback
     if (!mounted) return;
     
-    if (result.hasFailed) {
-      MemoixSnackBar.showError('Pull failed: ${result.error}');
-    } else if (result.wasSkipped) {
+    if (result.hasFailed) return; // error already surfaced by service
+    if (result.wasSkipped) {
       // Silent - no message needed
     } else {
       if (showFullSummary) {
@@ -601,7 +641,6 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
           final parts = <String>[];
           if (result.added > 0) parts.add('${result.added} new');
           if (result.updated > 0) parts.add('${result.updated} updated');
-          MemoixSnackBar.show('Synced: ${parts.join(', ')}');
         }
         // No message if no changes
       }
@@ -663,10 +702,7 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (!mounted) return;
     
     // Handle different scenarios
-    if (result.hasFailed) {
-      MemoixSnackBar.showError('Pull failed: ${result.error}');
-      return;
-    }
+    if (result.hasFailed) return; // error already surfaced by service
     
     if (result.wasSkipped || !result.hasChanges) {
       // No changes detected - silent sync complete
@@ -675,6 +711,10 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     }
     
     // Changes were found and applied - show summary
+    final parts = <String>[];
+    if (result.added > 0) parts.add('${result.added} added');
+    if (result.updated > 0) parts.add('${result.updated} updated');
+    if (result.deleted > 0) parts.add('${result.deleted} removed');
     _showPullSummaryDialog(result);
   }
 
@@ -738,6 +778,13 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
                   theme,
                   icon: Icons.check_circle_outline,
                   text: '${result.updated} recipe${result.updated == 1 ? '' : 's'} updated',
+                  isHighlight: true,
+                ),
+              if (result.deleted > 0)
+                _buildSummaryRow(
+                  theme,
+                  icon: Icons.check_circle_outline,
+                  text: '${result.deleted} recipe${result.deleted == 1 ? '' : 's'} removed',
                   isHighlight: true,
                 ),
               if (result.unchanged > 0)
@@ -812,12 +859,13 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
 
   /// Disconnect from current provider
   Future<void> _disconnect() async {
+    final providerName = _activeProvider?.name ?? 'storage';
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
         title: const Text('Disconnect?'),
-        content: const Text(
-          'Disconnecting will not delete your recipes from Google Drive. '
+        content: Text(
+          'Disconnecting will not delete your recipes from $providerName. '
           'You can reconnect anytime.',
         ),
         actions: [
@@ -836,10 +884,12 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     if (confirmed == true) {
       final service = ref.read(personalStorageServiceProvider);
       await service.disconnect();
-      _googleDrive = GoogleDriveStorage();
+      _googleDrive = null;
+      _oneDrive = null;
+      _isPersonalStorageConfigured = false;
       _lastSyncTime = null;
       if (mounted) setState(() {});
-      MemoixSnackBar.show('Disconnected from Google Drive');
+      MemoixSnackBar.show('Disconnected from $providerName');
     }
   }
 

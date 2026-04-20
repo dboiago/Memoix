@@ -1,10 +1,12 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 
 import '../models/meal_plan.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -76,7 +78,7 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
 
   // Ciao bello! Between each aria, how many beats must rest?
   // In perfect time signature, how many quarters comprise the measure?
-  static const _rhythm = "Kj K wkri ajip M esqo, vlg jqsf mu kqmpk vs di jerta.";
+  static const _rhythm = 'Kj K wkri ajip M esqo, vlg jqsf mu kqmpk vs di jerta.';
 
   @override
   Widget build(BuildContext context) {
@@ -256,10 +258,12 @@ class WeekView extends ConsumerWidget {
           itemBuilder: (context, dayIndex) {
             final date = weekStart.add(Duration(days: dayIndex));
             final plan = weeklyPlan.planForDay(dayIndex);
+            final dayMeals = weeklyPlan.mealsForDay(dayIndex);
             final isSelected = _isSameDay(date, selectedDate);
             return DayCard(
               date: date,
               plan: plan,
+              meals: dayMeals,
               isSelected: isSelected,
               onSelect: () => onDateSelected(date),
             );
@@ -277,6 +281,7 @@ class WeekView extends ConsumerWidget {
 class DayCard extends ConsumerStatefulWidget {
   final DateTime date;
   final MealPlan? plan;
+  final List<PlannedMeal> meals;
   final bool isSelected;
   final VoidCallback onSelect;
 
@@ -284,6 +289,7 @@ class DayCard extends ConsumerStatefulWidget {
     super.key,
     required this.date,
     this.plan,
+    required this.meals,
     required this.isSelected,
     required this.onSelect,
   });
@@ -295,6 +301,9 @@ class DayCard extends ConsumerStatefulWidget {
 class _DayCardState extends ConsumerState<DayCard> {
   bool _hovered = false;
   static const _undoDuration = Duration(seconds: 4);
+
+  static DateTime _weekStartOf(DateTime date) =>
+      date.subtract(Duration(days: date.weekday - 1));
 
   @override
   void deactivate() {
@@ -312,7 +321,7 @@ class _DayCardState extends ConsumerState<DayCard> {
       instanceId: instanceId,
       undoDuration: _undoDuration,
       onComplete: () {
-        if (mounted) ref.invalidate(weeklyPlanProvider);
+        if (mounted) ref.invalidate(weeklyPlanProvider(_weekStartOf(widget.date)));
       },
     );
     
@@ -343,29 +352,37 @@ class _DayCardState extends ConsumerState<DayCard> {
       targetCourse,
     );
 
-    // Report meal plan move
-    final weekStart = ref.read(selectedWeekProvider);
-    final weekly = await service.getWeek(weekStart);
-    int daysWithMeals = 0;
-    int totalMeals = 0;
-    for (final plan in weekly.dailyPlans.values) {
-      if (plan.meals.isNotEmpty) {
-        daysWithMeals++;
-        totalMeals += plan.meals.length;
-      }
+    // Force refresh of the UI (targeted to affected weeks only)
+    final sourceWeek = _weekStartOf(data.sourceDate);
+    final destWeek = _weekStartOf(widget.date);
+    ref.invalidate(weeklyPlanProvider(sourceWeek));
+    if (sourceWeek != destWeek) {
+      ref.invalidate(weeklyPlanProvider(destWeek));
     }
-    await IntegrityService.reportEvent(
-      'activity.meal_plan_updated',
-      metadata: {
-        'action': 'move',
-        'days_with_meals': daysWithMeals,
-        'total_meals_set': totalMeals,
-      },
-    );
-    await processIntegrityResponses(ref);
-    
-    // Force refresh of the UI
-    ref.invalidate(weeklyPlanProvider);
+
+    // Report meal plan move (fire-and-forget — must not block the UI)
+    unawaited(() async {
+      final weekStart = ref.read(selectedWeekProvider);
+      final weekly = await service.getWeek(weekStart);
+      int daysWithMeals = 0;
+      int totalMeals = 0;
+      for (final plan in weekly.dailyPlans.values) {
+        final planMeals = weekly.meals[plan.date] ?? [];
+        if (planMeals.isNotEmpty) {
+          daysWithMeals++;
+          totalMeals += planMeals.length;
+        }
+      }
+      await IntegrityService.reportEvent(
+        'activity.meal_plan_updated',
+        metadata: {
+          'action': 'move',
+          'days_with_meals': daysWithMeals,
+          'total_meals_set': totalMeals,
+        },
+      );
+      await processIntegrityResponses(ref);
+    }());
   }
 
   @override
@@ -379,15 +396,15 @@ class _DayCardState extends ConsumerState<DayCard> {
     // This wraps the entire card. If you drop anywhere on the card (even if collapsed),
     // this target catches it and uses the source course ("Smart Drop").
     return DragTarget<_DraggableMealData>(
-      onWillAccept: (data) {
-        if (data == null) return false;
+      onWillAcceptWithDetails: (details) {
+        if (details.data == null) return false;
         // Don't highlight if dragging over same day
-        if (data.sourceDate == widget.date) return false;
+        if (details.data.sourceDate == widget.date) return false;
         return true;
       },
-      onAccept: (data) {
+      onAcceptWithDetails: (details) {
         // Fallback: Drop on the card -> Keep original course
-        _handleDrop(data, data.sourceCourse);
+        _handleDrop(details.data, details.data.sourceCourse);
       },
       builder: (context, candidateData, rejectedData) {
         final isDragHovering = candidateData.isNotEmpty;
@@ -395,15 +412,15 @@ class _DayCardState extends ConsumerState<DayCard> {
         // Visual feedback when hovering over the card
         final borderColor = isDragHovering
             ? theme.colorScheme.primary
-            : (isHighlighted ? theme.colorScheme.secondary : theme.colorScheme.outline.withOpacity(0.1));
+            : (isHighlighted ? theme.colorScheme.secondary : theme.colorScheme.outline.withValues(alpha: 0.1));
             
         final borderWidth = (isHighlighted || isDragHovering) ? 1.5 : 1.0;
         
         // Background color feedback
         final cardColor = isDragHovering
-            ? theme.colorScheme.primaryContainer.withOpacity(0.15)
+            ? theme.colorScheme.primaryContainer.withValues(alpha: 0.15)
             : (widget.isSelected 
-                ? theme.colorScheme.secondary.withOpacity(0.08)
+                ? theme.colorScheme.secondary.withValues(alpha: 0.08)
                 : theme.cardTheme.color ?? theme.colorScheme.surface);
 
         return MouseRegion(
@@ -447,8 +464,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                   ),
                 ),
                 subtitle: Text(
-                  widget.plan != null && !widget.plan!.isEmpty
-                      ? '${widget.plan!.mealCount} meal${widget.plan!.mealCount == 1 ? '' : 's'} planned'
+                  widget.meals.isNotEmpty
+                      ? '${widget.meals.length} meal${widget.meals.length == 1 ? '' : 's'} planned'
                       : 'No meals planned',
                   style: TextStyle(
                     color: theme.colorScheme.onSurfaceVariant,
@@ -461,7 +478,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                     child: Column(
                       children: [
                         // EMPTY STATE TEXT
-                        if (widget.plan == null || widget.plan!.isEmpty)
+                        if (widget.meals.isEmpty)
                           Padding(
                             padding: const EdgeInsets.all(24),
                             child: Text(
@@ -475,11 +492,11 @@ class _DayCardState extends ConsumerState<DayCard> {
                           // These are inside the expansion tile. If dropped here,
                           // we FORCE the course to this section (e.g. Lunch).
                           ...MealCourse.all.map((course) {
-                            final meals = widget.plan!.getMeals(course);
+                            final meals = widget.meals.where((m) => m.course == course).toList();
                             
                             return DragTarget<_DraggableMealData>(
-                              onWillAccept: (data) => true,
-                              onAccept: (data) => _handleDrop(data, course),
+                              onWillAcceptWithDetails: (data) => true,
+                              onAcceptWithDetails: (details) => _handleDrop(details.data, course),
                               builder: (context, innerCandidates, innerRejects) {
                                 final isHoveringSection = innerCandidates.isNotEmpty;
                                 
@@ -492,8 +509,8 @@ class _DayCardState extends ConsumerState<DayCard> {
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: isHoveringSection 
-                                        ? theme.colorScheme.primaryContainer.withOpacity(0.5) 
-                                        : null,
+                                          ? theme.colorScheme.primaryContainer.withValues(alpha: 0.5) 
+                                          : null,
                                     borderRadius: BorderRadius.circular(8),
                                     border: isHoveringSection 
                                         ? Border.all(color: theme.colorScheme.primary, width: 1.5)
@@ -528,7 +545,7 @@ class _DayCardState extends ConsumerState<DayCard> {
                                       else
                                         ...meals.map((meal) {
                                           // Safety: Ensure instanceId exists
-                                          final instanceId = meal.instanceId ?? meal.recipeName ?? 'unknown';
+                                          final instanceId = meal.instanceId;
                                           
                                           if (_isPendingDelete(instanceId)) {
                                             return _buildPendingDeleteRow(theme, meal, instanceId);
@@ -684,45 +701,67 @@ class _DayCardState extends ConsumerState<DayCard> {
       },
     );
 
-    // Wrap in LongPressDraggable for move functionality
-    return LongPressDraggable<_DraggableMealData>(
-      data: _DraggableMealData(
-        sourceDate: widget.date,
-        sourceCourse: course,
-        instanceId: instanceId, // Pass unique ID
-        index: 0, // Placeholder index, logic now uses instanceId
-        meal: meal,
-      ),
-      delay: const Duration(milliseconds: 300), // Short hold to grab
-      feedback: Material(
-        elevation: 4,
-        borderRadius: BorderRadius.circular(8),
-        color: theme.cardTheme.color ?? theme.colorScheme.surface,
-        child: SizedBox(
-          width: MediaQuery.of(context).size.width * 0.8,
-          child: content,
-        ),
-      ),
-      childWhenDragging: Opacity(
-        opacity: 0.3,
-        child: content,
-      ),
-      child: Dismissible(
-        key: Key('${widget.date.toIso8601String()}_${course}_$instanceId'),
-        background: Container(
-          color: theme.colorScheme.secondary.withOpacity(0.2),
-          alignment: Alignment.centerRight,
-          padding: const EdgeInsets.only(right: 16),
-          child: Icon(Icons.delete, color: theme.colorScheme.secondary),
-        ),
-        direction: DismissDirection.endToStart,
-        confirmDismiss: (direction) async {
-          _startDeleteTimer(instanceId);
-          return false;
-        },
+    // Wrap in a platform-aware draggable:
+    // - Desktop/mouse: Draggable (responds to click-and-drag)
+    // - Touch: LongPressDraggable with 300ms delay
+    final dragData = _DraggableMealData(
+      sourceDate: widget.date,
+      sourceCourse: course,
+      instanceId: instanceId,
+      index: 0,
+      meal: meal,
+    );
+    final feedback = Material(
+      elevation: 4,
+      borderRadius: BorderRadius.circular(8),
+      color: theme.cardTheme.color ?? theme.colorScheme.surface,
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width * 0.8,
         child: content,
       ),
     );
+    final childWhenDragging = Opacity(
+      opacity: 0.3,
+      child: content,
+    );
+    final dismissible = Dismissible(
+      key: Key('${widget.date.toIso8601String()}_${course}_$instanceId'),
+      background: Container(
+        color: theme.colorScheme.secondary.withValues(alpha: 0.2),
+        alignment: Alignment.centerRight,
+        padding: const EdgeInsets.only(right: 16),
+        child: Icon(Icons.delete, color: theme.colorScheme.secondary),
+      ),
+      direction: DismissDirection.endToStart,
+      confirmDismiss: (direction) async {
+        _startDeleteTimer(instanceId);
+        return false;
+      },
+      child: content,
+    );
+
+    final platform = Theme.of(context).platform;
+    final isDesktopOrWeb = kIsWeb ||
+        platform == TargetPlatform.windows ||
+        platform == TargetPlatform.linux ||
+        platform == TargetPlatform.macOS;
+
+    if (isDesktopOrWeb) {
+      return Draggable<_DraggableMealData>(
+        data: dragData,
+        feedback: feedback,
+        childWhenDragging: childWhenDragging,
+        child: dismissible,
+      );
+    } else {
+      return LongPressDraggable<_DraggableMealData>(
+        data: dragData,
+        delay: const Duration(milliseconds: 300),
+        feedback: feedback,
+        childWhenDragging: childWhenDragging,
+        child: dismissible,
+      );
+    }
   }
 
   bool _isToday(DateTime date) {
@@ -752,7 +791,10 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   String _selectedCourse = MealCourse.dinner;
   final _searchController = TextEditingController();
   List<Recipe> _suggestions = [];
-  
+
+  static DateTime _weekStartOf(DateTime date) =>
+      date.subtract(Duration(days: date.weekday - 1));
+
   @override
   void initState() {
     super.initState();
@@ -785,27 +827,30 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       recipeCategory: recipe.course,
     );
 
-    // Report meal plan activity
-    final weekStart = ref.read(selectedWeekProvider);
-    final weekly = await ref.read(mealPlanServiceProvider).getWeek(weekStart);
-    int daysWithMeals = 0;
-    int totalMeals = 0;
-    for (final plan in weekly.dailyPlans.values) {
-      if (plan.meals.isNotEmpty) {
-        daysWithMeals++;
-        totalMeals += plan.meals.length;
+    // Report meal plan activity (fire-and-forget — must not block the UI)
+    unawaited(() async {
+      final weekStart = ref.read(selectedWeekProvider);
+      final weekly = await ref.read(mealPlanServiceProvider).getWeek(weekStart);
+      int daysWithMeals = 0;
+      int totalMeals = 0;
+      for (final plan in weekly.dailyPlans.values) {
+        final planMeals = weekly.meals[plan.date] ?? [];
+        if (planMeals.isNotEmpty) {
+          daysWithMeals++;
+          totalMeals += planMeals.length;
+        }
       }
-    }
-    await IntegrityService.reportEvent(
-      'activity.meal_plan_updated',
-      metadata: {
-        'action': 'add',
-        'days_with_meals': daysWithMeals,
-        'total_meals_set': totalMeals,
-      },
-    );
-    await processIntegrityResponses(ref);
-    
+      await IntegrityService.reportEvent(
+        'activity.meal_plan_updated',
+        metadata: {
+          'action': 'add',
+          'days_with_meals': daysWithMeals,
+          'total_meals_set': totalMeals,
+        },
+      );
+      await processIntegrityResponses(ref);
+    }());
+
     if (!mounted) return;
     
     if (messenger != null) {
@@ -819,10 +864,12 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
     } else {
       MemoixSnackBar.show('Added ${recipe.name}');
     }
-    
+
+    // Invalidate only the added meal's week, not the entire provider family
+    final addedWeekStart = _weekStartOf(_selectedDate);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
-        ref.invalidate(weeklyPlanProvider);
+        ref.invalidate(weeklyPlanProvider(addedWeekStart));
       }
     });
     
@@ -853,7 +900,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                     width: 40,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: theme.colorScheme.outline.withOpacity(0.5),
+                      color: theme.colorScheme.outline.withValues(alpha: 0.5),
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
@@ -1037,63 +1084,65 @@ class _MealCourseNutritionChip extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final recipesAsync = ref.watch(allRecipesProvider);
-    
-    final recipeIds = meals
+
+    final recipeIdSet = meals
         .where((m) => m.recipeId != null)
         .map((m) => m.recipeId!)
-        .toList();
-    
-    if (recipeIds.isEmpty) return const SizedBox.shrink();
-    
-    return recipesAsync.when(
-      loading: () => const SizedBox.shrink(),
-      error: (_, __) => const SizedBox.shrink(),
-      data: (allRecipes) {
-        int totalCalories = 0;
-        double totalProtein = 0;
-        double totalCarbs = 0;
-        double totalFat = 0;
-        
-        for (final id in recipeIds) {
-          final recipe = allRecipes.firstWhere(
-            (r) => r.uuid == id,
-            orElse: () => Recipe()..name = '',
-          );
-          if (recipe.nutrition != null && recipe.nutrition!.hasData) {
-            if (recipe.nutrition!.calories != null) totalCalories += recipe.nutrition!.calories!;
-            if (recipe.nutrition!.proteinContent != null) totalProtein += recipe.nutrition!.proteinContent!;
-            if (recipe.nutrition!.carbohydrateContent != null) totalCarbs += recipe.nutrition!.carbohydrateContent!;
-            if (recipe.nutrition!.fatContent != null) totalFat += recipe.nutrition!.fatContent!;
-          }
-        }
-        
-        if (totalCalories == 0) return const SizedBox.shrink();
-        
-        return Tooltip(
-          message: '${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat',
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-            decoration: BoxDecoration(
-              color: theme.colorScheme.surfaceContainerHighest,
-              borderRadius: BorderRadius.circular(12),
+        .toSet();
+
+    if (recipeIdSet.isEmpty) return const SizedBox.shrink();
+
+    // Select only nutrition primitives for this course's meals.
+    final nutritionData = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? [])
+            .where((r) => recipeIdSet.contains(r.uuid))
+            .map((r) => (
+              calories: r.nutrition?.calories,
+              protein: r.nutrition?.proteinContent,
+              carbs: r.nutrition?.carbohydrateContent,
+              fat: r.nutrition?.fatContent,
+            ),)
+            .toList(),
+      ),
+    );
+
+    int totalCalories = 0;
+    double totalProtein = 0;
+    double totalCarbs = 0;
+    double totalFat = 0;
+
+    for (final n in nutritionData) {
+      if (n.calories != null) totalCalories += n.calories!;
+      if (n.protein != null) totalProtein += n.protein!;
+      if (n.carbs != null) totalCarbs += n.carbs!;
+      if (n.fat != null) totalFat += n.fat!;
+    }
+
+    if (totalCalories == 0) return const SizedBox.shrink();
+
+    return Tooltip(
+      message: '${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat',
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+        decoration: BoxDecoration(
+          color: theme.colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.local_fire_department, size: 12, color: theme.colorScheme.primary),
+            const SizedBox(width: 4),
+            Text(
+              '$totalCalories cal',
+              style: theme.textTheme.labelSmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.local_fire_department, size: 12, color: theme.colorScheme.primary),
-                const SizedBox(width: 4),
-                Text(
-                  '$totalCalories cal',
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      },
+          ],
+        ),
+      ),
     );
   }
 }
@@ -1106,53 +1155,60 @@ class _NutritionSummaryChip extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final recipesAsync = ref.watch(allRecipesProvider);
-    
-    return recipesAsync.when(
-      loading: () => const SizedBox.shrink(),
-      error: (_, __) => const SizedBox.shrink(),
-      data: (allRecipes) {
-        int totalCalories = 0;
-        double totalProtein = 0;
-        double totalCarbs = 0;
-        double totalFat = 0;
-        int recipesWithNutrition = 0;
-        
-        for (final id in recipeIds) {
-          final recipe = allRecipes.firstWhere(
-            (r) => r.uuid == id,
-            orElse: () => Recipe()..name = '',
-          );
-          if (recipe.nutrition != null && recipe.nutrition!.hasData) {
-            recipesWithNutrition++;
-            if (recipe.nutrition!.calories != null) totalCalories += recipe.nutrition!.calories!;
-            if (recipe.nutrition!.proteinContent != null) totalProtein += recipe.nutrition!.proteinContent!;
-            if (recipe.nutrition!.carbohydrateContent != null) totalCarbs += recipe.nutrition!.carbohydrateContent!;
-            if (recipe.nutrition!.fatContent != null) totalFat += recipe.nutrition!.fatContent!;
-          }
-        }
-        
-        if (totalCalories == 0) return const SizedBox.shrink();
-        
-        return Tooltip(
-          message: 'Total: ${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat\n($recipesWithNutrition of ${recipeIds.length} recipes have nutrition data)',
-          child: ActionChip(
-            avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.primary),
-            label: Text('$totalCalories cal'),
-            visualDensity: VisualDensity.compact,
-            backgroundColor: theme.colorScheme.surfaceContainerHighest,
-            onPressed: () => _showNutritionDetails(
-              context,
-              totalCalories: totalCalories,
-              totalProtein: totalProtein,
-              totalCarbs: totalCarbs,
-              totalFat: totalFat,
-              recipesWithNutrition: recipesWithNutrition,
-              totalRecipes: recipeIds.length,
-            ),
-          ),
-        );
-      },
+
+    final recipeIdSet = recipeIds.toSet();
+
+    // Select only nutrition primitives for the listed recipe IDs.
+    final nutritionData = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? [])
+            .where((r) => recipeIdSet.contains(r.uuid))
+            .map((r) => (
+              calories: r.nutrition?.calories,
+              protein: r.nutrition?.proteinContent,
+              carbs: r.nutrition?.carbohydrateContent,
+              fat: r.nutrition?.fatContent,
+            ),)
+            .toList(),
+      ),
+    );
+
+    int totalCalories = 0;
+    double totalProtein = 0;
+    double totalCarbs = 0;
+    double totalFat = 0;
+    int recipesWithNutrition = 0;
+
+    for (final n in nutritionData) {
+      final hasData = n.calories != null || n.fat != null || n.carbs != null || n.protein != null;
+      if (hasData) {
+        recipesWithNutrition++;
+        if (n.calories != null) totalCalories += n.calories!;
+        if (n.protein != null) totalProtein += n.protein!;
+        if (n.carbs != null) totalCarbs += n.carbs!;
+        if (n.fat != null) totalFat += n.fat!;
+      }
+    }
+
+    if (totalCalories == 0) return const SizedBox.shrink();
+
+    return Tooltip(
+      message: 'Total: ${totalProtein.round()}g protein, ${totalCarbs.round()}g carbs, ${totalFat.round()}g fat\n($recipesWithNutrition of ${recipeIds.length} recipes have nutrition data)',
+      child: ActionChip(
+        avatar: Icon(Icons.local_fire_department, size: 16, color: theme.colorScheme.primary),
+        label: Text('$totalCalories cal'),
+        visualDensity: VisualDensity.compact,
+        backgroundColor: theme.colorScheme.surfaceContainerHighest,
+        onPressed: () => _showNutritionDetails(
+          context,
+          totalCalories: totalCalories,
+          totalProtein: totalProtein,
+          totalCarbs: totalCarbs,
+          totalFat: totalFat,
+          recipesWithNutrition: recipesWithNutrition,
+          totalRecipes: recipeIds.length,
+        ),
+      ),
     );
   }
 

@@ -1,7 +1,9 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../features/cellar/models/cellar_entry.dart';
 import '../../features/cellar/repository/cellar_repository.dart';
 import '../../features/cheese/models/cheese_entry.dart';
@@ -68,7 +70,7 @@ class GitHubRecipeService {
       final response = await http.get(Uri.parse('$_baseUrl/$filename'));
       
       if (response.statusCode != 200) {
-        print('Warning: Failed to fetch $filename');
+        debugPrint('Warning: Failed to fetch $filename');
         return [];
       }
 
@@ -91,7 +93,7 @@ class GitHubRecipeService {
         !r.name.toLowerCase().startsWith('template'),
       ).toList();
     } catch (e) {
-      print('Error fetching $filename: $e');
+      debugPrint('Error fetching $filename: $e');
       return [];
     }
   }
@@ -104,12 +106,12 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => Pizza.fromJson(e as Map<String, dynamic>)
-            ..source = PizzaSource.memoix)
+          .map((e) => pizzaFromJson(e as Map<String, dynamic>)
+            .copyWith(source: PizzaSource.memoix.name),)
           .where((p) => p.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching pizzas.json: $e');
+      debugPrint('Error fetching pizzas.json: $e');
       return [];
     }
   }
@@ -122,12 +124,12 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => Sandwich.fromJson(e as Map<String, dynamic>)
-            ..source = SandwichSource.memoix)
+          .map((e) => sandwichFromJson(e as Map<String, dynamic>)
+            .copyWith(source: SandwichSource.memoix.name),)
           .where((s) => s.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching sandwiches.json: $e');
+      debugPrint('Error fetching sandwiches.json: $e');
       return [];
     }
   }
@@ -140,12 +142,12 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => SmokingRecipe.fromJson(e as Map<String, dynamic>)
-            ..source = SmokingSource.memoix)
+          .map((e) => smokingRecipeFromJson(e as Map<String, dynamic>)
+            .copyWith(source: SmokingSource.memoix.name),)
           .where((s) => s.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching smoking.json: $e');
+      debugPrint('Error fetching smoking.json: $e');
       return [];
     }
   }
@@ -159,11 +161,11 @@ class GitHubRecipeService {
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
           .map((e) => ModernistRecipe.fromJson(e as Map<String, dynamic>)
-            ..source = ModernistSource.memoix)
+            ..source = ModernistSource.memoix,)
           .where((m) => m.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching modernist.json: $e');
+      debugPrint('Error fetching modernist.json: $e');
       return [];
     }
   }
@@ -176,12 +178,12 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => CheeseEntry.fromJson(e as Map<String, dynamic>)
-            ..source = CheeseSource.memoix)
+          .map((e) => cheeseEntryFromJson(e as Map<String, dynamic>)
+            .copyWith(source: CheeseSource.memoix.name),)
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching cheese.json: $e');
+      debugPrint('Error fetching cheese.json: $e');
       return [];
     }
   }
@@ -194,12 +196,12 @@ class GitHubRecipeService {
       
       final data = jsonDecode(response.body) as List<dynamic>;
       return data
-          .map((e) => CellarEntry.fromJson(e as Map<String, dynamic>)
-            ..source = CellarSource.memoix)
+          .map((e) => cellarEntryFromJson(e as Map<String, dynamic>)
+            .copyWith(source: CellarSource.memoix.name),)
           .where((c) => c.name.isNotEmpty)
           .toList();
     } catch (e) {
-      print('Error fetching cellar.json: $e');
+      debugPrint('Error fetching cellar.json: $e');
       return [];
     }
   }
@@ -221,7 +223,7 @@ class GitHubRecipeService {
             ..source = RecipeSource.memoix,)
           .toList();
     } catch (e) {
-      print('Error fetching $course recipes: $e');
+      debugPrint('Error fetching $course recipes: $e');
       return [];
     }
   }
@@ -278,10 +280,8 @@ final syncRecipesProvider = FutureProvider<void>((ref) async {
 Future<void> _syncPizzas(PizzaRepository repo, List<Pizza> pizzas) async {
   for (final pizza in pizzas) {
     final existing = await repo.getPizzaByUuid(pizza.uuid);
-    if (existing != null) {
-      pizza.id = existing.id;
-    }
-    await repo.savePizza(pizza);
+    final toSave = existing != null ? pizza.copyWith(id: existing.id) : pizza;
+    await repo.savePizza(toSave);
   }
 }
 
@@ -289,10 +289,8 @@ Future<void> _syncPizzas(PizzaRepository repo, List<Pizza> pizzas) async {
 Future<void> _syncSandwiches(SandwichRepository repo, List<Sandwich> sandwiches) async {
   for (final sandwich in sandwiches) {
     final existing = await repo.getSandwichByUuid(sandwich.uuid);
-    if (existing != null) {
-      sandwich.id = existing.id;
-    }
-    await repo.saveSandwich(sandwich);
+    final toSave = existing != null ? sandwich.copyWith(id: existing.id) : sandwich;
+    await repo.saveSandwich(toSave);
   }
 }
 
@@ -300,10 +298,8 @@ Future<void> _syncSandwiches(SandwichRepository repo, List<Sandwich> sandwiches)
 Future<void> _syncSmokingRecipes(SmokingRepository repo, List<SmokingRecipe> recipes) async {
   for (final recipe in recipes) {
     final existing = await repo.getRecipeByUuid(recipe.uuid);
-    if (existing != null) {
-      recipe.id = existing.id;
-    }
-    await repo.saveRecipe(recipe);
+    final toSave = existing != null ? recipe.copyWith(id: existing.id) : recipe;
+    await repo.saveRecipe(toSave);
   }
 }
 
@@ -322,10 +318,8 @@ Future<void> _syncModernistRecipes(ModernistRepository repo, List<ModernistRecip
 Future<void> _syncCheeseEntries(CheeseRepository repo, List<CheeseEntry> entries) async {
   for (final entry in entries) {
     final existing = await repo.getEntryByUuid(entry.uuid);
-    if (existing != null) {
-      entry.id = existing.id;
-    }
-    await repo.saveEntry(entry);
+    final toSave = existing != null ? entry.copyWith(id: existing.id) : entry;
+    await repo.saveEntry(toSave);
   }
 }
 
@@ -333,10 +327,8 @@ Future<void> _syncCheeseEntries(CheeseRepository repo, List<CheeseEntry> entries
 Future<void> _syncCellarEntries(CellarRepository repo, List<CellarEntry> entries) async {
   for (final entry in entries) {
     final existing = await repo.getEntryByUuid(entry.uuid);
-    if (existing != null) {
-      entry.id = existing.id;
-    }
-    await repo.saveEntry(entry);
+    final toSave = existing != null ? entry.copyWith(id: existing.id) : entry;
+    await repo.saveEntry(toSave);
   }
 }
 

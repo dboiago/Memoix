@@ -3,37 +3,38 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math' as math;
 
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
+import 'package:path/path.dart' as path;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../core/database/app_database.dart';
+import '../../../core/database/database.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
-import '../../cellar/models/cellar_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
-import '../../cheese/models/cheese_entry.dart';
 import '../../cheese/repository/cheese_repository.dart';
-import '../../modernist/models/modernist_recipe.dart';
+import '../../mealplan/models/meal_plan.dart';
 import '../../modernist/repository/modernist_repository.dart';
-import '../../pizzas/models/pizza.dart';
-import '../../pizzas/repository/pizza_repository.dart';
-import '../../recipes/models/recipe.dart';
+import '../../notes/repository/scratch_pad_repository.dart';
+import '../../pizzas/repository/pizza_repository.dart' as pizzaRepo;
 import '../../recipes/repository/recipe_repository.dart';
-import '../../sandwiches/models/sandwich.dart';
-import '../../sandwiches/repository/sandwich_repository.dart';
-import '../../smoking/models/smoking_recipe.dart';
+import '../../sandwiches/repository/sandwich_repository.dart' as sandwichRepo;
 import '../../smoking/repository/smoking_repository.dart';
+import '../../statistics/models/cooking_stats.dart';
 import '../models/storage_location.dart';
 import '../models/merge_result.dart';
-import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 import '../models/sync_mode.dart';
 import '../models/sync_status.dart';
 import '../providers/personal_storage_provider.dart';
 import 'shared_storage_manager.dart';
 import '../providers/google_drive_storage.dart';
+import '../providers/one_drive_storage.dart';
 
 /// Preference keys for external storage settings
 class _PrefKeys {
@@ -65,6 +66,11 @@ class PersonalStorageService {
   
   /// Tracks if initialization has completed
   bool _isInitialized = false;
+
+  /// Prevents automatic push when the last pull failed.
+  /// Protects remote data from being overwritten by local data that may be
+  /// incompatible with the remote schema. Cleared on successful pull or push.
+  bool _pullFailed = false;
 
   /// Minimum time between automatic syncs (5 minutes)
   static const _syncCooldown = Duration(minutes: 5);
@@ -115,7 +121,7 @@ class PersonalStorageService {
         debugPrint('PersonalStorageService: Restored connection to ${provider.name}');
         
         // If there were pending changes queued before initialization, trigger push
-        if (_hasPendingChanges) {
+        if (_hasPendingChanges && !_pullFailed) {
           final isAuto = await isAutomaticMode;
           if (isAuto) {
             debugPrint('PersonalStorageService: Flushing pending changes after init');
@@ -140,7 +146,12 @@ class PersonalStorageService {
   PersonalStorageProvider? _createProvider(String providerId) {
     switch (providerId) {
       case 'google_drive':
-        return GoogleDriveStorage();
+        // Use the Riverpod singleton to prevent two instances with diverging
+        // in-memory state (e.g. _folderId set on one but not the other after
+        // switchRepository() is called from the UI).
+        return _ref.read(googleDriveStorageProvider);
+      case 'onedrive':
+        return OneDriveStorage();
       // Add other providers here as they are implemented:
       // case 'github':
       //   return GitHubStorage();
@@ -277,10 +288,10 @@ class PersonalStorageService {
   /// Called after recipe save/delete
   /// Debounces and batches rapid changes before pushing.
   void onRecipeChanged() {
+    SupabaseSyncService.notifyChanged();
     // Always mark pending changes - even if not yet initialized
     // This ensures we don't lose changes that happen during app startup
     _hasPendingChanges = true;
-    
     // If not initialized yet, the pending flag will trigger push after init
     if (!_isInitialized || !isConnected) return;
     
@@ -294,6 +305,7 @@ class PersonalStorageService {
       // Start new debounce timer
       _pushDebouncer = Timer(_pushDebounceDelay, () {
         push(silent: true);
+        SupabaseSyncService.notifyChanged();
       });
     });
   }
@@ -308,15 +320,15 @@ class PersonalStorageService {
     _pushDebouncer?.cancel();
     _pushDebouncer = null;
     
-    if (_hasPendingChanges) {
+    if (_hasPendingChanges && !_pullFailed) {
       await push(silent: true);
     }
   }
 
   // ============ PUSH OPERATION ============
 
-  /// Push local data to remote storage
-  /// 
+  /// Push local data to remote storage as a raw SQLite database file.
+  ///
   /// [silent] - If true, show minimal UI feedback (for automatic syncs)
   /// Implements retry with exponential backoff per EXTERNAL_STORAGE.md Section 10.
   Future<void> push({bool silent = false}) async {
@@ -324,44 +336,80 @@ class PersonalStorageService {
       if (!silent) MemoixSnackBar.showError('No storage provider connected');
       return;
     }
-    
+
     if (_isPushing) return; // Prevent concurrent pushes
+
+    // Guard: refuse automatic push when the last pull failed to prevent
+    // overwriting remote data that the local code cannot currently parse.
+    if (_pullFailed && silent) {
+      debugPrint(
+        'PersonalStorageService: Skipping silent push — last pull failed; '
+        'push manually to confirm intent',
+      );
+      return;
+    }
+
     _isPushing = true;
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.pushing;
 
     try {
-      // Create bundle from all local data
-      final bundle = await _createBundle();
-      
+      final db = AppDatabase.instance;
+
+      // Flush WAL to main DB file before reading bytes
+      await db.customStatement('PRAGMA wal_checkpoint(TRUNCATE)');
+
+      // Locate database file using platform-correct path
+      final dbFile = await _getDatabaseFile();
+      if (!await dbFile.exists()) return;
+
+      // One-time log: first push supersedes legacy memoix_recipes.json format
+      final prefs = await SharedPreferences.getInstance();
+      if (prefs.getBool('pss_db_format_active') != true) {
+        debugPrint(
+          'PersonalStorageService: Switching to memoix.db format; '
+          'supersedes legacy memoix_recipes.json',
+        );
+        await prefs.setBool('pss_db_format_active', true);
+      }
+
+      final bytes = await dbFile.readAsBytes();
+
+      // Capture ONE timestamp before the retry block so that meta.lastModified
+      // and the locally-stored lastSync value are identical. If syncTime were
+      // captured after _withRetry completes it would always be slightly later
+      // than meta.lastModified, causing isNewerThan() to return false on the
+      // next pull and reporting "already up to date" incorrectly.
+      final syncTime = DateTime.now().toUtc();
+
       // Push to remote with retry logic
       await _withRetry(
         () async {
-          await _provider!.push(bundle);
-          
-          // Update meta file
+          await _provider!.pushDatabaseBytes(bytes);
+
+          // Update meta file (kept for UI display)
           final meta = StorageMeta.create(
             deviceName: await _getDeviceName(),
-            domains: bundle.domainCounts,
+            domains: const DomainCounts(),
+            lastModified: syncTime,
           );
           await _provider!.updateMeta(meta);
         },
         operationName: 'push',
       );
-      
+
       // Update last sync time in preferences
-      final syncTime = DateTime.now();
       await _setLastSyncTime(syncTime);
       _hasPendingChanges = false;
-      
+      _pullFailed = false; // successful push clears the pull-failure guard
+
       // Update lastSynced timestamp in active repository
-      final prefs = await SharedPreferences.getInstance();
       final repositoriesJson = prefs.getString('drive_repositories');
       if (repositoriesJson != null) {
         final List<dynamic> list = jsonDecode(repositoriesJson);
-        final repositories = list.map((item) => 
-          StorageLocation.fromJson(item as Map<String, dynamic>)
+        final repositories = list.map((item) =>
+          StorageLocation.fromJson(item as Map<String, dynamic>),
         ).toList();
-        
+
         // Find and update active repository
         final updated = repositories.map((r) {
           if (r.isActive) {
@@ -369,16 +417,16 @@ class PersonalStorageService {
           }
           return r;
         }).toList();
-        
+
         // Save updated repositories
         final updatedJson = jsonEncode(updated.map((r) => r.toJson()).toList());
         await prefs.setString('drive_repositories', updatedJson);
       }
-      
+
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
       if (!silent) {
-        MemoixSnackBar.showSuccess('Pushed ${bundle.totalCount} recipes');
+        MemoixSnackBar.showSuccess('Database pushed');
       }
     } catch (e) {
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
@@ -393,8 +441,9 @@ class PersonalStorageService {
 
   // ============ PULL OPERATION ============
 
-  /// Pull remote data and merge into local database
-  /// 
+  /// Pull remote data by downloading the raw SQLite database file and replacing
+  /// the local database.
+  ///
   /// [silent] - If true, show minimal UI feedback (for automatic syncs)
   /// Implements retry with exponential backoff per EXTERNAL_STORAGE.md Section 10.
   Future<PullResult> pull({bool silent = false}) async {
@@ -402,412 +451,178 @@ class PersonalStorageService {
       if (!silent) MemoixSnackBar.showError('No storage provider connected');
       return PullResult.failed('No storage provider connected');
     }
-    
+
     if (_isPulling) return PullResult.skipped(); // Prevent concurrent pulls
     _isPulling = true;
     _ref.read(syncStatusProvider.notifier).state = SyncStatus.pulling;
 
     try {
-      // Smart pull: check meta first if provider supports it
-      if (_provider!.supportsFastMetaCheck) {
-        final remoteMeta = await _withRetry(
-          () => _provider!.getMeta(),
-          operationName: 'getMeta',
-        );
-        if (remoteMeta != null) {
-          final lastSync = await _getLastSyncTime();
-          if (lastSync != null && !remoteMeta.isNewerThan(lastSync)) {
-            // Remote hasn't changed since last sync
-            _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
-            if (!silent) {
-              MemoixSnackBar.show('Already up to date');
-            }
-            return PullResult.skipped();
-          }
-        }
-      }
-
-      // Download bundle with retry logic
-      final bundle = await _withRetry(
-        () => _provider!.pull(),
+      // Download raw database bytes
+      final bytes = await _withRetry(
+        () => _provider!.pullDatabaseBytes(),
         operationName: 'pull',
       );
-      if (bundle == null) {
+
+      if (bytes == null) {
         _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
         if (!silent) {
-          MemoixSnackBar.show('No recipes found in storage');
+          MemoixSnackBar.show('No database found in storage');
         }
         return PullResult.skipped();
       }
 
-      // Merge into local database
-      final mergeResult = await _mergeBundle(bundle);
-      
-      // Update last sync time
+      // Locate local database file using platform-correct path
+      final dbFile = await _getDatabaseFile();
+      final tempFile = File(path.join(dbFile.parent.path, 'memoix_sync_tmp.db'));
+
+      // Write downloaded bytes to a temp file first
+      await tempFile.writeAsBytes(bytes, flush: true);
+
+      // Diff-based up-to-date check: compare local vs remote snapshots before
+      // touching the main DB. If identical, delete the temp file and bail out.
+      _SyncDiff? diff;
+      try {
+        final localSnapshot = await _snapshotLocal();
+        final remoteSnapshot = await _snapshotTemp(tempFile);
+        diff = _diffSnapshots(localSnapshot, remoteSnapshot);
+
+        if (diff.isEmpty) {
+          await tempFile.delete();
+          _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
+          if (!silent) MemoixSnackBar.show('Already up to date');
+          return PullResult.skipped();
+        }
+      } catch (e) {
+        // Snapshot failed (e.g. schema mismatch on temp DB) — proceed with
+        // the full replace and show a generic success message.
+        debugPrint('PersonalStorageService: diff snapshot error (will proceed): $e');
+        diff = null;
+      }
+
+      // Close the Drift connection before swapping the file
+      await AppDatabase.instance.close();
+
+      // Replace local DB with downloaded file
+      await dbFile.writeAsBytes(await tempFile.readAsBytes());
+      await tempFile.delete();
+
+      // Delete stale WAL/SHM sidecar files if present
+      final walFile = File(path.join(dbFile.parent.path, 'memoix.db-wal'));
+      final shmFile = File(path.join(dbFile.parent.path, 'memoix.db-shm'));
+      if (await walFile.exists()) await walFile.delete();
+      if (await shmFile.exists()) await shmFile.delete();
+
+      // Reset singleton and reinitialize with a fresh executor
+      AppDatabase.resetInstance();
+      await MemoixDatabase.initialize();
+
+      // Invalidate ALL providers so every screen rebuilds against the new database.
+      // databaseProvider is the root; cascade covers repositories, but all leaf
+      // StreamProviders/FutureProviders are also explicitly invalidated for safety.
+      _ref.invalidate(databaseProvider);
+      // Core services (watch databaseProvider directly)
+      _ref.invalidate(mealPlanServiceProvider);
+      _ref.invalidate(cookingStatsServiceProvider);
+      _ref.invalidate(shoppingListServiceProvider);
+      _ref.invalidate(shoppingListsProvider);
+      _ref.invalidate(shoppingItemsProvider);
+      // Recipes
+      _ref.invalidate(recipeRepositoryProvider);
+      _ref.invalidate(allRecipesProvider);
+      _ref.invalidate(recipesByCourseProvider);
+      _ref.invalidate(coursesProvider);
+      _ref.invalidate(favoriteRecipesProvider);
+      _ref.invalidate(recipeSearchProvider);
+      _ref.invalidate(availableCuisinesProvider);
+      _ref.invalidate(recipesPairedWithProvider);
+      _ref.invalidate(recipesByUuidsProvider);
+      // Pizzas
+      _ref.invalidate(pizzaRepo.pizzaRepositoryProvider);
+      _ref.invalidate(pizzaRepo.allPizzasProvider);
+      _ref.invalidate(pizzaRepo.pizzasByBaseProvider);
+      _ref.invalidate(pizzaRepo.favoritePizzasProvider);
+      _ref.invalidate(pizzaRepo.pizzaCountProvider);
+      _ref.invalidate(pizzaRepo.pizzaCountByBaseProvider);
+      _ref.invalidate(pizzaRepo.allCheesesProvider);
+      _ref.invalidate(pizzaRepo.allProteinsProvider);
+      _ref.invalidate(pizzaRepo.allVegetablesProvider);
+      // Sandwiches
+      _ref.invalidate(sandwichRepo.sandwichRepositoryProvider);
+      _ref.invalidate(sandwichRepo.allSandwichesProvider);
+      _ref.invalidate(sandwichRepo.favoriteSandwichesProvider);
+      _ref.invalidate(sandwichRepo.sandwichCountProvider);
+      _ref.invalidate(sandwichRepo.allBreadsProvider);
+      _ref.invalidate(sandwichRepo.allProteinsProvider);
+      _ref.invalidate(sandwichRepo.allSandwichCheesesProvider);
+      _ref.invalidate(sandwichRepo.allCondimentsProvider);
+      // Cellar
+      _ref.invalidate(cellarRepositoryProvider);
+      _ref.invalidate(allCellarEntriesProvider);
+      _ref.invalidate(favoriteCellarEntriesProvider);
+      _ref.invalidate(cellarCategoriesProvider);
+      _ref.invalidate(cellarProducersProvider);
+      // Cheese
+      _ref.invalidate(cheeseRepositoryProvider);
+      _ref.invalidate(allCheeseEntriesProvider);
+      _ref.invalidate(favoriteCheeseEntriesProvider);
+      _ref.invalidate(cheeseCountriesProvider);
+      _ref.invalidate(cheeseMilkTypesProvider);
+      _ref.invalidate(cheeseTexturesProvider);
+      _ref.invalidate(cheeseTypesProvider);
+      // Smoking
+      _ref.invalidate(smokingRepositoryProvider);
+      _ref.invalidate(allSmokingRecipesProvider);
+      _ref.invalidate(favoriteSmokingRecipesProvider);
+      _ref.invalidate(smokingCountProvider);
+      _ref.invalidate(smokingRecipeByUuidProvider);
+      // Modernist
+      _ref.invalidate(modernistRepositoryProvider);
+      _ref.invalidate(allModernistRecipesProvider);
+      _ref.invalidate(favoriteModernistRecipesProvider);
+      _ref.invalidate(modernistByTypeProvider);
+      _ref.invalidate(modernistByTechniqueProvider);
+      _ref.invalidate(modernistCountProvider);
+      _ref.invalidate(modernistTechniquesProvider);
+      _ref.invalidate(modernistRecipeProvider);
+      // Notes / scratch pad
+      _ref.invalidate(scratchPadRepositoryProvider);
+      _ref.invalidate(quickNotesProvider);
+      _ref.invalidate(recipeDraftsProvider);
+      // Statistics (cooking logs)
+      _ref.invalidate(cookingStatsProvider);
+      _ref.invalidate(recipeCookCountProvider);
+      _ref.invalidate(recipeLastCookProvider);
+      // Meal plan
+      _ref.invalidate(weeklyPlanProvider);
+
       await _setLastSyncTime(DateTime.now());
-      
+      _pullFailed = false;
+
       _ref.read(syncStatusProvider.notifier).state = SyncStatus.idle;
 
-      // Only show feedback if not silent AND there were actual changes
-      if (!silent && mergeResult.hasChanges) {
-        MemoixSnackBar.show(mergeResult.summaryMessage);
-      } else if (!silent && !mergeResult.hasChanges) {
-        // Silent sync when no changes detected
-        debugPrint('PersonalStorageService: Sync complete, no changes detected');
-      }
-      
-      return PullResult.fromMerge(mergeResult, remoteCount: bundle.totalCount);
-    } catch (e) {
-      _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
       if (!silent) {
-        MemoixSnackBar.showError('Pull failed: $e');
+        MemoixSnackBar.showSuccess(diff?.toSummary() ?? 'Database synced');
       }
+
+      return PullResult(
+        added: diff?.recipesAdded ?? 0,
+        updated: diff?.recipesUpdated ?? 0,
+        deleted: diff?.recipesDeleted ?? 0,
+        unchanged: 0,
+      );
+    } catch (e) {
+      _pullFailed = true;
+      // Auto-clear after 60 seconds so sync can resume
+      Future.delayed(const Duration(seconds: 60), () {
+        _pullFailed = false;
+      });
+      _ref.read(syncStatusProvider.notifier).state = SyncStatus.error;
+      MemoixSnackBar.showPersistentWithCopy('Pull failed: $e');
       debugPrint('PersonalStorageService.pull error: $e');
       return PullResult.failed(e);
     } finally {
       _isPulling = false;
     }
-  }
-
-  // ============ BUNDLE CREATION ============
-
-  /// Create a RecipeBundle from all local data
-  Future<RecipeBundle> _createBundle() async {
-    final db = _ref.read(databaseProvider);
-    
-    // Fetch all data from each domain
-    final recipes = await db.recipes.where().findAll();
-    final pizzas = await db.pizzas.where().findAll();
-    final sandwiches = await db.sandwichs.where().findAll();
-    final cheeses = await db.cheeseEntrys.where().findAll();
-    final cellar = await db.cellarEntrys.where().findAll();
-    final smoking = await db.smokingRecipes.where().findAll();
-    final modernist = await db.modernistRecipes.where().findAll();
-
-    return RecipeBundle(
-      recipes: recipes,
-      pizzas: pizzas,
-      sandwiches: sandwiches,
-      cheeses: cheeses,
-      cellar: cellar,
-      smoking: smoking,
-      modernist: modernist,
-      metadata: BundleMetadata.create(
-        deviceName: await _getDeviceName(),
-      ),
-    );
-  }
-
-  // ============ MERGE LOGIC ============
-
-  /// Merge a pulled bundle into local database
-  /// 
-  /// Strategy: Last-Write-Wins with Merge
-  /// - Remote-only items: Add to local
-  /// - Local-only items: Keep (push will upload them)
-  /// - Both exist: Keep newer based on updatedAt timestamp
-  Future<MergeResult> _mergeBundle(RecipeBundle bundle) async {
-    final db = _ref.read(databaseProvider);
-    
-    var result = const MergeResult();
-
-    // Merge recipes
-    result = result + await _mergeRecipes(db, bundle.recipes);
-    
-    // Merge pizzas
-    result = result + await _mergePizzas(db, bundle.pizzas);
-    
-    // Merge sandwiches
-    result = result + await _mergeSandwiches(db, bundle.sandwiches);
-    
-    // Merge cheeses
-    result = result + await _mergeCheeses(db, bundle.cheeses);
-    
-    // Merge cellar
-    result = result + await _mergeCellar(db, bundle.cellar);
-    
-    // Merge smoking
-    result = result + await _mergeSmoking(db, bundle.smoking);
-    
-    // Merge modernist
-    result = result + await _mergeModernist(db, bundle.modernist);
-
-    return result;
-  }
-
-  /// Merge recipes domain
-  Future<MergeResult> _mergeRecipes(Isar db, List<Recipe> remoteRecipes) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteRecipes) {
-        final existing = await db.recipes
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          // Remote-only: add to local
-          await db.recipes.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Remote is newer: check if content actually differs
-          // Compare key fields to determine if content changed
-          final contentChanged = remote.name != existing.name ||
-              remote.ingredients.length != existing.ingredients.length ||
-              remote.directions.length != existing.directions.length ||
-              remote.serves != existing.serves ||
-              remote.time != existing.time;
-          
-          if (contentChanged) {
-            // Content differs: update local
-            remote.id = existing.id; // Preserve local ID
-            await db.recipes.put(remote);
-            updated++;
-          } else {
-            // Same content, just timestamp differs: keep local
-            unchanged++;
-          }
-        } else {
-          // Local is same or newer: keep local
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
-  }
-
-  /// Merge pizzas domain
-  Future<MergeResult> _mergePizzas(Isar db, List<Pizza> remotePizzas) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remotePizzas) {
-        final existing = await db.pizzas
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.pizzas.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content differs by comparing key fields
-          final contentChanged = remote.name != existing.name ||
-              remote.base != existing.base ||
-              remote.cheeses.length != existing.cheeses.length ||
-              remote.proteins.length != existing.proteins.length ||
-              remote.vegetables.length != existing.vegetables.length;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.pizzas.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
-  }
-
-  /// Merge sandwiches domain
-  Future<MergeResult> _mergeSandwiches(Isar db, List<Sandwich> remoteSandwiches) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteSandwiches) {
-        final existing = await db.sandwichs
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.sandwichs.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.bread != existing.bread ||
-              remote.proteins.length != existing.proteins.length ||
-              remote.vegetables.length != existing.vegetables.length ||
-              remote.cheeses.length != existing.cheeses.length ||
-              remote.condiments.length != existing.condiments.length;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.sandwichs.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
-  }
-
-  /// Merge cheeses domain
-  Future<MergeResult> _mergeCheeses(Isar db, List<CheeseEntry> remoteCheeses) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteCheeses) {
-        final existing = await db.cheeseEntrys
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.cheeseEntrys.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.type != existing.type ||
-              remote.country != existing.country ||
-              remote.milk != existing.milk ||
-              remote.texture != existing.texture ||
-              remote.flavour != existing.flavour;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.cheeseEntrys.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
-  }
-
-  /// Merge cellar domain
-  Future<MergeResult> _mergeCellar(Isar db, List<CellarEntry> remoteCellar) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteCellar) {
-        final existing = await db.cellarEntrys
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.cellarEntrys.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.producer != existing.producer ||
-              remote.category != existing.category ||
-              remote.tastingNotes != existing.tastingNotes ||
-              remote.abv != existing.abv ||
-              remote.ageVintage != existing.ageVintage;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.cellarEntrys.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
-  }
-
-  /// Merge smoking domain
-  Future<MergeResult> _mergeSmoking(Isar db, List<SmokingRecipe> remoteSmoking) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteSmoking) {
-        final existing = await db.smokingRecipes
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.smokingRecipes.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.item != existing.item ||
-              remote.category != existing.category ||
-              remote.wood != existing.wood ||
-              remote.time != existing.time ||
-              remote.temperature != existing.temperature;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.smokingRecipes.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
-  }
-
-  /// Merge modernist domain
-  Future<MergeResult> _mergeModernist(Isar db, List<ModernistRecipe> remoteModernist) async {
-    int added = 0, updated = 0, unchanged = 0;
-
-    await db.writeTxn(() async {
-      for (final remote in remoteModernist) {
-        final existing = await db.modernistRecipes
-            .filter()
-            .uuidEqualTo(remote.uuid)
-            .findFirst();
-
-        if (existing == null) {
-          await db.modernistRecipes.put(remote);
-          added++;
-        } else if (remote.updatedAt.isAfter(existing.updatedAt)) {
-          // Check if content actually differs
-          final contentChanged = remote.name != existing.name ||
-              remote.type != existing.type ||
-              remote.equipment.length != existing.equipment.length ||
-              remote.ingredients.length != existing.ingredients.length ||
-              remote.directions.length != existing.directions.length;
-          
-          if (contentChanged) {
-            remote.id = existing.id;
-            await db.modernistRecipes.put(remote);
-            updated++;
-          } else {
-            unchanged++;
-          }
-        } else {
-          unchanged++;
-        }
-      }
-    });
-
-    return MergeResult(added: added, updated: updated, unchanged: unchanged);
   }
 
   // ============ HELPERS ============
@@ -817,7 +632,7 @@ class PersonalStorageService {
     final prefs = await SharedPreferences.getInstance();
     final value = prefs.getString(_PrefKeys.lastSyncTime);
     if (value == null) return null;
-    return DateTime.tryParse(value);
+    return DateTime.tryParse(value)?.toUtc();
   }
 
   /// Store last sync timestamp
@@ -831,6 +646,15 @@ class PersonalStorageService {
     if (activeRepo != null) {
       await manager.updateLastSynced(activeRepo.id);
     }
+  }
+
+  /// Returns the platform-correct path to the Drift database file.
+  /// On desktop (Windows, Linux, macOS) drift_flutter uses
+  /// getApplicationSupportDirectory(); on mobile it uses
+  /// getApplicationDocumentsDirectory().
+  Future<File> _getDatabaseFile() async {
+    final dbPath = await AppDatabase.instance.utilityDao.getDatabasePath();
+    return File(dbPath);
   }
 
   /// Get device name for meta file
@@ -847,10 +671,225 @@ class PersonalStorageService {
     } catch (_) {}
     return 'Unknown Device';
   }
+
+  // ============ DIFF HELPERS ============
+
+  /// Lightweight snapshot of the live local database.
+  Future<_DbSnapshot> _snapshotLocal() async {
+    final db = AppDatabase.instance;
+    return _querySnapshot(db);
+  }
+
+  /// Snapshot the downloaded temp DB using a raw [NativeDatabase] executor.
+  /// Never wraps in [AppDatabase] to avoid Drift's multiple-database warning.
+  Future<_DbSnapshot> _snapshotTemp(File tempFile) async {
+    final executor = NativeDatabase(tempFile, logStatements: false);
+    await executor.ensureOpen(_NoOpQueryExecutorUser());
+    try {
+      final recipeRows = await executor
+          .runSelect('SELECT uuid, updated_at FROM recipes', []);
+      final timestamps = <String, DateTime>{};
+      for (final row in recipeRows) {
+        final uuid = row['uuid'] as String;
+        final rawMs = row['updated_at'];
+        final int ms;
+        if (rawMs is int) {
+          ms = rawMs;
+        } else {
+          ms = int.tryParse(rawMs?.toString() ?? '') ?? 0;
+        }
+        if (ms > 0) {
+          timestamps[uuid] =
+              DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
+        }
+      }
+
+      int _countFrom(List<Map<String, Object?>> rows) =>
+          (rows.first['c'] as int?) ?? 0;
+
+      final pizzaCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM pizzas', []));
+      final cellarCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM cellar_entries', []));
+      final cheeseCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM cheese_entries', []));
+      final sandwichCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM sandwiches', []));
+      final smokingCount =
+          _countFrom(await executor.runSelect('SELECT COUNT(*) AS c FROM smoking_recipes', []));
+
+      return _DbSnapshot(
+        recipeTimestamps: timestamps,
+        pizzaCount: pizzaCount,
+        cellarCount: cellarCount,
+        cheeseCount: cheeseCount,
+        sandwichCount: sandwichCount,
+        smokingCount: smokingCount,
+      );
+    } finally {
+      await executor.close();
+    }
+  }
+
+  /// Run the snapshot queries against the live local [AppDatabase].
+  /// Drift stores [DateTimeColumn] as integer milliseconds since epoch.
+  /// The cast is made defensive in case SQLite returns the value as a String
+  /// (e.g. when the database was written by an older schema).
+  Future<_DbSnapshot> _querySnapshot(AppDatabase db) async {
+    final recipeRows = await db
+        .customSelect('SELECT uuid, updated_at FROM recipes')
+        .get();
+    final timestamps = <String, DateTime>{};
+    for (final row in recipeRows) {
+      final uuid = row.data['uuid'] as String;
+      final rawMs = row.data['updated_at'];
+      final int ms;
+      if (rawMs is int) {
+        ms = rawMs;
+      } else {
+        ms = int.tryParse(rawMs?.toString() ?? '') ?? 0;
+      }
+      if (ms > 0) {
+        timestamps[uuid] = DateTime.fromMillisecondsSinceEpoch(ms, isUtc: true);
+      }
+    }
+
+    int _count(List<QueryRow> rows) =>
+        (rows.first.data['c'] as int?) ?? 0;
+
+    final pizzaCount    = _count(await db.customSelect('SELECT COUNT(*) AS c FROM pizzas').get());
+    final cellarCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cellar_entries').get());
+    final cheeseCount   = _count(await db.customSelect('SELECT COUNT(*) AS c FROM cheese_entries').get());
+    final sandwichCount = _count(await db.customSelect('SELECT COUNT(*) AS c FROM sandwiches').get());
+    final smokingCount  = _count(await db.customSelect('SELECT COUNT(*) AS c FROM smoking_recipes').get());
+
+    return _DbSnapshot(
+      recipeTimestamps: timestamps,
+      pizzaCount: pizzaCount,
+      cellarCount: cellarCount,
+      cheeseCount: cheeseCount,
+      sandwichCount: sandwichCount,
+      smokingCount: smokingCount,
+    );
+  }
+
+  /// Compute the diff between a local and remote [_DbSnapshot].
+  _SyncDiff _diffSnapshots(_DbSnapshot local, _DbSnapshot remote) {
+    int added = 0, updated = 0, deleted = 0;
+
+    for (final entry in remote.recipeTimestamps.entries) {
+      final localTime = local.recipeTimestamps[entry.key];
+      if (localTime == null) {
+        added++;
+      } else if (entry.value.isAfter(localTime)) {
+        updated++;
+      }
+    }
+    for (final uuid in local.recipeTimestamps.keys) {
+      if (!remote.recipeTimestamps.containsKey(uuid)) deleted++;
+    }
+  
+    return _SyncDiff(
+      recipesAdded: added,
+      recipesUpdated: updated,
+      recipesDeleted: deleted,
+      pizzaDelta: remote.pizzaCount - local.pizzaCount,
+      cellarDelta: remote.cellarCount - local.cellarCount,
+      cheeseDelta: remote.cheeseCount - local.cheeseCount,
+      sandwichDelta: remote.sandwichCount - local.sandwichCount,
+      smokingDelta: remote.smokingCount - local.smokingCount,
+    );
+  }
 }
 
-// Search your memory. Find your identity. Reflect on the origin.
-const _origin = 'Cl ul xkzqvd, vvwrchmz yph hwh zxpfmfoq xpc gf gch: "kzkf wv aqvpo Q vqyf kxkz."';
+// ============ SNAPSHOT / DIFF TYPES ============
+
+/// Minimal [QueryExecutorUser] used to open a [NativeDatabase] for read-only
+/// snapshot queries. No migrations are performed on the temp file.
+class _NoOpQueryExecutorUser extends QueryExecutorUser {
+  @override
+  int get schemaVersion => 1;
+
+  @override
+  Future<void> beforeOpen(QueryExecutor db, OpeningDetails details) async {}
+}
+
+/// Lightweight snapshot of a database for sync diff comparison.
+class _DbSnapshot {
+  final Map<String, DateTime> recipeTimestamps;
+  final int pizzaCount;
+  final int cellarCount;
+  final int cheeseCount;
+  final int sandwichCount;
+  final int smokingCount;
+
+  const _DbSnapshot({
+    required this.recipeTimestamps,
+    required this.pizzaCount,
+    required this.cellarCount,
+    required this.cheeseCount,
+    required this.sandwichCount,
+    required this.smokingCount,
+  });
+}
+
+/// Computed difference between a local and a remote [_DbSnapshot].
+class _SyncDiff {
+  final int recipesAdded;
+  final int recipesUpdated;
+  final int recipesDeleted;
+  final int pizzaDelta;
+  final int cellarDelta;
+  final int cheeseDelta;
+  final int sandwichDelta;
+  final int smokingDelta;
+
+  const _SyncDiff({
+    required this.recipesAdded,
+    required this.recipesUpdated,
+    required this.recipesDeleted,
+    required this.pizzaDelta,
+    required this.cellarDelta,
+    required this.cheeseDelta,
+    required this.sandwichDelta,
+    required this.smokingDelta,
+  });
+
+  bool get isEmpty =>
+      recipesAdded == 0 &&
+      recipesUpdated == 0 &&
+      recipesDeleted == 0 &&
+      pizzaDelta == 0 &&
+      cellarDelta == 0 &&
+      cheeseDelta == 0 &&
+      sandwichDelta == 0 &&
+      smokingDelta == 0;
+
+  String toSummary() {
+    final parts = <String>[];
+
+    // Recipes: detailed breakdown
+    if (recipesAdded > 0 || recipesUpdated > 0 || recipesDeleted > 0) {
+      final rParts = <String>[];
+      if (recipesAdded > 0) rParts.add('$recipesAdded added');
+      if (recipesUpdated > 0) rParts.add('$recipesUpdated updated');
+      if (recipesDeleted > 0) rParts.add('$recipesDeleted removed');
+      parts.add('recipes: ${rParts.join(', ')}');
+    }
+
+    // Other domains: count delta only
+    void _addDelta(String label, int delta) {
+      if (delta != 0) parts.add('${delta > 0 ? '+$delta' : '$delta'} $label');
+    }
+    _addDelta('pizzas', pizzaDelta);
+    _addDelta('cellar', cellarDelta);
+    _addDelta('cheese', cheeseDelta);
+    _addDelta('sandwiches', sandwichDelta);
+    _addDelta('smoking', smokingDelta);
+
+    return parts.isEmpty ? 'Database synced' : 'Synced: ${parts.join(' · ')}';
+  }
+}
 
 // ============ PROVIDERS ============
 

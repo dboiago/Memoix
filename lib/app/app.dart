@@ -13,6 +13,9 @@ import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';
 import '../features/tools/timer_service.dart';
 import '../features/personal_storage/services/personal_storage_service.dart';
+import '../core/database/database.dart';
+import '../core/services/image_migration_service.dart';
+import '../core/utils/ingredient_categorizer.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -49,21 +52,31 @@ class _DeepLinkWrapper extends ConsumerStatefulWidget {
   ConsumerState<_DeepLinkWrapper> createState() => _DeepLinkWrapperState();
 }
 
+// Search your memory. Find your identity. Reflect on the origin.
+const _origin = 'Cl ul xkzqvd, vvwrchmz yph hwh zxpfmfoq xpc gf gch: "kzkf wv aqvpo Q vqyf kxkz."';
+
 class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
-    with WidgetsBindingObserver {
+  with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    // Initialize deep links and check for updates after first frame
     WidgetsBinding.instance.addPostFrameCallback((_) {
       processIntegrityResponses(ref);
       ref.read(deepLinkServiceProvider).initialize(context);
+      ref.read(deepLinkServiceProvider).checkClipboard(context);
       _checkForUpdatesOnLaunch();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
       _triggerPersonalStorageSync();
+      _deferredInit();
     });
+  }
+
+  Future<void> _deferredInit() async {
+    await ImageMigrationService.runIfNeeded();
+    await IngredientService().initialize();
+    await MemoixDatabase.refreshCourses();
   }
 
   @override
@@ -79,6 +92,9 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
       // App coming back to foreground - could trigger pull if needed
       // Currently handled by onAppLaunched on startup
       processIntegrityResponses(ref);
+      if (mounted) {
+        ref.read(deepLinkServiceProvider).checkClipboard(context);
+      }
     }
   }
 
@@ -146,25 +162,32 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     if (!autoCheck) return;
 
     final updateService = ref.read(updateServiceProvider);
-    final appVersion = await updateService.checkForUpdate();
+    final AppVersion? appVersion;
+    try {
+      appVersion = await updateService.checkForUpdate();
+    } catch (e) {
+      debugPrint('Update check on launch failed: $e');
+      return;
+    }
 
     if (!mounted || appVersion == null || !appVersion.hasUpdate) return;
+    final validVersion = appVersion;
 
     // Show update dialog
     showDialog(
       context: context,
       barrierDismissible: false,
       builder: (ctx) => UpdateAvailableDialog(
-        currentVersion: appVersion.currentVersion,
-        latestVersion: appVersion.latestVersion,
-        releaseNotes: appVersion.releaseNotes,
-        releaseUrl: appVersion.downloadUrl,
+        currentVersion: validVersion.currentVersion,
+        latestVersion: validVersion.latestVersion,
+        releaseNotes: validVersion.releaseNotes,
+        releaseUrl: validVersion.downloadUrl,
         onUpdate: () async {
-          final success = await updateService.installUpdate(appVersion.downloadUrl);
+          final success = await updateService.installUpdate(validVersion.downloadUrl);
           if (!success && ctx.mounted) {
             // Fallback: open browser if auto-install failed
             Navigator.pop(ctx);
-            await updateService.openReleaseUrl(appVersion.downloadUrl);
+            await updateService.openReleaseUrl(validVersion.downloadUrl);
           }
           return success;
         },

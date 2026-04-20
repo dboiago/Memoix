@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../recipes/models/recipe.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -16,9 +17,7 @@ import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
-import '../../cellar/models/cellar_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
-import '../../cheese/models/cheese_entry.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../sharing/services/share_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -132,7 +131,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
         subtitle: recipe.cuisine,
         type: ShareableType.recipe,
         original: recipe,
-      ));
+      ),);
       _generateShareLink();
     }
   }
@@ -200,7 +199,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: r.cuisine,
           type: ShareableType.recipe,
           original: r,
-        ));
+        ),);
       }
     });
 
@@ -212,10 +211,10 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           uuid: p.uuid,
           name: p.name,
           category: 'Pizzas',
-          subtitle: p.base.displayName,
+          subtitle: PizzaBaseExtension.fromString(p.base).displayName,
           type: ShareableType.pizza,
           original: p,
-        ));
+        ),);
       }
     });
 
@@ -230,7 +229,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: s.bread,
           type: ShareableType.sandwich,
           original: s,
-        ));
+        ),);
       }
     });
 
@@ -245,7 +244,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: s.item ?? s.category,
           type: ShareableType.smoking,
           original: s,
-        ));
+        ),);
       }
     });
 
@@ -260,7 +259,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: m.technique,
           type: ShareableType.modernist,
           original: m,
-        ));
+        ),);
       }
     });
 
@@ -275,7 +274,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: c.producer ?? c.category,
           type: ShareableType.cellar,
           original: c,
-        ));
+        ),);
       }
     });
 
@@ -290,7 +289,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           subtitle: c.country ?? c.milk,
           type: ShareableType.cheese,
           original: c,
-        ));
+        ),);
       }
     });
 
@@ -391,7 +390,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                     .where((c) => allItems.any((item) =>
                         item.type == ShareableType.recipe &&
                         (item.category.toLowerCase() == c.slug ||
-                            item.category.toLowerCase() == c.name.toLowerCase())))
+                            item.category.toLowerCase() == c.name.toLowerCase()),),)
                     .map((c) => _buildFilterChip(c.name, theme)),
                 if (allItems.any((i) => i.type == ShareableType.pizza))
                   _buildFilterChip('Pizzas', theme),
@@ -430,12 +429,12 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
           setState(() => _selectedCategory = label);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
@@ -570,7 +569,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                     setState(() => _selectedItem = item);
                     _generateShareLink();
                   },
-                )),
+                ),),
           ],
         );
       },
@@ -613,7 +612,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -722,10 +721,16 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
 
   void _shareViaLink() {
     if (_shareLink == null || _selectedItem == null) return;
-    Share.share(
-      'Check out this ${_selectedItem!.type.singularName.toLowerCase()}: ${_selectedItem!.name}\n\n$_shareLink',
-      subject: _selectedItem!.name,
-    );
+    try {
+      SharePlus.instance.share(ShareParams(
+        text: 'Check out this ${_selectedItem!.type.singularName.toLowerCase()}: ${_selectedItem!.name}\n\n$_shareLink',
+        subject: _selectedItem!.name,
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareRecipeScreen._shareViaLink error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   void _copyLink() {
@@ -766,11 +771,16 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     buffer.writeln();
     buffer.writeln('Shared from Memoix');
 
-    Share.share(buffer.toString(), subject: _selectedItem!.name);
+    try {
+      SharePlus.instance.share(ShareParams(text: buffer.toString(), subject: _selectedItem!.name));
+    } catch (e) {
+      debugPrint('ShareRecipeScreen._shareAsText error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   void _formatRecipeAsText(StringBuffer buffer, Recipe recipe) {
-    buffer.writeln('${recipe.name}');
+    buffer.writeln(recipe.name);
     buffer.writeln();
     buffer.writeln('Course: ${recipe.course}');
     if (recipe.cuisine != null) buffer.writeln('Cuisine: ${recipe.cuisine}');
@@ -793,25 +803,28 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatPizzaAsText(StringBuffer buffer, Pizza pizza) {
-    buffer.writeln('${pizza.name}');
+    buffer.writeln(pizza.name);
     buffer.writeln();
-    buffer.writeln('Base: ${pizza.base.displayName}');
+    buffer.writeln('Base: ${PizzaBaseExtension.fromString(pizza.base).displayName}');
 
-    if (pizza.cheeses.isNotEmpty) {
+    final cheeses = pizza.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln('\nCheeses:');
-      for (final cheese in pizza.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('• $cheese');
       }
     }
-    if (pizza.proteins.isNotEmpty) {
+    final proteins = pizza.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln('\nProteins:');
-      for (final protein in pizza.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('• $protein');
       }
     }
-    if (pizza.vegetables.isNotEmpty) {
+    final vegetables = pizza.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln('\nVegetables:');
-      for (final veg in pizza.vegetables) {
+      for (final veg in vegetables) {
         buffer.writeln('• $veg');
       }
     }
@@ -821,31 +834,35 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatSandwichAsText(StringBuffer buffer, Sandwich sandwich) {
-    buffer.writeln('${sandwich.name}');
+    buffer.writeln(sandwich.name);
     buffer.writeln();
     buffer.writeln('Bread: ${sandwich.bread}');
 
-    if (sandwich.proteins.isNotEmpty) {
+    final proteins = sandwich.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln('\nProteins:');
-      for (final protein in sandwich.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('• $protein');
       }
     }
-    if (sandwich.cheeses.isNotEmpty) {
+    final cheeses = sandwich.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln('\nCheeses:');
-      for (final cheese in sandwich.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('• $cheese');
       }
     }
-    if (sandwich.vegetables.isNotEmpty) {
+    final vegetables = sandwich.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln('\nVegetables:');
-      for (final veg in sandwich.vegetables) {
+      for (final veg in vegetables) {
         buffer.writeln('• $veg');
       }
     }
-    if (sandwich.condiments.isNotEmpty) {
+    final condiments = sandwich.condimentsList;
+    if (condiments.isNotEmpty) {
       buffer.writeln('\nCondiments:');
-      for (final condiment in sandwich.condiments) {
+      for (final condiment in condiments) {
         buffer.writeln('• $condiment');
       }
     }
@@ -855,24 +872,26 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatSmokingAsText(StringBuffer buffer, SmokingRecipe recipe) {
-    buffer.writeln('${recipe.name}');
+    buffer.writeln(recipe.name);
     buffer.writeln();
     if (recipe.item != null) buffer.writeln('Item: ${recipe.item}');
     buffer.writeln('Temperature: ${recipe.temperature}');
     buffer.writeln('Time: ${recipe.time}');
     buffer.writeln('Wood: ${recipe.wood}');
 
-    if (recipe.seasonings.isNotEmpty) {
+    final seasonings = recipe.seasoningsList;
+    if (seasonings.isNotEmpty) {
       buffer.writeln('\nSeasonings:');
-      for (final s in recipe.seasonings) {
+      for (final s in seasonings) {
         final amount = s.amount != null && s.amount!.isNotEmpty ? '${s.amount} ' : '';
         buffer.writeln('• $amount${s.name}');
       }
     }
-    if (recipe.directions.isNotEmpty) {
+    final directions = recipe.directionsList;
+    if (directions.isNotEmpty) {
       buffer.writeln('\nDirections:');
-      for (var i = 0; i < recipe.directions.length; i++) {
-        buffer.writeln('${i + 1}. ${recipe.directions[i]}');
+      for (var i = 0; i < directions.length; i++) {
+        buffer.writeln('${i + 1}. ${directions[i]}');
       }
     }
     if (recipe.notes != null && recipe.notes!.isNotEmpty) {
@@ -881,7 +900,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatModernistAsText(StringBuffer buffer, ModernistRecipe recipe) {
-    buffer.writeln('${recipe.name}');
+    buffer.writeln(recipe.name);
     buffer.writeln();
     buffer.writeln('Type: ${recipe.type.displayName}');
     if (recipe.technique != null) buffer.writeln('Technique: ${recipe.technique}');
@@ -915,7 +934,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatCellarAsText(StringBuffer buffer, CellarEntry entry) {
-    buffer.writeln('${entry.name}');
+    buffer.writeln(entry.name);
     buffer.writeln();
     if (entry.producer != null) buffer.writeln('Producer: ${entry.producer}');
     if (entry.category != null) buffer.writeln('Category: ${entry.category}');
@@ -928,7 +947,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   void _formatCheeseAsText(StringBuffer buffer, CheeseEntry entry) {
-    buffer.writeln('${entry.name}');
+    buffer.writeln(entry.name);
     buffer.writeln();
     if (entry.country != null) buffer.writeln('Country: ${entry.country}');
     if (entry.milk != null) buffer.writeln('Milk: ${entry.milk}');

@@ -1,10 +1,12 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../../core/database/app_database.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../widgets/sandwich_card.dart';
@@ -47,7 +49,7 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
         data: (allSandwiches) {
           // Apply Hide Memoix filter if enabled
           final visibleSandwiches = hideMemoix
-              ? allSandwiches.where((s) => s.source != SandwichSource.memoix).toList()
+              ? allSandwiches.where((s) => s.source != SandwichSource.memoix.name).toList()
               : allSandwiches;
 
           return Column(
@@ -70,17 +72,17 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
                       if (sandwich.bread.toLowerCase().contains(query)) {
                         matches.add(sandwich.bread);
                       }
-                      for (final protein in sandwich.proteins) {
+                      for (final protein in (jsonDecode(sandwich.proteins) as List).cast<String>()) {
                         if (protein.toLowerCase().contains(query)) {
                           matches.add(protein);
                         }
                       }
-                      for (final cheese in sandwich.cheeses) {
+                      for (final cheese in (jsonDecode(sandwich.cheeses) as List).cast<String>()) {
                         if (cheese.toLowerCase().contains(query)) {
                           matches.add(cheese);
                         }
                       }
-                      for (final condiment in sandwich.condiments) {
+                      for (final condiment in (jsonDecode(sandwich.condiments) as List).cast<String>()) {
                         if (condiment.toLowerCase().contains(query)) {
                           matches.add(condiment);
                         }
@@ -216,13 +218,15 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
     bool hasAssorted = false;
 
     for (final sandwich in sandwiches) {
-      if (sandwich.proteins.isEmpty && sandwich.cheeses.isNotEmpty) {
+      final proteins = (jsonDecode(sandwich.proteins) as List).cast<String>();
+      final cheeses = (jsonDecode(sandwich.cheeses) as List).cast<String>();
+      if (proteins.isEmpty && cheeses.isNotEmpty) {
         hasVegetarian = true;
       }
-      if (sandwich.proteins.length > 1) {
+      if (proteins.length > 1) {
         hasAssorted = true;
       }
-      for (final protein in sandwich.proteins) {
+      for (final protein in proteins) {
         proteinSet.add(protein);
       }
     }
@@ -321,12 +325,12 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
         selected: isSelected,
         onSelected: onSelected,
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
@@ -345,17 +349,19 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
     // Filter by selected proteins (multi-select)
     if (_selectedProteins.isNotEmpty) {
       sandwiches = sandwiches.where((s) {
+        final proteins = (jsonDecode(s.proteins) as List).cast<String>();
+        final cheeses = (jsonDecode(s.cheeses) as List).cast<String>();
         // Check each selected filter
         for (final filter in _selectedProteins) {
           if (filter == 'cheese') {
             // Vegetarian: no proteins but has cheese
-            if (s.proteins.isEmpty && s.cheeses.isNotEmpty) return true;
+            if (proteins.isEmpty && cheeses.isNotEmpty) return true;
           } else if (filter == 'assorted') {
             // Assorted: multiple proteins
-            if (s.proteins.length > 1) return true;
+            if (proteins.length > 1) return true;
           } else {
             // Has specific protein
-            if (s.proteins.any((p) => p.toLowerCase() == filter)) return true;
+            if (proteins.any((p) => p.toLowerCase() == filter)) return true;
           }
         }
         return false;
@@ -365,12 +371,16 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
     // Filter by search query
     if (_searchQuery.isNotEmpty) {
       sandwiches = sandwiches.where((s) {
+        final proteins = (jsonDecode(s.proteins) as List).cast<String>();
+        final vegetables = (jsonDecode(s.vegetables) as List).cast<String>();
+        final cheeses = (jsonDecode(s.cheeses) as List).cast<String>();
+        final condiments = (jsonDecode(s.condiments) as List).cast<String>();
         final nameMatch = s.name.toLowerCase().contains(_searchQuery);
         final breadMatch = s.bread.toLowerCase().contains(_searchQuery);
-        final proteinMatch = s.proteins.any((p) => p.toLowerCase().contains(_searchQuery));
-        final vegetableMatch = s.vegetables.any((v) => v.toLowerCase().contains(_searchQuery));
-        final cheeseMatch = s.cheeses.any((c) => c.toLowerCase().contains(_searchQuery));
-        final condimentMatch = s.condiments.any((c) => c.toLowerCase().contains(_searchQuery));
+        final proteinMatch = proteins.any((p) => p.toLowerCase().contains(_searchQuery));
+        final vegetableMatch = vegetables.any((v) => v.toLowerCase().contains(_searchQuery));
+        final cheeseMatch = cheeses.any((c) => c.toLowerCase().contains(_searchQuery));
+        final condimentMatch = condiments.any((c) => c.toLowerCase().contains(_searchQuery));
         return nameMatch || breadMatch || proteinMatch || vegetableMatch || cheeseMatch || condimentMatch;
       }).toList();
     }

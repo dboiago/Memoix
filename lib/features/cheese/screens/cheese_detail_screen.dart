@@ -6,6 +6,7 @@ import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
 import '../../../core/services/integrity_service.dart';
@@ -32,7 +33,7 @@ class CheeseDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CheeseEntry()..name = '',
+          orElse: () => CheeseEntry(id: 0, uuid: '', name: '', buy: false, source: CheeseSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
         );
 
         if (entry.name.isEmpty) {
@@ -133,7 +134,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Country (use adjective form like "French" not "France")
@@ -143,7 +144,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Milk
@@ -153,7 +154,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Texture
@@ -163,7 +164,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Type
@@ -173,7 +174,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Price range (displayed as dollar signs)
@@ -184,7 +185,7 @@ class _CheeseDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     if (chips.isEmpty) {
@@ -232,19 +233,25 @@ class _CheeseDetailView extends ConsumerWidget {
 
   void _duplicateEntry(BuildContext context, WidgetRef ref) async {
     final repo = ref.read(cheeseRepositoryProvider);
-    final newEntry = CheeseEntry()
-      ..uuid = ''  // Will be generated on save
-      ..name = '${entry.name} (Copy)'
-      ..country = entry.country
-      ..milk = entry.milk
-      ..texture = entry.texture
-      ..type = entry.type
-      ..flavour = entry.flavour
-      ..buy = entry.buy
-      ..priceRange = entry.priceRange
-      ..imageUrl = entry.imageUrl
-      ..source = CheeseSource.personal
-      ..isFavorite = false;
+    final now = DateTime.now();
+    final newEntry = CheeseEntry(
+      id: 0,
+      uuid: '',
+      name: '${entry.name} (Copy)',
+      country: entry.country,
+      milk: entry.milk,
+      texture: entry.texture,
+      type: entry.type,
+      flavour: entry.flavour,
+      buy: entry.buy,
+      priceRange: entry.priceRange,
+      imageUrl: entry.imageUrl,
+      source: CheeseSource.personal.name,
+      isFavorite: false,
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
+    );
     
     await repo.saveEntry(newEntry);
     MemoixSnackBar.show('Created copy: ${newEntry.name}');

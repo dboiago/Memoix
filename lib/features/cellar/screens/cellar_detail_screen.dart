@@ -6,6 +6,7 @@ import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../sharing/services/share_service.dart';
 import '../../recipes/models/cuisine.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 import '../../../core/services/integrity_service.dart';
@@ -32,7 +33,7 @@ class CellarDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CellarEntry()..name = '',
+          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
         );
 
         if (entry.name.isEmpty) {
@@ -133,7 +134,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Category
@@ -143,7 +144,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Producer (use 2-letter country code in ALL CAPS - e.g., "ZA" not "Za")
@@ -155,7 +156,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // ABV (with % suffix, sanitized)
@@ -167,7 +168,7 @@ class _CellarDetailView extends ConsumerWidget {
           backgroundColor: theme.colorScheme.surfaceContainerHighest,
           labelStyle: TextStyle(color: theme.colorScheme.onSurface),
           visualDensity: VisualDensity.compact,
-        ));
+        ),);
       }
     }
 
@@ -178,7 +179,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     // Price range (displayed as dollar signs)
@@ -189,7 +190,7 @@ class _CellarDetailView extends ConsumerWidget {
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
         labelStyle: TextStyle(color: theme.colorScheme.onSurface),
         visualDensity: VisualDensity.compact,
-      ));
+      ),);
     }
 
     if (chips.isEmpty) {
@@ -237,19 +238,25 @@ class _CellarDetailView extends ConsumerWidget {
 
   void _duplicateEntry(BuildContext context, WidgetRef ref) async {
     final repo = ref.read(cellarRepositoryProvider);
-    final newEntry = CellarEntry()
-      ..uuid = ''  // Will be generated on save
-      ..name = '${entry.name} (Copy)'
-      ..category = entry.category
-      ..producer = entry.producer
-      ..tastingNotes = entry.tastingNotes
-      ..abv = entry.abv
-      ..ageVintage = entry.ageVintage
-      ..buy = entry.buy
-      ..priceRange = entry.priceRange
-      ..imageUrl = entry.imageUrl
-      ..source = CellarSource.personal
-      ..isFavorite = false;
+    final now = DateTime.now();
+    final newEntry = CellarEntry(
+      id: 0,
+      uuid: '',
+      name: '${entry.name} (Copy)',
+      category: entry.category,
+      producer: entry.producer,
+      tastingNotes: entry.tastingNotes,
+      abv: entry.abv,
+      ageVintage: entry.ageVintage,
+      buy: entry.buy,
+      priceRange: entry.priceRange,
+      imageUrl: entry.imageUrl,
+      source: CellarSource.personal.name,
+      isFavorite: false,
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
+    );
     
     await repo.saveEntry(newEntry);
     MemoixSnackBar.show('Created copy: ${newEntry.name}');

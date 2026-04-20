@@ -1,109 +1,113 @@
+import 'dart:async';
+
+import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
-import '../models/cellar_entry.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 
 /// Repository for cellar entry data operations
 class CellarRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
   CellarRepository(this._db, this._ref);
 
   /// Get all cellar entries
-  Future<List<CellarEntry>> getAllEntries() async {
-    return _db.cellarEntrys.where().findAll();
-  }
+  Future<List<CellarEntry>> getAllEntries() =>
+      _db.cellarDao.getAllEntries();
 
   /// Get entries by category
-  Future<List<CellarEntry>> getEntriesByCategory(String category) async {
-    return _db.cellarEntrys.filter().categoryEqualTo(category, caseSensitive: false).findAll();
-  }
+  Future<List<CellarEntry>> getEntriesByCategory(String category) =>
+      _db.cellarDao.getEntriesByCategory(category);
 
   /// Get entries marked as "would buy again"
-  Future<List<CellarEntry>> getBuyAgainEntries() async {
-    return _db.cellarEntrys.filter().buyEqualTo(true).findAll();
-  }
+  Future<List<CellarEntry>> getBuyAgainEntries() =>
+      _db.cellarDao.getBuyAgainEntries();
 
   /// Get favorite entries
-  Future<List<CellarEntry>> getFavorites() async {
-    return _db.cellarEntrys.filter().isFavoriteEqualTo(true).findAll();
-  }
+  Future<List<CellarEntry>> getFavorites() =>
+      _db.cellarDao.getFavorites();
 
   /// Search entries by name, producer, or category
-  Future<List<CellarEntry>> searchEntries(String query) async {
+  Future<List<CellarEntry>> searchEntries(String query) {
     if (query.isEmpty) return getAllEntries();
-    
-    return _db.cellarEntrys
-        .filter()
-        .nameContains(query, caseSensitive: false)
-        .or()
-        .producerContains(query, caseSensitive: false)
-        .or()
-        .categoryContains(query, caseSensitive: false)
-        .findAll();
+    return _db.cellarDao.searchEntries(query);
   }
 
   /// Get a single entry by ID
-  Future<CellarEntry?> getEntryById(int id) async {
-    return _db.cellarEntrys.get(id);
-  }
+  Future<CellarEntry?> getEntryById(int id) =>
+      _db.cellarDao.getEntryById(id);
 
   /// Get a single entry by UUID
-  Future<CellarEntry?> getEntryByUuid(String uuid) async {
-    return _db.cellarEntrys.filter().uuidEqualTo(uuid).findFirst();
-  }
+  Future<CellarEntry?> getEntryByUuid(String uuid) =>
+      _db.cellarDao.getEntryByUuid(uuid);
 
   /// Save an entry (insert or update)
-  Future<void> saveEntry(CellarEntry entry) async {
-    if (entry.uuid.isEmpty) {
-      entry.uuid = _uuid.v4();
-    }
-    entry.updatedAt = DateTime.now();
-    
-    await _db.writeTxn(() async {
-      await _db.cellarEntrys.put(entry);
-    });
-    
+  Future<void> saveEntry(CellarEntry entry, {bool preserveTimestamp = false}) async {
+    final entryUuid = entry.uuid.isEmpty ? _uuid.v4() : entry.uuid;
+    await _db.cellarDao.saveEntry(CellarEntriesCompanion(
+      id: entry.id > 0 ? Value(entry.id) : const Value.absent(),
+      uuid: Value(entryUuid),
+      name: Value(entry.name),
+      producer: Value(entry.producer),
+      category: Value(entry.category),
+      buy: Value(entry.buy),
+      tastingNotes: Value(entry.tastingNotes),
+      abv: Value(entry.abv),
+      ageVintage: Value(entry.ageVintage),
+      priceRange: Value(entry.priceRange),
+      imageUrl: Value(entry.imageUrl),
+      source: Value(entry.source),
+      isFavorite: Value(entry.isFavorite),
+      createdAt: Value(entry.createdAt),
+      updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
+      version: Value(entry.version),
+    ),);
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Delete an entry by ID
   Future<bool> deleteEntry(int id) async {
-    final result = await _db.writeTxn(() async {
-      return _db.cellarEntrys.delete(id);
-    });
-    
+    final deleted = await _db.cellarDao.deleteEntry(id);
+    final result = deleted > 0;
+
     // Notify personal storage service of change
     if (result) {
       _ref.read(personalStorageServiceProvider).onRecipeChanged();
     }
-    
+
     return result;
   }
 
   /// Delete an entry by UUID
-  Future<bool> deleteEntryByUuid(String uuid) async {
-    final entry = await getEntryByUuid(uuid);
-    if (entry == null) return false;
-    return deleteEntry(entry.id);
+  Future<bool> deleteEntryByUuid(String uuid, {bool fromMerge = false}) async {
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.cellar, uuid);
+    }
+    final deleted = await _db.cellarDao.deleteEntryByUuid(uuid);
+    final result = deleted > 0;
+    if (result) {
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
+      unawaited(SupabaseSyncService.notifyDeleted('cellar_entries', uuid));
+    }
+    return result;
   }
 
   /// Toggle favorite status
   Future<void> toggleFavorite(CellarEntry entry) async {
     final wasFavorited = entry.isFavorite;
-    entry.isFavorite = !entry.isFavorite;
-    entry.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.cellarEntrys.put(entry);
-    });
-    
+    await _db.cellarDao.toggleFavorite(entry.id, entry.isFavorite);
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
@@ -119,55 +123,34 @@ class CellarRepository {
 
   /// Toggle buy status
   Future<void> toggleBuy(CellarEntry entry) async {
-    entry.buy = !entry.buy;
-    entry.updatedAt = DateTime.now();
-    await _db.writeTxn(() async {
-      await _db.cellarEntrys.put(entry);
-    });
-    
+    await _db.cellarDao.toggleBuy(entry.id, entry.buy);
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
   /// Watch all entries (stream for Riverpod)
-  Stream<List<CellarEntry>> watchAllEntries() {
-    return _db.cellarEntrys.where().watch(fireImmediately: true);
-  }
+  Stream<List<CellarEntry>> watchAllEntries() =>
+      _db.cellarDao.watchAllEntries();
 
   /// Watch favorites
-  Stream<List<CellarEntry>> watchFavorites() {
-    return _db.cellarEntrys.filter().isFavoriteEqualTo(true).watch(fireImmediately: true);
-  }
+  Stream<List<CellarEntry>> watchFavorites() =>
+      _db.cellarDao.watchFavorites();
 
   /// Get count of all entries
-  Future<int> getEntryCount() async {
-    return _db.cellarEntrys.count();
-  }
+  Future<int> getEntryCount() =>
+      _db.cellarDao.getEntryCount();
 
   /// Get all unique categories
   Future<List<String>> getAllCategories() async {
     final entries = await getAllEntries();
-    final categories = <String>{};
-    for (final entry in entries) {
-      if (entry.category != null && entry.category!.isNotEmpty) {
-        categories.add(entry.category!);
-      }
-    }
-    final sorted = categories.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.category);
   }
 
   /// Get all unique producers
   Future<List<String>> getAllProducers() async {
     final entries = await getAllEntries();
-    final producers = <String>{};
-    for (final entry in entries) {
-      if (entry.producer != null && entry.producer!.isNotEmpty) {
-        producers.add(entry.producer!);
-      }
-    }
-    final sorted = producers.toList()..sort();
-    return sorted;
+    return extractUniqueStrings(entries, (e) => e.producer);
   }
 }
 

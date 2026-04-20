@@ -1,6 +1,4 @@
-import 'package:isar/isar.dart';
 
-part 'recipe.g.dart';
 
 /// Source of the recipe
 enum RecipeSource {
@@ -9,26 +7,22 @@ enum RecipeSource {
   imported,  // Shared with the user / imported
   ocr,       // Scanned from photo
   url,       // Imported from URL
+  ai,        // Scanned by AI
 }
 
-@collection
 class Recipe {
-  Id id = Isar.autoIncrement;
+  int id = 0;
 
   /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
   late String uuid;
 
   /// Recipe name (e.g., "Korean Fried Chicken")
-  @Index(type: IndexType.value)
   late String name;
 
   /// Course category (e.g., "Mains", "Soups", "Desserts")
-  @Index()
   late String course;
 
   /// Cuisine style (e.g., "Korean", "French", "Italian")
-  @Index()
   String? cuisine;
 
   /// Subcategory within cuisine (e.g., "French" under "European")
@@ -84,7 +78,6 @@ class Recipe {
   List<String> stepImageMap = [];
 
   /// Where this recipe came from
-  @Enumerated(EnumType.name)
   RecipeSource source = RecipeSource.personal;
 
   /// Custom color override (stored as hex int)
@@ -142,9 +135,11 @@ class Recipe {
   /// Pickle method for pickles (e.g., "Pickle", "Brine", "Fermentation")
   String? pickleMethod;
 
+  /// Domain type discriminator: 'standard' | 'modernist' | 'smoking'
+  String recipeType = 'standard';
+
   /// Whether this recipe type supports pairing with other recipes.
   /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
-  @ignore
   bool get supportsPairing {
     const excludedCourses = {'pizzas', 'sandwiches', 'cellar', 'cheese'};
     return !excludedCourses.contains(course.toLowerCase());
@@ -186,7 +181,7 @@ class Recipe {
   /// Create from JSON (for GitHub import)
   factory Recipe.fromJson(Map<String, dynamic> json) {
     // Clean up course field - remove "recipes" prefix if present
-    String course = json['course'] as String;
+    String course = (json['course'] as String?) ?? 'mains';
     if (course.toLowerCase().contains('recipes')) {
       // Extract actual course name (e.g., "recipes   mains" -> "mains")
       course = course.replaceAll(RegExp(r'recipes\s*', caseSensitive: false), '').trim();
@@ -206,46 +201,46 @@ class Recipe {
     course = courseMapping[course] ?? course;
 
     final recipe = Recipe()
-      ..uuid = json['uuid'] as String
-      ..name = json['name'] as String
+      ..uuid = json['uuid']?.toString() ?? ''
+      ..name = json['name']?.toString() ?? ''
       ..course = course
-      ..cuisine = json['cuisine'] as String?
-      ..subcategory = json['subcategory'] as String?
-      ..serves = json['serves'] as String?
-      ..time = json['time'] as String?
+      ..cuisine = json['cuisine']?.toString()
+      ..subcategory = json['subcategory']?.toString()
+      ..serves = json['serves']?.toString()
+      ..time = json['time']?.toString()
       ..pairsWith = (json['pairsWith'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .where((e) => e.isNotEmpty && e != 'Pairs With')
               .toList() ??
           []
       ..pairedRecipeIds = (json['pairedRecipeIds'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .where((e) => e.isNotEmpty)
               .toList() ??
           []
-      ..comments = (json['comments'] ?? json['notes']) as String?  // Backwards compatible with 'notes'
+      ..comments = (json['comments'] ?? json['notes'])?.toString()  // Backwards compatible with 'notes'
       ..ingredients = (json['ingredients'] as List<dynamic>?)
               ?.map((e) => Ingredient.fromJson(e as Map<String, dynamic>))
               .toList() ??
           []
       ..directions = (json['directions'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .where((e) => e.isNotEmpty && e != 'Directions')
               .toList() ??
           []
-      ..sourceUrl = json['sourceUrl'] as String?
-      ..imageUrl = json['imageUrl'] as String?
+      ..sourceUrl = json['sourceUrl']?.toString()
+      ..imageUrl = json['imageUrl']?.toString()
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
-      ..headerImage = json['headerImage'] as String?
+      ..headerImage = json['headerImage']?.toString()
       ..stepImages = (json['stepImages'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
       ..stepImageMap = (json['stepImageMap'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
       ..source = RecipeSource.values.firstWhere(
@@ -257,27 +252,27 @@ class Recipe {
       ..rating = json['rating'] as int? ?? 0
       ..cookCount = json['cookCount'] as int? ?? 0
       ..tags =
-          (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList() ??
+          (json['tags'] as List<dynamic>?)?.map((e) => e.toString()).toList() ??
               []
       ..version = json['version'] as int? ?? 1
       ..nutrition = json['nutrition'] != null
           ? NutritionInfo.fromJson(json['nutrition'] as Map<String, dynamic>)
           : null
-      ..glass = json['glass'] as String?
+      ..glass = json['glass']?.toString()
       ..garnish = (json['garnish'] as List<dynamic>?)
-              ?.map((e) => e as String)
+              ?.map((e) => e.toString())
               .toList() ??
           []
-      ..pickleMethod = json['pickleMethod'] as String?;
+      ..pickleMethod = json['pickleMethod']?.toString();
 
     if (json['createdAt'] != null) {
-      recipe.createdAt = DateTime.parse(json['createdAt'] as String);
+      recipe.createdAt = DateTime.parse(json['createdAt'].toString()).toUtc();
     }
     if (json['updatedAt'] != null) {
-      recipe.updatedAt = DateTime.parse(json['updatedAt'] as String);
+      recipe.updatedAt = DateTime.parse(json['updatedAt'].toString()).toUtc();
     }
     if (json['lastCookedAt'] != null) {
-      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'] as String);
+      recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'].toString()).toUtc();
     }
 
     return recipe;
@@ -309,10 +304,10 @@ class Recipe {
       'isFavorite': isFavorite,
       'rating': rating,
       'cookCount': cookCount,
-      'lastCookedAt': lastCookedAt?.toIso8601String(),
+      'lastCookedAt': lastCookedAt?.toUtc().toIso8601String(),
       'tags': tags,
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
+      'createdAt': createdAt.toUtc().toIso8601String(),
+      'updatedAt': updatedAt.toUtc().toIso8601String(),
       'version': version,
       if (nutrition != null) 'nutrition': nutrition!.toJson(),
       if (glass != null) 'glass': glass,
@@ -413,8 +408,10 @@ class Recipe {
 }
 
 /// Embedded ingredient model
-@embedded
 class Ingredient {
+  /// Unique identifier for sync
+  String uuid = '';
+
   /// Ingredient name (e.g., "White Beans")
   String name = '';
 
@@ -442,6 +439,7 @@ class Ingredient {
   Ingredient();
 
   Ingredient.create({
+    this.uuid = '',
     required this.name,
     this.amount,
     this.unit,
@@ -454,18 +452,20 @@ class Ingredient {
 
   factory Ingredient.fromJson(Map<String, dynamic> json) {
     return Ingredient()
-      ..name = json['name'] as String
-      ..amount = json['amount'] as String?
-      ..unit = json['unit'] as String?
-      ..preparation = json['preparation'] as String?
-      ..alternative = json['alternative'] as String?
+      ..uuid = json['uuid']?.toString() ?? ''
+      ..name = (json['name'] as String?) ?? ''
+      ..amount = json['amount']?.toString()
+      ..unit = json['unit']?.toString()
+      ..preparation = json['preparation']?.toString()
+      ..alternative = json['alternative']?.toString()
       ..isOptional = json['isOptional'] as bool? ?? false
-      ..section = json['section'] as String?
-      ..bakerPercent = json['bakerPercent'] as String?;
+      ..section = json['section']?.toString()
+      ..bakerPercent = json['bakerPercent']?.toString();
   }
 
   Map<String, dynamic> toJson() {
     return {
+      'uuid': uuid,
       'name': name,
       'amount': amount,
       'unit': unit,
@@ -516,7 +516,6 @@ class Ingredient {
 
 /// Embedded nutrition information model
 /// Based on schema.org NutritionInformation
-@embedded
 class NutritionInfo {
   /// Serving size description (e.g., "1 serving", "100g")
   String? servingSize;

@@ -30,7 +30,7 @@ class IngredientReference {
     final flavor = (json['flavor'] as String?) ?? '';
     final subs = (json['substitutions'] as List<dynamic>?)
             ?.map((e) => IngredientSubstitution.fromJson(
-                e as Map<String, dynamic>))
+                e as Map<String, dynamic>,),)
             .toList() ??
         const [];
 

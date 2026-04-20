@@ -151,7 +151,7 @@ class IngredientParser {
         !RegExp(r'^(HANDS ON|BAKE|COOK|PREP|MAKES|SERVES|PER|INGREDIENTS?|DIRECTIONS?|INSTRUCTIONS?|METHOD|STEPS?|METRIC|SALT|PEPPER|SUGAR|FLOUR|BUTTER|EGGS?)$').hasMatch(workingLine)) {
       // Convert to title case for section name
       sectionName = workingLine.split(' ').map((w) => 
-        w.isNotEmpty ? w[0] + w.substring(1).toLowerCase() : w
+        w.isNotEmpty ? w[0] + w.substring(1).toLowerCase() : w,
       ).join(' ');
       return ParsedIngredient(
         original: original,

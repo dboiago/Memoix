@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient;
 import '../../cellar/models/cellar_entry.dart';
 import '../../cheese/models/cheese_entry.dart';
 import '../../modernist/models/modernist_recipe.dart';
@@ -35,6 +36,11 @@ class RecipeBundle {
   /// Modernist/molecular gastronomy recipes
   final List<ModernistRecipe> modernist;
 
+  /// UUIDs of items deleted locally since the last push, keyed by domain.
+  /// Used to propagate deletions to other devices on pull.
+  /// Example: { 'recipes': ['uuid1', 'uuid2'], 'pizzas': ['uuid3'] }
+  final Map<String, List<String>> deletedUuids;
+
   /// Bundle metadata (version, timestamp, etc.)
   final BundleMetadata metadata;
 
@@ -46,6 +52,7 @@ class RecipeBundle {
     this.cellar = const [],
     this.smoking = const [],
     this.modernist = const [],
+    this.deletedUuids = const {},
     required this.metadata,
   });
 
@@ -91,29 +98,30 @@ class RecipeBundle {
               .toList() ??
           [],
       pizzas: (json['pizzas'] as List<dynamic>?)
-              ?.map((e) => Pizza.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => pizzaFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       sandwiches: (json['sandwiches'] as List<dynamic>?)
-              ?.map((e) => Sandwich.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => sandwichFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       cheeses: (json['cheeses'] as List<dynamic>?)
-              ?.map((e) => CheeseEntry.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => cheeseEntryFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       cellar: (json['cellar'] as List<dynamic>?)
-              ?.map((e) => CellarEntry.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => cellarEntryFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       smoking: (json['smoking'] as List<dynamic>?)
-              ?.map((e) => SmokingRecipe.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => smokingRecipeFromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       modernist: (json['modernist'] as List<dynamic>?)
               ?.map((e) => ModernistRecipe.fromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
+      deletedUuids: _parseDeletedUuids(json['deletedUuids']),
       metadata: json['_metadata'] != null
           ? BundleMetadata.fromJson(json['_metadata'] as Map<String, dynamic>)
           : BundleMetadata.create(),
@@ -131,6 +139,7 @@ class RecipeBundle {
       'cellar': cellar.map((e) => e.toJson()).toList(),
       'smoking': smoking.map((e) => e.toJson()).toList(),
       'modernist': modernist.map((e) => e.toJson()).toList(),
+      if (deletedUuids.isNotEmpty) 'deletedUuids': deletedUuids,
     };
   }
 
@@ -151,6 +160,7 @@ class RecipeBundle {
     List<CellarEntry>? cellar,
     List<SmokingRecipe>? smoking,
     List<ModernistRecipe>? modernist,
+    Map<String, List<String>>? deletedUuids,
     BundleMetadata? metadata,
   }) {
     return RecipeBundle(
@@ -161,6 +171,7 @@ class RecipeBundle {
       cellar: cellar ?? this.cellar,
       smoking: smoking ?? this.smoking,
       modernist: modernist ?? this.modernist,
+      deletedUuids: deletedUuids ?? this.deletedUuids,
       metadata: metadata ?? this.metadata,
     );
   }
@@ -171,6 +182,21 @@ class RecipeBundle {
         'pizzas: ${pizzas.length}, sandwiches: ${sandwiches.length}, '
         'cheeses: ${cheeses.length}, cellar: ${cellar.length}, '
         'smoking: ${smoking.length}, modernist: ${modernist.length})';
+  }
+}
+
+/// Safely parse the `deletedUuids` field from a bundle JSON map.
+/// Returns an empty map if the field is absent or malformed.
+Map<String, List<String>> _parseDeletedUuids(dynamic raw) {
+  if (raw == null) return const {};
+  try {
+    final map = raw as Map<String, dynamic>;
+    return map.map((domain, value) {
+      final uuids = (value as List<dynamic>).cast<String>();
+      return MapEntry(domain, uuids);
+    });
+  } catch (_) {
+    return const {};
   }
 }
 
@@ -221,11 +247,11 @@ class BundleMetadata {
     return BundleMetadata(
       version: json['version'] as int? ?? 1,
       schemaVersion: json['schemaVersion'] as int? ?? 1,
-      createdAt: json['createdAt'] != null
-          ? DateTime.parse(json['createdAt'] as String)
-          : DateTime.now().toUtc(),
-      createdBy: json['createdBy'] as String? ?? 'Unknown',
-      appVersion: json['appVersion'] as String?,
+      createdAt: json['createdAt'] is int
+          ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+          : DateTime.tryParse(json['createdAt']?.toString() ?? '') ?? DateTime.now().toUtc(),
+      createdBy: json['createdBy']?.toString() ?? 'Unknown',
+      appVersion: json['appVersion']?.toString(),
     );
   }
 

@@ -5,6 +5,14 @@ import '../models/cooking_stats.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/cuisine.dart';
 
+String _formatCookTime(int? minutes) {
+  if (minutes == null) return '\u2014';
+  if (minutes < 60) return '${minutes}m';
+  final h = minutes ~/ 60;
+  final m = minutes % 60;
+  return m == 0 ? '${h}h' : '${h}h ${m}m';
+}
+
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
 
@@ -22,21 +30,26 @@ class StatisticsScreen extends ConsumerWidget {
       ),
       body: statsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('StatisticsScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (stats) => _StatsContent(stats: stats),
       ),
     );
   }
 }
 
-class _StatsContent extends StatelessWidget {
+class _StatsContent extends ConsumerWidget {
   final CookingStats stats;
 
   const _StatsContent({required this.stats});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final favouriteCount = ref.watch(totalFavouriteCountProvider)
+        .maybeWhen(data: (n) => n.toString(), orElse: () => '—');
 
     if (stats.totalCooks == 0) {
       return Center(
@@ -77,7 +90,7 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Total Recipes',
-                value: '78', // TODO: Get from actual data
+                value: stats.totalRecipes.toString(),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
@@ -85,7 +98,7 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Countries',
-                value: '12', // TODO: Get from actual data
+                value: stats.distinctCuisineCount.toString(),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
@@ -97,15 +110,15 @@ class _StatsContent extends StatelessWidget {
             Expanded(
               child: _StatCard(
                 label: 'Avg Cook Time',
-                value: '35m', // TODO: Calculate from recipes
+                value: _formatCookTime(stats.avgCookTimeMinutes),
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
             const SizedBox(width: 12),
             Expanded(
               child: _StatCard(
-                label: 'Favorites',
-                value: stats.totalCooks.toString(),
+                label: 'Favourites',
+                value: favouriteCount,
                 color: theme.colorScheme.surfaceContainerHighest,
               ),
             ),
@@ -287,7 +300,7 @@ class _CountryList extends StatelessWidget {
                 height: 28,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: theme.colorScheme.secondary,

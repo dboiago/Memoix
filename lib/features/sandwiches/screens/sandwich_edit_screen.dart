@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/utils/suggestions.dart';
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
@@ -178,7 +180,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
         c.dispose();
       }
       _proteinControllers.clear();
-      for (final protein in sandwich.proteins) {
+      for (final protein in (jsonDecode(sandwich.proteins) as List).cast<String>()) {
         _addProteinRow(value: protein);
       }
       _addProteinRow();
@@ -188,7 +190,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
         c.dispose();
       }
       _vegetableControllers.clear();
-      for (final vegetable in sandwich.vegetables) {
+      for (final vegetable in (jsonDecode(sandwich.vegetables) as List).cast<String>()) {
         _addVegetableRow(value: vegetable);
       }
       _addVegetableRow();
@@ -198,7 +200,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
         c.dispose();
       }
       _cheeseControllers.clear();
-      for (final cheese in sandwich.cheeses) {
+      for (final cheese in (jsonDecode(sandwich.cheeses) as List).cast<String>()) {
         _addCheeseRow(value: cheese);
       }
       _addCheeseRow();
@@ -208,7 +210,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
         c.dispose();
       }
       _condimentControllers.clear();
-      for (final condiment in sandwich.condiments) {
+      for (final condiment in (jsonDecode(sandwich.condiments) as List).cast<String>()) {
         _addCondimentRow(value: condiment);
       }
       _addCondimentRow();
@@ -416,7 +418,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
               if (_proteinControllers[index].text.isNotEmpty || _proteinControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.secondary.withOpacity(0.7)),
+                    color: theme.colorScheme.secondary.withValues(alpha: 0.7),),
                   onPressed: () => _removeProteinRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -445,7 +447,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
               if (_vegetableControllers[index].text.isNotEmpty || _vegetableControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.secondary.withOpacity(0.7)),
+                    color: theme.colorScheme.secondary.withValues(alpha: 0.7),),
                   onPressed: () => _removeVegetableRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -474,7 +476,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
               if (_cheeseControllers[index].text.isNotEmpty || _cheeseControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.secondary.withOpacity(0.7)),
+                    color: theme.colorScheme.secondary.withValues(alpha: 0.7),),
                   onPressed: () => _removeCheeseRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -503,7 +505,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
               if (_condimentControllers[index].text.isNotEmpty || _condimentControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.secondary.withOpacity(0.7)),
+                    color: theme.colorScheme.secondary.withValues(alpha: 0.7),),
                   onPressed: () => _removeCondimentRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -603,7 +605,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
           color: theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
+            color: theme.colorScheme.outline.withValues(alpha: 0.3),
           ),
         ),
         child: _imagePath != null
@@ -751,7 +753,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
   }
 
   Future<void> _saveSandwich() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     // Collect non-empty values from controllers
     final proteins = _proteinControllers
@@ -771,23 +773,27 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
         .where((s) => s.isNotEmpty)
         .toList();
 
-    final sandwich = _existingSandwich ?? Sandwich();
-    sandwich
-      ..uuid = _existingSandwich?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..bread = _breadController.text.trim()
-      ..proteins = proteins
-      ..vegetables = vegetables
-      ..cheeses = cheeses
-      ..condiments = condiments
-      ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..imageUrl = _imagePath
-      ..source = _existingSandwich?.source ?? SandwichSource.personal
-      ..updatedAt = DateTime.now();
-
-    if (_existingSandwich == null) {
-      sandwich.createdAt = DateTime.now();
-    }
+    final now = DateTime.now();
+    final sandwich = Sandwich(
+      id: _existingSandwich?.id ?? 0,
+      uuid: _existingSandwich?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      bread: _breadController.text.trim(),
+      proteins: jsonEncode(proteins),
+      vegetables: jsonEncode(vegetables),
+      cheeses: jsonEncode(cheeses),
+      condiments: jsonEncode(condiments),
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      imageUrl: _imagePath,
+      source: _existingSandwich?.source ?? SandwichSource.personal.name,
+      isFavorite: _existingSandwich?.isFavorite ?? false,
+      cookCount: _existingSandwich?.cookCount ?? 0,
+      rating: _existingSandwich?.rating ?? 0,
+      tags: _existingSandwich?.tags ?? '[]',
+      createdAt: _existingSandwich?.createdAt ?? now,
+      updatedAt: now,
+      version: _existingSandwich?.version ?? 1,
+    );
 
     final repo = ref.read(sandwichRepositoryProvider);
     await repo.saveSandwich(sandwich);

@@ -25,6 +25,10 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
 
   late final TapGestureRecognizer _ouRecognizer;
 
+  bool get _allowLegacyInput => 
+    (IntegrityService.store.getBool('cfg_index_pass') ?? false) && 
+    !(IntegrityService.store.getBool('cfg_display_pass') ?? false);
+
   @override
   void initState() {
     super.initState();
@@ -33,8 +37,9 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
       ..onTapDown = (_) async {
         _tapStart = DateTime.now();
         _morseResetTimer?.cancel();
-        if (await Vibration.hasVibrator() ?? false)
+        if (await Vibration.hasVibrator()) {
           Vibration.vibrate(duration: 50);
+        }
       }
       ..onTapUp = (_) {
         if (_tapStart == null) return;
@@ -244,7 +249,7 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
                         const TextSpan(text: 'For savv'),
                         TextSpan(
                           text: '(ou)',
-                          recognizer: _ouRecognizer,
+                          recognizer: _allowLegacyInput ? _ouRecognizer : null,
                         ),
                         const TextSpan(text: 'ry minds.'),
                       ],
@@ -252,8 +257,8 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
                   ),
                   GestureDetector(
                     behavior: HitTestBehavior.translucent,
-                    onTapDown: _ouRecognizer.onTapDown,
-                    onTapUp: _ouRecognizer.onTapUp,
+                    onTapDown: _allowLegacyInput ? _ouRecognizer.onTapDown : null,
+                    onTapUp: _allowLegacyInput ? _ouRecognizer.onTapUp : null,
                     child: const SizedBox(width: 48, height: 48),
                   ),
                 ],

@@ -34,6 +34,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   // File names in the Memoix folder
   static const _recipesFileName = 'memoix_recipes.json';
   static const _metaFileName = '.memoix_meta.json';
+  static const _databaseFileName = 'memoix.db';
   static const _defaultFolderName = 'Memoix';
 
   // MIME types
@@ -130,9 +131,44 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
         await _restoreMobileSession();
         // _restoreMobileSession already sets _isConnected
       }
-      
+
       // After successful session restoration, check pending repositories
       if (_isConnected) {
+        // Canonical folder confirmation: use Drive itself as the source of truth
+        // for _folderId. Local SharedPreferences may be empty or stale on a
+        // second device, causing _ensureFolderId() to land on the wrong folder.
+        // This lookup corrects the mismatch at startup so all devices converge
+        // on the same "Memoix" folder regardless of local state.
+        //
+        // Skipped when a shared repository is active — its folderId was set
+        // explicitly by switchRepository() and must not be overridden here.
+        //
+        // Guard: _driveApi is only non-null after _restoreMobileSession() /
+        // _restoreDesktopSession() completes successfully, so no async gap.
+        if (_driveApi != null) {
+          try {
+            final manager = SharedStorageManager();
+            final activeRepo = await manager.getActiveRepository();
+            if (activeRepo == null) {
+              // Personal storage mode — verify folder ID against Drive.
+              final canonicalId = await findExistingMemoixFolder();
+              if (canonicalId != null && canonicalId != _folderId) {
+                debugPrint(
+                  'GoogleDriveStorage: Folder ID corrected '
+                  '${_folderId ?? "(null)"} → $canonicalId',
+                );
+                _folderId = canonicalId;
+                _folderPath = '/My Drive/$_defaultFolderName';
+                await _saveStoredState();
+              }
+            }
+          } catch (e) {
+            // Non-fatal: local cache is kept; lookup will retry on next launch.
+            debugPrint(
+              'GoogleDriveStorage: Canonical folder lookup failed (non-fatal): $e',
+            );
+          }
+        }
         unawaited(checkPendingRepositories());
       }
     } catch (e) {
@@ -298,6 +334,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   /// 
   /// Handles first-time users by attempting silent sign-in,
   /// then falling back to interactive sign-in if needed.
+  @override
   Future<String> createFolder(String name) async {
     // Ensure we have a connection
     if (_driveApi == null) {
@@ -363,6 +400,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   ///
   /// This updates the target folder for all subsequent operations.
   /// Called when user switches active repository in Repository Management.
+  @override
   Future<void> switchRepository(String folderId, String repositoryName) async {
     _ensureConnected();
 
@@ -386,7 +424,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
       } catch (e) {
         debugPrint('GoogleDriveStorage: Background verification error: $e');
       }
-    }));
+    }),);
   }
 
   /// Check and verify pending repositories on app startup
@@ -465,30 +503,25 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
     final folderId = await _ensureFolderId();
 
-    try {
-      final content = await _downloadFile(
-        folderId: folderId,
-        fileName: _recipesFileName,
-      );
+    final content = await _downloadFile(
+      folderId: folderId,
+      fileName: _recipesFileName,
+    );
 
-      if (content == null) {
-        return null;
-      }
-
-      final bundle = RecipeBundle.fromJsonString(content);
-
-      // Update lastSynced timestamp for this repository
-      final manager = SharedStorageManager();
-      final activeRepo = await manager.getActiveRepository();
-      if (activeRepo != null) {
-        await manager.updateLastSynced(activeRepo.id);
-      }
-
-      return bundle;
-    } catch (e) {
-      debugPrint('GoogleDriveStorage: Pull failed: $e');
+    if (content == null) {
       return null;
     }
+
+    final bundle = RecipeBundle.fromJsonString(content);
+
+    // Update lastSynced timestamp for this repository
+    final manager = SharedStorageManager();
+    final activeRepo = await manager.getActiveRepository();
+    if (activeRepo != null) {
+      await manager.updateLastSynced(activeRepo.id);
+    }
+
+    return bundle;
   }
 
   @override
@@ -528,6 +561,25 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
       content: content,
       mimeType: _jsonMimeType,
     );
+  }
+
+  @override
+  Future<void> pushDatabaseBytes(Uint8List bytes) async {
+    _ensureConnected();
+    final folderId = await _ensureFolderId();
+    await _uploadFileBytes(
+      folderId: folderId,
+      fileName: _databaseFileName,
+      bytes: bytes,
+      mimeType: 'application/octet-stream',
+    );
+  }
+
+  @override
+  Future<Uint8List?> pullDatabaseBytes() async {
+    _ensureConnected();
+    final folderId = await _ensureFolderId();
+    return _downloadFileBytes(folderId: folderId, fileName: _databaseFileName);
   }
 
   // --- Platform-specific connection methods ---
@@ -925,6 +977,72 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     }
 
     return utf8.decode(bytes);
+  }
+
+  /// Upload raw bytes to the specified folder.
+  ///
+  /// If the file already exists, it will be updated (overwritten).
+  Future<void> _uploadFileBytes({
+    required String folderId,
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+  }) async {
+    _ensureConnected();
+
+    final existingFileId = await _findFile(
+      folderId: folderId,
+      fileName: fileName,
+    );
+
+    final fileContent = Stream.value(bytes.toList());
+    final media = drive.Media(fileContent, bytes.length);
+
+    if (existingFileId != null) {
+      final file = drive.File()..name = fileName;
+      await _driveApi!.files.update(file, existingFileId, uploadMedia: media);
+      debugPrint('GoogleDriveStorage: Updated $fileName (bytes)');
+    } else {
+      final file = drive.File()
+        ..name = fileName
+        ..mimeType = mimeType
+        ..parents = [folderId];
+      await _driveApi!.files.create(file, uploadMedia: media);
+      debugPrint('GoogleDriveStorage: Created $fileName (bytes)');
+    }
+  }
+
+  /// Download raw bytes from the specified folder.
+  ///
+  /// Returns null if the file doesn't exist.
+  Future<Uint8List?> _downloadFileBytes({
+    required String folderId,
+    required String fileName,
+  }) async {
+    _ensureConnected();
+
+    final fileId = await _findFile(folderId: folderId, fileName: fileName);
+
+    if (fileId == null) {
+      debugPrint('GoogleDriveStorage: File $fileName not found');
+      return null;
+    }
+
+    final media = await _driveApi!.files.get(
+      fileId,
+      downloadOptions: drive.DownloadOptions.fullMedia,
+    ) as drive.Media;
+
+    final chunks = <int>[];
+    await for (final chunk in media.stream) {
+      chunks.addAll(chunk);
+      // Security: Enforce 10 MB limit (AGENTS.md constraint)
+      if (chunks.length > 10 * 1024 * 1024) {
+        throw Exception('File exceeds maximum allowed size (10 MB)');
+      }
+    }
+
+    return Uint8List.fromList(chunks);
   }
 
   /// Find a file by name in the specified folder

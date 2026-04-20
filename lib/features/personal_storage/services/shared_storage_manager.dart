@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 
 import '../models/storage_location.dart';
+import '../providers/google_drive_storage.dart';
 import '../providers/one_drive_storage.dart';
 
 /// Manages cloud storage repositories (multiple storage locations)
@@ -87,11 +88,9 @@ class SharedStorageManager extends ChangeNotifier {
     _currentRepository = null;
     notifyListeners();
     
-    // Disconnect Personal Storage to ensure mutual exclusivity
-    // Only one storage location (Personal OR Shared) can be active at a time
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove('personal_storage_provider_id');
-    await prefs.remove('personal_storage_path');
+    // NOTE: Personal storage is intentionally NOT disconnected here.
+    // Personal backup (personal_storage_provider_id) runs independently of
+    // shared repositories. Both can be active concurrently.
     
     // Initialize appropriate provider based on activeRepo.provider
     // This MUST complete before updating repository state
@@ -99,14 +98,20 @@ class SharedStorageManager extends ChangeNotifier {
       switch (activeRepo.provider) {
         case StorageProvider.googleDrive:
           debugPrint('SharedStorageManager: Initializing Google Drive repository: ${activeRepo.name}');
-          
-          // GoogleDriveStorage is managed via Riverpod, but we need to ensure it's connected
-          // The UI layer will handle the actual folder switch via googleDriveStorageProvider
-          // Just ensure the user has authenticated
-          
-          // Note: GoogleDriveStorage initialization happens in the UI layer via Riverpod
-          // We just verify basic state here
-          await Future.delayed(const Duration(milliseconds: 100));
+
+          final googleDriveStorage = GoogleDriveStorage();
+          await googleDriveStorage.initialize();
+
+          if (googleDriveStorage.isConnected) {
+            await googleDriveStorage.switchRepository(
+              activeRepo.folderId,
+              activeRepo.name,
+            );
+            debugPrint('SharedStorageManager: Google Drive repository initialized and ready');
+          } else {
+            // Not connected — the UI layer (screen) will handle connect() and switchRepository
+            debugPrint('SharedStorageManager: Google Drive not connected, deferring sign-in to UI layer');
+          }
           break;
           
         case StorageProvider.oneDrive:
@@ -116,7 +121,11 @@ class SharedStorageManager extends ChangeNotifier {
           final oneDriveStorage = OneDriveStorage();
           await oneDriveStorage.init();
           
-          // Check if connected
+          // If not connected via silent restore, attempt interactive sign-in
+          if (!oneDriveStorage.isConnected) {
+            await oneDriveStorage.signIn();
+          }
+          
           if (oneDriveStorage.isConnected) {
             // Switch to the repository folder and wait for completion
             await oneDriveStorage.switchRepository(
@@ -126,11 +135,8 @@ class SharedStorageManager extends ChangeNotifier {
             
             debugPrint('SharedStorageManager: OneDrive repository initialized and ready');
           } else {
-            _isSwitching = false;
-            _currentRepository = previousActiveRepo; // Restore
-            notifyListeners();
-            debugPrint('SharedStorageManager: OneDrive not connected, user needs to sign in');
-            throw Exception('OneDrive not connected. Please sign in first.');
+            // Not connected after silent auth attempt — UI layer will handle interactive sign-in
+            debugPrint('SharedStorageManager: OneDrive not connected after init, deferring sign-in to UI layer');
           }
           break;
       }

@@ -1,5 +1,8 @@
+// ignore_for_file: curly_braces_in_flow_control_structures
+
 import 'dart:convert';
 import 'dart:io' show gzip, HttpClient;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart' show BuildContext;
 import 'package:http/http.dart' as http;
 import 'package:http/io_client.dart';
@@ -217,7 +220,7 @@ const _siteConfigs = <String, SiteConfig>{
 /// - Punch Drink: High-quality cocktail journalism, needs section merging
 /// ========================================================================
 class UrlRecipeImporter {
-  static final _uuid = Uuid();
+  static final _uuid = const Uuid();
 
   /// Known cocktail recipe sites - used to detect course="Drinks" automatically
   /// 
@@ -986,7 +989,7 @@ class UrlRecipeImporter {
         
         // Try to extract ingredients from HTML if JSON-LD is missing them
         // First try the <br>-separated approach (Bradley Smoker style)
-        var htmlIngredientStrings = <String>[];
+        final htmlIngredientStrings = <String>[];
         if (jsonLdResult.ingredients.isEmpty) {
           // Try heading-based <br> separated ingredients
           for (final heading in document.querySelectorAll('h1, h2, h3')) {
@@ -1032,7 +1035,7 @@ class UrlRecipeImporter {
         final htmlIngredients = _parseIngredients(htmlIngredientStrings);
         
         // Try to extract directions from HTML if JSON-LD is missing them
-        var htmlDirectionStrings = <String>[];
+        final htmlDirectionStrings = <String>[];
         if (jsonLdResult.directions.isEmpty && htmlDirections.isEmpty) {
           // Try heading-based paragraph directions (Bradley Smoker style)
           for (final heading in document.querySelectorAll('h1, h2, h3')) {
@@ -1600,7 +1603,7 @@ class UrlRecipeImporter {
     final name = _cleanRecipeName(
       _parseString(data['name']) ?? 
       _parseString(data['title']) ?? 
-      _parseString(data['recipeName']) ?? ''
+      _parseString(data['recipeName']) ?? '',
     );
     if (name.isEmpty) return null;
     
@@ -2236,7 +2239,7 @@ class UrlRecipeImporter {
   bool _hasSmokingIndicators(List<String> ingredients) {
     const woodTypes = ['hickory', 'mesquite', 'applewood', 'apple wood',
                        'cherrywood', 'cherry wood', 'pecan', 'oak',
-                       'maple wood', 'alder', 'wood chips', 'wood chunks'];
+                       'maple wood', 'alder', 'wood chips', 'wood chunks',];
     final allText = ingredients.join(' ').toLowerCase();
     return woodTypes.any((w) => allText.contains(w));
   }
@@ -2597,7 +2600,7 @@ class UrlRecipeImporter {
       return timestampStep;
     }
     // Remove step numbers at the beginning
-    var cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
+    final cleaned = line.replaceFirst(RegExp(r'^(?:step\s*)?\d+[.:\)]\s*', caseSensitive: false), '');
     return cleaned.trim();
   }
   
@@ -2621,7 +2624,9 @@ class UrlRecipeImporter {
         trimmed.toLowerCase() == 'instructions' ||
         trimmed.toLowerCase() == 'method' ||
         trimmed.toLowerCase() == 'steps' ||
-        trimmed.toLowerCase() == 'preparation') return true;
+        trimmed.toLowerCase() == 'preparation') {
+      return true;
+    }
     
     // Skip very short lines that are likely headers
     if (trimmed.length < 5) return true;
@@ -4901,7 +4906,7 @@ class UrlRecipeImporter {
         looksLikeIngredient: parsed.name.isNotEmpty && !isSectionOnly,
         isSection: effectiveSection != null,
         sectionName: effectiveSection,
-      ));
+      ),);
     }
     
     return result;
@@ -5263,7 +5268,7 @@ class UrlRecipeImporter {
       final primaryUnit = dualUnitMatch.group(2)?.trim() ?? '';
       final metricAmt = dualUnitMatch.group(3)?.trim() ?? '';
       final metricUnit = dualUnitMatch.group(4)?.trim() ?? '';
-      var nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
+      final nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
       
       // Normalize units (ounces -> oz, pounds -> lb, grams -> g)
       String normalizedPrimaryUnit = primaryUnit.toLowerCase();
@@ -5464,8 +5469,9 @@ class UrlRecipeImporter {
     int parenDepth = 0;
     for (int i = 0; i < remaining.length; i++) {
       final char = remaining[i];
-      if (char == '(') parenDepth++;
-      else if (char == ')') parenDepth--;
+      if (char == '(') {
+        parenDepth++;
+      } else if (char == ')') parenDepth--;
       else if (char == ',' && parenDepth == 0) {
         commaIndex = i;
         break;
@@ -5518,7 +5524,7 @@ class UrlRecipeImporter {
           !RegExp(r'^(until|if|when|as)\s', caseSensitive: false).hasMatch(afterOr)) {
         remaining = beforeOr;
         // Clean up the alternative - remove trailing punctuation and footnotes
-        var alternative = afterOr
+        final alternative = afterOr
             .replaceAll(RegExp(r'\*+$'), '')
             .replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '')
             .trim();
@@ -5766,6 +5772,49 @@ class UrlRecipeImporter {
     return [];
   }
 
+  /// Strip WordPress thumbnail dimension suffixes from image URLs.
+  /// e.g. "hero-300x200.jpg" → "hero.jpg", "thumb-150x150.webp?v=1" → "thumb.webp?v=1"
+  String? _stripWpDimensions(String? url) {
+    if (url == null) return null;
+    return url.replaceFirstMapped(
+      RegExp(r'-\d+x\d+(\.[a-zA-Z0-9]+)(\?[^#]*)?(#.*)?$'),
+      (m) => '${m.group(1)}${m.group(2) ?? ''}${m.group(3) ?? ''}',
+    );
+  }
+
+  /// From a `srcset` attribute value, return the URL with the highest width descriptor.
+  /// Falls back to the last candidate entry when no `NNNw` descriptors are present.
+  String? _bestSrcsetUrl(String srcset) {
+    final candidates = srcset
+        .split(',')
+        .map((s) => s.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+    if (candidates.isEmpty) return null;
+    String? bestUrl;
+    int bestWidth = -1;
+    for (final candidate in candidates) {
+      final parts = candidate.split(RegExp(r'\s+'));
+      if (parts.isEmpty) continue;
+      final url = parts.first.trim();
+      if (url.isEmpty) continue;
+      int width = 0;
+      if (parts.length > 1) {
+        final descriptor = parts.last.trim().toLowerCase();
+        if (descriptor.endsWith('w')) {
+          width = int.tryParse(descriptor.substring(0, descriptor.length - 1)) ?? 0;
+        }
+      }
+      if (width > bestWidth) {
+        bestWidth = width;
+        bestUrl = url;
+      } else {
+        bestUrl ??= url;
+      }
+    }
+    return bestUrl;
+  }
+
   String? _parseImage(dynamic value) {
     if (value == null) return null;
     if (value is String) {
@@ -5773,7 +5822,7 @@ class UrlRecipeImporter {
       if (value.contains('web.archive.org') || value.contains('archive.org/web/')) {
         return null;
       }
-      return value;
+      return _stripWpDimensions(value);
     }
     if (value is List && value.isNotEmpty) {
       return _parseImage(value.first);
@@ -6279,7 +6328,7 @@ class UrlRecipeImporter {
             final strong = p.querySelector('strong');
             if (strong != null && strong.text?.toUpperCase().contains('NOTES') == true) {
               // Extract text after the NOTES: prefix
-              var notesContent = pText.replaceFirst(RegExp(r'^NOTES:\s*', caseSensitive: false), '').trim();
+              final notesContent = pText.replaceFirst(RegExp(r'^NOTES:\s*', caseSensitive: false), '').trim();
               if (notesContent.isNotEmpty) {
                 htmlNotes = htmlNotes == null ? notesContent : '$htmlNotes\n\n$notesContent';
                 break; // Found notes, stop searching
@@ -6352,6 +6401,7 @@ class UrlRecipeImporter {
           if (text.isNotEmpty && rawDirections.isEmpty) {
             // Split by periods for multiple sentences if it's a single paragraph
             if (text.contains('. ')) {
+              // ignore: prefer_interpolation_to_compose_strings
               rawDirections.addAll(text.split(RegExp(r'\.\s+')).where((s) => s.trim().isNotEmpty).map((s) => s.trim() + '.'));
             } else {
               rawDirections.add(text);
@@ -6871,7 +6921,7 @@ class UrlRecipeImporter {
         // Try to find better detailed ingredients with quantities from HTML structure.
         if (gotFromMetaContent && rawIngredientStrings.isNotEmpty) {
           final hasQuantities = rawIngredientStrings.any((item) =>
-            RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+            RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item),
           );
           
           if (!hasQuantities) {
@@ -6881,7 +6931,7 @@ class UrlRecipeImporter {
             
             // Check if detailed ingredients have quantities
             final detailedHasQuantities = detailedIngredients.any((item) =>
-              RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+              RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item),
             );
             
             if (detailedHasQuantities && detailedIngredients.length >= rawIngredientStrings.length) {
@@ -7650,7 +7700,7 @@ class UrlRecipeImporter {
             item.length > 30 && (
               RegExp(r'\b(?:put|place|add|mix|stir|heat|cook|bake|blend|pour|whisk|chop|dice|slice|mince|preheat|combine|fold|serve|remove|transfer|let|allow|season|taste)\b', caseSensitive: false).hasMatch(item) ||
               RegExp(r'^\d+[\.\)]').hasMatch(item) // Numbered steps
-            )
+            ),
           );
           
           if (hasMeasurements && itemTexts.length >= 2) {
@@ -7764,7 +7814,9 @@ class UrlRecipeImporter {
               item.toLowerCase().contains('click') ||
               item.toLowerCase().contains('menu') ||
               item.toLowerCase().contains('instagram') ||
-              item.toLowerCase().contains('facebook')) continue;
+              item.toLowerCase().contains('facebook')) {
+            continue;
+          }
           
           // Check if this looks like an ingredient (has a measurement or is a section header)
           final looksLikeIngredient = 
@@ -8211,7 +8263,7 @@ class UrlRecipeImporter {
   /// Extract directions from Divi Builder sites (e.g., annaolson.ca)
   /// Scans for <h5> elements with "Step N" text pattern and extracts adjacent paragraph content
   List<String> _extractDiviDirections(dynamic document) {
-    print('Using Divi/AnnaOlson extraction strategy');
+    debugPrint('Using Divi/AnnaOlson extraction strategy');
     
     final directions = <String>[];
     final allElements = document.querySelectorAll('*');
@@ -8255,7 +8307,7 @@ class UrlRecipeImporter {
     final directions = <String>[];
     
     // Decode unicode escapes that Shopify/Lyres uses (embedded HTML in JSON)
-    var bodyHtml = rawBody
+    final bodyHtml = rawBody
         .replaceAll(r'\u003c', '<')
         .replaceAll(r'\u003e', '>')
         .replaceAll(r'\u0026', '&')
@@ -8299,7 +8351,7 @@ class UrlRecipeImporter {
               directions.addAll(text.split(RegExp(r'\.\s+')).where((s) => s.trim().isNotEmpty).map((s) {
                 final trimmed = s.trim();
                 return trimmed.endsWith('.') ? trimmed : '$trimmed.';
-              }));
+              }),);
             } else {
               directions.add(text);
             }
@@ -8616,7 +8668,7 @@ class UrlRecipeImporter {
       for (final p in document.querySelectorAll('p')) {
         final pText = p.text?.trim() ?? '';
         if (pText.toLowerCase().startsWith('garnish:')) {
-          var garnishText = pText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
+          final garnishText = pText.replaceFirst(RegExp(r'^Garnish:\s*', caseSensitive: false), '').trim();
           if (garnishText.isNotEmpty) {
             final garnishes = _splitGarnishText(garnishText);
             if (garnishes.isNotEmpty) {
@@ -8747,7 +8799,7 @@ class UrlRecipeImporter {
       } else if (headingText.contains('glass') || headingText.contains('glassware')) {
         // Extract glass type from next paragraph or list
         if (result['glass'] == null) {
-          var glassList = _extractListItemsAfterHeading(heading, document);
+          final glassList = _extractListItemsAfterHeading(heading, document);
           if (glassList.isNotEmpty) {
             result['glass'] = glassList.first;
           } else if (nextElement != null) {
@@ -9021,7 +9073,7 @@ class UrlRecipeImporter {
               }
             } else if (parentTag == 'li') {
               // Bold is inside a list item - get the parent list
-              var listParent = parent.parent;
+              final listParent = parent.parent;
               if (listParent != null) {
                 final listTag = listParent.localName?.toLowerCase();
                 if (listTag == 'ul' || listTag == 'ol') {
@@ -9145,7 +9197,9 @@ class UrlRecipeImporter {
                 if (line.isEmpty || line.length < 3) continue;
                 if (line.toLowerCase().contains('click') ||
                     line.toLowerCase().contains('subscribe') ||
-                    line.toLowerCase().contains('http')) continue;
+                    line.toLowerCase().contains('http')) {
+                  continue;
+                }
                 items.add(line);
               }
               
@@ -9299,7 +9353,7 @@ class UrlRecipeImporter {
       
       // Check if this looks like an ingredient list (has measurements)
       final hasQuantities = collectedItems.any((item) =>
-        RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item)
+        RegExp(r'\d+\s*[gG](?:\s|$|\))|[\d½¼¾⅓⅔]+\s*(?:cup|cups|tbsp|tablespoon|tsp|teaspoon|oz|ml)', caseSensitive: false).hasMatch(item),
       );
       
       if (hasQuantities && collectedItems.length >= 2) {
@@ -9667,7 +9721,7 @@ class UrlRecipeImporter {
     final nytSectionHeaders = document.querySelectorAll('[class*="ingredientgroup_name"]');
     if (nytSectionHeaders.isNotEmpty) {
       for (final header in nytSectionHeaders) {
-        var sectionText = _decodeHtml((header.text ?? '').trim());
+        final sectionText = _decodeHtml((header.text ?? '').trim());
         if (sectionText.isNotEmpty) {
           // Remove "For the" prefix if present
           final cleanedSection = _stripForThePrefix(sectionText);
@@ -10118,7 +10172,9 @@ class UrlRecipeImporter {
           // Skip obvious non-ingredient content (links, navigation, etc.)
           if (line.toLowerCase().contains('click') || 
               line.toLowerCase().contains('subscribe') ||
-              line.toLowerCase().contains('http')) continue;
+              line.toLowerCase().contains('http')) {
+            continue;
+          }
           
           items.add(line);
         }
@@ -10152,7 +10208,9 @@ class UrlRecipeImporter {
             if (RegExp(r'^(Equipment|Directions?|Instructions?|Method|Steps?|Timing|Yield)\b', caseSensitive: false).hasMatch(line)) continue;
             if (line.toLowerCase().contains('click') || 
                 line.toLowerCase().contains('subscribe') ||
-                line.toLowerCase().contains('http')) continue;
+                line.toLowerCase().contains('http')) {
+              continue;
+            }
             items.add(line);
           }
         }
@@ -10244,68 +10302,83 @@ class UrlRecipeImporter {
     return processed;
   }
   
-  /// Extract recipe image from HTML document
-  /// Checks schema.org markup, Open Graph meta tags, and common recipe image selectors
+  /// Extract recipe image from HTML document.
+  /// Priority: Open Graph / Twitter Card meta tags (most reliable for full-res) →
+  /// Schema.org microdata → preload hints → site-specific selectors.
   String? _extractImageFromHtml(dynamic document) {
-    // Helper to get image URL from various attributes
+    // Helper to get the best image URL from element attributes.
+    // Checks lazy-loading attributes before src (src is often a low-res placeholder).
     String? getImageUrl(dynamic element) {
       if (element == null) return null;
-      // Try various attributes - sites use different ones for lazy loading
-      final attrs = ['src', 'content', 'data-src', 'data-lazy-src', 'data-original', 'srcset'];
-      for (final attr in attrs) {
-        var value = element.attributes[attr];
-        if (value != null && value.isNotEmpty) {
-          // For srcset, take the first URL
-          if (attr == 'srcset') {
-            value = value.split(',').first.split(' ').first.trim();
-          }
-          // Skip placeholder images
-          if (value.contains('data:image') || 
-              value.contains('placeholder') ||
-              value.contains('loading') ||
-              value.contains('blank')) {
-            continue;
-          }
-          return value;
+      // Prefer lazy-loading source attributes over src
+      for (final attr in ['data-src', 'data-lazy-src', 'data-original', 'content']) {
+        final value = element.attributes[attr];
+        if (value != null &&
+            value.isNotEmpty &&
+            !value.contains('data:image') &&
+            !value.contains('placeholder') &&
+            !value.contains('loading') &&
+            !value.contains('blank')) {
+          return _stripWpDimensions(value);
         }
+      }
+      // srcset: pick the highest-width candidate rather than the default lowest-res src
+      final srcset = element.attributes['srcset'];
+      if (srcset != null && srcset.isNotEmpty) {
+        final best = _bestSrcsetUrl(srcset);
+        if (best != null &&
+            !best.contains('data:image') &&
+            !best.contains('placeholder')) {
+          return _stripWpDimensions(best);
+        }
+      }
+      // Fall back to src
+      final src = element.attributes['src'];
+      if (src != null &&
+          src.isNotEmpty &&
+          !src.contains('data:image') &&
+          !src.contains('placeholder') &&
+          !src.contains('loading') &&
+          !src.contains('blank')) {
+        return _stripWpDimensions(src);
       }
       return null;
     }
-    
-    // 1. Try schema.org Recipe image (itemprop="image")
+
+    // 1. Open Graph image — explicitly declared for social sharing, typically full-resolution
+    final ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage != null) {
+      final content = ogImage.attributes['content'];
+      if (content != null && content.isNotEmpty) return _stripWpDimensions(content);
+    }
+
+    // 2. Twitter Card image — also a reliable meta-declared full-resolution image
+    final twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage != null) {
+      final content = twitterImage.attributes['content'];
+      if (content != null && content.isNotEmpty) return _stripWpDimensions(content);
+    }
+
+    // 3. Schema.org Recipe microdata image (itemprop="image" within Recipe itemscope)
     final schemaImg = document.querySelector('[itemscope][itemtype*="Recipe"] [itemprop="image"]');
     if (schemaImg != null) {
       final url = getImageUrl(schemaImg);
       if (url != null) return url;
     }
-    
-    // 2. Try itemprop="image" directly (without parent scope check)
+
+    // 4. itemprop="image" (without parent scope check)
     final itempropImg = document.querySelector('[itemprop="image"]');
     if (itempropImg != null) {
       final url = getImageUrl(itempropImg);
       if (url != null) return url;
     }
-    
-    // 3. Try Open Graph image meta tag
-    final ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage != null) {
-      final content = ogImage.attributes['content'];
-      if (content != null && content.isNotEmpty) return content;
-    }
-    
-    // 4. Try Twitter card image
-    final twitterImage = document.querySelector('meta[name="twitter:image"]');
-    if (twitterImage != null) {
-      final content = twitterImage.attributes['content'];
-      if (content != null && content.isNotEmpty) return content;
-    }
-    
-    // 5. Try preloaded image link (used by some sites like Seedlip)
+
+    // 5. Preloaded image link (used by some sites like Seedlip)
     final preloadImage = document.querySelector('link[rel="preload"][as="image"]');
     if (preloadImage != null) {
       final href = preloadImage.attributes['href'];
       if (href != null && href.isNotEmpty && !href.contains('icon') && !href.contains('logo')) {
-        return href;
+        return _stripWpDimensions(href);
       }
     }
     
@@ -10444,7 +10517,7 @@ class UrlRecipeImporter {
         
         // Get the src, checking data-src for lazy-loaded images too
         // Prefer data-src (full quality) over src (low quality placeholder)
-        var src = img.attributes['data-src'] ?? 
+        final src = img.attributes['data-src'] ?? 
                   img.attributes['data-lazy-src'] ??
                   img.attributes['src'];
         
@@ -10457,7 +10530,9 @@ class UrlRecipeImporter {
             src.contains('emoji') ||
             src.contains('1x1') ||
             src.contains('pixel') ||
-            src.contains('low_quality')) continue; // Skip low quality placeholders
+            src.contains('low_quality')) {
+          continue; // Skip low quality placeholders
+        }
         
         // Skip if we've already seen this URL
         final resolvedUrl = resolveUrl(src);
@@ -10517,7 +10592,7 @@ class UrlRecipeImporter {
           }
           
           // Fall back to img src
-          var src = anchor.attributes['src'] ?? anchor.attributes['data-src'];
+          final src = anchor.attributes['src'] ?? anchor.attributes['data-src'];
           if (src != null && src.isNotEmpty) {
             final resolvedUrl = resolveUrl(src);
             if (!seenUrls.contains(resolvedUrl)) {
@@ -10553,7 +10628,9 @@ class UrlRecipeImporter {
           lower.contains('badge') ||
           lower.contains('button') ||
           lower.contains('book-cover') ||
-          lower.contains('headshot')) return false;
+          lower.contains('headshot')) {
+        return false;
+      }
       return true;
     }
     

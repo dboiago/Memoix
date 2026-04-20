@@ -1,4 +1,6 @@
+import 'dart:async';
 import 'dart:io';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,15 +8,14 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../core/utils/amount_scaler.dart';
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../../shared/widgets/course_icon_widget.dart';
-import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
 import '../models/spirit.dart';
@@ -25,7 +26,6 @@ import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
-import '../../tools/recipe_comparison_provider.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../widgets/ingredient_reference_sheet.dart';
@@ -33,10 +33,10 @@ import '../widgets/ingredient_reference_sheet.dart';
 bool shouldShowCompareButton(Recipe recipe) {
   final allowed = {
     'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
-    'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles'
+    'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles',
   };
   final blocked = {
-    'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar'
+    'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar',
   };
   final course = recipe.course.toLowerCase();
   if (blocked.contains(course)) return false;
@@ -75,8 +75,16 @@ class RecipeDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Watch the recipes stream to get live updates on favourite changes
-    final recipesAsync = ref.watch(allRecipesProvider);
+    // Watch only the single recipe matching this screen's UUID so unrelated
+    // recipe changes (other recipes' cookCount, nutrition, etc.) do not cause
+    // this screen to rebuild.
+    final recipesAsync = ref.watch(
+      allRecipesProvider.select(
+        (v) => v.whenData(
+          (list) => list.firstWhereOrNull((r) => r.uuid == recipeId),
+        ),
+      ),
+    );
 
     return recipesAsync.when(
       loading: () => const Scaffold(
@@ -86,13 +94,8 @@ class RecipeDetailScreen extends ConsumerWidget {
         appBar: AppBar(),
         body: Center(child: Text('Error: $err')),
       ),
-      data: (recipes) {
-        final recipe = recipes.firstWhere(
-          (r) => r.uuid == recipeId,
-          orElse: () => Recipe()..name = '',
-        );
-        
-        if (recipe.name.isEmpty) {
+      data: (recipe) {
+        if (recipe == null || recipe.name.isEmpty) {
           return Scaffold(
             appBar: AppBar(),
             body: const Center(child: Text('Recipe not found')),
@@ -164,8 +167,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
-    // Use headerImage for the app bar, fall back to legacy imageUrl/imageUrls
-    final headerImage = recipe.headerImage ?? recipe.getFirstImage();
+    // Use headerImage for the app bar only — no fallback to step/gallery images
+    final headerImage = recipe.headerImage;
     // Check if header images should be shown (user setting)
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
@@ -208,7 +211,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   .toggleFavorite(recipe.id);
               if (blocked.isNotEmpty) {
                 MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '');
+                    blocked.first.data['text'] as String? ?? '',);
                 return;
               }
               ref.invalidate(allRecipesProvider);
@@ -290,6 +293,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             child: InkWell(
               onLongPress: () async {
                 await HapticFeedback.mediumImpact();
+                if (!mounted) return;
                 _showServingsBottomSheet(context, recipe);
               },
               onTap: _targetServes != null
@@ -384,9 +388,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                       controller: controller,
                       keyboardType: TextInputType.number,
                       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Number of servings',
-                        border: const OutlineInputBorder(),
+                        border: OutlineInputBorder(),
                       ),
                       autofocus: true,
                     ),
@@ -439,7 +443,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   Widget _buildCompactMetadata(Recipe recipe, ThemeData theme) {
     final textColor = theme.colorScheme.onSurfaceVariant;
     final baseStyle = theme.textTheme.bodySmall?.copyWith(color: textColor);
-    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+    final isDrink = recipe.course.toLowerCase() == 'drinks';
 
     // ── Pre-serves items: cuisine / spirit ─────────────────────────────────
     final preItems = <InlineSpan>[];
@@ -456,7 +460,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             margin: const EdgeInsets.only(right: 4),
             decoration: BoxDecoration(color: spiritColor, shape: BoxShape.circle),
           ),
-        ));
+        ),);
         final spirit = Spirit.toDisplayName(recipe.subcategory!);
         if (recipe.cuisine != null && recipe.cuisine!.isNotEmpty) {
           preItems.add(TextSpan(text: '$spirit (${Cuisine.toAdjective(recipe.cuisine)})')); 
@@ -473,7 +477,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             margin: const EdgeInsets.only(right: 4),
             decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
-        ));
+        ),);
         preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     } else {
@@ -487,7 +491,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             margin: const EdgeInsets.only(right: 4),
             decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
-        ));
+        ),);
         preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     }
@@ -501,7 +505,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         postItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: textColor),
-        ));
+        ),);
         postItems.add(TextSpan(text: ' $normalized'));
       }
     }
@@ -511,7 +515,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       postItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.local_bar, size: 12, color: textColor),
-      ));
+      ),);
       postItems.add(TextSpan(text: ' ${_capitalizeWords(recipe.glass!)}'));
     }
 
@@ -551,7 +555,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           borderRadius: BorderRadius.circular(4),
           onLongPress: () async {
             await HapticFeedback.mediumImpact();
-            if (context.mounted) _showServingsBottomSheet(context, recipe);
+            if (!mounted) return;
+            _showServingsBottomSheet(context, recipe);
           },
           onTap: isScaled ? () => setState(() => _targetServes = null) : null,
           child: Text.rich(
@@ -616,7 +621,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                   .toggleFavorite(recipe.id);
               if (blocked.isNotEmpty) {
                 MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '');
+                    blocked.first.data['text'] as String? ?? '',);
                 return;
               }
               ref.invalidate(allRecipesProvider);
@@ -711,7 +716,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                       fontSize: MediaQuery.of(context).size.width < 600 ? 12 : 14,
                                     ),
                                     visualDensity: VisualDensity.compact,
-                                  )).toList(),
+                                  ),).toList(),
                                 ),
                               ],
                             ),
@@ -906,7 +911,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                                             child: Container(
                                               padding: const EdgeInsets.all(4),
                                               decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(0.5),
+                                                color: Colors.black.withValues(alpha: 0.5),
                                                 borderRadius: BorderRadius.circular(4),
                                               ),
                                               child: const Icon(
@@ -1006,7 +1011,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             ),
           ),
         ],
-      )).toList(),
+      ),).toList(),
     );
   }
 
@@ -1071,7 +1076,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -1098,19 +1103,21 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   /// Check if a recipe has any paired recipes (explicit or inverse)
   bool _hasPairedRecipes(WidgetRef ref, Recipe recipe) {
-    final allRecipesAsync = ref.watch(allRecipesProvider);
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
-    
-    if (allRecipes.isEmpty) return false;
-    
-    // Check for explicit pairings
+    // Select only the (uuid, pairedRecipeIds) pairs needed for pairing logic.
+    final pairs = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? []).map((r) => (uuid: r.uuid, pairedIds: r.pairedRecipeIds)).toList(),
+      ),
+    );
+
+    if (pairs.isEmpty) return false;
+
     if (recipe.pairedRecipeIds.isNotEmpty) return true;
-    
-    // Check for inverse pairings
-    for (final r in allRecipes) {
-      if (r.pairedRecipeIds.contains(recipe.uuid)) return true;
+
+    for (final p in pairs) {
+      if (p.pairedIds.contains(recipe.uuid)) return true;
     }
-    
+
     return false;
   }
 
@@ -1125,28 +1132,34 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   ) {
     final chips = <Widget>[];
     
-    // Get all recipes for lookup
-    final allRecipesAsync = ref.watch(allRecipesProvider);
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
-    
-    if (allRecipes.isEmpty) return chips;
-    
+    // Select only (uuid, name, course, pairedRecipeIds) — rebuilds only when
+    // pairing data changes, not when unrelated fields like cookCount change.
+    final pairs = ref.watch(
+      allRecipesProvider.select(
+        (v) => (v.valueOrNull ?? [])
+            .map((r) => (uuid: r.uuid, name: r.name, course: r.course, pairedIds: r.pairedRecipeIds))
+            .toList(),
+      ),
+    );
+
+    if (pairs.isEmpty) return chips;
+
     // Collect all paired recipes (explicit + inverse)
-    final pairedRecipes = <Recipe>[];
-    
+    final pairedRecipes = <({String uuid, String name, String course})>[];
+
     // 1. Explicit pairings: recipes we link to
     for (final uuid in recipe.pairedRecipeIds) {
-      final linked = allRecipes.where((r) => r.uuid == uuid).firstOrNull;
+      final linked = pairs.firstWhereOrNull((p) => p.uuid == uuid);
       if (linked != null && !pairedRecipes.any((r) => r.uuid == linked.uuid)) {
-        pairedRecipes.add(linked);
+        pairedRecipes.add((uuid: linked.uuid, name: linked.name, course: linked.course));
       }
     }
-    
+
     // 2. Inverse pairings: recipes that link to us
-    for (final r in allRecipes) {
-      if (r.pairedRecipeIds.contains(recipe.uuid) && 
-          !pairedRecipes.any((pr) => pr.uuid == r.uuid)) {
-        pairedRecipes.add(r);
+    for (final p in pairs) {
+      if (p.pairedIds.contains(recipe.uuid) &&
+          !pairedRecipes.any((pr) => pr.uuid == p.uuid)) {
+        pairedRecipes.add((uuid: p.uuid, name: p.name, course: p.course));
       }
     }
     
@@ -1338,6 +1351,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           TextButton(
             onPressed: () async {
               await ref.read(recipeRepositoryProvider).deleteRecipe(recipe.id);
+              unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
               if (context.mounted) {
                 Navigator.pop(ctx);
                 Navigator.pop(context);

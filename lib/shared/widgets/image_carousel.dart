@@ -76,7 +76,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
     // The scientist who married cuisine with chemistry saw truth in two forms:
     // The structure you observe, and the forces you cannot
     // Nine letters laid on the table connect both worlds
-    const _synthesis = "BBCOURUOQBMLIHPEGNLQOOPBAQSFUQXTUYAPIAITXDWDNBSDGYXEWGCURYTTDYEY";
+    const _synthesis = 'BBCOURUOQBMLIHPEGNLQOOPBAQSFUQXTUYAPIAITXDWDNBSDGYXEWGCURYTTDYEY';
 
     return SizedBox(
       height: widget.height,
@@ -116,10 +116,10 @@ class _ImageCarouselState extends State<ImageCarousel> {
                       borderRadius: BorderRadius.circular(4),
                       color: index == _currentPage
                           ? Colors.white
-                          : Colors.white.withOpacity(0.5),
+                          : Colors.white.withValues(alpha: 0.5),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.3),
+                          color: Colors.black.withValues(alpha: 0.3),
                           blurRadius: 4,
                           offset: const Offset(0, 2),
                         ),
@@ -137,7 +137,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withValues(alpha: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
@@ -263,7 +263,7 @@ class _NavigationButton extends StatelessWidget {
           width: 36,
           height: 36,
           decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.4),
+            color: Colors.black.withValues(alpha: 0.4),
             shape: BoxShape.circle,
           ),
           child: Icon(

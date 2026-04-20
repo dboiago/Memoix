@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -9,6 +10,7 @@ import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../shared/widgets/memoix_header.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/split_smoking_view.dart';
@@ -75,7 +77,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     final theme = Theme.of(context);
     
     // Use side-by-side layout when enabled
-    if (useSideBySide && recipe.directions.isNotEmpty) {
+    if (useSideBySide && (jsonDecode(recipe.directions) as List).isNotEmpty) {
       return _buildSideBySideLayout(context, theme, recipe);
     }
     
@@ -83,7 +85,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   }
 
   Widget _buildSideBySideLayout(BuildContext context, ThemeData theme, SmokingRecipe recipe) {
-    final hasStepImages = recipe.stepImages.isNotEmpty;
+    final hasStepImages = (jsonDecode(recipe.stepImages) as List).isNotEmpty;
     final showHeaderImages = ref.watch(showHeaderImagesProvider);
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
@@ -97,12 +99,16 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref, recipe),
+            onComparePressed: recipe.type != SmokingType.pitNote.name
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true,)
+                : null,
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
@@ -154,7 +160,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           ),
         
         // Pit Note specific: Temperature, Time, Wood
-        if (recipe.type == SmokingType.pitNote) ...[
+        if (recipe.type == SmokingType.pitNote.name) ...[
           if (recipe.temperature.isNotEmpty)
             Chip(
               label: Row(
@@ -215,7 +221,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         ],
         
         // Recipe type: Serves, Time
-        if (recipe.type == SmokingType.recipe) ...[
+        if (recipe.type == SmokingType.recipe.name) ...[
           if (recipe.serves != null && recipe.serves!.isNotEmpty)
             Chip(
               label: Row(
@@ -278,7 +284,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.park_outlined, size: 12, color: iconColor),
-      ));
+      ),);
       metadataItems.add(TextSpan(text: ' ${recipe.wood}'));
     }
     
@@ -291,7 +297,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.thermostat_outlined, size: 12, color: iconColor),
-      ));
+      ),);
       metadataItems.add(TextSpan(text: ' $normalizedTemp'));
     }
     
@@ -305,7 +311,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: iconColor),
-        ));
+        ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
     }
@@ -334,7 +340,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           color: recipe.isFavorite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
-          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
           ref.invalidate(allSmokingRecipesProvider);
           await processIntegrityResponses(ref);
         },
@@ -343,7 +349,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         icon: const Icon(Icons.check_circle_outline),
         tooltip: 'I made this',
         onPressed: () async {
-          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+          await ref.read(smokingRepositoryProvider).incrementCookCount(recipe);
           MemoixSnackBar.showLoggedCook(
             recipeName: recipe.name,
             onViewStats: () => AppRoutes.toStatistics(context),
@@ -386,7 +392,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
     final hasHeaderImage = showHeaderImages && headerImage != null && headerImage.isNotEmpty;
-    final hasStepImages = recipe.stepImages.isNotEmpty;
+    final hasStepImages = (jsonDecode(recipe.stepImages) as List).isNotEmpty;
     
     return Scaffold(
       body: Column(
@@ -397,12 +403,16 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe.uuid);
+              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref, recipe),
+            onComparePressed: recipe.type != SmokingType.pitNote.name
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true,)
+                : null,
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
@@ -448,7 +458,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                               ),
                             ),
                             const SizedBox(width: 16),
-                            if (recipe.directions.isNotEmpty)
+                            if ((jsonDecode(recipe.directions) as List).isNotEmpty)
                               Expanded(
                                 flex: 3,
                                 child: Card(
@@ -486,7 +496,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                           const SizedBox(height: 8),
                           _buildIngredientsContent(theme, recipe),
                           const SizedBox(height: 24),
-                          if (recipe.directions.isNotEmpty) ...[
+                          if ((jsonDecode(recipe.directions) as List).isNotEmpty) ...[
                             Text(
                               'Directions',
                               style: theme.textTheme.titleLarge?.copyWith(
@@ -600,7 +610,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           ),
         
         // Pit Note specific: Temperature, Time (required), Wood
-        if (recipe.type == SmokingType.pitNote) ...[
+        if (recipe.type == SmokingType.pitNote.name) ...[
           // Temperature (normalized with degree symbol)
           if (recipe.temperature.isNotEmpty)
             Chip(
@@ -649,7 +659,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         ],
         
         // Recipe type: Serves, Time (optional)
-        if (recipe.type == SmokingType.recipe) ...[
+        if (recipe.type == SmokingType.recipe.name) ...[
           if (recipe.serves != null && recipe.serves!.isNotEmpty)
             Chip(
               label: Row(
@@ -685,7 +695,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
 
   /// Build ingredients content based on recipe type
   Widget _buildIngredientsContent(ThemeData theme, SmokingRecipe recipe) {
-    if (recipe.type == SmokingType.pitNote) {
+    if (recipe.type == SmokingType.pitNote.name) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -695,13 +705,20 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               _buildIngredientSection(theme, 'Main', [recipe.item!]),
             ],
           // Seasonings section
-          if (recipe.seasonings.isNotEmpty) ...[
+          if ((jsonDecode(recipe.seasoningsJson) as List).isNotEmpty) ...[
             if (recipe.item != null && recipe.item!.isNotEmpty)
               const SizedBox(height: 16),
             _buildIngredientSection(
               theme,
-              recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
-              recipe.seasonings.map((s) => s.displayText).toList(),
+              (jsonDecode(recipe.seasoningsJson) as List).length == 1 ? 'Seasoning' : 'Seasonings',
+              (jsonDecode(recipe.seasoningsJson) as List).map((s) {
+                final m = s as Map<String, dynamic>;
+                return SmokingSeasoning.create(
+                  name: m['name'] as String? ?? '',
+                  amount: m['amount'] as String?,
+                  unit: m['unit'] as String?,
+                ).displayText;
+              }).toList(),
             ),
           ],
         ],
@@ -709,7 +726,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     }
     
     // For Recipe type: show full ingredients list with checkboxes
-    if (recipe.ingredients.isEmpty) {
+    if ((jsonDecode(recipe.ingredientsJson) as List).isEmpty) {
       return Text(
         'No ingredients',
         style: theme.textTheme.bodyMedium?.copyWith(
@@ -718,17 +735,38 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       );
     }
     
-    return _SmokingIngredientsList(ingredients: recipe.ingredients, onIngredientLongPress: _ingredientLongPressHandler());
+    return _SmokingIngredientsList(
+      ingredients: (jsonDecode(recipe.ingredientsJson) as List).map((i) {
+        final m = i as Map<String, dynamic>;
+        return SmokingSeasoning.create(
+          name: m['name'] as String? ?? '',
+          amount: m['amount'] as String?,
+          unit: m['unit'] as String?,
+        );
+      }).toList(),
+      onIngredientLongPress: _ingredientLongPressHandler(),
+    );
   }
 
   Widget _buildDirectionsList(BuildContext context, SmokingRecipe recipe) {
     final theme = Theme.of(context);
 
+    final decodedDirections = (jsonDecode(recipe.directions) as List).cast<String>();
+    final decodedStepImageMap = (jsonDecode(recipe.stepImageMap) as List).cast<String>();
+    int? getStepImageIndex(int stepIndex) {
+      for (final mapping in decodedStepImageMap) {
+        final parts = mapping.split(':');
+        if (parts.length == 2 && int.tryParse(parts[0]) == stepIndex) {
+          return int.tryParse(parts[1]);
+        }
+      }
+      return null;
+    }
     return Column(
-      children: recipe.directions.asMap().entries.map((entry) {
+      children: decodedDirections.asMap().entries.map((entry) {
         final index = entry.key;
         final step = entry.value;
-        final hasStepImage = recipe.getStepImageIndex(index) != null;
+        final hasStepImage = getStepImageIndex(index) != null;
 
         return GestureDetector(
             onLongPress: () async {
@@ -749,7 +787,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                     width: 28,
                     height: 28,
                     decoration: BoxDecoration(
-                      color: theme.colorScheme.secondary.withOpacity(0.15),
+                      color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                       shape: BoxShape.circle,
                       border: Border.all(
                         color: theme.colorScheme.secondary,
@@ -791,7 +829,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                       padding: EdgeInsets.zero,
                       constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
                       tooltip: 'View step image',
-                      onPressed: () => _scrollToAndShowImage(recipe, index),
+                      onPressed: () => _scrollToAndShowImage(recipe, index, decodedStepImageMap),
                     ),
                 ],
               ),
@@ -821,6 +859,16 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   }
 
   Widget _buildStepImagesGallery(ThemeData theme, SmokingRecipe recipe) {
+    final decodedStepImages = (jsonDecode(recipe.stepImages) as List).cast<String>();
+    final decodedDirections = (jsonDecode(recipe.directions) as List).cast<String>();
+    final decodedImgMap = (jsonDecode(recipe.stepImageMap) as List).cast<String>();
+    int? getIdx(int si) {
+      for (final m in decodedImgMap) {
+        final p = m.split(':');
+        if (p.length == 2 && int.tryParse(p[0]) == si) return int.tryParse(p[1]);
+      }
+      return null;
+    }
     return Card(
       child: ExpansionTile(
         title: Text(
@@ -837,12 +885,12 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
               height: 120,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: recipe.stepImages.length,
+                itemCount: decodedStepImages.length,
                 itemBuilder: (context, imageIndex) {
                   // Find which step(s) use this image
                   final stepsUsingImage = <int>[];
-                  for (int i = 0; i < recipe.directions.length; i++) {
-                    if (recipe.getStepImageIndex(i) == imageIndex) {
+                  for (int i = 0; i < decodedDirections.length; i++) {
+                    if (getIdx(i) == imageIndex) {
                       stepsUsingImage.add(i + 1);
                     }
                   }
@@ -850,12 +898,12 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                   return Padding(
                     padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
                     child: GestureDetector(
-                      onTap: () => _showImageFullscreen(recipe.stepImages[imageIndex]),
+                      onTap: () => _showImageFullscreen(decodedStepImages[imageIndex]),
                       child: Stack(
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(8),
-                            child: _buildStepImageWidget(recipe.stepImages[imageIndex], width: 120, height: 120),
+                            child: _buildStepImageWidget(decodedStepImages[imageIndex], width: 120, height: 120),
                           ),
                           // Step numbers badge
                           if (stepsUsingImage.isNotEmpty)
@@ -885,7 +933,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                             child: Container(
                               padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
+                                color: Colors.black.withValues(alpha: 0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: const Icon(
@@ -936,9 +984,18 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     }
   }
 
-  void _scrollToAndShowImage(SmokingRecipe recipe, int stepIndex) {
-    final imageIndex = recipe.getStepImageIndex(stepIndex);
-    if (imageIndex == null || imageIndex >= recipe.stepImages.length) return;
+  void _scrollToAndShowImage(SmokingRecipe recipe, int stepIndex, [List<String>? stepImageMapOverride]) {
+    final decodedImgMap = stepImageMapOverride ?? (jsonDecode(recipe.stepImageMap) as List).cast<String>();
+    final decodedStepImages = (jsonDecode(recipe.stepImages) as List).cast<String>();
+    int? imageIndex;
+    for (final m in decodedImgMap) {
+      final p = m.split(':');
+      if (p.length == 2 && int.tryParse(p[0]) == stepIndex) {
+        imageIndex = int.tryParse(p[1]);
+        break;
+      }
+    }
+    if (imageIndex == null || imageIndex >= decodedStepImages.length) return;
 
     // Scroll to the step images section
     final ctx = _stepImagesKey.currentContext;
@@ -949,11 +1006,11 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
         curve: Curves.easeOut,
       ).then((_) {
         // After scrolling, show the image fullscreen
-        _showImageFullscreen(recipe.stepImages[imageIndex]);
+        _showImageFullscreen(decodedStepImages[imageIndex!]);
       });
     } else {
       // If context not found, just show the image
-      _showImageFullscreen(recipe.stepImages[imageIndex]);
+      _showImageFullscreen(decodedStepImages[imageIndex]);
     }
   }
 
@@ -969,7 +1026,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -1009,30 +1066,34 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
   void _duplicateRecipe(BuildContext context, WidgetRef ref, SmokingRecipe recipe) async {
     final repo = ref.read(smokingRepositoryProvider);
     final newUuid = const Uuid().v4();
-    
-    final newRecipe = SmokingRecipe.create(
+    final now = DateTime.now();
+
+    final newRecipe = SmokingRecipe(
+      id: 0,
       uuid: newUuid,
       name: '${recipe.name} (Copy)',
+      course: recipe.course,
       type: recipe.type,
       item: recipe.item,
       category: recipe.category,
       temperature: recipe.temperature,
       time: recipe.time,
       wood: recipe.wood,
-      seasonings: recipe.seasonings.map((s) => SmokingSeasoning.create(
-        name: s.name,
-        amount: s.amount,
-        unit: s.unit,
-      )).toList(),
-      ingredients: recipe.ingredients.map((i) => SmokingSeasoning.create(
-        name: i.name,
-        amount: i.amount,
-        unit: i.unit,
-      )).toList(),
+      seasoningsJson: recipe.seasoningsJson,
+      ingredientsJson: recipe.ingredientsJson,
       serves: recipe.serves,
-      directions: List.from(recipe.directions),
+      directions: recipe.directions,
       notes: recipe.notes,
-      source: SmokingSource.personal,
+      headerImage: recipe.headerImage,
+      stepImages: recipe.stepImages,
+      stepImageMap: recipe.stepImageMap,
+      imageUrl: recipe.imageUrl,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.personal.name,
+      pairedRecipeIds: recipe.pairedRecipeIds,
+      createdAt: now,
+      updatedAt: now,
     );
     
     await repo.saveRecipe(newRecipe);
@@ -1065,14 +1126,15 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       ),
     );
 
-    if (confirmed == true && context.mounted) {
-      await ref.read(smokingRepositoryProvider).deleteRecipe(recipe.uuid);
+    if (confirmed == true && mounted) {
+      await ref.read(smokingRepositoryProvider).deleteRecipe(recipe);
+      if (!mounted) return;
       Navigator.pop(context);
     }
   }
 
   void _logCook(BuildContext context, SmokingRecipe recipe) {
-    ref.read(smokingRepositoryProvider).incrementCookCount(recipe.uuid);
+    ref.read(smokingRepositoryProvider).incrementCookCount(recipe);
     ref.invalidate(allSmokingRecipesProvider);
     MemoixSnackBar.showLoggedCook(
       recipeName: recipe.name,
@@ -1217,7 +1279,7 @@ class _SmokingIngredientListState extends State<_SmokingIngredientList> {
                     style: theme.textTheme.bodyLarge?.copyWith(
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                     ),
                   ),
@@ -1332,7 +1394,7 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
                           fontWeight: FontWeight.w500,
                           decoration: isChecked ? TextDecoration.lineThrough : null,
                           color: isChecked
-                              ? theme.colorScheme.onSurface.withOpacity(0.5)
+                              ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                               : null,
                         ),
                       ),
@@ -1343,7 +1405,7 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
                           style: theme.textTheme.bodySmall?.copyWith(
                             decoration: isChecked ? TextDecoration.lineThrough : null,
                             color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                 : theme.colorScheme.onSurfaceVariant,
                           ),
                         ),

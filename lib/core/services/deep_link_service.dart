@@ -1,13 +1,18 @@
 import 'dart:async';
+import 'dart:io';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../features/sharing/services/share_service.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/personal_storage/services/shared_storage_manager.dart';
 import '../../features/personal_storage/providers/google_drive_storage.dart';
+import '../../features/personal_storage/providers/one_drive_storage.dart';
 import '../../features/personal_storage/models/storage_location.dart';
+import '../../app/app.dart' show rootNavigatorKey;
 import '../widgets/memoix_snackbar.dart';
 
 /// Service to handle deep links (memoix://recipe/...)
@@ -23,7 +28,8 @@ class DeepLinkService {
     // Handle initial link if app was opened via deep link
     try {
       final initialUri = await _appLinks.getInitialAppLink();
-      if (initialUri != null) {
+      if (initialUri != null && initialUri.scheme == 'memoix') {
+        if (!context.mounted) return;
         await _handleDeepLink(context, initialUri);
       }
     } catch (e) {
@@ -32,7 +38,10 @@ class DeepLinkService {
 
     // Listen for subsequent deep links
     _subscription = _appLinks.uriLinkStream.listen((uri) {
-      _handleDeepLink(context, uri);
+      if (uri.scheme == 'memoix') {
+        if (!context.mounted) return;
+        _handleDeepLink(context, uri);
+      }
     });
   }
 
@@ -45,11 +54,14 @@ class DeepLinkService {
   Future<void> _handleDeepLink(BuildContext context, Uri uri) async {
     debugPrint('Received deep link: $uri');
 
+    // Let flutter_appauth handle OAuth callbacks
+    if (uri.host == 'oauth') return;
+
     if (uri.scheme != 'memoix') return;
 
     // Handle repository sharing links: memoix://share/repo?id=XXX&name=YYY
     if (uri.host == 'share' && uri.pathSegments.contains('repo')) {
-      await _handleRepositoryShare(context, uri);
+      await handleRepositoryShare(context, uri);
       return;
     }
 
@@ -61,7 +73,7 @@ class DeepLinkService {
   }
 
   /// Handle repository sharing deep link
-  Future<void> _handleRepositoryShare(BuildContext context, Uri uri) async {
+  Future<void> handleRepositoryShare(BuildContext context, Uri uri) async {
     final folderId = uri.queryParameters['id'];
     final repositoryName = uri.queryParameters['name'];
 
@@ -86,16 +98,53 @@ class DeepLinkService {
       return;
     }
 
+    // Parse provider from URI — default to googleDrive for backwards compatibility
+    final providerStr = uri.queryParameters['provider'];
+    final storageProvider = providerStr != null
+        ? StorageProvider.values.firstWhere(
+            (e) => e.name == providerStr,
+            orElse: () => StorageProvider.googleDrive,
+          )
+        : StorageProvider.googleDrive;
+
     // Attempt to verify access
     bool? hasAccess;
     bool isOffline = false;
+    bool isAuthFailure = false;
 
     try {
-      final storage = _ref.read(googleDriveStorageProvider);
-      hasAccess = await storage.verifyFolderAccess(folderId);
+      switch (storageProvider) {
+        case StorageProvider.googleDrive:
+          final storage = _ref.read(googleDriveStorageProvider);
+          if (!storage.isConnected) {
+            isAuthFailure = true;
+          } else {
+            hasAccess = await storage.verifyFolderAccess(folderId);
+          }
+          break;
+        case StorageProvider.oneDrive:
+          final storage = OneDriveStorage();
+          await storage.init();
+          if (storage.isConnected) {
+            hasAccess = await storage.verifyFolderAccess(folderId);
+          } else {
+            isAuthFailure = true;
+          }
+          break;
+      }
     } catch (e) {
-      debugPrint('Repository verification error (likely offline): $e');
-      isOffline = true;
+      debugPrint('Repository verification error: $e');
+      final msg = e.toString().toLowerCase();
+      if (msg.contains('auth') ||
+          msg.contains('401') ||
+          msg.contains('403') ||
+          msg.contains('unauthorized') ||
+          msg.contains('unauthenticated') ||
+          msg.contains('sign in')) {
+        isAuthFailure = true;
+      } else {
+        isOffline = true;
+      }
     }
 
     if (!context.mounted) return;
@@ -106,6 +155,7 @@ class DeepLinkService {
         name: repositoryName,
         folderId: folderId,
         isPendingVerification: false,
+        provider: storageProvider,
       );
 
       if (context.mounted) {
@@ -160,23 +210,25 @@ class DeepLinkService {
       return;
     }
 
-    // Scenario C: Offline - add provisionally
-    if (isOffline) {
-      final repo = await manager.addRepository(
+    // Scenario C: Offline or unauthenticated — add provisionally
+    if (isOffline || isAuthFailure) {
+      await manager.addRepository(
         name: repositoryName,
         folderId: folderId,
         isPendingVerification: true,
+        provider: storageProvider,
       );
 
       if (context.mounted) {
+        final message = isAuthFailure
+            ? 'Sign in required — tap the repository to connect and sync'
+            : '"$repositoryName" has been added but could not be verified.\n\n'
+              'Access will be checked when you\'re online.';
         showDialog(
           context: context,
           builder: (ctx) => AlertDialog(
-            title: const Text('Repository Saved'),
-            content: Text(
-              '"$repositoryName" has been added but could not be verified.\n\n'
-              'Access will be checked when you\'re online.',
-            ),
+            title: const Text('Repository Added'),
+            content: Text(message),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(ctx),
@@ -255,8 +307,66 @@ class DeepLinkService {
       }
     } catch (e) {
       debugPrint('Error handling deep link: $e');
+      if (!context.mounted) return;
       _showError(context, 'Failed to import recipe');
     }
+  }
+
+  /// Check the clipboard for a Memoix recipe link and surface a persistent
+  /// import prompt. Only runs on Android and iOS. Uses SharedPreferences to
+  /// deduplicate — the same link will not be prompted on subsequent launches.
+  Future<void> checkClipboard(BuildContext context) async {
+    if (!Platform.isAndroid && !Platform.isIOS) return;
+
+    final ClipboardData? data;
+    try {
+      data = await Clipboard.getData(Clipboard.kTextPlain);
+    } catch (e) {
+      debugPrint('Clipboard read error: $e');
+      return;
+    }
+
+    final text = data?.text?.trim();
+    if (text == null || text.isEmpty) return;
+
+    // Only handle recipe links — repo links require auth flows, not inline prompts
+    if (!text.startsWith('memoix://recipe/')) return;
+
+    // SECURITY: Reject oversized payloads before parsing (mirrors QR scanner limit)
+    if (text.length > 4096) return;
+
+    // Validate the URI is well-formed before proceeding
+    final uri = Uri.tryParse(text);
+    if (uri == null) return;
+
+    // Deduplicate: do not re-prompt for a link the user has already seen
+    final prefs = await SharedPreferences.getInstance();
+    const prefKey = 'deep_link_last_clipboard_link';
+    if (prefs.getString(prefKey) == text) return;
+
+    // Persist before showing — if the app is killed before the tap we still
+    // won't re-prompt, which is preferable to spamming the user.
+    await prefs.setString(prefKey, text);
+
+    MemoixSnackBar.showPersistentWithAction(
+      message: 'Memoix recipe link detected. Tap to import.',
+      actionLabel: 'Import',
+      onAction: () async {
+        // Resolve context at tap time so we never use a stale BuildContext
+        // captured at initState. rootNavigatorKey always tracks the live root.
+        final ctx = rootNavigatorKey.currentContext;
+        if (ctx == null) {
+          MemoixSnackBar.showError('Unable to open import — try reopening the app.');
+          return;
+        }
+        try {
+          await _handleDeepLink(ctx, uri);
+        } catch (e) {
+          debugPrint('Clipboard import error: $e');
+          MemoixSnackBar.showError('Failed to process recipe link');
+        }
+      },
+    );
   }
 
   void _showError(BuildContext context, String message) {

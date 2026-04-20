@@ -1,17 +1,15 @@
+import 'dart:convert';
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../core/utils/ingredient_parser.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../recipes/models/recipe.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
-import '../models/scratch_pad.dart';
 import '../repository/scratch_pad_repository.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 import 'draft_editor_screen.dart'; // Import the new external screen
 
 /// Scratch Pad screen for quick notes and temporary recipes
@@ -83,7 +81,8 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
         children: [
           // Quick Notes Tab
           notesAsync.when(
-            data: (notes) {
+            data: (pad) {
+              final notes = pad?.quickNotes ?? '';
               if (_notesController.text != notes) {
                 _notesController.text = notes;
               }
@@ -166,9 +165,9 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     final recipe = Recipe()
       ..uuid = const Uuid().v4()
       ..name = draft.name
-      ..course = 'mains' // Default
-      ..ingredients = [] // Populate if you want simple conversion
-      ..directions = draft.directions.split('\n')
+      ..course = 'mains'
+      ..ingredients = []
+      ..directions = (jsonDecode(draft.structuredDirections) as List).cast<String>()
       ..source = RecipeSource.personal;
 
     Navigator.push(
@@ -295,7 +294,7 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.receipt_long, size: 64, color: theme.colorScheme.onSurfaceVariant.withOpacity(0.5)),
+            Icon(Icons.receipt_long, size: 64, color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.5)),
             const SizedBox(height: 16),
             Text('No recipe drafts yet', style: theme.textTheme.titleMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
           ],
@@ -347,7 +346,13 @@ class _RecipeDraftsTabState extends ConsumerState<_RecipeDraftsTab> {
                   : CircleAvatar(child: Icon(Icons.restaurant_menu, color: theme.colorScheme.primary)),
               title: Text(draft.name),
               subtitle: Text(
-                draft.ingredients.isEmpty ? 'No ingredients' : draft.ingredients.split('\n').first,
+                draft.structuredIngredients == '[]' || draft.structuredIngredients.isEmpty
+                    ? 'No ingredients'
+                    : (jsonDecode(draft.structuredIngredients) as List<dynamic>).isEmpty
+                        ? 'No ingredients'
+                        : ((jsonDecode(draft.structuredIngredients) as List<dynamic>).first
+                                as Map<String, dynamic>)['name'] as String? ??
+                            'No ingredients',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),

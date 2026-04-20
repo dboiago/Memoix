@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -15,6 +14,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/schema_migration_service.dart';
 import '../../../core/services/session_index_service.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Formats a Duration as a decimal-aligned receipt time string.
 ///
@@ -196,14 +196,21 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
     final file = File('${dir.path}/Le_Grand_Memoix.pdf');
     await file.writeAsBytes(bytes);
-    await Share.shareXFiles(
-      [XFile(file.path)],
-      subject: 'Le Grand Memoix',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        files: [XFile(file.path)],
+        subject: 'Le Grand Memoix',
+      ));
+    } catch (e) {
+      debugPrint('ClassicsReceiptScreen._saveReceipt error: $e');
+      if (mounted) {
+        MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+      }
+    }
   }
 
   Widget _buildReceiptWidget() {
-    final receiptFont = GoogleFonts.courierPrime();
+    const receiptFont = TextStyle(fontFamily: 'Courier Prime');
     final stageNames = (_receiptData?['stage_names'] as Map?)
             ?.map((k, v) => MapEntry(k as String, v as String)) ??
         {};
@@ -285,7 +292,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                   receiptTime(_stageOrder.fold(
                     Duration.zero,
                     (sum, key) => sum + (durations[key] ?? Duration.zero),
-                  )),
+                  ),),
                   boldStyle,
                 ),
               ],
@@ -316,7 +323,7 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
                       ),
                       maxLines: 1,
                     ),
-                  )
+                  ),
                 ),
               ),
             ],
@@ -357,9 +364,9 @@ class _ClassicsReceiptScreenState extends ConsumerState<ClassicsReceiptScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final receiptFont = GoogleFonts.courierPrime();
+    const receiptFont = TextStyle(fontFamily: 'Courier Prime');
     if (_isLoading) {
-      return Scaffold(
+      return const Scaffold(
         backgroundColor: Colors.white,
         body: Center(
           child: CircularProgressIndicator(

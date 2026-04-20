@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'database/database.dart';
+import 'database/app_database.dart';
 import 'services/integrity_service.dart';
 import '../features/mealplan/models/meal_plan.dart';
 import '../features/statistics/models/cooking_stats.dart';
 import '../features/shopping/models/shopping_list.dart';
 
 /// Shared providers for core services
-final databaseProvider = Provider<Isar>((ref) => MemoixDatabase.instance);
+final databaseProvider = Provider<AppDatabase>((ref) => AppDatabase.instance);
 
 final mealPlanServiceProvider = Provider<MealPlanService>((ref) {
   return MealPlanService(ref.watch(databaseProvider));
@@ -28,6 +27,10 @@ final shoppingListServiceProvider = Provider<ShoppingListService>((ref) {
 final shoppingListsProvider = StreamProvider<List<ShoppingList>>((ref) {
   final service = ref.watch(shoppingListServiceProvider);
   return service.watchAll();
+});
+
+final shoppingItemsProvider = StreamProvider.family<List<ShoppingItem>, int>((ref, listId) {
+  return ref.watch(databaseProvider).shoppingDao.watchItemsForList(listId);
 });
 
 // Theme mode provider with persistence

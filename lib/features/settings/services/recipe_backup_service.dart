@@ -14,7 +14,6 @@ import '../../cheese/models/cheese_entry.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
-import '../../notes/models/scratch_pad.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
@@ -25,6 +24,8 @@ import '../../sandwiches/models/sandwich.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
+import '../../../core/widgets/memoix_snackbar.dart';
 
 /// Service for exporting and importing recipes as JSON backup files
 class RecipeBackupService {
@@ -104,11 +105,17 @@ class RecipeBackupService {
     await file.writeAsString(jsonString);
 
     // Share the file
-    await Share.shareXFiles(
-      [XFile(file.path)],
-      subject: 'Memoix Recipe Backup',
-      text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        files: [XFile(file.path)],
+        subject: 'Memoix Recipe Backup',
+        text: 'Exported ${recipes.length} recipe${recipes.length == 1 ? '' : 's'}',
+      ),
+      );
+    } catch (e) {
+      debugPrint('RecipeBackupService.exportRecipes error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
 
     return file.path;
   }
@@ -193,7 +200,7 @@ class RecipeBackupService {
   /// - Specialized domains: pizzas, sandwiches, smoking, modernist, cellar, cheese
   /// - Scratch pad (quick notes and recipe drafts)
   ///
-  // TODO(release): Remove this method before public release - dev/maintenance only
+  // Dev feature - Used for exporting recipes to be used a Memoix default recipes in the correct format
   Future<int?> exportByCourse() async {
     // On desktop, use folder picker
     if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
@@ -228,11 +235,17 @@ class RecipeBackupService {
 
     // Share all files
     if (files.isNotEmpty) {
-      await Share.shareXFiles(
-        files,
-        subject: 'Memoix Full Backup',
-        text: 'Exported $filesWritten domain files',
-      );
+      try {
+        await SharePlus.instance.share(ShareParams(
+          files: files,
+          subject: 'Memoix Full Backup',
+          text: 'Exported $filesWritten domain files',
+        ),
+        );
+      } catch (e) {
+        debugPrint('RecipeBackupService.exportByCourse error: $e');
+        MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+      }
     }
 
     return filesWritten;
@@ -245,7 +258,7 @@ class RecipeBackupService {
 
     // 1. Export all Recipe courses (including empty ones)
     final recipes = await _recipeRepository.getAllRecipes();
-    final groupedRecipes = groupBy(recipes, (Recipe r) => r.course?.toLowerCase() ?? 'uncategorized');
+    final groupedRecipes = groupBy(recipes, (Recipe r) => r.course.toLowerCase());
     
     // Get all course slugs from defaults
     final allCourseSlugs = Course.defaults
@@ -323,12 +336,12 @@ class RecipeBackupService {
         'imagePath': d.imagePath,
         'serves': d.serves,
         'time': d.time,
-        'ingredients': d.ingredients,
-        'directions': d.directions,
-        'comments': d.comments,
+        'structuredIngredients': d.structuredIngredients,
+        'structuredDirections': d.structuredDirections,
+        'notes': d.notes,
         'createdAt': d.createdAt.toIso8601String(),
         'updatedAt': d.updatedAt.toIso8601String(),
-      }).toList(),
+      },).toList(),
     };
     await _writeJsonFile('$outputDir/scratch.json', scratchData);
     filesWritten++;
@@ -442,14 +455,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final pizza = Pizza.fromJson(json as Map<String, dynamic>);
-        if (pizza.source == PizzaSource.memoix) {
-          pizza.source = PizzaSource.imported;
+        var pizza = pizzaFromJson(json as Map<String, dynamic>);
+        if (pizza.source == PizzaSource.memoix.name) {
+          pizza = pizza.copyWith(source: PizzaSource.imported.name);
         }
         final existing = await _pizzaRepository.getPizzaByUuid(pizza.uuid);
         if (existing != null) {
-          pizza.version = existing.version + 1;
-          pizza.id = existing.id;
+          pizza = pizza.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _pizzaRepository.savePizza(pizza);
         imported++;
@@ -465,14 +480,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final sandwich = Sandwich.fromJson(json as Map<String, dynamic>);
-        if (sandwich.source == SandwichSource.memoix) {
-          sandwich.source = SandwichSource.imported;
+        var sandwich = sandwichFromJson(json as Map<String, dynamic>);
+        if (sandwich.source == SandwichSource.memoix.name) {
+          sandwich = sandwich.copyWith(source: SandwichSource.imported.name);
         }
         final existing = await _sandwichRepository.getSandwichByUuid(sandwich.uuid);
         if (existing != null) {
-          sandwich.version = existing.version + 1;
-          sandwich.id = existing.id;
+          sandwich = sandwich.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _sandwichRepository.saveSandwich(sandwich);
         imported++;
@@ -488,13 +505,13 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final recipe = SmokingRecipe.fromJson(json as Map<String, dynamic>);
-        if (recipe.source == SmokingSource.memoix) {
-          recipe.source = SmokingSource.imported;
+        var recipe = smokingRecipeFromJson(json as Map<String, dynamic>);
+        if (recipe.source == SmokingSource.memoix.name) {
+          recipe = recipe.copyWith(source: SmokingSource.imported.name);
         }
         final existing = await _smokingRepository.getRecipeByUuid(recipe.uuid);
         if (existing != null) {
-          recipe.id = existing.id;
+          recipe = recipe.copyWith(id: existing.id);
         }
         await _smokingRepository.saveRecipe(recipe);
         imported++;
@@ -532,14 +549,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final entry = CellarEntry.fromJson(json as Map<String, dynamic>);
-        if (entry.source == CellarSource.personal) {
-          entry.source = CellarSource.imported;
+        var entry = cellarEntryFromJson(json as Map<String, dynamic>);
+        if (entry.source == CellarSource.personal.name) {
+          entry = entry.copyWith(source: CellarSource.imported.name);
         }
         final existing = await _cellarRepository.getEntryByUuid(entry.uuid);
         if (existing != null) {
-          entry.version = existing.version + 1;
-          entry.id = existing.id;
+          entry = entry.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _cellarRepository.saveEntry(entry);
         imported++;
@@ -555,14 +574,16 @@ class RecipeBackupService {
     int imported = 0;
     for (final json in jsonList) {
       try {
-        final entry = CheeseEntry.fromJson(json as Map<String, dynamic>);
-        if (entry.source == CheeseSource.personal) {
-          entry.source = CheeseSource.imported;
+        var entry = cheeseEntryFromJson(json as Map<String, dynamic>);
+        if (entry.source == CheeseSource.personal.name) {
+          entry = entry.copyWith(source: CheeseSource.imported.name);
         }
         final existing = await _cheeseRepository.getEntryByUuid(entry.uuid);
         if (existing != null) {
-          entry.version = existing.version + 1;
-          entry.id = existing.id;
+          entry = entry.copyWith(
+            version: existing.version + 1,
+            id: existing.id,
+          );
         }
         await _cheeseRepository.saveEntry(entry);
         imported++;
@@ -589,22 +610,29 @@ class RecipeBackupService {
     if (drafts != null) {
       for (final draftJson in drafts) {
         try {
-          final draft = RecipeDraft()
-            ..uuid = draftJson['uuid'] as String
-            ..name = draftJson['name'] as String? ?? ''
-            ..imagePath = draftJson['imagePath'] as String?
-            ..serves = draftJson['serves'] as String?
-            ..time = draftJson['time'] as String?
-            ..ingredients = draftJson['ingredients'] as String? ?? ''
-            ..directions = draftJson['directions'] as String? ?? ''
-            ..comments = draftJson['comments'] as String? ?? '';
-          
-          if (draftJson['createdAt'] != null) {
-            draft.createdAt = DateTime.parse(draftJson['createdAt'] as String);
-          }
-          if (draftJson['updatedAt'] != null) {
-            draft.updatedAt = DateTime.parse(draftJson['updatedAt'] as String);
-          }
+          final draft = RecipeDraft(
+            id: 0,
+            uuid: draftJson['uuid'] as String? ?? '',
+            name: draftJson['name'] as String? ?? '',
+            imagePath: draftJson['imagePath'] as String?,
+            serves: draftJson['serves'] as String?,
+            time: draftJson['time'] as String?,
+            course: draftJson['course'] as String? ?? 'mains',
+            structuredIngredients:
+                draftJson['structuredIngredients'] as String? ?? '[]',
+            structuredDirections:
+                draftJson['structuredDirections'] as String? ?? '[]',
+            legacyIngredients: null,
+            legacyDirections: null,
+            notes: draftJson['notes'] as String? ?? '',
+            stepImages: '[]',
+            stepImageMap: '[]',
+            pairedRecipeIds: '[]',
+            createdAt: draftJson['createdAt'] != null
+                ? DateTime.parse(draftJson['createdAt'] as String)
+                : DateTime.now(),
+            updatedAt: DateTime.now(),
+          );
           
           await _scratchPadRepository.updateDraft(draft);
           imported++;

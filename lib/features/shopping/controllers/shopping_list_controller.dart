@@ -1,4 +1,3 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:memoix/core/utils/amount_utils.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
 import 'package:memoix/core/utils/text_normalizer.dart';
@@ -21,7 +20,7 @@ class ShoppingListController {
   /// Returns a Map where keys are categories (sorted by store flow)
   /// and values are the list of items in that category (sorted alphabetically).
   Future<Map<IngredientCategory, List<ShoppingListItem>>> generateShoppingList(
-      List<Recipe> recipes) async {
+      List<Recipe> recipes,) async {
     
     // Intermediate storage for aggregation
     // Key: Canonical Name (e.g., "yellow onion")
@@ -46,7 +45,7 @@ class ShoppingListController {
           canonical: canonical,
           displayName: TextNormalizer.cleanName(canonical),
           category: _ingredientService.classify(ingredient.name),
-        ));
+        ),);
 
         // Fix S2-A: recover units embedded in the amount string when the unit
         // field is empty — a common import artifact (e.g. { amount: "1 C", unit: "" }).
@@ -272,7 +271,7 @@ class ShoppingListController {
   /// Metric targets escalate g → kg and ml → L at 1 000 units.
   /// Imperial volume prefers the largest unit present to avoid tiny fractions.
   static ({String unit, double qty})? _tryReduceUnits(
-      Map<String, double> unitSums) {
+      Map<String, double> unitSums,) {
     if (unitSums.length <= 1) return null;
 
     // Remove empty-string key before unit reduction — unitless quantities
@@ -309,7 +308,7 @@ class ShoppingListController {
       double total = 0.0;
       for (final entry in effectiveSums.entries) {
         final converted = MeasurementConverter.convertVolume(
-            entry.value, entry.key, targetUnit);
+            entry.value, entry.key, targetUnit,);
         if (converted == null) return null;
         total += converted;
       }
@@ -344,7 +343,7 @@ class ShoppingListController {
       double total = 0.0;
       for (final entry in effectiveSums.entries) {
         final converted = MeasurementConverter.convertWeight(
-            entry.value, entry.key, targetUnit);
+            entry.value, entry.key, targetUnit,);
         if (converted == null) return null;
         total += converted;
       }
@@ -392,7 +391,7 @@ class _TermBuilder {
       preparation: preparation,
       recipeName: recipeName,
       displayOverride: displayOverride,
-    ));
+    ),);
     references.add(recipeName);
     // Fix S1-B: record first-seen display unit per bucket so that the original
     // casing (e.g. "C" not "c") is restored when building the final item.

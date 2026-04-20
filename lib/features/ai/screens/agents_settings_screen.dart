@@ -24,7 +24,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
           const SizedBox(height: 8),
 
           // Auto-select section
-          _SectionHeader(title: 'Behavior'),
+          const _SectionHeader(title: 'Behavior'),
           SwitchListTile(
             secondary: const Icon(Icons.auto_awesome),
             title: const Text('Auto-select Provider'),
@@ -55,7 +55,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
           const Divider(),
 
           // Providers section
-          _SectionHeader(title: 'Providers'),
+          const _SectionHeader(title: 'Providers'),
 
           for (final provider in AiProvider.values) ...[
             _ProviderTile(
@@ -117,14 +117,20 @@ class AgentsSettingsScreen extends ConsumerWidget {
       context: context,
       builder: (ctx) => SimpleDialog(
         title: const Text('Preferred Provider'),
-        children: AiProvider.values.map((p) {
-          return RadioListTile<AiProvider>(
-            title: Text(_providerLabel(p)),
-            value: p,
+        children: [
+          RadioGroup<AiProvider>(
             groupValue: settings.preferredProvider,
             onChanged: (v) => Navigator.pop(ctx, v),
-          );
-        }).toList(),
+            child: Column(
+              children: AiProvider.values.map((p) {
+                return RadioListTile<AiProvider>(
+                  title: Text(_providerLabel(p)),
+                  value: p,
+                );
+              }).toList(),
+            ),
+          ),
+        ],
       ),
     );
 
@@ -287,7 +293,7 @@ class _ModelSelector extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 56, right: 16, bottom: 8),
       child: DropdownButtonFormField<String>(
-        value: models.contains(current) ? current : models.first,
+        initialValue: models.contains(current) ? current : models.first,
         decoration: InputDecoration(
           labelText: 'Model',
           isDense: true,
@@ -303,7 +309,7 @@ class _ModelSelector extends StatelessWidget {
             .map((m) => DropdownMenuItem(
                   value: m,
                   child: Text(m, overflow: TextOverflow.ellipsis),
-                ))
+                ),)
             .toList(),
         onChanged: (value) {
           if (value == null) return;

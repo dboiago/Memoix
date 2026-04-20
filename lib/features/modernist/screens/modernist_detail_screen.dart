@@ -124,6 +124,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, recipe),
+            onComparePressed: recipe.type == ModernistType.concept
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true,)
+                : null,
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
@@ -240,7 +244,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           shape: BoxShape.circle,
         ),
       ),
-    ));
+    ),);
     metadataItems.add(TextSpan(text: recipe.type.displayName));
     
     // Add technique category with spacing
@@ -249,7 +253,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.science_outlined, size: 12, color: textColor),
-      ));
+      ),);
       metadataItems.add(TextSpan(text: ' ${recipe.technique!}'));
     }
     
@@ -261,7 +265,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.people, size: 12, color: textColor),
-        ));
+        ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
     }
@@ -274,7 +278,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         metadataItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Icon(Icons.schedule, size: 12, color: textColor),
-        ));
+        ),);
         metadataItems.add(TextSpan(text: ' $normalized'));
       }
     }
@@ -285,7 +289,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
       metadataItems.add(WidgetSpan(
         alignment: PlaceholderAlignment.middle,
         child: Icon(Icons.signal_cellular_alt, size: 12, color: textColor),
-      ));
+      ),);
       metadataItems.add(TextSpan(text: ' ${recipe.difficulty!}'));
     }
     
@@ -339,7 +343,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                         Text(
                           '•',
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.6),
+                            color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
                           ),
                         ),
                         const SizedBox(width: 4),
@@ -350,7 +354,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                           ),
                         ),
                       ],
-                    )).toList(),
+                    ),).toList(),
                   ),
                 ),
               ),
@@ -430,6 +434,10 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, recipe),
+            onComparePressed: recipe.type == ModernistType.concept
+                ? () => AppRoutes.toRecipeComparison(context,
+                      prefilledRecipe: recipe.toRecipe(), resetState: true,)
+                : null,
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
@@ -469,7 +477,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                             backgroundColor: theme.colorScheme.surfaceContainerHighest,
                             labelStyle: TextStyle(color: theme.colorScheme.onSurface),
                             visualDensity: VisualDensity.compact,
-                          )).toList(),
+                          ),).toList(),
                         ),
                       ],
                     ),
@@ -718,7 +726,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                     style: TextStyle(
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                       fontWeight: FontWeight.w500,
                     ),
@@ -731,7 +739,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                       style: TextStyle(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                             : theme.colorScheme.onSurfaceVariant,
                       ),
                     ),
@@ -743,7 +751,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                       style: TextStyle(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                             : theme.colorScheme.primary,
                         fontStyle: FontStyle.italic,
                       ),
@@ -796,9 +804,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                 return;
               }
               await HapticFeedback.mediumImpact();
-              if (context.mounted) {
-                _showTimerBottomSheet(context, ref, duration, direction);
-              }
+              if (!mounted) return;
+              _showTimerBottomSheet(context, ref, duration, direction);
             },
             child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
@@ -810,8 +817,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                   height: 28,
                   decoration: BoxDecoration(
                     color: isCompleted
-                        ? theme.colorScheme.secondary.withOpacity(0.2)
-                        : theme.colorScheme.secondary.withOpacity(0.15),
+                        ? theme.colorScheme.secondary.withValues(alpha: 0.2)
+                        : theme.colorScheme.secondary.withValues(alpha: 0.15),
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: theme.colorScheme.secondary,
@@ -927,7 +934,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
                             child: Container(
                               padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
+                                color: Colors.black.withValues(alpha: 0.5),
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: const Icon(
@@ -1011,7 +1018,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -1116,6 +1123,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         );
         if (confirm == true && mounted) {
           await ref.read(modernistRepositoryProvider).delete(recipe.id);
+          if (!mounted) return;
           Navigator.pop(context);
         }
         break;

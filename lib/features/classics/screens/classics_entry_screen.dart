@@ -82,7 +82,6 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   Future<void> _loadArchiveEntry() async {
     try {
       final json = await IntegrityService.resolveArchiveEntry();
-      print('[ClassicsEntry] archive json: ${json == null ? 'null' : 'non-null, name=${json['name']}'}');
       if (json != null && json.isNotEmpty) {
         final recipe = Recipe.fromJson(_sanitizeArchiveJson(json));
 
@@ -116,7 +115,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
           if (ingredient.section != null &&
               ingredient.section != lastSection) {
             _addIngredientRow(
-                name: ingredient.section!, isSection: true);
+                name: ingredient.section!, isSection: true,);
             lastSection = ingredient.section;
           }
 
@@ -251,7 +250,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     const validSlugs = {
       'apps', 'soup', 'mains', 'vegn', 'sides', 'salad', 'desserts',
       'brunch', 'drinks', 'breads', 'sauces', 'rubs', 'pickles',
-      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch'
+      'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch',
     };
     return validSlugs.contains(mapped) ? mapped : 'mains';
   }
@@ -269,7 +268,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
       notesController: TextEditingController(text: notes),
       bakerPercentController: TextEditingController(text: bakerPercent),
       isSection: isSection,
-    ));
+    ),);
   }
 
   void _addSectionHeader() {
@@ -279,13 +278,13 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
       notesController: TextEditingController(),
       bakerPercentController: TextEditingController(),
       isSection: true,
-    ));
+    ),);
     _ingredientRows.add(_IngredientRow(
       nameController: TextEditingController(),
       amountController: TextEditingController(),
       notesController: TextEditingController(),
       bakerPercentController: TextEditingController(),
-    ));
+    ),);
     setState(() {});
   }
 
@@ -474,14 +473,14 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
         if (mounted) {
           Navigator.of(context).push(
             MaterialPageRoute(
-                builder: (_) => const ClassicsReceiptScreen()),
+                builder: (_) => const ClassicsReceiptScreen(),),
           );
         }
       } else {
         await _onValidationFailed();
       }
     } finally {
-      setState(() => _isSaving = false);
+      if (mounted) setState(() => _isSaving = false);
     }
   }
 
@@ -588,7 +587,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
             const SizedBox(height: 16),
 
             DropdownButtonFormField<String>(
-              value: _selectedCourse,
+              initialValue: _selectedCourse,
               decoration: const InputDecoration(
                 labelText: 'Course *',
               ),
@@ -600,24 +599,24 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                 DropdownMenuItem(value: 'sides', child: Text('Sides')),
                 DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(
-                    value: 'desserts', child: Text('Desserts')),
+                    value: 'desserts', child: Text('Desserts'),),
                 DropdownMenuItem(value: 'brunch', child: Text('Brunch')),
                 DropdownMenuItem(value: 'drinks', child: Text('Drinks')),
                 DropdownMenuItem(value: 'breads', child: Text('Breads')),
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
                 DropdownMenuItem(value: 'rubs', child: Text('Rubs')),
                 DropdownMenuItem(
-                    value: 'pickles', child: Text('Pickles')),
+                    value: 'pickles', child: Text('Pickles'),),
                 DropdownMenuItem(
-                    value: 'modernist', child: Text('Modernist')),
+                    value: 'modernist', child: Text('Modernist'),),
                 DropdownMenuItem(value: 'pizzas', child: Text('Pizzas')),
                 DropdownMenuItem(
-                    value: 'sandwiches', child: Text('Sandwiches')),
+                    value: 'sandwiches', child: Text('Sandwiches'),),
                 DropdownMenuItem(
-                    value: 'smoking', child: Text('Smoking')),
+                    value: 'smoking', child: Text('Smoking'),),
                 DropdownMenuItem(value: 'cheese', child: Text('Cheese')),
                 DropdownMenuItem(
-                    value: 'scratch', child: Text('Scratch')),
+                    value: 'scratch', child: Text('Scratch'),),
               ],
               onChanged: (value) {
                 if (value != null) {
@@ -638,7 +637,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     children: [
                       TextField(
                         controller: TextEditingController(
-                            text: _selectedCuisine ?? ''),
+                            text: _selectedCuisine ?? '',),
                         decoration: const InputDecoration(
                           labelText: 'Cuisine',
                           hintText: 'Select cuisine (optional)',
@@ -669,7 +668,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Expanded(
                       child: TextField(
                         controller: TextEditingController(
-                            text: _selectedCuisine ?? ''),
+                            text: _selectedCuisine ?? '',),
                         decoration: const InputDecoration(
                           labelText: 'Cuisine',
                           hintText: 'Select cuisine (optional)',
@@ -765,7 +764,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                         _selectedCourse == 'desserts')
                       TextButton.icon(
                         onPressed: () => setState(
-                            () => _showBakerPercent = !_showBakerPercent),
+                            () => _showBakerPercent = !_showBakerPercent,),
                         icon: Icon(
                           _showBakerPercent
                               ? Icons.percent
@@ -852,9 +851,9 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                   decoration: BoxDecoration(
                     border: Border.all(
                         color:
-                            theme.colorScheme.outline.withOpacity(0.3)),
+                            theme.colorScheme.outline.withValues(alpha: 0.3),),
                     borderRadius: const BorderRadius.vertical(
-                        bottom: Radius.circular(8)),
+                        bottom: Radius.circular(8),),
                   ),
                   child: ReorderableListView.builder(
                     shrinkWrap: true,
@@ -951,7 +950,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               },
               itemBuilder: (context, index) {
                 return _buildDirectionRowWidget(index, theme,
-                    key: ValueKey(_directionRows[index]));
+                    key: ValueKey(_directionRows[index]),);
               },
             ),
 
@@ -989,7 +988,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               ),
               subtitle: _caloriesController.text.isNotEmpty
                   ? Text('${_caloriesController.text} cal',
-                      style: theme.textTheme.bodySmall)
+                      style: theme.textTheme.bodySmall,)
                   : null,
               initiallyExpanded: _caloriesController.text.isNotEmpty,
               tilePadding: EdgeInsets.zero,
@@ -1020,7 +1019,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                         ),
                         keyboardType:
                             const TextInputType.numberWithOptions(
-                                decimal: true),
+                                decimal: true,),
                       ),
                     ),
                   ],
@@ -1037,7 +1036,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                         ),
                         keyboardType:
                             const TextInputType.numberWithOptions(
-                                decimal: true),
+                                decimal: true,),
                       ),
                     ),
                     const SizedBox(width: 12),
@@ -1050,7 +1049,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                         ),
                         keyboardType:
                             const TextInputType.numberWithOptions(
-                                decimal: true),
+                                decimal: true,),
                       ),
                     ),
                   ],
@@ -1078,7 +1077,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   // ---------------------------------------------------------------------------
 
   Widget _buildIngredientRowWidget(int index,
-      {bool hasBakerPercent = false, Key? key}) {
+      {bool hasBakerPercent = false, Key? key,}) {
     final theme = Theme.of(context);
     final row = _ingredientRows[index];
     final isLast = index == _ingredientRows.length - 1;
@@ -1088,13 +1087,13 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
         key: key,
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: theme.colorScheme.primaryContainer.withOpacity(0.3),
+          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
           border: isLast
               ? null
               : Border(
                   bottom: BorderSide(
                       color:
-                          theme.colorScheme.outline.withOpacity(0.2))),
+                          theme.colorScheme.outline.withValues(alpha: 0.2),),),
         ),
         child: Row(
           children: [
@@ -1111,7 +1110,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               ),
             ),
             Icon(Icons.label_outline,
-                size: 18, color: theme.colorScheme.primary),
+                size: 18, color: theme.colorScheme.primary,),
             const SizedBox(width: 8),
             Expanded(
               child: TextField(
@@ -1119,7 +1118,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                 decoration: InputDecoration(
                   isDense: true,
                   contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 8, vertical: 10),
+                      horizontal: 8, vertical: 10,),
                   border: const OutlineInputBorder(),
                   hintText: 'Section name (e.g., For the Glaze)',
                   hintStyle: TextStyle(
@@ -1150,7 +1149,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Icon(Icons.swap_horiz, size: 18),
                     SizedBox(width: 8),
                     Text('Convert to ingredient'),
-                  ]),
+                  ],),
                 ),
                 const PopupMenuItem(
                   value: 'insert_ingredient_above',
@@ -1158,7 +1157,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Icon(Icons.vertical_align_top, size: 18),
                     SizedBox(width: 8),
                     Text('Insert ingredient above'),
-                  ]),
+                  ],),
                 ),
                 const PopupMenuItem(
                   value: 'insert_ingredient_below',
@@ -1166,7 +1165,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Icon(Icons.vertical_align_bottom, size: 18),
                     SizedBox(width: 8),
                     Text('Insert ingredient below'),
-                  ]),
+                  ],),
                 ),
                 if (_ingredientRows.length > 1)
                   PopupMenuItem(
@@ -1174,12 +1173,12 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     child: Row(children: [
                       Icon(Icons.delete_outline,
                           size: 18,
-                          color: theme.colorScheme.secondary),
+                          color: theme.colorScheme.secondary,),
                       const SizedBox(width: 8),
                       Text('Delete',
                           style: TextStyle(
-                              color: theme.colorScheme.secondary)),
-                    ]),
+                              color: theme.colorScheme.secondary,),),
+                    ],),
                   ),
               ],
               onSelected: (value) {
@@ -1212,7 +1211,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
             ? null
             : Border(
                 bottom: BorderSide(
-                    color: theme.colorScheme.outline.withOpacity(0.2))),
+                    color: theme.colorScheme.outline.withValues(alpha: 0.2),),),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -1259,7 +1258,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                   decoration: InputDecoration(
                     isDense: true,
                     contentPadding: const EdgeInsets.symmetric(
-                        horizontal: 8, vertical: 10),
+                        horizontal: 8, vertical: 10,),
                     border: const OutlineInputBorder(),
                     hintText: 'Ingredient',
                     hintStyle: TextStyle(
@@ -1294,7 +1293,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                 decoration: InputDecoration(
                   isDense: true,
                   contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 8, vertical: 10),
+                      horizontal: 8, vertical: 10,),
                   border: const OutlineInputBorder(),
                   hintText: '%',
                   hintStyle: TextStyle(
@@ -1316,7 +1315,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 8, vertical: 10),
+                    horizontal: 8, vertical: 10,),
                 border: const OutlineInputBorder(),
                 hintText: 'Amount',
                 hintStyle: TextStyle(
@@ -1358,7 +1357,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                   decoration: InputDecoration(
                     isDense: true,
                     contentPadding: const EdgeInsets.symmetric(
-                        horizontal: 8, vertical: 10),
+                        horizontal: 8, vertical: 10,),
                     border: const OutlineInputBorder(),
                     hintText: 'Notes',
                     hintStyle: TextStyle(
@@ -1388,7 +1387,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Icon(Icons.label_outline, size: 18),
                     SizedBox(width: 8),
                     Text('Convert to section'),
-                  ]),
+                  ],),
                 ),
                 const PopupMenuItem(
                   value: 'insert_section_above',
@@ -1396,7 +1395,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Icon(Icons.vertical_align_top, size: 18),
                     SizedBox(width: 8),
                     Text('Insert section above'),
-                  ]),
+                  ],),
                 ),
                 const PopupMenuItem(
                   value: 'insert_section_below',
@@ -1404,7 +1403,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     Icon(Icons.vertical_align_bottom, size: 18),
                     SizedBox(width: 8),
                     Text('Insert section below'),
-                  ]),
+                  ],),
                 ),
                 if (_ingredientRows.length > 1)
                   PopupMenuItem(
@@ -1412,12 +1411,12 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     child: Row(children: [
                       Icon(Icons.delete_outline,
                           size: 18,
-                          color: theme.colorScheme.secondary),
+                          color: theme.colorScheme.secondary,),
                       const SizedBox(width: 8),
                       Text('Delete',
                           style: TextStyle(
-                              color: theme.colorScheme.secondary)),
-                    ]),
+                              color: theme.colorScheme.secondary,),),
+                    ],),
                   ),
               ],
               onSelected: (value) {
@@ -1459,7 +1458,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
         border:
-            Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+            Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -1480,10 +1479,10 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(
-                      color: theme.colorScheme.secondary, width: 1.5),
+                      color: theme.colorScheme.secondary, width: 1.5,),
                 ),
                 child: Center(
                   child: Text(
@@ -1640,7 +1639,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
                         color:
-                            theme.colorScheme.outline.withOpacity(0.3),
+                            theme.colorScheme.outline.withValues(alpha: 0.3),
                       ),
                     ),
                     child: Column(
@@ -1676,7 +1675,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
                       child: _buildStepImageWidget(_stepImages[index],
-                          width: 100, height: 100),
+                          width: 100, height: 100,),
                     ),
                     if (stepsUsingImage.isNotEmpty)
                       Positioned(
@@ -1684,7 +1683,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                         left: 4,
                         child: Container(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 6, vertical: 2),
+                              horizontal: 6, vertical: 2,),
                           decoration: BoxDecoration(
                             color: theme.colorScheme.primary,
                             borderRadius: BorderRadius.circular(10),
@@ -1703,7 +1702,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                       top: 4,
                       right: 4,
                       child: Material(
-                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        color: theme.colorScheme.surface.withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
                           onTap: () => _removeGalleryImage(index),
@@ -1807,7 +1806,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                       deleteIcon: const Icon(Icons.close, size: 18),
                       onDeleted: () =>
                           setState(() => _garnish.remove(item)),
-                    ))
+                    ),)
                 .toList(),
           ),
         ],
@@ -1873,7 +1872,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                     TextStyle(color: theme.colorScheme.onSurface),
                 visualDensity: VisualDensity.compact,
                 deleteIcon: Icon(Icons.close,
-                    size: 16, color: theme.colorScheme.onSurface),
+                    size: 16, color: theme.colorScheme.onSurface,),
                 onDeleted: () {
                   setState(() => _pairedRecipeIds.remove(uuid));
                 },
@@ -1900,10 +1899,10 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     final allRecipes = allRecipesAsync.valueOrNull ?? [];
     final available = allRecipes
         .where((r) =>
-            !_pairedRecipeIds.contains(r.uuid) && r.supportsPairing)
+            !_pairedRecipeIds.contains(r.uuid) && r.supportsPairing,)
         .toList()
       ..sort(
-          (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+          (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()),);
 
     final theme = Theme.of(context);
     final searchController = TextEditingController();
@@ -1934,10 +1933,10 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                             : available
                                 .where((r) =>
                                     r.name.toLowerCase().contains(
-                                        query.toLowerCase()) ||
+                                        query.toLowerCase(),) ||
                                     (r.cuisine?.toLowerCase().contains(
-                                            query.toLowerCase()) ??
-                                        false))
+                                            query.toLowerCase(),) ??
+                                        false),)
                                 .toList();
                       });
                     },
@@ -1950,7 +1949,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                               'No recipes found',
                               style: TextStyle(
                                   color: theme
-                                      .colorScheme.onSurfaceVariant),
+                                      .colorScheme.onSurfaceVariant,),
                             ),
                           )
                         : ListView.builder(
@@ -1963,12 +1962,12 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
                                   r.course,
                                   style: TextStyle(
                                       color: theme.colorScheme
-                                          .onSurfaceVariant),
+                                          .onSurfaceVariant,),
                                 ),
                                 dense: true,
                                 onTap: () {
                                   setState(() =>
-                                      _pairedRecipeIds.add(r.uuid));
+                                      _pairedRecipeIds.add(r.uuid),);
                                   Navigator.pop(ctx);
                                 },
                               );
@@ -2015,7 +2014,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+                color: theme.colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: hasImage
@@ -2129,7 +2128,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   }
 
   Future<void> _pickImageSource(ImageSource source,
-      {bool forHeader = false}) async {
+      {bool forHeader = false,}) async {
     try {
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
@@ -2212,7 +2211,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
   }
 
   Widget _buildStepImageWidget(String imagePath,
-      {double? width, double? height}) {
+      {double? width, double? height,}) {
     if (imagePath.startsWith('http://') ||
         imagePath.startsWith('https://')) {
       return Image.network(
@@ -2358,7 +2357,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
     double size = 20,
   }) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,

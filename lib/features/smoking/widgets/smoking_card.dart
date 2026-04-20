@@ -6,6 +6,7 @@ import '../../../app/theme/colors.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../core/database/app_database.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 
@@ -81,7 +82,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     if (!widget.isCompact) ...[
                       const SizedBox(height: 4),
                       // Different metadata based on type
-                      if (widget.recipe.type == SmokingType.pitNote) 
+                      if (widget.recipe.type == SmokingType.pitNote.name) 
                         _buildPitNoteMetadata(theme)
                       else
                         _buildRecipeMetadata(theme),
@@ -108,7 +109,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () async {
                       await ref
                           .read(smokingRepositoryProvider)
-                          .toggleFavorite(widget.recipe.uuid);
+                          .toggleFavorite(widget.recipe);
                       await processIntegrityResponses(ref);
                     },
                     padding: const EdgeInsets.all(8),
@@ -127,7 +128,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () {
                       ref
                           .read(smokingRepositoryProvider)
-                          .incrementCookCount(widget.recipe.uuid);
+                          .incrementCookCount(widget.recipe);
                       MemoixSnackBar.showLoggedCook(
                         recipeName: widget.recipe.name,
                         onViewStats: () => AppRoutes.toStatistics(context),

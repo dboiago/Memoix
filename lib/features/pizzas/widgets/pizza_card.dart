@@ -4,6 +4,9 @@ import '../../../app/routes/router.dart';
 import '../../../app/theme/colors.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import 'dart:convert';
+
+import '../../../core/database/app_database.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
 
@@ -84,14 +87,14 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                           Text(
                             '\u2022',
                             style: TextStyle(
-                              color: MemoixColors.forPizzaBaseDot(widget.pizza.base.name),
+                              color: MemoixColors.forPizzaBaseDot(widget.pizza.base),
                               fontSize: 16,
                             ),
                           ),
                           const SizedBox(width: 6),
                           Flexible(
                             child: Text(
-                              widget.pizza.base.displayName,
+                              PizzaBaseExtension.fromString(widget.pizza.base).displayName,
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),
@@ -154,9 +157,9 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
   }
 
   Widget _buildIngredientsSummary(ThemeData theme) {
-    final cheeseCount = widget.pizza.cheeses.length;
-    final proteinCount = widget.pizza.proteins.length;
-    final vegetableCount = widget.pizza.vegetables.length;
+    final cheeseCount = (jsonDecode(widget.pizza.cheeses) as List).length;
+    final proteinCount = (jsonDecode(widget.pizza.proteins) as List).length;
+    final vegetableCount = (jsonDecode(widget.pizza.vegetables) as List).length;
 
     return Row(
       children: [

@@ -4,7 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/theme/colors.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../../core/services/integrity_service.dart';
-import '../models/cellar_entry.dart';
+import '../../../core/database/app_database.dart';
+import '../../../shared/widgets/memoix_card_shell.dart';
 import '../repository/cellar_repository.dart';
 
 /// Cellar entry card widget for list display
@@ -25,39 +26,14 @@ class CellarCard extends ConsumerStatefulWidget {
 }
 
 class _CellarCardState extends ConsumerState<CellarCard> {
-  bool _hovered = false;
-  bool _pressed = false;
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return Card(
-      elevation: 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-        side: BorderSide(
-          color: (_hovered || _pressed)
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.12),
-          width: (_hovered || _pressed) ? 1.5 : 1.0,
-        ),
-      ),
-      color: theme.cardTheme.color ?? theme.colorScheme.surface,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(12),
-        onTap: widget.onTap,
-        onHover: (h) => setState(() => _hovered = h),
-        onHighlightChanged: (p) => setState(() => _pressed = p),
-        splashColor: Colors.transparent,
-        hoverColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        child: Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 12,
-            vertical: widget.isCompact ? 6 : 10,
-          ),
-          child: Row(
+    return MemoixCardShell(
+      onTap: widget.onTap,
+      isCompact: widget.isCompact,
+      child: Row(
             children: [
               // Entry info
               Expanded(
@@ -91,7 +67,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
                       padding: const EdgeInsets.only(right: 8),
                       child: Chip(
                         label: const Text('Buy'),
-                        backgroundColor: theme.colorScheme.secondary.withOpacity(0.15),
+                        backgroundColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
                         labelStyle: TextStyle(color: theme.colorScheme.secondary),
                         side: BorderSide(color: theme.colorScheme.secondary),
                         visualDensity: VisualDensity.compact,
@@ -119,9 +95,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
               ),
             ],
           ),
-        ),
-      ),
-    );
+        );
   }
 
   Widget _buildMetadataRow(ThemeData theme) {

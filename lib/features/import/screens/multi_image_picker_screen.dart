@@ -157,7 +157,7 @@ class _MultiImagePickerScreenState extends State<MultiImagePickerScreen> {
                           Icon(
                             Icons.image_outlined,
                             size: 64,
-                            color: theme.colorScheme.outline.withOpacity(0.5),
+                            color: theme.colorScheme.outline.withValues(alpha: 0.5),
                           ),
                           const SizedBox(height: 16),
                           Text(

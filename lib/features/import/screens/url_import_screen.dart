@@ -9,6 +9,7 @@ import '../../../core/widgets/memoix_snackbar.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../pizzas/screens/pizza_edit_screen.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
+import '../../sharing/services/share_service.dart';
 import '../../smoking/screens/smoking_edit_screen.dart';
 import 'import_review_screen.dart';
 
@@ -102,18 +103,18 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                         Icon(Icons.link, color: theme.colorScheme.primary),
                         const SizedBox(width: 8),
                         Text(
-                          'Import from Website',
+                          'Import from URL or Message',
                           style: theme.textTheme.titleMedium,
                         ),
                       ],
                     ),
                     const SizedBox(height: 12),
                     const Text(
-                      'Paste a URL from a recipe website and we\'ll try to extract the recipe details automatically.',
+                      'Paste a URL, Memoix link, or an entire shared message - the app will extract the link automatically.',
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Works best with sites that use structured recipe data.',
+                      'Web imports work best with structured recipe data.',
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: theme.colorScheme.outline,
                       ),
@@ -128,8 +129,8 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
             TextField(
               controller: _urlController,
               decoration: InputDecoration(
-                labelText: 'Recipe URL',
-                hintText: 'https://example.com/recipe/...',
+                labelText: 'URL or Message',
+                hintText: 'Paste link or shared message here...',
                 prefixIcon: const Icon(Icons.link),
                 border: const OutlineInputBorder(),
                 suffixIcon: _urlController.text.isNotEmpty
@@ -142,7 +143,9 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                       )
                     : null,
               ),
-              keyboardType: TextInputType.url,
+              keyboardType: TextInputType.multiline,
+              minLines: 1,
+              maxLines: 5,
               autocorrect: false,
               onChanged: (_) => setState(() {}),
             ),
@@ -176,7 +179,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                         Icon(
                           Icons.copy,
                           size: 18,
-                          color: theme.colorScheme.onErrorContainer.withOpacity(0.7),
+                          color: theme.colorScheme.onErrorContainer.withValues(alpha: 0.7),
                         ),
                       ],
                     ),
@@ -223,15 +226,82 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
     );
   }
 
-  Future<void> _importFromUrl() async {
-    final url = _urlController.text.trim();
-    if (url.isEmpty) return;
-
-    // Basic URL validation
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      setState(() => _errorMessage = 'Please enter a valid URL starting with http:// or https://');
+  Future<void> _importFromMemoixLink(String link) async {
+    // SECURITY: Enforce QR/deep link max payload size (per AGENTS.md: 4,096 chars)
+    if (link.length > 4096) {
+      setState(() => _errorMessage = 'Memoix link is too long to be valid (max 4,096 characters).');
       return;
     }
+
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      final shareService = ref.read(shareServiceProvider);
+      final recipe = shareService.parseShareLink(link);
+
+      if (!mounted) return;
+
+      if (recipe == null) {
+        setState(() {
+          _isLoading = false;
+          _errorMessage = 'Could not decode Memoix link. It may be corrupt or from an incompatible version.';
+        });
+        return;
+      }
+
+      // Validate content before navigating (per AGENTS.md recipe validation)
+      if (recipe.name.trim().isEmpty && recipe.ingredients.isEmpty && recipe.directions.isEmpty) {
+        setState(() {
+          _isLoading = false;
+          _errorMessage = 'The Memoix link does not contain a valid recipe.';
+        });
+        return;
+      }
+
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (_) => RecipeEditScreen(importedRecipe: recipe),
+        ),
+      );
+
+      if (mounted) setState(() => _isLoading = false);
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+          _errorMessage = 'Failed to decode Memoix link: $e';
+        });
+      }
+    }
+  }
+
+  Future<void> _importFromUrl() async {
+    final rawInput = _urlController.text.trim();
+    if (rawInput.isEmpty) return;
+
+    // SECURITY: Enforce 4,096-character limit on raw input before any processing
+    if (rawInput.length > 4096) {
+      setState(() => _errorMessage = 'Input is too long (max 4,096 characters). Please paste just the link.');
+      return;
+    }
+
+    // First: extract a Memoix proprietary deep link — do NOT attempt web scraping
+    final memoixMatch = RegExp(r'(memoix://\S+)').firstMatch(rawInput);
+    if (memoixMatch != null) {
+      await _importFromMemoixLink(memoixMatch.group(1)!);
+      return;
+    }
+
+    // Second: extract an HTTP/HTTPS web URL from the raw input
+    final httpMatch = RegExp(r'(https?://\S+)').firstMatch(rawInput);
+    if (httpMatch == null) {
+      setState(() => _errorMessage = 'Could not find a valid recipe link in the pasted text.');
+      return;
+    }
+    final url = httpMatch.group(1)!;
 
     setState(() {
       _isLoading = true;

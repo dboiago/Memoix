@@ -4,71 +4,97 @@
   <img src="assets/images/Memoix-logo-mauve-2000.png" alt="Memoix Logo" width="200">
 </p>
 
-Memoix is a recipe and culinary reference app for people who cook seriously.
+Memoix is an offline-first recipe and culinary reference app built for real cooking
 
-It prioritizes speed, clarity, and flexibility over gamification or beginner scaffolding. Recipes, techniques, logs, and notes live side-by-side, with support for workflows that don't fit neatly into "ingredients + steps".
-
-This project started as a personal tool and is evolving into something others can use and extend.
+It prioritizes speed, clarity, and flexibility over structure, guidance, or engagement mechanics. Recipes, techniques, logs, and notes live side-by-side to reflect how cooking actually happens.
 
 ---
 
-## What Memoix Is (and Isn’t)
+## What Memoix Is (and Isn't)
 
 Memoix is built for:
 
-- Professional cooks
+- Professional cooks  
 - Serious home cooks
-- People who care about *how* and *why* something is made
 
 It intentionally avoids:
 
-- Difficulty ratings
-- Social feeds
-- Engagement mechanics
+- Social features  
+- Ratings, reviews, or discovery systems  
 - Forced structure where it doesn't belong
 
-Some sections are recipes. Others are reference logs, technique notes, or memory aids. That distinction is deliberate.
+Some entries are complete recipes. Others are reference logs, technique notes, or working records. That distinction is deliberate.
 
-Memoix does not rely on AI to function.
-AI features exist only as optional tools when a human cook chooses to use them.
+Memoix does not rely on AI as part of the product surface. It is available only as an optional tool, invoked explicitly by the user.
 
 ---
 
 ## Core Features
 
 **Flexible recipe model**  
-Supports conventional recipes as well as non-traditional formats: 
+Supports conventional recipes as well as formats that don’t map cleanly to ingredients + steps
 
-- Smoking Notes
-- Pizza Compositions
-- Modernist Techniques
-- Personal Shorthand
+- Smoking notes  
+- Pizza and sandwich compositions  
+- Modernist techniques and process notes  
+- Personal notes and partial records  
 
-**OCR import**  
-Capture recipes from photos of books, notebooks, or printed pages.
+**Import tools**
 
-**URL import**  
-Import recipes from websites and normalize them into Memoix's data model.
+- OCR for books, notebooks, and printed material
+- URL import for web recipes
+- QR code and deep link import (`memoix://` scheme)
+- Optional AI-assisted import for difficult formats (requires user-provided API key)
 
-**AI import (optional)**  
-For recipes that OCR cannot reliably parse (such as complex cookbook layouts), Memoix can optionally use an AI agent provided by the user to import the recipe.
+**Cooking views**  
 
-This requires supplying your own API key and is entirely opt-in.
+- Ingredients and directions shown side-by-side
+- Step state tracking  
+- Direction-triggered timers  
+- Multiple layouts depending on context  
 
-**Side-by-side cooking view**  
-Ingredients and directions displayed together for hands-free use.
+**Ingredient handling**  
 
-**Cooking utilities**
-Small tools designed for real kitchen use:
-- Direction-based quick timers
-- Dynamic ingredient scaling for adjusting serving sizes
-- Ingredient reference (optional) using user provided AI to provide details, alternate names and practical substitutions
+- Normalization and parsing at import  
+- In-session scaling based on serving size
+- Optional AI-backed reference and substitution lookup
 
-**Offline-first**  
-Local database. No account required. No cloud dependency.
+**Reference layers**  
+Not everything is a recipe:
 
-**Reference logs**  
-Dedicated sections for things that aren't recipes (cheese notes, cellar inventory, etc.).
+- Cheese and cellar logs  
+- Technique notes  
+- Process-specific records
+
+**Kitchen tools**  
+
+- Standalone kitchen timer
+- Measurement converter
+- Recipe comparison
+- Shopping lists
+- Meal planning
+- Cooking logs and recipe statistics
+
+---
+
+## Data Model and Storage
+
+Memoix is fully functional without a network connection.
+
+- Local-first SQLite database (Drift)  
+- Relational structure with explicit query layers
+- No account required  
+- No dependency on external services  
+
+Data remains complete and usable on-device at all times.
+
+### Backup and Sync
+
+Backup is user-controlled and optional:
+
+- Local device storage (default)  
+- Google Drive or OneDrive integration (one provider at a time)
+- Personal and shared backup locations supported  
 
 ---
 
@@ -87,39 +113,25 @@ Dedicated sections for things that aren't recipes (cheese notes, cellar inventor
 
 ---
 
-## Designed for Real Cooking
-
-Memoix includes a number of small behaviors intended to reduce friction during actual cooking and reference use.
-
-- Recipe steps can be marked as completed to help you keep your place
-- Recipe directions can start timers directly from the directions
-- Recipes can be scaled dynamically to adjust serving sizes
-- Different cuisines expose different configuration options where relevant
-- Ingredient references and substitutions can be looked up without leaving the recipe
-- Recipes can be viewed in multiple layouts depending on context
-- Some sections are not recipes at all, but logs or reference material
-  
----
-
 ## Platform Support
 
 | Platform | Status |
 |----------|--------|
 | Android  | Supported |
 | Windows  | Supported |
-| macOS    | Supported |
-| iOS      | Builds, but untested |
-| Linux    | Planned |
+| macOS    | Builds, untested |
+| iOS      | Builds, untested |
+| Linux    | Unverified |
 
-Built with Flutter. Web is not currently targeted.
+Built with Flutter.
 
 ---
 
 ## Project Status
 
-Memoix is in **active development** and approaching an initial public beta.
+Memoix is in active development and approaching public release.
 
-The core application is functional. Ongoing work is focused on OCR accuracy, URL parsing coverage, and polish.
+Core systems are stable: database layer, import pipelines, and cooking workflows. Current work is focused on import accuracy, edge-case handling, and general refinement.
 
 Expect rough edges.
 
@@ -128,21 +140,25 @@ Expect rough edges.
 ## Architecture
 
 ```
+
 ┌─────────────────────────────────────────────┐
 │                   MEMOIX                    │
 ├─────────────────────────────────────────────┤
-│  Local Collections                          │
+│  Data Model                                 │
 │    Recipes · Techniques · Logs · Reference  │
 │                                             │
-│  Import Layers                              │
-│    OCR · URL parsing                        │
+│  Import Systems                             │
+│    OCR · URL · QR · AI (optional)           │
 │                                             │
-│  Presentation                               │
-│    Cuisine views · Cooking mode layouts     │
+│  Execution                                  │
+│    Cooking views · Timers · Scaling         │
 ├─────────────────────────────────────────────┤
-│  Local Database (Isar) · Offline-first      │
+│  Local Database (SQLite via Drift)          │
+│  State Management (Riverpod)                │
+│  Offline-first · No required services       │
 └─────────────────────────────────────────────┘
-```
+
+````
 
 ---
 
@@ -150,8 +166,8 @@ Expect rough edges.
 
 ### Requirements
 
-- Flutter SDK 3.2+
-- Platform toolchains for your target OS (Android SDK, Xcode, Visual Studio, etc.)
+- Flutter SDK 3.2+  
+- Platform toolchains for your target OS  
 
 ### Setup
 
@@ -161,15 +177,15 @@ cd Memoix
 flutter pub get
 dart run build_runner build
 flutter run
-```
+````
 
 ### Build Targets
 
 ```bash
-flutter build apk      # Android
-flutter build ios      # iOS (requires macOS + Xcode)
-flutter build windows  # Windows
-flutter build macos    # macOS
+flutter build apk
+flutter build ios
+flutter build windows
+flutter build macos
 ```
 
 ---
@@ -179,12 +195,9 @@ flutter build macos    # macOS
 ```
 lib/
   app/          Application shell, routing, theming
-  core/         Database, services, shared logic
+  core/         Database (Drift), DAOs, services
   features/     Feature-scoped UI and state
   shared/       Reusable widgets and utilities
-
-recipes/
-  JSON recipe collections used for sync and reference
 ```
 
 ---
@@ -195,11 +208,11 @@ This project is opinionated and evolving.
 
 If you want to contribute:
 
-- Focus on correctness and restraint
-- Avoid adding features that increase surface area without clear value
-- Read existing patterns before introducing new ones
+* Favour precision over feature breadth
+* Avoid abstraction that obscures behavior
+* Match existing patterns before introducing new ones
 
-Issues and pull requests are welcome, but this is not a generic "recipe app" by design.
+Pull requests are welcome, but additions should align with the existing direction.
 
 ---
 
@@ -211,12 +224,11 @@ PolyForm Noncommercial License 1.0.0. See [LICENSE](LICENSE) for details.
 
 ## Acknowledgements
 
-- [Flutter](https://flutter.dev)
-- [Isar](https://isar.dev)
-- [Google ML Kit](https://developers.google.com/ml-kit) (OCR)
-- [Riverpod](https://riverpod.dev)
+* Flutter
+* Drift (SQLite)
+* Google ML Kit (OCR)
+* Riverpod
 
 ---
-
 
 Built with salt.

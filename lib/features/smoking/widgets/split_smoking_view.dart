@@ -1,9 +1,11 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/database/app_database.dart';
 import '../models/smoking_recipe.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/utils/timer_duration_extractor.dart';
@@ -29,22 +31,6 @@ class SplitSmokingView extends StatelessWidget {
     this.onIngredientLongPress,
   });
 
-  /// Calculate the flex ratio for ingredients column based on screen width.
-  int _getIngredientsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 1; // ~35% on tablet
-  }
-
-  /// Calculate the flex ratio for directions column based on screen width.
-  int _getDirectionsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 2; // ~65% on tablet
-  }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
@@ -63,11 +49,16 @@ class SplitSmokingView extends StatelessWidget {
     // Calculate max split view height (85% of screen, clamped for usability)
     final maxSplitHeight = (screenHeight * 0.85).clamp(400.0, 900.0);
     
+    // Decode JSON fields once for height calculation and rendering
+    final decodedDirections = (jsonDecode(recipe.directions) as List).cast<String>();
+    final decodedStepImages = (jsonDecode(recipe.stepImages) as List).cast<String>();
+
     // Estimate content height based on item counts to avoid dead space
     // For smoking: count seasonings + main item, and directions
-    final ingredientCount = (recipe.item != null ? 1 : 0) + recipe.seasonings.length;
+    final seasoningsCount = (jsonDecode(recipe.seasoningsJson) as List).length;
+    final ingredientCount = (recipe.item != null ? 1 : 0) + seasoningsCount;
     final ingredientHeight = ingredientCount * 50.0 + 80;
-    final directionsHeight = recipe.directions.length * 70.0 + 80;
+    final directionsHeight = decodedDirections.length * 70.0 + 80;
     final estimatedContentHeight = ingredientHeight > directionsHeight ? ingredientHeight : directionsHeight;
     
     // Use the smaller of estimated content or max height, with minimum for usability
@@ -75,7 +66,7 @@ class SplitSmokingView extends StatelessWidget {
     
     // Check for extra content sections
     final hasNotes = recipe.notes != null && recipe.notes!.isNotEmpty;
-    final hasGallery = recipe.stepImages.isNotEmpty;
+    final hasGallery = decodedStepImages.isNotEmpty;
 
     return SingleChildScrollView(
       physics: const ClampingScrollPhysics(),
@@ -99,7 +90,7 @@ class SplitSmokingView extends StatelessWidget {
                     children: [
                       // Ingredients header
                       Expanded(
-                        flex: _getIngredientsFlex(screenWidth),
+                        flex: 1,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -111,7 +102,7 @@ class SplitSmokingView extends StatelessWidget {
                       SizedBox(width: dividerPadding * 2 + 1),
                       // Directions header
                       Expanded(
-                        flex: _getDirectionsFlex(screenWidth),
+                        flex: screenWidth < 600 ? 1 : 2,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -130,7 +121,7 @@ class SplitSmokingView extends StatelessWidget {
                       children: [
                         // Ingredients Column - independently scrollable
                         Expanded(
-                          flex: _getIngredientsFlex(screenWidth),
+                          flex: 1,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
@@ -148,19 +139,19 @@ class SplitSmokingView extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
                           child: Container(
                             width: 1,
-                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                            color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
                           ),
                         ),
 
                         // Directions Column - independently scrollable
                         Expanded(
-                          flex: _getDirectionsFlex(screenWidth),
+                          flex: screenWidth < 600 ? 1 : 2,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
                             ),
                             child: _DirectionsColumn(
-                              directions: recipe.directions,
+                              directions: decodedDirections,
                               recipe: recipe,
                               onScrollToImage: onScrollToImage,
                               isCompact: isCompact,
@@ -244,13 +235,14 @@ class SplitSmokingView extends StatelessWidget {
   }
 
   Widget _buildImageGallery(BuildContext context, SmokingRecipe recipe, ThemeData theme) {
+    final stepImages = (jsonDecode(recipe.stepImages) as List).cast<String>();
     return SizedBox(
       height: 120,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: recipe.stepImages.length,
+        itemCount: stepImages.length,
         itemBuilder: (context, imageIndex) {
-          final imagePath = recipe.stepImages[imageIndex];
+          final imagePath = stepImages[imageIndex];
           return Padding(
             padding: EdgeInsets.only(left: imageIndex == 0 ? 0 : 8),
             child: GestureDetector(
@@ -272,7 +264,7 @@ class SplitSmokingView extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.5),
+                        color: Colors.black.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Icon(
@@ -325,7 +317,7 @@ class SplitSmokingView extends StatelessWidget {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -389,31 +381,49 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     final widgets = <Widget>[];
     final recipe = widget.recipe;
 
-    if (recipe.type == SmokingType.pitNote) {
+    final seasonings = (jsonDecode(recipe.seasoningsJson) as List).map((m) {
+      final map = m as Map<String, dynamic>;
+      return SmokingSeasoning.create(
+        name: map['name'] as String? ?? '',
+        amount: map['amount'] as String?,
+        unit: map['unit'] as String?,
+      );
+    }).toList();
+
+    if (recipe.type == SmokingType.pitNote.name) {
       // Pit Note: show main item and seasonings
       if (recipe.item != null && recipe.item!.isNotEmpty) {
         widgets.add(_buildSectionHeader(theme, 'Main'));
         widgets.add(_buildIngredientRow(context, 0, recipe.item!, ingredientName: recipe.item!));
       }
       
-      if (recipe.seasonings.isNotEmpty) {
+      if (seasonings.isNotEmpty) {
         widgets.add(const SizedBox(height: 12));
         widgets.add(_buildSectionHeader(
           theme, 
-          recipe.seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
-        ));
-        for (var i = 0; i < recipe.seasonings.length; i++) {
+          seasonings.length == 1 ? 'Seasoning' : 'Seasonings',
+        ),);
+        for (var i = 0; i < seasonings.length; i++) {
           widgets.add(_buildIngredientRow(
             context, 
             i + 1, // Offset by 1 for the main item
-            recipe.seasonings[i].displayText,
-            ingredientName: recipe.seasonings[i].name,
-          ));
+            seasonings[i].displayText,
+            ingredientName: seasonings[i].name,
+          ),);
         }
       }
     } else {
       // Recipe type: show full ingredients
-      if (recipe.ingredients.isEmpty) {
+      final ingredients = (jsonDecode(recipe.ingredientsJson) as List).map((m) {
+        final map = m as Map<String, dynamic>;
+        return SmokingSeasoning.create(
+          name: map['name'] as String? ?? '',
+          amount: map['amount'] as String?,
+          unit: map['unit'] as String?,
+        );
+      }).toList();
+
+      if (ingredients.isEmpty) {
         widgets.add(
           Padding(
             padding: const EdgeInsets.all(8),
@@ -427,13 +437,13 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
           ),
         );
       } else {
-        for (var i = 0; i < recipe.ingredients.length; i++) {
+        for (var i = 0; i < ingredients.length; i++) {
           widgets.add(_buildIngredientRow(
             context, 
             i,
-            recipe.ingredients[i].displayText,
-            ingredientName: recipe.ingredients[i].name,
-          ));
+            ingredients[i].displayText,
+            ingredientName: ingredients[i].name,
+          ),);
         }
       }
     }
@@ -513,7 +523,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                   fontSize: widget.isCompact ? 13 : 14,
                   decoration: isChecked ? TextDecoration.lineThrough : null,
                   color: isChecked
-                      ? theme.colorScheme.onSurface.withOpacity(0.5)
+                      ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                       : null,
                 ),
               ),
@@ -580,7 +590,14 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
     final theme = Theme.of(context);
     final step = widget.directions[index];
     final isCompleted = _completedSteps.contains(index);
-    final hasImage = widget.recipe?.getStepImageIndex(index) != null;
+    bool hasImage = false;
+    if (widget.recipe != null) {
+      final imgMap = (jsonDecode(widget.recipe!.stepImageMap) as List).cast<String>();
+      hasImage = imgMap.any((m) {
+        final p = m.split(':');
+        return p.length == 2 && int.tryParse(p[0]) == index;
+      });
+    }
     
     final circleSize = widget.isCompact ? 20.0 : 24.0;
     final circleFontSize = widget.isCompact ? 10.0 : 12.0;
@@ -623,8 +640,8 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                 height: circleSize,
                 decoration: BoxDecoration(
                   color: isCompleted
-                      ? theme.colorScheme.secondary.withOpacity(0.2)
-                      : theme.colorScheme.secondary.withOpacity(0.15),
+                      ? theme.colorScheme.secondary.withValues(alpha: 0.2)
+                      : theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: theme.colorScheme.secondary,
@@ -654,7 +671,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                     fontSize: stepFontSize,
                     decoration: isCompleted ? TextDecoration.lineThrough : null,
                     color: isCompleted
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                         : null,
                   ),
                 ),

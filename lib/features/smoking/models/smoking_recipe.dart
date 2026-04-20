@@ -1,6 +1,7 @@
-import 'package:isar/isar.dart';
 
-part 'smoking_recipe.g.dart';
+import 'dart:convert';
+import '../../../core/database/app_database.dart';
+import '../../recipes/models/recipe.dart' as r;
 
 /// Type of smoking entry
 enum SmokingType {
@@ -154,7 +155,6 @@ enum SmokingSource {
 }
 
 /// Seasoning/rub ingredient for smoking
-@embedded
 class SmokingSeasoning {
   String name = '';
   String? amount;
@@ -182,317 +182,141 @@ class SmokingSeasoning {
   }
 }
 
-/// A smoking recipe entity
-@collection
-class SmokingRecipe {
-  Id id = Isar.autoIncrement;
+/// Decode a SmokingRecipe from a JSON map (for backup import).
+SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
+  String encodeList(dynamic v) =>
+      v is List ? jsonEncode(v) : (v as String? ?? '[]');
+  return SmokingRecipe(
+    id: (json['id'] as num?)?.toInt() ?? 0,
+    uuid: json['uuid']?.toString() ?? '',
+    name: json['name']?.toString() ?? '',
+    course: json['course']?.toString() ?? 'smoking',
+    type: json['type']?.toString() ?? SmokingType.pitNote.name,
+    item: json['item']?.toString(),
+    category: json['category']?.toString(),
+    temperature: json['temperature']?.toString() ?? '',
+    time: json['time']?.toString() ?? '',
+    wood: json['wood']?.toString() ?? '',
+    seasoningsJson: encodeList(json['seasoningsJson'] ?? json['seasonings']),
+    ingredientsJson: encodeList(json['ingredientsJson'] ?? json['ingredients']),
+    serves: json['serves']?.toString(),
+    directions: encodeList(json['directions']),
+    notes: json['notes']?.toString(),
+    headerImage: json['headerImage']?.toString(),
+    stepImages: encodeList(json['stepImages']),
+    stepImageMap: encodeList(json['stepImageMap']),
+    imageUrl: json['imageUrl']?.toString(),
+    isFavorite: json['isFavorite'] as bool? ?? false,
+    cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
+    source: json['source']?.toString() ?? SmokingSource.personal.name,
+    pairedRecipeIds: encodeList(json['pairedRecipeIds']),
+    createdAt: json['createdAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        : json['createdAt'] != null
+            ? DateTime.parse(json['createdAt'].toString())
+            : DateTime.now(),
+    updatedAt: json['updatedAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        : json['updatedAt'] != null
+            ? DateTime.parse(json['updatedAt'].toString())
+            : DateTime.now(),
+  );
+}
 
-  @Index(unique: true, replace: true)
-  late String uuid;
+extension SmokingRecipeX on SmokingRecipe {
+  List<SmokingSeasoning> get seasoningsList =>
+      (jsonDecode(seasoningsJson) as List).map((m) {
+        final map = m as Map<String, dynamic>;
+        return SmokingSeasoning.create(
+          name: map['name']?.toString() ?? '',
+          amount: map['amount']?.toString(),
+          unit: map['unit']?.toString(),
+        );
+      }).toList();
 
-  @Index()
-  late String name;
+  List<String> get directionsList =>
+      (jsonDecode(directions) as List).cast<String>();
 
-  /// Course (e.g., "Mains", "Sides", "Apps")
-  /// Defaults to "smoking" but can be changed
-  @Index()
-  String course = 'smoking';
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'uuid': uuid,
+        'name': name,
+        'course': course,
+        'type': type,
+        'item': item,
+        'category': category,
+        'temperature': temperature,
+        'time': time,
+        'wood': wood,
+        'seasoningsJson': jsonDecode(seasoningsJson),
+        'ingredientsJson': jsonDecode(ingredientsJson),
+        'serves': serves,
+        'directions': jsonDecode(directions),
+        'notes': notes,
+        'headerImage': headerImage,
+        'stepImages': jsonDecode(stepImages),
+        'stepImageMap': jsonDecode(stepImageMap),
+        'imageUrl': imageUrl,
+        'isFavorite': isFavorite,
+        'cookCount': cookCount,
+        'source': source,
+        'pairedRecipeIds': jsonDecode(pairedRecipeIds),
+        'createdAt': createdAt.toIso8601String(),
+        'updatedAt': updatedAt.toIso8601String(),
+      };
 
-  /// Type of entry: Pit Note (quick reference) or Recipe (full recipe)
-  @Enumerated(EnumType.name)
-  SmokingType type = SmokingType.pitNote;
+  Map<String, dynamic> toShareableJson() => {
+        'name': name,
+        'type': type,
+        'item': item,
+        'category': category,
+        'temperature': temperature,
+        'time': time,
+        'wood': wood,
+        'seasoningsJson': jsonDecode(seasoningsJson),
+        'ingredientsJson': jsonDecode(ingredientsJson),
+        'serves': serves,
+        'directions': jsonDecode(directions),
+        'notes': notes,
+        'headerImage': headerImage,
+      };
 
-  /// The main item being smoked (e.g., "Brisket", "Pork Shoulder", "Mac & Cheese")
-  @Index()
-  String? item;
+  /// Convert to a [r.Recipe] suitable for the Recipe Comparison screen.
+  r.Recipe toRecipe() {
+    final dirs =
+        (jsonDecode(directions) as List).cast<String>().toList();
+    if (wood.isNotEmpty) dirs.add('Wood: $wood');
+    if (temperature.isNotEmpty) dirs.add('Temperature: $temperature');
 
-  /// Category of the item being smoked (e.g., "Beef", "Pork", "Desserts")
-  /// Used for filtering and color-coded display
-  @Index()
-  String? category;
-
-  /// Temperature for smoking (e.g., "275°F", "135°C")
-  /// Required for Pit Notes, optional for Recipes
-  String temperature = '';
-
-  /// Smoking duration (e.g., "3 hrs", "6-8 hours")
-  /// For Recipes, this is the total time field
-  String time = '';
-
-  /// Type of wood used (free-form text)
-  /// Displayed as chips for Pit Notes
-  @Index()
-  String wood = '';
-
-  /// Seasonings/rub ingredients (for Pit Notes - displayed as chips)
-  List<SmokingSeasoning> seasonings = [];
-
-  /// Full ingredients list (for Recipes - displayed like normal recipes)
-  List<SmokingSeasoning> ingredients = [];
-
-  /// Serving size (for Recipes)
-  String? serves;
-
-  /// Cooking directions
-  List<String> directions = [];
-
-  /// Optional notes
-  String? notes;
-
-  /// Main header image (shown in app bar)
-  String? headerImage;
-
-  /// Gallery images for steps (shown at bottom)
-  List<String> stepImages = [];
-
-  /// Map of step index to image index in stepImages
-  /// Stored as "stepIndex:imageIndex" strings for Isar compatibility
-  List<String> stepImageMap = [];
-
-  /// Legacy: Optional image
-  String? imageUrl;
-
-  /// Whether this is a favorite
-  bool isFavorite = false;
-
-  /// How many times this has been cooked
-  int cookCount = 0;
-
-  /// Source of the recipe
-  @Enumerated(EnumType.name)
-  SmokingSource source = SmokingSource.personal;
-
-  /// Paired recipe IDs (links to related Recipe items)
-  List<String> pairedRecipeIds = [];
-
-  /// Timestamps
-  DateTime createdAt = DateTime.now();
-  DateTime updatedAt = DateTime.now();
-
-  SmokingRecipe();
-
-  /// Get all images (handles new structure and legacy fields)
-  List<String> getAllImages() {
-    final images = <String>[];
-    if (headerImage != null && headerImage!.isNotEmpty) {
-      images.add(headerImage!);
-    } else if (imageUrl != null && imageUrl!.isNotEmpty) {
-      images.add(imageUrl!);
+    final ings = <r.Ingredient>[];
+    for (final m in (jsonDecode(ingredientsJson) as List)) {
+      final map = m as Map<String, dynamic>;
+      ings.add(r.Ingredient()
+        ..name = map['name']?.toString() ?? ''
+        ..amount = map['amount']?.toString()
+        ..unit = map['unit']?.toString(),);
     }
-    if (stepImages.isNotEmpty) {
-      images.addAll(stepImages);
+    for (final m in (jsonDecode(seasoningsJson) as List)) {
+      final map = m as Map<String, dynamic>;
+      ings.add(r.Ingredient()
+        ..name = map['name']?.toString() ?? ''
+        ..amount = map['amount']?.toString()
+        ..unit = map['unit']?.toString(),);
     }
-    return images;
-  }
 
-  /// Get first image if available
-  String? getFirstImage() {
-    if (headerImage != null && headerImage!.isNotEmpty) return headerImage;
-    if (imageUrl != null && imageUrl!.isNotEmpty) return imageUrl;
-    return null;
-  }
-
-  /// Get image index for a specific step (0-based)
-  int? getStepImageIndex(int stepIndex) {
-    for (final mapping in stepImageMap) {
-      final parts = mapping.split(':');
-      if (parts.length == 2) {
-        final sIdx = int.tryParse(parts[0]);
-        final iIdx = int.tryParse(parts[1]);
-        if (sIdx == stepIndex && iIdx != null) {
-          return iIdx;
-        }
-      }
-    }
-    return null;
-  }
-
-  /// Get the image path for a specific step
-  String? getStepImage(int stepIndex) {
-    final imageIndex = getStepImageIndex(stepIndex);
-    if (imageIndex != null && imageIndex < stepImages.length) {
-      return stepImages[imageIndex];
-    }
-    return null;
-  }
-
-  /// Set image association for a step
-  void setStepImage(int stepIndex, int imageIndex) {
-    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
-    stepImageMap.add('$stepIndex:$imageIndex');
-  }
-
-  /// Remove image association for a step
-  void removeStepImage(int stepIndex) {
-    stepImageMap.removeWhere((m) => m.startsWith('$stepIndex:'));
-  }
-
-  /// Factory constructor for creating with required fields
-  static SmokingRecipe create({
-    required String uuid,
-    required String name,
-    String course = 'smoking',
-    SmokingType type = SmokingType.pitNote,
-    String? item,
-    String? category,
-    String temperature = '',
-    String time = '',
-    String wood = '',
-    List<SmokingSeasoning>? seasonings,
-    List<SmokingSeasoning>? ingredients,
-    String? serves,
-    List<String>? directions,
-    String? notes,
-    String? headerImage,
-    List<String>? stepImages,
-    List<String>? stepImageMap,
-    String? imageUrl,
-    bool isFavorite = false,
-    int cookCount = 0,
-    SmokingSource source = SmokingSource.personal,
-    List<String>? pairedRecipeIds,
-  }) {
-    return SmokingRecipe()
+    return r.Recipe()
       ..uuid = uuid
       ..name = name
-      ..course = course
-      ..type = type
-      ..item = item
-      ..category = category
-      ..temperature = temperature
-      ..time = time
-      ..wood = wood
-      ..seasonings = seasonings ?? []
-      ..ingredients = ingredients ?? []
-      ..serves = serves
-      ..directions = directions ?? []
-      ..notes = notes
-      ..headerImage = headerImage
-      ..stepImages = stepImages ?? []
-      ..stepImageMap = stepImageMap ?? []
-      ..imageUrl = imageUrl
-      ..isFavorite = isFavorite
-      ..cookCount = cookCount
-      ..source = source
-      ..pairedRecipeIds = pairedRecipeIds ?? []
-      ..createdAt = DateTime.now()
-      ..updatedAt = DateTime.now();
-  }
-
-  /// Convert to JSON (for sharing/export)
-  Map<String, dynamic> toJson() {
-    return {
-      'uuid': uuid,
-      'name': name,
-      'course': course,
-      'type': type.name,
-      'item': item,
-      'category': category,
-      'temperature': temperature,
-      'time': time,
-      'wood': wood,
-      'seasonings': seasonings.map((s) => {
-        'name': s.name,
-        'amount': s.amount,
-        'unit': s.unit,
-      },).toList(),
-      'ingredients': ingredients.map((i) => {
-        'name': i.name,
-        'amount': i.amount,
-        'unit': i.unit,
-      },).toList(),
-      'serves': serves,
-      'directions': directions,
-      'notes': notes,
-      'headerImage': headerImage,
-      'stepImages': stepImages,
-      'stepImageMap': stepImageMap,
-      'imageUrl': imageUrl,
-      'isFavorite': isFavorite,
-      'cookCount': cookCount,
-      'source': source.name,
-      'pairedRecipeIds': pairedRecipeIds,
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
-    };
-  }
-
-  /// Create from JSON
-  factory SmokingRecipe.fromJson(Map<String, dynamic> json) {
-    return SmokingRecipe()
-      ..uuid = json['uuid'] as String
-      ..name = json['name'] as String
-      ..course = json['course'] as String? ?? 'smoking'
-      ..type = SmokingType.values.firstWhere(
-        (e) => e.name == json['type'],
-        orElse: () => SmokingType.pitNote,
-      )
-      ..item = json['item'] as String?
-      ..category = json['category'] as String?
-      ..temperature = json['temperature'] as String? ?? ''
-      ..time = json['time'] as String? ?? ''
-      ..wood = json['wood'] as String? ?? ''
-      ..seasonings = (json['seasonings'] as List<dynamic>?)
-          ?.map((s) => SmokingSeasoning()
-            ..name = s['name'] as String? ?? ''
-            ..amount = s['amount'] as String?
-            ..unit = s['unit'] as String?)
-          .toList() ?? []
-      ..ingredients = (json['ingredients'] as List<dynamic>?)
-          ?.map((i) => SmokingSeasoning()
-            ..name = i['name'] as String? ?? ''
-            ..amount = i['amount'] as String?
-            ..unit = i['unit'] as String?)
-          .toList() ?? []
-      ..serves = json['serves'] as String?
-      ..directions = (json['directions'] as List<dynamic>?)
-          ?.map((d) => d as String)
-          .toList() ?? []
-      ..notes = json['notes'] as String?
-      ..headerImage = json['headerImage'] as String?
-      ..stepImages = (json['stepImages'] as List<dynamic>?)
-          ?.map((s) => s as String)
-          .toList() ?? []
-      ..stepImageMap = (json['stepImageMap'] as List<dynamic>?)
-          ?.map((s) => s as String)
-          .toList() ?? []
-      ..imageUrl = json['imageUrl'] as String?
-      ..isFavorite = json['isFavorite'] as bool? ?? false
-      ..cookCount = json['cookCount'] as int? ?? 0
-      ..source = SmokingSource.values.firstWhere(
-        (e) => e.name == json['source'],
-        orElse: () => SmokingSource.personal,
-      )
-      ..pairedRecipeIds = (json['pairedRecipeIds'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList() ?? [];
-  }
-
-  /// Create a shareable copy (removes personal metadata)
-  Map<String, dynamic> toShareableJson() {
-    return {
-      'uuid': uuid,
-      'name': name,
-      'course': course,
-      'type': type.name,
-      'item': item,
-      'category': category,
-      'temperature': temperature,
-      'time': time,
-      'wood': wood,
-      'seasonings': seasonings.map((s) => {
-        'name': s.name,
-        'amount': s.amount,
-        'unit': s.unit,
-      },).toList(),
-      'ingredients': ingredients.map((i) => {
-        'name': i.name,
-        'amount': i.amount,
-        'unit': i.unit,
-      },).toList(),
-      'serves': serves,
-      'directions': directions,
-      'notes': notes,
-    };
+      ..course = item ?? 'smoking'
+      ..smokingType = type
+      ..recipeType = 'smoking'
+      ..directions = dirs
+      ..stepImages =
+          (jsonDecode(stepImages) as List).cast<String>().toList()
+      ..stepImageMap =
+          (jsonDecode(stepImageMap) as List).cast<String>().toList()
+      ..ingredients = ings
+      ..createdAt = createdAt
+      ..updatedAt = updatedAt;
   }
 }

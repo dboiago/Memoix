@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/database/app_database.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cheese_entry.dart';
@@ -42,15 +44,18 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
       ),
       body: entriesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('CheeseListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (allEntries) {
           // Apply hide memoix filter
           final visibleEntries = hideMemoix
-              ? allEntries.where((e) => e.source != CheeseSource.memoix).toList()
+              ? allEntries.where((e) => e.source != CheeseSource.memoix.name).toList()
               : allEntries;
 
           // Get milk types that have entries
-          final availableMilks = _getAvailableMilks(visibleEntries);
+          final availableMilks = extractUniqueStrings(visibleEntries, (e) => e.milk);
 
           return Column(
             children: [
@@ -123,12 +128,12 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
           setState(() => _selectedMilk = selected ? milk : null);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
@@ -139,17 +144,6 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
         ),
       ),
     );
-  }
-
-  List<String> _getAvailableMilks(List<CheeseEntry> entries) {
-    final milks = <String>{};
-    for (final entry in entries) {
-      if (entry.milk != null && entry.milk!.isNotEmpty) {
-        milks.add(entry.milk!);
-      }
-    }
-    final sorted = milks.toList()..sort();
-    return sorted;
   }
 
   Widget _buildEntryList(List<CheeseEntry> allEntries, bool isCompact) {

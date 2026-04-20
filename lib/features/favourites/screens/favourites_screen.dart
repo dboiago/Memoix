@@ -2,28 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/widgets/recipe_card.dart';
 import '../../recipes/models/recipe.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../cheese/widgets/cheese_card.dart';
-import '../../cheese/models/cheese_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/widgets/cellar_card.dart';
-import '../../cellar/models/cellar_entry.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../pizzas/widgets/pizza_card.dart';
-import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
 import '../../sandwiches/widgets/sandwich_card.dart';
-import '../../sandwiches/models/sandwich.dart';
 import '../../modernist/repository/modernist_repository.dart';
 import '../../modernist/widgets/modernist_card.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../smoking/repository/smoking_repository.dart';
 import '../../smoking/widgets/smoking_card.dart';
-import '../../smoking/models/smoking_recipe.dart';
 
 /// Enum for cuisine types in favourites
 enum FavouriteCuisineType {
@@ -52,7 +48,7 @@ class FavouriteItem {
   final String name;
   final DateTime? updatedAt;
   final int cookCount;
-
+  
   // From the Sage's wisdom
   // Strokes not of the cleaver's fall,
   // Love shifts the balance
@@ -158,7 +154,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         name: recipe.name,
         updatedAt: recipe.updatedAt,
         cookCount: recipe.cookCount,
-      ));
+      ),);
     }
 
     // Add cheese entries
@@ -169,7 +165,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         cuisineType: FavouriteCuisineType.cheese,
         name: cheese.name,
         updatedAt: cheese.updatedAt,
-      ));
+      ),);
     }
 
     // Add cellar entries
@@ -180,7 +176,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         cuisineType: FavouriteCuisineType.cellar,
         name: cellar.name,
         updatedAt: cellar.updatedAt,
-      ));
+      ),);
     }
 
     // Add pizzas
@@ -192,7 +188,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         name: pizza.name,
         updatedAt: pizza.updatedAt,
         cookCount: pizza.cookCount,
-      ));
+      ),);
     }
 
     // Add sandwiches
@@ -204,7 +200,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         name: sandwich.name,
         updatedAt: sandwich.updatedAt,
         cookCount: sandwich.cookCount,
-      ));
+      ),);
     }
 
     // Add modernist recipes
@@ -216,7 +212,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         name: modernist.name,
         updatedAt: modernist.updatedAt,
         cookCount: modernist.cookCount,
-      ));
+      ),);
     }
 
     // Add smoking recipes
@@ -228,7 +224,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
         name: smoking.name,
         updatedAt: smoking.updatedAt,
         cookCount: smoking.cookCount,
-      ));
+      ),);
     }
 
     // Filter by cuisine type
@@ -240,7 +236,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     _sortItems(filteredItems);
 
     if (filteredItems.isEmpty) {
-      return MemoixEmptyState(
+      return const MemoixEmptyState(
         message: 'No favourites yet',
         subtitle: 'Tap the heart on items you love\nto add them here',
       );

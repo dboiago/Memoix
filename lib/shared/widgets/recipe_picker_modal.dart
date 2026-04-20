@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/repository/recipe_repository.dart';
 import '../../features/smoking/models/smoking_recipe.dart';
@@ -9,9 +12,6 @@ import '../../features/modernist/models/modernist_recipe.dart';
 import '../../features/modernist/repository/modernist_repository.dart';
 
 /// Modal bottom sheet for picking a recipe from the database
-/// 
-/// Supports standard recipes, smoking recipes, and modernist concepts
-/// Used by the Recipe Comparison tool and other features
 class RecipePickerModal extends ConsumerStatefulWidget {
   /// Title shown at the top of the picker
   final String title;
@@ -134,7 +134,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                 // Convert and add smoking recipes (ONLY full recipes, not pit notes)
                 for (final smoking in smokingRecipes) {
                   // Skip pit notes - only include full recipes
-                  if (smoking.type != SmokingType.recipe) continue;
+                  if (smoking.type != SmokingType.recipe.name) continue;
                   
                   if (_searchQuery.isEmpty ||
                       smoking.name.toLowerCase().contains(_searchQuery) ||
@@ -176,7 +176,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                 const courseOrder = [
                   'Apps', 'Soups', 'Mains', 'Veg\'n', 'Sides', 'Salads', 
                   'Desserts', 'Brunch', 'Drinks', 'Breads', 'Sauces', 'Rubs', 'Pickles',
-                  'Modernist', 'Pizzas', 'Sandwiches', 'Smoking', 'Cheese', 'Cellar', 'Scratch'
+                  'Modernist', 'Pizzas', 'Sandwiches', 'Smoking', 'Cheese', 'Cellar', 'Scratch',
                 ];
 
                 // Sort courses by defined order
@@ -214,7 +214,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                               name: recipe.name,
                               subtitle: recipe.cuisine ?? recipe.course,
                               onTap: () => Navigator.pop(context, recipe),
-                            )),
+                            ),),
                         const SizedBox(height: 8),
                       ],
                     );
@@ -278,10 +278,10 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
         Ingredient()
           ..name = smoking.item ?? 'Unknown Item'
           ..amount = ''
-          ..unit = ''
+          ..unit = '',
       ]
       ..directions = smoking.directions.isNotEmpty
-          ? smoking.directions
+          ? (jsonDecode(smoking.directions) as List).cast<String>()
           : ['Smoke at ${smoking.temperature}°F for ${smoking.time}']
       ..comments = smoking.notes;
   }
@@ -299,7 +299,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
         ..amount = i.amount
         ..unit = i.unit
         ..preparation = i.notes
-        ..section = i.section
+        ..section = i.section,
       ).toList()
       ..directions = modernist.directions
       ..comments = modernist.notes;

@@ -5,8 +5,7 @@ import 'package:share_plus/share_plus.dart';
 
 import '../models/storage_location.dart';
 import '../providers/google_drive_storage.dart';
-import '../providers/google_drive_storage.dart';
-import '../services/shared_storage_manager.dart';
+import '../providers/one_drive_storage.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 
 class ShareStorageScreen extends ConsumerStatefulWidget {
@@ -35,11 +34,11 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
 
   String _generateDeepLink() {
     final encodedName = Uri.encodeComponent(widget.repository.name);
-    return 'memoix://share/repo?id=${widget.repository.folderId}&name=$encodedName';
+    return 'memoix://share/repo?id=${widget.repository.folderId}&name=$encodedName&provider=${widget.repository.provider.name}';
   }
 
   Future<void> _inviteUser() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     final input = _emailController.text.trim();
     // Split by semicolon and filter out empty strings
@@ -58,11 +57,18 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
     String? lastError;
 
     try {
-      final storage = ref.read(googleDriveStorageProvider);
-      
       for (final email in emails) {
         try {
-          await storage.addPermission(widget.repository.folderId, email);
+          switch (widget.repository.provider) {
+            case StorageProvider.googleDrive:
+              final storage = ref.read(googleDriveStorageProvider);
+              await storage.addPermission(widget.repository.folderId, email);
+              break;
+            case StorageProvider.oneDrive:
+              // Stub: throws UnimplementedError until Graph sharing is wired up.
+              await OneDriveStorage().addPermission(widget.repository.folderId, email);
+              break;
+          }
           successCount++;
         } catch (e) {
           failCount++;
@@ -85,17 +91,28 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
           MemoixSnackBar.show('$successCount sent, $failCount failed');
         } else {
           // All failed
-          MemoixSnackBar.showError('Failed to invite: ${lastError ?? "Unknown error"}');
+          MemoixSnackBar.showPersistentWithCopy('Failed to invite: ${lastError ?? "Unknown error"}');
         }
       }
     } catch (e) {
       if (mounted) {
-        MemoixSnackBar.showError('Failed to invite: ${e.toString()}');
+        MemoixSnackBar.showPersistentWithCopy('Failed to invite: ${e.toString()}');
       }
     } finally {
       if (mounted) {
         setState(() => _isInviting = false);
       }
+    }
+
+    // Open the share sheet regardless of grant outcome — the link is how the
+    // recipient actually joins the repository in the app.
+    if (mounted) {
+      final link = _generateDeepLink();
+      await SharePlus.instance.share(ShareParams(
+        text: 'Join my Memoix recipe repository "${widget.repository.name}":\n$link',
+        subject: 'Join my Memoix repository: ${widget.repository.name}',
+      ),
+      );
     }
   }
 
@@ -103,10 +120,11 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
     final link = _generateDeepLink();
 
     try {
-      await Share.share(
-        'Join my Memoix repository: ${widget.repository.name}\n\n'
-        'Tap this link to add it to your Memoix app:\n$link',
+      await SharePlus.instance.share(ShareParams(
+        text: 'Join my Memoix repository: ${widget.repository.name}\n\n'
+            'Tap this link to add it to your Memoix app:\n$link',
         subject: 'Memoix Repository: ${widget.repository.name}',
+      ),
       );
     } catch (e) {
       if (mounted) {
@@ -165,13 +183,14 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
 
             // Invite by Email Section
             Text(
-              'Invite by Email',
+              'Grant Access',
               style: theme.textTheme.titleMedium,
             ),
             const SizedBox(height: 8),
             Text(
-              'Add a Google account email address to grant immediate access. '
-              'Separate multiple addresses with a semicolon (;)',
+              'Add an email address of the person you want to invite. '
+              'Separate multiple addresses with a semicolon (;). '
+              'This grants them access to the shared folder — you\'ll then be prompted to send them a join link.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -244,7 +263,7 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Generate a link to share via messaging, email, or other apps',
+              'Generate a link to share via messaging, email, or other apps with anyone you want to invite.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -295,10 +314,10 @@ class _ShareStorageScreenState extends ConsumerState<ShareStorageScreen> {
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      '• Invited users receive Editor access to your Google Drive folder\n'
+                      '• Invited users receive Editor access to the shared repository folder\n'
                       '• They can add, edit, and delete recipes in the shared repository\n'
                       '• Links work offline - the app will verify access when online\n'
-                      '• Remove access via Google Drive settings if needed',
+                      '• Remove access via the cloud storage provider settings if needed',
                       style: theme.textTheme.bodyMedium,
                     ),
                   ],

@@ -1,9 +1,12 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../../core/database/app_database.dart';
 import '../models/smoking_recipe.dart';
 import '../repository/smoking_repository.dart';
 import '../widgets/smoking_card.dart';
@@ -44,11 +47,14 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
       ),
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('SmokingListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (recipes) {
           // Apply Hide Memoix filter if enabled
           final visibleRecipes = hideMemoix
-              ? recipes.where((r) => r.source != SmokingSource.memoix).toList()
+              ? recipes.where((r) => r.source != SmokingSource.memoix.name).toList()
               : recipes;
           if (recipes.isEmpty) {
             return _buildEmptyState(theme);
@@ -99,9 +105,10 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                       if (recipe.wood.toLowerCase().contains(query)) {
                         matches.add(recipe.wood);
                       }
-                      for (final seasoning in recipe.seasonings) {
-                        if (seasoning.name.toLowerCase().contains(query)) {
-                          matches.add(seasoning.name);
+                      for (final s in (jsonDecode(recipe.seasoningsJson) as List)) {
+                        final sName = (s as Map<String, dynamic>)['name'] as String? ?? '';
+                        if (sName.toLowerCase().contains(query)) {
+                          matches.add(sName);
                         }
                       }
                     }
@@ -291,12 +298,12 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
           });
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(

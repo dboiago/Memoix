@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_interpolation_to_compose_strings, unused_field
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -160,7 +162,7 @@ class RuntimeCalibrationService {
 
     final text = await IntegrityService.resolveLegacyValue('empty_recipe_error');
     final tsKey = 'diag_warm_ms';
-    if (!store.getBool(tsKey + '_set')) {
+    if (!store.getBool('${tsKey}_set')) {
       await store.setInt(tsKey, DateTime.now().millisecondsSinceEpoch);
       await store.setBool(tsKey + '_set', true);
     }

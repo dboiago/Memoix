@@ -45,24 +45,6 @@ class SplitRecipeView extends StatelessWidget {
     this.onIngredientLongPress,
   });
 
-  /// Calculate the flex ratio for ingredients column based on screen width.
-  /// - Mobile (<600px): 50/50 split - space is premium
-  /// - Tablet/Landscape (≥600px): 35/65 split - directions need more room
-  int _getIngredientsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 1; // ~35% on tablet (paired with 2 for directions)
-  }
-
-  /// Calculate the flex ratio for directions column based on screen width.
-  int _getDirectionsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 2; // ~65% on tablet
-  }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
@@ -79,7 +61,7 @@ class SplitRecipeView extends StatelessWidget {
         : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold);
 
     // Check if this is a drink with glass/garnish info
-    final isDrink = recipe.course?.toLowerCase() == 'drinks';
+    final isDrink = recipe.course.toLowerCase() == 'drinks';
     final hasGlassOrGarnish = isDrink && 
         ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty);
     
@@ -198,7 +180,7 @@ class SplitRecipeView extends StatelessWidget {
                                 fontSize: isCompact ? 12 : 14,
                               ),
                               visualDensity: VisualDensity.compact,
-                            )).toList(),
+                            ),).toList(),
                           ),
                         ],
                       ),
@@ -230,7 +212,7 @@ class SplitRecipeView extends StatelessWidget {
                     children: [
                       // Ingredients header
                       Expanded(
-                        flex: _getIngredientsFlex(screenWidth),
+                        flex: 1,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -242,7 +224,7 @@ class SplitRecipeView extends StatelessWidget {
                       SizedBox(width: dividerPadding * 2 + 1),
                       // Directions header
                       Expanded(
-                        flex: _getDirectionsFlex(screenWidth),
+                        flex: screenWidth < 600 ? 1 : 2,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -261,7 +243,7 @@ class SplitRecipeView extends StatelessWidget {
                       children: [
                         // Ingredients Column - independently scrollable
                         Expanded(
-                          flex: _getIngredientsFlex(screenWidth),
+                          flex: 1,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
@@ -280,13 +262,13 @@ class SplitRecipeView extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
                           child: Container(
                             width: 1,
-                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                            color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
                           ),
                         ),
 
                         // Directions Column - independently scrollable
                         Expanded(
-                          flex: _getDirectionsFlex(screenWidth),
+                          flex: screenWidth < 600 ? 1 : 2,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
@@ -294,6 +276,8 @@ class SplitRecipeView extends StatelessWidget {
                             child: _DirectionsColumn(
                               directions: recipe.directions,
                               isCompact: isCompact,
+                              recipe: recipe,
+                              onScrollToImage: onScrollToImage,
                             ),
                           ),
                         ),
@@ -451,7 +435,7 @@ class SplitRecipeView extends StatelessWidget {
             ),
           ),
         ],
-      )).toList(),
+      ),).toList(),
     );
   }
 
@@ -484,7 +468,7 @@ class SplitRecipeView extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.5),
+                        color: Colors.black.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Icon(
@@ -537,7 +521,7 @@ class SplitRecipeView extends StatelessWidget {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -593,25 +577,58 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
     final theme = Theme.of(context);
     final padding = widget.isCompact ? 8.0 : 12.0;
 
-    return ListView.builder(
+    if (widget.ingredients.isEmpty) {
+      return Padding(
+        padding: EdgeInsets.symmetric(horizontal: padding),
+        child: Text(
+          'No ingredients listed',
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      );
+    }
+
+    // Group ingredients by section, preserving original flat indices for checkbox state.
+    final Map<String, List<int>> groupIndices = {};
+    for (int i = 0; i < widget.ingredients.length; i++) {
+      final section = widget.ingredients[i].section ?? '';
+      groupIndices.putIfAbsent(section, () => []);
+      groupIndices[section]!.add(i);
+    }
+
+    // Build flat list of items: optional section header followed by ingredient rows.
+    final items = <Widget>[];
+    for (final entry in groupIndices.entries) {
+      final section = entry.key;
+      final indices = entry.value;
+
+      if (section.isNotEmpty) {
+        items.add(Padding(
+          padding: const EdgeInsets.only(top: 12, bottom: 4),
+          child: Text(
+            section,
+            style: theme.textTheme.titleSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: theme.colorScheme.primary,
+            ),
+          ),
+        ),);
+      }
+
+      for (final index in indices) {
+        final ingredient = widget.ingredients[index];
+        final isChecked = _checkedItems.contains(index);
+        items.add(_buildIngredientRow(context, ingredient, index, isChecked));
+      }
+    }
+
+    return ListView(
       primary: false,
       physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       padding: EdgeInsets.symmetric(horizontal: padding).copyWith(bottom: 16),
-      itemCount: widget.ingredients.isEmpty ? 1 : widget.ingredients.length,
-      itemBuilder: (context, index) {
-        if (widget.ingredients.isEmpty) {
-          return Text(
-            'No ingredients listed',
-            style: TextStyle(
-              fontStyle: FontStyle.italic,
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          );
-        }
-        final ingredient = widget.ingredients[index];
-        final isChecked = _checkedItems.contains(index);
-        return _buildIngredientRow(context, ingredient, index, isChecked);
-      },
+      children: items,
     );
   }
 
@@ -742,7 +759,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                           style: textStyle.copyWith(
                             decoration: isChecked ? TextDecoration.lineThrough : null,
                             color: isChecked
-                                ? theme.colorScheme.onSurface.withOpacity(0.5)
+                                ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                 : theme.colorScheme.onSurface,
                             fontWeight: FontWeight.w500,
                           ),
@@ -754,7 +771,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                           decoration: BoxDecoration(
-                            color: theme.colorScheme.secondary.withOpacity(0.15),
+                            color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(3),
                           ),
                           child: Text(
@@ -776,7 +793,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                       style: textStyle.copyWith(
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.5)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                             : theme.colorScheme.onSurfaceVariant,
                       ),
                     ),
@@ -788,7 +805,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         fontSize: widget.isCompact ? 10 : 11,
                         fontStyle: FontStyle.italic,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.4)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
                             : theme.colorScheme.primary,
                       ),
                     ),
@@ -801,7 +818,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                             decoration: BoxDecoration(
-                              color: theme.colorScheme.primary.withOpacity(0.15),
+                              color: theme.colorScheme.primary.withValues(alpha: 0.15),
                               borderRadius: BorderRadius.circular(3),
                             ),
                             child: Text(
@@ -809,7 +826,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                               style: TextStyle(
                                 fontSize: widget.isCompact ? 9 : 10,
                                 color: isChecked
-                                    ? theme.colorScheme.onSurface.withOpacity(0.4)
+                                    ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
                                     : theme.colorScheme.primary,
                                 fontStyle: FontStyle.italic,
                               ),
@@ -833,10 +850,14 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
 class _DirectionsColumn extends ConsumerStatefulWidget {
   final List<String> directions;
   final bool isCompact;
+  final Recipe? recipe;
+  final Function(int stepIndex)? onScrollToImage;
 
   const _DirectionsColumn({
     required this.directions,
     required this.isCompact,
+    this.recipe,
+    this.onScrollToImage,
   });
 
   @override
@@ -862,7 +883,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
           fontStyle: FontStyle.italic,
           color: theme.colorScheme.onSurfaceVariant,
         ),
-      ));
+      ),);
     } else {
       for (int i = 0; i < widget.directions.length; i++) {
         items.add(_buildDirectionRow(context, i));
@@ -957,10 +978,10 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                   shape: BoxShape.circle,
                   color: isCompleted
                       ? theme.colorScheme.surfaceContainerHighest
-                      : theme.colorScheme.secondary.withOpacity(0.15),
+                      : theme.colorScheme.secondary.withValues(alpha: 0.15),
                   border: Border.all(
                     color: isCompleted
-                        ? theme.colorScheme.outline.withOpacity(0.5)
+                        ? theme.colorScheme.outline.withValues(alpha: 0.5)
                         : theme.colorScheme.secondary,
                     width: 1.5,
                   ),
@@ -988,12 +1009,31 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                     fontSize: fontSize,
                     decoration: isCompleted ? TextDecoration.lineThrough : null,
                     color: isCompleted
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                         : theme.colorScheme.onSurface,
                     height: 1.4,
                   ),
                 ),
               ),
+
+              // Step image icon if this step has an associated image
+              if (widget.recipe?.getStepImageIndex(index) != null)
+                IconButton(
+                  icon: Icon(
+                    Icons.image_outlined,
+                    size: widget.isCompact ? 16 : 20,
+                    color: theme.colorScheme.primary,
+                  ),
+                  padding: EdgeInsets.zero,
+                  constraints: BoxConstraints(
+                    minWidth: widget.isCompact ? 24 : 32,
+                    minHeight: widget.isCompact ? 24 : 32,
+                  ),
+                  tooltip: 'View step image',
+                  onPressed: widget.onScrollToImage != null
+                      ? () => widget.onScrollToImage!(index)
+                      : null,
+                ),
             ],
           ),
         ),

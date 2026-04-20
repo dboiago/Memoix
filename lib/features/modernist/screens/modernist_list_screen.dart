@@ -40,7 +40,10 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
       ),
       body: recipesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('ModernistListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (allRecipes) {
           // Watch settings
           final hideMemoix = ref.watch(hideMemoixRecipesProvider);
@@ -199,12 +202,12 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
           });
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(

@@ -243,6 +243,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     }
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromCamera();
+    if (!mounted) return;
     _handleOcrResult(context, result);
   }
 
@@ -267,6 +268,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     }
     final ocrImporter = ref.read(ocrImporterProvider);
     final result = await ocrImporter.scanFromGallery();
+    if (!mounted) return;
     _handleOcrResult(context, result);
   }
 
@@ -412,7 +414,7 @@ class _ImportOption extends StatelessWidget {
                 width: 48,
                 height: 48,
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.1),
+                  color: color.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(icon, color: color),

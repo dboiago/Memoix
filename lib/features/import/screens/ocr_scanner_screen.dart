@@ -5,6 +5,7 @@ import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart' show ImageSource;
 
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../widgets/capture_option.dart';
 import '../services/ocr_importer.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
 import 'import_review_screen.dart';
@@ -88,7 +89,7 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                   Row(
                     children: [
                       Expanded(
-                        child: _CaptureOption(
+                        child: CaptureOption(
                           icon: Icons.camera_alt,
                           label: 'Take Photo',
                           onTap: () => _captureImage(ImageSource.camera),
@@ -96,7 +97,7 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
                       ),
                       const SizedBox(width: 16),
                       Expanded(
-                        child: _CaptureOption(
+                        child: CaptureOption(
                           icon: Icons.photo_library,
                           label: 'Choose Photo',
                           onTap: () => _captureImage(ImageSource.gallery),
@@ -211,12 +212,12 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
           toolbarTitle: 'Crop Recipe',
           toolbarColor: theme.colorScheme.surface,
           toolbarWidgetColor: theme.colorScheme.onSurface,
-          statusBarColor: theme.colorScheme.surface,
+          statusBarLight: !isDark,
           backgroundColor: theme.colorScheme.surface,
           activeControlsWidgetColor: theme.colorScheme.primary,
           dimmedLayerColor: isDark 
-              ? theme.colorScheme.scrim.withOpacity(0.7)
-              : theme.colorScheme.scrim.withOpacity(0.5),
+              ? theme.colorScheme.scrim.withValues(alpha: 0.7)
+              : theme.colorScheme.scrim.withValues(alpha: 0.5),
           cropFrameColor: theme.colorScheme.primary,
           cropGridColor: theme.colorScheme.outline,
           initAspectRatio: CropAspectRatioPreset.original,
@@ -264,39 +265,4 @@ class _OCRScannerScreenState extends ConsumerState<OCRScannerScreen> {
   }
 }
 
-class _CaptureOption extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final VoidCallback onTap;
 
-  const _CaptureOption({
-    required this.icon,
-    required this.label,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    return Card(
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            children: [
-              Icon(icon, size: 48, color: theme.colorScheme.primary),
-              const SizedBox(height: 12),
-              Text(
-                label,
-                style: theme.textTheme.titleSmall,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}

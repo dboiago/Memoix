@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/models/sandwich.dart';
@@ -38,7 +39,7 @@ class ShareService {
       // SECURITY: Reject oversized input before any processing
       // This is a first line of defense against decompression bombs
       if (encoded.length > _maxEncodedInputLength) {
-        print('Security: Rejected encoded input (${encoded.length} bytes > $_maxEncodedInputLength max)');
+        debugPrint('Security: Rejected encoded input (${encoded.length} bytes > $_maxEncodedInputLength max)');
         return null;
       }
 
@@ -48,7 +49,7 @@ class ShareService {
       // A 500KB base64 string decodes to ~375KB compressed data
       // Normal recipes compress to <5KB, so anything over 100KB is suspicious
       if (compressed.length > 100 * 1024) {
-        print('Security: Suspicious compressed size (${compressed.length} bytes)');
+        debugPrint('Security: Suspicious compressed size (${compressed.length} bytes)');
         return null;
       }
 
@@ -57,7 +58,7 @@ class ShareService {
       // SECURITY: Reject decompressed data that exceeds size limit
       // This catches decompression bombs that expand to huge sizes
       if (decompressed.length > _maxDecompressedSize) {
-        print('Security: Rejected decompression bomb (${decompressed.length} bytes > $_maxDecompressedSize max)');
+        debugPrint('Security: Rejected decompression bomb (${decompressed.length} bytes > $_maxDecompressedSize max)');
         return null;
       }
 
@@ -71,7 +72,7 @@ class ShareService {
         }
         final decoded = utf8.decode(base64Url.decode(encoded));
         if (decoded.length > _maxDecompressedSize) {
-          print('Security: Rejected oversized uncompressed data (${decoded.length} bytes)');
+          debugPrint('Security: Rejected oversized uncompressed data (${decoded.length} bytes)');
           return null;
         }
         return jsonDecode(decoded) as Map<String, dynamic>;
@@ -97,10 +98,16 @@ class ShareService {
   Future<void> shareRecipe(Recipe recipe) async {
     final link = generateShareLink(recipe);
     
-    await Share.share(
-      '🍳 Check out this recipe: ${recipe.name}\n\n$link',
-      subject: 'Recipe: ${recipe.name}',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: 'Recipe: ${recipe.name}',
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.shareRecipe error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Share recipe as plain text
@@ -152,7 +159,12 @@ class ShareService {
     buffer.writeln('---');
     buffer.writeln('Shared from Memoix');
     
-    await Share.share(buffer.toString(), subject: recipe.name);
+    try {
+      await SharePlus.instance.share(ShareParams(text: buffer.toString(), subject: recipe.name));
+    } catch (e) {
+      debugPrint('ShareService.shareAsText error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Parse a recipe from a share link
@@ -171,7 +183,7 @@ class ShareService {
       
       return Recipe.fromJson(json)..source = RecipeSource.imported;
     } catch (e) {
-      print('Error parsing share link: $e');
+      debugPrint('Error parsing share link: $e');
       return null;
     }
   }
@@ -243,10 +255,16 @@ class ShareService {
   Future<void> sharePizza(Pizza pizza) async {
     final link = generatePizzaShareLink(pizza);
     
-    await Share.share(
-      'Check out this pizza: ${pizza.name}\n\n$link',
-      subject: 'Pizza: ${pizza.name}',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: 'Pizza: ${pizza.name}',
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.sharePizza error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Share pizza as plain text
@@ -255,28 +273,31 @@ class ShareService {
     
     buffer.writeln('# ${pizza.name}');
     buffer.writeln();
-    buffer.writeln('Base: ${pizza.base.displayName}');
+    buffer.writeln('Base: ${PizzaBaseExtension.fromString(pizza.base).displayName}');
     
-    if (pizza.cheeses.isNotEmpty) {
+    final cheeses = pizza.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Cheeses');
-      for (final cheese in pizza.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('- $cheese');
       }
     }
     
-    if (pizza.proteins.isNotEmpty) {
+    final proteins = pizza.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Proteins');
-      for (final protein in pizza.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('- $protein');
       }
     }
     
-    if (pizza.vegetables.isNotEmpty) {
+    final vegetables = pizza.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Vegetables');
-      for (final vegetable in pizza.vegetables) {
+      for (final vegetable in vegetables) {
         buffer.writeln('- $vegetable');
       }
     }
@@ -291,7 +312,12 @@ class ShareService {
     buffer.writeln('---');
     buffer.writeln('Shared from Memoix');
     
-    await Share.share(buffer.toString(), subject: pizza.name);
+    try {
+      await SharePlus.instance.share(ShareParams(text: buffer.toString(), subject: pizza.name));
+    } catch (e) {
+      debugPrint('ShareService.sharePizzaAsText error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Copy pizza share link to clipboard
@@ -361,10 +387,16 @@ class ShareService {
   Future<void> shareSandwich(Sandwich sandwich) async {
     final link = generateSandwichShareLink(sandwich);
     
-    await Share.share(
-      'Check out this sandwich: ${sandwich.name}\n\n$link',
-      subject: 'Sandwich: ${sandwich.name}',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: 'Sandwich: ${sandwich.name}',
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.shareSandwich error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Share sandwich as plain text
@@ -377,34 +409,38 @@ class ShareService {
       buffer.writeln('Bread: ${sandwich.bread}');
     }
     
-    if (sandwich.proteins.isNotEmpty) {
+    final proteins = sandwich.proteinsList;
+    if (proteins.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Proteins');
-      for (final protein in sandwich.proteins) {
+      for (final protein in proteins) {
         buffer.writeln('- $protein');
       }
     }
     
-    if (sandwich.vegetables.isNotEmpty) {
+    final vegetables = sandwich.vegetablesList;
+    if (vegetables.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Vegetables');
-      for (final vegetable in sandwich.vegetables) {
+      for (final vegetable in vegetables) {
         buffer.writeln('- $vegetable');
       }
     }
     
-    if (sandwich.cheeses.isNotEmpty) {
+    final cheeses = sandwich.cheesesList;
+    if (cheeses.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Cheeses');
-      for (final cheese in sandwich.cheeses) {
+      for (final cheese in cheeses) {
         buffer.writeln('- $cheese');
       }
     }
     
-    if (sandwich.condiments.isNotEmpty) {
+    final condiments = sandwich.condimentsList;
+    if (condiments.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Condiments');
-      for (final condiment in sandwich.condiments) {
+      for (final condiment in condiments) {
         buffer.writeln('- $condiment');
       }
     }
@@ -419,7 +455,12 @@ class ShareService {
     buffer.writeln('---');
     buffer.writeln('Shared from Memoix');
     
-    await Share.share(buffer.toString(), subject: sandwich.name);
+    try {
+      await SharePlus.instance.share(ShareParams(text: buffer.toString(), subject: sandwich.name));
+    } catch (e) {
+      debugPrint('ShareService.shareSandwichAsText error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Copy sandwich share link to clipboard
@@ -489,10 +530,16 @@ class ShareService {
   Future<void> shareSmokingRecipe(SmokingRecipe recipe) async {
     final link = generateSmokingShareLink(recipe);
     
-    await Share.share(
-      'Check out this smoking recipe: ${recipe.name}\n\n$link',
-      subject: 'Smoking: ${recipe.name}',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: 'Smoking: ${recipe.name}',
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.shareSmokingRecipe error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Share smoking recipe as plain text
@@ -505,10 +552,11 @@ class ShareService {
     buffer.writeln('Time: ${recipe.time}');
     buffer.writeln('Wood: ${recipe.wood}');
     
-    if (recipe.seasonings.isNotEmpty) {
+    final seasonings = recipe.seasoningsList;
+    if (seasonings.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Seasonings');
-      for (final seasoning in recipe.seasonings) {
+      for (final seasoning in seasonings) {
         if (seasoning.amount != null && seasoning.amount!.isNotEmpty) {
           buffer.writeln('- ${seasoning.amount} ${seasoning.name}');
         } else {
@@ -517,11 +565,12 @@ class ShareService {
       }
     }
     
-    if (recipe.directions.isNotEmpty) {
+    final directions = recipe.directionsList;
+    if (directions.isNotEmpty) {
       buffer.writeln();
       buffer.writeln('## Directions');
-      for (int i = 0; i < recipe.directions.length; i++) {
-        buffer.writeln('${i + 1}. ${recipe.directions[i]}');
+      for (int i = 0; i < directions.length; i++) {
+        buffer.writeln('${i + 1}. ${directions[i]}');
       }
     }
     
@@ -535,7 +584,12 @@ class ShareService {
     buffer.writeln('---');
     buffer.writeln('Shared from Memoix');
     
-    await Share.share(buffer.toString(), subject: recipe.name);
+    try {
+      await SharePlus.instance.share(ShareParams(text: buffer.toString(), subject: recipe.name));
+    } catch (e) {
+      debugPrint('ShareService.shareSmokingAsText error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Copy smoking recipe share link to clipboard
@@ -605,10 +659,16 @@ class ShareService {
   Future<void> shareModernistRecipe(ModernistRecipe recipe) async {
     final link = generateModernistShareLink(recipe);
     
-    await Share.share(
-      'Check out this modernist recipe: ${recipe.name}\n\n$link',
-      subject: 'Modernist: ${recipe.name}',
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: 'Modernist: ${recipe.name}',
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.shareModernistRecipe error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Share modernist recipe as plain text
@@ -674,7 +734,12 @@ class ShareService {
     buffer.writeln('---');
     buffer.writeln('Shared from Memoix');
     
-    await Share.share(buffer.toString(), subject: recipe.name);
+    try {
+      await SharePlus.instance.share(ShareParams(text: buffer.toString(), subject: recipe.name));
+    } catch (e) {
+      debugPrint('ShareService.shareModernistAsText error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Copy modernist recipe share link to clipboard
@@ -744,10 +809,16 @@ class ShareService {
   Future<void> shareCellarEntry(CellarEntry entry) async {
     final link = generateCellarShareLink(entry);
     
-    await Share.share(
-      '🍷 Check out this: ${entry.name}\n\n$link',
-      subject: entry.name,
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: entry.name,
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.shareCellarEntry error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Copy cellar entry share link to clipboard
@@ -817,10 +888,16 @@ class ShareService {
   Future<void> shareCheeseEntry(CheeseEntry entry) async {
     final link = generateCheeseShareLink(entry);
     
-    await Share.share(
-      '🧀 Check out this cheese: ${entry.name}\n\n$link',
-      subject: entry.name,
-    );
+    try {
+      await SharePlus.instance.share(ShareParams(
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
+        subject: entry.name,
+      ),
+      );
+    } catch (e) {
+      debugPrint('ShareService.shareCheeseEntry error: $e');
+      MemoixSnackBar.showError('Could not open share sheet. Please try again.');
+    }
   }
 
   /// Copy cheese entry share link to clipboard

@@ -23,12 +23,12 @@ class OpenAiClient {
   }) async {
     final messages = <Map<String, dynamic>>[
       {
-        "role": "system",
-        "content": systemPrompt,
+        'role': 'system',
+        'content': systemPrompt,
       },
       {
-        "role": "user",
-        "content": _buildUserContent(text, imageBytes),
+        'role': 'user',
+        'content': _buildUserContent(text, imageBytes),
       }
     ];
 
@@ -43,10 +43,10 @@ class OpenAiClient {
         'Content-Type': 'application/json',
       });
       request.body = jsonEncode({
-        "model": model,
-        "messages": messages,
-        "temperature": temperature,
-        "response_format": {"type": "json_object"},
+        'model': model,
+        'messages': messages,
+        'temperature': temperature,
+        'response_format': {'type': 'json_object'},
       });
 
       final streamed = await client.send(request);
@@ -66,17 +66,17 @@ class OpenAiClient {
 
     if (text != null && text.trim().isNotEmpty) {
       content.add({
-        "type": "text",
-        "text": text,
+        'type': 'text',
+        'text': text,
       });
     }
 
     if (imageBytes != null) {
       content.add({
-        "type": "image_url",
-        "image_url": {
-          "url": "data:image/jpeg;base64,${base64Encode(imageBytes)}"
-        }
+        'type': 'image_url',
+        'image_url': {
+          'url': 'data:image/jpeg;base64,${base64Encode(imageBytes)}',
+        },
       });
     }
 

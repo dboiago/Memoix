@@ -1,3 +1,5 @@
+import 'dart:convert';
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../modernist/models/modernist_recipe.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../recipes/models/recipe.dart';
@@ -166,6 +168,8 @@ class RecipeImportResult {
       if (imagePaths!.length > 1) {
         recipe.stepImages = imagePaths!.sublist(1);
       }
+    } else if (imageUrl != null && imageUrl!.isNotEmpty) {
+      recipe.headerImage = imageUrl;
     }
     
     return recipe;
@@ -208,10 +212,10 @@ class RecipeImportResult {
             preparation: preparation,
             section: section,
             alternative: alternative,
-          ));
+          ),);
           rawIngredients.add(RawIngredientData(
             original: [amount, unit, name, preparation]
-                .where((s) => s != null && s!.isNotEmpty)
+                .where((s) => s != null && s.isNotEmpty)
                 .join(' '),
             name: name,
             amount: amount,
@@ -219,7 +223,7 @@ class RecipeImportResult {
             preparation: preparation,
             alternative: alternative,
             sectionName: section,
-          ));
+          ),);
         } else if (item != null) {
           // Fallback: AI returned a plain string — parse 'X or Y' alternatives
           final raw = item.toString().trim();
@@ -237,12 +241,12 @@ class RecipeImportResult {
           ingredients.add(Ingredient.create(
             name: normalizedName,
             alternative: normalizedAlt,
-          ));
+          ),);
           rawIngredients.add(RawIngredientData(
             original: raw,
             name: normalizedName,
             alternative: normalizedAlt,
-          ));
+          ),);
         }
       }
     }
@@ -258,7 +262,7 @@ class RecipeImportResult {
           name: '',
           sectionName: r.sectionName,
           isSection: true,
-        ));
+        ),);
         lastSection = r.sectionName;
       }
       rawIngredientsWithSections.add(r);
@@ -309,8 +313,8 @@ class RecipeImportResult {
       timeConfidence: (data['timeConfidence'] as num?)?.toDouble() ?? 0.0,
       sourceUrl: data['sourceUrl'] as String?,
       source: data['source'] == 'ai'
-          ? RecipeSource.ocr
-          : RecipeSource.url, // AI imports treated as OCR-like
+          ? RecipeSource.ai
+          : RecipeSource.url,
     );
   }
 
@@ -323,7 +327,7 @@ class RecipeImportResult {
       unit: i.unit,
       notes: i.preparation,
       section: i.section,
-    )).toList();
+    ),).toList();
 
     final recipe = ModernistRecipe.create(
       uuid: uuid,
@@ -481,7 +485,7 @@ class RecipeImportResult {
           name: ingredient.name,
           amount: ingredient.amount,
           unit: ingredient.unit,
-        ));
+        ),);
       }
     }
     
@@ -493,32 +497,44 @@ class RecipeImportResult {
             name: i.name,
             amount: i.amount,
             unit: i.unit,
-          )).toList();
+          ),).toList();
 
-    final recipe = SmokingRecipe.create(
+    final headerImg = (imagePaths != null && imagePaths!.isNotEmpty)
+        ? imagePaths!.first
+        : imageUrl;
+    final stepImgs = (imagePaths != null && imagePaths!.length > 1)
+        ? imagePaths!.sublist(1)
+        : <String>[];
+    final now = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
-      type: SmokingType.pitNote, // Converted recipes become Pit Notes
-      item: name, // Use recipe name as item being smoked
+      course: 'smoking',
+      type: SmokingType.pitNote.name,
+      item: name,
+      category: null,
       temperature: temperature,
       time: time ?? '',
-      wood: woodType,
-      seasonings: finalSeasonings,
-      directions: directions,
+      wood: woodType ?? 'Hickory',
+      seasoningsJson: jsonEncode(finalSeasonings
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .toList(),),
+      ingredientsJson: '[]',
+      serves: null,
+      directions: '[]',
       notes: comments,
-      headerImage: imageUrl,
-      source: SmokingSource.imported,
+      headerImage: headerImg,
+      stepImages: jsonEncode(stepImgs),
+      stepImageMap: '[]',
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.imported.name,
+      pairedRecipeIds: '[]',
+      createdAt: now,
+      updatedAt: now,
     );
-    
-    // Set multiple images if available
-    if (imagePaths != null && imagePaths!.isNotEmpty) {
-      recipe.headerImage = imagePaths!.first;
-      if (imagePaths!.length > 1) {
-        recipe.stepImages = imagePaths!.sublist(1);
-      }
-    }
-    
-    return recipe;
   }
 
   /// Convert to a SmokingRecipe as a full Recipe type (not Pit Note)
@@ -529,7 +545,7 @@ class RecipeImportResult {
       name: i.name,
       amount: i.amount,
       unit: i.unit,
-    )).toList();
+    ),).toList();
     
     // Detect category from name, URL, and ingredients
     String? detectedCategory = _detectSmokingCategory();
@@ -567,30 +583,42 @@ class RecipeImportResult {
       }
     }
     
-    final recipe = SmokingRecipe.create(
+    final headerImg = (imagePaths != null && imagePaths!.isNotEmpty)
+        ? imagePaths!.first
+        : imageUrl;
+    final stepImgs = (imagePaths != null && imagePaths!.length > 1)
+        ? imagePaths!.sublist(1)
+        : <String>[];
+    final now = DateTime.now();
+    return SmokingRecipe(
+      id: 0,
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
-      type: SmokingType.recipe, // Full recipe, not Pit Note
+      course: 'smoking',
+      type: SmokingType.recipe.name,
+      item: null,
       category: detectedCategory,
-      wood: woodType ?? '',
-      serves: serves,
+      temperature: '',
       time: time ?? '',
-      ingredients: recipeIngredients,
-      directions: directions,
+      wood: woodType ?? '',
+      seasoningsJson: '[]',
+      ingredientsJson: jsonEncode(recipeIngredients
+          .map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit})
+          .toList(),),
+      serves: serves,
+      directions: jsonEncode(directions),
       notes: comments,
-      headerImage: imageUrl,
-      source: SmokingSource.imported,
+      headerImage: headerImg,
+      stepImages: jsonEncode(stepImgs),
+      stepImageMap: '[]',
+      imageUrl: null,
+      isFavorite: false,
+      cookCount: 0,
+      source: SmokingSource.imported.name,
+      pairedRecipeIds: '[]',
+      createdAt: now,
+      updatedAt: now,
     );
-    
-    // Set multiple images if available
-    if (imagePaths != null && imagePaths!.isNotEmpty) {
-      recipe.headerImage = imagePaths!.first;
-      if (imagePaths!.length > 1) {
-        recipe.stepImages = imagePaths!.sublist(1);
-      }
-    }
-    
-    return recipe;
   }
 
   /// Detect smoking category from name, URL, and ingredients
@@ -655,10 +683,10 @@ class RecipeImportResult {
     final vegetables = <String>[];
     const cheeseKeywords = ['mozzarella', 'parmesan', 'cheddar', 'gouda', 'provolone', 
         'ricotta', 'gorgonzola', 'feta', 'goat cheese', 'burrata', 'fontina', 'asiago',
-        'pecorino', 'gruyere', 'brie', 'cheese'];
+        'pecorino', 'gruyere', 'brie', 'cheese',];
     const proteinKeywords = ['pepperoni', 'sausage', 'bacon', 'ham', 'prosciutto', 
         'salami', 'chicken', 'beef', 'pork', 'anchov', 'shrimp', 'meat', 'turkey',
-        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg'];
+        'chorizo', 'pancetta', 'nduja', 'capicola', 'egg',];
     
     for (final ingredient in ingredients) {
       final lower = ingredient.name.toLowerCase();
@@ -678,16 +706,25 @@ class RecipeImportResult {
       }
     }
 
-    return Pizza.create(
+    final now = DateTime.now();
+    return Pizza(
+      id: 0,
       uuid: uuid,
       name: name ?? 'Untitled Pizza',
-      base: base,
-      cheeses: cheeses,
-      proteins: proteins,
-      vegetables: vegetables,
+      base: base.name,
+      cheeses: jsonEncode(cheeses),
+      proteins: jsonEncode(proteins),
+      vegetables: jsonEncode(vegetables),
       notes: comments,
       imageUrl: imageUrl,
-      source: PizzaSource.imported,
+      source: PizzaSource.imported.name,
+      isFavorite: false,
+      cookCount: 0,
+      rating: 0,
+      tags: '[]',
+      createdAt: now,
+      updatedAt: now,
+      version: 1,
     );
   }
   RecipeImportResult copyWith({

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,6 +9,7 @@ import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/theme/colors.dart';
 import '../../../shared/widgets/memoix_header.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../../core/database/app_database.dart' hide Ingredient;
 import '../models/sandwich.dart';
 import '../repository/sandwich_repository.dart';
 import '../../sharing/services/share_service.dart';
@@ -34,21 +36,16 @@ class SandwichDetailScreen extends ConsumerWidget {
         body: Center(child: Text('Error: $err')),
       ),
       data: (sandwiches) {
-        final sandwich = sandwiches.firstWhere(
-          (s) => s.uuid == sandwichId,
-          orElse: () => Sandwich()
-            ..uuid = ''
-            ..name = '',
-        );
+        final matches = sandwiches.where((s) => s.uuid == sandwichId).toList();
 
-        if (sandwich.name.isEmpty) {
+        if (matches.isEmpty) {
           return Scaffold(
             appBar: AppBar(),
             body: const Center(child: Text('Sandwich not found')),
           );
         }
 
-        return _SandwichDetailView(sandwich: sandwich);
+        return _SandwichDetailView(sandwich: matches.first);
       },
     );
   }
@@ -169,8 +166,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
     final isCompact = screenWidth < 600;
     final chipFontSize = isCompact ? 11.0 : 12.0;
     
-    final proteins = sandwich.proteins;
-    final cheeses = sandwich.cheeses;
+    final proteins = (jsonDecode(sandwich.proteins) as List).cast<String>();
+    final cheeses = (jsonDecode(sandwich.cheeses) as List).cast<String>();
     
     String label;
     if (proteins.isEmpty) {
@@ -303,8 +300,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
 
   /// Build protein indicator matching list view logic
   Widget _buildProteinIndicator(Sandwich sandwich, ThemeData theme) {
-    final proteins = sandwich.proteins;
-    final cheeses = sandwich.cheeses;
+    final proteins = (jsonDecode(sandwich.proteins) as List).cast<String>();
+    final cheeses = (jsonDecode(sandwich.cheeses) as List).cast<String>();
     final textColor = theme.colorScheme.onSurfaceVariant;
     
     String label;
@@ -443,18 +440,26 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
   }
 
   Future<void> _duplicateSandwich(BuildContext context, WidgetRef ref, Sandwich sandwich) async {
-    final duplicate = Sandwich()
-      ..uuid = '' // Will be generated on save
-      ..name = '${sandwich.name} (Copy)'
-      ..bread = sandwich.bread
-      ..proteins = List.from(sandwich.proteins)
-      ..vegetables = List.from(sandwich.vegetables)
-      ..cheeses = List.from(sandwich.cheeses)
-      ..condiments = List.from(sandwich.condiments)
-      ..notes = sandwich.notes
-      ..imageUrl = sandwich.imageUrl
-      ..source = SandwichSource.personal
-      ..tags = List.from(sandwich.tags);
+    final duplicate = Sandwich(
+      id: 0,
+      uuid: '',
+      name: '${sandwich.name} (Copy)',
+      bread: sandwich.bread,
+      proteins: sandwich.proteins,
+      vegetables: sandwich.vegetables,
+      cheeses: sandwich.cheeses,
+      condiments: sandwich.condiments,
+      notes: sandwich.notes,
+      imageUrl: sandwich.imageUrl,
+      source: SandwichSource.personal.name,
+      isFavorite: false,
+      cookCount: 0,
+      rating: 0,
+      tags: sandwich.tags,
+      createdAt: DateTime.now(),
+      updatedAt: DateTime.now(),
+      version: 1,
+    );
 
     final repo = ref.read(sandwichRepositoryProvider);
     await repo.saveSandwich(duplicate);
@@ -549,6 +554,10 @@ class _SandwichComponentsGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final cheeses = (jsonDecode(sandwich.cheeses) as List).cast<String>();
+    final condiments = (jsonDecode(sandwich.condiments) as List).cast<String>();
+    final proteins = (jsonDecode(sandwich.proteins) as List).cast<String>();
+    final vegetables = (jsonDecode(sandwich.vegetables) as List).cast<String>();
     
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -561,29 +570,29 @@ class _SandwichComponentsGrid extends StatelessWidget {
           ),
         
         // Row 1: Cheese (50%) | Condiments (50%)
-        if (sandwich.cheeses.isNotEmpty || sandwich.condiments.isNotEmpty) ...[
+        if (cheeses.isNotEmpty || condiments.isNotEmpty) ...[
           IntrinsicHeight(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Cheese section - always 50%
                 Expanded(
-                  child: sandwich.cheeses.isNotEmpty
+                  child: cheeses.isNotEmpty
                       ? _buildComponentSection(
                           theme,
-                          sandwich.cheeses.length == 1 ? 'Cheese' : 'Cheeses',
-                          sandwich.cheeses,
+                          cheeses.length == 1 ? 'Cheese' : 'Cheeses',
+                          cheeses,
                         )
                       : const SizedBox(),
                 ),
                 const SizedBox(width: 16),
                 // Condiments section - always 50%
                 Expanded(
-                  child: sandwich.condiments.isNotEmpty
+                  child: condiments.isNotEmpty
                       ? _buildComponentSection(
                           theme, 
                           'Condiments',
-                          sandwich.condiments,
+                          condiments,
                         )
                       : const SizedBox(),
                 ),
@@ -594,29 +603,29 @@ class _SandwichComponentsGrid extends StatelessWidget {
         ],
         
         // Row 2: Proteins (50%) | Vegetables (50%)
-        if (sandwich.proteins.isNotEmpty || sandwich.vegetables.isNotEmpty)
+        if (proteins.isNotEmpty || vegetables.isNotEmpty)
           IntrinsicHeight(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Proteins section - always 50%
                 Expanded(
-                  child: sandwich.proteins.isNotEmpty
+                  child: proteins.isNotEmpty
                       ? _buildComponentSection(
                           theme,
                           'Proteins',
-                          sandwich.proteins,
+                          proteins,
                         )
                       : const SizedBox(),
                 ),
                 const SizedBox(width: 16),
                 // Vegetables section - always 50%
                 Expanded(
-                  child: sandwich.vegetables.isNotEmpty
+                  child: vegetables.isNotEmpty
                       ? _buildComponentSection(
                           theme,
-                          sandwich.vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
-                          sandwich.vegetables,
+                          vegetables.length == 1 ? 'Vegetable' : 'Vegetables',
+                          vegetables,
                         )
                       : const SizedBox(),
                 ),
@@ -740,7 +749,7 @@ class _SandwichIngredientListState extends State<_SandwichIngredientList> {
                     style: TextStyle(
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                     ),
                   ),

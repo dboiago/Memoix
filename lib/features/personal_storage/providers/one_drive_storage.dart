@@ -11,7 +11,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../config/app_config.dart';
 import '../../../core/services/graph_http_client.dart';
+import '../models/recipe_bundle.dart';
+import '../models/storage_meta.dart';
 import 'cloud_storage_provider.dart';
+import 'personal_storage_provider.dart';
 /// Custom exception for repository not found errors
 class RepositoryNotFoundException implements Exception {
   final String repositoryName;
@@ -29,7 +32,7 @@ class RepositoryNotFoundException implements Exception {
 /// Uses Microsoft Graph API to interact with OneDrive storage.
 /// Authentication is handled via OAuth2 using flutter_appauth.
 /// Access tokens are securely stored using flutter_secure_storage.
-class OneDriveStorage implements CloudStorageProvider {
+class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   // Secure storage keys
   static const _keyAccessToken = 'onedrive_access_token';
   static const _keyRefreshToken = 'onedrive_refresh_token';
@@ -38,6 +41,11 @@ class OneDriveStorage implements CloudStorageProvider {
   static const _keyFolderName = 'onedrive_folder_name';
   static const _keyDriveId = 'onedrive_drive_id';
   static const _keyTargetFolderId = 'onedrive_target_folder_id';
+
+  // File names for storage files
+  static const _recipesFileName = 'memoix_recipes.json';
+  static const _metaFileName = '.memoix_meta.json';
+  static const _databaseFileName = 'memoix.db';
 
   // Microsoft Graph API endpoints
   static const _graphApiBase = 'https://graph.microsoft.com/v1.0';
@@ -67,6 +75,96 @@ class OneDriveStorage implements CloudStorageProvider {
   String? _targetFolderId;  // Folder ID within the drive (same as _activeFolderId)
   GraphHttpClient? _httpClient;
   bool _isConnected = false;
+
+  // --- PersonalStorageProvider interface ---
+
+  @override
+  String get name => 'Microsoft OneDrive';
+
+  @override
+  String get id => 'onedrive';
+
+  @override
+  bool get supportsAutomaticSync => true;
+
+  @override
+  bool get supportsFastMetaCheck => true;
+
+  @override
+  bool get supportsAtomicWrites => true;
+
+  @override
+  bool get supportsFolders => true;
+
+  @override
+  bool get isAdvanced => false;
+
+  @override
+  String? get connectedPath => _activeFolderName;
+
+  @override
+  Future<void> initialize() async {
+    await init();
+  }
+
+  @override
+  Future<bool> connect() async {
+    await signIn();
+    return isConnected;
+  }
+
+  @override
+  Future<void> disconnect() async {
+    await signOut();
+  }
+
+  @override
+  Future<void> push(RecipeBundle bundle) async {
+    _ensureConnected();
+    final content = bundle.toJsonString(pretty: true);
+    await uploadFile(_recipesFileName, content);
+  }
+
+  @override
+  Future<RecipeBundle?> pull() async {
+    _ensureConnected();
+    final content = await downloadFile(_recipesFileName);
+    if (content == null) return null;
+    return RecipeBundle.fromJsonString(content);
+  }
+
+  @override
+  Future<StorageMeta?> getMeta() async {
+    _ensureConnected();
+    try {
+      final content = await downloadFile(_metaFileName);
+      if (content == null) return null;
+      final json = jsonDecode(content) as Map<String, dynamic>;
+      return StorageMeta.fromJson(json);
+    } catch (e) {
+      debugPrint('OneDriveStorage: Get meta failed: $e');
+      return null;
+    }
+  }
+
+  @override
+  Future<void> updateMeta(StorageMeta meta) async {
+    _ensureConnected();
+    final content = const JsonEncoder.withIndent('  ').convert(meta.toJson());
+    await uploadFile(_metaFileName, content);
+  }
+
+  @override
+  Future<void> pushDatabaseBytes(Uint8List bytes) async {
+    _ensureConnected();
+    await uploadFileBytes(_databaseFileName, bytes);
+  }
+
+  @override
+  Future<Uint8List?> pullDatabaseBytes() async {
+    _ensureConnected();
+    return downloadFileBytes(_databaseFileName);
+  }
 
   // --- CloudStorageProvider interface ---
 
@@ -103,11 +201,14 @@ class OneDriveStorage implements CloudStorageProvider {
   Future<void> signIn() async {
     try {
       // Use platform-specific OAuth flow
-      if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      final isDesktop = defaultTargetPlatform == TargetPlatform.windows ||
+          defaultTargetPlatform == TargetPlatform.linux ||
+          defaultTargetPlatform == TargetPlatform.macOS;
+      if (isDesktop) {
         // Desktop: Manual OAuth with loopback server
         await _signInDesktop();
       } else {
-        // Mobile: Use flutter_appauth
+        // Mobile: Manual OAuth with deep link callback via app_links
         await _signInMobile();
       }
 
@@ -121,7 +222,6 @@ class OneDriveStorage implements CloudStorageProvider {
     }
   }
 
-  /// Mobile OAuth flow using flutter_appauth
   Future<void> _signInMobile() async {
     final result = await _appAuth.authorizeAndExchangeCode(
       AuthorizationTokenRequest(
@@ -134,16 +234,12 @@ class OneDriveStorage implements CloudStorageProvider {
         scopes: _scopes,
       ),
     );
-
     if (result == null) {
       throw Exception('Sign in was cancelled by user');
     }
-
-    // Store tokens securely
     _accessToken = result.accessToken;
     _refreshToken = result.refreshToken;
     _tokenExpiry = result.accessTokenExpirationDateTime;
-
     await _secureStorage.write(key: _keyAccessToken, value: _accessToken);
     if (_refreshToken != null) {
       await _secureStorage.write(key: _keyRefreshToken, value: _refreshToken);
@@ -276,6 +372,8 @@ class OneDriveStorage implements CloudStorageProvider {
       await _secureStorage.delete(key: _keyTokenExpiry);
       await _secureStorage.delete(key: _keyFolderId);
       await _secureStorage.delete(key: _keyFolderName);
+      await _secureStorage.delete(key: _keyDriveId);
+      await _secureStorage.delete(key: _keyTargetFolderId);
 
       // Clear in-memory state
       _accessToken = null;
@@ -347,31 +445,76 @@ class OneDriveStorage implements CloudStorageProvider {
     _ensureConnected();
 
     try {
-      // Use _findRepository to locate the folder in My Files or Shared with Me
-      final repoInfo = await _findRepository(name);
-      
-      final driveId = repoInfo['driveId'] as String;
-      final targetFolderId = repoInfo['folderId'] as String;
-      final isShared = repoInfo['isShared'] as bool;
+      // Step 1: Try to resolve the folder by ID in the user's own drive.
+      // This avoids the name-lookup ambiguity that existed previously.
+      final myDriveUrl = Uri.parse('$_graphApiBase/me/drive/items/$folderId');
+      final myDriveResponse = await _httpClient!.get(myDriveUrl);
 
-      // Verify folder exists by fetching its metadata
+      String driveId;
+      final String targetFolderId = folderId;
+
+      if (myDriveResponse.statusCode == 200) {
+        final data = jsonDecode(myDriveResponse.body) as Map<String, dynamic>;
+        final parentRef = data['parentReference'] as Map<String, dynamic>?;
+        final resolvedDriveId = parentRef?['driveId'] as String?;
+        // parentReference.driveId may be absent for root-level items on some
+        // personal account configurations. Never fall back to the string 'me'
+        // because it is invalid in /drives/{id}/ Graph API URLs.
+        driveId = (resolvedDriveId != null && resolvedDriveId.isNotEmpty)
+            ? resolvedDriveId
+            : await _fetchOwnDriveId();
+        debugPrint('OneDriveStorage: Resolved "$name" in own drive (driveId: $driveId)');
+      } else {
+        // Step 2: Search Shared with Me items for the supplied folder ID.
+        debugPrint('OneDriveStorage: "$name" not in own drive, checking Shared with Me...');
+        final sharedUrl = Uri.parse('$_graphApiBase/me/drive/sharedWithMe');
+        final sharedResponse = await _httpClient!.get(sharedUrl);
+
+        if (sharedResponse.statusCode != 200) {
+          throw RepositoryNotFoundException(name,
+              customMessage: 'Folder "$name" ($folderId) not found',);
+        }
+
+        final sharedData = jsonDecode(sharedResponse.body) as Map<String, dynamic>;
+        final items = sharedData['value'] as List<dynamic>;
+
+        String? foundDriveId;
+        for (final item in items) {
+          final itemMap = item as Map<String, dynamic>;
+          final remoteItem = itemMap['remoteItem'] as Map<String, dynamic>?;
+          final remoteId = remoteItem?['id'] as String?;
+          if (remoteId == folderId) {
+            final parentRef = remoteItem?['parentReference'] as Map<String, dynamic>?;
+            foundDriveId = parentRef?['driveId'] as String?;
+            break;
+          }
+        }
+
+        if (foundDriveId == null) {
+          throw RepositoryNotFoundException(name,
+              customMessage:
+                  'Folder "$name" ($folderId) not found in My Files or Shared with Me',);
+        }
+        driveId = foundDriveId;
+        debugPrint('OneDriveStorage: Resolved "$name" in Shared with Me (driveId: $driveId)');
+      }
+
+      // Step 3: Verify reachability using the resolved drive ID.
       final verifyUrl = Uri.parse('$_graphApiBase/drives/$driveId/items/$targetFolderId');
       final response = await _httpClient!.get(verifyUrl);
 
       if (response.statusCode == 200) {
+        // Update in-memory state only — do NOT persist to secure storage here.
+        // Persisting here would overwrite the personal Memoix folder keys with
+        // the shared repo's IDs, breaking personal backup on next app launch.
+        // Persistence is only done explicitly via _persistFolderState(), which
+        // is called from setupDefaultFolder() for the personal Memoix folder.
         _activeFolderId = targetFolderId;
         _activeFolderName = name;
         _targetDriveId = driveId;
         _targetFolderId = targetFolderId;
 
-        // Persist to secure storage
-        await _secureStorage.write(key: _keyFolderId, value: targetFolderId);
-        await _secureStorage.write(key: _keyFolderName, value: name);
-        await _secureStorage.write(key: _keyDriveId, value: driveId);
-        await _secureStorage.write(key: _keyTargetFolderId, value: targetFolderId);
-
-        final location = isShared ? 'Shared with Me' : 'My Files';
-        debugPrint('OneDriveStorage: Switched to folder "$name" ($targetFolderId) in $location (drive: $driveId)');
+        debugPrint('OneDriveStorage: Switched to folder "$name" ($targetFolderId) on drive $driveId');
       } else if (response.statusCode == 404) {
         throw Exception('Folder not found: $name ($folderId)');
       } else {
@@ -380,12 +523,150 @@ class OneDriveStorage implements CloudStorageProvider {
         );
       }
     } on RepositoryNotFoundException {
-      // Re-throw with clear message
       rethrow;
     } catch (e) {
       debugPrint('OneDriveStorage: switchRepository error: $e');
       rethrow;
     }
+  }
+
+  /// Verify access to a folder by ID.
+  ///
+  /// Returns true if the folder is reachable with the current credentials.
+  /// Used by [_verifyStorage] in SharedStorageScreen for OneDrive repositories.
+  Future<bool> verifyFolderAccess(String folderId) async {
+    if (!_isConnected || _httpClient == null) return false;
+    try {
+      // If we already have the target drive ID cached, use it first.
+      if (_targetDriveId != null) {
+        final url = Uri.parse('$_graphApiBase/drives/$_targetDriveId/items/$folderId');
+        final response = await _httpClient!.get(url);
+        if (response.statusCode == 200) return true;
+        if (response.statusCode == 403) return false;
+      }
+      // Fallback: try via the user's own drive root.
+      final url = Uri.parse('$_graphApiBase/me/drive/items/$folderId');
+      final response = await _httpClient!.get(url);
+      return response.statusCode == 200;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Fetch the user's own OneDrive drive ID via GET /me/drive.
+  ///
+  /// Used as a fallback when parentReference.driveId is absent from an item
+  /// metadata response. Never returns 'me' — throws on failure.
+  Future<String> _fetchOwnDriveId() async {
+    final url = Uri.parse('$_graphApiBase/me/drive');
+    final response = await _httpClient!.get(url);
+    if (response.statusCode != 200) {
+      throw Exception(
+        'OneDriveStorage: Failed to fetch own drive ID: '
+        '${response.statusCode} ${response.body}',
+      );
+    }
+    final data = jsonDecode(response.body) as Map<String, dynamic>;
+    final id = data['id'] as String?;
+    if (id == null || id.isEmpty) {
+      throw Exception('OneDriveStorage: /me/drive did not return a valid id');
+    }
+    debugPrint('OneDriveStorage: Own drive ID fetched: $id');
+    return id;
+  }
+
+  /// Find or create the default "Memoix" folder in the user's OneDrive root,
+  /// then call [switchRepository] to set all target fields.
+  ///
+  /// This mirrors [GoogleDriveStorage._setupMemoixFolder] and is called from
+  /// [personal_storage_screen._connectOneDrive] after a successful sign-in.
+  Future<void> setupDefaultFolder() async {
+    _ensureConnected();
+
+    const defaultName = 'Memoix';
+
+    // Search for an existing Memoix folder at root level.
+    final searchUrl = Uri.parse(
+      '$_graphApiBase/me/drive/root/children?\$filter=name eq \'$defaultName\'',
+    );
+    final searchResponse = await _httpClient!.get(searchUrl);
+
+    String folderId;
+
+    if (searchResponse.statusCode == 200) {
+      final data = jsonDecode(searchResponse.body) as Map<String, dynamic>;
+      final items = data['value'] as List<dynamic>;
+      if (items.isNotEmpty) {
+        final existing = items.first as Map<String, dynamic>;
+        folderId = existing['id'] as String;
+        debugPrint('OneDriveStorage: Found existing Memoix folder: $folderId');
+      } else {
+        // Not found — create it.
+        folderId = await createFolder(defaultName);
+        debugPrint('OneDriveStorage: Created Memoix folder: $folderId');
+      }
+    } else {
+      // Search failed — create a new folder.
+      folderId = await createFolder(defaultName);
+      debugPrint('OneDriveStorage: Created Memoix folder (search failed): $folderId');
+    }
+
+    await switchRepository(folderId, defaultName);
+
+    // Persist the personal Memoix folder state so it survives app restarts.
+    // This is the ONLY place that writes to the personal folder secure-storage
+    // keys. switchRepository() is deliberately in-memory-only to prevent
+    // shared repo switches from contaminating personal storage state.
+    await _persistFolderState();
+  }
+
+  /// Persist the current folder state to secure storage.
+  ///
+  /// Called only from [setupDefaultFolder] to save the personal Memoix folder.
+  /// Must NOT be called from [switchRepository] so shared repo operations
+  /// stay isolated from personal backup preferences.
+  Future<void> _persistFolderState() async {
+    if (_targetFolderId != null) {
+      await _secureStorage.write(key: _keyTargetFolderId, value: _targetFolderId);
+    }
+    if (_targetDriveId != null) {
+      await _secureStorage.write(key: _keyDriveId, value: _targetDriveId);
+    }
+    if (_activeFolderId != null) {
+      await _secureStorage.write(key: _keyFolderId, value: _activeFolderId);
+    }
+    if (_activeFolderName != null) {
+      await _secureStorage.write(key: _keyFolderName, value: _activeFolderName);
+    }
+  }
+
+  /// Check if remote folder already contains an existing memoix_recipes.json file.
+  ///
+  /// Returns true if the file exists, false if not found or an error occurs.
+  /// Used in the connect flow to decide whether to push (first-time) or pull.
+  Future<bool> hasExistingData() async {
+    if (!isConnected || _targetDriveId == null || _targetFolderId == null) {
+      return false;
+    }
+    try {
+      final url = Uri.parse(
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$_recipesFileName',
+      );
+      final response = await _httpClient!.get(url);
+      return response.statusCode == 200;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Grant folder permission to a user by email.
+  ///
+  /// OneDrive folder sharing via Microsoft Graph is not yet implemented.
+  /// Use the share link instead.
+  Future<void> addPermission(String folderId, String email) async {
+    throw UnimplementedError(
+      'OneDrive email invitations are not yet supported. Use the share link instead.',
+    );
   }
 
   @override
@@ -413,8 +694,10 @@ class OneDriveStorage implements CloudStorageProvider {
     }
 
     try {
-      // On Windows, use manual HTTP request since flutter_appauth doesn't support it
-      if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      final isDesktop = defaultTargetPlatform == TargetPlatform.windows ||
+          defaultTargetPlatform == TargetPlatform.linux ||
+          defaultTargetPlatform == TargetPlatform.macOS;
+      if (isDesktop) {
         await _refreshTokenDesktop();
       } else {
         await _refreshTokenMobile();
@@ -666,6 +949,70 @@ class OneDriveStorage implements CloudStorageProvider {
       }
     } catch (e) {
       debugPrint('OneDriveStorage: downloadFile error: $e');
+      rethrow;
+    }
+  }
+
+  /// Upload raw bytes to the active OneDrive folder
+  Future<void> uploadFileBytes(String fileName, Uint8List bytes) async {
+    _ensureConnected();
+
+    if (_targetDriveId == null || _targetFolderId == null) {
+      throw Exception('No active folder selected');
+    }
+
+    try {
+      final url = Uri.parse(
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$fileName:/content',
+      );
+
+      final response = await _httpClient!.put(
+        url,
+        body: bytes,
+        headers: {'Content-Type': 'application/octet-stream'},
+      );
+
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        debugPrint('OneDriveStorage: File "$fileName" (bytes) uploaded successfully');
+      } else {
+        throw Exception(
+          'Failed to upload file: ${response.statusCode} ${response.body}',
+        );
+      }
+    } catch (e) {
+      debugPrint('OneDriveStorage: uploadFileBytes error: $e');
+      rethrow;
+    }
+  }
+
+  /// Download raw bytes from the active OneDrive folder
+  Future<Uint8List?> downloadFileBytes(String fileName) async {
+    _ensureConnected();
+
+    if (_targetDriveId == null || _targetFolderId == null) {
+      throw Exception('No active folder selected');
+    }
+
+    try {
+      final url = Uri.parse(
+        '$_graphApiBase/drives/$_targetDriveId/items/$_targetFolderId:/$fileName:/content',
+      );
+
+      final response = await _httpClient!.get(url);
+
+      if (response.statusCode == 200) {
+        debugPrint('OneDriveStorage: File "$fileName" (bytes) downloaded successfully');
+        return response.bodyBytes;
+      } else if (response.statusCode == 404) {
+        debugPrint('OneDriveStorage: File "$fileName" not found');
+        return null;
+      } else {
+        throw Exception(
+          'Failed to download file: ${response.statusCode} ${response.body}',
+        );
+      }
+    } catch (e) {
+      debugPrint('OneDriveStorage: downloadFileBytes error: $e');
       rethrow;
     }
   }

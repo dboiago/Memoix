@@ -69,7 +69,7 @@ Duration? extractTimerDuration(String stepText) {
         hours: h.truncate(),
         minutes: min.truncate(),
       ),
-    ));
+    ),);
   }
 
   // Build a set of character ranges covered by combined matches so standalone

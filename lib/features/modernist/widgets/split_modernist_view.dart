@@ -30,22 +30,6 @@ class SplitModernistView extends StatelessWidget {
     this.onIngredientLongPress,
   });
 
-  /// Calculate the flex ratio for ingredients column based on screen width.
-  int _getIngredientsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 1; // ~35% on tablet (paired with 2 for directions)
-  }
-
-  /// Calculate the flex ratio for directions column based on screen width.
-  int _getDirectionsFlex(double width) {
-    if (width < 600) {
-      return 1; // 50% on mobile
-    }
-    return 2; // ~65% on tablet
-  }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
@@ -102,7 +86,7 @@ class SplitModernistView extends StatelessWidget {
                     children: [
                       // Ingredients header
                       Expanded(
-                        flex: _getIngredientsFlex(screenWidth),
+                        flex: 1,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -114,7 +98,7 @@ class SplitModernistView extends StatelessWidget {
                       SizedBox(width: dividerPadding * 2 + 1),
                       // Directions header
                       Expanded(
-                        flex: _getDirectionsFlex(screenWidth),
+                        flex: screenWidth < 600 ? 1 : 2,
                         child: Container(
                           height: headerHeight,
                           padding: EdgeInsets.symmetric(horizontal: padding, vertical: 8),
@@ -133,7 +117,7 @@ class SplitModernistView extends StatelessWidget {
                       children: [
                         // Ingredients Column - independently scrollable
                         Expanded(
-                          flex: _getIngredientsFlex(screenWidth),
+                          flex: 1,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
@@ -151,13 +135,13 @@ class SplitModernistView extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal: dividerPadding),
                           child: Container(
                             width: 1,
-                            color: theme.colorScheme.onSurfaceVariant.withOpacity(0.3),
+                            color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
                           ),
                         ),
 
                         // Directions Column - independently scrollable
                         Expanded(
-                          flex: _getDirectionsFlex(screenWidth),
+                          flex: screenWidth < 600 ? 1 : 2,
                           child: ScrollbarTheme(
                             data: ScrollbarThemeData(
                               thickness: WidgetStateProperty.all(2.0),
@@ -325,7 +309,7 @@ class SplitModernistView extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.5),
+                        color: Colors.black.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: const Icon(
@@ -378,7 +362,7 @@ class SplitModernistView extends StatelessWidget {
             // Dark background
             GestureDetector(
               onTap: () => Navigator.pop(ctx),
-              child: Container(color: Colors.black.withOpacity(0.9)),
+              child: Container(color: Colors.black.withValues(alpha: 0.9)),
             ),
             // Image
             Center(
@@ -566,7 +550,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                       fontWeight: FontWeight.w500,
                       decoration: isChecked ? TextDecoration.lineThrough : null,
                       color: isChecked
-                          ? theme.colorScheme.onSurface.withOpacity(0.5)
+                          ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                           : null,
                     ),
                   ),
@@ -579,7 +563,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         fontSize: widget.isCompact ? 11 : 12,
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.4)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
                             : theme.colorScheme.onSurfaceVariant,
                       ),
                     ),
@@ -593,7 +577,7 @@ class _IngredientsColumnState extends State<_IngredientsColumn> {
                         fontStyle: FontStyle.italic,
                         decoration: isChecked ? TextDecoration.lineThrough : null,
                         color: isChecked
-                            ? theme.colorScheme.onSurface.withOpacity(0.4)
+                            ? theme.colorScheme.onSurface.withValues(alpha: 0.4)
                             : theme.colorScheme.primary,
                       ),
                     ),
@@ -705,8 +689,8 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                 height: circleSize,
                 decoration: BoxDecoration(
                   color: isCompleted
-                      ? theme.colorScheme.secondary.withOpacity(0.2)
-                      : theme.colorScheme.secondary.withOpacity(0.15),
+                      ? theme.colorScheme.secondary.withValues(alpha: 0.2)
+                      : theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: theme.colorScheme.secondary,
@@ -736,7 +720,7 @@ class _DirectionsColumnState extends ConsumerState<_DirectionsColumn> {
                     fontSize: stepFontSize,
                     decoration: isCompleted ? TextDecoration.lineThrough : null,
                     color: isCompleted
-                        ? theme.colorScheme.onSurface.withOpacity(0.5)
+                        ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                         : null,
                   ),
                 ),

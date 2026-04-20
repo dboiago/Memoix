@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../core/providers.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
-import '../../mealplan/models/meal_plan.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/course.dart';
 import '../models/recipe.dart';
@@ -236,7 +233,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                           key: Key('recipe_swipe_${recipe.uuid}'),
                           direction: DismissDirection.startToEnd,
                           background: Container(
-                            color: theme.colorScheme.primary.withOpacity(0.2),
+                            color: theme.colorScheme.primary.withValues(alpha: 0.2),
                             alignment: Alignment.centerLeft,
                             padding: const EdgeInsets.only(left: 16),
                             child: Row(
@@ -309,12 +306,12 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           });
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected 
               ? theme.colorScheme.secondary 
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
@@ -507,6 +504,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                 r.source == RecipeSource.personal ||
                 r.source == RecipeSource.imported ||
                 r.source == RecipeSource.ocr ||
+                r.source == RecipeSource.ai ||
                 r.source == RecipeSource.url,)
             .toList();
       case RecipeSourceFilter.all:
@@ -525,7 +523,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
         result = result.where((r) => _selectedCuisines.contains(r.subcategory)).toList();
       } else {
         result = result.where((r) =>
-            r.cuisine != null && _selectedCuisines.contains(r.cuisine)).toList();
+            r.cuisine != null && _selectedCuisines.contains(r.cuisine),).toList();
       }
     }
 

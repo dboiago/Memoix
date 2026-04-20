@@ -7,6 +7,7 @@ import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
 import '../../recipes/models/cuisine.dart';
+import '../../../core/database/app_database.dart';
 import '../models/cellar_entry.dart';
 import '../repository/cellar_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -149,7 +150,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
                   return _defaultCategories;
                 }
                 return _defaultCategories.where((c) =>
-                    c.toLowerCase().contains(textEditingValue.text.toLowerCase()));
+                    c.toLowerCase().contains(textEditingValue.text.toLowerCase()),);
               },
               fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
                 if (controller.text != _categoryController.text) {
@@ -257,7 +258,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
           color: theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
+            color: theme.colorScheme.outline.withValues(alpha: 0.3),
           ),
         ),
         child: _imagePath != null
@@ -380,26 +381,30 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
   }
 
   Future<void> _pickImage(ImageSource source) async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(
-      source: source,
-      maxWidth: 1200,
-      maxHeight: 1200,
-      imageQuality: 85,
-    );
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
 
-    if (pickedFile != null) {
-      final appDir = await getApplicationDocumentsDirectory();
-      final imagesDir = Directory('${appDir.path}/cellar_images');
-      if (!await imagesDir.exists()) {
-        await imagesDir.create(recursive: true);
+      if (pickedFile != null) {
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/cellar_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedPath = '${imagesDir.path}/$fileName';
+        await File(pickedFile.path).copy(savedPath);
+
+        setState(() => _imagePath = savedPath);
       }
-
-      final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
-      final savedPath = '${imagesDir.path}/$fileName';
-      await File(pickedFile.path).copy(savedPath);
-
-      setState(() => _imagePath = savedPath);
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
@@ -410,24 +415,25 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       return;
     }
 
-    final entry = _existingEntry ?? CellarEntry();
-    entry
-      ..uuid = _existingEntry?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..producer = _selectedProducer
-      ..category = _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim()
-      ..buy = _buy
-      ..tastingNotes = _tastingNotesController.text.trim().isEmpty ? null : _tastingNotesController.text.trim()
-      ..abv = _abvController.text.trim().isEmpty ? null : _abvController.text.trim()
-      ..ageVintage = _ageVintageController.text.trim().isEmpty ? null : _ageVintageController.text.trim()
-      ..priceRange = _priceRange > 0 ? _priceRange : null
-      ..imageUrl = _imagePath
-      ..source = _existingEntry?.source ?? CellarSource.personal
-      ..updatedAt = DateTime.now();
-
-    if (_existingEntry == null) {
-      entry.createdAt = DateTime.now();
-    }
+    final now = DateTime.now();
+    final entry = CellarEntry(
+      id: _existingEntry?.id ?? 0,
+      uuid: _existingEntry?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      producer: _selectedProducer,
+      category: _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim(),
+      buy: _buy,
+      tastingNotes: _tastingNotesController.text.trim().isEmpty ? null : _tastingNotesController.text.trim(),
+      abv: _abvController.text.trim().isEmpty ? null : _abvController.text.trim(),
+      ageVintage: _ageVintageController.text.trim().isEmpty ? null : _ageVintageController.text.trim(),
+      priceRange: _priceRange > 0 ? _priceRange : null,
+      imageUrl: _imagePath,
+      source: _existingEntry?.source ?? CellarSource.personal.name,
+      isFavorite: _existingEntry?.isFavorite ?? false,
+      createdAt: _existingEntry?.createdAt ?? now,
+      updatedAt: now,
+      version: _existingEntry?.version ?? 1,
+    );
 
     final repo = ref.read(cellarRepositoryProvider);
     await repo.saveEntry(entry);
@@ -626,7 +632,7 @@ class _ProducerPickerSheetState extends State<_ProducerPickerSheet> {
           leading: Text(cuisine.flag, style: const TextStyle(fontSize: 24)),
           title: Text(cuisine.name),
           subtitle: Text(cuisine.continent, 
-            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12)),
+            style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant, fontSize: 12),),
           trailing: isSelected
               ? Icon(Icons.check, color: Theme.of(context).colorScheme.primary)
               : null,
@@ -705,7 +711,7 @@ class _PriceRangeSelector extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: isSelected 
                       ? theme.colorScheme.primary 
-                      : theme.colorScheme.outline.withOpacity(0.4),
+                      : theme.colorScheme.outline.withValues(alpha: 0.4),
                 ),
               ),
             ),

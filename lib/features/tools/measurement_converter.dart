@@ -284,7 +284,6 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
           },
         ).then((_) async {
           await processIntegrityResponses(ref);
-          await _refreshTemperatureKeyboard();
         });
       }
 
@@ -423,7 +422,7 @@ class _MeasurementConverterWidgetState extends ConsumerState<MeasurementConverte
                       decoration: decoration,
                       onChanged: (_) => _convert(),
                     );
-                  }),
+                  },),
                 ),
                 const SizedBox(width: 12),
                 Expanded(

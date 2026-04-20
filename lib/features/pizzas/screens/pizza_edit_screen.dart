@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart';
 import '../../../core/utils/suggestions.dart';
 import '../models/pizza.dart';
 import '../repository/pizza_repository.dart';
@@ -165,7 +167,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
     if (pizza != null) {
       _nameController.text = pizza.name;
       _notesController.text = pizza.notes ?? '';
-      _selectedBase = pizza.base.displayName;
+      _selectedBase = PizzaBaseExtension.fromString(pizza.base).displayName;
       _imagePath = pizza.imageUrl;
 
       // Clear default rows and load cheeses
@@ -173,7 +175,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
         c.dispose();
       }
       _cheeseControllers.clear();
-      for (final cheese in pizza.cheeses) {
+      for (final cheese in (jsonDecode(pizza.cheeses) as List).cast<String>()) {
         _addCheeseRow(value: cheese);
       }
       _addCheeseRow(); // Add empty row at end
@@ -183,7 +185,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
         c.dispose();
       }
       _proteinControllers.clear();
-      for (final protein in pizza.proteins) {
+      for (final protein in (jsonDecode(pizza.proteins) as List).cast<String>()) {
         _addProteinRow(value: protein);
       }
       _addProteinRow(); // Add empty row at end
@@ -193,7 +195,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
         c.dispose();
       }
       _vegetableControllers.clear();
-      for (final vegetable in pizza.vegetables) {
+      for (final vegetable in (jsonDecode(pizza.vegetables) as List).cast<String>()) {
         _addVegetableRow(value: vegetable);
       }
       _addVegetableRow(); // Add empty row at end
@@ -437,7 +439,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_cheeseControllers[index].text.isNotEmpty || _cheeseControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7),),
+                    color: theme.colorScheme.error.withValues(alpha: 0.7),),
                   onPressed: () => _removeCheeseRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -504,7 +506,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_proteinControllers[index].text.isNotEmpty || _proteinControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7),),
+                    color: theme.colorScheme.error.withValues(alpha: 0.7),),
                   onPressed: () => _removeProteinRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -571,7 +573,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
               if (_vegetableControllers[index].text.isNotEmpty || _vegetableControllers.length > 1)
                 IconButton(
                   icon: Icon(Icons.remove_circle_outline, 
-                    color: theme.colorScheme.error.withOpacity(0.7),),
+                    color: theme.colorScheme.error.withValues(alpha: 0.7),),
                   onPressed: () => _removeVegetableRow(index),
                   visualDensity: VisualDensity.compact,
                 ),
@@ -626,7 +628,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
           color: theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: theme.colorScheme.outline.withOpacity(0.3),
+            color: theme.colorScheme.outline.withValues(alpha: 0.3),
           ),
         ),
         child: _imagePath != null
@@ -749,32 +751,36 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   }
 
   Future<void> _pickImage(ImageSource source) async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(
-      source: source,
-      maxWidth: 1200,
-      maxHeight: 1200,
-      imageQuality: 85,
-    );
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(
+        source: source,
+        maxWidth: 1200,
+        maxHeight: 1200,
+        imageQuality: 85,
+      );
 
-    if (pickedFile != null) {
-      // Save to app documents
-      final appDir = await getApplicationDocumentsDirectory();
-      final imagesDir = Directory('${appDir.path}/pizza_images');
-      if (!await imagesDir.exists()) {
-        await imagesDir.create(recursive: true);
+      if (pickedFile != null) {
+        // Save to app documents
+        final appDir = await getApplicationDocumentsDirectory();
+        final imagesDir = Directory('${appDir.path}/pizza_images');
+        if (!await imagesDir.exists()) {
+          await imagesDir.create(recursive: true);
+        }
+
+        final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
+        final savedPath = '${imagesDir.path}/$fileName';
+        await File(pickedFile.path).copy(savedPath);
+
+        setState(() => _imagePath = savedPath);
       }
-
-      final fileName = '${const Uuid().v4()}${path.extension(pickedFile.path)}';
-      final savedPath = '${imagesDir.path}/$fileName';
-      await File(pickedFile.path).copy(savedPath);
-
-      setState(() => _imagePath = savedPath);
+    } catch (e) {
+      MemoixSnackBar.showError('Error picking image: $e');
     }
   }
 
   Future<void> _savePizza() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     // Collect non-empty values from controllers
     final cheeses = _cheeseControllers
@@ -790,22 +796,26 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
         .where((s) => s.isNotEmpty)
         .toList();
 
-    final pizza = _existingPizza ?? Pizza();
-    pizza
-      ..uuid = _existingPizza?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..base = PizzaBaseExtension.fromString(_selectedBase)
-      ..cheeses = cheeses
-      ..proteins = proteins
-      ..vegetables = vegetables
-      ..notes = _notesController.text.trim().isEmpty ? null : _notesController.text.trim()
-      ..imageUrl = _imagePath
-      ..source = _existingPizza?.source ?? PizzaSource.personal
-      ..updatedAt = DateTime.now();
-
-    if (_existingPizza == null) {
-      pizza.createdAt = DateTime.now();
-    }
+    final now = DateTime.now();
+    final pizza = Pizza(
+      id: _existingPizza?.id ?? 0,
+      uuid: _existingPizza?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      base: PizzaBaseExtension.fromString(_selectedBase).name,
+      cheeses: jsonEncode(cheeses),
+      proteins: jsonEncode(proteins),
+      vegetables: jsonEncode(vegetables),
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      imageUrl: _imagePath,
+      source: _existingPizza?.source ?? PizzaSource.personal.name,
+      isFavorite: _existingPizza?.isFavorite ?? false,
+      cookCount: _existingPizza?.cookCount ?? 0,
+      rating: _existingPizza?.rating ?? 0,
+      tags: _existingPizza?.tags ?? '[]',
+      createdAt: _existingPizza?.createdAt ?? now,
+      updatedAt: now,
+      version: _existingPizza?.version ?? 1,
+    );
 
     final repo = ref.read(pizzaRepositoryProvider);
     await repo.savePizza(pizza);

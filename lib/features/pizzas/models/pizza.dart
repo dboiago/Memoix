@@ -1,6 +1,6 @@
-import 'package:isar/isar.dart';
 
-part 'pizza.g.dart';
+import 'dart:convert';
+import '../../../core/database/app_database.dart';
 
 /// Source of the pizza
 enum PizzaSource {
@@ -67,169 +67,76 @@ extension PizzaBaseExtension on PizzaBase {
   }
 }
 
-@collection
-class Pizza {
-  Id id = Isar.autoIncrement;
-
-  /// Unique identifier for sharing and syncing
-  @Index(unique: true, replace: true)
-  late String uuid;
-
-  /// Pizza name (e.g., "Margherita", "BBQ Chicken")
-  @Index(type: IndexType.value)
-  late String name;
-
-  /// Base sauce type
-  @Enumerated(EnumType.name)
-  PizzaBase base = PizzaBase.marinara;
-
-  /// List of cheeses (e.g., "Mozzarella", "Parmesan", "Goat Cheese")
-  List<String> cheeses = [];
-
-  /// List of protein toppings (e.g., "Pepperoni", "Italian Sausage", "Bacon")
-  List<String> proteins = [];
-
-  /// List of vegetable toppings (e.g., "Mushrooms", "Bell Peppers", "Basil")
-  List<String> vegetables = [];
-
-  /// Notes for special instructions (e.g., "Add sundried tomatoes last minute")
-  String? notes;
-
-  /// Image URL or local path
-  String? imageUrl;
-
-  /// Where this pizza came from
-  @Enumerated(EnumType.name)
-  PizzaSource source = PizzaSource.personal;
-
-  /// Whether this is a favourite
-  bool isFavorite = false;
-
-  /// How many times this has been cooked
-  int cookCount = 0;
-
-  /// User rating (1-5 stars, 0 = unrated)
-  int rating = 0;
-
-  /// Custom tags for additional categorization
-  List<String> tags = [];
-
-  /// When the pizza was created
-  DateTime createdAt = DateTime.now();
-
-  /// When the pizza was last modified
-  DateTime updatedAt = DateTime.now();
-
-  /// Version for sync conflict resolution
-  int version = 1;
-
-  Pizza();
-
-  /// Create a new pizza with required fields
-  Pizza.create({
-    required this.uuid,
-    required this.name,
-    this.base = PizzaBase.marinara,
-    this.cheeses = const [],
-    this.proteins = const [],
-    this.vegetables = const [],
-    this.notes,
-    this.imageUrl,
-    this.source = PizzaSource.personal,
-    this.isFavorite = false,
-    this.rating = 0,
-    this.tags = const [],
-  }) {
-    createdAt = DateTime.now();
-    updatedAt = DateTime.now();
-  }
-
-  /// Create from JSON (for GitHub import)
-  factory Pizza.fromJson(Map<String, dynamic> json) {
-    // Handle backward compatibility: if old 'toppings' field exists, treat as proteins
-    final legacyToppings = (json['toppings'] as List<dynamic>?)
-            ?.map((e) => e as String)
-            .where((e) => e.isNotEmpty)
-            .toList() ?? [];
-    
-    final pizza = Pizza()
-      ..uuid = json['uuid'] as String
-      ..name = json['name'] as String
-      ..base = PizzaBaseExtension.fromString(json['base'] as String?)
-      ..cheeses = (json['cheeses'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .where((e) => e.isNotEmpty)
-              .toList() ??
-          []
-      ..proteins = (json['proteins'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .where((e) => e.isNotEmpty)
-              .toList() ??
-          legacyToppings // Fallback to toppings for backward compatibility
-      ..vegetables = (json['vegetables'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .where((e) => e.isNotEmpty)
-              .toList() ??
-          []
-      ..notes = json['notes'] as String?
-      ..imageUrl = json['imageUrl'] as String?
-      ..source = PizzaSource.values.firstWhere(
-        (e) => e.name == json['source'],
-        orElse: () => PizzaSource.memoix,
-      )
-      ..isFavorite = json['isFavorite'] as bool? ?? false
-      ..cookCount = json['cookCount'] as int? ?? 0
-      ..rating = json['rating'] as int? ?? 0
-      ..tags =
-          (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList() ??
-              []
-      ..version = json['version'] as int? ?? 1;
-
-    if (json['createdAt'] != null) {
-      pizza.createdAt = DateTime.parse(json['createdAt'] as String);
-    }
-    if (json['updatedAt'] != null) {
-      pizza.updatedAt = DateTime.parse(json['updatedAt'] as String);
-    }
-
-    return pizza;
-  }
-
-  /// Convert to JSON (for sharing/export)
-  Map<String, dynamic> toJson() {
-    return {
-      'uuid': uuid,
-      'name': name,
-      'base': base.name,
-      'cheeses': cheeses,
-      'proteins': proteins,
-      'vegetables': vegetables,
-      'notes': notes,
-      'imageUrl': imageUrl,
-      'source': source.name,
-      'isFavorite': isFavorite,
-      'cookCount': cookCount,
-      'rating': rating,
-      'tags': tags,
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
-      'version': version,
-    };
-  }
-
-  /// Create a shareable copy (removes personal metadata)
-  Map<String, dynamic> toShareableJson() {
-    return {
-      'uuid': uuid,
-      'name': name,
-      'base': base.name,
-      'cheeses': cheeses,
-      'proteins': proteins,
-      'vegetables': vegetables,
-      'notes': notes,
-      'imageUrl': imageUrl,
-      'tags': tags,
-      'version': version,
-    };
-  }
+/// Decode a Pizza from a JSON map (for backup import).
+Pizza pizzaFromJson(Map<String, dynamic> json) {
+  String encodeList(dynamic v) =>
+      v is List ? jsonEncode(v) : (v as String? ?? '[]');
+  return Pizza(
+    id: (json['id'] as num?)?.toInt() ?? 0,
+    uuid: json['uuid']?.toString() ?? '',
+    name: json['name']?.toString() ?? '',
+    base: json['base']?.toString() ?? PizzaBase.marinara.name,
+    cheeses: encodeList(json['cheeses']),
+    proteins: encodeList(json['proteins']),
+    vegetables: encodeList(json['vegetables']),
+    notes: json['notes']?.toString(),
+    imageUrl: json['imageUrl']?.toString(),
+    source: json['source']?.toString() ?? PizzaSource.personal.name,
+    isFavorite: json['isFavorite'] as bool? ?? false,
+    cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
+    rating: (json['rating'] as num?)?.toInt() ?? 0,
+    tags: encodeList(json['tags']),
+    createdAt: json['createdAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int)
+        : json['createdAt'] != null
+            ? DateTime.parse(json['createdAt'].toString())
+            : DateTime.now(),
+    updatedAt: json['updatedAt'] is int
+        ? DateTime.fromMillisecondsSinceEpoch(json['updatedAt'] as int)
+        : json['updatedAt'] != null
+            ? DateTime.parse(json['updatedAt'].toString())
+            : DateTime.now(),
+    version: (json['version'] as num?)?.toInt() ?? 1,
+  );
 }
+
+extension PizzaX on Pizza {
+  List<String> get cheesesList =>
+      (jsonDecode(cheeses) as List).cast<String>();
+  List<String> get proteinsList =>
+      (jsonDecode(proteins) as List).cast<String>();
+  List<String> get vegetablesList =>
+      (jsonDecode(vegetables) as List).cast<String>();
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'uuid': uuid,
+        'name': name,
+        'base': base,
+        'cheeses': jsonDecode(cheeses),
+        'proteins': jsonDecode(proteins),
+        'vegetables': jsonDecode(vegetables),
+        'notes': notes,
+        'imageUrl': imageUrl,
+        'source': source,
+        'isFavorite': isFavorite,
+        'cookCount': cookCount,
+        'rating': rating,
+        'tags': jsonDecode(tags),
+        'createdAt': createdAt.toIso8601String(),
+        'updatedAt': updatedAt.toIso8601String(),
+        'version': version,
+      };
+
+  Map<String, dynamic> toShareableJson() => {
+        'name': name,
+        'base': base,
+        'cheeses': jsonDecode(cheeses),
+        'proteins': jsonDecode(proteins),
+        'vegetables': jsonDecode(vegetables),
+        'notes': notes,
+        'imageUrl': imageUrl,
+      };
+}
+
+

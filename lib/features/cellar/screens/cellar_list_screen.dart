@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/database/app_database.dart';
+import '../../../core/utils/collection_utils.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cellar_entry.dart';
@@ -42,15 +44,18 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
       ),
       body: entriesAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (err, _) => Center(child: Text('Error: $err')),
+        error: (err, _) {
+          debugPrint('CellarListScreen error: $err');
+          return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        },
         data: (allEntries) {
           // Apply hide memoix filter
           final visibleEntries = hideMemoix
-              ? allEntries.where((e) => e.source != CellarSource.memoix).toList()
+              ? allEntries.where((e) => e.source != CellarSource.memoix.name).toList()
               : allEntries;
 
           // Get categories that have entries
-          final availableCategories = _getAvailableCategories(visibleEntries);
+          final availableCategories = extractUniqueStrings(visibleEntries, (e) => e.category);
 
           return Column(
             children: [
@@ -123,12 +128,12 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
           setState(() => _selectedCategory = selected ? category : null);
         },
         backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
         showCheckmark: false,
         side: BorderSide(
           color: isSelected
               ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withOpacity(0.2),
+              : theme.colorScheme.outline.withValues(alpha: 0.2),
           width: isSelected ? 1.5 : 1.0,
         ),
         labelStyle: TextStyle(
@@ -139,17 +144,6 @@ class _CellarListScreenState extends ConsumerState<CellarListScreen> {
         ),
       ),
     );
-  }
-
-  List<String> _getAvailableCategories(List<CellarEntry> entries) {
-    final categories = <String>{};
-    for (final entry in entries) {
-      if (entry.category != null && entry.category!.isNotEmpty) {
-        categories.add(entry.category!);
-      }
-    }
-    final sorted = categories.toList()..sort();
-    return sorted;
   }
 
   Widget _buildEntryList(List<CellarEntry> allEntries, bool isCompact) {

@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -6,7 +5,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:encrypt/encrypt.dart' as enc;
 
-import '../../app/app.dart';
 import '../widgets/memoix_snackbar.dart';
 
 // ---------------------------------------------------------------------------
@@ -74,25 +72,25 @@ class IntegrityStateStore {
     try {
       final decoded = jsonDecode(json) as Map<String, dynamic>;
       return decoded.map(
-          (k, v) => MapEntry(k, Map<String, dynamic>.from(v as Map)));
+          (k, v) => MapEntry(k, Map<String, dynamic>.from(v as Map)),);
     } catch (_) {
       return {};
     }
   }
 
   Future<void> persistOverride(
-      String target, dynamic value, int? remainingUses) async {
+      String target, dynamic value, int? remainingUses,) async {
     final overrides = getActiveOverrides();
     overrides[target] = {
       'value': value,
       if (remainingUses != null) 'uses': remainingUses,
     };
     await _prefs?.setString(
-        '${_prefix}active_overrides', jsonEncode(overrides));
+        '${_prefix}active_overrides', jsonEncode(overrides),);
   }
 
   Future<void> updateOverrideUses(
-      String target, int? remainingUses) async {
+      String target, int? remainingUses,) async {
     final overrides = getActiveOverrides();
     if (!overrides.containsKey(target)) return;
     if (remainingUses == null || remainingUses <= 0) {
@@ -101,7 +99,7 @@ class IntegrityStateStore {
       overrides[target]!['uses'] = remainingUses;
     }
     await _prefs?.setString(
-        '${_prefix}active_overrides', jsonEncode(overrides));
+        '${_prefix}active_overrides', jsonEncode(overrides),);
   }
 
   // --- maintenance ---
@@ -219,13 +217,13 @@ class IntegrityService {
 
   /// Persist an active view override for cross-session restoration.
   static Future<void> persistOverride(
-      String target, dynamic value, int? remainingUses) async {
+      String target, dynamic value, int? remainingUses,) async {
     await _store.persistOverride(target, value, remainingUses);
   }
 
   /// Update persisted remaining uses after consumption.
   static Future<void> updatePersistedOverrideUses(
-      String target, int? remainingUses) async {
+      String target, int? remainingUses,) async {
     await _store.updateOverrideUses(target, remainingUses);
   }
 

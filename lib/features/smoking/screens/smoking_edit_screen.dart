@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -7,8 +8,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../../core/utils/suggestions.dart';
-import '../../../core/widgets/memoix_snackbar.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../recipes/models/course.dart';
@@ -73,7 +74,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
     if (widget.importedRecipe != null) {
       final recipe = widget.importedRecipe!;
       _nameController.text = recipe.name;
-      _selectedType = recipe.type;
+      _selectedType = SmokingTypeExtension.fromString(recipe.type);
       _itemController.text = recipe.item ?? '';
       _categoryController.text = recipe.category ?? '';
       _temperatureController.text = recipe.temperature;
@@ -82,14 +83,15 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       _notesController.text = recipe.notes ?? '';
       _servesController.text = recipe.serves ?? '';
       // Filter stepImages to exclude header image to prevent duplicates
-      _imagePath = recipe.getFirstImage();
+      final decodedStepImages0 = (jsonDecode(recipe.stepImages) as List).cast<String>();
+      _imagePath = decodedStepImages0.isNotEmpty ? decodedStepImages0.first : recipe.imageUrl;
       final headerImg = _imagePath;
       _stepImages.addAll(
-        recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+        decodedStepImages0.where((img) => headerImg == null || img != headerImg),
       );
       
       // Load step image mappings
-      for (final mapping in recipe.stepImageMap) {
+      for (final mapping in (jsonDecode(recipe.stepImageMap) as List).cast<String>()) {
         final parts = mapping.split(':');
         if (parts.length == 2) {
           final stepIndex = int.tryParse(parts[0]);
@@ -100,26 +102,28 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         }
       }
 
-      for (final seasoning in recipe.seasonings) {
+      for (final s in (jsonDecode(recipe.seasoningsJson) as List)) {
+        final seasoning = s as Map<String, dynamic>;
         _seasonings.add(_SeasoningEntry(
-          nameController: TextEditingController(text: seasoning.name),
-          amountController: TextEditingController(text: seasoning.amount ?? ''),
+          nameController: TextEditingController(text: seasoning['name'] as String? ?? ''),
+          amountController: TextEditingController(text: seasoning['amount'] as String? ?? ''),
         ),);
       }
 
-      for (final ingredient in recipe.ingredients) {
+      for (final i in (jsonDecode(recipe.ingredientsJson) as List)) {
+        final ingredient = i as Map<String, dynamic>;
         _ingredients.add(_SeasoningEntry(
-          nameController: TextEditingController(text: ingredient.name),
-          amountController: TextEditingController(text: ingredient.amount ?? ''),
+          nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
+          amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
         ),);
       }
 
-      for (final direction in recipe.directions) {
+      for (final direction in (jsonDecode(recipe.directions) as List).cast<String>()) {
         _directionControllers.add(TextEditingController(text: direction));
       }
       
       // Load paired recipe IDs
-      _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
+      _pairedRecipeIds.addAll((jsonDecode(recipe.pairedRecipeIds) as List).cast<String>());
       
       // Load course
       _selectedCourse = recipe.course;
@@ -130,7 +134,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       if (recipe != null) {
         _existingRecipe = recipe;
         _nameController.text = recipe.name;
-        _selectedType = recipe.type;
+        _selectedType = SmokingTypeExtension.fromString(recipe.type);
         _itemController.text = recipe.item ?? '';
         _categoryController.text = recipe.category ?? '';
         _temperatureController.text = recipe.temperature;
@@ -139,14 +143,15 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _notesController.text = recipe.notes ?? '';
         _servesController.text = recipe.serves ?? '';
         // Filter stepImages to exclude header image to prevent duplicates
-        _imagePath = recipe.getFirstImage();
+        final decodedStepImages1 = (jsonDecode(recipe.stepImages) as List).cast<String>();
+        _imagePath = decodedStepImages1.isNotEmpty ? decodedStepImages1.first : recipe.imageUrl;
         final headerImg = _imagePath;
         _stepImages.addAll(
-          recipe.stepImages.where((img) => headerImg == null || img != headerImg),
+          decodedStepImages1.where((img) => headerImg == null || img != headerImg),
         );
         
         // Load step image mappings
-        for (final mapping in recipe.stepImageMap) {
+        for (final mapping in (jsonDecode(recipe.stepImageMap) as List).cast<String>()) {
           final parts = mapping.split(':');
           if (parts.length == 2) {
             final stepIndex = int.tryParse(parts[0]);
@@ -157,26 +162,28 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           }
         }
 
-        for (final seasoning in recipe.seasonings) {
+        for (final s in (jsonDecode(recipe.seasoningsJson) as List)) {
+          final seasoning = s as Map<String, dynamic>;
           _seasonings.add(_SeasoningEntry(
-            nameController: TextEditingController(text: seasoning.name),
-            amountController: TextEditingController(text: seasoning.amount ?? ''),
+            nameController: TextEditingController(text: seasoning['name'] as String? ?? ''),
+            amountController: TextEditingController(text: seasoning['amount'] as String? ?? ''),
           ),);
         }
 
-        for (final ingredient in recipe.ingredients) {
+        for (final i in (jsonDecode(recipe.ingredientsJson) as List)) {
+          final ingredient = i as Map<String, dynamic>;
           _ingredients.add(_SeasoningEntry(
-            nameController: TextEditingController(text: ingredient.name),
-            amountController: TextEditingController(text: ingredient.amount ?? ''),
+            nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
+            amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
           ),);
         }
 
-        for (final direction in recipe.directions) {
+        for (final direction in (jsonDecode(recipe.directions) as List).cast<String>()) {
           _directionControllers.add(TextEditingController(text: direction));
         }
         
         // Load paired recipe IDs
-        _pairedRecipeIds.addAll(recipe.pairedRecipeIds);
+        _pairedRecipeIds.addAll((jsonDecode(recipe.pairedRecipeIds) as List).cast<String>());
         
         // Load course
         _selectedCourse = recipe.course;
@@ -302,7 +309,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
 
             // Course dropdown
             DropdownButtonFormField<String>(
-              value: _selectedCourse,
+              initialValue: _selectedCourse,
               decoration: const InputDecoration(
                 labelText: 'Course',
               ),
@@ -788,13 +795,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
           color: isSelected
-              ? theme.colorScheme.secondary.withOpacity(0.15)
+              ? theme.colorScheme.secondary.withValues(alpha: 0.15)
               : theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             color: isSelected
                 ? theme.colorScheme.secondary
-                : theme.colorScheme.outline.withOpacity(0.3),
+                : theme.colorScheme.outline.withValues(alpha: 0.3),
             width: isSelected ? 1.5 : 1.0,
           ),
         ),
@@ -835,7 +842,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         decoration: BoxDecoration(
           border: isLast 
               ? null 
-              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+              : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -964,7 +971,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+        border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -986,7 +993,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                 width: 24,
                 height: 24,
                 decoration: BoxDecoration(
-                  color: theme.colorScheme.secondary.withOpacity(0.15),
+                  color: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   shape: BoxShape.circle,
                   border: Border.all(color: theme.colorScheme.secondary, width: 1.5),
                 ),
@@ -1172,7 +1179,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         // Ingredient rows (reorderable)
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: theme.colorScheme.outline.withOpacity(0.3)),
+            border: Border.all(color: theme.colorScheme.outline.withValues(alpha: 0.3)),
             borderRadius: const BorderRadius.vertical(bottom: Radius.circular(8)),
           ),
           child: ReorderableListView.builder(
@@ -1220,7 +1227,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       decoration: BoxDecoration(
         border: isLast
             ? null
-            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withOpacity(0.2))),
+            : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -1407,7 +1414,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                       color: theme.colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: theme.colorScheme.outline.withOpacity(0.3),
+                        color: theme.colorScheme.outline.withValues(alpha: 0.3),
                       ),
                     ),
                     child: Column(
@@ -1445,7 +1452,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                       top: 4,
                       right: 4,
                       child: Material(
-                        color: theme.colorScheme.surface.withOpacity(0.9),
+                        color: theme.colorScheme.surface.withValues(alpha: 0.9),
                         borderRadius: BorderRadius.circular(20),
                         child: InkWell(
                           onTap: () => _removeStepImage(index),
@@ -1592,13 +1599,13 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(Icons.add_photo_alternate, 
-                                    color: theme.colorScheme.outline),
+                                    color: theme.colorScheme.outline,),
                                 const SizedBox(height: 4),
                                 Text('Add new', 
                                     style: TextStyle(
                                       color: theme.colorScheme.outline,
                                       fontSize: 12,
-                                    )),
+                                    ),),
                               ],
                             ),
                           ),
@@ -1625,7 +1632,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(6),
                             child: _buildStepImageWidget(_stepImages[index], 
-                                width: 100, height: 100),
+                                width: 100, height: 100,),
                           ),
                         ),
                       );
@@ -1718,7 +1725,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         ..name = entry.nameController.text.trim()
         ..amount = entry.amountController.text.trim().isEmpty 
             ? null 
-            : entry.amountController.text.trim());
+            : entry.amountController.text.trim(),);
     }
     
     // Build directions
@@ -1776,7 +1783,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         amount: entry.amountController.text.trim().isEmpty 
             ? null 
             : entry.amountController.text.trim(),
-      ));
+      ),);
     }
     
     // Build directions
@@ -1803,7 +1810,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   }
 
   Future<void> _saveRecipe() async {
-    if (!_formKey.currentState!.validate()) return;
+    if (!(_formKey.currentState?.validate() ?? false)) return;
 
     // Build seasonings list (for Pit Notes)
     final seasonings = _seasonings
@@ -1831,38 +1838,34 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         .where((d) => d.isNotEmpty)
         .toList();
 
-    final recipe = SmokingRecipe()
-      ..uuid = _existingRecipe?.uuid ?? const Uuid().v4()
-      ..name = _nameController.text.trim()
-      ..type = _selectedType
-      ..course = _selectedCourse
-      ..item = _itemController.text.trim().isEmpty
-          ? null
-          : _itemController.text.trim()
-      ..category = _categoryController.text.trim().isEmpty
-          ? null
-          : _categoryController.text.trim()
-      ..temperature = _temperatureController.text.trim()
-      ..time = _timeController.text.trim()
-      ..wood = _woodController.text.trim()
-      ..seasonings = seasonings
-      ..ingredients = ingredients
-      ..serves = _servesController.text.trim().isEmpty
-          ? null
-          : _servesController.text.trim()
-      ..directions = directions
-      ..notes = _notesController.text.trim().isEmpty
-          ? null
-          : _notesController.text.trim()
-      ..headerImage = _imagePath
-      ..stepImages = _stepImages
-      ..stepImageMap = _stepImageMap.entries
-          .map((e) => '${e.key}:${e.value}')
-          .toList()
-      ..pairedRecipeIds = _pairedRecipeIds
-      ..source = _existingRecipe?.source ?? SmokingSource.personal
-      ..createdAt = _existingRecipe?.createdAt ?? DateTime.now()
-      ..updatedAt = DateTime.now();
+    final now = DateTime.now();
+    final recipe = SmokingRecipe(
+      id: _existingRecipe?.id ?? 0,
+      uuid: _existingRecipe?.uuid ?? const Uuid().v4(),
+      name: _nameController.text.trim(),
+      type: _selectedType.name,
+      course: _selectedCourse,
+      item: _itemController.text.trim().isEmpty ? null : _itemController.text.trim(),
+      category: _categoryController.text.trim().isEmpty ? null : _categoryController.text.trim(),
+      temperature: _temperatureController.text.trim(),
+      time: _timeController.text.trim(),
+      wood: _woodController.text.trim(),
+      seasoningsJson: jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList()),
+      ingredientsJson: jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit}).toList()),
+      serves: _servesController.text.trim().isEmpty ? null : _servesController.text.trim(),
+      directions: jsonEncode(directions),
+      notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
+      headerImage: _imagePath,
+      stepImages: jsonEncode(_stepImages),
+      stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
+      pairedRecipeIds: jsonEncode(_pairedRecipeIds),
+      source: _existingRecipe?.source ?? SmokingSource.personal.name,
+      isFavorite: _existingRecipe?.isFavorite ?? false,
+      cookCount: _existingRecipe?.cookCount ?? 0,
+      imageUrl: _existingRecipe?.imageUrl,
+      createdAt: _existingRecipe?.createdAt ?? now,
+      updatedAt: now,
+    );
 
     await ref.read(smokingRepositoryProvider).saveRecipe(recipe);
 
@@ -1977,7 +1980,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false)
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });
@@ -2031,33 +2034,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       ),
     );
   }
-}
 
-/// Helper class to manage seasoning input fields
-class _SeasoningEntry {
-  final TextEditingController nameController;
-  final TextEditingController amountController;
-  final TextEditingController notesController;
+  // ============ IMAGE PICKER METHODS ============
 
-  _SeasoningEntry({
-    required this.nameController,
-    required this.amountController,
-    TextEditingController? notesController,
-  }) : notesController = notesController ?? TextEditingController();
-
-  void dispose() {
-    nameController.dispose();
-    amountController.dispose();
-    notesController.dispose();
-  }
-}
-
-// ============ IMAGE PICKER EXTENSION ============
-
-extension _ImagePickerExtension on _SmokingEditScreenState {
   Widget _buildImagePicker(ThemeData theme) {
     final hasImage = _imagePath != null && _imagePath!.isNotEmpty;
-    
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -2076,7 +2058,7 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
               color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: theme.colorScheme.outline.withOpacity(0.3),
+                color: theme.colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: hasImage
@@ -2140,7 +2122,7 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
     required ThemeData theme,
   }) {
     return Material(
-      color: theme.colorScheme.surface.withOpacity(0.9),
+      color: theme.colorScheme.surface.withValues(alpha: 0.9),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,
@@ -2155,7 +2137,7 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
 
   Widget _buildImageWidget() {
     if (_imagePath == null) return const SizedBox.shrink();
-    
+
     // Check if it's a URL or local file
     if (_imagePath!.startsWith('http://') || _imagePath!.startsWith('https://')) {
       return Image.network(
@@ -2252,5 +2234,24 @@ extension _ImagePickerExtension on _SmokingEditScreenState {
     setState(() {
       _imagePath = null;
     });
+  }
+}
+
+/// Helper class to manage seasoning input fields
+class _SeasoningEntry {
+  final TextEditingController nameController;
+  final TextEditingController amountController;
+  final TextEditingController notesController;
+
+  _SeasoningEntry({
+    required this.nameController,
+    required this.amountController,
+    TextEditingController? notesController,
+  }) : notesController = notesController ?? TextEditingController();
+
+  void dispose() {
+    nameController.dispose();
+    amountController.dispose();
+    notesController.dispose();
   }
 }

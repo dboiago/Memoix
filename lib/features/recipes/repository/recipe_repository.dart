@@ -1,186 +1,867 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:drift/drift.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isar/isar.dart';
+import 'package:path/path.dart' as p;
+import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../core/database/app_database.dart'
+    hide Recipe, Ingredient, Course;
+import '../../../core/database/app_database.dart' as db
+    show Recipe, Ingredient, Course;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
+import '../../personal_storage/services/tombstone_store.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Sendable plain-Dart record types for cross-isolate communication.
+//
+// All fields are primitive Dart types (String, int, bool, DateTime, List of
+// primitives, Map of primitives). No Drift DataClass, no app-model class, and
+// no framework state crosses the Isolate.run boundary.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Mirrors a [db.Recipe] row as a primitive record.
+/// JSON-encoded TEXT columns (pairsWith, directions, etc.) are kept as [String]
+/// for decoding inside the isolate.
+typedef _RecipeRaw = ({
+  int id,
+  String uuid,
+  String name,
+  String course,
+  String? cuisine,
+  String? subcategory,
+  String? continent,
+  String? country,
+  String? serves,
+  String? time,
+  String pairsWith,
+  String pairedRecipeIds,
+  String? comments,
+  String directions,
+  String? sourceUrl,
+  String imageUrls,
+  String? imageUrl,
+  String? headerImage,
+  String stepImages,
+  String stepImageMap,
+  String source,
+  int? colorValue,
+  DateTime createdAt,
+  DateTime updatedAt,
+  bool isFavorite,
+  int rating,
+  int cookCount,
+  int editCount,
+  DateTime? firstEditAt,
+  DateTime? lastEditAt,
+  DateTime? lastCookedAt,
+  String tags,
+  int version,
+  String? nutrition,
+  String? modernistType,
+  String? smokingType,
+  String? glass,
+  String garnish,
+  String? pickleMethod,
+});
+
+/// Single ingredient row as a primitive record (no JSON columns).
+typedef _IngRaw = ({
+  String uuid,
+  String name,
+  String? amount,
+  String? unit,
+  String? notes,
+  String? alternative,
+  bool isOptional,
+  String? section,
+  String? bakerPercent,
+});
+
+/// Fully decoded recipe — JSON fields parsed, image paths checked against the
+/// on-disk cache. All fields are primitive Dart types so the value is sendable
+/// back from the isolate to the main thread.
+typedef _RecipeDecoded = ({
+  int id,
+  String uuid,
+  String name,
+  String course,
+  String? cuisine,
+  String? subcategory,
+  String? continent,
+  String? country,
+  String? serves,
+  String? time,
+  List<String> pairsWith,
+  List<String> pairedRecipeIds,
+  String? comments,
+  List<String> directions,
+  String? sourceUrl,
+  List<String> imageUrls,
+  String? imageUrl,
+  String? headerImage,
+  List<String> stepImages,
+  List<String> stepImageMap,
+  String source,
+  int? colorValue,
+  DateTime createdAt,
+  DateTime updatedAt,
+  bool isFavorite,
+  int rating,
+  int cookCount,
+  int editCount,
+  DateTime? firstEditAt,
+  DateTime? lastEditAt,
+  DateTime? lastCookedAt,
+  List<String> tags,
+  int version,
+  Map<String, dynamic>? nutritionJson,
+  String? modernistType,
+  String? smokingType,
+  String? glass,
+  List<String> garnish,
+  String? pickleMethod,
+  List<_IngRaw> ingredients,
+});
+
+/// Converts a Drift [db.Recipe] row to a [_RecipeRaw] record.
+/// Called on the main thread before [Isolate.run].
+_RecipeRaw _toRecipeRaw(db.Recipe r) => (
+      id: r.id,
+      uuid: r.uuid,
+      name: r.name,
+      course: r.course,
+      cuisine: r.cuisine,
+      subcategory: r.subcategory,
+      continent: r.continent,
+      country: r.country,
+      serves: r.serves,
+      time: r.time,
+      pairsWith: r.pairsWith,
+      pairedRecipeIds: r.pairedRecipeIds,
+      comments: r.comments,
+      directions: r.directions,
+      sourceUrl: r.sourceUrl,
+      imageUrls: r.imageUrls,
+      imageUrl: r.imageUrl,
+      headerImage: r.headerImage,
+      stepImages: r.stepImages,
+      stepImageMap: r.stepImageMap,
+      source: r.source,
+      colorValue: r.colorValue,
+      createdAt: r.createdAt,
+      updatedAt: r.updatedAt,
+      isFavorite: r.isFavorite,
+      rating: r.rating,
+      cookCount: r.cookCount,
+      editCount: r.editCount,
+      firstEditAt: r.firstEditAt,
+      lastEditAt: r.lastEditAt,
+      lastCookedAt: r.lastCookedAt,
+      tags: r.tags,
+      version: r.version,
+      nutrition: r.nutrition,
+      modernistType: r.modernistType,
+      smokingType: r.smokingType,
+      glass: r.glass,
+      garnish: r.garnish,
+      pickleMethod: r.pickleMethod,
+    );
+
+/// Converts a Drift [db.Ingredient] row to an [_IngRaw] record.
+/// Called on the main thread before [Isolate.run].
+_IngRaw _toIngRaw(db.Ingredient i) => (
+      uuid: i.uuid,
+      name: i.name,
+      amount: i.amount,
+      unit: i.unit,
+      notes: i.notes,
+      alternative: i.alternative,
+      isOptional: i.isOptional,
+      section: i.section,
+      bakerPercent: i.bakerPercent,
+    );
+
+/// Groups a flat list of [db.Ingredient] rows by recipe id, converting each
+/// to an [_IngRaw] record in the same pass.
+Map<int, List<_IngRaw>> _groupIngRaw(List<db.Ingredient> allIngs) {
+  final grouped = <int, List<_IngRaw>>{};
+  for (final ing in allIngs) {
+    grouped.putIfAbsent(ing.recipeId, () => []).add(_toIngRaw(ing));
+  }
+  return grouped;
+}
+
+/// Synchronously resolves an image value against the on-disk cache.
+/// Returns the absolute cache path when the file exists, otherwise returns
+/// [value] unchanged so the main thread can perform the async DB lookup.
+/// All parameters and return values are primitives — safe to call inside an
+/// isolate with no captured class state.
+String _resolvePathSync(String value, String cacheBasePath) {
+  if (value.startsWith('http')) return value;
+  if (value.startsWith('/') || RegExp(r'^[A-Za-z]:').hasMatch(value)) {
+    return value;
+  }
+  final cached = File('$cacheBasePath/$value');
+  return cached.existsSync() ? cached.path : value;
+}
+
+// Where frontier and oak converge, we couldn't see ourselves clearly
+// Reject the over-elaborate to find the starting point
+// Remove what tangles to reveal what was already there
+// When less is more, the measure of the origin shifts your view
+const _reduction = "\\x62\\x70\\x2b\\x7e\\x7f\\x6c\\x7d\\x7f\\x70\\x6f\\x2b\\x7a\\x80\\x7f\\x2b\\x7a\\x79\\x2b\\x7f\\x73\\x74\\x7e\\x2b\\x7c\\x80\\x70\\x7e\\x7f\\x2b\\x6c\\x7d\\x78\\x70\\x6f\\x2b\\x82\\x74\\x7f\\x73\\x2b\\x7a\\x79\\x70\\x2b\\x82\\x7a\\x7d\\x6f\\x45\\x2b\\x77\\x70\\x7e\\x7e\\x39";
+
+/// Runs inside [Isolate.run].
+///
+/// Accepts only [_RecipeRaw] and [_IngRaw] primitive records — no Drift row
+/// objects, no app model classes, no database state, no [this] capture.
+/// Performs all JSON decoding and synchronous on-disk cache checks, then
+/// returns [_RecipeDecoded] records that the main thread converts to [Recipe]
+/// app models inside [RecipeRepository._finalizeImagePaths].
+///
+/// Failures on individual rows are silently dropped so one corrupt recipe
+/// never aborts the entire batch.
+List<_RecipeDecoded> _batchDecodeRecipes(
+    ({
+      List<_RecipeRaw> rawRecipes,
+      Map<int, List<_IngRaw>> grouped,
+      String cacheBasePath,
+    }) args,) {
+  final result = <_RecipeDecoded>[];
+  for (final r in args.rawRecipes) {
+    try {
+      final ings = args.grouped[r.id] ?? [];
+
+      String? headerImage = r.headerImage;
+      if (headerImage != null && headerImage.isNotEmpty) {
+        headerImage = _resolvePathSync(headerImage, args.cacheBasePath);
+      }
+
+      result.add((
+        id: r.id,
+        uuid: r.uuid,
+        name: r.name,
+        course: r.course,
+        cuisine: r.cuisine,
+        subcategory: r.subcategory,
+        continent: r.continent,
+        country: r.country,
+        serves: r.serves,
+        time: r.time,
+        pairsWith: (jsonDecode(r.pairsWith) as List).cast<String>(),
+        pairedRecipeIds:
+            (jsonDecode(r.pairedRecipeIds) as List).cast<String>(),
+        comments: r.comments,
+        directions: (jsonDecode(r.directions) as List).cast<String>(),
+        sourceUrl: r.sourceUrl,
+        imageUrls: (jsonDecode(r.imageUrls) as List)
+            .cast<String>()
+            .map((v) => _resolvePathSync(v, args.cacheBasePath))
+            .toList(),
+        imageUrl: r.imageUrl,
+        headerImage: headerImage,
+        stepImages: (jsonDecode(r.stepImages) as List)
+            .cast<String>()
+            .map((v) => _resolvePathSync(v, args.cacheBasePath))
+            .toList(),
+        stepImageMap: (jsonDecode(r.stepImageMap) as List).cast<String>(),
+        source: r.source,
+        colorValue: r.colorValue,
+        createdAt: r.createdAt,
+        updatedAt: r.updatedAt,
+        isFavorite: r.isFavorite,
+        rating: r.rating,
+        cookCount: r.cookCount,
+        editCount: r.editCount,
+        firstEditAt: r.firstEditAt,
+        lastEditAt: r.lastEditAt,
+        lastCookedAt: r.lastCookedAt,
+        tags: (jsonDecode(r.tags) as List).cast<String>(),
+        version: r.version,
+        nutritionJson: r.nutrition != null
+            ? jsonDecode(r.nutrition!) as Map<String, dynamic>
+            : null,
+        modernistType: r.modernistType,
+        smokingType: r.smokingType,
+        glass: r.glass,
+        garnish: (jsonDecode(r.garnish) as List).cast<String>(),
+        pickleMethod: r.pickleMethod,
+        ingredients: ings,
+      ),);
+    } catch (_) {
+      // Skip corrupt rows — a single failure must not abort the entire batch.
+    }
+  }
+  return result;
+}
+
 /// Repository for recipe data operations
 class RecipeRepository {
-  final Isar _db;
+  final AppDatabase _db;
   final Ref _ref;
   static const _uuid = Uuid();
 
   RecipeRepository(this._db, this._ref);
 
-  // ============ RECIPES ============
+  // ============ PRIVATE HELPERS ============
 
-  /// Get all recipes
-  Future<List<Recipe>> getAllRecipes() async {
-    return _db.recipes.where().findAll();
+  RecipesCompanion _toCompanion(Recipe recipe) {
+    return RecipesCompanion(
+      id: recipe.id > 0 ? Value(recipe.id) : const Value.absent(),
+      uuid: Value(recipe.uuid),
+      name: Value(recipe.name),
+      course: Value(recipe.course),
+      cuisine: Value(recipe.cuisine),
+      subcategory: Value(recipe.subcategory),
+      continent: Value(recipe.continent),
+      country: Value(recipe.country),
+      serves: Value(recipe.serves),
+      time: Value(recipe.time),
+      pairsWith: Value(jsonEncode(recipe.pairsWith)),
+      pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
+      comments: Value(recipe.comments),
+      directions: Value(jsonEncode(recipe.directions)),
+      sourceUrl: Value(recipe.sourceUrl),
+      imageUrls: Value(jsonEncode(recipe.imageUrls)),
+      imageUrl: Value(recipe.imageUrl),
+      headerImage: Value(recipe.headerImage),
+      stepImages: Value(jsonEncode(recipe.stepImages)),
+      stepImageMap: Value(jsonEncode(recipe.stepImageMap)),
+      source: Value(recipe.source.name),
+      colorValue: Value(recipe.colorValue),
+      createdAt: Value(recipe.createdAt),
+      updatedAt: Value(recipe.updatedAt),
+      isFavorite: Value(recipe.isFavorite),
+      rating: Value(recipe.rating),
+      cookCount: Value(recipe.cookCount),
+      editCount: Value(recipe.editCount),
+      firstEditAt: Value(recipe.firstEditAt),
+      lastEditAt: Value(recipe.lastEditAt),
+      lastCookedAt: Value(recipe.lastCookedAt),
+      tags: Value(jsonEncode(recipe.tags)),
+      version: Value(recipe.version),
+      nutrition: Value(recipe.nutrition != null ? jsonEncode(recipe.nutrition!.toJson()) : null),
+      modernistType: Value(recipe.modernistType),
+      smokingType: Value(recipe.smokingType),
+      glass: Value(recipe.glass),
+      garnish: Value(jsonEncode(recipe.garnish)),
+      pickleMethod: Value(recipe.pickleMethod),
+      recipeType: const Value('standard'),
+      technique: const Value(null),
+      difficulty: const Value(null),
+      scienceNotes: const Value(null),
+      equipmentJson: const Value(null),
+    );
   }
 
-  /// Get recipes by course/category
-  Future<List<Recipe>> getRecipesByCourse(String course) async {
-    return _db.recipes.filter().courseEqualTo(course, caseSensitive: false).findAll();
+  List<IngredientsCompanion> _toIngredientCompanions(
+      int recipeId, List<Ingredient> ingredients,) {
+    return ingredients
+        .map((i) => IngredientsCompanion(
+              uuid: Value(i.uuid.trim().isNotEmpty ? i.uuid : _uuid.v4()),
+              recipeId: Value(recipeId),
+              name: Value(i.name),
+              amount: Value(i.amount),
+              unit: Value(i.unit),
+              notes: Value(i.preparation),
+              alternative: Value(i.alternative),
+              isOptional: Value(i.isOptional),
+              section: Value(i.section),
+              bakerPercent: Value(i.bakerPercent),
+            ),)
+        .toList();
   }
 
-  /// Get recipes by cuisine
-  Future<List<Recipe>> getRecipesByCuisine(String cuisine) async {
-    return _db.recipes.filter().cuisineEqualTo(cuisine, caseSensitive: false).findAll();
+  Future<Recipe> _toIsarRecipe(db.Recipe r, List<db.Ingredient> ings) async {
+    final recipe = Recipe()
+      ..id = r.id
+      ..uuid = r.uuid
+      ..name = r.name
+      ..course = r.course
+      ..cuisine = r.cuisine
+      ..subcategory = r.subcategory
+      ..continent = r.continent
+      ..country = r.country
+      ..serves = r.serves
+      ..time = r.time
+      ..pairsWith = (jsonDecode(r.pairsWith) as List).cast<String>()
+      ..pairedRecipeIds = (jsonDecode(r.pairedRecipeIds) as List).cast<String>()
+      ..comments = r.comments
+      ..directions = (jsonDecode(r.directions) as List).cast<String>()
+      ..sourceUrl = r.sourceUrl
+      ..imageUrls = (jsonDecode(r.imageUrls) as List).cast<String>()
+      ..imageUrl = r.imageUrl
+      ..headerImage = r.headerImage
+      ..stepImages = (jsonDecode(r.stepImages) as List).cast<String>()
+      ..stepImageMap = (jsonDecode(r.stepImageMap) as List).cast<String>()
+      ..source = RecipeSource.values.firstWhere(
+            (s) => s.name == r.source,
+            orElse: () => RecipeSource.personal,)
+      ..colorValue = r.colorValue
+      ..createdAt = r.createdAt
+      ..updatedAt = r.updatedAt
+      ..isFavorite = r.isFavorite
+      ..rating = r.rating
+      ..cookCount = r.cookCount
+      ..editCount = r.editCount
+      ..firstEditAt = r.firstEditAt
+      ..lastEditAt = r.lastEditAt
+      ..lastCookedAt = r.lastCookedAt
+      ..tags = (jsonDecode(r.tags) as List).cast<String>()
+      ..version = r.version
+      ..nutrition = r.nutrition != null
+          ? NutritionInfo.fromJson(jsonDecode(r.nutrition!) as Map<String, dynamic>)
+          : null
+      ..modernistType = r.modernistType
+      ..smokingType = r.smokingType
+      ..glass = r.glass
+      ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
+      ..pickleMethod = r.pickleMethod
+      ..ingredients = ings
+          .map((i) => Ingredient()
+            ..uuid = i.uuid
+            ..name = i.name
+            ..amount = i.amount
+            ..unit = i.unit
+            ..preparation = i.notes
+            ..alternative = i.alternative
+            ..isOptional = i.isOptional
+            ..section = i.section
+            ..bakerPercent = i.bakerPercent,)
+          .toList();
+
+    // Resolve plain filenames → cached local paths from the blob store.
+    recipe.headerImage = await _resolveNullableImagePath(recipe.headerImage);
+    recipe.stepImages = await Future.wait(
+        recipe.stepImages.map((v) => _resolveImagePath(v)),);
+    recipe.imageUrls = await Future.wait(
+        recipe.imageUrls.map((v) => _resolveImagePath(v)),);
+
+    return recipe;
   }
 
-  /// Get recipes by source
-  Future<List<Recipe>> getRecipesBySource(RecipeSource source) async {
-    return _db.recipes.filter().sourceEqualTo(source).findAll();
-  }
+  // ── Image helpers ──────────────────────────────────────────────────────────
 
-  /// Get personal recipes (user's own)
-  Future<List<Recipe>> getPersonalRecipes() async {
-    return _db.recipes.filter().sourceEqualTo(RecipeSource.personal).findAll();
-  }
+  /// True for absolute file-system paths (Unix leading-slash or Windows
+  /// drive-letter prefix).
+  bool _isAbsolutePath(String value) =>
+      value.startsWith('/') || RegExp(r'^[A-Za-z]:').hasMatch(value);
 
-  /// Get memoix collection recipes (from GitHub)
-  Future<List<Recipe>> getMemoixRecipes() async {
-    return _db.recipes.filter().sourceEqualTo(RecipeSource.memoix).findAll();
-  }
-
-  /// Get imported/shared recipes
-  Future<List<Recipe>> getImportedRecipes() async {
-    return _db.recipes.filter().sourceEqualTo(RecipeSource.imported).findAll();
-  }
-
-  /// Get favorite recipes
-  Future<List<Recipe>> getFavorites() async {
-    return _db.recipes.filter().isFavoriteEqualTo(true).findAll();
-  }
-
-  /// Search recipes by name, ingredient, or tag, with optional course filter
-  Future<List<Recipe>> searchRecipes(String query, {List<String>? courseFilter}) async {
-    // 1. Handle Empty Query (Just filtering)
-    if (query.isEmpty) {
-      if (courseFilter != null && courseFilter.isNotEmpty) {
-        // If we have a filter but no text, return all recipes in that course
-        return await _db.recipes.filter()
-            .anyOf(courseFilter, (q, slug) => q.courseEqualTo(slug, caseSensitive: false))
-            .findAll();
+  /// Replaces absolute-path image values in [recipe] with their basenames and
+  /// records the original paths in [out] so blobs can be persisted afterwards.
+  void _collectAndNormaliseImagePaths(
+      Recipe recipe, Map<String, String> out,) {
+    String? normalise(String? value) {
+      if (value == null || value.isEmpty || value.startsWith('http')) {
+        return value;
       }
-      // No filter, no text -> Return everything
-      return getAllRecipes();
+      if (!_isAbsolutePath(value)) return value; // already a basename
+      final fileName = p.basename(value);
+      out[fileName] = value;
+      return fileName;
     }
 
-    // 2. Handle Text Query + Optional Filter
-    final results = await _db.recipes
-        .filter()
-        .optional(courseFilter != null, (q) => q.anyOf(courseFilter!, (q, slug) => q.courseEqualTo(slug, caseSensitive: false)))
-        .group((q) => q
-          .nameContains(query, caseSensitive: false)
-          .or()
-          .tagsElementContains(query, caseSensitive: false)
-          .or()
-          .cuisineContains(query, caseSensitive: false)
-          .or()
-          .ingredientsElement((i) => i.nameContains(query, caseSensitive: false))
-        )
-        .limit(50)
-        .findAll();
-    return results;
-  }
+    recipe.headerImage = normalise(recipe.headerImage);
 
-  /// Get a single recipe by ID
-  Future<Recipe?> getRecipeById(int id) async {
-    return _db.recipes.get(id);
-  }
-
-  /// Get a single recipe by UUID
-  Future<Recipe?> getRecipeByUuid(String uuid) async {
-    return _db.recipes.filter().uuidEqualTo(uuid).findFirst();
-  }
-
-  /// Save a recipe (insert or update)
-  Future<int> saveRecipe(Recipe recipe) async {
-    // Ensure the recipe has a UUID
-    try {
-      if (recipe.uuid.isEmpty) {
-        recipe.uuid = _uuid.v4();
-      }
-    } catch (_) {
-      // If uuid was not initialized, set a new one
-      recipe.uuid = _uuid.v4();
+    for (int i = 0; i < recipe.stepImages.length; i++) {
+      recipe.stepImages[i] =
+          normalise(recipe.stepImages[i]) ?? recipe.stepImages[i];
     }
 
-    recipe.updatedAt = DateTime.now();
-    // `createdAt` is initialized in the model; no-op here.
-    
-    // Normalize ingredient units
-    _normalizeIngredientUnits(recipe);
+    for (int i = 0; i < recipe.imageUrls.length; i++) {
+      recipe.imageUrls[i] =
+          normalise(recipe.imageUrls[i]) ?? recipe.imageUrls[i];
+    }
+  }
 
-    final result = await _db.writeTxn(() => _db.recipes.put(recipe));
-    
-    // Notify personal storage service of change
-    _ref.read(personalStorageServiceProvider).onRecipeChanged();
-    
+  /// Persists image blobs for all local files collected during pre-processing.
+  Future<void> _saveImageBlobs(
+      int recipeId, Recipe recipe, Map<String, String> fileNameToPath,) async {
+    Future<void> save(String fileName, String imageType, int? stepIndex) async {
+      try {
+        final exists = await _db.imageDao.checkImageExists(fileName);
+        if (exists) return; // already in the blob store
+
+        final original = fileNameToPath[fileName];
+        if (original == null) return;
+
+        final file = File(original);
+        if (!await file.exists()) return; // file missing – skip silently
+
+        final bytes = await file.readAsBytes();
+        await _db.imageDao.saveImage(RecipeImagesCompanion(
+          recipeId: Value(recipeId),
+          fileName: Value(fileName),
+          imageType: Value(imageType),
+          stepIndex:
+              stepIndex != null ? Value(stepIndex) : const Value.absent(),
+          imageData: Value(bytes),
+          mimeType: const Value('image/jpeg'),
+          createdAt: Value(DateTime.now()),
+        ),);
+      } catch (e) {
+        // Blob write failures must not abort the recipe save.
+        debugPrint('RecipeRepository._saveImageBlobs: skipping $fileName — $e');
+      }
+    }
+
+    if (recipe.headerImage != null &&
+        recipe.headerImage!.isNotEmpty &&
+        !recipe.headerImage!.startsWith('http')) {
+      await save(recipe.headerImage!, 'header', null);
+    }
+
+    for (int i = 0; i < recipe.stepImages.length; i++) {
+      final v = recipe.stepImages[i];
+      if (!v.startsWith('http')) await save(v, 'step', i);
+    }
+
+    for (final v in recipe.imageUrls) {
+      if (!v.startsWith('http')) await save(v, 'gallery', null);
+    }
+  }
+
+  /// Constructs [Recipe] app model objects from the [_RecipeDecoded] records
+  /// returned by [_batchDecodeRecipes] after [Isolate.run].
+  ///
+  /// The isolate already resolved image paths that hit the on-disk cache
+  /// (synchronous fast path). Here, any remaining bare filenames (cache misses)
+  /// are resolved via the async DB check — the only step that requires [_db].
+  /// App model construction also happens here so the isolate never touches
+  /// mutable Dart objects or framework types.
+  Future<List<Recipe>> _finalizeImagePaths(List<_RecipeDecoded> decoded) async {
+    final result = <Recipe>[];
+    for (final d in decoded) {
+      try {
+        final recipe = Recipe()
+          ..id = d.id
+          ..uuid = d.uuid
+          ..name = d.name
+          ..course = d.course
+          ..cuisine = d.cuisine
+          ..subcategory = d.subcategory
+          ..continent = d.continent
+          ..country = d.country
+          ..serves = d.serves
+          ..time = d.time
+          ..pairsWith = d.pairsWith
+          ..pairedRecipeIds = d.pairedRecipeIds
+          ..comments = d.comments
+          ..directions = d.directions
+          ..sourceUrl = d.sourceUrl
+          ..imageUrl = d.imageUrl
+          ..stepImageMap = d.stepImageMap
+          ..source = RecipeSource.values.firstWhere(
+                (s) => s.name == d.source,
+                orElse: () => RecipeSource.personal,)
+          ..colorValue = d.colorValue
+          ..createdAt = d.createdAt
+          ..updatedAt = d.updatedAt
+          ..isFavorite = d.isFavorite
+          ..rating = d.rating
+          ..cookCount = d.cookCount
+          ..editCount = d.editCount
+          ..firstEditAt = d.firstEditAt
+          ..lastEditAt = d.lastEditAt
+          ..lastCookedAt = d.lastCookedAt
+          ..tags = d.tags
+          ..version = d.version
+          ..nutrition = d.nutritionJson != null
+              ? NutritionInfo.fromJson(d.nutritionJson!)
+              : null
+          ..modernistType = d.modernistType
+          ..smokingType = d.smokingType
+          ..glass = d.glass
+          ..garnish = d.garnish
+          ..pickleMethod = d.pickleMethod
+          ..ingredients = d.ingredients
+              .map((i) => Ingredient()
+                ..uuid = i.uuid
+                ..name = i.name
+                ..amount = i.amount
+                ..unit = i.unit
+                ..preparation = i.notes
+                ..alternative = i.alternative
+                ..isOptional = i.isOptional
+                ..section = i.section
+                ..bakerPercent = i.bakerPercent,)
+              .toList();
+
+        // Resolve any image paths that were bare filenames after the isolate
+        // (cache misses). Paths already resolved to absolute form by the
+        // isolate's sync check are returned immediately by _resolveImagePath.
+        recipe.headerImage = await _resolveNullableImagePath(d.headerImage);
+        recipe.stepImages =
+            await Future.wait(d.stepImages.map(_resolveImagePath));
+        recipe.imageUrls =
+            await Future.wait(d.imageUrls.map(_resolveImagePath));
+
+        result.add(recipe);
+      } catch (e) {
+        debugPrint(
+            'RecipeRepository._finalizeImagePaths: skipping ${d.id}: $e',);
+      }
+    }
     return result;
   }
 
-  /// Save multiple recipes
+  /// Resolves a nullable image value. See [_resolveImagePath].
+  Future<String?> _resolveNullableImagePath(String? value) async {
+    if (value == null || value.isEmpty) return value;
+    return _resolveImagePath(value);
+  }
+
+  /// Resolves a single image value:
+  /// - URLs and absolute paths pass through unchanged.
+  /// - Plain filenames first check the on-disk cache (fast path).
+  /// - On cache miss, [ImageDao.checkImageExists] verifies blob presence
+  ///   without fetching the [imageData] BLOB column. The full BLOB is only
+  ///   read when the file must be written to the cache.
+  /// - If no blob is found (image not yet synced from another device), the
+  ///   absolute cache path is returned even though the file does not yet exist
+  ///   so image widgets show a placeholder rather than throwing.
+  Future<String> _resolveImagePath(String value) async {
+    if (value.startsWith('http')) return value;
+    if (_isAbsolutePath(value)) return value;
+
+    final appDir = await getApplicationDocumentsDirectory();
+    final cacheDir = Directory('${appDir.path}/recipe_images');
+    final cachedFile = File('${cacheDir.path}/$value');
+
+    if (await cachedFile.exists()) return cachedFile.path;
+
+    // Check existence without pulling the imageData BLOB into memory.
+    final exists = await _db.imageDao.checkImageExists(value);
+    if (!exists) return cachedFile.path;
+
+    // Only fetch the BLOB now that we know it exists and the cache is cold.
+    final blob = await _db.imageDao.getImageByFileName(value);
+    if (blob == null) return cachedFile.path; // race-condition safety
+
+    if (!await cacheDir.exists()) await cacheDir.create(recursive: true);
+    await cachedFile.writeAsBytes(blob.imageData);
+    return cachedFile.path;
+  }
+
+  Course _toCourse(db.Course c) {
+    return Course()
+      ..id = c.id
+      ..slug = c.slug
+      ..name = c.name
+      ..iconName = c.iconName
+      ..sortOrder = c.sortOrder
+      ..colorValue = c.colorValue
+      ..isVisible = c.isVisible;
+  }
+
+  // ============ RECIPES ============
+
+  /// Converts a list of raw [db.Recipe] rows into model [Recipe] objects,
+  /// skipping any row that fails to load (e.g. corrupted image reference).
+  ///
+  /// A single bad recipe must never prevent the rest of a course from loading.
+  Future<List<Recipe>> _loadRecipesFrom(List<db.Recipe> rows) async {
+    final results = await Future.wait(rows.map((r) async {
+      try {
+        final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+        return await _toIsarRecipe(r, ings);
+      } catch (e) {
+        debugPrint('RecipeRepository: skipping recipe ${r.id} (${r.name}): $e');
+        return null;
+      }
+    }),);
+    return results.whereType<Recipe>().toList();
+  }
+
+  Future<List<Recipe>> getAllRecipes() async {
+    final rows = await _db.recipeDao.getAllRecipes();
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getRecipesByCourse(String course) async {
+    final rows = await _db.recipeDao.getRecipesByCourse(course);
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getRecipesByCuisine(String cuisine) async {
+    final rows = await _db.recipeDao.getRecipesByCuisine(cuisine);
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getRecipesBySource(RecipeSource source) async {
+    final rows = await _db.recipeDao.getRecipesBySource(source.name);
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getPersonalRecipes() async {
+    final rows = await _db.recipeDao.getPersonalRecipes();
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getMemoixRecipes() async {
+    final rows = await _db.recipeDao.getMemoixRecipes();
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getImportedRecipes() async {
+    final rows = await _db.recipeDao.getImportedRecipes();
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> getFavorites() async {
+    final rows = await _db.recipeDao.getFavoriteRecipes();
+    return _loadRecipesFrom(rows);
+  }
+
+  Future<List<Recipe>> searchRecipes(String query,
+      {List<String>? courseFilter,}) async {
+    if (query.isEmpty) {
+      if (courseFilter != null && courseFilter.isNotEmpty) {
+        final all = await getAllRecipes();
+        return all
+            .where((r) => courseFilter
+                .any((slug) => r.course.toLowerCase() == slug.toLowerCase()),)
+            .toList();
+      }
+      return getAllRecipes();
+    }
+
+    final rows = await _db.recipeDao.searchRecipes(query);
+    final results = await _loadRecipesFrom(rows);
+
+    if (courseFilter != null && courseFilter.isNotEmpty) {
+      return results
+          .where((r) => courseFilter
+              .any((slug) => r.course.toLowerCase() == slug.toLowerCase()),)
+          .toList();
+    }
+    return results;
+  }
+
+  Future<Recipe?> getRecipeById(int id) async {
+    final row = await _db.recipeDao.getRecipeById(id);
+    if (row == null) return null;
+    final ings = await _db.recipeDao.getIngredientsForRecipe(id);
+    return _toIsarRecipe(row, ings);
+  }
+
+  Future<Recipe?> getRecipeByUuid(String uuid) async {
+    final row = await _db.recipeDao.getRecipeByUuid(uuid);
+    if (row == null) return null;
+    final ings = await _db.recipeDao.getIngredientsForRecipe(row.id);
+    return _toIsarRecipe(row, ings);
+  }
+
+  Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false}) async {
+    try {
+      if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
+    } catch (_) {
+      recipe.uuid = _uuid.v4();
+    }
+    if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
+    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
+
+    // Replace absolute image paths with basenames before persisting.
+    // Collect the originals so blobs can be written after we have a recipeId.
+    final fileNameToPath = <String, String>{};
+    _collectAndNormaliseImagePaths(recipe, fileNameToPath);
+
+    final companion = _toCompanion(recipe);
+    await _db.recipeDao.saveRecipe(companion);
+    final recipeId = await _db.recipeDao.getIdByUuid(recipe.uuid) ?? 0;
+    await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
+    await _db.recipeDao
+        .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
+    if (recipeId > 0) await _db.recipeDao.touchRecipe(recipeId);
+
+    // Persist image blobs for any new local files.
+    if (recipeId > 0 && fileNameToPath.isNotEmpty) {
+      await _saveImageBlobs(recipeId, recipe, fileNameToPath);
+    }
+
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    return recipeId;
+  }
+
   Future<void> saveRecipes(List<Recipe> recipes) async {
     final now = DateTime.now();
     for (final recipe in recipes) {
-      // Ensure each recipe has a uuid
       try {
         if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
       } catch (_) {
         recipe.uuid = _uuid.v4();
       }
       recipe.updatedAt = now;
-      // Normalize ingredient units
-      _normalizeIngredientUnits(recipe);
+      UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
     }
-    await _db.writeTxn(() => _db.recipes.putAll(recipes));
-    
-    // Notify personal storage service of change
+
+    final companions = recipes.map(_toCompanion).toList();
+    await _db.recipeDao.saveRecipes(companions);
+
+    for (final recipe in recipes) {
+      final row = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (row != null) {
+        await _db.recipeDao.deleteIngredientsForRecipe(row.id);
+        await _db.recipeDao.saveIngredients(
+            _toIngredientCompanions(row.id, recipe.ingredients),);
+      }
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
-  
-  /// Normalize ingredient units to standard abbreviations
-  void _normalizeIngredientUnits(Recipe recipe) {
-    UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
-  }
 
-  /// Delete a recipe
   Future<bool> deleteRecipe(int id) async {
-    final result = await _db.writeTxn(() => _db.recipes.delete(id));
-    
-    // Notify personal storage service of change
-    if (result) {
-      _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    if (id > 0) {
+      final row = await _db.recipeDao.getRecipeById(id);
+      if (row != null) {
+        await TombstoneStore.add(TombstoneDomain.recipes, row.uuid);
+      }
     }
-    
-    return result;
+    await _db.recipeDao.deleteRecipe(id);
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    return true;
   }
 
-  /// Get recipes that pair with the given recipe (inverse lookup).
-  /// Finds recipes that have this recipe's UUID in their pairedRecipeIds list.
-  Future<List<Recipe>> getRecipesPairedWith(String recipeUuid) async {
-    final all = await _db.recipes.where().findAll();
-    return all.where((r) => r.pairedRecipeIds.contains(recipeUuid)).toList();
+  /// Delete a recipe by UUID. Pass [fromMerge] = true when called during a
+  /// pull merge to prevent recording a tombstone for a remotely-deleted item.
+  Future<bool> deleteRecipeByUuid(String uuid, {bool fromMerge = false}) async {
+    final row = await _db.recipeDao.getRecipeByUuid(uuid);
+    if (row == null) return false;
+    if (!fromMerge) {
+      await TombstoneStore.add(TombstoneDomain.recipes, uuid);
+    }
+    await _db.recipeDao.deleteRecipe(row.id);
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    return true;
   }
 
-  // Where frontier and oak converge, we couldn't see ourselves clearly
-  // Reject the over-elaborate to find the starting point
-  // Remove what tangles to reveal what was already there
-  // Count what remains to confirm your suspicions
-  static const _reduction = "\\x62\\x70\\x2b\\x7e\\x7f\\x6c\\x7d\\x7f\\x70\\x6f\\x2b\\x7a\\x80\\x7f\\x2b\\x7a\\x79\\x2b\\x7f\\x73\\x74\\x7e\\x2b\\x7c\\x80\\x70\\x7e\\x7f\\x2b\\x6c\\x7d\\x78\\x70\\x6f\\x2b\\x82\\x74\\x7f\\x73\\x2b\\x7a\\x79\\x70\\x2b\\x82\\x7a\\x7d\\x6f\\x45\\x2b\\x77\\x70\\x7e\\x7e\\x39";
+  Future<List<Recipe>> getRecipesPairedWith(
+      String recipeUuid,) async {
+    final all = await _db.recipeDao.getAllRecipes();
+    final matched = all.where((r) {
+      final ids =
+          (jsonDecode(r.pairedRecipeIds) as List).cast<String>();
+      return ids.contains(recipeUuid);
+    }).toList();
+    return Future.wait(matched.map((r) async {
+      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
+      return _toIsarRecipe(r, ings);
+    }),);
+  }
 
-  /// Get multiple recipes by their UUIDs
-  Future<List<Recipe>> getRecipesByUuids(List<String> uuids) async {
+  Future<List<Recipe>> getRecipesByUuids(
+      List<String> uuids,) async {
     if (uuids.isEmpty) return [];
     final results = <Recipe>[];
     for (final uuid in uuids) {
@@ -190,18 +871,11 @@ class RecipeRepository {
     return results;
   }
 
-  /// Toggle favorite status.
-  ///
-  /// Returns an empty list on success. Returns a non-empty list of blocking
-  /// responses when the action is rejected — callers should display the
-  /// message and not proceed with any post-toggle UI update.
   Future<List<IntegrityResponse>> toggleFavorite(int id) async {
-    // Read state before transaction to capture pre-toggle value
-    final existing = await _db.recipes.get(id);
+    final existing = await getRecipeById(id);
     if (existing == null) return [];
     final wasFavorited = existing.isFavorite;
 
-    // Validate content requirements before persisting a new favourite.
     if (!wasFavorited) {
       final preflight = await IntegrityService.preflightSecondary(
         'activity.recipe_favourite',
@@ -219,18 +893,9 @@ class RecipeRepository {
       if (blocking.isNotEmpty) return blocking;
     }
 
-    await _db.writeTxn(() async {
-      final recipe = await _db.recipes.get(id);
-      if (recipe != null) {
-        recipe.isFavorite = !recipe.isFavorite;
-        await _db.recipes.put(recipe);
-      }
-    });
-    
-    // Notify personal storage service of change
+    await _db.recipeDao.toggleFavorite(id, wasFavorited);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
-    // Report completed toggle for the calibration pass.
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
       metadata: {
@@ -242,112 +907,142 @@ class RecipeRepository {
     return [];
   }
 
-  /// Watch all recipes (stream)
   Stream<List<Recipe>> watchAllRecipes() {
-    return _db.recipes.where().watch(fireImmediately: true);
+    return _db.recipeDao.watchAllRecipes().asyncMap((rows) async {
+      if (rows.isEmpty) return <Recipe>[];
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(rows.map((r) => r.id));
+      // Convert to primitive records before crossing the isolate boundary.
+      final rawRecipes = rows.map(_toRecipeRaw).toList();
+      final grouped = _groupIngRaw(allIngs);
+      final appDir = await getApplicationDocumentsDirectory();
+      final cacheBasePath = '${appDir.path}/recipe_images';
+      final decoded = await compute(_batchDecodeRecipes, (
+            rawRecipes: rawRecipes,
+            grouped: grouped,
+            cacheBasePath: cacheBasePath,
+          ),);
+      return _finalizeImagePaths(decoded);
+    });
   }
 
-  /// Watch favorite recipes (stream)
   Stream<List<Recipe>> watchFavorites() {
-    return _db.recipes
-        .filter()
-        .isFavoriteEqualTo(true)
-        .watch(fireImmediately: true);
+    // Fetch only ingredients for the returned favorites — no full table scan.
+    return _db.recipeDao.watchFavoriteRecipes().asyncMap((rows) async {
+      if (rows.isEmpty) return <Recipe>[];
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(rows.map((r) => r.id));
+      final rawRecipes = rows.map(_toRecipeRaw).toList();
+      final grouped = _groupIngRaw(allIngs);
+      final appDir = await getApplicationDocumentsDirectory();
+      final cacheBasePath = '${appDir.path}/recipe_images';
+      final decoded = await compute(_batchDecodeRecipes, (
+            rawRecipes: rawRecipes,
+            grouped: grouped,
+            cacheBasePath: cacheBasePath,
+          ),);
+      return _finalizeImagePaths(decoded);
+    });
   }
 
-  /// Watch recipes by course (sorted by cuisine region, country, province, then name)
   Stream<List<Recipe>> watchRecipesByCourse(String course) {
-    return _db.recipes
-        .filter()
-        .courseEqualTo(course, caseSensitive: false)
-        .watch(fireImmediately: true)
-        .map((recipes) {
-          // Define continent order for sorting
-          const continentOrder = [
-            'Asian',
-            'Caribbean', 
-            'European',
-            'Middle Eastern',
-            'African',
-            'North American',
-            'Central American',
-            'South American',
-            'Oceanian',
-          ];
-          
-          // Sort by: 1) Continent, 2) Country, 3) Subcategory (province), 4) Recipe name
-          recipes.sort((a, b) {
-            // 1. Compare by continent
-            final aCont = Cuisine.continentFor(a.cuisine);
-            final bCont = Cuisine.continentFor(b.cuisine);
-            
-            final aContIndex = aCont != null ? continentOrder.indexOf(aCont) : continentOrder.length;
-            final bContIndex = bCont != null ? continentOrder.indexOf(bCont) : continentOrder.length;
-            final aOrder = aContIndex == -1 ? continentOrder.length : aContIndex;
-            final bOrder = bContIndex == -1 ? continentOrder.length : bContIndex;
-            
-            if (aOrder != bOrder) {
-              return aOrder.compareTo(bOrder);
-            }
-            
-            // 2. Same continent, compare by country name
-            final aCountry = Cuisine.toAdjective(a.cuisine);
-            final bCountry = Cuisine.toAdjective(b.cuisine);
-            
-            if (aCountry != bCountry) {
-              return aCountry.toLowerCase().compareTo(bCountry.toLowerCase());
-            }
-            
-            // 3. Same country, compare by subcategory (province/region)
-            final aProvince = a.subcategory ?? '';
-            final bProvince = b.subcategory ?? '';
-            
-            if (aProvince != bProvince) {
-              return aProvince.toLowerCase().compareTo(bProvince.toLowerCase());
-            }
-            
-            // 4. Same province, sort by recipe name
-            return a.name.toLowerCase().compareTo(b.name.toLowerCase());
-          });
-          return recipes;
-        });
+    // Fetch only ingredients for the course's recipes — no full table scan.
+    return _db.recipeDao.watchRecipesByCourse(course).asyncMap((rows) async {
+      if (rows.isEmpty) return <Recipe>[];
+      final allIngs = await _db.recipeDao
+          .getIngredientsForRecipes(rows.map((r) => r.id));
+      final rawRecipes = rows.map(_toRecipeRaw).toList();
+      final grouped = _groupIngRaw(allIngs);
+      final appDir = await getApplicationDocumentsDirectory();
+      final cacheBasePath = '${appDir.path}/recipe_images';
+      final decoded = await compute(_batchDecodeRecipes, (
+            rawRecipes: rawRecipes,
+            grouped: grouped,
+            cacheBasePath: cacheBasePath,
+          ),);
+      final recipes = await _finalizeImagePaths(decoded);
+
+      const continentOrder = [
+        'Asian',
+        'Caribbean',
+        'European',
+        'Middle Eastern',
+        'African',
+        'North American',
+        'Central American',
+        'South American',
+        'Oceanian',
+      ];
+
+      recipes.sort((a, b) {
+        final aCont = Cuisine.continentFor(a.cuisine);
+        final bCont = Cuisine.continentFor(b.cuisine);
+
+        final aContIndex = aCont != null
+            ? continentOrder.indexOf(aCont)
+            : continentOrder.length;
+        final bContIndex = bCont != null
+            ? continentOrder.indexOf(bCont)
+            : continentOrder.length;
+        final aOrder =
+            aContIndex == -1 ? continentOrder.length : aContIndex;
+        final bOrder =
+            bContIndex == -1 ? continentOrder.length : bContIndex;
+
+        if (aOrder != bOrder) return aOrder.compareTo(bOrder);
+
+        final aCountry = Cuisine.toAdjective(a.cuisine);
+        final bCountry = Cuisine.toAdjective(b.cuisine);
+        if (aCountry != bCountry) {
+          return aCountry.toLowerCase().compareTo(bCountry.toLowerCase());
+        }
+
+        final aProvince = a.subcategory ?? '';
+        final bProvince = b.subcategory ?? '';
+        if (aProvince != bProvince) {
+          return aProvince.toLowerCase().compareTo(bProvince.toLowerCase());
+        }
+
+        return a.name.toLowerCase().compareTo(b.name.toLowerCase());
+      });
+
+      return recipes;
+    });
   }
 
   // ============ COURSES ============
 
-  /// Get all courses sorted by order
   Future<List<Course>> getAllCourses() async {
-    return _db.courses.where().sortBySortOrder().findAll();
+    final rows = await _db.recipeDao.getAllCourses();
+    return rows.map(_toCourse).toList();
   }
 
-  /// Get visible courses only
   Future<List<Course>> getVisibleCourses() async {
-    return _db.courses
-        .filter()
-        .isVisibleEqualTo(true)
-        .sortBySortOrder()
-        .findAll();
+    final rows = await _db.recipeDao.getVisibleCourses();
+    return rows.map(_toCourse).toList();
   }
 
-  /// Save a course
   Future<int> saveCourse(Course course) async {
-    return _db.writeTxn(() => _db.courses.put(course));
+    final companion = CoursesCompanion(
+      slug: Value(course.slug),
+      name: Value(course.name),
+      iconName: Value(course.iconName),
+      sortOrder: Value(course.sortOrder),
+      colorValue: Value(course.colorValue),
+      isVisible: Value(course.isVisible),
+    );
+    return _db.recipeDao.saveCourse(companion);
   }
 
-  /// Watch courses
   Stream<List<Course>> watchCourses() {
-    return _db.courses.where().sortBySortOrder().watch(fireImmediately: true);
+    return _db.recipeDao.watchCourses().map((rows) => rows.map(_toCourse).toList());
   }
 
   // ============ INGREDIENT SUGGESTIONS ============
 
-  /// Get ingredient name suggestions based on user's history + defaults
-  /// Returns unique names that match the query, sorted alphabetically
   Future<List<String>> getIngredientNameSuggestions(String query) async {
-    // Get all ingredient names from saved recipes
-    final allRecipes = await _db.recipes.where().findAll();
-    
-    // Extract all ingredient names and deduplicate with a Set
+    final allRecipes = await getAllRecipes();
+
     final historyNames = <String>{};
     for (final recipe in allRecipes) {
       for (final ingredient in recipe.ingredients) {
@@ -356,132 +1051,81 @@ class RecipeRepository {
         }
       }
     }
-    
-    // Merge with essential defaults
-    final allNames = <String>{...Suggestions.essentialIngredients, ...historyNames};
-    
-    // Filter by query (case-insensitive contains match)
+
+    final allNames = <String>{
+      ...Suggestions.essentialIngredients,
+      ...historyNames,
+    };
+
     final lowerQuery = query.toLowerCase();
-    final filtered = allNames
-        .where((name) => name.toLowerCase().contains(lowerQuery))
-        .toList();
-    
-    // Sort with "starts with" matches first, then alphabetically
+    final filtered =
+        allNames.where((name) => name.toLowerCase().contains(lowerQuery)).toList();
+
     filtered.sort((a, b) {
       final aLower = a.toLowerCase();
       final bLower = b.toLowerCase();
       final aStartsWith = aLower.startsWith(lowerQuery);
       final bStartsWith = bLower.startsWith(lowerQuery);
-      
       if (aStartsWith && !bStartsWith) return -1;
       if (bStartsWith && !aStartsWith) return 1;
       return aLower.compareTo(bLower);
     });
-    
+
     return filtered;
   }
 
-  /// Get prep/notes suggestions based on user's history + defaults
-  /// Returns unique prep notes that match the query, sorted alphabetically
   Future<List<String>> getPrepNoteSuggestions(String query) async {
-    // Get all preparation notes from saved recipes
-    final allRecipes = await _db.recipes.where().findAll();
-    
-    // Extract all preparation notes and deduplicate with a Set
+    final allRecipes = await getAllRecipes();
+
     final historyNotes = <String>{};
     for (final recipe in allRecipes) {
       for (final ingredient in recipe.ingredients) {
-        if (ingredient.preparation != null && ingredient.preparation!.isNotEmpty) {
+        if (ingredient.preparation != null &&
+            ingredient.preparation!.isNotEmpty) {
           historyNotes.add(ingredient.preparation!);
         }
       }
     }
-    
-    // Merge with essential defaults and the full preparations list
+
     final allNotes = <String>{
       ...Suggestions.essentialPrepNotes,
       ...Suggestions.preparations,
       ...historyNotes,
     };
-    
-    // Filter by query (case-insensitive contains match)
+
     final lowerQuery = query.toLowerCase();
-    final filtered = allNotes
-        .where((note) => note.toLowerCase().contains(lowerQuery))
-        .toList();
-    
-    // Sort with "starts with" matches first, then alphabetically
+    final filtered =
+        allNotes.where((note) => note.toLowerCase().contains(lowerQuery)).toList();
+
     filtered.sort((a, b) {
       final aLower = a.toLowerCase();
       final bLower = b.toLowerCase();
       final aStartsWith = aLower.startsWith(lowerQuery);
       final bStartsWith = bLower.startsWith(lowerQuery);
-      
       if (aStartsWith && !bStartsWith) return -1;
       if (bStartsWith && !aStartsWith) return 1;
       return aLower.compareTo(bLower);
     });
-    
+
     return filtered;
   }
 
   // ============ SYNC HELPERS ============
 
-  /// Replace all memoix recipes (for sync from GitHub)
-  /// Preserves user-local fields (isFavorite, rating, cookCount, etc.)
-  /// that exist on previously-synced recipes.
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
-    await _db.writeTxn(() async {
-      // Build a lookup of existing memoix recipes by UUID
-      final existing = await _db.recipes
-          .filter()
-          .sourceEqualTo(RecipeSource.memoix)
-          .findAll();
-      final existingByUuid = {for (final r in existing) r.uuid: r};
+    final companions = recipes.map(_toCompanion).toList();
+    await _db.recipeDao.syncMemoixRecipes(companions);
 
-      // Track which existing UUIDs are still present in the sync payload
-      final incomingUuids = <String>{};
-
-      for (final incoming in recipes) {
-        incomingUuids.add(incoming.uuid);
-        final prev = existingByUuid[incoming.uuid];
-        if (prev != null) {
-          // Preserve Isar ID so `put` updates in-place
-          incoming.id = prev.id;
-          // Preserve user-local metadata
-          incoming.isFavorite = prev.isFavorite;
-          incoming.rating = prev.rating;
-          incoming.cookCount = prev.cookCount;
-          incoming.lastCookedAt = prev.lastCookedAt;
-          incoming.editCount = prev.editCount;
-          incoming.firstEditAt = prev.firstEditAt;
-          incoming.lastEditAt = prev.lastEditAt;
-          // Keep user-added images if the incoming recipe has none
-          if (prev.headerImage != null && prev.headerImage!.isNotEmpty) {
-            incoming.headerImage = prev.headerImage;
-          }
-          if (prev.stepImages.isNotEmpty && incoming.stepImages.isEmpty) {
-            incoming.stepImages = prev.stepImages;
-            incoming.stepImageMap = prev.stepImageMap;
-          }
-        }
-      }
-
-      // Delete memoix recipes that are no longer in the sync payload
-      for (final prev in existing) {
-        if (!incomingUuids.contains(prev.uuid)) {
-          await _db.recipes.delete(prev.id);
-        }
-      }
-
-      // Upsert all incoming recipes
-      await _db.recipes.putAll(recipes);
-    });
+    for (final recipe in recipes) {
+      final dbRecipe = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (dbRecipe == null) continue;
+      await _db.recipeDao.deleteIngredientsForRecipe(dbRecipe.id);
+      final ingredientCompanions = _toIngredientCompanions(dbRecipe.id, recipe.ingredients);
+      await _db.recipeDao.saveIngredients(ingredientCompanions);
+    }
   }
 
-  /// Get last sync time (stored as a recipe tag, hacky but works)
   Future<DateTime?> getLastSyncTime() async {
-    // Could use SharedPreferences, but keeping it simple
     return null;
   }
 }
@@ -523,7 +1167,7 @@ final recipeSearchProvider = FutureProvider.family<List<Recipe>, String>((ref, q
 
 /// Provider for available cuisines in the database
 final availableCuisinesProvider = StreamProvider<Set<String>>((ref) {
-  return ref.watch(allRecipesProvider.stream).map((recipes) {
+  return ref.watch(recipeRepositoryProvider).watchAllRecipes().map((recipes) {
     return recipes
         .map((r) => r.cuisine)
         .where((c) => c != null && c.isNotEmpty)

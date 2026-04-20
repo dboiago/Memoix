@@ -12,7 +12,6 @@ dependencies:
   
   # UI & Design
   cupertino_icons: ^1.0.6
-  google_fonts: ^6.1.0
   flutter_svg: ^2.0.9
   cached_network_image: ^3.3.1
   
@@ -21,50 +20,51 @@ dependencies:
   riverpod_annotation: ^2.3.3
   
   # Local Database
-  isar: ^3.1.0+1
-  isar_flutter_libs: ^3.1.0+1
+  drift: ^2.22.1
+  drift_flutter: ^0.2.4
+  sqlite3_flutter_libs: ^0.5.27
   path_provider: ^2.1.2
   
   # Networking
   http: ^1.2.0
   connectivity_plus: ^6.1.1
-  package_info_plus: ^8.1.2
+  package_info_plus: ^9.0.0
   webview_flutter: ^4.10.0
   
   # Recipe URL Parsing
   html: ^0.15.4
-  youtube_explode_dart: ^3.0.5
   
   # OCR
   google_mlkit_text_recognition: ^0.11.0
   image_picker: ^1.1.1
-  image_cropper: ^8.0.2
+  image_cropper: ^12.1.1
   
   # Sharing & Deep Links
-  share_plus: ^7.2.1
+  share_plus: ^12.0.1
   qr_flutter: ^4.1.0
-  mobile_scanner: ^4.0.1
+  mobile_scanner: ^7.2.0
   app_links: ^3.5.1
   
   # Handles Android APK download & install intent
-  ota_update: ^5.1.0
+  ota_update: ^7.1.0
 
   # Utilities
-  uuid: ^4.3.3
-  intl: ^0.19.0
+  uuid: ^4.5.3
+  intl: ^0.20.2
   collection: ^1.18.0
   url_launcher: ^6.3.0
   shared_preferences: ^2.2.2
   file_picker: ^10.1.0
-  wakelock_plus: ^1.1.4
+  wakelock_plus: ^1.5.1
   flutter_ringtone_player: ^4.0.0+3
   audioplayers: ^6.0.0
   crypto: ^3.0.0
   encrypt: ^5.0.3
   json_annotation: ^4.9.0
-  vibration: ^2.0.0
+  vibration: ^3.1.8
   
   # External Storage
+  supabase_flutter: 2.10.2
   device_info_plus: ^11.2.0
   google_sign_in: ^6.2.2
   googleapis: ^14.0.0
@@ -73,7 +73,7 @@ dependencies:
   flutter_secure_storage: ^9.0.0
   
   # Desktop Window Management
-  window_manager: ^0.4.3
+  window_manager: ^0.5.1
   
   # Configuration
   flutter_dotenv: ^5.2.1
@@ -82,15 +82,16 @@ dependencies:
   pdf: ^3.10.8
   printing: ^5.13.1
 
+  path: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.14.3
   build_runner: ^2.4.8
-  isar_generator: ^3.1.0+1
   riverpod_generator: ^2.3.9
   json_serializable: ^6.7.1
+  drift_dev: ^2.22.1
 
 flutter:
   uses-material-design: true
@@ -98,12 +99,60 @@ flutter:
   assets:
     - .env
     - assets/
-    - assets/fonts/
     - assets/icons/
     - assets/images/
     - assets/ingredients/
     - assets/audio/
 
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter_18pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter_18pt-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Inter_18pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter_18pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter_18pt-Bold.ttf
+          weight: 700
+    - family: Courier Prime
+      fonts:
+        - asset: assets/fonts/CourierPrime-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/CourierPrime-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/CourierPrime-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/CourierPrime-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/PlayfairDisplay-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlayfairDisplay-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/PlayfairDisplay-BoldItalic.ttf
+          weight: 700
+          style: italic
+          
 flutter_launcher_icons:
   android: "ic_launcher"
   ios: true

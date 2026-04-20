@@ -145,7 +145,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     state = state.copyWith(providers: {
       ...state.providers,
       provider: updatedConfig,
-    });
+    },);
 
     await _save();
   }
@@ -160,7 +160,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     state = state.copyWith(providers: {
       ...state.providers,
       provider: updatedConfig,
-    });
+    },);
 
     await _save();
   }
@@ -174,7 +174,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     state = state.copyWith(providers: {
       ...state.providers,
       provider: updated,
-    });
+    },);
 
     await _save();
   }

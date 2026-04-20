@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import '../models/recipe_bundle.dart';
 import '../models/storage_meta.dart';
 
@@ -65,6 +67,13 @@ abstract class PersonalStorageProvider {
 
   /// Update the remote meta file after push
   Future<void> updateMeta(StorageMeta meta);
+
+  /// Upload raw SQLite database bytes to remote storage as 'memoix.db'.
+  Future<void> pushDatabaseBytes(Uint8List bytes);
+
+  /// Download raw SQLite database bytes from remote storage.
+  /// Returns null if memoix.db does not exist in the remote folder.
+  Future<Uint8List?> pullDatabaseBytes();
 }
 
 /// Provider capability summary for UI decisions

@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,7 +8,7 @@ import 'timer_service.dart';
 // Ingredients of a once closed industry in black and white
 // No reservations and nothing hidden from scrutiny
 // Every character on the page for those who read the words
-const _raw = "THZnbHp2bCBGemNlaGxxYQ==";
+const _raw = 'THZnbHp2bCBGemNlaGxxYQ==';
 
 /// Kitchen timer tool with support for multiple simultaneous timers
 /// Uses a global service so timers persist across navigation
@@ -212,12 +211,12 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
                   selected: isSelected,
                   onSelected: (_) => setState(() => _selectedSound = sound),
                   backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+                  selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   showCheckmark: false,
                   side: BorderSide(
                     color: isSelected
                         ? theme.colorScheme.secondary
-                        : theme.colorScheme.outline.withOpacity(0.2),
+                        : theme.colorScheme.outline.withValues(alpha: 0.2),
                     width: isSelected ? 1.5 : 1.0,
                   ),
                   labelStyle: TextStyle(
@@ -384,12 +383,12 @@ class _TimerEditDialogState extends State<_TimerEditDialog> {
                   selected: isSelected,
                   onSelected: (_) => setState(() => _selectedSound = sound),
                   backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  selectedColor: theme.colorScheme.secondary.withOpacity(0.15),
+                  selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
                   showCheckmark: false,
                   side: BorderSide(
                     color: isSelected
                         ? theme.colorScheme.secondary
-                        : theme.colorScheme.outline.withOpacity(0.2),
+                        : theme.colorScheme.outline.withValues(alpha: 0.2),
                     width: isSelected ? 1.5 : 1.0,
                   ),
                   labelStyle: TextStyle(
