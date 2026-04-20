@@ -44,6 +44,7 @@ class CourseIconWidget extends StatelessWidget {
     'smoking':    'assets/icons/smoking-icon-512.svg',
     'soup':       'assets/icons/soup-icon-512.svg',
     'vegn':       'assets/icons/vegn-icon-512.svg',
+    'classics':   'assets/icons/classics-icon-512.svg',
   };
 
   /// Material icon fallback for slugs without a custom SVG.

@@ -64,7 +64,6 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       processIntegrityResponses(ref);
       ref.read(deepLinkServiceProvider).initialize(context);
-      ref.read(deepLinkServiceProvider).checkClipboard(context);
       _checkForUpdatesOnLaunch();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
@@ -92,9 +91,6 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
       // App coming back to foreground - could trigger pull if needed
       // Currently handled by onAppLaunched on startup
       processIntegrityResponses(ref);
-      if (mounted) {
-        ref.read(deepLinkServiceProvider).checkClipboard(context);
-      }
     }
   }
 
