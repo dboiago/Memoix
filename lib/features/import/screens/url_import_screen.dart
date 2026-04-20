@@ -110,7 +110,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                     ),
                     const SizedBox(height: 12),
                     const Text(
-                      'Paste a web URL, a Memoix share link, or an entire shared message — the app will extract the link automatically.',
+                      'Paste a URL, Memoix link, or an entire shared message - the app will extract the link automatically.',
                     ),
                     const SizedBox(height: 8),
                     Text(
