@@ -103,7 +103,7 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                         Icon(Icons.link, color: theme.colorScheme.primary),
                         const SizedBox(width: 8),
                         Text(
-                          'Import from Link or Message',
+                          'Import from URL or Message',
                           style: theme.textTheme.titleMedium,
                         ),
                       ],
