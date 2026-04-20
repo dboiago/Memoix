@@ -5621,14 +5621,14 @@ class UrlRecipeImporter {
 
   /// Normalize unit names to standard abbreviations
   /// e.g., "tablespoons" -> "Tbsp", "cups" -> "C", "teaspoons" -> "tsp"
-  /// Uses shared UnitNormalizer for consistent behavior across importers
+  /// Uses shared UnitNormalizer for consistent behaviour across importers
   String _normalizeUnit(String unit) {
     return UnitNormalizer.normalize(unit);
   }
 
   /// Normalize fractions to unicode characters (1/2 → ½, 0.5 → ½, 0.333333 → ⅓)
   /// 
-  /// Uses shared TextNormalizer for consistent behavior across importers.
+  /// Uses shared TextNormalizer for consistent behaviour across importers.
   String? _normalizeFractions(String? text) {
     if (text == null || text.isEmpty) return text;
     return TextNormalizer.normalizeFractions(text);

@@ -32,9 +32,9 @@ class CellarRepository {
   Future<List<CellarEntry>> getBuyAgainEntries() =>
       _db.cellarDao.getBuyAgainEntries();
 
-  /// Get favorite entries
-  Future<List<CellarEntry>> getFavorites() =>
-      _db.cellarDao.getFavorites();
+  /// Get favourite entries
+  Future<List<CellarEntry>> getFavourites() =>
+      _db.cellarDao.getFavourites();
 
   /// Search entries by name, producer, or category
   Future<List<CellarEntry>> searchEntries(String query) {
@@ -103,10 +103,10 @@ class CellarRepository {
     return result;
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(CellarEntry entry) async {
+  /// Toggle favourite status
+  Future<void> toggleFavourite(CellarEntry entry) async {
     final wasFavorited = entry.isFavorite;
-    await _db.cellarDao.toggleFavorite(entry.id, entry.isFavorite);
+    await _db.cellarDao.toggleFavourite(entry.id, entry.isFavorite);
 
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -133,9 +133,9 @@ class CellarRepository {
   Stream<List<CellarEntry>> watchAllEntries() =>
       _db.cellarDao.watchAllEntries();
 
-  /// Watch favorites
-  Stream<List<CellarEntry>> watchFavorites() =>
-      _db.cellarDao.watchFavorites();
+  /// Watch favourites
+  Stream<List<CellarEntry>> watchFavourites() =>
+      _db.cellarDao.watchFavourites();
 
   /// Get count of all entries
   Future<int> getEntryCount() =>
@@ -168,10 +168,10 @@ final allCellarEntriesProvider = StreamProvider<List<CellarEntry>>((ref) {
   return repository.watchAllEntries();
 });
 
-/// Watch favorite cellar entries
-final favoriteCellarEntriesProvider = StreamProvider<List<CellarEntry>>((ref) {
+/// Watch favourite cellar entries
+final favouriteCellarEntriesProvider = StreamProvider<List<CellarEntry>>((ref) {
   final repository = ref.watch(cellarRepositoryProvider);
-  return repository.watchFavorites();
+  return repository.watchFavourites();
 });
 
 /// Get cellar entry count (derived from stream for auto-update)

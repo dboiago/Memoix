@@ -40,9 +40,9 @@ class SandwichRepository {
   Future<List<Sandwich>> getMemoixSandwiches() =>
       _db.catalogueDao.getMemoixSandwiches();
 
-  /// Get favorite sandwiches
-  Future<List<Sandwich>> getFavorites() =>
-      _db.catalogueDao.getFavoriteSandwiches();
+  /// Get favourite sandwiches
+  Future<List<Sandwich>> getFavourites() =>
+      _db.catalogueDao.getFavouriteSandwiches();
 
   /// Search sandwiches by name, bread, protein, cheese, or condiment
   Future<List<Sandwich>> searchSandwiches(String query) =>
@@ -104,10 +104,10 @@ class SandwichRepository {
     return count > 0;
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(Sandwich sandwich) async {
+  /// Toggle favourite status
+  Future<void> toggleFavourite(Sandwich sandwich) async {
     final wasFavorited = sandwich.isFavorite;
-    await _db.catalogueDao.toggleSandwichFavorite(sandwich.id, sandwich.isFavorite);
+    await _db.catalogueDao.toggleSandwichFavourite(sandwich.id, sandwich.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -134,9 +134,9 @@ class SandwichRepository {
   Stream<List<Sandwich>> watchAllSandwiches() =>
       _db.catalogueDao.watchAllSandwiches();
 
-  /// Watch favorites
-  Stream<List<Sandwich>> watchFavorites() =>
-      _db.catalogueDao.watchFavoriteSandwiches();
+  /// Watch favourites
+  Stream<List<Sandwich>> watchFavourites() =>
+      _db.catalogueDao.watchFavouriteSandwiches();
 
   /// Get count of all sandwiches
   Future<int> getSandwichCount() => _db.catalogueDao.getSandwichCount();
@@ -212,10 +212,10 @@ final allSandwichesProvider = StreamProvider<List<Sandwich>>((ref) {
   return repository.watchAllSandwiches();
 });
 
-/// Watch favorite sandwiches
-final favoriteSandwichesProvider = StreamProvider<List<Sandwich>>((ref) {
+/// Watch favourite sandwiches
+final favouriteSandwichesProvider = StreamProvider<List<Sandwich>>((ref) {
   final repository = ref.watch(sandwichRepositoryProvider);
-  return repository.watchFavorites();
+  return repository.watchFavourites();
 });
 
 /// Get sandwich count (derived from stream for auto-update)

@@ -100,7 +100,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             isFavorite: sandwich.isFavorite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
             onFavoritePressed: () async {
-              await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
+              await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
               ref.invalidate(allSandwichesProvider);
               await processIntegrityResponses(ref);
             },
@@ -211,7 +211,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             isFavorite: sandwich.isFavorite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
             onFavoritePressed: () async {
-              await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
+              await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
               ref.invalidate(allSandwichesProvider);
               await processIntegrityResponses(ref);
             },
@@ -354,7 +354,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
-          await ref.read(sandwichRepositoryProvider).toggleFavorite(sandwich);
+          await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
           ref.invalidate(allSandwichesProvider);
           await processIntegrityResponses(ref);
         },

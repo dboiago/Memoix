@@ -37,10 +37,10 @@ Given a single ingredient, return ONLY a JSON object with this exact shape:
     //   flour, water and an alkaline solution, typically kansui, which gives them
     //   their characteristic yellow hue, springy texture, and slightly chewy bite."
   "aliases": string[],     // Common alternate names. Empty array if none.
-  "flavor": string,
+  "flavour": string,
     // Flavour profile only. Max 12 words. No filler phrases.
     // Example good: "Neutral, slightly savoury flavour that absorbs accompanying sauces"
-    // Example bad: "They have a neutral, slightly savory flavor that readily absorbs
+    // Example bad: "They have a neutral, slightly savoury flavour that readily absorbs
     //   the tastes of accompanying sauces and broths"
   "substitutions": [       // Max 3. Empty array if no good substitute exists.
     {

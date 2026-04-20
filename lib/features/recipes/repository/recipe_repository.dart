@@ -719,8 +719,8 @@ class RecipeRepository {
     return _loadRecipesFrom(rows);
   }
 
-  Future<List<Recipe>> getFavorites() async {
-    final rows = await _db.recipeDao.getFavoriteRecipes();
+  Future<List<Recipe>> getFavourites() async {
+    final rows = await _db.recipeDao.getFavouriteRecipes();
     return _loadRecipesFrom(rows);
   }
 
@@ -871,7 +871,7 @@ class RecipeRepository {
     return results;
   }
 
-  Future<List<IntegrityResponse>> toggleFavorite(int id) async {
+  Future<List<IntegrityResponse>> toggleFavourite(int id) async {
     final existing = await getRecipeById(id);
     if (existing == null) return [];
     final wasFavorited = existing.isFavorite;
@@ -893,7 +893,7 @@ class RecipeRepository {
       if (blocking.isNotEmpty) return blocking;
     }
 
-    await _db.recipeDao.toggleFavorite(id, wasFavorited);
+    await _db.recipeDao.toggleFavourite(id, wasFavorited);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
 
     await IntegrityService.reportEvent(
@@ -926,9 +926,9 @@ class RecipeRepository {
     });
   }
 
-  Stream<List<Recipe>> watchFavorites() {
-    // Fetch only ingredients for the returned favorites — no full table scan.
-    return _db.recipeDao.watchFavoriteRecipes().asyncMap((rows) async {
+  Stream<List<Recipe>> watchFavourites() {
+    // Fetch only ingredients for the returned favourites — no full table scan.
+    return _db.recipeDao.watchFavouriteRecipes().asyncMap((rows) async {
       if (rows.isEmpty) return <Recipe>[];
       final allIngs = await _db.recipeDao
           .getIngredientsForRecipes(rows.map((r) => r.id));
@@ -1153,9 +1153,9 @@ final coursesProvider = StreamProvider<List<Course>>((ref) {
   return ref.watch(recipeRepositoryProvider).watchCourses();
 });
 
-/// Provider for favorite recipes (stream-based for real-time updates)
-final favoriteRecipesProvider = StreamProvider<List<Recipe>>((ref) {
-  return ref.watch(recipeRepositoryProvider).watchFavorites();
+/// Provider for favourite recipes (stream-based for real-time updates)
+final favouriteRecipesProvider = StreamProvider<List<Recipe>>((ref) {
+  return ref.watch(recipeRepositoryProvider).watchFavourites();
 });
 
 /// Provider for recipe search - watches allRecipesProvider to auto-refresh when recipes change

@@ -26,8 +26,8 @@ enum ScalingCategory {
   heat,        // capsaicin/heat compounds, aggressive dampening
   acid,        // brightness/acidity, moderate dampening
   leavening,   // baking science, well-established dampening
-  strongSpice, // dominant savory flavor, noticeable saturation
-  mildSpice,   // background/baking flavor, nearly linear
+  strongSpice, // dominant savoury flavour, noticeable saturation
+  mildSpice,   // background/baking flavour, nearly linear
   linear,      // everything else — default
 }
 
@@ -73,7 +73,7 @@ class ScalingClassifier {
     'cream of tartar',
   ];
 
-  // ── Strong spice (0.75) — dominant savory spices ───────────────────────
+  // ── Strong spice (0.75) — dominant savoury spices ───────────────────────
   // Add keywords here to expand strong spice coverage.
   static const List<String> _strongSpiceKeywords = [
     'cumin', 'coriander', 'turmeric', 'paprika', 'caraway',
@@ -112,7 +112,7 @@ class ScalingClassifier {
     // fall through to linear — this is intentional.
     switch (category) {
       case IngredientCategory.spice:
-        // Conservative — unrecognised spices are more likely savory.
+        // Conservative — unrecognised spices are more likely savoury.
         return ScalingCategory.strongSpice;
       case IngredientCategory.vinegar:
         return ScalingCategory.acid;

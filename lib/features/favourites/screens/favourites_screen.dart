@@ -78,14 +78,14 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    // Watch all favorite providers
-    final recipesAsync = ref.watch(favoriteRecipesProvider);
-    final cheeseAsync = ref.watch(favoriteCheeseEntriesProvider);
-    final cellarAsync = ref.watch(favoriteCellarEntriesProvider);
-    final pizzasAsync = ref.watch(favoritePizzasProvider);
-    final sandwichesAsync = ref.watch(favoriteSandwichesProvider);
-    final modernistAsync = ref.watch(favoriteModernistRecipesProvider);
-    final smokingAsync = ref.watch(favoriteSmokingRecipesProvider);
+    // Watch all favourite providers
+    final recipesAsync = ref.watch(favouriteRecipesProvider);
+    final cheeseAsync = ref.watch(favouriteCheeseEntriesProvider);
+    final cellarAsync = ref.watch(favouriteCellarEntriesProvider);
+    final pizzasAsync = ref.watch(favouritePizzasProvider);
+    final sandwichesAsync = ref.watch(favouriteSandwichesProvider);
+    final modernistAsync = ref.watch(favouriteModernistRecipesProvider);
+    final smokingAsync = ref.watch(favouriteSmokingRecipesProvider);
 
     return Scaffold(
       appBar: AppBar(

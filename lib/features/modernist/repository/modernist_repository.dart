@@ -98,8 +98,8 @@ class ModernistRepository {
       _watchModernistWithIngredients(
           (r) => r.technique?.toLowerCase() == technique.toLowerCase(),);
 
-  /// Watch favorite recipes
-  Stream<List<ModernistRecipe>> watchFavorites() =>
+  /// Watch favourite recipes
+  Stream<List<ModernistRecipe>> watchFavourites() =>
       _watchModernistWithIngredients((r) => r.isFavorite);
 
   // ── Fetch methods ────────────────────────────────────────────────────────
@@ -257,12 +257,12 @@ class ModernistRepository {
     return delete(recipe.id);
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(int id) async {
+  /// Toggle favourite status
+  Future<void> toggleFavourite(int id) async {
     final existing = await _db.recipeDao.getRecipeById(id);
     if (existing == null) return;
     final wasFavorited = existing.isFavorite;
-    await _db.recipeDao.toggleFavorite(id, existing.isFavorite);
+    await _db.recipeDao.toggleFavourite(id, existing.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -365,9 +365,9 @@ final allModernistRecipesProvider = StreamProvider<List<ModernistRecipe>>((ref) 
   return ref.watch(modernistRepositoryProvider).watchAll();
 });
 
-/// Favorite modernist recipes (stream)
-final favoriteModernistRecipesProvider = StreamProvider<List<ModernistRecipe>>((ref) {
-  return ref.watch(modernistRepositoryProvider).watchFavorites();
+/// Favourite modernist recipes (stream)
+final favouriteModernistRecipesProvider = StreamProvider<List<ModernistRecipe>>((ref) {
+  return ref.watch(modernistRepositoryProvider).watchFavourites();
 });
 
 /// Modernist recipes by type

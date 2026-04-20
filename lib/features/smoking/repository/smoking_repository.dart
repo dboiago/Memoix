@@ -123,10 +123,10 @@ class SmokingRepository {
     }
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(SmokingRecipe recipe) async {
+  /// Toggle favourite status
+  Future<void> toggleFavourite(SmokingRecipe recipe) async {
     final wasFavorited = recipe.isFavorite;
-    await _db.smokingDao.toggleFavorite(recipe.id, recipe.isFavorite);
+    await _db.smokingDao.toggleFavourite(recipe.id, recipe.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -161,9 +161,9 @@ class SmokingRepository {
     return recipes.map((r) => r.wood).toSet();
   }
 
-  /// Watch favorite recipes
-  Stream<List<SmokingRecipe>> watchFavorites() =>
-      _db.smokingDao.watchFavorites();
+  /// Watch favourite recipes
+  Stream<List<SmokingRecipe>> watchFavourites() =>
+      _db.smokingDao.watchFavourites();
 }
 
 // Providers
@@ -177,10 +177,10 @@ final allSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {
   return repo.watchAll();
 });
 
-/// Favorite smoking recipes (stream)
-final favoriteSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {
+/// Favourite smoking recipes (stream)
+final favouriteSmokingRecipesProvider = StreamProvider<List<SmokingRecipe>>((ref) {
   final repo = ref.watch(smokingRepositoryProvider);
-  return repo.watchFavorites();
+  return repo.watchFavourites();
 });
 
 /// Smoking recipe count (derived from stream for auto-update)

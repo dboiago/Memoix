@@ -283,7 +283,7 @@ class _IngredientReferenceContent extends StatelessWidget {
 
             // 6. Flavour text
             Text(
-              reference.flavor,
+              reference.flavour,
               style: theme.textTheme.bodyMedium,
             ),
 

@@ -149,7 +149,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
-                      await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+                      await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
                       await processIntegrityResponses(ref);
                     },
                     padding: const EdgeInsets.all(8),

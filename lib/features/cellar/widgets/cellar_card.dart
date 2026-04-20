@@ -75,7 +75,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
                         padding: EdgeInsets.zero,
                       ),
                     ),
-                  // Favorite button
+                  // Favourite button
                   IconButton(
                     icon: Icon(
                       widget.entry.isFavorite ? Icons.favorite : Icons.favorite_border,
@@ -85,7 +85,7 @@ class _CellarCardState extends ConsumerState<CellarCard> {
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
-                      await ref.read(cellarRepositoryProvider).toggleFavorite(widget.entry);
+                      await ref.read(cellarRepositoryProvider).toggleFavourite(widget.entry);
                       await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),

@@ -99,7 +99,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
+              await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
             },
@@ -340,7 +340,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           color: recipe.isFavorite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
-          await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
+          await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
           ref.invalidate(allSmokingRecipesProvider);
           await processIntegrityResponses(ref);
         },
@@ -403,7 +403,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(smokingRepositoryProvider).toggleFavorite(recipe);
+              await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
               ref.invalidate(allSmokingRecipesProvider);
               await processIntegrityResponses(ref);
             },

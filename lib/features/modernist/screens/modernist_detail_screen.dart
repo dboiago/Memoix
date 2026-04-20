@@ -118,7 +118,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+              await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
               await processIntegrityResponses(ref);
             },
@@ -373,7 +373,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           color: recipe.isFavorite ? theme.colorScheme.primary : null,
         ),
         onPressed: () async {
-          await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+          await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
           ref.invalidate(modernistRecipeProvider(widget.recipeId));
           await processIntegrityResponses(ref);
         },
@@ -428,7 +428,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             isFavorite: recipe.isFavorite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
-              await ref.read(modernistRepositoryProvider).toggleFavorite(recipe.id);
+              await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
               ref.invalidate(modernistRecipeProvider(widget.recipeId));
               await processIntegrityResponses(ref);
             },

@@ -531,7 +531,7 @@ class PersonalStorageService {
       _ref.invalidate(allRecipesProvider);
       _ref.invalidate(recipesByCourseProvider);
       _ref.invalidate(coursesProvider);
-      _ref.invalidate(favoriteRecipesProvider);
+      _ref.invalidate(favouriteRecipesProvider);
       _ref.invalidate(recipeSearchProvider);
       _ref.invalidate(availableCuisinesProvider);
       _ref.invalidate(recipesPairedWithProvider);
@@ -540,7 +540,7 @@ class PersonalStorageService {
       _ref.invalidate(pizzaRepo.pizzaRepositoryProvider);
       _ref.invalidate(pizzaRepo.allPizzasProvider);
       _ref.invalidate(pizzaRepo.pizzasByBaseProvider);
-      _ref.invalidate(pizzaRepo.favoritePizzasProvider);
+      _ref.invalidate(pizzaRepo.favouritePizzasProvider);
       _ref.invalidate(pizzaRepo.pizzaCountProvider);
       _ref.invalidate(pizzaRepo.pizzaCountByBaseProvider);
       _ref.invalidate(pizzaRepo.allCheesesProvider);
@@ -549,7 +549,7 @@ class PersonalStorageService {
       // Sandwiches
       _ref.invalidate(sandwichRepo.sandwichRepositoryProvider);
       _ref.invalidate(sandwichRepo.allSandwichesProvider);
-      _ref.invalidate(sandwichRepo.favoriteSandwichesProvider);
+      _ref.invalidate(sandwichRepo.favouriteSandwichesProvider);
       _ref.invalidate(sandwichRepo.sandwichCountProvider);
       _ref.invalidate(sandwichRepo.allBreadsProvider);
       _ref.invalidate(sandwichRepo.allProteinsProvider);
@@ -558,13 +558,13 @@ class PersonalStorageService {
       // Cellar
       _ref.invalidate(cellarRepositoryProvider);
       _ref.invalidate(allCellarEntriesProvider);
-      _ref.invalidate(favoriteCellarEntriesProvider);
+      _ref.invalidate(favouriteCellarEntriesProvider);
       _ref.invalidate(cellarCategoriesProvider);
       _ref.invalidate(cellarProducersProvider);
       // Cheese
       _ref.invalidate(cheeseRepositoryProvider);
       _ref.invalidate(allCheeseEntriesProvider);
-      _ref.invalidate(favoriteCheeseEntriesProvider);
+      _ref.invalidate(favouriteCheeseEntriesProvider);
       _ref.invalidate(cheeseCountriesProvider);
       _ref.invalidate(cheeseMilkTypesProvider);
       _ref.invalidate(cheeseTexturesProvider);
@@ -572,13 +572,13 @@ class PersonalStorageService {
       // Smoking
       _ref.invalidate(smokingRepositoryProvider);
       _ref.invalidate(allSmokingRecipesProvider);
-      _ref.invalidate(favoriteSmokingRecipesProvider);
+      _ref.invalidate(favouriteSmokingRecipesProvider);
       _ref.invalidate(smokingCountProvider);
       _ref.invalidate(smokingRecipeByUuidProvider);
       // Modernist
       _ref.invalidate(modernistRepositoryProvider);
       _ref.invalidate(allModernistRecipesProvider);
-      _ref.invalidate(favoriteModernistRecipesProvider);
+      _ref.invalidate(favouriteModernistRecipesProvider);
       _ref.invalidate(modernistByTypeProvider);
       _ref.invalidate(modernistByTechniqueProvider);
       _ref.invalidate(modernistCountProvider);

@@ -150,7 +150,7 @@ class MemoixTheme {
           ),
         ),
       ),
-      // SnackBar theme - ensure consistent behavior
+      // SnackBar theme - ensure consistent behaviour
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
         showCloseIcon: false,
@@ -268,7 +268,7 @@ class MemoixTheme {
           ),
         ),
       ),
-      // SnackBar theme - ensure consistent behavior
+      // SnackBar theme - ensure consistent behaviour
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
         showCloseIcon: false,

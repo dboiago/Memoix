@@ -281,13 +281,13 @@ final cookingStatsProvider = StreamProvider<CookingStats>((ref) {
 
 /// Counts favourites across all item types, matching the Favourites screen.
 final totalFavouriteCountProvider = Provider<AsyncValue<int>>((ref) {
-  final recipes = ref.watch(favoriteRecipesProvider);
-  final cheese = ref.watch(favoriteCheeseEntriesProvider);
-  final cellar = ref.watch(favoriteCellarEntriesProvider);
-  final pizzas = ref.watch(favoritePizzasProvider);
-  final sandwiches = ref.watch(favoriteSandwichesProvider);
-  final modernist = ref.watch(favoriteModernistRecipesProvider);
-  final smoking = ref.watch(favoriteSmokingRecipesProvider);
+  final recipes = ref.watch(favouriteRecipesProvider);
+  final cheese = ref.watch(favouriteCheeseEntriesProvider);
+  final cellar = ref.watch(favouriteCellarEntriesProvider);
+  final pizzas = ref.watch(favouritePizzasProvider);
+  final sandwiches = ref.watch(favouriteSandwichesProvider);
+  final modernist = ref.watch(favouriteModernistRecipesProvider);
+  final smoking = ref.watch(favouriteSmokingRecipesProvider);
 
   final all = [recipes, cheese, cellar, pizzas, sandwiches, modernist, smoking];
   if (all.any((a) => a.isLoading)) return const AsyncValue.loading();

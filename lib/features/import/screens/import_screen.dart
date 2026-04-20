@@ -289,7 +289,7 @@ class _ImportScreenState extends ConsumerState<ImportScreen> {
     if (!context.mounted) return;
 
     // Route through ImportReviewScreen for OCR (confidence is inherently low)
-    // This matches URL import behavior and lets user review/edit extracted data
+    // This matches URL import behaviour and lets user review/edit extracted data
     if (result.importResult != null) {
       // Set default course if provided
       final importResult = widget.defaultCourse != null

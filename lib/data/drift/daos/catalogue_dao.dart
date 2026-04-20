@@ -22,7 +22,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
 
   Future<List<Pizza>> getMemoixPizzas() => getPizzasBySource('memoix');
 
-  Future<List<Pizza>> getFavoritePizzas() =>
+  Future<List<Pizza>> getFavouritePizzas() =>
       (select(pizzas)..where((t) => t.isFavorite.equals(true))).get();
 
   Future<List<Pizza>> searchPizzas(String query) {
@@ -71,7 +71,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     return deletePizza(pizza.id);
   }
 
-  Future<void> togglePizzaFavorite(int id, bool current) async {
+  Future<void> togglePizzaFavourite(int id, bool current) async {
     final pizza = await getPizzaById(id);
     if (pizza == null) return;
     await (update(pizzas)..where((t) => t.id.equals(id)))
@@ -94,7 +94,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Stream<List<Pizza>> watchPizzasByBase(String base) =>
       (select(pizzas)..where((t) => t.base.equals(base))).watch();
 
-  Stream<List<Pizza>> watchFavoritePizzas() =>
+  Stream<List<Pizza>> watchFavouritePizzas() =>
       (select(pizzas)..where((t) => t.isFavorite.equals(true))).watch();
 
   Future<int> getPizzaCount() async {
@@ -132,7 +132,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Future<List<Sandwich>> getMemoixSandwiches() =>
       getSandwichesBySource('memoix');
 
-  Future<List<Sandwich>> getFavoriteSandwiches() =>
+  Future<List<Sandwich>> getFavouriteSandwiches() =>
       (select(sandwiches)..where((t) => t.isFavorite.equals(true))).get();
 
   Future<List<Sandwich>> searchSandwiches(String query) {
@@ -184,7 +184,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     return deleteSandwich(sandwich.id);
   }
 
-  Future<void> toggleSandwichFavorite(int id, bool current) async {
+  Future<void> toggleSandwichFavourite(int id, bool current) async {
     final sandwich = await getSandwichById(id);
     if (sandwich == null) return;
     await (update(sandwiches)..where((t) => t.id.equals(id)))
@@ -204,7 +204,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
 
   Stream<List<Sandwich>> watchAllSandwiches() => select(sandwiches).watch();
 
-  Stream<List<Sandwich>> watchFavoriteSandwiches() =>
+  Stream<List<Sandwich>> watchFavouriteSandwiches() =>
       (select(sandwiches)..where((t) => t.isFavorite.equals(true))).watch();
 
   Future<int> getSandwichCount() async {

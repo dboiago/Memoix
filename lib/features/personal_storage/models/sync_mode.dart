@@ -1,4 +1,4 @@
-/// Sync behavior mode for external storage
+/// Sync behaviour mode for external storage
 /// 
 /// See EXTERNAL_STORAGE.md Section 4 for details.
 enum SyncMode {
@@ -7,7 +7,7 @@ enum SyncMode {
   manual,
 
   /// Push/pull operations triggered at specific app lifecycle events.
-  /// Best for: Users with one primary device who want "it just works" behavior.
+  /// Best for: Users with one primary device who want "it just works" behaviour.
   automatic,
 }
 

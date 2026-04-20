@@ -109,7 +109,7 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                     onPressed: () async {
                       await ref
                           .read(smokingRepositoryProvider)
-                          .toggleFavorite(widget.recipe);
+                          .toggleFavourite(widget.recipe);
                       await processIntegrityResponses(ref);
                     },
                     padding: const EdgeInsets.all(8),

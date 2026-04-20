@@ -121,7 +121,7 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
-                      await ref.read(pizzaRepositoryProvider).toggleFavorite(widget.pizza);
+                      await ref.read(pizzaRepositoryProvider).toggleFavourite(widget.pizza);
                       await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),

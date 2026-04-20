@@ -3,7 +3,7 @@ import '../../recipes/models/recipe.dart';
 
 /// Type of modernist recipe
 enum ModernistType {
-  concept,   // Unique flavor concepts - read like normal recipes
+  concept,   // Unique flavour concepts - read like normal recipes
   technique, // Instructions for techniques like foams, spherification, etc.
 }
 

@@ -42,8 +42,8 @@ class PizzaRepository {
   /// Get memoix collection pizzas (from GitHub)
   Future<List<Pizza>> getMemoixPizzas() => _db.catalogueDao.getMemoixPizzas();
 
-  /// Get favorite pizzas
-  Future<List<Pizza>> getFavorites() => _db.catalogueDao.getFavoritePizzas();
+  /// Get favourite pizzas
+  Future<List<Pizza>> getFavourites() => _db.catalogueDao.getFavouritePizzas();
 
   /// Search pizzas by name, cheese, protein, or vegetable
   Future<List<Pizza>> searchPizzas(String query) =>
@@ -103,10 +103,10 @@ class PizzaRepository {
     return count > 0;
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(Pizza pizza) async {
+  /// Toggle favourite status
+  Future<void> toggleFavourite(Pizza pizza) async {
     final wasFavorited = pizza.isFavorite;
-    await _db.catalogueDao.togglePizzaFavorite(pizza.id, pizza.isFavorite);
+    await _db.catalogueDao.togglePizzaFavourite(pizza.id, pizza.isFavorite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -136,9 +136,9 @@ class PizzaRepository {
   Stream<List<Pizza>> watchPizzasByBase(PizzaBase base) =>
       _db.catalogueDao.watchPizzasByBase(base.name);
 
-  /// Watch favorites
-  Stream<List<Pizza>> watchFavorites() =>
-      _db.catalogueDao.watchFavoritePizzas();
+  /// Watch favourites
+  Stream<List<Pizza>> watchFavourites() =>
+      _db.catalogueDao.watchFavouritePizzas();
 
   /// Get count of all pizzas
   Future<int> getPizzaCount() => _db.catalogueDao.getPizzaCount();
@@ -213,10 +213,10 @@ final pizzasByBaseProvider = StreamProvider.family<List<Pizza>, PizzaBase>((ref,
   return repository.watchPizzasByBase(base);
 });
 
-/// Watch favorite pizzas
-final favoritePizzasProvider = StreamProvider<List<Pizza>>((ref) {
+/// Watch favourite pizzas
+final favouritePizzasProvider = StreamProvider<List<Pizza>>((ref) {
   final repository = ref.watch(pizzaRepositoryProvider);
-  return repository.watchFavorites();
+  return repository.watchFavourites();
 });
 
 /// Get pizza count (derived from stream for auto-update)

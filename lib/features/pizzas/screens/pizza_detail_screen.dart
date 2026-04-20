@@ -99,7 +99,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             isFavorite: pizza.isFavorite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
             onFavoritePressed: () async {
-              await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+              await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
               ref.invalidate(allPizzasProvider);
               await processIntegrityResponses(ref);
             },
@@ -220,7 +220,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             isFavorite: pizza.isFavorite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
             onFavoritePressed: () async {
-              await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+              await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
               ref.invalidate(allPizzasProvider);
               await processIntegrityResponses(ref);
             },
@@ -315,7 +315,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           color: pizza.isFavorite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
-          await ref.read(pizzaRepositoryProvider).toggleFavorite(pizza);
+          await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
           ref.invalidate(allPizzasProvider);
           await processIntegrityResponses(ref);
         },

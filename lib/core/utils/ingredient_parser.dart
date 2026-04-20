@@ -1,6 +1,6 @@
 /// Shared ingredient parsing utilities used by both URL and OCR importers.
 /// 
-/// This consolidates ingredient parsing logic to ensure consistent behavior
+/// This consolidates ingredient parsing logic to ensure consistent behaviour
 /// across all import methods and reduce code duplication.
 
 import 'text_normalizer.dart';

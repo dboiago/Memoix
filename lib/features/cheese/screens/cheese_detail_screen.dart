@@ -68,7 +68,7 @@ class _CheeseDetailView extends ConsumerWidget {
             headerImage: showHeaderImages ? entry.imageUrl : null,
             isFavorite: entry.isFavorite,
             onFavoritePressed: () async {
-              await ref.read(cheeseRepositoryProvider).toggleFavorite(entry);
+              await ref.read(cheeseRepositoryProvider).toggleFavourite(entry);
               ref.invalidate(allCheeseEntriesProvider);
               await processIntegrityResponses(ref);
             },

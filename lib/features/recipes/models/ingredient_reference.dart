@@ -5,13 +5,13 @@
 class IngredientReference {
   final String description;
   final List<String> aliases;
-  final String flavor;
+  final String flavour;
   final List<IngredientSubstitution> substitutions;
 
   const IngredientReference({
     required this.description,
     required this.aliases,
-    required this.flavor,
+    required this.flavour,
     required this.substitutions,
   });
 
@@ -27,7 +27,7 @@ class IngredientReference {
             .where((s) => s.isNotEmpty)
             .toList() ??
         const [];
-    final flavor = (json['flavor'] as String?) ?? '';
+    final flavour = (json['flavour'] as String?) ?? '';
     final subs = (json['substitutions'] as List<dynamic>?)
             ?.map((e) => IngredientSubstitution.fromJson(
                 e as Map<String, dynamic>,),)
@@ -37,7 +37,7 @@ class IngredientReference {
     return IngredientReference(
       description: description,
       aliases: aliases,
-      flavor: flavor,
+      flavour: flavour,
       substitutions: subs,
     );
   }

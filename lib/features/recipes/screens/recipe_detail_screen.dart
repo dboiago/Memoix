@@ -208,7 +208,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onFavoritePressed: () async {
               final blocked = await ref
                   .read(recipeRepositoryProvider)
-                  .toggleFavorite(recipe.id);
+                  .toggleFavourite(recipe.id);
               if (blocked.isNotEmpty) {
                 MemoixSnackBar.showError(
                     blocked.first.data['text'] as String? ?? '',);
@@ -596,7 +596,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     );
   }
 
-  /// Build the standard layout (existing behavior)
+  /// Build the standard layout (existing behaviour)
   Widget _buildStandardLayout(
     BuildContext context,
     Recipe recipe,
@@ -618,7 +618,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onFavoritePressed: () async {
               final blocked = await ref
                   .read(recipeRepositoryProvider)
-                  .toggleFavorite(recipe.id);
+                  .toggleFavourite(recipe.id);
               if (blocked.isNotEmpty) {
                 MemoixSnackBar.showError(
                     blocked.first.data['text'] as String? ?? '',);

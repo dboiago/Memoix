@@ -68,7 +68,7 @@ class _CellarDetailView extends ConsumerWidget {
             headerImage: showHeaderImages ? entry.imageUrl : null,
             isFavorite: entry.isFavorite,
             onFavoritePressed: () async {
-              await ref.read(cellarRepositoryProvider).toggleFavorite(entry);
+              await ref.read(cellarRepositoryProvider).toggleFavourite(entry);
               ref.invalidate(allCellarEntriesProvider);
               await processIntegrityResponses(ref);
             },

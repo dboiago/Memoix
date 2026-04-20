@@ -113,7 +113,7 @@ class MemoixColors {
 
   // Modernist type colours (Concept vs Technique)
   // Thematic colours that fit with the warm palette
-  static const Color modernistConcept = Color(0xFF7EB8A8);     // Sage teal - creative/flavor concepts
+  static const Color modernistConcept = Color(0xFF7EB8A8);     // Sage teal - creative/flavour concepts
   static const Color modernistTechnique = Color(0xFFB898C4);   // Soft lavender - scientific techniques
 
   // UI colours
@@ -128,8 +128,8 @@ class MemoixColors {
   static const Color warningContainer = Color(0xFFFFF3E0);     // Light orange bg
   static const Color errorContainer = Color(0xFFFFEBEE);       // Light red bg
   
-  // Universal accent colors (for favorites, ratings)
-  static const Color favorite = Color(0xFFE57373);             // Soft red heart
+  // Universal accent colours (for favourites, ratings)
+  static const Color favourite = Color(0xFFE57373);             // Soft red heart
   static const Color rating = Color(0xFFFFCA28);               // Amber star
   
   // Import method accent colors (thematic with app palette)

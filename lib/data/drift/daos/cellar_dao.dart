@@ -21,7 +21,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Future<List<CellarEntry>> getBuyAgainEntries() =>
       (select(cellarEntries)..where((t) => t.buy.equals(true))).get();
 
-  Future<List<CellarEntry>> getFavorites() =>
+  Future<List<CellarEntry>> getFavourites() =>
       (select(cellarEntries)..where((t) => t.isFavorite.equals(true))).get();
 
   Future<List<CellarEntry>> searchEntries(String query) {
@@ -69,7 +69,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     return deleteEntry(entry.id);
   }
 
-  Future<void> toggleFavorite(int id, bool current) async {
+  Future<void> toggleFavourite(int id, bool current) async {
     final entry = await getEntryById(id);
     if (entry == null) return;
     await (update(cellarEntries)..where((t) => t.id.equals(id)))
@@ -86,7 +86,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Stream<List<CellarEntry>> watchAllEntries() =>
       select(cellarEntries).watch();
 
-  Stream<List<CellarEntry>> watchFavorites() =>
+  Stream<List<CellarEntry>> watchFavourites() =>
       (select(cellarEntries)..where((t) => t.isFavorite.equals(true))).watch();
 
   Future<int> getEntryCount() async {
@@ -114,7 +114,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Future<List<CheeseEntry>> getCheeseBuyAgainEntries() =>
       (select(cheeseEntries)..where((t) => t.buy.equals(true))).get();
 
-  Future<List<CheeseEntry>> getCheeseFavorites() =>
+  Future<List<CheeseEntry>> getCheeseFavourites() =>
       (select(cheeseEntries)..where((t) => t.isFavorite.equals(true))).get();
 
   Future<List<CheeseEntry>> searchCheeseEntries(String query) {
@@ -163,7 +163,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     return deleteCheeseEntry(entry.id);
   }
 
-  Future<void> toggleCheeseFavorite(int id, bool current) async {
+  Future<void> toggleCheeseFavourite(int id, bool current) async {
     final entry = await getCheeseEntryById(id);
     if (entry == null) return;
     await (update(cheeseEntries)..where((t) => t.id.equals(id)))
@@ -180,7 +180,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Stream<List<CheeseEntry>> watchAllCheeseEntries() =>
       select(cheeseEntries).watch();
 
-  Stream<List<CheeseEntry>> watchCheeseFavorites() =>
+  Stream<List<CheeseEntry>> watchCheeseFavourites() =>
       (select(cheeseEntries)..where((t) => t.isFavorite.equals(true))).watch();
 
   Future<int> getCheeseEntryCount() async {

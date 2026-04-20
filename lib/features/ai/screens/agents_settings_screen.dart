@@ -24,7 +24,7 @@ class AgentsSettingsScreen extends ConsumerWidget {
           const SizedBox(height: 8),
 
           // Auto-select section
-          const _SectionHeader(title: 'Behavior'),
+          const _SectionHeader(title: 'Behaviour'),
           SwitchListTile(
             secondary: const Icon(Icons.auto_awesome),
             title: const Text('Auto-select Provider'),

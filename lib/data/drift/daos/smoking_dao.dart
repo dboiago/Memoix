@@ -60,7 +60,7 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
     return deleteRecipe(recipe.id);
   }
 
-  Future<void> toggleFavorite(int id, bool current) async {
+  Future<void> toggleFavourite(int id, bool current) async {
     final recipe = await getRecipeById(id);
     if (recipe == null) return;
     await (update(smokingRecipes)..where((t) => t.id.equals(id)))
@@ -85,7 +85,7 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
             ..orderBy([(t) => OrderingTerm.asc(t.name)]))
           .watch();
 
-  Stream<List<SmokingRecipe>> watchFavorites() =>
+  Stream<List<SmokingRecipe>> watchFavourites() =>
       (select(smokingRecipes)
             ..where((t) => t.isFavorite.equals(true))
             ..orderBy([(t) => OrderingTerm.asc(t.name)]))

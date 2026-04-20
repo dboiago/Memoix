@@ -74,7 +74,7 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
                         padding: EdgeInsets.zero,
                       ),
                     ),
-                  // Favorite button
+                  // Favourite button
                   IconButton(
                     icon: Icon(
                       widget.entry.isFavorite ? Icons.favorite : Icons.favorite_border,
@@ -84,7 +84,7 @@ class _CheeseCardState extends ConsumerState<CheeseCard> {
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
-                      await ref.read(cheeseRepositoryProvider).toggleFavorite(widget.entry);
+                      await ref.read(cheeseRepositoryProvider).toggleFavourite(widget.entry);
                       await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),

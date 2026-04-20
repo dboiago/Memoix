@@ -205,7 +205,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   onPressed: () async {
                     final blocked = await ref
                         .read(recipeRepositoryProvider)
-                        .toggleFavorite(widget.recipe.id);
+                        .toggleFavourite(widget.recipe.id);
                     if (blocked.isNotEmpty) {
                       MemoixSnackBar.showError(
                           blocked.first.data['text'] as String? ?? '',);

@@ -8,7 +8,7 @@ enum IngredientCategory {
   grain, pasta, legume, nut, spice, condiment, oil,
   vinegar, flour, sugar, leavening, alcohol, pop, juice, beverage,
   unknown, // index 22 — must stay here for gzip compatibility
-  pantry,  // index 23 — jarred/canned/preserved goods, spreads (store center aisles)
+  pantry,  // index 23 — jarred/canned/preserved goods, spreads (store centre aisles)
 }
 
 /// Rich metadata for an ingredient from OpenFoodFacts.
@@ -519,7 +519,7 @@ class IngredientService {
       'barbecue sauce': IngredientCategory.condiment.index,
       'steak sauce': IngredientCategory.condiment.index,
       'teriyaki sauce': IngredientCategory.condiment.index,
-      // Pantry (jarred, canned, preserved, spreads — store center aisles)
+      // Pantry (jarred, canned, preserved, spreads — store centre aisles)
       'shaoxing wine': IngredientCategory.pantry.index,
       'shaoxing rice wine': IngredientCategory.pantry.index,
       'mirin': IngredientCategory.pantry.index,

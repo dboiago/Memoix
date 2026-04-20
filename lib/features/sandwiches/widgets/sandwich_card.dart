@@ -99,7 +99,7 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {
-                      await ref.read(sandwichRepositoryProvider).toggleFavorite(widget.sandwich);
+                      await ref.read(sandwichRepositoryProvider).toggleFavourite(widget.sandwich);
                       await processIntegrityResponses(ref);
                     },
                     padding: EdgeInsets.all(widget.isCompact ? 6 : 8),

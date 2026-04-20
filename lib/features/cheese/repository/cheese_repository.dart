@@ -36,9 +36,9 @@ class CheeseRepository {
   Future<List<CheeseEntry>> getBuyAgainEntries() =>
       _db.cellarDao.getCheeseBuyAgainEntries();
 
-  /// Get favorite entries
-  Future<List<CheeseEntry>> getFavorites() =>
-      _db.cellarDao.getCheeseFavorites();
+  /// Get favourite entries
+  Future<List<CheeseEntry>> getFavourites() =>
+      _db.cellarDao.getCheeseFavourites();
 
   /// Search entries by name, type, or country
   Future<List<CheeseEntry>> searchEntries(String query) {
@@ -107,10 +107,10 @@ class CheeseRepository {
     return result;
   }
 
-  /// Toggle favorite status
-  Future<void> toggleFavorite(CheeseEntry entry) async {
+  /// Toggle favourite status
+  Future<void> toggleFavourite(CheeseEntry entry) async {
     final wasFavorited = entry.isFavorite;
-    await _db.cellarDao.toggleCheeseFavorite(entry.id, entry.isFavorite);
+    await _db.cellarDao.toggleCheeseFavourite(entry.id, entry.isFavorite);
 
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -137,9 +137,9 @@ class CheeseRepository {
   Stream<List<CheeseEntry>> watchAllEntries() =>
       _db.cellarDao.watchAllCheeseEntries();
 
-  /// Watch favorites
-  Stream<List<CheeseEntry>> watchFavorites() =>
-      _db.cellarDao.watchCheeseFavorites();
+  /// Watch favourites
+  Stream<List<CheeseEntry>> watchFavourites() =>
+      _db.cellarDao.watchCheeseFavourites();
 
   /// Get count of all entries
   Future<int> getEntryCount() =>
@@ -184,10 +184,10 @@ final allCheeseEntriesProvider = StreamProvider<List<CheeseEntry>>((ref) {
   return repository.watchAllEntries();
 });
 
-/// Watch favorite cheese entries
-final favoriteCheeseEntriesProvider = StreamProvider<List<CheeseEntry>>((ref) {
+/// Watch favourite cheese entries
+final favouriteCheeseEntriesProvider = StreamProvider<List<CheeseEntry>>((ref) {
   final repository = ref.watch(cheeseRepositoryProvider);
-  return repository.watchFavorites();
+  return repository.watchFavourites();
 });
 
 /// Get cheese entry count (derived from stream for auto-update)

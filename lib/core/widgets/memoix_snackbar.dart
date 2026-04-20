@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../app/app.dart';
 
-/// Centralized SnackBar helper for consistent behavior across the app.
+/// Centralised SnackBar helper for consistent behaviour across the app.
 /// 
 /// All SnackBars shown through this helper will:
 /// - Use the global ScaffoldMessenger (survives navigation)

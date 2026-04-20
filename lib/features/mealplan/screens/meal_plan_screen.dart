@@ -972,7 +972,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                 Expanded(
                   child: Consumer(
                     builder: (context, ref, _) {
-                      final favouritesAsync = ref.watch(favoriteRecipesProvider);
+                      final favouritesAsync = ref.watch(favouriteRecipesProvider);
                       return ListView(
                         controller: scrollController,
                         children: [

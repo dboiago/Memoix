@@ -316,7 +316,7 @@ class CalibrationEvaluator {
       condition: (ev, m, db, idx) async {
         if (m['is_adding'] != true) return false;
         
-        final count = (await db.recipeDao.getFavoriteRecipes()).length;
+        final count = (await db.recipeDao.getFavouriteRecipes()).length;
         return count >= 5;
       },
     ),
